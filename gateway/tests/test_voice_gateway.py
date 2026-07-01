@@ -1772,3 +1772,178 @@ async def test_ws_tts_pipeline_sends_all_sentences(monkeypatch):
     assert any(
         "idle" in t for t in text_received
     ), "state:idle not sent after multi-sentence TTS"
+
+
+# ── Server-side LISTENING safety timeout ─────────────────────────────────────
+
+
+@pytest.mark.asyncio
+async def test_listen_without_end_times_out(monkeypatch):
+    """If a device sends LISTEN but never sends END (crash / stuck firmware), the
+    server must self-heal: the _LISTEN_MAX_S deadline forces END processing and the
+    session must return to IDLE rather than hanging indefinitely.
+
+    Regression test for the server-side gap identified after the face-update
+    regression: a device stuck in LISTENING (never sending END) would wedge the
+    gateway session permanently.
+    """
+    from unittest.mock import AsyncMock, MagicMock
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    # Zero-second timeout so the deadline is always in the past on the next loop
+    # iteration — no real waiting required, test completes instantly.
+    monkeypatch.setattr(srv, "_LISTEN_MAX_S", 0.0)
+
+    # Empty transcript → server goes THINKING → IDLE without needing TTS mock.
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "")
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+
+    ws = MagicMock()
+    ws.client = MagicMock()
+    ws.client.__str__ = lambda s: "10.0.0.1:9999"
+    ws.query_params = MagicMock()
+    ws.query_params.get = lambda k, d="": d
+    ws.accept = AsyncMock()
+    ws.close = AsyncMock()
+    ws.send_text = AsyncMock()
+    ws.send_bytes = AsyncMock()
+
+    # Sequence: LISTEN (no END ever sent) → server times out → back to IDLE →
+    # next ws.receive() raises WebSocketDisconnect to exit the handler cleanly.
+    ws.receive = AsyncMock(side_effect=[
+        {"text": "LISTEN", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    await srv.voice_endpoint(ws)
+
+    # Extract the sequence of states the server sent.
+    sent_texts = [call.args[0] for call in ws.send_text.call_args_list]
+    states = []
+    for t in sent_texts:
+        try:
+            states.append(json.loads(t).get("state"))
+        except Exception:
+            pass
+
+    assert "listening" in states, (
+        "Expected state:listening after LISTEN; server may not have entered LISTENING"
+    )
+    assert "thinking" in states, (
+        "Server must transition to THINKING when the timeout fires (not stay in LISTENING)"
+    )
+
+
+@pytest.mark.asyncio
+async def test_pcm_buffer_bounded(monkeypatch):
+    """pcm_chunks must stop growing once _PCM_MAX_BYTES is reached.
+
+    A device that streams audio without sending END (stuck firmware, OOM scenario)
+    must not cause the server to buffer unbounded PCM.  The STT function should
+    receive at most _PCM_MAX_BYTES bytes.
+
+    Regression test for the memory-safety gap identified in the same audit.
+    """
+    from unittest.mock import AsyncMock, MagicMock
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    cap = 200  # tiny cap so the test is fast; 200 bytes ≪ 1000 bytes streamed
+    monkeypatch.setattr(srv, "_PCM_MAX_BYTES", cap)
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+
+    received_bytes: list[int] = []
+
+    def _capture_transcribe(pcm: bytes) -> str:
+        received_bytes.append(len(pcm))
+        return ""  # empty transcript → IDLE, no TTS needed
+
+    monkeypatch.setattr(stt_mod, "transcribe", _capture_transcribe)
+
+    # 10 chunks × 100 bytes = 1000 bytes total >> cap of 200 bytes.
+    chunk = b"\x00\x01" * 50
+
+    ws = MagicMock()
+    ws.client = MagicMock()
+    ws.client.__str__ = lambda s: "10.0.0.1:9998"
+    ws.query_params = MagicMock()
+    ws.query_params.get = lambda k, d="": d
+    ws.accept = AsyncMock()
+    ws.close = AsyncMock()
+    ws.send_text = AsyncMock()
+    ws.send_bytes = AsyncMock()
+
+    ws.receive = AsyncMock(side_effect=[
+        {"text": "LISTEN", "bytes": None},
+        *[{"bytes": chunk, "text": None} for _ in range(10)],  # 1000 bytes
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    await srv.voice_endpoint(ws)
+
+    assert received_bytes, "transcribe() was never called — END handler did not execute"
+    assert received_bytes[0] <= cap, (
+        f"STT received {received_bytes[0]} bytes, expected ≤ {cap} (cap = {cap}). "
+        f"PCM buffer was not bounded."
+    )
+
+
+# ── OTA firmware endpoint ─────────────────────────────────────────────────────
+
+
+def test_firmware_bin_auth_and_etag(tmp_path, monkeypatch):
+    """GET /firmware/bin: 401 on bad token, 200 + ETag on good token, HEAD same ETag.
+
+    The /firmware/bin route was previously untested (0% coverage).  This test covers
+    the three observable behaviours the ESP32 OTA client depends on:
+      1. Auth gate: wrong token → 401 (no firmware leaked)
+      2. Correct token → 200 + ETag header (SHA-256 of file, quoted)
+      3. HEAD verb → same ETag (allows cheap OTA mismatch check without download)
+    """
+    import voice_gateway.server as srv
+
+    # Write a small fake firmware binary.
+    fake_bin = tmp_path / "voice_terminal.bin"
+    fake_bin.write_bytes(b"\xAA\xBB\xCC\xDD" * 64)
+
+    monkeypatch.setattr(srv, "_FIRMWARE_BIN_PATH", fake_bin)
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "test-ota-secret")
+    # Reset ETag cache so the test is independent of prior state.
+    monkeypatch.setattr(srv, "_fw_etag", "")
+    monkeypatch.setattr(srv, "_fw_mtime", 0.0)
+
+    # Use TestClient WITHOUT the context manager so the lifespan (which loads
+    # STT/TTS models) is not triggered — the firmware route needs neither.
+    # This matches the pattern used by test_health_returns_ok.
+    client = TestClient(app)
+
+    # 1 — Wrong token must produce 401 (no firmware body).
+    resp = client.get("/firmware/bin?token=bad-token")
+    assert resp.status_code == 401, f"Expected 401 for bad token, got {resp.status_code}"
+
+    # 2 — Correct token: 200 with a quoted SHA-256 ETag.
+    resp = client.get("/firmware/bin?token=test-ota-secret")
+    assert resp.status_code == 200, f"Expected 200, got {resp.status_code}"
+    # Starlette normalises header names to lowercase in TestClient responses.
+    etag = resp.headers.get("etag") or resp.headers.get("ETag")
+    assert etag is not None, "ETag header missing from /firmware/bin response"
+    assert etag.startswith('"') and etag.endswith('"'), (
+        f"ETag must be a quoted string, got {etag!r}"
+    )
+    sha_hex = etag.strip('"')
+    assert len(sha_hex) == 64, f"ETag inner value must be 64-char SHA-256 hex, got {sha_hex!r}"
+    assert resp.content == fake_bin.read_bytes(), "Response body must match the firmware file"
+
+    # 3 — HEAD returns the same ETag (no download needed if they match).
+    resp = client.head("/firmware/bin?token=test-ota-secret")
+    assert resp.status_code == 200, f"HEAD expected 200, got {resp.status_code}"
+    head_etag = resp.headers.get("etag") or resp.headers.get("ETag")
+    assert head_etag == etag, (
+        f"HEAD ETag {head_etag!r} ≠ GET ETag {etag!r} — OTA would always re-download"
+    )

@@ -327,6 +327,19 @@ void wakeword_clear(void)
 void wakeword_ptt_press(void)   { _ptt_start(); }
 void wakeword_ptt_release(void) { _ptt_end(); }
 
+void wakeword_ptt_finish(void)
+{
+    /* Force-end a triggered utterance (tap-to-stop UI model).
+     * Sets s_ended so voice_task sends END on the next loop iteration.
+     * Clears s_ptt_held so a trailing LV_EVENT_RELEASED cannot double-fire
+     * _ptt_end() and flip s_ended back to false via a short-tap path. */
+    if (s_triggered && !s_ended) {
+        ESP_LOGI(TAG, "PTT: finish (user tap-to-stop)");
+        s_ended    = true;
+        s_ptt_held = false;
+    }
+}
+
 void wakeword_set_tts_playing(bool playing)
 {
     s_tts_playing = playing;

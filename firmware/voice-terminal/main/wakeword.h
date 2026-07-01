@@ -82,6 +82,17 @@ void wakeword_ptt_press(void);
 void wakeword_ptt_release(void);
 
 /**
+ * @brief Force-end a triggered utterance immediately (tap-to-stop UI model).
+ *
+ * Sets s_ended=true so voice_task sends END on its next iteration, regardless
+ * of hold time or VAD state.  Safe to call from the LVGL touch event handler:
+ * the write is atomic on the state flags (volatile bool, single assignment).
+ *
+ * No-op if no utterance is in progress (s_triggered=false or already ended).
+ */
+void wakeword_ptt_finish(void);
+
+/**
  * @brief Signal that TTS playback is starting or ending.
  *
  * While TTS is playing (playing=true) both PTT and WakeNet are suppressed so

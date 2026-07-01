@@ -103,6 +103,12 @@ _FIRMWARE_BIN_PATH = Path(os.environ.get("FIRMWARE_BIN_PATH", "/firmware/voice_t
 _fw_etag: str = ""
 _fw_mtime: float = 0.0
 
+# Server-side utterance safety limits.
+# A device that sends LISTEN but never sends END (crash, stuck firmware) would
+# otherwise hold the session in LISTENING forever with unbounded pcm_chunks growth.
+_LISTEN_MAX_S: float = 15.0              # max seconds to wait for END after LISTEN
+_PCM_MAX_BYTES: int  = 16000 * 2 * 20   # 20 s × 16 kHz × 2 bytes/sample S16LE mono
+
 
 def _get_firmware_etag() -> str | None:
     global _fw_etag, _fw_mtime
@@ -304,6 +310,8 @@ async def voice_endpoint(ws: WebSocket) -> None:
     history: List[Dict[str, str]] = [_voice_system_message()]
 
     pcm_chunks: List[bytes] = []
+    _pcm_bytes_total: int = 0       # running byte count — avoids O(n) sum on each chunk
+    _listen_deadline: float | None = None   # set when LISTEN fires, cleared on END/timeout
     # Define before the try so the finally clause can always reference it safely,
     # even if a dirty-close fires before the task is created.
     heartbeat = None
@@ -314,11 +322,43 @@ async def voice_endpoint(ws: WebSocket) -> None:
         # producing one clean INFO log instead of an unhandled ASGI traceback.
         await _send_state(ws, state)
         heartbeat = asyncio.create_task(_keepalive(ws))
+        _loop = asyncio.get_running_loop()
         while True:
-            message = await ws.receive()
+            # While LISTENING, bound the wait so a device that never sends END
+            # (crash, stuck firmware) self-heals after _LISTEN_MAX_S seconds.
+            if _listen_deadline is not None:
+                remaining = _listen_deadline - _loop.time()
+                if remaining <= 0:
+                    logger.warning(
+                        "LISTEN timeout (%.0fs) from %s — finalising utterance",
+                        _LISTEN_MAX_S, remote,
+                    )
+                    _listen_deadline = None
+                    message = {"bytes": None, "text": "END"}
+                else:
+                    try:
+                        message = await asyncio.wait_for(ws.receive(), timeout=remaining)
+                    except asyncio.TimeoutError:
+                        logger.warning(
+                            "LISTEN timeout (%.0fs) from %s — finalising utterance",
+                            _LISTEN_MAX_S, remote,
+                        )
+                        _listen_deadline = None
+                        message = {"bytes": None, "text": "END"}
+            else:
+                message = await ws.receive()
 
             if "bytes" in message and message["bytes"] is not None:
-                pcm_chunks.append(message["bytes"])
+                # Safety cap: stop buffering once we reach the per-utterance limit.
+                # This bounds memory even if the device streams indefinitely without END.
+                if _pcm_bytes_total < _PCM_MAX_BYTES:
+                    pcm_chunks.append(message["bytes"])
+                    _pcm_bytes_total += len(message["bytes"])
+                else:
+                    logger.warning(
+                        "PCM buffer cap (%d bytes) reached from %s — discarding excess",
+                        _PCM_MAX_BYTES, remote,
+                    )
 
             elif "text" in message and message["text"] is not None:
                 msg = message["text"].strip()
@@ -329,20 +369,27 @@ async def voice_endpoint(ws: WebSocket) -> None:
                 elif msg == "LISTEN":
                     logger.info("LISTEN from %s", remote)
                     pcm_chunks.clear()
+                    _pcm_bytes_total = 0
+                    # Safety: arm the server-side utterance timeout so a device that
+                    # never sends END (crash, stuck firmware) can't hold the session in
+                    # LISTENING forever.  Cleared when END is received or on timeout.
+                    _listen_deadline = _loop.time() + _LISTEN_MAX_S
                     # Refresh the system message so time stays accurate on long sessions.
                     history[0] = _voice_system_message()
                     state = _State.LISTENING
                     await _send_state(ws, state)
 
                 elif msg == "END":
+                    _listen_deadline = None   # cancel the utterance timeout
                     state = _State.THINKING
                     await _send_state(ws, state)
 
                     pcm_bytes = b"".join(pcm_chunks)
                     pcm_chunks.clear()
+                    _pcm_bytes_total = 0
 
                     try:
-                        loop = asyncio.get_event_loop()
+                        loop = _loop
                         # Run blocking CPU inference in a thread so the event loop
                         # stays live for WebSocket PING/PONG during STT and TTS.
                         transcript = await loop.run_in_executor(

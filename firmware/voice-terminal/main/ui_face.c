@@ -28,22 +28,45 @@ static face_emotion_t _state_to_emotion(ws_vg_state_t state)
 
 static void _touch_pressed(lv_event_t *e)
 {
-    if (s_current_state == WS_VG_STATE_SPEAKING) {
-        wakeword_tts_stop_request();
-        s_current_state = WS_VG_STATE_IDLE;
-        // smooth=true: lock-free flag write — safe inside LVGL event callback.
-        face_set_emotion(FACE_NEUTRAL, true);
-        bsp_display_lock(0);
-        lv_label_set_text(s_status, "Say 'Hi, ESP' or tap to talk");
-        bsp_display_unlock();
-    } else {
-        wakeword_ptt_press();
-    }
-}
+    /* Tap-to-toggle state machine:
+     *   SPEAKING    → interrupt TTS playback (unchanged)
+     *   LISTENING   → end utterance now (NEW: tap-to-stop)
+     *   THINKING    → no-op (query already in flight; tapping _ptt_start here
+     *                  would latch s_triggered and permanently block the next tap)
+     *   IDLE / DISC → start a new utterance
+     *
+     * The touchscreen overlay is PRESSED-only: LV_EVENT_RELEASED is NOT registered
+     * (removed with this change) so wakeword_ptt_release() is never called from
+     * touch — the physical BSP_BUTTON_MAIN retains its hold-to-talk behaviour. */
+    switch (s_current_state) {
+        case WS_VG_STATE_SPEAKING:
+            wakeword_tts_stop_request();
+            s_current_state = WS_VG_STATE_IDLE;
+            // smooth=true: lock-free flag write — safe inside LVGL event callback.
+            face_set_emotion(FACE_NEUTRAL, true);
+            bsp_display_lock(0);
+            lv_label_set_text(s_status, "Say 'Hi, ESP' or tap to talk");
+            bsp_display_unlock();
+            break;
 
-static void _touch_released(lv_event_t *e)
-{
-    wakeword_ptt_release();
+        case WS_VG_STATE_LISTENING:
+            /* Tap-to-stop: force-end the current utterance so voice_task sends END
+             * on its next iteration.  Without this, the user had to wait the full
+             * 8-second VAD timeout — the root cause of the "stuck in listening" bug. */
+            wakeword_ptt_finish();
+            break;
+
+        case WS_VG_STATE_THINKING:
+            /* Query already dispatched — nothing we can do from the client side.
+             * Silently ignore: calling _ptt_start here would latch s_triggered and
+             * block all subsequent taps until the next wakeword_clear(). */
+            break;
+
+        default:
+            /* IDLE or DISCONNECTED: start a new utterance. */
+            wakeword_ptt_press();
+            break;
+    }
 }
 
 void ui_face_init(void)
@@ -101,9 +124,11 @@ void ui_face_init(void)
     lv_obj_set_style_bg_opa(s_touch, LV_OPA_TRANSP, LV_PART_MAIN);
     lv_obj_set_style_border_width(s_touch, 0, LV_PART_MAIN);
     lv_obj_remove_flag(s_touch, LV_OBJ_FLAG_SCROLLABLE);
+    // PRESSED only — tap-to-toggle model.  LV_EVENT_RELEASED is intentionally
+    // omitted: wakeword_ptt_release() must NOT be called from touch because the
+    // touch overlay uses tap-to-stop (wakeword_ptt_finish) rather than hold-to-talk.
+    // The physical BSP_BUTTON_MAIN still uses hold-to-talk via _btn_released.
     lv_obj_add_event_cb(s_touch, _touch_pressed,  LV_EVENT_PRESSED,    NULL);
-    lv_obj_add_event_cb(s_touch, _touch_released, LV_EVENT_RELEASED,   NULL);
-    lv_obj_add_event_cb(s_touch, _touch_released, LV_EVENT_PRESS_LOST, NULL);
 
     bsp_display_unlock();
 
