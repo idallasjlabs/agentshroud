@@ -10,26 +10,43 @@ static esp_codec_dev_handle_t s_mic    = NULL;
 static esp_codec_dev_handle_t s_spk    = NULL;
 static bool                   s_ready  = false;
 
+/* Shared I2S config: 16 kHz mono 16-bit, BOX-3 GPIO pins.
+ * Used by both audio_preinit() and audio_init() so the config is defined once. */
+static const i2s_std_config_t s_i2s_cfg = {
+    .clk_cfg  = I2S_STD_CLK_DEFAULT_CONFIG(AUDIO_SAMPLE_RATE),
+    .slot_cfg = I2S_STD_PHILIP_SLOT_DEFAULT_CONFIG(I2S_DATA_BIT_WIDTH_16BIT,
+                                                   I2S_SLOT_MODE_MONO),
+    .gpio_cfg = {
+        .mclk = BSP_I2S_MCLK,
+        .bclk = BSP_I2S_SCLK,
+        .ws   = BSP_I2S_LCLK,
+        .dout = BSP_I2S_DOUT,
+        .din  = BSP_I2S_DSIN,
+        .invert_flags = { .mclk_inv = false, .bclk_inv = false, .ws_inv = false },
+    },
+};
+
+esp_err_t audio_preinit(void)
+{
+    /* bsp_audio_init has an early-return guard: if i2s_tx_chan and i2s_rx_chan
+     * are already set it returns ESP_OK immediately.  Calling audio_preinit()
+     * BEFORE bsp_display_start*() means we claim I2S at 16 kHz first; the
+     * display's internal bsp_audio_init(NULL) then hits the guard and cannot
+     * override the clock with its 22050 Hz default. */
+    esp_err_t ret = bsp_audio_init(&s_i2s_cfg);
+    if (ret != ESP_OK) {
+        ESP_LOGE(TAG, "audio_preinit bsp_audio_init failed: %s", esp_err_to_name(ret));
+    } else {
+        ESP_LOGI(TAG, "I2S pre-claimed at %d Hz (before display init)", AUDIO_SAMPLE_RATE);
+    }
+    return ret;
+}
+
 esp_err_t audio_init(void)
 {
-    /* Init I2S at the project's native sample rate instead of the BSP default.
-     * Passing NULL uses BSP_I2S_DUPLEX_MONO_CFG(22050) which then mismatches
-     * the 16000 Hz passed to esp_codec_dev_open below, causing
-     * esp_codec_dev_read to fail and audio_capture_frame to return 0. */
-    i2s_std_config_t i2s_cfg = {
-        .clk_cfg  = I2S_STD_CLK_DEFAULT_CONFIG(AUDIO_SAMPLE_RATE),
-        .slot_cfg = I2S_STD_PHILIP_SLOT_DEFAULT_CONFIG(I2S_DATA_BIT_WIDTH_16BIT,
-                                                       I2S_SLOT_MODE_MONO),
-        .gpio_cfg = {
-            .mclk = BSP_I2S_MCLK,
-            .bclk = BSP_I2S_SCLK,
-            .ws   = BSP_I2S_LCLK,
-            .dout = BSP_I2S_DOUT,
-            .din  = BSP_I2S_DSIN,
-            .invert_flags = { .mclk_inv = false, .bclk_inv = false, .ws_inv = false },
-        },
-    };
-    esp_err_t ret = bsp_audio_init(&i2s_cfg);
+    /* bsp_audio_init is a no-op here — audio_preinit() already ran.
+     * Call it defensively in case preinit was skipped, but expect early-return. */
+    esp_err_t ret = bsp_audio_init(&s_i2s_cfg);
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "bsp_audio_init failed: %s", esp_err_to_name(ret));
         return ret;

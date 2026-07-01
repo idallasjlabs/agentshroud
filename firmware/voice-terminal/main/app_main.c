@@ -472,6 +472,16 @@ void app_main(void)
     ESP_LOGI(TAG, "PSRAM: %u KB available",
              (unsigned)(heap_caps_get_total_size(MALLOC_CAP_SPIRAM) / 1024));
 
+    /* Pre-claim I2S at 16 kHz BEFORE bsp_display_start*() runs.
+     * bsp_display_new() calls bsp_audio_init(NULL) which locks I2S to the BSP
+     * default of 22050 Hz.  bsp_audio_init has an early-return guard that
+     * ignores any later call once I2S is initialized, so audio_init() could
+     * not override it — the AFE and codecs would receive wrong-rate audio,
+     * causing garbled wakeword, silent mic, and crashes when PCM started flowing.
+     * audio_preinit() grabs I2S at 16 kHz first; the display's call then hits
+     * the guard and leaves the clock unchanged. */
+    ESP_ERROR_CHECK(audio_preinit());
+
     /* Display + touch */
     ui_init();
     ESP_LOGI(TAG, "Display initialised");
