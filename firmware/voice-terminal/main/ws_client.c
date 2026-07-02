@@ -138,12 +138,16 @@ ws_client_handle_t ws_client_create(const char *url,
         /* TLS: attach the ESP-IDF CA bundle (includes ISRG Root X1 / Let's Encrypt).
          * Required for wss:// connections to Tailscale Funnel. No-op for ws://. */
         .crt_bundle_attach    = esp_crt_bundle_attach,
-        /* Pin websocket_task to CPU 0 so TLS bignum cannot starve IDLE1 (CPU 1).
+        /* Pin websocket_task to CPU 1 alongside voice_task.
+         * The ws event callback calls face_set_emotion → lv_canvas_fill_bg which
+         * does a slow PSRAM fill that starves IDLE0 when pinned to CPU 0.
+         * Moved to CPU 1: IDLE0 is freed for the LVGL display task on CPU 0.
+         * voice_task yields 1 ms every 16 ms frame so websocket_task gets CPU 1
+         * during those windows.
          * task_core_id_set MUST be true — the client ignores task_core_id and
-         * uses tskNO_AFFINITY when task_core_id_set is false (default for a
-         * zero-initialised struct, even if task_core_id is explicitly set to 0). */
+         * uses tskNO_AFFINITY when task_core_id_set is false. */
         .task_core_id_set     = true,
-        .task_core_id         = 0,
+        .task_core_id         = 1,
     };
 
     c->wsc = esp_websocket_client_init(&cfg);
