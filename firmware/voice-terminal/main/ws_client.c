@@ -139,15 +139,14 @@ ws_client_handle_t ws_client_create(const char *url,
          * Required for wss:// connections to Tailscale Funnel. No-op for ws://. */
         .crt_bundle_attach    = esp_crt_bundle_attach,
         /* Pin websocket_task to CPU 1 alongside voice_task.
-         * The ws event callback calls face_set_emotion → lv_canvas_fill_bg which
-         * does a slow PSRAM fill that starves IDLE0 when pinned to CPU 0.
-         * Moved to CPU 1: IDLE0 is freed for the LVGL display task on CPU 0.
-         * voice_task yields 1 ms every 16 ms frame so websocket_task gets CPU 1
-         * during those windows.
          * task_core_id_set MUST be true — the client ignores task_core_id and
          * uses tskNO_AFFINITY when task_core_id_set is false. */
         .task_core_id_set     = true,
         .task_core_id         = 1,
+        /* Priority below voice_task (5) so PSRAM canvas fills in the ws event
+         * callback (face_set_emotion → lv_canvas_fill_bg) cannot preempt audio
+         * capture.  Default is 10, which is above voice_task and would starve it. */
+        .task_prio            = 4,
     };
 
     c->wsc = esp_websocket_client_init(&cfg);
