@@ -432,8 +432,15 @@ static void voice_task(void *arg)
             continue;
         }
 
-        /* Feed frame to the trigger detector */
+        /* Feed frame to the trigger detector.
+         * Yield 1 ms after the AFE/WakeNet call so IDLE1 on CPU 1 can reset
+         * the Task WDT.  Without this yield, wakeword_push_frame (esp-sr AFE
+         * + WakeNet inference) runs back-to-back without blocking, starving
+         * IDLE1 and triggering the 5 s TWDT — which panics and reboots the
+         * device every ~5 minutes.  The 1 ms overhead per 16 ms audio frame
+         * (~6 % CPU) is acceptable for the real-time audio loop. */
         wakeword_push_frame(frame_buf, got);
+        vTaskDelay(pdMS_TO_TICKS(1));
 
         if (streaming) {
             /* Stream PCM to gateway */
