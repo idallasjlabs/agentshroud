@@ -43,13 +43,13 @@ typedef struct {
 } vt_agent_t;
 
 static const vt_agent_t VT_AGENTS[] = {
-    /* "direct" first = boot default (2026-07-06): the Anthropic account quota
-     * is exhausted, so Hermes turns exceed the voice timeout and every reply
-     * is a spoken fallback.  The direct path answers from the local model in
-     * seconds.  Middle button still cycles to Hermes; restore hermes-first
-     * once quota is reliable. */
-    { "direct",  "Fast LLM" },   /* Low-latency gateway LLM proxy — no agentic tools          */
+    /* Hermes first = boot default: the ESP32 is the owner's ADMIN VOICE
+     * ACCESS to Hermes, not a generic chat box (owner directive 2026-07-06).
+     * The voice layer waits up to VG_AGENT_READ_TIMEOUT_S (100 s) for slow
+     * Hermes turns while the Anthropic quota recovers.  Middle button cycles
+     * to Fast LLM for quick local answers. */
     { "hermes",  "Hermes"   },   /* Hermes agentic assistant — synchronous OpenAI-compat reply */
+    { "direct",  "Fast LLM" },   /* Low-latency gateway LLM proxy — no agentic tools          */
     { "openclaw","OpenClaw" },   /* OpenClaw — async Telegram bot; replies on Telegram         */
 };
 #define VT_AGENT_COUNT ((int)(sizeof(VT_AGENTS) / sizeof(VT_AGENTS[0])))
@@ -285,14 +285,50 @@ static StreamBufferHandle_t  s_tts_buf      = NULL;
 static StaticStreamBuffer_t  s_tts_sbuf_ctrl;     /* control struct — internal DRAM (BSS) */
 static uint8_t              *s_tts_sbuf_mem = NULL; /* backing store — PSRAM */
 
+/* Jitter pre-buffer: do not start the speaker until this much PCM is queued.
+ * Playing the instant the first 4 KB arrives left the DMA exposed to every
+ * network stutter — each buffer dry-out is an audible click (live 2026-07-06:
+ * "each word cut off with a click" on the office hotspot).  1.5 s of audio
+ * rides out typical funnel/hotspot jitter; on a deep underrun we pause and
+ * re-buffer once instead of clicking per word. */
+#define TTS_PREBUFFER_BYTES   (48 * 1024)   /* 1.5 s @ 16 kHz S16LE */
+#define TTS_STALL_POLLS       15            /* 15 × 20 ms = 300 ms of no growth */
+
 static void tts_task(void *arg)
 {
     static uint8_t play_chunk[4096];
+    bool   draining     = false;
+    size_t last_avail   = 0;
+    int    stall_polls  = 0;
     while (1) {
+        if (!draining) {
+            /* Fill phase: wait for the pre-buffer, but start early when the
+             * stream has stopped growing (short replies smaller than the
+             * pre-buffer would otherwise never play). */
+            size_t avail = xStreamBufferBytesAvailable(s_tts_buf);
+            if (avail >= TTS_PREBUFFER_BYTES) {
+                draining = true;
+            } else if (avail > 0 && avail == last_avail) {
+                if (++stall_polls >= TTS_STALL_POLLS) draining = true;
+            } else {
+                stall_polls = 0;
+            }
+            last_avail = avail;
+            if (!draining) {
+                vTaskDelay(pdMS_TO_TICKS(20));
+                continue;
+            }
+            stall_polls = 0;
+        }
         size_t got = xStreamBufferReceive(s_tts_buf, play_chunk, sizeof(play_chunk),
                                           pdMS_TO_TICKS(100));
         if (got > 0 && !wakeword_tts_stop_requested()) {
             audio_play(play_chunk, got);
+        } else if (got == 0) {
+            /* Underrun (mid-reply stall) or normal end of reply — either way,
+             * go back to the fill phase so the next audio starts smooth. */
+            draining   = false;
+            last_avail = 0;
         }
     }
 }
@@ -654,7 +690,7 @@ static void voice_task(void *arg)
             /* VT_BUILD_TAG: bump on EVERY behavioural firmware change — the
              * only reliable remote build identifier (esp_app_desc stamps go
              * stale, and config-derived values collide across builds). */
-            #define VT_BUILD_TAG "fastdefault-0706b"
+            #define VT_BUILD_TAG "vol92-0706f"
             vt_remote_log("boot: tag=" VT_BUILD_TAG " fw=%s reset=%d tts_buf=%u (remote-diag online)",
                           esp_app_get_description()->version,
                           (int)esp_reset_reason(),
@@ -825,7 +861,14 @@ void app_main(void)
     s_tts_buf = xStreamBufferCreateStatic(TTS_STREAM_BUF_BYTES, 1,
                                           s_tts_sbuf_mem, &s_tts_sbuf_ctrl);
     configASSERT(s_tts_buf);
-    xTaskCreatePinnedToCore(tts_task, "tts_play", 4096, NULL, 4, NULL, 1);
+    /* Priority 6 — ABOVE voice_task/AFE (5) and websocket_task (4).  The
+     * speaker writer must never miss its ~128 ms per-chunk deadline: at
+     * equal/lower priority it time-sliced against the websocket task while
+     * the TTS burst was being received, and every missed slice was a DMA
+     * underrun = one click per chunk ("click at the end of each word",
+     * live 2026-07-06, persisted through the 1.5 s pre-buffer).  Its duty
+     * cycle is tiny (blocks on DMA), so it cannot starve the others. */
+    xTaskCreatePinnedToCore(tts_task, "tts_play", 4096, NULL, 6, NULL, 1);
 
     /* Wake-word + PTT trigger */
     wakeword_init("model");  /* NULL → PTT only, "model" → PTT + WakeNet */

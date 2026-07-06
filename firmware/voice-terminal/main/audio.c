@@ -88,7 +88,7 @@ esp_err_t audio_init(void)
         ESP_LOGE(TAG, "esp_codec_dev_open(spk) failed: %s", esp_err_to_name(ret));
         return ret;
     }
-    esp_codec_dev_set_out_vol(s_spk, 75);   /* 75 % volume */
+    esp_codec_dev_set_out_vol(s_spk, 92);   /* owner feedback 2026-07-06: 75 was too quiet */
 
     s_ready = true;
     ESP_LOGI(TAG, "Audio ready: mic + speaker at %d Hz %d-bit mono",
