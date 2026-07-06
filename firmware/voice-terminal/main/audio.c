@@ -88,7 +88,9 @@ esp_err_t audio_init(void)
         ESP_LOGE(TAG, "esp_codec_dev_open(spk) failed: %s", esp_err_to_name(ret));
         return ret;
     }
-    esp_codec_dev_set_out_vol(s_spk, 92);   /* owner feedback 2026-07-06: 75 was too quiet */
+    /* Volume: NVS-persisted (set by the spoken "set volume X%" command);
+     * falls back to 92 on first boot (owner feedback 2026-07-06: 75 too quiet). */
+    esp_codec_dev_set_out_vol(s_spk, audio_get_saved_volume());
 
     s_ready = true;
     ESP_LOGI(TAG, "Audio ready: mic + speaker at %d Hz %d-bit mono",
@@ -115,4 +117,40 @@ esp_err_t audio_play(const uint8_t *buf, size_t len)
         ESP_LOGW(TAG, "esp_codec_dev_write failed: %s", esp_err_to_name(ret));
     }
     return ret;
+}
+
+/* ── Speaker volume (spoken "set volume X%" command) ─────────────────────── */
+
+#include "nvs_flash.h"
+#include "nvs.h"
+
+#define AUDIO_DEFAULT_VOL 92
+
+int audio_get_saved_volume(void)
+{
+    nvs_handle_t h;
+    int32_t vol = AUDIO_DEFAULT_VOL;
+    if (nvs_open("audio", NVS_READONLY, &h) == ESP_OK) {
+        nvs_get_i32(h, "out_vol", &vol);
+        nvs_close(h);
+    }
+    if (vol < 0)   vol = 0;
+    if (vol > 100) vol = 100;
+    return (int)vol;
+}
+
+esp_err_t audio_set_volume(int pct)
+{
+    if (pct < 0)   pct = 0;
+    if (pct > 100) pct = 100;
+    if (s_spk) esp_codec_dev_set_out_vol(s_spk, pct);
+
+    nvs_handle_t h;
+    if (nvs_open("audio", NVS_READWRITE, &h) == ESP_OK) {
+        nvs_set_i32(h, "out_vol", (int32_t)pct);
+        nvs_commit(h);
+        nvs_close(h);
+    }
+    ESP_LOGI(TAG, "Speaker volume set to %d%% (persisted)", pct);
+    return ESP_OK;
 }

@@ -2090,6 +2090,189 @@ async def test_ws_hung_tts_synthesis_still_returns_idle(monkeypatch):
     )
 
 
+# ── Spoken volume command ─────────────────────────────────────────────────────
+
+
+def test_parse_volume_command_forms():
+    """Digit, percent, word-number and compound forms; clamping; non-commands."""
+    import voice_gateway.server as srv
+
+    cases = [
+        ("Set volume to 80%.", 80),
+        ("set the volume 50", 50),
+        ("Set volume to 100 percent", 100),
+        ("Set volume to eighty percent.", 80),
+        ("set volume to twenty five", 25),
+        ("Set volume to zero.", 0),
+        ("Set volume to 150%", 100),      # clamped
+        ("What time is it?", None),
+        ("The volume of a sphere is...", None),
+    ]
+    for text, expected in cases:
+        assert srv._parse_volume_command(text) == expected, f"{text!r}"
+
+
+@pytest.mark.asyncio
+async def test_ws_volume_command_intercepted(monkeypatch):
+    """'set volume X%' must NOT reach the agent: the server sends a
+    {"cmd":"set_volume","value":N} control frame to the device and speaks a
+    confirmation via the normal TTS path."""
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "Set volume to 80%.")
+
+    async def _agent_must_not_be_called(transcript, agent):
+        raise AssertionError("volume command must not be routed to the agent")
+
+    monkeypatch.setattr(srv, "_call_agent", _agent_must_not_be_called)
+
+    spoken: list = []
+
+    def _capture_synth(t):
+        spoken.append(t)
+        return b"\x01\x00" * 50
+
+    monkeypatch.setattr(tts_mod, "synthesize", _capture_synth)
+
+    ws = _mock_ws([
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": _pcm_bytes(), "text": None},
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    await srv.voice_endpoint(ws)
+
+    sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
+    ctrl = [t for t in sent_texts if '"cmd"' in t]
+    assert ctrl, "no control frame sent for the volume command"
+    assert json.loads(ctrl[0]) == {"cmd": "set_volume", "value": 80}
+    assert any("80 percent" in t for t in spoken), (
+        f"confirmation not spoken; synthesized: {spoken}"
+    )
+    states = []
+    for t in sent_texts:
+        try:
+            states.append(json.loads(t).get("state"))
+        except Exception:
+            pass
+    assert states[-1] == "idle"
+
+
+# ── TTS resume-on-reconnect ───────────────────────────────────────────────────
+
+
+@pytest.fixture(autouse=True)
+def _reset_reply_resume():
+    import voice_gateway.server as srv
+
+    if hasattr(srv, "_reply_resume"):
+        srv._reply_resume = None
+    yield
+    if hasattr(srv, "_reply_resume"):
+        srv._reply_resume = None
+
+
+@pytest.mark.asyncio
+async def test_tts_resume_after_mid_stream_disconnect(monkeypatch):
+    """If the socket dies during the TTS downlink, the NEXT connection must
+    receive the un-sent remainder (+END +idle) so the reply is not lost."""
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "hello")
+
+    async def _mock_agent(transcript, agent):
+        return "Only sentence."
+
+    monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+    reply_pcm = bytes(range(256)) * 128  # 32 KB, recognisable bytes
+    monkeypatch.setattr(tts_mod, "synthesize", lambda t: reply_pcm)
+
+    # Session 1: dies after the first PCM frame is sent.
+    ws1 = _mock_ws([
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": _pcm_bytes(), "text": None},
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1006),
+    ])
+    frames1: list = []
+
+    async def _send_bytes_then_die(frame):
+        frames1.append(frame)
+        if len(frames1) >= 1:
+            raise RuntimeError("socket died mid-stream")
+
+    ws1.send_bytes = _send_bytes_then_die
+    await srv.voice_endpoint(ws1)
+
+    assert srv._reply_resume is not None, "resume state not preserved on drop"
+
+    # Session 2 (reconnect): should receive the remainder immediately.
+    ws2 = _mock_ws([WebSocketDisconnect(code=1000)])
+    await srv.voice_endpoint(ws2)
+
+    sent2 = b"".join(c.args[0] for c in ws2.send_bytes.call_args_list)
+    assert len(sent2) > 0, "no resumed PCM sent on reconnect"
+    # Remainder must cover the reply tail (last bytes of reply_pcm).
+    assert sent2.endswith(reply_pcm[-64:]), "resumed stream missing the reply tail"
+    texts2 = [c.args[0] for c in ws2.send_text.call_args_list]
+    assert "END" in texts2
+    assert srv._reply_resume is None, "resume state must clear after replay"
+
+
+@pytest.mark.asyncio
+async def test_tts_resume_stale_cache_ignored(monkeypatch):
+    """A resume cache older than the freshness window must not replay."""
+    import voice_gateway.server as srv
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    srv._reply_resume = {
+        "pcm": bytearray(b"\x01\x00" * 100),
+        "sent": 0,
+        "ts": -10_000.0,  # far in the past on the monotonic clock
+    }
+
+    ws = _mock_ws([WebSocketDisconnect(code=1000)])
+    await srv.voice_endpoint(ws)
+
+    assert ws.send_bytes.call_args_list == [], "stale cache must not replay"
+
+
+# ── TTS edge fade (sentence-boundary crossfade) ──────────────────────────────
+
+
+def test_tts_synthesize_fades_sentence_edges(monkeypatch):
+    """Each synthesized sentence must ramp in/out over ~5 ms so per-sentence
+    Kokoro output joins without DC/level steps (audible clicks)."""
+    import numpy as np
+
+    import voice_gateway.tts as tts_mod
+
+    class _FakePipeline:
+        def __call__(self, text, voice=None, speed=None):
+            # Constant full-scale-ish signal, 0.5 s at 24 kHz.
+            yield None, None, np.full(12000, 0.9, dtype=np.float32)
+
+    monkeypatch.setattr(tts_mod, "_pipeline", _FakePipeline())
+
+    pcm = tts_mod.synthesize("Constant tone.")
+    samples = np.frombuffer(pcm, dtype="<i2")
+
+    assert abs(int(samples[0])) < 1500, f"first sample not faded in: {samples[0]}"
+    assert abs(int(samples[-1])) < 1500, f"last sample not faded out: {samples[-1]}"
+    mid = len(samples) // 2
+    assert abs(int(samples[mid])) > 20000, "mid-signal amplitude must be untouched"
+
+
 # ── OTA firmware endpoint ─────────────────────────────────────────────────────
 
 

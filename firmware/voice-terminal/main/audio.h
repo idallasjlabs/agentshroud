@@ -67,3 +67,16 @@ size_t audio_capture_frame(uint8_t *buf, size_t nbytes);
  * @return ESP_OK or propagated codec error.
  */
 esp_err_t audio_play(const uint8_t *buf, size_t len);
+
+/**
+ * @brief Set speaker volume 0-100%% and persist it to NVS ("audio"/"out_vol").
+ *
+ * Driven by the spoken "set volume X%%" command (server sends a
+ * {"cmd":"set_volume","value":N} control frame).  Clamped to [0,100].
+ */
+esp_err_t audio_set_volume(int pct);
+
+/**
+ * @brief Volume loaded from NVS, or the built-in default on first boot.
+ */
+int audio_get_saved_volume(void);

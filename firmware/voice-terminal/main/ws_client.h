@@ -35,6 +35,8 @@ typedef enum {
 /** Callback types registered by the caller. */
 typedef void (*ws_state_cb_t)(ws_vg_state_t state, void *user_ctx);
 typedef void (*ws_pcm_cb_t)(const uint8_t *pcm, size_t len, void *user_ctx);
+/** Server control frame {"cmd":"<name>","value":N} (e.g. spoken volume). */
+typedef void (*ws_ctrl_cb_t)(const char *cmd, int value, void *user_ctx);
 
 /**
  * @brief Initialise the WebSocket client and connect to the Voice Gateway.
@@ -99,6 +101,14 @@ esp_err_t ws_client_send_keepalive(ws_client_handle_t c);
  * audio path.  Message is truncated and quote-stripped for JSON safety.
  */
 esp_err_t ws_client_send_log(ws_client_handle_t c, const char *msg);
+
+/**
+ * @brief Register a handler for server control frames ({"cmd":...}).
+ *
+ * Optional; unregistered commands are ignored.  The callback runs in
+ * websocket_task context — it must not block (same contract as state_cb).
+ */
+void ws_client_set_ctrl_cb(ws_client_handle_t c, ws_ctrl_cb_t cb);
 
 /**
  * @brief Returns true if the WebSocket connection is currently open.

@@ -408,4 +408,16 @@ def synthesize(text: str) -> bytes:
             TARGET_SAMPLE_RATE,
             len(text),
         )
+
+    # Edge fade (~5 ms): synthesize() runs per sentence, and consecutive Kokoro
+    # outputs can start/end at different DC offsets/levels — each seam was an
+    # audible click on the ESP32 speaker.  Ramp the first and last 80 samples
+    # so sentence joins (and stream start/stop) are silent.
+    _n_fade = min(80, len(pcm) // 4)
+    if _n_fade > 1:
+        s16 = _np.frombuffer(pcm, dtype="<i2").astype(_np.float32).copy()
+        ramp = _np.linspace(0.0, 1.0, _n_fade, dtype=_np.float32)
+        s16[:_n_fade] *= ramp
+        s16[-_n_fade:] *= ramp[::-1]
+        pcm = s16.astype("<i2").tobytes()
     return pcm

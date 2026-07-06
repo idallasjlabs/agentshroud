@@ -227,6 +227,11 @@ esp_err_t wakeword_init(const char *model_partition)
     s_afe_cfg->wakenet_model_name_2 = NULL;
     s_afe_cfg->wakenet_mode        = DET_MODE_90;
     s_afe_cfg->vad_init            = true;
+    /* Most aggressive silence classification: office ambience (HVAC/chatter)
+     * pinned the default WebRTC VAD at VAD_SPEECH for entire utterances
+     * (vad: trace showed sil=0ms for 8 s straight, 2026-07-06), so the
+     * silence endpointing never fired outside quiet rooms. */
+    s_afe_cfg->vad_mode            = VAD_MODE_4;
     s_afe_cfg->aec_init            = false;   /* BOX-3: no echo path */
     s_afe_cfg->se_init             = false;
     s_afe_cfg->afe_perferred_core  = 1;

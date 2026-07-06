@@ -344,9 +344,25 @@ static ws_vg_state_t s_prev_vg_state = WS_VG_STATE_DISCONNECTED;
  * a dedicated vg_state_task → wedged on cross-task display locks after WiFi
  * drops, beacon-evidenced by stateq pinned at 3.  lv_async_call removes the
  * cross-task locking class entirely.) */
+/* Set for the whole capture→delivery window (voice_task).  While an utterance
+ * is being captured or delivered, the delivery loop owns the face — WS drops
+ * and reconnects are EXPECTED on the hotspot (retries handle them), and the
+ * DISCONNECTED/"Reconnecting" + reconnect-IDLE flashes they caused were the
+ * owner's #1 cosmetic complaint.  Suppress both while active. */
+static volatile bool s_delivery_active = false;
+
 static void _on_vg_state(ws_vg_state_t state, void *ctx)
 {
     (void)ctx;
+
+    if (s_delivery_active &&
+        (state == WS_VG_STATE_DISCONNECTED || state == WS_VG_STATE_IDLE)) {
+        /* Keep the LISTENING/THINKING face steady through delivery retries.
+         * The delivery loop sets the final state itself (IDLE on failure;
+         * on success the server drives THINKING→SPEAKING→IDLE). */
+        s_prev_vg_state = state;
+        return;
+    }
 
     if (state == WS_VG_STATE_SPEAKING) {
         wakeword_set_tts_playing(true);
@@ -403,6 +419,20 @@ static void _on_tts_pcm(const uint8_t *pcm, size_t len, void *ctx)
             xStreamBufferSend(s_tts_buf, pcm, even_len, 0);
         }
         /* else: chunk dropped whole — a brief gap, never corruption */
+    }
+}
+
+/* Server control frames — spoken commands intercepted server-side.
+ * Runs in websocket_task context; audio_set_volume's NVS commit is a few ms
+ * (the TTS pre-buffer absorbs far more), everything else is non-blocking. */
+static void _on_ws_ctrl(const char *cmd, int value, void *ctx)
+{
+    (void)ctx;
+    if (strcmp(cmd, "set_volume") == 0) {
+        audio_set_volume(value);
+        vt_remote_log("volume set to %d%% (spoken command)", value);
+    } else {
+        vt_remote_log("unknown ctrl cmd %.24s (value=%d) — ignored", cmd, value);
     }
 }
 
@@ -634,6 +664,7 @@ static void voice_task(void *arg)
             int attempts = 0;
             while (!new_ws && attempts < 5) {
                 new_ws = ws_client_create(url, _on_vg_state, _on_tts_pcm, NULL);
+                if (new_ws) ws_client_set_ctrl_cb(new_ws, _on_ws_ctrl);
                 if (!new_ws) {
                     ESP_LOGW(TAG, "Agent switch WS connect failed (attempt %d/5)", attempts + 1);
                     vTaskDelay(pdMS_TO_TICKS(3000));
@@ -690,7 +721,7 @@ static void voice_task(void *arg)
             /* VT_BUILD_TAG: bump on EVERY behavioural firmware change — the
              * only reliable remote build identifier (esp_app_desc stamps go
              * stale, and config-derived values collide across builds). */
-            #define VT_BUILD_TAG "vol92-0706f"
+            #define VT_BUILD_TAG "volcmd-0706h"
             vt_remote_log("boot: tag=" VT_BUILD_TAG " fw=%s reset=%d tts_buf=%u (remote-diag online)",
                           esp_app_get_description()->version,
                           (int)esp_reset_reason(),
@@ -710,6 +741,7 @@ static void voice_task(void *arg)
          * without costing the user their query. */
         if (!capturing && wakeword_triggered()) {
             capturing = true;
+            s_delivery_active = true;   /* face owned by us until delivery resolves */
             utt_len   = 0;
             ui_face_set_state(WS_VG_STATE_LISTENING);   /* local, immediate */
             ESP_LOGI(TAG, "Capture started");
@@ -737,6 +769,7 @@ static void voice_task(void *arg)
                 capturing = false;
                 ui_face_set_state(WS_VG_STATE_THINKING);
                 bool ok = _deliver_utterance(utt_buf, utt_len);
+                s_delivery_active = false;
                 wakeword_clear();
                 keepalive_frames = 0;
                 if (!ok) ui_face_set_state(WS_VG_STATE_IDLE);
@@ -777,6 +810,7 @@ static void voice_task(void *arg)
                 ESP_LOGI(TAG, "Capture ended: %u bytes — delivering", (unsigned)utt_len);
                 ui_face_set_state(WS_VG_STATE_THINKING);
                 bool ok = _deliver_utterance(utt_buf, utt_len);
+                s_delivery_active = false;
                 wakeword_clear();
                 keepalive_frames = 0;   /* reset so we don't ping immediately after */
                 if (!ok) ui_face_set_state(WS_VG_STATE_IDLE);
@@ -901,6 +935,7 @@ void app_main(void)
 
     while (!s_ws) {
         s_ws = ws_client_create(ws_url, _on_vg_state, _on_tts_pcm, NULL);
+        if (s_ws) ws_client_set_ctrl_cb(s_ws, _on_ws_ctrl);
         if (!s_ws) {
             ESP_LOGW(TAG, "WebSocket connection failed — retrying in 5 s");
             ui_face_set_state(WS_VG_STATE_DISCONNECTED);

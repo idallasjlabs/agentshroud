@@ -111,6 +111,17 @@ _LISTEN_MAX_S: float = 15.0              # max seconds to wait for END after LIS
 # healthy; a synthesis exceeding this is wedged (e.g. blocked voice-pack
 # download) and must not strand the device in THINKING.
 _TTS_SENTENCE_TIMEOUT_S: float = float(os.environ.get("VG_TTS_SENTENCE_TIMEOUT_S", "30"))
+
+# ── TTS resume-on-reconnect ───────────────────────────────────────────────────
+# Sessions are per-connection, so a hotspot drop mid-downlink used to lose the
+# rest of the reply.  The send loop records the reply and its sent offset here;
+# a reconnect within the freshness window replays the un-sent remainder.
+# Single-device deployment — no per-device keying (the funnel NATs every
+# device to one host anyway).
+_reply_resume: dict | None = None
+_RESUME_MAX_AGE_S: float = 30.0
+_RESUME_REWIND_BYTES: int = 8192   # re-send this much before the recorded
+                                   # offset — covers frames lost in flight
 _PCM_MAX_BYTES: int  = 16000 * 2 * 20   # 20 s × 16 kHz × 2 bytes/sample S16LE mono
 
 
@@ -179,6 +190,52 @@ async def _send_state(ws: WebSocket, state: _State) -> None:
     name = state.name.lower()
     await ws.send_text(json.dumps({"state": name}))
     logger.debug("→ state: %s", name)
+
+
+_NUMBER_WORDS = {
+    "zero": 0, "ten": 10, "twenty": 20, "thirty": 30, "forty": 40,
+    "fifty": 50, "sixty": 60, "seventy": 70, "eighty": 80, "ninety": 90,
+    "hundred": 100, "one hundred": 100,
+}
+_UNIT_WORDS = {
+    "one": 1, "two": 2, "three": 3, "four": 4, "five": 5,
+    "six": 6, "seven": 7, "eight": 8, "nine": 9,
+}
+
+
+def _parse_volume_command(transcript: str) -> int | None:
+    """Return the requested volume (0-100, clamped) for a spoken
+    "set [the] volume [to] X [%|percent]" command, else None.
+
+    Whisper emits both digit ("80%") and word ("eighty percent") forms —
+    handle digits, tens words, and tens+unit compounds ("twenty five").
+    """
+    t = transcript.lower().strip()
+    m = re.search(
+        r"\bset\s+(?:the\s+)?volume\s+(?:to\s+)?"
+        r"(\d{1,3}|[a-z]+(?:[ -][a-z]+)?)\s*(?:%|percent)?\b",
+        t,
+    )
+    if not m:
+        return None
+    raw = m.group(1).replace("-", " ").strip()
+    if raw.isdigit():
+        val = int(raw)
+    elif raw in _NUMBER_WORDS:
+        val = _NUMBER_WORDS[raw]
+    else:
+        parts = raw.split()
+        if (
+            len(parts) == 2
+            and parts[0] in _NUMBER_WORDS
+            and parts[1] in _UNIT_WORDS
+        ):
+            val = _NUMBER_WORDS[parts[0]] + _UNIT_WORDS[parts[1]]
+        elif len(parts) == 2 and parts[0] in _NUMBER_WORDS:
+            val = _NUMBER_WORDS[parts[0]]   # "eighty percent" already stripped; stray word
+        else:
+            return None
+    return max(0, min(100, val))
 
 
 def _voice_system_message() -> Dict[str, str]:
@@ -339,6 +396,30 @@ async def voice_endpoint(ws: WebSocket) -> None:
         await _send_state(ws, state)
         heartbeat = asyncio.create_task(_keepalive(ws))
         _loop = asyncio.get_running_loop()
+
+        # Resume an interrupted TTS reply from the previous connection.
+        global _reply_resume
+        if _reply_resume is not None:
+            _age = _loop.time() - _reply_resume["ts"]
+            _pcm, _sent = _reply_resume["pcm"], _reply_resume["sent"]
+            if _age <= _RESUME_MAX_AGE_S and _sent < len(_pcm):
+                _off = max(0, _sent - _RESUME_REWIND_BYTES)
+                logger.info(
+                    "Resuming interrupted TTS reply: %d/%d bytes were sent "
+                    "%.1fs ago — replaying remainder",
+                    _sent, len(_pcm), _age,
+                )
+                state = _State.SPEAKING
+                await _send_state(ws, state)
+                for _i in range(_off, len(_pcm), _CHUNK_SIZE):
+                    await ws.send_bytes(bytes(_pcm[_i : _i + _CHUNK_SIZE]))
+                    _reply_resume["sent"] = _i + _CHUNK_SIZE
+                    await asyncio.sleep(0)
+                await ws.send_text("END")
+                state = _State.IDLE
+                await _send_state(ws, state)
+            _reply_resume = None   # replayed, stale, or already complete
+
         while True:
             # While LISTENING, bound the wait so a device that never sends END
             # (crash, stuck firmware) self-heals after _LISTEN_MAX_S seconds.
@@ -434,8 +515,19 @@ async def voice_endpoint(ws: WebSocket) -> None:
                             await _send_state(ws, state)
                             continue
 
+                        # Spoken device commands — intercepted server-side, never
+                        # routed to an agent.  "set volume X%" sends a control
+                        # frame the firmware applies + persists; the confirmation
+                        # is spoken through the normal TTS path below.
+                        _vol = _parse_volume_command(transcript)
+                        if _vol is not None:
+                            logger.info("Volume command: %d%% → device", _vol)
+                            await ws.send_text(
+                                json.dumps({"cmd": "set_volume", "value": _vol})
+                            )
+                            agent_text = f"Volume set to {_vol} percent."
                         # Dispatch to the appropriate agent.
-                        if agent == "direct":
+                        elif agent == "direct":
                             # Fast path: multi-turn LLM proxy (no agentic tools).
                             history.append({"role": "user", "content": transcript})
                             agent_text = await _call_llm(history)
@@ -449,7 +541,8 @@ async def voice_endpoint(ws: WebSocket) -> None:
 
                         # Maintain multi-turn history only for the "direct" fast path.
                         # Proxied agents (Hermes, etc.) manage their own conversation state.
-                        if agent == "direct":
+                        # Volume commands never touched history (no user turn appended).
+                        if agent == "direct" and _vol is None:
                             history.append({"role": "assistant", "content": agent_text})
                             if len(history) > 1 + _MAX_HISTORY_TURNS * 2:
                                 history = (
@@ -525,6 +618,14 @@ async def voice_endpoint(ws: WebSocket) -> None:
                         watcher = asyncio.create_task(_watch_for_stop())
                         _stop_wait = asyncio.create_task(_stop_requested.wait())
                         _speaking_sent = False
+                        # Arm the resume cache: if this connection dies before
+                        # the reply finishes, the next connection replays the
+                        # remainder (see the resume block at connect time).
+                        _reply_resume = {
+                            "pcm": bytearray(),
+                            "sent": 0,
+                            "ts": _loop.time(),
+                        }
                         try:
                             while not _stop_requested.is_set():
                                 _get = asyncio.create_task(_synth_q.get())
@@ -538,6 +639,7 @@ async def voice_endpoint(ws: WebSocket) -> None:
                                 pcm = _get.result()
                                 if pcm is None:
                                     break
+                                _reply_resume["pcm"] += pcm
                                 for i in range(0, len(pcm), _CHUNK_SIZE):
                                     if _stop_requested.is_set():
                                         break
@@ -548,6 +650,7 @@ async def voice_endpoint(ws: WebSocket) -> None:
                                             await _send_state(ws, state)
                                             _speaking_sent = True
                                         await ws.send_bytes(frame)
+                                        _reply_resume["sent"] += len(frame)
                                         await asyncio.sleep(0)
                         finally:
                             for _task in (watcher, _stop_wait, synth_task):
@@ -568,6 +671,10 @@ async def voice_endpoint(ws: WebSocket) -> None:
                         await ws.send_text("END")
                         state = _State.IDLE
                         await _send_state(ws, state)
+                        # Reply fully delivered (or user-STOPped) — nothing to
+                        # resume.  A mid-stream drop never reaches this line,
+                        # leaving the cache armed for the reconnect replay.
+                        _reply_resume = None
 
                     except Exception as exc:
                         logger.error("Pipeline error: %s", exc, exc_info=True)

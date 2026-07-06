@@ -15,6 +15,7 @@ struct ws_client {
     esp_websocket_client_handle_t wsc;
     ws_state_cb_t  state_cb;
     ws_pcm_cb_t    pcm_cb;
+    ws_ctrl_cb_t   ctrl_cb;
     void          *user_ctx;
     SemaphoreHandle_t mutex;
     /* Lock-free connection flag, maintained from CONNECTED/DISCONNECTED/ERROR/
@@ -94,6 +95,16 @@ static void _on_event(void *handler_args, esp_event_base_t base,
 
             cJSON *root = cJSON_ParseWithLength(buf, copy_len);
             if (!root) break;
+            /* Control frames: {"cmd":"set_volume","value":80} — server-side
+             * intercepts of spoken commands (no agent round-trip). */
+            cJSON *cmd_item = cJSON_GetObjectItem(root, "cmd");
+            if (cJSON_IsString(cmd_item)) {
+                cJSON *val_item = cJSON_GetObjectItem(root, "value");
+                int val = cJSON_IsNumber(val_item) ? (int)val_item->valuedouble : 0;
+                if (c->ctrl_cb) c->ctrl_cb(cmd_item->valuestring, val, c->user_ctx);
+                cJSON_Delete(root);
+                break;
+            }
             cJSON *state_item = cJSON_GetObjectItem(root, "state");
             if (cJSON_IsString(state_item)) {
                 const char *s = state_item->valuestring;
@@ -283,6 +294,11 @@ esp_err_t ws_client_send_log(ws_client_handle_t c, const char *msg)
     int sent = esp_websocket_client_send_text(c->wsc, frame, (int)pos,
                                               pdMS_TO_TICKS(500));
     return (sent >= 0) ? ESP_OK : ESP_FAIL;
+}
+
+void ws_client_set_ctrl_cb(ws_client_handle_t c, ws_ctrl_cb_t cb)
+{
+    if (c) c->ctrl_cb = cb;
 }
 
 bool ws_client_connected(ws_client_handle_t c)
