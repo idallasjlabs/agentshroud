@@ -71,6 +71,16 @@ esp_err_t ws_client_send_listen(ws_client_handle_t c);
 esp_err_t ws_client_send_end(ws_client_handle_t c);
 
 /**
+ * @brief Send the TTS-abort marker ("STOP") to the Voice Gateway.
+ *
+ * Sent when the user taps during SPEAKING.  The gateway aborts the in-flight
+ * TTS stream and returns the session to idle immediately; without it the
+ * server keeps streaming the full reply (8-30 s) while the device discards
+ * it, deaf to new utterances.
+ */
+esp_err_t ws_client_send_stop(ws_client_handle_t c);
+
+/**
  * @brief Send a keepalive text frame to the Voice Gateway.
  *
  * Sends {"ping":1} to keep NAT and Tailscale relay state alive when no audio
@@ -78,6 +88,17 @@ esp_err_t ws_client_send_end(ws_client_handle_t c);
  * No-op if the connection is not currently open.
  */
 esp_err_t ws_client_send_keepalive(ws_client_handle_t c);
+
+/**
+ * @brief Ship a diagnostic log line to the Voice Gateway as {"log":"..."}.
+ *
+ * Remote-diagnosis channel: with no USB serial available, key firmware
+ * diagnostics are mirrored to the gateway, which prints them into its own
+ * log ("[device <addr>] ...").  Best-effort: silently no-ops when the
+ * connection is down; uses a short send timeout so it can never stall the
+ * audio path.  Message is truncated and quote-stripped for JSON safety.
+ */
+esp_err_t ws_client_send_log(ws_client_handle_t c, const char *msg);
 
 /**
  * @brief Returns true if the WebSocket connection is currently open.

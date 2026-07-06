@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
+#include <stdarg.h>
 #include "wifi_credentials.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -23,6 +24,7 @@
 #include "ws_client.h"
 #include "ui_face.h"
 #include "ota.h"
+#include "remote_log.h"
 
 static const char *TAG = "vt";
 
@@ -41,8 +43,13 @@ typedef struct {
 } vt_agent_t;
 
 static const vt_agent_t VT_AGENTS[] = {
-    { "hermes",  "Hermes"   },   /* Hermes agentic assistant — synchronous OpenAI-compat reply */
+    /* "direct" first = boot default (2026-07-06): the Anthropic account quota
+     * is exhausted, so Hermes turns exceed the voice timeout and every reply
+     * is a spoken fallback.  The direct path answers from the local model in
+     * seconds.  Middle button still cycles to Hermes; restore hermes-first
+     * once quota is reliable. */
     { "direct",  "Fast LLM" },   /* Low-latency gateway LLM proxy — no agentic tools          */
+    { "hermes",  "Hermes"   },   /* Hermes agentic assistant — synchronous OpenAI-compat reply */
     { "openclaw","OpenClaw" },   /* OpenClaw — async Telegram bot; replies on Telegram         */
 };
 #define VT_AGENT_COUNT ((int)(sizeof(VT_AGENTS) / sizeof(VT_AGENTS[0])))
@@ -186,6 +193,9 @@ static void wifi_event_handler(void *arg, esp_event_base_t base,
         s_retry++;
         ESP_LOGW(TAG, "WiFi disconnected from '%s' reason=%d (attempt %d/%d)",
                  NETWORKS[s_net_idx].ssid, ev->reason, s_retry, CONFIG_VT_WIFI_MAX_RETRY);
+        /* Queued; flushes after the link recovers.  The reason code is the
+         * only remote evidence of a WiFi-layer drop (vs TCP/TLS-layer). */
+        vt_remote_log("WiFi DROP reason=%d (attempt %d)", (int)ev->reason, s_retry);
 
         if (s_retry >= CONFIG_VT_WIFI_MAX_RETRY) {
             s_retry = 0;
@@ -207,6 +217,7 @@ static void wifi_event_handler(void *arg, esp_event_base_t base,
         ip_event_got_ip_t *ev = (ip_event_got_ip_t *)data;
         snprintf(s_ip, sizeof(s_ip), IPSTR, IP2STR(&ev->ip_info.ip));
         ESP_LOGI(TAG, "Got IP: %s", s_ip);
+        vt_remote_log("WiFi UP ip=%s", s_ip);
         s_retry = 0;
         xEventGroupSetBits(s_wifi_eg, WIFI_CONNECTED_BIT);
         ui_update(UI_WIFI_CONNECTED, s_ip);
@@ -234,6 +245,12 @@ static void wifi_init(void)
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &cfg));
     ESP_ERROR_CHECK(esp_wifi_start());
+    /* Disable modem power-save.  Default WIFI_PS_MIN_MODEM ("pm start, type: 1"
+     * in the boot log) sleeps the radio between DTIM beacons; a sudden PCM
+     * uplink burst on an iPhone hotspot then reliably drops the link ~0.3-1 s
+     * after streaming starts — the "reconnects every time I speak" bug.  The
+     * device is mains-powered, so the power cost is irrelevant. */
+    ESP_ERROR_CHECK(esp_wifi_set_ps(WIFI_PS_NONE));
 
     ESP_LOGI(TAG, "Connecting to '%s'...", NETWORKS[0].ssid);
     ui_update(UI_WIFI_CONNECTING, NETWORKS[0].ssid);
@@ -255,7 +272,15 @@ static void wifi_init(void)
  * xStreamBufferCreateStatic) so we get a large buffer without needing
  * CONFIG_SPIRAM_USE_MALLOC to redirect pvPortMalloc to PSRAM.
  */
-#define TTS_STREAM_BUF_BYTES   (64 * 1024)   /* ~2 s at 16000 Hz 16-bit mono */
+#define TTS_STREAM_BUF_BYTES   (1024 * 1024) /* ~32 s at 16000 Hz 16-bit mono.
+                                              * The server BURSTS the whole reply
+                                              * (drop-tolerant on the hotspot), so
+                                              * the buffer must hold the longest
+                                              * plausible reply: at 256 KB (~8 s),
+                                              * anything longer overflowed and
+                                              * _on_tts_pcm dropped whole chunks —
+                                              * the "ends of words cut off"
+                                              * user report.  PSRAM has MBs free. */
 static StreamBufferHandle_t  s_tts_buf      = NULL;
 static StaticStreamBuffer_t  s_tts_sbuf_ctrl;     /* control struct — internal DRAM (BSS) */
 static uint8_t              *s_tts_sbuf_mem = NULL; /* backing store — PSRAM */
@@ -276,8 +301,17 @@ static void tts_task(void *arg)
 
 static ws_vg_state_t s_prev_vg_state = WS_VG_STATE_DISCONNECTED;
 
+/* Runs in websocket_task context — every call below is non-blocking:
+ * wakeword_* are flag writes, vt_remote_log is a queue post, and
+ * ui_face_set_state/set_agent are lv_async_call posts into the LVGL thread.
+ * (History: this logic first ran heavy LVGL work inline → deadlock; then on
+ * a dedicated vg_state_task → wedged on cross-task display locks after WiFi
+ * drops, beacon-evidenced by stateq pinned at 3.  lv_async_call removes the
+ * cross-task locking class entirely.) */
 static void _on_vg_state(ws_vg_state_t state, void *ctx)
 {
+    (void)ctx;
+
     if (state == WS_VG_STATE_SPEAKING) {
         wakeword_set_tts_playing(true);
         ui_face_set_state(state);
@@ -285,15 +319,25 @@ static void _on_vg_state(ws_vg_state_t state, void *ctx)
     } else if (state == WS_VG_STATE_IDLE) {
         bool post_tts    = (s_prev_vg_state == WS_VG_STATE_SPEAKING);
         bool interrupted = wakeword_tts_stop_requested();
+        if (interrupted && s_tts_buf) {
+            /* Flush undelivered TTS PCM BEFORE clearing the stop request:
+             * once cleared, tts_task resumes playing whatever is left in the
+             * 256 KB buffer — a leftover blast of the reply the user just
+             * stopped.  Reset can fail only if tts_task is blocked reading,
+             * which means the buffer is already empty — safe either way. */
+            xStreamBufferReset(s_tts_buf);
+        }
         wakeword_set_tts_playing(false);
         wakeword_tts_stop_clear();
 
         if (post_tts && !interrupted) {
-            /* TTS finished naturally — auto-listen so the user can ask a
-             * follow-up without saying "Hi, ESP" again.  VAD timeout (8 s of
-             * silence) will send END and return to idle if no follow-up. */
-            wakeword_ptt_press();
-            ui_face_set_state(WS_VG_STATE_LISTENING);
+            /* AUTO-LISTEN DISABLED: with no acoustic echo cancellation, the
+             * follow-up listen window picks up the tail/reverb of our own TTS
+             * (live transcript evidence: "See, orange, clear, admission match,
+             * connect" = Whisper hearing the speaker), producing garbage
+             * queries in a feedback loop.  Follow-ups now require an explicit
+             * tap or "Hi, ESP" — predictable and echo-proof. */
+            ui_face_set_state(WS_VG_STATE_IDLE);
         } else if (!wakeword_triggered()) {
             /* Interrupted or normal idle.  ui_face may already show IDLE if
              * the user tapped (touch callback updated it); set_state() has an
@@ -310,10 +354,19 @@ static void _on_vg_state(ws_vg_state_t state, void *ctx)
 
 static void _on_tts_pcm(const uint8_t *pcm, size_t len, void *ctx)
 {
-    /* Non-blocking push: if the buffer is full, drop this chunk rather than
-     * stalling websocket_task (which would corrupt the WS receive loop). */
+    /* Non-blocking push: if the buffer is full, drop rather than stall
+     * websocket_task.  CRITICAL: drop the WHOLE chunk or nothing —
+     * xStreamBufferSend with 0 timeout does PARTIAL writes, and a partial
+     * ending on an odd byte shifts every subsequent 16-bit sample by one
+     * byte = full-scale white noise ("loud static louder than the speech",
+     * user-reported).  Whole even-sized chunks keep S16LE alignment. */
     if (s_tts_buf && !wakeword_tts_stop_requested()) {
-        xStreamBufferSend(s_tts_buf, pcm, len, 0);
+        size_t even_len = len & ~(size_t)1;
+        if (even_len > 0 &&
+            xStreamBufferSpacesAvailable(s_tts_buf) >= even_len) {
+            xStreamBufferSend(s_tts_buf, pcm, even_len, 0);
+        }
+        /* else: chunk dropped whole — a brief gap, never corruption */
     }
 }
 
@@ -322,10 +375,184 @@ static void _on_tts_pcm(const uint8_t *pcm, size_t len, void *ctx)
 /* Shared WS handle — written by app_main, read/written by voice_task on switch. */
 static volatile ws_client_handle_t s_ws = NULL;
 
+/* ── Remote diagnostic log (see remote_log.h) ─────────────────────────────── */
+
+/* Callers (LVGL task, voice_task, button callbacks) must NEVER block on the
+ * ws-client lock — vt_remote_log only formats and enqueues (0-tick timeout);
+ * rlog_task owns the actual sends.  Queue-full → drop, by design. */
+#define RLOG_LINE_MAX 160
+static QueueHandle_t s_rlog_q = NULL;
+/* Task handle for the liveness status beacon (stack HWM + run state). */
+static TaskHandle_t s_rlog_task_h = NULL;
+
+void vt_remote_log(const char *fmt, ...)
+{
+    if (!s_rlog_q) return;
+
+    char line[RLOG_LINE_MAX];
+    va_list ap;
+    va_start(ap, fmt);
+    vsnprintf(line, sizeof(line), fmt, ap);
+    va_end(ap);
+
+    xQueueSend(s_rlog_q, line, 0);         /* never blocks the caller */
+}
+
+/* Liveness status beacon — sent DIRECTLY from voice_task (bypasses rlog_task)
+ * so it keeps flowing even if rlog_task itself is the casualty.  Queue depths
+ * + stack high-water marks pinpoint a dead/wedged worker task remotely. */
+static void _send_status_beacon(ws_client_handle_t ws, bool streaming)
+{
+    /* WiFi RSSI: link quality to the hotspot — weak signal explains idle
+     * drops that TCP-level evidence can't. */
+    wifi_ap_record_t ap = {0};
+    int rssi = (esp_wifi_sta_get_ap_info(&ap) == ESP_OK) ? ap.rssi : 0;
+
+    char line[RLOG_LINE_MAX];
+    snprintf(line, sizeof(line),
+             "status: stream=%d trig=%d rssi=%d rlogq=%u rlog_st=%d rlog_hwm=%u heap=%u",
+             (int)streaming, (int)wakeword_triggered(), rssi,
+             s_rlog_q      ? (unsigned)uxQueueMessagesWaiting(s_rlog_q)           : 0u,
+             s_rlog_task_h ? (int)eTaskGetState(s_rlog_task_h)                    : -1,
+             s_rlog_task_h ? (unsigned)uxTaskGetStackHighWaterMark(s_rlog_task_h) : 0u,
+             (unsigned)esp_get_free_heap_size());
+    ws_client_send_log(ws, line);
+}
+
+static void rlog_task(void *arg)
+{
+    (void)arg;
+    char line[RLOG_LINE_MAX];
+    for (;;) {
+        if (xQueueReceive(s_rlog_q, line, portMAX_DELAY) != pdTRUE) continue;
+        /* HOLD the line while disconnected (drop-window diagnostics are the
+         * ones that matter), but do NOT let one undeliverable line dam the
+         * queue: while CONNECTED, give it ~3 s of send attempts then drop it
+         * and move on.  The previous 60 s cap head-of-line-blocked the whole
+         * queue during streaming (PCM writes monopolise the tx lock), which
+         * blacked out diagnostics exactly when the link was failing. */
+        int connected_tries = 0;
+        for (int waited_ms = 0; waited_ms < 30000; waited_ms += 250) {
+            ws_client_handle_t ws = s_ws;  /* local copy; avoids torn reads */
+            if (ws && ws_client_connected(ws)) {
+                if (ws_client_send_log(ws, line) == ESP_OK) break;  /* delivered */
+                if (++connected_tries >= 4) break;                  /* ~1 s: drop it */
+            }
+            vTaskDelay(pdMS_TO_TICKS(250));
+        }
+    }
+}
+
 typedef struct {
     /* intentionally empty — voice_task reads s_ws and wakeword state directly */
     int unused;
 } voice_task_args_t;
+
+/* ── Store-and-forward utterance delivery ─────────────────────────────────
+ *
+ * The iPhone-hotspot/cellular leg FINs long-lived upstream streams
+ * unpredictably (0.3–9 s into live PCM, in time-clustered phases) — proven
+ * by a day of remote-diag traces while the Funnel+gateway legs tested clean.
+ * Live-streaming the mic can therefore never be reliable on this deployment.
+ *
+ * Instead: RECORD the whole utterance to PSRAM during capture (no network
+ * dependency at all), then DELIVER it afterwards as a paced burst with up to
+ * 3 attempts across reconnects.  A connection drop costs seconds of delay,
+ * never the query. */
+#define UTT_BUF_MAX     (256 * 1024)   /* 8 s @ 16 kHz S16LE — matches VAD cap  */
+#define UTT_CHUNK       4096           /* burst chunk size                       */
+#define UTT_CHUNK_DELAY 64             /* ms between chunks ≈ 2× realtime.  20 ms
+                                        * (6×) overran the hotspot uplink — live
+                                        * 2026-07-05: all 5 attempts dropped
+                                        * mid-burst at random offsets.  64 ms is
+                                        * the empirically-clean rate. */
+#define UTT_ATTEMPTS    5              /* delivery attempts — live 2026-07-04 trace
+                                        * showed steady progress per retry (4→49→
+                                        * 151 KB); 3 gave up just short of landing */
+
+static bool _deliver_utterance(const uint8_t *buf, size_t len)
+{
+    /* CRITICAL: never hand PSRAM pointers to the TLS stack.  utt_buf lives in
+     * PSRAM; mbedTLS on the S3 fails the SSL write instantly when the
+     * plaintext is external RAM (serial-caught 2026-07-04:
+     * "esp_transport_write() returned -1, ESP_ERR_MBEDTLS_SSL_WRITE_FAILED"
+     * 9 ms into the first chunk), which closes the connection and made every
+     * delivery die at 0/N bytes.  LISTEN/END (flash strings) always went
+     * through — only the PSRAM payload failed.  Bounce each chunk through
+     * internal DRAM (static → BSS) before it reaches TLS. */
+    static uint8_t bounce[UTT_CHUNK];
+
+    for (int attempt = 1; attempt <= UTT_ATTEMPTS; attempt++) {
+        /* Wait for a live connection — the WS client auto-reconnects every
+         * ~5 s, and post-drop recovery has measured at ~8 s. */
+        for (int waited = 0; waited < 20000 && !ws_client_connected(s_ws); waited += 250) {
+            vTaskDelay(pdMS_TO_TICKS(250));
+        }
+        ws_client_handle_t ws = s_ws;
+        if (!ws_client_connected(ws)) {
+            vt_remote_log("delivery %d/%d: no connection", attempt, UTT_ATTEMPTS);
+            continue;
+        }
+
+        esp_err_t lr = ESP_FAIL;
+        for (int a = 0; a < 3 && lr != ESP_OK; a++) {
+            lr = ws_client_send_listen(ws);
+            if (lr != ESP_OK) vTaskDelay(pdMS_TO_TICKS(20));
+        }
+        if (lr != ESP_OK) {
+            vt_remote_log("delivery %d/%d: LISTEN send failed", attempt, UTT_ATTEMPTS);
+            continue;
+        }
+
+        /* Paced burst: full 8 s utterance delivers in ≤4 s — inside the
+         * server's 15 s LISTEN window and 640 KB PCM cap.  The server treats
+         * every LISTEN as a fresh utterance, so retrying the whole buffer
+         * after a mid-burst drop is idempotent. */
+        size_t off = 0;
+        bool   dropped = false;
+        /* Adaptive pacing: if earlier attempts dropped mid-burst, the uplink
+         * can't sustain the base rate — slow down instead of failing the same
+         * way five times (live 2026-07-05: weak-signal location dropped every
+         * attempt at 4-196 KB).  Cap at 3× (192 ms/chunk ≈ 21 KB/s): a full
+         * 8 s utterance still delivers in ~12 s, inside the server's 15 s
+         * LISTEN window. */
+        int chunk_delay = UTT_CHUNK_DELAY * (attempt < 3 ? attempt : 3);
+        while (off < len) {
+            size_t n = (len - off > UTT_CHUNK) ? UTT_CHUNK : (len - off);
+            memcpy(bounce, buf + off, n);   /* PSRAM → internal DRAM, see above */
+            if (!ws_client_connected(ws) ||
+                ws_client_send_pcm(ws, bounce, n) != ESP_OK) {
+                dropped = true;
+                break;
+            }
+            off += n;
+            vTaskDelay(pdMS_TO_TICKS(chunk_delay));
+        }
+        if (dropped) {
+            vt_remote_log("delivery %d/%d: dropped at %u/%u bytes — retrying",
+                          attempt, UTT_ATTEMPTS, (unsigned)off, (unsigned)len);
+            continue;
+        }
+
+        esp_err_t er = ESP_FAIL;
+        for (int a = 0; a < 3 && er != ESP_OK; a++) {
+            er = ws_client_send_end(ws);
+            if (er != ESP_OK) vTaskDelay(pdMS_TO_TICKS(20));
+        }
+        if (er != ESP_OK) {
+            vt_remote_log("delivery %d/%d: END send failed", attempt, UTT_ATTEMPTS);
+            continue;
+        }
+
+        ESP_LOGI(TAG, "Utterance delivered: %u bytes (attempt %d)", (unsigned)len, attempt);
+        vt_remote_log("utterance DELIVERED: %u bytes (attempt %d)", (unsigned)len, attempt);
+        return true;
+    }
+
+    ESP_LOGW(TAG, "Utterance delivery failed after %d attempts (%u bytes)", UTT_ATTEMPTS, (unsigned)len);
+    vt_remote_log("utterance delivery FAILED after %d attempts (%u bytes)", UTT_ATTEMPTS, (unsigned)len);
+    return false;
+}
 
 static void voice_task(void *arg)
 {
@@ -335,13 +562,18 @@ static void voice_task(void *arg)
     /* Frame size is determined by the AFE at init time — must match afe->get_feed_chunksize(). */
     const int frame_bytes = wakeword_feed_bytes();
     uint8_t  *frame_buf   = (uint8_t *)malloc(frame_bytes);
-    if (!frame_buf) {
-        ESP_LOGE(TAG, "voice_task: frame_buf alloc failed (%d bytes)", frame_bytes);
+    /* Utterance record buffer — PSRAM (256 KB won't fit internal DRAM). */
+    uint8_t *utt_buf = (uint8_t *)heap_caps_malloc(UTT_BUF_MAX,
+                                                   MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
+    size_t   utt_len = 0;
+    if (!frame_buf || !utt_buf) {
+        ESP_LOGE(TAG, "voice_task: buffer alloc failed (frame=%p utt=%p)",
+                 (void *)frame_buf, (void *)utt_buf);
         vTaskDelete(NULL);
         return;
     }
 
-    bool streaming = false;
+    bool capturing = false;
     /* Keepalive: send {"ping":1} every 30 s when idle so the office NAT and
      * Tailscale DERP relay see bidirectional traffic and don't drop the TCP
      * connection.  frame_bytes is ~512 bytes at 16kHz; ~62 frames/s → counter
@@ -352,7 +584,7 @@ static void voice_task(void *arg)
 
     while (1) {
         /* ── Agent switch ── */
-        if (!streaming && wakeword_agent_switch_pending()) {
+        if (!capturing && wakeword_agent_switch_pending()) {
             int idx = wakeword_agent_index();
             ESP_LOGI(TAG, "Agent switch → [%d] %s (%s)",
                      idx, VT_AGENTS[idx].display, VT_AGENTS[idx].slug);
@@ -388,26 +620,64 @@ static void voice_task(void *arg)
 
         ws_client_handle_t ws = s_ws;  /* local copy; avoids torn reads */
 
+        /* STOP protocol: on the rising edge of a TTS stop request (tap or
+         * physical button during SPEAKING), tell the SERVER to abort the TTS
+         * stream.  Locally the request only discards incoming PCM; without
+         * this frame the server keeps streaming the full reply (8-30 s) and
+         * the device stays deaf until state:idle finally arrives.  Sent from
+         * voice_task (not the LVGL/button callbacks) so UI paths never touch
+         * the ws-client lock. */
+        static bool s_stop_sent = false;
+        if (wakeword_tts_stop_requested()) {
+            if (!s_stop_sent) {
+                s_stop_sent = true;
+                esp_err_t sr = ws_client_send_stop(ws);
+                ESP_LOGI(TAG, "TTS stop → STOP frame to server (%s)",
+                         esp_err_to_name(sr));
+                vt_remote_log("STOP sent to server (%s)", esp_err_to_name(sr));
+            }
+        } else {
+            s_stop_sent = false;   /* re-arm once the request is cleared */
+        }
+
+        /* One-shot boot marker on the remote-diag channel: confirms in the
+         * gateway log which firmware the device is actually running, and the
+         * reset reason (poweron/software/panic/brownout/task-wdt…) so crash
+         * reboots are distinguishable from clean power cycles remotely. */
+        static bool s_boot_logged = false;
+        if (!s_boot_logged && ws_client_connected(ws)) {
+            s_boot_logged = true;
+            /* tts_buf identifies the build unambiguously: esp_app_desc's
+             * compiled date/time can go stale when the version file isn't
+             * regenerated, which made "which firmware is actually running?"
+             * unanswerable remotely (observed: fresh flash, Jul 2 stamp). */
+            /* VT_BUILD_TAG: bump on EVERY behavioural firmware change — the
+             * only reliable remote build identifier (esp_app_desc stamps go
+             * stale, and config-derived values collide across builds). */
+            #define VT_BUILD_TAG "fastdefault-0706b"
+            vt_remote_log("boot: tag=" VT_BUILD_TAG " fw=%s reset=%d tts_buf=%u (remote-diag online)",
+                          esp_app_get_description()->version,
+                          (int)esp_reset_reason(),
+                          (unsigned)TTS_STREAM_BUF_BYTES);
+        }
+
         /* Capture one AFE-sized mic frame */
         size_t got = audio_capture_frame(frame_buf, (size_t)frame_bytes);
 
-        /* Check PTT/wakeword trigger BEFORE the audio-failure guard so that a
-         * touch tap reaches the gateway even when mic capture has a transient
-         * failure (got == 0).  wakeword_triggered() is set by the touch ISR
-         * independently of audio data. */
-        if (!streaming && wakeword_triggered()) {
-            /* New utterance: signal gateway and start streaming */
-            if (ws_client_connected(ws)) {
-                ws_client_send_listen(ws);
-                streaming = true;
-                ESP_LOGI(TAG, "Utterance started");
-            } else {
-                /* WS is down — clear the trigger so the next tap/wake-word works
-                 * once the connection recovers.  Without this, s_triggered stays
-                 * true and all future activations are silently dropped. */
-                wakeword_clear();
-                ESP_LOGW(TAG, "Trigger while disconnected — cleared");
-            }
+        /* Start CAPTURE on tap/wake-word — checked BEFORE the audio-failure
+         * guard so a tap registers even on a transient mic failure.
+         *
+         * NOTE: capture has NO network dependency.  Recording starts
+         * immediately whether or not the WS is up; connectivity only matters
+         * at delivery time (which waits/retries across reconnects).  This is
+         * the store-and-forward core: the hotspot can drop whenever it likes
+         * without costing the user their query. */
+        if (!capturing && wakeword_triggered()) {
+            capturing = true;
+            utt_len   = 0;
+            ui_face_set_state(WS_VG_STATE_LISTENING);   /* local, immediate */
+            ESP_LOGI(TAG, "Capture started");
+            vt_remote_log("capture started");
         }
 
         if (got == 0) {
@@ -415,17 +685,31 @@ static void voice_task(void *arg)
              * time out and send END even when the codec is unavailable. */
             wakeword_tick();
 
+            /* DIAGNOSTIC: a chronically dead mic (codec never ready, I2S underrun)
+             * makes got==0 every loop, which is indistinguishable from idle and
+             * silently kills the wake-word path.  Warn ~every 2 s so the trace
+             * shows the mic is starved rather than the device being quiet. */
+            static int s_zero_streak = 0;
+            if (++s_zero_streak >= 200) {   /* ~200 × 10 ms delay ≈ 2 s */
+                s_zero_streak = 0;
+                ESP_LOGW(TAG, "audio_capture_frame returning 0 (mic not producing frames)");
+                vt_remote_log("mic DEAD: audio_capture_frame returning 0");
+            }
+
             /* Check utterance-end and keepalive before looping */
-            if (streaming && wakeword_ended()) {
-                ws_client_send_end(ws);
-                streaming = false;
+            if (capturing && wakeword_ended()) {
+                capturing = false;
+                ui_face_set_state(WS_VG_STATE_THINKING);
+                bool ok = _deliver_utterance(utt_buf, utt_len);
                 wakeword_clear();
                 keepalive_frames = 0;
-                ESP_LOGI(TAG, "Utterance ended");
-            } else if (!streaming) {
+                if (!ok) ui_face_set_state(WS_VG_STATE_IDLE);
+                /* On success the server drives THINKING→SPEAKING→IDLE. */
+            } else if (!capturing) {
                 if (++keepalive_frames >= KEEPALIVE_INTERVAL) {
                     keepalive_frames = 0;
                     ws_client_send_keepalive(ws);
+                    _send_status_beacon(ws, capturing);
                 }
             }
             vTaskDelay(pdMS_TO_TICKS(10));
@@ -442,17 +726,25 @@ static void voice_task(void *arg)
         wakeword_push_frame(frame_buf, got);
         vTaskDelay(pdMS_TO_TICKS(1));
 
-        if (streaming) {
-            /* Stream PCM to gateway */
-            ws_client_send_pcm(ws, frame_buf, got);
+        if (capturing) {
+            /* RECORD to PSRAM — zero network dependency during capture. */
+            if (utt_len + got <= UTT_BUF_MAX) {
+                memcpy(utt_buf + utt_len, frame_buf, got);
+                utt_len += got;
+            } else {
+                /* Buffer full (8 s) — force the utterance to end now. */
+                wakeword_ptt_finish();
+            }
 
             if (wakeword_ended()) {
-                /* Utterance complete */
-                ws_client_send_end(ws);
-                streaming = false;
+                capturing = false;
+                ESP_LOGI(TAG, "Capture ended: %u bytes — delivering", (unsigned)utt_len);
+                ui_face_set_state(WS_VG_STATE_THINKING);
+                bool ok = _deliver_utterance(utt_buf, utt_len);
                 wakeword_clear();
                 keepalive_frames = 0;   /* reset so we don't ping immediately after */
-                ESP_LOGI(TAG, "Utterance ended");
+                if (!ok) ui_face_set_state(WS_VG_STATE_IDLE);
+                /* On success the server drives THINKING→SPEAKING→IDLE. */
             }
         } else {
             /* Idle path: periodic keepalive to prevent NAT/relay dropping the
@@ -461,6 +753,7 @@ static void voice_task(void *arg)
             if (++keepalive_frames >= KEEPALIVE_INTERVAL) {
                 keepalive_frames = 0;
                 ws_client_send_keepalive(ws);
+                _send_status_beacon(ws, capturing);
             }
         }
     }
@@ -545,6 +838,15 @@ void app_main(void)
      *   Set CONFIG_VT_VG_WS_URL = wss://marvin.tail240ea8.ts.net:8765/voice
      */
     ui_update(UI_READY, NULL);
+
+    /* Diagnostic queue + sender task MUST exist before ws_client_create —
+     * every diagnostic point posts into s_rlog_q from the first event on.
+     * UI state updates need no worker task: ui_face_set_state() posts into
+     * the LVGL thread via lv_async_call (see _on_vg_state). */
+    s_rlog_q = xQueueCreate(16, RLOG_LINE_MAX);
+    /* rlog_task sends diagnostics (TLS write on its own stack) — lowest prio.
+     * 6 KB: the mbedTLS record-write path runs on this stack. */
+    xTaskCreatePinnedToCore(rlog_task, "rlog", 6144, NULL, 2, &s_rlog_task_h, 1);
 
     /* Build the initial WS URL with the default agent (index 0 = Hermes). */
     char ws_url[512];
