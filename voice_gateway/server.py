@@ -61,7 +61,12 @@ _OWNER_USER_ID = os.environ.get("GATEWAY_OWNER_USER_ID", "")
 
 # Model for voice — used only by the "direct" fast-path (_call_llm).
 # Other agents (hermes, openclaw, …) route through /forward → gateway pipeline.
-_VOICE_MODEL = os.environ.get("VOICE_MODEL", "claude-haiku-4-5-20251001")
+# TEMPORARY default (2026-07-06): route voice straight to the local model.
+# The Anthropic account quota is exhausted (org-wide 429s), so any claude-*
+# ref burns the voice budget on 429→failover before landing on the local
+# model anyway.  Direct local = replies in seconds.  Restore
+# "claude-haiku-4-5-20251001" (or set VOICE_MODEL env) once quota is normal.
+_VOICE_MODEL = os.environ.get("VOICE_MODEL", "qwen3:14b")
 
 # Default proxied agent to route voice to.  Override per-connection via ?agent= query param.
 # "direct" = fast path (_call_llm, bypasses /forward pipeline, backward-compat).
@@ -107,6 +112,10 @@ _fw_mtime: float = 0.0
 # A device that sends LISTEN but never sends END (crash, stuck firmware) would
 # otherwise hold the session in LISTENING forever with unbounded pcm_chunks growth.
 _LISTEN_MAX_S: float = 15.0              # max seconds to wait for END after LISTEN
+# Per-sentence TTS synthesis budget.  Kokoro takes ~0.2-3 s per sentence when
+# healthy; a synthesis exceeding this is wedged (e.g. blocked voice-pack
+# download) and must not strand the device in THINKING.
+_TTS_SENTENCE_TIMEOUT_S: float = float(os.environ.get("VG_TTS_SENTENCE_TIMEOUT_S", "30"))
 _PCM_MAX_BYTES: int  = 16000 * 2 * 20   # 20 s × 16 kHz × 2 bytes/sample S16LE mono
 
 
@@ -181,16 +190,19 @@ def _voice_system_message() -> Dict[str, str]:
     """Build a system message with the current date/time for voice context."""
     tz = ZoneInfo(os.environ.get("GATEWAY_TZ", "America/New_York"))
     now = datetime.now(tz).strftime("%A, %B %d, %Y at %-I:%M %p %Z")
-    return {
-        "role": "system",
-        "content": (
-            f"You are a concise voice assistant built into an ESP32 device. "
-            f"The current date and time is {now}. "
-            "Keep every response to 1-2 short spoken sentences — no markdown, "
-            "no bullet points, no lists. Plain conversational English only. "
-            "If asked a follow-up, remember the prior context in this conversation."
-        ),
-    }
+    content = (
+        f"You are a concise voice assistant built into an ESP32 device. "
+        f"The current date and time is {now}. "
+        "Keep every response to 1-2 short spoken sentences — no markdown, "
+        "no bullet points, no lists. Plain conversational English only. "
+        "If asked a follow-up, remember the prior context in this conversation."
+    )
+    if "qwen" in _VOICE_MODEL.lower():
+        # Qwen3 emits a long <think> block before answering (~30 s per reply
+        # measured on LM Studio) — /no_think disables it; voice needs the
+        # answer, not the reasoning trace.
+        content += " /no_think"
+    return {"role": "system", "content": content}
 
 
 async def _call_llm(history: List[Dict[str, str]]) -> str:
@@ -214,6 +226,9 @@ async def _call_llm(history: List[Dict[str, str]]) -> str:
                 "Authorization": f"Bearer {_GATEWAY_TOKEN}",
                 # Propagate owner identity for RBAC and audit trail.
                 "X-AgentShroud-User-Id": _OWNER_USER_ID or "voice",
+                # Voice is interactive: on upstream 429, skip the ~15 s retry
+                # preamble and fail over to the local model immediately.
+                "X-AgentShroud-Interactive": "1",
             },
         )
     resp.raise_for_status()
@@ -262,6 +277,10 @@ async def _call_agent(transcript: str, agent: str) -> str:
                 headers={
                     "Authorization": f"Bearer {_GATEWAY_TOKEN}",
                     "X-AgentShroud-User-Id": _OWNER_USER_ID or "voice",
+                    # Interactive hint — /forward itself makes no LLM calls,
+                    # but forwarding it costs nothing and keeps both voice
+                    # paths consistent if the pipeline learns to honour it.
+                    "X-AgentShroud-Interactive": "1",
                 },
             )
         resp.raise_for_status()
@@ -366,6 +385,21 @@ async def voice_endpoint(ws: WebSocket) -> None:
                 if msg == '{"ping":1}':
                     pass  # client keepalive — no response needed
 
+                elif msg.startswith('{"log":'):
+                    # Remote-diagnosis channel: the firmware mirrors key diagnostic
+                    # lines here when no USB serial is attached.  Print into our own
+                    # log so `docker logs` becomes the device trace.
+                    try:
+                        entry = json.loads(msg).get("log", msg)
+                    except json.JSONDecodeError:
+                        entry = msg
+                    logger.info("[device %s] %s", remote, entry)
+
+                elif msg == "STOP":
+                    # Stale STOP: the tap landed just as TTS finished (the
+                    # in-stream watcher already exited).  Nothing to abort.
+                    logger.info("Stale STOP from %s (not speaking) — ignored", remote)
+
                 elif msg == "LISTEN":
                     logger.info("LISTEN from %s", remote)
                     pcm_chunks.clear()
@@ -439,19 +473,77 @@ async def voice_endpoint(ws: WebSocket) -> None:
                         _synth_q: asyncio.Queue[bytes | None] = asyncio.Queue(maxsize=2)
 
                         async def _synthesize_all() -> None:
+                            # Bounded per sentence: a wedged synthesis (live
+                            # incident 2026-07-03/04 — Kokoro hung fetching an
+                            # uncached voice pack) must never strand the device
+                            # in THINKING.  On timeout/failure, stop synthesis
+                            # but still deliver the sentinel so the send loop
+                            # exits and END + state:idle reach the device.
                             for _s in sentences:
-                                _pcm = await loop.run_in_executor(None, _tts.synthesize, _s)
+                                try:
+                                    _pcm = await asyncio.wait_for(
+                                        loop.run_in_executor(None, _tts.synthesize, _s),
+                                        timeout=_TTS_SENTENCE_TIMEOUT_S,
+                                    )
+                                except Exception as _exc:
+                                    logger.error(
+                                        "TTS failed/timed out (%.0fs) for %r — "
+                                        "aborting remaining sentences: %s",
+                                        _TTS_SENTENCE_TIMEOUT_S, _s[:60], _exc,
+                                    )
+                                    break
                                 await _synth_q.put(_pcm)
                             await _synth_q.put(None)  # sentinel
 
                         synth_task = asyncio.create_task(_synthesize_all())
+
+                        # STOP protocol: the device sends a "STOP" text frame when
+                        # the user taps during SPEAKING.  The send loop below never
+                        # reads the socket, so without a concurrent reader the STOP
+                        # would sit unread until the full reply (8-30 s of PCM) was
+                        # transmitted — during which the device stays deaf.  The
+                        # watcher reads concurrently, honours STOP mid-stream, and
+                        # keeps the remote-diag {"log":...} channel flowing.
+                        _stop_requested = asyncio.Event()
+
+                        async def _watch_for_stop() -> None:
+                            while True:
+                                _m = await ws.receive()
+                                _t = (_m.get("text") or "").strip()
+                                if _t == "STOP":
+                                    logger.info(
+                                        "STOP from %s — aborting TTS stream", remote
+                                    )
+                                    _stop_requested.set()
+                                    return
+                                if _t.startswith('{"log":'):
+                                    try:
+                                        _entry = json.loads(_t).get("log", _t)
+                                    except json.JSONDecodeError:
+                                        _entry = _t
+                                    logger.info("[device %s] %s", remote, _entry)
+                                # Anything else during SPEAKING (keepalive pings,
+                                # stray PCM) is ignored.
+
+                        watcher = asyncio.create_task(_watch_for_stop())
+                        _stop_wait = asyncio.create_task(_stop_requested.wait())
                         _speaking_sent = False
                         try:
-                            while True:
-                                pcm = await _synth_q.get()
+                            while not _stop_requested.is_set():
+                                _get = asyncio.create_task(_synth_q.get())
+                                _done, _ = await asyncio.wait(
+                                    {_get, _stop_wait},
+                                    return_when=asyncio.FIRST_COMPLETED,
+                                )
+                                if _get not in _done:
+                                    _get.cancel()
+                                    break
+                                pcm = _get.result()
                                 if pcm is None:
                                     break
                                 for i in range(0, len(pcm), _CHUNK_SIZE):
+                                    if _stop_requested.is_set():
+                                        break
                                     frame = pcm[i : i + _CHUNK_SIZE]
                                     if frame:
                                         if not _speaking_sent:
@@ -461,11 +553,19 @@ async def voice_endpoint(ws: WebSocket) -> None:
                                         await ws.send_bytes(frame)
                                         await asyncio.sleep(0)
                         finally:
-                            if not synth_task.done():
-                                synth_task.cancel()
+                            for _task in (watcher, _stop_wait, synth_task):
+                                if not _task.done():
+                                    _task.cancel()
+                            for _task in (watcher, _stop_wait, synth_task):
+                                # The watcher may hold a WebSocketDisconnect from a
+                                # mid-stream close; swallow it here — the main
+                                # receive loop observes the close itself on its
+                                # next ws.receive().
                                 try:
-                                    await synth_task
+                                    await _task
                                 except asyncio.CancelledError:
+                                    pass
+                                except Exception:
                                     pass
 
                         await ws.send_text("END")

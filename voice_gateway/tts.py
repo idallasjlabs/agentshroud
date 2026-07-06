@@ -18,6 +18,17 @@ logger = logging.getLogger("voice_gateway.tts")
 _KOKORO_VOICE = _os.environ.get("KOKORO_VOICE", "af_heart")
 _KOKORO_SPEED = float(_os.environ.get("KOKORO_SPEED", "1.0"))
 
+# Never let Kokoro/huggingface_hub reach the network at synthesis time.  A
+# voice pack missing from the baked cache otherwise triggers a download that
+# hangs indefinitely behind the VPN — live incident 2026-07-03/04: the first
+# synthesis with KOKORO_VOICE=af_bella (not in cache) hung forever, wedging
+# the session in THINKING with the device deaf.  Offline mode turns that hang
+# into an immediate exception, which synthesize() converts into a permanent
+# fallback to the cached default voice.
+_os.environ.setdefault("HF_HUB_OFFLINE", "1")
+
+_FALLBACK_VOICE = "af_heart"
+
 # Kokoro's native output sample rate.
 OUTPUT_SAMPLE_RATE = 24000
 
@@ -77,15 +88,37 @@ def _resample_s16le_mono(pcm: bytes, src_rate: int, dst_rate: int) -> bytes:
         h = h / h.sum()
         samples = _np.convolve(samples, h, mode="same")
 
-    # Resample via linear interpolation.  After the anti-aliasing filter there
-    # is no meaningful content above dst_rate/2, so linear interp introduces no
-    # perceptible artefacts.
+    # Resample.  For the common Kokoro path (24000→16000 = exact 2/3 ratio) use
+    # true polyphase interpolation: windowed-sinc kernel evaluated at exact
+    # fractional offsets (0 and 1/2 source-sample phases after 3:2 decimation),
+    # which preserves high-frequency detail that linear interpolation smears —
+    # audibly crisper consonants on the ESP32 speaker ("less robotic").
     n_dst = int(round(n_src * dst_rate / src_rate))
-    src_indices = _np.linspace(0, n_src - 1, n_dst)
-    lo = _np.floor(src_indices).astype(_np.int32)
-    hi = _np.minimum(lo + 1, n_src - 1)
-    frac = (src_indices - lo).astype(_np.float32)
-    resampled = samples[lo] * (1.0 - frac) + samples[hi] * frac
+    if src_rate == 24000 and dst_rate == 16000:
+        # Output sample k lands at source position k*1.5 → phases alternate
+        # 0.0, 0.5.  Phase 0.0 → copy; phase 0.5 → 8-tap windowed-sinc midpoint
+        # interpolation (far better than 2-tap linear).
+        pad = 4
+        s = _np.concatenate([_np.zeros(pad, _np.float32), samples,
+                             _np.zeros(pad + 2, _np.float32)])
+        pos = _np.arange(n_dst, dtype=_np.float64) * 1.5 + pad
+        base = _np.floor(pos).astype(_np.int64)
+        frac = (pos - base).astype(_np.float32)          # 0.0 or 0.5 exactly
+        # 8-tap Kaiser-windowed sinc for the 0.5-phase; identity for 0.0-phase.
+        taps = _np.arange(-3, 5, dtype=_np.float32)      # offsets -3..4
+        k05 = _np.sinc(taps - 0.5) * _np.kaiser(8, 6.0).astype(_np.float32)
+        k05 = k05 / k05.sum()
+        gather = s[base[:, None] + taps.astype(_np.int64)]
+        interp05 = gather @ k05
+        exact = s[base]
+        resampled = _np.where(frac < 0.25, exact, interp05)
+    else:
+        # Generic fallback: linear interpolation (post anti-aliasing filter).
+        src_indices = _np.linspace(0, n_src - 1, n_dst)
+        lo = _np.floor(src_indices).astype(_np.int32)
+        hi = _np.minimum(lo + 1, n_src - 1)
+        frac = (src_indices - lo).astype(_np.float32)
+        resampled = samples[lo] * (1.0 - frac) + samples[hi] * frac
 
     out = _np.clip(resampled, -32768, 32767).astype("<i2")
     return out.tobytes()
@@ -327,6 +360,7 @@ def synthesize(text: str) -> bytes:
     Raises:
         RuntimeError: If Kokoro fails to synthesize.
     """
+    global _KOKORO_VOICE
     import numpy as _np
 
     text = normalize_for_speech(text)
@@ -339,6 +373,16 @@ def synthesize(text: str) -> bytes:
         for _, _, audio in pipeline(text, voice=_KOKORO_VOICE, speed=_KOKORO_SPEED):
             chunks.append(audio)
     except Exception as exc:
+        if _KOKORO_VOICE != _FALLBACK_VOICE:
+            # Configured voice unusable (typically: pack not in the offline
+            # cache).  Fall back permanently so every later sentence uses one
+            # consistent voice instead of failing per call.
+            logger.warning(
+                "Kokoro voice %r failed (%s) — falling back to %r permanently",
+                _KOKORO_VOICE, exc, _FALLBACK_VOICE,
+            )
+            _KOKORO_VOICE = _FALLBACK_VOICE
+            return synthesize(text)
         raise RuntimeError(f"Kokoro TTS failed: {exc}") from exc
 
     if not chunks:

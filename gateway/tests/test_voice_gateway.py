@@ -1894,6 +1894,198 @@ async def test_pcm_buffer_bounded(monkeypatch):
     )
 
 
+# ── STOP protocol (tap-to-stop during SPEAKING) ──────────────────────────────
+
+
+def _mock_ws(receive_side_effect):
+    """Build a MagicMock WebSocket for direct voice_endpoint() tests."""
+    from unittest.mock import AsyncMock, MagicMock
+
+    ws = MagicMock()
+    ws.client = MagicMock()
+    ws.client.__str__ = lambda s: "10.0.0.1:9997"
+    ws.query_params = MagicMock()
+    ws.query_params.get = lambda k, d="": d
+    ws.accept = AsyncMock()
+    ws.close = AsyncMock()
+    ws.send_text = AsyncMock()
+    ws.send_bytes = AsyncMock()
+    ws.receive = AsyncMock(side_effect=receive_side_effect)
+    return ws
+
+
+@pytest.mark.asyncio
+async def test_ws_stop_during_speaking_aborts_tts(monkeypatch):
+    """A device 'STOP' text frame during the TTS send phase must abort the
+    remaining PCM stream and return the session to IDLE immediately.
+
+    Firmware context: tap-to-stop during SPEAKING previously only muted the
+    speaker locally; the server kept streaming the full reply (8-30 s), during
+    which the device rejected all new utterances.  The server must read the
+    socket concurrently with the send loop and honour STOP mid-stream.
+    """
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "tell me a story")
+
+    reply = "First sentence here.  Second sentence here.  Third sentence here."
+
+    async def _mock_agent(transcript, agent):
+        return reply
+
+    monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+
+    sentence_pcm = {
+        "First sentence here.": b"\x01\x00" * 100,
+        "Second sentence here.": b"\x02\x00" * 100,
+        "Third sentence here.": b"\x03\x00" * 100,
+    }
+    monkeypatch.setattr(
+        tts_mod, "synthesize", lambda t: sentence_pcm.get(t, b"\xff\x00" * 4)
+    )
+
+    # STOP is queued for whichever reader asks next — with the concurrent
+    # stop-watcher in place it is consumed BEFORE/WHILE the PCM stream is sent,
+    # aborting the remaining sentences.
+    ws = _mock_ws([
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": _pcm_bytes(), "text": None},
+        {"text": "END", "bytes": None},
+        {"text": "STOP", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    await srv.voice_endpoint(ws)
+
+    sent_pcm = b"".join(c.args[0] for c in ws.send_bytes.call_args_list)
+    assert b"\x03\x00" * 100 not in sent_pcm, (
+        "Third sentence PCM was transmitted — STOP did not abort the TTS stream"
+    )
+
+    # END + state:idle must still be sent so the device re-arms.
+    sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
+    assert "END" in sent_texts, "END frame missing after STOP abort"
+    states = []
+    for t in sent_texts:
+        try:
+            states.append(json.loads(t).get("state"))
+        except Exception:
+            pass
+    assert states[-1] == "idle", (
+        f"Session must end at state:idle after STOP; state sequence was {states}"
+    )
+
+
+@pytest.mark.asyncio
+async def test_ws_stale_stop_when_idle_is_ignored(monkeypatch):
+    """A STOP arriving outside SPEAKING (e.g. the tap landed just as TTS ended)
+    must be ignored without crashing the session loop."""
+    import voice_gateway.server as srv
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+
+    ws = _mock_ws([
+        {"text": "STOP", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    await srv.voice_endpoint(ws)  # must not raise
+
+    sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
+    assert any('"idle"' in t for t in sent_texts), "initial idle state missing"
+
+
+@pytest.mark.asyncio
+async def test_ws_device_log_during_speaking_still_recorded(monkeypatch, caplog):
+    """Remote-diag {"log":...} frames arriving DURING the TTS send phase must be
+    logged, not silently swallowed by the concurrent stop-watcher."""
+    import logging
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "hello")
+
+    async def _mock_agent(transcript, agent):
+        return "Only sentence."
+
+    monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+    monkeypatch.setattr(tts_mod, "synthesize", lambda t: b"\x01\x00" * 100)
+
+    ws = _mock_ws([
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": _pcm_bytes(), "text": None},
+        {"text": "END", "bytes": None},
+        {"text": '{"log":"PTT START ignored — triggered=1 tts=1"}', "bytes": None},
+        {"text": "STOP", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    with caplog.at_level(logging.INFO, logger="voice_gateway.server"):
+        await srv.voice_endpoint(ws)
+
+    assert any("PTT START ignored" in r.message for r in caplog.records), (
+        "device log line arriving during SPEAKING was swallowed"
+    )
+
+
+@pytest.mark.asyncio
+async def test_ws_hung_tts_synthesis_still_returns_idle(monkeypatch):
+    """A wedged TTS synthesis (e.g. blocked voice-pack download — live incident
+    2026-07-03/04) must not strand the device in THINKING: the per-sentence
+    timeout aborts synthesis and the session still sends END + state:idle."""
+    import time
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_TTS_SENTENCE_TIMEOUT_S", 0.05)
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "hello")
+
+    async def _mock_agent(transcript, agent):
+        return "Only sentence."
+
+    monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+
+    def _hung_synthesize(t):
+        time.sleep(0.5)  # far beyond the 0.05 s budget
+        return b"\x01\x00" * 10
+
+    monkeypatch.setattr(tts_mod, "synthesize", _hung_synthesize)
+
+    ws = _mock_ws([
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": _pcm_bytes(), "text": None},
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    await srv.voice_endpoint(ws)
+
+    sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
+    assert "END" in sent_texts, "END frame missing after TTS timeout"
+    states = []
+    for t in sent_texts:
+        try:
+            states.append(json.loads(t).get("state"))
+        except Exception:
+            pass
+    assert states[-1] == "idle", (
+        f"Device must be released to idle after a hung synthesis; states={states}"
+    )
+
+
 # ── OTA firmware endpoint ─────────────────────────────────────────────────────
 
 
