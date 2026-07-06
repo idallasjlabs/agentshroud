@@ -95,6 +95,74 @@ async def test_proxy_failover_anthropic_quota_success(monkeypatch):
 
 
 # ---------------------------------------------------------------------------
+# Interactive flag — voice callers skip the 429 retry preamble entirely
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.asyncio
+async def test_forward_request_interactive_header_skips_retries(monkeypatch):
+    """x-agentshroud-interactive: 1 → the first 429 returns immediately (no
+    2s/4s/8s backoff), letting quota failover answer in ~seconds.  Voice
+    callers set this; cron jobs keep the full retry loop (they prefer waiting
+    for Anthropic over local-model output)."""
+    import io
+    import urllib.error
+
+    proxy = make_proxy()
+    attempts = [0]
+
+    def fake_urlopen(req, timeout=None, context=None):
+        attempts[0] += 1
+        raise urllib.error.HTTPError(
+            "https://api.anthropic.com/v1/messages", 429, "rate limited",
+            {}, io.BytesIO(b'{"error":{"type":"rate_limit_error"}}'),
+        )
+
+    monkeypatch.setattr("urllib.request.urlopen", fake_urlopen)
+
+    status, _, _ = await proxy._forward_request(
+        "https://api.anthropic.com/v1/messages", b"{}",
+        {"x-agentshroud-interactive": "1"},
+    )
+    assert status == 429
+    assert attempts[0] == 1, (
+        f"interactive caller must not retry a 429; upstream was called "
+        f"{attempts[0]} times"
+    )
+
+
+@pytest.mark.asyncio
+async def test_forward_request_default_still_retries_429(monkeypatch):
+    """Without the interactive flag the 3-retry loop is unchanged (guards the
+    hermes-cron robustness behaviour added 2026-06-15)."""
+    import io
+    import urllib.error
+
+    proxy = make_proxy()
+    attempts = [0]
+
+    def fake_urlopen(req, timeout=None, context=None):
+        attempts[0] += 1
+        raise urllib.error.HTTPError(
+            "https://api.anthropic.com/v1/messages", 429, "rate limited",
+            {}, io.BytesIO(b'{"error":{"type":"rate_limit_error"}}'),
+        )
+
+    monkeypatch.setattr("urllib.request.urlopen", fake_urlopen)
+
+    async def _no_sleep(_s):
+        return None
+
+    monkeypatch.setattr("gateway.proxy.llm_proxy.asyncio.sleep", _no_sleep)
+
+    status, _, _ = await proxy._forward_request(
+        "https://api.anthropic.com/v1/messages", b"{}", {},
+    )
+    assert status == 429
+    assert attempts[0] == 4  # initial + 3 retries
+
+
+# ---------------------------------------------------------------------------
 # T11 — OpenAI quota → drop-in Ollama failover (no translation)
 # ---------------------------------------------------------------------------
 

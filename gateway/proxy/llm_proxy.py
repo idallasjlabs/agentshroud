@@ -1501,6 +1501,13 @@ class LLMProxy:
 
         _RETRYABLE = {429, 503, 529}  # 529 = Anthropic "overloaded"
         _MAX_RETRIES = 3
+        if headers.get("x-agentshroud-interactive", "") == "1":
+            # Interactive callers (voice gateway) need an answer in seconds:
+            # skip the ~15 s retry preamble so the first 429/503 falls straight
+            # through to quota failover (local model).  Cron/batch callers keep
+            # the full retry loop — for them, waiting out a transient 429 for a
+            # cloud-quality reply beats a fast local-model answer.
+            _MAX_RETRIES = 0
         loop = asyncio.get_event_loop()
 
         for _attempt in range(_MAX_RETRIES + 1):
@@ -1510,12 +1517,16 @@ class LLMProxy:
                     None,
                     lambda: urllib.request.urlopen(req, timeout=1800, context=self._ssl_context),
                 )
-                resp_body = response.read()
-                resp_headers = dict(response.headers)
-                return response.status, resp_headers, resp_body
+                try:
+                    resp_body = response.read()
+                    resp_headers = dict(response.headers)
+                    return response.status, resp_headers, resp_body
+                finally:
+                    response.close()
             except urllib.error.HTTPError as e:
                 resp_body = e.read()
                 resp_headers = dict(e.headers)
+                e.close()
                 if e.code not in _RETRYABLE or _attempt >= _MAX_RETRIES:
                     return e.code, resp_headers, resp_body
                 # Respect Retry-After header (Anthropic 429 includes it)

@@ -550,6 +550,50 @@ async def test_relay_and_scan_idle_timeout_no_data_no_scan():
     assert writer.closed is True
 
 
+async def test_relay_and_scan_tls_tunnel_skips_ciphertext_scan():
+    """Port-443 tunnel bytes are TLS ciphertext — clamscan can never match a
+    signature on them, so scanning is pure waste.  Live incident 2026-07-04:
+    ciphertext scans of routine LLM API tunnels each held a shared-executor
+    thread 30-60 s (clamscan cold-loads its full DB) and spiked ~1.3 GB RAM,
+    adding 35-60 s latency to every LLM proxy call and OOM-killing the
+    gateway container.  TLS tunnels must relay without scanning."""
+    p = HTTPConnectProxy()
+    scans = _capture_scans(p)
+    reader = asyncio.StreamReader()
+    reader.feed_data(b"\x17\x03\x03 encrypted application data")
+    reader.feed_eof()
+    writer = _MockWriter()
+    await p._relay_and_scan(reader, writer, "api.anthropic.com", port=443)
+    await asyncio.sleep(0)
+    assert writer.written == b"\x17\x03\x03 encrypted application data"
+    assert scans == [], "ciphertext from a TLS tunnel must not be ClamAV-scanned"
+    assert writer.closed is True
+
+
+async def test_relay_and_scan_plain_http_port_still_scans():
+    """Port-80 downloads are plaintext — malware sampling must keep working."""
+    p = HTTPConnectProxy()
+    scans = _capture_scans(p)
+    reader = asyncio.StreamReader()
+    reader.feed_data(b"MZ fake executable bytes")
+    reader.feed_eof()
+    writer = _MockWriter()
+    await p._relay_and_scan(reader, writer, "mirror.example", port=80)
+    await asyncio.sleep(0)
+    assert scans == [(b"MZ fake executable bytes", "mirror.example")]
+
+
+def test_clamav_scans_use_dedicated_single_thread_executor():
+    """clamscan runs must never share the default executor with LLM upstream
+    calls (thread starvation = 35-60 s added latency), and concurrency must be
+    capped at 1 so at most one ~1.3 GB clamscan process exists at a time."""
+    p = HTTPConnectProxy()
+    assert getattr(p, "_clamav_executor", None) is not None, (
+        "dedicated ClamAV executor missing"
+    )
+    assert p._clamav_executor._max_workers == 1
+
+
 async def test_relay_and_scan_read_error_scans_partial_buffer():
     """Bytes relayed before a connection error are still sampled for scanning."""
 
