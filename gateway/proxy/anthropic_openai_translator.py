@@ -110,6 +110,14 @@ def anthropic_to_openai_request(body: dict, target_model: str) -> dict:
 
     # System prompt → first OpenAI message
     system_text = _anthropic_system_to_openai(body.get("system"))
+    if "qwen" in (target_model or "").lower():
+        # Qwen3's thinking mode emits a long <think> preamble before the
+        # answer (~2 min for a Hermes-sized turn on LM Studio) — every
+        # failed-over agent turn blew the gateway's 120 s forward window
+        # (live 2026-07-06, anthropic_credit_balance outage).  /no_think in
+        # the system prompt disables it; failover callers want the answer,
+        # not the reasoning trace.
+        system_text = (f"{system_text} " if system_text else "") + "/no_think"
     if system_text:
         messages.append({"role": "system", "content": system_text})
 

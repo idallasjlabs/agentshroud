@@ -26,8 +26,8 @@ def test_translator_basic_text_message():
         "messages": [{"role": "user", "content": "hello"}],
         "max_tokens": 50,
     }
-    result = anthropic_to_openai_request(body, "qwen3:14b")
-    assert result["model"] == "qwen3:14b"
+    result = anthropic_to_openai_request(body, "llama3:8b")
+    assert result["model"] == "llama3:8b"
     assert result["max_tokens"] == 50
     msgs = result["messages"]
     assert msgs[0] == {"role": "system", "content": "You are concise."}
@@ -40,7 +40,7 @@ def test_translator_system_block_list():
         "system": [{"type": "text", "text": "Part A"}, {"type": "text", "text": "Part B"}],
         "messages": [{"role": "user", "content": "hi"}],
     }
-    result = anthropic_to_openai_request(body, "qwen3:14b")
+    result = anthropic_to_openai_request(body, "llama3:8b")
     system_msg = result["messages"][0]
     assert system_msg["role"] == "system"
     assert "Part A" in system_msg["content"]
@@ -65,7 +65,7 @@ def test_translator_tool_use_blocks():
             }
         ],
     }
-    result = anthropic_to_openai_request(body, "qwen3:14b")
+    result = anthropic_to_openai_request(body, "llama3:8b")
     asst_msg = result["messages"][0]
     assert asst_msg["role"] == "assistant"
     assert asst_msg.get("tool_calls") is not None
@@ -92,7 +92,7 @@ def test_translator_tool_result_becomes_tool_role_message():
             }
         ],
     }
-    result = anthropic_to_openai_request(body, "qwen3:14b")
+    result = anthropic_to_openai_request(body, "llama3:8b")
     msgs = result["messages"]
     tool_msg = next(m for m in msgs if m["role"] == "tool")
     assert tool_msg["tool_call_id"] == "toolu_abc"
@@ -115,7 +115,7 @@ def test_translator_anthropic_tool_definitions():
             }
         ],
     }
-    result = anthropic_to_openai_request(body, "qwen3:14b")
+    result = anthropic_to_openai_request(body, "llama3:8b")
     assert "tools" in result
     fn = result["tools"][0]
     assert fn["type"] == "function"
@@ -128,7 +128,7 @@ def test_translator_no_system_prompt():
         "model": "claude-opus-4-6",
         "messages": [{"role": "user", "content": "ping"}],
     }
-    result = anthropic_to_openai_request(body, "qwen3:14b")
+    result = anthropic_to_openai_request(body, "llama3:8b")
     assert result["messages"][0]["role"] == "user"  # no system prepended
 
 
@@ -332,3 +332,34 @@ def test_sse_translator_tool_call_only_starts_at_index_0():
     tool_start = next((e for e in starts if e.get("content_block", {}).get("type") == "tool_use"), None)
     assert tool_start is not None, "no tool_use content_block_start found"
     assert tool_start["index"] == 0, f"tool_use should start at index 0, got {tool_start['index']}"
+
+
+def test_translator_qwen_target_injects_no_think():
+    """Failover to a qwen-family model must disable thinking mode: Qwen3's
+    <think> preamble made every failed-over Hermes turn take ~2 min on LM
+    Studio, blowing the gateway's 120 s forward window (live 2026-07-06,
+    anthropic_credit_balance outage)."""
+    req = anthropic_to_openai_request(
+        {"system": "You are Hermes.", "messages": [{"role": "user", "content": "hi"}]},
+        target_model="qwen3-14b",
+    )
+    assert req["messages"][0]["role"] == "system"
+    assert "/no_think" in req["messages"][0]["content"]
+    assert "You are Hermes." in req["messages"][0]["content"]
+
+
+def test_translator_qwen_target_no_system_still_gets_no_think():
+    req = anthropic_to_openai_request(
+        {"messages": [{"role": "user", "content": "hi"}]},
+        target_model="qwen3:14b",
+    )
+    assert req["messages"][0]["role"] == "system"
+    assert req["messages"][0]["content"].strip() == "/no_think"
+
+
+def test_translator_non_qwen_target_unchanged():
+    req = anthropic_to_openai_request(
+        {"system": "You are Hermes.", "messages": [{"role": "user", "content": "hi"}]},
+        target_model="gpt-4o-mini",
+    )
+    assert req["messages"][0] == {"role": "system", "content": "You are Hermes."}
