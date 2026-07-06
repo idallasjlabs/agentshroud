@@ -1141,9 +1141,10 @@ def test_ws_one_sentence_reply_unchanged(monkeypatch):
 async def test_call_agent_uses_structured_timeout(monkeypatch):
     """_call_agent must pass a structured httpx.Timeout to AsyncClient.
 
-    The read deadline (35 s) is intentionally shorter than the gateway's own
-    internal /forward timeout (120 s) so the ESP returns to IDLE quickly on a
-    hung agent instead of sitting in THINKING for two minutes.
+    The read deadline is env-tunable (VG_AGENT_READ_TIMEOUT_S, default 100 s):
+    Hermes is the owner's admin voice channel, so a slow real answer beats a
+    fast fallback — but the deadline must stay under the gateway's own
+    /forward timeout (120 s) so its graceful body is still caught.
     """
     import httpx
     import voice_gateway.server as srv
@@ -1172,7 +1173,10 @@ async def test_call_agent_uses_structured_timeout(monkeypatch):
     assert isinstance(t, httpx.Timeout), (
         f"Expected httpx.Timeout instance, got {type(t)}: {t!r}"
     )
-    assert t.read == 35.0, f"Expected read=35.0 (ESP THINKING deadline), got {t.read}"
+    assert t.read == 100.0, (
+        f"Expected read=100.0 (VG_AGENT_READ_TIMEOUT_S default, < gateway's "
+        f"120 s forward window), got {t.read}"
+    )
     assert t.connect == 10.0, f"Expected connect=10.0, got {t.connect}"
 
 

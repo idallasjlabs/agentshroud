@@ -61,12 +61,7 @@ _OWNER_USER_ID = os.environ.get("GATEWAY_OWNER_USER_ID", "")
 
 # Model for voice — used only by the "direct" fast-path (_call_llm).
 # Other agents (hermes, openclaw, …) route through /forward → gateway pipeline.
-# TEMPORARY default (2026-07-06): route voice straight to the local model.
-# The Anthropic account quota is exhausted (org-wide 429s), so any claude-*
-# ref burns the voice budget on 429→failover before landing on the local
-# model anyway.  Direct local = replies in seconds.  Restore
-# "claude-haiku-4-5-20251001" (or set VOICE_MODEL env) once quota is normal.
-_VOICE_MODEL = os.environ.get("VOICE_MODEL", "qwen3:14b")
+_VOICE_MODEL = os.environ.get("VOICE_MODEL", "claude-haiku-4-5-20251001")
 
 # Default proxied agent to route voice to.  Override per-connection via ?agent= query param.
 # "direct" = fast path (_call_llm, bypasses /forward pipeline, backward-compat).
@@ -258,12 +253,14 @@ async def _call_agent(transcript: str, agent: str) -> str:
     Returns:
         Spoken reply string (suitable for TTS synthesis).
     """
-    # Voice timeout: 35 s read deadline — enough for any normal agent reply (typical
-    # Hermes: 3-10 s).  Gateway's own internal forward timeout is 120 s; setting
-    # httpx read=125 s means we always catch its graceful 201 body when it fires.
-    # The 35 s read deadline fires first for a hung agent, returning a spoken
-    # fallback so the ESP returns to IDLE rather than sitting in THINKING for 2 min.
-    timeout = httpx.Timeout(connect=10.0, read=35.0, write=10.0, pool=5.0)
+    # Voice read deadline (VG_AGENT_READ_TIMEOUT_S, default 100 s): Hermes is
+    # the owner's admin voice control and a real (slow) answer beats a fast
+    # fallback.  Measured 2026-07-06: a Hermes turn takes ~73 s while the
+    # Anthropic org quota is 429-ing (its internal LLM calls burn the retry
+    # preamble); 3-10 s when quota is healthy.  Gateway's own forward timeout
+    # is 120 s — staying under it means we still catch its graceful body.
+    _read_s = float(os.environ.get("VG_AGENT_READ_TIMEOUT_S", "100"))
+    timeout = httpx.Timeout(connect=10.0, read=_read_s, write=10.0, pool=5.0)
     try:
         async with httpx.AsyncClient(timeout=timeout, trust_env=False) as client:
             resp = await client.post(
