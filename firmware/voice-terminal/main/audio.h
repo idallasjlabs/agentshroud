@@ -80,3 +80,10 @@ esp_err_t audio_set_volume(int pct);
  * @brief Volume loaded from NVS, or the built-in default on first boot.
  */
 int audio_get_saved_volume(void);
+
+/**
+ * @brief Step the codec volume toward the spoken target (zipper-free ramp)
+ *        and persist to NVS once settled.  Call periodically (~100-150 ms)
+ *        from the playback task.
+ */
+void audio_volume_tick(void);

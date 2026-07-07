@@ -10,6 +10,18 @@ static esp_codec_dev_handle_t s_mic    = NULL;
 static esp_codec_dev_handle_t s_spk    = NULL;
 static bool                   s_ready  = false;
 
+/* The ES8311/NS4150 output stage distorts audibly above ~85 codec volume
+ * regardless of digital headroom (owner-verified 2026-07-07: clean at 75-80,
+ * crackle at 90-100 even with -4.5 dB digital scaling).  Map the user's
+ * 0-100% onto the clean 0-85 codec range so "100%" = loudest clean output
+ * and the distortion zone is unreachable. */
+#define AUDIO_CODEC_VOL_MAX 85
+
+/* Zipper-free volume state — see audio_set_volume()/audio_volume_tick(). */
+static volatile int  s_vol_target_pct = -1;   /* -1 = uninitialised */
+static volatile int  s_vol_actual     = -1;   /* codec units */
+static volatile bool s_vol_dirty      = false;
+
 /* Shared I2S config: 16 kHz mono 16-bit, BOX-3 GPIO pins.
  * Used by both audio_preinit() and audio_init() so the config is defined once. */
 static const i2s_std_config_t s_i2s_cfg = {
@@ -90,8 +102,13 @@ esp_err_t audio_init(void)
     }
     /* Volume: NVS-persisted user percent (spoken "set volume X%" command),
      * mapped onto the clean codec range — see audio_set_volume(). */
-    s_ready = true;   /* set before audio_set_volume so it applies */
-    audio_set_volume(audio_get_saved_volume());
+    s_ready = true;
+    {
+        int _boot_pct = audio_get_saved_volume();
+        s_vol_target_pct = _boot_pct;
+        s_vol_actual     = (_boot_pct * AUDIO_CODEC_VOL_MAX) / 100;
+        esp_codec_dev_set_out_vol(s_spk, s_vol_actual);   /* pre-playback: no ramp needed */
+    }
 
     s_ready = true;
     ESP_LOGI(TAG, "Audio ready: mic + speaker at %d Hz %d-bit mono",
@@ -140,25 +157,48 @@ int audio_get_saved_volume(void)
     return (int)vol;
 }
 
-/* The ES8311/NS4150 output stage distorts audibly above ~85 codec volume
- * regardless of digital headroom (owner-verified 2026-07-07: clean at 75-80,
- * crackle at 90-100 even with -4.5 dB digital scaling).  Map the user's
- * 0-100%% onto the clean 0-85 codec range so "100%%" = loudest clean output
- * and the distortion zone is unreachable. */
-#define AUDIO_CODEC_VOL_MAX 85
-
+/* Zipper-free volume: a single large ES8311 gain step pops audibly right as
+ * the confirmation reply starts (owner-isolated 2026-07-07: volume-change
+ * turns click, plain turns clean — on a clean power supply).  audio_set_volume
+ * only stores the target; audio_volume_tick() (called from the tts_task loop,
+ * ~every 128 ms) walks the codec toward it in ≤4-unit steps and persists to
+ * NVS once, after the ramp settles (flash commits stall the cache — keep them
+ * away from the moment playback starts).
+ * State + AUDIO_CODEC_VOL_MAX are declared near the top (audio_init uses them). */
 esp_err_t audio_set_volume(int pct)
 {
     if (pct < 0)   pct = 0;
     if (pct > 100) pct = 100;
-    if (s_spk) esp_codec_dev_set_out_vol(s_spk, (pct * AUDIO_CODEC_VOL_MAX) / 100);
-
-    nvs_handle_t h;
-    if (nvs_open("audio", NVS_READWRITE, &h) == ESP_OK) {
-        nvs_set_i32(h, "out_vol", (int32_t)pct);
-        nvs_commit(h);
-        nvs_close(h);
-    }
-    ESP_LOGI(TAG, "Speaker volume set to %d%% (persisted)", pct);
+    s_vol_target_pct = pct;
+    s_vol_dirty      = true;
+    ESP_LOGI(TAG, "Speaker volume target %d%% (ramped by audio_volume_tick)", pct);
     return ESP_OK;
+}
+
+void audio_volume_tick(void)
+{
+    if (s_vol_target_pct < 0 || !s_spk) return;
+    int target = (s_vol_target_pct * AUDIO_CODEC_VOL_MAX) / 100;
+    int actual = s_vol_actual;
+    if (actual < 0) actual = target;          /* first call: jump silently */
+    if (actual != target) {
+        int step = (target > actual) ? 4 : -4;
+        actual += step;
+        if ((step > 0 && actual > target) || (step < 0 && actual < target)) {
+            actual = target;
+        }
+        s_vol_actual = actual;
+        esp_codec_dev_set_out_vol(s_spk, actual);
+        return;                               /* persist only once settled */
+    }
+    if (s_vol_dirty) {
+        s_vol_dirty = false;
+        nvs_handle_t h;
+        if (nvs_open("audio", NVS_READWRITE, &h) == ESP_OK) {
+            nvs_set_i32(h, "out_vol", (int32_t)s_vol_target_pct);
+            nvs_commit(h);
+            nvs_close(h);
+        }
+        ESP_LOGI(TAG, "Speaker volume %d%% persisted", (int)s_vol_target_pct);
+    }
 }

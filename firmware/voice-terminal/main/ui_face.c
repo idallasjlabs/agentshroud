@@ -207,9 +207,12 @@ static void _apply_state_cb(void *param)
     if (state == s_current_state) return;
     s_current_state = state;
 
-    if (state == WS_VG_STATE_LISTENING ||
-        state == WS_VG_STATE_THINKING  ||
+    if (state == WS_VG_STATE_THINKING  ||
         state == WS_VG_STATE_SPEAKING) {
+        /* LISTENING now ANIMATES: capture is store-and-forward (no network
+         * during recording), so the historical render-stalls-WiFi reason no
+         * longer applies to it.  Delivery (THINKING) and TTS (SPEAKING)
+         * stay frozen — those are the network-critical windows. */
         /* CRITICAL: freeze ALL face redraw for the entire interaction —
          * mic upstream (LISTENING), reply wait (THINKING), and TTS downlink
          * (SPEAKING).  The kawaii PSRAM canvas fills stall the WiFi stack

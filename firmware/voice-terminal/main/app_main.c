@@ -337,6 +337,7 @@ static void tts_task(void *arg)
             got = sizeof(play_chunk);
         }
         audio_play(play_chunk, got);   /* blocks ~128 ms per 4 KB — paces the loop */
+        audio_volume_tick();           /* zipper-free volume ramp + deferred NVS */
     }
 }
 
@@ -732,7 +733,7 @@ static void voice_task(void *arg)
             /* VT_BUILD_TAG: bump on EVERY behavioural firmware change — the
              * only reliable remote build identifier (esp_app_desc stamps go
              * stale, and config-derived values collide across builds). */
-            #define VT_BUILD_TAG "zerofill-0707h"
+            #define VT_BUILD_TAG "volface-0707j"
             vt_remote_log("boot: tag=" VT_BUILD_TAG " fw=%s reset=%d tts_buf=%u (remote-diag online)",
                           esp_app_get_description()->version,
                           (int)esp_reset_reason(),
