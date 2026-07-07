@@ -285,6 +285,15 @@ static StreamBufferHandle_t  s_tts_buf      = NULL;
 static StaticStreamBuffer_t  s_tts_sbuf_ctrl;     /* control struct — internal DRAM (BSS) */
 static uint8_t              *s_tts_sbuf_mem = NULL; /* backing store — PSRAM */
 
+/* Set when the server's END frame lands (strictly after the last PCM byte of
+ * a reply) — the ONLY reliable "reply fully received" signal.  The playback
+ * gate waits for it: the server pipelines synthesis, so the whole reply
+ * streams in while sentence 1 would otherwise be playing, and that
+ * concurrent TLS receive was tearing sentence 1 into static on every build
+ * that gated on quiet-windows or byte counts (inter-sentence synthesis gaps
+ * are indistinguishable from reply-complete on the wire). */
+static volatile bool s_reply_complete = false;
+
 /* Pop-free playback: the speaker stream NEVER stops.  Every start/stop of
  * the I2S/DAC stream pops the ES8311/NS4150 audibly; three build iterations
  * of pre-buffer tuning (1.5 s → 4 s → burst-end trigger) moved the clicks
@@ -295,52 +304,39 @@ static uint8_t              *s_tts_sbuf_mem = NULL; /* backing store — PSRAM *
  * absorbs network jitter at reply start; mid-reply gaps become silent
  * stretches instead of pops.  Mains-powered device: the always-on amp is
  * irrelevant. */
-#define TTS_GATE_MIN_BYTES (8 * 1024)  /* floor: a stray frame can't open the gate */
-#define TTS_STALL_POLLS    3           /* 3 × ~128 ms loop cadence ≈ 400 ms quiet */
 
 static void tts_task(void *arg)
 {
     static uint8_t play_chunk[4096];
-    bool   gate_open   = false;   /* replies pass only after the initial gate */
-    size_t last_avail  = 0;
-    int    stall_polls = 0;
+    bool   gate_open   = false;   /* replies pass only after the END-gate */
     while (1) {
         size_t avail = xStreamBufferBytesAvailable(s_tts_buf);
 
         if (!gate_open && avail > 0) {
-            /* QUIET-PRIMARY gate: open only when the incoming stream has been
-             * quiet ~3 loop cadences (~400 ms) — i.e. the TLS burst has ENDED
-             * — with a 5 s time cap for trickling links.  A byte threshold
-             * (the old 32 KB fast-open) is reached ~0.2 s into a multi-second
-             * burst, so sentence 1 played DURING heavy TLS receive and got
-             * torn into per-word clicks while later sentences (burst done)
-             * were clean — the owner-observed signature across three builds.
-             * ≥8 KB floor so a stray frame can't open the gate. */
+            /* END-GATE: play only once the WHOLE reply is buffered (the
+             * server's END frame sets s_reply_complete strictly after the
+             * last PCM byte).  Playback then never overlaps TLS receive —
+             * the root cause of first-sentence static that survived every
+             * quiet-window/byte-count gate.  Caps: 768 KB banked (~24 s;
+             * 1 MB buffer overflow guard) or 20 s fill age (synthesis
+             * wedge guard) start playback anyway. */
             static TickType_t s_gate_start = 0;
             if (s_gate_start == 0) s_gate_start = xTaskGetTickCount();
-            if (avail == last_avail) {
-                if (++stall_polls >= TTS_STALL_POLLS &&
-                    avail >= TTS_GATE_MIN_BYTES) {
-                    gate_open = true;
-                }
-            } else {
-                stall_polls = 0;
+            if (s_reply_complete ||
+                avail >= (768 * 1024) ||
+                (xTaskGetTickCount() - s_gate_start) * portTICK_PERIOD_MS
+                        > 20000) {
+                gate_open        = true;
+                s_reply_complete = false;
+                s_gate_start     = 0;
             }
-            if ((xTaskGetTickCount() - s_gate_start) * portTICK_PERIOD_MS
-                    > 5000) {
-                gate_open = true;      /* time cap: trickling link */
-            }
-            if (gate_open) s_gate_start = 0;
-            last_avail = avail;
         }
 
         size_t got = 0;
         if (gate_open) {
             got = xStreamBufferReceive(s_tts_buf, play_chunk, sizeof(play_chunk), 0);
             if (got == 0) {
-                gate_open   = false;   /* reply finished (or gap) — re-gate */
-                stall_polls = 0;
-                last_avail  = 0;
+                gate_open = false;     /* reply drained — re-gate for the next */
             } else if (wakeword_tts_stop_requested()) {
                 got = 0;               /* discard; fall through to silence */
             }
@@ -392,11 +388,13 @@ static void _on_vg_state(ws_vg_state_t state, void *ctx)
 
     if (state == WS_VG_STATE_SPEAKING) {
         wakeword_set_tts_playing(true);
+        s_reply_complete = false;   /* new reply streaming in */
         ui_face_set_state(state);
 
     } else if (state == WS_VG_STATE_IDLE) {
         bool post_tts    = (s_prev_vg_state == WS_VG_STATE_SPEAKING);
         bool interrupted = wakeword_tts_stop_requested();
+        if (post_tts) s_reply_complete = true;   /* END landed — reply fully buffered */
         if (interrupted && s_tts_buf) {
             /* Flush undelivered TTS PCM BEFORE clearing the stop request:
              * once cleared, tts_task resumes playing whatever is left in the
@@ -761,7 +759,7 @@ static void voice_task(void *arg)
             /* VT_BUILD_TAG: bump on EVERY behavioural firmware change — the
              * only reliable remote build identifier (esp_app_desc stamps go
              * stale, and config-derived values collide across builds). */
-            #define VT_BUILD_TAG "quietgate-0707k"
+            #define VT_BUILD_TAG "endgate-0707l"
             vt_remote_log("boot: tag=" VT_BUILD_TAG " fw=%s reset=%d tts_buf=%u (remote-diag online)",
                           esp_app_get_description()->version,
                           (int)esp_reset_reason(),
