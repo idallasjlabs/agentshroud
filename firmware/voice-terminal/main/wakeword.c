@@ -491,6 +491,8 @@ void wakeword_tts_stop_request(void)
 
 bool wakeword_tts_stop_requested(void) { return s_tts_stop_requested; }
 
+bool wakeword_tts_playing(void)        { return s_tts_playing; }
+
 void wakeword_tts_stop_clear(void)     { s_tts_stop_requested = false; }
 
 void wakeword_deinit(void)

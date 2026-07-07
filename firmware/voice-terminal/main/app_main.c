@@ -319,6 +319,14 @@ static void tts_task(void *arg)
                 continue;
             }
             stall_polls = 0;
+            /* Playback-start silence preamble (~128 ms of zeros): after an
+             * idle period the I2S TX ring holds stale samples and the PA is
+             * settling — the first real write flushed that out as a loud
+             * crackle at the start of every reply (owner-confirmed 2026-07-07
+             * at 75%% volume: "loud crackle then smooth").  Zeros push the
+             * stale ring out silently and give the amp time to settle. */
+            memset(play_chunk, 0, sizeof(play_chunk));
+            audio_play(play_chunk, sizeof(play_chunk));   /* 4096 B = 128 ms */
         }
         size_t got = xStreamBufferReceive(s_tts_buf, play_chunk, sizeof(play_chunk),
                                           pdMS_TO_TICKS(100));
@@ -326,7 +334,18 @@ static void tts_task(void *arg)
             audio_play(play_chunk, got);
         } else if (got == 0) {
             /* Underrun (mid-reply stall) or normal end of reply — either way,
-             * go back to the fill phase so the next audio starts smooth. */
+             * go back to the fill phase so the next audio starts smooth.
+             * DIAGNOSTIC: count drain events while TTS is active; >1 per
+             * reply means the speaker ran dry mid-reply (starvation clicks);
+             * 1 = the normal end-of-reply drain.  Distinguishes buffer
+             * starvation from analog/amp distortion remotely. */
+            /* Unconditional: s_tts_playing clears when the server's idle
+             * frame lands (right after the BURST finishes), which is long
+             * before PLAYBACK ends — gating on it hid every tail drain. */
+            static int s_drains = 0;
+            s_drains++;
+            vt_remote_log("tts drain #%d avail_after=%u", s_drains,
+                          (unsigned)xStreamBufferBytesAvailable(s_tts_buf));
             draining   = false;
             last_avail = 0;
         }
@@ -356,7 +375,11 @@ static void _on_vg_state(ws_vg_state_t state, void *ctx)
     (void)ctx;
 
     if (s_delivery_active &&
-        (state == WS_VG_STATE_DISCONNECTED || state == WS_VG_STATE_IDLE)) {
+        (state == WS_VG_STATE_DISCONNECTED || state == WS_VG_STATE_IDLE ||
+         state == WS_VG_STATE_LISTENING)) {
+        /* LISTENING here is the server echoing our delivery-retry LISTEN
+         * frames — the user is NOT being recorded.  Owner report 2026-07-07:
+         * "still listening long after I stop speaking" = this echo. */
         /* Keep the LISTENING/THINKING face steady through delivery retries.
          * The delivery loop sets the final state itself (IDLE on failure;
          * on success the server drives THINKING→SPEAKING→IDLE). */
@@ -721,7 +744,7 @@ static void voice_task(void *arg)
             /* VT_BUILD_TAG: bump on EVERY behavioural firmware change — the
              * only reliable remote build identifier (esp_app_desc stamps go
              * stale, and config-derived values collide across builds). */
-            #define VT_BUILD_TAG "volcmd-0706h"
+            #define VT_BUILD_TAG "volmap-0707e"
             vt_remote_log("boot: tag=" VT_BUILD_TAG " fw=%s reset=%d tts_buf=%u (remote-diag online)",
                           esp_app_get_description()->version,
                           (int)esp_reset_reason(),

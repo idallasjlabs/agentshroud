@@ -203,6 +203,14 @@ _UNIT_WORDS = {
 }
 
 
+_VOLUME_RE = re.compile(
+    # "[,:]?" — Whisper often punctuates the command ("Set volume, 90%").
+    r"\bset\s+(?:the\s+)?volume[,:]?\s+(?:to\s+)?"
+    r"(\d{1,3}|[a-z]+(?:[ -][a-z]+)?)\s*(?:%|percent)?\b",
+    re.IGNORECASE,
+)
+
+
 def _parse_volume_command(transcript: str) -> int | None:
     """Return the requested volume (0-100, clamped) for a spoken
     "set [the] volume [to] X [%|percent]" command, else None.
@@ -211,11 +219,7 @@ def _parse_volume_command(transcript: str) -> int | None:
     handle digits, tens words, and tens+unit compounds ("twenty five").
     """
     t = transcript.lower().strip()
-    m = re.search(
-        r"\bset\s+(?:the\s+)?volume\s+(?:to\s+)?"
-        r"(\d{1,3}|[a-z]+(?:[ -][a-z]+)?)\s*(?:%|percent)?\b",
-        t,
-    )
+    m = _VOLUME_RE.search(t)
     if not m:
         return None
     raw = m.group(1).replace("-", " ").strip()
@@ -517,32 +521,47 @@ async def voice_endpoint(ws: WebSocket) -> None:
 
                         # Spoken device commands — intercepted server-side, never
                         # routed to an agent.  "set volume X%" sends a control
-                        # frame the firmware applies + persists; the confirmation
-                        # is spoken through the normal TTS path below.
+                        # frame the firmware applies + persists.  The user often
+                        # chains a question in the same breath ("Set volume 80.
+                        # What time is it?") — route any remainder to the agent
+                        # and speak confirmation + answer together.
                         _vol = _parse_volume_command(transcript)
+                        _confirm_prefix = ""
+                        _query_text = transcript
+                        _dispatch = True
+                        agent_text = ""
                         if _vol is not None:
                             logger.info("Volume command: %d%% → device", _vol)
                             await ws.send_text(
                                 json.dumps({"cmd": "set_volume", "value": _vol})
                             )
-                            agent_text = f"Volume set to {_vol} percent."
+                            _confirm_prefix = f"Volume set to {_vol} percent. "
+                            _rest = _VOLUME_RE.sub(" ", transcript, count=1)
+                            if re.sub(r"[^\w]", "", _rest):
+                                _query_text = _rest.strip(" .,!?")
+                            else:
+                                agent_text = _confirm_prefix.strip()
+                                _dispatch = False
+
                         # Dispatch to the appropriate agent.
-                        elif agent == "direct":
+                        if _dispatch and agent == "direct":
                             # Fast path: multi-turn LLM proxy (no agentic tools).
-                            history.append({"role": "user", "content": transcript})
-                            agent_text = await _call_llm(history)
-                        else:
+                            history.append({"role": "user", "content": _query_text})
+                            agent_text = _confirm_prefix + await _call_llm(history)
+                        elif _dispatch:
                             # Proxied agent path: full AgentShroud pipeline via /forward.
                             # Hermes and future OpenAI-compat agents return a synchronous
                             # reply; async agents (OpenClaw) get an honest Telegram notice.
-                            agent_text = await _call_agent(transcript, agent)
+                            agent_text = _confirm_prefix + await _call_agent(
+                                _query_text, agent
+                            )
 
                         logger.info("Agent reply: %r", agent_text)
 
                         # Maintain multi-turn history only for the "direct" fast path.
                         # Proxied agents (Hermes, etc.) manage their own conversation state.
-                        # Volume commands never touched history (no user turn appended).
-                        if agent == "direct" and _vol is None:
+                        # A pure volume command never touched history (no user turn).
+                        if agent == "direct" and _dispatch:
                             history.append({"role": "assistant", "content": agent_text})
                             if len(history) > 1 + _MAX_HISTORY_TURNS * 2:
                                 history = (

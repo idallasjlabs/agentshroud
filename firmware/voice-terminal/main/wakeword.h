@@ -157,3 +157,6 @@ bool wakeword_tts_stop_requested(void);
  *        Called in _on_vg_state when IDLE is received after a SPEAKING state.
  */
 void wakeword_tts_stop_clear(void);
+
+/** True while server TTS is playing (SPEAKING window). */
+bool wakeword_tts_playing(void);

@@ -88,9 +88,10 @@ esp_err_t audio_init(void)
         ESP_LOGE(TAG, "esp_codec_dev_open(spk) failed: %s", esp_err_to_name(ret));
         return ret;
     }
-    /* Volume: NVS-persisted (set by the spoken "set volume X%" command);
-     * falls back to 92 on first boot (owner feedback 2026-07-06: 75 too quiet). */
-    esp_codec_dev_set_out_vol(s_spk, audio_get_saved_volume());
+    /* Volume: NVS-persisted user percent (spoken "set volume X%" command),
+     * mapped onto the clean codec range — see audio_set_volume(). */
+    s_ready = true;   /* set before audio_set_volume so it applies */
+    audio_set_volume(audio_get_saved_volume());
 
     s_ready = true;
     ESP_LOGI(TAG, "Audio ready: mic + speaker at %d Hz %d-bit mono",
@@ -139,11 +140,18 @@ int audio_get_saved_volume(void)
     return (int)vol;
 }
 
+/* The ES8311/NS4150 output stage distorts audibly above ~85 codec volume
+ * regardless of digital headroom (owner-verified 2026-07-07: clean at 75-80,
+ * crackle at 90-100 even with -4.5 dB digital scaling).  Map the user's
+ * 0-100%% onto the clean 0-85 codec range so "100%%" = loudest clean output
+ * and the distortion zone is unreachable. */
+#define AUDIO_CODEC_VOL_MAX 85
+
 esp_err_t audio_set_volume(int pct)
 {
     if (pct < 0)   pct = 0;
     if (pct > 100) pct = 100;
-    if (s_spk) esp_codec_dev_set_out_vol(s_spk, pct);
+    if (s_spk) esp_codec_dev_set_out_vol(s_spk, (pct * AUDIO_CODEC_VOL_MAX) / 100);
 
     nvs_handle_t h;
     if (nvs_open("audio", NVS_READWRITE, &h) == ESP_OK) {

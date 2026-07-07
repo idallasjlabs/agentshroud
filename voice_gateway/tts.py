@@ -393,7 +393,7 @@ def synthesize(text: str) -> bytes:
     # speaker amp clips audibly ("clicking/clipping") once the codec volume
     # exceeds ~75%.  Scaling the digital level down (-2.5 dB default) keeps
     # peaks off the amp rails across the whole 0-100% volume range.
-    _headroom = float(_os.environ.get("VG_TTS_HEADROOM", "0.75"))
+    _headroom = float(_os.environ.get("VG_TTS_HEADROOM", "0.6"))
     samples = samples * _headroom
     # Convert float32 [-1, 1] → S16LE
     pcm = _np.clip(samples * 32767, -32768, 32767).astype("<i2").tobytes()
