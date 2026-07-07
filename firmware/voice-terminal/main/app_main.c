@@ -295,8 +295,8 @@ static uint8_t              *s_tts_sbuf_mem = NULL; /* backing store — PSRAM *
  * absorbs network jitter at reply start; mid-reply gaps become silent
  * stretches instead of pops.  Mains-powered device: the always-on amp is
  * irrelevant. */
-#define TTS_GATE_BYTES   (32 * 1024)   /* 1 s @ 16 kHz S16LE */
-#define TTS_STALL_POLLS  15            /* 15 × 20 ms = 300 ms of no growth */
+#define TTS_GATE_MIN_BYTES (8 * 1024)  /* floor: a stray frame can't open the gate */
+#define TTS_STALL_POLLS    3           /* 3 × ~128 ms loop cadence ≈ 400 ms quiet */
 
 static void tts_task(void *arg)
 {
@@ -308,15 +308,29 @@ static void tts_task(void *arg)
         size_t avail = xStreamBufferBytesAvailable(s_tts_buf);
 
         if (!gate_open && avail > 0) {
-            /* Reply arriving: open the gate at 1 s banked or when the stream
-             * pauses 300 ms (short replies / end of burst). */
-            if (avail >= TTS_GATE_BYTES) {
-                gate_open = true;
-            } else if (avail == last_avail && ++stall_polls >= TTS_STALL_POLLS) {
-                gate_open = true;
-            } else if (avail != last_avail) {
+            /* QUIET-PRIMARY gate: open only when the incoming stream has been
+             * quiet ~3 loop cadences (~400 ms) — i.e. the TLS burst has ENDED
+             * — with a 5 s time cap for trickling links.  A byte threshold
+             * (the old 32 KB fast-open) is reached ~0.2 s into a multi-second
+             * burst, so sentence 1 played DURING heavy TLS receive and got
+             * torn into per-word clicks while later sentences (burst done)
+             * were clean — the owner-observed signature across three builds.
+             * ≥8 KB floor so a stray frame can't open the gate. */
+            static TickType_t s_gate_start = 0;
+            if (s_gate_start == 0) s_gate_start = xTaskGetTickCount();
+            if (avail == last_avail) {
+                if (++stall_polls >= TTS_STALL_POLLS &&
+                    avail >= TTS_GATE_MIN_BYTES) {
+                    gate_open = true;
+                }
+            } else {
                 stall_polls = 0;
             }
+            if ((xTaskGetTickCount() - s_gate_start) * portTICK_PERIOD_MS
+                    > 5000) {
+                gate_open = true;      /* time cap: trickling link */
+            }
+            if (gate_open) s_gate_start = 0;
             last_avail = avail;
         }
 
@@ -512,6 +526,12 @@ static void rlog_task(void *arg)
         int connected_tries = 0;
         for (int waited_ms = 0; waited_ms < 30000; waited_ms += 250) {
             ws_client_handle_t ws = s_ws;  /* local copy; avoids torn reads */
+            if (wakeword_tts_playing()) {
+                /* Hold diagnostics while a reply plays — each send is TLS
+                 * work that can tear the audio.  Queue drains right after. */
+                vTaskDelay(pdMS_TO_TICKS(250));
+                continue;
+            }
             if (ws && ws_client_connected(ws)) {
                 if (ws_client_send_log(ws, line) == ESP_OK) break;  /* delivered */
                 if (++connected_tries >= 4) break;                  /* ~1 s: drop it */
@@ -550,6 +570,7 @@ typedef struct {
 
 static bool _deliver_utterance(const uint8_t *buf, size_t len)
 {
+    size_t sent_ok = 0;   /* bytes successfully sent across attempts (resume) */
     /* CRITICAL: never hand PSRAM pointers to the TLS stack.  utt_buf lives in
      * PSRAM; mbedTLS on the S3 fails the SSL write instantly when the
      * plaintext is external RAM (serial-caught 2026-07-04:
@@ -572,9 +593,15 @@ static bool _deliver_utterance(const uint8_t *buf, size_t len)
             continue;
         }
 
+        /* Resume from where earlier attempts got to (rewound 8 KB for
+         * in-flight loss) — a drop at 90%% now costs a tail send, not a full
+         * restart.  Attempt 1 (sent_ok == 0) uses the plain LISTEN. */
+        size_t start_off = (sent_ok > 8192) ? sent_ok - 8192 : 0;
         esp_err_t lr = ESP_FAIL;
         for (int a = 0; a < 3 && lr != ESP_OK; a++) {
-            lr = ws_client_send_listen(ws);
+            lr = (start_off > 0)
+                     ? ws_client_send_listen_resume(ws, start_off)
+                     : ws_client_send_listen(ws);
             if (lr != ESP_OK) vTaskDelay(pdMS_TO_TICKS(20));
         }
         if (lr != ESP_OK) {
@@ -586,7 +613,7 @@ static bool _deliver_utterance(const uint8_t *buf, size_t len)
          * server's 15 s LISTEN window and 640 KB PCM cap.  The server treats
          * every LISTEN as a fresh utterance, so retrying the whole buffer
          * after a mid-burst drop is idempotent. */
-        size_t off = 0;
+        size_t off = start_off;
         bool   dropped = false;
         /* Adaptive pacing: if earlier attempts dropped mid-burst, the uplink
          * can't sustain the base rate — slow down instead of failing the same
@@ -604,6 +631,7 @@ static bool _deliver_utterance(const uint8_t *buf, size_t len)
                 break;
             }
             off += n;
+            if (off > sent_ok) sent_ok = off;
             vTaskDelay(pdMS_TO_TICKS(chunk_delay));
         }
         if (dropped) {
@@ -733,7 +761,7 @@ static void voice_task(void *arg)
             /* VT_BUILD_TAG: bump on EVERY behavioural firmware change — the
              * only reliable remote build identifier (esp_app_desc stamps go
              * stale, and config-derived values collide across builds). */
-            #define VT_BUILD_TAG "volface-0707j"
+            #define VT_BUILD_TAG "quietgate-0707k"
             vt_remote_log("boot: tag=" VT_BUILD_TAG " fw=%s reset=%d tts_buf=%u (remote-diag online)",
                           esp_app_get_description()->version,
                           (int)esp_reset_reason(),
@@ -790,7 +818,7 @@ static void voice_task(void *arg)
                 if (++keepalive_frames >= KEEPALIVE_INTERVAL) {
                     keepalive_frames = 0;
                     ws_client_send_keepalive(ws);
-                    _send_status_beacon(ws, capturing);
+                    if (!wakeword_tts_playing()) _send_status_beacon(ws, capturing);
                 }
             }
             vTaskDelay(pdMS_TO_TICKS(10));
@@ -835,7 +863,9 @@ static void voice_task(void *arg)
             if (++keepalive_frames >= KEEPALIVE_INTERVAL) {
                 keepalive_frames = 0;
                 ws_client_send_keepalive(ws);
-                _send_status_beacon(ws, capturing);
+                /* No beacon while TTS plays: a periodic TLS send overlapping
+                 * a reply = occasional mid-reply click. */
+                if (!wakeword_tts_playing()) _send_status_beacon(ws, capturing);
             }
         }
     }

@@ -2225,11 +2225,122 @@ async def test_ws_volume_command_with_chained_question(monkeypatch):
 def _reset_reply_resume():
     import voice_gateway.server as srv
 
-    if hasattr(srv, "_reply_resume"):
-        srv._reply_resume = None
+    for attr in ("_reply_resume", "_utterance_resume"):
+        if hasattr(srv, attr):
+            setattr(srv, attr, None)
     yield
-    if hasattr(srv, "_reply_resume"):
-        srv._reply_resume = None
+    for attr in ("_reply_resume", "_utterance_resume"):
+        if hasattr(srv, attr):
+            setattr(srv, attr, None)
+
+
+# ── Uplink utterance resume (LISTEN <offset>) ────────────────────────────────
+
+
+@pytest.mark.asyncio
+async def test_listen_offset_resumes_partial_upload(monkeypatch):
+    """A drop mid-upload must not force a full resend: the next connection
+    sends 'LISTEN <offset>' and only the remainder — STT still receives ONE
+    complete utterance.  (Full restarts were the dominant THINKING-time cost
+    on the flaky hotspot link.)"""
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+
+    received: list = []
+
+    def _capture_transcribe(pcm: bytes) -> str:
+        received.append(pcm)
+        return ""  # empty transcript → straight to idle, no TTS needed
+
+    monkeypatch.setattr(stt_mod, "transcribe", _capture_transcribe)
+
+    part1 = b"\x01\x02" * 2048   # 4096 B
+    part2 = b"\x03\x04" * 2048   # 4096 B
+
+    # Session 1: LISTEN + first chunk, then the link dies (no END).
+    ws1 = _mock_ws([
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": part1, "text": None},
+        WebSocketDisconnect(code=1006),
+    ])
+    await srv.voice_endpoint(ws1)
+    assert srv._utterance_resume is not None, "utterance cache not preserved"
+    assert bytes(srv._utterance_resume["pcm"]) == part1
+
+    # Session 2: resume from len(part1) and send the remainder + END.
+    ws2 = _mock_ws([
+        {"text": f"LISTEN {len(part1)}", "bytes": None},
+        {"bytes": part2, "text": None},
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+    await srv.voice_endpoint(ws2)
+
+    assert received, "STT never ran on the resumed utterance"
+    assert received[0] == part1 + part2, (
+        f"STT got {len(received[0])} bytes, expected the full "
+        f"{len(part1) + len(part2)}-byte utterance"
+    )
+    assert srv._utterance_resume is None, "cache must clear on END"
+
+
+@pytest.mark.asyncio
+async def test_bare_listen_starts_fresh(monkeypatch):
+    """A bare LISTEN after a stale partial upload must NOT prepend old audio."""
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    received: list = []
+    monkeypatch.setattr(
+        stt_mod, "transcribe", lambda b: received.append(b) or ""
+    )
+
+    srv._utterance_resume = {"pcm": bytearray(b"\xAA" * 1000), "ts": 0.0}
+
+    fresh = b"\x05\x06" * 512
+    ws = _mock_ws([
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": fresh, "text": None},
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+    await srv.voice_endpoint(ws)
+
+    assert received and received[0] == fresh, "stale cache leaked into a fresh utterance"
+
+
+@pytest.mark.asyncio
+async def test_listen_offset_with_stale_cache_degrades_to_fresh(monkeypatch):
+    """LISTEN <offset> with an expired cache must behave like a fresh LISTEN
+    (the device's resent-remainder is all the server gets — better a short
+    utterance than a crash or stale-audio corruption)."""
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    received: list = []
+    monkeypatch.setattr(
+        stt_mod, "transcribe", lambda b: received.append(b) or ""
+    )
+
+    srv._utterance_resume = {"pcm": bytearray(b"\xAA" * 1000), "ts": -10_000.0}
+
+    tail = b"\x07\x08" * 512
+    ws = _mock_ws([
+        {"text": "LISTEN 1000", "bytes": None},
+        {"bytes": tail, "text": None},
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+    await srv.voice_endpoint(ws)
+
+    assert received and received[0] == tail, "stale cache must not be prepended"
 
 
 @pytest.mark.asyncio

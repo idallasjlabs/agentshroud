@@ -68,6 +68,15 @@ esp_err_t ws_client_send_pcm(ws_client_handle_t c, const uint8_t *buf, size_t le
 esp_err_t ws_client_send_listen(ws_client_handle_t c);
 
 /**
+ * @brief Resume an interrupted utterance upload: sends "LISTEN <offset>".
+ *
+ * The server seeds its buffer from its cross-connection cache up to
+ * <offset>; the device then sends only the remainder.  Turns a mid-upload
+ * drop from a full resend into a seconds-long tail delivery.
+ */
+esp_err_t ws_client_send_listen_resume(ws_client_handle_t c, size_t offset);
+
+/**
  * @brief Send the utterance-end marker ("END") to the Voice Gateway.
  */
 esp_err_t ws_client_send_end(ws_client_handle_t c);

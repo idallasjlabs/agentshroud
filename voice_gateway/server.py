@@ -119,6 +119,9 @@ _TTS_SENTENCE_TIMEOUT_S: float = float(os.environ.get("VG_TTS_SENTENCE_TIMEOUT_S
 # Single-device deployment — no per-device keying (the funnel NATs every
 # device to one host anyway).
 _reply_resume: dict | None = None
+# Uplink twin of _reply_resume: preserves a partially-received utterance
+# across connection drops so the device resumes with "LISTEN <offset>".
+_utterance_resume: dict | None = None
 _RESUME_MAX_AGE_S: float = 30.0
 _RESUME_REWIND_BYTES: int = 8192   # re-send this much before the recorded
                                    # offset — covers frames lost in flight
@@ -402,7 +405,7 @@ async def voice_endpoint(ws: WebSocket) -> None:
         _loop = asyncio.get_running_loop()
 
         # Resume an interrupted TTS reply from the previous connection.
-        global _reply_resume
+        global _reply_resume, _utterance_resume
         if _reply_resume is not None:
             _age = _loop.time() - _reply_resume["ts"]
             _pcm, _sent = _reply_resume["pcm"], _reply_resume["sent"]
@@ -455,6 +458,14 @@ async def voice_endpoint(ws: WebSocket) -> None:
                 if _pcm_bytes_total < _PCM_MAX_BYTES:
                     pcm_chunks.append(message["bytes"])
                     _pcm_bytes_total += len(message["bytes"])
+                    # Keep the cross-connection utterance cache live: a drop
+                    # mid-upload preserves everything received so the device
+                    # can resume with "LISTEN <offset>" instead of resending
+                    # the whole utterance (the dominant THINKING-time cost on
+                    # the flaky hotspot link).
+                    if _utterance_resume is not None:
+                        _utterance_resume["pcm"] += message["bytes"]
+                        _utterance_resume["ts"] = _loop.time()
                 else:
                     logger.warning(
                         "PCM buffer cap (%d bytes) reached from %s — discarding excess",
@@ -482,10 +493,41 @@ async def voice_endpoint(ws: WebSocket) -> None:
                     # in-stream watcher already exited).  Nothing to abort.
                     logger.info("Stale STOP from %s (not speaking) — ignored", remote)
 
-                elif msg == "LISTEN":
-                    logger.info("LISTEN from %s", remote)
+                elif msg == "LISTEN" or msg.startswith("LISTEN "):
+                    # Bare LISTEN = fresh utterance.  "LISTEN <offset>" = the
+                    # device resuming after a mid-upload drop: seed the buffer
+                    # from the cross-connection cache up to <offset> (the
+                    # device resends from there, rewound to cover in-flight
+                    # loss) so a drop at 90% costs seconds, not a full resend.
+                    _offset = None
+                    if msg != "LISTEN":
+                        try:
+                            _offset = max(0, int(msg.split(None, 1)[1]))
+                        except (ValueError, IndexError):
+                            _offset = None
                     pcm_chunks.clear()
                     _pcm_bytes_total = 0
+                    if (
+                        _offset is not None
+                        and _utterance_resume is not None
+                        and (_loop.time() - _utterance_resume["ts"]) <= _RESUME_MAX_AGE_S
+                    ):
+                        _cached = bytes(_utterance_resume["pcm"][:_offset])
+                        if _cached:
+                            pcm_chunks.append(_cached)
+                            _pcm_bytes_total = len(_cached)
+                        logger.info(
+                            "LISTEN resume at %d (%d cached bytes) from %s",
+                            _offset, len(_cached), remote,
+                        )
+                    else:
+                        logger.info("LISTEN from %s", remote)
+                    # (Re)arm the cache for THIS utterance — chunk appends
+                    # keep it current; cleared on END.
+                    _utterance_resume = {
+                        "pcm": bytearray(b"".join(pcm_chunks)),
+                        "ts": _loop.time(),
+                    }
                     # Safety: arm the server-side utterance timeout so a device that
                     # never sends END (crash, stuck firmware) can't hold the session in
                     # LISTENING forever.  Cleared when END is received or on timeout.
@@ -497,6 +539,7 @@ async def voice_endpoint(ws: WebSocket) -> None:
 
                 elif msg == "END":
                     _listen_deadline = None   # cancel the utterance timeout
+                    _utterance_resume = None  # utterance complete — cache done
                     state = _State.THINKING
                     await _send_state(ws, state)
 

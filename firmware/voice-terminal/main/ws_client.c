@@ -163,7 +163,10 @@ ws_client_handle_t ws_client_create(const char *url,
 
     esp_websocket_client_config_t cfg = {
         .uri                  = url,
-        .reconnect_timeout_ms = 5000,
+        /* 1.5 s (was 5 s): on the drop-happy hotspot every delivery retry
+         * paid the full wait before reconnecting — with uplink resume the
+         * retries are cheap, so start them fast. */
+        .reconnect_timeout_ms = 1500,
         /* 5 s — headroom for TLS/DERP latency spikes, but short enough that a
          * write to a dying socket can't monopolise the tx lock for long (the
          * old 8 s made each doomed PCM write starve every other sender). */
@@ -234,6 +237,17 @@ esp_err_t ws_client_send_listen(ws_client_handle_t c)
     if (!c->connected) return ESP_ERR_INVALID_STATE;   /* lock-free flag — see ws_client_connected() */
     const char *msg = "LISTEN";
     int sent = esp_websocket_client_send_text(c->wsc, msg, strlen(msg),
+                                              pdMS_TO_TICKS(1000));
+    return (sent >= 0) ? ESP_OK : ESP_FAIL;
+}
+
+esp_err_t ws_client_send_listen_resume(ws_client_handle_t c, size_t offset)
+{
+    if (!c) return ESP_ERR_INVALID_ARG;
+    if (!c->connected) return ESP_ERR_INVALID_STATE;   /* lock-free flag — see ws_client_connected() */
+    char msg[32];
+    int  n = snprintf(msg, sizeof(msg), "LISTEN %u", (unsigned)offset);
+    int sent = esp_websocket_client_send_text(c->wsc, msg, n,
                                               pdMS_TO_TICKS(1000));
     return (sent >= 0) ? ESP_OK : ESP_FAIL;
 }
