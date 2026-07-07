@@ -329,6 +329,14 @@ static void tts_task(void *arg)
                 gate_open        = true;
                 s_reply_complete = false;
                 s_gate_start     = 0;
+                /* PLAYBACK drives the speaking-state machine, not server
+                 * frames: under the END-gate the server's idle arrives
+                 * BEFORE playback starts, and keying tts_playing to it
+                 * released every hold (rlog flush, beacon, WakeNet feed)
+                 * exactly at playback start — the surviving first-words
+                 * static.  Set it here, clear it when the buffer drains. */
+                wakeword_set_tts_playing(true);
+                ui_face_set_state(WS_VG_STATE_SPEAKING);
             }
         }
 
@@ -337,6 +345,11 @@ static void tts_task(void *arg)
             got = xStreamBufferReceive(s_tts_buf, play_chunk, sizeof(play_chunk), 0);
             if (got == 0) {
                 gate_open = false;     /* reply drained — re-gate for the next */
+                wakeword_set_tts_playing(false);
+                wakeword_tts_stop_clear();
+                if (!wakeword_triggered()) {
+                    ui_face_set_state(WS_VG_STATE_IDLE);
+                }
             } else if (wakeword_tts_stop_requested()) {
                 got = 0;               /* discard; fall through to silence */
             }
@@ -387,34 +400,26 @@ static void _on_vg_state(ws_vg_state_t state, void *ctx)
     }
 
     if (state == WS_VG_STATE_SPEAKING) {
-        wakeword_set_tts_playing(true);
-        s_reply_complete = false;   /* new reply streaming in */
-        ui_face_set_state(state);
+        /* Reply download starting.  tts_playing + the SPEAKING face are set
+         * by tts_task when PLAYBACK actually begins (END-gate) — not here. */
+        s_reply_complete = false;
 
     } else if (state == WS_VG_STATE_IDLE) {
         bool post_tts    = (s_prev_vg_state == WS_VG_STATE_SPEAKING);
         bool interrupted = wakeword_tts_stop_requested();
         if (post_tts) s_reply_complete = true;   /* END landed — reply fully buffered */
         if (interrupted && s_tts_buf) {
-            /* Flush undelivered TTS PCM BEFORE clearing the stop request:
-             * once cleared, tts_task resumes playing whatever is left in the
-             * 256 KB buffer — a leftover blast of the reply the user just
-             * stopped.  Reset can fail only if tts_task is blocked reading,
-             * which means the buffer is already empty — safe either way. */
+            /* User tapped stop: flush the undelivered remainder so nothing
+             * blares after the tap.  tts_task clears the stop request when
+             * its drain completes. */
             xStreamBufferReset(s_tts_buf);
         }
-        wakeword_set_tts_playing(false);
-        wakeword_tts_stop_clear();
 
         if (post_tts && !interrupted) {
-            /* AUTO-LISTEN DISABLED: with no acoustic echo cancellation, the
-             * follow-up listen window picks up the tail/reverb of our own TTS
-             * (live transcript evidence: "See, orange, clear, admission match,
-             * connect" = Whisper hearing the speaker), producing garbage
-             * queries in a feedback loop.  Follow-ups now require an explicit
-             * tap or "Hi, ESP" — predictable and echo-proof. */
-            ui_face_set_state(WS_VG_STATE_IDLE);
-        } else if (!wakeword_triggered()) {
+            /* Reply fully buffered; playback (tts_task) owns the face from
+             * here — SPEAKING when audio starts, IDLE when the buffer
+             * drains.  (Auto-listen remains disabled: no AEC.) */
+        } else if (!wakeword_triggered() && !wakeword_tts_playing()) {
             /* Interrupted or normal idle.  ui_face may already show IDLE if
              * the user tapped (touch callback updated it); set_state() has an
              * early-return guard so the redundant call is harmless. */
@@ -524,9 +529,10 @@ static void rlog_task(void *arg)
         int connected_tries = 0;
         for (int waited_ms = 0; waited_ms < 30000; waited_ms += 250) {
             ws_client_handle_t ws = s_ws;  /* local copy; avoids torn reads */
-            if (wakeword_tts_playing()) {
-                /* Hold diagnostics while a reply plays — each send is TLS
-                 * work that can tear the audio.  Queue drains right after. */
+            if (wakeword_tts_playing() || s_reply_complete) {
+                /* Hold diagnostics while a reply plays OR is about to (fully
+                 * buffered, gate opening) — each send is TLS work that can
+                 * tear the audio.  Queue drains right after. */
                 vTaskDelay(pdMS_TO_TICKS(250));
                 continue;
             }
@@ -759,7 +765,7 @@ static void voice_task(void *arg)
             /* VT_BUILD_TAG: bump on EVERY behavioural firmware change — the
              * only reliable remote build identifier (esp_app_desc stamps go
              * stale, and config-derived values collide across builds). */
-            #define VT_BUILD_TAG "endgate-0707l"
+            #define VT_BUILD_TAG "playdrive-0707m"
             vt_remote_log("boot: tag=" VT_BUILD_TAG " fw=%s reset=%d tts_buf=%u (remote-diag online)",
                           esp_app_get_description()->version,
                           (int)esp_reset_reason(),
