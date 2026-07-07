@@ -285,70 +285,58 @@ static StreamBufferHandle_t  s_tts_buf      = NULL;
 static StaticStreamBuffer_t  s_tts_sbuf_ctrl;     /* control struct — internal DRAM (BSS) */
 static uint8_t              *s_tts_sbuf_mem = NULL; /* backing store — PSRAM */
 
-/* Jitter pre-buffer: do not start the speaker until this much PCM is queued.
- * Playing the instant the first 4 KB arrives left the DMA exposed to every
- * network stutter — each buffer dry-out is an audible click (live 2026-07-06:
- * "each word cut off with a click" on the office hotspot).  1.5 s of audio
- * rides out typical funnel/hotspot jitter; on a deep underrun we pause and
- * re-buffer once instead of clicking per word. */
-#define TTS_PREBUFFER_BYTES   (48 * 1024)   /* 1.5 s @ 16 kHz S16LE */
-#define TTS_STALL_POLLS       15            /* 15 × 20 ms = 300 ms of no growth */
+/* Pop-free playback: the speaker stream NEVER stops.  Every start/stop of
+ * the I2S/DAC stream pops the ES8311/NS4150 audibly; three build iterations
+ * of pre-buffer tuning (1.5 s → 4 s → burst-end trigger) moved the clicks
+ * around instead of removing them because each drain/refill boundary was
+ * itself the click.  Design now: feed continuous zeros whenever no reply
+ * audio is queued — the DAC clocks silence forever and there is no boundary
+ * to pop.  A small initial gate (1 s banked or 300 ms of stream-quiet)
+ * absorbs network jitter at reply start; mid-reply gaps become silent
+ * stretches instead of pops.  Mains-powered device: the always-on amp is
+ * irrelevant. */
+#define TTS_GATE_BYTES   (32 * 1024)   /* 1 s @ 16 kHz S16LE */
+#define TTS_STALL_POLLS  15            /* 15 × 20 ms = 300 ms of no growth */
 
 static void tts_task(void *arg)
 {
     static uint8_t play_chunk[4096];
-    bool   draining     = false;
-    size_t last_avail   = 0;
-    int    stall_polls  = 0;
+    bool   gate_open   = false;   /* replies pass only after the initial gate */
+    size_t last_avail  = 0;
+    int    stall_polls = 0;
     while (1) {
-        if (!draining) {
-            /* Fill phase: wait for the pre-buffer, but start early when the
-             * stream has stopped growing (short replies smaller than the
-             * pre-buffer would otherwise never play). */
-            size_t avail = xStreamBufferBytesAvailable(s_tts_buf);
-            if (avail >= TTS_PREBUFFER_BYTES) {
-                draining = true;
-            } else if (avail > 0 && avail == last_avail) {
-                if (++stall_polls >= TTS_STALL_POLLS) draining = true;
-            } else {
+        size_t avail = xStreamBufferBytesAvailable(s_tts_buf);
+
+        if (!gate_open && avail > 0) {
+            /* Reply arriving: open the gate at 1 s banked or when the stream
+             * pauses 300 ms (short replies / end of burst). */
+            if (avail >= TTS_GATE_BYTES) {
+                gate_open = true;
+            } else if (avail == last_avail && ++stall_polls >= TTS_STALL_POLLS) {
+                gate_open = true;
+            } else if (avail != last_avail) {
                 stall_polls = 0;
             }
             last_avail = avail;
-            if (!draining) {
-                vTaskDelay(pdMS_TO_TICKS(20));
-                continue;
+        }
+
+        size_t got = 0;
+        if (gate_open) {
+            got = xStreamBufferReceive(s_tts_buf, play_chunk, sizeof(play_chunk), 0);
+            if (got == 0) {
+                gate_open   = false;   /* reply finished (or gap) — re-gate */
+                stall_polls = 0;
+                last_avail  = 0;
+            } else if (wakeword_tts_stop_requested()) {
+                got = 0;               /* discard; fall through to silence */
             }
-            stall_polls = 0;
-            /* Playback-start silence preamble (~128 ms of zeros): after an
-             * idle period the I2S TX ring holds stale samples and the PA is
-             * settling — the first real write flushed that out as a loud
-             * crackle at the start of every reply (owner-confirmed 2026-07-07
-             * at 75%% volume: "loud crackle then smooth").  Zeros push the
-             * stale ring out silently and give the amp time to settle. */
+        }
+        if (got == 0) {
+            /* No reply audio → feed silence.  The stream never stops. */
             memset(play_chunk, 0, sizeof(play_chunk));
-            audio_play(play_chunk, sizeof(play_chunk));   /* 4096 B = 128 ms */
+            got = sizeof(play_chunk);
         }
-        size_t got = xStreamBufferReceive(s_tts_buf, play_chunk, sizeof(play_chunk),
-                                          pdMS_TO_TICKS(100));
-        if (got > 0 && !wakeword_tts_stop_requested()) {
-            audio_play(play_chunk, got);
-        } else if (got == 0) {
-            /* Underrun (mid-reply stall) or normal end of reply — either way,
-             * go back to the fill phase so the next audio starts smooth.
-             * DIAGNOSTIC: count drain events while TTS is active; >1 per
-             * reply means the speaker ran dry mid-reply (starvation clicks);
-             * 1 = the normal end-of-reply drain.  Distinguishes buffer
-             * starvation from analog/amp distortion remotely. */
-            /* Unconditional: s_tts_playing clears when the server's idle
-             * frame lands (right after the BURST finishes), which is long
-             * before PLAYBACK ends — gating on it hid every tail drain. */
-            static int s_drains = 0;
-            s_drains++;
-            vt_remote_log("tts drain #%d avail_after=%u", s_drains,
-                          (unsigned)xStreamBufferBytesAvailable(s_tts_buf));
-            draining   = false;
-            last_avail = 0;
-        }
+        audio_play(play_chunk, got);   /* blocks ~128 ms per 4 KB — paces the loop */
     }
 }
 
@@ -744,7 +732,7 @@ static void voice_task(void *arg)
             /* VT_BUILD_TAG: bump on EVERY behavioural firmware change — the
              * only reliable remote build identifier (esp_app_desc stamps go
              * stale, and config-derived values collide across builds). */
-            #define VT_BUILD_TAG "volmap-0707e"
+            #define VT_BUILD_TAG "zerofill-0707h"
             vt_remote_log("boot: tag=" VT_BUILD_TAG " fw=%s reset=%d tts_buf=%u (remote-diag online)",
                           esp_app_get_description()->version,
                           (int)esp_reset_reason(),

@@ -581,6 +581,12 @@ async def voice_endpoint(ws: WebSocket) -> None:
                         sentences = _tts.split_for_speech(agent_text)
                         _synth_q: asyncio.Queue[bytes | None] = asyncio.Queue(maxsize=2)
 
+                        # 0.4 s of leading silence on the first sentence: any
+                        # residual playback-start transient on the device (amp
+                        # wake, ring flush, connection churn) lands in silence
+                        # instead of on the first spoken word.
+                        _lead_pad = b"\x00" * 12800
+
                         async def _synthesize_all() -> None:
                             # Bounded per sentence: a wedged synthesis (live
                             # incident 2026-07-03/04 — Kokoro hung fetching an
@@ -588,12 +594,16 @@ async def voice_endpoint(ws: WebSocket) -> None:
                             # in THINKING.  On timeout/failure, stop synthesis
                             # but still deliver the sentinel so the send loop
                             # exits and END + state:idle reach the device.
+                            _first = True
                             for _s in sentences:
                                 try:
                                     _pcm = await asyncio.wait_for(
                                         loop.run_in_executor(None, _tts.synthesize, _s),
                                         timeout=_TTS_SENTENCE_TIMEOUT_S,
                                     )
+                                    if _first:
+                                        _pcm = _lead_pad + _pcm
+                                        _first = False
                                 except Exception as _exc:
                                     logger.error(
                                         "TTS failed/timed out (%.0fs) for %r — "
