@@ -18,7 +18,7 @@ ESP32-S3-BOX-3
                                         │
                               voice-gateway (port 8765)
                                         │
-                            STT (faster-whisper base.en)
+                            STT (faster-whisper small.en)
                                         │
                               POST /forward?route_to=<agent>
                                         │
@@ -88,6 +88,24 @@ docker-compose -f docker/docker-compose.yml -p agentshroud --profile voice up -d
 curl http://localhost:8765/health   # → {"status":"ok"}
 ```
 
+#### Voice-gateway configuration (env vars, set in `docker/docker-compose.yml`)
+
+| Variable | Default | Purpose |
+|----------|---------|---------|
+| `VOICE_DEFAULT_AGENT` | `hermes` | Agent used when the device supplies no `?agent=` param |
+| `VOICE_MODEL` | `claude-haiku-4-5-20251001` | LLM for the `direct` fast path only |
+| `WHISPER_MODEL_SIZE` | `small.en` | faster-whisper STT model (pre-baked in the image) |
+| `KOKORO_VOICE` | `af_bella` | Kokoro TTS voice (falls back to `af_heart` if the pack is missing) |
+| `KOKORO_SPEED` | `0.92` | TTS speaking rate (1.0 = native) |
+| `VG_TTS_HEADROOM` | `0.75` | Digital gain applied to TTS samples (clipping guard) |
+| `VG_TTS_SENTENCE_TIMEOUT_S` | `30` | Per-sentence synthesis budget — a wedged synth can't strand the device in THINKING |
+| `VG_AGENT_READ_TIMEOUT_S` | `100` | Max wait for an agent reply before the spoken fallback |
+| `FIRMWARE_BIN_PATH` | `/firmware/build/voice_terminal.bin` | OTA binary path (bind-mounted, see **Updating the firmware**) |
+| `HF_HUB_OFFLINE` | `1` | Never download voice packs at runtime (VPN-proof) |
+
+The container needs `mem_limit: 4g` (Whisper + Kokoro resident) and belongs to both
+`agentshroud-internal` and `agentshroud-isolated` networks.
+
 ### 4. Enable Tailscale Funnel
 
 ```bash
@@ -122,6 +140,50 @@ The firmware will:
 
 ---
 
+## Updating the firmware (OTA — the normal deploy path)
+
+After the first USB flash the device updates **over the air**; no cable needed.
+The voice-gateway container serves the latest build: `docker-compose.yml`
+bind-mounts `firmware/voice-terminal/build/` read-only at `/firmware/build`, and
+`GET /firmware/bin` serves `voice_terminal.bin` with a SHA-256 `ETag`. On every
+boot the device compares that ETag against its running partition and, if it
+differs, downloads, self-flashes the inactive OTA slot, and reboots into it
+(with automatic bootloader rollback if the new image fails to boot).
+
+Deploy procedure:
+
+```bash
+cd firmware/voice-terminal
+source ~/esp/esp-idf/export.sh
+
+# 1. Bump the build tag — the ONLY reliable build identifier
+#    (esp_app_desc compile stamps go stale across rebuilds):
+#    edit main/app_main.c → #define VT_BUILD_TAG "<something-new>"
+
+# 2. Build, and verify by EXIT CODE (never by grepping output):
+idf.py build; echo "exit: $?"
+
+# 3. Nothing to copy — the bind mount already serves the new binary.
+#    Power-cycle the device (or wait for its next natural reboot).
+
+# 4. Confirm the device is running the new build:
+docker logs agentshroud-voice-gateway --tail 100 | grep "boot: tag="
+#    → [device …] boot: tag=<something-new> …
+```
+
+Notes:
+- The device's serial console is unavailable in normal operation. Its diagnostic
+  trace is mirrored over the WebSocket: watch `docker logs -f
+  agentshroud-voice-gateway` for `[device …]` lines (boot marker, VAD endpoints,
+  delivery attempts, errors).
+- A build that fails to boot is safe: the bootloader rolls back to the previous
+  slot and the OTA loop re-offers whatever `build/` currently serves — so the
+  recovery for a bad build is simply "build a good one".
+- Never change the BSP I2S DMA descriptor sizing — it exhausts internal DMA RAM
+  and the image will not boot (proven 2026-07-07).
+
+---
+
 ## Usage
 
 ### Wake word
@@ -131,8 +193,21 @@ Say **"Hi, ESP"** — the display enters LISTENING state.
 ### Tap to talk
 
 Tap anywhere on the touchscreen — same as the wake word.
-- **Short tap** (< 1 s): stays in LISTENING; speak after lifting finger (8 s VAD timeout)
-- **Long press** (≥ 1 s): ends the utterance when you release
+- **Tap, then speak**: the utterance ends automatically ~0.8 s after you stop
+  speaking (VAD silence endpointing; 15 s server-side safety cap)
+- **Tap while LISTENING**: ends the utterance immediately
+- **Tap while SPEAKING**: stops playback (server aborts the rest of the reply)
+
+### Voice volume
+
+Say **"set volume &lt;X&gt; percent"** (0–100, digits or words — "set volume
+eighty percent"). Chained commands work: *"Set volume 80. What time is it?"*
+applies the volume AND answers the question. The level persists across reboots
+and is mapped onto the codec's distortion-free range; changes ramp smoothly.
+
+> Audio quality note: the BOX-3 speaker faithfully reproduces USB supply noise.
+> If replies click or crackle on every word, **swap the charger first** — use a
+> dedicated 2 A+ wall brick, never a laptop/hub/monitor USB port.
 
 ### Physical button (top button — BSP_BUTTON_MAIN)
 
@@ -184,28 +259,34 @@ The device reconnects automatically with the new `?agent=` query parameter — n
 |---------|-------------|-----|
 | ESP shows "Reconnecting…" for > 60 s | DNS resolution of `*.ts.net` slow on first boot | Wait; it will retry. First attempt often fails (~22 s cycle). |
 | Token rejected (WS closes immediately) | Token mismatch | Check `wifi_credentials.h` matches `docker/secrets/voice_gateway_token.txt` exactly. |
-| STT produces empty transcript | Too much background noise / very short utterance | Speak closer; hold the button for > 1 s before speaking. |
-| TTS reply is silent | Piper model not found | Check `PIPER_MODEL` env var in docker-compose points to `.onnx` file. |
+| STT produces empty transcript | Too much background noise / very short utterance | Speak closer; speak for at least ~0.3 s. |
+| Clicking/static on every word | **Noisy USB power supply** (WiFi bursts modulate the rail; mimics firmware bugs) | Swap to a dedicated 2 A+ wall charger. Check power BEFORE touching playback code. |
+| TTS reply is silent / device wedged in THINKING | Kokoro voice pack missing (blocked download) | `HF_HUB_OFFLINE=1` + `af_heart` fallback should prevent this; check `docker logs agentshroud-voice-gateway` for synthesis timeouts. |
+| Long THINKING on hotspot | Upload retries over a lossy link | Normal: watch `delivery n/5` + `LISTEN resume at <offset>` lines — resume sends only the un-delivered tail. |
+| Spoken "I'm having trouble connecting" | Agent exceeded `VG_AGENT_READ_TIMEOUT_S` (100 s) | Retry; if persistent check `docker logs agentshroud-gateway` for `Timeout forwarding to hermes`. |
+| Reply audio starts a few seconds after THINKING ends | By design | Playback is END-gated: the whole reply is buffered before the speaker starts, so audio never competes with TLS receive. |
 | OpenClaw spoken but no Telegram reply | OpenClaw container down | `docker logs agentshroud-openclaw` |
 | Hermes takes > 30 s | Hermes making web search calls | Expected for agentic tasks; `direct` is faster for simple Q&A. |
+| Device trace needed (no USB) | — | `docker logs -f agentshroud-voice-gateway` — all `[device …]` lines are the firmware's remote-diag mirror. |
 
 ---
 
-## Firmware serial log — success pattern
+## Success pattern — `docker logs agentshroud-voice-gateway`
 
 ```
-I (5432) vt: WiFi connected — IP 192.168.x.y
-I (6891) vt: Connecting to voice gateway: wss://marvin.tail240ea8.ts.net/voice?token=...
-I (28764) wsc: WebSocket connected
-I (28764) vt: Ready. Voice terminal active → agent: Hermes
-I (28764) ui_face: Agent label → Hermes
-W (31000) wakeword: WakeNet: 'Hi, ESP' detected
-I (31100) vt: Utterance started
-I (31450) vt: Utterance ended
-I (32100) voice_gateway.server: Transcript: 'what time is it'
-I (34200) voice_gateway.server: Agent reply: 'It is 2:15 PM Eastern time.'
-I (36300) vt: TTS playback complete → auto-listen window open
+… | [device …] boot: tag=playdrive-0707m fw=… reset=1 tts_buf=1048576 (remote-diag online)
+… | [device …] VAD endpoint: speech=1312ms silence=800ms — ending
+… | [device …] delivery 1/5: dropped at 135168/258048 bytes — retrying   ← lossy link, normal
+… | LISTEN resume at 126976 (126976 cached bytes) from …                 ← resume, not restart
+… | Transcript: 'What time is it?'
+… | Agent reply: "It's Tuesday, July 07, 2026 at 1:24 PM EDT."
+… | [device …] utterance DELIVERED: 258048 bytes (attempt 2)
 ```
+
+A healthy turn: VAD endpoint ~0.8 s after you stop speaking → delivery (with
+resume retries on a lossy link) → transcript → agent reply → the device buffers
+the full TTS reply, then plays it with the radio quiet. Follow-ups require a
+tap or "Hi, ESP" (auto-listen is disabled — no echo cancellation on-device).
 
 ---
 

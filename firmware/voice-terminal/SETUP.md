@@ -222,7 +222,7 @@ v1.1.3 uses the old button API; v4.x has breaking changes.
 
 ---
 
-## 6. Tailscale — secure ESP→Hermes link ⏳ PENDING (Phase 5)
+## 6. Tailscale — secure ESP→Hermes link ✅ LIVE (see docs/integrations/voice-terminal-esp32-s3.md)
 
 > This section documents what to do **when Phase 5 firmware work begins**. No code
 > changes are needed until then.
@@ -241,7 +241,7 @@ Voice Gateway port over the encrypted tunnel.
 4. Paste it into the firmware (§6c below); store the key in 1Password "Agent Shroud
    Bot Credentials" vault
 
-### 6c. Add MicroLink to the firmware ⏳
+### 6c. Add MicroLink to the firmware (SUPERSEDED — production uses Tailscale Funnel, no on-device client)
 
 ```bash
 # In firmware/voice-terminal/components/ (create dir first):
@@ -274,7 +274,7 @@ static void tailscale_init(void) {
 - Suppress the aggressive heartbeat that otherwise drops the link on mobile
 - Check MicroLink's Kconfig for current option names
 
-### 6d. Expose the Voice Gateway on marvin ⏳
+### 6d. Expose the Voice Gateway on marvin ✅ LIVE (`tailscale serve --bg 8765`)
 
 The Voice Gateway (port 8765) doesn't exist yet as a container and isn't in the
 Tailscale serve config. When it does:
@@ -307,7 +307,7 @@ The BOX-3 should not have access to the rest of the tailnet:
 
 ---
 
-## 7. Voice Gateway — server-side ⏳ PENDING (Phase 5)
+## 7. Voice Gateway — server-side ✅ LIVE (install/config/OTA: docs/integrations/voice-terminal-esp32-s3.md)
 
 The Voice Gateway is a Python service that will live at `voice_gateway/` in the
 AgentShroud repo and run as a Docker container on `marvin`.
@@ -329,7 +329,7 @@ pause for owner approval automatically; the BOX-3 screen will show "Awaiting app
 
 ---
 
-## 8. Connect to Hermes (governed path) ⏳ PENDING
+## 8. Connect to Hermes (governed path) ✅ LIVE — Hermes is the boot-default agent
 
 There is a **schema gap** (documented at §2.2 of the design guide): the generic
 `POST /forward` payload does not match Hermes's OpenAI-compatible `/v1/chat/completions`
