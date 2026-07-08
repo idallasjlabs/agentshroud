@@ -1141,9 +1141,10 @@ def test_ws_one_sentence_reply_unchanged(monkeypatch):
 async def test_call_agent_uses_structured_timeout(monkeypatch):
     """_call_agent must pass a structured httpx.Timeout to AsyncClient.
 
-    The read deadline (35 s) is intentionally shorter than the gateway's own
-    internal /forward timeout (120 s) so the ESP returns to IDLE quickly on a
-    hung agent instead of sitting in THINKING for two minutes.
+    The read deadline is env-tunable (VG_AGENT_READ_TIMEOUT_S, default 100 s):
+    Hermes is the owner's admin voice channel, so a slow real answer beats a
+    fast fallback — but the deadline must stay under the gateway's own
+    /forward timeout (120 s) so its graceful body is still caught.
     """
     import httpx
     import voice_gateway.server as srv
@@ -1172,7 +1173,10 @@ async def test_call_agent_uses_structured_timeout(monkeypatch):
     assert isinstance(t, httpx.Timeout), (
         f"Expected httpx.Timeout instance, got {type(t)}: {t!r}"
     )
-    assert t.read == 35.0, f"Expected read=35.0 (ESP THINKING deadline), got {t.read}"
+    assert t.read == 100.0, (
+        f"Expected read=100.0 (VG_AGENT_READ_TIMEOUT_S default, < gateway's "
+        f"120 s forward window), got {t.read}"
+    )
     assert t.connect == 10.0, f"Expected connect=10.0, got {t.connect}"
 
 
@@ -1772,3 +1776,719 @@ async def test_ws_tts_pipeline_sends_all_sentences(monkeypatch):
     assert any(
         "idle" in t for t in text_received
     ), "state:idle not sent after multi-sentence TTS"
+
+
+# ── Server-side LISTENING safety timeout ─────────────────────────────────────
+
+
+@pytest.mark.asyncio
+async def test_listen_without_end_times_out(monkeypatch):
+    """If a device sends LISTEN but never sends END (crash / stuck firmware), the
+    server must self-heal: the _LISTEN_MAX_S deadline forces END processing and the
+    session must return to IDLE rather than hanging indefinitely.
+
+    Regression test for the server-side gap identified after the face-update
+    regression: a device stuck in LISTENING (never sending END) would wedge the
+    gateway session permanently.
+    """
+    from unittest.mock import AsyncMock, MagicMock
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    # Zero-second timeout so the deadline is always in the past on the next loop
+    # iteration — no real waiting required, test completes instantly.
+    monkeypatch.setattr(srv, "_LISTEN_MAX_S", 0.0)
+
+    # Empty transcript → server goes THINKING → IDLE without needing TTS mock.
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "")
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+
+    ws = MagicMock()
+    ws.client = MagicMock()
+    ws.client.__str__ = lambda s: "10.0.0.1:9999"
+    ws.query_params = MagicMock()
+    ws.query_params.get = lambda k, d="": d
+    ws.accept = AsyncMock()
+    ws.close = AsyncMock()
+    ws.send_text = AsyncMock()
+    ws.send_bytes = AsyncMock()
+
+    # Sequence: LISTEN (no END ever sent) → server times out → back to IDLE →
+    # next ws.receive() raises WebSocketDisconnect to exit the handler cleanly.
+    ws.receive = AsyncMock(side_effect=[
+        {"text": "LISTEN", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    await srv.voice_endpoint(ws)
+
+    # Extract the sequence of states the server sent.
+    sent_texts = [call.args[0] for call in ws.send_text.call_args_list]
+    states = []
+    for t in sent_texts:
+        try:
+            states.append(json.loads(t).get("state"))
+        except Exception:
+            pass
+
+    assert "listening" in states, (
+        "Expected state:listening after LISTEN; server may not have entered LISTENING"
+    )
+    assert "thinking" in states, (
+        "Server must transition to THINKING when the timeout fires (not stay in LISTENING)"
+    )
+
+
+@pytest.mark.asyncio
+async def test_pcm_buffer_bounded(monkeypatch):
+    """pcm_chunks must stop growing once _PCM_MAX_BYTES is reached.
+
+    A device that streams audio without sending END (stuck firmware, OOM scenario)
+    must not cause the server to buffer unbounded PCM.  The STT function should
+    receive at most _PCM_MAX_BYTES bytes.
+
+    Regression test for the memory-safety gap identified in the same audit.
+    """
+    from unittest.mock import AsyncMock, MagicMock
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    cap = 200  # tiny cap so the test is fast; 200 bytes ≪ 1000 bytes streamed
+    monkeypatch.setattr(srv, "_PCM_MAX_BYTES", cap)
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+
+    received_bytes: list[int] = []
+
+    def _capture_transcribe(pcm: bytes) -> str:
+        received_bytes.append(len(pcm))
+        return ""  # empty transcript → IDLE, no TTS needed
+
+    monkeypatch.setattr(stt_mod, "transcribe", _capture_transcribe)
+
+    # 10 chunks × 100 bytes = 1000 bytes total >> cap of 200 bytes.
+    chunk = b"\x00\x01" * 50
+
+    ws = MagicMock()
+    ws.client = MagicMock()
+    ws.client.__str__ = lambda s: "10.0.0.1:9998"
+    ws.query_params = MagicMock()
+    ws.query_params.get = lambda k, d="": d
+    ws.accept = AsyncMock()
+    ws.close = AsyncMock()
+    ws.send_text = AsyncMock()
+    ws.send_bytes = AsyncMock()
+
+    ws.receive = AsyncMock(side_effect=[
+        {"text": "LISTEN", "bytes": None},
+        *[{"bytes": chunk, "text": None} for _ in range(10)],  # 1000 bytes
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    await srv.voice_endpoint(ws)
+
+    assert received_bytes, "transcribe() was never called — END handler did not execute"
+    assert received_bytes[0] <= cap, (
+        f"STT received {received_bytes[0]} bytes, expected ≤ {cap} (cap = {cap}). "
+        f"PCM buffer was not bounded."
+    )
+
+
+# ── STOP protocol (tap-to-stop during SPEAKING) ──────────────────────────────
+
+
+def _mock_ws(receive_side_effect):
+    """Build a MagicMock WebSocket for direct voice_endpoint() tests."""
+    from unittest.mock import AsyncMock, MagicMock
+
+    ws = MagicMock()
+    ws.client = MagicMock()
+    ws.client.__str__ = lambda s: "10.0.0.1:9997"
+    ws.query_params = MagicMock()
+    ws.query_params.get = lambda k, d="": d
+    ws.accept = AsyncMock()
+    ws.close = AsyncMock()
+    ws.send_text = AsyncMock()
+    ws.send_bytes = AsyncMock()
+    ws.receive = AsyncMock(side_effect=receive_side_effect)
+    return ws
+
+
+@pytest.mark.asyncio
+async def test_ws_stop_during_speaking_aborts_tts(monkeypatch):
+    """A device 'STOP' text frame during the TTS send phase must abort the
+    remaining PCM stream and return the session to IDLE immediately.
+
+    Firmware context: tap-to-stop during SPEAKING previously only muted the
+    speaker locally; the server kept streaming the full reply (8-30 s), during
+    which the device rejected all new utterances.  The server must read the
+    socket concurrently with the send loop and honour STOP mid-stream.
+    """
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "tell me a story")
+
+    reply = "First sentence here.  Second sentence here.  Third sentence here."
+
+    async def _mock_agent(transcript, agent):
+        return reply
+
+    monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+
+    sentence_pcm = {
+        "First sentence here.": b"\x01\x00" * 100,
+        "Second sentence here.": b"\x02\x00" * 100,
+        "Third sentence here.": b"\x03\x00" * 100,
+    }
+    monkeypatch.setattr(
+        tts_mod, "synthesize", lambda t: sentence_pcm.get(t, b"\xff\x00" * 4)
+    )
+
+    # STOP is queued for whichever reader asks next — with the concurrent
+    # stop-watcher in place it is consumed BEFORE/WHILE the PCM stream is sent,
+    # aborting the remaining sentences.
+    ws = _mock_ws([
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": _pcm_bytes(), "text": None},
+        {"text": "END", "bytes": None},
+        {"text": "STOP", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    await srv.voice_endpoint(ws)
+
+    sent_pcm = b"".join(c.args[0] for c in ws.send_bytes.call_args_list)
+    assert b"\x03\x00" * 100 not in sent_pcm, (
+        "Third sentence PCM was transmitted — STOP did not abort the TTS stream"
+    )
+
+    # END + state:idle must still be sent so the device re-arms.
+    sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
+    assert "END" in sent_texts, "END frame missing after STOP abort"
+    states = []
+    for t in sent_texts:
+        try:
+            states.append(json.loads(t).get("state"))
+        except Exception:
+            pass
+    assert states[-1] == "idle", (
+        f"Session must end at state:idle after STOP; state sequence was {states}"
+    )
+
+
+@pytest.mark.asyncio
+async def test_ws_stale_stop_when_idle_is_ignored(monkeypatch):
+    """A STOP arriving outside SPEAKING (e.g. the tap landed just as TTS ended)
+    must be ignored without crashing the session loop."""
+    import voice_gateway.server as srv
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+
+    ws = _mock_ws([
+        {"text": "STOP", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    await srv.voice_endpoint(ws)  # must not raise
+
+    sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
+    assert any('"idle"' in t for t in sent_texts), "initial idle state missing"
+
+
+@pytest.mark.asyncio
+async def test_ws_device_log_during_speaking_still_recorded(monkeypatch, caplog):
+    """Remote-diag {"log":...} frames arriving DURING the TTS send phase must be
+    logged, not silently swallowed by the concurrent stop-watcher."""
+    import logging
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "hello")
+
+    async def _mock_agent(transcript, agent):
+        return "Only sentence."
+
+    monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+    monkeypatch.setattr(tts_mod, "synthesize", lambda t: b"\x01\x00" * 100)
+
+    ws = _mock_ws([
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": _pcm_bytes(), "text": None},
+        {"text": "END", "bytes": None},
+        {"text": '{"log":"PTT START ignored — triggered=1 tts=1"}', "bytes": None},
+        {"text": "STOP", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    with caplog.at_level(logging.INFO, logger="voice_gateway.server"):
+        await srv.voice_endpoint(ws)
+
+    assert any("PTT START ignored" in r.message for r in caplog.records), (
+        "device log line arriving during SPEAKING was swallowed"
+    )
+
+
+@pytest.mark.asyncio
+async def test_ws_hung_tts_synthesis_still_returns_idle(monkeypatch):
+    """A wedged TTS synthesis (e.g. blocked voice-pack download — live incident
+    2026-07-03/04) must not strand the device in THINKING: the per-sentence
+    timeout aborts synthesis and the session still sends END + state:idle."""
+    import time
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_TTS_SENTENCE_TIMEOUT_S", 0.05)
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "hello")
+
+    async def _mock_agent(transcript, agent):
+        return "Only sentence."
+
+    monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+
+    def _hung_synthesize(t):
+        time.sleep(0.5)  # far beyond the 0.05 s budget
+        return b"\x01\x00" * 10
+
+    monkeypatch.setattr(tts_mod, "synthesize", _hung_synthesize)
+
+    ws = _mock_ws([
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": _pcm_bytes(), "text": None},
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    await srv.voice_endpoint(ws)
+
+    sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
+    assert "END" in sent_texts, "END frame missing after TTS timeout"
+    states = []
+    for t in sent_texts:
+        try:
+            states.append(json.loads(t).get("state"))
+        except Exception:
+            pass
+    assert states[-1] == "idle", (
+        f"Device must be released to idle after a hung synthesis; states={states}"
+    )
+
+
+# ── Spoken volume command ─────────────────────────────────────────────────────
+
+
+def test_parse_volume_command_forms():
+    """Digit, percent, word-number and compound forms; clamping; non-commands."""
+    import voice_gateway.server as srv
+
+    cases = [
+        ("Set volume to 80%.", 80),
+        ("set the volume 50", 50),
+        ("Set volume to 100 percent", 100),
+        ("Set volume to eighty percent.", 80),
+        ("set volume to twenty five", 25),
+        ("Set volume to zero.", 0),
+        ("Set volume, 90%. Who are you?", 90),   # Whisper punctuation (live 2026-07-07)
+        ("Set volume to 150%", 100),      # clamped
+        ("What time is it?", None),
+        ("The volume of a sphere is...", None),
+    ]
+    for text, expected in cases:
+        assert srv._parse_volume_command(text) == expected, f"{text!r}"
+
+
+@pytest.mark.asyncio
+async def test_ws_volume_command_intercepted(monkeypatch):
+    """'set volume X%' must NOT reach the agent: the server sends a
+    {"cmd":"set_volume","value":N} control frame to the device and speaks a
+    confirmation via the normal TTS path."""
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "Set volume to 80%.")
+
+    async def _agent_must_not_be_called(transcript, agent):
+        raise AssertionError("volume command must not be routed to the agent")
+
+    monkeypatch.setattr(srv, "_call_agent", _agent_must_not_be_called)
+
+    spoken: list = []
+
+    def _capture_synth(t):
+        spoken.append(t)
+        return b"\x01\x00" * 50
+
+    monkeypatch.setattr(tts_mod, "synthesize", _capture_synth)
+
+    ws = _mock_ws([
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": _pcm_bytes(), "text": None},
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    await srv.voice_endpoint(ws)
+
+    sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
+    ctrl = [t for t in sent_texts if '"cmd"' in t]
+    assert ctrl, "no control frame sent for the volume command"
+    assert json.loads(ctrl[0]) == {"cmd": "set_volume", "value": 80}
+    assert any("80 percent" in t for t in spoken), (
+        f"confirmation not spoken; synthesized: {spoken}"
+    )
+    states = []
+    for t in sent_texts:
+        try:
+            states.append(json.loads(t).get("state"))
+        except Exception:
+            pass
+    assert states[-1] == "idle"
+
+
+@pytest.mark.asyncio
+async def test_ws_volume_command_with_chained_question(monkeypatch):
+    """'Set volume 80. What time is it?' must apply the volume AND route the
+    remaining question to the agent, speaking confirmation + answer together
+    (owner hit the swallowed-question form three times in live use)."""
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(
+        stt_mod, "transcribe", lambda b: "Set volume 80. What time is it?"
+    )
+
+    agent_calls: list = []
+
+    async def _mock_agent(transcript, agent):
+        agent_calls.append(transcript)
+        return "It is noon."
+
+    monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+
+    spoken: list = []
+
+    def _capture_synth(t):
+        spoken.append(t)
+        return b"\x01\x00" * 50
+
+    monkeypatch.setattr(tts_mod, "synthesize", _capture_synth)
+
+    ws = _mock_ws([
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": _pcm_bytes(), "text": None},
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+
+    await srv.voice_endpoint(ws)
+
+    sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
+    ctrl = [t for t in sent_texts if '"cmd"' in t]
+    assert ctrl and json.loads(ctrl[0])["value"] == 80
+    assert agent_calls, "chained question was swallowed — agent never called"
+    assert "volume" not in agent_calls[0].lower(), (
+        f"volume command leaked into the agent query: {agent_calls[0]!r}"
+    )
+    assert "time" in agent_calls[0].lower()
+    _all_spoken = " ".join(spoken)
+    assert "80 percent" in _all_spoken and "noon" in _all_spoken, (
+        f"confirmation + answer not both spoken: {spoken}"
+    )
+
+
+# ── TTS resume-on-reconnect ───────────────────────────────────────────────────
+
+
+@pytest.fixture(autouse=True)
+def _reset_reply_resume():
+    import voice_gateway.server as srv
+
+    for attr in ("_reply_resume", "_utterance_resume"):
+        if hasattr(srv, attr):
+            setattr(srv, attr, None)
+    yield
+    for attr in ("_reply_resume", "_utterance_resume"):
+        if hasattr(srv, attr):
+            setattr(srv, attr, None)
+
+
+# ── Uplink utterance resume (LISTEN <offset>) ────────────────────────────────
+
+
+@pytest.mark.asyncio
+async def test_listen_offset_resumes_partial_upload(monkeypatch):
+    """A drop mid-upload must not force a full resend: the next connection
+    sends 'LISTEN <offset>' and only the remainder — STT still receives ONE
+    complete utterance.  (Full restarts were the dominant THINKING-time cost
+    on the flaky hotspot link.)"""
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+
+    received: list = []
+
+    def _capture_transcribe(pcm: bytes) -> str:
+        received.append(pcm)
+        return ""  # empty transcript → straight to idle, no TTS needed
+
+    monkeypatch.setattr(stt_mod, "transcribe", _capture_transcribe)
+
+    part1 = b"\x01\x02" * 2048   # 4096 B
+    part2 = b"\x03\x04" * 2048   # 4096 B
+
+    # Session 1: LISTEN + first chunk, then the link dies (no END).
+    ws1 = _mock_ws([
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": part1, "text": None},
+        WebSocketDisconnect(code=1006),
+    ])
+    await srv.voice_endpoint(ws1)
+    assert srv._utterance_resume is not None, "utterance cache not preserved"
+    assert bytes(srv._utterance_resume["pcm"]) == part1
+
+    # Session 2: resume from len(part1) and send the remainder + END.
+    ws2 = _mock_ws([
+        {"text": f"LISTEN {len(part1)}", "bytes": None},
+        {"bytes": part2, "text": None},
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+    await srv.voice_endpoint(ws2)
+
+    assert received, "STT never ran on the resumed utterance"
+    assert received[0] == part1 + part2, (
+        f"STT got {len(received[0])} bytes, expected the full "
+        f"{len(part1) + len(part2)}-byte utterance"
+    )
+    assert srv._utterance_resume is None, "cache must clear on END"
+
+
+@pytest.mark.asyncio
+async def test_bare_listen_starts_fresh(monkeypatch):
+    """A bare LISTEN after a stale partial upload must NOT prepend old audio."""
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    received: list = []
+    monkeypatch.setattr(
+        stt_mod, "transcribe", lambda b: received.append(b) or ""
+    )
+
+    srv._utterance_resume = {"pcm": bytearray(b"\xAA" * 1000), "ts": 0.0}
+
+    fresh = b"\x05\x06" * 512
+    ws = _mock_ws([
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": fresh, "text": None},
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+    await srv.voice_endpoint(ws)
+
+    assert received and received[0] == fresh, "stale cache leaked into a fresh utterance"
+
+
+@pytest.mark.asyncio
+async def test_listen_offset_with_stale_cache_degrades_to_fresh(monkeypatch):
+    """LISTEN <offset> with an expired cache must behave like a fresh LISTEN
+    (the device's resent-remainder is all the server gets — better a short
+    utterance than a crash or stale-audio corruption)."""
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    received: list = []
+    monkeypatch.setattr(
+        stt_mod, "transcribe", lambda b: received.append(b) or ""
+    )
+
+    srv._utterance_resume = {"pcm": bytearray(b"\xAA" * 1000), "ts": -10_000.0}
+
+    tail = b"\x07\x08" * 512
+    ws = _mock_ws([
+        {"text": "LISTEN 1000", "bytes": None},
+        {"bytes": tail, "text": None},
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1000),
+    ])
+    await srv.voice_endpoint(ws)
+
+    assert received and received[0] == tail, "stale cache must not be prepended"
+
+
+@pytest.mark.asyncio
+async def test_tts_resume_after_mid_stream_disconnect(monkeypatch):
+    """If the socket dies during the TTS downlink, the NEXT connection must
+    receive the un-sent remainder (+END +idle) so the reply is not lost."""
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "hello")
+
+    async def _mock_agent(transcript, agent):
+        return "Only sentence."
+
+    monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+    reply_pcm = bytes(range(256)) * 128  # 32 KB, recognisable bytes
+    monkeypatch.setattr(tts_mod, "synthesize", lambda t: reply_pcm)
+
+    # Session 1: dies after the first PCM frame is sent.
+    ws1 = _mock_ws([
+        {"text": "LISTEN", "bytes": None},
+        {"bytes": _pcm_bytes(), "text": None},
+        {"text": "END", "bytes": None},
+        WebSocketDisconnect(code=1006),
+    ])
+    frames1: list = []
+
+    async def _send_bytes_then_die(frame):
+        frames1.append(frame)
+        if len(frames1) >= 1:
+            raise RuntimeError("socket died mid-stream")
+
+    ws1.send_bytes = _send_bytes_then_die
+    await srv.voice_endpoint(ws1)
+
+    assert srv._reply_resume is not None, "resume state not preserved on drop"
+
+    # Session 2 (reconnect): should receive the remainder immediately.
+    ws2 = _mock_ws([WebSocketDisconnect(code=1000)])
+    await srv.voice_endpoint(ws2)
+
+    sent2 = b"".join(c.args[0] for c in ws2.send_bytes.call_args_list)
+    assert len(sent2) > 0, "no resumed PCM sent on reconnect"
+    # Remainder must cover the reply tail (last bytes of reply_pcm).
+    assert sent2.endswith(reply_pcm[-64:]), "resumed stream missing the reply tail"
+    texts2 = [c.args[0] for c in ws2.send_text.call_args_list]
+    assert "END" in texts2
+    assert srv._reply_resume is None, "resume state must clear after replay"
+
+
+@pytest.mark.asyncio
+async def test_tts_resume_stale_cache_ignored(monkeypatch):
+    """A resume cache older than the freshness window must not replay."""
+    import voice_gateway.server as srv
+    from fastapi.websockets import WebSocketDisconnect
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    srv._reply_resume = {
+        "pcm": bytearray(b"\x01\x00" * 100),
+        "sent": 0,
+        "ts": -10_000.0,  # far in the past on the monotonic clock
+    }
+
+    ws = _mock_ws([WebSocketDisconnect(code=1000)])
+    await srv.voice_endpoint(ws)
+
+    assert ws.send_bytes.call_args_list == [], "stale cache must not replay"
+
+
+# ── TTS edge fade (sentence-boundary crossfade) ──────────────────────────────
+
+
+def test_tts_synthesize_fades_sentence_edges(monkeypatch):
+    """Each synthesized sentence must ramp in/out over ~5 ms so per-sentence
+    Kokoro output joins without DC/level steps (audible clicks)."""
+    import numpy as np
+
+    import voice_gateway.tts as tts_mod
+
+    class _FakePipeline:
+        def __call__(self, text, voice=None, speed=None):
+            # Constant full-scale-ish signal, 0.5 s at 24 kHz.
+            yield None, None, np.full(12000, 0.9, dtype=np.float32)
+
+    monkeypatch.setattr(tts_mod, "_pipeline", _FakePipeline())
+
+    pcm = tts_mod.synthesize("Constant tone.")
+    samples = np.frombuffer(pcm, dtype="<i2")
+
+    assert abs(int(samples[0])) < 1500, f"first sample not faded in: {samples[0]}"
+    assert abs(int(samples[-1])) < 1500, f"last sample not faded out: {samples[-1]}"
+    mid = len(samples) // 2
+    assert abs(int(samples[mid])) > 15000, "mid-signal amplitude must be untouched"
+
+
+# ── OTA firmware endpoint ─────────────────────────────────────────────────────
+
+
+def test_firmware_bin_auth_and_etag(tmp_path, monkeypatch):
+    """GET /firmware/bin: 401 on bad token, 200 + ETag on good token, HEAD same ETag.
+
+    The /firmware/bin route was previously untested (0% coverage).  This test covers
+    the three observable behaviours the ESP32 OTA client depends on:
+      1. Auth gate: wrong token → 401 (no firmware leaked)
+      2. Correct token → 200 + ETag header (SHA-256 of file, quoted)
+      3. HEAD verb → same ETag (allows cheap OTA mismatch check without download)
+    """
+    import voice_gateway.server as srv
+
+    # Write a small fake firmware binary.
+    fake_bin = tmp_path / "voice_terminal.bin"
+    fake_bin.write_bytes(b"\xAA\xBB\xCC\xDD" * 64)
+
+    monkeypatch.setattr(srv, "_FIRMWARE_BIN_PATH", fake_bin)
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "test-ota-secret")
+    # Reset ETag cache so the test is independent of prior state.
+    monkeypatch.setattr(srv, "_fw_etag", "")
+    monkeypatch.setattr(srv, "_fw_mtime", 0.0)
+
+    # Use TestClient WITHOUT the context manager so the lifespan (which loads
+    # STT/TTS models) is not triggered — the firmware route needs neither.
+    # This matches the pattern used by test_health_returns_ok.
+    client = TestClient(app)
+
+    # 1 — Wrong token must produce 401 (no firmware body).
+    resp = client.get("/firmware/bin?token=bad-token")
+    assert resp.status_code == 401, f"Expected 401 for bad token, got {resp.status_code}"
+
+    # 2 — Correct token: 200 with a quoted SHA-256 ETag.
+    resp = client.get("/firmware/bin?token=test-ota-secret")
+    assert resp.status_code == 200, f"Expected 200, got {resp.status_code}"
+    # Starlette normalises header names to lowercase in TestClient responses.
+    etag = resp.headers.get("etag") or resp.headers.get("ETag")
+    assert etag is not None, "ETag header missing from /firmware/bin response"
+    assert etag.startswith('"') and etag.endswith('"'), (
+        f"ETag must be a quoted string, got {etag!r}"
+    )
+    sha_hex = etag.strip('"')
+    assert len(sha_hex) == 64, f"ETag inner value must be 64-char SHA-256 hex, got {sha_hex!r}"
+    assert resp.content == fake_bin.read_bytes(), "Response body must match the firmware file"
+
+    # 3 — HEAD returns the same ETag (no download needed if they match).
+    resp = client.head("/firmware/bin?token=test-ota-secret")
+    assert resp.status_code == 200, f"HEAD expected 200, got {resp.status_code}"
+    head_etag = resp.headers.get("etag") or resp.headers.get("ETag")
+    assert head_etag == etag, (
+        f"HEAD ETag {head_etag!r} ≠ GET ETag {etag!r} — OTA would always re-download"
+    )

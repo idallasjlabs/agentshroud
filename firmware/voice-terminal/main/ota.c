@@ -42,21 +42,33 @@ static void _ws_to_https_base(const char *ws_url, char *out, size_t out_len)
     snprintf(out, out_len, "%s%.*s", scheme, host_len, host_start);
 }
 
-static bool _nvs_get_etag(char *out, size_t len)
+/* The stored ETag is only trustworthy if we are ACTUALLY RUNNING the
+ * partition it was flashed into.  Storing the etag alone stranded a device:
+ * the etag was written just before esp_restart(), but the new image never
+ * ended up running (failed/rolled-back boot) — every subsequent boot then
+ * compared the served ETag against the stored one, said "Firmware current",
+ * and never downloaded again.  Binding the etag to the flashed partition's
+ * address makes that state self-healing: running != recorded → re-download. */
+static bool _nvs_get_etag(char *out, size_t len, uint32_t *part_addr)
 {
     nvs_handle_t h;
     if (nvs_open("ota_state", NVS_READONLY, &h) != ESP_OK) return false;
     size_t get_len = len;
     bool ok = (nvs_get_str(h, "etag", out, &get_len) == ESP_OK);
+    if (ok && nvs_get_u32(h, "part_addr", part_addr) != ESP_OK) {
+        *part_addr = 0;   /* legacy entry without address → force re-check */
+        ok = false;
+    }
     nvs_close(h);
     return ok;
 }
 
-static void _nvs_set_etag(const char *etag)
+static void _nvs_set_etag(const char *etag, uint32_t part_addr)
 {
     nvs_handle_t h;
     if (nvs_open("ota_state", NVS_READWRITE, &h) != ESP_OK) return;
     nvs_set_str(h, "etag", etag);
+    nvs_set_u32(h, "part_addr", part_addr);
     nvs_commit(h);
     nvs_close(h);
 }
@@ -97,14 +109,18 @@ esp_err_t ota_check(const char *ws_url, const char *token)
     }
     ESP_LOGI(TAG, "Remote ETag: %s", s_etag_buf);
 
-    /* Compare with stored ETag ──────────────────────────────────────────── */
+    /* Compare with stored ETag — trusted ONLY when the running partition is
+     * the one that etag was flashed into (see _nvs_get_etag). ───────────── */
     char stored[128] = {0};
-    if (_nvs_get_etag(stored, sizeof(stored)) &&
-        strcmp(stored, s_etag_buf) == 0) {
+    uint32_t stored_addr = 0;
+    const esp_partition_t *running = esp_ota_get_running_partition();
+    if (_nvs_get_etag(stored, sizeof(stored), &stored_addr) &&
+        strcmp(stored, s_etag_buf) == 0 &&
+        running && running->address == stored_addr) {
         ESP_LOGI(TAG, "Firmware current");
         return ESP_OK;
     }
-    ESP_LOGI(TAG, "ETag mismatch — starting OTA download");
+    ESP_LOGI(TAG, "ETag mismatch (or partition mismatch) — starting OTA download");
 
     /* GET: stream binary into the inactive OTA partition ────────────────── */
     const esp_partition_t *update_part = esp_ota_get_next_update_partition(NULL);
@@ -151,11 +167,18 @@ esp_err_t ota_check(const char *ws_url, const char *token)
         return ESP_OK;
     }
 
-    char buf[4096];
+    char *buf = malloc(4096);
+    if (!buf) {
+        ESP_LOGE(TAG, "OTA: out of memory for download buffer");
+        esp_http_client_close(client);
+        esp_http_client_cleanup(client);
+        esp_ota_abort(ota_handle);
+        return ESP_OK;
+    }
     int total = 0;
     int rd;
     bool ok = true;
-    while ((rd = esp_http_client_read(client, buf, sizeof(buf))) > 0) {
+    while ((rd = esp_http_client_read(client, buf, 4096)) > 0) {
         if (esp_ota_write(ota_handle, buf, rd) != ESP_OK) {
             ESP_LOGE(TAG, "esp_ota_write failed at byte %d", total);
             ok = false;
@@ -165,6 +188,7 @@ esp_err_t ota_check(const char *ws_url, const char *token)
     }
     esp_http_client_close(client);
     esp_http_client_cleanup(client);
+    free(buf);
 
     if (!ok || total == 0) {
         ESP_LOGE(TAG, "OTA download incomplete (%d bytes)", total);
@@ -184,7 +208,7 @@ esp_err_t ota_check(const char *ws_url, const char *token)
         return ESP_OK;
     }
 
-    _nvs_set_etag(s_etag_buf);
+    _nvs_set_etag(s_etag_buf, update_part->address);
     ESP_LOGI(TAG, "OTA complete — rebooting into new firmware");
     esp_restart();
     return ESP_OK;  /* unreachable */

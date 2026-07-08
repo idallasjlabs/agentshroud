@@ -16,6 +16,7 @@ yet, so it doesn't use this server until FINAL.
 from __future__ import annotations
 
 import asyncio
+import concurrent.futures
 import logging
 import os
 import socket
@@ -121,6 +122,15 @@ class HTTPConnectProxy:
         # bot_id → Docker service hostname, used for lazy reverse-DNS attribution.
         self._bot_hostnames: dict = bot_hostnames or {}
         self._server: Optional[asyncio.Server] = None
+        # Dedicated single-thread executor for clamscan runs.  NEVER share the
+        # default executor with LLM upstream calls: each clamscan holds a
+        # thread 30-60 s (full DB cold-load) — on the shared pool this starved
+        # LLM forwards by 35-60 s per request (live incident 2026-07-04).
+        # max_workers=1 also caps concurrency so at most one ~1.3 GB clamscan
+        # process exists at a time (their overlap OOM-killed the container).
+        self._clamav_executor = concurrent.futures.ThreadPoolExecutor(
+            max_workers=1, thread_name_prefix="clamav-scan"
+        )
         self._stats: dict = {
             "total": 0,
             "allowed": 0,
@@ -432,7 +442,7 @@ class HTTPConnectProxy:
         # downloaded file data is scanned for malware signatures.
         await asyncio.gather(
             self._relay(reader, target_writer),
-            self._relay_and_scan(target_reader, writer, host),
+            self._relay_and_scan(target_reader, writer, host, port=port),
             return_exceptions=True,
         )
         try:
@@ -476,14 +486,22 @@ class HTTPConnectProxy:
         writer: asyncio.StreamWriter,
         host: str,
         scan_limit: int = 4 * 1024 * 1024,
+        port: int = 0,
     ) -> None:
         """Copy bytes from reader to writer, sampling the first scan_limit bytes
         for ClamAV malware scanning (non-blocking, fire-and-forget).
 
-        Primarily catches malware in non-TLS (port 80) downloads.  For TLS
-        tunnels the scanner sees encrypted bytes and will return clean — no
-        false positives.
+        Catches malware in non-TLS (port 80) downloads.  Port-443 tunnels are
+        NOT scanned: the sampled bytes are TLS ciphertext, so clamscan can
+        never match a signature — every scan is pure waste.  Live incident
+        2026-07-04: ciphertext scans of routine LLM API tunnels each held a
+        shared-executor thread 30-60 s (clamscan cold-loads its whole DB) and
+        spiked ~1.3 GB RAM, adding 35-60 s to every LLM proxy call and
+        OOM-killing the gateway container.
         """
+        if port == 443:
+            await self._relay(reader, writer)
+            return
         buf = bytearray()
         scanned = False
         idle_timeout = 120.0
@@ -527,7 +545,7 @@ class HTTPConnectProxy:
             from ..security.clamav_scanner import run_clamscan
 
             result = await asyncio.get_event_loop().run_in_executor(
-                None,
+                self._clamav_executor,
                 lambda: run_clamscan(tmp_path, recursive=False),
             )
             infected = result.get("infected_count", 0)

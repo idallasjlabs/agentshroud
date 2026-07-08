@@ -45,6 +45,15 @@ int wakeword_feed_bytes(void);
 void wakeword_push_frame(const uint8_t *pcm, size_t len);
 
 /**
+ * @brief Advance internal timers (VAD timeout, PTT release) without audio data.
+ *
+ * Call from the voice_task loop when audio_capture_frame() returns 0 bytes so
+ * that a triggered-but-stuck streaming state can still time out and send END.
+ * wakeword_push_frame() calls this automatically when len > 0.
+ */
+void wakeword_tick(void);
+
+/**
  * @brief Returns true if a trigger (PTT press or WakeNet detection) fired.
  *        The caller should drain the ring buffer and start streaming.
  */
@@ -71,6 +80,17 @@ void wakeword_ptt_press(void);
  *        Equivalent to releasing the physical button.  No-op if not holding PTT.
  */
 void wakeword_ptt_release(void);
+
+/**
+ * @brief Force-end a triggered utterance immediately (tap-to-stop UI model).
+ *
+ * Sets s_ended=true so voice_task sends END on its next iteration, regardless
+ * of hold time or VAD state.  Safe to call from the LVGL touch event handler:
+ * the write is atomic on the state flags (volatile bool, single assignment).
+ *
+ * No-op if no utterance is in progress (s_triggered=false or already ended).
+ */
+void wakeword_ptt_finish(void);
 
 /**
  * @brief Signal that TTS playback is starting or ending.
@@ -137,3 +157,6 @@ bool wakeword_tts_stop_requested(void);
  *        Called in _on_vg_state when IDLE is received after a SPEAKING state.
  */
 void wakeword_tts_stop_clear(void);
+
+/** True while server TTS is playing (SPEAKING window). */
+bool wakeword_tts_playing(void);

@@ -3,6 +3,7 @@
 #include "wakeword.h"
 #include <string.h>
 #include "audio.h"
+#include "remote_log.h"
 #include "bsp/esp-bsp.h"
 #include "iot_button.h"
 #include "esp_log.h"
@@ -36,8 +37,24 @@ static volatile bool s_tts_playing = false;
 /* Set when the user taps/presses during SPEAKING to interrupt TTS immediately. */
 static volatile bool s_tts_stop_requested = false;
 
+/* Hard cap on utterance length — safety net, NOT the normal end path.
+ * Normal end: tap-to-stop, long-press release, or VAD silence endpointing. */
 #define VAD_TIMEOUT_MS 8000
 static TickType_t s_trigger_tick = 0;
+
+/* ── VAD silence endpointing ──────────────────────────────────────────────── *
+ * Ends an utterance ~VT_VAD_END_SILENCE_MS after the user stops speaking,
+ * instead of waiting for the 8 s cap (which forced up to 8 s of dead air
+ * before THINKING).  Requires ≥ VT_VAD_MIN_SPEECH_MS of detected speech first
+ * so an accidental tap with no speech still waits for the cap rather than
+ * ending instantly on ambient silence.  Counters advance only while the AFE
+ * is being fed (i.e. not during TTS playback) and only for hands-free
+ * utterances — while the physical button is HELD, release ends the utterance,
+ * not silence. */
+#define VT_VAD_MIN_SPEECH_MS   300
+#define VT_VAD_END_SILENCE_MS  800
+static uint32_t s_vad_speech_ms  = 0;
+static uint32_t s_vad_silence_ms = 0;
 
 /* ── Agent-toggle state ────────────────────────────────────────────────────── */
 /* Agent index cycles through the list in app_main.c on each button press.
@@ -55,10 +72,21 @@ static void _ptt_start(void)
 {
     if (!s_triggered && !s_tts_playing) {
         ESP_LOGI(TAG, "PTT: START");
+        vt_remote_log("PTT START");
         s_ptt_held     = true;
         s_triggered    = true;
         s_ended        = false;
         s_trigger_tick = xTaskGetTickCount();
+        s_vad_speech_ms  = 0;
+        s_vad_silence_ms = 0;
+    } else {
+        /* DIAGNOSTIC: the guard rejected this press.  Without this line a tap that
+         * lands while s_triggered is already latched (or during TTS) is a totally
+         * silent no-op — the #1 cause of "tap does nothing".  Now the trace says so. */
+        ESP_LOGW(TAG, "PTT: START ignored — triggered=%d tts_playing=%d",
+                 (int)s_triggered, (int)s_tts_playing);
+        vt_remote_log("PTT START ignored — triggered=%d tts=%d",
+                      (int)s_triggered, (int)s_tts_playing);
     }
 }
 
@@ -199,6 +227,11 @@ esp_err_t wakeword_init(const char *model_partition)
     s_afe_cfg->wakenet_model_name_2 = NULL;
     s_afe_cfg->wakenet_mode        = DET_MODE_90;
     s_afe_cfg->vad_init            = true;
+    /* Most aggressive silence classification: office ambience (HVAC/chatter)
+     * pinned the default WebRTC VAD at VAD_SPEECH for entire utterances
+     * (vad: trace showed sil=0ms for 8 s straight, 2026-07-06), so the
+     * silence endpointing never fired outside quiet rooms. */
+    s_afe_cfg->vad_mode            = VAD_MODE_4;
     s_afe_cfg->aec_init            = false;   /* BOX-3: no echo path */
     s_afe_cfg->se_init             = false;
     s_afe_cfg->afe_perferred_core  = 1;
@@ -242,25 +275,55 @@ esp_err_t wakeword_init(const char *model_partition)
 
 void wakeword_push_frame(const uint8_t *pcm, size_t len)
 {
-    if (!pcm || len == 0) return;
-
-    /* VAD timeout: auto-end a dangling triggered utterance. */
+    /* VAD timeout: auto-end a dangling triggered utterance.
+     * Runs BEFORE the pcm/len guard so that the 8-second safety net fires
+     * even when audio capture returns 0 bytes (codec not ready, I2S underrun,
+     * etc.).  Without this, a stuck streaming state can never self-recover. */
     if (s_triggered && !s_ended) {
         TickType_t elapsed_ms = (xTaskGetTickCount() - s_trigger_tick)
                                 * portTICK_PERIOD_MS;
         if (elapsed_ms > VAD_TIMEOUT_MS) {
             ESP_LOGW(TAG, "VAD timeout — auto-ending utterance");
+            vt_remote_log("VAD timeout (8s) — auto-ending utterance");
             s_ended    = true;
             s_ptt_held = false;
         }
     }
 
+    if (!pcm || len == 0) return;
+
 #if HAVE_ESP_SR
-    if (!s_afe_iface || !s_afe_data) return;
-    /* Skip AFE feed during active PTT, triggered utterance, or TTS playback.
-     * Suppressing WakeNet while TTS is playing prevents the speaker echo from
-     * accidentally triggering a second utterance before the reply finishes. */
-    if (s_ptt_held || s_triggered || s_tts_playing) return;
+    if (!s_afe_iface || !s_afe_data) {
+        /* DIAGNOSTIC (one-shot): AFE never initialised → WakeNet is permanently
+         * deaf.  Latch so we warn once instead of every 16 ms frame. */
+        static bool s_afe_warned = false;
+        if (!s_afe_warned) {
+            s_afe_warned = true;
+            ESP_LOGW(TAG, "WakeNet feed skipped — AFE not initialised (wake word disabled)");
+            vt_remote_log("WakeNet DISABLED: AFE not initialised");
+        }
+        return;
+    }
+    /* Skip AFE feed ONLY during TTS playback: speaker echo would retrigger
+     * WakeNet and pollute the VAD.  During a triggered utterance the feed
+     * KEEPS RUNNING so the AFE's WebRTC VAD can endpoint it — the old code
+     * skipped feeding while triggered, which made the VAD_SILENCE branch dead
+     * code and left the 8 s cap as the only hands-free end path (up to 8 s of
+     * dead air after the user stopped speaking). */
+    bool skip_feed = s_tts_playing;
+    /* DIAGNOSTIC (transition-edge): log only when the skip state flips so we can
+     * see the AFE going deaf/live in the trace without per-frame spam. */
+    static int s_last_skip = -1;
+    if ((int)skip_feed != s_last_skip) {
+        s_last_skip = (int)skip_feed;
+        ESP_LOGW(TAG, "AFE feed %s (ptt=%d triggered=%d tts=%d)",
+                 skip_feed ? "OFF" : "ON",
+                 (int)s_ptt_held, (int)s_triggered, (int)s_tts_playing);
+        vt_remote_log("AFE feed %s (ptt=%d triggered=%d tts=%d)",
+                      skip_feed ? "OFF" : "ON",
+                      (int)s_ptt_held, (int)s_triggered, (int)s_tts_playing);
+    }
+    if (skip_feed) return;
 
     /* Feed the mic frame into the AFE pipeline. */
     int rc = s_afe_iface->feed(s_afe_data, (const int16_t *)pcm);
@@ -274,14 +337,50 @@ void wakeword_push_frame(const uint8_t *pcm, size_t len)
     if (!result) return;
 
     if (result->wakeup_state == WAKENET_DETECTED) {
-        ESP_LOGI(TAG, "WakeNet: 'Hi, ESP' detected");
-        s_triggered    = true;
-        s_ended        = false;
-        s_trigger_tick = xTaskGetTickCount();
-    } else if (s_triggered && result->vad_state == VAD_SILENCE) {
-        /* VAD detected end of speech in a wake-word triggered utterance. */
-        ESP_LOGI(TAG, "VAD: silence — utterance end");
-        s_ended = true;
+        if (!s_triggered) {
+            ESP_LOGI(TAG, "WakeNet: 'Hi, ESP' detected");
+            vt_remote_log("WakeNet DETECTED 'Hi, ESP'");
+            s_triggered      = true;
+            s_ended          = false;
+            s_trigger_tick   = xTaskGetTickCount();
+            s_vad_speech_ms  = 0;
+            s_vad_silence_ms = 0;
+        }
+        /* else: detection during an active capture (e.g. the user says the
+         * wake word again mid-utterance) — ignore, capture continues. */
+    }
+
+    /* Silence endpointing — hands-free utterances only (tap or wake word).
+     * While the physical button is HELD, its release ends the utterance. */
+    if (s_triggered && !s_ended && !s_ptt_held) {
+        /* One AFE feed chunk = len/2 samples at 16 kHz. */
+        uint32_t frame_ms = (uint32_t)(len / 2) * 1000u / 16000u;
+        if (result->vad_state == VAD_SILENCE) {
+            s_vad_silence_ms += frame_ms;
+        } else {
+            s_vad_speech_ms += frame_ms;
+            s_vad_silence_ms = 0;
+        }
+        /* DIAGNOSTIC (1 Hz): the counters are the only remote evidence of what
+         * the WebRTC VAD is reporting.  Live 2026-07-05: first field test hit
+         * the 8 s cap with no endpoint — this trace shows whether vad_state
+         * was pinned at SPEECH (noise/sensitivity) or silence never summed. */
+        static uint32_t s_vad_dbg_ms = 0;
+        s_vad_dbg_ms += frame_ms;
+        if (s_vad_dbg_ms >= 1000) {
+            s_vad_dbg_ms = 0;
+            vt_remote_log("vad: speech=%ums sil=%ums state=%d",
+                          (unsigned)s_vad_speech_ms, (unsigned)s_vad_silence_ms,
+                          (int)result->vad_state);
+        }
+        if (s_vad_speech_ms >= VT_VAD_MIN_SPEECH_MS &&
+            s_vad_silence_ms >= VT_VAD_END_SILENCE_MS) {
+            ESP_LOGI(TAG, "VAD endpoint: speech=%ums silence=%ums — ending utterance",
+                     (unsigned)s_vad_speech_ms, (unsigned)s_vad_silence_ms);
+            vt_remote_log("VAD endpoint: speech=%ums silence=%ums — ending",
+                          (unsigned)s_vad_speech_ms, (unsigned)s_vad_silence_ms);
+            s_ended = true;
+        }
     }
 #endif
 }
@@ -298,16 +397,48 @@ int wakeword_feed_bytes(void)
 bool wakeword_triggered(void) { return s_triggered; }
 bool wakeword_ended(void)     { return s_ended; }
 
+void wakeword_tick(void)
+{
+    /* Advance the VAD timeout even when no audio frame is available.
+     * Mirrors the timeout block at the top of wakeword_push_frame(). */
+    if (s_triggered && !s_ended) {
+        TickType_t elapsed_ms = (xTaskGetTickCount() - s_trigger_tick)
+                                * portTICK_PERIOD_MS;
+        if (elapsed_ms > VAD_TIMEOUT_MS) {
+            ESP_LOGW(TAG, "VAD timeout (no audio) — auto-ending utterance");
+            vt_remote_log("VAD timeout (no audio) — auto-ending utterance");
+            s_ended    = true;
+            s_ptt_held = false;
+        }
+    }
+}
+
 void wakeword_clear(void)
 {
-    s_triggered = false;
-    s_ended     = false;
-    s_ptt_held  = false;
+    s_triggered      = false;
+    s_ended          = false;
+    s_ptt_held       = false;
+    s_vad_speech_ms  = 0;
+    s_vad_silence_ms = 0;
 }
 
 /* Public PTT API — called from the LVGL touch overlay in ui_face.c. */
 void wakeword_ptt_press(void)   { _ptt_start(); }
 void wakeword_ptt_release(void) { _ptt_end(); }
+
+void wakeword_ptt_finish(void)
+{
+    /* Force-end a triggered utterance (tap-to-stop UI model).
+     * Sets s_ended so voice_task sends END on the next loop iteration.
+     * Clears s_ptt_held so a trailing LV_EVENT_RELEASED cannot double-fire
+     * _ptt_end() and flip s_ended back to false via a short-tap path. */
+    if (s_triggered && !s_ended) {
+        ESP_LOGI(TAG, "PTT: finish (user tap-to-stop)");
+        vt_remote_log("PTT finish (tap-to-stop)");
+        s_ended    = true;
+        s_ptt_held = false;
+    }
+}
 
 void wakeword_set_tts_playing(bool playing)
 {
@@ -359,6 +490,8 @@ void wakeword_tts_stop_request(void)
 }
 
 bool wakeword_tts_stop_requested(void) { return s_tts_stop_requested; }
+
+bool wakeword_tts_playing(void)        { return s_tts_playing; }
 
 void wakeword_tts_stop_clear(void)     { s_tts_stop_requested = false; }
 
