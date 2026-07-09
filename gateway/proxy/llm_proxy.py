@@ -211,7 +211,9 @@ class LLMProxy:
                 fo_body = json.dumps(fo_data).encode()
                 fo_url = f"{fo_base}/v1/chat/completions"
             elif path and "/v1/messages" in path:
-                oai_req = anthropic_to_openai_request(request_data or {}, secondary_model_normalized)
+                oai_req = anthropic_to_openai_request(
+                    request_data or {}, secondary_model_normalized
+                )
                 fo_body = json.dumps(oai_req).encode()
                 fo_url = f"{fo_base}/v1/chat/completions"
             else:
@@ -462,9 +464,7 @@ class LLMProxy:
                         _oai_resp = json.loads(_f2_body)
                         _f2_body = json.dumps(openai_to_gemini_response(_oai_resp)).encode()
                     return _f2_status, _f2_hdrs, _f2_body
-                logger.warning(
-                    "Cloud failover (non-streaming) OpenAI returned HTTP %s", _f2_status
-                )
+                logger.warning("Cloud failover (non-streaming) OpenAI returned HTTP %s", _f2_status)
             except Exception as _fe2:
                 logger.warning("Cloud failover (non-streaming) error: %s", _fe2)
         return None
@@ -898,7 +898,10 @@ class LLMProxy:
                             # 400 included so the Claude.ai OAuth "out of extra usage"
                             # quota wall (returned as invalid_request_error / HTTP 400)
                             # still triggers failover instead of crash-looping cron jobs.
-                            and response.status_code in (400, 429, 402, 503, 529)
+                            # 500 included for provider capacity errors (SCRUM-60) —
+                            # is_overloaded requires capacity wording at 500, so
+                            # deterministic request-caused 500s never fail over.
+                            and response.status_code in (400, 429, 402, 500, 503, 529)
                         ):
                             # Error body is small JSON — safe to read in full
                             error_body = await response.aread()
@@ -1014,13 +1017,17 @@ class LLMProxy:
                                                         _oai_model,
                                                     )
                                                     if "/v1/messages" in path:
-                                                        async for _t in translate_openai_sse_to_anthropic(
+                                                        async for (
+                                                            _t
+                                                        ) in translate_openai_sse_to_anthropic(
                                                             _fo2_resp.aiter_bytes(),
                                                             model_name,
                                                         ):
                                                             yield _t
                                                     else:
-                                                        async for _fo2_chunk in _fo2_resp.aiter_bytes():
+                                                        async for (
+                                                            _fo2_chunk
+                                                        ) in _fo2_resp.aiter_bytes():
                                                             if _fo2_chunk:
                                                                 yield _fo2_chunk
                                                     return
@@ -1032,9 +1039,7 @@ class LLMProxy:
                                                         _fo2_err[:300],
                                                     )
                                     except Exception as _fe2:
-                                        logger.warning(
-                                            "Cloud failover (OpenAI) error: %s", _fe2
-                                        )
+                                        logger.warning("Cloud failover (OpenAI) error: %s", _fe2)
                             yield error_body
                         else:
                             # Normal streaming — forward chunks immediately, no buffering
