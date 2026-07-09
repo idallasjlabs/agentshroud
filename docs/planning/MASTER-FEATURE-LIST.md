@@ -1,9 +1,40 @@
 # AgentShroud — Master Feature List (Everything Ever Mentioned)
 
-**Compiled:** 2026-03-04 (updated 12:16 UTC)
+**Compiled:** 2026-03-04 (updated 12:16 UTC) · **Status refresh:** 2026-07-09
 **Sources:** All memory files (Feb 16-27, Mar 3-4), planning docs, roadmap (Phases 1-19), Steve Hay assessment/plan, daily logs, code review, RECOVERY_PLAN, PLAN-RESET, regression tests, peer reviews
 
 **Legend:** ✅ Done | 🔧 In Progress | 📋 Planned | 🧊 Deferred
+
+---
+
+## ⚠️ STATUS UPDATE — 2026-07-09 (read before the per-item marks below)
+
+The per-item 📋 marks below are FROZEN AT 2026-03-04 and no longer reflect
+reality. Shipped since then:
+
+- **v0.8.0 "Watchtower"** — SHIPPED (see `v0.8/v0.8.0-execution-summary-draft.md`)
+- **v0.9.0 "Sentinel"** — SHIPPED (see `v0.9/release-notes-v0.9.0.md`)
+- **v1.0.0 "Fortress"** — SHIPPED 2026-04-01 (see `v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md`)
+- **v1.1.0 / v1.1.1** — SHIPPED (KeyVault wiring, form-urlencoded bypass fix,
+  coverage-truth reconciliation; PRs #153-158)
+- **ESP32-S3 voice terminal** (from the v1.3 plan) — SHIPPED EARLY 2026-07-08
+  (PRs #248/#249): full Hermes voice loop over hotspot, VAD endpointing,
+  spoken volume control, delivery/reply resume, END-gated clean playback,
+  OTA self-update, kawaii face
+
+**Live tracking has moved to Jira** (agentshroudai.atlassian.net, project
+SCRUM) — this document is the historical index; the board is the plan:
+
+| Jira epic | Scope |
+|-----------|-------|
+| SCRUM-53 | Voice terminal polish (5 tasks) |
+| SCRUM-54 | Reliability + market roadmap: provider failover, cron alerting, canary, coverage 85→94, roadmap items 5-10, EU AI Act package (SCRUM-96) |
+| SCRUM-65 | v1.2.0 "Teamwork" master plan: workstreams A-E, SkillGuard (SCRUM-97), historical-findings triage (SCRUM-95) |
+| SCRUM-66 | v1.3.0 Platform Expansion backlog (15 tasks incl. SOC 2 path) |
+
+Per-item ✅ retro-marking of the 232 rows below was deliberately NOT done —
+individual verification happens in SCRUM-95 (triage of 29 findings still
+plausibly open) and the WS-E.1/E.2 audits, per no-security-theater rules.
 
 ---
 
@@ -374,11 +405,14 @@
 
 ## Summary
 
-| Version | Codename | Items | Focus |
-|---------|----------|-------|-------|
-| v0.8.0 | Watchtower | 104 | Security fixes, module wiring, Steve prep |
-| v0.9.0 | Sentinel | 37 | Data isolation, SOC, remediation, iMessage, security tools |
-| v1.0.0 | Fortress | 38 | Polish, install, docs, release |
-| Post-v1 | — | 53 | Voice, integrations, advanced features |
+| Version | Codename | Items | Focus | Status (2026-07-09) |
+|---------|----------|-------|-------|---------------------|
+| v0.8.0 | Watchtower | 104 | Security fixes, module wiring, Steve prep | ✅ SHIPPED |
+| v0.9.0 | Sentinel | 37 | Data isolation, SOC, remediation, iMessage, security tools | ✅ SHIPPED |
+| v1.0.0 | Fortress | 38 | Polish, install, docs, release | ✅ SHIPPED 2026-04-01 |
+| v1.1.x | Fortress | — | KeyVault wiring, bypass fixes, coverage truth | ✅ SHIPPED |
+| — | Voice terminal | — | ESP32-S3 Hermes voice loop (pulled forward from v1.3) | ✅ SHIPPED 2026-07-08 |
+| v1.2.0 | Teamwork | 10+ | Groups, competitive lead, local parity, settings sync, audits | 📋 Jira SCRUM-65 |
+| Post-v1 | Platform Expansion | 53 | Voice expansion, Apple, integrations, advanced features | 🧊 Jira SCRUM-66 |
 
-**Total tracked: 232 items**
+**Total tracked: 232 historical items · live plan: Jira SCRUM board (43+ issues, epics SCRUM-53/54/65/66)**
