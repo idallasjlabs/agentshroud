@@ -940,7 +940,9 @@ async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
 
     async def _execute_and_record(approved_by: str) -> SSHExecResponse:
         """Execute command and record to ledger with PII sanitization."""
-        result = await proxy.execute(request.host, request.command, request.timeout, cwd=request.cwd)
+        result = await proxy.execute(
+            request.host, request.command, request.timeout, cwd=request.cwd
+        )
         # Sanitize command for ledger storage
         sanitized = await app_state.sanitizer.sanitize(request.command)
         content_hash = hashlib.sha256(f"{request.command}:{request.host}".encode()).hexdigest()
@@ -1277,7 +1279,9 @@ _CLAMAV_ALLOWED_TARGETS: frozenset[str] = frozenset({"/app", "/opt", "/tmp", "/v
 async def run_clamav_scan(auth: AuthRequired, target: str = "/app"):
     """Run ClamAV antivirus scan. Tries clamdscan (daemon) first, falls back to clamscan."""
     if target not in _CLAMAV_ALLOWED_TARGETS:
-        raise HTTPException(status_code=400, detail=f"target must be one of {sorted(_CLAMAV_ALLOWED_TARGETS)}")
+        raise HTTPException(
+            status_code=400, detail=f"target must be one of {sorted(_CLAMAV_ALLOWED_TARGETS)}"
+        )
     if not app_state.clamav_scanner:
         return {"error": "ClamAV scanner not available"}
     # Prefer clamdscan (daemon, shared memory) if clamd is running, else clamscan
@@ -1306,14 +1310,18 @@ async def run_clamav_scan(auth: AuthRequired, target: str = "/app"):
     return result
 
 
-_TRIVY_ALLOWED_SCAN_TYPES: frozenset[str] = frozenset({"fs", "image", "sbom", "rootfs", "config", "repo"})
+_TRIVY_ALLOWED_SCAN_TYPES: frozenset[str] = frozenset(
+    {"fs", "image", "sbom", "rootfs", "config", "repo"}
+)
 
 
 @app.post("/manage/scan/trivy")
 async def run_trivy_scan(auth: AuthRequired, target: str = "fs"):
     """Run Trivy vulnerability scan."""
     if target not in _TRIVY_ALLOWED_SCAN_TYPES:
-        raise HTTPException(status_code=400, detail=f"target must be one of {sorted(_TRIVY_ALLOWED_SCAN_TYPES)}")
+        raise HTTPException(
+            status_code=400, detail=f"target must be one of {sorted(_TRIVY_ALLOWED_SCAN_TYPES)}"
+        )
     if not app_state.trivy_scanner:
         return {"error": "Trivy scanner not available"}
     result = await asyncio.get_running_loop().run_in_executor(
@@ -1522,20 +1530,35 @@ async def receive_security_alert(request: Request):
     )
 
     if app_state.event_bus:
+        # emit(), not publish() — the original publish() call named a method
+        # the EventBus never had and the bare except swallowed the
+        # AttributeError, so alerts silently never reached subscribers
+        # (found + fixed in SCRUM-61).
         try:
-            await app_state.event_bus.publish(
-                {
-                    "event_type": "security_alert",
-                    "source": "security_script",
-                    "alert_type": alert_type,
-                    "severity": severity,
-                    "tool": tool,
-                    "message": message,
-                    "timestamp": body.get("timestamp"),
-                }
+            from .event_bus import make_event
+
+            bus_severity = (
+                "critical"
+                if severity == "CRITICAL"
+                else "warning" if severity in ("HIGH", "WARNING") else "info"
             )
-        except Exception:
-            pass
+            await app_state.event_bus.emit(
+                make_event(
+                    "security_alert",
+                    summary=f"{tool}: {message[:400]}",
+                    details={
+                        "source": "security_script",
+                        "alert_type": alert_type,
+                        "alert_severity": severity,
+                        "tool": tool,
+                        "message": message,
+                        "reported_timestamp": body.get("timestamp"),
+                    },
+                    severity=bus_severity,
+                )
+            )
+        except Exception as exc:
+            logger.warning("security_alert event emit failed: %s", exc)
 
     return {"ok": True, "received": True}
 
@@ -2424,10 +2447,15 @@ async def run_openscap_scan(
     report_html = "/tmp/openscap-report.html"
     try:
         _oscap_cmd = [
-            "oscap", "xccdf", "eval",
-            "--profile", profile,
-            "--results", results_xml,
-            "--report", report_html,
+            "oscap",
+            "xccdf",
+            "eval",
+            "--profile",
+            profile,
+            "--results",
+            results_xml,
+            "--report",
+            report_html,
             ds_file,
         ]
         r = await asyncio.get_running_loop().run_in_executor(
@@ -2930,9 +2958,7 @@ async def run_cis_benchmark(auth: AuthRequired):
     try:
         with open("/proc/mounts") as f:
             mounts = f.read()
-        [
-            d for d in sensitive_mounts if f" {d} " in mounts or mounts.startswith(f"{d} ")
-        ]
+        [d for d in sensitive_mounts if f" {d} " in mounts or mounts.startswith(f"{d} ")]
         docker_sock = "/var/run/docker.sock" in mounts
         if docker_sock:
             add("5.5", "Docker socket not mounted", "FAIL", "Docker socket is mounted")
@@ -4106,11 +4132,18 @@ async def llm_api_proxy(request: Request, path: str):
         if path == "models":
             created = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
             synthetic = {
-                "data": [{"type": "model", "id": "claude-opus-4-7", "display_name": "Claude Opus 4.7", "created_at": created}],
+                "data": [
+                    {
+                        "type": "model",
+                        "id": "claude-opus-4-7",
+                        "display_name": "Claude Opus 4.7",
+                        "created_at": created,
+                    }
+                ],
                 "has_more": False,
             }
         else:
-            model_id = path[len("models/"):]
+            model_id = path[len("models/") :]
             synthetic = {
                 "type": "model",
                 "id": model_id,

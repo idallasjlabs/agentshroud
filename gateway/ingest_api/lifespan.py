@@ -1303,6 +1303,28 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.warning("Failed to wire egress event telemetry: %s", e)
 
+    # Alert → owner Telegram relay (SCRUM-61): critical/warning
+    # security_alert events reach the owner within seconds.  Reuses the
+    # egress notifier's Telegram transport; skipped (with a warning) when
+    # no bot token is configured.
+    try:
+        if getattr(app_state, "egress_notifier", None):
+            from ..security.rbac_config import RBACConfig
+            from .alert_telegram_relay import AlertTelegramRelay
+
+            app_state.alert_telegram_relay = AlertTelegramRelay(
+                send_fn=app_state.egress_notifier.send_text,
+                owner_chat_id=RBACConfig().owner_user_id,
+            )
+            await app_state.event_bus.subscribe(app_state.alert_telegram_relay)
+            logger.info("AlertTelegramRelay subscribed to event bus")
+        else:
+            app_state.alert_telegram_relay = None
+            logger.warning("AlertTelegramRelay skipped — no Telegram notifier available")
+    except Exception as e:
+        app_state.alert_telegram_relay = None
+        logger.error("AlertTelegramRelay wiring failed: %s", e)
+
     # Initialize HTTP CONNECT proxy (port 8181)
     # Activated in the FINAL PR by setting HTTP_PROXY on the bot container.
     # Running it now adds zero risk — the bot doesn't use it until then.

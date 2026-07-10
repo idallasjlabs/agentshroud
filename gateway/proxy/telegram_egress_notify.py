@@ -129,6 +129,11 @@ class EgressTelegramNotifier:
         loop = asyncio.get_event_loop()
         return await loop.run_in_executor(None, self._send_request, method, payload, token)
 
+    async def send_text(self, chat_id: str, text: str) -> dict:
+        """Send a plain text message — public transport for other gateway
+        components (e.g. AlertTelegramRelay, SCRUM-61)."""
+        return await self._async_send("sendMessage", {"chat_id": chat_id, "text": text})
+
     async def notify_pending(
         self,
         request_id: str,
