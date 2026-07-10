@@ -173,3 +173,188 @@ class TestIsOverloaded:
     def test_empty_and_garbage_bodies(self):
         assert is_overloaded(200, b"") == (False, "")
         assert is_overloaded(529, b"not json overloaded_error") == (False, "")
+
+
+class TestOverloadedMultiProvider:
+    """SCRUM-60: in-body overload envelopes from OpenAI and Gemini must fail
+    over exactly like Anthropic's overloaded_error — a provider capacity
+    error that escapes status-code handling kills cron jobs silently."""
+
+    def test_openai_server_error_503(self):
+        body = json.dumps(
+            {
+                "error": {
+                    "message": "The server is currently overloaded.",
+                    "type": "server_error",
+                    "param": None,
+                    "code": None,
+                }
+            }
+        ).encode()
+        assert is_overloaded(503, body) == (True, "openai_overloaded")
+
+    def test_openai_server_error_500_requires_capacity_wording(self):
+        # At 500, server_error is OpenAI's blanket internal-error class —
+        # deterministic request-caused 500s must NOT fail over (review
+        # finding 2026-07-09); capacity wording is required.
+        generic = json.dumps(
+            {
+                "error": {
+                    "message": "The server had an error processing your request.",
+                    "type": "server_error",
+                    "param": None,
+                    "code": None,
+                }
+            }
+        ).encode()
+        assert is_overloaded(500, generic) == (False, "")
+        capacity = json.dumps(
+            {
+                "error": {
+                    "message": "The engine is currently overloaded.",
+                    "type": "server_error",
+                    "param": None,
+                    "code": None,
+                }
+            }
+        ).encode()
+        assert is_overloaded(500, capacity) == (True, "openai_overloaded")
+
+    def test_anthropic_api_error_500_not_flagged(self):
+        # The gateway itself emits api_error envelopes and Anthropic uses
+        # api_error for internal 500s — adding 500 to the status gate must
+        # not make these fail over.
+        body = json.dumps(
+            {
+                "error": {
+                    "type": "api_error",
+                    "message": "An internal server error occurred.",
+                }
+            }
+        ).encode()
+        assert is_overloaded(500, body) == (False, "")
+
+    def test_openai_overloaded_message_http_200(self):
+        # In-body error with 200 status — the exact class that bypasses
+        # status-based retry (Anthropic precedent, 2026-06-11).
+        body = json.dumps(
+            {
+                "error": {
+                    "message": "That model is currently overloaded with other requests.",
+                    "type": "requests",
+                    "param": None,
+                    "code": None,
+                }
+            }
+        ).encode()
+        assert is_overloaded(200, body) == (True, "openai_overloaded")
+
+    def test_openai_invalid_request_not_flagged(self):
+        body = json.dumps(
+            {
+                "error": {
+                    "message": "Invalid value for max_tokens",
+                    "type": "invalid_request_error",
+                    "param": "max_tokens",
+                    "code": None,
+                }
+            }
+        ).encode()
+        assert is_overloaded(503, body) == (False, "")
+
+    def test_gemini_unavailable_503(self):
+        body = json.dumps(
+            {
+                "error": {
+                    "code": 503,
+                    "message": "The model is overloaded. Please try again later.",
+                    "status": "UNAVAILABLE",
+                }
+            }
+        ).encode()
+        assert is_overloaded(503, body) == (True, "gemini_overloaded")
+
+    def test_gemini_unavailable_http_200(self):
+        body = json.dumps(
+            {
+                "error": {
+                    "code": 503,
+                    "message": "The service is currently unavailable.",
+                    "status": "UNAVAILABLE",
+                }
+            }
+        ).encode()
+        assert is_overloaded(200, body) == (True, "gemini_overloaded")
+
+    def test_gemini_resource_exhausted_stays_quota_territory(self):
+        # 429 RESOURCE_EXHAUSTED is quota/rate territory — is_overloaded
+        # must not claim it even though the shape is a Google error envelope.
+        body = json.dumps(
+            {
+                "error": {
+                    "code": 429,
+                    "message": "Resource has been exhausted",
+                    "status": "RESOURCE_EXHAUSTED",
+                }
+            }
+        ).encode()
+        assert is_overloaded(429, body) == (False, "")
+
+    def test_gemini_invalid_argument_not_flagged(self):
+        body = json.dumps(
+            {
+                "error": {
+                    "code": 400,
+                    "message": "Invalid JSON payload",
+                    "status": "INVALID_ARGUMENT",
+                }
+            }
+        ).encode()
+        assert is_overloaded(503, body) == (False, "")
+
+    def test_overloaded_word_in_chat_content_not_flagged(self):
+        # A model TALKING about overload in a normal completion must not
+        # trigger failover (no top-level error envelope).
+        body = json.dumps(
+            {
+                "id": "chatcmpl-1",
+                "choices": [
+                    {
+                        "message": {
+                            "role": "assistant",
+                            "content": "The server is currently overloaded is an OpenAI server_error.",
+                        }
+                    }
+                ],
+            }
+        ).encode()
+        assert is_overloaded(200, body) == (False, "")
+
+    def test_anthropic_detection_unchanged(self):
+        assert is_overloaded(200, _OVERLOADED_BODY) == (True, "anthropic_overloaded")
+
+    def test_non_dict_json_body_not_flagged(self):
+        # Valid JSON that isn't an object (list/string) — parse succeeds,
+        # shape check must reject.
+        assert is_overloaded(503, b'["server_error overloaded"]') == (False, "")
+
+    def test_unrecognized_error_shape_not_flagged(self):
+        # Top-level error dict but no provider signature — e.g. a proxy's
+        # own error format mentioning UNAVAILABLE only in free text keys.
+        body = json.dumps({"error": {"detail": "backend UNAVAILABLE", "origin": "envoy"}}).encode()
+        assert is_overloaded(503, body) == (False, "")
+
+    def test_openai_server_error_503_without_capacity_wording(self):
+        # At 503 the bare server_error class IS a capacity signal — no
+        # message wording required (only 500 needs the extra evidence).
+        body = json.dumps(
+            {
+                "error": {
+                    "message": "The server had an error.",
+                    "type": "server_error",
+                    "param": None,
+                    "code": None,
+                }
+            }
+        ).encode()
+        assert is_overloaded(503, body) == (True, "openai_overloaded")

@@ -136,20 +136,35 @@ def is_quota_exhausted(status: int, body: bytes) -> tuple[bool, str]:
 # died on "HTTP 200: Overloaded" after 3 client retries).
 # ---------------------------------------------------------------------------
 
-_OVERLOADED_STATUSES = (200, 503, 529)
+_OVERLOADED_STATUSES = (200, 500, 503, 529)
+
+# Fast pre-filter substrings: at least one must appear in the body head
+# before we pay for a JSON parse.  Each maps to a provider envelope shape
+# confirmed in is_overloaded — the parse step eliminates content
+# false-positives.
+_OVERLOADED_SUBSTRINGS = (
+    b"overloaded_error",  # Anthropic error.type
+    b"server_error",  # OpenAI error.type (backend/capacity class)
+    b"UNAVAILABLE",  # Gemini error.status (canonical overload)
+    b"overloaded",  # OpenAI/Gemini error.message wording
+)
 
 
 def is_overloaded(status: int, body: bytes) -> tuple[bool, str]:
-    """Return (True, "anthropic_overloaded") for an overloaded_error envelope.
+    """Return (True, "<provider>_overloaded") for a provider capacity-error
+    envelope from Anthropic, OpenAI, or Gemini (SCRUM-60).
 
     Only claims statuses outside is_quota_exhausted's domain (429/402 are
-    quota territory). The error envelope is compact, so a fast substring
+    quota territory).  The error envelope is compact, so a fast substring
     check on the body head avoids JSON-parsing large legitimate responses;
-    a full parse then confirms error.type to avoid content false-positives.
+    a full parse then confirms the provider error shape (top-level "error"
+    object) so overload wording inside normal completion CONTENT can never
+    trigger failover.
     """
     if status not in _OVERLOADED_STATUSES or not body:
         return False, ""
-    if b"overloaded_error" not in body[:2048]:
+    head = body[:2048]
+    if not any(s in head for s in _OVERLOADED_SUBSTRINGS):
         return False, ""
     try:
         parsed = json.loads(body.decode("utf-8", errors="replace"))
@@ -158,8 +173,30 @@ def is_overloaded(status: int, body: bytes) -> tuple[bool, str]:
     if not isinstance(parsed, dict):
         return False, ""
     err = parsed.get("error")
-    if isinstance(err, dict) and err.get("type") == "overloaded_error":
+    if not isinstance(err, dict):
+        return False, ""
+    # Anthropic: {"error": {"type": "overloaded_error", ...}}
+    if err.get("type") == "overloaded_error":
         return True, "anthropic_overloaded"
+    # Gemini: {"error": {"code": N, "status": "UNAVAILABLE", "message": ...}}
+    # (429 RESOURCE_EXHAUSTED never reaches here — the status gate above
+    # keeps quota territory with is_quota_exhausted.)
+    if err.get("status") == "UNAVAILABLE":
+        return True, "gemini_overloaded"
+    # OpenAI: {"error": {"type": "server_error"|..., "message": ...}} —
+    # server_error is the backend/capacity class at 503/529 (and the rare
+    # in-body-200 case).  At HTTP 500, server_error is OpenAI's blanket
+    # class for ALL internal errors including deterministic request-caused
+    # ones (malformed payloads, tokenizer edges) that would fail locally
+    # too — so 500 additionally requires capacity wording in the message
+    # (code-review finding, 2026-07-09).
+    message = err.get("message")
+    message_lc = message.lower() if isinstance(message, str) else ""
+    capacity_wording = "overloaded" in message_lc or "capacity" in message_lc
+    if "type" in err and capacity_wording:
+        return True, "openai_overloaded"
+    if err.get("type") == "server_error" and status != 500:
+        return True, "openai_overloaded"
     return False, ""
 
 
