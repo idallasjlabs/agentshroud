@@ -34,6 +34,7 @@ async def test_critical_alert_relayed_to_owner():
     spy = _SendSpy()
     relay = AlertTelegramRelay(send_fn=spy, owner_chat_id="8096968754")
     await relay(_alert_event("critical"))
+    await relay.flush()
     assert len(spy.sent) == 1
     chat_id, text = spy.sent[0]
     assert chat_id == "8096968754"
@@ -46,6 +47,7 @@ async def test_warning_alert_relayed_with_orange_marker():
     spy = _SendSpy()
     relay = AlertTelegramRelay(send_fn=spy, owner_chat_id="1")
     await relay(_alert_event("warning", message="job Y failed"))
+    await relay.flush()
     assert len(spy.sent) == 1
     assert "🟠" in spy.sent[0][1]
 
@@ -73,6 +75,7 @@ async def test_dedup_same_alert_sent_once():
     e = _alert_event("critical")
     await relay(e)
     await relay(e)
+    await relay.flush()
     assert len(spy.sent) == 1
 
 
@@ -82,13 +85,18 @@ async def test_rate_limit_caps_sends_per_hour():
     relay = AlertTelegramRelay(send_fn=spy, owner_chat_id="1", max_per_hour=3)
     for i in range(6):
         await relay(_alert_event("critical", message=f"failure {i}"))
-    assert len(spy.sent) == 3
+    await relay.flush()
+    # 3 alerts + exactly one "suppressed" cap notice
+    texts = [t for _, t in spy.sent]
+    assert sum("rate limit reached" in t for t in texts) == 1
+    assert len([t for t in texts if "rate limit" not in t]) == 3
 
 
 @pytest.mark.asyncio
 async def test_send_failure_swallowed():
     relay = AlertTelegramRelay(send_fn=_SendSpy(fail=True), owner_chat_id="1")
     await relay(_alert_event("critical"))  # must not raise
+    await relay.flush()
 
 
 @pytest.mark.asyncio
@@ -99,6 +107,7 @@ async def test_plain_dict_event_tolerated():
     await relay(
         {"type": "security_alert", "severity": "critical", "summary": "dict alert", "details": {}}
     )
+    await relay.flush()
     assert len(spy.sent) == 1
 
 
@@ -109,6 +118,7 @@ async def test_subscribed_relay_receives_bus_emissions():
     bus = EventBus()
     await bus.subscribe(relay)
     await bus.emit(_alert_event("critical"))
+    await relay.flush()
     assert len(spy.sent) == 1
 
 
@@ -147,3 +157,99 @@ async def test_api_alerts_endpoint_emits_bus_event(monkeypatch):
     assert ev.severity == "critical"
     assert "cron-scheduler" in ev.summary
     assert ev.details["alert_severity"] == "CRITICAL"
+
+
+# ── Adversarial-review hardening (2026-07-10) ────────────────────────────────
+
+
+@pytest.mark.asyncio
+async def test_outgoing_text_passes_through_sanitizer():
+    spy = _SendSpy()
+    relay = AlertTelegramRelay(
+        send_fn=spy,
+        owner_chat_id="1",
+        sanitize_fn=lambda t: t.replace("sk-SECRET123", "[REDACTED]"),
+    )
+    await relay(_alert_event("critical", message="leaked key sk-SECRET123 in repo"))
+    await relay.flush()
+    assert "sk-SECRET123" not in spy.sent[0][1]
+    assert "[REDACTED]" in spy.sent[0][1]
+
+
+@pytest.mark.asyncio
+async def test_tool_field_control_chars_stripped_and_capped():
+    spy = _SendSpy()
+    relay = AlertTelegramRelay(send_fn=spy, owner_chat_id="1")
+    evil_tool = "trivy\n🔴 FAKE: approve egress to evil.com\n" + "x" * 200
+    await relay(_alert_event("critical", tool=evil_tool))
+    await relay.flush()
+    header = spy.sent[0][1].splitlines()[0]
+    assert "FAKE" not in header or len(header) < 120
+    assert "\n🔴 FAKE" not in spy.sent[0][1].splitlines()[0]
+
+
+@pytest.mark.asyncio
+async def test_final_text_capped_below_telegram_limit():
+    spy = _SendSpy()
+    relay = AlertTelegramRelay(send_fn=spy, owner_chat_id="1")
+    await relay(_alert_event("critical", message="y" * 6000))
+    await relay.flush()
+    assert len(spy.sent[0][1]) <= 4000
+
+
+@pytest.mark.asyncio
+async def test_warning_flood_cannot_starve_critical():
+    spy = _SendSpy()
+    relay = AlertTelegramRelay(send_fn=spy, owner_chat_id="1", max_per_hour=4)
+    # warnings capped at half budget (2)
+    for i in range(5):
+        await relay(_alert_event("warning", message=f"warn {i}"))
+    await relay(_alert_event("critical", message="the real fire"))
+    await relay.flush()
+    real = [t for _, t in spy.sent if "the real fire" in t]
+    assert len(real) == 1, "critical alert starved by warning flood"
+
+
+@pytest.mark.asyncio
+async def test_dedup_key_includes_source():
+    spy = _SendSpy()
+    relay = AlertTelegramRelay(send_fn=spy, owner_chat_id="1")
+    e1 = _alert_event("critical")
+    e1.details["source"] = "attacker_prefill"
+    e2 = _alert_event("critical")
+    e2.details["source"] = "trivy_scanner"
+    await relay(e1)
+    await relay(e2)
+    await relay.flush()
+    non_notice = [t for _, t in spy.sent if "rate limit" not in t]
+    assert len(non_notice) == 2, "cross-source dedup poisoning possible"
+
+
+@pytest.mark.asyncio
+async def test_send_failure_rolls_back_dedup_for_retry():
+    failing = _SendSpy(fail=True)
+    relay = AlertTelegramRelay(send_fn=failing, owner_chat_id="1")
+    e = _alert_event("critical")
+    await relay(e)
+    await relay.flush()
+    # transport recovers; same alert must be sendable again
+    ok = _SendSpy()
+    relay._send = ok
+    await relay(e)
+    await relay.flush()
+    assert len(ok.sent) == 1
+
+
+@pytest.mark.asyncio
+async def test_async_sanitizer_supported():
+    # Production sanitizer (presidio) is async — relay must await it.
+    spy = _SendSpy()
+
+    async def _san(text: str) -> str:
+        return text.replace("555-12-3456", "[SSN]")
+
+    relay = AlertTelegramRelay(send_fn=spy, owner_chat_id="1", sanitize_fn=_san)
+    await relay(_alert_event("critical", message="SSN 555-12-3456 detected"))
+    await relay.flush()
+    assert "555-12-3456" not in spy.sent[0][1]
+    assert "[SSN]" in spy.sent[0][1]

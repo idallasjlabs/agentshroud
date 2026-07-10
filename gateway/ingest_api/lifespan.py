@@ -1312,9 +1312,18 @@ async def lifespan(app: FastAPI):
             from ..security.rbac_config import RBACConfig
             from .alert_telegram_relay import AlertTelegramRelay
 
+            async def _alert_sanitize(text: str) -> str:
+                # Scanner findings can embed the matched secret/PII —
+                # redact before the text leaves for Telegram (external).
+                if getattr(app_state, "sanitizer", None):
+                    result = await app_state.sanitizer.sanitize(text)
+                    return result.sanitized_content
+                return text
+
             app_state.alert_telegram_relay = AlertTelegramRelay(
                 send_fn=app_state.egress_notifier.send_text,
                 owner_chat_id=RBACConfig().owner_user_id,
+                sanitize_fn=_alert_sanitize,
             )
             await app_state.event_bus.subscribe(app_state.alert_telegram_relay)
             logger.info("AlertTelegramRelay subscribed to event bus")
