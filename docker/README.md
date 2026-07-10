@@ -342,3 +342,26 @@ Once chat is working:
 **Status**: ✅ Ready for user testing
 **Pending**: User must add Anthropic API key to `secrets/anthropic_api_key.txt`
 **Next**: Follow [QUICKSTART.md](./QUICKSTART.md) to start the stack
+
+
+## Cron Failure Alerting (SCRUM-61)
+
+The gateway watches both bots' persisted cron job stores and Telegrams the
+owner when a job starts failing — no bot-side configuration needed.
+
+Chain: `CronStateMonitor` (polls, default 60 s) → `AlertDispatcher` →
+`POST /api/alerts` → event bus → `AlertTelegramRelay` → owner Telegram.
+
+| Env var (gateway) | Default | Purpose |
+|---|---|---|
+| `AGENTSHROUD_CRON_STORES` | `openclaw:/data/bot-config/cron/jobs.json,hermes:/data/hermes-config/cron/jobs.json` | Comma-separated `bot:path` cron stores to watch |
+| `AGENTSHROUD_CRON_MONITOR_INTERVAL` | `60` | Poll interval, seconds |
+
+Alert policy: first failure of a job → HIGH (one Telegram); 3+ consecutive
+errors → one CRITICAL escalation; recovery closes the episode (re-alerts on
+the next failure). Relay-side: PII-sanitized, 24 h dedup, 10/h cap with an
+explicit "N suppressed" notice, warnings can never starve critical alerts.
+
+Requires the `hermes-config` volume mounted read-only into the gateway
+(present in this compose file). A missing mount degrades gracefully — the
+store is skipped with a debug log.

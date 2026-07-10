@@ -1334,6 +1334,40 @@ async def lifespan(app: FastAPI):
         app_state.alert_telegram_relay = None
         logger.error("AlertTelegramRelay wiring failed: %s", e)
 
+    # Cron job failure monitor (SCRUM-61 part 2): polls the bots' cron
+    # stores (mounted read-only) and dispatches failures through
+    # AlertDispatcher → /api/alerts → event bus → Telegram relay.
+    try:
+        if getattr(app_state, "alert_dispatcher", None):
+            from ..security.cron_state_monitor import CronStateMonitor
+
+            _stores_env = os.environ.get(
+                "AGENTSHROUD_CRON_STORES",
+                "openclaw:/data/bot-config/cron/jobs.json,"
+                "hermes:/data/hermes-config/cron/jobs.json",
+            )
+            _stores: dict[str, str] = {}
+            for _entry in _stores_env.split(","):
+                _entry = _entry.strip()
+                if _entry and ":" in _entry:
+                    _bot, _path = _entry.split(":", 1)
+                    _stores[_bot.strip()] = _path.strip()
+            if _stores:
+                app_state.cron_state_monitor = CronStateMonitor(
+                    stores=_stores,
+                    dispatch_fn=app_state.alert_dispatcher.dispatch,
+                )
+                app_state.cron_state_monitor.start()
+                logger.info("CronStateMonitor started for stores: %s", list(_stores))
+            else:
+                app_state.cron_state_monitor = None
+        else:
+            app_state.cron_state_monitor = None
+            logger.warning("CronStateMonitor skipped — AlertDispatcher unavailable")
+    except Exception as e:
+        app_state.cron_state_monitor = None
+        logger.error("CronStateMonitor wiring failed: %s", e)
+
     # Initialize HTTP CONNECT proxy (port 8181)
     # Activated in the FINAL PR by setting HTTP_PROXY on the bot container.
     # Running it now adds zero risk — the bot doesn't use it until then.
@@ -2110,6 +2144,13 @@ async def lifespan(app: FastAPI):
 
     # === SHUTDOWN ===
     logger.info("AgentShroud Gateway shutting down...")
+
+    # Stop the cron failure monitor's poll loop
+    if getattr(app_state, "cron_state_monitor", None):
+        try:
+            await app_state.cron_state_monitor.stop()
+        except Exception:
+            pass
 
     # Drain the Telegram I/O executor without blocking shutdown.
     try:
