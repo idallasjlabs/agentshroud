@@ -56,6 +56,17 @@ services:
       - ../.benchmarks:/app/.benchmarks:ro
       - agentshroud-workspace:/data/bot-workspace:ro
       - agentshroud-config:/data/bot-config:ro
+      # Hermes cron store ONLY (subpath-scoped), read-only — CronStateMonitor
+      # (SCRUM-61) watches job lastStatus for failure alerting.  The full
+      # hermes-config volume also holds auth.json/mcp.json credentials and
+      # must NOT be visible to the gateway (review finding).  OpenClaw's
+      # store is already visible via /data/bot-config/cron/jobs.json above.
+      - type: volume
+        source: hermes-config
+        target: /data/hermes-config/cron
+        read_only: true
+        volume:
+          subpath: cron
       - security-reports:/var/log/security
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - wazuh-alerts:/var/ossec/logs/alerts
