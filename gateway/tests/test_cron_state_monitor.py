@@ -182,3 +182,113 @@ async def test_poll_loop_runs_and_stops(tmp_path):
     await mon.stop()
     assert task.done()
     assert len(spy.alerts) == 1
+
+
+# ── Adversarial-review hardening (2026-07-11) ────────────────────────────────
+
+
+class _DedupDispatchFake:
+    """Mimics AlertDispatcher's id-based 24h dedup — the real downstream."""
+
+    def __init__(self):
+        self.seen: set[str] = set()
+        self.delivered: list[dict] = []
+
+    def __call__(self, alert: dict) -> dict:
+        if alert["id"] in self.seen:
+            return {"action": "deduped"}
+        self.seen.add(alert["id"])
+        self.delivered.append(alert)
+        return {"action": "notified"}
+
+
+class TestAdversarial:
+    def test_malformed_consecutive_errors_does_not_blind_store(self, tmp_path):
+        # One crafted job must not discard the whole pass (was: ValueError
+        # from int() killed the store; a real failing job went unreported).
+        spy = _DispatchSpy()
+        bad = _oc_job(job_id="crafted", status="ok")
+        bad["state"]["consecutiveErrors"] = "NaNlol"
+        good = _oc_job(job_id="real", name="real job", status="error", consecutive=1)
+        path = _openclaw_store(tmp_path, [bad, good])
+        mon = CronStateMonitor({"openclaw": path}, dispatch_fn=spy)
+        mon.check()
+        assert len(spy.alerts) == 1
+        assert "real job" in spy.alerts[0]["message"]
+
+    def test_oversized_store_skipped(self, tmp_path):
+        spy = _DispatchSpy()
+        p = tmp_path / "huge.json"
+        p.write_text('{"jobs": [' + '"x",' * 2_000_000 + '"x"]}')
+        mon = CronStateMonitor({"openclaw": str(p)}, dispatch_fn=spy)
+        mon.check()  # must not OOM-parse or raise
+        assert spy.alerts == []
+
+    def test_flood_capped_with_aggregate_alert(self, tmp_path):
+        # Thousands of fake failing jobs must not exhaust the shared
+        # AlertDispatcher hourly budget: at most 5 individual episodes per
+        # bot per pass, the rest fold into ONE aggregate.
+        spy = _DispatchSpy()
+        jobs = [
+            _oc_job(job_id=f"fake{i}", name=f"fake {i}", status="error", consecutive=1)
+            for i in range(50)
+        ]
+        path = _openclaw_store(tmp_path, jobs)
+        mon = CronStateMonitor({"openclaw": path}, dispatch_fn=spy)
+        mon.check()
+        assert len(spy.alerts) == 6  # 5 individual + 1 aggregate
+        agg = spy.alerts[-1]
+        assert "45" in agg["message"] and "flood guard" in agg["message"]
+        # Second pass: episodes already open — no re-flood.
+        mon.check()
+        assert len(spy.alerts) == 6
+
+    def test_recovery_refail_realerts_through_real_dedup(self, tmp_path):
+        # fail → recover → fail with an UNCHANGED last_run marker must still
+        # re-alert against AlertDispatcher's id-dedup (was: same episode id
+        # regenerated and swallowed).
+        fake = _DedupDispatchFake()
+        path = _openclaw_store(tmp_path, [_oc_job(status="error", consecutive=1)])
+        mon = CronStateMonitor({"openclaw": path}, dispatch_fn=fake)
+        mon.check()
+        _openclaw_store(tmp_path, [_oc_job(status="ok", consecutive=0)])
+        mon.check()
+        _openclaw_store(tmp_path, [_oc_job(status="error", consecutive=1)])
+        mon.check()
+        assert len(fake.delivered) == 2, "re-failure after recovery was dedup-swallowed"
+
+    def test_hermes_jobs_reach_critical_via_observed_runs(self, tmp_path):
+        # Hermes stores have no consecutiveErrors counter — escalation must
+        # come from the monitor observing repeated failing RUNS (last_run
+        # advancing while failing).
+        spy = _DispatchSpy()
+        for i, run_at in enumerate(["t1", "t2", "t3"]):
+            job = _hermes_job(status="fail", error="down")
+            job["last_run_at"] = run_at
+            path = _hermes_store(tmp_path, [job])
+            if i == 0:
+                mon = CronStateMonitor({"hermes": path}, dispatch_fn=spy)
+            else:
+                mon._stores["hermes"] = path
+            mon.check()
+        severities = [a["severity"] for a in spy.alerts]
+        assert severities == ["HIGH", "CRITICAL"]
+
+    def test_job_name_capped_in_alert(self, tmp_path):
+        spy = _DispatchSpy()
+        path = _openclaw_store(
+            tmp_path, [_oc_job(name="N" * 100_000, status="error", consecutive=1)]
+        )
+        mon = CronStateMonitor({"openclaw": path}, dispatch_fn=spy)
+        mon.check()
+        assert len(spy.alerts[0]["message"]) < 1000
+
+    @pytest.mark.asyncio
+    async def test_start_is_idempotent(self, tmp_path):
+        spy = _DispatchSpy()
+        path = _openclaw_store(tmp_path, [_oc_job()])
+        mon = CronStateMonitor({"openclaw": path}, dispatch_fn=spy, interval_seconds=10)
+        t1 = mon.start()
+        t2 = mon.start()
+        assert t1 is t2
+        await mon.stop()
