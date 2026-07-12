@@ -15,6 +15,21 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import Dict, List, Set
 
+VALID_ENFORCEMENT_MODES = ("enforce", "monitor")
+
+
+def resolve_enforcement_mode(value: object) -> str:
+    """Fail-closed resolver for the enforcement-mode env var (SCRUM-78).
+
+    Returns "monitor" ONLY for the exact case-insensitive token "monitor";
+    any other input — None, "", whitespace, "off", "true", typos like
+    "moniter" — resolves to "enforce".  A security lever must never open
+    (degrade to log-only) by accident.
+    """
+    if isinstance(value, str) and value.strip().lower() == "monitor":
+        return "monitor"
+    return "enforce"
+
 
 class TrustLevel(Enum):
     """Trust levels from untrusted to verified."""

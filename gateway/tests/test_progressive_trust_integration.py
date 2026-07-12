@@ -383,10 +383,14 @@ class TestEnforcementMode:
             # The would-be denial is recorded...
             assert "MONITOR (would-deny) by trust ladder" in caplog.text
             assert enforcer._monitor_would_deny_counts.get("1234") == 1
-            # ...and the TRUST gate did not block: the call fell through to
-            # the role-based ACL, so any resulting denial reason comes from the
-            # ACL, never the trust gate (which would have said "trust level").
+            # ...and the TRUST gate did not block: the call fell through to the
+            # role-based ACL, which makes its OWN independent decision.  Here
+            # write_file for a viewer is denied by deny-unknown — so the denial
+            # is real and attributable to the ACL, not the (now-silent) trust
+            # gate (which would have said "trust level").
+            assert allowed is False
             assert "trust level" not in reason
+            assert "allowlist" in reason.lower() or "unknown" in reason.lower()
         finally:
             tm.close()
 
@@ -408,3 +412,33 @@ class TestEnforcementMode:
             assert enforcer._monitor_would_deny_counts.get("agent") is None
         finally:
             tm.close()
+
+
+class TestEnforcementModeResolver:
+    """SCRUM-78 — the env-var resolver must fail CLOSED (enforce)."""
+
+    def test_monitor_token_resolves_monitor(self):
+        from gateway.security.progressive_trust_config import resolve_enforcement_mode
+
+        assert resolve_enforcement_mode("monitor") == "monitor"
+        assert resolve_enforcement_mode(" MONITOR ") == "monitor"
+
+    def test_everything_else_fails_closed_to_enforce(self):
+        from gateway.security.progressive_trust_config import resolve_enforcement_mode
+
+        for bad in [
+            None,
+            "",
+            "  ",
+            "enforce",
+            "off",
+            "true",
+            "1",
+            "moniter",
+            "disable",
+            "MONITER",
+            0,
+            {},
+            ["monitor"],
+        ]:
+            assert resolve_enforcement_mode(bad) == "enforce", bad

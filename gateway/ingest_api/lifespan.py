@@ -310,9 +310,11 @@ async def lifespan(app: FastAPI):
         # config's own default ("enforce" — unchanged behavior); set
         # AGENTSHROUD_PROGRESSIVE_ENFORCEMENT=monitor to log would-be denials
         # without blocking (staged rollout / instant rollback valve).
-        _pt_mode = os.environ.get("AGENTSHROUD_PROGRESSIVE_ENFORCEMENT", "").strip().lower()
-        if _pt_mode in ("monitor", "enforce"):
-            _pt_cfg.enforcement_mode = _pt_mode
+        from ..security.progressive_trust_config import resolve_enforcement_mode
+
+        _pt_cfg.enforcement_mode = resolve_enforcement_mode(
+            os.environ.get("AGENTSHROUD_PROGRESSIVE_ENFORCEMENT")
+        )
         app_state.trust_manager = TrustManager(progressive_config=_pt_cfg)
         logger.info("TrustManager progressive-trust ladder: %s mode", _pt_cfg.enforcement_mode)
         # Register the known agent identities with STANDARD trust so internal
