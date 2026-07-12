@@ -15,6 +15,21 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import Dict, List, Set
 
+VALID_ENFORCEMENT_MODES = ("enforce", "monitor")
+
+
+def resolve_enforcement_mode(value: object) -> str:
+    """Fail-closed resolver for the enforcement-mode env var (SCRUM-78).
+
+    Returns "monitor" ONLY for the exact case-insensitive token "monitor";
+    any other input — None, "", whitespace, "off", "true", typos like
+    "moniter" — resolves to "enforce".  A security lever must never open
+    (degrade to log-only) by accident.
+    """
+    if isinstance(value, str) and value.strip().lower() == "monitor":
+        return "monitor"
+    return "enforce"
+
 
 class TrustLevel(Enum):
     """Trust levels from untrusted to verified."""
@@ -154,6 +169,14 @@ class ProgressiveTrustConfig:
     severe_violation_types: Set[ViolationType] = field(
         default_factory=lambda: {ViolationType.MALICIOUS_INTENT, ViolationType.UNAUTHORIZED_ACCESS}
     )
+
+    # Enforcement mode — the operational monitor↔enforce lever (SCRUM-78).
+    # "enforce" (default): a trust-ladder deny blocks the tool call — current,
+    #   tested behavior; the default is unchanged so no rollout regresses.
+    # "monitor": the would-be denial is logged but the call falls through to
+    #   the role-based ACL — used to measure blast radius before enforcing a
+    #   new/expanded ladder vocabulary, and as an instant rollback valve.
+    enforcement_mode: str = "enforce"
 
     # Database settings
     db_path: str = "progressive_trust.db"

@@ -104,6 +104,10 @@ services:
       - AGENTSHROUD_COLLAB_LOCAL_INFO_ONLY=0
       - AGENTSHROUD_TEAMS_JSON=${AGENTSHROUD_TEAMS_JSON:-}
       - AGENTSHROUD_OWNER_DISPLAY_NAME=${AGENTSHROUD_OWNER_DISPLAY_NAME:-Isaiah}
+      # Progressive-trust tool-ACL enforcement (SCRUM-78): 'enforce' (default,
+      # blocks a too-low-trust tool call) or 'monitor' (log the would-be denial
+      # only — staged rollout / instant rollback valve).
+      - AGENTSHROUD_PROGRESSIVE_ENFORCEMENT=${AGENTSHROUD_PROGRESSIVE_ENFORCEMENT:-enforce}
       - AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-cloud}
       - AGENTSHROUD_CLOUD_MODEL_REF=${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}
       - AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}

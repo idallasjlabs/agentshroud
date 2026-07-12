@@ -365,3 +365,21 @@ explicit "N suppressed" notice, warnings can never starve critical alerts.
 Requires the `hermes-config` volume mounted read-only into the gateway
 (present in this compose file). A missing mount degrades gracefully — the
 store is skipped with a debug log.
+
+## Progressive-Trust Enforcement Mode (SCRUM-78)
+
+Tool calls are gated by the progressive-trust ladder: an agent/user must reach
+the trust level a tool requires (`gateway/security/progressive_trust_config.py`).
+This is **enforced by default** — a level-too-low call is blocked.
+
+To size the blast radius of a new or expanded ladder vocabulary before it
+starts denying (or as an instant rollback valve), run in monitor mode:
+
+```bash
+AGENTSHROUD_PROGRESSIVE_ENFORCEMENT=monitor   # log "would-deny", don't block
+AGENTSHROUD_PROGRESSIVE_ENFORCEMENT=enforce   # default: block (omit to keep)
+```
+
+In monitor mode the gateway logs `ToolACL MONITOR (would-deny) by trust ladder`
+for each call that enforce mode *would* block, and per-user would-deny counts
+accumulate on the enforcer — flip to `enforce` once the logs look clean.
