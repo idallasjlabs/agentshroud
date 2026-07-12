@@ -77,7 +77,7 @@ published]
 |---|---|---|---|
 | 1 | No formal third-party attestation (SOC 2 Type II) backing the control claims | Enterprise procurement friction; competitor MintMCP holds a real audit | Scoping in **SCRUM-99** (go/no-go with budget) |
 | 2 | No packaged conformity-assessment support kit (deployer-facing evidence bundle: control descriptions, log samples, DPIA input template) | Deployers assemble evidence manually | Extend this matrix into a deployer kit; candidate v1.2 marketing/compliance work under **SCRUM-54** |
-| 3 | ProgressiveTrust ladder enforcement defaults OFF (monitor-only) | Art. 26 "competent oversight" story is partially aspirational until enforced | **SCRUM-78** (staged monitor→enforce rollout) |
+| 3 | ProgressiveTrust ladder is ENFORCED, but coverage is limited to its ~40-tool vocabulary; unknown tools fall through to RBAC | Art. 26 oversight is real for in-vocabulary tools; broadening coverage is the open work | **SCRUM-78** shipped the monitor↔enforce operational lever; vocabulary expansion tracked separately |
 | 4 | Art. 13 instructions-for-use: no single operator manual consolidating interpretation of pipeline decisions | Transparency obligation met by dashboards, not docs | Fold into docs backlog; candidate for the v1.2 WS-E audit outputs (**SCRUM-72**) |
 | 5 | Historical open findings (29) not yet individually verified against current main | Unverified claims would be security theater | **SCRUM-95** triage feeds WS-E.3 fix-or-accept (**SCRUM-74**) |
 | 6 | EU AI Act final harmonized standards (CEN-CENELEC) not yet mapped item-by-item | Mapping is at article level, not standard level | Revisit when harmonized standards publish [verify] |

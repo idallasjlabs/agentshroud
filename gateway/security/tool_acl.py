@@ -226,6 +226,9 @@ class ToolACLEnforcer:
         self._tool_call_times: Dict[str, Dict[str, List[float]]] = {}
         # V9-2: per-user denial counter for SOC cross-signal correlation
         self._denial_counts: Dict[str, int] = {}
+        # Monitor-mode (SCRUM-78) would-have-denied counts, per user — lets an
+        # operator size the enforcement blast radius before flipping to enforce.
+        self._monitor_would_deny_counts: Dict[str, int] = {}
 
     def can_use_tool(self, user_id: str, tool_name: str) -> Tuple[bool, str]:
         """Check whether user_id may invoke the named tool.
@@ -253,14 +256,31 @@ class ToolACLEnforcer:
                 verdict = None
             if verdict is False:
                 reason = f"tool '{tool_name}' requires a higher trust level for {user_id}"
-                logger.warning(
-                    "ToolACL DENIED by trust ladder: user=%s role=%s tool=%s",
-                    user_id,
-                    role_value,
-                    tool_name,
-                )
-                self._denial_counts[user_id] = self._denial_counts.get(user_id, 0) + 1
-                return False, reason
+                # Monitor mode (SCRUM-78): log the would-be denial and fall
+                # through to the role-based ACL instead of blocking, so a new
+                # or expanded ladder vocabulary can be measured before it
+                # starts denying — and flipped back instantly if it misfires.
+                _cfg = getattr(self._trust_manager, "progressive_config", None)
+                _mode = getattr(_cfg, "enforcement_mode", "enforce")
+                if _mode == "monitor":
+                    logger.warning(
+                        "ToolACL MONITOR (would-deny) by trust ladder: " "user=%s role=%s tool=%s",
+                        user_id,
+                        role_value,
+                        tool_name,
+                    )
+                    self._monitor_would_deny_counts[user_id] = (
+                        self._monitor_would_deny_counts.get(user_id, 0) + 1
+                    )
+                else:
+                    logger.warning(
+                        "ToolACL DENIED by trust ladder: user=%s role=%s tool=%s",
+                        user_id,
+                        role_value,
+                        tool_name,
+                    )
+                    self._denial_counts[user_id] = self._denial_counts.get(user_id, 0) + 1
+                    return False, reason
 
         # Private tools: owner-only
         if tool_lower in self._acl.effective_private:
@@ -396,8 +416,7 @@ class ToolACLEnforcer:
         # Step 5: Read-only members are denied high-risk tools outright.
         if group_role == GroupRole.READ_ONLY and group_role_resolver.is_high_risk_tool(tool_lower):
             reason = (
-                f"tool '{tool_name}' is high-risk; "
-                f"read-only group members cannot invoke it"
+                f"tool '{tool_name}' is high-risk; " f"read-only group members cannot invoke it"
             )
             logger.warning(
                 "ToolACL DENIED high-risk tool for read-only member: "

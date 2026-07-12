@@ -155,6 +155,14 @@ class ProgressiveTrustConfig:
         default_factory=lambda: {ViolationType.MALICIOUS_INTENT, ViolationType.UNAUTHORIZED_ACCESS}
     )
 
+    # Enforcement mode — the operational monitor↔enforce lever (SCRUM-78).
+    # "enforce" (default): a trust-ladder deny blocks the tool call — current,
+    #   tested behavior; the default is unchanged so no rollout regresses.
+    # "monitor": the would-be denial is logged but the call falls through to
+    #   the role-based ACL — used to measure blast radius before enforcing a
+    #   new/expanded ladder vocabulary, and as an instant rollback valve.
+    enforcement_mode: str = "enforce"
+
     # Database settings
     db_path: str = "progressive_trust.db"
 

@@ -305,7 +305,16 @@ async def lifespan(app: FastAPI):
     try:
         from ..security.progressive_trust_config import ProgressiveTrustConfig
 
-        app_state.trust_manager = TrustManager(progressive_config=ProgressiveTrustConfig())
+        _pt_cfg = ProgressiveTrustConfig()
+        # Operational monitor↔enforce lever (SCRUM-78).  Defaults to the
+        # config's own default ("enforce" — unchanged behavior); set
+        # AGENTSHROUD_PROGRESSIVE_ENFORCEMENT=monitor to log would-be denials
+        # without blocking (staged rollout / instant rollback valve).
+        _pt_mode = os.environ.get("AGENTSHROUD_PROGRESSIVE_ENFORCEMENT", "").strip().lower()
+        if _pt_mode in ("monitor", "enforce"):
+            _pt_cfg.enforcement_mode = _pt_mode
+        app_state.trust_manager = TrustManager(progressive_config=_pt_cfg)
+        logger.info("TrustManager progressive-trust ladder: %s mode", _pt_cfg.enforcement_mode)
         # Register the known agent identities with STANDARD trust so internal
         # API calls are not blocked. "default" is the legacy fallback;
         # "openclaw" and "hermes" are the production bot_ids.
