@@ -183,3 +183,51 @@ class TestReportAPI:
         bots = {it["bot"] for it in client.get("/api/reports").json()["reports"]}
         assert bots == {"hermes", "openclaw"}  # each bot sees the other's report
         assert len(client.get("/api/reports?bot=hermes").json()["reports"]) == 1
+
+
+class TestReviewHardening:
+    """SCRUM-79 adversarial-review follow-ups (2026-07-13)."""
+
+    def test_title_and_tags_sanitized_sync(self, tmp_path):
+        s = ReportStore(root=str(tmp_path / "r"), sanitize_fn=lambda t: t.replace("SECRET", "[X]"))
+        rid = s.save(bot="hermes", title="SECRET plan", content="body", tags=["SECRET-tag", "ok"])
+        rec = s.get(rid)
+        assert "SECRET" not in rec["title"] and "[X]" in rec["title"]
+        assert all("SECRET" not in t for t in rec["tags"])
+
+    @pytest.mark.asyncio
+    async def test_title_and_tags_sanitized_async(self, tmp_path):
+        async def _san(t):
+            return t.replace("SECRET", "[X]")
+
+        s = ReportStore(root=str(tmp_path / "r"), sanitize_fn=_san)
+        rid = await s.save_async(bot="hermes", title="SECRET", content="c", tags=["SECRET"])
+        rec = s.get(rid)
+        assert "SECRET" not in rec["title"]
+        assert all("SECRET" not in t for t in rec["tags"])
+
+    def test_async_sanitizer_refused_on_sync_save(self, tmp_path):
+        async def _san(t):
+            return t
+
+        s = ReportStore(root=str(tmp_path / "r"), sanitize_fn=_san)
+        with pytest.raises(RuntimeError):
+            s.save(bot="hermes", title="t", content="c")
+
+    def test_count_cap_prunes_oldest(self, tmp_path):
+        import time
+
+        s = ReportStore(root=str(tmp_path / "r"), max_reports=3)
+        ids = []
+        for i in range(5):
+            ids.append(s.save(bot="hermes", title=f"t{i}", content=str(i)))
+            time.sleep(0.001)  # distinct created timestamps for ordering
+        remaining = {it["id"] for it in s.list()}
+        assert len(remaining) == 3
+        # oldest two pruned, newest three kept
+        assert ids[0] not in remaining and ids[1] not in remaining
+        assert ids[4] in remaining
+
+    def test_content_cap_default_is_1mb(self, tmp_path):
+        s = ReportStore(root=str(tmp_path / "r"))
+        assert s._max_content_bytes == 1024 * 1024

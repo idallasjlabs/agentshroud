@@ -402,4 +402,13 @@ reads. Content is PII-sanitized on write.
 | `AGENTSHROUD_REPORTS_DIR` | `/app/data/reports` | Store location on the gateway-data volume |
 
 Report ids are server-generated and path-safe; the store rejects any
-non-token id, caps content size, and tolerates corrupt files in listings.
+non-token id, caps content size (1 MB, matching the request-body limit),
+bounds report count (oldest pruned), sanitizes ALL free-text fields
+(content, title, tags), and tolerates corrupt files in listings.
+
+**Confidentiality note:** the gateway-data volume is read-only-mounted into
+both bots, so this is a **shared bulletin board — every bot can read every
+report** (directly, even bypassing the API). It is not per-bot access-
+controlled storage; that is why all free-text is sanitized on write. If
+per-bot confidentiality is ever needed, give the store its own volume not
+mounted into the bots.
