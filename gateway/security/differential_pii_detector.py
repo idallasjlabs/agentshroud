@@ -164,6 +164,40 @@ def _normalize_adversarial(text: str) -> tuple[str, int]:
 # These supplement Presidio when it is unavailable.
 # ---------------------------------------------------------------------------
 
+# Pinned spaCy model — must match the standard PII sanitizer so both passes use
+# the same, deliberately-installed model and never auto-download a default one.
+_PRESIDIO_MODEL_NAME = "en_core_web_sm"
+
+# Presidio entity allowlist.  Restricting analyze() to genuine PII types keeps
+# the NER model from flagging benign nouns (e.g. a city name as LOCATION) as
+# "PII", which would false-positive on clean content.  Types here mirror the
+# regex core plus the identity entities Presidio recognises reliably.
+_PRESIDIO_ENTITIES = [
+    "EMAIL_ADDRESS",
+    "US_SSN",
+    "US_ITIN",  # Individual Taxpayer ID — SSN-class government identifier
+    "PHONE_NUMBER",
+    "CREDIT_CARD",
+    "PERSON",
+    "IP_ADDRESS",
+    "IBAN_CODE",
+    "US_BANK_NUMBER",
+    "CRYPTO",
+    "MEDICAL_LICENSE",
+    "US_PASSPORT",
+    "US_DRIVER_LICENSE",
+]
+
+# Core patterns that must be caught regardless of which engine is active — the
+# "standard PII always caught" contract.  On the Presidio path these are
+# unioned with Presidio's results so a context-sensitive score drop can never
+# let a plainly-formatted SSN / email / card / street address slip through.
+# LOCATION is here (not in the NER allowlist above) deliberately: the NER model
+# flags bare place names ("London") as LOCATION and false-positives, but the
+# street-address REGEX below (number + street + suffix) is precise, so we catch
+# addresses on both paths without the city-name false positive.
+_CORE_ALWAYS_ENTITY_TYPES = {"EMAIL_ADDRESS", "US_SSN", "CREDIT_CARD", "LOCATION"}
+
 _PII_PATTERNS: list[dict[str, Any]] = [
     # RFC 5322-compliant email (high confidence)
     {
@@ -201,6 +235,17 @@ _PII_PATTERNS: list[dict[str, Any]] = [
         "entity_type": "CREDIT_CARD",
         "pattern": re.compile(r"\b(?:4\d{3}|5[1-5]\d{2}|3[47]\d{2}|6011)\s?\d{4}\s?\d{4}\s?\d{4}\b"),
         "confidence": 0.90,
+    },
+    # Street address — number + street name + type suffix (mirrors the standard
+    # sanitizer).  Precise enough to avoid flagging bare place names as PII.
+    {
+        "entity_type": "LOCATION",
+        "pattern": re.compile(
+            r"\b\d+\s+[A-Z][a-z]+\s+"
+            r"(?:Street|St|Avenue|Ave|Road|Rd|Boulevard|Blvd|Lane|Ln|Drive|Dr|Court|Ct|Way)\b",
+            re.IGNORECASE,
+        ),
+        "confidence": 0.85,
     },
 ]
 
@@ -273,15 +318,47 @@ class DifferentialPIIDetector:
         self._init_presidio()
 
     def _init_presidio(self) -> None:
-        """Attempt to initialise Presidio; fall back to regex silently."""
+        """Attempt to initialise Presidio deterministically; else regex.
+
+        SECURITY: never construct a bare ``AnalyzerEngine()``.  Presidio's
+        default engine auto-downloads ``en_core_web_lg`` (~400 MB) over the
+        network the first time it is built — an unacceptable runtime egress in
+        a gateway that enforces default-deny outbound, and a source of
+        environment-dependent behaviour (the fetch fails on the read-only
+        production image → regex, but succeeds on a writable/networked CI
+        runner → NER active).  Instead probe for an explicitly pinned model
+        (``en_core_web_sm``, matching the standard PII sanitizer) and only
+        enable Presidio with that model wired in.  If the model is absent, fall
+        back to regex — no download, same behaviour everywhere.
+        """
         try:
+            import spacy
+
+            # Probe the pinned model.  Raises if it is not installed — we do
+            # NOT let Presidio auto-fetch a default model.
+            spacy.load(_PRESIDIO_MODEL_NAME)
+
             from presidio_analyzer import AnalyzerEngine
+            from presidio_analyzer.nlp_engine import NlpEngineProvider
             from presidio_anonymizer import AnonymizerEngine
 
-            self._presidio_analyzer = AnalyzerEngine()
+            nlp_engine = NlpEngineProvider(
+                nlp_configuration={
+                    "nlp_engine_name": "spacy",
+                    "models": [{"lang_code": "en", "model_name": _PRESIDIO_MODEL_NAME}],
+                }
+            ).create_engine()
+            self._presidio_analyzer = AnalyzerEngine(
+                nlp_engine=nlp_engine, supported_languages=["en"]
+            )
             self._presidio_anonymizer = AnonymizerEngine()
-            logger.debug("DifferentialPIIDetector: using Presidio engine")
+            logger.debug(
+                "DifferentialPIIDetector: using Presidio engine (model=%s)",
+                _PRESIDIO_MODEL_NAME,
+            )
         except Exception as exc:
+            self._presidio_analyzer = None
+            self._presidio_anonymizer = None
             logger.debug(
                 "DifferentialPIIDetector: Presidio unavailable (%s) — using regex fallback",
                 exc,
@@ -368,12 +445,22 @@ class DifferentialPIIDetector:
         return self._detect_regex(text, floor)
 
     def _detect_presidio(self, text: str, floor: float) -> list[PIIHit]:
-        """Use Presidio with the given confidence floor."""
+        """Use Presidio (entity-restricted) unioned with the core regex.
+
+        Two guarantees layered here:
+        - ``entities=_PRESIDIO_ENTITIES`` restricts NER to genuine PII types, so
+          a benign noun (a city flagged LOCATION, a bare date) never
+          false-positives as PII.
+        - the core high-confidence patterns (SSN / email / card) are always
+          run and unioned in, so a context-sensitive Presidio score drop can't
+          let plainly-formatted standard PII slip through the tool-result floor.
+        """
         assert self._presidio_analyzer is not None
         try:
             results = self._presidio_analyzer.analyze(
                 text=text,
                 language="en",
+                entities=_PRESIDIO_ENTITIES,
                 score_threshold=floor,
             )
             hits: list[PIIHit] = []
@@ -388,7 +475,12 @@ class DifferentialPIIDetector:
                         text=text[r.start:r.end],
                     )
                 )
-            return hits
+            # Union the core "always caught" patterns so standard PII is never
+            # missed on the Presidio path, then dedupe overlaps.
+            for hit in self._detect_regex(text, floor):
+                if hit.entity_type in _CORE_ALWAYS_ENTITY_TYPES:
+                    hits.append(hit)
+            return self._deduplicate(hits)
         except Exception as exc:
             logger.error("DifferentialPIIDetector Presidio error: %s — falling back to regex", exc)
             return self._detect_regex(text, floor)
