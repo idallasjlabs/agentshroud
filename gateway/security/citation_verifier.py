@@ -62,6 +62,38 @@ class FetchOutcome:
 Fetcher = Callable[[str], FetchOutcome]
 
 
+def make_httpx_fetcher(timeout: float = 10.0) -> Fetcher:
+    """Production fetcher: GET the URL and hash the body as proof-of-source.
+
+    SECURITY: ``follow_redirects=False`` — a followed 3xx could send the fetch
+    to an off-allowlist host (the allowlist was checked against the *original*
+    URL), so a redirect is a non-2xx and the citation is rejected.  Any network
+    error maps to status 599 / no content, which the verifier treats as
+    unproven.  The verifier has already allowlist-gated and SSRF-sanitised the
+    URL before this runs.
+    """
+    import hashlib
+
+    import httpx
+
+    def _fetch(url: str) -> FetchOutcome:
+        try:
+            resp = httpx.get(url, timeout=timeout, follow_redirects=False)
+            body = resp.content or b""
+            sha = hashlib.sha256(body).hexdigest() if body else None
+            return FetchOutcome(
+                url=url,
+                status=resp.status_code,
+                content_sha256=sha,
+                fetched_at=time.time(),
+            )
+        except Exception as exc:  # network error, timeout, TLS failure, …
+            logger.info("citation fetch failed for %s: %s", url, exc)
+            return FetchOutcome(url=url, status=599, content_sha256=None, fetched_at=time.time())
+
+    return _fetch
+
+
 @dataclass
 class DraftEntry:
     """An unverified competitor claim submitted for citation checking."""
