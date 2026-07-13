@@ -101,9 +101,7 @@ def make_httpx_fetcher(timeout: float = 10.0, max_bytes: int = _MAX_FETCH_BYTES)
                     if total >= max_bytes:
                         break
             sha = hasher.hexdigest() if total else None
-            return FetchOutcome(
-                url=url, status=status, content_sha256=sha, fetched_at=time.time()
-            )
+            return FetchOutcome(url=url, status=status, content_sha256=sha, fetched_at=time.time())
         except Exception as exc:  # network error, timeout, TLS failure, …
             logger.info("citation fetch failed for %s: %s", url, exc)
             return FetchOutcome(url=url, status=599, content_sha256=None, fetched_at=time.time())
