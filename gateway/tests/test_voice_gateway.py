@@ -783,7 +783,10 @@ def test_ws_full_utterance_state_sequence(monkeypatch):
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
 
-    pcm_reply = _pcm_bytes(100)
+    # Distinct NON-ZERO reply PCM: with an all-zero reply the pad+reply
+    # concatenation would be indistinguishable from any equal-length silence,
+    # so the assertion would only check length.  Non-zero pins pad-then-reply.
+    pcm_reply = b"\x07\x00" * 100
 
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "what time is it")
     monkeypatch.setattr(tts_mod, "synthesize", lambda t: pcm_reply)
@@ -1125,7 +1128,9 @@ def test_ws_one_sentence_reply_unchanged(monkeypatch):
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
 
-    pcm_reply = _pcm_bytes(100)
+    # Distinct non-zero reply so the pad+reply assertion pins structure, not
+    # just total length (an all-zero reply is indistinguishable from silence).
+    pcm_reply = b"\x07\x00" * 100
     synth_calls: list[str] = []
 
     def _mock_synthesize(text: str) -> bytes:
