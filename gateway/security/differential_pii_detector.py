@@ -175,6 +175,7 @@ _PRESIDIO_MODEL_NAME = "en_core_web_sm"
 _PRESIDIO_ENTITIES = [
     "EMAIL_ADDRESS",
     "US_SSN",
+    "US_ITIN",  # Individual Taxpayer ID — SSN-class government identifier
     "PHONE_NUMBER",
     "CREDIT_CARD",
     "PERSON",
@@ -187,11 +188,15 @@ _PRESIDIO_ENTITIES = [
     "US_DRIVER_LICENSE",
 ]
 
-# Core high-confidence patterns that must be caught regardless of which engine
-# is active — the "standard PII always caught" contract.  On the Presidio path
-# these are unioned with Presidio's results so a context-sensitive score drop
-# can never let a plainly-formatted SSN / email / card slip through.
-_CORE_ALWAYS_ENTITY_TYPES = {"EMAIL_ADDRESS", "US_SSN", "CREDIT_CARD"}
+# Core patterns that must be caught regardless of which engine is active — the
+# "standard PII always caught" contract.  On the Presidio path these are
+# unioned with Presidio's results so a context-sensitive score drop can never
+# let a plainly-formatted SSN / email / card / street address slip through.
+# LOCATION is here (not in the NER allowlist above) deliberately: the NER model
+# flags bare place names ("London") as LOCATION and false-positives, but the
+# street-address REGEX below (number + street + suffix) is precise, so we catch
+# addresses on both paths without the city-name false positive.
+_CORE_ALWAYS_ENTITY_TYPES = {"EMAIL_ADDRESS", "US_SSN", "CREDIT_CARD", "LOCATION"}
 
 _PII_PATTERNS: list[dict[str, Any]] = [
     # RFC 5322-compliant email (high confidence)
@@ -230,6 +235,17 @@ _PII_PATTERNS: list[dict[str, Any]] = [
         "entity_type": "CREDIT_CARD",
         "pattern": re.compile(r"\b(?:4\d{3}|5[1-5]\d{2}|3[47]\d{2}|6011)\s?\d{4}\s?\d{4}\s?\d{4}\b"),
         "confidence": 0.90,
+    },
+    # Street address — number + street name + type suffix (mirrors the standard
+    # sanitizer).  Precise enough to avoid flagging bare place names as PII.
+    {
+        "entity_type": "LOCATION",
+        "pattern": re.compile(
+            r"\b\d+\s+[A-Z][a-z]+\s+"
+            r"(?:Street|St|Avenue|Ave|Road|Rd|Boulevard|Blvd|Lane|Ln|Drive|Dr|Court|Ct|Way)\b",
+            re.IGNORECASE,
+        ),
+        "confidence": 0.85,
     },
 ]
 

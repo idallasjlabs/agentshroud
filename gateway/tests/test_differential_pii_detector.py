@@ -249,20 +249,53 @@ class TestPresidioPathContract:
         assert capture["entities"] == _PRESIDIO_ENTITIES
         assert "LOCATION" not in capture["entities"]
 
-    def test_presidio_location_hit_is_never_requested(
+    def test_bare_city_name_not_flagged_but_street_address_is(
         self, detector: DifferentialPIIDetector
     ) -> None:
-        # Even if the fake NER *would* return a LOCATION, the allowlist means
-        # the detector never asks for it, so a city name stays clean.
-        loc = self._FakeRecognizerResult("LOCATION", 0.99, 12, 18)
+        # NER LOCATION is excluded from the allowlist, so a bare city name is
+        # never even requested; but the precise street-address regex (unioned)
+        # still catches a real address on the Presidio path.
         capture: dict = {}
-        self._detector_with_fake(detector, [loc], capture)
-        # analyze() is filtered by our stub to requested entities; LOCATION not
-        # requested → not returned. Simulate that contract:
-        report = detector.scan_tool_result(
+        self._detector_with_fake(detector, [], capture)
+        clean = detector.scan_tool_result(
             tool_name="web_search", content="Weather in London is fine."
         )
-        assert all(h.entity_type != "LOCATION" for h in report.hits)
+        assert "LOCATION" not in capture["entities"]
+        assert not clean.has_pii
+        addr = detector.scan_tool_result(
+            tool_name="read_file", content="Ship to 350 Fifth Avenue today."
+        )
+        assert addr.has_pii
+        assert any(h.entity_type == "LOCATION" for h in addr.hits)
+
+    def test_presidio_result_becomes_pii_hit(self, detector: DifferentialPIIDetector) -> None:
+        # A surviving allowlisted Presidio result must map to a PIIHit with the
+        # right entity type and span (covers the result-mapping branch).
+        passport = self._FakeRecognizerResult("US_PASSPORT", 0.95, 8, 17)
+        capture: dict = {}
+        self._detector_with_fake(detector, [passport], capture)
+        report = detector.scan_tool_result(
+            tool_name="read_file", content="Passport 123456789 on file."
+        )
+        hit = next(h for h in report.hits if h.entity_type == "US_PASSPORT")
+        assert (hit.start, hit.end) == (8, 17)
+        assert hit.confidence == pytest.approx(0.95)
+
+    def test_presidio_exception_falls_back_to_regex(
+        self, detector: DifferentialPIIDetector
+    ) -> None:
+        # If Presidio.analyze() raises, the detector must fall back to regex and
+        # still surface core PII (covers the except branch).
+        def _boom(*_a, **_k):
+            raise RuntimeError("presidio engine exploded")
+
+        fake = type("BoomAnalyzer", (), {"analyze": staticmethod(_boom)})()
+        detector._presidio_analyzer = fake
+        report = detector.scan_tool_result(
+            tool_name="read_file", content="SSN: 123-45-6789"
+        )
+        assert report.has_pii
+        assert any(h.entity_type == "US_SSN" for h in report.hits)
 
     def test_core_ssn_unioned_when_presidio_misses_it(
         self, detector: DifferentialPIIDetector
