@@ -5,7 +5,7 @@
 
 All external I/O is mocked:
   - faster_whisper / numpy (STT model) — mocked via monkeypatch
-  - Piper subprocess (TTS) — mocked via monkeypatch
+  - Kokoro pipeline (TTS) — mocked via monkeypatch
   - httpx (gateway /v1/chat/completions) — mocked via monkeypatch
 
 Tests cover:
@@ -18,9 +18,9 @@ Tests cover:
   - _call_llm: multi-turn history carried in request body
   - X-AgentShroud-User-Id header propagates owner UID
   - stt.transcribe: S16LE bytes → string (model mocked)
-  - tts.synthesize: string → bytes (piper mocked)
-  - tts.synthesize: piper not found raises RuntimeError
-  - tts.synthesize: piper non-zero exit raises RuntimeError
+  - tts.synthesize: string → bytes (Kokoro pipeline mocked)
+  - tts.synthesize: Kokoro pipeline load failure raises RuntimeError
+  - tts.synthesize: Kokoro synthesis failure raises RuntimeError
   - WS token authentication (correct / wrong / missing / unconfigured)
 """
 
@@ -28,12 +28,26 @@ from __future__ import annotations
 
 import json
 import struct
-import subprocess
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 from fastapi.testclient import TestClient
 from voice_gateway.server import _call_llm, app
+
+
+def _fake_kokoro_pipeline(audio, captured_text=None):
+    """Stand-in for kokoro.KPipeline: a callable yielding (graphemes, phonemes,
+    audio) tuples, matching what ``tts.synthesize`` unpacks.  Lets the TTS tests
+    exercise the real synthesize/resample path without the kokoro dependency.
+    """
+
+    def _pipeline(text, voice=None, speed=None):  # noqa: ARG001
+        if captured_text is not None:
+            captured_text.append(text)
+        yield ("gs", "ps", audio)
+
+    return _pipeline
+
 
 # ── Health endpoint ───────────────────────────────────────────────────────────
 
@@ -43,6 +57,31 @@ def test_health_returns_ok():
     resp = client.get("/health")
     assert resp.status_code == 200
     assert resp.json() == {"status": "ok"}
+
+
+def test_lifespan_tolerates_warmup_failure(monkeypatch):
+    """A model/pipeline warm-up failure at startup must NOT down the gateway.
+
+    Regression: the lifespan warmed the STT model and Kokoro pipeline via
+    asyncio.gather with no error handling, so a missing/broken model (e.g.
+    kokoro absent) crashed startup and took /health down with it.  Warm-up is
+    best-effort now — the app must still start and serve /health.
+    """
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    def _boom():
+        raise RuntimeError("model unavailable")
+
+    monkeypatch.setattr(stt_mod, "_get_model", _boom)
+    monkeypatch.setattr(tts_mod, "_get_pipeline", _boom)
+
+    # Entering the TestClient context runs the lifespan (both warm-ups raise).
+    with TestClient(srv.app) as client:
+        resp = client.get("/health")
+        assert resp.status_code == 200
+        assert resp.json() == {"status": "ok"}
 
 
 # ── STT unit tests ────────────────────────────────────────────────────────────
@@ -88,83 +127,75 @@ def test_tts_empty_text_returns_empty():
     assert tts.synthesize("") == b""
 
 
-def test_tts_synthesize_mocked_piper(monkeypatch):
-    """synthesize() invokes piper; when rates match no resampling occurs."""
+def test_tts_synthesize_via_kokoro(monkeypatch):
+    """synthesize() runs the Kokoro pipeline; when rates match no resampling occurs."""
+    import numpy as np
     import voice_gateway.tts as tts_mod
 
-    pcm_bytes = b"\x00\x01" * 100
-
-    mock_result = MagicMock()
-    mock_result.returncode = 0
-    mock_result.stdout = pcm_bytes
-    mock_result.stderr = b""
-
-    monkeypatch.setattr(subprocess, "run", lambda *a, **kw: mock_result)
+    audio = np.zeros(100, dtype=np.float32)  # 100 samples of silence
+    monkeypatch.setattr(tts_mod, "_get_pipeline", lambda: _fake_kokoro_pipeline(audio))
     # Pin rates equal so no resampling — tests the pass-through path.
     monkeypatch.setattr(tts_mod, "TARGET_SAMPLE_RATE", tts_mod.OUTPUT_SAMPLE_RATE)
 
     result = tts_mod.synthesize("hello world")
-    assert result == pcm_bytes
+    # 100 float32 samples → 100 S16LE samples (2 bytes each), silence → zeros.
+    assert result == b"\x00\x00" * 100
 
 
-def test_tts_resamples_22050_to_16000(monkeypatch):
-    """When OUTPUT_SAMPLE_RATE (22050) != TARGET_SAMPLE_RATE (16000), the output
-    is resampled.  For N input samples at 22050 Hz the output should have
-    approximately N * 16000/22050 samples.  The exact ratio is checked within 1%.
+def test_tts_resamples_24000_to_16000(monkeypatch):
+    """When OUTPUT_SAMPLE_RATE (24000, Kokoro native) != TARGET_SAMPLE_RATE
+    (16000), the output is resampled.  For N input samples the output should have
+    approximately N * 16000/24000 samples.  The exact ratio is checked within 1%.
     """
-    import struct as _struct
-
+    import numpy as np
     import voice_gateway.tts as tts_mod
 
-    # Build 0.5 s of silence at 22050 Hz (the native Piper rate)
-    n_src = 22050 // 2  # 0.5 s
-    raw_pcm = _struct.pack(f"<{n_src}h", *([0] * n_src))
+    n_src = 24000 // 2  # 0.5 s of silence at Kokoro's native 24000 Hz
+    audio = np.zeros(n_src, dtype=np.float32)
 
-    mock_result = MagicMock()
-    mock_result.returncode = 0
-    mock_result.stdout = raw_pcm
-    mock_result.stderr = b""
-
-    monkeypatch.setattr(subprocess, "run", lambda *a, **kw: mock_result)
-    # Ensure resampling is active (default — but be explicit)
-    monkeypatch.setattr(tts_mod, "OUTPUT_SAMPLE_RATE", 22050)
+    monkeypatch.setattr(tts_mod, "_get_pipeline", lambda: _fake_kokoro_pipeline(audio))
+    monkeypatch.setattr(tts_mod, "OUTPUT_SAMPLE_RATE", 24000)
     monkeypatch.setattr(tts_mod, "TARGET_SAMPLE_RATE", 16000)
 
     result = tts_mod.synthesize("hello")
 
     n_dst = len(result) // 2  # 16-bit samples
-    expected = n_src * 16000 / 22050
+    expected = n_src * 16000 / 24000
     ratio_error = abs(n_dst - expected) / expected
     assert ratio_error < 0.01, (
         f"Resampled length {n_dst} samples deviates {ratio_error:.2%} from expected "
-        f"{expected:.1f} (src={n_src}, 22050→16000 Hz)"
+        f"{expected:.1f} (src={n_src}, 24000→16000 Hz)"
     )
 
 
-def test_tts_piper_not_found_raises(monkeypatch):
-    def _raise(*a, **kw):
-        raise FileNotFoundError("piper not found")
+def test_tts_kokoro_pipeline_load_failure_raises(monkeypatch):
+    """If the Kokoro pipeline can't be constructed, synthesize() raises RuntimeError."""
+    import voice_gateway.tts as tts_mod
 
-    monkeypatch.setattr(subprocess, "run", _raise)
+    def _boom():
+        raise RuntimeError("kokoro model unavailable")
 
-    from voice_gateway import tts
+    monkeypatch.setattr(tts_mod, "_get_pipeline", _boom)
+    # Ensure we're on the fallback voice so failure surfaces instead of retrying.
+    monkeypatch.setattr(tts_mod, "_KOKORO_VOICE", tts_mod._FALLBACK_VOICE)
 
-    with pytest.raises(RuntimeError, match="Piper binary not found"):
-        tts.synthesize("hello")
+    with pytest.raises(RuntimeError, match="Kokoro TTS failed"):
+        tts_mod.synthesize("hello")
 
 
-def test_tts_piper_nonzero_exit_raises(monkeypatch):
-    mock_result = MagicMock()
-    mock_result.returncode = 1
-    mock_result.stdout = b""
-    mock_result.stderr = b"model not found"
+def test_tts_kokoro_synthesis_failure_raises(monkeypatch):
+    """If the pipeline raises mid-synthesis, synthesize() raises RuntimeError."""
+    import voice_gateway.tts as tts_mod
 
-    monkeypatch.setattr(subprocess, "run", lambda *a, **kw: mock_result)
+    def _pipeline(text, voice=None, speed=None):  # noqa: ARG001
+        raise ValueError("phoneme conversion failed")
+        yield  # pragma: no cover - generator marker
 
-    from voice_gateway import tts
+    monkeypatch.setattr(tts_mod, "_get_pipeline", lambda: _pipeline)
+    monkeypatch.setattr(tts_mod, "_KOKORO_VOICE", tts_mod._FALLBACK_VOICE)
 
-    with pytest.raises(RuntimeError, match="Piper exited"):
-        tts.synthesize("hello")
+    with pytest.raises(RuntimeError, match="Kokoro TTS failed"):
+        tts_mod.synthesize("hello")
 
 
 # ── normalize_for_speech unit tests ──────────────────────────────────────────
@@ -451,50 +482,50 @@ class TestSplitForSpeech:
         assert "Hi." in " ".join(chunks)
 
 
-def test_tts_synthesize_passes_normalised_text_to_piper(monkeypatch):
-    """synthesize() feeds the normalised (no-markdown, no-token) text to Piper.
+def test_tts_synthesize_passes_normalised_text_to_kokoro(monkeypatch):
+    """synthesize() feeds the normalised (no-markdown, no-token) text to Kokoro.
 
-    Verifies that the text arriving at subprocess.run contains no markdown
+    Verifies that the text arriving at the Kokoro pipeline contains no markdown
     bold markers or redaction placeholder tokens.
     """
+    import numpy as np
     import voice_gateway.tts as tts_mod
 
-    captured_input: list[bytes] = []
-
-    def _fake_run(*args, **kwargs):
-        captured_input.append(kwargs.get("input", b""))
-        mock_result = MagicMock()
-        mock_result.returncode = 0
-        mock_result.stdout = b"\x00\x01" * 50
-        mock_result.stderr = b""
-        return mock_result
-
-    monkeypatch.setattr(subprocess, "run", _fake_run)
+    captured_text: list[str] = []
+    audio = np.zeros(50, dtype=np.float32)
+    monkeypatch.setattr(
+        tts_mod, "_get_pipeline", lambda: _fake_kokoro_pipeline(audio, captured_text)
+    )
     monkeypatch.setattr(tts_mod, "TARGET_SAMPLE_RATE", tts_mod.OUTPUT_SAMPLE_RATE)
 
     raw_text = "**bold claim** at http://gateway:[PORT] with [CREDENTIAL_REDACTED]."
     tts_mod.synthesize(raw_text)
 
-    assert len(captured_input) == 1
-    spoken = captured_input[0].decode()
-    assert "**" not in spoken, "Bold marker must be stripped before Piper"
-    assert "[PORT]" not in spoken, "[PORT] token must be replaced before Piper"
-    assert "[CREDENTIAL_REDACTED]" not in spoken, "Credential token must be replaced before Piper"
+    assert len(captured_text) == 1
+    spoken = captured_text[0]
+    assert "**" not in spoken, "Bold marker must be stripped before Kokoro"
+    assert "[PORT]" not in spoken, "[PORT] token must be replaced before Kokoro"
+    assert "[CREDENTIAL_REDACTED]" not in spoken, "Credential token must be replaced before Kokoro"
     assert "a port" in spoken
     assert "a credential" in spoken
 
 
 def test_tts_synthesize_only_whitespace_after_normalise_returns_empty(monkeypatch):
-    """Text that normalises to empty/whitespace should return b'' without calling Piper."""
+    """Text that normalises to empty/whitespace returns b'' without invoking Kokoro."""
     import voice_gateway.tts as tts_mod
 
-    piper_called = []
-    monkeypatch.setattr(subprocess, "run", lambda *a, **kw: piper_called.append(True))
+    pipeline_called = []
+
+    def _spy_get_pipeline():
+        pipeline_called.append(True)
+        return _fake_kokoro_pipeline(b"")
+
+    monkeypatch.setattr(tts_mod, "_get_pipeline", _spy_get_pipeline)
 
     # A string that is only markdown delimiters → normalises to empty.
     result = tts_mod.synthesize("**  **\n---\n")
     assert result == b""
-    assert not piper_called, "Piper must not be invoked for empty normalised text"
+    assert not pipeline_called, "Kokoro must not be invoked for empty normalised text"
 
 
 # ── _call_llm unit tests ──────────────────────────────────────────────────────
@@ -748,10 +779,14 @@ def _pcm_bytes(num_samples: int = 160) -> bytes:
 
 def test_ws_full_utterance_state_sequence(monkeypatch):
     """LISTEN → binary PCM → END → STT → /v1/chat/completions → TTS → PCM + END → idle."""
+    import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
 
-    pcm_reply = _pcm_bytes(100)
+    # Distinct NON-ZERO reply PCM: with an all-zero reply the pad+reply
+    # concatenation would be indistinguishable from any equal-length silence,
+    # so the assertion would only check length.  Non-zero pins pad-then-reply.
+    pcm_reply = b"\x07\x00" * 100
 
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "what time is it")
     monkeypatch.setattr(tts_mod, "synthesize", lambda t: pcm_reply)
@@ -799,7 +834,8 @@ def test_ws_full_utterance_state_sequence(monkeypatch):
                 assert "speaking" in states_received
                 assert "idle" in states_received
                 assert end_received
-                assert binary_received == pcm_reply
+                # First sentence carries the 0.4 s leading-silence pad.
+                assert binary_received == srv._TTS_LEAD_SILENCE + pcm_reply
 
 
 # ── Connect-state test ────────────────────────────────────────────────────────
@@ -1019,6 +1055,7 @@ async def test_call_agent_posts_to_forward_endpoint(monkeypatch):
 def test_ws_sentence_chunked_tts_calls_synthesize_per_sentence(monkeypatch):
     """Sentence-chunked TTS: synthesize() is called once per sentence; all PCM arrives
     in order; exactly one 'END' text frame is sent; final state is idle."""
+    import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
 
@@ -1077,8 +1114,8 @@ def test_ws_sentence_chunked_tts_calls_synthesize_per_sentence(monkeypatch):
 
     # synthesize() called once per sentence (3 sentences)
     assert len(synth_calls) == 3, f"Expected 3 synth calls, got {len(synth_calls)}: {synth_calls}"
-    # All PCM received in order
-    assert binary_received == pcm_s1 + pcm_s2 + pcm_s3
+    # All PCM received in order (first sentence carries the leading-silence pad)
+    assert binary_received == srv._TTS_LEAD_SILENCE + pcm_s1 + pcm_s2 + pcm_s3
     # Exactly one END frame
     assert end_count == 1, f"Expected 1 END frame, got {end_count}"
     # Final state is idle
@@ -1087,10 +1124,13 @@ def test_ws_sentence_chunked_tts_calls_synthesize_per_sentence(monkeypatch):
 
 def test_ws_one_sentence_reply_unchanged(monkeypatch):
     """Regression: a single-sentence reply still produces exactly one synthesize call."""
+    import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
 
-    pcm_reply = _pcm_bytes(100)
+    # Distinct non-zero reply so the pad+reply assertion pins structure, not
+    # just total length (an all-zero reply is indistinguishable from silence).
+    pcm_reply = b"\x07\x00" * 100
     synth_calls: list[str] = []
 
     def _mock_synthesize(text: str) -> bytes:
@@ -1133,7 +1173,7 @@ def test_ws_one_sentence_reply_unchanged(monkeypatch):
                                 end_count += 1
 
     assert len(synth_calls) == 1, f"Expected 1 synth call, got {len(synth_calls)}"
-    assert binary_received == pcm_reply
+    assert binary_received == srv._TTS_LEAD_SILENCE + pcm_reply
     assert end_count == 1
 
 
@@ -1640,7 +1680,6 @@ def test_resample_antialias_attenuates_above_nyquist():
     import struct
 
     import numpy as np
-
     from voice_gateway.tts import _resample_s16le_mono
 
     src_rate = 22050
@@ -1660,7 +1699,6 @@ def test_resample_antialias_attenuates_above_nyquist():
     pcm_out = _resample_s16le_mono(pcm_in, src_rate, dst_rate)
 
     # Measure output amplitude via RMS.
-    n_dst = len(pcm_out) // 2
     arr = np.frombuffer(pcm_out, dtype="<i2").astype(np.float32)
     rms_out = float(np.sqrt(np.mean(arr ** 2)))
     # With no filtering, linear interp would alias 9 kHz → ~7 kHz and the output
@@ -1681,7 +1719,6 @@ def test_resample_passband_preserved():
     import struct
 
     import numpy as np
-
     from voice_gateway.tts import _resample_s16le_mono
 
     src_rate = 22050
@@ -2420,7 +2457,6 @@ def test_tts_synthesize_fades_sentence_edges(monkeypatch):
     """Each synthesized sentence must ramp in/out over ~5 ms so per-sentence
     Kokoro output joins without DC/level steps (audible clicks)."""
     import numpy as np
-
     import voice_gateway.tts as tts_mod
 
     class _FakePipeline:

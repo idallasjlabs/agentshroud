@@ -112,6 +112,13 @@ _LISTEN_MAX_S: float = 15.0              # max seconds to wait for END after LIS
 # download) and must not strand the device in THINKING.
 _TTS_SENTENCE_TIMEOUT_S: float = float(os.environ.get("VG_TTS_SENTENCE_TIMEOUT_S", "30"))
 
+# Leading silence prepended to the first sentence's PCM (0.4 s at 16 kHz S16LE
+# mono = 6400 samples × 2 bytes).  Any playback-start transient on the device
+# (amp wake, ring flush, connection churn) lands in silence instead of on the
+# first spoken word.  Exposed as a module constant so it is defined in one place
+# (and referenceable by tests).
+_TTS_LEAD_SILENCE = b"\x00" * 12800
+
 # ── TTS resume-on-reconnect ───────────────────────────────────────────────────
 # Sessions are per-connection, so a hotspot drop mid-downlink used to lose the
 # rest of the reply.  The send loop records the reply and its sent offset here;
@@ -147,12 +154,31 @@ class _State(Enum):
     SPEAKING = auto()
 
 
+def _warm(name: str, fn) -> None:
+    """Best-effort model warm-up.
+
+    Preloading the STT model and TTS pipeline at startup makes the first real
+    request fast, but a warm-up failure (model/package absent, transient load
+    error) must NOT prevent the gateway from starting — /health and the rest of
+    the service would otherwise go down with it, and the component lazy-loads on
+    first use anyway.  Log and continue.
+    """
+    try:
+        fn()
+    except Exception as exc:
+        logger.warning(
+            "voice-gateway: %s warm-up skipped (%s) — will lazy-load on first use",
+            name,
+            exc,
+        )
+
+
 @asynccontextmanager
 async def _lifespan(_app: FastAPI):
     loop = asyncio.get_event_loop()
     await asyncio.gather(
-        loop.run_in_executor(None, _stt._get_model),
-        loop.run_in_executor(None, _tts._get_pipeline),
+        loop.run_in_executor(None, _warm, "STT model", _stt._get_model),
+        loop.run_in_executor(None, _warm, "TTS pipeline", _tts._get_pipeline),
     )
     yield
 
@@ -628,7 +654,7 @@ async def voice_endpoint(ws: WebSocket) -> None:
                         # residual playback-start transient on the device (amp
                         # wake, ring flush, connection churn) lands in silence
                         # instead of on the first spoken word.
-                        _lead_pad = b"\x00" * 12800
+                        _lead_pad = _TTS_LEAD_SILENCE
 
                         async def _synthesize_all() -> None:
                             # Bounded per sentence: a wedged synthesis (live
