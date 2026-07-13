@@ -412,3 +412,20 @@ report** (directly, even bypassing the API). It is not per-bot access-
 controlled storage; that is why all free-text is sanitized on write. If
 per-bot confidentiality is ever needed, give the store its own volume not
 mounted into the bots.
+
+## SOC Per-Module Enforcement Heat-Map (SCRUM-80)
+
+Live, per-security-module allow/block/sanitize counts — the auditor-facing
+"is enforcement actually happening?" view. Counts are **real** (recorded at
+enforcement points), never fabricated; a module not yet instrumented reports
+`instrumented: false` with genuine zeros.
+
+| SOC API (auth required) | Purpose |
+|---|---|
+| `GET /soc/security/modules` | Modules with mode + live `stats` + `instrumented` flag |
+| `GET /soc/security/modules/heatmap` | Aggregated per-module counts + totals |
+
+Counts are process-lifetime (reset on gateway restart); durable enforcement
+history lives in the audit ledger. Currently instrumented: `egress_filter`,
+`tool_acl` — more modules feed the collector as they adopt
+`record_decision()` from `gateway/security/module_stats.py`.
