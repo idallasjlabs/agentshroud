@@ -383,3 +383,32 @@ AGENTSHROUD_PROGRESSIVE_ENFORCEMENT=enforce   # default: block (omit to keep)
 In monitor mode the gateway logs `ToolACL MONITOR (would-deny) by trust ladder`
 for each call that enforce mode *would* block, and per-user would-deny counts
 accumulate on the enforcer — flip to `enforce` once the logs look clean.
+
+## Multi-Bot Shared Report Store (SCRUM-79)
+
+Reports (competitive intel, security summaries) are stored once in a
+gateway-owned store on the `gateway-data` volume and read by any bot through
+the gateway — no more per-bot duplicated pipelines or cross-container file
+reads. Content is PII-sanitized on write.
+
+| API (auth required) | Purpose |
+|---|---|
+| `POST /api/reports` | Store `{bot, title, content, tags}` (returns `{id}`) |
+| `GET /api/reports[?bot=]` | List report metadata (no bodies), newest first |
+| `GET /api/reports/{id}` | Fetch one report (metadata + content) |
+
+| Env var | Default | Purpose |
+|---|---|---|
+| `AGENTSHROUD_REPORTS_DIR` | `/app/data/reports` | Store location on the gateway-data volume |
+
+Report ids are server-generated and path-safe; the store rejects any
+non-token id, caps content size (1 MB, matching the request-body limit),
+bounds report count (oldest pruned), sanitizes ALL free-text fields
+(content, title, tags), and tolerates corrupt files in listings.
+
+**Confidentiality note:** the gateway-data volume is read-only-mounted into
+both bots, so this is a **shared bulletin board — every bot can read every
+report** (directly, even bypassing the API). It is not per-bot access-
+controlled storage; that is why all free-text is sanitized on write. If
+per-bot confidentiality is ever needed, give the store its own volume not
+mounted into the bots.

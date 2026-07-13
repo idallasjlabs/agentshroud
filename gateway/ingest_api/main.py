@@ -886,6 +886,60 @@ async def list_agents(auth: AuthRequired):
     return {"agents": [t.model_dump() for t in targets]}
 
 
+# === Shared Report Store (SCRUM-79) ===
+
+
+@app.post("/api/reports", status_code=status.HTTP_201_CREATED)
+async def create_report(request: Request, auth: AuthRequired):
+    """Store a report in the gateway-managed multi-bot report store.
+
+    Body: {"bot": str, "title": str, "content": str, "tags": [str]}.
+    Content is PII-sanitized before it lands in the shared store.
+    Authentication required.
+    """
+    if app_state.report_store is None:
+        raise HTTPException(status_code=503, detail="report store unavailable")
+    try:
+        body = await request.json()
+    except Exception:
+        raise HTTPException(status_code=400, detail="invalid JSON body")
+    if not isinstance(body, dict) or not body.get("content"):
+        raise HTTPException(status_code=422, detail="'content' is required")
+    try:
+        report_id = await app_state.report_store.save_async(
+            bot=str(body.get("bot", "unknown")),
+            title=str(body.get("title", "untitled")),
+            content=str(body.get("content", "")),
+            tags=body.get("tags") if isinstance(body.get("tags"), list) else None,
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=413, detail=str(exc))
+    return {"id": report_id}
+
+
+@app.get("/api/reports")
+async def list_reports(auth: AuthRequired, bot: str | None = Query(None)):
+    """List report metadata (no content), newest first, optionally by bot.
+
+    Cross-bot read: any authenticated bot sees every bot's reports.
+    Authentication required.
+    """
+    if app_state.report_store is None:
+        raise HTTPException(status_code=503, detail="report store unavailable")
+    return {"reports": app_state.report_store.list(bot=bot)}
+
+
+@app.get("/api/reports/{report_id}")
+async def get_report(report_id: str, auth: AuthRequired):
+    """Fetch one report (metadata + content). Authentication required."""
+    if app_state.report_store is None:
+        raise HTTPException(status_code=503, detail="report store unavailable")
+    rec = app_state.report_store.get(report_id)
+    if rec is None:
+        raise HTTPException(status_code=404, detail="report not found")
+    return rec
+
+
 # === SSH Endpoints ===
 
 

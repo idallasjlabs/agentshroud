@@ -211,6 +211,25 @@ async def lifespan(app: FastAPI):
             except Exception:
                 pass
         app_state.ledger = DataLedger(app_state.config.ledger)
+
+        # Multi-bot shared report store (SCRUM-79): gateway-owned store on the
+        # gateway-data volume, PII-sanitized on write, read cross-bot via the
+        # /api/reports API (access-controlled at the route layer).
+        try:
+            from ..security.report_store import ReportStore
+
+            async def _report_sanitize(text: str) -> str:
+                if getattr(app_state, "sanitizer", None):
+                    result = await app_state.sanitizer.sanitize(text)
+                    return result.sanitized_content
+                return text
+
+            _reports_root = os.environ.get("AGENTSHROUD_REPORTS_DIR", "/app/data/reports")
+            app_state.report_store = ReportStore(root=_reports_root, sanitize_fn=_report_sanitize)
+            logger.info("ReportStore initialized at %s", _reports_root)
+        except Exception as e:
+            app_state.report_store = None
+            logger.error("ReportStore init failed: %s", e)
         await app_state.ledger.initialize()
         logger.info("Data ledger initialized")
     except Exception as e:

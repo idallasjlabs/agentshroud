@@ -1277,7 +1277,7 @@
   "info": {
     "description": "Ingest API for the AgentShroud proxy layer framework",
     "title": "AgentShroud Gateway",
-    "version": "1.2.2"
+    "version": "1.2.4"
   },
   "openapi": "3.1.0",
   "paths": {
@@ -1955,6 +1955,104 @@
         "tags": [
           "management"
         ]
+      }
+    },
+    "/api/reports": {
+      "get": {
+        "description": "List report metadata (no content), newest first, optionally by bot.\n\nCross-bot read: any authenticated bot sees every bot's reports.\nAuthentication required.",
+        "operationId": "list_reports_api_reports_get",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "bot",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Bot"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "List Reports"
+      },
+      "post": {
+        "description": "Store a report in the gateway-managed multi-bot report store.\n\nBody: {\"bot\": str, \"title\": str, \"content\": str, \"tags\": [str]}.\nContent is PII-sanitized before it lands in the shared store.\nAuthentication required.",
+        "operationId": "create_report_api_reports_post",
+        "responses": {
+          "201": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Create Report"
+      }
+    },
+    "/api/reports/{report_id}": {
+      "get": {
+        "description": "Fetch one report (metadata + content). Authentication required.",
+        "operationId": "get_report_api_reports__report_id__get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "report_id",
+            "required": true,
+            "schema": {
+              "title": "Report Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Get Report"
       }
     },
     "/api/security/report": {
