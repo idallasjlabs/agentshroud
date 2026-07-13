@@ -57,6 +57,26 @@ class ReportIntegrityError(Exception):
 # ---------------------------------------------------------------------------
 
 
+class Citation(BaseModel):
+    """A verified source backing a competitor claim.
+
+    A Citation is only created by the CitationVerifier after the URL has been
+    re-fetched through the allowlisted web proxy — so ``content_sha256`` and
+    ``status`` are evidence the source was live and reachable at verify time,
+    not a self-asserted "[verified]" tag.
+    """
+
+    model_config = {"frozen": True}
+
+    url: str = Field(..., min_length=1, description="Cited source URL")
+    domain: str = Field(..., min_length=1, description="Host of the cited URL (allowlisted)")
+    status: int = Field(..., ge=100, le=599, description="HTTP status at re-fetch time")
+    content_sha256: str = Field(
+        ..., min_length=64, max_length=64, description="SHA-256 of the fetched content"
+    )
+    fetched_at: float = Field(..., description="UNIX timestamp of the verifying re-fetch")
+
+
 class CompetitorEntry(BaseModel):
     """A single competitor record in a competitive intel report."""
 
@@ -64,6 +84,10 @@ class CompetitorEntry(BaseModel):
     security_score: int = Field(..., ge=0, le=200, description="Modules implemented (0–200)")
     module_count: int = Field(..., ge=0, description="Total modules or features count")
     notes: str = Field(default="", description="Analyst notes")
+    sources: list[Citation] = Field(
+        default_factory=list,
+        description="Verified citations backing this entry (≥1 required post-verification)",
+    )
 
 
 class CompetitiveIntelReport(BaseModel):
@@ -88,6 +112,11 @@ class CompetitiveIntelReport(BaseModel):
     )
     lead_delta: Optional[int] = Field(
         default=None, description="Modules ahead of closest competitor"
+    )
+    dropped_unverified: int = Field(
+        default=0,
+        ge=0,
+        description="Claims dropped for lacking a verified (re-fetched, allowlisted) citation",
     )
 
     # --- Hash chain fields (set by model_validator) ---
@@ -150,6 +179,7 @@ def _compute_hash(report: CompetitiveIntelReport) -> str:
         competitors_payload,
         str(report.agentshroud_score),
         str(report.lead_delta),
+        str(report.dropped_unverified),
     ])
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
