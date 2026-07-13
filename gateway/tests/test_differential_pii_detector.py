@@ -56,6 +56,100 @@ class TestDifferentialPIIDetectorConstruction:
         assert d.config.tool_result_confidence_floor == pytest.approx(0.7)
         assert d.config.prompt_confidence_floor == pytest.approx(0.9)
 
+
+class TestDeterministicPresidioInit:
+    """Presidio init must be deterministic and must NEVER trigger a runtime
+    model auto-download.
+
+    Regression: a bare ``AnalyzerEngine()`` makes Presidio try to fetch its
+    default ``en_core_web_lg`` (~400 MB) over the network the first time it is
+    constructed.  On the read-only production image that fetch fails and the
+    detector silently falls back to regex; on a writable, networked CI runner
+    it *succeeds*, so the detector's behaviour — and the PII contract — differ
+    by environment.  A security module must not (a) reach out to the network at
+    import/construction time behind egress controls, nor (b) behave differently
+    in CI than in production.  The detector must probe for an explicitly pinned
+    model and fall back to regex when it is absent, without any download.
+    """
+
+    def test_regex_fallback_when_model_absent(self, monkeypatch) -> None:
+        try:
+            import spacy
+        except ImportError:
+            # No spaCy at all → the detector must already be in regex fallback.
+            assert DifferentialPIIDetector()._presidio_analyzer is None
+            return
+
+        def _no_model(name, *_a, **_k):
+            raise OSError(f"[E050] Can't find model {name!r}")
+
+        monkeypatch.setattr(spacy, "load", _no_model)
+        d = DifferentialPIIDetector()
+        # Model probe fails → regex fallback, NOT a half-initialised (or
+        # auto-downloaded) Presidio engine.
+        assert d._presidio_analyzer is None
+
+    def test_init_does_not_construct_bare_analyzer_engine(self, monkeypatch) -> None:
+        """The default-model auto-download path must never be taken.
+
+        If Presidio is ever constructed, it must be with an explicit
+        ``nlp_engine`` (pinned model), never the bare ``AnalyzerEngine()`` that
+        auto-downloads ``en_core_web_lg``.
+        """
+        spacy = pytest.importorskip("spacy")
+        presidio_analyzer = pytest.importorskip("presidio_analyzer")
+
+        # Simulate the pinned model being absent so we exercise the probe path.
+        monkeypatch.setattr(
+            spacy, "load", lambda *_a, **_k: (_ for _ in ()).throw(OSError("no model"))
+        )
+        called = {"bare": False}
+        real_engine = presidio_analyzer.AnalyzerEngine
+
+        def _spy(*args, **kwargs):  # noqa: ANN002,ANN003
+            if not kwargs.get("nlp_engine"):
+                called["bare"] = True
+            return real_engine(*args, **kwargs)
+
+        monkeypatch.setattr(presidio_analyzer, "AnalyzerEngine", _spy)
+
+        DifferentialPIIDetector()
+        # Model was absent → Presidio must not have been constructed at all,
+        # and certainly not the bare (auto-downloading) engine.
+        assert called["bare"] is False
+
+    def test_init_wires_explicit_nlp_engine_when_model_present(
+        self, monkeypatch
+    ) -> None:
+        """When the pinned model loads, Presidio is built with an explicit
+        ``nlp_engine`` (never the bare auto-downloading form)."""
+        spacy = pytest.importorskip("spacy")
+        presidio_analyzer = pytest.importorskip("presidio_analyzer")
+        nlp_mod = pytest.importorskip("presidio_analyzer.nlp_engine")
+        pytest.importorskip("presidio_anonymizer")
+
+        monkeypatch.setattr(spacy, "load", lambda *_a, **_k: object())
+
+        seen = {"nlp_engine": "MISSING"}
+
+        class _FakeProvider:
+            def __init__(self, *a, **k) -> None:  # noqa: ANN002, ANN003
+                pass
+
+            def create_engine(self):  # noqa: ANN201
+                return "ENGINE"
+
+        def _fake_analyzer(*a, **k):  # noqa: ANN002, ANN003
+            seen["nlp_engine"] = k.get("nlp_engine", "MISSING")
+            return object()
+
+        monkeypatch.setattr(nlp_mod, "NlpEngineProvider", _FakeProvider)
+        monkeypatch.setattr(presidio_analyzer, "AnalyzerEngine", _fake_analyzer)
+
+        d = DifferentialPIIDetector()
+        assert d._presidio_analyzer is not None
+        assert seen["nlp_engine"] == "ENGINE"  # explicit engine wired, not bare
+
     def test_cannot_set_tool_floor_below_minimum(self) -> None:
         with pytest.raises(ValueError, match="confidence_floor"):
             DifferentialPIIConfig(tool_result_confidence_floor=0.4)
@@ -108,6 +202,80 @@ class TestStandardPIIAlwaysCaught:
         )
         assert not report.has_pii
         assert report.hits == []
+
+
+class TestPresidioPathContract:
+    """Exercise the Presidio detection path with an injected fake analyzer.
+
+    The real Presidio engine needs a spaCy model that is not installed in CI
+    or the production image, so these tests inject a stub analyzer to verify
+    the *logic* deterministically: entity restriction (no benign LOCATION
+    false-positive) and the core-regex union (standard PII always caught even
+    when Presidio scores it away).
+    """
+
+    class _FakeRecognizerResult:
+        def __init__(self, entity_type: str, score: float, start: int, end: int) -> None:
+            self.entity_type = entity_type
+            self.score = score
+            self.start = start
+            self.end = end
+
+    def _detector_with_fake(self, detector: DifferentialPIIDetector, results, capture):
+        def _analyze(text, language, entities, score_threshold):  # noqa: ANN001, ARG001
+            capture["entities"] = entities
+            capture["threshold"] = score_threshold
+            # Emulate Presidio: only return results for REQUESTED entities that
+            # meet the score threshold.
+            return [
+                r
+                for r in results
+                if r.score >= score_threshold and r.entity_type in entities
+            ]
+
+        fake = type("FakeAnalyzer", (), {"analyze": staticmethod(_analyze)})()
+        detector._presidio_analyzer = fake
+        return detector
+
+    def test_presidio_analyze_restricted_to_pii_entities(
+        self, detector: DifferentialPIIDetector
+    ) -> None:
+        from gateway.security.differential_pii_detector import _PRESIDIO_ENTITIES
+
+        capture: dict = {}
+        self._detector_with_fake(detector, [], capture)
+        detector.scan_tool_result(tool_name="web_search", content="hello world")
+        # analyze() must be called with the PII allowlist, excluding LOCATION.
+        assert capture["entities"] == _PRESIDIO_ENTITIES
+        assert "LOCATION" not in capture["entities"]
+
+    def test_presidio_location_hit_is_never_requested(
+        self, detector: DifferentialPIIDetector
+    ) -> None:
+        # Even if the fake NER *would* return a LOCATION, the allowlist means
+        # the detector never asks for it, so a city name stays clean.
+        loc = self._FakeRecognizerResult("LOCATION", 0.99, 12, 18)
+        capture: dict = {}
+        self._detector_with_fake(detector, [loc], capture)
+        # analyze() is filtered by our stub to requested entities; LOCATION not
+        # requested → not returned. Simulate that contract:
+        report = detector.scan_tool_result(
+            tool_name="web_search", content="Weather in London is fine."
+        )
+        assert all(h.entity_type != "LOCATION" for h in report.hits)
+
+    def test_core_ssn_unioned_when_presidio_misses_it(
+        self, detector: DifferentialPIIDetector
+    ) -> None:
+        # Presidio returns NOTHING (e.g. context-sensitive score drop), but the
+        # core regex union must still surface the plainly-formatted SSN.
+        capture: dict = {}
+        self._detector_with_fake(detector, [], capture)
+        report = detector.scan_tool_result(
+            tool_name="read_file", content="SSN: 123-45-6789"
+        )
+        assert report.has_pii
+        assert any(h.entity_type == "US_SSN" for h in report.hits)
 
 
 # ---------------------------------------------------------------------------
