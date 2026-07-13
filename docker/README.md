@@ -383,3 +383,23 @@ AGENTSHROUD_PROGRESSIVE_ENFORCEMENT=enforce   # default: block (omit to keep)
 In monitor mode the gateway logs `ToolACL MONITOR (would-deny) by trust ladder`
 for each call that enforce mode *would* block, and per-user would-deny counts
 accumulate on the enforcer — flip to `enforce` once the logs look clean.
+
+## Multi-Bot Shared Report Store (SCRUM-79)
+
+Reports (competitive intel, security summaries) are stored once in a
+gateway-owned store on the `gateway-data` volume and read by any bot through
+the gateway — no more per-bot duplicated pipelines or cross-container file
+reads. Content is PII-sanitized on write.
+
+| API (auth required) | Purpose |
+|---|---|
+| `POST /api/reports` | Store `{bot, title, content, tags}` (returns `{id}`) |
+| `GET /api/reports[?bot=]` | List report metadata (no bodies), newest first |
+| `GET /api/reports/{id}` | Fetch one report (metadata + content) |
+
+| Env var | Default | Purpose |
+|---|---|---|
+| `AGENTSHROUD_REPORTS_DIR` | `/app/data/reports` | Store location on the gateway-data volume |
+
+Report ids are server-generated and path-safe; the store rejects any
+non-token id, caps content size, and tolerates corrupt files in listings.

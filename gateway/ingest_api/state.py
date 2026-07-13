@@ -52,6 +52,8 @@ class AppState:
     trivy_critical_count: int
     image_verification: Optional[object]
     group_registry: Optional[object]
+    # Multi-bot shared report store (SCRUM-79)
+    report_store: Optional[object]
 
 
 # Global application state instance
