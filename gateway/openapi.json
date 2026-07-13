@@ -621,6 +621,105 @@
         "title": "HTTPValidationError",
         "type": "object"
       },
+      "IntelDraftEntry": {
+        "description": "One unverified competitor claim + its candidate source URLs.",
+        "properties": {
+          "candidate_urls": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 20,
+            "title": "Candidate Urls",
+            "type": "array"
+          },
+          "module_count": {
+            "minimum": 0.0,
+            "title": "Module Count",
+            "type": "integer"
+          },
+          "name": {
+            "maxLength": 200,
+            "minLength": 1,
+            "title": "Name",
+            "type": "string"
+          },
+          "notes": {
+            "default": "",
+            "maxLength": 4000,
+            "title": "Notes",
+            "type": "string"
+          },
+          "security_score": {
+            "maximum": 200.0,
+            "minimum": 0.0,
+            "title": "Security Score",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "name",
+          "security_score",
+          "module_count"
+        ],
+        "title": "IntelDraftEntry",
+        "type": "object"
+      },
+      "IntelDraftRequest": {
+        "description": "A draft competitive-intel report submitted for citation verification.",
+        "properties": {
+          "agentshroud_score": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Agentshroud Score"
+          },
+          "entries": {
+            "items": {
+              "$ref": "#/components/schemas/IntelDraftEntry"
+            },
+            "maxItems": 50,
+            "title": "Entries",
+            "type": "array"
+          },
+          "lead_delta": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lead Delta"
+          },
+          "report_id": {
+            "minLength": 1,
+            "title": "Report Id",
+            "type": "string"
+          },
+          "source": {
+            "minLength": 1,
+            "title": "Source",
+            "type": "string"
+          },
+          "summary": {
+            "default": "",
+            "title": "Summary",
+            "type": "string"
+          }
+        },
+        "required": [
+          "report_id",
+          "source"
+        ],
+        "title": "IntelDraftRequest",
+        "type": "object"
+      },
       "KillSwitchAction": {
         "properties": {
           "confirm": {
@@ -1594,6 +1693,55 @@
           }
         ],
         "summary": "Get Competitive Intel History",
+        "tags": [
+          "management"
+        ]
+      }
+    },
+    "/api/intel/reports": {
+      "post": {
+        "description": "Verify and persist a draft competitive-intel report (SCRUM-75).\n\nEach draft claim's candidate URLs are re-fetched through the allowlisted\nweb proxy; only claims backed by a live, allowlisted source survive.  Claims\nlacking a verified citation are dropped (``dropped_unverified``) \u2014 the\nenforced removal of ``[unverified]``.  The surviving report is persisted with\nhash-chain integrity and returned.",
+        "operationId": "submit_competitive_intel_api_intel_reports_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IntelDraftRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Submit Competitive Intel Api Intel Reports Post",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Submit Competitive Intel",
         "tags": [
           "management"
         ]

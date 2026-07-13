@@ -38,6 +38,29 @@ Report filename: reports/competitive-report-[YYYY-MM-DD].md (use today's date)
 6. Flag any entity from a previous report that you cannot re-verify as "[UNVERIFIED -
    flagged for removal]". Do not carry forward data you cannot confirm.
 
+7. SUBMIT FOR ENFORCED VERIFICATION (SCRUM-75). Do not rely on your own "[verified]"
+   judgement — the gateway re-fetches every cited URL and DROPS any competitor claim
+   whose source is not live and on the approved allowlist. Build a structured JSON
+   draft and POST it; the returned report is the source of truth (unverified claims
+   are already removed, and `dropped_unverified` tells you how many were rejected):
+
+   ```bash
+   # /tmp/intel-draft.json: {report_id, source:"hermes-cron", summary,
+   #   agentshroud_score, lead_delta, entries:[{name, security_score, module_count,
+   #   notes, candidate_urls:[<the live source URLs you cited for THIS competitor>]}]}
+   curl -s --max-time 120 -w "%{http_code}" \
+     -X POST "${GATEWAY_URL:-http://gateway:8080}/api/intel/reports" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN}" \
+     --data-binary "@/tmp/intel-draft.json"
+   ```
+
+   Every claim in the competitor table MUST carry at least one `candidate_urls`
+   entry — a claim with no fetchable, allowlisted source is dropped by the gateway
+   and must not appear in the emailed report. Use the gateway's returned
+   `competitors[]` (each already carrying verified `sources`) as the authoritative
+   content for the markdown report and email.
+
 ---
 
 ## REPORT STRUCTURE

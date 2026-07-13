@@ -30,7 +30,7 @@ from fastapi import (
     WebSocketDisconnect,
 )
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from ..ingest_api.auth import verify_token
 from ..ingest_api.config import load_config
@@ -991,6 +991,92 @@ async def get_competitive_intel(user: str = Depends(require_auth)) -> dict:
         "chain_valid": chain_valid,
         "chain_message": chain_msg,
         "retrieved_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+# --- Competitive Intel: verified submission ----------------------------------
+
+
+class IntelDraftEntry(BaseModel):
+    """One unverified competitor claim + its candidate source URLs."""
+
+    name: str = Field(..., min_length=1, max_length=200)
+    security_score: int = Field(..., ge=0, le=200)
+    module_count: int = Field(..., ge=0)
+    notes: str = Field(default="", max_length=4000)
+    # Bounded fan-out: each claim re-fetches its candidate URLs synchronously, so
+    # cap the count (Hermes builds these from scraped content — a prompt-injected
+    # page must not coerce thousands of fetches).
+    candidate_urls: list[str] = Field(default_factory=list, max_length=20)
+
+
+class IntelDraftRequest(BaseModel):
+    """A draft competitive-intel report submitted for citation verification."""
+
+    report_id: str = Field(..., min_length=1)
+    source: str = Field(..., min_length=1)
+    summary: str = ""
+    agentshroud_score: Optional[int] = None
+    lead_delta: Optional[int] = None
+    entries: list[IntelDraftEntry] = Field(default_factory=list, max_length=50)
+
+
+def _intel_verifier():
+    """Build a CitationVerifier wired to the production (httpx) fetcher.
+
+    Isolated in a helper so tests can monkeypatch it to inject a fake fetcher
+    (no real network).
+    """
+    from gateway.security.citation_verifier import CitationVerifier, make_httpx_fetcher
+
+    return CitationVerifier(fetcher=make_httpx_fetcher())
+
+
+@router.post("/intel/reports")
+async def submit_competitive_intel(
+    payload: IntelDraftRequest, user: str = Depends(require_auth)
+) -> dict:
+    """Verify and persist a draft competitive-intel report (SCRUM-75).
+
+    Each draft claim's candidate URLs are re-fetched through the allowlisted
+    web proxy; only claims backed by a live, allowlisted source survive.  Claims
+    lacking a verified citation are dropped (``dropped_unverified``) — the
+    enforced removal of ``[unverified]``.  The surviving report is persisted with
+    hash-chain integrity and returned.
+    """
+    from gateway.security.citation_verifier import DraftEntry
+
+    verifier = _intel_verifier()
+    report = verifier.verify_report(
+        report_id=payload.report_id,
+        source=payload.source,
+        summary=payload.summary,
+        agentshroud_score=payload.agentshroud_score,
+        lead_delta=payload.lead_delta,
+        draft_entries=[
+            DraftEntry(
+                name=e.name,
+                security_score=e.security_score,
+                module_count=e.module_count,
+                notes=e.notes,
+                candidate_urls=e.candidate_urls,
+            )
+            for e in payload.entries
+        ],
+    )
+    _intel_store().save(report)
+    logger.info(
+        "intel/reports: %s — %d claims verified, %d dropped as unverified",
+        report.report_id,
+        len(report.competitors),
+        report.dropped_unverified,
+    )
+    return {
+        "report": report.model_dump(),
+        "verified_claims": len(report.competitors),
+        "dropped_unverified": report.dropped_unverified,
+        "content_hash": report.content_hash,
+        "stored_at": datetime.now(timezone.utc).isoformat(),
     }
 
 
