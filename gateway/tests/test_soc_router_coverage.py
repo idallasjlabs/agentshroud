@@ -1402,12 +1402,15 @@ async def test_get_modules_modes(client, state):
     state.prompt_guard = SimpleNamespace(mode="disabled")
     resp = await client.get("/soc/v1/security/modules")
     by_name = {m["name"]: m for m in resp.json()}
-    assert by_name["sanitizer"] == {
-        "name": "sanitizer",
-        "available": True,
-        "mode": "monitor",
-        "description": soc_router._MODULE_DESCRIPTIONS["sanitizer"],
-    }
+    san = by_name["sanitizer"]
+    assert san["name"] == "sanitizer"
+    assert san["available"] is True
+    assert san["mode"] == "monitor"
+    assert san["description"] == soc_router._MODULE_DESCRIPTIONS["sanitizer"]
+    # SCRUM-80: live-stats fields present and honest (sanitizer not yet
+    # instrumented → instrumented False with genuine zeros, no fabrication).
+    assert san["instrumented"] is False
+    assert san["stats"]["total"] == 0
     assert by_name["prompt_guard"]["mode"] == "disabled"
 
 

@@ -231,6 +231,21 @@ class ToolACLEnforcer:
         self._monitor_would_deny_counts: Dict[str, int] = {}
 
     def can_use_tool(self, user_id: str, tool_name: str) -> Tuple[bool, str]:
+        """Public entry — records the decision for the SOC heat-map (SCRUM-80),
+        then delegates.  Counted once per call.  Honest coverage gap: only the
+        group-context fall-through (step 7) reaches here; a group check's
+        earlier owner/private/high-risk short-circuits return directly and are
+        NOT yet counted."""
+        allowed, reason = self._can_use_tool_impl(user_id, tool_name)
+        try:
+            from gateway.security.module_stats import record_decision
+
+            record_decision("tool_acl", allowed)
+        except Exception:
+            pass
+        return allowed, reason
+
+    def _can_use_tool_impl(self, user_id: str, tool_name: str) -> Tuple[bool, str]:
         """Check whether user_id may invoke the named tool.
 
         Returns:

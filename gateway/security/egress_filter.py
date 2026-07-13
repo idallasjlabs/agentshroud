@@ -161,6 +161,25 @@ class EgressFilter:
         return self._agent_policies.get(agent_id, self.default_policy)
 
     def check(self, agent_id: str, destination: str, port: Optional[int] = None) -> EgressAttempt:
+        """Public entry — records the decision for the SOC heat-map (SCRUM-80),
+        then delegates. check_async delegates here, so counted once."""
+        attempt = self._check_impl(agent_id, destination, port)
+        try:
+            from gateway.security.module_stats import record_decision
+
+            # EgressAttempt exposes .action (ALLOW/DENY), NOT a .blocked
+            # attribute — reading a non-existent .blocked defaulted every
+            # decision to ALLOW, hiding all blocks (review F1).  Records the
+            # STATIC filter verdict; check_async's approval-queue override
+            # (which can flip DENY→ALLOW) is intentionally not reflected here.
+            record_decision("egress_filter", allowed=(attempt.action == EgressAction.ALLOW))
+        except Exception:
+            pass
+        return attempt
+
+    def _check_impl(
+        self, agent_id: str, destination: str, port: Optional[int] = None
+    ) -> EgressAttempt:
         """
         Check if an outbound connection is allowed.
 

@@ -9504,6 +9504,90 @@
         ]
       }
     },
+    "/soc/v1/modules/heatmap": {
+      "get": {
+        "description": "Live per-module enforcement heat-map (SCRUM-80).\n\nReal allow/block/sanitize counts per instrumented security module \u2014 the\nauditor-facing \"is enforcement actually happening\" view.  Counts are\nprocess-lifetime (reset on gateway restart); durable history lives in the\naudit ledger.  Un-instrumented modules are reported with instrumented=False\nand genuine zeros \u2014 no fabricated numbers.",
+        "operationId": "get_modules_heatmap_soc_v1_modules_heatmap_get",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-soc-token",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Soc-Token"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "soc_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Soc Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Get Modules Heatmap Soc V1 Modules Heatmap Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Get Modules Heatmap",
+        "tags": [
+          "soc"
+        ]
+      }
+    },
     "/soc/v1/privacy": {
       "get": {
         "description": "List service privacy policies (read-only view).",
@@ -10734,6 +10818,90 @@
           }
         },
         "summary": "Get Modules",
+        "tags": [
+          "soc"
+        ]
+      }
+    },
+    "/soc/v1/security/modules/heatmap": {
+      "get": {
+        "description": "Live per-module enforcement heat-map (SCRUM-80).\n\nReal allow/block/sanitize counts per instrumented security module \u2014 the\nauditor-facing \"is enforcement actually happening\" view.  Counts are\nprocess-lifetime (reset on gateway restart); durable history lives in the\naudit ledger.  Un-instrumented modules are reported with instrumented=False\nand genuine zeros \u2014 no fabricated numbers.",
+        "operationId": "get_modules_heatmap_soc_v1_security_modules_heatmap_get",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-soc-token",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Soc-Token"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "soc_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Soc Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Get Modules Heatmap Soc V1 Security Modules Heatmap Get",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Get Modules Heatmap",
         "tags": [
           "soc"
         ]

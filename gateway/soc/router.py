@@ -1727,15 +1727,57 @@ async def get_modules(caller: SCLCaller = Depends(get_caller)) -> List[Dict]:
                 mode = getattr(cfg, "mode", "enforce")
             else:
                 mode = getattr(obj, "mode", "enforce")
+        stats = _module_stats_snapshot().get(name)
         modules.append(
             {
                 "name": name,
                 "available": obj is not None,
                 "mode": mode,
                 "description": _MODULE_DESCRIPTIONS.get(name, ""),
+                # Live enforcement counts (SCRUM-80).  instrumented=False means
+                # this module doesn't yet feed the collector — its zeros are
+                # honest "no data", NOT fabricated activity.
+                "instrumented": stats is not None,
+                "stats": stats
+                or {"allowed": 0, "blocked": 0, "sanitized": 0, "total": 0, "block_rate": 0.0},
             }
         )
     return modules
+
+
+def _module_stats_snapshot() -> dict:
+    """Read the live per-module enforcement counters (SCRUM-80); tolerate absence."""
+    try:
+        from gateway.security.module_stats import get_collector
+
+        return get_collector().snapshot()
+    except Exception:
+        return {}
+
+
+@router.get("/security/modules/heatmap")
+@router.get("/modules/heatmap")
+async def get_modules_heatmap(caller: SCLCaller = Depends(get_caller)) -> Dict:
+    """Live per-module enforcement heat-map (SCRUM-80).
+
+    Real allow/block/sanitize counts per instrumented security module — the
+    auditor-facing "is enforcement actually happening" view.  Counts are
+    process-lifetime (reset on gateway restart); durable history lives in the
+    audit ledger.  Un-instrumented modules are reported with instrumented=False
+    and genuine zeros — no fabricated numbers.
+    """
+    caller.require(Action.READ, Resource.SYSTEM)
+    snap = _module_stats_snapshot()
+    return {
+        "modules": snap,
+        "instrumented_count": len(snap),
+        "totals": {
+            "allowed": int(sum(m.get("allowed", 0) for m in snap.values())),
+            "blocked": int(sum(m.get("blocked", 0) for m in snap.values())),
+            "sanitized": int(sum(m.get("sanitized", 0) for m in snap.values())),
+        },
+        "note": "process-lifetime counts; resets on restart; history in audit ledger",
+    }
 
 
 @router.get("/llm/failover")
