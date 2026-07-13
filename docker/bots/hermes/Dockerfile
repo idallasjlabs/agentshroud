@@ -25,7 +25,7 @@ ENV HOME=/opt/data
 # curl for healthcheck + jq for JSON state files; no dumb-init (s6-overlay is PID 1)
 # xxd: hermes terminal_tool shells out to xxd for hex dumps — absent from the
 # upstream image (debian trixie ships it as its own package, not vim-common).
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends \
       curl \
       ca-certificates \
       jq \

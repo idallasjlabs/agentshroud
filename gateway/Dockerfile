@@ -40,7 +40,9 @@ ARG WAZUH_VERSION=4.9.2
 # This avoids "not enough free space in /tmp" on constrained hosts (Raspberry Pi).
 RUN mkdir -p /apt-dl/partial \
     && sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \
-    && apt-get update && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
+    && apt-get update \
+    && apt-get -o Dir::Cache::archives=/apt-dl upgrade -y \
+    && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
     libopenscap33 \
     openscap-scanner \
     openssh-client \
@@ -64,6 +66,7 @@ RUN mkdir -p /apt-dl/partial \
     && echo "deb [trusted=yes signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
         > /etc/apt/sources.list.d/wazuh.list \
     && apt-get update \
+    && apt-get -o Dir::Cache::archives=/apt-dl upgrade -y \
     && apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends 1password-cli \
     && rm -rf /apt-dl/* && mkdir -p /apt-dl/partial \
     && WAZUH_MANAGER=127.0.0.1 apt-get -o Dir::Cache::archives=/apt-dl install -y --no-install-recommends \
@@ -73,7 +76,7 @@ RUN mkdir -p /apt-dl/partial \
 # cosign bootstrap — supply-chain verification tool used to verify Trivy below.
 # Installed early so it is available during Trivy download/verification.
 # Pinned to SHA256 digest via published cosign_checksums.txt.
-ARG COSIGN_BOOTSTRAP_VERSION=2.4.3
+ARG COSIGN_BOOTSTRAP_VERSION=2.6.3  # SCRUM-100: patched Go (stayed on 2.x to keep verify-blob flags)
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) COSIGN_ARCH="arm64" ;; \
@@ -91,7 +94,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm /tmp/cosign_checksums.txt
 
 # Syft SBOM generator — pinned version
-ARG SYFT_VERSION=1.42.3
+ARG SYFT_VERSION=1.46.0  # SCRUM-100: patched Go
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) SYFT_ARCH="arm64" ;; \
@@ -105,7 +108,7 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     rm "/tmp/syft_${SYFT_VERSION}_linux_${SYFT_ARCH}.deb"
 
 # Trivy vulnerability scanner — pinned version (M7 fix)
-ARG TRIVY_VERSION=0.69.3
+ARG TRIVY_VERSION=0.72.0  # SCRUM-100: patched Go
 # R2-M1: Download Trivy with SHA256 + cosign signature verification for supply chain integrity
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \

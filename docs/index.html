@@ -177,6 +177,8 @@
     .badge-high { color: var(--warn); font-weight: 700; }
     .badge-med  { color: #a78bfa; font-weight: 700; }
     .badge-ok      { color: var(--accent); }
+    .badge-warn    { color: var(--warn); font-weight: 700; }
+    .badge-fail    { color: var(--danger); font-weight: 700; }
     .badge-partial { color: var(--warn); font-weight: 700; }
     .badge-open    { color: var(--danger); font-weight: 700; }
     .cve-id { font-family: monospace; font-size: 0.8rem; color: var(--muted); }
@@ -253,6 +255,7 @@
       <li><a href="#voice">Voice Terminal</a></li>
       <li><a href="#cves">CVEs</a></li>
       <li><a href="#cves-hermes">Hermes CVEs</a></li>
+      <li><a href="#infrastructure">Infrastructure</a></li>
       <li><a href="#quickstart">Quickstart</a></li>
       <li><a href="https://github.com/idallasjlabs/agentshroud" class="nav-cta">GitHub</a></li>
     </ul>
@@ -2495,6 +2498,81 @@ idf.py -p /dev/cu.usbmodem* flash
   </div>
 </section>
 <!-- ── Hermes CVE section end ─────────────────────────────────── -->
+
+<!-- ── AgentShroud Infrastructure ─────────────────────────────── -->
+<section id="infrastructure">
+  <div class="container">
+    <div class="section-label">Infrastructure Security</div>
+    <h2>AgentShroud Infrastructure</h2>
+    <p class="section-sub">A security product must not hide its own vulnerabilities behind a green check. Alongside the OpenClaw and Hermes application-CVE registries above, we report our own container images — base OS packages and baked-in tool binaries — exactly as Trivy finds them, <strong>including items not yet mitigated</strong>. Nothing is suppressed.</p>
+
+    <table class="cve-table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Critical</th>
+          <th>High</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cve-id">agentshroud-gateway <span style="opacity:.6">(pre)</span></td>
+          <td class="badge-crit">9</td>
+          <td class="badge-high">323</td>
+          <td class="badge-warn">baseline</td>
+        </tr>
+        <tr>
+          <td class="cve-id">agentshroud-gateway <strong>(post-hardening)</strong></td>
+          <td class="badge-crit">8</td>
+          <td class="badge-high">221</td>
+          <td class="badge-ok">✓ −103 (−31%) — measured rebuild</td>
+        </tr>
+        <tr>
+          <td class="cve-id">agentshroud-openclaw</td>
+          <td class="badge-crit">19</td>
+          <td class="badge-high">203</td>
+          <td class="badge-warn">◐ Hardened; rebuild pending (pre figures)</td>
+        </tr>
+        <tr>
+          <td class="cve-id">agentshroud-hermes</td>
+          <td class="badge-crit">18</td>
+          <td class="badge-high">195</td>
+          <td class="badge-warn">◐ Hardened; rebuild pending (upstream base)</td>
+        </tr>
+        <tr>
+          <td class="cve-id">agentshroud-voice-gateway</td>
+          <td class="badge-crit">9</td>
+          <td class="badge-high">71</td>
+          <td class="badge-warn">◐ Hardened + base pinned; rebuild pending</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="section-sub" style="margin-top:14px;"><em>Trivy CRITICAL + HIGH, 2026-07-13. The gateway post-hardening row is a measured rebuild-and-rescan; the other three images have the same <code>apt upgrade</code> applied and will drop similarly once rebuilt.</em></p>
+
+    <div class="feature-grid" style="margin-top:22px;">
+      <div class="feature-card">
+        <div class="feature-icon">📦</div>
+        <h3>OS packages</h3>
+        <p>clamav, curl/libcurl, gpg and base libraries. <strong>Being mitigated</strong> via base-image digest bumps and <code>apt upgrade</code> across every Dockerfile.</p>
+        <p><span class="badge-warn">◐ In progress</span></p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔧</div>
+        <h3>Scanner-tool binaries</h3>
+        <p>cosign, syft and trivy baked into the gateway image carry Go stdlib / x-crypto / x-net findings. Being fixed by bumping to patched tool releases; any residue is moved to a sidecar or built from patched source.</p>
+        <p><span class="badge-fail">✗ Not yet mitigated — tracked</span></p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <h3>No scanner-tool suppression</h3>
+        <p>The health-report scan reports every severity. Exactly one finding is suppressed — <code>CVE-2021-23358</code>, a Wazuh-internal <code>underscore</code> issue not reachable from external input, with a documented IEC&nbsp;62443 risk assessment. <strong>No scanner-tool-binary CVE is suppressed</strong>; every count above is real. Accepting a known vuln in a security tool would be theater.</p>
+        <p><span class="badge-ok">✓ Reported honestly</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ── AgentShroud Infrastructure section end ─────────────────── -->
 
 <!-- ── Compliance ─────────────────────────────────────────────── -->
 <section>
