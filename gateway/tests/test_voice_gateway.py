@@ -59,6 +59,31 @@ def test_health_returns_ok():
     assert resp.json() == {"status": "ok"}
 
 
+def test_lifespan_tolerates_warmup_failure(monkeypatch):
+    """A model/pipeline warm-up failure at startup must NOT down the gateway.
+
+    Regression: the lifespan warmed the STT model and Kokoro pipeline via
+    asyncio.gather with no error handling, so a missing/broken model (e.g.
+    kokoro absent) crashed startup and took /health down with it.  Warm-up is
+    best-effort now — the app must still start and serve /health.
+    """
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    def _boom():
+        raise RuntimeError("model unavailable")
+
+    monkeypatch.setattr(stt_mod, "_get_model", _boom)
+    monkeypatch.setattr(tts_mod, "_get_pipeline", _boom)
+
+    # Entering the TestClient context runs the lifespan (both warm-ups raise).
+    with TestClient(srv.app) as client:
+        resp = client.get("/health")
+        assert resp.status_code == 200
+        assert resp.json() == {"status": "ok"}
+
+
 # ── STT unit tests ────────────────────────────────────────────────────────────
 
 
