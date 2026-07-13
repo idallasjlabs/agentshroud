@@ -169,6 +169,25 @@ class TestVerifyEntry:
         assert v.verify_entry(DraftEntry("X", 1, 1, candidate_urls=["not-a-url"])) is None
         assert fetcher.calls == []
 
+    @pytest.mark.parametrize(
+        "url",
+        [
+            "https://lakera.ai@evil.com/",  # userinfo trick — true host is evil.com
+            "http://lakera.ai:8080@evil.com/",  # userinfo + port
+            "https://lakera.ai.evil.com/",  # suffix confusion
+            "https://evil.com/lakera.ai",  # allowlisted string in path, not host
+            "https://evil.grokipedia.com.attacker.com/",  # wildcard base mid-host
+            "https://grokipedia.com.attacker.com/",
+        ],
+    )
+    def test_host_confusion_urls_rejected_and_never_fetched(self, url: str) -> None:
+        # The allowlist gate uses the TRUE parsed host and must reject these
+        # BEFORE any fetch, even though the fetcher would return 200 for anything.
+        fetcher = _FakeFetcher({url: (200, _SHA)})
+        v = CitationVerifier(fetcher=fetcher, allowed_domains=_ALLOW)
+        assert v.verify_entry(DraftEntry("X", 1, 1, candidate_urls=[url])) is None
+        assert fetcher.calls == []
+
 
 # ---------------------------------------------------------------------------
 # Report-level verification
