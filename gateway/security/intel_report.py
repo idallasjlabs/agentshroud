@@ -57,6 +57,28 @@ class ReportIntegrityError(Exception):
 # ---------------------------------------------------------------------------
 
 
+class Citation(BaseModel):
+    """A verified source backing a competitor claim.
+
+    A Citation is only created by the CitationVerifier after the URL has been
+    re-fetched through the allowlisted web proxy — so ``content_sha256`` and
+    ``status`` are evidence the source was live and reachable at verify time,
+    not a self-asserted "[verified]" tag.
+    """
+
+    model_config = {"frozen": True}
+
+    url: str = Field(..., min_length=1, description="Cited source URL")
+    domain: str = Field(..., min_length=1, description="Host of the cited URL (allowlisted)")
+    status: int = Field(
+        ..., ge=200, le=299, description="HTTP 2xx status at re-fetch time (proof of live source)"
+    )
+    content_sha256: str = Field(
+        ..., min_length=64, max_length=64, description="SHA-256 of the fetched content"
+    )
+    fetched_at: float = Field(..., description="UNIX timestamp of the verifying re-fetch")
+
+
 class CompetitorEntry(BaseModel):
     """A single competitor record in a competitive intel report."""
 
@@ -64,6 +86,10 @@ class CompetitorEntry(BaseModel):
     security_score: int = Field(..., ge=0, le=200, description="Modules implemented (0–200)")
     module_count: int = Field(..., ge=0, description="Total modules or features count")
     notes: str = Field(default="", description="Analyst notes")
+    sources: list[Citation] = Field(
+        default_factory=list,
+        description="Verified citations backing this entry (≥1 required post-verification)",
+    )
 
 
 class CompetitiveIntelReport(BaseModel):
@@ -88,6 +114,11 @@ class CompetitiveIntelReport(BaseModel):
     )
     lead_delta: Optional[int] = Field(
         default=None, description="Modules ahead of closest competitor"
+    )
+    dropped_unverified: int = Field(
+        default=0,
+        ge=0,
+        description="Claims dropped for lacking a verified (re-fetched, allowlisted) citation",
     )
 
     # --- Hash chain fields (set by model_validator) ---
@@ -139,18 +170,19 @@ def _compute_hash(report: CompetitiveIntelReport) -> str:
     competitors (as sorted JSON), agentshroud_score, lead_delta.
     Fields excluded: content_hash, previous_hash (chain metadata).
     """
-    competitors_payload = json.dumps(
-        [c.model_dump() for c in report.competitors], sort_keys=True
+    competitors_payload = json.dumps([c.model_dump() for c in report.competitors], sort_keys=True)
+    payload = "|".join(
+        [
+            report.report_id,
+            f"{report.generated_at:.6f}",
+            report.source,
+            report.summary,
+            competitors_payload,
+            str(report.agentshroud_score),
+            str(report.lead_delta),
+            str(report.dropped_unverified),
+        ]
     )
-    payload = "|".join([
-        report.report_id,
-        f"{report.generated_at:.6f}",
-        report.source,
-        report.summary,
-        competitors_payload,
-        str(report.agentshroud_score),
-        str(report.lead_delta),
-    ])
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 

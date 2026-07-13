@@ -11,7 +11,7 @@ Defines default allowlists, denylists, and operating modes for egress enforcemen
 
 import os
 from dataclasses import dataclass, field
-from typing import Dict, List, Set
+from typing import Dict, Iterable, List, Set
 
 # Canonical registry of all known service domains that should be pre-approved at startup.
 # This is the single source of truth used by EgressFilterConfig.default_allowlist,
@@ -115,6 +115,30 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     "openrouter.ai",
     "*.openrouter.ai",
 ]
+
+
+def domain_matches(domain: str, patterns: Iterable[str]) -> bool:
+    """Return True if *domain* matches any pattern (exact or ``*.`` wildcard).
+
+    Single source of truth for allowlist/denylist domain matching, shared by
+    ``EgressFilterConfig`` and the citation verifier.  Wildcards match exactly
+    one subdomain level (``*.example.com`` matches ``a.example.com`` and
+    ``example.com`` but not ``a.b.example.com``).
+    """
+    domain = domain.lower().rstrip(".")
+    for pattern in patterns:
+        pattern = pattern.lower().rstrip(".")
+        if pattern.startswith("*."):
+            base = pattern[2:]
+            if domain == base:
+                return True
+            if domain.endswith("." + base):
+                prefix = domain[: -(len(base) + 1)]
+                if "." not in prefix:
+                    return True
+        elif domain == pattern:
+            return True
+    return False
 
 
 @dataclass
@@ -269,25 +293,16 @@ class EgressFilterConfig:
 
     def _matches_any_pattern(self, domain: str, patterns: List[str]) -> bool:
         """Check if domain matches any pattern in the list (supports wildcards)."""
-        domain = domain.lower().rstrip(".")
+        return domain_matches(domain, patterns)
 
-        for pattern in patterns:
-            pattern = pattern.lower().rstrip(".")
+    def matches_allowlist(self, domain: str) -> bool:
+        """Public: does *domain* match any pattern in the effective default allowlist?
 
-            if pattern.startswith("*."):
-                # Wildcard pattern
-                base = pattern[2:]
-                if domain == base:
-                    return True
-                if domain.endswith("." + base):
-                    # Check it's only one subdomain level
-                    prefix = domain[: -(len(base) + 1)]
-                    if "." not in prefix:
-                        return True
-            elif domain == pattern:
-                return True
-
-        return False
+        Exposes the same exact / single-level-wildcard semantics used by egress
+        enforcement so other modules (e.g. the citation verifier) can check
+        allowlist membership without reaching into a private method.
+        """
+        return domain_matches(domain, self.default_allowlist)
 
 
 # Global config instance
