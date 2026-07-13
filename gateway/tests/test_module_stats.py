@@ -111,3 +111,43 @@ class TestEnforcementWiring:
         snap = get_collector().snapshot()
         assert "tool_acl" in snap
         assert snap["tool_acl"]["total"] >= 1
+
+
+class TestEgressWiringEndToEnd:
+    """SCRUM-80 F1 regression — a DENIED egress attempt must count as blocked.
+
+    The bug: EgressAttempt has no .blocked attr, so the counter recorded every
+    decision (incl. DENY) as ALLOW — an all-green egress heat-map, the exact
+    theater this feature prevents.  This test drives the real check() path.
+    """
+
+    def setup_method(self):
+        from gateway.security.module_stats import get_collector
+
+        get_collector().reset()
+
+    def test_denied_egress_counts_as_blocked(self):
+        from gateway.security.egress_filter import EgressFilter
+        from gateway.security.module_stats import get_collector
+
+        from gateway.security.egress_filter import EgressAction
+
+        f = EgressFilter()
+        # Loopback is DENY (SSRF protection) in the default enforce mode.
+        attempt = f.check("some-agent", "127.0.0.1")
+        assert attempt.action == EgressAction.DENY  # precondition
+        snap = get_collector().snapshot()
+        # The pre-fix bug recorded this DENY as allowed=1, blocked=0.
+        assert snap["egress_filter"]["blocked"] == 1
+        assert snap["egress_filter"]["allowed"] == 0
+
+    def test_allowed_egress_counts_as_allowed(self):
+        from gateway.security.egress_filter import EgressAction, EgressFilter
+        from gateway.security.module_stats import get_collector
+
+        f = EgressFilter()
+        attempt = f.check("some-agent", "example.com")
+        snap = get_collector().snapshot()
+        if attempt.action == EgressAction.ALLOW:
+            assert snap["egress_filter"]["allowed"] == 1
+            assert snap["egress_filter"]["blocked"] == 0

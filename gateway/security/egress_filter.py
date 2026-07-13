@@ -167,7 +167,12 @@ class EgressFilter:
         try:
             from gateway.security.module_stats import record_decision
 
-            record_decision("egress_filter", allowed=not getattr(attempt, "blocked", False))
+            # EgressAttempt exposes .action (ALLOW/DENY), NOT a .blocked
+            # attribute — reading a non-existent .blocked defaulted every
+            # decision to ALLOW, hiding all blocks (review F1).  Records the
+            # STATIC filter verdict; check_async's approval-queue override
+            # (which can flip DENY→ALLOW) is intentionally not reflected here.
+            record_decision("egress_filter", allowed=(attempt.action == EgressAction.ALLOW))
         except Exception:
             pass
         return attempt
