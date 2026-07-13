@@ -2517,32 +2517,38 @@ idf.py -p /dev/cu.usbmodem* flash
       </thead>
       <tbody>
         <tr>
-          <td class="cve-id">agentshroud-gateway</td>
+          <td class="cve-id">agentshroud-gateway <span style="opacity:.6">(pre)</span></td>
           <td class="badge-crit">9</td>
           <td class="badge-high">323</td>
-          <td class="badge-warn">◐ Remediation in progress</td>
+          <td class="badge-warn">baseline</td>
+        </tr>
+        <tr>
+          <td class="cve-id">agentshroud-gateway <strong>(post-hardening)</strong></td>
+          <td class="badge-crit">8</td>
+          <td class="badge-high">221</td>
+          <td class="badge-ok">✓ −103 (−31%) — measured rebuild</td>
         </tr>
         <tr>
           <td class="cve-id">agentshroud-openclaw</td>
           <td class="badge-crit">19</td>
           <td class="badge-high">203</td>
-          <td class="badge-warn">◐ Remediation in progress</td>
+          <td class="badge-warn">◐ Hardened; rebuild pending (pre figures)</td>
         </tr>
         <tr>
           <td class="cve-id">agentshroud-hermes</td>
           <td class="badge-crit">18</td>
           <td class="badge-high">195</td>
-          <td class="badge-warn">◐ Remediation in progress (upstream base)</td>
+          <td class="badge-warn">◐ Hardened; rebuild pending (upstream base)</td>
         </tr>
         <tr>
           <td class="cve-id">agentshroud-voice-gateway</td>
           <td class="badge-crit">9</td>
           <td class="badge-high">71</td>
-          <td class="badge-warn">◐ Remediation in progress</td>
+          <td class="badge-warn">◐ Hardened + base pinned; rebuild pending</td>
         </tr>
       </tbody>
     </table>
-    <p class="section-sub" style="margin-top:14px;"><em>Live Trivy scan, 2026-07-13 (CRITICAL + HIGH).</em></p>
+    <p class="section-sub" style="margin-top:14px;"><em>Trivy CRITICAL + HIGH, 2026-07-13. The gateway post-hardening row is a measured rebuild-and-rescan; the other three images have the same <code>apt upgrade</code> applied and will drop similarly once rebuilt.</em></p>
 
     <div class="feature-grid" style="margin-top:22px;">
       <div class="feature-card">
