@@ -1000,11 +1000,14 @@ async def get_competitive_intel(user: str = Depends(require_auth)) -> dict:
 class IntelDraftEntry(BaseModel):
     """One unverified competitor claim + its candidate source URLs."""
 
-    name: str = Field(..., min_length=1)
+    name: str = Field(..., min_length=1, max_length=200)
     security_score: int = Field(..., ge=0, le=200)
     module_count: int = Field(..., ge=0)
-    notes: str = ""
-    candidate_urls: list[str] = Field(default_factory=list)
+    notes: str = Field(default="", max_length=4000)
+    # Bounded fan-out: each claim re-fetches its candidate URLs synchronously, so
+    # cap the count (Hermes builds these from scraped content — a prompt-injected
+    # page must not coerce thousands of fetches).
+    candidate_urls: list[str] = Field(default_factory=list, max_length=20)
 
 
 class IntelDraftRequest(BaseModel):
@@ -1015,7 +1018,7 @@ class IntelDraftRequest(BaseModel):
     summary: str = ""
     agentshroud_score: Optional[int] = None
     lead_delta: Optional[int] = None
-    entries: list[IntelDraftEntry] = Field(default_factory=list)
+    entries: list[IntelDraftEntry] = Field(default_factory=list, max_length=50)
 
 
 def _intel_verifier():

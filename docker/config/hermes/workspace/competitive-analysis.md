@@ -52,7 +52,6 @@ Report filename: reports/competitive-report-[YYYY-MM-DD].md (use today's date)
      -X POST "${GATEWAY_URL:-http://gateway:8080}/api/intel/reports" \
      -H "Content-Type: application/json" \
      -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN}" \
-     -H "X-AgentShroud-System: 1" \
      --data-binary "@/tmp/intel-draft.json"
    ```
 

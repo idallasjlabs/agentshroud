@@ -62,14 +62,25 @@ class FetchOutcome:
 Fetcher = Callable[[str], FetchOutcome]
 
 
-def make_httpx_fetcher(timeout: float = 10.0) -> Fetcher:
-    """Production fetcher: GET the URL and hash the body as proof-of-source.
+# Cap the bytes hashed as proof-of-source.  Streaming + a byte budget prevents a
+# (compromised) allowlisted host from returning a multi-GB body and OOM-ing the
+# gateway; the first few MB are more than enough to prove the source is live.
+_MAX_FETCH_BYTES = 5 * 1024 * 1024
 
-    SECURITY: ``follow_redirects=False`` — a followed 3xx could send the fetch
-    to an off-allowlist host (the allowlist was checked against the *original*
-    URL), so a redirect is a non-2xx and the citation is rejected.  Any network
-    error maps to status 599 / no content, which the verifier treats as
-    unproven.  The verifier has already allowlist-gated and SSRF-sanitised the
+
+def make_httpx_fetcher(timeout: float = 10.0, max_bytes: int = _MAX_FETCH_BYTES) -> Fetcher:
+    """Production fetcher: stream the URL and hash the body as proof-of-source.
+
+    SECURITY:
+    - ``follow_redirects=False`` — a followed 3xx could send the fetch to an
+      off-allowlist host (the allowlist was checked against the *original* URL),
+      so a redirect is a non-2xx and the citation is rejected.
+    - ``trust_env=False`` — pin a direct connection; the fetch must not be
+      re-routed through a proxy read from the environment.
+    - streamed with a ``max_bytes`` budget so a huge response body cannot exhaust
+      memory.
+    Any network error maps to status 599 / no content, which the verifier treats
+    as unproven.  The verifier has already allowlist-gated and SSRF-sanitised the
     URL before this runs.
     """
     import hashlib
@@ -78,14 +89,20 @@ def make_httpx_fetcher(timeout: float = 10.0) -> Fetcher:
 
     def _fetch(url: str) -> FetchOutcome:
         try:
-            resp = httpx.get(url, timeout=timeout, follow_redirects=False)
-            body = resp.content or b""
-            sha = hashlib.sha256(body).hexdigest() if body else None
+            with httpx.stream(
+                "GET", url, timeout=timeout, follow_redirects=False, trust_env=False
+            ) as resp:
+                status = resp.status_code
+                hasher = hashlib.sha256()
+                total = 0
+                for chunk in resp.iter_bytes():
+                    hasher.update(chunk)
+                    total += len(chunk)
+                    if total >= max_bytes:
+                        break
+            sha = hasher.hexdigest() if total else None
             return FetchOutcome(
-                url=url,
-                status=resp.status_code,
-                content_sha256=sha,
-                fetched_at=time.time(),
+                url=url, status=status, content_sha256=sha, fetched_at=time.time()
             )
         except Exception as exc:  # network error, timeout, TLS failure, …
             logger.info("citation fetch failed for %s: %s", url, exc)

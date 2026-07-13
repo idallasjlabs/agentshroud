@@ -141,6 +141,33 @@ class TestSubmitEndpoint:
         resp = client.post("/api/intel/reports", json=bad)
         assert resp.status_code == 422
 
+    def test_too_many_candidate_urls_rejected(self, client, monkeypatch) -> None:
+        # Bounded fan-out: >20 URLs on one claim is rejected before any fetch.
+        _inject_fetcher(monkeypatch, {})
+        bad = _draft(
+            entries=[
+                {
+                    "name": "Flood",
+                    "security_score": 1,
+                    "module_count": 1,
+                    "candidate_urls": [f"https://lakera.ai/{i}" for i in range(21)],
+                }
+            ]
+        )
+        resp = client.post("/api/intel/reports", json=bad)
+        assert resp.status_code == 422
+
+    def test_too_many_entries_rejected(self, client, monkeypatch) -> None:
+        _inject_fetcher(monkeypatch, {})
+        bad = _draft(
+            entries=[
+                {"name": f"c{i}", "security_score": 1, "module_count": 1, "candidate_urls": []}
+                for i in range(51)
+            ]
+        )
+        resp = client.post("/api/intel/reports", json=bad)
+        assert resp.status_code == 422
+
 
 class TestSubmitAuth:
     def test_requires_auth(self, tmp_path, monkeypatch) -> None:
@@ -158,13 +185,26 @@ class TestSubmitAuth:
 # ---------------------------------------------------------------------------
 
 
+class _StreamResp:
+    """Fake httpx.stream context manager yielding a body in chunks."""
+
+    def __init__(self, status: int, chunks: list[bytes]) -> None:
+        self.status_code = status
+        self._chunks = chunks
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *a) -> bool:
+        return False
+
+    def iter_bytes(self):
+        yield from self._chunks
+
+
 class TestHttpxFetcher:
     def test_2xx_with_body_is_proven(self) -> None:
-        class _Resp:
-            status_code = 200
-            content = b"hello world"
-
-        with patch("httpx.get", return_value=_Resp()):
+        with patch("httpx.stream", return_value=_StreamResp(200, [b"hello ", b"world"])):
             outcome = make_httpx_fetcher()("https://lakera.ai/x")
         assert outcome.status == 200
         assert outcome.ok
@@ -172,27 +212,29 @@ class TestHttpxFetcher:
 
     def test_redirect_is_not_proven(self) -> None:
         # follow_redirects=False → a 3xx is a non-2xx → citation rejected (SSRF guard).
-        class _Resp:
-            status_code = 302
-            content = b""
-
-        with patch("httpx.get", return_value=_Resp()) as mock_get:
+        with patch("httpx.stream", return_value=_StreamResp(302, [])) as mock_stream:
             outcome = make_httpx_fetcher()("https://lakera.ai/x")
-        assert mock_get.call_args.kwargs.get("follow_redirects") is False
+        assert mock_stream.call_args.kwargs.get("follow_redirects") is False
+        assert mock_stream.call_args.kwargs.get("trust_env") is False
         assert not outcome.ok
 
     def test_empty_body_is_not_proven(self) -> None:
-        class _Resp:
-            status_code = 200
-            content = b""
-
-        with patch("httpx.get", return_value=_Resp()):
+        with patch("httpx.stream", return_value=_StreamResp(200, [])):
             outcome = make_httpx_fetcher()("https://lakera.ai/x")
         assert outcome.content_sha256 is None
         assert not outcome.ok
 
+    def test_oversize_body_is_capped(self) -> None:
+        # A huge body must be truncated at the byte budget (memory-DoS guard):
+        # the hash is over the capped prefix, not the full stream.
+        big = [b"x" * 1024] * 100  # 100 KB of chunks
+        with patch("httpx.stream", return_value=_StreamResp(200, big)):
+            outcome = make_httpx_fetcher(max_bytes=4096)("https://lakera.ai/x")
+        assert outcome.ok  # still proven-live, just capped
+        assert outcome.content_sha256 is not None
+
     def test_network_error_maps_to_599(self) -> None:
-        with patch("httpx.get", side_effect=RuntimeError("boom")):
+        with patch("httpx.stream", side_effect=RuntimeError("boom")):
             outcome = make_httpx_fetcher()("https://lakera.ai/x")
         assert outcome.status == 599
         assert outcome.content_sha256 is None
