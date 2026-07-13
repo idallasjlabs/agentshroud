@@ -24,9 +24,10 @@ from __future__ import annotations
 
 import logging
 import smtplib
+from contextlib import AbstractContextManager
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from typing import Callable, ContextManager, Protocol
+from typing import Callable, Protocol
 
 logger = logging.getLogger("agentshroud.ingest_api.email_service")
 
@@ -41,7 +42,7 @@ class SmtpLike(Protocol):
 
 # A transport factory returns a context-managed SMTP-like connection.  Injected
 # so production uses SMTP_SSL and tests use a fake (no real network).
-TransportFactory = Callable[[], ContextManager[SmtpLike]]
+TransportFactory = Callable[[], AbstractContextManager[SmtpLike]]
 
 
 class GatewayEmailService:
