@@ -2559,8 +2559,8 @@ idf.py -p /dev/cu.usbmodem* flash
       </div>
       <div class="feature-card">
         <div class="feature-icon">🔍</div>
-        <h3>No suppression</h3>
-        <p>There is no <code>.trivyignore</code>. Every finding above is counted in the daily Trivy report and the health-report score. We do not accept known vulnerabilities in a security tool — that would be theater.</p>
+        <h3>No scanner-tool suppression</h3>
+        <p>The health-report scan reports every severity. Exactly one finding is suppressed — <code>CVE-2021-23358</code>, a Wazuh-internal <code>underscore</code> issue not reachable from external input, with a documented IEC&nbsp;62443 risk assessment. <strong>No scanner-tool-binary CVE is suppressed</strong>; every count above is real. Accepting a known vuln in a security tool would be theater.</p>
         <p><span class="badge-ok">✓ Reported honestly</span></p>
       </div>
     </div>

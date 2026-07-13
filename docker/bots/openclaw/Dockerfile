@@ -15,6 +15,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Debian bookworm ships a fixed apt that resolves the ARM64 gpgv clearsign bug.
 RUN sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \
     && apt-get update \
+    && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends \
         openssh-client \
         netcat-openbsd \
@@ -28,7 +29,7 @@ RUN sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.source
     && rm -rf /var/cache/apt/archives/*.deb /var/lib/apt/lists/*
 
 # Trivy vulnerability scanner — pinned version with checksum verification (M7 fix)
-ARG TRIVY_VERSION=0.69.3
+ARG TRIVY_VERSION=0.72.0  # SCRUM-100: patched Go
 # R2-M1: Download Trivy with checksum verification for supply chain integrity
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
