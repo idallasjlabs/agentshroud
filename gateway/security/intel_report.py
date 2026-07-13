@@ -70,7 +70,9 @@ class Citation(BaseModel):
 
     url: str = Field(..., min_length=1, description="Cited source URL")
     domain: str = Field(..., min_length=1, description="Host of the cited URL (allowlisted)")
-    status: int = Field(..., ge=100, le=599, description="HTTP status at re-fetch time")
+    status: int = Field(
+        ..., ge=200, le=299, description="HTTP 2xx status at re-fetch time (proof of live source)"
+    )
     content_sha256: str = Field(
         ..., min_length=64, max_length=64, description="SHA-256 of the fetched content"
     )
@@ -168,19 +170,19 @@ def _compute_hash(report: CompetitiveIntelReport) -> str:
     competitors (as sorted JSON), agentshroud_score, lead_delta.
     Fields excluded: content_hash, previous_hash (chain metadata).
     """
-    competitors_payload = json.dumps(
-        [c.model_dump() for c in report.competitors], sort_keys=True
+    competitors_payload = json.dumps([c.model_dump() for c in report.competitors], sort_keys=True)
+    payload = "|".join(
+        [
+            report.report_id,
+            f"{report.generated_at:.6f}",
+            report.source,
+            report.summary,
+            competitors_payload,
+            str(report.agentshroud_score),
+            str(report.lead_delta),
+            str(report.dropped_unverified),
+        ]
     )
-    payload = "|".join([
-        report.report_id,
-        f"{report.generated_at:.6f}",
-        report.source,
-        report.summary,
-        competitors_payload,
-        str(report.agentshroud_score),
-        str(report.lead_delta),
-        str(report.dropped_unverified),
-    ])
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 

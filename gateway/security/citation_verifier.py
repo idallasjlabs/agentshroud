@@ -93,28 +93,47 @@ class CitationVerifier:
     # ------------------------------------------------------------------
 
     def _verify_url(self, url: str) -> Optional[Citation]:
-        """Re-fetch *url* and return a Citation iff it is allowlisted + live."""
-        host = urlparse(url).hostname
+        """Re-fetch *url* and return a Citation iff it is allowlisted + live.
+
+        SSRF hardening: the allowlist decision uses ``urlparse().hostname``, but
+        WHATWG-compliant HTTP clients disagree with ``urlparse`` on authorities
+        containing ``\\`` or userinfo (``https://evil.com\\@lakera.ai`` parses to
+        host ``lakera.ai`` but a browser/curl connects to ``evil.com``).  To make
+        the check and the fetch agree regardless of which client PR2 injects, we
+        reject any URL that is not a clean ``http(s)`` URL with no userinfo and no
+        backslash BEFORE the allowlist gate — so the fetched string can never
+        resolve to a different host than the one we validated.
+        """
+        parsed = urlparse(url)
+        host = parsed.hostname
         if not host:
             logger.debug("citation rejected — unparseable host: %r", url)
+            return None
+        if parsed.scheme not in ("http", "https"):
+            logger.info("citation rejected — non-http(s) scheme: %s", parsed.scheme)
+            return None
+        if parsed.username or parsed.password or "\\" in url:
+            logger.info("citation rejected — embedded credentials / backslash authority")
             return None
         if not domain_matches(host, self._allowlist):
             logger.info("citation rejected — host not allowlisted: %s", host)
             return None
         outcome = self._fetch(url)
-        if not outcome.ok:
+        sha = outcome.content_sha256
+        # Proven live only on a 2xx with non-empty content.  Single reachable
+        # gate (no assert — must hold under `python -O`); `sha` narrows to str.
+        if not (sha and 200 <= outcome.status < 300):
             logger.info(
                 "citation rejected — re-fetch not proven (status=%s): %s",
                 outcome.status,
                 url,
             )
             return None
-        assert outcome.content_sha256 is not None  # guaranteed by outcome.ok
         return Citation(
             url=url,
             domain=host.lower(),
             status=outcome.status,
-            content_sha256=outcome.content_sha256,
+            content_sha256=sha,
             fetched_at=outcome.fetched_at,
         )
 

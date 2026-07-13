@@ -188,6 +188,27 @@ class TestVerifyEntry:
         assert v.verify_entry(DraftEntry("X", 1, 1, candidate_urls=[url])) is None
         assert fetcher.calls == []
 
+    @pytest.mark.parametrize(
+        "url",
+        [
+            # Backslash authority: urlparse host = lakera.ai (would pass the gate)
+            # but WHATWG clients connect to evil.com. Rejected before the gate.
+            "https://evil.com\\@lakera.ai/path",
+            "https://user:pass@lakera.ai/x",  # userinfo on an allowlisted host
+            "file:///etc/passwd",  # non-http scheme
+            "gopher://lakera.ai/",  # non-http scheme on allowlisted host
+            "ftp://lakera.ai/x",
+        ],
+    )
+    def test_ssrf_unsafe_urls_rejected_before_fetch(self, url: str) -> None:
+        # Reject non-http(s) schemes, embedded credentials, and backslash
+        # authorities BEFORE fetching — so the fetched string can never resolve
+        # to a different host than the one validated (parser/fetcher agreement).
+        fetcher = _FakeFetcher({url: (200, _SHA)})
+        v = CitationVerifier(fetcher=fetcher, allowed_domains=_ALLOW)
+        assert v.verify_entry(DraftEntry("X", 1, 1, candidate_urls=[url])) is None
+        assert fetcher.calls == []
+
 
 # ---------------------------------------------------------------------------
 # Report-level verification
