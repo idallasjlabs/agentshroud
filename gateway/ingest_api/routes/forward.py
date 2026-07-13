@@ -12,8 +12,6 @@ import os
 import smtplib
 import subprocess
 from datetime import datetime, timezone
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
 from pathlib import Path
 from typing import Annotated
 
@@ -23,6 +21,7 @@ from pydantic import BaseModel, Field
 
 from ...proxy.webhook_receiver import WebhookReceiver
 from ..auth import create_auth_dependency
+from ..email_service import GatewayEmailService
 from ..event_bus import make_event
 from ..models import (
     ApprovalRequest,
@@ -50,6 +49,11 @@ _EMAIL_OP_REF = (
 )
 _EMAIL_SMTP_HOST = "smtp.gmail.com"
 _EMAIL_SMTP_PORT = 465
+
+# Single owner-comms email transport (SCRUM-77).  Injectable in tests so no test
+# opens a real SMTP connection; policy (allowlist/PII/approval/credentials) stays
+# in the endpoint below.
+_email_service = GatewayEmailService(_EMAIL_SENDER, _EMAIL_SMTP_HOST, _EMAIL_SMTP_PORT)
 
 
 def _get_gmail_app_password() -> "str | None":
@@ -264,29 +268,20 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
             detail="Email credentials not available",
         )
 
-    # Build MIME message
-    msg = MIMEMultipart("alternative")
-    msg["Subject"] = request.subject
-    msg["From"] = _EMAIL_SENDER
-    msg["To"] = request.to
-
+    # Send via the consolidated owner-comms transport (SCRUM-77).  MIME build +
+    # SMTP login/sendmail live in GatewayEmailService; the transport is
+    # injectable so tests never open a real connection.
     is_html = getattr(request, "is_html", False)
-    if is_html:
-        # Attach plain fallback first, then HTML (clients prefer last attachment)
-        plain = "This email requires an HTML-capable email client."
-        msg.attach(MIMEText(plain, "plain"))
-        msg.attach(MIMEText(sanitized_body, "html"))
-    else:
-        msg.attach(MIMEText(sanitized_body, "plain"))
-
-    # Send via SMTP_SSL
-    def _send() -> None:
-        with smtplib.SMTP_SSL(_EMAIL_SMTP_HOST, _EMAIL_SMTP_PORT) as smtp:
-            smtp.login(_EMAIL_SENDER, app_password)
-            smtp.sendmail(_EMAIL_SENDER, [request.to], msg.as_string())
-
     try:
-        await loop.run_in_executor(None, _send)
+        await loop.run_in_executor(
+            None,
+            _email_service.send,
+            request.to,
+            request.subject,
+            sanitized_body,
+            is_html,
+            app_password,
+        )
         logger.info("email-send: sent to %s subject=%r", request.to, request.subject)
     except smtplib.SMTPAuthenticationError as e:
         logger.error("email-send: SMTP auth failed: %s", e)
