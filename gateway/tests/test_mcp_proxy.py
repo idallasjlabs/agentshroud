@@ -803,6 +803,73 @@ class TestProxyResultProcessing:
         assert any(getattr(evt, "type", "") == "privacy_data_redacted" for evt in events)
 
 
+class TestExecuteResultInspectionBinding:
+    """Regression: result_inspection was possibly-unbound when the executed tool
+    returned a None-content result. The result-audit ternaries read it, so the
+    None-content branch must not raise UnboundLocalError (mcp_proxy.py:664-684)."""
+
+    @pytest.mark.asyncio
+    async def test_execute_none_content_result_does_not_unbind(self, proxy):
+        call = MCPToolCall(
+            id="exec-none-1",
+            server_name="home-assistant",
+            tool_name="get_states",
+            parameters={"entity_id": "light.kitchen"},
+            agent_id="main-agent",
+        )
+
+        async def _fake_execute(tool_call, sanitized_params=None):
+            # content=None drives the else-branch where result_inspection is
+            # never assigned; the audit ternaries must fall back to defaults.
+            return MCPToolResult(
+                call_id=tool_call.id,
+                server_name=tool_call.server_name,
+                tool_name=tool_call.tool_name,
+                content=None,
+                is_error=False,
+            )
+
+        proxy._execute_tool_call = _fake_execute
+
+        # Must not raise UnboundLocalError and must record findings_count=0.
+        result = await proxy.process_tool_call(call, execute=True)
+
+        assert result.allowed
+        assert result.tool_result is not None
+        assert result.tool_result.content is None
+        # Result-audit entry recorded with the None-content fallbacks (findings=0).
+        result_entries = [e for e in proxy.audit.entries if e.direction == "tool_result"]
+        assert result_entries, "expected a tool_result audit entry for the executed call"
+        assert all(e.findings_count == 0 for e in result_entries)
+        assert all(e.threat_level == "none" for e in result_entries)
+
+    @pytest.mark.asyncio
+    async def test_execute_with_content_still_inspects(self, proxy):
+        call = MCPToolCall(
+            id="exec-content-1",
+            server_name="home-assistant",
+            tool_name="get_states",
+            parameters={"entity_id": "light.kitchen"},
+            agent_id="main-agent",
+        )
+
+        async def _fake_execute(tool_call, sanitized_params=None):
+            return MCPToolResult(
+                call_id=tool_call.id,
+                server_name=tool_call.server_name,
+                tool_name=tool_call.tool_name,
+                content={"state": "on"},
+                is_error=False,
+            )
+
+        proxy._execute_tool_call = _fake_execute
+
+        result = await proxy.process_tool_call(call, execute=True)
+        assert result.allowed
+        assert result.tool_result is not None
+        assert result.tool_result.content == {"state": "on"}
+
+
 class TestPrivacyPolicyEvents:
     @pytest.mark.asyncio
     async def test_private_tool_violation_emits_event(self, proxy):

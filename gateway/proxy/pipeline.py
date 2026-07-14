@@ -18,7 +18,10 @@ import time
 from collections import deque
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Any, Optional
+from typing import TYPE_CHECKING, Any, Optional
+
+if TYPE_CHECKING:
+    from gateway.security.outbound_filter import FilterResult
 
 logger = logging.getLogger("agentshroud.proxy.pipeline")
 
@@ -874,6 +877,7 @@ class SecurityPipeline:
                 self._stats["pii_redactions_total"] += len(sanitize_result.redactions)
 
         # Step 1.5: Outbound Information Filter (NEW)
+        filter_result: Optional[FilterResult] = None
         if self.outbound_filter:
             filter_result = self.outbound_filter.filter_response(
                 response_text=result.sanitized_message,
@@ -902,7 +906,7 @@ class SecurityPipeline:
         # If the bot hallucinated a fake "AGENTSHROUD blocked X" message, redacting
         # the substring is insufficient — the surrounding context is still deceptive.
         # Replace the entire response with a clean fallback and block delivery.
-        if self.outbound_filter and filter_result.matches:
+        if filter_result is not None and filter_result.matches:
             fabricated = [
                 m for m in filter_result.matches if m.pattern_name == "fabricated_security_notice"
             ]
