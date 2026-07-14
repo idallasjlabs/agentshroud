@@ -71,8 +71,58 @@ class SharedMemoryManager:
             logger.warning("Could not read group memory for %s: %s", group_id, exc)
         return ""
 
-    def append_to_group_memory(self, group_id: str, content: str, author_id: str) -> None:
-        """Append a timestamped entry to the group shared memory file."""
+    @staticmethod
+    def _is_authorized_group_writer(
+        author_id: Optional[str], group_id: str, rbac_config: "Optional[RBACConfig]"
+    ) -> bool:
+        """Return True if ``author_id`` may WRITE to ``group_id`` shared memory.
+
+        RT-5 (WS-E, HIGH): group shared memory is merged into bot system
+        context, so an unauthorized write is a memory-poisoning / stored-
+        prompt-injection vector. A writer must be the owner or a member of the
+        target group. Deny-by-default (fail-closed): an unknown group, an
+        unknown author, or a missing/invalid RBAC principal yields False.
+        """
+        if rbac_config is None:
+            return False
+        if not author_id:
+            return False
+        if getattr(rbac_config, "is_owner", lambda _: False)(author_id):
+            return True
+        members = getattr(rbac_config, "get_user_groups_by_id", lambda _gid: [])(group_id)
+        return author_id in members
+
+    def append_to_group_memory(
+        self,
+        group_id: str,
+        content: str,
+        author_id: str,
+        rbac_config: "Optional[RBACConfig]" = None,
+    ) -> bool:
+        """Append a timestamped entry to the group shared memory file.
+
+        Authorization (RT-5, WS-E HIGH): when ``rbac_config`` is supplied, the
+        write is fail-closed — ``author_id`` must be the owner or a member of
+        ``group_id`` or the write is REFUSED (returns ``False``, nothing is
+        written). When ``rbac_config`` is ``None`` the caller has no
+        authorization context (namespace-isolation harness / uninitialised
+        boot); the legacy append is preserved. All production callers pass
+        ``rbac_config`` so the ACL is enforced in real deployments.
+
+        Returns:
+            True if the entry was written, False if the write was refused or
+            failed.
+        """
+        if rbac_config is not None and not self._is_authorized_group_writer(
+            author_id, group_id, rbac_config
+        ):
+            logger.warning(
+                "SharedMemory AUDIT: BLOCKED unauthorized group-memory write — "
+                "author=%s is not a member/owner of group=%s (RT-5 memory-poisoning guard)",
+                author_id,
+                group_id,
+            )
+            return False
         try:
             gs = self._sm.get_or_create_group_session(group_id)
             ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -85,8 +135,10 @@ class SharedMemoryManager:
                 author_id,
                 len(entry),
             )
+            return True
         except Exception as exc:
             logger.warning("Could not append to group memory for %s: %s", group_id, exc)
+            return False
 
     # ------------------------------------------------------------------
     # User private memory
@@ -110,8 +162,23 @@ class SharedMemoryManager:
             logger.warning("Could not read user memory for %s (bot=%s): %s", user_id, bot_id, exc)
         return ""
 
-    def append_to_user_memory(self, user_id: str, content: str, bot_id: str = "openclaw") -> None:
+    def append_to_user_memory(
+        self,
+        user_id: str,
+        content: str,
+        bot_id: str = "openclaw",
+        author_id: Optional[str] = None,
+        rbac_config: "Optional[RBACConfig]" = None,
+    ) -> bool:
         """Append content to user's private memory file.
+
+        Authorization (RT-5, WS-E HIGH): when ``rbac_config`` is supplied, the
+        write is fail-closed — ``author_id`` must be the target ``user_id``
+        itself or the owner, otherwise the write is REFUSED (returns ``False``,
+        nothing written). This prevents one user (or a compromised agent)
+        poisoning another user's private memory. When ``rbac_config`` is
+        ``None`` the caller has no authorization context and the legacy append
+        is preserved; production callers pass ``rbac_config``.
 
         Args:
             user_id: The user whose memory to append to.
@@ -119,17 +186,38 @@ class SharedMemoryManager:
             bot_id: Which bot's workspace to write to (default: "openclaw").
                     Must match the bot that initiated the append to maintain
                     cross-bot isolation (BT-H1: v1.2.0 security finding).
+            author_id: The authenticated principal performing the write. When
+                    omitted it defaults to ``user_id`` (a self-write).
+            rbac_config: RBAC principal used to authorize the write.
+
+        Returns:
+            True if the entry was written, False if the write was refused or
+            failed.
         """
+        effective_author = author_id if author_id is not None else user_id
+        if rbac_config is not None:
+            is_owner = getattr(rbac_config, "is_owner", lambda _: False)(effective_author)
+            if not is_owner and effective_author != user_id:
+                logger.warning(
+                    "SharedMemory AUDIT: BLOCKED unauthorized user-memory write — "
+                    "author=%s may not write into user=%s private memory "
+                    "(RT-5 memory-poisoning guard)",
+                    effective_author,
+                    user_id,
+                )
+                return False
         try:
             sess = self._sm.get_or_create_session(user_id, bot_id=bot_id)
             ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
             entry = f"\n---\n**[{ts}]**\n{content.strip()}\n"
             with open(sess.memory_file, "a", encoding="utf-8") as fh:
                 fh.write(entry)
+            return True
         except Exception as exc:
             logger.warning(
                 "Could not append to user memory for %s (bot=%s): %s", user_id, bot_id, exc
             )
+            return False
 
     # ------------------------------------------------------------------
     # Merged memory context for prompt injection

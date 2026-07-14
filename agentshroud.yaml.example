@@ -320,6 +320,42 @@ mcp_proxy:
   allowed_op_paths:
     - "op://Agent Shroud Bot Credentials/*"
 
+# MCP security policy engine (SCRUM-84 / WS-E RT-11) — deny-by-default gate.
+#
+# This section is OPTIONAL. If you omit it entirely, the gateway synthesises a
+# safe, fail-closed default at load time: default_action=deny and the servers
+# you configured above under `mcp_proxy.servers` are auto-allowlisted, so a
+# fresh deployment denies UNKNOWN MCP servers without breaking known ones.
+# Author this section explicitly to tighten (or, deliberately, relax) the gate.
+#
+# Precedence per call: tool denylist → server denylist → allowlist/default →
+# high-risk tier (→ approval) → allow.
+mcp_policy:
+  # Terminal action for a server that is neither allow- nor deny-listed.
+  # Keep "deny" for a default-deny posture; set "allow" only to opt into
+  # allow-by-default (NOT recommended).
+  default_action: deny
+  # Servers explicitly permitted. Must include every mcp_proxy server you rely
+  # on. (When this whole section is omitted, these are auto-derived from
+  # mcp_proxy.servers.)
+  allowed_servers:
+    - mac-messages
+  # Servers explicitly forbidden. Deny always wins over allow.
+  denied_servers: []
+  # Hard tool denylist — never invocable, not even by the owner. Entries may be
+  # qualified ("server:tool") or bare ("tool" → any server).
+  denied_tools: []
+  # Per-tier tool classifications. Tools in a high-risk tier route through the
+  # human approval queue (unless owner_bypass is enabled for the owner).
+  risk_tiers:
+    high:
+      - "mac-messages:tool_send_message"   # outbound send — human-in-the-loop
+  # Tiers that must route through the approval queue.
+  high_risk_actions: ["high", "critical"]
+  # When true, the RBAC owner skips the approval gate for high-risk tools (still
+  # subject to hard denies). Bound to the trusted RBAC owner identity.
+  owner_bypass: false
+
 # SSH Proxy configuration
 # Approved hosts only — no command-level restrictions (unrestricted dev access).
 # SSH key mounted from agentshroud-ssh volume at /var/agentshroud-ssh (read-only).
