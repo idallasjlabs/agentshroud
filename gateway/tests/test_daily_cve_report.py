@@ -239,17 +239,26 @@ class TestRunAndSendCveReport:
 # ── check_upstream_cves ───────────────────────────────────────────────────────
 
 
-def _make_github_advisory(cve_id: str, severity: str = "high", score: float = 7.5) -> dict:
-    """Build a minimal GitHub Security Advisory payload."""
+def _make_github_advisory(
+    ghsa_id: str,
+    cve_id=None,
+    severity: str = "high",
+    score: float = 7.5,
+) -> dict:
+    """Build a minimal GitHub Security Advisory payload keyed on GHSA id.
+
+    ``ghsa_id`` is the source-of-truth identifier the watcher now diffs on.
+    ``cve_id`` is usually ``None`` (GitHub rarely assigns a CVE to these).
+    """
     return {
-        "ghsa_id": f"GHSA-xxxx-xxxx-{cve_id[-4:]}",
+        "ghsa_id": ghsa_id,
         "cve_id": cve_id,
-        "summary": f"Test vulnerability {cve_id}",
+        "summary": f"Test vulnerability {ghsa_id}",
         "description": "Test description.",
         "severity": severity,
         "cvss": {"vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H", "score": score},
         "published_at": "2026-04-10T00:00:00Z",
-        "html_url": "https://github.com/openclaw/openclaw/security/advisories/GHSA-xxxx",
+        "html_url": f"https://github.com/openclaw/openclaw/security/advisories/{ghsa_id}",
     }
 
 
@@ -264,30 +273,42 @@ class TestCheckUpstreamCves:
         fake_resp.read.return_value = json.dumps(advisories).encode()
         monkeypatch.setattr(_ur, "urlopen", lambda *a, **kw: fake_resp)
 
-    def test_returns_new_cve_not_in_registry(self, monkeypatch):
+    def test_returns_new_advisory_not_in_registry(self, monkeypatch):
         from gateway.security.daily_cve_report import check_upstream_cves
 
-        new_id = "CVE-2026-99999"
-        self._patch_urllib(monkeypatch, [_make_github_advisory(new_id)])
+        new_ghsa = "GHSA-zzzz-zzzz-zzzz"  # not in the registry
+        self._patch_urllib(monkeypatch, [_make_github_advisory(new_ghsa)])
         result = check_upstream_cves()
         assert len(result) == 1
-        assert result[0]["id"] == new_id
+        # The GHSA id is now the primary identifier reported.
+        assert result[0]["id"] == new_ghsa
+        assert result[0]["ghsa_id"] == new_ghsa
+        assert result[0]["cve_id"] is None
         assert result[0]["severity"] == "HIGH"
         assert result[0]["cvss"] == 7.5
 
-    def test_skips_advisory_without_cve_id(self, monkeypatch):
+    def test_skips_advisory_without_ghsa_id(self, monkeypatch):
         from gateway.security.daily_cve_report import check_upstream_cves
 
-        adv = _make_github_advisory("CVE-2026-99998")
-        adv["cve_id"] = None  # no CVE assigned yet
+        adv = _make_github_advisory("GHSA-yyyy-yyyy-yyyy")
+        adv["ghsa_id"] = None  # cannot key to the registry
         self._patch_urllib(monkeypatch, [adv])
         assert check_upstream_cves() == []
 
-    def test_skips_cve_already_in_registry(self, monkeypatch):
+    def test_skips_ghsa_already_in_registry(self, monkeypatch):
         from gateway.security.daily_cve_report import check_upstream_cves
 
-        # CVE-2026-22171 is in AGENT_CVE_REGISTRY
-        self._patch_urllib(monkeypatch, [_make_github_advisory("CVE-2026-22171")])
+        # GHSA-p7gr-f84w-hqg5 is a real matched ghsa_id in AGENT_CVE_REGISTRY.
+        self._patch_urllib(monkeypatch, [_make_github_advisory("GHSA-p7gr-f84w-hqg5")])
+        assert check_upstream_cves() == []
+
+    def test_skips_advisory_whose_cve_is_already_tracked(self, monkeypatch):
+        from gateway.security.daily_cve_report import check_upstream_cves
+
+        # New GHSA id, but its cve_id (CVE-2026-27002) is already tracked in the
+        # registry — fallback dedup on cve_id keeps it from re-alerting.
+        adv = _make_github_advisory("GHSA-newq-newq-newq", cve_id="CVE-2026-27002")
+        self._patch_urllib(monkeypatch, [adv])
         assert check_upstream_cves() == []
 
     def test_returns_empty_when_all_known(self, monkeypatch):
@@ -724,3 +745,230 @@ class TestRunAndSendCveReportImageScans:
         result = await _mod.run_and_send_cve_report(bot_token="tok", owner_chat_id="12345")
 
         assert any("🔴" in line for line in result["image_scans"])
+
+
+# ── GHSA ingest scheduler ─────────────────────────────────────────────────────
+
+
+class TestAlreadyIngestedGhsaToday:
+    def test_returns_false_when_file_missing(self, tmp_path, monkeypatch):
+        import gateway.security.daily_cve_report as _mod
+
+        monkeypatch.setattr(_mod, "_LAST_GHSA_INGEST_PATH", tmp_path / "no.txt")
+        assert not _mod._already_ingested_ghsa_today(datetime.now(timezone.utc))
+
+    def test_returns_true_when_ingested_today(self, tmp_path, monkeypatch):
+        import gateway.security.daily_cve_report as _mod
+
+        sentinel = tmp_path / "last_ghsa.txt"
+        now = datetime.now(timezone.utc)
+        sentinel.write_text(now.isoformat())
+        monkeypatch.setattr(_mod, "_LAST_GHSA_INGEST_PATH", sentinel)
+        assert _mod._already_ingested_ghsa_today(now)
+
+    def test_returns_false_when_ingested_yesterday(self, tmp_path, monkeypatch):
+        from datetime import timedelta
+
+        import gateway.security.daily_cve_report as _mod
+
+        sentinel = tmp_path / "last_ghsa.txt"
+        yesterday = datetime.now(timezone.utc) - timedelta(days=1)
+        sentinel.write_text(yesterday.isoformat())
+        monkeypatch.setattr(_mod, "_LAST_GHSA_INGEST_PATH", sentinel)
+        assert not _mod._already_ingested_ghsa_today(datetime.now(timezone.utc))
+
+
+class TestGhsaIngestScheduler:
+    @pytest.mark.asyncio
+    async def test_runs_ingest_records_then_skips_next_iteration(self, tmp_path, monkeypatch):
+        """First iteration ingests + records; second sees dedup and skips."""
+        import asyncio
+
+        import gateway.security.daily_cve_report as _mod
+
+        # Isolate dedup state and disk paths for this test.
+        monkeypatch.setattr(_mod, "_ghsa_ingest_dates", set())
+        sentinel = tmp_path / "last_ghsa.txt"
+        monkeypatch.setattr(_mod, "_LAST_GHSA_INGEST_PATH", sentinel)
+
+        ran = {"count": 0}
+
+        async def _fake_ingest(**kwargs):
+            ran["count"] += 1
+            return {"new_cves": 2, "telegram_sent": True}
+
+        monkeypatch.setattr(_mod, "run_upstream_cve_check", _fake_ingest)
+
+        # Iteration 1: no sleep (immediate). Iteration 2: sleep raises Cancelled.
+        calls = {"sleep": 0}
+
+        async def _sleep(_secs):
+            calls["sleep"] += 1
+            raise asyncio.CancelledError()
+
+        monkeypatch.setattr(_mod.asyncio, "sleep", _sleep)
+
+        # ingest_hour in the past → iteration 1 triggers immediately (no sleep).
+        past_hour = (datetime.now(timezone.utc).hour - 1) % 24
+        await _mod.ghsa_ingest_scheduler(
+            bot_token="tok",
+            owner_chat_id="12345",
+            ingest_hour=past_hour,
+        )
+        # Ingest ran exactly once and recorded to disk + in-memory guard.
+        assert ran["count"] == 1
+        assert sentinel.exists()
+        assert datetime.now(timezone.utc).date().isoformat() in _mod._ghsa_ingest_dates
+        # Iteration 2 slept (waiting for tomorrow) then got cancelled.
+        assert calls["sleep"] == 1
+
+    @pytest.mark.asyncio
+    async def test_skips_when_already_ingested_today(self, tmp_path, monkeypatch):
+        """If already ingested today, the loop bumps to tomorrow and never ingests."""
+        import asyncio
+
+        import gateway.security.daily_cve_report as _mod
+
+        today = datetime.now(timezone.utc).date().isoformat()
+        monkeypatch.setattr(_mod, "_ghsa_ingest_dates", {today})
+        monkeypatch.setattr(_mod, "_LAST_GHSA_INGEST_PATH", tmp_path / "last_ghsa.txt")
+
+        called = {"n": 0}
+
+        async def _fake_ingest(**kwargs):
+            called["n"] += 1
+            return {"new_cves": 0, "telegram_sent": False}
+
+        monkeypatch.setattr(_mod, "run_upstream_cve_check", _fake_ingest)
+
+        async def _sleep_then_cancel(_secs):
+            raise asyncio.CancelledError()
+
+        monkeypatch.setattr(_mod.asyncio, "sleep", _sleep_then_cancel)
+
+        # Future hour + already-ingested → exercises the `elif already` bump branch.
+        future_hour = (datetime.now(timezone.utc).hour + 1) % 24
+        await _mod.ghsa_ingest_scheduler(
+            bot_token="tok",
+            owner_chat_id="12345",
+            ingest_hour=future_hour,
+        )
+        assert called["n"] == 0  # ingest never ran — dedup guard held
+
+    @pytest.mark.asyncio
+    async def test_ingest_error_is_swallowed_and_retries(self, tmp_path, monkeypatch):
+        """A raised ingest error hits the retry branch (records date, sleeps 1h)."""
+        import asyncio
+
+        import gateway.security.daily_cve_report as _mod
+
+        monkeypatch.setattr(_mod, "_ghsa_ingest_dates", set())
+        monkeypatch.setattr(_mod, "_LAST_GHSA_INGEST_PATH", tmp_path / "last_ghsa.txt")
+
+        async def _boom(**kwargs):
+            raise RuntimeError("github down")
+
+        monkeypatch.setattr(_mod, "run_upstream_cve_check", _boom)
+
+        sleeps = {"n": 0}
+
+        async def _sleep(_secs):
+            sleeps["n"] += 1
+            # The retry sleep (3600) is the only sleep reached here; cancel then.
+            raise asyncio.CancelledError()
+
+        monkeypatch.setattr(_mod.asyncio, "sleep", _sleep)
+
+        past_hour = (datetime.now(timezone.utc).hour - 1) % 24
+        # The 1-hour retry sleep is patched to raise CancelledError, which exits
+        # the loop — that propagation is the expected end of the retry branch.
+        with pytest.raises(asyncio.CancelledError):
+            await _mod.ghsa_ingest_scheduler(
+                bot_token="tok",
+                owner_chat_id="12345",
+                ingest_hour=past_hour,
+            )
+        # Error path recorded today so it won't hot-loop.
+        assert datetime.now(timezone.utc).date().isoformat() in _mod._ghsa_ingest_dates
+        assert sleeps["n"] == 1
+
+    def test_already_ingested_helper_swallows_read_error(self, tmp_path, monkeypatch):
+        """_already_ingested_ghsa_today returns False on a malformed sentinel."""
+        import gateway.security.daily_cve_report as _mod
+
+        sentinel = tmp_path / "last_ghsa.txt"
+        sentinel.write_text("not-a-timestamp")
+        monkeypatch.setattr(_mod, "_LAST_GHSA_INGEST_PATH", sentinel)
+        assert _mod._already_ingested_ghsa_today(datetime.now(timezone.utc)) is False
+
+    @pytest.mark.asyncio
+    async def test_skips_ingest_when_marked_done_after_wake(self, tmp_path, monkeypatch):
+        """After sleeping, if the day is now marked done, the loop skips ingest."""
+        import asyncio
+
+        import gateway.security.daily_cve_report as _mod
+
+        monkeypatch.setattr(_mod, "_ghsa_ingest_dates", set())
+        monkeypatch.setattr(_mod, "_LAST_GHSA_INGEST_PATH", tmp_path / "last_ghsa.txt")
+
+        called = {"ingest": 0, "sleep": 0}
+
+        async def _fake_ingest(**kwargs):
+            called["ingest"] += 1
+            return {"new_cves": 0, "telegram_sent": False}
+
+        monkeypatch.setattr(_mod, "run_upstream_cve_check", _fake_ingest)
+
+        # First sleep: mark today done (simulating a peer task), return normally.
+        # After wake the post-sleep guard sees it and `continue`s; second sleep
+        # cancels the loop.
+        async def _sleep(_secs):
+            called["sleep"] += 1
+            if called["sleep"] == 1:
+                _mod._ghsa_ingest_dates.add(datetime.now(timezone.utc).date().isoformat())
+                return None
+            raise asyncio.CancelledError()
+
+        monkeypatch.setattr(_mod.asyncio, "sleep", _sleep)
+
+        # Future hour → iteration 1 sleeps (waiting for the hour) then wakes.
+        future_hour = (datetime.now(timezone.utc).hour + 1) % 24
+        await _mod.ghsa_ingest_scheduler(
+            bot_token="tok",
+            owner_chat_id="12345",
+            ingest_hour=future_hour,
+        )
+        assert called["ingest"] == 0  # post-wake guard skipped the ingest
+        assert called["sleep"] == 2
+
+    @pytest.mark.asyncio
+    async def test_ingest_records_even_when_disk_write_fails(self, tmp_path, monkeypatch):
+        """A disk-write failure on the sentinel is swallowed; in-memory guard set."""
+        import asyncio
+
+        import gateway.security.daily_cve_report as _mod
+
+        monkeypatch.setattr(_mod, "_ghsa_ingest_dates", set())
+        # Point the sentinel at an un-writable location (parent is a file).
+        broken_parent = tmp_path / "afile"
+        broken_parent.write_text("x")
+        monkeypatch.setattr(_mod, "_LAST_GHSA_INGEST_PATH", broken_parent / "sub" / "last.txt")
+
+        async def _fake_ingest(**kwargs):
+            return {"new_cves": 0, "telegram_sent": False}
+
+        monkeypatch.setattr(_mod, "run_upstream_cve_check", _fake_ingest)
+
+        async def _sleep(_secs):
+            raise asyncio.CancelledError()
+
+        monkeypatch.setattr(_mod.asyncio, "sleep", _sleep)
+
+        past_hour = (datetime.now(timezone.utc).hour - 1) % 24
+        await _mod.ghsa_ingest_scheduler(
+            bot_token="tok",
+            owner_chat_id="12345",
+            ingest_hour=past_hour,
+        )
+        # Disk write failed but the in-memory dedup guard was still recorded.
+        assert datetime.now(timezone.utc).date().isoformat() in _mod._ghsa_ingest_dates

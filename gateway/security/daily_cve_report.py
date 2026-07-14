@@ -47,11 +47,13 @@ _OPENCLAW_GITHUB_REPO = "openclaw/openclaw"
 # Path to store the last report timestamp so we avoid duplicate sends on restart.
 _LAST_REPORT_PATH = Path("/var/log/security/trivy/.last_cve_report")
 _LAST_UPSTREAM_CHECK_PATH = Path("/var/log/security/trivy/.last_upstream_cve_check")
+_LAST_GHSA_INGEST_PATH = Path("/var/log/security/trivy/.last_ghsa_ingest")
 
 # In-memory guards: track dates already processed this process lifetime.
 # Prevents infinite send loops when the disk is full and the paths can't be written.
 _sent_dates: set[str] = set()
 _upstream_check_dates: set[str] = set()
+_ghsa_ingest_dates: set[str] = set()
 
 
 def format_cve_report(report: dict[str, Any]) -> str:
@@ -355,10 +357,15 @@ def _already_checked_upstream_today(now: datetime) -> bool:
 
 
 def check_upstream_cves(github_token: Optional[str] = None) -> list[dict[str, Any]]:
-    """Fetch OpenClaw GitHub Security Advisories and return CVEs not in the registry.
+    """Fetch OpenClaw GitHub Security Advisories and return advisories we don't track.
 
-    Calls the GitHub Security Advisories API for the wrapped agent repo, extracts
-    CVE IDs, and returns entries whose IDs are absent from AGENT_CVE_REGISTRY.
+    The registry's source-of-truth identifier is the **GHSA id** — the registry's
+    own ``id`` field is a synthetic AgentShroud ref (``ASH-OCLAW-NNN``) and is NOT
+    comparable to upstream advisory ids.  An advisory is therefore reported as
+    "new" only when its ``ghsa_id`` is absent from the registry's set of tracked
+    GHSA ids.  As a fallback, an advisory that carries a real ``cve_id`` already
+    tracked in the registry is treated as known even if its GHSA id is not yet
+    recorded — this covers legacy entries matched by CVE rather than GHSA.
 
     Args:
         github_token: Optional GitHub personal access token or fine-grained token
@@ -366,7 +373,8 @@ def check_upstream_cves(github_token: Optional[str] = None) -> list[dict[str, An
             per source IP — sufficient for a daily check.
 
     Returns:
-        List of dicts with keys: id, summary, severity, cvss, published_at, html_url.
+        List of dicts with keys: id (the upstream GHSA id), ghsa_id, cve_id,
+        summary, severity, cvss, published_at, html_url.
 
     Raises:
         urllib.error.URLError / OSError: on network failure.
@@ -374,7 +382,9 @@ def check_upstream_cves(github_token: Optional[str] = None) -> list[dict[str, An
     """
     from .agent_cve_registry import AGENT_CVE_REGISTRY
 
-    known_ids: set[str] = {c["id"] for c in AGENT_CVE_REGISTRY}
+    # GHSA ids are the source of truth for "already tracked".
+    known_ghsa: set[str] = {c["ghsa_id"] for c in AGENT_CVE_REGISTRY if c.get("ghsa_id")}
+    known_cve: set[str] = {c["cve_id"] for c in AGENT_CVE_REGISTRY if c.get("cve_id")}
 
     url = (
         f"https://api.github.com/repos/{_OPENCLAW_GITHUB_REPO}" "/security-advisories?per_page=100"
@@ -393,13 +403,23 @@ def check_upstream_cves(github_token: Optional[str] = None) -> list[dict[str, An
 
     new_cves: list[dict[str, Any]] = []
     for adv in advisories:
+        ghsa_id: Optional[str] = adv.get("ghsa_id")
+        if not ghsa_id:
+            # No GHSA id means we cannot key it to the registry — skip.
+            continue
         cve_id: Optional[str] = adv.get("cve_id")
-        if not cve_id or cve_id in known_ids:
+        if ghsa_id in known_ghsa:
+            continue
+        if cve_id and cve_id in known_cve:
+            # Already tracked under its CVE id; not a new advisory.
             continue
         cvss_block: dict[str, Any] = adv.get("cvss") or {}
         new_cves.append(
             {
-                "id": cve_id,
+                # Report the GHSA id as the primary identifier (source of truth).
+                "id": ghsa_id,
+                "ghsa_id": ghsa_id,
+                "cve_id": cve_id,
                 "summary": adv.get("summary", ""),
                 "severity": (adv.get("severity") or "UNKNOWN").upper(),
                 "cvss": cvss_block.get("score"),
@@ -577,4 +597,101 @@ async def upstream_cve_check_scheduler(
             logger.error("Upstream CVE check scheduler error: %s", exc, exc_info=True)
             # Record today so we don't loop and spam on persistent errors.
             _upstream_check_dates.add(datetime.now(timezone.utc).date().isoformat())
+            await asyncio.sleep(3600)
+
+
+# ── GHSA source-of-truth ingest ───────────────────────────────────────────────
+
+
+def _already_ingested_ghsa_today(now: datetime) -> bool:
+    """Check if the GHSA ingest already ran today (disk-based, secondary guard)."""
+    try:
+        if _LAST_GHSA_INGEST_PATH.exists():
+            last = datetime.fromisoformat(_LAST_GHSA_INGEST_PATH.read_text().strip())
+            return last.date() == now.date()
+    except Exception:
+        pass
+    return False
+
+
+async def ghsa_ingest_scheduler(
+    bot_token: str,
+    owner_chat_id: str,
+    base_url: str = "https://api.telegram.org",
+    ingest_hour: int = 7,
+    github_token: Optional[str] = None,
+) -> None:
+    """Background loop: pull the GHSA feed as source of truth once per day.
+
+    This is a *distinct* daily task from ``upstream_cve_check_scheduler`` — it
+    runs at its own configurable UTC hour (``AGENTSHROUD_GHSA_INGEST_HOUR``,
+    default 07:00) and treats the GitHub Security-Advisory GHSA ids as the
+    authoritative set.  It reports genuinely-new advisories (GHSA ids absent from
+    the registry) via ``run_upstream_cve_check``, which now diffs on ``ghsa_id``.
+
+    Kept separate from the CVE-report / upstream-check schedulers so a GHSA feed
+    refresh can be scheduled independently of the Trivy digest cadence.  Designed
+    to be launched via ``asyncio.create_task()``.
+    """
+    while True:
+        try:
+            now = datetime.now(timezone.utc)
+            today_str = now.date().isoformat()
+
+            target = now.replace(hour=ingest_hour, minute=0, second=0, microsecond=0)
+            already = today_str in _ghsa_ingest_dates or _already_ingested_ghsa_today(now)
+
+            if now >= target:
+                if already:
+                    target = (target + timedelta(days=1)).replace(
+                        hour=ingest_hour, minute=0, second=0, microsecond=0
+                    )
+                # else: trigger immediately (first run of the day).
+            elif already:
+                target = (target + timedelta(days=1)).replace(
+                    hour=ingest_hour, minute=0, second=0, microsecond=0
+                )
+
+            sleep_secs = max(0.0, (target - now).total_seconds())
+            if sleep_secs > 0:
+                logger.info(
+                    "GHSA ingest scheduler: next ingest in %.0f seconds (at %s UTC)",
+                    sleep_secs,
+                    target.strftime("%H:%M"),
+                )
+                await asyncio.sleep(sleep_secs)
+
+            now = datetime.now(timezone.utc)
+            today_str = now.date().isoformat()
+            if today_str in _ghsa_ingest_dates or _already_ingested_ghsa_today(now):
+                logger.info("GHSA ingest already done today, skipping.")
+                continue
+
+            logger.info("Running GHSA source-of-truth ingest...")
+            result = await run_upstream_cve_check(
+                bot_token=bot_token,
+                owner_chat_id=owner_chat_id,
+                base_url=base_url,
+                github_token=github_token,
+            )
+
+            _ghsa_ingest_dates.add(datetime.now(timezone.utc).date().isoformat())
+            try:
+                _LAST_GHSA_INGEST_PATH.parent.mkdir(parents=True, exist_ok=True)
+                _LAST_GHSA_INGEST_PATH.write_text(datetime.now(timezone.utc).isoformat())
+            except Exception:
+                pass
+
+            logger.info(
+                "GHSA ingest complete: %d new advisory(ies), telegram_sent=%s",
+                result.get("new_cves", 0),
+                result.get("telegram_sent"),
+            )
+
+        except asyncio.CancelledError:
+            logger.info("GHSA ingest scheduler cancelled")
+            return
+        except Exception as exc:
+            logger.error("GHSA ingest scheduler error: %s", exc, exc_info=True)
+            _ghsa_ingest_dates.add(datetime.now(timezone.utc).date().isoformat())
             await asyncio.sleep(3600)
