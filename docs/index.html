@@ -2502,11 +2502,36 @@ idf.py -p /dev/cu.usbmodem* flash
 <!-- ── AgentShroud Infrastructure ─────────────────────────────── -->
 <section id="infrastructure">
   <div class="container">
-    <div class="section-label">Infrastructure Security</div>
+    <div class="section-label">Infrastructure</div>
     <h2>AgentShroud Infrastructure</h2>
-    <p class="section-sub">A security product must not hide its own vulnerabilities behind a green check. Alongside the OpenClaw and Hermes application-CVE registries above, we report our own container images — base OS packages and baked-in tool binaries — exactly as Trivy finds them, <strong>including items not yet mitigated</strong>. Nothing is suppressed.</p>
+    <p class="section-sub">Ships like a product, not a science project. Every release goes through a guarded blue/green deploy with automatic rollback, is validated across every runtime before it lands, and passes only on a genuinely healthy runtime. And because a security product must not hide its own vulnerabilities behind a green check, we publish our container-image CVE posture <strong>in full</strong>: reduced <strong>24% (847 → 642)</strong> and reported, never suppressed.</p>
 
-    <table class="cve-table">
+    <div class="feature-grid" style="margin-top:24px;">
+      <div class="feature-card">
+        <div class="feature-icon">🟦</div>
+        <h3>Blue/green canary deploy</h3>
+        <p>A new ref is deployed to a GREEN canary and validated by <code>post-deploy-check.sh</code> before the BLUE production instance is ever touched. A failed health check <strong>auto-rolls-back</strong> to the previous ref; a <code>pre-deploy-&lt;UTC&gt;</code> tag anchors every rollback. No <code>eval</code>, refuses to run as the prod user.</p>
+        <p><span class="badge-ok">✓ Live-validated on marvin</span></p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🖧</div>
+        <h3>Multi-host validated deploys</h3>
+        <p>One command runs the suite across every host over SSH and aggregates per-host PASS / FAIL / UNREACHABLE — a change is validated on every runtime (x86 + arm) before a coordinated rollout. A flaky host never aborts the sweep.</p>
+        <p><span class="badge-ok">✓ Shipped</span></p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🩺</div>
+        <h3>Honest health gates</h3>
+        <p>Deploys pass only when the gateway serves <code>/status</code> 200 and the Docker network is clean. Startup warnings are curated and documented as known-benign — a green deploy means a genuinely healthy runtime, not a suppressed one.</p>
+        <p><span class="badge-ok">✓ Enforced</span></p>
+      </div>
+    </div>
+
+    <div class="section-label" style="margin-top:48px;">Image CVE Transparency</div>
+    <h3 style="margin-top:6px;">Our own images, reported in full</h3>
+    <p class="section-sub">Alongside the OpenClaw and Hermes application-CVE registries above, we report our own container images — base OS packages and baked-in tool binaries — exactly as Trivy finds them, <strong>including items not yet mitigated</strong>. Total across all four images: <strong>847 → 642 (−205, −24%)</strong>, measured not projected. Nothing is suppressed.</p>
+
+    <table class="cve-table" style="margin-top:18px;">
       <thead>
         <tr>
           <th>Image</th>
@@ -2542,7 +2567,7 @@ idf.py -p /dev/cu.usbmodem* flash
         </tr>
       </tbody>
     </table>
-    <p class="section-sub" style="margin-top:14px;"><em>Trivy CRITICAL + HIGH — all four images rebuilt &amp; rescanned 2026-07-13/14 (measured, not projected). Total across images: <strong>847 → 642 (−205, −24%)</strong>. Hermes gains least because its bulk is the upstream vendored base we don't control — reported honestly, not hidden.</em></p>
+    <p class="section-sub" style="margin-top:14px;"><em>Trivy CRITICAL + HIGH — all four images rebuilt &amp; rescanned 2026-07-13/14. Hermes gains least because its bulk is the upstream vendored base we don't control — reported honestly, not hidden.</em></p>
 
     <div class="feature-grid" style="margin-top:22px;">
       <div class="feature-card">
