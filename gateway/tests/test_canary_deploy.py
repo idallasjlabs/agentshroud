@@ -68,6 +68,18 @@ class TestDryRun:
         assert "GREEN canary healthy" in out
         assert "promote BLUE/prod" in out
 
+    def test_tag_fetch_uses_force(self) -> None:
+        # Regression (SCRUM-62, marvin 2026-07-14): a GREEN checkout may carry
+        # local version tags diverging from origin. Without --force, `git fetch
+        # --tags` exits non-zero on "would clobber existing tag" and aborts the
+        # deploy before asb rebuild. The fetch MUST be forced.
+        r = _run("--dry-run", "--ref", "origin/main")
+        assert r.returncode == 0
+        out = r.stdout
+        assert "fetch --tags --force --prune" in out, (
+            "canary fetch must use --force so divergent GREEN tags cannot abort the deploy"
+        )
+
     def test_dry_run_targets_green_ports_not_blue(self) -> None:
         # The script must never invoke anything against the blue/prod checkout;
         # it operates only in the green repo path (default $HOME/agentshroud).
