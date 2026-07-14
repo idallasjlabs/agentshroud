@@ -1018,3 +1018,83 @@ class TestMiddlewareResult:
         assert r.allowed is False
         assert r.reason == "blocked"
         assert r.modified_request == {"a": 1}
+
+
+# ── init-failure fail-closed posture (SCRUM-95) ──────────────────────────────
+
+
+class TestCriticalGuardInitFailClosed:
+    """A security-critical guard whose constructor RAISES during __init__ must
+    NOT be silently skipped (fail-OPEN). It is recorded in failed_guards, logged
+    at CRITICAL, and makes process_request() fail closed for non-owner traffic —
+    mirroring the runtime posture in gateway/proxy/pipeline.py.
+    """
+
+    def test_context_guard_init_raise_recorded_and_logged(self, monkeypatch, caplog):
+        import logging
+
+        # Force ONLY ContextGuard's constructor to raise; everything else builds.
+        monkeypatch.setattr(mw, "ContextGuard", MagicMock(side_effect=RuntimeError("ctx boom")))
+        with caplog.at_level(logging.CRITICAL, logger=MODULE):
+            manager = MiddlewareManager()
+        try:
+            # Recorded as a failed critical guard, not silently None.
+            assert "context_guard" in manager.failed_guards
+            assert "ctx boom" in manager.failed_guards["context_guard"]
+            assert manager.context_guard is None
+            # Logged at CRITICAL (not swallowed silently).
+            assert any(
+                rec.levelno == logging.CRITICAL and "context_guard" in rec.getMessage()
+                for rec in caplog.records
+            )
+        finally:
+            if manager.drift_detector:
+                manager.drift_detector.close()
+            if manager.token_validator:
+                manager.token_validator.close()
+
+    async def test_non_owner_blocked_when_critical_guard_failed(self, mm):
+        # Simulate an init failure: guard attr is None AND recorded as failed.
+        mm.context_guard = None
+        mm.failed_guards = {"context_guard": "boom"}
+        result = await mm.process_request(_req(user_id=USER_ID, message="hello"))
+        assert result.allowed is False
+        assert "context_guard" in result.reason
+        assert "fail closed" in result.reason.lower()
+
+    async def test_owner_exempt_when_critical_guard_failed(self, mm):
+        # Owner must not be blocked by an init-failure fail-closed gate.
+        mm.rbac_manager = _FakeRBAC(owner_ids=(OWNER_ID,))
+        mm.failed_guards = {"context_guard": "boom"}
+        result = await mm.process_request(_req(user_id=OWNER_ID, message="hello"))
+        # Owner passes the fail-closed gate (may still pass through other checks).
+        assert result.allowed is True
+
+    async def test_not_configured_guard_does_not_fail_closed(self, mm):
+        # A guard that is legitimately None with NO recorded init exception
+        # (the "not configured" case) must NOT trip the fail-closed gate.
+        mm.context_guard = None
+        mm.failed_guards = {}  # nothing failed to init
+        result = await mm.process_request(_req(user_id=USER_ID, message="hello"))
+        assert result.allowed is True
+
+    async def test_mm_fixture_without_failed_guards_attr_is_safe(self, mm):
+        # The __new__-built fixture never sets failed_guards; the fail-closed
+        # gate must treat a missing attr as "no failures" (getattr default).
+        assert not hasattr(mm, "failed_guards")
+        result = await mm.process_request(_req(user_id=USER_ID, message="hello"))
+        assert result.allowed is True
+
+    def test_non_critical_guard_failure_not_recorded(self, monkeypatch):
+        # A non-critical guard (output_canary) failing init is logged at ERROR
+        # but does NOT enter failed_guards and does NOT fail closed.
+        monkeypatch.setattr(mw, "OutputCanary", MagicMock(side_effect=RuntimeError("canary boom")))
+        manager = MiddlewareManager()
+        try:
+            assert manager.output_canary is None
+            assert "output_canary" not in manager.failed_guards
+        finally:
+            if manager.drift_detector:
+                manager.drift_detector.close()
+            if manager.token_validator:
+                manager.token_validator.close()
