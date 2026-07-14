@@ -258,7 +258,6 @@ class TestCheckUpstreamCves:
         """Stub urllib.request.urlopen to return a list of advisories."""
         import urllib.request as _ur
 
-
         fake_resp = MagicMock()
         fake_resp.__enter__ = lambda s: s
         fake_resp.__exit__ = MagicMock(return_value=False)
@@ -312,7 +311,6 @@ class TestCheckUpstreamCves:
         from gateway.security.daily_cve_report import check_upstream_cves
 
         captured = {}
-
 
         fake_resp = MagicMock()
         fake_resp.__enter__ = lambda s: s

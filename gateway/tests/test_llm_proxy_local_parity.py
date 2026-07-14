@@ -59,7 +59,11 @@ def _openai_ok(model: str = "qwen3-14b") -> bytes:
             "object": "chat.completion",
             "model": model,
             "choices": [
-                {"index": 0, "message": {"role": "assistant", "content": "ok"}, "finish_reason": "stop"}
+                {
+                    "index": 0,
+                    "message": {"role": "assistant", "content": "ok"},
+                    "finish_reason": "stop",
+                }
             ],
         }
     ).encode()
@@ -695,9 +699,7 @@ def test_is_local_oom_returns_false_for_quota_429():
 
 def test_is_local_oom_detects_oom_in_error_message():
     """_is_local_oom detects 'out of memory' in error message string."""
-    oom_body = json.dumps(
-        {"error": "CUDA out of memory. Tried to allocate 2.50 GiB"}
-    ).encode()
+    oom_body = json.dumps({"error": "CUDA out of memory. Tried to allocate 2.50 GiB"}).encode()
     assert LLMProxy._is_local_oom(500, oom_body) is True
 
 
@@ -871,9 +873,7 @@ async def test_model_ref_round_trip(input_ref, expected_model, expected_backend,
 
     await proxy.proxy_messages(
         "/v1/chat/completions",
-        json.dumps(
-            {"model": input_ref, "messages": [{"role": "user", "content": "hi"}]}
-        ).encode(),
+        json.dumps({"model": input_ref, "messages": [{"role": "user", "content": "hi"}]}).encode(),
         {"content-type": "application/json"},
         user_id="u1",
     )

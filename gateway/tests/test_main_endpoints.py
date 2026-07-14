@@ -513,10 +513,16 @@ class TestAlertsLocalhostEnforcement:
         mock_request = MagicMock()
         mock_request.client.host = "127.0.0.1"
         mock_request.json = AsyncMock(
-            return_value={"type": "security_alert", "severity": "INFO", "tool": "test", "message": "ok"}
+            return_value={
+                "type": "security_alert",
+                "severity": "INFO",
+                "tool": "test",
+                "message": "ok",
+            }
         )
 
         from gateway.ingest_api.main import app_state as _state
+
         _state.event_bus = None
 
         result = await receive_security_alert(mock_request)

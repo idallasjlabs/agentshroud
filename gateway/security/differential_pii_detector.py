@@ -151,9 +151,11 @@ def _normalize_adversarial(text: str) -> tuple[str, int]:
     normalized = unicodedata.normalize("NFKC", stripped)
     if normalized != stripped:
         count += 1
+
     # 5. Collapse spaced tokens (e.g. "a l i c e" → "alice")
     def _collapse_spaced(m: re.Match) -> str:
         return m.group(0).replace(" ", "")
+
     collapsed, n = re.subn(_SPACED_TOKEN, _collapse_spaced, normalized)
     count += n
     return collapsed, count
@@ -217,11 +219,7 @@ _PII_PATTERNS: list[dict[str, Any]] = [
     # US phone — (NXX) NXX-XXXX  or  NXX-NXX-XXXX  or  +1NXX...
     {
         "entity_type": "PHONE_NUMBER",
-        "pattern": re.compile(
-            r"(?:\+?1[-.\s]?)?"
-            r"(?:\(?\d{3}\)?[-.\s]?)"
-            r"\d{3}[-.\s]?\d{4}\b"
-        ),
+        "pattern": re.compile(r"(?:\+?1[-.\s]?)?" r"(?:\(?\d{3}\)?[-.\s]?)" r"\d{3}[-.\s]?\d{4}\b"),
         "confidence": 0.80,
     },
     # Partial phone (NXX-XXXX) — lower confidence, only at tool-result floor
@@ -233,7 +231,9 @@ _PII_PATTERNS: list[dict[str, Any]] = [
     # Credit card — 4-block format (very conservative)
     {
         "entity_type": "CREDIT_CARD",
-        "pattern": re.compile(r"\b(?:4\d{3}|5[1-5]\d{2}|3[47]\d{2}|6011)\s?\d{4}\s?\d{4}\s?\d{4}\b"),
+        "pattern": re.compile(
+            r"\b(?:4\d{3}|5[1-5]\d{2}|3[47]\d{2}|6011)\s?\d{4}\s?\d{4}\s?\d{4}\b"
+        ),
         "confidence": 0.90,
     },
     # Street address — number + street name + type suffix (mirrors the standard
@@ -368,9 +368,7 @@ class DifferentialPIIDetector:
     # Public interface
     # ------------------------------------------------------------------
 
-    def scan_tool_result(
-        self, tool_name: str, content: str
-    ) -> ToolResultPIIReport:
+    def scan_tool_result(self, tool_name: str, content: str) -> ToolResultPIIReport:
         """Scan a tool result with the lower confidence floor.
 
         Args:
@@ -404,9 +402,7 @@ class DifferentialPIIDetector:
     # Internal scanning
     # ------------------------------------------------------------------
 
-    def _scan(
-        self, content: str, floor: float, tool_name: str
-    ) -> ToolResultPIIReport:
+    def _scan(self, content: str, floor: float, tool_name: str) -> ToolResultPIIReport:
         """Core scan: normalize adversarial patterns, then run PII recognition."""
         normalized, adversarial_count = _normalize_adversarial(content)
         if adversarial_count > 0:
@@ -472,7 +468,7 @@ class DifferentialPIIDetector:
                         start=r.start,
                         end=r.end,
                         severity=PIIHitSeverity.from_confidence(r.score),
-                        text=text[r.start:r.end],
+                        text=text[r.start : r.end],
                     )
                 )
             # Union the core "always caught" patterns so standard PII is never
@@ -515,8 +511,7 @@ class DifferentialPIIDetector:
         for hit in hits_sorted:
             # Check overlap with any already-accepted hit
             overlapping = any(
-                not (hit.end <= kept.start or hit.start >= kept.end)
-                for kept in result
+                not (hit.end <= kept.start or hit.start >= kept.end) for kept in result
             )
             if not overlapping:
                 result.append(hit)
@@ -531,5 +526,5 @@ class DifferentialPIIDetector:
         chars = list(text)
         for hit in sorted_hits:
             placeholder = f"[{hit.entity_type}]"
-            chars[hit.start:hit.end] = list(placeholder)
+            chars[hit.start : hit.end] = list(placeholder)
         return "".join(chars)

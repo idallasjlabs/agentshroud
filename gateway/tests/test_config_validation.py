@@ -262,15 +262,15 @@ class TestConfigValidation:
         if not path.exists():
             pytest.skip("apply-patches.js not available in this environment")
         script = path.read_text()
-        assert "AGENTSHROUD_GROUP_CHAT_IDS" in script, (
-            "Multi-group allowlist env var must be referenced in apply-patches.js"
-        )
+        assert (
+            "AGENTSHROUD_GROUP_CHAT_IDS" in script
+        ), "Multi-group allowlist env var must be referenced in apply-patches.js"
         # Script must split on comma to support multiple IDs
         assert "split" in script, "Script must split comma-separated chat IDs"
         # Legacy single-ID var must still be accepted for backward compat
-        assert "AGENTSHROUD_GROUP_CHAT_ID" in script, (
-            "Legacy single-ID var must be kept for backward compat"
-        )
+        assert (
+            "AGENTSHROUD_GROUP_CHAT_ID" in script
+        ), "Legacy single-ID var must be kept for backward compat"
 
     def test_openclaw_patch_script_emits_per_chat_group_agents(self):
         """apply-patches.js must create per-chat group-{chatId} agents for the approval router.
@@ -283,13 +283,13 @@ class TestConfigValidation:
             pytest.skip("apply-patches.js not available in this environment")
         script = path.read_text()
         # Script must build dynamic "group-{chatId}" agent ids
-        assert "group-${" in script or "`group-${" in script, (
-            "Script must emit per-chat group-{chatId} agent IDs for approval router compat"
-        )
+        assert (
+            "group-${" in script or "`group-${" in script
+        ), "Script must emit per-chat group-{chatId} agent IDs for approval router compat"
         # Script must remove stale bindings when chat IDs leave the allowlist
-        assert "stale" in script.lower(), (
-            "Script must clean up stale group bindings on config volume restart"
-        )
+        assert (
+            "stale" in script.lower()
+        ), "Script must clean up stale group bindings on config volume restart"
 
     def test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise(self):
         """Lifespan filter should suppress repeated malformed HTTP warning noise."""
@@ -625,7 +625,6 @@ class TestConfigValidation:
         assert "ROOT_MODELS_JSON" in script
         assert "Registered Ollama provider/models in models.json" in script
 
-
     def test_hermes_soul_documents_ssh_hosts(self):
         """Hermes SOUL.md must document all three lab hosts and the gateway /ssh/exec recipe.
 
@@ -660,9 +659,9 @@ class TestConfigValidation:
             pytest.skip("hermes SOUL.md not available in this environment")
         soul = path.read_text()
         assert "cannot connect" in soul, "SOUL.md must contain the no-refuse directive text"
-        assert "Never reply" in soul or "never reply" in soul, (
-            "SOUL.md must explicitly instruct the agent never to give a blanket refusal"
-        )
+        assert (
+            "Never reply" in soul or "never reply" in soul
+        ), "SOUL.md must explicitly instruct the agent never to give a blanket refusal"
 
     def test_openclaw_soul_has_no_refuse_directive(self):
         """OpenClaw SOUL.md must carry the same 'never blanket-refuse cannot connect' directive.
@@ -675,9 +674,9 @@ class TestConfigValidation:
             pytest.skip("openclaw SOUL.md not available in this environment")
         soul = path.read_text()
         assert "cannot connect" in soul, "OpenClaw SOUL.md must contain the no-refuse directive"
-        assert "Never reply" in soul or "never reply" in soul, (
-            "OpenClaw SOUL.md must explicitly instruct the agent never to give a blanket refusal"
-        )
+        assert (
+            "Never reply" in soul or "never reply" in soul
+        ), "OpenClaw SOUL.md must explicitly instruct the agent never to give a blanket refusal"
 
     def test_gateway_yaml_ssh_hosts_cover_all_lab_hosts(self):
         """agentshroud.yaml must define all three lab hosts in ssh.hosts as agentshroud-bot.
@@ -701,13 +700,13 @@ class TestConfigValidation:
         for name in lab_hosts:
             assert name in hosts, f"ssh.hosts must include '{name}'"
             h = hosts[name]
-            assert h.get("username") == "agentshroud-bot", (
-                f"ssh.hosts.{name}.username must be 'agentshroud-bot', got {h.get('username')!r}"
-            )
+            assert (
+                h.get("username") == "agentshroud-bot"
+            ), f"ssh.hosts.{name}.username must be 'agentshroud-bot', got {h.get('username')!r}"
             assert h.get("key_path"), f"ssh.hosts.{name}.key_path must be set"
-            assert "/var/agentshroud-ssh/" in h["key_path"], (
-                f"ssh.hosts.{name}.key_path must reference the agentshroud-ssh volume"
-            )
+            assert (
+                "/var/agentshroud-ssh/" in h["key_path"]
+            ), f"ssh.hosts.{name}.key_path must reference the agentshroud-ssh volume"
 
     def test_openclaw_ssh_config_allows_all_lab_hosts(self):
         """OpenClaw's SSH client config must have Host blocks for all three lab hosts.
@@ -723,17 +722,17 @@ class TestConfigValidation:
         text = config_path.read_text()
         lab_hosts = ["marvin", "trillian", "raspberrypi"]
         for name in lab_hosts:
-            assert f"Host {name}" in text or name in text, (
-                f"SSH config must have a Host block for '{name}'"
-            )
+            assert (
+                f"Host {name}" in text or name in text
+            ), f"SSH config must have a Host block for '{name}'"
         # All lab-host blocks must tunnel through the gateway CONNECT proxy
         assert "gateway:8181" in text, "SSH config must route through gateway:8181 CONNECT proxy"
         # Must use the shared identity key from the agentshroud-ssh volume
         assert "id_ed25519" in text, "SSH config must reference the shared id_ed25519 key"
         # Catch-all deny must be present — anything not explicitly listed is blocked
-        assert "ProxyCommand /bin/false" in text, (
-            "SSH config must have a catch-all 'Host *' deny rule"
-        )
+        assert (
+            "ProxyCommand /bin/false" in text
+        ), "SSH config must have a catch-all 'Host *' deny rule"
 
 
 class TestAllExampleConfigsExist:

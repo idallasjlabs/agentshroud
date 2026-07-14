@@ -129,9 +129,7 @@ class TestAgentIdPropagatedFromTarget:
 
             from gateway.ingest_api.models import AgentTarget, ForwardRequest
 
-            ForwardRequest(
-                content="test", source="api", content_type="text", route_to="openclaw"
-            )
+            ForwardRequest(content="test", source="api", content_type="text", route_to="openclaw")
             target = AgentTarget(name="openclaw", url="http://agentshroud:18789", chat_path="/chat")
 
             # Directly invoke pipeline.process_inbound with target.name
@@ -205,12 +203,12 @@ class TestAgentIdPropagatedFromTarget:
 
         assert captor.inbound_metadata_calls, "process_inbound must have been called"
         metadata = captor.inbound_metadata_calls[0]
-        assert "user_id" in metadata, (
-            f"process_inbound must receive metadata with 'user_id'; got {metadata!r}"
-        )
-        assert metadata["user_id"] == "8096968754", (
-            f"user_id must match the request field; got {metadata['user_id']!r}"
-        )
+        assert (
+            "user_id" in metadata
+        ), f"process_inbound must receive metadata with 'user_id'; got {metadata!r}"
+        assert (
+            metadata["user_id"] == "8096968754"
+        ), f"user_id must match the request field; got {metadata['user_id']!r}"
 
 
 class _BlockedOutboundPipeline:
@@ -421,9 +419,9 @@ class TestOwnerTrustElevation:
         resp = self._post_forward(user_id="8096968754", captor=captor)
         assert resp.status_code == 201
         assert captor.captured_trust_levels, "process_outbound must have been called"
-        assert captor.captured_trust_levels[-1] == "FULL", (
-            f"Owner request must use FULL trust, got {captor.captured_trust_levels[-1]}"
-        )
+        assert (
+            captor.captured_trust_levels[-1] == "FULL"
+        ), f"Owner request must use FULL trust, got {captor.captured_trust_levels[-1]}"
 
     def test_non_owner_user_id_does_not_elevate_trust(self):
         """A collaborator's user_id must NOT trigger the owner elevation."""
@@ -431,9 +429,7 @@ class TestOwnerTrustElevation:
         resp = self._post_forward(user_id="8506022825", captor=captor)  # Brett Galura
         assert resp.status_code == 201
         assert captor.captured_trust_levels, "process_outbound must have been called"
-        assert captor.captured_trust_levels[-1] != "FULL", (
-            "Non-owner must not receive FULL trust"
-        )
+        assert captor.captured_trust_levels[-1] != "FULL", "Non-owner must not receive FULL trust"
 
     def test_no_user_id_does_not_elevate_trust(self):
         """Requests with no user_id must not be elevated to FULL."""

@@ -283,7 +283,11 @@ async def get_status(user: str = Depends(require_auth)) -> dict:
         },
         "security": {
             "comparison": get_security_comparison(),
-            "warnings": warn_missing_features(engine.name) if (runtime_healthy and engine is not None) else [],
+            "warnings": (
+                warn_missing_features(engine.name)
+                if (runtime_healthy and engine is not None)
+                else []
+            ),
         },
     }
 

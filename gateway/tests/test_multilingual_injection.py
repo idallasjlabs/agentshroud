@@ -1,7 +1,6 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 """Tests for multilingual prompt injection detection."""
 
-
 from gateway.security.prompt_guard import PromptGuard
 
 

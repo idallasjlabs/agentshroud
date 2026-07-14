@@ -588,9 +588,7 @@ def test_clamav_scans_use_dedicated_single_thread_executor():
     calls (thread starvation = 35-60 s added latency), and concurrency must be
     capped at 1 so at most one ~1.3 GB clamscan process exists at a time."""
     p = HTTPConnectProxy()
-    assert getattr(p, "_clamav_executor", None) is not None, (
-        "dedicated ClamAV executor missing"
-    )
+    assert getattr(p, "_clamav_executor", None) is not None, "dedicated ClamAV executor missing"
     assert p._clamav_executor._max_workers == 1
 
 

@@ -78,9 +78,7 @@ class TestCrossBotTrustLedgerConstruction:
         ledger.register_peer("openclaw", "hermes")
         assert "hermes" in ledger.peers_of("openclaw")
 
-    def test_register_peer_is_bidirectional_by_default(
-        self, ledger: CrossBotTrustLedger
-    ) -> None:
+    def test_register_peer_is_bidirectional_by_default(self, ledger: CrossBotTrustLedger) -> None:
         ledger.register_peer("openclaw", "hermes", bidirectional=True)
         assert "hermes" in ledger.peers_of("openclaw")
         assert "openclaw" in ledger.peers_of("hermes")

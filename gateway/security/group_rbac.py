@@ -141,9 +141,7 @@ class GroupRoleResolver:
         if gid not in self._map:
             self._map[gid] = {}
         self._map[gid][uid] = role.value
-        logger.info(
-            "GroupRoleResolver: set role %s for user=%s group=%s", role.value, uid, gid
-        )
+        logger.info("GroupRoleResolver: set role %s for user=%s group=%s", role.value, uid, gid)
 
     def remove_role(self, group_chat_id: str, user_id: str) -> None:
         """Remove a user's role entry from a group (falls back to READ_ONLY)."""

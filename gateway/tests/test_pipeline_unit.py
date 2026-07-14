@@ -645,15 +645,13 @@ class TestInboundPIIOwnerExemption:
         pipeline = SecurityPipeline(pii_sanitizer=pii)
         pipeline._owner_user_id = self.OWNER_ID
 
-        result = await pipeline.process_inbound(
-            self.QUERY, metadata={"user_id": self.OWNER_ID}
-        )
+        result = await pipeline.process_inbound(self.QUERY, metadata={"user_id": self.OWNER_ID})
 
         # Sanitiser must not have been invoked for the owner's query.
         pii.sanitize.assert_not_awaited()
-        assert result.sanitized_message == self.QUERY, (
-            f"Owner query must be unredacted; got {result.sanitized_message!r}"
-        )
+        assert (
+            result.sanitized_message == self.QUERY
+        ), f"Owner query must be unredacted; got {result.sanitized_message!r}"
         assert result.pii_redaction_count == 0
 
     async def test_non_owner_inbound_query_still_redacted(self):
@@ -662,13 +660,11 @@ class TestInboundPIIOwnerExemption:
         pipeline = SecurityPipeline(pii_sanitizer=pii)
         pipeline._owner_user_id = self.OWNER_ID
 
-        result = await pipeline.process_inbound(
-            self.QUERY, metadata={"user_id": self.NON_OWNER_ID}
-        )
+        result = await pipeline.process_inbound(self.QUERY, metadata={"user_id": self.NON_OWNER_ID})
 
         # Sanitiser must have run and produced the redacted version.
         pii.sanitize.assert_awaited_once()
-        assert result.sanitized_message == self.REDACTED, (
-            f"Non-owner query must be redacted; got {result.sanitized_message!r}"
-        )
+        assert (
+            result.sanitized_message == self.REDACTED
+        ), f"Non-owner query must be redacted; got {result.sanitized_message!r}"
         assert result.pii_redaction_count == 2

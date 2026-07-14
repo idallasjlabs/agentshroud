@@ -127,10 +127,8 @@ class TestEgressWiringEndToEnd:
         get_collector().reset()
 
     def test_denied_egress_counts_as_blocked(self):
-        from gateway.security.egress_filter import EgressFilter
+        from gateway.security.egress_filter import EgressAction, EgressFilter
         from gateway.security.module_stats import get_collector
-
-        from gateway.security.egress_filter import EgressAction
 
         f = EgressFilter()
         # Loopback is DENY (SSRF protection) in the default enforce mode.

@@ -52,9 +52,9 @@ _MANIFEST_VERSION = "1"
 class ManifestEntry:
     """A single item in the skills manifest."""
 
-    name: str       # relative path from source root, e.g. "skills/graphify/SKILL.md"
-    hash: str       # SHA-256 hex digest of file contents
-    size: int       # byte size of file
+    name: str  # relative path from source root, e.g. "skills/graphify/SKILL.md"
+    hash: str  # SHA-256 hex digest of file contents
+    size: int  # byte size of file
 
     @classmethod
     def from_file(cls, name: str, path: Path) -> "ManifestEntry":
@@ -77,9 +77,7 @@ class SkillsManifest:
     """In-memory representation of the skills/agents/MCP manifest."""
 
     entries: list[ManifestEntry] = field(default_factory=list)
-    generated_at: str = field(
-        default_factory=lambda: datetime.now(timezone.utc).isoformat()
-    )
+    generated_at: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
     version: str = _MANIFEST_VERSION
 
     # ------------------------------------------------------------------

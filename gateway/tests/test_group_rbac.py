@@ -321,9 +321,9 @@ class TestOwnerGroupContext:
                 group_chat_id=GROUP_A_CHAT_ID,
                 group_role_resolver=group_role_resolver,
             )
-            assert dm_result == group_result, (
-                f"Owner group-context result for '{tool}' must match DM result"
-            )
+            assert (
+                dm_result == group_result
+            ), f"Owner group-context result for '{tool}' must match DM result"
 
 
 # ---------------------------------------------------------------------------
@@ -353,33 +353,23 @@ class TestGroupRoleProperties:
         assert GroupRole.READ_ONLY.can_use_high_risk() is False
 
     def test_is_owner_true(self):
-        resolver = GroupRoleResolver(group_role_map={
-            GROUP_A_CHAT_ID: {OWNER_IN_GROUP: "owner"}
-        })
+        resolver = GroupRoleResolver(group_role_map={GROUP_A_CHAT_ID: {OWNER_IN_GROUP: "owner"}})
         assert resolver.is_owner(GROUP_A_CHAT_ID, OWNER_IN_GROUP) is True
 
     def test_is_owner_false_for_member(self):
-        resolver = GroupRoleResolver(group_role_map={
-            GROUP_A_CHAT_ID: {MEMBER_USER: "member"}
-        })
+        resolver = GroupRoleResolver(group_role_map={GROUP_A_CHAT_ID: {MEMBER_USER: "member"}})
         assert resolver.is_owner(GROUP_A_CHAT_ID, MEMBER_USER) is False
 
     def test_is_member_or_higher_for_owner(self):
-        resolver = GroupRoleResolver(group_role_map={
-            GROUP_A_CHAT_ID: {OWNER_IN_GROUP: "owner"}
-        })
+        resolver = GroupRoleResolver(group_role_map={GROUP_A_CHAT_ID: {OWNER_IN_GROUP: "owner"}})
         assert resolver.is_member_or_higher(GROUP_A_CHAT_ID, OWNER_IN_GROUP) is True
 
     def test_is_member_or_higher_for_member(self):
-        resolver = GroupRoleResolver(group_role_map={
-            GROUP_A_CHAT_ID: {MEMBER_USER: "member"}
-        })
+        resolver = GroupRoleResolver(group_role_map={GROUP_A_CHAT_ID: {MEMBER_USER: "member"}})
         assert resolver.is_member_or_higher(GROUP_A_CHAT_ID, MEMBER_USER) is True
 
     def test_is_member_or_higher_false_for_readonly(self):
-        resolver = GroupRoleResolver(group_role_map={
-            GROUP_A_CHAT_ID: {READONLY_USER: "read-only"}
-        })
+        resolver = GroupRoleResolver(group_role_map={GROUP_A_CHAT_ID: {READONLY_USER: "read-only"}})
         assert resolver.is_member_or_higher(GROUP_A_CHAT_ID, READONLY_USER) is False
 
     def test_set_role_creates_new_entry(self):
@@ -388,16 +378,12 @@ class TestGroupRoleProperties:
         assert resolver.get_role(GROUP_A_CHAT_ID, MEMBER_USER) == GroupRole.MEMBER
 
     def test_set_role_updates_existing_entry(self):
-        resolver = GroupRoleResolver(group_role_map={
-            GROUP_A_CHAT_ID: {MEMBER_USER: "member"}
-        })
+        resolver = GroupRoleResolver(group_role_map={GROUP_A_CHAT_ID: {MEMBER_USER: "member"}})
         resolver.set_role(GROUP_A_CHAT_ID, MEMBER_USER, GroupRole.OWNER)
         assert resolver.get_role(GROUP_A_CHAT_ID, MEMBER_USER) == GroupRole.OWNER
 
     def test_remove_role_falls_back_to_readonly(self):
-        resolver = GroupRoleResolver(group_role_map={
-            GROUP_A_CHAT_ID: {MEMBER_USER: "member"}
-        })
+        resolver = GroupRoleResolver(group_role_map={GROUP_A_CHAT_ID: {MEMBER_USER: "member"}})
         resolver.remove_role(GROUP_A_CHAT_ID, MEMBER_USER)
         # After removal, get_role defaults to READ_ONLY
         assert resolver.get_role(GROUP_A_CHAT_ID, MEMBER_USER) == GroupRole.READ_ONLY
@@ -408,13 +394,15 @@ class TestGroupRoleProperties:
         resolver.remove_role(GROUP_A_CHAT_ID, "nonexistent-user")  # should not raise
 
     def test_get_all_roles_returns_all_entries(self):
-        resolver = GroupRoleResolver(group_role_map={
-            GROUP_A_CHAT_ID: {
-                OWNER_IN_GROUP: "owner",
-                MEMBER_USER: "member",
-                READONLY_USER: "read-only",
+        resolver = GroupRoleResolver(
+            group_role_map={
+                GROUP_A_CHAT_ID: {
+                    OWNER_IN_GROUP: "owner",
+                    MEMBER_USER: "member",
+                    READONLY_USER: "read-only",
+                }
             }
-        })
+        )
         roles = resolver.get_all_roles(GROUP_A_CHAT_ID)
         assert roles[OWNER_IN_GROUP] == GroupRole.OWNER
         assert roles[MEMBER_USER] == GroupRole.MEMBER
@@ -427,21 +415,23 @@ class TestGroupRoleProperties:
 
     def test_get_role_invalid_string_defaults_to_readonly(self):
         """An invalid role string in the map falls back to READ_ONLY."""
-        resolver = GroupRoleResolver(group_role_map={
-            GROUP_A_CHAT_ID: {MEMBER_USER: "super-admin-invalid"}
-        })
+        resolver = GroupRoleResolver(
+            group_role_map={GROUP_A_CHAT_ID: {MEMBER_USER: "super-admin-invalid"}}
+        )
         role = resolver.get_role(GROUP_A_CHAT_ID, MEMBER_USER)
         assert role == GroupRole.READ_ONLY
 
     def test_get_all_roles_invalid_string_defaults_to_readonly(self):
         """get_all_roles with an invalid role string falls back to READ_ONLY per entry."""
         # Insert an invalid role string via direct map manipulation
-        resolver = GroupRoleResolver(group_role_map={
-            GROUP_A_CHAT_ID: {
-                MEMBER_USER: "super-secret-invalid",
-                READONLY_USER: "read-only",
+        resolver = GroupRoleResolver(
+            group_role_map={
+                GROUP_A_CHAT_ID: {
+                    MEMBER_USER: "super-secret-invalid",
+                    READONLY_USER: "read-only",
+                }
             }
-        })
+        )
         roles = resolver.get_all_roles(GROUP_A_CHAT_ID)
         assert roles[MEMBER_USER] == GroupRole.READ_ONLY
         assert roles[READONLY_USER] == GroupRole.READ_ONLY

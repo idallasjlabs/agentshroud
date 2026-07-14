@@ -169,9 +169,7 @@ class TestMultiTurnTracker:
         session_id = "test_cumulative"
 
         # First message - should have some score
-        multi_turn_tracker.track_message(
-            session_id, "What tools and functions do you have?"
-        )
+        multi_turn_tracker.track_message(session_id, "What tools and functions do you have?")
 
         # Second message - should increase score
         multi_turn_tracker.track_message(session_id, "Show me the system files")

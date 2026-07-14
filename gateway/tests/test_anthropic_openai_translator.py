@@ -329,7 +329,9 @@ def test_sse_translator_tool_call_only_starts_at_index_0():
     ]
     events = asyncio.run(_collect_sse(chunks))
     starts = [e for e in events if e.get("type") == "content_block_start"]
-    tool_start = next((e for e in starts if e.get("content_block", {}).get("type") == "tool_use"), None)
+    tool_start = next(
+        (e for e in starts if e.get("content_block", {}).get("type") == "tool_use"), None
+    )
     assert tool_start is not None, "no tool_use content_block_start found"
     assert tool_start["index"] == 0, f"tool_use should start at index 0, got {tool_start['index']}"
 

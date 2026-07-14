@@ -214,9 +214,7 @@ class TestSwitchModelVerifyFlag:
             env["SWITCH_MODEL_HEALTH_MOCK"] = "1"
 
             result = subprocess.run(cmd, env=env, capture_output=True, text=True)
-            assert result.returncode == 0, (
-                f"--verify with model ref failed: {result.stderr}"
-            )
+            assert result.returncode == 0, f"--verify with model ref failed: {result.stderr}"
 
 
 # ---------------------------------------------------------------------------
