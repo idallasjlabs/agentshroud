@@ -304,6 +304,128 @@ class TestMultiBotIsolation:
         assert "Old memory content" in s.memory_file.read_text()
 
 
+# ---------------------------------------------------------------------------
+# Atomic / serialized registry persistence (SCRUM-95)
+# ---------------------------------------------------------------------------
+
+
+class TestAtomicRegistryWrites:
+    """Registry writes must be atomic (os.replace) and serialized (lock).
+
+    The session registry lives on a volume shared by multiple bot processes
+    (OpenClaw + Hermes).  Non-atomic writes could interleave and corrupt the
+    file or drop entries.  These tests pin the durability guarantee.
+    """
+
+    def test_save_uses_atomic_replace(self, mgr, monkeypatch):
+        """_save_sessions must go through os.replace(tmp, final), never a
+        partial in-place write of the destination file."""
+        import gateway.security.session_manager as sm
+
+        calls = []
+        real_replace = sm.os.replace
+
+        def spy_replace(src, dst):
+            calls.append((str(src), str(dst)))
+            return real_replace(src, dst)
+
+        monkeypatch.setattr(sm.os, "replace", spy_replace)
+
+        mgr.get_or_create_session("user-atomic")  # triggers a save
+
+        assert calls, "os.replace was never called — write was not atomic"
+        # The destination of the atomic rename must be the real registry file,
+        # and the source must be a *different* temp file in the same directory.
+        src, dst = calls[-1]
+        assert dst == str(mgr.session_metadata_file)
+        assert src != dst
+        assert Path(src).parent == mgr.session_metadata_file.parent
+
+    def test_no_temp_files_left_behind(self, mgr):
+        """A successful save leaves only the final registry file, no *.tmp."""
+        mgr.get_or_create_session("user-clean")
+        leftovers = list(mgr.session_metadata_file.parent.glob("session_registry.json.*"))
+        assert leftovers == [], f"temp files left behind: {leftovers}"
+
+    def test_load_tolerates_corrupt_registry(self, tmp_path):
+        """A corrupt/partial registry file must not crash construction."""
+        registry_path = tmp_path / "session_registry.json"
+        registry_path.write_text('{"user-1": {"user_id": "user-1", "workspace')  # truncated JSON
+
+        # Must not raise; manager comes up with an empty session cache.
+        mgr2 = UserSessionManager(base_workspace=tmp_path, owner_user_id="owner")
+        assert mgr2.sessions == {}
+
+        # And it must still be able to create + persist a fresh session.
+        s = mgr2.get_or_create_session("user-1")
+        assert s.user_id == "user-1"
+
+    def test_load_tolerates_empty_registry(self, tmp_path):
+        """An empty registry file must not crash construction."""
+        registry_path = tmp_path / "session_registry.json"
+        registry_path.write_text("")
+        mgr2 = UserSessionManager(base_workspace=tmp_path, owner_user_id="owner")
+        assert mgr2.sessions == {}
+
+    def test_atomic_save_never_leaves_partial_registry_on_crash(self, mgr, monkeypatch):
+        """If the write to the temp file fails mid-flight, the existing
+        registry on disk must remain intact and readable (not truncated)."""
+        import json
+
+        # Seed a valid registry with one persisted session.
+        mgr.get_or_create_session("survivor")
+        good_bytes = mgr.session_metadata_file.read_bytes()
+        good_data = json.loads(good_bytes)
+        assert any("survivor" in k for k in good_data)
+
+        # Now make json.dump blow up partway through the *next* save.
+        import gateway.security.session_manager as sm
+
+        def boom(*_args, **_kwargs):
+            raise OSError("disk full")
+
+        monkeypatch.setattr(sm.json, "dump", boom)
+
+        # This save fails internally (logged, swallowed) — must not corrupt file.
+        mgr.get_or_create_session("newcomer")
+
+        # Original registry file is byte-for-byte intact.
+        assert mgr.session_metadata_file.read_bytes() == good_bytes
+        # No stray temp files from the failed write.
+        leftovers = list(mgr.session_metadata_file.parent.glob("session_registry.json.*"))
+        assert leftovers == []
+
+    def test_concurrent_saves_do_not_lose_entries(self, mgr):
+        """Concurrent add_conversation_message calls (each of which saves) must
+        not drop sessions from the on-disk registry."""
+        import json
+        import threading
+
+        user_ids = [f"user-{i:03d}" for i in range(40)]
+
+        # Pre-create sessions so each thread only mutates + saves.
+        for uid in user_ids:
+            mgr.get_or_create_session(uid)
+
+        barrier = threading.Barrier(len(user_ids))
+
+        def worker(uid: str):
+            barrier.wait()
+            mgr.add_conversation_message(uid, "user", f"msg from {uid}")
+
+        threads = [threading.Thread(target=worker, args=(uid,)) for uid in user_ids]
+        for t in threads:
+            t.start()
+        for t in threads:
+            t.join()
+
+        # The final on-disk registry must parse cleanly and contain every user.
+        data = json.loads(mgr.session_metadata_file.read_text())
+        keys = set(data.keys())
+        for uid in user_ids:
+            assert f"{uid}::openclaw" in keys, f"lost registry entry for {uid}"
+
+
 # ── C16: System Prompt Re-anchoring tests ─────────────────────────────────────
 
 

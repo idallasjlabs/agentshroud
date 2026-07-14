@@ -16,6 +16,9 @@ from __future__ import annotations
 
 import json
 import logging
+import os
+import tempfile
+import threading
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
@@ -144,6 +147,11 @@ class UserSessionManager:
         # Cache key: "{user_id}::{bot_id}" → UserSession
         self.sessions: Dict[str, UserSession] = {}
         self.session_metadata_file = self.base_workspace / "session_registry.json"
+        # Serialize registry writes within this process. The registry file lives
+        # on a volume shared by multiple bot processes (OpenClaw + Hermes); the
+        # atomic os.replace in _save_sessions guards against cross-process
+        # interleaving, and this lock guards against intra-process races.
+        self._save_lock = threading.Lock()
 
         # Ensure base directories exist
         self.base_workspace.mkdir(parents=True, exist_ok=True)
@@ -169,6 +177,7 @@ class UserSessionManager:
                 with open(self.session_metadata_file, "r") as f:
                     sessions_data = json.load(f)
 
+                loaded: Dict[str, UserSession] = {}
                 for raw_key, session_data in sessions_data.items():
                     # Promote legacy key (no separator) → openclaw bucket
                     if self._KEY_SEP not in raw_key:
@@ -176,22 +185,59 @@ class UserSessionManager:
                         key = self._session_key(raw_key, "openclaw")
                     else:
                         key = raw_key
-                    self.sessions[key] = UserSession.from_dict(session_data)
+                    loaded[key] = UserSession.from_dict(session_data)
 
+                # Only commit to the cache once the whole file parsed cleanly, so
+                # a truncated/corrupt registry (e.g. from a legacy non-atomic
+                # writer or a crash) leaves us with an empty cache rather than a
+                # half-populated one.
+                self.sessions = loaded
                 logger.info(f"Loaded {len(self.sessions)} user sessions")
             except Exception as e:
                 logger.error(f"Failed to load sessions: {e}")
 
     def _save_sessions(self):
-        """Save current sessions to metadata file."""
-        try:
-            sessions_data = {key: session.to_dict() for key, session in self.sessions.items()}
+        """Atomically persist current sessions to the metadata file.
 
-            with open(self.session_metadata_file, "w") as f:
-                json.dump(sessions_data, f, indent=2)
+        Writes are serialized with a process-level lock and made durable via a
+        write-to-temp-then-atomic-rename sequence.  Because the registry file is
+        shared across bot processes (OpenClaw + Hermes), a plain in-place
+        ``open(path, "w")`` could interleave and leave a partial/corrupt file or
+        drop entries.  ``os.replace`` is atomic on POSIX (and on Windows for an
+        existing destination), so a reader never observes a torn write and a
+        crash mid-write cannot corrupt the existing registry.
+        """
+        with self._save_lock:
+            try:
+                sessions_data = {key: session.to_dict() for key, session in self.sessions.items()}
 
-        except Exception as e:
-            logger.error(f"Failed to save sessions: {e}")
+                directory = self.session_metadata_file.parent
+                directory.mkdir(parents=True, exist_ok=True)
+
+                # Temp file in the SAME directory so os.replace is a same-filesystem
+                # atomic rename (rename across filesystems is not atomic).
+                fd, tmp_path = tempfile.mkstemp(
+                    prefix="session_registry.json.",
+                    suffix=".tmp",
+                    dir=str(directory),
+                )
+                try:
+                    with os.fdopen(fd, "w") as f:
+                        json.dump(sessions_data, f, indent=2)
+                        f.flush()
+                        os.fsync(f.fileno())
+                    os.replace(tmp_path, self.session_metadata_file)
+                except BaseException:
+                    # Failed write: remove the temp file so no partial artifact
+                    # is left behind, and leave the existing registry untouched.
+                    try:
+                        os.unlink(tmp_path)
+                    except OSError:
+                        pass
+                    raise
+
+            except Exception as e:
+                logger.error(f"Failed to save sessions: {e}")
 
     @staticmethod
     def _validate_user_id(user_id: str) -> str:
