@@ -7,8 +7,114 @@
 #include "bsp/esp-bsp.h"
 #include "lvgl.h"
 #include "esp_log.h"
+#include "esp_heap_caps.h"
+#include "esp_memory_utils.h"   /* esp_ptr_external_ram */
+#include <string.h>             /* memcpy */
 
 static const char *TAG = "ui_face";
+
+/* SCRUM-58 experiment #1 — kawaii canvas heap placement.
+ *
+ * The kawaii face renders into an LVGL canvas whose backing pixel buffer is
+ * allocated inside the lvgl_kawaii_face component.  On the ESP32-S3-BOX-3 the
+ * default allocator lands large buffers in PSRAM (external SPI RAM).  A canvas
+ * in PSRAM is a problem here: every face redraw READS the whole buffer over the
+ * same SPI/octal bus that audio (I2S DMA) and TLS traffic contend for, and that
+ * bus contention is the mechanism behind the render-stalls-WiFi drops the file
+ * already documents (see _apply_state_cb).  Moving the canvas into internal DRAM
+ * takes those reads off the shared bus.
+ *
+ * This experiment (a) LOGS whether the canvas buffer is in PSRAM or internal
+ * DRAM so the placement is visible in the device log, and (b) if it is in PSRAM
+ * AND a same-sized internal-DRAM buffer will fit, re-points the canvas at a DRAM
+ * copy via the public lv_canvas API.  It is deliberately confined to the LVGL
+ * canvas buffer — it does NOT touch BSP I2S DMA descriptor sizing (OFF-LIMITS,
+ * boot-brick risk, 2026-07-07).
+ *
+ * Experiment #2 (animate-the-face-during-SPEAKING) is a SEPARATE follow-up and
+ * is intentionally NOT implemented here.
+ */
+
+/* Depth-first search for the first lv_canvas descendant of `root`. The kawaii
+ * component owns the canvas; we locate it by class rather than by reaching into
+ * component internals, so this stays valid across kawaii-face versions. */
+static lv_obj_t *_find_canvas(lv_obj_t *root)
+{
+    if (root == NULL) return NULL;
+    if (lv_obj_check_type(root, &lv_canvas_class)) return root;
+    uint32_t n = lv_obj_get_child_count(root);
+    for (uint32_t i = 0; i < n; i++) {
+        lv_obj_t *hit = _find_canvas(lv_obj_get_child(root, i));
+        if (hit) return hit;
+    }
+    return NULL;
+}
+
+/* Report the canvas buffer's heap placement and, when it sits in PSRAM and a
+ * same-sized internal-DRAM buffer will fit, relocate it into internal DRAM.
+ * Best-effort and fully guarded: any missing canvas / buffer / OOM leaves the
+ * original (working) PSRAM buffer untouched — we only ever log in that case. */
+static void _report_and_place_canvas(lv_obj_t *face_root)
+{
+    lv_obj_t *canvas = _find_canvas(face_root);
+    if (canvas == NULL) {
+        ESP_LOGW(TAG, "canvas-placement: no lv_canvas found under face panel — skipping");
+        vt_remote_log("canvas-placement: no canvas found");
+        return;
+    }
+
+    lv_image_dsc_t *dsc = lv_canvas_get_image(canvas);
+    if (dsc == NULL || dsc->data == NULL || dsc->data_size == 0) {
+        ESP_LOGW(TAG, "canvas-placement: canvas has no buffer yet — skipping");
+        vt_remote_log("canvas-placement: no buffer");
+        return;
+    }
+    const void *buf = dsc->data;
+    size_t buf_bytes = dsc->data_size;
+
+    bool in_psram = esp_ptr_external_ram(buf);
+    ESP_LOGI(TAG,
+             "canvas-placement: buf=%p bytes=%u region=%s (%ux%u cf=%d)",
+             buf, (unsigned)buf_bytes, in_psram ? "PSRAM" : "INTERNAL-DRAM",
+             (unsigned)dsc->header.w, (unsigned)dsc->header.h, (int)dsc->header.cf);
+    vt_remote_log("canvas-placement: %s %u bytes",
+                  in_psram ? "PSRAM" : "DRAM", (unsigned)buf_bytes);
+
+    if (!in_psram) {
+        return;   /* already internal — nothing to do */
+    }
+
+    /* Only relocate if a same-sized internal-DRAM block will fit with margin.
+     * Reads on the WiFi/TLS path are the reason for the move; we never want the
+     * move itself to exhaust internal DRAM and starve the stacks. */
+    size_t dram_free = heap_caps_get_free_size(MALLOC_CAP_INTERNAL | MALLOC_CAP_8BIT);
+    const size_t DRAM_MARGIN = 24 * 1024;   /* leave headroom for stacks/TLS */
+    if (buf_bytes + DRAM_MARGIN > dram_free) {
+        ESP_LOGW(TAG,
+                 "canvas-placement: canvas in PSRAM but internal DRAM too tight "
+                 "(need %u, free %u) — leaving in PSRAM",
+                 (unsigned)buf_bytes, (unsigned)dram_free);
+        vt_remote_log("canvas-placement: DRAM tight, staying PSRAM");
+        return;
+    }
+
+    void *dram_buf = heap_caps_malloc(buf_bytes, MALLOC_CAP_INTERNAL | MALLOC_CAP_8BIT);
+    if (dram_buf == NULL) {
+        ESP_LOGW(TAG, "canvas-placement: internal-DRAM alloc failed — leaving in PSRAM");
+        vt_remote_log("canvas-placement: DRAM alloc failed");
+        return;
+    }
+    memcpy(dram_buf, buf, buf_bytes);
+    lv_canvas_set_buffer(canvas, dram_buf, dsc->header.w, dsc->header.h,
+                         (lv_color_format_t)dsc->header.cf);
+    /* NOTE: the original PSRAM buffer is owned by the kawaii component and is
+     * freed when the component tears the canvas down; we intentionally do not
+     * free it here.  This leaks the PSRAM copy for the life of the canvas — an
+     * acceptable one-time cost (PSRAM has MBs free) to keep the hot redraw path
+     * in internal DRAM. */
+    ESP_LOGI(TAG, "canvas-placement: relocated canvas buffer PSRAM → internal DRAM (%p)", dram_buf);
+    vt_remote_log("canvas-placement: moved to DRAM %p", dram_buf);
+}
 
 /* DIAGNOSTIC BUILD FLAG — set to 1 to disable ALL kawaii face rendering.
  * The 2026-07-02 A/B test with this flag CONVICTED the face redraw: with
@@ -164,6 +270,11 @@ void ui_face_init(void)
     };
     ESP_ERROR_CHECK(face_animation_init(&cfg));
     face_set_emotion(FACE_NEUTRAL, false);
+    /* SCRUM-58 exp #1: log the canvas buffer's heap placement and, if it landed
+     * in PSRAM, relocate it into internal DRAM (keeps redraw reads off the
+     * SPI/octal bus that audio + TLS share).  Runs under the display lock so the
+     * lv_canvas_* calls don't race taskLVGL.  DMA descriptor config untouched. */
+    _report_and_place_canvas(face_panel);
     bsp_display_unlock();
 #endif
 

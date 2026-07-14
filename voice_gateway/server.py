@@ -42,7 +42,7 @@ from typing import Dict, List
 from zoneinfo import ZoneInfo
 
 import httpx
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect
 from fastapi.responses import FileResponse, Response
 from websockets.exceptions import (
     ConnectionClosed,
@@ -185,18 +185,79 @@ if not _VG_AUTH_TOKEN:
         "Mount docker secret 'voice_gateway_token' or set VOICE_GW_AUTH_TOKEN env var."
     )
 
-_FIRMWARE_BIN_PATH = Path(os.environ.get("FIRMWARE_BIN_PATH", "/firmware/voice_terminal.bin"))
+_FIRMWARE_BIN_PATH = Path(
+    os.environ.get("FIRMWARE_BIN_PATH", "/firmware/voice_terminal.bin")
+)
 _fw_etag: str = ""
 _fw_mtime: float = 0.0
+
+
+def _load_ota_tokens() -> set[str]:
+    """Build the per-device OTA token allowlist (SCRUM-58).
+
+    Owner-gated rollout: only devices whose ``?token=`` is on this allowlist may
+    pull firmware over /firmware/bin.  Sources, in priority order:
+
+      1. ``FIRMWARE_OTA_TOKENS_FILE`` — a secret file, one token per line
+         (comments starting with ``#`` and blank lines ignored).
+      2. ``FIRMWARE_OTA_TOKENS`` env — comma-separated tokens.
+      3. Fallback to the single WS ``_VG_AUTH_TOKEN`` so existing single-device
+         deployments keep serving OTA without extra config.
+
+    An empty allowlist means OTA is un-gated (any token accepted) — the same
+    open-by-default posture the WS uses when no token is configured, and the
+    device still cannot brick itself because a bad download is verified by the
+    ESP-IDF OTA subsystem before boot.
+    """
+    tokens: set[str] = set()
+    tokens_file = os.environ.get("FIRMWARE_OTA_TOKENS_FILE", "")
+    if tokens_file and os.path.isfile(tokens_file):
+        with open(tokens_file) as _fh:
+            for line in _fh:
+                line = line.strip()
+                if line and not line.startswith("#"):
+                    tokens.add(line)
+    env_tokens = os.environ.get("FIRMWARE_OTA_TOKENS", "")
+    for tok in env_tokens.split(","):
+        tok = tok.strip()
+        if tok:
+            tokens.add(tok)
+    if not tokens and _VG_AUTH_TOKEN:
+        tokens.add(_VG_AUTH_TOKEN)
+    return tokens
+
+
+_OTA_TOKENS: set[str] = _load_ota_tokens()
+
+
+def _ota_token_ok(token: str) -> bool:
+    """Constant-time allowlist check for an OTA ``?token=`` value.
+
+    Returns True when OTA is un-gated (empty allowlist) or when ``token`` matches
+    an allowlisted value.  Every candidate is compared with hmac.compare_digest
+    to keep the check timing-safe regardless of how many tokens are configured.
+    """
+    if not _OTA_TOKENS:
+        return True
+    # Compare against every token (no early exit) so a caller cannot learn the
+    # allowlist size or a partial match from response timing.
+    matched = False
+    for allowed in _OTA_TOKENS:
+        if hmac.compare_digest(token, allowed):
+            matched = True
+    return matched
+
 
 # Server-side utterance safety limits.
 # A device that sends LISTEN but never sends END (crash, stuck firmware) would
 # otherwise hold the session in LISTENING forever with unbounded pcm_chunks growth.
-_LISTEN_MAX_S: float = 15.0              # max seconds to wait for END after LISTEN
+_LISTEN_MAX_S: float = 15.0  # max seconds to wait for END after LISTEN
 # Per-sentence TTS synthesis budget.  Kokoro takes ~0.2-3 s per sentence when
 # healthy; a synthesis exceeding this is wedged (e.g. blocked voice-pack
 # download) and must not strand the device in THINKING.
-_TTS_SENTENCE_TIMEOUT_S: float = float(os.environ.get("VG_TTS_SENTENCE_TIMEOUT_S", "30"))
+_TTS_SENTENCE_TIMEOUT_S: float = float(
+    os.environ.get("VG_TTS_SENTENCE_TIMEOUT_S", "30")
+)
 
 # Leading silence prepended to the first sentence's PCM (0.4 s at 16 kHz S16LE
 # mono = 6400 samples × 2 bytes).  Any playback-start transient on the device
@@ -216,9 +277,9 @@ _reply_resume: dict | None = None
 # across connection drops so the device resumes with "LISTEN <offset>".
 _utterance_resume: dict | None = None
 _RESUME_MAX_AGE_S: float = 30.0
-_RESUME_REWIND_BYTES: int = 8192   # re-send this much before the recorded
-                                   # offset — covers frames lost in flight
-_PCM_MAX_BYTES: int  = 16000 * 2 * 20   # 20 s × 16 kHz × 2 bytes/sample S16LE mono
+_RESUME_REWIND_BYTES: int = 8192  # re-send this much before the recorded
+# offset — covers frames lost in flight
+_PCM_MAX_BYTES: int = 16000 * 2 * 20  # 20 s × 16 kHz × 2 bytes/sample S16LE mono
 
 
 def _get_firmware_etag() -> str | None:
@@ -278,16 +339,51 @@ async def health() -> dict:
 
 
 @app.api_route("/firmware/bin", methods=["GET", "HEAD"])
-async def firmware_bin(token: str = "") -> Response:
-    if _VG_AUTH_TOKEN and not hmac.compare_digest(token, _VG_AUTH_TOKEN):
+async def firmware_bin(request: Request, token: str = "") -> Response:
+    """Serve the current ESP32 firmware binary for OTA (SCRUM-58).
+
+    Contract expected by the device OTA client (firmware/voice-terminal/main/ota.c):
+
+      * ``?token=`` — per-device OTA token, validated against the owner-gated
+        allowlist (:func:`_load_ota_tokens`).  Missing/empty → 401; present but
+        not allowlisted → 403.  This keeps OTA rollout owner-controlled.
+      * strong ``ETag`` — SHA-256 of the binary (quoted).  The device stores it in
+        NVS and re-checks on boot.
+      * ``If-None-Match`` — when it equals the current ETag, respond 304 with no
+        body so an up-to-date device never re-downloads.
+      * ``HEAD`` — cheap version probe: returns the ETag header with no body.
+      * 404 — when no firmware binary is present on disk.
+    """
+    # 401 vs 403: distinguish "no credential" from "wrong credential" so the
+    # device (and operators) can tell a mis-configured token from a mis-typed one.
+    if not token:
         return Response(status_code=401)
+    if not _ota_token_ok(token):
+        return Response(status_code=403)
+
     etag = _get_firmware_etag()
     if etag is None:
         return Response(status_code=404)
+
+    headers = {"ETag": etag, "Cache-Control": "no-cache"}
+
+    # 304 short-circuit: the device sends its stored ETag in If-None-Match; if it
+    # still matches, there is nothing new to download.  A weak-validator ("W/")
+    # prefix is tolerated per RFC 7232 §3.2.
+    inm = request.headers.get("if-none-match", "")
+    if inm:
+        client_tag = inm[2:] if inm.startswith("W/") else inm
+        if hmac.compare_digest(client_tag, etag):
+            return Response(status_code=304, headers=headers)
+
+    # HEAD: headers only, never stream the body (the device's version probe).
+    if request.method == "HEAD":
+        return Response(status_code=200, headers=headers)
+
     return FileResponse(
         str(_FIRMWARE_BIN_PATH),
         media_type="application/octet-stream",
-        headers={"ETag": etag},
+        headers=headers,
     )
 
 
@@ -308,13 +404,29 @@ async def _send_state(ws: WebSocket, state: _State) -> None:
 
 
 _NUMBER_WORDS = {
-    "zero": 0, "ten": 10, "twenty": 20, "thirty": 30, "forty": 40,
-    "fifty": 50, "sixty": 60, "seventy": 70, "eighty": 80, "ninety": 90,
-    "hundred": 100, "one hundred": 100,
+    "zero": 0,
+    "ten": 10,
+    "twenty": 20,
+    "thirty": 30,
+    "forty": 40,
+    "fifty": 50,
+    "sixty": 60,
+    "seventy": 70,
+    "eighty": 80,
+    "ninety": 90,
+    "hundred": 100,
+    "one hundred": 100,
 }
 _UNIT_WORDS = {
-    "one": 1, "two": 2, "three": 3, "four": 4, "five": 5,
-    "six": 6, "seven": 7, "eight": 8, "nine": 9,
+    "one": 1,
+    "two": 2,
+    "three": 3,
+    "four": 4,
+    "five": 5,
+    "six": 6,
+    "seven": 7,
+    "eight": 8,
+    "nine": 9,
 }
 
 
@@ -344,14 +456,12 @@ def _parse_volume_command(transcript: str) -> int | None:
         val = _NUMBER_WORDS[raw]
     else:
         parts = raw.split()
-        if (
-            len(parts) == 2
-            and parts[0] in _NUMBER_WORDS
-            and parts[1] in _UNIT_WORDS
-        ):
+        if len(parts) == 2 and parts[0] in _NUMBER_WORDS and parts[1] in _UNIT_WORDS:
             val = _NUMBER_WORDS[parts[0]] + _UNIT_WORDS[parts[1]]
         elif len(parts) == 2 and parts[0] in _NUMBER_WORDS:
-            val = _NUMBER_WORDS[parts[0]]   # "eighty percent" already stripped; stray word
+            val = _NUMBER_WORDS[
+                parts[0]
+            ]  # "eighty percent" already stripped; stray word
         else:
             return None
     return max(0, min(100, val))
@@ -392,7 +502,9 @@ def _answer_volume_query() -> str:
     """Spoken answer for a volume READ query: the tracked level, or a
     calibration hint when the server has not set the volume this process."""
     if _last_set_volume is None:
-        return "Volume is unknown — say 'set volume' followed by a percent to calibrate."
+        return (
+            "Volume is unknown — say 'set volume' followed by a percent to calibrate."
+        )
     return f"Volume is at {_last_set_volume} percent."
 
 
@@ -557,8 +669,10 @@ async def voice_endpoint(ws: WebSocket) -> None:
     history: List[Dict[str, str]] = [_voice_system_message()]
 
     pcm_chunks: List[bytes] = []
-    _pcm_bytes_total: int = 0       # running byte count — avoids O(n) sum on each chunk
-    _listen_deadline: float | None = None   # set when LISTEN fires, cleared on END/timeout
+    _pcm_bytes_total: int = 0  # running byte count — avoids O(n) sum on each chunk
+    _listen_deadline: float | None = (
+        None  # set when LISTEN fires, cleared on END/timeout
+    )
     # Define before the try so the finally clause can always reference it safely,
     # even if a dirty-close fires before the task is created.
     heartbeat = None
@@ -581,7 +695,9 @@ async def voice_endpoint(ws: WebSocket) -> None:
                 logger.info(
                     "Resuming interrupted TTS reply: %d/%d bytes were sent "
                     "%.1fs ago — replaying remainder",
-                    _sent, len(_pcm), _age,
+                    _sent,
+                    len(_pcm),
+                    _age,
                 )
                 state = _State.SPEAKING
                 await _send_state(ws, state)
@@ -592,7 +708,7 @@ async def voice_endpoint(ws: WebSocket) -> None:
                 await ws.send_text("END")
                 state = _State.IDLE
                 await _send_state(ws, state)
-            _reply_resume = None   # replayed, stale, or already complete
+            _reply_resume = None  # replayed, stale, or already complete
 
         while True:
             # While LISTENING, bound the wait so a device that never sends END
@@ -602,17 +718,21 @@ async def voice_endpoint(ws: WebSocket) -> None:
                 if remaining <= 0:
                     logger.warning(
                         "LISTEN timeout (%.0fs) from %s — finalising utterance",
-                        _LISTEN_MAX_S, remote,
+                        _LISTEN_MAX_S,
+                        remote,
                     )
                     _listen_deadline = None
                     message = {"bytes": None, "text": "END"}
                 else:
                     try:
-                        message = await asyncio.wait_for(ws.receive(), timeout=remaining)
+                        message = await asyncio.wait_for(
+                            ws.receive(), timeout=remaining
+                        )
                     except asyncio.TimeoutError:
                         logger.warning(
                             "LISTEN timeout (%.0fs) from %s — finalising utterance",
-                            _LISTEN_MAX_S, remote,
+                            _LISTEN_MAX_S,
+                            remote,
                         )
                         _listen_deadline = None
                         message = {"bytes": None, "text": "END"}
@@ -636,7 +756,8 @@ async def voice_endpoint(ws: WebSocket) -> None:
                 else:
                     logger.warning(
                         "PCM buffer cap (%d bytes) reached from %s — discarding excess",
-                        _PCM_MAX_BYTES, remote,
+                        _PCM_MAX_BYTES,
+                        remote,
                     )
 
             elif "text" in message and message["text"] is not None:
@@ -677,7 +798,8 @@ async def voice_endpoint(ws: WebSocket) -> None:
                     if (
                         _offset is not None
                         and _utterance_resume is not None
-                        and (_loop.time() - _utterance_resume["ts"]) <= _RESUME_MAX_AGE_S
+                        and (_loop.time() - _utterance_resume["ts"])
+                        <= _RESUME_MAX_AGE_S
                     ):
                         _cached = bytes(_utterance_resume["pcm"][:_offset])
                         if _cached:
@@ -685,7 +807,9 @@ async def voice_endpoint(ws: WebSocket) -> None:
                             _pcm_bytes_total = len(_cached)
                         logger.info(
                             "LISTEN resume at %d (%d cached bytes) from %s",
-                            _offset, len(_cached), remote,
+                            _offset,
+                            len(_cached),
+                            remote,
                         )
                     else:
                         logger.info("LISTEN from %s", remote)
@@ -705,7 +829,7 @@ async def voice_endpoint(ws: WebSocket) -> None:
                     await _send_state(ws, state)
 
                 elif msg == "END":
-                    _listen_deadline = None   # cancel the utterance timeout
+                    _listen_deadline = None  # cancel the utterance timeout
                     _utterance_resume = None  # utterance complete — cache done
                     state = _State.THINKING
                     await _send_state(ws, state)
@@ -829,7 +953,9 @@ async def voice_endpoint(ws: WebSocket) -> None:
                                     logger.error(
                                         "TTS failed/timed out (%.0fs) for %r — "
                                         "aborting remaining sentences: %s",
-                                        _TTS_SENTENCE_TIMEOUT_S, _s[:60], _exc,
+                                        _TTS_SENTENCE_TIMEOUT_S,
+                                        _s[:60],
+                                        _exc,
                                     )
                                     break
                                 await _synth_q.put(_pcm)
