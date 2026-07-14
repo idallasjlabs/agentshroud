@@ -348,6 +348,44 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
             detail="Failed to resolve routing target",
         )
 
+    # WS-E SCRUM-73/74 — owner-identity anti-spoof.
+    # /forward authenticates only a single shared Bearer token; the token proves
+    # possession, NOT owner identity.  The body ``user_id`` field is therefore
+    # attacker-controlled: any token holder could set it to the owner's (public,
+    # guessable) Telegram ID and receive the pipeline's owner exemption
+    # (PromptGuard / ContextGuard / injection-scanner / PII bypass) plus FULL
+    # outbound trust (below at forward.py FULL-trust resolution).
+    #
+    # Mirror the existing /mcp/proxy defence
+    # (gateway/ingest_api/main.py::_resolve_effective_agent_id): a body ``user_id``
+    # is only allowed to CLAIM the owner identity when a trusted
+    # ``X-AgentShroud-User-Id`` header corroborates it (set by the voice-gateway
+    # at voice_gateway/server.py and by trusted internal callers).  Without a
+    # matching trusted header, an owner-ID claim is dropped to "anonymous" so the
+    # pipeline never grants owner privileges.  Non-owner user_ids are unaffected
+    # (they grant no exemption regardless).
+    _owner_id = None
+    _pipeline_for_owner = getattr(app_state, "pipeline", None)
+    if _pipeline_for_owner is not None:
+        _owner_id = getattr(_pipeline_for_owner, "_owner_user_id", None)
+    if _owner_id is None:
+        try:
+            from gateway.security.rbac_config import RBACConfig
+
+            _owner_id = RBACConfig().owner_user_id
+        except Exception:
+            _owner_id = None
+    _body_user_id = getattr(request, "user_id", None)
+    if _owner_id and _body_user_id is not None and str(_body_user_id) == str(_owner_id):
+        _trusted_header = (req.headers.get("x-agentshroud-user-id") or "").strip()
+        if str(_trusted_header) != str(_owner_id):
+            logger.warning(
+                "Owner-identity spoof rejected on /forward: body user_id claimed owner "
+                "without a matching X-AgentShroud-User-Id header (source=%s)",
+                request.source,
+            )
+            request.user_id = None
+
     # Step 0: P1 Middleware Security Processing
     middleware_manager = getattr(app_state, "middleware_manager", None)
     if middleware_manager:
