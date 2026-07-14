@@ -27,6 +27,7 @@ from gateway.ingest_api.config import (
     ToolRiskPolicy,
 )
 from gateway.ingest_api.models import ApprovalQueueItem, ApprovalRequest
+from gateway.security.mfa_guard import MFAGuard
 
 logger = logging.getLogger("agentshroud.gateway.approval_queue.enhanced")
 
@@ -50,6 +51,7 @@ class EnhancedApprovalQueue:
         store: Optional[ApprovalStore] = None,
         bot_token: Optional[str] = None,
         admin_chat_id: Optional[str] = None,
+        mfa_guard: Optional[MFAGuard] = None,
     ):
         """Initialize enhanced approval queue.
 
@@ -59,9 +61,13 @@ class EnhancedApprovalQueue:
             store: Optional ApprovalStore instance (auto-created if None)
             bot_token: Telegram bot token for operator notifications
             admin_chat_id: Telegram chat ID to send approval notifications to
+            mfa_guard: Optional MFAGuard for second-factor enforcement on
+                high-risk approvals (IEC 62443 FR1). Defaults to one built from
+                the environment (disabled unless AGENTSHROUD_MFA_ENABLED is set).
         """
         self.config = config
         self.tool_risk_config = tool_risk_config
+        self.mfa_guard = mfa_guard if mfa_guard is not None else MFAGuard.from_env()
         import tempfile as _tf
 
         self.store = store or ApprovalStore(
@@ -324,14 +330,39 @@ class EnhancedApprovalQueue:
             return False
 
     async def decide(
-        self, request_id: str, approved: bool, reason: str = "", decided_by: str = "admin"
+        self,
+        request_id: str,
+        approved: bool,
+        reason: str = "",
+        decided_by: str = "admin",
+        mfa_code: Optional[str] = None,
     ) -> ApprovalQueueItem:
-        """Process an approval decision."""
+        """Process an approval decision.
+
+        IEC 62443 FR1: approving a high-risk action requires a valid second
+        factor when MFA is enabled (fail-closed). Rejections never require MFA.
+        Raises PermissionError when the second factor is missing/invalid.
+        """
         async with self._lock:
             # Check if we have this request
             future = self._pending_futures.get(request_id)
             if not future:
                 raise KeyError(f"Approval request {request_id} not found or already decided")
+
+            # IEC 62443 FR1 — second factor for high-risk APPROVALS (fail-closed).
+            if approved and self.mfa_guard.enabled:
+                item = await self.get_item(request_id)
+                action_type = item.action_type if item is not None else ""
+                if self.mfa_guard.is_required(action_type):
+                    mfa = self.mfa_guard.verify(action_type=action_type, code=mfa_code)
+                    if not mfa.allowed:
+                        logger.warning(
+                            "Approval %s DENIED second factor (%s) action_type=%s",
+                            request_id,
+                            mfa.reason,
+                            action_type,
+                        )
+                        raise PermissionError(f"MFA required to approve: {mfa.reason}")
 
             # Update status in store
             status = "approved" if approved else "rejected"

@@ -23,6 +23,7 @@ from fastapi import WebSocket
 
 from ..ingest_api.config import ApprovalQueueConfig
 from ..ingest_api.models import ApprovalQueueItem, ApprovalRequest
+from ..security.mfa_guard import MFAGuard
 
 logger = logging.getLogger("agentshroud.gateway.approval_queue")
 
@@ -37,13 +38,18 @@ class ApprovalQueue:
     - skill_installation
     """
 
-    def __init__(self, config: ApprovalQueueConfig):
+    def __init__(self, config: ApprovalQueueConfig, mfa_guard: MFAGuard | None = None):
         """Initialize approval queue
 
         Args:
             config: Approval queue configuration
+            mfa_guard: Optional MFAGuard for second-factor enforcement on
+                high-risk approvals (IEC 62443 FR1). Defaults to one built from
+                the environment (disabled unless AGENTSHROUD_MFA_ENABLED is set),
+                so existing deployments are unchanged.
         """
         self.config = config
+        self.mfa_guard = mfa_guard if mfa_guard is not None else MFAGuard.from_env()
         self.pending: dict[str, ApprovalQueueItem] = {}
         self.connected_clients: set[WebSocket] = set()
         self._lock = asyncio.Lock()
@@ -59,7 +65,7 @@ class ApprovalQueue:
 
         logger.info(
             f"Approval queue initialized (timeout={config.timeout_seconds}s, "
-            f"enabled={config.enabled})"
+            f"enabled={config.enabled}, mfa={self.mfa_guard.enabled})"
         )
 
     async def submit(self, request: ApprovalRequest) -> ApprovalQueueItem:
@@ -121,13 +127,22 @@ class ApprovalQueue:
 
             return item
 
-    async def decide(self, request_id: str, approved: bool, reason: str = "") -> ApprovalQueueItem:
+    async def decide(
+        self,
+        request_id: str,
+        approved: bool,
+        reason: str = "",
+        mfa_code: str | None = None,
+    ) -> ApprovalQueueItem:
         """Process an approval decision
 
         Args:
             request_id: Request UUID
             approved: Whether to approve or reject
             reason: Optional reason for decision
+            mfa_code: Second-factor (TOTP) code supplied by the owner. Required
+                to APPROVE a high-risk action when MFA is enabled
+                (IEC 62443 FR1). Ignored when rejecting or when MFA is disabled.
 
         Returns:
             Updated ApprovalQueueItem
@@ -135,6 +150,8 @@ class ApprovalQueue:
         Raises:
             KeyError: If request_id not found
             ValueError: If request already decided or expired
+            PermissionError: If MFA is required to approve this action and the
+                second factor is missing / invalid / replayed (fail-closed).
         """
         async with self._lock:
             if request_id not in self.pending:
@@ -151,6 +168,29 @@ class ApprovalQueue:
             if datetime.now(expires_dt.tzinfo) > expires_dt:
                 item.status = "expired"
                 raise ValueError(f"Approval request {request_id} has expired")
+
+            # IEC 62443 FR1 — second factor for high-risk APPROVALS (fail-closed).
+            # Only approvals of high-risk actions are gated; rejections always
+            # proceed so the owner can always decline. Disabled by default.
+            if approved and self.mfa_guard.is_required(item.action_type):
+                mfa = self.mfa_guard.verify(action_type=item.action_type, code=mfa_code)
+                if not mfa.allowed:
+                    logger.warning(
+                        "Approval %s DENIED second factor (%s) for action_type=%s",
+                        request_id,
+                        mfa.reason,
+                        item.action_type,
+                    )
+                    self._append_audit_event(
+                        {
+                            "event": "mfa_denied",
+                            "request_id": request_id,
+                            "action_type": item.action_type,
+                            "agent_id": item.agent_id,
+                            "reason": mfa.reason,
+                        }
+                    )
+                    raise PermissionError(f"MFA required to approve: {mfa.reason}")
 
             # Update status
             item.status = "approved" if approved else "rejected"

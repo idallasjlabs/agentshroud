@@ -563,10 +563,22 @@ secrets:
   hermes_healthchecks_url:
     file: ./secrets/hermes_healthchecks_url.txt
 
-# ── Networks ───────────────────────────────────────────────────────────────────
-# Two networks: internal (internet access) and isolated (no internet)
-# Gateway is on agentshroud-internal + agentshroud-isolated.
-# Bot is on agentshroud-isolated (agent traffic) + agentshroud-console (Control UI port publish).
+# ── Networks (SCRUM-93 · IEC 62443 FR5 — Restricted Data Flow / network DMZ) ─────
+# THREE-TIER SEGMENTATION:
+#   agentshroud-internal  → EDGE tier (internet-facing). Only the GATEWAY joins it.
+#   agentshroud-isolated  → DMZ tier (internal:true, NO internet). Bots (openclaw,
+#                           hermes) live here ONLY; every egress hop is forced
+#                           through gateway:8181 (HTTP_PROXY) and inspected by the
+#                           76-module pipeline. This IS the DMZ that isolates the
+#                           bot containers from direct external network (FR5 SL2).
+#   agentshroud-dmz       → Optional reverse-proxy / edge-broker attachment point
+#                           (see below). Defined but not attached by default so it
+#                           can never alter the gateway's required membership.
+#
+# INVARIANT (do not break): the GATEWAY must remain on BOTH agentshroud-internal
+# AND agentshroud-isolated. It is the sole conduit between the internet-facing
+# edge and the isolated DMZ where the bots run. Removing either membership breaks
+# bot connectivity and collapses the FR5 boundary.
 networks:
   agentshroud-internal:
     driver: bridge
@@ -582,6 +594,17 @@ networks:
         - subnet: 10.254.111.0/24
     driver_opts:
       com.docker.network.bridge.enable_icc: "true"
+  # DMZ tier (IEC 62443 FR5 SL2): dedicated, internet-free segment reserved for a
+  # future edge broker / reverse proxy that fronts the gateway. Declared here so
+  # the topology is explicit and version-controlled, but intentionally NOT wired
+  # to any service in this base file — attaching it is an opt-in override so it
+  # cannot regress the gateway's mandatory internal+isolated dual membership.
+  agentshroud-dmz:
+    driver: bridge
+    internal: true
+    ipam:
+      config:
+        - subnet: 10.254.113.0/24
   agentshroud-console:
     # Retained for backwards compatibility with override files.
     # Canvas port 18789 is now published by the gateway (via canvas auth-proxy),
