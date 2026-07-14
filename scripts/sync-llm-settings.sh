@@ -123,10 +123,20 @@ if [[ "$file_count" -eq 0 ]]; then
 fi
 
 # ── Destinations ─────────────────────────────────────────────────────────────
-declare -a DESTINATIONS=(
-  "${REPO}/docker/config/openclaw"
-  "${REPO}/docker/config/hermes"
-)
+# SKILLGUARD_TEST_DEST_ROOT redirects both bot destinations under a temp dir so
+# tests can exercise the real sync + preflight without touching the repo. It is
+# a test-only hook; production runs leave it unset and sync into docker/config/.
+if [[ -n "${SKILLGUARD_TEST_DEST_ROOT:-}" ]]; then
+  declare -a DESTINATIONS=(
+    "${SKILLGUARD_TEST_DEST_ROOT}/openclaw"
+    "${SKILLGUARD_TEST_DEST_ROOT}/hermes"
+  )
+else
+  declare -a DESTINATIONS=(
+    "${REPO}/docker/config/openclaw"
+    "${REPO}/docker/config/hermes"
+  )
+fi
 
 # ── Header ───────────────────────────────────────────────────────────────────
 copied=0
@@ -140,6 +150,33 @@ echo ""
 echo "  Source      : ${SOURCE}"
 echo "  Destinations: ${#DESTINATIONS[@]}"
 echo "  Dry run     : $([ "$DRY_RUN" -eq 1 ] && echo yes || echo no)"
+echo ""
+
+# ── SkillGuard preflight (SCRUM-97) ──────────────────────────────────────────
+# The HTTP endpoint POST /api/skills/reload gates its copy through SkillGuard.
+# This bash path performs the SAME copy, so it must run the SAME scan BEFORE any
+# file is written — otherwise a malicious skill tree reaches the bots unscanned.
+# A BLOCK verdict (dangerous or unscannable artefact) aborts the sync. The scan
+# runs even under --dry-run so a dry-run of a dangerous tree is reported.
+_python() {
+  if command -v python3 &>/dev/null; then
+    python3 "$@"
+  else
+    python "$@"
+  fi
+}
+
+echo "── SkillGuard preflight scan of ${SOURCE}"
+scan_exit=0
+PYTHONPATH="${REPO}${PYTHONPATH:+:$PYTHONPATH}" _python -m gateway.skills.scan "$SOURCE" \
+  || scan_exit=$?
+if [[ "$scan_exit" -ne 0 ]]; then
+  echo "" >&2
+  echo "ERROR: SkillGuard preflight failed (exit ${scan_exit}) — sync ABORTED." >&2
+  echo "No files were copied. Resolve the findings above before re-running." >&2
+  exit "$scan_exit"
+fi
+echo "   SkillGuard preflight passed."
 echo ""
 
 # ── Per-destination sync ─────────────────────────────────────────────────────

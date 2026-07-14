@@ -13,6 +13,21 @@ inspection* that feeds that decision — it scans a skill/MCP/agent-definition
 payload BEFORE it is trusted, deployed, or loaded, and recommends
 ALLOW / FLAG / BLOCK.
 
+.. warning::
+
+   **Scope and honesty (not security theater).**  These are regex/heuristic
+   signatures.  They catch *naive, unobfuscated* forms of the patterns below
+   (a plaintext ``exec(base64.b64decode(...))``, a literal ``curl … | sh``, a
+   wildcard tool grant).  They do **not** perform data-flow, taint, or AST
+   analysis and are trivially evadable by a determined attacker (string
+   concatenation, indirect ``getattr`` dispatch, novel encodings, runtime
+   assembly, non-Python payloads).  SkillGuard is **best-effort
+   defense-in-depth behind the approval queue** — a fast first-pass filter that
+   surfaces obvious badness for a human deploy decision.  It is **not** a
+   complete supply-chain control and must not be relied on as the only gate.
+   Unscannable artefacts (unreadable or oversized) are treated as untrusted and
+   BLOCKED rather than silently skipped.
+
 Design mirrors ``gateway/proxy/mcp_inspector.py``: an ``Enum`` severity ladder,
 frozen ``Finding`` dataclasses, and a ``ScanResult`` that exposes ``blocked`` and
 the highest severity.  Heuristics are concrete and testable — never a stub that
@@ -211,7 +226,10 @@ _RULES: tuple[_Rule, ...] = (
         "path_traversal",
         Severity.HIGH,
         "path traversal escape sequence (../)",
-        _c(r"(?:\.\./){2,}"),
+        # Match even a single `../` — the earlier `{2,}` missed open('../secrets/key').
+        # ``../`` requires the slash, so dotted names (``a.b.c``, ``from ..pkg``,
+        # ``1.5``) never match: none of them contain the `./` sequence.
+        _c(r"(?:\.\./)+"),
     ),
     _Rule(
         "path_traversal",
@@ -312,8 +330,29 @@ class SkillGuard:
         if not content:
             return result
 
+        # Oversized artefacts cannot be fully scanned, yet deploy copies them in
+        # full — an attacker can hide a payload past the cap.  Unscannable ⇒ not
+        # trusted: emit a BLOCK-level finding.  We still scan the visible prefix
+        # so any obvious badness inside the cap is reported alongside it.
+        oversized = len(content) > self._MAX_SCAN_BYTES
         text = content[: self._MAX_SCAN_BYTES]
         lines = text.splitlines()
+
+        if oversized:
+            result.findings.append(
+                Finding(
+                    category="unscannable",
+                    severity=Severity.CRITICAL,
+                    description=(
+                        f"file exceeds scan cap ({len(content)} > "
+                        f"{self._MAX_SCAN_BYTES} bytes) — cannot be fully inspected, "
+                        "treated as untrusted"
+                    ),
+                    location=name,
+                    pattern="oversized_unscannable",
+                    snippet=f"<{len(content)} bytes>",
+                )
+            )
 
         for rule in self._rules:
             for match in rule.pattern.finditer(text):

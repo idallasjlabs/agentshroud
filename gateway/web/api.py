@@ -947,8 +947,17 @@ def _skills_reload_impl() -> dict:
     for entry in manifest.entries:
         try:
             tree[entry.name] = (source / entry.name).read_text(errors="replace")
-        except OSError as exc:  # unreadable artefact — treat as unscannable, skip file
-            logger.warning("SkillGuard: could not read %s (%s)", entry.name, exc)
+        except OSError as exc:
+            # Fail CLOSED: an artefact we cannot read is unscannable, yet
+            # deploy_manifest would still copy the raw bytes into the running
+            # bot.  An unscannable artefact must NOT deploy — abort the whole
+            # reload rather than silently skipping the file (fail-open bypass).
+            detail = (
+                f"SkillGuard BLOCKED skill deployment: unscannable artefact "
+                f"{entry.name!r} could not be read ({exc}). Nothing was deployed."
+            )
+            logger.error(detail)
+            raise SkillGuardBlocked(detail) from exc
     scan = guard.scan_skill_tree(tree)
     if scan.blocked:
         offenders = sorted({f.location for f in scan.findings})[:10]

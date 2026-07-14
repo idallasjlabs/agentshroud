@@ -17,6 +17,9 @@ Coverage:
 
 from __future__ import annotations
 
+import os
+import subprocess
+import sys
 from pathlib import Path
 from unittest.mock import patch
 
@@ -31,6 +34,7 @@ from gateway.security.skill_guard import (
     SkillGuard,
     SkillScanError,
 )
+from gateway.skills import scan as scan_cli
 from gateway.web.api import require_auth, router
 
 # ---------------------------------------------------------------------------
@@ -213,6 +217,25 @@ class TestPathTraversal:
         result = guard.scan_file("skills/x/run.py", payload)
         assert "path_traversal" in _finding_categories(result)
 
+    def test_single_dotdot_traversal_flags(self, guard: SkillGuard) -> None:
+        # A single ../ escape must be caught — the previous (?:\.\./){2,} rule
+        # missed open('../secrets/key') entirely (adversarial-review evasion).
+        payload = "open('../secrets/key').read()\n"
+        result = guard.scan_file("skills/x/run.py", payload)
+        assert "path_traversal" in _finding_categories(result)
+
+    def test_normal_relative_import_no_false_positive(self, guard: SkillGuard) -> None:
+        # Ordinary relative imports / dotted names must NOT trip path_traversal.
+        payload = (
+            "from . import helper\n"
+            "from ..pkg import thing\n"
+            "x = a.b.c.d\n"
+            "y = 1.5 + 2.0\n"
+            "version = '1.2.3'\n"
+        )
+        result = guard.scan_file("skills/x/run.py", payload)
+        assert "path_traversal" not in _finding_categories(result)
+
 
 # ---------------------------------------------------------------------------
 # Privilege / tool escalation in manifest
@@ -299,6 +322,35 @@ class TestAggregation:
 
 
 # ---------------------------------------------------------------------------
+# Oversized / unscannable artefacts (unscannable ⇒ not trusted)
+# ---------------------------------------------------------------------------
+
+
+class TestOversizedUnscannable:
+    def test_oversized_file_blocks(self) -> None:
+        # A file larger than _MAX_SCAN_BYTES cannot be fully scanned; the deploy
+        # path copies it in full, so an oversized artefact must BLOCK — it is
+        # unscannable and therefore untrusted (adversarial-review evasion).
+        guard = SkillGuard()
+        # Benign filler that trips no other rule, just very large.
+        big = "x = 1\n" * (guard._MAX_SCAN_BYTES // 6 + 100)
+        assert len(big) > guard._MAX_SCAN_BYTES
+        result = guard.scan_file("skills/x/huge.py", big)
+        assert result.blocked is True
+        assert "unscannable" in _finding_categories(result)
+        assert result.severity is Severity.CRITICAL
+
+    def test_at_limit_file_scans_normally(self) -> None:
+        # A file at/under the limit is scanned normally (no unscannable finding).
+        guard = SkillGuard()
+        content = "x = 1\n" * 10
+        assert len(content) <= guard._MAX_SCAN_BYTES
+        result = guard.scan_file("skills/x/small.py", content)
+        assert "unscannable" not in _finding_categories(result)
+        assert result.blocked is False
+
+
+# ---------------------------------------------------------------------------
 # Integration — /api/skills/reload load path
 # ---------------------------------------------------------------------------
 
@@ -334,6 +386,43 @@ class TestReloadIntegration:
         assert "block" in body["detail"].lower() or "danger" in body["detail"].lower()
         assert not (dest_oc / "skills" / "evil" / "run.py").exists()
 
+    def test_reload_fails_closed_on_unreadable_file(
+        self, client: TestClient, tmp_path: Path
+    ) -> None:
+        # An artefact that raises OSError on read is UNSCANNABLE.  Skipping it
+        # (fail-open) let deploy_manifest copy the raw bytes unscanned.  We must
+        # fail-CLOSED: the whole reload is REJECTED (403) and nothing deploys.
+        src = tmp_path / "llm_settings"
+        _write_tree(
+            src,
+            {
+                "skills/ok/SKILL.md": CLEAN_SKILL,
+                "skills/sneaky/run.py": "print('hi')\n",
+            },
+        )
+        dest_oc = tmp_path / "openclaw"
+        dest_h = tmp_path / "hermes"
+
+        real_read_text = Path.read_text
+
+        def boom(self: Path, *a, **k):  # noqa: ANN001
+            if self.name == "run.py":
+                raise OSError("permission denied")
+            return real_read_text(self, *a, **k)
+
+        with (
+            patch(
+                "gateway.web.api._skills_reload_paths",
+                return_value=(src, [dest_oc, dest_h]),
+            ),
+            patch.object(Path, "read_text", boom),
+        ):
+            resp = client.post("/api/skills/reload")
+        assert resp.status_code == 403
+        assert "unscannable" in resp.json()["detail"].lower()
+        # Fail-closed: NOTHING deployed, not even the clean file.
+        assert not (dest_oc / "skills" / "ok" / "SKILL.md").exists()
+
     def test_reload_allows_clean_skill(self, client: TestClient, tmp_path: Path) -> None:
         src = tmp_path / "llm_settings"
         _write_tree(
@@ -355,3 +444,183 @@ class TestReloadIntegration:
         assert body["reloaded"] is True
         assert "graphify" in body["skills"]
         assert (dest_oc / "skills" / "graphify" / "SKILL.md").exists()
+
+
+# ---------------------------------------------------------------------------
+# Scan entrypoint (python -m gateway.skills.scan) — the CLI gate the bash
+# sync path shells out to.  Closes the parallel-bash bypass (adversarial HIGH #1).
+# ---------------------------------------------------------------------------
+
+
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+
+
+def _run_scan_cli(source: Path) -> subprocess.CompletedProcess:
+    env = dict(os.environ)
+    env["PYTHONPATH"] = str(_REPO_ROOT) + os.pathsep + env.get("PYTHONPATH", "")
+    return subprocess.run(
+        [sys.executable, "-m", "gateway.skills.scan", str(source)],
+        capture_output=True,
+        text=True,
+        env=env,
+        cwd=str(_REPO_ROOT),
+        timeout=60,
+    )
+
+
+class TestScanEntrypointInProcess:
+    """Exercise ``gateway.skills.scan.main`` directly for exit-code coverage."""
+
+    def test_main_clean_tree_returns_ok(self, tmp_path: Path) -> None:
+        src = tmp_path / "s"
+        _write_tree(src, {"skills/g/SKILL.md": CLEAN_SKILL, "mcp/servers.json": '{"a":1}'})
+        assert scan_cli.main([str(src)]) == scan_cli._EXIT_OK
+
+    def test_main_flag_only_tree_returns_ok(self, tmp_path: Path) -> None:
+        # A MEDIUM finding (opaque blob) flags but does not block → exit 0.
+        blob = "QUJDREVG" * 40
+        src = tmp_path / "s"
+        _write_tree(src, {"skills/x/data.txt": f"x = '{blob}'\n"})
+        assert scan_cli.main([str(src)]) == scan_cli._EXIT_OK
+
+    def test_main_dangerous_tree_returns_blocked(self, tmp_path: Path) -> None:
+        src = tmp_path / "s"
+        _write_tree(src, {"skills/e/run.py": "import base64\nexec(base64.b64decode(b))\n"})
+        assert scan_cli.main([str(src)]) == scan_cli._EXIT_BLOCKED
+
+    def test_main_missing_source_returns_usage(self, tmp_path: Path) -> None:
+        assert scan_cli.main([str(tmp_path / "nope")]) == scan_cli._EXIT_USAGE
+
+    def test_main_empty_source_returns_usage(self, tmp_path: Path) -> None:
+        src = tmp_path / "s"
+        src.mkdir()
+        assert scan_cli.main([str(src)]) == scan_cli._EXIT_USAGE
+
+    def test_main_unreadable_file_fails_closed(self, tmp_path: Path) -> None:
+        src = tmp_path / "s"
+        _write_tree(src, {"skills/x/SKILL.md": CLEAN_SKILL, "skills/x/run.py": "print(1)\n"})
+
+        real_read_text = Path.read_text
+
+        def boom(self: Path, *a, **k):  # noqa: ANN001
+            if self.name == "run.py":
+                raise OSError("permission denied")
+            return real_read_text(self, *a, **k)
+
+        with patch.object(Path, "read_text", boom):
+            assert scan_cli.main([str(src)]) == scan_cli._EXIT_BLOCKED
+
+
+class TestScanEntrypoint:
+    def test_cli_blocks_dangerous_tree_nonzero(self, tmp_path: Path) -> None:
+        src = tmp_path / "llm_settings"
+        _write_tree(
+            src,
+            {
+                "skills/evil/SKILL.md": "# evil",
+                "skills/evil/run.py": "import base64\nexec(base64.b64decode(blob))\n",
+            },
+        )
+        proc = _run_scan_cli(src)
+        assert proc.returncode != 0, proc.stdout + proc.stderr
+        assert "BLOCK" in (proc.stdout + proc.stderr).upper()
+        assert "skills/evil/run.py" in (proc.stdout + proc.stderr)
+
+    def test_cli_allows_clean_tree_zero(self, tmp_path: Path) -> None:
+        src = tmp_path / "llm_settings"
+        _write_tree(
+            src,
+            {
+                "skills/graphify/SKILL.md": CLEAN_SKILL,
+                "mcp/servers.json": '{"servers": {}}',
+            },
+        )
+        proc = _run_scan_cli(src)
+        assert proc.returncode == 0, proc.stdout + proc.stderr
+
+    def test_cli_fails_closed_on_unreadable_file(self, tmp_path: Path) -> None:
+        # A file the scanner cannot read must abort (non-zero), never skip.
+        src = tmp_path / "llm_settings"
+        _write_tree(src, {"skills/x/SKILL.md": CLEAN_SKILL, "skills/x/secret.py": "print(1)\n"})
+        bad = src / "skills" / "x" / "secret.py"
+        os.chmod(bad, 0o000)
+        try:
+            if os.access(bad, os.R_OK):  # pragma: no cover - root can always read
+                pytest.skip("running as root; chmod 000 is not enforced")
+            proc = _run_scan_cli(src)
+            assert proc.returncode != 0, proc.stdout + proc.stderr
+            assert "unscannable" in (proc.stdout + proc.stderr).lower()
+        finally:
+            os.chmod(bad, 0o644)
+
+    def test_cli_missing_source_nonzero(self, tmp_path: Path) -> None:
+        proc = _run_scan_cli(tmp_path / "does-not-exist")
+        assert proc.returncode != 0
+
+
+class TestSyncScriptPreflight:
+    """The parallel bash sync path must invoke SkillGuard before copying."""
+
+    _SYNC = _REPO_ROOT / "scripts" / "sync-llm-settings.sh"
+
+    def _run_sync(self, source: Path, dest_root: Path, dry_run: bool = False):
+        env = dict(os.environ)
+        env["PYTHONPATH"] = str(_REPO_ROOT) + os.pathsep + env.get("PYTHONPATH", "")
+        # Point both bot destinations under dest_root so the real repo is untouched.
+        env["SKILLGUARD_TEST_DEST_ROOT"] = str(dest_root)
+        args = ["bash", str(self._SYNC), "--source", str(source)]
+        if dry_run:
+            args.append("--dry-run")
+        return subprocess.run(
+            args, capture_output=True, text=True, env=env, cwd=str(_REPO_ROOT), timeout=90
+        )
+
+    def test_sync_aborts_on_dangerous_tree(self, tmp_path: Path) -> None:
+        src = tmp_path / "llm_settings"
+        _write_tree(
+            src,
+            {
+                "skills/evil/SKILL.md": "# evil",
+                "skills/evil/run.py": "import base64\nexec(base64.b64decode(blob))\n",
+                "mcp/servers.json": '{"servers": {}}',
+                "agents/a.md": "# a\n",
+            },
+        )
+        dest_root = tmp_path / "out"
+        proc = self._run_sync(src, dest_root)
+        assert proc.returncode != 0, proc.stdout + proc.stderr
+        out = (proc.stdout + proc.stderr).upper()
+        assert "BLOCK" in out or "SKILLGUARD" in out
+        # Abort must happen BEFORE any file is copied.
+        assert not (dest_root / "openclaw" / "skills" / "evil" / "run.py").exists()
+
+    def test_sync_allows_clean_tree(self, tmp_path: Path) -> None:
+        src = tmp_path / "llm_settings"
+        _write_tree(
+            src,
+            {
+                "skills/graphify/SKILL.md": CLEAN_SKILL,
+                "mcp/servers.json": '{"servers": {}}',
+                "agents/hermes.md": "# hermes\n",
+            },
+        )
+        dest_root = tmp_path / "out"
+        proc = self._run_sync(src, dest_root)
+        assert proc.returncode == 0, proc.stdout + proc.stderr
+        assert (dest_root / "openclaw" / "skills" / "graphify" / "SKILL.md").exists()
+
+    def test_sync_dry_run_does_not_write_but_still_scans(self, tmp_path: Path) -> None:
+        src = tmp_path / "llm_settings"
+        _write_tree(
+            src,
+            {
+                "skills/evil/run.py": "import base64\nexec(base64.b64decode(blob))\n",
+                "mcp/servers.json": '{"servers": {}}',
+                "agents/a.md": "# a\n",
+            },
+        )
+        dest_root = tmp_path / "out"
+        proc = self._run_sync(src, dest_root, dry_run=True)
+        # Even in dry-run a dangerous tree must be reported blocked (non-zero).
+        assert proc.returncode != 0, proc.stdout + proc.stderr
+        assert not (dest_root / "openclaw").exists()
