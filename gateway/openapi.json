@@ -5940,7 +5940,7 @@
     },
     "/soc/v1/agent-cves": {
       "get": {
-        "description": "Return the CVE registry for the wrapped AI agent.\n\nWhen bot_id is provided, returns CVE data scoped to that bot.\nCurrently OpenClaw (\"openclaw\") is the only registered agent; unknown bot_id\nvalues return {\"error\": \"unknown bot_id: <id>\"}.\n\nEach entry includes CVE metadata, CVSS score, and AgentShroud mitigation status\n(fully_mitigated / partially_mitigated / not_mitigated) with defense layer details.\nPowers the SOC CVE Intelligence page.",
+        "description": "Return the tracked advisory registry for the wrapped AI agent.\n\nWhen bot_id is provided, returns advisory data scoped to that bot. Unknown\nbot_id values return {\"error\": \"unknown bot_id: <id>\"}.\n\nCounts are honest: the response reports ``advisories_tracked`` (not \"CVEs\")\nplus ``ghsa_matched`` / ``cve_matched`` / ``pending_review``. Each entry\ncarries a synthetic AgentShroud ``id`` (``ASH-OCLAW-NNN`` / ``ASH-HERMES-NNN``)\nand, when a real upstream match is verified, a ``ghsa_id`` and/or ``cve_id``\n(``None`` otherwise). ``total_cves`` is retained as a backward-compatible\nalias of ``advisories_tracked``. Entries also include CVSS score and the\nAgentShroud mitigation status (fully_mitigated / partially_mitigated /\nnot_mitigated) with defense-layer details. Powers the SOC CVE Intelligence\npage.",
         "operationId": "get_agent_cves_soc_v1_agent_cves_get",
         "parameters": [
           {
