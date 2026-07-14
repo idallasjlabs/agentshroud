@@ -11,9 +11,8 @@ from unittest.mock import MagicMock, patch
 import pytest
 from fastapi.testclient import TestClient
 
-from gateway.ingest_api.main import _is_op_reference_allowed
+from gateway.ingest_api.main import _is_op_reference_allowed, auth_dep
 from gateway.ingest_api.main import app as gateway_app
-from gateway.ingest_api.main import auth_dep
 
 # ============================================================
 # Unit tests for reference validation helpers
@@ -43,6 +42,13 @@ class TestIsOpReferenceAllowed:
             )
             is True
         )
+
+    def test_atlassian_token_allowed(self):
+        """SCRUM-81: Hermes weekly Jira review needs token/email/domain fields."""
+        base = "op://Agent Shroud Bot Credentials/AgentShroud -Atlassian API Token"
+        assert _is_op_reference_allowed(f"{base}/token") is True
+        assert _is_op_reference_allowed(f"{base}/email") is True
+        assert _is_op_reference_allowed(f"{base}/domain") is True
 
     def test_disallowed_vault_blocked(self):
         assert _is_op_reference_allowed("op://Personal/Logins/bank") is False

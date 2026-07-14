@@ -99,6 +99,9 @@ _ALLOWED_OP_PATHS: list[str] = [
     "op://Agent Shroud Bot Credentials/Brave Search API Key/*",
     "op://Agent Shroud Bot Credentials/Gateway Password/*",
     "op://Agent Shroud Bot Credentials/AgentShroud - Google/*",
+    # SCRUM-81: Atlassian API token for Hermes' weekly Jira review cron
+    # (jira_weekly_review.py fetches token/email/domain to keep the account non-idle).
+    "op://Agent Shroud Bot Credentials/AgentShroud -Atlassian API Token/*",
 ]
 
 
