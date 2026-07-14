@@ -67,6 +67,18 @@ DEFAULT_HIGH_RISK_ACTIONS: frozenset[str] = frozenset(
     }
 )
 
+# ---------------------------------------------------------------------------
+# The DOMINANT production high-risk channel is the MCP tool-call approval path.
+# ``EnhancedApprovalQueue.submit_tool_request`` enqueues those with
+# ``action_type = f"tool_call_{tier}"`` (enhanced_queue.py:176,196), driven by
+# the MCP policy engine. A ``tool_call_<tier>`` whose tier is high/critical is
+# high-risk and requires a second factor — otherwise a destructive high/critical
+# tool call would be approved with NO MFA (the SCRUM-93 fail-open). Named actions
+# above are matched exactly; tool-call actions are matched by their tier suffix.
+# ---------------------------------------------------------------------------
+_TOOL_CALL_PREFIX = "tool_call_"
+HIGH_RISK_TOOL_CALL_TIERS: frozenset[str] = frozenset({"high", "critical"})
+
 
 @dataclass(frozen=True)
 class MFAResult:
@@ -172,8 +184,27 @@ class MFAGuard:
     # ------------------------------------------------------------------
 
     def is_required(self, action_type: str) -> bool:
-        """Return True if ``action_type`` requires a second factor right now."""
-        return self.enabled and (action_type or "").lower().strip() in self._high_risk
+        """Return True if ``action_type`` requires a second factor right now.
+
+        Two classes of high-risk action are recognized (both gated only when
+        MFA is enabled):
+
+          1. Named actions in the configured high-risk set (exact match), e.g.
+             ``email_sending`` / ``file_deletion``.
+          2. MCP tool-call approvals of the form ``tool_call_<tier>`` where the
+             tier is high/critical — the dominant production channel. The tier
+             is parsed from the suffix so future tiers stay covered by editing
+             ``HIGH_RISK_TOOL_CALL_TIERS`` rather than enumerating strings.
+        """
+        if not self.enabled:
+            return False
+        normalized = (action_type or "").lower().strip()
+        if normalized in self._high_risk:
+            return True
+        if normalized.startswith(_TOOL_CALL_PREFIX):
+            tier = normalized[len(_TOOL_CALL_PREFIX) :]
+            return tier in HIGH_RISK_TOOL_CALL_TIERS
+        return False
 
     def verify(
         self,

@@ -350,17 +350,32 @@ class EnhancedApprovalQueue:
                 raise KeyError(f"Approval request {request_id} not found or already decided")
 
             # IEC 62443 FR1 — second factor for high-risk APPROVALS (fail-closed).
-            if approved and self.mfa_guard.enabled:
+            # Aligned with the base queue: a single is_required() check gates
+            # (is_required already short-circuits when MFA is disabled).
+            if approved:
                 item = await self.get_item(request_id)
-                action_type = item.action_type if item is not None else ""
-                if self.mfa_guard.is_required(action_type):
-                    mfa = self.mfa_guard.verify(action_type=action_type, code=mfa_code)
+                if item is None:
+                    # The pending future exists but the item is missing from the
+                    # store (e.g. a store race). We cannot classify the action's
+                    # risk, so FAIL CLOSED rather than degrade to action_type ""
+                    # and skip MFA — but only when MFA could actually gate it.
+                    if self.mfa_guard.enabled:
+                        logger.error(
+                            "Approval %s: item missing on approve with MFA enabled — "
+                            "failing closed",
+                            request_id,
+                        )
+                        raise PermissionError(
+                            "MFA required to approve: approval item unavailable (fail-closed)"
+                        )
+                elif self.mfa_guard.is_required(item.action_type):
+                    mfa = self.mfa_guard.verify(action_type=item.action_type, code=mfa_code)
                     if not mfa.allowed:
                         logger.warning(
                             "Approval %s DENIED second factor (%s) action_type=%s",
                             request_id,
                             mfa.reason,
-                            action_type,
+                            item.action_type,
                         )
                         raise PermissionError(f"MFA required to approve: {mfa.reason}")
 

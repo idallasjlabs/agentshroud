@@ -441,3 +441,131 @@ async def test_enhanced_decide_reject_no_mfa(enhanced_mfa_queue):
     rid = await _submit_enhanced_high_risk(enhanced_mfa_queue)
     item = await enhanced_mfa_queue.decide(rid, approved=False, reason="no")
     assert item.status == "rejected"
+
+
+# ===========================================================================
+# Regression: the PRODUCTION high-risk channel is `tool_call_<tier>`.
+#
+# EnhancedApprovalQueue.submit_tool_request(...) enqueues MCP tool-call
+# approvals with action_type=f"tool_call_{tier}" (enhanced_queue.py:176,196,
+# driven by mcp_policy.py). Prior to the SCRUM-93 fix, MFAGuard.is_required()
+# only matched the named DEFAULT_HIGH_RISK_ACTIONS set, so `tool_call_high` /
+# `tool_call_critical` returned False and a destructive MCP tool call was
+# APPROVED with NO second factor even when MFA was enabled (HIGH fail-open).
+# These tests FAIL on the pre-fix code and PASS after.
+# ===========================================================================
+
+
+async def _submit_tool_call(q: EnhancedApprovalQueue, tier: str) -> str:
+    """Submit via the real tool-call path -> action_type == f'tool_call_{tier}'."""
+    request_id, requires_wait = await q.submit_tool_request(
+        tool_name="exec",
+        parameters={"cmd": "rm -rf /"},
+        agent_id="agent-1",
+        force_tier=tier,
+    )
+    assert requires_wait is True
+    return request_id
+
+
+@pytest.mark.asyncio
+async def test_enhanced_tool_call_high_blocked_without_mfa(enhanced_mfa_queue):
+    # HIGH fail-open regression: a high-tier MCP tool call must be BLOCKED
+    # without a valid second factor when MFA is enabled.
+    rid = await _submit_tool_call(enhanced_mfa_queue, "high")
+    item = await enhanced_mfa_queue.get_item(rid)
+    assert item.action_type == "tool_call_high"
+    with pytest.raises(PermissionError):
+        await enhanced_mfa_queue.decide(rid, approved=True)
+    still = await enhanced_mfa_queue.get_item(rid)
+    assert still.status == "pending"
+
+
+@pytest.mark.asyncio
+async def test_enhanced_tool_call_high_allowed_with_mfa(enhanced_mfa_queue):
+    rid = await _submit_tool_call(enhanced_mfa_queue, "high")
+    code = _ref_totp(_SECRET_B32, int(time.time()))
+    item = await enhanced_mfa_queue.decide(rid, approved=True, mfa_code=code)
+    assert item.status == "approved"
+
+
+@pytest.mark.asyncio
+async def test_enhanced_tool_call_critical_blocked_without_mfa(enhanced_mfa_queue):
+    rid = await _submit_tool_call(enhanced_mfa_queue, "critical")
+    item = await enhanced_mfa_queue.get_item(rid)
+    assert item.action_type == "tool_call_critical"
+    with pytest.raises(PermissionError):
+        await enhanced_mfa_queue.decide(rid, approved=True, mfa_code="000000")
+    still = await enhanced_mfa_queue.get_item(rid)
+    assert still.status == "pending"
+
+
+@pytest.mark.asyncio
+async def test_enhanced_tool_call_critical_allowed_with_mfa(enhanced_mfa_queue):
+    rid = await _submit_tool_call(enhanced_mfa_queue, "critical")
+    code = _ref_totp(_SECRET_B32, int(time.time()))
+    item = await enhanced_mfa_queue.decide(rid, approved=True, mfa_code=code)
+    assert item.status == "approved"
+
+
+@pytest.mark.asyncio
+async def test_enhanced_tool_call_medium_not_gated(enhanced_mfa_queue):
+    # Only high/critical tiers are second-factor gated. A medium-tier tool-call
+    # action_type must NOT require a code (boundary check). Submitted directly
+    # because the medium tier policy does not itself require approval.
+    item = await enhanced_mfa_queue.submit(
+        ApprovalRequest(
+            action_type="tool_call_medium",
+            description="Execute medium-tier tool: grep",
+            details={"tool_name": "grep", "risk_tier": "medium"},
+            agent_id="agent-1",
+        )
+    )
+    decided = await enhanced_mfa_queue.decide(item.request_id, approved=True)
+    assert decided.status == "approved"
+
+
+@pytest.mark.asyncio
+async def test_enhanced_decide_missing_item_fail_closed(enhanced_mfa_queue, monkeypatch):
+    # LOW edge: if the item is missing on an approved+MFA-enabled decision, the
+    # gate must FAIL CLOSED (raise PermissionError), never degrade to action_type
+    # "" and skip MFA. Simulate a store race where get_item returns None but the
+    # pending future still exists.
+    rid = await _submit_tool_call(enhanced_mfa_queue, "high")
+
+    async def _none(_request_id):
+        return None
+
+    monkeypatch.setattr(enhanced_mfa_queue, "get_item", _none)
+    with pytest.raises(PermissionError):
+        await enhanced_mfa_queue.decide(rid, approved=True, mfa_code="000000")
+
+
+# ---------------------------------------------------------------------------
+# Unit: is_required() tier parsing
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    "action_type,expected",
+    [
+        ("tool_call_high", True),
+        ("tool_call_critical", True),
+        ("TOOL_CALL_HIGH", True),
+        ("  tool_call_critical  ", True),
+        ("tool_call_medium", False),
+        ("tool_call_low", False),
+        ("tool_call_", False),
+        ("tool_call_unknown", False),
+        ("email_sending", True),
+        ("status_read", False),
+    ],
+)
+def test_is_required_tool_call_tier_parsing(action_type, expected):
+    guard = MFAGuard(secret_b32=_SECRET_B32, enabled=True)
+    assert guard.is_required(action_type) is expected
+
+
+def test_is_required_tool_call_disabled_never_required():
+    guard = MFAGuard(secret_b32=_SECRET_B32, enabled=False)
+    assert guard.is_required("tool_call_critical") is False
