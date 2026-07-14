@@ -45,6 +45,13 @@
             "title": "Approved",
             "type": "boolean"
           },
+          "mfa_code": {
+            "default": "",
+            "description": "Second-factor TOTP code. Required to APPROVE a high-risk action when MFA is enabled (IEC 62443 FR1). Ignored otherwise.",
+            "maxLength": 16,
+            "title": "Mfa Code",
+            "type": "string"
+          },
           "reason": {
             "default": "",
             "description": "Optional reason for decision",

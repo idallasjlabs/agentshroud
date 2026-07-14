@@ -185,6 +185,75 @@ Omitting profiles starts gateway + OpenClaw only (original default).
 
 ---
 
+## Network DMZ — IEC 62443 FR5 (Restricted Data Flow) · SCRUM-93
+
+AgentShroud segments its containers into tiers so that a compromised bot cannot
+reach the internet or the host directly. This is the network-topology half of
+SCRUM-93 (the gateway-logic half is MFA for high-risk approvals — see
+`MFAGuard`).
+
+**Tier model (defined in `docker/docker-compose.yml` → `networks:`):**
+
+| Tier | Docker network | `internal` | Members | Purpose |
+|------|----------------|-----------|---------|---------|
+| Edge | `agentshroud-internal` (10.254.110.0/24) | `false` | **gateway only** | Internet-facing side; egress + host port publishing |
+| DMZ (bots) | `agentshroud-isolated` (10.254.111.0/24) | `true` | gateway, openclaw, hermes | No internet; every egress hop forced through `gateway:8181` and inspected by the 76-module pipeline |
+| DMZ (edge broker, opt-in) | `agentshroud-dmz` (10.254.113.0/24) | `true` | *(none by default)* | Reserved attachment point for a future reverse proxy / edge broker fronting the gateway |
+
+**Why this is a DMZ:** the bot containers (`openclaw`, `hermes`) join
+`agentshroud-isolated` **only**. That network is `internal: true`, so Docker
+installs no default route to the internet — the bots physically cannot open an
+outbound connection except to the gateway. The gateway is the sole conduit
+between the internet-facing edge (`agentshroud-internal`) and the isolated DMZ,
+so all bot traffic transits the security pipeline (PromptGuard, EgressFilter,
+approval queue, etc.).
+
+**Invariant — do NOT break:** the **gateway must stay on BOTH
+`agentshroud-internal` AND `agentshroud-isolated`.** It is the only bridge
+across the DMZ boundary; removing either membership breaks bot connectivity and
+collapses FR5 isolation. The new `agentshroud-dmz` network is declared but
+**intentionally left unattached** in the base compose file — attaching an edge
+broker to it is an opt-in override, precisely so it can never regress the
+gateway's mandatory dual membership.
+
+**Verify the boundary:**
+
+```bash
+# Gateway is on both edge + DMZ networks (must show internal AND isolated):
+docker inspect -f '{{range $k,$_ := .NetworkSettings.Networks}}{{$k}} {{end}}' agentshroud-gateway
+
+# Bots are on the isolated DMZ ONLY (should NOT list agentshroud-internal):
+docker inspect -f '{{range $k,$_ := .NetworkSettings.Networks}}{{$k}} {{end}}' agentshroud-openclaw
+
+# The isolated network has no internet route (internal: true):
+docker network inspect agentshroud_agentshroud-isolated -f '{{.Internal}}'   # → true
+```
+
+---
+
+## MFA for High-Risk Approvals — IEC 62443 FR1 · SCRUM-93
+
+Second factor (TOTP, RFC 6238) required to **approve** a high-risk queued action
+(`email_sending`, `imessage_sending`, `file_deletion`, `external_api_calls`,
+`skill_installation`, and destructive admin ops). Enforced at the approval-queue
+`decide()` chokepoint by `gateway/security/mfa_guard.py::MFAGuard` — **fail-closed**
+(missing/invalid/replayed code → approval denied). **Disabled by default**;
+existing deployments are unchanged until an operator opts in.
+
+| Env var | Meaning |
+|---------|---------|
+| `AGENTSHROUD_MFA_ENABLED` | `true`/`1`/`yes`/`on` to require a second factor |
+| `AGENTSHROUD_MFA_SECRET` | Base32 TOTP shared secret (inline) — prefer the file form |
+| `AGENTSHROUD_MFA_SECRET_FILE` | Path to a Docker-secret file holding the base32 secret (takes precedence) |
+| `AGENTSHROUD_MFA_WINDOW` | Clock-skew tolerance in ±time-steps (default `1`) |
+
+Provision the secret via Docker secrets — **never commit it**. Rejections never
+require MFA, so the owner can always decline an action. The REST decide endpoint
+returns HTTP `403` when the factor is missing/invalid; the approvals WebSocket
+replies `{"type":"mfa_required"}`.
+
+---
+
 ## Security Features (Deferred to Phase 5+)
 
 These are planned but not yet implemented (Phase 3 has no skills, no external content):

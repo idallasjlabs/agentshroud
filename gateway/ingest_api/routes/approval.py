@@ -74,7 +74,10 @@ async def decide_approval(
     """
     try:
         item = await app_state.approval_queue.decide(
-            request_id=request_id, approved=decision.approved, reason=decision.reason
+            request_id=request_id,
+            approved=decision.approved,
+            reason=decision.reason,
+            mfa_code=decision.mfa_code or None,
         )
         await app_state.event_bus.emit(
             make_event(
@@ -87,6 +90,18 @@ async def decide_approval(
 
     except KeyError:
         raise HTTPException(status_code=404, detail="Approval request not found")
+
+    except PermissionError as exc:
+        # IEC 62443 FR1 — second factor missing/invalid for a high-risk approval.
+        await app_state.event_bus.emit(
+            make_event(
+                "approval_mfa_denied",
+                f"MFA required to approve: {request_id}",
+                {"request_id": request_id},
+                "warning",
+            )
+        )
+        raise HTTPException(status_code=403, detail=str(exc))
 
     except ValueError:
         raise HTTPException(status_code=409, detail="Conflict: approval state changed")
@@ -151,6 +166,7 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
                         request_id=request_id,
                         approved=approved,
                         reason=message.get("reason", ""),
+                        mfa_code=message.get("mfa_code") or None,
                     )
 
                     await websocket.send_json(
@@ -162,6 +178,10 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
                             },
                         }
                     )
+
+                except PermissionError as exc:
+                    # IEC 62443 FR1 — second factor required for high-risk approval.
+                    await websocket.send_json({"type": "mfa_required", "message": str(exc)})
 
                 except (KeyError, ValueError):
                     await websocket.send_json({"type": "error", "message": "Invalid request"})

@@ -92,6 +92,14 @@ class ApprovalDecision(BaseModel):
     request_id: str = Field(..., max_length=100, description="ID of the approval request")
     approved: bool = Field(..., description="Whether to approve or reject")
     reason: str = Field(default="", max_length=2_000, description="Optional reason for decision")
+    mfa_code: str = Field(
+        default="",
+        max_length=16,
+        description=(
+            "Second-factor TOTP code. Required to APPROVE a high-risk action when "
+            "MFA is enabled (IEC 62443 FR1). Ignored otherwise."
+        ),
+    )
 
 
 # === Response Models ===
