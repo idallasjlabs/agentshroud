@@ -401,6 +401,9 @@ services:
       AGENTSHROUD_MODEL_MODE: ${AGENTSHROUD_MODEL_MODE:-cloud}
       AGENTSHROUD_LOCAL_MODEL_REF: ${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}
       AGENTSHROUD_LOCAL_MODEL: ${AGENTSHROUD_LOCAL_MODEL:-qwen3:14b}
+      # Cloud ref is the cloud-mode fallback for resolve_model.py (SCRUM-70 WS-C)
+      # when HERMES_MAIN_MODEL is unset — keeps Hermes on a valid cloud model.
+      AGENTSHROUD_CLOUD_MODEL_REF: ${AGENTSHROUD_CLOUD_MODEL_REF:-anthropic/claude-opus-4-6}
       HERMES_MAIN_MODEL: ${HERMES_MAIN_MODEL:-}
       # Owner-only allow-list for v1.1.0 launch. Add collaborators after smoke tests pass.
       TELEGRAM_ALLOWED_USERS: "8096968754"
