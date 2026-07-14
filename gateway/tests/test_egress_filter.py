@@ -640,9 +640,7 @@ class TestOpenClawResearchDomainsAllowlisted:
         """None of the four domains should match the default denylist."""
         cfg = EgressFilterConfig()
         for domain in self.EXPECTED_ALLOWED:
-            assert not cfg.is_denylisted(domain), (
-                f"{domain!r} is unexpectedly on the denylist"
-            )
+            assert not cfg.is_denylisted(domain), f"{domain!r} is unexpectedly on the denylist"
 
     def test_egress_filter_allows_in_enforce_mode(self):
         """EgressFilter in enforce mode allows all four domains for openclaw."""

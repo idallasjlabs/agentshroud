@@ -109,9 +109,9 @@ class TestGroupApprovalOwnerDM:
         await router.route_approval(request, group_chat_id=GROUP_A_CHAT_ID)
 
         owner_dms = [m for m in sent if m["chat_id"] == OWNER_ID]
-        assert any(GROUP_A_CHAT_ID in m["text"] for m in owner_dms), (
-            f"Owner DM must reference the group chat_id {GROUP_A_CHAT_ID}"
-        )
+        assert any(
+            GROUP_A_CHAT_ID in m["text"] for m in owner_dms
+        ), f"Owner DM must reference the group chat_id {GROUP_A_CHAT_ID}"
 
     @pytest.mark.asyncio
     async def test_group_chat_receives_thread_reply(self, router_with_sent):
@@ -160,9 +160,9 @@ class TestGroupApprovalOwnerDM:
         await router.route_approval(request, group_chat_id=GROUP_A_CHAT_ID)
 
         owner_dms = [m for m in sent if m["chat_id"] == OWNER_ID]
-        assert any("external_api_calls" in m["text"] for m in owner_dms), (
-            "Owner DM must describe the action type"
-        )
+        assert any(
+            "external_api_calls" in m["text"] for m in owner_dms
+        ), "Owner DM must describe the action type"
 
 
 # ---------------------------------------------------------------------------

@@ -115,7 +115,9 @@ class SSHProxy:
             return False, "cwd contains disallowed characters"
         return True, "OK"
 
-    async def execute(self, host_name: str, command: str, timeout: int | None = None, cwd: str | None = None) -> SSHResult:
+    async def execute(
+        self, host_name: str, command: str, timeout: int | None = None, cwd: str | None = None
+    ) -> SSHResult:
         """Execute a command on a remote host via SSH."""
         if host_name not in self.config.hosts:
             raise ValueError(f"Unknown host: {host_name}")

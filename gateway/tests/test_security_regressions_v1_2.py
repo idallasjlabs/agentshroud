@@ -76,16 +76,14 @@ class TestBotIdIsolationInSharedMemory:
         sess_openclaw = session_manager.get_or_create_session(user_id, bot_id="openclaw")
         sess_hermes = session_manager.get_or_create_session(user_id, bot_id="hermes")
 
-        assert sess_openclaw.workspace_dir != sess_hermes.workspace_dir, (
-            "OpenClaw and Hermes workspaces MUST NOT share the same directory"
-        )
-        assert sess_openclaw.memory_file != sess_hermes.memory_file, (
-            "OpenClaw and Hermes MEMORY.md files MUST NOT be the same path"
-        )
+        assert (
+            sess_openclaw.workspace_dir != sess_hermes.workspace_dir
+        ), "OpenClaw and Hermes workspaces MUST NOT share the same directory"
+        assert (
+            sess_openclaw.memory_file != sess_hermes.memory_file
+        ), "OpenClaw and Hermes MEMORY.md files MUST NOT be the same path"
 
-    def test_openclaw_memory_write_does_not_appear_in_hermes_memory(
-        self, smm, session_manager
-    ):
+    def test_openclaw_memory_write_does_not_appear_in_hermes_memory(self, smm, session_manager):
         """BT-H4: Writing to the openclaw workspace must not leak into the hermes workspace.
 
         Regression for cross-bot memory read via get_user_memory defaulting to openclaw.
@@ -101,13 +99,11 @@ class TestBotIdIsolationInSharedMemory:
             sess_h.memory_file.read_text(encoding="utf-8") if sess_h.memory_file.exists() else ""
         )
 
-        assert "OPENCLAW_SECRET_CANARY_VALUE" not in hermes_content, (
-            "OpenClaw memory content MUST NOT appear in Hermes memory for the same user"
-        )
+        assert (
+            "OPENCLAW_SECRET_CANARY_VALUE" not in hermes_content
+        ), "OpenClaw memory content MUST NOT appear in Hermes memory for the same user"
 
-    def test_hermes_memory_write_does_not_appear_in_openclaw_memory(
-        self, smm, session_manager
-    ):
+    def test_hermes_memory_write_does_not_appear_in_openclaw_memory(self, smm, session_manager):
         """BT-H4 (reverse): Writing to Hermes workspace does not bleed into OpenClaw."""
         user_id = "user888"
         sess_h = session_manager.get_or_create_session(user_id, bot_id="hermes")
@@ -118,9 +114,9 @@ class TestBotIdIsolationInSharedMemory:
             sess_oc.memory_file.read_text(encoding="utf-8") if sess_oc.memory_file.exists() else ""
         )
 
-        assert "HERMES_SECRET_CANARY_VALUE" not in oc_content, (
-            "Hermes memory content MUST NOT appear in OpenClaw memory for the same user"
-        )
+        assert (
+            "HERMES_SECRET_CANARY_VALUE" not in oc_content
+        ), "Hermes memory content MUST NOT appear in OpenClaw memory for the same user"
 
     def test_shared_memory_manager_get_user_memory_accepts_bot_id(self, smm, session_manager):
         """BT-H1: SharedMemoryManager.get_user_memory must accept a bot_id parameter.
@@ -258,9 +254,9 @@ class TestCrossBotTrustPivot:
         clone_level, clone_score = clone_trust
         bot_level, bot_score = trust_info
 
-        assert clone_score < bot_score, (
-            "RT-N2: A newly registered agent must start with lower trust than an established bot"
-        )
+        assert (
+            clone_score < bot_score
+        ), "RT-N2: A newly registered agent must start with lower trust than an established bot"
 
 
 # ---------------------------------------------------------------------------
@@ -288,12 +284,12 @@ class TestHermesTrustSeeding:
         hermes_trust = trust_manager.get_trust("hermes")
         assert hermes_trust is not None
         hermes_level, hermes_score = hermes_trust
-        assert hermes_level >= TrustLevel.STANDARD, (
-            f"RT-N3: Hermes trust level after seeding is {hermes_level}, expected >= STANDARD"
-        )
-        assert hermes_score >= 150.0, (
-            f"RT-N3: Hermes trust score after seeding is {hermes_score}, expected >= 150"
-        )
+        assert (
+            hermes_level >= TrustLevel.STANDARD
+        ), f"RT-N3: Hermes trust level after seeding is {hermes_level}, expected >= STANDARD"
+        assert (
+            hermes_score >= 150.0
+        ), f"RT-N3: Hermes trust score after seeding is {hermes_score}, expected >= 150"
 
 
 # ---------------------------------------------------------------------------
@@ -318,9 +314,7 @@ class TestHermesDashboardForwarderBinding:
         """BT-M1: Verify the forwarder bind address — currently 0.0.0.0 (accepted risk)."""
         import re
 
-        lifespan_path = (
-            Path(__file__).parent.parent / "ingest_api" / "lifespan.py"
-        )
+        lifespan_path = Path(__file__).parent.parent / "ingest_api" / "lifespan.py"
         source = lifespan_path.read_text(encoding="utf-8")
 
         # Find the start_server call in the Hermes dashboard forwarder
@@ -418,12 +412,12 @@ class TestSessionPathSeparation:
         sess_oc = session_manager.get_or_create_session("user42", bot_id="openclaw")
         sess_h = session_manager.get_or_create_session("user42", bot_id="hermes")
 
-        assert "openclaw" in str(sess_oc.workspace_dir), (
-            "openclaw session workspace path does not contain 'openclaw'"
-        )
-        assert "hermes" in str(sess_h.workspace_dir), (
-            "hermes session workspace path does not contain 'hermes'"
-        )
+        assert "openclaw" in str(
+            sess_oc.workspace_dir
+        ), "openclaw session workspace path does not contain 'openclaw'"
+        assert "hermes" in str(
+            sess_h.workspace_dir
+        ), "hermes session workspace path does not contain 'hermes'"
 
     def test_path_traversal_rejected_for_crafted_bot_id(self, session_manager):
         """Session manager must reject bot_id with path traversal characters."""

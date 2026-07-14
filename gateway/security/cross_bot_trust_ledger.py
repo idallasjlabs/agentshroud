@@ -97,9 +97,7 @@ class TrustDecayPolicy:
 
     def __post_init__(self) -> None:
         if not (0.0 < self.decay_fraction <= 1.0):
-            raise ValueError(
-                f"decay_fraction must be in (0, 1]; got {self.decay_fraction}"
-            )
+            raise ValueError(f"decay_fraction must be in (0, 1]; got {self.decay_fraction}")
         if self.max_propagation_depth < 1:
             raise ValueError(
                 f"max_propagation_depth must be >= 1; got {self.max_propagation_depth}"
@@ -166,9 +164,7 @@ class CrossBotTrustLedger:
     # Registration
     # ------------------------------------------------------------------
 
-    def register_peer(
-        self, bot_a: str, bot_b: str, bidirectional: bool = True
-    ) -> None:
+    def register_peer(self, bot_a: str, bot_b: str, bidirectional: bool = True) -> None:
         """Register bot_b as a peer of bot_a.
 
         Args:

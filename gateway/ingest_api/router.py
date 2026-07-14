@@ -102,8 +102,12 @@ class MultiAgentRouter:
                 api_key=api_key,
             )
             self.targets[bot_id] = target
-            logger.info("Router: registered bot target '%s' → %s (api_key=%s)",
-                        bot_id, bot.base_url, "set" if api_key else "absent")
+            logger.info(
+                "Router: registered bot target '%s' → %s (api_key=%s)",
+                bot_id,
+                bot.base_url,
+                "set" if api_key else "absent",
+            )
 
         logger.info("Router: %d bot target(s) registered", len(self.targets))
 

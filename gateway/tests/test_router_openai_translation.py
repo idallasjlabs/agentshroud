@@ -54,9 +54,7 @@ async def test_openai_target_sends_messages_body(router, monkeypatch):
     async def mock_post(self, url, json=None, **kwargs):
         captured["url"] = url
         captured["json"] = json
-        return _mock_response(
-            {"choices": [{"message": {"content": "Hello from Hermes"}}]}
-        )
+        return _mock_response({"choices": [{"message": {"content": "Hello from Hermes"}}]})
 
     monkeypatch.setattr(httpx.AsyncClient, "post", mock_post)
 
@@ -83,9 +81,9 @@ async def test_openai_target_sends_messages_body(router, monkeypatch):
     sys_msg = messages[0]
     assert sys_msg["role"] == "system"
     # The content should contain a date pattern (e.g. "Monday, June 23, 2026")
-    assert re.search(r"\w+, \w+ \d{1,2}, \d{4}", sys_msg["content"]), (
-        f"System message should contain a date: {sys_msg['content']}"
-    )
+    assert re.search(
+        r"\w+, \w+ \d{1,2}, \d{4}", sys_msg["content"]
+    ), f"System message should contain a date: {sys_msg['content']}"
     assert "current date and time" in sys_msg["content"].lower()
 
     # Second message must be the user content
@@ -103,9 +101,7 @@ async def test_openai_target_returns_content_string(router, monkeypatch):
     """forward_to_agent extracts choices[0].message.content and returns a string."""
 
     async def mock_post(self, url, json=None, **kwargs):
-        return _mock_response(
-            {"choices": [{"message": {"content": "Hello from Hermes"}}]}
-        )
+        return _mock_response({"choices": [{"message": {"content": "Hello from Hermes"}}]})
 
     monkeypatch.setattr(httpx.AsyncClient, "post", mock_post)
 
@@ -242,9 +238,7 @@ async def test_openai_payload_includes_model(router, monkeypatch):
 
     async def mock_post(self, url, json=None, **kwargs):
         captured["json"] = json
-        return _mock_response(
-            {"choices": [{"message": {"content": "ok"}}]}
-        )
+        return _mock_response({"choices": [{"message": {"content": "ok"}}]})
 
     monkeypatch.setattr(httpx.AsyncClient, "post", mock_post)
 

@@ -41,6 +41,7 @@ from gateway.web.api import require_auth, router
 # Helpers
 # ---------------------------------------------------------------------------
 
+
 def _sha256(text: str) -> str:
     return hashlib.sha256(text.encode()).hexdigest()
 
@@ -56,6 +57,7 @@ def _write_tree(root: Path, files: dict[str, str]) -> None:
 # ---------------------------------------------------------------------------
 # ManifestEntry
 # ---------------------------------------------------------------------------
+
 
 class TestManifestEntry:
     def test_hash_is_sha256_of_content(self, tmp_path: Path) -> None:
@@ -86,13 +88,17 @@ class TestManifestEntry:
 # SkillsManifest — build from source directory
 # ---------------------------------------------------------------------------
 
+
 class TestSkillsManifest:
     def test_build_includes_all_files(self, tmp_path: Path) -> None:
-        _write_tree(tmp_path, {
-            "skills/graphify/SKILL.md": "# graphify",
-            "mcp/servers.json": '{"servers": {}}',
-            "agents/hermes-soul.md": "# hermes",
-        })
+        _write_tree(
+            tmp_path,
+            {
+                "skills/graphify/SKILL.md": "# graphify",
+                "mcp/servers.json": '{"servers": {}}',
+                "agents/hermes-soul.md": "# hermes",
+            },
+        )
         manifest = SkillsManifest.from_source(tmp_path)
         names = {e.name for e in manifest.entries}
         assert "skills/graphify/SKILL.md" in names
@@ -100,20 +106,26 @@ class TestSkillsManifest:
         assert "agents/hermes-soul.md" in names
 
     def test_build_excludes_manifest_json_itself(self, tmp_path: Path) -> None:
-        _write_tree(tmp_path, {
-            "skills/a.md": "content",
-            "manifest.json": '{"entries": []}',
-        })
+        _write_tree(
+            tmp_path,
+            {
+                "skills/a.md": "content",
+                "manifest.json": '{"entries": []}',
+            },
+        )
         manifest = SkillsManifest.from_source(tmp_path)
         names = {e.name for e in manifest.entries}
         assert "manifest.json" not in names
 
     def test_build_is_sorted_deterministically(self, tmp_path: Path) -> None:
-        _write_tree(tmp_path, {
-            "skills/z.md": "z",
-            "agents/a.md": "a",
-            "mcp/b.json": "b",
-        })
+        _write_tree(
+            tmp_path,
+            {
+                "skills/z.md": "z",
+                "agents/a.md": "a",
+                "mcp/b.json": "b",
+            },
+        )
         m1 = SkillsManifest.from_source(tmp_path)
         m2 = SkillsManifest.from_source(tmp_path)
         assert [e.name for e in m1.entries] == [e.name for e in m2.entries]
@@ -138,10 +150,13 @@ class TestSkillsManifest:
 
     def test_manifest_json_in_source_is_excluded(self, tmp_path: Path) -> None:
         """manifest.json must never appear as an entry even when present in source."""
-        _write_tree(tmp_path, {
-            "skills/x.md": "x",
-            "manifest.json": '{"entries":[]}',
-        })
+        _write_tree(
+            tmp_path,
+            {
+                "skills/x.md": "x",
+                "manifest.json": '{"entries":[]}',
+            },
+        )
         manifest = SkillsManifest.from_source(tmp_path)
         names = {e.name for e in manifest.entries}
         assert "manifest.json" not in names
@@ -160,14 +175,18 @@ class TestSkillsManifest:
 # deploy_manifest
 # ---------------------------------------------------------------------------
 
+
 class TestDeployManifest:
     def test_deploy_copies_files_to_dest(self, tmp_path: Path) -> None:
         src = tmp_path / "src"
         dest = tmp_path / "dest"
-        _write_tree(src, {
-            "skills/graphify/SKILL.md": "# graphify skill",
-            "mcp/servers.json": '{"servers": {}}',
-        })
+        _write_tree(
+            src,
+            {
+                "skills/graphify/SKILL.md": "# graphify skill",
+                "mcp/servers.json": '{"servers": {}}',
+            },
+        )
         manifest = SkillsManifest.from_source(src)
         deploy_manifest(manifest, src, [dest])
         assert (dest / "skills/graphify/SKILL.md").exists()
@@ -187,30 +206,24 @@ class TestDeployManifest:
     def test_deploy_is_idempotent(self, tmp_path: Path) -> None:
         src = tmp_path / "src"
         dest = tmp_path / "dest"
-        _write_tree(src, {
-            "skills/graphify/SKILL.md": "# graphify",
-            "agents/openclaw-identity.md": "identity",
-        })
+        _write_tree(
+            src,
+            {
+                "skills/graphify/SKILL.md": "# graphify",
+                "agents/openclaw-identity.md": "identity",
+            },
+        )
         manifest = SkillsManifest.from_source(src)
         deploy_manifest(manifest, src, [dest])
         # Record mtimes after first deploy
-        mtimes_1 = {
-            p: p.stat().st_mtime
-            for p in dest.rglob("*")
-            if p.is_file()
-        }
+        mtimes_1 = {p: p.stat().st_mtime for p in dest.rglob("*") if p.is_file()}
         # Wait a tick then deploy again — idempotent: only changed files get re-written
         time.sleep(0.05)
         deploy_manifest(manifest, src, [dest])
-        mtimes_2 = {
-            p: p.stat().st_mtime
-            for p in dest.rglob("*")
-            if p.is_file()
-        }
+        mtimes_2 = {p: p.stat().st_mtime for p in dest.rglob("*") if p.is_file()}
         # manifest.json is always refreshed (timestamp changes); all other files unchanged
         changed = {
-            p for p in mtimes_1
-            if p.name != "manifest.json" and mtimes_2.get(p, 0) != mtimes_1[p]
+            p for p in mtimes_1 if p.name != "manifest.json" and mtimes_2.get(p, 0) != mtimes_1[p]
         }
         assert changed == set(), f"Idempotency violated: {changed}"
 
@@ -245,6 +258,7 @@ class TestDeployManifest:
 # validate_manifest — drift detection
 # ---------------------------------------------------------------------------
 
+
 class TestValidateManifest:
     def test_no_drift_returns_empty_list(self, tmp_path: Path) -> None:
         src = tmp_path / "src"
@@ -269,10 +283,13 @@ class TestValidateManifest:
     def test_drift_detected_on_missing_file(self, tmp_path: Path) -> None:
         src = tmp_path / "src"
         dest = tmp_path / "dest"
-        _write_tree(src, {
-            "skills/a.md": "a",
-            "skills/b.md": "b",
-        })
+        _write_tree(
+            src,
+            {
+                "skills/a.md": "a",
+                "skills/b.md": "b",
+            },
+        )
         manifest = SkillsManifest.from_source(src)
         deploy_manifest(manifest, src, [dest])
         # Delete a deployed file
@@ -283,11 +300,14 @@ class TestValidateManifest:
     def test_returns_all_drifted_items(self, tmp_path: Path) -> None:
         src = tmp_path / "src"
         dest = tmp_path / "dest"
-        _write_tree(src, {
-            "skills/a.md": "a",
-            "skills/b.md": "b",
-            "agents/persona.md": "p",
-        })
+        _write_tree(
+            src,
+            {
+                "skills/a.md": "a",
+                "skills/b.md": "b",
+                "agents/persona.md": "p",
+            },
+        )
         manifest = SkillsManifest.from_source(src)
         deploy_manifest(manifest, src, [dest])
         (dest / "skills/a.md").write_text("X")
@@ -300,6 +320,7 @@ class TestValidateManifest:
 # /api/skills/reload endpoint
 # ---------------------------------------------------------------------------
 
+
 class TestSkillsReloadEndpoint:
     @pytest.fixture
     def client(self, tmp_path: Path) -> TestClient:
@@ -309,16 +330,17 @@ class TestSkillsReloadEndpoint:
         with TestClient(app, raise_server_exceptions=False) as c:
             yield c
 
-    def test_reload_returns_200_with_skills_list(
-        self, client: TestClient, tmp_path: Path
-    ) -> None:
+    def test_reload_returns_200_with_skills_list(self, client: TestClient, tmp_path: Path) -> None:
         src = tmp_path / "src"
         dest_oc = tmp_path / "openclaw"
         dest_h = tmp_path / "hermes"
-        _write_tree(src, {
-            "skills/graphify/SKILL.md": "# graphify",
-            "mcp/servers.json": '{"servers":{}}',
-        })
+        _write_tree(
+            src,
+            {
+                "skills/graphify/SKILL.md": "# graphify",
+                "mcp/servers.json": '{"servers":{}}',
+            },
+        )
         manifest = SkillsManifest.from_source(src)
         deploy_manifest(manifest, src, [dest_oc, dest_h])
 
@@ -339,9 +361,7 @@ class TestSkillsReloadEndpoint:
             resp = c.post("/api/skills/reload")
         assert resp.status_code in (401, 403)
 
-    def test_reload_returns_500_on_source_missing(
-        self, client: TestClient
-    ) -> None:
+    def test_reload_returns_500_on_source_missing(self, client: TestClient) -> None:
         with patch(
             "gateway.web.api._skills_reload_impl",
             side_effect=FileNotFoundError("~/.llm_settings not found"),

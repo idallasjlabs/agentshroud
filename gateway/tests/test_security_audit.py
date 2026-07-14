@@ -157,6 +157,7 @@ class TestPIIDetection:
                 ), f"Date misclassified as {r.entity_type}"
         # Regex engine should not touch dates at all
         import importlib.util
+
         if importlib.util.find_spec("presidio_analyzer") is None:
             assert "2026-02-24" in result.sanitized_content
 

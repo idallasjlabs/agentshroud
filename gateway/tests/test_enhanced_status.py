@@ -1,8 +1,6 @@
 # Copyright (c) 2026 Isaiah Dallas Jefferson, Jr. AgentShroud. All rights reserved.
 
 
-
-
 class TestEnhancedStatus:
     """Test enhanced status endpoint with observatory mode and egress info."""
 

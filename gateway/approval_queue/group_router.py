@@ -33,6 +33,7 @@ logger = logging.getLogger("agentshroud.approval_queue.group_router")
 # Sentinel prefix that identifies group-context agent IDs.
 _GROUP_AGENT_PREFIX = "group-"
 
+
 class GroupApprovalRouter:
     """Routes approval notifications to owner DM and (optionally) group thread.
 
@@ -114,15 +115,13 @@ class GroupApprovalRouter:
         """
         if not self.is_group_context(agent_id):
             return None
-        return agent_id[len(_GROUP_AGENT_PREFIX):]
+        return agent_id[len(_GROUP_AGENT_PREFIX) :]
 
     # ------------------------------------------------------------------
     # Message builders
     # ------------------------------------------------------------------
 
-    def _build_owner_dm_text(
-        self, request: ApprovalRequest, group_chat_id: Optional[str]
-    ) -> str:
+    def _build_owner_dm_text(self, request: ApprovalRequest, group_chat_id: Optional[str]) -> str:
         """Build the owner DM notification text."""
         if group_chat_id:
             origin = f"Group chat {group_chat_id}"
@@ -150,9 +149,7 @@ class GroupApprovalRouter:
     # ------------------------------------------------------------------
 
     @staticmethod
-    async def _default_send(
-        bot_token: str, chat_id: str, text: str
-    ) -> dict[str, Any]:
+    async def _default_send(bot_token: str, chat_id: str, text: str) -> dict[str, Any]:
         """No-op send stub — used when no transport is injected."""
         logger.debug(
             "GroupApprovalRouter._default_send: bot=%s chat_id=%s text_len=%d",

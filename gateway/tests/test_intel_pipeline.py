@@ -249,9 +249,7 @@ class TestIntelReportStore:
         assert loaded is not None
         assert loaded.report_id == "rpt-latest"
 
-    def test_load_latest_returns_none_when_empty(
-        self, store: IntelReportStore
-    ) -> None:
+    def test_load_latest_returns_none_when_empty(self, store: IntelReportStore) -> None:
         assert store.load_latest() is None
 
     def test_multiple_saves_latest_is_newest(self, store: IntelReportStore) -> None:
@@ -262,9 +260,7 @@ class TestIntelReportStore:
         assert latest is not None
         assert latest.report_id == "rpt-new"
 
-    def test_integrity_check_passes_for_saved_report(
-        self, store: IntelReportStore
-    ) -> None:
+    def test_integrity_check_passes_for_saved_report(self, store: IntelReportStore) -> None:
         report = self._make_report("rpt-int")
         store.save(report)
         loaded = store.load_latest()
@@ -311,9 +307,7 @@ class TestIntelReportStore:
         expected_prev_hash = first.content_hash
         assert second.previous_hash == expected_prev_hash
 
-    def test_verify_chain_passes_for_intact_store(
-        self, store: IntelReportStore
-    ) -> None:
+    def test_verify_chain_passes_for_intact_store(self, store: IntelReportStore) -> None:
         for i in range(3):
             time.sleep(0.01)
             store.save(self._make_report(f"rpt-cv-{i}"))
@@ -337,9 +331,7 @@ class TestIntelReportStore:
         valid, msg = store.verify_chain()
         assert not valid
 
-    def test_load_all_skips_malformed_files(
-        self, store: IntelReportStore, store_dir: Path
-    ) -> None:
+    def test_load_all_skips_malformed_files(self, store: IntelReportStore, store_dir: Path) -> None:
         store.save(self._make_report("rpt-good"))
         # Write a malformed JSON file alongside the valid one
         (store_dir / "00000000000000000000_bad.json").write_text("{not valid json")
@@ -348,9 +340,7 @@ class TestIntelReportStore:
         assert len(reports) == 1
         assert reports[0].report_id == "rpt-good"
 
-    def test_verify_chain_empty_store_is_valid(
-        self, store: IntelReportStore
-    ) -> None:
+    def test_verify_chain_empty_store_is_valid(self, store: IntelReportStore) -> None:
         valid, msg = store.verify_chain()
         assert valid
         assert "Empty" in msg

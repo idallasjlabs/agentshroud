@@ -118,9 +118,7 @@ class TestDeterministicPresidioInit:
         # and certainly not the bare (auto-downloading) engine.
         assert called["bare"] is False
 
-    def test_init_wires_explicit_nlp_engine_when_model_present(
-        self, monkeypatch
-    ) -> None:
+    def test_init_wires_explicit_nlp_engine_when_model_present(self, monkeypatch) -> None:
         """When the pinned model loads, Presidio is built with an explicit
         ``nlp_engine`` (never the bare auto-downloading form)."""
         spacy = pytest.importorskip("spacy")
@@ -168,9 +166,7 @@ class TestDeterministicPresidioInit:
 
 
 class TestStandardPIIAlwaysCaught:
-    def test_plain_email_caught_in_tool_result(
-        self, detector: DifferentialPIIDetector
-    ) -> None:
+    def test_plain_email_caught_in_tool_result(self, detector: DifferentialPIIDetector) -> None:
         report = detector.scan_tool_result(
             tool_name="web_search",
             content="Contact us at alice@example.com for support.",
@@ -178,17 +174,13 @@ class TestStandardPIIAlwaysCaught:
         assert report.has_pii
         assert any("EMAIL" in h.entity_type.upper() for h in report.hits)
 
-    def test_plain_email_caught_in_prompt(
-        self, detector: DifferentialPIIDetector
-    ) -> None:
+    def test_plain_email_caught_in_prompt(self, detector: DifferentialPIIDetector) -> None:
         report = detector.scan_prompt(
             content="Send email to bob@example.com please.",
         )
         assert report.has_pii
 
-    def test_us_ssn_caught_in_tool_result(
-        self, detector: DifferentialPIIDetector
-    ) -> None:
+    def test_us_ssn_caught_in_tool_result(self, detector: DifferentialPIIDetector) -> None:
         report = detector.scan_tool_result(
             tool_name="read_file",
             content="SSN: 123-45-6789",
@@ -227,11 +219,7 @@ class TestPresidioPathContract:
             capture["threshold"] = score_threshold
             # Emulate Presidio: only return results for REQUESTED entities that
             # meet the score threshold.
-            return [
-                r
-                for r in results
-                if r.score >= score_threshold and r.entity_type in entities
-            ]
+            return [r for r in results if r.score >= score_threshold and r.entity_type in entities]
 
         fake = type("FakeAnalyzer", (), {"analyze": staticmethod(_analyze)})()
         detector._presidio_analyzer = fake
@@ -291,9 +279,7 @@ class TestPresidioPathContract:
 
         fake = type("BoomAnalyzer", (), {"analyze": staticmethod(_boom)})()
         detector._presidio_analyzer = fake
-        report = detector.scan_tool_result(
-            tool_name="read_file", content="SSN: 123-45-6789"
-        )
+        report = detector.scan_tool_result(tool_name="read_file", content="SSN: 123-45-6789")
         assert report.has_pii
         assert any(h.entity_type == "US_SSN" for h in report.hits)
 
@@ -304,9 +290,7 @@ class TestPresidioPathContract:
         # core regex union must still surface the plainly-formatted SSN.
         capture: dict = {}
         self._detector_with_fake(detector, [], capture)
-        report = detector.scan_tool_result(
-            tool_name="read_file", content="SSN: 123-45-6789"
-        )
+        report = detector.scan_tool_result(tool_name="read_file", content="SSN: 123-45-6789")
         assert report.has_pii
         assert any(h.entity_type == "US_SSN" for h in report.hits)
 
@@ -317,26 +301,20 @@ class TestPresidioPathContract:
 
 
 class TestAdversarialFormattingCaught:
-    def test_spaced_email_caught_in_tool_result(
-        self, detector: DifferentialPIIDetector
-    ) -> None:
+    def test_spaced_email_caught_in_tool_result(self, detector: DifferentialPIIDetector) -> None:
         """Email with spaces added to defeat naive regex: a l i c e @ e x a m p l e . c o m"""
         content = "Reach out to a l i c e @ e x a m p l e . c o m for help."
         report = detector.scan_tool_result(tool_name="web_search", content=content)
         # With adversarial normalization, the detector must surface this
         assert report.has_pii or report.adversarial_patterns_detected > 0
 
-    def test_dotted_email_caught_in_tool_result(
-        self, detector: DifferentialPIIDetector
-    ) -> None:
+    def test_dotted_email_caught_in_tool_result(self, detector: DifferentialPIIDetector) -> None:
         """Email with Unicode dot separators."""
         content = "Contact alice․example․com for details."
         report = detector.scan_tool_result(tool_name="web_search", content=content)
         assert report.has_pii or report.adversarial_patterns_detected > 0
 
-    def test_zero_width_space_injection_caught(
-        self, detector: DifferentialPIIDetector
-    ) -> None:
+    def test_zero_width_space_injection_caught(self, detector: DifferentialPIIDetector) -> None:
         """PII split with zero-width space."""
         content = "SSN: 123​-45-​6789"
         report = detector.scan_tool_result(tool_name="read_file", content=content)
@@ -360,9 +338,7 @@ class TestAsymmetricFloor:
         assert tool_report.confidence_floor_used == pytest.approx(0.7)
         assert prompt_report.confidence_floor_used == pytest.approx(0.9)
 
-    def test_weak_hit_present_in_tool_result_only(
-        self, detector: DifferentialPIIDetector
-    ) -> None:
+    def test_weak_hit_present_in_tool_result_only(self, detector: DifferentialPIIDetector) -> None:
         """A weak-confidence hit (0.75) must appear in tool results but not prompts."""
         # Inject a synthetic weak-confidence hit by using a partial pattern
         # that registers between 0.7 and 0.9
@@ -413,9 +389,7 @@ class TestRedaction:
 
 
 class TestToolResultPIIReport:
-    def test_report_has_required_fields(
-        self, detector: DifferentialPIIDetector
-    ) -> None:
+    def test_report_has_required_fields(self, detector: DifferentialPIIDetector) -> None:
         report = detector.scan_tool_result(
             tool_name="read_file",
             content="Name: John Smith, SSN: 123-45-6789",
@@ -457,14 +431,10 @@ class TestPerToolConfiguration:
         )
         detector = DifferentialPIIDetector(config=config)
         content = "Phone: 415-555-0100"
-        report = detector.scan_tool_result(
-            tool_name="high_sensitivity_tool", content=content
-        )
+        report = detector.scan_tool_result(tool_name="high_sensitivity_tool", content=content)
         assert report.confidence_floor_used == pytest.approx(0.6)
 
-    def test_unknown_tool_uses_default_floor(
-        self, detector: DifferentialPIIDetector
-    ) -> None:
+    def test_unknown_tool_uses_default_floor(self, detector: DifferentialPIIDetector) -> None:
         report = detector.scan_tool_result(
             tool_name="unknown_tool",
             content="No PII here.",

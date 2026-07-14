@@ -97,18 +97,14 @@ class TestGroupMemoryNamespaceIsolation:
 
     def test_group_a_write_invisible_from_group_b(self, shared_memory):
         """Content appended to group-A memory must not appear in group-B memory."""
-        shared_memory.append_to_group_memory(
-            GROUP_A_ID, "Secret Alpha data", author_id=USER_A
-        )
+        shared_memory.append_to_group_memory(GROUP_A_ID, "Secret Alpha data", author_id=USER_A)
 
         group_b_mem = shared_memory.get_group_memory(GROUP_B_ID)
         assert "Secret Alpha data" not in group_b_mem
 
     def test_group_b_write_invisible_from_group_a(self, shared_memory):
         """Content appended to group-B must not appear in group-A memory."""
-        shared_memory.append_to_group_memory(
-            GROUP_B_ID, "Secret Beta data", author_id=USER_B
-        )
+        shared_memory.append_to_group_memory(GROUP_B_ID, "Secret Beta data", author_id=USER_B)
 
         group_a_mem = shared_memory.get_group_memory(GROUP_A_ID)
         assert "Secret Beta data" not in group_a_mem
@@ -153,9 +149,7 @@ class TestGroupMemoryInvisibleFromDM:
 
     def test_group_write_invisible_from_user_dm(self, shared_memory):
         """Content written to a group must not appear in any user's private DM memory."""
-        shared_memory.append_to_group_memory(
-            GROUP_A_ID, "Group private note", author_id=USER_A
-        )
+        shared_memory.append_to_group_memory(GROUP_A_ID, "Group private note", author_id=USER_A)
 
         user_a_mem = shared_memory.get_user_memory(USER_A)
         assert "Group private note" not in user_a_mem
