@@ -30,6 +30,12 @@ volatile uint32_t g_test_tick_ms = 0;
 /* vt_agent_count() is declared extern in wakeword.c; provide a stub. */
 int vt_agent_count(void) { return 0; }
 
+/* wakeword.c mirrors diagnostics via vt_remote_log() (remote_log.h) — added
+ * after this test was first written.  The host build has no WebSocket to write
+ * to, so swallow the call to keep the link resolved. */
+#include <stdarg.h>
+void vt_remote_log(const char *fmt, ...) { (void)fmt; }
+
 /* ── Minimal test framework ───────────────────────────────────────────────── */
 
 static int s_pass = 0;
