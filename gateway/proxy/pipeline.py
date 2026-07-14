@@ -214,6 +214,47 @@ class AuditChain:
                 logger.error("Block event guaranteed audit persistence failed: %s", exc)
         return entry
 
+    async def append_owner_bypass(
+        self,
+        content: str,
+        guard: str,
+        reason: str,
+        metadata: dict[str, Any] | None = None,
+    ) -> AuditChainEntry:
+        """Record an owner guard-bypass in the tamper-evident chain (SCRUM-95).
+
+        The owner is exempt from inbound security guards, but that exemption
+        must itself be accountable: IEC 62443 FR6 requires a tamper-evident
+        record of *every* security-relevant decision, including when a guard
+        that WOULD have blocked is bypassed because the request carries the
+        owner's identity.  Without this, an owner-account compromise would leave
+        no hash-chain evidence of which guards were bypassed.
+
+        Like append_block, this awaits the SQLite write so the record is never
+        lost under load, and appends to the in-memory hash chain first so chain
+        integrity holds even if the DB write fails.  Persisted at HIGH severity
+        (a bypass is not a block, but is security-relevant).
+        """
+        meta = {"guard": guard, "would_block_reason": reason, **(metadata or {})}
+        entry = self.append(content, "inbound_owner_bypass", meta, _skip_task=True)
+        if self._audit_store is not None:
+            try:
+                await self._audit_store.log_event(
+                    event_type="audit_chain.owner_bypass",
+                    severity="HIGH",
+                    details={
+                        "chain_hash": entry.chain_hash,
+                        "content_hash": entry.content_hash,
+                        "previous_hash": entry.previous_hash,
+                        **meta,
+                    },
+                    source_module="pipeline.audit_chain.owner_bypass",
+                    event_id=entry.id,
+                )
+            except Exception as exc:
+                logger.error("Owner-bypass audit persistence failed: %s", exc)
+        return entry
+
     def verify_chain(self) -> tuple[bool, str]:
         """Verify the integrity of the retained hash-chain window.
 
@@ -437,6 +478,12 @@ class SecurityPipeline:
                                 attack.attack_type,
                                 attack.description,
                             )
+                            await self.audit_chain.append_owner_bypass(
+                                message,
+                                "ContextGuard",
+                                f"{attack.attack_type} — {attack.description}",
+                                metadata,
+                            )
                             continue
                         result.action = PipelineAction.BLOCK
                         result.blocked = True
@@ -455,6 +502,9 @@ class SecurityPipeline:
                 logger.error("ContextGuard error in pipeline: %s", exc)
                 if is_owner:
                     logger.warning("ContextGuard error on owner message — allowing through")
+                    await self.audit_chain.append_owner_bypass(
+                        message, "ContextGuard", f"guard-error: {exc}", metadata
+                    )
                 else:
                     # Fail closed — block non-owner on error to maintain security posture
                     result.action = PipelineAction.BLOCK
@@ -483,6 +533,12 @@ class SecurityPipeline:
                             agent_id,
                             integrity.score,
                         )
+                        await self.audit_chain.append_owner_bypass(
+                            message,
+                            "ContextIntegrity",
+                            f"score={integrity.score:.3f}, factors={integrity.factors}",
+                            metadata,
+                        )
                     else:
                         result.action = PipelineAction.BLOCK
                         result.blocked = True
@@ -510,6 +566,9 @@ class SecurityPipeline:
                     logger.warning(
                         "ContextIntegrityScorer error on owner message — allowing through"
                     )
+                    await self.audit_chain.append_owner_bypass(
+                        message, "ContextIntegrity", f"guard-error: {exc}", metadata
+                    )
                 else:
                     # Fail closed — block non-owner on error
                     result.action = PipelineAction.BLOCK
@@ -530,6 +589,12 @@ class SecurityPipeline:
                     logger.info(
                         f"PromptGuard: owner message would be blocked "
                         f"(score={scan.score}, patterns={scan.patterns}) — allowing"
+                    )
+                    await self.audit_chain.append_owner_bypass(
+                        message,
+                        "PromptGuard",
+                        f"score={scan.score}, patterns={scan.patterns}",
+                        metadata,
                     )
                     # Owner messages continue through the pipeline
                 else:
@@ -559,6 +624,12 @@ class SecurityPipeline:
                             logger.info(
                                 "HeuristicClassifier: owner injection (prob=%.2f) — allowing",
                                 hc_result.probability,
+                            )
+                            await self.audit_chain.append_owner_bypass(
+                                message,
+                                "HeuristicClassifier",
+                                f"prob={hc_result.probability:.2f}",
+                                metadata,
                             )
                         else:
                             result.action = PipelineAction.BLOCK
@@ -601,6 +672,12 @@ class SecurityPipeline:
                             "InboundInjectionScanner: owner message flagged (patterns=%s) — allowing",
                             inj_result.patterns,
                         )
+                        await self.audit_chain.append_owner_bypass(
+                            message,
+                            "InboundInjectionScanner",
+                            f"patterns={inj_result.patterns}",
+                            metadata,
+                        )
                     else:
                         result.action = PipelineAction.BLOCK
                         result.blocked = True
@@ -635,6 +712,12 @@ class SecurityPipeline:
                         logger.info(
                             "C32InboundScan: owner message contains shell patterns (%s) — allowing",
                             c32_result.removed_items,
+                        )
+                        await self.audit_chain.append_owner_bypass(
+                            message,
+                            "C32InboundScan",
+                            f"patterns={c32_result.removed_items}",
+                            metadata,
                         )
                     else:
                         result.action = PipelineAction.BLOCK
