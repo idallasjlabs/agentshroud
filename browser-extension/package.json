@@ -1,0 +1,20 @@
+{
+  "name": "agentshroud-browser-extension",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AgentShroud™ browser extension: URL forwarder + page clipper (MV3, Chrome/Firefox/Safari)",
+  "license": "SEE LICENSE IN ../LICENSE",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ]
+  }
+}

@@ -2,17 +2,47 @@
 
 Forward web content to AgentShroud without exposing cookies, session tokens, or trackers.
 
-## Structure (to be implemented in Week 3-4)
+## Structure
 
 ```
 browser-extension/
-├── manifest.json       # Manifest V3 configuration
-├── popup.html          # Extension popup UI
-├── content.js          # Page content extraction
-├── background.js       # Background service worker
-├── icons/              # Extension icons
-└── safari/             # Safari Web Extension wrapper
+├── manifest.json         # Manifest V3 configuration
+├── background.js         # Service worker: context menus, tab query, script injection, transport
+├── lib/forwarder.js      # Pure logic: payload construction + gateway POST (unit-tested)
+├── lib/forwarder.test.js # Jest tests (mocked fetch, no network)
+├── popup.html / popup.js # Toolbar popup UI (Forward URL / Clip page)
+├── options.html / .js    # Gateway URL + token settings (chrome.storage.sync)
+├── icons/                # Extension icons
+└── package.json          # Jest test harness
 ```
+
+### Gateway wiring
+
+Both actions POST a `ForwardRequest` to `<gatewayUrl>/forward`
+(`gateway/ingest_api/routes/forward.py:326`) with an
+`Authorization: Bearer <token>` header:
+
+| Action | `content` | `content_type` | `metadata.kind` |
+|--------|-----------|----------------|-----------------|
+| Forward URL | the tab URL | `url` | `url_forward` |
+| Clip page | readable text / selection | `text` | `page_clip` |
+
+Configure the gateway URL and token in the extension's options page — no token
+is ever hardcoded.
+
+### Tests
+
+```bash
+cd browser-extension
+npm install
+npm test              # jest, mocked fetch, no network
+npm run test:coverage
+```
+
+### Safari
+
+Safari uses the same MV3 sources wrapped with Xcode's
+`xcrun safari-web-extension-converter .` — no separate JavaScript is required.
 
 ## Features
 
@@ -59,4 +89,5 @@ browser-extension/
 
 ## Implementation Status
 
-🚧 **Not yet implemented** - Scheduled for Week 3-4, Days 22-23
+✅ **URL forwarder + page clipper implemented** (MV3, Chrome/Firefox; Safari via
+converter). Features 3–5 (form fill, tab exporter, reading list) remain planned.
