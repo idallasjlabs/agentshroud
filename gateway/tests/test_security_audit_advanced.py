@@ -654,15 +654,32 @@ class TestDependencySecurity:
         assert len(violations) == 0, f"Unsafe yaml.load: {violations}"
 
     def test_no_shell_true_in_subprocess(self):
-        """Subprocess calls should not use shell=True."""
+        """Subprocess calls should not pass shell=True.
+
+        Uses AST analysis to flag only a real ``shell=True`` keyword argument on
+        a call. A scanner module such as ``skill_guard.py`` legitimately names the
+        literal ``shell=True`` inside docstrings and rule-description strings — it
+        exists to *detect* ``subprocess(..., shell=True)`` in untrusted skills.
+        Those are string literals, not call arguments; a bare substring scan
+        false-positived on that documentation, so match the actual keyword.
+        """
+        import ast
+
         security_dir = Path(__file__).parent.parent / "security"
         if not security_dir.exists():
             pytest.skip("Security dir not found")
         violations = []
         for py_file in security_dir.glob("*.py"):
-            content = py_file.read_text()
-            if "shell=True" in content:
-                violations.append(py_file.name)
+            tree = ast.parse(py_file.read_text(), filename=str(py_file))
+            for node in ast.walk(tree):
+                if isinstance(node, ast.Call):
+                    for kw in node.keywords:
+                        if (
+                            kw.arg == "shell"
+                            and isinstance(kw.value, ast.Constant)
+                            and kw.value.value is True
+                        ):
+                            violations.append(f"{py_file.name}:{node.lineno}")
         assert len(violations) == 0, f"shell=True in: {violations}"
 
     def test_requirements_pinned(self):

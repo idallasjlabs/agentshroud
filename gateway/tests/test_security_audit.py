@@ -1170,17 +1170,28 @@ class TestSupplyChain:
         assert len(missing) == 0, f"Missing copyright: {missing}"
 
     def test_no_eval_or_exec_in_security(self):
-        """Security modules should not use eval() or exec()."""
+        """Security modules should not *call* eval() or exec().
+
+        Uses AST analysis so the check flags real ``eval(...)`` / ``exec(...)``
+        call sites only. A scanner module such as ``skill_guard.py`` legitimately
+        names these tokens inside docstrings and inside regex detection
+        signatures — it exists to *detect* obfuscated
+        ``exec(base64.b64decode(...))`` droppers in untrusted skills. Those are
+        strings/comments, not calls, and must not be counted as the module itself
+        executing untrusted code. A substring/regex scan produced false positives
+        on that documentation; AST call-node inspection catches only genuine sinks.
+        """
+        import ast
+
         security_dir = Path(__file__).parent.parent / "security"
         if not security_dir.exists():
             pytest.skip("Security dir not found")
         violations = []
         for py_file in security_dir.glob("*.py"):
-            content = py_file.read_text()
-            for line_no, line in enumerate(content.splitlines(), 1):
-                stripped = line.strip()
-                if stripped.startswith("#"):
-                    continue
-                if re.search(r"\beval\s*\(", stripped) or re.search(r"\bexec\s*\(", stripped):
-                    violations.append(f"{py_file.name}:{line_no}")
-        assert len(violations) == 0, f"eval/exec found: {violations}"
+            tree = ast.parse(py_file.read_text(), filename=str(py_file))
+            for node in ast.walk(tree):
+                if isinstance(node, ast.Call):
+                    fn = node.func
+                    if isinstance(fn, ast.Name) and fn.id in ("eval", "exec"):
+                        violations.append(f"{py_file.name}:{node.lineno}")
+        assert len(violations) == 0, f"eval/exec call found: {violations}"
