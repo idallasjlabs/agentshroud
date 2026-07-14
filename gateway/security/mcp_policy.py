@@ -35,6 +35,7 @@ every MCP tool-call boundary; deny-by-default with an explicit allowlist.
 from __future__ import annotations
 
 import logging
+import unicodedata
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any, Dict, List, Optional
@@ -144,6 +145,17 @@ class MCPPolicyConfig:
 
     # When True, the owner skips the approval gate for high-risk tools (but is
     # still subject to hard denies).
+    #
+    # SECURITY (adversarial-review LOW): ``owner_user_id`` MUST be the SAME
+    # trusted RBAC owner identity enforced by the HTTP anti-spoof guard
+    # (``gateway/ingest_api/main.py::_resolve_effective_agent_id`` →
+    # ``RBACConfig().owner_user_id``). The ``agent_id`` this engine receives is
+    # the already-resolved *effective* identity from that guard, which refuses
+    # to let a body-supplied ``agent_id`` impersonate the owner without a
+    # trusted ``x-agentshroud-user-id`` header. To make that guarantee explicit
+    # and prevent a config author from silently diverging the two, when
+    # ``owner_bypass`` is enabled but no ``owner_user_id`` is configured, this
+    # class defaults it to ``RBACConfig().owner_user_id`` (see __post_init__).
     owner_bypass: bool = False
     owner_user_id: str = ""
 
@@ -155,6 +167,21 @@ class MCPPolicyConfig:
     _high_risk_keywords: frozenset[str] = field(default_factory=frozenset, init=False, repr=False)
 
     def __post_init__(self) -> None:
+        # Bind owner-bypass to the SAME trusted RBAC owner identity used by the
+        # HTTP anti-spoof guard. If owner_bypass is on but no owner_user_id was
+        # configured, adopt RBACConfig().owner_user_id so the two cannot
+        # silently diverge (a divergence would either break legit owner bypass
+        # or, worse, grant bypass to the wrong id).
+        if self.owner_bypass and not str(self.owner_user_id).strip():
+            try:
+                from gateway.security.rbac_config import RBACConfig
+
+                self.owner_user_id = str(RBACConfig().owner_user_id)
+            except Exception:  # pragma: no cover - defensive; never fail open
+                # If RBAC identity is unavailable, leave owner_user_id empty.
+                # An empty owner id can never match a real agent_id, so owner
+                # bypass is simply inert — fail closed (approval still required).
+                self.owner_user_id = ""
         self._allowed = frozenset(_norm(s) for s in self.allowed_servers)
         self._denied_servers = frozenset(_norm(s) for s in self.denied_servers)
         self._denied_tools = frozenset(_norm(t) for t in self.denied_tools)
@@ -195,8 +222,15 @@ class MCPPolicyConfig:
 
 
 def _norm(value: str) -> str:
-    """Normalize a server/tool reference for case-insensitive matching."""
-    return str(value).strip().lower()
+    """Normalize a server/tool reference for robust, evasion-resistant matching.
+
+    Applies Unicode NFKC compatibility normalization *before* case-folding so
+    fullwidth / homoglyph / compatibility variants of a tool name (e.g. the
+    fullwidth ``ｄｅｌｅｔｅ_ｒｅｐｏ``) collapse to their ASCII form and cannot slip
+    past the denylist or the destructive-keyword heuristic. ``casefold`` is used
+    instead of ``lower`` for correct case-insensitive matching across scripts.
+    """
+    return unicodedata.normalize("NFKC", str(value)).strip().casefold()
 
 
 # ---------------------------------------------------------------------------
@@ -408,20 +442,48 @@ class MCPPolicyEngine:
                 matched_rule="approval_unavailable",
             )
 
-        # Enqueue through the human-in-the-loop approval queue. The queue keys
-        # its own risk policy off the qualified "server:tool" name.
-        request_id, requires_wait = await self._approval_queue.submit_tool_request(
-            qualified, args, agent_id
-        )
+        # Enqueue through the human-in-the-loop approval queue. Pass the
+        # engine's own high/critical risk_tier as ``force_tier`` so the queue
+        # honours the policy engine's verdict and does NOT re-derive a "low"
+        # tier from the unknown qualified "server:tool" name (which would
+        # auto-allow a destructive tool with no human in the loop). Callers
+        # that predate ``force_tier`` (older duck-typed queues) still work via
+        # the fail-closed fallback below.
+        try:
+            request_id, requires_wait = await self._approval_queue.submit_tool_request(
+                qualified, args, agent_id, force_tier=decision.risk_tier
+            )
+        except TypeError:
+            # Queue does not accept force_tier — fall back to the legacy call.
+            # The fail-closed guard below still prevents any silent downgrade.
+            request_id, requires_wait = await self._approval_queue.submit_tool_request(
+                qualified, args, agent_id
+            )
         if not requires_wait:
-            # Queue determined no approval is actually required for this tool.
+            # Fail CLOSED. The engine already classified this call as high-risk
+            # (owner bypass, if any, was resolved in evaluate() *before* we got
+            # here). A queue that reports "no approval required" for a call the
+            # engine deemed high-risk has independently down-classified it —
+            # the engine's high-risk verdict WINS. Never treat this as ALLOW.
+            logger.warning(
+                "MCP policy DENY (fail-closed): approval queue returned "
+                "requires_wait=False for engine-deemed %s-risk tool '%s' "
+                "(agent=%s) — refusing to downgrade to ALLOW",
+                decision.risk_tier,
+                qualified,
+                agent_id,
+            )
             return MCPPolicyDecision(
-                action=MCPPolicyAction.ALLOW,
+                action=MCPPolicyAction.DENY,
                 server=server,
                 tool=tool,
-                reason=f"approval queue permitted '{qualified}' without wait",
+                reason=(
+                    f"tool '{qualified}' was deemed {decision.risk_tier}-risk by the "
+                    f"policy engine but the approval queue did not require a wait — "
+                    f"denied (fail-closed; engine verdict wins)"
+                ),
                 risk_tier=decision.risk_tier,
-                matched_rule="approval_not_required",
+                matched_rule="approval_downgrade_refused",
             )
 
         approved = await self._approval_queue.wait_for_decision(request_id)

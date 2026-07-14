@@ -21,6 +21,7 @@ import pytest
 from gateway.security.mcp_policy import (
     MCPPolicyAction,
     MCPPolicyConfig,
+    MCPPolicyDecision,
     MCPPolicyEngine,
 )
 
@@ -160,6 +161,36 @@ def test_owner_bypasses_approval_but_not_hard_deny() -> None:
     # Owner + hard-denied tool → still denied
     d3 = eng.evaluate("github", "nuke", agent_id="owner-1")
     assert d3.action is MCPPolicyAction.DENY
+
+
+def test_owner_bypass_defaults_to_rbac_owner_identity() -> None:
+    """LOW finding: when owner_bypass is enabled but owner_user_id is left
+    blank, the engine adopts the SAME trusted RBAC owner identity used by the
+    HTTP anti-spoof guard — the two cannot silently diverge, and only the
+    RBAC-resolved owner id bypasses the approval gate."""
+    from gateway.security.rbac_config import RBACConfig
+
+    rbac_owner = str(RBACConfig().owner_user_id)
+    cfg = MCPPolicyConfig.from_dict(
+        {
+            "allowed_servers": ["github"],
+            "risk_tiers": {"high": ["github:delete_repo"]},
+            "high_risk_actions": ["high"],
+            "owner_bypass": True,
+            # owner_user_id intentionally omitted → must default to RBAC owner.
+        }
+    )
+    assert cfg.owner_user_id == rbac_owner
+    eng = MCPPolicyEngine(cfg)
+    # The RBAC-resolved owner bypasses the approval gate.
+    assert eng.evaluate("github", "delete_repo", agent_id=rbac_owner).action is (
+        MCPPolicyAction.ALLOW
+    )
+    # A forged/other identity does NOT bypass — still routed to approval.
+    assert (
+        eng.evaluate("github", "delete_repo", agent_id="not-the-owner").action
+        is MCPPolicyAction.REQUIRE_APPROVAL
+    )
 
 
 def test_invalid_default_action_falls_back_to_deny() -> None:
@@ -310,14 +341,21 @@ def test_enforce_high_risk_without_queue_denies_closed() -> None:
     assert decision.action is MCPPolicyAction.DENY
 
 
-def test_enforce_high_risk_queue_no_wait_allows() -> None:
-    """If the queue decides the tool doesn't actually need approval
-    (requires_wait False), the call proceeds."""
+def test_enforce_high_risk_queue_no_wait_denies_closed() -> None:
+    """Fail-closed: if the queue returns requires_wait=False for a call the
+    engine deemed high-risk, the engine's high-risk verdict must WIN — the
+    call is DENIED, never silently downgraded to ALLOW.
+
+    This is the adversarial-review HIGH finding: the queue's independent
+    low-tier default (``tool_classifications.get(name, "low")``) must not be
+    able to auto-allow a tool the policy engine flagged as high-risk.
+    """
     q = _FakeApprovalQueue(requires_wait=False)
     eng = MCPPolicyEngine(_base_config(), approval_queue=q)
     decision = asyncio.run(eng.enforce("github", "delete_repo", agent_id="a", args={}))
-    assert decision.allowed is True
-    assert decision.action is MCPPolicyAction.ALLOW
+    assert decision.action is MCPPolicyAction.DENY
+    assert decision.allowed is False
+    assert decision.matched_rule == "approval_downgrade_refused"
 
 
 # ---------------------------------------------------------------------------
@@ -383,3 +421,151 @@ def test_mcp_proxy_allows_policy_permitted_call() -> None:
     result = asyncio.run(proxy.process_tool_call(call, execute=True))
     assert result.allowed is True
     assert result.blocked is False
+
+
+# ---------------------------------------------------------------------------
+# Integration: REAL EnhancedApprovalQueue must NOT silently downgrade a
+# policy-mandated approval to ALLOW (adversarial-review HIGH finding).
+# ---------------------------------------------------------------------------
+
+
+def _real_queue(high_timeout_seconds: int | None = None):
+    """Build a REAL EnhancedApprovalQueue with a default ToolRiskConfig.
+
+    The default ToolRiskConfig knows nothing about the qualified
+    ``github:delete_repo`` name — its ``tool_classifications`` defaults that
+    tool to the "low" tier (require_approval=False). This is exactly the
+    condition that let the queue auto-allow an engine-deemed high-risk tool.
+
+    ``high_timeout_seconds`` shortens the high-tier approval timeout so an
+    unanswered approval auto-denies quickly (default timeout_action="deny"),
+    keeping the end-to-end test deterministic without a real human operator.
+    """
+    import tempfile
+
+    from gateway.approval_queue.enhanced_queue import EnhancedApprovalQueue
+    from gateway.approval_queue.store import ApprovalStore
+    from gateway.ingest_api.config import ApprovalQueueConfig, ToolRiskConfig
+
+    risk_config = ToolRiskConfig()  # default classifications only
+    if high_timeout_seconds is not None:
+        risk_config.high.timeout_seconds = high_timeout_seconds
+        risk_config.high.owner_bypass = False
+    with tempfile.NamedTemporaryFile(suffix=".db", delete=False) as f:
+        store = ApprovalStore(f.name)
+    queue = EnhancedApprovalQueue(
+        config=ApprovalQueueConfig(),
+        tool_risk_config=risk_config,
+        store=store,
+    )
+    return queue
+
+
+def test_enforce_real_queue_high_risk_not_downgraded_to_allow() -> None:
+    """A REAL EnhancedApprovalQueue + default ToolRiskConfig must NOT let the
+    engine's REQUIRE_APPROVAL verdict for ``github:delete_repo`` be silently
+    downgraded to ALLOW.
+
+    Because the default ToolRiskConfig classifies the qualified
+    ``github:delete_repo`` name as "low" (require_approval=False), the queue's
+    independent re-derivation returns requires_wait=False. Under the
+    pre-fix code, enforce() treated that as ALLOW (matched_rule=
+    "approval_not_required") — auto-allowing a destructive tool with NO human
+    approval. The engine's own high-risk verdict must win: the result must be
+    DENY (fail-closed), and the underlying executor must never run.
+    """
+
+    async def _run() -> MCPPolicyDecision:  # type: ignore[name-defined]
+        # Short high-tier timeout → an unanswered approval auto-denies quickly
+        # instead of blocking 300s on a human. The point is that the call is
+        # NOT auto-allowed: it is held for approval and (absent a human) denied.
+        queue = _real_queue(high_timeout_seconds=1)
+        await queue.store.initialize()
+        try:
+            eng = MCPPolicyEngine(_base_config(), approval_queue=queue)
+            return await eng.enforce(
+                "github", "delete_repo", agent_id="attacker", args={"repo": "x"}
+            )
+        finally:
+            try:
+                await asyncio.wait_for(queue.close(), timeout=2)
+            except (asyncio.TimeoutError, Exception):
+                pass
+
+    decision = asyncio.run(_run())
+    # The engine deemed this high-risk; the queue's low-tier default must NOT
+    # win. Anything other than a terminal non-ALLOW is a fail-open. Absent a
+    # human approval the call is denied (fail-closed) — never ALLOW.
+    assert decision.action is not MCPPolicyAction.ALLOW
+    assert decision.allowed is False
+    assert decision.action is MCPPolicyAction.DENY
+    assert decision.risk_tier == "high"
+
+
+def test_mcp_proxy_real_queue_high_risk_never_executes_without_approval() -> None:
+    """End-to-end: the engine wired into MCPProxy with a REAL approval queue
+    must never execute a high-risk MCP tool without a human approval.
+
+    The default ToolRiskConfig would auto-allow ``github:delete_repo`` (low
+    tier). Wired through MCPProxy, the executor must never be reached: the
+    policy gate blocks the call.
+    """
+    from gateway.proxy.mcp_proxy import MCPProxy, MCPToolCall
+
+    async def _run():
+        queue = _real_queue(high_timeout_seconds=1)
+        await queue.store.initialize()
+        try:
+            engine = MCPPolicyEngine(_base_config(), approval_queue=queue)
+            proxy = MCPProxy(policy_engine=engine)
+
+            executed: list[str] = []
+
+            async def _boom(*_a, **_k):  # pragma: no cover - must never run
+                executed.append("executed")
+                raise AssertionError("high-risk call executed without approval")
+
+            proxy._execute_tool_call = _boom  # type: ignore[assignment]
+
+            call = MCPToolCall(
+                id="c3",
+                server_name="github",
+                tool_name="delete_repo",
+                parameters={"repo": "x"},
+                agent_id="attacker",
+            )
+            result = await proxy.process_tool_call(call, execute=True)
+            return result, executed
+        finally:
+            try:
+                await asyncio.wait_for(queue.close(), timeout=2)
+            except (asyncio.TimeoutError, Exception):
+                pass
+
+    result, executed = asyncio.run(_run())
+    assert result.allowed is False
+    assert result.blocked is True
+    assert "MCP policy" in result.block_reason
+    assert executed == []
+
+
+def test_enforce_unicode_evasion_still_denied() -> None:
+    """A fullwidth/homoglyph tool name must not evade the denylist/keyword
+    heuristic. ``ｄｅｌｅｔｅ_ｒｅｐｏ`` (fullwidth) must NFKC-fold to
+    ``delete_repo`` and still be caught as high-risk → REQUIRE_APPROVAL, and
+    a fullwidth denylisted tool must still DENY."""
+    # Fullwidth "delete_repo" — normalizes to ASCII under NFKC.
+    fullwidth_delete = "ｄｅｌｅｔｅ_ｒｅｐｏ"
+    cfg = MCPPolicyConfig.from_dict({"allowed_servers": ["github"]})
+    eng = MCPPolicyEngine(cfg)
+    d = eng.evaluate("github", fullwidth_delete, agent_id="a")
+    assert d.risk_tier == "high"
+    assert d.action is MCPPolicyAction.REQUIRE_APPROVAL
+
+    # Fullwidth form of a denylisted tool must still be denied.
+    fullwidth_nuke = "ｎｕｋｅ"  # fullwidth "nuke"
+    cfg2 = MCPPolicyConfig.from_dict(
+        {"allowed_servers": ["github"], "denied_tools": ["github:nuke"]}
+    )
+    d2 = MCPPolicyEngine(cfg2).evaluate("github", fullwidth_nuke, agent_id="a")
+    assert d2.action is MCPPolicyAction.DENY
