@@ -2384,7 +2384,7 @@
     },
     "/api/skills/reload": {
       "post": {
-        "description": "Re-read ``~/.llm_settings/`` and sync skills/agents/MCP into both bot configs.\n\nOwner-only (Bearer token required). Returns ``{\"reloaded\": true, \"skills\": [...names...]}``.",
+        "description": "Re-read ``~/.llm_settings/`` and sync skills/agents/MCP into both bot configs.\n\nOwner-only (Bearer token required). Returns ``{\"reloaded\": true, \"skills\": [...names...]}``.\nA skill tree that SkillGuard blocks returns HTTP 403 and is NOT deployed.",
         "operationId": "skills_reload_api_skills_reload_post",
         "responses": {
           "200": {

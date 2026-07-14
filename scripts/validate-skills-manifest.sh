@@ -59,10 +59,19 @@ if [[ ! -d "$SOURCE" ]]; then
 fi
 
 # ── Destinations ─────────────────────────────────────────────────────────────
-declare -a DESTINATIONS=(
-  "${REPO}/docker/config/openclaw"
-  "${REPO}/docker/config/hermes"
-)
+# SKILLGUARD_TEST_DEST_ROOT is a test-only hook (see sync-llm-settings.sh) that
+# redirects both bot destinations under a temp dir. Unset in production.
+if [[ -n "${SKILLGUARD_TEST_DEST_ROOT:-}" ]]; then
+  declare -a DESTINATIONS=(
+    "${SKILLGUARD_TEST_DEST_ROOT}/openclaw"
+    "${SKILLGUARD_TEST_DEST_ROOT}/hermes"
+  )
+else
+  declare -a DESTINATIONS=(
+    "${REPO}/docker/config/openclaw"
+    "${REPO}/docker/config/hermes"
+  )
+fi
 
 echo ""
 echo "╔══════════════════════════════════════════════════════╗"
