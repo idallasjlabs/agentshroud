@@ -651,6 +651,54 @@ async def lifespan(app: FastAPI):
     except Exception as _kv_exc:
         logger.error("✗ KeyVault: %s", _kv_exc)
 
+    # SCRUM-68 WS-B.1 Module 29: RateLimitGuard (inbound, IEC 62443 FR7).
+    # Config-gated; default-disabled so behaviour is unchanged unless an operator
+    # opts in via AGENTSHROUD_RATE_LIMIT_ENABLED=1.
+    _rate_limit_guard = None
+    try:
+        from ..security.rate_limit_guard import RateLimitConfig, RateLimitGuard
+
+        _rl_enabled = os.getenv("AGENTSHROUD_RATE_LIMIT_ENABLED", "0") == "1"
+        _rate_limit_guard = RateLimitGuard(
+            RateLimitConfig(
+                enabled=_rl_enabled,
+                sustained_limit=int(os.getenv("AGENTSHROUD_RATE_LIMIT_SUSTAINED", "120")),
+                sustained_window_s=float(
+                    os.getenv("AGENTSHROUD_RATE_LIMIT_SUSTAINED_WINDOW_S", "60")
+                ),
+                burst_limit=int(os.getenv("AGENTSHROUD_RATE_LIMIT_BURST", "30")),
+                burst_window_s=float(os.getenv("AGENTSHROUD_RATE_LIMIT_BURST_WINDOW_S", "1")),
+            )
+        )
+        logger.info("✓ RateLimitGuard initialized (enabled=%s)", _rl_enabled)
+    except Exception as _rl_exc:
+        logger.error("✗ RateLimitGuard: %s", _rl_exc)
+
+    # SCRUM-68 WS-B.1 Module 30: DataExfilVolumeGuard (outbound, IEC 62443 FR3/FR4).
+    # Config-gated; default-disabled.
+    _data_exfil_volume_guard = None
+    try:
+        from ..security.data_exfil_volume_guard import (
+            DataExfilVolumeConfig,
+            DataExfilVolumeGuard,
+        )
+
+        _vol_enabled = os.getenv("AGENTSHROUD_EXFIL_VOLUME_ENABLED", "0") == "1"
+        _data_exfil_volume_guard = DataExfilVolumeGuard(
+            DataExfilVolumeConfig(
+                enabled=_vol_enabled,
+                max_single_response_bytes=int(
+                    os.getenv("AGENTSHROUD_EXFIL_MAX_SINGLE_BYTES", "5000000")
+                ),
+                max_session_cumulative_bytes=int(
+                    os.getenv("AGENTSHROUD_EXFIL_MAX_SESSION_BYTES", "50000000")
+                ),
+            )
+        )
+        logger.info("✓ DataExfilVolumeGuard initialized (enabled=%s)", _vol_enabled)
+    except Exception as _vol_exc:
+        logger.error("✗ DataExfilVolumeGuard: %s", _vol_exc)
+
     app_state.pipeline = SecurityPipeline(
         prompt_guard=app_state.prompt_guard,
         pii_sanitizer=app_state.sanitizer,
@@ -683,6 +731,8 @@ async def lifespan(app: FastAPI):
         tool_result_injection_scanner=_inbound_injection_scanner,
         xml_leak_filter=_inbound_xml_leak_filter,
         key_leak_detector=_key_leak_detector,
+        rate_limit_guard=_rate_limit_guard,
+        data_exfil_volume_guard=_data_exfil_volume_guard,
     )
     logger.info("Security pipeline initialized")
 

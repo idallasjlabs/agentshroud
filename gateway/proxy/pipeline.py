@@ -347,6 +347,12 @@ class SecurityPipeline:
         # Module 28 (v1.2.0): Differential PII Detector for Tool Results
         # IEC 62443 FR3 — lower-floor PII pass on tool results to catch adversarial exfil
         differential_pii_detector=None,
+        # SCRUM-68 WS-B.1 Module 29: RateLimitGuard (inbound, IEC 62443 FR7)
+        # Adaptive per-agent/per-tool request throttling with burst detection.
+        rate_limit_guard=None,
+        # SCRUM-68 WS-B.1 Module 30: DataExfilVolumeGuard (outbound, IEC 62443 FR3)
+        # Cumulative outbound byte-volume anomaly detection per session.
+        data_exfil_volume_guard=None,
     ):
         self.prompt_guard = prompt_guard
         self.pii_sanitizer = pii_sanitizer
@@ -373,6 +379,10 @@ class SecurityPipeline:
         self.cross_bot_trust_ledger = cross_bot_trust_ledger
         # Module 28: Differential PII Detector (v1.2.0)
         self.differential_pii_detector = differential_pii_detector
+        # Module 29: RateLimitGuard (SCRUM-68 WS-B.1)
+        self.rate_limit_guard = rate_limit_guard
+        # Module 30: DataExfilVolumeGuard (SCRUM-68 WS-B.1)
+        self.data_exfil_volume_guard = data_exfil_volume_guard
         self.prompt_block_threshold = prompt_block_threshold
         # Owner exemption: owner messages are logged but never blocked
         self._owner_user_id = None
@@ -800,6 +810,43 @@ class SecurityPipeline:
                             return result
                 except Exception:
                     pass  # Bad base64 or scan error — skip this chunk
+
+        # Step 2.9: RateLimitGuard (Module 29, SCRUM-68 WS-B.1) — adaptive
+        # per-agent/per-tool request throttling with burst detection.
+        # IEC 62443 FR7 (Resource Availability): bounds how fast an agent may
+        # invoke a specific action, catching runaway loops and compromised-agent
+        # floods before they reach the trust/approval/forward stages.
+        #
+        # NOT owner-exempt: a denial-of-service / runaway-loop is an availability
+        # threat that is independent of caller identity — an owner-authenticated
+        # agent stuck in a tight loop is exactly the case this bounds. The guard
+        # is config-gated (default disabled) and fail-closed on internal error.
+        if self.rate_limit_guard and not result.blocked:
+            rl_decision = self.rate_limit_guard.check(agent_id, action)
+            if rl_decision.blocked:
+                result.action = PipelineAction.BLOCK
+                result.blocked = True
+                result.block_reason = f"RateLimitGuard: {rl_decision.reason}"
+                self._stats["inbound_blocked"] += 1
+                entry = await self.audit_chain.append_block(
+                    result.sanitized_message,
+                    "inbound_rate_limited",
+                    {
+                        **(metadata or {}),
+                        "rate_limit_reason_code": rl_decision.reason_code,
+                        "tool": action,
+                    },
+                )
+                result.audit_entry_id = entry.id
+                result.audit_hash = entry.chain_hash
+                result.processing_time_ms = (time.time() - start) * 1000
+                logger.warning(
+                    "RateLimitGuard blocked agent=%s action=%s: %s",
+                    agent_id,
+                    action,
+                    rl_decision.reason_code,
+                )
+                return result
 
         # Step 3: Trust level check
         if self.trust_manager:
@@ -1269,6 +1316,71 @@ class SecurityPipeline:
                     )
             except Exception as exc:
                 logger.error("OutputSchemaEnforcer error: %s", exc)
+
+        # Step 1.95: DataExfilVolumeGuard (Module 30, SCRUM-68 WS-B.1) —
+        # cumulative outbound byte-volume anomaly detection per session.
+        # Runs on the FINAL sanitized/redacted message so it measures the actual
+        # bytes about to leave the gateway. Complements the domain-based egress
+        # filter (where) with a volume dimension (how much).
+        # IEC 62443 FR3/FR4. Config-gated (default disabled); fail-closed for
+        # non-owner if the guard errors (an availability guard must not fail open).
+        if self.data_exfil_volume_guard and not result.blocked:
+            session_id = str((metadata or {}).get("session_id", "") or agent_id)
+            try:
+                vol_verdict = self.data_exfil_volume_guard.observe(
+                    session_id, result.sanitized_message
+                )
+                if vol_verdict.blocked:
+                    result.action = PipelineAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = f"DataExfilVolumeGuard: {vol_verdict.reason}"
+                    result.sanitized_message = (
+                        "I'm sorry, that response was withheld because it exceeded the "
+                        "allowed data volume for this session."
+                    )
+                    self._stats["outbound_blocked"] += 1
+                    entry = await self.audit_chain.append_block(
+                        f"VOLUME_BLOCKED: {vol_verdict.reason_code} "
+                        f"({vol_verdict.response_bytes}B, cumulative={vol_verdict.cumulative_bytes}B)",
+                        "outbound_volume_blocked",
+                        {
+                            **(metadata or {}),
+                            "volume_reason_code": vol_verdict.reason_code,
+                            "response_bytes": vol_verdict.response_bytes,
+                            "cumulative_bytes": vol_verdict.cumulative_bytes,
+                        },
+                    )
+                    result.audit_entry_id = entry.id
+                    result.audit_hash = entry.chain_hash
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    logger.warning(
+                        "DataExfilVolumeGuard BLOCKED outbound session=%s source=%s: %s",
+                        session_id,
+                        source,
+                        vol_verdict.reason_code,
+                    )
+                    return result
+            except Exception as exc:
+                logger.error("DataExfilVolumeGuard error: %s", exc)
+                is_owner_outbound = bool(
+                    self._owner_user_id
+                    and metadata
+                    and str(metadata.get("user_id", "")) == str(self._owner_user_id)
+                )
+                if not is_owner_outbound:
+                    result.action = PipelineAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = f"Security module error (DataExfilVolumeGuard): {exc}"
+                    self._stats["outbound_blocked"] += 1
+                    entry = self.audit_chain.append(
+                        f"MODULE_ERROR: DataExfilVolumeGuard: {exc}",
+                        "outbound_module_error",
+                        metadata,
+                    )
+                    result.audit_entry_id = entry.id
+                    result.audit_hash = entry.chain_hash
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    return result
 
         # Step 2: Egress filter
         if self.egress_filter and destination_urls:
