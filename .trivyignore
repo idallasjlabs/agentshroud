@@ -7,13 +7,13 @@
 #   - Practical exploitability is negligible in this deployment context
 #
 # Review cadence: reassess at each minor version bump of the affected package.
-
-# CVE-2021-23358 — underscore < 1.12.1, Prototype Pollution
-# Location: /var/ossec/framework/node_modules/underscore/ (Wazuh Agent 4.9.2 embedded Node.js)
-# Risk assessment:
-#   - Wazuh uses this internally for its Python framework tooling; not exposed to external input.
-#   - The vulnerable template() function is not called with untrusted data in this context.
-#   - Updating underscore inside Wazuh's internal node_modules risks breaking Wazuh internals.
-#   - Mitigated by: Wazuh runs isolated inside the gateway container with no direct external exposure.
-# Accepted risk: LOW  |  Next review: Wazuh Agent >= 5.0.0 or CVE severity upgrade
-CVE-2021-23358
+#
+# ── SCRUM-101 (2026-07-14): ZERO active suppressions. ──────────────────────────
+# The sole prior entry, CVE-2021-23358 (Prototype Pollution in `underscore` embedded
+# in Wazuh Agent 4.9.2's internal node_modules), was RETIRED — not by suppression, but
+# by upgrading Wazuh Agent 4.9.2 → 4.14.5, which ships underscore >= 1.13. A rescan of
+# both the gateway and openclaw images (trivy, CRITICAL+HIGH) confirms CVE-2021-23358 is
+# no longer present. AgentShroud now carries NO accepted/ignored container CVEs.
+#
+# Any future entry MUST document: CVE id, exact location, IEC 62443 SR 2.4 reachability
+# analysis, and why no upstream fix exists — the same standard applied above.

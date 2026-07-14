@@ -5,7 +5,8 @@
 
 # M8: Base image pinned to SHA256 digest for supply chain integrity
 # Update with: docker pull node:22-bookworm-slim && docker inspect --format='{{index .RepoDigests 0}}' node:22-bookworm-slim
-FROM node:22-bookworm-slim@sha256:7af03b14a13c8cdd38e45058fd957bf00a72bbe17feac43b1c15a689c029c732
+# SCRUM-101: digest refreshed 2026-07-14 to latest patched node:22-bookworm-slim.
+FROM node:22-bookworm-slim@sha256:6c74791e557ce11fc957704f6d4fe134a7bc8d6f5ca4403205b2966bd488f6b3
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies
@@ -56,7 +57,9 @@ RUN printf '%s\n' \
 
 # Wazuh agent — HIDS / FIM for bot workspace monitoring
 # ARM64-native since Wazuh 4.3; chown to node so it runs without root.
-ARG WAZUH_VERSION=4.9.2
+# SCRUM-101: 4.9.2 → 4.14.5 (latest 4.x; ships underscore >= 1.13, retiring the
+# CVE-2021-23358 .trivyignore suppression, and clears accumulated agent-lib CVEs).
+ARG WAZUH_VERSION=4.14.5
 RUN curl -sSfL https://packages.wazuh.com/key/GPG-KEY-WAZUH \
         | gpg --dearmor -o /usr/share/keyrings/wazuh.gpg \
     && echo "deb [trusted=yes signed-by=/usr/share/keyrings/wazuh.gpg] https://packages.wazuh.com/4.x/apt/ stable main" \
@@ -87,7 +90,8 @@ COPY docker/scripts/patch-anthropic-sdk.sh /usr/local/bin/patch-anthropic-sdk.sh
 RUN sh /usr/local/bin/patch-anthropic-sdk.sh
 
 # Install Playwright for browser automation (browser-fetch skill)
-RUN npm install -g playwright@1.50.1 && \
+# SCRUM-101: 1.50.1 → 1.55.1 (clears playwright CVE-2025-59288 HIGH; fixed floor).
+RUN npm install -g playwright@1.55.1 && \
     npx playwright install --with-deps chromium
 
 # SECURITY: Route Telegram API through AgentShroud gateway

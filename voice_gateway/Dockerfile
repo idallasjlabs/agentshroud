@@ -2,7 +2,8 @@
 # AgentShroud Voice Gateway — STT + TTS bridge for ESP32-S3-BOX-3
 # Base image pinned to SHA256 digest for supply-chain integrity (SCRUM-100).
 # Update with: docker pull python:3.12-slim && docker inspect --format='{{index .RepoDigests 0}}' python:3.12-slim
-FROM python:3.12-slim@sha256:423ed6ab25b1921a477529254bfeeabf5855151dc2c3141699a1bfc852199fbf
+# SCRUM-101: digest refreshed 2026-07-14 to latest patched python:3.12-slim.
+FROM python:3.12-slim@sha256:c3d81d25b3154142b0b42eb1e61300024426268edeb5b5a26dd7ddf64d9daf28
 
 LABEL maintainer="Isaiah Dallas Jefferson, Jr. <idallasj@gmail.com>"
 LABEL org.agentshroud.component="voice-gateway"

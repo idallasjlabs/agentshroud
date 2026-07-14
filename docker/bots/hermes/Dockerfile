@@ -14,7 +14,12 @@
 # (hermes user) via s6-setuidgid. We hook into s6 via /etc/cont-init.d/ for secrets injection
 # and first-boot config seeding. Do NOT override ENTRYPOINT or set USER hermes here.
 
-FROM nousresearch/hermes-agent:latest
+# SCRUM-101: pin to the current-latest digest (refreshed 2026-07-14) for supply-chain
+# integrity. This is an upstream vendored base we do not control — its bulk CVEs live in
+# vendored layers `apt upgrade` cannot patch (documented residual in cve-mitigation-matrix.md).
+# Refresh with: docker pull nousresearch/hermes-agent:latest && docker inspect \
+#   --format='{{index .RepoDigests 0}}' nousresearch/hermes-agent:latest
+FROM nousresearch/hermes-agent:latest@sha256:e2adeb75300977c509fa363c64a2b0bddac7b6e02888403cd79dd314d8467061
 
 USER root
 

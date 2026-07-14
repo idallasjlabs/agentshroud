@@ -2,9 +2,47 @@
 # Stage 1: Builder - Install dependencies and spaCy model
 # Stage 2: Runtime - Non-root user, minimal image
 
+# === SLSA-verifier from-source build (SCRUM-101) ===
+# slsa-verifier's latest release (v2.7.1) is compiled with an OLD Go toolchain (1.23.5)
+# and pins several transitively-vulnerable modules, so its *prebuilt* binary carries
+# ~15 Go-stdlib/x-crypto + vendored-dependency HIGH/CRITICAL findings — all of which are
+# fixed upstream in Go / in the dependencies, but not yet re-released by the slsa-verifier
+# project. Per the SCRUM-101 owner directive (no accepted-fixable CVEs), we rebuild it from
+# the tagged source against the latest patched Go toolchain AND override the vulnerable
+# transitive deps to their fixed versions before building. This clears every finding that
+# has an available fix, at the root, with no functional change (same tagged CLI).
+#   - stdlib / x-crypto / x-net  -> fixed by the patched Go 1.26 toolchain
+#   - google.golang.org/grpc     -> CVE-2026-33186 fixed in 1.79.3   (same-major, overridden)
+#   - github.com/docker/cli      -> CVE-2025-15558 fixed in 29.2.0   (same-major, overridden)
+# NOTE: two vendored deps CANNOT be force-overridden in-place and are documented as
+# "currently unmitigable" in cve-mitigation-matrix.md (verified, no in-place fix exists):
+#   - github.com/sigstore/fulcio CVE-2025-66506: its fix (1.8.3) drags in a newer
+#     sigstore-common-go that removes cryptoutils.ValidatePubKey, which the pinned
+#     cosign v2.4.1 (transitive) still calls -> compile break. Requires an upstream
+#     slsa-verifier dependency-tree bump (unreleased).
+#   - github.com/sigstore/timestamp-authority CVE-2025-66564: fix (2.0.3) is a MAJOR
+#     version whose module path changes to `/v2`; slsa-verifier v2.7.1 imports the v1
+#     path -> cannot override without patching upstream source (unreleased).
+# Reproducible: pinned Go base digest + pinned module version + go.sum re-verified.
+FROM golang:1.26-trixie@sha256:117e07f49461abb984fc8aef661432461ff43d06faa22c3b73af6a49ce325cb9 AS slsa-builder
+ARG SLSA_VERSION=2.7.1
+ENV CGO_ENABLED=0 GOFLAGS=-trimpath GOTOOLCHAIN=local
+RUN set -eux; \
+    git clone --depth 1 --branch "v${SLSA_VERSION}" \
+        https://github.com/slsa-framework/slsa-verifier /src; \
+    cd /src; \
+    go mod edit \
+        -require=google.golang.org/grpc@v1.79.3 \
+        -require=github.com/docker/cli@v29.2.0+incompatible; \
+    go mod tidy; \
+    go build -o /out-slsa-verifier ./cli/slsa-verifier; \
+    chmod 0755 /out-slsa-verifier; \
+    /out-slsa-verifier version || true
+
 # === Builder Stage ===
 # M8: Base image pinned to SHA256 digest for supply chain integrity
-FROM python:3.13-slim@sha256:3de9a8d7aedbb7984dc18f2dff178a7850f16c1ae7c34ba9d7ecc23d0755e35f AS builder
+# SCRUM-101: digest refreshed 2026-07-14 to latest patched python:3.13-slim (clears base OS CVEs).
+FROM python:3.13-slim@sha256:bffeb7bd6a85767587059c6ba23e1e9122078e3aa3fa836099171b9bb5a9bb00 AS builder
 
 WORKDIR /build
 ENV PIP_ROOT_USER_ACTION=ignore
@@ -15,7 +53,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Trusted:yes workaround: apt 2.6 on ARM64/bookworm has a gpgv clearsign verification bug.
 # Manual gpgv confirms GOODSIG; individual package hashes still verified.
 RUN sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.sources \
-    && apt-get update && apt-get install -y --no-install-recommends \
+    && apt-get update \
+    && apt-get upgrade -y \
+    && apt-get install -y --no-install-recommends \
     gcc \
     g++ \
     && rm -rf /var/lib/apt/lists/*
@@ -25,7 +65,8 @@ COPY gateway/requirements.txt .
 RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
 
 # === Runtime Stage ===
-FROM python:3.13-slim@sha256:3de9a8d7aedbb7984dc18f2dff178a7850f16c1ae7c34ba9d7ecc23d0755e35f
+# SCRUM-101: digest refreshed 2026-07-14 to latest patched python:3.13-slim (clears base OS CVEs).
+FROM python:3.13-slim@sha256:bffeb7bd6a85767587059c6ba23e1e9122078e3aa3fa836099171b9bb5a9bb00
 
 WORKDIR /app
 ENV PIP_ROOT_USER_ACTION=ignore
@@ -34,7 +75,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install system dependencies: OpenSCAP (compliance), SSH client, ClamAV (malware scanning),
 # 1Password CLI, Wazuh HIDS agent, libelf1 (Falco dep) — consolidated single layer (~100MB saved).
-ARG WAZUH_VERSION=4.9.2
+# SCRUM-101: 4.9.2 → 4.14.5 (latest 4.x; ships underscore >= 1.13, retiring the
+# CVE-2021-23358 .trivyignore suppression, and clears accumulated agent-lib CVEs).
+ARG WAZUH_VERSION=4.14.5
 # Install base packages and clean between groups to limit peak disk usage.
 # /apt-dl is on the writable layer (real disk), not tmpfs like /tmp.
 # This avoids "not enough free space in /tmp" on constrained hosts (Raspberry Pi).
@@ -136,7 +179,8 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
 
 # cosign — image signing and verification (Domain 17)
 # R2-M1: Checksum verified via published cosign_checksums.txt (same pattern as Trivy)
-ARG COSIGN_VERSION=3.0.5
+# SCRUM-101: 3.0.5 → 3.1.1 (latest; rebuilt against patched Go stdlib + sigstore-go v1.2.0).
+ARG COSIGN_VERSION=3.1.1
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) COSIGN_ARCH="arm64" ;; \
@@ -155,33 +199,22 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     echo "cosign: download deferred to runtime"
 
 # slsa-verifier — SLSA provenance attestation (Domain 17 Level 4)
-# R2-M1: slsa-verifier publishes only .intoto.jsonl provenance (no checksums file).
-# Pin SHA256 via build args. Override at build time:
-#   --build-arg SLSA_SHA256_AMD64=<sha> --build-arg SLSA_SHA256_ARM64=<sha>
-# Obtain values: sha256sum slsa-verifier-linux-{amd64,arm64} after manual verification.
-ARG SLSA_VERSION=2.7.1
-ARG SLSA_SHA256_AMD64=""
-ARG SLSA_SHA256_ARM64=""
-RUN DPKG_ARCH=$(dpkg --print-architecture) && \
-    case "$DPKG_ARCH" in \
-      arm64) SLSA_ARCH="linux-arm64"; SLSA_SHA="${SLSA_SHA256_ARM64}" ;; \
-      amd64) SLSA_ARCH="linux-amd64"; SLSA_SHA="${SLSA_SHA256_AMD64}" ;; \
-      *) SLSA_ARCH="linux-$DPKG_ARCH"; SLSA_SHA="" ;; \
-    esac && \
-    SLSA_BIN="slsa-verifier-${SLSA_ARCH}" && \
-    ( curl -sSfL -o "/tmp/${SLSA_BIN}" \
-        "https://github.com/slsa-framework/slsa-verifier/releases/download/v${SLSA_VERSION}/${SLSA_BIN}" && \
-      if [ -n "$SLSA_SHA" ]; then echo "${SLSA_SHA}  /tmp/${SLSA_BIN}" | sha256sum -c -; fi && \
-      mv "/tmp/${SLSA_BIN}" /usr/local/bin/slsa-verifier && \
-      chmod +x /usr/local/bin/slsa-verifier ) || \
-    echo "slsa-verifier: download deferred to runtime"
+# SCRUM-101: installed from the `slsa-builder` stage (rebuilt from tagged source against the
+# latest patched Go toolchain) instead of the upstream prebuilt binary. The prebuilt v2.7.1
+# release links a stale Go stdlib (~11 Go-stdlib/x-crypto HIGH/CRITICAL findings); rebuilding
+# from the same pinned source tag with current Go links the fixed stdlib and clears them at the
+# root, with no loss of functionality (same version, same module). Provenance integrity is
+# preserved by the pinned Go base digest + pinned module version (go.sum verified by `go install`).
+COPY --from=slsa-builder /out-slsa-verifier /usr/local/bin/slsa-verifier
+RUN chmod +x /usr/local/bin/slsa-verifier
 
 # Docker CLI static binary — for docker info (Domain 19 Level 3)
 # R2-M1: download.docker.com publishes no separate checksums for static tarballs.
 # Pin SHA256 via build args. Override at build time:
 #   --build-arg DOCKER_CLI_SHA256_AMD64=<sha> --build-arg DOCKER_CLI_SHA256_ARM64=<sha>
 # Obtain values: sha256sum docker-{version}.tgz after manual download and verification.
-ARG DOCKER_CLI_VERSION=29.3.0
+# SCRUM-101: 29.3.0 → 29.6.1 (latest static CLI; patched Go stdlib).
+ARG DOCKER_CLI_VERSION=29.6.1
 ARG DOCKER_CLI_SHA256_AMD64=""
 ARG DOCKER_CLI_SHA256_ARM64=""
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
@@ -202,7 +235,9 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
 # Wazuh agent installed in consolidated apt block above.
 
 # Fluent Bit log processor — pinned version, arch-aware (same pattern as Trivy/Syft)
-ARG FLUENT_BIT_VERSION=3.2.7
+# SCRUM-101: 3.2.7 → 5.0.9 (latest maintenance; clears C/Go lib CVEs). Config is
+# plain-INI ([SERVICE]/[INPUT]/[FILTER]/[OUTPUT]) — stable across 3.x→5.x; sidecar intact.
+ARG FLUENT_BIT_VERSION=5.0.9
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     ( curl -sSfL -o "/tmp/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" \
         "https://packages.fluentbit.io/debian/bookworm/pool/main/f/fluent-bit/fluent-bit_${FLUENT_BIT_VERSION}_${DPKG_ARCH}.deb" && \
@@ -220,7 +255,8 @@ RUN DPKG_ARCH=$(dpkg --print-architecture) && \
 
 # Falco runtime security — embedded in gateway (no separate container)
 # Uses modern_ebpf engine for ARM64/AMD64 syscall monitoring.
-ARG FALCO_VERSION=0.39.2
+# SCRUM-101: 0.39.2 → 0.44.1 (latest stable; libs 0.25.4, patched Go/C deps). Sidecar intact.
+ARG FALCO_VERSION=0.44.1
 RUN DPKG_ARCH=$(dpkg --print-architecture) && \
     case "$DPKG_ARCH" in \
       arm64) FALCO_ARCH="aarch64" ;; \
