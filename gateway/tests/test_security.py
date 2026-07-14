@@ -132,6 +132,55 @@ def test_valid_sources():
         assert request.source == source
 
 
+# === iOS/macOS Shortcuts Contract (SCRUM-86) ===
+#
+# The iOS/macOS Shortcuts documented in shortcuts/README.md POST to /forward
+# with source="shortcut". These tests lock the exact contract those recipes
+# depend on: the "shortcut" source value and each content_type a shortcut can
+# emit (text/url/photo). If any of these ever regress, the documented recipes
+# break, so the contract is asserted here rather than only in prose.
+
+
+def test_shortcut_source_accepted():
+    """The iOS/macOS Shortcuts source value ('shortcut') is on the allowlist."""
+    request = ForwardRequest(content="hello from Siri", source="shortcut")
+    assert request.source == "shortcut"
+    # Default content_type is text (matches the voice-capture recipe).
+    assert request.content_type == "text"
+
+
+@pytest.mark.parametrize("content_type", ["text", "url", "photo", "file"])
+def test_shortcut_content_types_accepted(content_type):
+    """Every content_type an iOS Shortcut can emit is accepted with source=shortcut.
+
+    - text  -> Siri voice capture / clipboard relay
+    - url   -> share-sheet URL
+    - photo -> screenshot / photo relay (OCR text or base64 in `content`)
+    - file  -> shared document
+    """
+    request = ForwardRequest(
+        content="payload",
+        source="shortcut",
+        content_type=content_type,
+        metadata={"kind": "shortcut_relay", "app": "Safari"},
+    )
+    assert request.source == "shortcut"
+    assert request.content_type == content_type
+    assert request.metadata["kind"] == "shortcut_relay"
+
+
+def test_shortcut_rejects_unknown_content_type():
+    """content_type is a closed Literal set; a shortcut cannot invent new types."""
+    with pytest.raises(ValueError):
+        ForwardRequest(content="payload", source="shortcut", content_type="video")
+
+
+def test_shortcut_empty_content_rejected():
+    """An empty share-sheet payload is rejected before it reaches the pipeline."""
+    with pytest.raises(ValueError, match="content must not be empty"):
+        ForwardRequest(content="   ", source="shortcut", content_type="text")
+
+
 # === Edge Cases ===
 
 
