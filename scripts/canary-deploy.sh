@@ -102,7 +102,11 @@ fi
 log "rollback anchor (current GREEN ref): ${ROLLBACK_REF}"
 
 # ── Fetch + tag the rollback anchor ───────────────────────────────────────
-run git -C "${REPO}" fetch --tags --prune origin
+# --force: a GREEN checkout may carry local version tags (v1.x) that diverge
+# from origin after a history/tag rewrite; without --force `git fetch --tags`
+# exits non-zero on "would clobber existing tag" and aborts the deploy before
+# asb rebuild ever runs (observed on marvin 2026-07-14, SCRUM-62 live run).
+run git -C "${REPO}" fetch --tags --force --prune origin
 run git -C "${REPO}" tag -f "${TAG}" "${ROLLBACK_REF}"
 run git -C "${REPO}" push -f origin "${TAG}" || log "note: could not push tag ${TAG} (continuing)"
 log "tagged rollback anchor ${TAG} -> ${ROLLBACK_REF}"
