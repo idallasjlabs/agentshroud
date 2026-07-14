@@ -377,6 +377,32 @@ def _entity_type_mapping(yaml_type: str) -> str:
     return mapping.get(yaml_type, yaml_type)
 
 
+def resolve_config_path(config_path: Optional[Path] = None) -> Path:
+    """Resolve the config file path using the same search order as load_config().
+
+    Search order:
+      1. Explicit path argument
+      2. AGENTSHROUD_CONFIG environment variable
+      3. ./agentshroud.yaml (relative to CWD)
+      4. ../agentshroud.yaml (for when running from gateway/)
+
+    Raises FileNotFoundError if none is found. Exposed so the hot-reload watcher
+    can poll exactly the file load_config() reads.
+    """
+    if config_path:
+        return config_path
+    if env_path := os.getenv("AGENTSHROUD_CONFIG"):
+        return Path(env_path)
+    if Path("agentshroud.yaml").exists():
+        return Path("agentshroud.yaml")
+    if Path("../agentshroud.yaml").exists():
+        return Path("../agentshroud.yaml")
+    raise FileNotFoundError(
+        "No agentshroud.yaml found. Searched: "
+        "./agentshroud.yaml, ../agentshroud.yaml, $AGENTSHROUD_CONFIG"
+    )
+
+
 def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
     """Load and validate configuration from agentshroud.yaml
 
@@ -400,22 +426,8 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
         FileNotFoundError: If no config file found
         ValueError: If YAML is malformed or missing required fields
     """
-    import os
-
-    # Determine config file path
-    if config_path:
-        path = config_path
-    elif env_path := os.getenv("AGENTSHROUD_CONFIG"):
-        path = Path(env_path)
-    elif Path("agentshroud.yaml").exists():
-        path = Path("agentshroud.yaml")
-    elif Path("../agentshroud.yaml").exists():
-        path = Path("../agentshroud.yaml")
-    else:
-        raise FileNotFoundError(
-            "No agentshroud.yaml found. Searched: "
-            "./agentshroud.yaml, ../agentshroud.yaml, $AGENTSHROUD_CONFIG"
-        )
+    # Determine config file path (shared with the hot-reload watcher).
+    path = resolve_config_path(config_path)
 
     logger.info(f"Loading configuration from {path.absolute()}")
 
@@ -649,3 +661,148 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
     )
 
     return config
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SCRUM-89 — Config hot-reload
+#
+# Only a subset of GatewayConfig can be safely swapped on a live gateway.
+# Startup-only settings bind sockets, open DB connections, or wire container
+# registries exactly once at boot; changing them at runtime would require a
+# re-bind / re-init and is therefore intentionally NOT hot-reloaded. They stay
+# at their last-good (boot-time) value.
+#
+# NOTE: This branch ships hot-reload of the config FILE only. The web config
+# editor and setup wizards are a larger follow-up (tracked separately) — not
+# built here.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Fields safe to hot-swap: policy, thresholds, allowlists, and routing tables
+# that every consumer reads fresh from app_state.config on each request.
+RELOADABLE_FIELDS: tuple[str, ...] = (
+    "log_level",
+    "cors_origins",
+    "pii",
+    "security",
+    "channels",
+    "proxy_allowed_domains",
+    "tool_result_pii",
+    "tool_risk",
+    "approval_queue",
+    "router",
+    "audit_export",
+)
+
+# Fields that MUST NOT change at runtime (bind/auth/DB/container wiring).
+STARTUP_ONLY_FIELDS: tuple[str, ...] = (
+    "bind",
+    "port",
+    "auth_method",
+    "auth_token",
+    "ledger",
+    "ssh",
+    "mcp_proxy_data",
+    "mcp_policy_data",
+    "bots",
+    "teams",
+)
+
+
+def apply_reloadable_config(current: GatewayConfig, new: GatewayConfig) -> list[str]:
+    """Copy only the reloadable-field subset from ``new`` onto ``current`` in place.
+
+    Startup-only fields on ``current`` are left untouched, so a config file that
+    also changes (e.g.) the bind address or auth token cannot hot-swap those
+    values. Pure and side-effect-free apart from mutating ``current``.
+
+    Returns the list of field names whose value actually changed.
+    """
+    changed: list[str] = []
+    for field in RELOADABLE_FIELDS:
+        new_value = getattr(new, field)
+        if getattr(current, field) != new_value:
+            changed.append(field)
+        setattr(current, field, new_value)
+    return changed
+
+
+def reload_config(
+    current: GatewayConfig,
+    config_path: Path,
+) -> tuple[bool, str]:
+    """Re-parse and validate ``config_path``; atomically swap in reloadable fields.
+
+    Fail-safe: on ANY parse/validation error the current config is left
+    completely untouched (last-good is kept) and ``(False, error_message)`` is
+    returned — the caller never crashes on a broken config. On success the
+    reloadable subset is applied to ``current`` and ``(True, summary)`` is
+    returned. Startup-only fields are never modified.
+    """
+    try:
+        new_config = load_config(config_path)
+    except Exception as exc:  # noqa: BLE001 — fail-safe: any error keeps last-good
+        logger.error(
+            "Config hot-reload REJECTED (keeping last-good config): %s: %s",
+            type(exc).__name__,
+            exc,
+        )
+        return False, f"reload rejected — {type(exc).__name__}: {exc}"
+
+    changed = apply_reloadable_config(current, new_config)
+    if changed:
+        logger.info("Config hot-reload applied — changed fields: %s", ", ".join(changed))
+    else:
+        logger.debug("Config hot-reload: file changed but no reloadable field differed")
+    return True, f"reload applied — {len(changed)} field(s) changed: {', '.join(changed) or 'none'}"
+
+
+def _default_mtime(path: Path) -> float:
+    """Return the file mtime, or -1.0 if the file is missing (treated as no-op)."""
+    try:
+        return path.stat().st_mtime
+    except OSError:
+        return -1.0
+
+
+async def config_watcher(
+    current: GatewayConfig,
+    config_path: Path,
+    *,
+    interval_seconds: float = 5.0,
+    stop_event: Optional["object"] = None,
+    mtime_fn=_default_mtime,
+    on_reload=None,
+    max_iterations: Optional[int] = None,
+) -> None:
+    """Background mtime-poll watcher: reload the config when the file changes.
+
+    Polls ``config_path``'s mtime every ``interval_seconds``. When the mtime
+    changes it calls :func:`reload_config` (validated, fail-safe). Injectable for
+    tests: ``mtime_fn`` supplies the mtime, ``stop_event`` (an asyncio.Event-like
+    with ``.is_set()``) requests shutdown, ``max_iterations`` bounds the loop, and
+    ``on_reload(ok, msg)`` is invoked after each reload attempt.
+
+    A missing file (mtime -1.0) is ignored rather than triggering a reject storm.
+    """
+    import asyncio
+
+    last_mtime = mtime_fn(config_path)
+    iterations = 0
+    while True:
+        if stop_event is not None and stop_event.is_set():
+            return
+        if max_iterations is not None and iterations >= max_iterations:
+            return
+        iterations += 1
+
+        await asyncio.sleep(interval_seconds)
+
+        current_mtime = mtime_fn(config_path)
+        if current_mtime < 0 or current_mtime == last_mtime:
+            continue
+
+        last_mtime = current_mtime
+        logger.info("Config file change detected (mtime=%s) — reloading", current_mtime)
+        ok, msg = reload_config(current, config_path)
+        if on_reload is not None:
+            on_reload(ok, msg)

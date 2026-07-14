@@ -38,7 +38,13 @@ from ..security.trust_manager import TrustLevel, TrustManager
 from ..ssh_proxy.proxy import SSHProxy
 from ..utils.secrets import read_secret as _read_secret
 from ..web.dashboard_endpoints import install_log_handler
-from .config import check_monitor_mode_warnings, get_module_mode, load_config
+from .config import (
+    check_monitor_mode_warnings,
+    config_watcher,
+    get_module_mode,
+    load_config,
+    resolve_config_path,
+)
 from .event_bus import EventBus
 from .ledger import DataLedger
 from .middleware import MiddlewareManager
@@ -175,6 +181,11 @@ async def lifespan(app: FastAPI):
     # Load configuration
     try:
         app_state.config = load_config()
+        # Remember the resolved path so the hot-reload watcher polls the same file.
+        try:
+            app_state.config_path = resolve_config_path()
+        except FileNotFoundError:
+            app_state.config_path = None
         logger.info("Configuration loaded successfully")
         # Check for monitor mode warnings
         check_monitor_mode_warnings(app_state.config, logger)
@@ -1509,6 +1520,37 @@ async def lifespan(app: FastAPI):
     app_state._audit_chain_heartbeat_task = _asyncio.create_task(_audit_chain_heartbeat())
     logger.info("✓ AuditChain verification heartbeat started (60s interval)")
 
+    # SCRUM-89 — Config hot-reload watcher: polls agentshroud.yaml mtime and,
+    # on change, re-parses + validates the file and atomically swaps in the
+    # reloadable subset (policy/thresholds/allowlists/routing). Invalid configs
+    # are rejected and the last-good config is kept — the gateway never crashes
+    # on a broken edit. Startup-only fields (bind/port/auth/DB/bots) are never
+    # hot-swapped. Disable with AGENTSHROUD_CONFIG_HOT_RELOAD=0.
+    _cfg_path = getattr(app_state, "config_path", None)
+    if _cfg_path is not None and os.getenv("AGENTSHROUD_CONFIG_HOT_RELOAD", "1") != "0":
+        _cfg_stop = _asyncio.Event()
+        app_state._config_watcher_stop = _cfg_stop
+
+        def _on_config_reload(ok: bool, msg: str) -> None:
+            if ok:
+                logger.info("Config hot-reload: %s", msg)
+            else:
+                logger.warning("Config hot-reload rejected — keeping last-good: %s", msg)
+
+        app_state._config_watcher_task = _asyncio.create_task(
+            config_watcher(
+                app_state.config,
+                _cfg_path,
+                interval_seconds=float(os.getenv("AGENTSHROUD_CONFIG_RELOAD_INTERVAL", "5")),
+                stop_event=_cfg_stop,
+                on_reload=_on_config_reload,
+            )
+        )
+        logger.info("✓ Config hot-reload watcher started (polling %s)", _cfg_path)
+    else:
+        app_state._config_watcher_task = None
+        logger.info("Config hot-reload watcher disabled")
+
     # Security scheduler — runs Trivy/SBOM/ClamAV/OpenSCAP on schedule
     async def _run_security_scheduler():
         scheduler = Path("/usr/local/bin/security-scheduler.sh")
@@ -2218,6 +2260,18 @@ async def lifespan(app: FastAPI):
         heartbeat_task.cancel()
         try:
             await heartbeat_task
+        except asyncio.CancelledError:
+            pass
+
+    # SCRUM-89 — Stop config hot-reload watcher (signal + cancel)
+    config_watcher_stop = getattr(app_state, "_config_watcher_stop", None)
+    if config_watcher_stop is not None:
+        config_watcher_stop.set()
+    config_watcher_task = getattr(app_state, "_config_watcher_task", None)
+    if config_watcher_task and not config_watcher_task.done():
+        config_watcher_task.cancel()
+        try:
+            await config_watcher_task
         except asyncio.CancelledError:
             pass
 
