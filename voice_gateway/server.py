@@ -271,6 +271,45 @@ def _parse_volume_command(transcript: str) -> int | None:
     return max(0, min(100, val))
 
 
+# Last volume level the server applied via a "set volume" command, in percent.
+# None until the owner calibrates with a set — the device does not report its
+# own level, so a read query before any set has nothing to answer with.
+_last_set_volume: int | None = None
+
+
+_VOLUME_QUERY_RE = re.compile(
+    # Read forms only. "set volume …" (a write) is excluded ahead of this
+    # match in _is_volume_query; trailing "at"/"set to"/"right now" tails
+    # Whisper may append are covered by the \b-terminated alternatives.
+    r"(?:"
+    r"\bwhat(?:'s|\s+is|s)?\s+(?:the\s+)?volume\b"
+    r"|\bcurrent\s+volume\b"
+    r"|\bvolume\s+(?:level|setting)\b"
+    r"|\bhow\s+loud\s+is\s+it\b"
+    r")",
+    re.IGNORECASE,
+)
+
+
+def _is_volume_query(transcript: str) -> bool:
+    """True for a spoken READ of the current volume ("what's the volume",
+    "current volume", "how loud is it"), False for set commands or unrelated
+    speech. A "set volume …" command is excluded first so the write path wins.
+    """
+    t = transcript.lower().strip()
+    if _parse_volume_command(t) is not None:
+        return False
+    return _VOLUME_QUERY_RE.search(t) is not None
+
+
+def _answer_volume_query() -> str:
+    """Spoken answer for a volume READ query: the tracked level, or a
+    calibration hint when the server has not set the volume this process."""
+    if _last_set_volume is None:
+        return "Volume is unknown — say 'set volume' followed by a percent to calibrate."
+    return f"Volume is at {_last_set_volume} percent."
+
+
 def _voice_system_message() -> Dict[str, str]:
     """Build a system message with the current date/time for voice context."""
     tz = ZoneInfo(os.environ.get("GATEWAY_TZ", "America/New_York"))
@@ -431,7 +470,7 @@ async def voice_endpoint(ws: WebSocket) -> None:
         _loop = asyncio.get_running_loop()
 
         # Resume an interrupted TTS reply from the previous connection.
-        global _reply_resume, _utterance_resume
+        global _reply_resume, _utterance_resume, _last_set_volume
         if _reply_resume is not None:
             _age = _loop.time() - _reply_resume["ts"]
             _pcm, _sent = _reply_resume["pcm"], _reply_resume["sent"]
@@ -601,6 +640,7 @@ async def voice_endpoint(ws: WebSocket) -> None:
                         agent_text = ""
                         if _vol is not None:
                             logger.info("Volume command: %d%% → device", _vol)
+                            _last_set_volume = _vol
                             await ws.send_text(
                                 json.dumps({"cmd": "set_volume", "value": _vol})
                             )
@@ -611,6 +651,16 @@ async def voice_endpoint(ws: WebSocket) -> None:
                             else:
                                 agent_text = _confirm_prefix.strip()
                                 _dispatch = False
+                        elif _is_volume_query(transcript):
+                            # Symmetric READ intercept ("what's the volume?"):
+                            # answer from the tracked level and short-circuit —
+                            # never let the query reach the agent (SCRUM-55).
+                            logger.info(
+                                "Volume query → tracked level %s",
+                                _last_set_volume,
+                            )
+                            agent_text = _answer_volume_query()
+                            _dispatch = False
 
                         # Dispatch to the appropriate agent.
                         if _dispatch and agent == "direct":
