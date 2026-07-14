@@ -76,9 +76,9 @@ class TestDryRun:
         r = _run("--dry-run", "--ref", "origin/main")
         assert r.returncode == 0
         out = r.stdout
-        assert "fetch --tags --force --prune" in out, (
-            "canary fetch must use --force so divergent GREEN tags cannot abort the deploy"
-        )
+        assert (
+            "fetch --tags --force --prune" in out
+        ), "canary fetch must use --force so divergent GREEN tags cannot abort the deploy"
 
     def test_dry_run_targets_green_ports_not_blue(self) -> None:
         # The script must never invoke anything against the blue/prod checkout;
