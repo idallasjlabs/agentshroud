@@ -2287,6 +2287,208 @@ async def test_ws_volume_command_with_chained_question(monkeypatch):
     ), f"confirmation + answer not both spoken: {spoken}"
 
 
+# ── Spoken volume READ query ──────────────────────────────────────────────────
+
+
+def test_is_volume_query_forms():
+    """Read phrasings match; set commands and unrelated speech do not."""
+    import voice_gateway.server as srv
+
+    matches = [
+        "What's the volume?",
+        "what is the volume",
+        "What's the volume at?",
+        "What is the volume set to?",
+        "current volume",
+        "How loud is it?",
+        "what's the volume right now",
+    ]
+    for text in matches:
+        assert srv._is_volume_query(text), f"should match: {text!r}"
+
+    non_matches = [
+        "Set volume to 80%.",
+        "set the volume 50",
+        "What time is it?",
+        "The volume of a sphere is...",
+        "Turn the volume up.",
+    ]
+    for text in non_matches:
+        assert not srv._is_volume_query(text), f"should not match: {text!r}"
+
+
+def test_answer_volume_query_unknown_before_any_set():
+    """Before any set, the read query reports an unknown-state calibration hint."""
+    import voice_gateway.server as srv
+
+    srv._last_set_volume = None
+    reply = srv._answer_volume_query()
+    assert "unknown" in reply.lower()
+    assert "set volume" in reply.lower()
+
+
+def test_answer_volume_query_returns_tracked_level():
+    """After a set, the read query reports the tracked level in percent."""
+    import voice_gateway.server as srv
+
+    srv._last_set_volume = 80
+    try:
+        reply = srv._answer_volume_query()
+        assert "80 percent" in reply
+    finally:
+        srv._last_set_volume = None
+
+
+@pytest.mark.asyncio
+async def test_ws_volume_query_intercepted_returns_tracked_level(monkeypatch):
+    """'What's the volume?' must NOT reach the agent: after a prior set the
+    server speaks the tracked level via the normal TTS path and never dispatches."""
+    from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_last_set_volume", 80)
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "What's the volume?")
+
+    async def _agent_must_not_be_called(transcript, agent):
+        raise AssertionError("volume query must not be routed to the agent")
+
+    monkeypatch.setattr(srv, "_call_agent", _agent_must_not_be_called)
+
+    spoken: list = []
+
+    def _capture_synth(t):
+        spoken.append(t)
+        return b"\x01\x00" * 50
+
+    monkeypatch.setattr(tts_mod, "synthesize", _capture_synth)
+
+    ws = _mock_ws(
+        [
+            {"text": "LISTEN", "bytes": None},
+            {"bytes": _pcm_bytes(), "text": None},
+            {"text": "END", "bytes": None},
+            WebSocketDisconnect(code=1000),
+        ]
+    )
+
+    await srv.voice_endpoint(ws)
+
+    sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
+    ctrl = [t for t in sent_texts if '"cmd"' in t]
+    assert not ctrl, "a read query must not send a set_volume control frame"
+    assert any("80 percent" in t for t in spoken), f"tracked level not spoken: {spoken}"
+    states = []
+    for t in sent_texts:
+        try:
+            states.append(json.loads(t).get("state"))
+        except Exception:
+            pass
+    assert states[-1] == "idle"
+
+
+@pytest.mark.asyncio
+async def test_ws_volume_query_unknown_state_intercepted(monkeypatch):
+    """Before any set, 'what is the volume' speaks the unknown-state reply and
+    still short-circuits the agent."""
+    from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_last_set_volume", None)
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "what is the volume")
+
+    async def _agent_must_not_be_called(transcript, agent):
+        raise AssertionError("volume query must not be routed to the agent")
+
+    monkeypatch.setattr(srv, "_call_agent", _agent_must_not_be_called)
+
+    spoken: list = []
+
+    def _capture_synth(t):
+        spoken.append(t)
+        return b"\x01\x00" * 50
+
+    monkeypatch.setattr(tts_mod, "synthesize", _capture_synth)
+
+    ws = _mock_ws(
+        [
+            {"text": "LISTEN", "bytes": None},
+            {"bytes": _pcm_bytes(), "text": None},
+            {"text": "END", "bytes": None},
+            WebSocketDisconnect(code=1000),
+        ]
+    )
+
+    await srv.voice_endpoint(ws)
+
+    _all_spoken = " ".join(spoken)
+    assert "unknown" in _all_spoken.lower(), f"unknown-state reply not spoken: {spoken}"
+
+
+@pytest.mark.asyncio
+async def test_ws_set_then_query_reports_the_set_level(monkeypatch):
+    """A 'set volume' updates the tracked level so a later query reports it —
+    proves the set path and the read path share the same module state."""
+    from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_last_set_volume", None)
+
+    async def _agent_must_not_be_called(transcript, agent):
+        raise AssertionError("neither set nor query may reach the agent")
+
+    monkeypatch.setattr(srv, "_call_agent", _agent_must_not_be_called)
+
+    def _capture_synth(t):
+        return b"\x01\x00" * 50
+
+    monkeypatch.setattr(tts_mod, "synthesize", _capture_synth)
+
+    # First utterance: set volume to 45%.
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "Set volume to 45%.")
+    ws1 = _mock_ws(
+        [
+            {"text": "LISTEN", "bytes": None},
+            {"bytes": _pcm_bytes(), "text": None},
+            {"text": "END", "bytes": None},
+            WebSocketDisconnect(code=1000),
+        ]
+    )
+    await srv.voice_endpoint(ws1)
+    assert srv._last_set_volume == 45, "set command did not update the tracked level"
+
+    # Second utterance: query the volume — must report the level just set.
+    spoken: list = []
+
+    def _capture_synth2(t):
+        spoken.append(t)
+        return b"\x01\x00" * 50
+
+    monkeypatch.setattr(tts_mod, "synthesize", _capture_synth2)
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "What's the volume?")
+    ws2 = _mock_ws(
+        [
+            {"text": "LISTEN", "bytes": None},
+            {"bytes": _pcm_bytes(), "text": None},
+            {"text": "END", "bytes": None},
+            WebSocketDisconnect(code=1000),
+        ]
+    )
+    await srv.voice_endpoint(ws2)
+    assert any("45 percent" in t for t in spoken), f"tracked level not spoken: {spoken}"
+
+
 # ── TTS resume-on-reconnect ───────────────────────────────────────────────────
 
 
