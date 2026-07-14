@@ -1,0 +1,8 @@
+node_modules/
+coverage/
+*.log
+
+# Root .gitignore ignores Python build dir "lib/"; re-include the extension's
+# source lib/ so forwarder.js (the tested pure logic) is tracked.
+!lib/
+!lib/**
