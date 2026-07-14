@@ -581,6 +581,94 @@ class SecurityPipeline:
                     result.processing_time_ms = (time.time() - start) * 1000
                     return result
 
+        # Step 0.6: Inbound Encoding Bypass Detection (RT-2 mitigation).
+        # Runs the EncodingDetector on the INBOUND path — previously it ran
+        # outbound-only (Step 1.6 below), so an attacker could encode an
+        # injection (base64/hex/rot13/url/unicode + nested layers) to slip past
+        # PromptGuard and the injection scanners, then have it decoded
+        # downstream.  Here we decode-and-rescan: if the detector surfaces a
+        # hidden encoding layer, the fully-decoded text is re-run through
+        # PromptGuard and the ToolResultInjectionScanner.  A detected
+        # obfuscated injection fails closed (block non-owner); the owner is
+        # audited and allowed, mirroring every other inbound guard.
+        if self.encoding_detector and not result.blocked:
+            try:
+                enc = self.encoding_detector.analyze(text=message)
+                if enc.detected and enc.cleaned_text and enc.cleaned_text != message:
+                    encodings_found = [layer.encoding for layer in enc.layers]
+                    result.encoding_detections = encodings_found
+                    result.encoding_decoded_segments = len(enc.layers)
+                    self._stats["encoding_detected"] += 1
+                    decoded_text = enc.cleaned_text
+
+                    injection_patterns: list[str] = []
+                    if self.prompt_guard:
+                        decoded_scan = self.prompt_guard.scan(decoded_text)
+                        if (
+                            decoded_scan.blocked
+                            or decoded_scan.score >= self.prompt_block_threshold
+                        ):
+                            injection_patterns.extend(
+                                f"decoded_prompt:{p}" for p in decoded_scan.patterns
+                            )
+                    if self.tool_result_injection_scanner:
+                        from gateway.security.tool_result_injection import InjectionAction
+
+                        decoded_inj = self.tool_result_injection_scanner.scan_tool_result(
+                            "user_input", decoded_text
+                        )
+                        if decoded_inj.action == InjectionAction.STRIP:
+                            injection_patterns.extend(
+                                f"decoded_injection:{p}" for p in decoded_inj.patterns
+                            )
+
+                    if injection_patterns:
+                        if is_owner:
+                            logger.info(
+                                "InboundEncoding: owner message hides injection under "
+                                "%s (patterns=%s) — allowing",
+                                encodings_found,
+                                injection_patterns,
+                            )
+                            await self.audit_chain.append_owner_bypass(
+                                message,
+                                "InboundEncoding",
+                                f"encodings={encodings_found}, patterns={injection_patterns}",
+                                metadata,
+                            )
+                        else:
+                            result.action = PipelineAction.BLOCK
+                            result.blocked = True
+                            result.block_reason = (
+                                f"Obfuscated injection detected inbound "
+                                f"(encodings={encodings_found}, patterns={injection_patterns})"
+                            )
+                            self._stats["inbound_blocked"] += 1
+                            entry = await self.audit_chain.append_block(
+                                message, "inbound_encoded_injection_blocked", metadata
+                            )
+                            result.audit_entry_id = entry.id
+                            result.audit_hash = entry.chain_hash
+                            result.processing_time_ms = (time.time() - start) * 1000
+                            return result
+                    else:
+                        logger.info(
+                            "InboundEncoding: %d encoding layer(s) decoded from %s "
+                            "with no injection payload — forwarding",
+                            len(enc.layers),
+                            source,
+                        )
+            except Exception as exc:
+                logger.error("InboundEncoding error in pipeline: %s", exc)
+                if not is_owner:
+                    # Fail closed — block non-owner on detector error.
+                    result.action = PipelineAction.BLOCK
+                    result.blocked = True
+                    result.block_reason = f"InboundEncoding error: {exc}"
+                    self._stats["inbound_blocked"] += 1
+                    result.processing_time_ms = (time.time() - start) * 1000
+                    return result
+
         # Step 1: Prompt injection scan
         # user_id / is_owner already resolved above
         if self.prompt_guard:

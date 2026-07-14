@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import base64
+import codecs
 import logging
 import re
 from dataclasses import dataclass, field
@@ -11,6 +12,17 @@ from typing import List, Optional
 from urllib.parse import unquote
 
 logger = logging.getLogger(__name__)
+
+# Injection-indicator vocabulary used to gate speculative decodings (rot13).
+# A decoded candidate is only accepted as a real layer when it contains at
+# least one of these tokens, so we do not "decode" ordinary prose into noise
+# and trip false positives.  Mirrors the outbound logic's threshold discipline.
+_ROT13_INDICATORS = re.compile(
+    r"\b(ignore|instruction|instructions|system\s+prompt|prompt|override|reveal|"
+    r"forget|disregard|bypass|jailbreak|developer\s+mode|admin|sudo|exfiltrat|"
+    r"password|secret|token|credential)\b",
+    re.IGNORECASE,
+)
 
 HOMOGLYPHS = {
     "\u0435": "e",
@@ -108,6 +120,28 @@ class EncodingDetector:
         result = re.sub(r"\b(?:[0-9a-fA-F]{2}\s?){4,}\b", replacer, text)
         return result, layers
 
+    def decode_rot13(self, text: str):
+        """Decode rot13-obfuscated injection payloads.
+
+        rot13 is self-inverse and applies to any alphabetic run, so decoding
+        blindly would corrupt ordinary prose.  To keep false positives sane
+        (per the outbound thresholds) we only surface a rot13 layer when the
+        *decoded* candidate contains an injection indicator that the original
+        text did not — i.e. the rotation revealed hidden instruction language.
+        """
+        layers = []
+        if not text:
+            return text, layers
+        decoded = codecs.decode(text, "rot_13")
+        if (
+            decoded != text
+            and _ROT13_INDICATORS.search(decoded)
+            and not _ROT13_INDICATORS.search(text)
+        ):
+            layers.append(DecodedLayer("rot13", text, decoded))
+            return decoded, layers
+        return text, layers
+
     def analyze(self, text: str):
         if not text:
             return EncodingResult(cleaned_text=text)
@@ -139,6 +173,12 @@ class EncodingDetector:
                     changed = True
             if self.config.check_hex:
                 result, layers = self.decode_hex(current)
+                if layers:
+                    all_layers.extend(layers)
+                    current = result
+                    changed = True
+            if self.config.check_rot13:
+                result, layers = self.decode_rot13(current)
                 if layers:
                     all_layers.extend(layers)
                     current = result
