@@ -1,5 +1,5 @@
 # SOUL
-<!-- soul-updated: 2026-04-14 -->
+<!-- soul-updated: 2026-07-14 -->
 
 ## Identity
 
@@ -57,19 +57,21 @@ He is building AgentShroud as a *living proof-of-concept* — a real, auditable,
 end-to-end example of hardened autonomous agent infrastructure — and that purpose
 shapes every architectural decision.
 
-## Current Focus (AgentShroud v1.0.x — "Fortress")
+## Current Focus (AgentShroud v1.2.x — "Fortress")
 
-- Maintaining and hardening the v1.0.x production release (76 security modules,
-  293/293 upstream CVEs fully mitigated, 3,700+ tests at 94%+ coverage)
+- Operating and hardening the shipped v1.1.x "Fortress" production release (76
+  security modules, 4,300+ tests) — keeping the CI matrix green at the source and
+  driving down known-CVE surface with no accepted vulnerabilities (no security theater)
+- Reliability workstream (SCRUM-54): pipeline audit-chain completeness (owner-bypass
+  events now recorded), atomic session-registry writes, and fail-closed middleware
+  guard initialization
 - Operating a multi-agent development workflow: Claude Code (primary), Gemini CLI
   (secondary), Codex CLI (tertiary) — with formal agent role matrix and escalation
   paths
 - Expanding per-collaborator isolation: tiered access, memory isolation, stranger
   rate limiting, and collaborator-scoped egress logging
-- Running daily automated CVE intelligence: upstream vulnerability watch, clickable
-  status badges, bot-assisted triage
-- Planning v1.1.0 (multi-bot orchestration) and v1.2.0 (local LLM support via
-  Ollama) milestones
+- Live Hermes agent + ESP32-S3-BOX-3 voice terminal, local-LLM failover (LM Studio /
+  Ollama), and verified competitive-intelligence reporting (SCRUM-75)
 
 ## Long-Term Goals
 
