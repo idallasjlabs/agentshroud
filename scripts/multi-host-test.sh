@@ -57,4 +57,4 @@ if [[ "$have_user" -eq 0 && -n "${MULTI_HOST_USER:-}" ]]; then
 fi
 
 cd "$REPO"
-exec "$PYTHON" -m gateway.tools.multi_host_test "${prefix[@]}" "${args[@]}"
+exec "$PYTHON" -m gateway.tools.multi_host_test ${prefix[@]+"${prefix[@]}"} ${args[@]+"${args[@]}"}
