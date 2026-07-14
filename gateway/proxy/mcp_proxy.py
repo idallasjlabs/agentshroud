@@ -236,6 +236,7 @@ class MCPProxy:
         passthrough: bool = False,
         approval_queue: Optional[EnhancedApprovalQueue] = None,
         egress_filter=None,
+        policy_engine=None,
     ):
         self.config = config or MCPProxyConfig()
         self.permissions = permission_manager or MCPPermissionManager(self.config)
@@ -245,6 +246,12 @@ class MCPProxy:
         self.passthrough = passthrough  # Bypass mode for debugging
         self.approval_queue = approval_queue
         self.egress_filter = egress_filter
+        # SCRUM-84: MCP security policy engine — the deny-by-default governance
+        # gate. Runs first in process_tool_call(); a policy DENY blocks the call
+        # before any permission/inspection/execution. High-risk tools resolve
+        # through the same approval queue. Optional: when None, the legacy
+        # permission/approval pipeline below is the sole authority.
+        self.policy_engine = policy_engine
         self._stats = {
             "total_calls": 0,
             "allowed": 0,
@@ -402,6 +409,42 @@ class MCPProxy:
                     result_summary=(str(tool_result.content)[:200] if tool_result.content else ""),
                 )
             return result
+
+        # === MCP SECURITY POLICY GATE (SCRUM-84) ===
+        # Deny-by-default governance gate: unknown/denylisted servers and
+        # denylisted tools are blocked here before any execution; high-risk
+        # tools are routed through the approval queue (enforce() awaits the
+        # human decision). Runs first so a denied call never reaches the
+        # permission/inspection/egress layers or the MCP server.
+        if self.policy_engine is not None:
+            policy_decision = await self.policy_engine.enforce(
+                tool_call.server_name,
+                tool_call.tool_name,
+                agent_id=tool_call.agent_id,
+                args=tool_call.parameters,
+            )
+            if not policy_decision.allowed:
+                self._stats["blocked"] += 1
+                block_reason = (
+                    f"MCP policy {policy_decision.action.value}: {policy_decision.reason}"
+                )
+                entry = self.audit.log_tool_call(
+                    agent_id=tool_call.agent_id,
+                    server_name=tool_call.server_name,
+                    tool_name=tool_call.tool_name,
+                    parameters=tool_call.parameters,
+                    blocked=True,
+                    block_reason=block_reason,
+                    call_id=tool_call.id,
+                )
+                return ProxyResult(
+                    allowed=False,
+                    blocked=True,
+                    block_reason=block_reason,
+                    call_id=tool_call.id,
+                    audit_entry_id=entry.id,
+                    processing_time_ms=(time.time() - start) * 1000,
+                )
 
         # === APPROVAL CHECK ===
         approved, denial_reason = await self.check_approval_required(tool_call)

@@ -312,6 +312,9 @@ class GatewayConfig(BaseModel):
     proxy_allowed_domains: list[str] = Field(default_factory=list)
     # Raw mcp_proxy section from YAML — passed to MCPProxyConfig.from_dict() at startup
     mcp_proxy_data: dict = Field(default_factory=dict)
+    # Raw mcp_policy section from YAML (SCRUM-84) — passed to
+    # MCPPolicyConfig.from_dict() at startup for the MCP security policy engine.
+    mcp_policy_data: dict = Field(default_factory=dict)
     # Security modules configuration
     security: SecurityConfig = Field(default_factory=SecurityConfig)
     # Tool result PII configuration
@@ -560,6 +563,10 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
     # MCP proxy config (raw dict — converted to MCPProxyConfig in main.py at startup)
     mcp_proxy_data = raw_config.get("mcp_proxy", {})
 
+    # MCP security policy config (SCRUM-84) — raw dict, converted to
+    # MCPPolicyConfig in lifespan.py at startup. Deny-by-default governance gate.
+    mcp_policy_data = raw_config.get("mcp_policy", {})
+
     # Map security configuration
     security_raw = raw_config.get("security_modules", {})
     security_config = SecurityConfig()
@@ -628,6 +635,7 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
         proxy_allowed_domains=proxy_allowed_domains,
         audit_export=audit_export_config,
         mcp_proxy_data=mcp_proxy_data,
+        mcp_policy_data=mcp_policy_data,
         tool_risk=tool_risk_config,
         bots=bot_configs,
         teams=teams_config,
