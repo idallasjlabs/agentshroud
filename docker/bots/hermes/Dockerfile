@@ -70,6 +70,12 @@ COPY docker/config/hermes/ /app/config-defaults/hermes/
 COPY docker/bots/hermes/start.sh /usr/local/bin/start-hermes.sh
 COPY docker/bots/hermes/init-config.sh /usr/local/bin/init-hermes-config.sh
 
+# SCRUM-70 (WS-C) — local-model parity resolver. Self-contained (no gateway deps)
+# so it runs inside this vendored image. init-config.sh / start.sh call it to set
+# model.default + model.provider from AGENTSHROUD_MODEL_MODE / HERMES_MAIN_MODEL,
+# so Hermes runs fully local (or cloud) exactly as switch_model.sh selected.
+COPY docker/bots/hermes/resolve_model.py /usr/local/lib/agentshroud/resolve_model.py
+
 # Item 8 — Stand-alone email helper for cron use
 COPY docker/bots/hermes/email_helper.sh /usr/local/bin/agentshroud-email-send.sh
 
@@ -88,6 +94,7 @@ RUN chmod +x /usr/local/bin/start-hermes.sh /usr/local/bin/init-hermes-config.sh
              /etc/s6-overlay/s6-rc.d/agentshroud-heartbeat/run \
  && mkdir -p /app/config-defaults /usr/local/lib/agentshroud \
  && chmod 755 /usr/local/lib/agentshroud/render_md_email.py \
+ && chmod 755 /usr/local/lib/agentshroud/resolve_model.py \
  && chown -R 10000:10000 /app/config-defaults \
  && touch /etc/s6-overlay/s6-rc.d/user/contents.d/agentshroud-crashwatch \
  && touch /etc/s6-overlay/s6-rc.d/user/contents.d/agentshroud-heartbeat

@@ -313,16 +313,37 @@ echo "[hermes-startup] Starting Hermes Agent gateway (Telegram/Discord long-poll
 hermes gateway run &
 _HERMES_PID=$!
 
-# Post-migration model lock: Hermes schema migration (0→30) resets model.default
-# to anthropic/claude-opus-4-7 on every fresh volume. Force haiku after startup
-# completes (health endpoint comes up only after migration finishes).
+# Post-migration model lock (SCRUM-70 — WS-C local-model parity):
+# Hermes schema migration (0→30) resets model.default to a cloud model on every
+# fresh volume. Previously this block hard-locked model.default to a cloud Claude
+# model, which silently defeated local mode — HERMES_MAIN_MODEL / AGENTSHROUD_MODEL_MODE
+# were written by switch_model.sh and passed into the container, then ignored here.
+#
+# Now the resolver decides the model + provider from the container environment so
+# Hermes runs fully local (or cloud) exactly as switch_model.sh selected. The health
+# endpoint comes up only after migration finishes, so we apply after readiness.
+_RESOLVER="/usr/local/lib/agentshroud/resolve_model.py"
+_HERMES_PY="/opt/hermes/.venv/bin/python3"
+[ -x "${_HERMES_PY}" ] || _HERMES_PY="python3"
 (
     _retries=0
     while [ $_retries -lt 30 ]; do
         if curl -sf --max-time 2 "http://localhost:8642/health" >/dev/null 2>&1; then
-            hermes config set model.default "claude-haiku-4-5-20251001" 2>/dev/null \
-                && echo "[hermes-startup] ✓ Model locked to claude-haiku-4-5-20251001 (post-migration)" \
-                || echo "[hermes-startup] ⚠ Could not lock model"
+            if [ -f "${_RESOLVER}" ]; then
+                _model="$("${_HERMES_PY}" "${_RESOLVER}" model 2>/dev/null)"
+                _provider="$("${_HERMES_PY}" "${_RESOLVER}" provider 2>/dev/null)"
+            else
+                _model=""
+                _provider=""
+            fi
+            if [ -n "${_model}" ]; then
+                hermes config set model.default "${_model}" 2>/dev/null \
+                    && hermes config set model.provider "${_provider}" 2>/dev/null \
+                    && echo "[hermes-startup] ✓ Model set to ${_model} (provider=${_provider}, mode=${AGENTSHROUD_MODEL_MODE:-cloud})" \
+                    || echo "[hermes-startup] ⚠ Could not set resolved model ${_model}"
+            else
+                echo "[hermes-startup] ⚠ Model resolver produced no model — leaving migration default"
+            fi
             break
         fi
         _retries=$((_retries + 1))
