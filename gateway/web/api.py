@@ -895,27 +895,76 @@ async def ws_updates(websocket: WebSocket, token: str = Query(default="")):
 # --- Skills manifest reload -------------------------------------------------
 
 
+class SkillGuardBlocked(Exception):
+    """Raised when SkillGuard blocks a dangerous skill tree before deploy."""
+
+    def __init__(self, detail: str) -> None:
+        super().__init__(detail)
+        self.detail = detail
+
+
+def _skills_reload_paths() -> tuple[Path, list[Path]]:
+    """Resolve the source (``~/.llm_settings/``) and bot-config destinations.
+
+    Extracted so the reload flow can be exercised against a temp tree in tests
+    without monkeypatching ``Path`` itself.
+    """
+    source = Path("~/.llm_settings").expanduser()
+    repo_root = Path(__file__).parent.parent.parent
+    destinations = [
+        repo_root / "docker" / "config" / "openclaw",
+        repo_root / "docker" / "config" / "hermes",
+    ]
+    return source, destinations
+
+
 def _skills_reload_impl() -> dict:
-    """Re-read ``~/.llm_settings/``, deploy to both bot config dirs, return summary.
+    """Re-read ``~/.llm_settings/``, scan for supply-chain risk, deploy to both bots.
+
+    SkillGuard (SCRUM-97) scans every skill/MCP/agent artefact BEFORE deploy.  A
+    tree whose highest recommendation is BLOCK is rejected — nothing is copied
+    into the running bots' config dirs.  This is the automated content inspection
+    behind the ``skill_installation`` trust decision.
 
     This is the inner implementation called by the endpoint so it can be patched
     independently in tests.
 
     Raises:
         FileNotFoundError: if ``~/.llm_settings/`` does not exist.
+        SkillGuardBlocked: if SkillGuard blocks a dangerous skill tree.
     """
-    from pathlib import Path
-
+    from ..security.skill_guard import SkillGuard
     from ..skills.manifest import SkillsManifest, deploy_manifest
 
-    source = Path("~/.llm_settings").expanduser()
+    source, destinations = _skills_reload_paths()
     manifest = SkillsManifest.from_source(source)
 
-    repo_root = Path(__file__).parent.parent.parent
-    destinations = [
-        repo_root / "docker" / "config" / "openclaw",
-        repo_root / "docker" / "config" / "hermes",
-    ]
+    # --- SkillGuard scan gate (SCRUM-97) -----------------------------------
+    # Read each manifest entry's content and scan the whole tree before any
+    # bytes are copied into a running bot.
+    guard = SkillGuard()
+    tree: dict[str, str] = {}
+    for entry in manifest.entries:
+        try:
+            tree[entry.name] = (source / entry.name).read_text(errors="replace")
+        except OSError as exc:  # unreadable artefact — treat as unscannable, skip file
+            logger.warning("SkillGuard: could not read %s (%s)", entry.name, exc)
+    scan = guard.scan_skill_tree(tree)
+    if scan.blocked:
+        offenders = sorted({f.location for f in scan.findings})[:10]
+        detail = (
+            "SkillGuard BLOCKED skill deployment: dangerous supply-chain patterns "
+            f"detected (severity={scan.severity.name}). Findings: {offenders}"
+        )
+        logger.error(detail)
+        raise SkillGuardBlocked(detail)
+    if scan.findings:
+        logger.warning(
+            "SkillGuard flagged %d finding(s) (severity=%s) — deploying with review",
+            len(scan.findings),
+            scan.severity.name,
+        )
+
     deploy_manifest(manifest, source, destinations)
 
     skill_names = sorted(
@@ -934,9 +983,12 @@ async def skills_reload(user: str = Depends(require_auth)) -> dict:
     """Re-read ``~/.llm_settings/`` and sync skills/agents/MCP into both bot configs.
 
     Owner-only (Bearer token required). Returns ``{"reloaded": true, "skills": [...names...]}``.
+    A skill tree that SkillGuard blocks returns HTTP 403 and is NOT deployed.
     """
     try:
         return _skills_reload_impl()
+    except SkillGuardBlocked as exc:
+        raise HTTPException(status_code=403, detail=exc.detail) from exc
     except FileNotFoundError as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
     except ValueError as exc:
