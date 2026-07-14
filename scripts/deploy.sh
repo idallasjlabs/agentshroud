@@ -101,9 +101,16 @@ fi
 RUNTIME=""
 COMPOSE_CMD=""
 
-# Check Docker
+# Check Docker.
+# Prefer the standalone docker-compose (hyphenated) binary: it is the working
+# form on the deploy hosts, where the docker-compose plugin ("docker compose")
+# is broken (points at a removed Docker.app). Fall back to the plugin only if
+# the standalone binary is unavailable.
 if command -v docker >/dev/null 2>&1; then
-    if docker compose version >/dev/null 2>&1; then
+    if command -v docker-compose >/dev/null 2>&1; then
+        RUNTIME="docker"
+        COMPOSE_CMD="docker-compose"
+    elif docker compose version >/dev/null 2>&1; then
         RUNTIME="docker"
         COMPOSE_CMD="docker compose"
     fi
@@ -123,7 +130,10 @@ fi
 # Check Colima Docker socket
 if [ -z "$RUNTIME" ] && [ -S "$HOME/.colima/docker.sock" ]; then
     export DOCKER_HOST="unix://$HOME/.colima/docker.sock"
-    if docker compose version >/dev/null 2>&1; then
+    if command -v docker-compose >/dev/null 2>&1; then
+        RUNTIME="docker (colima)"
+        COMPOSE_CMD="docker-compose"
+    elif docker compose version >/dev/null 2>&1; then
         RUNTIME="docker (colima)"
         COMPOSE_CMD="docker compose"
     fi

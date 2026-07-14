@@ -19,6 +19,11 @@ PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 INSTANCE_NAME="${1:-agentshroud-$(date +%Y%m%d-%H%M%S)}"
 COMPOSE_DIR="$PROJECT_DIR/docker"
 
+# Standalone docker-compose (hyphenated) is the working binary on the deploy
+# hosts; the docker-compose plugin ("docker compose") is broken there. Use a
+# single overridable variable so the invocation stays consistent.
+COMPOSE="${COMPOSE:-docker-compose}"
+
 echo "🚀 AgentShroud Multi-Instance Launcher"
 echo "======================================="
 echo "Instance: $INSTANCE_NAME"
@@ -88,14 +93,14 @@ echo ""
 echo "🔨 Building containers..."
 cd "$COMPOSE_DIR"
 
-COMPOSE_PROJECT_NAME="$INSTANCE_NAME" docker compose \
+COMPOSE_PROJECT_NAME="$INSTANCE_NAME" $COMPOSE \
     -f docker-compose.yml \
     -f "docker-compose.${INSTANCE_NAME}.yml" \
     build 2>&1 | tail -5
 
 echo ""
 echo "🚀 Starting instance..."
-COMPOSE_PROJECT_NAME="$INSTANCE_NAME" docker compose \
+COMPOSE_PROJECT_NAME="$INSTANCE_NAME" $COMPOSE \
     -f docker-compose.yml \
     -f "docker-compose.${INSTANCE_NAME}.yml" \
     up -d 2>&1
@@ -107,7 +112,7 @@ sleep 15
 # --- Check health ---
 echo ""
 echo "🏥 Health check..."
-COMPOSE_PROJECT_NAME="$INSTANCE_NAME" docker compose \
+COMPOSE_PROJECT_NAME="$INSTANCE_NAME" $COMPOSE \
     -f docker-compose.yml \
     -f "docker-compose.${INSTANCE_NAME}.yml" \
     ps --format "table {{.Name}}\t{{.Status}}\t{{.Ports}}"
@@ -136,9 +141,9 @@ echo "   HTTP Proxy:   http://127.0.0.1:${PROXY_PORT}"
 echo "   Override:     $OVERRIDE_FILE"
 echo ""
 echo "   Manage:"
-echo "     Status:  COMPOSE_PROJECT_NAME=$INSTANCE_NAME docker compose -f docker-compose.yml -f docker-compose.${INSTANCE_NAME}.yml ps"
-echo "     Logs:    COMPOSE_PROJECT_NAME=$INSTANCE_NAME docker compose -f docker-compose.yml -f docker-compose.${INSTANCE_NAME}.yml logs -f"
-echo "     Stop:    COMPOSE_PROJECT_NAME=$INSTANCE_NAME docker compose -f docker-compose.yml -f docker-compose.${INSTANCE_NAME}.yml down"
+echo "     Status:  COMPOSE_PROJECT_NAME=$INSTANCE_NAME $COMPOSE -f docker-compose.yml -f docker-compose.${INSTANCE_NAME}.yml ps"
+echo "     Logs:    COMPOSE_PROJECT_NAME=$INSTANCE_NAME $COMPOSE -f docker-compose.yml -f docker-compose.${INSTANCE_NAME}.yml logs -f"
+echo "     Stop:    COMPOSE_PROJECT_NAME=$INSTANCE_NAME $COMPOSE -f docker-compose.yml -f docker-compose.${INSTANCE_NAME}.yml down"
 echo "     Remove:  rm $OVERRIDE_FILE"
 echo ""
 echo "   Rollback (if lockdown breaks things):"

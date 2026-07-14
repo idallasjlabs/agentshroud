@@ -13,6 +13,11 @@ set -euo pipefail
 COMPOSE_FILE="$(dirname "$0")/../docker/docker-compose.yml"
 BACKUP_FILE="${COMPOSE_FILE}.pre-lockdown"
 
+# Standalone docker-compose (hyphenated) is the working binary on the deploy
+# hosts; the docker-compose plugin ("docker compose") is broken there. Use a
+# single overridable variable so the invocation stays consistent.
+COMPOSE="${COMPOSE:-docker-compose}"
+
 echo "🔒 AgentShroud Network Lockdown Activation"
 echo "==========================================="
 
@@ -34,8 +39,8 @@ sed -i "s/^\\([[:space:]]*\\)# NO_PROXY:/\\1NO_PROXY:/g" "$COMPOSE_FILE"
 echo ""
 echo "Restarting containers..."
 cd "$(dirname "$0")/../docker"
-docker compose down
-docker compose up -d
+$COMPOSE down
+$COMPOSE up -d
 
 echo ""
 echo "⏳ Waiting 15 seconds for containers to start..."
@@ -43,7 +48,7 @@ sleep 15
 
 echo ""
 echo "Container status:"
-docker compose ps
+$COMPOSE ps
 
 echo ""
 echo "🔒 Lockdown active."

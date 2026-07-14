@@ -27,7 +27,7 @@ from urllib.parse import urlparse
 from ..approval_queue.enhanced_queue import EnhancedApprovalQueue
 from .mcp_audit import MCPAuditTrail
 from .mcp_config import MCPProxyConfig, MCPServerConfig, MCPTransport
-from .mcp_inspector import MCPInspector
+from .mcp_inspector import InspectionResult, MCPInspector
 from .mcp_permissions import MCPPermissionManager
 
 logger = logging.getLogger("agentshroud.proxy.mcp_proxy")
@@ -453,19 +453,22 @@ class MCPProxy:
         approved, denial_reason = await self.check_approval_required(tool_call)
         if not approved:
             self._stats["blocked"] += 1
+            # denial_reason is always a str on the not-approved path; coerce to
+            # satisfy the str-typed block_reason parameters without changing behavior.
+            block_reason = denial_reason or ""
             entry = self.audit.log_tool_call(
                 agent_id=tool_call.agent_id,
                 server_name=tool_call.server_name,
                 tool_name=tool_call.tool_name,
                 parameters=tool_call.parameters,
                 blocked=True,
-                block_reason=denial_reason,
+                block_reason=block_reason,
                 call_id=tool_call.id,
             )
             return ProxyResult(
                 allowed=False,
                 blocked=True,
-                block_reason=denial_reason,
+                block_reason=block_reason,
                 call_id=tool_call.id,
                 audit_entry_id=entry.id,
                 processing_time_ms=(time.time() - start) * 1000,
@@ -626,6 +629,7 @@ class MCPProxy:
             result.tool_result = tool_result
 
             # 5. Inspect result
+            result_inspection: Optional[InspectionResult] = None
             if tool_result.content is not None:
                 result_inspection = self.inspector.inspect_tool_result(
                     tool_call.tool_name,
@@ -675,11 +679,11 @@ class MCPProxy:
                 error_message=tool_result.error_message,
                 result_summary=(str(tool_result.content)[:200] if tool_result.content else ""),
                 findings_count=(
-                    len(result_inspection.findings) if tool_result.content is not None else 0
+                    len(result_inspection.findings) if result_inspection is not None else 0
                 ),
                 threat_level=(
                     result_inspection.threat_level.value
-                    if tool_result.content is not None
+                    if result_inspection is not None
                     else "none"
                 ),
                 pii_redacted=(result_pii or private_redacted),

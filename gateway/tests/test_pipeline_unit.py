@@ -780,3 +780,51 @@ class TestInboundPIIOwnerExemption:
             result.sanitized_message == self.REDACTED
         ), f"Non-owner query must be redacted; got {result.sanitized_message!r}"
         assert result.pii_redaction_count == 2
+
+
+@pytest.mark.asyncio
+class TestOutboundFilterResultBinding:
+    """Regression: filter_result was possibly-unbound in process_outbound when no
+    outbound_filter is configured. The fabricated-notice escalation guard reads it
+    (pipeline.py:909), so the no-filter path must not raise UnboundLocalError and
+    must skip escalation cleanly. The with-filter path must still escalate."""
+
+    async def test_no_outbound_filter_does_not_unbind(self):
+        # outbound_filter is None -> filter_result stays None; escalation skipped.
+        pipeline = _make_pipeline()
+        assert pipeline.outbound_filter is None
+
+        result = await pipeline.process_outbound(
+            "AGENTSHROUD blocked unauthorized command execution!",
+            agent_id="agent-1",
+        )
+
+        # No UnboundLocalError, and with no filter the fabricated-notice
+        # escalation branch must not fire (response is not force-blocked here).
+        assert result.block_reason != "Fabricated security notice detected in agent response"
+        assert result.info_filter_redaction_count == 0
+
+    async def test_outbound_filter_still_escalates_fabricated_notice(self):
+        from gateway.security.outbound_filter import OutboundInfoFilter
+
+        pii = MagicMock()
+        pii.filter_xml_blocks = MagicMock(return_value=("msg", False))
+        fabricated_text = "AGENTSHROUD blocked unauthorized command execution!"
+        pii.sanitize = AsyncMock(
+            return_value=MagicMock(
+                sanitized_content=fabricated_text,
+                entity_types_found=[],
+                redactions=[],
+            )
+        )
+        pipeline = SecurityPipeline(
+            pii_sanitizer=pii,
+            outbound_filter=OutboundInfoFilter(),
+        )
+
+        result = await pipeline.process_outbound(fabricated_text, agent_id="agent-1")
+
+        assert result.blocked is True
+        assert result.action == PipelineAction.BLOCK
+        assert result.block_reason == "Fabricated security notice detected in agent response"
+        assert "AGENTSHROUD" not in result.sanitized_message

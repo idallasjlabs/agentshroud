@@ -4,6 +4,10 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 COMPOSE_FILE="${REPO_ROOT}/docker/docker-compose.yml"
+# Standalone docker-compose (hyphenated) is the working binary on the deploy
+# hosts; the docker-compose plugin ("docker compose") is broken there. Use a
+# single overridable variable so the invocation stays consistent.
+COMPOSE="${COMPOSE:-docker-compose}"
 # Allow tests to override the env file path via MODEL_ENV_FILE env var.
 MODEL_ENV_FILE="${MODEL_ENV_FILE:-${REPO_ROOT}/docker/.env}"
 # SWITCH_MODEL_TEST_MODE=1: skip Ollama/docker calls (unit-test mode).
@@ -521,7 +525,7 @@ if [[ "${SWITCH_MODEL_TEST_MODE}" != "1" ]]; then
   AGENTSHROUD_CODING_MODEL="${CODING_MODEL}" \
   AGENTSHROUD_REASONING_MODEL="${REASONING_MODEL}" \
   OPENCLAW_GATEWAY_BIND="${OPENCLAW_GATEWAY_BIND:-lan}" \
-  docker compose -f "${COMPOSE_FILE}" up -d --force-recreate gateway bot
+  $COMPOSE -f "${COMPOSE_FILE}" up -d --force-recreate gateway bot
 fi
 
 if [[ "${VERIFY_AFTER_SWITCH}" == "true" ]]; then
