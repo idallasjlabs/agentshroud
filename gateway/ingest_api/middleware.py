@@ -86,11 +86,43 @@ class MiddlewareResult:
 class MiddlewareManager:
     """Manages the P1 security middleware modules."""
 
+    # Security-critical request-path guards. If any of these RAISES during
+    # __init__ (as opposed to being deliberately disabled/not-configured), the
+    # guard cannot inspect traffic and the request path must fail CLOSED for
+    # non-owner requests — mirroring the runtime fail-closed posture in
+    # gateway/proxy/pipeline.py (ContextGuard error → BLOCK non-owner, ~line 459).
+    #
+    # A guard that is legitimately None with NO recorded init exception is a
+    # "not configured" case and does NOT trip fail-closed. Only guards recorded
+    # in ``self.failed_guards`` (constructor threw) block non-owner traffic.
+    _CRITICAL_GUARDS = frozenset(
+        {
+            "rbac_manager",
+            "user_session_manager",
+            "context_guard",
+            "metadata_guard",
+            "env_guard",
+            "git_guard",
+            "file_sandbox",
+            "browser_security",
+            "multi_turn_tracker",
+            "tool_chain_analyzer",
+            "path_isolation",
+        }
+    )
+
     def __init__(self):
         """Initialize all security modules."""
         self.original_request_data = None  # Track original request
         # Resolved from the default BotConfig in set_config(); kept as fallback here.
         self.bot_workspace_path: str = "/home/node/.openclaw/workspace"
+
+        # Records security-critical guards whose constructor RAISED during init.
+        # Maps guard attribute name → error string. Populated by
+        # ``_record_guard_init_failure``. A non-empty entry for a critical guard
+        # makes process_request() fail closed for non-owner traffic, so a guard
+        # that crashes at startup can never be silently skipped.
+        self.failed_guards: Dict[str, str] = {}
 
         # Initialize RBAC system
         try:
@@ -98,8 +130,8 @@ class MiddlewareManager:
             self.rbac_manager = RBACManager(self.rbac_config)
             logger.info("RBAC system initialized")
         except Exception as e:
-            logger.error(f"Failed to initialize RBAC system: {e}")
             self.rbac_manager = None
+            self._record_guard_init_failure("rbac_manager", e)
         # Initialize session manager for per-user isolation
         try:
             base_workspace = Path("/tmp/agentshroud/workspace")
@@ -112,22 +144,22 @@ class MiddlewareManager:
             )
             logger.info("UserSessionManager initialized")
         except Exception as e:
-            logger.error(f"Failed to initialize UserSessionManager: {e}")
             self.user_session_manager = None
+            self._record_guard_init_failure("user_session_manager", e)
 
         try:
             self.context_guard = ContextGuard()
             logger.info("ContextGuard initialized")
         except Exception as e:
-            logger.error(f"Failed to initialize ContextGuard: {e}")
             self.context_guard = None
+            self._record_guard_init_failure("context_guard", e)
 
         try:
             self.metadata_guard = MetadataGuard()
             logger.info("MetadataGuard initialized")
         except Exception as e:
-            logger.error(f"Failed to initialize MetadataGuard: {e}")
             self.metadata_guard = None
+            self._record_guard_init_failure("metadata_guard", e)
 
         try:
             self.log_sanitizer = LogSanitizer()
@@ -140,15 +172,15 @@ class MiddlewareManager:
             self.env_guard = EnvironmentGuard()
             logger.info("EnvGuard initialized")
         except Exception as e:
-            logger.error(f"Failed to initialize EnvGuard: {e}")
             self.env_guard = None
+            self._record_guard_init_failure("env_guard", e)
 
         try:
             self.git_guard = GitGuard()
             logger.info("GitGuard initialized")
         except Exception as e:
-            logger.error(f"Failed to initialize GitGuard: {e}")
             self.git_guard = None
+            self._record_guard_init_failure("git_guard", e)
 
         try:
             # FileSandbox requires a config - we'll modify this for per-user paths
@@ -160,8 +192,8 @@ class MiddlewareManager:
             self.file_sandbox = FileSandbox(config)
             logger.info("FileSandbox initialized")
         except Exception as e:
-            logger.error(f"Failed to initialize FileSandbox: {e}")
             self.file_sandbox = None
+            self._record_guard_init_failure("file_sandbox", e)
 
         try:
             self.resource_guard = ResourceGuard()
@@ -270,8 +302,8 @@ class MiddlewareManager:
             self.browser_security = BrowserSecurityGuard()
             logger.info("BrowserSecurityGuard initialized")
         except Exception as e:
-            logger.error(f"Failed to initialize BrowserSecurityGuard: {e}")
             self.browser_security = None
+            self._record_guard_init_failure("browser_security", e)
 
         # Credential Injector
         try:
@@ -326,8 +358,8 @@ class MiddlewareManager:
             self.multi_turn_tracker = MultiTurnTracker()
             logger.info("MultiTurnTracker initialized")
         except Exception as e:
-            logger.error(f"Failed to initialize MultiTurnTracker: {e}")
             self.multi_turn_tracker = None
+            self._record_guard_init_failure("multi_turn_tracker", e)
 
         # Network Validator
         try:
@@ -360,16 +392,16 @@ class MiddlewareManager:
             self.path_isolation = PathIsolationManager(PathIsolationConfig())
             logger.info("PathIsolationManager initialized")
         except Exception as e:
-            logger.error(f"Failed to initialize PathIsolationManager: {e}")
             self.path_isolation = None
+            self._record_guard_init_failure("path_isolation", e)
 
         # Tool Chain Analyzer
         try:
             self.tool_chain_analyzer = ToolChainAnalyzer()
             logger.info("ToolChainAnalyzer initialized")
         except Exception as e:
-            logger.error(f"Failed to initialize ToolChainAnalyzer: {e}")
             self.tool_chain_analyzer = None
+            self._record_guard_init_failure("tool_chain_analyzer", e)
 
         # Enhanced Tool Result Sanitizer
         try:
@@ -378,6 +410,43 @@ class MiddlewareManager:
         except Exception as e:
             logger.error(f"Failed to initialize EnhancedToolResultSanitizer: {e}")
             self.enhanced_tool_sanitizer = None
+
+    def _record_guard_init_failure(self, guard_name: str, error: Exception) -> None:
+        """Record a guard __init__ exception so the request path can fail closed.
+
+        For security-critical guards (``_CRITICAL_GUARDS``) a constructor
+        exception is a real failure — the guard is now absent and can no longer
+        inspect traffic. We log at CRITICAL (not swallow silently) and record it
+        in ``self.failed_guards`` so process_request() blocks non-owner traffic
+        instead of silently skipping the guard (which would be fail-OPEN).
+
+        Non-critical guards are logged at ERROR only and do not block traffic.
+        """
+        if guard_name in self._CRITICAL_GUARDS:
+            logger.critical(
+                "SECURITY-CRITICAL guard '%s' failed to initialize: %s — "
+                "requests will FAIL CLOSED for non-owner traffic until resolved",
+                guard_name,
+                error,
+            )
+            self.failed_guards[guard_name] = str(error)
+        else:
+            logger.error("Failed to initialize %s: %s", guard_name, error)
+
+    def _critical_guard_failure(self) -> Optional[str]:
+        """Return the name of a failed critical guard, or None if all healthy.
+
+        Uses getattr so managers constructed via __new__ (test fixtures that set
+        module attrs to None WITHOUT recording an init exception — i.e. the
+        legitimate "not configured" case) do not accidentally fail closed.
+        """
+        failed = getattr(self, "failed_guards", None)
+        if not failed:
+            return None
+        # Deterministic ordering for stable reasons/logs.
+        for name in sorted(failed):
+            return name
+        return None
 
     async def process_request(
         self,
@@ -397,6 +466,29 @@ class MiddlewareManager:
             # Extract bot_id for per-bot workspace scoping.
             # Falls back to "openclaw" for requests that predate multi-bot support.
             bot_id = str(request_data.get("bot_id") or "openclaw").strip() or "openclaw"
+
+            # Fail-closed on init failure: if a security-critical guard's
+            # constructor RAISED during startup it is now absent and cannot
+            # inspect this request. Silently skipping it (the old `if self.guard:`
+            # gate) would be fail-OPEN. Mirror the runtime posture (pipeline.py
+            # ContextGuard error → BLOCK non-owner): block non-owner traffic while
+            # any critical guard is in a failed-init state. The owner is exempt,
+            # consistent with per-guard owner bypasses below.
+            failed_guard = self._critical_guard_failure()
+            if failed_guard and not self._is_owner(user_id):
+                logger.warning(
+                    "Blocking user %s: security-critical guard '%s' failed to "
+                    "initialize (fail closed)",
+                    user_id,
+                    failed_guard,
+                )
+                return MiddlewareResult(
+                    allowed=False,
+                    reason=(
+                        f"Security guard '{failed_guard}' failed to initialize — "
+                        "request denied (fail closed)"
+                    ),
+                )
 
             # RBAC Check - Check basic permissions first
             rbac_result = self._check_rbac_permissions(request_data, user_id)
