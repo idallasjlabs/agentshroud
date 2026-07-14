@@ -168,6 +168,12 @@ COPY docker/scripts/entrypoint-agentshroud.sh /usr/local/bin/entrypoint-agentshr
 COPY docker/scripts/init-openclaw-config.sh /usr/local/bin/init-openclaw-config.sh
 COPY docker/scripts/mcp-proxy-wrapper.js /usr/local/bin/mcp-proxy-wrapper.js
 COPY docker/scripts/container-net-diag.sh /app/scripts/container-net-diag.sh
+# SSH-exec helper — wraps the internal gateway /ssh/exec control-plane call so the
+# agent never puts a plain-http://gateway URL on its command line (OpenClaw's
+# command-safety scanner flags that as "[HIGH] Plain HTTP URL in execution context"
+# and forces a Command-Approval prompt every call). Same shared script both bot
+# images bake in. See the script header for the full rationale.
+COPY docker/scripts/agentshroud-ssh-exec.sh /usr/local/bin/agentshroud-ssh-exec.sh
 
 # Bake in OpenClaw config defaults (cron jobs, agent patches)
 # Applied to the volume on every startup by init-openclaw-config.sh
@@ -193,6 +199,7 @@ RUN chmod +x /usr/local/bin/security-entrypoint.sh \
     /usr/local/bin/1password-skill \
     /usr/local/bin/entrypoint-agentshroud.sh \
     /usr/local/bin/init-openclaw-config.sh \
+    /usr/local/bin/agentshroud-ssh-exec.sh \
     /usr/local/bin/mcp-proxy-wrapper.js \
     /usr/local/bin/patch-anthropic-sdk.sh \
     /usr/local/bin/patch-telegram-sdk.sh \

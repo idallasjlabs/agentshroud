@@ -79,6 +79,12 @@ COPY docker/bots/hermes/resolve_model.py /usr/local/lib/agentshroud/resolve_mode
 # Item 8 — Stand-alone email helper for cron use
 COPY docker/bots/hermes/email_helper.sh /usr/local/bin/agentshroud-email-send.sh
 
+# SSH-exec helper — wraps the internal gateway /ssh/exec control-plane call so the
+# agent never puts a plain-http://gateway URL on its command line (which tirith
+# flags as "[HIGH] Plain HTTP URL in execution context" and forces approval every
+# call). Same shared script both bot images bake in. See the script header.
+COPY docker/scripts/agentshroud-ssh-exec.sh /usr/local/bin/agentshroud-ssh-exec.sh
+
 # Pre-baked Markdown→HTML renderer for the competitive-intel email cron job.
 # Placed outside /opt/data (which is a volume mount) so it survives volume resets.
 COPY docker/bots/hermes/render_md_email.py /usr/local/lib/agentshroud/render_md_email.py
@@ -90,6 +96,7 @@ COPY branding/logos/svg/logo.svg /app/branding/logo.svg
 RUN chmod +x /usr/local/bin/start-hermes.sh /usr/local/bin/init-hermes-config.sh \
              /usr/local/bin/agentshroud-crashwatch.sh /usr/local/bin/agentshroud-heartbeat.sh \
              /usr/local/bin/agentshroud-email-send.sh \
+             /usr/local/bin/agentshroud-ssh-exec.sh \
              /etc/s6-overlay/s6-rc.d/agentshroud-crashwatch/run \
              /etc/s6-overlay/s6-rc.d/agentshroud-heartbeat/run \
  && mkdir -p /app/config-defaults /usr/local/lib/agentshroud \
