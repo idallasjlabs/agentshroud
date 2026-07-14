@@ -127,13 +127,58 @@ class EnhancedApprovalQueue:
         return policy.require_approval
 
     async def submit_tool_request(
-        self, tool_name: str, parameters: dict[str, Any], agent_id: str = "default"
+        self,
+        tool_name: str,
+        parameters: dict[str, Any],
+        agent_id: str = "default",
+        force_tier: Optional[str] = None,
     ) -> tuple[str, bool]:
         """Submit a tool call request for approval.
+
+        Args:
+            tool_name: The (possibly qualified) tool name.
+            parameters: Tool call parameters.
+            agent_id: Requesting agent identity.
+            force_tier: When set, the caller (e.g. the MCP policy engine) has
+                *already* classified this call as high-risk and mandates human
+                approval. The queue MUST honour that verdict and enqueue a
+                blocking approval request, bypassing its own independent
+                per-name risk re-derivation. This closes the fail-open where an
+                unknown qualified ``server:tool`` name defaults to the "low"
+                tier and is auto-allowed. ``force_tier`` still respects owner
+                bypass and monitor/enforce mode.
 
         Returns:
             (request_id, requires_wait) - If requires_wait is False, tool can proceed immediately
         """
+        if force_tier is not None:
+            # Caller-mandated risk tier: enqueue a blocking approval unless the
+            # tier's policy genuinely does not require approval (e.g. owner
+            # bypass for that tier). Never silently downgrade to "low".
+            tier = str(force_tier).lower()
+            policy = self.get_policy_for_tier(tier)
+            if not self.tool_risk_config.enforce_mode:
+                return "", False
+            owner_bypassed = (
+                policy.owner_bypass
+                and self.tool_risk_config.owner_user_id
+                and agent_id == self.tool_risk_config.owner_user_id
+            )
+            if owner_bypassed or not policy.require_approval:
+                return "", False
+            request = ApprovalRequest(
+                action_type=f"tool_call_{tier}",
+                description=f"Execute {tier}-tier tool: {tool_name}",
+                details={
+                    "tool_name": tool_name,
+                    "parameters": parameters,
+                    "risk_tier": tier,
+                },
+                agent_id=agent_id,
+            )
+            item = await self.submit(request, policy)
+            return item.request_id, True
+
         if not self.requires_approval(tool_name, agent_id):
             return "", False
 

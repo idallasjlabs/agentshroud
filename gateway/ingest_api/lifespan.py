@@ -1297,13 +1297,29 @@ async def lifespan(app: FastAPI):
             mcp_proxy_config.pii_scan_enabled = True
             mcp_proxy_config.injection_scan_enabled = True
             mcp_proxy_config.audit_enabled = True
+        # SCRUM-84: MCP security policy engine — deny-by-default governance gate.
+        # Only wired when a mcp_policy section is present in YAML; absent config
+        # leaves policy_engine=None (legacy permission pipeline unchanged).
+        mcp_policy_engine = None
+        mcp_policy_data = getattr(app_state.config, "mcp_policy_data", None)
+        if mcp_policy_data:
+            from ..security.mcp_policy import MCPPolicyConfig, MCPPolicyEngine
+
+            mcp_policy_engine = MCPPolicyEngine(
+                MCPPolicyConfig.from_dict(mcp_policy_data),
+                approval_queue=app_state.approval_queue,
+            )
         app_state.mcp_proxy = MCPProxy(
             config=mcp_proxy_config,
             approval_queue=app_state.approval_queue,
             egress_filter=getattr(app_state, "egress_filter", None),
+            policy_engine=mcp_policy_engine,
         )
         logger.info(
-            f"✓ MCP proxy (mode: {mcp_mode}): {len(mcp_proxy_config.servers)} server(s) registered"
+            "✓ MCP proxy (mode: %s): %d server(s) registered; policy engine %s",
+            mcp_mode,
+            len(mcp_proxy_config.servers),
+            "ENABLED (deny-by-default)" if mcp_policy_engine else "disabled",
         )
     except Exception as e:
         logger.error(f"✗ MCP proxy: {e}")

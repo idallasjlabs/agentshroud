@@ -16,6 +16,7 @@ from gateway.security.citation_verifier import (
     CitationVerifier,
     DraftEntry,
     FetchOutcome,
+    make_httpx_fetcher,
 )
 from gateway.security.intel_report import CompetitiveIntelReport, IntelReportStore
 
@@ -301,3 +302,101 @@ def test_default_allowlist_uses_permanent_egress_domains() -> None:
     v = CitationVerifier(fetcher=fetcher)
     entry = v.verify_entry(DraftEntry("Lakera", 40, 40, candidate_urls=["https://lakera.ai/x"]))
     assert entry is not None
+
+
+# ---------------------------------------------------------------------------
+# Production httpx fetcher (make_httpx_fetcher) — deterministic, NO real network.
+#
+# httpx.stream() builds its own client internally, so we patch it with a fake
+# streaming context manager. This exercises the real proof-of-source hashing,
+# the byte-budget cap, and the network-error path without any socket I/O.
+# ---------------------------------------------------------------------------
+
+
+class _FakeStreamResponse:
+    """Stand-in for the object httpx.stream() yields as a context manager."""
+
+    def __init__(self, status_code: int, chunks: list[bytes]) -> None:
+        self.status_code = status_code
+        self._chunks = chunks
+
+    def __enter__(self) -> "_FakeStreamResponse":
+        return self
+
+    def __exit__(self, *exc) -> bool:
+        return False
+
+    def iter_bytes(self):
+        yield from self._chunks
+
+
+class TestMakeHttpxFetcher:
+    def _patch_stream(self, monkeypatch, response_or_exc) -> list[dict]:
+        """Patch httpx.stream; return a list that records the call kwargs."""
+        import httpx
+
+        calls: list[dict] = []
+
+        def _fake_stream(method, url, **kwargs):
+            calls.append({"method": method, "url": url, **kwargs})
+            if isinstance(response_or_exc, Exception):
+                raise response_or_exc
+            return response_or_exc
+
+        monkeypatch.setattr(httpx, "stream", _fake_stream)
+        return calls
+
+    def test_2xx_with_body_hashes_content(self, monkeypatch) -> None:
+        import hashlib
+
+        body = [b"hello ", b"world"]
+        expected = hashlib.sha256(b"".join(body)).hexdigest()
+        self._patch_stream(monkeypatch, _FakeStreamResponse(200, body))
+        fetch = make_httpx_fetcher()
+        out = fetch("https://lakera.ai/x")
+        assert out.status == 200
+        assert out.content_sha256 == expected
+        assert out.ok
+
+    def test_secure_stream_kwargs_are_pinned(self, monkeypatch) -> None:
+        # follow_redirects=False and trust_env=False are load-bearing SSRF/redirect
+        # protections — assert they are actually passed to httpx.stream.
+        calls = self._patch_stream(monkeypatch, _FakeStreamResponse(200, [b"x"]))
+        make_httpx_fetcher(timeout=3.0)("https://lakera.ai/x")
+        assert calls[0]["follow_redirects"] is False
+        assert calls[0]["trust_env"] is False
+        assert calls[0]["timeout"] == 3.0
+        assert calls[0]["method"] == "GET"
+
+    def test_empty_body_yields_no_hash(self, monkeypatch) -> None:
+        # A 2xx with an empty body is not proof-of-source: content_sha256 is None.
+        self._patch_stream(monkeypatch, _FakeStreamResponse(200, []))
+        out = make_httpx_fetcher()("https://lakera.ai/empty")
+        assert out.status == 200
+        assert out.content_sha256 is None
+        assert not out.ok
+
+    def test_non_2xx_status_passed_through(self, monkeypatch) -> None:
+        self._patch_stream(monkeypatch, _FakeStreamResponse(404, [b"nope"]))
+        out = make_httpx_fetcher()("https://lakera.ai/gone")
+        assert out.status == 404
+        assert not out.ok
+
+    def test_byte_budget_caps_reads(self, monkeypatch) -> None:
+        # With a 4-byte budget, hashing stops after the first chunk crosses it —
+        # a giant body cannot OOM the gateway.
+        import hashlib
+
+        chunks = [b"aaaa", b"bbbb", b"cccc"]
+        self._patch_stream(monkeypatch, _FakeStreamResponse(200, chunks))
+        out = make_httpx_fetcher(max_bytes=4)("https://lakera.ai/big")
+        assert out.content_sha256 == hashlib.sha256(b"aaaa").hexdigest()
+
+    def test_network_error_maps_to_599(self, monkeypatch) -> None:
+        import httpx
+
+        self._patch_stream(monkeypatch, httpx.ConnectError("boom"))
+        out = make_httpx_fetcher()("https://lakera.ai/x")
+        assert out.status == 599
+        assert out.content_sha256 is None
+        assert not out.ok

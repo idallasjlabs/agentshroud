@@ -33,6 +33,7 @@ import json
 import logging
 import os
 import re
+import time
 from contextlib import asynccontextmanager
 from pathlib import Path
 from datetime import datetime
@@ -71,6 +72,91 @@ _DEFAULT_AGENT = os.environ.get("VOICE_DEFAULT_AGENT", "hermes")
 # Conversation history: keep at most this many user+assistant turn pairs.
 # Older turns are dropped (FIFO) to bound token usage and maintain context.
 _MAX_HISTORY_TURNS = 10
+
+# ── SCRUM-56: voice-turn latency guard ────────────────────────────────────────
+# Hermes occasionally burns the full VG_AGENT_READ_TIMEOUT_S window on agentic
+# detours.  Suspected cause: every voice turn is absorbed into Hermes conversation
+# memory, so per-turn cost climbs all day.  Two config-gated mitigations below.
+#
+# (1) MEASURE — per-turn /forward wall-clock latency, emitted as a structured log
+#     line with an outlier flag when the turn exceeds a soft threshold.  Always on
+#     (measurement is free) so operators can see the growth trend in logs.
+_VOICE_TURN_SOFT_LATENCY_S = float(os.environ.get("VG_VOICE_TURN_SOFT_LATENCY_S", "30"))
+
+# (2) FIX — tag voice /forward requests "no_memory" so Hermes can treat the turn
+#     as ephemeral and skip persisting it into conversation memory.  DEFAULT OFF:
+#     unless VG_VOICE_NO_MEMORY is truthy, the metadata dict stays empty and the
+#     forwarded request is byte-for-byte identical to today's behaviour.
+_VOICE_NO_MEMORY = os.environ.get("VG_VOICE_NO_MEMORY", "").strip().lower() in {
+    "1",
+    "true",
+    "yes",
+    "on",
+}
+
+
+def _voice_forward_metadata(no_memory: "bool | None" = None) -> Dict[str, object]:
+    """Build the ``metadata`` dict attached to a voice ``/forward`` request.
+
+    Default (flag off) returns an empty dict so the forwarded request is unchanged
+    from legacy behaviour.  When the ``VG_VOICE_NO_MEMORY`` flag is enabled, the
+    returned dict carries ``{"no_memory": True}`` — an ephemeral tag the downstream
+    agent (Hermes) can honour to skip persisting the turn into conversation memory,
+    bounding per-turn cost across a long voice session.
+
+    ``no_memory`` is resolved at CALL time from the module flag when left as
+    ``None`` (so the gate can be toggled/tested without re-import); pass an explicit
+    bool to override.  Kept pure — no network, no env mutation at call time.
+    """
+    if no_memory is None:
+        no_memory = _VOICE_NO_MEMORY
+    if no_memory:
+        return {"no_memory": True}
+    return {}
+
+
+def _record_turn_latency(
+    agent: str,
+    duration_s: float,
+    soft_threshold_s: "float | None" = None,
+) -> Dict[str, object]:
+    """Emit a structured per-turn latency record for a voice ``/forward`` call.
+
+    Records the wall-clock duration of one agent turn and flags it as an outlier
+    when it exceeds ``soft_threshold_s`` (a soft budget — the turn still completes;
+    the flag simply marks turns worth investigating for memory-growth latency).
+    ``soft_threshold_s`` defaults to the module config at CALL time when ``None``.
+
+    Reuses the module ``logger`` (no new telemetry stack): outliers log at WARNING,
+    normal turns at INFO.  Returns the record dict so callers/tests can assert on
+    it without parsing log output.
+    """
+    if soft_threshold_s is None:
+        soft_threshold_s = _VOICE_TURN_SOFT_LATENCY_S
+    outlier = duration_s > soft_threshold_s
+    record: Dict[str, object] = {
+        "event": "voice_turn_latency",
+        "agent": agent,
+        "duration_s": round(duration_s, 3),
+        "soft_threshold_s": soft_threshold_s,
+        "outlier": outlier,
+    }
+    if outlier:
+        logger.warning(
+            "voice_turn_latency agent=%s duration_s=%.3f soft_threshold_s=%.1f OUTLIER",
+            agent,
+            duration_s,
+            soft_threshold_s,
+        )
+    else:
+        logger.info(
+            "voice_turn_latency agent=%s duration_s=%.3f soft_threshold_s=%.1f",
+            agent,
+            duration_s,
+            soft_threshold_s,
+        )
+    return record
+
 
 # Read the bearer token (kept for compatibility / future use).
 _token_file = os.environ.get("GATEWAY_AUTH_TOKEN_FILE", "/run/secrets/gateway_password")
@@ -390,16 +476,25 @@ async def _call_agent(transcript: str, agent: str) -> str:
     # is 120 s — staying under it means we still catch its graceful body.
     _read_s = float(os.environ.get("VG_AGENT_READ_TIMEOUT_S", "100"))
     timeout = httpx.Timeout(connect=10.0, read=_read_s, write=10.0, pool=5.0)
+    # SCRUM-56 fix: config-gated ephemeral tag.  Empty by default (unchanged
+    # request); {"no_memory": True} only when VG_VOICE_NO_MEMORY is enabled.
+    _body: Dict[str, object] = {
+        "content": transcript,
+        "source": "api",
+        "route_to": agent,
+        "user_id": _OWNER_USER_ID or "voice",
+    }
+    _meta = _voice_forward_metadata()
+    if _meta:
+        _body["metadata"] = _meta
+    # SCRUM-56 measure: wall-clock the agent turn so per-turn latency growth
+    # (Hermes memory bloat) is observable in logs, with an outlier flag.
+    _t0 = time.perf_counter()
     try:
         async with httpx.AsyncClient(timeout=timeout, trust_env=False) as client:
             resp = await client.post(
                 f"{_GATEWAY_URL}/forward",
-                json={
-                    "content": transcript,
-                    "source": "api",
-                    "route_to": agent,
-                    "user_id": _OWNER_USER_ID or "voice",
-                },
+                json=_body,
                 headers={
                     "Authorization": f"Bearer {_GATEWAY_TOKEN}",
                     "X-AgentShroud-User-Id": _OWNER_USER_ID or "voice",
@@ -409,6 +504,7 @@ async def _call_agent(transcript: str, agent: str) -> str:
                     "X-AgentShroud-Interactive": "1",
                 },
             )
+        _record_turn_latency(agent, time.perf_counter() - _t0)
         resp.raise_for_status()
         data = resp.json()
         agent_reply = data.get("agent_response") or ""
@@ -424,8 +520,14 @@ async def _call_agent(transcript: str, agent: str) -> str:
         )
         return notice
     except httpx.ReadTimeout:
+        # A turn that burns the full read window is the worst-case latency
+        # outlier SCRUM-56 is chasing — record it before the fallback so the
+        # timeout itself shows up in the latency log, not just the successes.
+        _record_turn_latency(agent, time.perf_counter() - _t0)
         logger.warning(
-            "Agent %r read timeout after 35 s — returning voice fallback", agent
+            "Agent %r read timeout after %.0f s — returning voice fallback",
+            agent,
+            _read_s,
         )
         return "I'm having trouble connecting right now. Please try again in a moment."
 

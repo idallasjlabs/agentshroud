@@ -31,8 +31,10 @@ from fastapi.testclient import TestClient
 # ---------------------------------------------------------------------------
 from gateway.skills.manifest import (
     ManifestEntry,
+    PlannedAction,
     SkillsManifest,
     deploy_manifest,
+    plan_deploy,
     validate_manifest,
 )
 from gateway.web.api import require_auth, router
@@ -368,3 +370,144 @@ class TestSkillsReloadEndpoint:
         ):
             resp = client.post("/api/skills/reload")
         assert resp.status_code == 500
+
+
+# ---------------------------------------------------------------------------
+# plan_deploy — pure path-mapping / plan (canonical -> per-bot)
+# ---------------------------------------------------------------------------
+
+
+class TestPlanDeploy:
+    """The plan is a pure function: it maps canonical source entries to each
+    per-bot destination path and classifies the action (create/update/skip)
+    WITHOUT touching the filesystem beyond reads. It never writes."""
+
+    def test_plan_maps_canonical_to_each_bot_destination(self, tmp_path: Path) -> None:
+        src = tmp_path / "src"
+        dest_oc = tmp_path / "openclaw"
+        dest_h = tmp_path / "hermes"
+        _write_tree(
+            src,
+            {
+                "skills/graphify/SKILL.md": "# graphify",
+                "mcp/servers.json": '{"servers":{}}',
+                "agents/hermes-soul.md": "# hermes",
+            },
+        )
+        manifest = SkillsManifest.from_source(src)
+        plan = plan_deploy(manifest, src, [dest_oc, dest_h])
+
+        # Every entry maps to a concrete per-bot destination path.
+        oc_targets = {a.dest_path for a in plan if a.dest_root == dest_oc}
+        h_targets = {a.dest_path for a in plan if a.dest_root == dest_h}
+        assert oc_targets == {
+            dest_oc / "skills/graphify/SKILL.md",
+            dest_oc / "mcp/servers.json",
+            dest_oc / "agents/hermes-soul.md",
+        }
+        assert h_targets == {
+            dest_h / "skills/graphify/SKILL.md",
+            dest_h / "mcp/servers.json",
+            dest_h / "agents/hermes-soul.md",
+        }
+
+    def test_plan_classifies_create_when_dest_absent(self, tmp_path: Path) -> None:
+        src = tmp_path / "src"
+        dest = tmp_path / "dest"
+        _write_tree(src, {"skills/a.md": "a"})
+        manifest = SkillsManifest.from_source(src)
+        plan = plan_deploy(manifest, src, [dest])
+        assert [a.action for a in plan] == ["create"]
+
+    def test_plan_classifies_skip_when_hash_matches(self, tmp_path: Path) -> None:
+        src = tmp_path / "src"
+        dest = tmp_path / "dest"
+        _write_tree(src, {"skills/a.md": "a"})
+        manifest = SkillsManifest.from_source(src)
+        deploy_manifest(manifest, src, [dest])
+        plan = plan_deploy(manifest, src, [dest])
+        assert [a.action for a in plan] == ["skip"]
+
+    def test_plan_classifies_update_when_content_differs(self, tmp_path: Path) -> None:
+        src = tmp_path / "src"
+        dest = tmp_path / "dest"
+        _write_tree(src, {"skills/a.md": "v1"})
+        deploy_manifest(SkillsManifest.from_source(src), src, [dest])
+        (src / "skills/a.md").write_text("v2")
+        manifest2 = SkillsManifest.from_source(src)
+        plan = plan_deploy(manifest2, src, [dest])
+        assert [a.action for a in plan] == ["update"]
+
+    def test_plan_is_pure_writes_nothing(self, tmp_path: Path) -> None:
+        src = tmp_path / "src"
+        dest = tmp_path / "dest"
+        _write_tree(src, {"skills/a.md": "a", "agents/p.md": "p"})
+        manifest = SkillsManifest.from_source(src)
+        plan_deploy(manifest, src, [dest])
+        # Destination root must not have been created by planning.
+        assert not dest.exists()
+
+    def test_plan_is_deterministic(self, tmp_path: Path) -> None:
+        src = tmp_path / "src"
+        dest = tmp_path / "dest"
+        _write_tree(src, {"skills/a.md": "a", "skills/b.md": "b"})
+        manifest = SkillsManifest.from_source(src)
+        p1 = plan_deploy(manifest, src, [dest])
+        p2 = plan_deploy(manifest, src, [dest])
+        assert p1 == p2
+
+
+# ---------------------------------------------------------------------------
+# deploy_manifest(dry_run=True) — plan without mutation
+# ---------------------------------------------------------------------------
+
+
+class TestDeployDryRun:
+    def test_dry_run_writes_nothing_to_empty_dest(self, tmp_path: Path) -> None:
+        src = tmp_path / "src"
+        dest = tmp_path / "dest"
+        _write_tree(src, {"skills/a.md": "a", "mcp/servers.json": "{}"})
+        manifest = SkillsManifest.from_source(src)
+        actions = deploy_manifest(manifest, src, [dest], dry_run=True)
+        # Nothing on disk — not even the destination directory or manifest.json.
+        assert not dest.exists()
+        # But the returned plan describes the work that WOULD happen.
+        assert {a.action for a in actions} == {"create"}
+
+    def test_dry_run_does_not_mutate_existing_dest(self, tmp_path: Path) -> None:
+        src = tmp_path / "src"
+        dest = tmp_path / "dest"
+        _write_tree(src, {"skills/a.md": "v1"})
+        deploy_manifest(SkillsManifest.from_source(src), src, [dest])
+
+        # Change the source; a real deploy would rewrite. Dry-run must not.
+        (src / "skills/a.md").write_text("v2")
+        manifest2 = SkillsManifest.from_source(src)
+        before = (dest / "skills/a.md").read_text()
+        mtimes_before = {p: p.stat().st_mtime_ns for p in dest.rglob("*") if p.is_file()}
+
+        actions = deploy_manifest(manifest2, src, [dest], dry_run=True)
+
+        assert (dest / "skills/a.md").read_text() == before == "v1"
+        mtimes_after = {p: p.stat().st_mtime_ns for p in dest.rglob("*") if p.is_file()}
+        assert mtimes_before == mtimes_after
+        assert [a.action for a in actions] == ["update"]
+
+    def test_real_deploy_returns_actions_too(self, tmp_path: Path) -> None:
+        src = tmp_path / "src"
+        dest = tmp_path / "dest"
+        _write_tree(src, {"skills/a.md": "a"})
+        manifest = SkillsManifest.from_source(src)
+        actions = deploy_manifest(manifest, src, [dest], dry_run=False)
+        assert [a.action for a in actions] == ["create"]
+        assert (dest / "skills/a.md").exists()
+
+    def test_planned_action_is_immutable(self, tmp_path: Path) -> None:
+        act = PlannedAction(
+            action="create",
+            name="skills/a.md",
+            dest_root=tmp_path,
+            dest_path=tmp_path / "skills/a.md",
+        )
+        with pytest.raises((AttributeError, TypeError)):
+            act.action = "update"  # type: ignore[misc]
