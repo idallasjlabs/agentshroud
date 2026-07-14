@@ -663,14 +663,18 @@ class PromptGuard:
                         double_decoded = base64.b64decode(inner_match.group()).decode(
                             "utf-8", errors="ignore"
                         )
-                        for pat in _PATTERNS[:5]:
+                        # RT-2 fix: scan decoded payload against the FULL
+                        # ruleset, not a top-N slice, so an encoded injection
+                        # matching a lower-ranked pattern is still caught.
+                        for pat in _PATTERNS:
                             if pat.pattern.search(double_decoded):
                                 findings.append((f"double_encoded_{pat.name}", 0.9))
                                 break
                     except Exception:
                         pass
-                # Recursively scan decoded content
-                for pat in _PATTERNS[:5]:  # Check top injection patterns only
+                # Recursively scan decoded content against the full ruleset
+                # (RT-2 fix: previously only _PATTERNS[:5] were checked).
+                for pat in _PATTERNS:
                     if pat.pattern.search(decoded):
                         findings.append((f"encoded_{pat.name}", 0.8))
                         break

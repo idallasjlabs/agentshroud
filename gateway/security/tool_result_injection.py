@@ -193,8 +193,10 @@ class ToolResultInjectionScanner:
         for match in b64_re.finditer(content):
             try:
                 decoded = base64.b64decode(match.group()).decode("utf-8", errors="ignore")
-                # Check for injection patterns in decoded content
-                for rule in self.rules[:6]:  # Check top-severity patterns only
+                # RT-2 fix: scan decoded payload against the FULL ruleset, not a
+                # top-N slice, so an encoded injection matching a lower-ranked
+                # rule (e.g. authority_escalation) is still detected.
+                for rule in self.rules:
                     if rule.pattern.search(decoded):
                         findings.append((f"encoded_{rule.name}", InjectionSeverity.HIGH))
                         break
@@ -208,8 +210,8 @@ class ToolResultInjectionScanner:
                 hex_str = match.group().replace("0x", "")
                 if len(hex_str) % 2 == 0:
                     decoded = bytes.fromhex(hex_str).decode("utf-8", errors="ignore")
-                    # Check for injection patterns in decoded content
-                    for rule in self.rules[:6]:  # Check top-severity patterns only
+                    # RT-2 fix: scan against the FULL ruleset (was self.rules[:6]).
+                    for rule in self.rules:
                         if rule.pattern.search(decoded):
                             findings.append((f"hex_{rule.name}", InjectionSeverity.HIGH))
                             break
