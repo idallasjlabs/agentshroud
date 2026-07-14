@@ -1,17 +1,32 @@
 # Copyright © 2026 Isaiah Dallas Jefferson, Jr. AgentShroud™. All rights reserved.
 # AgentShroud™ is a trademark of Isaiah Dallas Jefferson, Jr. (USPTO Serial No. 99728633)
 # Patent Pending — U.S. Provisional Application No. 64/018,744
-"""Upstream Agent CVE Registry — tracks known CVEs in the wrapped agents.
+"""Upstream Agent Advisory Registry — tracks known vulns in the wrapped agents.
 
 Covers OpenClaw (primary) and Hermes (secondary) agent frameworks.
-Each entry records the CVE metadata, AgentShroud mitigation status, and
+Each entry records the advisory metadata, AgentShroud mitigation status, and
 the specific defense layer that addresses (or fails to address) the issue.
 This data powers the SOC "CVE Intelligence" dashboard page and the daily
 CVE report comparisons.
 
-To add a new CVE: append to the appropriate per-agent list using the same
-dict schema (id, title, cvss, severity, disclosed, fixed_in, description,
-status, mitigation, defense_layers).
+Identifier fields (three, honest by construction):
+  * ``id``       — a clearly-synthetic AgentShroud internal ref
+                   (``ASH-OCLAW-NNN`` / ``ASH-HERMES-NNN``).  It is NEVER a real
+                   CVE id.  Historically these were fabricated ``CVE-2026-XXXXX``
+                   strings that did not exist in NVD/GHSA; the migration script
+                   ``scripts/migrate-cve-registry-ghsa.py`` relabelled them.
+  * ``ghsa_id``  — the real GitHub Security Advisory id when a confident upstream
+                   match exists, else ``None``.  Never fabricated.
+  * ``cve_id``   — the real NVD-assigned CVE id when the matched advisory carries
+                   one, else ``None`` (almost always ``None`` here).
+
+Entries whose ``ghsa_id`` and ``cve_id`` are both ``None`` are pending human
+verification — see ``scripts/cve-registry-manual-review.md``.
+
+To add a new advisory: append to the appropriate per-agent list using the same
+dict schema (id, ghsa_id, cve_id, title, cvss, severity, disclosed, fixed_in,
+description, status, mitigation, defense_layers).  Use a synthetic ``id``; never
+invent a GHSA or CVE id.
 """
 
 from __future__ import annotations
@@ -29,7 +44,9 @@ MITIGATION_STATUS = ("fully_mitigated", "partially_mitigated", "not_mitigated")
 
 _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
     {
-        "id": "CVE-2026-22171",
+        "id": "ASH-OCLAW-001",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Path Traversal in Feishu Media Download",
         "cvss": 8.2,
         "severity": "HIGH",
@@ -53,7 +70,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         ],
     },
     {
-        "id": "CVE-2026-28460",
+        "id": "ASH-OCLAW-002",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Allowlist Bypass via Shell Line-Continuation",
         "cvss": 5.9,
         "severity": "MEDIUM",
@@ -73,7 +92,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["tool_acl", "prompt_guard", "seccomp", "sandbox_mode"],
     },
     {
-        "id": "CVE-2026-29607",
+        "id": "ASH-OCLAW-003",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Allow-Always Wrapper Persistence Bypass",
         "cvss": 6.4,
         "severity": "MEDIUM",
@@ -93,7 +114,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["approval_queue", "egress_filter", "tool_acl"],
     },
     {
-        "id": "CVE-2026-32032",
+        "id": "ASH-OCLAW-004",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Arbitrary Shell Execution via SHELL Environment Variable",
         "cvss": 7.0,
         "severity": "HIGH",
@@ -112,7 +135,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["container_isolation", "read_only", "no_new_privileges", "cap_drop"],
     },
     {
-        "id": "CVE-2026-32025",
+        "id": "ASH-OCLAW-005",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "WebSocket Brute-Force / ClawJacked (No Rate Limiting on Localhost)",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -138,7 +163,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         ],
     },
     {
-        "id": "CVE-2026-22172",
+        "id": "ASH-OCLAW-006",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "WebSocket Scope Self-Declaration",
         "cvss": 9.9,
         "severity": "CRITICAL",
@@ -158,7 +185,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["rbac", "server_side_roles", "network_isolation"],
     },
     {
-        "id": "CVE-2026-32048",
+        "id": "ASH-OCLAW-007",
+        "ghsa_id": "GHSA-p7gr-f84w-hqg5",
+        "cve_id": None,
         "title": "Sandbox Escape via sessions_spawn",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -184,7 +213,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         ],
     },
     {
-        "id": "CVE-2026-32049",
+        "id": "ASH-OCLAW-008",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Oversized Media Payload DoS",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -210,7 +241,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         ],
     },
     {
-        "id": "CVE-2026-32922",
+        "id": "ASH-OCLAW-009",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Token Scope Expansion via device.token.rotate",
         "cvss": 9.9,
         "severity": "CRITICAL",
@@ -231,7 +264,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["rbac", "server_side_roles", "network_isolation", "verified_identity"],
     },
     {
-        "id": "CVE-2026-35660",
+        "id": "ASH-OCLAW-010",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Insufficient Access Control in Gateway /reset Endpoint",
         "cvss": 8.1,
         "severity": "HIGH",
@@ -252,7 +287,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["rbac", "check_permission", "progressive_lockdown", "network_isolation"],
     },
     {
-        "id": "CVE-2026-35650",
+        "id": "ASH-OCLAW-011",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Environment Variable Override Bypass",
         "cvss": 6.3,
         "severity": "MEDIUM",
@@ -275,7 +312,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["container_isolation", "read_only", "no_new_privileges", "cap_drop"],
     },
     {
-        "id": "CVE-2026-35668",
+        "id": "ASH-OCLAW-012",
+        "ghsa_id": "GHSA-hr5v-j9h9-xjhg",
+        "cve_id": None,
         "title": "Path Traversal in Sandbox Enforcement (unnormalized mediaUrl)",
         "cvss": 7.7,
         "severity": "HIGH",
@@ -302,7 +341,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         ],
     },
     {
-        "id": "CVE-2026-35625",
+        "id": "ASH-OCLAW-013",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Privilege Escalation via Silent Local Auth Reconnect",
         "cvss": 8.5,
         "severity": "HIGH",
@@ -324,7 +365,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["rbac", "verified_identity", "localhost_binding", "network_isolation"],
     },
     {
-        "id": "CVE-2026-35629",
+        "id": "ASH-OCLAW-014",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Server-Side Request Forgery (SSRF) in Channel Extension fetch()",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -347,7 +390,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["egress_filter", "egress_approval", "dns_filter", "network_validator"],
     },
     {
-        "id": "CVE-2026-34512",
+        "id": "ASH-OCLAW-015",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Improper Access Control in Session Kill Endpoint",
         "cvss": 7.3,
         "severity": "HIGH",
@@ -368,7 +413,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["tool_acl", "subagent_monitor", "network_isolation"],
     },
     {
-        "id": "CVE-2026-35669",
+        "id": "ASH-OCLAW-016",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Privilege Escalation via Plugin HTTP Auth Scope Minting",
         "cvss": 8.0,
         "severity": "HIGH",
@@ -389,7 +436,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["rbac", "server_side_roles", "network_isolation"],
     },
     {
-        "id": "CVE-2026-32051",
+        "id": "ASH-OCLAW-017",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Privilege Escalation (operator.write reaches owner-only surfaces)",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -410,7 +459,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
     },
     # ── NVD-sourced CVEs (276 entries, auto-assessed against OpenClaw 2026.4.11) ──
     {
-        "id": "CVE-2026-28363",
+        "id": "ASH-OCLAW-018",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "In OpenClaw before 2026.2.23, tools.exec.safeBins validation for sort could be bypassed...",
         "cvss": 9.9,
         "severity": "CRITICAL",
@@ -422,7 +473,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28466",
+        "id": "ASH-OCLAW-019",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 contain a vulnerability in the gateway in which it fails to...",
         "cvss": 9.9,
         "severity": "CRITICAL",
@@ -434,7 +487,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-33579",
+        "id": "ASH-OCLAW-020",
+        "ghsa_id": "GHSA-hc5h-pmr3-3497",
+        "cve_id": None,
         "title": "Before 2026.3.28 contains a privilege escalation vulnerability in the /pair approve com...",
         "cvss": 9.9,
         "severity": "CRITICAL",
@@ -446,7 +501,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27002",
+        "id": "ASH-OCLAW-021",
+        "ghsa_id": "GHSA-w235-x559-36mg",
+        "cve_id": "CVE-2026-27002",
         "title": "CVE-2026-27002",
         "cvss": 9.8,
         "severity": "CRITICAL",
@@ -458,7 +515,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28391",
+        "id": "ASH-OCLAW-022",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.2 fail to properly validate Windows cmd.exe metacharacters in ...",
         "cvss": 9.8,
         "severity": "CRITICAL",
@@ -470,7 +529,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28470",
+        "id": "ASH-OCLAW-023",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.2 contain an exec approvals (must be enabled) allowlist bypass...",
         "cvss": 9.8,
         "severity": "CRITICAL",
@@ -482,7 +543,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28474",
+        "id": "ASH-OCLAW-024",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "OpenClaw's Nextcloud Talk plugin versions prior to 2026.2.6 accept equality matching on...",
         "cvss": 9.8,
         "severity": "CRITICAL",
@@ -494,7 +557,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-30741",
+        "id": "ASH-OCLAW-025",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "A remote code execution (RCE) vulnerability in OpenClaw Agent Platform v2026.2.6 allows...",
         "cvss": 9.8,
         "severity": "CRITICAL",
@@ -520,7 +585,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         ],
     },
     {
-        "id": "CVE-2026-32038",
+        "id": "ASH-OCLAW-026",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.2.24 contains a sandbox network isolation bypass vulnerability that allows ...",
         "cvss": 9.8,
         "severity": "CRITICAL",
@@ -532,7 +599,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32924",
+        "id": "ASH-OCLAW-027",
+        "ghsa_id": "GHSA-m69h-jm2f-2pv8",
+        "cve_id": None,
         "title": "Before 2026.3.12 contains an authorization bypass vulnerability where Feishu reaction e...",
         "cvss": 9.8,
         "severity": "CRITICAL",
@@ -544,7 +613,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32973",
+        "id": "ASH-OCLAW-028",
+        "ghsa_id": "GHSA-f8r2-vg7x-gh8m",
+        "cve_id": None,
         "title": "Before 2026.3.11 contains an exec allowlist bypass vulnerability where matchesExecAllow...",
         "cvss": 9.8,
         "severity": "CRITICAL",
@@ -556,7 +627,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32975",
+        "id": "ASH-OCLAW-029",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.12 contains a weak authorization vulnerability in Zalouser allowlist mode...",
         "cvss": 9.8,
         "severity": "CRITICAL",
@@ -568,7 +641,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32987",
+        "id": "ASH-OCLAW-030",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.13 allows bootstrap setup codes to be replayed during device pairing veri...",
         "cvss": 9.8,
         "severity": "CRITICAL",
@@ -580,7 +655,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32917",
+        "id": "ASH-OCLAW-031",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.13 contains a remote command injection vulnerability in the iMessage atta...",
         "cvss": 9.8,
         "severity": "CRITICAL",
@@ -592,7 +669,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28446",
+        "id": "ASH-OCLAW-032",
+        "ghsa_id": "GHSA-4rj2-gpmh-qq5x",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.1 with the voice-call extension installed and enabled contain ...",
         "cvss": 9.4,
         "severity": "CRITICAL",
@@ -604,7 +683,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32916",
+        "id": "ASH-OCLAW-033",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions 2026.3.7 before 2026.3.11 contain an authorization bypass vulnerability where ...",
         "cvss": 9.4,
         "severity": "CRITICAL",
@@ -616,7 +697,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32913",
+        "id": "ASH-OCLAW-034",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.7 contains an improper header validation vulnerability in fetchWithSsrFGu...",
         "cvss": 9.3,
         "severity": "CRITICAL",
@@ -628,7 +711,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-25253",
+        "id": "ASH-OCLAW-035",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "(aka clawdbot or Moltbot) before 2026.1.29 obtains a gatewayUrl value from a query stri...",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -640,7 +725,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-24763",
+        "id": "ASH-OCLAW-036",
+        "ghsa_id": "GHSA-mc68-q9jw-2h3v",
+        "cve_id": "CVE-2026-24763",
         "title": "(formerly  Clawdbot) is a personal AI assistant you run on your own devices",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -652,7 +739,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-26323",
+        "id": "ASH-OCLAW-037",
+        "ghsa_id": "GHSA-m7x8-2w3w-pr42",
+        "cve_id": "CVE-2026-26323",
         "title": "CVE-2026-26323",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -664,7 +753,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-29610",
+        "id": "ASH-OCLAW-038",
+        "ghsa_id": "GHSA-jqpq-mgvm-f9r6",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 contain a command hijacking vulnerability that allows attac...",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -676,7 +767,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32059",
+        "id": "ASH-OCLAW-039",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Version 2026.2.22-2 prior to 2026.2.23 tools.exec.safeBins validation for sort command ...",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -688,7 +781,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32060",
+        "id": "ASH-OCLAW-040",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 contain a path traversal vulnerability in apply_patch that ...",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -700,7 +795,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32013",
+        "id": "ASH-OCLAW-041",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.25 contain a symlink traversal vulnerability in the agents.fil...",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -712,7 +809,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32042",
+        "id": "ASH-OCLAW-042",
+        "ghsa_id": "GHSA-553v-f69r-656j",
+        "cve_id": None,
         "title": "Versions 2026.2.22 prior to 2026.2.25 contain a privilege escalation vulnerability allo...",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -724,7 +823,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32914",
+        "id": "ASH-OCLAW-043",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.12 contains an insufficient access control vulnerability in the /config a...",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -736,7 +837,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32915",
+        "id": "ASH-OCLAW-044",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.11 contains a sandbox boundary bypass vulnerability allowing leaf subagen...",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -748,7 +851,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-33573",
+        "id": "ASH-OCLAW-045",
+        "ghsa_id": "GHSA-2rqg-gjgv-84jm",
+        "cve_id": None,
         "title": "Before 2026.3.11 contains an authorization bypass vulnerability in the gateway agent RP...",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -760,7 +865,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35638",
+        "id": "ASH-OCLAW-046",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.22 contains a privilege escalation vulnerability in the Control UI that a...",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -772,7 +879,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35639",
+        "id": "ASH-OCLAW-047",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.22 contains a privilege escalation vulnerability in the device.pair.appro...",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -784,7 +893,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35643",
+        "id": "ASH-OCLAW-048",
+        "ghsa_id": "GHSA-cxmw-p77q-wchg",
+        "cve_id": None,
         "title": "Before 2026.3.22 contains an unvalidated WebView JavascriptInterface vulnerability allo...",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -796,7 +907,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35663",
+        "id": "ASH-OCLAW-049",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.25 contains a privilege escalation vulnerability allowing non-admin opera...",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -808,7 +921,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35666",
+        "id": "ASH-OCLAW-050",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.22 contains an allowlist bypass vulnerability in system.run approvals tha...",
         "cvss": 8.8,
         "severity": "HIGH",
@@ -820,7 +935,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-31998",
+        "id": "ASH-OCLAW-051",
+        "ghsa_id": "GHSA-gw85-xp4q-5gp9",
+        "cve_id": None,
         "title": "Versions 2026.2.22 and 2026.2.23 contain an authorization bypass vulnerability in the s...",
         "cvss": 8.6,
         "severity": "HIGH",
@@ -832,7 +949,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "plugin_disabled"],
     },
     {
-        "id": "CVE-2026-32974",
+        "id": "ASH-OCLAW-052",
+        "ghsa_id": "GHSA-g353-mgv3-8pcj",
+        "cve_id": None,
         "title": "Before 2026.3.12 contains an authentication bypass vulnerability in Feishu webhook mode...",
         "cvss": 8.6,
         "severity": "HIGH",
@@ -844,7 +963,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-25593",
+        "id": "ASH-OCLAW-053",
+        "ghsa_id": "GHSA-g55j-c2v4-pjcg",
+        "cve_id": "CVE-2026-25593",
         "title": "CVE-2026-25593",
         "cvss": 8.4,
         "severity": "HIGH",
@@ -856,7 +977,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28463",
+        "id": "ASH-OCLAW-054",
+        "ghsa_id": "GHSA-xvhf-x56f-2hpp",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 contain an arbitrary file read vulnerability in the exec-ap...",
         "cvss": 8.4,
         "severity": "HIGH",
@@ -868,7 +991,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28485",
+        "id": "ASH-OCLAW-055",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions 2026.1.5 prior to 2026.2.12 fail to enforce mandatory authentication on the /a...",
         "cvss": 8.4,
         "severity": "HIGH",
@@ -880,7 +1005,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32918",
+        "id": "ASH-OCLAW-056",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.11 contains a session sandbox escape vulnerability in the session_status ...",
         "cvss": 8.4,
         "severity": "HIGH",
@@ -892,7 +1019,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-33572",
+        "id": "ASH-OCLAW-057",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.2.17 creates session transcript JSONL files with overly broad default permi...",
         "cvss": 8.4,
         "severity": "HIGH",
@@ -904,7 +1033,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32920",
+        "id": "ASH-OCLAW-058",
+        "ghsa_id": "GHSA-99qw-6mr3-36qr",
+        "cve_id": None,
         "title": "Before 2026.3.12 automatically discovers and loads plugins from .OpenClaw/extensions/ w...",
         "cvss": 8.4,
         "severity": "HIGH",
@@ -916,7 +1047,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28451",
+        "id": "ASH-OCLAW-059",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 contain server-side request forgery vulnerabilities in the ...",
         "cvss": 8.3,
         "severity": "HIGH",
@@ -928,7 +1061,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28476",
+        "id": "ASH-OCLAW-060",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 contain a server-side request forgery vulnerability in the ...",
         "cvss": 8.3,
         "severity": "HIGH",
@@ -940,7 +1075,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-34504",
+        "id": "ASH-OCLAW-061",
+        "ghsa_id": "GHSA-qxgf-hmcj-3xw3",
+        "cve_id": None,
         "title": "Before 2026.3.28 contains a server-side request forgery vulnerability in the fal provid...",
         "cvss": 8.3,
         "severity": "HIGH",
@@ -952,7 +1089,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28447",
+        "id": "ASH-OCLAW-062",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions 2026.1.29-beta.1 prior to 2026.2.1 contain a path traversal vulnerability in p...",
         "cvss": 8.1,
         "severity": "HIGH",
@@ -964,7 +1103,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28458",
+        "id": "ASH-OCLAW-063",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Version 2026.1.20 prior to 2026.2.1 contains a vulnerability in the Browser Relay (exte...",
         "cvss": 8.1,
         "severity": "HIGH",
@@ -976,7 +1117,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28472",
+        "id": "ASH-OCLAW-064",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.2 contain a vulnerability in the gateway WebSocket connect han...",
         "cvss": 8.1,
         "severity": "HIGH",
@@ -988,7 +1131,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28473",
+        "id": "ASH-OCLAW-065",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.2 contain an authorization bypass vulnerability where clients ...",
         "cvss": 8.1,
         "severity": "HIGH",
@@ -1000,7 +1145,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32302",
+        "id": "ASH-OCLAW-066",
+        "ghsa_id": "GHSA-5wcw-8jjv-m286",
+        "cve_id": "CVE-2026-32302",
         "title": "CVE-2026-32302",
         "cvss": 8.1,
         "severity": "HIGH",
@@ -1012,7 +1159,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32034",
+        "id": "ASH-OCLAW-067",
+        "ghsa_id": "GHSA-3cvx-236h-m9fj",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.21 contain an authentication bypass vulnerability in the Contr...",
         "cvss": 8.1,
         "severity": "HIGH",
@@ -1024,7 +1173,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-33577",
+        "id": "ASH-OCLAW-068",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.28 contains an insufficient scope validation vulnerability in the node pa...",
         "cvss": 8.1,
         "severity": "HIGH",
@@ -1036,7 +1187,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-34503",
+        "id": "ASH-OCLAW-069",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.28 fails to disconnect active WebSocket sessions when devices are removed...",
         "cvss": 8.1,
         "severity": "HIGH",
@@ -1048,7 +1201,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35645",
+        "id": "ASH-OCLAW-070",
+        "ghsa_id": "GHSA-h4jx-hjr3-fhgc",
+        "cve_id": None,
         "title": "Before 2026.3.25 contains a privilege escalation vulnerability in the gateway plugin su...",
         "cvss": 8.1,
         "severity": "HIGH",
@@ -1060,7 +1215,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35653",
+        "id": "ASH-OCLAW-071",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.24 contains an incorrect authorization vulnerability in the POST /reset-p...",
         "cvss": 8.1,
         "severity": "HIGH",
@@ -1072,7 +1229,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32014",
+        "id": "ASH-OCLAW-072",
+        "ghsa_id": "GHSA-r65x-2hqr-j5hf",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.26 contain a metadata spoofing vulnerability where reconnect p...",
         "cvss": 8.0,
         "severity": "HIGH",
@@ -1084,7 +1243,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32978",
+        "id": "ASH-OCLAW-073",
+        "ghsa_id": "GHSA-qc36-x95h-7j53",
+        "cve_id": None,
         "title": "Before 2026.3.11 contains an approval integrity vulnerability where system.run approval...",
         "cvss": 8.0,
         "severity": "HIGH",
@@ -1096,7 +1257,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27001",
+        "id": "ASH-OCLAW-074",
+        "ghsa_id": "GHSA-2qj5-gwg2-xwc4",
+        "cve_id": "CVE-2026-27001",
         "title": "CVE-2026-27001",
         "cvss": 7.8,
         "severity": "HIGH",
@@ -1108,7 +1271,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32015",
+        "id": "ASH-OCLAW-075",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions 2026.1.21 prior to 2026.2.19 contain a path hijacking vulnerability in tools.e...",
         "cvss": 7.8,
         "severity": "HIGH",
@@ -1120,7 +1285,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32016",
+        "id": "ASH-OCLAW-076",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 on macOS contain a path validation bypass vulnerability in ...",
         "cvss": 7.8,
         "severity": "HIGH",
@@ -1132,7 +1299,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35641",
+        "id": "ASH-OCLAW-077",
+        "ghsa_id": "GHSA-m3mh-3mpg-37hw",
+        "cve_id": None,
         "title": "Before 2026.3.24 contains an arbitrary code execution vulnerability in local plugin and...",
         "cvss": 7.8,
         "severity": "HIGH",
@@ -1144,7 +1313,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-25157",
+        "id": "ASH-OCLAW-078",
+        "ghsa_id": "GHSA-q284-4pvr-m585",
+        "cve_id": "CVE-2026-25157",
         "title": "CVE-2026-25157",
         "cvss": 7.7,
         "severity": "HIGH",
@@ -1156,7 +1327,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28393",
+        "id": "ASH-OCLAW-079",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions 2.0.0-beta3 prior to 2026.2.14 contain a path traversal vulnerability in hook ...",
         "cvss": 7.7,
         "severity": "HIGH",
@@ -1168,7 +1341,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28468",
+        "id": "ASH-OCLAW-080",
+        "ghsa_id": "GHSA-h9g4-589h-68xv",
+        "cve_id": None,
         "title": "Versions 2026.1.29-beta.1 prior to 2026.2.14 contain a vulnerability in the sandbox bro...",
         "cvss": 7.7,
         "severity": "HIGH",
@@ -1180,7 +1355,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32064",
+        "id": "ASH-OCLAW-081",
+        "ghsa_id": "GHSA-25gx-x37c-7pph",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.21 sandbox browser entrypoint launches x11vnc without authenti...",
         "cvss": 7.7,
         "severity": "HIGH",
@@ -1192,7 +1369,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-26322",
+        "id": "ASH-OCLAW-082",
+        "ghsa_id": "GHSA-g6q9-8fvw-f7rf",
+        "cve_id": "CVE-2026-26322",
         "title": "CVE-2026-26322",
         "cvss": 7.6,
         "severity": "HIGH",
@@ -1204,7 +1383,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "egress_filter"],
     },
     {
-        "id": "CVE-2026-27487",
+        "id": "ASH-OCLAW-083",
+        "ghsa_id": "GHSA-4564-pvr2-qq4h",
+        "cve_id": "CVE-2026-27487",
         "title": "CVE-2026-27487",
         "cvss": 7.6,
         "severity": "HIGH",
@@ -1216,7 +1397,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-22181",
+        "id": "ASH-OCLAW-084",
+        "ghsa_id": "GHSA-8mvx-p2r9-r375",
+        "cve_id": None,
         "title": "Versions prior to 2026.3.2 contain a DNS pinning bypass vulnerability in strict URL fet...",
         "cvss": 7.6,
         "severity": "HIGH",
@@ -1228,7 +1411,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32055",
+        "id": "ASH-OCLAW-085",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.26 contain a path traversal vulnerability in workspace boundar...",
         "cvss": 7.6,
         "severity": "HIGH",
@@ -1240,7 +1425,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-34426",
+        "id": "ASH-OCLAW-086",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to commit b57b680 contain an approval bypass vulnerability due to incons...",
         "cvss": 7.6,
         "severity": "HIGH",
@@ -1251,7 +1438,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["approval_queue", "proxy_interception"],
     },
     {
-        "id": "CVE-2026-25474",
+        "id": "ASH-OCLAW-087",
+        "ghsa_id": "GHSA-mp5h-m6qj-6292",
+        "cve_id": "CVE-2026-25474",
         "title": "CVE-2026-25474",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1263,7 +1452,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-26316",
+        "id": "ASH-OCLAW-088",
+        "ghsa_id": "GHSA-pchc-86f6-8758",
+        "cve_id": "CVE-2026-26316",
         "title": "CVE-2026-26316",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1275,7 +1466,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-26319",
+        "id": "ASH-OCLAW-089",
+        "ghsa_id": "GHSA-4hg8-92x6-h2f3",
+        "cve_id": "CVE-2026-26319",
         "title": "CVE-2026-26319",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1287,7 +1480,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-26321",
+        "id": "ASH-OCLAW-090",
+        "ghsa_id": "GHSA-8jpq-5h99-ff5r",
+        "cve_id": "CVE-2026-26321",
         "title": "CVE-2026-26321",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1299,7 +1494,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "OPENCLAW_DISABLE_HOST_FILESYSTEM", "read_only_container"],
     },
     {
-        "id": "CVE-2026-26324",
+        "id": "ASH-OCLAW-091",
+        "ghsa_id": "GHSA-jrvc-8ff5-2f9f",
+        "cve_id": "CVE-2026-26324",
         "title": "CVE-2026-26324",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1311,7 +1508,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28392",
+        "id": "ASH-OCLAW-092",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 contain a privilege escalation vulnerability in the Slack s...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1323,7 +1522,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28453",
+        "id": "ASH-OCLAW-093",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 fail to validate TAR archive entry paths during extraction,...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1335,7 +1536,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28454",
+        "id": "ASH-OCLAW-094",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.2 fail to validate webhook secrets in Telegram webhook mode (m...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1347,7 +1550,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28462",
+        "id": "ASH-OCLAW-095",
+        "ghsa_id": "GHSA-gq9c-wg68-gwj2",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.13 contain a vulnerability in the browser control API in which...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1359,7 +1564,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28469",
+        "id": "ASH-OCLAW-096",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 contain a webhook routing vulnerability in the Google Chat ...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1371,7 +1578,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28478",
+        "id": "ASH-OCLAW-097",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.13 contain a denial of service vulnerability in webhook handle...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1383,7 +1592,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28479",
+        "id": "ASH-OCLAW-098",
+        "ghsa_id": "GHSA-fh3f-q9qw-93j9",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.15 use SHA-1 to hash sandbox identifier cache keys for Docker ...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1395,7 +1606,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-29609",
+        "id": "ASH-OCLAW-099",
+        "ghsa_id": "GHSA-j27p-hq53-9wgc",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 contain a denial of service vulnerability in the fetchWithG...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1407,7 +1620,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-29611",
+        "id": "ASH-OCLAW-100",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 contain a local file inclusion vulnerability in BlueBubbles...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1419,7 +1634,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32062",
+        "id": "ASH-OCLAW-101",
+        "ghsa_id": "GHSA-mfg5-7q5g-f37j",
+        "cve_id": None,
         "title": "Versions2026.2.21-2 prior to 2026.2.22 and @openclaw/voice-call versions 2026.2.21 prio...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1431,7 +1648,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28461",
+        "id": "ASH-OCLAW-102",
+        "ghsa_id": "GHSA-wr6m-jg37-68xh",
+        "cve_id": None,
         "title": "Versions prior to 2026.3.1 contain an unbounded memory growth vulnerability in the Zalo...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1443,7 +1662,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32011",
+        "id": "ASH-OCLAW-103",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.3.2 contain a denial of service vulnerability in webhook handler...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1455,7 +1676,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32030",
+        "id": "ASH-OCLAW-104",
+        "ghsa_id": "GHSA-x9cf-3w63-rpq9",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.19 contain a path traversal vulnerability in the stageSandboxM...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1467,7 +1690,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32056",
+        "id": "ASH-OCLAW-105",
+        "ghsa_id": "GHSA-xgf2-vxv2-rrmg",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 fail to sanitize shell startup environment variables HOME a...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1479,7 +1704,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32846",
+        "id": "ASH-OCLAW-106",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Through 2026.3.23 (fixed in commit 4797bbc) contains a path traversal vulnerability in ...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1491,7 +1718,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32980",
+        "id": "ASH-OCLAW-107",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.13 reads and buffers Telegram webhook request bodies before validating th...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1503,7 +1732,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-33575",
+        "id": "ASH-OCLAW-108",
+        "ghsa_id": "GHSA-7h7g-x2px-94hj",
+        "cve_id": None,
         "title": "Before 2026.3.12 embeds long-lived shared gateway credentials directly in pairing setup...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1515,7 +1746,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32982",
+        "id": "ASH-OCLAW-109",
+        "ghsa_id": "GHSA-xwcj-hwhf-h378",
+        "cve_id": None,
         "title": "Before 2026.3.13 contains an information disclosure vulnerability in the fetchRemoteMed...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1527,7 +1760,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32988",
+        "id": "ASH-OCLAW-110",
+        "ghsa_id": "GHSA-mj4p-rc52-m843",
+        "cve_id": None,
         "title": "Before 2026.3.11 contains a sandbox boundary bypass vulnerability in fs-bridge staged w...",
         "cvss": 7.5,
         "severity": "HIGH",
@@ -1539,7 +1774,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-31989",
+        "id": "ASH-OCLAW-111",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.3.1 contain a server-side request forgery vulnerability in web_s...",
         "cvss": 7.4,
         "severity": "HIGH",
@@ -1551,7 +1788,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32019",
+        "id": "ASH-OCLAW-112",
+        "ghsa_id": "GHSA-4rqq-w8v4-7p47",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 contain incomplete IPv4 special-use range validation in the...",
         "cvss": 7.4,
         "severity": "HIGH",
@@ -1563,7 +1802,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-3690",
+        "id": "ASH-OCLAW-113",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Canvas Authentication Bypass Vulnerability",
         "cvss": 7.4,
         "severity": "HIGH",
@@ -1579,7 +1820,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["canvas_auth_proxy", "gateway_password_auth", "network_isolation"],
     },
     {
-        "id": "CVE-2026-27488",
+        "id": "ASH-OCLAW-114",
+        "ghsa_id": "GHSA-w45g-5746-x9fp",
+        "cve_id": "CVE-2026-27488",
         "title": "CVE-2026-27488",
         "cvss": 7.3,
         "severity": "HIGH",
@@ -1591,7 +1834,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28448",
+        "id": "ASH-OCLAW-115",
+        "ghsa_id": "GHSA-33rq-m5x2-fvgf",
+        "cve_id": None,
         "title": "Versions 2026.1.29 prior to 2026.2.1 contain a vulnerability in the Twitch plugin (must...",
         "cvss": 7.3,
         "severity": "HIGH",
@@ -1603,7 +1848,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32979",
+        "id": "ASH-OCLAW-116",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.11 contains an approval integrity vulnerability allowing attackers to exe...",
         "cvss": 7.3,
         "severity": "HIGH",
@@ -1615,7 +1862,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35637",
+        "id": "ASH-OCLAW-117",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.22 performs cite expansion before completing channel and DM authorization...",
         "cvss": 7.3,
         "severity": "HIGH",
@@ -1627,7 +1876,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-26325",
+        "id": "ASH-OCLAW-118",
+        "ghsa_id": "GHSA-h3f9-mjwj-w476",
+        "cve_id": "CVE-2026-26325",
         "title": "CVE-2026-26325",
         "cvss": 7.2,
         "severity": "HIGH",
@@ -1639,7 +1890,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28456",
+        "id": "ASH-OCLAW-119",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions 2026.1.5 prior to 2026.2.14 contain a vulnerability in the Gateway in which it...",
         "cvss": 7.2,
         "severity": "HIGH",
@@ -1651,7 +1904,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-22179",
+        "id": "ASH-OCLAW-120",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 in macOS node-host system.run contain an allowlist bypass v...",
         "cvss": 7.2,
         "severity": "HIGH",
@@ -1663,7 +1918,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-26317",
+        "id": "ASH-OCLAW-121",
+        "ghsa_id": "GHSA-3fqr-4cg8-h96q",
+        "cve_id": "CVE-2026-26317",
         "title": "CVE-2026-26317",
         "cvss": 7.1,
         "severity": "HIGH",
@@ -1675,7 +1932,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28459",
+        "id": "ASH-OCLAW-122",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.12 fail to validate the sessionFile path parameter, allowing a...",
         "cvss": 7.1,
         "severity": "HIGH",
@@ -1687,7 +1946,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28477",
+        "id": "ASH-OCLAW-123",
+        "ghsa_id": "GHSA-7rcp-mxpq-72pj",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 contain an oauth state validation bypass vulnerability in t...",
         "cvss": 7.1,
         "severity": "HIGH",
@@ -1699,7 +1960,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28482",
+        "id": "ASH-OCLAW-124",
+        "ghsa_id": "GHSA-5xfq-5mr7-426q",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.12 construct transcript file paths using unsanitized sessionId...",
         "cvss": 7.1,
         "severity": "HIGH",
@@ -1711,7 +1974,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32063",
+        "id": "ASH-OCLAW-125",
+        "ghsa_id": "GHSA-vffc-f7r7-rx2w",
+        "cve_id": None,
         "title": "Version 2026.2.19-2 prior to 2026.2.21 contains a command injection vulnerability in sy...",
         "cvss": 7.1,
         "severity": "HIGH",
@@ -1723,7 +1988,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27566",
+        "id": "ASH-OCLAW-126",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 contain an allowlist bypass vulnerability in system.run exe...",
         "cvss": 7.1,
         "severity": "HIGH",
@@ -1735,7 +2002,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-31992",
+        "id": "ASH-OCLAW-127",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.23 contain an allowlist bypass vulnerability in system.run gua...",
         "cvss": 7.1,
         "severity": "HIGH",
@@ -1747,7 +2016,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-31994",
+        "id": "ASH-OCLAW-128",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.19 contain a local command injection vulnerability in Windows ...",
         "cvss": 7.1,
         "severity": "HIGH",
@@ -1759,7 +2030,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32000",
+        "id": "ASH-OCLAW-129",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.19 contain a command injection vulnerability in the Lobster ex...",
         "cvss": 7.1,
         "severity": "HIGH",
@@ -1771,7 +2044,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32017",
+        "id": "ASH-OCLAW-130",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.19 contain an allowlist bypass vulnerability in the exec safeB...",
         "cvss": 7.1,
         "severity": "HIGH",
@@ -1783,7 +2058,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32023",
+        "id": "ASH-OCLAW-131",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.24 contain an approval gating bypass vulnerability in system.r...",
         "cvss": 7.1,
         "severity": "HIGH",
@@ -1795,7 +2072,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32057",
+        "id": "ASH-OCLAW-132",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.25 contain an authentication bypass vulnerability in the trust...",
         "cvss": 7.1,
         "severity": "HIGH",
@@ -1807,7 +2086,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32972",
+        "id": "ASH-OCLAW-133",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.11 contains an authorization bypass vulnerability allowing authenticated ...",
         "cvss": 7.1,
         "severity": "HIGH",
@@ -1819,7 +2100,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32971",
+        "id": "ASH-OCLAW-134",
+        "ghsa_id": "GHSA-rw39-5899-8mxp",
+        "cve_id": None,
         "title": "Before 2026.3.11 contains an approval-integrity vulnerability in node-host system.run a...",
         "cvss": 7.1,
         "severity": "HIGH",
@@ -1831,7 +2114,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35632",
+        "id": "ASH-OCLAW-135",
+        "ghsa_id": "GHSA-7xr2-q9vf-x4r5",
+        "cve_id": None,
         "title": "Through 2026.2.22 contains a symlink traversal vulnerability in agents.create and agent...",
         "cvss": 7.1,
         "severity": "HIGH",
@@ -1843,7 +2128,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32041",
+        "id": "ASH-OCLAW-136",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.3.1 fail to properly handle authentication bootstrap errors duri...",
         "cvss": 6.9,
         "severity": "MEDIUM",
@@ -1855,7 +2142,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28450",
+        "id": "ASH-OCLAW-137",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.12 with the optional Nostr plugin enabled expose unauthenticat...",
         "cvss": 6.8,
         "severity": "MEDIUM",
@@ -1867,7 +2156,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32005",
+        "id": "ASH-OCLAW-138",
+        "ghsa_id": "GHSA-x2ff-j5c2-ggpr",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.25 fail to enforce sender authorization checks for interactive...",
         "cvss": 6.8,
         "severity": "MEDIUM",
@@ -1879,7 +2170,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32007",
+        "id": "ASH-OCLAW-139",
+        "ghsa_id": "GHSA-h9xm-j4qg-fvpg",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.23 contain a path traversal vulnerability in the experimental ...",
         "cvss": 6.8,
         "severity": "MEDIUM",
@@ -1891,7 +2184,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-26972",
+        "id": "ASH-OCLAW-140",
+        "ghsa_id": "GHSA-xwjm-j929-xq7c",
+        "cve_id": "CVE-2026-26972",
         "title": "CVE-2026-26972",
         "cvss": 6.7,
         "severity": "MEDIUM",
@@ -1903,7 +2198,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27008",
+        "id": "ASH-OCLAW-141",
+        "ghsa_id": "GHSA-h7f7-89mm-pqh6",
+        "cve_id": "CVE-2026-27008",
         "title": "CVE-2026-27008",
         "cvss": 6.7,
         "severity": "MEDIUM",
@@ -1915,7 +2212,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-22169",
+        "id": "ASH-OCLAW-142",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 contain an allowlist bypass vulnerability in the safeBins c...",
         "cvss": 6.7,
         "severity": "MEDIUM",
@@ -1927,7 +2226,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-29608",
+        "id": "ASH-OCLAW-143",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "2026.3.1 contains an approval integrity vulnerability in system.run node-host execution...",
         "cvss": 6.7,
         "severity": "MEDIUM",
@@ -1939,7 +2240,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "approval_queue"],
     },
     {
-        "id": "CVE-2026-32003",
+        "id": "ASH-OCLAW-144",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 contain an environment variable injection vulnerability in ...",
         "cvss": 6.6,
         "severity": "MEDIUM",
@@ -1951,7 +2254,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-25475",
+        "id": "ASH-OCLAW-145",
+        "ghsa_id": "GHSA-r8g4-86fx-92mq",
+        "cve_id": "CVE-2026-25475",
         "title": "CVE-2026-25475",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -1963,7 +2268,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-26320",
+        "id": "ASH-OCLAW-146",
+        "ghsa_id": "GHSA-7q2j-c4q5-rm27",
+        "cve_id": "CVE-2026-26320",
         "title": "CVE-2026-26320",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -1975,7 +2282,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-26327",
+        "id": "ASH-OCLAW-147",
+        "ghsa_id": "GHSA-pv58-549p-qh99",
+        "cve_id": "CVE-2026-26327",
         "title": "CVE-2026-26327",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -1987,7 +2296,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-26328",
+        "id": "ASH-OCLAW-148",
+        "ghsa_id": "GHSA-g34w-4xqq-h79m",
+        "cve_id": "CVE-2026-26328",
         "title": "CVE-2026-26328",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -1999,7 +2310,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-26329",
+        "id": "ASH-OCLAW-149",
+        "ghsa_id": "GHSA-cv7m-c9jx-vg7q",
+        "cve_id": "CVE-2026-26329",
         "title": "CVE-2026-26329",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2011,7 +2324,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28394",
+        "id": "ASH-OCLAW-150",
+        "ghsa_id": "GHSA-p536-vvpp-9mc8",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.15 contain a denial of service vulnerability in the web_fetch ...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2023,7 +2338,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28395",
+        "id": "ASH-OCLAW-151",
+        "ghsa_id": "GHSA-qw99-grcx-4pvm",
+        "cve_id": None,
         "title": "Version 2026.1.14-1 prior to 2026.2.12 contain an improper network binding vulnerabilit...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2035,7 +2352,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28467",
+        "id": "ASH-OCLAW-152",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.2 contain a server-side request forgery vulnerability in attac...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2047,7 +2366,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28480",
+        "id": "ASH-OCLAW-153",
+        "ghsa_id": "GHSA-mj5r-hh7j-4gxf",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 contain an authorization bypass vulnerability where Telegra...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2059,7 +2380,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28481",
+        "id": "ASH-OCLAW-154",
+        "ghsa_id": "GHSA-7vwx-582j-j332",
+        "cve_id": None,
         "title": "Versions 2026.1.30 and earlier, contain an information disclosure vulnerability, patche...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2071,7 +2394,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-29606",
+        "id": "ASH-OCLAW-155",
+        "ghsa_id": "GHSA-c37p-4qqg-3p76",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 contain a webhook signature-verification bypass in the voic...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2083,7 +2408,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-22168",
+        "id": "ASH-OCLAW-156",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.21 contain an approval-integrity mismatch vulnerability in sys...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2095,7 +2422,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-22170",
+        "id": "ASH-OCLAW-157",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 with the optional BlueBubbles plugin contain an access cont...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2107,7 +2436,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-22178",
+        "id": "ASH-OCLAW-158",
+        "ghsa_id": "GHSA-c6hr-w26q-c636",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.19 construct RegExp objects directly from unescaped Feishu men...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2119,7 +2450,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27522",
+        "id": "ASH-OCLAW-159",
+        "ghsa_id": "GHSA-fqcm-97m6-w7rm",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.24 contain a local media root bypass vulnerability in sendAtta...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2131,7 +2464,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28449",
+        "id": "ASH-OCLAW-160",
+        "ghsa_id": "GHSA-r9q5-c7qc-p26w",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.25 lack durable replay state for Nextcloud Talk webhook events...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2143,7 +2478,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32004",
+        "id": "ASH-OCLAW-161",
+        "ghsa_id": "GHSA-v865-p3gq-hw6m",
+        "cve_id": None,
         "title": "Versions prior to 2026.3.2 contain an authentication bypass vulnerability in the /api/c...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2155,7 +2492,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32008",
+        "id": "ASH-OCLAW-162",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.21 contain an improper URL scheme validation vulnerability in ...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2167,7 +2506,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32021",
+        "id": "ASH-OCLAW-163",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 contain an authorization bypass vulnerability in the Feishu...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2179,7 +2520,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32022",
+        "id": "ASH-OCLAW-164",
+        "ghsa_id": "GHSA-3xfw-4pmr-4xc5",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.21 contain a stdin-only policy bypass vulnerability in the gre...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2191,7 +2534,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32026",
+        "id": "ASH-OCLAW-165",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.24 contain an improper path validation vulnerability in sandbo...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2203,7 +2548,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32027",
+        "id": "ASH-OCLAW-166",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.26 contain an authorization bypass vulnerability where DM pair...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2215,7 +2562,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32033",
+        "id": "ASH-OCLAW-167",
+        "ghsa_id": "GHSA-27cr-4p5m-74rj",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.24 contain a path traversal vulnerability where @-prefixed abs...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2227,7 +2576,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32036",
+        "id": "ASH-OCLAW-168",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Gateway plugin versions prior to 2026.2.26 contain a path traversal vulnerability that ...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2239,7 +2590,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32043",
+        "id": "ASH-OCLAW-169",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.25 contain a time-of-check-time-of-use vulnerability in approv...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2251,7 +2604,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32053",
+        "id": "ASH-OCLAW-170",
+        "ghsa_id": "GHSA-vqx8-9xxw-f2m7",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.23 contain a vulnerability in Twilio webhook event deduplicati...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2263,7 +2618,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32054",
+        "id": "ASH-OCLAW-171",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.25 contain a symlink traversal vulnerability in browser trace ...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2275,7 +2632,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32976",
+        "id": "ASH-OCLAW-172",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.11 contains an authorization bypass vulnerability allowing channel comman...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2287,7 +2646,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-34505",
+        "id": "ASH-OCLAW-173",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.12 applies rate limiting only after successful webhook authentication, al...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2299,7 +2660,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-33576",
+        "id": "ASH-OCLAW-174",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.28 downloads and stores inbound media from Zalo channels before validatin...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2311,7 +2674,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-33580",
+        "id": "ASH-OCLAW-175",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.28 contains a missing rate limiting vulnerability in the Nextcloud Talk w...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2323,7 +2688,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-33581",
+        "id": "ASH-OCLAW-176",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.24 contains a sandbox bypass vulnerability in the message tool that allow...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2335,7 +2702,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-40037",
+        "id": "ASH-OCLAW-177",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.31 (patched in 2026.4.8) contains a request body replay vulnerability in ...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2347,7 +2716,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35618",
+        "id": "ASH-OCLAW-178",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.23 contains a replay identity vulnerability in Plivo V2 signature verific...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2359,7 +2730,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35627",
+        "id": "ASH-OCLAW-179",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.22 performs cryptographic and dispatch operations on inbound Nostr direct...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2371,7 +2744,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35631",
+        "id": "ASH-OCLAW-180",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.22 fails to enforce operator.admin scope on mutating internal ACP chat co...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2383,7 +2758,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35636",
+        "id": "ASH-OCLAW-181",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions 2026.3.11 through 2026.3.24 contain a session isolation bypass vulnerability w...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2395,7 +2772,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35644",
+        "id": "ASH-OCLAW-182",
+        "ghsa_id": "GHSA-ppwq-6v66-5m6j",
+        "cve_id": None,
         "title": "Before 2026.3.22 contains an information disclosure vulnerability that allows attackers...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2407,7 +2786,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35621",
+        "id": "ASH-OCLAW-183",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.24 contains a privilege escalation vulnerability where the /allowlist com...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2419,7 +2800,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35649",
+        "id": "ASH-OCLAW-184",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.22 contains a settings reconciliation vulnerability that allows attackers...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2431,7 +2814,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35652",
+        "id": "ASH-OCLAW-185",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.22 contains an authorization bypass vulnerability in interactive callback...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2443,7 +2828,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35656",
+        "id": "ASH-OCLAW-186",
+        "ghsa_id": "GHSA-844j-xrrq-wgh4",
+        "cve_id": None,
         "title": "Before 2026.3.22 contains an authentication bypass vulnerability in the X-Forwarded-For...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2455,7 +2842,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35657",
+        "id": "ASH-OCLAW-187",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.25 contains an authorization bypass vulnerability in the HTTP /sessions/:...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2467,7 +2856,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35658",
+        "id": "ASH-OCLAW-188",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.2 contains a filesystem boundary bypass vulnerability in the image tool t...",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2479,7 +2870,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-3689",
+        "id": "ASH-OCLAW-189",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Canvas Path Traversal Information Disclosure Vulnerability",
         "cvss": 6.5,
         "severity": "MEDIUM",
@@ -2490,7 +2883,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["network_isolation", "tailscale_auth", "read_only_container"],
     },
     {
-        "id": "CVE-2026-32052",
+        "id": "ASH-OCLAW-190",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.24 contain a command injection vulnerability in the system.run...",
         "cvss": 6.4,
         "severity": "MEDIUM",
@@ -2502,7 +2897,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-4039",
+        "id": "ASH-OCLAW-191",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "A vulnerability was determined in OpenClaw 2026.2.19-2",
         "cvss": 6.3,
         "severity": "MEDIUM",
@@ -2514,7 +2911,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-31999",
+        "id": "ASH-OCLAW-192",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions 2026.2.26 prior to 2026.3.1 on Windows contain a current working directory inj...",
         "cvss": 6.3,
         "severity": "MEDIUM",
@@ -2526,7 +2925,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32010",
+        "id": "ASH-OCLAW-193",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 contain an allowlist bypass vulnerability in the safe-bin c...",
         "cvss": 6.3,
         "severity": "MEDIUM",
@@ -2538,7 +2939,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32921",
+        "id": "ASH-OCLAW-194",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.8 contains an approval bypass vulnerability in system.run where mutable s...",
         "cvss": 6.3,
         "severity": "MEDIUM",
@@ -2550,7 +2953,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32977",
+        "id": "ASH-OCLAW-195",
+        "ghsa_id": "GHSA-xvx8-77m6-gwg6",
+        "cve_id": None,
         "title": "Before 2026.3.11 contains a sandbox boundary bypass vulnerability in the fs-bridge writ...",
         "cvss": 6.3,
         "severity": "MEDIUM",
@@ -2562,7 +2967,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-33574",
+        "id": "ASH-OCLAW-196",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.8 contains a path traversal vulnerability in the skills download installe...",
         "cvss": 6.2,
         "severity": "MEDIUM",
@@ -2574,7 +2981,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28457",
+        "id": "ASH-OCLAW-197",
+        "ghsa_id": "GHSA-xw4p-pw82-hqr7",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 contain a path traversal vulnerability in sandbox skill mir...",
         "cvss": 6.1,
         "severity": "MEDIUM",
@@ -2586,7 +2995,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28486",
+        "id": "ASH-OCLAW-198",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions 2026.1.16-2 prior to 2026.2.14 contain a path traversal vulnerability in archi...",
         "cvss": 6.1,
         "severity": "MEDIUM",
@@ -2598,7 +3009,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-22217",
+        "id": "ASH-OCLAW-199",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Version 2026.2.22 prior to 2026.2.23 contain an arbitrary code execution vulnerability ...",
         "cvss": 6.1,
         "severity": "MEDIUM",
@@ -2610,7 +3023,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27523",
+        "id": "ASH-OCLAW-200",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.24 contain a sandbox bind validation vulnerability allowing at...",
         "cvss": 6.1,
         "severity": "MEDIUM",
@@ -2622,7 +3037,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27545",
+        "id": "ASH-OCLAW-201",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.26 contain an approval bypass vulnerability in system.run exec...",
         "cvss": 6.1,
         "severity": "MEDIUM",
@@ -2634,7 +3051,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-31990",
+        "id": "ASH-OCLAW-202",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.3.2 contain a vulnerability in the stageSandboxMedia function in...",
         "cvss": 6.1,
         "severity": "MEDIUM",
@@ -2646,7 +3065,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27646",
+        "id": "ASH-OCLAW-203",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.3.7 contain a sandbox escape vulnerability in the /acp spawn com...",
         "cvss": 6.1,
         "severity": "MEDIUM",
@@ -2658,7 +3079,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32919",
+        "id": "ASH-OCLAW-204",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.11 contains an authorization bypass vulnerability allowing write-scoped c...",
         "cvss": 6.1,
         "severity": "MEDIUM",
@@ -2670,7 +3093,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35667",
+        "id": "ASH-OCLAW-205",
+        "ghsa_id": "GHSA-jfv4-h8mc-jcp8",
+        "cve_id": "CVE-2026-27486",
         "title": "Before 2026.3.24 contains an incomplete fix for CVE-2026-27486 where the !stop chat com...",
         "cvss": 6.1,
         "severity": "MEDIUM",
@@ -2682,7 +3107,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-31997",
+        "id": "ASH-OCLAW-206",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.3.1 fail to pin executable identity for non-path-like argv[0] to...",
         "cvss": 6.0,
         "severity": "MEDIUM",
@@ -2694,7 +3121,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32037",
+        "id": "ASH-OCLAW-207",
+        "ghsa_id": "GHSA-w76h-8m22-hpgh",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 fail to consistently validate redirect chains against confi...",
         "cvss": 6.0,
         "severity": "MEDIUM",
@@ -2706,7 +3135,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28464",
+        "id": "ASH-OCLAW-208",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.12 use non-constant-time string comparison for hook token vali...",
         "cvss": 5.9,
         "severity": "MEDIUM",
@@ -2718,7 +3149,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28465",
+        "id": "ASH-OCLAW-209",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "OpenClaw's voice-call plugin versions before 2026.2.3 contain an improper authenticatio...",
         "cvss": 5.9,
         "severity": "MEDIUM",
@@ -2730,7 +3163,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-29613",
+        "id": "ASH-OCLAW-210",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.12 contain a vulnerability in the BlueBubbles (optional plugin...",
         "cvss": 5.9,
         "severity": "MEDIUM",
@@ -2742,7 +3177,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32035",
+        "id": "ASH-OCLAW-211",
+        "ghsa_id": "GHSA-wpg9-4g4v-f9rc",
+        "cve_id": None,
         "title": "Versions prior to 2026.3.2 fail to pass the senderIsOwner flag when processing Discord ...",
         "cvss": 5.9,
         "severity": "MEDIUM",
@@ -2754,7 +3191,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32039",
+        "id": "ASH-OCLAW-212",
+        "ghsa_id": "GHSA-wpph-cjgr-7c39",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 contain an authorization bypass vulnerability in the toolsB...",
         "cvss": 5.9,
         "severity": "MEDIUM",
@@ -2766,7 +3205,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32045",
+        "id": "ASH-OCLAW-213",
+        "ghsa_id": "GHSA-hff7-ccv5-52f8",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.21 incorrectly apply tokenless Tailscale header authentication...",
         "cvss": 5.9,
         "severity": "MEDIUM",
@@ -2778,7 +3219,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35622",
+        "id": "ASH-OCLAW-214",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.22 contains an improper authentication verification vulnerability in Goog...",
         "cvss": 5.9,
         "severity": "MEDIUM",
@@ -2790,7 +3233,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35670",
+        "id": "ASH-OCLAW-215",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.22 contains a webhook reply delivery vulnerability that allows attackers ...",
         "cvss": 5.9,
         "severity": "MEDIUM",
@@ -2802,7 +3247,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27009",
+        "id": "ASH-OCLAW-216",
+        "ghsa_id": "GHSA-37gc-85xm-2ww6",
+        "cve_id": "CVE-2026-27009",
         "title": "CVE-2026-27009",
         "cvss": 5.8,
         "severity": "MEDIUM",
@@ -2814,7 +3261,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32009",
+        "id": "ASH-OCLAW-217",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.24 contain a policy bypass vulnerability in the safeBins allow...",
         "cvss": 5.7,
         "severity": "MEDIUM",
@@ -2826,7 +3275,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35655",
+        "id": "ASH-OCLAW-218",
+        "ghsa_id": "GHSA-74wf-h43j-vvmj",
+        "cve_id": None,
         "title": "Before 2026.3.22 contains an identity spoofing vulnerability in ACP permission resoluti...",
         "cvss": 5.7,
         "severity": "MEDIUM",
@@ -2838,7 +3289,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-6011",
+        "id": "ASH-OCLAW-219",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "1.26",
         "cvss": 5.6,
         "severity": "MEDIUM",
@@ -2850,7 +3303,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27003",
+        "id": "ASH-OCLAW-220",
+        "ghsa_id": "GHSA-chf7-jq6g-qrwv",
+        "cve_id": "CVE-2026-27003",
         "title": "CVE-2026-27003",
         "cvss": 5.5,
         "severity": "MEDIUM",
@@ -2862,7 +3317,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27004",
+        "id": "ASH-OCLAW-221",
+        "ghsa_id": "GHSA-6hf3-mhgc-cm65",
+        "cve_id": "CVE-2026-27004",
         "title": "CVE-2026-27004",
         "cvss": 5.5,
         "severity": "MEDIUM",
@@ -2874,7 +3331,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28452",
+        "id": "ASH-OCLAW-222",
+        "ghsa_id": "GHSA-h89v-j3x9-8wqj",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 contain a denial of service vulnerability in the extractArc...",
         "cvss": 5.5,
         "severity": "MEDIUM",
@@ -2886,7 +3345,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-29612",
+        "id": "ASH-OCLAW-223",
+        "ghsa_id": "GHSA-w2cg-vxx6-5xjg",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.14 decode base64-backed media inputs into buffers before enfor...",
         "cvss": 5.5,
         "severity": "MEDIUM",
@@ -2898,7 +3359,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32024",
+        "id": "ASH-OCLAW-224",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 contain a symlink traversal vulnerability in avatar handlin...",
         "cvss": 5.5,
         "severity": "MEDIUM",
@@ -2910,7 +3373,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32044",
+        "id": "ASH-OCLAW-225",
+        "ghsa_id": "GHSA-77hf-7fqf-f227",
+        "cve_id": None,
         "title": "Versions prior to 2026.3.2 contain an archive extraction vulnerability in the tar.bz2 i...",
         "cvss": 5.5,
         "severity": "MEDIUM",
@@ -2922,7 +3387,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32001",
+        "id": "ASH-OCLAW-226",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 contain an authentication bypass vulnerability that allows ...",
         "cvss": 5.4,
         "severity": "MEDIUM",
@@ -2934,7 +3401,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32895",
+        "id": "ASH-OCLAW-227",
+        "ghsa_id": "GHSA-v8cg-4474-49v8",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.26 fail to enforce sender authorization in member and message ...",
         "cvss": 5.4,
         "severity": "MEDIUM",
@@ -2946,7 +3415,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32898",
+        "id": "ASH-OCLAW-228",
+        "ghsa_id": "GHSA-7jx5-9fjg-hp4m",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.23 contain an authorization bypass vulnerability in the ACP cl...",
         "cvss": 5.4,
         "severity": "MEDIUM",
@@ -2958,7 +3429,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32923",
+        "id": "ASH-OCLAW-229",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.11 contains an authorization bypass vulnerability in Discord guild reacti...",
         "cvss": 5.4,
         "severity": "MEDIUM",
@@ -2970,7 +3443,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-34425",
+        "id": "ASH-OCLAW-230",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to commit 8aceaf5 contain a preflight validation bypass vulnerability in...",
         "cvss": 5.4,
         "severity": "MEDIUM",
@@ -2996,7 +3471,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         ],
     },
     {
-        "id": "CVE-2026-35620",
+        "id": "ASH-OCLAW-231",
+        "ghsa_id": "GHSA-39mp-545q-w789",
+        "cve_id": None,
         "title": "Before 2026.3.24 contains missing authorization vulnerabilities in the /send and /allow...",
         "cvss": 5.4,
         "severity": "MEDIUM",
@@ -3008,7 +3485,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27486",
+        "id": "ASH-OCLAW-232",
+        "ghsa_id": "GHSA-jfv4-h8mc-jcp8",
+        "cve_id": "CVE-2026-27486",
         "title": "CVE-2026-27486",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3020,7 +3499,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28471",
+        "id": "ASH-OCLAW-233",
+        "ghsa_id": "GHSA-rmxw-jxxx-4cpc",
+        "cve_id": None,
         "title": "Version 2026.1.14-1 prior to 2026.2.2, with the Matrix plugin installed and enabled, co...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3032,7 +3513,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-22180",
+        "id": "ASH-OCLAW-234",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.3.2 contain a path-confinement bypass vulnerability in browser o...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3044,7 +3527,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27670",
+        "id": "ASH-OCLAW-235",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.3.2 contain a race condition vulnerability in ZIP extraction tha...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3056,7 +3541,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-31995",
+        "id": "ASH-OCLAW-236",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions 2026.1.21 prior to 2026.2.19 contain a command injection vulnerability in the ...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3068,7 +3555,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32002",
+        "id": "ASH-OCLAW-237",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.23 contain a sandbox bypass vulnerability in the sandboxed ima...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3080,7 +3569,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32028",
+        "id": "ASH-OCLAW-238",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.25 fail to enforce dmPolicy and allowFrom authorization checks...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3092,7 +3583,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32029",
+        "id": "ASH-OCLAW-239",
+        "ghsa_id": "GHSA-2rgf-hm63-5qph",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.21 improperly parse the left-most X-Forwarded-For header value...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3104,7 +3597,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32046",
+        "id": "ASH-OCLAW-240",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.21 contain an improper sandbox configuration vulnerability tha...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3116,7 +3611,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27183",
+        "id": "ASH-OCLAW-241",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.3.7 contain a shell approval gating bypass vulnerability in syst...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3128,7 +3625,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-34510",
+        "id": "ASH-OCLAW-242",
+        "ghsa_id": "GHSA-h3x4-hc5v-v2gm",
+        "cve_id": None,
         "title": "Before 2026.3.22 contains a path traversal vulnerability in Windows media loaders that ...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3140,7 +3639,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-34511",
+        "id": "ASH-OCLAW-243",
+        "ghsa_id": "GHSA-9jpj-g8vv-j5mf",
+        "cve_id": None,
         "title": "Before 2026.4.2 reuses the PKCE verifier as the OAuth state parameter in the Gemini OAu...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3152,7 +3653,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35626",
+        "id": "ASH-OCLAW-244",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.22 contains an unauthenticated resource exhaustion vulnerability in voice...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3164,7 +3667,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35633",
+        "id": "ASH-OCLAW-245",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.22 contains an unbounded memory allocation vulnerability in remote media ...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3176,7 +3681,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35640",
+        "id": "ASH-OCLAW-246",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.25 parses JSON request bodies before validating webhook signatures, allow...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3188,7 +3695,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35647",
+        "id": "ASH-OCLAW-247",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.25 contains an access control vulnerability where verification notices by...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3200,7 +3709,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35654",
+        "id": "ASH-OCLAW-248",
+        "ghsa_id": "GHSA-rf6h-5gpw-qrgq",
+        "cve_id": None,
         "title": "Before 2026.3.25 contains an authorization bypass vulnerability in Microsoft Teams feed...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3212,7 +3723,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35661",
+        "id": "ASH-OCLAW-249",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.25 contains an authorization bypass vulnerability in Telegram callback qu...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3224,7 +3737,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35664",
+        "id": "ASH-OCLAW-250",
+        "ghsa_id": "GHSA-77w2-crqv-cmv3",
+        "cve_id": None,
         "title": "Before 2026.3.25 contains an authentication bypass vulnerability in raw card send surfa...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3236,7 +3751,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35665",
+        "id": "ASH-OCLAW-251",
+        "ghsa_id": "GHSA-w6m8-cqvj-pg5v",
+        "cve_id": None,
         "title": "Before 2026.3.24 contains an incomplete fix for CVE-2026-32011 where the Feishu webhook...",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3248,7 +3765,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-3691",
+        "id": "ASH-OCLAW-252",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Client PKCE Verifier Information Disclosure Vulnerability",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3259,7 +3778,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["deployment_pattern", "docker_secrets"],
     },
     {
-        "id": "CVE-2026-35634",
+        "id": "ASH-OCLAW-253",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.23 contains an authentication bypass vulnerability in the Canvas gateway ...",
         "cvss": 5.1,
         "severity": "MEDIUM",
@@ -3271,7 +3792,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-28475",
+        "id": "ASH-OCLAW-254",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.13 use non-constant-time string comparison for hook token vali...",
         "cvss": 4.8,
         "severity": "MEDIUM",
@@ -3283,7 +3806,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-31993",
+        "id": "ASH-OCLAW-255",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 contain an allowlist parsing mismatch vulnerability in the ...",
         "cvss": 4.8,
         "severity": "MEDIUM",
@@ -3295,7 +3820,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32031",
+        "id": "ASH-OCLAW-256",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.26 server-http contains an authentication bypass vulnerability...",
         "cvss": 4.8,
         "severity": "MEDIUM",
@@ -3307,7 +3834,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32065",
+        "id": "ASH-OCLAW-257",
+        "ghsa_id": "GHSA-hwpq-rrpf-pgcq",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.25 contain an approval-integrity bypass vulnerability in syste...",
         "cvss": 4.8,
         "severity": "MEDIUM",
@@ -3319,7 +3848,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32896",
+        "id": "ASH-OCLAW-258",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.21 BlueBubbles webhook handler contains a passwordless fallbac...",
         "cvss": 4.8,
         "severity": "MEDIUM",
@@ -3331,7 +3862,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35623",
+        "id": "ASH-OCLAW-259",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.25 contains a missing rate limiting vulnerability in webhook authenticati...",
         "cvss": 4.8,
         "severity": "MEDIUM",
@@ -3343,7 +3876,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35628",
+        "id": "ASH-OCLAW-260",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.25 contains a missing rate limiting vulnerability in Telegram webhook aut...",
         "cvss": 4.8,
         "severity": "MEDIUM",
@@ -3355,7 +3890,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35635",
+        "id": "ASH-OCLAW-261",
+        "ghsa_id": "GHSA-rqp8-q22p-5j9q",
+        "cve_id": None,
         "title": "Before 2026.3.22 contains a webhook path route replacement vulnerability in the Synolog...",
         "cvss": 4.8,
         "severity": "MEDIUM",
@@ -3367,7 +3904,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35646",
+        "id": "ASH-OCLAW-262",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.25 contains a pre-authentication rate-limit bypass vulnerability in webho...",
         "cvss": 4.8,
         "severity": "MEDIUM",
@@ -3379,7 +3918,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32040",
+        "id": "ASH-OCLAW-263",
+        "ghsa_id": "GHSA-2ww6-868g-2c56",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.23 contain an html injection vulnerability in the HTML session...",
         "cvss": 4.6,
         "severity": "MEDIUM",
@@ -3391,7 +3932,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35659",
+        "id": "ASH-OCLAW-264",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.22 contains a service discovery vulnerability where TXT metadata from Bon...",
         "cvss": 4.6,
         "severity": "MEDIUM",
@@ -3403,7 +3946,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27485",
+        "id": "ASH-OCLAW-265",
+        "ghsa_id": "GHSA-r6h2-5gqq-v5v6",
+        "cve_id": "CVE-2026-27485",
         "title": "CVE-2026-27485",
         "cvss": 4.4,
         "severity": "MEDIUM",
@@ -3415,7 +3960,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32061",
+        "id": "ASH-OCLAW-266",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.17 contain a path traversal vulnerability in the $include dire...",
         "cvss": 4.4,
         "severity": "MEDIUM",
@@ -3427,7 +3974,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-31996",
+        "id": "ASH-OCLAW-267",
+        "ghsa_id": "GHSA-4685-c5cp-vp95",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.19 tools.exec.safeBins contains an input validation bypass vul...",
         "cvss": 4.4,
         "severity": "MEDIUM",
@@ -3439,7 +3988,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-26326",
+        "id": "ASH-OCLAW-268",
+        "ghsa_id": "GHSA-8mh7-phf8-xgfm",
+        "cve_id": "CVE-2026-26326",
         "title": "CVE-2026-26326",
         "cvss": 4.3,
         "severity": "MEDIUM",
@@ -3451,7 +4002,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27484",
+        "id": "ASH-OCLAW-269",
+        "ghsa_id": "GHSA-wh94-p5m6-mr7j",
+        "cve_id": "CVE-2026-27484",
         "title": "CVE-2026-27484",
         "cvss": 4.3,
         "severity": "MEDIUM",
@@ -3463,7 +4016,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27524",
+        "id": "ASH-OCLAW-270",
+        "ghsa_id": "GHSA-62f6-mrcj-v8h5",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.21 accept prototype-reserved keys in runtime /debug set overri...",
         "cvss": 4.3,
         "severity": "MEDIUM",
@@ -3475,7 +4030,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32899",
+        "id": "ASH-OCLAW-271",
+        "ghsa_id": "GHSA-rm2p-j3r7-4x4j",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.25 fail to consistently apply sender-policy checks to reaction...",
         "cvss": 4.3,
         "severity": "MEDIUM",
@@ -3487,7 +4044,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-34506",
+        "id": "ASH-OCLAW-272",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.8 contains a sender allowlist bypass vulnerability in its Microsoft Teams...",
         "cvss": 4.3,
         "severity": "MEDIUM",
@@ -3499,7 +4058,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-33578",
+        "id": "ASH-OCLAW-273",
+        "ghsa_id": "GHSA-63mg-xp9j-jfcm",
+        "cve_id": None,
         "title": "Before 2026.3.28 contains a sender policy bypass vulnerability in the Google Chat and Z...",
         "cvss": 4.3,
         "severity": "MEDIUM",
@@ -3511,7 +4072,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35642",
+        "id": "ASH-OCLAW-274",
+        "ghsa_id": "GHSA-mw7w-g3mg-xqm7",
+        "cve_id": None,
         "title": "Before 2026.3.25 contains an authorization bypass vulnerability where group reaction ev...",
         "cvss": 4.3,
         "severity": "MEDIUM",
@@ -3523,7 +4086,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35619",
+        "id": "ASH-OCLAW-275",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.24 contains an authorization bypass vulnerability in the HTTP /v1/models ...",
         "cvss": 4.3,
         "severity": "MEDIUM",
@@ -3535,7 +4100,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35651",
+        "id": "ASH-OCLAW-276",
+        "ghsa_id": "GHSA-4hmj-39m8-jwc7",
+        "cve_id": None,
         "title": "Versions 2026.2.13 through 2026.3.24 contain an ANSI escape sequence injection vulnerab...",
         "cvss": 4.3,
         "severity": "MEDIUM",
@@ -3547,7 +4114,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35662",
+        "id": "ASH-OCLAW-277",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.22 fails to enforce controlScope restrictions on the send action, allowin...",
         "cvss": 4.3,
         "severity": "MEDIUM",
@@ -3559,7 +4128,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35617",
+        "id": "ASH-OCLAW-278",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Before 2026.3.25 contains an authorization bypass vulnerability in Google Chat group po...",
         "cvss": 4.2,
         "severity": "MEDIUM",
@@ -3571,7 +4142,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35624",
+        "id": "ASH-OCLAW-279",
+        "ghsa_id": "GHSA-xhq5-45pm-2gjr",
+        "cve_id": None,
         "title": "Before 2026.3.22 contains a policy confusion vulnerability in room authorization that m...",
         "cvss": 4.2,
         "severity": "MEDIUM",
@@ -3583,7 +4156,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27576",
+        "id": "ASH-OCLAW-280",
+        "ghsa_id": "GHSA-cxpw-2g23-2vgw",
+        "cve_id": "CVE-2026-27576",
         "title": "CVE-2026-27576",
         "cvss": 4.0,
         "severity": "MEDIUM",
@@ -3595,7 +4170,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-24764",
+        "id": "ASH-OCLAW-281",
+        "ghsa_id": "GHSA-782p-5fr5-7fj8",
+        "cve_id": "CVE-2026-24764",
         "title": "(formerly Clawdbot) is a personal AI assistant users run on their own devices",
         "cvss": 3.7,
         "severity": "LOW",
@@ -3607,7 +4184,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-31991",
+        "id": "ASH-OCLAW-282",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.26 contain an authorization bypass vulnerability where Signal ...",
         "cvss": 3.7,
         "severity": "LOW",
@@ -3619,7 +4198,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32050",
+        "id": "ASH-OCLAW-283",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.25 contain an access control vulnerability in signal reaction ...",
         "cvss": 3.7,
         "severity": "LOW",
@@ -3631,7 +4212,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32067",
+        "id": "ASH-OCLAW-284",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.26 contains an authorization bypass vulnerability in the pairi...",
         "cvss": 3.7,
         "severity": "LOW",
@@ -3643,7 +4226,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32897",
+        "id": "ASH-OCLAW-285",
+        "ghsa_id": "GHSA-v6x2-2qvm-6gv8",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 reuse gateway.auth.token as a fallback hash secret for owne...",
         "cvss": 3.7,
         "severity": "LOW",
@@ -3655,7 +4240,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-35648",
+        "id": "ASH-OCLAW-286",
+        "ghsa_id": "GHSA-wj55-88gf-x564",
+        "cve_id": None,
         "title": "Before 2026.3.22 contains a policy bypass vulnerability where queued node actions are n...",
         "cvss": 3.7,
         "severity": "LOW",
@@ -3667,7 +4254,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32018",
+        "id": "ASH-OCLAW-287",
+        "ghsa_id": "GHSA-gq83-8q7q-9hfx",
+        "cve_id": None,
         "title": "Versions prior to 2026.2.19 contain a race condition vulnerability in concurrent update...",
         "cvss": 3.6,
         "severity": "LOW",
@@ -3679,7 +4268,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-27007",
+        "id": "ASH-OCLAW-288",
+        "ghsa_id": "GHSA-xxvh-5hwj-42pp",
+        "cve_id": "CVE-2026-27007",
         "title": "CVE-2026-27007",
         "cvss": 3.3,
         "severity": "LOW",
@@ -3691,7 +4282,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-4040",
+        "id": "ASH-OCLAW-289",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "2.17",
         "cvss": 3.3,
         "severity": "LOW",
@@ -3703,7 +4296,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32020",
+        "id": "ASH-OCLAW-290",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.22 contain a path traversal vulnerability in the static file h...",
         "cvss": 3.3,
         "severity": "LOW",
@@ -3715,7 +4310,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32006",
+        "id": "ASH-OCLAW-291",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.26 contain an authorization bypass vulnerability where DM pair...",
         "cvss": 3.1,
         "severity": "LOW",
@@ -3727,7 +4324,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32058",
+        "id": "ASH-OCLAW-292",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Versions prior to 2026.2.26 contain an approval context-binding weakness in system.run ...",
         "cvss": 2.6,
         "severity": "LOW",
@@ -3739,7 +4338,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["source_fix", "defense_in_depth"],
     },
     {
-        "id": "CVE-2026-32970",
+        "id": "ASH-OCLAW-293",
+        "ghsa_id": "GHSA-qvr7-g57c-mrc7",
+        "cve_id": None,
         "title": "Before 2026.3.11 contains a credential fallback vulnerability where unavailable local g...",
         "cvss": 2.5,
         "severity": "LOW",
@@ -3757,7 +4358,9 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
 # AgentShroud when deployed as agentshroud-hermes.
 _HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
     {
-        "id": "CVE-2026-7396",
+        "id": "ASH-HERMES-001",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Path Traversal in WeChat Work Adapter",
         "cvss": 4.0,
         "severity": "MEDIUM",
@@ -3779,7 +4382,9 @@ _HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["read_only_container", "network_isolation", "egress_filter"],
     },
     {
-        "id": "CVE-2026-7397",
+        "id": "ASH-HERMES-002",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Symlink Following in File Tools _check_sensitive_path",
         "cvss": 4.8,
         "severity": "MEDIUM",
@@ -3801,7 +4406,9 @@ _HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["read_only_container", "tool_acl", "upstream_fix"],
     },
     {
-        "id": "CVE-2026-6829",
+        "id": "ASH-HERMES-003",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "WebUI Path Traversal via Workspace Path Manipulation",
         "cvss": 5.3,
         "severity": "MEDIUM",
@@ -3831,7 +4438,9 @@ _HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
         ],
     },
     {
-        "id": "CVE-2026-9352",
+        "id": "ASH-HERMES-004",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Information Disclosure via _make_run_env in local.py",
         "cvss": 6.1,
         "severity": "HIGH",
@@ -3862,7 +4471,9 @@ _HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
         ],
     },
     {
-        "id": "CVE-2026-9367",
+        "id": "ASH-HERMES-005",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "OS Command Injection in terminal_tool approval.py detect_dangerous_command",
         "cvss": 8.1,
         "severity": "HIGH",
@@ -3894,7 +4505,9 @@ _HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
         ],
     },
     {
-        "id": "CVE-2026-7112",
+        "id": "ASH-HERMES-006",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Missing Authentication on Hermes Agent API Endpoints (GHSA-r7hr-pvjh-r4p3)",
         "cvss": 5.6,
         "severity": "MEDIUM",
@@ -3916,7 +4529,9 @@ _HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
         "defense_layers": ["gateway_auth_gate", "network_isolation"],
     },
     {
-        "id": "CVE-2026-7113",
+        "id": "ASH-HERMES-007",
+        "ghsa_id": None,
+        "cve_id": None,
         "title": "Missing Authentication on Hermes Agent Management Endpoints",
         "cvss": 5.6,
         "severity": "MEDIUM",
@@ -3963,7 +4578,11 @@ def list_cve_agents() -> list[str]:
 
 
 def get_agent_cve_summary(bot_id: str = "openclaw") -> dict[str, Any]:
-    """Return a summary of the CVE registry for the specified agent.
+    """Return a summary of the advisory registry for the specified agent.
+
+    Counts are stated honestly: this registry tracks *advisories* (not "CVEs").
+    Each entry carries a synthetic ``id`` plus a ``ghsa_id`` / ``cve_id`` that is
+    populated only when a real upstream match is verified (else ``None``).
 
     Args:
         bot_id: The agent/bot identifier.  Defaults to ``"openclaw"`` for
@@ -3971,7 +4590,10 @@ def get_agent_cve_summary(bot_id: str = "openclaw") -> dict[str, Any]:
                 support.  Pass ``"hermes"`` for the Hermes agent registry.
 
     Returns:
-        Dict with keys: wrapped_agent, total_cves, by_status, by_severity, cves.
+        Dict with keys:
+          wrapped_agent, total_cves (deprecated alias of advisories_tracked),
+          advisories_tracked, ghsa_matched, cve_matched, pending_review,
+          by_status, by_severity, cves.
 
     Raises:
         KeyError: If *bot_id* is not found in the registry.
@@ -3984,13 +4606,30 @@ def get_agent_cve_summary(bot_id: str = "openclaw") -> dict[str, Any]:
         "not_mitigated": 0,
     }
     by_severity: dict[str, int] = {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0}
+    ghsa_matched = 0
+    cve_matched = 0
+    pending_review = 0
     for cve in registry:
         by_status[cve["status"]] = by_status.get(cve["status"], 0) + 1
         by_severity[cve["severity"]] = by_severity.get(cve["severity"], 0) + 1
+        has_ghsa = bool(cve.get("ghsa_id"))
+        has_cve = bool(cve.get("cve_id"))
+        if has_ghsa:
+            ghsa_matched += 1
+        if has_cve:
+            cve_matched += 1
+        if not has_ghsa and not has_cve:
+            pending_review += 1
 
     return {
         "wrapped_agent": WRAPPED_AGENT if bot_id == "openclaw" else bot_id.capitalize(),
+        # total_cves is retained as a backward-compatible alias but the honest
+        # label is advisories_tracked — these are tracked advisories, not CVEs.
         "total_cves": total,
+        "advisories_tracked": total,
+        "ghsa_matched": ghsa_matched,
+        "cve_matched": cve_matched,
+        "pending_review": pending_review,
         "by_status": by_status,
         "by_severity": by_severity,
         "cves": registry,

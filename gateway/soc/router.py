@@ -2208,15 +2208,20 @@ async def get_agent_cves(
     bot_id: Optional[str] = Query(default=None),
     caller: SCLCaller = Depends(get_caller),
 ) -> Dict:
-    """Return the CVE registry for the wrapped AI agent.
+    """Return the tracked advisory registry for the wrapped AI agent.
 
-    When bot_id is provided, returns CVE data scoped to that bot.
-    Currently OpenClaw ("openclaw") is the only registered agent; unknown bot_id
-    values return {"error": "unknown bot_id: <id>"}.
+    When bot_id is provided, returns advisory data scoped to that bot. Unknown
+    bot_id values return {"error": "unknown bot_id: <id>"}.
 
-    Each entry includes CVE metadata, CVSS score, and AgentShroud mitigation status
-    (fully_mitigated / partially_mitigated / not_mitigated) with defense layer details.
-    Powers the SOC CVE Intelligence page.
+    Counts are honest: the response reports ``advisories_tracked`` (not "CVEs")
+    plus ``ghsa_matched`` / ``cve_matched`` / ``pending_review``. Each entry
+    carries a synthetic AgentShroud ``id`` (``ASH-OCLAW-NNN`` / ``ASH-HERMES-NNN``)
+    and, when a real upstream match is verified, a ``ghsa_id`` and/or ``cve_id``
+    (``None`` otherwise). ``total_cves`` is retained as a backward-compatible
+    alias of ``advisories_tracked``. Entries also include CVSS score and the
+    AgentShroud mitigation status (fully_mitigated / partially_mitigated /
+    not_mitigated) with defense-layer details. Powers the SOC CVE Intelligence
+    page.
     """
     caller.require(Action.READ, Resource.SYSTEM)
     try:

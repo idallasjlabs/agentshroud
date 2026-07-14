@@ -1708,6 +1708,29 @@ async def lifespan(app: FastAPI):
     except Exception as _upstream_exc:
         logger.warning("⚠ Upstream CVE check scheduler failed to start: %s", _upstream_exc)
 
+    # -- GHSA ingest: daily GitHub Advisory feed pull (source of truth) → alert --
+    try:
+        from ..security.daily_cve_report import ghsa_ingest_scheduler as _ghsa_ingest_scheduler
+
+        _ghsa_hour = int(os.environ.get("AGENTSHROUD_GHSA_INGEST_HOUR", "7"))
+        if _cve_token and _cve_owner_id:
+            app_state._ghsa_ingest_task = _asyncio.create_task(
+                _ghsa_ingest_scheduler(
+                    bot_token=_cve_token,
+                    owner_chat_id=_cve_owner_id,
+                    base_url=_cve_tg_base,
+                    ingest_hour=_ghsa_hour,
+                    github_token=_gh_token,
+                )
+            )
+            logger.info("✓ GHSA ingest scheduler started (UTC hour=%d)", _ghsa_hour)
+        else:
+            logger.warning(
+                "⚠ GHSA ingest scheduler skipped — TELEGRAM_BOT_TOKEN or owner_user_id not set"
+            )
+    except Exception as _ghsa_exc:
+        logger.warning("⚠ GHSA ingest scheduler failed to start: %s", _ghsa_exc)
+
     # Startup security scanner — runs ClamAV + Trivy 30s after boot so the SOC
     # shows real results immediately rather than waiting for a manual POST trigger.
     async def _startup_scanner():
