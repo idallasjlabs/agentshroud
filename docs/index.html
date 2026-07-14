@@ -2517,38 +2517,32 @@ idf.py -p /dev/cu.usbmodem* flash
       </thead>
       <tbody>
         <tr>
-          <td class="cve-id">agentshroud-gateway <span style="opacity:.6">(pre)</span></td>
-          <td class="badge-crit">9</td>
-          <td class="badge-high">323</td>
-          <td class="badge-warn">baseline</td>
-        </tr>
-        <tr>
           <td class="cve-id">agentshroud-gateway <strong>(post-hardening)</strong></td>
           <td class="badge-crit">8</td>
           <td class="badge-high">221</td>
-          <td class="badge-ok">✓ −103 (−31%) — measured rebuild</td>
+          <td class="badge-ok">✓ −103 (−31%) vs 332</td>
         </tr>
         <tr>
-          <td class="cve-id">agentshroud-openclaw</td>
-          <td class="badge-crit">19</td>
-          <td class="badge-high">203</td>
-          <td class="badge-warn">◐ Hardened; rebuild pending (pre figures)</td>
+          <td class="cve-id">agentshroud-openclaw <strong>(post-hardening)</strong></td>
+          <td class="badge-crit">12</td>
+          <td class="badge-high">134</td>
+          <td class="badge-ok">✓ −76 (−34%) vs 222</td>
         </tr>
         <tr>
-          <td class="cve-id">agentshroud-hermes</td>
-          <td class="badge-crit">18</td>
-          <td class="badge-high">195</td>
-          <td class="badge-warn">◐ Hardened; rebuild pending (upstream base)</td>
+          <td class="cve-id">agentshroud-hermes <strong>(post-hardening)</strong></td>
+          <td class="badge-crit">14</td>
+          <td class="badge-high">183</td>
+          <td class="badge-warn">◐ −16 (−8%) vs 213 — upstream base</td>
         </tr>
         <tr>
-          <td class="cve-id">agentshroud-voice-gateway</td>
-          <td class="badge-crit">9</td>
-          <td class="badge-high">71</td>
-          <td class="badge-warn">◐ Hardened + base pinned; rebuild pending</td>
+          <td class="cve-id">agentshroud-voice-gateway <strong>(post-hardening)</strong></td>
+          <td class="badge-crit">5</td>
+          <td class="badge-high">65</td>
+          <td class="badge-ok">✓ −10 (−13%) vs 80</td>
         </tr>
       </tbody>
     </table>
-    <p class="section-sub" style="margin-top:14px;"><em>Trivy CRITICAL + HIGH, 2026-07-13. The gateway post-hardening row is a measured rebuild-and-rescan; the other three images have the same <code>apt upgrade</code> applied and will drop similarly once rebuilt.</em></p>
+    <p class="section-sub" style="margin-top:14px;"><em>Trivy CRITICAL + HIGH — all four images rebuilt &amp; rescanned 2026-07-13/14 (measured, not projected). Total across images: <strong>847 → 642 (−205, −24%)</strong>. Hermes gains least because its bulk is the upstream vendored base we don't control — reported honestly, not hidden.</em></p>
 
     <div class="feature-grid" style="margin-top:22px;">
       <div class="feature-card">
