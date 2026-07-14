@@ -23,6 +23,10 @@ class AppState:
     """Container for application-wide state"""
 
     config: GatewayConfig
+    # SCRUM-89 — resolved config file path + hot-reload watcher handles
+    config_path: Optional[object]
+    _config_watcher_task: Optional[object]
+    _config_watcher_stop: Optional[object]
     sanitizer: PIISanitizer
     ledger: DataLedger
     router: MultiAgentRouter
