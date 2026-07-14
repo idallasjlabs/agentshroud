@@ -239,6 +239,9 @@ venv.bak/
 env.bak/
 # Distribution / packaging
 lib/
+# scripts/lib/ holds tracked shell libraries (SCRUM-92 container-runtime shim),
+# not Python packaging output — exempt it from the broad lib/ ignore above.
+!scripts/lib/
 lib64/
 parts/
 sdist/

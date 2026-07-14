@@ -64,6 +64,9 @@ run_test "test_hermes_chown_coverage.sh" bash "$SMOKE_DIR/test_hermes_chown_cove
 # Skills manifest sync + idempotency assertions (Workstream D)
 run_test "test-skills-sync.sh" bash "$SCRIPT_DIR/smoke.d/test-skills-sync.sh"
 
+# Container-runtime detection shim assertions (SCRUM-92)
+run_test "test-container-runtime.sh" bash "$SCRIPT_DIR/smoke.d/test-container-runtime.sh"
+
 # Live boot test (gated by SMOKE_LIVE=1)
 run_test "test_bot_boot_live.sh" bash "$SMOKE_DIR/test_bot_boot_live.sh"
 
