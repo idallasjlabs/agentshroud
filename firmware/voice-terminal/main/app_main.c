@@ -25,6 +25,7 @@
 #include "ui_face.h"
 #include "ota.h"
 #include "remote_log.h"
+#include "playback_logic.h"
 
 static const char *TAG = "vt";
 
@@ -322,10 +323,9 @@ static void tts_task(void *arg)
              * wedge guard) start playback anyway. */
             static TickType_t s_gate_start = 0;
             if (s_gate_start == 0) s_gate_start = xTaskGetTickCount();
-            if (s_reply_complete ||
-                avail >= (768 * 1024) ||
-                (xTaskGetTickCount() - s_gate_start) * portTICK_PERIOD_MS
-                        > 20000) {
+            uint32_t gate_age_ms =
+                (xTaskGetTickCount() - s_gate_start) * portTICK_PERIOD_MS;
+            if (playback_gate_should_open(s_reply_complete, avail, gate_age_ms)) {
                 gate_open        = true;
                 s_reply_complete = false;
                 s_gate_start     = 0;
@@ -600,7 +600,7 @@ static bool _deliver_utterance(const uint8_t *buf, size_t len)
         /* Resume from where earlier attempts got to (rewound 8 KB for
          * in-flight loss) — a drop at 90%% now costs a tail send, not a full
          * restart.  Attempt 1 (sent_ok == 0) uses the plain LISTEN. */
-        size_t start_off = (sent_ok > 8192) ? sent_ok - 8192 : 0;
+        size_t start_off = delivery_resume_offset(sent_ok);
         esp_err_t lr = ESP_FAIL;
         for (int a = 0; a < 3 && lr != ESP_OK; a++) {
             lr = (start_off > 0)
@@ -635,7 +635,7 @@ static bool _deliver_utterance(const uint8_t *buf, size_t len)
                 break;
             }
             off += n;
-            if (off > sent_ok) sent_ok = off;
+            sent_ok = delivery_track_sent_ok(sent_ok, off);
             vTaskDelay(pdMS_TO_TICKS(chunk_delay));
         }
         if (dropped) {
