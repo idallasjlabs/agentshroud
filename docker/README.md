@@ -27,6 +27,66 @@ curl http://localhost:8080/status
 
 ---
 
+## Container Runtime Support (SCRUM-92)
+
+AgentShroud runs on any of the following container runtimes. The helper scripts
+(`scripts/asb`, canary, rollback) auto-detect which one is installed via the shim in
+`scripts/lib/container-runtime.sh` — you do not pick a runtime by hand.
+
+| Runtime | Compose form detected | Status | Notes |
+|---------|----------------------|--------|-------|
+| **Docker Desktop** | `docker-compose` (standalone) | ✅ Supported | macOS/Windows; ships the standalone binary. |
+| **Colima** (macOS) | `docker-compose` (standalone) | ✅ Supported — **deploy hosts** | marvin/trillian/rpi run Colima + standalone `docker-compose`. `asb` also sets `DOCKER_HOST` to the Colima socket. |
+| **Docker Engine** (Linux) | `docker compose` (plugin) | ✅ Supported | Used when the standalone `docker-compose` binary is absent but the `docker` CLI + compose plugin are present. |
+| **Podman** | `podman-compose` or `podman compose` | ✅ Supported | Rootless daemonless alternative; `podman-compose` binary preferred, else the `podman compose` plugin. |
+
+### Detection contract
+
+The shim resolves the compose command with a deterministic, first-match-wins order:
+
+1. `AGENTSHROUD_COMPOSE` env var, if set — honored verbatim (escape hatch for exotic
+   hosts / CI). Nothing overrides it.
+2. `docker-compose` standalone binary — **the working deploy-host path**, kept first
+   among auto-detected options so production behavior is unchanged.
+3. `docker` CLI + working `docker compose` plugin.
+4. `podman-compose` standalone binary.
+5. `podman` CLI + working `podman compose` plugin.
+6. None found → non-zero exit with a remediation message.
+
+Sourced usage in a script:
+
+```bash
+. "$(dirname "$0")/lib/container-runtime.sh"
+COMPOSE="$(detect_container_runtime)" || exit 1
+$COMPOSE -f docker/docker-compose.yml -p agentshroud up -d
+```
+
+Override the runtime explicitly (e.g. to force podman on a host that also has docker):
+
+```bash
+export AGENTSHROUD_COMPOSE="podman compose"
+scripts/asb up
+```
+
+The detection logic is covered by `scripts/smoke.d/test-container-runtime.sh`
+(7 assertions using fake `docker`/`podman` stubs — no real daemon required), wired
+into `scripts/smoke.sh`.
+
+### Reproducible dev shell (Nix flake)
+
+`flake.nix` provides the full toolchain (Python 3.11 + test/lint deps,
+`docker-compose`, `ruff`, `black`, `shellcheck`, `node`, `pytest`). With Nix
+(flakes enabled):
+
+```bash
+nix develop            # enter the dev shell with the whole toolchain
+nix flake check        # build the dev shell + run lint + runtime-shim checks
+nix run .#lint         # ruff + black --check + shellcheck
+nix run .#smoke        # static startup smoke suite
+```
+
+---
+
 ## Files
 
 ### Core Configuration

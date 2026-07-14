@@ -22,6 +22,15 @@ SCRIPT_PATH="${BASH_SOURCE[0]}"
 [ -L "$SCRIPT_PATH" ] && SCRIPT_PATH="$(readlink "$SCRIPT_PATH")"
 REPO_DIR="$(cd "$(dirname "$SCRIPT_PATH")/.." && pwd)"
 
+# ── Container-runtime detection (SCRUM-92) ───────────────────────────────────
+# Resolve which compose command this host has (docker-compose / docker compose /
+# podman-compose / podman compose). On the deploy hosts the standalone
+# docker-compose binary is present and wins first, so production behavior is
+# unchanged. CE is the base command; all $COMPOSE strings below build on it.
+# shellcheck source=scripts/lib/container-runtime.sh
+. "$REPO_DIR/scripts/lib/container-runtime.sh"
+CE="$(detect_container_runtime)" || exit 1
+
 # Project name: "agentshroud" for prod, "agentshroud-bot" for bot account
 if [ "$USER" = "agentshroud-bot" ]; then
   PROJECT="agentshroud-bot"
@@ -35,9 +44,9 @@ if [ "$USER" = "agentshroud-bot" ]; then
     echo "ERROR: no compose override for host '${HOST}' — expected: $OVERRIDE" >&2
     exit 1
   fi
-  COMPOSE="docker-compose -f $REPO_DIR/docker/docker-compose.yml -f $OVERRIDE -p $PROJECT"
+  COMPOSE="$CE -f $REPO_DIR/docker/docker-compose.yml -f $OVERRIDE -p $PROJECT"
 else
-  COMPOSE="docker-compose -f $REPO_DIR/docker/docker-compose.yml -p $PROJECT"
+  COMPOSE="$CE -f $REPO_DIR/docker/docker-compose.yml -p $PROJECT"
 fi
 
 # ── Instance banner ──────────────────────────────────────────────────────────
@@ -356,7 +365,7 @@ case "${1:-}" in
     CANARY_PROJECT="agentshroud-canary"
     echo "[asb canary] Starting canary instance of $SERVICE on alternate ports (+100)..."
     # Start canary instance with offset ports
-    docker-compose -f docker/docker-compose.yml \
+    $CE -f docker/docker-compose.yml \
       -p "$CANARY_PROJECT" \
       up -d "$SERVICE" \
       2>&1 || { echo "[asb canary] Failed to start canary"; exit 1; }
@@ -368,20 +377,20 @@ case "${1:-}" in
     echo "[asb canary] Primary: $PRIMARY_HEALTH | Canary: $CANARY_HEALTH"
     if [ "$CANARY_HEALTH" != "healthy" ]; then
       echo "[asb canary] Canary unhealthy — stopping canary, primary untouched"
-      docker-compose -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
+      $CE -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
       exit 1
     fi
     printf "[asb canary] Canary healthy. Promote to primary? [y/N]: "
     read -r PROMOTE
     if [ "$PROMOTE" = "y" ] || [ "$PROMOTE" = "Y" ]; then
       echo "[asb canary] Promoting canary..."
-      docker-compose -f docker/docker-compose.yml down
-      docker-compose -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
-      docker-compose -f docker/docker-compose.yml up -d
+      $CE -f docker/docker-compose.yml down
+      $CE -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
+      $CE -f docker/docker-compose.yml up -d
       echo "[asb canary] Canary promoted. Primary restarted."
     else
       echo "[asb canary] Promotion declined. Stopping canary."
-      docker-compose -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
+      $CE -f docker/docker-compose.yml -p "$CANARY_PROJECT" down
     fi
     ;;
   rollback)
@@ -393,8 +402,8 @@ case "${1:-}" in
     fi
     PREV_IMAGE=$(cat "$PREV_IMAGE_FILE")
     echo "[asb rollback] Rolling back to: $PREV_IMAGE"
-    docker-compose -f docker/docker-compose.yml down
-    GATEWAY_IMAGE="$PREV_IMAGE" docker-compose -f docker/docker-compose.yml up -d
+    $CE -f docker/docker-compose.yml down
+    GATEWAY_IMAGE="$PREV_IMAGE" $CE -f docker/docker-compose.yml up -d
     echo "[asb rollback] Rollback complete. Running post-deploy check..."
     sleep 5
     curl -sf http://localhost:8080/status && echo " [ok]" || echo " [warning: health check failed]"
