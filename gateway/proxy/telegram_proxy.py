@@ -4435,11 +4435,20 @@ class TelegramAPIProxy:
             # group-context check, GroupApprovalRouter) know whether this update
             # originated from a group/supergroup chat or a DM.
             _chat_type = (message.get("chat") or {}).get("type", "")
-            _inbound_group_chat_id.set(
-                str(chat_id)
-                if _chat_type in ("group", "supergroup") and chat_id is not None
-                else None
-            )
+            _is_group_chat = _chat_type in ("group", "supergroup") and chat_id is not None
+            _active_group_chat_id = str(chat_id) if _is_group_chat else None
+            # SCRUM-67 WS-A: fail-closed group workspace membership enforcement.
+            # A group acts as a shared team workspace; only members (or the system
+            # owner) may act inside it. A non-member's message is isolated from the
+            # group workspace by clearing the group contextvar to None — downstream
+            # modules (GroupApprovalRouter, ToolACL group-context check, group memory
+            # scoping) then treat it as a non-group message and never bind it to the
+            # group's shared workspace/memory.
+            if _active_group_chat_id is not None and not self._enforce_group_workspace_access(
+                _active_group_chat_id, user_id
+            ):
+                _active_group_chat_id = None
+            _inbound_group_chat_id.set(_active_group_chat_id)
 
             # ── Group chat at-mention filter ──────────────────────────────────
             # ALL group messages are forwarded to the bot for conversational context.
@@ -7675,6 +7684,56 @@ class TelegramAPIProxy:
             return getattr(cfg, "teams", None) if cfg else None
         except Exception:
             return None
+
+    def _group_workspace_manager(self):
+        """Build a GroupWorkspaceManager from current teams/RBAC config.
+
+        Returns a fresh, config-gated manager for the inbound enforcement path,
+        or ``None`` if the group-workspace feature is disabled via the
+        ``AGENTSHROUD_GROUP_WORKSPACES_ENABLED`` env var (default: enabled).
+        (SCRUM-67 WS-A.)
+        """
+        enabled = os.getenv("AGENTSHROUD_GROUP_WORKSPACES_ENABLED", "1").strip().lower() not in {
+            "0",
+            "false",
+            "no",
+        }
+        if not enabled:
+            return None
+        try:
+            from gateway.security.group_workspace import GroupWorkspaceManager
+
+            return GroupWorkspaceManager(
+                teams_config=self._teams_config,
+                rbac_config=self._rbac,
+                enabled=True,
+            )
+        except Exception as exc:  # pragma: no cover - defensive import/construction guard
+            logger.warning("Could not build GroupWorkspaceManager: %s", exc)
+            return None
+
+    def _enforce_group_workspace_access(self, group_chat_id, user_id) -> bool:
+        """Fail-closed member check for a group-context inbound message.
+
+        Returns True if ``user_id`` may act inside the shared workspace for
+        ``group_chat_id`` (member or system owner). Returns False when the user
+        is a non-member — the caller then clears the group contextvar so the
+        message is isolated from the group's shared workspace (SCRUM-67 WS-A).
+
+        When the feature is disabled the manager is ``None`` and we return True
+        (no group-workspace scoping applied — legacy behaviour preserved).
+        """
+        mgr = self._group_workspace_manager()
+        if mgr is None:
+            return True
+        allowed = mgr.can_access(str(group_chat_id), str(user_id))
+        if not allowed:
+            logger.warning(
+                "GroupWorkspace: isolating non-member from group workspace — user=%s group=%s",
+                user_id,
+                group_chat_id,
+            )
+        return allowed
 
     def _resolve_collaborator_mode(self, user_id: str) -> str:
         """Resolve effective collaboration mode for a user.
