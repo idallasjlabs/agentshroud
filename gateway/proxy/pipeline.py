@@ -502,6 +502,9 @@ class SecurityPipeline:
                 logger.error("ContextGuard error in pipeline: %s", exc)
                 if is_owner:
                     logger.warning("ContextGuard error on owner message — allowing through")
+                    await self.audit_chain.append_owner_bypass(
+                        message, "ContextGuard", f"guard-error: {exc}", metadata
+                    )
                 else:
                     # Fail closed — block non-owner on error to maintain security posture
                     result.action = PipelineAction.BLOCK
@@ -562,6 +565,9 @@ class SecurityPipeline:
                 if is_owner:
                     logger.warning(
                         "ContextIntegrityScorer error on owner message — allowing through"
+                    )
+                    await self.audit_chain.append_owner_bypass(
+                        message, "ContextIntegrity", f"guard-error: {exc}", metadata
                     )
                 else:
                     # Fail closed — block non-owner on error
