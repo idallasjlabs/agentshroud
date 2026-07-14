@@ -1309,8 +1309,11 @@ async def lifespan(app: FastAPI):
             mcp_proxy_config.injection_scan_enabled = True
             mcp_proxy_config.audit_enabled = True
         # SCRUM-84: MCP security policy engine — deny-by-default governance gate.
-        # Only wired when a mcp_policy section is present in YAML; absent config
-        # leaves policy_engine=None (legacy permission pipeline unchanged).
+        # RT-11 (WS-E): load_config() now synthesises a fail-closed default
+        # mcp_policy (default-deny for unknown servers, configured servers
+        # allowlisted) whenever the YAML omits an explicit mcp_policy section, so
+        # a stock deploy is no longer dormant. policy_engine is only left None if
+        # mcp_policy_data is somehow empty (defensive).
         mcp_policy_engine = None
         mcp_policy_data = getattr(app_state.config, "mcp_policy_data", None)
         if mcp_policy_data:

@@ -577,7 +577,23 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
 
     # MCP security policy config (SCRUM-84) — raw dict, converted to
     # MCPPolicyConfig in lifespan.py at startup. Deny-by-default governance gate.
-    mcp_policy_data = raw_config.get("mcp_policy", {})
+    #
+    # RT-11 (WS-E, HIGH-deploy): historically this defaulted to {} when the YAML
+    # omitted an ``mcp_policy:`` section, which left the engine DORMANT
+    # (policy_engine=None) — a stock deploy ran MCP tool calls with the gate
+    # DISABLED. We now synthesise a conservative, fail-closed default so a fresh
+    # deployment is default-deny for UNKNOWN MCP servers, while the servers the
+    # operator has actually configured under ``mcp_proxy.servers`` stay
+    # allowlisted (no breakage for existing bots). An operator-authored
+    # ``mcp_policy:`` section is honoured verbatim and never overridden.
+    mcp_policy_data = raw_config.get("mcp_policy") or {}
+    if not mcp_policy_data:
+        _configured_mcp_servers = list((mcp_proxy_data.get("servers", {}) or {}).keys())
+        mcp_policy_data = {
+            # Unknown servers are denied. High-risk tools route through approval.
+            "default_action": "deny",
+            "allowed_servers": _configured_mcp_servers,
+        }
 
     # Map security configuration
     security_raw = raw_config.get("security_modules", {})
