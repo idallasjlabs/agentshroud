@@ -9,9 +9,9 @@
 - Upgrade openclaw from 2026.3.8 (critical pairing token fix in 2026.3.11; latest 2026.3.13)
 
 ## Key Facts
-- SSH access: marvin (primary dev, max_session=1800s), raspberrypi (daily check-in), trillian (Linux server)
-- All SSH routes through gateway:8181 CONNECT proxy
-- Use `dev` helper script on marvin for Docker operations
+- Host access: reach marvin (primary dev, max_session=1800s), raspberrypi (daily check-in), trillian (Linux server) ONLY via `agentshroud-ssh-exec.sh <host> "<cmd>"`; raw `ssh`, `ping`, and Tailscale hostnames fail from this container
+- The helper routes through the gateway `/ssh/exec` endpoint, which holds the SSH key and resolves bare host names
+- Use `asb`/`dev` helper commands on marvin for Docker operations (e.g. `agentshroud-ssh-exec.sh marvin "asb status" "check"`)
 - Model: anthropic/claude-opus-4-6 (cloud mode)
 - Slack integration working end-to-end via Socket Mode
 - Per-collaborator agent isolation: collab-{telegram_uid}

@@ -19,21 +19,53 @@ set -euo pipefail
 DEFAULTS_DIR="/app/config-defaults/openclaw"
 OPENCLAW_DIR="/home/node/.openclaw"
 
-# ── 1. cron/jobs.json — bootstrap only if missing ────────────────────────────
-# We only copy on first run (missing file) so that live CLI changes via
-# `openclaw cron edit` are not overwritten on restart.
-# If you want to forcibly reset cron jobs, delete the volume file and restart.
+# ── 1. cron/jobs.json — bootstrap on first run, re-seed when the image ship ──
+# Seeding model (fixes the stale-volume trap):
+#   - First run (missing file): copy the image default.
+#   - Subsequent runs: only re-copy when the IMAGE default changed since we last
+#     seeded it (checksum mismatch). This propagates corrected defaults baked into
+#     a new image (e.g. the lab-host-connectivity fix that removed raw ssh /
+#     Tailscale hostnames) onto pre-existing volumes, which the old
+#     "copy only if missing" logic never did.
+#   - Between image builds the shipped checksum is unchanged, so live CLI edits
+#     via `openclaw cron edit` are preserved across plain container restarts.
+#   - To force a reset without an image change, delete the volume file and restart.
+# The last-seeded checksum is recorded on the volume next to jobs.json.
 
 CRON_DIR="${OPENCLAW_DIR}/cron"
 CRON_JOBS="${CRON_DIR}/jobs.json"
+CRON_SEED_SRC="${DEFAULTS_DIR}/cron/jobs.json"
+CRON_SEED_STAMP="${CRON_DIR}/.jobs.json.seed-sha256"
 
 mkdir -p "${CRON_DIR}"
 
+# Portable SHA-256 (coreutils sha256sum on Linux; shasum -a 256 as fallback).
+_sha256() {
+  if command -v sha256sum >/dev/null 2>&1; then
+    sha256sum "$1" | awk '{print $1}'
+  elif command -v shasum >/dev/null 2>&1; then
+    shasum -a 256 "$1" | awk '{print $1}'
+  else
+    echo ""  # no hasher available — force re-seed on first run only (below)
+  fi
+}
+
+_seed_sha="$(_sha256 "${CRON_SEED_SRC}")"
+
 if [ ! -f "${CRON_JOBS}" ]; then
-  cp "${DEFAULTS_DIR}/cron/jobs.json" "${CRON_JOBS}"
+  cp "${CRON_SEED_SRC}" "${CRON_JOBS}"
+  printf '%s' "${_seed_sha}" > "${CRON_SEED_STAMP}" 2>/dev/null || true
   echo "[init] ✓ Bootstrapped cron/jobs.json from image defaults (first run)"
 else
-  echo "[init] ✓ cron/jobs.json already present — skipping (use CLI to modify)"
+  _prev_sha=""
+  [ -f "${CRON_SEED_STAMP}" ] && _prev_sha="$(cat "${CRON_SEED_STAMP}" 2>/dev/null || true)"
+  if [ -n "${_seed_sha}" ] && [ "${_seed_sha}" != "${_prev_sha}" ]; then
+    cp "${CRON_SEED_SRC}" "${CRON_JOBS}"
+    printf '%s' "${_seed_sha}" > "${CRON_SEED_STAMP}" 2>/dev/null || true
+    echo "[init] ✓ Re-seeded cron/jobs.json — image default changed since last seed (stale volume copy replaced)"
+  else
+    echo "[init] ✓ cron/jobs.json matches last-seeded image default — skipping (use CLI to modify)"
+  fi
 fi
 
 # ── 2. openclaw.json — patch required fields (idempotent) ────────────────────

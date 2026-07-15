@@ -21,7 +21,10 @@ pattern (i.e. the change does not weaken scanning for any other URL).
 
 from __future__ import annotations
 
+import json
 import re
+import shutil
+import subprocess
 from pathlib import Path
 
 REPO = Path(__file__).parent.parent.parent
@@ -140,3 +143,109 @@ def test_hermes_tirith_trust_is_scoped_not_blanket():
     assert "trust add '*'" not in text
     # The gateway trust is present and gated on runtime rule discovery.
     assert "internal gateway control-plane" in text.lower() or "gateway" in text
+
+
+def test_wrapper_has_no_python_dependency():
+    """The wrapper must NOT shell out to python3/python for JSON building.
+
+    Regression: the OpenClaw container is a node image with no python3. The old
+    wrapper built its JSON payload with `python3 - ... <<PYEOF`, which failed at
+    runtime ("python3: not found") on every SSH call — that is why only OpenClaw's
+    daily check-in spammed connectivity failures while Hermes (a python image)
+    worked. The payload must be built with a portable interpreter-free approach so
+    it works in BOTH the node (openclaw) and python (hermes) images.
+    """
+    # Strip comment lines — prose may mention python3 to explain the regression.
+    code = "\n".join(
+        line
+        for line in WRAPPER.read_text(encoding="utf-8").splitlines()
+        if not line.lstrip().startswith("#")
+    )
+    # No python INVOCATION in executable code (command start, or after a pipe /
+    # `;` / `&&` / `$(`), which is how it would actually be run.
+    assert not re.search(
+        r"(^|[|;&(]|\$\()\s*python3?\b", code, re.MULTILINE
+    ), "wrapper must not invoke python — it runs in a node image (no python3)"
+    # It builds JSON without a heavyweight interpreter (shell + awk only).
+    assert "_json_escape" in code, "expected a shell JSON-escaping helper"
+
+
+# ---------------------------------------------------------------------------
+# Execute the wrapper's payload-build path under a POSIX shell (no python3
+# in the wrapper) and prove the JSON it emits is valid and injection-safe.
+# ---------------------------------------------------------------------------
+
+
+def _extract_payload_builder() -> str:
+    """Pull the _json_escape helper + payload-build block out of the wrapper.
+
+    We run ONLY the interpreter-free JSON-build portion (up to the curl call) so
+    the test needs no gateway. This proves the build path works under /bin/sh
+    without python3.
+    """
+    text = WRAPPER.read_text(encoding="utf-8")
+    start = text.index("_json_escape() {")
+    end = text.index('} > "${_payload_file}"') + len('} > "${_payload_file}"')
+    return text[start:end]
+
+
+def _build_payload_via_shell(host: str, command: str, reason: str, cwd: str) -> str:
+    """Run the wrapper's shell payload builder and return the emitted JSON text."""
+    sh = shutil.which("dash") or shutil.which("sh") or "/bin/sh"
+    builder = _extract_payload_builder()
+    # Feed the vars in via env-independent assignments; write payload to a temp
+    # file then cat it back (mirrors the wrapper's own flow).
+    script = (
+        "set -eu\n"
+        f'_host="$H"\n_command="$C"\n_reason="$R"\n_cwd="$W"\n'
+        '_payload_file="$(mktemp)"\n'
+        f"{builder}\n"
+        'cat "${_payload_file}"\n'
+        'rm -f "${_payload_file}"\n'
+    )
+    proc = subprocess.run(
+        [sh, "-c", script],
+        env={"H": host, "C": command, "R": reason, "W": cwd, "PATH": "/usr/bin:/bin"},
+        capture_output=True,
+        text=True,
+    )
+    assert proc.returncode == 0, f"shell builder failed: {proc.stderr}"
+    return proc.stdout
+
+
+def test_shell_payload_builder_emits_valid_json_without_python():
+    """The interpreter-free builder produces valid JSON for a normal command.
+
+    PATH is restricted to /usr/bin:/bin — python is NOT required for the build.
+    """
+    out = _build_payload_via_shell("marvin", "asb status", "daily check-in", "")
+    obj = json.loads(out)  # would raise if the payload is malformed
+    assert obj == {"host": "marvin", "command": "asb status", "reason": "daily check-in"}
+    # cwd omitted when empty.
+    assert "cwd" not in obj
+
+
+def test_shell_payload_builder_escapes_shell_metacharacters_injection_safe():
+    """A command with quotes/metacharacters cannot inject extra JSON fields.
+
+    This is the injection-safety boundary the python3 version guarded. A crafted
+    command that tries to close the string and add a `"host":"evil"` field must
+    end up as ONE escaped string value, never a second field.
+    """
+    evil = 'uptime","host":"evil","command":"rm -rf /'
+    out = _build_payload_via_shell("marvin", evil, "", "")
+    obj = json.loads(out)
+    # The injected text is fully contained inside the command value — host is
+    # still the real host, not "evil".
+    assert obj["host"] == "marvin"
+    assert obj["command"] == evil
+    assert set(obj.keys()) == {"host", "command", "reason"}
+
+
+def test_shell_payload_builder_encodes_newlines_and_tabs():
+    """Literal newlines/tabs/backslashes/quotes round-trip through JSON safely."""
+    tricky = 'line1\tcol\nline2 \\ end "q"'
+    out = _build_payload_via_shell("trillian", tricky, "review", "/opt/repo")
+    obj = json.loads(out)
+    assert obj["command"] == tricky
+    assert obj["cwd"] == "/opt/repo"
