@@ -54,6 +54,10 @@ execution context" and force a Command-Approval prompt on every call. The intern
 gateway is the trusted Docker control-plane (network `internal: true`, not
 internet-exposed). Any OTHER `http://` URL you try to curl is still scanned normally.
 
+Internally the helper authenticates to the `http://gateway:8080/ssh/exec` endpoint with
+an `Authorization: Bearer <GATEWAY_AUTH_TOKEN>` header and adds `--noproxy gateway` — you
+never type these; the vetted script supplies them for you.
+
 `<reason>` and `<optional-cwd>` are optional. `<optional-cwd>`, if set, runs the
 command from that directory on the remote host (absolute path, no shell metacharacters).
 
