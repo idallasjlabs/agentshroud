@@ -2724,53 +2724,149 @@ def test_tts_synthesize_fades_sentence_edges(monkeypatch):
 # ── OTA firmware endpoint ─────────────────────────────────────────────────────
 
 
-def test_firmware_bin_auth_and_etag(tmp_path, monkeypatch):
-    """GET /firmware/bin: 401 on bad token, 200 + ETag on good token, HEAD same ETag.
+def _fw_client(tmp_path, monkeypatch, *, tokens=("test-ota-secret",), write=True):
+    """Wire the /firmware/bin route to a fake binary + a fixed OTA token allowlist.
 
-    The /firmware/bin route was previously untested (0% coverage).  This test covers
-    the three observable behaviours the ESP32 OTA client depends on:
-      1. Auth gate: wrong token → 401 (no firmware leaked)
-      2. Correct token → 200 + ETag header (SHA-256 of file, quoted)
-      3. HEAD verb → same ETag (allows cheap OTA mismatch check without download)
+    Returns (TestClient, fake_bin_path).  When ``write`` is False no binary is
+    written (used to assert the 404 path).  TestClient is built WITHOUT the
+    context manager so the STT/TTS lifespan never fires — the firmware route
+    needs neither, matching the pattern used by test_health_returns_ok.
     """
     import voice_gateway.server as srv
 
-    # Write a small fake firmware binary.
     fake_bin = tmp_path / "voice_terminal.bin"
-    fake_bin.write_bytes(b"\xaa\xbb\xcc\xdd" * 64)
+    if write:
+        fake_bin.write_bytes(b"\xaa\xbb\xcc\xdd" * 64)
 
     monkeypatch.setattr(srv, "_FIRMWARE_BIN_PATH", fake_bin)
-    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "test-ota-secret")
+    monkeypatch.setattr(srv, "_OTA_TOKENS", set(tokens))
     # Reset ETag cache so the test is independent of prior state.
     monkeypatch.setattr(srv, "_fw_etag", "")
     monkeypatch.setattr(srv, "_fw_mtime", 0.0)
+    return TestClient(app), fake_bin
 
-    # Use TestClient WITHOUT the context manager so the lifespan (which loads
-    # STT/TTS models) is not triggered — the firmware route needs neither.
-    # This matches the pattern used by test_health_returns_ok.
-    client = TestClient(app)
 
-    # 1 — Wrong token must produce 401 (no firmware body).
+def test_firmware_bin_auth_and_etag(tmp_path, monkeypatch):
+    """GET /firmware/bin: token gate, 200 + quoted SHA-256 ETag, HEAD ETag parity.
+
+    Covers the observable behaviours the ESP32 OTA client depends on:
+      1. Missing token → 401 (no firmware leaked)
+      2. Wrong token → 403 (not on the owner-gated allowlist)
+      3. Correct token → 200 + ETag header (SHA-256 of file, quoted) + body
+      4. HEAD verb → same ETag, NO body (cheap OTA mismatch check)
+    """
+    client, fake_bin = _fw_client(tmp_path, monkeypatch)
+
+    # 1 — Missing token → 401 (no firmware body).
+    resp = client.get("/firmware/bin")
+    assert resp.status_code == 401, f"Expected 401 for missing token, got {resp.status_code}"
+    assert resp.content == b"", "401 must not leak firmware bytes"
+
+    # 2 — Wrong (non-allowlisted) token → 403.
     resp = client.get("/firmware/bin?token=bad-token")
-    assert resp.status_code == 401, f"Expected 401 for bad token, got {resp.status_code}"
+    assert resp.status_code == 403, f"Expected 403 for wrong token, got {resp.status_code}"
+    assert resp.content == b"", "403 must not leak firmware bytes"
 
-    # 2 — Correct token: 200 with a quoted SHA-256 ETag.
+    # 3 — Correct token: 200 with a quoted SHA-256 ETag + full body.
     resp = client.get("/firmware/bin?token=test-ota-secret")
     assert resp.status_code == 200, f"Expected 200, got {resp.status_code}"
-    # Starlette normalises header names to lowercase in TestClient responses.
-    etag = resp.headers.get("etag") or resp.headers.get("ETag")
+    etag = resp.headers.get("etag")
     assert etag is not None, "ETag header missing from /firmware/bin response"
     assert etag.startswith('"') and etag.endswith(
         '"'
     ), f"ETag must be a quoted string, got {etag!r}"
     sha_hex = etag.strip('"')
     assert len(sha_hex) == 64, f"ETag inner value must be 64-char SHA-256 hex, got {sha_hex!r}"
+    import hashlib as _hl
+
+    assert sha_hex == _hl.sha256(fake_bin.read_bytes()).hexdigest(), "ETag must be SHA-256 of file"
     assert resp.content == fake_bin.read_bytes(), "Response body must match the firmware file"
 
-    # 3 — HEAD returns the same ETag (no download needed if they match).
+    # 4 — HEAD returns the same ETag with NO body.
     resp = client.head("/firmware/bin?token=test-ota-secret")
     assert resp.status_code == 200, f"HEAD expected 200, got {resp.status_code}"
-    head_etag = resp.headers.get("etag") or resp.headers.get("ETag")
+    head_etag = resp.headers.get("etag")
+    assert head_etag == etag, f"HEAD ETag {head_etag!r} ≠ GET ETag {etag!r} — OTA would re-download"
+    assert resp.content == b"", "HEAD must not return a body"
+
+
+def test_firmware_bin_304_on_matching_if_none_match(tmp_path, monkeypatch):
+    """If-None-Match equal to the current ETag → 304 with no body.
+
+    This is the whole point of ETag-based OTA: an up-to-date device sends its
+    stored ETag and gets 304, so it never re-downloads unchanged firmware.
+    """
+    client, _ = _fw_client(tmp_path, monkeypatch)
+
+    # Learn the current ETag.
+    etag = client.get("/firmware/bin?token=test-ota-secret").headers["etag"]
+
+    # Exact match → 304, empty body.
+    resp = client.get(
+        "/firmware/bin?token=test-ota-secret",
+        headers={"If-None-Match": etag},
+    )
+    assert resp.status_code == 304, f"Expected 304 on matching ETag, got {resp.status_code}"
+    assert resp.content == b"", "304 must have an empty body"
+    assert resp.headers.get("etag") == etag, "304 should still echo the ETag"
+
+    # Weak-validator prefix (W/) must also match (RFC 7232 §3.2).
+    resp = client.get(
+        "/firmware/bin?token=test-ota-secret",
+        headers={"If-None-Match": f"W/{etag}"},
+    )
+    assert resp.status_code == 304, "weak-validator If-None-Match should also 304"
+
+
+def test_firmware_bin_stale_if_none_match_returns_body(tmp_path, monkeypatch):
+    """A stale/mismatched If-None-Match must serve the full new binary (200)."""
+    client, fake_bin = _fw_client(tmp_path, monkeypatch)
+
+    stale = '"' + ("0" * 64) + '"'
+    resp = client.get(
+        "/firmware/bin?token=test-ota-secret",
+        headers={"If-None-Match": stale},
+    )
+    assert resp.status_code == 200, f"stale ETag must serve body, got {resp.status_code}"
+    assert resp.content == fake_bin.read_bytes()
+
+
+def test_firmware_bin_404_when_absent(tmp_path, monkeypatch):
+    """Authenticated request but no firmware on disk → 404 (not a 500/empty 200)."""
+    client, _ = _fw_client(tmp_path, monkeypatch, write=False)
+    resp = client.get("/firmware/bin?token=test-ota-secret")
+    assert resp.status_code == 404, f"Expected 404 when no firmware present, got {resp.status_code}"
+
+
+def test_firmware_bin_ungated_when_allowlist_empty(tmp_path, monkeypatch):
+    """Empty allowlist = OTA un-gated: any non-empty token is accepted (200)."""
+    client, fake_bin = _fw_client(tmp_path, monkeypatch, tokens=())
+    resp = client.get("/firmware/bin?token=anything")
     assert (
-        head_etag == etag
-    ), f"HEAD ETag {head_etag!r} ≠ GET ETag {etag!r} — OTA would always re-download"
+        resp.status_code == 200
+    ), f"empty allowlist should accept any token, got {resp.status_code}"
+    assert resp.content == fake_bin.read_bytes()
+    # Still 401 on a truly missing token.
+    assert client.get("/firmware/bin").status_code == 401
+
+
+def test_load_ota_tokens_sources(tmp_path, monkeypatch):
+    """_load_ota_tokens merges env + secret file and falls back to the WS token."""
+    import voice_gateway.server as srv
+
+    # Secret file (comments + blanks ignored) ∪ comma-separated env.
+    tokfile = tmp_path / "ota_tokens"
+    tokfile.write_text("# device fleet\ndev-a\n\ndev-b\n")
+    monkeypatch.setenv("FIRMWARE_OTA_TOKENS_FILE", str(tokfile))
+    monkeypatch.setenv("FIRMWARE_OTA_TOKENS", "dev-c, dev-b")  # dedup dev-b
+    assert srv._load_ota_tokens() == {"dev-a", "dev-b", "dev-c"}
+
+    # No env → fall back to the single WS auth token.
+    monkeypatch.delenv("FIRMWARE_OTA_TOKENS_FILE", raising=False)
+    monkeypatch.delenv("FIRMWARE_OTA_TOKENS", raising=False)
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "ws-fallback")
+    assert srv._load_ota_tokens() == {"ws-fallback"}
+
+    # Nothing configured at all → empty allowlist (un-gated).
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    assert srv._load_ota_tokens() == set()
