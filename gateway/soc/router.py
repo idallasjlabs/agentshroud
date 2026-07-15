@@ -2149,7 +2149,7 @@ async def get_security_scorecard(
         logger.warning("get_security_scorecard: %s", exc)
         return {
             "error": str(exc),
-            "version": "v1.1.0",
+            "version": f"v{_CURRENT_VERSION}",
             "domains": [],
             "totals": {"score": 0, "max": 60, "percentage": 0},
             "overall_maturity": "Not Started",
@@ -2672,8 +2672,9 @@ async def soc_dashboard(request: Request):
         # Inject content-hash query params for cache-busting on every build
         html = html.replace('/soc/static/soc.js"', f'/soc/static/soc.js?v={_SOC_JS_HASH}"')
         html = html.replace('/soc/static/soc.css"', f'/soc/static/soc.css?v={_SOC_CSS_HASH}"')
-        # Inject current version into header badge
-        html = html.replace(">v1.0.0<", f">v{_CURRENT_VERSION}<")
+        # Inject current version into header badge (placeholder token in template
+        # keeps this self-maintaining across releases — no hard-coded version literal)
+        html = html.replace("v__AGENTSHROUD_VERSION__", f"v{_CURRENT_VERSION}")
         return HTMLResponse(
             content=html,
             headers={"Cache-Control": "no-cache, no-store, must-revalidate"},
@@ -2683,14 +2684,14 @@ async def soc_dashboard(request: Request):
 
 def _minimal_dashboard_html() -> str:
     """Fallback minimal dashboard when template file is missing."""
-    return """<!DOCTYPE html>
+    return f"""<!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>AgentShroud SOC</title>
-<style>body{background:#0d1117;color:#c9d1d9;font-family:monospace;padding:2rem;}
-h1{color:#58a6ff;} a{color:#58a6ff;}</style></head>
+<style>body{{background:#0d1117;color:#c9d1d9;font-family:monospace;padding:2rem;}}
+h1{{color:#58a6ff;}} a{{color:#58a6ff;}}</style></head>
 <body>
 <h1>AgentShroud SOC — Command Center</h1>
-<p>v1.1.0 Fortress | <a href="/soc/v1/health">Health</a> |
+<p>v{_CURRENT_VERSION} | <a href="/soc/v1/health">Health</a> |
 <a href="/soc/v1/security/events">Events</a> |
 <a href="/soc/v1/services">Services</a> |
 <a href="/soc/v1/users">Contributors</a></p>

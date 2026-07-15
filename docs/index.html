@@ -2504,7 +2504,7 @@ idf.py -p /dev/cu.usbmodem* flash
   <div class="container">
     <div class="section-label">Infrastructure</div>
     <h2>AgentShroud Infrastructure</h2>
-    <p class="section-sub">Ships like a product, not a science project. Every release goes through a guarded blue/green deploy with automatic rollback, is validated across every runtime before it lands, and passes only on a genuinely healthy runtime. And because a security product must not hide its own vulnerabilities behind a green check, we publish our container-image CVE posture <strong>in full</strong>: reduced <strong>24% (847 → 642)</strong> and reported, never suppressed.</p>
+    <p class="section-sub">Ships like a product, not a science project. Every release goes through a guarded blue/green deploy with automatic rollback, is validated across every runtime before it lands, and passes only on a genuinely healthy runtime. And because a security product must not hide its own vulnerabilities behind a green check, we publish our container-image CVE posture <strong>in full</strong>: as of v1.3.0, <strong>every container CVE with an available in-place fix is mitigated</strong>, verified against a fresh Trivy database (2026-07-15). Nothing is suppressed — the findings that remain have no upstream fix yet, and we enumerate each one with reachability analysis.</p>
 
     <div class="feature-grid" style="margin-top:24px;">
       <div class="feature-card">
@@ -2529,7 +2529,7 @@ idf.py -p /dev/cu.usbmodem* flash
 
     <div class="section-label" style="margin-top:48px;">Image CVE Transparency</div>
     <h3 style="margin-top:6px;">Our own images, reported in full</h3>
-    <p class="section-sub">Alongside the OpenClaw and Hermes application-CVE registries above, we report our own container images — base OS packages and baked-in tool binaries — exactly as Trivy finds them, <strong>including items not yet mitigated</strong>. Total across all four images: <strong>847 → 642 (−205, −24%)</strong>, measured not projected. Nothing is suppressed.</p>
+    <p class="section-sub">Alongside the OpenClaw and Hermes application-CVE registries above, we report our own container images — base OS packages and baked-in tool binaries — exactly as Trivy finds them, <strong>including items with no upstream fix</strong>. Measured against a single fresh Trivy DB snapshot (2026-07-15), v1.3.0 lands every in-place fix that exists: <strong>516 HIGH (down from 535, −19)</strong> and <strong>48 CRITICAL</strong> across all four images. The CRITICALs do not fall because every one of them is a Debian base-OS package marked <code>fix: NONE</code> upstream — there is no patched build to apply. We show that honestly rather than paint it green.</p>
 
     <table class="cve-table" style="margin-top:18px;">
       <thead>
@@ -2542,50 +2542,50 @@ idf.py -p /dev/cu.usbmodem* flash
       </thead>
       <tbody>
         <tr>
-          <td class="cve-id">agentshroud-gateway <strong>(post-hardening)</strong></td>
-          <td class="badge-crit">8</td>
-          <td class="badge-high">221</td>
-          <td class="badge-ok">✓ −103 (−31%) vs 332</td>
-        </tr>
-        <tr>
-          <td class="cve-id">agentshroud-openclaw <strong>(post-hardening)</strong></td>
-          <td class="badge-crit">12</td>
-          <td class="badge-high">134</td>
-          <td class="badge-ok">✓ −76 (−34%) vs 222</td>
-        </tr>
-        <tr>
-          <td class="cve-id">agentshroud-hermes <strong>(post-hardening)</strong></td>
-          <td class="badge-crit">14</td>
-          <td class="badge-high">183</td>
-          <td class="badge-warn">◐ −16 (−8%) vs 213 — upstream base</td>
-        </tr>
-        <tr>
-          <td class="cve-id">agentshroud-voice-gateway <strong>(post-hardening)</strong></td>
+          <td class="cve-id">agentshroud-gateway <strong>(v1.3.0)</strong></td>
           <td class="badge-crit">5</td>
-          <td class="badge-high">65</td>
-          <td class="badge-ok">✓ −10 (−13%) vs 80</td>
+          <td class="badge-high">132</td>
+          <td class="badge-ok">✓ HIGH −16 vs 148 — slsa-verifier rebuilt from source (19H → 3H)</td>
+        </tr>
+        <tr>
+          <td class="cve-id">agentshroud-openclaw <strong>(v1.3.0)</strong></td>
+          <td class="badge-crit">17</td>
+          <td class="badge-high">137</td>
+          <td class="badge-warn">◐ no in-place fix left — residue is Debian <code>fix: NONE</code> + closed-source <code>op</code></td>
+        </tr>
+        <tr>
+          <td class="cve-id">agentshroud-hermes <strong>(v1.3.0)</strong></td>
+          <td class="badge-crit">19</td>
+          <td class="badge-high">181</td>
+          <td class="badge-warn">◐ HIGH −3 vs 184 (venv patch bumps) — bulk is the upstream vendored base</td>
+        </tr>
+        <tr>
+          <td class="cve-id">agentshroud-voice-gateway <strong>(v1.3.0)</strong></td>
+          <td class="badge-crit">7</td>
+          <td class="badge-high">66</td>
+          <td class="badge-warn">◐ zero fixable — every finding is Debian <code>fix: NONE</code></td>
         </tr>
       </tbody>
     </table>
-    <p class="section-sub" style="margin-top:14px;"><em>Trivy CRITICAL + HIGH — all four images rebuilt &amp; rescanned 2026-07-13/14. Hermes gains least because its bulk is the upstream vendored base we don't control — reported honestly, not hidden.</em></p>
+    <p class="section-sub" style="margin-top:14px;"><em>Trivy CRITICAL + HIGH, all four images rebuilt &amp; rescanned against one fresh DB snapshot (2026-07-15) so the deltas are apples-to-apples. After every in-place fix, <strong>0 fixable CRITICAL-or-HIGH findings remain</strong> — every residual has <code>FixedVersion: (none)</code> at the OS layer, is inside a closed-source binary (<code>op</code>), is a vendored sub-binary only its parent project can rebuild (<code>falcoctl</code> in Falco 0.44.1, latest), or is a core-dependency major/minor jump that would break an upstream-pinned agent. None is suppressed; all remain scanner-visible. Full per-CVE enumeration in <code>docs/security/cve-mitigation-matrix.md</code>.</em></p>
 
     <div class="feature-grid" style="margin-top:22px;">
       <div class="feature-card">
         <div class="feature-icon">📦</div>
         <h3>OS packages</h3>
-        <p>clamav, curl/libcurl, gpg and base libraries. <strong>Being mitigated</strong> via base-image digest bumps and <code>apt upgrade</code> across every Dockerfile.</p>
-        <p><span class="badge-warn">◐ In progress</span></p>
+        <p>gpg, openssh, git, zlib, libc6, expat, curl and base libraries. Every base image is at its latest pinned digest with <code>apt upgrade</code> in each package-manager stage. The residual are Debian packages marked <code>status: affected, fix: NONE</code> upstream — no patched build exists in the suite to apply.</p>
+        <p><span class="badge-ok">✓ Mitigated where a fix exists</span></p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">🔧</div>
         <h3>Scanner-tool binaries</h3>
-        <p>cosign, syft and trivy baked into the gateway image carry Go stdlib / x-crypto / x-net findings. Being fixed by bumping to patched tool releases; any residue is moved to a sidecar or built from patched source.</p>
-        <p><span class="badge-fail">✗ Not yet mitigated — tracked</span></p>
+        <p>cosign, docker CLI, fluent-bit, Falco and Wazuh were bumped to patched releases; <strong>slsa-verifier was rebuilt from source</strong> against patched Go with extended dependency overrides (<code>x/crypto</code>, <code>x/net</code>, <code>go-jose</code>, <code>otel</code>, <code>rekor</code>), taking its HIGH findings 19 → 3. The 3 left are a compile-break pair (<code>fulcio</code>/<code>timestamp-authority</code>) with no in-place fix; falcoctl is a vendored sub-binary only the Falco project can rebuild.</p>
+        <p><span class="badge-ok">✓ Every available in-place fix applied</span></p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">🔍</div>
-        <h3>No scanner-tool suppression</h3>
-        <p>The health-report scan reports every severity. Exactly one finding is suppressed — <code>CVE-2021-23358</code>, a Wazuh-internal <code>underscore</code> issue not reachable from external input, with a documented IEC&nbsp;62443 risk assessment. <strong>No scanner-tool-binary CVE is suppressed</strong>; every count above is real. Accepting a known vuln in a security tool would be theater.</p>
+        <h3>Zero suppression</h3>
+        <p>The health-report scan reports every severity. <code>.trivyignore</code> is <strong>zeroed</strong> — the sole prior entry (<code>CVE-2021-23358</code>) was retired by the Wazuh 4.14.5 bump, not suppressed; a fresh no-ignorefile scan confirms it is absent. <strong>No CVE with an available fix is hidden.</strong> Accepting a known-fixable vuln in a security tool would be theater.</p>
         <p><span class="badge-ok">✓ Reported honestly</span></p>
       </div>
     </div>

@@ -38,7 +38,7 @@ policy-enforced without disrupting the agent's native workflow.
 AI Agent → AgentShroud Gateway (33 security modules) → Target System
 ```
 
-**Current branch:** `feat/v1.0.0` ("Fortress") — v1.0.0
+**Current version:** v1.3.0
 **Test coverage:** ≥94% — 3,404+ tests total; maintain or improve
 **Language:** Python 3.9+, Node.js 22
 
