@@ -45,6 +45,20 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-reco
 # upstream image; installing into the venv keeps the system Python clean.
 RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 ddgs==9.14.4
 
+# SCRUM-101 follow-up (v1.3.0): patch two vendored-venv deps whose upstream image ships a
+# vulnerable pin AND whose fix is a backward-compatible PATCH release (verified: full hermes
+# starlette/fastapi/mcp/cryptography stack still imports after the bump — smoke-checked in build).
+#   tornado         6.5.5 -> 6.5.6   (CVE-2026-49853 auth-header cross-origin redirect leak;
+#                                     CVE-2026-49855 gzip-bomb unbounded decompression)
+#   python-multipart 0.0.27 -> 0.0.30 (CVE-2026-53539 form-urlencoded DoS)
+# NOTE: starlette (->1.3.1) and cryptography (->48.0.1) are NOT bumped here — they are core
+# hermes-agent pins whose fixed versions are minor/major jumps across the fastapi/mcp/auth stack
+# that cannot be validated without full upstream integration testing; they are documented as
+# upstream-vendored "currently unmitigable" residue in docs/security/cve-mitigation-matrix.md.
+RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 \
+        tornado==6.5.6 \
+        python-multipart==0.0.30
+
 # Give s6 15s grace before SIGKILL so the TERM trap can release the Telegram
 # long-poll lock and wait up to 8s for the asyncio daemon to exit cleanly.
 # Default is 5000ms which cuts the trap short before lock release completes.

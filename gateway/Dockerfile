@@ -33,7 +33,12 @@ RUN set -eux; \
     cd /src; \
     go mod edit \
         -require=google.golang.org/grpc@v1.79.3 \
-        -require=github.com/docker/cli@v29.2.0+incompatible; \
+        -require=github.com/docker/cli@v29.2.0+incompatible \
+        -require=golang.org/x/crypto@v0.52.0 \
+        -require=golang.org/x/net@v0.55.0 \
+        -require=github.com/go-jose/go-jose/v4@v4.1.4 \
+        -require=go.opentelemetry.io/otel@v1.41.0 \
+        -require=github.com/sigstore/rekor@v1.5.2; \
     go mod tidy; \
     go build -o /out-slsa-verifier ./cli/slsa-verifier; \
     chmod 0755 /out-slsa-verifier; \
