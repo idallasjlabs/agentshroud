@@ -908,6 +908,22 @@ class TestGhsaIngestScheduler:
 
         import gateway.security.daily_cve_report as _mod
 
+        # Freeze the module's clock to a single fixed mid-day instant so the whole
+        # test computes from ONE deterministic "now". A real wall-clock `now()`
+        # made this test flaky in two ways: (1) at UTC hour 23 the `future_hour`
+        # below wrapped to 0, which flipped the scheduler onto its "target in the
+        # past" branch and skipped the sleep; (2) if UTC midnight crossed between
+        # the mark-done `now()` and the scheduler's post-wake guard `now()`, the
+        # two dates disagreed and the guard let ingest run. A frozen mid-day clock
+        # eliminates both races.
+        _FROZEN = datetime(2026, 7, 14, 12, 0, 0, tzinfo=timezone.utc)
+
+        class _FrozenDateTime(datetime):
+            @classmethod
+            def now(cls, tz=None):
+                return _FROZEN if tz is None else _FROZEN.astimezone(tz)
+
+        monkeypatch.setattr(_mod, "datetime", _FrozenDateTime)
         monkeypatch.setattr(_mod, "_ghsa_ingest_dates", set())
         monkeypatch.setattr(_mod, "_LAST_GHSA_INGEST_PATH", tmp_path / "last_ghsa.txt")
 
@@ -925,14 +941,14 @@ class TestGhsaIngestScheduler:
         async def _sleep(_secs):
             called["sleep"] += 1
             if called["sleep"] == 1:
-                _mod._ghsa_ingest_dates.add(datetime.now(timezone.utc).date().isoformat())
+                _mod._ghsa_ingest_dates.add(_FROZEN.date().isoformat())
                 return None
             raise asyncio.CancelledError()
 
         monkeypatch.setattr(_mod.asyncio, "sleep", _sleep)
 
         # Future hour → iteration 1 sleeps (waiting for the hour) then wakes.
-        future_hour = (datetime.now(timezone.utc).hour + 1) % 24
+        future_hour = (_FROZEN.hour + 1) % 24
         await _mod.ghsa_ingest_scheduler(
             bot_token="tok",
             owner_chat_id="12345",
