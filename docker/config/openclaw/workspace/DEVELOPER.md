@@ -108,37 +108,43 @@ Never attempt to run these commands directly — they will fail. Use SSH for eve
 
 ## 7. SSH Development Workflow
 
-You access the repo on marvin via SSH. Use these commands:
+You access the repo on the lab hosts through the baked-in helper
+`agentshroud-ssh-exec.sh <host> "<command>" "<reason>"`. This is the ONLY way to
+reach a host from inside this container. Use these commands:
 
 | Action | Command |
 |--------|---------|
-| Run tests | `ssh marvin asb test` |
-| Build containers | `ssh marvin asb build` |
-| Rebuild + restart | `ssh marvin asb rebuild` |
-| Check status | `ssh marvin asb status` |
-| View logs | `ssh marvin asb logs` |
-| Git pull | `ssh marvin asb pull` |
+| Run tests | `agentshroud-ssh-exec.sh marvin "asb test" "run tests"` |
+| Build containers | `agentshroud-ssh-exec.sh marvin "asb build" "build"` |
+| Rebuild + restart | `agentshroud-ssh-exec.sh marvin "asb rebuild" "rebuild"` |
+| Check status | `agentshroud-ssh-exec.sh marvin "asb status" "status check"` |
+| View logs | `agentshroud-ssh-exec.sh marvin "asb logs" "view logs"` |
+| Git pull | `agentshroud-ssh-exec.sh marvin "asb pull" "git pull"` |
 
 **Repo path on marvin:** `/Users/agentshroud-bot/Development/agentshroud`
 **Compose file:** `docker/docker-compose.yml`
 
-**Gateway REST SSH path (only if native `ssh` is unavailable):** run the baked-in
-helper `agentshroud-ssh-exec.sh <host> "<command>" "<reason>"` — e.g.
-`agentshroud-ssh-exec.sh marvin "asb status" "check"`. Do NOT hand-write a
-`curl http://gateway:8080/ssh/exec` — the plain-HTTP internal control-plane URL
-on your command line makes the command-safety scanner raise "Plain HTTP URL in
-execution context" and force an approval prompt every call. The helper hides that
-trusted-internal URL inside a vetted script, so it runs without approval while any
-OTHER `http://` URL you curl is still scanned normally.
+**How host access works:** you are inside a Docker container with NO LAN route and
+NO Tailscale daemon. Raw `ssh`, `ping`, and Tailscale hostnames (`*.ts.net`) all
+FAIL from here. The baked-in helper `agentshroud-ssh-exec.sh <host> "<command>" "<reason>"`
+routes the command through the AgentShroud gateway `/ssh/exec` endpoint, which holds
+the SSH key and resolves the bare host name (`marvin`, `trillian`, `raspberrypi`) to
+the owner's local IP. NEVER use raw `ssh`, `ping`, or Tailscale hostnames from this
+container — the ONLY way to reach a host is `agentshroud-ssh-exec.sh <name> "<cmd>"`.
+Do NOT hand-write a `curl http://gateway:8080/ssh/exec` either — the plain-HTTP
+internal control-plane URL on your command line makes the command-safety scanner
+raise "Plain HTTP URL in execution context" and force an approval prompt every call.
+The helper hides that trusted-internal URL inside a vetted script, so it runs without
+approval while any OTHER `http://` URL you curl is still scanned normally.
 
 **After Python changes — always run:**
 ```
-ssh marvin asb test
+agentshroud-ssh-exec.sh marvin "asb test" "run tests after python changes"
 ```
-And lint/format (single atomic commands via asb helper or separate ssh calls):
+And lint/format (single atomic commands via the asb helper or separate helper calls):
 ```
-ssh marvin "ruff check --fix /Users/agentshroud-bot/Development/agentshroud/gateway/"
-ssh marvin "black /Users/agentshroud-bot/Development/agentshroud/gateway/"
+agentshroud-ssh-exec.sh marvin "ruff check --fix /Users/agentshroud-bot/Development/agentshroud/gateway/" "lint"
+agentshroud-ssh-exec.sh marvin "black /Users/agentshroud-bot/Development/agentshroud/gateway/" "format"
 ```
 
 **Before dangerous bash — pause and warn yourself:** never run `rm -rf /`, `curl | sh`,

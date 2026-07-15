@@ -61,18 +61,68 @@ if [ -z "${_host}" ] || [ -z "${_command}" ]; then
     exit 1
 fi
 
-# Build the JSON payload with python3 so command/reason/cwd containing quotes,
-# newlines, or shell metacharacters are safely encoded (never touch shell argv
-# escaping). cwd is omitted from the payload when empty.
+# Build the JSON payload in pure POSIX shell so command/reason/cwd containing
+# quotes, backslashes, newlines, tabs, or shell metacharacters are safely encoded
+# without depending on an interpreter. The OpenClaw container is a node image with
+# NO python3; the Hermes container is a python image. A shell-only builder works in
+# BOTH — the previous python3 version silently failed in OpenClaw with
+# "python3: not found", which is exactly why only OpenClaw's check-in spammed
+# failures. cwd is omitted from the payload when empty.
+#
+# _json_escape reads one argument and emits a JSON-safe string body (WITHOUT the
+# surrounding double quotes). Per RFC 8259 it escapes backslash, double quote, and
+# the C0 control characters that must be escaped in JSON (\b \t \n \f \r, and any
+# other 0x01–0x1F control char as \u00XX). This is the injection-safety boundary:
+# the encoded value can never break out of its JSON string, so a command such as
+# `","host":"evil` or one containing a literal newline cannot inject extra fields.
+#
+# The value is passed to awk on STDIN (not via -v), because awk's -v assignment
+# interprets backslash escapes (mangling `\b`, dropping `\c`) and errors on a
+# literal newline ("newline in string"). RS="\0" makes the entire raw input one
+# record ($0), preserving embedded newlines/tabs as data. Byte-accurate and
+# deterministic across busybox/dash/bash awk — no python3 or node dependency.
+_json_escape() {
+    printf '%s' "$1" | awk '
+    BEGIN {
+        RS = "\0"
+        ctrl = sprintf("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c", \
+            1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16, \
+            17,18,19,20,21,22,23,24,25,26,27,28,29,30,31)
+    }
+    {
+        n = length($0)
+        out = ""
+        for (i = 1; i <= n; i++) {
+            c = substr($0, i, 1)
+            if (c == "\\") { out = out "\\\\" }
+            else if (c == "\"") { out = out "\\\"" }
+            else if (c == "\b") { out = out "\\b" }
+            else if (c == "\t") { out = out "\\t" }
+            else if (c == "\n") { out = out "\\n" }
+            else if (c == "\f") { out = out "\\f" }
+            else if (c == "\r") { out = out "\\r" }
+            else {
+                # Escape any remaining C0 control character (0x01–0x1F) as \u00XX.
+                d = index(ctrl, c)
+                if (d > 0) { out = out sprintf("\\u%04x", d) }
+                else { out = out c }
+            }
+        }
+        printf "%s", out
+    }'
+}
+
 _payload_file="/tmp/.ssh-exec-payload.$$"
-python3 - "${_host}" "${_command}" "${_reason}" "${_cwd}" > "${_payload_file}" <<'PYEOF'
-import json, sys
-host, command, reason, cwd = sys.argv[1:5]
-payload = {"host": host, "command": command, "reason": reason}
-if cwd:
-    payload["cwd"] = cwd
-json.dump(payload, sys.stdout)
-PYEOF
+{
+    printf '{"host":"%s","command":"%s","reason":"%s"' \
+        "$(_json_escape "${_host}")" \
+        "$(_json_escape "${_command}")" \
+        "$(_json_escape "${_reason}")"
+    if [ -n "${_cwd}" ]; then
+        printf ',"cwd":"%s"' "$(_json_escape "${_cwd}")"
+    fi
+    printf '}'
+} > "${_payload_file}"
 
 # --noproxy gateway: HTTP_PROXY=http://gateway:8181 (EgressFilter) is set in the
 # bot environment; without --noproxy the call would loop through the egress proxy
