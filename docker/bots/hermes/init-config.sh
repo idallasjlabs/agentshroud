@@ -173,6 +173,34 @@ if [ -x /opt/data/bin/tirith ]; then
             >/dev/null 2>&1 || true
     done
     echo "[hermes-init] Tirith trust seeded for 12 competitor/research domains (rule=lookalike_tld)"
+
+    # ── Defense-in-depth: internal gateway control-plane HTTP trust ──────────
+    # The primary fix for the "[HIGH] Plain HTTP URL in execution context" flag
+    # on gateway /ssh/exec calls is the agentshroud-ssh-exec.sh wrapper (the
+    # plain-http URL never reaches the agent's command line). This block is a
+    # NARROW belt-and-suspenders: if the agent ever hand-writes a raw curl to
+    # the internal control-plane, trust the `gateway` host ONLY for the tirith
+    # rule that fires on plain-HTTP-in-exec, so every OTHER rule (and every
+    # OTHER host) is still scanned. http://gateway is the internal Docker
+    # control-plane (compose network `internal: true`, not internet-exposed).
+    #
+    # tirith's rule id for this flag is discovered at runtime (its help/list
+    # output) rather than hard-coded, so a tirith version bump that renames the
+    # rule can't silently create a wrong-rule no-op that looks trusted but isn't.
+    _http_rules="$(/opt/data/bin/tirith rules list 2>/dev/null \
+        | awk '/[Hh][Tt][Tt][Pp]|execution context|unencrypted|insecure/ {print $1}' \
+        | tr -d ':' | sort -u)"
+    if [ -n "${_http_rules}" ]; then
+        for _rule in ${_http_rules}; do
+            for _gw in gateway "gateway:8080"; do
+                /opt/data/bin/tirith trust add "${_gw}" --rule "${_rule}" \
+                    >/dev/null 2>&1 || true
+            done
+        done
+        echo "[hermes-init] Tirith trust seeded for internal gateway host (rules: ${_http_rules})"
+    else
+        echo "[hermes-init] Tirith plain-HTTP rule not enumerable — relying on agentshroud-ssh-exec.sh wrapper (primary fix)"
+    fi
 fi
 
 # ── GitHub MCP server — wire on first boot if PAT is available ─────────────
