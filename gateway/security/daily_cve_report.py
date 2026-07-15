@@ -44,6 +44,18 @@ _SEV_ICON = {
 # GitHub repository for the wrapped agent — used by the upstream CVE watch.
 _OPENCLAW_GITHUB_REPO = "openclaw/openclaw"
 
+# Telegram sendMessage caps the ``text`` field at 4096 UTF-16 code units. We keep a
+# safety margin below that so no formatted alert can ever return HTTP 400 (Bad
+# Request: message is too long). Applied both when building the upstream CVE
+# summary and as a defensive final guard in ``_send_telegram``.
+_TELEGRAM_MAX_CHARS = 4096
+_TELEGRAM_SAFE_CHARS = 4000
+
+# Upstream CVE alert lists at most this many GHSA ids inline; the remainder are
+# folded into an "…and N more" indicator so the message stays under the cap
+# regardless of how many new advisories a single sync discovers.
+_UPSTREAM_ALERT_MAX_ITEMS = 15
+
 # Path to store the last report timestamp so we avoid duplicate sends on restart.
 _LAST_REPORT_PATH = Path("/var/log/security/trivy/.last_cve_report")
 _LAST_UPSTREAM_CHECK_PATH = Path("/var/log/security/trivy/.last_upstream_cve_check")
@@ -233,7 +245,15 @@ async def run_and_send_cve_report(
 
 
 async def _send_telegram(bot_token: str, chat_id: str, text: str, base_url: str) -> bool:
-    """Send a message via Telegram Bot API. Returns True on success."""
+    """Send a message via Telegram Bot API. Returns True on success.
+
+    ``text`` is defensively truncated to ``_TELEGRAM_SAFE_CHARS`` with a clear
+    marker so that no caller can ever trigger an HTTP 400 ("message is too long")
+    from an over-length payload.
+    """
+    if len(text) > _TELEGRAM_MAX_CHARS:
+        marker = "\n…(truncated)"
+        text = text[: _TELEGRAM_SAFE_CHARS - len(marker)] + marker
     url = f"{base_url}/bot{bot_token}/sendMessage"
     payload = {
         "chat_id": chat_id,
@@ -434,32 +454,48 @@ def check_upstream_cves(github_token: Optional[str] = None) -> list[dict[str, An
 def format_upstream_cve_alert(new_cves: list[dict[str, Any]]) -> str:
     """Format a Telegram alert for newly detected upstream CVEs.
 
+    The alert is a bounded *summary*: it lists at most ``_UPSTREAM_ALERT_MAX_ITEMS``
+    advisories inline (severity icon + GHSA id + CVSS/severity), then folds any
+    remainder into an "…and N more" indicator. This keeps the message well under
+    Telegram's 4096-char ``sendMessage`` limit even when a single sync discovers
+    ~100 new GHSA advisories — the historical HTTP 400 ("message is too long")
+    failure. A final hard cap truncates defensively should the total still exceed
+    the safe budget.
+
     Args:
         new_cves: List of CVE dicts from ``check_upstream_cves()``.
 
     Returns:
-        Markdown string suitable for Telegram ``parse_mode=Markdown``.
+        Markdown string suitable for Telegram ``parse_mode=Markdown``, guaranteed
+        to be at most ``_TELEGRAM_MAX_CHARS`` characters.
     """
     count = len(new_cves)
     plural = "s" if count > 1 else ""
+    shown = new_cves[:_UPSTREAM_ALERT_MAX_ITEMS]
+    remaining = count - len(shown)
+
     lines = [
         f"🚨 *AgentShroud™ — {count} New OpenClaw CVE{plural} Detected*",
         f"_{count} CVE{plural} not yet in the AgentShroud registry_\n",
     ]
-    for cve in new_cves:
+    for cve in shown:
         icon = _SEV_ICON.get(cve.get("severity", "UNKNOWN"), "⚪")
         cvss_str = f"CVSS {cve['cvss']}" if cve.get("cvss") else cve.get("severity", "UNKNOWN")
         lines.append(f"{icon} `{cve['id']}` ({cvss_str})")
-        summary = (cve.get("summary") or "")[:80]
-        if summary:
-            lines.append(f"    _{summary}_")
-        pub = (cve.get("published_at") or "")[:10]
-        if pub:
-            lines.append(f"    📅 Disclosed: {pub}")
-        lines.append("")
 
-    lines.append("⚠️ *Action required:* triage and add to `gateway/security/agent_cve_registry.py`")
-    return "\n".join(lines)
+    if remaining > 0:
+        lines.append(f"\n…and {remaining} more (see dashboard / CVE report)")
+
+    lines.append(
+        "\n⚠️ *Action required:* triage and add to `gateway/security/agent_cve_registry.py`"
+    )
+    message = "\n".join(lines)
+
+    # Defensive hard cap: even with the item limit above, guarantee the summary
+    # can never exceed Telegram's limit (e.g. pathologically long GHSA ids).
+    if len(message) > _TELEGRAM_SAFE_CHARS:
+        message = message[: _TELEGRAM_SAFE_CHARS - len("\n…(truncated)")] + "\n…(truncated)"
+    return message
 
 
 async def run_upstream_cve_check(

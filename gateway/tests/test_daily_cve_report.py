@@ -367,11 +367,12 @@ class TestFormatUpstreamCveAlert:
         msg = format_upstream_cve_alert([self._cve()])
         assert "CVE-2026-99999" in msg
 
-    def test_contains_summary(self):
+    def test_contains_total_count(self):
         from gateway.security.daily_cve_report import format_upstream_cve_alert
 
         msg = format_upstream_cve_alert([self._cve()])
-        assert "Test summary text" in msg
+        # Summary always states the total number of new CVEs.
+        assert "1 New OpenClaw CVE" in msg
 
     def test_contains_severity_icon(self):
         from gateway.security.daily_cve_report import format_upstream_cve_alert
@@ -398,12 +399,6 @@ class TestFormatUpstreamCveAlert:
         msg = format_upstream_cve_alert([self._cve()])
         assert "1 New OpenClaw CVE " in msg  # no trailing 's'
 
-    def test_contains_disclosed_date(self):
-        from gateway.security.daily_cve_report import format_upstream_cve_alert
-
-        msg = format_upstream_cve_alert([self._cve()])
-        assert "2026-04-10" in msg
-
     def test_handles_missing_optional_fields(self):
         from gateway.security.daily_cve_report import format_upstream_cve_alert
 
@@ -417,6 +412,94 @@ class TestFormatUpstreamCveAlert:
         }
         msg = format_upstream_cve_alert([cve])
         assert "CVE-2026-99999" in msg
+
+    def test_summary_under_telegram_limit_for_100_cves(self):
+        from gateway.security.daily_cve_report import _TELEGRAM_MAX_CHARS, format_upstream_cve_alert
+
+        # ~100 new GHSA advisories — the historical HTTP 400 scenario.
+        cves = [
+            self._cve(cve_id=f"GHSA-aaaa-bbbb-{i:04d}", sev="HIGH", score=7.5) for i in range(120)
+        ]
+        msg = format_upstream_cve_alert(cves)
+
+        assert len(msg) <= _TELEGRAM_MAX_CHARS
+        # Total count is preserved even though only a subset is listed inline.
+        assert "120 New OpenClaw CVEs" in msg
+        # "N more" indicator accounts for the folded remainder (120 - 15 = 105).
+        assert "…and 105 more" in msg
+
+    def test_no_more_indicator_when_under_item_limit(self):
+        from gateway.security.daily_cve_report import format_upstream_cve_alert
+
+        cves = [self._cve(cve_id=f"GHSA-x-{i}") for i in range(5)]
+        msg = format_upstream_cve_alert(cves)
+        assert "more" not in msg
+        # All 5 ids are listed inline.
+        for i in range(5):
+            assert f"GHSA-x-{i}" in msg
+
+
+# ── _send_telegram over-length guard ──────────────────────────────────────────
+
+
+class TestSendTelegramTruncation:
+    @pytest.mark.asyncio
+    async def test_truncates_over_length_text(self, monkeypatch):
+        import gateway.security.daily_cve_report as _mod
+
+        captured = {}
+
+        class _FakeResp:
+            def read(self):
+                return json.dumps({"ok": True}).encode("utf-8")
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+        def _fake_urlopen(req, timeout=30):
+            captured["body"] = json.loads(req.data.decode("utf-8"))
+            return _FakeResp()
+
+        monkeypatch.setattr(_mod.urllib.request, "urlopen", _fake_urlopen)
+
+        # 10k chars — well over Telegram's 4096 limit.
+        over_long = "A" * 10_000
+        ok = await _mod._send_telegram("tok", "123", over_long, "https://api.telegram.org")
+
+        assert ok is True
+        sent_text = captured["body"]["text"]
+        assert len(sent_text) <= _mod._TELEGRAM_MAX_CHARS
+        assert sent_text.endswith("…(truncated)")
+
+    @pytest.mark.asyncio
+    async def test_short_text_passes_through_unchanged(self, monkeypatch):
+        import gateway.security.daily_cve_report as _mod
+
+        captured = {}
+
+        class _FakeResp:
+            def read(self):
+                return json.dumps({"ok": True}).encode("utf-8")
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+        def _fake_urlopen(req, timeout=30):
+            captured["body"] = json.loads(req.data.decode("utf-8"))
+            return _FakeResp()
+
+        monkeypatch.setattr(_mod.urllib.request, "urlopen", _fake_urlopen)
+
+        short = "hello world"
+        await _mod._send_telegram("tok", "123", short, "https://api.telegram.org")
+        assert captured["body"]["text"] == short
+        assert "truncated" not in captured["body"]["text"]
 
 
 # ── run_upstream_cve_check ────────────────────────────────────────────────────
