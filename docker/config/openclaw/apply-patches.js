@@ -890,6 +890,20 @@ if (slackBotToken && slackBotToken.startsWith('xoxb-') && slackAppToken && slack
     console.log('[init-patch] Removed unsupported channels.slack.healthMonitor key');
     changed = true;
   }
+  // Explicitly trust the external "slack" plugin.  Current OpenClaw refuses to
+  // load an external channel plugin unless plugins.entries.<name>.enabled=true,
+  // otherwise it logs: 'channels.slack: channel is configured, but external
+  // plugin "slack" is installed without explicit trust.'  Only set here — inside
+  // the token-guarded block — so the plugin is trusted solely when Slack is
+  // actually configured.
+  config.plugins = config.plugins || {};
+  config.plugins.entries = config.plugins.entries || {};
+  config.plugins.entries.slack = config.plugins.entries.slack || {};
+  if (config.plugins.entries.slack.enabled !== true) {
+    config.plugins.entries.slack.enabled = true;
+    console.log('[init-patch] Trusted external slack plugin (plugins.entries.slack.enabled=true)');
+    changed = true;
+  }
   console.log('[init-patch] Patched channels.slack (Socket Mode, dmPolicy=open)');
 } else {
   console.log('[init-patch] Slack tokens not found — skipping channels.slack patch');
