@@ -25,6 +25,7 @@ import json
 import re
 import shutil
 import subprocess
+import tempfile
 from pathlib import Path
 
 REPO = Path(__file__).parent.parent.parent
@@ -249,3 +250,141 @@ def test_shell_payload_builder_encodes_newlines_and_tabs():
     obj = json.loads(out)
     assert obj["command"] == tricky
     assert obj["cwd"] == "/opt/repo"
+
+
+# ---------------------------------------------------------------------------
+# Gateway auth-token resolution.
+#
+# Bug: the wrapper read the bearer token from $GATEWAY_AUTH_TOKEN, which is NEVER
+# set in either bot container, so the gateway returned HTTP 401 "Invalid
+# authentication scheme. Expected 'Bearer <token>'". The 64-char token IS present
+# as a Docker secret FILE at /run/secrets/gateway_password, exposed via different
+# *_FILE env vars per bot (OPENCLAW_GATEWAY_PASSWORD_FILE / GATEWAY_AUTH_TOKEN_FILE).
+#
+# We run the WHOLE wrapper under /bin/sh with a stubbed `curl` on PATH (so no real
+# gateway is contacted) and capture the Authorization header the wrapper builds.
+# ---------------------------------------------------------------------------
+
+
+def _run_wrapper_capture_bearer(env: dict) -> subprocess.CompletedProcess:
+    """Run the real wrapper with a fake `curl` that records its argv.
+
+    The stub curl writes all its args to $CURL_ARGS_OUT and emits `200` on stdout
+    plus an empty response body file (mirroring curl's -o/-w contract), so the
+    wrapper takes its success path without any network. Returns the completed
+    process; the captured argv is read by the caller from CURL_ARGS_OUT.
+    """
+    sh = shutil.which("dash") or shutil.which("sh") or "/bin/sh"
+    tmp = Path(tempfile.mkdtemp())
+    bindir = tmp / "bin"
+    bindir.mkdir()
+    args_out = tmp / "curl_args.txt"
+    # Fake curl: dump argv (NUL-separated) to CURL_ARGS_OUT, honour -o <file> by
+    # creating an empty response body, print the -w http_code ("200") to stdout.
+    curl_stub = bindir / "curl"
+    curl_stub.write_text(
+        "#!/bin/sh\n"
+        'printf "%s\\0" "$@" > "$CURL_ARGS_OUT"\n'
+        "_out=\n"
+        "while [ $# -gt 0 ]; do\n"
+        '  if [ "$1" = "-o" ]; then _out="$2"; shift 2; continue; fi\n'
+        "  shift\n"
+        "done\n"
+        '[ -n "$_out" ] && : > "$_out"\n'
+        'printf "200"\n',
+        encoding="utf-8",
+    )
+    curl_stub.chmod(0o755)
+
+    run_env = {
+        "PATH": f"{bindir}:/usr/bin:/bin",
+        "CURL_ARGS_OUT": str(args_out),
+        **env,
+    }
+    proc = subprocess.run(
+        [sh, str(WRAPPER), "marvin", "uptime"],
+        env=run_env,
+        capture_output=True,
+        text=True,
+    )
+    proc._captured_argv = (  # type: ignore[attr-defined]
+        args_out.read_text(encoding="utf-8").split("\0") if args_out.exists() else []
+    )
+    return proc
+
+
+def _bearer_from_argv(argv: list) -> str | None:
+    """Extract the 'Bearer <token>' value from the captured curl argv."""
+    for a in argv:
+        if a.startswith("Authorization: Bearer "):
+            return a[len("Authorization: Bearer ") :]
+    return None
+
+
+def test_token_resolved_from_openclaw_password_file(tmp_path):
+    """OPENCLAW_GATEWAY_PASSWORD_FILE contents become the Bearer token."""
+    token = "openclaw-fake-token-" + "a" * 44  # 64-ish char fake, never a real secret
+    tf = tmp_path / "gw_password"
+    tf.write_text(token + "\n", encoding="utf-8")  # trailing newline must be stripped
+    proc = _run_wrapper_capture_bearer({"OPENCLAW_GATEWAY_PASSWORD_FILE": str(tf)})
+    assert proc.returncode == 0, f"wrapper failed: {proc.stderr}"
+    assert _bearer_from_argv(proc._captured_argv) == token
+
+
+def test_token_resolved_from_hermes_auth_token_file(tmp_path):
+    """GATEWAY_AUTH_TOKEN_FILE contents become the Bearer token (Hermes path)."""
+    token = "hermes-fake-token-" + "b" * 46
+    tf = tmp_path / "gw_password"
+    tf.write_text(token + "\n", encoding="utf-8")
+    proc = _run_wrapper_capture_bearer({"GATEWAY_AUTH_TOKEN_FILE": str(tf)})
+    assert proc.returncode == 0, f"wrapper failed: {proc.stderr}"
+    assert _bearer_from_argv(proc._captured_argv) == token
+
+
+def test_token_env_var_wins_over_file(tmp_path):
+    """An explicitly set GATEWAY_AUTH_TOKEN takes priority over the *_FILE (back-compat)."""
+    env_token = "env-fake-token-" + "c" * 48
+    file_token = "file-fake-token-" + "d" * 48
+    tf = tmp_path / "gw_password"
+    tf.write_text(file_token + "\n", encoding="utf-8")
+    proc = _run_wrapper_capture_bearer(
+        {
+            "GATEWAY_AUTH_TOKEN": env_token,
+            "OPENCLAW_GATEWAY_PASSWORD_FILE": str(tf),
+        }
+    )
+    assert proc.returncode == 0, f"wrapper failed: {proc.stderr}"
+    assert _bearer_from_argv(proc._captured_argv) == env_token
+
+
+def test_no_token_source_exits_nonzero_and_sends_no_request(tmp_path):
+    """With NO token source the wrapper must fail loudly and NOT call curl.
+
+    Guards against ever sending an empty `Authorization: Bearer ` header (the
+    original bug produced HTTP 401 from the gateway).
+    """
+    # Point every *_FILE at a nonexistent path and ensure no secret file default
+    # exists — restricted PATH means the real /run/secrets is irrelevant here, but
+    # be explicit: unset env token, unreadable file paths.
+    missing = tmp_path / "does-not-exist"
+    proc = _run_wrapper_capture_bearer(
+        {
+            "GATEWAY_AUTH_TOKEN_FILE": str(missing),
+            "OPENCLAW_GATEWAY_PASSWORD_FILE": str(missing),
+        }
+    )
+    assert proc.returncode != 0, "wrapper must exit non-zero with no token"
+    assert "no gateway auth token" in proc.stderr
+    # curl was never invoked -> the args-capture file was never written.
+    assert proc._captured_argv == [], "wrapper must not call curl without a token"
+
+
+def test_wrapper_never_sends_empty_bearer():
+    """Belt-and-suspenders: the wrapper must not contain a literal empty Bearer.
+
+    The header must interpolate the RESOLVED token variable, not the old
+    `${GATEWAY_AUTH_TOKEN:-}` (which defaulted to empty).
+    """
+    text = WRAPPER.read_text(encoding="utf-8")
+    assert "Authorization: Bearer ${_gw_token}" in text
+    assert "Bearer ${GATEWAY_AUTH_TOKEN:-}" not in text
