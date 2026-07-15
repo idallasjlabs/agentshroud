@@ -61,6 +61,39 @@ if [ -z "${_host}" ] || [ -z "${_command}" ]; then
     exit 1
 fi
 
+# Resolve the gateway auth token (64-char control-plane password). The token was
+# NEVER set as GATEWAY_AUTH_TOKEN in either bot container, so the previous curl
+# sent `Authorization: Bearer ` (empty) and the gateway returned HTTP 401
+# "Invalid authentication scheme. Expected 'Bearer <token>'". The token IS present
+# as a Docker secret FILE at /run/secrets/gateway_password in BOTH bots, exposed
+# via different *_FILE env vars:
+#   OpenClaw: OPENCLAW_GATEWAY_PASSWORD_FILE=/run/secrets/gateway_password
+#   Hermes:   GATEWAY_AUTH_TOKEN_FILE=/run/secrets/gateway_password
+# Resolve in priority order, first non-empty wins. $(cat "$f") strips a trailing
+# newline. Never send an empty Bearer — bail loudly instead.
+_read_token_file() {
+    _f="$1"
+    if [ -n "${_f}" ] && [ -r "${_f}" ]; then
+        cat "${_f}" 2>/dev/null
+    fi
+}
+
+_gw_token="${GATEWAY_AUTH_TOKEN:-}"
+if [ -z "${_gw_token}" ]; then
+    _gw_token="$(_read_token_file "${GATEWAY_AUTH_TOKEN_FILE:-}")"
+fi
+if [ -z "${_gw_token}" ]; then
+    _gw_token="$(_read_token_file "${OPENCLAW_GATEWAY_PASSWORD_FILE:-}")"
+fi
+if [ -z "${_gw_token}" ]; then
+    _gw_token="$(_read_token_file "/run/secrets/gateway_password")"
+fi
+
+if [ -z "${_gw_token}" ]; then
+    echo "[ssh-exec] ERROR: no gateway auth token (GATEWAY_AUTH_TOKEN / *_FILE / /run/secrets/gateway_password all empty)" >&2
+    exit 1
+fi
+
 # Build the JSON payload in pure POSIX shell so command/reason/cwd containing
 # quotes, backslashes, newlines, tabs, or shell metacharacters are safely encoded
 # without depending on an interpreter. The OpenClaw container is a node image with
@@ -132,7 +165,7 @@ _response="$(curl -sS --noproxy gateway --max-time 180 \
     -w "%{http_code}" \
     -X POST "${_gw_url}/ssh/exec" \
     -H "Content-Type: application/json" \
-    -H "Authorization: Bearer ${GATEWAY_AUTH_TOKEN:-}" \
+    -H "Authorization: Bearer ${_gw_token}" \
     -H "X-AgentShroud-System: 1" \
     --data-binary "@${_payload_file}" \
     2>/dev/null)" || _response="000"
