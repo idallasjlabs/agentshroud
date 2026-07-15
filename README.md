@@ -44,6 +44,16 @@ AgentShroud is simultaneously a **production-grade tool**, a **learning laborato
 
 ---
 
+## What's New — v1.3.0 "Reliability" (July 2026)
+
+v1.3.0 hardens reliability and locks in an **honest** container-security posture — real fixes only, no suppression.
+
+- **Reliability**: CI recovery plus a deterministic fix for a date-boundary test flake (clock frozen in the GHSA scheduler test). Bot **SSH-exec wrapper** so internal-gateway calls stop tripping the HIGH command-approval prompt. Upstream-CVE Telegram alerts are now length-capped (no more oversized-message HTTP 400), and the OpenClaw Slack plugin is granted explicit trust.
+- **Honest infra-CVE gate (no security theater)**: container-image CVEs fixed for real (slsa-verifier from-source go-mod overrides, Hermes venv patch bumps) with **zero `.trivyignore` suppression**. The CVEs that remain have **no upstream patch** (Debian `fix:NONE`) and are documented as "currently unmitigable" with evidence in [`docs/security/cve-mitigation-matrix.md`](docs/security/cve-mitigation-matrix.md) — a security tool that reports the truth rather than hiding behind a green checkmark.
+- **Features**: Hermes **weekly Jira keep-alive cron**; ESP32 **OTA-serve endpoint** (`/firmware/bin`, strong-ETag + per-device token) and face experiment #1 (canvas heap-placement diagnostics).
+- **Dependencies**: fastapi, uvicorn, websockets, and docker SDK bumps.
+- **ESP32 firmware reliability**: TWDT reboot-loop, PTT stuck-streaming, and audio-starvation fixes ship in the v1.3.0 firmware — websocket task pinned to CPU 1 at priority 4, 1 ms/frame yield, tap-to-stop PTT, and 16 kHz I2S pre-init.
+
 ## What's New — v1.2.2 (June 2026)
 
 v1.2.2 is a code quality and knowledge graph update. Zero lint errors, zero test failures, zero skipped tests.
