@@ -142,6 +142,24 @@ jobs:
       Email" cron job handles delivery.
       Silence is correct if nothing new; hallucination is a critical failure.
 
+  - name: "jira-weekly-review"
+    enabled: true
+    schedule: "0 9 * * 0"
+    timezone: "America/New_York"
+    notify: false
+    delivery:
+      channel: local
+    message: >
+      Sunday 09:00 — SCRUM-81 weekly Jira review. Run the pre-committed posting
+      script exactly: python3 /opt/data/workspace/jira_weekly_review.py
+      It fetches the Atlassian token/email/domain from the gateway op-proxy,
+      builds a weekly summary (commits + SCRUM items advanced + a staleness flag),
+      and posts it as a real authenticated comment on SCRUM-81 via the Atlassian
+      REST API. This keeps the account non-idle. NEVER use execute_code,
+      python3 -c, pip install, or uv pip install — run the committed script only.
+      Do NOT write your own script. Expect exit code 0. If it exits non-zero,
+      report the full stderr via Telegram.
+
   - name: "Hermes Competitive Intelligence Email (AM/PM)"
     enabled: true
     schedule: "0 7,16 * * *"

@@ -17,11 +17,12 @@ REPO = Path(__file__).parent.parent.parent
 INIT_CONFIG = REPO / "docker" / "bots" / "hermes" / "init-config.sh"
 JOBS_YAML = REPO / "docker" / "config" / "hermes" / "cron" / "jobs.yaml"
 
-# init-config.sh native cron jobs: 5 original + 3 added (stability, landscape, email)
-_EXPECTED_SH_JOB_COUNT = 8
+# init-config.sh native cron jobs: 5 original + 3 (stability, landscape, email)
+# + 1 SCRUM-81 (jira-weekly-review)
+_EXPECTED_SH_JOB_COUNT = 9
 # jobs.yaml includes 2 extra jobs that are YAML-only (AI Security Standards Tracker,
-# Agentic AI CVE Watch) plus the 8 from init-config.sh
-_EXPECTED_YAML_JOB_COUNT = 10
+# Agentic AI CVE Watch) plus the 9 from init-config.sh
+_EXPECTED_YAML_JOB_COUNT = 11
 
 
 def _parse_cron_names_from_sh() -> list[str]:
@@ -99,3 +100,28 @@ def test_competitive_email_job_present():
     assert any(
         "Competitive Intelligence Email" in n for n in yaml_names
     ), "Competitive Intelligence Email job missing from jobs.yaml"
+
+
+def test_jira_weekly_review_job_present():
+    """SCRUM-81: weekly Jira review cron must exist in both sh and yaml, Sun 09:00."""
+    sh_names = _parse_cron_names_from_sh()
+    assert any(
+        "jira-weekly-review" in n for n in sh_names
+    ), "jira-weekly-review job missing from init-config.sh"
+
+    yaml_names = _parse_job_names_from_yaml()
+    assert any(
+        "jira-weekly-review" in n for n in yaml_names
+    ), "jira-weekly-review job missing from jobs.yaml"
+
+
+def test_jira_weekly_review_schedule_is_sunday_9am():
+    """The schedule must be '0 9 * * 0' (Sunday 09:00) in both files."""
+    sh_text = INIT_CONFIG.read_text(encoding="utf-8")
+    assert (
+        '"jira-weekly-review" "local" "0 9 * * 0"' in sh_text
+    ), "jira-weekly-review must be seeded with schedule '0 9 * * 0' in init-config.sh"
+
+    data = yaml.safe_load(JOBS_YAML.read_text(encoding="utf-8"))
+    job = next(j for j in data["jobs"] if j["name"] == "jira-weekly-review")
+    assert job["schedule"] == "0 9 * * 0", "jobs.yaml schedule must be Sunday 09:00"

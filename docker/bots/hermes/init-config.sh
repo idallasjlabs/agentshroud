@@ -71,6 +71,18 @@ else
     echo "[hermes-init] Workspace already seeded — skipping"
 fi
 
+# SCRUM-81: weekly Jira review script — refresh on EVERY boot (not stamp-gated) so
+# code fixes ship on upgrade. It reads no persistent state; overwrite is safe.
+if [ -f "${DEFAULTS_DIR}/workspace/jira_weekly_review.py" ]; then
+    mkdir -p "${DATA_DIR}/workspace"
+    cp "${DEFAULTS_DIR}/workspace/jira_weekly_review.py" \
+       "${DATA_DIR}/workspace/jira_weekly_review.py"
+    chmod 755 "${DATA_DIR}/workspace/jira_weekly_review.py" 2>/dev/null || true
+    echo "[hermes-init] Seeded workspace/jira_weekly_review.py"
+else
+    echo "[hermes-init] WARN: jira_weekly_review.py not found in defaults — skipping"
+fi
+
 # ── Native cron jobs — idempotent seed on every boot ───────────────────────
 # Uses `hermes cron create` (writes to Hermes's internal db) rather than
 # the YAML file, which is not read natively by hermes-agent.
@@ -125,6 +137,11 @@ _seed_cron "Hermes Competitive Landscape Update (AM/PM)" "local" "0 6,15 * * *" 
 # shellcheck disable=SC2016
 _competitive_email_prompt='Read the most recent competitive-report-*.md from /opt/data/workspace/reports/ (prefer today'"'"'s date in YYYY-MM-DD format). If no report exists, use body '"'"'No significant changes detected today.'"'"' Render as a clean HTML email with inline CSS only (white bg #ffffff, text #111111, links #1a73e8, code bg #f6f8fa). To render: copy the cron-operations skill'"'"'s scripts/render_md_email.py to /opt/data/workspace/render_email.py, set its SRC/DST Path() constants (DST = /tmp/competitive-email.html), then run: python3 /opt/data/workspace/render_email.py. If the skill script is unavailable, write a pure-stdlib renderer to /opt/data/workspace/render_email.py and run it the same way. NEVER use execute_code, python3 -c, pip install, or uv pip install — all are blocked in cron mode. NEVER write_file a .py to /tmp/ — write renderer scripts to /opt/data/workspace/ only. The final .html output at /tmp/ is fine. Then run EXACTLY: /usr/local/bin/agentshroud-email-send.sh --html --subject '"'"'AgentShroud Hermes Competitive Intelligence'"'"' --body-file /tmp/competitive-email.html. The --html flag is mandatory — omitting it delivers raw markdown as plain text. Expect HTTP 200. On failure, report the full error via Telegram.'
 _seed_cron "Hermes Competitive Intelligence Email (AM/PM)" "local" "0 7,16 * * *" "$_competitive_email_prompt"
+
+# SCRUM-81: weekly Jira review — post a real authenticated comment on SCRUM-81
+# every Sunday 09:00 so the Atlassian bot account never goes idle.
+_seed_cron "jira-weekly-review" "local" "0 9 * * 0" \
+    "Sunday 09:00 SCRUM-81 weekly Jira review. Run exactly: python3 /opt/data/workspace/jira_weekly_review.py — it fetches the Atlassian token/email/domain from the gateway op-proxy, builds a weekly summary (commits + SCRUM items advanced + staleness flag), and posts a real authenticated comment on SCRUM-81 via the Atlassian REST API to keep the account non-idle. NEVER use execute_code, python3 -c, pip install, or uv pip install — run the committed script only. Do NOT write your own script. Expect exit code 0. If it exits non-zero, report the full stderr via Telegram."
 
 # Ensure memory journal write directory exists on the persistent volume
 mkdir -p "${DATA_DIR}/memories"
