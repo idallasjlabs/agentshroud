@@ -234,49 +234,54 @@ fi
 # Source of truth: ~/.llm_settings/mcp/servers.json → baked to
 # ${DEFAULTS_DIR}/mcp/servers.json by sync-llm-settings.sh. We read the server
 # name + url from that file (NOT hardcoded) and register each enabled server with
-# OpenClaw's native `openclaw mcp add` CLI (the CLI owns the openclaw.json MCP
-# schema, so we never hand-write an unverified key that could crash-loop the bot).
+# OpenClaw's native `openclaw mcp set <name> '<json>'` CLI (the CLI owns the
+# openclaw.json mcp.servers schema, so we never hand-write an unverified key).
+#
+# Verified live against OpenClaw 2026.7.1 (agentshroud-openclaw):
+#   $ openclaw mcp set agentshroud-gateway '{"url":"...","transport":"streamable-http"}'
+#   $ openclaw mcp list   →  - agentshroud-gateway
+# We use `mcp set` (NOT `mcp add`): `add` probes/connects to the server before
+# saving, which fails at init time when the gateway MCP endpoint is not yet
+# reachable; `set` writes the config unconditionally. For an HTTP MCP server the
+# canonical entry is {"url": <url>, "transport": "streamable-http"} — OpenClaw's
+# HTTP transport values are "streamable-http" or "sse" (NOT the literal "http").
 #
 # Idempotency: skip any server already present in `openclaw mcp list`. No secrets
 # are written here — the servers.json comment notes tokens are injected at deploy
 # time; the agentshroud-gateway server needs none (internal Docker control plane).
-# HTTP transport is selected because servers.json declares "type":"http".
 MCP_SERVERS_JSON="${DEFAULTS_DIR}/mcp/servers.json"
 _openclaw_bin="$(command -v openclaw || true)"
 if [ -f "${MCP_SERVERS_JSON}" ] && [ -n "${_openclaw_bin}" ]; then
-  # Enumerate enabled servers as "name<TAB>type<TAB>url" lines via node (JSON-safe).
+  # Emit one line per enabled server: "<name>\t<openclaw-json-entry>".
+  # Map servers.json "type" → OpenClaw transport: http → streamable-http, sse → sse.
   _mcp_rows="$(node -e "
     try {
       const cfg = JSON.parse(require('fs').readFileSync('${MCP_SERVERS_JSON}', 'utf8'));
       const servers = (cfg && cfg.servers) || {};
       for (const [name, s] of Object.entries(servers)) {
         if (s && s.enabled === false) continue;
-        const type = (s && s.type) || 'http';
         const url = (s && s.url) || '';
         if (!url) continue;
-        process.stdout.write(name + '\t' + type + '\t' + url + '\n');
+        const t = String((s && s.type) || 'http').toLowerCase();
+        const transport = t === 'sse' ? 'sse' : 'streamable-http';
+        const entry = JSON.stringify({ url, transport });
+        process.stdout.write(name + '\t' + entry + '\n');
       }
     } catch (e) { process.stderr.write('mcp parse error: ' + e.message + '\n'); }
   " 2>/dev/null)"
 
   if [ -n "${_mcp_rows}" ]; then
     _mcp_existing="$(openclaw mcp list 2>/dev/null || true)"
-    printf '%s\n' "${_mcp_rows}" | while IFS="$(printf '\t')" read -r _name _type _url; do
-      [ -n "${_name}" ] && [ -n "${_url}" ] || continue
+    printf '%s\n' "${_mcp_rows}" | while IFS="$(printf '\t')" read -r _name _entry; do
+      [ -n "${_name}" ] && [ -n "${_entry}" ] || continue
       if printf '%s' "${_mcp_existing}" | grep -qw "${_name}"; then
         echo "[init] ✓ MCP server '${_name}' already registered — skipping"
         continue
       fi
-      # OpenClaw MCP registration via CLI. HTTP-transport flag names vary across
-      # OpenClaw releases; try the known forms in order and stop at first success.
-      # A failure is non-fatal (logged) — it degrades gracefully like the Hermes
-      # github-MCP block rather than crash-looping the bot.
-      if openclaw mcp add "${_name}" --transport http --url "${_url}" >/dev/null 2>&1 \
-        || openclaw mcp add "${_name}" --type http --url "${_url}" >/dev/null 2>&1 \
-        || openclaw mcp add "${_name}" --url "${_url}" >/dev/null 2>&1; then
-        echo "[init] ✓ Registered MCP server '${_name}' (${_type}) → ${_url}"
+      if openclaw mcp set "${_name}" "${_entry}" >/dev/null 2>&1; then
+        echo "[init] ✓ Registered MCP server '${_name}' → ${_entry}"
       else
-        echo "[init] ⚠ Could not register MCP server '${_name}' via 'openclaw mcp add' (will retry next boot)"
+        echo "[init] ⚠ Could not register MCP server '${_name}' via 'openclaw mcp set' (will retry next boot)"
       fi
     done
   else

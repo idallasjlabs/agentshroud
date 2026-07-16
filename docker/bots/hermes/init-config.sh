@@ -52,23 +52,58 @@ fi
 # since last seed (checksum stamp) so corrected personas — e.g. the connectivity-fix
 # ssh-exec wrapper now in hermes-soul.md — propagate onto pre-existing volumes.
 # Between image builds the checksum is stable, so live edits survive plain restarts.
+#
+# Ownership-tolerant write (fixes the "cp: cannot create '/opt/data/SOUL.md':
+# Permission denied" trap): the volume may hold a STALE SOUL.md owned by a foreign
+# uid (e.g. 14664 from an old host `docker cp`). init runs as the non-root hermes
+# user, so a plain `cp` over that file fails (cp opens the existing inode for
+# writing → EACCES) even though the target file exists. Since ${DATA_DIR} itself is
+# hermes-owned, we can DELETE the foreign file (directory write permission) and
+# create a fresh hermes-owned copy. We stage into a temp file in the SAME dir first,
+# then rm + mv so a crash mid-write never leaves a truncated SOUL.md.
 _SOUL_SRC="${DEFAULTS_DIR}/agents/hermes-soul.md"
 [ -f "${_SOUL_SRC}" ] || _SOUL_SRC="${DEFAULTS_DIR}/SOUL.md"
+_SOUL_DEST="${DATA_DIR}/SOUL.md"
 _SOUL_STAMP="${DATA_DIR}/.SOUL.md.seed-sha256"
 _soul_sha="$(sha256sum "${_SOUL_SRC}" 2>/dev/null | awk '{print $1}')"
-if [ ! -f "${DATA_DIR}/SOUL.md" ]; then
-    cp "${_SOUL_SRC}" "${DATA_DIR}/SOUL.md"
-    printf '%s' "${_soul_sha}" > "${_SOUL_STAMP}" 2>/dev/null || true
-    echo "[hermes-init] Seeded SOUL.md from ${_SOUL_SRC##*/} (Hermes identity, first run)"
+
+# _write_soul: atomically place ${_SOUL_SRC} at ${_SOUL_DEST}, tolerant of a
+# foreign-owned pre-existing file. Returns 0 on success.
+_write_soul() {
+    _tmp="${DATA_DIR}/.SOUL.md.tmp.$$"
+    if cp "${_SOUL_SRC}" "${_tmp}" 2>/dev/null; then
+        rm -f "${_SOUL_DEST}" 2>/dev/null || true
+        if mv -f "${_tmp}" "${_SOUL_DEST}" 2>/dev/null; then
+            return 0
+        fi
+        rm -f "${_tmp}" 2>/dev/null || true
+    fi
+    # Last resort: try a plain in-place cp (works if we DO own the file).
+    cp "${_SOUL_SRC}" "${_SOUL_DEST}" 2>/dev/null
+}
+
+if [ ! -f "${_SOUL_DEST}" ]; then
+    if _write_soul; then
+        printf '%s' "${_soul_sha}" > "${_SOUL_STAMP}" 2>/dev/null || true
+        echo "[hermes-init] Seeded SOUL.md from ${_SOUL_SRC##*/} (Hermes identity, first run)"
+    else
+        echo "[hermes-init] WARN: could not seed SOUL.md (permission) — will retry next boot"
+    fi
 else
     _soul_prev=""
     [ -f "${_SOUL_STAMP}" ] && _soul_prev="$(cat "${_SOUL_STAMP}" 2>/dev/null || true)"
-    if [ -n "${_soul_sha}" ] && [ "${_soul_sha}" != "${_soul_prev}" ]; then
-        cp "${_SOUL_SRC}" "${DATA_DIR}/SOUL.md"
-        printf '%s' "${_soul_sha}" > "${_SOUL_STAMP}" 2>/dev/null || true
-        echo "[hermes-init] Re-seeded SOUL.md — synced persona changed since last seed (stale volume copy replaced)"
+    # Also re-seed if the deployed file's content already drifted from the synced
+    # persona (covers the stale foreign-owned file whose stamp was never written).
+    _soul_dest_sha="$(sha256sum "${_SOUL_DEST}" 2>/dev/null | awk '{print $1}')"
+    if [ -n "${_soul_sha}" ] && { [ "${_soul_sha}" != "${_soul_prev}" ] || [ "${_soul_sha}" != "${_soul_dest_sha}" ]; }; then
+        if _write_soul; then
+            printf '%s' "${_soul_sha}" > "${_SOUL_STAMP}" 2>/dev/null || true
+            echo "[hermes-init] Re-seeded SOUL.md — synced persona changed / stale volume copy replaced"
+        else
+            echo "[hermes-init] WARN: could not re-seed SOUL.md (permission) — will retry next boot"
+        fi
     else
-        echo "[hermes-init] SOUL.md matches last-seeded synced persona — skipping"
+        echo "[hermes-init] SOUL.md matches synced persona — skipping"
     fi
 fi
 
@@ -283,48 +318,151 @@ fi
 # ── Synced MCP servers — register each from mcp/servers.json (idempotent) ───
 # Source of truth: ~/.llm_settings/mcp/servers.json → baked to
 # ${DEFAULTS_DIR}/mcp/servers.json by sync-llm-settings.sh. Read the server
-# name + url from that file (NOT hardcoded) and register each enabled server via
-# Hermes' native `hermes mcp add`. Extends the github-MCP idempotent pattern above
-# to the declarative server list. No secrets are written here — the servers.json
-# comment notes tokens are injected at deploy time; agentshroud-gateway needs none
-# (internal Docker control plane). HTTP transport is used because servers.json
-# declares "type":"http". Idempotent: skip any server already in `hermes mcp list`.
+# name + url from that file (NOT hardcoded) and register each enabled server into
+# Hermes' MCP config.
+#
+# Why we write config.yaml directly instead of `hermes mcp add`:
+# `hermes mcp add <name> --url <url>` (Hermes 0.18.x) is DISCOVERY-FIRST and fully
+# INTERACTIVE — it prompts "Does this server require authentication? [Y/n]", then
+# connects/probes the endpoint, then prompts "Enable all tools? [Y/n/select]". In a
+# non-interactive s6 init those prompts get EOF and the add is cancelled (verified
+# live: it also hung/crash-looped the container). Hermes stores MCP servers in
+# ${HERMES_HOME}/config.yaml under the `mcp_servers:` key (HERMES_HOME=/opt/data;
+# see hermes_cli/mcp_config.py). An HTTP entry is simply {url, enabled: true}.
+# Verified live: writing that key makes `hermes mcp list` show the server as
+# "✓ enabled". This merges (never clobbers other servers, e.g. github) and is
+# idempotent (only writes when the desired entry is missing/changed).
 _MCP_SERVERS_JSON="${DEFAULTS_DIR}/mcp/servers.json"
+_HERMES_CONFIG="${DATA_DIR}/config.yaml"
 if [ -f "${_MCP_SERVERS_JSON}" ]; then
-    _mcp_rows="$(python3 -c "
-import json, sys
-try:
-    cfg = json.load(open('${_MCP_SERVERS_JSON}'))
-except Exception as e:
-    sys.stderr.write('mcp parse error: %s\n' % e); sys.exit(0)
-for name, s in (cfg.get('servers') or {}).items():
-    if not isinstance(s, dict) or s.get('enabled') is False:
+    if HERMES_MCP_SRC="${_MCP_SERVERS_JSON}" HERMES_MCP_CONFIG="${_HERMES_CONFIG}" \
+       python3 - <<'PYEOF'
+import json, os, re, sys
+
+src = os.environ["HERMES_MCP_SRC"]
+cfg_path = os.environ["HERMES_MCP_CONFIG"]
+
+with open(src) as f:
+    servers = (json.load(f).get("servers") or {})
+
+# Desired mcp_servers entries from servers.json (url read from file, not hardcoded).
+desired = {}
+for name, s in servers.items():
+    if not isinstance(s, dict) or s.get("enabled") is False:
         continue
-    url = s.get('url') or ''
+    url = s.get("url")
     if not url:
         continue
-    print('%s\t%s\t%s' % (name, s.get('type') or 'http', url))
-" 2>/dev/null)"
-    if [ -n "${_mcp_rows}" ]; then
-        _mcp_existing="$(HOME="${DATA_DIR}" hermes mcp list 2>/dev/null || true)"
-        printf '%s\n' "${_mcp_rows}" | while IFS="$(printf '\t')" read -r _name _type _url; do
-            [ -n "${_name}" ] && [ -n "${_url}" ] || continue
-            if printf '%s' "${_mcp_existing}" | grep -qw "${_name}"; then
-                echo "[hermes-init] MCP server '${_name}' already configured — skipping"
-                continue
-            fi
-            # HTTP-transport flag names vary across Hermes releases; try the known
-            # forms in order. Non-fatal on failure (retries next boot).
-            if HOME="${DATA_DIR}" hermes mcp add "${_name}" --transport http --url "${_url}" >/dev/null 2>&1 \
-               || HOME="${DATA_DIR}" hermes mcp add "${_name}" --type http --url "${_url}" >/dev/null 2>&1 \
-               || HOME="${DATA_DIR}" hermes mcp add "${_name}" --url "${_url}" >/dev/null 2>&1; then
-                echo "[hermes-init] Registered MCP server '${_name}' (${_type}) → ${_url}"
-            else
-                echo "[hermes-init] WARN: could not add MCP server '${_name}' (will retry on next boot)"
-            fi
-        done
+    desired[name] = {"url": url, "enabled": True}
+
+if not desired:
+    print("NO_SERVERS")
+    sys.exit(0)
+
+# Primary path: PyYAML (present in the Hermes venv). Preserves the full config
+# structure and merges operator-added server fields (headers/tools/auth).
+try:
+    import yaml  # type: ignore
+
+    cfg = {}
+    if os.path.exists(cfg_path):
+        with open(cfg_path) as f:
+            cfg = yaml.safe_load(f) or {}
+    mcp = cfg.setdefault("mcp_servers", {})
+    changed = []
+    for name, entry in desired.items():
+        cur = mcp.get(name)
+        if not isinstance(cur, dict):
+            mcp[name] = dict(entry)
+            changed.append(name)
+        elif cur.get("url") != entry["url"] or cur.get("enabled") is False:
+            cur["url"] = entry["url"]
+            cur["enabled"] = True
+            changed.append(name)
+    if changed:
+        tmp = cfg_path + ".tmp.%d" % os.getpid()
+        with open(tmp, "w") as f:
+            yaml.safe_dump(cfg, f, sort_keys=False)
+        os.replace(tmp, cfg_path)
+        print("CHANGED:" + ",".join(changed))
+    else:
+        print("UNCHANGED")
+    sys.exit(0)
+except ImportError:
+    pass  # Fall through to the stdlib-only text merge below.
+
+# Fallback: no PyYAML — rewrite ONLY the top-level `mcp_servers:` block textually,
+# preserving every other line (comments included). We treat a server as already
+# present if a `  <name>:` key exists with a matching `    url: <url>` beneath it.
+text = ""
+if os.path.exists(cfg_path):
+    with open(cfg_path) as f:
+        text = f.read()
+lines = text.splitlines()
+
+# Locate an existing top-level mcp_servers: block [start, end).
+start = end = None
+for i, ln in enumerate(lines):
+    if re.match(r"^mcp_servers:\s*$", ln):
+        start = i
+        j = i + 1
+        while j < len(lines) and (lines[j].strip() == "" or lines[j].startswith(("  ", "\t"))):
+            j += 1
+        end = j
+        break
+
+existing_block = lines[start:end] if start is not None else []
+existing_text = "\n".join(existing_block)
+
+def has_server(name, url):
+    # crude but safe: name key present AND its url line present in the block
+    return (re.search(r"^ {2}%s:\s*$" % re.escape(name), existing_text, re.M)
+            and ("url: %s" % url) in existing_text)
+
+changed = [n for n, e in desired.items() if not has_server(n, e["url"])]
+
+# Build the merged mcp_servers block: keep existing entries, add/refresh desired ones.
+merged = {}
+# Parse existing simple entries (name -> {key: val}) to preserve unrelated servers.
+cur_name = None
+for ln in existing_block[1:]:  # skip the "mcp_servers:" header
+    m = re.match(r"^ {2}([^\s:]+):\s*$", ln)
+    if m:
+        cur_name = m.group(1)
+        merged[cur_name] = {}
+        continue
+    kv = re.match(r"^ {4}([^\s:]+):\s*(.+?)\s*$", ln)
+    if kv and cur_name:
+        merged[cur_name][kv.group(1)] = kv.group(2)
+for n, e in desired.items():
+    merged.setdefault(n, {})
+    merged[n]["url"] = e["url"]
+    merged[n]["enabled"] = "true"
+
+block = ["mcp_servers:"]
+for n in merged:
+    block.append("  %s:" % n)
+    for k, v in merged[n].items():
+        block.append("    %s: %s" % (k, v))
+
+if start is not None:
+    new_lines = lines[:start] + block + lines[end:]
+else:
+    new_lines = lines + ([""] if lines and lines[-1].strip() else []) + block
+
+if changed or start is None:
+    tmp = cfg_path + ".tmp.%d" % os.getpid()
+    with open(tmp, "w") as f:
+        f.write("\n".join(new_lines) + "\n")
+    os.replace(tmp, cfg_path)
+    print("CHANGED:" + ",".join(changed) if changed else "CHANGED")
+else:
+    print("UNCHANGED")
+PYEOF
+    then
+        echo "[hermes-init] MCP servers reconciled from ${_MCP_SERVERS_JSON##*/} into config.yaml"
     else
-        echo "[hermes-init] No enabled MCP servers in ${_MCP_SERVERS_JSON} — skipping"
+        echo "[hermes-init] WARN: could not reconcile MCP servers (see error above) — will retry next boot"
     fi
 else
     echo "[hermes-init] No synced mcp/servers.json — run scripts/sync-llm-settings.sh (skipping)"
