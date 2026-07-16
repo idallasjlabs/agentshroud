@@ -192,12 +192,15 @@ async def run_and_send_cve_report(
                 await loop.run_in_executor(
                     None,
                     lambda r=img_report: save_report(
-                        r, report_prefix=f"image-{_img.replace(':', '-').replace('/', '-')}-"
+                        r,
+                        report_prefix=f"image-{_img.replace(':', '-').replace('/', '-')}-",
                     ),
                 )
             except Exception as save_exc:
                 logger.warning(
-                    "Failed to save Trivy image report for %s: %s", image_target, save_exc
+                    "Failed to save Trivy image report for %s: %s",
+                    image_target,
+                    save_exc,
                 )
             if img_report.get("error"):
                 image_scan_lines.append(f"🖼 `{image_target}`: scan error — `{img_report['error']}`")
@@ -376,21 +379,30 @@ def _already_checked_upstream_today(now: datetime) -> bool:
 # ── Upstream CVE watch ────────────────────────────────────────────────────────
 
 
-def check_upstream_cves(github_token: Optional[str] = None) -> list[dict[str, Any]]:
-    """Fetch OpenClaw GitHub Security Advisories and return advisories we don't track.
+def check_upstream_cves(
+    github_token: Optional[str] = None, agent_id: str = "openclaw"
+) -> list[dict[str, Any]]:
+    """Fetch one agent's GitHub Security Advisories and return advisories we don't track.
+
+    Each wrapped agent has a COMPLETELY SEPARATE pipeline: this function fetches
+    *only* ``agent_id``'s own upstream advisory repo and diffs *only* against
+    ``agent_id``'s own registry list.  OpenClaw and Hermes never cross-check or
+    share state — call this once per agent (see ``run_upstream_cve_check``).
 
     The registry's source-of-truth identifier is the **GHSA id** — the registry's
-    own ``id`` field is a synthetic AgentShroud ref (``ASH-OCLAW-NNN``) and is NOT
-    comparable to upstream advisory ids.  An advisory is therefore reported as
-    "new" only when its ``ghsa_id`` is absent from the registry's set of tracked
-    GHSA ids.  As a fallback, an advisory that carries a real ``cve_id`` already
-    tracked in the registry is treated as known even if its GHSA id is not yet
-    recorded — this covers legacy entries matched by CVE rather than GHSA.
+    own ``id`` field is a synthetic AgentShroud ref (``ASH-OCLAW-NNN`` /
+    ``ASH-HERMES-NNN``) and is NOT comparable to upstream advisory ids.  An
+    advisory is reported as "new" only when its ``ghsa_id`` is absent from that
+    agent's set of tracked GHSA ids.  As a fallback, an advisory that carries a
+    real ``cve_id`` already tracked in the same agent's registry is treated as
+    known even if its GHSA id is not yet recorded.
 
     Args:
         github_token: Optional GitHub personal access token or fine-grained token
             with ``repo`` read scope. Without a token the API allows 60 req/hour
             per source IP — sufficient for a daily check.
+        agent_id: Which wrapped agent to check (``"openclaw"`` / ``"hermes"``).
+            Selects that agent's OWN registry list and OWN upstream repo.
 
     Returns:
         List of dicts with keys: id (the upstream GHSA id), ghsa_id, cve_id,
@@ -399,16 +411,19 @@ def check_upstream_cves(github_token: Optional[str] = None) -> list[dict[str, An
     Raises:
         urllib.error.URLError / OSError: on network failure.
         json.JSONDecodeError: if the API response is malformed.
+        KeyError: if *agent_id* is not a registered agent.
     """
-    from .agent_cve_registry import AGENT_CVE_REGISTRY
+    from .agent_cve_registry import _AGENT_CVE_REGISTRIES, get_agent_ghsa_repo
+
+    # This agent's OWN registry list — never merged with any other agent's.
+    registry = _AGENT_CVE_REGISTRIES[agent_id]
+    repo = get_agent_ghsa_repo(agent_id)
 
     # GHSA ids are the source of truth for "already tracked".
-    known_ghsa: set[str] = {c["ghsa_id"] for c in AGENT_CVE_REGISTRY if c.get("ghsa_id")}
-    known_cve: set[str] = {c["cve_id"] for c in AGENT_CVE_REGISTRY if c.get("cve_id")}
+    known_ghsa: set[str] = {c["ghsa_id"] for c in registry if c.get("ghsa_id")}
+    known_cve: set[str] = {c["cve_id"] for c in registry if c.get("cve_id")}
 
-    url = (
-        f"https://api.github.com/repos/{_OPENCLAW_GITHUB_REPO}" "/security-advisories?per_page=100"
-    )
+    url = f"https://api.github.com/repos/{repo}/security-advisories?per_page=100"
     headers: dict[str, str] = {
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
@@ -451,8 +466,11 @@ def check_upstream_cves(github_token: Optional[str] = None) -> list[dict[str, An
     return new_cves
 
 
-def format_upstream_cve_alert(new_cves: list[dict[str, Any]]) -> str:
+def format_upstream_cve_alert(new_cves: list[dict[str, Any]], agent_label: str = "OpenClaw") -> str:
     """Format a Telegram alert for newly detected upstream CVEs.
+
+    The alert is titled for a specific wrapped agent (*agent_label*) so OpenClaw
+    and Hermes each get their own independent, clearly-labelled alert.
 
     The alert is a bounded *summary*: it lists at most ``_UPSTREAM_ALERT_MAX_ITEMS``
     advisories inline (severity icon + GHSA id + CVSS/severity), then folds any
@@ -475,7 +493,7 @@ def format_upstream_cve_alert(new_cves: list[dict[str, Any]]) -> str:
     remaining = count - len(shown)
 
     lines = [
-        f"🚨 *AgentShroud™ — {count} New OpenClaw CVE{plural} Detected*",
+        f"🚨 *AgentShroud™ — {count} New {agent_label} CVE{plural} Detected*",
         f"_{count} CVE{plural} not yet in the AgentShroud registry_\n",
     ]
     for cve in shown:
@@ -487,7 +505,8 @@ def format_upstream_cve_alert(new_cves: list[dict[str, Any]]) -> str:
         lines.append(f"\n…and {remaining} more (see dashboard / CVE report)")
 
     lines.append(
-        "\n⚠️ *Action required:* triage and add to `gateway/security/agent_cve_registry.py`"
+        "\nℹ️ Auto-registered as *under_review* (honest — NOT claimed mitigated) "
+        "by the daily sync. Triage status at `/soc/v1/agent-cves`."
     )
     message = "\n".join(lines)
 
@@ -503,53 +522,146 @@ async def run_upstream_cve_check(
     owner_chat_id: str,
     base_url: str = "https://api.telegram.org",
     github_token: Optional[str] = None,
+    agent_id: str = "openclaw",
+    always_report_zero: bool = False,
 ) -> dict[str, Any]:
-    """Fetch upstream CVEs, alert via Telegram if new ones are found.
+    """Fetch one agent's upstream CVEs, alert via Telegram, honestly.
+
+    Runs a single wrapped agent's independent pipeline: fetch *its* repo, diff vs
+    *its* registry, alert with *its* label.  Call once per agent (the scheduler
+    loops over registered agents) so OpenClaw and Hermes reports never mix.
 
     Args:
         bot_token: Telegram Bot API token.
         owner_chat_id: Chat ID to send the alert to.
         base_url: Telegram API base URL (gateway-proxied in production).
         github_token: Optional GitHub token for higher API rate limits.
+        agent_id: Which wrapped agent to check (``"openclaw"`` / ``"hermes"``).
+        always_report_zero: When True, send a short "0 new" Telegram note even
+            when the agent has no new advisories.  The owner explicitly wants to
+            SEE a Hermes report even when its feed is empty — this proves the
+            pipeline is live and agent-agnostic.  Defaults to False (silence when
+            nothing new, the historical OpenClaw behavior).
 
     Returns:
-        Dict with keys: new_cves (int), cve_ids (list), telegram_sent (bool),
-        and optionally error (str).
+        Dict with keys: agent_id (str), new_cves (int), cve_ids (list),
+        telegram_sent (bool), and optionally error (str).
     """
+    from .agent_cve_registry import get_agent_cve_source
+
+    try:
+        agent_label = get_agent_cve_source(agent_id)["alert_title"]
+    except KeyError:
+        agent_label = agent_id.capitalize()
+
     loop = asyncio.get_event_loop()
 
     try:
-        new_cves = await loop.run_in_executor(None, lambda: check_upstream_cves(github_token))
+        new_cves = await loop.run_in_executor(
+            None, lambda: check_upstream_cves(github_token, agent_id)
+        )
     except Exception as exc:
-        logger.error("Upstream CVE check failed: %s", exc)
-        return {"new_cves": 0, "cve_ids": [], "telegram_sent": False, "error": str(exc)}
+        logger.error("Upstream CVE check failed for %s: %s", agent_id, exc)
+        return {
+            "agent_id": agent_id,
+            "new_cves": 0,
+            "cve_ids": [],
+            "telegram_sent": False,
+            "error": str(exc),
+        }
 
     result: dict[str, Any] = {
+        "agent_id": agent_id,
         "new_cves": len(new_cves),
         "cve_ids": [c["id"] for c in new_cves],
         "telegram_sent": False,
     }
 
     if not new_cves:
-        logger.info("Upstream CVE check: registry is current (no new CVEs found)")
+        logger.info("Upstream CVE check (%s): registry is current (no new CVEs found)", agent_id)
+        if always_report_zero and bot_token and owner_chat_id:
+            try:
+                message = (
+                    f"✅ *AgentShroud™ — {agent_label} CVE watch*\n"
+                    f"_0 new advisories._ Registry is current; the "
+                    f"{agent_label} pipeline is live and monitoring its own "
+                    f"upstream feed independently."
+                )
+                result["telegram_sent"] = await _send_telegram(
+                    bot_token, owner_chat_id, message, base_url
+                )
+            except Exception as exc:
+                logger.error("Failed to send %s zero-CVE note via Telegram: %s", agent_id, exc)
         return result
 
     logger.warning(
-        "Upstream CVE check: %d new CVE(s) detected: %s",
+        "Upstream CVE check (%s): %d new CVE(s) detected: %s",
+        agent_id,
         len(new_cves),
         result["cve_ids"],
     )
 
     if bot_token and owner_chat_id:
         try:
-            message = format_upstream_cve_alert(new_cves)
+            message = format_upstream_cve_alert(new_cves, agent_label)
             result["telegram_sent"] = await _send_telegram(
                 bot_token, owner_chat_id, message, base_url
             )
         except Exception as exc:
-            logger.error("Failed to send upstream CVE alert via Telegram: %s", exc)
+            logger.error("Failed to send %s upstream CVE alert via Telegram: %s", agent_id, exc)
 
     return result
+
+
+# Agents whose report is sent even when they have zero new advisories, so the
+# owner can SEE that the pipeline is live for that agent (agent-agnostic proof).
+# Hermes's upstream (nousresearch/hermes-agent) currently publishes 0 advisories.
+_ALWAYS_REPORT_ZERO_AGENTS: frozenset[str] = frozenset({"hermes"})
+
+
+async def run_upstream_cve_check_all_agents(
+    bot_token: str,
+    owner_chat_id: str,
+    base_url: str = "https://api.telegram.org",
+    github_token: Optional[str] = None,
+) -> list[dict[str, Any]]:
+    """Run the upstream CVE check for EVERY registered agent, independently.
+
+    Iterates the per-agent CVE config (``list_cve_agents``) and runs each agent's
+    fully separate pipeline in turn: OpenClaw checks ``openclaw/openclaw`` vs the
+    OpenClaw registry; Hermes checks ``nousresearch/hermes-agent`` vs the Hermes
+    registry.  No shared state, no combined counters, no cross-agent dedup — each
+    agent produces its own result dict and its own Telegram alert.  A failure in
+    one agent's check never blocks another agent's report.
+
+    Returns:
+        A list of per-agent result dicts (one per registered agent), each as
+        returned by :func:`run_upstream_cve_check`.
+    """
+    from .agent_cve_registry import list_cve_agents
+
+    results: list[dict[str, Any]] = []
+    for agent_id in list_cve_agents():
+        try:
+            result = await run_upstream_cve_check(
+                bot_token=bot_token,
+                owner_chat_id=owner_chat_id,
+                base_url=base_url,
+                github_token=github_token,
+                agent_id=agent_id,
+                always_report_zero=agent_id in _ALWAYS_REPORT_ZERO_AGENTS,
+            )
+        except Exception as exc:  # isolate: one agent's failure never blocks another
+            logger.error("Per-agent CVE check failed for %s: %s", agent_id, exc)
+            result = {
+                "agent_id": agent_id,
+                "new_cves": 0,
+                "cve_ids": [],
+                "telegram_sent": False,
+                "error": str(exc),
+            }
+        results.append(result)
+    return results
 
 
 async def upstream_cve_check_scheduler(
@@ -604,13 +716,17 @@ async def upstream_cve_check_scheduler(
                 logger.info("Upstream CVE check already done today, skipping.")
                 continue
 
-            logger.info("Running upstream CVE check...")
-            result = await run_upstream_cve_check(
+            logger.info("Running upstream CVE check (per-agent)...")
+            results = await run_upstream_cve_check_all_agents(
                 bot_token=bot_token,
                 owner_chat_id=owner_chat_id,
                 base_url=base_url,
                 github_token=github_token,
             )
+            result = {
+                "new_cves": sum(r.get("new_cves", 0) for r in results),
+                "telegram_sent": any(r.get("telegram_sent") for r in results),
+            }
 
             # Record completion — in-memory first (disk may be full).
             _upstream_check_dates.add(datetime.now(timezone.utc).date().isoformat())
@@ -703,13 +819,17 @@ async def ghsa_ingest_scheduler(
                 logger.info("GHSA ingest already done today, skipping.")
                 continue
 
-            logger.info("Running GHSA source-of-truth ingest...")
-            result = await run_upstream_cve_check(
+            logger.info("Running GHSA source-of-truth ingest (per-agent)...")
+            results = await run_upstream_cve_check_all_agents(
                 bot_token=bot_token,
                 owner_chat_id=owner_chat_id,
                 base_url=base_url,
                 github_token=github_token,
             )
+            result = {
+                "new_cves": sum(r.get("new_cves", 0) for r in results),
+                "telegram_sent": any(r.get("telegram_sent") for r in results),
+            }
 
             _ghsa_ingest_dates.add(datetime.now(timezone.utc).date().isoformat())
             try:

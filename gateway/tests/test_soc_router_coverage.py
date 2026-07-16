@@ -352,7 +352,9 @@ async def test_risk_fallback_builder(client, monkeypatch):
     import gateway.security.soc_correlation as corr_mod
 
     monkeypatch.setattr(
-        corr_mod, "build_correlation_summary", lambda app: SimpleNamespace(risk_score=25)
+        corr_mod,
+        "build_correlation_summary",
+        lambda app: SimpleNamespace(risk_score=25),
     )
     resp = await client.get("/soc/v1/security/risk")
     assert resp.json()["risk_score"] == 25
@@ -592,7 +594,8 @@ async def test_egress_rule_override_scoped(client, state):
 
     # Default (no scope) → "all"
     resp = await client.post(
-        "/soc/v1/egress/rules/override", json={"domain": "ok.example", "action": "allow"}
+        "/soc/v1/egress/rules/override",
+        json={"domain": "ok.example", "action": "allow"},
     )
     assert resp.json()["scope"]["kind"] == "all"
     assert resp.json()["mode"] == "permanent"
@@ -619,7 +622,10 @@ async def test_egress_rule_remove_no_queue(client):
 async def test_egress_history_with_bot_filter(client, state):
     state.egress_approval_queue = SimpleNamespace(
         get_decision_log=AsyncMock(
-            return_value=[{"agent_id": "botA", "id": "1"}, {"agent_id": "botB", "id": "2"}]
+            return_value=[
+                {"agent_id": "botA", "id": "1"},
+                {"agent_id": "botB", "id": "2"},
+            ]
         )
     )
     resp = await client.get("/soc/v1/egress/history")
@@ -658,7 +664,11 @@ async def test_emergency_block_confirmed(client, state):
     resp = await client.post(
         "/soc/v1/egress/emergency-block", json={"confirm": True, "reason": "incident-7"}
     )
-    assert resp.json() == {"ok": True, "action": "emergency_block", "reason": "incident-7"}
+    assert resp.json() == {
+        "ok": True,
+        "action": "emergency_block",
+        "reason": "incident-7",
+    }
     ef.emergency_block.assert_called_once_with(reason="incident-7")
 
 
@@ -703,7 +713,8 @@ async def test_service_logs(client, monkeypatch):
 
 async def test_service_start(client, monkeypatch):
     monkeypatch.setattr(
-        "gateway.soc.services.ServiceManager", _make_service_manager(results={"start": True})
+        "gateway.soc.services.ServiceManager",
+        _make_service_manager(results={"start": True}),
     )
     resp = await client.post("/soc/v1/services/gw/start")
     assert resp.json() == {"ok": True, "service": "gw", "action": "start"}
@@ -711,7 +722,8 @@ async def test_service_start(client, monkeypatch):
 
 async def test_service_stop_confirmation_then_stop(client, monkeypatch):
     monkeypatch.setattr(
-        "gateway.soc.services.ServiceManager", _make_service_manager(results={"stop": False})
+        "gateway.soc.services.ServiceManager",
+        _make_service_manager(results={"stop": False}),
     )
     resp = await client.post("/soc/v1/services/gw/stop", json={"confirm": False})
     assert resp.status_code == 409
@@ -721,7 +733,8 @@ async def test_service_stop_confirmation_then_stop(client, monkeypatch):
 
 async def test_service_restart(client, monkeypatch):
     monkeypatch.setattr(
-        "gateway.soc.services.ServiceManager", _make_service_manager(results={"restart": True})
+        "gateway.soc.services.ServiceManager",
+        _make_service_manager(results={"restart": True}),
     )
     resp = await client.post("/soc/v1/services/gw/restart", json={"confirm": False})
     assert resp.status_code == 409
@@ -731,7 +744,8 @@ async def test_service_restart(client, monkeypatch):
 
 async def test_service_update(client, monkeypatch):
     monkeypatch.setattr(
-        "gateway.soc.services.ServiceManager", _make_service_manager(results={"update": True})
+        "gateway.soc.services.ServiceManager",
+        _make_service_manager(results={"update": True}),
     )
     resp = await client.post("/soc/v1/services/gw/update", json={"confirm": False})
     assert resp.status_code == 409
@@ -1048,7 +1062,12 @@ async def test_create_group_paths(client, holder, state, monkeypatch):
     # success
     resp = await client.post(
         "/soc/v1/groups",
-        json={"group_id": "g2", "name": "Eng", "members": ["u1"], "collab_mode": "full_access"},
+        json={
+            "group_id": "g2",
+            "name": "Eng",
+            "members": ["u1"],
+            "collab_mode": "full_access",
+        },
     )
     data = resp.json()
     assert data["ok"] is True
@@ -1199,13 +1218,18 @@ async def test_create_delegation_paths(client, holder, state):
     )
     state.delegation_manager = mgr
     resp = await client.post(
-        "/soc/v1/delegation", json={"delegatee_id": "u1", "privilege": "not-a-privilege"}
+        "/soc/v1/delegation",
+        json={"delegatee_id": "u1", "privilege": "not-a-privilege"},
     )
     assert resp.status_code == 400
 
     resp = await client.post(
         "/soc/v1/delegation",
-        json={"delegatee_id": "u1", "privilege": "egress_approval", "duration_hours": 2.0},
+        json={
+            "delegatee_id": "u1",
+            "privilege": "egress_approval",
+            "duration_hours": 2.0,
+        },
     )
     assert resp.json()["delegatee_id"] == "u1"
     assert mgr.delegate.call_args.kwargs["duration_hours"] == 2.0
@@ -1252,7 +1276,11 @@ async def test_tool_acl(client, state):
         get_denied_tools=lambda eid: ["shell"],
     )
     resp = await client.get("/soc/v1/tool-acl/u1")
-    assert resp.json() == {"entity_id": "u1", "allowed": ["web_fetch"], "denied": ["shell"]}
+    assert resp.json() == {
+        "entity_id": "u1",
+        "allowed": ["web_fetch"],
+        "denied": ["shell"],
+    }
 
 
 async def test_group_memory_read(client, state, monkeypatch):
@@ -1416,7 +1444,12 @@ async def test_get_modules_modes(client, state):
 
 async def test_llm_failover_stats(client, state):
     resp = await client.get("/soc/v1/llm/failover")
-    assert resp.json() == {"available": False, "succeeded": 0, "failed": 0, "active": False}
+    assert resp.json() == {
+        "available": False,
+        "succeeded": 0,
+        "failed": 0,
+        "active": False,
+    }
 
     state.llm_proxy = SimpleNamespace(
         get_stats=lambda: {
@@ -1465,7 +1498,12 @@ async def test_set_module_mode_paths(client, state):
 async def test_list_bots_default_and_configured(client, state):
     resp = await client.get("/soc/v1/bots")
     assert resp.json() == [
-        {"id": "openclaw", "name": "OpenClaw", "hostname": "agentshroud-openclaw", "default": True}
+        {
+            "id": "openclaw",
+            "name": "OpenClaw",
+            "hostname": "agentshroud-openclaw",
+            "default": True,
+        }
     ]
     state.config = SimpleNamespace(
         bots={
@@ -1474,7 +1512,12 @@ async def test_list_bots_default_and_configured(client, state):
     )
     resp = await client.get("/soc/v1/bots")
     assert resp.json() == [
-        {"id": "hermes", "name": "Hermes", "hostname": "agentshroud-hermes", "default": False}
+        {
+            "id": "hermes",
+            "name": "Hermes",
+            "hostname": "agentshroud-hermes",
+            "default": False,
+        }
     ]
 
 
@@ -1575,7 +1618,9 @@ async def test_launch_scan_background_success(monkeypatch):
 
 async def test_launch_scan_background_exec_failure(monkeypatch):
     monkeypatch.setattr(
-        asyncio, "create_subprocess_exec", AsyncMock(side_effect=OSError("missing script"))
+        asyncio,
+        "create_subprocess_exec",
+        AsyncMock(side_effect=OSError("missing script")),
     )
     # Must not raise — fire-and-forget semantics
     await soc_router._launch_scan_background("all")
@@ -1672,7 +1717,8 @@ async def test_sbom_paths(client, monkeypatch):
     assert resp.status_code == 404
 
     monkeypatch.setattr(
-        "gateway.security.scanner_integration.get_sbom", lambda: {"spdxVersion": "SPDX-2.3"}
+        "gateway.security.scanner_integration.get_sbom",
+        lambda: {"spdxVersion": "SPDX-2.3"},
     )
     resp = await client.get("/soc/v1/sbom")
     assert resp.json() == {"spdxVersion": "SPDX-2.3"}
@@ -1718,6 +1764,34 @@ async def test_agent_cves_registry_error(client, monkeypatch):
     assert resp.json() == {"error": "registry corrupt"}
 
 
+async def test_agent_cves_reports_under_review(client, monkeypatch):
+    """SOC /agent-cves surfaces auto-registered under_review advisories honestly."""
+    import gateway.security.agent_cve_registry as reg
+
+    under = {
+        "id": "ASH-OCLAW-999",
+        "ghsa_id": "GHSA-test-test-test",
+        "cve_id": None,
+        "title": "Auto-registered advisory pending triage",
+        "cvss": None,
+        "severity": "HIGH",
+        "disclosed": "2026-07-16",
+        "fixed_in": None,
+        "description": "Newly detected upstream advisory.",
+        "status": "under_review",
+        "mitigation": "",
+        "defense_layers": [],
+    }
+    monkeypatch.setattr(
+        reg, "_AGENT_CVE_REGISTRIES", {"openclaw": reg._OPENCLAW_CVE_REGISTRY + [under]}
+    )
+    resp = await client.get("/soc/v1/agent-cves")
+    data = resp.json()
+    # by_status includes an under_review bucket and counts our injected entry.
+    assert data["by_status"]["under_review"] >= 1
+    assert any(c["id"] == "ASH-OCLAW-999" and c["status"] == "under_review" for c in data["cves"])
+
+
 async def test_cve_report_queued(client, monkeypatch):
     sent = AsyncMock(return_value=True)
     monkeypatch.setattr("gateway.security.daily_cve_report.run_and_send_cve_report", sent)
@@ -1755,7 +1829,11 @@ def test_fetch_latest_release_success():
     cm.__enter__.return_value.read.return_value = body
     with patch("urllib.request.urlopen", return_value=cm):
         result = soc_router._fetch_latest_release()
-    assert result == {"tag_name": "v9.9.9", "html_url": "https://gh/rel", "body": "notes"}
+    assert result == {
+        "tag_name": "v9.9.9",
+        "html_url": "https://gh/rel",
+        "body": "notes",
+    }
 
 
 def test_fetch_latest_release_error():
@@ -1773,7 +1851,11 @@ async def test_get_updates_variants(client, monkeypatch):
     monkeypatch.setattr(
         soc_router,
         "_fetch_latest_release",
-        lambda: {"tag_name": f"v{soc_router._CURRENT_VERSION}", "html_url": "u", "body": ""},
+        lambda: {
+            "tag_name": f"v{soc_router._CURRENT_VERSION}",
+            "html_url": "u",
+            "body": "",
+        },
     )
     resp = await client.get("/soc/v1/updates")
     assert resp.json()["available"] == []
@@ -1930,13 +2012,15 @@ async def test_upgrade_hermes_paths(client, holder, monkeypatch):
     assert resp.status_code == 409
 
     monkeypatch.setattr(
-        "gateway.soc.services.ServiceManager", _make_service_manager(results={"update": False})
+        "gateway.soc.services.ServiceManager",
+        _make_service_manager(results={"update": False}),
     )
     resp = await client.post("/soc/v1/updates/hermes/upgrade", json={"confirm": True})
     assert resp.status_code == 500
 
     monkeypatch.setattr(
-        "gateway.soc.services.ServiceManager", _make_service_manager(results={"update": True})
+        "gateway.soc.services.ServiceManager",
+        _make_service_manager(results={"update": True}),
     )
     resp = await client.post("/soc/v1/updates/hermes/upgrade", json={"confirm": True})
     assert resp.json()["ok"] is True

@@ -157,6 +157,22 @@ class TestBuildHeading:
         html = self._call([], "CVE_HEADING_START", "CVE_HEADING_END", "OpenClaw")
         assert "<h2>0 OpenClaw CVEs" in html
 
+    def test_under_review_in_heading_not_all_mitigated(self):
+        """When some advisories are under_review the heading is honest, NOT 'all mitigated'."""
+        cves = [_make_cve(cve_id="CVE-2026-1", status="fully_mitigated")] * 293
+        cves = cves + [
+            _make_cve(cve_id="CVE-2026-A", status="under_review"),
+            _make_cve(cve_id="CVE-2026-B", status="under_review"),
+        ]
+        html = self._call(cves, "CVE_HEADING_START", "CVE_HEADING_END", "OpenClaw")
+        assert "all mitigated" not in html
+        assert "293 mitigated, 2 under review" in html
+
+    def test_all_mitigated_only_when_no_under_review(self):
+        cves = [_make_cve(cve_id=f"CVE-2026-{i}", status="fully_mitigated") for i in range(4)]
+        html = self._call(cves, "CVE_HEADING_START", "CVE_HEADING_END", "OpenClaw")
+        assert "all mitigated" in html
+
 
 # ── unit tests: _build_table ──────────────────────────────────────────────────
 
@@ -193,6 +209,21 @@ class TestBuildTable:
         html = self._call(cves, "CVE_TABLE_START", "CVE_TABLE_END", "cve-tbody", "_pg")
         assert "CVE-2026-12345" in html
         assert "Stack Overflow Bug" in html
+
+    def test_under_review_badge_rendered(self):
+        cve = _make_cve(cve_id="ASH-OCLAW-999", status="under_review")
+        html = self._call([cve], "CVE_TABLE_START", "CVE_TABLE_END", "cve-tbody", "_pg")
+        # Distinct badge class + label, NOT the mitigated/open badges.
+        assert "badge-review" in html
+        assert "Under Review" in html
+        assert ".badge-review {" in html  # CSS present
+
+    def test_under_review_none_cvss_renders_dash(self):
+        cve = _make_cve(cve_id="ASH-OCLAW-998", status="under_review")
+        cve["cvss"] = None
+        # Must not raise on None cvss during sort/render.
+        html = self._call([cve], "CVE_TABLE_START", "CVE_TABLE_END", "cve-tbody", "_pg")
+        assert "ASH-OCLAW-998" in html
 
     def test_pagination_js_uses_unique_prefix(self):
         cves = [_make_cve()]

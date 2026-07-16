@@ -256,7 +256,10 @@ def _make_github_advisory(
         "summary": f"Test vulnerability {ghsa_id}",
         "description": "Test description.",
         "severity": severity,
-        "cvss": {"vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H", "score": score},
+        "cvss": {
+            "vector_string": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "score": score,
+        },
         "published_at": "2026-04-10T00:00:00Z",
         "html_url": f"https://github.com/openclaw/openclaw/security/advisories/{ghsa_id}",
     }
@@ -380,12 +383,21 @@ class TestFormatUpstreamCveAlert:
         msg = format_upstream_cve_alert([self._cve(sev="CRITICAL", score=9.9)])
         assert "🔴" in msg
 
-    def test_contains_action_required(self):
+    def test_alert_states_auto_registered_under_review(self):
+        """The alert says CVEs are auto-registered under_review (honest, not 'add manually')."""
         from gateway.security.daily_cve_report import format_upstream_cve_alert
 
         msg = format_upstream_cve_alert([self._cve()])
-        assert "Action required" in msg
-        assert "agent_cve_registry.py" in msg
+        assert "under_review" in msg
+        assert "/soc/v1/agent-cves" in msg
+        # No longer instructs a manual add-to-registry triage.
+        assert "add to" not in msg
+
+    def test_alert_titled_for_agent_label(self):
+        from gateway.security.daily_cve_report import format_upstream_cve_alert
+
+        msg = format_upstream_cve_alert([self._cve()], agent_label="Hermes Agent")
+        assert "New Hermes Agent CVE" in msg
 
     def test_plural_header_for_multiple_cves(self):
         from gateway.security.daily_cve_report import format_upstream_cve_alert
@@ -414,7 +426,10 @@ class TestFormatUpstreamCveAlert:
         assert "CVE-2026-99999" in msg
 
     def test_summary_under_telegram_limit_for_100_cves(self):
-        from gateway.security.daily_cve_report import _TELEGRAM_MAX_CHARS, format_upstream_cve_alert
+        from gateway.security.daily_cve_report import (
+            _TELEGRAM_MAX_CHARS,
+            format_upstream_cve_alert,
+        )
 
         # ~100 new GHSA advisories — the historical HTTP 400 scenario.
         cves = [
@@ -513,7 +528,7 @@ class TestRunUpstreamCveCheck:
         monkeypatch.setattr(
             _mod,
             "check_upstream_cves",
-            lambda token=None: [
+            lambda token=None, agent_id="openclaw": [
                 {
                     "id": "CVE-2026-99999",
                     "summary": "new vuln",
@@ -544,7 +559,7 @@ class TestRunUpstreamCveCheck:
     async def test_no_alert_when_registry_current(self, monkeypatch):
         import gateway.security.daily_cve_report as _mod
 
-        monkeypatch.setattr(_mod, "check_upstream_cves", lambda token=None: [])
+        monkeypatch.setattr(_mod, "check_upstream_cves", lambda token=None, agent_id="openclaw": [])
         sent = []
 
         async def _fake_send(token, chat_id, text, base_url):
@@ -582,7 +597,7 @@ class TestRunUpstreamCveCheck:
         monkeypatch.setattr(
             _mod,
             "check_upstream_cves",
-            lambda token=None: [
+            lambda token=None, agent_id="openclaw": [
                 {
                     "id": "CVE-2026-99999",
                     "summary": "",
@@ -609,6 +624,172 @@ class TestRunUpstreamCveCheck:
         assert result["new_cves"] == 1
         assert result["telegram_sent"] is False
         assert sent == []
+
+
+# ── run_upstream_cve_check per-agent + all-agents ─────────────────────────────
+
+
+class TestPerAgentUpstreamChecks:
+    @pytest.mark.asyncio
+    async def test_check_scoped_to_agent_registry_and_repo(self, monkeypatch):
+        """check_upstream_cves(agent_id=...) selects that agent's OWN repo + list."""
+        import gateway.security.daily_cve_report as _mod
+
+        captured = {}
+
+        def _fake_check(github_token=None, agent_id="openclaw"):
+            captured["agent_id"] = agent_id
+            return []
+
+        monkeypatch.setattr(_mod, "check_upstream_cves", _fake_check)
+        result = await _mod.run_upstream_cve_check(
+            bot_token="", owner_chat_id="", agent_id="hermes"
+        )
+        assert captured["agent_id"] == "hermes"
+        assert result["agent_id"] == "hermes"
+
+    @pytest.mark.asyncio
+    async def test_hermes_zero_still_reports_when_always_report_zero(self, monkeypatch):
+        """Owner wants to SEE a Hermes report even with 0 new advisories."""
+        import gateway.security.daily_cve_report as _mod
+
+        monkeypatch.setattr(
+            _mod,
+            "check_upstream_cves",
+            lambda github_token=None, agent_id="openclaw": [],
+        )
+        sent = []
+
+        async def _fake_send(token, chat_id, text, base_url):
+            sent.append(text)
+            return True
+
+        monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
+        result = await _mod.run_upstream_cve_check(
+            bot_token="tok",
+            owner_chat_id="123",
+            agent_id="hermes",
+            always_report_zero=True,
+        )
+        assert result["new_cves"] == 0
+        assert result["telegram_sent"] is True
+        assert len(sent) == 1
+        assert "0 new" in sent[0]
+        assert "Hermes Agent" in sent[0]
+
+    @pytest.mark.asyncio
+    async def test_openclaw_zero_stays_silent(self, monkeypatch):
+        import gateway.security.daily_cve_report as _mod
+
+        monkeypatch.setattr(
+            _mod,
+            "check_upstream_cves",
+            lambda github_token=None, agent_id="openclaw": [],
+        )
+        sent = []
+
+        async def _fake_send(token, chat_id, text, base_url):
+            sent.append(text)
+            return True
+
+        monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
+        result = await _mod.run_upstream_cve_check(
+            bot_token="tok", owner_chat_id="123", agent_id="openclaw"
+        )
+        assert result["new_cves"] == 0
+        assert sent == []  # silent when nothing new (default behavior)
+
+    @pytest.mark.asyncio
+    async def test_agent_label_falls_back_when_source_missing(self, monkeypatch):
+        """If the per-agent source config is missing, the label falls back gracefully."""
+        import gateway.security.daily_cve_report as _mod
+        from gateway.security import agent_cve_registry as _reg
+
+        def _raise(bot_id):
+            raise KeyError(bot_id)
+
+        monkeypatch.setattr(_reg, "get_agent_cve_source", _raise)
+        monkeypatch.setattr(
+            _mod, "check_upstream_cves", lambda github_token=None, agent_id="openclaw": []
+        )
+        result = await _mod.run_upstream_cve_check(
+            bot_token="", owner_chat_id="", agent_id="mystery"
+        )
+        assert result["agent_id"] == "mystery"
+
+    @pytest.mark.asyncio
+    async def test_zero_report_send_failure_is_swallowed(self, monkeypatch):
+        """A Telegram failure on the zero-report path never raises."""
+        import gateway.security.daily_cve_report as _mod
+
+        monkeypatch.setattr(
+            _mod, "check_upstream_cves", lambda github_token=None, agent_id="openclaw": []
+        )
+
+        async def _boom_send(*a, **kw):
+            raise RuntimeError("telegram down")
+
+        monkeypatch.setattr(_mod, "_send_telegram", _boom_send)
+        result = await _mod.run_upstream_cve_check(
+            bot_token="tok",
+            owner_chat_id="123",
+            agent_id="hermes",
+            always_report_zero=True,
+        )
+        assert result["new_cves"] == 0
+        assert result["telegram_sent"] is False
+
+    @pytest.mark.asyncio
+    async def test_alert_send_failure_is_swallowed(self, monkeypatch):
+        """A Telegram failure on the new-CVE alert path never raises."""
+        import gateway.security.daily_cve_report as _mod
+
+        monkeypatch.setattr(
+            _mod,
+            "check_upstream_cves",
+            lambda github_token=None, agent_id="openclaw": [
+                {"id": "GHSA-x", "severity": "HIGH", "cvss": 7.5}
+            ],
+        )
+
+        async def _boom_send(*a, **kw):
+            raise RuntimeError("telegram down")
+
+        monkeypatch.setattr(_mod, "_send_telegram", _boom_send)
+        result = await _mod.run_upstream_cve_check(
+            bot_token="tok", owner_chat_id="123", agent_id="openclaw"
+        )
+        assert result["new_cves"] == 1
+        assert result["telegram_sent"] is False
+
+    @pytest.mark.asyncio
+    async def test_all_agents_runs_each_independently_and_isolates_failure(self, monkeypatch):
+        """OpenClaw and Hermes are processed on fully separate paths; one failing
+        never blocks the other."""
+        import gateway.security.daily_cve_report as _mod
+
+        seen = []
+
+        async def _fake_run(**kwargs):
+            aid = kwargs["agent_id"]
+            seen.append(aid)
+            if aid == "openclaw":
+                raise RuntimeError("openclaw feed down")
+            return {
+                "agent_id": aid,
+                "new_cves": 0,
+                "cve_ids": [],
+                "telegram_sent": True,
+            }
+
+        monkeypatch.setattr(_mod, "run_upstream_cve_check", _fake_run)
+        results = await _mod.run_upstream_cve_check_all_agents(bot_token="tok", owner_chat_id="123")
+        # Both agents attempted, in registered order.
+        assert "openclaw" in seen and "hermes" in seen
+        by_agent = {r["agent_id"]: r for r in results}
+        # OpenClaw failed → isolated error dict; Hermes still produced its result.
+        assert "error" in by_agent["openclaw"]
+        assert by_agent["hermes"]["telegram_sent"] is True
 
 
 # ── _already_checked_upstream_today ──────────────────────────────────────────
@@ -657,7 +838,8 @@ class TestBuildImageTargets:
         from gateway.security.daily_cve_report import _build_image_targets
 
         monkeypatch.setenv(
-            "AGENTSHROUD_TRIVY_IMAGES", "agentshroud-openclaw:latest,agentshroud/hermes:latest"
+            "AGENTSHROUD_TRIVY_IMAGES",
+            "agentshroud-openclaw:latest,agentshroud/hermes:latest",
         )
         targets = _build_image_targets()
         assert "agentshroud-openclaw:latest" in targets
@@ -675,7 +857,8 @@ class TestBuildImageTargets:
         from gateway.security.daily_cve_report import _build_image_targets
 
         monkeypatch.setenv(
-            "AGENTSHROUD_TRIVY_IMAGES", "agentshroud-gateway:latest,agentshroud-gateway:latest"
+            "AGENTSHROUD_TRIVY_IMAGES",
+            "agentshroud-gateway:latest,agentshroud-gateway:latest",
         )
         targets = _build_image_targets()
         assert targets.count("agentshroud-gateway:latest") == 1
@@ -898,8 +1081,12 @@ class TestGhsaIngestScheduler:
             owner_chat_id="12345",
             ingest_hour=past_hour,
         )
-        # Ingest ran exactly once and recorded to disk + in-memory guard.
-        assert ran["count"] == 1
+        # Ingest ran once per registered agent (OpenClaw + Hermes) in iteration 1,
+        # then recorded to disk + in-memory guard. Per-agent invocation is the
+        # coordinator-required parallel-per-agent design.
+        from gateway.security.agent_cve_registry import list_cve_agents
+
+        assert ran["count"] == len(list_cve_agents())
         assert sentinel.exists()
         assert datetime.now(timezone.utc).date().isoformat() in _mod._ghsa_ingest_dates
         # Iteration 2 slept (waiting for tomorrow) then got cancelled.
@@ -939,8 +1126,14 @@ class TestGhsaIngestScheduler:
         assert called["n"] == 0  # ingest never ran — dedup guard held
 
     @pytest.mark.asyncio
-    async def test_ingest_error_is_swallowed_and_retries(self, tmp_path, monkeypatch):
-        """A raised ingest error hits the retry branch (records date, sleeps 1h)."""
+    async def test_per_agent_check_error_is_isolated_not_fatal(self, tmp_path, monkeypatch):
+        """A raised per-agent check error is ISOLATED — the ingest still completes.
+
+        Per-agent isolation (coordinator requirement): one agent's fetch failure
+        must never block another agent or crash the scheduler. Both agents log an
+        error, the ingest records the date, and the loop proceeds to sleep until
+        tomorrow (cancelled here). No exception escapes the per-agent boundary.
+        """
         import asyncio
 
         import gateway.security.daily_cve_report as _mod
@@ -951,27 +1144,26 @@ class TestGhsaIngestScheduler:
         async def _boom(**kwargs):
             raise RuntimeError("github down")
 
+        # Patch the per-agent entrypoint: every agent's check raises.
         monkeypatch.setattr(_mod, "run_upstream_cve_check", _boom)
 
         sleeps = {"n": 0}
 
         async def _sleep(_secs):
             sleeps["n"] += 1
-            # The retry sleep (3600) is the only sleep reached here; cancel then.
             raise asyncio.CancelledError()
 
         monkeypatch.setattr(_mod.asyncio, "sleep", _sleep)
 
         past_hour = (datetime.now(timezone.utc).hour - 1) % 24
-        # The 1-hour retry sleep is patched to raise CancelledError, which exits
-        # the loop — that propagation is the expected end of the retry branch.
-        with pytest.raises(asyncio.CancelledError):
-            await _mod.ghsa_ingest_scheduler(
-                bot_token="tok",
-                owner_chat_id="12345",
-                ingest_hour=past_hour,
-            )
-        # Error path recorded today so it won't hot-loop.
+        # No exception escapes: the loop runs the ingest (errors isolated), records
+        # the date, then sleeps until tomorrow — the sleep is cancelled to exit.
+        await _mod.ghsa_ingest_scheduler(
+            bot_token="tok",
+            owner_chat_id="12345",
+            ingest_hour=past_hour,
+        )
+        # Ingest completed (date recorded); the sleep-to-tomorrow was reached.
         assert datetime.now(timezone.utc).date().isoformat() in _mod._ghsa_ingest_dates
         assert sleeps["n"] == 1
 
