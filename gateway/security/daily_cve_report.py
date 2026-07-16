@@ -142,9 +142,7 @@ def _build_image_targets() -> List[str]:
     """
     gateway_image = "agentshroud-gateway:latest"
     env_images: List[str] = [
-        t.strip()
-        for t in os.environ.get("AGENTSHROUD_TRIVY_IMAGES", "").split(",")
-        if t.strip()
+        t.strip() for t in os.environ.get("AGENTSHROUD_TRIVY_IMAGES", "").split(",") if t.strip()
     ]
     seen: Dict[str, None] = {}
     for img in [gateway_image] + env_images:
@@ -172,9 +170,7 @@ async def run_and_send_cve_report(
     loop = asyncio.get_event_loop()
 
     # Run Trivy filesystem scan in executor (blocking subprocess).
-    report = await loop.run_in_executor(
-        None, lambda: run_trivy_scan(target=scan_target)
-    )
+    report = await loop.run_in_executor(None, lambda: run_trivy_scan(target=scan_target))
 
     # Persist report to shared volume.
     try:
@@ -207,9 +203,7 @@ async def run_and_send_cve_report(
                     save_exc,
                 )
             if img_report.get("error"):
-                image_scan_lines.append(
-                    f"🖼 `{image_target}`: scan error — `{img_report['error']}`"
-                )
+                image_scan_lines.append(f"🖼 `{image_target}`: scan error — `{img_report['error']}`")
             else:
                 n = img_report.get("total_vulnerabilities", 0)
                 crit = (img_report.get("by_severity") or {}).get("CRITICAL", 0)
@@ -228,9 +222,7 @@ async def run_and_send_cve_report(
 
     # Append image scan summary section.
     if image_scan_lines:
-        message = (
-            message + "\n\n*Container Image Scans*\n" + "\n".join(image_scan_lines)
-        )
+        message = message + "\n\n*Container Image Scans*\n" + "\n".join(image_scan_lines)
 
     # Send via Telegram Bot API.
     send_ok = False
@@ -255,9 +247,7 @@ async def run_and_send_cve_report(
     return summary
 
 
-async def _send_telegram(
-    bot_token: str, chat_id: str, text: str, base_url: str
-) -> bool:
+async def _send_telegram(bot_token: str, chat_id: str, text: str, base_url: str) -> bool:
     """Send a message via Telegram Bot API. Returns True on success.
 
     ``text`` is defensively truncated to ``_TELEGRAM_SAFE_CHARS`` with a clear
@@ -476,9 +466,7 @@ def check_upstream_cves(
     return new_cves
 
 
-def format_upstream_cve_alert(
-    new_cves: list[dict[str, Any]], agent_label: str = "OpenClaw"
-) -> str:
+def format_upstream_cve_alert(new_cves: list[dict[str, Any]], agent_label: str = "OpenClaw") -> str:
     """Format a Telegram alert for newly detected upstream CVEs.
 
     The alert is titled for a specific wrapped agent (*agent_label*) so OpenClaw
@@ -510,9 +498,7 @@ def format_upstream_cve_alert(
     ]
     for cve in shown:
         icon = _SEV_ICON.get(cve.get("severity", "UNKNOWN"), "⚪")
-        cvss_str = (
-            f"CVSS {cve['cvss']}" if cve.get("cvss") else cve.get("severity", "UNKNOWN")
-        )
+        cvss_str = f"CVSS {cve['cvss']}" if cve.get("cvss") else cve.get("severity", "UNKNOWN")
         lines.append(f"{icon} `{cve['id']}` ({cvss_str})")
 
     if remaining > 0:
@@ -527,9 +513,7 @@ def format_upstream_cve_alert(
     # Defensive hard cap: even with the item limit above, guarantee the summary
     # can never exceed Telegram's limit (e.g. pathologically long GHSA ids).
     if len(message) > _TELEGRAM_SAFE_CHARS:
-        message = (
-            message[: _TELEGRAM_SAFE_CHARS - len("\n…(truncated)")] + "\n…(truncated)"
-        )
+        message = message[: _TELEGRAM_SAFE_CHARS - len("\n…(truncated)")] + "\n…(truncated)"
     return message
 
 
@@ -594,9 +578,7 @@ async def run_upstream_cve_check(
     }
 
     if not new_cves:
-        logger.info(
-            "Upstream CVE check (%s): registry is current (no new CVEs found)", agent_id
-        )
+        logger.info("Upstream CVE check (%s): registry is current (no new CVEs found)", agent_id)
         if always_report_zero and bot_token and owner_chat_id:
             try:
                 message = (
@@ -609,9 +591,7 @@ async def run_upstream_cve_check(
                     bot_token, owner_chat_id, message, base_url
                 )
             except Exception as exc:
-                logger.error(
-                    "Failed to send %s zero-CVE note via Telegram: %s", agent_id, exc
-                )
+                logger.error("Failed to send %s zero-CVE note via Telegram: %s", agent_id, exc)
         return result
 
     logger.warning(
@@ -628,9 +608,7 @@ async def run_upstream_cve_check(
                 bot_token, owner_chat_id, message, base_url
             )
         except Exception as exc:
-            logger.error(
-                "Failed to send %s upstream CVE alert via Telegram: %s", agent_id, exc
-            )
+            logger.error("Failed to send %s upstream CVE alert via Telegram: %s", agent_id, exc)
 
     return result
 
@@ -706,12 +684,9 @@ async def upstream_cve_check_scheduler(
             now = datetime.now(timezone.utc)
             today_str = now.date().isoformat()
 
-            target = now.replace(
-                hour=report_hour, minute=_CHECK_MINUTE, second=0, microsecond=0
-            )
-            already_checked = (
-                today_str in _upstream_check_dates
-                or _already_checked_upstream_today(now)
+            target = now.replace(hour=report_hour, minute=_CHECK_MINUTE, second=0, microsecond=0)
+            already_checked = today_str in _upstream_check_dates or _already_checked_upstream_today(
+                now
             )
 
             if now >= target:
@@ -737,9 +712,7 @@ async def upstream_cve_check_scheduler(
             # Re-check after waking — guard against duplicate runs.
             now = datetime.now(timezone.utc)
             today_str = now.date().isoformat()
-            if today_str in _upstream_check_dates or _already_checked_upstream_today(
-                now
-            ):
+            if today_str in _upstream_check_dates or _already_checked_upstream_today(now):
                 logger.info("Upstream CVE check already done today, skipping.")
                 continue
 
@@ -759,9 +732,7 @@ async def upstream_cve_check_scheduler(
             _upstream_check_dates.add(datetime.now(timezone.utc).date().isoformat())
             try:
                 _LAST_UPSTREAM_CHECK_PATH.parent.mkdir(parents=True, exist_ok=True)
-                _LAST_UPSTREAM_CHECK_PATH.write_text(
-                    datetime.now(timezone.utc).isoformat()
-                )
+                _LAST_UPSTREAM_CHECK_PATH.write_text(datetime.now(timezone.utc).isoformat())
             except Exception:
                 pass
 
@@ -820,9 +791,7 @@ async def ghsa_ingest_scheduler(
             today_str = now.date().isoformat()
 
             target = now.replace(hour=ingest_hour, minute=0, second=0, microsecond=0)
-            already = today_str in _ghsa_ingest_dates or _already_ingested_ghsa_today(
-                now
-            )
+            already = today_str in _ghsa_ingest_dates or _already_ingested_ghsa_today(now)
 
             if now >= target:
                 if already:
@@ -865,9 +834,7 @@ async def ghsa_ingest_scheduler(
             _ghsa_ingest_dates.add(datetime.now(timezone.utc).date().isoformat())
             try:
                 _LAST_GHSA_INGEST_PATH.parent.mkdir(parents=True, exist_ok=True)
-                _LAST_GHSA_INGEST_PATH.write_text(
-                    datetime.now(timezone.utc).isoformat()
-                )
+                _LAST_GHSA_INGEST_PATH.write_text(datetime.now(timezone.utc).isoformat())
             except Exception:
                 pass
 

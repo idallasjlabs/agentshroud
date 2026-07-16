@@ -115,10 +115,7 @@ class TestBuildHeading:
         return mod._build_heading(cves, h_start, h_end, label)
 
     def test_openclaw_all_mitigated(self):
-        cves = [
-            _make_cve(cve_id=f"CVE-2026-{i}", status="fully_mitigated")
-            for i in range(3)
-        ]
+        cves = [_make_cve(cve_id=f"CVE-2026-{i}", status="fully_mitigated") for i in range(3)]
         html = self._call(cves, "CVE_HEADING_START", "CVE_HEADING_END", "OpenClaw")
         assert "<h2>3 OpenClaw CVEs — all mitigated</h2>" in html
         assert "<!-- CVE_HEADING_START -->" in html
@@ -172,10 +169,7 @@ class TestBuildHeading:
         assert "293 mitigated, 2 under review" in html
 
     def test_all_mitigated_only_when_no_under_review(self):
-        cves = [
-            _make_cve(cve_id=f"CVE-2026-{i}", status="fully_mitigated")
-            for i in range(4)
-        ]
+        cves = [_make_cve(cve_id=f"CVE-2026-{i}", status="fully_mitigated") for i in range(4)]
         html = self._call(cves, "CVE_HEADING_START", "CVE_HEADING_END", "OpenClaw")
         assert "all mitigated" in html
 
@@ -233,9 +227,7 @@ class TestBuildTable:
 
     def test_pagination_js_uses_unique_prefix(self):
         cves = [_make_cve()]
-        oc_html = self._call(
-            cves, "CVE_TABLE_START", "CVE_TABLE_END", "cve-tbody", "_pg"
-        )
+        oc_html = self._call(cves, "CVE_TABLE_START", "CVE_TABLE_END", "cve-tbody", "_pg")
         h_html = self._call(
             cves,
             "HERMES_CVE_TABLE_START",
@@ -244,9 +236,7 @@ class TestBuildTable:
             "_hpg",
         )
         # OpenClaw uses _pg; Hermes uses _hpg — verify no cross-contamination
-        assert (
-            "_pgPg" in oc_html or "_pgCur" in oc_html
-        )  # legacy name kept for openclaw
+        assert "_pgPg" in oc_html or "_pgCur" in oc_html  # legacy name kept for openclaw
         assert "_hpgPg" in h_html or "_hpgCur" in h_html
 
 
@@ -301,10 +291,7 @@ class TestGenerate:
         return fake_html.read_text(encoding="utf-8")
 
     def test_openclaw_h2_correct(self, tmp_path):
-        oc_cves = [
-            _make_cve(cve_id=f"CVE-2026-{i}", status="fully_mitigated")
-            for i in range(5)
-        ]
+        oc_cves = [_make_cve(cve_id=f"CVE-2026-{i}", status="fully_mitigated") for i in range(5)]
         html = self._run_generate(tmp_path, oc_cves, [])
         assert "<h2>5 OpenClaw CVEs — all mitigated</h2>" in html
 
