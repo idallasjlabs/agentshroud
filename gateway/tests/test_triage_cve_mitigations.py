@@ -155,9 +155,7 @@ class TestClassify:
     def test_priority_rce_before_generic_injection(self):
         # An advisory that mentions both "code execution" and "injection" is RCE.
         t = _t()
-        cls = t.classify(
-            "Remote code execution via command injection", "arbitrary code execution"
-        )
+        cls = t.classify("Remote code execution via command injection", "arbitrary code execution")
         assert cls is t.VulnClass.RCE
 
 
@@ -203,9 +201,7 @@ class TestTriageEntry:
 
     def test_not_source_fixed_full_class_is_fully_mitigated_without_source_fix(self):
         t = _t()
-        r = t.triage_entry(
-            _entry(fixed_in="2026.9.9", title="SSRF to internal metadata")
-        )
+        r = t.triage_entry(_entry(fixed_in="2026.9.9", title="SSRF to internal metadata"))
         assert r.status == "fully_mitigated"
         assert r.source_fixed is False
         assert "source_fix" not in r.defense_layers
@@ -226,9 +222,7 @@ class TestTriageEntry:
     def test_source_fixed_partial_class_upgrades_to_fully(self):
         t = _t()
         r = t.triage_entry(
-            _entry(
-                fixed_in="2026.3.1", title="operator.write reached admin-only config"
-            )
+            _entry(fixed_in="2026.3.1", title="operator.write reached admin-only config")
         )
         assert r.status == "fully_mitigated"
         assert "source_fix" in r.defense_layers
@@ -248,18 +242,14 @@ class TestTriageEntry:
 
     def test_uncovered_class_source_fixed_uses_source_fix(self):
         t = _t()
-        r = t.triage_entry(
-            _entry(fixed_in="2026.3.1", title="Supply chain: malicious dependency")
-        )
+        r = t.triage_entry(_entry(fixed_in="2026.3.1", title="Supply chain: malicious dependency"))
         assert r.status == "fully_mitigated"
         assert r.defense_layers == ["source_fix", "defense_in_depth"]
 
     def test_unknown_class_not_source_fixed_stays_under_review(self):
         t = _t()
         r = t.triage_entry(
-            _entry(
-                fixed_in="2026.9.9", title="Opaque headline", description="no signal"
-            )
+            _entry(fixed_in="2026.9.9", title="Opaque headline", description="no signal")
         )
         assert r.vuln_class is t.VulnClass.UNKNOWN
         assert t.final_status(r) == "under_review"
@@ -270,9 +260,7 @@ class TestTriageEntry:
         # honest under_review rather than an unearned partial claim.
         t = _t()
         r = t.triage_entry(
-            _entry(
-                fixed_in="2026.9.9", title="Exported HTML keeps unsafe markdown links"
-            )
+            _entry(fixed_in="2026.9.9", title="Exported HTML keeps unsafe markdown links")
         )
         assert r.vuln_class is t.VulnClass.XSS
         assert t.final_status(r) == "under_review"
@@ -351,9 +339,7 @@ _HERMES_CVE_REGISTRY = [
 class TestRewrite:
     def _results(self):
         t = _t()
-        e1 = _entry(
-            "ASH-OCLAW-294", title="Path Traversal example", fixed_in="2026.3.1"
-        )
+        e1 = _entry("ASH-OCLAW-294", title="Path Traversal example", fixed_in="2026.3.1")
         e2 = _entry(
             "ASH-OCLAW-295",
             title="Supply chain malicious dependency",
@@ -415,11 +401,7 @@ class TestDriverIsolation:
         t = _t()
         from gateway.security.agent_cve_registry import _AGENT_CVE_REGISTRIES
 
-        n_ur = sum(
-            1
-            for e in _AGENT_CVE_REGISTRIES["openclaw"]
-            if e["status"] == "under_review"
-        )
+        n_ur = sum(1 for e in _AGENT_CVE_REGISTRIES["openclaw"] if e["status"] == "under_review")
         results = t.triage_agent("openclaw")
         assert len(results) == n_ur
 
