@@ -152,7 +152,9 @@ NON_OWNER = FakeCaller(user_id="55555", owner=False)
 
 async def test_log_audit_appends_to_audit_store(monkeypatch):
     store = SimpleNamespace(append=AsyncMock())
-    monkeypatch.setattr(soc_router, "_app_state", lambda: SimpleNamespace(audit_store=store))
+    monkeypatch.setattr(
+        soc_router, "_app_state", lambda: SimpleNamespace(audit_store=store)
+    )
     soc_router._log_audit(OWNER, "test cmd", target="t1", details={"k": "v"})
     await asyncio.sleep(0)
     store.append.assert_awaited()
@@ -322,7 +324,9 @@ async def test_correlation_fallback_builder(client, monkeypatch):
     monkeypatch.setattr(
         corr_mod,
         "build_correlation_summary",
-        lambda app: SimpleNamespace(to_dict=lambda: {"status": "fallback", "risk_score": 1}),
+        lambda app: SimpleNamespace(
+            to_dict=lambda: {"status": "fallback", "risk_score": 1}
+        ),
     )
     resp = await client.get("/soc/v1/security/correlation")
     assert resp.json()["status"] == "fallback"
@@ -352,7 +356,9 @@ async def test_risk_fallback_builder(client, monkeypatch):
     import gateway.security.soc_correlation as corr_mod
 
     monkeypatch.setattr(
-        corr_mod, "build_correlation_summary", lambda app: SimpleNamespace(risk_score=25)
+        corr_mod,
+        "build_correlation_summary",
+        lambda app: SimpleNamespace(risk_score=25),
     )
     resp = await client.get("/soc/v1/security/risk")
     assert resp.json()["risk_score"] == 25
@@ -416,7 +422,9 @@ async def test_audit_export_cef(client, state):
 
 
 async def test_audit_export_json_dict_payload(client, state):
-    state.audit_exporter = SimpleNamespace(export=AsyncMock(return_value={"records": [1, 2]}))
+    state.audit_exporter = SimpleNamespace(
+        export=AsyncMock(return_value={"records": [1, 2]})
+    )
     resp = await client.get("/soc/v1/security/audit/export")
     assert resp.status_code == 200
     assert json.loads(resp.text) == {"records": [1, 2]}
@@ -429,7 +437,9 @@ async def test_audit_export_unavailable(client):
 
 
 async def test_audit_export_exporter_raises(client, state):
-    state.audit_exporter = SimpleNamespace(export=AsyncMock(side_effect=RuntimeError("disk")))
+    state.audit_exporter = SimpleNamespace(
+        export=AsyncMock(side_effect=RuntimeError("disk"))
+    )
     resp = await client.get("/soc/v1/security/audit/export")
     assert resp.status_code == 503
 
@@ -555,7 +565,9 @@ async def test_egress_approve_mode_mapping(client, state):
 async def test_egress_approve_missing_or_raises(client, state):
     resp = await client.post("/soc/v1/egress/r-1/approve", json={"mode": "once"})
     assert resp.json()["ok"] is False
-    state.egress_approval_queue = SimpleNamespace(approve=AsyncMock(side_effect=KeyError("r-1")))
+    state.egress_approval_queue = SimpleNamespace(
+        approve=AsyncMock(side_effect=KeyError("r-1"))
+    )
     resp = await client.post("/soc/v1/egress/r-1/approve", json={"mode": "once"})
     assert resp.json()["ok"] is False
 
@@ -592,7 +604,8 @@ async def test_egress_rule_override_scoped(client, state):
 
     # Default (no scope) → "all"
     resp = await client.post(
-        "/soc/v1/egress/rules/override", json={"domain": "ok.example", "action": "allow"}
+        "/soc/v1/egress/rules/override",
+        json={"domain": "ok.example", "action": "allow"},
     )
     assert resp.json()["scope"]["kind"] == "all"
     assert resp.json()["mode"] == "permanent"
@@ -606,7 +619,9 @@ async def test_egress_rule_override_no_queue(client):
 
 
 async def test_egress_rule_remove(client, state):
-    state.egress_approval_queue = SimpleNamespace(remove_rule=AsyncMock(return_value=True))
+    state.egress_approval_queue = SimpleNamespace(
+        remove_rule=AsyncMock(return_value=True)
+    )
     resp = await client.delete("/soc/v1/egress/rules/x.com")
     assert resp.json() == {"ok": True, "domain": "x.com", "action": "removed"}
 
@@ -619,7 +634,10 @@ async def test_egress_rule_remove_no_queue(client):
 async def test_egress_history_with_bot_filter(client, state):
     state.egress_approval_queue = SimpleNamespace(
         get_decision_log=AsyncMock(
-            return_value=[{"agent_id": "botA", "id": "1"}, {"agent_id": "botB", "id": "2"}]
+            return_value=[
+                {"agent_id": "botA", "id": "1"},
+                {"agent_id": "botB", "id": "2"},
+            ]
         )
     )
     resp = await client.get("/soc/v1/egress/history")
@@ -634,7 +652,9 @@ async def test_egress_history_no_queue(client):
 
 
 async def test_egress_history_revoke(client, state):
-    state.egress_approval_queue = SimpleNamespace(revoke_decision=AsyncMock(return_value=True))
+    state.egress_approval_queue = SimpleNamespace(
+        revoke_decision=AsyncMock(return_value=True)
+    )
     resp = await client.post("/soc/v1/egress/history/e-1/revoke")
     assert resp.json() == {"ok": True, "entry_id": "e-1"}
 
@@ -658,7 +678,11 @@ async def test_emergency_block_confirmed(client, state):
     resp = await client.post(
         "/soc/v1/egress/emergency-block", json={"confirm": True, "reason": "incident-7"}
     )
-    assert resp.json() == {"ok": True, "action": "emergency_block", "reason": "incident-7"}
+    assert resp.json() == {
+        "ok": True,
+        "action": "emergency_block",
+        "reason": "incident-7",
+    }
     ef.emergency_block.assert_called_once_with(reason="incident-7")
 
 
@@ -677,7 +701,9 @@ async def test_emergency_block_filter_raises_still_ok(client, state):
 
 async def test_list_services_and_bot_filter(client, state, monkeypatch):
     svcs = [_Svc("agentshroud-openclaw"), _Svc("agentshroud-gateway", image="gw-img")]
-    monkeypatch.setattr("gateway.soc.services.ServiceManager", _make_service_manager(svcs))
+    monkeypatch.setattr(
+        "gateway.soc.services.ServiceManager", _make_service_manager(svcs)
+    )
     resp = await client.get("/soc/v1/services")
     assert len(resp.json()) == 2
 
@@ -703,7 +729,8 @@ async def test_service_logs(client, monkeypatch):
 
 async def test_service_start(client, monkeypatch):
     monkeypatch.setattr(
-        "gateway.soc.services.ServiceManager", _make_service_manager(results={"start": True})
+        "gateway.soc.services.ServiceManager",
+        _make_service_manager(results={"start": True}),
     )
     resp = await client.post("/soc/v1/services/gw/start")
     assert resp.json() == {"ok": True, "service": "gw", "action": "start"}
@@ -711,7 +738,8 @@ async def test_service_start(client, monkeypatch):
 
 async def test_service_stop_confirmation_then_stop(client, monkeypatch):
     monkeypatch.setattr(
-        "gateway.soc.services.ServiceManager", _make_service_manager(results={"stop": False})
+        "gateway.soc.services.ServiceManager",
+        _make_service_manager(results={"stop": False}),
     )
     resp = await client.post("/soc/v1/services/gw/stop", json={"confirm": False})
     assert resp.status_code == 409
@@ -721,7 +749,8 @@ async def test_service_stop_confirmation_then_stop(client, monkeypatch):
 
 async def test_service_restart(client, monkeypatch):
     monkeypatch.setattr(
-        "gateway.soc.services.ServiceManager", _make_service_manager(results={"restart": True})
+        "gateway.soc.services.ServiceManager",
+        _make_service_manager(results={"restart": True}),
     )
     resp = await client.post("/soc/v1/services/gw/restart", json={"confirm": False})
     assert resp.status_code == 409
@@ -731,7 +760,8 @@ async def test_service_restart(client, monkeypatch):
 
 async def test_service_update(client, monkeypatch):
     monkeypatch.setattr(
-        "gateway.soc.services.ServiceManager", _make_service_manager(results={"update": True})
+        "gateway.soc.services.ServiceManager",
+        _make_service_manager(results={"update": True}),
     )
     resp = await client.post("/soc/v1/services/gw/update", json={"confirm": False})
     assert resp.status_code == 409
@@ -774,7 +804,9 @@ async def test_killswitch_shutdown(client, state):
 
 async def test_killswitch_disconnect_owner_gate(client, holder, state):
     holder["caller"] = NON_OWNER
-    resp = await client.post("/soc/v1/killswitch/disconnect", json={"confirm": True, "force": True})
+    resp = await client.post(
+        "/soc/v1/killswitch/disconnect", json={"confirm": True, "force": True}
+    )
     assert resp.status_code == 403
 
     holder["caller"] = OWNER
@@ -785,7 +817,9 @@ async def test_killswitch_disconnect_owner_gate(client, holder, state):
 
     monitor = MagicMock()
     state.killswitch_monitor = monitor
-    resp = await client.post("/soc/v1/killswitch/disconnect", json={"confirm": True, "force": True})
+    resp = await client.post(
+        "/soc/v1/killswitch/disconnect", json={"confirm": True, "force": True}
+    )
     assert resp.json() == {"ok": True, "action": "disconnect"}
     monitor.trigger_disconnect.assert_called_once()
 
@@ -835,10 +869,14 @@ async def test_get_user_found_and_missing(client, monkeypatch):
 
 async def test_update_display_name(client, holder):
     holder["caller"] = NON_OWNER
-    resp = await client.put("/soc/v1/users/u1/display-name", json={"display_name": "Al"})
+    resp = await client.put(
+        "/soc/v1/users/u1/display-name", json={"display_name": "Al"}
+    )
     assert resp.status_code == 403
     holder["caller"] = OWNER
-    resp = await client.put("/soc/v1/users/u1/display-name", json={"display_name": "Al"})
+    resp = await client.put(
+        "/soc/v1/users/u1/display-name", json={"display_name": "Al"}
+    )
     assert resp.json()["ok"] is True
     assert resp.json()["display_name"] == "Al"
 
@@ -943,23 +981,35 @@ async def test_collaborator_activity_filters(client, state):
     state.collaborator_tracker = SimpleNamespace(
         get_activity=lambda since=0.0, limit=0: list(_ACTIVITY)
     )
-    by_user = await client.get("/soc/v1/collaborators/activity", params={"user_id": "u1"})
+    by_user = await client.get(
+        "/soc/v1/collaborators/activity", params={"user_id": "u1"}
+    )
     assert by_user.json()["total"] == 2
 
-    inbound = await client.get("/soc/v1/collaborators/activity", params={"direction": "inbound"})
+    inbound = await client.get(
+        "/soc/v1/collaborators/activity", params={"direction": "inbound"}
+    )
     assert inbound.json()["total"] == 2
 
-    owners = await client.get("/soc/v1/collaborators/activity", params={"is_owner": "true"})
+    owners = await client.get(
+        "/soc/v1/collaborators/activity", params={"is_owner": "true"}
+    )
     assert owners.json()["total"] == 2
 
-    search = await client.get("/soc/v1/collaborators/activity", params={"search": "bob"})
+    search = await client.get(
+        "/soc/v1/collaborators/activity", params={"search": "bob"}
+    )
     assert search.json()["total"] == 2
 
-    bots = await client.get("/soc/v1/collaborators/activity", params={"bot_id": "hermes"})
+    bots = await client.get(
+        "/soc/v1/collaborators/activity", params={"bot_id": "hermes"}
+    )
     assert bots.json()["total"] == 2
     assert bots.json()["total_unfiltered"] == 4
 
-    page = await client.get("/soc/v1/collaborators/activity", params={"offset": 1, "limit": 1})
+    page = await client.get(
+        "/soc/v1/collaborators/activity", params={"offset": 1, "limit": 1}
+    )
     assert len(page.json()["entries"]) == 1
     assert len(page.json()["paired_entries"]) == 1
 
@@ -1010,7 +1060,9 @@ async def test_set_user_collab_mode(client, state, monkeypatch):
 async def test_list_groups_empty_and_populated(client, state):
     resp = await client.get("/soc/v1/groups")
     assert resp.json() == []
-    state.config = SimpleNamespace(teams=SimpleNamespace(groups={"g1": FakeGroup(name="Ops")}))
+    state.config = SimpleNamespace(
+        teams=SimpleNamespace(groups={"g1": FakeGroup(name="Ops")})
+    )
     resp = await client.get("/soc/v1/groups")
     assert resp.json()[0]["id"] == "g1"
     assert resp.json()[0]["name"] == "Ops"
@@ -1019,7 +1071,9 @@ async def test_list_groups_empty_and_populated(client, state):
 async def test_get_group(client, state):
     resp = await client.get("/soc/v1/groups/g1")
     assert resp.status_code == 404
-    state.config = SimpleNamespace(teams=SimpleNamespace(groups={"g1": FakeGroup(name="Ops")}))
+    state.config = SimpleNamespace(
+        teams=SimpleNamespace(groups={"g1": FakeGroup(name="Ops")})
+    )
     resp = await client.get("/soc/v1/groups/g1")
     assert resp.json()["id"] == "g1"
 
@@ -1048,7 +1102,12 @@ async def test_create_group_paths(client, holder, state, monkeypatch):
     # success
     resp = await client.post(
         "/soc/v1/groups",
-        json={"group_id": "g2", "name": "Eng", "members": ["u1"], "collab_mode": "full_access"},
+        json={
+            "group_id": "g2",
+            "name": "Eng",
+            "members": ["u1"],
+            "collab_mode": "full_access",
+        },
     )
     data = resp.json()
     assert data["ok"] is True
@@ -1059,7 +1118,9 @@ async def test_create_group_paths(client, holder, state, monkeypatch):
 
 async def test_delete_group_paths(client, holder, state, monkeypatch):
     deleted = []
-    monkeypatch.setattr("gateway.security.group_config.persist_group_delete", deleted.append)
+    monkeypatch.setattr(
+        "gateway.security.group_config.persist_group_delete", deleted.append
+    )
     holder["caller"] = NON_OWNER
     resp = await client.delete("/soc/v1/groups/g1")
     assert resp.status_code == 403
@@ -1150,19 +1211,25 @@ async def test_set_group_mode_paths(client, holder, state, monkeypatch):
         lambda gid, mode: calls.append((gid, mode)),
     )
     holder["caller"] = NON_OWNER
-    resp = await client.put("/soc/v1/groups/g1/mode", json={"collab_mode": "full_access"})
+    resp = await client.put(
+        "/soc/v1/groups/g1/mode", json={"collab_mode": "full_access"}
+    )
     assert resp.status_code == 403
 
     holder["caller"] = OWNER
     resp = await client.put("/soc/v1/groups/g1/mode", json={"collab_mode": "bogus"})
     assert resp.status_code == 400
 
-    resp = await client.put("/soc/v1/groups/g1/mode", json={"collab_mode": "full_access"})
+    resp = await client.put(
+        "/soc/v1/groups/g1/mode", json={"collab_mode": "full_access"}
+    )
     assert resp.status_code == 404
 
     group = FakeGroup()
     state.config = SimpleNamespace(teams=SimpleNamespace(groups={"g1": group}))
-    resp = await client.put("/soc/v1/groups/g1/mode", json={"collab_mode": "full_access"})
+    resp = await client.put(
+        "/soc/v1/groups/g1/mode", json={"collab_mode": "full_access"}
+    )
     assert resp.json()["collab_mode"] == "full_access"
     assert group.collab_mode == "full_access"
     assert calls == [("g1", "full_access")]
@@ -1177,7 +1244,9 @@ async def test_list_delegations(client, state):
     resp = await client.get("/soc/v1/delegation")
     assert resp.json() == []
     mgr = MagicMock()
-    mgr.get_active_delegations.return_value = [SimpleNamespace(to_dict=lambda: {"id": "d1"})]
+    mgr.get_active_delegations.return_value = [
+        SimpleNamespace(to_dict=lambda: {"id": "d1"})
+    ]
     state.delegation_manager = mgr
     resp = await client.get("/soc/v1/delegation")
     assert resp.json() == [{"id": "d1"}]
@@ -1199,13 +1268,18 @@ async def test_create_delegation_paths(client, holder, state):
     )
     state.delegation_manager = mgr
     resp = await client.post(
-        "/soc/v1/delegation", json={"delegatee_id": "u1", "privilege": "not-a-privilege"}
+        "/soc/v1/delegation",
+        json={"delegatee_id": "u1", "privilege": "not-a-privilege"},
     )
     assert resp.status_code == 400
 
     resp = await client.post(
         "/soc/v1/delegation",
-        json={"delegatee_id": "u1", "privilege": "egress_approval", "duration_hours": 2.0},
+        json={
+            "delegatee_id": "u1",
+            "privilege": "egress_approval",
+            "duration_hours": 2.0,
+        },
     )
     assert resp.json()["delegatee_id"] == "u1"
     assert mgr.delegate.call_args.kwargs["duration_hours"] == 2.0
@@ -1228,11 +1302,15 @@ async def test_revoke_delegation_paths(client, holder, state):
     resp = await client.delete("/soc/v1/delegation/u1", params={"privilege": "bogus"})
     assert resp.status_code == 400
 
-    resp = await client.delete("/soc/v1/delegation/u1", params={"privilege": "egress_approval"})
+    resp = await client.delete(
+        "/soc/v1/delegation/u1", params={"privilege": "egress_approval"}
+    )
     assert resp.json() == {"ok": True, "delegatee_id": "u1", "revoked_count": 1}
 
     mgr.revoke.return_value = False
-    resp = await client.delete("/soc/v1/delegation/u1", params={"privilege": "egress_approval"})
+    resp = await client.delete(
+        "/soc/v1/delegation/u1", params={"privilege": "egress_approval"}
+    )
     assert resp.json()["ok"] is False
 
     resp = await client.delete("/soc/v1/delegation/u1")
@@ -1252,7 +1330,11 @@ async def test_tool_acl(client, state):
         get_denied_tools=lambda eid: ["shell"],
     )
     resp = await client.get("/soc/v1/tool-acl/u1")
-    assert resp.json() == {"entity_id": "u1", "allowed": ["web_fetch"], "denied": ["shell"]}
+    assert resp.json() == {
+        "entity_id": "u1",
+        "allowed": ["web_fetch"],
+        "denied": ["shell"],
+    }
 
 
 async def test_group_memory_read(client, state, monkeypatch):
@@ -1360,7 +1442,9 @@ async def test_approvals_missing_queue(client):
 
 
 async def test_approvals_approve_raises(client, state):
-    state.approval_queue = SimpleNamespace(approve=AsyncMock(side_effect=KeyError("a1")))
+    state.approval_queue = SimpleNamespace(
+        approve=AsyncMock(side_effect=KeyError("a1"))
+    )
     resp = await client.post("/soc/v1/approvals/a1/approve", json={"reason": ""})
     assert resp.json()["ok"] is False
 
@@ -1373,7 +1457,9 @@ async def test_approvals_approve_raises(client, state):
 async def test_health_healthy_and_degraded(client, monkeypatch):
     monkeypatch.setattr(
         "gateway.soc.services.ServiceManager",
-        _make_service_manager([_Svc("gw", status="running"), _Svc("bot", status="standby")]),
+        _make_service_manager(
+            [_Svc("gw", status="running"), _Svc("bot", status="standby")]
+        ),
     )
     resp = await client.get("/soc/v1/health")
     assert resp.json()["status"] == "healthy"
@@ -1416,7 +1502,12 @@ async def test_get_modules_modes(client, state):
 
 async def test_llm_failover_stats(client, state):
     resp = await client.get("/soc/v1/llm/failover")
-    assert resp.json() == {"available": False, "succeeded": 0, "failed": 0, "active": False}
+    assert resp.json() == {
+        "available": False,
+        "succeeded": 0,
+        "failed": 0,
+        "active": False,
+    }
 
     state.llm_proxy = SimpleNamespace(
         get_stats=lambda: {
@@ -1436,15 +1527,21 @@ async def test_llm_failover_stats(client, state):
 
 
 async def test_set_module_mode_paths(client, state):
-    resp = await client.put("/soc/v1/security/modules/sanitizer/mode", json={"mode": "yolo"})
+    resp = await client.put(
+        "/soc/v1/security/modules/sanitizer/mode", json={"mode": "yolo"}
+    )
     assert resp.status_code == 400
 
-    resp = await client.put("/soc/v1/security/modules/sanitizer/mode", json={"mode": "monitor"})
+    resp = await client.put(
+        "/soc/v1/security/modules/sanitizer/mode", json={"mode": "monitor"}
+    )
     assert resp.status_code == 404
 
     cfg = SimpleNamespace(mode="enforce")
     state.sanitizer = SimpleNamespace(config=cfg)
-    resp = await client.put("/soc/v1/security/modules/sanitizer/mode", json={"mode": "monitor"})
+    resp = await client.put(
+        "/soc/v1/security/modules/sanitizer/mode", json={"mode": "monitor"}
+    )
     assert resp.json() == {"ok": True, "name": "sanitizer", "mode": "monitor"}
     assert cfg.mode == "monitor"
 
@@ -1457,7 +1554,9 @@ async def test_set_module_mode_paths(client, state):
     assert obj.mode == "disabled"
 
     state.mcp_proxy = object()  # no config, no mode attribute
-    resp = await client.put("/soc/v1/security/modules/mcp_proxy/mode", json={"mode": "monitor"})
+    resp = await client.put(
+        "/soc/v1/security/modules/mcp_proxy/mode", json={"mode": "monitor"}
+    )
     assert resp.status_code == 400
     assert resp.json()["detail"]["code"] == "NOT_SUPPORTED"
 
@@ -1465,16 +1564,28 @@ async def test_set_module_mode_paths(client, state):
 async def test_list_bots_default_and_configured(client, state):
     resp = await client.get("/soc/v1/bots")
     assert resp.json() == [
-        {"id": "openclaw", "name": "OpenClaw", "hostname": "agentshroud-openclaw", "default": True}
+        {
+            "id": "openclaw",
+            "name": "OpenClaw",
+            "hostname": "agentshroud-openclaw",
+            "default": True,
+        }
     ]
     state.config = SimpleNamespace(
         bots={
-            "hermes": SimpleNamespace(name="Hermes", hostname="agentshroud-hermes", default=False)
+            "hermes": SimpleNamespace(
+                name="Hermes", hostname="agentshroud-hermes", default=False
+            )
         }
     )
     resp = await client.get("/soc/v1/bots")
     assert resp.json() == [
-        {"id": "hermes", "name": "Hermes", "hostname": "agentshroud-hermes", "default": False}
+        {
+            "id": "hermes",
+            "name": "Hermes",
+            "hostname": "agentshroud-hermes",
+            "default": False,
+        }
     ]
 
 
@@ -1575,7 +1686,9 @@ async def test_launch_scan_background_success(monkeypatch):
 
 async def test_launch_scan_background_exec_failure(monkeypatch):
     monkeypatch.setattr(
-        asyncio, "create_subprocess_exec", AsyncMock(side_effect=OSError("missing script"))
+        asyncio,
+        "create_subprocess_exec",
+        AsyncMock(side_effect=OSError("missing script")),
     )
     # Must not raise — fire-and-forget semantics
     await soc_router._launch_scan_background("all")
@@ -1672,7 +1785,8 @@ async def test_sbom_paths(client, monkeypatch):
     assert resp.status_code == 404
 
     monkeypatch.setattr(
-        "gateway.security.scanner_integration.get_sbom", lambda: {"spdxVersion": "SPDX-2.3"}
+        "gateway.security.scanner_integration.get_sbom",
+        lambda: {"spdxVersion": "SPDX-2.3"},
     )
     resp = await client.get("/soc/v1/sbom")
     assert resp.json() == {"spdxVersion": "SPDX-2.3"}
@@ -1713,14 +1827,49 @@ async def test_agent_cves_registry_error(client, monkeypatch):
     def _boom(bot_id="openclaw"):
         raise RuntimeError("registry corrupt")
 
-    monkeypatch.setattr("gateway.security.agent_cve_registry.get_agent_cve_summary", _boom)
+    monkeypatch.setattr(
+        "gateway.security.agent_cve_registry.get_agent_cve_summary", _boom
+    )
     resp = await client.get("/soc/v1/agent-cves")
     assert resp.json() == {"error": "registry corrupt"}
 
 
+async def test_agent_cves_reports_under_review(client, monkeypatch):
+    """SOC /agent-cves surfaces auto-registered under_review advisories honestly."""
+    import gateway.security.agent_cve_registry as reg
+
+    under = {
+        "id": "ASH-OCLAW-999",
+        "ghsa_id": "GHSA-test-test-test",
+        "cve_id": None,
+        "title": "Auto-registered advisory pending triage",
+        "cvss": None,
+        "severity": "HIGH",
+        "disclosed": "2026-07-16",
+        "fixed_in": None,
+        "description": "Newly detected upstream advisory.",
+        "status": "under_review",
+        "mitigation": "",
+        "defense_layers": [],
+    }
+    monkeypatch.setattr(
+        reg, "_AGENT_CVE_REGISTRIES", {"openclaw": reg._OPENCLAW_CVE_REGISTRY + [under]}
+    )
+    resp = await client.get("/soc/v1/agent-cves")
+    data = resp.json()
+    # by_status includes an under_review bucket and counts our injected entry.
+    assert data["by_status"]["under_review"] >= 1
+    assert any(
+        c["id"] == "ASH-OCLAW-999" and c["status"] == "under_review"
+        for c in data["cves"]
+    )
+
+
 async def test_cve_report_queued(client, monkeypatch):
     sent = AsyncMock(return_value=True)
-    monkeypatch.setattr("gateway.security.daily_cve_report.run_and_send_cve_report", sent)
+    monkeypatch.setattr(
+        "gateway.security.daily_cve_report.run_and_send_cve_report", sent
+    )
     monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "tok-x")
     monkeypatch.setenv("TELEGRAM_API_BASE_URL", "https://tg.local/")
     resp = await client.post("/soc/v1/cve-report")
@@ -1755,7 +1904,11 @@ def test_fetch_latest_release_success():
     cm.__enter__.return_value.read.return_value = body
     with patch("urllib.request.urlopen", return_value=cm):
         result = soc_router._fetch_latest_release()
-    assert result == {"tag_name": "v9.9.9", "html_url": "https://gh/rel", "body": "notes"}
+    assert result == {
+        "tag_name": "v9.9.9",
+        "html_url": "https://gh/rel",
+        "body": "notes",
+    }
 
 
 def test_fetch_latest_release_error():
@@ -1765,7 +1918,9 @@ def test_fetch_latest_release_error():
 
 
 async def test_get_updates_variants(client, monkeypatch):
-    monkeypatch.setattr(soc_router, "_fetch_latest_release", lambda: {"error": "offline"})
+    monkeypatch.setattr(
+        soc_router, "_fetch_latest_release", lambda: {"error": "offline"}
+    )
     resp = await client.get("/soc/v1/updates")
     assert resp.json()["check_error"] == "offline"
     assert resp.json()["available"] == []
@@ -1773,7 +1928,11 @@ async def test_get_updates_variants(client, monkeypatch):
     monkeypatch.setattr(
         soc_router,
         "_fetch_latest_release",
-        lambda: {"tag_name": f"v{soc_router._CURRENT_VERSION}", "html_url": "u", "body": ""},
+        lambda: {
+            "tag_name": f"v{soc_router._CURRENT_VERSION}",
+            "html_url": "u",
+            "body": "",
+        },
     )
     resp = await client.get("/soc/v1/updates")
     assert resp.json()["available"] == []
@@ -1799,7 +1958,9 @@ async def test_ssh_compose_no_host(monkeypatch):
 async def test_ssh_compose_success(monkeypatch):
     monkeypatch.setenv("AGENTSHROUD_COMPOSE_HOST", "ops@example")
     monkeypatch.setenv("AGENTSHROUD_COMPOSE_DIR", "/srv/shroud")
-    proc = SimpleNamespace(communicate=AsyncMock(return_value=(b"pulled", b"")), returncode=0)
+    proc = SimpleNamespace(
+        communicate=AsyncMock(return_value=(b"pulled", b"")), returncode=0
+    )
     create = AsyncMock(return_value=proc)
     monkeypatch.setattr(asyncio, "create_subprocess_exec", create)
     rc, out, err = await soc_router._ssh_compose("git pull")
@@ -1811,12 +1972,16 @@ async def test_ssh_compose_timeout_and_exception(monkeypatch):
     monkeypatch.setenv("AGENTSHROUD_COMPOSE_HOST", "ops@example")
     proc = SimpleNamespace(communicate=AsyncMock(return_value=(b"", b"")), returncode=0)
     monkeypatch.setattr(asyncio, "create_subprocess_exec", AsyncMock(return_value=proc))
-    monkeypatch.setattr(asyncio, "wait_for", AsyncMock(side_effect=asyncio.TimeoutError))
+    monkeypatch.setattr(
+        asyncio, "wait_for", AsyncMock(side_effect=asyncio.TimeoutError)
+    )
     rc, _, err = await soc_router._ssh_compose("slow", timeout=5)
     assert rc == 1
     assert "timed out" in err
 
-    monkeypatch.setattr(asyncio, "create_subprocess_exec", AsyncMock(side_effect=OSError("no ssh")))
+    monkeypatch.setattr(
+        asyncio, "create_subprocess_exec", AsyncMock(side_effect=OSError("no ssh"))
+    )
     rc, _, err = await soc_router._ssh_compose("cmd")
     assert rc == 1
     assert "no ssh" in err
@@ -1831,7 +1996,9 @@ async def test_upgrade_gateway_paths(client, holder, monkeypatch):
     resp = await client.post("/soc/v1/updates/gateway/upgrade", json={"confirm": False})
     assert resp.status_code == 409
 
-    monkeypatch.setattr(soc_router, "_ssh_compose", AsyncMock(return_value=(0, "built ok", "")))
+    monkeypatch.setattr(
+        soc_router, "_ssh_compose", AsyncMock(return_value=(0, "built ok", ""))
+    )
     resp = await client.post("/soc/v1/updates/gateway/upgrade", json={"confirm": True})
     assert resp.json() == {
         "ok": True,
@@ -1840,7 +2007,9 @@ async def test_upgrade_gateway_paths(client, holder, monkeypatch):
         "stdout": "built ok",
     }
 
-    monkeypatch.setattr(soc_router, "_ssh_compose", AsyncMock(return_value=(2, "", "build failed")))
+    monkeypatch.setattr(
+        soc_router, "_ssh_compose", AsyncMock(return_value=(2, "", "build failed"))
+    )
     resp = await client.post("/soc/v1/updates/gateway/upgrade", json={"confirm": True})
     assert resp.status_code == 500
     assert resp.json()["stderr"] == "build failed"
@@ -1900,7 +2069,9 @@ async def test_upgrade_bot_paths(client, holder, monkeypatch):
     resp = await client.post("/soc/v1/updates/bot/upgrade", json={"confirm": False})
     assert resp.status_code == 409
 
-    monkeypatch.setattr(soc_router, "_docker_exec_bot", AsyncMock(return_value=(1, "npm crashed")))
+    monkeypatch.setattr(
+        soc_router, "_docker_exec_bot", AsyncMock(return_value=(1, "npm crashed"))
+    )
     resp = await client.post("/soc/v1/updates/bot/upgrade", json={"confirm": True})
     assert resp.status_code == 500
     assert resp.json()["output"] == "npm crashed"
@@ -1909,7 +2080,9 @@ async def test_upgrade_bot_paths(client, holder, monkeypatch):
     monkeypatch.setattr(
         soc_router,
         "_docker_exec_bot",
-        AsyncMock(side_effect=[(0, "installed"), (0, "ok"), (1, "patch broken"), (0, "ok")]),
+        AsyncMock(
+            side_effect=[(0, "installed"), (0, "ok"), (1, "patch broken"), (0, "ok")]
+        ),
     )
     resp = await client.post("/soc/v1/updates/bot/upgrade", json={"confirm": True})
     data = resp.json()
@@ -1930,13 +2103,15 @@ async def test_upgrade_hermes_paths(client, holder, monkeypatch):
     assert resp.status_code == 409
 
     monkeypatch.setattr(
-        "gateway.soc.services.ServiceManager", _make_service_manager(results={"update": False})
+        "gateway.soc.services.ServiceManager",
+        _make_service_manager(results={"update": False}),
     )
     resp = await client.post("/soc/v1/updates/hermes/upgrade", json={"confirm": True})
     assert resp.status_code == 500
 
     monkeypatch.setattr(
-        "gateway.soc.services.ServiceManager", _make_service_manager(results={"update": True})
+        "gateway.soc.services.ServiceManager",
+        _make_service_manager(results={"update": True}),
     )
     resp = await client.post("/soc/v1/updates/hermes/upgrade", json={"confirm": True})
     assert resp.json()["ok"] is True
@@ -1949,7 +2124,9 @@ async def test_rollback_gateway_paths(client, holder, monkeypatch):
     assert resp.status_code == 403
 
     holder["caller"] = OWNER
-    resp = await client.post("/soc/v1/updates/gateway/rollback", json={"confirm": False})
+    resp = await client.post(
+        "/soc/v1/updates/gateway/rollback", json={"confirm": False}
+    )
     assert resp.status_code == 409
 
     commands = []
