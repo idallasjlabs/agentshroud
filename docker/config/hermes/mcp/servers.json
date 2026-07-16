@@ -1,0 +1,11 @@
+{
+  "_comment": "MCP server definitions — no tokens or secrets here. Tokens injected at deploy time from 1Password secrets.",
+  "servers": {
+    "agentshroud-gateway": {
+      "description": "AgentShroud Gateway MCP proxy",
+      "type": "http",
+      "url": "http://gateway:8080/mcp",
+      "enabled": true
+    }
+  }
+}

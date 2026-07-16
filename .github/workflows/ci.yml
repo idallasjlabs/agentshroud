@@ -130,6 +130,9 @@ jobs:
       - name: Run startup smoke tests
         run: node tests/startup_smoke/test_apply_patches.js
 
+      - name: Run llm-settings wiring smoke tests
+        run: node tests/startup_smoke/test_wire_llm_settings.js
+
   soul-freshness:
     name: SOUL.md Freshness Check
     runs-on: ubuntu-latest

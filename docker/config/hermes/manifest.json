@@ -1,0 +1,71 @@
+{
+  "version": "1",
+  "generated_at": "2026-07-16T17:13:11Z",
+  "entries": [
+    {
+      "name": "skills/graphify/.graphify_version",
+      "hash": "e7bd032db34f2291ae7c611443cbc9e300dc4a3a5d2460074b661ef2da18fd1f",
+      "size": 6
+    },
+    {
+      "name": "skills/graphify/references/add-watch.md",
+      "hash": "ec787daaf6ec535e0f6aaef5d8b58de6aabcd1c491909b98fdc9ee0c88160300",
+      "size": 2457
+    },
+    {
+      "name": "skills/graphify/references/exports.md",
+      "hash": "f648e8b3e14105b180f6251a7ffbc4dd1e50734ccdb887d80faa6fe58c64b7e2",
+      "size": 3073
+    },
+    {
+      "name": "skills/graphify/references/extraction-spec.md",
+      "hash": "f1ba3f828441daef1fc110b8040219d0135444b2761537bd63aa7d0e02608d1d",
+      "size": 7161
+    },
+    {
+      "name": "skills/graphify/references/github-and-merge.md",
+      "hash": "e5ebd90c7686f50363ff7a535556bc2f596d4c47ec1e6c8b95e11e36a0dfea2b",
+      "size": 2177
+    },
+    {
+      "name": "skills/graphify/references/hooks.md",
+      "hash": "b9a4e9f66813c6fc720589f1071d1a03c95756ab7101447e14e57291fe7844e5",
+      "size": 1267
+    },
+    {
+      "name": "skills/graphify/references/query.md",
+      "hash": "1dee6ba76343a754104cd793d30db12b97ca138dc73c5499a9e4ae7787744b42",
+      "size": 5166
+    },
+    {
+      "name": "skills/graphify/references/transcribe.md",
+      "hash": "6b81f8dcff4d11aa69859dfda473a03b144a9b1fe63303f927b061e70d167439",
+      "size": 2652
+    },
+    {
+      "name": "skills/graphify/references/update.md",
+      "hash": "ad5753f179a50ba3c57105024a3f62411abadbd771463835f25bc83adfffdc73",
+      "size": 7518
+    },
+    {
+      "name": "skills/graphify/SKILL.md",
+      "hash": "9b81f42b712f82b8aff3bf4b5ee191d5089394dc030949a7762e820682b119c1",
+      "size": 32783
+    },
+    {
+      "name": "mcp/servers.json",
+      "hash": "c47218a3bfa6591bb68335bf3c504dfdeb7debbf94907bd71cbd40336540fd34",
+      "size": 322
+    },
+    {
+      "name": "agents/hermes-soul.md",
+      "hash": "ac16f115c31eb8fcaaeec9c2470b881c24d955727c0ef9e3409d764fd098b738",
+      "size": 4668
+    },
+    {
+      "name": "agents/openclaw-identity.md",
+      "hash": "496e63c7fb0fdb55d81840e3595c90abac1c79508912bf6125dcbb579d61478d",
+      "size": 2041
+    }
+  ]
+}
