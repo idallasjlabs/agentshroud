@@ -98,11 +98,14 @@ function runOpenClawInit() {
   // synced skills/mcp/agents) so the init script's earlier steps run to completion.
   fs.cpSync(path.join(REPO, 'docker/config/openclaw'), defaults, { recursive: true });
 
-  // Stub `openclaw`: record `mcp add`/`mcp list`; `mcp list` prints nothing.
+  // Stub `openclaw`: record `mcp set` (the correct verb — `add` probes the server
+  // and fails at init). `mcp list` prints nothing so every server is treated as new.
+  // If init ever regresses to `mcp add`, MCP_SET is never logged and O2 fails.
   writeStub(
     binDir,
     'openclaw',
     `#!/bin/bash\n` +
+      `if [ "$1" = "mcp" ] && [ "$2" = "set" ]; then echo "MCP_SET $*" >> "${mcpLog}"; exit 0; fi\n` +
       `if [ "$1" = "mcp" ] && [ "$2" = "add" ]; then echo "MCP_ADD $*" >> "${mcpLog}"; exit 0; fi\n` +
       `if [ "$1" = "mcp" ] && [ "$2" = "list" ]; then exit 0; fi\n` +
       `exit 0\n`,
@@ -129,7 +132,13 @@ function runOpenClawInit() {
 }
 
 // ── Hermes ──────────────────────────────────────────────────────────────────
-function runHermesInit() {
+// opts.staleSoul: if set, pre-place a stale, UNWRITABLE (mode 0444) SOUL.md on the
+// volume before init runs. This reproduces the production trap where the volume holds
+// a foreign-owned SOUL.md that a plain `cp` cannot overwrite (EACCES). A non-root test
+// runner cannot chown to a foreign uid, but a 0444 file it owns triggers the identical
+// "cp: cannot create ... Permission denied" open-for-write failure — so the init's
+// rm+temp+mv path (which relies on the writable parent dir) is what must succeed.
+function runHermesInit(opts = {}) {
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'wire-h-'));
   const dataDir = path.join(tmp, 'opt', 'data');
   const defaults = path.join(tmp, 'config-defaults', 'hermes');
@@ -140,7 +149,7 @@ function runHermesInit() {
   fs.mkdirSync(binDir, { recursive: true });
   stageDefaults(defaults, path.join(REPO, 'docker/config/hermes'));
   // The Hermes init also seeds config.yaml/cron/workspace from defaults; stage those
-  // so the script's earlier steps don't error before reaching our wiring.
+  // so the script's earlier steps run to completion.
   for (const f of ['config.yaml.tmpl', 'SOUL.md']) {
     const src = path.join(REPO, 'docker/config/hermes', f);
     if (fs.existsSync(src)) fs.copyFileSync(src, path.join(defaults, f));
@@ -150,7 +159,16 @@ function runHermesInit() {
     if (fs.existsSync(src)) fs.cpSync(src, path.join(defaults, d), { recursive: true });
   }
 
-  // Stub `hermes`: record `mcp add`; `mcp list` and `cron *` print nothing/succeed.
+  if (opts.staleSoul) {
+    const staleFile = path.join(dataDir, 'SOUL.md');
+    // Stale content that does NOT contain the connectivity-fix ssh-exec wrapper.
+    fs.writeFileSync(staleFile, '# STALE SOUL (Jun 27)\nNo ssh-exec wrapper here.\n');
+    fs.chmodSync(staleFile, 0o444); // read-only → plain cp overwrite fails (EACCES)
+  }
+
+  // Stub `hermes`: `mcp add`/`mcp list`/`cron *` succeed & print nothing. The gateway
+  // MCP no longer routes through `hermes mcp add` (it is written into config.yaml
+  // directly), so this stub only covers the pre-existing github-MCP stdio add.
   writeStub(
     binDir,
     'hermes',
@@ -186,13 +204,21 @@ console.log('OpenClaw (init-openclaw-config.sh):');
   const ocSkill = path.join(openclawDir, 'skills', 'graphify', 'SKILL.md');
   assert('O1: graphify SKILL.md installed into .openclaw/skills/', fs.existsSync(ocSkill), ocSkill);
 
-  // O2: MCP registered via `openclaw mcp add` with the URL read from servers.json
+  // O2: MCP registered via the CORRECT verb `openclaw mcp set` (NOT `mcp add`, which
+  // probes the endpoint and fails at init) with the URL from servers.json and the
+  // canonical HTTP transport value "streamable-http".
   const ocMcp = read(mcpLog);
   assert(
-    'O2: openclaw mcp add called for agentshroud-gateway with servers.json URL',
-    ocMcp.includes('MCP_ADD') &&
+    'O2: `openclaw mcp set agentshroud-gateway` called with servers.json URL + streamable-http',
+    ocMcp.includes('MCP_SET') &&
       ocMcp.includes('agentshroud-gateway') &&
-      ocMcp.includes('http://gateway:8080/mcp'),
+      ocMcp.includes('http://gateway:8080/mcp') &&
+      ocMcp.includes('streamable-http'),
+    `mcp log: ${JSON.stringify(ocMcp)}`,
+  );
+  assert(
+    'O2b: init does NOT use the wrong verb `openclaw mcp add` for the gateway server',
+    !ocMcp.includes('MCP_ADD'),
     `mcp log: ${JSON.stringify(ocMcp)}`,
   );
 
@@ -214,10 +240,30 @@ console.log('OpenClaw (init-openclaw-config.sh):');
   );
 }
 
+// Read the mcp_servers map from a Hermes config.yaml (minimal YAML — no PyYAML dep
+// in-node; parse the flat two-level block we write).
+function readHermesMcpServers(configPath) {
+  const txt = read(configPath);
+  const out = {};
+  const lines = txt.split('\n');
+  let inMcp = false;
+  let curName = null;
+  for (const line of lines) {
+    if (/^mcp_servers:\s*$/.test(line)) { inMcp = true; continue; }
+    if (inMcp && /^\S/.test(line)) break; // dedent to another top-level key
+    if (!inMcp) continue;
+    const nameM = line.match(/^ {2}([^\s:]+):\s*$/);
+    if (nameM) { curName = nameM[1]; out[curName] = {}; continue; }
+    const kvM = line.match(/^ {4}([^\s:]+):\s*(.+)\s*$/);
+    if (kvM && curName) out[curName][kvM[1]] = kvM[2];
+  }
+  return out;
+}
+
 // ── Hermes assertions ───────────────────────────────────────────────────────
 console.log('\nHermes (init-config.sh):');
 {
-  const { dataDir, mcpLog, res } = runHermesInit();
+  const { dataDir, res } = runHermesInit();
   if (res.status !== 0) {
     console.error('  init-config.sh stderr:\n' + (res.stderr || '').slice(-2000));
   }
@@ -234,14 +280,14 @@ console.log('\nHermes (init-config.sh):');
   const hSkill = path.join(dataDir, 'skills', 'graphify', 'SKILL.md');
   assert('H2: graphify SKILL.md installed into /opt/data/skills/', fs.existsSync(hSkill), hSkill);
 
-  // H3: MCP registered via `hermes mcp add` with the URL read from servers.json
-  const hMcp = read(mcpLog);
+  // H3: MCP registered by writing mcp_servers into config.yaml (NOT via the
+  // interactive `hermes mcp add`), url read from servers.json, enabled:true.
+  const servers = readHermesMcpServers(path.join(dataDir, 'config.yaml'));
+  const gw = servers['agentshroud-gateway'];
   assert(
-    'H3: hermes mcp add called for agentshroud-gateway with servers.json URL',
-    hMcp.includes('MCP_ADD') &&
-      hMcp.includes('agentshroud-gateway') &&
-      hMcp.includes('http://gateway:8080/mcp'),
-    `mcp log: ${JSON.stringify(hMcp)}`,
+    'H3: config.yaml mcp_servers.agentshroud-gateway has servers.json URL + enabled',
+    !!gw && gw.url === 'http://gateway:8080/mcp' && String(gw.enabled) === 'true',
+    `mcp_servers: ${JSON.stringify(servers)}`,
   );
 
   // H4: ISOLATION — OpenClaw's identity persona must never seed Hermes' SOUL
@@ -250,6 +296,31 @@ console.log('\nHermes (init-config.sh):');
     'H4: ISOLATION — Hermes SOUL.md does NOT contain OpenClaw identity persona',
     !soulLower.includes('identity.md - who i am') && !soulLower.includes('creature:'),
     'openclaw identity leaked into hermes soul',
+  );
+}
+
+// ── Hermes SOUL overwrite over a foreign-owned / unwritable stale file ────────
+console.log('\nHermes SOUL re-seed over a stale unwritable file:');
+{
+  const { dataDir, res } = runHermesInit({ staleSoul: true });
+  if (res.status !== 0) {
+    console.error('  init-config.sh stderr:\n' + (res.stderr || '').slice(-2000));
+  }
+  const soul = read(path.join(dataDir, 'SOUL.md'));
+  // H5: the stale (0444) SOUL.md must be REPLACED by the synced persona.
+  assert(
+    'H5: stale unwritable SOUL.md replaced with synced hermes-soul.md',
+    soul.includes('Hermes') && soul.toLowerCase().includes('system identity') &&
+      !soul.includes('STALE SOUL'),
+    `soul head: ${JSON.stringify(soul.slice(0, 80))}`,
+  );
+  // H6: the connectivity-fix ssh-exec wrapper is present after re-seed (the exact
+  // production symptom: grep -c agentshroud-ssh-exec /opt/data/SOUL.md must be >= 1).
+  const sshExecCount = (soul.match(/agentshroud-ssh-exec/g) || []).length;
+  assert(
+    'H6: re-seeded SOUL.md contains the connectivity-fix ssh-exec wrapper (>=1)',
+    sshExecCount >= 1,
+    `agentshroud-ssh-exec occurrences: ${sshExecCount}`,
   );
 }
 
