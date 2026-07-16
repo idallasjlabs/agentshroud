@@ -16,8 +16,12 @@
 
 set -euo pipefail
 
-DEFAULTS_DIR="/app/config-defaults/openclaw"
-OPENCLAW_DIR="/home/node/.openclaw"
+# INIT_DEFAULTS_DIR / INIT_OPENCLAW_DIR are test-only path overrides (mirrors the
+# SKILLGUARD_TEST_DEST_ROOT hook in sync-llm-settings.sh) so the wiring can be
+# exercised against sandbox dirs without touching the container paths. Unset in
+# production, where the baked/volume paths below are used.
+DEFAULTS_DIR="${INIT_DEFAULTS_DIR:-/app/config-defaults/openclaw}"
+OPENCLAW_DIR="${INIT_OPENCLAW_DIR:-/home/node/.openclaw}"
 
 # ── 1. cron/jobs.json — bootstrap on first run, re-seed when the image ship ──
 # Seeding model (fixes the stale-volume trap):
@@ -203,6 +207,87 @@ chmod 600 "${ROOT_MODELS_JSON}" 2>/dev/null || true
 chmod 700 "${OPENCLAW_DIR}" 2>/dev/null || true
 chmod 600 "${OPENCLAW_DIR}/openclaw.json" 2>/dev/null || true
 
+# ── 2d. Skills — install synced skills into OpenClaw's discovery path ─────────
+# OpenClaw auto-discovers skills from ${OPENCLAW_DIR}/skills/<name>/ (each with a
+# SKILL.md); `openclaw skills list` then reports them as "✓ ready" (see
+# docs/reference/PUBLISH-TO-CLAWHUB.md). The synced skill tree is baked to
+# ${DEFAULTS_DIR}/skills/ by sync-llm-settings.sh (single source of truth:
+# ~/.llm_settings/skills/). Refresh on every boot so repo edits take effect after
+# rebuild. This is OpenClaw's OWN skill path — independent of Hermes.
+SKILLS_SRC="${DEFAULTS_DIR}/skills"
+SKILLS_DEST="${OPENCLAW_DIR}/skills"
+if [ -d "${SKILLS_SRC}" ]; then
+  mkdir -p "${SKILLS_DEST}"
+  # Copy each skill dir authoritatively (overwrite managed skills; leave others).
+  for _skill_path in "${SKILLS_SRC}"/*/; do
+    [ -d "${_skill_path}" ] || continue
+    _skill_name="$(basename "${_skill_path}")"
+    rm -rf "${SKILLS_DEST:?}/${_skill_name}"
+    cp -r "${_skill_path}" "${SKILLS_DEST}/${_skill_name}"
+  done
+  echo "[init] ✓ Installed synced skills into ${SKILLS_DEST} ($(ls "${SKILLS_DEST}" 2>/dev/null | wc -l | tr -d ' ') skill(s))"
+else
+  echo "[init] ⚠ No synced skills dir at ${SKILLS_SRC} — run scripts/sync-llm-settings.sh (skipping)"
+fi
+
+# ── 2e. MCP servers — register from synced mcp/servers.json (idempotent) ──────
+# Source of truth: ~/.llm_settings/mcp/servers.json → baked to
+# ${DEFAULTS_DIR}/mcp/servers.json by sync-llm-settings.sh. We read the server
+# name + url from that file (NOT hardcoded) and register each enabled server with
+# OpenClaw's native `openclaw mcp add` CLI (the CLI owns the openclaw.json MCP
+# schema, so we never hand-write an unverified key that could crash-loop the bot).
+#
+# Idempotency: skip any server already present in `openclaw mcp list`. No secrets
+# are written here — the servers.json comment notes tokens are injected at deploy
+# time; the agentshroud-gateway server needs none (internal Docker control plane).
+# HTTP transport is selected because servers.json declares "type":"http".
+MCP_SERVERS_JSON="${DEFAULTS_DIR}/mcp/servers.json"
+_openclaw_bin="$(command -v openclaw || true)"
+if [ -f "${MCP_SERVERS_JSON}" ] && [ -n "${_openclaw_bin}" ]; then
+  # Enumerate enabled servers as "name<TAB>type<TAB>url" lines via node (JSON-safe).
+  _mcp_rows="$(node -e "
+    try {
+      const cfg = JSON.parse(require('fs').readFileSync('${MCP_SERVERS_JSON}', 'utf8'));
+      const servers = (cfg && cfg.servers) || {};
+      for (const [name, s] of Object.entries(servers)) {
+        if (s && s.enabled === false) continue;
+        const type = (s && s.type) || 'http';
+        const url = (s && s.url) || '';
+        if (!url) continue;
+        process.stdout.write(name + '\t' + type + '\t' + url + '\n');
+      }
+    } catch (e) { process.stderr.write('mcp parse error: ' + e.message + '\n'); }
+  " 2>/dev/null)"
+
+  if [ -n "${_mcp_rows}" ]; then
+    _mcp_existing="$(openclaw mcp list 2>/dev/null || true)"
+    printf '%s\n' "${_mcp_rows}" | while IFS="$(printf '\t')" read -r _name _type _url; do
+      [ -n "${_name}" ] && [ -n "${_url}" ] || continue
+      if printf '%s' "${_mcp_existing}" | grep -qw "${_name}"; then
+        echo "[init] ✓ MCP server '${_name}' already registered — skipping"
+        continue
+      fi
+      # OpenClaw MCP registration via CLI. HTTP-transport flag names vary across
+      # OpenClaw releases; try the known forms in order and stop at first success.
+      # A failure is non-fatal (logged) — it degrades gracefully like the Hermes
+      # github-MCP block rather than crash-looping the bot.
+      if openclaw mcp add "${_name}" --transport http --url "${_url}" >/dev/null 2>&1 \
+        || openclaw mcp add "${_name}" --type http --url "${_url}" >/dev/null 2>&1 \
+        || openclaw mcp add "${_name}" --url "${_url}" >/dev/null 2>&1; then
+        echo "[init] ✓ Registered MCP server '${_name}' (${_type}) → ${_url}"
+      else
+        echo "[init] ⚠ Could not register MCP server '${_name}' via 'openclaw mcp add' (will retry next boot)"
+      fi
+    done
+  else
+    echo "[init] ⚠ No enabled MCP servers found in ${MCP_SERVERS_JSON} — skipping"
+  fi
+elif [ ! -f "${MCP_SERVERS_JSON}" ]; then
+  echo "[init] ⚠ No synced mcp/servers.json at ${MCP_SERVERS_JSON} — run scripts/sync-llm-settings.sh (skipping MCP)"
+else
+  echo "[init] ⚠ openclaw CLI not on PATH — skipping MCP registration"
+fi
+
 # ── 3. Workspace brand/identity files ────────────────────────────────────────
 # BRAND.md    — always refreshed from image (authoritative trademark & brand rules)
 # IDENTITY.md — seeded on first run only (bot evolves this over time)
@@ -232,10 +317,17 @@ if [ -f "${DEFAULTS_DIR}/workspace/DEVELOPER.md" ]; then
 fi
 
 # IDENTITY.md: seed only if missing or still the unfilled OpenClaw default.
+# Source of truth is the synced persona from ~/.llm_settings/agents/openclaw-identity.md
+# (baked to ${DEFAULTS_DIR}/agents/openclaw-identity.md by sync-llm-settings.sh). This
+# keeps OpenClaw's identity on its OWN path — Hermes' persona (hermes-soul.md) is NEVER
+# loaded here. Fall back to the legacy workspace/IDENTITY.md only if the synced file is
+# absent (e.g. an image built before the sync ran).
 IDENTITY_FILE="${WORKSPACE_DIR}/IDENTITY.md"
+IDENTITY_SRC="${DEFAULTS_DIR}/agents/openclaw-identity.md"
+[ -f "${IDENTITY_SRC}" ] || IDENTITY_SRC="${DEFAULTS_DIR}/workspace/IDENTITY.md"
 if [ ! -f "${IDENTITY_FILE}" ] || grep -q "_Fill this in during your first conversation_" "${IDENTITY_FILE}" 2>/dev/null; then
-  cp "${DEFAULTS_DIR}/workspace/IDENTITY.md" "${IDENTITY_FILE}"
-  echo "[init] ✓ Seeded IDENTITY.md with AgentShroud identity"
+  cp "${IDENTITY_SRC}" "${IDENTITY_FILE}"
+  echo "[init] ✓ Seeded IDENTITY.md from ${IDENTITY_SRC##*/} (OpenClaw identity)"
 else
   echo "[init] ✓ IDENTITY.md already set — skipping"
 fi

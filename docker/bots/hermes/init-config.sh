@@ -10,8 +10,12 @@
 
 set -euo pipefail
 
-DEFAULTS_DIR="/app/config-defaults/hermes"
-DATA_DIR="/opt/data"
+# INIT_DEFAULTS_DIR / INIT_DATA_DIR are test-only path overrides (mirrors the
+# SKILLGUARD_TEST_DEST_ROOT hook in sync-llm-settings.sh) so the wiring can be
+# exercised against sandbox dirs without touching the container paths. Unset in
+# production, where the baked/volume paths below are used.
+DEFAULTS_DIR="${INIT_DEFAULTS_DIR:-/app/config-defaults/hermes}"
+DATA_DIR="${INIT_DATA_DIR:-/opt/data}"
 
 echo "[hermes-init] Checking config..."
 
@@ -37,12 +41,55 @@ else
     echo "[hermes-init] config.yaml already exists and is current — skipping"
 fi
 
-# SOUL.md — bot identity file
+# SOUL.md — bot identity file.
+# Source of truth is the synced persona ~/.llm_settings/agents/hermes-soul.md
+# (baked to ${DEFAULTS_DIR}/agents/hermes-soul.md by sync-llm-settings.sh). This is
+# Hermes' OWN identity path — OpenClaw's persona (openclaw-identity.md) is NEVER
+# loaded here. Fall back to the legacy ${DEFAULTS_DIR}/SOUL.md only if the synced
+# file is absent (image built before the sync ran).
+#
+# Seeding model: first-boot seeds; on upgrade, re-seed when the IMAGE default changed
+# since last seed (checksum stamp) so corrected personas — e.g. the connectivity-fix
+# ssh-exec wrapper now in hermes-soul.md — propagate onto pre-existing volumes.
+# Between image builds the checksum is stable, so live edits survive plain restarts.
+_SOUL_SRC="${DEFAULTS_DIR}/agents/hermes-soul.md"
+[ -f "${_SOUL_SRC}" ] || _SOUL_SRC="${DEFAULTS_DIR}/SOUL.md"
+_SOUL_STAMP="${DATA_DIR}/.SOUL.md.seed-sha256"
+_soul_sha="$(sha256sum "${_SOUL_SRC}" 2>/dev/null | awk '{print $1}')"
 if [ ! -f "${DATA_DIR}/SOUL.md" ]; then
-    cp "${DEFAULTS_DIR}/SOUL.md" "${DATA_DIR}/SOUL.md"
-    echo "[hermes-init] Seeded SOUL.md from defaults"
+    cp "${_SOUL_SRC}" "${DATA_DIR}/SOUL.md"
+    printf '%s' "${_soul_sha}" > "${_SOUL_STAMP}" 2>/dev/null || true
+    echo "[hermes-init] Seeded SOUL.md from ${_SOUL_SRC##*/} (Hermes identity, first run)"
 else
-    echo "[hermes-init] SOUL.md already exists — skipping"
+    _soul_prev=""
+    [ -f "${_SOUL_STAMP}" ] && _soul_prev="$(cat "${_SOUL_STAMP}" 2>/dev/null || true)"
+    if [ -n "${_soul_sha}" ] && [ "${_soul_sha}" != "${_soul_prev}" ]; then
+        cp "${_SOUL_SRC}" "${DATA_DIR}/SOUL.md"
+        printf '%s' "${_soul_sha}" > "${_SOUL_STAMP}" 2>/dev/null || true
+        echo "[hermes-init] Re-seeded SOUL.md — synced persona changed since last seed (stale volume copy replaced)"
+    else
+        echo "[hermes-init] SOUL.md matches last-seeded synced persona — skipping"
+    fi
+fi
+
+# Skills — install synced skills into Hermes' skill directory (/opt/data/skills/).
+# Source of truth: ~/.llm_settings/skills/ → baked to ${DEFAULTS_DIR}/skills/ by
+# sync-llm-settings.sh. Hermes reads skill artefacts from /opt/data/skills/ (see the
+# skills/.hub reclaim in agentshroud-secrets.sh). Refresh managed skills on every boot
+# so repo edits take effect after rebuild. This is Hermes' OWN skill path.
+_SKILLS_SRC="${DEFAULTS_DIR}/skills"
+_SKILLS_DEST="${DATA_DIR}/skills"
+if [ -d "${_SKILLS_SRC}" ]; then
+    mkdir -p "${_SKILLS_DEST}"
+    for _skill_path in "${_SKILLS_SRC}"/*/; do
+        [ -d "${_skill_path}" ] || continue
+        _skill_name="$(basename "${_skill_path}")"
+        rm -rf "${_SKILLS_DEST:?}/${_skill_name}"
+        cp -r "${_skill_path}" "${_SKILLS_DEST}/${_skill_name}"
+    done
+    echo "[hermes-init] Installed synced skills into ${_SKILLS_DEST} ($(ls "${_SKILLS_DEST}" 2>/dev/null | wc -l | tr -d ' ') skill(s))"
+else
+    echo "[hermes-init] No synced skills dir at ${_SKILLS_SRC} — run scripts/sync-llm-settings.sh (skipping)"
 fi
 
 # Cron jobs — seed default job set on first boot
@@ -231,6 +278,56 @@ if [ ! -f "${_MCP_STAMP}" ]; then
     fi
 else
     echo "[hermes-init] GitHub MCP already configured — skipping"
+fi
+
+# ── Synced MCP servers — register each from mcp/servers.json (idempotent) ───
+# Source of truth: ~/.llm_settings/mcp/servers.json → baked to
+# ${DEFAULTS_DIR}/mcp/servers.json by sync-llm-settings.sh. Read the server
+# name + url from that file (NOT hardcoded) and register each enabled server via
+# Hermes' native `hermes mcp add`. Extends the github-MCP idempotent pattern above
+# to the declarative server list. No secrets are written here — the servers.json
+# comment notes tokens are injected at deploy time; agentshroud-gateway needs none
+# (internal Docker control plane). HTTP transport is used because servers.json
+# declares "type":"http". Idempotent: skip any server already in `hermes mcp list`.
+_MCP_SERVERS_JSON="${DEFAULTS_DIR}/mcp/servers.json"
+if [ -f "${_MCP_SERVERS_JSON}" ]; then
+    _mcp_rows="$(python3 -c "
+import json, sys
+try:
+    cfg = json.load(open('${_MCP_SERVERS_JSON}'))
+except Exception as e:
+    sys.stderr.write('mcp parse error: %s\n' % e); sys.exit(0)
+for name, s in (cfg.get('servers') or {}).items():
+    if not isinstance(s, dict) or s.get('enabled') is False:
+        continue
+    url = s.get('url') or ''
+    if not url:
+        continue
+    print('%s\t%s\t%s' % (name, s.get('type') or 'http', url))
+" 2>/dev/null)"
+    if [ -n "${_mcp_rows}" ]; then
+        _mcp_existing="$(HOME="${DATA_DIR}" hermes mcp list 2>/dev/null || true)"
+        printf '%s\n' "${_mcp_rows}" | while IFS="$(printf '\t')" read -r _name _type _url; do
+            [ -n "${_name}" ] && [ -n "${_url}" ] || continue
+            if printf '%s' "${_mcp_existing}" | grep -qw "${_name}"; then
+                echo "[hermes-init] MCP server '${_name}' already configured — skipping"
+                continue
+            fi
+            # HTTP-transport flag names vary across Hermes releases; try the known
+            # forms in order. Non-fatal on failure (retries next boot).
+            if HOME="${DATA_DIR}" hermes mcp add "${_name}" --transport http --url "${_url}" >/dev/null 2>&1 \
+               || HOME="${DATA_DIR}" hermes mcp add "${_name}" --type http --url "${_url}" >/dev/null 2>&1 \
+               || HOME="${DATA_DIR}" hermes mcp add "${_name}" --url "${_url}" >/dev/null 2>&1; then
+                echo "[hermes-init] Registered MCP server '${_name}' (${_type}) → ${_url}"
+            else
+                echo "[hermes-init] WARN: could not add MCP server '${_name}' (will retry on next boot)"
+            fi
+        done
+    else
+        echo "[hermes-init] No enabled MCP servers in ${_MCP_SERVERS_JSON} — skipping"
+    fi
+else
+    echo "[hermes-init] No synced mcp/servers.json — run scripts/sync-llm-settings.sh (skipping)"
 fi
 
 echo "[hermes-init] Config init complete"
