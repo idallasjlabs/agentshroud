@@ -12,6 +12,7 @@
 #   S4. apply-patches.js primary file is the one COPY'd by Dockerfile
 #   S5. docker-compose.yml does NOT bind to 0.0.0.0 on sensitive ports
 #   S6. setup-secrets.sh routes display output to /dev/tty (garbled secret fix)
+#   S8. no raw ssh/ping/*.ts.net/agentshroud-bot@ in baked bot config (2026-07-17 fix)
 #
 # Run: bash tests/startup_smoke/test_bot_boot_static.sh
 # Exit 0 = pass. Exit 1 = fail.
@@ -87,6 +88,37 @@ check "S6: setup-secrets.sh: read_secret_masked routes display to /dev/tty" \
 check "S7: apply-patches.js: stale channels.slack block removed when no tokens" \
     "$(grep -q 'delete config.channels.slack' "$apply_js" && echo true || echo false)" \
     "Stale Slack block not removed — causes invalid_auth crash loop on restart"
+
+# S8: no baked bot config (cron prompts, workspace docs) tells the model to use
+# raw ssh/ping/Tailscale hostnames to reach lab hosts. Bots run in a sandboxed
+# container with NO LAN route and NO Tailscale daemon — the ONLY way to reach a
+# lab host is docker/scripts/agentshroud-ssh-exec.sh -> gateway /ssh/exec. Each
+# prior fix (PRs #313/#314/#315) patched only the specific file it touched and
+# left sibling copies (docker/bots/openclaw/config/cron/jobs.json) or untouched
+# docs (workspace/SOUL.md) still instructing raw ssh — this is the repo-wide
+# guard so that class of regression can't recur silently again.
+# Three precise, non-overlapping signals (no exclusion filter — a prior version
+# tried excluding by surrounding phrase and accidentally whitelisted the actual
+# bug text, which happened to share innocuous wording with the fix's warning
+# copy). Each signal below has no legitimate occurrence in bot-facing content:
+#   (a) `ssh <host>` as a command (ssh immediately followed by the hostname —
+#       matches command-style instructions like `ssh marvin asb build`, but not
+#       prose like "SSH to marvin" or "SSH access to lab hosts")
+#   (b) `agentshroud-bot@` — a raw ssh user@host construction; the wrapper never
+#       needs to spell out the user, so this never appears legitimately
+#   (c) a REAL Tailscale FQDN (`tail<hex>.ts.net`) — distinct from the generic
+#       `*.ts.net` wildcard used in warning text ("NEVER use ... *.ts.net")
+s8_hit=""
+for dir in "$REPO/docker/config/openclaw" "$REPO/docker/bots/openclaw/config" "$REPO/docker/config/hermes" "$REPO/docker/bots/hermes/config"; do
+    [[ -d "$dir" ]] || continue
+    match="$(grep -rnE '\bssh (marvin|raspberrypi|trillian|pi)\b|agentshroud-bot@|\btail[0-9a-f]+\.ts\.net\b' "$dir" 2>/dev/null || true)"
+    if [[ -n "$match" ]]; then
+        s8_hit="${s8_hit}${match}"$'\n'
+    fi
+done
+check "S8: no raw ssh/ping/Tailscale-hostname instructions in baked bot config" \
+    "$([[ -z "$s8_hit" ]] && echo true || echo false)" \
+    "Found: ${s8_hit}"
 
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""
