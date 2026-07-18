@@ -78,7 +78,15 @@ if [[ "$DRY_RUN" != "1" && "${USER:-}" != "agentshroud-bot" ]]; then
 fi
 
 command -v git >/dev/null || die "git not found"
-command -v docker >/dev/null || die "docker not found"
+# docker is only actually invoked by the real deploy path (asb rebuild); a
+# --dry-run preview never calls it, so don't require it here — GitHub-hosted
+# macOS CI runners have no Docker installed and this check otherwise aborts
+# every --dry-run test before it can print anything (observed: all 4
+# TestDryRun cases failing with returncode 1 / "docker not found" on
+# macos-latest CI, 2026-07-18).
+if [[ "$DRY_RUN" != "1" ]]; then
+    command -v docker >/dev/null || die "docker not found"
+fi
 
 UTC="$(date -u +%Y%m%dT%H%M%SZ)"
 TAG="pre-deploy-${UTC}"

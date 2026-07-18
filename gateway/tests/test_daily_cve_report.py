@@ -1052,6 +1052,21 @@ class TestGhsaIngestScheduler:
 
         import gateway.security.daily_cve_report as _mod
 
+        # Freeze the module's clock to a single fixed mid-day instant so the whole
+        # test computes from ONE deterministic "now" — a real wall-clock now()
+        # made this test flaky at UTC hour 0: `(0 - 1) % 24` wraps to 23, which
+        # replace(hour=23) on TODAY's date lands ~22h in the FUTURE, not the past,
+        # flipping the scheduler onto its "sleep and wait" branch instead of
+        # triggering immediately (see the sibling fix a few tests down for the
+        # mirror-image hour-23 case).
+        _FROZEN = datetime(2026, 7, 14, 12, 0, 0, tzinfo=timezone.utc)
+
+        class _FrozenDateTime(datetime):
+            @classmethod
+            def now(cls, tz=None):
+                return _FROZEN if tz is None else _FROZEN.astimezone(tz)
+
+        monkeypatch.setattr(_mod, "datetime", _FrozenDateTime)
         # Isolate dedup state and disk paths for this test.
         monkeypatch.setattr(_mod, "_ghsa_ingest_dates", set())
         sentinel = tmp_path / "last_ghsa.txt"
@@ -1075,7 +1090,7 @@ class TestGhsaIngestScheduler:
         monkeypatch.setattr(_mod.asyncio, "sleep", _sleep)
 
         # ingest_hour in the past → iteration 1 triggers immediately (no sleep).
-        past_hour = (datetime.now(timezone.utc).hour - 1) % 24
+        past_hour = (_FROZEN.hour - 1) % 24
         await _mod.ghsa_ingest_scheduler(
             bot_token="tok",
             owner_chat_id="12345",
@@ -1088,7 +1103,7 @@ class TestGhsaIngestScheduler:
 
         assert ran["count"] == len(list_cve_agents())
         assert sentinel.exists()
-        assert datetime.now(timezone.utc).date().isoformat() in _mod._ghsa_ingest_dates
+        assert _FROZEN.date().isoformat() in _mod._ghsa_ingest_dates
         # Iteration 2 slept (waiting for tomorrow) then got cancelled.
         assert calls["sleep"] == 1
 
@@ -1138,6 +1153,17 @@ class TestGhsaIngestScheduler:
 
         import gateway.security.daily_cve_report as _mod
 
+        # Freeze the clock — see test_runs_ingest_records_then_skips_next_iteration
+        # for why a live datetime.now() makes the past_hour computation flaky at
+        # UTC hour 0.
+        _FROZEN = datetime(2026, 7, 14, 12, 0, 0, tzinfo=timezone.utc)
+
+        class _FrozenDateTime(datetime):
+            @classmethod
+            def now(cls, tz=None):
+                return _FROZEN if tz is None else _FROZEN.astimezone(tz)
+
+        monkeypatch.setattr(_mod, "datetime", _FrozenDateTime)
         monkeypatch.setattr(_mod, "_ghsa_ingest_dates", set())
         monkeypatch.setattr(_mod, "_LAST_GHSA_INGEST_PATH", tmp_path / "last_ghsa.txt")
 
@@ -1155,7 +1181,7 @@ class TestGhsaIngestScheduler:
 
         monkeypatch.setattr(_mod.asyncio, "sleep", _sleep)
 
-        past_hour = (datetime.now(timezone.utc).hour - 1) % 24
+        past_hour = (_FROZEN.hour - 1) % 24
         # No exception escapes: the loop runs the ingest (errors isolated), records
         # the date, then sleeps until tomorrow — the sleep is cancelled to exit.
         await _mod.ghsa_ingest_scheduler(
@@ -1164,7 +1190,7 @@ class TestGhsaIngestScheduler:
             ingest_hour=past_hour,
         )
         # Ingest completed (date recorded); the sleep-to-tomorrow was reached.
-        assert datetime.now(timezone.utc).date().isoformat() in _mod._ghsa_ingest_dates
+        assert _FROZEN.date().isoformat() in _mod._ghsa_ingest_dates
         assert sleeps["n"] == 1
 
     def test_already_ingested_helper_swallows_read_error(self, tmp_path, monkeypatch):
@@ -1239,6 +1265,17 @@ class TestGhsaIngestScheduler:
 
         import gateway.security.daily_cve_report as _mod
 
+        # Freeze the clock — see test_runs_ingest_records_then_skips_next_iteration
+        # for why a live datetime.now() makes the past_hour computation flaky at
+        # UTC hour 0.
+        _FROZEN = datetime(2026, 7, 14, 12, 0, 0, tzinfo=timezone.utc)
+
+        class _FrozenDateTime(datetime):
+            @classmethod
+            def now(cls, tz=None):
+                return _FROZEN if tz is None else _FROZEN.astimezone(tz)
+
+        monkeypatch.setattr(_mod, "datetime", _FrozenDateTime)
         monkeypatch.setattr(_mod, "_ghsa_ingest_dates", set())
         # Point the sentinel at an un-writable location (parent is a file).
         broken_parent = tmp_path / "afile"
@@ -1255,11 +1292,11 @@ class TestGhsaIngestScheduler:
 
         monkeypatch.setattr(_mod.asyncio, "sleep", _sleep)
 
-        past_hour = (datetime.now(timezone.utc).hour - 1) % 24
+        past_hour = (_FROZEN.hour - 1) % 24
         await _mod.ghsa_ingest_scheduler(
             bot_token="tok",
             owner_chat_id="12345",
             ingest_hour=past_hour,
         )
         # Disk write failed but the in-memory dedup guard was still recorded.
-        assert datetime.now(timezone.utc).date().isoformat() in _mod._ghsa_ingest_dates
+        assert _FROZEN.date().isoformat() in _mod._ghsa_ingest_dates
