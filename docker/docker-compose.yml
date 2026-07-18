@@ -413,6 +413,13 @@ services:
       # /telegram-api/bot{token}/{method} paths. With this disabled, PTB uses a plain
       # HTTPXRequest that honours base_url → http://gateway:8080/telegram-api/bot.
       HERMES_TELEGRAM_DISABLE_FALLBACK_IPS: "1"
+      # 2026-07-17: default 10s httpx connect_timeout was too tight for boot-time
+      # contention (skill sync + MCP retry ladder + DoH discovery all competing
+      # on a cpus:1.5-capped container) — connect attempts were measured failing
+      # at exactly 10.0s, restarting the whole gateway before the adapter's own
+      # 8-attempt retry ladder got a real chance. Widen both budgets.
+      HERMES_TELEGRAM_HTTP_CONNECT_TIMEOUT: "30"
+      HERMES_TELEGRAM_INIT_TIMEOUT: "30"
       HERMES_DASHBOARD: "1"
       # v0.17.0: HERMES_DASHBOARD_INSECURE removed. Loopback bind skips auth gate.
       # Host publish (127.0.0.1:9119:9119) is still reachable via `docker exec` or
