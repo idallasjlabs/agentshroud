@@ -108,7 +108,7 @@ if docker ps --format '{{.Names}}' 2>/dev/null | grep -q 'agentshroud-hermes'; t
     hermes_dash_ok=false
     deadline=$(( $(date +%s) + WAIT_SECS ))
     while [[ $(date +%s) -lt $deadline ]]; do
-        if docker exec agentshroud-hermes curl -sf --max-time 5 "http://127.0.0.1:9119/" > /dev/null 2>&1; then
+        if docker exec agentshroud-hermes-v2 curl -sf --max-time 5 "http://127.0.0.1:9119/" > /dev/null 2>&1; then
             hermes_dash_ok=true
             break
         fi
@@ -125,11 +125,11 @@ if docker ps --format '{{.Names}}' 2>/dev/null | grep -q 'agentshroud-hermes'; t
     check "Hermes API :8642 reachable" \
         "$([[ "$hermes_api_ok" == "true" ]] && echo true || echo false)"
 
-    hermes_logs=$(docker logs agentshroud-hermes 2>&1 | tail -50 || echo "")
+    hermes_logs=$(docker logs agentshroud-hermes-v2 2>&1 | tail -50 || echo "")
     check "Hermes logs: no crash on startup" \
         "$([[ "$hermes_logs" != *"Traceback (most recent call last)"* ]] && echo true || echo false)"
 else
-    echo "  [post-deploy-check] SKIP: agentshroud-hermes not running (use 'asb up full' for full stack)"
+    echo "  [post-deploy-check] SKIP: agentshroud-hermes-v2 not running (use 'asb up full' for full stack)"
 fi
 
 # ── P4: No subnet overlap in Docker networks ─────────────────────────────
@@ -187,7 +187,7 @@ if [[ "$fail" -gt 0 ]]; then
     echo "  Investigate with:" >&2
     echo "    docker logs agentshroud-gateway 2>&1 | tail -50" >&2
     echo "    docker logs agentshroud-openclaw 2>&1 | tail -50" >&2
-    echo "    docker logs agentshroud-hermes 2>&1 | tail -50" >&2
+    echo "    docker logs agentshroud-hermes-v2 2>&1 | tail -50" >&2
     echo "    asb status" >&2
     echo ""
     exit 1

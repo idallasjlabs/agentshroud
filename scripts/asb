@@ -265,6 +265,24 @@ _reset_device_store() {
   docker restart "$bot_container" >/dev/null
 }
 
+# ── Hermes standalone launch (docker run, not compose) ──────────────────────
+# 2026-07-18: a restart storm reproduces only when Hermes is started via
+# `docker-compose up -d`; the identical container launched with `docker run`
+# stays stable. Hermes now deploys through docker/bots/hermes/run-standalone.sh
+# instead of compose. Gateway/openclaw/voice-gateway are unaffected — they
+# still deploy via $COMPOSE exactly as before. See project memory
+# project_hermes_do_request_ptb226_fix.md for the full investigation.
+_hermes_up() {
+  AGENTSHROUD_PROJECT="$PROJECT" \
+  AGENTSHROUD_VERSION="${AGENTSHROUD_VERSION:-latest}" \
+  AGENTSHROUD_SECRETS_DIR="$HOME/.agentshroud/.asb-secrets" \
+    bash "$REPO_DIR/docker/bots/hermes/run-standalone.sh" up
+}
+
+_hermes_down() {
+  bash "$REPO_DIR/docker/bots/hermes/run-standalone.sh" down 2>/dev/null || true
+}
+
 # ── Docker disk reclamation ──────────────────────────────────────────────────
 # Removes stopped containers, dangling images, unused networks, and BuildKit
 # cache to reclaim disk on the Colima VM before builds. Safe to run without
@@ -312,37 +330,47 @@ case "${1:-}" in
     ;;
   up)
     _PROFILE_FLAG=""
-    [[ "${2:-}" == "full" ]] && _PROFILE_FLAG="--profile full"
-    [[ "${2:-}" == "hermes" ]] && _PROFILE_FLAG="--profile hermes"
+    _WANT_HERMES=0
+    [[ "${2:-}" == "full" ]] && { _PROFILE_FLAG="--profile voice"; _WANT_HERMES=1; }
+    [[ "${2:-}" == "hermes" ]] && _WANT_HERMES=1
     setup_ephemeral_secrets
     $COMPOSE $_PROFILE_FLAG up -d
+    [[ "$_WANT_HERMES" == "1" ]] && _hermes_up
     bash "$REPO_DIR/scripts/post-deploy-check.sh" || true
     ;;
   down)
-    # --profile full ensures Hermes + HCI are stopped if running
+    # --profile full stops voice-gateway if running (Hermes is not compose-managed)
     $COMPOSE --profile full down
+    _hermes_down
     rm -rf "$HOME/.agentshroud/.asb-secrets"
     ;;
   rebuild)
     _PROFILE_FLAG=""
-    [[ "${2:-}" == "full" ]] && _PROFILE_FLAG="--profile full"
-    [[ "${2:-}" == "hermes" ]] && _PROFILE_FLAG="--profile hermes"
+    _WANT_HERMES=0
+    [[ "${2:-}" == "full" ]] && { _PROFILE_FLAG="--profile voice"; _WANT_HERMES=1; }
+    [[ "${2:-}" == "hermes" ]] && _WANT_HERMES=1
+    _hermes_down
     $COMPOSE --profile full down 2>/dev/null || true
     _prune_docker
     setup_ephemeral_secrets
-    $COMPOSE build --no-cache && $COMPOSE $_PROFILE_FLAG up -d
+    $COMPOSE build --no-cache
+    [[ "$_WANT_HERMES" == "1" ]] && $COMPOSE build hermes --no-cache
+    $COMPOSE $_PROFILE_FLAG up -d
+    [[ "$_WANT_HERMES" == "1" ]] && _hermes_up
     _reset_device_store
     bash "$REPO_DIR/scripts/post-deploy-check.sh" || true
     ;;
   clean-rebuild)
     _PROFILE_FLAG=""
-    [[ "${2:-}" == "full" ]] && _PROFILE_FLAG="--profile full"
-    [[ "${2:-}" == "hermes" ]] && _PROFILE_FLAG="--profile hermes"
+    _WANT_HERMES=0
+    [[ "${2:-}" == "full" ]] && { _PROFILE_FLAG="--profile voice"; _WANT_HERMES=1; }
+    [[ "${2:-}" == "hermes" ]] && _WANT_HERMES=1
     echo "This will remove containers, prune stale volumes, and rebuild from scratch."
     echo "Persistent data (workspace, config, SSH keys, browsers) is PRESERVED."
     echo "hermes-config volume is NEVER deleted (preserves Hermes state across rebuilds)."
     read -r -p "Continue? [y/N] " confirm
     [[ "$confirm" =~ ^[Yy]$ ]] || { echo "Aborted."; exit 0; }
+    _hermes_down
     $COMPOSE --profile full down
     for vol in gateway-data clamav-db; do
       docker volume rm "${PROJECT}_${vol}" 2>/dev/null && echo "  Removed ${PROJECT}_${vol}" || true
@@ -351,14 +379,25 @@ case "${1:-}" in
     _prune_docker
     setup_ephemeral_secrets
     $COMPOSE build --no-cache
+    [[ "$_WANT_HERMES" == "1" ]] && $COMPOSE build hermes --no-cache
     $COMPOSE $_PROFILE_FLAG up -d
+    [[ "$_WANT_HERMES" == "1" ]] && _hermes_up
     _reset_device_store
     echo "Clean rebuild complete."
     ;;
   prune)   _prune_docker ;;
   pull)    cd "$REPO_DIR" && git pull --rebase ;;
-  status)  $COMPOSE ps ;;
-  logs)    $COMPOSE logs -f --tail=100 ${2:-} ;;
+  status)
+    $COMPOSE ps
+    bash "$REPO_DIR/docker/bots/hermes/run-standalone.sh" status 2>/dev/null || true
+    ;;
+  logs)
+    if [[ "${2:-}" == "hermes" ]]; then
+      bash "$REPO_DIR/docker/bots/hermes/run-standalone.sh" logs
+    else
+      $COMPOSE logs -f --tail=100 ${2:-}
+    fi
+    ;;
   test)    $COMPOSE exec gateway python -m pytest gateway/tests/ -q ;;
   canary)
     SERVICE=${2:-gateway}
