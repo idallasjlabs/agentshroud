@@ -19,6 +19,30 @@ DATA_DIR="${INIT_DATA_DIR:-/opt/data}"
 
 echo "[hermes-init] Checking config..."
 
+# ── First-boot gateway auto-start ───────────────────────────────────────────
+# hermes_cli.container_boot (vendor, /etc/cont-init.d/02-reconcile-profiles)
+# only auto-starts a profile's s6 service when its LAST RECORDED state was
+# `running` — see that script's own header comment. A genuinely first-ever
+# boot has no recorded state, so the vendor reconciler REGISTERS the
+# `gateway-default` s6 service slot (creates /run/service/gateway-default/)
+# but leaves its `down` sentinel file in place, and never calls `s6-svc -u`.
+# The container then reports Docker-healthy (the dashboard/API-server s6
+# services DO start) while the actual Telegram/Discord gateway process never
+# runs at all — confirmed live on a first-time install (marvin, 2026-07-19):
+# 43+ hours "Up", RestartCount=0, zero bytes ever written to
+# /opt/data/logs/gateways/default/current. Silent, and easy to miss because
+# nothing crashes or restarts — `docker ps` just shows "unhealthy" forever.
+# Idempotent: on every boot AFTER the first, the vendor reconciler has
+# already removed `down` (prior_state=running), so this is a no-op.
+_GW_DOWN_FILE="/run/service/gateway-default/down"
+if [ -f "${_GW_DOWN_FILE}" ]; then
+    echo "[hermes-init] gateway-default registered but never started (first boot) — starting it"
+    rm -f "${_GW_DOWN_FILE}"
+    s6-svc -u /run/service/gateway-default 2>/dev/null \
+        && echo "[hermes-init] ✓ gateway-default started" \
+        || echo "[hermes-init] WARN: could not start gateway-default (will retry next boot)"
+fi
+
 # config.yaml — Hermes primary config file
 # First-boot: seed from template if absent.
 # Upgrade path: if present but missing telegram.extra.base_url (added in v1.1.0
