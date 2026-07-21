@@ -228,7 +228,11 @@ YAML
   chmod 644 "$tmpdir"/*.txt 2>/dev/null || true
   # Flush filesystem writes so Colima's virtiofs sees them before Docker tries to
   # bind-mount. Without this, newly created files may not be visible to the daemon.
-  sync
+  # macOS's sync(2) is global — it flushes every mounted filesystem, not just this
+  # tmpdir — so an unrelated unresponsive volume (Time Machine, a network share, a
+  # disconnected external drive) can hang it indefinitely with no error, blocking
+  # the whole deployment. Bound it so a bad volume degrades instead of hanging.
+  timeout 10 sync || echo "WARN: sync timed out after 10s (an unrelated mounted volume may be unresponsive) — continuing anyway"
 
   COMPOSE="$COMPOSE -f $override"
 }
