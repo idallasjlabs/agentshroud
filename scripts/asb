@@ -226,13 +226,28 @@ YAML
   # so the daemon can bind-mount the files.
   chmod 755 "$tmpdir"
   chmod 644 "$tmpdir"/*.txt 2>/dev/null || true
-  # Flush filesystem writes so Colima's virtiofs sees them before Docker tries to
-  # bind-mount. Without this, newly created files may not be visible to the daemon.
-  # macOS's sync(2) is global — it flushes every mounted filesystem, not just this
-  # tmpdir — so an unrelated unresponsive volume (Time Machine, a network share, a
-  # disconnected external drive) can hang it indefinitely with no error, blocking
-  # the whole deployment. Bound it so a bad volume degrades instead of hanging.
-  timeout 10 sync || echo "WARN: sync timed out after 10s (an unrelated mounted volume may be unresponsive) — continuing anyway"
+  # Flush these specific files so Colima's virtiofs sees them before Docker tries
+  # to bind-mount. A bare `sync` was used here previously, but macOS's sync(2) is
+  # global — it flushes every mounted filesystem, not just this tmpdir — so an
+  # unrelated unresponsive volume (Time Machine over SMB, a network share, a
+  # disconnected external drive) hangs it indefinitely in uninterruptible I/O wait
+  # (kernel state "U"), which not even SIGKILL clears, blocking the whole
+  # deployment with zero error output. Reproduced live on a real host: two SMB
+  # mounts (Time Machine + a Carbon Copy Cloner destination) left `sync` — and a
+  # `timeout`-wrapped `sync`, since timeout still waits for the child to actually
+  # exit — hung forever. fsync each secret file individually instead: it only
+  # touches this tmpdir's own (local) filesystem, never the unrelated mounts.
+  python3 -c "
+import os, sys
+for name in os.listdir('$tmpdir'):
+    path = os.path.join('$tmpdir', name)
+    if os.path.isfile(path):
+        fd = os.open(path, os.O_RDONLY)
+        try:
+            os.fsync(fd)
+        finally:
+            os.close(fd)
+" || echo "WARN: could not fsync ephemeral secrets — continuing anyway"
 
   COMPOSE="$COMPOSE -f $override"
 }
