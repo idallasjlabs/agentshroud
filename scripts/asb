@@ -342,6 +342,19 @@ if [ ! -f "$_CONFIG" ] && [ -f "$_CONFIG_EXAMPLE" ]; then
   cp "$_CONFIG_EXAMPLE" "$_CONFIG"
 fi
 
+# ── hermes-config/cron pre-flight ────────────────────────────────────────────
+# Gateway bind-mounts the hermes-config volume's `cron` SUBPATH read-only
+# (docker-compose.yml, CronStateMonitor / SCRUM-61) so it never sees the rest
+# of hermes-config (auth.json, mcp.json credentials). Docker's subpath mount
+# requires the subdirectory to already exist — it will NOT auto-create it.
+# On a truly fresh install (hermes-config volume never touched by Hermes yet),
+# gateway fails to start with "cannot access path .../cron: no such file or
+# directory" — and gateway must be healthy before Hermes ever runs, so Hermes
+# never gets the chance to create it either. Break the deadlock by ensuring
+# the directory exists before the stack ever comes up.
+docker volume create hermes-config >/dev/null 2>&1 || true
+docker run --rm -v hermes-config:/data alpine mkdir -p /data/cron >/dev/null 2>&1 || true
+
 case "${1:-}" in
   build)
     _prune_docker
