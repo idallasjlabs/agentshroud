@@ -302,8 +302,13 @@ Optional: OpenAI API key, Google API key, Slack tokens.
 scripts/asb up
 
 # Full stack — adds Hermes agent and HCI control interface
-docker-compose -f docker/docker-compose.yml -p agentshroud --profile full up -d
+scripts/asb up full
 ```
+
+`scripts/asb up full` is the supported way to start Hermes — it deploys Hermes via
+`docker/bots/hermes/run-standalone.sh` rather than raw `docker compose`, and always
+waits for the gateway to be healthy first. Do not start Hermes with a raw
+`docker-compose --profile full up -d` — it skips that sequencing.
 
 Secrets are extracted into a temp directory for the duration of `docker compose up` and cleaned up automatically on exit — nothing persists on disk.
 
