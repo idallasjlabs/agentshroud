@@ -36,7 +36,6 @@ VERSION="${AGENTSHROUD_VERSION:-latest}"
 IMAGE="agentshroud/hermes:${VERSION}"
 
 CONTAINER="agentshroud-hermes-v2"
-GATEWAY_CONTAINER="agentshroud-gateway"
 NETWORK="${PROJECT}_agentshroud-isolated"
 GATEWAY_DATA_VOL="${PROJECT}_gateway-data"
 HERMES_CONFIG_VOL="hermes-config"
@@ -83,17 +82,30 @@ _secret_mount_args() {
 
 _wait_for_gateway_healthy() {
   local timeout="${1:-180}" waited=0 status
-  echo "  [hermes-standalone] waiting for ${GATEWAY_CONTAINER} to be healthy (timeout ${timeout}s)..."
+  # Resolve by compose labels, not a hardcoded name: host-specific overrides
+  # (e.g. docker-compose.agentshroud-bot.marvin.yml) set a custom
+  # container_name (e.g. agentshroud-marvin-gateway), but docker-compose
+  # always tags containers with these labels regardless of that override, so
+  # this works for any host without needing to know its override's naming.
+  local gateway_container
+  gateway_container="$(docker ps -a \
+    --filter "label=com.docker.compose.project=${PROJECT}" \
+    --filter "label=com.docker.compose.service=gateway" \
+    --format '{{.Names}}' | head -1)"
+  if [ -z "$gateway_container" ]; then
+    gateway_container="agentshroud-gateway"  # fallback: default (non-overridden) name
+  fi
+  echo "  [hermes-standalone] waiting for ${gateway_container} to be healthy (timeout ${timeout}s)..."
   while [ "$waited" -lt "$timeout" ]; do
-    status="$(docker inspect --format '{{.State.Health.Status}}' "$GATEWAY_CONTAINER" 2>/dev/null || echo "missing")"
+    status="$(docker inspect --format '{{.State.Health.Status}}' "$gateway_container" 2>/dev/null || echo "missing")"
     if [ "$status" = "healthy" ]; then
-      echo "  [hermes-standalone] ${GATEWAY_CONTAINER} is healthy."
+      echo "  [hermes-standalone] ${gateway_container} is healthy."
       return 0
     fi
     sleep 2
     waited=$((waited + 2))
   done
-  echo "  [hermes-standalone] ERROR: ${GATEWAY_CONTAINER} did not become healthy within ${timeout}s (last status: ${status})" >&2
+  echo "  [hermes-standalone] ERROR: ${gateway_container} did not become healthy within ${timeout}s (last status: ${status})" >&2
   return 1
 }
 
