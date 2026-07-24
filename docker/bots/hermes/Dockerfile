@@ -97,6 +97,15 @@ COPY docker/bots/hermes/crashwatch.sh /usr/local/bin/agentshroud-crashwatch.sh
 COPY docker/bots/hermes/s6/heartbeat  /etc/s6-overlay/s6-rc.d/agentshroud-heartbeat
 COPY docker/bots/hermes/heartbeat.sh  /usr/local/bin/agentshroud-heartbeat.sh
 
+# Item 9 — Dashboard bridge: re-exposes Hermes's loopback-bound dashboard (127.0.0.1,
+# required by the vendor's v0.15.1+ auth gate — see the HERMES_DASHBOARD_HOST comment
+# in docker-compose.yml) on a network-reachable port so gateway's TCP forwarder
+# (gateway/ingest_api/lifespan.py) can actually reach it. Without this, every dashboard
+# request 502s — see gateway/tests/test_security_regressions_v1_2.py
+# TestHermesDashboardBridgeReachability.
+COPY docker/bots/hermes/s6/dashboard-bridge  /etc/s6-overlay/s6-rc.d/agentshroud-dashboard-bridge
+COPY docker/bots/hermes/dashboard_bridge.py  /usr/local/bin/agentshroud-dashboard-bridge.py
+
 # Bake AgentShroud-managed config defaults into the image.
 # init-config.sh merges these into /opt/data on first boot (idempotent).
 COPY docker/config/hermes/ /app/config-defaults/hermes/
@@ -130,18 +139,23 @@ RUN chmod +x /usr/local/bin/start-hermes.sh /usr/local/bin/init-hermes-config.sh
              /usr/local/bin/agentshroud-crashwatch.sh /usr/local/bin/agentshroud-heartbeat.sh \
              /usr/local/bin/agentshroud-email-send.sh \
              /usr/local/bin/agentshroud-ssh-exec.sh \
+             /usr/local/bin/agentshroud-dashboard-bridge.py \
              /etc/s6-overlay/s6-rc.d/agentshroud-crashwatch/run \
              /etc/s6-overlay/s6-rc.d/agentshroud-heartbeat/run \
+             /etc/s6-overlay/s6-rc.d/agentshroud-dashboard-bridge/run \
  && mkdir -p /app/config-defaults /usr/local/lib/agentshroud \
  && chmod 755 /usr/local/lib/agentshroud/render_md_email.py \
  && chmod 755 /usr/local/lib/agentshroud/resolve_model.py \
  && chown -R 10000:10000 /app/config-defaults \
  && touch /etc/s6-overlay/s6-rc.d/user/contents.d/agentshroud-crashwatch \
- && touch /etc/s6-overlay/s6-rc.d/user/contents.d/agentshroud-heartbeat
+ && touch /etc/s6-overlay/s6-rc.d/user/contents.d/agentshroud-heartbeat \
+ && touch /etc/s6-overlay/s6-rc.d/user/contents.d/agentshroud-dashboard-bridge
 
-# Port 9119: Hermes dashboard (served by s6 dashboard service when HERMES_DASHBOARD=1)
+# Port 9119: Hermes dashboard (served by s6 dashboard service when HERMES_DASHBOARD=1,
+#            loopback-only — see HERMES_DASHBOARD_HOST in docker-compose.yml)
+# Port 9120: Dashboard bridge — re-exposes 9119 for cross-container reachability
 # Port 8642: OpenAI-compatible API server (enabled, requires API_SERVER_KEY)
-EXPOSE 8642 9119
+EXPOSE 8642 9119 9120
 
 # Healthcheck: probe the OpenAI-compatible API /health endpoint on 8642.
 # v0.15.1 moved dashboard auth behind an auth gate; 9119 is no longer reliable.
