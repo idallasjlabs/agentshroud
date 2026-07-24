@@ -330,6 +330,103 @@ class TestHermesDashboardForwarderBinding:
 
 
 # ---------------------------------------------------------------------------
+# 2026-07 regression: Hermes dashboard 502 — gateway must use the in-container
+# bridge, never point straight at Hermes's own loopback-bound dashboard port.
+# ---------------------------------------------------------------------------
+
+
+class TestHermesDashboardBridgeReachability:
+    """Hermes's dashboard binds 127.0.0.1 inside its own container (vendor
+    hermes-agent v0.15.1+ requires a DashboardAuthProvider for any non-loopback
+    bind; loopback skips that gate, per docker-compose.yml's own comment).
+    Gateway's forwarder (BT-M1 above) reaches Hermes over the Docker network by
+    container hostname — which can never reach a loopback-only listener in a
+    *different* container, no matter what network they share. This silently
+    turned every Hermes dashboard request into a 502 once the vendor image
+    added the auth gate.
+
+    Fix: docker/bots/hermes/dashboard_bridge.py, an in-container TCP relay
+    (same network namespace as Hermes's own dashboard, so its own 127.0.0.1
+    really is Hermes's loopback) that re-exposes the dashboard on a second,
+    network-reachable port. Gateway must point at THAT bridge port, never
+    directly at Hermes's own HERMES_DASHBOARD_PORT, or this exact bug
+    reintroduces itself silently.
+    """
+
+    def test_hermes_dashboard_stays_loopback_and_gateway_uses_the_bridge_port(self):
+        import yaml
+
+        compose_path = Path(__file__).parent.parent.parent / "docker" / "docker-compose.yml"
+        if not compose_path.exists():
+            pytest.skip("compose file not available in this environment")
+
+        compose = yaml.safe_load(compose_path.read_text())
+        hermes_env = compose["services"]["hermes"].get("environment", {})
+        gateway_env_raw = compose["services"]["gateway"].get("environment", [])
+
+        gateway_env = {}
+        for item in gateway_env_raw:
+            if isinstance(item, str) and "=" in item:
+                key, _, value = item.partition("=")
+                gateway_env[key] = value
+            elif isinstance(item, dict):
+                gateway_env.update(item)
+
+        hermes_dashboard_host = str(hermes_env.get("HERMES_DASHBOARD_HOST", ""))
+        hermes_dashboard_port = str(hermes_env.get("HERMES_DASHBOARD_PORT", "9119"))
+        gateway_upstream_port = str(gateway_env.get("HERMES_DASHBOARD_UPSTREAM_PORT", ""))
+
+        assert hermes_dashboard_host == "127.0.0.1", (
+            "Hermes dashboard must stay loopback-bound (the vendor's v0.15.1+ "
+            "auth-gate-free safe default) — do not flip to 0.0.0.0 without also "
+            "provisioning HERMES_DASHBOARD_BASIC_AUTH_USERNAME/_PASSWORD."
+        )
+        assert gateway_upstream_port, (
+            "gateway must set HERMES_DASHBOARD_UPSTREAM_PORT explicitly — leaving it "
+            "unset makes gateway fall back to Hermes's own loopback-bound dashboard "
+            "port, reintroducing the 2026-07 502 bug."
+        )
+        assert gateway_upstream_port != hermes_dashboard_port, (
+            f"gateway's HERMES_DASHBOARD_UPSTREAM_PORT ({gateway_upstream_port}) must NOT "
+            f"equal Hermes's own loopback-bound HERMES_DASHBOARD_PORT ({hermes_dashboard_port}) "
+            "— gateway can only reach Hermes's dashboard via the dashboard_bridge.py relay "
+            "on a separate, network-reachable port."
+        )
+
+        dockerfile_path = Path(__file__).parent.parent.parent / "docker" / "bots" / "hermes" / "Dockerfile"
+        dockerfile = dockerfile_path.read_text()
+        assert "dashboard-bridge" in dockerfile or "dashboard_bridge" in dockerfile, (
+            "Dockerfile must install the dashboard_bridge s6 service — without it, "
+            "gateway has no way to reach Hermes's loopback-bound dashboard."
+        )
+
+        bridge_path = Path(__file__).parent.parent.parent / "docker" / "bots" / "hermes" / "dashboard_bridge.py"
+        assert bridge_path.exists(), (
+            "docker/bots/hermes/dashboard_bridge.py must exist — it is the in-container "
+            "relay that makes the loopback-bound dashboard reachable from gateway."
+        )
+
+    def test_run_standalone_sets_matching_bridge_port(self):
+        """run-standalone.sh is the actual deploy path for Hermes (docker run, not
+        compose — see project_hermes_do_request_ptb226_fix.md). It must set
+        HERMES_DASHBOARD_BRIDGE_PORT so dashboard_bridge.py's default agrees with
+        whatever docker-compose.yml tells gateway to connect to.
+        """
+        script_path = Path(__file__).parent.parent.parent / "docker" / "bots" / "hermes" / "run-standalone.sh"
+        if not script_path.exists():
+            pytest.skip("run-standalone.sh not available in this environment")
+
+        script = script_path.read_text()
+        assert "HERMES_DASHBOARD_HOST=\"127.0.0.1\"" in script, (
+            "run-standalone.sh must keep Hermes's own dashboard loopback-bound"
+        )
+        assert "HERMES_DASHBOARD_BRIDGE_PORT" in script, (
+            "run-standalone.sh must set HERMES_DASHBOARD_BRIDGE_PORT explicitly so it "
+            "stays in sync with gateway's HERMES_DASHBOARD_UPSTREAM_PORT in docker-compose.yml"
+        )
+
+
+# ---------------------------------------------------------------------------
 # Egress allowlist completeness for Hermes
 # ---------------------------------------------------------------------------
 
