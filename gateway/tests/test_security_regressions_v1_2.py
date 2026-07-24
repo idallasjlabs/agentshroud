@@ -393,14 +393,22 @@ class TestHermesDashboardBridgeReachability:
             "on a separate, network-reachable port."
         )
 
-        dockerfile_path = Path(__file__).parent.parent.parent / "docker" / "bots" / "hermes" / "Dockerfile"
+        dockerfile_path = (
+            Path(__file__).parent.parent.parent / "docker" / "bots" / "hermes" / "Dockerfile"
+        )
         dockerfile = dockerfile_path.read_text()
         assert "dashboard-bridge" in dockerfile or "dashboard_bridge" in dockerfile, (
             "Dockerfile must install the dashboard_bridge s6 service — without it, "
             "gateway has no way to reach Hermes's loopback-bound dashboard."
         )
 
-        bridge_path = Path(__file__).parent.parent.parent / "docker" / "bots" / "hermes" / "dashboard_bridge.py"
+        bridge_path = (
+            Path(__file__).parent.parent.parent
+            / "docker"
+            / "bots"
+            / "hermes"
+            / "dashboard_bridge.py"
+        )
         assert bridge_path.exists(), (
             "docker/bots/hermes/dashboard_bridge.py must exist — it is the in-container "
             "relay that makes the loopback-bound dashboard reachable from gateway."
@@ -412,14 +420,16 @@ class TestHermesDashboardBridgeReachability:
         HERMES_DASHBOARD_BRIDGE_PORT so dashboard_bridge.py's default agrees with
         whatever docker-compose.yml tells gateway to connect to.
         """
-        script_path = Path(__file__).parent.parent.parent / "docker" / "bots" / "hermes" / "run-standalone.sh"
+        script_path = (
+            Path(__file__).parent.parent.parent / "docker" / "bots" / "hermes" / "run-standalone.sh"
+        )
         if not script_path.exists():
             pytest.skip("run-standalone.sh not available in this environment")
 
         script = script_path.read_text()
-        assert "HERMES_DASHBOARD_HOST=\"127.0.0.1\"" in script, (
-            "run-standalone.sh must keep Hermes's own dashboard loopback-bound"
-        )
+        assert (
+            'HERMES_DASHBOARD_HOST="127.0.0.1"' in script
+        ), "run-standalone.sh must keep Hermes's own dashboard loopback-bound"
         assert "HERMES_DASHBOARD_BRIDGE_PORT" in script, (
             "run-standalone.sh must set HERMES_DASHBOARD_BRIDGE_PORT explicitly so it "
             "stays in sync with gateway's HERMES_DASHBOARD_UPSTREAM_PORT in docker-compose.yml"
