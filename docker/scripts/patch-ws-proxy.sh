@@ -22,11 +22,23 @@ OPENCLAW_ROOT="$(npm root -g)/openclaw"
 WS_FILES="$(find "$OPENCLAW_ROOT" -path '*/ws/lib/websocket.js' -type f 2>/dev/null || true)"
 
 if [ -z "$WS_FILES" ]; then
-    echo "WARNING: no ws/lib/websocket.js found under $OPENCLAW_ROOT — skipping ws proxy patch"
-    exit 0
+    echo "ERROR: no ws/lib/websocket.js found under $OPENCLAW_ROOT — wss:// traffic would bypass the gateway proxy." >&2
+    echo "Vendor package layout may have changed; update patch-ws-proxy.sh." >&2
+    exit 1
 fi
 
-printf '%s\n' "$WS_FILES" | while IFS= read -r WS_FILE; do
+# Iterate via a `for` loop (not `printf | while read`) so per-file failures are
+# actually visible to `set -e`: a piped `while read` runs in a subshell under
+# POSIX sh (dash), so a variable set inside the loop to record a failure is lost
+# the instant the pipe closes — a failure on an earlier file could silently be
+# masked by a later file succeeding. IFS is switched to newline-only so paths
+# with spaces still split correctly on one file per line.
+_FAILED=0
+_OLD_IFS="$IFS"
+IFS='
+'
+for WS_FILE in $WS_FILES; do
+    IFS="$_OLD_IFS"
     node -e "
 const fs = require('fs');
 const wsFile = process.argv[1];
@@ -115,8 +127,9 @@ const NEW = \`function tlsConnect(options, callback) { // AGENTSHROUD_WS_PROXY_P
 }\`;
 
 if (!src.includes('function tlsConnect(options)')) {
-    console.log('WARNING: tlsConnect not found in ' + wsFile + ' — skipping (different ws version?)');
-    process.exit(0);
+    console.error('ERROR: tlsConnect not found in ' + wsFile + ' — wss:// traffic would bypass the gateway proxy.');
+    console.error('Vendor ws package version likely changed shape; update patch-ws-proxy.sh.');
+    process.exit(1);
 }
 
 src = src.replace(OLD, NEW);
@@ -145,7 +158,15 @@ if (!src.includes('AGENTSHROUD_WS_PROXY_PATCHED')) {
 
 fs.writeFileSync(wsFile, src);
 console.log('Patched: ' + wsFile);
-" "$WS_FILE"
+" "$WS_FILE" || _FAILED=1
+    IFS='
+'
 done
+IFS="$_OLD_IFS"
+
+if [ "$_FAILED" -eq 1 ]; then
+    echo "ERROR: ws proxy patch failed for one or more files (see above) — wss:// traffic would bypass the gateway proxy." >&2
+    exit 1
+fi
 
 echo "ws proxy patch complete."

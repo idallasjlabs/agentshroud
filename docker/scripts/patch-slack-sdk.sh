@@ -60,5 +60,11 @@ if [ -d "$_DIST_DIR" ]; then
 fi
 
 if [ "$_patched" -eq 0 ]; then
-    echo "patch-slack-sdk: pong noise patch not applicable in this OpenClaw version (already fixed upstream)"
+    # Intentionally non-fatal: a missed match here only means pong-timeout log
+    # noise stays at warn level instead of being demoted to debug — cosmetic,
+    # not a security/routing concern (contrast with the other three patch-*.sh
+    # scripts, which fail the build on a match miss because they gate egress
+    # routing). Message is grep-able so scripts/check-vendor-compat.sh can
+    # surface this as a non-fatal drift warning against a candidate version.
+    echo "patch-slack-sdk: WARNING pattern drift — pong-noise demotion no longer applies (cosmetic only, not failing build)"
 fi
