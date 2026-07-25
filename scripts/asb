@@ -22,6 +22,21 @@ SCRIPT_PATH="${BASH_SOURCE[0]}"
 [ -L "$SCRIPT_PATH" ] && SCRIPT_PATH="$(readlink "$SCRIPT_PATH")"
 REPO_DIR="$(cd "$(dirname "$SCRIPT_PATH")/.." && pwd)"
 
+# Pinned vendor versions (OPENCLAW_VERSION, HERMES_IMAGE, HERMES_VERSION) — single
+# source of truth shared with scripts/update-agentshroud.sh and CI. Exported into
+# the real shell environment (not just passed as --env-file) so docker-compose.yml's
+# ${OPENCLAW_VERSION}/${HERMES_IMAGE} build-arg interpolation sees them regardless
+# of which compose binary/version is in use or what directory this is invoked from.
+if [ -f "$REPO_DIR/docker/versions.env" ]; then
+  set -a
+  # shellcheck source=docker/versions.env
+  . "$REPO_DIR/docker/versions.env"
+  set +a
+else
+  echo "ERROR: $REPO_DIR/docker/versions.env not found — required for pinned vendor builds" >&2
+  exit 1
+fi
+
 # ── Container-runtime detection (SCRUM-92) ───────────────────────────────────
 # Resolve which compose command this host has (docker-compose / docker compose /
 # podman-compose / podman compose). On the deploy hosts the standalone

@@ -231,6 +231,9 @@ services:
       dockerfile: docker/bots/openclaw/Dockerfile
       args:
         AGENTSHROUD_VERSION: ${AGENTSHROUD_VERSION:-latest}
+        # Pinned vendor version — see docker/versions.env. No fallback default:
+        # an unset value must fail the build loudly, not silently install @latest.
+        OPENCLAW_VERSION: ${OPENCLAW_VERSION}
     # Host entries for personal lab — override via AGENTSHROUD_EXTRA_HOSTS env var or docker-compose.override.yml
     extra_hosts:
       - "host.docker.internal:host-gateway"
@@ -380,6 +383,11 @@ services:
     build:
       context: ..
       dockerfile: docker/bots/hermes/Dockerfile
+      args:
+        # Pinned vendor digest — see docker/versions.env. No fallback default:
+        # an unset value must fail the build loudly (empty FROM), not silently
+        # float to whatever :latest currently resolves to.
+        HERMES_IMAGE: ${HERMES_IMAGE}
     container_name: agentshroud-hermes-v2
     hostname: agentshroud-hermes-v2
     restart: unless-stopped

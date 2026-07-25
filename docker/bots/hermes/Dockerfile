@@ -14,12 +14,21 @@
 # (hermes user) via s6-setuidgid. We hook into s6 via /etc/cont-init.d/ for secrets injection
 # and first-boot config seeding. Do NOT override ENTRYPOINT or set USER hermes here.
 
-# SCRUM-101: pin to the current-latest digest (refreshed 2026-07-14) for supply-chain
-# integrity. This is an upstream vendored base we do not control — its bulk CVEs live in
-# vendored layers `apt upgrade` cannot patch (documented residual in cve-mitigation-matrix.md).
-# Refresh with: docker pull nousresearch/hermes-agent:latest && docker inspect \
-#   --format='{{index .RepoDigests 0}}' nousresearch/hermes-agent:latest
-FROM nousresearch/hermes-agent:latest@sha256:e2adeb75300977c509fa363c64a2b0bddac7b6e02888403cd79dd314d8467061
+# SCRUM-101: pin to a digest for supply-chain integrity. This is an upstream vendored
+# base we do not control — its bulk CVEs live in vendored layers `apt upgrade` cannot
+# patch (documented residual in cve-mitigation-matrix.md).
+#
+# Pin lives in docker/versions.env (HERMES_IMAGE) — the single source of truth shared
+# with scripts/update-agentshroud.sh and CI's CVE tracking. To bump: run
+# `scripts/update-agentshroud.sh --bot hermes --hermes-latest` (runs a compatibility
+# check against the candidate before it ever touches this file), or manually refresh
+# the digest with:
+#   docker pull nousresearch/hermes-agent:latest && docker inspect \
+#     --format='{{index .RepoDigests 0}}' nousresearch/hermes-agent:latest
+# and edit HERMES_IMAGE in docker/versions.env directly. No default here — an unset
+# build arg must fail the build loudly, not silently float to an untested version.
+ARG HERMES_IMAGE
+FROM ${HERMES_IMAGE}
 
 USER root
 
