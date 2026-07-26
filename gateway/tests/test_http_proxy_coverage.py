@@ -111,7 +111,7 @@ def _allowlist_proxy(domains=("api.openai.com",), **kwargs) -> HTTPConnectProxy:
 def _eof_target_connection():
     """asyncio.open_connection replacement returning an immediately-EOF stream."""
 
-    async def _open_conn(_host, _port):
+    async def _open_conn(_host, _port, **_kwargs):
         r = asyncio.StreamReader()
         r.feed_eof()
         return r, _DummyTargetWriter()
@@ -308,7 +308,7 @@ async def test_tunnel_retries_then_succeeds(monkeypatch):
     attempts = {"n": 0}
     sleeps: list[float] = []
 
-    async def _flaky_open(_host, _port):
+    async def _flaky_open(_host, _port, **_kwargs):
         attempts["n"] += 1
         if attempts["n"] == 1:
             raise OSError("transient VPN blip")
@@ -333,10 +333,46 @@ async def test_tunnel_retries_then_succeeds(monkeypatch):
     assert p.get_stats()["allowed"] == 1
 
 
+async def test_tunnel_connect_uses_happy_eyeballs(monkeypatch):
+    """CONNECT tunnel establishment must race IPv4/IPv6 (RFC 8305) instead of
+    trying one resolved address and failing outright.
+
+    Real-world regression: on a host where IPv6 is dead but IPv4 works,
+    hostnames with both AAAA and A records (api.anthropic.com, hc-ping.com)
+    resolved to the IPv6 address, and a plain `asyncio.open_connection(host,
+    port)` call — with no `family`/`happy_eyeballs_delay` — either wasted
+    several seconds falling back to IPv4 sequentially, or under concurrent
+    load exceeded the per-attempt 10s timeout outright, surfacing as
+    'CONNECT tunnel failed ... after 3 attempts' and breaking every proxied
+    HTTPS call (LLM completions, Healthchecks.io pings) until traced here.
+    """
+    seen_kwargs: dict = {}
+
+    async def _capture_open(_host, _port, **kwargs):
+        seen_kwargs.update(kwargs)
+        r = asyncio.StreamReader()
+        r.feed_eof()
+        return r, _DummyTargetWriter()
+
+    monkeypatch.setattr(asyncio, "open_connection", _capture_open)
+
+    p = HTTPConnectProxy()
+    reader = _make_stream(b"CONNECT api.openai.com:443 HTTP/1.1\r\n\r\n")
+    writer = _MockWriter()
+    await p._process_connect(reader, writer)
+
+    assert "happy_eyeballs_delay" in seen_kwargs, (
+        "asyncio.open_connection must be called with happy_eyeballs_delay so a "
+        "dead address family (e.g. broken IPv6) doesn't waste the whole "
+        "per-attempt timeout before falling back to a working one"
+    )
+    assert b"200 Connection Established" in writer.written
+
+
 async def test_tunnel_all_attempts_fail_returns_502(monkeypatch):
     attempts = {"n": 0}
 
-    async def _always_fail(_host, _port):
+    async def _always_fail(_host, _port, **_kwargs):
         attempts["n"] += 1
         raise OSError("connection refused")
 
@@ -360,7 +396,7 @@ async def test_tunnel_all_attempts_fail_returns_502(monkeypatch):
 async def test_tunnel_target_writer_close_failure_swallowed(monkeypatch):
     """target_writer.close() raising after relay completes must not propagate."""
 
-    async def _open_conn(_host, _port):
+    async def _open_conn(_host, _port, **_kwargs):
         r = asyncio.StreamReader()
         r.feed_eof()
         return r, _CloseRaisesTargetWriter()
@@ -393,7 +429,7 @@ async def test_keepalive_set_on_both_tunnel_ends(monkeypatch):
     class _TargetWriterWithTransport(_DummyTargetWriter):
         transport = SimpleNamespace(get_extra_info=lambda _key: target_sock)
 
-    async def _open_conn(_host, _port):
+    async def _open_conn(_host, _port, **_kwargs):
         r = asyncio.StreamReader()
         r.feed_eof()
         return r, _TargetWriterWithTransport()
