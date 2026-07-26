@@ -115,9 +115,25 @@ setup_ephemeral_secrets() {
     touch "$tmpdir/${name}.txt"
   done
 
-  # Auto-generate gateway_password so containers always have a valid auth token
-  # even when no credential backend is configured (e.g. brand-new machine).
-  if ! python3 -c "import secrets; print(secrets.token_hex(32), end='')" \
+  # gateway_password is a locally-generated shared secret (not something pulled
+  # from a credential backend in Step 3 below), so it's the ONE secret this
+  # function must get right on its own. Any container that reads it via
+  # docker-compose's own `secrets:` block (docker/docker-compose.yml) — not via
+  # this ephemeral tmpdir — reads docker/secrets/gateway_password.txt directly.
+  # Regenerating a fresh random value here on every rebuild, unconditionally,
+  # silently diverges this ephemeral copy from that canonical file — any
+  # container using THIS copy (e.g. Hermes, deployed via run-standalone.sh, not
+  # compose) then fails every authenticated call to a container using the
+  # canonical one (e.g. Gateway) with a genuine, silent password mismatch. This
+  # happened for real: Hermes and Gateway validated against two different
+  # passwords for a week (SSH-exec + email-send 401s) before being traced back
+  # to exactly this. If the canonical file already has real content, copy it —
+  # only fall back to generating a fresh one for a genuine first-time bootstrap
+  # (no canonical file yet at all).
+  local canonical_gw_pass="$REPO_DIR/docker/secrets/gateway_password.txt"
+  if [ -s "$canonical_gw_pass" ]; then
+    cp "$canonical_gw_pass" "$tmpdir/gateway_password.txt"
+  elif ! python3 -c "import secrets; print(secrets.token_hex(32), end='')" \
       > "$tmpdir/gateway_password.txt" 2>/dev/null; then
     openssl rand -hex 32 > "$tmpdir/gateway_password.txt"
   fi
