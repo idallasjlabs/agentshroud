@@ -948,6 +948,24 @@ def test_ws_accepts_when_auth_not_configured(monkeypatch):
             assert json.loads(first) == {"state": "idle"}
 
 
+def test_ws_token_check_uses_constant_time_comparison():
+    """/voice is the one endpoint reachable over the public internet (Tailscale
+    Funnel) — its token check must use hmac.compare_digest, not `!=`, or it
+    leaks a timing side-channel (CWE-208) to any internet client. The sibling
+    /firmware/bin endpoint already does this correctly; /voice must match.
+    """
+    import inspect
+
+    import voice_gateway.server as srv
+
+    source = inspect.getsource(srv.voice_endpoint)
+    assert "hmac.compare_digest" in source, (
+        "voice_endpoint must compare the WS auth token with hmac.compare_digest, "
+        "not a plain != comparison"
+    )
+    assert "token != _VG_AUTH_TOKEN" not in source
+
+
 # ── _call_agent unit tests ────────────────────────────────────────────────────
 
 
