@@ -47,6 +47,12 @@ logger = logging.getLogger("agentshroud.proxy.llm_api")
 _FAILOVER_NOTIFY_COOLDOWN_SECONDS = 1800
 _FAILOVER_NOTIFY_STAMP = "/tmp/.gateway-failover-notify-stamp"
 
+# Connect timeout for outbound LLM requests. Must clear this host's observed
+# DNS-resolution latency for api.anthropic.com/api.openai.com (~4.0-4.1s under
+# the current VPN/resolver setup) — too tight a margin here surfaces upstream
+# as cron "model idle timeout" failures, not as a visible connect error.
+LLM_CONNECT_TIMEOUT_SECONDS = 15.0
+
 ANTHROPIC_API_BASE = "https://api.anthropic.com"
 OPENAI_API_BASE = "https://api.openai.com"
 GOOGLE_API_BASE = "https://generativelanguage.googleapis.com"
@@ -881,7 +887,7 @@ class LLMProxy:
 
             try:
                 async with _httpx.AsyncClient(
-                    verify=True, timeout=_httpx.Timeout(5.0, read=1800.0)
+                    verify=True, timeout=_httpx.Timeout(LLM_CONNECT_TIMEOUT_SECONDS, read=1800.0)
                 ) as client:
                     async with client.stream(
                         "POST", url, content=body, headers=forward_headers
@@ -939,7 +945,10 @@ class LLMProxy:
                                         return
 
                                     async with _httpx.AsyncClient(
-                                        verify=True, timeout=_httpx.Timeout(5.0, read=1800.0)
+                                        verify=True,
+                                        timeout=_httpx.Timeout(
+                                            LLM_CONNECT_TIMEOUT_SECONDS, read=1800.0
+                                        ),
                                     ) as fo_client:
                                         async with fo_client.stream(
                                             "POST",
@@ -1000,7 +1009,9 @@ class LLMProxy:
                                         _fo2_url = f"{OPENAI_API_BASE}/v1/chat/completions"
                                         async with _httpx.AsyncClient(
                                             verify=True,
-                                            timeout=_httpx.Timeout(5.0, read=1800.0),
+                                            timeout=_httpx.Timeout(
+                                                LLM_CONNECT_TIMEOUT_SECONDS, read=1800.0
+                                            ),
                                         ) as _fo2_client:
                                             async with _fo2_client.stream(
                                                 "POST",
