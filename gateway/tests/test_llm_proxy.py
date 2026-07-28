@@ -619,3 +619,32 @@ def test_is_connect_error_classification():
         assert not LLMProxy._is_connect_error(http_err)
     finally:
         http_err.close()
+
+
+def test_llm_connect_timeout_clears_observed_dns_latency():
+    """Connect timeout must exceed this host's measured DNS-resolution latency
+    (~4.0-4.1s to api.anthropic.com/api.openai.com under the current VPN/resolver
+    setup) or every proxied streaming call intermittently fails at connect time —
+    the failure surfaces upstream as an OpenClaw cron "model idle timeout", not as
+    a visible connect error, which made it hard to root-cause.
+    """
+    assert llm_proxy_module.LLM_CONNECT_TIMEOUT_SECONDS >= 15.0
+
+
+def test_all_streaming_clients_use_the_shared_connect_timeout_constant():
+    """No streaming call site may hardcode its own connect timeout literal.
+
+    Guards against a regression where a new/edited call site (primary request,
+    local quota-failover, or cloud quota-failover) reintroduces a tight literal
+    like httpx.Timeout(5.0, ...) instead of referencing the shared constant.
+    """
+    import inspect
+    import re
+
+    source = inspect.getsource(llm_proxy_module)
+    timeout_calls = re.findall(r"_httpx\.Timeout\(\s*([^,]+),", source)
+    assert timeout_calls, "expected at least one httpx.Timeout(...) call site"
+    for connect_arg in timeout_calls:
+        assert connect_arg.strip() == "LLM_CONNECT_TIMEOUT_SECONDS", (
+            f"found a hardcoded connect timeout literal: {connect_arg.strip()!r}"
+        )
