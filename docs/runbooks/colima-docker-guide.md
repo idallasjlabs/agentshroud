@@ -495,7 +495,56 @@ exit
 
 ---
 
-## 10. Common Errors — Quick Reference
+## 10. Port Forwarding — Dual-Stack Bind Race (silently unreachable host port)
+
+**Symptom:** a container is `healthy`, `docker ps` shows the port correctly published
+(`0.0.0.0:PORT->PORT/tcp, [::]:PORT->PORT/tcp`), internal healthchecks pass — but the
+HOST itself cannot reach `127.0.0.1:PORT` at all (`curl` connection refused,
+`lsof -iTCP:PORT -sTCP:LISTEN` shows nothing). Survives a container restart/recreate
+AND a full `colima stop && colima start` cycle — this is not stale state.
+
+**Cause:** Colima (Lima-based) forwards container ports to the host via per-port SSH
+tunnels over a shared `ssh.sock` ControlMaster (`~/.colima/_lima/colima/ha.stderr.log`
+shows this — search for `added_local_ports`/`Forwarding TCP from`). Docker Compose's
+**bare** `"PORT:PORT"` publish syntax binds `0.0.0.0` AND `[::]` simultaneously as two
+separate sockets. Lima's guest-agent fires a separate forward-setup attempt for each
+address family, they race over the same ControlMaster, and one always loses with
+`exit status 255` (the log message "negligible if already forwarded" is misleading —
+it is NOT negligible; the port ends up completely unforwarded).
+
+**Fix:** bind to loopback explicitly instead of the bare form:
+
+```yaml
+ports:
+  - "127.0.0.1:PORT:PORT"   # NOT "PORT:PORT" — see above
+```
+
+**Diagnosis, in order:**
+
+```bash
+# 1. Confirm the container itself is fine (rules out an app bug):
+colima ssh -- curl -sS -o /dev/null -w "%{http_code}\n" http://127.0.0.1:PORT/health
+
+# 2. Confirm the host genuinely can't reach it (not a sandboxing/tool artifact —
+#    cross-check from a real interactive terminal session, not just automation):
+curl -sS --max-time 5 http://127.0.0.1:PORT/health
+lsof -iTCP:PORT -sTCP:LISTEN -P
+
+# 3. Find the actual forwarder error (docker ps / healthchecks won't show this):
+grep "PORT" ~/.colima/_lima/colima/ha.stderr.log | grep -E "exit status|failed to set up"
+
+# 4. Compare the failing service's `ports:` entry in docker-compose.yml against a
+#    working one — if the working one uses "127.0.0.1:X:X" and the failing one uses
+#    the bare "X:X" form, that's the bug.
+```
+
+Confirmed 2026-07-28: this affected `voice-gateway` (port 8765) specifically —
+every other service in this repo's `docker-compose.yml` already used the
+loopback-bound form, which is why only this one port was affected.
+
+---
+
+## 11. Common Errors — Quick Reference
 
 | Error | Likely Cause | Fix |
 |-------|-------------|-----|
@@ -511,10 +560,12 @@ exit
 | Build: `CONNECT proxy rejected: 502` during WSS | Gateway not yet up when bot starts | Expected transient; bot auto-reconnects. Suppressed in `setup-https-proxy.js` |
 | `Slack pong timeout` in bot logs | VPN reconnect / DNS hiccup | Harmless; demoted to debug in `patch-slack-sdk.sh` |
 | `No space left on device` during `npm install` | `openclaw-runtime` volume full | `docker volume rm agentshroud_openclaw-runtime` then `./scripts/asb up` |
+| Container healthy, port published, but host `curl 127.0.0.1:PORT` refused | Bare `"PORT:PORT"` compose syntax dual-stack-races Lima's port forwarder | See §10 — bind `"127.0.0.1:PORT:PORT"` instead |
+| `tailscale netcheck` shows `UDP: false` / `Nearest DERP: unknown`, but `tailscale status` looks normal | Little Snitch silently blocking `tailscaled`'s UDP (TCP control-plane still works, masking this) | Open Little Snitch's GUI (`vnc://` if remote) → Network Monitor → approve the `tailscaled` UDP rule. No CLI fix exists. |
 
 ---
 
-## 11. Dev Account (agentshroud-bot) Operations
+## 12. Dev Account (agentshroud-bot) Operations
 
 All `asb` commands work the same when run as `agentshroud-bot` — the script auto-detects
 the account and applies the Marvin overlay.

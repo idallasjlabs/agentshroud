@@ -11,7 +11,7 @@
 #
 # Usage:
 #   check-vendor-compat.sh --bot openclaw --openclaw-version 2026.8.0
-#   check-vendor-compat.sh --bot hermes --hermes-image sha256:<digest>
+#   check-vendor-compat.sh --bot hermes --hermes-image nousresearch/hermes-agent@sha256:<digest>
 #
 # Exit 0 + "COMPAT CHECK: PASS" only if every assertion for the target bot
 # passes. Exit 1 + "COMPAT CHECK: FAIL" with the specific failing assertion
@@ -157,6 +157,16 @@ check_hermes() {
     echo "ERROR: --bot hermes requires --hermes-image nousresearch/hermes-agent@sha256:<digest>" >&2
     exit 1
   fi
+  case "$HERMES_IMAGE_CANDIDATE" in
+    *@sha256:*) ;;
+    *)
+      echo "ERROR: --hermes-image must be a full image reference including the" >&2
+      echo "  repository name, e.g. nousresearch/hermes-agent@sha256:<digest> —" >&2
+      echo "  got '$HERMES_IMAGE_CANDIDATE'. A bare 'sha256:<digest>' resolves to" >&2
+      echo "  an invalid Docker Hub repository named 'sha256' and fails confusingly." >&2
+      exit 1
+      ;;
+  esac
 
   echo "=== Hermes compatibility check: candidate image $HERMES_IMAGE_CANDIDATE ==="
   echo ""
