@@ -26,10 +26,18 @@
 #   :9119/      → Hermes dashboard (port 9119)      https://<host>:9119/
 #   :8642/      → Hermes OpenAI API (port 8642)     https://<host>:8642/v1
 #   :8765/      → Voice Gateway WS (port 8765)      wss://<host>:8765/voice (tailnet peers)
-#   /voice      → ESP32-S3-BOX-3 voice terminal     wss://<host>/voice (public Funnel — the
-#                                                    ESP32 has no Tailscale client, so it can
-#                                                    only reach this host via Funnel, not
-#                                                    plain tailnet-only Serve)
+#   /voice      → ESP32-S3-BOX-3 voice terminal     wss://<host>/voice (public Funnel)
+#
+# ⚠️  TEMPORARY (2026-07-27): the ESP32's current firmware is hardcoded
+# (CONFIG_VT_VG_WS_URL, compile-time) to the Funnel URL above and has no
+# on-device Tailscale client — Funnel is back on ONLY as a stopgap until the
+# firmware is rebuilt for LAN-only (or another non-public path) and reflashed.
+# Owner's stated end-state is NO Funnel / no public exposure at all — once the
+# firmware fix ships and is confirmed working, remove the `tailscale funnel`
+# line in cmd_start below and restore the "actively turn Funnel off" guard
+# that was here before. Don't remove Funnel again without checking the
+# firmware has actually been updated first, or this breaks the device exactly
+# like it did on 2026-07-27.
 #
 # Note: Hermes/Voice-Gateway serves are only reachable when the relevant
 # profile is running. Use `asb up voice` or `asb up full`.
@@ -67,10 +75,9 @@ cmd_start() {
     echo "  → Voice Gateway WS :${VOICE_GATEWAY_PORT} → http://127.0.0.1:${VOICE_GATEWAY_PORT}"
     tailscale serve --bg --https=${VOICE_GATEWAY_PORT} http://127.0.0.1:${VOICE_GATEWAY_PORT}
 
-    # ESP32-S3-BOX-3 voice terminal has no on-device Tailscale client, so it can only reach
-    # this host via Tailscale FUNNEL (public internet), not tailnet-only Serve. Funnel only
-    # supports ports 443/8443/10000, so this is a path-based route on the default 443 vhost —
-    # do not try to funnel port 8765 directly, and do not strip /voice from the target url.
+    # TEMPORARY (2026-07-27) — see header note. Remove once ESP32 firmware no
+    # longer depends on this Funnel URL, and restore
+    # `tailscale funnel --https=443 off` here instead.
     echo "  → ESP32 voice Funnel :443/voice → http://127.0.0.1:${VOICE_GATEWAY_PORT}/voice"
     tailscale funnel --bg --set-path=/voice "http://127.0.0.1:${VOICE_GATEWAY_PORT}/voice"
 
@@ -82,7 +89,7 @@ cmd_start() {
     echo "  Hermes dashboard:https://${HOSTNAME}:${HERMES_DASH_PORT}/"
     echo "  Hermes API:      https://${HOSTNAME}:${HERMES_API_PORT}/v1"
     echo "  Voice Gateway:   wss://${HOSTNAME}:${VOICE_GATEWAY_PORT}/voice"
-    echo "  ESP32 voice:     wss://${HOSTNAME}/voice  (public Funnel, for the ESP32-S3-BOX-3)"
+    echo "  ESP32 voice:     wss://${HOSTNAME}/voice  (public Funnel — TEMPORARY, see header note)"
     echo ""
     echo "  (Hermes/Voice-Gateway URLs require: asb up voice|full)"
 }

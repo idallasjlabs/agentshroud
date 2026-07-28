@@ -142,13 +142,30 @@ The firmware will:
 
 ## Updating the firmware (OTA — the normal deploy path)
 
-After the first USB flash the device updates **over the air**; no cable needed.
-The voice-gateway container serves the latest build: `docker-compose.yml`
-bind-mounts `firmware/voice-terminal/build/` read-only at `/firmware/build`, and
-`GET /firmware/bin` serves `voice_terminal.bin` with a SHA-256 `ETag`. On every
-boot the device compares that ETag against its running partition and, if it
-differs, downloads, self-flashes the inactive OTA slot, and reboots into it
-(with automatic bootloader rollback if the new image fails to boot).
+After the first USB flash the device updates **over the air**; no cable needed
+for routine builds. The voice-gateway container serves a **promoted** build:
+`docker-compose.yml` bind-mounts `firmware/voice-terminal/ota-release/` (NOT
+`build/`) read-only at `/firmware/build`, and `GET /firmware/bin` serves
+`voice_terminal.bin` with a SHA-256 `ETag`. On every boot the device compares
+that ETag against its running partition and, if it differs, downloads,
+self-flashes the inactive OTA slot, and reboots into it (with automatic
+bootloader rollback if the new image fails to boot).
+
+> **Changed 2026-07-27** — this used to bind-mount `build/` directly, so any
+> local `idf.py build` immediately became what the one physical production
+> device downloaded next, with no verification step at all. A one-line
+> sdkconfig change (an untested WS-URL/port change, never boot-tested on real
+> hardware) went out this way, crashed early enough that the device never
+> reached `esp_ota_mark_app_valid_cancel_rollback()`, and could not self-heal:
+> its own OTA-check endpoint used the same broken address as its WS
+> connection, so it could not even download a fix. `scripts/promote-firmware.sh`
+> is now the *only* path from `build/` to what devices actually see, and it
+> requires typing a confirmation that five specific things were verified over a
+> real USB serial connection first (see the script for the checklist). **Never
+> bypass this for anything that changes network config, WiFi credentials, or
+> anything else that affects whether the device can reach the network at
+> all** — those are exactly the changes that can strand a device with no
+> remaining recovery path if they're wrong.
 
 Deploy procedure:
 
@@ -163,22 +180,44 @@ source ~/esp/esp-idf/export.sh
 # 2. Build, and verify by EXIT CODE (never by grepping output):
 idf.py build; echo "exit: $?"
 
-# 3. Nothing to copy — the bind mount already serves the new binary.
-#    Power-cycle the device (or wait for its next natural reboot).
+# 3. Boot-test over USB BEFORE promoting — non-negotiable for any change that
+#    touches network/WiFi/URL config (see warning above). For pure-firmware-
+#    logic changes with no network-reachability impact, this is still strongly
+#    recommended, just less critical:
+idf.py -p /dev/cu.usbmodemXXXX flash monitor
+#    Confirm: boots cleanly, WiFi connects, reaches "mark_app_valid" (implicit —
+#    no crash/reset before the voice WS connects), a real voice round-trip works.
+#    Ctrl-] to exit monitor.
 
-# 4. Confirm the device is running the new build:
+# 4. Only after that passes, promote it to what OTA actually serves:
+cd ../..   # repo root
+scripts/promote-firmware.sh
+#    Requires typing VERIFIED to confirm the checklist above was actually done.
+
+# 5. Power-cycle the device (or wait for its next natural reboot).
+
+# 6. Confirm the device is running the new build:
 docker logs agentshroud-voice-gateway --tail 100 | grep "boot: tag="
 #    → [device …] boot: tag=<something-new> …
 ```
 
 Notes:
-- The device's serial console is unavailable in normal operation. Its diagnostic
-  trace is mirrored over the WebSocket: watch `docker logs -f
-  agentshroud-voice-gateway` for `[device …]` lines (boot marker, VAD endpoints,
-  delivery attempts, errors).
-- A build that fails to boot is safe: the bootloader rolls back to the previous
-  slot and the OTA loop re-offers whatever `build/` currently serves — so the
-  recovery for a bad build is simply "build a good one".
+- The device's serial console is unavailable in normal operation *while it's
+  running network-connected* — the diagnostic trace above is mirrored over the
+  WebSocket: watch `docker logs -f agentshroud-voice-gateway` for `[device …]`
+  lines (boot marker, VAD endpoints, delivery attempts, errors). But that
+  mirror *only works once the device can reach the network* — it is useless
+  for diagnosing exactly the failure mode (network-breaking firmware) that
+  matters most, which is why step 3's real USB boot-test cannot be skipped.
+- A build that fails to boot cleanly (crashes/resets before reaching the voice
+  WS connection) safely rolls back via the bootloader to the previous slot —
+  **but only if the currently-running image can still reach `/firmware/bin`
+  to fetch a fix.** If the previous slot's own baked network config is what's
+  broken (not just the new one), there is no remaining OTA recovery path at
+  all and USB is required. This is exactly what happened 2026-07-27: don't
+  assume "rollback is automatic" means "network config changes are safe to
+  OTA" — they are the one category of change rollback cannot fully protect
+  against.
 - Never change the BSP I2S DMA descriptor sizing — it exhausts internal DMA RAM
   and the image will not boot (proven 2026-07-07).
 
