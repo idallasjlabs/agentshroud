@@ -32,6 +32,17 @@ from .web_proxy import WebProxy
 
 logger = logging.getLogger("agentshroud.proxy.http_proxy")
 
+# Whether the active event loop's create_connection() accepts
+# happy_eyeballs_delay. uvicorn defaults to uvloop when installed (it is, in
+# this image) and uvloop 0.22.1's create_connection() does not implement this
+# kwarg, unlike stock asyncio — raises TypeError on every single call. Starts
+# True (optimistic) and is set False permanently on first TypeError, so a
+# uvloop deployment pays the cost of detecting this exactly once instead of
+# on every CONNECT for the container's lifetime. See the retry loop below for
+# why an uncaught TypeError here is far worse than a plain missing feature —
+# it turned into an 800+ req/s busy-loop with a misbehaving client (2026-07-29).
+HAS_HAPPY_EYEBALLS = True
+
 # Internal control-plane destinations required for channel transport.
 # These are bypassed from interactive egress approval to avoid deadlocking
 # the approval channel itself.
@@ -421,10 +432,24 @@ class HTTPConnectProxy:
                 )
                 await asyncio.sleep(_delay)
             try:
-                target_reader, target_writer = await asyncio.wait_for(
-                    asyncio.open_connection(host, port, happy_eyeballs_delay=0.25),
-                    timeout=10.0,
-                )
+                global HAS_HAPPY_EYEBALLS
+                try:
+                    if HAS_HAPPY_EYEBALLS:
+                        target_reader, target_writer = await asyncio.wait_for(
+                            asyncio.open_connection(host, port, happy_eyeballs_delay=0.25),
+                            timeout=10.0,
+                        )
+                    else:
+                        raise TypeError  # short-circuit straight to the fallback below
+                except TypeError:
+                    # See the module-level HAS_HAPPY_EYEBALLS comment for why this
+                    # branch exists and why it must never be allowed to propagate
+                    # uncaught (2026-07-29: an 800+ req/s busy-loop).
+                    HAS_HAPPY_EYEBALLS = False
+                    target_reader, target_writer = await asyncio.wait_for(
+                        asyncio.open_connection(host, port),
+                        timeout=10.0,
+                    )
                 break  # success
             except (OSError, asyncio.TimeoutError) as exc:
                 _last_exc = exc

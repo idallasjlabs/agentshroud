@@ -20,6 +20,7 @@ import socket
 from types import SimpleNamespace
 from unittest import mock
 
+import gateway.proxy.http_proxy as http_proxy_module
 from gateway.proxy.http_proxy import HTTPConnectProxy
 from gateway.proxy.web_config import WebProxyConfig
 from gateway.proxy.web_proxy import WebProxy
@@ -367,6 +368,65 @@ async def test_tunnel_connect_uses_happy_eyeballs(monkeypatch):
         "per-attempt timeout before falling back to a working one"
     )
     assert b"200 Connection Established" in writer.written
+
+
+async def test_tunnel_connect_falls_back_when_happy_eyeballs_unsupported(monkeypatch):
+    """Real-world regression (2026-07-29): uvloop (the active event loop under
+    uvicorn in production — confirmed via uvicorn's default loop selection)
+    does not implement happy_eyeballs_delay on create_connection(), unlike
+    stock asyncio. Calling asyncio.open_connection(..., happy_eyeballs_delay=…)
+    under uvloop raises TypeError immediately, on every single call, for
+    every destination. TypeError is not one of the (OSError, TimeoutError)
+    exceptions the retry loop catches, so it propagated out of the whole
+    _process_connect call to _handle_client's generic exception handler —
+    meaning every CONNECT failed instantly regardless of network state. A
+    misbehaving client (observed live: OpenClaw) retried fast enough on each
+    instant failure to spin this into an 800+ req/s busy-loop that pegged the
+    gateway and OpenClaw containers before being traced here.
+
+    This must never happen again: a TypeError from the happy-eyeballs kwarg
+    must be caught, fall back to a plain open_connection() call, and the
+    connection must still succeed.
+    """
+    monkeypatch.setattr(http_proxy_module, "HAS_HAPPY_EYEBALLS", True)
+    calls: list[dict] = []
+
+    async def _uvloop_like_open(_host, _port, **kwargs):
+        calls.append(dict(kwargs))
+        if "happy_eyeballs_delay" in kwargs:
+            raise TypeError(
+                "create_connection() got an unexpected keyword argument " "'happy_eyeballs_delay'"
+            )
+        r = asyncio.StreamReader()
+        r.feed_eof()
+        return r, _DummyTargetWriter()
+
+    monkeypatch.setattr(asyncio, "open_connection", _uvloop_like_open)
+
+    p = HTTPConnectProxy()
+    reader = _make_stream(b"CONNECT api.anthropic.com:443 HTTP/1.1\r\n\r\n")
+    writer = _MockWriter()
+    await p._process_connect(reader, writer)
+
+    assert (
+        b"200 Connection Established" in writer.written
+    ), "the tunnel must still succeed via fallback, not fail outright"
+    assert len(calls) == 2, "expected one failed happy-eyeballs attempt then one fallback"
+    assert "happy_eyeballs_delay" in calls[0]
+    assert "happy_eyeballs_delay" not in calls[1]
+    assert http_proxy_module.HAS_HAPPY_EYEBALLS is False, (
+        "detection must be cached so subsequent CONNECTs on this loop skip "
+        "straight to the fallback instead of eating the same failure again"
+    )
+
+    # Second CONNECT on the same (now-detected-incompatible) loop must go
+    # straight to the fallback — no repeated failed attempt.
+    calls.clear()
+    reader2 = _make_stream(b"CONNECT api.anthropic.com:443 HTTP/1.1\r\n\r\n")
+    writer2 = _MockWriter()
+    await p._process_connect(reader2, writer2)
+    assert len(calls) == 1
+    assert "happy_eyeballs_delay" not in calls[0]
 
 
 async def test_tunnel_all_attempts_fail_returns_502(monkeypatch):
