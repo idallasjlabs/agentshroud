@@ -210,27 +210,33 @@ class TestConfigValidation:
         assert "Set internal gateway model" not in script
 
     def test_openclaw_version_pin_is_consistent_across_bot_images(self):
-        """Both bot Dockerfiles must pin OpenClaw to the same value
-        (either both a specific version or both @latest)."""
-        import re
+        """OpenClaw's bot Dockerfile must pin via the shared ARG OPENCLAW_VERSION
+        (backed by docker/versions.env, the single source of truth also read by
+        scripts/update-agentshroud.sh and CI's CVE tracking) with no default —
+        an unset build-arg must fail the build loudly, never silently float to
+        @latest. Superseded a literal openclaw@<version|latest> string check
+        that predated this ARG-based indirection and no longer matched it.
 
-        primary_path = REPO_ROOT / "docker" / "Dockerfile.agentshroud"
+        docker/Dockerfile.agentshroud (an unrelated, unreferenced-by-compose-
+        or-CI file) is intentionally not compared against here.
+        """
         openclaw_path = REPO_ROOT / "docker" / "bots" / "openclaw" / "Dockerfile"
-        if not primary_path.exists() or not openclaw_path.exists():
-            pytest.skip("Bot Dockerfiles not available in this environment")
-        primary = primary_path.read_text()
+        if not openclaw_path.exists():
+            pytest.skip("OpenClaw bot Dockerfile not available in this environment")
         openclaw = openclaw_path.read_text()
 
-        # Accept either a pinned version (YYYY.MM.NN) or the literal "latest".
-        pat = re.compile(r"openclaw@([0-9]{4}\.[0-9]+\.[0-9]+|latest)")
-        primary_match = pat.search(primary)
-        openclaw_match = pat.search(openclaw)
-
-        assert primary_match, "Primary bot Dockerfile must pin openclaw@<version|latest>"
-        assert openclaw_match, "OpenClaw bot Dockerfile must pin openclaw@<version|latest>"
-        assert primary_match.group(1) == openclaw_match.group(1), (
-            f"OpenClaw pin drift: primary={primary_match.group(1)} "
-            f"openclaw={openclaw_match.group(1)}"
+        assert "ARG OPENCLAW_VERSION" in openclaw, (
+            "OpenClaw Dockerfile must declare ARG OPENCLAW_VERSION with no "
+            "default so an unset build-arg fails the build instead of "
+            "floating to @latest"
+        )
+        assert "ARG OPENCLAW_VERSION=" not in openclaw, (
+            "ARG OPENCLAW_VERSION must not have a default value — that would "
+            "silently float to whatever the default is on an unset build-arg"
+        )
+        assert "openclaw@${OPENCLAW_VERSION}" in openclaw, (
+            "OpenClaw Dockerfile must install openclaw@${OPENCLAW_VERSION}, "
+            "not a hardcoded version or a literal @latest"
         )
 
     def test_openclaw_patch_script_sets_control_ui_allowed_origins(self):
