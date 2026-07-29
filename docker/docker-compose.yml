@@ -147,7 +147,15 @@ services:
       # the literal string "agentshroud-hermes" and MUST be overridden to match.
       - HERMES_DASHBOARD_HOST_UPSTREAM=agentshroud-hermes-v2
       - HERMES_API_HOST_UPSTREAM=agentshroud-hermes-v2
-      - HERMES_DASHBOARD_UPSTREAM=http://agentshroud-hermes-v2:9119
+      # Hermes's own dashboard binds 127.0.0.1 inside its container (vendor v0.15.1+
+      # auth-gate safe default — see HERMES_DASHBOARD_HOST below). Both dashboard access
+      # paths (the plain HTTP proxy below, and the raw TCP forwarder in lifespan.py) must
+      # therefore point at docker/bots/hermes/dashboard_bridge.py's bridge port (9120),
+      # NEVER at 9119 directly — that's Hermes's own loopback-bound port and is
+      # unreachable from this container. See gateway/tests/test_security_regressions_v1_2.py
+      # TestHermesDashboardBridgeReachability.
+      - HERMES_DASHBOARD_UPSTREAM_PORT=9120
+      - HERMES_DASHBOARD_UPSTREAM=http://agentshroud-hermes-v2:9120
       # Group chat: comma-separated Telegram group/supergroup chat IDs to allow.
       # Each ID binds to a per-chat group-{chatId} agent (approval-router compatible).
       # Legacy single-ID var kept for compat: AGENTSHROUD_GROUP_CHAT_ID.
@@ -437,12 +445,19 @@ services:
       HERMES_TELEGRAM_HTTP_CONNECT_TIMEOUT: "90"
       HERMES_TELEGRAM_INIT_TIMEOUT: "90"
       HERMES_DASHBOARD: "1"
-      # v0.17.0: HERMES_DASHBOARD_INSECURE removed. Loopback bind skips auth gate.
-      # Host publish (127.0.0.1:9119:9119) is still reachable via `docker exec` or
-      # SSH/Tailscale tunnel from marvin. Configure basic auth when an OAuth app is
-      # provisioned: set HERMES_DASHBOARD_BASIC_AUTH_USERNAME + _PASSWORD.
+      # v0.17.0: HERMES_DASHBOARD_INSECURE removed. Loopback bind skips the vendor's
+      # auth gate (the alternative is provisioning HERMES_DASHBOARD_BASIC_AUTH_USERNAME
+      # + _PASSWORD, which we deliberately don't — see rationale in
+      # gateway/ingest_api/lifespan.py's Hermes dashboard forwarder comment: access
+      # control is meant to be Tailscale network membership, not app-level credentials).
+      # Loopback-only means this port is NOT reachable from any other container,
+      # including gateway — docker/bots/hermes/dashboard_bridge.py (s6 service
+      # agentshroud-dashboard-bridge, port 9120) re-exposes it for cross-container
+      # reach. Do not point gateway's HERMES_DASHBOARD_UPSTREAM*/HERMES_DASHBOARD_PORT
+      # at each other directly; see TestHermesDashboardBridgeReachability.
       HERMES_DASHBOARD_HOST: "127.0.0.1"
       HERMES_DASHBOARD_PORT: "9119"
+      HERMES_DASHBOARD_BRIDGE_PORT: "9120"
       AGENTSHROUD_BOT_ID: hermes
       API_SERVER_ENABLED: "1"
       API_SERVER_HOST: "0.0.0.0"
