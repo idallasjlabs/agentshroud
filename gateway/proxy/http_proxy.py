@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import asyncio
 import concurrent.futures
+import ipaddress
 import logging
 import os
 import socket
@@ -295,12 +296,31 @@ class HTTPConnectProxy:
         result_blocked = False
         block_reason = "allowed"
 
+        # Bare-IP-literal CONNECT targets (e.g. 1.1.1.1, 8.8.8.8) have no domain to
+        # match against SYSTEM_BYPASS_DOMAINS/CONNECT_FORCE_BLOCK_DOMAINS/allowlist,
+        # so they fall through to the interactive egress-approval path below and can
+        # hang for its full prompt-wait window before auto-denying — observed
+        # 2026-07-18 hanging a Hermes boot (DNS-over-HTTPS fallback-IP discovery
+        # probing raw resolver IPs) for ~8s+ per target, compounding across several
+        # probed IPs into a container-killing delay. A well-behaved agent has no
+        # legitimate reason to CONNECT to a bare IP without going through DNS, so
+        # deny immediately instead of queuing an approval prompt nobody can usefully
+        # answer for a raw IP.
+        try:
+            ipaddress.ip_address(host)
+            is_ip_literal = True
+        except ValueError:
+            is_ip_literal = False
+
         if force_blocked_domain:
             # Hard block — takes priority over egress filter and system bypass.
             # Bot must use its configured gateway base URL (e.g. TELEGRAM_API_BASE_URL)
             # rather than a direct CONNECT tunnel.
             result_blocked = True
             block_reason = f"direct CONNECT tunnel to {host} is blocked; use gateway proxy"
+        elif is_ip_literal and not bypass_system_domain:
+            result_blocked = True
+            block_reason = f"direct CONNECT to bare IP {host} is blocked; use a hostname"
         elif bypass_system_domain:
             block_reason = "system egress bypass domain"
             # Log bypass-domain connections to the SOC decision history so that

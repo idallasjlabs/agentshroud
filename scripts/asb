@@ -226,9 +226,28 @@ YAML
   # so the daemon can bind-mount the files.
   chmod 755 "$tmpdir"
   chmod 644 "$tmpdir"/*.txt 2>/dev/null || true
-  # Flush filesystem writes so Colima's virtiofs sees them before Docker tries to
-  # bind-mount. Without this, newly created files may not be visible to the daemon.
-  sync
+  # Flush these specific files so Colima's virtiofs sees them before Docker tries
+  # to bind-mount. A bare `sync` was used here previously, but macOS's sync(2) is
+  # global — it flushes every mounted filesystem, not just this tmpdir — so an
+  # unrelated unresponsive volume (Time Machine over SMB, a network share, a
+  # disconnected external drive) hangs it indefinitely in uninterruptible I/O wait
+  # (kernel state "U"), which not even SIGKILL clears, blocking the whole
+  # deployment with zero error output. Reproduced live on a real host: two SMB
+  # mounts (Time Machine + a Carbon Copy Cloner destination) left `sync` — and a
+  # `timeout`-wrapped `sync`, since timeout still waits for the child to actually
+  # exit — hung forever. fsync each secret file individually instead: it only
+  # touches this tmpdir's own (local) filesystem, never the unrelated mounts.
+  python3 -c "
+import os, sys
+for name in os.listdir('$tmpdir'):
+    path = os.path.join('$tmpdir', name)
+    if os.path.isfile(path):
+        fd = os.open(path, os.O_RDONLY)
+        try:
+            os.fsync(fd)
+        finally:
+            os.close(fd)
+" || echo "WARN: could not fsync ephemeral secrets — continuing anyway"
 
   COMPOSE="$COMPOSE -f $override"
 }
@@ -263,6 +282,24 @@ _reset_device_store() {
     && echo "  [device-reset] done — restarting bot for clean re-pair" \
     || { echo "  [device-reset] exec failed — skipping"; return; }
   docker restart "$bot_container" >/dev/null
+}
+
+# ── Hermes standalone launch (docker run, not compose) ──────────────────────
+# 2026-07-18: a restart storm reproduces only when Hermes is started via
+# `docker-compose up -d`; the identical container launched with `docker run`
+# stays stable. Hermes now deploys through docker/bots/hermes/run-standalone.sh
+# instead of compose. Gateway/openclaw/voice-gateway are unaffected — they
+# still deploy via $COMPOSE exactly as before. See project memory
+# project_hermes_do_request_ptb226_fix.md for the full investigation.
+_hermes_up() {
+  AGENTSHROUD_PROJECT="$PROJECT" \
+  AGENTSHROUD_VERSION="${AGENTSHROUD_VERSION:-latest}" \
+  AGENTSHROUD_SECRETS_DIR="$HOME/.agentshroud/.asb-secrets" \
+    bash "$REPO_DIR/docker/bots/hermes/run-standalone.sh" up
+}
+
+_hermes_down() {
+  bash "$REPO_DIR/docker/bots/hermes/run-standalone.sh" down 2>/dev/null || true
 }
 
 # ── Docker disk reclamation ──────────────────────────────────────────────────
@@ -305,6 +342,19 @@ if [ ! -f "$_CONFIG" ] && [ -f "$_CONFIG_EXAMPLE" ]; then
   cp "$_CONFIG_EXAMPLE" "$_CONFIG"
 fi
 
+# ── hermes-config/cron pre-flight ────────────────────────────────────────────
+# Gateway bind-mounts the hermes-config volume's `cron` SUBPATH read-only
+# (docker-compose.yml, CronStateMonitor / SCRUM-61) so it never sees the rest
+# of hermes-config (auth.json, mcp.json credentials). Docker's subpath mount
+# requires the subdirectory to already exist — it will NOT auto-create it.
+# On a truly fresh install (hermes-config volume never touched by Hermes yet),
+# gateway fails to start with "cannot access path .../cron: no such file or
+# directory" — and gateway must be healthy before Hermes ever runs, so Hermes
+# never gets the chance to create it either. Break the deadlock by ensuring
+# the directory exists before the stack ever comes up.
+docker volume create hermes-config >/dev/null 2>&1 || true
+docker run --rm -v hermes-config:/data alpine mkdir -p /data/cron >/dev/null 2>&1 || true
+
 case "${1:-}" in
   build)
     _prune_docker
@@ -312,37 +362,47 @@ case "${1:-}" in
     ;;
   up)
     _PROFILE_FLAG=""
-    [[ "${2:-}" == "full" ]] && _PROFILE_FLAG="--profile full"
-    [[ "${2:-}" == "hermes" ]] && _PROFILE_FLAG="--profile hermes"
+    _WANT_HERMES=0
+    [[ "${2:-}" == "full" ]] && { _PROFILE_FLAG="--profile voice"; _WANT_HERMES=1; }
+    [[ "${2:-}" == "hermes" ]] && _WANT_HERMES=1
     setup_ephemeral_secrets
     $COMPOSE $_PROFILE_FLAG up -d
+    [[ "$_WANT_HERMES" == "1" ]] && _hermes_up
     bash "$REPO_DIR/scripts/post-deploy-check.sh" || true
     ;;
   down)
-    # --profile full ensures Hermes + HCI are stopped if running
+    # --profile full stops voice-gateway if running (Hermes is not compose-managed)
     $COMPOSE --profile full down
+    _hermes_down
     rm -rf "$HOME/.agentshroud/.asb-secrets"
     ;;
   rebuild)
     _PROFILE_FLAG=""
-    [[ "${2:-}" == "full" ]] && _PROFILE_FLAG="--profile full"
-    [[ "${2:-}" == "hermes" ]] && _PROFILE_FLAG="--profile hermes"
+    _WANT_HERMES=0
+    [[ "${2:-}" == "full" ]] && { _PROFILE_FLAG="--profile voice"; _WANT_HERMES=1; }
+    [[ "${2:-}" == "hermes" ]] && _WANT_HERMES=1
+    _hermes_down
     $COMPOSE --profile full down 2>/dev/null || true
     _prune_docker
     setup_ephemeral_secrets
-    $COMPOSE build --no-cache && $COMPOSE $_PROFILE_FLAG up -d
+    $COMPOSE build --no-cache
+    [[ "$_WANT_HERMES" == "1" ]] && $COMPOSE build hermes --no-cache
+    $COMPOSE $_PROFILE_FLAG up -d
+    [[ "$_WANT_HERMES" == "1" ]] && _hermes_up
     _reset_device_store
     bash "$REPO_DIR/scripts/post-deploy-check.sh" || true
     ;;
   clean-rebuild)
     _PROFILE_FLAG=""
-    [[ "${2:-}" == "full" ]] && _PROFILE_FLAG="--profile full"
-    [[ "${2:-}" == "hermes" ]] && _PROFILE_FLAG="--profile hermes"
+    _WANT_HERMES=0
+    [[ "${2:-}" == "full" ]] && { _PROFILE_FLAG="--profile voice"; _WANT_HERMES=1; }
+    [[ "${2:-}" == "hermes" ]] && _WANT_HERMES=1
     echo "This will remove containers, prune stale volumes, and rebuild from scratch."
     echo "Persistent data (workspace, config, SSH keys, browsers) is PRESERVED."
     echo "hermes-config volume is NEVER deleted (preserves Hermes state across rebuilds)."
     read -r -p "Continue? [y/N] " confirm
     [[ "$confirm" =~ ^[Yy]$ ]] || { echo "Aborted."; exit 0; }
+    _hermes_down
     $COMPOSE --profile full down
     for vol in gateway-data clamav-db; do
       docker volume rm "${PROJECT}_${vol}" 2>/dev/null && echo "  Removed ${PROJECT}_${vol}" || true
@@ -351,14 +411,25 @@ case "${1:-}" in
     _prune_docker
     setup_ephemeral_secrets
     $COMPOSE build --no-cache
+    [[ "$_WANT_HERMES" == "1" ]] && $COMPOSE build hermes --no-cache
     $COMPOSE $_PROFILE_FLAG up -d
+    [[ "$_WANT_HERMES" == "1" ]] && _hermes_up
     _reset_device_store
     echo "Clean rebuild complete."
     ;;
   prune)   _prune_docker ;;
   pull)    cd "$REPO_DIR" && git pull --rebase ;;
-  status)  $COMPOSE ps ;;
-  logs)    $COMPOSE logs -f --tail=100 ${2:-} ;;
+  status)
+    $COMPOSE ps
+    bash "$REPO_DIR/docker/bots/hermes/run-standalone.sh" status 2>/dev/null || true
+    ;;
+  logs)
+    if [[ "${2:-}" == "hermes" ]]; then
+      bash "$REPO_DIR/docker/bots/hermes/run-standalone.sh" logs
+    else
+      $COMPOSE logs -f --tail=100 ${2:-}
+    fi
+    ;;
   test)    $COMPOSE exec gateway python -m pytest gateway/tests/ -q ;;
   canary)
     SERVICE=${2:-gateway}

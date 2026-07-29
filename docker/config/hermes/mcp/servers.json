@@ -2,10 +2,10 @@
   "_comment": "MCP server definitions — no tokens or secrets here. Tokens injected at deploy time from 1Password secrets.",
   "servers": {
     "agentshroud-gateway": {
-      "description": "AgentShroud Gateway MCP proxy",
+      "description": "AgentShroud Gateway MCP proxy — DISABLED 2026-07-18: gateway has never actually served this endpoint (curl http://gateway:8080/mcp returns 404, no route registered in gateway/ingest_api). Every Hermes boot failed this connection after 3 retries; on the current vendored hermes-agent version the failed-connection path now 'parks' the task (vs. the older 'gives up' behavior), which correlates with a fatal container-wide shutdown ~25-38s into boot. Re-enable only once gateway actually implements /mcp.",
       "type": "http",
       "url": "http://gateway:8080/mcp",
-      "enabled": true
+      "enabled": false
     }
   }
 }

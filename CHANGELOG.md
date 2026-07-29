@@ -8,6 +8,84 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.3.0] "Reliability" (2026-07-21)
+
+### Summary
+
+v1.3.0 hardens reliability and locks in an **honest** container-security posture —
+real fixes only, no suppression. Includes the resolution of a Hermes crash-storm
+that had forced production onto a rollback image; the latest Hermes/OpenClaw
+images now install and upgrade cleanly.
+
+### Fixed
+
+- **Hermes crash-storm root cause (PR #326)**: `docker/bots/hermes/init-config.sh`
+  called the nonexistent `tirith rules list` subcommand. Under the script's
+  `set -euo pipefail`, the unguarded pipeline assignment propagated tirith's
+  `exit 2` even though every downstream stage succeeded, aborting the script —
+  which, as s6-overlay's Architecture-B "main program," took the entire
+  container down ~25-40s into every boot. Fixed by switching to the real
+  `tirith explain --list --format json` subcommand and guarding the assignment
+  with `|| true` so a future CLI rename degrades gracefully instead of killing
+  the container.
+- **Hermes silently non-functional on first-time install**: a genuinely fresh
+  Hermes volume never auto-started the `gateway-default` s6 service (the
+  vendor reconciler only auto-starts profiles whose *last recorded* state was
+  `running` — a brand-new profile has none). The container reported Docker
+  `healthy` while Telegram/Discord never connected, indefinitely, with no
+  restart and no alert. `init-config.sh` now detects and starts a
+  registered-but-never-started `gateway-default` on first boot.
+- **Dual-gateway-process race + shell `set -e` bug in `start.sh`**: removed a
+  redundant second `hermes gateway run` launch that raced the vendor image's
+  own s6-rc-supervised `gateway-default` for the same Telegram `getUpdates`
+  session; fixed the keep-alive loop so any signal (not just TERM/INT)
+  interrupting the backgrounded `sleep` no longer silently killed the
+  container.
+- **`scripts/update-agentshroud.sh` targeted the wrong service/volume names**
+  (`agentshroud` service, `docker_agentshroud-config` volume) against the real
+  compose topology (`openclaw` service, `agentshroud_agentshroud-config`
+  volume) — every step would have failed on a real install. Fixed to resolve
+  the compose project name the same way `scripts/asb` does.
+- **README / `docs/setup/HERMES_SETUP.md` documented a raw
+  `docker-compose --profile full up -d`** for starting Hermes, bypassing the
+  gateway-health sequencing in `scripts/asb up full`. Corrected to point at
+  `asb`.
+- **`docs/setup/OPENCLAW_SETUP.md` referenced stale container/volume names**
+  (`openclaw-bot`, `agentshroud_openclaw-data`) that don't match the current
+  compose file (`agentshroud-openclaw`, `agentshroud-config`).
+
+### Security
+
+- **Honest infra-CVE gate (no security theater)**: container-image CVEs fixed
+  for real (slsa-verifier from-source go-mod overrides, Hermes venv patch
+  bumps) with **zero `.trivyignore` suppression**. The CVEs that remain have
+  **no upstream patch** (Debian `fix:NONE`) and are documented as "currently
+  unmitigable" with evidence in
+  [`docs/security/cve-mitigation-matrix.md`](docs/security/cve-mitigation-matrix.md).
+- Bare-IP-literal CONNECT requests in `gateway/proxy/http_proxy.py` now fast-403
+  instead of bypassing domain-based egress filtering.
+
+### Added
+
+- Hermes **weekly Jira keep-alive cron**.
+- ESP32 **OTA-serve endpoint** (`/firmware/bin`, strong-ETag + per-device token)
+  and face experiment #1 (canvas heap-placement diagnostics).
+
+### Changed
+
+- CI recovery plus a deterministic fix for a date-boundary test flake (clock
+  frozen in the GHSA scheduler test).
+- Bot **SSH-exec wrapper** so internal-gateway calls stop tripping the HIGH
+  command-approval prompt.
+- Upstream-CVE Telegram alerts are now length-capped (no more oversized-message
+  HTTP 400), and the OpenClaw Slack plugin is granted explicit trust.
+- `fastapi`, `uvicorn`, `websockets`, and Docker SDK dependency bumps.
+- ESP32 firmware reliability: TWDT reboot-loop, PTT stuck-streaming, and
+  audio-starvation fixes — websocket task pinned to CPU 1 at priority 4,
+  1 ms/frame yield, tap-to-stop PTT, and 16 kHz I2S pre-init.
+
+---
+
 ## [1.2.4] — release/v1.2.4 (2026-06-29)
 
 ### Summary

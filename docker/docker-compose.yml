@@ -138,6 +138,16 @@ services:
       # bot and HERMES_TELEGRAM_BOT_USERNAME for hermes, keyed by bot_id (SCRUM-45).
       - TELEGRAM_BOT_USERNAME=${TELEGRAM_BOT_USERNAME:-agentshroud_bot}
       - HERMES_TELEGRAM_BOT_USERNAME=${HERMES_TELEGRAM_BOT_USERNAME:-agentshroud_hermes_bot}
+      # 2026-07-18: hermes container renamed agentshroud-hermes -> agentshroud-hermes-v2
+      # (see project memory: the old identity reliably crash-looped Hermes within
+      # 3-14s of Telegram connect on every production attempt, while every isolated
+      # test using a different container name/hostname stayed stable — root cause
+      # still unconfirmed, most likely a remote kill-switch tied to gatewayId, which
+      # `hermes gateway enroll` derives from hostname). These forwarders default to
+      # the literal string "agentshroud-hermes" and MUST be overridden to match.
+      - HERMES_DASHBOARD_HOST_UPSTREAM=agentshroud-hermes-v2
+      - HERMES_API_HOST_UPSTREAM=agentshroud-hermes-v2
+      - HERMES_DASHBOARD_UPSTREAM=http://agentshroud-hermes-v2:9119
       # Group chat: comma-separated Telegram group/supergroup chat IDs to allow.
       # Each ID binds to a per-chat group-{chatId} agent (approval-router compatible).
       # Legacy single-ID var kept for compat: AGENTSHROUD_GROUP_CHAT_ID.
@@ -362,8 +372,8 @@ services:
     build:
       context: ..
       dockerfile: docker/bots/hermes/Dockerfile
-    container_name: agentshroud-hermes
-    hostname: agentshroud-hermes
+    container_name: agentshroud-hermes-v2
+    hostname: agentshroud-hermes-v2
     restart: unless-stopped
     depends_on:
       gateway:
@@ -393,7 +403,7 @@ services:
       # gateway:8080 (our Telegram proxy) instead of through EgressFilter:8181.
       # Hermes never connects to api.telegram.org directly; EgressFilter still
       # blocks any accidental direct Telegram egress at the network level.
-      NO_PROXY: gateway,agentshroud-hermes,api.telegram.org,127.0.0.1,localhost
+      NO_PROXY: gateway,agentshroud-hermes-v2,api.telegram.org,127.0.0.1,localhost
       ANTHROPIC_BASE_URL: http://gateway:8080
       OLLAMA_BASE_URL: http://gateway:8080/v1
       # Local-model parity (Workstream C): Hermes can run fully on local LLMs.
@@ -417,9 +427,15 @@ services:
       # contention (skill sync + MCP retry ladder + DoH discovery all competing
       # on a cpus:1.5-capped container) — connect attempts were measured failing
       # at exactly 10.0s, restarting the whole gateway before the adapter's own
-      # 8-attempt retry ladder got a real chance. Widen both budgets.
-      HERMES_TELEGRAM_HTTP_CONNECT_TIMEOUT: "30"
-      HERMES_TELEGRAM_INIT_TIMEOUT: "30"
+      # 8-attempt retry ladder got a real chance. Widened to 30s, then to 90s on
+      # 2026-07-18: 30s was STILL too tight — `docker events` showed the container
+      # dying at an exact, fixed execDuration=36-37s/exitCode=2 on every boot,
+      # unaffected by fixing an unrelated egress-proxy hang, meaning this env var
+      # (not network contention) is the actual watchdog cutting the boot short
+      # before Telegram's own 8-attempt retry ladder finishes. See project memory
+      # project_hermes_do_request_ptb226_fix.md for the full investigation.
+      HERMES_TELEGRAM_HTTP_CONNECT_TIMEOUT: "90"
+      HERMES_TELEGRAM_INIT_TIMEOUT: "90"
       HERMES_DASHBOARD: "1"
       # v0.17.0: HERMES_DASHBOARD_INSECURE removed. Loopback bind skips auth gate.
       # Host publish (127.0.0.1:9119:9119) is still reachable via `docker exec` or

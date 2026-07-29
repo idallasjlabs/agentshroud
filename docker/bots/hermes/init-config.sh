@@ -19,6 +19,30 @@ DATA_DIR="${INIT_DATA_DIR:-/opt/data}"
 
 echo "[hermes-init] Checking config..."
 
+# ── First-boot gateway auto-start ───────────────────────────────────────────
+# hermes_cli.container_boot (vendor, /etc/cont-init.d/02-reconcile-profiles)
+# only auto-starts a profile's s6 service when its LAST RECORDED state was
+# `running` — see that script's own header comment. A genuinely first-ever
+# boot has no recorded state, so the vendor reconciler REGISTERS the
+# `gateway-default` s6 service slot (creates /run/service/gateway-default/)
+# but leaves its `down` sentinel file in place, and never calls `s6-svc -u`.
+# The container then reports Docker-healthy (the dashboard/API-server s6
+# services DO start) while the actual Telegram/Discord gateway process never
+# runs at all — confirmed live on a first-time install (marvin, 2026-07-19):
+# 43+ hours "Up", RestartCount=0, zero bytes ever written to
+# /opt/data/logs/gateways/default/current. Silent, and easy to miss because
+# nothing crashes or restarts — `docker ps` just shows "unhealthy" forever.
+# Idempotent: on every boot AFTER the first, the vendor reconciler has
+# already removed `down` (prior_state=running), so this is a no-op.
+_GW_DOWN_FILE="/run/service/gateway-default/down"
+if [ -f "${_GW_DOWN_FILE}" ]; then
+    echo "[hermes-init] gateway-default registered but never started (first boot) — starting it"
+    rm -f "${_GW_DOWN_FILE}"
+    s6-svc -u /run/service/gateway-default 2>/dev/null \
+        && echo "[hermes-init] ✓ gateway-default started" \
+        || echo "[hermes-init] WARN: could not start gateway-default (will retry next boot)"
+fi
+
 # config.yaml — Hermes primary config file
 # First-boot: seed from template if absent.
 # Upgrade path: if present but missing telegram.extra.base_url (added in v1.1.0
@@ -266,12 +290,34 @@ if [ -x /opt/data/bin/tirith ]; then
     # OTHER host) is still scanned. http://gateway is the internal Docker
     # control-plane (compose network `internal: true`, not internet-exposed).
     #
-    # tirith's rule id for this flag is discovered at runtime (its help/list
+    # tirith's rule id for this flag is discovered at runtime (its `explain --list`
     # output) rather than hard-coded, so a tirith version bump that renames the
     # rule can't silently create a wrong-rule no-op that looks trusted but isn't.
-    _http_rules="$(/opt/data/bin/tirith rules list 2>/dev/null \
-        | awk '/[Hh][Tt][Tt][Pp]|execution context|unencrypted|insecure/ {print $1}' \
-        | tr -d ':' | sort -u)"
+    #
+    # CRASH-STORM ROOT CAUSE (2026-07-20): this used to call the nonexistent
+    # `tirith rules list` subcommand (real CLI has no `rules` command — see
+    # `tirith --help`). That failed with exit 2 on every boot; under this
+    # script's `set -euo pipefail`, an unguarded pipeline assignment propagates
+    # the failure even though every downstream awk/tr/sort stage succeeds, which
+    # aborted this whole script, which aborted start-hermes.sh (the container's
+    # s6-overlay "main program"), which took the ENTIRE Hermes container down —
+    # every ~25-40s, indistinguishable from a Python-level crash because the
+    # actual gateway process was healthy and idle the whole time. `|| true`
+    # restores this block's originally-intended graceful degradation (the `else`
+    # branch below already existed for exactly this "not enumerable" case).
+    _http_rules="$(/opt/data/bin/tirith explain --list --format json 2>/dev/null \
+        | python3 -c '
+import json, sys
+try:
+    rules = json.load(sys.stdin)
+except Exception:
+    rules = []
+keywords = ("http", "execution context", "unencrypted", "insecure")
+for r in rules:
+    blob = " ".join(str(r.get(k, "")) for k in ("id", "title", "description")).lower()
+    if any(k in blob for k in keywords):
+        print(r.get("id", ""))
+' 2>/dev/null | sort -u)" || true
     if [ -n "${_http_rules}" ]; then
         for _rule in ${_http_rules}; do
             for _gw in gateway "gateway:8080"; do

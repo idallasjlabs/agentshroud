@@ -411,10 +411,17 @@ class TestConfigValidation:
         assert (
             "TRAP" not in script or "trap" in script
         ), "Must set TERM/INT trap for shutdown notification"
+        # 2026-07-18: start.sh no longer launches `hermes gateway run &` itself —
+        # the vendored image's own s6-rc `gateway-default` service owns the
+        # gateway process (see start.sh's own comment on this). Running a second
+        # instance here raced gateway-default for the same Telegram getUpdates
+        # session and caused a restart-storm (project_hermes_do_request_ptb226_fix.md).
+        # start.sh now only needs to stay alive as s6-overlay's main program via a
+        # backgrounded-and-waited sleep loop, so its own TERM/INT trap still fires.
         assert (
-            "hermes gateway run &" in script
-        ), "Must run hermes in background (not exec) to enable trap"
-        assert "wait" in script, "Must wait on background hermes PID"
+            "sleep 3600 &" in script
+        ), "Must keep the main program alive via a backgrounded (not exec'd) sleep to enable trap"
+        assert "wait $!" in script, "Must wait on the backgrounded sleep, not exec into it"
         assert (
             "_STARTUP_NOTICE_STAMP" in script
         ), "Must use cooldown stamp to suppress duplicate notifications"

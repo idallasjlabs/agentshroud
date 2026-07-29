@@ -197,15 +197,20 @@ sudo tailscale serve --https=9121 --bg http://localhost:9121
 
 ### Starting the HCI Container
 
-HCI starts as part of the `full` compose profile:
+HCI starts as part of the `full` profile:
 
 ```bash
 # Full stack (gateway + OpenClaw + Hermes + HCI)
-docker-compose -f docker/docker-compose.yml -p agentshroud --profile full up -d
+scripts/asb up full
 
 # Verify HCI is running
 docker ps --filter name=agentshroud-hci
 ```
+
+Use `scripts/asb up full`, not a raw `docker-compose --profile full up -d` — Hermes
+deploys via `docker/bots/hermes/run-standalone.sh` under `asb`, which sequences it
+after the gateway is confirmed healthy. A raw compose invocation skips that
+sequencing.
 
 ---
 

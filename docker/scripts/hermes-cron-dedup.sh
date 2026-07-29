@@ -6,11 +6,11 @@
 # Idempotent — safe to run multiple times; a second run is a no-op.
 #
 # Usage: bash docker/scripts/hermes-cron-dedup.sh
-# Requires: agentshroud-hermes container running
+# Requires: agentshroud-hermes-v2 container running
 
 set -euo pipefail
 
-CONTAINER="${HERMES_CONTAINER:-agentshroud-hermes}"
+CONTAINER="${HERMES_CONTAINER:-agentshroud-hermes-v2}"
 
 echo "[hermes-dedup] Cleaning up duplicate cron jobs in ${CONTAINER}..."
 

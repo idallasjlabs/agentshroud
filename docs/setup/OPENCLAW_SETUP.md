@@ -51,27 +51,24 @@ OpenClaw supports multiple ways to interact with your bot:
 ### 1. Build and Start OpenClaw
 
 ```bash
-cd /Users/ijefferson.admin/Development/agentshroud
+cd agentshroud
 
 # Stop old containers
-docker compose -f docker/docker-compose.yml down
+scripts/asb down
 
-# Remove old volumes (optional - clean slate)
-docker volume rm agentshroud_openclaw-data 2>/dev/null || true
+# Remove old volume (optional - clean slate)
+docker volume rm agentshroud-config 2>/dev/null || true
 
 # Build and start with new OpenClaw
-docker compose -f docker/docker-compose.yml up -d --build
-
-# Wait for containers to be healthy (60-90 seconds for first build)
-sleep 90
+scripts/asb clean-rebuild
 
 # Check status
-docker compose -f docker/docker-compose.yml ps
+scripts/asb status
 ```
 
 Both containers should show `(healthy)`:
 - `agentshroud-gateway` - Your audit/PII layer
-- `openclaw-bot` - Real OpenClaw platform
+- `agentshroud-openclaw` - Real OpenClaw platform
 
 ### 2. Access OpenClaw Control UI
 

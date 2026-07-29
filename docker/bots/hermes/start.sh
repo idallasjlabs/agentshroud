@@ -214,11 +214,13 @@ _email_owner() {
         >/dev/null 2>&1
 }
 
-# Forward TERM/INT to hermes process.
+# Forward TERM/INT to a clean shutdown.
 # Order: release Telegram lock first (removes getUpdates conflict on restart),
-# then notify Isaiah, then SIGTERM the daemon (graceful asyncio shutdown),
-# wait up to 8s for cleanup, SIGKILL if still alive.
-# _HERMES_PID is set after the background launch below.
+# then notify Isaiah, then exit — the actual gateway process (gateway-default)
+# is s6-rc supervised and torn down by the normal container shutdown sequence,
+# not by this script. This trap must end with `exit 0`: without it, the
+# script would resume the keep-alive loop below instead of actually stopping,
+# leaving the container to hang until Docker's SIGKILL grace period expires.
 trap '
     echo "[hermes-startup] Shutdown signal received"
     _release_telegram_lock \
@@ -227,15 +229,7 @@ trap '
     _telegram_send "🔴 Hermes shutting down" \
         && echo "[hermes-startup] ✓ Sent Telegram shutdown notification" \
         || echo "[hermes-startup] ⚠ Could not send Telegram shutdown notification"
-    if [ -n "${_HERMES_PID:-}" ]; then
-        kill -TERM "${_HERMES_PID}" 2>/dev/null || true
-        _w=0
-        while [ "${_w}" -lt 8 ]; do
-            kill -0 "${_HERMES_PID}" 2>/dev/null || break
-            sleep 1; _w=$((_w + 1))
-        done
-        kill -KILL "${_HERMES_PID}" 2>/dev/null || true
-    fi
+    exit 0
 ' TERM INT
 
 # Wait for the gateway's /telegram-api reverse proxy to be ready before
@@ -308,10 +302,25 @@ echo "[hermes-startup] Starting Hermes Agent gateway (Telegram/Discord long-poll
     fi
 ) &
 
-# Run Hermes in background so the TERM/INT trap above can fire on shutdown.
-# (exec would replace the shell, preventing trap execution.)
-hermes gateway run &
-_HERMES_PID=$!
+# 2026-07-18: this used to `exec`/background its own `hermes gateway run` here
+# and `wait` on it below. The vendored image now ALSO auto-starts its own
+# s6-rc-supervised gateway process for the persisted "default" profile
+# (service `gateway-default`, launched by `hermes_cli.container_boot` from
+# /etc/cont-init.d/02-reconcile-profiles, BEFORE this script ever runs, using
+# `hermes gateway run --replace`). Launching a second instance here raced it
+# for the same Telegram getUpdates session — confirmed via `ps aux` showing
+# both processes live for the same bot token — and whichever one we launched
+# would lose the Conflict and die. Because this script is s6-overlay's "main
+# program" (Docker's CMD), that death made `wait $_HERMES_PID` return, which
+# ended the whole container (not just one service), triggering
+# `restart: unless-stopped` and repeating the race forever — the restart
+# storm documented in project memory project_hermes_do_request_ptb226_fix.md.
+# Do NOT launch a second gateway here. `gateway-default` is authoritative;
+# this script only needs to stay alive as the container's main program so
+# the TERM/INT trap above (Telegram lock release + shutdown notice) still
+# fires on a real container stop, while s6-rc handles gateway-default's own
+# restarts independently without tearing down the container.
+echo "[hermes-startup] Hermes gateway is owned by the s6-rc 'gateway-default' service — not launching a second instance here."
 
 # Post-migration model lock (SCRUM-70 — WS-C local-model parity):
 # Hermes schema migration (0→30) resets model.default to a cloud model on every
@@ -351,4 +360,19 @@ _HERMES_PY="/opt/hermes/.venv/bin/python3"
     done
 ) &
 
-wait $_HERMES_PID
+# Keep this main program alive so the container doesn't exit while
+# gateway-default (s6-rc supervised, see the note above) keeps running and
+# restarts independently of this script on its own failures. `sleep` is
+# backgrounded and re-waited in a loop (not `exec`'d) so the TERM/INT trap
+# above still fires immediately and can run its cleanup + `exit 0`.
+# `wait` returns non-zero (128+signum) whenever the backgrounded sleep is
+# interrupted by ANY signal, including ones this script doesn't trap (e.g.
+# SIGCHLD-adjacent job-control noise from other s6-rc services churning) —
+# under `set -e` that non-zero return would silently kill this script (and
+# therefore the whole container, since this is s6-overlay's main program)
+# even though no real shutdown was requested. `|| true` neutralizes that;
+# the trap's own explicit `exit 0` still ends the script on a genuine TERM/INT.
+while true; do
+    sleep 3600 &
+    wait $! || true
+done

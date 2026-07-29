@@ -280,13 +280,18 @@ console.log('\nHermes (init-config.sh):');
   const hSkill = path.join(dataDir, 'skills', 'graphify', 'SKILL.md');
   assert('H2: graphify SKILL.md installed into /opt/data/skills/', fs.existsSync(hSkill), hSkill);
 
-  // H3: MCP registered by writing mcp_servers into config.yaml (NOT via the
-  // interactive `hermes mcp add`), url read from servers.json, enabled:true.
+  // H3: agentshroud-gateway is intentionally disabled in the synced servers.json
+  // (2026-07-18: the gateway has never actually served /mcp — confirmed 404 —
+  // so every Hermes boot failed this connection after 3 retries, which on the
+  // vendored hermes-agent version correlates with a fatal container-wide
+  // shutdown; see docker/config/hermes/mcp/servers.json and
+  // ~/.llm_settings/mcp/servers.json). The reconciliation code skips disabled
+  // entries entirely (init-config.sh: `if ... s.get("enabled") is False: continue`),
+  // so it must NOT appear in config.yaml's mcp_servers at all.
   const servers = readHermesMcpServers(path.join(dataDir, 'config.yaml'));
-  const gw = servers['agentshroud-gateway'];
   assert(
-    'H3: config.yaml mcp_servers.agentshroud-gateway has servers.json URL + enabled',
-    !!gw && gw.url === 'http://gateway:8080/mcp' && String(gw.enabled) === 'true',
+    'H3: config.yaml mcp_servers has no agentshroud-gateway entry (disabled in servers.json, gateway does not serve /mcp)',
+    !servers['agentshroud-gateway'],
     `mcp_servers: ${JSON.stringify(servers)}`,
   );
 
