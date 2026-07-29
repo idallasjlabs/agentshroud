@@ -397,6 +397,17 @@ class HTTPConnectProxy:
         # Retry up to 3 times with brief backoff to handle transient network
         # hiccups (VPN reconnect, Colima networking blip) without immediately
         # returning 502 — which crashes OpenClaw's unhandled Bolt error path.
+        #
+        # happy_eyeballs_delay (RFC 8305): without it, a hostname resolving to
+        # both an AAAA and A record ties this connection to whichever address
+        # getaddrinfo() returns first — if that family is dead (confirmed on
+        # marvin: IPv6 to api.anthropic.com/hc-ping.com fails outright, IPv4
+        # works), every attempt eats several seconds before failing outright,
+        # instead of racing both and using whichever answers. Under concurrent
+        # load this pushed real attempts past the 10s per-attempt timeout,
+        # surfacing as "CONNECT tunnel failed ... after 3 attempts" and
+        # breaking every proxied HTTPS call — LLM completions, Healthchecks.io
+        # pings — until traced back here.
         _MAX_CONNECT_ATTEMPTS = 3
         _CONNECT_RETRY_DELAYS = [0.5, 1.5]  # seconds between attempts
         target_reader = target_writer = None
@@ -411,7 +422,7 @@ class HTTPConnectProxy:
                 await asyncio.sleep(_delay)
             try:
                 target_reader, target_writer = await asyncio.wait_for(
-                    asyncio.open_connection(host, port),
+                    asyncio.open_connection(host, port, happy_eyeballs_delay=0.25),
                     timeout=10.0,
                 )
                 break  # success

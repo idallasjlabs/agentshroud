@@ -227,7 +227,7 @@ async def test_connect_system_bypass_domain_skips_policy_checks(monkeypatch):
                 rule="deny",
             )
 
-    async def _open_conn(_host, _port):
+    async def _open_conn(_host, _port, **_kwargs):
         r = asyncio.StreamReader()
         r.feed_eof()
         return r, _DummyTargetWriter()
@@ -263,7 +263,7 @@ async def test_connect_unknown_domain_can_be_allowed_by_interactive_egress(monke
                 rule="allow",
             )
 
-    async def _open_conn(_host, _port):
+    async def _open_conn(_host, _port, **_kwargs):
         r = asyncio.StreamReader()
         r.feed_eof()
         return r, _DummyTargetWriter()
@@ -327,7 +327,7 @@ async def test_system_bypass_domain_logs_external_decision(monkeypatch):
     class _MockEgressFilter:
         _approval_queue = _MockApprovalQueue()
 
-    async def _open_conn(_host, _port):
+    async def _open_conn(_host, _port, **_kwargs):
         r = asyncio.StreamReader()
         r.feed_eof()
         return r, _DummyTargetWriter()
@@ -354,7 +354,7 @@ async def test_system_bypass_domain_logs_external_decision(monkeypatch):
 async def test_system_bypass_without_egress_filter(monkeypatch):
     """System bypass domains should not error when egress_filter is None."""
 
-    async def _open_conn(_host, _port):
+    async def _open_conn(_host, _port, **_kwargs):
         r = asyncio.StreamReader()
         r.feed_eof()
         return r, _DummyTargetWriter()
