@@ -80,10 +80,26 @@ RUN corepack enable
 # Set working directory
 WORKDIR /app
 
-# Install OpenClaw from npm registry. Tracking @latest per owner decision
-# 2026-06-13 — rebuild bumps to whatever is current on npm at build time.
-RUN npm install -g openclaw@latest \
+# Install OpenClaw from npm registry, pinned to an explicit version. Pin lives in
+# docker/versions.env (OPENCLAW_VERSION) — the single source of truth shared with
+# scripts/update-agentshroud.sh and CI's CVE tracking. To bump: run
+# `scripts/update-agentshroud.sh --bot openclaw --openclaw-latest` (runs a
+# compatibility check against the candidate before it ever touches this file), or
+# `npm view openclaw version` + edit OPENCLAW_VERSION in docker/versions.env directly.
+#
+# (Superseded 2026-06-13 owner decision to float @latest — every rebuild silently
+# picking up whatever's newest on npm made updates unreviewable and undetectable.)
+#
+# An ARG referenced in a RUN command silently substitutes an empty string if unset
+# (unlike a FROM-line ARG, which hard-fails) — `openclaw@` with nothing after the @
+# is ambiguous across npm versions, so assert non-empty explicitly rather than rely
+# on npm's behavior for a malformed version spec.
+ARG OPENCLAW_VERSION
+RUN test -n "$OPENCLAW_VERSION" || { echo "ERROR: OPENCLAW_VERSION build arg is required — see docker/versions.env" >&2; exit 1; } \
+ && npm install -g openclaw@${OPENCLAW_VERSION} \
  && cat "$(npm root -g)/openclaw/package.json" | node -e "process.stdout.write(JSON.parse(require('fs').readFileSync(0)).version)" > /app/.openclaw-image-version \
+ && ACTUAL_VERSION="$(cat /app/.openclaw-image-version)" \
+ && [ "$ACTUAL_VERSION" = "$OPENCLAW_VERSION" ] || { echo "ERROR: installed openclaw version ($ACTUAL_VERSION) does not match pinned OPENCLAW_VERSION ($OPENCLAW_VERSION)" >&2; exit 1; } \
  && npm cache clean --force
 # SECURITY: Route LLM API through AgentShroud gateway
 COPY docker/scripts/patch-anthropic-sdk.sh /usr/local/bin/patch-anthropic-sdk.sh
