@@ -416,6 +416,50 @@ else
   echo "[init] ✓ AGENTS.md already references BRAND.md — skipping"
 fi
 
+# AGENTS.md: inject explicit SSH-lab-host access rules if absent.
+# AGENTS.md (this vendor-scaffolded workspace file, NOT docker/config/openclaw/AGENTS.md)
+# is the one file the project has confirmed local models (Qwen3, qwen2.5-coder,
+# deepseek-r1) reliably obey for tool-use rules — SOUL.md's equivalent SSH section
+# (workspace/SOUL.md "SSH Access") is not reliably read once OpenClaw fails over to a
+# local model. Without this, a freshly-scaffolded (or pre-2026-07-29) AGENTS.md has
+# zero SSH guidance, so a local-model run tries raw ssh/ping against lab hosts and
+# fails (no LAN route, no Tailscale daemon in this container) — Hermes never hit this
+# because it has a single always-refreshed SOUL.md and no local-model fallback split.
+if [ -f "${AGENTS_FILE}" ] && ! grep -q "agentshroud-ssh-exec.sh" "${AGENTS_FILE}" 2>/dev/null; then
+  SSH_SECTION_FILE="$(mktemp)"
+  cat > "${SSH_SECTION_FILE}" <<'SSHDOC'
+
+## SSH Access (Lab Hosts)
+
+You are inside a Docker container with NO LAN route and NO Tailscale daemon. Raw `ssh`,
+`ping`, and Tailscale hostnames (`*.ts.net`) all FAIL from here — this applies regardless
+of which model backend (cloud or local) is currently active. The ONLY way to reach a lab
+host is the baked-in helper `agentshroud-ssh-exec.sh <host> "<command>" "<reason>"
+"<optional-cwd>"`, which routes through the AgentShroud gateway's `/ssh/exec` endpoint.
+NEVER use raw `ssh`, `ping`, or Tailscale hostnames — and do not hand-write a
+`curl http://gateway:8080/ssh/exec` call either; use the helper script.
+
+| Host | Address | User | Purpose |
+|------|---------|------|---------|
+| `marvin` | 192.168.7.137 | agentshroud-bot | macOS dev workstation (Colima Docker runtime) |
+| `raspberrypi` | 192.168.7.25 | agentshroud-bot | Home lab Pi |
+| `trillian` | 192.168.7.103 | agentshroud-bot | Linux server (ethernet) |
+
+You have this access. Never claim you "cannot connect" as a blanket refusal — attempt the
+operation via `agentshroud-ssh-exec.sh` first. If it genuinely fails, report the real
+`stderr`/`exit_code` and diagnose from there.
+SSHDOC
+  if grep -q "^Don't ask permission\. Just do it\.\$" "${AGENTS_FILE}"; then
+    sed -i "/^Don't ask permission\. Just do it\.\$/r ${SSH_SECTION_FILE}" "${AGENTS_FILE}"
+  else
+    cat "${SSH_SECTION_FILE}" >> "${AGENTS_FILE}"
+  fi
+  rm -f "${SSH_SECTION_FILE}"
+  echo "[init] ✓ Added SSH lab-host access rules to AGENTS.md (local-model reliability fix)"
+else
+  echo "[init] ✓ AGENTS.md already documents agentshroud-ssh-exec.sh — skipping"
+fi
+
 # ── 3b. Collaborator workspace files ─────────────────────────────────────────
 # SOUL.md    — always refresh (authoritative anti-hallucination rules)
 # PUBLIC-INFO.md — seed only if missing (collaborator can't overwrite project info)
