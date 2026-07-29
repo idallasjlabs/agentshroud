@@ -517,7 +517,12 @@ services:
       - agentshroud-internal    # required for Docker host port publishing (internal: true nets cannot NAT)
       - agentshroud-isolated    # egress isolation — all outbound via gateway:8181 HTTP proxy
     ports:
-      - "8765:8765"  # Phase 1 LAN; Phase 2 restrict to loopback + tailscale serve
+      # Loopback-only (matches gateway's 127.0.0.1:8080:8080 pattern) — the bare
+      # "8765:8765" form dual-binds 0.0.0.0 AND [::] simultaneously, which races
+      # Colima/Lima's per-port SSH forward setup (two "added_local_ports" events
+      # for the same logical port hit the same SSH ControlMaster and one loses
+      # with exit 255) — confirmed 2026-07-28 via /Users/ijefferson.admin/.colima/_lima/colima/ha.stderr.log.
+      - "127.0.0.1:8765:8765"
     environment:
       HTTP_PROXY: http://gateway:8181
       HTTPS_PROXY: http://gateway:8181
@@ -550,7 +555,14 @@ services:
     tmpfs:
       - /tmp:size=64m,mode=1777
     volumes:
-      - ../firmware/voice-terminal/build:/firmware/build:ro
+      # ota-release/, NOT build/ — build/ is whatever the last local `idf.py
+      # build` produced, unreviewed. ota-release/ only gets populated by
+      # scripts/promote-firmware.sh, which gates on a physical hardware
+      # boot-test confirmation. See that script for why this distinction
+      # exists (2026-07-27 incident: an unverified build/ artifact went
+      # straight to the one physical production device over OTA and bricked
+      # it from remote management).
+      - ../firmware/voice-terminal/ota-release:/firmware/build:ro
     # 4g: torch+faster-whisper+Kokoro LOAD peak transiently exceeds 3g under VM
     # memory pressure → kernel OOM-kills PID 1 (die 137) → restart loop.  Caught
     # live 2026-07-02 (docker events: oom → die 137, repeating).  Steady-state

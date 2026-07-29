@@ -4,7 +4,7 @@
 # Usage:
 #   update-agentshroud.sh --bot openclaw --openclaw-version 2026.8.0
 #   update-agentshroud.sh --bot openclaw --openclaw-latest
-#   update-agentshroud.sh --bot hermes --hermes-image sha256:<digest>
+#   update-agentshroud.sh --bot hermes --hermes-image nousresearch/hermes-agent@sha256:<digest>
 #   update-agentshroud.sh --bot hermes --hermes-latest
 #   update-agentshroud.sh --bot both --openclaw-latest --hermes-latest
 #
@@ -61,7 +61,7 @@ case "$BOT" in
   "")
     echo "Usage: update-agentshroud.sh --bot openclaw|hermes|both \\" >&2
     echo "         [--openclaw-version X.Y.Z | --openclaw-latest] \\" >&2
-    echo "         [--hermes-image sha256:<digest> | --hermes-latest]" >&2
+    echo "         [--hermes-image nousresearch/hermes-agent@sha256:<digest> | --hermes-latest]" >&2
     exit 1
     ;;
   *) echo "Unknown --bot: $BOT (expected 'openclaw', 'hermes', or 'both')" >&2; exit 1 ;;
@@ -72,7 +72,7 @@ if [ "$WANT_OPENCLAW" -eq 1 ] && [ -z "$OPENCLAW_VERSION_TARGET" ]; then
   exit 1
 fi
 if [ "$WANT_HERMES" -eq 1 ] && [ -z "$HERMES_IMAGE_TARGET" ]; then
-  echo "ERROR: --bot hermes|both requires --hermes-image sha256:<digest> or --hermes-latest" >&2
+  echo "ERROR: --bot hermes|both requires --hermes-image nousresearch/hermes-agent@sha256:<digest> or --hermes-latest" >&2
   exit 1
 fi
 
@@ -160,6 +160,27 @@ _rollback() {
   cp "$BACKUP_DIR/versions.env.bak" "$VERSIONS_ENV"
   echo "  ✓ Restored docker/versions.env"
   bash "$SCRIPT_DIR/restore-backup.sh" --yes "$BACKUP_DIR"
+  # restore-backup.sh only knows about docker-compose services (gateway,
+  # openclaw, voice-gateway) — Hermes deploys separately via run-standalone.sh
+  # (see the note at the "rebuild + restart" step above) and is invisible to
+  # it. Without this, a rollback triggered by a FAILED HERMES update would
+  # restore docker/versions.env's HERMES_IMAGE pin but leave Hermes itself
+  # stopped (this script's own "3. Rebuilding and restarting" step already
+  # ran `run-standalone.sh down` before the failed attempt) — a rollback that
+  # silently doesn't cover the one thing it was rolling back.
+  if [ "$WANT_HERMES" -eq 1 ]; then
+    echo "  → Restarting Hermes on the restored HERMES_IMAGE (not covered by restore-backup.sh)..."
+    set -a
+    # shellcheck source=docker/versions.env
+    . "$VERSIONS_ENV"
+    set +a
+    bash "$REPO_ROOT/docker/bots/hermes/run-standalone.sh" down 2>/dev/null || true
+    AGENTSHROUD_PROJECT="$PROJECT" \
+    AGENTSHROUD_VERSION="${AGENTSHROUD_VERSION:-latest}" \
+    AGENTSHROUD_SECRETS_DIR="$HOME/.agentshroud/.asb-secrets" \
+      bash "$REPO_ROOT/docker/bots/hermes/run-standalone.sh" up
+    echo "  ✓ Hermes restarted on restored HERMES_IMAGE=${HERMES_IMAGE}"
+  fi
   echo "=== ROLLBACK COMPLETE ==="
 }
 

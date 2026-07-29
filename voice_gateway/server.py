@@ -648,7 +648,7 @@ async def _call_agent(transcript: str, agent: str) -> str:
 async def voice_endpoint(ws: WebSocket) -> None:
     await ws.accept()
     token = ws.query_params.get("token", "")
-    if _VG_AUTH_TOKEN and token != _VG_AUTH_TOKEN:
+    if _VG_AUTH_TOKEN and not hmac.compare_digest(token, _VG_AUTH_TOKEN):
         logger.warning("Rejected WS connection (invalid token) from %s", ws.client)
         await ws.close(code=1008)
         return

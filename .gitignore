@@ -391,3 +391,6 @@ firmware/voice-terminal/build/
 firmware/voice-terminal/managed_components/
 firmware/voice-terminal/dependencies.lock
 firmware/voice-terminal/main/wifi_credentials.h
+# Promoted OTA payload (scripts/promote-firmware.sh) — the compiled binary
+# embeds WiFi password + WS auth token in cleartext, same as build/ above.
+firmware/voice-terminal/ota-release/
