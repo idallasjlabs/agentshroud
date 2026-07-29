@@ -645,6 +645,6 @@ def test_all_streaming_clients_use_the_shared_connect_timeout_constant():
     timeout_calls = re.findall(r"_httpx\.Timeout\(\s*([^,]+),", source)
     assert timeout_calls, "expected at least one httpx.Timeout(...) call site"
     for connect_arg in timeout_calls:
-        assert connect_arg.strip() == "LLM_CONNECT_TIMEOUT_SECONDS", (
-            f"found a hardcoded connect timeout literal: {connect_arg.strip()!r}"
-        )
+        assert (
+            connect_arg.strip() == "LLM_CONNECT_TIMEOUT_SECONDS"
+        ), f"found a hardcoded connect timeout literal: {connect_arg.strip()!r}"
