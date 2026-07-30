@@ -119,7 +119,15 @@ cmd_up() {
 
   docker rm -f "$CONTAINER" >/dev/null 2>&1 || true
 
-  mapfile -t SECRET_ARGS < <(_secret_mount_args)
+  # Portable equivalent of `mapfile -t` — macOS ships bash 3.2 as /bin/bash
+  # (mapfile/readarray need bash 4+), and asb invokes this script via a literal
+  # `bash run-standalone.sh`, which resolves to /bin/bash regardless of any
+  # newer Homebrew bash earlier on PATH (bypasses the #!/usr/bin/env bash
+  # shebang lookup this script would otherwise get if run directly).
+  SECRET_ARGS=()
+  while IFS= read -r _secret_arg_line; do
+    SECRET_ARGS+=("$_secret_arg_line")
+  done < <(_secret_mount_args)
 
   echo "  [hermes-standalone] starting ${CONTAINER} from ${IMAGE} on ${NETWORK}..."
   # shellcheck disable=SC2086
