@@ -13,6 +13,7 @@
 #   S5. docker-compose.yml does NOT bind to 0.0.0.0 on sensitive ports
 #   S6. setup-secrets.sh routes display output to /dev/tty (garbled secret fix)
 #   S8. no raw ssh/ping/*.ts.net/agentshroud-bot@ in baked bot config (2026-07-17 fix)
+#   S9. init-openclaw-config.sh seeds ssh-exec rules into the live AGENTS.md (2026-07-29 fix)
 #
 # Run: bash tests/startup_smoke/test_bot_boot_static.sh
 # Exit 0 = pass. Exit 1 = fail.
@@ -119,6 +120,21 @@ done
 check "S8: no raw ssh/ping/Tailscale-hostname instructions in baked bot config" \
     "$([[ -z "$s8_hit" ]] && echo true || echo false)" \
     "Found: ${s8_hit}"
+
+# S9: init-openclaw-config.sh seeds explicit ssh-exec-only rules into the LIVE
+# workspace AGENTS.md (vendor-scaffolded, distinct from docker/config/openclaw/AGENTS.md).
+# AGENTS.md is the one file the project has confirmed local models (Qwen3, qwen2.5-coder,
+# deepseek-r1) reliably obey for tool-use rules — workspace/SOUL.md's own "SSH Access"
+# section is not reliably read once OpenClaw fails over to a local model, which let a
+# freshly-scaffolded (or pre-2026-07-29) AGENTS.md try raw ssh/ping against lab hosts
+# with zero guidance, even though S8 above was clean (the raw-ssh text was never baked
+# in — the SSH-exec instruction was just entirely absent). This is a positive-presence
+# check (S8 is negative-only) so a future edit that quietly drops the injection passes
+# S8 but fails here.
+init_sh="$REPO/docker/scripts/init-openclaw-config.sh"
+check "S9: init-openclaw-config.sh: seeds agentshroud-ssh-exec.sh rules into live AGENTS.md" \
+    "$(grep -q 'AGENTS_FILE' "$init_sh" && grep -q 'agentshroud-ssh-exec.sh' "$init_sh" && echo true || echo false)" \
+    "Live workspace AGENTS.md never gets SSH-exec-only rules injected — local-model failover can silently regress raw-ssh lab-host access"
 
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""
