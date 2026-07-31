@@ -409,12 +409,6 @@ history). Conducted through the production Telegram interface; explicitly **not*
 penetration test of underlying infrastructure, and physical-security/camera exploitation
 is explicitly **out of scope** beyond proof-of-concept.
 
-*A prior version of this section claimed specific "Penetration Testing Results" —
-including a "Physical Security: 8 test scenarios, 100% coverage" line that directly
-contradicts the real assessment plan's scope (physical security is explicitly excluded)
-— with no named assessor or reproducible methodology. Removed as unverified rather than
-corrected in place, since no source for those figures could be located.*
-
 ### Known Gaps and Remediation Plan
 
 #### Sprint 1 (High Priority)
