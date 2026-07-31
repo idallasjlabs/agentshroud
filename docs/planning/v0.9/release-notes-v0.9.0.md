@@ -239,19 +239,18 @@ AgentShroud v0.9.0 represents a major milestone in security proxy maturity, deli
 - **156 security tests** validating threat protection
 - **34 end-to-end tests** covering complete user journeys
 
-**Quality Metrics**
-- **Zero critical bugs** in production deployment
-- **98% regression detection rate** through automated testing
-- **2.3% false positive rate** in security alerts
-- **99.1% test reliability** with consistent results
-
 ### 🔒 Security Testing
 
-**Penetration Testing Results**
-- **Zero high-severity vulnerabilities** identified
-- **100% OWASP Top 10 coverage** with validation
-- **45 attack scenarios tested** with 100% protection
-- **Third-party security validation** completed
+**Adversarial Red-Team / Blue-Team Assessment**
+- Methodology: STPA-Sec (Systems-Theoretic Process Analysis for Security — Nancy Leveson, MIT), developed with security advisor Steven Hay — see `docs/planning/redteam/plan.md` for the full assessment plan and `docs/planning/redteam/` for the assessment history.
+- Scope: gateway detection/enforcement modules, exercised through the production Telegram interface — explicitly **not** a penetration test of underlying infrastructure, and explicitly **excludes** physical-security/camera exploitation beyond proof-of-concept (see the plan's Scope section).
+- This replaces a prior "Penetration Testing Results" claim in this section (zero high-severity vulnerabilities, 100% OWASP Top 10 coverage, 45 attack scenarios, "third-party security validation completed") that did not cite a named assessor or methodology and was inconsistent with the actual red-team plan's documented scope (which explicitly disclaims being a penetration test and excludes physical security). Removed as unverified rather than corrected in place, since no source for those specific figures could be located.
+
+**Automated Security Scanning**
+- **Daily vulnerability scans** with automated remediation
+- **Supply chain security** with dependency monitoring
+- **Container security scanning** integrated in CI/CD
+- **Code security analysis** with SAST/DAST tools
 
 **Automated Security Scanning**
 - **Daily vulnerability scans** with automated remediation

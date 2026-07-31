@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="AgentShroud™ — Enterprise governance proxy for autonomous AI agents. Intercepts, inspects, and policy-enforces every tool call, API request, and file operation without modifying your agent." />
   <meta property="og:title" content="AgentShroud™ — AI Agent Governance Proxy" />
-  <meta property="og:description" content="76 security modules. IEC 62443 aligned. Human-in-the-loop approvals. Open source." />
+  <meta property="og:description" content="68 security modules. IEC 62443 aligned. Human-in-the-loop approvals. Open source." />
   <meta property="og:url" content="https://agentshroud.ai" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -283,7 +283,7 @@
     <div class="pipeline">
       <span class="comment"># every request through every security module, every time</span><br>
       AI Agent &nbsp;<span class="arrow">→</span>&nbsp; <span class="shield">AgentShroud Gateway</span> &nbsp;<span class="arrow">→</span>&nbsp; Target System<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="comment">└── 76 modules │ 7 layers │ &lt;0.5ms P99</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="comment">└── 68 modules │ 7 layers │ &lt;0.5ms P99</span>
     </div>
   </div>
 </section>
@@ -292,12 +292,12 @@
 <div class="stats-bar">
   <div class="inner">
     <div>
-      <div class="stat-num">76</div>
+      <div class="stat-num">68</div>
       <div class="stat-label">Active security modules — zero stubs</div>
     </div>
     <div>
-      <div class="stat-num">3,871+</div>
-      <div class="stat-label">Tests — 94% coverage</div>
+      <div class="stat-num">4,300+</div>
+      <div class="stat-label">Tests — 85% coverage</div>
     </div>
     <div>
       <div class="stat-num">&lt;0.5 ms</div>
@@ -355,6 +355,11 @@
         <p>Cosign image signing, Trivy CVE scanning, Semgrep SAST, ClamAV malware scanning, Falco runtime enforcement.</p>
       </div>
       <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3>Adversarial Red-Team Assessment</h3>
+        <p>STPA-Sec methodology (Nancy Leveson, MIT), developed with security advisor Steven Hay — code-path and live assessments run through the production interface, not a synthetic benchmark.</p>
+      </div>
+      <div class="feature-card">
         <div class="feature-icon">⚖️</div>
         <h3>IEC 62443 Alignment</h3>
         <p>FR3→SL3 system integrity, FR6→SL3 audit logging with SHA-256 hash chains, FR7→SL2 availability hardening.</p>
@@ -367,7 +372,7 @@
 <section id="layers">
   <div class="container">
     <div class="section-label">Architecture</div>
-    <h2>7 defense layers, 76 modules</h2>
+    <h2>7 defense layers, 68 modules</h2>
     <p class="section-sub">Every inbound request traverses all active layers. Enforcement is the default — monitor mode requires explicit opt-in.</p>
 
     <table class="layer-table">
@@ -416,7 +421,7 @@
   <div class="container">
     <div class="section-label">GA Bot — Since v1.0.x</div>
     <h2>OpenClaw</h2>
-    <p class="section-sub">OpenClaw is AgentShroud's flagship production bot — a Node.js autonomous agent shipped as <code>agentshroud-openclaw</code>. It has been in production since v1.0.x and is the primary interface for Telegram, Slack, iOS Shortcuts, Browser Extension, SSH, and REST API — all traffic governed by the full 76-module security pipeline.</p>
+    <p class="section-sub">OpenClaw is AgentShroud's flagship production bot — a Node.js autonomous agent shipped as <code>agentshroud-openclaw</code>. It has been in production since v1.0.x and is the primary interface for Telegram, Slack, iOS Shortcuts, Browser Extension, SSH, and REST API — all traffic governed by the full 68-module security pipeline.</p>
 
     <div class="feature-grid">
       <div class="feature-card">
@@ -459,7 +464,7 @@ curl http://localhost:8080/status
   <div class="container">
     <div class="section-label">Second Bot</div>
     <h2>Hermes Agent</h2>
-    <p class="section-sub">Hermes is the second AgentShroud-secured autonomous AI agent — Python-based, built on <code>nousresearch/hermes-agent</code>. It runs alongside OpenClaw inside the same 76-module governance envelope, fully isolated on the <code>agentshroud-isolated</code> network with all LLM and egress traffic routed through the gateway.</p>
+    <p class="section-sub">Hermes is the second AgentShroud-secured autonomous AI agent — Python-based, built on <code>nousresearch/hermes-agent</code>. It runs alongside OpenClaw inside the same 68-module governance envelope, fully isolated on the <code>agentshroud-isolated</code> network with all LLM and egress traffic routed through the gateway.</p>
 
     <div class="feature-grid">
       <div class="feature-card">
@@ -470,7 +475,7 @@ curl http://localhost:8080/status
       <div class="feature-card">
         <div class="feature-icon">🔒</div>
         <h3>Security Posture</h3>
-        <p>All Hermes egress routes via <code>gateway:8181</code> (HTTP CONNECT proxy). All LLM calls route via <code>gateway:8080</code>. Same 76-module pipeline as OpenClaw — no bypass path exists at the container level.</p>
+        <p>All Hermes egress routes via <code>gateway:8181</code> (HTTP CONNECT proxy). All LLM calls route via <code>gateway:8080</code>. Same 68-module pipeline as OpenClaw — no bypass path exists at the container level.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">🌐</div>
@@ -501,7 +506,7 @@ curl http://localhost:8642/health
 <section id="voice">
   <div class="container">
     <h2>Voice Terminal</h2>
-    <p class="section-sub">The ESP32-S3-BOX-3 is an optional hardware control surface that lets you interact with any AgentShroud-proxied agent by voice — say "Hi, ESP" or tap the screen, speak naturally, and hear the agent's reply through the built-in speaker. All audio routes through the full 76-module security pipeline: PII redaction, prompt-guard, audit hash-chain, egress policy.</p>
+    <p class="section-sub">The ESP32-S3-BOX-3 is an optional hardware control surface that lets you interact with any AgentShroud-proxied agent by voice — say "Hi, ESP" or tap the screen, speak naturally, and hear the agent's reply through the built-in speaker. All audio routes through the full 68-module security pipeline: PII redaction, prompt-guard, audit hash-chain, egress policy.</p>
     <div class="feature-grid">
       <div class="feature-card">
         <div class="feature-icon">🎤</div>
@@ -5739,6 +5744,7 @@ idf.py -p /dev/cu.usbmodem* flash
     <div class="section-label">Compliance</div>
     <h2>Standards alignment</h2>
     <p class="section-sub">Built for regulated and OT-adjacent environments from the start.</p>
+    <p class="section-sub" style="font-size:0.85rem;opacity:0.75;">Self-assessed alignment against publicly available framework guidance — not a certified or independently audited Security Level. Overall system rating: SL 2, with SL 3 capability reached in the specific Foundational Requirements below. See <a href="https://github.com/idallasjlabs/agentshroud/blob/main/docs/compliance/iec-62443-matrix.md">the full compliance matrix</a> for methodology.</p>
 
     <!-- COMPLIANCE_CARDS_START -->
     <div class="compliance-grid">
