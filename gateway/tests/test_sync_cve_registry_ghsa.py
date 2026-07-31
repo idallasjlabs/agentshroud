@@ -271,23 +271,34 @@ class TestSnapshotSmoke:
     def test_openclaw_snapshot_registers_backlog_as_under_review(self):
         """The committed snapshot yields a real backlog, all honest under_review.
 
-        Diffs the snapshot against the PRE-backlog baseline (the registry with the
-        already-registered under_review entries removed) so the test proves the
-        snapshot would register the backlog regardless of whether the live sync has
-        already run — it does not depend on registry mutation ordering.
+        Diffs the snapshot against a PRE-backlog baseline reconstructed by dedup
+        key (ghsa_id), matching process_ghsa_advisories' own dedup logic exactly
+        -- NOT by filtering on status != "under_review". That status-based
+        proxy broke once a live triage run resolved every previously-under_review
+        entry to fully_mitigated (2026-07-31): the live registry then has zero
+        under_review entries, so filtering by status stopped removing anything
+        and the reconstructed "baseline" silently became the full post-sync
+        registry, masking real advisories as already-known. Filtering by ghsa_id
+        instead makes this test's baseline correct regardless of what status the
+        live registry's entries currently carry.
         """
         mod = _sync()
         import json
 
         from gateway.security.agent_cve_registry import _OPENCLAW_CVE_REGISTRY
 
-        # Reconstruct the pre-sync baseline: everything that is NOT an auto-
-        # registered under_review advisory (i.e. the assessed/mitigated backlog).
-        baseline = [e for e in _OPENCLAW_CVE_REGISTRY if e["status"] != "under_review"]
-
         snap = json.loads(
             (REPO_ROOT / "scripts" / "data" / "openclaw-ghsa-snapshot.json").read_text()
         )
+
+        # Reconstruct the pre-sync baseline: exclude any registry entry whose
+        # ghsa_id is one the snapshot would itself introduce -- the same dedup
+        # key process_ghsa_advisories uses, so this baseline is correct no
+        # matter what status those entries currently carry in the live registry.
+        snapshot_ghsa_ids = {a.get("ghsa_id") for a in snap["openclaw"] if a.get("ghsa_id")}
+        baseline = [
+            e for e in _OPENCLAW_CVE_REGISTRY if e.get("ghsa_id") not in snapshot_ghsa_ids
+        ]
         out = mod.process_ghsa_advisories(snap["openclaw"], baseline, "ASH-OCLAW")
         assert len(out) > 0
         assert all(e["status"] == "under_review" for e in out)
