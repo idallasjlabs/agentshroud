@@ -23,7 +23,7 @@
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License" />
   </a>
   <img src="https://img.shields.io/badge/trademark-AgentShroud™-1583f0" alt="AgentShroud™ Trademark" />
-  <img src="https://img.shields.io/badge/modules-76-blueviolet" alt="76 Security Modules" />
+  <img src="https://img.shields.io/badge/modules-68-blueviolet" alt="68 Security Modules" />
 </p>
 
 <p><em>Built by a system architect, for system architects. Powered by agents. Governed by design.</em></p>
@@ -69,7 +69,7 @@ Zero lint errors, zero test failures, zero skipped tests. Three async blocking c
 
 ### v1.2.0 "Voice" (June 2026)
 
-v1.2.0 adds the **ESP32-S3 Voice Terminal** — an optional hardware control surface for AgentShroud. Speak to your agents from anywhere via a pocket-sized device; all audio routes through the same 76-module security pipeline.
+v1.2.0 adds the **ESP32-S3 Voice Terminal** — an optional hardware control surface for AgentShroud. Speak to your agents from anywhere via a pocket-sized device; all audio routes through the same 68-module security pipeline.
 
 - **Voice Terminal** (`firmware/voice-terminal/`): ESP32-S3-BOX-3 firmware — WakeNet "Hi, ESP" wake word + touchscreen tap-to-talk. Whisper STT → AgentShroud gateway LLM → Piper TTS, streamed back to the device speaker.
 - **Voice Gateway** (`voice_gateway/`): FastAPI WebSocket service (`/voice`), token-authenticated. Async STT/TTS keeps the event loop live for WS keepalives. Server-side heartbeat prevents cellular idle drops.
@@ -81,14 +81,14 @@ v1.2.0 adds the **ESP32-S3 Voice Terminal** — an optional hardware control sur
 
 ### v1.1.x "Hermes" (May–June 2026)
 
-The v1.1.x line introduces **multi-bot governance**: AgentShroud now secures two autonomous AI agents simultaneously — **OpenClaw** (Node.js, the original) and **Hermes** (Python, `nousresearch/hermes-agent`) — through the same 76-module security pipeline.
+The v1.1.x line introduces **multi-bot governance**: AgentShroud now secures two autonomous AI agents simultaneously — **OpenClaw** (Node.js, the original) and **Hermes** (Python, `nousresearch/hermes-agent`) — through the same 68-module security pipeline.
 
 - **v1.1.0 "Hermes"** (2026-05-29): Hermes bot first-class peer to OpenClaw, Tailscale serve integration, per-bot Telegram tokens, ClamAV OOM fix, branding refresh
 - **v1.1.1** (2026-06-10): Two dormant guards (ContextIntegrityScorer, EnvelopeSigner) wired live, Gemini quota-failover translator, container log hygiene
 
 ### v1.0.0 "Fortress" foundations (March 2026)
 
-The original release wired all **76 security modules** into the live pipeline and delivered two complete control center interfaces — Web (7-page responsive dashboard) and Terminal (TUI + chat console). Every module is active in the pipeline — no stubs, no dead code, no planned-but-unbuilt features.
+The original release wired all **68 security modules** into the live pipeline and delivered two complete control center interfaces — Web (7-page responsive dashboard) and Terminal (TUI + chat console). Every module is active in the pipeline — no stubs, no dead code, no planned-but-unbuilt features.
 
 - **P0 — Core Pipeline**: PromptGuard, TrustManager, EgressFilter, PII fix, gateway binding
 - **P1 — Middleware**: 12 modules wired (7 original + SessionManager, TokenValidator, ConsentFramework, SubagentMonitor, AgentRegistry) + MCP fail-closed enforcement
@@ -156,15 +156,15 @@ The original release wired all **76 security modules** into the live pipeline an
 └───────────────────────────┘  └───────────────────────────────┘
 ```
 
-**Multi-bot**: v1.1.0 introduces a second bot — Hermes — running alongside OpenClaw behind the same 76-module gateway. Start the full stack (gateway + OpenClaw + Hermes + HCI) with `--profile full`; omit `--profile full` for gateway + OpenClaw only.
+**Multi-bot**: v1.1.0 introduces a second bot — Hermes — running alongside OpenClaw behind the same 68-module gateway. Start the full stack (gateway + OpenClaw + Hermes + HCI) with `--profile full`; omit `--profile full` for gateway + OpenClaw only.
 
 **MCP-native**: Any MCP-compatible agent (Claude Code, Gemini CLI, Codex) can plug in without modification. AgentShroud extends MCP with an enterprise governance layer.
 
 ---
 
-## 76 Security Modules
+## 68 Security Modules
 
-AgentShroud implements a defense-in-depth strategy with 76 security modules operating across 7 distinct layers, from network isolation to application-level content filtering.
+AgentShroud implements a defense-in-depth strategy with 68 security modules operating across 7 distinct layers, from network isolation to application-level content filtering.
 
 ### Core Security Pipeline
 

@@ -402,11 +402,12 @@ This report provides a comprehensive analysis of test coverage across AgentShrou
 - **A09 - Logging Failures**: **95%** (18/19 scenarios)
 - **A10 - SSRF**: **100%** (19 test scenarios)
 
-#### Penetration Testing Results
-- **Network Attacks**: 45 test scenarios, 100% blocked
-- **Application Attacks**: 67 test scenarios, 96% blocked
-- **Social Engineering**: 12 test scenarios, 83% detection rate
-- **Physical Security**: 8 test scenarios, 100% coverage
+#### Adversarial Red-Team / Blue-Team Assessment
+Methodology: STPA-Sec (Nancy Leveson, MIT), developed with security advisor Steven Hay —
+see `docs/planning/redteam/plan.md` (full plan) and `docs/planning/redteam/` (assessment
+history). Conducted through the production Telegram interface; explicitly **not** a
+penetration test of underlying infrastructure, and physical-security/camera exploitation
+is explicitly **out of scope** beyond proof-of-concept.
 
 ### Known Gaps and Remediation Plan
 

@@ -4,7 +4,7 @@ Welcome to AgentShroud! This guide will take you from zero to a fully secured AI
 
 ## What is AgentShroud?
 
-AgentShroud adds 76 security modules on top of OpenClaw, including:
+AgentShroud adds 68 security modules on top of OpenClaw, including:
 - **Egress filtering** — Control what domains your AI can access
 - **Message scanning** — Block malicious prompts and data exfiltration
 - **Audit logging** — Tamper-evident trail of all AI actions
@@ -69,7 +69,7 @@ curl http://localhost:8080/health
 ```
 
 That's it! AgentShroud is now running with:
-- ✅ All 76 security modules enabled
+- ✅ All 68 security modules enabled
 - ✅ OpenClaw AI assistant ready
 - ✅ Web dashboard at https://localhost:8443
 - ✅ Audit logging to local files
@@ -660,7 +660,7 @@ audit:
   retention_days: 365
   tamper_detection: true
 modules:
-  # Enable all 76 security modules
+  # Enable all 68 security modules
   "*": true
 ```
 
@@ -1008,7 +1008,7 @@ curl -X POST http://localhost:8080/api/chat \
 
 Before going to production, verify:
 
-- [ ] All 76 security modules show "active" status
+- [ ] All 68 security modules show "active" status
 - [ ] HTTPS dashboard accessible with valid certificate
 - [ ] Audit logging enabled with tamper detection  
 - [ ] 1Password integration working (no plaintext secrets)

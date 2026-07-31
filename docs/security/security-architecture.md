@@ -2,7 +2,9 @@
 
 ## Executive Summary
 
-AgentShroud implements a defense-in-depth security architecture with 26 specialized security modules operating across 7 distinct layers. This comprehensive approach ensures robust protection against emerging AI-specific threats while maintaining compatibility with existing OpenClaw deployments.
+AgentShroud implements a defense-in-depth security architecture across 7 distinct layers. This comprehensive approach ensures robust protection against emerging AI-specific threats while maintaining compatibility with existing OpenClaw deployments.
+
+*Note: the current, verified count is 68 security modules (see `gateway/security/`, and the summary in `CLAUDE.md`). The illustrative module inventory below predates that count and uses representative/generic module names rather than the actual current file-level implementation — treat it as an architectural pattern reference, not a literal enumeration.*
 
 ## Defense-in-Depth Architecture
 
