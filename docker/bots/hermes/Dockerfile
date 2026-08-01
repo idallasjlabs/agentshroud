@@ -68,6 +68,29 @@ RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 \
         tornado==6.5.6 \
         python-multipart==0.0.30
 
+# CVE registry verification pass (2026-07-31): real per-CVE research against the exact
+# installed versions in this image (see gateway/security/agent_cve_registry.py, Hermes
+# dependency findings) turned up 6 more vendored deps with a currently-unpatched CVE and
+# a backward-compatible PATCH/MINOR fix available -- same bump-in-venv pattern as above,
+# each independently reasoned as unlikely to break hermes-agent's usage of the package:
+#   httplib2         0.31.2 -> 0.32.0  (CVE-2026-59939 unbounded memory growth/OOM)
+#   pillow           12.2.0 -> 12.3.0  (CVE-2026-55798 OS command injection via Image.show() on Windows)
+#   pyasn1           0.6.3  -> 0.6.4   (CVE-2026-59886 availability-only DoS)
+#   pydantic-settings 2.13.1 -> 2.14.2 (CVE-2026-58203)
+#   pygments         2.19.2 -> 2.20.0  (CVE-2026-4539 local-access-only ReDoS)
+#   PyNaCl           1.5.0  -> 1.6.2   (CVE-2025-69277)
+# NOT bumped: python_olm (libolm) -- CVE-2024-45191/2/3 (side-channel/crypto weaknesses).
+# Upstream maintainers have stated libolm is deprecated and these will NOT be fixed; no
+# newer release exists to bump to. Tracked as a genuine, permanent residual risk in
+# docs/security/cve-mitigation-matrix.md, not hidden behind a green badge.
+RUN /usr/local/bin/uv pip install --python /opt/hermes/.venv/bin/python3 \
+        httplib2==0.32.0 \
+        pillow==12.3.0 \
+        pyasn1==0.6.4 \
+        pydantic-settings==2.14.2 \
+        pygments==2.20.0 \
+        PyNaCl==1.6.2
+
 # Crash-loop fix (2026-07-17): the Telegram adapter's getUpdates health instrumentation
 # does `request.do_request = _do_request` to wrap polling requests, but the vendored
 # python-telegram-bot 22.6 makes HTTPXRequest __slots__-based (do_request is a class

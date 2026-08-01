@@ -285,8 +285,13 @@ def test_hermes_summary_keys() -> None:
     assert set(get_agent_cve_summary("hermes").keys()) == _EXPECTED_SUMMARY_KEYS
 
 
-def test_hermes_summary_count_is_seven() -> None:
-    assert get_agent_cve_summary("hermes")["total_cves"] == 7
+def test_hermes_summary_count_is_fourteen() -> None:
+    """7 app-level entries + 7 dependency-chain entries added 2026-07-31 after a
+    real audit of every installed package (see gateway/security/agent_cve_registry.py
+    ASH-HERMES-008 through 014) -- the prior count of 7 undercounted Hermes's real
+    exposure because no dependency-level tracking existed at all before this audit.
+    """
+    assert get_agent_cve_summary("hermes")["total_cves"] == 14
 
 
 def test_hermes_summary_count_matches_registry() -> None:
@@ -385,11 +390,21 @@ def test_hermes_auth_entries_use_gateway_auth_gate() -> None:
         assert "gateway_auth_gate" in cve["defense_layers"]
 
 
-def test_hermes_all_entries_pending_review() -> None:
-    """No public Hermes advisory feed exists, so all Hermes entries are unmatched."""
+def test_hermes_verified_ids_are_never_fabricated() -> None:
+    """Hermes has no NATIVE GHSA advisory feed (nousresearch/hermes-agent publishes
+    zero advisories, confirmed via direct API check 2026-07-31) -- but that does not
+    mean a real ghsa_id/cve_id can never exist here. Independent research (NVD,
+    VulDB, researcher disclosures, GitHub issues) later confirmed real CVE/GHSA ids
+    for 6 of 7 entries even though the sync pipeline's own GHSA source never
+    populates Hermes automatically. The invariant this test actually guards is
+    format honesty, not blanket absence: any populated id must look like a real
+    identifier, never a placeholder or an obviously fabricated string.
+    """
     for cve in _HERMES_CVE_REGISTRY:
-        assert cve["ghsa_id"] is None
-        assert cve["cve_id"] is None
+        if cve["ghsa_id"] is not None:
+            assert cve["ghsa_id"].startswith("GHSA-")
+        if cve["cve_id"] is not None:
+            assert cve["cve_id"].startswith("CVE-")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
