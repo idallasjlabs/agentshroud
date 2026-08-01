@@ -469,7 +469,8 @@ colima ssh -- sudo ip route del default via 192.168.5.2 dev eth0 2>/dev/null || 
 colima ssh -- sudo ip route add default via 192.168.64.1 dev col0 metric 100
 ```
 
-**If Colima VM is recreated (e.g., after `colima delete`):**
+**If Colima VM is recreated (e.g., after `colima delete`, or after `colima stop && colima
+start --cpu N --memory N` to resize the VM's resource allocation):**
 
 The systemd service is lost. Re-install it:
 
@@ -484,7 +485,7 @@ After=network.target
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/bin/bash -c 'ip route del default via 192.168.5.2 dev eth0 2>/dev/null; ip route add default via 192.168.64.1 dev col0 metric 100'
+ExecStart=/bin/bash -c 'ip route del default via 192.168.5.2 dev eth0 2>/dev/null; ip route replace default via 192.168.64.1 dev col0 metric 100'
 
 [Install]
 WantedBy=multi-user.target
@@ -492,6 +493,15 @@ EOF
 systemctl daemon-reload && systemctl enable --now colima-vmnet-route.service
 exit
 ```
+
+Use `ip route replace`, not `ip route add`, for the second command. `add` is not
+idempotent — if the correct route already exists (e.g. you already applied the manual
+one-off fix above in the same session), `add` exits non-zero on the duplicate, and
+systemd reports the whole oneshot unit as `failed` even though the actual route state is
+already correct. `replace` succeeds whether or not the route is already present, so the
+service reports `active` accurately. (Confirmed Aug 1, 2026: recreating the VM to resize
+CPU/memory allocation lost this service exactly like a `colima delete` would, and the
+original `add`-based unit failed on first install for precisely this reason.)
 
 ---
 

@@ -392,16 +392,31 @@ with open(src) as f:
     servers = (json.load(f).get("servers") or {})
 
 # Desired mcp_servers entries from servers.json (url read from file, not hardcoded).
+# Servers explicitly marked enabled: false are tracked separately (explicitly_disabled)
+# so a stale enabled:true copy already sitting in config.yaml can be actively turned
+# off below, not just left alone. Being purely additive here was the root cause of a
+# real incident (2026-08-01): docker/config/hermes/mcp/servers.json disabled the
+# "agentshroud-gateway" entry on 2026-07-18 (it points at http://gateway:8080/mcp,
+# which the gateway has never actually served -- a real 404), but this script only
+# ever ADDED/refreshed entries that SHOULD be enabled; it had no code path to turn off
+# an entry already sitting in config.yaml from before the servers.json fix. That
+# entry's stale enabled:true survived every single boot since, causing ~213 failed
+# connection attempts/day indefinitely. Never leave a disabled-in-source-of-truth
+# entry enabled in the derived config just because reconciliation only adds.
 desired = {}
+explicitly_disabled = set()
 for name, s in servers.items():
-    if not isinstance(s, dict) or s.get("enabled") is False:
+    if not isinstance(s, dict):
+        continue
+    if s.get("enabled") is False:
+        explicitly_disabled.add(name)
         continue
     url = s.get("url")
     if not url:
         continue
     desired[name] = {"url": url, "enabled": True}
 
-if not desired:
+if not desired and not explicitly_disabled:
     print("NO_SERVERS")
     sys.exit(0)
 
@@ -425,6 +440,14 @@ try:
             cur["url"] = entry["url"]
             cur["enabled"] = True
             changed.append(name)
+    # Actively disable any config.yaml entry servers.json marks enabled: false --
+    # see the comment above `desired`/`explicitly_disabled` for why this must not
+    # be skipped just because the entry "isn't in the desired set".
+    for name in explicitly_disabled:
+        cur = mcp.get(name)
+        if isinstance(cur, dict) and cur.get("enabled") is not False:
+            cur["enabled"] = False
+            changed.append(name + " (disabled)")
     if changed:
         tmp = cfg_path + ".tmp.%d" % os.getpid()
         with open(tmp, "w") as f:
@@ -465,7 +488,18 @@ def has_server(name, url):
     return (re.search(r"^ {2}%s:\s*$" % re.escape(name), existing_text, re.M)
             and ("url: %s" % url) in existing_text)
 
+def is_enabled_in_block(name):
+    m = re.search(r"^ {2}%s:\s*\n((?: {4}.+\n?)*)" % re.escape(name), existing_text + "\n", re.M)
+    if not m:
+        return None
+    em = re.search(r"^ {4}enabled:\s*(\S+)", m.group(1), re.M)
+    return em.group(1).lower() if em else None
+
 changed = [n for n, e in desired.items() if not has_server(n, e["url"])]
+# Same fix as the PyYAML path above: actively disable any entry servers.json marks
+# enabled: false, not just skip touching it. See the comment on `explicitly_disabled`.
+to_disable = [n for n in explicitly_disabled if is_enabled_in_block(n) not in (None, "false")]
+changed += [n + " (disabled)" for n in to_disable]
 
 # Build the merged mcp_servers block: keep existing entries, add/refresh desired ones.
 merged = {}
@@ -484,6 +518,9 @@ for n, e in desired.items():
     merged.setdefault(n, {})
     merged[n]["url"] = e["url"]
     merged[n]["enabled"] = "true"
+for n in explicitly_disabled:
+    if n in merged:
+        merged[n]["enabled"] = "false"
 
 block = ["mcp_servers:"]
 for n in merged:
