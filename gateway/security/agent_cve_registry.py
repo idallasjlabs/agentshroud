@@ -101,7 +101,14 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
             "Seccomp default-deny profile blocks unexpected syscalls. "
             "OPENCLAW_SANDBOX_MODE=strict restricts shell execution."
         ),
-        "defense_layers": ["source_fix", "defense_in_depth", "tool_acl", "prompt_guard", "seccomp", "sandbox_mode"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "tool_acl",
+            "prompt_guard",
+            "seccomp",
+            "sandbox_mode",
+        ],
     },
     {
         "id": "ASH-OCLAW-003",
@@ -123,7 +130,13 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
             "EgressApproval re-evaluate every outbound request independently. "
             "ToolACL enforces per-user/per-group tool allowlists server-side."
         ),
-        "defense_layers": ["source_fix", "defense_in_depth", "approval_queue", "egress_filter", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "approval_queue",
+            "egress_filter",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-004",
@@ -144,7 +157,14 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
             "never set. Container is read_only:true. no-new-privileges:true + "
             "cap_drop:ALL prevents escalation. Bot on isolated network only."
         ),
-        "defense_layers": ["source_fix", "defense_in_depth", "container_isolation", "read_only", "no_new_privileges", "cap_drop"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "container_isolation",
+            "read_only",
+            "no_new_privileges",
+            "cap_drop",
+        ],
     },
     {
         "id": "ASH-OCLAW-005",
@@ -196,7 +216,13 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
             "with server-side role assignment from verified Telegram/Slack identity. "
             "OpenClaw WS is internal-only (isolated Docker network)."
         ),
-        "defense_layers": ["source_fix", "defense_in_depth", "rbac", "server_side_roles", "network_isolation"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "rbac",
+            "server_side_roles",
+            "network_isolation",
+        ],
     },
     {
         "id": "ASH-OCLAW-007",
@@ -277,7 +303,14 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
             "(rbac.py + rbac_config.py). OpenClaw WS endpoint is on the isolated "
             "internal Docker network unreachable externally."
         ),
-        "defense_layers": ["source_fix", "defense_in_depth", "rbac", "server_side_roles", "network_isolation", "verified_identity"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "rbac",
+            "server_side_roles",
+            "network_isolation",
+            "verified_identity",
+        ],
     },
     {
         "id": "ASH-OCLAW-010",
@@ -300,7 +333,14 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
             "ProgressiveLockdown escalates repeated unauthorized access attempts. "
             "Internal Docker network prevents external callers from reaching the route."
         ),
-        "defense_layers": ["source_fix", "defense_in_depth", "rbac", "check_permission", "progressive_lockdown", "network_isolation"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "rbac",
+            "check_permission",
+            "progressive_lockdown",
+            "network_isolation",
+        ],
     },
     {
         "id": "ASH-OCLAW-011",
@@ -325,7 +365,14 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
             "OPENCLAW_SANDBOX_MODE=strict and OPENCLAW_DISABLE_HOST_FILESYSTEM=true "
             "prevent leveraging injected vars for meaningful access."
         ),
-        "defense_layers": ["source_fix", "defense_in_depth", "container_isolation", "read_only", "no_new_privileges", "cap_drop"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "container_isolation",
+            "read_only",
+            "no_new_privileges",
+            "cap_drop",
+        ],
     },
     {
         "id": "ASH-OCLAW-012",
@@ -378,7 +425,14 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
             "isolated Docker network (localhost-only binding). "
             "dangerouslyAllowHostHeaderOriginFallback=false blocks origin bypass."
         ),
-        "defense_layers": ["source_fix", "defense_in_depth", "rbac", "verified_identity", "localhost_binding", "network_isolation"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "rbac",
+            "verified_identity",
+            "localhost_binding",
+            "network_isolation",
+        ],
     },
     {
         "id": "ASH-OCLAW-014",
@@ -403,7 +457,14 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
             "connection is made. HTTP_PROXY/HTTPS_PROXY force all traffic through the "
             "AgentShroud gateway proxy on :8181."
         ),
-        "defense_layers": ["source_fix", "defense_in_depth", "egress_filter", "egress_approval", "dns_filter", "network_validator"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "egress_filter",
+            "egress_approval",
+            "dns_filter",
+            "network_validator",
+        ],
     },
     {
         "id": "ASH-OCLAW-015",
@@ -426,7 +487,13 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
             "spawn activity. The OpenClaw HTTP routes are on the isolated internal network "
             "and are not reachable from outside the container stack."
         ),
-        "defense_layers": ["source_fix", "defense_in_depth", "tool_acl", "subagent_monitor", "network_isolation"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "tool_acl",
+            "subagent_monitor",
+            "network_isolation",
+        ],
     },
     {
         "id": "ASH-OCLAW-016",
@@ -449,7 +516,13 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
             "Telegram/Slack identity. Plugin HTTP routes are on the isolated internal "
             "Docker network; external callers never reach them directly."
         ),
-        "defense_layers": ["source_fix", "defense_in_depth", "rbac", "server_side_roles", "network_isolation"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "rbac",
+            "server_side_roles",
+            "network_isolation",
+        ],
     },
     {
         "id": "ASH-OCLAW-017",
@@ -471,7 +544,14 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
             "Role assignment from verified platform identity (Telegram UID / Slack ID). "
             "PrivacyPolicy enforces PRIVATE/SHARED/GROUP_ONLY content tiers."
         ),
-        "defense_layers": ["source_fix", "defense_in_depth", "rbac", "check_permission", "verified_identity", "privacy_policy"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "rbac",
+            "check_permission",
+            "verified_identity",
+            "privacy_policy",
+        ],
     },
     # ── NVD-sourced CVEs (276 entries, auto-assessed against OpenClaw 2026.4.11) ──
     {
@@ -1451,7 +1531,12 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "OpenClaw versions prior to commit b57b680 contain an approval bypass vulnerability due to inconsistent environment variable normalization between approval and execution paths, allowing attackers to inject attacker-controlled environment variables into execution without approval system validation. Attackers can exploit differing normalization logic to discard non-portable keys during approval proce",
         "status": "fully_mitigated",
         "mitigation": "AgentShroud approval_queue.py (gateway/approval_queue/) enforces all tool approvals independently at the proxy layer before reaching OpenClaw's execution path. Environment variable normalization is handled by AgentShroud's own pipeline; OpenClaw's internal normalization inconsistency does not affect AgentShroud-mediated approvals.",
-        "defense_layers": ["source_fix", "defense_in_depth", "approval_queue", "proxy_interception"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "approval_queue",
+            "proxy_interception",
+        ],
     },
     {
         "id": "ASH-OCLAW-087",
@@ -1833,7 +1918,13 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
             "forwarding to bot:18789 on the isolated network — broken upstream auth is unreachable "
             "without valid gateway credentials. WebSocket connections are also auth-gated."
         ),
-        "defense_layers": ["source_fix", "defense_in_depth", "canvas_auth_proxy", "gateway_password_auth", "network_isolation"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "canvas_auth_proxy",
+            "gateway_password_auth",
+            "network_isolation",
+        ],
     },
     {
         "id": "ASH-OCLAW-114",
@@ -2896,7 +2987,13 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "OpenClaw Canvas Path Traversal Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of OpenClaw. Authentication is required to exploit this vulnerability.  The specific flaw exists within the handling of the path parameters provided to the canvas gateway endpoint. The issue results from the lack of proper valid",
         "status": "fully_mitigated",
         "mitigation": "Canvas endpoint (port 18789) is bound to loopback only (127.0.0.1:18789). agentshroud-console network is not internet-facing. External access requires Tailscale VPN authentication. read_only rootfs prevents arbitrary file writes via path traversal.",
-        "defense_layers": ["source_fix", "defense_in_depth", "network_isolation", "tailscale_auth", "read_only_container"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "network_isolation",
+            "tailscale_auth",
+            "read_only_container",
+        ],
     },
     {
         "id": "ASH-OCLAW-190",
@@ -3793,7 +3890,12 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "OpenClaw Client PKCE Verifier Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose stored credentials on affected installations of OpenClaw. User interaction is required to exploit this vulnerability in that the target must initiate an OAuth authorization flow.  The specific flaw exists within the implementation of OAuth authorization. The issue results from",
         "status": "fully_mitigated",
         "mitigation": "AgentShroud bot deployment authenticates via Docker secrets (token injection), not via PKCE OAuth flows. PKCE verifier disclosure in the OpenClaw desktop client OAuth path is not exercised by AgentShroud's bot/gateway deployment pattern.",
-        "defense_layers": ["source_fix", "defense_in_depth", "deployment_pattern", "docker_secrets"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "deployment_pattern",
+            "docker_secrets",
+        ],
     },
     {
         "id": "ASH-OCLAW-253",
@@ -11660,7 +11762,13 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Summary  Browser snapshot and screenshot routes could expose internal page content after navigation.  ## Affected Packages / Versions  - Package: `openclaw` - Ecosystem: npm - Affected versions: `< 2026.4.14` - Patched versions: `>= 2026.4.14`  ## Impact  Authenticated browser tool callers could use snapshot, screenshot, or tab routes that did not consistently validate the final browser target ",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.14; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: privacy_policy redaction and the xml_leak_filter scrub sensitive fields from responses, and EgressFilter limits where data can flow. Residual risk remains for leak channels AgentShroud does not inspect, so this is contained rather than fully neutralised.",
-        "defense_layers": ["source_fix", "defense_in_depth", "privacy_policy", "xml_leak_filter", "egress_filter"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "privacy_policy",
+            "xml_leak_filter",
+            "egress_filter",
+        ],
     },
     {
         "id": "ASH-OCLAW-641",
@@ -11688,7 +11796,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Summary  Microsoft Teams SSO invoke handler missed sender authorization checks.  ## Affected Packages / Versions  - Package: `openclaw` - Ecosystem: npm - Affected versions: `>= 2026.4.10 < 2026.4.14` - Patched versions: `>= 2026.4.14`  ## Impact  Microsoft Teams SSO signin invoke handling could process an invoke from a sender before applying the same sender allowlist checks used by normal mess",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.14; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-643",
@@ -11702,7 +11818,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Summary  Collect-mode queue batches could reuse the last sender authorization context.  ## Affected Packages / Versions  - Package: `openclaw` - Ecosystem: npm - Affected versions: `< 2026.4.14` - Patched versions: `>= 2026.4.14`  ## Impact  Collect-mode queued messages from different senders could be drained as one batch using the final sender's authorization context, allowing earlier messages",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.14; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-644",
@@ -11716,7 +11840,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Summary  Heartbeat owner downgrade missed untrusted webhook wake events.  ## Affected Packages / Versions  - Package: `openclaw` - Ecosystem: npm - Affected versions: `>= 2026.4.7 < 2026.4.14` - Patched versions: `>= 2026.4.14`  ## Impact  Heartbeat owner downgrade logic could skip webhook wake events carrying untrusted content, preserving owner-like execution context where the run should have ",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.14; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-645",
@@ -11730,7 +11862,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Summary\r \r Delivery queue recovery could lose group tool-policy context for media replay.\r \r ## Affected Packages / Versions\r \r - Package: `openclaw`\r - Ecosystem: npm\r - Affected versions: `>= 2026.4.10 < 2026.4.14`\r - Patched versions: `>= 2026.4.14`\r \r ## Impact\r \r Recovered queued outbound media could be replayed without the original session context needed to enforce group tool policy, weak",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.14; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-646",
@@ -11744,7 +11884,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Summary  Empty approver lists could grant explicit approval authorization.  ## Affected Packages / Versions  - Package: `openclaw` - Ecosystem: npm - Affected versions: `< 2026.4.12` - Patched versions: `>= 2026.4.12`  ## Impact  For helper-backed channels, an empty resolved approver list could be interpreted as explicit approval authorization, allowing a sender outside the normal channel autho",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.12; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-647",
@@ -12285,7 +12433,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Summary\r \r Matrix room control-command authorization used the effective allowlist for room traffic, which included sender IDs learned from the Matrix DM pairing store. A sender who was allowed only for a Matrix DM could therefore authorize room control commands when they also posted in a bot room.\r \r ## Impact\r \r This bypass let a DM-paired Matrix sender cross the DM/room authorization boundary",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.15; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-676",
@@ -12318,7 +12474,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Summary  Gateway HTTP and WebSocket handlers captured the resolved bearer-auth configuration when the server started. After a SecretRef rotation, the already-running gateway could continue accepting the old bearer token until restart.  ## Impact  A bearer token that should have been revoked by SecretRef rotation could remain valid on the gateway HTTP and upgrade surfaces for the lifetime of the",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.15; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-678",
@@ -12346,7 +12510,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Summary  Feishu webhook mode accepted missing `encryptKey` configuration as valid and blank card-action callback tokens as usable lifecycle tokens. Together, those fail-open paths could allow unauthenticated webhook or card-action traffic to reach command dispatch in affected deployments.  ## Impact  A deployment using Feishu webhook mode without a configured `encryptKey`, or handling malformed",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.15; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-680",
@@ -12388,7 +12560,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Affected Packages / Versions  - Package: `openclaw` (npm) - Affected versions: `< 2026.4.20` - Patched version: `2026.4.20`  ## Impact  Templated hook mapping `sessionKey` values were treated differently from request-supplied session keys. A hook mapping could render an externally influenced session key even when `hooks.allowRequestSessionKey` was disabled, bypassing the intended routing opt-in",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.20; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-683",
@@ -12430,7 +12610,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Affected Packages / Versions  - Package: `openclaw` (npm) - Affected versions: `< 2026.4.20` - Patched version: `2026.4.20`  ## Impact  A paired device session with limited pairing scope could enumerate global pairing state and act on pairing requests that belonged to another device within the same gateway scope ceiling.  This is a same-gateway paired-device authorization bug, not a remote unau",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.20; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-686",
@@ -12444,7 +12632,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Affected Packages / Versions  - Package: `openclaw` (npm) - Affected versions: `< 2026.4.20` - Patched version: `2026.4.20`  ## Impact  The Control UI assistant-media route authenticated trusted-proxy callers but did not enforce the declared operator scopes for identity-bearing HTTP auth paths. A trusted-proxy caller without `operator.read` could access assistant-media files and metadata that w",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.20; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-687",
@@ -12458,7 +12654,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Affected Packages / Versions  - Package: `openclaw` (npm) - Affected versions: `< 2026.4.20` - Patched version: `2026.4.20`  ## Impact  Feishu card-action callbacks could synthesize a message event with DM conversations classified as group conversations. That skipped `dmPolicy` enforcement for card actions, so a sender in a Feishu DM could trigger card-action flows that should have been blocked",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.20; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-688",
@@ -12519,7 +12723,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Affected Packages / Versions  - Package: `openclaw` (npm) - Affected versions: `< 2026.4.20` - Patched version: `2026.4.20`  ## Impact  Bundled MCP and LSP tools could be appended to the agent's effective tool set after the normal tool-policy pipeline had already filtered core tools. If an operator configured a restrictive policy, such as a tool profile, explicit allow/deny list, owner-only too",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.20; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-692",
@@ -12533,7 +12745,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": '## Impact\r \r OpenClaw deployments before `2026.4.21` could treat a non-owner sender as authorized for owner-enforced slash commands when all of the following were true:\r \r - a channel plugin declared `commands.enforceOwnerForCommands: true`;\r - the channel accepted wildcard inbound senders with `allowFrom: ["*"]`;\r - no explicit `commands.ownerAllowFrom` was configured.\r \r In that state, `src/auto',
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.21; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-693",
@@ -12566,7 +12786,13 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Summary\r Gateway Control UI bootstrap config required Gateway auth\r \r ## Affected Packages / Versions\r - Package: openclaw (npm)\r - Affected versions: <= 2026.4.21\r - Fixed version: 2026.4.22\r \r ## Impact\r When Gateway authentication was enabled, the Control UI bootstrap config endpoint could still be read without a valid Gateway token. That response could expose sensitive bootstrap/config fiel",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.22; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: privacy_policy redaction and the xml_leak_filter scrub sensitive fields from responses, and EgressFilter limits where data can flow. Residual risk remains for leak channels AgentShroud does not inspect, so this is contained rather than fully neutralised.",
-        "defense_layers": ["source_fix", "defense_in_depth", "privacy_policy", "xml_leak_filter", "egress_filter"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "privacy_policy",
+            "xml_leak_filter",
+            "egress_filter",
+        ],
     },
     {
         "id": "ASH-OCLAW-695",
@@ -12660,7 +12886,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Summary ACP child sessions inherit subagent security envelope constraints  ## Affected Packages / Versions - Package: openclaw (npm) - Affected versions: <= 2026.4.21 - Fixed version: 2026.4.22  ## Impact A restricted subagent spawning an ACP child session could fail to carry forward subagent-only constraints such as depth, child-count limits, control scope, or target-agent restrictions.  ## Fi",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.22; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-701",
@@ -12688,7 +12922,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Summary  OpenClaw webhooks allowed route secrets to be backed by `SecretRef` values, but cached the resolved secret for a route. After an operator rotated the underlying secret and ran `openclaw secrets reload`, the previous resolved webhook secret could remain valid until the plugin or gateway restarted.  ## Impact  An attacker who already had a previously valid webhook route secret could cont",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.23; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-703",
@@ -12722,7 +12964,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "## Summary  The agent-facing `gateway` tool protects `config.apply` and `config.patch` with a model-to-operator trust boundary. That guard used a hand-maintained denylist of protected config paths. The config schema outgrew that denylist, leaving sensitive subtrees writable through model-driven gateway config mutations.  ## Impact  A prompt-injected or otherwise compromised model running with acce",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.23; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: OS-level escalation is well contained: no-new-privileges, cap_drop:ALL and a default-deny seccomp profile prevent an escalation primitive from gaining new capabilities, and the read-only container leaves nothing persistent to pivot from. Residual risk: an APPLICATION-level scope escalation (e.g. write-scope reaching owner/admin-only tools INSIDE OpenClaw) is only partially contained by tool_acl gating high-risk tools \u2014 AgentShroud does not re-implement OpenClaw's internal RBAC \u2014 so it is partial until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "container_isolation", "no_new_privileges", "cap_drop", "seccomp", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "container_isolation",
+            "no_new_privileges",
+            "cap_drop",
+            "seccomp",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-705",
@@ -12778,7 +13028,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Message read actions could skip channel allowlist checks. In affected versions, a lower-trust caller with access to the affected message read action could request messages without the same channel allowlist check used by normal delivery.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operator",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.19; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-709",
@@ -12925,7 +13183,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  In affected releases, a surviving pairing-scoped session for a device could re-establish node token authority after that node token had been revoked. Revocation should require the device to lose that authority unless it is approved again through the normal pairing flow.  This issue affects token revocation and device-role containment. It does not allow unauthenticated device creation.",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.26; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-719",
@@ -12953,7 +13219,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Same-host trusted-proxy deployments could accept local forged identity headers. In affected versions, a local same-host caller that can reach the proxy-facing Gateway port could supply identity headers normally reserved for the trusted proxy.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway ope",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.18; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-721",
@@ -12967,7 +13241,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  In affected LAN/shared-token Control UI deployments, a caller could spoof locality information used during Control UI pairing and obtain a durable admin-capable device token.  This issue is limited to deployments where the caller already has the network/authentication foothold needed to reach the Control UI pairing path. It is not an unauthenticated internet exposure issue.  ### Affec",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.22; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-722",
@@ -12995,7 +13277,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Bootstrap token replay could widen pending pairing scopes. In affected versions, a caller with access to a pending bootstrap token could reuse the token before approval with a broader requested scope set.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and intenti",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.12; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-724",
@@ -13023,7 +13313,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Slack reaction events could ignore reaction notification settings. In affected versions, a Slack reaction event delivered to the configured app could enter the agent pipeline even when reaction notifications were disabled.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed pl",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.12; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-726",
@@ -13051,7 +13349,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  OpenClaw's QQBot channel can deliver native approval buttons for exec and plugin approvals. In affected releases, the button callback path resolved approvals without enforcing the configured QQBot approver identity.  The text command approval path used the authorization check; the issue was specific to native QQBot approval buttons.  ### Affected configurations  This affects deploymen",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.18; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-728",
@@ -13065,7 +13371,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Some internal command handlers require `operator.approvals` or `operator.admin` scopes. In affected releases, a scoped Gateway `chat.send` request delivered through an inherited external route could be evaluated as an external-channel command while still carrying the lower Gateway client scopes.  This issue affects scoped Gateway clients. It does not apply to shared-secret bearer HTTP",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.18; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-729",
@@ -13079,7 +13393,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  BlueBubbles sender policy could match mutable conversation identifiers. In affected versions, a participant able to influence conversation-level identifiers could match an allowlist entry through conversation metadata rather than a stable sender identity.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticate",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.7; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-730",
@@ -13093,7 +13415,12 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Exported session HTML could keep unsafe markdown links. In affected versions, content rendered into an exported session could preserve unsafe `javascript:` or `data:` links in generated HTML.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and intentional local ex",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.12; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: Rendered-content injection is partially contained: context_guard and the inbound_injection_scanner strip active markup from untrusted content surfaced to operators. The vulnerable rendering path is upstream UI code AgentShroud proxies but does not rewrite, so residual risk remains.",
-        "defense_layers": ["source_fix", "defense_in_depth", "context_guard", "inbound_injection_scanner"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "context_guard",
+            "inbound_injection_scanner",
+        ],
     },
     {
         "id": "ASH-OCLAW-731",
@@ -13107,7 +13434,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Node pairing reconnection could confuse approval scope state. In affected versions, a paired or reconnecting node session could mutate pairing state in a way that changed the approval scope decision.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and intentional ",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.27; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-732",
@@ -13170,7 +13505,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary\r \r Discord allowFrom could bind to mutable display names. In affected versions, a Discord account able to change display or global name metadata could match a policy entry through mutable display metadata.\r \r This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and inten",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.7; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-736",
@@ -13184,7 +13527,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary\r \r Matrix allowFrom could bind to mutable display names. In affected versions, a Matrix account able to change display name metadata could match a policy entry through mutable display metadata.\r \r This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and intentional local",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.7; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-737",
@@ -13198,7 +13549,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary\r \r Native command authorization could skip owner-command enforcement. In affected versions, a sender able to trigger native command handling could authorize a native command without enforcing the configured owner-only command policy.\r \r This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, ",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.6; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: OS-level escalation is well contained: no-new-privileges, cap_drop:ALL and a default-deny seccomp profile prevent an escalation primitive from gaining new capabilities, and the read-only container leaves nothing persistent to pivot from. Residual risk: an APPLICATION-level scope escalation (e.g. write-scope reaching owner/admin-only tools INSIDE OpenClaw) is only partially contained by tool_acl gating high-risk tools \u2014 AgentShroud does not re-implement OpenClaw's internal RBAC \u2014 so it is partial until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "container_isolation", "no_new_privileges", "cap_drop", "seccomp", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "container_isolation",
+            "no_new_privileges",
+            "cap_drop",
+            "seccomp",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-738",
@@ -13212,7 +13571,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Telegram interactive callbacks could skip commands.allowFrom. In affected versions, a Telegram user able to invoke an affected callback could mark the callback as an authorized sender before applying `commands.allowFrom`.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plu",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.6; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-739",
@@ -13226,7 +13593,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Active Memory write scope could mutate global config. In affected versions, a Gateway caller with `operator.write` access to the affected command could change global configuration without requiring `operator.admin`.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, ",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.6; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-740",
@@ -13240,7 +13615,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary\r \r Skill-command dispatch could skip before-tool-call hooks. In affected versions, a skill command routed through the affected dispatch path could run without the same `runBeforeToolCallHook` coverage as other tool entry points.\r \r This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, insta",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.6; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-741",
@@ -13268,7 +13651,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Feishu dynamic-agent bindings could miss configWrites enforcement. In affected versions, a Feishu sender using dynamic-agent binding behavior could create or update bindings without honoring the configured config-write control.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, install",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.6; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: OS-level escalation is well contained: no-new-privileges, cap_drop:ALL and a default-deny seccomp profile prevent an escalation primitive from gaining new capabilities, and the read-only container leaves nothing persistent to pivot from. Residual risk: an APPLICATION-level scope escalation (e.g. write-scope reaching owner/admin-only tools INSIDE OpenClaw) is only partially contained by tool_acl gating high-risk tools \u2014 AgentShroud does not re-implement OpenClaw's internal RBAC \u2014 so it is partial until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "container_isolation", "no_new_privileges", "cap_drop", "seccomp", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "container_isolation",
+            "no_new_privileges",
+            "cap_drop",
+            "seccomp",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-743",
@@ -13296,7 +13687,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Mattermost handlers could fall open when channel type was missing. In affected versions, a Mattermost event missing channel type metadata could continue without applying the intended DM policy decision.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and intention",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.6; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-745",
@@ -13310,7 +13709,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary\r \r Slack allowFrom could bind to mutable display names. In affected versions, a Slack account able to change display name metadata could match a policy entry through mutable display metadata.\r \r This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and intentional local e",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.3; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-746",
@@ -13343,7 +13750,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  In trusted-proxy Control UI mode, OpenClaw accepted a WebSocket client's declared operator scopes before those scopes were bound to a server-approved pairing or trusted-proxy authorization baseline.  This issue affects trusted-proxy Control UI deployments. It does not apply to shared-secret Control UI sessions, which are treated as trusted operator sessions by design.  ### Affected co",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.18; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-748",
@@ -13357,7 +13772,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary\r \r Zalo allowFrom could bind to mutable display names. In affected versions, a Zalo friend or contact with mutable display metadata could match a policy entry through mutable display metadata.\r \r This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and intentional local ",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.3; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-749",
@@ -13371,7 +13794,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  The bundled device-pair plugin exposed `/pair` on normal chat command surfaces. In affected releases, authorized non-owner chat senders could issue device-pairing bootstrap codes without having owner, admin, or pairing scope.  This issue does not affect unauthenticated users. The caller must already be allowed to send commands to the agent through a configured chat channel.  ### Affec",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.4; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-750",
@@ -13385,7 +13816,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  QQBot admin commands could skip DM-only and allowFrom policy. In affected versions, a QQBot sender able to trigger the exported command could route admin commands without the QQBot-specific DM-only and allowFrom checks.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugi",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.29; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-751",
@@ -13399,7 +13838,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  QQBot streaming command could mutate config without explicit allowFrom. In affected versions, a QQBot sender reaching the affected command could change configuration without requiring an explicit non-wildcard allowlist entry.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.29; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-752",
@@ -13441,7 +13888,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  memory-wiki shared search could miss session visibility checks. In affected versions, a caller able to search shared memory could skip the session visibility guard on the affected search path.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and intentional local e",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.29; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-755",
@@ -13469,7 +13924,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  QQBot pre-dispatch slash commands could skip allowFrom checks. In affected versions, a QQBot sender able to invoke slash commands could dispatch the command before applying the configured allowFrom policy.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and intent",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.27; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-757",
@@ -13581,7 +14044,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Empty-scope device re-pairing could confuse caller scope containment. In affected versions, a device re-pairing request with an empty scope set could skip the intended containment guard during re-pairing.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and intenti",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.25; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-765",
@@ -13595,7 +14066,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Tool group policy callers could accept unvalidated group IDs. In affected versions, a caller that can supply a group id to the affected policy resolver could resolve policy for an unvalidated group id.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and intentiona",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.25; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-766",
@@ -13609,7 +14088,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Focus command could miss controlScope enforcement. In affected versions, a caller able to trigger the focus command could run the command without enforcing the expected control scope.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and intentional local execution ",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.25; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-767",
@@ -13637,7 +14124,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Internal/webchat command auth could inherit ownerAllowFrom wildcard state. In affected versions, a sender on an affected internal or webchat path could inherit wildcard ownerAllowFrom state across channel boundaries.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins,",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.25; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-769",
@@ -13651,7 +14146,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Mattermost slash token revocation could lag until monitor refresh. In affected versions, a caller with an old Mattermost slash token during the refresh window could continue accepting the old token until the monitor refreshed.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installe",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.24; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-770",
@@ -13679,7 +14182,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Slack and Zalo webhook secrets could remain active after secrets.reload. In affected versions, a caller with an old webhook secret during the stale-secret window could keep accepting the previous secret after `secrets.reload`.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installe",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.4.22; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-772",
@@ -13693,7 +14204,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  OpenAI-compatible HTTP model overrides could miss admin authorization. In affected versions, a lower-trust caller or configured input path could perform actions that should have required a stronger authorization or policy check.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, instal",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.6.8; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-773",
@@ -13707,7 +14226,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Feishu tools could ignore per-account disablement. In affected versions, a lower-trust caller or configured input path could perform actions that should have required a stronger authorization or policy check.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and int",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.6.9; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-774",
@@ -13721,7 +14248,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Feishu permission tools could ignore per-account disablement. In affected versions, a lower-trust caller or configured input path could perform actions that should have required a stronger authorization or policy check.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugi",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.6.9; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-775",
@@ -13768,7 +14303,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Message mutations could skip requester authorization. In affected versions, a lower-trust caller or configured input path could perform actions that should have required a stronger authorization or policy check.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and ",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.6.9; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-778",
@@ -13782,7 +14325,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Discord guild actions could skip cross-provider requester authorization. In affected versions, a lower-trust caller or configured input path could perform actions that should have required a stronger authorization or policy check.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, inst",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.6.9; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-779",
@@ -13838,7 +14389,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  WhatsApp group IDs could satisfy elevated sender allowlists. In affected versions, a lower-trust caller or configured input path could perform actions that should have required a stronger authorization or policy check.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugin",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.6.6; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-783",
@@ -13866,7 +14425,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Native web search could ignore OpenClaw tool policy. In affected versions, a lower-trust caller or configured input path could perform actions that should have required a stronger authorization or policy check.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and i",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.6.6; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-785",
@@ -13974,7 +14541,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  MS Teams message actions could miss requester authorization. In affected versions, a lower-trust caller or configured input path could perform actions that should have required a stronger authorization or policy check.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugin",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.6.6; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-792",
@@ -13988,7 +14563,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Discord moderation actions could miss trusted requester checks. In affected versions, a lower-trust caller or configured input path could perform actions that should have required a stronger authorization or policy check.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plu",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.6.9; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-793",
@@ -14016,7 +14599,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  ClickClack agent-mode dispatch could ignore toolsAllow. In affected versions, a lower-trust caller or configured input path could perform actions that should have required a stronger authorization or policy check.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, an",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.6.5; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-795",
@@ -14086,7 +14677,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  device.pair.approve could bypass role-management checks. In affected versions, a lower-trust caller or configured input path could perform actions that should have required a stronger authorization or policy check.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, a",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.27; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-800",
@@ -14100,7 +14699,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Hooks allowedAgentIds could be bypassed with blank agent IDs. In affected versions, a lower-trust caller or configured input path could perform actions that should have required a stronger authorization or policy check.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugi",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.26; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-801",
@@ -14114,7 +14721,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  WebSocket auth attempts could avoid non-browser rate limits. In affected versions, a lower-trust caller or configured input path could consume gateway resources and reduce availability.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and intentional local executio",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.26; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-802",
@@ -14128,7 +14743,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  ClickClack allowFrom could allow non-allowlisted commands. In affected versions, a lower-trust caller or configured input path could execute or persist actions beyond the caller's intended authorization.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and intentio",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.26; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-803",
@@ -14170,7 +14793,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary\r \r MS Teams allowFrom could bind to mutable display names. In affected versions, a lower-trust caller or configured input path could perform actions that should have required a stronger authorization or policy check.\r \r This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.12; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-806",
@@ -14184,7 +14815,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Skill command dispatch could skip effective tool policy. In affected versions, a lower-trust caller or configured input path could execute or persist actions beyond the caller's intended authorization.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and intentiona",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.18; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-807",
@@ -14198,7 +14837,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Browser act route could miss current-tab URL checks. In affected versions, a lower-trust caller or configured input path could perform actions that should have required a stronger authorization or policy check.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugins, and i",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.5.19; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: AgentShroud's gateway_password_auth gate enforces authentication on every request before it reaches the wrapped agent, the agent binds only to localhost inside the isolated Docker network, and remote access requires Tailscale tailnet membership \u2014 so an UNAUTHENTICATED upstream auth bypass is not externally reachable. Residual risk: for an already-authenticated principal, AgentShroud's perimeter gate does NOT re-enforce OpenClaw's internal operator.read/write/admin scope boundaries, so an INTERNAL scope-escalation bug is only partially contained (tool_acl still gates high-risk tools) until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "gateway_password_auth", "localhost_binding", "tailscale_auth", "network_isolation", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "gateway_password_auth",
+            "localhost_binding",
+            "tailscale_auth",
+            "network_isolation",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-808",
@@ -14240,7 +14887,15 @@ _OPENCLAW_CVE_REGISTRY: list[dict[str, Any]] = [
         "description": "### Summary  Identity-bearing HTTP callers could reach admin-scoped tools. In affected versions, a lower-trust caller or configured input path could perform actions that should have required a stronger authorization or policy check.  This advisory is scoped to the named feature and configuration. It does not change OpenClaw's trusted-operator model: authenticated Gateway operators, installed plugi",
         "status": "fully_mitigated",
         "mitigation": "Fixed upstream in OpenClaw 2026.6.5; the running image (2026.7.1) is unaffected. AgentShroud adds defense-in-depth: OS-level escalation is well contained: no-new-privileges, cap_drop:ALL and a default-deny seccomp profile prevent an escalation primitive from gaining new capabilities, and the read-only container leaves nothing persistent to pivot from. Residual risk: an APPLICATION-level scope escalation (e.g. write-scope reaching owner/admin-only tools INSIDE OpenClaw) is only partially contained by tool_acl gating high-risk tools \u2014 AgentShroud does not re-implement OpenClaw's internal RBAC \u2014 so it is partial until the upstream fix lands.",
-        "defense_layers": ["source_fix", "defense_in_depth", "container_isolation", "no_new_privileges", "cap_drop", "seccomp", "tool_acl"],
+        "defense_layers": [
+            "source_fix",
+            "defense_in_depth",
+            "container_isolation",
+            "no_new_privileges",
+            "cap_drop",
+            "seccomp",
+            "tool_acl",
+        ],
     },
     {
         "id": "ASH-OCLAW-811",

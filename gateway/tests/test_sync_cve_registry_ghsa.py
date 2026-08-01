@@ -296,9 +296,7 @@ class TestSnapshotSmoke:
         # key process_ghsa_advisories uses, so this baseline is correct no
         # matter what status those entries currently carry in the live registry.
         snapshot_ghsa_ids = {a.get("ghsa_id") for a in snap["openclaw"] if a.get("ghsa_id")}
-        baseline = [
-            e for e in _OPENCLAW_CVE_REGISTRY if e.get("ghsa_id") not in snapshot_ghsa_ids
-        ]
+        baseline = [e for e in _OPENCLAW_CVE_REGISTRY if e.get("ghsa_id") not in snapshot_ghsa_ids]
         out = mod.process_ghsa_advisories(snap["openclaw"], baseline, "ASH-OCLAW")
         assert len(out) > 0
         assert all(e["status"] == "under_review" for e in out)
