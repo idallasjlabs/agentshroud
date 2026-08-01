@@ -177,13 +177,38 @@ class TestVersion:
         assert _t().is_source_fixed("2026.3.1") is True
 
     def test_source_fixed_equal(self):
-        assert _t().is_source_fixed("2026.4.11") is True
+        # Test against the module's OWN dynamically-read RUNNING_VERSION_STR
+        # (docker/versions.env), not a hardcoded literal that goes stale every
+        # time the pin bumps -- that staleness is exactly the bug this fix closes.
+        assert _t().is_source_fixed(_t().RUNNING_VERSION_STR) is True
 
     def test_not_source_fixed_newer(self):
-        assert _t().is_source_fixed("2026.5.1") is False
+        major, minor, patch = _t().RUNNING_VERSION
+        future = f"{major}.{minor}.{patch + 1}"
+        assert _t().is_source_fixed(future) is False
 
     def test_unparseable_is_not_source_fixed(self):
         assert _t().is_source_fixed(None) is False
+
+    def test_running_version_matches_pinned_openclaw_version(self):
+        """Regression guard for the 2026-07-29 staleness incident.
+
+        RUNNING_VERSION was hardcoded at 2026.4.11 and never updated when the
+        real OpenClaw pin moved to 2026.7.1, silently misclassifying dozens of
+        already-upstream-fixed advisories as open gaps for months. This test
+        fails immediately if RUNNING_VERSION ever again drifts from the actual
+        pin in docker/versions.env, instead of drifting silently for months.
+        """
+        versions_env = REPO_ROOT / "docker" / "versions.env"
+        text = versions_env.read_text()
+        pinned = None
+        for line in text.splitlines():
+            line = line.strip()
+            if line.startswith("OPENCLAW_VERSION="):
+                pinned = line.split("=", 1)[1].strip()
+                break
+        assert pinned is not None, "OPENCLAW_VERSION not found in docker/versions.env"
+        assert _t().RUNNING_VERSION_STR == pinned
 
 
 # ── triage_entry status logic ─────────────────────────────────────────────────
