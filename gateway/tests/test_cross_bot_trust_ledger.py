@@ -491,3 +491,85 @@ class TestGetIncidentsLimit:
         )
         # After propagation, hermes should have a trust entry
         assert hermes_tm.get_trust("hermes") is not None
+
+
+class TestBuildFullMesh:
+    """build_full_mesh: N-agent-scalable topology construction.
+
+    Adding a 3rd/4th/Nth bot_id to the input list must be the ONLY change
+    needed for it to become a full mutual peer of every existing bot — no
+    pairwise registration code changes. This is what backs the "add more
+    agents and this all works" requirement.
+    """
+
+    def _shared_tm(self) -> TrustManager:
+        tm = TrustManager(db_path=":memory:", config=TrustConfig(initial_score=200.0))
+        for bot_id in ("openclaw", "hermes", "thirdbot", "fourthbot"):
+            tm.register_agent(bot_id)
+        return tm
+
+    def test_two_bots_are_mutual_peers(self) -> None:
+        tm = self._shared_tm()
+        ledger = CrossBotTrustLedger.build_full_mesh(["openclaw", "hermes"], tm)
+        assert ledger.peers_of("openclaw") == ["hermes"]
+        assert ledger.peers_of("hermes") == ["openclaw"]
+
+    def test_three_bots_form_a_full_mesh(self) -> None:
+        tm = self._shared_tm()
+        ledger = CrossBotTrustLedger.build_full_mesh(["openclaw", "hermes", "thirdbot"], tm)
+        assert set(ledger.peers_of("openclaw")) == {"hermes", "thirdbot"}
+        assert set(ledger.peers_of("hermes")) == {"openclaw", "thirdbot"}
+        assert set(ledger.peers_of("thirdbot")) == {"openclaw", "hermes"}
+
+    def test_adding_a_fourth_bot_extends_the_mesh_to_everyone(self) -> None:
+        """The exact scenario the user asked for: add a 4th bot and it just works."""
+        tm = self._shared_tm()
+        bot_ids = ["openclaw", "hermes", "thirdbot", "fourthbot"]
+        ledger = CrossBotTrustLedger.build_full_mesh(bot_ids, tm)
+        for bot in bot_ids:
+            expected_peers = set(bot_ids) - {bot}
+            assert (
+                set(ledger.peers_of(bot)) == expected_peers
+            ), f"{bot} should be peers with everyone else in a full mesh"
+
+    def test_every_bot_shares_the_same_trust_manager(self) -> None:
+        tm = self._shared_tm()
+        bot_ids = ["openclaw", "hermes", "thirdbot"]
+        ledger = CrossBotTrustLedger.build_full_mesh(bot_ids, tm)
+        for bot in bot_ids:
+            assert ledger._trust_managers[bot] is tm
+
+    def test_single_bot_has_no_peers_and_does_not_raise(self) -> None:
+        tm = TrustManager(db_path=":memory:", config=TrustConfig(initial_score=200.0))
+        tm.register_agent("openclaw")
+        ledger = CrossBotTrustLedger.build_full_mesh(["openclaw"], tm)
+        assert ledger.peers_of("openclaw") == []
+
+    def test_empty_bot_list_does_not_raise(self) -> None:
+        tm = TrustManager(db_path=":memory:", config=TrustConfig(initial_score=200.0))
+        ledger = CrossBotTrustLedger.build_full_mesh([], tm)
+        assert ledger.incident_count() == 0
+
+    def test_incident_on_one_bot_propagates_to_all_mesh_peers(self) -> None:
+        """End-to-end: a real incident on bot A decays trust on bots B and C
+        in a 3-bot full mesh — not just a 2-bot pair."""
+        tm = self._shared_tm()
+        bot_ids = ["openclaw", "hermes", "thirdbot"]
+        ledger = CrossBotTrustLedger.build_full_mesh(bot_ids, tm)
+
+        before_hermes = tm.get_trust("hermes")[1]
+        before_third = tm.get_trust("thirdbot")[1]
+
+        ledger.record_incident(
+            source_bot="openclaw",
+            agent_id="openclaw",
+            severity=BotIncidentSeverity.HIGH,
+            score_delta=-50.0,
+            reason="full-mesh propagation test",
+        )
+
+        after_hermes = tm.get_trust("hermes")[1]
+        after_third = tm.get_trust("thirdbot")[1]
+
+        assert after_hermes < before_hermes, "hermes should decay from openclaw's incident"
+        assert after_third < before_third, "thirdbot should decay from openclaw's incident"

@@ -1,6 +1,6 @@
 # AgentShroud™ Security Policy
 
-AgentShroud v1.0.0 "Fortress" implements **enforce-by-default** security with 68 defense
+AgentShroud v1.0.0 "Fortress" implements **enforce-by-default** security with 75 defense
 modules across 7 layers, protecting against prompt injection, PII exposure, unauthorized
 tool access, egress exfiltration, container escape, and privilege escalation.
 

@@ -28,8 +28,8 @@ class TestReadmeAccuracy:
     def readme(self):
         return _read_file("README.md")
 
-    def test_claims_68_security_modules(self, readme):
-        assert "68 security modules" in readme
+    def test_claims_75_security_modules(self, readme):
+        assert "75 security modules" in readme
 
     def test_security_modules_listed(self, readme):
         """This representative sample of modules mentioned in README should exist as code."""
@@ -191,20 +191,19 @@ class TestManageModulesEndpointAccuracy:
     @pytest.mark.asyncio
     async def test_endpoint_reports_no_key_collisions_and_high_total(self, monkeypatch):
         """Execute the real endpoint against a fully-populated app_state and
-        verify it enumerates a total close to the "68 security modules" public
+        verify it enumerates a total close to the public "security modules"
         claim, with no tier silently overwriting another tier's entry for the
         same module name (the bug that made the old hardcoded P1/P2 lists
-        under-report ~37 total instead of anywhere near 68)."""
+        under-report ~37 total instead of anywhere near the real number)."""
         from types import SimpleNamespace
 
         from gateway.ingest_api import main as main_module
         from gateway.ingest_api.middleware import MiddlewareManager
+        from gateway.proxy.pipeline import SecurityPipeline
 
         fake = SimpleNamespace()
         fake.sanitizer = SimpleNamespace(mode="enforce")
         for name in (
-            "approval_queue",
-            "pipeline",
             "prompt_guard",
             "trust_manager",
             "egress_filter",
@@ -238,6 +237,8 @@ class TestManageModulesEndpointAccuracy:
             setattr(fake, name, object())
         fake.openscap_available = True
         fake.middleware_manager = MiddlewareManager()
+        fake.pipeline = SimpleNamespace(**{n: object() for n in SecurityPipeline.ALL_MODULE_ATTRS})
+        fake.approval_queue = SimpleNamespace(mfa_guard=object())
 
         monkeypatch.setattr(main_module, "app_state", fake)
 
@@ -246,10 +247,15 @@ class TestManageModulesEndpointAccuracy:
         assert result["total"] == len(result["modules"]), "duplicate keys collapsed silently"
         statuses = {m["status"] for m in result["modules"].values()}
         assert statuses <= {"active", "loaded", "unavailable", "degraded"}
-        assert result["total"] >= 60, (
+        assert result["total"] >= 70, (
             f"endpoint only enumerates {result['total']} modules — still far "
-            f"short of the public '68 security modules' claim"
+            f"short of the real verified module count"
         )
+        for name in SecurityPipeline.ALL_MODULE_ATTRS:
+            assert (
+                result["modules"][name]["status"] == "active"
+            ), f"pipeline-level module '{name}' should report active when populated"
+        assert result["modules"]["mfa_guard"]["status"] == "active"
 
 
 class TestTestCountAccuracy:

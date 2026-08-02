@@ -92,7 +92,7 @@ intercepted, inspected, logged, and policy-enforced without disrupting the agent
 native workflow.
 
 ```
-AI Agent → AgentShroud Gateway (68 security modules) → Target System
+AI Agent → AgentShroud Gateway (75 security modules) → Target System
 ```
 
 Control surfaces: Telegram, iOS Shortcuts, Browser Extension, SSH, REST API — all over Tailscale.
@@ -261,7 +261,7 @@ When uncertain, call it out explicitly and ask before proceeding.
 ## 7) AGENTSHROUD-SPECIFIC CONSTRAINTS
 ──────────────────────────────────────────────────────────────────────────────
 
-### 68 Active Security Modules — No Stubs
+### 75 Active Security Modules — No Stubs
 
 | Tier | Modules |
 |------|---------|
@@ -290,7 +290,7 @@ When uncertain, call it out explicitly and ask before proceeding.
 | Path | Contents |
 |------|----------|
 | `gateway/` | Core proxy, runtime, approval queue, ingest API, SSH proxy |
-| `gateway/security/` | All 68 security modules |
+| `gateway/security/` | All 75 security modules |
 | `gateway/soc/` | SOC collaboration features |
 | `gateway/proxy/` | Request interception and routing |
 | `gateway/runtime/` | Agent runtime management |

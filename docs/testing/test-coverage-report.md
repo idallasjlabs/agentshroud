@@ -3,7 +3,7 @@
 
 ### Executive Summary
 
-This report provides a comprehensive analysis of test coverage across AgentShroud's 68 security modules. Current metrics show 1,100+ tests achieving 94.2% overall code coverage, exceeding the 90% target. Critical security paths maintain 100% coverage while performance and integration testing provide robust validation of system functionality.
+This report provides a comprehensive analysis of test coverage across AgentShroud's 75 security modules. Current metrics show 1,100+ tests achieving 94.2% overall code coverage, exceeding the 90% target. Critical security paths maintain 100% coverage while performance and integration testing provide robust validation of system functionality.
 
 **Key Metrics**:
 - **Total Tests**: 1,134

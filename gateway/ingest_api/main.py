@@ -42,6 +42,7 @@ from gateway import __version__
 
 from ..proxy.collaborator_greeter import CollaboratorGreeter
 from ..proxy.mcp_proxy import MCPToolCall, MCPToolResult
+from ..proxy.pipeline import SecurityPipeline
 from ..proxy.slack_proxy import SlackAPIProxy
 from ..proxy.telegram_proxy import TelegramAPIProxy
 from ..proxy.telegram_replay import UpdateReplayBuffer
@@ -1170,6 +1171,22 @@ async def list_security_modules(auth: AuthRequired):
         for name in sorted(MiddlewareManager.ALL_MODULE_ATTRS - _p1_reported_elsewhere):
             obj = getattr(mm, name, None)
             modules[name] = {"tier": "P1", "status": "active" if obj else "unavailable"}
+
+    # P0 — Pipeline-level guards. SecurityPipeline.ALL_MODULE_ATTRS is the
+    # single source of truth for pipeline-owned module attributes distinct
+    # from what P1/P2/P3 already report (see its docstring for why the
+    # overlapping ones — context_guard, output_canary, etc. — are excluded).
+    pipeline = app_state.pipeline
+    if pipeline:
+        for name in sorted(SecurityPipeline.ALL_MODULE_ATTRS):
+            obj = getattr(pipeline, name, None)
+            modules[name] = {"tier": "P0", "status": "active" if obj else "unavailable"}
+
+    # mfa_guard lives on the approval queue (EnhancedApprovalQueue always
+    # constructs one via MFAGuard.from_env() even when disabled by config).
+    aq = getattr(app_state, "approval_queue", None)
+    mfa = getattr(aq, "mfa_guard", None) if aq else None
+    modules["mfa_guard"] = {"tier": "P0", "status": "active" if mfa else "unavailable"}
 
     # P2 — Network (dns_filter, egress_monitor, browser_security, oauth_security
     # are instantiated inside the web_proxy CONNECT handler, not on app_state)

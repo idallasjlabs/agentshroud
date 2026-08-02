@@ -51,7 +51,7 @@ These paths require Claude Code (primary) regardless of task type:
 
 | Path | Reason |
 |------|--------|
-| `gateway/security/**` | 68 active security modules — IEC 62443 FR3/FR6 |
+| `gateway/security/**` | 75 active security modules — IEC 62443 FR3/FR6 |
 | `gateway/approval_queue/**` | Human-in-the-loop routing |
 | `docker/setup-secrets.sh` | Secret storage hygiene |
 | `docker/config/openclaw/apply-patches.js` | Bot configuration injection |

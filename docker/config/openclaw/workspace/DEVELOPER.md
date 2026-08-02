@@ -35,7 +35,7 @@ with. Every API call, file write, and tool invocation is intercepted, inspected,
 policy-enforced without disrupting the agent's native workflow.
 
 ```
-AI Agent → AgentShroud Gateway (68 security modules) → Target System
+AI Agent → AgentShroud Gateway (75 security modules) → Target System
 ```
 
 **Current version:** v1.3.0
@@ -45,7 +45,7 @@ AI Agent → AgentShroud Gateway (68 security modules) → Target System
 | Path | Contents |
 |------|----------|
 | `gateway/` | Core proxy, runtime, ingest API, SSH proxy |
-| `gateway/security/` | All 68 security modules |
+| `gateway/security/` | All 75 security modules |
 | `gateway/soc/` | SOC team collaboration (v1.0.0) |
 | `gateway/proxy/` | Request interception and routing |
 | `gateway/tests/` | Primary test suite |
