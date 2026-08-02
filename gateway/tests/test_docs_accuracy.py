@@ -258,6 +258,52 @@ class TestManageModulesEndpointAccuracy:
         assert result["modules"]["mfa_guard"]["status"] == "active"
 
 
+class TestLifespanWiresEveryPipelineModule:
+    """Every SecurityPipeline.ALL_MODULE_ATTRS name must be passed as a kwarg
+    in lifespan.py's SecurityPipeline(...) construction call.
+
+    Regression guard for exactly the differential_pii_detector gap: the class
+    was real, had genuine logic in pipeline.py, and was accepted by
+    SecurityPipeline.__init__ — but lifespan.py never actually instantiated
+    it, so it silently reported "unavailable" in production despite looking
+    fully wired in the code. A module can be added to ALL_MODULE_ATTRS
+    without ever being wired into the one place that matters — this test
+    makes that impossible to do silently.
+    """
+
+    def test_every_pipeline_module_attr_is_a_lifespan_kwarg(self):
+        import ast
+
+        from gateway.proxy.pipeline import SecurityPipeline
+
+        source = (REPO_ROOT / "gateway" / "ingest_api" / "lifespan.py").read_text()
+        tree = ast.parse(source)
+
+        pipeline_call = None
+        for node in ast.walk(tree):
+            if (
+                isinstance(node, ast.Call)
+                and isinstance(node.func, ast.Attribute)
+                and node.func.attr == "SecurityPipeline"
+            ) or (
+                isinstance(node, ast.Call)
+                and isinstance(node.func, ast.Name)
+                and node.func.id == "SecurityPipeline"
+            ):
+                pipeline_call = node
+                break
+
+        assert pipeline_call is not None, "lifespan.py has no SecurityPipeline(...) call"
+
+        wired_kwargs = {kw.arg for kw in pipeline_call.keywords if kw.arg is not None}
+        missing = SecurityPipeline.ALL_MODULE_ATTRS - wired_kwargs
+        assert not missing, (
+            f"lifespan.py's SecurityPipeline(...) call never passes {missing} — "
+            f"these modules are accepted by the constructor but silently "
+            f"unavailable in production"
+        )
+
+
 class TestTestCountAccuracy:
     """Verify test count claims in README/docs are reasonable."""
 
