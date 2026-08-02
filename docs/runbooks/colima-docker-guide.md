@@ -76,7 +76,7 @@ agentshroud-bot   →  docker compose -f docker/docker-compose.yml \
 ### Start (required flags)
 
 ```bash
-colima start --cpu 4 --memory 6 --disk 60 --network-address
+colima start --cpu 6 --memory 12 --disk 60 --network-address
 ```
 
 > `--network-address` is **required** — enables the `col0` vmnet interface needed for
@@ -322,7 +322,7 @@ docker buildx prune -a -f
 
 ```bash
 colima stop
-colima start --cpu 4 --memory 6 --disk 60 --network-address
+colima start --cpu 6 --memory 12 --disk 60 --network-address
 # Then retry clean-rebuild (loses all build cache — slower but guaranteed)
 ```
 
@@ -438,7 +438,7 @@ If `df -h /var/lib/docker` shows high usage even after prune:
 ```bash
 colima ssh -- docker system prune -a --volumes -f
 # Then restart Colima to release overlay2 disk references:
-colima stop && colima start --cpu 4 --memory 6 --disk 60 --network-address
+colima stop && colima start --cpu 6 --memory 12 --disk 60 --network-address
 ```
 
 ---
@@ -562,7 +562,7 @@ loopback-bound form, which is why only this one port was affected.
 | `E: You don't have enough free space in /apt-dl/` (VM disk >80% full) | Colima VM disk truly full | `colima ssh -- docker system prune -a -f` then `docker buildx prune -a -f` then retry |
 | `W: GPG error: ... invalid signature` + build fails | BuildKit cache stale | `docker builder prune -f` or prune from inside VM |
 | `exit code: 100` on apt-get (no GPG warning) | Package unavailable on arm64/bookworm | Check if package was removed in git history; may need a code fix |
-| `Cannot connect to the Docker daemon` | Colima VM not running | `colima start --cpu 4 --memory 6 --disk 60 --network-address` |
+| `Cannot connect to the Docker daemon` | Colima VM not running | `colima start --cpu 6 --memory 12 --disk 60 --network-address` |
 | `docker system prune` hangs | Docker daemon unresponsive | Kill it, run `colima ssh -- docker system prune -a -f` instead |
 | `permission denied: /apt-dl/partial` | Docker socket permission | `chmod g+rw ~/.colima/default/docker.sock` (handled by `asb`) |
 | Gateway container `unhealthy` | Python app crash or startup timeout | `docker logs agentshroud-gateway \| tail -50` |

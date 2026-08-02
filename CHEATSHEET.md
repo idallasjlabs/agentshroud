@@ -62,11 +62,11 @@ scripts/asb logs hermes
 colima status
 
 # Start (standard flags for this host)
-colima start --cpu 8 --memory 10 --disk 60 --network-address
+colima start --cpu 6 --memory 12 --disk 60 --network-address
 
 # Stop / restart
 colima stop
-colima stop && colima start --cpu 8 --memory 10 --disk 60 --network-address
+colima stop && colima start --cpu 6 --memory 12 --disk 60 --network-address
 
 # Verify both user homes are mounted (expect two virtiofs entries)
 colima ssh -- mount | grep virtiofs
