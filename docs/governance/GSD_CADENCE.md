@@ -13,7 +13,7 @@ linked in the PR** before the branch is created:
 
 | Path | Reason |
 |------|--------|
-| `gateway/security/**` | 68 active security modules — IEC 62443 |
+| `gateway/security/**` | 75 active security modules — IEC 62443 |
 | `docker/` or `docker-compose.yml` | Container stack, network bindings, sidecar config |
 | `docker/setup-secrets.sh` | Secret storage hygiene |
 | `docker/config/openclaw/apply-patches.js` | Bot config injection at startup |

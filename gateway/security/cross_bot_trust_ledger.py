@@ -161,6 +161,35 @@ class CrossBotTrustLedger:
         self._incidents: deque[IncidentRecord] = deque(maxlen=max_incidents)
 
     # ------------------------------------------------------------------
+    # Topology construction
+    # ------------------------------------------------------------------
+
+    @classmethod
+    def build_full_mesh(
+        cls,
+        bot_ids: list[str],
+        trust_manager: "TrustManager",
+        policy: TrustDecayPolicy | None = None,
+        max_incidents: int = 1_000,
+    ) -> "CrossBotTrustLedger":
+        """Build a ledger where every bot in *bot_ids* is a mutual peer of
+        every other bot, all sharing the same *trust_manager*.
+
+        This is the N-agent-scalable topology: adding a 3rd/4th/Nth bot_id to
+        the list is the only change needed for it to become a full peer of
+        every existing bot — no pairwise registration code to update. Used by
+        gateway/ingest_api/lifespan.py with bot_ids sourced from
+        agentshroud.yaml's bots: registry; kept here (not inline in lifespan)
+        so the topology logic is unit-testable without spinning up the app.
+        """
+        ledger = cls(policy=policy, max_incidents=max_incidents)
+        for i, bot_a in enumerate(bot_ids):
+            ledger.register_trust_manager(bot_a, trust_manager)
+            for bot_b in bot_ids[i + 1 :]:
+                ledger.register_peer(bot_a, bot_b, bidirectional=True)
+        return ledger
+
+    # ------------------------------------------------------------------
     # Registration
     # ------------------------------------------------------------------
 

@@ -4,7 +4,7 @@ Welcome to AgentShroud! This guide will take you from zero to a fully secured AI
 
 ## What is AgentShroud?
 
-AgentShroud adds 68 security modules on top of OpenClaw, including:
+AgentShroud adds 75 security modules on top of OpenClaw, including:
 - **Egress filtering** — Control what domains your AI can access
 - **Message scanning** — Block malicious prompts and data exfiltration
 - **Audit logging** — Tamper-evident trail of all AI actions
@@ -69,7 +69,7 @@ curl http://localhost:8080/health
 ```
 
 That's it! AgentShroud is now running with:
-- ✅ All 68 security modules enabled
+- ✅ All 75 security modules enabled
 - ✅ OpenClaw AI assistant ready
 - ✅ Web dashboard at https://localhost:8443
 - ✅ Audit logging to local files
@@ -395,7 +395,7 @@ curl http://localhost:8080/health
     "egress_filter": "active",
     "message_scanner": "active",
     "rate_limiter": "active",
-    // ... 26 modules total
+    // ... 75 modules total
   },
   "uptime": "00:02:15"
 }
@@ -544,7 +544,7 @@ modules:
   message_scanner: true
   rate_limiter: true
   audit_logger: true
-  # ... 22 more modules
+  # ... 71 more modules
 ```
 
 ### egress-config.yml - Egress Filtering
@@ -660,7 +660,7 @@ audit:
   retention_days: 365
   tamper_detection: true
 modules:
-  # Enable all 68 security modules
+  # Enable all 75 security modules
   "*": true
 ```
 
@@ -866,7 +866,7 @@ python -m pytest gateway/tests/ -k "not slow" --maxfail=3
 
 **Common test failures**:
 - **Network tests**: Check internet connectivity and firewall rules
-- **Security tests**: Verify all 26 modules are properly configured
+- **Security tests**: Verify all 75 modules are properly configured
 - **Integration tests**: Check that OpenClaw is running and accessible
 
 ### Gmail Connection Issues
@@ -921,7 +921,7 @@ After deployment, verify that all security measures are active:
 # Full health check with security details
 curl -s http://localhost:8080/health | jq '.'
 
-# Expected output should show all 26 modules as "active":
+# Expected output should show all 75 modules as "active":
 {
   "status": "healthy",
   "modules": {
@@ -959,7 +959,7 @@ curl -s http://localhost:8080/health | jq '.'
 
 1. **Open the dashboard**: https://localhost:8443
 2. **Check real-time events**: Should show live security events
-3. **Verify modules**: All 26 modules should show green "Active" status
+3. **Verify modules**: All 75 modules should show green "Active" status
 4. **Review metrics**: CPU, memory, request rates should be within normal ranges
 
 ### Audit Trail Verification
@@ -1008,7 +1008,7 @@ curl -X POST http://localhost:8080/api/chat \
 
 Before going to production, verify:
 
-- [ ] All 68 security modules show "active" status
+- [ ] All 75 security modules show "active" status
 - [ ] HTTPS dashboard accessible with valid certificate
 - [ ] Audit logging enabled with tamper detection  
 - [ ] 1Password integration working (no plaintext secrets)

@@ -30,6 +30,16 @@ try:
 except ImportError:
     RBACConfig = None
 
+try:
+    from gateway.security.progressive_trust_config import ViolationType
+except ImportError:
+    ViolationType = None
+
+try:
+    from gateway.security.cross_bot_trust_ledger import BotIncidentSeverity
+except ImportError:
+    BotIncidentSeverity = None
+
 
 class PipelineAction(str, Enum):
     FORWARD = "forward"
@@ -313,6 +323,28 @@ class SecurityPipeline:
     (Module 27), and DifferentialPIIDetector (Module 28).
     """
 
+    # Pipeline-level module attributes that are distinct capabilities not
+    # already reported elsewhere in /manage/modules (P0 core guards, and the
+    # P1 middleware-layer instances of context_guard/output_canary/
+    # enhanced_tool_sanitizer/xml_leak_filter/tool_result_injection_scanner/
+    # clamav_scanner, which this pipeline reuses by reference rather than
+    # owning a second instance of). Single source of truth for the endpoint —
+    # see gateway/ingest_api/main.py's list_security_modules.
+    ALL_MODULE_ATTRS = frozenset(
+        {
+            "context_integrity_scorer",
+            "output_schema_enforcer",
+            "envelope_signer",
+            "differential_pii_detector",
+            "rate_limit_guard",
+            "data_exfil_volume_guard",
+            "canary_tripwire",
+            "encoding_detector",
+            "key_leak_detector",
+            "cross_bot_trust_ledger",
+        }
+    )
+
     def __init__(
         self,
         prompt_guard=None,
@@ -448,6 +480,28 @@ class SecurityPipeline:
                 )
 
     async def process_inbound(
+        self,
+        message: str,
+        agent_id: str = "default",
+        action: str = "send_message",
+        source: str = "api",
+        metadata: dict[str, Any] | None = None,
+        skip_context_guard: bool = False,
+    ) -> PipelineResult:
+        """Process an inbound message through the full security pipeline.
+
+        Thin wrapper around _process_inbound_core: records a trust violation
+        (and propagates cross-bot decay, if configured) whenever the core
+        pipeline blocks the request, without touching any of its many
+        internal early-return block sites individually.
+        """
+        result = await self._process_inbound_core(
+            message, agent_id, action, source, metadata, skip_context_guard
+        )
+        self._maybe_record_trust_violation(agent_id, result)
+        return result
+
+    async def _process_inbound_core(
         self,
         message: str,
         agent_id: str = "default",
@@ -976,6 +1030,27 @@ class SecurityPipeline:
         return result
 
     async def process_outbound(
+        self,
+        response: str,
+        agent_id: str = "default",
+        destination_urls: list[str] | None = None,
+        metadata: dict[str, Any] | None = None,
+        user_trust_level: str = "UNTRUSTED",
+        source: str = "api",
+    ) -> PipelineResult:
+        """Process an outbound response through the security pipeline.
+
+        Thin wrapper around _process_outbound_core — see process_inbound's
+        docstring for why the trust-violation hook lives here instead of at
+        each of the core method's internal block sites.
+        """
+        result = await self._process_outbound_core(
+            response, agent_id, destination_urls, metadata, user_trust_level, source
+        )
+        self._maybe_record_trust_violation(agent_id, result)
+        return result
+
+    async def _process_outbound_core(
         self,
         response: str,
         agent_id: str = "default",
@@ -1526,6 +1601,59 @@ class SecurityPipeline:
         result.audit_hash = entry.chain_hash
         result.processing_time_ms = (time.time() - start) * 1000
         return result
+
+    def _maybe_record_trust_violation(self, agent_id: str, result: PipelineResult) -> None:
+        """Record a trust-score violation and propagate cross-bot decay.
+
+        Called once, centrally, by the process_inbound/process_outbound
+        wrappers after the core pipeline returns — not by each of its ~24
+        individual block sites. result.blocked is only ever True for a
+        genuine non-owner security block (owner-exempted paths continue past
+        the block without setting it), so this is a reliable single gate.
+
+        This is a generic, best-effort policy-violation record: the pipeline
+        doesn't carry a structured reason code today, only a free-text
+        block_reason, so every block is classified as ViolationType
+        .POLICY_VIOLATION / BotIncidentSeverity.MEDIUM rather than guessing a
+        more specific category from that text.
+        """
+        if not result.blocked or self.trust_manager is None:
+            return
+
+        before = self.trust_manager.get_trust(agent_id)
+        before_score = before[1] if before else 0.0
+        try:
+            if ViolationType is not None:
+                self.trust_manager.record_violation(
+                    agent_id,
+                    details=result.block_reason or "pipeline block",
+                    violation_type=ViolationType.POLICY_VIOLATION,
+                )
+            else:
+                self.trust_manager.record_violation(
+                    agent_id, details=result.block_reason or "pipeline block"
+                )
+        except Exception as exc:
+            logger.error("Failed to record trust violation for %s: %s", agent_id, exc)
+            return
+
+        if self.cross_bot_trust_ledger is None or BotIncidentSeverity is None:
+            return
+        after = self.trust_manager.get_trust(agent_id)
+        after_score = after[1] if after else before_score
+        score_delta = after_score - before_score
+        if score_delta >= 0:
+            return  # no actual penalty applied — nothing to propagate
+        try:
+            self.cross_bot_trust_ledger.record_incident(
+                source_bot=agent_id,
+                agent_id=agent_id,
+                severity=BotIncidentSeverity.MEDIUM,
+                score_delta=score_delta,
+                reason=result.block_reason or "pipeline block",
+            )
+        except Exception as exc:
+            logger.error("Failed to record cross-bot incident for %s: %s", agent_id, exc)
 
     def get_stats(self) -> dict[str, Any]:
         return {

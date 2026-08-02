@@ -4,7 +4,7 @@
 ### 1. Purpose and Scope
 
 #### 1.1 Purpose
-This document specifies the system requirements for AgentShroud, a comprehensive security proxy layer designed to protect OpenClaw AI agents from security threats. AgentShroud implements a defense-in-depth approach with 26 security modules to ensure safe operation of AI agents in production environments.
+This document specifies the system requirements for AgentShroud, a comprehensive security proxy layer designed to protect OpenClaw AI agents from security threats. AgentShroud implements a defense-in-depth approach with 75 security modules to ensure safe operation of AI agents in production environments.
 
 #### 1.2 Scope
 AgentShroud provides:

@@ -28,11 +28,11 @@ class TestReadmeAccuracy:
     def readme(self):
         return _read_file("README.md")
 
-    def test_claims_12_security_modules(self, readme):
-        assert "12 security modules" in readme or "12" in readme
+    def test_claims_75_security_modules(self, readme):
+        assert "75 security modules" in readme
 
     def test_security_modules_listed(self, readme):
-        """All 12 modules mentioned in README should exist as code."""
+        """This representative sample of modules mentioned in README should exist as code."""
         expected_modules = [
             "PII Sanitizer",
             "Approval Queue",
@@ -150,6 +150,112 @@ class TestContributingMdAccuracy:
 
     def test_branch_naming_convention(self, contributing):
         assert "feature/" in contributing
+
+
+class TestManageModulesEndpointAccuracy:
+    """Verify /manage/modules enumerates every module MiddlewareManager wires.
+
+    MiddlewareManager.ALL_MODULE_ATTRS is the single source of truth for which
+    P1 module attributes exist on the class; both the live status endpoint and
+    README's P1 tier count must be derived from — not merely consistent with —
+    this list, or the three drift silently the way they did before.
+    """
+
+    def test_all_module_attrs_exist_after_init(self):
+        from gateway.ingest_api.middleware import MiddlewareManager
+
+        mm = MiddlewareManager()
+        assert len(MiddlewareManager.ALL_MODULE_ATTRS) >= 30
+        for name in MiddlewareManager.ALL_MODULE_ATTRS:
+            assert hasattr(mm, name), f"MiddlewareManager has no attribute '{name}'"
+
+    def test_manage_modules_endpoint_uses_the_same_registry(self):
+        """The endpoint's P1 section must be generated from ALL_MODULE_ATTRS,
+        not a separately hand-maintained name list that can drift from it."""
+        import inspect
+
+        from gateway.ingest_api import main as main_module
+
+        source = inspect.getsource(main_module.list_security_modules)
+        assert "ALL_MODULE_ATTRS" in source
+
+    def test_readme_p1_count_matches_middleware_manager(self):
+        from gateway.ingest_api.middleware import MiddlewareManager
+
+        readme = _read_file("README.md")
+        real_count = len(MiddlewareManager.ALL_MODULE_ATTRS)
+        assert f"P1 — Middleware**: {real_count} modules wired" in readme, (
+            f"README's P1 tier count is stale: MiddlewareManager wires " f"{real_count} modules"
+        )
+
+    @pytest.mark.asyncio
+    async def test_endpoint_reports_no_key_collisions_and_high_total(self, monkeypatch):
+        """Execute the real endpoint against a fully-populated app_state and
+        verify it enumerates a total close to the public "security modules"
+        claim, with no tier silently overwriting another tier's entry for the
+        same module name (the bug that made the old hardcoded P1/P2 lists
+        under-report ~37 total instead of anywhere near the real number)."""
+        from types import SimpleNamespace
+
+        from gateway.ingest_api import main as main_module
+        from gateway.ingest_api.middleware import MiddlewareManager
+        from gateway.proxy.pipeline import SecurityPipeline
+
+        fake = SimpleNamespace()
+        fake.sanitizer = SimpleNamespace(mode="enforce")
+        for name in (
+            "prompt_guard",
+            "trust_manager",
+            "egress_filter",
+            "prompt_protection",
+            "heuristic_classifier",
+            "network_validator",
+            "alert_dispatcher",
+            "killswitch_monitor",
+            "drift_detector",
+            "encrypted_store",
+            "key_vault",
+            "health_report",
+            "canary_runner",
+            "clamav_scanner",
+            "trivy_scanner",
+            "falco_monitor",
+            "wazuh_client",
+            "config_integrity",
+            "cron_state_monitor",
+            "collaborator_tracker",
+            "memory_integrity",
+            "memory_lifecycle",
+            "egress_approval_queue",
+            "outbound_filter",
+            "tool_acl_enforcer",
+            "privacy_enforcer",
+            "delegation_manager",
+            "report_store",
+            "audit_store",
+        ):
+            setattr(fake, name, object())
+        fake.openscap_available = True
+        fake.middleware_manager = MiddlewareManager()
+        fake.pipeline = SimpleNamespace(**{n: object() for n in SecurityPipeline.ALL_MODULE_ATTRS})
+        fake.approval_queue = SimpleNamespace(mfa_guard=object())
+
+        monkeypatch.setattr(main_module, "app_state", fake)
+
+        result = await main_module.list_security_modules(auth=None)
+
+        assert result["total"] == len(result["modules"]), "duplicate keys collapsed silently"
+        statuses = {m["status"] for m in result["modules"].values()}
+        assert statuses <= {"active", "loaded", "unavailable", "degraded"}
+        assert result["total"] >= 70, (
+            f"endpoint only enumerates {result['total']} modules — still far "
+            f"short of the real verified module count"
+        )
+        for name in SecurityPipeline.ALL_MODULE_ATTRS:
+            assert (
+                result["modules"][name]["status"] == "active"
+            ), f"pipeline-level module '{name}' should report active when populated"
+        assert result["modules"]["mfa_guard"]["status"] == "active"
 
 
 class TestTestCountAccuracy:

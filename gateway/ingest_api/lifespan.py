@@ -348,9 +348,11 @@ async def lifespan(app: FastAPI):
         app_state.trust_manager = TrustManager(progressive_config=_pt_cfg)
         logger.info("TrustManager progressive-trust ladder: %s mode", _pt_cfg.enforcement_mode)
         # Register the known agent identities with STANDARD trust so internal
-        # API calls are not blocked. "default" is the legacy fallback;
-        # "openclaw" and "hermes" are the production bot_ids.
-        for _agent_id in ("default", "openclaw", "hermes"):
+        # API calls are not blocked. "default" is the legacy fallback; every
+        # other id comes from agentshroud.yaml's bots: registry, so adding a
+        # 3rd/4th/Nth bot there is enough — no code change needed here.
+        _known_agent_ids = ["default"] + list(app_state.config.bots.keys())
+        for _agent_id in _known_agent_ids:
             app_state.trust_manager.register_agent(_agent_id)
             app_state.trust_manager._conn.execute(
                 "UPDATE trust_scores SET score = 200, level = ? WHERE agent_id = ?",
@@ -363,7 +365,33 @@ async def lifespan(app: FastAPI):
         logger.info("TrustManager initialized (progressive trust ladder active)")
     except Exception as e:
         logger.critical(f"Failed to initialize TrustManager: {e}")
+        app_state.trust_manager = None
         raise
+
+    # Cross-Bot Trust Ledger (Module 27, v1.2.0) — IEC 62443 FR3/FR6.
+    # Full-mesh peer topology: every configured bot is a mutual peer of every
+    # other configured bot, driven entirely by app_state.config.bots (not a
+    # hardcoded pair), so a 3rd/4th/Nth bot added to agentshroud.yaml's bots:
+    # section automatically becomes a peer of every existing bot with zero
+    # code changes here. Isolated in its own try block so a failure here
+    # doesn't get misreported as a TrustManager failure.
+    app_state.cross_bot_trust_ledger = None
+    if app_state.trust_manager is not None:
+        try:
+            from ..security.cross_bot_trust_ledger import CrossBotTrustLedger
+
+            _bot_ids = list(app_state.config.bots.keys())
+            app_state.cross_bot_trust_ledger = CrossBotTrustLedger.build_full_mesh(
+                _bot_ids, app_state.trust_manager
+            )
+            logger.info(
+                "CrossBotTrustLedger initialized: full-mesh peers across %d bot(s) (%s)",
+                len(_bot_ids),
+                ", ".join(_bot_ids) or "none configured",
+            )
+        except Exception as e:
+            logger.error(f"Failed to initialize CrossBotTrustLedger: {e}")
+            app_state.cross_bot_trust_ledger = None
 
     try:
         egress_mode = get_module_mode(app_state.config, "egress_filter")
@@ -733,6 +761,7 @@ async def lifespan(app: FastAPI):
         key_leak_detector=_key_leak_detector,
         rate_limit_guard=_rate_limit_guard,
         data_exfil_volume_guard=_data_exfil_volume_guard,
+        cross_bot_trust_ledger=app_state.cross_bot_trust_ledger,
     )
     logger.info("Security pipeline initialized")
 

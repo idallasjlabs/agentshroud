@@ -67,7 +67,7 @@ graph TB
     end
 
     subgraph "AgentShroud Gateway — Runtime Layer"
-        PIPE[Security Pipeline<br/>68 Modules · 7 Layers]
+        PIPE[Security Pipeline<br/>75 Modules · 7 Layers]
         AQ[Approval Queue<br/>Human-in-the-Loop]
         SOC[SOC Dashboard<br/>Real-time Monitoring]
         CVE[CVE Intelligence<br/>293 Tracked CVEs]
@@ -119,7 +119,7 @@ graph TB
 | AI Agent Platforms | 3 (Claude Code, Gemini CLI, Codex CLI) |
 | Unique Agent Definitions | 113 |
 | Encoded Skills | 59 + 5 runtime skills |
-| Security Modules | 68 across 7 layers |
+| Security Modules | 75 across 7 layers |
 | Pre/Post Tool Hooks | 7 (across 6 shell scripts) |
 | CI/CD Jobs | 14 (across 6 workflows) |
 | Semgrep SAST Rules | 12 custom rules (10 CWEs) |
@@ -191,7 +191,7 @@ graph LR
 
 These paths are blocked for Gemini/Codex regardless of task type:
 
-- `gateway/security/**` — all 68 security modules
+- `gateway/security/**` — all 75 security modules
 - `gateway/approval_queue/**` — human-in-the-loop queue
 - `docker/setup-secrets.sh` — secret extraction pipeline
 - `docker/config/openclaw/apply-patches.js` — runtime config patches
@@ -401,7 +401,7 @@ flowchart LR
 ### 7-Layer Defense Architecture
 
 Every message between the AI agent and external systems passes through the
-SecurityPipeline — a chain of 68 modules organized into 7 layers.
+SecurityPipeline — a chain of 75 modules organized into 7 layers.
 
 ```mermaid
 flowchart TB
@@ -856,7 +856,7 @@ All MCP tool calls pass through the `MCPProxy` which provides:
 
 - **Agent role separation** — clear boundaries prevent unauthorized changes
 - **Hook enforcement** — credential leaks and main-branch commits are physically blocked
-- **Security pipeline depth** — 68 modules with real implementation (no stubs)
+- **Security pipeline depth** — 75 modules with real implementation (no stubs)
 - **TDD discipline** — 94%+ coverage with incident-to-test backfill rule
 - **CVE intelligence** — daily automated triage with full mitigation tracking
 - **Human-in-the-loop** — approval queue with Telegram inline keyboard UX
@@ -912,7 +912,7 @@ agentshroud/
   gateway/
     __init__.py           # __version__ = "1.0.59"
     proxy/
-      pipeline.py         # SecurityPipeline (68 modules)
+      pipeline.py         # SecurityPipeline (75 modules)
       telegram_proxy.py   # Telegram API proxy
       slack_proxy.py      # Slack API proxy
       llm_proxy.py        # LLM API proxy
@@ -921,7 +921,7 @@ agentshroud/
       mcp_proxy.py        # MCP tool call proxy
       dns_forwarder.py    # DNS filtering proxy
       web_proxy.py        # Web content proxy
-    security/             # 68 security module files (91 files on disk; 23 are shared config/telemetry support, not standalone modules)
+    security/             # 75 wired security module capabilities (91 files on disk; the rest are shared config/telemetry support, not standalone modules)
     approval_queue/       # Human-in-the-loop queue
     soc/                  # SOC dashboard + REST API
     web/                  # Web management UI
