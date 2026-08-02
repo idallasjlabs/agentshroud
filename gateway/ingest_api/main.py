@@ -56,6 +56,7 @@ from ..web.management import router as management_dashboard_router
 from .auth import create_auth_dependency
 from .event_bus import make_event
 from .lifespan import _read_secret, lifespan
+from .middleware import MiddlewareManager
 from .models import (
     ApprovalRequest,
     LedgerEntry,
@@ -1148,23 +1149,25 @@ async def list_security_modules(auth: AuthRequired):
         "status": "active" if getattr(app_state, "heuristic_classifier", None) else "unavailable",
     }
 
-    # P1 — Middleware
+    # P1 — Middleware. MiddlewareManager.ALL_MODULE_ATTRS is the single source
+    # of truth for every module middleware.py wires — iterate it directly so
+    # this list can't drift from what __init__/set_config actually assigns.
+    #
+    # Five of those attrs (dns_filter, egress_monitor, browser_security,
+    # oauth_security, network_validator) are ALSO wired independently inside
+    # the web_proxy CONNECT handler / app_state below and get their own P2/P3
+    # entries there; skip them here so one flat "modules" dict doesn't have
+    # two tiers silently overwriting the same key.
     mm = app_state.middleware_manager
+    _p1_reported_elsewhere = {
+        "dns_filter",
+        "egress_monitor",
+        "browser_security",
+        "oauth_security",
+        "network_validator",
+    }
     if mm:
-        for name in [
-            "context_guard",
-            "metadata_guard",
-            "log_sanitizer",
-            "env_guard",
-            "git_guard",
-            "file_sandbox",
-            "resource_guard",
-            "session_manager",
-            "token_validator",
-            "consent_framework",
-            "subagent_monitor",
-            "agent_registry",
-        ]:
+        for name in sorted(MiddlewareManager.ALL_MODULE_ATTRS - _p1_reported_elsewhere):
             obj = getattr(mm, name, None)
             modules[name] = {"tier": "P1", "status": "active" if obj else "unavailable"}
 
@@ -1194,6 +1197,18 @@ async def list_security_modules(auth: AuthRequired):
         "falco_monitor": {"check": "falco_monitor"},
         "wazuh_client": {"check": "wazuh_client"},
         "network_validator": {"check": "network_validator"},
+        "config_integrity": {"check": "config_integrity"},
+        "cron_state_monitor": {"check": "cron_state_monitor"},
+        "collaborator_tracker": {"check": "collaborator_tracker"},
+        "memory_integrity": {"check": "memory_integrity"},
+        "memory_lifecycle": {"check": "memory_lifecycle"},
+        "egress_approval": {"check": "egress_approval_queue"},
+        "outbound_filter": {"check": "outbound_filter"},
+        "tool_acl": {"check": "tool_acl_enforcer"},
+        "privacy_policy": {"check": "privacy_enforcer"},
+        "delegation": {"check": "delegation_manager"},
+        "report_store": {"check": "report_store"},
+        "audit_store": {"check": "audit_store"},
     }
     for name, info in p3_modules.items():
         obj = getattr(app_state, info["check"], None)

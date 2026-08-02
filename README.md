@@ -91,7 +91,7 @@ The v1.1.x line introduces **multi-bot governance**: AgentShroud now secures two
 The original release wired all **68 security modules** into the live pipeline and delivered two complete control center interfaces — Web (7-page responsive dashboard) and Terminal (TUI + chat console). Every module is active in the pipeline — no stubs, no dead code, no planned-but-unbuilt features.
 
 - **P0 — Core Pipeline**: PromptGuard, TrustManager, EgressFilter, PII fix, gateway binding
-- **P1 — Middleware**: 12 modules wired (7 original + SessionManager, TokenValidator, ConsentFramework, SubagentMonitor, AgentRegistry) + MCP fail-closed enforcement
+- **P1 — Middleware**: 35 modules wired (`MiddlewareManager.ALL_MODULE_ATTRS` in `gateway/ingest_api/middleware.py` is the source of truth) + MCP fail-closed enforcement
 - **P2 — Network**: 5 modules active in web proxy into the request flow
 - **P3 — Infrastructure**: 10 modules loaded (AlertDispatcher, DriftDetector, EncryptedStore, KeyVault, Canary, ClamAV, Trivy, Falco, Wazuh, HealthReport)
 

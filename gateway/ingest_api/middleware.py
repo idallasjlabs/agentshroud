@@ -111,6 +111,51 @@ class MiddlewareManager:
         }
     )
 
+    # Every P1 module attribute wired in __init__/set_config. Single source of
+    # truth for module-count reporting (/manage/modules) and doc claims about
+    # how many modules this tier wires — both must be derived from this list,
+    # not a hand-maintained count that can drift from what __init__ actually
+    # assigns.
+    ALL_MODULE_ATTRS = frozenset(
+        {
+            "rbac_manager",
+            "user_session_manager",
+            "context_guard",
+            "metadata_guard",
+            "log_sanitizer",
+            "env_guard",
+            "git_guard",
+            "file_sandbox",
+            "resource_guard",
+            "session_manager",
+            "token_validator",
+            "consent_framework",
+            "subagent_monitor",
+            "agent_registry",
+            "memory_integrity_monitor",
+            "memory_lifecycle_manager",
+            "tool_injection_scanner",
+            "xml_leak_filter",
+            "alert_dispatcher",
+            "approval_hardening",
+            "browser_security",
+            "credential_injector",
+            "dns_filter",
+            "drift_detector",
+            "egress_monitor",
+            "key_rotation",
+            "killswitch_monitor",
+            "multi_turn_tracker",
+            "network_validator",
+            "oauth_security",
+            "output_canary",
+            "path_isolation",
+            "tool_chain_analyzer",
+            "enhanced_tool_sanitizer",
+            "tool_result_sanitizer",
+        }
+    )
+
     def __init__(self):
         """Initialize all security modules."""
         self.original_request_data = None  # Track original request
