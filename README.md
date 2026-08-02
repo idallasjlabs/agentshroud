@@ -229,7 +229,7 @@ AgentShroud implements a defense-in-depth strategy with 68 security modules oper
 | **Session Manager** | Manages agent sessions, authentication state, and session-scoped permissions |
 | **Port Manager** | Controls and audits network port allocations and bindings |
 | **Proxy Dashboard** | Real-time WebSocket activity feed, approval management, and system health monitoring |
-| **SecurityPipelineIntegrator** | Orchestrates all 33 modules into a unified processing pipeline |
+| **SecurityPipelineIntegrator** | Orchestrates all 68 modules into a unified processing pipeline |
 
 ---
 
@@ -240,7 +240,7 @@ AgentShroud implements a defense-in-depth strategy with 68 security modules oper
 A 7-page responsive web dashboard providing full management capabilities:
 
 - **Dashboard** — Real-time activity feed, system health, active alerts
-- **Security Modules** — Status and configuration for all 33 modules
+- **Security Modules** — Status and configuration for all 68 modules
 - **Approval Queue** — Review and action pending approval requests
 - **Audit Trail** — Browse and search the immutable audit ledger
 - **Agent Management** — Monitor connected agents, trust levels, resource usage

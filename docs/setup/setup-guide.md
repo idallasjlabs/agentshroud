@@ -395,7 +395,7 @@ curl http://localhost:8080/health
     "egress_filter": "active",
     "message_scanner": "active",
     "rate_limiter": "active",
-    // ... 26 modules total
+    // ... 68 modules total
   },
   "uptime": "00:02:15"
 }
@@ -544,7 +544,7 @@ modules:
   message_scanner: true
   rate_limiter: true
   audit_logger: true
-  # ... 22 more modules
+  # ... 64 more modules
 ```
 
 ### egress-config.yml - Egress Filtering
@@ -866,7 +866,7 @@ python -m pytest gateway/tests/ -k "not slow" --maxfail=3
 
 **Common test failures**:
 - **Network tests**: Check internet connectivity and firewall rules
-- **Security tests**: Verify all 26 modules are properly configured
+- **Security tests**: Verify all 68 modules are properly configured
 - **Integration tests**: Check that OpenClaw is running and accessible
 
 ### Gmail Connection Issues
@@ -921,7 +921,7 @@ After deployment, verify that all security measures are active:
 # Full health check with security details
 curl -s http://localhost:8080/health | jq '.'
 
-# Expected output should show all 26 modules as "active":
+# Expected output should show all 68 modules as "active":
 {
   "status": "healthy",
   "modules": {
@@ -959,7 +959,7 @@ curl -s http://localhost:8080/health | jq '.'
 
 1. **Open the dashboard**: https://localhost:8443
 2. **Check real-time events**: Should show live security events
-3. **Verify modules**: All 26 modules should show green "Active" status
+3. **Verify modules**: All 68 modules should show green "Active" status
 4. **Review metrics**: CPU, memory, request rates should be within normal ranges
 
 ### Audit Trail Verification

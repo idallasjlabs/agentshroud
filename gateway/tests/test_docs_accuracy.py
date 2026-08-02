@@ -28,11 +28,11 @@ class TestReadmeAccuracy:
     def readme(self):
         return _read_file("README.md")
 
-    def test_claims_12_security_modules(self, readme):
-        assert "12 security modules" in readme or "12" in readme
+    def test_claims_68_security_modules(self, readme):
+        assert "68 security modules" in readme
 
     def test_security_modules_listed(self, readme):
-        """All 12 modules mentioned in README should exist as code."""
+        """This representative sample of modules mentioned in README should exist as code."""
         expected_modules = [
             "PII Sanitizer",
             "Approval Queue",
