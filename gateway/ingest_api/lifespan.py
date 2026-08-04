@@ -75,6 +75,34 @@ def _install_uvicorn_warning_filter() -> None:
     uvicorn_logger.addFilter(_DropInvalidHTTPRequestFilter())
 
 
+def _build_per_bot_telegram_tokens(bots: dict, default_token: str) -> dict[str, str]:
+    """Resolve each configured bot's OWN Telegram token, distinct from the default.
+
+    Reads each ``BotConfig.telegram_token_secret`` (falling back to
+    ``telegram_bot_token`` for the ``openclaw`` bot, or
+    ``telegram_bot_token_{bot_id}`` for any other) via the Docker secret it
+    names. A bot is only included when its token is both present AND
+    different from ``default_token`` — while a bot's secret still holds the
+    same value as the default (e.g. before a real per-bot token has been
+    provisioned), messages for that bot correctly keep going out under the
+    default identity rather than silently duplicating it under a second,
+    identical-looking entry.
+
+    Used to give each wrapped agent's Telegram messages their own bot
+    identity instead of all displaying under the default bot's username —
+    shared by the egress-approval notifier and the upstream CVE watch.
+    """
+    per_bot_tokens: dict[str, str] = {}
+    for bot_id, bot_cfg in bots.items():
+        secret_name = getattr(bot_cfg, "telegram_token_secret", None) or (
+            "telegram_bot_token" if bot_id == "openclaw" else f"telegram_bot_token_{bot_id}"
+        )
+        bot_token = _read_secret(secret_name) or None
+        if bot_token and bot_token != default_token:
+            per_bot_tokens[bot_id] = bot_token
+    return per_bot_tokens
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """FastAPI lifespan - startup and shutdown"""
@@ -262,7 +290,7 @@ async def lifespan(app: FastAPI):
         for bot_id, bot in app_state.config.bots.items():
             container_cfg = ContainerConfig(
                 agent_id=bot_id,
-                container_name=f"agentshroud-{bot_id}",
+                container_name=bot.resolved_container_name,
                 network=f"agentshroud-{bot_id}-net",
                 volume=f"agentshroud-{bot_id}-workspace",
                 image=bot.image or f"agentshroud/{bot_id}:latest",
@@ -469,18 +497,13 @@ async def lifespan(app: FastAPI):
             "telegram_bot_token"
         )
         if _tg_token_egress:
-            # Build per-bot token map so egress approval notifications arrive via the
+            # Per-bot token map so egress approval notifications arrive via the
             # correct bot when Hermes (or any future bot) triggers an egress request.
-            # Reads each bot's telegram_token_secret from /run/secrets/ at startup.
-            _per_bot_tokens: dict[str, str] = {}
-            for _bid, _bcfg in app_state.config.bots.items():
-                _secret_name = getattr(_bcfg, "telegram_token_secret", None) or (
-                    "telegram_bot_token" if _bid == "openclaw" else f"telegram_bot_token_{_bid}"
-                )
-                _bot_tok = _read_secret(_secret_name) or None
-                if _bot_tok and _bot_tok != _tg_token_egress:
-                    _per_bot_tokens[_bid] = _bot_tok
-                    logger.info("EgressTelegramNotifier: registered per-bot token for '%s'", _bid)
+            _per_bot_tokens = _build_per_bot_telegram_tokens(
+                app_state.config.bots, _tg_token_egress
+            )
+            for _bid in _per_bot_tokens:
+                logger.info("EgressTelegramNotifier: registered per-bot token for '%s'", _bid)
             app_state.egress_notifier = EgressTelegramNotifier(
                 bot_token=_tg_token_egress,
                 owner_chat_id=RBACConfig().owner_user_id,
@@ -1827,6 +1850,13 @@ async def lifespan(app: FastAPI):
 
         _gh_token = os.environ.get("GITHUB_TOKEN") or None
         if _cve_token and _cve_owner_id:
+            # Per-agent token map so each wrapped agent's upstream CVE alert
+            # (e.g. "Hermes Agent CVE watch") is delivered via ITS OWN bot
+            # identity instead of always displaying under the default bot's
+            # username — see _build_per_bot_telegram_tokens.
+            _cve_per_bot_tokens = _build_per_bot_telegram_tokens(app_state.config.bots, _cve_token)
+            for _cve_bid in _cve_per_bot_tokens:
+                logger.info("Upstream CVE watch: registered per-bot token for '%s'", _cve_bid)
             app_state._upstream_cve_check_task = _asyncio.create_task(
                 _upstream_cve_scheduler(
                     bot_token=_cve_token,
@@ -1834,6 +1864,7 @@ async def lifespan(app: FastAPI):
                     base_url=_cve_tg_base,
                     report_hour=_cve_hour,
                     github_token=_gh_token,
+                    bot_tokens=_cve_per_bot_tokens,
                 )
             )
             logger.info(
@@ -2168,7 +2199,7 @@ async def lifespan(app: FastAPI):
     #   Re-evaluate if: (a) the dashboard is exposed beyond the tailnet, or
     #   (b) the dashboard begins relaying agent-generated content to third parties.
     _hermes_dash_port = int(os.environ.get("HERMES_DASHBOARD_PROXY_PORT", "9119"))
-    _hermes_dash_host = os.environ.get("HERMES_DASHBOARD_HOST_UPSTREAM", "agentshroud-hermes")
+    _hermes_dash_host = os.environ.get("HERMES_DASHBOARD_HOST_UPSTREAM", "agentshroud-hermes-v2")
     _hermes_dash_upstream_port = int(os.environ.get("HERMES_DASHBOARD_UPSTREAM_PORT", "9119"))
     _hermes_dash_enabled = os.environ.get("HERMES_DASHBOARD_PROXY_ENABLED", "true").lower() not in (
         "false",
@@ -2243,7 +2274,7 @@ async def lifespan(app: FastAPI):
     #   3. Outbound actions from Hermes are still gateway-enveloped via
     #      HTTP_PROXY=http://gateway:8181 (EgressFilter + approval queue).
     _hermes_api_port = int(os.environ.get("HERMES_API_PROXY_PORT", "8642"))
-    _hermes_api_host = os.environ.get("HERMES_API_HOST_UPSTREAM", "agentshroud-hermes")
+    _hermes_api_host = os.environ.get("HERMES_API_HOST_UPSTREAM", "agentshroud-hermes-v2")
     _hermes_api_upstream_port = int(os.environ.get("HERMES_API_UPSTREAM_PORT", "8642"))
     _hermes_api_enabled = os.environ.get("HERMES_API_PROXY_ENABLED", "1").lower() not in (
         "false",

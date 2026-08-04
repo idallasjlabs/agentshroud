@@ -13,7 +13,7 @@ AgentShroud implements Role-Based Access Control (RBAC) with trust-level progres
 **Description**: Full system administration capabilities
 **Typical Users**: AgentShroud system administrators, security team leads
 
-#### Operator (operator)  
+#### Operator (operator)
 **Trust Level**: N/A (Administrative)
 **Description**: Operational management without policy modification
 **Typical Users**: SOC analysts, system operators, DevOps engineers
@@ -32,7 +32,7 @@ AgentShroud implements Role-Based Access Control (RBAC) with trust-level progres
 
 #### Trust Level 1 (agent_l1)
 **Description**: Basic trust with limited tool access
-**Characteristics**: High-risk actions require approval, standard monitoring  
+**Characteristics**: High-risk actions require approval, standard monitoring
 **Progression Time**: 14 days of compliant behavior
 
 #### Trust Level 2 (agent_l2)
@@ -181,7 +181,7 @@ criteria:
   behavioral_consistency_score: 80%
 ```
 
-#### Level 1 → Level 2  
+#### Level 1 → Level 2
 ```yaml
 criteria:
   minimum_duration: 14 days
@@ -223,7 +223,7 @@ criteria:
 ```yaml
 violation_types:
   prompt_injection_attempt: -20 points, level_cap: 1
-  unauthorized_access_attempt: -30 points, level_cap: 0  
+  unauthorized_access_attempt: -30 points, level_cap: 0
   pii_exposure: -25 points, level_cap: 1
   policy_violation: -15 points
   failed_approval_compliance: -10 points
@@ -232,7 +232,7 @@ violation_types:
 
 #### Recovery Timeframes
 - **Minor Violations** (5-10 points): 7 days clean behavior
-- **Moderate Violations** (11-20 points): 14 days clean behavior  
+- **Moderate Violations** (11-20 points): 14 days clean behavior
 - **Major Violations** (21+ points): 30 days clean behavior + manual review
 
 ## MCP Proxy Tool Authorization
@@ -254,7 +254,7 @@ restrictions: rate_limiting_only
 ```yaml
 tools:
   - file_reader
-  - image_analyzer  
+  - image_analyzer
   - document_generator
   - data_visualizer
 restrictions: content_filtering, rate_limiting
@@ -297,21 +297,21 @@ AgentShroud continuously monitors agent behavior and can dynamically adjust perm
 ```python
 def adjust_permissions(agent_id: str, trust_score: float, recent_behavior: Dict):
     adjustments = {}
-    
+
     # Recent security violations reduce permissions
     if recent_behavior.get('security_violations', 0) > 0:
         adjustments['tool_access_level'] = min(current_level - 1, 0)
         adjustments['approval_threshold'] = 'strict'
-    
+
     # Exceptional performance can grant temporary elevated access
     if recent_behavior.get('exceptional_performance', False):
         adjustments['temporary_elevation'] = True
         adjustments['elevation_duration'] = timedelta(hours=24)
-    
+
     # Resource usage patterns affect limitations
     if recent_behavior.get('resource_usage', 0) > 0.8:
         adjustments['rate_limits'] = 'restrictive'
-    
+
     return adjustments
 ```
 

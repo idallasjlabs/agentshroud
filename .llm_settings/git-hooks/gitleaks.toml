@@ -1,5 +1,28 @@
+# Inherit gitleaks' built-in default rules (AWS, GitHub, Slack, etc.)
+# Without this, --config replaces the defaults with an empty rule set and
+# the scanner reports clean on every commit.
+[extend]
+useDefault = true
+
 [allowlist]
-  description = "Ignore OpenSCAP 'REDACTED' placeholders"
-  # This stops Gitleaks from flagging the actual string "REDACTED" 
-  # regardless of which file it's in.
-  regexes = ['REDACTED']
+  description = "Ignore OpenSCAP 'REDACTED' placeholders and documentation examples"
+
+  # Ignore the actual string "REDACTED" anywhere and AWS documentation example keys
+  regexes = [
+    'REDACTED',
+    "AKIAIOSFODNN7EXAMPLE",                         # pragma: allowlist secret
+    "AKIAI44QH8DHBEXAMPLE",                         # pragma: allowlist secret
+    "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",   # pragma: allowlist secret
+    "je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY"    # pragma: allowlist secret
+  ]
+
+  # Allowlist entire documentation directories containing example credentials
+  paths = [
+    '''\.secrets\.baseline$''',
+    '''\.llm_settings/\.gemini/agents/''',
+    '''\.llm_settings/skills/''',
+    '''continue-.*\.md$''',  # Claude Code session logs (contain example tokens in conversations)
+    '''\.claude/\.gemini/agents/''',
+    '''\.claude/skills/''',
+    '''\.gemini/agents/'''
+  ]

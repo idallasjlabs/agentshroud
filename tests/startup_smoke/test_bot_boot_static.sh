@@ -14,6 +14,10 @@
 #   S6. setup-secrets.sh routes display output to /dev/tty (garbled secret fix)
 #   S8. no raw ssh/ping/*.ts.net/agentshroud-bot@ in baked bot config (2026-07-17 fix)
 #   S9. init-openclaw-config.sh seeds ssh-exec rules into the live AGENTS.md (2026-07-29 fix)
+#   S10. start-agentshroud.sh force-reconciles security-critical LIVE cron jobs
+#        against known-dangerous patterns, independent of the file-level reseed
+#        (2026-08-03 fix — file-level fixes never reached OpenClaw's already-
+#        existing sqlite-backed live job)
 #
 # Run: bash tests/startup_smoke/test_bot_boot_static.sh
 # Exit 0 = pass. Exit 1 = fail.
@@ -110,7 +114,7 @@ check "S7: apply-patches.js: stale channels.slack block removed when no tokens" 
 #   (c) a REAL Tailscale FQDN (`tail<hex>.ts.net`) — distinct from the generic
 #       `*.ts.net` wildcard used in warning text ("NEVER use ... *.ts.net")
 s8_hit=""
-for dir in "$REPO/docker/config/openclaw" "$REPO/docker/bots/openclaw/config" "$REPO/docker/config/hermes" "$REPO/docker/bots/hermes/config"; do
+for dir in "$REPO/docker/config/openclaw" "$REPO/docker/bots/openclaw/config" "$REPO/docker/config/hermes" "$REPO/docker/bots/hermes/config" "$REPO/docker/bots/openclaw/workspace/collaborator-workspace"; do
     [[ -d "$dir" ]] || continue
     match="$(grep -rnE '\bssh (marvin|raspberrypi|trillian|pi)\b|agentshroud-bot@|\btail[0-9a-f]+\.ts\.net\b' "$dir" 2>/dev/null || true)"
     if [[ -n "$match" ]]; then
@@ -135,6 +139,26 @@ init_sh="$REPO/docker/scripts/init-openclaw-config.sh"
 check "S9: init-openclaw-config.sh: seeds agentshroud-ssh-exec.sh rules into live AGENTS.md" \
     "$(grep -q 'AGENTS_FILE' "$init_sh" && grep -q 'agentshroud-ssh-exec.sh' "$init_sh" && echo true || echo false)" \
     "Live workspace AGENTS.md never gets SSH-exec-only rules injected — local-model failover can silently regress raw-ssh lab-host access"
+
+# S10: start-agentshroud.sh force-reconciles security-critical LIVE cron jobs.
+# init-openclaw-config.sh's cron reseed (S8's subject) is a whole-file checksum
+# gate against docker/config/openclaw/cron/jobs.json — it only ever touches the
+# file on disk. OpenClaw's actual live cron store is sqlite-backed and, once a
+# job with a given ID exists, is deliberately left alone by that reseed logic
+# (to preserve real `openclaw cron edit` customizations). Confirmed 2026-08-03:
+# this let the "AgentShroud Daily Check-in" job's LIVE payload keep raw
+# `ssh ... host.docker.internal` / `raspberrypi.tail240ea8.ts.net` content for
+# months, invisible to every prior file-level fix (S8 was clean the whole
+# time — the bug was never in the file). This is a positive-presence check
+# (S8 is negative-only over the seed file) so a future edit that removes the
+# live-job reconciliation call passes S8 but fails here.
+start_sh="$REPO/docker/scripts/start-agentshroud.sh"
+check "S10: start-agentshroud.sh: force-reconciles security-critical live cron jobs from seed" \
+    "$(grep -q '_reconcile_security_critical_cron' "$start_sh" \
+        && grep -q '_SECURITY_CRITICAL_CRON_JOB_IDS' "$start_sh" \
+        && grep -q 'openclaw cron edit' "$start_sh" \
+        && echo true || echo false)" \
+    "Live cron jobs are never force-corrected against known-dangerous raw-ssh/Tailscale-hostname patterns — a file-level fix can leave an already-existing live job broken indefinitely"
 
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""

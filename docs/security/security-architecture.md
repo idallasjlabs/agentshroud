@@ -309,7 +309,7 @@ def decode_layers(text: str) -> str:
         bytes.fromhex,  # Hex decoding
         rot13_decode,   # ROT13 decoding
     ]
-    
+
     for decoder in decoders:
         try:
             decoded = decoder(text)

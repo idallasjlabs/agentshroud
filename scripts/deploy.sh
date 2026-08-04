@@ -225,7 +225,7 @@ if [ -n "$TELEGRAM_TOKEN" ]; then
     echo ""
     echo "🔑 Configuring Telegram bot token..."
     BOT_CONTAINER="${INSTANCE_NAME}-bot"
-    
+
     # Wait for container to be running
     for i in $(seq 1 10); do
         if $RUNTIME inspect "$BOT_CONTAINER" >/dev/null 2>&1; then

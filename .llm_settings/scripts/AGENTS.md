@@ -226,3 +226,58 @@ When configured, you have access to MCP servers for external services:
 Use these for read-only queries during validation.
 
 See `.llm_settings/docs/MCP_README.md` for setup instructions.
+
+──────────────────────────────────────────────────────────────────────────────
+## 11) PRE-CHANGE ANALYSIS PROTOCOL (NON-NEGOTIABLE)
+──────────────────────────────────────────────────────────────────────────────
+
+**Before modifying ANY file, output a `## CHANGE PROPOSAL` block.**
+
+Do not skip this for "obvious" or "simple" fixes. The proposal must appear
+BEFORE the first file modification. If you cannot answer a section, say so
+explicitly — do not omit the section.
+
+### Required format
+
+```
+## CHANGE PROPOSAL
+
+### 1. Scope of Change
+- Files affected: [list every file with approximate line ranges]
+- Type: [new feature | bug fix | refactor | config change | schema change]
+
+### 2. What Changes and Why
+WHY this approach — not a description of the code, but the rationale for
+choosing this solution over other options.
+
+### 3. Scalability Assessment
+| Scenario           | Behavior             | Risk  |
+|--------------------|----------------------|-------|
+| Current load       | ...                  | ...   |
+| 10× data volume    | ...                  | ...   |
+| 100× data volume   | ...                  | ...   |
+
+Name every hard limit (query timeouts, row limits, memory ceilings, API rate
+limits, pagination caps).
+
+### 4. Blast Radius
+- Direct: what breaks if this change has a bug
+- Indirect: downstream systems, pipelines, or queries that depend on affected code
+- Rollback: how to undo within 5 minutes
+
+### 5. Known Limits and Assumptions
+Every assumption not verified in the codebase.
+
+### 6. Alternatives Considered
+| Approach                        | Tradeoff                  |
+|---------------------------------|---------------------------|
+| Option A (recommended): current | why chosen                |
+| Option B                        | why not chosen            |
+
+Minimum 2 alternatives.
+
+### 7. Verification Plan
+Specific commands a team member can run to confirm the change works.
+```
+
+After producing this block, wait for explicit acknowledgment before proceeding.

@@ -110,7 +110,7 @@ GITHUB_SCOPES=read:user repo
 
 ### Where to get them
 
-1. Go to GitHub Developer Settings:  
+1. Go to GitHub Developer Settings:
    https://github.com/settings/developers
 2. Select **OAuth Apps**
 3. Click **New OAuth App**
@@ -144,7 +144,7 @@ ATLASSIAN_SCOPES=read:jira-user read:jira-work write:jira-work read:confluence-c
 
 ### Where to get them
 
-1. Go to Atlassian Developer Console:  
+1. Go to Atlassian Developer Console:
    https://developer.atlassian.com/console/myapps/
 2. Click **Create → OAuth 2.0 (3LO) app**
 3. App settings:
@@ -275,9 +275,9 @@ ENTRA_SCOPES=openid profile offline_access
 
 ### Where to get them
 
-1. Go to Microsoft Entra Portal:  
+1. Go to Microsoft Entra Portal:
    https://entra.microsoft.com/
-2. Navigate to:  
+2. Navigate to:
    **Microsoft Entra ID → App registrations**
 3. Click **New registration**
 4. Fill in:

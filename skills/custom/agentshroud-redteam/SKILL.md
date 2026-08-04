@@ -265,11 +265,11 @@ async def test_audit_completeness():
     # Query the audit endpoint
     audit = await api_call("GET", "/manage/audit/export?format=json")
     events = audit.json()["events"]
-    
+
     # Every blocked attack should have an audit entry
     blocked_types = [e["event_type"] for e in events if e["severity"] >= "HIGH"]
     assert len(blocked_types) > 0
-    
+
     # Check no gaps in detection
     assert "prompt_injection" in " ".join(blocked_types)
     assert "pii_exfil" in " ".join(blocked_types) or "canary" in " ".join(blocked_types)

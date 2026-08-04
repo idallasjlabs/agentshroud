@@ -171,7 +171,8 @@ bots:
   hermes:
     name: "Hermes Agent"
     runtime: python
-    hostname: agentshroud-hermes          # Docker service hostname on agentshroud-isolated
+    hostname: agentshroud-hermes-v2       # Docker service hostname on agentshroud-isolated
+    container_name: agentshroud-hermes-v2 # Actual docker-compose.yml container_name:
     port: 8642
     health_path: /health
     chat_path: /v1/chat/completions       # OpenAI-compatible API endpoint

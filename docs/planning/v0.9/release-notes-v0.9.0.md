@@ -1,8 +1,8 @@
 # Release Notes - AgentShroud v0.9.0
 ## "Deep Hardening" Release
 
-**Release Date**: February 15, 2026  
-**Version**: 0.9.0  
+**Release Date**: February 15, 2026
+**Version**: 0.9.0
 **Codename**: "Deep Hardening"
 
 ---
@@ -458,6 +458,6 @@ Thanks to our enterprise partners who provided feedback, testing environments, a
 
 AgentShroud v0.9.0 represents our commitment to providing enterprise-grade security for AI agents with comprehensive protection, extensive testing, and production-ready deployment capabilities. This "Deep Hardening" release establishes the foundation for v1.0.0 and beyond, ensuring AI agents can operate safely and securely in production environments.
 
-**Download AgentShroud v0.9.0**: `docker pull agentshroud:0.9.0`  
-**Documentation**: `/home/node/.openclaw/workspace/docs-draft/`  
+**Download AgentShroud v0.9.0**: `docker pull agentshroud:0.9.0`
+**Documentation**: `/home/node/.openclaw/workspace/docs-draft/`
 **Release Date**: February 15, 2026

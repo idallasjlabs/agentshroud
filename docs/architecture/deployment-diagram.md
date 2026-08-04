@@ -315,12 +315,12 @@ def find_available_port(base_port: int, instance_id: int) -> int:
     """
     candidate_port = base_port + instance_id
     max_attempts = 10
-    
+
     for attempt in range(max_attempts):
         port = candidate_port + attempt
         if is_port_available(port):
             return port
-    
+
     raise PortExhaustionError(f"No available ports in range {base_port}-{base_port + max_attempts}")
 
 # Environment Variable Substitution

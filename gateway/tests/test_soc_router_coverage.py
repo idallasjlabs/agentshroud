@@ -2010,6 +2010,11 @@ async def test_upgrade_hermes_paths(client, holder, monkeypatch):
     holder["caller"] = OWNER
     resp = await client.post("/soc/v1/updates/hermes/upgrade", json={"confirm": False})
     assert resp.status_code == 409
+    # Regression guard: the container was renamed to agentshroud-hermes-v2
+    # (2026-07-18) — the confirmation message must name the real container,
+    # not the stale 'agentshroud-hermes' guess.
+    assert "agentshroud-hermes-v2" in resp.text
+    assert "agentshroud-hermes " not in resp.text
 
     monkeypatch.setattr(
         "gateway.soc.services.ServiceManager",
@@ -2025,6 +2030,28 @@ async def test_upgrade_hermes_paths(client, holder, monkeypatch):
     resp = await client.post("/soc/v1/updates/hermes/upgrade", json={"confirm": True})
     assert resp.json()["ok"] is True
     assert resp.json()["target"] == "hermes"
+
+
+async def test_upgrade_hermes_restarts_the_real_container_name(client, holder, monkeypatch):
+    """update_service() must be called with the real container name
+    (agentshroud-hermes-v2), not a hardcoded 'agentshroud-{bot_id}' guess —
+    calling it with the wrong name would restart nothing, since no container
+    is actually named 'agentshroud-hermes'."""
+    calls = []
+
+    class _RecordingMgr:
+        def __init__(self, engine=None):
+            pass
+
+        async def update_service(self, name):
+            calls.append(name)
+            return True
+
+    holder["caller"] = OWNER
+    monkeypatch.setattr("gateway.soc.services.ServiceManager", _RecordingMgr)
+    resp = await client.post("/soc/v1/updates/hermes/upgrade", json={"confirm": True})
+    assert resp.json()["ok"] is True
+    assert calls == ["agentshroud-hermes-v2"]
 
 
 async def test_rollback_gateway_paths(client, holder, monkeypatch):

@@ -43,11 +43,25 @@ fi
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
+
+# Set up MCP secrets store (bootstrap only — skip if already populated)
+read -p "Set up local MCP secrets store (~/.llm-secrets)? [Y/n] " -n 1 -r
+echo
+if [[ ! $REPLY =~ ^[Nn]$ ]]; then
+    echo ""
+    echo "Step 4: MCP Secrets Store"
+    "$SCRIPT_DIR/setup-env-store.sh"
+fi
+
+echo ""
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo ""
 echo "✅ Quick security setup complete!"
 echo ""
 echo "📝 Manual steps remaining:"
 echo "   1. Copy .envrc.example to .envrc and customize"
 echo "   2. Add PostgreSQL entries to ~/.pgpass"
 echo "   3. Test git hooks: echo 'password=test' > test.txt && git add test.txt"
+echo "   4. Fill in values: ~/.llm-secrets/mcp-servers/*/.env"
+echo "      Then deploy: cd /path/to/repo && llm-init --env ."
 echo ""
-

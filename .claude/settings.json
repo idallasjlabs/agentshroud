@@ -8,12 +8,19 @@
       "Bash(conda run:*)",
       "Bash(ruff:*)",
       "Bash(black:*)",
-      "Bash(pytest:*)",
-      "Write(graphify-out/*)"
+      "Bash(pytest:*)"
+    ],
+    "deny": [
+      "Read(docker/secrets/**)",
+      "Read(.agentshroud/secrets/**)",
+      "Read(/run/secrets/**)",
+      "Read(**/history.env)",
+      "Read(**/.env)",
+      "Read(**/.env.*)"
     ]
   },
 
-  "model": "opusplan",
+  "model": "sonnet",
 
   "hooks": {
     "PreToolUse": [
@@ -23,6 +30,32 @@
           {
             "type": "command",
             "command": ".claude/scripts/claude-hooks/warn_dangerous_bash.sh"
+          },
+          {
+            "type": "command",
+            "command": ".claude/scripts/claude-hooks/block_main_commits.sh"
+          },
+          {
+            "type": "command",
+            "command": ".claude/scripts/claude-hooks/block_credential_read.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "tools:EditTool",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/scripts/claude-hooks/block_credential_write.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "tools:WriteTool",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/scripts/claude-hooks/block_credential_write.sh"
           }
         ]
       }
@@ -39,6 +72,24 @@
           {
             "type": "command",
             "command": ".claude/scripts/claude-hooks/run_targeted_tests.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "tools:EditTool",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/scripts/claude-hooks/remind_proposal_review.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "tools:WriteTool",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/scripts/claude-hooks/remind_proposal_review.sh"
           }
         ]
       }

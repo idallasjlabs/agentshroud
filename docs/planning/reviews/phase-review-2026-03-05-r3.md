@@ -1,9 +1,9 @@
 # AgentShroud v0.8.0 — Peer Review Round 3 (FINAL)
 
-**Date:** 2026-03-05  
-**Reviewer:** AgentShroud Bot (automated peer review)  
-**Branch:** `feat/v0.8.0-enforcement-hardening`  
-**Diff base:** `origin/main..HEAD`  
+**Date:** 2026-03-05
+**Reviewer:** AgentShroud Bot (automated peer review)
+**Branch:** `feat/v0.8.0-enforcement-hardening`
+**Diff base:** `origin/main..HEAD`
 **Prior reviews:** `phase-review-2026-03-05.md` (R1), `phase-review-2026-03-05-r2.md` (R2)
 
 ---
@@ -58,34 +58,34 @@ were discovered and fixed in this round.
 
 ### R3-W1 — WARNING: Stale version string in control page HTML
 
-**File:** `gateway/ingest_api/main.py` line 302  
-**Issue:** The HTML control page (`/`) displayed `Version: 0.5.0` instead of `0.8.0`.  
-**Risk:** Cosmetic but misleading — operator may think an old version is running.  
+**File:** `gateway/ingest_api/main.py` line 302
+**Issue:** The HTML control page (`/`) displayed `Version: 0.5.0` instead of `0.8.0`.
+**Risk:** Cosmetic but misleading — operator may think an old version is running.
 **Fix:** Updated to `0.8.0`. ✅ **FIXED**
 
 ### R3-W2 — WARNING: Stale OCI label version in Dockerfile
 
-**File:** `docker/Dockerfile.agentshroud` line ~125  
-**Issue:** `org.opencontainers.image.version` label was `"0.2.0"` instead of `"0.8.0"`.  
-**Risk:** Container image metadata would report wrong version to registries/scanners.  
+**File:** `docker/Dockerfile.agentshroud` line ~125
+**Issue:** `org.opencontainers.image.version` label was `"0.2.0"` instead of `"0.8.0"`.
+**Risk:** Container image metadata would report wrong version to registries/scanners.
 **Fix:** Updated to `0.8.0`. ✅ **FIXED**
 
 ### R3-W3 — WARNING: Dead code `_is_imessage_recipient_allowed` in forward.py
 
-**File:** `gateway/ingest_api/routes/forward.py` lines 64–66  
+**File:** `gateway/ingest_api/routes/forward.py` lines 64–66
 **Issue:** `_is_imessage_recipient_allowed` was defined but never called. The active
 implementation lives in `main.py` (with `fnmatch` glob support). The forward.py
-version used simple string matching — a functional inconsistency if it were ever used.  
-**Risk:** Dead code that could be mistakenly called, bypassing glob-based allowlist logic.  
+version used simple string matching — a functional inconsistency if it were ever used.
+**Risk:** Dead code that could be mistakenly called, bypassing glob-based allowlist logic.
 **Fix:** Removed the dead function. ✅ **FIXED**
 
 ### R3-W4 — WARNING: Debug log leaking agent response content
 
-**File:** `gateway/ingest_api/routes/forward.py` line 306  
+**File:** `gateway/ingest_api/routes/forward.py` line 306
 **Issue:** `logger.info(f"DEBUG: agent_response = {agent_response}")` logs the full
 agent response at INFO level, which could contain sensitive data (PII, credentials,
-internal state) and would appear in production logs.  
-**Risk:** Information leakage through production logs.  
+internal state) and would appear in production logs.
+**Risk:** Information leakage through production logs.
 **Fix:** Changed to `logger.debug()` with only the response type name. ✅ **FIXED**
 
 ---

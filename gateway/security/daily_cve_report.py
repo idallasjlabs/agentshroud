@@ -137,15 +137,40 @@ def format_cve_report(report: dict[str, Any]) -> str:
 def _build_image_targets() -> List[str]:
     """Build the list of container image targets for Trivy image scanning.
 
-    Combines the gateway image and env-var-configured images (AGENTSHROUD_TRIVY_IMAGES).
-    Deduplicates while preserving order.
+    Combines the gateway image, every configured bot's real image (derived
+    from BotConfig, not a hardcoded single-bot guess — AGENTSHROUD_TRIVY_IMAGES
+    used to be hardcoded to just Hermes's image, silently omitting OpenClaw
+    from every CVE report), and any additional images from
+    AGENTSHROUD_TRIVY_IMAGES (operator override/extension, e.g. non-bot
+    sidecar images). Deduplicates while preserving order.
     """
     gateway_image = "agentshroud-gateway:latest"
+
+    bot_images: List[str] = []
+    try:
+        from pathlib import Path
+
+        from ..ingest_api.config import load_config
+
+        # Real agentshroud.yaml is gitignored (per-deployment secret config) and
+        # absent in CI — fall back to the committed .example so this still works
+        # there, same pattern as gateway/tests/test_config.py's _load_config().
+        try:
+            config = load_config()
+        except FileNotFoundError:
+            repo_root = Path(__file__).resolve().parents[2]
+            config = load_config(repo_root / "agentshroud.yaml.example")
+
+        for bot in config.bots.values():
+            bot_images.append(bot.image or f"{bot.resolved_container_name}:latest")
+    except Exception as exc:
+        logger.warning("_build_image_targets: could not load per-bot images: %s", exc)
+
     env_images: List[str] = [
         t.strip() for t in os.environ.get("AGENTSHROUD_TRIVY_IMAGES", "").split(",") if t.strip()
     ]
     seen: Dict[str, None] = {}
-    for img in [gateway_image] + env_images:
+    for img in [gateway_image] + bot_images + env_images:
         seen[img] = None
     return list(seen.keys())
 
@@ -613,10 +638,17 @@ async def run_upstream_cve_check(
     return result
 
 
-# Agents whose report is sent even when they have zero new advisories, so the
-# owner can SEE that the pipeline is live for that agent (agent-agnostic proof).
-# Hermes's upstream (nousresearch/hermes-agent) currently publishes 0 advisories.
-_ALWAYS_REPORT_ZERO_AGENTS: frozenset[str] = frozenset({"hermes"})
+# Agents whose report is sent even when they have zero new advisories.
+# Deliberately empty: this was added to prove the Hermes pipeline is live
+# even with 0 new advisories, but the resulting Telegram message is sent
+# through the shared bot token both agents use, so it always displays under
+# OpenClaw's bot identity (agentshroud_openclaw_bot) regardless of which
+# agent it's actually about — confusing rather than clarifying which agent
+# is reporting. Removed 2026-08-04 per owner feedback. All agents now stay
+# silent when there are zero new advisories (the pre-existing default
+# behavior); a real new advisory still alerts immediately regardless of
+# this set.
+_ALWAYS_REPORT_ZERO_AGENTS: frozenset[str] = frozenset()
 
 
 async def run_upstream_cve_check_all_agents(
@@ -624,6 +656,7 @@ async def run_upstream_cve_check_all_agents(
     owner_chat_id: str,
     base_url: str = "https://api.telegram.org",
     github_token: Optional[str] = None,
+    bot_tokens: Optional[dict[str, str]] = None,
 ) -> list[dict[str, Any]]:
     """Run the upstream CVE check for EVERY registered agent, independently.
 
@@ -634,6 +667,15 @@ async def run_upstream_cve_check_all_agents(
     agent produces its own result dict and its own Telegram alert.  A failure in
     one agent's check never blocks another agent's report.
 
+    Args:
+        bot_token: Default Telegram Bot API token, used for any agent not
+            present in ``bot_tokens``.
+        bot_tokens: Optional per-agent token override (``{agent_id: token}``),
+            so each wrapped agent's alert is delivered via its OWN Telegram
+            bot identity instead of always displaying under the default
+            bot's username. An agent missing from this dict falls back to
+            ``bot_token``.
+
     Returns:
         A list of per-agent result dicts (one per registered agent), each as
         returned by :func:`run_upstream_cve_check`.
@@ -643,8 +685,9 @@ async def run_upstream_cve_check_all_agents(
     results: list[dict[str, Any]] = []
     for agent_id in list_cve_agents():
         try:
+            agent_token = (bot_tokens or {}).get(agent_id) or bot_token
             result = await run_upstream_cve_check(
-                bot_token=bot_token,
+                bot_token=agent_token,
                 owner_chat_id=owner_chat_id,
                 base_url=base_url,
                 github_token=github_token,
@@ -670,11 +713,17 @@ async def upstream_cve_check_scheduler(
     base_url: str = "https://api.telegram.org",
     report_hour: int = 6,
     github_token: Optional[str] = None,
+    bot_tokens: Optional[dict[str, str]] = None,
 ) -> None:
     """Background loop: checks for new upstream agent CVEs once per day at report_hour UTC.
 
     Runs 5 minutes after the Trivy report hour to avoid thundering-herd on the
     Telegram Bot API. Designed to be launched via ``asyncio.create_task()``.
+
+    Args:
+        bot_tokens: Optional per-agent token override, forwarded to
+            :func:`run_upstream_cve_check_all_agents` — see that function for
+            details.
     """
     # Offset by 5 minutes from the Trivy report so both messages don't land simultaneously.
     _CHECK_MINUTE = 5
@@ -722,6 +771,7 @@ async def upstream_cve_check_scheduler(
                 owner_chat_id=owner_chat_id,
                 base_url=base_url,
                 github_token=github_token,
+                bot_tokens=bot_tokens,
             )
             result = {
                 "new_cves": sum(r.get("new_cves", 0) for r in results),

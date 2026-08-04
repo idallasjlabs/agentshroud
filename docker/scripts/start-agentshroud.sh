@@ -376,6 +376,65 @@ _model_runtime_ready() {
         | grep -F "\"name\":\"${model_name}\"" >/dev/null 2>&1
 }
 
+# ── Security-critical cron reconciliation ────────────────────────────────────
+# init-openclaw-config.sh's cron seeding (see comments there) only replaces
+# cron/jobs.json ON DISK when the whole-file image-default checksum changes,
+# and only propagates into OpenClaw's own sqlite-backed live cron store on the
+# very first boot. An already-existing live job is intentionally left alone so
+# a user's real `openclaw cron edit` customizations survive restarts — but
+# that same protection means a live job seeded before a security fix (e.g. the
+# raw-ssh-to-lab-hosts bug fixed in PR #321) never gets corrected by any later
+# fix to the seed file, because the fix only ever touches the file, not the
+# already-existing live job. Confirmed 2026-08-03: the "AgentShroud Daily
+# Check-in" job's live payload had reverted to raw `ssh -l agentshroud-bot
+# host.docker.internal` / `raspberrypi.tail240ea8.ts.net` months after PR #321,
+# invisible to every prior fix.
+#
+# For a short, explicit list of security-critical job IDs, force-correct the
+# LIVE job (via the CLI, not the file) whenever its content still matches a
+# known-dangerous pattern. This runs once the gateway is confirmed responsive
+# (inside the readiness block below) and never touches jobs outside this list,
+# so ordinary live cron customizations are unaffected.
+_SECURITY_CRITICAL_CRON_JOB_IDS="a16ccca0-e953-48f3-9ebe-430e1085dea3"  # AgentShroud Daily Check-in
+_CRON_DANGER_PATTERN='ssh (marvin|raspberrypi|trillian|pi)\b|agentshroud-bot@|tail[0-9a-f]+\.ts\.net'
+_CRON_SEED_FILE="/app/config-defaults/openclaw/cron/jobs.json"
+
+_reconcile_security_critical_cron() {
+    local job_id live_msg seed_msg
+    for job_id in ${_SECURITY_CRITICAL_CRON_JOB_IDS}; do
+        live_msg="$(openclaw cron get "${job_id}" 2>/dev/null | node -e '
+            let d = "";
+            process.stdin.on("data", c => d += c);
+            process.stdin.on("end", () => {
+                try {
+                    const j = JSON.parse(d);
+                    process.stdout.write((j.payload && j.payload.message) || "");
+                } catch (e) {}
+            });
+        ' 2>/dev/null)"
+        if [ -z "${live_msg}" ]; then
+            continue  # job not found or CLI not ready yet — never block startup on this
+        fi
+        if printf '%s' "${live_msg}" | grep -qE "${_CRON_DANGER_PATTERN}"; then
+            echo "[startup] ⚠ Live cron job ${job_id} contains a raw-ssh/Tailscale-hostname pattern — force-correcting from seed"
+            seed_msg="$(node -e "
+                const jobs = JSON.parse(require('fs').readFileSync('${_CRON_SEED_FILE}', 'utf8')).jobs;
+                const j = jobs.find(x => x.id === '${job_id}');
+                if (j && j.payload && j.payload.message) process.stdout.write(j.payload.message);
+            " 2>/dev/null)"
+            if [ -n "${seed_msg}" ]; then
+                if openclaw cron edit "${job_id}" --message "${seed_msg}" >/dev/null 2>&1; then
+                    echo "[startup] ✓ Force-corrected live cron job ${job_id} from seed"
+                else
+                    echo "[startup] ⚠ Failed to force-correct live cron job ${job_id} — leaving as-is"
+                fi
+            else
+                echo "[startup] ⚠ No seed message found for job ${job_id} in ${_CRON_SEED_FILE} — skipping force-correct"
+            fi
+        fi
+    done
+}
+
 # Instance identity for notifications
 _INSTANCE_LABEL="${INSTANCE_NAME:-$(hostname -s)}"
 _BOT_NAME="${OPENCLAW_BOT_NAME:-agentshroud-openclaw}"
@@ -457,6 +516,9 @@ trap '
     echo "[startup] Readiness result: ready=${ready}"
 
     if [ "${ready}" = "yes" ]; then
+        # Gateway is confirmed responsive — safe to query/edit live cron jobs now.
+        _reconcile_security_critical_cron
+
         # Give the Telegram provider a moment to finish initialising before the photo upload
         sleep 5
         _photo_sent="no"

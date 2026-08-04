@@ -172,11 +172,11 @@ Complete within 48 hours of incident resolution.
 # Incident Review: [INCIDENT-YYYY-MM-DD-NNN]
 
 ## Summary
-- **Date/Time:** 
-- **Duration:** 
+- **Date/Time:**
+- **Duration:**
 - **Severity:** P1/P2/P3/P4
-- **Detected by:** 
-- **Resolved by:** 
+- **Detected by:**
+- **Resolved by:**
 
 ## Timeline
 | Time (UTC) | Event |

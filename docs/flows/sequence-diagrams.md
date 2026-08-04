@@ -98,7 +98,7 @@ KillSw   Gateway   MCPProxy   WebProxy   SSHProxy   Audit
 
 States:
 - SOFT_KILL: Block new requests, allow existing to complete
-- HARD_KILL: Terminate all active connections immediately  
+- HARD_KILL: Terminate all active connections immediately
 - PANIC: Emergency shutdown with minimal logging
 
 Timeline:

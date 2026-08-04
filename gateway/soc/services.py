@@ -46,11 +46,17 @@ def _inspect_via_socket(name: str) -> Optional[Dict[str, Any]]:
         return None
 
 
-_KNOWN_SERVICES = [
-    "agentshroud-openclaw",
-    "agentshroud-gateway",
-    "agentshroud-hermes",
-]
+def _known_services() -> list[str]:
+    """Return the gateway's own container plus each configured bot's real
+    container name — not a hardcoded guess that breaks the moment a bot's
+    container is renamed (e.g. hermes -> agentshroud-hermes-v2, 2026-07-18)."""
+    try:
+        from ..ingest_api.config import load_config
+
+        bot_names = [bot.resolved_container_name for bot in load_config().bots.values()]
+    except Exception:
+        bot_names = ["agentshroud-openclaw"]
+    return ["agentshroud-gateway"] + bot_names
 
 
 def _check_clamd() -> str:
@@ -227,7 +233,7 @@ class ServiceManager:
         """Return ServiceDescriptor for each known container plus internal gateway services."""
         engine = self._get_engine()
         descriptors: List[ServiceDescriptor] = []
-        for name in _KNOWN_SERVICES:
+        for name in _known_services():
             descriptors.append(self._describe_service(name, engine))
         # Internal gateway services (running inside the gateway process)
         # CC-25: mark all as is_internal=True; CC-29: use gateway start time for uptime

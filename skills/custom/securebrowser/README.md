@@ -1,8 +1,8 @@
 # SecureBrowser Skill
 
-**Version**: 1.0.0  
-**Author**: AgentShroud Project  
-**License**: MIT  
+**Version**: 1.0.0
+**Author**: AgentShroud Project
+**License**: MIT
 **Security Level**: Enterprise-Grade
 
 ---
@@ -198,26 +198,26 @@ security:
     - "apple.com"
     - "icloud.com"
     - "*.trusted-domain.com"
-  
+
   url_blocklist:
     - "*.onion"
     - "malicious-site.com"
-  
+
   approval_required:
     - action: "fill_form"
       patterns: ["password", "credit_card"]
     - action: "execute_javascript"
       always: true
-  
+
   rate_limits:
     requests_per_minute: 30
     requests_per_hour: 500
-  
+
   audit:
     log_all_actions: true
     save_screenshots: true
     screenshot_retention_days: 30
-  
+
   browser:
     headless: true
     timeout: 30000
@@ -294,27 +294,27 @@ await browser.fill_field("#password", password, risk_override="HIGH")
 
 ### "URL not in allowlist"
 
-**Problem**: Trying to access unauthorized domain  
+**Problem**: Trying to access unauthorized domain
 **Solution**: Add domain to `config.yaml` under `url_allowlist`
 
 ### "Approval required but none granted"
 
-**Problem**: High-risk action needs approval  
+**Problem**: High-risk action needs approval
 **Solution**: Approve via Control UI or reduce risk level if appropriate
 
 ### "Browser timeout"
 
-**Problem**: Page load exceeds timeout (default: 30s)  
+**Problem**: Page load exceeds timeout (default: 30s)
 **Solution**: Increase timeout in `config.yaml` under `browser.timeout`
 
 ### "CAPTCHA detected"
 
-**Problem**: CAPTCHA blocking automated access  
+**Problem**: CAPTCHA blocking automated access
 **Solution**: Complete CAPTCHA manually, bot will continue after
 
 ### "Credential extraction blocked"
 
-**Problem**: Trying to extract password from DOM  
+**Problem**: Trying to extract password from DOM
 **Solution**: This is intentional security control. Cannot be overridden.
 
 ## Security Guarantees

@@ -19,7 +19,7 @@ This document defines the procedures for responding to security incidents in Age
    Impact →   Low    Medium    High     Critical
 Likelihood ↓
 High         P3      P2        P1       P1
-Medium       P4      P3        P2       P1  
+Medium       P4      P3        P2       P1
 Low          P4      P4        P3       P2
 ```
 
@@ -90,19 +90,19 @@ echo "$(date): System isolated, evidence preserved" >> incident.log
 # 1. Identify affected agents
 docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT DISTINCT agent_id, COUNT(*) as suspicious_actions
-   FROM audit_entries 
+   FROM audit_entries
    WHERE timestamp > datetime('now', '-2 hours')
      AND (threat_level = 'HIGH' OR threat_level = 'CRITICAL')
-   GROUP BY agent_id 
+   GROUP BY agent_id
    ORDER BY suspicious_actions DESC;"
 
 # 2. Analyze data movement patterns
 docker compose exec agentshroud sqlite3 /data/agentshroud.db \
-  "SELECT timestamp, agent_id, direction, 
-          LENGTH(content) as data_size, 
+  "SELECT timestamp, agent_id, direction,
+          LENGTH(content) as data_size,
           SUBSTR(content, 1, 100) as preview
-   FROM audit_entries 
-   WHERE direction = 'OUTBOUND' 
+   FROM audit_entries
+   WHERE direction = 'OUTBOUND'
      AND LENGTH(content) > 10000
      AND timestamp > datetime('now', '-4 hours')
    ORDER BY timestamp DESC;"
@@ -110,7 +110,7 @@ docker compose exec agentshroud sqlite3 /data/agentshroud.db \
 # 3. Check for privilege escalation
 docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT agent_id, level, last_promoted, violations
-   FROM agent_trust 
+   FROM agent_trust
    WHERE last_promoted > datetime('now', '-24 hours')
      OR violations = 0;"
 
@@ -263,13 +263,13 @@ for i, (entry_id, content_hash, previous_hash, chain_hash) in enumerate(entries)
         if previous_hash != prev_hash:
             print(f"ERROR: Chain break at entry {entry_id}")
             broken_links.append(entry_id)
-    
+
     # Verify chain hash
     expected_chain = hashlib.sha256(f"{previous_hash}{content_hash}".encode()).hexdigest()
     if chain_hash != expected_chain:
         print(f"ERROR: Invalid chain hash at entry {entry_id}")
         broken_links.append(entry_id)
-    
+
     prev_hash = chain_hash
 
 print(f"Chain integrity check complete. Broken links: {len(broken_links)}")
@@ -299,8 +299,8 @@ curl -X POST https://localhost:8443/admin/agents/$AGENT_ID/block \
 # 3. Analyze injection patterns
 docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT content, COUNT(*) as frequency
-   FROM audit_entries 
-   WHERE agent_id = '$AGENT_ID' 
+   FROM audit_entries
+   WHERE agent_id = '$AGENT_ID'
      AND threat_level IN ('HIGH', 'CRITICAL')
      AND timestamp > datetime('now', '-24 hours')
    GROUP BY content
@@ -322,7 +322,7 @@ docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT agent_id, COUNT(*) as pii_incidents,
           MIN(timestamp) as first_incident,
           MAX(timestamp) as last_incident
-   FROM audit_entries 
+   FROM audit_entries
    WHERE pii_redacted = 1
      AND timestamp > datetime('now', '-7 days')
    GROUP BY agent_id
@@ -331,7 +331,7 @@ docker compose exec agentshroud sqlite3 /data/agentshroud.db \
 # 2. Check if PII made it to external systems
 docker compose exec agentshroud sqlite3 /data/agentshroud.db \
   "SELECT id, timestamp, direction, agent_id
-   FROM audit_entries 
+   FROM audit_entries
    WHERE direction = 'OUTBOUND'
      AND pii_redacted = 1
      AND timestamp > datetime('now', '-24 hours')
@@ -481,11 +481,11 @@ echo "$(date): Configuration drift detected - scheduling remediation" >> mainten
 # Post-Incident Review - [Incident ID]
 
 ## Incident Summary
-- **Date/Time**: 
-- **Duration**: 
+- **Date/Time**:
+- **Duration**:
 - **Severity**: P1/P2/P3/P4
-- **Root Cause**: 
-- **Services Affected**: 
+- **Root Cause**:
+- **Services Affected**:
 
 ## Timeline
 | Time | Action | Owner |
@@ -498,14 +498,14 @@ echo "$(date): Configuration drift detected - scheduling remediation" >> mainten
 | HH:MM | Service restored | |
 
 ## What Went Well
-- 
-- 
-- 
+-
+-
+-
 
 ## What Could Be Improved
-- 
-- 
-- 
+-
+-
+-
 
 ## Action Items
 - [ ] Action 1 (Owner: XXX, Due: DATE)
@@ -513,14 +513,14 @@ echo "$(date): Configuration drift detected - scheduling remediation" >> mainten
 - [ ] Action 3 (Owner: XXX, Due: DATE)
 
 ## Prevention Measures
-- 
-- 
-- 
+-
+-
+-
 
 ## Monitoring/Alerting Improvements
-- 
-- 
-- 
+-
+-
+-
 ```
 
 ### Lessons Learned Integration
@@ -528,7 +528,7 @@ echo "$(date): Configuration drift detected - scheduling remediation" >> mainten
 **After each incident:**
 
 1. **Update detection rules** based on new attack patterns
-2. **Enhance monitoring** to catch similar incidents faster  
+2. **Enhance monitoring** to catch similar incidents faster
 3. **Improve automation** to reduce manual response time
 4. **Update documentation** with new procedures learned
 5. **Conduct training** if skills gaps identified

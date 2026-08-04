@@ -1,7 +1,7 @@
 # AgentShroud Phase Review — 2026-02-23
 
-**Reviewer:** agentshroud-bot (automated security peer review)  
-**Branches Reviewed:** 6 branches against `main`  
+**Reviewer:** agentshroud-bot (automated security peer review)
+**Branches Reviewed:** 6 branches against `main`
 **Date:** 2026-02-23T14:25Z
 
 ---

@@ -252,7 +252,7 @@ Threat Level = Base Score + Context Multiplier + Historical Factor
 
 Base Score:
 ├── CVE Score (0-10) × 0.3
-├── Reputation Score (0-10) × 0.2  
+├── Reputation Score (0-10) × 0.2
 ├── Pattern Confidence (0-10) × 0.3
 └── Impact Assessment (0-10) × 0.2
 

@@ -1,9 +1,9 @@
 # Container Security Audit — AgentShroud v0.8.0
 
-**Date:** 2026-03-05  
-**Auditor:** AgentShroud Bot (Claude Code)  
-**Methodology:** CIS Docker Benchmark, OWASP Container Security, MITRE ATT&CK for Containers, manual penetration testing  
-**Scope:** 50+ attack vectors tested from inside the bot container  
+**Date:** 2026-03-05
+**Auditor:** AgentShroud Bot (Claude Code)
+**Methodology:** CIS Docker Benchmark, OWASP Container Security, MITRE ATT&CK for Containers, manual penetration testing
+**Scope:** 50+ attack vectors tested from inside the bot container
 
 ---
 
@@ -170,7 +170,7 @@ BLOCKED: ENETUNREACH
 
 **Verification:**
 ```
-$ docker exec agentshroud-bot curl -sf http://pihole:80/ 
+$ docker exec agentshroud-bot curl -sf http://pihole:80/
 # Times out — blocked by iptables
 ```
 

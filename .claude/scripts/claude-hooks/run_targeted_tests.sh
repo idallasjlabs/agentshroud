@@ -13,16 +13,16 @@ if command -v pytest >/dev/null 2>&1; then
   echo "🧪 Running targeted tests for changed files..."
   # Build test file list from changed Python files
   test_files=""
-  for pyfile in $changed_py; do
+  while IFS= read -r pyfile; do
     # Convert module path to test path (e.g., src/module.py -> tests/test_module.py)
     test_file="tests/test_$(basename "$pyfile")"
     if [ -f "$test_file" ]; then
       test_files="$test_files $test_file"
     fi
-  done
+  done <<< "$changed_py"
 
   if [ -n "$test_files" ]; then
-    pytest -q $test_files || true
+    echo "$test_files" | xargs pytest -q || true
   else
     # Fallback: run all quick tests if no specific test files found
     pytest -q -m "not slow" || true

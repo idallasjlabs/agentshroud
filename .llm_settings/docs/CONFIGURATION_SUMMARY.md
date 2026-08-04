@@ -1,7 +1,7 @@
 # AI Tools Configuration Summary
 
 **Repository:** LLM_Settings
-**Last Updated:** 2026-01-29
+**Last Updated:** 2026-04-28
 **Status:** ✅ Fully Configured
 
 ---
@@ -118,14 +118,14 @@ LLM_Settings/
 ### Claude Code ('.claude/')
 - **Format:** JSON
 - **Agents:** Subagents (doc-writer, security-reviewer, testrunner)
-- **Skills:** 36 skills (`/8d`, `/aws`, `/browser`, `/bs`, `/cicd`, `/cr`, `/data`, `/env`, `/gg`, `/icloud`, `/mac`, `/mc`, `/mcpm`, `/mcpm-auth-reset`, `/mcpm-aws-profile`, `/mcpm-doctor`, `/mm`, `/pm`, `/pr`, `/production`, `/ps`, `/qa`, `/sec`, `/sec-defense`, `/sec-offense`, `/tdd`, `/ti`, `/tw`, plus 9 podcast pipeline skills)
-- **Hooks:** 3 hooks (warn_dangerous_bash, auto_format_python, run_targeted_tests)
+- **Skills:** 57 skills — `/agile`, `/apollo`, `/architecture-review`, `/athena`, `/atlas`, `/aws`, `/bdd`, `/browser`, `/bs`, `/cd`, `/chaos-engineering`, `/ci`, `/cicd`, `/cr`, `/daedalus`, `/data`, `/devsecops`, `/eightd`, `/gg`, `/gitops`, `/hermes`, `/icloud`, `/incident-response`, `/kaizen`, `/kanban`, `/mac`, `/mc`, `/mcpm`, `/mcpm-auth-reset`, `/mcpm-aws-profile`, `/mcpm-doctor`, `/mm`, `/mnemosyne`, `/observability`, `/oracle`, `/pm`, `/pr`, `/production`, `/ps`, `/qa`, `/sad`, `/sav`, `/scrum`, `/sdlc`, `/sec`, `/sec-defense`, `/sec-offense`, `/session-prompt`, `/socrates`, `/sre`, `/tdd`, `/ti`, `/tw`, `/ui`, `/ux`, `/value-stream-mapping`, `/vulcan`
+- **Hooks:** 6 hooks (warn_dangerous_bash, auto_format_python, run_targeted_tests, block_credential_read, block_credential_write, block_main_commits)
 - **Context:** CLAUDE.md loaded automatically
 - **MCP:** Via .mcp.json (GitHub, Atlassian, AWS API, XMind Generator)
 
 ### Gemini CLI ('.gemini/')
 - **Format:** JSON
-- **Agents:** 38 reference files in `.gemini/agents/` — paste content to use (no native invocation)
+- **Agents:** 51 reference files in `.gemini/agents/` — paste content to use (no native invocation)
 - **Skills:** No native support
 - **Hooks:** None (not supported)
 - **Context:** GEMINI.md loaded via /memory refresh
@@ -133,7 +133,7 @@ LLM_Settings/
 
 ### Codex CLI ('.codex/')
 - **Format:** TOML
-- **Agents:** 38 reference files in `.codex/agents/` — paste content to use (no native invocation)
+- **Agents:** 51 reference files in `.codex/agents/` — paste content to use (no native invocation)
 - **Skills:** No native support (`/skills` not a Codex feature)
 - **Hooks:** None (not supported)
 - **Context:** AGENTS.md loaded via model_instructions_file
@@ -220,10 +220,13 @@ npm install -g @github/copilot
 
 | MCP Server | Status | Configuration |
 |------------|--------|---------------|
-| **Atlassian** | ✅ Working | See MCP_README.md |
-| **GitHub** | ✅ Working | See MCP_README.md |
-| **AWS API** | ✅ Working | See MCP_README.md |
-| **XMind Generator** | ✅ Working | `npx xmind-generator-mcp` — outputs `.xmind` files to `~/Desktop` |
+| **github** | ✅ Working | `.llm_settings/mcp-servers/github/` |
+| **atlassian-fluence** | ✅ Working | `.llm_settings/mcp-servers/atlassian/fluence/` — API token |
+| **atlassian-agentshroud** | ✅ Working | `.llm_settings/mcp-servers/atlassian/agentshroud/` — API token |
+| **atlassian-idallasj** | ✅ Working | `.llm_settings/mcp-servers/atlassian/idallasj/` — OAuth |
+| **awslabs.aws-api-mcp-server** | ✅ Working | `uvx awslabs.aws-api-mcp-server@latest --readonly` |
+| **xmind** | ✅ Working | `npx xmind-generator-mcp` — outputs `.xmind` to `~/Desktop` |
+| **safari** | ✅ Working | `npx safari-mcp` — browser automation |
 
 All tools support MCP servers but configure them differently:
 - **Claude:** `.mcp.json`

@@ -11,7 +11,7 @@ def warn(m,t,d=""):
 
 async def run():
     print("=== P0: Critical ===")
-    
+
     # 1. PromptGuard
     from gateway.security.prompt_guard import PromptGuard
     pg = PromptGuard(block_threshold=0.8, warn_threshold=0.4)

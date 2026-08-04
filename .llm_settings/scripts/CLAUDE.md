@@ -459,6 +459,64 @@ A change is **done** when:
 - Cross-team coordination required
 - Timeframe expectations unclear
 
+---
+
+## 15. Pre-Change Analysis Protocol (ALL AGENTS — NON-NEGOTIABLE)
+
+**Before editing ANY file, you MUST output a CHANGE PROPOSAL block.**
+
+Do not skip this for "obvious" or "simple" fixes. The proposal must appear in
+your response BEFORE the first tool call that modifies a file. If you cannot
+answer a section, say so explicitly — do not omit the section.
+
+### Required format
+
+```
+## CHANGE PROPOSAL
+
+### 1. Scope of Change
+- Files affected: [list every file with approximate line ranges]
+- Type: [new feature | bug fix | refactor | config change | schema change]
+
+### 2. What Changes and Why
+Describe exactly what is being modified and WHY this approach — not what the
+code does, but why this solution over other options.
+
+### 3. Scalability Assessment
+| Scenario           | Behavior             | Risk  |
+|--------------------|----------------------|-------|
+| Current load       | ...                  | ...   |
+| 10× data volume    | ...                  | ...   |
+| 100× data volume   | ...                  | ...   |
+
+Flag every hard limit (query timeouts, row limits, memory ceilings, API rate
+limits, pagination caps).
+
+### 4. Blast Radius
+- Direct: what breaks if this change has a bug
+- Indirect: downstream systems, pipelines, or queries that depend on affected code
+- Rollback: how to undo within 5 minutes
+
+### 5. Known Limits and Assumptions
+Every assumption not verified in the codebase. Example: "Assumes partition
+key is always present in S3 path."
+
+### 6. Alternatives Considered
+| Approach                        | Tradeoff                  |
+|---------------------------------|---------------------------|
+| Option A (recommended): current | why chosen                |
+| Option B                        | why not chosen            |
+| Option C                        | why not chosen            |
+
+Minimum 2 alternatives. If only one approach exists, explain why.
+
+### 7. Verification Plan
+Specific commands or checks a team member can run to confirm the change works.
+```
+
+After outputting this block, wait for explicit acknowledgment before proceeding
+with edits UNLESS the user already approved the approach in the same message.
+
 ───────────────────────────────────────────────────────────────────────────
 END OF LLM OPERATING CONTEXT (llm-init)
 ───────────────────────────────────────────────────────────────────────────
@@ -537,6 +595,24 @@ This repository uses a multi-agent development approach with clear role separati
 - Test result reporting
 
 **Never delegate primary development to Gemini or Codex.**
+
+──────────────────────────────────────────────────────────────────────────────
+## 0.2) PRE-CHANGE ANALYSIS PROTOCOL (NON-NEGOTIABLE)
+──────────────────────────────────────────────────────────────────────────────
+
+See **Section 15** of the LLM Operating Context above for the full required format.
+
+**Summary:** Before editing ANY file, output a `## CHANGE PROPOSAL` block covering:
+1. Scope (exact files + line ranges)
+2. What changes and why (rationale, not description)
+3. Scalability at 10× and 100× load, with all hard limits named
+4. Blast radius — direct and indirect — plus rollback path
+5. All unstated assumptions
+6. Minimum 2 alternatives with explicit tradeoffs
+7. Verification plan (runnable commands)
+
+Wait for acknowledgment before proceeding unless the user already approved
+the approach in the same message.
 
 ──────────────────────────────────────────────────────────────────────────────
 ## 1) PROJECT OVERVIEW (SCOPE AWARENESS)

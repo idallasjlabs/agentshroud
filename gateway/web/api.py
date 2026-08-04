@@ -96,19 +96,25 @@ VALID_KILLSWITCH_MODES = frozenset({"freeze", "shutdown", "disconnect"})
 
 
 def _bot_service_names() -> list[str]:
-    """Return container names for all configured bots (e.g. ['agentshroud-openclaw', 'agentshroud-hermes'])."""
+    """Return real container names for all configured bots (e.g.
+    ['agentshroud-openclaw', 'agentshroud-hermes-v2']) — each bot's own
+    resolved_container_name, not a hardcoded 'agentshroud-{bot_id}' guess
+    that silently breaks the moment a bot's real container is renamed."""
     try:
         cfg = load_config()
-        return [f"agentshroud-{bot_id}" for bot_id in cfg.bots]
+        return [bot.resolved_container_name for bot in cfg.bots.values()]
     except Exception:
         return ["agentshroud-openclaw"]
 
 
 def _valid_services() -> frozenset:
-    """Compute valid service names from config + sidecars at call-time."""
+    """Compute valid service names from config + sidecars at call-time. Uses
+    each bot's real resolved_container_name — not a hardcoded
+    'agentshroud-{bot_id}' guess that breaks the moment a bot's container is
+    renamed (hermes -> agentshroud-hermes-v2, 2026-07-18)."""
     try:
         cfg = load_config()
-        bot_names = frozenset(f"agentshroud-{bot_id}" for bot_id in cfg.bots)
+        bot_names = frozenset(bot.resolved_container_name for bot in cfg.bots.values())
         return _SIDECAR_SERVICES | bot_names
     except Exception:
         return VALID_SERVICES
@@ -468,10 +474,10 @@ async def rebuild(user: str = Depends(require_auth)) -> dict:
         engine.compose_down(config.compose_file)
         # Rebuild images
         engine.build("gateway/Dockerfile", "agentshroud-gateway:latest", ".")
-        for bot_svc in _bot_service_names():
-            bot_id = bot_svc.removeprefix("agentshroud-")
-            bot_dockerfile = f"docker/bots/{bot_id}/Dockerfile"
-            engine.build(bot_dockerfile, f"{bot_svc}:latest", ".")
+        for bot in load_config().bots.values():
+            bot_dockerfile = bot.dockerfile or f"docker/bots/{bot.id}/Dockerfile"
+            bot_image = bot.image or f"{bot.resolved_container_name}:latest"
+            engine.build(bot_dockerfile, bot_image, ".")
         engine.compose_up(config.compose_file)
         return {"status": "rebuilt"}
     except Exception as e:
@@ -482,8 +488,14 @@ async def rebuild(user: str = Depends(require_auth)) -> dict:
 
 
 def _resolve_bot_container(bot_id: str) -> str:
-    """Resolve the Docker container name for a given bot_id."""
-    return f"agentshroud-{bot_id}"
+    """Resolve the real Docker container name for a given bot_id — from
+    BotConfig.resolved_container_name, not a hardcoded 'agentshroud-{bot_id}'
+    guess that breaks the moment a bot's container is renamed (hermes ->
+    agentshroud-hermes-v2, 2026-07-18)."""
+    try:
+        return load_config().bots[bot_id].resolved_container_name
+    except Exception:
+        return f"agentshroud-{bot_id}"
 
 
 @router.get("/updates/bot/{bot_id}")
@@ -711,9 +723,10 @@ async def upgrade_agentshroud(req: UpdateRequest, user: str = Depends(require_au
         engine = _get_engine()
         config = RuntimeConfig.from_env()
         engine.build("gateway/Dockerfile", "agentshroud-gateway:latest", ".")
-        for bot_svc in _bot_service_names():
-            bot_id = bot_svc.removeprefix("agentshroud-")
-            engine.build(f"docker/bots/{bot_id}/Dockerfile", f"{bot_svc}:latest", ".")
+        for bot in load_config().bots.values():
+            bot_dockerfile = bot.dockerfile or f"docker/bots/{bot.id}/Dockerfile"
+            bot_image = bot.image or f"{bot.resolved_container_name}:latest"
+            engine.build(bot_dockerfile, bot_image, ".")
         steps[-1]["status"] = "done"
 
         # 5. Restart services

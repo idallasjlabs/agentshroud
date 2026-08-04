@@ -8,7 +8,7 @@
 AgentShroud requires tamper-evident audit logging to ensure security event integrity. Options evaluated:
 
 1. **Traditional Logging**: Standard log files with optional encryption
-2. **Database Audit Tables**: Structured logging with database integrity constraints  
+2. **Database Audit Tables**: Structured logging with database integrity constraints
 3. **Cryptographic Hash Chain**: Blockchain-inspired immutable audit trail
 4. **Digital Signatures**: Sign each audit entry with private key
 

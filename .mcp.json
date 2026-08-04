@@ -1,11 +1,41 @@
 {
   "mcpServers": {
     "github": {
-      "command": ".llm_settings/mcp-servers/github/github-mcp-wrapper.sh",
+      "command": ".llm_settings/mcp-servers/github/default/github-mcp-wrapper.sh",
       "args": []
+    },
+    "github-idallasj": {
+      "command": ".llm_settings/mcp-servers/github/idallasj/github-mcp-wrapper.sh",
+      "args": [],
+      "timeout": 60000,
+      "trust": false
+    },
+    "github-fluence": {
+      "command": ".llm_settings/mcp-servers/github/fluence/github-mcp-wrapper.sh",
+      "args": [],
+      "timeout": 60000,
+      "trust": false
+    },
+    "github-agentshroud": {
+      "command": ".llm_settings/mcp-servers/github/agentshroud/github-mcp-wrapper.sh",
+      "args": [],
+      "timeout": 60000,
+      "trust": false
     },
     "atlassian-fluence": {
       "command": ".llm_settings/mcp-servers/atlassian/fluence/mcp-atlassian.sh",
+      "args": [],
+      "timeout": 1800000,
+      "trust": false
+    },
+    "atlassian-agentshroud": {
+      "command": ".llm_settings/mcp-servers/atlassian/agentshroud/mcp-atlassian.sh",
+      "args": [],
+      "timeout": 1800000,
+      "trust": false
+    },
+    "atlassian-idallasj": {
+      "command": ".llm_settings/mcp-servers/atlassian/idallasj/mcp-atlassian.sh",
       "args": [],
       "timeout": 1800000,
       "trust": false
@@ -27,7 +57,7 @@
       "trust": false
     },
     "xmind": {
-      "command": "/opt/homebrew/bin/npx",
+      "command": "/Users/ijefferson.admin/.nvm/versions/node/v20.20.2/bin/npx",
       "args": [
         "-y",
         "xmind-generator-mcp"
@@ -41,7 +71,7 @@
       "trust": false
     },
     "safari": {
-      "command": "/opt/homebrew/bin/npx",
+      "command": "/Users/ijefferson.admin/.nvm/versions/node/v20.20.2/bin/npx",
       "args": [
         "-y",
         "safari-mcp"
@@ -50,6 +80,18 @@
         "PATH": "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
       },
       "timeout": 60000,
+      "trust": false
+    },
+    "home-assistant": {
+      "command": ".llm_settings/mcp-servers/home-assistant/mcp-ha.sh",
+      "args": [],
+      "timeout": 300000,
+      "trust": false
+    },
+    "devonthink": {
+      "command": ".llm_settings/mcp-servers/devonthink/mcp-devonthink.sh",
+      "args": [],
+      "timeout": 30000,
       "trust": false
     }
   }

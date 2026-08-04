@@ -299,7 +299,7 @@ docker secret ls
 # Expected output should include:
 # agentshroud-db-password
 # admin-token
-# openclaw-api-key  
+# openclaw-api-key
 # ssl-cert
 # ssl-key
 ```
@@ -316,7 +316,7 @@ docker compose ps
 # Expected output:
 # agentshroud_agentshroud_1   Up   0.0.0.0:8443->8443/tcp
 # agentshroud_openclaw_1     Up   8000/tcp
-# agentshroud_db_1           Up   
+# agentshroud_db_1           Up
 # agentshroud_prometheus_1   Up   9090/tcp
 # agentshroud_grafana_1      Up   3000/tcp
 
@@ -463,7 +463,7 @@ curl -k -s -o /dev/null -w "%{http_code}" https://localhost:8443/admin/config
 # curl -k -X POST -H "Authorization: Bearer $ADMIN_TOKEN" \
 #   https://localhost:8443/admin/kill-switch \
 #   -d '{"mode": "soft_kill", "reason": "deployment_test"}'
-# 
+#
 # # Immediately deactivate
 # curl -k -X POST -H "Authorization: Bearer $ADMIN_TOKEN" \
 #   https://localhost:8443/admin/kill-switch \
