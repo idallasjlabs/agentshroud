@@ -348,4 +348,3 @@ Manage trusted devices for Control UI access.
 5. Refresh browser - now connected!
 
 See `DEVICE_PAIRING.md` for complete documentation.
-

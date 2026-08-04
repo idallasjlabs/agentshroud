@@ -128,7 +128,10 @@ services:
       - AGENTSHROUD_BOT_IMAGE_REF=${AGENTSHROUD_BOT_IMAGE_REF:-}
       - AGENTSHROUD_GATEWAY_IMAGE_REF=${AGENTSHROUD_GATEWAY_IMAGE_REF:-}
       - AGENTSHROUD_HERMES_IMAGE_REF=${AGENTSHROUD_HERMES_IMAGE_REF:-}
-      - AGENTSHROUD_TRIVY_IMAGES=agentshroud/hermes:latest
+      # AGENTSHROUD_TRIVY_IMAGES is for extra non-bot images only — every
+      # configured bot's own image is now derived automatically from
+      # agentshroud.yaml's bots: registry (was hardcoded to just Hermes's
+      # image here, silently omitting OpenClaw from every CVE report).
       - AGENTSHROUD_COMPOSE_HOST=marvin
       - AGENTSHROUD_COMPOSE_DIR=/Users/agentshroud-bot/Development/agentshroud
       - AGENTSHROUD_INSTANCE_LABEL=${AGENTSHROUD_INSTANCE_LABEL:-prod}

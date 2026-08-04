@@ -16,7 +16,7 @@ if [ ! -f "$PGPASS_FILE" ]; then
     echo "✅ Created $PGPASS_FILE with secure permissions (600)"
 else
     echo "⚠️  $PGPASS_FILE already exists"
-    
+
     # Check permissions
     PERMS=$(stat -f "%OLp" "$PGPASS_FILE" 2>/dev/null || stat -c "%a" "$PGPASS_FILE" 2>/dev/null)
     if [ "$PERMS" != "600" ]; then
@@ -34,7 +34,7 @@ cat << 'EXAMPLES'
 # Production database
 prod-db.fluence.io:5432:operations:app_user:secret_password_here
 
-# Development database  
+# Development database
 dev-db.fluence.local:5432:*:fluence_dev:dev_password
 
 # Localhost (any database)

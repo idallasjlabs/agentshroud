@@ -5,9 +5,9 @@
 
 AgentShroud provides a comprehensive REST API for security proxy management and monitoring. All endpoints implement authentication, rate limiting, and comprehensive audit logging. The API follows OpenAPI 3.0 specification and supports JSON content negotiation.
 
-**Base URL**: `https://localhost:8443/api/v1`  
-**Authentication**: Bearer token or API key  
-**Content Type**: `application/json`  
+**Base URL**: `https://localhost:8443/api/v1`
+**Authentication**: Bearer token or API key
+**Content Type**: `application/json`
 **API Version**: `v1`
 
 ---
@@ -84,7 +84,7 @@ curl -X GET https://localhost:8443/api/v1/health \
   "uptime": 86400,
   "components": {
     "database": "healthy",
-    "audit_system": "healthy", 
+    "audit_system": "healthy",
     "security_modules": "healthy",
     "external_services": "healthy"
   },
@@ -175,7 +175,7 @@ curl -X POST https://localhost:8443/api/v1/ingest \
   "security_actions": [
     {
       "module": "pii_detection",
-      "action": "sanitized", 
+      "action": "sanitized",
       "details": "Phone number redacted"
     }
   ],
@@ -195,7 +195,7 @@ Query audit trail with filtering and pagination support.
 
 **Query Parameters**:
 - `start_date` (string, ISO 8601) - Start date for query range
-- `end_date` (string, ISO 8601) - End date for query range  
+- `end_date` (string, ISO 8601) - End date for query range
 - `agent_id` (string) - Filter by specific agent ID
 - `event_type` (string) - Filter by event type
 - `severity` (string) - Filter by severity level (low, medium, high, critical)
@@ -468,7 +468,7 @@ wss://localhost:8443/api/v1/ws?token=<jwt-token>
 
 **Event Types**:
 - `security_alert` - High-priority security events
-- `agent_status` - Agent connection/disconnection events  
+- `agent_status` - Agent connection/disconnection events
 - `approval_request` - New approval requests
 - `kill_switch` - Kill switch activation/deactivation
 - `system_status` - System health changes

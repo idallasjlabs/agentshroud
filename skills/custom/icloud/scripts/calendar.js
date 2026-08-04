@@ -18,7 +18,7 @@ function getCredentials() {
         '1password-skill get-field "Apple ID - therealidallasj" "oenclaw bot password"',
         { encoding: 'utf8' }
     ).trim().replace(/-/g, '');
-    
+
     return {
         username: CONFIG.username,
         password,
@@ -29,7 +29,7 @@ function getCredentials() {
 function makeRequest(method, path, body = '', headers = {}) {
     return new Promise((resolve, reject) => {
         const creds = getCredentials();
-        
+
         const options = {
             hostname: CONFIG.host,
             port: CONFIG.port,
@@ -67,7 +67,7 @@ function makeRequest(method, path, body = '', headers = {}) {
 
 async function listEvents(from, to) {
     console.log(`📅 Listing events from ${from} to ${to}\n`);
-    
+
     // REPORT query to list events in date range
     const query = `<?xml version="1.0" encoding="utf-8" ?>
         <C:calendar-query xmlns:D="DAV:" xmlns:C="urn:ietf:params:xml:ns:caldav">
@@ -104,10 +104,10 @@ async function listEvents(from, to) {
 
 async function createEvent(summary, start, end, location = '', description = '') {
     console.log(`📅 Creating event: ${summary}\n`);
-    
+
     const uid = Date.now() + '@openclaw.local';
     const now = new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
-    
+
     // iCalendar format
     const ical = `BEGIN:VCALENDAR
 VERSION:2.0
@@ -144,11 +144,11 @@ function parseCalendarData(xmlData) {
     const events = [];
     const summaryRegex = /SUMMARY:([^\n]+)/g;
     let match;
-    
+
     while ((match = summaryRegex.exec(xmlData)) !== null) {
         events.push({ summary: match[1].trim() });
     }
-    
+
     return events;
 }
 
@@ -162,22 +162,22 @@ if (command === 'list') {
     const from = fromIdx >= 0 ? args[fromIdx + 1] : new Date().toISOString().split('T')[0];
     const to = toIdx >= 0 ? args[toIdx + 1] : new Date(Date.now() + 7*24*60*60*1000).toISOString().split('T')[0];
     listEvents(from, to);
-    
+
 } else if (command === 'create') {
     const summaryIdx = args.indexOf('--summary');
     const startIdx = args.indexOf('--start');
     const endIdx = args.indexOf('--end');
     const locationIdx = args.indexOf('--location');
     const descIdx = args.indexOf('--description');
-    
+
     const summary = summaryIdx >= 0 ? args[summaryIdx + 1] : 'New Event';
     const start = startIdx >= 0 ? args[startIdx + 1] : new Date().toISOString();
     const end = endIdx >= 0 ? args[endIdx + 1] : new Date(Date.now() + 3600000).toISOString();
     const location = locationIdx >= 0 ? args[locationIdx + 1] : '';
     const description = descIdx >= 0 ? args[descIdx + 1] : '';
-    
+
     createEvent(summary, start, end, location, description);
-    
+
 } else {
     console.log('Usage:');
     console.log('  calendar.js list [--from YYYY-MM-DD] [--to YYYY-MM-DD]');

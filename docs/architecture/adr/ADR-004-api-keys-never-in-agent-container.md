@@ -15,7 +15,7 @@ OpenClaw agents require API keys for external services (LLM providers, search AP
 
 Implement **Proxy-Side API Key Management**:
 - All API keys stored only in AgentShroud containers
-- Agent containers never have direct access to production API keys  
+- Agent containers never have direct access to production API keys
 - AgentShroud automatically injects appropriate keys based on request destination
 - Key rotation handled transparently without agent updates
 
@@ -31,7 +31,7 @@ key_injection_rules:
   - pattern: "api.openai.com/*"
     key: openai
     header: "Authorization: Bearer {key}"
-  - pattern: "api.anthropic.com/*"  
+  - pattern: "api.anthropic.com/*"
     key: anthropic
     header: "x-api-key: {key}"
 ```

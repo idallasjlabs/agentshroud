@@ -38,7 +38,7 @@ AgentShroud serves as a security enforcement point positioned between external n
 ### Core Components
 
 #### 1. Gateway (FastAPI)
-**Location**: `agentshroud/gateway/`  
+**Location**: `agentshroud/gateway/`
 **Purpose**: Primary ingress point handling HTTP/HTTPS traffic routing
 
 The Gateway component serves as the main entry point for all HTTP-based communications. Built on FastAPI, it provides:
@@ -48,7 +48,7 @@ The Gateway component serves as the main entry point for all HTTP-based communic
 - Request/response middleware integration for security modules
 
 #### 2. PII Sanitizer (Presidio + Regex)
-**Location**: `agentshroud/pii/`  
+**Location**: `agentshroud/pii/`
 **Purpose**: Detection and redaction of personally identifiable information
 
 Combines Microsoft Presidio's ML-based entity recognition with custom regex patterns:
@@ -58,7 +58,7 @@ Combines Microsoft Presidio's ML-based entity recognition with custom regex patt
 - **Redaction Modes**: Replace, mask, hash, or log-only based on sensitivity levels
 
 #### 3. Audit Ledger (SHA-256 Hash Chain)
-**Location**: `agentshroud/audit/`  
+**Location**: `agentshroud/audit/`
 **Purpose**: Tamper-evident logging with cryptographic integrity
 
 Implements blockchain-inspired hash chaining for audit integrity:
@@ -75,7 +75,7 @@ Key features:
 - **Compliance Support**: Structured logging for IEC 62443 and NIST frameworks
 
 #### 4. Approval Queue (SQLite)
-**Location**: `agentshroud/approval/`  
+**Location**: `agentshroud/approval/`
 **Purpose**: Human-in-the-loop security decision management
 
 SQLite-based workflow engine supporting:
@@ -85,7 +85,7 @@ SQLite-based workflow engine supporting:
 - **Approval Context**: Full request context preservation for informed decisions
 
 #### 5. Kill Switch (3 Modes)
-**Location**: `agentshroud/killswitch/`  
+**Location**: `agentshroud/killswitch/`
 **Purpose**: Emergency response and threat containment
 
 Three operational modes:
@@ -96,7 +96,7 @@ Three operational modes:
 Mode transitions support automated threat response and manual intervention.
 
 #### 6. SSH Proxy
-**Location**: `agentshroud/ssh/`  
+**Location**: `agentshroud/ssh/`
 **Purpose**: Secure shell connection proxying with session recording
 
 Features:
@@ -106,7 +106,7 @@ Features:
 - **Privilege Escalation Detection**: Monitor for suspicious privilege changes
 
 #### 7. MCP Proxy (Model Context Protocol)
-**Location**: `agentshroud/mcp/`  
+**Location**: `agentshroud/mcp/`
 **Purpose**: Tool and skill invocation security with capability-based access control
 
 MCP-specific security controls:
@@ -116,7 +116,7 @@ MCP-specific security controls:
 - **Tool Chain Analysis**: Detect suspicious tool usage patterns
 
 #### 8. Web Proxy
-**Location**: `agentshroud/web/`  
+**Location**: `agentshroud/web/`
 **Purpose**: HTTP/HTTPS traffic inspection and filtering
 
 Advanced web security features:
@@ -126,7 +126,7 @@ Advanced web security features:
 - **Rate Limiting**: Adaptive rate limiting based on request patterns
 
 #### 9. DNS Filter
-**Location**: `agentshroud/dns/`  
+**Location**: `agentshroud/dns/`
 **Purpose**: DNS-based threat prevention and data exfiltration detection
 
 DNS security capabilities:
@@ -136,7 +136,7 @@ DNS security capabilities:
 - **DNS-over-HTTPS**: Secure DNS resolution with logging
 
 #### 10. Dashboard (WebSocket)
-**Location**: `agentshroud/dashboard/`  
+**Location**: `agentshroud/dashboard/`
 **Purpose**: Real-time security monitoring and control interface
 
 Web-based dashboard providing:
@@ -146,7 +146,7 @@ Web-based dashboard providing:
 - **Agent Status**: Trust level progression and agent health monitoring
 
 #### 11. Trust Manager
-**Location**: `agentshroud/trust/`  
+**Location**: `agentshroud/trust/`
 **Purpose**: Dynamic trust level calculation and policy enforcement
 
 Trust-based security model:
@@ -156,7 +156,7 @@ Trust-based security model:
 - **Trust Persistence**: Long-term trust relationship management
 
 #### 12. Egress Monitor
-**Location**: `agentshroud/egress/`  
+**Location**: `agentshroud/egress/`
 **Purpose**: Outbound traffic analysis and data loss prevention
 
 Egress security controls:

@@ -67,7 +67,8 @@ class DriftDetector:
         self._init_db()
 
     def _init_db(self):
-        self._conn.execute("""
+        self._conn.execute(
+            """
             CREATE TABLE IF NOT EXISTS baselines (
                 container_id TEXT PRIMARY KEY,
                 snapshot_json TEXT NOT NULL,
@@ -75,8 +76,10 @@ class DriftDetector:
                 created_at REAL NOT NULL,
                 updated_at REAL NOT NULL
             )
-        """)
-        self._conn.execute("""
+        """
+        )
+        self._conn.execute(
+            """
             CREATE TABLE IF NOT EXISTS drift_alerts (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 container_id TEXT NOT NULL,
@@ -88,7 +91,8 @@ class DriftDetector:
                 severity TEXT NOT NULL,
                 acknowledged INTEGER DEFAULT 0
             )
-        """)
+        """
+        )
         self._conn.commit()
 
     def set_baseline(self, snapshot: ContainerSnapshot) -> str:

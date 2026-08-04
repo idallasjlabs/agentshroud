@@ -621,7 +621,7 @@ The AI agent security space is nascent. Most platforms treat security as an afte
 
 ```
                     AgentShroud Competitive Positioning
-                    
+
      Security Depth
            ▲
      High  │
@@ -634,7 +634,7 @@ The AI agent security space is nascent. Most platforms treat security as an afte
            │     ◇ NanoClaw
      Low   │  ◇ OpenClaw    ◇ Others (7 platforms)
            │
-           └──────────────────────────────────► 
+           └──────────────────────────────────►
           Low         Med         High
                               Operational Maturity
 ```
@@ -1024,7 +1024,7 @@ AgentShroud's own security posture is only as strong as its dependencies. This s
 - **Vulnerability details:** The Wazuh manager deserializes data from cluster nodes without proper validation, allowing arbitrary code execution if an attacker can control cluster traffic
 - **Exploitation status:** **Actively exploited by Mirai botnets in 2025** for DDoS deployment and cryptocurrency mining
 - **Patched version:** v4.9.1 (released February 2026)
-- **AgentShroud mitigation:** 
+- **AgentShroud mitigation:**
   - **MUST pin Wazuh to v4.9.1 or higher**
   - **Internal network isolation:** Wazuh manager only accessible from container network
   - **No external exposure:** Wazuh API not exposed outside AgentShroud gateway

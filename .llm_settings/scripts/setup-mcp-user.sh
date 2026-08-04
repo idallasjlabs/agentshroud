@@ -15,21 +15,33 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 LLM_SETTINGS_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 
 # GitHub MCP (stdio via wrapper script - requires absolute path)
-GITHUB_WRAPPER="$LLM_SETTINGS_ROOT/.llm_settings/mcp-servers/github/github-mcp-wrapper.sh"
+GITHUB_WRAPPER="$LLM_SETTINGS_ROOT/.llm_settings/mcp-servers/github/default/github-mcp-wrapper.sh"
 echo "1️⃣  Adding GitHub MCP (stdio)..."
 if [[ -f "$GITHUB_WRAPPER" ]]; then
-  claude mcp add --transport stdio github "$GITHUB_WRAPPER" --scope user 2>/dev/null \
-    && echo "   ✅ GitHub MCP added" \
-    || echo "   ⚠️  GitHub MCP already exists or failed"
+  if claude mcp list 2>/dev/null | grep -q "^github:"; then
+    echo "   ✅ GitHub MCP already configured"
+  else
+    if claude mcp add --transport stdio github "$GITHUB_WRAPPER" --scope user 2>/dev/null; then
+      echo "   ✅ GitHub MCP added"
+    else
+      echo "   ❌ Failed to add GitHub MCP"
+    fi
+  fi
 else
   echo "   ❌ Wrapper not found: $GITHUB_WRAPPER"
 fi
 
 # Atlassian MCP (HTTP transport - uses OAuth)
 echo "2️⃣  Adding Atlassian MCP (http)..."
-claude mcp add --transport http atlassian https://mcp.atlassian.com/v1/mcp --scope user 2>/dev/null \
-  && echo "   ✅ Atlassian MCP added" \
-  || echo "   ⚠️  Atlassian MCP already exists or failed"
+if claude mcp list 2>/dev/null | grep -q "^atlassian:"; then
+  echo "   ✅ Atlassian MCP already configured"
+else
+  if claude mcp add --transport http atlassian https://mcp.atlassian.com/v1/mcp --scope user 2>/dev/null; then
+    echo "   ✅ Atlassian MCP added"
+  else
+    echo "   ❌ Failed to add Atlassian MCP"
+  fi
+fi
 
 # AWS MCP (stdio via uvx)
 echo "3️⃣  Adding AWS API MCP (stdio)..."
@@ -37,12 +49,18 @@ UVX_PATH="$(command -v uvx 2>/dev/null \
     || ([ -f "$HOME/.cargo/bin/uvx" ]  && echo "$HOME/.cargo/bin/uvx") \
     || ([ -f "$HOME/.local/bin/uvx" ]  && echo "$HOME/.local/bin/uvx") \
     || echo '/opt/homebrew/bin/uvx')"
-claude mcp add --transport stdio awslabs.aws-api-mcp-server "$UVX_PATH" \
-  --args "awslabs.aws-api-mcp-server@latest" \
-  --args "--readonly" \
-  --scope user 2>/dev/null \
-  && echo "   ✅ AWS MCP added" \
-  || echo "   ⚠️  AWS MCP already exists or failed"
+if claude mcp list 2>/dev/null | grep -q "^awslabs.aws-api-mcp-server:"; then
+  echo "   ✅ AWS MCP already configured"
+else
+  if claude mcp add --transport stdio awslabs.aws-api-mcp-server "$UVX_PATH" \
+    --args "awslabs.aws-api-mcp-server@latest" \
+    --args "--readonly" \
+    --scope user 2>/dev/null; then
+    echo "   ✅ AWS MCP added"
+  else
+    echo "   ❌ Failed to add AWS MCP"
+  fi
+fi
 
 echo ""
 echo "✅ Done! Your MCP servers are now configured globally."

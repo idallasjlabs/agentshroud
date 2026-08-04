@@ -18,7 +18,7 @@ tool_risk:
   enforce_mode: true          # Set to false to disable approval enforcement
   monitor_only_mode: false    # Set to true to log only (no blocking)
   owner_user_id: ""          # Telegram user ID for owner bypass (optional)
-  
+
   # Risk tier policies
   critical:
     require_approval: true
@@ -28,7 +28,7 @@ tool_risk:
       - websocket
       - telegram_admin
     owner_bypass: false       # Owner cannot bypass critical approvals
-  
+
   high:
     require_approval: true
     timeout_seconds: 300
@@ -36,7 +36,7 @@ tool_risk:
     notify_channels:
       - websocket
     owner_bypass: true        # Owner can bypass high-tier approvals
-  
+
   medium:
     require_approval: false   # Monitor only
     timeout_seconds: 300
@@ -44,7 +44,7 @@ tool_risk:
     notify_channels:
       - websocket
     owner_bypass: true
-  
+
   low:
     require_approval: false   # No approval needed
     timeout_seconds: 300
@@ -52,27 +52,27 @@ tool_risk:
     notify_channels:
       - websocket
     owner_bypass: true
-  
+
   # Tool classifications (override defaults here if needed)
   tool_classifications:
     # Critical: irreversible external impact
     exec: critical
     cron: critical
     sessions_send: critical
-    
+
     # High: sensitive resource access
     nodes: high
     browser: high
     apply_patch: high
     subagents: high
-    
+
     # Medium: read potentially sensitive data
     grep: medium
     find: medium
     sessions_list: medium
     sessions_history: medium
     session_status: medium
-    
+
     # Low: safe read-only operations
     ls: low
     canvas: low

@@ -1,6 +1,6 @@
 # Claude Code: Production-Ready TDD Workflow (Python + Next.js)
-**Audience:** Engineering teams using Claude Code for refactors and new development  
-**Focus:** TDD (Red → Green → Refactor), fast isolated unit tests, security, and durable documentation  
+**Audience:** Engineering teams using Claude Code for refactors and new development
+**Focus:** TDD (Red → Green → Refactor), fast isolated unit tests, security, and durable documentation
 **Tooling:** Claude Code (Plan Mode, Skills, Subagents/Agents, MCP, Hooks, Plugins), GitHub + Jira + Confluence behind MS Entra (SSO)
 
 ---
@@ -368,4 +368,3 @@ When you’re ready, the natural next upgrades are:
 - Run formatters + unit tests frequently (hooks help)
 - Keep changes minimal and scoped
 - Always summarize: what changed, how tested, risks, rollback
-

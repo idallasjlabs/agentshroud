@@ -18,13 +18,13 @@ echo 🚢 Starting gateway service...
 docker compose up -d gateway
 
 echo ✅ Gateway deployed successfully!
-echo 
+echo
 echo 📊 Status:
 docker compose ps gateway
 
-echo 
+echo
 echo 🌐 Access the web dashboard at:
 echo  http://marvin.tail240ea8.ts.net:8080/
-echo 
+echo
 echo 📋 To check logs:
 echo  cd /home/node/Development/agentshroud/docker

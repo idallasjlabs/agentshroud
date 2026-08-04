@@ -2573,18 +2573,26 @@ async def upgrade_hermes(
             status_code=status.HTTP_403_FORBIDDEN,
             detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
         )
+
+    from ..ingest_api.config import load_config
+
+    try:
+        hermes_container = load_config().bots["hermes"].resolved_container_name
+    except Exception:
+        hermes_container = "agentshroud-hermes"  # fallback if hermes: is undeclared
+
     if not body.confirm:
         return _confirmation_required(
             "upgrade hermes",
-            "agentshroud-hermes",
-            "Pulls nousresearch/hermes-agent:latest then restarts agentshroud-hermes. "
+            hermes_container,
+            f"Pulls nousresearch/hermes-agent:latest then restarts {hermes_container}. "
             "Resend with confirm: true.",
         )
-    _log_audit(caller, "upgrade hermes", target="agentshroud-hermes")
+    _log_audit(caller, "upgrade hermes", target=hermes_container)
     from .services import ServiceManager
 
     svc_mgr = ServiceManager()
-    ok = await svc_mgr.update_service("agentshroud-hermes")
+    ok = await svc_mgr.update_service(hermes_container)
     if not ok:
         return JSONResponse(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,

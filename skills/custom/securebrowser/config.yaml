@@ -9,13 +9,13 @@ security:
     - "account.apple.com"
     - "appleid.apple.com"
     # Add more trusted domains as needed
-  
+
   # URL Blocklist - Explicitly blocked domains
   url_blocklist:
     - "*.onion"
     - "*.torproject.org"
     # Dark web, torrents, etc.
-  
+
   # Approval Requirements - Actions requiring manual approval
   approval_required:
     - action: "fill_form"
@@ -26,13 +26,13 @@ security:
       patterns: ["delete", "remove", "cancel_subscription", "destroy"]
     - action: "execute_javascript"
       always: true
-  
+
   # Rate Limits - Prevent abuse
   rate_limits:
     requests_per_minute: 30
     requests_per_hour: 500
     requests_per_day: 5000
-  
+
   # Audit Settings - Logging and monitoring
   audit:
     log_all_actions: true
@@ -40,7 +40,7 @@ security:
     screenshot_dir: "/home/node/.openclaw/audit/screenshots"
     screenshot_retention_days: 30
     audit_log_path: "/home/node/.openclaw/audit/browser_audit.jsonl"
-  
+
   # Browser Settings - Playwright configuration
   browser:
     headless: true

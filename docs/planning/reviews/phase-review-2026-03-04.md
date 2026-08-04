@@ -40,7 +40,7 @@
 | **No audit trail for bypassed checks** | Medium | When owner messages skip these guards, no log entry indicates the bypass happened. Should log at DEBUG/INFO level: "Owner bypass: skipping ContextGuard for user_id X". |
 | **Missing from other guards** | Low | Only ContextGuard and FileSandbox are bypassed. If false positives appear in other modules, the pattern will spread. Consider a centralized `is_owner(user_id)` function rather than inline checks. |
 
-**Recommendation:** 
+**Recommendation:**
 1. Move `OWNER_USER_IDS` to config (`agentshroud.yaml` under a `security.owner_ids` key)
 2. Add audit logging for every bypass: `logger.info(f"Owner bypass: {module_name} skipped for {user_id}")`
 3. Long-term: fix the false positives in ContextGuard/FileSandbox rather than bypassing them

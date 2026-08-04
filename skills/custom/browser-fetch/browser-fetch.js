@@ -24,7 +24,7 @@ async function browserFetch(url, options = {}) {
   };
 
   console.log(`[browser-fetch] Starting fetch: ${url}`);
-  
+
   let browser;
   try {
     // Launch headless Chromium

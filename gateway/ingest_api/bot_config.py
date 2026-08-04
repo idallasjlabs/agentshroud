@@ -64,8 +64,20 @@ class BotConfig(BaseModel):
         default="",
         description="Docker image name:tag used by this bot, e.g. 'agentshroud-openclaw:latest'",
     )
+    container_name: str = Field(
+        default="",
+        description="Actual `docker-compose.yml` container_name: for this bot. Empty (default) "
+        "derives 'agentshroud-{id}'. Set explicitly when the real container name diverges from "
+        "that convention (e.g. hermes's container is 'agentshroud-hermes-v2', not "
+        "'agentshroud-hermes', after the 2026-07-18 rename).",
+    )
 
     @property
     def base_url(self) -> str:
         """Compute the bot's internal base URL from hostname and port."""
         return f"http://{self.hostname}:{self.port}"
+
+    @property
+    def resolved_container_name(self) -> str:
+        """The real docker container name for this bot — see container_name field."""
+        return self.container_name or f"agentshroud-{self.id}"

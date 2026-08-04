@@ -108,6 +108,6 @@ gateway/web/
 ---
 
 **Status**: ✅ COMPLETE - Ready for review and deployment
-**Branch**: `feature/web-control-center` 
+**Branch**: `feature/web-control-center`
 **Ready for**: Pull request and merge to main
 EOFgit add WEB_CONTROL_CENTER_SUMMARY.md

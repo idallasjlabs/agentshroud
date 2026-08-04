@@ -384,7 +384,6 @@ llm_settings/mcp-servers/**/.env
 .gemini/*.local.*
 .codex/config.local.toml
 .codex/*.local.*
-
 # ESP-IDF generated files — may contain WiFi credentials
 firmware/voice-terminal/sdkconfig
 firmware/voice-terminal/build/
@@ -394,3 +393,5 @@ firmware/voice-terminal/main/wifi_credentials.h
 # Promoted OTA payload (scripts/promote-firmware.sh) — the compiled binary
 # embeds WiFi password + WS auth token in cleartext, same as build/ above.
 firmware/voice-terminal/ota-release/
+# Local LLM model exports
+local-llms/exports/

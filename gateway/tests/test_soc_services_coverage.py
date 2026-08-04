@@ -497,6 +497,27 @@ class TestDescribeService:
 # ---------------------------------------------------------------------------
 
 
+class TestKnownServices:
+    """_known_services() must resolve each bot's real container name — not a
+    hardcoded 'agentshroud-{bot_id}' guess that breaks the moment a bot's
+    container is renamed (hermes -> agentshroud-hermes-v2, 2026-07-18)."""
+
+    def test_uses_resolved_container_name_from_real_config(self):
+        names = services._known_services()
+        assert "agentshroud-gateway" in names
+        assert "agentshroud-openclaw" in names
+        assert "agentshroud-hermes-v2" in names
+        assert "agentshroud-hermes" not in names
+
+    def test_falls_back_to_openclaw_only_on_config_load_failure(self, monkeypatch):
+        def _boom():
+            raise RuntimeError("config unavailable")
+
+        monkeypatch.setattr("gateway.ingest_api.config.load_config", _boom)
+        names = services._known_services()
+        assert names == ["agentshroud-gateway", "agentshroud-openclaw"]
+
+
 class TestListServices:
     def test_internal_services_status_mapping(self, monkeypatch):
         from gateway.ingest_api.state import app_state
@@ -516,9 +537,9 @@ class TestListServices:
             ],
         )
         result = {d.name: d for d in ServiceManager(engine=engine).list_services()}
-        assert len(result) == len(services._KNOWN_SERVICES) + 5
+        assert len(result) == len(services._known_services()) + 5
 
-        for known in services._KNOWN_SERVICES:
+        for known in services._known_services():
             assert result[known].status == ServiceStatus.STOPPED
             assert result[known].is_internal is False
 
@@ -559,7 +580,7 @@ class TestListServices:
         )
         descriptors = ServiceManager(engine=engine).list_services()
         # Internal probe failure is swallowed; container descriptors still returned.
-        assert [d.name for d in descriptors] == list(services._KNOWN_SERVICES)
+        assert [d.name for d in descriptors] == list(services._known_services())
 
 
 # ---------------------------------------------------------------------------

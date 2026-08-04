@@ -1,7 +1,7 @@
 # AI Tools Configuration Guide
 ## Multi-Agent Development Setup - Properly Configured
 
-**Last Updated:** 2026-01-25
+**Last Updated:** 2026-04-28
 
 ---
 
@@ -41,22 +41,19 @@ Claude Code is the **PRIMARY developer** in this repository. It has the most adv
 
 ```
 .claude/
-├── agents/                    # Subagent definitions (doc-writer, security-reviewer, testrunner)
-│   ├── doc-writer.md
-│   ├── security-reviewer.md
-│   └── testrunner.md
+├── agents/                    # 54 subagent definitions (see full list below)
 ├── scripts/
 │   ├── claude_repo_setup.sh
-│   └── claude-hooks/         # Hook scripts (bash)
+│   └── claude-hooks/         # Hook scripts (bash) — 6 hooks
 │       ├── warn_dangerous_bash.sh
 │       ├── auto_format_python.sh
-│       └── run_targeted_tests.sh
-├── skills/                    # Skill definitions (workflows)
-│   ├── pr/SKILL.md           # /pr command - PR descriptions
-│   ├── tdd/SKILL.md          # /tdd command - TDD workflow
-│   ├── mcpm-aws-profile/SKILL.md  # /mcpm-aws-profile - AWS MCP setup
-│   ├── mcpm-doctor/SKILL.md       # /mcpm-doctor - Diagnose MCP issues
-│   └── mcpm-auth-reset/SKILL.md   # /mcpm-auth-reset - Reset MCP auth
+│       ├── run_targeted_tests.sh
+│       ├── block_credential_read.sh
+│       ├── block_credential_write.sh
+│       └── block_main_commits.sh
+├── skills/                    # 57 skill definitions (flat structure)
+│   ├── <name>/SKILL.md       # Each skill: /agile, /apollo, /aws, /bdd, /browser, ...
+│   └── reference/SKILLS_GUIDE.md
 ├── settings.json             # Team-shared configuration
 ├── settings.local.json       # Personal overrides (gitignored)
 └── statusline.sh            # Custom status line
@@ -64,6 +61,27 @@ Claude Code is the **PRIMARY developer** in this repository. It has the most adv
 CLAUDE.md                     # Context file in project root
 .mcp.json                     # MCP servers configuration
 ```
+
+**54 Agents** (`.claude/agents/`):
+ai-training-agent, analytics-agent, architecture-agent, backlog-agent, bluegreen-release-agent,
+canary-release-agent, chaos-engineering-agent, ci-agent, code-reviewer, compliance-agent,
+data-engineer, database-agent, debugging-agent, dependency-agent, deploy-agent,
+devsecops-agent, diagnostics-agent, doc-writer, documentation-agent, feature-flag-agent,
+incident-commander, infrastructure-agent, kaizen-agent, kanban-agent, lakehouse-agent,
+mlops-agent, observability-agent, outline-agent, performance-agent, platform-engineer,
+podcast-producer, podcast-publisher, postmortem-agent, product-agent, prompt-engineer,
+qa-agent, refactoring-agent, release-engineer, research-agent, retrospective-agent,
+roadmap-agent, rollback-agent, script-agent, scrum-master-agent, security-reviewer,
+sprint-planner, sre-agent, supply-chain-security-agent, tdd-engineer, tech-writer,
+testrunner, threat-model-agent, value-stream-agent, voice-generation-agent
+
+**57 Skills** (`.claude/skills/<name>/SKILL.md`):
+agile, apollo, architecture-review, athena, atlas, aws, bdd, browser, bs, cd,
+chaos-engineering, ci, cicd, cr, daedalus, data, devsecops, eightd, gg, gitops,
+hermes, icloud, incident-response, kaizen, kanban, mac, mc, mcpm, mcpm-auth-reset,
+mcpm-aws-profile, mcpm-doctor, mm, mnemosyne, observability, oracle, pm, pr, production,
+ps, qa, sad, sav, scrum, sdlc, sec, sec-defense, sec-offense, session-prompt, socrates,
+sre, tdd, ti, tw, ui, ux, value-stream-mapping, vulcan
 
 ### Configuration Format
 
@@ -94,9 +112,9 @@ CLAUDE.md                     # Context file in project root
 
 ### Unique Features
 
-- **Agents**: Specialized subagents for documentation, security, testing
-- **Skills**: Custom workflows invoked with `/skill-name`
-- **Hooks**: PreToolUse, PostToolUse, SessionStart scripts
+- **Agents**: 54 specialized subagents (full list above)
+- **Skills**: 57 custom workflows invoked with `/skill-name`
+- **Hooks**: 6 PreToolUse hook scripts (credential blocking, format, test-runner, dangerous-bash guard)
 - **Context file**: `CLAUDE.md` loaded automatically
 - **Local overrides**: `settings.local.json` for personal settings
 
@@ -144,12 +162,12 @@ Gemini CLI is a **SECONDARY agent** focused on test augmentation and validation.
   "sandbox": {
     "enabled": true
   },
+  "model": {
+    "name": "gemini-2.5-pro"
+  },
   "mcpServers": {
-    "example": {
-      "command": "node",
-      "args": ["/path/to/server.js"],
-      "enabled": false
-    }
+    "github": { "command": ".llm_settings/mcp-servers/github/github-mcp-wrapper.sh" },
+    "atlassian-fluence": { "command": ".llm_settings/mcp-servers/atlassian/fluence/mcp-atlassian.sh" }
   }
 }
 ```
@@ -160,9 +178,10 @@ Gemini CLI is a **SECONDARY agent** focused on test augmentation and validation.
 - ✅ Use sandbox execution
 - ✅ Run commands and scripts
 - ✅ Read and modify files
+- ✅ Use agent reference files in `.gemini/agents/` (51 files — paste content to activate)
 
 ### What Gemini CLI CANNOT Do
-- ❌ Use Claude-style agents (no `.gemini/agents/` support)
+- ❌ Natively invoke agents by name (agent files are reference-only, no slash-command activation)
 - ❌ Use Claude-style skills (no `/skill` commands)
 - ❌ Use Claude-style hooks (no PreToolUse/PostToolUse)
 - ❌ Load `.claude/` configurations
@@ -597,9 +616,13 @@ All AI tools in this repository have access to three MCP servers:
 
 | MCP Server | Purpose | Auth Method |
 |------------|---------|-------------|
-| **GitHub** | Repos, PRs, issues, code search | OAuth / Token |
-| **Atlassian** | Jira issues, Confluence pages | OAuth 2.0 (3LO) |
-| **AWS API** | All AWS CLI commands (readonly by default) | AWS credentials |
+| **github** | Repos, PRs, issues, code search | GitHub token |
+| **atlassian-fluence** | Jira — fluenceenergy.atlassian.net | API token (`JIRA_FLUENCE_TOKEN`) |
+| **atlassian-agentshroud** | Jira — agentshroudai.atlassian.net | API token (`JIRA_TOKEN`) |
+| **atlassian-idallasj** | Jira — idallasj.atlassian.net | OAuth 2.0 |
+| **awslabs.aws-api-mcp-server** | All AWS CLI commands (readonly by default) | AWS credentials |
+| **xmind** | Mind map generation → `~/Desktop/*.xmind` | None |
+| **safari** | Browser automation via Safari | None (local) |
 
 ### AWS MCP Server Setup
 

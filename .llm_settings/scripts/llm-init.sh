@@ -12,22 +12,690 @@
 #   llm-init /path/to/repo          # Deploy to specific directory
 #   llm-init --dry-run              # Preview without making changes
 #   llm-init -n /path/to/repo       # Dry run to specific directory
+#   llm-init --mcp github --mcp atlassian-fluence . # Pin specific MCP servers
+#   llm-init --mcp all .                            # Deploy all MCP servers
 
 # zsh compatibility: avoid alias expansion conflict on function name
 unalias llm-init 2>/dev/null || true
 
+# ─────────────────────────────────────────────────────────────────────────────
+# _llm_init_reconcile_settings_local <dry_run> <json_key>...
+#
+# After _llm_init_render_mcp has filtered .mcp.json, reconciles
+# .claude/settings.local.json so selected servers are enabled:
+#
+#   1. Removes selected JSON keys from disabledMcpjsonServers (clears Claude Code
+#      auto-deny entries that would silently block the selected servers).
+#   2. Rebuilds enabledMcpjsonServers:
+#        (existing entries ∩ live .mcp.json keys) ∪ selected
+#      This prunes stale names (e.g. "github", "atlassian" → "github-fluence")
+#      and ensures selected servers are present.
+#   3. If settings.local.json does not exist, creates a minimal file with
+#      enabledMcpjsonServers set to the selected keys only.
+#
+# Idempotent. No-op if jq is absent.
+# ─────────────────────────────────────────────────────────────────────────────
+_llm_init_reconcile_settings_local() {
+    local _dry_run="$1"
+    shift
+    local -a _json_keys=("$@")
+    local _settings=".claude/settings.local.json"
+
+    if [ ${#_json_keys[@]} -eq 0 ]; then return 0; fi
+
+    if ! command -v jq >/dev/null 2>&1; then
+        echo "   ⚠️  [reconcile-settings] jq not found — $_settings not updated" >&2
+        return 0
+    fi
+
+    # Build JSON array of selected keys
+    local _sel_json
+    _sel_json="$(printf '"%s",' "${_json_keys[@]}")"
+    _sel_json="[${_sel_json%,}]"
+
+    if [ ! -f "$_settings" ]; then
+        if [ "$_dry_run" = "true" ]; then
+            echo "   ℹ️  [dry-run] Would create $_settings with enabledMcpjsonServers: ${_json_keys[*]}"
+        else
+            printf '%s' "{\"enabledMcpjsonServers\": ${_sel_json}}" | jq . > "$_settings"
+            echo "      ✅ $_settings (created with enabledMcpjsonServers)"
+        fi
+        return 0
+    fi
+
+    if [ "$_dry_run" = "true" ]; then
+        echo "   ℹ️  [dry-run] Would reconcile $_settings: enable ${_json_keys[*]}"
+        return 0
+    fi
+
+    # Get the live .mcp.json keys (canonical truth after filtering)
+    local _live_keys="[]"
+    if [ -f ".mcp.json" ]; then
+        _live_keys="$(jq '[.mcpServers | keys[]]' .mcp.json 2>/dev/null || echo '[]')"
+    fi
+
+    local _tmp="${_settings}.rnd.$$"
+    local _err="${_settings}.err.$$"
+
+    if jq --argjson sel "$_sel_json" \
+          --argjson live "$_live_keys" '
+        # 1. Remove selected from disabledMcpjsonServers; drop the key if it becomes empty
+        if .disabledMcpjsonServers then
+            .disabledMcpjsonServers = (.disabledMcpjsonServers - $sel)
+            | if (.disabledMcpjsonServers | length) == 0
+              then del(.disabledMcpjsonServers) else . end
+        else . end |
+        # 2. Rebuild enabledMcpjsonServers:
+        #    keep existing entries only if they still exist in live .mcp.json,
+        #    then union with selected (deduplicated, sorted for stability)
+        if .enabledMcpjsonServers then
+            .enabledMcpjsonServers = (
+                [ (.enabledMcpjsonServers // [])[]
+                  | select(. as $e | $live | any(. == $e)) ]
+                + $sel
+                | unique
+            )
+        else
+            .enabledMcpjsonServers = ($sel | unique)
+        end
+    ' "$_settings" > "$_tmp" 2>"$_err"; then
+        if jq empty "$_tmp" 2>/dev/null; then
+            # Use \mv to bypass 'mv -i' aliases that would prompt for confirmation
+            \mv -f "$_tmp" "$_settings"
+            rm -f "$_err"
+            echo "      ✅ $_settings (MCP reconcile: enabled ${_json_keys[*]})"
+        else
+            rm -f "$_tmp"
+            echo "   ❌ [reconcile-settings] jq produced invalid JSON — $_settings unchanged" >&2
+            [ -s "$_err" ] && cat "$_err" >&2
+            rm -f "$_err"
+        fi
+    else
+        rm -f "$_tmp"
+        echo "   ❌ [reconcile-settings] jq failed — $_settings unchanged" >&2
+        [ -s "$_err" ] && cat "$_err" >&2
+        rm -f "$_err"
+    fi
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# _llm_init_render_mcp [--dry-run]
+#
+# Reads .llm_settings/repo-tenants (in the current directory) and filters the
+# three agent MCP registry files to retain only the selected atlassian-* entries.
+# Non-atlassian entries (github, aws-api, xmind, etc.) are always preserved.
+#
+# Requires: jq (for .mcp.json / .gemini/settings.json); awk for .codex/config.toml.
+# If jq is absent, JSON files are left unfiltered with a warning.
+# ─────────────────────────────────────────────────────────────────────────────
+_llm_init_render_mcp() {
+    local _dry_run="${1:-false}"
+    local _mcp_marker=".llm_settings/repo-mcp-servers"
+    local _tenant_marker=".llm_settings/repo-tenants"
+
+    # ── Decide filtering mode ─────────────────────────────────────────
+    # If repo-mcp-servers exists → explicit server selection (new mode).
+    # Otherwise fall back to Atlassian-only tenant filtering (legacy mode).
+
+    if [ -f "$_mcp_marker" ]; then
+        # ── NEW MODE: explicit MCP server selection ───────────────────
+        local -a _selected_names=()
+        while IFS= read -r _line; do
+            _line="${_line%%#*}"           # strip inline comments
+            _line="${_line//[[:space:]]/}" # strip whitespace
+            [ -z "$_line" ] && continue
+            _selected_names+=("$_line")
+        done < "$_mcp_marker"
+
+        # Map short names → JSON keys and TOML keys
+        local -a _json_keys=()
+        local -a _toml_keys=()
+        local _sn _jk _tk
+        for _sn in "${_selected_names[@]}"; do
+            case "$_sn" in
+                github)                _jk="github";                    _tk="github" ;;
+                github-fluence)        _jk="github-fluence";            _tk="github-fluence" ;;
+                github-agentshroud)    _jk="github-agentshroud";        _tk="github-agentshroud" ;;
+                github-idallasj)       _jk="github-idallasj";           _tk="github-idallasj" ;;
+                aws)                   _jk="awslabs.aws-api-mcp-server"; _tk="aws-api" ;;
+                xmind)                 _jk="xmind";                     _tk="xmind" ;;
+                safari)                _jk="safari";                    _tk="safari" ;;
+                home-assistant)        _jk="home-assistant";            _tk="home-assistant" ;;
+                devonthink)            _jk="devonthink";                _tk="devonthink" ;;
+                atlassian-fluence)     _jk="atlassian-fluence";         _tk="atlassian-fluence" ;;
+                atlassian-agentshroud) _jk="atlassian-agentshroud";     _tk="atlassian-agentshroud" ;;
+                atlassian-idallasj)    _jk="atlassian-idallasj";        _tk="atlassian-idallasj" ;;
+                *) echo "   ⚠️  [render-mcp] Unknown server '$_sn' in $_mcp_marker — skipping" >&2; continue ;;
+            esac
+            _json_keys+=("$_jk")
+            _toml_keys+=("$_tk")
+        done
+
+        local _keys_str="${_selected_names[*]}"
+
+        if [ "$_dry_run" = "true" ]; then
+            echo "   ℹ️  [dry-run] Would render MCP configs (explicit selection): ${_keys_str}"
+            return 0
+        fi
+
+        echo "   🎛️  Rendering MCP configs — selected server(s): ${_keys_str}"
+
+        # ── Filter JSON files with jq ─────────────────────────────────
+        if command -v jq >/dev/null 2>&1; then
+            if [ ${#_json_keys[@]} -eq 0 ]; then
+                echo "   ⚠️  [render-mcp] No valid servers selected — JSON files left unchanged" >&2
+            else
+                local _keys_json
+                _keys_json="$(printf '"%s",' "${_json_keys[@]}")"
+                _keys_json="[${_keys_json%,}]"
+                # Keep ONLY entries whose key is in the explicit selection
+                local _jq_filter='.mcpServers |= with_entries(select(.key as $k | $keep | any(. == $k)))'
+                local _jf _tmp _err
+                for _jf in ".mcp.json" ".gemini/settings.json"; do
+                    if [ -f "$_jf" ]; then
+                        # Validate JSON before filtering
+                        if ! jq empty "$_jf" 2>/dev/null; then
+                            echo "   ⚠️  [render-mcp] $_jf is not valid JSON — skipping filter" >&2
+                            continue
+                        fi
+                        _tmp="${_jf}.rnd.$$"
+                        _err="${_jf}.err.$$"
+                        if jq --argjson keep "$_keys_json" "$_jq_filter" "$_jf" > "$_tmp" 2>"$_err"; then
+                            # Validate jq output before overwriting
+                            if jq empty "$_tmp" 2>/dev/null; then
+                                # Use \mv -f to bypass 'mv -i' aliases (common in interactive shells)
+                                \mv -f "$_tmp" "$_jf"
+                                rm -f "$_err"
+                                echo "      ✅ $_jf"
+                            else
+                                rm -f "$_tmp"
+                                echo "   ❌ [render-mcp] jq produced invalid JSON for $_jf" >&2
+                                [ -s "$_err" ] && cat "$_err" >&2
+                                rm -f "$_err"
+                            fi
+                        else
+                            rm -f "$_tmp"
+                            echo "   ❌ [render-mcp] jq filter failed for $_jf — file unchanged" >&2
+                            [ -s "$_err" ] && cat "$_err" >&2
+                            rm -f "$_err"
+                        fi
+                    fi
+                done
+            fi
+        else
+            echo "   ⚠️  [render-mcp] jq not found — .mcp.json and .gemini/settings.json unfiltered" >&2
+            echo "   ⚠️              Install jq for full per-server filtering" >&2
+        fi
+
+        # ── Filter TOML with awk — ALL [mcp_servers.*] sections ───────
+        local _tf=".codex/config.toml"
+        if [ -f "$_tf" ]; then
+            local _toml_str="${_toml_keys[*]:-}"
+            local _tmp="${_tf}.rnd.$$"
+            awk -v keep="$_toml_str" '
+                BEGIN {
+                    n = split(keep, arr, " ")
+                    for (i = 1; i <= n; i++) keep_set[arr[i]] = 1
+                    in_skip = 0
+                }
+                /^\[mcp_servers\.[A-Za-z0-9_.-]+\]/ {
+                    key = $0
+                    sub(/^\[mcp_servers\./, "", key)
+                    sub(/\].*$/, "", key)
+                    in_skip = (key in keep_set) ? 0 : 1
+                    if (!in_skip) print
+                    next
+                }
+                /^\[/ {
+                    in_skip = 0
+                    print
+                    next
+                }
+                !in_skip { print }
+            ' "$_tf" > "$_tmp" && \mv -f "$_tmp" "$_tf" && echo "      ✅ $_tf" || {
+                rm -f "$_tmp"
+                echo "   ⚠️  [render-mcp] awk filter failed for $_tf — file unchanged" >&2
+            }
+        fi
+
+        # ── Reconcile .claude/settings.local.json ─────────────────────
+        # Ensure selected servers are enabled (not in disabledMcpjsonServers)
+        # and enabledMcpjsonServers reflects the current live .mcp.json keys.
+        _llm_init_reconcile_settings_local "$_dry_run" "${_json_keys[@]}"
+
+    else
+        # ── LEGACY MODE: Atlassian-only tenant filtering ──────────────
+        # repo-mcp-servers absent; filter only atlassian-* entries using repo-tenants.
+        # All non-Atlassian servers are preserved unchanged (backward compatible).
+
+        local -a _active_keys=()
+        if [ -f "$_tenant_marker" ]; then
+            while IFS= read -r _line; do
+                _line="${_line%%#*}"           # strip inline comments
+                _line="${_line//[[:space:]]/}" # strip whitespace
+                [ -z "$_line" ] && continue
+                case "$_line" in
+                    fluenceenergy)   _active_keys+=("atlassian-fluence") ;;
+                    therealidallasj) _active_keys+=("atlassian-idallasj") ;;
+                    agentshroudai)   _active_keys+=("atlassian-agentshroud") ;;
+                    *) echo "   ⚠️  [render-mcp] Unknown tenant '$_line' in $_tenant_marker — skipping" >&2 ;;
+                esac
+            done < "$_tenant_marker"
+        fi
+        [ ${#_active_keys[@]} -eq 0 ] && _active_keys=("atlassian-fluence")  # safe default
+
+        local _keys_str="${_active_keys[*]}"
+
+        if [ "$_dry_run" = "true" ]; then
+            echo "   ℹ️  [dry-run] Would render MCP configs (Atlassian tenant filter): ${_keys_str}"
+            return 0
+        fi
+
+        echo "   🎛️  Rendering MCP configs — active tenant(s): ${_keys_str}"
+
+        # ── Filter JSON files with jq ─────────────────────────────────
+        if command -v jq >/dev/null 2>&1; then
+            local _keys_json
+            _keys_json="$(printf '"%s",' "${_active_keys[@]}")"
+            _keys_json="[${_keys_json%,}]"
+            local _jq_filter
+            _jq_filter='.mcpServers |= with_entries(select(
+                (.key | startswith("atlassian-") | not) or
+                (.key as $k | $keep | any(. == $k))
+            ))'
+            local _jf _tmp _err
+            for _jf in ".mcp.json" ".gemini/settings.json"; do
+                if [ -f "$_jf" ]; then
+                    # Validate JSON before filtering
+                    if ! jq empty "$_jf" 2>/dev/null; then
+                        echo "   ⚠️  [render-mcp] $_jf is not valid JSON — skipping filter" >&2
+                        continue
+                    fi
+                    _tmp="${_jf}.rnd.$$"
+                    _err="${_jf}.err.$$"
+                    if jq --argjson keep "$_keys_json" "$_jq_filter" "$_jf" > "$_tmp" 2>"$_err"; then
+                        # Validate jq output before overwriting
+                        if jq empty "$_tmp" 2>/dev/null; then
+                            # Use \mv -f to bypass 'mv -i' aliases (common in interactive shells)
+                            \mv -f "$_tmp" "$_jf"
+                            rm -f "$_err"
+                            echo "      ✅ $_jf"
+                        else
+                            rm -f "$_tmp"
+                            echo "   ❌ [render-mcp] jq produced invalid JSON for $_jf" >&2
+                            [ -s "$_err" ] && cat "$_err" >&2
+                            rm -f "$_err"
+                        fi
+                    else
+                        rm -f "$_tmp"
+                        echo "   ❌ [render-mcp] jq filter failed for $_jf — file unchanged" >&2
+                        [ -s "$_err" ] && cat "$_err" >&2
+                        rm -f "$_err"
+                    fi
+                fi
+            done
+        else
+            echo "   ⚠️  [render-mcp] jq not found — .mcp.json and .gemini/settings.json unfiltered" >&2
+            echo "   ⚠️              Install jq for full per-tenant filtering" >&2
+        fi
+
+        # ── Filter TOML — only atlassian-* sections (legacy behavior) ─
+        local _tf=".codex/config.toml"
+        if [ -f "$_tf" ]; then
+            local _tmp="${_tf}.rnd.$$"
+            awk -v keep="$_keys_str" '
+                BEGIN {
+                    n = split(keep, arr, " ")
+                    for (i = 1; i <= n; i++) keep_set[arr[i]] = 1
+                    in_skip = 0
+                }
+                /^\[mcp_servers\.atlassian-[A-Za-z_-]+\]/ {
+                    key = $0
+                    sub(/^\[mcp_servers\./, "", key)
+                    sub(/\].*$/, "", key)
+                    in_skip = (key in keep_set) ? 0 : 1
+                    if (!in_skip) print
+                    next
+                }
+                /^\[/ {
+                    in_skip = 0
+                    print
+                    next
+                }
+                !in_skip { print }
+            ' "$_tf" > "$_tmp" && \mv -f "$_tmp" "$_tf" && echo "      ✅ $_tf" || {
+                rm -f "$_tmp"
+                echo "   ⚠️  [render-mcp] awk filter failed for $_tf — file unchanged" >&2
+            }
+        fi
+    fi
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# _llm_init_convert_for_gemini <src_file> <dest_dir> [override_name]
+#
+# Writes a Gemini CLI-compatible agent file to dest_dir. Gemini requires:
+#   - YAML frontmatter with ONLY name + description (no other keys allowed)
+#   - Filename must start with [a-z] (digit-prefixed names are rewritten)
+#   - No README.md in the agents directory
+#
+# <src_file>     : source .md file (agent stub or SKILL.md)
+# <dest_dir>     : target directory (e.g. .gemini/agents)
+# [override_name]: use this as the agent name instead of deriving from filename
+#                  (needed for skills whose filename is always SKILL.md)
+# ─────────────────────────────────────────────────────────────────────────────
+_llm_init_convert_for_gemini() {
+    local src_file="$1"
+    local dest_dir="$2"
+    local override_name="${3:-}"
+
+    local filename agent_name dest_file desc body existing_desc
+
+    filename=$(basename "$src_file")
+
+    # Skip README
+    [[ "$filename" == "README.md" ]] && return 0
+
+    # Derive agent name from override or filename
+    if [[ -n "$override_name" ]]; then
+        agent_name="$override_name"
+    else
+        agent_name="${filename%.md}"
+    fi
+
+    # Rewrite names starting with a digit (e.g. 8d → eightd)
+    if [[ "$agent_name" =~ ^[0-9] ]]; then
+        case "${agent_name:0:1}" in
+            0) agent_name="zero${agent_name:1}" ;;
+            1) agent_name="one${agent_name:1}"  ;;
+            2) agent_name="two${agent_name:1}"  ;;
+            3) agent_name="three${agent_name:1}";;
+            4) agent_name="four${agent_name:1}" ;;
+            5) agent_name="five${agent_name:1}" ;;
+            6) agent_name="six${agent_name:1}"  ;;
+            7) agent_name="seven${agent_name:1}";;
+            8) agent_name="eight${agent_name:1}";;
+            9) agent_name="nine${agent_name:1}" ;;
+        esac
+    fi
+
+    dest_file="${dest_dir}/${agent_name}.md"
+
+    if head -1 "$src_file" | grep -q '^---$'; then
+        # File has frontmatter — extract description, strip all other keys
+        # description may span multiple lines (YAML block scalar with >)
+        # Note: awk's END block runs even after exit, so use a printed flag to avoid double output
+        existing_desc=$(awk '
+            BEGIN{f=0; in_desc=0; line=""; done=0}
+            /^---$/{f++; next}
+            f==1 && /^description:/{
+                in_desc=1
+                sub(/^description:[[:space:]]*/,"")
+                sub(/^[>|][[:space:]]*/,"")
+                line=$0
+                next
+            }
+            f==1 && in_desc && /^[[:space:]]/{
+                sub(/^[[:space:]]*/,"")
+                line=line " " $0
+                next
+            }
+            f==1 && in_desc && !done{ done=1; print line; exit }
+            f==2 && in_desc && !done{ done=1; print line; exit }
+            END{ if(in_desc && !done && line!="") print line }
+        ' "$src_file")
+
+        # Extract body (content after closing ---)
+        body=$(awk 'BEGIN{count=0} /^---$/{count++; if(count==2){found=1; next}} found{print}' "$src_file")
+
+        # Fallback: pull description from first H1 in the body
+        if [[ -z "$existing_desc" ]]; then
+            existing_desc=$(grep '^# ' "$src_file" | head -1 | sed 's/^# //')
+        fi
+        [[ -z "$existing_desc" ]] && existing_desc="${agent_name} agent"
+
+        # Sanitize: strip YAML block scalar indicators and surrounding quotes, collapse whitespace
+        existing_desc=$(printf '%s' "$existing_desc" \
+            | sed 's/^[>|"[:space:]]*//' \
+            | sed 's/[[:space:]"]*$//' \
+            | tr '\n' ' ' \
+            | sed 's/  */ /g')
+
+        # Escape any remaining double-quotes inside the value
+        existing_desc="${existing_desc//\"/\\\"}"
+
+        # Always use the (possibly digit-fixed) agent_name as the frontmatter name
+        {
+            printf -- '---\n'
+            printf 'name: %s\n' "$agent_name"
+            printf 'description: "%s"\n' "$existing_desc"
+            printf -- '---\n'
+            printf '\n'
+            printf '> **[Gemini Standalone Mode]** Complete this task using direct MCP tool calls.\n'
+            printf '> Do **not** invoke or reference other agents by name — all capabilities are\n'
+            printf '> available through the MCP tools configured in `.gemini/settings.json`.\n'
+            printf '\n'
+            printf '%s\n' "$body"
+        } > "$dest_file"
+    else
+        # No frontmatter — extract description from first H1 heading
+        desc=$(grep '^# ' "$src_file" | head -1 | sed 's/^# //')
+        [[ -z "$desc" ]] && desc="${agent_name} agent"
+        desc="${desc//\"/\\\"}"
+
+        {
+            printf -- '---\n'
+            printf 'name: %s\n' "$agent_name"
+            printf 'description: "%s"\n' "$desc"
+            printf -- '---\n'
+            printf '\n'
+            printf '> **[Gemini Standalone Mode]** Complete this task using direct MCP tool calls.\n'
+            printf '> Do **not** invoke or reference other agents by name — all capabilities are\n'
+            printf '> available through the MCP tools configured in `.gemini/settings.json`.\n'
+            printf '\n'
+            cat "$src_file"
+        } > "$dest_file"
+    fi
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# _llm_init_merge_claude_md <src> <tgt> <dry_run>
+#
+# Smart CLAUDE.md deployment:
+#   - No target       → deploy full template (as before)
+#   - Has markers     → replace only the llm-init block, preserve repo sections
+#   - No markers      → preserve entirely (repo owns its own CLAUDE.md)
+# ─────────────────────────────────────────────────────────────────────────────
+_llm_init_merge_claude_md() {
+    local _src="$1"
+    local _tgt="$2"
+    local _dry_run="${3:-false}"
+
+    local _start_marker="## LLM OPERATING CONTEXT (llm-init)"
+    local _end_marker="END OF LLM OPERATING CONTEXT (llm-init)"
+
+    # Case 1: No target — deploy full template
+    if [ ! -f "$_tgt" ]; then
+        if $_dry_run; then
+            echo "   ℹ️  [dry-run] Would deploy CLAUDE.md (new)"
+        else
+            cp "$_src" "$_tgt"
+            echo "   ✅ CLAUDE.md deployed (new)"
+        fi
+        return 0
+    fi
+
+    # Case 2: Target exists WITHOUT markers — preserve entirely
+    if ! grep -q "$_start_marker" "$_tgt"; then
+        echo "   ✅ CLAUDE.md preserved (no llm-init markers; repo-specific file kept as-is)"
+        return 0
+    fi
+
+    # Case 3: Target exists WITH markers — replace only the llm-init block
+    if ! grep -q "$_start_marker" "$_src"; then
+        echo "   ⚠️  Source CLAUDE.md missing llm-init markers; skipping merge"
+        return 1
+    fi
+
+    if $_dry_run; then
+        echo "   ℹ️  [dry-run] Would update llm-init block in existing CLAUDE.md (repo sections preserved)"
+        return 0
+    fi
+
+    # Line-number-based extraction (portable: macOS + Linux)
+    local _tgt_start _tgt_end _src_start _src_end
+    _tgt_start=$(grep -n "$_start_marker" "$_tgt" | head -1 | cut -d: -f1)
+    _tgt_end=$(grep -n "$_end_marker"   "$_tgt" | head -1 | cut -d: -f1)
+    _src_start=$(grep -n "$_start_marker" "$_src" | head -1 | cut -d: -f1)
+    _src_end=$(grep -n "$_end_marker"   "$_src" | head -1 | cut -d: -f1)
+
+    # The ── ruler line before start marker and after end marker belong to the block
+    local _tgt_block_start=$(( _tgt_start - 1 ))
+    local _tgt_block_end=$(( _tgt_end + 1 ))
+    local _src_block_start=$(( _src_start - 1 ))
+    local _src_block_end=$(( _src_end + 1 ))
+
+    local _tmpfile
+    _tmpfile="$(mktemp "${_tgt}.merge.XXXXXX")"
+
+    {
+        head -n $(( _tgt_block_start - 1 )) "$_tgt"
+        sed -n "${_src_block_start},${_src_block_end}p" "$_src"
+        tail -n +$(( _tgt_block_end + 1 )) "$_tgt"
+    } > "$_tmpfile"
+
+    \mv -f "$_tmpfile" "$_tgt"
+    echo "   ✅ CLAUDE.md updated (llm-init block refreshed, repo-specific sections preserved)"
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# _llm_init_skill_allowed <skill_name> <profile> <llm_settings_src>
+#
+# Returns 0 (true) if the skill should be deployed for the given profile.
+# profile "all" always returns 0. Other profiles check the corresponding
+# .llm_settings/skill-profiles/<profile>.txt file (lines starting with #
+# are comments and are ignored).
+# ─────────────────────────────────────────────────────────────────────────────
+_llm_init_skill_allowed() {
+    local _skill="$1"
+    local _profile="$2"
+    local _src="$3"
+    [ "$_profile" = "all" ] && return 0
+    local _pfile="$_src/../skill-profiles/${_profile}.txt"
+    [ -f "$_pfile" ] || return 0  # profile file missing — allow all (safe fallback)
+    grep -qxF "$_skill" "$_pfile" && return 0
+    return 1
+}
+
 llm-init() {
     # ── Argument Parsing ───────────────────────────────────────────
     local dry_run=false target_dir="."
+    local -a mcp_servers=()
+    local skill_profile="all"
+    local env_store=""
     while [[ $# -gt 0 ]]; do
         case "$1" in
             --dry-run|-n) dry_run=true; shift ;;
+            --mcp)
+                shift
+                case "${1:-}" in
+                    github|github-idallasj|github-fluence|github-agentshroud|\
+                    aws|xmind|safari|home-assistant|devonthink|\
+                    atlassian-fluence|atlassian-agentshroud|atlassian-idallasj)
+                        mcp_servers+=("$1") ;;
+                    all)
+                        mcp_servers+=("github" "github-idallasj" "github-fluence" "github-agentshroud" \
+                                      "aws" "xmind" "safari" "home-assistant" "devonthink" \
+                                      "atlassian-fluence" "atlassian-agentshroud" "atlassian-idallasj") ;;
+                    "")
+                        echo "llm-init: --mcp requires a value" >&2
+                        echo "          valid: github | github-idallasj | github-fluence | github-agentshroud |" >&2
+                        echo "                 aws | xmind | safari | home-assistant | devonthink |" >&2
+                        echo "                 atlassian-fluence | atlassian-agentshroud | atlassian-idallasj | all" >&2
+                        return 2 ;;
+                    *)
+                        echo "llm-init: unknown --mcp value: '$1'" >&2
+                        echo "          valid: github | github-idallasj | github-fluence | github-agentshroud |" >&2
+                        echo "                 aws | xmind | safari | home-assistant | devonthink |" >&2
+                        echo "                 atlassian-fluence | atlassian-agentshroud | atlassian-idallasj | all" >&2
+                        return 2 ;;
+                esac
+                shift ;;
+            --skills)
+                shift
+                case "${1:-}" in
+                    development|podcast|all)
+                        skill_profile="$1" ;;
+                    "")
+                        echo "llm-init: --skills requires a value" >&2
+                        echo "          valid: development | podcast | all" >&2
+                        return 2 ;;
+                    *)
+                        echo "llm-init: unknown --skills value: '$1'" >&2
+                        echo "          valid: development | podcast | all" >&2
+                        return 2 ;;
+                esac
+                shift ;;
+            --env)
+                shift
+                if [[ -n "${1:-}" && ! "$1" =~ ^-- ]]; then
+                    env_store="$1"; shift
+                else
+                    env_store="$HOME/.llm-secrets"
+                fi ;;
             --help|-h)
-                echo "Usage: llm-init [--dry-run|-n] [--help|-h] [target_directory]"
+                echo "Usage: llm-init [options] [target_directory]"
                 echo ""
-                echo "  --dry-run, -n   Preview changes without modifying anything"
-                echo "  --help,    -h   Show this help message"
-                echo "  target_directory  Directory to deploy to (default: .)"
+                echo "  --dry-run, -n          Preview changes without modifying anything"
+                echo ""
+                echo "  --mcp <server>         Select MCP servers to deploy (repeatable)."
+                echo "                         Unselected servers are REMOVED from .mcp.json,"
+                echo "                         .gemini/settings.json, and .codex/config.toml."
+                echo "                         Writes .llm_settings/repo-mcp-servers (per-repo)."
+                echo "                         Values:"
+                echo "                           github                → GitHub MCP (generic/legacy)"
+                echo "                           github-idallasj       → github.com/idallasj (personal)"
+                echo "                           github-fluence        → github.com/fluenceenergy (work)"
+                echo "                           github-agentshroud    → github.com/agentshroud"
+                echo "                           aws                   → AWS API MCP (readonly, uvx)"
+                echo "                           xmind                 → XMind mind-map MCP (npx)"
+                echo "                           safari                → Safari browser automation MCP"
+                echo "                           home-assistant        → Home Assistant MCP (SSE)"
+                echo "                           devonthink            → DEVONthink MCP (HTTP bridge)"
+                echo "                           atlassian-fluence     → fluenceenergy.atlassian.net"
+                echo "                           atlassian-agentshroud → agentshroudai.atlassian.net"
+                echo "                           atlassian-idallasj    → idallasj.atlassian.net (OAuth)"
+                echo "                           all                   → all of the above"
+                echo "                         Examples:"
+                echo "                           llm-init --mcp github-fluence --mcp atlassian-fluence ."
+                echo "                           llm-init --mcp github-idallasj --mcp home-assistant ."
+                echo "                           llm-init --mcp github --mcp safari --mcp home-assistant ."
+                echo "                           llm-init --mcp all ."
+                echo "                         Omit to preserve existing selection; if no selection"
+                echo "                         file exists, all servers are kept (backward compat)."
+                echo ""
+                echo "  --skills <profile>     Select which skills to deploy (default: all):"
+                echo "                           all         → all skills — Claude, Gemini, Codex"
+                echo "                           development → engineering repos incl. security-focused"
+                echo "                           podcast     → development + podcast pipeline skills"
+                echo "                         Profile definitions: .llm_settings/skill-profiles/<profile>.txt"
+                echo "                         To restore skills: re-run llm-init --skills <profile> ."
+                echo ""
+                echo "  --env [PATH]           Deploy .env files from local secrets store to target repo."
+                echo "                         Always overwrites existing .env files (store is authoritative)."
+                echo "                         Scoped to selected --mcp servers; if no --mcp given, deploys all."
+                echo "                         Missing store entries are skipped (non-fatal)."
+                echo "                         Default store: ~/.llm-secrets"
+                echo "                         Run setup-env-store.sh first to create the store."
+                echo "                         Example: llm-init --env ."
+                echo "                                  llm-init --mcp github-idallasj --env ."
+                echo "                                  llm-init --env ~/my-secrets ."
+                echo ""
+                echo "  --help,    -h          Show this help message"
+                echo "  target_directory       Directory to deploy to (default: .)"
+                echo ""
+                echo "  Note: --mcp filtering of JSON files requires jq."
+                echo "        TOML filtering (.codex/config.toml) uses awk (always available)."
                 return 0 ;;
             *) target_dir="$1"; shift ;;
         esac
@@ -41,22 +709,26 @@ llm-init() {
     local os_type
     os_type="$(uname -s)"
 
-    local pkg_manager="" pkg_install=""
+    local pkg_manager=""
     case "$os_type" in
         Darwin)
-            command -v brew &>/dev/null && { pkg_manager="brew"; pkg_install="brew install"; } ;;
+            command -v brew &>/dev/null && pkg_manager="brew" ;;
         Linux)
-            if   command -v apt-get &>/dev/null; then pkg_manager="apt";    pkg_install="sudo apt-get install -y"
-            elif command -v dnf     &>/dev/null; then pkg_manager="dnf";    pkg_install="sudo dnf install -y"
-            elif command -v yum     &>/dev/null; then pkg_manager="yum";    pkg_install="sudo yum install -y"
-            elif command -v pacman  &>/dev/null; then pkg_manager="pacman"; pkg_install="sudo pacman -S --noconfirm"
-            elif command -v brew    &>/dev/null; then pkg_manager="brew";   pkg_install="brew install"
+            if   command -v apt-get &>/dev/null; then pkg_manager="apt"
+            elif command -v dnf     &>/dev/null; then pkg_manager="dnf"
+            elif command -v yum     &>/dev/null; then pkg_manager="yum"
+            elif command -v pacman  &>/dev/null; then pkg_manager="pacman"
+            elif command -v brew    &>/dev/null; then pkg_manager="brew"
             fi ;;
     esac
 
     # ── Tool Path Resolution ───────────────────────────────────────
     local uvx_path="" npx_path=""
     command -v uvx &>/dev/null && uvx_path="$(command -v uvx)"
+    # Linux fallback: pipx/uvx commonly installs to ~/.local/bin which may not be in PATH
+    if [ -z "$uvx_path" ] && [ -x "$HOME/.local/bin/uvx" ]; then
+        uvx_path="$HOME/.local/bin/uvx"
+    fi
     command -v npx &>/dev/null && npx_path="$(command -v npx)"
 
     # Build platform-appropriate PATH for MCP env blocks
@@ -338,6 +1010,41 @@ llm-init() {
     fi
     echo ""
 
+    # ── MCP Server Selection Marker File ──────────────────────────
+    echo "🔌 MCP Server Selection"
+    local _mcp_marker_file=".llm_settings/repo-mcp-servers"
+    if [ ${#mcp_servers[@]} -gt 0 ]; then
+        # Deduplicate while preserving order
+        local -a _mcp_deduped=()
+        local _mcp_seen=""
+        for _ms in "${mcp_servers[@]}"; do
+            if [[ "$_mcp_seen" != *"|${_ms}|"* ]]; then
+                _mcp_deduped+=("$_ms")
+                _mcp_seen="${_mcp_seen}|${_ms}|"
+            fi
+        done
+        if ! $dry_run; then
+            mkdir -p .llm_settings
+            {
+                printf '# llm-init MCP server selection — generated %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+                printf '# Values: github | aws | xmind | safari | home-assistant | devonthink |\n'
+                printf '#         atlassian-fluence | atlassian-agentshroud | atlassian-idallasj | all\n'
+                printf '# Change with:  llm-init --mcp <server> [--mcp <server>]... .\n'
+                printf '%s\n' "${_mcp_deduped[@]}"
+            } > "$_mcp_marker_file"
+            echo "   📌 Set MCP server(s): ${_mcp_deduped[*]} → $_mcp_marker_file"
+        else
+            echo "   ℹ️  [dry-run] Would write $_mcp_marker_file: ${_mcp_deduped[*]}"
+        fi
+    elif [ -f "$_mcp_marker_file" ]; then
+        local _current_mcp
+        _current_mcp="$(grep -v '^#' "$_mcp_marker_file" | tr -d '[:space:]' | tr '\n' ' ' | sed 's/ $//')"
+        echo "   📌 Preserving existing MCP selection: ${_current_mcp:-all}"
+    else
+        echo "   📌 No --mcp flag — all servers kept (backward compat)"
+    fi
+    echo ""
+
     echo "📦 Copying configurations..."
     echo ""
 
@@ -367,23 +1074,32 @@ llm-init() {
 
         # Sync skills from canonical source (.llm_settings/skills/) into .claude/skills/
         if [ -d "$llm_settings_src/skills" ]; then
+            # Clean up existing skills directory to remove obsolete skills
+            if ! $dry_run && [ -d ".claude/skills" ]; then
+                rm -rf .claude/skills/*
+            fi
+
+            $dry_run || mkdir -p ".claude/skills"
+
             local skill_count=0
             for skill_dir in "$llm_settings_src/skills"/*/; do
                 local skill_name
                 skill_name=$(basename "$skill_dir")
                 if [ -f "$skill_dir/SKILL.md" ]; then
+                    _llm_init_skill_allowed "$skill_name" "$skill_profile" "$llm_settings_src" || continue
                     if ! $dry_run; then
-                        mkdir -p ".claude/skills/$skill_name"
-                        cp "$skill_dir/SKILL.md" ".claude/skills/$skill_name/SKILL.md"
+                        # rsync entire directory so skills with subdirectories (e.g. graphify/references/) are fully deployed
+                        rsync -a "$skill_dir" ".claude/skills/$skill_name/"
                     fi
                     ((skill_count++))
                 fi
             done
-            echo "   ✅ .claude/skills/ synchronized ($skill_count skills from .llm_settings/skills/)"
+            echo "   ✅ .claude/skills/ synchronized ($skill_count skills [$skill_profile profile])"
         fi
 
         # Sync agents from canonical source (.llm_settings/agents/) into .claude/agents/
         if [ -d "$llm_settings_src/agents" ]; then
+            $dry_run || rm -rf .claude/agents
             $dry_run || mkdir -p .claude/agents
             local agent_count=0
             for agent_file in "$llm_settings_src/agents"/*.md; do
@@ -404,8 +1120,7 @@ llm-init() {
     fi
 
     if [ -f "$source_dir/CLAUDE.md" ]; then
-        rsync -a $rsync_dry "$source_dir/CLAUDE.md" .
-        echo "   ✅ CLAUDE.md synchronized"
+        _llm_init_merge_claude_md "$source_dir/CLAUDE.md" "./CLAUDE.md" "$dry_run"
     else
         echo "   ⚠️  CLAUDE.md not found in source"
     fi
@@ -430,17 +1145,27 @@ llm-init() {
                 -e "s|/opt/homebrew/bin/npx|${npx_path:-/opt/homebrew/bin/npx}|g" \
                 -e "s|/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin|$mcp_path|g" \
                 .gemini/settings.json
-            rm -f .gemini/settings.json.bak
+            # Validate JSON after sed patching
+            if command -v jq >/dev/null 2>&1 && ! jq empty .gemini/settings.json 2>/dev/null; then
+                echo "   ❌ Path patching corrupted .gemini/settings.json — restoring backup" >&2
+                mv .gemini/settings.json.bak .gemini/settings.json
+            else
+                rm -f .gemini/settings.json.bak
+            fi
         fi
         # Sync agents from canonical source (.llm_settings/skills/) into .gemini/agents/
+        # All files are converted to Gemini format: name+description frontmatter only,
+        # digit-prefixed filenames rewritten, README.md excluded.
         if [ -d "$llm_settings_src/skills" ]; then
+            $dry_run || rm -rf .gemini/agents
             $dry_run || mkdir -p .gemini/agents
             local gemini_skill_count=0
             for skill_dir in "$llm_settings_src/skills"/*/; do
                 local skill_name
                 skill_name=$(basename "$skill_dir")
                 if [ -f "$skill_dir/SKILL.md" ]; then
-                    $dry_run || cp "$skill_dir/SKILL.md" ".gemini/agents/$skill_name.md"
+                    _llm_init_skill_allowed "$skill_name" "$skill_profile" "$llm_settings_src" || continue
+                    $dry_run || _llm_init_convert_for_gemini "$skill_dir/SKILL.md" ".gemini/agents" "$skill_name"
                     ((gemini_skill_count++))
                 fi
             done
@@ -448,10 +1173,18 @@ llm-init() {
             if [ -d "$llm_settings_src/agents" ]; then
                 for agent_file in "$llm_settings_src/agents"/*.md; do
                     [ -f "$agent_file" ] || continue
-                    $dry_run || cp "$agent_file" ".gemini/agents/$(basename "$agent_file")"
+                    $dry_run || _llm_init_convert_for_gemini "$agent_file" ".gemini/agents"
                 done
             fi
-            echo "   ✅ .gemini/ synchronized ($gemini_skill_count skills + agents from .llm_settings/, MCP configured)"
+            # Also sync agents from MCP server templates (e.g. github/.gemini/agents/)
+            if [ -d "$llm_settings_src/mcp-servers/github/.gemini/agents" ]; then
+                for agent_file in "$llm_settings_src/mcp-servers/github/.gemini/agents"/*.md; do
+                    [ -f "$agent_file" ] || continue
+                    [[ "$(basename "$agent_file")" == "README.md" ]] && continue
+                    $dry_run || _llm_init_convert_for_gemini "$agent_file" ".gemini/agents"
+                done
+            fi
+            echo "   ✅ .gemini/ synchronized ($gemini_skill_count skills [$skill_profile profile] + agents, MCP configured)"
         else
             local gemini_agents
             gemini_agents=$(ls .gemini/agents/*.md 2>/dev/null | wc -l | tr -d ' ')
@@ -483,12 +1216,14 @@ llm-init() {
         fi
         # Sync agents from canonical source (.llm_settings/skills/) into .codex/agents/
         if [ -d "$llm_settings_src/skills" ]; then
+            $dry_run || rm -rf .codex/agents
             $dry_run || mkdir -p .codex/agents
             local codex_skill_count=0
             for skill_dir in "$llm_settings_src/skills"/*/; do
                 local skill_name
                 skill_name=$(basename "$skill_dir")
                 if [ -f "$skill_dir/SKILL.md" ]; then
+                    _llm_init_skill_allowed "$skill_name" "$skill_profile" "$llm_settings_src" || continue
                     $dry_run || cp "$skill_dir/SKILL.md" ".codex/agents/$skill_name.md"
                     ((codex_skill_count++))
                 fi
@@ -500,7 +1235,7 @@ llm-init() {
                     $dry_run || cp "$agent_file" ".codex/agents/$(basename "$agent_file")"
                 done
             fi
-            echo "   ✅ .codex/ synchronized ($codex_skill_count skills + agents from .llm_settings/, MCP configured)"
+            echo "   ✅ .codex/ synchronized ($codex_skill_count skills [$skill_profile profile] + agents, MCP configured)"
         else
             local codex_agents
             codex_agents=$(ls .codex/agents/*.md 2>/dev/null | wc -l | tr -d ' ')
@@ -515,6 +1250,14 @@ llm-init() {
         echo "   ✅ AGENTS.md synchronized"
     else
         echo "   ⚠️  AGENTS.md not found in source"
+    fi
+
+    # Deploy ORCHESTRATOR.md to .gemini/ and .codex/ for workflow parity
+    if [ -f "$source_dir/.claude/ORCHESTRATOR.md" ]; then
+        $dry_run || cp "$source_dir/.claude/ORCHESTRATOR.md" ".gemini/ORCHESTRATOR.md"
+        echo "   ✅ .gemini/ORCHESTRATOR.md deployed"
+        $dry_run || cp "$source_dir/.claude/ORCHESTRATOR.md" ".codex/ORCHESTRATOR.md"
+        echo "   ✅ .codex/ORCHESTRATOR.md deployed"
     fi
     echo ""
 
@@ -546,8 +1289,8 @@ llm-init() {
 
     # 5. MCP Configuration
     echo "5️⃣  MCP Servers"
-    if [ -f "$source_dir/.mcp.json" ]; then
-        rsync -a $rsync_dry "$source_dir/.mcp.json" .
+    if [ -n "$llm_settings_src" ] && [ -f "$llm_settings_src/.mcp.json" ]; then
+        rsync -a $rsync_dry "$llm_settings_src/.mcp.json" .
         # Patch hardcoded macOS paths after sync (skip in dry-run)
         if ! $dry_run && [ -f ".mcp.json" ] && [ -n "$uvx_path" ]; then
             sed -i.bak \
@@ -555,7 +1298,13 @@ llm-init() {
                 -e "s|/opt/homebrew/bin/npx|${npx_path:-/opt/homebrew/bin/npx}|g" \
                 -e "s|/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin|$mcp_path|g" \
                 .mcp.json
-            rm -f .mcp.json.bak
+            # Validate JSON after sed patching
+            if command -v jq >/dev/null 2>&1 && ! jq empty .mcp.json 2>/dev/null; then
+                echo "   ❌ Path patching corrupted .mcp.json — restoring backup" >&2
+                mv .mcp.json.bak .mcp.json
+            else
+                rm -f .mcp.json.bak
+            fi
         fi
         echo "   ✅ .mcp.json synchronized"
     else
@@ -581,6 +1330,10 @@ llm-init() {
             --filter='protect .env.*' \
             --filter='protect .llm_env' \
             --filter='protect *.local.*' \
+            --filter='exclude repo-tenants' \
+            --filter='protect repo-tenants' \
+            --filter='exclude repo-mcp-servers' \
+            --filter='protect repo-mcp-servers' \
             --exclude='.DS_Store' \
             --exclude='.cache/' \
             --exclude='tmp/' \
@@ -604,9 +1357,71 @@ llm-init() {
         if ! $dry_run; then
             find .llm_settings/scripts -type f -name '*.sh' -exec chmod +x {} \; 2>/dev/null || true
             find .llm_settings/git-hooks -type f -exec chmod +x {} \; 2>/dev/null || true
+            find .llm_settings/mcp-servers -type f -name '*.sh' -exec chmod +x {} \; 2>/dev/null || true
         fi
 
         echo "   ✅ .llm_settings/ synchronized (secrets preserved, scripts executable)"
+
+        # ── Env file deployment (--env flag) ──────────────────────────
+        if [[ -n "${env_store:-}" ]]; then
+            local env_src="$env_store/mcp-servers"
+            echo ""
+            echo "🔑 Deploying .env files from: $env_src"
+
+            if [[ -d "$env_src" ]]; then
+                local _env_deployed=0 _env_missing=0
+                local -a _env_paths=()
+
+                if [[ ${#mcp_servers[@]} -gt 0 ]]; then
+                    # Scoped to selected MCP servers
+                    for _srv in "${mcp_servers[@]}"; do
+                        case "$_srv" in
+                            github)                _env_paths+=("github/default") ;;
+                            github-idallasj)       _env_paths+=("github/idallasj") ;;
+                            github-fluence)        _env_paths+=("github/fluence") ;;
+                            github-agentshroud)    _env_paths+=("github/agentshroud") ;;
+                            atlassian-fluence)     _env_paths+=("atlassian/fluence") ;;
+                            atlassian-agentshroud) _env_paths+=("atlassian/agentshroud") ;;
+                            atlassian-idallasj)    _env_paths+=("atlassian/idallasj") ;;
+                            home-assistant)        _env_paths+=("home-assistant") ;;
+                            devonthink)            _env_paths+=("devonthink") ;;
+                            # aws, xmind, safari have no credentials — skip silently
+                        esac
+                    done
+                else
+                    # No --mcp filter: deploy all .env files in store
+                    while IFS= read -r -d '' _src_env; do
+                        local _rel="${_src_env#"$env_src/"}"
+                        _env_paths+=("$(dirname "$_rel")")
+                    done < <(find "$env_src" -name ".env" -type f -print0 2>/dev/null | sort -z)
+                fi
+
+                for _rel_dir in "${_env_paths[@]}"; do
+                    local _src_env="$env_src/$_rel_dir/.env"
+                    local _dest=".llm_settings/mcp-servers/$_rel_dir/.env"
+                    local _dest_dir=".llm_settings/mcp-servers/$_rel_dir"
+
+                    if [[ ! -f "$_src_env" ]]; then
+                        echo "   ⚠️  Not in store (skipped): $_rel_dir/.env"
+                        ((_env_missing++)) || true
+                        continue
+                    fi
+
+                    if ! $dry_run; then
+                        mkdir -p "$_dest_dir"
+                        cp "$_src_env" "$_dest"
+                        chmod 600 "$_dest"
+                    fi
+                    echo "   ${dry_run:+(dry-run) }✅ Deployed: $_rel_dir/.env"
+                    ((_env_deployed++)) || true
+                done
+
+                echo "   Deployed: $_env_deployed | Not in store (skipped): $_env_missing"
+            else
+                echo "   ⚠️  Secrets store not found: $env_src"
+                echo "      Run: .llm_settings/scripts/security/setup-env-store.sh"
+            fi
+        fi
     else
         echo "   ⚠️  .llm_settings/ directory not found in source"
     fi
@@ -723,12 +1538,23 @@ llm-init() {
                 pre-commit install --install-hooks 2>/dev/null || pre-commit install
 
                 # Create secrets baseline if detect-secrets is configured
+                # The deployed .pre-commit-config.yaml passes --baseline .secrets.baseline,
+                # so the file MUST exist or the detect-secrets hook fails on every commit.
                 if grep -q "detect-secrets" ".pre-commit-config.yaml" 2>/dev/null; then
-                    if command -v detect-secrets &> /dev/null; then
-                        if [ ! -f ".secrets.baseline" ]; then
-                            echo "   📊 Creating secrets baseline..."
+                    if [ ! -f ".secrets.baseline" ]; then
+                        echo "   📊 Creating secrets baseline..."
+                        if command -v detect-secrets &> /dev/null; then
                             detect-secrets scan > .secrets.baseline 2>/dev/null || true
+                        else
+                            python3 -m detect_secrets scan > .secrets.baseline 2>/dev/null || true
+                        fi
+                        if [ -s ".secrets.baseline" ]; then
                             echo "   ✅ .secrets.baseline created"
+                        else
+                            rm -f .secrets.baseline
+                            echo "   ⚠️  detect-secrets CLI not available — .secrets.baseline NOT created."
+                            echo "      The detect-secrets pre-commit hook will fail until you run:"
+                            echo "      pipx install detect-secrets && detect-secrets scan > .secrets.baseline"
                         fi
                     fi
                 fi
@@ -752,8 +1578,12 @@ llm-init() {
                     echo "   ℹ️  [dry-run] Would install fallback git hooks"
                 else
                     chmod +x .llm_settings/git-hooks/install.sh
-                    .llm_settings/git-hooks/install.sh
-                    echo "   ✅ Fallback git hooks installed"
+                    # Run in current directory context (ensure .git is visible)
+                    if (cd "$(pwd)" && .llm_settings/git-hooks/install.sh 2>&1); then
+                        echo "   ✅ Fallback git hooks installed"
+                    else
+                        echo "   ⚠️  Fallback hook installation failed (not a git repo)"
+                    fi
                 fi
             else
                 echo "   ⚠️  Git hooks installer not found"
@@ -823,7 +1653,7 @@ llm-init() {
     echo "   - CLAUDE.md                     (primary developer context)"
     echo "   - AGENTS.md                     (secondary/tertiary agent context)"
     echo "   - .llm_settings/                 (organized LLM configuration)"
-    echo "     ├── agents/                   (52 flat agents — all CLIs)"
+    echo "     ├── agents/                   (real subagent definitions — all CLIs)"
     echo "     ├── ci-cd/                    (CI/CD pipeline definitions)"
     echo "     ├── docs/                     (documentation files)"
     echo "     ├── env/                      (environment templates)"
@@ -832,10 +1662,8 @@ llm-init() {
     echo "     ├── podcast/                  (podcast pipeline definitions)"
     echo "     ├── scripts/                  (deployment & security scripts)"
     echo "     │   ├── llm-init.sh"
-    echo "     │   ├── ci_self_heal.sh"
-    echo "     │   ├── run_agents.sh"
     echo "     │   └── security/             (direnv, pgpass, audit)"
-    echo "     ├── skills/                   (54 skill definitions — all CLIs)"
+    echo "     ├── skills/                   (58 skill definitions — all CLIs)"
     echo "     ├── sre/                      (SRE runbooks and definitions)"
     echo "     ├── templates/                (.gitignore, pre-commit, .gitallowed)"
     echo "     └── WORKFLOW.md               (multi-agent workflow guide)"
@@ -847,7 +1675,10 @@ llm-init() {
     echo "   4. 🔌 MCP GitHub: cp .llm_settings/mcp-servers/github/.env.example .env"
     echo "   5. 🔌 MCP User: .llm_settings/scripts/setup-mcp-user.sh (global config)"
     echo "   6. ☁️  AWS: export AWS_PROFILE=default AWS_REGION=us-east-1"
-    echo "   7. 🤖 Test tools:"
+    echo "   7. 🏠 Home Assistant MCP: export HA_TOKEN=<long-lived-access-token>"
+    echo "      (Settings → Security → Long-Lived Access Tokens → Create Token)"
+    echo "      Optional: export HA_BASE_URL=http://homeassistant.local:8123"
+    echo "   8. 🤖 Test tools:"
     echo "      - claude      (PRIMARY developer)"
     echo "      - gemini      (SECONDARY agent)"
     echo "      - codex       (TERTIARY agent)"
@@ -858,9 +1689,12 @@ llm-init() {
     echo "   - Atlassian       (.llm_settings/mcp-servers/atlassian/)"
     echo "   - AWS API         (via uvx awslabs.aws-api-mcp-server)"
     echo "   - XMind Generator (via npx xmind-generator-mcp)"
+    echo "   - Safari          (via npx safari-mcp)"
+    echo "   - Home Assistant  (.llm_settings/mcp-servers/home-assistant/)"
     echo ""
     echo "   📝 Project-level: .mcp.json (works in this repo only)"
     echo "   💡 User-level: Run setup-mcp-user.sh to enable 'claude mcp list'"
+    echo "   🔧 Select servers per-repo: llm-init --mcp <server> [--mcp <server>]... ."
     echo ""
 
     # Offer to configure user-level MCP servers
@@ -881,6 +1715,12 @@ llm-init() {
             fi
         fi
     fi
+
+    # Apply MCP server filtering after all rsync operations
+    echo ""
+    echo "🎛️  Applying MCP server filtering..."
+    _llm_init_render_mcp "$dry_run"
+    echo ""
 
     # Security status
     echo "🔒 Security features installed:"
@@ -931,8 +1771,12 @@ llm-init() {
 # Export function if script is sourced
 if [[ "${BASH_SOURCE[0]}" != "${0}" ]]; then
     export -f llm-init
+    export -f _llm_init_render_mcp
     echo "✅ llm-init function loaded"
-    echo "   Usage: llm-init [--dry-run] [target_directory]"
+    echo "   Usage: llm-init [--dry-run] [--mcp <server>]... [--skills <profile>] [target_directory]"
+    echo "   MCP servers: github | aws | xmind | safari | home-assistant | devonthink |"
+    echo "                atlassian-fluence | atlassian-agentshroud | atlassian-idallasj | all"
+    echo "   Run: llm-init --help for full usage"
 fi
 
 # If script is executed (not sourced), run the function

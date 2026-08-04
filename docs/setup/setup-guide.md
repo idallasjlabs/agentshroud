@@ -142,7 +142,7 @@ containers info
 # Start AgentShroud
 containers compose -f docker/docker-compose.yml up -d
 
-# Check status  
+# Check status
 containers compose -f docker/docker-compose.yml ps
 ```
 
@@ -208,7 +208,7 @@ Set `AGENTSHROUD_SECRET_BACKEND=1password` (or install the `op` CLI so auto-dete
    ```bash
    # Create secrets directory
    mkdir -p secrets
-   
+
    # Save service account token (replace with your token)
    echo "ops_eyJhbGc..." > secrets/1password_service_account
    chmod 600 secrets/1password_service_account
@@ -218,7 +218,7 @@ Set `AGENTSHROUD_SECRET_BACKEND=1password` (or install the `op` CLI so auto-dete
    ```bash
    # Export token for CLI
    export OP_SERVICE_ACCOUNT_TOKEN=$(cat secrets/1password_service_account)
-   
+
    # Test access (requires op CLI)
    op vault list
    op item list --vault "AgentShroud Bot Credentials"
@@ -272,7 +272,7 @@ Internet → AgentShroud Gateway → OpenClaw → AI Models
          Security Filtering  AI Assistant
 ```
 
-**Benefits**: 
+**Benefits**:
 - Complete traffic inspection
 - Centralized policy enforcement
 - Easy monitoring and logging
@@ -450,7 +450,7 @@ Service accounts can only access vaults they're explicitly granted access to:
 3. **Add your secrets** to this vault:
    ```
    OpenAI API Key → item name: "OpenAI - GPT API"
-   Anthropic API Key → item name: "Anthropic - Claude API"  
+   Anthropic API Key → item name: "Anthropic - Claude API"
    Brave Search API → item name: "Brave Search API"
    Gmail App Password → item name: "Gmail - AgentShroud Bot"
    ```
@@ -469,7 +469,7 @@ Service accounts can only access vaults they're explicitly granted access to:
    secrets:
      1password_service_account:
        file: ./secrets/1password_service_account
-   
+
    services:
      agentshroud-gateway:
        secrets:
@@ -512,7 +512,7 @@ alerts:
   enabled: true
   webhook_url: "https://hooks.slack.com/..."
   channels: ["security", "alerts"]
-  
+
   # Alert on these events
   triggers:
     - suspicious_prompts
@@ -525,19 +525,19 @@ trust_levels:
   localhost: high
   internal_network: medium
   internet: low
-  
+
 # Rate limiting
 rate_limits:
   global: 1000  # requests per minute
   per_ip: 100
   per_user: 50
-  
+
 # Audit logging
 audit:
   enabled: true
   retention_days: 90
   tamper_detection: true
-  
+
 # Security modules (all enabled by default)
 modules:
   egress_filter: true
@@ -556,12 +556,12 @@ allowed_domains:
   - "api.openai.com"
   - "api.anthropic.com"
   - "generativelanguage.googleapis.com"
-  
+
   # Search and data
   - "search.brave.com"
   - "api.github.com"
   - "httpbin.org"  # for testing
-  
+
 # Blocked patterns
 blocked_patterns:
   - "*.internal"
@@ -569,13 +569,13 @@ blocked_patterns:
   - "127.0.0.1"
   - "192.168.*"
   - "10.*"
-  
+
 # Rate limits per domain
 domain_limits:
   "api.openai.com": 200  # req/min
   "api.anthropic.com": 100
   "*": 50  # default for unlisted domains
-  
+
 # Content filtering
 content_filters:
   - block_large_files: 10MB
@@ -594,19 +594,19 @@ servers:
     permissions:
       read: true
       write: false  # read-only for safety
-      
+
   github:
     command: ["npx", "-y", "@modelcontextprotocol/server-github"]
     permissions:
       read: true
       issues: false  # no issue creation
-      
+
   slack:
     command: ["npx", "-y", "@modelcontextprotocol/server-slack"]
     permissions:
       read: true
       send: false  # no message sending
-      
+
 # Global MCP settings
 settings:
   timeout: 30000  # 30 seconds
@@ -692,7 +692,7 @@ AGENTSHROUD_PORT_OFFSET=200 docker compose -f docker-compose.sidecar.yml up -d
 
 Result:
 - **Production**: 8080, 8443, 3000 (Docker)
-- **Development**: 8180, 8543, 3100 (Apple Containers)  
+- **Development**: 8180, 8543, 3100 (Apple Containers)
 - **Testing**: 8280, 8643, 3200 (Docker, sidecar mode)
 
 ### Environment Variables
@@ -926,7 +926,7 @@ curl -s http://localhost:8080/health | jq '.'
   "status": "healthy",
   "modules": {
     "egress_filter": "active",
-    "message_scanner": "active", 
+    "message_scanner": "active",
     "rate_limiter": "active",
     "audit_logger": "active",
     "input_validator": "active",
@@ -1010,7 +1010,7 @@ Before going to production, verify:
 
 - [ ] All 75 security modules show "active" status
 - [ ] HTTPS dashboard accessible with valid certificate
-- [ ] Audit logging enabled with tamper detection  
+- [ ] Audit logging enabled with tamper detection
 - [ ] 1Password integration working (no plaintext secrets)
 - [ ] Rate limiting configured appropriately
 - [ ] Egress filtering rules match your requirements
@@ -1027,12 +1027,12 @@ Before going to production, verify:
 With AgentShroud running, you're ready to:
 
 1. **Customize security policies** in `agentshroud.yaml`
-2. **Add your AI model APIs** via 1Password integration  
+2. **Add your AI model APIs** via 1Password integration
 3. **Set up monitoring** with Prometheus and Grafana
 4. **Configure alerts** to Slack or email
 5. **Scale to multiple instances** for high availability
 
-For advanced configuration, see the [Configuration Guide](configuration-guide.md).  
+For advanced configuration, see the [Configuration Guide](configuration-guide.md).
 For troubleshooting, join our [Discord community](https://discord.gg/agentshroud).
 
 **Questions?** File an issue at https://github.com/idallasjlabs/agentshroud/issues

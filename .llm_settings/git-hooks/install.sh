@@ -29,7 +29,7 @@ if [ "$1" == "--global" ]; then
     echo ""
     echo "To apply to existing repos, run:"
     echo "   cd <repo> && git init"
-    
+
 elif [ -d ".git" ]; then
     # Install to current repo
     echo "📦 Installing hooks to current repository..."
@@ -44,7 +44,7 @@ elif [ -d ".git" ]; then
     fi
 
     echo "✅ Pre-commit hook installed to $(pwd)/.git/hooks/"
-    
+
     # Optionally set up git-secrets
     if command -v git &> /dev/null && command -v git-secrets &> /dev/null; then
         read -p "Configure git-secrets for AWS patterns? [y/N] " -n 1 -r

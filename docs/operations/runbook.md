@@ -181,7 +181,7 @@ curl -s http://localhost:9090/metrics | grep agentshroud
 
 # Key metrics to monitor:
 # agentshroud_requests_total
-# agentshroud_blocks_total  
+# agentshroud_blocks_total
 # agentshroud_trust_level_changes
 # agentshroud_response_time_seconds
 # agentshroud_audit_chain_length
@@ -200,9 +200,9 @@ docker compose exec agentshroud sqlite3 /data/agentshroud.db
 # Recent audit entries
 .mode column
 .headers on
-SELECT id, timestamp, agent_id, threat_level, direction 
-FROM audit_entries 
-ORDER BY timestamp DESC 
+SELECT id, timestamp, agent_id, threat_level, direction
+FROM audit_entries
+ORDER BY timestamp DESC
 LIMIT 20;
 
 # MCP audit entries
@@ -621,7 +621,7 @@ free -h
 
 # 2. Check audit table size
 docker compose exec agentshroud sqlite3 /data/agentshroud.db \
-  "SELECT COUNT(*) as entries, 
+  "SELECT COUNT(*) as entries,
           SUM(LENGTH(content)) as content_bytes,
           MAX(timestamp) as latest_entry
    FROM audit_entries;"

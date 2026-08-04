@@ -15,31 +15,31 @@
   --navy: #0a2540;
   --steel: #3a7bd5;
   --ice: #b3d9ff;
-  
+
   /* Semantic Colors */
   --success: #22c55e;
   --warning: #f59e0b;
   --alert: #ef4444;
   --info: #a78bfa;
-  
+
   /* Dark Theme (Default) */
   --bg-void: #08090b;
   --bg-abyss: #0f1219;
   --bg-cavern: #161c27;
   --bg-chamber: #1e2535;
-  
+
   --text-primary: #e2e8f0;
   --text-secondary: #94a3b8;
   --text-muted: #546280;
-  
+
   --border: #232b3d;
   --border-bright: #2e3a50;
-  
+
   /* Light Theme Override */
   --bg-light: #ffffff;
   --text-light: #1a1a1a;
   --border-light: #e0e0e0;
-  
+
   /* Layout */
   --radius: 8px;
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
@@ -57,10 +57,10 @@ body {
 
 /* Text Browsers: Ensure good contrast and readability */
 @media screen and (max-device-width: 1px) {
-  body { 
-    background: white; 
-    color: black; 
-    font-family: monospace; 
+  body {
+    background: white;
+    color: black;
+    font-family: monospace;
   }
 }
 

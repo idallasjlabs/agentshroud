@@ -1,6 +1,6 @@
 # AgentShroud Session Issue Register — 2026-03-14
 
-**Scope:** Consolidated issues raised during the live Telegram/gateway hardening session.  
+**Scope:** Consolidated issues raised during the live Telegram/gateway hardening session.
 **Purpose:** Track closure status, verification coverage, and residual risk.
 
 ---
@@ -103,9 +103,8 @@
 
 ## Recommended Next Closure Sequence
 
-1. Close no-response + collaborator onboarding reliability (Issues 1,2,10,11,16,17).  
-2. Close output leak/flicker atomic suppression (Issues 18–20,22,68).  
-3. Close assessment harness contamination/timing/report format (Issues 60,62,63).  
-4. Close memory isolation + collaborator activity correlation (Issues 54–56).  
+1. Close no-response + collaborator onboarding reliability (Issues 1,2,10,11,16,17).
+2. Close output leak/flicker atomic suppression (Issues 18–20,22,68).
+3. Close assessment harness contamination/timing/report format (Issues 60,62,63).
+4. Close memory isolation + collaborator activity correlation (Issues 54–56).
 5. Final manual owner/collaborator acceptance pass with screenshots + report archive.
-

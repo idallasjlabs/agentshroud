@@ -184,43 +184,43 @@ AgentShroud implements a comprehensive audit system with cryptographic integrity
 ```python
 def calculate_chain_hash(block: AuditBlock) -> str:
     """Calculate cryptographic hash for audit block chain"""
-    
+
     # Step 1: Calculate content hash
     content_data = json.dumps({
         "sequence": block.sequence,
         "timestamp": block.timestamp.isoformat(),
         "events": block.events
     }, sort_keys=True, separators=(',', ':'))
-    
+
     content_hash = hashlib.sha256(content_data.encode('utf-8')).hexdigest()
-    
+
     # Step 2: Calculate chain hash
     chain_data = f"{block.previous_hash}:{content_hash}:{block.sequence}:{block.timestamp.isoformat()}"
     chain_hash = hashlib.sha256(chain_data.encode('utf-8')).hexdigest()
-    
+
     return chain_hash
 
 def verify_chain_integrity(blocks: List[AuditBlock]) -> bool:
     """Verify complete audit chain integrity"""
-    
+
     for i, block in enumerate(blocks):
         # Verify content hash
         calculated_content_hash = calculate_content_hash(block)
         if calculated_content_hash != block.content_hash:
             logger.error(f"Content hash mismatch at block {block.sequence}")
             return False
-        
+
         # Verify chain linkage
         if i > 0:
             if block.previous_hash != blocks[i-1].chain_hash:
                 logger.error(f"Chain linkage broken at block {block.sequence}")
                 return False
-        
+
         # Verify digital signature
         if not verify_block_signature(block):
             logger.error(f"Signature verification failed at block {block.sequence}")
             return False
-    
+
     return True
 ```
 
@@ -255,7 +255,7 @@ def verify_chain_integrity(blocks: List[AuditBlock]) -> bool:
 #### Tier 1: Critical Security Events (7 Years)
 - Authentication failures and successes
 - Authorization violations
-- Security threats and incidents  
+- Security threats and incidents
 - Privacy regulation compliance events
 - Administrative actions and policy changes
 
@@ -288,19 +288,19 @@ class AuditRetentionManager:
             'DIAGNOSTIC': timedelta(days=365),   # 1 year
             'HIGH_VOLUME': timedelta(days=90)    # 90 days
         }
-    
+
     def archive_expired_events(self):
         """Archive events based on retention policies"""
         for tier, retention_period in self.retention_policies.items():
             cutoff_date = datetime.utcnow() - retention_period
-            
+
             # Move to cold storage
             expired_events = self.query_events_before(cutoff_date, tier)
             self.archive_to_cold_storage(expired_events, tier)
-            
+
             # Update hash chain references
             self.update_chain_metadata(expired_events)
-            
+
             # Compliance notification
             self.notify_compliance_team(tier, len(expired_events))
 ```
@@ -407,17 +407,17 @@ IEC_62443_Mapping:
     - basic_authentication_logging
     - network_segmentation_audit
     - access_control_monitoring
-    
+
   SL2_Protection_Against_Intentional_Violation:
     - failed_authentication_detection
     - authorization_violation_logging
     - security_event_correlation
-    
+
   SL3_Protection_Against_Sophisticated_Attacks:
     - advanced_threat_detection
     - behavioral_anomaly_monitoring
     - cryptographic_integrity_verification
-    
+
   SL4_Protection_Against_State_Sponsored_Attacks:
     - complete_audit_trail_preservation
     - tamper_evident_logging
@@ -430,7 +430,7 @@ Identification_and_Authentication_Control:
   - FR1: All authentication attempts logged
   - FR2: Multi-factor authentication events captured
   - FR3: Session management fully audited
-  
+
 Use_Control:
   - FR1: All resource access attempts logged
   - FR2: Privilege escalation detection
@@ -464,7 +464,7 @@ Data_Confidentiality:
   ],
   "categories_of_personal_data": [
     "IP addresses",
-    "User identifiers", 
+    "User identifiers",
     "Authentication credentials",
     "System access logs"
   ],
@@ -495,12 +495,12 @@ SOX_Section_404_Controls:
     - "AC-001: User access provisioning and deprovisioning"
     - "AC-002: Privileged access management"
     - "AC-003: Segregation of duties enforcement"
-    
+
   Change_Management:
     - "CM-001: Configuration change authorization"
     - "CM-002: Emergency change procedures"
     - "CM-003: Change success validation"
-    
+
   Monitoring_Controls:
     - "MC-001: Continuous security monitoring"
     - "MC-002: Exception reporting and escalation"
@@ -514,15 +514,15 @@ SOX_Section_404_Controls:
 Control_A.12.4.1_Event_Logging:
   implementation: "Complete audit event capture with hash chain integrity"
   evidence: "Daily audit log verification reports"
-  
+
 Control_A.12.4.2_Log_Information_Protection:
   implementation: "Encrypted audit logs with access controls"
   evidence: "Cryptographic integrity verification"
-  
+
 Control_A.12.4.3_Administrator_Logs:
   implementation: "All administrative actions logged and monitored"
   evidence: "Administrative activity reports"
-  
+
 Control_A.12.4.4_Clock_Synchronization:
   implementation: "NTP-synchronized timestamps across all systems"
   evidence: "Time synchronization verification logs"
@@ -537,7 +537,7 @@ Performance_Targets:
   query_response_time: "< 100ms (95th percentile)"
   chain_verification_time: "< 1 second per 1,000 blocks"
   storage_efficiency: "< 500 bytes per event"
-  
+
 Scalability_Limits:
   max_events_per_block: 1000
   max_block_size: "1MB"

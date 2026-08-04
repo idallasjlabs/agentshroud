@@ -10,6 +10,7 @@ Tests for main.py endpoint integration with middleware blocking.
 from __future__ import annotations
 
 import ipaddress
+import time
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
@@ -527,3 +528,42 @@ class TestAlertsLocalhostEnforcement:
 
         result = await receive_security_alert(mock_request)
         assert result["ok"] is True
+
+
+class TestHealthCheckDetailBotsInventory:
+    """health_check_detail's per-bot inventory must key the Docker lookup by
+    each bot's real resolved_container_name — not a hardcoded
+    'agentshroud-{bot_id}' guess that always misses the moment a bot's
+    container is renamed (hermes -> agentshroud-hermes-v2, 2026-07-18),
+    silently reporting a healthy bot as "not found"."""
+
+    @pytest.mark.asyncio
+    async def test_bots_inventory_matches_the_real_container_name(self, monkeypatch):
+        from types import SimpleNamespace
+
+        from gateway.ingest_api.routes import health
+
+        hermes_container = SimpleNamespace(
+            name="agentshroud-hermes-v2",
+            status="Up 2 hours (healthy)",
+            image="agentshroud/hermes:latest",
+        )
+        fake_engine = MagicMock()
+        fake_engine.ps.return_value = [hermes_container]
+
+        fake_bot = SimpleNamespace(resolved_container_name="agentshroud-hermes-v2")
+        fake_state = SimpleNamespace(
+            start_time=time.time(),
+            ledger=SimpleNamespace(get_stats=AsyncMock(return_value={"total": 0})),
+            approval_queue=SimpleNamespace(get_pending=AsyncMock(return_value=[])),
+            config=SimpleNamespace(bots={"hermes": fake_bot}, pii=SimpleNamespace(engine="regex")),
+            sanitizer=SimpleNamespace(get_mode=lambda: "presidio"),
+        )
+        monkeypatch.setattr(health, "app_state", fake_state)
+        monkeypatch.setattr("gateway.runtime.get_engine", lambda: fake_engine)
+
+        result = await health.health_check_detail(auth=None)
+
+        assert result.bots["hermes"]["container"] == "agentshroud-hermes-v2"
+        assert result.bots["hermes"]["healthy"] is True
+        assert result.bots["hermes"]["status"] == "Up 2 hours (healthy)"

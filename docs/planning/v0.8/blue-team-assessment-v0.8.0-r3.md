@@ -1,9 +1,9 @@
 # Blue Team Security Assessment — AgentShroud v0.8.0 Round 3 (Final)
 
-**Date:** 2026-03-05  
-**Branch:** `feat/v0.8.0-enforcement-hardening`  
-**Assessor:** AgentShroud Bot (automated blue team)  
-**Scope:** Final pre-release security gate — verify all prior fixes and conduct fresh assessment  
+**Date:** 2026-03-05
+**Branch:** `feat/v0.8.0-enforcement-hardening`
+**Assessor:** AgentShroud Bot (automated blue team)
+**Scope:** Final pre-release security gate — verify all prior fixes and conduct fresh assessment
 
 ---
 
@@ -90,79 +90,79 @@ exploitable attack vectors in the production deployment model.
 
 #### R3-M1: Missing `aiohttp` Dependency in requirements.txt (Reopened from R2-M1)
 
-**Severity:** MEDIUM  
-**Location:** `gateway/requirements.txt`  
+**Severity:** MEDIUM
+**Location:** `gateway/requirements.txt`
 **Issue:** The Pi-hole DNS management endpoints (`/manage/dns`, `/manage/dns/blocklist`)
 use `import aiohttp` at runtime, but `aiohttp` is not listed in `requirements.txt`.
-A clean install will fail with `ModuleNotFoundError` when these endpoints are called.  
+A clean install will fail with `ModuleNotFoundError` when these endpoints are called.
 **Fix:** Add `aiohttp>=3.9.0,<4.0.0` to `requirements.txt`.
 
 #### R3-M2: Management WebSocket Endpoints Still Use Master Auth Token (Reopened from R2-M2)
 
-**Severity:** MEDIUM  
-**Location:** `gateway/web/api.py` lines 777, 809  
+**Severity:** MEDIUM
+**Location:** `gateway/web/api.py` lines 777, 809
 **Issue:** `/ws/logs` and `/ws/updates` accept the full gateway master auth token
 as a query parameter via `verify_token(token, config.auth_token)`. The dashboard's
 `/ws/activity` was correctly migrated to scoped WS tokens, but these management
-endpoints were not updated.  
+endpoints were not updated.
 **Risk:** Token in query string appears in server logs and browser history. Exposure
-means full API access (not just WebSocket).  
+means full API access (not just WebSocket).
 **Fix:** Add scoped WS token support to these endpoints, mirroring the dashboard pattern.
 
 #### R3-M3: Stale Version String in Root Dashboard HTML
 
-**Severity:** MEDIUM  
-**Location:** `gateway/ingest_api/main.py` line 302  
+**Severity:** MEDIUM
+**Location:** `gateway/ingest_api/main.py` line 302
 **Issue:** The root dashboard HTML displays `Version: 0.5.0` while the actual
 version is `0.8.0`. The FastAPI app metadata (line 142) correctly shows 0.8.0,
-but the HTML template has a hardcoded stale string.  
+but the HTML template has a hardcoded stale string.
 **Risk:** Causes operator confusion about which version is running. Could mask
-a failed upgrade.  
+a failed upgrade.
 **Fix:** Use the app version constant instead of a hardcoded string.
 
 ### LOW Findings
 
 #### R3-L1: No Global Security Headers Middleware (Reopened from R2-L1)
 
-**Severity:** LOW  
-**Location:** `gateway/ingest_api/main.py`  
+**Severity:** LOW
+**Location:** `gateway/ingest_api/main.py`
 **Issue:** Security headers (`X-Content-Type-Options`, `X-Frame-Options`,
 `Cache-Control: no-store`) are only set on the root HTML and dashboard responses.
-API JSON responses lack these headers.  
+API JSON responses lack these headers.
 **Fix:** Add a middleware that sets basic security headers on all responses.
 
 #### R3-L2: WebSocket Connection Leak in ws_logs (Reopened from R2-L2)
 
-**Severity:** LOW  
-**Location:** `gateway/web/api.py` lines 781-799  
+**Severity:** LOW
+**Location:** `gateway/web/api.py` lines 781-799
 **Issue:** `active_websockets` cleanup only happens on `WebSocketDisconnect`.
-Other exceptions (e.g., `ConnectionResetError`) leave stale references.  
+Other exceptions (e.g., `ConnectionResetError`) leave stale references.
 **Fix:** Use `try/finally` for cleanup.
 
 #### R3-L3: OCI Image Version Labels Still Outdated (Reopened from R2-L3)
 
-**Severity:** LOW  
-**Location:** `gateway/Dockerfile` (says "0.7.0"), `docker/Dockerfile.agentshroud` (says "0.2.0")  
-**Issue:** `org.opencontainers.image.version` labels don't match actual version 0.8.0.  
+**Severity:** LOW
+**Location:** `gateway/Dockerfile` (says "0.7.0"), `docker/Dockerfile.agentshroud` (says "0.2.0")
+**Issue:** `org.opencontainers.image.version` labels don't match actual version 0.8.0.
 **Fix:** Update both labels to "0.8.0".
 
 #### R3-L4: Dashboard WS Activity Endpoint Accepts Both Master and Scoped Tokens
 
-**Severity:** LOW  
-**Location:** `gateway/ingest_api/routes/dashboard.py` line 211  
+**Severity:** LOW
+**Location:** `gateway/ingest_api/routes/dashboard.py` line 211
 **Issue:** The `/ws/activity` WebSocket endpoint accepts both scoped `ws_` tokens
 AND the master `auth_token` as a fallback. While functional, this partially
 undermines the purpose of scoped tokens — an XSS payload could still try the
-master token directly.  
+master token directly.
 **Fix:** Remove master token fallback; only accept scoped WS tokens.
 
 #### R3-L5: Backup Files Contain Pre-Hardening Code
 
-**Severity:** LOW  
-**Location:** `gateway/ingest_api/main.py.backup`, `gateway/ingest_api/main.py.backup.refactor`  
+**Severity:** LOW
+**Location:** `gateway/ingest_api/main.py.backup`, `gateway/ingest_api/main.py.backup.refactor`
 **Issue:** Backup files contain pre-hardening code with `unsafe-inline` CSP,
 missing auth on endpoints, and hardcoded IDs. If accidentally deployed or
-included in a build context, they could introduce regressions.  
+included in a build context, they could introduce regressions.
 **Fix:** Remove backup files from the repository, or add them to `.dockerignore`.
 
 ---

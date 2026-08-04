@@ -8,7 +8,7 @@
 ## Part 1: Test Telegram Bot
 
 ### ✅ Current Status
-- Bot: **@agentshroud.ai_bot** 
+- Bot: **@agentshroud.ai_bot**
 - Status: **Running** (confirmed in logs)
 - Token: Configured
 - Pairing: Ready

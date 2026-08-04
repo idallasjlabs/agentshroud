@@ -66,16 +66,14 @@ mypy .
 pytest --cov=. --cov-report=term-missing
 ```
 
-### AgentShroud-Specific Checks
+### Data Pipeline Validation
 ```bash
-# Smoke tests (requires deployed stack)
-bash scripts/smoke.sh
+# Stage 1/2 validation checks
+# (Specific commands depend on pipeline structure)
 
-# Post-deploy dashboard and health check
-bash scripts/post-deploy-check.sh
-
-# Secret-leak gate (filter pipeline)
-pytest gateway/tests/ -k 'keyleak or keyvault or secret' -v
+# Schema validation
+# Partition correctness check
+# Data quality verification
 ```
 
 ## Report Format
@@ -124,24 +122,21 @@ Next steps:
 
 ## Repository Context
 
-This repository implements **AgentShroud** — a Python/FastAPI AI-gateway security platform
-with outbound PII/secret filtering, multi-bot orchestration (OpenClaw + Hermes), and a
-Docker Compose production stack.
+This repository implements a **Data Lakehouse platform** for distributed energy storage systems.
 
 **Key Validation Points:**
-- Gateway proxy correctness (routing, auth, error handling)
-- Outbound filter pipeline integrity (PII/secret detection pass-through and block)
-- Docker secret injection and environment variable correctness
-- Smoke-test + post-deploy health check coverage
+- Data extraction correctness
+- Schema stability
+- Partition correctness
+- Backward compatibility
 
 ## Environment Setup
 
 ```bash
-# Run tests via Docker (production-aligned)
-docker exec agentshroud-gateway python -m pytest gateway/tests/ -q
+# Activate conda environment
+conda activate gsdl
 
-# Or locally with a Python 3.11+ virtualenv
-cd gateway && pip install -e ".[test]"
+# Verify environment
 python --version
 pytest --version
 ```
@@ -172,11 +167,11 @@ pytest --cov=. --cov-report=html
 pytest && ruff check . && black --check . && mypy .
 ```
 
-### AgentShroud Stack Validation
+### Data Validation
 ```bash
-# Full stack health (requires running Docker stack)
-curl -s http://localhost:8080/status
-bash scripts/smoke.sh
+# Stage validation (example - adjust to actual commands)
+# python scripts/validate_stage1.py --date 2024-01-01
+# python scripts/check_partitions.py --array ARRAY_NAME
 ```
 
 ## Error Handling

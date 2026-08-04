@@ -12,7 +12,7 @@ Secure, audited browser automation using Playwright with enterprise-grade securi
 **"One Claw Tied Behind Your Back"** - The bot can perform powerful browser actions, but only within strict security boundaries:
 
 1. **URL Allowlisting**: Only approved domains accessible
-2. **Approval Queue**: High-risk actions require explicit approval  
+2. **Approval Queue**: High-risk actions require explicit approval
 3. **Audit Logging**: Every action logged to ledger
 4. **Sandboxed Contexts**: Isolated browser contexts per task
 5. **No Credential Extraction**: Cannot extract passwords/tokens from pages
@@ -102,12 +102,12 @@ security:
     - "account.apple.com"
     - "appleid.apple.com"
     # Add more trusted domains as needed
-  
+
   url_blocklist:
     - "*.onion"
     - "*.torproject.org"
     # Explicitly blocked domains
-  
+
   approval_required:
     - action: "fill_form"
       patterns: ["password", "credit_card", "ssn"]
@@ -115,16 +115,16 @@ security:
       patterns: ["delete", "remove", "cancel_subscription"]
     - action: "execute_javascript"
       always: true
-  
+
   rate_limits:
     requests_per_minute: 30
     requests_per_hour: 500
-  
+
   audit:
     log_all_actions: true
     save_screenshots: true
     screenshot_dir: "/home/node/.openclaw/audit/screenshots"
-  
+
   browser:
     headless: true
     timeout: 30000
@@ -283,20 +283,20 @@ async def execute_browser_action(request: BrowserRequest):
     # Validate URL against allowlist
     if not await validate_url(request.url):
         raise SecurityError("URL not in allowlist")
-    
+
     # Check risk level
     risk = classify_action(request.action)
-    
+
     # Request approval if needed
     if risk == "HIGH":
         approved = await approval_queue.request(request)
         if not approved:
             raise SecurityError("Action denied")
-    
+
     # Execute and log
     result = await securebrowser.execute(request)
     await ledger.record(result)
-    
+
     return result
 ```
 

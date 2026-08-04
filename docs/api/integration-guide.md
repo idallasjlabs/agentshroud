@@ -266,7 +266,7 @@ Configure MCP servers to connect through AgentShroud:
         },
         {
           "name": "web_search",
-          "endpoint": "http://mcp-search:3002", 
+          "endpoint": "http://mcp-search:3002",
           "permissions": ["search"],
           "trust_required": 2
         }
@@ -559,7 +559,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Start AgentShroud
         run: |
           docker run -d --name agentshroud \
@@ -567,14 +567,14 @@ jobs:
             -e SECURITY_LEVEL=enforce \
             -e TEST_MODE=true \
             agentshroud:latest
-          
+
           # Wait for startup
           timeout 60 bash -c 'until curl -f http://localhost:8443/health; do sleep 5; done'
 
       - name: Run Security Tests
         run: |
           npm test -- --testNamePattern="security"
-          
+
       - name: Security Scan
         run: |
           docker run --rm --network host \
@@ -588,7 +588,7 @@ jobs:
         run: |
           curl -H "Authorization: Bearer ${{ secrets.TEST_TOKEN }}" \
             http://localhost:8443/api/v1/audit > audit-logs.json
-            
+
       - name: Upload Test Results
         uses: actions/upload-artifact@v3
         if: always()
@@ -618,16 +618,16 @@ jobs:
           # Deploy AgentShroud first
           kubectl apply -f k8s/agentshroud/
           kubectl wait --for=condition=ready pod -l app=agentshroud
-          
+
           # Deploy application behind AgentShroud
           kubectl apply -f k8s/app/
-          
+
       - name: Verify Security Integration
         run: |
           # Test security endpoints
           kubectl port-forward svc/agentshroud 8443:8443 &
           sleep 10
-          
+
           curl -f http://localhost:8443/health
           curl -f http://localhost:8443/api/v1/version
 ```

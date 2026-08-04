@@ -23,7 +23,6 @@ from security.token_validation import (
     ScopeViolation,
     TokenError,
     TokenExpiredError,
-    TokenValidationResult,
     TokenValidator,
 )
 

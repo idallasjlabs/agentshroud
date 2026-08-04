@@ -660,4 +660,3 @@ if [ -f "${SSH_CONFIG_SRC}" ]; then
 else
   echo "[init] ⚠ SSH config defaults not found — skipping"
 fi
-

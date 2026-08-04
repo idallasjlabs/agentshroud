@@ -763,15 +763,15 @@ body{
       '<strong>' + data.active + '</strong> active · ' +
       '<strong>' + data.loaded + '</strong> loaded · ' +
       '<strong>' + data.unavailable + '</strong> unavailable';
-    
+
     var grid = document.getElementById('modulesGrid');
     grid.innerHTML = '';
-    
+
     var entries = Object.entries(data.modules).sort(function(a,b){
       var tierOrder = {P0:0,P1:1,P2:2,P3:3};
       return (tierOrder[a[1].tier]||9) - (tierOrder[b[1].tier]||9);
     });
-    
+
     entries.forEach(function(entry) {
       var name = entry[0];
       var mod = entry[1];

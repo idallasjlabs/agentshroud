@@ -275,7 +275,8 @@ class TestMCPProxyConfigLoading:
         from gateway.ingest_api.config import load_config
 
         config_file = tmp_path / "agentshroud.yaml"
-        config_file.write_text("""
+        config_file.write_text(
+            """
 gateway:
   bind: "127.0.0.1"
   port: 8080
@@ -292,7 +293,8 @@ mcp_proxy:
       tools:
         get_file_contents:
           permission_level: read
-""")
+"""
+        )
         cfg = load_config(config_file)
         assert cfg.mcp_proxy_data != {}
         assert cfg.mcp_proxy_data["enabled"] is True
@@ -304,14 +306,16 @@ mcp_proxy:
         from gateway.ingest_api.config import load_config
 
         config_file = tmp_path / "agentshroud.yaml"
-        config_file.write_text("""
+        config_file.write_text(
+            """
 gateway:
   bind: "127.0.0.1"
   port: 8080
   auth_token: "test-token"
 security:
   pii_redaction: false
-""")
+"""
+        )
         cfg = load_config(config_file)
         assert cfg.mcp_proxy_data == {}
 
@@ -320,7 +324,8 @@ security:
         from gateway.ingest_api.config import load_config
 
         config_file = tmp_path / "agentshroud.yaml"
-        config_file.write_text("""
+        config_file.write_text(
+            """
 gateway:
   bind: "127.0.0.1"
   port: 8080
@@ -332,7 +337,8 @@ proxy:
     - api.openai.com
     - api.anthropic.com
     - "*.github.com"
-""")
+"""
+        )
         cfg = load_config(config_file)
         assert "api.openai.com" in cfg.proxy_allowed_domains
         assert "*.github.com" in cfg.proxy_allowed_domains
@@ -342,13 +348,15 @@ proxy:
         from gateway.ingest_api.config import load_config
 
         config_file = tmp_path / "agentshroud.yaml"
-        config_file.write_text("""
+        config_file.write_text(
+            """
 gateway:
   bind: "127.0.0.1"
   port: 8080
   auth_token: "test-token"
 security:
   pii_redaction: false
-""")
+"""
+        )
         cfg = load_config(config_file)
         assert cfg.proxy_allowed_domains == []

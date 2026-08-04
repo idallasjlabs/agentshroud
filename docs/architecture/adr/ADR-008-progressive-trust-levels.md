@@ -20,7 +20,7 @@ Implement **Progressive Trust Level System** with behavioral adaptation:
 
 ### Trust Calculation
 ```python
-trust_score = base_score 
+trust_score = base_score
             + behavioral_history_score
             + compliance_score
             - security_violations_penalty
@@ -30,7 +30,7 @@ trust_score = base_score
 ### Progressive Controls
 ```
 Level 0: All actions → Approval Queue
-Level 1: High-risk actions → Approval Queue  
+Level 1: High-risk actions → Approval Queue
 Level 2: Suspicious actions → Approval Queue
 Level 3: Clear threats only → Block
 Level 4: Monitor only → Log everything

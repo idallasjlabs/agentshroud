@@ -5,9 +5,12 @@ echo "🔍 Scanning for secrets..."
 
 # Check if gitleaks is installed
 if command -v gitleaks &> /dev/null; then
-    #gitleaks protect --verbose --redact --staged
-    gitleaks protect --staged --config=gitleaks.toml
-    if [ $? -eq 1 ]; then
+    if [ -f gitleaks.toml ]; then
+        GITLEAKS_ARGS=(--config=gitleaks.toml)
+    else
+        GITLEAKS_ARGS=()
+    fi
+    if ! gitleaks protect --staged "${GITLEAKS_ARGS[@]}"; then
         echo "❌ SECRETS DETECTED! Commit blocked by gitleaks."
         exit 1
     fi
@@ -20,9 +23,8 @@ else
 fi
 
 # Check if git-secrets is installed
-if command -v git secrets &> /dev/null; then
-    git secrets --pre_commit_hook -- "$@"
-    if [ $? -eq 1 ]; then
+if command -v git-secrets &> /dev/null; then
+    if ! git secrets --pre_commit_hook -- "$@"; then
         echo "❌ SECRETS DETECTED! Commit blocked by git-secrets."
         exit 1
     fi

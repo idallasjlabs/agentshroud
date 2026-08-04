@@ -81,12 +81,12 @@ async def health_check_detail(auth: AuthRequired):
     bots_inventory: dict = {}
     if hasattr(app_state, "config") and app_state.config.bots:
         try:
-            from ..runtime import get_engine as _get_engine_fn
+            from ...runtime import get_engine as _get_engine_fn
 
             _eng = _get_engine_fn()
             _containers = {c.name: c for c in _eng.ps(all=True)}
-            for bot_id in app_state.config.bots:
-                cname = f"agentshroud-{bot_id}"
+            for bot_id, _bot_cfg in app_state.config.bots.items():
+                cname = _bot_cfg.resolved_container_name
                 cinfo = _containers.get(cname)
                 bots_inventory[bot_id] = {
                     "container": cname,

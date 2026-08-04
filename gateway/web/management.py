@@ -50,7 +50,8 @@ async def dashboard_main():
 async def approvals():
     """Serve the approval queue page."""
     # For now, return a simple page - will be enhanced later
-    return HTMLResponse("""
+    return HTMLResponse(
+        """
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -78,13 +79,15 @@ async def approvals():
         </main>
     </body>
     </html>
-    """)
+    """
+    )
 
 
 @router.get("/dashboard/modules", response_class=HTMLResponse)
 async def modules():
     """Serve the security modules page (dynamic — fetches live data)."""
-    return HTMLResponse("""<!DOCTYPE html>
+    return HTMLResponse(
+        """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -235,13 +238,15 @@ async def modules():
 })();
 </script>
 </body>
-</html>""")
+</html>"""
+    )
 
 
 @router.get("/dashboard/audit", response_class=HTMLResponse)
 async def audit():
     """Serve the audit log page."""
-    return HTMLResponse("""
+    return HTMLResponse(
+        """
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -269,13 +274,15 @@ async def audit():
         </main>
     </body>
     </html>
-    """)
+    """
+    )
 
 
 @router.get("/dashboard/ssh", response_class=HTMLResponse)
 async def ssh():
     """Serve the SSH hosts page."""
-    return HTMLResponse("""
+    return HTMLResponse(
+        """
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -303,13 +310,15 @@ async def ssh():
         </main>
     </body>
     </html>
-    """)
+    """
+    )
 
 
 @router.get("/dashboard/collaborators", response_class=HTMLResponse)
 async def collaborators():
     """Serve the collaborators page (dynamic — fetches live activity data)."""
-    return HTMLResponse("""<!DOCTYPE html>
+    return HTMLResponse(
+        """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -404,13 +413,15 @@ async def collaborators():
 })();
 </script>
 </body>
-</html>""")
+</html>"""
+    )
 
 
 @router.get("/dashboard/falco", response_class=HTMLResponse)
 async def falco_dashboard():
     """Falco runtime security alerts viewer."""
-    return HTMLResponse("""<!DOCTYPE html>
+    return HTMLResponse(
+        """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -527,13 +538,15 @@ async def falco_dashboard():
 })();
 </script>
 </body>
-</html>""")
+</html>"""
+    )
 
 
 @router.get("/dashboard/wazuh", response_class=HTMLResponse)
 async def wazuh_dashboard():
     """Wazuh HIDS alerts and FIM events viewer."""
-    return HTMLResponse("""<!DOCTYPE html>
+    return HTMLResponse(
+        """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -721,13 +734,15 @@ function switchTab(name) {
 })();
 </script>
 </body>
-</html>""")
+</html>"""
+    )
 
 
 @router.get("/dashboard/security", response_class=HTMLResponse)
 async def security_overview():
     """Security tools overview — links to all tool-specific dashboards."""
-    return HTMLResponse("""<!DOCTYPE html>
+    return HTMLResponse(
+        """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -878,13 +893,15 @@ async def security_overview():
 })();
 </script>
 </body>
-</html>""")
+</html>"""
+    )
 
 
 @router.get("/dashboard/killswitch", response_class=HTMLResponse)
 async def killswitch():
     """Serve the emergency kill switch page."""
-    return HTMLResponse("""
+    return HTMLResponse(
+        """
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -914,7 +931,8 @@ async def killswitch():
         </main>
     </body>
     </html>
-    """)
+    """
+    )
 
 
 # Pydantic models for egress management

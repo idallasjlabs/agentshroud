@@ -8,6 +8,7 @@ repos:
     rev: v8.18.1
     hooks:
       - id: gitleaks
+        args: ['--config', 'gitleaks.toml']
 
   # Pre-commit built-in hooks
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -20,14 +21,22 @@ repos:
         args: ['--allow-missing-credentials']
       - id: check-yaml
       - id: check-json
+        exclude: '\.ipynb$'
       - id: check-merge-conflict
       - id: trailing-whitespace
       - id: end-of-file-fixer
 
   # Detect-secrets - Advanced secret detection
   - repo: https://github.com/Yelp/detect-secrets
-    rev: v1.4.0
+    rev: v1.5.0
     hooks:
       - id: detect-secrets
         args: ['--baseline', '.secrets.baseline']
-        exclude: package-lock.json
+        exclude: |
+          (?x)^(
+            package-lock\.json|
+            \.gitallowed$|
+            \.secrets\.baseline$|
+            llm_settings_vault/\.obsidian/.*|
+            AI-CONTEXT/.*
+          )$

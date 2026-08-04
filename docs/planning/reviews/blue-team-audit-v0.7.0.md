@@ -1,9 +1,9 @@
 # AgentShroud v0.7.0 - Blue Team Security Audit Report
 
-**Date:** February 25, 2026  
-**Auditor:** AgentShroud Blue Team Security Auditor  
-**System:** AgentShroud v0.7.0 (main branch)  
-**Assessment Framework:** Steve Hay STPA-Sec Methodology  
+**Date:** February 25, 2026
+**Auditor:** AgentShroud Blue Team Security Auditor
+**System:** AgentShroud v0.7.0 (main branch)
+**Assessment Framework:** Steve Hay STPA-Sec Methodology
 
 ## Executive Summary
 
@@ -11,7 +11,7 @@ AgentShroud v0.7.0 demonstrates a **mature, defensible security architecture** w
 
 **Key Findings:**
 - ✅ **35 security modules** properly integrated into request pipeline
-- ✅ **Enforce-by-default** configuration with global override capability  
+- ✅ **Enforce-by-default** configuration with global override capability
 - ✅ **Fail-closed design** prevents startup without critical security guards
 - ✅ **Comprehensive test coverage** validates enforcement capabilities
 - ⚠️ **2 minor integration gaps** identified and addressed below
@@ -70,14 +70,14 @@ AgentShroud v0.7.0 demonstrates a **mature, defensible security architecture** w
 
 **Inbound Request Processing:**
 1. **PromptGuard**: Injection detection → BLOCKS on score ≥0.8
-2. **PIISanitizer**: PII redaction → REQUIRED (fail-closed)  
+2. **PIISanitizer**: PII redaction → REQUIRED (fail-closed)
 3. **TrustManager**: Trust level check → BLOCKS insufficient trust
 4. **ApprovalQueue**: High-risk actions → QUEUES for approval
 5. **AuditChain**: Tamper-evident logging → Always logs
 
 **Outbound Response Processing:**
 1. **PIISanitizer**: PII redaction in responses
-2. **OutboundFilter**: Info disclosure prevention  
+2. **OutboundFilter**: Info disclosure prevention
 3. **EgressFilter**: External communication control
 4. **AuditChain**: Response logging
 
@@ -87,7 +87,7 @@ AgentShroud v0.7.0 demonstrates a **mature, defensible security architecture** w
 
 ### 2.1 Loss Categories
 - **L-1**: Data Disclosure (PII, credentials, sensitive info)
-- **L-2**: Unauthorized Actions (privilege escalation, system access)  
+- **L-2**: Unauthorized Actions (privilege escalation, system access)
 - **L-3**: Agent Integrity (prompt injection, behavior manipulation)
 - **L-4**: Audit Integrity (log tampering, evidence destruction)
 
@@ -137,7 +137,7 @@ AgentShroud v0.7.0 demonstrates a **mature, defensible security architecture** w
 ### 2.3 Coverage Analysis
 
 - **L-1 Data Disclosure**: **85% Enforced** (17E, 8M, 0A, 0C)
-- **L-2 Unauthorized Actions**: **82% Enforced** (19E, 4M, 0A, 0C)  
+- **L-2 Unauthorized Actions**: **82% Enforced** (19E, 4M, 0A, 0C)
 - **L-3 Agent Integrity**: **78% Enforced** (7E, 4M, 0A, 0C)
 - **L-4 Audit Integrity**: **88% Enforced** (7E, 1M, 0A, 0C)
 
@@ -158,7 +158,7 @@ AgentShroud v0.7.0 demonstrates a **mature, defensible security architecture** w
    - **Mitigation**: Currently acceptable for non-browser workloads
    - **Action**: Consider enforcement for browser-heavy deployments
 
-2. **Monitoring Modules** - Detection without enforcement  
+2. **Monitoring Modules** - Detection without enforcement
    - **Modules**: falco_monitor, wazuh_client, trivy_report, drift_detector
    - **Risk**: Advanced persistent threats may evade detection-only controls
    - **Mitigation**: These are supplementary to primary enforcement layers
@@ -230,7 +230,7 @@ The task mentioned checking for "RBAC, audit export, kill switch, PII tool resul
 All security modules are properly wired into the request processing pipeline:
 
 - **main.py**: Initializes all security components with proper error handling
-- **middleware.py**: MiddlewareManager processes requests through all P1 guards  
+- **middleware.py**: MiddlewareManager processes requests through all P1 guards
 - **pipeline.py**: SecurityPipeline enforces P0 guards with fail-closed semantics
 - **Error Handling**: Proper try/catch with logging, fail-closed on critical failures
 
@@ -255,7 +255,7 @@ Critical test files reviewed:
 
 **Test Categories Verified:**
 - ✅ Prompt injection attacks (15 test cases)
-- ✅ PII extraction attempts (20 test cases)  
+- ✅ PII extraction attempts (20 test cases)
 - ✅ Path traversal attacks (10 test cases)
 - ✅ Authentication bypasses (12 test cases)
 - ✅ Context manipulation (10 test cases)
@@ -281,7 +281,7 @@ Critical test files reviewed:
    - Ensure falco/wazuh/trivy alerts integrate with incident response
    - Consider automated blocking for high-confidence detections
 
-### 7.3 Medium-term (Medium Priority)  
+### 7.3 Medium-term (Medium Priority)
 
 1. **Enhance Canary Integration**
    - Consider integrating canary triggers with active blocking mechanisms
@@ -306,7 +306,7 @@ Critical test files reviewed:
 **Status:** ✅ **HARDENED**
 
 - **Input Validation**: Multi-layer prompt injection defense
-- **Output Filtering**: Information disclosure prevention  
+- **Output Filtering**: Information disclosure prevention
 - **Access Control**: Trust-based action authorization
 - **Audit Trail**: Tamper-evident logging with hash chains
 - **Session Isolation**: Per-user workspace enforcement
@@ -349,7 +349,7 @@ AgentShroud v0.7.0 demonstrates:
 
 **High-Severity Threats:** ✅ **MITIGATED**
 - Prompt injection attacks
-- PII/credential disclosure  
+- PII/credential disclosure
 - Unauthorized system access
 - Audit trail tampering
 
@@ -366,7 +366,7 @@ AgentShroud v0.7.0 demonstrates:
 **Justification:**
 - Zero critical security gaps identified
 - All major attack vectors properly defended
-- Comprehensive monitoring and alerting in place  
+- Comprehensive monitoring and alerting in place
 - Fail-closed architecture prevents security bypass
 - Extensive test validation of enforcement mechanisms
 
@@ -379,7 +379,7 @@ AgentShroud v0.7.0 demonstrates:
 This assessment follows Steve Hay's STPA-Sec methodology with:
 
 - ✅ **33+ security modules analyzed** across 4 priority tiers
-- ✅ **Heat map methodology applied** for systematic coverage analysis  
+- ✅ **Heat map methodology applied** for systematic coverage analysis
 - ✅ **Loss category mapping** for comprehensive risk assessment
 - ✅ **Enforcement vs monitoring distinction** clearly identified
 - ✅ **Integration verification** ensuring no "orphaned" security modules
@@ -389,6 +389,6 @@ This assessment follows Steve Hay's STPA-Sec methodology with:
 
 ---
 
-**Report Timestamp:** 2026-02-25 10:51 UTC  
-**System Version:** AgentShroud v0.7.0 (commit: latest main)  
+**Report Timestamp:** 2026-02-25 10:51 UTC
+**System Version:** AgentShroud v0.7.0 (commit: latest main)
 **Next Review:** Post-red team testing (recommended within 30 days)

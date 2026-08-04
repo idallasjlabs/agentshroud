@@ -341,7 +341,20 @@ class TestKillSwitch:
     def test_disconnect_stops_and_removes_bot(self, client):
         eng = _engine()
         _two_bots = SimpleNamespace(
-            bots={"openclaw": SimpleNamespace(), "hermes": SimpleNamespace()}
+            bots={
+                "openclaw": SimpleNamespace(
+                    id="openclaw",
+                    dockerfile="docker/bots/openclaw/Dockerfile",
+                    image="",
+                    resolved_container_name="agentshroud-openclaw",
+                ),
+                "hermes": SimpleNamespace(
+                    id="hermes",
+                    dockerfile="docker/bots/hermes/Dockerfile",
+                    image="agentshroud/hermes:latest",
+                    resolved_container_name="agentshroud-hermes",
+                ),
+            }
         )
         with (
             patch("gateway.web.api._get_engine", return_value=eng),
@@ -462,7 +475,20 @@ class TestRebuild:
     def test_rebuild_success(self, client):
         eng = _engine()
         _two_bots = SimpleNamespace(
-            bots={"openclaw": SimpleNamespace(), "hermes": SimpleNamespace()}
+            bots={
+                "openclaw": SimpleNamespace(
+                    id="openclaw",
+                    dockerfile="docker/bots/openclaw/Dockerfile",
+                    image="",
+                    resolved_container_name="agentshroud-openclaw",
+                ),
+                "hermes": SimpleNamespace(
+                    id="hermes",
+                    dockerfile="docker/bots/hermes/Dockerfile",
+                    image="agentshroud/hermes:latest",
+                    resolved_container_name="agentshroud-hermes",
+                ),
+            }
         )
         with (
             patch("gateway.web.api._get_engine", return_value=eng),
@@ -490,6 +516,28 @@ class TestRebuild:
 # ── Bot updates ──────────────────────────────────────────────────────────────
 
 
+class TestResolveBotContainer:
+    """_resolve_bot_container must use BotConfig.resolved_container_name, not
+    a hardcoded 'agentshroud-{bot_id}' guess — regression guard for the
+    hermes rename (agentshroud-hermes -> agentshroud-hermes-v2, 2026-07-18)
+    that this exact helper missed."""
+
+    def test_resolves_hermes_to_the_real_renamed_container(self):
+        from gateway.web.api import _resolve_bot_container
+
+        assert _resolve_bot_container("hermes") == "agentshroud-hermes-v2"
+
+    def test_resolves_openclaw_to_the_convention_default(self):
+        from gateway.web.api import _resolve_bot_container
+
+        assert _resolve_bot_container("openclaw") == "agentshroud-openclaw"
+
+    def test_unknown_bot_id_falls_back_to_the_naive_guess(self):
+        from gateway.web.api import _resolve_bot_container
+
+        assert _resolve_bot_container("not-a-real-bot") == "agentshroud-not-a-real-bot"
+
+
 class TestBotUpdates:
     def test_check_bot_updates_update_available(self, client):
         eng = _engine()
@@ -507,7 +555,7 @@ class TestBotUpdates:
             "latest": "2.0.0",
             "update_available": True,
         }
-        eng.exec.assert_called_once_with("agentshroud-hermes", ["hermes", "--version"])
+        eng.exec.assert_called_once_with("agentshroud-hermes-v2", ["hermes", "--version"])
 
     def test_check_bot_updates_npm_failure_and_exec_failure(self, client):
         eng = _engine()
@@ -544,7 +592,7 @@ class TestBotUpdates:
         assert data["version"] == "2.1.0"
         assert [s["status"] for s in data["steps"]] == ["done", "done"]
         eng.exec.assert_called_once_with(
-            "agentshroud-hermes", ["npm", "install", "-g", "hermes@2.1.0"]
+            "agentshroud-hermes-v2", ["npm", "install", "-g", "hermes@2.1.0"]
         )
 
     def test_upgrade_bot_failure_reports_error_step(self, client):
@@ -652,7 +700,20 @@ class TestAgentshroudUpdates:
     def test_upgrade_success_with_tests_and_security_review(self, client):
         eng = _engine()
         _two_bots = SimpleNamespace(
-            bots={"openclaw": SimpleNamespace(), "hermes": SimpleNamespace()}
+            bots={
+                "openclaw": SimpleNamespace(
+                    id="openclaw",
+                    dockerfile="docker/bots/openclaw/Dockerfile",
+                    image="",
+                    resolved_container_name="agentshroud-openclaw",
+                ),
+                "hermes": SimpleNamespace(
+                    id="hermes",
+                    dockerfile="docker/bots/hermes/Dockerfile",
+                    image="agentshroud/hermes:latest",
+                    resolved_container_name="agentshroud-hermes",
+                ),
+            }
         )
         with (
             patch("subprocess.run", side_effect=_gitless_run()),
@@ -805,7 +866,20 @@ class TestLogs:
         # gateway OK, openclaw errors, hermes errors — both bots gracefully return []
         eng.logs.side_effect = ["g1\ng2", RuntimeError("bot down"), RuntimeError("bot down")]
         _two_bots = SimpleNamespace(
-            bots={"openclaw": SimpleNamespace(), "hermes": SimpleNamespace()}
+            bots={
+                "openclaw": SimpleNamespace(
+                    id="openclaw",
+                    dockerfile="docker/bots/openclaw/Dockerfile",
+                    image="",
+                    resolved_container_name="agentshroud-openclaw",
+                ),
+                "hermes": SimpleNamespace(
+                    id="hermes",
+                    dockerfile="docker/bots/hermes/Dockerfile",
+                    image="agentshroud/hermes:latest",
+                    resolved_container_name="agentshroud-hermes",
+                ),
+            }
         )
         with (
             patch("gateway.web.api._get_engine", return_value=eng),

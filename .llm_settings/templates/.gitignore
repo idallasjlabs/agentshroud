@@ -371,6 +371,9 @@ mkdocs/
 data/raw/
 data/processed/
 
+# Local LLM model exports
+local-llms/exports/
+
 # Fluence Energy specific (add as needed)
 # battery_data/
 # das_exports/

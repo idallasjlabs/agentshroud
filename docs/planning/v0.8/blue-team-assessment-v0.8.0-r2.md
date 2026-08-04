@@ -1,9 +1,9 @@
 # Blue Team Security Assessment — AgentShroud v0.8.0 Round 2
 
-**Date:** 2026-03-05  
-**Branch:** `feat/v0.8.0-enforcement-hardening`  
-**Assessor:** AgentShroud Bot (automated blue team)  
-**Scope:** Fresh clean-slate assessment after Round 1 remediation  
+**Date:** 2026-03-05
+**Branch:** `feat/v0.8.0-enforcement-hardening`
+**Assessor:** AgentShroud Bot (automated blue team)
+**Scope:** Fresh clean-slate assessment after Round 1 remediation
 
 ---
 
@@ -28,8 +28,8 @@ remediated. However, this fresh assessment uncovered **1 CRITICAL**, **2 HIGH**,
 
 ### R2-C1: RBAC Management Endpoints Missing Authentication
 
-**Severity:** CRITICAL  
-**Location:** `gateway/ingest_api/main.py` lines 1833–1950  
+**Severity:** CRITICAL
+**Location:** `gateway/ingest_api/main.py` lines 1833–1950
 **Endpoints affected:**
 - `GET /manage/rbac/users` (line 1833)
 - `PUT /manage/rbac/users/{target_user_id}/role` (line 1871)
@@ -60,7 +60,7 @@ curl -H "X-User-ID: 8096968754" \
 
 ### R2-H1: 1Password CLI Download Without Checksum Verification (Bot Dockerfile)
 
-**Severity:** HIGH  
+**Severity:** HIGH
 **Location:** `docker/Dockerfile.agentshroud` lines ~34-39
 
 **Issue:** The 1Password CLI binary is downloaded via `curl` and installed without
@@ -83,7 +83,7 @@ add SHA256 checksum verification for both architectures.
 
 ### R2-H2: Bot Dockerfile Missing setuid/setgid Bit Stripping (CIS 4.8)
 
-**Severity:** HIGH  
+**Severity:** HIGH
 **Location:** `docker/Dockerfile.agentshroud`
 
 **Issue:** The gateway Dockerfile correctly strips setuid/setgid bits before
@@ -104,7 +104,7 @@ privilege escalation within the container.
 
 ### R2-M1: Missing `aiohttp` in `requirements.txt`
 
-**Severity:** MEDIUM  
+**Severity:** MEDIUM
 **Location:** `gateway/requirements.txt`, `gateway/ingest_api/main.py` lines 1978, 2029
 
 **Issue:** The Pi-hole DNS management endpoints (`/manage/dns`, `/manage/dns/blocklist`)
@@ -118,7 +118,7 @@ This means:
 
 ### R2-M2: WebSocket Endpoints in `web/api.py` Use Full Auth Token (Not Scoped)
 
-**Severity:** MEDIUM  
+**Severity:** MEDIUM
 **Location:** `gateway/web/api.py` lines 771-825 (`ws_logs`, `ws_updates`)
 
 **Issue:** The `/api/ws/logs` and `/api/ws/updates` WebSocket endpoints accept the
@@ -138,7 +138,7 @@ WS token pattern as `/ws/activity`.
 
 ### R2-M3: Trivy Downloads Without Checksum Verification (Both Dockerfiles)
 
-**Severity:** MEDIUM  
+**Severity:** MEDIUM
 **Location:** `gateway/Dockerfile` line 50, `docker/Dockerfile.agentshroud` line 27
 
 **Issue:** Both Dockerfiles download the Trivy `.deb` package via curl without
@@ -159,7 +159,7 @@ binary. A GitHub CDN compromise or MITM could inject a malicious scanner binary.
 
 ### R2-L1: No Global Security Headers Middleware for API Responses
 
-**Severity:** LOW  
+**Severity:** LOW
 **Location:** `gateway/ingest_api/main.py`
 
 **Issue:** Security headers (`X-Content-Type-Options`, `X-Frame-Options`,
@@ -169,7 +169,7 @@ basic security headers to all responses is defense-in-depth best practice.
 
 ### R2-L2: WebSocket Connection Leak in `web/api.py`
 
-**Severity:** LOW  
+**Severity:** LOW
 **Location:** `gateway/web/api.py` lines 767-799
 
 **Issue:** The `active_websockets` list in `ws_logs` only cleans up on
@@ -181,7 +181,7 @@ list indefinitely, causing a memory leak and potential errors when iterating.
 
 ### R2-L3: OCI Image Version Labels Outdated
 
-**Severity:** LOW  
+**Severity:** LOW
 **Location:** `gateway/Dockerfile` (label says 0.7.0), `docker/Dockerfile.agentshroud` (label says 0.2.0)
 
 **Issue:** The `org.opencontainers.image.version` labels are outdated —

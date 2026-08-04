@@ -386,7 +386,8 @@ with tailnet tail240ea8, user 123456789012, exec tool,
         """Test that filtering performance is acceptable."""
 
         # Large response with multiple matches
-        response = """
+        response = (
+            """
         System Status Report:
 
         Infrastructure:
@@ -411,7 +412,9 @@ with tailnet tail240ea8, user 123456789012, exec tool,
         - PII Sanitizer active
         - Prompt Injection Defense enabled
         - AgentShroud version 0.7.0
-        """ * 10  # Repeat 10 times to make it larger
+        """
+            * 10
+        )  # Repeat 10 times to make it larger
 
         # Take the best of 3 runs to absorb GitHub Actions runner jitter.
         # CI shared runners can stall a single iteration past 100ms despite

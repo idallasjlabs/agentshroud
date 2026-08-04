@@ -39,18 +39,23 @@ if ! command -v git-secrets &> /dev/null; then
         git clone --depth 1 https://github.com/awslabs/git-secrets.git "$_tmp/git-secrets" 2>/dev/null \
             && (cd "$_tmp/git-secrets" && sudo make install 2>/dev/null) \
             && echo "   ✅ git-secrets installed from source" \
-            || { echo "   ⚠️  git-secrets source install failed. See: https://github.com/awslabs/git-secrets#installing-git-secrets"; SKIP_GIT_SECRETS=true; }
+            || echo "   ⚠️  git-secrets source install failed. See: https://github.com/awslabs/git-secrets#installing-git-secrets"
         rm -rf "$_tmp"
     else
         echo "   ⚠️  git-secrets not found — install manually and re-run:"
         echo "      macOS: brew install git-secrets"
         echo "      Linux: https://github.com/awslabs/git-secrets#installing-git-secrets"
-        SKIP_GIT_SECRETS=true
     fi
 else
     echo "✅ git-secrets already installed"
 fi
 echo ""
+
+# Resolve gitleaks config — pass explicitly so the allowlist is always loaded
+GITLEAKS_CONFIG_ARG=()
+if [ -f "gitleaks.toml" ]; then
+    GITLEAKS_CONFIG_ARG=(--config=gitleaks.toml)
+fi
 
 # Step 3: Scan repository history
 echo "3️⃣  Scanning repository history for secrets..."
@@ -58,7 +63,7 @@ if [ "${SKIP_GITLEAKS:-false}" = "true" ]; then
     echo "⚠️  Skipping (gitleaks not installed)"
 elif [ -d ".git" ]; then
     echo "   This may take a while for large repositories..."
-    if gitleaks detect --report-path gitleaks-report.json --verbose; then
+    if gitleaks detect "${GITLEAKS_CONFIG_ARG[@]}" --report-path gitleaks-report.json --verbose; then
         echo "✅ No secrets detected in repository history"
         rm -f gitleaks-report.json
     else
@@ -88,13 +93,13 @@ echo ""
 echo "4️⃣  Checking .gitignore coverage..."
 if [ -f ".gitignore" ]; then
     MISSING_PATTERNS=()
-    
+
     # Critical patterns to check
     grep -q "^\.env$" .gitignore || MISSING_PATTERNS+=(".env")
     grep -q "\.pem$" .gitignore || MISSING_PATTERNS+=("*.pem")
     grep -q "\.key$" .gitignore || MISSING_PATTERNS+=("*.key")
     grep -q "password" .gitignore || MISSING_PATTERNS+=("*password*")
-    
+
     if [ ${#MISSING_PATTERNS[@]} -eq 0 ]; then
         echo "✅ .gitignore has good security coverage"
     else
@@ -116,7 +121,7 @@ echo ""
 echo "5️⃣  Scanning working directory for secrets..."
 if [ "${SKIP_GITLEAKS:-false}" = "true" ]; then
     echo "⚠️  Skipping (gitleaks not installed)"
-elif gitleaks protect --staged --verbose; then
+elif gitleaks protect --staged "${GITLEAKS_CONFIG_ARG[@]}" --verbose; then
     echo "✅ No secrets in current working directory"
 else
     echo "⚠️  Potential secrets found in working directory"
@@ -145,4 +150,3 @@ echo "   - Use ~/.pgpass for PostgreSQL passwords"
 echo "   - Review all files before committing"
 echo "   - Run 'gitleaks detect' periodically"
 echo ""
-

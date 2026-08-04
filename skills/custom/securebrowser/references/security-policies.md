@@ -1,7 +1,7 @@
 # SecureBrowser Security Policies
 
-**Version**: 1.0.0  
-**Status**: Enterprise-Grade  
+**Version**: 1.0.0
+**Status**: Enterprise-Grade
 **Philosophy**: "One Claw Tied Behind Your Back"
 
 ---
@@ -334,6 +334,6 @@ Before production deployment:
 
 ---
 
-**Last Updated**: 2026-02-16  
-**Review Cycle**: Quarterly  
+**Last Updated**: 2026-02-16
+**Review Cycle**: Quarterly
 **Owner**: AgentShroud Security Team

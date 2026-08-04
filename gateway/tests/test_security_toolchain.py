@@ -523,13 +523,11 @@ class TestClamAVRun:
 
 from gateway.security.falco_monitor import (
     categorize_alerts,
-)
-from gateway.security.falco_monitor import generate_summary as falco_summary  # noqa: E402
-from gateway.security.falco_monitor import (
     is_agentshroud_rule,
     parse_alert,
     read_alerts,
 )
+from gateway.security.falco_monitor import generate_summary as falco_summary  # noqa: E402
 
 SAMPLE_FALCO_ALERT = {
     "time": "2024-01-15T10:30:00.000Z",
