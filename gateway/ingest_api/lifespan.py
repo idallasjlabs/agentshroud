@@ -624,6 +624,20 @@ async def lifespan(app: FastAPI):
         logger.error("✗ EnvelopeSigner: %s", _es_exc)
         _envelope_signer = None
 
+    # Module 28 (v1.2.0): Differential PII Detector for Tool Results.
+    # Lower-floor PII pass on tool results (0.7 vs. the mandated 0.9 prompt
+    # floor — CLAUDE.md §7.8 applies only to prompt-side scanning) to catch
+    # adversarially-formatted exfiltration in web pages / file reads / API
+    # replies that the standard PIISanitizer misses.
+    try:
+        from ..security.differential_pii_detector import DifferentialPIIDetector
+
+        _differential_pii_detector = DifferentialPIIDetector()
+        logger.info("✓ DifferentialPIIDetector initialized")
+    except Exception as _dpd_exc:
+        logger.error("✗ DifferentialPIIDetector: %s", _dpd_exc)
+        _differential_pii_detector = None
+
     # Pre-load ToolResultInjectionScanner for inbound injection scanning (CVE-2026-30741).
     _inbound_injection_scanner = None
     try:
@@ -755,6 +769,7 @@ async def lifespan(app: FastAPI):
         context_integrity_scorer=_context_integrity_scorer,
         output_schema_enforcer=_output_schema_enforcer,
         envelope_signer=_envelope_signer,
+        differential_pii_detector=_differential_pii_detector,
         clamav_scanner=_clamav_scan_bytes,
         tool_result_injection_scanner=_inbound_injection_scanner,
         xml_leak_filter=_inbound_xml_leak_filter,
