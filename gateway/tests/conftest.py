@@ -55,6 +55,38 @@ from gateway.ingest_api.main import app, app_state
 from gateway.ingest_api.sanitizer import PIISanitizer
 
 
+@pytest.fixture(scope="session", autouse=True)
+def _ensure_agentshroud_config_resolvable():
+    """CI has no real agentshroud.yaml (gitignored, per-deployment secret
+    config) — only the committed agentshroud.yaml.example. Production code
+    calling load_config() with no args (gateway/web/api.py's
+    _bot_service_names()/_valid_services(), among others) has no fallback of
+    its own, by design: silently substituting example content for a missing
+    real deployment config would be wrong in production. But without a
+    resolvable config AT ALL, those call sites degrade to a hardcoded
+    openclaw-only guess in CI, causing hermes to vanish from their output
+    for reasons that have nothing to do with the code under test.
+
+    Point AGENTSHROUD_CONFIG at the example file for the whole test session,
+    but only when no real config is already resolvable — this must never
+    override a real local/CI-provisioned agentshroud.yaml.
+    """
+    import os
+
+    from gateway.ingest_api.config import resolve_config_path
+
+    if os.environ.get("AGENTSHROUD_CONFIG"):
+        return
+    try:
+        resolve_config_path(None)
+        return  # a real config already resolves; leave it alone
+    except FileNotFoundError:
+        pass
+    example = Path(__file__).resolve().parents[2] / "agentshroud.yaml.example"
+    if example.exists():
+        os.environ["AGENTSHROUD_CONFIG"] = str(example)
+
+
 @pytest.fixture
 def test_config() -> GatewayConfig:
     """Create a test configuration
