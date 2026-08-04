@@ -763,6 +763,90 @@ class TestPerAgentUpstreamChecks:
         assert result["telegram_sent"] is False
 
     @pytest.mark.asyncio
+    async def test_hermes_zero_stays_silent_via_all_agents(self, monkeypatch):
+        """2026-08-04 fix: Hermes zero-CVE heartbeats confused the owner because
+        they're sent through the shared bot token and display under OpenClaw's
+        Telegram identity regardless of which agent they're about. Both agents
+        now stay silent at zero, exercised through the real all-agents wiring
+        (not a mocked run_upstream_cve_check) so a future re-add of "hermes" to
+        _ALWAYS_REPORT_ZERO_AGENTS would fail this test."""
+        import gateway.security.daily_cve_report as _mod
+
+        monkeypatch.setattr(
+            _mod, "check_upstream_cves", lambda github_token=None, agent_id="openclaw": []
+        )
+        sent = []
+
+        async def _fake_send(token, chat_id, text, base_url):
+            sent.append(text)
+            return True
+
+        monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
+        results = await _mod.run_upstream_cve_check_all_agents(bot_token="tok", owner_chat_id="123")
+        by_agent = {r["agent_id"]: r for r in results}
+        assert by_agent["hermes"]["telegram_sent"] is False
+        assert by_agent["openclaw"]["telegram_sent"] is False
+        assert sent == []
+
+    @pytest.mark.asyncio
+    async def test_all_agents_uses_per_agent_token_when_provided(self, monkeypatch):
+        """2026-08-04: each wrapped agent's alert must go out via ITS OWN bot
+        token (so it displays under its own Telegram identity), not always the
+        default token — a real new CVE is needed so telegram actually sends."""
+        import gateway.security.daily_cve_report as _mod
+
+        monkeypatch.setattr(
+            _mod,
+            "check_upstream_cves",
+            lambda github_token=None, agent_id="openclaw": [
+                {"id": f"GHSA-{agent_id}", "severity": "HIGH", "cvss": 7.5}
+            ],
+        )
+        used_tokens = {}
+
+        async def _fake_send(token, chat_id, text, base_url):
+            used_tokens[text] = token
+            return True
+
+        monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
+        results = await _mod.run_upstream_cve_check_all_agents(
+            bot_token="default-tok",
+            owner_chat_id="123",
+            bot_tokens={"hermes": "hermes-tok"},
+        )
+        by_agent = {r["agent_id"]: r for r in results}
+        assert by_agent["openclaw"]["telegram_sent"] is True
+        assert by_agent["hermes"]["telegram_sent"] is True
+        tokens_seen = set(used_tokens.values())
+        assert tokens_seen == {"default-tok", "hermes-tok"}
+
+    @pytest.mark.asyncio
+    async def test_all_agents_omitting_bot_tokens_preserves_default_behavior(self, monkeypatch):
+        """Backward compatibility: no bot_tokens arg means every agent still
+        gets the single shared bot_token, exactly like before this param existed."""
+        import gateway.security.daily_cve_report as _mod
+
+        monkeypatch.setattr(
+            _mod,
+            "check_upstream_cves",
+            lambda github_token=None, agent_id="openclaw": [
+                {"id": f"GHSA-{agent_id}", "severity": "HIGH", "cvss": 7.5}
+            ],
+        )
+        used_tokens = []
+
+        async def _fake_send(token, chat_id, text, base_url):
+            used_tokens.append(token)
+            return True
+
+        monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
+        results = await _mod.run_upstream_cve_check_all_agents(
+            bot_token="only-tok", owner_chat_id="123"
+        )
+        assert len(results) == 2
+        assert set(used_tokens) == {"only-tok"}
+
+    @pytest.mark.asyncio
     async def test_all_agents_runs_each_independently_and_isolates_failure(self, monkeypatch):
         """OpenClaw and Hermes are processed on fully separate paths; one failing
         never blocks the other."""
@@ -846,12 +930,31 @@ class TestBuildImageTargets:
         assert "agentshroud/hermes:latest" in targets
 
     def test_env_var_empty_string_ignored(self, monkeypatch):
+        """Empty AGENTSHROUD_TRIVY_IMAGES adds no extra entries beyond
+        gateway + the real per-bot images (always included regardless of
+        this env var — see test_always_includes_every_configured_bot_image)."""
         from gateway.security.daily_cve_report import _build_image_targets
 
         monkeypatch.setenv("AGENTSHROUD_TRIVY_IMAGES", "")
         targets = _build_image_targets()
-        # Only gateway image — no empty entries
-        assert targets == ["agentshroud-gateway:latest"]
+        assert targets == [
+            "agentshroud-gateway:latest",
+            "agentshroud-openclaw:latest",
+            "agentshroud/hermes:latest",
+        ]
+
+    def test_always_includes_every_configured_bot_image(self, monkeypatch):
+        """Regression guard: AGENTSHROUD_TRIVY_IMAGES used to be the ONLY
+        source of bot images and was hardcoded to just Hermes's, silently
+        omitting OpenClaw from every CVE report ("why is openclaw reporting
+        hermes?"). Bot images must now come from the real bots: registry,
+        unconditionally — not an env var that can omit a bot entirely."""
+        from gateway.security.daily_cve_report import _build_image_targets
+
+        monkeypatch.delenv("AGENTSHROUD_TRIVY_IMAGES", raising=False)
+        targets = _build_image_targets()
+        assert "agentshroud-openclaw:latest" in targets
+        assert "agentshroud/hermes:latest" in targets
 
     def test_deduplication(self, monkeypatch):
         from gateway.security.daily_cve_report import _build_image_targets
