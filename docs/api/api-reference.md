@@ -1,625 +1,182 @@
 # API Reference
-## AgentShroud v0.9.0
+
+## AgentShroud v1.3.0
 
 ### Overview
 
-AgentShroud provides a comprehensive REST API for security proxy management and monitoring. All endpoints implement authentication, rate limiting, and comprehensive audit logging. The API follows OpenAPI 3.0 specification and supports JSON content negotiation.
+AgentShroud's gateway is a transparent security proxy — most of its "API" is
+the intercepted traffic between an AI agent and the systems it talks to
+(Telegram, Anthropic, egress domains, SSH targets), not a conventional REST
+API consumed by external clients. The endpoints below are the gateway's own
+**management/control-plane API**, used by the terminal dashboard, web
+control center, and the wrapped bots themselves — not a public integration
+surface.
 
-**Base URL**: `https://localhost:8443/api/v1`
-**Authentication**: Bearer token or API key
+**Base URL**: `http://gateway:8080` (internal Docker network) /
+`http://localhost:8080` (host, if published) / your Tailscale hostname if
+served externally (e.g. `https://<host>.<tailnet>.ts.net:8080`)
+**Authentication**: `Authorization: Bearer <gateway auth token>` — the token
+is a 64-char secret provisioned via `docker/setup-secrets.sh`
+(`gateway_password` / `GATEWAY_AUTH_TOKEN_FILE`), not a per-user JWT.
 **Content Type**: `application/json`
-**API Version**: `v1`
+**Note**: there is no `/api/v1` prefix and no port `8443` — this reference
+previously described a fictional API that never existed in this codebase;
+it's rewritten below against the actual route table.
 
 ---
 
 ## Authentication
 
-All API endpoints require authentication using one of the following methods:
+Every protected route depends on `auth_dep` (`gateway/ingest_api/main.py`),
+which validates a bearer token against the configured gateway auth token:
 
-**Bearer Token**:
 ```
-Authorization: Bearer <jwt-token>
-```
-
-**API Key**:
-```
-X-API-Key: <api-key>
+Authorization: Bearer <gateway_auth_token>
 ```
 
-**Service Account**:
-```
-Authorization: ServiceAccount <account-id>:<signature>
-```
+Some route groups (the management API, SOC dashboard) implement their own
+Bearer check per-endpoint rather than sharing `auth_dep` — same header
+format either way. System-internal callers (startup/shutdown notifications)
+identify themselves with `X-AgentShroud-System: 1` instead.
 
 ---
 
-## Health and Status
+## Route map (by router)
 
-### GET /health
+The gateway mounts several `APIRouter`s onto the FastAPI app
+(`gateway/ingest_api/main.py:182-197`). This is the real, current route
+table — grep `gateway/ingest_api/main.py`, `gateway/soc/router.py`, and
+`gateway/web/api.py` directly for the authoritative, byte-for-byte list;
+what follows is organized by area, not exhaustive per-field schemas (the
+surface is 100+ routes across these files and changes with the code).
 
-Health check endpoint for monitoring and load balancer configuration.
+### Health & status
+- `GET /manage/health` — aggregated status of every wired security module
+  (ClamAV, Trivy, OpenSCAP, drift detector, encrypted store, key vault,
+  alert dispatcher, killswitch monitor, Falco, Wazuh, …)
+- `GET /manage/killswitch/status`, `POST /manage/killswitch/verify`
+- `GET /proxy/status`
 
-**Description**: Returns system health status and basic operational metrics.
+### Egress control
+- `GET /manage/egress/pending`, `GET /manage/egress/log`,
+  `GET /manage/egress/risk`
+- `POST /manage/egress/{request_id}/approve`,
+  `POST /manage/egress/{request_id}/deny`
+- `POST /manage/egress/emergency-block`
+- `GET|POST|DELETE /manage/egress/rules`
 
-**Parameters**: None
+### Audit / ledger
+- `GET /ledger`, `GET /ledger/{entry_id}`, `DELETE /ledger/{entry_id}`
+  (SHA-256 hash-chained audit trail — see ADR-005)
 
-**Response Codes**:
-- `200` - System healthy
-- `503` - System degraded or unhealthy
+### Scanning
+- `POST /manage/scan/{trivy|clamav|openscap|cis-benchmark|all}`
+- `GET /manage/scanners/summary`, `GET /manage/scanners/history`
+- `GET /manage/falco/alerts`, `GET /manage/wazuh/alerts`
+- `GET /manage/container-security`, `GET /manage/compliance/soc2`
 
-**Response Schema**:
+### Quarantine
+- `GET /manage/quarantine/summary`
+- `GET|POST /manage/quarantine/blocked-messages[/{id}/release|discard]`
+- `GET|POST /manage/quarantine/blocked-outbound[/{id}/release|discard]`
+
+### RBAC
+- `GET /manage/rbac/my-permissions`, `GET /manage/rbac/users`,
+  `PUT /manage/rbac/users/{target_user_id}`,
+  `GET /manage/rbac/users/{user_id}/permissions`
+
+### DNS
+- `GET|POST|DELETE /manage/dns/blocked`, `POST /manage/dns/refresh`
+
+### SOC — Shared Command Layer (`/soc/v1/*`, `gateway/soc/router.py`)
+The largest single router (~65 routes): killswitch (`freeze`/`shutdown`/
+`disconnect`), egress approve/deny/history/rules, RBAC (`users`, `groups`,
+`delegation`), security modules + heatmap, SBOM, scanners, CVE registry
+(`/agent-cves`), collaborator activity, service lifecycle
+(`start`/`stop`/`restart`/`update`/`rebuild`), bot updates
+(`/updates/bot/upgrade`, `/updates/gateway/upgrade`,
+`/updates/gateway/rollback`, `/updates/hermes/upgrade`), config
+integrity, auth (`/auth/login`, `/auth/ws-token`).
+
+### Web control center (`gateway/web/api.py`)
+Bot lifecycle (start/stop/restart/killswitch), config import/export,
+per-bot updates (upgrade/rollback per `bot_id`), security report, logs,
+skills reload, competitive-intel reports.
+
+### Agent-facing proxy endpoints (not control-plane)
+- `POST /mcp/proxy`, `POST /mcp/result` — MCP tool-call interception
+- `POST /ssh/exec`, `GET /ssh/history`, `GET /ssh/hosts` — the
+  `agentshroud-ssh-exec.sh` wrapper target (see
+  `docker/scripts/agentshroud-ssh-exec.sh`)
+- `POST /credentials/op-proxy` — 1Password credential proxy
+- Telegram/Slack/LLM traffic is intercepted transparently, not via a
+  documented REST contract — see `docker-compose.yml`'s `*_API_BASE_URL`
+  env vars for how each bot is pointed at the gateway.
+
+---
+
+## Example: `GET /manage/health`
+
+Real response shape (`gateway/ingest_api/main.py`, `security_health_report`)
+— module keys present depend on which modules are wired for this deployment:
+
 ```json
 {
-  "status": "healthy",
-  "timestamp": "2026-02-19T11:16:00Z",
-  "version": "0.9.0",
-  "uptime": 86400,
-  "components": {
-    "database": "healthy",
-    "audit_system": "healthy",
-    "security_modules": "healthy",
-    "external_services": "degraded"
-  },
-  "metrics": {
-    "active_agents": 12,
-    "requests_per_second": 45.2,
-    "memory_usage_mb": 256,
-    "cpu_usage_percent": 23.1
+  "timestamp": "2026-08-04T12:00:00+00:00",
+  "modules": {
+    "clamav": { "status": "ready", "binary": true },
+    "trivy": { "status": "ready", "binary": true },
+    "drift_detector": { "status": "active" },
+    "killswitch_monitor": { "status": "active" },
+    "falco_monitor": { "status": "listening" },
+    "wazuh_client": { "status": "listening" }
   }
 }
 ```
 
-**Example Request**:
 ```bash
-curl -X GET https://localhost:8443/api/v1/health \
-  -H "Authorization: Bearer <token>"
+curl -H "Authorization: Bearer $GATEWAY_AUTH_TOKEN" \
+  http://localhost:8080/manage/health
 ```
 
-**Example Response**:
-```json
-{
-  "status": "healthy",
-  "timestamp": "2026-02-19T11:16:00Z",
-  "version": "0.9.0",
-  "uptime": 86400,
-  "components": {
-    "database": "healthy",
-    "audit_system": "healthy",
-    "security_modules": "healthy",
-    "external_services": "healthy"
-  },
-  "metrics": {
-    "active_agents": 8,
-    "requests_per_second": 23.7,
-    "memory_usage_mb": 192,
-    "cpu_usage_percent": 15.3
-  }
-}
-```
+## Example: `POST /manage/egress/{request_id}/approve`
 
----
-
-## Message Processing
-
-### POST /ingest
-
-Primary endpoint for AI agent message ingestion with security processing.
-
-**Description**: Processes incoming messages through the complete security pipeline including PII sanitization, prompt injection detection, and audit logging.
-
-**Request Schema**:
-```json
-{
-  "agent_id": "agent-12345",
-  "message": "User message content",
-  "session_id": "session-abcde",
-  "timestamp": "2026-02-19T11:16:00Z",
-  "metadata": {
-    "user_id": "user-67890",
-    "channel": "telegram",
-    "trust_level": 5
-  }
-}
-```
-
-**Response Codes**:
-- `200` - Message processed successfully
-- `400` - Invalid request format
-- `403` - Message blocked by security policy
-- `429` - Rate limit exceeded
-- `500` - Internal processing error
-
-**Response Schema**:
-```json
-{
-  "message_id": "msg-uuid-here",
-  "status": "processed",
-  "sanitized": true,
-  "processing_time_ms": 23,
-  "security_actions": [
-    {
-      "module": "pii_detection",
-      "action": "sanitized",
-      "details": "Phone number redacted"
-    }
-  ],
-  "audit_id": "audit-uuid-here"
-}
-```
-
-**Example Request**:
 ```bash
-curl -X POST https://localhost:8443/api/v1/ingest \
-  -H "Authorization: Bearer <token>" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "agent_id": "agent-12345",
-    "message": "My phone number is 555-123-4567",
-    "session_id": "session-abcde",
-    "timestamp": "2026-02-19T11:16:00Z",
-    "metadata": {
-      "user_id": "user-67890",
-      "channel": "telegram",
-      "trust_level": 3
-    }
-  }'
+curl -X POST \
+  -H "Authorization: Bearer $GATEWAY_AUTH_TOKEN" \
+  http://localhost:8080/manage/egress/req-abc123/approve
 ```
 
-**Example Response**:
-```json
-{
-  "message_id": "msg-a1b2c3d4-e5f6-7890-abcd-ef1234567890",
-  "status": "processed",
-  "sanitized": true,
-  "processing_time_ms": 18,
-  "security_actions": [
-    {
-      "module": "pii_detection",
-      "action": "sanitized",
-      "details": "Phone number redacted"
-    }
-  ],
-  "audit_id": "audit-f1e2d3c4-b5a6-9870-dcba-fe0987654321"
-}
-```
+Approves a pending egress request (an agent attempting to reach an
+unrecognized domain) — see `gateway/security/egress_filter.py` and
+`gateway/proxy/telegram_egress_notify.py` for the approval flow, including
+the Telegram inline-button path.
 
 ---
 
-## Audit and Compliance
+## Error responses
 
-### GET /audit
+FastAPI's default `HTTPException` shape is used throughout:
 
-Query audit trail with filtering and pagination support.
-
-**Description**: Retrieves audit log entries with comprehensive filtering options for compliance and security analysis.
-
-**Query Parameters**:
-- `start_date` (string, ISO 8601) - Start date for query range
-- `end_date` (string, ISO 8601) - End date for query range
-- `agent_id` (string) - Filter by specific agent ID
-- `event_type` (string) - Filter by event type
-- `severity` (string) - Filter by severity level (low, medium, high, critical)
-- `limit` (integer) - Number of results to return (max 1000, default 100)
-- `offset` (integer) - Pagination offset (default 0)
-
-**Response Codes**:
-- `200` - Query successful
-- `400` - Invalid query parameters
-- `403` - Insufficient permissions
-- `500` - Query processing error
-
-**Response Schema**:
 ```json
-{
-  "total": 1524,
-  "limit": 100,
-  "offset": 0,
-  "entries": [
-    {
-      "audit_id": "audit-uuid-here",
-      "timestamp": "2026-02-19T11:16:00Z",
-      "event_type": "message_processed",
-      "agent_id": "agent-12345",
-      "user_id": "user-67890",
-      "severity": "medium",
-      "details": {
-        "message_id": "msg-uuid-here",
-        "security_actions": ["pii_sanitized"],
-        "processing_time_ms": 23
-      },
-      "hash": "sha256-hash-value",
-      "prev_hash": "sha256-previous-hash"
-    }
-  ],
-  "hash_chain_valid": true
-}
+{ "detail": "Service not initialized" }
 ```
 
-**Example Request**:
-```bash
-curl -X GET "https://localhost:8443/api/v1/audit?start_date=2026-02-19T00:00:00Z&event_type=security_violation&limit=50" \
-  -H "Authorization: Bearer <token>"
-```
+Specific status codes vary per route (`401` unauthenticated, `403`
+forbidden, `404` not found, `409` conflict, `422` validation error) — check
+the individual route handler for exact conditions rather than assuming a
+single global error schema.
 
 ---
 
-## Approval System
-
-### POST /approve/{id}
-
-Approve or deny pending operations in the approval queue.
-
-**Description**: Process approval requests for high-risk operations requiring human oversight.
-
-**Path Parameters**:
-- `id` (string, required) - Approval request ID
-
-**Request Schema**:
-```json
-{
-  "action": "approve",
-  "reason": "Request validated and approved",
-  "approver_id": "operator-12345",
-  "conditions": {
-    "time_limit_minutes": 30,
-    "monitoring_required": true
-  }
-}
-```
-
-**Response Codes**:
-- `200` - Approval processed successfully
-- `400` - Invalid approval action
-- `404` - Approval request not found
-- `403` - Insufficient approval permissions
-- `409` - Request already processed
-
-**Response Schema**:
-```json
-{
-  "approval_id": "approval-uuid-here",
-  "status": "approved",
-  "processed_at": "2026-02-19T11:16:00Z",
-  "approver_id": "operator-12345",
-  "conditions_applied": {
-    "time_limit_minutes": 30,
-    "monitoring_required": true
-  },
-  "audit_id": "audit-uuid-here"
-}
-```
-
-### GET /approve
-
-List pending approval requests.
-
-**Description**: Retrieve pending approval requests for operator review.
-
-**Query Parameters**:
-- `priority` (string) - Filter by priority (low, medium, high, critical)
-- `age_hours` (integer) - Filter requests older than specified hours
-- `agent_id` (string) - Filter by specific agent ID
-- `limit` (integer) - Number of results (max 100, default 20)
-
-**Response Schema**:
-```json
-{
-  "pending_count": 5,
-  "requests": [
-    {
-      "approval_id": "approval-uuid-here",
-      "created_at": "2026-02-19T10:30:00Z",
-      "priority": "high",
-      "agent_id": "agent-12345",
-      "operation": "ssh_access",
-      "details": {
-        "target_host": "production-server.example.com",
-        "requested_commands": ["ls", "grep", "tail"],
-        "justification": "Debug production issue #1234"
-      },
-      "time_remaining_minutes": 25
-    }
-  ]
-}
-```
-
----
-
-## Emergency Controls
-
-### POST /kill
-
-Activate emergency kill switch to shutdown agent operations.
-
-**Description**: Immediately terminate all or specific agent operations in emergency situations.
-
-**Request Schema**:
-```json
-{
-  "scope": "all",
-  "reason": "Security incident detected",
-  "operator_id": "operator-12345",
-  "immediate": true,
-  "preserve_state": true
-}
-```
-
-**Request Parameters**:
-- `scope` (string) - "all", "agent", or specific agent ID
-- `reason` (string, required) - Reason for kill switch activation
-- `operator_id` (string, required) - ID of operator activating kill switch
-- `immediate` (boolean) - Skip graceful shutdown (default: false)
-- `preserve_state` (boolean) - Preserve system state for investigation
-
-**Response Codes**:
-- `200` - Kill switch activated successfully
-- `400` - Invalid kill switch parameters
-- `403` - Insufficient kill switch permissions
-- `409` - Kill switch already active
-- `500` - Kill switch activation failed
-
-**Response Schema**:
-```json
-{
-  "kill_switch_id": "kill-uuid-here",
-  "activated_at": "2026-02-19T11:16:00Z",
-  "scope": "all",
-  "affected_agents": ["agent-12345", "agent-67890"],
-  "operator_id": "operator-12345",
-  "estimated_shutdown_seconds": 30,
-  "audit_id": "audit-uuid-here"
-}
-```
-
-### DELETE /kill/{id}
-
-Deactivate kill switch and restore operations.
-
-**Description**: Restore system operations after emergency kill switch activation.
-
-**Path Parameters**:
-- `id` (string, required) - Kill switch activation ID
-
-**Response Schema**:
-```json
-{
-  "kill_switch_id": "kill-uuid-here",
-  "deactivated_at": "2026-02-19T11:20:00Z",
-  "restored_agents": ["agent-12345", "agent-67890"],
-  "operator_id": "operator-12345",
-  "audit_id": "audit-uuid-here"
-}
-```
-
----
-
-## Security Dashboard
-
-### GET /dashboard
-
-Retrieve security dashboard data and metrics.
-
-**Description**: Comprehensive security metrics and status information for monitoring dashboards.
-
-**Query Parameters**:
-- `time_range` (string) - Time range for metrics (1h, 6h, 24h, 7d, 30d)
-- `include_details` (boolean) - Include detailed breakdown (default: false)
-
-**Response Codes**:
-- `200` - Dashboard data retrieved successfully
-- `400` - Invalid time range parameter
-- `403` - Insufficient dashboard permissions
-
-**Response Schema**:
-```json
-{
-  "timestamp": "2026-02-19T11:16:00Z",
-  "time_range": "24h",
-  "security_summary": {
-    "total_requests": 15420,
-    "blocked_requests": 89,
-    "pii_redactions": 234,
-    "security_alerts": 12,
-    "kill_switch_activations": 0
-  },
-  "active_agents": {
-    "total": 8,
-    "trusted": 6,
-    "probationary": 2,
-    "suspended": 0
-  },
-  "threat_metrics": {
-    "prompt_injections_blocked": 23,
-    "ssrf_attempts_blocked": 15,
-    "malicious_content_detected": 7,
-    "policy_violations": 31
-  },
-  "performance_metrics": {
-    "avg_processing_time_ms": 28.5,
-    "p95_processing_time_ms": 45.2,
-    "memory_usage_mb": 203,
-    "cpu_usage_percent": 18.7
-  },
-  "approval_queue": {
-    "pending": 3,
-    "approved_today": 15,
-    "denied_today": 2,
-    "expired": 1
-  }
-}
-```
-
----
-
-## Real-time Events
-
-### WebSocket /ws
-
-Real-time event streaming for monitoring and alerting.
-
-**Description**: WebSocket connection for receiving real-time security events, alerts, and system status updates.
-
-**Connection**: `wss://localhost:8443/api/v1/ws`
-
-**Authentication**: Include token in connection query parameter:
-```
-wss://localhost:8443/api/v1/ws?token=<jwt-token>
-```
-
-**Event Types**:
-- `security_alert` - High-priority security events
-- `agent_status` - Agent connection/disconnection events
-- `approval_request` - New approval requests
-- `kill_switch` - Kill switch activation/deactivation
-- `system_status` - System health changes
-- `audit_event` - Real-time audit entries
-
-**Message Format**:
-```json
-{
-  "event_type": "security_alert",
-  "timestamp": "2026-02-19T11:16:00Z",
-  "event_id": "event-uuid-here",
-  "severity": "high",
-  "data": {
-    "alert_type": "prompt_injection_detected",
-    "agent_id": "agent-12345",
-    "details": {
-      "confidence": 0.95,
-      "pattern": "system_prompt_override",
-      "blocked": true
-    }
-  }
-}
-```
-
-**Subscription Control**:
-```json
-{
-  "action": "subscribe",
-  "event_types": ["security_alert", "approval_request"],
-  "filters": {
-    "severity": ["high", "critical"],
-    "agent_ids": ["agent-12345", "agent-67890"]
-  }
-}
-```
-
----
-
-## System Information
-
-### GET /version
-
-Retrieve system version and build information.
-
-**Description**: System version, build details, and feature flags for debugging and compatibility verification.
-
-**Response Schema**:
-```json
-{
-  "version": "0.9.0",
-  "build": {
-    "commit": "a1b2c3d4e5f6789",
-    "branch": "main",
-    "build_date": "2026-02-15T14:30:00Z",
-    "build_number": "1234"
-  },
-  "features": {
-    "pii_detection": true,
-    "prompt_injection_protection": true,
-    "mcp_proxy": true,
-    "web_proxy": true,
-    "ssh_proxy": true,
-    "kill_switch": true,
-    "approval_queue": true,
-    "audit_trail": true
-  },
-  "dependencies": {
-    "node_version": "18.19.0",
-    "container_runtime": "docker",
-    "database": "sqlite3",
-    "security_modules": 26
-  }
-}
-```
-
----
-
-## Error Responses
-
-All API endpoints use consistent error response format:
-
-```json
-{
-  "error": {
-    "code": "INVALID_REQUEST",
-    "message": "Request validation failed",
-    "details": {
-      "field": "agent_id",
-      "reason": "Required field missing"
-    },
-    "timestamp": "2026-02-19T11:16:00Z",
-    "request_id": "req-uuid-here"
-  }
-}
-```
-
-**Common Error Codes**:
-- `INVALID_REQUEST` - Malformed request data
-- `AUTHENTICATION_FAILED` - Invalid or expired token
-- `AUTHORIZATION_DENIED` - Insufficient permissions
-- `RATE_LIMIT_EXCEEDED` - Too many requests
-- `RESOURCE_NOT_FOUND` - Requested resource not found
-- `INTERNAL_ERROR` - Server processing error
-- `SERVICE_UNAVAILABLE` - System temporarily unavailable
-
----
-
-## Rate Limiting
-
-API endpoints implement tiered rate limiting:
-
-**Tier 1 (Critical Operations)**:
-- Kill switch: 5 requests per minute
-- Approval actions: 20 requests per minute
-
-**Tier 2 (Security Operations)**:
-- Message ingestion: 1000 requests per minute
-- Audit queries: 100 requests per minute
-
-**Tier 3 (Monitoring)**:
-- Health checks: Unlimited
-- Dashboard: 60 requests per minute
-- WebSocket: 1 connection per token
-
-**Rate Limit Headers**:
-```
-X-RateLimit-Limit: 1000
-X-RateLimit-Remaining: 995
-X-RateLimit-Reset: 1640995200
-```
-
----
-
-## Pagination
-
-Endpoints supporting pagination use cursor-based pagination:
-
-**Request Parameters**:
-- `limit` - Maximum results per page (default varies by endpoint)
-- `cursor` - Pagination cursor from previous response
-
-**Response Format**:
-```json
-{
-  "data": [...],
-  "pagination": {
-    "has_next": true,
-    "next_cursor": "cursor-string-here",
-    "total_count": 1524
-  }
-}
-```
-
-This API reference provides comprehensive documentation for integrating with AgentShroud's security proxy functionality while maintaining security, performance, and reliability standards.
+## Source of truth
+
+This document is a map, not a contract — the routes themselves, their
+request/response Pydantic models, and their exact status codes live in:
+- `gateway/ingest_api/main.py` — core routes + router mounting
+- `gateway/soc/router.py` — `/soc/v1/*` Shared Command Layer
+- `gateway/web/api.py`, `gateway/web/management.py` — web control center
+- `gateway/ingest_api/routes/` — health, forward, approval, dashboard,
+  version routers
+
+When in doubt, `grep -n '@app\.\|@router\.' <file>` beats this document.

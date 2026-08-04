@@ -20,6 +20,7 @@ from __future__ import annotations
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
+
 import voice_gateway.server as srv
 from voice_gateway.server import _call_agent, _record_turn_latency, _voice_forward_metadata
 

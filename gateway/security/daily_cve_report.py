@@ -148,9 +148,20 @@ def _build_image_targets() -> List[str]:
 
     bot_images: List[str] = []
     try:
+        from pathlib import Path
+
         from ..ingest_api.config import load_config
 
-        for bot in load_config().bots.values():
+        # Real agentshroud.yaml is gitignored (per-deployment secret config) and
+        # absent in CI — fall back to the committed .example so this still works
+        # there, same pattern as gateway/tests/test_config.py's _load_config().
+        try:
+            config = load_config()
+        except FileNotFoundError:
+            repo_root = Path(__file__).resolve().parents[2]
+            config = load_config(repo_root / "agentshroud.yaml.example")
+
+        for bot in config.bots.values():
             bot_images.append(bot.image or f"{bot.resolved_container_name}:latest")
     except Exception as exc:
         logger.warning("_build_image_targets: could not load per-bot images: %s", exc)

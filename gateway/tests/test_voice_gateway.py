@@ -32,6 +32,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 from fastapi.testclient import TestClient
+
 from voice_gateway.server import _call_llm, app
 
 
@@ -130,6 +131,7 @@ def test_tts_empty_text_returns_empty():
 def test_tts_synthesize_via_kokoro(monkeypatch):
     """synthesize() runs the Kokoro pipeline; when rates match no resampling occurs."""
     import numpy as np
+
     import voice_gateway.tts as tts_mod
 
     audio = np.zeros(100, dtype=np.float32)  # 100 samples of silence
@@ -148,6 +150,7 @@ def test_tts_resamples_24000_to_16000(monkeypatch):
     approximately N * 16000/24000 samples.  The exact ratio is checked within 1%.
     """
     import numpy as np
+
     import voice_gateway.tts as tts_mod
 
     n_src = 24000 // 2  # 0.5 s of silence at Kokoro's native 24000 Hz
@@ -489,6 +492,7 @@ def test_tts_synthesize_passes_normalised_text_to_kokoro(monkeypatch):
     bold markers or redaction placeholder tokens.
     """
     import numpy as np
+
     import voice_gateway.tts as tts_mod
 
     captured_text: list[str] = []
@@ -1207,6 +1211,7 @@ async def test_call_agent_uses_structured_timeout(monkeypatch):
     /forward timeout (120 s) so its graceful body is still caught.
     """
     import httpx
+
     import voice_gateway.server as srv
 
     captured_timeout: dict = {}
@@ -1483,8 +1488,9 @@ async def test_ws_pipeline_error_logs_and_recovers_to_idle(monkeypatch, caplog):
     import logging
     from unittest.mock import AsyncMock, MagicMock
 
-    import voice_gateway.server as srv
     from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
 
     # Mock WebSocket
     ws = MagicMock()
@@ -1550,6 +1556,7 @@ async def test_call_agent_read_timeout_returns_fallback(monkeypatch):
     from unittest.mock import AsyncMock, patch
 
     import httpx
+
     import voice_gateway.server as srv
 
     with patch(
@@ -1574,8 +1581,9 @@ async def test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fai
     import logging
     from unittest.mock import AsyncMock, MagicMock
 
-    import voice_gateway.server as srv
     from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
 
     ws = MagicMock()
     ws.client = MagicMock()
@@ -1650,8 +1658,9 @@ async def test_ws_dirty_close_before_initial_state_is_handled_cleanly(monkeypatc
     """
     import logging
 
-    import voice_gateway.server as srv
     from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
 
     ws = MagicMock()
     ws.client = MagicMock()
@@ -1701,6 +1710,7 @@ def test_resample_antialias_attenuates_above_nyquist():
     import struct
 
     import numpy as np
+
     from voice_gateway.tts import _resample_s16le_mono
 
     src_rate = 22050
@@ -1739,6 +1749,7 @@ def test_resample_passband_preserved():
     import struct
 
     import numpy as np
+
     from voice_gateway.tts import _resample_s16le_mono
 
     src_rate = 22050
@@ -1851,9 +1862,10 @@ async def test_listen_without_end_times_out(monkeypatch):
     """
     from unittest.mock import AsyncMock, MagicMock
 
+    from fastapi.websockets import WebSocketDisconnect
+
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
-    from fastapi.websockets import WebSocketDisconnect
 
     # Zero-second timeout so the deadline is always in the past on the next loop
     # iteration — no real waiting required, test completes instantly.
@@ -1913,9 +1925,10 @@ async def test_pcm_buffer_bounded(monkeypatch):
     """
     from unittest.mock import AsyncMock, MagicMock
 
+    from fastapi.websockets import WebSocketDisconnect
+
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
-    from fastapi.websockets import WebSocketDisconnect
 
     cap = 200  # tiny cap so the test is fast; 200 bytes ≪ 1000 bytes streamed
     monkeypatch.setattr(srv, "_PCM_MAX_BYTES", cap)
@@ -1990,10 +2003,11 @@ async def test_ws_stop_during_speaking_aborts_tts(monkeypatch):
     which the device rejected all new utterances.  The server must read the
     socket concurrently with the send loop and honour STOP mid-stream.
     """
+    from fastapi.websockets import WebSocketDisconnect
+
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
-    from fastapi.websockets import WebSocketDisconnect
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "tell me a story")
@@ -2050,8 +2064,9 @@ async def test_ws_stop_during_speaking_aborts_tts(monkeypatch):
 async def test_ws_stale_stop_when_idle_is_ignored(monkeypatch):
     """A STOP arriving outside SPEAKING (e.g. the tap landed just as TTS ended)
     must be ignored without crashing the session loop."""
-    import voice_gateway.server as srv
     from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
 
@@ -2074,10 +2089,11 @@ async def test_ws_device_log_during_speaking_still_recorded(monkeypatch, caplog)
     logged, not silently swallowed by the concurrent stop-watcher."""
     import logging
 
+    from fastapi.websockets import WebSocketDisconnect
+
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
-    from fastapi.websockets import WebSocketDisconnect
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "hello")
@@ -2114,10 +2130,11 @@ async def test_ws_hung_tts_synthesis_still_returns_idle(monkeypatch):
     timeout aborts synthesis and the session still sends END + state:idle."""
     import time
 
+    from fastapi.websockets import WebSocketDisconnect
+
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
-    from fastapi.websockets import WebSocketDisconnect
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
     monkeypatch.setattr(srv, "_TTS_SENTENCE_TIMEOUT_S", 0.05)
@@ -2186,10 +2203,11 @@ async def test_ws_volume_command_intercepted(monkeypatch):
     """'set volume X%' must NOT reach the agent: the server sends a
     {"cmd":"set_volume","value":N} control frame to the device and speaks a
     confirmation via the normal TTS path."""
+    from fastapi.websockets import WebSocketDisconnect
+
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
-    from fastapi.websockets import WebSocketDisconnect
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "Set volume to 80%.")
@@ -2237,10 +2255,11 @@ async def test_ws_volume_command_with_chained_question(monkeypatch):
     """'Set volume 80. What time is it?' must apply the volume AND route the
     remaining question to the agent, speaking confirmation + answer together
     (owner hit the swallowed-question form three times in live use)."""
+    from fastapi.websockets import WebSocketDisconnect
+
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
-    from fastapi.websockets import WebSocketDisconnect
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "Set volume 80. What time is it?")
@@ -2342,10 +2361,11 @@ def test_answer_volume_query_returns_tracked_level():
 async def test_ws_volume_query_intercepted_returns_tracked_level(monkeypatch):
     """'What's the volume?' must NOT reach the agent: after a prior set the
     server speaks the tracked level via the normal TTS path and never dispatches."""
+    from fastapi.websockets import WebSocketDisconnect
+
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
-    from fastapi.websockets import WebSocketDisconnect
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
     monkeypatch.setattr(srv, "_last_set_volume", 80)
@@ -2392,10 +2412,11 @@ async def test_ws_volume_query_intercepted_returns_tracked_level(monkeypatch):
 async def test_ws_volume_query_unknown_state_intercepted(monkeypatch):
     """Before any set, 'what is the volume' speaks the unknown-state reply and
     still short-circuits the agent."""
+    from fastapi.websockets import WebSocketDisconnect
+
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
-    from fastapi.websockets import WebSocketDisconnect
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
     monkeypatch.setattr(srv, "_last_set_volume", None)
@@ -2433,10 +2454,11 @@ async def test_ws_volume_query_unknown_state_intercepted(monkeypatch):
 async def test_ws_set_then_query_reports_the_set_level(monkeypatch):
     """A 'set volume' updates the tracked level so a later query reports it —
     proves the set path and the read path share the same module state."""
+    from fastapi.websockets import WebSocketDisconnect
+
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
-    from fastapi.websockets import WebSocketDisconnect
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
     monkeypatch.setattr(srv, "_last_set_volume", None)
@@ -2510,9 +2532,10 @@ async def test_listen_offset_resumes_partial_upload(monkeypatch):
     sends 'LISTEN <offset>' and only the remainder — STT still receives ONE
     complete utterance.  (Full restarts were the dominant THINKING-time cost
     on the flaky hotspot link.)"""
+    from fastapi.websockets import WebSocketDisconnect
+
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
-    from fastapi.websockets import WebSocketDisconnect
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
 
@@ -2561,9 +2584,10 @@ async def test_listen_offset_resumes_partial_upload(monkeypatch):
 @pytest.mark.asyncio
 async def test_bare_listen_starts_fresh(monkeypatch):
     """A bare LISTEN after a stale partial upload must NOT prepend old audio."""
+    from fastapi.websockets import WebSocketDisconnect
+
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
-    from fastapi.websockets import WebSocketDisconnect
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
     received: list = []
@@ -2590,9 +2614,10 @@ async def test_listen_offset_with_stale_cache_degrades_to_fresh(monkeypatch):
     """LISTEN <offset> with an expired cache must behave like a fresh LISTEN
     (the device's resent-remainder is all the server gets — better a short
     utterance than a crash or stale-audio corruption)."""
+    from fastapi.websockets import WebSocketDisconnect
+
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
-    from fastapi.websockets import WebSocketDisconnect
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
     received: list = []
@@ -2618,10 +2643,11 @@ async def test_listen_offset_with_stale_cache_degrades_to_fresh(monkeypatch):
 async def test_tts_resume_after_mid_stream_disconnect(monkeypatch):
     """If the socket dies during the TTS downlink, the NEXT connection must
     receive the un-sent remainder (+END +idle) so the reply is not lost."""
+    from fastapi.websockets import WebSocketDisconnect
+
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
-    from fastapi.websockets import WebSocketDisconnect
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "hello")
@@ -2670,8 +2696,9 @@ async def test_tts_resume_after_mid_stream_disconnect(monkeypatch):
 @pytest.mark.asyncio
 async def test_tts_resume_stale_cache_ignored(monkeypatch):
     """A resume cache older than the freshness window must not replay."""
-    import voice_gateway.server as srv
     from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
     srv._reply_resume = {
@@ -2693,6 +2720,7 @@ def test_tts_synthesize_fades_sentence_edges(monkeypatch):
     """Each synthesized sentence must ramp in/out over ~5 ms so per-sentence
     Kokoro output joins without DC/level steps (audible clicks)."""
     import numpy as np
+
     import voice_gateway.tts as tts_mod
 
     class _FakePipeline:
