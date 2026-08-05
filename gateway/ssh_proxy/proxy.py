@@ -328,6 +328,7 @@ class SSHProxy:
         )
 
         start = time.monotonic()
+        proc = None
         try:
             proc = await asyncio.create_subprocess_exec(
                 *ssh_args,
@@ -383,6 +384,9 @@ class SSHProxy:
                 duration_seconds=duration,
             )
         except asyncio.CancelledError:
+            if proc is not None and proc.returncode is None:
+                proc.kill()
+                await proc.wait()
             duration = time.monotonic() - start
             return SSHWriteResult(
                 host=host_name,
@@ -422,6 +426,7 @@ class SSHProxy:
         ssh_args.append(remote_command)
 
         start = time.monotonic()
+        proc = None
         try:
             proc = await asyncio.create_subprocess_exec(
                 *ssh_args,
@@ -465,6 +470,9 @@ class SSHProxy:
                 command=command,
             )
         except asyncio.CancelledError:
+            if proc is not None and proc.returncode is None:
+                proc.kill()
+                await proc.wait()
             duration = time.monotonic() - start
             return SSHResult(
                 stdout="",

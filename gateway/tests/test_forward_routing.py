@@ -79,7 +79,12 @@ def _make_mock_app_state(bot_name: str, pipeline_captor: _PipelineCaptor):
     mock_state.ledger.add_entry = AsyncMock(
         return_value=MagicMock(id="ledger-id", content_hash="hash", timestamp="ts")
     )
+    mock_state.ledger.record = AsyncMock(
+        return_value=MagicMock(id="ledger-id", content_hash="hash", timestamp="ts")
+    )
     mock_state.ledger.update_entry = AsyncMock()
+    mock_state.event_bus = MagicMock()
+    mock_state.event_bus.emit = AsyncMock()
     mock_state.audit_store = None
     mock_state.collaborator_tracker = None
     mock_state.consent_framework = None
