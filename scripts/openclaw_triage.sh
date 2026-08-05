@@ -56,8 +56,8 @@ save_shell tmp_openclaw_listing "ls -lah /tmp/openclaw 2>/dev/null || true"
 save_shell tmp_openclaw_grep "grep -RInE 'pair|trusted|approve|auth|token|websocket|ws|localhost|127\\.0\\.0\\.1|failed' /tmp/openclaw 2>/dev/null || true"
 
 log "Capturing container environment hints (redacted grep only)"
-save_shell bot_env_hints "docker exec \"$BOT_CONTAINER\" /bin/sh -lc 'env | grep -E \"OPENCLAW|GATEWAY|BIND|PORT\"' || true"
-save_shell gateway_env_hints "docker exec \"$GW_CONTAINER\" /bin/sh -lc 'env | grep -E \"OPENCLAW|GATEWAY|BIND|PORT\"' || true"
+save_shell bot_env_hints "docker exec \"$BOT_CONTAINER\" /bin/sh -lc 'env | grep -E \"OPENCLAW|GATEWAY|BIND|PORT\" | grep -Eiv \"PASSWORD|TOKEN|SECRET|KEY\"' || true"
+save_shell gateway_env_hints "docker exec \"$GW_CONTAINER\" /bin/sh -lc 'env | grep -E \"OPENCLAW|GATEWAY|BIND|PORT\" | grep -Eiv \"PASSWORD|TOKEN|SECRET|KEY\"' || true"
 
 log "Summary"
 {
