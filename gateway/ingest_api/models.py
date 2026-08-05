@@ -10,6 +10,8 @@ Defines request and response schemas for all endpoints.
 """
 
 
+import base64
+import binascii
 from typing import Any, Literal, Optional
 
 from pydantic import BaseModel, Field, field_validator
@@ -243,6 +245,71 @@ class SSHExecResponse(BaseModel):
     exit_code: int
     duration_seconds: float
     approved_by: str
+    timestamp: str
+    audit_id: str
+
+
+class SSHWriteFileRequest(BaseModel):
+    """Request to write file content to an allowlisted SSH host.
+
+    Unlike SSHExecRequest, path and content are structured DATA fields —
+    they are never concatenated into a shell command string, so the
+    shell-metacharacter injection regex in ssh_proxy.proxy.validate_command()
+    does not apply and is not invoked for this endpoint. See
+    ssh_proxy.proxy.SSHProxy.validate_write_file() / .write_file().
+    """
+
+    host: str = Field(..., max_length=253, description="SSH host name from config")
+    path: str = Field(
+        ...,
+        max_length=4_096,
+        description="Destination path on the remote host (must resolve under the "
+        "approved repo checkout root)",
+    )
+    content_base64: str = Field(
+        ...,
+        max_length=700_000,
+        description="Base64-encoded file content. Decoded size is capped at ~500KB "
+        "by SSHProxy.validate_write_file().",
+    )
+    reason: str = Field(default="", max_length=2_000, description="Reason for the write")
+
+    @field_validator("path")
+    @classmethod
+    def path_not_empty(cls, v: str) -> str:
+        if not v.strip():
+            raise ValueError("path must not be empty")
+        return v
+
+    @field_validator("content_base64")
+    @classmethod
+    def validate_base64(cls, v: str) -> str:
+        if not v:
+            raise ValueError("content_base64 must not be empty")
+        try:
+            base64.b64decode(v, validate=True)
+        except (binascii.Error, ValueError) as exc:
+            raise ValueError(f"content_base64 is not valid base64: {exc}") from exc
+        return v
+
+
+class SSHWriteFileResponse(BaseModel):
+    """Response from POST /ssh/write_file.
+
+    success reflects whether the remote write itself succeeded (exit_code
+    == 0) — a 200 response can still carry success=False, mirroring how
+    SSHExecResponse surfaces a nonzero exit_code without raising an
+    HTTPException, so callers can inspect stderr for diagnostics.
+    """
+
+    request_id: str
+    host: str
+    path: str
+    success: bool
+    bytes_written: int
+    exit_code: int
+    stderr: str
+    duration_seconds: float
     timestamp: str
     audit_id: str
 

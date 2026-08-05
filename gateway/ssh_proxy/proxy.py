@@ -11,6 +11,9 @@ Executes SSH commands via asyncio subprocess with validation and timeout enforce
 
 
 import asyncio
+import base64
+import binascii
+import posixpath
 import re
 import time
 from dataclasses import dataclass
@@ -30,8 +33,63 @@ class SSHResult:
     command: str
 
 
+@dataclass
+class SSHWriteResult:
+    """Result of a structured SSH file-write operation (SSHProxy.write_file())"""
+
+    host: str
+    path: str
+    bytes_written: int
+    stdout: str
+    stderr: str
+    exit_code: int
+    duration_seconds: float
+
+
 # Path characters allowed in cwd: alphanumeric, /, -, _, ., space, @, ~
 _CWD_SAFE = re.compile(r"^[A-Za-z0-9/_\-. @~]+$")
+
+# === /ssh/write_file constants ===
+
+# Approved repo checkout root on the SSH target host. Every write_file()
+# destination must normalize to a path under this root — see
+# SSHProxy.validate_write_file() for why this is pure string/pathlib
+# normalization and NOT os.path.realpath()/Path.resolve().
+_ALLOWED_WRITE_ROOT = "/Users/agentshroud-bot/Development/agentshroud"
+
+# Decoded-content size cap for /ssh/write_file (~500KB).
+_MAX_WRITE_FILE_BYTES = 500_000
+
+# Fixed remote script executed via `python3 -c` for every write_file() call.
+# It is a CONSTANT — the same bytes run on every invocation regardless of
+# request content. Path and file content are never interpolated into this
+# string; they are sent as DATA on the SSH session's stdin (see
+# SSHProxy.write_file()) and read by this script at runtime. This is what
+# makes write_file() safe independent of validate_command()'s
+# shell-metacharacter regex: there is no shell string built from
+# attacker-influenced bytes anywhere in this path.
+_REMOTE_WRITE_FILE_SCRIPT = (
+    "import sys, base64, pathlib\n"
+    f"_ROOT = {_ALLOWED_WRITE_ROOT!r}\n"
+    "data = sys.stdin.buffer.read()\n"
+    "path_b64, _, content_b64 = data.partition(b'\\n')\n"
+    "path = base64.b64decode(path_b64).decode('utf-8')\n"
+    "content = base64.b64decode(content_b64)\n"
+    "if path != _ROOT and not path.startswith(_ROOT + '/'):\n"
+    "    sys.stderr.write('path outside allowed root')\n"
+    "    sys.exit(2)\n"
+    "p = pathlib.Path(path)\n"
+    "p.parent.mkdir(parents=True, exist_ok=True)\n"
+    "p.write_bytes(content)\n"
+    "sys.stdout.write(str(len(content)))\n"
+)
+# Base64 of the script above, computed once at import time from the constant
+# text — never from request data. Embedding it as base64 sidesteps remote
+# shell-quoting of the script body (base64's alphabet contains no shell
+# metacharacters) while the outer `python3 -c "..."` string stays fixed.
+_REMOTE_WRITE_FILE_SCRIPT_B64 = base64.b64encode(_REMOTE_WRITE_FILE_SCRIPT.encode("utf-8")).decode(
+    "ascii"
+)
 
 # Comprehensive shell metacharacter/injection patterns
 # Catches: ; | & ` $() ${} $VAR \n \r >> << > < and backslash sequences
@@ -114,6 +172,184 @@ class SSHProxy:
         if not _CWD_SAFE.match(cwd):
             return False, "cwd contains disallowed characters"
         return True, "OK"
+
+    def validate_write_file(
+        self, host_name: str, path: str, content_base64: str
+    ) -> tuple[bool, str]:
+        """Validate a structured /ssh/write_file request (host, path, content).
+
+        Returns (is_valid, reason) — same signaling shape as
+        validate_command()/validate_cwd().
+
+        Host allowlist: reuses the identical membership check
+        validate_command() performs (`host_name not in self.config.hosts`).
+        There is no separate host-allowlist function in this module to call
+        into — that one-line dict-membership test *is* the host-allowlist
+        check everywhere in this class (validate_command() above and
+        execute() below both inline the same test) — so it is reproduced
+        verbatim here rather than factored out, to avoid touching
+        validate_command() itself.
+
+        Path-traversal safety: proven via PURE lexical normalization
+        (posixpath.normpath), never os.path.realpath()/Path.resolve(). The
+        destination path lives on the remote SSH target host, not on this
+        gateway process's local disk, so there is nothing to stat locally —
+        realpath()/resolve() would either raise (path doesn't exist on this
+        machine) or resolve against the wrong filesystem entirely. Instead,
+        posixpath.normpath collapses '..'/'.' segments lexically (e.g.
+        "/a/b/../../etc" -> "/etc"), and we require the collapsed result to
+        still be prefixed by _ALLOWED_WRITE_ROOT.
+        """
+        if host_name not in self.config.hosts:
+            return False, f"Unknown host: {host_name}"
+
+        if not path or not path.strip():
+            return False, "Empty path"
+
+        if "\x00" in path:
+            return False, "Path contains a null byte"
+
+        candidate = path if path.startswith("/") else f"{_ALLOWED_WRITE_ROOT}/{path}"
+        normalized = posixpath.normpath(candidate)
+
+        if normalized != _ALLOWED_WRITE_ROOT and not normalized.startswith(
+            _ALLOWED_WRITE_ROOT + "/"
+        ):
+            return False, f"Path escapes allowed root {_ALLOWED_WRITE_ROOT}: {path}"
+
+        if normalized == _ALLOWED_WRITE_ROOT:
+            return False, "Path must reference a file inside the root, not the root itself"
+
+        try:
+            decoded_len = len(base64.b64decode(content_base64, validate=True))
+        except (binascii.Error, ValueError):
+            return False, "content_base64 is not valid base64"
+
+        if decoded_len > _MAX_WRITE_FILE_BYTES:
+            return (
+                False,
+                f"Content exceeds maximum size of {_MAX_WRITE_FILE_BYTES} bytes "
+                f"(decoded size: {decoded_len})",
+            )
+
+        return True, "OK"
+
+    async def write_file(
+        self,
+        host_name: str,
+        path: str,
+        content_base64: str,
+        timeout: int | None = None,
+    ) -> SSHWriteResult:
+        """Write file content to a remote host via structured (non-shell-string) transport.
+
+        Mirrors execute()'s SSH transport (same ssh_args construction via
+        asyncio.create_subprocess_exec) but the remote command is FIXED
+        (see _REMOTE_WRITE_FILE_SCRIPT_B64) and both `path` and the decoded
+        file content travel as DATA over the subprocess's stdin pipe —
+        neither is ever concatenated into the remote command string. Caller
+        is expected to have already called validate_write_file().
+        """
+        if host_name not in self.config.hosts:
+            raise ValueError(f"Unknown host: {host_name}")
+
+        host = self.config.hosts[host_name]
+        effective_timeout = timeout or host.max_session_seconds
+
+        ssh_args = [
+            "ssh",
+            "-o",
+            "StrictHostKeyChecking=yes",
+            "-o",
+            "BatchMode=yes",
+        ]
+        if host.known_hosts_file:
+            ssh_args.extend(["-o", f"UserKnownHostsFile={host.known_hosts_file}"])
+        ssh_args.extend(["-p", str(host.port)])
+        if host.key_path:
+            ssh_args.extend(["-i", host.key_path])
+        ssh_args.append(f"{host.username}@{host.host}")
+        # Fixed, non-interpolated remote command: the base64 blob is the
+        # module-level constant computed from _REMOTE_WRITE_FILE_SCRIPT at
+        # import time, never from `path` or `content_base64`.
+        remote_command = (
+            'python3 -c "import base64,sys;exec(base64.b64decode('
+            f"'{_REMOTE_WRITE_FILE_SCRIPT_B64}'))\""
+        )
+        ssh_args.append(remote_command)
+
+        # path and content are sent as DATA on stdin, not as argv/command
+        # text — shell metacharacters in either are inert here.
+        stdin_payload = (
+            base64.b64encode(path.encode("utf-8")) + b"\n" + content_base64.encode("ascii")
+        )
+
+        start = time.monotonic()
+        try:
+            proc = await asyncio.create_subprocess_exec(
+                *ssh_args,
+                stdin=asyncio.subprocess.PIPE,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE,
+            )
+            try:
+                stdout_bytes, stderr_bytes = await asyncio.wait_for(
+                    proc.communicate(input=stdin_payload), timeout=effective_timeout
+                )
+            except asyncio.TimeoutError:
+                proc.kill()
+                await proc.wait()
+                duration = time.monotonic() - start
+                return SSHWriteResult(
+                    host=host_name,
+                    path=path,
+                    bytes_written=0,
+                    stdout="",
+                    stderr=f"Timeout: write exceeded {effective_timeout}s",
+                    exit_code=-1,
+                    duration_seconds=duration,
+                )
+
+            duration = time.monotonic() - start
+            stdout_text = stdout_bytes.decode("utf-8", errors="replace")
+            exit_code = proc.returncode if proc.returncode is not None else -1
+            bytes_written = 0
+            if exit_code == 0:
+                try:
+                    bytes_written = int(stdout_text.strip())
+                except ValueError:
+                    bytes_written = 0
+            return SSHWriteResult(
+                host=host_name,
+                path=path,
+                bytes_written=bytes_written,
+                stdout=stdout_text,
+                stderr=stderr_bytes.decode("utf-8", errors="replace"),
+                exit_code=exit_code,
+                duration_seconds=duration,
+            )
+        except OSError as e:
+            duration = time.monotonic() - start
+            return SSHWriteResult(
+                host=host_name,
+                path=path,
+                bytes_written=0,
+                stdout="",
+                stderr=str(e),
+                exit_code=-1,
+                duration_seconds=duration,
+            )
+        except asyncio.CancelledError:
+            duration = time.monotonic() - start
+            return SSHWriteResult(
+                host=host_name,
+                path=path,
+                bytes_written=0,
+                stdout="",
+                stderr="Cancelled",
+                exit_code=-1,
+                duration_seconds=duration,
+            )
 
     async def execute(
         self, host_name: str, command: str, timeout: int | None = None, cwd: str | None = None

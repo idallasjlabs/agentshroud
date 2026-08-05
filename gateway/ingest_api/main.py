@@ -64,6 +64,8 @@ from .models import (
     LedgerQueryResponse,
     SSHExecRequest,
     SSHExecResponse,
+    SSHWriteFileRequest,
+    SSHWriteFileResponse,
 )
 from .routes.approval import router as approval_router
 from .routes.dashboard import router as dashboard_router
@@ -1083,6 +1085,107 @@ async def ssh_exec(request: SSHExecRequest, auth: AuthRequired):
             "status": "pending_approval",
             "message": f"Command requires approval: {request.command}",
         },
+    )
+
+
+@app.post("/ssh/write_file")
+async def ssh_write_file(request: SSHWriteFileRequest, auth: AuthRequired):
+    """Write file content to an allowlisted SSH host via structured transport.
+
+    Unlike /ssh/exec, `path` and `content_base64` are structured DATA
+    fields — they are never concatenated into a shell command string, so
+    validate_command()'s shell-metacharacter injection regex is irrelevant
+    here by construction. See SSHProxy.validate_write_file() / .write_file().
+    """
+    if app_state.ssh_proxy is None:
+        raise HTTPException(status_code=503, detail="SSH proxy not configured")
+
+    proxy: SSHProxy = app_state.ssh_proxy
+
+    # Check host exists (mirrors /ssh/exec's early check above)
+    if request.host not in proxy.config.hosts:
+        raise HTTPException(status_code=404, detail=f"Unknown SSH host: {request.host}")
+
+    # Validate path/content
+    valid, denial_reason = proxy.validate_write_file(
+        request.host, request.path, request.content_base64
+    )
+    if not valid:
+        # Audit denied write — never log raw file content, only path/reason
+        content_hash = hashlib.sha256(f"{request.path}:{request.host}".encode()).hexdigest()
+        await app_state.ledger.record(
+            source="ssh",
+            content=f"DENIED write_file: {request.path}",
+            original_content=content_hash,
+            sanitized=False,
+            redaction_count=0,
+            redaction_types=[],
+            forwarded_to=request.host,
+            content_type="ssh_write_file",
+            metadata={
+                "host": request.host,
+                "path": request.path,
+                "denied_reason": denial_reason,
+                "reason": request.reason,
+            },
+        )
+        await app_state.event_bus.emit(
+            make_event(
+                "ssh_write_file_denied",
+                f"SSH write_file denied on {request.host}: {denial_reason}",
+                {"host": request.host, "path": request.path, "reason": denial_reason},
+                "critical" if "escapes" in denial_reason.lower() else "warning",
+            )
+        )
+        status_code = 413 if "exceeds maximum size" in denial_reason.lower() else 403
+        raise HTTPException(status_code=status_code, detail=denial_reason)
+
+    result = await proxy.write_file(request.host, request.path, request.content_base64)
+
+    # Audit the write — never log raw file content, only path/reason/outcome
+    content_hash = hashlib.sha256(f"{request.path}:{request.host}".encode()).hexdigest()
+    entry = await app_state.ledger.record(
+        source="ssh",
+        content=f"write_file: {request.path}",
+        original_content=content_hash,
+        sanitized=False,
+        redaction_count=0,
+        redaction_types=[],
+        forwarded_to=request.host,
+        content_type="ssh_write_file",
+        metadata={
+            "host": request.host,
+            "path": request.path,
+            "exit_code": result.exit_code,
+            "bytes_written": result.bytes_written,
+            "duration": result.duration_seconds,
+            "reason": request.reason,
+        },
+    )
+    await app_state.event_bus.emit(
+        make_event(
+            "ssh_write_file",
+            f"SSH write_file on {request.host}: {request.path} (exit {result.exit_code})",
+            {
+                "host": request.host,
+                "path": request.path,
+                "exit_code": result.exit_code,
+                "bytes_written": result.bytes_written,
+            },
+        )
+    )
+    now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+    return SSHWriteFileResponse(
+        request_id=entry.id,
+        host=request.host,
+        path=request.path,
+        success=result.exit_code == 0,
+        bytes_written=result.bytes_written,
+        exit_code=result.exit_code,
+        stderr=result.stderr,
+        duration_seconds=result.duration_seconds,
+        timestamp=now,
+        audit_id=entry.id,
     )
 
 
