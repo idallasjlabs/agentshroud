@@ -52,10 +52,16 @@ class OAuthRequest:
 class OAuthSecurityValidator:
     _COOKIE_SECRET = secrets.token_bytes(32)
 
-    def __init__(self, allowed_redirect_uris: List[str], require_pkce: bool = True):
+    def __init__(
+        self,
+        allowed_redirect_uris: List[str],
+        require_pkce: bool = True,
+        consent_cookie_max_age: float = 86400,
+    ):
         self.allowed_redirect_uris = set(allowed_redirect_uris)
         self.require_pkce = require_pkce
         self.require_s256 = False
+        self.consent_cookie_max_age = consent_cookie_max_age
         self._known_shared_ids: Set[str] = set()
         self._used_states: Dict[str, float] = {}
         self._max_states = 100000
@@ -149,6 +155,8 @@ class OAuthSecurityValidator:
             if not hmac.compare_digest(sig, expected_sig):
                 return False
             data = json.loads(payload)
+            if time.time() - data["t"] > self.consent_cookie_max_age:
+                return False
             return (
                 data["c"] == client_id
                 and sorted(data["s"]) == sorted(scopes)

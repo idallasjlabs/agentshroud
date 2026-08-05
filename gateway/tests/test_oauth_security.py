@@ -205,3 +205,39 @@ class TestConsentCookieBinding:
         cookie = validator.create_consent_cookie("client-1", ["read"], "user-1")
         tampered = cookie[:-4] + "XXXX"
         assert not validator.validate_consent_cookie(tampered, "client-1", ["read"], "user-1")
+
+    def test_cookie_expired_rejected(self, validator, monkeypatch):
+        import security.oauth_security as oauth_security_module
+
+        monkeypatch.setattr(oauth_security_module.time, "time", lambda: 1000.0)
+        cookie = validator.create_consent_cookie("client-1", ["read"], "user-1")
+
+        monkeypatch.setattr(
+            oauth_security_module.time, "time", lambda: 1000.0 + 86400 + 1
+        )
+        assert not validator.validate_consent_cookie(cookie, "client-1", ["read"], "user-1")
+
+    def test_cookie_within_max_age_accepted(self, validator, monkeypatch):
+        import security.oauth_security as oauth_security_module
+
+        monkeypatch.setattr(oauth_security_module.time, "time", lambda: 1000.0)
+        cookie = validator.create_consent_cookie("client-1", ["read"], "user-1")
+
+        monkeypatch.setattr(
+            oauth_security_module.time, "time", lambda: 1000.0 + 86400 - 1
+        )
+        assert validator.validate_consent_cookie(cookie, "client-1", ["read"], "user-1")
+
+    def test_cookie_custom_max_age_expires_sooner(self, monkeypatch):
+        import security.oauth_security as oauth_security_module
+
+        v = OAuthSecurityValidator(
+            allowed_redirect_uris=["https://app.example.com/callback"],
+            require_pkce=True,
+            consent_cookie_max_age=60,
+        )
+        monkeypatch.setattr(oauth_security_module.time, "time", lambda: 1000.0)
+        cookie = v.create_consent_cookie("client-1", ["read"], "user-1")
+
+        monkeypatch.setattr(oauth_security_module.time, "time", lambda: 1000.0 + 61)
+        assert not v.validate_consent_cookie(cookie, "client-1", ["read"], "user-1")
