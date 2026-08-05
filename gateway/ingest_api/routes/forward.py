@@ -208,7 +208,9 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
                         len(scan.redactions),
                     )
             except Exception as e:
-                logger.warning("email-send: PII scan failed (%s), proceeding with original body", e)
+                logger.error("email-send: PII scan failed (%s), blocking email (fail-closed)", e)
+                sanitized_body = "[EMAIL BLOCKED: PII scan failed — content withheld]"
+                pii_redacted = True
 
     if not recipient_allowed:
         # Unknown recipient → queue for approval
