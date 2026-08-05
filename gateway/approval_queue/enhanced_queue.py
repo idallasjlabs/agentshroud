@@ -325,7 +325,7 @@ class EnhancedApprovalQueue:
             return False
 
         try:
-            return await asyncio.wait_for(future, timeout=timeout)
+            return await asyncio.wait_for(asyncio.shield(future), timeout=timeout)
         except asyncio.TimeoutError:
             return False
 
@@ -482,7 +482,7 @@ class EnhancedApprovalQueue:
         """Send a JSON message to all connected WebSocket clients."""
         disconnected = set()
 
-        for client in self.connected_clients:
+        for client in list(self.connected_clients):
             try:
                 await client.send_json(message)
             except Exception as e:

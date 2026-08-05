@@ -368,7 +368,7 @@ class ApprovalQueue:
         """
         disconnected = set()
 
-        for client in self.connected_clients:
+        for client in list(self.connected_clients):
             try:
                 await client.send_json(message)
             except Exception as e:
