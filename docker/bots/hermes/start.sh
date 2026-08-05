@@ -143,7 +143,7 @@ _telegram_send_photo() {
         return 1
     fi
     if ! echo "$resp" | grep -q '"ok":true'; then
-        echo "[hermes-startup] ⚠ Photo notification: gateway error: ${resp:0:200}" >&2
+        echo "[hermes-startup] ⚠ Photo notification: gateway error: $(printf '%.200s' "$resp")" >&2
         return 1
     fi
     return 0

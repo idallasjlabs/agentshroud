@@ -26,7 +26,11 @@
 if [ -d /run/s6/container_environment ]; then
     set -a
     for _f in /run/s6/container_environment/*; do
-        [ -f "$_f" ] && eval "$(basename "$_f")=$(cat "$_f" 2>/dev/null)" 2>/dev/null || true
+        if [ -f "$_f" ]; then
+            _varname="$(basename "$_f")"
+            _varval="$(cat "$_f" 2>/dev/null)" || _varval=""
+            export "$_varname=$_varval" 2>/dev/null || true
+        fi
     done
     set +a
 fi
