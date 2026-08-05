@@ -324,9 +324,7 @@ class SSHProxy:
         # path and content are sent as DATA on stdin, not as argv/command
         # text — shell metacharacters in either are inert here.
         stdin_payload = (
-            base64.b64encode(absolute_path.encode("utf-8"))
-            + b"\n"
-            + content_base64.encode("ascii")
+            base64.b64encode(absolute_path.encode("utf-8")) + b"\n" + content_base64.encode("ascii")
         )
 
         start = time.monotonic()

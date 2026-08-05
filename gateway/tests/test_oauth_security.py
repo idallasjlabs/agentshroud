@@ -212,9 +212,7 @@ class TestConsentCookieBinding:
         monkeypatch.setattr(oauth_security_module.time, "time", lambda: 1000.0)
         cookie = validator.create_consent_cookie("client-1", ["read"], "user-1")
 
-        monkeypatch.setattr(
-            oauth_security_module.time, "time", lambda: 1000.0 + 86400 + 1
-        )
+        monkeypatch.setattr(oauth_security_module.time, "time", lambda: 1000.0 + 86400 + 1)
         assert not validator.validate_consent_cookie(cookie, "client-1", ["read"], "user-1")
 
     def test_cookie_within_max_age_accepted(self, validator, monkeypatch):
@@ -223,9 +221,7 @@ class TestConsentCookieBinding:
         monkeypatch.setattr(oauth_security_module.time, "time", lambda: 1000.0)
         cookie = validator.create_consent_cookie("client-1", ["read"], "user-1")
 
-        monkeypatch.setattr(
-            oauth_security_module.time, "time", lambda: 1000.0 + 86400 - 1
-        )
+        monkeypatch.setattr(oauth_security_module.time, "time", lambda: 1000.0 + 86400 - 1)
         assert validator.validate_consent_cookie(cookie, "client-1", ["read"], "user-1")
 
     def test_cookie_custom_max_age_expires_sooner(self, monkeypatch):
