@@ -360,11 +360,18 @@ async def killswitch(
     engine = _get_engine()
 
     if mode == "freeze":
+        failed = []
         for name in _bot_service_names():
             try:
                 engine.pause(name)
             except Exception as _e:
                 logger.warning("killswitch freeze: could not pause %s: %s", name, _e)
+                failed.append(name)
+        if failed:
+            raise HTTPException(
+                status_code=500,
+                detail=f"Kill-switch freeze partially failed: could not pause {failed}",
+            )
         return {"status": "frozen", "mode": mode}
 
     elif mode == "shutdown":
@@ -372,15 +379,26 @@ async def killswitch(
             engine.compose_down(RuntimeConfig.from_env().compose_file)
         except Exception as e:
             logger.error("Shutdown failed: %s", e)
+            raise HTTPException(
+                status_code=500,
+                detail=f"Kill-switch shutdown failed: {e}",
+            )
         return {"status": "shutdown", "mode": mode}
 
     elif mode == "disconnect":
+        failed = []
         for name in _bot_service_names():
             try:
                 engine.stop(name)
                 engine.rm(name, force=True)
             except Exception as _e:
                 logger.warning("killswitch disconnect: could not remove %s: %s", name, _e)
+                failed.append(name)
+        if failed:
+            raise HTTPException(
+                status_code=500,
+                detail=f"Kill-switch disconnect partially failed: could not remove {failed}",
+            )
         return {"status": "disconnected", "mode": mode}
 
     return {"status": "unknown"}
@@ -763,12 +781,15 @@ async def rollback_agentshroud(user: str = Depends(require_auth)) -> dict:
     import subprocess
 
     try:
-        subprocess.run(
+        reset_result = subprocess.run(
             ["git", "reset", "--hard", "HEAD~1"],
             capture_output=True,
+            text=True,
             timeout=30,
             cwd=".",
         )
+        if reset_result.returncode != 0:
+            raise RuntimeError(f"git reset failed: {reset_result.stderr}")
         engine = _get_engine()
         config = RuntimeConfig.from_env()
         engine.build("gateway/Dockerfile", "agentshroud-gateway:latest", ".")

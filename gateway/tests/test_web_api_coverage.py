@@ -314,13 +314,13 @@ class TestKillSwitch:
         resp = client.post("/api/killswitch/detonate", json={"confirm": True})
         assert resp.status_code == 400
 
-    def test_freeze_pauses_bot_even_if_pause_fails(self, client):
+    def test_freeze_reports_failure_when_pause_fails(self, client):
         eng = _engine()
         eng.pause.side_effect = RuntimeError("already paused")
         with patch("gateway.web.api._get_engine", return_value=eng):
             resp = client.post("/api/killswitch/freeze", json={"confirm": True})
-        assert resp.status_code == 200
-        assert resp.json() == {"status": "frozen", "mode": "freeze"}
+        assert resp.status_code == 500
+        assert "partially failed" in resp.json()["detail"]
 
     def test_shutdown_brings_stack_down(self, client):
         eng = _engine()
@@ -330,13 +330,13 @@ class TestKillSwitch:
         assert resp.json() == {"status": "shutdown", "mode": "shutdown"}
         eng.compose_down.assert_called_once()
 
-    def test_shutdown_failure_still_reports_shutdown(self, client):
+    def test_shutdown_failure_reports_error(self, client):
         eng = _engine()
         eng.compose_down.side_effect = RuntimeError("daemon gone")
         with patch("gateway.web.api._get_engine", return_value=eng):
             resp = client.post("/api/killswitch/shutdown", json={"confirm": True})
-        assert resp.status_code == 200
-        assert resp.json()["status"] == "shutdown"
+        assert resp.status_code == 500
+        assert "daemon gone" in resp.json()["detail"]
 
     def test_disconnect_stops_and_removes_bot(self, client):
         eng = _engine()
@@ -367,13 +367,13 @@ class TestKillSwitch:
         eng.stop.assert_any_call("agentshroud-openclaw")
         eng.stop.assert_any_call("agentshroud-hermes")
 
-    def test_disconnect_swallows_engine_errors(self, client):
+    def test_disconnect_reports_failure_on_engine_errors(self, client):
         eng = _engine()
         eng.stop.side_effect = RuntimeError("not running")
         with patch("gateway.web.api._get_engine", return_value=eng):
             resp = client.post("/api/killswitch/disconnect", json={"confirm": True})
-        assert resp.status_code == 200
-        assert resp.json()["status"] == "disconnected"
+        assert resp.status_code == 500
+        assert "partially failed" in resp.json()["detail"]
 
     def test_killswitch_action_default_unconfirmed(self):
         assert KillSwitchAction().confirm is False
