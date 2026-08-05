@@ -113,10 +113,17 @@ check "S7: apply-patches.js: stale channels.slack block removed when no tokens" 
 #       needs to spell out the user, so this never appears legitimately
 #   (c) a REAL Tailscale FQDN (`tail<hex>.ts.net`) — distinct from the generic
 #       `*.ts.net` wildcard used in warning text ("NEVER use ... *.ts.net")
+#
+# One precise, literal exception (added 2026-08-05, NOT a surrounding-phrase
+# filter like the one that caused the original regression): the i-sec-defense
+# and i-sec-offense skills document `agentshroud-bot <agentshroud-bot@agentshroud.ai>`
+# as the git commit-author identity to use — a fixed literal string, not a raw
+# ssh user@host construction, and not derived from any surrounding wording that
+# could coincidentally match real dangerous text.
 s8_hit=""
 for dir in "$REPO/docker/config/openclaw" "$REPO/docker/bots/openclaw/config" "$REPO/docker/config/hermes" "$REPO/docker/bots/hermes/config" "$REPO/docker/bots/openclaw/workspace/collaborator-workspace"; do
     [[ -d "$dir" ]] || continue
-    match="$(grep -rnE '\bssh (marvin|raspberrypi|trillian|pi)\b|agentshroud-bot@|\btail[0-9a-f]+\.ts\.net\b' "$dir" 2>/dev/null || true)"
+    match="$(grep -rnE '\bssh (marvin|raspberrypi|trillian|pi)\b|agentshroud-bot@|\btail[0-9a-f]+\.ts\.net\b' "$dir" 2>/dev/null | grep -v 'agentshroud-bot@agentshroud\.ai' || true)"
     if [[ -n "$match" ]]; then
         s8_hit="${s8_hit}${match}"$'\n'
     fi

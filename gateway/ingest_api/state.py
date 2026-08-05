@@ -12,6 +12,7 @@ from ..proxy.pipeline import SecurityPipeline
 from ..security.egress_filter import EgressFilter
 from ..security.prompt_guard import PromptGuard
 from ..security.trust_manager import TrustManager
+from ..ssh_proxy.proxy import SSHProxy
 from .config import GatewayConfig
 from .event_bus import EventBus
 from .ledger import DataLedger
@@ -58,6 +59,8 @@ class AppState:
     group_registry: Optional[object]
     # Multi-bot shared report store (SCRUM-79)
     report_store: Optional[object]
+    # SSH proxy for /ssh/exec and /ssh/write_file (set by lifespan.py at startup)
+    ssh_proxy: Optional[SSHProxy]
 
 
 # Global application state instance

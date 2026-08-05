@@ -273,6 +273,7 @@ declare -a SECRET_DEFS=(
     "slack_app_token|OpenClaw Slack app token (xapp-...)|yes|yes|openclaw"
     # Hermes Agent secrets (v1.1.0 — second bot)
     "hermes_telegram_bot_token|Hermes Telegram bot token (@agentshroud_hermes_bot)|yes|yes|hermes"
+    "hermes_telegram_bot_token_marvin|Hermes Telegram bot token (marvin dev, @agentshroud_marvin_hermes_bot)|yes|yes|hermes"
     "slack_bot_token_hermes|Hermes Slack bot token (xoxb-...)|yes|yes|hermes"
     "slack_app_token_hermes|Hermes Slack app token (xapp-...)|yes|yes|hermes"
     "brave_api_key|Brave Search API key (shared with all bots)|yes|yes|all"

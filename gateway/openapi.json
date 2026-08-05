@@ -1048,6 +1048,43 @@
         "title": "SSHExecRequest",
         "type": "object"
       },
+      "SSHWriteFileRequest": {
+        "description": "Request to write file content to an allowlisted SSH host.\n\nUnlike SSHExecRequest, path and content are structured DATA fields \u2014\nthey are never concatenated into a shell command string, so the\nshell-metacharacter injection regex in ssh_proxy.proxy.validate_command()\ndoes not apply and is not invoked for this endpoint. See\nssh_proxy.proxy.SSHProxy.validate_write_file() / .write_file().",
+        "properties": {
+          "content_base64": {
+            "description": "Base64-encoded file content. Decoded size is capped at ~500KB by SSHProxy.validate_write_file().",
+            "maxLength": 700000,
+            "title": "Content Base64",
+            "type": "string"
+          },
+          "host": {
+            "description": "SSH host name from config",
+            "maxLength": 253,
+            "title": "Host",
+            "type": "string"
+          },
+          "path": {
+            "description": "Destination path on the remote host (must resolve under the approved repo checkout root)",
+            "maxLength": 4096,
+            "title": "Path",
+            "type": "string"
+          },
+          "reason": {
+            "default": "",
+            "description": "Reason for the write",
+            "maxLength": 2000,
+            "title": "Reason",
+            "type": "string"
+          }
+        },
+        "required": [
+          "host",
+          "path",
+          "content_base64"
+        ],
+        "title": "SSHWriteFileRequest",
+        "type": "object"
+      },
       "ScanRequest": {
         "properties": {
           "confirm": {
@@ -13616,6 +13653,43 @@
           }
         },
         "summary": "Ssh Hosts"
+      }
+    },
+    "/ssh/write_file": {
+      "post": {
+        "description": "Write file content to an allowlisted SSH host via structured transport.\n\nUnlike /ssh/exec, `path` and `content_base64` are structured DATA\nfields \u2014 they are never concatenated into a shell command string, so\nvalidate_command()'s shell-metacharacter injection regex is irrelevant\nhere by construction. See SSHProxy.validate_write_file() / .write_file().",
+        "operationId": "ssh_write_file_ssh_write_file_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SSHWriteFileRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Ssh Write File"
       }
     },
     "/status": {

@@ -18,8 +18,9 @@
 // Assertions:
 //   OpenClaw path (init-openclaw-config.sh, .openclaw/*):
 //     O1. graphify skill installed into ${OPENCLAW_DIR}/skills/graphify/SKILL.md
-//     O2. agentshroud-gateway MCP registered via `openclaw mcp add` with the URL
-//         read from the synced mcp/servers.json (NOT hardcoded).
+//     O2. agentshroud-gateway is intentionally disabled in the synced servers.json
+//         (gateway has never served /mcp) — init must NOT register it via
+//         `openclaw mcp set` or the wrong verb `mcp add`.
 //     O3. IDENTITY.md seeded from the synced agents/openclaw-identity.md persona.
 //     O4. ISOLATION: Hermes' persona (hermes-soul.md) is NEVER written into OpenClaw.
 //   Hermes path (init-config.sh, /opt/data/*):
@@ -204,16 +205,16 @@ console.log('OpenClaw (init-openclaw-config.sh):');
   const ocSkill = path.join(openclawDir, 'skills', 'graphify', 'SKILL.md');
   assert('O1: graphify SKILL.md installed into .openclaw/skills/', fs.existsSync(ocSkill), ocSkill);
 
-  // O2: MCP registered via the CORRECT verb `openclaw mcp set` (NOT `mcp add`, which
-  // probes the endpoint and fails at init) with the URL from servers.json and the
-  // canonical HTTP transport value "streamable-http".
+  // O2: agentshroud-gateway is intentionally disabled in the synced servers.json
+  // (2026-07-18: the gateway has never actually served /mcp — confirmed 404 —
+  // matching Hermes' H3 below; see docker/config/openclaw/mcp/servers.json and
+  // ~/.llm_settings/mcp/servers.json). init-openclaw-config.sh skips disabled
+  // entries entirely (`if (s && s.enabled === false) continue;`), so it must
+  // NOT be registered via `openclaw mcp set` at all.
   const ocMcp = read(mcpLog);
   assert(
-    'O2: `openclaw mcp set agentshroud-gateway` called with servers.json URL + streamable-http',
-    ocMcp.includes('MCP_SET') &&
-      ocMcp.includes('agentshroud-gateway') &&
-      ocMcp.includes('http://gateway:8080/mcp') &&
-      ocMcp.includes('streamable-http'),
+    'O2: `openclaw mcp set agentshroud-gateway` NOT called (disabled in servers.json, gateway does not serve /mcp)',
+    !ocMcp.includes('agentshroud-gateway'),
     `mcp log: ${JSON.stringify(ocMcp)}`,
   );
   assert(
