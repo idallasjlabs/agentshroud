@@ -15,6 +15,7 @@ import base64
 import binascii
 import posixpath
 import re
+import shlex
 import time
 from dataclasses import dataclass
 
@@ -316,10 +317,16 @@ class SSHProxy:
         )
         ssh_args.append(remote_command)
 
+        # Mirror validate_write_file()'s relative-to-absolute conversion so the
+        # remote script receives the same path that was validated.
+        absolute_path = path if path.startswith("/") else f"{_ALLOWED_WRITE_ROOT}/{path}"
+
         # path and content are sent as DATA on stdin, not as argv/command
         # text — shell metacharacters in either are inert here.
         stdin_payload = (
-            base64.b64encode(path.encode("utf-8")) + b"\n" + content_base64.encode("ascii")
+            base64.b64encode(absolute_path.encode("utf-8"))
+            + b"\n"
+            + content_base64.encode("ascii")
         )
 
         start = time.monotonic()
@@ -413,7 +420,7 @@ class SSHProxy:
         if host.key_path:
             ssh_args.extend(["-i", host.key_path])
         ssh_args.append(f"{host.username}@{host.host}")
-        remote_command = f"cd {cwd} && {command}" if cwd else command
+        remote_command = f"cd {shlex.quote(cwd)} && {command}" if cwd else command
         ssh_args.append(remote_command)
 
         start = time.monotonic()

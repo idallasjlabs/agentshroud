@@ -473,7 +473,10 @@ class TestSSHProxyWriteFileTransport:
         # path/content instead travel on stdin as base64-encoded DATA.
         stdin_payload = captured["stdin"]
         sent_path_b64, _, sent_content_b64 = stdin_payload.partition(b"\n")
-        assert base64.b64decode(sent_path_b64).decode() == "gateway/foo.py; rm -rf /"
+        assert (
+            base64.b64decode(sent_path_b64).decode()
+            == f"{_ALLOWED_WRITE_ROOT}/gateway/foo.py; rm -rf /"
+        )
         assert base64.b64decode(sent_content_b64) == b"print('hi')"
 
     @pytest.mark.asyncio
