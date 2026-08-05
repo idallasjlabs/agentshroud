@@ -392,3 +392,30 @@ def persist_approved_collaborator(uid: str) -> None:
                 fcntl.flock(lock_fh, fcntl.LOCK_UN)
     except Exception as exc:
         _collab_persist_logger.warning("Could not persist approved collaborator %s: %s", uid, exc)
+
+
+def revoke_approved_collaborator(uid: str) -> bool:
+    """Remove a collaborator UID from the persistent store (file-locked).
+
+    Returns True if the UID was found and removed, False otherwise.
+    """
+    lock_path = _APPROVED_COLLABORATORS_FILE.with_suffix(".lock")
+    try:
+        with open(lock_path, "w") as lock_fh:
+            fcntl.flock(lock_fh, fcntl.LOCK_EX)
+            try:
+                existing = load_persisted_collaborators()
+                uid_str = str(uid)
+                if uid_str not in existing:
+                    return False
+                existing = [u for u in existing if u != uid_str]
+                _APPROVED_COLLABORATORS_FILE.write_text(
+                    json.dumps({"collaborators": existing}, indent=2), encoding="utf-8"
+                )
+                _collab_persist_logger.info("Revoked approved collaborator: %s", uid)
+                return True
+            finally:
+                fcntl.flock(lock_fh, fcntl.LOCK_UN)
+    except Exception as exc:
+        _collab_persist_logger.warning("Could not revoke approved collaborator %s: %s", uid, exc)
+        return False
