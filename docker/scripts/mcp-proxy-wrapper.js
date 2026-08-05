@@ -127,10 +127,8 @@ function gatewayPost(path, body) {
  * Submit a tools/call to the gateway for inspection.
  *
  * Returns:
- *   - null  → forward to the actual MCP server (msg may have sanitized params)
- *   - object → JSON-RPC error response to return to OpenClaw (call is blocked)
- *
- * Mutates msg.params.arguments if gateway provides sanitized params.
+ *   - { blocked: false, msg } → forward msg (with sanitized params, if any) to the actual MCP server
+ *   - { blocked: true, response } → JSON-RPC error response to return to OpenClaw (call is blocked)
  */
 async function inspectCall(msg) {
   const params = msg.params || {};
@@ -151,9 +149,12 @@ async function inspectCall(msg) {
       `[mcp-proxy] Gateway unreachable (${err.message}) — BLOCKING ${toolName} (fail-closed)\n`
     );
     return {
-      jsonrpc: '2.0',
-      id: msg.id,
-      error: { code: -32600, message: `AgentShroud gateway unreachable: ${err.message}. Tool call blocked for safety.` },
+      blocked: true,
+      response: {
+        jsonrpc: '2.0',
+        id: msg.id,
+        error: { code: -32600, message: `AgentShroud gateway unreachable: ${err.message}. Tool call blocked for safety.` },
+      },
     };
   }
 
@@ -165,9 +166,12 @@ async function inspectCall(msg) {
       `[mcp-proxy] BLOCKED: ${serverName}/${toolName} — ${reason}\n`
     );
     return {
-      jsonrpc: '2.0',
-      id: msg.id,
-      error: { code: -32600, message: `Blocked by AgentShroud: ${reason}` },
+      blocked: true,
+      response: {
+        jsonrpc: '2.0',
+        id: msg.id,
+        error: { code: -32600, message: `Blocked by AgentShroud: ${reason}` },
+      },
     };
   }
 
@@ -181,9 +185,12 @@ async function inspectCall(msg) {
       `[mcp-proxy] BLOCKED: ${serverName}/${toolName} — gateway returned ${gatewayResult.status} (fail-closed)\n`
     );
     return {
-      jsonrpc: '2.0',
-      id: msg.id,
-      error: { code: -32600, message: `AgentShroud gateway error (HTTP ${gatewayResult.status}): ${detail}. Tool call blocked for safety.` },
+      blocked: true,
+      response: {
+        jsonrpc: '2.0',
+        id: msg.id,
+        error: { code: -32600, message: `AgentShroud gateway error (HTTP ${gatewayResult.status}): ${detail}. Tool call blocked for safety.` },
+      },
     };
   }
 
@@ -193,7 +200,7 @@ async function inspectCall(msg) {
     msg = { ...msg, params: { ...params, arguments: sanitized } };
   }
 
-  return null; // null = forward msg (possibly with sanitized params)
+  return { blocked: false, msg };
 }
 
 // ── Result audit ──────────────────────────────────────────────────────────────
@@ -244,15 +251,15 @@ inboundRl.on('line', async (line) => {
     const toolName = (msg.params && msg.params.name) || '';
     pendingCalls.set(msg.id, { toolName });
 
-    const blockResponse = await inspectCall(msg);
+    const inspection = await inspectCall(msg);
 
-    if (blockResponse) {
+    if (inspection.blocked) {
       // Blocked — return error directly to OpenClaw, never touch subprocess
-      process.stdout.write(JSON.stringify(blockResponse) + '\n');
+      process.stdout.write(JSON.stringify(inspection.response) + '\n');
       pendingCalls.delete(msg.id);
     } else {
-      // Forward (msg may have sanitized params applied by inspectCall)
-      child.stdin.write(JSON.stringify(msg) + '\n');
+      // Forward the (possibly sanitized) msg returned by inspectCall
+      child.stdin.write(JSON.stringify(inspection.msg) + '\n');
     }
   } else {
     // All other MCP protocol messages (initialize, tools/list, etc.) pass through unchanged

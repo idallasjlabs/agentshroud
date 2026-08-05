@@ -49,23 +49,32 @@ while true; do
     # Trivy scan at 3 AM UTC
     if [ "$CURRENT_HOUR" = "03" ] && [ "$LAST_TRIVY_DATE" != "$CURRENT_DATE" ]; then
         log "Running scheduled Trivy scan"
-        "$SCAN_SCRIPT" --trivy 2>&1 >> "$LOG_DIR/scheduler.log" || log "Trivy scan failed"
-        LAST_TRIVY_DATE="$CURRENT_DATE"; _stamp_write trivy "$CURRENT_DATE"
+        if "$SCAN_SCRIPT" --trivy 2>&1 >> "$LOG_DIR/scheduler.log"; then
+            LAST_TRIVY_DATE="$CURRENT_DATE"; _stamp_write trivy "$CURRENT_DATE"
+        else
+            log "Trivy scan failed"
+        fi
     fi
 
     # SBOM generation at 3:15 AM UTC (after Trivy)
     CURRENT_MIN=$(date -u +%M)
     if [ "$CURRENT_HOUR" = "03" ] && [ "$CURRENT_MIN" -ge 15 ] && [ "$LAST_SBOM_DATE" != "$CURRENT_DATE" ]; then
         log "Running scheduled SBOM generation"
-        "$SCAN_SCRIPT" --sbom 2>&1 >> "$LOG_DIR/scheduler.log" || log "SBOM generation failed"
-        LAST_SBOM_DATE="$CURRENT_DATE"; _stamp_write sbom "$CURRENT_DATE"
+        if "$SCAN_SCRIPT" --sbom 2>&1 >> "$LOG_DIR/scheduler.log"; then
+            LAST_SBOM_DATE="$CURRENT_DATE"; _stamp_write sbom "$CURRENT_DATE"
+        else
+            log "SBOM generation failed"
+        fi
     fi
 
     # ClamAV scan at 4 AM UTC
     if [ "$CURRENT_HOUR" = "04" ] && [ "$LAST_CLAMAV_DATE" != "$CURRENT_DATE" ]; then
         log "Running scheduled ClamAV scan"
-        "$SCAN_SCRIPT" --clamav 2>&1 >> "$LOG_DIR/scheduler.log" || log "ClamAV scan failed"
-        LAST_CLAMAV_DATE="$CURRENT_DATE"; _stamp_write clamav "$CURRENT_DATE"
+        if "$SCAN_SCRIPT" --clamav 2>&1 >> "$LOG_DIR/scheduler.log"; then
+            LAST_CLAMAV_DATE="$CURRENT_DATE"; _stamp_write clamav "$CURRENT_DATE"
+        else
+            log "ClamAV scan failed"
+        fi
     fi
 
     # OpenSCAP scan at 5 AM UTC
