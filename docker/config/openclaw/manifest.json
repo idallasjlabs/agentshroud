@@ -1,11 +1,11 @@
 {
   "version": "1",
-  "generated_at": "2026-07-16T17:13:10Z",
+  "generated_at": "2026-08-04T23:57:30Z",
   "entries": [
     {
       "name": "skills/graphify/.graphify_version",
-      "hash": "e7bd032db34f2291ae7c611443cbc9e300dc4a3a5d2460074b661ef2da18fd1f",
-      "size": 6
+      "hash": "c7e571138b5cf3a98015b2b1b9a1034a07daeb5c12b752109d585bee9c868a83",
+      "size": 7
     },
     {
       "name": "skills/graphify/references/add-watch.md",
@@ -14,8 +14,8 @@
     },
     {
       "name": "skills/graphify/references/exports.md",
-      "hash": "f648e8b3e14105b180f6251a7ffbc4dd1e50734ccdb887d80faa6fe58c64b7e2",
-      "size": 3073
+      "hash": "60926c87a5e94aeb3bccc97d983f2e68c6804088326b5e9ec07f6a844a723170",
+      "size": 2163
     },
     {
       "name": "skills/graphify/references/extraction-spec.md",
@@ -49,18 +49,543 @@
     },
     {
       "name": "skills/graphify/SKILL.md",
-      "hash": "9b81f42b712f82b8aff3bf4b5ee191d5089394dc030949a7762e820682b119c1",
-      "size": 32783
+      "hash": "06e334d075ad2aec1a6eb864ebf07cb94c32dbdc73722a15955ee63e33719842",
+      "size": 32550
+    },
+    {
+      "name": "skills/i-ab/SKILL.md",
+      "hash": "1f6ca76c32f1f07f6b88c97bc0d77c6ad0b467f822915c1646c4e92204103dff",
+      "size": 7744
+    },
+    {
+      "name": "skills/i-agile/SKILL.md",
+      "hash": "d41cc46319134b28b98b1b8b9b2698bb78f396338d6b5a626e7aebf92dfdb642",
+      "size": 357
+    },
+    {
+      "name": "skills/i-apollo/README.md",
+      "hash": "5ef8dabcd6f4348e3e50c07b6738b584f25ea29ef20741b71a291dcb6e3d3da1",
+      "size": 576
+    },
+    {
+      "name": "skills/i-apollo/SKILL.md",
+      "hash": "8b19457b147de731a841bc69d2d0a8bdc1067cba091ce7c76ba1a8f303e2dfe9",
+      "size": 4015
+    },
+    {
+      "name": "skills/i-architecture-review/SKILL.md",
+      "hash": "c66d516e50a1d1e395bc188f3caa80e1667c9c784527dd096bef3e0800b576de",
+      "size": 458
+    },
+    {
+      "name": "skills/i-athena/README.md",
+      "hash": "00871bb32841c03b1142815ae84c51150cc900126a17c2b692fec12c84f1d6c1",
+      "size": 575
+    },
+    {
+      "name": "skills/i-athena/SKILL.md",
+      "hash": "3de375fa5359d964973229de0cc57c467d3a2ae1b104ff1bbd9ecfa8ba1dd7e0",
+      "size": 3871
+    },
+    {
+      "name": "skills/i-atlas/README.md",
+      "hash": "67dd62e2fd05b429cb7feecefe86d7cd01c21b716bd613882c73e56ca4ffc168",
+      "size": 572
+    },
+    {
+      "name": "skills/i-atlas/SKILL.md",
+      "hash": "2037675200cae6e6791b45cdb2983a56789f2eb959c856a22c36ec208b64189d",
+      "size": 7491
+    },
+    {
+      "name": "skills/i-aws/README.md",
+      "hash": "929118a2e45435f077727540b79de4784912ea9582cd9e38d7702d374d53cc1b",
+      "size": 1010
+    },
+    {
+      "name": "skills/i-aws/SKILL.md",
+      "hash": "e218ab108ad33a580352f3a734338e9b23b068aa2ad0fb3f8440247ab4b3d354",
+      "size": 18775
+    },
+    {
+      "name": "skills/i-bdd/SKILL.md",
+      "hash": "25905f2eec510aad18b26a88d2356f92d9c543d195d4af4328a82ec5c701d21d",
+      "size": 365
+    },
+    {
+      "name": "skills/i-browser/browse.js",
+      "hash": "e4efaac38b746daf2fda4d1d0d7ebe04fd01c9f9811dc94ef71bd3c9ac78e4ed",
+      "size": 3428
+    },
+    {
+      "name": "skills/i-browser/config.yaml",
+      "hash": "a24b5321cd4b29c645a419c6c593ecf3ff58b085bff895603e01c6e7a95e5663",
+      "size": 1887
+    },
+    {
+      "name": "skills/i-browser/package.json",
+      "hash": "ada38a58b38aa5fefdf80ede619d5f18ff90a66b71746fccb5a3ae1a22249236",
+      "size": 235
+    },
+    {
+      "name": "skills/i-browser/README.md",
+      "hash": "39c9a984641bede6473a0b5d4101aa2a5b617ddf8833c555531368f3f42899a4",
+      "size": 768
+    },
+    {
+      "name": "skills/i-browser/scripts/browse.py",
+      "hash": "a5a395f38653354edfd78fed2c0bcd587d81d317c56f3da4a70db0eeaa6568c8",
+      "size": 18178
+    },
+    {
+      "name": "skills/i-browser/SKILL.md",
+      "hash": "0d1e50fc1446160f99253a08c401dfe2503d7d9a6f033b7418fc623572ec0e0b",
+      "size": 8992
+    },
+    {
+      "name": "skills/i-bs/README.md",
+      "hash": "67964250dbc466993dc4049c38e6e4ff1bbb0924e38394104afc5a22ad576054",
+      "size": 638
+    },
+    {
+      "name": "skills/i-bs/SKILL.md",
+      "hash": "497a3b7b5b8106d36a254529f38e2a910aa7a1ba55a5cb1437a5b7c9f0eda86b",
+      "size": 12047
+    },
+    {
+      "name": "skills/i-cd/SKILL.md",
+      "hash": "a0767f1f4d3d8dac08bdd96a62faefc71c6df784e993d756e28e7a71eb7691c9",
+      "size": 349
+    },
+    {
+      "name": "skills/i-chaos-engineering/SKILL.md",
+      "hash": "37eef60c13cde0207423e2bf97b537a404675af6a81e416ea8758169a8d71a0f",
+      "size": 419
+    },
+    {
+      "name": "skills/i-ci/SKILL.md",
+      "hash": "a16834c152ca1e3f27ab72c92b6b5341c1d7077f8be5f0fe53eb1bdb27f8b745",
+      "size": 334
+    },
+    {
+      "name": "skills/i-cicd/README.md",
+      "hash": "217c41191ec6b21748d355744b6d90641986e23e1a059472aeb787cbe06313ae",
+      "size": 667
+    },
+    {
+      "name": "skills/i-cicd/SKILL.md",
+      "hash": "9b30f9e4e5c9e40d2dccf9e76858fce9328b9455b903ed61f4036b8596444732",
+      "size": 2548
+    },
+    {
+      "name": "skills/i-cr/README.md",
+      "hash": "f03f7c3bfbc035ef67273124a3fb2093ebf8b41d0545cadfc49f1bfb65ed8c82",
+      "size": 583
+    },
+    {
+      "name": "skills/i-cr/SKILL.md",
+      "hash": "325a950b4750e7b50eddfd11ab5590d2e7881c8ac9e51cfd55828e3ed50ae655",
+      "size": 2168
+    },
+    {
+      "name": "skills/i-crpr/SKILL.md",
+      "hash": "b2a5af1e6e9bd32d66882dc3cbfdc5c15ed4adf1e317c69ab831791bfd9d3699",
+      "size": 7614
+    },
+    {
+      "name": "skills/i-daedalus/README.md",
+      "hash": "b015c1aec3b089b5e1bfbb9520e8b49cac9d857e2b06cb3e27d0943b0be1fd9e",
+      "size": 575
+    },
+    {
+      "name": "skills/i-daedalus/SKILL.md",
+      "hash": "277ed82566f28369f86576da62eff7c5ab06b56366ea6af238eebc4a9c8e2d14",
+      "size": 2189
+    },
+    {
+      "name": "skills/i-data/README.md",
+      "hash": "b7fb658e4b551d2fe70863aca0df5ec6bdc52bf631c093a4260d0f92218fdfc6",
+      "size": 660
+    },
+    {
+      "name": "skills/i-data/SKILL.md",
+      "hash": "56202b55abbde085a0bd3499c33fff6c2c549972c8cbac084520464a88323e1c",
+      "size": 4443
+    },
+    {
+      "name": "skills/i-devsecops/SKILL.md",
+      "hash": "6b5d323cbcd6c7e570d3cdb73b0e17592896f147407c3b99f0f43680d618b3e7",
+      "size": 377
+    },
+    {
+      "name": "skills/i-eightd/README.md",
+      "hash": "a056eae7ce03f6f4a7318082e9629a3c57707dd4b77b26285861476473f2ea40",
+      "size": 1192
+    },
+    {
+      "name": "skills/i-eightd/SKILL.md",
+      "hash": "9188825cfdd818c21fd026aa31a228bc7a37463ae14a68bd4022d88e4c58ca93",
+      "size": 26630
+    },
+    {
+      "name": "skills/i-gg/README.md",
+      "hash": "e708b3bbd66e5821088197330c73409c6a223fb9f30ab3f23ea13868819d4e89",
+      "size": 633
+    },
+    {
+      "name": "skills/i-gg/SKILL.md",
+      "hash": "ca40d62e879ffda4ff5b12f80e73f8b9d4bebcdfb5b54978c9a4bec61cb67695",
+      "size": 3115
+    },
+    {
+      "name": "skills/i-gitops/SKILL.md",
+      "hash": "552e13a57787d14cc799eeab55301581dbb43148ad8731dfce3da3eb823d0384",
+      "size": 392
+    },
+    {
+      "name": "skills/i-hermes/README.md",
+      "hash": "f07256379e5b13e96ab90199a9d03af832a9cc948d048b919d5ec278344bad27",
+      "size": 606
+    },
+    {
+      "name": "skills/i-hermes/SKILL.md",
+      "hash": "63ee1a22ddbd62f54d843ce0172f45891e039fdef234e15131089036def08f6c",
+      "size": 2291
+    },
+    {
+      "name": "skills/i-icloud/README.md",
+      "hash": "927a007605a259b557c3de04a5aeac7ee179d2c418e04a1dfdaff07ac430eee4",
+      "size": 648
+    },
+    {
+      "name": "skills/i-icloud/scripts/calendar.js",
+      "hash": "578b25158f6e3ad038ec1bd68df931e5e1de30d0a918685bca36de95d724ce9f",
+      "size": 5890
+    },
+    {
+      "name": "skills/i-icloud/SKILL.md",
+      "hash": "0a44ede2563e4b99cdc704d6707eb7551d4dd308847df18c4116486f062c5701",
+      "size": 2819
+    },
+    {
+      "name": "skills/i-incident-response/SKILL.md",
+      "hash": "1cd143d8295bbebf916014650c5c408b2b13b80f82c3777e22cadd0d3cc02dca",
+      "size": 402
+    },
+    {
+      "name": "skills/i-kaizen/SKILL.md",
+      "hash": "36135d1d0218ebe97a8aa9c8bd31e60441c164fb7f5e651f951fdc22184d7303",
+      "size": 354
+    },
+    {
+      "name": "skills/i-kanban/SKILL.md",
+      "hash": "5bac88d408502473935f4c9f13a899e65656422680c2ae8f0d454c20c109b3df",
+      "size": 339
+    },
+    {
+      "name": "skills/i-mac/README.md",
+      "hash": "4673a65f171852198b11b68c41f0dcbbee568fe35be9c9b1c8c484979f00a028",
+      "size": 632
+    },
+    {
+      "name": "skills/i-mac/SKILL.md",
+      "hash": "4ec8013514f70219b2ac0f288213d81507730ab8d61105615151f33b60f6f414",
+      "size": 11678
+    },
+    {
+      "name": "skills/i-mc/README.md",
+      "hash": "8e426a59af01024003f52fbdf10ecd0d28ecae9793f0e545d2060165934777c9",
+      "size": 581
+    },
+    {
+      "name": "skills/i-mc/SKILL.md",
+      "hash": "8305e8b54965febd19ad0ff734a9d57f69f740a4ec39ce7bd36d7a292f4bef1b",
+      "size": 3951
+    },
+    {
+      "name": "skills/i-mcpm-auth-reset/README.md",
+      "hash": "8ccbe18ef147ec3471cc208be579373643c450f7b64a6126891a69ba4fe7cd89",
+      "size": 660
+    },
+    {
+      "name": "skills/i-mcpm-auth-reset/SKILL.md",
+      "hash": "c12c5f38443d9b1a114337e52de558a3595a7b0e7c20eaa34bf975866780eebb",
+      "size": 5867
+    },
+    {
+      "name": "skills/i-mcpm-aws-profile/README.md",
+      "hash": "a206725c53d215bced9a7ddc923f0e62b2725f9005ae22b29d94ec52f47f6dba",
+      "size": 634
+    },
+    {
+      "name": "skills/i-mcpm-aws-profile/SKILL.md",
+      "hash": "124d944bafe3a3724d7d2817e902811e01f69a0198d79d1236b40c5140f74fdd",
+      "size": 7707
+    },
+    {
+      "name": "skills/i-mcpm-doctor/README.md",
+      "hash": "4621ed6ae40dcdaed96ef07042d5cb9bac990d3214284d6a8d3828f1a9a23e6b",
+      "size": 682
+    },
+    {
+      "name": "skills/i-mcpm-doctor/SKILL.md",
+      "hash": "a73e0016e885b557844cc040cf24619fdb1b3c55df9b63efc7ed3e78c5595fc1",
+      "size": 4014
+    },
+    {
+      "name": "skills/i-mcpm/README.md",
+      "hash": "ce98ca7c4a7d9dc669008a90a230e1a95e87c91e4a6afb518eaf8a9c9b0077e2",
+      "size": 537
+    },
+    {
+      "name": "skills/i-mcpm/SKILL.md",
+      "hash": "9e9b4de37bf124ed4469247f8a986d688dcbcb706107d824cf8536e619797755",
+      "size": 3747
+    },
+    {
+      "name": "skills/i-mm/SKILL.md",
+      "hash": "054c8820f7abd2f5e24fe3f5056123bf0464092169420a247efd46c52c9c98bb",
+      "size": 10375
+    },
+    {
+      "name": "skills/i-mnemosyne/README.md",
+      "hash": "538f0627b2b5a5bf88de0d766d81b54fb84807c6b67d12022dd1b9b1ea323afd",
+      "size": 600
+    },
+    {
+      "name": "skills/i-mnemosyne/SKILL.md",
+      "hash": "0b7bfed3dd7631e4738f739e8e3050400ceea00e0b04f360a00f4611d2173746",
+      "size": 3279
+    },
+    {
+      "name": "skills/i-observability/SKILL.md",
+      "hash": "aa6f5c075613acc0bdff6d2233abbe7c8fa789dfac988173eb5880706dd24759",
+      "size": 358
+    },
+    {
+      "name": "skills/i-oracle/README.md",
+      "hash": "49a717a4c0e758b9f1322b5dec24ce173713f57a2f0f6f0a7127073883fc88d1",
+      "size": 546
+    },
+    {
+      "name": "skills/i-oracle/SKILL.md",
+      "hash": "1cc0e5dd768adc49cf38ecaa3d9c2d779cbe70f57e9287a61cd9b24917cc805c",
+      "size": 2711
+    },
+    {
+      "name": "skills/i-pca/SKILL.md",
+      "hash": "b5b79db0dfed30e620502c87134e379927c6ee1c787b20caaf846088d3164d26",
+      "size": 3647
+    },
+    {
+      "name": "skills/i-pm/README.md",
+      "hash": "2d9acf59644d0c0640697c9c036a74d200cf3ac8c2147b6626136f1f5e0e25b9",
+      "size": 602
+    },
+    {
+      "name": "skills/i-pm/SKILL.md",
+      "hash": "c9bca1532eee49b27862b3e0a62ae7459c13fe4afeb4935709119a6a4378c3ff",
+      "size": 4344
+    },
+    {
+      "name": "skills/i-pr/README.md",
+      "hash": "0e0bce9c7787d9fcd73ed52fcc0fa07e21570cbe8ac5aba9d3c6f89d1390e2bb",
+      "size": 633
+    },
+    {
+      "name": "skills/i-pr/SKILL.md",
+      "hash": "897ede30794860177e88592cdfe5e3194a7fe4072abfabceae805cb202e7f56b",
+      "size": 1903
+    },
+    {
+      "name": "skills/i-production/README.md",
+      "hash": "b86055a39bffe24381c1eb3aaec925e74cd1e00df01a7ab3f33d013111944a67",
+      "size": 626
+    },
+    {
+      "name": "skills/i-production/SKILL.md",
+      "hash": "fa496f1b9646e412803ca89a24cae19abbdc874f82312522c5d70ff07e4105bf",
+      "size": 5378
+    },
+    {
+      "name": "skills/i-ps/README.md",
+      "hash": "d9cc542f6650fdbbd767c3116cec377b1d12718b099eff7c74c7f72a448927a9",
+      "size": 631
+    },
+    {
+      "name": "skills/i-ps/SKILL.md",
+      "hash": "d28f3d437b5bc4e6ed6e8b7992fa8474903b34ac128668c08551229cc3ad041f",
+      "size": 5669
+    },
+    {
+      "name": "skills/i-qa/README.md",
+      "hash": "7f7f75ee8646df8aeb1f7aa6b55e9ec62d9f65ab6ac1f51e2e2f8adbfc9a4ce6",
+      "size": 648
+    },
+    {
+      "name": "skills/i-qa/SKILL.md",
+      "hash": "640b2030e5e70fe299eb1bab75750819881cc9c3d7853fafb6f73f291a714ac5",
+      "size": 11686
+    },
+    {
+      "name": "skills/i-reference/SKILLS_GUIDE.md",
+      "hash": "9a1a6ae7bf811eaedd45a1ee0b9898ddc3b304fce8ba23100934fd4b82e47cc7",
+      "size": 11247
+    },
+    {
+      "name": "skills/i-sad/README.md",
+      "hash": "14037c5376a08e22a8449465a76ef4920c1f9b45abebdbcce8ec8cafdba83ee2",
+      "size": 914
+    },
+    {
+      "name": "skills/i-sad/SKILL.md",
+      "hash": "65d6e8505e9f7b85e70676eb8648aae779546d7e37ecf7ec1e539a8869ce8d32",
+      "size": 6763
+    },
+    {
+      "name": "skills/i-sav/README.md",
+      "hash": "d5b8821cf5bdef5cbaa2de67c8517fc4f637a54c16a2847bebf49f3eef52e1e6",
+      "size": 908
+    },
+    {
+      "name": "skills/i-sav/SKILL.md",
+      "hash": "8f7c925cfcf88bee6d486d23b2cb5e51ccf4b5137315d240b826a89222305606",
+      "size": 14112
+    },
+    {
+      "name": "skills/i-scrum/SKILL.md",
+      "hash": "73cb237c0690b9b9180bb8b0307fd759aa0ced34d587dcb9643b4eab837cb7e5",
+      "size": 355
+    },
+    {
+      "name": "skills/i-sdlc/SKILL.md",
+      "hash": "f86116e806dac806e37a61fd3f0bf35a0ad5afd733b2aae48c67fe575531f04b",
+      "size": 372
+    },
+    {
+      "name": "skills/i-sec-defense/README.md",
+      "hash": "ea8f4e47e65af93494322ccb33690bef352c98dcaee7b8950f1435c16781cc44",
+      "size": 784
+    },
+    {
+      "name": "skills/i-sec-defense/SKILL.md",
+      "hash": "7d68c7a77d0108b9cc8d5430c601257ddb52c16ce78e0f7bf1e5366b44a06586",
+      "size": 8024
+    },
+    {
+      "name": "skills/i-sec-offense/README.md",
+      "hash": "80f4db9dc4b81e3dd4afda8bd2112d67a9f0c11d9099c6e14b985729fd94a47a",
+      "size": 819
+    },
+    {
+      "name": "skills/i-sec-offense/SKILL.md",
+      "hash": "71ba74295aaf907bea4cba3b5fccd4328b276707049903bc604059f942a2ea8a",
+      "size": 15613
+    },
+    {
+      "name": "skills/i-sec/README.md",
+      "hash": "56921254baa81752ae6caaa2b0616ea2aaf36503931d5b8310599fdc2d404c66",
+      "size": 619
+    },
+    {
+      "name": "skills/i-sec/SKILL.md",
+      "hash": "3a1269e08f8358cb895fd39f3bfbd72f5be7de4caf6dd0eaaa90865dbcadd9ff",
+      "size": 4428
+    },
+    {
+      "name": "skills/i-session-prompt/SKILL.md",
+      "hash": "50a6aa4724ee27a4add1f97b8ac544ab27751e62b16a09b7ae43cfb68395ce1d",
+      "size": 4895
+    },
+    {
+      "name": "skills/i-socrates/README.md",
+      "hash": "2370014207b76009b4f16371a156f3ab6c9dad21906fc21a4521df5e080d4a8f",
+      "size": 569
+    },
+    {
+      "name": "skills/i-socrates/SKILL.md",
+      "hash": "9f790d66926e7e900f7f3ba1e544843aebdb871b0712eea621f0fbc81622d517",
+      "size": 6911
+    },
+    {
+      "name": "skills/i-sre/SKILL.md",
+      "hash": "f290e23df26adeb41e9785a725ed19827c34c2b062fff81e3fc8d30caddd7191",
+      "size": 352
+    },
+    {
+      "name": "skills/i-tdd/README.md",
+      "hash": "711be09546cba5534cf1421d2befc6bd07f5a6e6657273b7ae0d425d9b988164",
+      "size": 637
+    },
+    {
+      "name": "skills/i-tdd/SKILL.md",
+      "hash": "9bad46a26356d313cb5f4e221b894759e69082a720c2759b01d4c5b24ee86a5d",
+      "size": 4598
+    },
+    {
+      "name": "skills/i-ti/README.md",
+      "hash": "293e499a35cdb2611d41fcf2095d1ee7200505d246b316eb00e2a94e6f5a3ed1",
+      "size": 645
+    },
+    {
+      "name": "skills/i-ti/SKILL.md",
+      "hash": "fed678e6a49d5323fe9eacda009a68ef3cb1ee529341c75d9752ae03009bcbb1",
+      "size": 12304
+    },
+    {
+      "name": "skills/i-tw/README.md",
+      "hash": "e357f0996a85a42d09d7a033f7d6a88a39676e323847f6deb14c589b4c35e5fb",
+      "size": 568
+    },
+    {
+      "name": "skills/i-tw/SKILL.md",
+      "hash": "fd1a74549e38324917eeb52676a962a62f97fe52e2cbca3ed6eb0eb22922d9b8",
+      "size": 8234
+    },
+    {
+      "name": "skills/i-ui/SKILL.md",
+      "hash": "029cb67857630afe027bb8b26a9e200880f7575951b16789b4be79618bb9f4b7",
+      "size": 11182
+    },
+    {
+      "name": "skills/i-ux/SKILL.md",
+      "hash": "f3caf63761924d6c9964e0c99c2edf5ba18a1e449ef0697fe5a89f1b987f9b96",
+      "size": 12729
+    },
+    {
+      "name": "skills/i-value-stream-mapping/SKILL.md",
+      "hash": "7d63bf74fa239c300f36762049315261020a0c265a297466fe53e55acc1c7776",
+      "size": 356
+    },
+    {
+      "name": "skills/i-vulcan/README.md",
+      "hash": "908e85da12bd4834339e39c9efa7692c80264b78f9c2cdfa293a791f283d0ce4",
+      "size": 562
+    },
+    {
+      "name": "skills/i-vulcan/SKILL.md",
+      "hash": "cc1a26e801de1343db47865b30c528efee4d9f47b2e199b076e7c4faacc9cc0a",
+      "size": 3924
     },
     {
       "name": "mcp/servers.json",
-      "hash": "c47218a3bfa6591bb68335bf3c504dfdeb7debbf94907bd71cbd40336540fd34",
-      "size": 322
+      "hash": "044f19553cfffadb725318d71c0a824cb852092170fd00901118b9258e4ba534",
+      "size": 798
+    },
+    {
+      "name": "agents/_README.txt",
+      "hash": "0425e131b7dd40450926b2717c315f0b53b7bd824ea8c5e21b61162329341703",
+      "size": 76
     },
     {
       "name": "agents/hermes-soul.md",
       "hash": "ac16f115c31eb8fcaaeec9c2470b881c24d955727c0ef9e3409d764fd098b738",
       "size": 4668
+    },
+    {
+      "name": "agents/i-security-reviewer.md",
+      "hash": "eebf148746c6d0d67d8bbe525d7e6bcb7625f11c718330f5c728a5ba845e3bca",
+      "size": 571
     },
     {
       "name": "agents/openclaw-identity.md",
