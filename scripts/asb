@@ -109,7 +109,7 @@ setup_ephemeral_secrets() {
               telegram_bot_token_production telegram_bot_token_marvin \
               telegram_bot_token_trillian telegram_bot_token_rpi \
               slack_bot_token slack_signing_secret slack_app_token \
-              hermes_telegram_bot_token hermes_api_key \
+              hermes_telegram_bot_token hermes_telegram_bot_token_marvin hermes_api_key \
               slack_bot_token_hermes slack_app_token_hermes \
               brave_api_key github_pat; do
     touch "$tmpdir/${name}.txt"
@@ -141,10 +141,12 @@ setup_ephemeral_secrets() {
   # Determine which telegram_bot_token variant to use for this host/user.
   # Falls back to production token if the host-specific token was not stored.
   local tg_file="telegram_bot_token_production.txt"
+  local hermes_tg_file="hermes_telegram_bot_token.txt"
   if [ "$USER" = "agentshroud-bot" ]; then
-    local host_tg_file
+    local host_tg_file host_hermes_tg_file
     case "$HOST" in
-      marvin*)       host_tg_file="telegram_bot_token_marvin.txt" ;;
+      marvin*)       host_tg_file="telegram_bot_token_marvin.txt"
+                     host_hermes_tg_file="hermes_telegram_bot_token_marvin.txt" ;;
       trillian*)     host_tg_file="telegram_bot_token_trillian.txt" ;;
       raspberrypi*)  host_tg_file="telegram_bot_token_rpi.txt" ;;
       *)             host_tg_file="" ;;
@@ -152,6 +154,7 @@ setup_ephemeral_secrets() {
     # Select host-specific token after extract runs (may be populated then).
     # Record the desired filename; the post-extract logic below will check -s.
     [ -n "$host_tg_file" ] && tg_file="$host_tg_file"
+    [ -n "${host_hermes_tg_file:-}" ] && hermes_tg_file="$host_hermes_tg_file"
   fi
 
   # ── Step 2: Generate the compose override pointing to the tmpdir.
@@ -182,7 +185,7 @@ secrets:
   slack_app_token:
     file: ${tmpdir}/slack_app_token.txt
   hermes_telegram_bot_token:
-    file: ${tmpdir}/hermes_telegram_bot_token.txt
+    file: ${tmpdir}/${hermes_tg_file}
   hermes_api_key:
     file: ${tmpdir}/hermes_api_key.txt
   slack_bot_token_hermes:
@@ -212,7 +215,15 @@ YAML
       echo "  NOTE: host-specific token '$host_tg_file' not found — using production token"
       tg_file="telegram_bot_token_production.txt"
     fi
-    # Rewrite override with the resolved tg_file (may have changed after extract).
+    if [ -n "${host_hermes_tg_file:-}" ]; then
+      if [ -s "$tmpdir/$host_hermes_tg_file" ]; then
+        hermes_tg_file="$host_hermes_tg_file"
+      else
+        echo "  NOTE: host-specific Hermes token '$host_hermes_tg_file' not found — using production token"
+        hermes_tg_file="hermes_telegram_bot_token.txt"
+      fi
+    fi
+    # Rewrite override with the resolved tg_file/hermes_tg_file (may have changed after extract).
     cat > "$override" << YAML
 secrets:
   gateway_password:
@@ -238,7 +249,7 @@ secrets:
   slack_app_token:
     file: ${tmpdir}/slack_app_token.txt
   hermes_telegram_bot_token:
-    file: ${tmpdir}/hermes_telegram_bot_token.txt
+    file: ${tmpdir}/${hermes_tg_file}
   hermes_api_key:
     file: ${tmpdir}/hermes_api_key.txt
   slack_bot_token_hermes:
