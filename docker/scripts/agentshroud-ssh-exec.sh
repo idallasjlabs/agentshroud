@@ -160,7 +160,17 @@ _payload_file="/tmp/.ssh-exec-payload.$$"
 # --noproxy gateway: HTTP_PROXY=http://gateway:8181 (EgressFilter) is set in the
 # bot environment; without --noproxy the call would loop through the egress proxy
 # instead of reaching the internal control-plane /ssh/exec endpoint directly.
-_response="$(curl -sS --noproxy gateway --max-time 180 \
+#
+# --max-time 600 (not the original 180): confirmed via the /i-hdev end-to-end
+# dry run 2026-08-05 that `codex exec`/`gemini -p` review calls routed through
+# this wrapper can take well over 180s (codex's own cold-start retry/backoff
+# alone was observed needing 60-90s+ before succeeding directly over SSH) even
+# though the target host's own max_session_seconds is a generous 1800s in
+# agentshroud.yaml — the CLIENT-side curl timeout here was the actual
+# bottleneck, unrelated to the SSH session timeout. 600s balances real LLM
+# review latency against not leaving a calling agent blocked indefinitely on
+# a genuinely stuck call.
+_response="$(curl -sS --noproxy gateway --max-time 600 \
     -o /tmp/.ssh-exec-response \
     -w "%{http_code}" \
     -X POST "${_gw_url}/ssh/exec" \

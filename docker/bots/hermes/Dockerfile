@@ -159,6 +159,10 @@ COPY docker/bots/hermes/email_helper.sh /usr/local/bin/agentshroud-email-send.sh
 # call). Same shared script both bot images bake in. See the script header.
 COPY docker/scripts/agentshroud-ssh-exec.sh /usr/local/bin/agentshroud-ssh-exec.sh
 
+# SSH-write-file helper — same plain-HTTP-off-argv pattern as agentshroud-ssh-exec.sh,
+# for the structured /ssh/write_file endpoint (writes file content, not shell commands).
+COPY docker/scripts/agentshroud-ssh-write-file.sh /usr/local/bin/agentshroud-ssh-write-file.sh
+
 # Pre-baked Markdown→HTML renderer for the competitive-intel email cron job.
 # Placed outside /opt/data (which is a volume mount) so it survives volume resets.
 COPY docker/bots/hermes/render_md_email.py /usr/local/lib/agentshroud/render_md_email.py
@@ -171,6 +175,7 @@ RUN chmod +x /usr/local/bin/start-hermes.sh /usr/local/bin/init-hermes-config.sh
              /usr/local/bin/agentshroud-crashwatch.sh /usr/local/bin/agentshroud-heartbeat.sh \
              /usr/local/bin/agentshroud-email-send.sh \
              /usr/local/bin/agentshroud-ssh-exec.sh \
+             /usr/local/bin/agentshroud-ssh-write-file.sh \
              /usr/local/bin/agentshroud-dashboard-bridge.py \
              /etc/s6-overlay/s6-rc.d/agentshroud-crashwatch/run \
              /etc/s6-overlay/s6-rc.d/agentshroud-heartbeat/run \

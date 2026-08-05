@@ -51,13 +51,34 @@ _CWD_SAFE = re.compile(r"^[A-Za-z0-9/_\-. @~]+$")
 
 # === /ssh/write_file constants ===
 
-# Approved repo checkout root on the SSH target host. Every write_file()
-# destination must normalize to a path under this root — see
-# SSHProxy.validate_write_file() for why this is pure string/pathlib
-# normalization and NOT os.path.realpath()/Path.resolve().
+# Approved repo checkout root on the SSH target host. Relative `path` values
+# in a write_file() request resolve against this root. See
+# SSHProxy.validate_write_file() for why the traversal check is pure
+# string/pathlib normalization and NOT os.path.realpath()/Path.resolve().
 _ALLOWED_WRITE_ROOT = "/Users/agentshroud-bot/Development/agentshroud"
 
-# Decoded-content size cap for /ssh/write_file (~500KB).
+# Parent directory of every git worktree used by the /i-hdev and /i-odev dev
+# workflows. `git worktree add` deliberately creates SIBLING directories next
+# to the primary checkout (e.g. .../Development/agentshroud-hdev-<slug>),
+# never nested inside it — so absolute `path` values must be allowed anywhere
+# under this parent, not just under _ALLOWED_WRITE_ROOT, or every worktree
+# write is rejected by design. Confirmed via the /i-hdev end-to-end dry run
+# 2026-08-05: the original single-root check made the whole worktree-based
+# skill unusable.
+#
+# Still tightly bounded: the top-level directory name directly under this
+# parent must EXACTLY match the primary checkout ("agentshroud") or the
+# worktree naming convention this repo's skills use
+# ("agentshroud-hdev-<slug>", "agentshroud-odev-<slug>") — a plain
+# `.startswith("agentshroud")` check would let a sibling like
+# "agentshroud-evil" slip through (it also starts with that string), so this
+# is an exact regex match, not a prefix test.
+_ALLOWED_WRITE_PARENT = "/Users/agentshroud-bot/Development"
+_ALLOWED_WRITE_TOP_LEVEL_RE = re.compile(
+    r"^agentshroud(?:-(?:hdev|odev)-[A-Za-z0-9](?:[A-Za-z0-9_-]*[A-Za-z0-9])?)?$"
+)
+
+# Decoded-content size cap for /ssh/write_file (exactly 500KB).
 _MAX_WRITE_FILE_BYTES = 500_000
 
 # Fixed remote script executed via `python3 -c` for every write_file() call.
@@ -69,13 +90,18 @@ _MAX_WRITE_FILE_BYTES = 500_000
 # shell-metacharacter regex: there is no shell string built from
 # attacker-influenced bytes anywhere in this path.
 _REMOTE_WRITE_FILE_SCRIPT = (
-    "import sys, base64, pathlib\n"
-    f"_ROOT = {_ALLOWED_WRITE_ROOT!r}\n"
+    "import sys, base64, pathlib, re\n"
+    f"_PARENT = {_ALLOWED_WRITE_PARENT!r}\n"
+    f"_TOP_RE = re.compile({_ALLOWED_WRITE_TOP_LEVEL_RE.pattern!r})\n"
     "data = sys.stdin.buffer.read()\n"
     "path_b64, _, content_b64 = data.partition(b'\\n')\n"
     "path = base64.b64decode(path_b64).decode('utf-8')\n"
     "content = base64.b64decode(content_b64)\n"
-    "if path != _ROOT and not path.startswith(_ROOT + '/'):\n"
+    "if not path.startswith(_PARENT + '/'):\n"
+    "    sys.stderr.write('path outside allowed root')\n"
+    "    sys.exit(2)\n"
+    "top_level, _, remainder = path[len(_PARENT) + 1:].partition('/')\n"
+    "if not remainder or not _TOP_RE.match(top_level):\n"
     "    sys.stderr.write('path outside allowed root')\n"
     "    sys.exit(2)\n"
     "p = pathlib.Path(path)\n"
@@ -212,13 +238,25 @@ class SSHProxy:
         candidate = path if path.startswith("/") else f"{_ALLOWED_WRITE_ROOT}/{path}"
         normalized = posixpath.normpath(candidate)
 
-        if normalized != _ALLOWED_WRITE_ROOT and not normalized.startswith(
-            _ALLOWED_WRITE_ROOT + "/"
-        ):
+        if not normalized.startswith(_ALLOWED_WRITE_PARENT + "/"):
             return False, f"Path escapes allowed root {_ALLOWED_WRITE_ROOT}: {path}"
 
-        if normalized == _ALLOWED_WRITE_ROOT:
-            return False, "Path must reference a file inside the root, not the root itself"
+        # Top-level directory directly under _ALLOWED_WRITE_PARENT must exactly
+        # match the primary checkout or its git-worktree naming convention —
+        # an EXACT regex match on the first path segment only, never a prefix
+        # test (a bare `.startswith("agentshroud")` would let a sibling like
+        # "agentshroud-evil" slip through, since that string also starts with
+        # "agentshroud").
+        rel = normalized[len(_ALLOWED_WRITE_PARENT) + 1 :]
+        top_level, _, remainder = rel.partition("/")
+        if not _ALLOWED_WRITE_TOP_LEVEL_RE.match(top_level):
+            return False, f"Path escapes allowed root {_ALLOWED_WRITE_ROOT}: {path}"
+
+        if not remainder:
+            return (
+                False,
+                "Path must reference a file inside the checkout, not the checkout root itself",
+            )
 
         try:
             decoded_len = len(base64.b64decode(content_base64, validate=True))
