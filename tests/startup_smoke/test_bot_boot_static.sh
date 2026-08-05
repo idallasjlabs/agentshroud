@@ -18,6 +18,10 @@
 #        against known-dangerous patterns, independent of the file-level reseed
 #        (2026-08-03 fix — file-level fixes never reached OpenClaw's already-
 #        existing sqlite-backed live job)
+#   S11. init-openclaw-config.sh seeds jira_dev_ticket.py into the live
+#        workspace (2026-08-05 — Jira-ticket-per-dev-batch capability parity)
+#   S12. init-config.sh (Hermes) seeds jira_dev_ticket.py into the live
+#        workspace (2026-08-05 — same capability, Hermes side)
 #
 # Run: bash tests/startup_smoke/test_bot_boot_static.sh
 # Exit 0 = pass. Exit 1 = fail.
@@ -166,6 +170,22 @@ check "S10: start-agentshroud.sh: force-reconciles security-critical live cron j
         && grep -q 'openclaw cron edit' "$start_sh" \
         && echo true || echo false)" \
     "Live cron jobs are never force-corrected against known-dangerous raw-ssh/Tailscale-hostname patterns — a file-level fix can leave an already-existing live job broken indefinitely"
+
+# S11: init-openclaw-config.sh seeds jira_dev_ticket.py (generalized Jira
+# create/comment/transition helper) into the live workspace so the i-odev
+# orchestration skill can create/update a real SCRUM ticket per dev batch.
+# Positive-presence check — a future edit that drops the seed passes S8-style
+# negative checks but would silently leave OpenClaw without the file at all.
+check "S11: init-openclaw-config.sh: seeds jira_dev_ticket.py into live workspace" \
+    "$(grep -q 'jira_dev_ticket.py' "$init_sh" && echo true || echo false)" \
+    "Live workspace never gets jira_dev_ticket.py seeded — i-odev cannot create/update SCRUM tickets"
+
+# S12: init-config.sh (Hermes) seeds jira_dev_ticket.py into the live
+# workspace — same capability, Hermes side, so the two bots never drift.
+hermes_init_sh="$REPO/docker/bots/hermes/init-config.sh"
+check "S12: init-config.sh (Hermes): seeds jira_dev_ticket.py into live workspace" \
+    "$(grep -q 'jira_dev_ticket.py' "$hermes_init_sh" && echo true || echo false)" \
+    "Live workspace never gets jira_dev_ticket.py seeded — i-hdev cannot create/update SCRUM tickets"
 
 # ── Summary ────────────────────────────────────────────────────────────────
 echo ""
