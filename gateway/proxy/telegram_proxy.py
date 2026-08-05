@@ -5613,8 +5613,8 @@ class TelegramAPIProxy:
                     from gateway.ingest_api.state import app_state as _eq_state
 
                     _eq = getattr(_eq_state, "egress_approval_queue", None)
-                    tokens = normalize_input(text).strip().split(None, 2)
-                    # tokens[0] = "/egress", tokens[1] = subcommand, tokens[2] = arg
+                    tokens = normalize_input(text).strip().split(None, 3)
+                    # tokens[0] = "/egress", tokens[1] = subcommand, tokens[2] = arg, tokens[3] = duration
                     subcmd = tokens[1].lower() if len(tokens) > 1 else "list"
                     if subcmd == "list":
                         if _eq:
