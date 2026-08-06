@@ -72,6 +72,23 @@
     if (token === "") {
       throw new Error("Gateway token is not configured");
     }
+    // Security: refuse to send Bearer token over plain HTTP (credential leak)
+    // Exception: localhost/127.0.0.1 for local development
+    if (gatewayUrl.startsWith("http:")) {
+      try {
+        var parsed = new URL(gatewayUrl);
+        var host = parsed.hostname;
+        if (host !== "localhost" && host !== "127.0.0.1" && host !== "[::1]") {
+          throw new Error(
+            "Refusing to send credentials over plain HTTP. " +
+            "Use HTTPS for non-localhost gateway URLs."
+          );
+        }
+      } catch (e) {
+        if (e.message.indexOf("Refusing") !== -1) throw e;
+        // URL parse failed — normalizeGatewayUrl already validated, shouldn't happen
+      }
+    }
     return { gatewayUrl, token };
   }
 

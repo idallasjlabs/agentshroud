@@ -215,3 +215,26 @@ describe("postForward", () => {
     expect(res.error).not.toContain(GOOD_CONFIG.token);
   });
 });
+
+// --- SCRUM-108: HTTP credential protection ---
+
+test("validateConfig rejects plain HTTP for non-localhost URLs", () => {
+  expect(() =>
+    F.validateConfig({ gatewayUrl: "http://remote-host.example.com:8080", token: "secret" })
+  ).toThrow(/Refusing to send credentials over plain HTTP/);
+});
+
+test("validateConfig allows plain HTTP for localhost", () => {
+  const cfg = F.validateConfig({ gatewayUrl: "http://localhost:8080", token: "secret" });
+  expect(cfg.gatewayUrl).toBe("http://localhost:8080");
+});
+
+test("validateConfig allows plain HTTP for 127.0.0.1", () => {
+  const cfg = F.validateConfig({ gatewayUrl: "http://127.0.0.1:8080", token: "secret" });
+  expect(cfg.gatewayUrl).toBe("http://127.0.0.1:8080");
+});
+
+test("validateConfig allows HTTPS for remote URLs", () => {
+  const cfg = F.validateConfig({ gatewayUrl: "https://gateway.example.com", token: "secret" });
+  expect(cfg.gatewayUrl).toBe("https://gateway.example.com");
+});

@@ -258,7 +258,9 @@ async def get_status(user: str = Depends(require_auth)) -> dict:
             c = container_map[svc_name]
             services[svc_name] = {
                 "status": (
-                    "running" if "Up" in c.status or "running" in c.status.lower() else "stopped"
+                    "running"
+                    if "Up" in c.status or "running" in c.status.lower()
+                    else "stopped"
                 ),
                 "image": c.image,
                 "id": c.id[:12],
@@ -392,7 +394,9 @@ async def killswitch(
                 engine.stop(name)
                 engine.rm(name, force=True)
             except Exception as _e:
-                logger.warning("killswitch disconnect: could not remove %s: %s", name, _e)
+                logger.warning(
+                    "killswitch disconnect: could not remove %s: %s", name, _e
+                )
                 failed.append(name)
         if failed:
             raise HTTPException(
@@ -422,7 +426,9 @@ async def get_config(user: str = Depends(require_auth)) -> dict:
 
 
 @router.put("/config")
-async def update_config(update: ConfigUpdate, user: str = Depends(require_auth)) -> dict:
+async def update_config(
+    update: ConfigUpdate, user: str = Depends(require_auth)
+) -> dict:
     """Update configuration (writes YAML and optionally restarts)."""
     import yaml
 
@@ -439,10 +445,13 @@ async def update_config(update: ConfigUpdate, user: str = Depends(require_auth))
         "approval",
         "pii",
         "egress",
+        "bots",
     }
     unexpected = set(update.config.keys()) - ALLOWED_TOP_KEYS
     if unexpected:
-        raise HTTPException(status_code=400, detail=f"Unknown config keys: {sorted(unexpected)}")
+        raise HTTPException(
+            status_code=400, detail=f"Unknown config keys: {sorted(unexpected)}"
+        )
 
     # Backup current
     if config_path.exists():
@@ -454,7 +463,9 @@ async def update_config(update: ConfigUpdate, user: str = Depends(require_auth))
 
 
 @router.post("/config/import")
-async def import_config(update: ConfigUpdate, user: str = Depends(require_auth)) -> dict:
+async def import_config(
+    update: ConfigUpdate, user: str = Depends(require_auth)
+) -> dict:
     """Import configuration from uploaded data."""
     return await update_config(update)
 
@@ -547,12 +558,16 @@ async def check_bot_updates(bot_id: str, user: str = Depends(require_auth)) -> d
         "bot_id": bot_id,
         "current": current,
         "latest": latest,
-        "update_available": current != latest and latest != "unknown" and current != "unknown",
+        "update_available": current != latest
+        and latest != "unknown"
+        and current != "unknown",
     }
 
 
 @router.post("/updates/bot/{bot_id}/upgrade")
-async def upgrade_bot(bot_id: str, req: UpdateRequest, user: str = Depends(require_auth)) -> dict:
+async def upgrade_bot(
+    bot_id: str, req: UpdateRequest, user: str = Depends(require_auth)
+) -> dict:
     """Upgrade a named bot container."""
     engine = _get_engine()
     container = _resolve_bot_container(bot_id)
@@ -570,7 +585,12 @@ async def upgrade_bot(bot_id: str, req: UpdateRequest, user: str = Depends(requi
         engine.compose_up(RuntimeConfig.from_env().compose_file)
         steps[-1]["status"] = "done"
 
-        return {"status": "upgraded", "bot_id": bot_id, "version": version, "steps": steps}
+        return {
+            "status": "upgraded",
+            "bot_id": bot_id,
+            "version": version,
+            "steps": steps,
+        }
     except Exception as e:
         steps.append({"step": "error", "detail": str(e)})
         return {"status": "failed", "bot_id": bot_id, "steps": steps, "error": str(e)}
@@ -596,7 +616,9 @@ async def check_openclaw_updates(user: str = Depends(require_auth)) -> dict:
 
 
 @router.post("/updates/openclaw/upgrade")
-async def upgrade_openclaw(req: UpdateRequest, user: str = Depends(require_auth)) -> dict:
+async def upgrade_openclaw(
+    req: UpdateRequest, user: str = Depends(require_auth)
+) -> dict:
     """Upgrade OpenClaw (backward-compat alias for /updates/bot/openclaw/upgrade)."""
     return await upgrade_bot("openclaw", req, user)
 
@@ -631,10 +653,14 @@ async def check_agentshroud_updates(user: str = Depends(require_auth)) -> dict:
             timeout=10,
             cwd=".",
         )
-        current_version = tag_result.stdout.strip() if tag_result.returncode == 0 else "dev"
+        current_version = (
+            tag_result.stdout.strip() if tag_result.returncode == 0 else "dev"
+        )
 
         # Fetch latest from remote
-        subprocess.run(["git", "fetch", "--tags"], capture_output=True, timeout=30, cwd=".")
+        subprocess.run(
+            ["git", "fetch", "--tags"], capture_output=True, timeout=30, cwd="."
+        )
 
         # Check if behind
         behind = subprocess.run(
@@ -671,7 +697,9 @@ async def check_agentshroud_updates(user: str = Depends(require_auth)) -> dict:
 
 
 @router.post("/updates/agentshroud/upgrade")
-async def upgrade_agentshroud(req: UpdateRequest, user: str = Depends(require_auth)) -> dict:
+async def upgrade_agentshroud(
+    req: UpdateRequest, user: str = Depends(require_auth)
+) -> dict:
     """Pull latest AgentShroud, test, rebuild, restart. Auto-rollback on failure."""
     import subprocess
 
@@ -893,7 +921,9 @@ async def ws_logs(websocket: WebSocket, token: str = Query(default="")):
                 for svc in ["agentshroud-gateway"] + _bot_service_names():
                     try:
                         logs = engine.logs(svc, tail=5)
-                        await websocket.send_json({"service": svc, "logs": logs.splitlines()})
+                        await websocket.send_json(
+                            {"service": svc, "logs": logs.splitlines()}
+                        )
                     except Exception:
                         pass
             except Exception:
@@ -1050,7 +1080,9 @@ def _intel_store():
 
     from gateway.security.intel_report import IntelReportStore
 
-    path = _Path(os.environ.get("AGENTSHROUD_INTEL_REPORT_PATH", str(_INTEL_REPORT_PATH_DEFAULT)))
+    path = _Path(
+        os.environ.get("AGENTSHROUD_INTEL_REPORT_PATH", str(_INTEL_REPORT_PATH_DEFAULT))
+    )
     return IntelReportStore(store_path=path)
 
 
@@ -1081,7 +1113,9 @@ async def get_competitive_intel(user: str = Depends(require_auth)) -> dict:
         )
 
     if report is None:
-        raise HTTPException(status_code=404, detail="No competitive intel reports found")
+        raise HTTPException(
+            status_code=404, detail="No competitive intel reports found"
+        )
 
     chain_valid, chain_msg = store.verify_chain()
 

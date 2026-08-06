@@ -16,7 +16,7 @@ async function send(action, label) {
   setStatus(label + "…");
   try {
     await chrome.runtime.sendMessage({ action });
-    setStatus("Sent. Check the AgentShroud notification.");
+    setStatus("Request sent. Check the notification for the result.");
   } catch (e) {
     setStatus("Failed: " + (e && e.message ? e.message : "unknown error"));
   }

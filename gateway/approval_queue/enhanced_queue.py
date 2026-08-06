@@ -71,7 +71,9 @@ class EnhancedApprovalQueue:
         import tempfile as _tf
 
         self.store = store or ApprovalStore(
-            os.path.join(os.environ.get("AGENTSHROUD_DATA_DIR", _tf.gettempdir()), "approvals.db")
+            os.path.join(
+                os.environ.get("AGENTSHROUD_DATA_DIR", _tf.gettempdir()), "approvals.db"
+            )
         )
         self.bot_token = bot_token
         self.admin_chat_id = admin_chat_id
@@ -93,7 +95,13 @@ class EnhancedApprovalQueue:
         pending_items = await self.store.load_pending()
         for item in pending_items:
             self._pending_futures[item.request_id] = asyncio.Future()
-            self._schedule_timeout(item.request_id, item.expires_at)
+            # Recover the original timeout_action from persisted details
+            recovered_action = (item.details or {}).get("_timeout_action", "deny")
+            self._schedule_timeout(
+                item.request_id,
+                item.expires_at,
+                _override_timeout_action=recovered_action,
+            )
 
         logger.info(f"Restored {len(pending_items)} pending approval items")
 
@@ -217,9 +225,13 @@ class EnhancedApprovalQueue:
             submitted_at = now.isoformat().replace("+00:00", "Z")
 
             # Use policy timeout if provided, otherwise use default config
-            timeout_seconds = policy.timeout_seconds if policy else self.config.timeout_seconds
+            timeout_seconds = (
+                policy.timeout_seconds if policy else self.config.timeout_seconds
+            )
             expires_at = (
-                (now + timedelta(seconds=timeout_seconds)).isoformat().replace("+00:00", "Z")
+                (now + timedelta(seconds=timeout_seconds))
+                .isoformat()
+                .replace("+00:00", "Z")
             )
 
             # Create queue item
@@ -233,6 +245,10 @@ class EnhancedApprovalQueue:
                 expires_at=expires_at,
                 status="pending",
             )
+
+            # Persist timeout_action in details so it survives restart recovery
+            if policy and policy.timeout_action:
+                item.details["_timeout_action"] = policy.timeout_action
 
             # Save to store
             await self.store.save(item)
@@ -263,19 +279,28 @@ class EnhancedApprovalQueue:
 
             # Send Telegram notification for critical tier
             if policy and "telegram_admin" in policy.notify_channels:
-                await self._notify_telegram(item, request.details.get("risk_tier", "unknown"))
+                await self._notify_telegram(
+                    item, request.details.get("risk_tier", "unknown")
+                )
 
             return item
 
     def _schedule_timeout(
-        self, request_id: str, expires_at: str, policy: Optional[ToolRiskPolicy] = None
+        self,
+        request_id: str,
+        expires_at: str,
+        policy: Optional[ToolRiskPolicy] = None,
+        _override_timeout_action: Optional[str] = None,
     ):
         """Schedule a timeout task for a request."""
         expires_dt = datetime.fromisoformat(expires_at.replace("Z", "+00:00"))
         now = datetime.now(timezone.utc)
         delay = max(0, (expires_dt - now).total_seconds())
 
-        timeout_action = policy.timeout_action if policy else "deny"
+        if _override_timeout_action is not None:
+            timeout_action = _override_timeout_action
+        else:
+            timeout_action = policy.timeout_action if policy else "deny"
 
         async def timeout_handler():
             await asyncio.sleep(delay)
@@ -290,7 +315,9 @@ class EnhancedApprovalQueue:
                 return  # Already resolved
 
             # Update status in store
-            await self.store.update_status(request_id, "expired", f"timeout (action: {action})")
+            await self.store.update_status(
+                request_id, "expired", f"timeout (action: {action})"
+            )
 
             # Resolve future
             future = self._pending_futures.pop(request_id, None)
@@ -347,7 +374,9 @@ class EnhancedApprovalQueue:
             # Check if we have this request
             future = self._pending_futures.get(request_id)
             if not future:
-                raise KeyError(f"Approval request {request_id} not found or already decided")
+                raise KeyError(
+                    f"Approval request {request_id} not found or already decided"
+                )
 
             # IEC 62443 FR1 — second factor for high-risk APPROVALS (fail-closed).
             # Aligned with the base queue: a single is_required() check gates
@@ -369,7 +398,9 @@ class EnhancedApprovalQueue:
                             "MFA required to approve: approval item unavailable (fail-closed)"
                         )
                 elif self.mfa_guard.is_required(item.action_type):
-                    mfa = self.mfa_guard.verify(action_type=item.action_type, code=mfa_code)
+                    mfa = self.mfa_guard.verify(
+                        action_type=item.action_type, code=mfa_code
+                    )
                     if not mfa.allowed:
                         logger.warning(
                             "Approval %s DENIED second factor (%s) action_type=%s",
@@ -471,12 +502,16 @@ class EnhancedApprovalQueue:
         """Accept a WebSocket connection and add to connected set."""
         await websocket.accept()
         self.connected_clients.add(websocket)
-        logger.info(f"WebSocket client connected (total: {len(self.connected_clients)})")
+        logger.info(
+            f"WebSocket client connected (total: {len(self.connected_clients)})"
+        )
 
     async def disconnect(self, websocket: WebSocket) -> None:
         """Remove a WebSocket connection from connected set."""
         self.connected_clients.discard(websocket)
-        logger.info(f"WebSocket client disconnected (remaining: {len(self.connected_clients)})")
+        logger.info(
+            f"WebSocket client disconnected (remaining: {len(self.connected_clients)})"
+        )
 
     async def broadcast(self, message: dict[str, Any]) -> None:
         """Send a JSON message to all connected WebSocket clients."""

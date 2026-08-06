@@ -28,10 +28,16 @@ const CTX_CLIP_SELECTION = "agentshroud-clip-selection";
 async function loadConfig() {
   const keys = { gatewayUrl: "", token: "" };
   const sync = await chrome.storage.sync.get(keys);
-  if (sync.gatewayUrl || sync.token) {
+  // If sync has both fields populated, use sync exclusively
+  if (sync.gatewayUrl && sync.token) {
     return sync;
   }
-  return chrome.storage.local.get(keys);
+  // Per-field fallback: if sync is missing a field, check local storage
+  const local = await chrome.storage.local.get(keys);
+  return {
+    gatewayUrl: sync.gatewayUrl || local.gatewayUrl || "",
+    token: sync.token || local.token || "",
+  };
 }
 
 // --- notifications -----------------------------------------------------------
@@ -116,7 +122,7 @@ async function clipPage(tab) {
   let extracted;
   try {
     const injection = await chrome.scripting.executeScript({
-      target: { tabId: tab.id },
+      target: { tabId: tab.id, allFrames: false },
       func: extractPageContent,
     });
     extracted = injection && injection[0] ? injection[0].result : null;
