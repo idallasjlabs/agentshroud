@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 import asyncio
+import json
 
 import pytest
 
@@ -433,3 +434,56 @@ async def test_cleanup_decided_keeps_pending_items(approval_queue):
 
     assert item.request_id in approval_queue.pending
     assert removed == 0
+
+
+@pytest.mark.asyncio
+async def test_cleanup_decided_persists_removal_to_disk(queue_config, tmp_path, monkeypatch):
+    """SCRUM-110: cleanup_decided() must persist the removal, not just mutate
+    the in-memory dict. A queue re-created from the same store file after
+    cleanup must NOT resurrect the item that was just cleaned up — otherwise
+    a restart between cleanup and the next unrelated write brings it back.
+    """
+    monkeypatch.setenv("AGENTSHROUD_APPROVAL_AUDIT_PATH", str(tmp_path / "audit.jsonl"))
+    store_path = tmp_path / "store.json"
+    monkeypatch.setenv("AGENTSHROUD_APPROVAL_STORE_PATH", str(store_path))
+
+    queue = ApprovalQueue(queue_config)
+    item = await queue.submit(
+        ApprovalRequest(action_type="email_sending", description="cleanup+persist", details={})
+    )
+    await queue.decide(item.request_id, approved=True)
+
+    # Backdate so cleanup_decided() considers it old enough to remove.
+    queue.pending[item.request_id].submitted_at = "2020-01-01T00:00:00Z"
+    removed = await queue.cleanup_decided(max_age_seconds=3600)
+    assert removed == 1
+    assert item.request_id not in queue.pending
+
+    # Re-create the queue from the SAME store file (simulates a restart).
+    # If cleanup only mutated memory and never persisted, the item would
+    # still be sitting in store.json and would come back here.
+    queue2 = ApprovalQueue(queue_config)
+    assert item.request_id not in queue2.pending
+
+
+@pytest.mark.asyncio
+async def test_persist_pending_store_writes_atomically(queue_config, tmp_path, monkeypatch):
+    """SCRUM-110: writes go through a temp file + os.replace so a crash
+    mid-write can never leave a torn/partial store.json on disk."""
+    monkeypatch.setenv("AGENTSHROUD_APPROVAL_AUDIT_PATH", str(tmp_path / "audit.jsonl"))
+    store_path = tmp_path / "store.json"
+    monkeypatch.setenv("AGENTSHROUD_APPROVAL_STORE_PATH", str(store_path))
+
+    queue = ApprovalQueue(queue_config)
+    await queue.submit(
+        ApprovalRequest(action_type="email_sending", description="atomic write", details={})
+    )
+
+    # No temp artifact should be left behind after a completed write, and
+    # the final file must always be valid, complete JSON.
+    assert not (tmp_path / "store.json.tmp").exists()
+    with open(store_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    parsed = json.loads(content)  # raises if the write was torn/partial
+    assert parsed["version"] == 1
+    assert len(parsed["items"]) == 1

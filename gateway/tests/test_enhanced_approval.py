@@ -355,6 +355,92 @@ class TestPersistence:
 
         await queue2.close()
 
+    @pytest.mark.asyncio
+    async def test_restart_recovery_preserves_timeout_action(self):
+        """SCRUM-110: restart recovery must reschedule the timeout with the
+        item's ORIGINAL policy timeout_action, not silently fall back to the
+        hardcoded 'deny' default used when no policy is threaded through.
+
+        Uses timeout_action="approve" specifically because "deny" is
+        indistinguishable from the pre-fix bug's hardcoded fallback — a test
+        using "deny" would pass even with the recovery bug present.
+        """
+        with tempfile.NamedTemporaryFile(suffix=".db", delete=False) as f:
+            store_path = f.name
+
+        config = ApprovalQueueConfig(enabled=True)
+        approve_on_timeout_config = ToolRiskConfig(
+            enforce_mode=True,
+            monitor_only_mode=False,
+            owner_user_id="test_owner",
+            critical=ToolRiskPolicy(
+                require_approval=True,
+                timeout_seconds=1,
+                timeout_action="approve",
+                notify_channels=["websocket"],
+                owner_bypass=False,
+            ),
+            high=ToolRiskPolicy(
+                require_approval=False,
+                timeout_seconds=300,
+                timeout_action="deny",
+                notify_channels=["websocket"],
+                owner_bypass=True,
+            ),
+            medium=ToolRiskPolicy(
+                require_approval=False,
+                timeout_seconds=300,
+                timeout_action="deny",
+                notify_channels=["websocket"],
+                owner_bypass=True,
+            ),
+            low=ToolRiskPolicy(
+                require_approval=False,
+                timeout_seconds=300,
+                timeout_action="deny",
+                notify_channels=["websocket"],
+                owner_bypass=True,
+            ),
+            tool_classifications={"exec": "critical"},
+        )
+
+        store1 = ApprovalStore(store_path)
+        await store1.initialize()
+        queue1 = EnhancedApprovalQueue(config, approve_on_timeout_config, store1)
+        await queue1.initialize()
+
+        request_id, requires_wait = await queue1.submit_tool_request(
+            "exec", {"command": "test"}, "test_agent"
+        )
+        assert requires_wait
+
+        # Persisted details must carry the timeout_action forward.
+        item = await queue1.get_item(request_id)
+        assert item.details.get("_timeout_action") == "approve"
+
+        # Cancel queue1's own in-memory timeout task so it cannot resolve the
+        # request itself — only the restart-recovered schedule on queue2 may.
+        task = queue1._timeout_tasks.pop(request_id, None)
+        if task:
+            task.cancel()
+        await queue1.close()
+
+        # Simulate restart: a fresh queue instance recovers pending items and
+        # reschedules their timeouts from persisted state alone.
+        store2 = ApprovalStore(store_path)
+        await store2.initialize()
+        queue2 = EnhancedApprovalQueue(config, approve_on_timeout_config, store2)
+        await queue2.initialize()
+
+        future = queue2._pending_futures[request_id]
+        result = await asyncio.wait_for(future, timeout=5)
+
+        # If recovery dropped timeout_action (pre-fix bug), _schedule_timeout's
+        # unconditional "deny" default would resolve this False instead.
+        assert result is True
+
+        await queue2.close()
+
 
 @pytest.mark.asyncio
 @pytest.mark.asyncio

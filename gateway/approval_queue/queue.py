@@ -197,8 +197,7 @@ class ApprovalQueue:
             self._persist_pending_store()
 
             logger.info(
-                f"Approval request {request_id} {item.status} "
-                f"(reason: {reason or 'none'})"
+                f"Approval request {request_id} {item.status} " f"(reason: {reason or 'none'})"
             )
             self._append_audit_event(
                 {
@@ -280,9 +279,7 @@ class ApprovalQueue:
                 if item.status not in decided_statuses:
                     continue
                 try:
-                    submitted = datetime.fromisoformat(
-                        item.submitted_at.replace("Z", "+00:00")
-                    )
+                    submitted = datetime.fromisoformat(item.submitted_at.replace("Z", "+00:00"))
                     if submitted < cutoff:
                         to_remove.append(request_id)
                 except (ValueError, AttributeError):
@@ -294,9 +291,7 @@ class ApprovalQueue:
                 self._persist_pending_store()
 
         if to_remove:
-            logger.info(
-                "Approval queue cleanup removed %d decided item(s)", len(to_remove)
-            )
+            logger.info("Approval queue cleanup removed %d decided item(s)", len(to_remove))
         return len(to_remove)
 
     async def _expire_stale(self) -> list[str]:
@@ -354,9 +349,7 @@ class ApprovalQueue:
         """
         await websocket.accept()
         self.connected_clients.add(websocket)
-        logger.info(
-            f"WebSocket client connected (total: {len(self.connected_clients)})"
-        )
+        logger.info(f"WebSocket client connected (total: {len(self.connected_clients)})")
 
     async def disconnect(self, websocket: WebSocket) -> None:
         """Remove a WebSocket connection from connected set
@@ -365,9 +358,7 @@ class ApprovalQueue:
             websocket: WebSocket connection
         """
         self.connected_clients.discard(websocket)
-        logger.info(
-            f"WebSocket client disconnected (remaining: {len(self.connected_clients)})"
-        )
+        logger.info(f"WebSocket client disconnected (remaining: {len(self.connected_clients)})")
 
     async def broadcast(self, message: dict[str, Any]) -> None:
         """Send a JSON message to all connected WebSocket clients
@@ -396,9 +387,7 @@ class ApprovalQueue:
             from datetime import timezone
 
             payload = {
-                "timestamp": datetime.now(timezone.utc)
-                .isoformat()
-                .replace("+00:00", "Z"),
+                "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
                 **event,
             }
             directory = os.path.dirname(self._audit_path)
