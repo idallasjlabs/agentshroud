@@ -67,6 +67,41 @@ Critical constraints, confirmed by real use — not theoretical:
   system `python3` — the venv has `gateway/requirements.txt` and the spaCy
   model installed; system Python does not.
 
+## Jira ticket — every development batch gets one
+
+**This is a standing rule, not optional:** every task (Mode A) or sweep (Mode
+B) you run under this skill gets a real Jira ticket on the agentshroudai
+SCRUM board (`https://agentshroudai.atlassian.net`), created near the start
+and kept up to date as the work progresses — a GitHub PR alone is not
+sufficient tracking.
+
+**Critical distinction — do NOT run this via `agentshroud-ssh-exec.sh`.**
+Every other command in this skill reaches the `agentshroud-bot` checkout on
+marvin through the gateway's SSH wrappers. The Jira helper is different: it
+runs directly in **your own container**, using your own network path to the
+gateway (`GATEWAY_AUTH_TOKEN` is already in your environment) — the same
+mechanism Hermes's `jira-weekly-review` cron job uses. Run it as a plain
+local command, never prefixed with `agentshroud-ssh-exec.sh marvin`:
+
+```
+python3 /home/node/.openclaw/workspace/jira_dev_ticket.py create --project SCRUM --summary "<short title>" --description "<what and why>" --issue-type Task [--parent SCRUM-<epic>] [--labels openclaw,dev-batch]
+python3 /home/node/.openclaw/workspace/jira_dev_ticket.py comment --issue SCRUM-<n> --body "<status update>"
+python3 /home/node/.openclaw/workspace/jira_dev_ticket.py transition --issue SCRUM-<n> --status "<status name, e.g. In Progress / Done>"
+```
+
+`create` prints `{"key": "SCRUM-<n>"}` on success — capture that key, you need
+it for every later `comment`/`transition` call. Every subcommand exits 0 on
+success and 1 with a real error on stderr on failure; if it fails, report the
+exact error to the owner rather than silently skipping the ticket update —
+the same "no silent no-op" standard as everything else in this skill.
+
+If the owner's request references a specific SCRUM epic (e.g. "continue the
+v1.3.0 work"), pass `--parent` with that epic's key. Otherwise create a
+standalone Task with no parent and mention in your Telegram notification that
+the owner may want to link it to an epic themselves.
+
+---
+
 ## Reviewers and fixer available to you
 
 All four are pre-authenticated and confirmed working non-interactively from
@@ -116,6 +151,26 @@ All subsequent commands use `cwd`
 `/Users/agentshroud-bot/Development/agentshroud-odev-<slug>` — never the
 primary checkout.
 
+### Step 2b — Create the Jira ticket
+
+Run this yourself, directly (not via `agentshroud-ssh-exec.sh` — see "Jira
+ticket" above):
+
+```
+python3 /home/node/.openclaw/workspace/jira_dev_ticket.py create --project SCRUM --summary "<task summary>" --description "Branch: <type>/v1.0.<N>-<slug>. <what and why>" --issue-type Task --labels openclaw,dev-batch
+```
+
+Capture the returned key (e.g. `SCRUM-124`) — you'll comment on and
+transition this same ticket in Steps 7 and 8. Immediately after creating it:
+
+```
+python3 /home/node/.openclaw/workspace/jira_dev_ticket.py transition --issue SCRUM-<n> --status "In Progress"
+```
+
+If the board has no transition matching "In Progress" by that exact name,
+skip the transition (it's not fatal) but still proceed — the created ticket
+itself is what matters most.
+
 ### Step 3 — Write and edit code
 
 Use `agentshroud-ssh-write-file.sh` for every change, per the constraints
@@ -161,6 +216,12 @@ agentshroud-ssh-exec.sh marvin "gh pr create --title '<concise title>' --body '<
 
 Capture the PR URL from the output.
 
+### Step 6b — Update the Jira ticket with the PR link
+
+```
+python3 /home/node/.openclaw/workspace/jira_dev_ticket.py comment --issue SCRUM-<n> --body "PR opened: <PR URL>. Tests: <pass/fail summary>. Review: <clean, or N findings addressed>."
+```
+
 ### Step 7 — Notify the owner
 
 Send a Telegram message yourself (your own native send capability — never
@@ -168,6 +229,7 @@ route this through `agentshroud-ssh-exec.sh`):
 
 ```
 PR ready: <PR URL>
+Jira: <SCRUM-n URL>
 <one-line summary>
 Tests: <pass/fail summary>
 Review: <clean, or N findings addressed>
@@ -184,6 +246,16 @@ agentshroud-ssh-exec.sh marvin "gh pr merge --admin --squash --delete-branch" ""
 ```
 
 If ambiguous which PR, ask before merging anything.
+
+Once the merge succeeds, close out the Jira ticket:
+
+```
+python3 /home/node/.openclaw/workspace/jira_dev_ticket.py comment --issue SCRUM-<n> --body "Merged to main: <PR URL>."
+python3 /home/node/.openclaw/workspace/jira_dev_ticket.py transition --issue SCRUM-<n> --status "Done"
+```
+
+If "Done" doesn't match an available transition name, the comment above is
+still real tracking — don't treat a transition mismatch as a task failure.
 
 ### Step 9 — Clean up
 
@@ -213,6 +285,17 @@ browser-extension/
 Same as Mode A Steps 1-2, but the slug should reflect the sweep, e.g.
 `chore/v1.0.<N>-comprehensive-review-<date>`. ALL directories in this sweep
 share this single worktree/branch — do not create a new one per directory.
+
+Then create ONE Jira ticket for the whole sweep (same as Mode A Step 2b, run
+directly — not via `agentshroud-ssh-exec.sh`):
+
+```
+python3 /home/node/.openclaw/workspace/jira_dev_ticket.py create --project SCRUM --summary "Comprehensive review sweep <date>" --description "Directories: <list>. Branch: <slug>." --issue-type Task --labels openclaw,dev-batch,review-sweep
+python3 /home/node/.openclaw/workspace/jira_dev_ticket.py transition --issue SCRUM-<n> --status "In Progress"
+```
+
+Capture the key — every directory's update in Step 2g comments on this same
+ticket, not a new one per directory.
 
 ### Step 2 — Work through directories one at a time
 
@@ -270,12 +353,23 @@ directory, not just at the end:
 [<directory>] reviewed. Codex+Gemini findings: N. Fixed: M. Skipped: K. Tests: <pass/fail>.
 ```
 
+Also comment the same line on the sweep's Jira ticket (run directly, not via
+`agentshroud-ssh-exec.sh`):
+
+```
+python3 /home/node/.openclaw/workspace/jira_dev_ticket.py comment --issue SCRUM-<n> --body "[<directory>] reviewed. Codex+Gemini findings: N. Fixed: M. Skipped: K. Tests: <pass/fail>."
+```
+
 ### Step 3 — After the last directory (or a natural stopping point)
 
 Push, then open ONE PR summarizing every directory's findings and fixes
 across the whole sweep (a table: directory | findings | fixed | skipped |
-tests). Send a final Telegram message with the PR link. **Halt** — no merge
-without the owner's explicit follow-up, exactly like Mode A Step 8.
+tests). Comment the PR link on the Jira ticket
+(`jira_dev_ticket.py comment --issue SCRUM-<n> --body "PR opened: <PR URL>..."`).
+Send a final Telegram message with the PR link and the Jira ticket link.
+**Halt** — no merge without the owner's explicit follow-up, exactly like Mode
+A Step 8. Once the owner explicitly merges, close out the ticket the same way
+as Mode A Step 8 (comment + transition to "Done").
 
 If you judge you've hit a natural stopping point before finishing the full
 directory list (diminishing findings, or you're running low on your own
@@ -304,3 +398,8 @@ silently stopping — name which directories remain for a future sweep.
 - **Halt and ask** if a task or directory touches `gateway/security/**`,
   secrets, or CI/CD config in a way that looks architectural rather than a
   clear bug fix — those warrant the owner's explicit sign-off on approach.
+- **Never skip the Jira ticket.** It is run directly by you (`python3
+  /home/node/.openclaw/workspace/jira_dev_ticket.py ...`), never through
+  `agentshroud-ssh-exec.sh` — that wrapper only reaches marvin, not your own
+  container's gateway network path. If the create/comment/transition call
+  fails, report the real error; don't silently proceed without a ticket.
