@@ -189,6 +189,19 @@ else
     echo "[hermes-init] WARN: jira_weekly_review.py not found in defaults — skipping"
 fi
 
+# Generalized Jira dev-ticket helper (create/comment/transition) used by the
+# i-hdev orchestration skill so every autonomous dev batch gets a real SCRUM
+# ticket — refresh on EVERY boot, same rationale as jira_weekly_review.py above.
+if [ -f "${DEFAULTS_DIR}/workspace/jira_dev_ticket.py" ]; then
+    mkdir -p "${DATA_DIR}/workspace"
+    cp "${DEFAULTS_DIR}/workspace/jira_dev_ticket.py" \
+       "${DATA_DIR}/workspace/jira_dev_ticket.py"
+    chmod 755 "${DATA_DIR}/workspace/jira_dev_ticket.py" 2>/dev/null || true
+    echo "[hermes-init] Seeded workspace/jira_dev_ticket.py"
+else
+    echo "[hermes-init] WARN: jira_dev_ticket.py not found in defaults — skipping"
+fi
+
 # ── Native cron jobs — idempotent seed on every boot ───────────────────────
 # Uses `hermes cron create` (writes to Hermes's internal db) rather than
 # the YAML file, which is not read natively by hermes-agent.

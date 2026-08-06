@@ -321,6 +321,19 @@ if [ -f "${DEFAULTS_DIR}/workspace/DEVELOPER.md" ]; then
   echo "[init] ✓ Refreshed DEVELOPER.md (development context)"
 fi
 
+# jira_dev_ticket.py: always overwrite — generalized Jira dev-ticket helper
+# (create/comment/transition) used by the i-odev orchestration skill so every
+# autonomous dev batch gets a real SCRUM ticket. Same rationale/pattern as
+# Hermes's jira_weekly_review.py: it reads no persistent state, so a refresh
+# on every boot is safe and ships code fixes on upgrade.
+if [ -f "${DEFAULTS_DIR}/workspace/jira_dev_ticket.py" ]; then
+  cp "${DEFAULTS_DIR}/workspace/jira_dev_ticket.py" "${WORKSPACE_DIR}/jira_dev_ticket.py"
+  chmod 755 "${WORKSPACE_DIR}/jira_dev_ticket.py" 2>/dev/null || true
+  echo "[init] ✓ Refreshed jira_dev_ticket.py (Jira dev-ticket helper)"
+else
+  echo "[init] ⚠ jira_dev_ticket.py not found in defaults — skipping"
+fi
+
 # IDENTITY.md: seed only if missing or still the unfilled OpenClaw default.
 # Source of truth is the synced persona from ~/.llm_settings/agents/openclaw-identity.md
 # (baked to ${DEFAULTS_DIR}/agents/openclaw-identity.md by sync-llm-settings.sh). This
