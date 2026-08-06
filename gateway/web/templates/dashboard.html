@@ -54,36 +54,36 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <!-- System Overview -->
+        <!-- System Overview (live) -->
         <section class="card">
             <h2>System Overview</h2>
             <div class="grid">
                 <div class="status-item">
-                    <span class="status-indicator"></span>
+                    <span class="status-indicator" id="gw-indicator"></span>
                     <div>
                         <div style="font-weight: 600;">Gateway Status</div>
-                        <div style="font-size: 0.9rem; color: #94a3b8;">Running</div>
+                        <div style="font-size: 0.9rem; color: #94a3b8;" id="gw-status">Loading...</div>
                     </div>
                 </div>
                 <div class="status-item">
-                    <span class="status-indicator"></span>
+                    <span class="status-indicator" id="mod-indicator"></span>
                     <div>
                         <div style="font-weight: 600;">Security Modules</div>
-                        <div style="font-size: 0.9rem; color: #94a3b8;">24/30 Active</div>
+                        <div style="font-size: 0.9rem; color: #94a3b8;" id="mod-status">Loading...</div>
                     </div>
                 </div>
                 <div class="status-item">
-                    <span class="status-indicator"></span>
+                    <span class="status-indicator" id="svc-indicator"></span>
                     <div>
-                        <div style="font-weight: 600;">Active Users</div>
-                        <div style="font-size: 0.9rem; color: #94a3b8;">3 Online</div>
+                        <div style="font-weight: 600;">Services</div>
+                        <div style="font-size: 0.9rem; color: #94a3b8;" id="svc-status">Loading...</div>
                     </div>
                 </div>
                 <div class="status-item">
-                    <span class="status-indicator"></span>
+                    <span class="status-indicator" id="health-indicator"></span>
                     <div>
                         <div style="font-weight: 600;">System Health</div>
-                        <div style="font-size: 0.9rem; color: #94a3b8;">Optimal</div>
+                        <div style="font-size: 0.9rem; color: #94a3b8;" id="health-status">Loading...</div>
                     </div>
                 </div>
             </div>
@@ -100,15 +100,104 @@
             </div>
         </section>
 
-        <!-- Status -->
+        <!-- Status (live) -->
         <section class="card">
             <h2>System Status</h2>
-            <p>AgentShroud is running normally. All critical security modules are active and monitoring interactions.</p>
-            <p><strong>Uptime:</strong> 15 days, 8 hours, 23 minutes</p>
-            <p><strong>Version:</strong> 1.2.3</p>
-            <p><strong>Last Updated:</strong> Feb 20, 2024</p>
+            <p id="status-summary">Loading system status...</p>
+            <p><strong>Uptime:</strong> <span id="uptime-val">-</span></p>
+            <p><strong>Version:</strong> <span id="version-val">-</span></p>
+            <p><strong>Disk:</strong> <span id="disk-val">-</span></p>
         </section>
     </main>
+<script>
+(async () => {
+    function escapeHtml(s) {
+        if (typeof s !== 'string') return String(s == null ? '' : s);
+        return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+    }
+    function fmtUptime(sec) {
+        if (!sec || sec <= 0) return '-';
+        var d = Math.floor(sec / 86400), h = Math.floor((sec % 86400) / 3600), m = Math.floor((sec % 3600) / 60);
+        var parts = [];
+        if (d > 0) parts.push(d + ' day' + (d > 1 ? 's' : ''));
+        if (h > 0) parts.push(h + ' hour' + (h > 1 ? 's' : ''));
+        if (m > 0) parts.push(m + ' minute' + (m > 1 ? 's' : ''));
+        return parts.join(', ') || '< 1 minute';
+    }
+    function setIndicator(id, ok) {
+        var el = document.getElementById(id);
+        if (el) el.style.background = ok ? '#22c55e' : '#ef4444';
+    }
+
+    var qs = new URLSearchParams(window.location.search);
+    var token = qs.get('token') || '';
+    var h = token ? {'Authorization': 'Bearer ' + token} : {};
+
+    // Fetch proxy status (has uptime)
+    try {
+        var pr = await fetch('/api/proxy/status', {headers: h});
+        if (pr.ok) {
+            var ps = await pr.json();
+            document.getElementById('gw-status').textContent = 'Running';
+            setIndicator('gw-indicator', true);
+            document.getElementById('uptime-val').textContent = fmtUptime(ps.uptime_seconds);
+            document.getElementById('status-summary').textContent =
+                'Requests: ' + (ps.total_requests||0) + ' total, ' + (ps.blocked||0) + ' blocked, ' + (ps.flagged||0) + ' flagged.';
+        } else {
+            document.getElementById('gw-status').textContent = 'Error (HTTP ' + pr.status + ')';
+            setIndicator('gw-indicator', false);
+        }
+    } catch(e) {
+        document.getElementById('gw-status').textContent = 'Unreachable';
+        setIndicator('gw-indicator', false);
+    }
+
+    // Fetch modules status
+    try {
+        var mr = await fetch('/manage/modules', {headers: h});
+        if (mr.ok) {
+            var md = await mr.json();
+            var active = md.active || 0, total = md.total || 0;
+            document.getElementById('mod-status').textContent = active + '/' + total + ' Active';
+            setIndicator('mod-indicator', active > 0);
+        }
+    } catch(e) {
+        document.getElementById('mod-status').textContent = 'Unavailable';
+        setIndicator('mod-indicator', false);
+    }
+
+    // Fetch full system status (has services and version)
+    try {
+        var sr = await fetch('/api/status', {headers: h});
+        if (sr.ok) {
+            var sd = await sr.json();
+            var svcs = sd.services || {};
+            var running = Object.values(svcs).filter(function(s){ return s.status === 'running'; }).length;
+            var totalSvcs = Object.keys(svcs).length;
+            document.getElementById('svc-status').textContent = running + '/' + totalSvcs + ' Running';
+            setIndicator('svc-indicator', running > 0);
+
+            // Version from git tag
+            var ver = sd.platform ? (sd.platform.python || '-') : '-';
+            document.getElementById('version-val').textContent = ver;
+
+            // Disk
+            if (sd.system) {
+                document.getElementById('disk-val').textContent =
+                    sd.system.disk_free_gb + ' GB free (' + sd.system.disk_used_pct + '% used)';
+            }
+
+            // Health
+            var healthy = sd.runtime && sd.runtime.healthy;
+            document.getElementById('health-status').textContent = healthy ? 'Healthy' : 'Degraded';
+            setIndicator('health-indicator', healthy);
+        }
+    } catch(e) {
+        document.getElementById('svc-status').textContent = 'Unavailable';
+        setIndicator('svc-indicator', false);
+    }
+})();
+</script>
 <script>(function(){var b=document.getElementById('theme-toggle');if(!b)return;b.textContent=document.documentElement.dataset.theme==='light'?'☀':'🌙';b.addEventListener('click',function(){var n=document.documentElement.dataset.theme==='light'?'dark':'light';document.documentElement.dataset.theme=n;localStorage.setItem('as_theme',n);b.textContent=n==='light'?'☀':'🌙';});})();</script>
 </body>
 </html>

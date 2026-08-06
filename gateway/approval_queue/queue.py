@@ -287,6 +287,8 @@ class ApprovalQueue:
 
             for request_id in to_remove:
                 del self.pending[request_id]
+            if to_remove:
+                self._persist_pending_store()
 
         if to_remove:
             logger.info("Approval queue cleanup removed %d decided item(s)", len(to_remove))
@@ -397,7 +399,11 @@ class ApprovalQueue:
             logger.warning("Approval queue audit write failed: %s", exc)
 
     def _persist_pending_store(self) -> None:
-        """Persist queue items to disk for restart durability (best effort)."""
+        """Persist queue items to disk for restart durability (best effort).
+
+        Uses atomic write-then-rename so a crash mid-write cannot corrupt
+        the store file (os.replace is atomic on POSIX for same-filesystem).
+        """
         try:
             directory = os.path.dirname(self._store_path)
             if directory:
@@ -406,8 +412,12 @@ class ApprovalQueue:
                 "version": 1,
                 "items": [item.model_dump() for item in self.pending.values()],
             }
-            with open(self._store_path, "w", encoding="utf-8") as f:
+            tmp_path = self._store_path + ".tmp"
+            with open(tmp_path, "w", encoding="utf-8") as f:
                 json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
+                f.flush()
+                os.fsync(f.fileno())
+            os.replace(tmp_path, self._store_path)
         except Exception as exc:
             logger.warning("Approval queue store write failed: %s", exc)
 

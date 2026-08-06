@@ -223,8 +223,19 @@ async def start_install(config: InstallConfig) -> dict:
         pass  # Optional for now
 
     # In production this would spawn a background task
+    logger.warning(
+        "Install endpoint called but automated installation is not yet implemented. "
+        "Config received: runtime=%s, security_level=%s",
+        config.runtime,
+        config.security_level,
+    )
     return {
-        "status": "started",
+        "status": "not_implemented",
         "config": config.model_dump(),
-        "message": "Installation started. Monitor progress via WebSocket.",
+        "message": (
+            "Automated installation is not yet implemented. "
+            "Please follow the manual installation guide at "
+            "https://github.com/isaiahbjefferson/agentshroud#installation. "
+            "Your configuration has been validated but NOT applied."
+        ),
     }

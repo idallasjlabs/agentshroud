@@ -439,6 +439,7 @@ async def update_config(update: ConfigUpdate, user: str = Depends(require_auth))
         "approval",
         "pii",
         "egress",
+        "bots",
     }
     unexpected = set(update.config.keys()) - ALLOWED_TOP_KEYS
     if unexpected:
@@ -570,7 +571,12 @@ async def upgrade_bot(bot_id: str, req: UpdateRequest, user: str = Depends(requi
         engine.compose_up(RuntimeConfig.from_env().compose_file)
         steps[-1]["status"] = "done"
 
-        return {"status": "upgraded", "bot_id": bot_id, "version": version, "steps": steps}
+        return {
+            "status": "upgraded",
+            "bot_id": bot_id,
+            "version": version,
+            "steps": steps,
+        }
     except Exception as e:
         steps.append({"step": "error", "detail": str(e)})
         return {"status": "failed", "bot_id": bot_id, "steps": steps, "error": str(e)}

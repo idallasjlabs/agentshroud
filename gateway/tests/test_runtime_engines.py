@@ -805,6 +805,12 @@ class TestInstallerAPI:
         assert "security_comparison" in data
 
     def test_install(self, client):
+        """Installer must not fake completion: SCRUM-107.
+
+        The endpoint has no automated installation backend, so it must
+        honestly report ``not_implemented`` rather than claiming the
+        install has ``started`` when nothing was actually applied.
+        """
         resp = client.post(
             "/install/api/install",
             json={
@@ -814,7 +820,11 @@ class TestInstallerAPI:
             },
         )
         assert resp.status_code == 200
-        assert resp.json()["status"] == "started"
+        body = resp.json()
+        assert body["status"] == "not_implemented"
+        assert "not yet implemented" in body["message"]
+        assert "NOT applied" in body["message"]
+        assert body["config"]["runtime"] == "docker"
 
     def test_installer_page(self, client):
         resp = client.get("/install/")

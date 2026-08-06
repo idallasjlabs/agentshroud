@@ -147,6 +147,7 @@ async def modules():
 </main>
 <script>
 (async () => {
+    function escapeHtml(s){if(typeof s!=='string')return String(s==null?'':s);return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
     const qs = new URLSearchParams(window.location.search);
     const token = qs.get('token') || '';
     const h = token ? {'Authorization': 'Bearer ' + token} : {};
@@ -205,10 +206,10 @@ async def modules():
                 if (act) actionHtml += '<button class="scan-btn" onclick="window._scan(\'' + act.ep + '\')">' + act.label + '</button> ';
                 if (dashLink) actionHtml += '<a class="scan-btn" href="' + dashLink + qs2 + '" style="text-decoration:none">View</a>';
                 tr.innerHTML =
-                    '<td style="font-family:monospace">' + name + '</td>' +
-                    '<td><span class="' + tc + '">' + (info.tier||'') + '</span></td>' +
-                    '<td><span class="' + sc + '">' + (info.status||'') + '</span></td>' +
-                    '<td style="color:#64748b;font-size:0.8rem">' + (info.binary||info.location||'') + '</td>' +
+                    '<td style="font-family:monospace">' + escapeHtml(name) + '</td>' +
+                    '<td><span class="' + escapeHtml(tc) + '">' + escapeHtml(info.tier||'') + '</span></td>' +
+                    '<td><span class="' + escapeHtml(sc) + '">' + escapeHtml(info.status||'') + '</span></td>' +
+                    '<td style="color:#64748b;font-size:0.8rem">' + escapeHtml(info.binary||info.location||'') + '</td>' +
                     '<td>' + (actionHtml || '') + '</td>';
                 tbody.appendChild(tr);
             }
@@ -225,7 +226,7 @@ async def modules():
             if (rep.recommendations && rep.recommendations.length) {
                 document.getElementById('recs-section').style.display = '';
                 document.getElementById('recs-list').innerHTML =
-                    rep.recommendations.map(r => '<li>' + r + '</li>').join('');
+                    rep.recommendations.map(r => '<li>' + escapeHtml(r) + '</li>').join('');
             }
         }
     } catch(e) {
@@ -359,6 +360,7 @@ async def collaborators():
 </main>
 <script>
 (async () => {
+    function escapeHtml(s){if(typeof s!=='string')return String(s==null?'':s);return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
     const qs = new URLSearchParams(window.location.search);
     const token = qs.get('token') || '';
     const h = token ? {'Authorization': 'Bearer ' + token} : {};
@@ -391,9 +393,9 @@ async def collaborators():
                 const tr = document.createElement('tr');
                 tr.innerHTML =
                     '<td class="ts">' + fmtTime(entry.timestamp) + '</td>' +
-                    '<td>' + (entry.username || entry.user_id || '-') + '</td>' +
-                    '<td class="preview">' + (entry.message_preview || '') + '</td>' +
-                    '<td style="color:#64748b;font-size:0.8rem">' + (entry.source || '-') + '</td>';
+                    '<td>' + escapeHtml(entry.username || entry.user_id || '-') + '</td>' +
+                    '<td class="preview">' + escapeHtml(entry.message_preview || '') + '</td>' +
+                    '<td style="color:#64748b;font-size:0.8rem">' + escapeHtml(entry.source || '-') + '</td>';
                 tbody.appendChild(tr);
             }
         }
@@ -471,6 +473,7 @@ async def falco_dashboard():
 </main>
 <script>
 (async () => {
+    function escapeHtml(s){if(typeof s!=='string')return String(s==null?'':s);return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
     const qs = new URLSearchParams(window.location.search);
     const token = qs.get('token') || '';
     const h = token ? {'Authorization': 'Bearer ' + token} : {};
@@ -514,9 +517,9 @@ async def falco_dashboard():
                 tr.innerHTML =
                     '<td style="white-space:nowrap;font-size:0.78rem;color:#64748b">' + fmtTime(a.timestamp) + '</td>' +
                     '<td><span class="pill pill-' + sev + '">' + sev + '</span></td>' +
-                    '<td style="font-family:monospace;font-size:0.8rem">' + (a.rule || '') + '</td>' +
-                    '<td style="font-size:0.8rem;color:#94a3b8">' + (a.process || a.container_name || '') + '</td>' +
-                    '<td><pre>' + (a.output || '').substring(0, 200) + '</pre></td>';
+                    '<td style="font-family:monospace;font-size:0.8rem">' + escapeHtml(a.rule || '') + '</td>' +
+                    '<td style="font-size:0.8rem;color:#94a3b8">' + escapeHtml(a.process || a.container_name || '') + '</td>' +
+                    '<td><pre>' + escapeHtml((a.output || '').substring(0, 200)) + '</pre></td>';
                 tbody.appendChild(tr);
             }
         }
@@ -622,6 +625,7 @@ function switchTab(name) {
 }
 
 (async () => {
+    function escapeHtml(s){if(typeof s!=='string')return String(s==null?'':s);return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
     const qs = new URLSearchParams(window.location.search);
     const token = qs.get('token') || '';
     const h = token ? {'Authorization': 'Bearer ' + token} : {};
@@ -669,9 +673,9 @@ function switchTab(name) {
                 tr.innerHTML =
                     '<td style="white-space:nowrap;font-size:0.78rem;color:#64748b">' + fmtTime(a.timestamp) + '</td>' +
                     '<td><span class="pill pill-' + sev + '">' + sev + '</span></td>' +
-                    '<td style="font-family:monospace;font-size:0.8rem">' + (a.rule_id || '') + '</td>' +
-                    '<td style="font-size:0.85rem">' + (a.rule_description || '') + '</td>' +
-                    '<td style="font-size:0.8rem;color:#94a3b8">' + (a.agent || '') + '</td>';
+                    '<td style="font-family:monospace;font-size:0.8rem">' + escapeHtml(a.rule_id || '') + '</td>' +
+                    '<td style="font-size:0.85rem">' + escapeHtml(a.rule_description || '') + '</td>' +
+                    '<td style="font-size:0.8rem;color:#94a3b8">' + escapeHtml(a.agent || '') + '</td>';
                 allTbody.appendChild(tr);
             }
         }
@@ -687,10 +691,10 @@ function switchTab(name) {
                 const tr = document.createElement('tr');
                 tr.innerHTML =
                     '<td style="white-space:nowrap;font-size:0.78rem;color:#64748b">' + fmtTime(a.timestamp) + '</td>' +
-                    '<td style="font-family:monospace;font-size:0.78rem">' + (a.file_path || '') + '</td>' +
-                    '<td><span class="pill pill-MEDIUM">' + (a.file_event || '') + '</span></td>' +
-                    '<td style="font-family:monospace;font-size:0.78rem;color:#64748b">' + (a.file_md5_before || '-') + '</td>' +
-                    '<td style="font-family:monospace;font-size:0.78rem;color:#94a3b8">' + (a.file_md5_after || '-') + '</td>';
+                    '<td style="font-family:monospace;font-size:0.78rem">' + escapeHtml(a.file_path || '') + '</td>' +
+                    '<td><span class="pill pill-MEDIUM">' + escapeHtml(a.file_event || '') + '</span></td>' +
+                    '<td style="font-family:monospace;font-size:0.78rem;color:#64748b">' + escapeHtml(a.file_md5_before || '-') + '</td>' +
+                    '<td style="font-family:monospace;font-size:0.78rem;color:#94a3b8">' + escapeHtml(a.file_md5_after || '-') + '</td>';
                 fimTbody.appendChild(tr);
             }
         }
@@ -708,9 +712,9 @@ function switchTab(name) {
                 tr.innerHTML =
                     '<td style="white-space:nowrap;font-size:0.78rem;color:#64748b">' + fmtTime(a.timestamp) + '</td>' +
                     '<td><span class="pill pill-' + sev + '">' + sev + '</span></td>' +
-                    '<td style="font-family:monospace;font-size:0.8rem">' + (a.rule_id || '') + '</td>' +
-                    '<td style="font-size:0.85rem">' + (a.rule_description || '') + '</td>' +
-                    '<td style="font-size:0.8rem;color:#94a3b8">' + (a.agent || '') + '</td>';
+                    '<td style="font-family:monospace;font-size:0.8rem">' + escapeHtml(a.rule_id || '') + '</td>' +
+                    '<td style="font-size:0.85rem">' + escapeHtml(a.rule_description || '') + '</td>' +
+                    '<td style="font-size:0.8rem;color:#94a3b8">' + escapeHtml(a.agent || '') + '</td>';
                 rkTbody.appendChild(tr);
             }
         }
@@ -775,6 +779,7 @@ async def security_overview():
 </main>
 <script>
 (async () => {
+    function escapeHtml(s){if(typeof s!=='string')return String(s==null?'':s);return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
     const qs = new URLSearchParams(window.location.search);
     const token = qs.get('token') || '';
     const h = token ? {'Authorization': 'Bearer ' + token} : {};
@@ -863,11 +868,11 @@ async def security_overview():
             div.className = 'tool-card';
             div.innerHTML =
                 '<div style="display:flex;justify-content:space-between;align-items:center">' +
-                    '<span class="tool-name">' + tool.name + '</span>' +
+                    '<span class="tool-name">' + escapeHtml(tool.name) + '</span>' +
                     '<span class="pill ' + pillCls + '">' + status + '</span>' +
                 '</div>' +
                 '<div style="font-size:0.72rem;color:#64748b">Tier: ' + tool.tier + '</div>' +
-                '<div class="tool-desc">' + tool.desc + '</div>' +
+                '<div class="tool-desc">' + escapeHtml(tool.desc) + '</div>' +
                 '<div class="tool-actions">' + actions + '</div>';
             grid.appendChild(div);
         }

@@ -242,7 +242,11 @@ struct ReqwestTransport {
 impl ReqwestTransport {
     fn new() -> Self {
         Self {
-            client: reqwest::blocking::Client::new(),
+            client: reqwest::blocking::Client::builder()
+                .timeout(std::time::Duration::from_secs(30))
+                .connect_timeout(std::time::Duration::from_secs(10))
+                .build()
+                .expect("failed to build HTTP client"),
         }
     }
 }
@@ -284,6 +288,19 @@ pub fn build_url(base_url: &str, path: &str) -> String {
         base_url.trim_end_matches('/'),
         path.trim_start_matches('/')
     )
+}
+
+/// Percent-encode a dynamic URL path component so special characters
+/// (spaces, unicode, path separators) don't break the request or cause
+/// path-traversal issues. Pure so it can be unit-tested.
+pub fn encode_path_component(s: &str) -> String {
+    // Encode everything except unreserved characters (RFC 3986 section 2.3).
+    s.chars()
+        .map(|c| match c {
+            'A'..='Z' | 'a'..='z' | '0'..='9' | '-' | '_' | '.' | '~' => c.to_string(),
+            _ => format!("%{:02X}", c as u32),
+        })
+        .collect()
 }
 
 /// Map a non-2xx HTTP status into a human-readable command-center error message.
@@ -414,14 +431,21 @@ pub fn format_cves(v: &serde_json::Value) -> String {
         .get("total")
         .and_then(|t| t.as_u64())
         .or_else(|| {
+            v.get("summary")
+                .and_then(|s| s.get("total"))
+                .and_then(|t| t.as_u64())
+        })
+        .or_else(|| {
             v.get("cves")
                 .and_then(|c| c.as_array())
                 .map(|a| a.len() as u64)
         })
         .unwrap_or(0);
+    // Mitigation counts may be at the top level or nested under "summary"
+    let summary = v.get("summary").unwrap_or(v);
     let mut counts: Vec<(String, u64)> = Vec::new();
     for key in ["fully_mitigated", "partially_mitigated", "not_mitigated"] {
-        if let Some(n) = v.get(key).and_then(|x| x.as_u64()) {
+        if let Some(n) = summary.get(key).and_then(|x| x.as_u64()) {
             counts.push((key.to_string(), n));
         }
     }
@@ -474,7 +498,11 @@ impl SclClient {
         Self {
             base_url: format!("{}/soc/v1", base_url.trim_end_matches('/')),
             token: token.to_string(),
-            client: reqwest::blocking::Client::new(),
+            client: reqwest::blocking::Client::builder()
+                .timeout(std::time::Duration::from_secs(30))
+                .connect_timeout(std::time::Duration::from_secs(10))
+                .build()
+                .expect("failed to build HTTP client"),
         }
     }
 
@@ -498,24 +526,32 @@ impl SclClient {
 // Output helpers
 // ---------------------------------------------------------------------------
 
-fn print_output(data: &serde_json::Value, fmt: &OutputFormat) {
+/// Render output data as the lines that would be printed for a given
+/// format. Pure so the SCRUM-111 `--format yaml` fix (previously silently
+/// fell back to JSON) can be unit-tested without spawning the CLI binary.
+/// `print_output` is a thin `println!` wrapper around this.
+pub(crate) fn render_output_lines(data: &serde_json::Value, fmt: &OutputFormat) -> Vec<String> {
     match fmt {
-        OutputFormat::Json => {
-            println!("{}", serde_json::to_string_pretty(data).unwrap_or_default())
-        }
-        OutputFormat::Yaml => {
-            // Fallback to JSON if serde_yaml not available
-            println!("{}", serde_json::to_string_pretty(data).unwrap_or_default());
-        }
+        OutputFormat::Json => vec![serde_json::to_string_pretty(data).unwrap_or_default()],
+        OutputFormat::Yaml => vec![serde_yaml::to_string(data)
+            .unwrap_or_else(|_| serde_json::to_string_pretty(data).unwrap_or_default())],
         OutputFormat::Table => match data {
             serde_json::Value::Array(arr) => {
+                let mut lines = Vec::new();
                 for item in arr {
-                    println!("{}", serde_json::to_string_pretty(item).unwrap_or_default());
-                    println!("---");
+                    lines.push(serde_json::to_string_pretty(item).unwrap_or_default());
+                    lines.push("---".to_string());
                 }
+                lines
             }
-            _ => println!("{}", serde_json::to_string_pretty(data).unwrap_or_default()),
+            _ => vec![serde_json::to_string_pretty(data).unwrap_or_default()],
         },
+    }
+}
+
+fn print_output(data: &serde_json::Value, fmt: &OutputFormat) {
+    for line in render_output_lines(data, fmt) {
+        println!("{}", line);
     }
 }
 
@@ -557,7 +593,10 @@ pub fn run_approvals_decide<T: HttpTransport>(
         "approved": approved,
         "reason": reason,
     });
-    let data = client.post(&format!("/approve/{id}/decide"), Some(body))?;
+    let data = client.post(
+        &format!("/approve/{}/decide", encode_path_component(id)),
+        Some(body),
+    )?;
     Ok(format_decision(&data, approved))
 }
 
@@ -567,7 +606,7 @@ pub fn run_cves<T: HttpTransport>(
     bot_id: Option<&str>,
 ) -> Result<String> {
     let path = match bot_id {
-        Some(b) => format!("/soc/v1/agent-cves?bot_id={b}"),
+        Some(b) => format!("/soc/v1/agent-cves?bot_id={}", encode_path_component(b)),
         None => "/soc/v1/agent-cves".to_string(),
     };
     let data = client.get(&path)?;
@@ -604,31 +643,83 @@ fn main() -> Result<()> {
     match cli.command {
         Commands::Status => {
             let gw = GatewayClient::new(&cli.url, &token, ReqwestTransport::new());
-            println!("{}", run_status(&gw)?);
+            match fmt {
+                OutputFormat::Table => println!("{}", run_status(&gw)?),
+                _ => {
+                    let data = gw.get("/status")?;
+                    print_output(&data, fmt);
+                }
+            }
             return Ok(());
         }
         Commands::Approvals { ref action } => {
             let gw = GatewayClient::new(&cli.url, &token, ReqwestTransport::new());
-            let out = match action {
-                ApprovalAction::List => run_approvals_list(&gw)?,
-                ApprovalAction::Approve { id, reason } => {
-                    run_approvals_decide(&gw, id, true, reason)?
+            match fmt {
+                OutputFormat::Table => {
+                    let out = match action {
+                        ApprovalAction::List => run_approvals_list(&gw)?,
+                        ApprovalAction::Approve { id, reason } => {
+                            run_approvals_decide(&gw, id, true, reason)?
+                        }
+                        ApprovalAction::Deny { id, reason } => {
+                            run_approvals_decide(&gw, id, false, reason)?
+                        }
+                    };
+                    println!("{out}");
                 }
-                ApprovalAction::Deny { id, reason } => {
-                    run_approvals_decide(&gw, id, false, reason)?
+                _ => {
+                    let data = match action {
+                        ApprovalAction::List => gw.get("/approve/pending")?,
+                        ApprovalAction::Approve { id, reason } => {
+                            let body = serde_json::json!({"request_id": id, "approved": true, "reason": reason});
+                            gw.post(
+                                &format!("/approve/{}/decide", encode_path_component(id)),
+                                Some(body),
+                            )?
+                        }
+                        ApprovalAction::Deny { id, reason } => {
+                            let body = serde_json::json!({"request_id": id, "approved": false, "reason": reason});
+                            gw.post(
+                                &format!("/approve/{}/decide", encode_path_component(id)),
+                                Some(body),
+                            )?
+                        }
+                    };
+                    print_output(&data, fmt);
                 }
-            };
-            println!("{out}");
+            }
             return Ok(());
         }
         Commands::Cves { ref bot_id } => {
             let gw = GatewayClient::new(&cli.url, &token, ReqwestTransport::new());
-            println!("{}", run_cves(&gw, bot_id.as_deref())?);
+            match fmt {
+                OutputFormat::Table => println!("{}", run_cves(&gw, bot_id.as_deref())?),
+                _ => {
+                    let path = match bot_id.as_deref() {
+                        Some(b) => {
+                            format!("/soc/v1/agent-cves?bot_id={}", encode_path_component(b))
+                        }
+                        None => "/soc/v1/agent-cves".to_string(),
+                    };
+                    let data = gw.get(&path)?;
+                    print_output(&data, fmt);
+                }
+            }
             return Ok(());
         }
         Commands::DeployStatus => {
             let gw = GatewayClient::new(&cli.url, &token, ReqwestTransport::new());
-            println!("{}", run_deploy_status(&gw)?);
+            match fmt {
+                OutputFormat::Table => println!("{}", run_deploy_status(&gw)?),
+                _ => {
+                    let version = gw.get("/api/v1/versions/current")?;
+                    let services = gw
+                        .get("/soc/v1/services")
+                        .unwrap_or(serde_json::Value::Null);
+                    let combined = serde_json::json!({"version": version, "services": services});
+                    print_output(&combined, fmt);
+                }
+            }
             return Ok(());
         }
         _ => {}
@@ -647,7 +738,7 @@ fn main() -> Result<()> {
                     "/security/events?limit={}{}",
                     limit,
                     severity
-                        .map(|s| format!("&severity={}", s))
+                        .map(|s| format!("&severity={}", encode_path_component(&s)))
                         .unwrap_or_default()
                 );
                 let data = client.get(&path)?;
@@ -678,7 +769,11 @@ fn main() -> Result<()> {
                 print_output(&data, fmt);
             }
             GetResource::Logs { service, tail } => {
-                let path = format!("/services/{}/logs?tail={}", service, tail);
+                let path = format!(
+                    "/services/{}/logs?tail={}",
+                    encode_path_component(&service),
+                    tail
+                );
                 let data = client.get(&path)?;
                 if let Some(lines) = data.get("lines").and_then(|l| l.as_array()) {
                     for line in lines {
@@ -694,7 +789,7 @@ fn main() -> Result<()> {
                     std::process::exit(1);
                 }
                 let data = client.post(
-                    &format!("/services/{}/restart", name),
+                    &format!("/services/{}/restart", encode_path_component(&name)),
                     Some(serde_json::json!({"confirm": true})),
                 )?;
                 print_output(&data, fmt);
@@ -707,18 +802,24 @@ fn main() -> Result<()> {
                     std::process::exit(1);
                 }
                 let data = client.post(
-                    &format!("/services/{}/stop", name),
+                    &format!("/services/{}/stop", encode_path_component(&name)),
                     Some(serde_json::json!({"confirm": true})),
                 )?;
                 print_output(&data, fmt);
             }
         },
         Commands::Approve { id } => {
-            let data = client.post(&format!("/egress/{}/approve", id), None)?;
+            let data = client.post(
+                &format!("/egress/{}/approve", encode_path_component(&id)),
+                None,
+            )?;
             print_output(&data, fmt);
         }
         Commands::Deny { id } => {
-            let data = client.post(&format!("/egress/{}/deny", id), None)?;
+            let data = client.post(
+                &format!("/egress/{}/deny", encode_path_component(&id)),
+                None,
+            )?;
             print_output(&data, fmt);
         }
         Commands::Add { resource } => match resource {
@@ -731,7 +832,7 @@ fn main() -> Result<()> {
             }
             AddResource::GroupMember { group_id, user_id } => {
                 let data = client.post(
-                    &format!("/groups/{}/members", group_id),
+                    &format!("/groups/{}/members", encode_path_component(&group_id)),
                     Some(serde_json::json!({"user_id": user_id})),
                 )?;
                 print_output(&data, fmt);
@@ -740,14 +841,14 @@ fn main() -> Result<()> {
         Commands::Set { target } => match target {
             SetTarget::Mode { group_id, mode } => {
                 let data = client.post(
-                    &format!("/groups/{}/mode", group_id),
+                    &format!("/groups/{}/mode", encode_path_component(&group_id)),
                     Some(serde_json::json!({"collab_mode": mode.to_string()})),
                 )?;
                 print_output(&data, fmt);
             }
             SetTarget::Role { user_id, role } => {
                 let data = client.post(
-                    &format!("/users/{}/role", user_id),
+                    &format!("/users/{}/role", encode_path_component(&user_id)),
                     Some(serde_json::json!({"role": role})),
                 )?;
                 print_output(&data, fmt);
@@ -766,7 +867,7 @@ fn main() -> Result<()> {
         }
         Commands::Scan { scanner } => {
             let data = client.post(
-                &format!("/scan/{}", scanner),
+                &format!("/scan/{}", encode_path_component(&scanner)),
                 Some(serde_json::json!({"confirm": true})),
             )?;
             print_output(&data, fmt);
@@ -1122,5 +1223,90 @@ mod tests {
         let obj = serde_json::json!({"request_id":"x","action_type":"a","agent_id":"g","description":"d"});
         let out = format_approvals(&obj);
         assert!(out.contains("x"));
+    }
+
+    // ---- encode_path_component ----
+
+    #[test]
+    fn encode_path_component_passes_simple() {
+        assert_eq!(encode_path_component("gateway"), "gateway");
+        assert_eq!(encode_path_component("openclaw"), "openclaw");
+    }
+
+    #[test]
+    fn encode_path_component_encodes_special_chars() {
+        assert_eq!(encode_path_component("a/b"), "a%2Fb");
+        assert_eq!(encode_path_component("a b"), "a%20b");
+    }
+
+    #[test]
+    fn encode_path_component_encodes_dots_and_dashes() {
+        // dots and dashes are unreserved, should pass through
+        assert_eq!(encode_path_component("my-service.v2"), "my-service.v2");
+    }
+
+    // ---- cves summary level ----
+
+    #[test]
+    fn cves_reads_nested_summary() {
+        let body = r#"{"total":5,"summary":{"fully_mitigated":3,"partially_mitigated":1,"not_mitigated":1}}"#;
+        let t = FakeTransport::ok(body);
+        let gw = GatewayClient::new("http://gw:8080", "tok", t);
+        let out = run_cves(&gw, None).unwrap();
+        assert!(out.contains("5 tracked"));
+        assert!(out.contains("fully_mitigated=3"));
+    }
+
+    #[test]
+    fn cves_reads_summary_total_fallback() {
+        let body = r#"{"summary":{"total":7,"fully_mitigated":5,"not_mitigated":2}}"#;
+        let t = FakeTransport::ok(body);
+        let gw = GatewayClient::new("http://gw:8080", "tok", t);
+        let out = run_cves(&gw, None).unwrap();
+        assert!(out.contains("7 tracked"));
+    }
+
+    // ---- render_output_lines (SCRUM-111: --format yaml must produce real YAML) ----
+
+    #[test]
+    fn render_output_yaml_produces_real_yaml_not_json() {
+        let data = serde_json::json!({"status": "ok", "count": 3});
+        let lines = render_output_lines(&data, &OutputFormat::Yaml);
+        assert_eq!(lines.len(), 1);
+        let rendered = &lines[0];
+        // A pre-fix "fallback to JSON" implementation would produce a `{`
+        // wrapped blob instead of `key: value` YAML mapping syntax.
+        assert!(
+            !rendered.trim_start().starts_with('{'),
+            "expected YAML, got what looks like JSON: {rendered}"
+        );
+        assert!(rendered.contains("status: ok"));
+        assert!(rendered.contains("count: 3"));
+    }
+
+    #[test]
+    fn render_output_json_is_still_pretty_json() {
+        let data = serde_json::json!({"status": "ok"});
+        let lines = render_output_lines(&data, &OutputFormat::Json);
+        assert_eq!(lines.len(), 1);
+        assert!(lines[0].trim_start().starts_with('{'));
+        assert!(lines[0].contains("\"status\""));
+    }
+
+    #[test]
+    fn render_output_table_array_matches_prior_per_item_plus_separator_shape() {
+        let data = serde_json::json!([{"a": 1}, {"a": 2}]);
+        let lines = render_output_lines(&data, &OutputFormat::Table);
+        // 2 items => [item0_json, "---", item1_json, "---"]
+        assert_eq!(lines.len(), 4);
+        assert_eq!(lines[1], "---");
+        assert_eq!(lines[3], "---");
+    }
+
+    #[test]
+    fn render_output_table_empty_array_produces_no_lines() {
+        let data = serde_json::json!([]);
+        let lines = render_output_lines(&data, &OutputFormat::Table);
+        assert!(lines.is_empty());
     }
 }

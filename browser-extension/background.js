@@ -28,10 +28,16 @@ const CTX_CLIP_SELECTION = "agentshroud-clip-selection";
 async function loadConfig() {
   const keys = { gatewayUrl: "", token: "" };
   const sync = await chrome.storage.sync.get(keys);
-  if (sync.gatewayUrl || sync.token) {
+  // If sync has both fields populated, use sync exclusively
+  if (sync.gatewayUrl && sync.token) {
     return sync;
   }
-  return chrome.storage.local.get(keys);
+  // Per-field fallback: if sync is missing a field, check local storage
+  const local = await chrome.storage.local.get(keys);
+  return {
+    gatewayUrl: sync.gatewayUrl || local.gatewayUrl || "",
+    token: sync.token || local.token || "",
+  };
 }
 
 // --- notifications -----------------------------------------------------------
@@ -99,7 +105,7 @@ async function forwardUrl(tab) {
   reportResult("URL", result);
 }
 
-async function clipPage(tab) {
+async function clipPage(tab, frameId) {
   if (!tab || tab.id == null) {
     notify("AgentShroud — failed", "No active tab to clip.");
     return;
@@ -116,7 +122,7 @@ async function clipPage(tab) {
   let extracted;
   try {
     const injection = await chrome.scripting.executeScript({
-      target: { tabId: tab.id },
+      target: AgentShroudForwarder.buildClipTarget(tab.id, frameId),
       func: extractPageContent,
     });
     extracted = injection && injection[0] ? injection[0].result : null;
@@ -176,7 +182,10 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === CTX_FORWARD_URL) {
     forwardUrl(tab);
   } else if (info.menuItemId === CTX_CLIP_PAGE || info.menuItemId === CTX_CLIP_SELECTION) {
-    clipPage(tab);
+    // SCRUM-108: pass the frame the click/selection actually occurred in
+    // (chrome supplies this on the context-menu event) so a selection made
+    // inside an <iframe> extracts that frame's content, not the top frame's.
+    clipPage(tab, info.frameId);
   }
 });
 

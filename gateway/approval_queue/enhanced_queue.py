@@ -93,7 +93,13 @@ class EnhancedApprovalQueue:
         pending_items = await self.store.load_pending()
         for item in pending_items:
             self._pending_futures[item.request_id] = asyncio.Future()
-            self._schedule_timeout(item.request_id, item.expires_at)
+            # Recover the original timeout_action from persisted details
+            recovered_action = (item.details or {}).get("_timeout_action", "deny")
+            self._schedule_timeout(
+                item.request_id,
+                item.expires_at,
+                _override_timeout_action=recovered_action,
+            )
 
         logger.info(f"Restored {len(pending_items)} pending approval items")
 
@@ -234,6 +240,10 @@ class EnhancedApprovalQueue:
                 status="pending",
             )
 
+            # Persist timeout_action in details so it survives restart recovery
+            if policy and policy.timeout_action:
+                item.details["_timeout_action"] = policy.timeout_action
+
             # Save to store
             await self.store.save(item)
 
@@ -268,14 +278,21 @@ class EnhancedApprovalQueue:
             return item
 
     def _schedule_timeout(
-        self, request_id: str, expires_at: str, policy: Optional[ToolRiskPolicy] = None
+        self,
+        request_id: str,
+        expires_at: str,
+        policy: Optional[ToolRiskPolicy] = None,
+        _override_timeout_action: Optional[str] = None,
     ):
         """Schedule a timeout task for a request."""
         expires_dt = datetime.fromisoformat(expires_at.replace("Z", "+00:00"))
         now = datetime.now(timezone.utc)
         delay = max(0, (expires_dt - now).total_seconds())
 
-        timeout_action = policy.timeout_action if policy else "deny"
+        if _override_timeout_action is not None:
+            timeout_action = _override_timeout_action
+        else:
+            timeout_action = policy.timeout_action if policy else "deny"
 
         async def timeout_handler():
             await asyncio.sleep(delay)

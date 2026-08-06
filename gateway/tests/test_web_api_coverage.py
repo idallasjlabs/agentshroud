@@ -421,6 +421,22 @@ class TestConfig:
         assert "backdoor" in resp.json()["detail"]
         assert not (tmp_path / "agentshroud.yaml").exists()
 
+    def test_update_config_round_trips_bots_key(self, client, tmp_path, monkeypatch):
+        """SCRUM-107: the `bots` top-level key must be allowed through PUT
+        /api/config, not rejected as unknown — it's a legitimate config
+        section (per-bot registry), and dropping it silently discarded
+        bot configuration on every save from the management UI."""
+        monkeypatch.chdir(tmp_path)
+        bots_config = {
+            "openclaw": {"enabled": True},
+            "hermes": {"enabled": False},
+        }
+        resp = client.put("/api/config", json={"config": {"bots": bots_config}})
+        assert resp.status_code == 200
+        assert resp.json()["status"] == "updated"
+        written = yaml.safe_load((tmp_path / "agentshroud.yaml").read_text())
+        assert written == {"bots": bots_config}
+
     def test_import_config_delegates_to_update(self, client, tmp_path, monkeypatch):
         monkeypatch.chdir(tmp_path)
         resp = client.post("/api/config/import", json={"config": {"logging": {"level": "INFO"}}})
