@@ -117,9 +117,17 @@ class TestWebSocketHandshakeAuth:
             with sync_client.websocket_connect("/ws/approvals?token=wrong") as ws:
                 ws.receive_json()
 
+    def test_ws_approvals_rejects_master_token(self, sync_client):
+        """WS /ws/approvals rejects the master auth token -- R3-L4 removed the
+        master-token fallback, only scoped WS tokens are accepted now."""
+        with pytest.raises((WebSocketDisconnect, Exception)):
+            with sync_client.websocket_connect("/ws/approvals?token=test-token-12345") as ws:
+                ws.receive_json()
+
     def test_ws_approvals_accepts_valid_token(self, sync_client):
-        """WS /ws/approvals accepts valid token in query param"""
-        with sync_client.websocket_connect("/ws/approvals?token=test-token-12345") as ws:
+        """WS /ws/approvals accepts valid scoped WS token"""
+        ws_token = _create_ws_token()
+        with sync_client.websocket_connect(f"/ws/approvals?token={ws_token}") as ws:
             msg = ws.receive_json()
             assert msg["type"] == "authenticated"
 

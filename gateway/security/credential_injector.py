@@ -192,7 +192,9 @@ class CredentialInjector:
             # they are protocol-required headers, not credentials. Hermes hits this branch
             # because it sends `Authorization: Bearer <something>` via its base-URL override
             # without setting anthropic-version itself.
-            existing_auth = headers.get("Authorization") or headers.get("authorization", "")
+            existing_auth = next(
+                (v for k, v in headers.items() if k.lower() == "authorization"), ""
+            )
             has_caller_bearer = existing_auth.startswith("Bearer ")
 
             if not has_caller_bearer:

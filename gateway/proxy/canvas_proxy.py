@@ -38,6 +38,7 @@ import base64
 import logging
 import os
 from typing import Any
+from urllib.parse import parse_qsl, urlencode
 
 import httpx
 
@@ -273,10 +274,10 @@ async def _handle_websocket(scope: dict[str, Any], receive: Any, send: Any) -> N
 
     # Build upstream WebSocket URL — strip token from forwarded query to avoid leaking it.
     path = scope.get("path", "/")
-    qs = qs_raw
+    qs = urlencode([(k, v) for k, v in parse_qsl(qs_str) if k != "token"])
     ws_url = _BOT_CANVAS_URL.replace("http://", "ws://").replace("https://", "wss://") + path
     if qs:
-        ws_url += "?" + qs.decode("latin-1")
+        ws_url += "?" + qs
 
     # Accept the client connection
     await receive()  # websocket.connect

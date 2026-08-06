@@ -208,7 +208,9 @@ async def email_send(request: EmailSendRequest, req: Request, auth: AuthRequired
                         len(scan.redactions),
                     )
             except Exception as e:
-                logger.warning("email-send: PII scan failed (%s), proceeding with original body", e)
+                logger.error("email-send: PII scan failed (%s), blocking email (fail-closed)", e)
+                sanitized_body = "[EMAIL BLOCKED: PII scan failed — content withheld]"
+                pii_redacted = True
 
     if not recipient_allowed:
         # Unknown recipient → queue for approval
@@ -539,12 +541,10 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
         )
     except Exception as e:
         logger.error(f"Ledger recording failed: {e}")
-        # Non-critical - content was already forwarded
-        # But we should still notify
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail="Failed to record in ledger",
-        )
+        # Non-critical - content was already forwarded successfully.
+        # Returning 500 would cause callers to retry, duplicating delivery.
+        # Use a sentinel so downstream code can build a degraded response.
+        ledger_entry = None
 
     # Emit forward event
     await app_state.event_bus.emit(
@@ -574,13 +574,13 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
 
     # Step 5: Return response
     response_data = {
-        "id": ledger_entry.id,
+        "id": ledger_entry.id if ledger_entry else "ledger-unavailable",
         "sanitized": sanitized,
         "redactions": entity_types_found,
         "redaction_count": redaction_count,
-        "content_hash": ledger_entry.content_hash,
+        "content_hash": ledger_entry.content_hash if ledger_entry else "",
         "forwarded_to": forwarded_to,
-        "timestamp": ledger_entry.timestamp,
+        "timestamp": ledger_entry.timestamp if ledger_entry else "",
         "audit_entry_id": audit_entry_id or None,
         "audit_hash": audit_hash or None,
         "prompt_score": prompt_score if prompt_score > 0.0 else None,
@@ -620,8 +620,13 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
                 if _owner_uid and str(getattr(request, "user_id", "") or "") == str(_owner_uid):
                     user_trust_level = "FULL"
 
+            # agent_response may be dict (non-OpenAI targets) or str (OpenAI);
+            # process_outbound expects str, so coerce to avoid AttributeError.
+            _response_text = (
+                agent_response if isinstance(agent_response, str) else str(agent_response)
+            )
             out_result = await pipeline.process_outbound(
-                response=agent_response,
+                response=_response_text,
                 agent_id=target.name,
                 user_trust_level=user_trust_level,
                 source=request.source,
@@ -638,8 +643,11 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
             else:
                 filtered_response = out_result.sanitized_message
         else:
+            _response_text_fallback = (
+                agent_response if isinstance(agent_response, str) else str(agent_response)
+            )
             filtered_response, xml_was_filtered = app_state.sanitizer.filter_xml_blocks(
-                agent_response
+                _response_text_fallback
             )
             if xml_was_filtered:
                 logger.info(f"Filtered XML blocks from agent response for source={request.source}")
@@ -658,7 +666,7 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
             await app_state.ledger.record(
                 source="gateway_security",
                 content=f"Blocked credential display to {request.source}",
-                original_content=agent_response[:100],  # First 100 chars for audit
+                original_content=str(agent_response)[:100],  # First 100 chars for audit
                 sanitized=True,
                 redaction_count=1,
                 redaction_types=["CREDENTIALS"],

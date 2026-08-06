@@ -247,9 +247,12 @@ class FileSandbox:
             resolved = os.path.realpath(path)
         except (OSError, ValueError):
             resolved = path
-        # macOS: /tmp -> /private/tmp, /etc -> /private/etc - normalize for pattern matching
+        # macOS: /tmp -> /private/tmp, /etc -> /private/etc, /home -> /System/Volumes/Data/home
+        # (APFS firmlinks) - normalize for pattern matching
         if sys.platform == "darwin" and resolved.startswith("/private/"):
             resolved_canonical = resolved[len("/private") :]  # /private/tmp/x -> /tmp/x
+        elif sys.platform == "darwin" and resolved.startswith("/System/Volumes/Data/"):
+            resolved_canonical = resolved[len("/System/Volumes/Data") :]
         else:
             resolved_canonical = resolved
 
@@ -272,18 +275,25 @@ class FileSandbox:
             if operation == "write":
                 # For writes, use explicit allowed list or defaults
                 allowed_paths = self.config.allowed_write_paths or self.config.allowed_write_default
-                if not (
-                    self._matches_allowed_paths(path, allowed_paths)
-                    or self._matches_allowed_paths(resolved, allowed_paths)
-                    or self._matches_allowed_paths(resolved_canonical, allowed_paths)
-                ):
+                resolved_allowed = self._matches_allowed_paths(
+                    resolved, allowed_paths
+                ) or self._matches_allowed_paths(resolved_canonical, allowed_paths)
+                original_allowed = self._matches_allowed_paths(path, allowed_paths)
+                if resolved_allowed:
+                    pass  # resolved path is within the sandbox — always safe
+                elif original_allowed and resolved != path:
+                    # Original path matches the allowlist but its resolved form does
+                    # not, and resolution changed the path — a symlink (or similar)
+                    # is pointing outside the sandbox. Treat as a violation.
+                    flags.append(f"write outside allowed workspace: {path}")
+                elif not original_allowed:
                     flags.append(f"write outside allowed workspace: {path}")
             elif operation == "read":
                 # For reads, check if it's in blocked paths
                 allowed_paths = self.config.allowed_read_paths
                 if allowed_paths is not None and not (
-                    self._matches_allowed_paths(path, allowed_paths)
-                    or self._matches_allowed_paths(resolved, allowed_paths)
+                    self._matches_allowed_paths(resolved, allowed_paths)
+                    or self._matches_allowed_paths(resolved_canonical, allowed_paths)
                 ):
                     flags.append(f"read outside allowed paths: {path}")
 

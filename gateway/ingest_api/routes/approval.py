@@ -8,7 +8,6 @@ Human approval system endpoints:
 - /ws/approvals - WebSocket for real-time approval notifications
 """
 
-import hmac
 import logging
 from typing import Annotated
 
@@ -128,13 +127,10 @@ async def approval_websocket(websocket: WebSocket, token: str | None = Query(Non
     """
     # Access app_state from websocket state
 
-    # L5: Accept scoped WS tokens (short-lived, single-use) alongside master token
+    # R3-L4: Only accept scoped WS tokens (no master token fallback)
     from .dashboard import _validate_ws_token
 
-    if not token or (
-        not _validate_ws_token(token)
-        and not hmac.compare_digest(token, app_state.config.auth_token)
-    ):
+    if not token or not _validate_ws_token(token):
         await websocket.close(code=4003, reason="Authentication failed")
         await app_state.event_bus.emit(
             make_event("auth_failed", "WebSocket authentication failed", {}, "warning")

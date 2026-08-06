@@ -914,12 +914,16 @@ async def revoke_collaborator(
             status_code=403,
             detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
         )
+    from ..security.rbac_config import revoke_approved_collaborator
+
+    removed = revoke_approved_collaborator(user_id)
     _log_audit(caller, "revoke collaborator", target=user_id)
     return {
         "ok": True,
         "user_id": user_id,
         "action": "revoked",
-        "note": "Runtime revocation; restart gateway for full effect",
+        "persisted": removed,
+        "note": "Removed from persistent store. Restart gateway to fully purge runtime RBAC cache.",
     }
 
 
