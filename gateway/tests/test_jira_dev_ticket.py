@@ -22,9 +22,7 @@ import pathlib
 import pytest
 
 _REPO_ROOT = pathlib.Path(__file__).resolve().parents[2]
-_HERMES_SCRIPT = (
-    _REPO_ROOT / "docker" / "config" / "hermes" / "workspace" / "jira_dev_ticket.py"
-)
+_HERMES_SCRIPT = _REPO_ROOT / "docker" / "config" / "hermes" / "workspace" / "jira_dev_ticket.py"
 _OPENCLAW_SCRIPT = (
     _REPO_ROOT / "docker" / "config" / "openclaw" / "workspace" / "jira_dev_ticket.py"
 )
@@ -168,9 +166,7 @@ def test_create_issue_payload_full():
     )
     fields = payload["fields"]
     assert fields["issuetype"] == {"name": "Story"}
-    assert (
-        fields["description"]["content"][0]["content"][0]["text"] == "Because reasons"
-    )
+    assert fields["description"]["content"][0]["content"][0]["text"] == "Because reasons"
     assert fields["labels"] == ["hermes", "automation"]
     assert fields["parent"] == {"key": "SCRUM-65"}
 
@@ -207,9 +203,7 @@ def test_find_transition_id_matches_destination_status_name():
 
 
 def test_find_transition_id_returns_none_when_no_match():
-    transitions = [
-        {"id": "11", "name": "Start Progress", "to": {"name": "In Progress"}}
-    ]
+    transitions = [{"id": "11", "name": "Start Progress", "to": {"name": "In Progress"}}]
     assert jdt.find_transition_id(transitions, "Blocked") is None
 
 
@@ -229,9 +223,7 @@ class _MockTransport:
             jdt.OP_REF_DOMAIN: "agentshroudai.atlassian.net",
         }
         self._jira_status = jira_status
-        self._jira_body = (
-            jira_body if jira_body is not None else json.dumps({"key": "SCRUM-999"})
-        )
+        self._jira_body = jira_body if jira_body is not None else json.dumps({"key": "SCRUM-999"})
 
     def __call__(self, url, body, headers, method="GET", timeout=30):
         self.calls.append((url, body, headers, method))
@@ -243,9 +235,7 @@ class _MockTransport:
 
 def test_run_create_posts_issue_with_basic_auth(monkeypatch):
     monkeypatch.setenv("GATEWAY_AUTH_TOKEN", "gw-tok")
-    transport = _MockTransport(
-        jira_status=201, jira_body=json.dumps({"key": "SCRUM-124"})
-    )
+    transport = _MockTransport(jira_status=201, jira_body=json.dumps({"key": "SCRUM-124"}))
     rc = jdt.run(
         ["create", "--project", "SCRUM", "--summary", "Do the thing"],
         request_fn=transport,
@@ -255,9 +245,7 @@ def test_run_create_posts_issue_with_basic_auth(monkeypatch):
     url, body, headers, method = transport.calls[-1]
     assert url == "https://agentshroudai.atlassian.net/rest/api/3/issue"
     assert method == "POST"
-    expected_auth = (
-        "Basic " + base64.b64encode(b"agentshroud.ai@gmail.com:atl-token-xyz").decode()
-    )
+    expected_auth = "Basic " + base64.b64encode(b"agentshroud.ai@gmail.com:atl-token-xyz").decode()
     assert headers["Authorization"] == expected_auth
     payload = json.loads(body.decode())
     assert payload["fields"]["summary"] == "Do the thing"
@@ -273,9 +261,7 @@ def test_run_comment_posts_to_correct_issue(monkeypatch):
     assert rc == 0
 
     url, body, headers, method = transport.calls[-1]
-    assert (
-        url == "https://agentshroudai.atlassian.net/rest/api/3/issue/SCRUM-356/comment"
-    )
+    assert url == "https://agentshroudai.atlassian.net/rest/api/3/issue/SCRUM-356/comment"
     assert method == "POST"
     payload = json.loads(body.decode())
     assert payload["body"]["content"][0]["content"][0]["text"] == "batch update"
@@ -300,9 +286,7 @@ def test_run_transition_applies_matching_transition(monkeypatch):
         assert json.loads(body.decode()) == {"transition": {"id": "31"}}
         return 204, ""
 
-    rc = jdt.run(
-        ["transition", "--issue", "SCRUM-356", "--status", "Done"], request_fn=transport
-    )
+    rc = jdt.run(["transition", "--issue", "SCRUM-356", "--status", "Done"], request_fn=transport)
     assert rc == 0
 
 
@@ -343,9 +327,7 @@ def test_run_returns_1_on_jira_rejection(monkeypatch):
     transport = _MockTransport(
         jira_status=401, jira_body=json.dumps({"errorMessages": ["auth failed"]})
     )
-    rc = jdt.run(
-        ["create", "--project", "SCRUM", "--summary", "x"], request_fn=transport
-    )
+    rc = jdt.run(["create", "--project", "SCRUM", "--summary", "x"], request_fn=transport)
     assert rc == 1
 
 
@@ -355,17 +337,13 @@ def test_run_returns_1_when_op_proxy_denies(monkeypatch):
     def transport(url, body, headers, method="GET", timeout=30):
         return 403, json.dumps({"detail": "not allowed"})
 
-    rc = jdt.run(
-        ["create", "--project", "SCRUM", "--summary", "x"], request_fn=transport
-    )
+    rc = jdt.run(["create", "--project", "SCRUM", "--summary", "x"], request_fn=transport)
     assert rc == 1
 
 
 def test_run_create_with_labels_and_parent(monkeypatch):
     monkeypatch.setenv("GATEWAY_AUTH_TOKEN", "gw-tok")
-    transport = _MockTransport(
-        jira_status=201, jira_body=json.dumps({"key": "SCRUM-125"})
-    )
+    transport = _MockTransport(jira_status=201, jira_body=json.dumps({"key": "SCRUM-125"}))
     rc = jdt.run(
         [
             "create",

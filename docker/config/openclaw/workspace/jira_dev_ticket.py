@@ -124,8 +124,7 @@ def _adf_doc(text: str) -> dict:
         "type": "doc",
         "version": 1,
         "content": [
-            {"type": "paragraph", "content": [{"type": "text", "text": ln}]}
-            for ln in lines
+            {"type": "paragraph", "content": [{"type": "text", "text": ln}]} for ln in lines
         ],
     }
 
@@ -190,9 +189,7 @@ def _http_request(
     """
     req = urllib.request.Request(url, data=body, headers=headers, method=method)
     try:
-        with urllib.request.urlopen(
-            req, timeout=timeout
-        ) as resp:  # noqa: S310 (fixed scheme)
+        with urllib.request.urlopen(req, timeout=timeout) as resp:  # noqa: S310 (fixed scheme)
             return resp.status, resp.read().decode("utf-8", errors="replace")
     except urllib.error.HTTPError as exc:
         return exc.code, exc.read().decode("utf-8", errors="replace")
@@ -286,9 +283,7 @@ def transition_issue(
     transition_id = find_transition_id(transitions, status_name)
     if transition_id is None:
         available = ", ".join(sorted({t.get("name", "?") for t in transitions}))
-        raise RuntimeError(
-            f"No transition named {status_name!r} available (have: {available})"
-        )
+        raise RuntimeError(f"No transition named {status_name!r} available (have: {available})")
     payload = {"transition": {"id": transition_id}}
     status, text = request_fn(
         url, json.dumps(payload).encode("utf-8"), _auth_headers(email, token), "POST"
@@ -336,9 +331,7 @@ def run(argv: list[str], request_fn=_http_request) -> int:
 
     try:
         if args.command == "create":
-            labels = (
-                [s.strip() for s in args.labels.split(",")] if args.labels else None
-            )
+            labels = [s.strip() for s in args.labels.split(",")] if args.labels else None
             key = create_issue(
                 domain,
                 email,
@@ -353,14 +346,10 @@ def run(argv: list[str], request_fn=_http_request) -> int:
             )
             print(json.dumps({"key": key}))
         elif args.command == "comment":
-            add_comment(
-                domain, email, token, args.issue, args.body, request_fn=request_fn
-            )
+            add_comment(domain, email, token, args.issue, args.body, request_fn=request_fn)
             print(json.dumps({"ok": True}))
         elif args.command == "transition":
-            transition_issue(
-                domain, email, token, args.issue, args.status, request_fn=request_fn
-            )
+            transition_issue(domain, email, token, args.issue, args.status, request_fn=request_fn)
             print(json.dumps({"ok": True}))
     except (RuntimeError, ValueError) as exc:
         logger.error("%s failed: %s", args.command, exc)
