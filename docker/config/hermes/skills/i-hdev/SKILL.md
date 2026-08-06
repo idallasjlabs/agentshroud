@@ -1,215 +1,405 @@
 ---
 name: i-hdev
-description: "Autonomous dev-on-marvin workflow for Hermes. Branches, writes code, tests, gets multi-LLM review from Codex + Gemini, opens a PR from the agentshroud-bot account on marvin, and notifies the owner via Telegram when it's ready to merge. Never merges to main on its own initiative. Use when the owner asks Hermes to build/fix something in the AgentShroud repo."
+description: "Autonomous dev workflow for Hermes, running under the agentshroud-bot account (same physical machine as production, isolated by user account — not a separate host). Two modes: a single task (branch, code, test, multi-LLM review, PR, notify, halt for merge approval) or a comprehensive multi-directory review-and-fix sweep across the whole repo. Uses Codex, Gemini, local models (LM Studio), and Claude Code together. Never merges to main on its own initiative."
 ---
 
-# Skill: Hermes Dev-on-Marvin (HDEV)
+# Skill: Hermes Dev Workflow (HDEV)
 
 ## Role
 
 You are Hermes acting as a remote developer under the `agentshroud-bot`
-account on marvin (192.168.7.137) — a separate development host from wherever you (Hermes) are
-actually running. You never touch the production repo checkout directly; all
-work happens in a fresh git worktree on marvin, reached exclusively through
+account — the **same physical machine** production runs on, isolated only by
+user account (not a separate host). You never touch the production repo
+checkout (`ijefferson.admin`'s) directly; all work happens in a fresh git
+worktree under `agentshroud-bot`'s own checkout, reached exclusively through
 the AgentShroud gateway's SSH wrappers. You never merge to `main` yourself —
 you prepare a PR, tell the owner it's ready, and wait for an explicit
 follow-up instruction before merging.
 
-**Why this exists:** developing directly on the host that also runs your own
-live container causes rebuild/restart cycles that take you offline mid-task.
-Marvin is a separate physical location for your working code, so a broken
-build there never affects the Hermes the owner is talking to right now.
+**Why this exists:** developing directly in the checkout that also runs your
+own live container causes rebuild/restart cycles that take you offline
+mid-task. The `agentshroud-bot` account's checkout is a separate working copy
+on the same box, so a broken build there never affects the Hermes the owner
+is talking to right now.
 
 ## Invocation
 
-Triggered by the owner via Telegram or the ESP32 voice-gateway, e.g.:
+Triggered by the owner via Telegram or the ESP32 voice-gateway:
 
 ```
-/i-hdev fix the flaky macos-3.11 CI timeout
-/i-hdev add a retry to the daily CVE report Telegram send
+/i-hdev fix the flaky macos-3.11 CI timeout          (single task)
+/i-hdev review gateway/web/,cli/,dashboard/           (comprehensive review, explicit scope)
+/i-hdev review                                        (comprehensive review, whole repo)
 ```
 
-The text after `/i-hdev` is the task description. If invoked with no
-description, ask the owner what to build before doing anything else.
+If invoked with no text at all, ask the owner which mode and what scope
+before doing anything else. `review` (with or without a directory list)
+triggers **Mode B** below; anything else is a task description for **Mode A**.
 
 ## Tools you have for this workflow
 
 You do **not** have raw `ssh`, `ping`, or any direct network route to lab
-hosts — that is deliberate sandboxing. The only way to reach marvin is
-through two gateway-backed wrapper scripts already on your PATH:
+hosts — that is deliberate sandboxing. The only way to reach the
+`agentshroud-bot` checkout is through two gateway-backed wrapper scripts
+already on your PATH:
 
 ```
-agentshroud-ssh-exec.sh <host> "<command>" ["<reason>"] ["<cwd>"]
-agentshroud-ssh-write-file.sh <host> <path> ["<reason>"] < content
+agentshroud-ssh-exec.sh marvin "<single command>" ["<reason>"] ["<absolute cwd>"]
+agentshroud-ssh-write-file.sh marvin <absolute path> ["<reason>"] < content
 ```
 
-`<host>` is always `marvin` for this skill. `agentshroud-ssh-exec.sh` runs a
-shell command and returns `{"stdout":…,"stderr":…,"exit_code":…}` as JSON —
-parse it, don't assume success. `agentshroud-ssh-write-file.sh` writes file
-content (piped via stdin) to an allowlisted path under
-`/Users/agentshroud-bot/Development/agentshroud` — use this for every file
-edit, never try to smuggle file content through `agentshroud-ssh-exec.sh`'s
-command string (it will be rejected by the gateway's shell-injection guard,
-which is correct behavior, not a bug to work around).
+Critical constraints, confirmed by real use — not theoretical:
+
+- **One command per call, no shell chaining.** `&&`, `|`, `;`, and bare `&`
+  (backgrounding) in the command string are all rejected by the gateway's
+  injection guard. Use the wrapper's own `cwd` argument instead of `cd X &&`.
+  There is no way to background a long-running remote command through this
+  channel — every call is synchronous.
+- **`cwd` must be an absolute path.** A relative path is rejected outright.
+- **`agentshroud-ssh-write-file.sh` writes content (piped via stdin)** to an
+  allowlisted path — the primary checkout or a sibling worktree named
+  `agentshroud-hdev-*`/`agentshroud-odev-*` under
+  `/Users/agentshroud-bot/Development/`. There is no remote patch/diff apply,
+  only whole-file writes — read the current content first
+  (`agentshroud-ssh-exec.sh marvin "cat <path>"`), construct the new full
+  content, then write it back.
+- **Use `~/.venv/bin/python3 -m pytest ...` for all tests**, not the bare
+  system `python3` — the venv has `gateway/requirements.txt` and the spaCy
+  model installed; system Python does not.
+
+## Jira ticket — every development batch gets one
+
+**This is a standing rule, not optional:** every task (Mode A) or sweep (Mode
+B) you run under this skill gets a real Jira ticket on the agentshroudai
+SCRUM board (`https://agentshroudai.atlassian.net`), created near the start
+and kept up to date as the work progresses — a GitHub PR alone is not
+sufficient tracking.
+
+**Critical distinction — do NOT run this via `agentshroud-ssh-exec.sh`.**
+Every other command in this skill reaches the `agentshroud-bot` checkout on
+marvin through the gateway's SSH wrappers. The Jira helper is different: it
+runs directly in **your own container**, using your own network path to the
+gateway (`GATEWAY_AUTH_TOKEN` is already in your environment) — the same
+mechanism the existing `jira-weekly-review` cron job uses. Run it as a plain
+local command, never prefixed with `agentshroud-ssh-exec.sh marvin`:
+
+```
+python3 /opt/data/workspace/jira_dev_ticket.py create --project SCRUM --summary "<short title>" --description "<what and why>" --issue-type Task [--parent SCRUM-<epic>] [--labels hermes,dev-batch]
+python3 /opt/data/workspace/jira_dev_ticket.py comment --issue SCRUM-<n> --body "<status update>"
+python3 /opt/data/workspace/jira_dev_ticket.py transition --issue SCRUM-<n> --status "<status name, e.g. In Progress / Done>"
+```
+
+`create` prints `{"key": "SCRUM-<n>"}` on success — capture that key, you need
+it for every later `comment`/`transition` call. Every subcommand exits 0 on
+success and 1 with a real error on stderr on failure; if it fails, report the
+exact error to the owner rather than silently skipping the ticket update —
+the same "no silent no-op" standard as everything else in this skill.
+
+If the owner's request references a specific SCRUM epic (e.g. "continue the
+v1.3.0 work"), pass `--parent` with that epic's key. Otherwise create a
+standalone Task with no parent and mention in your Telegram notification that
+the owner may want to link it to an epic themselves.
 
 ---
 
-## Step 1 — Sync and confirm clean state
+## Reviewers and fixer available to you
 
-```
-agentshroud-ssh-exec.sh marvin "cd Development/agentshroud && git fetch origin && git status --short && git branch --show-current"
-```
+All four are pre-authenticated and confirmed working non-interactively from
+this account — no env-var juggling required, each is durable across fresh
+SSH sessions:
 
-- If `git status --short` shows uncommitted changes on the current branch:
-  halt and tell the owner — "marvin's checkout has uncommitted work on
-  `<branch>`, needs manual attention before I can start a new task."
-- Otherwise proceed.
+| Tool | Invocation | Notes |
+|------|-----------|-------|
+| Codex | `codex exec "<prompt>"` | Needs cwd inside a real git repo (its own trust gate). |
+| Gemini | `gemini --skip-trust -p "<prompt>"` | `GEMINI_API_KEY` is exported automatically via `.zshenv` — do not try to set it yourself. |
+| Local (LM Studio, Qwen3-14B) | `curl -sS -m 60 http://127.0.0.1:1234/v1/chat/completions -H "Content-Type: application/json" -d '{"model":"qwen/qwen3-14b","messages":[{"role":"user","content":"<prompt>"}]}'` | Reachable directly via loopback — same physical machine. Parse `.choices[0].message.content` from the JSON response. Free, private, no rate limits — prefer it for high-volume/simple checks when Codex/Gemini capacity matters. |
+| Claude (fixer) | `claude -p "<prompt>"` | Has its own full file read/write/tool access in the given cwd — describe the issue, it applies the fix itself. Don't try to hand-apply diffs yourself. |
 
----
-
-## Step 2 — Create a branch + worktree
-
-Compute the next version number the same way the repo's own workflow rules
-do:
-
-```
-agentshroud-ssh-exec.sh marvin "cd Development/agentshroud && git log --oneline --grep='bump version to v' -1 | grep -oE 'v1\\.0\\.[0-9]+' | awk -F. '{print \"v1.0.\"($3+1)}'"
-```
-
-Pick a branch type (`feat/` `fix/` `chore/` `refactor/`) matching the task,
-and a short kebab-case slug. Branch name: `<type>/v1.0.<N>-<slug>`.
-
-```
-agentshroud-ssh-exec.sh marvin "cd Development/agentshroud && git worktree add ../agentshroud-hdev-<slug> -b <type>/v1.0.<N>-<slug> origin/main"
-```
-
-All subsequent commands in this task run with `cwd`
-`/Users/agentshroud-bot/Development/agentshroud-hdev-<slug>` (pass it as the
-4th argument to `agentshroud-ssh-exec.sh`) — never the primary checkout.
+| Local (omlx, DeepSeek-R1-Qwen3-8B) | `curl -sS -m 60 -H "Authorization: Bearer $OMLX_API_KEY" http://127.0.0.1:8000/v1/chat/completions -H "Content-Type: application/json" -d '{"model":"DeepSeek-R1-0528-Qwen3-8B-6bit","messages":[{"role":"user","content":"<prompt>"}]}'` | `OMLX_API_KEY` is exported automatically via `.zshenv`, same as Gemini. Prefer this model over omlx's `gemma-4-12B-it-4bit` — the larger model has been observed to time out (60s+) under host memory pressure; the 8B model responds in ~6s. |
 
 ---
 
-## Step 3 — Write and edit code
+## Mode A — Single task
 
-Use `agentshroud-ssh-write-file.sh marvin <path> "<reason>"` for every file
-you create or modify, piping the full new file content via stdin. For small
-edits to an existing file, read the current content first
-(`agentshroud-ssh-exec.sh marvin "cat <path>"`), construct the new full
-content yourself, then write it back — there is no remote patch/diff apply,
-only whole-file writes.
-
-Every path must resolve under
-`/Users/agentshroud-bot/Development/agentshroud-hdev-<slug>` (or whichever
-worktree directory Step 2 created) — writes outside the allowed root are
-rejected by the gateway.
-
----
-
-## Step 4 — Test and lint
+### Step 1 — Sync and confirm clean state
 
 ```
-agentshroud-ssh-exec.sh marvin "cd Development/agentshroud-hdev-<slug> && pytest -q" "run tests"
-agentshroud-ssh-exec.sh marvin "cd Development/agentshroud-hdev-<slug> && ruff check . && black --check ." "lint"
+agentshroud-ssh-exec.sh marvin "git fetch origin" "" "/Users/agentshroud-bot/Development/agentshroud"
+agentshroud-ssh-exec.sh marvin "git status --short" "" "/Users/agentshroud-bot/Development/agentshroud"
 ```
 
-If tests or lint fail: go back to Step 3, fix, retest. Do not proceed to
-review with a red test suite. If a failure looks pre-existing/unrelated
-(matches your own diff's blast radius poorly), say so explicitly to the owner
-in your eventual PR notification rather than silently ignoring it.
+If `git status --short` shows uncommitted changes: halt and tell the owner —
+"the checkout has uncommitted work on `<branch>`, needs manual attention
+before I can start a new task." Otherwise proceed.
 
----
-
-## Step 5 — Multi-LLM review
-
-Get independent review from both Codex and Gemini against your actual diff:
+### Step 2 — Create a branch + worktree
 
 ```
-agentshroud-ssh-exec.sh marvin "cd Development/agentshroud-hdev-<slug> && git diff origin/main > /tmp/hdev-diff-<slug>.txt && codex exec \"Review this diff for bugs, security issues, and style problems. Diff: $(cat /tmp/hdev-diff-<slug>.txt)\""
-agentshroud-ssh-exec.sh marvin "cd Development/agentshroud-hdev-<slug> && gemini --skip-trust -p \"Review this diff for bugs, security issues, and style problems: $(cat /tmp/hdev-diff-<slug>.txt)\""
+agentshroud-ssh-exec.sh marvin "git log --oneline --grep=\"bump version to v\" -1" "" "/Users/agentshroud-bot/Development/agentshroud"
 ```
 
-Read both reviews. For each finding that's real (not a false positive), go
-back to Step 3, fix it, and re-run Step 4. One round of fix-and-recheck is
-normal; if a reviewer keeps flagging something you've already addressed,
-note the disagreement in the PR description instead of looping indefinitely.
-
----
-
-## Step 6 — Push and open the PR
+Read the output yourself and compute the next `v1.0.<N>` — do not pipe this
+through grep/awk, the gateway rejects piped commands. Pick a branch type
+(`feat/` `fix/` `chore/` `refactor/`) matching the task and a short
+kebab-case slug: `<type>/v1.0.<N>-<slug>`.
 
 ```
-agentshroud-ssh-exec.sh marvin "cd Development/agentshroud-hdev-<slug> && git add -A && git commit -m '<conventional-commit message>' && git push -u origin <type>/v1.0.<N>-<slug>"
-agentshroud-ssh-exec.sh marvin "cd Development/agentshroud-hdev-<slug> && gh pr create --title '<concise title>' --body '<summary + test plan + codex/gemini review notes>'"
+agentshroud-ssh-exec.sh marvin "git worktree add ../agentshroud-hdev-<slug> -b <type>/v1.0.<N>-<slug> origin/main" "" "/Users/agentshroud-bot/Development/agentshroud"
 ```
 
-Capture the PR URL from the `gh pr create` output.
+All subsequent commands use `cwd`
+`/Users/agentshroud-bot/Development/agentshroud-hdev-<slug>` — never the
+primary checkout.
 
----
+### Step 2b — Create the Jira ticket
 
-## Step 7 — Notify the owner
+Run this yourself, directly (not via `agentshroud-ssh-exec.sh` — see "Jira
+ticket" above):
 
-Send a Telegram message yourself (your own native send capability — do
-**not** route this through `agentshroud-ssh-exec.sh`, this is a message you
-send directly, not a remote command):
+```
+python3 /opt/data/workspace/jira_dev_ticket.py create --project SCRUM --summary "<task summary>" --description "Branch: <type>/v1.0.<N>-<slug>. <what and why>" --issue-type Task --labels hermes,dev-batch
+```
+
+Capture the returned key (e.g. `SCRUM-124`) — you'll comment on and
+transition this same ticket in Steps 7 and 8. Immediately after creating it:
+
+```
+python3 /opt/data/workspace/jira_dev_ticket.py transition --issue SCRUM-<n> --status "In Progress"
+```
+
+If the board has no transition matching "In Progress" by that exact name,
+skip the transition (it's not fatal) but still proceed — the created ticket
+itself is what matters most.
+
+### Step 3 — Write and edit code
+
+Use `agentshroud-ssh-write-file.sh` for every change, per the constraints
+above.
+
+### Step 4 — Test and lint
+
+```
+agentshroud-ssh-exec.sh marvin "~/.venv/bin/python3 -m pytest -q" "run tests" "/Users/agentshroud-bot/Development/agentshroud-hdev-<slug>"
+agentshroud-ssh-exec.sh marvin "ruff check ." "lint" "/Users/agentshroud-bot/Development/agentshroud-hdev-<slug>"
+agentshroud-ssh-exec.sh marvin "black --check ." "format check" "/Users/agentshroud-bot/Development/agentshroud-hdev-<slug>"
+```
+
+If any fail: go back to Step 3, fix, retest. Do not proceed with a red suite.
+
+### Step 5 — Multi-LLM review
+
+Get independent review from Codex and Gemini against your actual diff (get
+the diff text yourself first via a single `git diff origin/main` call, then
+embed it in the review prompt — do not try to pipe it with `>`/`cat` chained
+into the same command):
+
+```
+agentshroud-ssh-exec.sh marvin "git diff origin/main" "" "/Users/agentshroud-bot/Development/agentshroud-hdev-<slug>"
+agentshroud-ssh-exec.sh marvin "codex exec \"Review this diff for bugs, security issues, and correctness problems, with file:line citations: <diff text>\"" "" "/Users/agentshroud-bot/Development/agentshroud-hdev-<slug>"
+agentshroud-ssh-exec.sh marvin "gemini --skip-trust -p \"Review this diff for bugs, security issues, and correctness problems, with file:line citations: <diff text>\"" "" "/Users/agentshroud-bot/Development/agentshroud-hdev-<slug>"
+```
+
+Only act on findings that are clearly real (either tool flags something
+concrete and specific, not a vague style preference). Fix via `claude -p`
+(see Step 5b in Mode B for the exact pattern), re-run Step 4, repeat once if
+needed. If a reviewer keeps flagging something you've already addressed,
+note the disagreement in the PR instead of looping indefinitely.
+
+### Step 6 — Push and open the PR
+
+```
+agentshroud-ssh-exec.sh marvin "git add -A" "" "/Users/agentshroud-bot/Development/agentshroud-hdev-<slug>"
+agentshroud-ssh-exec.sh marvin "git commit -m '<conventional-commit message>'" "" "/Users/agentshroud-bot/Development/agentshroud-hdev-<slug>"
+agentshroud-ssh-exec.sh marvin "git push -u origin <type>/v1.0.<N>-<slug>" "" "/Users/agentshroud-bot/Development/agentshroud-hdev-<slug>"
+agentshroud-ssh-exec.sh marvin "gh pr create --title '<concise title>' --body '<summary + test plan + review notes>'" "" "/Users/agentshroud-bot/Development/agentshroud-hdev-<slug>"
+```
+
+Capture the PR URL from the output.
+
+### Step 6b — Update the Jira ticket with the PR link
+
+```
+python3 /opt/data/workspace/jira_dev_ticket.py comment --issue SCRUM-<n> --body "PR opened: <PR URL>. Tests: <pass/fail summary>. Review: <clean, or N findings addressed>."
+```
+
+### Step 7 — Notify the owner
+
+Send a Telegram message yourself (your own native send capability — never
+route this through `agentshroud-ssh-exec.sh`):
 
 ```
 PR ready: <PR URL>
-<one-line summary of what changed and why>
+Jira: <SCRUM-n URL>
+<one-line summary>
 Tests: <pass/fail summary>
-Codex + Gemini review: <clean, or N findings addressed>
+Review: <clean, or N findings addressed>
 
 Reply "merge it" when you want this on main.
 ```
 
 **Halt here.** Do not merge. Wait for the owner's explicit follow-up.
 
+### Step 8 — Merge (only on explicit owner instruction)
+
+```
+agentshroud-ssh-exec.sh marvin "gh pr merge --admin --squash --delete-branch" "" "/Users/agentshroud-bot/Development/agentshroud-hdev-<slug>"
+```
+
+If ambiguous which PR, ask before merging anything.
+
+Once the merge succeeds, close out the Jira ticket:
+
+```
+python3 /opt/data/workspace/jira_dev_ticket.py comment --issue SCRUM-<n> --body "Merged to main: <PR URL>."
+python3 /opt/data/workspace/jira_dev_ticket.py transition --issue SCRUM-<n> --status "Done"
+```
+
+If "Done" doesn't match an available transition name, the comment above is
+still real tracking — don't treat a transition mismatch as a task failure.
+
+### Step 9 — Clean up
+
+```
+agentshroud-ssh-exec.sh marvin "git checkout main" "" "/Users/agentshroud-bot/Development/agentshroud"
+agentshroud-ssh-exec.sh marvin "git pull" "" "/Users/agentshroud-bot/Development/agentshroud"
+agentshroud-ssh-exec.sh marvin "git worktree remove ../agentshroud-hdev-<slug> --force" "" "/Users/agentshroud-bot/Development/agentshroud"
+```
+
 ---
 
-## Step 8 — Merge (only on explicit owner instruction)
+## Mode B — Comprehensive review sweep
 
-Only after a message like "merge it" / "go ahead and merge" / "merge <PR
-number>":
-
-```
-agentshroud-ssh-exec.sh marvin "cd Development/agentshroud-hdev-<slug> && gh pr merge --admin --squash --delete-branch"
-```
-
-If the owner's instruction is ambiguous about which PR, ask which one before
-merging anything.
-
----
-
-## Step 9 — Clean up and refresh
+Use when invoked as `/i-hdev review [directory1,directory2,...]`. If no
+directories given, use this default order (skip any already covered by an
+open or recently-merged sweep PR unless the owner asks for a re-review):
 
 ```
-agentshroud-ssh-exec.sh marvin "cd Development/agentshroud && git fetch origin && git checkout main && git pull && git worktree remove ../agentshroud-hdev-<slug> --force"
+gateway/security/ gateway/ssh_proxy/ gateway/ingest_api/ gateway/proxy/
+gateway/soc/ gateway/runtime/ gateway/approval_queue/ gateway/web/
+docker/scripts/ docker/bots/ scripts/ dashboard/ cli/ chatbot/
+browser-extension/
 ```
 
-Confirm to the owner that marvin is back on a clean `main`, ready for the
-next task.
+### Step 1 — One branch + worktree for the whole sweep
+
+Same as Mode A Steps 1-2, but the slug should reflect the sweep, e.g.
+`chore/v1.0.<N>-comprehensive-review-<date>`. ALL directories in this sweep
+share this single worktree/branch — do not create a new one per directory.
+
+Then create ONE Jira ticket for the whole sweep (same as Mode A Step 2b, run
+directly — not via `agentshroud-ssh-exec.sh`):
+
+```
+python3 /opt/data/workspace/jira_dev_ticket.py create --project SCRUM --summary "Comprehensive review sweep <date>" --description "Directories: <list>. Branch: <slug>." --issue-type Task --labels hermes,dev-batch,review-sweep
+python3 /opt/data/workspace/jira_dev_ticket.py transition --issue SCRUM-<n> --status "In Progress"
+```
+
+Capture the key — every directory's update in Step 2g comments on this same
+ticket, not a new one per directory.
+
+### Step 2 — Work through directories one at a time
+
+For **each** directory, in order:
+
+**a. Review** — get independent findings from Codex, Gemini, and (for a
+quick supplementary pass) the local model:
+
+```
+agentshroud-ssh-exec.sh marvin "codex exec \"Review <directory> for bugs, security issues, and correctness problems. List concrete findings with file:line citations. Be specific — only report things you are confident are real, not style preferences.\"" "" "/Users/agentshroud-bot/Development/agentshroud-<slug>"
+agentshroud-ssh-exec.sh marvin "gemini --skip-trust -p \"Review <directory> for bugs, security issues, and correctness problems. List concrete findings with file:line citations. Be specific — only report things you are confident are real, not style preferences.\"" "" "/Users/agentshroud-bot/Development/agentshroud-<slug>"
+```
+
+**b. Cross-reference.** Only act on findings BOTH tools raised, or a single
+finding that is unambiguously a real bug (not a style nit). Everything else
+goes in the final PR's "needs human review" table, not acted on.
+
+**c. Fix** — for each confirmed issue:
+
+```
+agentshroud-ssh-exec.sh marvin "claude -p \"Fix this specific issue in <file>: <exact issue from the review, with file:line>. Make the minimal correct change — do not refactor unrelated code, do not add speculative error handling, do not add comments explaining what the code does.\"" "" "/Users/agentshroud-bot/Development/agentshroud-<slug>"
+```
+
+**d. Test** — run the closest matching test file(s):
+
+```
+agentshroud-ssh-exec.sh marvin "~/.venv/bin/python3 -m pytest gateway/tests/test_<matching>.py -q" "" "/Users/agentshroud-bot/Development/agentshroud-<slug>"
+```
+
+If tests fail, ask `claude -p` to fix its own regression, describing the
+failure — up to 2 retries. If still broken, revert that file
+(`git checkout -- <file>`) and note it as skipped.
+
+**e. Lint + format:**
+
+```
+agentshroud-ssh-exec.sh marvin "black <changed files>" "" "/Users/agentshroud-bot/Development/agentshroud-<slug>"
+agentshroud-ssh-exec.sh marvin "ruff check <changed files>" "" "/Users/agentshroud-bot/Development/agentshroud-<slug>"
+```
+
+Do this for every file you touch, every time — a prior sweep shipped a PR
+that failed CI lint because this step was skipped.
+
+**f. Commit** once this directory's tests pass:
+
+```
+agentshroud-ssh-exec.sh marvin "git add -A" "" "/Users/agentshroud-bot/Development/agentshroud-<slug>"
+agentshroud-ssh-exec.sh marvin "git commit -m 'fix(<directory>): <summary>'" "" "/Users/agentshroud-bot/Development/agentshroud-<slug>"
+```
+
+**g. Telegram update** (your own native send, not ssh-exec) after every
+directory, not just at the end:
+
+```
+[<directory>] reviewed. Codex+Gemini findings: N. Fixed: M. Skipped: K. Tests: <pass/fail>.
+```
+
+Also comment the same line on the sweep's Jira ticket (run directly, not via
+`agentshroud-ssh-exec.sh`):
+
+```
+python3 /opt/data/workspace/jira_dev_ticket.py comment --issue SCRUM-<n> --body "[<directory>] reviewed. Codex+Gemini findings: N. Fixed: M. Skipped: K. Tests: <pass/fail>."
+```
+
+### Step 3 — After the last directory (or a natural stopping point)
+
+Push, then open ONE PR summarizing every directory's findings and fixes
+across the whole sweep (a table: directory | findings | fixed | skipped |
+tests). Comment the PR link on the Jira ticket
+(`jira_dev_ticket.py comment --issue SCRUM-<n> --body "PR opened: <PR URL>..."`).
+Send a final Telegram message with the PR link and the Jira ticket link.
+**Halt** — no merge without the owner's explicit follow-up, exactly like Mode
+A Step 8. Once the owner explicitly merges, close out the ticket the same way
+as Mode A Step 8 (comment + transition to "Done").
+
+If you judge you've hit a natural stopping point before finishing the full
+directory list (diminishing findings, or you're running low on your own
+context), say so explicitly in the PR and Telegram message rather than
+silently stopping — name which directories remain for a future sweep.
 
 ---
 
 ## Guardrails
 
-- **Never merge without an explicit owner instruction sent after Step 7's
-  notification.** A "go" or "yes" given for a *different* task earlier in the
-  conversation does not count.
-- **Never write outside the worktree's allowed root.** The gateway enforces
-  this server-side, but do not attempt workarounds if a write is rejected —
-  treat rejection as a signal your path is wrong, not an obstacle to route
-  around.
-- **Never touch the primary `Development/agentshroud` checkout** — all work
-  happens in the Step 2 worktree, so the owner's own `main` checkout (used
-  for direct dev work) is never disturbed.
-- **If `agentshroud-ssh-exec.sh` or `agentshroud-ssh-write-file.sh` returns a
-  non-2xx / rejection**, read the actual error message from the JSON
-  response and act on it — do not retry blindly, and do not fall back to any
-  other network path (there isn't one, by design).
-- **If Codex or Gemini auth/connectivity fails** (e.g. a Little
-  Snitch-style outbound block resurfaces), report the exact error to the
-  owner rather than silently skipping the review step.
-- **Halt and ask** if a task description is ambiguous about scope, touches
-  `gateway/security/**`, secrets, or CI/CD config — those changes warrant the
-  owner's explicit sign-off on approach before you write code, not just
-  before merge.
+- **Never merge without an explicit owner instruction sent after your PR
+  notification.** A "go" or "yes" given for a *different* task earlier in
+  the conversation does not count.
+- **Never write outside the current worktree's allowed root.** Treat a
+  rejection as a signal your path is wrong, not an obstacle to route around.
+- **Never touch the primary `Development/agentshroud` checkout** for actual
+  edits — only for Step 1/9's sync/cleanup, which only ever fetch/checkout/
+  pull, never write files there.
+- **If a tool call returns a real error** (not just "no issues found"), read
+  the actual error and act on it — do not retry blindly, and do not
+  workaround a rejection from the gateway's own guards (path allowlist,
+  injection patterns) — those are correct behavior, not bugs.
+- **If Codex/Gemini/local-model connectivity fails** (e.g. a Little
+  Snitch-style outbound block resurfaces on a new binary), report the exact
+  error to the owner rather than silently skipping that reviewer.
+- **Halt and ask** if a task or directory touches `gateway/security/**`,
+  secrets, or CI/CD config in a way that looks architectural rather than a
+  clear bug fix — those warrant the owner's explicit sign-off on approach.
+- **Never skip the Jira ticket.** It is run directly by you (`python3
+  /opt/data/workspace/jira_dev_ticket.py ...`), never through
+  `agentshroud-ssh-exec.sh` — that wrapper only reaches marvin, not your own
+  container's gateway network path. If the create/comment/transition call
+  fails, report the real error; don't silently proceed without a ticket.

@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "generated_at": "2026-08-05T13:13:21Z",
+  "generated_at": "2026-08-06T01:42:37Z",
   "entries": [
     {
       "name": "skills/graphify/.graphify_version",
@@ -244,8 +244,8 @@
     },
     {
       "name": "skills/i-hdev/SKILL.md",
-      "hash": "2c8d962dfe8734a89f999d34a86738118eea60e47f350c9d26777f90312bd52b",
-      "size": 8826
+      "hash": "2af5b3e55edb9724ea0cfc9111e6404e99127783ab01ec5c5d9607d4a402fd4a",
+      "size": 20411
     },
     {
       "name": "skills/i-hermes/README.md",
@@ -369,8 +369,8 @@
     },
     {
       "name": "skills/i-odev/SKILL.md",
-      "hash": "81b5add1b0c890c272229d2e6e271fe04abba71d55907d519e232da944c7e7de",
-      "size": 9010
+      "hash": "04ea341a866f9fef9e1881d28f7befd517af9cbcee30551db7eb1ceefad9956b",
+      "size": 20526
     },
     {
       "name": "skills/i-oracle/README.md",
