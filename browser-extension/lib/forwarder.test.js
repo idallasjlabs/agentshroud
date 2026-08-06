@@ -238,3 +238,23 @@ test("validateConfig allows HTTPS for remote URLs", () => {
   const cfg = F.validateConfig({ gatewayUrl: "https://gateway.example.com", token: "secret" });
   expect(cfg.gatewayUrl).toBe("https://gateway.example.com");
 });
+
+// --- SCRUM-108: iframe selection must target the frame the selection is
+// actually in, not silently fall back to the top-level frame. ---
+
+describe("buildClipTarget", () => {
+  test("targets the specific frame when a context-menu frameId is known", () => {
+    // e.g. user right-clicked a selection inside an <iframe> (frameId 7)
+    expect(F.buildClipTarget(42, 7)).toEqual({ tabId: 42, frameIds: [7] });
+  });
+
+  test("targets frameId 0 (top frame) when frameId is 0 itself", () => {
+    expect(F.buildClipTarget(42, 0)).toEqual({ tabId: 42, frameIds: [0] });
+  });
+
+  test("falls back to the top-level frame when no frameId is known (toolbar/popup invocation)", () => {
+    expect(F.buildClipTarget(42, undefined)).toEqual({ tabId: 42, frameIds: [0] });
+    expect(F.buildClipTarget(42, null)).toEqual({ tabId: 42, frameIds: [0] });
+    expect(F.buildClipTarget(42)).toEqual({ tabId: 42, frameIds: [0] });
+  });
+});

@@ -93,6 +93,31 @@
   }
 
   /**
+   * Build the `target` for chrome.scripting.executeScript() when extracting
+   * clipped page/selection content.
+   *
+   * SCRUM-108: the previous implementation always injected into the
+   * top-level frame (implicit default), so a selection made inside an
+   * <iframe> silently extracted the wrong (parent) frame's content instead
+   * of throwing or reading the frame the user actually selected in. The
+   * background-script context-menu handler now threads through the
+   * `frameId` chrome supplies on the click event so the injection targets
+   * the exact frame the selection/click came from.
+   *
+   * @param {number} tabId
+   * @param {number|null|undefined} frameId - frame the user interacted
+   *   with, from `chrome.contextMenus.onClicked`'s `info.frameId`. Absent
+   *   for invocations with no frame context (toolbar button, popup button),
+   *   which fall back to the top-level frame (id 0) — the same target the
+   *   old unconditional default produced.
+   * @returns {{tabId: number, frameIds: number[]}}
+   */
+  function buildClipTarget(tabId, frameId) {
+    const resolvedFrameId = frameId === undefined || frameId === null ? 0 : frameId;
+    return { tabId: tabId, frameIds: [resolvedFrameId] };
+  }
+
+  /**
    * Truncate text to the client-side content ceiling. Returns the original
    * string when already short enough.
    * @param {string} text
@@ -249,6 +274,7 @@
     MAX_CONTENT_CHARS,
     normalizeGatewayUrl,
     validateConfig,
+    buildClipTarget,
     truncateContent,
     cleanExtractedText,
     buildUrlPayload,
