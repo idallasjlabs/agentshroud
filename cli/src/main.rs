@@ -526,25 +526,32 @@ impl SclClient {
 // Output helpers
 // ---------------------------------------------------------------------------
 
-fn print_output(data: &serde_json::Value, fmt: &OutputFormat) {
+/// Render output data as the lines that would be printed for a given
+/// format. Pure so the SCRUM-111 `--format yaml` fix (previously silently
+/// fell back to JSON) can be unit-tested without spawning the CLI binary.
+/// `print_output` is a thin `println!` wrapper around this.
+pub(crate) fn render_output_lines(data: &serde_json::Value, fmt: &OutputFormat) -> Vec<String> {
     match fmt {
-        OutputFormat::Json => {
-            println!("{}", serde_json::to_string_pretty(data).unwrap_or_default())
-        }
-        OutputFormat::Yaml => {
-            println!("{}", serde_yaml::to_string(data).unwrap_or_else(|_| {
-                serde_json::to_string_pretty(data).unwrap_or_default()
-            }));
-        }
+        OutputFormat::Json => vec![serde_json::to_string_pretty(data).unwrap_or_default()],
+        OutputFormat::Yaml => vec![serde_yaml::to_string(data)
+            .unwrap_or_else(|_| serde_json::to_string_pretty(data).unwrap_or_default())],
         OutputFormat::Table => match data {
             serde_json::Value::Array(arr) => {
+                let mut lines = Vec::new();
                 for item in arr {
-                    println!("{}", serde_json::to_string_pretty(item).unwrap_or_default());
-                    println!("---");
+                    lines.push(serde_json::to_string_pretty(item).unwrap_or_default());
+                    lines.push("---".to_string());
                 }
+                lines
             }
-            _ => println!("{}", serde_json::to_string_pretty(data).unwrap_or_default()),
+            _ => vec![serde_json::to_string_pretty(data).unwrap_or_default()],
         },
+    }
+}
+
+fn print_output(data: &serde_json::Value, fmt: &OutputFormat) {
+    for line in render_output_lines(data, fmt) {
+        println!("{}", line);
     }
 }
 
@@ -586,7 +593,10 @@ pub fn run_approvals_decide<T: HttpTransport>(
         "approved": approved,
         "reason": reason,
     });
-    let data = client.post(&format!("/approve/{}/decide", encode_path_component(id)), Some(body))?;
+    let data = client.post(
+        &format!("/approve/{}/decide", encode_path_component(id)),
+        Some(body),
+    )?;
     Ok(format_decision(&data, approved))
 }
 
@@ -662,11 +672,17 @@ fn main() -> Result<()> {
                         ApprovalAction::List => gw.get("/approve/pending")?,
                         ApprovalAction::Approve { id, reason } => {
                             let body = serde_json::json!({"request_id": id, "approved": true, "reason": reason});
-                            gw.post(&format!("/approve/{}/decide", encode_path_component(id)), Some(body))?
+                            gw.post(
+                                &format!("/approve/{}/decide", encode_path_component(id)),
+                                Some(body),
+                            )?
                         }
                         ApprovalAction::Deny { id, reason } => {
                             let body = serde_json::json!({"request_id": id, "approved": false, "reason": reason});
-                            gw.post(&format!("/approve/{}/decide", encode_path_component(id)), Some(body))?
+                            gw.post(
+                                &format!("/approve/{}/decide", encode_path_component(id)),
+                                Some(body),
+                            )?
                         }
                     };
                     print_output(&data, fmt);
@@ -680,7 +696,9 @@ fn main() -> Result<()> {
                 OutputFormat::Table => println!("{}", run_cves(&gw, bot_id.as_deref())?),
                 _ => {
                     let path = match bot_id.as_deref() {
-                        Some(b) => format!("/soc/v1/agent-cves?bot_id={}", encode_path_component(b)),
+                        Some(b) => {
+                            format!("/soc/v1/agent-cves?bot_id={}", encode_path_component(b))
+                        }
                         None => "/soc/v1/agent-cves".to_string(),
                     };
                     let data = gw.get(&path)?;
@@ -695,7 +713,9 @@ fn main() -> Result<()> {
                 OutputFormat::Table => println!("{}", run_deploy_status(&gw)?),
                 _ => {
                     let version = gw.get("/api/v1/versions/current")?;
-                    let services = gw.get("/soc/v1/services").unwrap_or(serde_json::Value::Null);
+                    let services = gw
+                        .get("/soc/v1/services")
+                        .unwrap_or(serde_json::Value::Null);
                     let combined = serde_json::json!({"version": version, "services": services});
                     print_output(&combined, fmt);
                 }
@@ -749,7 +769,11 @@ fn main() -> Result<()> {
                 print_output(&data, fmt);
             }
             GetResource::Logs { service, tail } => {
-                let path = format!("/services/{}/logs?tail={}", encode_path_component(&service), tail);
+                let path = format!(
+                    "/services/{}/logs?tail={}",
+                    encode_path_component(&service),
+                    tail
+                );
                 let data = client.get(&path)?;
                 if let Some(lines) = data.get("lines").and_then(|l| l.as_array()) {
                     for line in lines {
@@ -785,11 +809,17 @@ fn main() -> Result<()> {
             }
         },
         Commands::Approve { id } => {
-            let data = client.post(&format!("/egress/{}/approve", encode_path_component(&id)), None)?;
+            let data = client.post(
+                &format!("/egress/{}/approve", encode_path_component(&id)),
+                None,
+            )?;
             print_output(&data, fmt);
         }
         Commands::Deny { id } => {
-            let data = client.post(&format!("/egress/{}/deny", encode_path_component(&id)), None)?;
+            let data = client.post(
+                &format!("/egress/{}/deny", encode_path_component(&id)),
+                None,
+            )?;
             print_output(&data, fmt);
         }
         Commands::Add { resource } => match resource {
@@ -1236,4 +1266,47 @@ mod tests {
         assert!(out.contains("7 tracked"));
     }
 
+    // ---- render_output_lines (SCRUM-111: --format yaml must produce real YAML) ----
+
+    #[test]
+    fn render_output_yaml_produces_real_yaml_not_json() {
+        let data = serde_json::json!({"status": "ok", "count": 3});
+        let lines = render_output_lines(&data, &OutputFormat::Yaml);
+        assert_eq!(lines.len(), 1);
+        let rendered = &lines[0];
+        // A pre-fix "fallback to JSON" implementation would produce a `{`
+        // wrapped blob instead of `key: value` YAML mapping syntax.
+        assert!(
+            !rendered.trim_start().starts_with('{'),
+            "expected YAML, got what looks like JSON: {rendered}"
+        );
+        assert!(rendered.contains("status: ok"));
+        assert!(rendered.contains("count: 3"));
+    }
+
+    #[test]
+    fn render_output_json_is_still_pretty_json() {
+        let data = serde_json::json!({"status": "ok"});
+        let lines = render_output_lines(&data, &OutputFormat::Json);
+        assert_eq!(lines.len(), 1);
+        assert!(lines[0].trim_start().starts_with('{'));
+        assert!(lines[0].contains("\"status\""));
+    }
+
+    #[test]
+    fn render_output_table_array_matches_prior_per_item_plus_separator_shape() {
+        let data = serde_json::json!([{"a": 1}, {"a": 2}]);
+        let lines = render_output_lines(&data, &OutputFormat::Table);
+        // 2 items => [item0_json, "---", item1_json, "---"]
+        assert_eq!(lines.len(), 4);
+        assert_eq!(lines[1], "---");
+        assert_eq!(lines[3], "---");
+    }
+
+    #[test]
+    fn render_output_table_empty_array_produces_no_lines() {
+        let data = serde_json::json!([]);
+        let lines = render_output_lines(&data, &OutputFormat::Table);
+        assert!(lines.is_empty());
+    }
 }
