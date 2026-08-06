@@ -90,9 +90,7 @@ async def require_auth(
         # Auth not configured - allow (but log a warning on first request)
         return "unauthenticated"
     if credentials is None or credentials.credentials != expected:
-        raise HTTPException(
-            status_code=401, detail="Invalid or missing authentication token"
-        )
+        raise HTTPException(status_code=401, detail="Invalid or missing authentication token")
     return "authenticated"
 
 
@@ -223,9 +221,9 @@ async def chat(request: ChatRequest, req: Request, _user: str = Depends(require_
             status_code=429,
             detail="Chat service is temporarily rate-limited, try again later",
         )
-    except Exception as e:
+    except Exception:
         # Log the full error internally but do NOT expose it to the client
-        logger.error("Chat request failed: %s", e, exc_info=True)
+        logger.exception("Chat request failed")
         raise HTTPException(
             status_code=502,
             detail="Chat service encountered an internal error",

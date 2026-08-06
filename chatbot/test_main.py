@@ -7,9 +7,7 @@ Covers the four SCRUM-109 fixes:
 4. Internal errors not disclosed to clients
 """
 
-import importlib
-import time
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import AsyncMock, MagicMock
 
 import pytest
 from fastapi.testclient import TestClient
@@ -90,9 +88,7 @@ class TestRateLimit:
         import chatbot.main as mod
 
         monkeypatch.delenv("CHATBOT_AUTH_TOKEN", raising=False)
-        mod._openai_client = (
-            None  # Will hit 503 before OpenAI, but rate limit fires first
-        )
+        mod._openai_client = None  # Will hit 503 before OpenAI, but rate limit fires first
         mod._RATE_LIMIT_MAX = 3
         mod._rate_buckets.clear()
 
@@ -155,9 +151,7 @@ class TestErrorSanitization:
         mock_client.chat = MagicMock()
         mock_client.chat.completions = MagicMock()
         mock_client.chat.completions.create = AsyncMock(
-            side_effect=RuntimeError(
-                "Internal secret: API key abc123 failed at endpoint xyz"
-            )
+            side_effect=RuntimeError("Internal secret: API key abc123 failed at endpoint xyz")
         )
         mod._openai_client = mock_client
 
@@ -203,12 +197,190 @@ class TestErrorSanitization:
 class TestAsyncClient:
     def test_uses_async_openai_client(self):
         """Verify the module uses AsyncOpenAI, not sync OpenAI."""
+        import inspect
+
         import chatbot.main as mod
 
         # The lifespan creates AsyncOpenAI, not OpenAI
         # We verify by checking the type annotation in the source
-        import inspect
-
         source = inspect.getsource(mod)
         assert "AsyncOpenAI" in source
         assert "openai.AsyncOpenAI" in source or "openai.AsyncOpenAI" in source
+
+    def test_chat_success_returns_parsed_response(self, client, monkeypatch):
+        """A successful OpenAI completion returns 200 with the parsed fields
+        via the awaited async client (SCRUM-109: non-blocking chat path)."""
+        import chatbot.main as mod
+
+        monkeypatch.delenv("CHATBOT_AUTH_TOKEN", raising=False)
+        mod._rate_buckets.clear()
+
+        mock_message = MagicMock()
+        mock_message.content = "Hello there."
+        mock_choice = MagicMock()
+        mock_choice.message = mock_message
+        mock_usage = MagicMock()
+        mock_usage.prompt_tokens = 10
+        mock_usage.completion_tokens = 5
+        mock_completion = MagicMock()
+        mock_completion.choices = [mock_choice]
+        mock_completion.model = "gpt-4-turbo"
+        mock_completion.usage = mock_usage
+
+        mock_client = MagicMock()
+        mock_client.chat.completions.create = AsyncMock(return_value=mock_completion)
+        mod._openai_client = mock_client
+
+        resp = client.post("/chat", json={"content": "hi"})
+        assert resp.status_code == 200
+        body = resp.json()
+        assert body["response"] == "Hello there."
+        assert body["model"] == "gpt-4-turbo"
+        assert body["tokens_used"] == 15
+
+    def test_openai_rate_limit_error_returns_429(self, client, monkeypatch):
+        """OpenAI's own RateLimitError is translated to a 429 for the caller."""
+        import openai as openai_mod
+
+        import chatbot.main as mod
+
+        monkeypatch.delenv("CHATBOT_AUTH_TOKEN", raising=False)
+        mod._rate_buckets.clear()
+
+        mock_client = MagicMock()
+        mock_client.chat.completions.create = AsyncMock(
+            side_effect=openai_mod.RateLimitError(
+                message="Rate limit exceeded",
+                response=MagicMock(status_code=429),
+                body=None,
+            )
+        )
+        mod._openai_client = mock_client
+
+        resp = client.post("/chat", json={"content": "hi"})
+        assert resp.status_code == 429
+        assert "temporarily rate-limited" in resp.json().get("detail", "").lower()
+
+
+# ---------------------------------------------------------------------------
+# 6. Auth token source (secret file vs env var)
+# ---------------------------------------------------------------------------
+
+
+class TestAuthTokenSource:
+    def test_get_auth_token_reads_secret_file_over_env(self, monkeypatch):
+        """When the Docker secret file exists, it wins over the env var."""
+        from pathlib import Path
+
+        import chatbot.main as mod
+
+        real_exists = Path.exists
+        real_read_text = Path.read_text
+
+        def fake_exists(self, *a, **kw):
+            if str(self) == "/run/secrets/chatbot_auth_token":
+                return True
+            return real_exists(self, *a, **kw)
+
+        def fake_read_text(self, *a, **kw):
+            if str(self) == "/run/secrets/chatbot_auth_token":
+                return "file-secret-token\n"
+            return real_read_text(self, *a, **kw)
+
+        monkeypatch.setattr(Path, "exists", fake_exists)
+        monkeypatch.setattr(Path, "read_text", fake_read_text)
+        monkeypatch.setenv("CHATBOT_AUTH_TOKEN", "env-token-should-be-ignored")
+
+        assert mod._get_auth_token() == "file-secret-token"
+
+    def test_get_auth_token_falls_back_to_env_when_no_secret_file(self, monkeypatch):
+        import chatbot.main as mod
+
+        monkeypatch.setattr(mod.Path, "exists", lambda self: False)
+        monkeypatch.setenv("CHATBOT_AUTH_TOKEN", "env-token-123")
+
+        assert mod._get_auth_token() == "env-token-123"
+
+
+# ---------------------------------------------------------------------------
+# 7. Lifespan startup (persona load + client/auth configuration logging)
+# ---------------------------------------------------------------------------
+
+
+class TestLifespan:
+    async def test_lifespan_without_api_key_leaves_client_none(self, monkeypatch, caplog):
+        import logging
+
+        import chatbot.main as mod
+
+        monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+        monkeypatch.delenv("CHATBOT_AUTH_TOKEN", raising=False)
+        monkeypatch.setattr(mod.Path, "exists", lambda self: False)
+        mod._openai_client = None
+
+        with caplog.at_level(logging.WARNING, logger="chatbot"):
+            async with mod.lifespan(mod.app):
+                pass
+
+        assert mod._openai_client is None
+        assert any("No OpenAI API key found" in r.message for r in caplog.records)
+        assert any("unauthenticated" in r.message for r in caplog.records)
+
+    async def test_lifespan_with_api_key_initializes_async_client(self, monkeypatch):
+        import chatbot.main as mod
+
+        monkeypatch.setenv("OPENAI_API_KEY", "sk-test-123")
+        monkeypatch.delenv("CHATBOT_AUTH_TOKEN", raising=False)
+        monkeypatch.setattr(mod.Path, "exists", lambda self: False)
+        mod._openai_client = None
+
+        async with mod.lifespan(mod.app):
+            assert isinstance(mod._openai_client, mod.openai.AsyncOpenAI)
+
+        mod._openai_client = None
+
+    async def test_lifespan_reads_api_key_from_secret_file(self, monkeypatch):
+        """When the Docker secret file for the OpenAI key exists, it wins
+        over the env var (mirrors the auth-token secret-file precedence)."""
+        from pathlib import Path
+
+        import chatbot.main as mod
+
+        real_exists = Path.exists
+        real_read_text = Path.read_text
+
+        def fake_exists(self, *a, **kw):
+            if str(self) == "/run/secrets/openai_api_key":
+                return True
+            return real_exists(self, *a, **kw)
+
+        def fake_read_text(self, *a, **kw):
+            if str(self) == "/run/secrets/openai_api_key":
+                return "sk-from-secret-file\n"
+            return real_read_text(self, *a, **kw)
+
+        monkeypatch.setattr(Path, "exists", fake_exists)
+        monkeypatch.setattr(Path, "read_text", fake_read_text)
+        monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+        monkeypatch.delenv("CHATBOT_AUTH_TOKEN", raising=False)
+        mod._openai_client = None
+
+        async with mod.lifespan(mod.app):
+            assert isinstance(mod._openai_client, mod.openai.AsyncOpenAI)
+
+        mod._openai_client = None
+
+    async def test_lifespan_logs_when_auth_token_configured(self, monkeypatch, caplog):
+        import logging
+
+        import chatbot.main as mod
+
+        monkeypatch.setenv("CHATBOT_AUTH_TOKEN", "secret")
+        monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+        monkeypatch.setattr(mod.Path, "exists", lambda self: False)
+
+        with caplog.at_level(logging.INFO, logger="chatbot"):
+            async with mod.lifespan(mod.app):
+                pass
+
+        assert any("Auth token configured" in r.message for r in caplog.records)
