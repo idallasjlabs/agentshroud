@@ -44,13 +44,20 @@ typedef struct {
 } vt_agent_t;
 
 static const vt_agent_t VT_AGENTS[] = {
-    /* Hermes first = boot default: the ESP32 is the owner's ADMIN VOICE
-     * ACCESS to Hermes, not a generic chat box (owner directive 2026-07-06).
-     * The voice layer waits up to VG_AGENT_READ_TIMEOUT_S (100 s) for slow
-     * Hermes turns while the Anthropic quota recovers.  Middle button cycles
-     * to Fast LLM for quick local answers. */
+    /* Local model (Qwen3 via LM Studio, gateway direct fast-path) first =
+     * boot default (owner directive 2026-08-07, supersedes the 2026-07-06
+     * Hermes-first directive below): Hermes's agentic-loop latency is
+     * highly variable (6-60+s observed live) and was making the device
+     * "nearly unusable" as a boot default; the fast local path answers in
+     * 1-6s. Middle button cycles to Hermes for full agentic control (email,
+     * systems, browsing) or say "tell Hermes"/"ask Hermes" from any state —
+     * spoken switches are sticky for the server-side session but do not
+     * survive a device reboot, hence changing the boot default itself here.
+     * Historical context (2026-07-06): "the ESP32 is the owner's ADMIN
+     * VOICE ACCESS to Hermes, not a generic chat box" — still true, just no
+     * longer the boot default; Hermes is one voice command away. */
+    { "direct",  "Qwen3"    },   /* Low-latency gateway LLM proxy — no agentic tools          */
     { "hermes",  "Hermes"   },   /* Hermes agentic assistant — synchronous OpenAI-compat reply */
-    { "direct",  "Fast LLM" },   /* Low-latency gateway LLM proxy — no agentic tools          */
     { "openclaw","OpenClaw" },   /* OpenClaw — async Telegram bot; replies on Telegram         */
 };
 #define VT_AGENT_COUNT ((int)(sizeof(VT_AGENTS) / sizeof(VT_AGENTS[0])))

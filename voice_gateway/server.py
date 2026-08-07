@@ -525,22 +525,24 @@ def _effective_voice_model() -> str:
     return _model_override or _VOICE_MODEL
 
 
-# "use <model>" — fast, non-agentic direct chat via the gateway's
-# multi-provider LLM proxy (gateway/proxy/llm_proxy.py routes by model-name
-# prefix/keyword: local keywords -> LM Studio, "claude" -> Anthropic direct
-# translation, else falls through to OpenAI). No agentic tools, no Hermes
-# overhead — this is the "extremely fast, no crackling" path (owner
-# 2026-08-07: replies stuck in Hermes's variable multi-second-to-tens-of-
-# seconds agentic latency were forcing the firmware's 20s playback age-cap to
-# open early, causing concurrent receive+playback artifacts).
-_USE_MODEL_RE = re.compile(
-    r"\buse\s+(local|qwen|claude|chatgpt|gpt|gemini)\b", re.IGNORECASE
+# Any of these verb phrases works interchangeably for either a model or an
+# agent (owner 2026-08-07: "ask/tell/use/switch to <model|agent>... the
+# phrasing should be flexible natural language, not hard-coded"). This still
+# can't be truly free-form: it runs BEFORE any LLM call, by design, to stay
+# fast (that's the whole point of the local-model-default work) — a real NLU
+# classifier would mean an LLM round-trip on every single utterance just to
+# check whether it's a switch command. The practical middle ground: a wide
+# set of natural verb phrases, found via search() anywhere in the transcript
+# (so leading filler like "can you please" doesn't need its own handling),
+# plus a SMALL number of filler words allowed between the verb and the
+# target ("switch to the local model", "use Claude please") without matching
+# arbitrary unrelated sentences that happen to contain both a verb and a
+# model/agent word.
+_SWITCH_VERB = (
+    r"(?:use|talk to|talk with|chat with|switch(?:\s+me)?\s+to"
+    r"|go to|connect(?:\s+me)?\s+to|ask|tell)"
 )
-# "tell <agent>" — route to a specific agentic assistant for actions/control
-# (send email, check systems, browse, etc.), accepting the slower, variable
-# agentic-loop latency in exchange for tool use. Agent slugs match the
-# `route_to` targets registered in agentshroud.yaml.
-_TELL_AGENT_RE = re.compile(r"\btell\s+(hermes|openclaw)\b", re.IGNORECASE)
+_SWITCH_FILLER = r"(?:\s+\w+){0,2}?"
 
 # model keyword -> (gateway model name, spoken confirmation label).
 # gateway/proxy/llm_proxy.py selects the backend from this string:
@@ -552,29 +554,54 @@ _TELL_AGENT_RE = re.compile(r"\btell\s+(hermes|openclaw)\b", re.IGNORECASE)
 # "claude-haiku-4-5-20251001" matches GATEWAY_CHAT_MODEL's default (Hermes's
 # own underlying model) — haiku, not opus, because the point of "use claude"
 # is speed, same as every other entry here.
+#
+# "claude"'s extra spellings (clawd/claud/clawed/cloud) are not typos — live
+# 2026-08-07: Whisper transcribed a real spoken "use Claude" as "Use CLAWD.",
+# silently matching nothing and leaving the display + routing on whatever was
+# already active. faster-whisper has no prior for "Claude" as a proper noun
+# and substitutes the nearest word it does know; cover the plausible
+# mishearings rather than require the one exact spelling STT is unlikely to
+# produce for a name it doesn't recognize.
 _MODEL_SWITCH_TARGETS: dict[str, tuple[str, str]] = {
-    "local": ("qwen3-14b", "the local model"),
-    "qwen": ("qwen3-14b", "the local model"),
+    "local": ("qwen3-14b", "Qwen3"),
+    "qwen": ("qwen3-14b", "Qwen3"),
     "claude": ("claude-haiku-4-5-20251001", "Claude"),
+    "clawd": ("claude-haiku-4-5-20251001", "Claude"),
+    "claud": ("claude-haiku-4-5-20251001", "Claude"),
+    "clawed": ("claude-haiku-4-5-20251001", "Claude"),
+    "cloud": ("claude-haiku-4-5-20251001", "Claude"),
     "chatgpt": ("gpt-4o-mini", "ChatGPT"),
     "gpt": ("gpt-4o-mini", "ChatGPT"),
     "gemini": ("gemini-2.5-flash", "Gemini"),
 }
+# agent slug -> spoken confirmation label. Slugs match the `route_to`
+# targets registered in agentshroud.yaml.
 _TELL_AGENT_LABELS: dict[str, str] = {
     "hermes": "Hermes",
     "openclaw": "OpenClaw",
 }
 
+# Single alternation over every recognized word (models ∪ agents), longest
+# first so multi-word entries (none currently, but future-proof) win over a
+# shorter prefix match.
+_SWITCH_WORDS = sorted(
+    set(_MODEL_SWITCH_TARGETS) | set(_TELL_AGENT_LABELS), key=len, reverse=True
+)
+_SWITCH_RE = re.compile(
+    rf"\b{_SWITCH_VERB}{_SWITCH_FILLER}\s+({'|'.join(_SWITCH_WORDS)})\b",
+    re.IGNORECASE,
+)
+
 
 def _parse_model_switch_command(
     transcript: str,
 ) -> tuple[str, str, str] | None:
-    """Parse a spoken "use <model>" or "tell <agent>" command.
+    """Parse a spoken "<use|tell|ask|switch to> <model|agent>" command.
 
     Returns (kind, value, label):
-      - ("model", <gateway model name>, <spoken label>) for "use <model>" —
+      - ("model", <gateway model name>, <spoken label>) for a model word —
         caller sets _agent_override = "direct" and _model_override = value.
-      - ("agent", <route_to slug>, <spoken label>) for "tell <agent>" —
+      - ("agent", <route_to slug>, <spoken label>) for an agent word —
         caller sets _agent_override = value.
     Returns None for ordinary speech.
 
@@ -582,15 +609,14 @@ def _parse_model_switch_command(
     unit tests can exercise the parser without touching module globals.
     """
     t = transcript.lower().strip()
-    m = _USE_MODEL_RE.search(t)
-    if m:
-        model_name, label = _MODEL_SWITCH_TARGETS[m.group(1)]
+    m = _SWITCH_RE.search(t)
+    if not m:
+        return None
+    word = m.group(1)
+    if word in _MODEL_SWITCH_TARGETS:
+        model_name, label = _MODEL_SWITCH_TARGETS[word]
         return ("model", model_name, label)
-    m = _TELL_AGENT_RE.search(t)
-    if m:
-        slug = m.group(1)
-        return ("agent", slug, _TELL_AGENT_LABELS[slug])
-    return None
+    return ("agent", word, _TELL_AGENT_LABELS[word])
 
 
 _VOLUME_QUERY_RE = re.compile(
@@ -1060,13 +1086,11 @@ async def voice_endpoint(ws: WebSocket) -> None:
                                 _model_override = _value
                                 agent = "direct"
                                 _confirm_prefix = f"Switched to {_label}. "
-                                _strip_re = _USE_MODEL_RE
                             else:
                                 _agent_override = _value
                                 agent = _value
                                 _confirm_prefix = f"Now talking to {_label}. "
-                                _strip_re = _TELL_AGENT_RE
-                            _rest = _strip_re.sub(" ", transcript, count=1)
+                            _rest = _SWITCH_RE.sub(" ", transcript, count=1)
                             if re.sub(r"[^\w]", "", _rest):
                                 _query_text = _rest.strip(" .,!?")
                             else:

@@ -2624,22 +2624,43 @@ async def test_ws_set_then_query_reports_the_set_level(monkeypatch):
 
 
 def test_parse_model_switch_command_forms():
-    """"use <model>" -> ('model', gateway-model-name, label); "tell <agent>"
-    -> ('agent', route_to-slug, label); ordinary speech -> None."""
+    """"<use|tell|ask|talk to|switch to|...> <model|agent>" -> ('model', gateway
+    model name, label) or ('agent', route_to slug, label); ordinary speech ->
+    None. Model/agent word can be found via any recognized verb phrase, with
+    a few filler words allowed in between (owner 2026-08-07: "phrasing
+    should be flexible natural language, not hard-coded")."""
     import voice_gateway.server as srv
 
     cases = [
-        ("Use local.", ("model", "qwen3-14b", "the local model")),
-        ("use qwen", ("model", "qwen3-14b", "the local model")),
+        ("Use local.", ("model", "qwen3-14b", "Qwen3")),
+        ("use qwen", ("model", "qwen3-14b", "Qwen3")),
+        ("switch me to the local model", ("model", "qwen3-14b", "Qwen3")),
+        ("go to the local model", ("model", "qwen3-14b", "Qwen3")),
         ("Use Claude.", ("model", "claude-haiku-4-5-20251001", "Claude")),
+        ("switch to claude", ("model", "claude-haiku-4-5-20251001", "Claude")),
+        ("can you please switch to claude", ("model", "claude-haiku-4-5-20251001", "Claude")),
+        ("please use claude for this one", ("model", "claude-haiku-4-5-20251001", "Claude")),
         ("Use ChatGPT.", ("model", "gpt-4o-mini", "ChatGPT")),
         ("use gpt", ("model", "gpt-4o-mini", "ChatGPT")),
+        ("lets use chatgpt instead", ("model", "gpt-4o-mini", "ChatGPT")),
         ("Use Gemini.", ("model", "gemini-2.5-flash", "Gemini")),
         ("Tell Hermes to check my email.", ("agent", "hermes", "Hermes")),
         ("tell openclaw", ("agent", "openclaw", "OpenClaw")),
+        ("I want to talk to Hermes", ("agent", "hermes", "Hermes")),
+        ("connect me to openclaw", ("agent", "openclaw", "OpenClaw")),
+        ("ask hermes to check my email", ("agent", "hermes", "Hermes")),
+        # STT mishearing of "Claude" — live regression 2026-08-07: real
+        # Whisper transcript was literally "Use CLAWD." for a spoken
+        # "Use Claude."; faster-whisper has no prior for the proper noun and
+        # substitutes the nearest word it knows.
+        ("Use CLAWD.", ("model", "claude-haiku-4-5-20251001", "Claude")),
+        ("use claud", ("model", "claude-haiku-4-5-20251001", "Claude")),
+        ("use clawed", ("model", "claude-haiku-4-5-20251001", "Claude")),
+        ("use cloud", ("model", "claude-haiku-4-5-20251001", "Claude")),
         ("What time is it?", None),
         ("Use the volume knob.", None),
         ("Tell me a story.", None),  # "tell" without a registered agent slug
+        ("the weather in cloud country is nice", None),  # no leading verb
     ]
     for text, expected in cases:
         assert srv._parse_model_switch_command(text) == expected, f"{text!r}"
@@ -2701,9 +2722,10 @@ async def test_ws_use_model_command_intercepted(monkeypatch):
 
 
 @pytest.mark.asyncio
-async def test_ws_use_local_command_confirms_in_plain_language(monkeypatch):
-    """'use qwen' sets agent='direct', model='qwen3-14b', and confirms in
-    plain language ('the local model'), not the internal slug."""
+async def test_ws_use_local_command_confirms_with_model_name(monkeypatch):
+    """'use qwen' sets agent='direct', model='qwen3-14b', and confirms with
+    the actual model name ('Qwen3'), not the internal slug — owner
+    2026-08-07: display should show which model, not a generic placeholder."""
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
@@ -2746,7 +2768,7 @@ async def test_ws_use_local_command_confirms_in_plain_language(monkeypatch):
     assert srv._agent_override == "direct"
     assert srv._model_override == "qwen3-14b"
     assert any(
-        "switched to the local model" in t.lower() for t in spoken
+        "switched to qwen3" in t.lower() for t in spoken
     ), f"confirmation not spoken: {spoken}"
 
 
