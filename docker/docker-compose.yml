@@ -539,10 +539,12 @@ services:
       VG_PORT: "8765"
       # WS auth: token the ESP32 must send as ?token= in the connection URL.
       VOICE_GW_AUTH_TOKEN_FILE: /run/secrets/voice_gateway_token
-      # Default agent for voice → proxied-agent routing.  Override per-connection via ?agent=.
-      # "hermes" = Hermes agentic assistant (synchronous OpenAI-compat reply via /forward).
-      # "direct" = legacy fast-path LLM proxy (no agentic tools, lower latency).
-      VOICE_DEFAULT_AGENT: "hermes"
+      # Default agent for voice → proxied-agent routing.  Override per-connection via ?agent=,
+      # or say "use Claude"/"use local" mid-session (sticky override, SCRUM-113 follow-on).
+      # "direct" = fast local LLM (LM Studio qwen3-14b, /no_think) — default: Hermes's own
+      # agentic-loop latency measured ~9s to first sentence, too slow for voice (2026-08-06).
+      # "hermes" = Hermes agentic assistant (streaming OpenAI-compat reply via /forward/stream).
+      VOICE_DEFAULT_AGENT: "direct"
       FIRMWARE_BIN_PATH: /firmware/build/voice_terminal.bin
       # TTS naturalness: 0.92× pacing reads noticeably less robotic on the
       # BOX-3 speaker than the 1.0 default (owner feedback 2026-07-03).

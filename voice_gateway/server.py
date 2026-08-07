@@ -38,7 +38,7 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 from datetime import datetime
 from enum import Enum, auto
-from typing import Dict, List
+from typing import AsyncIterator, Dict, List
 from zoneinfo import ZoneInfo
 
 import httpx
@@ -60,14 +60,29 @@ _CHUNK_SIZE = 4096  # bytes per TTS chunk
 
 _OWNER_USER_ID = os.environ.get("GATEWAY_OWNER_USER_ID", "")
 
-# Model for voice — used only by the "direct" fast-path (_call_llm).
-# Other agents (hermes, openclaw, …) route through /forward → gateway pipeline.
-_VOICE_MODEL = os.environ.get("VOICE_MODEL", "claude-haiku-4-5-20251001")
+# Default model for voice — used only by the "direct" fast-path (_call_llm),
+# overridden per-session by _model_override (see "use <model>" below). Other
+# agents (hermes, openclaw, …) route through /forward → gateway pipeline and
+# pick their own model server-side.
+# Default is a local model (LM Studio, "qwen3" family-prefix match routes it
+# to LMSTUDIO_API_BASE in gateway/proxy/llm_proxy.py — no cloud round-trip,
+# no Hermes agentic-loop overhead). SCRUM-113 live test: Hermes took 9.2s to
+# first sentence for a simple query; local-first is the fix (owner
+# 2026-08-07: "if local is the fastest it should be the default").
+_VOICE_MODEL = os.environ.get("VOICE_MODEL", "qwen3-14b")
 
-# Default proxied agent to route voice to.  Override per-connection via ?agent= query param.
-# "direct" = fast path (_call_llm, bypasses /forward pipeline, backward-compat).
-# Any other value = gateway /forward with route_to=<value>.
-_DEFAULT_AGENT = os.environ.get("VOICE_DEFAULT_AGENT", "hermes")
+# Default proxied agent to route voice to.  Override per-connection via ?agent= query param,
+# or per-session via a spoken command (_agent_override / _model_override, sticky until
+# changed — owner 2026-08-07):
+#   "use local" / "use qwen"    -> direct fast path, LM Studio qwen3-14b
+#   "use claude"                -> direct fast path, Claude (bypasses Hermes entirely)
+#   "use chatgpt" / "use gpt"   -> direct fast path, OpenAI
+#   "use gemini"                -> direct fast path, Google
+#   "tell hermes"               -> full agentic path, tool use / control
+#   "tell openclaw"             -> full agentic path, tool use / control
+# See _parse_model_switch_command. "direct" = fast path (_call_llm, bypasses
+# /forward pipeline). Any other value = gateway /forward with route_to=<value>.
+_DEFAULT_AGENT = os.environ.get("VOICE_DEFAULT_AGENT", "direct")
 
 # Conversation history: keep at most this many user+assistant turn pairs.
 # Older turns are dropped (FIFO) to bound token usage and maintain context.
@@ -259,12 +274,30 @@ _TTS_SENTENCE_TIMEOUT_S: float = float(
     os.environ.get("VG_TTS_SENTENCE_TIMEOUT_S", "30")
 )
 
-# Leading silence prepended to the first sentence's PCM (0.4 s at 16 kHz S16LE
-# mono = 6400 samples × 2 bytes).  Any playback-start transient on the device
-# (amp wake, ring flush, connection churn) lands in silence instead of on the
-# first spoken word.  Exposed as a module constant so it is defined in one place
-# (and referenceable by tests).
-_TTS_LEAD_SILENCE = b"\x00" * 12800
+# Leading silence prepended to the first sentence's PCM (0.8 s at 16 kHz
+# S16LE mono = 12800 samples x 2 bytes; doubled from 0.4s 2026-08-07 as a
+# cheap test against persistent first-word clicking — low confidence this is
+# the actual fix: the July 2026-07-07 debugging history root-caused the same
+# symptom (per-word clicking tracking WiFi burst activity) to USB charger
+# electrical noise, confirmed twice via direct A/B charger swap, AFTER nine
+# firmware iterations on playback timing/buffering did not resolve it. If
+# clicking survives this change too, suspect the power supply, not this pad.
+# Any playback-start transient on the device (amp wake, ring flush,
+# connection churn) lands in silence instead of on the first spoken word.
+# Exposed as a module constant so it is defined in one place (and
+# referenceable by tests).
+_TTS_LEAD_SILENCE = b"\x00" * 25600
+
+# Silence inserted between every sentence's PCM (60 ms at 16 kHz S16LE mono =
+# 960 samples x 2 bytes).  Each sentence is synthesized by Kokoro as an
+# independent clip and concatenated raw — neither the start nor the end of a
+# clip is guaranteed to sit at a zero crossing, so abutting two clips directly
+# produces an audible click at every sentence boundary (live 2026-08-07:
+# "clicking at start of every sentence", reproduced even on a short,
+# fully-buffered reply, ruling out network/receive-overlap causes). A short
+# silence gap between clips absorbs the discontinuity the same way
+# _TTS_LEAD_SILENCE absorbs the playback-start transient.
+_TTS_SENTENCE_GAP = b"\x00" * 1920
 
 # ── TTS resume-on-reconnect ───────────────────────────────────────────────────
 # Sessions are per-connection, so a hotspot drop mid-downlink used to lose the
@@ -472,6 +505,93 @@ def _parse_volume_command(transcript: str) -> int | None:
 # own level, so a read query before any set has nothing to answer with.
 _last_set_volume: int | None = None
 
+# Sticky agent override from a spoken "use <model>"/"tell <agent>" command.
+# None = fall back to the per-connection ?agent= query param / _DEFAULT_AGENT.
+# Same persistence model as _last_set_volume: survives reconnects, cleared
+# only by another spoken switch command (there is one owner, one device).
+_agent_override: str | None = None
+
+# Sticky model override for the "direct" fast path (set by "use <model>").
+# None = fall back to the module default _VOICE_MODEL ("qwen3-14b" — fastest,
+# the default per owner instruction 2026-08-07: "if local is the fastest it
+# should be the default"). Only meaningful when agent == "direct"; "tell
+# hermes"/"tell openclaw" route through the full agentic path instead, which
+# picks its own model server-side (gateway/ingest_api/router.py's
+# GATEWAY_CHAT_MODEL for Hermes).
+_model_override: str | None = None
+
+
+def _effective_voice_model() -> str:
+    return _model_override or _VOICE_MODEL
+
+
+# "use <model>" — fast, non-agentic direct chat via the gateway's
+# multi-provider LLM proxy (gateway/proxy/llm_proxy.py routes by model-name
+# prefix/keyword: local keywords -> LM Studio, "claude" -> Anthropic direct
+# translation, else falls through to OpenAI). No agentic tools, no Hermes
+# overhead — this is the "extremely fast, no crackling" path (owner
+# 2026-08-07: replies stuck in Hermes's variable multi-second-to-tens-of-
+# seconds agentic latency were forcing the firmware's 20s playback age-cap to
+# open early, causing concurrent receive+playback artifacts).
+_USE_MODEL_RE = re.compile(
+    r"\buse\s+(local|qwen|claude|chatgpt|gpt|gemini)\b", re.IGNORECASE
+)
+# "tell <agent>" — route to a specific agentic assistant for actions/control
+# (send email, check systems, browse, etc.), accepting the slower, variable
+# agentic-loop latency in exchange for tool use. Agent slugs match the
+# `route_to` targets registered in agentshroud.yaml.
+_TELL_AGENT_RE = re.compile(r"\btell\s+(hermes|openclaw)\b", re.IGNORECASE)
+
+# model keyword -> (gateway model name, spoken confirmation label).
+# gateway/proxy/llm_proxy.py selects the backend from this string:
+#   - contains a local keyword (qwen/llama/mistral/deepseek/phi/ollama/lmstudio)
+#     -> routed to the matching local backend (LM Studio for "qwen3-14b").
+#   - contains "claude" -> translated + routed directly to Anthropic,
+#     bypassing Hermes's agentic wrapper entirely.
+#   - otherwise (e.g. "gpt-4o-mini") -> OpenAI.
+# "claude-haiku-4-5-20251001" matches GATEWAY_CHAT_MODEL's default (Hermes's
+# own underlying model) — haiku, not opus, because the point of "use claude"
+# is speed, same as every other entry here.
+_MODEL_SWITCH_TARGETS: dict[str, tuple[str, str]] = {
+    "local": ("qwen3-14b", "the local model"),
+    "qwen": ("qwen3-14b", "the local model"),
+    "claude": ("claude-haiku-4-5-20251001", "Claude"),
+    "chatgpt": ("gpt-4o-mini", "ChatGPT"),
+    "gpt": ("gpt-4o-mini", "ChatGPT"),
+    "gemini": ("gemini-2.5-flash", "Gemini"),
+}
+_TELL_AGENT_LABELS: dict[str, str] = {
+    "hermes": "Hermes",
+    "openclaw": "OpenClaw",
+}
+
+
+def _parse_model_switch_command(
+    transcript: str,
+) -> tuple[str, str, str] | None:
+    """Parse a spoken "use <model>" or "tell <agent>" command.
+
+    Returns (kind, value, label):
+      - ("model", <gateway model name>, <spoken label>) for "use <model>" —
+        caller sets _agent_override = "direct" and _model_override = value.
+      - ("agent", <route_to slug>, <spoken label>) for "tell <agent>" —
+        caller sets _agent_override = value.
+    Returns None for ordinary speech.
+
+    Sets no state itself — callers apply _agent_override/_model_override so
+    unit tests can exercise the parser without touching module globals.
+    """
+    t = transcript.lower().strip()
+    m = _USE_MODEL_RE.search(t)
+    if m:
+        model_name, label = _MODEL_SWITCH_TARGETS[m.group(1)]
+        return ("model", model_name, label)
+    m = _TELL_AGENT_RE.search(t)
+    if m:
+        slug = m.group(1)
+        return ("agent", slug, _TELL_AGENT_LABELS[slug])
+    return None
+
 
 _VOLUME_QUERY_RE = re.compile(
     # Read forms only. "set volume …" (a write) is excluded ahead of this
@@ -519,7 +639,7 @@ def _voice_system_message() -> Dict[str, str]:
         "no bullet points, no lists. Plain conversational English only. "
         "If asked a follow-up, remember the prior context in this conversation."
     )
-    if "qwen" in _VOICE_MODEL.lower():
+    if "qwen" in _effective_voice_model().lower():
         # Qwen3 emits a long <think> block before answering (~30 s per reply
         # measured on LM Studio) — /no_think disables it; voice needs the
         # answer, not the reasoning trace.
@@ -534,12 +654,15 @@ async def _call_llm(history: List[Dict[str, str]]) -> str:
     when ?agent=direct (or _DEFAULT_AGENT=="direct"). Gateway substitutes its
     own Anthropic key, so no API key is needed here. Still routes through
     AgentShroud's security pipeline (PII, audit, egress).
+
+    The model is _model_override (a sticky "use claude"/"use chatgpt"/etc.
+    spoken switch) when set, else the module default _VOICE_MODEL.
     """
     async with httpx.AsyncClient(timeout=30.0, trust_env=False) as client:
         resp = await client.post(
             f"{_GATEWAY_URL}/v1/chat/completions",
             json={
-                "model": _VOICE_MODEL,
+                "model": _effective_voice_model(),
                 "messages": history,
                 "max_tokens": 150,  # ~100 words — keep voice replies brief
             },
@@ -561,91 +684,119 @@ async def _call_llm(history: List[Dict[str, str]]) -> str:
         raise RuntimeError(f"Unexpected LLM response shape: {exc}") from exc
 
 
-async def _call_agent(transcript: str, agent: str) -> str:
-    """Route a voice utterance to a proxied agent via the AgentShroud gateway /forward endpoint.
+async def _call_agent_stream(transcript: str, agent: str) -> AsyncIterator[str]:
+    """Route a voice utterance to a proxied agent via the AgentShroud gateway's
+    POST /forward/stream endpoint, running the full AgentShroud security
+    pipeline (PII redaction, prompt-guard scoring, audit hash-chain, egress
+    policy, per-sentence outbound filtering) exactly like the old blocking
+    /forward call did — but yielding each already-filtered sentence as soon
+    as it's released, instead of waiting for the complete reply (SCRUM-113:
+    voice was "nearly unusable" waiting for full-response generation before
+    any audio began).
 
-    Unlike _call_llm, this path runs the full AgentShroud security pipeline:
-    PII redaction, prompt-guard scoring, audit hash-chain, egress policy.
-
-    Hermes (and any future agent with an OpenAI-compat chat_path) returns a
-    synchronous agent_response in the ForwardResponse body.  Async agents like
-    OpenClaw have no synchronous body reply; in that case we return an honest
-    spoken notice so the user knows their message was received.
+    Hermes (and any future agent with an OpenAI-compat chat_path) streams a
+    real reply. Async agents like OpenClaw have no streaming-compatible
+    chat_path — the gateway rejects those with a 400, which this function
+    turns into the same honest "will reply on Telegram" notice the old
+    blocking path gave them.
 
     Args:
         transcript: STT-produced utterance text (already PII-clean at voice level).
         agent:      AgentShroud bot slug (e.g. "hermes", "openclaw").  Must match
                     a key in the agentshroud.yaml bots: section.
 
-    Returns:
-        Spoken reply string (suitable for TTS synthesis).
+    Yields:
+        Successive filtered sentence strings, in order, suitable for TTS
+        synthesis one at a time.
     """
-    # Voice read deadline (VG_AGENT_READ_TIMEOUT_S, default 100 s): Hermes is
-    # the owner's admin voice control and a real (slow) answer beats a fast
-    # fallback.  Measured 2026-07-06: a Hermes turn takes ~73 s while the
-    # Anthropic org quota is 429-ing (its internal LLM calls burn the retry
-    # preamble); 3-10 s when quota is healthy.  Gateway's own forward timeout
-    # is 120 s — staying under it means we still catch its graceful body.
     _read_s = float(os.environ.get("VG_AGENT_READ_TIMEOUT_S", "100"))
     timeout = httpx.Timeout(connect=10.0, read=_read_s, write=10.0, pool=5.0)
-    # SCRUM-56 fix: config-gated ephemeral tag.  Empty by default (unchanged
-    # request); {"no_memory": True} only when VG_VOICE_NO_MEMORY is enabled.
     _body: Dict[str, object] = {
         "content": transcript,
         "source": "api",
         "route_to": agent,
         "user_id": _OWNER_USER_ID or "voice",
+        "stream": True,
     }
     _meta = _voice_forward_metadata()
     if _meta:
         _body["metadata"] = _meta
-    # SCRUM-56 measure: wall-clock the agent turn so per-turn latency growth
-    # (Hermes memory bloat) is observable in logs, with an outlier flag.
     _t0 = time.perf_counter()
+    _first_sentence_at: "float | None" = None
     try:
         async with httpx.AsyncClient(timeout=timeout, trust_env=False) as client:
-            resp = await client.post(
-                f"{_GATEWAY_URL}/forward",
+            async with client.stream(
+                "POST",
+                f"{_GATEWAY_URL}/forward/stream",
                 json=_body,
                 headers={
                     "Authorization": f"Bearer {_GATEWAY_TOKEN}",
                     "X-AgentShroud-User-Id": _OWNER_USER_ID or "voice",
-                    # Interactive hint — /forward itself makes no LLM calls,
-                    # but forwarding it costs nothing and keeps both voice
-                    # paths consistent if the pipeline learns to honour it.
                     "X-AgentShroud-Interactive": "1",
                 },
-            )
+            ) as resp:
+                resp.raise_for_status()
+                async for line in resp.aiter_lines():
+                    if not line or not line.startswith("data:"):
+                        continue
+                    try:
+                        event = json.loads(line[len("data:") :].strip())
+                    except json.JSONDecodeError:
+                        logger.warning("Malformed SSE line from /forward/stream: %r", line[:120])
+                        continue
+                    if event.get("done"):
+                        break
+                    sentence = event.get("sentence")
+                    if sentence:
+                        if _first_sentence_at is None:
+                            _first_sentence_at = time.perf_counter()
+                            logger.info(
+                                "voice_turn_first_sentence agent=%s latency_s=%.3f",
+                                agent,
+                                _first_sentence_at - _t0,
+                            )
+                        yield sentence
         _record_turn_latency(agent, time.perf_counter() - _t0)
-        resp.raise_for_status()
-        data = resp.json()
-        agent_reply = data.get("agent_response") or ""
-        if agent_reply.strip():
-            logger.info("Agent %r reply: %r", agent, agent_reply[:120])
-            return agent_reply.strip()
-        # Async agents (OpenClaw) route the message but reply later over Telegram.
-        notice = (
-            f"{agent.capitalize()} received your message and will reply on Telegram."
-        )
-        logger.info(
-            "Agent %r returned no synchronous reply — notifying user via TTS", agent
-        )
-        return notice
     except httpx.ReadTimeout:
-        # A turn that burns the full read window is the worst-case latency
-        # outlier SCRUM-56 is chasing — record it before the fallback so the
-        # timeout itself shows up in the latency log, not just the successes.
         _record_turn_latency(agent, time.perf_counter() - _t0)
         logger.warning(
-            "Agent %r read timeout after %.0f s — returning voice fallback",
-            agent,
-            _read_s,
+            "Agent %r stream read timeout after %.0f s — no more sentences", agent, _read_s
         )
-        return "I'm having trouble connecting right now. Please try again in a moment."
+        if _first_sentence_at is None:
+            yield "I'm having trouble connecting right now. Please try again in a moment."
+    except httpx.HTTPStatusError as exc:
+        if exc.response.status_code == 400 and _first_sentence_at is None:
+            # Not a failure — this agent (e.g. OpenClaw) has no streaming-
+            # compatible chat_path, same honest case the old blocking
+            # _call_agent handled: message is routed, but the agent has no
+            # synchronous reply, so it'll answer over Telegram instead.
+            logger.info(
+                "Agent %r has no streaming-compatible chat_path — notifying user via TTS",
+                agent,
+            )
+            yield f"{agent.capitalize()} received your message and will reply on Telegram."
+            return
+        logger.warning(
+            "Agent %r stream returned HTTP %s — falling back to trouble-connecting message",
+            agent,
+            exc.response.status_code,
+        )
+        if _first_sentence_at is None:
+            yield "I'm having trouble connecting right now. Please try again in a moment."
+    except httpx.HTTPError as exc:
+        logger.warning("Agent %r stream connection error: %s", agent, exc)
+        if _first_sentence_at is None:
+            yield "I'm having trouble connecting right now. Please try again in a moment."
 
 
 @app.websocket("/voice")
 async def voice_endpoint(ws: WebSocket) -> None:
+    # Declared up front: _agent_override is read below (connection-time agent
+    # resolution) before it is written (per-utterance switch-command handling
+    # later in this function) — Python requires the global declaration to
+    # precede every use of the name in the enclosing scope.
+    global _reply_resume, _utterance_resume, _last_set_volume
+    global _agent_override, _model_override
     await ws.accept()
     token = ws.query_params.get("token", "")
     if _VG_AUTH_TOKEN and not hmac.compare_digest(token, _VG_AUTH_TOKEN):
@@ -656,7 +807,10 @@ async def voice_endpoint(ws: WebSocket) -> None:
     # Agent routing: ?agent=<slug> selects the target proxied agent.
     # "direct" = fast LLM path (legacy, lower latency, no agentic tools).
     # Any other value = gateway POST /forward with route_to=<slug>.
-    agent = ws.query_params.get("agent", _DEFAULT_AGENT)
+    # A sticky "use Claude"/"use local" spoken command (_agent_override) wins
+    # over the connection's own ?agent= query param — it persists across
+    # reconnects until the owner speaks another switch command.
+    agent = _agent_override or ws.query_params.get("agent", _DEFAULT_AGENT)
     remote = ws.client
     logger.info("Connection from %s (authenticated) → agent=%r", remote, agent)
 
@@ -686,7 +840,6 @@ async def voice_endpoint(ws: WebSocket) -> None:
         _loop = asyncio.get_running_loop()
 
         # Resume an interrupted TTS reply from the previous connection.
-        global _reply_resume, _utterance_resume, _last_set_volume
         if _reply_resume is not None:
             _age = _loop.time() - _reply_resume["ts"]
             _pcm, _sent = _reply_resume["pcm"], _reply_resume["sent"]
@@ -860,6 +1013,7 @@ async def voice_endpoint(ws: WebSocket) -> None:
                         # What time is it?") — route any remainder to the agent
                         # and speak confirmation + answer together.
                         _vol = _parse_volume_command(transcript)
+                        _switch_target = _parse_model_switch_command(transcript)
                         _confirm_prefix = ""
                         _query_text = transcript
                         _dispatch = True
@@ -877,6 +1031,47 @@ async def voice_endpoint(ws: WebSocket) -> None:
                             else:
                                 agent_text = _confirm_prefix.strip()
                                 _dispatch = False
+                        elif _switch_target is not None:
+                            # Sticky switch command ("use claude"/"tell hermes"):
+                            # updates the module-level override(s) — persists
+                            # across reconnects, same model as _last_set_volume —
+                            # and this connection's local `agent`, so a chained
+                            # question/instruction in the same breath ("Use
+                            # Claude. What's the weather?") dispatches to the
+                            # newly-selected target immediately.
+                            _kind, _value, _label = _switch_target
+                            logger.info(
+                                "Switch command (%s) → %r", _kind, _value
+                            )
+                            # Update the device's top-left agent-name display
+                            # to match: without this the label stays stuck on
+                            # whatever the firmware's own physical-button
+                            # agent list booted with, contradicting what the
+                            # device is actually talking to (owner 2026-08-07:
+                            # "shouldn't it show the currently selected
+                            # model?"). Unknown "cmd" values are a no-op on
+                            # older firmware, so this is safe to send
+                            # regardless of what's flashed on the device.
+                            await ws.send_text(
+                                json.dumps({"cmd": "set_agent_label", "value": _label})
+                            )
+                            if _kind == "model":
+                                _agent_override = "direct"
+                                _model_override = _value
+                                agent = "direct"
+                                _confirm_prefix = f"Switched to {_label}. "
+                                _strip_re = _USE_MODEL_RE
+                            else:
+                                _agent_override = _value
+                                agent = _value
+                                _confirm_prefix = f"Now talking to {_label}. "
+                                _strip_re = _TELL_AGENT_RE
+                            _rest = _strip_re.sub(" ", transcript, count=1)
+                            if re.sub(r"[^\w]", "", _rest):
+                                _query_text = _rest.strip(" .,!?")
+                            else:
+                                agent_text = _confirm_prefix.strip()
+                                _dispatch = False
                         elif _is_volume_query(transcript):
                             # Symmetric READ intercept ("what's the volume?"):
                             # answer from the tracked level and short-circuit —
@@ -888,20 +1083,29 @@ async def voice_endpoint(ws: WebSocket) -> None:
                             agent_text = _answer_volume_query()
                             _dispatch = False
 
-                        # Dispatch to the appropriate agent.
+                        # Dispatch to the appropriate agent. The proxied-agent
+                        # (Hermes) path streams: _hermes_stream is set instead of
+                        # resolving agent_text up front, so synthesis can start on
+                        # the FIRST sentence the gateway releases rather than
+                        # waiting for the complete reply to finish generating
+                        # (SCRUM-113 — voice was "nearly unusable" waiting for
+                        # full-response generation before any audio began).
+                        _hermes_stream: "AsyncIterator[str] | None" = None
                         if _dispatch and agent == "direct":
                             # Fast path: multi-turn LLM proxy (no agentic tools).
+                            # Not streamed — single blocking call, unchanged.
                             history.append({"role": "user", "content": _query_text})
                             agent_text = _confirm_prefix + await _call_llm(history)
+                            logger.info("Agent reply: %r", agent_text)
                         elif _dispatch:
-                            # Proxied agent path: full AgentShroud pipeline via /forward.
-                            # Hermes and future OpenAI-compat agents return a synchronous
-                            # reply; async agents (OpenClaw) get an honest Telegram notice.
-                            agent_text = _confirm_prefix + await _call_agent(
-                                _query_text, agent
-                            )
-
-                        logger.info("Agent reply: %r", agent_text)
+                            # Proxied agent path: full AgentShroud pipeline via
+                            # /forward/stream. Hermes and future OpenAI-compat
+                            # agents stream a real reply; async agents (OpenClaw)
+                            # get an honest Telegram notice as their one "sentence".
+                            logger.info("Agent reply: streaming from %r", agent)
+                            _hermes_stream = _call_agent_stream(_query_text, agent)
+                        else:
+                            logger.info("Agent reply: %r", agent_text)
 
                         # Maintain multi-turn history only for the "direct" fast path.
                         # Proxied agents (Hermes, etc.) manage their own conversation state.
@@ -913,17 +1117,20 @@ async def voice_endpoint(ws: WebSocket) -> None:
                                     history[:1] + history[-(_MAX_HISTORY_TURNS * 2) :]
                                 )
 
-                        # Pipeline synthesis with sending: synthesise sentence N+1
-                        # concurrently in a thread while sentence N's PCM frames are
-                        # being transmitted.  Without this, inter-sentence Kokoro
-                        # inference (~200-500 ms each) creates audio gaps that empty
-                        # the ESP32 DMA buffer and produce audible dropouts.
-                        #
-                        # SPEAKING state is sent immediately before the first PCM
-                        # frame (not before synthesis) so the ESP32 mouth animation
-                        # is synchronised with the audio onset rather than leading it
-                        # by the full first-sentence inference time.
-                        sentences = _tts.split_for_speech(agent_text)
+                        # Unified raw-text source for synthesis: either the one
+                        # already-resolved agent_text (direct/volume paths), or
+                        # the confirm prefix followed by each sentence as Hermes
+                        # streams it in — re-run through split_for_speech() either
+                        # way for markdown-aware normalization + TTS-sized chunking.
+                        async def _raw_text_chunks() -> AsyncIterator[str]:
+                            if _hermes_stream is None:
+                                yield agent_text
+                                return
+                            if _confirm_prefix:
+                                yield _confirm_prefix
+                            async for _sentence in _hermes_stream:
+                                yield _sentence
+
                         _synth_q: asyncio.Queue[bytes | None] = asyncio.Queue(maxsize=2)
 
                         # 0.4 s of leading silence on the first sentence: any
@@ -940,25 +1147,29 @@ async def voice_endpoint(ws: WebSocket) -> None:
                             # but still deliver the sentinel so the send loop
                             # exits and END + state:idle reach the device.
                             _first = True
-                            for _s in sentences:
-                                try:
-                                    _pcm = await asyncio.wait_for(
-                                        loop.run_in_executor(None, _tts.synthesize, _s),
-                                        timeout=_TTS_SENTENCE_TIMEOUT_S,
-                                    )
-                                    if _first:
-                                        _pcm = _lead_pad + _pcm
-                                        _first = False
-                                except Exception as _exc:
-                                    logger.error(
-                                        "TTS failed/timed out (%.0fs) for %r — "
-                                        "aborting remaining sentences: %s",
-                                        _TTS_SENTENCE_TIMEOUT_S,
-                                        _s[:60],
-                                        _exc,
-                                    )
-                                    break
-                                await _synth_q.put(_pcm)
+                            async for _raw in _raw_text_chunks():
+                                for _s in _tts.split_for_speech(_raw):
+                                    try:
+                                        _pcm = await asyncio.wait_for(
+                                            loop.run_in_executor(None, _tts.synthesize, _s),
+                                            timeout=_TTS_SENTENCE_TIMEOUT_S,
+                                        )
+                                        if _first:
+                                            _pcm = _lead_pad + _pcm
+                                            _first = False
+                                        else:
+                                            _pcm = _TTS_SENTENCE_GAP + _pcm
+                                    except Exception as _exc:
+                                        logger.error(
+                                            "TTS failed/timed out (%.0fs) for %r — "
+                                            "aborting remaining sentences: %s",
+                                            _TTS_SENTENCE_TIMEOUT_S,
+                                            _s[:60],
+                                            _exc,
+                                        )
+                                        await _synth_q.put(None)  # sentinel
+                                        return
+                                    await _synth_q.put(_pcm)
                             await _synth_q.put(None)  # sentinel
 
                         synth_task = asyncio.create_task(_synthesize_all())

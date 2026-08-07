@@ -45,6 +45,15 @@ class ForwardRequest(BaseModel):
         max_length=100,
         description="Telegram/platform user ID for RBAC. Set by gateway for webhook requests.",
     )
+    stream: bool = Field(
+        default=False,
+        description=(
+            "Request a streamed reply via POST /forward/stream instead of the "
+            "blocking JSON response. Only honored on /forward/stream; ignored "
+            "on /forward. Requires an OpenAI-compat target (chat_path contains "
+            "'chat/completions')."
+        ),
+    )
 
     @field_validator("content")
     @classmethod

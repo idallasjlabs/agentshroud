@@ -7,16 +7,19 @@ Core message forwarding endpoints:
 - /forward - Main ingest endpoint for content forwarding
 """
 
+import json
 import logging
 import os
+import re
 import smtplib
 import subprocess
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Annotated
+from typing import Annotated, AsyncIterator, Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Request, status
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, StreamingResponse
 from pydantic import BaseModel, Field
 
 from ...proxy.webhook_receiver import WebhookReceiver
@@ -24,6 +27,7 @@ from ..auth import create_auth_dependency
 from ..email_service import GatewayEmailService
 from ..event_bus import make_event
 from ..models import (
+    AgentTarget,
     ApprovalRequest,
     EmailSendRequest,
     EmailSendResponse,
@@ -325,14 +329,66 @@ async def email_send_owner(request: OwnerEmailRequest, req: Request, auth: AuthR
     return await email_send(inner, req, auth)
 
 
-@router.post("/forward", response_model=ForwardResponse, status_code=status.HTTP_201_CREATED)
-async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequired):
-    """Main ingest endpoint
+def _resolve_user_trust_level(pipeline, target: AgentTarget, request: ForwardRequest) -> str:
+    """Resolve the outbound trust level for `request`, shared by the blocking
+    and streaming forward paths so both apply identical redaction behavior.
 
-    Receives data from iOS Shortcuts, browser extension, or API.
-    Sanitizes PII, logs to ledger, and forwards to agent.
+    Security: request.user_id is trusted here because /forward (and
+    /forward/stream) require gateway auth (AuthRequired) and the user_id
+    field is set by the authenticated bot/voice-gateway, not by an
+    untrusted end user. FULL trust still keeps credential:False
+    (outbound_filter.py:96) and block_credentials() still runs downstream
+    of every caller, so raw secrets are never delivered regardless of
+    trust level.
+    """
+    user_trust_level = "UNTRUSTED"
+    if pipeline.trust_manager:
+        trust_info = pipeline.trust_manager.get_trust(target.name)
+        if trust_info:
+            trust_score = trust_info[0]
+            if trust_score >= 400:
+                user_trust_level = "FULL"
+            elif trust_score >= 300:
+                user_trust_level = "ELEVATED"
+            elif trust_score >= 200:
+                user_trust_level = "STANDARD"
+            elif trust_score >= 100:
+                user_trust_level = "BASIC"
 
-    Authentication required.
+    # Owner-authenticated requests (voice admin interface, owner DMs, API calls
+    # carrying the owner's user_id) receive FULL trust so operational detail
+    # such as hostnames and ports is spoken/shown rather than redacted.
+    if user_trust_level != "FULL":
+        _owner_uid = getattr(pipeline, "_owner_user_id", None)
+        if _owner_uid and str(getattr(request, "user_id", "") or "") == str(_owner_uid):
+            user_trust_level = "FULL"
+    return user_trust_level
+
+
+@dataclass
+class _InboundResult:
+    """Everything the post-routing forwarding steps (blocking or streaming)
+    need, once inbound target resolution + security processing has run."""
+
+    target: AgentTarget
+    sanitized_content: str
+    sanitized: bool
+    entity_types_found: list
+    redaction_count: int
+    audit_entry_id: str
+    audit_hash: str
+    prompt_score: float
+    early_response: Optional[JSONResponse] = None
+    """Set (non-None) when the pipeline queued the request for approval —
+    the caller MUST return this immediately and skip forwarding."""
+
+
+async def _process_inbound(request: ForwardRequest, req: Request) -> _InboundResult:
+    """Target resolution + P1 middleware + inbound security pipeline —
+    shared by the blocking `/forward` and streaming `/forward/stream` routes
+    so both get identical routing/anti-spoof/PII/audit behavior. Pure
+    extraction from the original single-endpoint `forward_content` body;
+    do not change behavior here without updating both callers' tests.
     """
     logger.info(
         f"Ingest request: source={request.source}, "
@@ -473,12 +529,22 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
                 detail=f"Request blocked: {pipeline_result.block_reason}",
             )
         if pipeline_result.queued_for_approval:
-            return JSONResponse(
-                status_code=status.HTTP_202_ACCEPTED,
-                content={
-                    "status": "queued",
-                    "approval_id": pipeline_result.approval_id,
-                },
+            return _InboundResult(
+                target=target,
+                sanitized_content="",
+                sanitized=False,
+                entity_types_found=[],
+                redaction_count=0,
+                audit_entry_id="",
+                audit_hash="",
+                prompt_score=0.0,
+                early_response=JSONResponse(
+                    status_code=status.HTTP_202_ACCEPTED,
+                    content={
+                        "status": "queued",
+                        "approval_id": pipeline_result.approval_id,
+                    },
+                ),
             )
         sanitized_content = pipeline_result.sanitized_message
         sanitized = pipeline_result.pii_redaction_count > 0
@@ -501,8 +567,48 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
         sanitized = len(sanitization_result.redactions) > 0
         entity_types_found = sanitization_result.entity_types_found
         redaction_count = len(sanitization_result.redactions)
+        audit_entry_id = ""
+        audit_hash = ""
+        prompt_score = 0.0
+
+    return _InboundResult(
+        target=target,
+        sanitized_content=sanitized_content,
+        sanitized=sanitized,
+        entity_types_found=entity_types_found,
+        redaction_count=redaction_count,
+        audit_entry_id=audit_entry_id,
+        audit_hash=audit_hash,
+        prompt_score=prompt_score,
+    )
+
+
+@router.post("/forward", response_model=ForwardResponse, status_code=status.HTTP_201_CREATED)
+async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequired):
+    """Main ingest endpoint
+
+    Receives data from iOS Shortcuts, browser extension, or API.
+    Sanitizes PII, logs to ledger, and forwards to agent.
+
+    Authentication required.
+    """
+    inbound = await _process_inbound(request, req)
+    if inbound.early_response is not None:
+        return inbound.early_response
+    target = inbound.target
+    sanitized_content = inbound.sanitized_content
+    sanitized = inbound.sanitized
+    entity_types_found = inbound.entity_types_found
+    redaction_count = inbound.redaction_count
+    audit_entry_id = inbound.audit_entry_id
+    audit_hash = inbound.audit_hash
+    prompt_score = inbound.prompt_score
 
     # Step 2 (routing target already resolved above)
+    # Re-fetch pipeline here — _process_inbound() uses its own local reference
+    # for inbound processing; the outbound-filtering step below (Step 5) needs
+    # the same object. getattr is cheap/side-effect-free, safe to call twice.
+    pipeline = getattr(app_state, "pipeline", None)
 
     # Step 3: Forward to agent
     forwarded_to = target.name
@@ -590,35 +696,7 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
     if agent_response:
         # Step 5.0: Filter out Claude XML internal blocks and run outbound PII scan
         if pipeline:
-            # Get user trust level for outbound filtering
-            user_trust_level = "UNTRUSTED"
-            if pipeline.trust_manager:
-                trust_info = pipeline.trust_manager.get_trust(target.name)
-                if trust_info:
-                    trust_score = trust_info[0]
-                    if trust_score >= 400:
-                        user_trust_level = "FULL"
-                    elif trust_score >= 300:
-                        user_trust_level = "ELEVATED"
-                    elif trust_score >= 200:
-                        user_trust_level = "STANDARD"
-                    elif trust_score >= 100:
-                        user_trust_level = "BASIC"
-
-            # Owner-authenticated requests (voice admin interface, owner DMs, API calls
-            # carrying the owner's user_id) receive FULL trust so operational detail
-            # such as hostnames and ports is spoken/shown rather than redacted.
-            #
-            # Security: request.user_id is trusted here because /forward requires
-            # gateway auth (AuthRequired) and the user_id field is set by the
-            # authenticated bot/voice-gateway, not by an untrusted end user.
-            # FULL trust still keeps credential: False (outbound_filter.py:96) and
-            # block_credentials() still runs below (forward.py:590), so raw secrets
-            # are never delivered regardless of trust level.
-            if user_trust_level != "FULL":
-                _owner_uid = getattr(pipeline, "_owner_user_id", None)
-                if _owner_uid and str(getattr(request, "user_id", "") or "") == str(_owner_uid):
-                    user_trust_level = "FULL"
+            user_trust_level = _resolve_user_trust_level(pipeline, target, request)
 
             # agent_response may be dict (non-OpenAI targets) or str (OpenAI);
             # process_outbound expects str, so coerce to avoid AttributeError.
@@ -678,3 +756,211 @@ async def forward_content(request: ForwardRequest, req: Request, auth: AuthRequi
         response_data["agent_response"] = blocked_response
 
     return response_data
+
+
+# ── /forward/stream — streaming voice pipeline ──────────────────────────────
+# Lets voice_gateway start TTS on the FIRST sentence of an agent reply instead
+# of waiting for the entire response. Security parity with the blocking
+# /forward path is maintained by running the SAME process_outbound() +
+# block_credentials() checks — just per sliding sentence-window instead of
+# once on the complete text. See SCRUM ticket / owner conversation 2026-08-06
+# for why: voice was "nearly unusable" waiting for full-response generation
+# before any audio began.
+
+_SENTENCE_BOUNDARY_RE = re.compile(r"(?<=[.!?])\s+")
+# A control-picture character, not valid in normal spoken text — used to mark
+# the join point between the two sentences in a filter window so the result
+# can be split back apart after process_outbound() has run on the combined
+# text (giving the filter cross-sentence context without losing the ability
+# to release only the OLDER half of the window).
+_WINDOW_SENTINEL = "␞"
+
+
+async def _sentences_from_deltas(deltas: AsyncIterator[str]) -> AsyncIterator[str]:
+    """Buffer streamed text deltas and yield each complete sentence as soon as
+    its boundary is crossed. Any trailing fragment with no terminal
+    punctuation is flushed once the delta stream ends."""
+    buf = ""
+    async for delta in deltas:
+        buf += delta
+        parts = _SENTENCE_BOUNDARY_RE.split(buf)
+        for complete in parts[:-1]:
+            complete = complete.strip()
+            if complete:
+                yield complete
+        buf = parts[-1]
+    tail = buf.strip()
+    if tail:
+        yield tail
+
+
+async def _filtered_sentence_stream(
+    sentences: AsyncIterator[str],
+    pipeline,
+    agent_id: str,
+    user_trust_level: str,
+    source: str,
+) -> AsyncIterator[str]:
+    """2-sentence sliding window over `sentences`: each window (previous +
+    current, joined by a sentinel) is filtered through process_outbound()
+    together — giving the filter context to catch patterns split across a
+    naive sentence boundary — then the sentinel is used to split the
+    (possibly redacted) result back apart, releasing only the older half.
+    The final buffered sentence is filtered and flushed alone once the
+    source stream ends. Blocked windows yield nothing for that window.
+    """
+    pending: Optional[str] = None
+    async for sentence in sentences:
+        if pending is None:
+            pending = sentence
+            continue
+        window = f"{pending}{_WINDOW_SENTINEL}{sentence}"
+        result = await pipeline.process_outbound(
+            response=window,
+            agent_id=agent_id,
+            user_trust_level=user_trust_level,
+            source=source,
+        )
+        if result.blocked:
+            logger.warning("Streamed sentence window blocked: %s", result.block_reason)
+            pending = sentence
+            continue
+        filtered = result.sanitized_message
+        if _WINDOW_SENTINEL in filtered:
+            released, pending = filtered.split(_WINDOW_SENTINEL, 1)
+        else:
+            # Filtering altered/stripped the sentinel (shouldn't normally
+            # happen) — fail safe by releasing everything the filter already
+            # approved rather than silently dropping it.
+            released, pending = filtered, ""
+        released = released.strip()
+        if released:
+            yield released
+    if pending:
+        result = await pipeline.process_outbound(
+            response=pending,
+            agent_id=agent_id,
+            user_trust_level=user_trust_level,
+            source=source,
+        )
+        if result.blocked:
+            logger.warning("Final streamed sentence blocked: %s", result.block_reason)
+            return
+        final = result.sanitized_message.strip()
+        if final:
+            yield final
+
+
+@router.post("/forward/stream")
+async def forward_content_stream(request: ForwardRequest, req: Request, auth: AuthRequired):
+    """Streaming variant of /forward for OpenAI-compat agents (Hermes).
+
+    Same inbound routing/anti-spoof/PII/audit processing as /forward
+    (_process_inbound), but instead of blocking for the complete agent
+    reply, relays Hermes's real token stream and releases each sentence
+    (through the same security filters, per sliding window) as soon as it
+    is ready — so voice_gateway can start TTS immediately instead of
+    waiting for the whole response to finish generating.
+
+    Response is `text/event-stream`: one `data: {"sentence": "..."}` event
+    per released sentence, followed by a single terminal `data: {"done":
+    true, ...ledger fields...}` event. Not used by non-voice callers
+    (Telegram, Shortcuts, etc.) — they keep using /forward.
+    """
+    inbound = await _process_inbound(request, req)
+    if inbound.early_response is not None:
+        return inbound.early_response
+    target = inbound.target
+    sanitized_content = inbound.sanitized_content
+
+    if "chat/completions" not in target.chat_path:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"Agent {target.name} does not support streaming",
+        )
+
+    pipeline = getattr(app_state, "pipeline", None)
+    if pipeline is None:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Streaming requires the security pipeline; none is configured",
+        )
+    user_trust_level = _resolve_user_trust_level(pipeline, target, request)
+
+    async def _event_stream() -> AsyncIterator[bytes]:
+        forwarded_to = target.name
+        assembled: list[str] = []
+        try:
+            deltas = app_state.router.forward_to_agent_stream(
+                target=target,
+                sanitized_content=sanitized_content,
+                ledger_id="pending",
+                metadata={
+                    "source": request.source,
+                    "content_type": request.content_type,
+                    **request.metadata,
+                },
+            )
+            sentences = _sentences_from_deltas(deltas)
+            filtered = _filtered_sentence_stream(
+                sentences, pipeline, target.name, user_trust_level, request.source
+            )
+            async for sentence in filtered:
+                # Step 5.1 parity with /forward: block raw credentials even
+                # from an otherwise-approved sentence.
+                blocked_sentence, was_blocked = await app_state.sanitizer.block_credentials(
+                    content=sentence, source=request.source
+                )
+                if was_blocked:
+                    logger.warning(
+                        f"Blocked credential display (streamed) from source={request.source}"
+                    )
+                    continue
+                assembled.append(blocked_sentence)
+                yield b"data: " + json.dumps({"sentence": blocked_sentence}).encode() + b"\n\n"
+        except ForwardError as e:
+            logger.warning(f"Streaming forward failed: {e}. Content logged but not delivered.")
+            forwarded_to = f"{target.name} (offline)"
+        except Exception as exc:
+            logger.error(f"Unhandled error in streaming forward: {exc}", exc_info=True)
+            forwarded_to = f"{target.name} (error)"
+
+        full_text = " ".join(assembled)
+        try:
+            ledger_entry = await app_state.ledger.record(
+                source=request.source,
+                content=sanitized_content,
+                original_content=request.content,
+                sanitized=False,
+                redaction_count=0,
+                redaction_types=[],
+                forwarded_to=forwarded_to,
+                content_type=request.content_type,
+                metadata=request.metadata,
+            )
+        except Exception as e:
+            logger.error(f"Ledger recording failed: {e}")
+            ledger_entry = None
+
+        await app_state.event_bus.emit(
+            make_event(
+                "forward",
+                f"Content forwarded from {request.source} to {forwarded_to}",
+                {
+                    "source": request.source,
+                    "content_type": request.content_type,
+                    "forwarded_to": forwarded_to,
+                },
+                "info",
+            )
+        )
+
+        done_event = {
+            "done": True,
+            "id": ledger_entry.id if ledger_entry else "ledger-unavailable",
+            "forwarded_to": forwarded_to,
+            "agent_response": full_text,
+        }
+        yield b"data: " + json.dumps(done_event).encode() + b"\n\n"
+
+    return StreamingResponse(_event_stream(), media_type="text/event-stream")

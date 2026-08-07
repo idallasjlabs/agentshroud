@@ -138,6 +138,117 @@ def gemini_to_openai_request(body: dict, target_model: str) -> dict:
 # ---------------------------------------------------------------------------
 
 
+def _openai_content_to_parts(content: str | list) -> list[dict]:
+    """Flatten an OpenAI message's content (string or content-block list) to
+    Gemini parts (text only — image/tool blocks are dropped with a warning,
+    same scope limit as gemini_failover_unsupported_reason: text-only)."""
+    if isinstance(content, str):
+        return [{"text": content}] if content else []
+    parts: list[dict] = []
+    for block in content or []:
+        if isinstance(block, dict) and block.get("type") == "text":
+            parts.append({"text": block.get("text", "")})
+        elif isinstance(block, dict):
+            logger.warning(
+                "openai_to_gemini: unsupported content block type %r — skipping",
+                block.get("type"),
+            )
+    return parts
+
+
+_OPENAI_ROLE_TO_GEMINI: dict[str, str] = {
+    "user": "user",
+    "assistant": "model",
+}
+
+
+def openai_to_gemini_request(body: dict) -> dict:
+    """Translate an OpenAI chat/completions request body to Gemini's
+    generateContent shape.
+
+    Inverse of gemini_to_openai_request — used for the "use Gemini" direct
+    voice path (gateway/proxy/llm_proxy.py): a caller speaking OpenAI's
+    format wants a real Gemini reply. Text-only, non-streaming (matches this
+    module's existing scope limit); system messages become systemInstruction,
+    "assistant" turns become Gemini's "model" role. No target_model param —
+    unlike OpenAI/Anthropic, Gemini's REST API takes the model from the URL
+    path (/v1beta/models/{model}:generateContent), not the request body; the
+    caller builds that path from the original model name.
+    """
+    contents: list[dict] = []
+    system_parts: list[str] = []
+
+    for message in body.get("messages") or []:
+        if not isinstance(message, dict):
+            continue
+        role = message.get("role", "user")
+        if role == "system":
+            text = message.get("content", "")
+            if isinstance(text, str) and text:
+                system_parts.append(text)
+            continue
+        gemini_role = _OPENAI_ROLE_TO_GEMINI.get(role, "user")
+        contents.append(
+            {"role": gemini_role, "parts": _openai_content_to_parts(message.get("content", ""))}
+        )
+
+    gemini_req: dict = {"contents": contents}
+    if system_parts:
+        gemini_req["systemInstruction"] = {"parts": [{"text": "\n".join(system_parts)}]}
+
+    gen_cfg: dict = {}
+    if "max_tokens" in body:
+        gen_cfg["maxOutputTokens"] = body["max_tokens"]
+    if "temperature" in body:
+        gen_cfg["temperature"] = body["temperature"]
+    if "top_p" in body:
+        gen_cfg["topP"] = body["top_p"]
+    if "stop" in body:
+        stop = body["stop"]
+        gen_cfg["stopSequences"] = stop if isinstance(stop, list) else [stop]
+    if gen_cfg:
+        gemini_req["generationConfig"] = gen_cfg
+
+    return gemini_req
+
+
+def gemini_to_openai_response(gemini_resp: dict, original_model: str) -> dict:
+    """Translate a Gemini generateContent response to OpenAI chat/completions
+    shape.
+
+    Inverse of openai_to_gemini_response. original_model is echoed back in
+    the "model" field so the caller's own model-name bookkeeping (e.g.
+    voice_gateway logging which model answered) stays consistent.
+    """
+    candidates = gemini_resp.get("candidates") or []
+    candidate = candidates[0] if candidates and isinstance(candidates[0], dict) else {}
+    text = _parts_to_text((candidate.get("content") or {}).get("parts"))
+    finish_reason_gemini = candidate.get("finishReason", "STOP")
+    finish_reason = "stop" if finish_reason_gemini == "STOP" else "length"
+
+    usage = gemini_resp.get("usageMetadata") or {}
+    prompt_tokens = usage.get("promptTokenCount", 0)
+    completion_tokens = usage.get("candidatesTokenCount", 0)
+
+    return {
+        "id": "gemini-" + str(abs(hash(text)))[:12],
+        "object": "chat.completion",
+        "model": original_model,
+        "choices": [
+            {
+                "index": 0,
+                "message": {"role": "assistant", "content": text},
+                "finish_reason": finish_reason,
+            }
+        ],
+        "usage": {
+            "prompt_tokens": prompt_tokens,
+            "completion_tokens": completion_tokens,
+            "total_tokens": prompt_tokens + completion_tokens,
+        },
+    }
+
+
 def openai_to_gemini_response(openai_resp: dict) -> dict:
     """Translate an Ollama OpenAI-compat response to Gemini candidates format.
 

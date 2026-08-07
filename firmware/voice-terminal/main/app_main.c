@@ -451,15 +451,29 @@ static void _on_tts_pcm(const uint8_t *pcm, size_t len, void *ctx)
     }
 }
 
+/* Holds the display label for a server-side spoken model/agent switch
+ * ("use Claude" / "tell Hermes" — voice_gateway/server.py's
+ * _parse_model_switch_command). ui_face_set_agent()'s contract requires a
+ * pointer that "stays valid forever" (it's queued through lv_async_call and
+ * read later on the LVGL task) — VT_AGENTS entries satisfy that by being
+ * static const; this buffer satisfies it by being static and outliving any
+ * single _on_ws_ctrl call, unlike the cJSON-parsed string it's copied from
+ * (freed immediately after this callback returns). */
+static char s_spoken_agent_label[32];
+
 /* Server control frames — spoken commands intercepted server-side.
  * Runs in websocket_task context; audio_set_volume's NVS commit is a few ms
  * (the TTS pre-buffer absorbs far more), everything else is non-blocking. */
-static void _on_ws_ctrl(const char *cmd, int value, void *ctx)
+static void _on_ws_ctrl(const char *cmd, int value, const char *str_value, void *ctx)
 {
     (void)ctx;
     if (strcmp(cmd, "set_volume") == 0) {
         audio_set_volume(value);
         vt_remote_log("volume set to %d%% (spoken command)", value);
+    } else if (strcmp(cmd, "set_agent_label") == 0 && str_value) {
+        snprintf(s_spoken_agent_label, sizeof(s_spoken_agent_label), "%s", str_value);
+        ui_face_set_agent(s_spoken_agent_label);
+        vt_remote_log("agent label → %s (spoken command)", s_spoken_agent_label);
     } else {
         vt_remote_log("unknown ctrl cmd %.24s (value=%d) — ignored", cmd, value);
     }

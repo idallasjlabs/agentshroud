@@ -32,6 +32,8 @@ from gateway.proxy.anthropic_openai_translator import (
 from gateway.proxy.gemini_openai_translator import (
     gemini_failover_unsupported_reason,
     gemini_to_openai_request,
+    gemini_to_openai_response,
+    openai_to_gemini_request,
     openai_to_gemini_response,
 )
 from gateway.proxy.llm_quota_detector import (
@@ -585,6 +587,42 @@ class LLMProxy:
             except Exception as e:
                 logger.warning("Claude-via-OpenAI-path translation failed: %s", e)
                 _claude_translation = False
+
+        # "use Gemini" direct voice path (voice_gateway/server.py): a caller
+        # speaking OpenAI's chat/completions format wants a real Gemini
+        # reply. Mirrors the Claude-translation branch above: rewrite path to
+        # Gemini's generateContent endpoint, translate the body, substitute
+        # the gateway's own Google API key, translate the response back to
+        # OpenAI shape on the way out (see _gemini_translation below).
+        _gemini_translation = False
+        if is_openai and model_name and "gemini" in model_name.lower() and request_data:
+            try:
+                gem_body = openai_to_gemini_request(request_data)
+                body = json.dumps(gem_body).encode()
+                request_data = gem_body
+                path = f"/v1beta/models/{model_name}:generateContent"
+                is_openai = False
+                is_google = True
+                _gemini_translation = True
+                headers = dict(headers)
+                try:
+                    with open("/run/secrets/google_api_key") as _f:
+                        _gw_google_key = _f.read().strip()
+                except Exception:
+                    _gw_google_key = ""
+                if _gw_google_key:
+                    headers["x-goog-api-key"] = _gw_google_key
+                    headers.pop("authorization", None)
+                    headers.pop("Authorization", None)
+                logger.info(
+                    "Gemini-via-OpenAI-path: rewrote /v1/chat/completions → "
+                    "generateContent for model %s",
+                    model_name,
+                )
+            except Exception as e:
+                logger.warning("Gemini-via-OpenAI-path translation failed: %s", e)
+                _gemini_translation = False
+
         local_keywords = [
             "qwen",
             "llama",
@@ -651,6 +689,24 @@ class LLMProxy:
                     body = json.dumps(request_data).encode()
         elif is_openai:
             base_url = OPENAI_API_BASE
+            # Same gap the Claude-translation branch above exists to close:
+            # callers of this plain (non-Claude, non-Gemini, non-local)
+            # OpenAI path arrive with the GATEWAY's own internal auth token
+            # (e.g. voice_gateway's "use ChatGPT" direct path sends
+            # Authorization: Bearer <gateway token>), which OpenAI correctly
+            # rejects with 401 — this proxy exists specifically so callers
+            # never need their own real provider key. Substitute it here,
+            # same secret-file convention as anthropic_oauth_token/google_api_key.
+            headers = dict(headers)
+            try:
+                with open("/run/secrets/openai_api_key") as _f:
+                    _gw_openai_key = _f.read().strip()
+            except Exception:
+                _gw_openai_key = ""
+            if _gw_openai_key:
+                headers["authorization"] = f"Bearer {_gw_openai_key}"
+                headers.pop("Authorization", None)
+                headers.pop("x-api-key", None)
         elif is_google:
             base_url = GOOGLE_API_BASE
 
@@ -784,6 +840,17 @@ class LLMProxy:
                 resp_headers = {**resp_headers, "content-type": "application/json"}
             except Exception as e:
                 logger.warning("Claude→OpenAI response translation failed: %s", e)
+
+        # Translate Gemini response → OpenAI shape if we did the inbound flip
+        if _gemini_translation and status == 200 and resp_body:
+            try:
+                gem_resp = json.loads(resp_body)
+                resp_body = json.dumps(
+                    gemini_to_openai_response(gem_resp, original_model=_original_model_name)
+                ).encode()
+                resp_headers = {**resp_headers, "content-type": "application/json"}
+            except Exception as e:
+                logger.warning("Gemini→OpenAI response translation failed: %s", e)
 
         # === OUTBOUND FILTERING ===
         if not is_streaming and status == 200 and resp_body:

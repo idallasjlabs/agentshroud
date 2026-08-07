@@ -11,8 +11,10 @@ Handles graceful degradation when agents are offline.
 """
 
 
+import json
 import logging
 import os
+from collections.abc import AsyncIterator
 from datetime import datetime
 from typing import Any
 from zoneinfo import ZoneInfo
@@ -147,27 +149,18 @@ class MultiAgentRouter:
         logger.debug(f"Routing to default target: {self.config.default_target}")
         return default_target
 
-    async def forward_to_agent(
+    def _build_forward_payload(
         self,
         target: AgentTarget,
         sanitized_content: str,
         ledger_id: str,
         metadata: dict[str, Any],
-    ) -> dict:
-        """Forward sanitized content to agent via HTTP POST
-
-        Args:
-            target: Agent target to forward to
-            sanitized_content: PII-redacted content
-            ledger_id: Ledger entry UUID for tracing
-            metadata: Original request metadata
-
-        Returns:
-            Agent's response as dict
-
-        Raises:
-            ForwardError: If forwarding fails
-        """
+        *,
+        stream: bool = False,
+    ) -> dict[str, Any]:
+        """Build the outbound payload for `target`, shared by the blocking and
+        streaming forward paths so both stay in lock-step (same model,
+        same date/time injection, same metadata) — only `stream` differs."""
         # OpenAI-compatible endpoints (chat/completions) expect a different payload
         # shape than the gateway's custom format.  The hermes agent exposes such
         # an endpoint; detect by path rather than by name so any future OpenAI-
@@ -190,6 +183,8 @@ class MultiAgentRouter:
                 ],
                 "metadata": metadata,
             }
+            if stream:
+                payload["stream"] = True
         else:
             payload = {
                 "content": sanitized_content,
@@ -198,6 +193,30 @@ class MultiAgentRouter:
                 "content_type": metadata.get("content_type", "text"),
                 "metadata": metadata,
             }
+        return payload
+
+    async def forward_to_agent(
+        self,
+        target: AgentTarget,
+        sanitized_content: str,
+        ledger_id: str,
+        metadata: dict[str, Any],
+    ) -> dict:
+        """Forward sanitized content to agent via HTTP POST
+
+        Args:
+            target: Agent target to forward to
+            sanitized_content: PII-redacted content
+            ledger_id: Ledger entry UUID for tracing
+            metadata: Original request metadata
+
+        Returns:
+            Agent's response as dict
+
+        Raises:
+            ForwardError: If forwarding fails
+        """
+        payload = self._build_forward_payload(target, sanitized_content, ledger_id, metadata)
 
         headers: dict[str, str] = {}
         if target.api_key:
@@ -267,6 +286,108 @@ class MultiAgentRouter:
         except Exception as e:
             logger.error(f"Unexpected error forwarding to {target.name}: {e}")
             raise ForwardError(f"Failed to forward to {target.name}") from e
+
+    async def forward_to_agent_stream(
+        self,
+        target: AgentTarget,
+        sanitized_content: str,
+        ledger_id: str,
+        metadata: dict[str, Any],
+    ) -> AsyncIterator[str]:
+        """Stream sanitized content to an OpenAI-compatible agent, yielding text
+        deltas as they arrive.
+
+        Only meaningful for `chat/completions`-style targets (Hermes) — the
+        gateway's custom bot protocol has no streaming equivalent, so callers
+        must not use this for non-OpenAI-compat targets.
+
+        Yields:
+            Successive `delta.content` string fragments, in order.
+
+        Raises:
+            ForwardError: If the connection fails, the agent returns an error
+                status, or a stream line can't be parsed as valid SSE/JSON.
+        """
+        if "chat/completions" not in target.chat_path:
+            raise ForwardError(
+                f"Agent {target.name} has no streaming-compatible chat_path"
+            )
+
+        payload = self._build_forward_payload(
+            target, sanitized_content, ledger_id, metadata, stream=True
+        )
+        headers: dict[str, str] = {}
+        if target.api_key:
+            headers["Authorization"] = f"Bearer {target.api_key}"
+
+        logger.info(f"Streaming to {target.name} at {target.url} (ledger_id={ledger_id})")
+
+        _timeout = httpx.Timeout(connect=10.0, read=120.0, write=30.0, pool=10.0)
+        try:
+            async with httpx.AsyncClient(timeout=_timeout) as client:
+                async with client.stream(
+                    "POST",
+                    f"{target.url}{target.chat_path}",
+                    json=payload,
+                    headers=headers,
+                ) as response:
+                    response.raise_for_status()
+                    async for line in response.aiter_lines():
+                        if not line or not line.startswith("data:"):
+                            continue
+                        data_str = line[len("data:") :].strip()
+                        if data_str == "[DONE]":
+                            return
+                        try:
+                            chunk = json.loads(data_str)
+                        except json.JSONDecodeError as exc:
+                            raise ForwardError(
+                                f"Malformed SSE chunk from {target.name}: {exc}"
+                            ) from exc
+                        try:
+                            delta = chunk["choices"][0].get("delta", {})
+                        except (KeyError, IndexError, TypeError) as exc:
+                            # Not every SSE data line an agent emits is a
+                            # content delta — Hermes's own internal LLM
+                            # failover (credit-balance exhaustion, local-model
+                            # unavailability, etc.) can inject non-content
+                            # status frames mid-stream.  Treating those as
+                            # fatal killed the ENTIRE reply (live 2026-08-07:
+                            # "second request no response") even though later
+                            # chunks in the same stream carried real content.
+                            # Skip the one malformed line and keep streaming.
+                            logger.warning(
+                                f"Skipping malformed SSE chunk shape from "
+                                f"{target.name}: {exc}"
+                            )
+                            continue
+                        content = delta.get("content")
+                        if content:
+                            yield content
+
+        except httpx.ConnectError as e:
+            logger.warning(f"Agent {target.name} offline at {target.url}: {e}.")
+            raise ForwardError(f"Agent {target.name} offline. Content saved to ledger.") from e
+
+        except httpx.TimeoutException as e:
+            logger.error(f"Timeout streaming from {target.name}: {e}")
+            raise ForwardError(f"Timeout contacting agent {target.name}") from e
+
+        except httpx.HTTPStatusError as e:
+            logger.error(
+                f"HTTP error streaming from {target.name}: "
+                f"{e.response.status_code} - {e.response.text}"
+            )
+            raise ForwardError(
+                f"Agent {target.name} returned error: {e.response.status_code}"
+            ) from e
+
+        except ForwardError:
+            raise
+
+        except Exception as e:
+            logger.error(f"Unexpected error streaming from {target.name}: {e}")
+            raise ForwardError(f"Failed to stream from {target.name}") from e
 
     async def health_check(self, target: AgentTarget | None = None) -> dict[str, Any]:
         """Check health of one or all agent targets
