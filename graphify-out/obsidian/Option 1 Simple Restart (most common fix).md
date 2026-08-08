@@ -1,0 +1,17 @@
+---
+source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
+type: "document"
+community: "docs/vault"
+location: "L79"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/docs/vault
+---
+
+# Option 1: Simple Restart (most common fix)
+
+## Connections
+- [[Recovery Procedures]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/docs/vault
