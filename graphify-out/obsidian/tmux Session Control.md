@@ -1,18 +1,26 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
-type: "concept"
-community: "Module Group 485"
-location: "line 8"
+type: "document"
+community: "skills/openclaw"
+location: "L8"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_485
+  - community/skills/openclaw
 ---
 
 # tmux Session Control
 
 ## Connections
+- [[Claude Code Session Patterns]] - `contains` [EXTRACTED]
+- [[Common Commands_3]] - `contains` [EXTRACTED]
+- [[Example Sessions]] - `contains` [EXTRACTED]
+- [[Notes_7]] - `contains` [EXTRACTED]
 - [[OpenClaw tmux Skill]] - `describes` [EXTRACTED]
+- [[SKILL_170]] - `contains` [EXTRACTED]
+- [[Sending Input Safely]] - `contains` [EXTRACTED]
 - [[Text Control Center (text_control_center.py)]] - `integrates_with` [INFERRED]
+- [[When NOT to Use_2]] - `contains` [EXTRACTED]
+- [[When to Use_3]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_485
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

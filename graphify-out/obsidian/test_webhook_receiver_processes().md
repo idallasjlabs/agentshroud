@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Webhook Receiver"
+community: "HTTP Forwarder"
 location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Webhook_Receiver
+  - community/HTTP_Forwarder
 ---
 
 # test_webhook_receiver_processes()
@@ -16,4 +16,4 @@ tags:
 - [[WebhookReceiver]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Webhook_Receiver
+#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder

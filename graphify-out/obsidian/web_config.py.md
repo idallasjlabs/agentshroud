@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "HTTP CONNECT Proxy & Egress"
+community: "Approval & FastAPI Ingest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_CONNECT_Proxy__Egress
+  - community/Approval__FastAPI_Ingest
 ---
 
 # web_config.py
@@ -19,4 +19,4 @@ tags:
 - [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_CONNECT_Proxy__Egress
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

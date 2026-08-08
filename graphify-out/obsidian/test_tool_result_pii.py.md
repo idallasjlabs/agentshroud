@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "Tool Result Sanitizer"
+community: "Security Module Middleware"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer
+  - community/Security_Module_Middleware
 ---
 
 # test_tool_result_pii.py
@@ -26,4 +26,4 @@ tags:
 - [[ToolResultPIIConfig]] - `imports` [EXTRACTED]
 - [[ToolResultSanitizer]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/Security_Module_Middleware

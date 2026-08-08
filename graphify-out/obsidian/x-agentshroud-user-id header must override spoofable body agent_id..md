@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "rationale"
-community: "Module Group 232"
+community: "Gateway Test Suite"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_232
+  - community/Gateway_Test_Suite
 ---
 
 # x-agentshroud-user-id header must override spoofable body agent_id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_header_user_id_overrides_body_agent_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_232
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

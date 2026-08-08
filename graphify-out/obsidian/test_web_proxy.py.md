@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "HTTP CONNECT Proxy & Egress"
+community: "Egress Domain Allowlist"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_CONNECT_Proxy__Egress
+  - community/Egress_Domain_Allowlist
 ---
 
 # test_web_proxy.py
@@ -36,8 +36,8 @@ tags:
 - [[WebProxy_1]] - `imports` [EXTRACTED]
 - [[WebProxyConfig]] - `imports` [EXTRACTED]
 - [[audit_chain()]] - `contains` [EXTRACTED]
-- [[config()_3]] - `contains` [EXTRACTED]
+- [[config()_4]] - `contains` [EXTRACTED]
 - [[passthrough_proxy()_1]] - `contains` [EXTRACTED]
 - [[proxy()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_CONNECT_Proxy__Egress
+#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "Module Group 61"
-location: "L228"
+community: "Gateway Test Suite"
+location: "L277"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_61
+  - community/Gateway_Test_Suite
 ---
 
 # test_timing_attack_resistance()
@@ -16,4 +16,4 @@ tags:
 - [[test_security.py]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_61
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

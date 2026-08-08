@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "Version Routes & Manager Tools"
+community: "Gateway Test Suite"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Version_Routes__Manager_Tools
+  - community/Gateway_Test_Suite
 ---
 
 # upgrade()
@@ -21,14 +21,15 @@ tags:
 - [[.test_successful_downgrade()]] - `calls` [EXTRACTED]
 - [[.test_successful_rollback()]] - `calls` [EXTRACTED]
 - [[.test_successful_upgrade()]] - `calls` [EXTRACTED]
-- [[Any_66]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[Upgrade OpenClaw to a target version.      Requires a prior security review and]] - `rationale_for` [EXTRACTED]
 - [[_get_db()]] - `calls` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]
 - [[check_current_version()]] - `calls` [EXTRACTED]
 - [[security_review()]] - `calls` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `imports` [EXTRACTED]
+- [[upgrade_bot()_1]] - `semantically_similar_to` [INFERRED]
 - [[upgrade_version()]] - `calls` [EXTRACTED]
 - [[version_routes.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Version_Routes__Manager_Tools
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

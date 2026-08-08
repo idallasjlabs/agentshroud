@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_integrity.py"
 type: "code"
-community: "Module Group 122"
-location: "L83"
+community: "Gateway Test Suite"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_122
+  - community/Gateway_Test_Suite
 ---
 
 # test_vuln_stale_report_scores_1()
@@ -17,4 +17,4 @@ tags:
 - [[_score_vulnerability_management()]] - `calls` [EXTRACTED]
 - [[test_scorecard_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_122
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

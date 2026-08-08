@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Progressive Trust Levels"
+community: "HTTP Forwarder"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Levels
+  - community/HTTP_Forwarder
 ---
 
 # trust_manager()
 
 ## Connections
 - [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Levels
+#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder

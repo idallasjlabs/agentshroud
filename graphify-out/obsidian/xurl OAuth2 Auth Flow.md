@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "concept"
-community: "Module Group 555"
+community: "skills/openclaw"
 location: "line 88-99"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_555
+  - community/skills/openclaw
 ---
 
 # xurl OAuth2 Auth Flow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw xurl Skill]] - `uses` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_555
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

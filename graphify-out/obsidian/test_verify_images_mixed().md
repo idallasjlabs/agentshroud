@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_image_verifier.py"
 type: "code"
-community: "Module Group 253"
+community: "Gateway Test Suite"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_253
+  - community/Gateway_Test_Suite
 ---
 
 # test_verify_images_mixed()
@@ -16,4 +16,4 @@ tags:
 - [[verify_images()]] - `calls` [EXTRACTED]
 - [[verify_images one succeeds, one fails → results keyed by ref.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_253
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

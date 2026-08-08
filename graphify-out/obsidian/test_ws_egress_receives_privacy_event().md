@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "Dashboard Routes & WebSocket"
+community: "Gateway Test Suite"
 location: "L222"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Routes__WebSocket
+  - community/Gateway_Test_Suite
 ---
 
 # test_ws_egress_receives_privacy_event()
@@ -17,4 +17,4 @@ tags:
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Routes__WebSocket
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "Module Group 140"
-location: "L19"
+community: "Gateway Security Module"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_140
+  - community/Gateway_Security_Module
 ---
 
 # tracker()
@@ -15,4 +15,4 @@ tags:
 - [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_140
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

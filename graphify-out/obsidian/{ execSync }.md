@@ -1,12 +1,12 @@
 ---
-source_file: "skills/custom/icloud/scripts/calendar.js"
+source_file: "docker/config/hermes/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "Module Group 377"
+community: "Bot Skill Config"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_377
+  - community/Bot_Skill_Config
 ---
 
 # { execSync }
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[calendar.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_377
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

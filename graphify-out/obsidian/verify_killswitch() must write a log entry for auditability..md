@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "Module Group 98"
-location: "L316"
+community: "Gateway Test Suite"
+location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_98
+  - community/Gateway_Test_Suite
 ---
 
 # verify_killswitch() must write a log entry for auditability.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_verification_log_written()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_98
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

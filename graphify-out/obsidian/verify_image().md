@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/image_verifier.py"
 type: "code"
-community: "Module Group 253"
+community: "Gateway Test Suite"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_253
+  - community/Gateway_Test_Suite
 ---
 
 # verify_image()
@@ -21,4 +21,4 @@ tags:
 - [[test_image_verifier.py]] - `imports` [EXTRACTED]
 - [[verify_images()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_253
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

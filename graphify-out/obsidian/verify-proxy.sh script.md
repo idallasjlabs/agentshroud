@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "Module Group 380"
+community: "scripts/verify-proxy.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_380
+  - community/scripts/verify-proxysh
 ---
 
 # verify-proxy.sh script
@@ -19,4 +19,4 @@ tags:
 - [[run_quick()]] - `calls` [EXTRACTED]
 - [[verify-proxy.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_380
+#graphify/code #graphify/EXTRACTED #community/scripts/verify-proxysh

@@ -1,22 +1,22 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Module Group 241"
+community: ".mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_241
+  - community/mcpjson
 ---
 
 # xmind
 
 ## Connections
 - [[.mcp.json]] - `contains` [EXTRACTED]
-- [[opthomebrewbinnpx]] - `references` [EXTRACTED]
+- [[Usersijefferson.admin.nvmversionsnodev20.20.2binnpx]] - `references` [EXTRACTED]
 - [[PATH]] - `requires_env` [EXTRACTED]
 - [[autoOpenFile]] - `requires_env` [EXTRACTED]
 - [[outputPath]] - `requires_env` [EXTRACTED]
 - [[xmind-generator-mcp]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_241
+#graphify/code #graphify/EXTRACTED #community/mcpjson

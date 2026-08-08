@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "code"
-community: "Dashboard Routes & WebSocket"
+community: "Approval & FastAPI Ingest"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Routes__WebSocket
+  - community/Approval__FastAPI_Ingest
 ---
 
 # test_subscribe_receive_events()
@@ -16,4 +16,4 @@ tags:
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[test_event_bus.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Routes__WebSocket
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

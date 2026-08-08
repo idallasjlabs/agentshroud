@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Module Group 163"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_163
+  - community/Gateway_Security_Module
 ---
 
 # wazuh_client.py
 
 ## Connections
-- [[datetime_3]] - `imports_from` [EXTRACTED]
+- [[datetime_4]] - `imports_from` [EXTRACTED]
 - [[generate_summary()_3]] - `contains` [EXTRACTED]
 - [[get_fim_events()]] - `contains` [EXTRACTED]
 - [[get_rootkit_events()]] - `contains` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[read_alerts()_1]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_163
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

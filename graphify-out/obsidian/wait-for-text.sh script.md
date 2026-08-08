@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/scripts/wait-for-text.sh"
 type: "code"
-community: "Module Group 595"
+community: "skills/openclaw"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_595
+  - community/skills/openclaw
 ---
 
 # wait-for-text.sh script
@@ -15,4 +15,4 @@ tags:
 - [[usage()_7]] - `calls` [EXTRACTED]
 - [[wait-for-text.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_595
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

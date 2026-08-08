@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "rationale"
-community: "Module Group 328"
+community: "Gateway Proxy Layer"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_328
+  - community/Gateway_Proxy_Layer
 ---
 
 # urllib HTTPError carries the response body on .read(); fall back to str.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_err_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_328
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

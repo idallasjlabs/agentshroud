@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Module Group 162"
-location: "L28"
+community: "Tool Chain Analyzer"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_162
+  - community/Tool_Chain_Analyzer
 ---
 
 # tool_chain_analyzer()
@@ -16,4 +16,4 @@ tags:
 - [[ToolChainAnalyzer]] - `calls` [EXTRACTED]
 - [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_162
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer

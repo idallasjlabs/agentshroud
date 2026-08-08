@@ -1,19 +1,19 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "Module Group 379"
+community: "skills/openclaw"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_379
+  - community/skills/openclaw
 ---
 
 # write_gallery()
 
 ## Connections
-- [[Path_32]] - `references` [EXTRACTED]
+- [[Path_46]] - `references` [EXTRACTED]
 - [[gen.py]] - `contains` [EXTRACTED]
-- [[main()_11]] - `calls` [EXTRACTED]
+- [[main()_23]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_379
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

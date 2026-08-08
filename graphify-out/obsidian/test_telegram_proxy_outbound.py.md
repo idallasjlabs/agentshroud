@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Tool Result Sanitizer"
+community: "PII Sanitizer Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # test_telegram_proxy_outbound.py
@@ -17,6 +17,7 @@ tags:
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[TelegramAPIProxy]] - `imports` [EXTRACTED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `contains` [EXTRACTED]
+- [[TestDefaultBotId]] - `contains` [EXTRACTED]
 - [[TestDomainValidationHelper]] - `contains` [EXTRACTED]
 - [[TestEgressBannerRedactionNoOwnerNotice]] - `contains` [EXTRACTED]
 - [[TestEgressTargetExtraction]] - `contains` [EXTRACTED]
@@ -42,4 +43,4 @@ tags:
 - [[_make_sanitizer()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

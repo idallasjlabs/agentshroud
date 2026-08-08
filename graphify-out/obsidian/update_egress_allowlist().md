@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "Module Group 240"
-location: "L946"
+community: "Gateway Test Suite"
+location: "L951"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_240
+  - community/Gateway_Test_Suite
 ---
 
 # update_egress_allowlist()
@@ -19,4 +19,4 @@ tags:
 - [[management.py]] - `contains` [EXTRACTED]
 - [[set_egress_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_240
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

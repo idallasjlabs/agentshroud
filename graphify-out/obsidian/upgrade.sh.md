@@ -1,12 +1,12 @@
 ---
 source_file: "docker/upgrade.sh"
 type: "code"
-community: "Module Group 618"
+community: "docker/upgrade.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_618
+  - community/docker/upgradesh
 ---
 
 # upgrade.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upgrade.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_618
+#graphify/code #graphify/EXTRACTED #community/docker/upgradesh
