@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "Enhanced Approval Queue"
-location: "L261"
+community: "Gateway Test Suite"
+location: "L303"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/Gateway_Test_Suite
 ---
 
 # # NOTE: Called within _lock context
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[queue.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

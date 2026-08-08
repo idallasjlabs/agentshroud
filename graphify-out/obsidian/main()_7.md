@@ -1,22 +1,23 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "Module Group 212"
-location: "L435"
+community: "ESP32 Firmware"
+location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_212
+  - community/ESP32_Firmware
 ---
 
 # main()
 
 ## Connections
-- [[_print_summary()]] - `calls` [EXTRACTED]
-- [[_process_nvd_results()]] - `calls` [EXTRACTED]
-- [[append_to_hermes_registry()]] - `calls` [EXTRACTED]
-- [[append_to_registry()]] - `calls` [EXTRACTED]
-- [[fetch_nvd_cves()]] - `calls` [EXTRACTED]
-- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
+- [[test_clear_allows_fresh_tap()]] - `calls` [EXTRACTED]
+- [[test_ptt_finish_ends_listening()]] - `calls` [EXTRACTED]
+- [[test_ptt_finish_noop_when_idle()]] - `calls` [EXTRACTED]
+- [[test_ptt_state.c]] - `contains` [EXTRACTED]
+- [[test_push_frame_suppressed_while_triggered()]] - `calls` [EXTRACTED]
+- [[test_tap_in_idle_starts_listen()]] - `calls` [EXTRACTED]
+- [[test_vad_timeout_fires_without_audio()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_212
+#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware

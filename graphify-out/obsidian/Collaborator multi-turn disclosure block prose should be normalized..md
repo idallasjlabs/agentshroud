@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 678"
+community: "Gateway Test Suite"
 location: "L1023"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_678
+  - community/Gateway_Test_Suite
 ---
 
 # Collaborator multi-turn disclosure block prose should be normalized.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_multiturn_block_text_is_normalized_to_protected_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_678
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

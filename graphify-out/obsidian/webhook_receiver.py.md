@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "Session Manager & Webhook"
+community: "URL/Domain Validation Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__Webhook
+  - community/URL/Domain_Validation_Tests
 ---
 
 # webhook_receiver.py
@@ -17,4 +17,4 @@ tags:
 - [[WebhookReceiver]] - `contains` [EXTRACTED]
 - [[forward.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__Webhook
+#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

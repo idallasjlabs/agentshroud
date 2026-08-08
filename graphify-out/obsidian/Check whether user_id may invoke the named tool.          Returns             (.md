@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Progressive Trust Levels"
-location: "L230"
+community: "Progressive Trust Config"
+location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Levels
+  - community/Progressive_Trust_Config
 ---
 
 # Check whether user_id may invoke the named tool.          Returns:             (
 
 ## Connections
-- [[.can_use_tool()]] - `rationale_for` [EXTRACTED]
+- [[._can_use_tool_impl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Levels
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config

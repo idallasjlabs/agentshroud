@@ -1,25 +1,26 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Approval Queue Core"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_Core
+  - community/Gateway_Test_Suite
 ---
 
 # test_approval_queue.py
 
 ## Connections
-- [[ApprovalQueue]] - `imports` [EXTRACTED]
+- [[ApprovalQueue]] - `implements` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_2]] - `imports` [EXTRACTED]
+- [[ApprovalRequest]] - `imports` [EXTRACTED]
 - [[approval_queue()]] - `contains` [EXTRACTED]
 - [[queue_config()]] - `contains` [EXTRACTED]
 - [[test_broadcast_with_failed_client()]] - `contains` [EXTRACTED]
 - [[test_cleanup_decided_keeps_pending_items()]] - `contains` [EXTRACTED]
 - [[test_cleanup_decided_keeps_recent_decided_items()]] - `contains` [EXTRACTED]
+- [[test_cleanup_decided_persists_removal_to_disk()]] - `contains` [EXTRACTED]
 - [[test_cleanup_decided_removes_old_decided_items()]] - `contains` [EXTRACTED]
 - [[test_concurrent_decisions()]] - `contains` [EXTRACTED]
 - [[test_decide_already_decided()]] - `contains` [EXTRACTED]
@@ -31,6 +32,7 @@ tags:
 - [[test_get_item_nonexistent()]] - `contains` [EXTRACTED]
 - [[test_get_pending()]] - `contains` [EXTRACTED]
 - [[test_get_pending_excludes_decided()]] - `contains` [EXTRACTED]
+- [[test_persist_pending_store_writes_atomically()]] - `contains` [EXTRACTED]
 - [[test_request_expiration()]] - `contains` [EXTRACTED]
 - [[test_store_persists_submit_and_decision()]] - `contains` [EXTRACTED]
 - [[test_store_restores_items_on_init()]] - `contains` [EXTRACTED]
@@ -38,4 +40,4 @@ tags:
 - [[test_websocket_connect()]] - `contains` [EXTRACTED]
 - [[test_websocket_disconnect()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Core
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -369,10 +369,16 @@ RUN mkdir -p /usr/share/xml/scap/ssg/content
 COPY docker/scap-content/ssg-debian12-ds.xml /usr/share/xml/scap/ssg/content/
 
 # OCI Image labels
+# AGENTSHROUD_VERSION comes from docker/versions.env (via docker-compose.yml's
+# build.args) — kept in sync with gateway/__init__.py's __version__ by
+# scripts/sync-version.sh. Was hardcoded "1.0.0" and never updated past the
+# first release; read live by gateway/soc/services.py for the SOC dashboard's
+# service list, so a stale value here silently misreports every deploy since.
+ARG AGENTSHROUD_VERSION=dev
 LABEL org.opencontainers.image.title="AgentShroud Gateway"
 LABEL org.opencontainers.image.description="PII sanitization proxy for AgentShroud"
 LABEL org.opencontainers.image.vendor="AgentShroud"
-LABEL org.opencontainers.image.version="1.0.0"
+LABEL org.opencontainers.image.version="${AGENTSHROUD_VERSION}"
 LABEL org.opencontainers.image.source="https://github.com/idallasjlabs/agentshroud"
 
 # Prevent Python bytecode generation (read-only filesystem compatibility)

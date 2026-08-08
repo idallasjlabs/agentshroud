@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Module Group 338"
+community: "Gateway Test Suite"
 location: "L3679"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_338
+  - community/Gateway_Test_Suite
 ---
 
 # TestWebSearchLog
@@ -24,4 +24,4 @@ tags:
 - [[Tests for _trigger_web_search_log and raw web_search JSON outbound handling.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_338
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Middleware Coverage Tests"
+community: "Security Module Middleware"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Middleware_Coverage_Tests
+  - community/Security_Module_Middleware
 ---
 
 # _req()
@@ -34,11 +34,15 @@ tags:
 - [[.test_low_threat_allowed()]] - `calls` [EXTRACTED]
 - [[.test_message_dict_is_stringified_and_normalized()]] - `calls` [EXTRACTED]
 - [[.test_metadata_exception_non_blocking()]] - `calls` [EXTRACTED]
+- [[.test_mm_fixture_without_failed_guards_attr_is_safe()]] - `calls` [EXTRACTED]
 - [[.test_no_path_match_no_registration()]] - `calls` [EXTRACTED]
 - [[.test_non_owner_blocked()]] - `calls` [EXTRACTED]
+- [[.test_non_owner_blocked_when_critical_guard_failed()]] - `calls` [EXTRACTED]
+- [[.test_not_configured_guard_does_not_fail_closed()]] - `calls` [EXTRACTED]
 - [[.test_owner_allowed()]] - `calls` [EXTRACTED]
 - [[.test_owner_bypass()_1]] - `calls` [EXTRACTED]
 - [[.test_owner_bypass()_2]] - `calls` [EXTRACTED]
+- [[.test_owner_exempt_when_critical_guard_failed()]] - `calls` [EXTRACTED]
 - [[.test_plain_message_skips_check()]] - `calls` [EXTRACTED]
 - [[.test_rbac_denied()]] - `calls` [EXTRACTED]
 - [[.test_rbac_exception_fails_closed()]] - `calls` [EXTRACTED]
@@ -50,6 +54,7 @@ tags:
 - [[.test_tool_permission_requires_approval()]] - `calls` [EXTRACTED]
 - [[.test_tracker_exception_fails_closed()]] - `calls` [EXTRACTED]
 - [[_tool_req()]] - `calls` [EXTRACTED]
+- [[test_api_alerts_endpoint_emits_bus_event()]] - `calls` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Middleware_Coverage_Tests
+#graphify/code #graphify/EXTRACTED #community/Security_Module_Middleware

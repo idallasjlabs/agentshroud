@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "code"
-community: "Agent Isolation & Container Config"
-location: "L82"
+community: "Gateway Test Suite"
+location: "L79"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Agent_Isolation__Container_Config
+  - community/Gateway_Test_Suite
 ---
 
 # TestNetworkIsolation
@@ -21,4 +21,4 @@ tags:
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[test_agent_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Agent_Isolation__Container_Config
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Module Group 163"
+community: "Gateway Security Module"
 location: "L657"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_163
+  - community/Gateway_Security_Module
 ---
 
 # TestWazuhParser
@@ -21,4 +21,4 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_163
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

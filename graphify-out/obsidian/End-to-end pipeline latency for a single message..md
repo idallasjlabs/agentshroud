@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "Tool Result Sanitizer"
+community: "PII Sanitizer Pipeline"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # End-to-end pipeline latency for a single message.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFullPipelineLatency]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

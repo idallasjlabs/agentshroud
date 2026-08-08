@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 390"
+community: "Gateway Test Suite"
 location: "L4338"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_390
+  - community/Gateway_Test_Suite
 ---
 
 # Return a TelegramAPIProxy configured with a mock owner RBAC.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._make_owner_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_390
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

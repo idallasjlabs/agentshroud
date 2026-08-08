@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_hermes_cron_html_email.sh"
+source_file: "tests/startup_smoke/test_bot_boot_static.sh"
 type: "code"
-community: "Module Group 602"
-location: "L12"
+community: "tests/startup_smoke"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_602
+  - community/tests/startup_smoke
 ---
 
 # check()
 
 ## Connections
-- [[test_hermes_cron_html_email.sh]] - `defines` [EXTRACTED]
-- [[test_hermes_cron_html_email.sh script]] - `calls` [EXTRACTED]
+- [[test_bot_boot_static.sh]] - `defines` [EXTRACTED]
+- [[test_bot_boot_static.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_602
+#graphify/code #graphify/EXTRACTED #community/tests/startup_smoke

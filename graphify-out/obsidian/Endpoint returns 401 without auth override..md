@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "Module Group 321"
+community: "Gateway Test Suite"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_321
+  - community/Gateway_Test_Suite
 ---
 
 # Endpoint returns 401 without auth override.
 
 ## Connections
 - [[.test_requires_auth()]] - `rationale_for` [EXTRACTED]
+- [[.test_requires_auth()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_321
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

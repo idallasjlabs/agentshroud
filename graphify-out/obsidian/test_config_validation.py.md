@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Module Group 99"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_99
+  - community/Gateway_Test_Suite
 ---
 
 # test_config_validation.py
 
 ## Connections
 - [[ForwardRequest]] - `imports` [EXTRACTED]
-- [[RouterConfig]] - `imports` [EXTRACTED]
+- [[RouterConfig_1]] - `imports` [EXTRACTED]
 - [[TestAllExampleConfigsExist]] - `contains` [EXTRACTED]
 - [[TestConfigValidation]] - `contains` [EXTRACTED]
 - [[TestMinimalConfig]] - `contains` [EXTRACTED]
@@ -21,5 +21,6 @@ tags:
 - [[TestRecommendedConfig]] - `contains` [EXTRACTED]
 - [[_DropInvalidHTTPRequestFilter]] - `imports` [EXTRACTED]
 - [[_parse_env_file()]] - `contains` [EXTRACTED]
+- [[examples config files (minimalrecommendedparanoid .env + docker-compose)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_99
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

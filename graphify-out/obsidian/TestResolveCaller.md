@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "SOC Authentication"
+community: "Auth & Exception Types"
 location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Authentication
+  - community/Auth__Exception_Types
 ---
 
 # TestResolveCaller
@@ -27,4 +27,4 @@ tags:
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Authentication
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

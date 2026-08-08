@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "SOC Router Tests"
+community: "SOC RBAC & Auth"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router_Tests
+  - community/SOC_RBAC__Auth
 ---
 
 # test_soc_router_coverage.py
@@ -16,18 +16,23 @@ tags:
 - [[FakeAuditStore]] - `contains` [EXTRACTED]
 - [[FakeCaller]] - `contains` [EXTRACTED]
 - [[FakeGroup]] - `contains` [EXTRACTED]
+- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[Role_1]] - `imports` [EXTRACTED]
 - [[_Svc]] - `contains` [EXTRACTED]
 - [[_fake_contributor_manager()]] - `contains` [EXTRACTED]
 - [[_make_service_manager()]] - `contains` [EXTRACTED]
-- [[client()_12]] - `contains` [EXTRACTED]
+- [[client()_15]] - `contains` [EXTRACTED]
+- [[gatewaysocauth.py (get_caller)]] - `references` [EXTRACTED]
+- [[gatewaysocrouter.py (SCL REST endpoints)]] - `references` [EXTRACTED]
 - [[get_caller()]] - `imports` [EXTRACTED]
 - [[holder()]] - `contains` [EXTRACTED]
+- [[rbac_config.py (RBACConfig)]] - `references` [EXTRACTED]
 - [[state()]] - `contains` [EXTRACTED]
 - [[test_add_collaborator()]] - `contains` [EXTRACTED]
 - [[test_add_group_member_paths()]] - `contains` [EXTRACTED]
 - [[test_agent_cves_known_and_unknown()]] - `contains` [EXTRACTED]
 - [[test_agent_cves_registry_error()]] - `contains` [EXTRACTED]
+- [[test_agent_cves_reports_under_review()]] - `contains` [EXTRACTED]
 - [[test_approvals_approve_and_deny()]] - `contains` [EXTRACTED]
 - [[test_approvals_approve_raises()]] - `contains` [EXTRACTED]
 - [[test_approvals_missing_queue()]] - `contains` [EXTRACTED]
@@ -155,6 +160,7 @@ tags:
 - [[test_upgrade_bot_paths()]] - `contains` [EXTRACTED]
 - [[test_upgrade_gateway_paths()]] - `contains` [EXTRACTED]
 - [[test_upgrade_hermes_paths()]] - `contains` [EXTRACTED]
+- [[test_upgrade_hermes_restarts_the_real_container_name()]] - `contains` [EXTRACTED]
 - [[test_websocket_route_dispatch()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router_Tests
+#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth

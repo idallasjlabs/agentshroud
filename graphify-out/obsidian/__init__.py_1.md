@@ -1,14 +1,17 @@
 ---
-source_file: "gateway/approval_queue/__init__.py"
+source_file: "gateway/__init__.py"
 type: "code"
-community: "Module Group 768"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_768
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # __init__.py
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_768
+## Connections
+- [[AgentShroud Gateway OpenAPI Spec]] - `conceptually_related_to` [INFERRED]
+
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "SOC Router Tests"
-location: "L798"
+community: "SOC RBAC & Auth"
+location: "L812"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router_Tests
+  - community/SOC_RBAC__Auth
 ---
 
 # _fake_contributor_manager()
@@ -16,4 +16,4 @@ tags:
 - [[test_list_users()]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router_Tests
+#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "SSH Proxy & Gateway Config"
-location: "L307"
+community: "Approval Queue Tests"
+location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Approval_Queue_Tests
 ---
 
 # When require_approval=false, non-auto-approved commands execute directly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_non_auto_approved_executes_directly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSH_Proxy__Gateway_Config
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Tests

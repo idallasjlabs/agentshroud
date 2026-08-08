@@ -6,43 +6,45 @@
 Covers the two config-gated mitigations added to the voice /forward path:
 
   (1) MEASURE  — _record_turn_latency: emits a structured latency record and
-      flags outliers above a soft threshold; wired into _call_agent (success
-      path AND read-timeout path).
+      flags outliers above a soft threshold; wired into _call_agent_stream
+      (success path AND read-timeout path).
   (2) FIX      — _voice_forward_metadata: builds the ephemeral "no_memory" tag,
       DEFAULT OFF (empty metadata → forwarded request unchanged), ON only when
-      VG_VOICE_NO_MEMORY is enabled.  _call_agent attaches it to the /forward body.
+      VG_VOICE_NO_MEMORY is enabled.  _call_agent_stream attaches it to the
+      /forward/stream body.
 
 All I/O is mocked — no real network, no sleep, no DB.
 """
 
 from __future__ import annotations
 
+import json
+from contextlib import asynccontextmanager
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
 import voice_gateway.server as srv
-from voice_gateway.server import _call_agent, _record_turn_latency, _voice_forward_metadata
+from voice_gateway.server import _call_agent_stream, _record_turn_latency, _voice_forward_metadata
 
 
-def _forward_resp(agent_response: str, status: int = 201):
-    """Mock httpx response with a ForwardResponse-shape body."""
-    mock = MagicMock()
-    mock.status_code = status
-    mock.json = MagicMock(
-        return_value={
-            "id": "abc123",
-            "sanitized": False,
-            "redactions": [],
-            "redaction_count": 0,
-            "content_hash": "deadbeef",
-            "forwarded_to": "hermes",
-            "timestamp": "2026-07-14T00:00:00Z",
-            "agent_response": agent_response,
-        }
-    )
-    mock.raise_for_status = MagicMock()
-    return mock
+def _sse_body(events: list[dict]) -> list[str]:
+    return [f"data: {json.dumps(e)}" for e in events]
+
+
+def _mock_stream_resp(lines: list[str], status_code: int = 200):
+    """Mock httpx.Response usable as the yield value of a mocked
+    AsyncClient.stream() async context manager."""
+    resp = MagicMock()
+    resp.status_code = status_code
+    resp.raise_for_status = MagicMock()
+
+    async def _aiter_lines():
+        for line in lines:
+            yield line
+
+    resp.aiter_lines = _aiter_lines
+    return resp
 
 
 # ── (1) MEASURE: _record_turn_latency ─────────────────────────────────────────
@@ -115,37 +117,41 @@ def test_voice_forward_metadata_module_default_is_off():
     assert srv._VOICE_NO_MEMORY is False
 
 
-# ── Integration: _call_agent wiring ───────────────────────────────────────────
+# ── Integration: _call_agent_stream wiring ────────────────────────────────────
 
 
 @pytest.mark.asyncio
 async def test_call_agent_default_body_has_no_metadata(monkeypatch):
-    """DEFAULT OFF: /forward body carries NO metadata key — byte-for-byte legacy."""
+    """DEFAULT OFF: /forward/stream body carries NO metadata key — byte-for-byte legacy."""
     monkeypatch.setattr(srv, "_VOICE_NO_MEMORY", False)
     captured: dict = {}
 
-    async def _capture(url, json=None, headers=None, **kw):
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
         captured["body"] = json or {}
-        return _forward_resp("ok")
+        yield _mock_stream_resp(_sse_body([{"done": True}]))
 
-    with patch("httpx.AsyncClient.post", new=AsyncMock(side_effect=_capture)):
-        await _call_agent("test query", "hermes")
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        async for _ in _call_agent_stream("test query", "hermes"):
+            pass
 
     assert "metadata" not in captured["body"], "default path must not add metadata"
 
 
 @pytest.mark.asyncio
 async def test_call_agent_no_memory_on_adds_ephemeral_tag(monkeypatch):
-    """ON: /forward body carries metadata={"no_memory": True}."""
+    """ON: /forward/stream body carries metadata={"no_memory": True}."""
     monkeypatch.setattr(srv, "_VOICE_NO_MEMORY", True)
     captured: dict = {}
 
-    async def _capture(url, json=None, headers=None, **kw):
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
         captured["body"] = json or {}
-        return _forward_resp("ok")
+        yield _mock_stream_resp(_sse_body([{"done": True}]))
 
-    with patch("httpx.AsyncClient.post", new=AsyncMock(side_effect=_capture)):
-        await _call_agent("test query", "hermes")
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        async for _ in _call_agent_stream("test query", "hermes"):
+            pass
 
     assert captured["body"].get("metadata") == {"no_memory": True}
     # Core fields untouched.
@@ -155,12 +161,18 @@ async def test_call_agent_no_memory_on_adds_ephemeral_tag(monkeypatch):
 
 @pytest.mark.asyncio
 async def test_call_agent_records_latency_on_success():
-    """_call_agent emits a latency record on the success path."""
+    """_call_agent_stream emits a latency record on the success path."""
+
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        yield _mock_stream_resp(_sse_body([{"sentence": "hi"}, {"done": True}]))
+
     with (
         patch.object(srv, "_record_turn_latency") as rec,
-        patch("httpx.AsyncClient.post", new=AsyncMock(return_value=_forward_resp("hi"))),
+        patch("httpx.AsyncClient.stream", new=mock_stream),
     ):
-        await _call_agent("q", "hermes")
+        async for _ in _call_agent_stream("q", "hermes"):
+            pass
     rec.assert_called_once()
     # Signature: (agent, duration_s)
     args = rec.call_args.args
@@ -173,12 +185,18 @@ async def test_call_agent_records_latency_on_read_timeout():
     """A read-timeout (worst-case latency) is still recorded, then falls back."""
     import httpx
 
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        raise httpx.ReadTimeout("boom")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
+
     with (
         patch.object(srv, "_record_turn_latency") as rec,
-        patch("httpx.AsyncClient.post", new=AsyncMock(side_effect=httpx.ReadTimeout("boom"))),
+        patch("httpx.AsyncClient.stream", new=mock_stream),
     ):
-        result = await _call_agent("q", "hermes")
+        result = [s async for s in _call_agent_stream("q", "hermes")]
 
     rec.assert_called_once()
     assert rec.call_args.args[0] == "hermes"
-    assert "trouble connecting" in result
+    assert len(result) == 1
+    assert "trouble connecting" in result[0]

@@ -1,28 +1,90 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Module Group 182"
+community: "CLI Command Client (Rust)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_182
+  - community/CLI_Command_Client_Rust
 ---
 
 # main.rs
 
 ## Connections
 - [[AddResource]] - `contains` [EXTRACTED]
+- [[ApprovalAction]] - `contains` [EXTRACTED]
 - [[Cli]] - `contains` [EXTRACTED]
 - [[CollabMode]] - `contains` [EXTRACTED]
 - [[Commands_1]] - `contains` [EXTRACTED]
+- [[FakeTransport]] - `contains` [EXTRACTED]
+- [[GatewayClient]] - `contains` [EXTRACTED]
 - [[GetResource]] - `contains` [EXTRACTED]
+- [[HttpResponse]] - `contains` [EXTRACTED]
+- [[HttpTransport]] - `contains` [EXTRACTED]
+- [[Method]] - `contains` [EXTRACTED]
 - [[OutputFormat_1]] - `contains` [EXTRACTED]
+- [[RefCell]] - `imports_from` [EXTRACTED]
+- [[ReqwestTransport]] - `contains` [EXTRACTED]
 - [[Result]] - `imports_from` [EXTRACTED]
 - [[SclClient]] - `contains` [EXTRACTED]
 - [[ServiceTarget]] - `contains` [EXTRACTED]
 - [[SetTarget]] - `contains` [EXTRACTED]
+- [[approvals_list_empty()]] - `contains` [EXTRACTED]
+- [[approvals_list_errors_on_401()]] - `contains` [EXTRACTED]
+- [[approvals_list_formats_rows()]] - `contains` [EXTRACTED]
+- [[approve_sends_correct_body_and_path()]] - `contains` [EXTRACTED]
+- [[build_url()]] - `contains` [EXTRACTED]
+- [[build_url_trims_slashes()]] - `contains` [EXTRACTED]
+- [[cves_counts_array_when_no_total()]] - `contains` [EXTRACTED]
+- [[cves_formats_summary()]] - `contains` [EXTRACTED]
+- [[cves_reads_nested_summary()]] - `contains` [EXTRACTED]
+- [[cves_reads_summary_total_fallback()]] - `contains` [EXTRACTED]
+- [[cves_reports_unknown_bot_error()]] - `contains` [EXTRACTED]
+- [[cves_with_bot_id_appends_query()]] - `contains` [EXTRACTED]
+- [[decide_errors_on_404()]] - `contains` [EXTRACTED]
+- [[decide_errors_on_409_conflict()]] - `contains` [EXTRACTED]
+- [[deny_sends_false_and_formats()]] - `contains` [EXTRACTED]
+- [[deploy_status_errors_when_version_unauthorized()]] - `contains` [EXTRACTED]
+- [[deploy_status_formats_version_and_services()]] - `contains` [EXTRACTED]
+- [[deploy_status_no_services()]] - `contains` [EXTRACTED]
+- [[deploy_status_reads_version_endpoint()]] - `contains` [EXTRACTED]
+- [[encode_path_component()]] - `contains` [EXTRACTED]
+- [[encode_path_component_encodes_dots_and_dashes()]] - `contains` [EXTRACTED]
+- [[encode_path_component_encodes_special_chars()]] - `contains` [EXTRACTED]
+- [[encode_path_component_passes_simple()]] - `contains` [EXTRACTED]
+- [[format_approvals()]] - `contains` [EXTRACTED]
+- [[format_approvals_single_object()]] - `contains` [EXTRACTED]
+- [[format_cves()]] - `contains` [EXTRACTED]
+- [[format_decision()]] - `contains` [EXTRACTED]
+- [[format_deploy_status()]] - `contains` [EXTRACTED]
+- [[format_status()]] - `contains` [EXTRACTED]
+- [[format_status_handles_missing_fields()]] - `contains` [EXTRACTED]
+- [[json_str()]] - `contains` [EXTRACTED]
 - [[main()]] - `contains` [EXTRACTED]
+- [[map_http_error()]] - `contains` [EXTRACTED]
+- [[map_http_error_401_message()]] - `contains` [EXTRACTED]
+- [[map_http_error_generic_status()]] - `contains` [EXTRACTED]
+- [[map_http_error_includes_detail()]] - `contains` [EXTRACTED]
+- [[map_http_error_none_on_success()]] - `contains` [EXTRACTED]
 - [[print_output()]] - `contains` [EXTRACTED]
+- [[render_output_json_is_still_pretty_json()]] - `contains` [EXTRACTED]
+- [[render_output_lines()]] - `contains` [EXTRACTED]
+- [[render_output_table_array_matches_prior_per_item_plus_separator_shape()]] - `contains` [EXTRACTED]
+- [[render_output_table_empty_array_produces_no_lines()]] - `contains` [EXTRACTED]
+- [[render_output_yaml_produces_real_yaml_not_json()]] - `contains` [EXTRACTED]
+- [[resolve_token()]] - `contains` [EXTRACTED]
+- [[resolve_token_empty_when_none()]] - `contains` [EXTRACTED]
+- [[resolve_token_falls_back_to_env()]] - `contains` [EXTRACTED]
+- [[resolve_token_prefers_cli()]] - `contains` [EXTRACTED]
+- [[run_approvals_decide()]] - `contains` [EXTRACTED]
+- [[run_approvals_list()]] - `contains` [EXTRACTED]
+- [[run_cves()]] - `contains` [EXTRACTED]
+- [[run_deploy_status()]] - `contains` [EXTRACTED]
+- [[run_status()]] - `contains` [EXTRACTED]
+- [[status_errors_on_401()]] - `contains` [EXTRACTED]
+- [[status_errors_when_gateway_down()]] - `contains` [EXTRACTED]
+- [[status_hits_correct_path()]] - `contains` [EXTRACTED]
+- [[status_parses_and_formats()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_182
+#graphify/code #graphify/EXTRACTED #community/CLI_Command_Client_Rust

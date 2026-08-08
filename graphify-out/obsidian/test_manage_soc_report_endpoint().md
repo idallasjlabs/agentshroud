@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "code"
-community: "Module Group 171"
+community: "Gateway Test Suite"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_171
+  - community/Gateway_Test_Suite
 ---
 
 # test_manage_soc_report_endpoint()
@@ -15,4 +15,4 @@ tags:
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_171
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

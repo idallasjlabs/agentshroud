@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Module Group 560"
+community: "Gateway Test Suite"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_560
+  - community/Gateway_Test_Suite
 ---
 
 # TestLoadLatestJson
@@ -17,4 +17,4 @@ tags:
 - [[.test_missing_dir_returns_none()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_560
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

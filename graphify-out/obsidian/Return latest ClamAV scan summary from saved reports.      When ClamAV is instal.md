@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Module Group 437"
+community: "Gateway Test Suite"
 location: "L599"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_437
+  - community/Gateway_Test_Suite
 ---
 
 # Return latest ClamAV scan summary from saved reports.      When ClamAV is instal
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_clamav_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_437
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

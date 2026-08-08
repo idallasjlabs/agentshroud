@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Security Pipeline & Audit Chain"
-location: "L75"
+community: "Gateway Proxy Layer"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Pipeline__Audit_Chain
+  - community/Gateway_Proxy_Layer
 ---
 
 # Any
 
 ## Connections
-- [[.append()]] - `references` [EXTRACTED]
-- [[.append_block()]] - `references` [EXTRACTED]
-- [[.get_stats()_6]] - `references` [EXTRACTED]
-- [[.process_inbound()]] - `references` [EXTRACTED]
-- [[.process_outbound()]] - `references` [EXTRACTED]
-- [[.to_dict()_1]] - `references` [EXTRACTED]
-- [[InjectionAction]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[._redact_pii()]] - `references` [EXTRACTED]
+- [[._scan_value()]] - `references` [EXTRACTED]
+- [[.inspect_tool_call()]] - `references` [EXTRACTED]
+- [[.inspect_tool_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Pipeline__Audit_Chain
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

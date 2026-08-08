@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
-location: "L75"
+community: "Egress & RBAC Security Core"
+location: "L73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # MiddlewareResult
@@ -67,6 +67,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[SubagentMonitorConfig]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_2]] - `uses` [INFERRED]
+- [[TestAlertsLocalhostEnforcement]] - `uses` [INFERRED]
 - [[TestAnalyzeRequestForRBAC]] - `uses` [INFERRED]
 - [[TestApprovalEndpoints]] - `uses` [INFERRED]
 - [[TestBotIsMentioned]] - `uses` [INFERRED]
@@ -76,6 +77,7 @@ tags:
 - [[TestCollaboratorRateLimitRecovery]] - `uses` [INFERRED]
 - [[TestCommandTokenNormalization]] - `uses` [INFERRED]
 - [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestCriticalGuardInitFailClosed]] - `uses` [INFERRED]
 - [[TestCrossSessionAccess]] - `uses` [INFERRED]
 - [[TestEnvGuard]] - `uses` [INFERRED]
 - [[TestErrorHandling]] - `uses` [INFERRED]
@@ -90,6 +92,8 @@ tags:
 - [[TestGitGuard_1]] - `uses` [INFERRED]
 - [[TestGoogleAPIProxy]] - `uses` [INFERRED]
 - [[TestGroupMentionFilter]] - `uses` [INFERRED]
+- [[TestGroupPresenceProbe]] - `uses` [INFERRED]
+- [[TestHealthCheckDetailBotsInventory]] - `uses` [INFERRED]
 - [[TestHermesDashboardPathTraversal]] - `uses` [INFERRED]
 - [[TestInboundPipelineOnGetUpdates]] - `uses` [INFERRED]
 - [[TestInit]] - `uses` [INFERRED]
@@ -105,11 +109,13 @@ tags:
 - [[TestNoResponseGuarantee]] - `uses` [INFERRED]
 - [[TestOwnerBypassContentPatternChecks]] - `uses` [INFERRED]
 - [[TestPathIsolationStep]] - `uses` [INFERRED]
+- [[TestPerBotGroupMentionFilter]] - `uses` [INFERRED]
 - [[TestProcessRequestIdentity]] - `uses` [INFERRED]
 - [[TestProcessRequestRBAC]] - `uses` [INFERRED]
 - [[TestProcessToolResult]] - `uses` [INFERRED]
 - [[TestProgressiveLockdownUX]] - `uses` [INFERRED]
 - [[TestQuarantineEndpoints]] - `uses` [INFERRED]
+- [[TestScanParameterAllowlists]] - `uses` [INFERRED]
 - [[TestScanToolResult]] - `uses` [INFERRED]
 - [[TestSetConfig]] - `uses` [INFERRED]
 - [[TestStatusEndpoint]] - `uses` [INFERRED]
@@ -131,4 +137,4 @@ tags:
 - [[test_middleware_coverage.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core

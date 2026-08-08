@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "CLI & Core Gateway Routes"
-location: "L1072"
+community: "Security Module Middleware"
+location: "L1216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Security_Module_Middleware
 ---
 
 # List all security modules and their status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[list_security_modules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware

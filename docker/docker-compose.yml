@@ -12,7 +12,10 @@ services:
   # ── Gateway ──────────────────────────────────────────────────────────────────
   # Security proxy, HTTP CONNECT proxy, DNS forwarder, API gateway.
   # SOLE egress point for all container traffic. All outbound logged.
-  # Set AGENTSHROUD_VERSION=1.0.0 to build/run versioned images. Defaults to :latest.
+  # AGENTSHROUD_VERSION is sourced from docker/versions.env (via scripts/asb —
+  # see that file's header). Defaults to :latest if unset/not built through
+  # scripts/asb. Kept in sync with gateway/__init__.py's __version__ by
+  # scripts/sync-version.sh.
   gateway:
     build:
       context: ..
@@ -391,6 +394,7 @@ services:
         # an unset value must fail the build loudly (empty FROM), not silently
         # float to whatever :latest currently resolves to.
         HERMES_IMAGE: ${HERMES_IMAGE}
+        AGENTSHROUD_VERSION: ${AGENTSHROUD_VERSION:-latest}
     container_name: agentshroud-hermes-v2
     hostname: agentshroud-hermes-v2
     restart: unless-stopped
@@ -527,6 +531,11 @@ services:
       # with exit 255) — confirmed 2026-07-28 via /Users/ijefferson.admin/.colima/_lima/colima/ha.stderr.log.
       - "127.0.0.1:8765:8765"
     environment:
+      # Runtime version, not just a build-time image LABEL — voice_gateway's
+      # system prompt includes it so the voice assistant answers "what
+      # version" questions from real data instead of guessing (live
+      # regression 2026-08-08: it answered "1.0.0" from nowhere).
+      AGENTSHROUD_VERSION: ${AGENTSHROUD_VERSION:-latest}
       HTTP_PROXY: http://gateway:8181
       HTTPS_PROXY: http://gateway:8181
       NO_PROXY: gateway,agentshroud-voice-gateway,127.0.0.1,localhost
@@ -539,10 +548,12 @@ services:
       VG_PORT: "8765"
       # WS auth: token the ESP32 must send as ?token= in the connection URL.
       VOICE_GW_AUTH_TOKEN_FILE: /run/secrets/voice_gateway_token
-      # Default agent for voice → proxied-agent routing.  Override per-connection via ?agent=.
-      # "hermes" = Hermes agentic assistant (synchronous OpenAI-compat reply via /forward).
-      # "direct" = legacy fast-path LLM proxy (no agentic tools, lower latency).
-      VOICE_DEFAULT_AGENT: "hermes"
+      # Default agent for voice → proxied-agent routing.  Override per-connection via ?agent=,
+      # or say "use Claude"/"use local" mid-session (sticky override, SCRUM-113 follow-on).
+      # "direct" = fast local LLM (LM Studio qwen3-14b, /no_think) — default: Hermes's own
+      # agentic-loop latency measured ~9s to first sentence, too slow for voice (2026-08-06).
+      # "hermes" = Hermes agentic assistant (streaming OpenAI-compat reply via /forward/stream).
+      VOICE_DEFAULT_AGENT: "direct"
       FIRMWARE_BIN_PATH: /firmware/build/voice_terminal.bin
       # TTS naturalness: 0.92× pacing reads noticeably less robotic on the
       # BOX-3 speaker than the 1.0 default (owner feedback 2026-07-03).

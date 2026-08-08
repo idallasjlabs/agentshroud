@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Tool Result Sanitizer"
+community: "Security Module Middleware"
 location: "L322"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer
+  - community/Security_Module_Middleware
 ---
 
 # Test middleware configuration with disabled tool result PII
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_middleware_set_config_disabled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware

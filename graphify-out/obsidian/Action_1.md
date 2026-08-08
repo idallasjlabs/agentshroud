@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "RBAC Configuration"
+community: "Auth & Exception Types"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # Action
@@ -17,11 +17,12 @@ tags:
 - [[.check_permission()]] - `references` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Actions that can be performed in the system.]] - `rationale_for` [EXTRACTED]
-- [[Any_6]] - `uses` [INFERRED]
-- [[Any_65]] - `uses` [INFERRED]
-- [[AuthRequired]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Any_69]] - `uses` [INFERRED]
+- [[AuthRequired_1]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Exception_1]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MCPProxyRequest]] - `uses` [INFERRED]
 - [[MCPResultRequest]] - `uses` [INFERRED]
@@ -31,11 +32,12 @@ tags:
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
-- [[Request]] - `uses` [INFERRED]
+- [[Request_3]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHExecRequest_1]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
 - [[SimpleNamespace]] - `uses` [INFERRED]
 - [[TestCoerceToWSEventExtra]] - `uses` [INFERRED]
 - [[TestCollectRecentEvents]] - `uses` [INFERRED]
@@ -61,7 +63,7 @@ tags:
 - [[TestWSSOCEndpoint]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[ToolTier_2]] - `uses` [INFERRED]
-- [[WebSocket_2]] - `uses` [INFERRED]
+- [[WebSocket_3]] - `uses` [INFERRED]
 - [[_FakeBus]] - `uses` [INFERRED]
 - [[_FakeRBAC_1]] - `uses` [INFERRED]
 - [[auth.py_1]] - `imports` [EXTRACTED]
@@ -74,4 +76,4 @@ tags:
 - [[test_rbac.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Configuration
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

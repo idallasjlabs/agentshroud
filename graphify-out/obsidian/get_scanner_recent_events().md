@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Router & Correlation"
-location: "L2051"
+community: "SOC Collaborator Lifecycle"
+location: "L2094"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router__Correlation
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # get_scanner_recent_events()
@@ -14,7 +14,8 @@ tags:
 ## Connections
 - [[Recent scanner events from the in-process startupscheduled scan history.      C]] - `rationale_for` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller_3]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router__Correlation
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

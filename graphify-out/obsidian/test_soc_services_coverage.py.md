@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "SOC Services"
+community: "SOC Service Manager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Services
+  - community/SOC_Service_Manager
 ---
 
 # test_soc_services_coverage.py
@@ -23,6 +23,7 @@ tags:
 - [[TestGetEngine_1]] - `contains` [EXTRACTED]
 - [[TestGetLogs]] - `contains` [EXTRACTED]
 - [[TestInspectViaSocket]] - `contains` [EXTRACTED]
+- [[TestKnownServices]] - `contains` [EXTRACTED]
 - [[TestLifecycleActions]] - `contains` [EXTRACTED]
 - [[TestListServices]] - `contains` [EXTRACTED]
 - [[TestLogsViaSocket]] - `contains` [EXTRACTED]
@@ -34,5 +35,6 @@ tags:
 - [[_patch_exists()]] - `contains` [EXTRACTED]
 - [[_patch_http_connection()]] - `contains` [EXTRACTED]
 - [[_patch_open()]] - `contains` [EXTRACTED]
+- [[gatewaysocservices.py (ServiceManager)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Services
+#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager

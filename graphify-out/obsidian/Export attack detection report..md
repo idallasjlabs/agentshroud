@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Module Group 457"
+community: "PII Config & Test Fixtures"
 location: "L536"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_457
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Export attack detection report.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.export_attack_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_457
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

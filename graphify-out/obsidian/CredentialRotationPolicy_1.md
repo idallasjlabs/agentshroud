@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "Module Group 93"
+community: "Gateway Test Suite"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_93
+  - community/Gateway_Test_Suite
 ---
 
 # CredentialRotationPolicy
@@ -18,7 +18,7 @@ tags:
 - [[.test_default_policy_values()]] - `calls` [EXTRACTED]
 - [[.test_should_rotate()]] - `calls` [EXTRACTED]
 - [[.test_should_warn()]] - `calls` [EXTRACTED]
-- [[Any_38]] - `uses` [INFERRED]
+- [[Any_40]] - `uses` [INFERRED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
@@ -32,9 +32,9 @@ tags:
 - [[TestKeyRotationConfig]] - `uses` [INFERRED]
 - [[TestKeyRotationManager]] - `uses` [INFERRED]
 - [[TestKeyRotationWorkflow]] - `uses` [INFERRED]
-- [[datetime_2]] - `uses` [INFERRED]
+- [[datetime_3]] - `uses` [INFERRED]
 - [[key_rotation.py]] - `imports` [EXTRACTED]
 - [[key_rotation_config.py]] - `contains` [EXTRACTED]
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_93
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "SOC Authentication"
-location: "L173"
+community: "Gateway Test Suite"
+location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Authentication
+  - community/Gateway_Test_Suite
 ---
 
 # ws_soc_endpoint()
@@ -21,13 +21,11 @@ tags:
 - [[.test_valid_ws_token_accepts()]] - `calls` [EXTRACTED]
 - [[FastAPI WebSocket route handler for wssoc.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[SOCWebSocketHandler]] - `calls` [EXTRACTED]
-- [[WebSocket_6]] - `references` [EXTRACTED]
+- [[WebSocket_7]] - `references` [EXTRACTED]
 - [[_get_config_token()]] - `calls` [EXTRACTED]
-- [[redeem_ws_token()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[soc_websocket()]] - `calls` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Authentication
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

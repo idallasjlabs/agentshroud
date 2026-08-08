@@ -9,6 +9,8 @@ from __future__ import annotations
 from gateway.proxy.gemini_openai_translator import (
     gemini_failover_unsupported_reason,
     gemini_to_openai_request,
+    gemini_to_openai_response,
+    openai_to_gemini_request,
     openai_to_gemini_response,
 )
 
@@ -185,3 +187,131 @@ def test_unsupported_reason_function_call_parts():
     }
     path = "/v1beta/models/gemini-2.0-flash:generateContent"
     assert gemini_failover_unsupported_reason(body, path) is not None
+
+
+# ---------------------------------------------------------------------------
+# openai_to_gemini_request — inverse direction, "use Gemini" voice path
+# ---------------------------------------------------------------------------
+
+
+def test_openai_to_gemini_basic_request():
+    body = {
+        "model": "gemini-2.5-flash",
+        "messages": [
+            {"role": "system", "content": "You are concise."},
+            {"role": "user", "content": "hello"},
+        ],
+        "max_tokens": 50,
+        "temperature": 0.2,
+    }
+    result = openai_to_gemini_request(body)
+    assert result["systemInstruction"] == {"parts": [{"text": "You are concise."}]}
+    assert result["contents"] == [{"role": "user", "parts": [{"text": "hello"}]}]
+    assert result["generationConfig"]["maxOutputTokens"] == 50
+    assert result["generationConfig"]["temperature"] == 0.2
+
+
+def test_openai_to_gemini_assistant_role_becomes_model():
+    body = {
+        "messages": [
+            {"role": "user", "content": "hi"},
+            {"role": "assistant", "content": "hello there"},
+        ],
+    }
+    result = openai_to_gemini_request(body)
+    assert result["contents"] == [
+        {"role": "user", "parts": [{"text": "hi"}]},
+        {"role": "model", "parts": [{"text": "hello there"}]},
+    ]
+
+
+def test_openai_to_gemini_no_system_message_omits_system_instruction():
+    body = {"messages": [{"role": "user", "content": "hi"}]}
+    result = openai_to_gemini_request(body)
+    assert "systemInstruction" not in result
+
+
+def test_openai_to_gemini_content_block_list_flattened():
+    body = {
+        "messages": [
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": "part one"},
+                    {"type": "text", "text": "part two"},
+                ],
+            }
+        ],
+    }
+    result = openai_to_gemini_request(body)
+    assert result["contents"][0]["parts"] == [
+        {"text": "part one"},
+        {"text": "part two"},
+    ]
+
+
+def test_openai_to_gemini_stop_sequences_normalized_to_list():
+    body = {"messages": [{"role": "user", "content": "hi"}], "stop": "END"}
+    result = openai_to_gemini_request(body)
+    assert result["generationConfig"]["stopSequences"] == ["END"]
+
+
+def test_openai_to_gemini_no_generation_config_keys_omits_block():
+    body = {"messages": [{"role": "user", "content": "hi"}]}
+    result = openai_to_gemini_request(body)
+    assert "generationConfig" not in result
+
+
+# ---------------------------------------------------------------------------
+# gemini_to_openai_response — inverse direction, "use Gemini" voice path
+# ---------------------------------------------------------------------------
+
+
+def test_gemini_to_openai_response_envelope():
+    gem = {
+        "candidates": [
+            {
+                "content": {"parts": [{"text": "Hello!"}], "role": "model"},
+                "finishReason": "STOP",
+                "index": 0,
+            }
+        ],
+        "usageMetadata": {"promptTokenCount": 5, "candidatesTokenCount": 3},
+    }
+    out = gemini_to_openai_response(gem, original_model="gemini-2.5-flash")
+    assert out["object"] == "chat.completion"
+    assert out["model"] == "gemini-2.5-flash"
+    assert out["choices"][0]["message"]["content"] == "Hello!"
+    assert out["choices"][0]["message"]["role"] == "assistant"
+    assert out["choices"][0]["finish_reason"] == "stop"
+    assert out["usage"]["total_tokens"] == 8
+
+
+def test_gemini_to_openai_response_max_tokens_finish_reason():
+    gem = {
+        "candidates": [{"content": {"parts": [{"text": "cut off"}]}, "finishReason": "MAX_TOKENS"}],
+    }
+    out = gemini_to_openai_response(gem, original_model="gemini-2.5-flash")
+    assert out["choices"][0]["finish_reason"] == "length"
+
+
+def test_gemini_to_openai_response_empty_candidates_yields_empty_text():
+    out = gemini_to_openai_response({}, original_model="gemini-2.5-flash")
+    assert out["choices"][0]["message"]["content"] == ""
+    assert out["usage"]["total_tokens"] == 0
+
+
+def test_gemini_to_openai_roundtrip_with_openai_to_gemini_response():
+    """openai_to_gemini_response (existing failover direction) and
+    gemini_to_openai_response (new direct-voice direction) must be true
+    inverses on a representative response, so failover-then-direct-call
+    sequences produce consistent shapes."""
+    original_openai = {
+        "choices": [{"message": {"content": "round trip"}, "finish_reason": "stop"}],
+        "usage": {"prompt_tokens": 2, "completion_tokens": 2},
+        "model": "gemini-2.5-flash",
+    }
+    gem = openai_to_gemini_response(original_openai)
+    back = gemini_to_openai_response(gem, original_model="gemini-2.5-flash")
+    assert back["choices"][0]["message"]["content"] == "round trip"
+    assert back["choices"][0]["finish_reason"] == "stop"

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "Dashboard Routes & WebSocket"
+community: "Gateway Test Suite"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dashboard_Routes__WebSocket
+  - community/Gateway_Test_Suite
 ---
 
 # GET /dashboard/stats returns JSON stats
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_stats_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dashboard_Routes__WebSocket
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

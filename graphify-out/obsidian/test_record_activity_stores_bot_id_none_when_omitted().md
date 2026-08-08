@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "Module Group 104"
-location: "L302"
+community: "Gateway Test Suite"
+location: "L301"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_104
+  - community/Gateway_Test_Suite
 ---
 
 # test_record_activity_stores_bot_id_none_when_omitted()
@@ -15,4 +15,4 @@ tags:
 - [[record_activity without bot_id stores bot_id=None in the entry.]] - `rationale_for` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_104
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

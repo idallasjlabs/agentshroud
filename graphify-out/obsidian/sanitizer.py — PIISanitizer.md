@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
 type: "code"
-community: "Module Group 314"
+community: "docs/vault"
 location: "gateway/ingest_api/sanitizer.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_314
+  - community/docs/vault
 ---
 
 # sanitizer.py — PIISanitizer
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PIISanitizer_4]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_314
+#graphify/code #graphify/EXTRACTED #community/docs/vault

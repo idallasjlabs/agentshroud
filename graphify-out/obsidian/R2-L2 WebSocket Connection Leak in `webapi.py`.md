@@ -1,0 +1,17 @@
+---
+source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
+type: "document"
+community: "Planning Docs"
+location: "L170"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Planning_Docs
+---
+
+# R2-L2: WebSocket Connection Leak in `web/api.py`
+
+## Connections
+- [[LOW Findings]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

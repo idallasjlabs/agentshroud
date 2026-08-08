@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "Module Group 71"
+community: "Gateway Test Suite"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_71
+  - community/Gateway_Test_Suite
 ---
 
 # Test that enforce mode blocks domains not in allowlist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_enforce_mode_blocks_unknown_domains()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_71
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

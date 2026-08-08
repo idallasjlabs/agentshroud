@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "CLI & Core Gateway Routes"
-location: "L1609"
+community: "Approval & FastAPI Ingest"
+location: "L1821"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Return recent Wazuh HIDS alerts with FIM and rootkit summary.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wazuh_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

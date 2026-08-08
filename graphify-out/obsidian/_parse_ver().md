@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Module Group 212"
-location: "L60"
+community: "scripts/sync-cve-registry.py"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_212
+  - community/scripts/sync-cve-registrypy
 ---
 
 # _parse_ver()
@@ -16,4 +16,4 @@ tags:
 - [[_ver_gte()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_212
+#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

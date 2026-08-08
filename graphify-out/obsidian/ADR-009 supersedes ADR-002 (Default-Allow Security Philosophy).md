@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "rationale"
-community: "Module Group 261"
+community: "Architecture Docs"
 location: "line 7"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_261
+  - community/Architecture_Docs
 ---
 
 # ADR-009 supersedes ADR-002 (Default-Allow Security Philosophy)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ADR-009 Enforce-by-Default Security Philosophy]] - `includes` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_261
+#graphify/rationale #graphify/EXTRACTED #community/Architecture_Docs

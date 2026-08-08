@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Module Group 124"
+community: "Gateway Test Suite"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_124
+  - community/Gateway_Test_Suite
 ---
 
 # make_call()
@@ -32,8 +32,8 @@ tags:
 - [[.test_timeout_error()]] - `calls` [EXTRACTED]
 - [[.test_tool_not_requiring_approval_allowed()]] - `calls` [EXTRACTED]
 - [[.test_unknown_server_returns_error_result()]] - `calls` [EXTRACTED]
-- [[MCPToolCall_1]] - `references` [EXTRACTED]
 - [[MCPToolCall]] - `calls` [EXTRACTED]
+- [[MCPToolCall_1]] - `references` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_124
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

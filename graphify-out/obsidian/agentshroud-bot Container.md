@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "Module Group 158"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_158
+  - community/docs/vault
 ---
 
 # agentshroud-bot Container
@@ -21,4 +21,4 @@ tags:
 - [[agentshroud-ssh volume (SSH keypair)]] - `mounts` [EXTRACTED]
 - [[agentshroud-workspace volume (agent files)]] - `mounts` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_158
+#graphify/document #graphify/EXTRACTED #community/docs/vault

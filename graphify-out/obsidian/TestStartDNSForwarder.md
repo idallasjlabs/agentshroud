@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Module Group 275"
+community: "Gateway Proxy Layer"
 location: "L333"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_275
+  - graphify/INFERRED
+  - community/Gateway_Proxy_Layer
 ---
 
 # TestStartDNSForwarder
@@ -17,4 +17,4 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_275
+#graphify/code #graphify/INFERRED #community/Gateway_Proxy_Layer

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "CLI & Core Gateway Routes"
-location: "L919"
+community: "Auth & Exception Types"
+location: "L954"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Auth__Exception_Types
 ---
 
 # ssh_exec()
 
 ## Connections
-- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[ApprovalRequest]] - `calls` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[Execute SSH command with validation and approval]] - `rationale_for` [EXTRACTED]
 - [[JSONResponse]] - `calls` [EXTRACTED]
-- [[SSHExecRequest]] - `references` [EXTRACTED]
+- [[SSHExecRequest_1]] - `references` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Module Group 64"
+community: "Telegram Proxy Test Suite"
 location: "L2409"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_64
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Internal file probes must not be misclassified as egress approval requests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_file_query_does_not_queue_egress_preflight()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_64
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

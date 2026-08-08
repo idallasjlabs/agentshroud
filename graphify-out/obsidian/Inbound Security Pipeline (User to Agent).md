@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "concept"
-community: "Module Group 192"
+community: "Bot Container Scripts"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_192
+  - community/Bot_Container_Scripts
 ---
 
 # Inbound Security Pipeline (User to Agent)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Collaborator Workspace PUBLIC-INFO]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_192
+#graphify/concept #graphify/EXTRACTED #community/Bot_Container_Scripts

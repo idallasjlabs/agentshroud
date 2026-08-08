@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "code"
-community: "Module Group 188"
+community: "Security Docs"
 location: "gateway/proxy/web_content_scanner.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_188
+  - community/Security_Docs
 ---
 
 # WebContentScanner
@@ -15,4 +15,4 @@ tags:
 - [[Prompt Injection Detection (Web)]] - `implements` [EXTRACTED]
 - [[web_content_scanner.py (Proxy Layer)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_188
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

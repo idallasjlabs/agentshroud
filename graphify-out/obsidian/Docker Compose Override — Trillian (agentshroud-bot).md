@@ -1,18 +1,16 @@
 ---
 source_file: "docker/docker-compose.agentshroud-bot.trillian.yml"
 type: "code"
-community: "Module Group 174"
+community: "docs/vault"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_174
+  - community/docs/vault
 ---
 
 # Docker Compose Override — Trillian (agentshroud-bot)
 
 ## Connections
-- [[AgentShroud Gateway (Core Security Proxy)]] - `configures` [EXTRACTED]
-- [[Docker Compose Production (docker-compose.yml)]] - `extends` [EXTRACTED]
 - [[Trillian (Mac Mini Intel — secondary buildCI)]] - `deployed_on` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_174
+#graphify/code #graphify/EXTRACTED #community/docs/vault

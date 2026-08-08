@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Module Group 114"
+community: "Gateway Test Suite"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_114
+  - community/Gateway_Test_Suite
 ---
 
 # calculate_tool_score()
@@ -17,11 +17,11 @@ tags:
 - [[.test_one_critical()]] - `calls` [EXTRACTED]
 - [[.test_perfect_score()]] - `calls` [EXTRACTED]
 - [[.test_score_floor()]] - `calls` [EXTRACTED]
-- [[Any_37]] - `references` [EXTRACTED]
+- [[Any_39]] - `references` [EXTRACTED]
 - [[Calculate score for a single tool (0-100).      Args         summary Tool summ]] - `rationale_for` [EXTRACTED]
 - [[calculate_overall_score()]] - `calls` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]
 - [[health_report.py]] - `contains` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_114
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "PII Sanitizer & Resource Guard"
-location: "L304"
+community: "LLM Proxy Resource Guard"
+location: "L331"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # Check if agent has exceeded disk write limit.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_disk_write_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__Resource_Guard
+#graphify/rationale #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

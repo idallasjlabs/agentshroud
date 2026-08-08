@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
 type: "concept"
-community: "Module Group 485"
+community: "skills/openclaw"
 location: "line 114"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_485
+  - community/skills/openclaw
 ---
 
 # Claude Code tmux Session Patterns
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw tmux Skill]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_485
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

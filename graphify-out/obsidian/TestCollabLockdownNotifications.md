@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Module Group 358"
-location: "L185"
+community: "Gateway Test Suite"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_358
+  - community/Gateway_Test_Suite
 ---
 
 # TestCollabLockdownNotifications
@@ -25,4 +25,4 @@ tags:
 - [[Verify _quarantine_blocked_message sends threshold warnings to the collaborator.]] - `rationale_for` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_358
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

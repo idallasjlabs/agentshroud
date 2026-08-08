@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "rationale"
-community: "SOC Bots & CVE Management"
+community: "Bot CVE Scorecard"
 location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Bots__CVE_Management
+  - community/Bot_CVE_Scorecard
 ---
 
 # Backward-compat: config attr absent → return single OpenClaw default.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_returns_default_when_config_is_none()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Bots__CVE_Management
+#graphify/rationale #graphify/EXTRACTED #community/Bot_CVE_Scorecard

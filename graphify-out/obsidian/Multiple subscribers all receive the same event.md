@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "rationale"
-community: "Dashboard Routes & WebSocket"
+community: "Approval & FastAPI Ingest"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dashboard_Routes__WebSocket
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Multiple subscribers all receive the same event
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_emit_to_multiple_subscribers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dashboard_Routes__WebSocket
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

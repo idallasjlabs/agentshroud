@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Module Group 67"
+community: "Gateway Test Suite"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_67
+  - community/Gateway_Test_Suite
 ---
 
 # EventInjectionError
@@ -23,4 +23,4 @@ tags:
 - [[TestSessionValidation]] - `uses` [INFERRED]
 - [[session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_67
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

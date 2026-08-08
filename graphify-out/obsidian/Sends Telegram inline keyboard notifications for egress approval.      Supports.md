@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "rationale"
-community: "Module Group 279"
+community: "Gateway Proxy Layer"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_279
+  - community/Gateway_Proxy_Layer
 ---
 
 # Sends Telegram inline keyboard notifications for egress approval.      Supports
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressTelegramNotifier]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_279
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

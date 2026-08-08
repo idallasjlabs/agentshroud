@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/tailscale-check.sh"
+source_file: "scripts/security-scan.sh"
 type: "code"
-community: "Module Group 519"
-location: "L18"
+community: "scripts/security-scan.sh"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_519
+  - community/scripts/security-scansh
 ---
 
 # warn()
 
 ## Connections
-- [[tailscale-check.sh]] - `defines` [EXTRACTED]
-- [[tailscale-check.sh script]] - `calls` [EXTRACTED]
+- [[security-scan.sh_1]] - `defines` [EXTRACTED]
+- [[security-scan.sh script_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_519
+#graphify/code #graphify/EXTRACTED #community/scripts/security-scansh

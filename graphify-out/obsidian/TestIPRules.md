@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Egress Filter & Approval"
+community: "Gateway Test Suite"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter__Approval
+  - community/Gateway_Test_Suite
 ---
 
 # TestIPRules
@@ -27,4 +27,4 @@ tags:
 - [[IP allowlist and private-IP SSRF protection.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__Approval
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "Approval Queue Core"
-location: "L256"
+community: "Approval Queue Tests"
+location: "L298"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue_Core
+  - community/Approval_Queue_Tests
 ---
 
 # Check all pending items and expire those past timeout          Returns:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._expire_stale()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Core
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Tests

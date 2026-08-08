@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Module Group 72"
-location: "L91"
+community: "Gateway Test Suite"
+location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_72
+  - community/Gateway_Test_Suite
 ---
 
 # test_exec_delete_file_requires_approval()
@@ -15,4 +15,4 @@ tags:
 - [[Probe 1.1b delete_file action must go through approval or be blocked.]] - `rationale_for` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_72
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

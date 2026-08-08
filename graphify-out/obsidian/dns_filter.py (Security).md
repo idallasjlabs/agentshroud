@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "code"
-community: "Module Group 188"
+community: "docs/vault"
 location: "gateway/security/dns_filter.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_188
+  - community/docs/vault
 ---
 
 # dns_filter.py (Security)
@@ -18,4 +18,4 @@ tags:
 - [[alert_dispatcher.py (Security)]] - `references` [EXTRACTED]
 - [[web_proxy.py (Proxy Layer)]] - `depends_on` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_188
+#graphify/code #graphify/EXTRACTED #community/docs/vault

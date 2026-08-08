@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Module Group 137"
-location: "L487"
+community: "PII Config & Test Fixtures"
+location: "L483"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_137
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Test file system sandboxing in enforce mode — blocks unauthorized access.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFileSandbox]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_137
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

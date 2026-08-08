@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "PII Sanitizer & Resource Guard"
+community: "PII Config & Test Fixtures"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/PII_Config__Test_Fixtures
 ---
 
 # test_security_audit.py
 
 ## Connections
-- [[AlertDispatcher]] - `imports` [EXTRACTED]
+- [[AlertDispatcher]] - `references` [EXTRACTED]
 - [[CanaryResult]] - `imports` [EXTRACTED]
 - [[ConfusedDeputyError]] - `imports` [EXTRACTED]
 - [[ConsentDecision]] - `imports` [EXTRACTED]
@@ -44,7 +44,7 @@ tags:
 - [[SubagentEvent]] - `imports` [EXTRACTED]
 - [[SubagentMonitor]] - `imports` [EXTRACTED]
 - [[TestAuditTrail_1]] - `contains` [EXTRACTED]
-- [[TestAuth]] - `contains` [EXTRACTED]
+- [[TestAuth_1]] - `contains` [EXTRACTED]
 - [[TestContainerSecurity]] - `contains` [EXTRACTED]
 - [[TestContextGuard_1]] - `contains` [EXTRACTED]
 - [[TestCryptography]] - `contains` [EXTRACTED]
@@ -56,15 +56,33 @@ tags:
 - [[TestResourceProtection]] - `contains` [EXTRACTED]
 - [[TestSupplyChain_1]] - `contains` [EXTRACTED]
 - [[ThreatAssessment]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[clamav_scanner.py]] - `imports_from` [EXTRACTED]
 - [[falco_monitor.py]] - `imports_from` [EXTRACTED]
+- [[gatewayingest_apisanitizer.py (PIISanitizer)]] - `references` [EXTRACTED]
+- [[gatewaysecurityclamav_scanner.py]] - `references` [EXTRACTED]
+- [[gatewaysecuritycontext_guard.py (ContextGuard)]] - `references` [EXTRACTED]
+- [[gatewaysecuritydns_filter.py (DNSFilterConfig)]] - `references` [EXTRACTED]
+- [[gatewaysecuritydrift_detector.py (DriftDetector)]] - `references` [EXTRACTED]
+- [[gatewaysecurityencrypted_store.py (EncryptedStore)]] - `references` [EXTRACTED]
+- [[gatewaysecurityfalco_monitor.py]] - `references` [EXTRACTED]
+- [[gatewaysecurityfile_sandbox.py (FileSandbox)]] - `references` [EXTRACTED]
+- [[gatewaysecurityhealth_report.py]] - `references` [EXTRACTED]
+- [[gatewaysecuritykey_vault.py (KeyVault)]] - `references` [EXTRACTED]
+- [[gatewaysecuritymetadata_guard.py (MetadataGuard)]] - `references` [EXTRACTED]
+- [[gatewaysecuritynetwork_validator.py (NetworkValidator)]] - `references` [EXTRACTED]
+- [[gatewaysecurityoauth_security.py]] - `references` [EXTRACTED]
+- [[gatewaysecurityprompt_guard.py (PromptGuard)]] - `references` [EXTRACTED]
+- [[gatewaysecuritytrivy_report.py]] - `references` [EXTRACTED]
+- [[gatewaysecuritytrust_manager.py (TrustManager)]] - `references` [EXTRACTED]
+- [[gatewaysecuritywazuh_client.py]] - `references` [EXTRACTED]
 - [[health_report.py]] - `imports_from` [EXTRACTED]
 - [[parse_clamscan_output()]] - `imports` [EXTRACTED]
 - [[run_canary()]] - `imports` [EXTRACTED]
 - [[run_clamscan()]] - `imports` [EXTRACTED]
 - [[run_trivy_scan()_1]] - `imports` [EXTRACTED]
+- [[test_security_audit_advanced.py]] - `conceptually_related_to` [INFERRED]
 - [[trivy_report.py]] - `imports_from` [EXTRACTED]
 - [[wazuh_client.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

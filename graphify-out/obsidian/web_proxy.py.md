@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
+community: "Approval & FastAPI Ingest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Approval__FastAPI_Ingest
 ---
 
 # web_proxy.py
@@ -41,4 +41,4 @@ tags:
 - [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

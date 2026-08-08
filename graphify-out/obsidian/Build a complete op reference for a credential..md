@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "rationale"
-community: "Module Group 93"
+community: "Gateway Test Suite"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_93
+  - community/Gateway_Test_Suite
 ---
 
 # Build a complete op:// reference for a credential.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_op_reference()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_93
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

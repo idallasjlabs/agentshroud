@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Module Group 181"
-location: "L579"
+community: "Gateway Test Suite"
+location: "L574"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_181
+  - community/Gateway_Test_Suite
 ---
 
 # Normal helpful responses must NOT trigger the pattern.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_legitimate_responses_not_matched()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_181
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

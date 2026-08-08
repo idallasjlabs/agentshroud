@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/gateway/requirements.txt"
+source_file: "gateway/requirements.txt"
 type: "concept"
-community: "Module Group 499"
+community: "gateway/requirements.txt"
 location: "lines 7-9"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/Module_Group_499
+  - graphify/INFERRED
+  - community/gateway/requirementstxt
 ---
 
 # Concept: Microsoft Presidio PII Detection Engine
@@ -15,4 +15,4 @@ tags:
 - [[chat.html — Secure Chat Interface]] - `references` [INFERRED]
 - [[requirements.txt — Gateway Python Dependencies]] - `depends_on` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_499
+#graphify/concept #graphify/INFERRED #community/gateway/requirementstxt

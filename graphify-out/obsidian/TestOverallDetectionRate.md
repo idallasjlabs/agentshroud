@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "Module Group 464"
-location: "L389"
+community: "Gateway Test Suite"
+location: "L387"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_464
+  - community/Gateway_Test_Suite
 ---
 
 # TestOverallDetectionRate
@@ -20,4 +20,4 @@ tags:
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_464
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

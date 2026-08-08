@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "Module Group 393"
+community: "docs/vault"
 location: "docker/Dockerfile.agentshroud"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_393
+  - community/docs/vault
 ---
 
 # Dockerfile.bot (docker/Dockerfile.agentshroud)
@@ -16,4 +16,4 @@ tags:
 - [[SDK Routing Patches (Anthropic + Telegram → gateway8080)]] - `applies` [EXTRACTED]
 - [[start-agentshroud.sh (container entrypoint)]] - `uses` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_393
+#graphify/document #graphify/EXTRACTED #community/docs/vault

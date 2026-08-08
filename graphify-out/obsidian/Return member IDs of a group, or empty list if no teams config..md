@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Tool ACL & RBAC Config"
+community: "Auth & Exception Types"
 location: "L141"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_ACL__RBAC_Config
+  - community/Auth__Exception_Types
 ---
 
 # Return member IDs of a group, or empty list if no teams config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_user_groups_by_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_ACL__RBAC_Config
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

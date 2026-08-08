@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Module Group 259"
-location: "L200"
+community: "Gateway Test Suite"
+location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_259
+  - community/Gateway_Test_Suite
 ---
 
 # TestMultiBotIsolation
@@ -31,4 +31,4 @@ tags:
 - [[Verify that different bots get independent workspaces per user.]] - `rationale_for` [EXTRACTED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_259
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

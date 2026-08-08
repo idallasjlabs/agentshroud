@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 748"
+community: "Gateway Test Suite"
 location: "L3586"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_748
+  - community/Gateway_Test_Suite
 ---
 
 # HTML-entity encoded domains in leaked JSON should normalize before approval.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_748
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

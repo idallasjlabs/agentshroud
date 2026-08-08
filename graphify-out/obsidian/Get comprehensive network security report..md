@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "Module Group 86"
+community: "Gateway Security Module"
 location: "L570"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_86
+  - community/Gateway_Security_Module
 ---
 
 # Get comprehensive network security report.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_security_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_86
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

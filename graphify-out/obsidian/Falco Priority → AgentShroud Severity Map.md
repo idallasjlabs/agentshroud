@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "concept"
-community: "Module Group 306"
+community: "docs/vault"
 location: "gateway/security/falco_monitor.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_306
+  - community/docs/vault
 ---
 
 # Falco Priority → AgentShroud Severity Map
 
 ## Connections
-- [[falco_monitor.py_1]] - `contains` [EXTRACTED]
+- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_306
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

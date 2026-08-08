@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Module Group 251"
-location: "L102"
+community: "scripts/generate-cve-page.py"
+location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_251
+  - community/scripts/generate-cve-pagepy
 ---
 
 # test_list_cve_agents_is_list_of_str()
@@ -15,4 +15,4 @@ tags:
 - [[list_cve_agents()]] - `calls` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_251
+#graphify/code #graphify/EXTRACTED #community/scripts/generate-cve-pagepy

@@ -1,18 +1,17 @@
 ---
-source_file: "chatbot/main.py"
-type: "code"
-community: "Module Group 312"
-location: "L71"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_312
+  - community/docs/vault
 ---
 
-# FastAPI
+# fastapi.md
 
 ## Connections
-- [[lifespan()]] - `references` [EXTRACTED]
-- [[main.py]] - `imports_from` [EXTRACTED]
+- [[FastAPI_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_312
+#graphify/document #graphify/EXTRACTED #community/docs/vault

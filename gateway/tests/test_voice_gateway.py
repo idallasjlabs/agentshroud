@@ -685,6 +685,33 @@ def test_token_falls_back_to_env_when_no_file(tmp_path, monkeypatch):
     assert srv._GATEWAY_TOKEN == "env-token"
 
 
+# ── Voice system message — version grounding ───────────────────────────────
+
+
+def test_voice_system_message_includes_agentshroud_version(monkeypatch):
+    """Regression 2026-08-08: the voice assistant answered "what version is
+    AgentShroud" with "1.0.0" — not hardcoded anywhere, pure hallucination,
+    because the system prompt had zero version info in it. AGENTSHROUD_VERSION
+    (docker/versions.env, synced from gateway/__init__.py by
+    scripts/sync-version.sh) must be grounded in the prompt."""
+    import voice_gateway.server as srv
+
+    monkeypatch.setenv("AGENTSHROUD_VERSION", "1.3.0")
+    msg = srv._voice_system_message()
+    assert "AgentShroud version 1.3.0" in msg["content"]
+
+
+def test_voice_system_message_version_unknown_when_env_unset(monkeypatch):
+    """No fabricated version when the env var is genuinely unset — say
+    'unknown' rather than making something up, consistent with why this
+    field was added in the first place."""
+    import voice_gateway.server as srv
+
+    monkeypatch.delenv("AGENTSHROUD_VERSION", raising=False)
+    msg = srv._voice_system_message()
+    assert "AgentShroud version unknown" in msg["content"]
+
+
 def test_stt_default_model_size_is_small_en(monkeypatch):
     """Default _MODEL_SIZE is 'small.en' when WHISPER_MODEL_SIZE is not set."""
     import importlib
@@ -784,7 +811,7 @@ def _pcm_bytes(num_samples: int = 160) -> bytes:
 
 
 def test_ws_full_utterance_state_sequence(monkeypatch):
-    """LISTEN → binary PCM → END → STT → /v1/chat/completions → TTS → PCM + END → idle."""
+    """LISTEN → binary PCM → END → STT → /forward/stream → TTS → PCM + END → idle."""
     import voice_gateway.server as srv
     import voice_gateway.stt as stt_mod
     import voice_gateway.tts as tts_mod
@@ -794,13 +821,15 @@ def test_ws_full_utterance_state_sequence(monkeypatch):
     # so the assertion would only check length.  Non-zero pins pad-then-reply.
     pcm_reply = b"\x07\x00" * 100
 
+    monkeypatch.setattr(srv, "_DEFAULT_AGENT", "hermes")
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "what time is it")
     monkeypatch.setattr(tts_mod, "synthesize", lambda t: pcm_reply)
 
-    with patch(
-        "httpx.AsyncClient.post",
-        new=AsyncMock(return_value=_openai_resp("It is noon.")),
-    ):
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        yield _mock_stream_resp(_sse_body([{"sentence": "It is noon."}, {"done": True}]))
+
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
         with TestClient(app) as client:
             with client.websocket_connect("/voice") as ws:
                 state_msg = ws.receive_text()
@@ -966,88 +995,104 @@ def test_ws_token_check_uses_constant_time_comparison():
     assert "token != _VG_AUTH_TOKEN" not in source
 
 
-# ── _call_agent unit tests ────────────────────────────────────────────────────
+# ── _call_agent_stream unit tests ────────────────────────────────────────────
+
+from contextlib import asynccontextmanager
 
 
-def _forward_resp(agent_response: str, status: int = 201):
-    """Build a mock httpx response with a ForwardResponse-shape body."""
-    mock = MagicMock()
-    mock.status_code = status
-    mock.json = MagicMock(
-        return_value={
-            "id": "abc123",
-            "sanitized": False,
-            "redactions": [],
-            "redaction_count": 0,
-            "content_hash": "deadbeef",
-            "forwarded_to": "hermes",
-            "timestamp": "2026-06-24T00:00:00Z",
-            "agent_response": agent_response,
-        }
+def _sse_body(events: list[dict]) -> list[str]:
+    return [f"data: {json.dumps(e)}" for e in events]
+
+
+def _mock_stream_resp(lines: list[str], status_code: int = 200):
+    """Build a mock httpx.Response usable as the yield value of a mocked
+    AsyncClient.stream() async context manager."""
+    resp = MagicMock()
+    resp.status_code = status_code
+    resp.raise_for_status = MagicMock()
+
+    async def _aiter_lines():
+        for line in lines:
+            yield line
+
+    resp.aiter_lines = _aiter_lines
+    return resp
+
+
+@pytest.mark.asyncio
+async def test_call_agent_stream_yields_sentences_in_order():
+    """_call_agent_stream POSTs to /forward/stream and yields each sentence
+    event as it arrives, in order."""
+    from voice_gateway.server import _call_agent_stream
+
+    lines = _sse_body(
+        [
+            {"sentence": "Hello from Hermes."},
+            {"sentence": "How can I help?"},
+            {"done": True, "id": "x", "forwarded_to": "hermes", "agent_response": "..."},
+        ]
     )
-    mock.raise_for_status = MagicMock()
-    return mock
+
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        yield _mock_stream_resp(lines)
+
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        result = [s async for s in _call_agent_stream("what is the weather", "hermes")]
+
+    assert result == ["Hello from Hermes.", "How can I help?"]
 
 
 @pytest.mark.asyncio
-async def test_call_agent_returns_agent_response():
-    """_call_agent POSTs to /forward and returns agent_response when non-empty."""
-    from voice_gateway.server import _call_agent
+async def test_call_agent_stream_non_streaming_agent_returns_telegram_notice():
+    """Agents with no streaming-compatible chat_path (OpenClaw) get a 400 from
+    the gateway — _call_agent_stream turns that into the same honest spoken
+    notice the old blocking path gave them, not a generic failure message."""
+    import httpx
 
-    with patch(
-        "httpx.AsyncClient.post",
-        new=AsyncMock(return_value=_forward_resp("Hello from Hermes!")),
-    ):
-        result = await _call_agent("what is the weather", "hermes")
+    from voice_gateway.server import _call_agent_stream
 
-    assert result == "Hello from Hermes!"
+    request = MagicMock()
+    response = MagicMock(status_code=400)
 
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        resp = _mock_stream_resp([])
+        resp.raise_for_status = MagicMock(
+            side_effect=httpx.HTTPStatusError("400", request=request, response=response)
+        )
+        yield resp
 
-@pytest.mark.asyncio
-async def test_call_agent_async_agent_returns_telegram_notice():
-    """_call_agent returns an honest spoken notice for agents with empty agent_response."""
-    from voice_gateway.server import _call_agent
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        result = [s async for s in _call_agent_stream("do something", "openclaw")]
 
-    with patch(
-        "httpx.AsyncClient.post",
-        new=AsyncMock(return_value=_forward_resp("")),
-    ):
-        result = await _call_agent("do something", "openclaw")
-
-    assert "Telegram" in result
-    assert "openclaw" in result.lower() or "Openclaw" in result
-
-
-@pytest.mark.asyncio
-async def test_call_agent_null_agent_response_returns_telegram_notice():
-    """agent_response key absent in body → honest Telegram notice, no crash."""
-    from voice_gateway.server import _call_agent
-
-    mock = MagicMock()
-    mock.status_code = 201
-    mock.json = MagicMock(
-        return_value={
-            "id": "x",
-            "sanitized": False,
-            "redactions": [],
-            "redaction_count": 0,
-            "content_hash": "ff",
-            "forwarded_to": "openclaw",
-            "timestamp": "2026-06-24T00:00:00Z",
-            # agent_response key intentionally absent
-        }
-    )
-    mock.raise_for_status = MagicMock()
-
-    with patch("httpx.AsyncClient.post", new=AsyncMock(return_value=mock)):
-        result = await _call_agent("hello", "openclaw")
-
-    assert "Telegram" in result
+    assert len(result) == 1
+    assert "Telegram" in result[0]
+    assert "openclaw" in result[0].lower()
 
 
 @pytest.mark.asyncio
-async def test_call_agent_posts_to_forward_endpoint(monkeypatch):
-    """_call_agent must POST to /forward, not /v1/chat/completions."""
+async def test_call_agent_stream_empty_stream_yields_nothing():
+    """A stream that goes straight to 'done' with no sentence events (e.g.
+    everything got filtered) yields nothing — no crash, no phantom reply."""
+    from voice_gateway.server import _call_agent_stream
+
+    lines = _sse_body([{"done": True, "id": "x", "forwarded_to": "hermes", "agent_response": ""}])
+
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        yield _mock_stream_resp(lines)
+
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        result = [s async for s in _call_agent_stream("hello", "hermes")]
+
+    assert result == []
+
+
+@pytest.mark.asyncio
+async def test_call_agent_stream_posts_to_forward_stream_endpoint(monkeypatch):
+    """_call_agent_stream must POST to /forward/stream with stream:true, not
+    the old blocking /forward."""
     import voice_gateway.server as srv
 
     monkeypatch.setattr(srv, "_GATEWAY_URL", "http://gateway:8080")
@@ -1056,21 +1101,113 @@ async def test_call_agent_posts_to_forward_endpoint(monkeypatch):
 
     captured: dict = {}
 
-    async def _capture(url, json=None, headers=None, **kw):
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
         captured["url"] = url
         captured["body"] = json or {}
         captured["headers"] = headers or {}
-        return _forward_resp("ok")
+        yield _mock_stream_resp(_sse_body([{"done": True, "id": "x", "forwarded_to": "hermes"}]))
 
-    with patch("httpx.AsyncClient.post", new=AsyncMock(side_effect=_capture)):
-        await srv._call_agent("test query", "hermes")
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        async for _ in srv._call_agent_stream("test query", "hermes"):
+            pass
 
-    assert captured["url"].endswith("/forward"), f"Expected /forward, got {captured['url']!r}"
+    assert captured["url"].endswith(
+        "/forward/stream"
+    ), f"Expected /forward/stream, got {captured['url']!r}"
     assert captured["body"].get("route_to") == "hermes"
     assert captured["body"].get("source") == "api"
     assert captured["body"].get("content") == "test query"
+    assert captured["body"].get("stream") is True
     assert captured["headers"].get("Authorization") == "Bearer test-bearer"
     assert captured["headers"].get("X-AgentShroud-User-Id") == "9999"
+
+
+@pytest.mark.asyncio
+async def test_call_agent_stream_skips_blank_and_comment_lines():
+    """SSE keepalive comments (': ...') and blank lines are ignored, not
+    treated as malformed data."""
+    from voice_gateway.server import _call_agent_stream
+
+    lines = ["", ": keepalive", *_sse_body([{"sentence": "Hi."}, {"done": True}])]
+
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        yield _mock_stream_resp(lines)
+
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        result = [s async for s in _call_agent_stream("hi", "hermes")]
+
+    assert result == ["Hi."]
+
+
+@pytest.mark.asyncio
+async def test_call_agent_stream_malformed_json_line_skipped_not_fatal():
+    """A single corrupted SSE line logs a warning and is skipped — it must not
+    abort the whole stream, later valid sentences still arrive."""
+    from voice_gateway.server import _call_agent_stream
+
+    lines = [
+        "data: {not valid json",
+        *_sse_body([{"sentence": "Still works."}, {"done": True}]),
+    ]
+
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        yield _mock_stream_resp(lines)
+
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        result = [s async for s in _call_agent_stream("hi", "hermes")]
+
+    assert result == ["Still works."]
+
+
+@pytest.mark.asyncio
+async def test_call_agent_stream_non_400_http_error_falls_back():
+    """A non-400 HTTP error (e.g. 500) is a real failure, not the OpenClaw
+    no-streaming-support case — falls back to the generic trouble-connecting
+    message, not the Telegram notice."""
+    import httpx
+
+    from voice_gateway.server import _call_agent_stream
+
+    request = MagicMock()
+    response = MagicMock(status_code=500)
+
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        resp = _mock_stream_resp([])
+        resp.raise_for_status = MagicMock(
+            side_effect=httpx.HTTPStatusError("500", request=request, response=response)
+        )
+        yield resp
+
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        result = [s async for s in _call_agent_stream("hi", "hermes")]
+
+    assert len(result) == 1
+    assert "trouble connecting" in result[0].lower()
+    assert "Telegram" not in result[0]
+
+
+@pytest.mark.asyncio
+async def test_call_agent_stream_generic_http_error_falls_back():
+    """A connection-level error (not a status/timeout) also falls back to the
+    trouble-connecting message instead of propagating."""
+    import httpx
+
+    from voice_gateway.server import _call_agent_stream
+
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        raise httpx.ConnectError("refused")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
+
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        result = [s async for s in _call_agent_stream("hi", "hermes")]
+
+    assert len(result) == 1
+    assert "trouble connecting" in result[0].lower()
 
 
 # ── Sentence-chunked TTS tests ────────────────────────────────────────────────
@@ -1095,15 +1232,17 @@ def test_ws_sentence_chunked_tts_calls_synthesize_per_sentence(monkeypatch):
         idx = len(synth_calls)
         return [pcm_s1, pcm_s2, pcm_s3][idx - 1] if idx <= 3 else b""
 
+    monkeypatch.setattr(srv, "_DEFAULT_AGENT", "hermes")
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "what time is it")
     monkeypatch.setattr(tts_mod, "synthesize", _mock_synthesize)
 
     three_sentence_reply = "It is Monday today. The sun is shining brightly. Time to get to work."
 
-    with patch(
-        "httpx.AsyncClient.post",
-        new=AsyncMock(return_value=_forward_resp(three_sentence_reply)),
-    ):
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        yield _mock_stream_resp(_sse_body([{"sentence": three_sentence_reply}, {"done": True}]))
+
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
         with TestClient(app) as client:
             with client.websocket_connect("/voice") as ws:
                 ws.receive_text()  # initial idle
@@ -1138,8 +1277,17 @@ def test_ws_sentence_chunked_tts_calls_synthesize_per_sentence(monkeypatch):
 
     # synthesize() called once per sentence (3 sentences)
     assert len(synth_calls) == 3, f"Expected 3 synth calls, got {len(synth_calls)}: {synth_calls}"
-    # All PCM received in order (first sentence carries the leading-silence pad)
-    assert binary_received == srv._TTS_LEAD_SILENCE + pcm_s1 + pcm_s2 + pcm_s3
+    # All PCM received in order (first sentence carries the leading-silence
+    # pad; every later sentence carries the shorter inter-sentence gap, so a
+    # splice discontinuity never lands directly on a sentence boundary).
+    assert binary_received == (
+        srv._TTS_LEAD_SILENCE
+        + pcm_s1
+        + srv._TTS_SENTENCE_GAP
+        + pcm_s2
+        + srv._TTS_SENTENCE_GAP
+        + pcm_s3
+    )
     # Exactly one END frame
     assert end_count == 1, f"Expected 1 END frame, got {end_count}"
     # Final state is idle
@@ -1161,13 +1309,15 @@ def test_ws_one_sentence_reply_unchanged(monkeypatch):
         synth_calls.append(text)
         return pcm_reply
 
+    monkeypatch.setattr(srv, "_DEFAULT_AGENT", "hermes")
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "what time is it")
     monkeypatch.setattr(tts_mod, "synthesize", _mock_synthesize)
 
-    with patch(
-        "httpx.AsyncClient.post",
-        new=AsyncMock(return_value=_forward_resp("It is noon.")),
-    ):
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        yield _mock_stream_resp(_sse_body([{"sentence": "It is noon."}, {"done": True}]))
+
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
         with TestClient(app) as client:
             with client.websocket_connect("/voice") as ws:
                 ws.receive_text()  # initial idle
@@ -1203,7 +1353,7 @@ def test_ws_one_sentence_reply_unchanged(monkeypatch):
 
 @pytest.mark.asyncio
 async def test_call_agent_uses_structured_timeout(monkeypatch):
-    """_call_agent must pass a structured httpx.Timeout to AsyncClient.
+    """_call_agent_stream must pass a structured httpx.Timeout to AsyncClient.
 
     The read deadline is env-tunable (VG_AGENT_READ_TIMEOUT_S, default 100 s):
     Hermes is the owner's admin voice channel, so a slow real answer beats a
@@ -1216,6 +1366,16 @@ async def test_call_agent_uses_structured_timeout(monkeypatch):
 
     captured_timeout: dict = {}
 
+    class _FakeStreamCtx:
+        def __init__(self):
+            pass
+
+        async def __aenter__(self):
+            return _mock_stream_resp(_sse_body([{"done": True}]))
+
+        async def __aexit__(self, *a):
+            pass
+
     class _FakeClient:
         def __init__(self, *args, **kwargs):
             captured_timeout["timeout"] = kwargs.get("timeout")
@@ -1226,14 +1386,15 @@ async def test_call_agent_uses_structured_timeout(monkeypatch):
         async def __aexit__(self, *a):
             pass
 
-        async def post(self, url, **kw):
-            return _forward_resp("ok")
+        def stream(self, method, url, **kw):
+            return _FakeStreamCtx()
 
     monkeypatch.setattr(srv.httpx, "AsyncClient", _FakeClient)
 
-    await srv._call_agent("hi", "hermes")
+    async for _ in srv._call_agent_stream("hi", "hermes"):
+        pass
 
-    assert "timeout" in captured_timeout, "_call_agent must pass a timeout to AsyncClient"
+    assert "timeout" in captured_timeout, "_call_agent_stream must pass a timeout to AsyncClient"
     t = captured_timeout["timeout"]
     assert isinstance(t, httpx.Timeout), f"Expected httpx.Timeout instance, got {type(t)}: {t!r}"
     assert t.read == 100.0, (
@@ -1261,19 +1422,16 @@ async def test_ws_direct_agent_calls_call_llm(monkeypatch):
     llm_called = []
     agent_called = []
 
-    original_call_agent = srv._call_agent if hasattr(srv, "_call_agent") else None
-
     async def _mock_llm(history):
         llm_called.append(True)
         return "fast reply"
 
     async def _mock_agent(transcript, agent):
         agent_called.append(agent)
-        return "agent reply"
+        yield "agent reply"
 
     monkeypatch.setattr(srv, "_call_llm", _mock_llm)
-    if original_call_agent:
-        monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+    monkeypatch.setattr(srv, "_call_agent_stream", _mock_agent)
 
     with TestClient(app) as client:
         with client.websocket_connect("/voice?agent=direct") as ws:
@@ -1320,11 +1478,10 @@ async def test_ws_hermes_agent_calls_call_agent(monkeypatch):
 
     async def _mock_agent(transcript, agent):
         agent_called.append(agent)
-        return "Hermes says hi"
+        yield "Hermes says hi"
 
     monkeypatch.setattr(srv, "_call_llm", _mock_llm)
-    if hasattr(srv, "_call_agent"):
-        monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+    monkeypatch.setattr(srv, "_call_agent_stream", _mock_agent)
 
     with TestClient(app) as client:
         with client.websocket_connect("/voice?agent=hermes") as ws:
@@ -1351,13 +1508,15 @@ async def test_ws_hermes_agent_calls_call_agent(monkeypatch):
     assert len(llm_called) == 0, "hermes agent must NOT call _call_llm"
 
 
-def test_ws_default_agent_is_hermes(monkeypatch):
-    """When ?agent= is absent the default agent must be 'hermes', not 'direct'."""
+def test_ws_default_agent_is_direct(monkeypatch):
+    """When ?agent= is absent the default agent must be 'direct' (fast local
+    model) — SCRUM-113 follow-on: Hermes's own agentic-loop latency (~9s to
+    first sentence, observed live) made it too slow as the voice default."""
     import voice_gateway.server as srv
 
     assert (
-        srv._DEFAULT_AGENT == "hermes"
-    ), f"Expected _DEFAULT_AGENT='hermes', got {srv._DEFAULT_AGENT!r}"
+        srv._DEFAULT_AGENT == "direct"
+    ), f"Expected _DEFAULT_AGENT='direct', got {srv._DEFAULT_AGENT!r}"
 
 
 def test_ws_agent_query_param_absent_uses_default(monkeypatch):
@@ -1549,24 +1708,24 @@ async def test_ws_pipeline_error_logs_and_recovers_to_idle(monkeypatch, caplog):
 
 
 async def test_call_agent_read_timeout_returns_fallback(monkeypatch):
-    """_call_agent must return a spoken fallback string and log a WARNING when
-    httpx raises ReadTimeout (agent hung for > 35 s).
-    Covers voice_gateway/server.py lines 224-228.
+    """_call_agent_stream must yield a spoken fallback string and log a WARNING
+    when httpx raises ReadTimeout (agent hung for > 35 s).
     """
-    from unittest.mock import AsyncMock, patch
-
     import httpx
 
     import voice_gateway.server as srv
 
-    with patch(
-        "httpx.AsyncClient.post",
-        new=AsyncMock(side_effect=httpx.ReadTimeout("timed out")),
-    ):
-        result = await srv._call_agent("hello", "hermes")
+    @asynccontextmanager
+    async def mock_stream(self, method, url, json=None, headers=None, **kw):
+        raise httpx.ReadTimeout("timed out")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
 
+    with patch("httpx.AsyncClient.stream", new=mock_stream):
+        result = [s async for s in srv._call_agent_stream("hello", "hermes")]
+
+    assert len(result) == 1
     assert (
-        "having trouble" in result.lower() or "try again" in result.lower()
+        "having trouble" in result[0].lower() or "try again" in result[0].lower()
     ), f"Expected fallback string, got: {result!r}"
 
 
@@ -1806,10 +1965,9 @@ async def test_ws_tts_pipeline_sends_all_sentences(monkeypatch):
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
 
     async def _mock_agent(transcript, agent):
-        return "First sentence here.  Second sentence here.  Third sentence here."
+        yield "First sentence here.  Second sentence here.  Third sentence here."
 
-    if hasattr(srv, "_call_agent"):
-        monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+    monkeypatch.setattr(srv, "_call_agent_stream", _mock_agent)
 
     bytes_received: list[bytes] = []
     text_received: list[str] = []
@@ -2010,14 +2168,15 @@ async def test_ws_stop_during_speaking_aborts_tts(monkeypatch):
     import voice_gateway.tts as tts_mod
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_DEFAULT_AGENT", "hermes")
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "tell me a story")
 
     reply = "First sentence here.  Second sentence here.  Third sentence here."
 
     async def _mock_agent(transcript, agent):
-        return reply
+        yield reply
 
-    monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+    monkeypatch.setattr(srv, "_call_agent_stream", _mock_agent)
 
     sentence_pcm = {
         "First sentence here.": b"\x01\x00" * 100,
@@ -2099,9 +2258,9 @@ async def test_ws_device_log_during_speaking_still_recorded(monkeypatch, caplog)
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "hello")
 
     async def _mock_agent(transcript, agent):
-        return "Only sentence."
+        yield "Only sentence."
 
-    monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+    monkeypatch.setattr(srv, "_call_agent_stream", _mock_agent)
     monkeypatch.setattr(tts_mod, "synthesize", lambda t: b"\x01\x00" * 100)
 
     ws = _mock_ws(
@@ -2137,13 +2296,14 @@ async def test_ws_hung_tts_synthesis_still_returns_idle(monkeypatch):
     import voice_gateway.tts as tts_mod
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_DEFAULT_AGENT", "hermes")
     monkeypatch.setattr(srv, "_TTS_SENTENCE_TIMEOUT_S", 0.05)
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "hello")
 
     async def _mock_agent(transcript, agent):
-        return "Only sentence."
+        yield "Only sentence."
 
-    monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+    monkeypatch.setattr(srv, "_call_agent_stream", _mock_agent)
 
     def _hung_synthesize(t):
         time.sleep(0.5)  # far beyond the 0.05 s budget
@@ -2214,8 +2374,9 @@ async def test_ws_volume_command_intercepted(monkeypatch):
 
     async def _agent_must_not_be_called(transcript, agent):
         raise AssertionError("volume command must not be routed to the agent")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
 
-    monkeypatch.setattr(srv, "_call_agent", _agent_must_not_be_called)
+    monkeypatch.setattr(srv, "_call_agent_stream", _agent_must_not_be_called)
 
     spoken: list = []
 
@@ -2262,15 +2423,16 @@ async def test_ws_volume_command_with_chained_question(monkeypatch):
     import voice_gateway.tts as tts_mod
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_DEFAULT_AGENT", "hermes")
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "Set volume 80. What time is it?")
 
     agent_calls: list = []
 
     async def _mock_agent(transcript, agent):
         agent_calls.append(transcript)
-        return "It is noon."
+        yield "It is noon."
 
-    monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+    monkeypatch.setattr(srv, "_call_agent_stream", _mock_agent)
 
     spoken: list = []
 
@@ -2373,8 +2535,9 @@ async def test_ws_volume_query_intercepted_returns_tracked_level(monkeypatch):
 
     async def _agent_must_not_be_called(transcript, agent):
         raise AssertionError("volume query must not be routed to the agent")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
 
-    monkeypatch.setattr(srv, "_call_agent", _agent_must_not_be_called)
+    monkeypatch.setattr(srv, "_call_agent_stream", _agent_must_not_be_called)
 
     spoken: list = []
 
@@ -2424,8 +2587,9 @@ async def test_ws_volume_query_unknown_state_intercepted(monkeypatch):
 
     async def _agent_must_not_be_called(transcript, agent):
         raise AssertionError("volume query must not be routed to the agent")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
 
-    monkeypatch.setattr(srv, "_call_agent", _agent_must_not_be_called)
+    monkeypatch.setattr(srv, "_call_agent_stream", _agent_must_not_be_called)
 
     spoken: list = []
 
@@ -2465,8 +2629,9 @@ async def test_ws_set_then_query_reports_the_set_level(monkeypatch):
 
     async def _agent_must_not_be_called(transcript, agent):
         raise AssertionError("neither set nor query may reach the agent")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
 
-    monkeypatch.setattr(srv, "_call_agent", _agent_must_not_be_called)
+    monkeypatch.setattr(srv, "_call_agent_stream", _agent_must_not_be_called)
 
     def _capture_synth(t):
         return b"\x01\x00" * 50
@@ -2507,6 +2672,387 @@ async def test_ws_set_then_query_reports_the_set_level(monkeypatch):
     assert any("45 percent" in t for t in spoken), f"tracked level not spoken: {spoken}"
 
 
+# ── Spoken model-switch command ("use <model>" / "tell <agent>") ──────────────
+
+
+def test_parse_model_switch_command_forms():
+    """ "<use|tell|ask|talk to|switch to|...> <model|agent>" -> ('model', gateway
+    model name, label) or ('agent', route_to slug, label); ordinary speech ->
+    None. Model/agent word can be found via any recognized verb phrase, with
+    a few filler words allowed in between (owner 2026-08-07: "phrasing
+    should be flexible natural language, not hard-coded")."""
+    import voice_gateway.server as srv
+
+    cases = [
+        ("Use local.", ("model", "qwen3-14b", "Qwen3")),
+        ("use qwen", ("model", "qwen3-14b", "Qwen3")),
+        ("switch me to the local model", ("model", "qwen3-14b", "Qwen3")),
+        ("go to the local model", ("model", "qwen3-14b", "Qwen3")),
+        ("Use Claude.", ("model", "claude-haiku-4-5-20251001", "Claude")),
+        ("switch to claude", ("model", "claude-haiku-4-5-20251001", "Claude")),
+        ("can you please switch to claude", ("model", "claude-haiku-4-5-20251001", "Claude")),
+        ("please use claude for this one", ("model", "claude-haiku-4-5-20251001", "Claude")),
+        ("Use ChatGPT.", ("model", "gpt-4o-mini", "ChatGPT")),
+        ("use gpt", ("model", "gpt-4o-mini", "ChatGPT")),
+        ("lets use chatgpt instead", ("model", "gpt-4o-mini", "ChatGPT")),
+        ("Use Gemini.", ("model", "gemini-2.5-flash", "Gemini")),
+        ("Tell Hermes to check my email.", ("agent", "hermes", "Hermes")),
+        ("tell openclaw", ("agent", "openclaw", "OpenClaw")),
+        ("I want to talk to Hermes", ("agent", "hermes", "Hermes")),
+        ("connect me to openclaw", ("agent", "openclaw", "OpenClaw")),
+        ("ask hermes to check my email", ("agent", "hermes", "Hermes")),
+        # STT mishearing of "Claude" — live regression 2026-08-07: real
+        # Whisper transcript was literally "Use CLAWD." for a spoken
+        # "Use Claude."; faster-whisper has no prior for the proper noun and
+        # substitutes the nearest word it knows.
+        ("Use CLAWD.", ("model", "claude-haiku-4-5-20251001", "Claude")),
+        ("use claud", ("model", "claude-haiku-4-5-20251001", "Claude")),
+        ("use clawed", ("model", "claude-haiku-4-5-20251001", "Claude")),
+        ("use cloud", ("model", "claude-haiku-4-5-20251001", "Claude")),
+        ("What time is it?", None),
+        ("Use the volume knob.", None),
+        ("Tell me a story.", None),  # "tell" without a registered agent slug
+        ("the weather in cloud country is nice", None),  # no leading verb
+    ]
+    for text, expected in cases:
+        assert srv._parse_model_switch_command(text) == expected, f"{text!r}"
+
+
+@pytest.mark.asyncio
+async def test_ws_use_model_command_intercepted(monkeypatch):
+    """A bare 'use Claude' must NOT reach any agent: the server updates the
+    sticky overrides and speaks a confirmation via the normal TTS path."""
+    from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "Use Claude.")
+
+    async def _llm_must_not_be_called(history):
+        raise AssertionError("bare switch command must not reach the LLM")
+
+    async def _agent_must_not_be_called(transcript, agent):
+        raise AssertionError("bare switch command must not be routed to the agent")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
+
+    monkeypatch.setattr(srv, "_call_llm", _llm_must_not_be_called)
+    monkeypatch.setattr(srv, "_call_agent_stream", _agent_must_not_be_called)
+
+    spoken: list = []
+
+    def _capture_synth(t):
+        spoken.append(t)
+        return b"\x01\x00" * 50
+
+    monkeypatch.setattr(tts_mod, "synthesize", _capture_synth)
+
+    ws = _mock_ws(
+        [
+            {"text": "LISTEN", "bytes": None},
+            {"bytes": _pcm_bytes(), "text": None},
+            {"text": "END", "bytes": None},
+            WebSocketDisconnect(code=1000),
+        ]
+    )
+
+    await srv.voice_endpoint(ws)
+
+    assert srv._agent_override == "direct", "use <model> must select the direct fast path"
+    assert srv._model_override == "claude-haiku-4-5-20251001"
+    assert any(
+        "switched to claude" in t.lower() for t in spoken
+    ), f"confirmation not spoken: {spoken}"
+
+    # Device's top-left agent-name display must be told to update too —
+    # otherwise it stays stuck on whatever the firmware booted with,
+    # contradicting what the device is actually talking to.
+    sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
+    ctrl = [json.loads(t) for t in sent_texts if '"cmd"' in t]
+    assert {"cmd": "set_agent_label", "value": "Claude"} in ctrl, f"no label update sent: {ctrl}"
+
+
+@pytest.mark.asyncio
+async def test_ws_use_local_command_confirms_with_model_name(monkeypatch):
+    """'use qwen' sets agent='direct', model='qwen3-14b', and confirms with
+    the actual model name ('Qwen3'), not the internal slug — owner
+    2026-08-07: display should show which model, not a generic placeholder."""
+    from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_agent_override", "hermes")
+    monkeypatch.setattr(srv, "_model_override", "gpt-4o-mini")
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "use qwen")
+
+    async def _llm_must_not_be_called(history):
+        raise AssertionError("bare switch command must not reach the LLM")
+
+    async def _agent_must_not_be_called(transcript, agent):
+        raise AssertionError("bare switch command must not be routed to the agent")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
+
+    monkeypatch.setattr(srv, "_call_llm", _llm_must_not_be_called)
+    monkeypatch.setattr(srv, "_call_agent_stream", _agent_must_not_be_called)
+
+    spoken: list = []
+
+    def _capture_synth(t):
+        spoken.append(t)
+        return b"\x01\x00" * 50
+
+    monkeypatch.setattr(tts_mod, "synthesize", _capture_synth)
+
+    ws = _mock_ws(
+        [
+            {"text": "LISTEN", "bytes": None},
+            {"bytes": _pcm_bytes(), "text": None},
+            {"text": "END", "bytes": None},
+            WebSocketDisconnect(code=1000),
+        ]
+    )
+
+    await srv.voice_endpoint(ws)
+
+    assert srv._agent_override == "direct"
+    assert srv._model_override == "qwen3-14b"
+    assert any(
+        "switched to qwen3" in t.lower() for t in spoken
+    ), f"confirmation not spoken: {spoken}"
+
+
+@pytest.mark.asyncio
+async def test_ws_use_model_command_with_chained_question(monkeypatch):
+    """'Use Claude. What's on my calendar?' must switch the model AND route
+    the remaining question through the fast direct path (_call_llm) in the
+    same turn, mirroring the volume command's chained-question handling."""
+    from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "Use Claude. What's on my calendar?")
+
+    llm_calls: list = []
+
+    async def _mock_llm(history):
+        llm_calls.append(history[-1]["content"])
+        return "Nothing scheduled."
+
+    async def _agent_must_not_be_called(transcript, agent):
+        raise AssertionError("a model switch must not route through the agent path")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
+
+    monkeypatch.setattr(srv, "_call_llm", _mock_llm)
+    monkeypatch.setattr(srv, "_call_agent_stream", _agent_must_not_be_called)
+
+    spoken: list = []
+
+    def _capture_synth(t):
+        spoken.append(t)
+        return b"\x01\x00" * 50
+
+    monkeypatch.setattr(tts_mod, "synthesize", _capture_synth)
+
+    ws = _mock_ws(
+        [
+            {"text": "LISTEN", "bytes": None},
+            {"bytes": _pcm_bytes(), "text": None},
+            {"text": "END", "bytes": None},
+            WebSocketDisconnect(code=1000),
+        ]
+    )
+
+    await srv.voice_endpoint(ws)
+
+    assert srv._model_override == "claude-haiku-4-5-20251001"
+    assert llm_calls, "chained question was swallowed — LLM never called"
+    assert (
+        "claude" not in llm_calls[0].lower()
+    ), f"switch command leaked into the query: {llm_calls[0]!r}"
+    assert "calendar" in llm_calls[0].lower()
+    _all_spoken = " ".join(spoken)
+    assert (
+        "switched to claude" in _all_spoken.lower() and "nothing scheduled" in _all_spoken.lower()
+    ), f"confirmation + answer not both spoken: {spoken}"
+
+
+@pytest.mark.asyncio
+async def test_ws_tell_agent_command_intercepted(monkeypatch):
+    """A bare 'tell Hermes' must NOT reach any agent yet: it only sets the
+    sticky agent override and speaks a confirmation — same intercept pattern
+    as 'use <model>', distinguished by the "Now talking to" phrasing."""
+    from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "Tell Hermes.")
+
+    async def _agent_must_not_be_called(transcript, agent):
+        raise AssertionError("bare switch command must not be routed to the agent")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
+
+    monkeypatch.setattr(srv, "_call_agent_stream", _agent_must_not_be_called)
+
+    spoken: list = []
+
+    def _capture_synth(t):
+        spoken.append(t)
+        return b"\x01\x00" * 50
+
+    monkeypatch.setattr(tts_mod, "synthesize", _capture_synth)
+
+    ws = _mock_ws(
+        [
+            {"text": "LISTEN", "bytes": None},
+            {"bytes": _pcm_bytes(), "text": None},
+            {"text": "END", "bytes": None},
+            WebSocketDisconnect(code=1000),
+        ]
+    )
+
+    await srv.voice_endpoint(ws)
+
+    assert srv._agent_override == "hermes"
+    assert any(
+        "now talking to hermes" in t.lower() for t in spoken
+    ), f"confirmation not spoken: {spoken}"
+
+    sent_texts = [c.args[0] for c in ws.send_text.call_args_list]
+    ctrl = [json.loads(t) for t in sent_texts if '"cmd"' in t]
+    assert {"cmd": "set_agent_label", "value": "Hermes"} in ctrl, f"no label update sent: {ctrl}"
+
+
+@pytest.mark.asyncio
+async def test_ws_tell_agent_command_with_chained_instruction(monkeypatch):
+    """'Tell Hermes to check my email.' must switch the agent AND route the
+    remaining instruction through the full agentic path (_call_agent_stream)
+    in the same turn."""
+    from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "Tell Hermes to check my email.")
+
+    agent_calls: list = []
+    transcript_calls: list = []
+
+    async def _mock_agent(transcript, agent):
+        transcript_calls.append(transcript)
+        agent_calls.append(agent)
+        yield "Checking now."
+
+    async def _llm_must_not_be_called(history):
+        raise AssertionError("tell <agent> must not route through the direct fast path")
+
+    monkeypatch.setattr(srv, "_call_agent_stream", _mock_agent)
+    monkeypatch.setattr(srv, "_call_llm", _llm_must_not_be_called)
+
+    spoken: list = []
+
+    def _capture_synth(t):
+        spoken.append(t)
+        return b"\x01\x00" * 50
+
+    monkeypatch.setattr(tts_mod, "synthesize", _capture_synth)
+
+    ws = _mock_ws(
+        [
+            {"text": "LISTEN", "bytes": None},
+            {"bytes": _pcm_bytes(), "text": None},
+            {"text": "END", "bytes": None},
+            WebSocketDisconnect(code=1000),
+        ]
+    )
+
+    await srv.voice_endpoint(ws)
+
+    assert agent_calls == ["hermes"], f"expected dispatch to hermes, got {agent_calls}"
+    assert transcript_calls, "chained instruction was swallowed — agent never called"
+    assert (
+        "tell hermes" not in transcript_calls[0].lower()
+    ), f"switch command leaked into the agent query: {transcript_calls[0]!r}"
+    assert "email" in transcript_calls[0].lower()
+    _all_spoken = " ".join(spoken)
+    assert (
+        "now talking to hermes" in _all_spoken.lower() and "checking now" in _all_spoken.lower()
+    ), f"confirmation + answer not both spoken: {spoken}"
+
+
+@pytest.mark.asyncio
+async def test_switch_overrides_persist_across_reconnect(monkeypatch):
+    """A 'use Claude' override must survive a reconnect: a later connection
+    with no ?agent= param still routes through the direct fast path with the
+    Claude model — same persistence model as _last_set_volume, proven by
+    test_ws_set_then_query_reports_the_set_level."""
+    from fastapi.websockets import WebSocketDisconnect
+
+    import voice_gateway.server as srv
+    import voice_gateway.stt as stt_mod
+    import voice_gateway.tts as tts_mod
+
+    monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_DEFAULT_AGENT", "direct")
+
+    async def _agent_must_not_be_called(transcript, agent):
+        raise AssertionError("bare switch command must not be routed to the agent")
+        yield  # pragma: no cover — unreachable, satisfies generator shape
+
+    monkeypatch.setattr(srv, "_call_agent_stream", _agent_must_not_be_called)
+    monkeypatch.setattr(tts_mod, "synthesize", lambda t: b"\x01\x00" * 50)
+
+    async def _llm_must_not_be_called(history):
+        raise AssertionError("bare switch command must not reach the LLM")
+
+    monkeypatch.setattr(srv, "_call_llm", _llm_must_not_be_called)
+
+    # First connection: speak the switch command.
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "Use Claude.")
+    ws1 = _mock_ws(
+        [
+            {"text": "LISTEN", "bytes": None},
+            {"bytes": _pcm_bytes(), "text": None},
+            {"text": "END", "bytes": None},
+            WebSocketDisconnect(code=1000),
+        ]
+    )
+    await srv.voice_endpoint(ws1)
+    assert srv._agent_override == "direct"
+    assert srv._model_override == "claude-haiku-4-5-20251001"
+
+    # Second connection (simulated reconnect, no ?agent= param): a normal
+    # question must still use the Claude model, not the module's _VOICE_MODEL.
+    async def _mock_llm(history):
+        return "Claude reply"
+
+    monkeypatch.setattr(srv, "_call_llm", _mock_llm)
+    monkeypatch.setattr(stt_mod, "transcribe", lambda b: "What's the weather?")
+    ws2 = _mock_ws(
+        [
+            {"text": "LISTEN", "bytes": None},
+            {"bytes": _pcm_bytes(), "text": None},
+            {"text": "END", "bytes": None},
+            WebSocketDisconnect(code=1000),
+        ]
+    )
+    await srv.voice_endpoint(ws2)
+    assert srv._agent_override == "direct", "override did not survive reconnect"
+    assert srv._model_override == "claude-haiku-4-5-20251001"
+
+
 # ── TTS resume-on-reconnect ───────────────────────────────────────────────────
 
 
@@ -2514,11 +3060,11 @@ async def test_ws_set_then_query_reports_the_set_level(monkeypatch):
 def _reset_reply_resume():
     import voice_gateway.server as srv
 
-    for attr in ("_reply_resume", "_utterance_resume"):
+    for attr in ("_reply_resume", "_utterance_resume", "_agent_override", "_model_override"):
         if hasattr(srv, attr):
             setattr(srv, attr, None)
     yield
-    for attr in ("_reply_resume", "_utterance_resume"):
+    for attr in ("_reply_resume", "_utterance_resume", "_agent_override", "_model_override"):
         if hasattr(srv, attr):
             setattr(srv, attr, None)
 
@@ -2650,12 +3196,13 @@ async def test_tts_resume_after_mid_stream_disconnect(monkeypatch):
     import voice_gateway.tts as tts_mod
 
     monkeypatch.setattr(srv, "_VG_AUTH_TOKEN", "")
+    monkeypatch.setattr(srv, "_DEFAULT_AGENT", "hermes")
     monkeypatch.setattr(stt_mod, "transcribe", lambda b: "hello")
 
     async def _mock_agent(transcript, agent):
-        return "Only sentence."
+        yield "Only sentence."
 
-    monkeypatch.setattr(srv, "_call_agent", _mock_agent)
+    monkeypatch.setattr(srv, "_call_agent_stream", _mock_agent)
     reply_pcm = bytes(range(256)) * 128  # 32 KB, recognisable bytes
     monkeypatch.setattr(tts_mod, "synthesize", lambda t: reply_pcm)
 

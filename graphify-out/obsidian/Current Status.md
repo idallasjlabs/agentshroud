@@ -1,0 +1,19 @@
+---
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
+type: "document"
+community: "Bot Container Scripts"
+location: "L105"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Bot_Container_Scripts
+---
+
+# Current Status
+
+## Connections
+- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
+- [[Development Phases]] - `contains` [EXTRACTED]
+- [[v0.8.0 Focus Areas]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "code"
-community: "Module Group 136"
+community: "Gateway Test Suite"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_136
+  - community/Gateway_Test_Suite
 ---
 
 # _ok_response()
@@ -22,4 +22,4 @@ tags:
 - [[test_repeat_within_24h_is_suppressed()]] - `calls` [EXTRACTED]
 - [[test_state_file_corruption_recovers()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_136
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

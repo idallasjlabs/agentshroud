@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Approval Hardening"
-location: "L150"
+community: "Gateway Test Suite"
+location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Hardening
+  - community/Gateway_Test_Suite
 ---
 
 # Test detection of authority/legitimacy claims.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_deception_detection_authority_claims()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Hardening
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

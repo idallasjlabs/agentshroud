@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Module Group 124"
+community: "Gateway Test Suite"
 location: "L561"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_124
+  - community/Gateway_Test_Suite
 ---
 
 # TestExecuteToolCall
@@ -37,4 +37,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_124
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_shared_memory.py"
+source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "Module Group 75"
-location: "L68"
+community: "Group RBAC Roles"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_75
+  - community/Group_RBAC_Roles
 ---
 
 # rbac()
 
 ## Connections
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[TeamsConfig]] - `calls` [EXTRACTED]
-- [[test_shared_memory.py]] - `contains` [EXTRACTED]
+- [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_75
+#graphify/code #graphify/EXTRACTED #community/Group_RBAC_Roles

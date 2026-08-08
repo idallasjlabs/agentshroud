@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Module Group 119"
-location: "L422"
+community: "Tool Chain Analyzer"
+location: "L419"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_119
+  - community/Tool_Chain_Analyzer
 ---
 
 # Test that patterns are properly configured.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pattern_configuration()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_119
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain_Analyzer

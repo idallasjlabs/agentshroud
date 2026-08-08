@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "Module Group 489"
+community: "Progressive Trust Config"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_489
+  - community/Progressive_Trust_Config
 ---
 
 # 10000 trust lookups in under 1 second.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_10000_lookups_under_1s()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_489
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config

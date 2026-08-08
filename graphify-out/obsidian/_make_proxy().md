@@ -1,34 +1,40 @@
 ---
-source_file: "gateway/tests/test_progressive_lockdown.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Progressive Lockdown"
-location: "L88"
+community: "Gateway Test Suite"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Lockdown
+  - community/Gateway_Test_Suite
 ---
 
 # _make_proxy()
 
 ## Connections
-- [[._setup_proxy_with_capture()]] - `calls` [EXTRACTED]
-- [[.test_locked_includes_unlock_hint()]] - `calls` [EXTRACTED]
-- [[.test_locked_lists_suspended_user()]] - `calls` [EXTRACTED]
-- [[.test_locked_no_active_lockdowns()]] - `calls` [EXTRACTED]
-- [[.test_locked_shows_all_non_normal_users()]] - `calls` [EXTRACTED]
-- [[.test_owner_messages_pass_despite_collab_suspension()]] - `calls` [EXTRACTED]
-- [[.test_suspended_drop_notice_respects_cooldown()]] - `calls` [EXTRACTED]
-- [[.test_suspended_user_gets_drop_notice()]] - `calls` [EXTRACTED]
-- [[.test_unlock_clears_suspended_drop_cooldown()]] - `calls` [EXTRACTED]
-- [[.test_unlock_known_user_succeeds()]] - `calls` [EXTRACTED]
-- [[.test_unlock_unknown_user_reports_no_state()]] - `calls` [EXTRACTED]
-- [[.test_unlock_without_user_id_shows_usage()]] - `calls` [EXTRACTED]
-- [[FakeRBAC]] - `calls` [EXTRACTED]
-- [[PassthroughPipeline]] - `calls` [EXTRACTED]
-- [[Return a TelegramAPIProxy wired with fake deps (no real HTTP).]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `references` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
-- [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
+- [[LLMProxy]] - `calls` [EXTRACTED]
+- [[LLMProxy_2]] - `references` [EXTRACTED]
+- [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
+- [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `calls` [EXTRACTED]
+- [[test_deepseek_r1_routes_to_mlxlm()]] - `calls` [EXTRACTED]
+- [[test_get_local_secondary_model_reads_env()]] - `calls` [EXTRACTED]
+- [[test_get_local_secondary_model_returns_none_when_unset()]] - `calls` [EXTRACTED]
+- [[test_hermes_cloud_mode_uses_anthropic_endpoint()]] - `calls` [EXTRACTED]
+- [[test_hermes_openai_path_local_model_routed_correctly()]] - `calls` [EXTRACTED]
+- [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
+- [[test_local_mode_anthropic_tool_use_shape_passes_through()]] - `calls` [EXTRACTED]
+- [[test_local_mode_openai_tool_call_shape_passes_through()]] - `calls` [EXTRACTED]
+- [[test_local_oom_failover_disabled_does_not_retry()]] - `calls` [EXTRACTED]
+- [[test_local_oom_no_secondary_falls_through_to_503()]] - `calls` [EXTRACTED]
+- [[test_local_oom_triggers_secondary_failover()]] - `calls` [EXTRACTED]
+- [[test_local_p99_timeout_triggers_secondary_failover()]] - `calls` [EXTRACTED]
+- [[test_local_secondary_failover_anthropic_path()]] - `calls` [EXTRACTED]
+- [[test_local_secondary_failover_exception_returns_none()]] - `calls` [EXTRACTED]
+- [[test_local_secondary_failover_secondary_non_200_returns_none()]] - `calls` [EXTRACTED]
+- [[test_local_secondary_failover_unknown_path_returns_none()]] - `calls` [EXTRACTED]
+- [[test_mlx_community_deepseek_routes_to_mlxlm()]] - `calls` [EXTRACTED]
+- [[test_model_ref_round_trip()]] - `calls` [EXTRACTED]
+- [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - `calls` [EXTRACTED]
+- [[test_stats_local_secondary_failover_succeeded_incremented()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Lockdown
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

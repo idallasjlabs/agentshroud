@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "SOC Authentication"
+community: "Auth & Exception Types"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Authentication
+  - community/Auth__Exception_Types
 ---
 
 # test_soc_realtime_coverage.py
@@ -20,7 +20,7 @@ tags:
 - [[SCLCaller]] - `imports` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `imports` [EXTRACTED]
 - [[SecurityEvent_1]] - `imports` [EXTRACTED]
-- [[Severity_1]] - `imports` [EXTRACTED]
+- [[Severity_2]] - `imports` [EXTRACTED]
 - [[TestCoerceToWSEventExtra]] - `contains` [EXTRACTED]
 - [[TestCollectRecentEvents]] - `contains` [EXTRACTED]
 - [[TestEventFanOut]] - `contains` [EXTRACTED]
@@ -60,4 +60,4 @@ tags:
 - [[redeem_ws_token()]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Authentication
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

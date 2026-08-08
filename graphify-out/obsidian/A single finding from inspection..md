@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "MCP Inspector & Audit"
+community: "MCP Proxy Config"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Inspector__Audit
+  - community/MCP_Proxy_Config
 ---
 
 # A single finding from inspection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[InspectionFinding]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Inspector__Audit
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

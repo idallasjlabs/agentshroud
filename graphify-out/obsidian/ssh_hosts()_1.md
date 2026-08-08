@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Module Group 304"
+community: "Web Control Center"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_304
+  - community/Web_Control_Center
 ---
 
 # ssh_hosts()
@@ -17,4 +17,4 @@ tags:
 - [[_check_host()]] - `calls` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_304
+#graphify/code #graphify/EXTRACTED #community/Web_Control_Center

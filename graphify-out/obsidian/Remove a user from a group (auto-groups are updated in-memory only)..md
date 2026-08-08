@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Module Group 186"
+community: "Auth & Exception Types"
 location: "L283"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_186
+  - community/Auth__Exception_Types
 ---
 
 # Remove a user from a group (auto-groups are updated in-memory only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.remove_member()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_186
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

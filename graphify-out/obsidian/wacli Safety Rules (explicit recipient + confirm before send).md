@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/wacli/SKILL.md"
 type: "concept"
-community: "Module Group 598"
+community: "skills/openclaw"
 location: "line 38-43"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_598
+  - community/skills/openclaw
 ---
 
 # wacli Safety Rules (explicit recipient + confirm before send)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw wacli Skill]] - `enforces` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_598
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

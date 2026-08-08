@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "Module Group 246"
-location: "L79"
+community: "Forward Routing & Approval"
+location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_246
+  - community/Forward_Routing__Approval
 ---
 
 # RouterConfig should accept single-label Docker service hostnames.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_router_config_accepts_docker_service_hostname()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_246
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

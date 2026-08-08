@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Module Group 535"
+community: "Gateway Test Suite"
 location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_535
+  - community/Gateway_Test_Suite
 ---
 
 # TestWazuhSummary
@@ -18,4 +18,4 @@ tags:
 - [[.test_running_with_alert_dir()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_535
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

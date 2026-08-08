@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Module Group 437"
+community: "Gateway Test Suite"
 location: "L384"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_437
+  - community/Gateway_Test_Suite
 ---
 
 # _is_clamd_running()
@@ -16,4 +16,4 @@ tags:
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_437
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

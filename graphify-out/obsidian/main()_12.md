@@ -1,20 +1,17 @@
 ---
-source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
+source_file: "scripts/check_benchmark_regression.py"
 type: "code"
-community: "Module Group 354"
-location: "L320"
+community: "scripts/check_benchmark_regression.py"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_354
+  - community/scripts/check_benchmark_regressionpy
 ---
 
 # main()
 
 ## Connections
-- [[init_skill()]] - `calls` [EXTRACTED]
-- [[init_skill.py]] - `contains` [EXTRACTED]
-- [[normalize_skill_name()]] - `calls` [EXTRACTED]
-- [[parse_resources()]] - `calls` [EXTRACTED]
+- [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_354
+#graphify/code #graphify/EXTRACTED #community/scripts/check_benchmark_regressionpy

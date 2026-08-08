@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "concept"
-community: "Module Group 406"
+community: "docs/vault"
 location: "gateway/security/egress_monitor.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_406
+  - community/docs/vault
 ---
 
 # Slow Drip Multi-Channel Exfiltration Detection
 
 ## Connections
-- [[egress_monitor.py_1]] - `implements` [EXTRACTED]
+- [[egress_monitor.py_2]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_406
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "rationale"
-community: "Middleware Coverage Tests"
+community: "Security Module Middleware"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Middleware_Coverage_Tests
+  - community/Security_Module_Middleware
 ---
 
 # Deterministic stand-in for RBACManager.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeRBAC]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Middleware_Coverage_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Environment Guard & Leak Detection"
+community: "PII Config & Test Fixtures"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Monitor an agent's environment access attempts.          Args:             agent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.monitor_environment_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

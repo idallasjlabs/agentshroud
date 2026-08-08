@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "Module Group 195"
-location: "L312"
+community: "Gateway Ingest API"
+location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_195
+  - community/Gateway_Ingest_API
 ---
 
 # Send an email to the owner without exposing the recipient address in the request
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[email_send_owner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_195
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Ingest_API

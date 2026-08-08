@@ -12,14 +12,16 @@ tags:
 # ToolRiskPolicy
 
 ## Connections
-- [[Any]] - `uses` [INFERRED]
+- [[.test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
+- [[Any_2]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig]] - `uses` [INFERRED]
-- [[ApprovalQueueItem]] - `uses` [INFERRED]
-- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
+- [[ApprovalRequest_1]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[MFAGuard]] - `uses` [INFERRED]
 - [[Risk policy configuration for a tool tier]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig]] - `uses` [INFERRED]
 - [[TestApprovalWorkflow]] - `uses` [INFERRED]
@@ -28,7 +30,7 @@ tags:
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
-- [[WebSocket]] - `uses` [INFERRED]
+- [[WebSocket_1]] - `uses` [INFERRED]
 - [[config.py]] - `contains` [EXTRACTED]
 - [[enhanced_queue.py]] - `imports` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `imports` [EXTRACTED]

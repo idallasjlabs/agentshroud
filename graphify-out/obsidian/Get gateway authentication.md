@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "rationale"
-community: "Module Group 164"
-location: "L76"
+community: "src/interfaces"
+location: "L75"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_164
+  - community/src/interfaces
 ---
 
 # Get gateway authentication
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_auth()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_164
+#graphify/rationale #graphify/EXTRACTED #community/src/interfaces

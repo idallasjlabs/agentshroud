@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Module Group 240"
+community: "Egress & RBAC Security Core"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_240
+  - community/Egress__RBAC_Security_Core
 ---
 
 # EgressFilterConfig
 
 ## Connections
-- [[.__init__()_59]] - `references` [EXTRACTED]
+- [[.__init__()_72]] - `references` [EXTRACTED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_240
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

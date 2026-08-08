@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Module Group 63"
+community: "Gateway Test Suite"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_63
+  - community/Gateway_Test_Suite
 ---
 
 # KeyVaultConfig
 
 ## Connections
-- [[.__init__()_70]] - `references` [EXTRACTED]
+- [[.__init__()_86]] - `references` [EXTRACTED]
 - [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[.test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
 - [[.test_key_vault_init()]] - `calls` [EXTRACTED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
@@ -27,6 +27,7 @@ tags:
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
 - [[TestFileSandbox]] - `uses` [INFERRED]
+- [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
 - [[TestKeyInjection]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
@@ -37,10 +38,13 @@ tags:
 - [[TestKeyVaultConfig]] - `uses` [INFERRED]
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
+- [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
 - [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
+- [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSupplyChain_1]] - `uses` [INFERRED]
+- [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[config()]] - `calls` [EXTRACTED]
@@ -51,4 +55,4 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_63
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

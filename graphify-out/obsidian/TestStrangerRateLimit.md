@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Authentication & Rate Limiting"
+community: "Gateway Test Suite"
 location: "L7604"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Authentication__Rate_Limiting
+  - community/Gateway_Test_Suite
 ---
 
 # TestStrangerRateLimit
@@ -22,4 +22,4 @@ tags:
 - [[Unknownunapproved users have stricter rate limits than collaborators.      Afte]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Authentication__Rate_Limiting
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

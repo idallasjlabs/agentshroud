@@ -1,24 +1,34 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
+source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Module Group 379"
-location: "L164"
+community: "Gateway Test Suite"
+location: "L312"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_379
+  - community/Gateway_Test_Suite
 ---
 
 # main()
 
 ## Connections
-- [[Path_32]] - `calls` [EXTRACTED]
-- [[default_out_dir()]] - `calls` [EXTRACTED]
-- [[gen.py]] - `contains` [EXTRACTED]
-- [[get_model_defaults()]] - `calls` [EXTRACTED]
-- [[pick_prompts()]] - `calls` [EXTRACTED]
-- [[request_images()]] - `calls` [EXTRACTED]
-- [[slugify()]] - `calls` [EXTRACTED]
-- [[write_gallery()]] - `calls` [EXTRACTED]
+- [[.render_summary()]] - `calls` [EXTRACTED]
+- [[.test_dry_run_default_command()]] - `calls` [EXTRACTED]
+- [[.test_dry_run_touches_nothing()]] - `calls` [EXTRACTED]
+- [[.test_main_all_pass_with_injected_runner()]] - `calls` [EXTRACTED]
+- [[.test_main_default_hosts()]] - `calls` [EXTRACTED]
+- [[.test_main_failure_nonzero_exit()]] - `calls` [EXTRACTED]
+- [[.test_main_unreachable_nonzero_exit()]] - `calls` [EXTRACTED]
+- [[CLI entry point. Returns the aggregated exit code (0 = all passed).]] - `rationale_for` [EXTRACTED]
+- [[HostRunner]] - `references` [EXTRACTED]
+- [[_dry_run_report()]] - `calls` [EXTRACTED]
+- [[_resolve_command()]] - `calls` [EXTRACTED]
+- [[build_parser()]] - `calls` [EXTRACTED]
+- [[multi-host-test.sh]] - `calls` [EXTRACTED]
+- [[multi_host_test.py]] - `contains` [EXTRACTED]
+- [[parse_hosts()]] - `calls` [EXTRACTED]
+- [[run_multi_host()]] - `calls` [EXTRACTED]
+- [[ssh_runner()]] - `calls` [EXTRACTED]
+- [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_379
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,17 +1,17 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/USPTO_TRADEMARK_APPLICATION.md"
+source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "concept"
-community: "Module Group 541"
+community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 location: "Section 2.2"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_541
+  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
 ---
 
 # Standard Character Mark: AGENTSHROUD (Classes 9 + 42)
 
 ## Connections
-- [[USPTO Trademark Application — AGENTSHROUD]] - `defines` [EXTRACTED]
+- [[USPTO_TRADEMARK_APPLICATION]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_541
+#graphify/concept #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd

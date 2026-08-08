@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Module Group 66"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_66
+  - community/Gateway_Security_Module
 ---
 
 # encrypted_store.py
@@ -15,4 +15,4 @@ tags:
 - [[EncryptedStore]] - `contains` [EXTRACTED]
 - [[_secure_zero()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_66
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

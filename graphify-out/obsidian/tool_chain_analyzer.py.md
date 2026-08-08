@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Module Group 179"
+community: "Tool Chain Analyzer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_179
+  - community/Tool_Chain_Analyzer
 ---
 
 # tool_chain_analyzer.py
@@ -18,9 +18,9 @@ tags:
 - [[Enum]] - `imports_from` [EXTRACTED]
 - [[ParamScanResult]] - `contains` [EXTRACTED]
 - [[ReversibilityScore]] - `contains` [EXTRACTED]
-- [[RiskLevel_1]] - `contains` [EXTRACTED]
+- [[RiskLevel_3]] - `contains` [EXTRACTED]
 - [[SessionChainContext]] - `contains` [EXTRACTED]
 - [[ToolCall]] - `contains` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_179
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer

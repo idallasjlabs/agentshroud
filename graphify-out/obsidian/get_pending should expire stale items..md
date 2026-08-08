@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "Enhanced Approval Queue"
+community: "Gateway Test Suite"
 location: "L115"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/Gateway_Test_Suite
 ---
 
 # get_pending should expire stale items.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_get_pending_expires_stale()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

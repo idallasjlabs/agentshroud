@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Middleware Coverage Tests"
+community: "Security Module Middleware"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Middleware_Coverage_Tests
+  - community/Security_Module_Middleware
 ---
 
 # test_middleware_coverage.py
@@ -19,6 +19,7 @@ tags:
 - [[TestBrowserSecurity]] - `contains` [EXTRACTED]
 - [[TestClose]] - `contains` [EXTRACTED]
 - [[TestContextGuard]] - `contains` [EXTRACTED]
+- [[TestCriticalGuardInitFailClosed]] - `contains` [EXTRACTED]
 - [[TestCrossSessionAccess]] - `contains` [EXTRACTED]
 - [[TestEnvGuard]] - `contains` [EXTRACTED]
 - [[TestExtractFilePaths]] - `contains` [EXTRACTED]
@@ -46,8 +47,10 @@ tags:
 - [[_req()]] - `contains` [EXTRACTED]
 - [[_scan_result()]] - `contains` [EXTRACTED]
 - [[_tool_req()]] - `contains` [EXTRACTED]
+- [[middleware.py]] - `references` [EXTRACTED]
 - [[mm()]] - `contains` [EXTRACTED]
+- [[session_manager.py]] - `references` [EXTRACTED]
 - [[temp_workspace()_1]] - `contains` [EXTRACTED]
 - [[usm()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Middleware_Coverage_Tests
+#graphify/code #graphify/EXTRACTED #community/Security_Module_Middleware

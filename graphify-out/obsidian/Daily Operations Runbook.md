@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/runbooks/daily-operations.md"
+source_file: "docs/runbooks/daily-operations.md"
 type: "document"
-community: "Module Group 514"
+community: "docs/runbooks"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_514
+  - community/docs/runbooks
 ---
 
 # Daily Operations Runbook
@@ -15,4 +15,4 @@ tags:
 - [[Morning Checklist (docker compose ps, Tailscale, audit ledger review)]] - `contains` [EXTRACTED]
 - [[Weekly Checklist (pip audit, backup verification, tailscale ACL review, test suite)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_514
+#graphify/document #graphify/EXTRACTED #community/docs/runbooks

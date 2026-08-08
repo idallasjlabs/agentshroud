@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "Ledger Config & Test Infra"
+community: "PII Sanitizer Pipeline"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ledger_Config__Test_Infra
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Create a new ledger entry          Args:             source: Source identifier (
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.record()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ledger_Config__Test_Infra
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

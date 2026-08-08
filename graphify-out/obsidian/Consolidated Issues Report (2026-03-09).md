@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "document"
-community: "Module Group 429"
+community: "Planning Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_429
+  - community/Planning_Docs
 ---
 
 # Consolidated Issues Report (2026-03-09)
@@ -15,4 +15,4 @@ tags:
 - [[Issue PII Redaction Disabled (spaCyPresidio)]] - `contains` [EXTRACTED]
 - [[Issue Streaming Responses Bypass Outbound Filtering]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_429
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

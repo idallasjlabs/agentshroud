@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Module Group 95"
+community: "Bot Skill Config"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_95
+  - community/Bot_Skill_Config
 ---
 
 # Risk classification for browser actions
 
 ## Connections
-- [[RiskLevel_3]] - `rationale_for` [EXTRACTED]
+- [[RiskLevel]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_95
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

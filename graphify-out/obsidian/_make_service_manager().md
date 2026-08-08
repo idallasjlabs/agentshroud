@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "SOC Router Tests"
+community: "SOC RBAC & Auth"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router_Tests
+  - community/SOC_RBAC__Auth
 ---
 
 # _make_service_manager()
@@ -22,4 +22,4 @@ tags:
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 - [[test_upgrade_hermes_paths()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router_Tests
+#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth

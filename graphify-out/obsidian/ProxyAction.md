@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "HTTP CONNECT Proxy & Egress"
+community: "Gateway Test Suite"
 location: "L38"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/HTTP_CONNECT_Proxy__Egress
+  - community/Gateway_Test_Suite
 ---
 
 # ProxyAction
@@ -44,4 +44,4 @@ tags:
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/HTTP_CONNECT_Proxy__Egress
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

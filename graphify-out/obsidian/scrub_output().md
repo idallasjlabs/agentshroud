@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Module Group 121"
+community: "Gateway Security Module"
 location: "L460"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_121
+  - community/Gateway_Security_Module
 ---
 
 # scrub_output()
@@ -21,4 +21,4 @@ tags:
 - [[env_guard.py]] - `contains` [EXTRACTED]
 - [[test_env_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_121
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

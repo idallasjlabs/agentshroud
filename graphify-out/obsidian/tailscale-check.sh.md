@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/tailscale-check.sh"
 type: "code"
-community: "Module Group 519"
+community: "scripts/tailscale-check.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_519
+  - community/scripts/tailscale-checksh
 ---
 
 # tailscale-check.sh
 
 ## Connections
-- [[fail()_3]] - `defines` [EXTRACTED]
+- [[fail()_4]] - `defines` [EXTRACTED]
 - [[ok()_1]] - `defines` [EXTRACTED]
 - [[tailscale-check.sh script]] - `contains` [EXTRACTED]
-- [[warn()_3]] - `defines` [EXTRACTED]
+- [[warn()_4]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_519
+#graphify/code #graphify/EXTRACTED #community/scripts/tailscale-checksh

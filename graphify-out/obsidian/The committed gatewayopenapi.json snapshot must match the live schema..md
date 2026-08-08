@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract.py"
 type: "rationale"
-community: "Module Group 271"
+community: "Gateway Test Suite"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_271
+  - community/Gateway_Test_Suite
 ---
 
 # The committed gateway/openapi.json snapshot must match the live schema.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_openapi_snapshot_matches_live_schema()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_271
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

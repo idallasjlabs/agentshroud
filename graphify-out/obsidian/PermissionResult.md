@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "RBAC Configuration"
+community: "Auth & Exception Types"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # PermissionResult
 
 ## Connections
-- [[.__init__()_133]] - `calls` [EXTRACTED]
+- [[.__init__()_167]] - `calls` [EXTRACTED]
 - [[.check_group_permission()]] - `references` [EXTRACTED]
 - [[.check_permission()]] - `references` [EXTRACTED]
 - [[.check_tool_permission()_1]] - `references` [EXTRACTED]
 - [[.list_users_and_roles()]] - `references` [EXTRACTED]
 - [[.set_user_role()]] - `references` [EXTRACTED]
-- [[Any_65]] - `uses` [INFERRED]
+- [[Any_69]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Result of permission check.]] - `rationale_for` [EXTRACTED]
@@ -54,4 +54,4 @@ tags:
 - [[test_rbac.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Configuration
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

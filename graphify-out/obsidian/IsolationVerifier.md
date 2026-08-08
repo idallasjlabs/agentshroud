@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Agent Isolation & Container Config"
+community: "Gateway Test Suite"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Container_Config
+  - community/Gateway_Test_Suite
 ---
 
 # IsolationVerifier
 
 ## Connections
-- [[.__init__()_41]] - `method` [EXTRACTED]
+- [[.__init__()_49]] - `method` [EXTRACTED]
 - [[.generate_compose()]] - `method` [EXTRACTED]
 - [[.test_capabilities_not_dropped_flagged()]] - `calls` [EXTRACTED]
 - [[.test_compose_contains_all_agents()]] - `calls` [EXTRACTED]
@@ -62,4 +62,4 @@ tags:
 - [[test_agent_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Isolation__Container_Config
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

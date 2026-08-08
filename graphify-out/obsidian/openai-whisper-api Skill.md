@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/openai-whisper-api/SKILL.md"
 type: "document"
-community: "Module Group 107"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_107
+  - community/skills/openclaw
 ---
 
 # openai-whisper-api Skill
@@ -15,4 +15,4 @@ tags:
 - [[OpenClaw Skill Ecosystem]] - `part_of` [EXTRACTED]
 - [[openai-whisper Skill (local)]] - `alternative_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_107
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

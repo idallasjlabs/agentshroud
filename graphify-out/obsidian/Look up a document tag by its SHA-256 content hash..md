@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "Module Group 116"
+community: "Gateway Test Suite"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_116
+  - community/Gateway_Test_Suite
 ---
 
 # Look up a document tag by its SHA-256 content hash.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_document_tag()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_116
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

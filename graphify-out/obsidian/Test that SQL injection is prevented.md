@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "Module Group 61"
-location: "L171"
+community: "Gateway Test Suite"
+location: "L220"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_61
+  - community/Gateway_Test_Suite
 ---
 
 # Test that SQL injection is prevented
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_sql_injection_attempt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_61
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

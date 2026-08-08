@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
 type: "concept"
-community: "Module Group 313"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_313
+  - community/docs/vault
 ---
 
 # Gateway Startup Sequence
@@ -13,6 +13,6 @@ tags:
 ## Connections
 - [[First Time Setup Runbook]] - `references` [EXTRACTED]
 - [[Restart Procedure Runbook]] - `references` [EXTRACTED]
-- [[Startup Flow Diagram]] - `describes` [EXTRACTED]
+- [[Startup Flow Diagram_1]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_313
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

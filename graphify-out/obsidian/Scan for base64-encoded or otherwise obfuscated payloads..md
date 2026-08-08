@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "Module Group 199"
+community: "Gateway Proxy Layer"
 location: "L322"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_199
+  - community/Gateway_Proxy_Layer
 ---
 
 # Scan for base64-encoded or otherwise obfuscated payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._scan_encoded_payloads()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_199
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

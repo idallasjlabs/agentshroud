@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Module Group 168"
-location: "L113"
+community: "Egress & RBAC Security Core"
+location: "L112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_168
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Save integrity database to disk.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._save_integrity_database()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_168
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

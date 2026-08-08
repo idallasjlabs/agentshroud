@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "RBAC Middleware & Ingest API"
-location: "L112"
+community: "Gateway Test Suite"
+location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Gateway_Test_Suite
 ---
 
 # Sanitize user ID to prevent path traversal attacks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._sanitize_user_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

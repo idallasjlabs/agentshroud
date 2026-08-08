@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/things-mac/SKILL.md"
 type: "concept"
-community: "Module Group 107"
+community: "skills/openclaw"
 location: "line 28"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_107
+  - community/skills/openclaw
 ---
 
 # things3-cli (Things 3 URL Scheme + DB)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[things-mac Skill]] - `uses` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_107
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "CLI Interface"
+community: "gateway/cli"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI_Interface
+  - community/gateway/cli
 ---
 
 # _print_table()
@@ -18,4 +18,4 @@ tags:
 - [[main.py_1]] - `contains` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI_Interface
+#graphify/code #graphify/EXTRACTED #community/gateway/cli

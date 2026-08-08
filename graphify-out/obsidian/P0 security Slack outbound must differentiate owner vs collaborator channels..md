@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "Slack Proxy Tests"
+community: "Slack API Proxy"
 location: "L214"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_Proxy_Tests
+  - community/Slack_API_Proxy
 ---
 
 # P0 security: Slack outbound must differentiate owner vs collaborator channels.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOwnerChannelFiltering]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy

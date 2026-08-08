@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "rationale"
-community: "CLI & Core Gateway Routes"
+community: "Gateway Test Suite"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Gateway_Test_Suite
 ---
 
 # Factory that returns authentication dependency for FastAPI      This allows us t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_auth_dependency()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

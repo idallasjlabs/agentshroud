@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Module Group 108"
+community: "Gateway Security Module"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_108
+  - community/Gateway_Security_Module
 ---
 
 # Initialize the key rotation manager.
 
 ## Connections
-- [[.__init__()_69]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_85]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_108
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

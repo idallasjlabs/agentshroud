@@ -1,34 +1,38 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Agent Isolation & Container Config"
+community: "Gateway Test Suite"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Container_Config
+  - community/Gateway_Test_Suite
 ---
 
 # AgentRegistry
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_40]] - `method` [EXTRACTED]
-- [[.__init__()_41]] - `references` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_48]] - `method` [EXTRACTED]
+- [[.__init__()_49]] - `references` [EXTRACTED]
 - [[.from_dict()_2]] - `method` [EXTRACTED]
-- [[.get()_2]] - `method` [EXTRACTED]
+- [[.get()_3]] - `method` [EXTRACTED]
 - [[.list_agents()]] - `method` [EXTRACTED]
 - [[.register()]] - `method` [EXTRACTED]
-- [[.setup_method()_28]] - `calls` [EXTRACTED]
+- [[.setup_method()_31]] - `calls` [EXTRACTED]
 - [[.test_capabilities_not_dropped_flagged()]] - `calls` [EXTRACTED]
 - [[.test_compose_contains_all_agents()]] - `calls` [EXTRACTED]
 - [[.test_compose_networks_are_internal()]] - `calls` [EXTRACTED]
 - [[.test_compose_security_opts()]] - `calls` [EXTRACTED]
 - [[.test_fully_isolated_agents_pass()]] - `calls` [EXTRACTED]
 - [[.test_get_missing_returns_none()]] - `calls` [EXTRACTED]
+- [[.test_group_agents_are_isolatable()]] - `calls` [EXTRACTED]
+- [[.test_group_and_collab_identities_coexist()]] - `calls` [EXTRACTED]
 - [[.test_list_agents()]] - `calls` [EXTRACTED]
 - [[.test_new_privileges_allowed_flagged()]] - `calls` [EXTRACTED]
 - [[.test_register_and_get()]] - `calls` [EXTRACTED]
+- [[.test_register_group_agent_identity()]] - `calls` [EXTRACTED]
+- [[.test_register_group_agent_with_chat_type_supergroup()]] - `calls` [EXTRACTED]
 - [[.test_separate_networks_pass()]] - `calls` [EXTRACTED]
 - [[.test_separate_volumes_pass()]] - `calls` [EXTRACTED]
 - [[.test_serialization_roundtrip()]] - `calls` [EXTRACTED]
@@ -43,8 +47,9 @@ tags:
 - [[.to_dict()_3]] - `method` [EXTRACTED]
 - [[.unregister()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
 - [[ContainerConfig_1]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -53,12 +58,15 @@ tags:
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAgentRegistry]] - `uses` [INFERRED]
+- [[TestAgentRegistryGroupIdentity]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
 - [[TestDriftDetectorHardened]] - `uses` [INFERRED]
 - [[TestEgressFilter]] - `uses` [INFERRED]
 - [[TestEgressSSRF]] - `uses` [INFERRED]
 - [[TestEncryptedStore]] - `uses` [INFERRED]
 - [[TestGenerateCompose]] - `uses` [INFERRED]
+- [[TestGroupMemoryInvisibleFromDM]] - `uses` [INFERRED]
+- [[TestGroupMemoryNamespaceIsolation]] - `uses` [INFERRED]
 - [[TestNetworkIsolation]] - `uses` [INFERRED]
 - [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
@@ -73,6 +81,7 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_agent_isolation.py]] - `imports` [EXTRACTED]
+- [[test_group_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Isolation__Container_Config
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

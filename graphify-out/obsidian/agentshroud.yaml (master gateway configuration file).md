@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/vault/03 - Configuration/agentshroud.yaml.md"
+source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "Module Group 344"
+community: "docs/vault"
 location: "agentshroud.yaml"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_344
+  - community/docs/vault
 ---
 
 # agentshroud.yaml (master gateway configuration file)
@@ -23,4 +23,4 @@ tags:
 - [[docker-compose.yml (primary Docker Compose — services, networks, volumes, secrets)]] - `mounts` [EXTRACTED]
 - [[pyyaml (≥6.0.0 — parse agentshroud.yaml config file)]] - `parses` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_344
+#graphify/document #graphify/EXTRACTED #community/docs/vault

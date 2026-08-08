@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "PII Sanitizer & Resource Guard"
-location: "L76"
+community: "Tool Chain Analyzer"
+location: "L576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/Tool_Chain_Analyzer
 ---
 
 # callable
 
 ## Connections
-- [[.add_alert_callback()_1]] - `references` [EXTRACTED]
+- [[.add_alert_callback()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer

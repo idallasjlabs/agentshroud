@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "Module Group 140"
-location: "L433"
+community: "Gateway Security Module"
+location: "L432"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_140
+  - community/Gateway_Security_Module
 ---
 
 # test_test_user_prefix_blocked()
@@ -16,4 +16,4 @@ tags:
 - [[UIDs matching test_user prefix must be silently dropped.]] - `rationale_for` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_140
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

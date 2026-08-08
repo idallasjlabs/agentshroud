@@ -188,6 +188,18 @@ RUN chmod +x /usr/local/bin/start-hermes.sh /usr/local/bin/init-hermes-config.sh
  && touch /etc/s6-overlay/s6-rc.d/user/contents.d/agentshroud-heartbeat \
  && touch /etc/s6-overlay/s6-rc.d/user/contents.d/agentshroud-dashboard-bridge
 
+# OCI image label — AgentShroud's own product version wrapping this vendor
+# image, NOT Hermes's upstream version (that's HERMES_VERSION in
+# docker/versions.env, unrelated namespace). AGENTSHROUD_VERSION comes from
+# docker/versions.env via docker-compose.yml's build.args, kept in sync with
+# gateway/__init__.py's __version__ by scripts/sync-version.sh. This image
+# previously had no AgentShroud version label at all — gateway/soc/services.py
+# reads this for the SOC dashboard's service list.
+ARG AGENTSHROUD_VERSION=dev
+LABEL org.opencontainers.image.vendor="AgentShroud"
+LABEL org.opencontainers.image.version="${AGENTSHROUD_VERSION}"
+LABEL org.opencontainers.image.source="https://github.com/idallasjlabs/agentshroud"
+
 # Port 9119: Hermes dashboard (served by s6 dashboard service when HERMES_DASHBOARD=1,
 #            loopback-only — see HERMES_DASHBOARD_HOST in docker-compose.yml)
 # Port 9120: Dashboard bridge — re-exposes 9119 for cross-container reachability

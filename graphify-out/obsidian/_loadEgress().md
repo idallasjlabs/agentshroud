@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Module Group 557"
+community: "SOC Dashboard"
 location: "L1374"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_557
+  - community/SOC_Dashboard
 ---
 
 # _loadEgress()
@@ -19,4 +19,4 @@ tags:
 - [[_renderPendingEgress()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_557
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

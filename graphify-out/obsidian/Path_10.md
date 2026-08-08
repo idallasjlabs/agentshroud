@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Module Group 242"
+community: "Gateway Security Module"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_242
+  - community/Gateway_Security_Module
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_64]] - `references` [EXTRACTED]
+- [[.__init__()_77]] - `references` [EXTRACTED]
 - [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_242
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

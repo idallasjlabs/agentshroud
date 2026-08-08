@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Module Group 126"
-location: "L80"
+community: "Gateway Test Suite"
+location: "L79"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_126
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # TestGetMode
@@ -23,4 +23,4 @@ tags:
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_126
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

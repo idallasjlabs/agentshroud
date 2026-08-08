@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_consent_framework.py"
 type: "code"
-community: "Module Group 102"
+community: "PII Config & Test Fixtures"
 location: "L116"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_102
+  - graphify/INFERRED
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestConsentDecision
@@ -21,4 +21,4 @@ tags:
 - [[ShellInjectionDetected]] - `uses` [INFERRED]
 - [[test_consent_framework.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_102
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

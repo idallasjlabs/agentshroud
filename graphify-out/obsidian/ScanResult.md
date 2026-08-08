@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "Module Group 199"
+community: "Gateway Proxy Layer"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_199
+  - community/Gateway_Proxy_Layer
 ---
 
 # ScanResult
@@ -23,4 +23,4 @@ tags:
 - [[Result of scanning web content.]] - `rationale_for` [EXTRACTED]
 - [[web_content_scanner.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_199
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

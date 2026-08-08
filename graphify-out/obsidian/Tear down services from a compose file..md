@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "Module Group 82"
+community: "gateway/runtime"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_82
+  - community/gateway/runtime
 ---
 
 # Tear down services from a compose file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.compose_down()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_82
+#graphify/rationale #graphify/EXTRACTED #community/gateway/runtime

@@ -1,17 +1,17 @@
 ---
 source_file: "branding/favicons/apple-touch-icon.png"
 type: "image"
-community: "Module Group 365"
+community: "branding/logos"
 tags:
   - graphify/image
-  - graphify/INFERRED
-  - community/Module_Group_365
+  - graphify/EXPLICIT
+  - community/branding/logos
 ---
 
 # AgentShroud Apple Touch Icon
 
 ## Connections
 - [[AgentShroud Favicon 128x128]] - `semantically_similar_to` [EXPLICIT]
-- [[AgentShroud Logo (Dark Background)]] - `semantically_similar_to` [INFERRED]
+- [[AgentShroud Logo PNG (Dark Background)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Module_Group_365
+#graphify/image #graphify/EXPLICIT #community/branding/logos

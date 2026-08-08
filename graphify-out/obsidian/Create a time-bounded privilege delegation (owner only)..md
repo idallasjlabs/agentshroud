@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Router & Correlation"
-location: "L1411"
+community: "SOC Collaborator Lifecycle"
+location: "L1412"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Router__Correlation
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # Create a time-bounded privilege delegation (owner only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[create_delegation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Router__Correlation
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

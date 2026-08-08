@@ -1,12 +1,12 @@
 ---
 source_file: "docker/tests/test-op-auth.sh"
 type: "code"
-community: "Module Group 558"
+community: "docker/tests"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_558
+  - community/docker/tests
 ---
 
 # pass()
@@ -15,4 +15,4 @@ tags:
 - [[test-op-auth.sh]] - `defines` [EXTRACTED]
 - [[test-op-auth.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_558
+#graphify/code #graphify/EXTRACTED #community/docker/tests

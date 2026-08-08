@@ -35,6 +35,20 @@ jobs:
           pip install -r gateway/requirements.txt
           pip install pytest-cov
 
+      - name: Verify version strings are in sync
+        run: |
+          scripts/sync-version.sh --check
+
+      - name: Verify tag matches gateway/__init__.py __version__
+        run: |
+          TAG_VERSION="${{ github.ref_name }}"
+          TAG_VERSION="${TAG_VERSION#v}"
+          CODE_VERSION="$(sed -n 's/^__version__ = "\(.*\)"$/\1/p' gateway/__init__.py)"
+          if [ "$TAG_VERSION" != "$CODE_VERSION" ]; then
+            echo "::error::Tag ${{ github.ref_name }} does not match gateway/__init__.py __version__ ($CODE_VERSION). Bump __version__, run scripts/sync-version.sh, commit, then re-tag." >&2
+            exit 1
+          fi
+
       - name: Run tests
         run: pytest gateway/tests/ -q --tb=short
 
@@ -60,6 +74,7 @@ jobs:
         run: |
           docker build \
             -f gateway/Dockerfile \
+            --build-arg AGENTSHROUD_VERSION=${{ steps.version.outputs.version }} \
             -t agentshroud-gateway:${{ steps.version.outputs.version }} \
             -t agentshroud-gateway:latest \
             .
@@ -68,6 +83,7 @@ jobs:
         run: |
           docker build \
             -f docker/bots/openclaw/Dockerfile \
+            --build-arg AGENTSHROUD_VERSION=${{ steps.version.outputs.version }} \
             -t agentshroud-bot:${{ steps.version.outputs.version }} \
             -t agentshroud-bot:latest \
             .

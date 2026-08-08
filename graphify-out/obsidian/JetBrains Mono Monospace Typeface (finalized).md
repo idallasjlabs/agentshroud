@@ -1,11 +1,11 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "concept"
-community: "Module Group 226"
+community: "branding/colors"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_226
+  - community/branding/colors
 ---
 
 # JetBrains Mono Monospace Typeface (finalized)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Typography Guidelines (Inter + JetBrains Mono)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_226
+#graphify/concept #graphify/EXTRACTED #community/branding/colors

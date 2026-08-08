@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/skills/custom/icloud/SKILL.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "Module Group 173"
+community: "Custom Skills"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Module_Group_173
+  - graphify/EXTRACTED
+  - community/Custom_Skills
 ---
 
 # icloud SKILL.md — iCloud Services Skill
@@ -14,4 +14,4 @@ tags:
 - [[Concept iOS Shortcuts with On-Device PII Processing]] - `related_to` [INFERRED]
 - [[skillsREADME.md — Skills Library Index]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Module_Group_173
+#graphify/document #graphify/EXTRACTED #community/Custom_Skills

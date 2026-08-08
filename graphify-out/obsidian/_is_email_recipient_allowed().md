@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Module Group 195"
-location: "L133"
+community: "Gateway Ingest API"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_195
+  - community/Gateway_Ingest_API
 ---
 
 # _is_email_recipient_allowed()
@@ -16,4 +16,4 @@ tags:
 - [[email_send()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_195
+#graphify/code #graphify/EXTRACTED #community/Gateway_Ingest_API

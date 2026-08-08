@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Gateway Config & Lifespan"
-location: "L22"
+community: "Gateway Security Module"
+location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Gateway_Security_Module
 ---
 
 # Create a PromptProtection instance for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[prompt_protection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

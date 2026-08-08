@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "rationale"
-community: "Module Group 170"
+community: "Gateway Test Suite"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_170
+  - community/Gateway_Test_Suite
 ---
 
 # Replace shutil.which with a controllable name → path mapping.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[tools()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_170
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

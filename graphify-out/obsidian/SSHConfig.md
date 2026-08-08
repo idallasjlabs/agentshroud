@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "SSH Proxy & Gateway Config"
+community: "Approval Queue Tests"
 location: "L42"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Approval_Queue_Tests
 ---
 
 # SSHConfig
@@ -24,13 +24,14 @@ tags:
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[Path_1]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[SSHConfig_1]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[SSHProxy_1]] - `uses` [INFERRED]
 - [[SSHResult]] - `uses` [INFERRED]
-- [[SecurityConfig]] - `uses` [INFERRED]
+- [[SSHWriteResult]] - `uses` [INFERRED]
+- [[SecurityConfig_2]] - `uses` [INFERRED]
 - [[SecurityModuleConfig]] - `uses` [INFERRED]
 - [[TestApprovalQueuePIISanitization]] - `uses` [INFERRED]
 - [[TestDashboardCookieAuth]] - `uses` [INFERRED]
@@ -46,22 +47,30 @@ tags:
 - [[TestSSHExec]] - `uses` [INFERRED]
 - [[TestSSHHistory]] - `uses` [INFERRED]
 - [[TestSSHHosts]] - `uses` [INFERRED]
+- [[TestSSHProxyValidateWriteFile]] - `uses` [INFERRED]
+- [[TestSSHProxyWriteFileTransport]] - `uses` [INFERRED]
 - [[TestSSHRequireApprovalFalse]] - `uses` [INFERRED]
 - [[TestSSHStrictHostKeyChecking]] - `uses` [INFERRED]
+- [[TestSSHValidateCwd]] - `uses` [INFERRED]
+- [[TestSSHWriteFileEndpoint]] - `uses` [INFERRED]
+- [[TestSSHWriteFileLedgerAudit]] - `uses` [INFERRED]
+- [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
 - [[TestTelegramProxyClientDisconnect]] - `uses` [INFERRED]
 - [[TestValidateCommand]] - `uses` [INFERRED]
 - [[TestVersionConsistency]] - `uses` [INFERRED]
 - [[TestWebSocketHandshakeAuth]] - `uses` [INFERRED]
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[ToolRiskPolicy_1]] - `uses` [INFERRED]
-- [[Top-level SSH proxy configuration]] - `rationale_for` [EXTRACTED]
+- [[Top-level MCP proxy configuration.]] - `rationale_for` [EXTRACTED]
 - [[config.py]] - `imports` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[proxy.py]] - `imports` [EXTRACTED]
 - [[ssh_config()]] - `calls` [EXTRACTED]
+- [[ssh_config()_2]] - `calls` [EXTRACTED]
 - [[ssh_config.py]] - `contains` [EXTRACTED]
 - [[test_security_fixes.py]] - `imports` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
+- [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SSH_Proxy__Gateway_Config
+#graphify/code #graphify/INFERRED #community/Approval_Queue_Tests

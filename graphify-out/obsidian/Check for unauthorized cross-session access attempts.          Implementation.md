@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "RBAC Middleware & Ingest API"
-location: "L1065"
+community: "Egress & RBAC Security Core"
+location: "L1200"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Check for unauthorized cross-session access attempts.          **Implementation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_cross_session_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

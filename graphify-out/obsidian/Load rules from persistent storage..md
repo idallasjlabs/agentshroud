@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Module Group 523"
-location: "L279"
+community: "Gateway Security Module"
+location: "L278"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_523
+  - community/Gateway_Security_Module
 ---
 
 # Load rules from persistent storage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._load_rules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_523
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "Module Group 63"
+community: "Gateway Test Suite"
 location: "L80"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_63
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # TestKeyInjection
@@ -21,4 +21,4 @@ tags:
 - [[KeyVaultConfig]] - `uses` [INFERRED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_63
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

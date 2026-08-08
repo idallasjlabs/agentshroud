@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/per-agent-isolation.md"
 type: "concept"
-community: "Module Group 579"
+community: "Architecture Docs"
 location: "line 10"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_579
+  - community/Architecture_Docs
 ---
 
 # Shared-Nothing Isolation (no filesystem, network, or IPC sharing between agents)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Per-Agent Container Isolation Architecture Document]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_579
+#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "Module Group 261"
+community: "Architecture Docs"
 location: "line 1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_261
+  - community/Architecture_Docs
 ---
 
 # AgentShroud v0.8.0 Security & Functionality Audit Prompt
@@ -17,4 +17,4 @@ tags:
 - [[Open Security Findings (C3-C5 Bot token in debug, root metrics no-auth, H4-H7 network isolation, ws-token, path traversal, error disclosure)]] - `contains` [EXTRACTED]
 - [[Steve Hay STPA-Sec Assessment (Feb 2026) - 0% enforcement against vanilla OpenClaw]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_261
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

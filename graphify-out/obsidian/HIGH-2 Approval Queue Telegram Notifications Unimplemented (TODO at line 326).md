@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/security-assessment-v0.8.0.md"
+source_file: "docs/security-assessment-v0.8.0.md"
 type: "concept"
-community: "Module Group 478"
+community: "docs/reviews"
 location: "line 66-71"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_478
+  - community/docs/reviews
 ---
 
 # HIGH-2: Approval Queue Telegram Notifications Unimplemented (TODO at line 326)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Assessment v0.8.0]] - `identifies` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_478
+#graphify/concept #graphify/EXTRACTED #community/docs/reviews

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Tool ACL & RBAC Config"
+community: "Gateway Test Suite"
 location: "L232"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_ACL__RBAC_Config
+  - community/Gateway_Test_Suite
 ---
 
 # TestDenyUnknownFalse
@@ -21,4 +21,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_ACL__RBAC_Config
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

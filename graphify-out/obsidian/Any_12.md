@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "Module Group 139"
-location: "L93"
+community: "Gateway Proxy Layer"
+location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_139
+  - community/Gateway_Proxy_Layer
 ---
 
 # Any
 
 ## Connections
-- [[.generate_report()]] - `references` [EXTRACTED]
-- [[.log_tool_call()]] - `references` [EXTRACTED]
+- [[_handle_http()]] - `references` [EXTRACTED]
+- [[_handle_websocket()]] - `references` [EXTRACTED]
+- [[canvas_proxy_app()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_139
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

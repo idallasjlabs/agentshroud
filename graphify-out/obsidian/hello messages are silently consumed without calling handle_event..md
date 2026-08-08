@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "rationale"
-community: "Module Group 109"
+community: "Gateway Test Suite"
 location: "L204"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_109
+  - community/Gateway_Test_Suite
 ---
 
 # hello messages are silently consumed without calling handle_event.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_hello_message_not_dispatched()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_109
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

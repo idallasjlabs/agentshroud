@@ -1,21 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
-type: "code"
-community: "Module Group 320"
-location: "gateway/security/log_sanitizer.py"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_320
+  - community/docs/vault
 ---
 
-# log_sanitizer.py
+# log_sanitizer.py.md
 
 ## Connections
-- [[LogSanitizer (logging.Filter subclass)]] - `contains` [EXTRACTED]
-- [[PIICredential Redaction in Logs (SSN, CC, email, API keys, JWT)]] - `implements` [EXTRACTED]
-- [[install_log_sanitizer() — root logger monkey-patch]] - `contains` [EXTRACTED]
-- [[key_vault.py_1]] - `references` [EXTRACTED]
-- [[session_security.py_1]] - `references` [EXTRACTED]
+- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_320
+#graphify/document #graphify/EXTRACTED #community/docs/vault

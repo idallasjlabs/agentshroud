@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/skill.json"
+source_file: "docker/config/openclaw/manifest.json"
 type: "code"
-community: "Module Group 299"
-location: "L3"
+community: "Bot Skill Config"
+location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_299
+  - community/Bot_Skill_Config
 ---
 
 # version
 
 ## Connections
-- [[skill.json]] - `contains` [EXTRACTED]
+- [[manifest.json_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_299
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

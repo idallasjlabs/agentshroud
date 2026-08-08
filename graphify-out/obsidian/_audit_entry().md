@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Module Group 296"
+community: "Auth & Exception Types"
 location: "L297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_296
+  - community/Auth__Exception_Types
 ---
 
 # _audit_entry()
@@ -25,4 +25,4 @@ tags:
 - [[SimpleNamespace]] - `references` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_296
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

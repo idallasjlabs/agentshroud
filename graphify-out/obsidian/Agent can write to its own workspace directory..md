@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Environment Guard & Leak Detection"
-location: "L189"
+community: "File Sandbox"
+location: "L188"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - community/File_Sandbox
 ---
 
 # Agent can write to its own workspace directory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_workspace_write_allowed()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

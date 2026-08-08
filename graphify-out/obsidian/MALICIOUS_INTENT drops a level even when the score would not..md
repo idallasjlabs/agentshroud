@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "rationale"
-community: "Progressive Trust Levels"
-location: "L195"
+community: "Progressive Trust Config"
+location: "L193"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Levels
+  - community/Progressive_Trust_Config
 ---
 
 # MALICIOUS_INTENT drops a level even when the score would not.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_severe_violation_forces_demotion()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Levels
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config

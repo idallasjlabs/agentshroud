@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Module Group 334"
-location: "L100"
+community: "Gateway Security Module"
+location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_334
+  - community/Gateway_Security_Module
 ---
 
 # Represents an egress allow/deny rule.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressRule]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_334
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

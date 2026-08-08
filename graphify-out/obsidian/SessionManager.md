@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Module Group 67"
+community: "Gateway Test Suite"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_67
+  - community/Gateway_Test_Suite
 ---
 
 # SessionManager
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_92]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_113]] - `method` [EXTRACTED]
 - [[._fingerprint()]] - `method` [EXTRACTED]
 - [[.cleanup_expired()_3]] - `method` [EXTRACTED]
 - [[.create_session()]] - `method` [EXTRACTED]
@@ -31,7 +31,8 @@ tags:
 - [[.validate_nonce()]] - `method` [EXTRACTED]
 - [[.validate_session()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -45,8 +46,8 @@ tags:
 - [[TestSessionRotation]] - `uses` [INFERRED]
 - [[TestSessionValidation]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
-- [[manager()_1]] - `calls` [EXTRACTED]
+- [[manager()_3]] - `calls` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_67
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

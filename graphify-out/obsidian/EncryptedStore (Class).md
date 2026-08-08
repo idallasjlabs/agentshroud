@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "code"
-community: "Module Group 407"
+community: "docs/vault"
 location: "gateway/security/encrypted_store.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_407
+  - community/docs/vault
 ---
 
 # EncryptedStore (Class)
 
 ## Connections
-- [[encrypted_store.py_1]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_407
+#graphify/code #graphify/EXTRACTED #community/docs/vault

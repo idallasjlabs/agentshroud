@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Module Group 182"
-location: "L152"
+community: "CLI Client (Rust)"
+location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_182
+  - community/CLI_Client_Rust
 ---
 
 # Formatter
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.fmt()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_182
+#graphify/code #graphify/EXTRACTED #community/CLI_Client_Rust

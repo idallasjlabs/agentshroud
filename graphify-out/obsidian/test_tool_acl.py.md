@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Tool ACL & RBAC Config"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_ACL__RBAC_Config
+  - community/Gateway_Test_Suite
 ---
 
 # test_tool_acl.py
@@ -28,7 +28,7 @@ tags:
 - [[ToolACLConfig]] - `imports` [EXTRACTED]
 - [[ToolACLEnforcer]] - `imports` [EXTRACTED]
 - [[_make_rbac()_1]] - `contains` [EXTRACTED]
-- [[enforcer()_2]] - `contains` [EXTRACTED]
-- [[rbac()_2]] - `contains` [EXTRACTED]
+- [[enforcer()_3]] - `contains` [EXTRACTED]
+- [[rbac()_6]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_ACL__RBAC_Config
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

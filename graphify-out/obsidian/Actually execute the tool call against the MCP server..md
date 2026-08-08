@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Module Group 205"
-location: "L651"
+community: "Gateway Proxy Layer"
+location: "L701"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_205
+  - community/Gateway_Proxy_Layer
 ---
 
 # Actually execute the tool call against the MCP server.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._execute_tool_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_205
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Module Group 257"
-location: "L113"
+community: "PII Config & Test Fixtures"
+location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_257
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestHTTPSecurity
@@ -43,7 +43,7 @@ tags:
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test HTTP-level security CRLF, header injection, content types.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_257
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

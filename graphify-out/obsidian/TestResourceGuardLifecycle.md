@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "PII Sanitizer & Resource Guard"
+community: "LLM Proxy Resource Guard"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # TestResourceGuardLifecycle
@@ -18,4 +18,4 @@ tags:
 - [[The lifespan must stop the background monitor task on shutdown.]] - `rationale_for` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

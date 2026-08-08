@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Module Group 257"
-location: "L144"
+community: "PII Config & Test Fixtures"
+location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_257
+  - community/PII_Config__Test_Fixtures
 ---
 
 # JSON injection in message shouldn't manipulate context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_json_injection_in_context()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_257
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

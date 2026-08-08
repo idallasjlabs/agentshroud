@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "Module Group 85"
-location: "L399"
+community: "Kill Switch Config"
+location: "L398"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_85
+  - community/Kill_Switch_Config
 ---
 
 # Test if the kill switch script has valid syntax.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._test_script_syntax()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_85
+#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch_Config

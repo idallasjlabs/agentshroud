@@ -1,17 +1,16 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.svg"
-type: "image"
-community: "Module Group 421"
+type: "concept"
+community: "docs/diagrams"
 tags:
-  - graphify/image
-  - graphify/EXPLICIT
-  - community/Module_Group_421
+  - graphify/concept
+  - graphify/EXTRACTED
+  - community/docs/diagrams
 ---
 
-# User Sends Message or Cron Fires
+# User sends message or cron fires
 
 ## Connections
-- [[Bot Receives Event (Telegram  iMessage  Web  Cron)]] - `flows_to` [EXPLICIT]
-- [[Diagram 14 Logic Flow (PNG)]] - `contains` [EXPLICIT]
+- [[Main agent (agentshroud_bot)]] - `calls` [EXTRACTED]
 
-#graphify/image #graphify/EXPLICIT #community/Module_Group_421
+#graphify/concept #graphify/EXTRACTED #community/docs/diagrams

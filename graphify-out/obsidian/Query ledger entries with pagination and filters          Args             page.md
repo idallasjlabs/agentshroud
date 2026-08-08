@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "Ledger Config & Test Infra"
+community: "Auth & Exception Types"
 location: "L215"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ledger_Config__Test_Infra
+  - community/Auth__Exception_Types
 ---
 
 # Query ledger entries with pagination and filters          Args:             page
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ledger_Config__Test_Infra
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Module Group 260"
-location: "L9088"
+community: "Gateway Test Suite"
+location: "L9458"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_260
+  - community/Gateway_Test_Suite
 ---
 
 # Per-user mode override is respected by the outbound filter.          A collabora
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_per_user_mode_override_controls_outbound_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_260
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

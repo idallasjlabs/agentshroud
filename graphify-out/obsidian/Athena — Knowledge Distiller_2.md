@@ -1,0 +1,20 @@
+---
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
+type: "document"
+community: "Bot Skill Config"
+location: "L1"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Bot_Skill_Config
+---
+
+# Athena — Knowledge Distiller
+
+## Connections
+- [[Purpose_38]] - `contains` [EXTRACTED]
+- [[README_43]] - `contains` [EXTRACTED]
+- [[Related Skills_41]] - `contains` [EXTRACTED]
+- [[Usage_43]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

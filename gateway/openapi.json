@@ -492,6 +492,12 @@
             "title": "Source",
             "type": "string"
           },
+          "stream": {
+            "default": false,
+            "description": "Request a streamed reply via POST /forward/stream instead of the blocking JSON response. Only honored on /forward/stream; ignored on /forward. Requires an OpenAI-compat target (chat_path contains 'chat/completions').",
+            "title": "Stream",
+            "type": "boolean"
+          },
           "user_id": {
             "anyOf": [
               {
@@ -3525,6 +3531,43 @@
           }
         },
         "summary": "Forward Content"
+      }
+    },
+    "/forward/stream": {
+      "post": {
+        "description": "Streaming variant of /forward for OpenAI-compat agents (Hermes).\n\nSame inbound routing/anti-spoof/PII/audit processing as /forward\n(_process_inbound), but instead of blocking for the complete agent\nreply, relays Hermes's real token stream and releases each sentence\n(through the same security filters, per sliding window) as soon as it\nis ready \u2014 so voice_gateway can start TTS immediately instead of\nwaiting for the whole response to finish generating.\n\nResponse is `text/event-stream`: one `data: {\"sentence\": \"...\"}` event\nper released sentence, followed by a single terminal `data: {\"done\":\ntrue, ...ledger fields...}` event. Not used by non-voice callers\n(Telegram, Shortcuts, etc.) \u2014 they keep using /forward.",
+        "operationId": "forward_content_stream_forward_stream_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ForwardRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Forward Content Stream"
       }
     },
     "/ledger": {

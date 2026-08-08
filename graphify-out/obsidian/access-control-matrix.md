@@ -1,18 +1,24 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Module Group 298"
+community: "docs/project"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_298
+  - community/docs/project
 ---
 
 # access-control-matrix.md
 
 ## Connections
-- [[MCP Proxy Tool Categories (A-E Safe through Critical operations)]] - `defines` [EXTRACTED]
-- [[RBAC Role Definitions (Admin, Operator, Viewer, L0-L4 Agent Trust Levels)]] - `defines` [EXTRACTED]
-- [[Trust Level Progression Rules (L0→L4, violation penalties, recovery timeframes)]] - `defines` [EXTRACTED]
+- [[AgentShroud Access Control Matrix]] - `contains` [EXTRACTED]
+- [[Approval Queue_1]] - `references` [EXTRACTED]
+- [[MCP (Model Context Protocol)]] - `references` [EXTRACTED]
+- [[PII (Personally Identifiable Information)]] - `references` [EXTRACTED]
+- [[Trust Level]] - `references` [EXTRACTED]
+- [[WEB_CONTROL_CENTER_SUMMARY]] - `conceptually_related_to` [INFERRED]
+- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `conceptually_related_to` [INFERRED]
+- [[use-cases]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_298
+#graphify/document #graphify/EXTRACTED #community/docs/project

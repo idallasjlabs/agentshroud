@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/README.md"
 type: "concept"
-community: "Module Group 485"
+community: "skills/openclaw"
 location: "line 8"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/Module_Group_485
+  - graphify/INFERRED
+  - community/skills/openclaw
 ---
 
 # Text Control Center (text_control_center.py)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Text Interfaces README]] - `documents` [EXTRACTED]
 - [[tmux Session Control]] - `integrates_with` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_485
+#graphify/concept #graphify/INFERRED #community/skills/openclaw

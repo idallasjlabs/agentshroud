@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "Module Group 177"
+community: "Security Pipeline Core"
 location: "L22"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_177
+  - community/Security_Pipeline_Core
 ---
 
 # PipelineResult
@@ -17,4 +17,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[_make_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_177
+#graphify/code #graphify/INFERRED #community/Security_Pipeline_Core

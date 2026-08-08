@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "Progressive Lockdown"
+community: "Gateway Test Suite"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Lockdown
+  - community/Gateway_Test_Suite
 ---
 
 # LockdownAction
@@ -16,4 +16,4 @@ tags:
 - [[What the caller should do in response to this block.]] - `rationale_for` [EXTRACTED]
 - [[progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Lockdown
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

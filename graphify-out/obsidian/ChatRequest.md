@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "code"
-community: "Module Group 312"
-location: "L25"
+community: "chatbot/main.py"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_312
+  - community/chatbot/mainpy
 ---
 
 # ChatRequest
@@ -16,4 +16,4 @@ tags:
 - [[chat()]] - `references` [EXTRACTED]
 - [[main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_312
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

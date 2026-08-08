@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "Tool ACL & RBAC Config"
-location: "L46"
+community: "Gateway Test Suite"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_ACL__RBAC_Config
+  - community/Gateway_Test_Suite
 ---
 
 # enforcer()
 
 ## Connections
-- [[ToolACLConfig]] - `calls` [EXTRACTED]
-- [[ToolACLEnforcer]] - `calls` [EXTRACTED]
-- [[test_tool_acl.py]] - `contains` [EXTRACTED]
+- [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
+- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_ACL__RBAC_Config
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

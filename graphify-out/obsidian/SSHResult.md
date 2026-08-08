@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "SSH Proxy & Gateway Config"
-location: "L22"
+community: "Approval Queue Tests"
+location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Approval_Queue_Tests
 ---
 
 # SSHResult
@@ -15,10 +15,12 @@ tags:
 - [[.execute()]] - `references` [EXTRACTED]
 - [[.test_non_auto_approved_executes_directly()]] - `calls` [EXTRACTED]
 - [[.test_ssh_exec_auto_approved()]] - `calls` [EXTRACTED]
+- [[.test_ssh_exec_cwd_accepted_and_forwarded()]] - `calls` [EXTRACTED]
+- [[.test_ssh_exec_cwd_none_forwards_none()]] - `calls` [EXTRACTED]
 - [[.test_ssh_history()]] - `calls` [EXTRACTED]
 - [[Result of an SSH command execution]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHConfig]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHProxy_1]] - `uses` [INFERRED]
 - [[TestExecute]] - `uses` [INFERRED]
 - [[TestInjectionNewline]] - `uses` [INFERRED]
@@ -29,10 +31,11 @@ tags:
 - [[TestSSHHistory]] - `uses` [INFERRED]
 - [[TestSSHHosts]] - `uses` [INFERRED]
 - [[TestSSHRequireApprovalFalse]] - `uses` [INFERRED]
+- [[TestSSHValidateCwd]] - `uses` [INFERRED]
 - [[TestValidateCommand]] - `uses` [INFERRED]
-- [[__init__.py_10]] - `imports` [EXTRACTED]
+- [[__init__.py_12]] - `imports` [EXTRACTED]
 - [[proxy.py]] - `contains` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SSH_Proxy__Gateway_Config
+#graphify/code #graphify/INFERRED #community/Approval_Queue_Tests

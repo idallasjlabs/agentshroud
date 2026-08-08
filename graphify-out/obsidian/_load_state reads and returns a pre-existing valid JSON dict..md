@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "rationale"
-community: "Module Group 136"
+community: "Gateway Test Suite"
 location: "L312"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_136
+  - community/Gateway_Test_Suite
 ---
 
 # _load_state reads and returns a pre-existing valid JSON dict.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_load_state_loads_existing_valid_dict()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_136
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

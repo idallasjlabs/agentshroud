@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Module Group 132"
-location: "L349"
+community: "Approval Queue Tests"
+location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_132
+  - community/Approval_Queue_Tests
 ---
 
 # TestGlobalSecurityHeaders
@@ -20,4 +20,4 @@ tags:
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_132
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Module Group 74"
+community: "Slack API Proxy"
 location: "L983"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_74
+  - graphify/INFERRED
+  - community/Slack_API_Proxy
 ---
 
 # TestClose
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_74
+#graphify/code #graphify/INFERRED #community/Slack_API_Proxy

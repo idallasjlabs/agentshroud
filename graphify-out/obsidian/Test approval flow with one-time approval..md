@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Module Group 117"
+community: "Gateway Test Suite"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_117
+  - community/Gateway_Test_Suite
 ---
 
 # Test approval flow with one-time approval.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_approval_flow_once()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_117
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

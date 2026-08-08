@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "RBAC Configuration"
-location: "L343"
+community: "Auth & Exception Types"
+location: "L340"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # Test RBAC integration with middleware.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRBACIntegration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Configuration
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

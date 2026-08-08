@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Module Group 179"
+community: "Tool Chain Analyzer"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_179
+  - community/Tool_Chain_Analyzer
 ---
 
 # ChainMatch
@@ -23,4 +23,4 @@ tags:
 - [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_179
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Web API & Dashboard UI"
-location: "L418"
+community: "Competitive Intel Store"
+location: "L458"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_API__Dashboard_UI
+  - community/Competitive_Intel_Store
 ---
 
 # import_config()
@@ -17,4 +17,4 @@ tags:
 - [[api.py]] - `contains` [EXTRACTED]
 - [[update_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_API__Dashboard_UI
+#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store

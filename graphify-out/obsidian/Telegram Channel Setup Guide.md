@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup-telegram.md"
 type: "document"
-community: "Module Group 623"
+community: "docs/setup-telegram.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_623
+  - community/docs/setup-telegrammd
 ---
 
 # Telegram Channel Setup Guide
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Telegram BotFather Bot Creation]] - `requires` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_623
+#graphify/document #graphify/EXTRACTED #community/docs/setup-telegrammd

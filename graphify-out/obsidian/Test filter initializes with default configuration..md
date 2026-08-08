@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Module Group 81"
-location: "L30"
+community: "Gateway Test Suite"
+location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_81
+  - community/Gateway_Test_Suite
 ---
 
 # Test filter initializes with default configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_initialization_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_81
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

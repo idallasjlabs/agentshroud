@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "PII Sanitizer & Resource Guard"
-location: "L187"
+community: "PII Config & Test Fixtures"
+location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/PII_Config__Test_Fixtures
 ---
 
 # PII at message start and end.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pii_boundary_handling()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__Resource_Guard
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

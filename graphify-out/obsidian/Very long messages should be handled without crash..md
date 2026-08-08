@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Module Group 258"
-location: "L326"
+community: "PII Config & Test Fixtures"
+location: "L320"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_258
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Very long messages should be handled without crash.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_very_long_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_258
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

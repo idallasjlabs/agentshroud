@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/vault/03 - Configuration/agentshroud.yaml.md"
+source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "concept"
-community: "Module Group 344"
+community: "docs/vault"
 location: "agentshroud.yaml"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_344
+  - community/docs/vault
 ---
 
 # agentshroud.yaml security section (PII, approval queue, network isolation)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud.yaml (master gateway configuration file)]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_344
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Module Group 160"
-location: "L2789"
+community: "Collaborator Prompt Classifiers"
+location: "L2871"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_160
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Per-request bot_id for activity tracking.          Returns the bot_id set by pro
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._active_bot_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_160
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "Module Group 93"
+community: "Gateway Test Suite"
 location: "L52"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_93
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # KeyRotationConfig
@@ -23,7 +23,7 @@ tags:
 - [[.test_default_config_has_common_policies()]] - `calls` [EXTRACTED]
 - [[.test_get_op_reference_builds_correctly()]] - `calls` [EXTRACTED]
 - [[.test_get_policy_returns_default_for_unknown_type()]] - `calls` [EXTRACTED]
-- [[Any_38]] - `uses` [INFERRED]
+- [[Any_40]] - `uses` [INFERRED]
 - [[Configuration for key rotation policies and schedules.]] - `rationale_for` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy]] - `uses` [INFERRED]
@@ -34,18 +34,27 @@ tags:
 - [[KeyRotationManager]] - `uses` [INFERRED]
 - [[MockValidator]] - `uses` [INFERRED]
 - [[RotationStatus]] - `uses` [INFERRED]
+- [[TestCheckAndRotateDisabled]] - `uses` [INFERRED]
 - [[TestCredentialInfo]] - `uses` [INFERRED]
 - [[TestCredentialRotationPolicy]] - `uses` [INFERRED]
+- [[TestEmergencyAndRetire]] - `uses` [INFERRED]
+- [[TestGenerateAndValidate]] - `uses` [INFERRED]
 - [[TestKeyRotationConfig]] - `uses` [INFERRED]
 - [[TestKeyRotationManager]] - `uses` [INFERRED]
 - [[TestKeyRotationWorkflow]] - `uses` [INFERRED]
+- [[TestReadFrom1Password]] - `uses` [INFERRED]
+- [[TestRotateGuardBranches]] - `uses` [INFERRED]
+- [[TestStatusHelpers]] - `uses` [INFERRED]
+- [[TestStoreIn1Password]] - `uses` [INFERRED]
 - [[credentials_health()]] - `calls` [EXTRACTED]
 - [[credentials_status()]] - `calls` [EXTRACTED]
-- [[datetime_2]] - `uses` [INFERRED]
+- [[datetime_3]] - `uses` [INFERRED]
 - [[key_rotation.py]] - `imports` [EXTRACTED]
 - [[key_rotation_config.py]] - `contains` [EXTRACTED]
 - [[management.py]] - `imports` [EXTRACTED]
+- [[manager()_2]] - `calls` [EXTRACTED]
 - [[rotate_credential()]] - `calls` [EXTRACTED]
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
+- [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_93
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

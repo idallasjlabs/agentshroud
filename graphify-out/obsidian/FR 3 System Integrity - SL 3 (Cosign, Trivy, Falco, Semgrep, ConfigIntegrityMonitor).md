@@ -1,18 +1,17 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "Module Group 398"
+community: "docs/compliance"
 location: "line 47"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Module_Group_398
+  - graphify/EXTRACTED
+  - community/docs/compliance
 ---
 
 # FR 3: System Integrity - SL 3 (Cosign, Trivy, Falco, Semgrep, ConfigIntegrityMonitor)
 
 ## Connections
-- [[CICD Pipeline - 14 Jobs across 6 Workflows (test, lint, gitleaks, smoke-static, security-scan, soul-freshness)]] - `satisfied_by` [INFERRED]
 - [[IEC 62443 Compliance Matrix - AgentShroud v1.0.0]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Module_Group_398
+#graphify/concept #graphify/EXTRACTED #community/docs/compliance

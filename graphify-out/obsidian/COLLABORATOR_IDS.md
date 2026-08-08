@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Module Group 165"
+community: "Bot Skill Config"
 location: "L310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_165
+  - community/Bot_Skill_Config
 ---
 
 # COLLABORATOR_IDS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[apply-patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_165
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

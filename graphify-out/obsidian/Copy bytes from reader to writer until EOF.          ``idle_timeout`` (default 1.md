@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "Module Group 303"
-location: "L428"
+community: "Gateway Proxy Layer"
+location: "L515"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_303
+  - community/Gateway_Proxy_Layer
 ---
 
 # Copy bytes from reader to writer until EOF.          ``idle_timeout`` (default 1
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._relay()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_303
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_socket_client.py"
 type: "rationale"
-community: "Module Group 109"
+community: "Gateway Test Suite"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_109
+  - community/Gateway_Test_Suite
 ---
 
 # Signal the run loop to exit.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.stop()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_109
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/scripts/mcp-proxy-wrapper.js"
+source_file: "docker/config/openclaw/setup-https-proxy.js"
 type: "code"
-community: "Module Group 305"
-location: "L29"
+community: "Bot Skill Config"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_305
+  - community/Bot_Skill_Config
 ---
 
 # https
 
 ## Connections
-- [[mcp-proxy-wrapper.js]] - `contains` [EXTRACTED]
+- [[setup-https-proxy.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_305
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

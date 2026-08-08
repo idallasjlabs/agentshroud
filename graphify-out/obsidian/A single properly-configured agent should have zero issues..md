@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "rationale"
-community: "Agent Isolation & Container Config"
-location: "L177"
+community: "Gateway Test Suite"
+location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Container_Config
+  - community/Gateway_Test_Suite
 ---
 
 # A single properly-configured agent should have zero issues.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_single_agent_fully_secure()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agent_Isolation__Container_Config
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Approval Queue Core"
-location: "L40"
+community: "Approval Queue Tests"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_Core
+  - community/Approval_Queue_Tests
 ---
 
 # ApprovalQueueConfig
 
 ## Connections
-- [[.__init__()_1]] - `references` [EXTRACTED]
+- [[.__init__()_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Core
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

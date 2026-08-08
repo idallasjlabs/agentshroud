@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "Module Group 96"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_96
+  - community/Gateway_Test_Suite
 ---
 
 # proxy_status.py
@@ -15,4 +15,4 @@ tags:
 - [[ProxyDashboard]] - `contains` [EXTRACTED]
 - [[ProxyStatusReport]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_96
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

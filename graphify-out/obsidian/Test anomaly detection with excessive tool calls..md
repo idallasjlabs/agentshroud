@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "rationale"
-community: "Module Group 98"
-location: "L134"
+community: "Kill Switch Config"
+location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_98
+  - community/Kill_Switch_Config
 ---
 
 # Test anomaly detection with excessive tool calls.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_anomaly_detection_excessive_tool_calls()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_98
+#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch_Config

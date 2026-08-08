@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "RBAC Configuration"
+community: "Auth & Exception Types"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # Role
@@ -22,4 +22,4 @@ tags:
 - [[Role_1]] - `uses` [INFERRED]
 - [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Configuration
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

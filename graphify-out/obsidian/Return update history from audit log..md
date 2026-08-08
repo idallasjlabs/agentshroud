@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Web API & Dashboard UI"
-location: "L751"
+community: "Competitive Intel Store"
+location: "L811"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Web_API__Dashboard_UI
+  - community/Competitive_Intel_Store
 ---
 
 # Return update history from audit log.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Web_API__Dashboard_UI
+#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store

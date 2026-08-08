@@ -1,32 +1,25 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Scanner Integration Tests"
-location: "L56"
+community: "SOC Dashboard"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration_Tests
+  - community/SOC_Dashboard
 ---
 
 # Any
 
 ## Connections
-- [[_clamav_clean()]] - `references` [EXTRACTED]
-- [[_clamav_infected()]] - `references` [EXTRACTED]
-- [[_clean_trivy_report()]] - `references` [EXTRACTED]
-- [[_critical_trivy_report()]] - `references` [EXTRACTED]
-- [[_falco_clean()]] - `references` [EXTRACTED]
-- [[_falco_critical()]] - `references` [EXTRACTED]
-- [[_falco_not_run()]] - `references` [EXTRACTED]
-- [[_openscap_clean()]] - `references` [EXTRACTED]
-- [[_openscap_not_run()]] - `references` [EXTRACTED]
-- [[_openscap_warn()]] - `references` [EXTRACTED]
-- [[_trivy_clean()]] - `references` [EXTRACTED]
-- [[_trivy_critical()]] - `references` [EXTRACTED]
-- [[_trivy_not_run()]] - `references` [EXTRACTED]
-- [[_wazuh_clean()]] - `references` [EXTRACTED]
-- [[_wazuh_not_run()]] - `references` [EXTRACTED]
-- [[_write_image_report()]] - `references` [EXTRACTED]
+- [[SecurityEvent_1]] - `uses` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
+- [[_map_severity()]] - `references` [EXTRACTED]
+- [[collect_recent_events()]] - `references` [EXTRACTED]
+- [[from_anomaly_alert()]] - `references` [EXTRACTED]
+- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
+- [[from_dict()]] - `references` [EXTRACTED]
+- [[from_egress_attempt()]] - `references` [EXTRACTED]
+- [[from_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Tests
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

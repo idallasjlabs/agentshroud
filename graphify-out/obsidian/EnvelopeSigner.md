@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "Pipeline Action & Instruction Envelope"
+community: "Cross-Bot Trust Ledger"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pipeline_Action__Instruction_Envelope
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # EnvelopeSigner
 
 ## Connections
-- [[.__init__()_68]] - `method` [EXTRACTED]
+- [[.__init__()_83]] - `method` [EXTRACTED]
 - [[._compute_signature()]] - `method` [EXTRACTED]
 - [[.sign()]] - `method` [EXTRACTED]
 - [[.test_different_keys_fail_verification()]] - `calls` [EXTRACTED]
@@ -28,7 +28,11 @@ tags:
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
 - [[TestEnvelopeSigner]] - `uses` [INFERRED]
 - [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
+- [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
+- [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
+- [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
+- [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[instruction_envelope.py]] - `contains` [EXTRACTED]
@@ -38,4 +42,4 @@ tags:
 - [[test_instruction_envelope.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pipeline_Action__Instruction_Envelope
+#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger

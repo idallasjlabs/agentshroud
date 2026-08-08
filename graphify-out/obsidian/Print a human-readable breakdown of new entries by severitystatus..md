@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Module Group 212"
-location: "L419"
+community: "scripts/sync-cve-registry.py"
+location: "L466"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_212
+  - community/scripts/sync-cve-registrypy
 ---
 
 # Print a human-readable breakdown of new entries by severity/status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_print_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_212
+#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

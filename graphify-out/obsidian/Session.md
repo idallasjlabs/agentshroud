@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "PII Sanitizer & Resource Guard"
+community: "PII Config & Test Fixtures"
 location: "L45"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Session
@@ -19,7 +19,7 @@ tags:
 - [[.test_session_different_fingerprints()]] - `calls` [EXTRACTED]
 - [[.test_session_rate_limit()]] - `calls` [EXTRACTED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
@@ -44,4 +44,4 @@ tags:
 - [[session_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer__Resource_Guard
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

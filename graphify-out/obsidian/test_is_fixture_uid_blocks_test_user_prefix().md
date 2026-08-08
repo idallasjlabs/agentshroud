@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "Module Group 263"
+community: "Gateway Test Suite"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_263
+  - community/Gateway_Test_Suite
 ---
 
 # test_is_fixture_uid_blocks_test_user_prefix()
@@ -15,4 +15,4 @@ tags:
 - [[_is_fixture_uid()]] - `calls` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_263
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

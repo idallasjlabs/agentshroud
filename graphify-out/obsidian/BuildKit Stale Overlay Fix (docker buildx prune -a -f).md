@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/runbooks/colima-docker-guide.md"
+source_file: "docs/runbooks/colima-docker-guide.md"
 type: "concept"
-community: "Module Group 353"
+community: "docs/runbooks"
 location: "line 248-293"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_353
+  - community/docs/runbooks
 ---
 
 # BuildKit Stale Overlay Fix (docker buildx prune -a -f)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Colima Docker Operations Guide]] - `documents` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_353
+#graphify/concept #graphify/EXTRACTED #community/docs/runbooks

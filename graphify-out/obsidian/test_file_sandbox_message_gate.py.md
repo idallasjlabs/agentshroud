@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "Session Manager & Webhook"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Session_Manager__Webhook
+  - community/Gateway_Test_Suite
 ---
 
 # test_file_sandbox_message_gate.py
@@ -25,4 +25,4 @@ tags:
 - [[session_manager()]] - `contains` [EXTRACTED]
 - [[temp_workspace()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__Webhook
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

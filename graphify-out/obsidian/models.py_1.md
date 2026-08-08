@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "SOC Services & Health Status"
+community: "SOC Dashboard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Services__Health_Status
+  - community/SOC_Dashboard
 ---
 
 # models.py
@@ -23,14 +23,14 @@ tags:
 - [[HealthStatus]] - `contains` [EXTRACTED]
 - [[Platform]] - `contains` [EXTRACTED]
 - [[ResourceUsage_1]] - `contains` [EXTRACTED]
-- [[RiskLevel_2]] - `contains` [EXTRACTED]
+- [[RiskLevel_4]] - `contains` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `contains` [EXTRACTED]
 - [[SCLError]] - `contains` [EXTRACTED]
 - [[SCLInterface]] - `contains` [EXTRACTED]
 - [[SecurityEvent_1]] - `contains` [EXTRACTED]
 - [[ServiceDescriptor]] - `contains` [EXTRACTED]
 - [[ServiceStatus]] - `contains` [EXTRACTED]
-- [[Severity_1]] - `contains` [EXTRACTED]
+- [[Severity_2]] - `contains` [EXTRACTED]
 - [[UserRole_1]] - `contains` [EXTRACTED]
 - [[WSEvent]] - `contains` [EXTRACTED]
 - [[WSEventType]] - `contains` [EXTRACTED]
@@ -42,4 +42,4 @@ tags:
 - [[services.py]] - `imports_from` [EXTRACTED]
 - [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Services__Health_Status
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

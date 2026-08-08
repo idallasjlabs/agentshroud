@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "CLI & Core Gateway Routes"
-location: "L121"
+community: "Auth & Exception Types"
+location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Auth__Exception_Types
 ---
 
 # Single entry from the data ledger
 
 ## Connections
-- [[LedgerEntry_1]] - `rationale_for` [EXTRACTED]
+- [[LedgerEntry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

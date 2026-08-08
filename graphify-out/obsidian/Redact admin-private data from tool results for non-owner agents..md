@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Module Group 205"
-location: "L325"
+community: "Gateway Proxy Layer"
+location: "L332"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_205
+  - community/Gateway_Proxy_Layer
 ---
 
 # Redact admin-private data from tool results for non-owner agents.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._sanitize_admin_private_data()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_205
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

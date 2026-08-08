@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Egress Filter & Approval"
+community: "Gateway Test Suite"
 location: "L157"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Filter__Approval
+  - community/Gateway_Test_Suite
 ---
 
 # TestPerAgentPolicy
@@ -22,4 +22,4 @@ tags:
 - [[Per-agent policies override the default.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Filter__Approval
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

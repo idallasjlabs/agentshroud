@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/http-proxy-256x256.png"
 type: "image"
-community: "Module Group 375"
+community: "branding/icons"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Module_Group_375
+  - community/branding/icons
 ---
 
 # HTTP Proxy — Module Icon
@@ -15,4 +15,4 @@ tags:
 - [[Prompt Guard — Module Icon]] - `conceptually_related_to` [INFERRED]
 - [[SSH Proxy — Module Icon]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Module_Group_375
+#graphify/image #graphify/INFERRED #community/branding/icons

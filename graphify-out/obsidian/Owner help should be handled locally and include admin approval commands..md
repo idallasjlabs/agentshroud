@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Inbound Tests"
+community: "Telegram Proxy Test Suite"
 location: "L442"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound_Tests
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Owner /help should be handled locally and include admin approval commands.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_help_uses_local_notice_and_includes_revoke()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

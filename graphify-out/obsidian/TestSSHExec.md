@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "SSH Proxy & Gateway Config"
+community: "Approval Queue Tests"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Approval_Queue_Tests
 ---
 
 # TestSSHExec
@@ -14,6 +14,10 @@ tags:
 ## Connections
 - [[.test_ssh_exec_auto_approved()]] - `method` [EXTRACTED]
 - [[.test_ssh_exec_command_not_in_allowlist()]] - `method` [EXTRACTED]
+- [[.test_ssh_exec_cwd_accepted_and_forwarded()]] - `method` [EXTRACTED]
+- [[.test_ssh_exec_cwd_invalid_rejects_400()]] - `method` [EXTRACTED]
+- [[.test_ssh_exec_cwd_none_forwards_none()]] - `method` [EXTRACTED]
+- [[.test_ssh_exec_cwd_relative_path_rejects_400()]] - `method` [EXTRACTED]
 - [[.test_ssh_exec_denied_command()]] - `method` [EXTRACTED]
 - [[.test_ssh_exec_injection_attempt()]] - `method` [EXTRACTED]
 - [[.test_ssh_exec_no_auth()]] - `method` [EXTRACTED]
@@ -27,11 +31,11 @@ tags:
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[SSHResult]] - `uses` [INFERRED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SSH_Proxy__Gateway_Config
+#graphify/code #graphify/INFERRED #community/Approval_Queue_Tests

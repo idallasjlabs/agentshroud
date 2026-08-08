@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "Environment Guard & Leak Detection"
+community: "File Sandbox"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - community/File_Sandbox
 ---
 
 # test_privilege_separation.py
@@ -28,4 +28,4 @@ tags:
 - [[middleware_manager()]] - `contains` [EXTRACTED]
 - [[strict_sandbox()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "Module Group 157"
+community: "Gateway Test Suite"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_157
+  - community/Gateway_Test_Suite
 ---
 
 # SchemaValidationResult
@@ -18,4 +18,4 @@ tags:
 - [[output_schema.py]] - `contains` [EXTRACTED]
 - [[test_output_schema.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_157
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

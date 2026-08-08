@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "URL Analyzer & Content Scanner"
+community: "Auth & Exception Types"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URL_Analyzer__Content_Scanner
+  - community/Auth__Exception_Types
 ---
 
 # FindingSeverity
@@ -16,4 +16,4 @@ tags:
 - [[str]] - `inherits` [EXTRACTED]
 - [[web_content_scanner.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URL_Analyzer__Content_Scanner
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

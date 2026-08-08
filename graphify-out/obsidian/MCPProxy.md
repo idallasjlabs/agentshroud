@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Module Group 78"
+community: "Gateway Test Suite"
 location: "L224"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_78
+  - community/Gateway_Test_Suite
 ---
 
 # MCPProxy
 
 ## Connections
-- [[.__init__()_23]] - `method` [EXTRACTED]
+- [[.__init__()_31]] - `method` [EXTRACTED]
 - [[._emit_privacy_event()]] - `method` [EXTRACTED]
 - [[._execute_tool_call()]] - `method` [EXTRACTED]
 - [[._extract_egress_targets()]] - `method` [EXTRACTED]
@@ -27,20 +27,25 @@ tags:
 - [[.test_disabled_server_blocked()]] - `calls` [EXTRACTED]
 - [[.test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
 - [[.test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `calls` [INFERRED]
+- [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
+- [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
+- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 - [[Main MCP proxy that intercepts tool calls and routes through security.      Tran]] - `rationale_for` [EXTRACTED]
+- [[MonkeyPatch]] - `uses` [INFERRED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestApprovalQueue]] - `uses` [INFERRED]
 - [[TestApprovalWorkflow]] - `uses` [INFERRED]
@@ -53,6 +58,7 @@ tags:
 - [[TestDataclasses]] - `uses` [INFERRED]
 - [[TestEgressFilterPaths]] - `uses` [INFERRED]
 - [[TestEmitPrivacyEvent]] - `uses` [INFERRED]
+- [[TestExecuteResultInspectionBinding]] - `uses` [INFERRED]
 - [[TestExecuteToolCall]] - `uses` [INFERRED]
 - [[TestExtractEgressTargets]] - `uses` [INFERRED]
 - [[TestHashChainIntegration]] - `uses` [INFERRED]
@@ -78,17 +84,23 @@ tags:
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
-- [[__init__.py_6]] - `imports` [EXTRACTED]
+- [[_FakeApprovalQueue]] - `uses` [INFERRED]
+- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[mcp_proxy_endpoint()]] - `calls` [EXTRACTED]
 - [[passthrough_proxy()]] - `calls` [EXTRACTED]
 - [[proxy()]] - `calls` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
-- [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
+- [[test_enhanced_approval.py]] - `references` [EXTRACTED]
+- [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
+- [[test_mcp_proxy_allows_policy_permitted_call()]] - `calls` [EXTRACTED]
+- [[test_mcp_proxy_blocks_policy_denied_call()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
+- [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_78
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

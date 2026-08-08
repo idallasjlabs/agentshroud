@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_integrity.py"
 type: "code"
-community: "Module Group 122"
-location: "L38"
+community: "Gateway Test Suite"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_122
+  - community/Gateway_Test_Suite
 ---
 
 # _not_run_trivy()
@@ -16,4 +16,4 @@ tags:
 - [[test_scorecard_integrity.py]] - `contains` [EXTRACTED]
 - [[test_vuln_not_run_scores_1()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_122
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

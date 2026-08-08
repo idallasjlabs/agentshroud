@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCP Inspector & Audit"
+community: "MCP Proxy Config"
 location: "L153"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Inspector__Audit
+  - community/MCP_Proxy_Config
 ---
 
 # PrivateAccessAttempt
@@ -20,4 +20,4 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Inspector__Audit
+#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config

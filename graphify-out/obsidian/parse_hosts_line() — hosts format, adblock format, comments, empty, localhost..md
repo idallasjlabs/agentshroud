@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "rationale"
-community: "Module Group 307"
+community: "Gateway Test Suite"
 location: "L14"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_307
+  - community/Gateway_Test_Suite
 ---
 
 # parse_hosts_line() — hosts format, adblock format, comments, empty, localhost.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestParseHostsLine]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_307
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

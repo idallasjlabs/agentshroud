@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "Module Group 100"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_100
+  - community/Gateway_Test_Suite
 ---
 
 # test_dns_blocklist.py
@@ -19,4 +19,4 @@ tags:
 - [[TestParseHostsLine]] - `contains` [EXTRACTED]
 - [[TestStats]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_100
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

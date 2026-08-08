@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Telegram Outbound Test Coverage"
+community: "Gateway Test Suite"
 location: "L4821"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Outbound_Test_Coverage
+  - community/Gateway_Test_Suite
 ---
 
 # When tracker is None, /activity returns honest error, not silent empty.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_activity_command_reports_tracker_unhealthy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Outbound_Test_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

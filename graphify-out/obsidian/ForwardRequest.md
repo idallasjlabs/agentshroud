@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Agent Routing & Request Models"
-location: "L20"
+community: "Forward Routing & Approval"
+location: "L22"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Agent_Routing__Request_Models
+  - graphify/EXTRACTED
+  - community/Forward_Routing__Approval
 ---
 
 # ForwardRequest
@@ -19,22 +19,19 @@ tags:
 - [[.test_valid_forward_request()]] - `calls` [EXTRACTED]
 - [[.validate_source()]] - `method` [EXTRACTED]
 - [[AgentTarget_1]] - `uses` [INFERRED]
-- [[Any_7]] - `uses` [INFERRED]
-- [[AuthRequired]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
-- [[Exception]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[MCPProxyRequest]] - `uses` [INFERRED]
 - [[MCPResultRequest]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[OpProxyRequest]] - `uses` [INFERRED]
-- [[Path_21]] - `uses` [INFERRED]
-- [[Request]] - `uses` [INFERRED]
+- [[Path_25]] - `uses` [INFERRED]
 - [[Request to forward content through the gateway      Received from iOS Shortcuts,]] - `rationale_for` [EXTRACTED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
 - [[RouterError]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHExecRequest_1]] - `uses` [INFERRED]
 - [[TestAgentIdPropagatedFromTarget]] - `uses` [INFERRED]
 - [[TestAllExampleConfigsExist]] - `uses` [INFERRED]
 - [[TestApprovalEndpoints]] - `uses` [INFERRED]
@@ -46,13 +43,19 @@ tags:
 - [[TestMCPProxyEndpoint]] - `uses` [INFERRED]
 - [[TestMinimalConfig]] - `uses` [INFERRED]
 - [[TestOutboundBlockedNotDelivered]] - `uses` [INFERRED]
+- [[TestOwnerSpoofingViaForwardBody]] - `uses` [INFERRED]
+- [[TestOwnerTrustElevation]] - `uses` [INFERRED]
 - [[TestParanoidConfig]] - `uses` [INFERRED]
 - [[TestQuarantineEndpoints]] - `uses` [INFERRED]
 - [[TestRecommendedConfig]] - `uses` [INFERRED]
 - [[TestStatusEndpoint]] - `uses` [INFERRED]
-- [[WebSocket_2]] - `uses` [INFERRED]
 - [[_BlockedOutboundPipeline]] - `uses` [INFERRED]
+- [[_BlockingPipeline]] - `uses` [INFERRED]
+- [[_PassthroughPipeline]] - `uses` [INFERRED]
 - [[_PipelineCaptor]] - `uses` [INFERRED]
+- [[_TrustCaptor]] - `uses` [INFERRED]
+- [[_process_inbound()]] - `shares_data_with` [EXTRACTED]
+- [[_request()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[models.py]] - `contains` [EXTRACTED]
@@ -63,6 +66,7 @@ tags:
 - [[test_forward_request_validation_empty_content()]] - `calls` [EXTRACTED]
 - [[test_forward_request_validation_invalid_source()]] - `calls` [EXTRACTED]
 - [[test_forward_routing.py]] - `imports` [EXTRACTED]
+- [[test_forward_stream.py]] - `references` [EXTRACTED]
 - [[test_hermes_and_openclaw_coexist()]] - `calls` [EXTRACTED]
 - [[test_invalid_source_rejection()]] - `calls` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
@@ -74,6 +78,10 @@ tags:
 - [[test_resolves_hermes_target()]] - `calls` [EXTRACTED]
 - [[test_router.py]] - `imports` [EXTRACTED]
 - [[test_security.py]] - `imports` [EXTRACTED]
+- [[test_shortcut_content_types_accepted()]] - `calls` [EXTRACTED]
+- [[test_shortcut_empty_content_rejected()]] - `calls` [EXTRACTED]
+- [[test_shortcut_rejects_unknown_content_type()]] - `calls` [EXTRACTED]
+- [[test_shortcut_source_accepted()]] - `calls` [EXTRACTED]
 - [[test_valid_sources()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Agent_Routing__Request_Models
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

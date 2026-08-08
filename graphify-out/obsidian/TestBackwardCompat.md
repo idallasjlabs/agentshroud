@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "Progressive Trust Levels"
-location: "L89"
+community: "Progressive Trust Config"
+location: "L87"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Progressive_Trust_Levels
+  - community/Progressive_Trust_Config
 ---
 
 # TestBackwardCompat
@@ -21,9 +21,9 @@ tags:
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[TrustManager WITHOUT a progressive config must behave exactly as before.]] - `rationale_for` [EXTRACTED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Progressive_Trust_Levels
+#graphify/code #graphify/INFERRED #community/Progressive_Trust_Config

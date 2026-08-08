@@ -1,14 +1,14 @@
 ---
-source_file: "gateway/tests/__init__.py"
+source_file: "gateway/soc/__init__.py"
 type: "code"
-community: "Module Group 810"
+community: "SOC Dashboard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_810
+  - community/SOC_Dashboard
 ---
 
 # __init__.py
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_810
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

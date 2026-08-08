@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Egress Filter & Approval"
+community: "Gateway Test Suite"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Filter__Approval
+  - community/Gateway_Test_Suite
 ---
 
 # Create an EgressFilter with a simple config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter__Approval
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

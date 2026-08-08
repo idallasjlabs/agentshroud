@@ -1,24 +1,25 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "Module Group 346"
-location: "line 1"
+community: "docs/data"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_346
+  - community/docs/data
 ---
 
 # AgentShroud Data Dictionary
 
 ## Connections
-- [[ApprovalRequest Entity (id, agent_id, action, status PENDINGAPPROVEDDENIEDEXPIRED, expiry timeouts by priority)]] - `defines` [EXTRACTED]
-- [[AuditEntry Data Entity (id, timestamp, direction, content_hash, chain_hash, agent_id, threat_level)]] - `defines` [EXTRACTED]
-- [[DNSQuery Entity (id, domain, allowed, flagged, resolved_ip, response_time_ms)]] - `defines` [EXTRACTED]
-- [[Data Retention Policies (AuditEntry 7yr, ApprovalRequest 3yr, TrustLevel indefinite, DNSQuery 1yr, Session 30 days)]] - `specifies` [EXTRACTED]
-- [[MCPAuditEntry (extends AuditEntry with server_name, tool_name, parameters, duration_ms, blocked)]] - `defines` [EXTRACTED]
-- [[SecurityFinding Entity (threat_level, category, confidence 0-100, matched_pattern)]] - `defines` [EXTRACTED]
-- [[TrustLevel Entity (agent_id, level 0-4, violations, violation_rate, promotion_eligible)]] - `defines` [EXTRACTED]
-- [[URLAnalysisResult Entity (verdict SAFESUSPICIOUSMALICIOUSBLOCKED, is_ssrf, reputation_score 0-100)]] - `defines` [EXTRACTED]
+- [[Configuration Entities]] - `contains` [EXTRACTED]
+- [[Core Audit Entities]] - `contains` [EXTRACTED]
+- [[Data Classification]] - `contains` [EXTRACTED]
+- [[Data Retention Policies]] - `contains` [EXTRACTED]
+- [[Network Security Entities]] - `contains` [EXTRACTED]
+- [[Relationship Diagram]] - `contains` [EXTRACTED]
+- [[Runtime State Entities]] - `contains` [EXTRACTED]
+- [[Security Management Entities]] - `contains` [EXTRACTED]
+- [[data-dictionary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_346
+#graphify/document #graphify/EXTRACTED #community/docs/data

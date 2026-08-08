@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Module Group 118"
-location: "L71"
+community: "Gateway Test Suite"
+location: "L70"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_118
+  - community/Gateway_Test_Suite
 ---
 
 # Create path isolation manager for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.manager()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_118
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

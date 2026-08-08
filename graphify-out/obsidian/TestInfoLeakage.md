@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Module Group 110"
-location: "L389"
+community: "PII Config & Test Fixtures"
+location: "L383"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_110
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestInfoLeakage
@@ -41,7 +41,7 @@ tags:
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test that errors don't leak sensitive information.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_110
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/setup-https-proxy.js"
 type: "code"
-community: "Module Group 329"
+community: "Bot Skill Config"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_329
+  - community/Bot_Skill_Config
 ---
 
 # proxyCreateConnection()
@@ -15,4 +15,4 @@ tags:
 - [[setup-https-proxy.js]] - `contains` [EXTRACTED]
 - [[shouldBypass()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_329
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

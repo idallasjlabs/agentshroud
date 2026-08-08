@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "Module Group 229"
+community: "Gateway Test Suite"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_229
+  - community/Gateway_Test_Suite
 ---
 
 # InstallConfig
@@ -16,4 +16,4 @@ tags:
 - [[installer.py]] - `contains` [EXTRACTED]
 - [[start_install()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_229
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

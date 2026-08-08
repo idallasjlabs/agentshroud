@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Module Group 185"
+community: "Gateway Test Suite"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_185
+  - community/Gateway_Test_Suite
 ---
 
 # CredentialInfo
@@ -24,18 +24,28 @@ tags:
 - [[.test_get_health_score_all_healthy()]] - `calls` [EXTRACTED]
 - [[.test_get_health_score_mixed_states()]] - `calls` [EXTRACTED]
 - [[.test_grace_period_tracking()]] - `calls` [EXTRACTED]
+- [[.test_not_due_without_force_is_rejected()]] - `calls` [EXTRACTED]
 - [[.test_should_rotate()]] - `calls` [EXTRACTED]
 - [[.test_should_warn()]] - `calls` [EXTRACTED]
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[Information about a managed credential.]] - `rationale_for` [EXTRACTED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 - [[MockValidator]] - `uses` [INFERRED]
+- [[TestCheckAndRotateDisabled]] - `uses` [INFERRED]
 - [[TestCredentialInfo]] - `uses` [INFERRED]
 - [[TestCredentialRotationPolicy]] - `uses` [INFERRED]
+- [[TestEmergencyAndRetire]] - `uses` [INFERRED]
+- [[TestGenerateAndValidate]] - `uses` [INFERRED]
 - [[TestKeyRotationConfig]] - `uses` [INFERRED]
 - [[TestKeyRotationManager]] - `uses` [INFERRED]
 - [[TestKeyRotationWorkflow]] - `uses` [INFERRED]
+- [[TestReadFrom1Password]] - `uses` [INFERRED]
+- [[TestRotateGuardBranches]] - `uses` [INFERRED]
+- [[TestStatusHelpers]] - `uses` [INFERRED]
+- [[TestStoreIn1Password]] - `uses` [INFERRED]
+- [[_old_cred()]] - `calls` [EXTRACTED]
 - [[key_rotation.py]] - `contains` [EXTRACTED]
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
+- [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_185
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

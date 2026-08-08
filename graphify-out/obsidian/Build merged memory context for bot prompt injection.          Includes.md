@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "rationale"
-community: "Module Group 75"
-location: "L127"
+community: "Group Workspace Isolation"
+location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_75
+  - community/Group_Workspace_Isolation
 ---
 
 # Build merged memory context for bot prompt injection.          Includes:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_merged_memory_for_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_75
+#graphify/rationale #graphify/EXTRACTED #community/Group_Workspace_Isolation

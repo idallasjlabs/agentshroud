@@ -1,18 +1,19 @@
 ---
-source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "Module Group 268"
-location: "L99"
+community: "scripts/export-telegram-history.py"
+location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_268
+  - community/scripts/export-telegram-historypy
 ---
 
 # main()
 
 ## Connections
-- [[package_skill()]] - `calls` [EXTRACTED]
-- [[package_skill.py]] - `contains` [EXTRACTED]
+- [[Path_41]] - `calls` [EXTRACTED]
+- [[export()]] - `calls` [EXTRACTED]
+- [[export-telegram-history.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_268
+#graphify/code #graphify/EXTRACTED #community/scripts/export-telegram-historypy

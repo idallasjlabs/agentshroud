@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "HTTP CONNECT Proxy & Egress"
+community: "Egress Domain Allowlist"
 location: "L140"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/HTTP_CONNECT_Proxy__Egress
+  - community/Egress_Domain_Allowlist
 ---
 
 # WebProxy
 
 ## Connections
-- [[.__init__()_35]] - `method` [EXTRACTED]
+- [[.__init__()_43]] - `method` [EXTRACTED]
 - [[._audit()]] - `method` [EXTRACTED]
 - [[.allowlist_proxy()]] - `calls` [EXTRACTED]
 - [[.check_request()]] - `method` [EXTRACTED]
@@ -26,16 +26,16 @@ tags:
 - [[.test_rate_limit_blocks_excess()]] - `calls` [EXTRACTED]
 - [[EgressFilter]] - `uses` [INFERRED]
 - [[HTTP web traffic proxy for OpenClaw.      Intercepts all outbound web requests,]] - `rationale_for` [EXTRACTED]
-- [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
+- [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[MockDNSVerdict]] - `uses` [INFERRED]
 - [[MockEgressChannel]] - `uses` [INFERRED]
 - [[MockEgressEvent]] - `uses` [INFERRED]
 - [[MockThreatLevel]] - `uses` [INFERRED]
 - [[MockURLResult]] - `uses` [INFERRED]
-- [[StreamReader]] - `uses` [INFERRED]
 - [[StreamReader_1]] - `uses` [INFERRED]
-- [[StreamWriter]] - `uses` [INFERRED]
+- [[StreamReader_2]] - `uses` [INFERRED]
+- [[StreamWriter_1]] - `uses` [INFERRED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
 - [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestContentTypeFiltering]] - `uses` [INFERRED]
@@ -87,4 +87,4 @@ tags:
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/HTTP_CONNECT_Proxy__Egress
+#graphify/code #graphify/INFERRED #community/Egress_Domain_Allowlist

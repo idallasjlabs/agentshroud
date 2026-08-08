@@ -1,14 +1,14 @@
 ---
 source_file: "docs/diagrams/05-behavior.md"
 type: "document"
-community: "Module Group 780"
+community: "docs/diagrams"
 location: "line 88"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_780
+  - community/docs/diagrams
 ---
 
 # Sequence Diagram - Telegram Message to Response (Isaiah → Telegram → Bot → Gateway → OpenAI → Ledger)
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_780
+#graphify/document #graphify/EXTRACTED #community/docs/diagrams

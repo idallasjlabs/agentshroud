@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "Module Group 197"
+community: "Gateway Test Suite"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_197
+  - community/Gateway_Test_Suite
 ---
 
 # ClassificationResult
@@ -23,4 +23,4 @@ tags:
 - [[heuristic_classifier.py]] - `contains` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_197
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

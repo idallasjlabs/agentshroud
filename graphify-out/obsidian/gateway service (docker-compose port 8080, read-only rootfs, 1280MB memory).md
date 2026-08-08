@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/vault/03 - Configuration/docker-compose.yml.md"
+source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "concept"
-community: "Module Group 326"
+community: "docs/vault"
 location: "docker/docker-compose.yml"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_326
+  - community/docs/vault
 ---
 
 # gateway service (docker-compose: port 8080, read-only rootfs, 1280MB memory)
@@ -18,4 +18,4 @@ tags:
 - [[docker-compose.yml (primary Docker Compose — services, networks, volumes, secrets)]] - `defines` [EXTRACTED]
 - [[gateway-seccomp.json (deny-by-default syscall allowlist for gateway container)]] - `applied_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_326
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

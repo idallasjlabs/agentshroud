@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "CLI & Core Gateway Routes"
-location: "L3774"
+community: "Auth & Exception Types"
+location: "L3986"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Auth__Exception_Types
 ---
 
 # Get permissions summary for a user (admin+ only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_user_permissions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

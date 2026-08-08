@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
-type: "concept"
-community: "Module Group 158"
-location: "gateway/security/browser_security.py"
+source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_158
+  - community/docs/vault
 ---
 
-# browser_security.py
+# browser_security.py.md
 
 ## Connections
-- [[Playwright]] - `secured_by` [EXTRACTED]
+- [[browser_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_158
+#graphify/document #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Webhook Receiver"
-location: "L349"
+community: "URL/Domain Validation Tests"
+location: "L347"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Webhook_Receiver
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Test middleware enforcement of session boundaries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMiddlewareSessionEnforcement]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Webhook_Receiver
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

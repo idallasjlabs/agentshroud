@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "MCP Permissions Manager"
+community: "MCP Proxy Config"
 location: "L392"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Permissions_Manager
+  - community/MCP_Proxy_Config
 ---
 
 # TestRateLimiting
 
 ## Connections
 - [[.test_no_limit_always_allowed()]] - `method` [EXTRACTED]
-- [[.test_rate_limit_enforced()]] - `method` [EXTRACTED]
+- [[.test_rate_limit_enforced()_1]] - `method` [EXTRACTED]
 - [[.test_rate_limit_per_agent()]] - `method` [EXTRACTED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Permissions_Manager
+#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config

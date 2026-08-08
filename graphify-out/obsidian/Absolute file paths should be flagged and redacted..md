@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "rationale"
-community: "Module Group 157"
-location: "L56"
+community: "Gateway Test Suite"
+location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_157
+  - community/Gateway_Test_Suite
 ---
 
 # Absolute file paths should be flagged and redacted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_raw_file_path_stripped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_157
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md"
+source_file: "skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md"
 type: "rationale"
-community: "Module Group 173"
+community: "Custom Skills"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_173
+  - community/Custom_Skills
 ---
 
 # blueteam/references/steve-hay-assessment.md — Steven Hay STPA-Sec Assessment
@@ -16,4 +16,4 @@ tags:
 - [[agentshroud-blueteam SKILL.md — Blue Team Auditor Skill]] - `references` [EXTRACTED]
 - [[redteamreferencessteve-hay-assessment.md — Steve Hay Assessment (Red Team Copy)]] - `mirrors` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_173
+#graphify/rationale #graphify/EXTRACTED #community/Custom_Skills

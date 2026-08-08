@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "Module Group 394"
-location: "gateway/ingest_api/models.py"
+community: "Approval & FastAPI Ingest"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_394
+  - community/Approval__FastAPI_Ingest
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[EnhancedApprovalQueue_2]] - `uses` [EXTRACTED]
-- [[models.py — Pydantic API Schema]] - `defines` [EXTRACTED]
+- [[submit_approval_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_394
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

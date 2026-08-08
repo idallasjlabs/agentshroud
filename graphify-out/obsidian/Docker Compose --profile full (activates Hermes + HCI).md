@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "concept"
-community: "Module Group 500"
+community: "docker/falco"
 location: "Architecture section"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_500
+  - community/docker/falco
 ---
 
 # Docker Compose --profile full (activates Hermes + HCI)
@@ -15,4 +15,4 @@ tags:
 - [[Container Stack Architecture (gateway + openclaw + hermes + hci)]] - `references` [EXTRACTED]
 - [[Docker Quickstart Guide]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_500
+#graphify/concept #graphify/EXTRACTED #community/docker/falco

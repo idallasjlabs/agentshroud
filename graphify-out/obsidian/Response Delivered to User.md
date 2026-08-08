@@ -1,17 +1,16 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.svg"
-type: "image"
-community: "Module Group 476"
+type: "concept"
+community: "docs/diagrams"
 tags:
-  - graphify/image
-  - graphify/EXPLICIT
-  - community/Module_Group_476
+  - graphify/concept
+  - graphify/EXTRACTED
+  - community/docs/diagrams
 ---
 
-# Response Delivered to User
+# Response delivered to user
 
 ## Connections
-- [[Direct Reply (no tool call)]] - `flows_to` [EXPLICIT]
-- [[Write Audit Entry to ledger.db (SHA-256 hash only)]] - `flows_to` [EXPLICIT]
+- [[Write audit entry to ledger.db (SHA-256 hash only)]] - `calls` [EXTRACTED]
 
-#graphify/image #graphify/EXPLICIT #community/Module_Group_476
+#graphify/concept #graphify/EXTRACTED #community/docs/diagrams

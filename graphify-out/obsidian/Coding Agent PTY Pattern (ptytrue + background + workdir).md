@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "concept"
-community: "Module Group 423"
+community: "skills/openclaw"
 location: "lines 14-50"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_423
+  - community/skills/openclaw
 ---
 
 # Coding Agent PTY Pattern (pty:true + background + workdir)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Skill coding-agent (CodexClaude CodePi delegation)]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_423
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

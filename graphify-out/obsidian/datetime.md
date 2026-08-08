@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/daily_cve_report.py"
+source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Module Group 176"
-location: "L332"
+community: "Bot Skill Config"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_176
+  - community/Bot_Skill_Config
 ---
 
 # datetime
 
 ## Connections
-- [[_already_checked_upstream_today()]] - `references` [EXTRACTED]
-- [[_already_sent_today()]] - `references` [EXTRACTED]
-- [[daily_cve_report.py]] - `imports_from` [EXTRACTED]
+- [[build_weekly_summary()]] - `references` [EXTRACTED]
+- [[jira_weekly_review.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_176
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

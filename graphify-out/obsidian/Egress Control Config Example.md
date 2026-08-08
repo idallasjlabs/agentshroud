@@ -1,11 +1,11 @@
 ---
 source_file: "examples/egress-config.yml"
 type: "document"
-community: "Module Group 313"
+community: "Planning Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_313
+  - community/Planning_Docs
 ---
 
 # Egress Control Config Example
@@ -16,4 +16,4 @@ tags:
 - [[Key Vault (leak detection, log redaction)]] - `describes` [EXTRACTED]
 - [[Monitor Mode (log-only, no enforcement)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_313
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

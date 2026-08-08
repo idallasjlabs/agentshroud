@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Web API & Dashboard UI"
-location: "L472"
+community: "Competitive Intel Store"
+location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_API__Dashboard_UI
+  - community/Competitive_Intel_Store
 ---
 
 # check_bot_updates()
@@ -18,4 +18,4 @@ tags:
 - [[api.py]] - `contains` [EXTRACTED]
 - [[check_openclaw_updates()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_API__Dashboard_UI
+#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Module Group 166"
+community: "Web Control Center"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_166
+  - community/Web_Control_Center
 ---
 
 # LogBuffer
 
 ## Connections
-- [[.__init__()_148]] - `method` [EXTRACTED]
+- [[.__init__()_183]] - `method` [EXTRACTED]
 - [[.append()_1]] - `method` [EXTRACTED]
 - [[.tail()]] - `method` [EXTRACTED]
 - [[Ring buffer for recent logaudit entries.]] - `rationale_for` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[test_log_buffer_ring()]] - `calls` [EXTRACTED]
 - [[test_log_buffer_tail()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_166
+#graphify/code #graphify/EXTRACTED #community/Web_Control_Center

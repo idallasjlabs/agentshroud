@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/skill.json"
+source_file: "browser-extension/package.json"
 type: "code"
-community: "Module Group 299"
+community: "browser-extension/package.json"
 location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_299
+  - community/browser-extension/packagejson
 ---
 
 # name
 
 ## Connections
-- [[skill.json]] - `contains` [EXTRACTED]
+- [[package.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_299
+#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson

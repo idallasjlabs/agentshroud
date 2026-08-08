@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "Module Group 180"
+community: "Gateway Test Suite"
 location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_180
+  - community/Gateway_Test_Suite
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[.setup_method()_35]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_38]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_180
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

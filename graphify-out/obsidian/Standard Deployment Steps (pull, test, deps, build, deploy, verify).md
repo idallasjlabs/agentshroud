@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/runbooks/deployment.md"
+source_file: "docs/runbooks/deployment.md"
 type: "concept"
-community: "Module Group 514"
+community: "docs/runbooks"
 location: "line 14-67"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_514
+  - community/docs/runbooks
 ---
 
 # Standard Deployment Steps (pull, test, deps, build, deploy, verify)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Deployment Runbook]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_514
+#graphify/concept #graphify/EXTRACTED #community/docs/runbooks

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Module Group 199"
+community: "Gateway Test Suite"
 location: "L155"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_199
+  - community/Gateway_Test_Suite
 ---
 
 # WebProxyConfig
 
 ## Connections
-- [[.__init__()_35]] - `references` [EXTRACTED]
+- [[.__init__()_43]] - `references` [EXTRACTED]
 - [[URLAnalyzer]] - `uses` [INFERRED]
 - [[WebContentScanner]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_199
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

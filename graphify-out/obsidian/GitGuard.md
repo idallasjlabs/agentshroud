@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Module Group 80"
+community: "Gateway Security Module"
 location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_80
+  - community/Gateway_Security_Module
 ---
 
 # GitGuard
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_66]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_79]] - `method` [EXTRACTED]
 - [[._analyze_file_content()]] - `method` [EXTRACTED]
 - [[._analyze_script_content()]] - `method` [EXTRACTED]
 - [[._analyze_script_file()]] - `method` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[.test_clean_hook_passes()]] - `calls` [EXTRACTED]
 - [[.test_clean_repo_no_findings()]] - `calls` [EXTRACTED]
 - [[.test_curl_in_hook_flagged()]] - `calls` [EXTRACTED]
-- [[.test_default_mode_is_enforce()_5]] - `calls` [EXTRACTED]
+- [[.test_default_mode_is_enforce()_6]] - `calls` [EXTRACTED]
 - [[.test_finding_has_file_path()]] - `calls` [EXTRACTED]
 - [[.test_git_guard_detects_credential_patterns()]] - `calls` [INFERRED]
 - [[.test_git_guard_instantiates()]] - `calls` [EXTRACTED]
@@ -41,7 +41,8 @@ tags:
 - [[.test_reverse_shell_flagged()]] - `calls` [EXTRACTED]
 - [[.test_wget_flagged()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -49,7 +50,7 @@ tags:
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
@@ -89,11 +90,11 @@ tags:
 - [[git_guard.py]] - `contains` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[scan_repository()]] - `references` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_git_guard.py]] - `imports` [EXTRACTED]
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_80
+#graphify/code #graphify/INFERRED #community/Gateway_Security_Module

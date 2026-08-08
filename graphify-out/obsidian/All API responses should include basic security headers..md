@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Module Group 132"
-location: "L350"
+community: "Approval Queue Tests"
+location: "L358"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_132
+  - community/Approval_Queue_Tests
 ---
 
 # All API responses should include basic security headers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGlobalSecurityHeaders]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_132
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Tests

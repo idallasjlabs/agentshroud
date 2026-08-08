@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "code"
-community: "Module Group 220"
+community: "Gateway Test Suite"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_220
+  - community/Gateway_Test_Suite
 ---
 
 # test_non_json_body_anthropic_429_no_substring_match()
@@ -15,4 +15,4 @@ tags:
 - [[is_quota_exhausted()]] - `calls` [EXTRACTED]
 - [[test_llm_quota_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_220
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

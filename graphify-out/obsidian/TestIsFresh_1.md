@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Module Group 470"
-location: "L563"
+community: "Gateway Test Suite"
+location: "L562"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_470
+  - community/Gateway_Test_Suite
 ---
 
 # TestIsFresh
@@ -18,4 +18,4 @@ tags:
 - [[.test_returns_true_for_fresh_file()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_470
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

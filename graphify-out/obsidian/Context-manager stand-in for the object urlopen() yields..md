@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "rationale"
-community: "Module Group 300"
+community: "Gateway Test Suite"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_300
+  - community/Gateway_Test_Suite
 ---
 
 # Context-manager stand-in for the object urlopen() yields.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeHTTPResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_300
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

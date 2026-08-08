@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "HTTP Proxy Coverage Tests"
-location: "L239"
+community: "Gateway Test Suite"
+location: "L240"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_Proxy_Coverage_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # test_target_without_port_defaults_to_443()
@@ -18,4 +18,4 @@ tags:
 - [[_make_stream()_1]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_Proxy_Coverage_Tests
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -44,13 +44,20 @@ typedef struct {
 } vt_agent_t;
 
 static const vt_agent_t VT_AGENTS[] = {
-    /* Hermes first = boot default: the ESP32 is the owner's ADMIN VOICE
-     * ACCESS to Hermes, not a generic chat box (owner directive 2026-07-06).
-     * The voice layer waits up to VG_AGENT_READ_TIMEOUT_S (100 s) for slow
-     * Hermes turns while the Anthropic quota recovers.  Middle button cycles
-     * to Fast LLM for quick local answers. */
+    /* Local model (Qwen3 via LM Studio, gateway direct fast-path) first =
+     * boot default (owner directive 2026-08-07, supersedes the 2026-07-06
+     * Hermes-first directive below): Hermes's agentic-loop latency is
+     * highly variable (6-60+s observed live) and was making the device
+     * "nearly unusable" as a boot default; the fast local path answers in
+     * 1-6s. Middle button cycles to Hermes for full agentic control (email,
+     * systems, browsing) or say "tell Hermes"/"ask Hermes" from any state —
+     * spoken switches are sticky for the server-side session but do not
+     * survive a device reboot, hence changing the boot default itself here.
+     * Historical context (2026-07-06): "the ESP32 is the owner's ADMIN
+     * VOICE ACCESS to Hermes, not a generic chat box" — still true, just no
+     * longer the boot default; Hermes is one voice command away. */
+    { "direct",  "Qwen3"    },   /* Low-latency gateway LLM proxy — no agentic tools          */
     { "hermes",  "Hermes"   },   /* Hermes agentic assistant — synchronous OpenAI-compat reply */
-    { "direct",  "Fast LLM" },   /* Low-latency gateway LLM proxy — no agentic tools          */
     { "openclaw","OpenClaw" },   /* OpenClaw — async Telegram bot; replies on Telegram         */
 };
 #define VT_AGENT_COUNT ((int)(sizeof(VT_AGENTS) / sizeof(VT_AGENTS[0])))
@@ -451,15 +458,29 @@ static void _on_tts_pcm(const uint8_t *pcm, size_t len, void *ctx)
     }
 }
 
+/* Holds the display label for a server-side spoken model/agent switch
+ * ("use Claude" / "tell Hermes" — voice_gateway/server.py's
+ * _parse_model_switch_command). ui_face_set_agent()'s contract requires a
+ * pointer that "stays valid forever" (it's queued through lv_async_call and
+ * read later on the LVGL task) — VT_AGENTS entries satisfy that by being
+ * static const; this buffer satisfies it by being static and outliving any
+ * single _on_ws_ctrl call, unlike the cJSON-parsed string it's copied from
+ * (freed immediately after this callback returns). */
+static char s_spoken_agent_label[32];
+
 /* Server control frames — spoken commands intercepted server-side.
  * Runs in websocket_task context; audio_set_volume's NVS commit is a few ms
  * (the TTS pre-buffer absorbs far more), everything else is non-blocking. */
-static void _on_ws_ctrl(const char *cmd, int value, void *ctx)
+static void _on_ws_ctrl(const char *cmd, int value, const char *str_value, void *ctx)
 {
     (void)ctx;
     if (strcmp(cmd, "set_volume") == 0) {
         audio_set_volume(value);
         vt_remote_log("volume set to %d%% (spoken command)", value);
+    } else if (strcmp(cmd, "set_agent_label") == 0 && str_value) {
+        snprintf(s_spoken_agent_label, sizeof(s_spoken_agent_label), "%s", str_value);
+        ui_face_set_agent(s_spoken_agent_label);
+        vt_remote_log("agent label → %s (spoken command)", s_spoken_agent_label);
     } else {
         vt_remote_log("unknown ctrl cmd %.24s (value=%d) — ignored", cmd, value);
     }

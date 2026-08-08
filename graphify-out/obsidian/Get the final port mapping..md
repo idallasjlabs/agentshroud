@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "rationale"
-community: "Module Group 68"
+community: "Gateway Test Suite"
 location: "L70"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_68
+  - community/Gateway_Test_Suite
 ---
 
 # Get the final port mapping.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.ports()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_68
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

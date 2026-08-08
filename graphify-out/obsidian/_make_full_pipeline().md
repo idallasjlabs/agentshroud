@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Module Group 72"
-location: "L48"
+community: "Gateway Test Suite"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_72
+  - community/Gateway_Test_Suite
 ---
 
 # _make_full_pipeline()
@@ -22,7 +22,7 @@ tags:
 - [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_1]] - `references` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[_make_approval_queue()]] - `calls` [EXTRACTED]
 - [[_make_pii_sanitizer()]] - `calls` [EXTRACTED]
 - [[pipeline()_2]] - `calls` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[test_session_isolation()]] - `calls` [EXTRACTED]
 - [[test_trust_escalation_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_72
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

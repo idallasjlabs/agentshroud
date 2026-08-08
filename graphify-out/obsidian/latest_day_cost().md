@@ -1,19 +1,19 @@
 ---
 source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "Module Group 239"
-location: "L157"
+community: "skills/openclaw"
+location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_239
+  - community/skills/openclaw
 ---
 
 # latest_day_cost()
 
 ## Connections
-- [[Any_68]] - `references` [EXTRACTED]
-- [[main()_9]] - `calls` [EXTRACTED]
+- [[Any_75]] - `references` [EXTRACTED]
+- [[main()_21]] - `calls` [EXTRACTED]
 - [[model_usage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_239
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

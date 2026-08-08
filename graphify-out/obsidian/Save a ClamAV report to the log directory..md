@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "rationale"
-community: "Module Group 155"
+community: "Gateway Test Suite"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_155
+  - community/Gateway_Test_Suite
 ---
 
 # Save a ClamAV report to the log directory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[save_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_155
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "concept"
-community: "Module Group 451"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_451
+  - community/docs/vault
 ---
 
 # HTTP CONNECT Proxy Egress Control
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[HTTPConnectProxy_2]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_451
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

@@ -1,19 +1,22 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Module Group 391"
+community: "docs/project"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_391
+  - community/docs/project
 ---
 
 # audit-specification.md
 
 ## Connections
-- [[Audit Compliance Mappings (IEC 62443, GDPR Article 30, SOX, ISO 27001)]] - `maps_to` [EXTRACTED]
-- [[Audit Event Types (AUTH, AUTHZ, SEC, DATA, SYS categories)]] - `defines` [EXTRACTED]
-- [[Audit Retention Tiers (7yr critical, 3yr operational, 1yr diagnostic, 90d high-volume)]] - `defines` [EXTRACTED]
-- [[SHA-256 Hash Chain Audit Architecture (tamper-evident block chain)]] - `defines` [EXTRACTED]
+- [[AgentShroud Audit Specification]] - `contains` [EXTRACTED]
+- [[Audit Trail_1]] - `references` [EXTRACTED]
+- [[Hash Chain]] - `references` [EXTRACTED]
+- [[IEC 62443 Industrial Security Framework]] - `references` [EXTRACTED]
+- [[PII (Personally Identifiable Information)]] - `references` [EXTRACTED]
+- [[cve-mitigation-matrix]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_391
+#graphify/document #graphify/EXTRACTED #community/docs/project

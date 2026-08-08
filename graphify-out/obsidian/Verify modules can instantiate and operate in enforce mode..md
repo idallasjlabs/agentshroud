@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "rationale"
-community: "RBAC Middleware & Ingest API"
-location: "L152"
+community: "Egress & RBAC Security Core"
+location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Verify modules can instantiate and operate in enforce mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestModuleInstantiationInEnforceMode]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

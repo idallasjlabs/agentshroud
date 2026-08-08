@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "Module Group 321"
+community: "Gateway Test Suite"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_321
+  - community/Gateway_Test_Suite
 ---
 
 # TestTelegramWebhook
@@ -20,4 +20,4 @@ tags:
 - [[.test_valid_payload_returns_200()]] - `method` [EXTRACTED]
 - [[test_channel_ownership.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_321
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

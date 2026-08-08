@@ -1,26 +1,22 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Module Group 179"
-location: "L88"
+community: "Bot Skill Config"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_179
+  - community/Bot_Skill_Config
 ---
 
 # RiskLevel
 
 ## Connections
-- [[._load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[._classify_risk()_1]] - `references` [EXTRACTED]
+- [[._log_action()_1]] - `references` [EXTRACTED]
+- [[._requires_approval()_1]] - `references` [EXTRACTED]
 - [[Enum]] - `inherits` [EXTRACTED]
-- [[Risk levels for tool call chains.]] - `rationale_for` [EXTRACTED]
-- [[TestParamSanitization]] - `uses` [INFERRED]
-- [[TestReversibilityScoring]] - `uses` [INFERRED]
-- [[TestShellBleedPatterns]] - `uses` [INFERRED]
-- [[TestToolChainAnalyzer_1]] - `uses` [INFERRED]
-- [[str]] - `inherits` [EXTRACTED]
-- [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
-- [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
+- [[Risk classification for browser actions_1]] - `rationale_for` [EXTRACTED]
+- [[browse.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_179
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

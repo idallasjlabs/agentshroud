@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_op_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "Module Group 230"
-location: "L69"
+community: "Gateway Test Suite"
+location: "L21"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_230
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # client()
 
 ## Connections
-- [[test_op_proxy.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[test_mcp_proxy_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_230
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

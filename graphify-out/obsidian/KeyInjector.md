@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Module Group 63"
+community: "Gateway Test Suite"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_63
+  - community/Gateway_Test_Suite
 ---
 
 # KeyInjector
 
 ## Connections
-- [[.__init__()_71]] - `method` [EXTRACTED]
+- [[.__init__()_87]] - `method` [EXTRACTED]
 - [[.inject_for_request()]] - `method` [EXTRACTED]
 - [[.test_inject_auth_header()]] - `calls` [EXTRACTED]
 - [[.test_inject_fails_for_unscoped()]] - `calls` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[key_vault.py]] - `contains` [EXTRACTED]
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_63
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,0 +1,17 @@
+---
+source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
+type: "document"
+community: "Bot Skill Config"
+location: "L87"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Bot_Skill_Config
+---
+
+# Closing Gate
+
+## Connections
+- [[Skill Pre-Change Analysis (PCA)]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

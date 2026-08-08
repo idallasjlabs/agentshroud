@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "Module Group 239"
-location: "L151"
+community: "skills/openclaw"
+location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_239
+  - community/skills/openclaw
 ---
 
 # usd()
@@ -16,4 +16,4 @@ tags:
 - [[render_text_all()]] - `calls` [EXTRACTED]
 - [[render_text_current()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_239
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

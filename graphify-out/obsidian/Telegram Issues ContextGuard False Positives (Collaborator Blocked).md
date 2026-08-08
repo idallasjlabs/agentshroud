@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "document"
-community: "Module Group 351"
+community: "Planning Docs"
 location: "line 35"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Module_Group_351
+  - graphify/INFERRED
+  - community/Planning_Docs
 ---
 
 # Telegram Issues: ContextGuard False Positives (Collaborator Blocked)
@@ -15,4 +15,4 @@ tags:
 - [[Prompt Injection Hardening (ContextGuard Fix, PromptGuard Patterns, Normalization, MultiTurnTracker)]] - `motivates` [INFERRED]
 - [[Telegram Issues Bot Startup Crash-Loops (Config Errors in apply-patches.js)]] - `co_occurs_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_351
+#graphify/document #graphify/INFERRED #community/Planning_Docs

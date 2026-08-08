@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8.0-release-plan.md"
 type: "concept"
-community: "Module Group 461"
+community: "Planning Docs"
 location: "line 314"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_461
+  - community/Planning_Docs
 ---
 
 # Comprehensive Multilingual Prompt Injection Defense (35+ Languages)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.8.0 Release Plan Document]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_461
+#graphify/concept #graphify/EXTRACTED #community/Planning_Docs

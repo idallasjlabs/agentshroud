@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Module Group 79"
+community: "PromptGuard Encoding Detection"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_79
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # test_security_hardening.py
@@ -39,7 +39,7 @@ tags:
 - [[ThreatAction]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[_secure_zero()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_79
+#graphify/code #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection

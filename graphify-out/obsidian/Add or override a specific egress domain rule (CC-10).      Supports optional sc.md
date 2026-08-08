@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Router & Correlation"
-location: "L454"
+community: "SOC Collaborator Lifecycle"
+location: "L451"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Router__Correlation
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # Add or override a specific egress domain rule (CC-10).      Supports optional sc
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[override_egress_rule()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Router__Correlation
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

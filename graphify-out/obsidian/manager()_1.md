@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_session_security.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Module Group 67"
-location: "L29"
+community: "Gateway Test Suite"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_67
+  - community/Gateway_Test_Suite
 ---
 
 # manager()
 
 ## Connections
-- [[SessionManager]] - `calls` [EXTRACTED]
-- [[test_session_security.py]] - `contains` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_67
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

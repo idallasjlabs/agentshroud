@@ -1,17 +1,17 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.svg"
-type: "image"
-community: "Module Group 421"
+type: "concept"
+community: "docs/diagrams"
 tags:
-  - graphify/image
-  - graphify/EXPLICIT
-  - community/Module_Group_421
+  - graphify/concept
+  - graphify/EXTRACTED
+  - community/docs/diagrams
 ---
 
-# Main Agent (agentshroud_bot)
+# Main agent (agentshroud_bot)
 
 ## Connections
-- [[LLM Inference (OpenAI GPT-4o or Anthropic Claude)]] - `calls` [EXPLICIT]
-- [[Telegram ID 8096968754 → main agent]] - `flows_to` [EXPLICIT]
+- [[LLM inference (OpenAI GPT-4o or Anthropic Claude)]] - `calls` [EXTRACTED]
+- [[User sends message or cron fires]] - `calls` [EXTRACTED]
 
-#graphify/image #graphify/EXPLICIT #community/Module_Group_421
+#graphify/concept #graphify/EXTRACTED #community/docs/diagrams

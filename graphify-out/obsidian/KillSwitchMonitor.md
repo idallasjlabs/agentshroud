@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "Module Group 85"
-location: "L30"
+community: "Kill Switch Config"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_85
+  - community/Kill_Switch_Config
 ---
 
 # KillSwitchMonitor
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_73]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_89]] - `method` [EXTRACTED]
 - [[._check_request_rate()]] - `method` [EXTRACTED]
 - [[._check_system_resources()]] - `method` [EXTRACTED]
 - [[._check_token_usage()]] - `method` [EXTRACTED]
@@ -35,27 +35,46 @@ tags:
 - [[.anomaly_detection()]] - `method` [EXTRACTED]
 - [[.get_status()]] - `method` [EXTRACTED]
 - [[.heartbeat_check()]] - `method` [EXTRACTED]
+- [[.test_all_pass_when_script_valid()]] - `calls` [EXTRACTED]
 - [[.test_anomaly_detection_excessive_tool_calls()]] - `calls` [EXTRACTED]
 - [[.test_anomaly_detection_normal()]] - `calls` [EXTRACTED]
+- [[.test_clean_old_metrics_drops_stale_entries()]] - `calls` [EXTRACTED]
+- [[.test_docker_unavailable_is_fail()]] - `calls` [EXTRACTED]
+- [[.test_dry_run_exercises_enabled_modes()]] - `calls` [EXTRACTED]
+- [[.test_excessive_requests_flagged()]] - `calls` [EXTRACTED]
+- [[.test_excessive_tokens_flagged()]] - `calls` [EXTRACTED]
+- [[.test_excessive_tool_calls_flagged_and_alerted()]] - `calls` [EXTRACTED]
+- [[.test_fail_when_script_missing_triggers_alert()]] - `calls` [EXTRACTED]
+- [[.test_failure_increments_and_alerts_at_threshold()]] - `calls` [EXTRACTED]
 - [[.test_get_status()]] - `calls` [EXTRACTED]
+- [[.test_get_status_reports_verification_due()]] - `calls` [EXTRACTED]
+- [[.test_get_system_stats_handles_psutil_error()]] - `calls` [EXTRACTED]
+- [[.test_healthy_resets_miss_counter()]] - `calls` [EXTRACTED]
 - [[.test_heartbeat_check()]] - `calls` [EXTRACTED]
 - [[.test_init()]] - `calls` [EXTRACTED]
+- [[.test_no_anomaly_when_within_limits()]] - `calls` [EXTRACTED]
+- [[.test_slow_when_response_exceeds_timeout()]] - `calls` [EXTRACTED]
+- [[.test_system_resource_cpu_anomaly()]] - `calls` [EXTRACTED]
+- [[.test_system_resource_memory_anomaly()]] - `calls` [EXTRACTED]
 - [[.test_verify_killswitch_script_not_exists()]] - `calls` [EXTRACTED]
 - [[.verify_killswitch()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
-- [[FastAPI_2]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
+- [[FastAPI_3]] - `uses` [INFERRED]
 - [[KillSwitchConfig]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Monitor and verify kill switch functionality.      Provides automated verificati]] - `rationale_for` [EXTRACTED]
-- [[Path_27]] - `uses` [INFERRED]
+- [[Path_34]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
+- [[TestAnomalyDetection_1]] - `uses` [INFERRED]
 - [[TestAutoRevert]] - `uses` [INFERRED]
 - [[TestCriticalLogging]] - `uses` [INFERRED]
 - [[TestGetMode]] - `uses` [INFERRED]
+- [[TestHeartbeat]] - `uses` [INFERRED]
 - [[TestKillSwitchConfig_1]] - `uses` [INFERRED]
 - [[TestKillSwitchMonitor]] - `uses` [INFERRED]
 - [[TestKillSwitchVerification]] - `uses` [INFERRED]
@@ -63,6 +82,8 @@ tags:
 - [[TestObservatoryMode]] - `uses` [INFERRED]
 - [[TestObservatoryModeAPI]] - `uses` [INFERRED]
 - [[TestSetMode]] - `uses` [INFERRED]
+- [[TestStatusAndStats]] - `uses` [INFERRED]
+- [[TestVerifyKillswitch]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[killswitch_monitor.py]] - `contains` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
@@ -70,6 +91,7 @@ tags:
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_killswitch_monitor.py]] - `imports` [EXTRACTED]
+- [[test_killswitch_monitor_behavior.py]] - `imports` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_85
+#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Config

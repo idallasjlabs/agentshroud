@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCP Permissions Manager"
+community: "MCP Proxy Config"
 location: "L183"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Permissions_Manager
+  - community/MCP_Proxy_Config
 ---
 
 # MCPProxyConfig
 
 ## Connections
-- [[.__init__()_19]] - `references` [EXTRACTED]
+- [[.__init__()_27]] - `references` [EXTRACTED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Permissions_Manager
+#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config

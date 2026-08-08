@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "Module Group 100"
+community: "Gateway Test Suite"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_100
+  - community/Gateway_Test_Suite
 ---
 
 # Blocklist stub that blocks nothing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_BlockNone]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_100
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

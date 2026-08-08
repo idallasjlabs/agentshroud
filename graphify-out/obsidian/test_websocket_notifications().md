@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
 community: "Enhanced Approval Queue"
-location: "L363"
+location: "L447"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
+- [[ApprovalStore]] - `calls` [INFERRED]
 - [[ApprovalStore_1]] - `calls` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 - [[Test that approval events are generated for WebSocket notification.]] - `rationale_for` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "document"
-community: "Module Group 203"
+community: "CHEATSHEET.md"
 location: "lines 53-90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_203
+  - community/CHEATSHEETmd
 ---
 
 # Colima macOS Docker Runtime Configuration
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
 - [[Colima macOS Docker Runtime (Replaces Docker Desktop)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_203
+#graphify/document #graphify/EXTRACTED #community/CHEATSHEETmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
 type: "concept"
-community: "Module Group 449"
+community: "docs/vault"
 location: "gateway/dashboard/proxy_status.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_449
+  - community/docs/vault
 ---
 
 # Proxy Status Aggregation (MCP/LLM/Telegram/HTTP/Web)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[proxy_status.py (gatewaydashboardproxy_status.py)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_449
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

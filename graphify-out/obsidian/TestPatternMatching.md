@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "Environment Guard & Leak Detection"
-location: "L237"
+community: "File Sandbox"
+location: "L236"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - community/File_Sandbox
 ---
 
 # TestPatternMatching
@@ -20,4 +20,4 @@ tags:
 - [[Test file path pattern matching logic.]] - `rationale_for` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox

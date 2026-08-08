@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "rationale"
-community: "Ledger Config & Test Infra"
-location: "L142"
+community: "Forward Routing & Approval"
+location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ledger_Config__Test_Infra
+  - community/Forward_Routing__Approval
 ---
 
 # Create a PIISanitizer instance for testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sanitizer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ledger_Config__Test_Infra
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

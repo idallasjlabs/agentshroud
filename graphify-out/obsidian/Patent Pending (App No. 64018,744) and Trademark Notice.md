@@ -1,18 +1,17 @@
 ---
 source_file: "CONTRIBUTING.md"
 type: "rationale"
-community: "Module Group 191"
+community: "CONTRIBUTING.md"
 location: "lines 109-111"
 tags:
   - graphify/rationale
-  - graphify/INFERRED
-  - community/Module_Group_191
+  - graphify/EXTRACTED
+  - community/CONTRIBUTINGmd
 ---
 
 # Patent Pending (App No. 64/018,744) and Trademark Notice
 
 ## Connections
 - [[AgentShroud Contribution Guide]] - `references` [EXTRACTED]
-- [[AgentShroud Trademark (USPTO Serial No. 99728633)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Module_Group_191
+#graphify/rationale #graphify/EXTRACTED #community/CONTRIBUTINGmd

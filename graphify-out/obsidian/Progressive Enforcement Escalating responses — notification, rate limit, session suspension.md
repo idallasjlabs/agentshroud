@@ -1,18 +1,18 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "concept"
-community: "Module Group 452"
+community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 location: "Component M: Progressive Enforcement"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Module_Group_452
+  - graphify/EXTRACTED
+  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
 ---
 
 # Progressive Enforcement: Escalating responses — notification, rate limit, session suspension
 
 ## Connections
 - [[Kill Switch (3B) Three modes — freeze, shutdown, disconnect; incident reporting; credential destruction]] - `implements` [INFERRED]
-- [[USPTO Provisional Patent Application]] - `describes` [EXTRACTED]
+- [[USPTO_PROVISIONAL_PATENT_APPLICATION]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Module_Group_452
+#graphify/concept #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd

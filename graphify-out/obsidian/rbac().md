@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_privacy_policy.py"
+source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "Privacy Policy"
-location: "L47"
+community: "Group Workspace Isolation"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Privacy_Policy
+  - community/Group_Workspace_Isolation
 ---
 
 # rbac()
 
 ## Connections
-- [[_make_rbac()]] - `calls` [EXTRACTED]
-- [[test_privacy_policy.py]] - `contains` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Privacy_Policy
+#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation

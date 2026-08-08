@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract.py"
 type: "code"
-community: "Module Group 271"
+community: "Gateway Test Suite"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_271
+  - community/Gateway_Test_Suite
 ---
 
 # TestOpenAPIContract
@@ -22,4 +22,4 @@ tags:
 - [[OpenAPI schema and version consistency tests.]] - `rationale_for` [EXTRACTED]
 - [[test_api_contract.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_271
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

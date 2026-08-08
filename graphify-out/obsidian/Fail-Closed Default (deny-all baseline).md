@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "concept"
-community: "Module Group 192"
+community: "Bot Container Scripts"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_192
+  - community/Bot_Container_Scripts
 ---
 
 # Fail-Closed Default (deny-all baseline)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Collaborator Workspace PUBLIC-INFO]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_192
+#graphify/concept #graphify/EXTRACTED #community/Bot_Container_Scripts

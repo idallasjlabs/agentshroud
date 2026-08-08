@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "rationale"
-community: "Module Group 92"
+community: "HTTP Forwarder"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_92
+  - community/HTTP_Forwarder
 ---
 
 # Set a mock response handler for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_response_handler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_92
+#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder

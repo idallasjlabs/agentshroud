@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "concept"
-community: "Module Group 393"
+community: "docs/vault"
 location: "docker/Dockerfile.agentshroud"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_393
+  - community/docs/vault
 ---
 
 # OpenClaw AI Agent Platform (Node.js 22)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dockerfile.bot (dockerDockerfile.agentshroud)]] - `installs` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_393
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "RBAC Middleware & Ingest API"
-location: "L1188"
+community: "Security Module Middleware"
+location: "L1323"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Security_Module_Middleware
 ---
 
 # Filter outbound response to remove sensitive XML and path information.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.filter_outbound_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware

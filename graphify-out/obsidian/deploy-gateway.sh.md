@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/deploy-gateway.sh"
 type: "code"
-community: "Module Group 636"
+community: "scripts/deploy-gateway.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_636
+  - community/scripts/deploy-gatewaysh
 ---
 
 # deploy-gateway.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[deploy-gateway.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_636
+#graphify/code #graphify/EXTRACTED #community/scripts/deploy-gatewaysh

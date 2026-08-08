@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Dashboard Routes & WebSocket"
+community: "Gateway Test Suite"
 location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Routes__WebSocket
+  - community/Gateway_Test_Suite
 ---
 
 # get_collaborators()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[Path_2]] - `calls` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
+- [[Request_5]] - `references` [EXTRACTED]
 - [[Return collaborator data from the shared bot workspace volume.      Reads COLLAB]] - `rationale_for` [EXTRACTED]
 - [[_build_activity_entries_from_contributor_logs()]] - `calls` [EXTRACTED]
 - [[_build_activity_summary_from_contributor_logs()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[_parse_collaborator_log_dirs()]] - `calls` [EXTRACTED]
 - [[dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Routes__WebSocket
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

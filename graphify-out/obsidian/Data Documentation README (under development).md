@@ -1,14 +1,14 @@
 ---
 source_file: "docs/data/README.md"
 type: "document"
-community: "Module Group 773"
+community: "docs/data"
 location: "line 1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_773
+  - community/docs/data
 ---
 
 # Data Documentation README (under development)
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_773
+#graphify/document #graphify/EXTRACTED #community/docs/data

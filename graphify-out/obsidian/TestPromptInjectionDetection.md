@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Module Group 448"
+community: "Egress Domain Allowlist"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_448
+  - community/Egress_Domain_Allowlist
 ---
 
 # TestPromptInjectionDetection
@@ -27,4 +27,4 @@ tags:
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_448
+#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist

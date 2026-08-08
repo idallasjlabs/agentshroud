@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Module Group 334"
-location: "L641"
+community: "Gateway Security Module"
+location: "L640"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_334
+  - community/Gateway_Security_Module
 ---
 
 # Append an entry to the capped decision audit log (CC-40).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._append_decision()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_334
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

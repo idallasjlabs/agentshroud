@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "Module Group 297"
+community: "docs/vault"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_297
+  - community/docs/vault
 ---
 
-# python-jose
+# python-jose.md
 
 ## Connections
-- [[Shared Secret Authentication]] - `implements` [EXTRACTED]
-- [[auth.py_2]] - `implemented_by` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_297
+#graphify/document #graphify/EXTRACTED #community/docs/vault

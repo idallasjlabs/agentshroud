@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "RBAC Configuration"
-location: "L418"
+community: "Auth & Exception Types"
+location: "L415"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # TestRBACErrorHandling
@@ -26,7 +26,8 @@ tags:
 - [[Resource_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[Test RBAC error handling and edge cases.]] - `rationale_for` [EXTRACTED]
+- [[Test handling of invalid user IDs.]] - `rationale_for` [EXTRACTED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Configuration
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

@@ -1,16 +1,16 @@
 ---
 source_file: "branding/agentshroud-logo-light-bg.png"
 type: "image"
-community: "Module Group 365"
+community: "branding/logos"
 tags:
   - graphify/image
   - graphify/EXPLICIT
-  - community/Module_Group_365
+  - community/branding/logos
 ---
 
 # AgentShroud Logo (Light Background)
 
 ## Connections
-- [[AgentShroud Logo (Dark Background)]] - `semantically_similar_to` [EXPLICIT]
+- [[AgentShroud Logo PNG (Dark Background)]] - `semantically_similar_to` [EXPLICIT]
 
-#graphify/image #graphify/EXPLICIT #community/Module_Group_365
+#graphify/image #graphify/EXPLICIT #community/branding/logos

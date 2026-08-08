@@ -1,18 +1,17 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "concept"
-community: "Module Group 341"
+community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 location: "Detailed Description — Interception Mechanisms"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_341
+  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
 ---
 
 # Interception Mechanisms: HTTP/HTTPS Proxy, API Endpoint Rewriting, SDK-Level Patching, SSH Proxy, WebSocket Relay
 
 ## Connections
-- [[ADR-001 Decision Transparent Proxy — zero modification for existing OpenClaw, separation of concerns, auditable]] - `defines` [EXTRACTED]
-- [[USPTO Provisional Patent Application]] - `describes` [EXTRACTED]
+- [[USPTO_PROVISIONAL_PATENT_APPLICATION]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_341
+#graphify/concept #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd

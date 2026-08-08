@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Authentication & Rate Limiting"
+community: "Telegram Inbound Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Authentication__Rate_Limiting
+  - community/Telegram_Inbound_Tests
 ---
 
 # test_telegram_proxy_inbound.py
@@ -28,9 +28,11 @@ tags:
 - [[TestFileDownload]] - `contains` [EXTRACTED]
 - [[TestFullAccessMiddlewareBypass]] - `contains` [EXTRACTED]
 - [[TestGroupMentionFilter]] - `contains` [EXTRACTED]
+- [[TestGroupPresenceProbe]] - `contains` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `contains` [EXTRACTED]
 - [[TestIsGroupMessage]] - `contains` [EXTRACTED]
 - [[TestNoResponseGuarantee]] - `contains` [EXTRACTED]
+- [[TestPerBotGroupMentionFilter]] - `contains` [EXTRACTED]
 - [[TestProgressiveLockdownUX]] - `contains` [EXTRACTED]
 - [[TestStrangerRateLimit]] - `contains` [EXTRACTED]
 - [[_make_group_update()]] - `contains` [EXTRACTED]
@@ -39,4 +41,4 @@ tags:
 - [[_wrap_response()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Authentication__Rate_Limiting
+#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests

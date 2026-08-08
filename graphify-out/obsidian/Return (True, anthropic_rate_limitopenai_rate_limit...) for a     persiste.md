@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "rationale"
-community: "Module Group 431"
-location: "L178"
+community: "Gateway Test Suite"
+location: "L215"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_431
+  - community/Gateway_Test_Suite
 ---
 
 # Return (True, "anthropic_rate_limit"/"openai_rate_limit"/...) for a     persiste
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[is_rate_limited_post_retry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_431
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

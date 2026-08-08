@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Alert Dispatcher"
+community: "PII Config & Test Fixtures"
 location: "L508"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestDriftDetector
 
 ## Connections
-- [[.setup_method()_27]] - `method` [EXTRACTED]
-- [[.teardown_method()_6]] - `method` [EXTRACTED]
+- [[.setup_method()_30]] - `method` [EXTRACTED]
+- [[.teardown_method()_7]] - `method` [EXTRACTED]
 - [[.test_acknowledge_alert()]] - `method` [EXTRACTED]
 - [[.test_alerts_persisted()]] - `method` [EXTRACTED]
 - [[.test_config_hash_changes()]] - `method` [EXTRACTED]
@@ -45,7 +45,7 @@ tags:
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher
+#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

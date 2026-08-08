@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Environment Guard & Leak Detection"
+community: "File Sandbox"
 location: "L186"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Environment_Guard__Leak_Detection
+  - community/File_Sandbox
 ---
 
 # FileSandbox
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_65]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_78]] - `method` [EXTRACTED]
 - [[._check()]] - `method` [EXTRACTED]
 - [[._detect_raw_traversal()]] - `method` [EXTRACTED]
 - [[._is_immutable_file()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[.check_read()]] - `method` [EXTRACTED]
 - [[.check_write()]] - `method` [EXTRACTED]
 - [[.detect_staging_patterns()]] - `method` [EXTRACTED]
-- [[.get_audit_log()_1]] - `method` [EXTRACTED]
+- [[.get_audit_log()_3]] - `method` [EXTRACTED]
 - [[.get_security_violations()]] - `method` [EXTRACTED]
 - [[.get_temp_files()]] - `method` [EXTRACTED]
 - [[.monitor_sandbox()]] - `calls` [EXTRACTED]
@@ -34,7 +34,8 @@ tags:
 - [[.test_file_sandbox_staging_detection()]] - `calls` [INFERRED]
 - [[.test_monitor_mode_allows_everything()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -42,7 +43,7 @@ tags:
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAgentShroudSourceCodeProtection]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestConfigurationProtection]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
@@ -86,7 +87,7 @@ tags:
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[sandbox()]] - `calls` [EXTRACTED]
 - [[strict_sandbox()]] - `calls` [EXTRACTED]
 - [[strict_sandbox()_1]] - `calls` [EXTRACTED]
@@ -95,4 +96,4 @@ tags:
 - [[test_privilege_separation.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Environment_Guard__Leak_Detection
+#graphify/code #graphify/INFERRED #community/File_Sandbox

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/patch-slack-sdk.sh"
 type: "code"
-community: "Module Group 652"
+community: "Docker Deploy Scripts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_652
+  - community/Docker_Deploy_Scripts
 ---
 
 # patch-slack-sdk.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[patch-slack-sdk.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_652
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

@@ -2,7 +2,7 @@
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "rationale"
 community: "Enhanced Approval Queue"
-location: "L54"
+location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Initialize enhanced approval queue.          Args:             config: Basic app
 
 ## Connections
-- [[.__init__()]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_7]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue

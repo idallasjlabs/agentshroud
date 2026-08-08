@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_integration.py"
 type: "code"
-community: "Module Group 357"
+community: "Gateway Test Suite"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_357
+  - community/Gateway_Test_Suite
 ---
 
 # test_ledger_query()
@@ -15,4 +15,4 @@ tags:
 - [[Test ledger query endpoint]] - `rationale_for` [EXTRACTED]
 - [[test_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_357
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

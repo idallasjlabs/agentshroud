@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "Module Group 150"
-location: "L921"
+community: "Web Control Center"
+location: "L926"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_150
+  - community/Web_Control_Center
 ---
 
 # EgressAllowlistUpdate
@@ -19,4 +19,4 @@ tags:
 - [[management.py]] - `contains` [EXTRACTED]
 - [[update_egress_allowlist()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_150
+#graphify/code #graphify/EXTRACTED #community/Web_Control_Center

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Webhook Receiver"
-location: "L405"
+community: "URL/Domain Validation Tests"
+location: "L403"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Webhook_Receiver
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Test that middleware injects session context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_middleware_session_context_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Webhook_Receiver
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

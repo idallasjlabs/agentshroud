@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Module Group 231"
-location: "L629"
+community: "Gateway Security Module"
+location: "L628"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_231
+  - community/Gateway_Security_Module
 ---
 
 # Return all rules whose scope matches the given user context (synchronous, lock-f
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_rules_for_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_231
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

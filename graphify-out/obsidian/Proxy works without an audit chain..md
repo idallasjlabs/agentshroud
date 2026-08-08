@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "rationale"
-community: "HTTP CONNECT Proxy & Egress"
+community: "Egress Domain Allowlist"
 location: "L452"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTP_CONNECT_Proxy__Egress
+  - community/Egress_Domain_Allowlist
 ---
 
 # Proxy works without an audit chain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_no_audit_chain_no_crash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTP_CONNECT_Proxy__Egress
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Domain_Allowlist

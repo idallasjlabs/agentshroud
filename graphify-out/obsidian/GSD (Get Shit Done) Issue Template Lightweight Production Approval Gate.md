@@ -1,17 +1,14 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/gsd.md"
 type: "document"
-community: "Module Group 105"
+community: ".github/ISSUE_TEMPLATE"
 location: "lines 1-39"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Module_Group_105
+  - graphify/EXTRACTED
+  - community/github/ISSUE_TEMPLATE
 ---
 
 # GSD (Get Shit Done) Issue Template: Lightweight Production Approval Gate
 
-## Connections
-- [[Approval Queue (Human-in-the-Loop for Sensitive Actions)]] - `conceptually_related_to` [INFERRED]
-
-#graphify/document #graphify/INFERRED #community/Module_Group_105
+#graphify/document #graphify/EXTRACTED #community/github/ISSUE_TEMPLATE

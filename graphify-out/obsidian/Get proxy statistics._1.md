@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "Module Group 77"
+community: "Gateway Test Suite"
 location: "L596"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_77
+  - community/Gateway_Test_Suite
 ---
 
 # Get proxy statistics.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_stats()_10]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_77
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

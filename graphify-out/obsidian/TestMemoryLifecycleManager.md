@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Module Group 256"
-location: "L190"
+community: "Egress & RBAC Security Core"
+location: "L189"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_256
+  - community/Egress__RBAC_Security_Core
 ---
 
 # TestMemoryLifecycleManager
 
 ## Connections
-- [[.setup_method()_9]] - `method` [EXTRACTED]
-- [[.teardown_method()_1]] - `method` [EXTRACTED]
+- [[.setup_method()_10]] - `method` [EXTRACTED]
+- [[.teardown_method()_2]] - `method` [EXTRACTED]
 - [[.test_content_sanitization()]] - `method` [EXTRACTED]
 - [[.test_daily_notes_retention()]] - `method` [EXTRACTED]
 - [[.test_lifecycle_maintenance()]] - `method` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[Test memory lifecycle management.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_256
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "rationale"
-community: "Module Group 164"
-location: "L360"
+community: "src/interfaces"
+location: "L359"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_164
+  - community/src/interfaces
 ---
 
 # Main control center loop
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.run()_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_164
+#graphify/rationale #graphify/EXTRACTED #community/src/interfaces

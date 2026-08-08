@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "Agent Isolation & Container Config"
+community: "Gateway Test Suite"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Container_Config
+  - community/Gateway_Test_Suite
 ---
 
 # Remove an agent from the registry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.unregister()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agent_Isolation__Container_Config
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

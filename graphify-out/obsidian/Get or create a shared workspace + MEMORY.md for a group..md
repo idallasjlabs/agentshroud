@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Module Group 189"
-location: "L446"
+community: "URL/Domain Validation Tests"
+location: "L491"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_189
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Get or create a shared workspace + MEMORY.md for a group.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_or_create_group_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_189
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Module Group 84"
-location: "L335"
+community: "Gateway Test Suite"
+location: "L435"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_84
+  - community/Gateway_Test_Suite
 ---
 
 # test_agent_cve_registries_objects_match_lists()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_84
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

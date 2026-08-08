@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Egress Filter & Approval"
+community: "Gateway Test Suite"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter__Approval
+  - community/Gateway_Test_Suite
 ---
 
 # _make_filter()
@@ -41,9 +41,9 @@ tags:
 - [[.test_wildcard_matches_base_domain()]] - `calls` [EXTRACTED]
 - [[.test_wildcard_one_level()]] - `calls` [EXTRACTED]
 - [[Create an EgressFilter with a simple config.]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__Approval
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

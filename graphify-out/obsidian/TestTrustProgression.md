@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Module Group 359"
+community: "Progressive Trust Config"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_359
+  - community/Progressive_Trust_Config
 ---
 
 # TestTrustProgression
@@ -21,7 +21,7 @@ tags:
 - [[Test earning and losing trust.]] - `rationale_for` [EXTRACTED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_359
+#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config

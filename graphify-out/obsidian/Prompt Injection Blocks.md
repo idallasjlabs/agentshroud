@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Module Group 297"
+community: "docs/vault"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_297
+  - community/docs/vault
 ---
 
 # Prompt Injection Blocks
 
 ## Connections
-- [[Error Index]] - `indexed_by` [EXTRACTED]
-- [[PromptGuard (Prompt Injection and Jailbreak Detection)]] - `documents` [EXTRACTED]
-- [[input_normalizer.py_2]] - `references` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_297
+#graphify/document #graphify/EXTRACTED #community/docs/vault

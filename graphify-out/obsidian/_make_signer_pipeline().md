@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Pipeline Action & Instruction Envelope"
-location: "L379"
+community: "Cross-Bot Trust Ledger"
+location: "L491"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pipeline_Action__Instruction_Envelope
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # _make_signer_pipeline()
@@ -20,4 +20,4 @@ tags:
 - [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pipeline_Action__Instruction_Envelope
+#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger

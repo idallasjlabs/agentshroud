@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/gateway/web/templates/installer.html"
+source_file: "gateway/web/templates/installer.html"
 type: "code"
-community: "Module Group 614"
+community: "Web Control Center"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_614
+  - community/Web_Control_Center
 ---
 
 # installer.html — Installation Wizard UI
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dashboard.html — Web Control Center Dashboard]] - `part_of` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_614
+#graphify/code #graphify/INFERRED #community/Web_Control_Center

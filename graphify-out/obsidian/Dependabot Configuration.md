@@ -1,16 +1,13 @@
 ---
 source_file: ".github/dependabot.yml"
 type: "code"
-community: "Module Group 301"
+community: ".github/dependabot.yml"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Module_Group_301
+  - graphify/EXTRACTED
+  - community/github/dependabotyml
 ---
 
 # Dependabot Configuration
 
-## Connections
-- [[CI Pipeline Workflow]] - `conceptually_related_to` [INFERRED]
-
-#graphify/code #graphify/INFERRED #community/Module_Group_301
+#graphify/code #graphify/EXTRACTED #community/github/dependabotyml

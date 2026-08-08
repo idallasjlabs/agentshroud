@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Module Group 149"
+community: "Gateway Test Suite"
 location: "L491"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_149
+  - community/Gateway_Test_Suite
 ---
 
 # TestEgressAndAdminCommands
@@ -23,4 +23,4 @@ tags:
 - [[SCLClient]] - `uses` [INFERRED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_149
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

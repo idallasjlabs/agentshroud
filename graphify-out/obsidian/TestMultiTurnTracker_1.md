@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "Module Group 90"
-location: "L44"
+community: "Egress & RBAC Security Core"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_90
+  - community/Egress__RBAC_Security_Core
 ---
 
 # TestMultiTurnTracker
@@ -42,4 +42,4 @@ tags:
 - [[ThresholdConfig]] - `uses` [INFERRED]
 - [[test_multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_90
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

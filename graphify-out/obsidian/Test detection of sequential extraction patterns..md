@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "Module Group 90"
-location: "L269"
+community: "Egress & RBAC Security Core"
+location: "L263"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_90
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Test detection of sequential extraction patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_sequential_extraction_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_90
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

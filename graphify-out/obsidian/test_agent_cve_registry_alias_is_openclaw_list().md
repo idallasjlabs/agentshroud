@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Module Group 84"
-location: "L80"
+community: "Gateway Test Suite"
+location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_84
+  - community/Gateway_Test_Suite
 ---
 
 # test_agent_cve_registry_alias_is_openclaw_list()
 
 ## Connections
-- [[AGENT_CVE_REGISTRY must be the exact same object as _OPENCLAW_CVE_REGISTRY.]] - `rationale_for` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_84
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

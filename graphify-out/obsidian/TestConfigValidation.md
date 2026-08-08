@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Config Validation Tests"
+community: "Gateway Test Suite"
 location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Config_Validation_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # TestConfigValidation
@@ -15,9 +15,12 @@ tags:
 - [[.test_chat_console_script_uses_repo_relative_exec()]] - `method` [EXTRACTED]
 - [[.test_compose_sets_qwen_local_model_overrides()]] - `method` [EXTRACTED]
 - [[.test_empty_content_rejected()]] - `method` [EXTRACTED]
+- [[.test_gateway_yaml_ssh_hosts_cover_all_lab_hosts()]] - `method` [EXTRACTED]
 - [[.test_hermes_dashboard_insecure_optin_is_loopback_bounded()]] - `method` [EXTRACTED]
 - [[.test_hermes_dockerfile_installs_xxd()]] - `method` [EXTRACTED]
 - [[.test_hermes_openai_api_key_wired_via_secret()]] - `method` [EXTRACTED]
+- [[.test_hermes_soul_documents_ssh_hosts()]] - `method` [EXTRACTED]
+- [[.test_hermes_soul_has_no_refuse_directive()]] - `method` [EXTRACTED]
 - [[.test_hermes_startup_telegram_calls_use_system_header()]] - `method` [EXTRACTED]
 - [[.test_init_config_skips_anthropic_auth_seed_for_local_model()]] - `method` [EXTRACTED]
 - [[.test_invalid_router_url_rejected()]] - `method` [EXTRACTED]
@@ -27,10 +30,14 @@ tags:
 - [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - `method` [EXTRACTED]
 - [[.test_main_compose_sets_openclaw_bind_lan_default()]] - `method` [EXTRACTED]
 - [[.test_openclaw_patch_defaults_to_qwen_local_model()]] - `method` [EXTRACTED]
+- [[.test_openclaw_patch_script_emits_per_chat_group_agents()]] - `method` [EXTRACTED]
 - [[.test_openclaw_patch_script_recovers_corrupt_json()]] - `method` [EXTRACTED]
 - [[.test_openclaw_patch_script_removes_legacy_gateway_model_key()]] - `method` [EXTRACTED]
 - [[.test_openclaw_patch_script_seeds_group_allowlist()]] - `method` [EXTRACTED]
 - [[.test_openclaw_patch_script_sets_control_ui_allowed_origins()]] - `method` [EXTRACTED]
+- [[.test_openclaw_patch_script_uses_multi_group_allowlist_var()]] - `method` [EXTRACTED]
+- [[.test_openclaw_soul_has_no_refuse_directive()]] - `method` [EXTRACTED]
+- [[.test_openclaw_ssh_config_allows_all_lab_hosts()]] - `method` [EXTRACTED]
 - [[.test_openclaw_version_pin_is_consistent_across_bot_images()]] - `method` [EXTRACTED]
 - [[.test_patch_slack_sdk_pong_patch_is_idempotent()]] - `method` [EXTRACTED]
 - [[.test_proxy_allowed_network_default_includes_current_subnets()]] - `method` [EXTRACTED]
@@ -48,7 +55,7 @@ tags:
 - [[.test_valid_router_url_accepted()]] - `method` [EXTRACTED]
 - [[ForwardRequest]] - `uses` [INFERRED]
 - [[GatewayConfig validation behavior.]] - `rationale_for` [EXTRACTED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Config_Validation_Tests
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

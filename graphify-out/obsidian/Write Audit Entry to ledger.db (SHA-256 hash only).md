@@ -1,18 +1,17 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.svg"
-type: "image"
-community: "Module Group 414"
+type: "concept"
+community: "docs/diagrams"
 tags:
-  - graphify/image
-  - graphify/EXPLICIT
-  - community/Module_Group_414
+  - graphify/concept
+  - graphify/EXTRACTED
+  - community/docs/diagrams
 ---
 
-# Write Audit Entry to ledger.db (SHA-256 hash only)
+# Write audit entry to ledger.db (SHA-256 hash only)
 
 ## Connections
-- [[Approved — Execute action via HTTP CONNECT proxy]] - `flows_to` [EXPLICIT]
-- [[Response Delivered to User]] - `flows_to` [EXPLICIT]
-- [[ledger.db]] - `writes_to` [INFERRED]
+- [[Execute action via HTTP CONNECT proxy]] - `calls` [EXTRACTED]
+- [[Response delivered to user]] - `calls` [EXTRACTED]
 
-#graphify/image #graphify/EXPLICIT #community/Module_Group_414
+#graphify/concept #graphify/EXTRACTED #community/docs/diagrams

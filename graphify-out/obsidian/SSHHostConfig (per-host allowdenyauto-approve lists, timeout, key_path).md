@@ -1,18 +1,18 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "concept"
-community: "Module Group 369"
+community: "docs/ssh-security-review.md"
 location: "gateway/ingest_api/ssh_config.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_369
+  - community/docs/ssh-security-reviewmd
 ---
 
 # SSHHostConfig (per-host allow/deny/auto-approve lists, timeout, key_path)
 
 ## Connections
-- [[SSH Capability Architecture Document]] - `describes` [EXTRACTED]
-- [[SSH Configuration Guide]] - `describes` [EXTRACTED]
+- [[ssh-capability]] - `describes` [EXTRACTED]
+- [[ssh-configuration]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_369
+#graphify/concept #graphify/EXTRACTED #community/docs/ssh-security-reviewmd

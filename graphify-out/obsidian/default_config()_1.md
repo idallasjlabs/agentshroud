@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_egress_monitor.py"
+source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
-location: "L21"
+community: "Gateway Test Suite"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Gateway_Test_Suite
 ---
 
 # default_config()
 
 ## Connections
-- [[EgressMonitorConfig]] - `calls` [EXTRACTED]
-- [[test_egress_monitor.py]] - `contains` [EXTRACTED]
+- [[DNSFilterConfig]] - `calls` [EXTRACTED]
+- [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "code"
-community: "Module Group 451"
+community: "docs/vault"
 location: "gateway/proxy/http_proxy.py"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_451
+  - community/docs/vault
 ---
 
 # http_proxy.py — HTTPConnectProxy
@@ -15,4 +15,4 @@ tags:
 - [[HTTPConnectProxy_2]] - `defines` [EXTRACTED]
 - [[browser-fetch.js — Playwright Browser Automation]] - `routes_through` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_451
+#graphify/code #graphify/INFERRED #community/docs/vault

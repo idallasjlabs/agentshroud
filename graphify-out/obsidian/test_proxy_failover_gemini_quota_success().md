@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "Module Group 183"
-location: "L361"
+community: "Gateway Test Suite"
+location: "L434"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_183
+  - community/Gateway_Test_Suite
 ---
 
 # test_proxy_failover_gemini_quota_success()
@@ -16,4 +16,4 @@ tags:
 - [[make_proxy()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_failover.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_183
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

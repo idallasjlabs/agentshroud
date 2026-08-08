@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "rationale"
-community: "MCP Config & Proxy"
+community: "Gateway Test Suite"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Config__Proxy
+  - community/Gateway_Test_Suite
 ---
 
 # Configuration for an MCP server.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPServerConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Config__Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

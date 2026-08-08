@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Module Group 83"
+community: "SOC Dashboard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_83
+  - community/SOC_Dashboard
 ---
 
 # BaseModel
@@ -18,14 +18,17 @@ tags:
 - [[ApprovalDecision]] - `inherits` [EXTRACTED]
 - [[ApprovalDecisionRequest]] - `inherits` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `inherits` [EXTRACTED]
-- [[ApprovalQueueItem_3]] - `inherits` [EXTRACTED]
-- [[ApprovalRequest_2]] - `inherits` [EXTRACTED]
+- [[ApprovalQueueItem]] - `inherits` [EXTRACTED]
+- [[ApprovalRequest]] - `inherits` [EXTRACTED]
 - [[AuditExportConfig]] - `inherits` [EXTRACTED]
 - [[AuditLogEntry]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `inherits` [EXTRACTED]
 - [[ChannelsConfig]] - `inherits` [EXTRACTED]
 - [[ChatRequest]] - `inherits` [EXTRACTED]
 - [[ChatResponse]] - `inherits` [EXTRACTED]
+- [[Citation_1]] - `inherits` [EXTRACTED]
+- [[CompetitiveIntelReport_1]] - `inherits` [EXTRACTED]
+- [[CompetitorEntry_1]] - `inherits` [EXTRACTED]
 - [[ConfigUpdate]] - `inherits` [EXTRACTED]
 - [[ContributorRecord_1]] - `inherits` [EXTRACTED]
 - [[CreateDelegationRequest]] - `inherits` [EXTRACTED]
@@ -45,10 +48,12 @@ tags:
 - [[GatewayConfig_1]] - `inherits` [EXTRACTED]
 - [[GroupConfig]] - `inherits` [EXTRACTED]
 - [[InstallConfig]] - `inherits` [EXTRACTED]
+- [[IntelDraftEntry]] - `inherits` [EXTRACTED]
+- [[IntelDraftRequest]] - `inherits` [EXTRACTED]
 - [[KillSwitchAction]] - `inherits` [EXTRACTED]
 - [[LedgerConfig]] - `inherits` [EXTRACTED]
-- [[LedgerEntry_1]] - `inherits` [EXTRACTED]
-- [[LedgerQueryResponse_1]] - `inherits` [EXTRACTED]
+- [[LedgerEntry]] - `inherits` [EXTRACTED]
+- [[LedgerQueryResponse]] - `inherits` [EXTRACTED]
 - [[LoginRequest]] - `inherits` [EXTRACTED]
 - [[MCPProxyRequest]] - `inherits` [EXTRACTED]
 - [[MCPResultRequest]] - `inherits` [EXTRACTED]
@@ -63,15 +68,17 @@ tags:
 - [[RenameGroupRequest]] - `inherits` [EXTRACTED]
 - [[ResourceUsage_1]] - `inherits` [EXTRACTED]
 - [[RollbackRequest]] - `inherits` [EXTRACTED]
-- [[RouterConfig]] - `inherits` [EXTRACTED]
+- [[RouterConfig_1]] - `inherits` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `inherits` [EXTRACTED]
 - [[SCLError]] - `inherits` [EXTRACTED]
 - [[SSHConfig]] - `inherits` [EXTRACTED]
-- [[SSHExecRequest_1]] - `inherits` [EXTRACTED]
+- [[SSHExecRequest]] - `inherits` [EXTRACTED]
 - [[SSHExecResponse]] - `inherits` [EXTRACTED]
 - [[SSHHostConfig]] - `inherits` [EXTRACTED]
+- [[SSHWriteFileRequest]] - `inherits` [EXTRACTED]
+- [[SSHWriteFileResponse]] - `inherits` [EXTRACTED]
 - [[ScanRequest_1]] - `inherits` [EXTRACTED]
-- [[SecurityConfig]] - `inherits` [EXTRACTED]
+- [[SecurityConfig_2]] - `inherits` [EXTRACTED]
 - [[SecurityEvent_1]] - `inherits` [EXTRACTED]
 - [[SecurityModuleConfig]] - `inherits` [EXTRACTED]
 - [[ServiceAction]] - `inherits` [EXTRACTED]
@@ -91,4 +98,4 @@ tags:
 - [[VersionRequest]] - `inherits` [EXTRACTED]
 - [[WSEvent]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_83
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 751"
+community: "Gateway Test Suite"
 location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_751
+  - community/Gateway_Test_Suite
 ---
 
 # Raw tool-call JSON blobs must be suppressed before Telegram delivery.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_raw_tool_call_json_never_leaks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_751
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

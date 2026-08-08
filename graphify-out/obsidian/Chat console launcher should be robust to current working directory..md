@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Config Validation Tests"
-location: "L493"
+community: "Gateway Test Suite"
+location: "L545"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Config_Validation_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # Chat console launcher should be robust to current working directory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_chat_console_script_uses_repo_relative_exec()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Config_Validation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

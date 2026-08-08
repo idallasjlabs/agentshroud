@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Context Guard & Integrity"
+community: "PII Sanitizer Pipeline"
 location: "L581"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Context_Guard__Integrity
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # PromptGuard
 
 ## Connections
-- [[.__init__()_87]] - `method` [EXTRACTED]
+- [[.__init__()_106]] - `method` [EXTRACTED]
 - [[._check_encoded_content()]] - `method` [EXTRACTED]
 - [[._check_unicode_tricks()]] - `method` [EXTRACTED]
 - [[._get_hmac_key()]] - `method` [EXTRACTED]
@@ -27,10 +27,10 @@ tags:
 - [[.reanchor_delimiters()]] - `method` [EXTRACTED]
 - [[.register_system_prompt()]] - `method` [EXTRACTED]
 - [[.scan()_4]] - `method` [EXTRACTED]
-- [[.scan_tool_result()_1]] - `method` [EXTRACTED]
-- [[.setup_method()_12]] - `calls` [EXTRACTED]
-- [[.setup_method()_24]] - `calls` [EXTRACTED]
-- [[.setup_method()_29]] - `calls` [EXTRACTED]
+- [[.scan_tool_result()_2]] - `method` [EXTRACTED]
+- [[.setup_method()_15]] - `calls` [EXTRACTED]
+- [[.setup_method()_27]] - `calls` [EXTRACTED]
+- [[.setup_method()_32]] - `calls` [EXTRACTED]
 - [[.test_custom_pattern()]] - `calls` [EXTRACTED]
 - [[.test_pipeline_raises_with_only_prompt_guard()]] - `calls` [EXTRACTED]
 - [[.test_prompt_guard_instantiates()]] - `calls` [EXTRACTED]
@@ -39,7 +39,7 @@ tags:
 - [[.test_warn_threshold()]] - `calls` [EXTRACTED]
 - [[.test_write_baseline_json()]] - `calls` [EXTRACTED]
 - [[.verify_system_prompt()]] - `method` [EXTRACTED]
-- [[Any_32]] - `uses` [INFERRED]
+- [[Any_34]] - `uses` [INFERRED]
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
 - [[Detect and block prompt injection attempts.]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `uses` [INFERRED]
@@ -47,10 +47,11 @@ tags:
 - [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[PromptGuard_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestBenchmarkBaseline]] - `uses` [INFERRED]
 - [[TestClassicOverride]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
@@ -116,11 +117,15 @@ tags:
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestTrustManagerPerformance]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
+- [[ToolResultInjectionScanner]] - `semantically_similar_to` [INFERRED]
+- [[TrustLevel_1]] - `conceptually_related_to` [INFERRED]
+- [[WS-E RT-2 Inbound Encoding Bypass Fix Rationale]] - `rationale_for` [EXTRACTED]
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
 - [[_StubForwarder]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[canary_pipeline()]] - `calls` [EXTRACTED]
 - [[context_integrity.py]] - `imports` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
@@ -133,7 +138,7 @@ tags:
 - [[prompt_guard()_1]] - `calls` [EXTRACTED]
 - [[prompt_guard()_2]] - `calls` [EXTRACTED]
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
@@ -145,10 +150,13 @@ tags:
 - [[test_performance.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_all_modules_disabled()]] - `calls` [EXTRACTED]
 - [[test_prompt_guard.py]] - `imports` [EXTRACTED]
+- [[test_prompt_guard_double_encoded_uses_full_ruleset()]] - `calls` [EXTRACTED]
+- [[test_prompt_guard_encoded_check_uses_full_ruleset()]] - `calls` [EXTRACTED]
 - [[test_prompt_guard_init()]] - `calls` [EXTRACTED]
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
+- [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Context_Guard__Integrity
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline

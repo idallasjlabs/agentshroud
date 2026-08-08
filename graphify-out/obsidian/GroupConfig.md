@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Group Config & Teams"
-location: "L55"
+community: "Collaborator Response Templates"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Config__Teams
+  - community/Collaborator_Response_Templates
 ---
 
 # GroupConfig
@@ -22,6 +22,7 @@ tags:
 - [[A team group with members, admin, projects, and collab mode.]] - `rationale_for` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[TeamsConfig_1]] - `uses` [INFERRED]
+- [[TeamsConfig_3]] - `uses` [INFERRED]
 - [[TestAdminChecks]] - `uses` [INFERRED]
 - [[TestBuildProjectContextInjection]] - `uses` [INFERRED]
 - [[TestCollabMode]] - `uses` [INFERRED]
@@ -45,4 +46,4 @@ tags:
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 - [[test_group_config.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Config__Teams
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates

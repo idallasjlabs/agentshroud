@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Module Group 93"
-location: "L132"
+community: "Gateway Security Module"
+location: "L67"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Module_Group_93
+  - graphify/EXTRACTED
+  - community/Gateway_Security_Module
 ---
 
 # datetime
 
 ## Connections
-- [[.register_credential()]] - `references` [EXTRACTED]
-- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
-- [[key_rotation.py]] - `imports_from` [EXTRACTED]
+- [[falco_monitor.py]] - `imports_from` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_93
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

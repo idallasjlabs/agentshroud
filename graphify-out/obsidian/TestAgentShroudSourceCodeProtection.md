@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "Module Group 389"
-location: "L64"
+community: "File Sandbox"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_389
+  - community/File_Sandbox
 ---
 
 # TestAgentShroudSourceCodeProtection
@@ -22,4 +22,4 @@ tags:
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_389
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox

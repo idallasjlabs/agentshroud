@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "CLI Interface"
+community: "gateway/cli"
 location: "L277"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CLI_Interface
+  - community/gateway/cli
 ---
 
 # Add a collaborator by Telegram user ID.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[add_collaborator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CLI_Interface
+#graphify/rationale #graphify/EXTRACTED #community/gateway/cli

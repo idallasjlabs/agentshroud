@@ -1,11 +1,11 @@
 ---
 source_file: "docker/falco/rules.yaml"
 type: "code"
-community: "Module Group 138"
+community: "docker/falco"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_138
+  - community/docker/falco
 ---
 
 # Falco Security Rules (rules.yaml)
@@ -17,4 +17,4 @@ tags:
 - [[Falco Rule Secret File Access]] - `defines` [EXTRACTED]
 - [[Falco Rule Unexpected Outbound Connection]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_138
+#graphify/code #graphify/EXTRACTED #community/docker/falco

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Module Group 79"
+community: "PromptGuard Encoding Detection"
 location: "L909"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_79
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # Unknown event types should not inject SQL.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_event_type_validation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_79
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection

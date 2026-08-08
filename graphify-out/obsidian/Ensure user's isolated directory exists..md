@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "RBAC Middleware & Ingest API"
-location: "L227"
+community: "Gateway Test Suite"
+location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Gateway_Test_Suite
 ---
 
 # Ensure user's isolated directory exists.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._ensure_user_directory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

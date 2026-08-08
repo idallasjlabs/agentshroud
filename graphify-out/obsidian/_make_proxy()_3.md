@@ -1,28 +1,50 @@
 ---
-source_file: "gateway/tests/test_telegram_pipeline.py"
+source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "Module Group 177"
-location: "L39"
+community: "Slack API Proxy"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_177
+  - community/Slack_API_Proxy
 ---
 
 # _make_proxy()
 
 ## Connections
-- [[.test_blocked_non_owner_drops_update_and_increments_stats()]] - `calls` [EXTRACTED]
-- [[.test_blocked_owner_message_allowed_through_with_sanitized_text()]] - `calls` [EXTRACTED]
-- [[.test_no_pipeline_falls_back_to_direct_sanitizer()]] - `calls` [EXTRACTED]
-- [[.test_outbound_blocked_replaces_text()]] - `calls` [EXTRACTED]
-- [[.test_pipeline_exception_allows_owner_through()]] - `calls` [EXTRACTED]
-- [[.test_pipeline_exception_fails_closed_for_non_owner()]] - `calls` [EXTRACTED]
-- [[.test_pipeline_process_inbound_called_with_skip_context_guard()]] - `calls` [EXTRACTED]
-- [[.test_pipeline_process_outbound_called_for_send_message()]] - `calls` [EXTRACTED]
-- [[.test_send_message_draft_also_runs_outbound_filtering()]] - `calls` [EXTRACTED]
-- [[Build a TelegramAPIProxy with mocked RBAC and rate limiter.      RBACConfig and]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
-- [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
+- [[.test_already_in_channel_is_idempotent_true()]] - `calls` [EXTRACTED]
+- [[.test_cached_corr_without_colon_falls_back_to_channel()]] - `calls` [EXTRACTED]
+- [[.test_cached_inbound_corr_skips_history_lookup()]] - `calls` [EXTRACTED]
+- [[.test_cant_kick_self_is_idempotent_true()]] - `calls` [EXTRACTED]
+- [[.test_dm_reply_recovers_inbound_via_conversations_history()]] - `calls` [EXTRACTED]
+- [[.test_history_error_records_outbound_without_correlation()]] - `calls` [EXTRACTED]
+- [[.test_malformed_json_body_forwards_with_empty_payload()]] - `calls` [EXTRACTED]
+- [[.test_missing_args_return_false()]] - `calls` [EXTRACTED]
+- [[.test_missing_args_return_false()_1]] - `calls` [EXTRACTED]
+- [[.test_missing_channel_or_text_skips_tracking()]] - `calls` [EXTRACTED]
+- [[.test_name_truncated_to_80_chars()]] - `calls` [EXTRACTED]
+- [[.test_network_error_returns_synthetic_failure()]] - `calls` [EXTRACTED]
+- [[.test_no_token_returns_false()]] - `calls` [EXTRACTED]
+- [[.test_no_token_returns_false()_1]] - `calls` [EXTRACTED]
+- [[.test_no_token_returns_none()]] - `calls` [EXTRACTED]
+- [[.test_not_in_channel_is_idempotent_true()]] - `calls` [EXTRACTED]
+- [[.test_other_error_returns_false()]] - `calls` [EXTRACTED]
+- [[.test_other_error_returns_false()_1]] - `calls` [EXTRACTED]
+- [[.test_recovery_exception_is_non_fatal()]] - `calls` [EXTRACTED]
+- [[.test_redaction_count_access_error_is_non_fatal()]] - `calls` [EXTRACTED]
+- [[.test_slack_error_returns_none()]] - `calls` [EXTRACTED]
+- [[.test_structured_text_serialized_for_preview()]] - `calls` [EXTRACTED]
+- [[.test_success_posts_with_bearer_token()]] - `calls` [EXTRACTED]
+- [[.test_success_returns_channel_id_with_sanitized_name()]] - `calls` [EXTRACTED]
+- [[.test_success_returns_true()]] - `calls` [EXTRACTED]
+- [[.test_success_returns_true()_1]] - `calls` [EXTRACTED]
+- [[.test_system_message_not_tracked()]] - `calls` [EXTRACTED]
+- [[.test_thread_reply_recovers_inbound_via_conversations_replies()]] - `calls` [EXTRACTED]
+- [[.test_tracker_exception_does_not_break_response()]] - `calls` [EXTRACTED]
+- [[.test_unknown_content_type_ignored()]] - `calls` [EXTRACTED]
+- [[Create a SlackAPIProxy with a fake token and no real secretfile IO.]] - `rationale_for` [EXTRACTED]
+- [[SlackAPIProxy]] - `calls` [EXTRACTED]
+- [[SlackAPIProxy_2]] - `references` [EXTRACTED]
+- [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_177
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

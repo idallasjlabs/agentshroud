@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Module Group 348"
-location: "L1248"
+community: "Approval & FastAPI Ingest"
+location: "L1422"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_348
+  - community/Approval__FastAPI_Ingest
 ---
 
 # _record_scanner_result()
@@ -21,4 +21,4 @@ tags:
 - [[run_openscap_scan()]] - `calls` [EXTRACTED]
 - [[run_trivy_scan()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_348
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

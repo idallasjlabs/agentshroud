@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_event_bus.py"
+source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "code"
-community: "Dashboard Routes & WebSocket"
-location: "L80"
+community: "Gateway Test Suite"
+location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Routes__WebSocket
+  - community/Gateway_Test_Suite
 ---
 
 # test_get_stats()
 
 ## Connections
-- [[Stats track event counts]] - `rationale_for` [EXTRACTED]
-- [[make_event()]] - `calls` [EXTRACTED]
-- [[test_event_bus.py]] - `contains` [EXTRACTED]
+- [[DataExfilVolumeConfig]] - `calls` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `calls` [EXTRACTED]
+- [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Routes__WebSocket
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

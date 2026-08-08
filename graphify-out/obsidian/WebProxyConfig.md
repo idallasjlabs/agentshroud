@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "HTTP CONNECT Proxy & Egress"
+community: "Egress Domain Allowlist"
 location: "L31"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/HTTP_CONNECT_Proxy__Egress
+  - graphify/EXTRACTED
+  - community/Egress_Domain_Allowlist
 ---
 
 # WebProxyConfig
 
 ## Connections
-- [[.__init__()_15]] - `calls` [EXTRACTED]
+- [[.__init__()_24]] - `calls` [EXTRACTED]
 - [[.allowlist_config()]] - `calls` [EXTRACTED]
 - [[.get_domain_settings()]] - `method` [EXTRACTED]
 - [[.is_domain_allowed()]] - `method` [EXTRACTED]
@@ -30,16 +30,16 @@ tags:
 - [[.test_wildcard_domain_settings()]] - `calls` [EXTRACTED]
 - [[.test_wildcard_matches_root_domain()]] - `calls` [EXTRACTED]
 - [[.test_wildcard_matches_subdomain()]] - `calls` [EXTRACTED]
-- [[Any_20]] - `uses` [INFERRED]
+- [[Any_22]] - `uses` [INFERRED]
 - [[Configuration for the web traffic proxy.      Default-allow all URLs pass unles]] - `rationale_for` [EXTRACTED]
 - [[EgressFilter]] - `uses` [INFERRED]
-- [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
+- [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[StreamReader]] - `uses` [INFERRED]
 - [[StreamReader_1]] - `uses` [INFERRED]
-- [[StreamWriter]] - `uses` [INFERRED]
+- [[StreamReader_2]] - `uses` [INFERRED]
+- [[StreamWriter_1]] - `uses` [INFERRED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
 - [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestContentTypeFiltering]] - `uses` [INFERRED]
@@ -59,8 +59,8 @@ tags:
 - [[TestZeroWidthAttacks]] - `uses` [INFERRED]
 - [[URLAnalyzer_1]] - `uses` [INFERRED]
 - [[WebContentScanner_1]] - `uses` [INFERRED]
-- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig_1]] - `uses` [INFERRED]
 - [[WebProxyResult]] - `uses` [INFERRED]
 - [[_CloseRaisesTargetWriter]] - `uses` [INFERRED]
@@ -73,7 +73,7 @@ tags:
 - [[_SocketTransportWriter]] - `uses` [INFERRED]
 - [[_TimeoutReader]] - `uses` [INFERRED]
 - [[_allowlist_proxy()]] - `calls` [EXTRACTED]
-- [[config()_3]] - `calls` [EXTRACTED]
+- [[config()_4]] - `calls` [EXTRACTED]
 - [[http_proxy.py]] - `imports` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
@@ -95,4 +95,4 @@ tags:
 - [[web_config.py]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/HTTP_CONNECT_Proxy__Egress
+#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist

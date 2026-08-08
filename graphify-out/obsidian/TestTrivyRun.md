@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Module Group 176"
+community: "Gateway Test Suite"
 location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_176
+  - community/Gateway_Test_Suite
 ---
 
 # TestTrivyRun
@@ -20,4 +20,4 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_176
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

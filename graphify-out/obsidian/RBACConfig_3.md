@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "RBAC Configuration"
-location: "L475"
+community: "Auth & Exception Types"
+location: "L472"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # RBACConfig
 
 ## Connections
 - [[._make_rbac()]] - `references` [EXTRACTED]
-- [[.setup_method()_17]] - `calls` [EXTRACTED]
+- [[.setup_method()_20]] - `calls` [EXTRACTED]
 - [[.test_default_config_initialization()]] - `calls` [EXTRACTED]
 - [[.test_get_users_by_role()]] - `calls` [EXTRACTED]
 - [[.test_owner_and_collaborators_can_be_overridden_from_env()]] - `calls` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[Role_1]] - `uses` [INFERRED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Configuration
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

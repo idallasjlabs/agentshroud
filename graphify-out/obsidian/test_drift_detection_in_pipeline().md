@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Alert Dispatcher"
+community: "PII Config & Test Fixtures"
 location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher
+  - community/PII_Config__Test_Fixtures
 ---
 
 # test_drift_detection_in_pipeline()
@@ -17,4 +17,4 @@ tags:
 - [[DriftDetector]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher
+#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

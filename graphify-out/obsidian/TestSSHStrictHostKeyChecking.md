@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Module Group 495"
+community: "Approval Queue Tests"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_495
+  - community/Approval_Queue_Tests
 ---
 
 # TestSSHStrictHostKeyChecking
@@ -20,4 +20,4 @@ tags:
 - [[Verify SSH proxy uses StrictHostKeyChecking=yes, not accept-new]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_495
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Module Group 120"
+community: "Auth & Exception Types"
 location: "L297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_120
+  - community/Auth__Exception_Types
 ---
 
 # SimpleNamespace
 
 ## Connections
-- [[.__init__()_133]] - `calls` [EXTRACTED]
+- [[.__init__()_167]] - `calls` [EXTRACTED]
 - [[.test_allowed()]] - `calls` [EXTRACTED]
 - [[.test_blocked()]] - `calls` [EXTRACTED]
 - [[.test_is_group_admin_with_teams_config()]] - `calls` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[_audit_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_120
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

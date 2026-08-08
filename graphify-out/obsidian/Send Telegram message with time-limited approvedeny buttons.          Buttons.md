@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "rationale"
-community: "Module Group 279"
-location: "L141"
+community: "Gateway Proxy Layer"
+location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_279
+  - community/Gateway_Proxy_Layer
 ---
 
 # Send Telegram message with time-limited approve/deny buttons.          Buttons:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.notify_pending()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_279
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "Module Group 72"
-location: "L196"
+community: "Gateway Test Suite"
+location: "L195"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_72
+  - community/Gateway_Test_Suite
 ---
 
 # PromptGuard must block classic 'ignore instructions' injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prompt_injection_ignore_instructions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_72
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

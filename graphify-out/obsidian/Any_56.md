@@ -1,24 +1,21 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Tool Result Sanitizer"
-location: "L28"
+community: "URL/Domain Validation Tests"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_98]] - `references` [EXTRACTED]
-- [[._extract_dict_content()]] - `references` [EXTRACTED]
-- [[._extract_scannable_content()]] - `references` [EXTRACTED]
-- [[._reconstruct_result()]] - `references` [EXTRACTED]
-- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
+- [[.add_conversation_message()]] - `references` [EXTRACTED]
+- [[.from_dict()_10]] - `references` [EXTRACTED]
+- [[.get_session_context()]] - `references` [EXTRACTED]
+- [[.reanchor_system_prompt()]] - `references` [EXTRACTED]
+- [[.to_dict()_11]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

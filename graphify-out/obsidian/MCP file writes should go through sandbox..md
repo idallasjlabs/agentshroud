@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Environment Guard & Leak Detection"
-location: "L497"
+community: "File Sandbox"
+location: "L491"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - community/File_Sandbox
 ---
 
 # MCP file writes should go through sandbox.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_file_sandbox_mcp_write()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

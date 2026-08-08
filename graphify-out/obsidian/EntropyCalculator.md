@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "DNS Filter & Tunneling Detection"
+community: "PII Config & Test Fixtures"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DNS_Filter__Tunneling_Detection
+  - community/PII_Config__Test_Fixtures
 ---
 
 # EntropyCalculator
@@ -15,7 +15,7 @@ tags:
 - [[.shannon_entropy()]] - `method` [EXTRACTED]
 - [[TestAuditLogging]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
@@ -47,4 +47,4 @@ tags:
 - [[test_dns_filter.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DNS_Filter__Tunneling_Detection
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

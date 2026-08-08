@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Tool Result Sanitizer"
+community: "PII Sanitizer Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # test_performance.py
@@ -25,6 +25,6 @@ tags:
 - [[TestPromptGuardPerformance]] - `contains` [EXTRACTED]
 - [[TestSecurityPipelineChainLatency]] - `contains` [EXTRACTED]
 - [[TestTrustManagerPerformance]] - `contains` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

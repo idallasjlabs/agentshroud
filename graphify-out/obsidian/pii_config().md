@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Sidecar Security Scanner"
+community: "HTTP Forwarder"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sidecar_Security_Scanner
+  - community/HTTP_Forwarder
 ---
 
 # pii_config()
@@ -15,4 +15,4 @@ tags:
 - [[PIIConfig]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sidecar_Security_Scanner
+#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder

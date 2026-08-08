@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "rationale"
-community: "Module Group 130"
-location: "L174"
+community: "Gateway Test Suite"
+location: "L172"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_130
+  - community/Gateway_Test_Suite
 ---
 
 # Test that benign multilingual text is not blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_benign_multilingual_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_130
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

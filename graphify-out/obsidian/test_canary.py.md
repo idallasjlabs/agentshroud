@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "code"
-community: "Module Group 92"
+community: "HTTP Forwarder"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_92
+  - community/HTTP_Forwarder
 ---
 
 # test_canary.py
@@ -18,7 +18,7 @@ tags:
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[canary_pipeline()]] - `contains` [EXTRACTED]
 - [[healthy_forwarder()]] - `contains` [EXTRACTED]
 - [[run_canary()]] - `imports` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[test_canary_with_unhealthy_forwarder()]] - `contains` [EXTRACTED]
 - [[unhealthy_forwarder()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_92
+#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder

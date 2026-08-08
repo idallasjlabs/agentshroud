@@ -1,18 +1,23 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
-type: "document"
-community: "Module Group 158"
+source_file: "gateway/tests/test_observatory_mode.py"
+type: "code"
+community: "Gateway Test Suite"
+location: "L60"
 tags:
-  - graphify/document
-  - graphify/EXTRACTED
-  - community/Module_Group_158
+  - graphify/code
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # FastAPI
 
 ## Connections
-- [[FastAPI App Instance (main.py)]] - `implemented_by` [EXTRACTED]
-- [[Pydantic]] - `depends_on` [EXTRACTED]
-- [[agentshroud-gateway Container]] - `uses` [INFERRED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
+- [[KillSwitchConfig]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[ModeRequest]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[_make_app()]] - `references` [EXTRACTED]
+- [[test_observatory_mode.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_158
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/killswitch.sh"
 type: "code"
-community: "Module Group 552"
+community: "Docker Deploy Scripts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_552
+  - community/Docker_Deploy_Scripts
 ---
 
 # killswitch.sh script
@@ -16,4 +16,4 @@ tags:
 - [[killswitch.sh]] - `contains` [EXTRACTED]
 - [[usage()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_552
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

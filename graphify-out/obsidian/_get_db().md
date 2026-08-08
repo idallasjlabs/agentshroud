@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "Version Routes & Manager Tools"
+community: "gateway/tools"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Version_Routes__Manager_Tools
+  - community/gateway/tools
 ---
 
 # _get_db()
@@ -21,4 +21,4 @@ tags:
 - [[rollback()]] - `calls` [EXTRACTED]
 - [[upgrade()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Version_Routes__Manager_Tools
+#graphify/code #graphify/EXTRACTED #community/gateway/tools

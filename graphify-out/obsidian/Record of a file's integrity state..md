@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Module Group 143"
-location: "L40"
+community: "Egress & RBAC Security Core"
+location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_143
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Record of a file's integrity state.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FileIntegrityRecord]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_143
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

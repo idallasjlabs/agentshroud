@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Module Group 418"
-location: "L35"
+community: "Approval Queue Tests"
+location: "L363"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_418
+  - community/Approval_Queue_Tests
 ---
 
 # Any
 
 ## Connections
-- [[.get_recent()]] - `references` [EXTRACTED]
-- [[.get_stats()]] - `references` [EXTRACTED]
-- [[.to_dict()]] - `references` [EXTRACTED]
-- [[make_event()]] - `references` [EXTRACTED]
+- [[._append_audit_event()]] - `references` [EXTRACTED]
+- [[.broadcast()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_418
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

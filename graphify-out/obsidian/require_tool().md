@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/security-scan.sh"
 type: "code"
-community: "Module Group 463"
+community: "scripts/security-scan.sh"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_463
+  - community/scripts/security-scansh
 ---
 
 # require_tool()
@@ -15,4 +15,4 @@ tags:
 - [[error()]] - `calls` [EXTRACTED]
 - [[security-scan.sh_1]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_463
+#graphify/code #graphify/EXTRACTED #community/scripts/security-scansh

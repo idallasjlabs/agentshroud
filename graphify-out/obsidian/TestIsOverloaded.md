@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "code"
-community: "Module Group 352"
+community: "Gateway Test Suite"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_352
+  - community/Gateway_Test_Suite
 ---
 
 # TestIsOverloaded
@@ -22,4 +22,4 @@ tags:
 - [[.test_quota_statuses_not_claimed()]] - `method` [EXTRACTED]
 - [[test_llm_quota_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_352
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

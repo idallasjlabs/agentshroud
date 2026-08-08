@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "Module Group 204"
+community: "Gateway Test Suite"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_204
+  - community/Gateway_Test_Suite
 ---
 
 # _default_format()
@@ -19,4 +19,4 @@ tags:
 - [[main.py_1]] - `contains` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_204
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

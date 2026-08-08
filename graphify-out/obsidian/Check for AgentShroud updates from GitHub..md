@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Web API & Dashboard UI"
-location: "L564"
+community: "Competitive Intel Store"
+location: "L618"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Web_API__Dashboard_UI
+  - community/Competitive_Intel_Store
 ---
 
 # Check for AgentShroud updates from GitHub.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_agentshroud_updates()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Web_API__Dashboard_UI
+#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store

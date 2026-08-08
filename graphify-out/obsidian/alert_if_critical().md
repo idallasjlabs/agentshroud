@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-scan.sh"
 type: "code"
-community: "Module Group 416"
+community: "Docker Deploy Scripts"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_416
+  - community/Docker_Deploy_Scripts
 ---
 
 # alert_if_critical()
@@ -17,4 +17,4 @@ tags:
 - [[run_trivy()]] - `calls` [EXTRACTED]
 - [[security-scan.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_416
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

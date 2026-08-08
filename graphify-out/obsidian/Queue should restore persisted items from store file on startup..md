@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "Approval Queue Core"
-location: "L365"
+community: "Gateway Test Suite"
+location: "L366"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue_Core
+  - community/Gateway_Test_Suite
 ---
 
 # Queue should restore persisted items from store file on startup.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_store_restores_items_on_init()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Core
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

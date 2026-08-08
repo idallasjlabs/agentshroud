@@ -1,20 +1,19 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/governance/AGENT_ROLES.md"
+source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "Module Group 459"
+community: "docs/governance"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_459
+  - community/docs/governance
 ---
 
 # Multi-Agent Role Matrix (AGENT_ROLES.md)
 
 ## Connections
-- [[Claude Code — Primary Developer Agent]] - `defines` [EXTRACTED]
-- [[Codex — Tertiary Agent]] - `defines` [EXTRACTED]
-- [[Gemini CLI — Secondary Agent]] - `defines` [EXTRACTED]
-- [[Post-fable-5 Task Delegation (2026-06-11)]] - `references` [EXTRACTED]
-- [[Security-Sensitive Paths (Claude Code Only)]] - `defines` [EXTRACTED]
+- [[Authorization Matrix_1]] - `references` [EXTRACTED]
+- [[Diagram 21 Team Structure]] - `references` [EXTRACTED]
+- [[Escalation Path]] - `references` [EXTRACTED]
+- [[Security-Sensitive Paths]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_459
+#graphify/document #graphify/EXTRACTED #community/docs/governance

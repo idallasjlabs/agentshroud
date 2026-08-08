@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "Module Group 150"
-location: "L412"
+community: "Web Control Center"
+location: "L414"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_150
+  - community/Web_Control_Center
 ---
 
 # Falco runtime security alerts viewer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[falco_dashboard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_150
+#graphify/rationale #graphify/EXTRACTED #community/Web_Control_Center

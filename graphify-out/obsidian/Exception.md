@@ -1,42 +1,38 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: ""
 type: "code"
-community: "CLI & Core Gateway Routes"
-location: "L404"
+community: "Auth & Exception Types"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/CLI__Core_Gateway_Routes
+  - graphify/EXTRACTED
+  - community/Auth__Exception_Types
 ---
 
 # Exception
 
 ## Connections
-- [[.test_forward_middleware_error_handling()]] - `calls` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[ApprovalDecision]] - `uses` [INFERRED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
-- [[EmailSendRequest]] - `uses` [INFERRED]
-- [[EmailSendResponse]] - `uses` [INFERRED]
-- [[EventBus]] - `uses` [INFERRED]
-- [[ForwardError]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[ForwardResponse]] - `uses` [INFERRED]
-- [[GatewayConfig_1]] - `uses` [INFERRED]
-- [[LedgerEntry_1]] - `uses` [INFERRED]
-- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[ConfigValidationError]] - `inherits` [EXTRACTED]
+- [[CredentialEntryBlocked]] - `inherits` [EXTRACTED]
+- [[ForwardError]] - `inherits` [EXTRACTED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[OAuthError]] - `inherits` [EXTRACTED]
+- [[PhishingURLDetected]] - `inherits` [EXTRACTED]
+- [[ReportIntegrityError]] - `inherits` [EXTRACTED]
+- [[RouterError]] - `inherits` [EXTRACTED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
 - [[SSHExecResponse]] - `uses` [INFERRED]
-- [[StatusResponse]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest]] - `uses` [INFERRED]
+- [[SSHWriteFileResponse]] - `uses` [INFERRED]
+- [[SecurityError]] - `inherits` [EXTRACTED]
+- [[SecurityError_1]] - `inherits` [EXTRACTED]
+- [[SecurityError_2]] - `inherits` [EXTRACTED]
+- [[SessionError]] - `inherits` [EXTRACTED]
+- [[SkillGuardBlocked]] - `inherits` [EXTRACTED]
+- [[SocialEngineeringDetected]] - `inherits` [EXTRACTED]
+- [[VRAMHeadroomError]] - `inherits` [EXTRACTED]
 - [[global_exception_handler()]] - `references` [EXTRACTED]
+- [[test_ws_empty_transcript_goes_idle()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/CLI__Core_Gateway_Routes
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Router & Correlation"
-location: "L106"
+community: "Gateway Test Suite"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router__Correlation
+  - community/Gateway_Test_Suite
 ---
 
 # auth_login()
@@ -19,4 +19,4 @@ tags:
 - [[issue_session_token()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router__Correlation
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

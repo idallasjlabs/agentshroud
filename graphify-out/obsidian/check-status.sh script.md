@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/check-status.sh"
 type: "code"
-community: "Module Group 634"
+community: "Docker Deploy Scripts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_634
+  - community/Docker_Deploy_Scripts
 ---
 
 # check-status.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check-status.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_634
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

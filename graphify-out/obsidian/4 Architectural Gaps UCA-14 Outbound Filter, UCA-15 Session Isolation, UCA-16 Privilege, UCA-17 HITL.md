@@ -1,12 +1,12 @@
 ---
 source_file: "docs/redteam/v0.7.0-remediation-plan.md"
 type: "rationale"
-community: "Module Group 432"
+community: "docs/redteam"
 location: "line 28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_432
+  - community/docs/redteam
 ---
 
 # 4 Architectural Gaps: UCA-14 Outbound Filter, UCA-15 Session Isolation, UCA-16 Privilege, UCA-17 HITL
@@ -17,4 +17,4 @@ tags:
 - [[Per-User Session Isolation (Remediation)]] - `addresses` [EXTRACTED]
 - [[Separation of Privilege (Remediation) — gateway read-only to agent]] - `addresses` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_432
+#graphify/rationale #graphify/EXTRACTED #community/docs/redteam

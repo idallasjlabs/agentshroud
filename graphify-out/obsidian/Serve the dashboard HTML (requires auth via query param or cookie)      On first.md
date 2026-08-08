@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "Dashboard Routes & WebSocket"
+community: "Gateway Test Suite"
 location: "L454"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dashboard_Routes__WebSocket
+  - community/Gateway_Test_Suite
 ---
 
 # Serve the dashboard HTML (requires auth via query param or cookie)      On first
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[serve_dashboard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dashboard_Routes__WebSocket
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

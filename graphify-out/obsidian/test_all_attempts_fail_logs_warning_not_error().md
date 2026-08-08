@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "Module Group 439"
+community: "Gateway Test Suite"
 location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_439
+  - community/Gateway_Test_Suite
 ---
 
 # test_all_attempts_fail_logs_warning_not_error()
@@ -15,4 +15,4 @@ tags:
 - [[_alert()]] - `calls` [EXTRACTED]
 - [[test_alert_dispatcher_retry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_439
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

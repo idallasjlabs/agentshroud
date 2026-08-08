@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "Module Group 605"
-location: "L435"
+community: "Gateway Test Suite"
+location: "L433"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_605
+  - community/Gateway_Test_Suite
 ---
 
 # TestPromptGuardDirectly
@@ -18,4 +18,4 @@ tags:
 - [[PromptGuard scans high-confidence classic payloads with non-zero score.]] - `rationale_for` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_605
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

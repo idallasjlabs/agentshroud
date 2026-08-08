@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "SSH Proxy & Gateway Config"
-location: "L204"
+community: "Approval Queue Tests"
+location: "L308"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Approval_Queue_Tests
 ---
 
 # TestSSHDisabledEndpoint
@@ -22,7 +22,7 @@ tags:
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[Test that SSH disabled returns 503 (Finding 12)]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SSH_Proxy__Gateway_Config
+#graphify/code #graphify/INFERRED #community/Approval_Queue_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 217"
+community: "Gateway Test Suite"
 location: "L5109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_217
+  - community/Gateway_Test_Suite
 ---
 
 # Owner multipart messages still pass through on pipeline crash (parity).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_multipart_owner_exempt_from_fail_closed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_217
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

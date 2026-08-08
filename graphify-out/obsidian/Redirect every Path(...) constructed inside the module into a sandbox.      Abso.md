@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "rationale"
-community: "Module Group 170"
+community: "Gateway Test Suite"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_170
+  - community/Gateway_Test_Suite
 ---
 
 # Redirect every Path(...) constructed inside the module into a sandbox.      Abso
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[fs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_170
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

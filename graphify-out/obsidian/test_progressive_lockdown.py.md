@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Progressive Lockdown"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Lockdown
+  - community/Gateway_Test_Suite
 ---
 
 # test_progressive_lockdown.py
@@ -23,8 +23,8 @@ tags:
 - [[TestProgressiveLockdownUnit]] - `contains` [EXTRACTED]
 - [[TestSuspendedDropNotice]] - `contains` [EXTRACTED]
 - [[TestUnlockCommand]] - `contains` [EXTRACTED]
-- [[_make_proxy()]] - `contains` [EXTRACTED]
+- [[_make_proxy()_1]] - `contains` [EXTRACTED]
 - [[_make_update()]] - `contains` [EXTRACTED]
 - [[_wrap()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Lockdown
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

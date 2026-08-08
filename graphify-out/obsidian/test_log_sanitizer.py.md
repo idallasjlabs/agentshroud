@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "Module Group 244"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_244
+  - community/Gateway_Test_Suite
 ---
 
 # test_log_sanitizer.py
@@ -16,4 +16,4 @@ tags:
 - [[TestLogSanitizer]] - `contains` [EXTRACTED]
 - [[install_log_sanitizer()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_244
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

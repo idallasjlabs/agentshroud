@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "rationale"
-community: "PII Sanitizer & Resource Guard"
+community: "LLM Proxy Resource Guard"
 location: "L182"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # stop() should cancel background monitor cleanly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_stop_cancels_monitor_task()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__Resource_Guard
+#graphify/rationale #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

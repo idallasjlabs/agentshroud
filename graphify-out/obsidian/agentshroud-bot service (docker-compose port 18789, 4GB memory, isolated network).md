@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/vault/03 - Configuration/docker-compose.yml.md"
+source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "concept"
-community: "Module Group 326"
+community: "docs/vault"
 location: "docker/docker-compose.yml"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_326
+  - community/docs/vault
 ---
 
 # agentshroud-bot service (docker-compose: port 18789, 4GB memory, isolated network)
@@ -22,4 +22,4 @@ tags:
 - [[docker-compose.yml (primary Docker Compose — services, networks, volumes, secrets)]] - `defines` [EXTRACTED]
 - [[falco-rules.yaml (runtime security rules — shell spawn, outbound, privilege escalation)]] - `monitors` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_326
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

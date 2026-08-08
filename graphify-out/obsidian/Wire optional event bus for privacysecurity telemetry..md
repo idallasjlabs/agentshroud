@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Module Group 78"
-location: "L301"
+community: "Gateway Test Suite"
+location: "L308"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_78
+  - community/Gateway_Test_Suite
 ---
 
 # Wire optional event bus for privacy/security telemetry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_event_bus()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_78
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

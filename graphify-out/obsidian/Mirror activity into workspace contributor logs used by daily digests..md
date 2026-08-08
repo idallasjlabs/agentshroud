@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "Module Group 140"
+community: "Gateway Security Module"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_140
+  - community/Gateway_Security_Module
 ---
 
 # Mirror activity into workspace contributor logs used by daily digests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._append_contributor_log()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_140
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

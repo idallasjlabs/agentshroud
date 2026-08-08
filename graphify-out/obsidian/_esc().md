@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/soc/static/soc.js"
+source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "Module Group 128"
-location: "L45"
+community: "Bot Container Scripts"
+location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_128
+  - community/Bot_Container_Scripts
 ---
 
 # _esc()
 
 ## Connections
-- [[_renderActivityLog()]] - `calls` [EXTRACTED]
-- [[_renderSbom()]] - `calls` [EXTRACTED]
-- [[soc.js]] - `contains` [EXTRACTED]
+- [[_inline()]] - `calls` [EXTRACTED]
+- [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_128
+#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts

@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/openclaw/workspace/memory/context.md"
 type: "document"
-community: "Module Group 138"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_138
+  - community/Bot_Skill_Config
 ---
 
 # OpenClaw Memory Context
 
-## Connections
-- [[OpenClaw Bot (Node.js AI Agent under Governance)]] - `references` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/Module_Group_138
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

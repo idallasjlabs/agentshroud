@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Module Group 269"
+community: "Gateway Test Suite"
 location: "L779"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_269
+  - community/Gateway_Test_Suite
 ---
 
 # Return latest OpenSCAP compliance summary from saved reports.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_openscap_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_269
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

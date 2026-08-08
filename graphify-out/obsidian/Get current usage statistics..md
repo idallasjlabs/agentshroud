@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "PII Sanitizer & Resource Guard"
-location: "L349"
+community: "LLM Proxy Resource Guard"
+location: "L426"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # Get current usage statistics.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_usage_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__Resource_Guard
+#graphify/rationale #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

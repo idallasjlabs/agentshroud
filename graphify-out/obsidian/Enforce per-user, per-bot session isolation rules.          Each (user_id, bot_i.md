@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "RBAC Middleware & Ingest API"
-location: "L905"
+community: "Egress & RBAC Security Core"
+location: "L1040"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Enforce per-user, per-bot session isolation rules.          Each (user_id, bot_i
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._enforce_session_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

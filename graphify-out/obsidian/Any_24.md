@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "Module Group 82"
-location: "L123"
+community: "gateway/runtime"
+location: "L149"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_82
+  - graphify/INFERRED
+  - community/gateway/runtime
 ---
 
 # Any
 
 ## Connections
-- [[.inspect()_2]] - `references` [EXTRACTED]
+- [[.inspect()]] - `references` [EXTRACTED]
+- [[ContainerEngine_2]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_82
+#graphify/code #graphify/INFERRED #community/gateway/runtime

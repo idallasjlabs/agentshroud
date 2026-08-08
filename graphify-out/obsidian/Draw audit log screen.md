@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "rationale"
-community: "Module Group 164"
-location: "L294"
+community: "src/interfaces"
+location: "L293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_164
+  - community/src/interfaces
 ---
 
 # Draw audit log screen
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.draw_log()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_164
+#graphify/rationale #graphify/EXTRACTED #community/src/interfaces

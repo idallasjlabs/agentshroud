@@ -1,17 +1,17 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.svg"
-type: "image"
-community: "Module Group 421"
+type: "concept"
+community: "docs/diagrams"
 tags:
-  - graphify/image
-  - graphify/EXPLICIT
-  - community/Module_Group_421
+  - graphify/concept
+  - graphify/EXTRACTED
+  - community/docs/diagrams
 ---
 
-# LLM Inference (OpenAI GPT-4o or Anthropic Claude)
+# LLM inference (OpenAI GPT-4o or Anthropic Claude)
 
 ## Connections
-- [[Agent Decides Next Action]] - `flows_to` [EXPLICIT]
-- [[Main Agent (agentshroud_bot)]] - `calls` [EXPLICIT]
+- [[MCP Inspector (injection scan, PII scan, sensitive op scan)]] - `calls` [EXTRACTED]
+- [[Main agent (agentshroud_bot)]] - `calls` [EXTRACTED]
 
-#graphify/image #graphify/EXPLICIT #community/Module_Group_421
+#graphify/concept #graphify/EXTRACTED #community/docs/diagrams

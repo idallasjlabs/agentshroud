@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "code"
-community: "Module Group 220"
+community: "Gateway Test Suite"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_220
+  - community/Gateway_Test_Suite
 ---
 
 # test_detect_openai_insufficient_quota()
@@ -15,4 +15,4 @@ tags:
 - [[is_quota_exhausted()]] - `calls` [EXTRACTED]
 - [[test_llm_quota_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_220
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

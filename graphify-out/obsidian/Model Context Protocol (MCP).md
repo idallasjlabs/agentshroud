@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "concept"
-community: "Module Group 343"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_343
+  - community/docs/vault
 ---
 
 # Model Context Protocol (MCP)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCPProxy_2]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_343
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

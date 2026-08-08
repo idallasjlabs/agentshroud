@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "Module Group 90"
-location: "L65"
+community: "Egress & RBAC Security Core"
+location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_90
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Test basic message tracking functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_basic_message_tracking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_90
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

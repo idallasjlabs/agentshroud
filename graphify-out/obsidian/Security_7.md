@@ -1,0 +1,17 @@
+---
+source_file: "skills/custom/browser-fetch/SKILL.md"
+type: "document"
+community: "Custom Skills"
+location: "L19"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Custom_Skills
+---
+
+# Security
+
+## Connections
+- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Custom_Skills

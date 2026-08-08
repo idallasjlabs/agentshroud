@@ -1,20 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Module Group 314"
-location: "gateway/proxy/llm_proxy.py"
+community: "LLM Proxy Resource Guard"
+location: "L51"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_314
+  - graphify/INFERRED
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # LLMProxy
 
 ## Connections
-- [[Cloud-to-Local LLM Quota Failover]] - `implements` [EXTRACTED]
-- [[PIISanitizer_4]] - `uses` [EXTRACTED]
-- [[llm_proxy.py — LLMProxy Multi-Provider]] - `defines` [EXTRACTED]
-- [[pipeline.py — SecurityPipeline]] - `depends_on` [EXTRACTED]
+- [[LLMProxy]] - `uses` [INFERRED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
+- [[VRAMHeadroomError]] - `uses` [INFERRED]
+- [[_make_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_314
+#graphify/code #graphify/INFERRED #community/LLM_Proxy_Resource_Guard

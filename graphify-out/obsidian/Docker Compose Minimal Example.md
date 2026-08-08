@@ -1,13 +1,13 @@
 ---
 source_file: "examples/docker-compose.minimal.yml"
 type: "document"
-community: "Module Group 783"
+community: "examples/docker-compose.minimal.yml"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_783
+  - community/examples/docker-composeminimalyml
 ---
 
 # Docker Compose Minimal Example
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_783
+#graphify/document #graphify/EXTRACTED #community/examples/docker-composeminimalyml

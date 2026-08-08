@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "Module Group 109"
+community: "Gateway Test Suite"
 location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_109
+  - community/Gateway_Test_Suite
 ---
 
 # TestSlackSocketClient
@@ -21,4 +21,4 @@ tags:
 - [[Unit tests for SlackSocketClient.]] - `rationale_for` [EXTRACTED]
 - [[test_slack_socket_client.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_109
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

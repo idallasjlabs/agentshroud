@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "concept"
-community: "Module Group 107"
+community: "skills/openclaw"
 location: "line 32"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_107
+  - community/skills/openclaw
 ---
 
 # macOS UI Automation (Peekaboo)
 
 ## Connections
-- [[peekaboo Skill]] - `enables` [EXTRACTED]
+- [[Peekaboo]] - `enables` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_107
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

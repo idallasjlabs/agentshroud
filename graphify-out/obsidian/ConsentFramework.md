@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Module Group 102"
+community: "Egress & RBAC Security Core"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_102
+  - community/Egress__RBAC_Security_Core
 ---
 
 # ConsentFramework
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_52]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_61]] - `method` [EXTRACTED]
 - [[.add_to_blacklist()]] - `method` [EXTRACTED]
 - [[.add_to_whitelist()]] - `method` [EXTRACTED]
 - [[.get_blacklist()]] - `method` [EXTRACTED]
@@ -23,7 +23,8 @@ tags:
 - [[.validate_config()]] - `method` [EXTRACTED]
 - [[.validate_configs()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -38,4 +39,4 @@ tags:
 - [[framework()]] - `calls` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_102
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

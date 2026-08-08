@@ -1,11 +1,11 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "Module Group 226"
+community: "branding/colors"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_226
+  - community/branding/colors
 ---
 
 # Branding Assets Index
@@ -17,4 +17,4 @@ tags:
 - [[Brand Quick Reference]] - `references` [EXTRACTED]
 - [[Branding README  Overview]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_226
+#graphify/document #graphify/EXTRACTED #community/branding/colors

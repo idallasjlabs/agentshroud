@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Module Group 132"
+community: "Approval Queue Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_132
+  - community/Approval_Queue_Tests
 ---
 
 # test_security_fixes.py
@@ -26,8 +26,11 @@ tags:
 - [[TestVersionConsistency]] - `contains` [EXTRACTED]
 - [[TestWebSocketHandshakeAuth]] - `contains` [EXTRACTED]
 - [[_create_ws_token()]] - `imports` [EXTRACTED]
-- [[client()_10]] - `contains` [EXTRACTED]
+- [[client()_13]] - `contains` [EXTRACTED]
+- [[gatewayingest_apimain.py (app, app_state, lifespan)]] - `references` [EXTRACTED]
+- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
+- [[gatewayingest_apiroutesdashboard.py (_create_ws_token)]] - `references` [EXTRACTED]
 - [[sync_client()_1]] - `contains` [EXTRACTED]
 - [[telegram_api_proxy()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_132
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

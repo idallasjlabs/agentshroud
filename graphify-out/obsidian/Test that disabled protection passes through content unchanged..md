@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Module Group 125"
-location: "L51"
+community: "Gateway Test Suite"
+location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_125
+  - community/Gateway_Test_Suite
 ---
 
 # Test that disabled protection passes through content unchanged.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_disabled_protection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_125
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

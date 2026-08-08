@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "Module Group 328"
+community: "Gateway Proxy Layer"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_328
+  - community/Gateway_Proxy_Layer
 ---
 
 # _is_stale_edit_error()
@@ -19,4 +19,4 @@ tags:
 - [[test_egress_callback_stale.py]] - `imports` [EXTRACTED]
 - [[test_stale_detectors()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_328
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

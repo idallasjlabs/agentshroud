@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "Module Group 454"
+community: "Security Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_454
+  - community/Security_Docs
 ---
 
 # security-supply-chain.md (dependency security analysis)
@@ -14,4 +14,4 @@ tags:
 - [[Supply Chain Verdict PythonFastAPISQLiteTrivyClamAVFalco Grade A; Wazuh Grade B+ (known CVE)]] - `concludes` [EXTRACTED]
 - [[Wazuh CVE-2025-24016 (CVSS 9.9 RCE via deserialization) — Medium risk, patched in v4.9.1]] - `documents` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_454
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

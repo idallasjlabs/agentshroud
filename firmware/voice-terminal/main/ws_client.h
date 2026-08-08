@@ -35,8 +35,12 @@ typedef enum {
 /** Callback types registered by the caller. */
 typedef void (*ws_state_cb_t)(ws_vg_state_t state, void *user_ctx);
 typedef void (*ws_pcm_cb_t)(const uint8_t *pcm, size_t len, void *user_ctx);
-/** Server control frame {"cmd":"<name>","value":N} (e.g. spoken volume). */
-typedef void (*ws_ctrl_cb_t)(const char *cmd, int value, void *user_ctx);
+/** Server control frame {"cmd":"<name>","value":N|"str"} (e.g. spoken volume
+ *  — numeric value, str_value NULL; spoken model/agent switch — str_value
+ *  set, value 0). str_value points into a JSON parse buffer that is freed
+ *  immediately after this callback returns — copy it if the callback needs
+ *  it beyond the call. */
+typedef void (*ws_ctrl_cb_t)(const char *cmd, int value, const char *str_value, void *user_ctx);
 
 /**
  * @brief Initialise the WebSocket client and connect to the Voice Gateway.

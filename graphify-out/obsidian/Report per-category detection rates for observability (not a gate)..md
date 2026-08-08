@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "Module Group 464"
-location: "L413"
+community: "Gateway Test Suite"
+location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_464
+  - community/Gateway_Test_Suite
 ---
 
 # Report per-category detection rates for observability (not a gate).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_detection_breakdown_by_category()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_464
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

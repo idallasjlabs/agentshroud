@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Webhook Receiver"
-location: "L244"
+community: "Slack API Proxy"
+location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Webhook_Receiver
+  - community/Slack_API_Proxy
 ---
 
 # Create a mock security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.mock_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Webhook_Receiver
+#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy

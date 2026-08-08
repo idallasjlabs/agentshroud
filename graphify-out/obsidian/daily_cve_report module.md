@@ -1,0 +1,16 @@
+---
+source_file: "gateway/security/daily_cve_report.py"
+type: "code"
+community: "Gateway Test Suite"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Gateway_Test_Suite
+---
+
+# daily_cve_report module
+
+## Connections
+- [[test_daily_cve_report.py]] - `implements` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

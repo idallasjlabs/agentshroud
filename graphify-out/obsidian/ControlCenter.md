@@ -1,18 +1,18 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "Module Group 164"
-location: "L66"
+community: "src/interfaces"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_164
+  - community/src/interfaces
 ---
 
 # ControlCenter
 
 ## Connections
-- [[.__init__()_150]] - `method` [EXTRACTED]
+- [[.__init__()_186]] - `method` [EXTRACTED]
 - [[.clear_screen()]] - `method` [EXTRACTED]
 - [[.draw_approvals()]] - `method` [EXTRACTED]
 - [[.draw_box()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[.get_key()_1]] - `method` [EXTRACTED]
 - [[.make_api_request()]] - `method` [EXTRACTED]
 - [[.run()_6]] - `method` [EXTRACTED]
-- [[main()_15]] - `calls` [EXTRACTED]
+- [[main()_27]] - `calls` [EXTRACTED]
 - [[text_control_center.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_164
+#graphify/code #graphify/EXTRACTED #community/src/interfaces

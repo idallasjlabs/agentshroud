@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "Module Group 161"
+community: "Gateway Test Suite"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_161
+  - community/Gateway_Test_Suite
 ---
 
 # TestNewPatternsV080
@@ -45,4 +45,4 @@ tags:
 - [[Unit tests for the 20 patterns added in v0.8.0 (total 43).]] - `rationale_for` [EXTRACTED]
 - [[test_prompt_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_161
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

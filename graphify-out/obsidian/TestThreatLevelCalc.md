@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCP Inspector & Audit"
-location: "L1211"
+community: "Gateway Test Suite"
+location: "L1278"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Inspector__Audit
+  - community/Gateway_Test_Suite
 ---
 
 # TestThreatLevelCalc
@@ -30,4 +30,4 @@ tags:
 - [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Inspector__Audit
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Module Group 106"
+community: "gateway/cli"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_106
+  - community/gateway/cli
 ---
 
 # _patch_urlopen()
@@ -19,9 +19,9 @@ tags:
 - [[.test_http_error_with_non_json_body_returns_error_dict()]] - `calls` [EXTRACTED]
 - [[.test_post_serializes_body()]] - `calls` [EXTRACTED]
 - [[.test_put_and_delete_methods()]] - `calls` [EXTRACTED]
-- [[Exception_2]] - `references` [EXTRACTED]
+- [[Exception_3]] - `references` [EXTRACTED]
 - [[Patch gateway.cli.client.urlopen; return list of captured Request objects.]] - `rationale_for` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 - [[test_convenience_methods_hit_expected_endpoints()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_106
+#graphify/code #graphify/EXTRACTED #community/gateway/cli

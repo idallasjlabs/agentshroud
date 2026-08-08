@@ -1,17 +1,16 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.png"
 type: "image"
-community: "Module Group 347"
+community: "docs/diagrams"
 tags:
   - graphify/image
-  - graphify/EXPLICIT
-  - community/Module_Group_347
+  - graphify/INFERRED
+  - community/docs/diagrams
 ---
 
 # Diagram 10: Data Dictionary (PNG)
 
 ## Connections
-- [[AgentShroud Data Assets (root)]] - `contains` [EXPLICIT]
-- [[Diagram 10 Data Dictionary (SVG)]] - `conceptually_related_to` [EXPLICIT]
+- [[Diagram 08 Entity Relationship Diagram]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/EXPLICIT #community/Module_Group_347
+#graphify/image #graphify/INFERRED #community/docs/diagrams

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "Module Group 150"
+community: "Web Control Center"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_150
+  - community/Web_Control_Center
 ---
 
 # management.py
@@ -15,6 +15,7 @@ tags:
 - [[EgressAllowlistResponse]] - `contains` [EXTRACTED]
 - [[EgressAllowlistUpdate]] - `contains` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
+- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[KeyRotationConfig_1]] - `imports` [EXTRACTED]
 - [[KeyRotationManager]] - `imports` [EXTRACTED]
 - [[api.py]] - `imports_from` [EXTRACTED]
@@ -32,7 +33,7 @@ tags:
 - [[killswitch()_1]] - `contains` [EXTRACTED]
 - [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[modules()]] - `contains` [EXTRACTED]
-- [[require_auth()]] - `imports` [EXTRACTED]
+- [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[rotate_credential()]] - `contains` [EXTRACTED]
 - [[security_overview()]] - `contains` [EXTRACTED]
 - [[set_egress_config()]] - `imports` [EXTRACTED]
@@ -40,4 +41,4 @@ tags:
 - [[update_egress_allowlist()]] - `contains` [EXTRACTED]
 - [[wazuh_dashboard()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_150
+#graphify/code #graphify/EXTRACTED #community/Web_Control_Center

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Module Group 531"
+community: "Gateway Test Suite"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_531
+  - community/Gateway_Test_Suite
 ---
 
 # TestIsFresh
@@ -18,4 +18,4 @@ tags:
 - [[.test_stat_error_returns_false()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_531
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

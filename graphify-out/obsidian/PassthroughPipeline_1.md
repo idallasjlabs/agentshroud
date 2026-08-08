@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Proxy Inbound Tests"
+community: "Telegram Proxy Test Suite"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound_Tests
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # PassthroughPipeline
 
 ## Connections
 - [[._make_proxy()]] - `calls` [EXTRACTED]
-- [[.process_inbound()_7]] - `method` [EXTRACTED]
+- [[.process_inbound()_9]] - `method` [EXTRACTED]
 - [[.test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - `calls` [EXTRACTED]
 - [[.test_blocked_command_is_quarantined()]] - `calls` [EXTRACTED]
 - [[.test_blocked_command_uppercase_is_quarantined()]] - `calls` [EXTRACTED]
@@ -219,4 +219,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

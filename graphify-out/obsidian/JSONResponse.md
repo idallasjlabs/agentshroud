@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Router & Correlation"
-location: "L106"
+community: "SOC Collaborator Lifecycle"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router__Correlation
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # JSONResponse
@@ -20,9 +20,10 @@ tags:
 - [[SCLError]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
 - [[WSEventType]] - `uses` [INFERRED]
 - [[_confirmation_required()]] - `calls` [EXTRACTED]
+- [[_process_inbound()]] - `calls` [INFERRED]
 - [[auth_login()]] - `references` [EXTRACTED]
 - [[cors_middleware()]] - `calls` [EXTRACTED]
 - [[dashboard_ws_token()]] - `calls` [INFERRED]
@@ -55,4 +56,4 @@ tags:
 - [[upgrade_gateway()]] - `references` [EXTRACTED]
 - [[upgrade_hermes()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router__Correlation
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

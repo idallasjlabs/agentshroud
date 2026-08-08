@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Environment Guard & Leak Detection"
-location: "L955"
+community: "PII Config & Test Fixtures"
+location: "L951"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Environment_Guard__Leak_Detection
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestLoggingSecurity
@@ -58,7 +58,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test log sanitization and information leakage prevention.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Environment_Guard__Leak_Detection
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

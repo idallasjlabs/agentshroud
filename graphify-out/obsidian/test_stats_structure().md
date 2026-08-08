@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Module Group 65"
+community: "Gateway Test Suite"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_65
+  - community/Gateway_Test_Suite
 ---
 
 # test_stats_structure()
@@ -15,4 +15,4 @@ tags:
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_65
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

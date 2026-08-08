@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Module Group 438"
+community: "Tool Chain Analyzer"
 location: "L473"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_438
+  - community/Tool_Chain_Analyzer
 ---
 
 # Calculate risk score for a detected chain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._calculate_risk_score()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_438
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain_Analyzer

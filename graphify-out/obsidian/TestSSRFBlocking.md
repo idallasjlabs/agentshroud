@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Module Group 340"
+community: "Gateway Test Suite"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_340
+  - community/Gateway_Test_Suite
 ---
 
 # TestSSRFBlocking
@@ -31,4 +31,4 @@ tags:
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_340
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

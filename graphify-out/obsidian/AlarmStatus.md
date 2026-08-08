@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "URL Analyzer & Content Scanner"
+community: "SOC Dashboard"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URL_Analyzer__Content_Scanner
+  - community/SOC_Dashboard
 ---
 
 # AlarmStatus
@@ -16,4 +16,4 @@ tags:
 - [[models.py_1]] - `contains` [EXTRACTED]
 - [[str]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URL_Analyzer__Content_Scanner
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

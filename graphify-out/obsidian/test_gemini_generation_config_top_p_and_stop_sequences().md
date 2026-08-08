@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gemini_openai_translator.py"
 type: "code"
-community: "Module Group 178"
-location: "L80"
+community: "Gateway Test Suite"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_178
+  - community/Gateway_Test_Suite
 ---
 
 # test_gemini_generation_config_top_p_and_stop_sequences()
@@ -15,4 +15,4 @@ tags:
 - [[gemini_to_openai_request()]] - `calls` [EXTRACTED]
 - [[test_gemini_openai_translator.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_178
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

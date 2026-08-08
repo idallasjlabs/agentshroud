@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RECOVERY_PLAN.md"
 type: "rationale"
-community: "Module Group 425"
+community: "Planning Docs"
 location: "line 63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_425
+  - community/Planning_Docs
 ---
 
 # Phase 1: XML Function Call Exposure Security Fix
@@ -16,4 +16,4 @@ tags:
 - [[Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
 - [[filter_xml_blocks() Function]] - `defines` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_425
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

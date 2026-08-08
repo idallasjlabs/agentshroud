@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "concept"
-community: "Module Group 105"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_105
+  - community/docs/vault
 ---
 
 # Crash Recovery Options (5 levels)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Crash Recovery Runbook]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_105
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "SOC Router & Correlation"
+community: "SOC Collaborator Lifecycle"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router__Correlation
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # build_correlation_summary()
 
 ## Connections
 - [[CorrelationSummary]] - `references` [EXTRACTED]
+- [[Counter]] - `calls` [INFERRED]
 - [[_build_egress_live_snapshot()]] - `calls` [EXTRACTED]
 - [[dashboard.py]] - `imports` [EXTRACTED]
 - [[get_risk_score()]] - `calls` [EXTRACTED]
@@ -25,4 +26,4 @@ tags:
 - [[soc_correlation.py]] - `contains` [EXTRACTED]
 - [[soc_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router__Correlation
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/op-auth-common.sh"
 type: "code"
-community: "Module Group 587"
+community: "Docker Deploy Scripts"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_587
+  - community/Docker_Deploy_Scripts
 ---
 
 # op_authenticate()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[op-auth-common.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_587
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

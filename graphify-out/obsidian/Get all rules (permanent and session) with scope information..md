@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Module Group 231"
-location: "L619"
+community: "Gateway Security Module"
+location: "L618"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_231
+  - community/Gateway_Security_Module
 ---
 
 # Get all rules (permanent and session) with scope information.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_all_rules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_231
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

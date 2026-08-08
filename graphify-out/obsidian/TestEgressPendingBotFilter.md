@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "SOC Bots & CVE Management"
+community: "Bot CVE Scorecard"
 location: "L227"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Bots__CVE_Management
+  - community/Bot_CVE_Scorecard
 ---
 
 # TestEgressPendingBotFilter
@@ -18,4 +18,4 @@ tags:
 - [[Role_1]] - `uses` [INFERRED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Bots__CVE_Management
+#graphify/code #graphify/EXTRACTED #community/Bot_CVE_Scorecard

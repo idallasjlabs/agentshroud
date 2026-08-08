@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Module Group 457"
+community: "PII Config & Test Fixtures"
 location: "L427"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_457
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Get risk level for a session based on detected attacks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_session_risk_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_457
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

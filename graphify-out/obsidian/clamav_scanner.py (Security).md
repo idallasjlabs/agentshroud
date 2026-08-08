@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "code"
-community: "Module Group 227"
+community: "docs/vault"
 location: "gateway/security/clamav_scanner.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_227
+  - community/docs/vault
 ---
 
 # clamav_scanner.py (Security)
@@ -17,4 +17,4 @@ tags:
 - [[run_clamscan()_1]] - `contains` [EXTRACTED]
 - [[update_virus_db()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_227
+#graphify/code #graphify/EXTRACTED #community/docs/vault

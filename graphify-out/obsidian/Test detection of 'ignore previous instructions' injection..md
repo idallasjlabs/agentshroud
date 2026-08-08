@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "Module Group 76"
-location: "L53"
+community: "Gateway Test Suite"
+location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_76
+  - community/Gateway_Test_Suite
 ---
 
 # Test detection of 'ignore previous instructions' injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_ignore_instructions_injection_high_severity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_76
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

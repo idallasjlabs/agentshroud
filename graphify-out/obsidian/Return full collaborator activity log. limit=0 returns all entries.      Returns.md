@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Router & Correlation"
-location: "L941"
+community: "SOC Collaborator Lifecycle"
+location: "L942"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Router__Correlation
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # Return full collaborator activity log. limit=0 returns all entries.      Returns
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_collaborator_activity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Router__Correlation
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

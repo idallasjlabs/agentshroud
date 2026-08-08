@@ -1,14 +1,19 @@
 ---
-source_file: "gateway/tools/__init__.py"
+source_file: "gateway/ssh_proxy/__init__.py"
 type: "code"
-community: "Module Group 811"
+community: "Approval Queue Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_811
+  - community/Approval_Queue_Tests
 ---
 
 # __init__.py
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_811
+## Connections
+- [[SSHProxy]] - `imports` [EXTRACTED]
+- [[SSHResult]] - `imports` [EXTRACTED]
+- [[proxy.py]] - `re_exports` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

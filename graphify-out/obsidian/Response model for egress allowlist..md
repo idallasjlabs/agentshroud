@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "Module Group 150"
-location: "L929"
+community: "Web Control Center"
+location: "L934"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_150
+  - community/Web_Control_Center
 ---
 
 # Response model for egress allowlist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressAllowlistResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_150
+#graphify/rationale #graphify/EXTRACTED #community/Web_Control_Center

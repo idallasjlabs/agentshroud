@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "Module Group 439"
+community: "Gateway Test Suite"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_439
+  - community/Gateway_Test_Suite
 ---
 
 # _alert()
@@ -19,4 +19,4 @@ tags:
 - [[test_succeeds_after_one_transient_failure()]] - `calls` [EXTRACTED]
 - [[test_succeeds_on_first_attempt()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_439
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

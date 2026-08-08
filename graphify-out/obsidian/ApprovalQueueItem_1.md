@@ -1,20 +1,28 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Approval Queue Core"
-location: "L65"
+community: "Enhanced Approval Queue"
+location: "L215"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Approval_Queue_Core
+  - graphify/INFERRED
+  - community/Enhanced_Approval_Queue
 ---
 
 # ApprovalQueueItem
 
 ## Connections
-- [[.decide()_1]] - `references` [EXTRACTED]
-- [[.get_item()_1]] - `references` [EXTRACTED]
-- [[.get_pending()_1]] - `references` [EXTRACTED]
-- [[.submit()_1]] - `references` [EXTRACTED]
+- [[._notify_telegram()]] - `references` [EXTRACTED]
+- [[.decide()]] - `references` [EXTRACTED]
+- [[.get_item()]] - `references` [EXTRACTED]
+- [[.get_pending()]] - `references` [EXTRACTED]
+- [[.submit()]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[ApprovalStore_1]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig_1]] - `uses` [INFERRED]
+- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Core
+#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue

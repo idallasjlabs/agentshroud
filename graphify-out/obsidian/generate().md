@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "code"
-community: "Module Group 251"
-location: "L333"
+community: "scripts/generate-cve-page.py"
+location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_251
+  - community/scripts/generate-cve-pagepy
 ---
 
 # generate()
@@ -20,4 +20,4 @@ tags:
 - [[_resolve_registries()]] - `calls` [EXTRACTED]
 - [[generate-cve-page.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_251
+#graphify/code #graphify/EXTRACTED #community/scripts/generate-cve-pagepy

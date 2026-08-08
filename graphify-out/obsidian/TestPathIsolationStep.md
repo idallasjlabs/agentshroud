@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Module Group 292"
+community: "Security Module Middleware"
 location: "L625"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_292
+  - graphify/INFERRED
+  - community/Security_Module_Middleware
 ---
 
 # TestPathIsolationStep
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_292
+#graphify/code #graphify/INFERRED #community/Security_Module_Middleware

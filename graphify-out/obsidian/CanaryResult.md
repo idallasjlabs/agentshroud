@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "PII Sanitizer & Resource Guard"
+community: "PII Config & Test Fixtures"
 location: "L41"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/PII_Config__Test_Fixtures
 ---
 
 # CanaryResult
@@ -15,7 +15,7 @@ tags:
 - [[.to_dict()_5]] - `method` [EXTRACTED]
 - [[Result of running the canary system.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[run_canary()]] - `references` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer__Resource_Guard
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Tool ACL & RBAC Config"
-location: "L170"
+community: "Gateway Test Suite"
+location: "L171"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_ACL__RBAC_Config
+  - community/Gateway_Test_Suite
 ---
 
 # Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolACLConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_ACL__RBAC_Config
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

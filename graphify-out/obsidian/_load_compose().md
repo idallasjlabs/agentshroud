@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "code"
-community: "Module Group 144"
+community: "Gateway Test Suite"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_144
+  - community/Gateway_Test_Suite
 ---
 
 # _load_compose()
@@ -18,4 +18,4 @@ tags:
 - [[Load a docker-compose YAML file.]] - `rationale_for` [EXTRACTED]
 - [[test_docker_compose.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_144
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

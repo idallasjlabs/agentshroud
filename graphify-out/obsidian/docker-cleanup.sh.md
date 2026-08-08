@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/docker-cleanup.sh"
 type: "code"
-community: "Module Group 433"
+community: "Docker Deploy Scripts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_433
+  - community/Docker_Deploy_Scripts
 ---
 
 # docker-cleanup.sh
@@ -20,4 +20,4 @@ tags:
 - [[docker-cleanup.sh script]] - `contains` [EXTRACTED]
 - [[usage()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_433
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

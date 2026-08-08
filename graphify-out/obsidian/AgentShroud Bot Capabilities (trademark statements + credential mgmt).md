@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Module Group 226"
+community: "docker/bot-capabilities.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_226
+  - community/docker/bot-capabilitiesmd
 ---
 
 # AgentShroud Bot Capabilities (trademark statements + credential mgmt)
@@ -14,4 +14,4 @@ tags:
 - [[Bot Trademark Statement Rules (Option 123 per surface)]] - `references` [EXTRACTED]
 - [[op-wrapper.sh Credential Gateway Proxy]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_226
+#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd

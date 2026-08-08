@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "CLI & Core Gateway Routes"
-location: "L1608"
+community: "Approval & FastAPI Ingest"
+location: "L1820"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Approval__FastAPI_Ingest
 ---
 
 # wazuh_alerts()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[._path()]] - `calls` [INFERRED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[Return recent Wazuh HIDS alerts with FIM and rootkit summary.]] - `rationale_for` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

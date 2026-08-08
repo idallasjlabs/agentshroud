@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "MCP Inspector & Audit"
-location: "L140"
+community: "Gateway Proxy Layer"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Inspector__Audit
+  - community/Gateway_Proxy_Layer
 ---
 
 # Any
 
 ## Connections
-- [[._redact_pii()]] - `references` [EXTRACTED]
-- [[._scan_value()]] - `references` [EXTRACTED]
-- [[.inspect_tool_call()]] - `references` [EXTRACTED]
-- [[.inspect_tool_result()]] - `references` [EXTRACTED]
+- [[.generate_report()]] - `references` [EXTRACTED]
+- [[.log_tool_call()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Inspector__Audit
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

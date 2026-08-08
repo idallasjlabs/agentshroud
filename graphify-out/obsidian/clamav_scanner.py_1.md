@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/clamav.md"
-type: "concept"
-community: "Module Group 158"
-location: "gateway/security/clamav_scanner.py"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_158
+  - community/docs/vault
 ---
 
-# clamav_scanner.py
+# clamav_scanner.py.md
 
 ## Connections
-- [[ClamAV]] - `implemented_by` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_158
+#graphify/document #graphify/EXTRACTED #community/docs/vault

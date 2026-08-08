@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "code"
-community: "Module Group 188"
+community: "docs/vault"
 location: "gateway/proxy/web_config.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_188
+  - community/docs/vault
 ---
 
 # WebProxyConfig
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[web_config.py (Proxy Layer)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_188
+#graphify/code #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
 type: "code"
-community: "Module Group 268"
+community: "skills/openclaw"
 location: "L20"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_268
+  - community/skills/openclaw
 ---
 
 # package_skill()
@@ -17,8 +17,8 @@ tags:
 - [[.test_rejects_symlink_directory()]] - `calls` [INFERRED]
 - [[.test_rejects_symlink_to_external_file()]] - `calls` [INFERRED]
 - [[Package a skill folder into a .skill file.      Args         skill_path Path t]] - `rationale_for` [EXTRACTED]
-- [[main()_13]] - `calls` [EXTRACTED]
+- [[main()_25]] - `calls` [EXTRACTED]
 - [[package_skill.py]] - `contains` [EXTRACTED]
 - [[validate_skill()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_268
+#graphify/code #graphify/INFERRED #community/skills/openclaw

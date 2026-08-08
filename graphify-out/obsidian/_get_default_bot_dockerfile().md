@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Web API & Dashboard UI"
-location: "L432"
+community: "Competitive Intel Store"
+location: "L472"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_API__Dashboard_UI
+  - community/Competitive_Intel_Store
 ---
 
 # _get_default_bot_dockerfile()
@@ -18,4 +18,4 @@ tags:
 - [[rebuild()]] - `calls` [EXTRACTED]
 - [[upgrade_agentshroud()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_API__Dashboard_UI
+#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store

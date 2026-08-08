@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Module Group 621"
+community: "Setup Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_621
+  - community/Setup_Docs
 ---
 
 # Apple Services Setup (iCloud Mail, CalDAV, CardDAV)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Apple ID — agentshroud.ai@gmail.com]] - `configures` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_621
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

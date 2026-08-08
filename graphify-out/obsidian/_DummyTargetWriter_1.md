@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Module Group 386"
-location: "L86"
+community: "Gateway Test Suite"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_386
+  - community/Gateway_Test_Suite
 ---
 
 # _DummyTargetWriter
 
 ## Connections
-- [[.__init__()_121]] - `method` [EXTRACTED]
-- [[.close()_13]] - `method` [EXTRACTED]
+- [[.__init__()_151]] - `method` [EXTRACTED]
+- [[.close()_15]] - `method` [EXTRACTED]
 - [[.drain()_3]] - `method` [EXTRACTED]
 - [[.write()_3]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[_CloseRaisesTargetWriter]] - `inherits` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_386
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

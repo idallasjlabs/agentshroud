@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Module Group 133"
+community: "Gateway Security Module"
 location: "L448"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_133
+  - community/Gateway_Security_Module
 ---
 
 # Determine if a message should be blocked.          Returns:             Tuple of
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.should_block_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_133
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

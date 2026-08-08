@@ -101,7 +101,8 @@ static void _on_event(void *handler_args, esp_event_base_t base,
             if (cJSON_IsString(cmd_item)) {
                 cJSON *val_item = cJSON_GetObjectItem(root, "value");
                 int val = cJSON_IsNumber(val_item) ? (int)val_item->valuedouble : 0;
-                if (c->ctrl_cb) c->ctrl_cb(cmd_item->valuestring, val, c->user_ctx);
+                const char *str_val = cJSON_IsString(val_item) ? val_item->valuestring : NULL;
+                if (c->ctrl_cb) c->ctrl_cb(cmd_item->valuestring, val, str_val, c->user_ctx);
                 cJSON_Delete(root);
                 break;
             }

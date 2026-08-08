@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "Module Group 91"
-location: "L52"
+community: "Gateway Test Suite"
+location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_91
+  - community/Gateway_Test_Suite
 ---
 
 # Test that different sessions get different canaries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_different_sessions_get_different_canaries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_91
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

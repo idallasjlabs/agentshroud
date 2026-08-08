@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "Module Group 163"
-location: "L66"
+community: "Gateway Test Suite"
+location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_163
+  - community/Gateway_Test_Suite
 ---
 
 # Path
 
 ## Connections
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[_build_image_targets()]] - `calls` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_163
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

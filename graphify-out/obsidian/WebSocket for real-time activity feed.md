@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "CLI & Core Gateway Routes"
+community: "Gateway Ingest API"
 location: "L562"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Gateway_Ingest_API
 ---
 
 # WebSocket for real-time activity feed
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[activity_websocket()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Ingest_API

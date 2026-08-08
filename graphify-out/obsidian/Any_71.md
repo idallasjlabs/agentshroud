@@ -1,0 +1,19 @@
+---
+source_file: "gateway/web/dashboard_endpoints.py"
+type: "code"
+community: "Web Control Center"
+location: "L67"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Web_Control_Center
+---
+
+# Any
+
+## Connections
+- [[.recent()]] - `references` [EXTRACTED]
+- [[.tail()]] - `references` [EXTRACTED]
+- [[_check_host()]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Web_Control_Center

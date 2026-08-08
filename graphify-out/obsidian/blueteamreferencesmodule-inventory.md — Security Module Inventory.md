@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/skills/custom/agentshroud-blueteam/references/module-inventory.md"
+source_file: "skills/custom/agentshroud-blueteam/references/module-inventory.md"
 type: "document"
-community: "Module Group 173"
+community: "Custom Skills"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_173
+  - community/Custom_Skills
 ---
 
 # blueteam/references/module-inventory.md — Security Module Inventory
@@ -15,4 +15,4 @@ tags:
 - [[agentshroud-blueteam SKILL.md — Blue Team Auditor Skill]] - `references` [EXTRACTED]
 - [[redteamreferencesmodule-inventory.md — Security Module Inventory (Red Team Copy)]] - `mirrors` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_173
+#graphify/document #graphify/EXTRACTED #community/Custom_Skills

@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/gateway/ingest_api/static/chat.html"
+source_file: "gateway/ingest_api/static/chat.html"
 type: "concept"
-community: "Module Group 499"
+community: "gateway/requirements.txt"
 location: "lines 339-340"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_499
+  - community/gateway/requirementstxt
 ---
 
 # Concept: Secure Chat Interface (PII Protected, Audit Logged)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[chat.html — Secure Chat Interface]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_499
+#graphify/concept #graphify/EXTRACTED #community/gateway/requirementstxt

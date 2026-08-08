@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/verify-security.sh"
 type: "code"
-community: "Module Group 521"
+community: "Docker Deploy Scripts"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_521
+  - community/Docker_Deploy_Scripts
 ---
 
 # check_pass()
@@ -15,4 +15,4 @@ tags:
 - [[verify-security.sh]] - `defines` [EXTRACTED]
 - [[verify-security.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_521
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

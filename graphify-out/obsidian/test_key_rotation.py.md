@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "Module Group 93"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_93
+  - community/Gateway_Test_Suite
 ---
 
 # test_key_rotation.py
@@ -24,9 +24,9 @@ tags:
 - [[TestKeyRotationConfig]] - `contains` [EXTRACTED]
 - [[TestKeyRotationManager]] - `contains` [EXTRACTED]
 - [[TestKeyRotationWorkflow]] - `contains` [EXTRACTED]
-- [[require_auth()]] - `imports` [EXTRACTED]
+- [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[test_credentials_health_endpoint()]] - `contains` [EXTRACTED]
 - [[test_credentials_status_endpoint()]] - `contains` [EXTRACTED]
 - [[test_rotate_credential_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_93
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Subagent Monitor"
-location: "L518"
+community: "PII Config & Test Fixtures"
+location: "L512"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Subagent_Monitor
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Test trust boundaries and privilege escalation prevention.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPrivilegeEscalation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Subagent_Monitor
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

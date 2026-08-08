@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Module Group 69"
+community: "Telegram Inbound Tests"
 location: "L7903"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_69
+  - community/Telegram_Inbound_Tests
 ---
 
 # TestProgressiveLockdownUX
@@ -38,4 +38,4 @@ tags:
 - [[Tests for lockdown UX unlock fix, collaborator notifications, locked, immunit]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_69
+#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests

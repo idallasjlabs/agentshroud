@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Module Group 200"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_200
+  - community/Gateway_Security_Module
 ---
 
 # egress_approval.py
@@ -19,8 +19,8 @@ tags:
 - [[EgressRule]] - `contains` [EXTRACTED]
 - [[EgressScope]] - `contains` [EXTRACTED]
 - [[Enum]] - `imports_from` [EXTRACTED]
-- [[RiskLevel]] - `contains` [EXTRACTED]
+- [[RiskLevel_2]] - `contains` [EXTRACTED]
 - [[egress_config.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_200
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

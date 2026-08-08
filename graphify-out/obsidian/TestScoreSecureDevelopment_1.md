@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Module Group 294"
-location: "L503"
+community: "Gateway Test Suite"
+location: "L502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_294
+  - community/Gateway_Test_Suite
 ---
 
 # TestScoreSecureDevelopment
@@ -16,4 +16,4 @@ tags:
 - [[.test_one_baseline_no_configs()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_294
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

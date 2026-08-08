@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "RBAC Configuration"
-location: "L187"
+community: "Gateway Security Module"
+location: "L73"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/RBAC_Configuration
+  - graphify/EXTRACTED
+  - community/Gateway_Security_Module
 ---
 
 # Any
 
 ## Connections
-- [[.check_permission()]] - `references` [EXTRACTED]
-- [[.get_user_permissions_summary()]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[.__init__()_100]] - `references` [EXTRACTED]
+- [[._compile_patterns()_1]] - `references` [EXTRACTED]
+- [[.get_stats()_17]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Configuration
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

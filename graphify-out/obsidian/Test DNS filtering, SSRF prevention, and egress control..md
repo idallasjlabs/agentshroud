@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Module Group 110"
-location: "L608"
+community: "PII Config & Test Fixtures"
+location: "L604"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_110
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Test DNS filtering, SSRF prevention, and egress control.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestNetworkSecurity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_110
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

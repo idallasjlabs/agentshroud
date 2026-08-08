@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "Module Group 91"
-location: "L36"
+community: "Gateway Test Suite"
+location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_91
+  - community/Gateway_Test_Suite
 ---
 
 # Test that unique canaries are generated per session.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_canary_generation_per_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_91
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

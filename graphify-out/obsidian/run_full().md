@@ -1,20 +1,20 @@
 ---
 source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "Module Group 380"
+community: "scripts/verify-proxy.sh"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_380
+  - community/scripts/verify-proxysh
 ---
 
 # run_full()
 
 ## Connections
-- [[fail()_4]] - `calls` [EXTRACTED]
+- [[fail()_5]] - `calls` [EXTRACTED]
 - [[info()_2]] - `calls` [EXTRACTED]
-- [[pass()_2]] - `calls` [EXTRACTED]
+- [[pass()_3]] - `calls` [EXTRACTED]
 - [[run_bypass()]] - `calls` [EXTRACTED]
 - [[run_canary()_1]] - `calls` [EXTRACTED]
 - [[run_chain()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[verify-proxy.sh]] - `defines` [EXTRACTED]
 - [[verify-proxy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_380
+#graphify/code #graphify/EXTRACTED #community/scripts/verify-proxysh

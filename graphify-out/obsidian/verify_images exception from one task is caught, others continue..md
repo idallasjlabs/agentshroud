@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_image_verifier.py"
 type: "rationale"
-community: "Module Group 253"
+community: "Gateway Test Suite"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_253
+  - community/Gateway_Test_Suite
 ---
 
 # verify_images: exception from one task is caught, others continue.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_verify_images_exception_handled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_253
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

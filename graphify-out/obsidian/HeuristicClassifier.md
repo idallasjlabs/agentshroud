@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "Module Group 197"
+community: "Gateway Test Suite"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_197
+  - community/Gateway_Test_Suite
 ---
 
 # HeuristicClassifier
 
 ## Connections
-- [[.__init__()_67]] - `method` [EXTRACTED]
+- [[.__init__()_82]] - `method` [EXTRACTED]
 - [[._classify_heuristic()]] - `method` [EXTRACTED]
 - [[._classify_ml()]] - `method` [EXTRACTED]
 - [[._compute_unicode_anomaly()]] - `method` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_197
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

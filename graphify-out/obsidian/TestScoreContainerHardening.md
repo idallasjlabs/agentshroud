@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Scanner Integration Tests"
-location: "L704"
+community: "Gateway Test Suite"
+location: "L702"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # TestScoreContainerHardening
@@ -17,4 +17,4 @@ tags:
 - [[.test_four_when_openscap_running_with_failures()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Tests
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

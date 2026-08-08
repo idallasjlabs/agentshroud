@@ -1,25 +1,18 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "Module Group 95"
-location: "L431"
+community: "gateway/cli"
+location: "L391"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_95
+  - community/gateway/cli
 ---
 
 # main()
 
 ## Connections
-- [[._take_screenshot()]] - `calls` [EXTRACTED]
-- [[.click()]] - `calls` [EXTRACTED]
-- [[.close()_16]] - `calls` [EXTRACTED]
-- [[.extract()]] - `calls` [EXTRACTED]
-- [[.fill_field()]] - `calls` [EXTRACTED]
-- [[.navigate()]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser]] - `calls` [EXTRACTED]
-- [[browse.py]] - `contains` [EXTRACTED]
+- [[cli()]] - `calls` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_95
+#graphify/code #graphify/EXTRACTED #community/gateway/cli

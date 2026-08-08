@@ -1,21 +1,16 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
-type: "image"
-community: "Module Group 112"
+type: "concept"
+community: "docs/diagrams"
 tags:
-  - graphify/image
-  - graphify/EXPLICIT
-  - community/Module_Group_112
+  - graphify/concept
+  - graphify/EXTRACTED
+  - community/docs/diagrams
 ---
 
 # Trust Zone 1 — Gateway (Trusted Enforcer)
 
 ## Connections
-- [[Diagram 11 Trust Boundary (PNG)]] - `contains` [EXPLICIT]
-- [[Gateway Container (has service account)]] - `conceptually_related_to` [INFERRED]
-- [[Trust Zone 0 — Owner (Highest Trust)]] - `controls` [EXPLICIT]
-- [[Trust Zone 2 — Bot (Supervised Agent)]] - `controls` [EXPLICIT]
-- [[Trust Zone 3 — External Services (Conditional)]] - `controls` [EXPLICIT]
-- [[Trust Zone 4 — Infrastructure Nodes (SSH-gated)]] - `controls` [EXPLICIT]
+- [[AgentShroud Gateway (holds 1Password service account)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXPLICIT #community/Module_Group_112
+#graphify/concept #graphify/EXTRACTED #community/docs/diagrams

@@ -1,16 +1,16 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "concept"
-community: "Module Group 314"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_314
+  - community/docs/vault
 ---
 
 # Cloud-to-Local LLM Quota Failover
 
 ## Connections
-- [[LLMProxy_2]] - `implements` [EXTRACTED]
+- [[LLMProxy_3]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_314
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "Module Group 331"
+community: "Docker Deploy Scripts"
 location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_331
+  - community/Docker_Deploy_Scripts
 ---
 
 # _telegram_send_photo()
@@ -15,4 +15,4 @@ tags:
 - [[start-agentshroud.sh]] - `defines` [EXTRACTED]
 - [[start-agentshroud.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_331
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

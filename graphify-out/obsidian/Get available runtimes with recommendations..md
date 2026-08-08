@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "rationale"
-community: "Module Group 229"
+community: "Gateway Test Suite"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_229
+  - community/Gateway_Test_Suite
 ---
 
 # Get available runtimes with recommendations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_runtimes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_229
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

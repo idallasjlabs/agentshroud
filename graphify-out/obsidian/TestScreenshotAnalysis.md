@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "Module Group 113"
+community: "Gateway Test Suite"
 location: "L118"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_113
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # TestScreenshotAnalysis
@@ -21,4 +21,4 @@ tags:
 - [[ThreatLevel_1]] - `uses` [INFERRED]
 - [[test_browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_113
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

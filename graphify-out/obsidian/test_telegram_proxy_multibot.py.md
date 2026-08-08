@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "Module Group 127"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_127
+  - community/Gateway_Test_Suite
 ---
 
 # test_telegram_proxy_multibot.py
@@ -20,4 +20,4 @@ tags:
 - [[TestTelegramTokenRegistry]] - `contains` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_127
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

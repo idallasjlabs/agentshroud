@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Tool ACL & RBAC Config"
+community: "Auth & Exception Types"
 location: "L28"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_ACL__RBAC_Config
+  - community/Auth__Exception_Types
 ---
 
 # RBACConfig
@@ -19,4 +19,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[_make_rbac()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_ACL__RBAC_Config
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

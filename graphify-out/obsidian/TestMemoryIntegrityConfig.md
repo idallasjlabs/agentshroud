@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Module Group 143"
-location: "L33"
+community: "Egress & RBAC Security Core"
+location: "L32"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_143
+  - community/Egress__RBAC_Security_Core
 ---
 
 # TestMemoryIntegrityConfig
@@ -26,4 +26,4 @@ tags:
 - [[Test memory integrity configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_143
+#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core

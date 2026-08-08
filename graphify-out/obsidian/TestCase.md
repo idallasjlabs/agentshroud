@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Module Group 268"
+community: "skills/openclaw"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_268
+  - community/skills/openclaw
 ---
 
 # TestCase
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TestPackageSkillSecurity]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_268
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

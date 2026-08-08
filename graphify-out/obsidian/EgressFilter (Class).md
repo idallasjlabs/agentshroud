@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "code"
-community: "Module Group 319"
+community: "docs/vault"
 location: "gateway/security/egress_filter.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_319
+  - community/docs/vault
 ---
 
 # EgressFilter (Class)
 
 ## Connections
-- [[egress_filter.py_1]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_319
+#graphify/code #graphify/EXTRACTED #community/docs/vault

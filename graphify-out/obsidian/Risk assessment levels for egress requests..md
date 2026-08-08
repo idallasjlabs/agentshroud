@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Module Group 200"
-location: "L31"
+community: "Gateway Test Suite"
+location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_200
+  - community/Gateway_Test_Suite
 ---
 
 # Risk assessment levels for egress requests.
 
 ## Connections
-- [[RiskLevel]] - `rationale_for` [EXTRACTED]
+- [[RiskLevel_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_200
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

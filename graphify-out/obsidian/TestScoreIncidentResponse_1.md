@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Module Group 536"
-location: "L520"
+community: "Gateway Test Suite"
+location: "L519"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_536
+  - community/Gateway_Test_Suite
 ---
 
 # TestScoreIncidentResponse
@@ -18,4 +18,4 @@ tags:
 - [[.test_three_with_falco_and_wazuh()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_536
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "Privacy Policy"
+community: "Auth & Exception Types"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Privacy_Policy
+  - community/Auth__Exception_Types
 ---
 
 # privacy_policy.py
@@ -19,4 +19,4 @@ tags:
 - [[ServicePolicy]] - `contains` [EXTRACTED]
 - [[ServicePrivacy]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Privacy_Policy
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

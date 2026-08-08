@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Module Group 108"
+community: "Gateway Security Module"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_108
+  - community/Gateway_Security_Module
 ---
 
 # Validate a credential.          Returns:             tuple: (is_valid, message)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.validate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_108
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

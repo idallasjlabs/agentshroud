@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "Module Group 140"
+community: "Gateway Security Module"
 location: "L259"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_140
+  - community/Gateway_Security_Module
 ---
 
 # Return activity entries sorted newest-first.          Args:             since: U
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_activity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_140
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

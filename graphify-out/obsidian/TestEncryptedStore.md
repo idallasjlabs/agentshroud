@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Module Group 66"
+community: "PII Config & Test Fixtures"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_66
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestEncryptedStore
 
 ## Connections
-- [[.setup_method()_23]] - `method` [EXTRACTED]
+- [[.setup_method()_26]] - `method` [EXTRACTED]
 - [[.test_b64_roundtrip()]] - `method` [EXTRACTED]
 - [[.test_custom_key_id()]] - `method` [EXTRACTED]
 - [[.test_different_encryptions_differ()]] - `method` [EXTRACTED]
@@ -45,7 +45,7 @@ tags:
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_66
+#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

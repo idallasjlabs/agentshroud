@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Module Group 66"
-location: "L47"
+community: "PII Config & Test Fixtures"
+location: "L41"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_66
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestTimingAttacks
@@ -40,7 +40,7 @@ tags:
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test for timing side-channels in security-critical comparisons.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_66
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

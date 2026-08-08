@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_version_routes.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Module Group 236"
-location: "L28"
+community: "Gateway Test Suite"
+location: "L135"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_236
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # client()
 
 ## Connections
-- [[test_version_routes.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_236
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

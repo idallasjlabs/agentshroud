@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/things-mac/SKILL.md"
 type: "document"
-community: "Module Group 107"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_107
+  - community/skills/openclaw
 ---
 
 # things-mac Skill
@@ -14,4 +14,4 @@ tags:
 - [[OpenClaw Skill Ecosystem]] - `part_of` [EXTRACTED]
 - [[things3-cli (Things 3 URL Scheme + DB)]] - `uses` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_107
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

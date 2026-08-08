@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "SSH Proxy & Gateway Config"
-location: "L205"
+community: "Approval Queue Tests"
+location: "L309"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Approval_Queue_Tests
 ---
 
 # Test that SSH disabled returns 503 (Finding #12)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHDisabledEndpoint]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSH_Proxy__Gateway_Config
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Tests

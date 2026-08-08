@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "RBAC Configuration"
+community: "Auth & Exception Types"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # test_rbac.py
@@ -27,4 +27,4 @@ tags:
 - [[TestRBACIntegration]] - `contains` [EXTRACTED]
 - [[TestRBACManager]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Configuration
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

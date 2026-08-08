@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Module Group 80"
-location: "L439"
+community: "PII Config & Test Fixtures"
+location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_80
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Any
 
 ## Connections
-- [[.get_findings_summary()]] - `references` [EXTRACTED]
+- [[.get_leakage_summary()]] - `references` [EXTRACTED]
+- [[.monitor_environment_access()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_80
+#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

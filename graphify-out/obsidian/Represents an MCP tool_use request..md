@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Module Group 78"
+community: "Gateway Test Suite"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_78
+  - community/Gateway_Test_Suite
 ---
 
 # Represents an MCP tool_use request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPToolCall]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_78
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "rationale"
-community: "Module Group 89"
+community: "Gateway Test Suite"
 location: "L139"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_89
+  - community/Gateway_Test_Suite
 ---
 
 # Unclosed <system-reminder> block is removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_filters_unclosed_system_reminder()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_89
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

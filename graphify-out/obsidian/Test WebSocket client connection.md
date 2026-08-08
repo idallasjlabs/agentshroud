@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "Module Group 74"
-location: "L280"
+community: "Gateway Test Suite"
+location: "L281"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_74
+  - community/Gateway_Test_Suite
 ---
 
 # Test WebSocket client connection
 
 ## Connections
 - [[test_websocket_connect()]] - `rationale_for` [EXTRACTED]
+- [[test_websocket_disconnect()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_74
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

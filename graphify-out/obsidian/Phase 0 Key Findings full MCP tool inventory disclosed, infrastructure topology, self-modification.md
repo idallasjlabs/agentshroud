@@ -1,12 +1,12 @@
 ---
 source_file: "docs/redteam/plan.md"
 type: "rationale"
-community: "Module Group 402"
+community: "docs/redteam"
 location: "line 120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_402
+  - community/docs/redteam
 ---
 
 # Phase 0 Key Findings: full MCP tool inventory disclosed, infrastructure topology, self-modification
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Red Team Assessment Plan (Steven Hay, Feb 2026)]] - `reports` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_402
+#graphify/rationale #graphify/EXTRACTED #community/docs/redteam

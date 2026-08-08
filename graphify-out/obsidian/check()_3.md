@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_bot_boot_static.sh"
+source_file: "scripts/smoke.d/test-skills-sync.sh"
 type: "code"
-community: "Module Group 600"
-location: "L27"
+community: "scripts/sync-llm-settings.sh"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_600
+  - community/scripts/sync-llm-settingssh
 ---
 
 # check()
 
 ## Connections
-- [[test_bot_boot_static.sh]] - `defines` [EXTRACTED]
-- [[test_bot_boot_static.sh script]] - `calls` [EXTRACTED]
+- [[test-skills-sync.sh]] - `defines` [EXTRACTED]
+- [[test-skills-sync.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_600
+#graphify/code #graphify/EXTRACTED #community/scripts/sync-llm-settingssh

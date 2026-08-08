@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Agent Routing & Request Models"
-location: "L194"
+community: "Forward Routing & Approval"
+location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agent_Routing__Request_Models
+  - community/Forward_Routing__Approval
 ---
 
 # Downstream agent target
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentTarget]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agent_Routing__Request_Models
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

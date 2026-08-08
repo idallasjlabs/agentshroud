@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "Module Group 159"
-location: "L286"
+community: "Gateway Test Suite"
+location: "L284"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_159
+  - community/Gateway_Test_Suite
 ---
 
 # Persona hijack / DAN-style payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPersonaHijack]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_159
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "Module Group 65"
-location: "L137"
+community: "Gateway Test Suite"
+location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_65
+  - community/Gateway_Test_Suite
 ---
 
 # Stop the CONNECT proxy server.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.stop()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_65
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

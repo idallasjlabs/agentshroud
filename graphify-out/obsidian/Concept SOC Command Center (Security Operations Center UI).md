@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/gateway/soc/templates/soc.html"
+source_file: "gateway/soc/templates/soc.html"
 type: "concept"
-community: "Module Group 173"
+community: "Custom Skills"
 location: "line 24"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_173
+  - community/Custom_Skills
 ---
 
 # Concept: SOC Command Center (Security Operations Center UI)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[soc.html — SOC Command Center UI]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_173
+#graphify/concept #graphify/EXTRACTED #community/Custom_Skills

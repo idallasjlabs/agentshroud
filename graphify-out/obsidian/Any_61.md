@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "SOC Services & Health Status"
-location: "L25"
+community: "Gateway Test Suite"
+location: "L27"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/SOC_Services__Health_Status
+  - graphify/EXTRACTED
+  - community/Gateway_Test_Suite
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_105]] - `references` [EXTRACTED]
-- [[._describe_service()]] - `references` [EXTRACTED]
-- [[._get_engine()]] - `references` [EXTRACTED]
-- [[HealthStatus]] - `uses` [INFERRED]
-- [[ResourceUsage_1]] - `uses` [INFERRED]
-- [[ServiceDescriptor]] - `uses` [INFERRED]
-- [[ServiceStatus]] - `uses` [INFERRED]
-- [[_inspect_via_socket()]] - `references` [EXTRACTED]
+- [[generate_summary()_2]] - `references` [EXTRACTED]
+- [[parse_trivy_output()]] - `references` [EXTRACTED]
+- [[run_trivy_scan()_1]] - `references` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Services__Health_Status
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

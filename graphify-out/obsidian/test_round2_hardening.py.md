@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Environment Guard & Leak Detection"
+community: "LLM Proxy Resource Guard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # test_round2_hardening.py
@@ -30,4 +30,4 @@ tags:
 - [[Tests for Round 2 hardening — 9 fixes.]] - `rationale_for` [EXTRACTED]
 - [[scan_repository()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

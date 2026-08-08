@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Tool ACL & RBAC Config"
+community: "Auth & Exception Types"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_ACL__RBAC_Config
+  - community/Auth__Exception_Types
 ---
 
 # Get all users with a specific role.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_users_by_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_ACL__RBAC_Config
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

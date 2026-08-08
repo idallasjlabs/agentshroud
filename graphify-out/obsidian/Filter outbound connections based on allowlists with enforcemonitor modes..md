@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Module Group 71"
+community: "Gateway Security Module"
 location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_71
+  - community/Gateway_Security_Module
 ---
 
 # Filter outbound connections based on allowlists with enforce/monitor modes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressFilter_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_71
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

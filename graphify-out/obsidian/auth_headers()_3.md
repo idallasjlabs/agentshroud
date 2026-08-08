@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "SSH Proxy & Gateway Config"
+community: "Approval Queue Tests"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Approval_Queue_Tests
 ---
 
 # auth_headers()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSH_Proxy__Gateway_Config
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

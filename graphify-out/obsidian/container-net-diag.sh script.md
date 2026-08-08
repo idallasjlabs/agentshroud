@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "Module Group 378"
+community: "Docker Deploy Scripts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_378
+  - community/Docker_Deploy_Scripts
 ---
 
 # container-net-diag.sh script
@@ -22,4 +22,4 @@ tags:
 - [[tcp_test()]] - `calls` [EXTRACTED]
 - [[warn()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_378
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

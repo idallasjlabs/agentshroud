@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "Module Group 113"
+community: "PII Config & Test Fixtures"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_113
+  - community/PII_Config__Test_Fixtures
 ---
 
 # ThreatAssessment
@@ -17,7 +17,7 @@ tags:
 - [[.test_hook_can_flag_threat()]] - `calls` [EXTRACTED]
 - [[.test_screenshot_hook_registered()]] - `calls` [EXTRACTED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCredentialProtection]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[browser_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_113
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

@@ -1,30 +1,30 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Module Group 65"
-location: "L75"
+community: "Gateway Test Suite"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_65
+  - community/Gateway_Test_Suite
 ---
 
 # HTTPConnectProxy
 
 ## Connections
-- [[.__init__()_15]] - `method` [EXTRACTED]
+- [[.__init__()_24]] - `method` [EXTRACTED]
 - [[._agent_id_for_peer()]] - `method` [EXTRACTED]
 - [[._clamav_scan_bytes()]] - `method` [EXTRACTED]
 - [[._handle_client()]] - `method` [EXTRACTED]
 - [[._process_connect()]] - `method` [EXTRACTED]
 - [[._relay()]] - `method` [EXTRACTED]
 - [[._relay_and_scan()]] - `method` [EXTRACTED]
-- [[.get_stats()_3]] - `method` [EXTRACTED]
+- [[.get_stats()_4]] - `method` [EXTRACTED]
 - [[.start()]] - `method` [EXTRACTED]
 - [[.stop()_1]] - `method` [EXTRACTED]
 - [[Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
-- [[StreamReader_1]] - `uses` [INFERRED]
+- [[StreamReader_2]] - `uses` [INFERRED]
 - [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[_CloseRaisesTargetWriter]] - `uses` [INFERRED]
@@ -37,17 +37,21 @@ tags:
 - [[_SocketTransportWriter]] - `uses` [INFERRED]
 - [[_TimeoutReader]] - `uses` [INFERRED]
 - [[_allowlist_proxy()]] - `calls` [EXTRACTED]
+- [[canvas_proxy_app()]] - `conceptually_related_to` [INFERRED]
 - [[http_proxy.py]] - `contains` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_agent_id_for_peer_cached_after_first_lookup()]] - `calls` [EXTRACTED]
+- [[test_agent_id_for_peer_forward_dns_hit()]] - `calls` [EXTRACTED]
+- [[test_agent_id_for_peer_forward_dns_no_ip_match()]] - `calls` [EXTRACTED]
 - [[test_agent_id_for_peer_known_ip()]] - `calls` [EXTRACTED]
 - [[test_agent_id_for_peer_lazy_rdns_error()]] - `calls` [EXTRACTED]
 - [[test_agent_id_for_peer_lazy_rdns_hit()]] - `calls` [EXTRACTED]
 - [[test_agent_id_for_peer_lazy_rdns_miss()]] - `calls` [EXTRACTED]
 - [[test_agent_id_for_peer_none_peer()]] - `calls` [EXTRACTED]
+- [[test_agent_id_for_peer_rdns_miss_forward_dns_hit()]] - `calls` [EXTRACTED]
 - [[test_agent_id_for_peer_unknown_no_hostnames()]] - `calls` [EXTRACTED]
 - [[test_blocked_domain_is_tracked_in_recent()]] - `calls` [EXTRACTED]
 - [[test_bypass_logging_failure_does_not_block_tunnel()]] - `calls` [EXTRACTED]
@@ -56,6 +60,7 @@ tags:
 - [[test_clamav_scan_infected_records_stats()]] - `calls` [EXTRACTED]
 - [[test_clamav_scan_unavailable_degrades_silently()]] - `calls` [EXTRACTED]
 - [[test_clamav_scan_unlink_failure_swallowed()]] - `calls` [EXTRACTED]
+- [[test_clamav_scans_use_dedicated_single_thread_executor()]] - `calls` [EXTRACTED]
 - [[test_connect_blocked_domain_returns_403()]] - `calls` [EXTRACTED]
 - [[test_connect_denied_by_egress_filter_returns_403()]] - `calls` [EXTRACTED]
 - [[test_connect_system_bypass_domain_skips_policy_checks()]] - `calls` [EXTRACTED]
@@ -79,9 +84,11 @@ tags:
 - [[test_proxy_created_with_egress_filter()]] - `calls` [EXTRACTED]
 - [[test_relay_and_scan_idle_timeout_no_data_no_scan()]] - `calls` [EXTRACTED]
 - [[test_relay_and_scan_limit_reached_scans_once()]] - `calls` [EXTRACTED]
+- [[test_relay_and_scan_plain_http_port_still_scans()]] - `calls` [EXTRACTED]
 - [[test_relay_and_scan_read_error_scans_partial_buffer()]] - `calls` [EXTRACTED]
 - [[test_relay_and_scan_small_download_scanned_at_eof()]] - `calls` [EXTRACTED]
 - [[test_relay_and_scan_swallows_writer_close_failure()]] - `calls` [EXTRACTED]
+- [[test_relay_and_scan_tls_tunnel_skips_ciphertext_scan()]] - `calls` [EXTRACTED]
 - [[test_request_line_timeout_returns_408()]] - `calls` [EXTRACTED]
 - [[test_ssrf_attempt_returns_403()]] - `calls` [EXTRACTED]
 - [[test_start_serves_and_stop_closes_loopback()]] - `calls` [EXTRACTED]
@@ -90,7 +97,9 @@ tags:
 - [[test_system_bypass_domain_logs_external_decision()]] - `calls` [EXTRACTED]
 - [[test_system_bypass_without_egress_filter()]] - `calls` [EXTRACTED]
 - [[test_tunnel_all_attempts_fail_returns_502()]] - `calls` [EXTRACTED]
+- [[test_tunnel_connect_falls_back_when_happy_eyeballs_unsupported()]] - `calls` [EXTRACTED]
+- [[test_tunnel_connect_uses_happy_eyeballs()]] - `calls` [EXTRACTED]
 - [[test_tunnel_retries_then_succeeds()]] - `calls` [EXTRACTED]
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_65
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Module Group 155"
+community: "Approval & FastAPI Ingest"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_155
+  - community/Approval__FastAPI_Ingest
 ---
 
 # run_clamscan()
@@ -15,7 +15,7 @@ tags:
 - [[._clamav_scan_bytes()]] - `calls` [EXTRACTED]
 - [[.test_clamav_binary_not_found()]] - `calls` [EXTRACTED]
 - [[.test_run_not_found()]] - `calls` [EXTRACTED]
-- [[Any_30]] - `references` [EXTRACTED]
+- [[Any_32]] - `references` [EXTRACTED]
 - [[Run ClamAV scan and return parsed results.      Args         target Directory]] - `rationale_for` [EXTRACTED]
 - [[clamav_scanner.py]] - `contains` [EXTRACTED]
 - [[http_proxy.py]] - `imports` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_155
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

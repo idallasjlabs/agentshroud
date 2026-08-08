@@ -1,11 +1,11 @@
 ---
 source_file: "web/setup-wizard.html"
 type: "code"
-community: "Module Group 273"
+community: "web/management-dashboard.html"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_273
+  - community/web/management-dashboardhtml
 ---
 
 # AgentShroud Setup Wizard (setup-wizard.html)
@@ -20,4 +20,4 @@ tags:
 - [[Wizard Step 6 System Verification  Health Checks]] - `contains` [EXTRACTED]
 - [[dashboard()]] - `leads_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_273
+#graphify/code #graphify/EXTRACTED #community/web/management-dashboardhtml

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "Pipeline Action & Instruction Envelope"
+community: "Cross-Bot Trust Ledger"
 location: "L30"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Pipeline_Action__Instruction_Envelope
+  - graphify/INFERRED
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # InstructionEnvelope
@@ -24,11 +24,15 @@ tags:
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
 - [[TestEnvelopeSigner]] - `uses` [INFERRED]
 - [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
+- [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
+- [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
+- [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
+- [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[instruction_envelope.py]] - `contains` [EXTRACTED]
 - [[test_instruction_envelope.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pipeline_Action__Instruction_Envelope
+#graphify/code #graphify/INFERRED #community/Cross-Bot_Trust_Ledger

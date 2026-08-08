@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Module Group 181"
-location: "L542"
+community: "Gateway Test Suite"
+location: "L537"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_181
+  - community/Gateway_Test_Suite
 ---
 
 # blocking' continuous form.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_progressive_tense()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_181
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

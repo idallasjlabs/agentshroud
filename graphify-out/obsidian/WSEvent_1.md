@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Module Group 83"
-location: "L35"
+community: "Gateway Test Suite"
+location: "L34"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_83
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # WSEvent
@@ -14,9 +14,10 @@ tags:
 ## Connections
 - [[._keepalive_loop()]] - `calls` [EXTRACTED]
 - [[._send_event()]] - `references` [EXTRACTED]
-- [[Severity_1]] - `uses` [INFERRED]
+- [[.test_construction()_2]] - `calls` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
 - [[WSEvent]] - `uses` [INFERRED]
 - [[WSEventType]] - `uses` [INFERRED]
 - [[_coerce_to_ws_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_83
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

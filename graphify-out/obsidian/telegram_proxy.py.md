@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Module Group 208"
+community: "Collaborator Response Templates"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_208
+  - community/Collaborator_Response_Templates
 ---
 
 # telegram_proxy.py
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[ApprovalMode]] - `imports` [EXTRACTED]
 - [[DelegationPrivilege]] - `imports` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `imports` [EXTRACTED]
 - [[ProgressiveLockdown]] - `imports` [EXTRACTED]
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
 - [[RateLimiter]] - `imports` [EXTRACTED]
@@ -39,4 +40,4 @@ tags:
 - [[strip_markdown_exfil()]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_multibot.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_208
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "Module Group 435"
-location: "L124"
+community: "Gateway Test Suite"
+location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_435
+  - community/Gateway_Test_Suite
 ---
 
 # Build the list of container image targets for Trivy image scanning.      Combine
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_build_image_targets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_435
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

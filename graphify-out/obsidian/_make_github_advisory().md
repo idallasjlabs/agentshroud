@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Module Group 250"
-location: "L245"
+community: "Gateway Test Suite"
+location: "L242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_250
+  - community/Gateway_Test_Suite
 ---
 
 # _make_github_advisory()
 
 ## Connections
-- [[.test_returns_new_cve_not_in_registry()]] - `calls` [EXTRACTED]
-- [[.test_skips_advisory_without_cve_id()]] - `calls` [EXTRACTED]
-- [[.test_skips_cve_already_in_registry()]] - `calls` [EXTRACTED]
-- [[Build a minimal GitHub Security Advisory payload.]] - `rationale_for` [EXTRACTED]
+- [[.test_returns_new_advisory_not_in_registry()]] - `calls` [EXTRACTED]
+- [[.test_skips_advisory_whose_cve_is_already_tracked()]] - `calls` [EXTRACTED]
+- [[.test_skips_advisory_without_ghsa_id()]] - `calls` [EXTRACTED]
+- [[.test_skips_ghsa_already_in_registry()]] - `calls` [EXTRACTED]
+- [[Build a minimal GitHub Security Advisory payload keyed on GHSA id.      ``ghsa_i]] - `rationale_for` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_250
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

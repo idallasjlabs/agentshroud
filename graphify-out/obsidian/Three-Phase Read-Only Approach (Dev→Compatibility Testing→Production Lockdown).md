@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
+source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "concept"
-community: "Module Group 663"
+community: "Security Docs"
 location: "line 16-30"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_663
+  - community/Security_Docs
 ---
 
 # Three-Phase Read-Only Approach (Dev→Compatibility Testing→Production Lockdown)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Development Workflow Read-Only Filesystem Strategy]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_663
+#graphify/concept #graphify/EXTRACTED #community/Security_Docs

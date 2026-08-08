@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Module Group 179"
-location: "L555"
+community: "Tool Chain Analyzer"
+location: "L552"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_179
+  - community/Tool_Chain_Analyzer
 ---
 
 # Verify expanded _PARAM_INJECTION_PATTERNS catch piped-interpreter and     heredo
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestShellBleedPatterns]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_179
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain_Analyzer

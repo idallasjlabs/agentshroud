@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "Module Group 174"
+community: "docs/vault"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_174
+  - community/docs/vault
 ---
 
-# SSH Proxy Errors
+# SSH Proxy Errors.md
 
 ## Connections
-- [[SSH Host Allowlist]] - `describes` [EXTRACTED]
-- [[Tailscale Mesh VPN (tail240ea8.ts.net)]] - `references` [EXTRACTED]
+- [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_174
+#graphify/document #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Module Group 418"
+community: "Approval & FastAPI Ingest"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_418
+  - community/Approval__FastAPI_Ingest
 ---
 
 # GatewayEvent
@@ -18,4 +18,4 @@ tags:
 - [[event_bus.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_418
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

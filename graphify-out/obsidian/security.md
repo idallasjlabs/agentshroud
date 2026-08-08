@@ -1,21 +1,18 @@
 ---
-source_file: "skills/custom/browser-fetch/skill.json"
-type: "code"
-community: "Module Group 299"
-location: "L34"
+source_file: "SECURITY.md"
+type: "document"
+community: "Gateway Test Suite"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_299
+  - community/Gateway_Test_Suite
 ---
 
-# security
+# SECURITY.md
 
 ## Connections
-- [[auditLogging]] - `contains` [EXTRACTED]
-- [[filesystemAccess]] - `contains` [EXTRACTED]
-- [[networkAccess]] - `contains` [EXTRACTED]
-- [[requiresApproval]] - `contains` [EXTRACTED]
-- [[skill.json]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
+- [[test_docs_accuracy.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_299
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

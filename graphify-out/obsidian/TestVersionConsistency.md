@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Module Group 132"
-location: "L371"
+community: "Approval Queue Tests"
+location: "L379"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_132
+  - graphify/INFERRED
+  - community/Approval_Queue_Tests
 ---
 
 # TestVersionConsistency
@@ -19,4 +19,4 @@ tags:
 - [[Version strings should be consistent across the codebase.]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_132
+#graphify/code #graphify/INFERRED #community/Approval_Queue_Tests

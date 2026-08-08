@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Module Group 208"
+community: "Collaborator Response Templates"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_208
+  - community/Collaborator_Response_Templates
 ---
 
 # group_config.py
 
 ## Connections
 - [[GroupConfig]] - `contains` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `shares_data_with` [EXTRACTED]
 - [[ProjectConfig]] - `contains` [EXTRACTED]
 - [[TeamsConfig]] - `contains` [EXTRACTED]
 - [[_apply_persisted_overrides()]] - `contains` [EXTRACTED]
@@ -28,4 +29,4 @@ tags:
 - [[persist_user_collab_mode()]] - `contains` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_208
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates

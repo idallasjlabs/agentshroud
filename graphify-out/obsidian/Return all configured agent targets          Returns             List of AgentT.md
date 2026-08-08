@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "Agent Routing & Request Models"
-location: "L248"
+community: "Forward Routing & Approval"
+location: "L436"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agent_Routing__Request_Models
+  - community/Forward_Routing__Approval
 ---
 
 # Return all configured agent targets          Returns:             List of AgentT
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.list_targets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agent_Routing__Request_Models
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

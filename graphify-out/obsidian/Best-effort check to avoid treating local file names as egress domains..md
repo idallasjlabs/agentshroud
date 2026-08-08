@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Telegram Proxy Core"
-location: "L1022"
+community: "Collaborator Prompt Classifiers"
+location: "L1104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Core
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Best-effort check to avoid treating local file names as egress domains.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._looks_like_filename_reference()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

@@ -1,12 +1,12 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "document"
-community: "Module Group 203"
+community: "CHEATSHEET.md"
 location: "lines 427-435"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_203
+  - community/CHEATSHEETmd
 ---
 
 # Lab Host IPs (marvin, trillian, raspberrypi, Pi-hole)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_203
+#graphify/document #graphify/EXTRACTED #community/CHEATSHEETmd

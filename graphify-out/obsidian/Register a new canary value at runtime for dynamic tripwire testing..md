@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "rationale"
-community: "Module Group 115"
+community: "Gateway Test Suite"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_115
+  - community/Gateway_Test_Suite
 ---
 
 # Register a new canary value at runtime for dynamic tripwire testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.register_canary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_115
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

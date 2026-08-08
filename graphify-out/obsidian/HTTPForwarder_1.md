@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "code"
-community: "Module Group 451"
+community: "docs/vault"
 location: "gateway/proxy/forwarder.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_451
+  - community/docs/vault
 ---
 
 # HTTPForwarder
@@ -16,4 +16,4 @@ tags:
 - [[forwarder.py — HTTPForwarder]] - `defines` [EXTRACTED]
 - [[pipeline.py — SecurityPipeline]] - `used_by` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_451
+#graphify/code #graphify/EXTRACTED #community/docs/vault

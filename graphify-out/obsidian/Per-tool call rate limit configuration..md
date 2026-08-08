@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Tool ACL & RBAC Config"
-location: "L145"
+community: "Auth & Exception Types"
+location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_ACL__RBAC_Config
+  - community/Auth__Exception_Types
 ---
 
 # Per-tool call rate limit configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolRateLimit]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_ACL__RBAC_Config
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

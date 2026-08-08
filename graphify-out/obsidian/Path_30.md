@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "Module Group 481"
-location: "L81"
+community: "Gateway Test Suite"
+location: "L43"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_481
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # Path
 
 ## Connections
-- [[export()]] - `references` [EXTRACTED]
-- [[main()_4]] - `calls` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
+- [[_make_md()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_481
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

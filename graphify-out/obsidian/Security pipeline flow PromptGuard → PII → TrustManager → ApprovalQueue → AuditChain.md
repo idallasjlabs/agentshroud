@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reviews/blue-team-audit-v0.7.0.md"
 type: "concept"
-community: "Module Group 401"
+community: "docs/redteam"
 location: "line 69"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_401
+  - community/docs/redteam
 ---
 
 # Security pipeline flow: PromptGuard → PII → TrustManager → ApprovalQueue → AuditChain
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Blue Team Security Audit Report v0.7.0]] - `documents` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_401
+#graphify/concept #graphify/EXTRACTED #community/docs/redteam

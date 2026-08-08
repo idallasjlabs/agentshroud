@@ -1,19 +1,23 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
-location: "L1218"
+community: "Egress & RBAC Security Core"
+location: "L1353"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # LogSanitizer
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
 - [[.get_log_sanitizer()]] - `references` [EXTRACTED]
+- [[.sanitizer()_2]] - `calls` [INFERRED]
+- [[.setup_method()_7]] - `calls` [INFERRED]
+- [[.test_empty_inputs_everywhere()]] - `calls` [INFERRED]
+- [[.test_log_sanitizer_covers_stack_traces()]] - `calls` [INFERRED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
@@ -64,4 +68,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core

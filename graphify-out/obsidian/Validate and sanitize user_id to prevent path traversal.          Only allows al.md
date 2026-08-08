@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Module Group 189"
-location: "L199"
+community: "URL/Domain Validation Tests"
+location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_189
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Validate and sanitize user_id to prevent path traversal.          Only allows al
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._validate_user_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_189
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

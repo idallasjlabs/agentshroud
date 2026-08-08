@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "Module Group 183"
-location: "L46"
+community: "Gateway Test Suite"
+location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_183
+  - community/Gateway_Test_Suite
 ---
 
 # LLMProxy
@@ -15,4 +15,4 @@ tags:
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[make_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_183
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

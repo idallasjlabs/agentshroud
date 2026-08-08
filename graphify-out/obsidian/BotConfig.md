@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "code"
-community: "Module Group 127"
-location: "L20"
+community: "Forward Routing & Approval"
+location: "L19"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Module_Group_127
+  - graphify/EXTRACTED
+  - community/Forward_Routing__Approval
 ---
 
 # BotConfig
 
 ## Connections
 - [[.base_url()]] - `method` [EXTRACTED]
+- [[.resolved_container_name()]] - `method` [EXTRACTED]
 - [[.test_bot_config_has_telegram_token_secret_field()]] - `calls` [EXTRACTED]
 - [[.test_bot_config_image_field_present()]] - `calls` [EXTRACTED]
 - [[.test_bot_config_telegram_token_secret_set()]] - `calls` [EXTRACTED]
@@ -24,10 +25,11 @@ tags:
 - [[Declaration for a single bot encapsulated by AgentShroud.      Required bot HTTP]] - `rationale_for` [EXTRACTED]
 - [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
+- [[MultiAgentRouter]] - `shares_data_with` [EXTRACTED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[Path_1]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
-- [[SecurityConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[SecurityConfig_2]] - `uses` [INFERRED]
 - [[SecurityModuleConfig]] - `uses` [INFERRED]
 - [[TestMultiBotContextvarRouting]] - `uses` [INFERRED]
 - [[TestTelegramBotConfigTokenSecretField]] - `uses` [INFERRED]
@@ -39,7 +41,9 @@ tags:
 - [[config.py]] - `imports` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[test_bot_config_base_url()]] - `calls` [EXTRACTED]
+- [[test_bot_config_resolved_container_name_defaults_to_agentshroud_id()]] - `calls` [EXTRACTED]
+- [[test_bot_config_resolved_container_name_uses_explicit_override()]] - `calls` [EXTRACTED]
 - [[test_config.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_multibot.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_127
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

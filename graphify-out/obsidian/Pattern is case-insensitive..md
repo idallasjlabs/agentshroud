@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Module Group 181"
-location: "L574"
+community: "Gateway Test Suite"
+location: "L569"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_181
+  - community/Gateway_Test_Suite
 ---
 
 # Pattern is case-insensitive.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_case_insensitive()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_181
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

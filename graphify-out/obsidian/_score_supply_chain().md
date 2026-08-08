@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Module Group 335"
+community: "Gateway Test Suite"
 location: "L1000"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_335
+  - community/Gateway_Test_Suite
 ---
 
 # _score_supply_chain()
@@ -22,4 +22,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_335
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Module Group 134"
-location: "L2318"
+community: "IEC 62443 Scorecard"
+location: "L2320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_134
+  - community/IEC_62443_Scorecard
 ---
 
 # _determine_iec_sl()
@@ -16,4 +16,4 @@ tags:
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_134
+#graphify/code #graphify/EXTRACTED #community/IEC_62443_Scorecard

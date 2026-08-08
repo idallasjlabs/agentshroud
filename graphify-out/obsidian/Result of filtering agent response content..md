@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "Module Group 282"
+community: "Security Pipeline Core"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_282
+  - community/Security_Pipeline_Core
 ---
 
 # Result of filtering agent response content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FilterResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_282
+#graphify/rationale #graphify/EXTRACTED #community/Security_Pipeline_Core

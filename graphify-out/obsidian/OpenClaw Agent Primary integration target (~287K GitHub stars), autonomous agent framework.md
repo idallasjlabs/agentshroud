@@ -1,19 +1,18 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/agentshroud-knowledge.md"
+source_file: "docs/agentshroud-knowledge.md"
 type: "concept"
-community: "Module Group 368"
+community: "docs/agentshroud-knowledge.md"
 location: "Agents AgentShroud Targets"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_368
+  - community/docs/agentshroud-knowledgemd
 ---
 
 # OpenClaw Agent: Primary integration target (~287K GitHub stars), autonomous agent framework
 
 ## Connections
-- [[AgentShroud Knowledge Reference]] - `references` [EXTRACTED]
 - [[Distributed OpenClaw Node Architecture (Raspberry Pi 4)]] - `extends` [EXTRACTED]
-- [[Integration Guide v0.9.0]] - `targets` [EXTRACTED]
+- [[agentshroud-knowledge]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_368
+#graphify/concept #graphify/EXTRACTED #community/docs/agentshroud-knowledgemd

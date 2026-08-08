@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "rationale"
-community: "Module Group 279"
-location: "L328"
+community: "Gateway Proxy Layer"
+location: "L333"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_279
+  - community/Gateway_Proxy_Layer
 ---
 
 # Remove pending requests older than max_age_seconds. Returns count removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.cleanup_expired()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_279
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

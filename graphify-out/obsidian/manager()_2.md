@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "Progressive Trust Levels"
-location: "L27"
+community: "Gateway Test Suite"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Levels
+  - community/Gateway_Test_Suite
 ---
 
 # manager()
 
 ## Connections
-- [[Create a trust manager with temp DB.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
-- [[test_trust_manager.py]] - `contains` [EXTRACTED]
+- [[KeyRotationConfig_1]] - `calls` [EXTRACTED]
+- [[KeyRotationManager]] - `calls` [EXTRACTED]
+- [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Levels
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

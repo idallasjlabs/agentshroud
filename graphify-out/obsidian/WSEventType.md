@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Module Group 83"
+community: "SOC Dashboard"
 location: "L258"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_83
+  - community/SOC_Dashboard
 ---
 
 # WSEventType
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_60]] - `uses` [INFERRED]
+- [[Any_64]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult_1]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
@@ -28,8 +28,7 @@ tags:
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_5]] - `uses` [INFERRED]
-- [[SCLCaller_1]] - `uses` [INFERRED]
+- [[Request_7]] - `uses` [INFERRED]
 - [[SCLInterface_1]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
@@ -41,8 +40,8 @@ tags:
 - [[SetUserModeRequest]] - `uses` [INFERRED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
 - [[WSEvent_1]] - `uses` [INFERRED]
-- [[WebSocket_5]] - `uses` [INFERRED]
 - [[WebSocket_6]] - `uses` [INFERRED]
+- [[WebSocket_7]] - `uses` [INFERRED]
 - [[models.py_1]] - `contains` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[str]] - `inherits` [EXTRACTED]
@@ -51,4 +50,4 @@ tags:
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_83
+#graphify/code #graphify/INFERRED #community/SOC_Dashboard

@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "Environment Guard & Leak Detection"
-location: "L289"
+community: "Gateway Test Suite"
+location: "L64"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # Any
 
 ## Connections
-- [[.get_leakage_summary()]] - `references` [EXTRACTED]
-- [[.monitor_environment_access()]] - `references` [EXTRACTED]
+- [[.__init__()_63]] - `references` [EXTRACTED]
+- [[ContextSegment]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[SystemPromptFingerprint]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

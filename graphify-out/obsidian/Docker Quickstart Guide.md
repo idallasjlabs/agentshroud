@@ -1,11 +1,11 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Module Group 500"
+community: "docker/falco"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_500
+  - community/docker/falco
 ---
 
 # Docker Quickstart Guide
@@ -14,4 +14,4 @@ tags:
 - [[Docker Compose --profile full (activates Hermes + HCI)]] - `references` [EXTRACTED]
 - [[Docker Configuration README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_500
+#graphify/document #graphify/EXTRACTED #community/docker/falco

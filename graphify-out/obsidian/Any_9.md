@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/proxy/canvas_proxy.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "Module Group 276"
-location: "L118"
+community: "Auth & Exception Types"
+location: "L347"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_276
+  - graphify/INFERRED
+  - community/Auth__Exception_Types
 ---
 
 # Any
 
 ## Connections
-- [[_handle_http()]] - `references` [EXTRACTED]
-- [[_handle_websocket()]] - `references` [EXTRACTED]
-- [[canvas_proxy_app()]] - `references` [EXTRACTED]
+- [[.get_stats()_2]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_276
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

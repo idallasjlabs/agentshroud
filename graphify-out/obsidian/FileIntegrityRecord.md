@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Module Group 143"
-location: "L39"
+community: "Egress & RBAC Security Core"
+location: "L38"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_143
+  - graphify/INFERRED
+  - community/Egress__RBAC_Security_Core
 ---
 
 # FileIntegrityRecord
 
 ## Connections
-- [[.from_dict()_6]] - `method` [EXTRACTED]
+- [[.from_dict()_7]] - `method` [EXTRACTED]
 - [[.scan_file()]] - `references` [EXTRACTED]
 - [[.to_dict()_10]] - `method` [EXTRACTED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[memory_integrity.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_143
+#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core

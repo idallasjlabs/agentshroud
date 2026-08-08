@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "CLI & Core Gateway Routes"
-location: "L39"
+community: "Forward Routing & Approval"
+location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Forward_Routing__Approval
 ---
 
 # Routes content to appropriate agent containers      Routing priority:     1. Exp
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MultiAgentRouter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

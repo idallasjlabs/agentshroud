@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Module Group 200"
-location: "L48"
+community: "Gateway Test Suite"
+location: "L47"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_200
+  - community/Gateway_Test_Suite
 ---
 
 # Represents a pending egress approval request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_200
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

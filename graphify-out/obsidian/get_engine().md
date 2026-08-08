@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "Module Group 371"
+community: "Gateway Test Suite"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_371
+  - community/Gateway_Test_Suite
 ---
 
 # get_engine()
@@ -22,11 +22,12 @@ tags:
 - [[ContainerEngine]] - `references` [EXTRACTED]
 - [[Return an appropriate container engine instance.      Args         preference]] - `rationale_for` [EXTRACTED]
 - [[ValueError]] - `calls` [INFERRED]
-- [[__init__.py_7]] - `contains` [EXTRACTED]
+- [[__init__.py_8]] - `contains` [EXTRACTED]
 - [[_get_engine()]] - `calls` [EXTRACTED]
 - [[api.py]] - `imports` [EXTRACTED]
 - [[detect_runtime()]] - `calls` [EXTRACTED]
 - [[get_status()]] - `calls` [EXTRACTED]
+- [[health.py]] - `imports` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_371
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

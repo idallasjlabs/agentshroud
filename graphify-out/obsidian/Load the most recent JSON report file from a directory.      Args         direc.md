@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Module Group 269"
+community: "Gateway Test Suite"
 location: "L449"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_269
+  - community/Gateway_Test_Suite
 ---
 
 # Load the most recent JSON report file from a directory.      Args:         direc
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_load_latest_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_269
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

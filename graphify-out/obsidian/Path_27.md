@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "code"
-community: "Module Group 98"
-location: "L270"
+community: "Gateway Test Suite"
+location: "L40"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Module_Group_98
+  - graphify/EXTRACTED
+  - community/Gateway_Test_Suite
 ---
 
 # Path
 
 ## Connections
-- [[._make_monitor()]] - `references` [EXTRACTED]
-- [[GatewayConfig_1]] - `uses` [INFERRED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[_load_jobs()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_98
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

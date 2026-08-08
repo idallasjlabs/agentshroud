@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "rationale"
-community: "Module Group 67"
+community: "Gateway Test Suite"
 location: "L172"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_67
+  - community/Gateway_Test_Suite
 ---
 
 # A nonce with a timestamp outside the 5-min window is rejected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_nonce_expired_rejected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_67
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

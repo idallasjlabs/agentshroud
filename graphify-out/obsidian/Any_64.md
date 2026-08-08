@@ -1,17 +1,28 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Module Group 420"
-location: "L516"
+community: "SOC Dashboard"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_420
+  - graphify/INFERRED
+  - community/SOC_Dashboard
 ---
 
 # Any
 
 ## Connections
-- [[_stub_summary()]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLError]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
+- [[WSEventType]] - `uses` [INFERRED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_420
+#graphify/code #graphify/INFERRED #community/SOC_Dashboard

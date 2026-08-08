@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/gateway/ingest_api/static/chat.html"
+source_file: "gateway/ingest_api/static/chat.html"
 type: "code"
-community: "Module Group 499"
+community: "gateway/requirements.txt"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_499
+  - community/gateway/requirementstxt
 ---
 
 # chat.html — Secure Chat Interface
@@ -14,4 +14,4 @@ tags:
 - [[Concept Microsoft Presidio PII Detection Engine]] - `references` [INFERRED]
 - [[Concept Secure Chat Interface (PII Protected, Audit Logged)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_499
+#graphify/code #graphify/INFERRED #community/gateway/requirementstxt

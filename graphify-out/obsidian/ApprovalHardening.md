@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Approval Hardening"
+community: "Gateway Security Module"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Hardening
+  - community/Gateway_Security_Module
 ---
 
 # ApprovalHardening
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_43]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_51]] - `method` [EXTRACTED]
 - [[._check_description_parameter_mismatch()]] - `method` [EXTRACTED]
 - [[._check_misleading_language()]] - `method` [EXTRACTED]
 - [[._check_parameter_obfuscation()]] - `method` [EXTRACTED]
@@ -32,7 +32,8 @@ tags:
 - [[.test_deception_detection_disabled()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Anti-social-engineering hardening for approval queue.]] - `rationale_for` [EXTRACTED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -46,7 +47,7 @@ tags:
 - [[approval_hardening.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[test_approval_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Hardening
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

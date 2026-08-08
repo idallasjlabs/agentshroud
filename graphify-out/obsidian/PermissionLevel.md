@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Module Group 154"
+community: "MCP Proxy Config"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_154
+  - community/MCP_Proxy_Config
 ---
 
 # PermissionLevel
@@ -19,7 +19,7 @@ tags:
 - [[.from_dict()]] - `calls` [EXTRACTED]
 - [[.level_value()]] - `method` [EXTRACTED]
 - [[Enum]] - `inherits` [EXTRACTED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
@@ -46,6 +46,7 @@ tags:
 - [[TestDataclasses]] - `uses` [INFERRED]
 - [[TestEgressFilterPaths]] - `uses` [INFERRED]
 - [[TestEmitPrivacyEvent]] - `uses` [INFERRED]
+- [[TestExecuteResultInspectionBinding]] - `uses` [INFERRED]
 - [[TestExecuteToolCall]] - `uses` [INFERRED]
 - [[TestExtractEgressTargets]] - `uses` [INFERRED]
 - [[TestHashChainIntegration]] - `uses` [INFERRED]
@@ -75,7 +76,7 @@ tags:
 - [[TestToolPermission]] - `uses` [INFERRED]
 - [[TestTrustLevels]] - `uses` [INFERRED]
 - [[TestTrustMapping]] - `uses` [INFERRED]
-- [[__init__.py_6]] - `imports` [EXTRACTED]
+- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[mcp_config.py]] - `contains` [EXTRACTED]
 - [[mcp_permissions.py]] - `imports` [EXTRACTED]
 - [[str]] - `inherits` [EXTRACTED]
@@ -83,4 +84,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_154
+#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config

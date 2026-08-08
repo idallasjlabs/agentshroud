@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Module Group 137"
-location: "L562"
+community: "PII Config & Test Fixtures"
+location: "L558"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_137
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Writing to /app/data should be allowed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_write_to_app_data_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_137
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

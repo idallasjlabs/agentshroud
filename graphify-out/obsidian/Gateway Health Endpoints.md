@@ -1,17 +1,21 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Health Checks.md"
-type: "concept"
-community: "Module Group 174"
+type: "document"
+community: "docs/vault"
+location: "L11"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_174
+  - community/docs/vault
 ---
 
 # Gateway Health Endpoints
 
 ## Connections
+- [[Basic Status (No Auth)]] - `contains` [EXTRACTED]
 - [[Docker Compose Production Example]] - `references` [EXTRACTED]
+- [[Full Health Report (Auth Required)]] - `contains` [EXTRACTED]
+- [[Health Checks_2]] - `contains` [EXTRACTED]
 - [[Health Checks Runbook]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_174
+#graphify/document #graphify/EXTRACTED #community/docs/vault

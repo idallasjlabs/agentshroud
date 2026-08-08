@@ -1,18 +1,21 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "Module Group 240"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_240
+  - community/Gateway_Test_Suite
 ---
 
 # egress_config.py
 
 ## Connections
+- [[EgressFilter_1]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `contains` [EXTRACTED]
+- [[citation_verifier.py]] - `shares_data_with` [EXTRACTED]
+- [[domain_matches()]] - `contains` [EXTRACTED]
 - [[egress_approval.py]] - `imports_from` [EXTRACTED]
 - [[egress_filter.py]] - `imports_from` [EXTRACTED]
 - [[get_egress_config()]] - `contains` [EXTRACTED]
@@ -21,4 +24,4 @@ tags:
 - [[management.py]] - `imports_from` [EXTRACTED]
 - [[set_egress_config()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_240
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "Module Group 200"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_200
+  - community/Gateway_Test_Suite
 ---
 
 # test_egress_approval.py
@@ -16,8 +16,8 @@ tags:
 - [[ApprovalResult]] - `imports` [EXTRACTED]
 - [[EgressApprovalQueue]] - `imports` [EXTRACTED]
 - [[EgressRequest]] - `imports` [EXTRACTED]
-- [[RiskLevel]] - `imports` [EXTRACTED]
+- [[RiskLevel_2]] - `imports` [EXTRACTED]
 - [[TestEgressApprovalAPI]] - `contains` [EXTRACTED]
 - [[TestEgressApprovalQueue]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_200
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Egress Filter & Approval"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter__Approval
+  - community/Gateway_Test_Suite
 ---
 
 # test_egress_filter.py
@@ -15,8 +15,8 @@ tags:
 - [[ApprovalResult]] - `imports` [EXTRACTED]
 - [[EgressAction]] - `imports` [EXTRACTED]
 - [[EgressAttempt]] - `imports` [EXTRACTED]
-- [[EgressFilter_1]] - `imports` [EXTRACTED]
-- [[EgressFilterConfig]] - `imports` [EXTRACTED]
+- [[EgressFilter_1]] - `implements` [EXTRACTED]
+- [[EgressFilterConfig]] - `references` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[TestEgressAttempt]] - `contains` [EXTRACTED]
 - [[TestEgressPolicy]] - `contains` [EXTRACTED]
@@ -25,6 +25,7 @@ tags:
 - [[TestInteractiveApproval]] - `contains` [EXTRACTED]
 - [[TestLogging]] - `contains` [EXTRACTED]
 - [[TestMonitorMode]] - `contains` [EXTRACTED]
+- [[TestOpenClawResearchDomainsAllowlisted]] - `contains` [EXTRACTED]
 - [[TestPerAgentPolicy]] - `contains` [EXTRACTED]
 - [[TestSMTPIMAPPorts]] - `contains` [EXTRACTED]
 - [[TestURLParsing]] - `contains` [EXTRACTED]
@@ -39,4 +40,4 @@ tags:
 - [[test_grant_timed_approval_expired_falls_back_to_deny()]] - `contains` [EXTRACTED]
 - [[test_grant_timed_approval_invalid_iso_is_ignored()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__Approval
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

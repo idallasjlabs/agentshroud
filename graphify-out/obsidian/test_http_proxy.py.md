@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Module Group 65"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_65
+  - community/Gateway_Test_Suite
 ---
 
 # test_http_proxy.py
@@ -19,12 +19,17 @@ tags:
 - [[_DummyTargetWriter]] - `contains` [EXTRACTED]
 - [[_MockWriter]] - `contains` [EXTRACTED]
 - [[_make_stream()]] - `contains` [EXTRACTED]
+- [[egress_filter.py (EgressAction)]] - `references` [EXTRACTED]
+- [[http_proxy.py (HTTPConnectProxy)]] - `implements` [EXTRACTED]
 - [[test_agent_id_for_peer_cached_after_first_lookup()]] - `contains` [EXTRACTED]
+- [[test_agent_id_for_peer_forward_dns_hit()]] - `contains` [EXTRACTED]
+- [[test_agent_id_for_peer_forward_dns_no_ip_match()]] - `contains` [EXTRACTED]
 - [[test_agent_id_for_peer_known_ip()]] - `contains` [EXTRACTED]
 - [[test_agent_id_for_peer_lazy_rdns_error()]] - `contains` [EXTRACTED]
 - [[test_agent_id_for_peer_lazy_rdns_hit()]] - `contains` [EXTRACTED]
 - [[test_agent_id_for_peer_lazy_rdns_miss()]] - `contains` [EXTRACTED]
 - [[test_agent_id_for_peer_none_peer()]] - `contains` [EXTRACTED]
+- [[test_agent_id_for_peer_rdns_miss_forward_dns_hit()]] - `contains` [EXTRACTED]
 - [[test_agent_id_for_peer_unknown_no_hostnames()]] - `contains` [EXTRACTED]
 - [[test_blocked_domain_is_tracked_in_recent()]] - `contains` [EXTRACTED]
 - [[test_connect_blocked_domain_returns_403()]] - `contains` [EXTRACTED]
@@ -32,6 +37,7 @@ tags:
 - [[test_connect_system_bypass_domain_skips_policy_checks()]] - `contains` [EXTRACTED]
 - [[test_connect_unknown_domain_can_be_allowed_by_interactive_egress()]] - `contains` [EXTRACTED]
 - [[test_default_allowed_domains_non_empty()]] - `contains` [EXTRACTED]
+- [[test_http_proxy_coverage.py]] - `references` [EXTRACTED]
 - [[test_initial_stats_are_zero()]] - `contains` [EXTRACTED]
 - [[test_malformed_request_line_returns_400()]] - `contains` [EXTRACTED]
 - [[test_non_connect_method_returns_405()]] - `contains` [EXTRACTED]
@@ -44,5 +50,7 @@ tags:
 - [[test_system_bypass_without_egress_filter()]] - `contains` [EXTRACTED]
 - [[test_telegram_api_blocked_in_connect_proxy()]] - `contains` [EXTRACTED]
 - [[test_telegram_is_force_blocked_not_bypass()]] - `contains` [EXTRACTED]
+- [[web_config.py (WebProxyConfig)]] - `references` [EXTRACTED]
+- [[web_proxy.py (WebProxy)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_65
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,14 +1,14 @@
 ---
-source_file: "gateway/soc/__init__.py"
+source_file: "gateway/security/__init__.py"
 type: "code"
-community: "Module Group 808"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_808
+  - community/Gateway_Security_Module
 ---
 
 # __init__.py
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_808
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

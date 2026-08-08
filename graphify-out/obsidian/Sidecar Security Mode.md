@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "concept"
-community: "Module Group 502"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_502
+  - community/docs/vault
 ---
 
 # Sidecar Security Mode
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SidecarScanner_1]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_502
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

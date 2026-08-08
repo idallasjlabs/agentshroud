@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "rationale"
-community: "Module Group 232"
+community: "Gateway Test Suite"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_232
+  - community/Gateway_Test_Suite
 ---
 
 # Response should include processing_time_ms.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_response_includes_processing_time()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_232
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

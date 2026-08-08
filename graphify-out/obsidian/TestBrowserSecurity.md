@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Middleware Coverage Tests"
+community: "Security Module Middleware"
 location: "L528"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Middleware_Coverage_Tests
+  - graphify/INFERRED
+  - community/Security_Module_Middleware
 ---
 
 # TestBrowserSecurity
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Middleware_Coverage_Tests
+#graphify/code #graphify/INFERRED #community/Security_Module_Middleware

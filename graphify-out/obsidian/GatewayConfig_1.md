@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "SSH Proxy & Gateway Config"
+community: "Forward Routing & Approval"
 location: "L296"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Forward_Routing__Approval
 ---
 
 # GatewayConfig
@@ -19,24 +19,24 @@ tags:
 - [[.test_get_module_mode_no_env_override()]] - `calls` [EXTRACTED]
 - [[.test_global_monitor_override_downgrades_all()]] - `calls` [EXTRACTED]
 - [[AppState]] - `uses` [INFERRED]
-- [[AuthRequired]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Complete gateway configuration]] - `rationale_for` [EXTRACTED]
-- [[Exception]] - `uses` [INFERRED]
-- [[FastAPI_2]] - `uses` [INFERRED]
+- [[FastAPI_3]] - `uses` [INFERRED]
 - [[GatewayConfig]] - `uses` [INFERRED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[MCPProxyRequest]] - `uses` [INFERRED]
 - [[MCPResultRequest]] - `uses` [INFERRED]
 - [[OpProxyRequest]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[Path_27]] - `uses` [INFERRED]
+- [[Path_24]] - `uses` [INFERRED]
+- [[Path_34]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
-- [[Request]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `shares_data_with` [EXTRACTED]
 - [[SSHConfig]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHExecRequest_1]] - `uses` [INFERRED]
 - [[TestAutoRevert]] - `uses` [INFERRED]
 - [[TestConfidenceFloor]] - `uses` [INFERRED]
 - [[TestConfigurationLoading]] - `uses` [INFERRED]
@@ -57,29 +57,40 @@ tags:
 - [[TestSSHExec]] - `uses` [INFERRED]
 - [[TestSSHHistory]] - `uses` [INFERRED]
 - [[TestSSHHosts]] - `uses` [INFERRED]
+- [[TestSSHProxyValidateWriteFile]] - `uses` [INFERRED]
+- [[TestSSHProxyWriteFileTransport]] - `uses` [INFERRED]
 - [[TestSSHRequireApprovalFalse]] - `uses` [INFERRED]
+- [[TestSSHValidateCwd]] - `uses` [INFERRED]
+- [[TestSSHWriteFileEndpoint]] - `uses` [INFERRED]
+- [[TestSSHWriteFileLedgerAudit]] - `uses` [INFERRED]
+- [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
 - [[TestSetMode]] - `uses` [INFERRED]
 - [[TestToolResultPIIConfig]] - `uses` [INFERRED]
 - [[TestToolResultSanitizer]] - `uses` [INFERRED]
-- [[WebSocket_2]] - `uses` [INFERRED]
+- [[apply_reloadable_config()]] - `references` [EXTRACTED]
 - [[auth.py]] - `imports` [EXTRACTED]
 - [[config.py]] - `contains` [EXTRACTED]
+- [[config_watcher()]] - `references` [EXTRACTED]
 - [[conftest.py]] - `imports` [EXTRACTED]
 - [[full_pipeline_config()]] - `calls` [EXTRACTED]
 - [[load_config()]] - `references` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
+- [[reload_config()]] - `references` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_config.py]] - `imports` [EXTRACTED]
 - [[test_config_defaults()]] - `calls` [EXTRACTED]
+- [[test_config_hot_reload.py]] - `imports` [EXTRACTED]
 - [[test_config_with_ssh()]] - `calls` [EXTRACTED]
+- [[test_config_with_ssh()_1]] - `calls` [EXTRACTED]
 - [[test_cors_origins_include_configured_port()]] - `calls` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 - [[test_router.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
+- [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SSH_Proxy__Gateway_Config
+#graphify/code #graphify/INFERRED #community/Forward_Routing__Approval

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "rationale"
-community: "Group Config & Teams"
-location: "L273"
+community: "Collaborator Response Templates"
+location: "L270"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Config__Teams
+  - community/Collaborator_Response_Templates
 ---
 
 # Without a per-user override, group-derived mode is returned.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_get_user_collab_mode_falls_back_to_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Config__Teams
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates

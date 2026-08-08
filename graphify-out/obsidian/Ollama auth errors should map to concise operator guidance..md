@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 709"
+community: "Gateway Test Suite"
 location: "L1832"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_709
+  - community/Gateway_Test_Suite
 ---
 
 # Ollama auth errors should map to concise operator guidance.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_ollama_auth_required_error_is_sanitized()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_709
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

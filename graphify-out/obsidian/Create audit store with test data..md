@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "Audit Store & Ledger"
-location: "L169"
+community: "Audit Export Pipeline"
+location: "L167"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Store__Ledger
+  - community/Audit_Export_Pipeline
 ---
 
 # Create audit store with test data.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.audit_store()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Store__Ledger
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline

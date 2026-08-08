@@ -1,21 +1,23 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "URL Analyzer & Content Scanner"
-location: "L91"
+community: "Gateway Test Suite"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URL_Analyzer__Content_Scanner
+  - community/Gateway_Test_Suite
 ---
 
 # RiskLevel
 
 ## Connections
+- [[._assess_risk()]] - `references` [EXTRACTED]
 - [[Enum]] - `inherits` [EXTRACTED]
-- [[models.py_1]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
-- [[test_soc_egress.py]] - `imports` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[Risk assessment levels for egress requests.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressApprovalAPI]] - `uses` [INFERRED]
+- [[TestEgressApprovalQueue]] - `uses` [INFERRED]
+- [[egress_approval.py]] - `contains` [EXTRACTED]
+- [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URL_Analyzer__Content_Scanner
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

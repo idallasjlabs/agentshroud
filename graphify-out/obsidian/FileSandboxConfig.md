@@ -1,28 +1,29 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Environment Guard & Leak Detection"
+community: "File Sandbox"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Environment_Guard__Leak_Detection
+  - community/File_Sandbox
 ---
 
 # FileSandboxConfig
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_65]] - `references` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_78]] - `references` [EXTRACTED]
 - [[.monitor_sandbox()]] - `calls` [EXTRACTED]
 - [[.sandbox()]] - `calls` [EXTRACTED]
-- [[.test_default_mode_is_enforce()_4]] - `calls` [EXTRACTED]
+- [[.test_default_mode_is_enforce()_5]] - `calls` [EXTRACTED]
 - [[.test_file_sandbox_instantiates()]] - `calls` [EXTRACTED]
 - [[.test_file_sandbox_mcp_write()]] - `calls` [INFERRED]
 - [[.test_file_sandbox_staging_detection()]] - `calls` [INFERRED]
 - [[.test_monitor_mode_allows_everything()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -30,7 +31,7 @@ tags:
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAgentShroudSourceCodeProtection]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestConfigurationProtection]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
@@ -79,13 +80,13 @@ tags:
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[TestWorkspaceAccessPreserved]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
-- [[default_config()_2]] - `calls` [EXTRACTED]
+- [[default_config()_3]] - `calls` [EXTRACTED]
 - [[enforce_config()]] - `calls` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[strict_config()_1]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_file_sandbox.py]] - `imports` [EXTRACTED]
@@ -93,4 +94,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Environment_Guard__Leak_Detection
+#graphify/code #graphify/INFERRED #community/File_Sandbox

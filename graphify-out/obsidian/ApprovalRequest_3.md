@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Module Group 364"
-location: "L50"
+community: "Approval Queue Tests"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_364
+  - community/Approval_Queue_Tests
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[submit_approval_request()]] - `references` [EXTRACTED]
+- [[.submit()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_364
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "Module Group 86"
+community: "Gateway Security Module"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_86
+  - community/Gateway_Security_Module
 ---
 
 # TestGateScope
@@ -18,4 +18,4 @@ tags:
 - [[post-deploy-check.sh fails ONLY on critical. These tests pin that contract.]] - `rationale_for` [EXTRACTED]
 - [[test_network_validator_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_86
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

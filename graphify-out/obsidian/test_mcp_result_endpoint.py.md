@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "SSH Proxy & Gateway Config"
+community: "Forward Routing & Approval"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Forward_Routing__Approval
 ---
 
 # test_mcp_result_endpoint.py
@@ -17,12 +17,17 @@ tags:
 - [[LedgerConfig]] - `imports` [EXTRACTED]
 - [[PIIConfig]] - `imports` [EXTRACTED]
 - [[ProxyResult]] - `imports` [EXTRACTED]
-- [[RouterConfig]] - `imports` [EXTRACTED]
+- [[RouterConfig_1]] - `imports` [EXTRACTED]
 - [[TestMCPProxyConfigLoading]] - `contains` [EXTRACTED]
 - [[TestMCPResultEndpoint]] - `contains` [EXTRACTED]
 - [[auth_headers()_2]] - `contains` [EXTRACTED]
-- [[client()_7]] - `contains` [EXTRACTED]
+- [[client()_10]] - `contains` [EXTRACTED]
+- [[config.py]] - `references` [EXTRACTED]
+- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `references` [EXTRACTED]
+- [[mcp_proxy.py]] - `references` [EXTRACTED]
+- [[state.py]] - `references` [EXTRACTED]
 - [[test_config()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSH_Proxy__Gateway_Config
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

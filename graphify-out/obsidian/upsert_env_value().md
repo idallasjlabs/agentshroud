@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/switch_model.sh"
 type: "code"
-community: "Module Group 434"
-location: "L366"
+community: "scripts/switch_model.sh"
+location: "L397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_434
+  - community/scripts/switch_modelsh
 ---
 
 # upsert_env_value()
@@ -15,4 +15,4 @@ tags:
 - [[switch_model.sh]] - `defines` [EXTRACTED]
 - [[switch_model.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_434
+#graphify/code #graphify/EXTRACTED #community/scripts/switch_modelsh

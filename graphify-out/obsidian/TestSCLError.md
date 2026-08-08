@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Module Group 83"
-location: "L123"
+community: "SOC Dashboard"
+location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_83
+  - community/SOC_Dashboard
 ---
 
 # TestSCLError
@@ -16,4 +16,4 @@ tags:
 - [[.test_error_model()]] - `method` [EXTRACTED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_83
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

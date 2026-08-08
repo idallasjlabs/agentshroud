@@ -1,19 +1,18 @@
 ---
 source_file: "docs/diagrams/images/diagram-05-network-topology.png"
 type: "image"
-community: "Module Group 373"
+community: "docs/flows"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Module_Group_373
+  - community/docs/flows
 ---
 
 # Network Topology Diagram (PNG)
 
 ## Connections
 - [[CICD and Deployment Pipeline Diagram (PNG)]] - `conceptually_related_to` [INFERRED]
-- [[Data Flow Diagram (PNG)]] - `conceptually_related_to` [INFERRED]
 - [[Data Lineage Diagram (PNG)]] - `conceptually_related_to` [INFERRED]
-- [[Network Topology Diagram (SVG)]] - `same_content_as` [EXPLICIT]
+- [[data-flow-diagram]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Module_Group_373
+#graphify/image #graphify/INFERRED #community/docs/flows

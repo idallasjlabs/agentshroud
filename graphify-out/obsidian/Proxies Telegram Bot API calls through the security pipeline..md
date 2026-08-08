@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Telegram Proxy Core"
-location: "L354"
+community: "Collaborator Prompt Classifiers"
+location: "L382"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Core
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Proxies Telegram Bot API calls through the security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TelegramAPIProxy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

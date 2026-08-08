@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Module Group 252"
-location: "L776"
+community: "Gateway Security Module"
+location: "L775"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_252
+  - community/Gateway_Security_Module
 ---
 
 # Get emergency block-all state.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_emergency_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_252
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

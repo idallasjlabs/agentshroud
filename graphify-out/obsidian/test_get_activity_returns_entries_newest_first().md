@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "Module Group 104"
-location: "L121"
+community: "Gateway Test Suite"
+location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_104
+  - community/Gateway_Test_Suite
 ---
 
 # test_get_activity_returns_entries_newest_first()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_104
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

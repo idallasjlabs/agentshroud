@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "Module Group 221"
+community: "Gateway Test Suite"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_221
+  - community/Gateway_Test_Suite
 ---
 
 # TestEmailSend
@@ -24,4 +24,4 @@ tags:
 - [[.test_unknown_recipient_queued_for_approval()]] - `method` [EXTRACTED]
 - [[test_channel_ownership.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_221
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

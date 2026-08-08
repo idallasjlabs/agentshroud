@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "RBAC Configuration"
+community: "Auth & Exception Types"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # Group
@@ -29,4 +29,4 @@ tags:
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[test_rbac.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Configuration
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

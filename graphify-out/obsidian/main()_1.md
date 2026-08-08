@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "CLI Interface"
-location: "L391"
+community: "Bot Container Scripts"
+location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI_Interface
+  - community/Bot_Container_Scripts
 ---
 
 # main()
 
 ## Connections
-- [[cli()]] - `calls` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[_handle()]] - `calls` [EXTRACTED]
+- [[dashboard_bridge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI_Interface
+#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts

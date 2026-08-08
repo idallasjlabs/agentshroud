@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Module Group 146"
+community: "Enforce-Mode Auto-Revert"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_146
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # _engine()
@@ -16,9 +16,9 @@ tags:
 - [[.test_check_bot_updates_npm_missing_binary()]] - `calls` [EXTRACTED]
 - [[.test_check_bot_updates_update_available()]] - `calls` [EXTRACTED]
 - [[.test_check_openclaw_updates_alias()]] - `calls` [EXTRACTED]
+- [[.test_disconnect_reports_failure_on_engine_errors()]] - `calls` [EXTRACTED]
 - [[.test_disconnect_stops_and_removes_bot()]] - `calls` [EXTRACTED]
-- [[.test_disconnect_swallows_engine_errors()]] - `calls` [EXTRACTED]
-- [[.test_freeze_pauses_bot_even_if_pause_fails()]] - `calls` [EXTRACTED]
+- [[.test_freeze_reports_failure_when_pause_fails()]] - `calls` [EXTRACTED]
 - [[.test_get_logs_combined_handles_partial_failure()]] - `calls` [EXTRACTED]
 - [[.test_get_logs_for_service()]] - `calls` [EXTRACTED]
 - [[.test_get_logs_service_not_found_returns_404()]] - `calls` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[.test_rollback_agentshroud_failure_returns_500()]] - `calls` [EXTRACTED]
 - [[.test_rollback_agentshroud_success()]] - `calls` [EXTRACTED]
 - [[.test_shutdown_brings_stack_down()]] - `calls` [EXTRACTED]
-- [[.test_shutdown_failure_still_reports_shutdown()]] - `calls` [EXTRACTED]
+- [[.test_shutdown_failure_reports_error()]] - `calls` [EXTRACTED]
 - [[.test_start_service_failure_returns_500()]] - `calls` [EXTRACTED]
 - [[.test_start_service_success()]] - `calls` [EXTRACTED]
 - [[.test_status_with_running_and_stopped_containers()]] - `calls` [EXTRACTED]
@@ -46,4 +46,4 @@ tags:
 - [[.test_upgrade_success_with_tests_and_security_review()]] - `calls` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_146
+#graphify/code #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert

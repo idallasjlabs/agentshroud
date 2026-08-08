@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
-location: "L63"
+community: "Egress & RBAC Security Core"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # PathIsolationManager
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_84]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_103]] - `method` [EXTRACTED]
 - [[._apply_path_rewriting()]] - `method` [EXTRACTED]
 - [[._check_cross_user_access()]] - `method` [EXTRACTED]
 - [[._cleanup_user_directory()]] - `method` [EXTRACTED]
@@ -25,14 +25,15 @@ tags:
 - [[.cleanup_abandoned_directories()]] - `method` [EXTRACTED]
 - [[.end_user_session()]] - `method` [EXTRACTED]
 - [[.get_active_users()]] - `method` [EXTRACTED]
-- [[.get_stats()_17]] - `method` [EXTRACTED]
+- [[.get_stats()_18]] - `method` [EXTRACTED]
 - [[.get_user_temp_path()]] - `method` [EXTRACTED]
 - [[.manager()_1]] - `calls` [EXTRACTED]
 - [[.register_user_session()]] - `method` [EXTRACTED]
 - [[.rewrite_path()]] - `method` [EXTRACTED]
 - [[.test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Manages per-user path isolation for temporary files and directories.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -50,8 +51,8 @@ tags:
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[path_isolation.py]] - `contains` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

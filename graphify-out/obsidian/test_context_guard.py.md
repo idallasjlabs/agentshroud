@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "Module Group 133"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_133
+  - community/Gateway_Test_Suite
 ---
 
 # test_context_guard.py
@@ -18,4 +18,4 @@ tags:
 - [[TestSourceTagging]] - `contains` [EXTRACTED]
 - [[check_message()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_133
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

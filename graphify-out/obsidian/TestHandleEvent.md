@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "Module Group 289"
+community: "Gateway Test Suite"
 location: "L475"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_289
+  - community/Gateway_Test_Suite
 ---
 
 # TestHandleEvent
@@ -23,4 +23,4 @@ tags:
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_289
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

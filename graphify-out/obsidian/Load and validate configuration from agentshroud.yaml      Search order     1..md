@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Gateway Config & Lifespan"
-location: "L378"
+community: "Forward Routing & Approval"
+location: "L407"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Forward_Routing__Approval
 ---
 
 # Load and validate configuration from agentshroud.yaml      Search order:     1.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

@@ -1,19 +1,14 @@
 ---
-source_file: "gateway/ssh_proxy/__init__.py"
+source_file: "gateway/skills/__init__.py"
 type: "code"
-community: "SSH Proxy & Gateway Config"
+community: "Gateway Skills System"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Gateway_Skills_System
 ---
 
 # __init__.py
 
-## Connections
-- [[SSHProxy]] - `imports` [EXTRACTED]
-- [[SSHResult]] - `imports` [EXTRACTED]
-- [[proxy.py]] - `re_exports` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/SSH_Proxy__Gateway_Config
+#graphify/code #graphify/EXTRACTED #community/Gateway_Skills_System

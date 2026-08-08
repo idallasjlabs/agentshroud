@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Module Group 70"
+community: "Enforce-Mode Auto-Revert"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_70
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # test_web_api_coverage.py
 
 ## Connections
+- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[KillSwitchAction]] - `imports` [EXTRACTED]
 - [[ModeRequest]] - `imports` [EXTRACTED]
 - [[TestAgentshroudUpdates]] - `contains` [EXTRACTED]
@@ -26,6 +27,7 @@ tags:
 - [[TestOpenclawAliases]] - `contains` [EXTRACTED]
 - [[TestRebuild]] - `contains` [EXTRACTED]
 - [[TestRequireAuth]] - `contains` [EXTRACTED]
+- [[TestResolveBotContainer]] - `contains` [EXTRACTED]
 - [[TestSecurityReport]] - `contains` [EXTRACTED]
 - [[TestServiceControl]] - `contains` [EXTRACTED]
 - [[TestStatus_1]] - `contains` [EXTRACTED]
@@ -37,7 +39,9 @@ tags:
 - [[_fake_ws()]] - `contains` [EXTRACTED]
 - [[_gitless_run()]] - `contains` [EXTRACTED]
 - [[_module_state_guard()]] - `contains` [EXTRACTED]
-- [[client()_16]] - `contains` [EXTRACTED]
-- [[require_auth()]] - `imports` [EXTRACTED]
+- [[_resolve_bot_container()]] - `imports` [EXTRACTED]
+- [[client()_20]] - `contains` [EXTRACTED]
+- [[require_auth()_1]] - `imports` [EXTRACTED]
+- [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_70
+#graphify/code #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert

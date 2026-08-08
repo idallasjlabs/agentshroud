@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "rationale"
-community: "Module Group 74"
+community: "Slack API Proxy"
 location: "L45"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_74
+  - community/Slack_API_Proxy
 ---
 
 # Owner-allowlisted recipient receives body verbatim; pii_redacted=False.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_recipient_body_preserved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_74
+#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy

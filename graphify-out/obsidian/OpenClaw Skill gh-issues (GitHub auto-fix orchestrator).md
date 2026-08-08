@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Module Group 423"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_423
+  - community/skills/openclaw
 ---
 
 # OpenClaw Skill: gh-issues (GitHub auto-fix orchestrator)
@@ -18,4 +18,4 @@ tags:
 - [[gh-issues Phase 6 PR Review Handler (spawn review-fix sub-agents)]] - `contains` [EXTRACTED]
 - [[gh-issues Sub-agent Task Prompt Template]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_423
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

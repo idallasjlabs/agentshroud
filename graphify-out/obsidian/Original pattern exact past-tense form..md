@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Module Group 181"
-location: "L534"
+community: "Gateway Test Suite"
+location: "L529"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_181
+  - community/Gateway_Test_Suite
 ---
 
 # Original pattern: exact past-tense form.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_exact_past_tense()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_181
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

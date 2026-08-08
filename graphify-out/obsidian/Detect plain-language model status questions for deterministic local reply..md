@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Telegram Proxy Core"
-location: "L988"
+community: "Collaborator Prompt Classifiers"
+location: "L1070"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Core
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Detect plain-language model status questions for deterministic local reply.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._looks_like_model_status_question()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Module Group 153"
-location: "L27"
+community: "Gateway Test Suite"
+location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_153
+  - community/Gateway_Test_Suite
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_2]] - `references` [EXTRACTED]
-- [[parse_trivy_output()]] - `references` [EXTRACTED]
-- [[run_trivy_scan()_1]] - `references` [EXTRACTED]
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[.validate_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_153
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

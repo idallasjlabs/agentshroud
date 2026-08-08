@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "Tool Result Sanitizer"
+community: "PII Sanitizer Pipeline"
 location: "L402"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Return list of entity types currently enabled          Returns:             List
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_supported_entities()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

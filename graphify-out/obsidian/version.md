@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/package.json"
+source_file: "docker/config/hermes/manifest.json"
 type: "code"
-community: "Module Group 367"
-location: "L3"
+community: "Bot Skill Config"
+location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_367
+  - community/Bot_Skill_Config
 ---
 
 # version
 
 ## Connections
-- [[package.json]] - `contains` [EXTRACTED]
+- [[manifest.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_367
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

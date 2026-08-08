@@ -1,24 +1,24 @@
 ---
-source_file: "skills/custom/browser-fetch/package.json"
+source_file: "browser-extension/package.json"
 type: "code"
-community: "Module Group 367"
+community: "browser-extension/package.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_367
+  - community/browser-extension/packagejson
 ---
 
 # package.json
 
 ## Connections
-- [[author]] - `contains` [EXTRACTED]
-- [[description]] - `contains` [EXTRACTED]
-- [[keywords]] - `contains` [EXTRACTED]
+- [[description_1]] - `contains` [EXTRACTED]
+- [[devDependencies]] - `contains` [EXTRACTED]
+- [[jest_1]] - `contains` [EXTRACTED]
 - [[license]] - `contains` [EXTRACTED]
-- [[main]] - `contains` [EXTRACTED]
-- [[name]] - `contains` [EXTRACTED]
+- [[name_1]] - `contains` [EXTRACTED]
+- [[private]] - `contains` [EXTRACTED]
 - [[scripts]] - `contains` [EXTRACTED]
-- [[version]] - `contains` [EXTRACTED]
+- [[version_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_367
+#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson

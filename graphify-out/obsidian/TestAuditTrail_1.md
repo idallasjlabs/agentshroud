@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Alert Dispatcher"
-location: "L763"
+community: "PII Config & Test Fixtures"
+location: "L759"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestAuditTrail
@@ -54,7 +54,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test audit chain integrity and tamper detection.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

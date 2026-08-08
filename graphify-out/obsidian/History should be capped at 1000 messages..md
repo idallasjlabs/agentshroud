@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "Module Group 111"
-location: "L137"
+community: "URL/Domain Validation Tests"
+location: "L135"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_111
+  - community/URL/Domain_Validation_Tests
 ---
 
 # History should be capped at 1000 messages.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_conversation_history_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_111
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

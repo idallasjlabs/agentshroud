@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Module Group 98"
-location: "L267"
+community: "Gateway Test Suite"
+location: "L265"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_98
+  - community/Gateway_Test_Suite
 ---
 
 # TestKillSwitchVerification
@@ -27,4 +27,4 @@ tags:
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_98
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "Approval Queue Core"
-location: "L321"
+community: "Gateway Proxy Layer"
+location: "L1440"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_Core
+  - community/Gateway_Proxy_Layer
 ---
 
 # Any
 
 ## Connections
-- [[._append_audit_event()]] - `references` [EXTRACTED]
-- [[.broadcast()_1]] - `references` [EXTRACTED]
+- [[._filter_streaming_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Core
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

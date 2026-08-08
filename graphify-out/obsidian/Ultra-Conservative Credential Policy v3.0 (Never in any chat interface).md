@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
+source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "concept"
-community: "Module Group 405"
+community: "Security Docs"
 location: "line 9-15"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_405
+  - community/Security_Docs
 ---
 
 # Ultra-Conservative Credential Policy v3.0 (Never in any chat interface)
@@ -15,4 +15,4 @@ tags:
 - [[Security Implementation Verification]] - `contains` [EXTRACTED]
 - [[Security Policy Final Decision v3.0]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_405
+#graphify/concept #graphify/EXTRACTED #community/Security_Docs

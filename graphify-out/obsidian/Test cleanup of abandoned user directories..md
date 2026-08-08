@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Module Group 118"
-location: "L225"
+community: "Gateway Test Suite"
+location: "L224"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_118
+  - community/Gateway_Test_Suite
 ---
 
 # Test cleanup of abandoned user directories.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_cleanup_abandoned_directories()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_118
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

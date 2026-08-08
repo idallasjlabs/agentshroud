@@ -1,23 +1,25 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "Module Group 183"
-location: "L46"
+community: "Gateway Test Suite"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_183
+  - community/Gateway_Test_Suite
 ---
 
 # make_proxy()
 
 ## Connections
-- [[LLMProxy_1]] - `references` [EXTRACTED]
 - [[LLMProxy]] - `calls` [EXTRACTED]
+- [[LLMProxy_1]] - `references` [EXTRACTED]
 - [[test_already_local_request_does_not_failover()]] - `calls` [EXTRACTED]
 - [[test_failover_notification_cooldown()]] - `calls` [EXTRACTED]
 - [[test_failover_notification_distinguishes_translated_vs_not()]] - `calls` [EXTRACTED]
 - [[test_failover_routes_qwen3_to_lm_studio_with_normalized_model()]] - `calls` [EXTRACTED]
+- [[test_forward_request_default_still_retries_429()]] - `calls` [EXTRACTED]
+- [[test_forward_request_interactive_header_skips_retries()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_failover.py]] - `contains` [EXTRACTED]
 - [[test_per_request_opt_out_header_skips_failover()]] - `calls` [EXTRACTED]
 - [[test_proxy_failover_anthropic_overloaded_529()]] - `calls` [EXTRACTED]
@@ -33,4 +35,4 @@ tags:
 - [[test_proxy_normal_200_passthrough_untouched()]] - `calls` [EXTRACTED]
 - [[test_proxy_post_retry_429_now_failovers()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_183
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "Module Group 97"
-location: "L82"
+community: "HTTP Forwarder"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_97
+  - community/HTTP_Forwarder
 ---
 
 # Any
 
 ## Connections
-- [[.pull_undelivered()]] - `references` [EXTRACTED]
-- [[.record_inbound()]] - `references` [EXTRACTED]
+- [[.get_stats()_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_97
+#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder

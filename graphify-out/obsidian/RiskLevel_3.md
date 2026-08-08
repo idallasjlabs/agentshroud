@@ -1,22 +1,26 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Module Group 95"
-location: "L34"
+community: "Tool Chain Analyzer"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_95
+  - community/Tool_Chain_Analyzer
 ---
 
 # RiskLevel
 
 ## Connections
-- [[._classify_risk()]] - `references` [EXTRACTED]
-- [[._log_action()]] - `references` [EXTRACTED]
-- [[._requires_approval()]] - `references` [EXTRACTED]
+- [[._load_custom_patterns()]] - `calls` [EXTRACTED]
 - [[Enum]] - `inherits` [EXTRACTED]
-- [[Risk classification for browser actions]] - `rationale_for` [EXTRACTED]
-- [[browse.py]] - `contains` [EXTRACTED]
+- [[Risk levels for tool call chains.]] - `rationale_for` [EXTRACTED]
+- [[TestParamSanitization]] - `uses` [INFERRED]
+- [[TestReversibilityScoring]] - `uses` [INFERRED]
+- [[TestShellBleedPatterns]] - `uses` [INFERRED]
+- [[TestToolChainAnalyzer_1]] - `uses` [INFERRED]
+- [[str]] - `inherits` [EXTRACTED]
+- [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
+- [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_95
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer

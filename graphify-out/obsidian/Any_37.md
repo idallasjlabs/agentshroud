@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Module Group 114"
-location: "L56"
+community: "Gateway Security Module"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_114
+  - community/Gateway_Security_Module
 ---
 
 # Any
 
 ## Connections
-- [[calculate_overall_score()]] - `references` [EXTRACTED]
-- [[calculate_tool_score()]] - `references` [EXTRACTED]
-- [[format_report()]] - `references` [EXTRACTED]
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[._handle_critical()]] - `references` [EXTRACTED]
+- [[categorize_alerts()]] - `references` [EXTRACTED]
+- [[generate_summary()_1]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_114
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

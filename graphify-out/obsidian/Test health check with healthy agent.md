@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "Agent Routing & Request Models"
+community: "Forward Routing & Approval"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agent_Routing__Request_Models
+  - community/Forward_Routing__Approval
 ---
 
 # Test health check with healthy agent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_health_check_healthy_agent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agent_Routing__Request_Models
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

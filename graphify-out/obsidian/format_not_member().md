@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_responses.py"
 type: "code"
-community: "Collaborator Responses"
+community: "Collaborator Response Templates"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Responses
+  - community/Collaborator_Response_Templates
 ---
 
 # format_not_member()
@@ -18,4 +18,4 @@ tags:
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Responses
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates

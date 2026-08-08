@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "Module Group 159"
-location: "L225"
+community: "Gateway Test Suite"
+location: "L223"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_159
+  - community/Gateway_Test_Suite
 ---
 
 # Return True if PromptGuard assigns a non-zero score or blocks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_prompt_guard_detects()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_159
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "rationale"
-community: "Module Group 211"
+community: "Gateway Test Suite"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_211
+  - community/Gateway_Test_Suite
 ---
 
 # Definition of a single service for compose generation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ServiceDef]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_211
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

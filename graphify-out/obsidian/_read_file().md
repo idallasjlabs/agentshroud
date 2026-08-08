@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "Module Group 123"
+community: "Gateway Test Suite"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_123
+  - community/Gateway_Test_Suite
 ---
 
 # _read_file()
@@ -15,6 +15,7 @@ tags:
 - [[.contributing()]] - `calls` [EXTRACTED]
 - [[.readme()]] - `calls` [EXTRACTED]
 - [[.security_md()]] - `calls` [EXTRACTED]
+- [[.test_readme_p1_count_matches_middleware_manager()]] - `calls` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_123
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

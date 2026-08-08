@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "Approval Hardening"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Hardening
+  - community/Gateway_Test_Suite
 ---
 
 # test_approval_hardening.py
@@ -21,4 +21,4 @@ tags:
 - [[TestDeceptionDetection]] - `contains` [EXTRACTED]
 - [[TestDeniedRequest]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Hardening
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

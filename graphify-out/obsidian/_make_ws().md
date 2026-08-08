@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "SOC Authentication"
+community: "Gateway Test Suite"
 location: "L782"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Authentication
+  - community/Gateway_Test_Suite
 ---
 
 # _make_ws()
@@ -21,4 +21,4 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Authentication
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

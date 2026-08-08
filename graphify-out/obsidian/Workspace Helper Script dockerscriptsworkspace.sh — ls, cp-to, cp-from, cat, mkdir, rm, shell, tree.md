@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/architecture/WORKSPACE_USAGE.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "concept"
-community: "Module Group 477"
+community: "Architecture Docs"
 location: "Quick Reference"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_477
+  - community/Architecture_Docs
 ---
 
 # Workspace Helper Script: docker/scripts/workspace.sh — ls, cp-to, cp-from, cat, mkdir, rm, shell, tree
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Workspace Usage Guide]] - `documents` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_477
+#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs

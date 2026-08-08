@@ -1,21 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
-type: "code"
-community: "Module Group 407"
-location: "gateway/security/env_guard.py"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_407
+  - community/docs/vault
 ---
 
-# env_guard.py
+# env_guard.py.md
 
 ## Connections
-- [[Credential Theft via Env Var Access Protection]] - `implements` [EXTRACTED]
-- [[EnvironmentGuard (Class)]] - `contains` [EXTRACTED]
-- [[Procfs Environ Path Blocking (procenviron)]] - `implements` [EXTRACTED]
-- [[egress_filter.py_1]] - `references` [EXTRACTED]
-- [[encrypted_store.py_1]] - `references` [EXTRACTED]
+- [[env_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_407
+#graphify/document #graphify/EXTRACTED #community/docs/vault

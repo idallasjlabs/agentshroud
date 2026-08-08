@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "Module Group 61"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_61
+  - community/Gateway_Test_Suite
 ---
 
 # test_security.py
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[ForwardRequest]] - `imports` [EXTRACTED]
 - [[RateLimiter]] - `imports` [EXTRACTED]
+- [[gatewayingest_apiauth.py (RateLimiter, verify_token)]] - `references` [EXTRACTED]
 - [[test_constant_time_comparison()]] - `contains` [EXTRACTED]
 - [[test_empty_content_rejection()]] - `contains` [EXTRACTED]
 - [[test_extremely_long_content()]] - `contains` [EXTRACTED]
@@ -24,6 +25,10 @@ tags:
 - [[test_nested_pii_patterns()]] - `contains` [EXTRACTED]
 - [[test_null_bytes_in_content()]] - `contains` [EXTRACTED]
 - [[test_rate_limiter()]] - `contains` [EXTRACTED]
+- [[test_shortcut_content_types_accepted()]] - `contains` [EXTRACTED]
+- [[test_shortcut_empty_content_rejected()]] - `contains` [EXTRACTED]
+- [[test_shortcut_rejects_unknown_content_type()]] - `contains` [EXTRACTED]
+- [[test_shortcut_source_accepted()]] - `contains` [EXTRACTED]
 - [[test_special_characters_in_pii()]] - `contains` [EXTRACTED]
 - [[test_sql_injection_attempt()]] - `contains` [EXTRACTED]
 - [[test_timing_attack_resistance()]] - `contains` [EXTRACTED]
@@ -33,4 +38,4 @@ tags:
 - [[test_xss_attempt()]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_61
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

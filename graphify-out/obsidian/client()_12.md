@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "Module Group 311"
-location: "L135"
+community: "Gateway Test Suite"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_311
+  - community/Gateway_Test_Suite
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
+- [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_311
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

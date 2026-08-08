@@ -1,17 +1,17 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/reviews/phase-review-2026-03-03.md"
+source_file: "docs/reviews/phase-review-2026-03-03.md"
 type: "rationale"
-community: "Module Group 280"
+community: "docs/reviews"
 location: "line 243"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_280
+  - community/docs/reviews
 ---
 
 # Go/No-Go Decision: GO - Continue Development
 
 ## Connections
-- [[Phase Review 2026-03-03]] - `contains` [EXTRACTED]
+- [[phase-review-2026-03-03]] - `contains` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_280
+#graphify/rationale #graphify/EXTRACTED #community/docs/reviews

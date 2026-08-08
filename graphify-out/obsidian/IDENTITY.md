@@ -1,16 +1,19 @@
 ---
-source_file: "docs/diagrams/images/diagram-10-data-dictionary.svg"
-type: "image"
-community: "Module Group 539"
+source_file: "docker/config/openclaw/workspace/IDENTITY.md"
+type: "document"
+community: "Docker Deploy Scripts"
+location: "L1"
 tags:
-  - graphify/image
-  - graphify/EXPLICIT
-  - community/Module_Group_539
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Docker_Deploy_Scripts
 ---
 
 # IDENTITY.md
 
 ## Connections
-- [[agentshroud-config Volume]] - `contains` [EXPLICIT]
+- [[IDENTITY.md - Who I Am_2]] - `contains` [EXTRACTED]
+- [[agentshroud-ssh-exec.sh]] - `references` [EXTRACTED]
+- [[init-openclaw-config.sh]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXPLICIT #community/Module_Group_539
+#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts

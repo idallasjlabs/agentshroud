@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "concept"
-community: "Module Group 105"
+community: "docs/vault"
 location: "gateway/ingest_api/ledger.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_105
+  - community/docs/vault
 ---
 
 # DataLedger (SQLite WAL, SHA-256 hash chain, privacy-by-design — hashes only, 90-day retention)
@@ -25,4 +25,4 @@ tags:
 - [[ledger.py — Gateway Core Module]] - `documents` [EXTRACTED]
 - [[main.py — Gateway Core Module]] - `wires` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_105
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

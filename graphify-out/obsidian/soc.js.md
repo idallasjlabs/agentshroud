@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Module Group 128"
+community: "SOC Dashboard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_128
+  - community/SOC_Dashboard
 ---
 
 # soc.js
@@ -25,7 +25,7 @@ tags:
 - [[_confirm()]] - `contains` [EXTRACTED]
 - [[_connectWS()]] - `contains` [EXTRACTED]
 - [[_delete()]] - `contains` [EXTRACTED]
-- [[_esc()]] - `contains` [EXTRACTED]
+- [[_esc()_1]] - `contains` [EXTRACTED]
 - [[_eventFeed]] - `contains` [EXTRACTED]
 - [[_get()]] - `contains` [EXTRACTED]
 - [[_handleWSEvent()]] - `contains` [EXTRACTED]
@@ -77,4 +77,4 @@ tags:
 - [[_ts()]] - `contains` [EXTRACTED]
 - [[_uptime()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_128
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

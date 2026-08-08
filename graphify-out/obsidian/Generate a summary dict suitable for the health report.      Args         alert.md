@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "Module Group 141"
+community: "Gateway Security Module"
 location: "L269"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_141
+  - community/Gateway_Security_Module
 ---
 
 # Generate a summary dict suitable for the health report.      Args:         alert
 
 ## Connections
+- [[generate_summary()]] - `rationale_for` [EXTRACTED]
 - [[generate_summary()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_141
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

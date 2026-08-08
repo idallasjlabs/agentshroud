@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "Module Group 283"
+community: "Gateway Test Suite"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_283
+  - community/Gateway_Test_Suite
 ---
 
 # TestEgressFilterConfig
@@ -25,4 +25,4 @@ tags:
 - [[Test EgressFilterConfig functionality.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_enforce.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_283
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

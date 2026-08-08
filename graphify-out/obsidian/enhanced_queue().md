@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
 community: "Enhanced Approval Queue"
-location: "L97"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED

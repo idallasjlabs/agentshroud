@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 762"
+community: "Gateway Test Suite"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_762
+  - community/Gateway_Test_Suite
 ---
 
 # SSN in outbound messages must be redacted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_ssn_redacted_on_outbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_762
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

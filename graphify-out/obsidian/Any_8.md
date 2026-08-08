@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/ingest_api/version_routes.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Version Routes & Manager Tools"
-location: "L51"
+community: "Approval & FastAPI Ingest"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Version_Routes__Manager_Tools
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Any
 
 ## Connections
-- [[downgrade_version()]] - `references` [EXTRACTED]
-- [[get_current_version()]] - `references` [EXTRACTED]
-- [[get_version_history()]] - `references` [EXTRACTED]
-- [[review_version()]] - `references` [EXTRACTED]
-- [[rollback_version()]] - `references` [EXTRACTED]
-- [[upgrade_version()]] - `references` [EXTRACTED]
+- [[.get_recent()]] - `references` [EXTRACTED]
+- [[.get_stats()_1]] - `references` [EXTRACTED]
+- [[.to_dict()]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Version_Routes__Manager_Tools
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

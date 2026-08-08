@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "rationale"
-community: "Module Group 114"
+community: "Gateway Test Suite"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_114
+  - community/Gateway_Test_Suite
 ---
 
 # Save a health report to history.      Args:         score: Overall score.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[save_to_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_114
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

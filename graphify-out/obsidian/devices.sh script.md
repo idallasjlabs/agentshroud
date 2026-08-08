@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/devices.sh"
 type: "code"
-community: "Module Group 637"
+community: "Docker Deploy Scripts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_637
+  - community/Docker_Deploy_Scripts
 ---
 
 # devices.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[devices.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_637
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

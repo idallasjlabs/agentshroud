@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "PII Sanitizer & Resource Guard"
-location: "L121"
+community: "LLM Proxy Resource Guard"
+location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # Check system-wide resource usage for anomalies (synchronous).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_system_resources()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__Resource_Guard
+#graphify/rationale #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

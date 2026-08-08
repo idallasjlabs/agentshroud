@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "Environment Guard & Leak Detection"
-location: "L318"
+community: "File Sandbox"
+location: "L328"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - community/File_Sandbox
 ---
 
 # Check if path matches any blocked pattern.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._matches_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

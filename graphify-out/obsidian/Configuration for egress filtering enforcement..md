@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "rationale"
-community: "Egress Filter & Approval"
-location: "L89"
+community: "Gateway Test Suite"
+location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Filter__Approval
+  - community/Gateway_Test_Suite
 ---
 
 # Configuration for egress filtering enforcement.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressFilterConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter__Approval
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

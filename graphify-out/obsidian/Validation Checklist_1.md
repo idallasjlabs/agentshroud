@@ -1,0 +1,17 @@
+---
+source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
+type: "document"
+community: "Bot Skill Config"
+location: "L286"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Bot_Skill_Config
+---
+
+# Validation Checklist
+
+## Connections
+- [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

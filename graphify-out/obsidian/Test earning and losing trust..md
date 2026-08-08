@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "Module Group 359"
+community: "Progressive Trust Config"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_359
+  - community/Progressive_Trust_Config
 ---
 
 # Test earning and losing trust.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustProgression]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_359
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config

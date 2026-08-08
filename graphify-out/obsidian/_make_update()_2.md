@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Proxy Inbound Tests"
+community: "Telegram Proxy Test Suite"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound_Tests
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # _make_update()
@@ -105,6 +105,7 @@ tags:
 - [[.test_collaborator_who_else_uses_query_gets_privacy_safe_info()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_whoami_uses_local_notice()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_whoami_without_slash_uses_local_notice()]] - `calls` [EXTRACTED]
+- [[.test_dm_hello_does_not_trigger_probe()]] - `calls` [EXTRACTED]
 - [[.test_encoding_detected_on_getUpdates()]] - `calls` [EXTRACTED]
 - [[.test_full_access_collaborator_passes_despite_middleware_block()]] - `calls` [EXTRACTED]
 - [[.test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative()]] - `calls` [EXTRACTED]
@@ -223,4 +224,4 @@ tags:
 - [[Build a minimal Telegram getUpdates-style update object.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Module Group 291"
+community: "Gateway Test Suite"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_291
+  - community/Gateway_Test_Suite
 ---
 
 # build_dns_query()
@@ -24,4 +24,4 @@ tags:
 - [[Build a minimal DNS query packet in wire format.]] - `rationale_for` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_291
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

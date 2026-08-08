@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "Module Group 622"
+community: "Setup Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_622
+  - community/Setup_Docs
 ---
 
 # iCloud Services Setup (Mail, CalDAV, CardDAV, Notes)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[iCloud App-Specific Passwords for 2FA]] - `requires` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_622
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

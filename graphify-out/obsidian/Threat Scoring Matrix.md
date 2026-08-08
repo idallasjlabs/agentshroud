@@ -1,17 +1,17 @@
 ---
 source_file: "docs/security/threat-model.md"
-type: "concept"
-community: "Module Group 290"
-location: "lines 249-263"
+type: "document"
+community: "Security Docs"
+location: "L249"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_290
+  - community/Security_Docs
 ---
 
 # Threat Scoring Matrix
 
 ## Connections
-- [[STRIDE Threat Model]] - `contains` [EXTRACTED]
+- [[Threat Intelligence Integration]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_290
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

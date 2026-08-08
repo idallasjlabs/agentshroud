@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Environment Guard & Leak Detection"
-location: "L319"
+community: "File Sandbox"
+location: "L317"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - community/File_Sandbox
 ---
 
 # Path traversal attempts should be blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_path_traversal_blocked()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "Version Routes & Manager Tools"
+community: "Gateway Ingest API"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Version_Routes__Manager_Tools
+  - community/Gateway_Ingest_API
 ---
 
 # agentshroud_manager.py
@@ -23,4 +23,4 @@ tags:
 - [[upgrade()]] - `contains` [EXTRACTED]
 - [[version_routes.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Version_Routes__Manager_Tools
+#graphify/code #graphify/EXTRACTED #community/Gateway_Ingest_API

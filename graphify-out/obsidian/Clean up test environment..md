@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Module Group 143"
-location: "L79"
+community: "Egress & RBAC Security Core"
+location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_143
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Clean up test environment.
 
 ## Connections
-- [[.teardown_method()]] - `rationale_for` [EXTRACTED]
+- [[.teardown_method()_1]] - `rationale_for` [EXTRACTED]
+- [[.teardown_method()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_143
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

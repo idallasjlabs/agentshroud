@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "Dashboard Routes & WebSocket"
-location: "L401"
+community: "Approval & FastAPI Ingest"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Routes__WebSocket
+  - community/Approval__FastAPI_Ingest
 ---
 
 # AuthRequired
 
 ## Connections
-- [[dashboard_stats()]] - `references` [EXTRACTED]
-- [[get_collaborators()]] - `references` [EXTRACTED]
+- [[decide_approval()]] - `references` [EXTRACTED]
+- [[list_pending_approvals()]] - `references` [EXTRACTED]
+- [[submit_approval_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Routes__WebSocket
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

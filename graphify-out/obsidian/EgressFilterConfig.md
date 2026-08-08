@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "Egress Filter & Approval"
-location: "L88"
+community: "Gateway Test Suite"
+location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter__Approval
+  - community/Gateway_Test_Suite
 ---
 
 # EgressFilterConfig
@@ -16,7 +16,8 @@ tags:
 - [[.from_environment()]] - `method` [EXTRACTED]
 - [[.get_effective_allowlist()]] - `method` [EXTRACTED]
 - [[.is_denylisted()]] - `method` [EXTRACTED]
-- [[.setup_method()_26]] - `calls` [EXTRACTED]
+- [[.matches_allowlist()]] - `method` [EXTRACTED]
+- [[.setup_method()_29]] - `calls` [EXTRACTED]
 - [[.test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [EXTRACTED]
 - [[.test_config_roundtrip()]] - `calls` [EXTRACTED]
 - [[.test_connect_proxy_policy_allows_smtp_gmail_465()]] - `calls` [EXTRACTED]
@@ -26,8 +27,11 @@ tags:
 - [[.test_denylist_monitor_mode()]] - `calls` [EXTRACTED]
 - [[.test_denylist_overrides_allowlist()]] - `calls` [EXTRACTED]
 - [[.test_denylist_wildcards()]] - `calls` [EXTRACTED]
+- [[.test_domains_in_default_allowlist()]] - `calls` [EXTRACTED]
+- [[.test_domains_not_denylisted()]] - `calls` [EXTRACTED]
 - [[.test_effective_allowlist_basic()]] - `calls` [EXTRACTED]
 - [[.test_effective_allowlist_with_denylist()]] - `calls` [EXTRACTED]
+- [[.test_egress_filter_allows_in_enforce_mode()]] - `calls` [EXTRACTED]
 - [[.test_enforce_mode_blocks_unknown_domains()]] - `calls` [EXTRACTED]
 - [[.test_invalid_mode_handling()]] - `calls` [EXTRACTED]
 - [[.test_logging_differences_by_mode()]] - `calls` [EXTRACTED]
@@ -71,6 +75,7 @@ tags:
 - [[TestLogging]] - `uses` [INFERRED]
 - [[TestMonitorMode]] - `uses` [INFERRED]
 - [[TestNotifyUserBlockedSanitization]] - `uses` [INFERRED]
+- [[TestOpenClawResearchDomainsAllowlisted]] - `uses` [INFERRED]
 - [[TestPerAgentPolicy]] - `uses` [INFERRED]
 - [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
@@ -94,7 +99,7 @@ tags:
 - [[set_egress_config()]] - `references` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_egress_enforce.py]] - `imports` [EXTRACTED]
-- [[test_egress_filter.py]] - `imports` [EXTRACTED]
+- [[test_egress_filter.py]] - `references` [EXTRACTED]
 - [[test_egress_filter_flush_without_notifier()]] - `calls` [EXTRACTED]
 - [[test_egress_filter_no_notification_on_allow()]] - `calls` [EXTRACTED]
 - [[test_egress_filter_notifies_on_deny()]] - `calls` [EXTRACTED]
@@ -104,4 +109,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[update_egress_allowlist()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__Approval
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

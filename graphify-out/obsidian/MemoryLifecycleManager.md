@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Module Group 142"
+community: "Egress & RBAC Security Core"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_142
+  - community/Egress__RBAC_Security_Core
 ---
 
 # MemoryLifecycleManager
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_76]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_93]] - `method` [EXTRACTED]
 - [[._cleanup_old_actions()]] - `method` [EXTRACTED]
 - [[._cleanup_old_threats()]] - `method` [EXTRACTED]
 - [[.archive_file()]] - `method` [EXTRACTED]
@@ -25,11 +25,12 @@ tags:
 - [[.run_lifecycle_maintenance()]] - `method` [EXTRACTED]
 - [[.sanitize_content()]] - `method` [EXTRACTED]
 - [[.scan_content_for_threats()]] - `method` [EXTRACTED]
-- [[.setup_method()_9]] - `calls` [EXTRACTED]
 - [[.setup_method()_10]] - `calls` [EXTRACTED]
+- [[.setup_method()_11]] - `calls` [EXTRACTED]
 - [[.validate_memory_write()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Manages memory file lifecycle and content security.]] - `rationale_for` [EXTRACTED]
 - [[MemoryLifecycleConfig]] - `uses` [INFERRED]
@@ -49,4 +50,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_142
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

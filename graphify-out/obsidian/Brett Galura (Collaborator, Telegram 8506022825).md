@@ -1,16 +1,16 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "Module Group 174"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_174
+  - community/docs/vault
 ---
 
 # Brett Galura (Collaborator, Telegram 8506022825)
 
 ## Connections
-- [[Development Team Structure (TEAM.md)]] - `lists` [EXTRACTED]
+- [[TEAM]] - `lists` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_174
+#graphify/document #graphify/EXTRACTED #community/docs/vault

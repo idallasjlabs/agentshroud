@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Module Group 185"
+community: "Gateway Test Suite"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_185
+  - community/Gateway_Test_Suite
 ---
 
 # Age of credential in days.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.age_days()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_185
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

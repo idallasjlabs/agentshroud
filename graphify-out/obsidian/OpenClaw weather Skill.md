@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/weather/SKILL.md"
 type: "document"
-community: "Module Group 666"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_666
+  - community/skills/openclaw
 ---
 
 # OpenClaw weather Skill
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[wttr.in Weather API (no key required)]] - `uses` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_666
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

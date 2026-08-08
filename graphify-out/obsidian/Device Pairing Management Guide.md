@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Module Group 194"
+community: "Setup Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_194
+  - community/Setup_Docs
 ---
 
 # Device Pairing Management Guide
@@ -15,4 +15,4 @@ tags:
 - [[Dual-Layer Auth Gateway Password + Device Pairing]] - `describes` [EXTRACTED]
 - [[OpenClaw Control UI Pairing Instructions]] - `extends` [INFERRED_HIGH]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_194
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

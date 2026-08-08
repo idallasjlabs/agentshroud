@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "Module Group 111"
-location: "L315"
+community: "URL/Domain Validation Tests"
+location: "L434"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_111
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Re-anchoring prepends a security notice to the system prompt.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_reanchor_prepends_preamble()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_111
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

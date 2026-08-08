@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/ordercli/SKILL.md"
 type: "concept"
-community: "Module Group 107"
+community: "skills/openclaw"
 location: "line 36"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_107
+  - community/skills/openclaw
 ---
 
 # Foodora API Integration (ordercli)
 
 ## Connections
-- [[ordercli Skill]] - `integrates` [EXTRACTED]
+- [[ordercli]] - `integrates` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_107
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

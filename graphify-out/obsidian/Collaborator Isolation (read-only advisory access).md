@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
 type: "concept"
-community: "Module Group 138"
+community: "Bot Container Scripts"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_138
+  - community/Bot_Container_Scripts
 ---
 
 # Collaborator Isolation (read-only advisory access)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OpenClaw Config Workspace PUBLIC-INFO]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_138
+#graphify/concept #graphify/EXTRACTED #community/Bot_Container_Scripts

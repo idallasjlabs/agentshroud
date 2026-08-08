@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Module Group 252"
-location: "L111"
+community: "Gateway Security Module"
+location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_252
+  - community/Gateway_Security_Module
 ---
 
 # Thread-safe asyncio queue for managing egress approval requests.      Features:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressApprovalQueue]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_252
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

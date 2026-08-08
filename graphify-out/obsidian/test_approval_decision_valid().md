@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "Module Group 135"
+community: "Gateway Test Suite"
 location: "L269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_135
+  - community/Gateway_Test_Suite
 ---
 
 # test_approval_decision_valid()
@@ -16,4 +16,4 @@ tags:
 - [[Test ApprovalDecision with valid data]] - `rationale_for` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_135
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

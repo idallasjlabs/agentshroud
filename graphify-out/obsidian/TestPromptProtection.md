@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "Module Group 125"
-location: "L41"
+community: "Gateway Test Suite"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_125
+  - community/Gateway_Test_Suite
 ---
 
 # TestPromptProtection
@@ -36,4 +36,4 @@ tags:
 - [[Test cases for PromptProtection class.]] - `rationale_for` [EXTRACTED]
 - [[test_prompt_protection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_125
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

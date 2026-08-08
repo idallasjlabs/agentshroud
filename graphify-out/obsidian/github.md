@@ -1,18 +1,18 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Module Group 241"
+community: ".mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_241
+  - community/mcpjson
 ---
 
 # github
 
 ## Connections
-- [[.llm_settingsmcp-serversgithubgithub-mcp-wrapper.sh]] - `references` [EXTRACTED]
+- [[.llm_settingsmcp-serversgithubdefaultgithub-mcp-wrapper.sh]] - `references` [EXTRACTED]
 - [[.mcp.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_241
+#graphify/code #graphify/EXTRACTED #community/mcpjson

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/wacli/SKILL.md"
 type: "concept"
-community: "Module Group 598"
+community: "skills/openclaw"
 location: "line 3"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_598
+  - community/skills/openclaw
 ---
 
 # wacli WhatsApp CLI Tool
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw wacli Skill]] - `uses` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_598
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

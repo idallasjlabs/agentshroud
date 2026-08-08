@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "CLI & Core Gateway Routes"
-location: "L33"
+community: "Forward Routing & Approval"
+location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Forward_Routing__Approval
 ---
 
 # Raised when forwarding to agent fails
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ForwardError]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Gateway Config & Lifespan"
+community: "Approval & FastAPI Ingest"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Compile regex patterns for detecting disclosure attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._compile_detection_patterns()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

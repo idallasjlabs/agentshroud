@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Environment Guard & Leak Detection"
-location: "L604"
+community: "PII Config & Test Fixtures"
+location: "L598"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Egress monitoring should be available.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_egress_monitor_loaded()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

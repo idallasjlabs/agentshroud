@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "URL Analyzer & Content Scanner"
+community: "Gateway Test Suite"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/URL_Analyzer__Content_Scanner
+  - community/Gateway_Test_Suite
 ---
 
 # URLVerdict
@@ -23,4 +23,4 @@ tags:
 - [[test_url_analyzer.py]] - `imports` [EXTRACTED]
 - [[url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/URL_Analyzer__Content_Scanner
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

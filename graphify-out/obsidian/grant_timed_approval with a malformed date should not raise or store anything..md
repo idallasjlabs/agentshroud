@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Egress Filter & Approval"
-location: "L515"
+community: "Gateway Test Suite"
+location: "L514"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Filter__Approval
+  - community/Gateway_Test_Suite
 ---
 
 # grant_timed_approval with a malformed date should not raise or store anything.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_grant_timed_approval_invalid_iso_is_ignored()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter__Approval
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/redteam/04-separation-of-privilege.md"
 type: "concept"
-community: "Module Group 512"
+community: "docs/redteam"
 location: "line 202"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_512
+  - community/docs/redteam
 ---
 
 # IntegrityChecker — SHA-256 baseline for critical files
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Separation of Privilege (Remediation) — gateway read-only to agent]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_512
+#graphify/concept #graphify/EXTRACTED #community/docs/redteam

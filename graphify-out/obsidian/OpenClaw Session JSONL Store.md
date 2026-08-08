@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "concept"
-community: "Module Group 107"
+community: "skills/openclaw"
 location: "line 17"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_107
+  - community/skills/openclaw
 ---
 
 # OpenClaw Session JSONL Store
 
 ## Connections
-- [[session-logs Skill]] - `reads` [EXTRACTED]
+- [[session-logs]] - `reads` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_107
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

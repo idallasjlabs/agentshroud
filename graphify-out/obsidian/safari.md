@@ -1,20 +1,17 @@
 ---
-source_file: ".mcp.json"
-type: "code"
-community: "Module Group 241"
-location: "L1"
+source_file: "browser-extension/README.md"
+type: "document"
+community: "browser-extension/README.md"
+location: "L42"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_241
+  - community/browser-extension/READMEmd
 ---
 
-# safari
+# Safari
 
 ## Connections
-- [[.mcp.json]] - `contains` [EXTRACTED]
-- [[opthomebrewbinnpx]] - `references` [EXTRACTED]
-- [[PATH]] - `requires_env` [EXTRACTED]
-- [[safari-mcp]] - `references` [EXTRACTED]
+- [[Structure]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_241
+#graphify/document #graphify/EXTRACTED #community/browser-extension/READMEmd

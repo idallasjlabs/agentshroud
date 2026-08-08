@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Module Group 111"
-location: "L180"
+community: "URL/Domain Validation Tests"
+location: "L178"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_111
+  - community/URL/Domain_Validation_Tests
 ---
 
 # TestSerialization
@@ -18,4 +18,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_111
+#graphify/code #graphify/INFERRED #community/URL/Domain_Validation_Tests

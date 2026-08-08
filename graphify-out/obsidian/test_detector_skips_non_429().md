@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rate_limit_failover.py"
 type: "code"
-community: "Module Group 431"
-location: "L60"
+community: "Gateway Test Suite"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_431
+  - community/Gateway_Test_Suite
 ---
 
 # test_detector_skips_non_429()
@@ -15,4 +15,4 @@ tags:
 - [[is_rate_limited_post_retry()]] - `calls` [EXTRACTED]
 - [[test_rate_limit_failover.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_431
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

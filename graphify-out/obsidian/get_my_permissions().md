@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "CLI & Core Gateway Routes"
-location: "L3802"
+community: "Auth & Exception Types"
+location: "L4014"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Auth__Exception_Types
 ---
 
 # get_my_permissions()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[Get permissions summary for the current user.]] - `rationale_for` [EXTRACTED]
-- [[Request]] - `references` [EXTRACTED]
+- [[List all users and their roles (admin+ only).]] - `rationale_for` [EXTRACTED]
+- [[Request_3]] - `references` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Group Config & Teams"
-location: "L123"
+community: "Collaborator Response Templates"
+location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Config__Teams
+  - community/Collaborator_Response_Templates
 ---
 
 # Return all groups the user belongs to.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_user_groups()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Config__Teams
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates

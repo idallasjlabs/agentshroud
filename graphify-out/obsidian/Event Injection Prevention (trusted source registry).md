@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "concept"
-community: "Module Group 320"
+community: "docs/vault"
 location: "gateway/security/session_security.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_320
+  - community/docs/vault
 ---
 
 # Event Injection Prevention (trusted source registry)
 
 ## Connections
-- [[session_security.py_1]] - `implements` [EXTRACTED]
+- [[session_security.py_2]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_320
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

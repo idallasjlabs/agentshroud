@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "tests/startup_smoke/test_wire_llm_settings.js"
 type: "code"
-community: "Module Group 505"
-location: "L38"
+community: "tests/startup_smoke"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_505
+  - community/tests/startup_smoke
 ---
 
-# Path
+# path
 
 ## Connections
-- [[.__init__()_42]] - `references` [EXTRACTED]
+- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_505
+#graphify/code #graphify/EXTRACTED #community/tests/startup_smoke

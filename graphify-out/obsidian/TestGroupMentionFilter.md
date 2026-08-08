@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Module Group 69"
-location: "L8748"
+community: "Telegram Inbound Tests"
+location: "L8744"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_69
+  - community/Telegram_Inbound_Tests
 ---
 
 # TestGroupMentionFilter
@@ -25,4 +25,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_69
+#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests

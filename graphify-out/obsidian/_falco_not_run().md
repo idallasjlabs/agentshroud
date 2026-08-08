@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Scanner Integration Tests"
-location: "L98"
+community: "Gateway Test Suite"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # _falco_not_run()
@@ -16,7 +16,7 @@ tags:
 - [[._patch_all_not_run()]] - `calls` [EXTRACTED]
 - [[.test_initial_when_not_run()_1]] - `calls` [EXTRACTED]
 - [[.test_one_when_no_tools()]] - `calls` [EXTRACTED]
-- [[Any_63]] - `references` [EXTRACTED]
+- [[Any_67]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Tests
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

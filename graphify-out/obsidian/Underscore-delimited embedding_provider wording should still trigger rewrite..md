@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 677"
+community: "Gateway Test Suite"
 location: "L1009"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_677
+  - community/Gateway_Test_Suite
 ---
 
 # Underscore-delimited embedding_provider wording should still trigger rewrite.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_memory_provider_error_underscore_variant_is_rewritten()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_677
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

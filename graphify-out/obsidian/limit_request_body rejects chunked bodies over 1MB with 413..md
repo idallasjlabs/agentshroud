@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "Module Group 135"
+community: "Gateway Test Suite"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_135
+  - community/Gateway_Test_Suite
 ---
 
 # limit_request_body rejects chunked bodies over 1MB with 413.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_limit_request_body_chunked_body_over_limit_rejected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_135
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

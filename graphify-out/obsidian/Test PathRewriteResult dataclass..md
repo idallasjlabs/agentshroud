@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "RBAC Middleware & Ingest API"
-location: "L319"
+community: "Gateway Test Suite"
+location: "L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Gateway_Test_Suite
 ---
 
 # Test PathRewriteResult dataclass.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPathRewriteResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

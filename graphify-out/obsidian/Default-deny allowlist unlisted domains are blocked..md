@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "rationale"
-community: "HTTP CONNECT Proxy & Egress"
+community: "Gateway Test Suite"
 location: "L529"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTP_CONNECT_Proxy__Egress
+  - community/Gateway_Test_Suite
 ---
 
 # Default-deny allowlist: unlisted domains are blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAllowlistMode]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTP_CONNECT_Proxy__Egress
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

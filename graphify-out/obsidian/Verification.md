@@ -1,0 +1,18 @@
+---
+source_file: "docker/DOCKER-VPN-NETWORKING.md"
+type: "document"
+community: "docker/DOCKER-VPN-NETWORKING.md"
+location: "L93"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/docker/DOCKER-VPN-NETWORKINGmd
+---
+
+# Verification
+
+## Connections
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
+- [[With VPN connected]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/docker/DOCKER-VPN-NETWORKINGmd

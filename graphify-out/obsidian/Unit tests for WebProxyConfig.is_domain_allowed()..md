@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "rationale"
-community: "HTTP CONNECT Proxy & Egress"
+community: "Egress Domain Allowlist"
 location: "L577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTP_CONNECT_Proxy__Egress
+  - community/Egress_Domain_Allowlist
 ---
 
 # Unit tests for WebProxyConfig.is_domain_allowed().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsDomainAllowed]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTP_CONNECT_Proxy__Egress
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Domain_Allowlist

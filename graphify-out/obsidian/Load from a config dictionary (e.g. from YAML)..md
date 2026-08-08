@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "rationale"
-community: "Module Group 281"
+community: "Gateway Security Module"
 location: "L58"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_281
+  - community/Gateway_Security_Module
 ---
 
 # Load from a config dictionary (e.g. from YAML).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_dict()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_281
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

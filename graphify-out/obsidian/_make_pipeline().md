@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "Module Group 184"
+community: "Gateway Test Suite"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_184
+  - community/Gateway_Test_Suite
 ---
 
 # _make_pipeline()
@@ -21,4 +21,4 @@ tags:
 - [[test_pipeline_clamav_not_configured()]] - `calls` [EXTRACTED]
 - [[test_pipeline_short_base64_not_scanned()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_184
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

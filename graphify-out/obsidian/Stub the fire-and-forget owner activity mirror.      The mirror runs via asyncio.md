@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Authentication & Rate Limiting"
+community: "Telegram Inbound Tests"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Authentication__Rate_Limiting
+  - community/Telegram_Inbound_Tests
 ---
 
 # Stub the fire-and-forget owner activity mirror.      The mirror runs via asyncio
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_no_owner_mirror()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Authentication__Rate_Limiting
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Tests

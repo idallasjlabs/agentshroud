@@ -1,17 +1,21 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "document"
-community: "Module Group 369"
+community: "docs/ssh-security-review.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_369
+  - community/docs/ssh-security-reviewmd
 ---
 
 # SSH Security Review
 
 ## Connections
-- [[SSH Command Injection Detection (INJECTION_PATTERNS regex + asyncio subprocess exec)]] - `evaluates` [EXTRACTED]
-- [[SSH Proxy Module (gatewayssh_proxyproxy.py)]] - `reviews` [EXTRACTED]
+- [[Comparison Direct SSH vs. AgentShroud SSH Proxy]] - `contains` [EXTRACTED]
+- [[Recommendations for Production Deployment]] - `contains` [EXTRACTED]
+- [[Risk Summary]] - `contains` [EXTRACTED]
+- [[Threat Model_1]] - `contains` [EXTRACTED]
+- [[ssh-security-review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_369
+#graphify/document #graphify/EXTRACTED #community/docs/ssh-security-reviewmd

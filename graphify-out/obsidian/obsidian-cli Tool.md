@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/obsidian/SKILL.md"
 type: "concept"
-community: "Module Group 107"
+community: "skills/openclaw"
 location: "line 54"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_107
+  - community/skills/openclaw
 ---
 
 # obsidian-cli Tool
 
 ## Connections
-- [[obsidian Skill]] - `uses` [EXTRACTED]
+- [[Obsidian]] - `uses` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_107
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "Privacy Policy"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Privacy_Policy
+  - community/Gateway_Test_Suite
 ---
 
 # test_privacy_policy.py
@@ -25,7 +25,7 @@ tags:
 - [[TestServiceAccessControl]] - `contains` [EXTRACTED]
 - [[_make_rbac()]] - `contains` [EXTRACTED]
 - [[default_policy()]] - `contains` [EXTRACTED]
-- [[enforcer()_1]] - `contains` [EXTRACTED]
-- [[rbac()]] - `contains` [EXTRACTED]
+- [[enforcer()_2]] - `contains` [EXTRACTED]
+- [[rbac()_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Privacy_Policy
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

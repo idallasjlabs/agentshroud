@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Module Group 322"
+community: "PII Sanitizer Pipeline"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_322
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # TestSecurityPipelineChainLatency
@@ -25,7 +25,7 @@ tags:
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[SecurityPipeline.process_inboundoutbound latency via the real pipeline class.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_322
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

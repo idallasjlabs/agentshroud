@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/architecture/WORKSPACE_DECISION.md"
+source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "Module Group 477"
+community: "Architecture Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_477
+  - community/Architecture_Docs
 ---
 
 # Workspace Decision: Docker Volume (not bind mount)
@@ -15,4 +15,4 @@ tags:
 - [[OpenClaw Workspace Usage Guide]] - `implements` [EXTRACTED]
 - [[OpenClaw Write Requirements Skills, Memory, Workspace, Caches, Secrets]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_477
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

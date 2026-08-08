@@ -1,22 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
-type: "code"
-community: "Module Group 436"
-location: "gateway/security/resource_guard.py"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_436
+  - community/docs/vault
 ---
 
-# resource_guard.py
+# resource_guard.py.md
 
 ## Connections
-- [[DoS Prevention via Per-Agent Resource Limits]] - `implements` [EXTRACTED]
-- [[ResourceGuard (Class)]] - `contains` [EXTRACTED]
-- [[ResourceLimits (Dataclass — CPU 30s, Mem 512MB, Disk 100MBmin)]] - `contains` [EXTRACTED]
-- [[egress_monitor.py_1]] - `references` [EXTRACTED]
-- [[health_report.py_1]] - `references` [EXTRACTED]
-- [[subagent_monitor.py_1]] - `references` [EXTRACTED]
+- [[resource_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_436
+#graphify/document #graphify/EXTRACTED #community/docs/vault

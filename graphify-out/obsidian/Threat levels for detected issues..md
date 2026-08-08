@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "URL Analyzer & Content Scanner"
+community: "Gateway Security Module"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URL_Analyzer__Content_Scanner
+  - community/Gateway_Security_Module
 ---
 
 # Threat levels for detected issues.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ThreatLevel_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URL_Analyzer__Content_Scanner
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

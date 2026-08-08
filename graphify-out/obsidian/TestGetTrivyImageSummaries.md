@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Module Group 210"
-location: "L1074"
+community: "Gateway Test Suite"
+location: "L1070"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_210
+  - community/Gateway_Test_Suite
 ---
 
 # TestGetTrivyImageSummaries
@@ -23,4 +23,4 @@ tags:
 - [[.test_returns_one_entry_per_report_file()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_210
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Environment Guard & Leak Detection"
-location: "L178"
+community: "LLM Proxy Resource Guard"
+location: "L174"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Environment_Guard__Leak_Detection
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # TestKeyVaultWired
@@ -22,4 +22,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Environment_Guard__Leak_Detection
+#graphify/code #graphify/INFERRED #community/LLM_Proxy_Resource_Guard

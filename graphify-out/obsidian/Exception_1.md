@@ -1,24 +1,32 @@
 ---
-source_file: ""
+source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Module Group 113"
+community: "Auth & Exception Types"
+location: "L385"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_113
+  - graphify/INFERRED
+  - community/Auth__Exception_Types
 ---
 
 # Exception
 
 ## Connections
-- [[ConfigValidationError]] - `inherits` [EXTRACTED]
-- [[CredentialEntryBlocked]] - `inherits` [EXTRACTED]
-- [[ForwardError]] - `inherits` [EXTRACTED]
-- [[OAuthError]] - `inherits` [EXTRACTED]
-- [[PhishingURLDetected]] - `inherits` [EXTRACTED]
-- [[RouterError]] - `inherits` [EXTRACTED]
-- [[SecurityError]] - `inherits` [EXTRACTED]
-- [[SessionError]] - `inherits` [EXTRACTED]
-- [[SocialEngineeringDetected]] - `inherits` [EXTRACTED]
+- [[.test_forward_middleware_error_handling()]] - `calls` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[ApprovalMode]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[AuditExportConfig_1]] - `uses` [INFERRED]
+- [[AuditExporter]] - `uses` [INFERRED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHExecResponse]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest]] - `uses` [INFERRED]
+- [[SSHWriteFileResponse]] - `uses` [INFERRED]
+- [[global_exception_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_113
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "Module Group 136"
+community: "Gateway Test Suite"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_136
+  - community/Gateway_Test_Suite
 ---
 
 # CollaboratorGreeter
 
 ## Connections
-- [[.__init__()_11]] - `method` [EXTRACTED]
+- [[.__init__()_20]] - `method` [EXTRACTED]
 - [[._get_client()]] - `method` [EXTRACTED]
 - [[._load_state()]] - `method` [EXTRACTED]
 - [[._load_taglines()]] - `method` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_persist_state_exception_is_swallowed()]] - `calls` [EXTRACTED]
 - [[test_state_file_corruption_recovers()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_136
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

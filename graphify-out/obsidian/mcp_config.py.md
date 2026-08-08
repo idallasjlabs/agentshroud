@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "MCP Inspector & Audit"
+community: "MCP Proxy Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Inspector__Audit
+  - community/MCP_Proxy_Config
 ---
 
 # mcp_config.py
@@ -18,10 +18,11 @@ tags:
 - [[MCPToolConfig]] - `contains` [EXTRACTED]
 - [[MCPTransport]] - `contains` [EXTRACTED]
 - [[PermissionLevel]] - `contains` [EXTRACTED]
-- [[__init__.py_6]] - `re_exports` [EXTRACTED]
+- [[__init__.py_7]] - `re_exports` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[mcp_permissions.py]] - `imports_from` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports_from` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Inspector__Audit
+#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config

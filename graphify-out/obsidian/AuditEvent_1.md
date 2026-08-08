@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "Audit Store & Ledger"
+community: "Audit Export Pipeline"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Store__Ledger
+  - community/Audit_Export_Pipeline
 ---
 
 # AuditEvent
 
 ## Connections
-- [[.__init__()_46]] - `method` [EXTRACTED]
+- [[.__init__()_54]] - `method` [EXTRACTED]
 - [[._generate_event_id()]] - `method` [EXTRACTED]
 - [[.compute_content_hash()]] - `method` [EXTRACTED]
 - [[.compute_entry_hash()]] - `method` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[audit_store.py]] - `contains` [EXTRACTED]
 - [[test_audit_export.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Store__Ledger
+#graphify/code #graphify/EXTRACTED #community/Audit_Export_Pipeline

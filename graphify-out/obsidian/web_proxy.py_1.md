@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
-type: "concept"
-community: "Module Group 188"
-location: "gateway/proxy/web_proxy.py"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_188
+  - community/docs/vault
 ---
 
-# web_proxy.py
+# web_proxy.py.md
 
 ## Connections
-- [[Playwright]] - `proxied_by` [EXTRACTED]
-- [[Web Proxy Config Example]] - `describes` [EXTRACTED]
+- [[web_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_188
+#graphify/document #graphify/EXTRACTED #community/docs/vault

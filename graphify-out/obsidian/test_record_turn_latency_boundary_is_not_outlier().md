@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_voice_latency_guard.py"
+type: "code"
+community: "Gateway Test Suite"
+location: "L70"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Gateway_Test_Suite
+---
+
+# test_record_turn_latency_boundary_is_not_outlier()
+
+## Connections
+- [[Exactly at the threshold is NOT an outlier (strict , not =).]] - `rationale_for` [EXTRACTED]
+- [[_record_turn_latency()]] - `calls` [EXTRACTED]
+- [[test_voice_latency_guard.py]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

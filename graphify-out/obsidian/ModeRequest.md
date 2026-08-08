@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Module Group 126"
-location: "L133"
+community: "Enforce-Mode Auto-Revert"
+location: "L155"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_126
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # ModeRequest
@@ -23,9 +23,13 @@ tags:
 - [[.test_set_mode_enforce_revert_task_is_noop()]] - `calls` [EXTRACTED]
 - [[.test_set_mode_monitor_auto_reverts()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
-- [[FastAPI_2]] - `uses` [INFERRED]
-- [[Path_27]] - `uses` [INFERRED]
+- [[CitationVerifier]] - `uses` [INFERRED]
+- [[DraftEntry]] - `uses` [INFERRED]
+- [[FastAPI_3]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
+- [[Path_34]] - `uses` [INFERRED]
 - [[SimpleNamespace_1]] - `uses` [INFERRED]
+- [[SimpleNamespace_2]] - `uses` [INFERRED]
 - [[TestAgentshroudUpdates]] - `uses` [INFERRED]
 - [[TestAutoRevert]] - `uses` [INFERRED]
 - [[TestBotUpdates]] - `uses` [INFERRED]
@@ -45,6 +49,7 @@ tags:
 - [[TestOpenclawAliases]] - `uses` [INFERRED]
 - [[TestRebuild]] - `uses` [INFERRED]
 - [[TestRequireAuth]] - `uses` [INFERRED]
+- [[TestResolveBotContainer]] - `uses` [INFERRED]
 - [[TestSecurityReport]] - `uses` [INFERRED]
 - [[TestServiceControl]] - `uses` [INFERRED]
 - [[TestSetMode]] - `uses` [INFERRED]
@@ -56,4 +61,4 @@ tags:
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_126
+#graphify/code #graphify/INFERRED #community/Enforce-Mode_Auto-Revert

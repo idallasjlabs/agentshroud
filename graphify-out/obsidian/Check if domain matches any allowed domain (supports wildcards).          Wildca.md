@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Module Group 88"
+community: "Gateway Security Module"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_88
+  - community/Gateway_Security_Module
 ---
 
 # Check if domain matches any allowed domain (supports wildcards).          Wildca
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.matches_domain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_88
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

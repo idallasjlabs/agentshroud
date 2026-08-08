@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "Module Group 72"
-location: "L221"
+community: "Gateway Test Suite"
+location: "L220"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_72
+  - community/Gateway_Test_Suite
 ---
 
 # PromptGuard must detect system prompt extraction attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prompt_extraction_attempt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_72
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

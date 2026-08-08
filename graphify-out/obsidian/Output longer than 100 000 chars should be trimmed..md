@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "rationale"
-community: "Module Group 157"
-location: "L31"
+community: "Gateway Test Suite"
+location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_157
+  - community/Gateway_Test_Suite
 ---
 
 # Output longer than 100 000 chars should be trimmed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_output_exceeding_max_length_trimmed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_157
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

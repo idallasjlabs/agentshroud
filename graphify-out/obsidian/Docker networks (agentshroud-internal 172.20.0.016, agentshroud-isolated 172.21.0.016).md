@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/vault/03 - Configuration/docker-compose.yml.md"
+source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "concept"
-community: "Module Group 326"
+community: "docs/vault"
 location: "docker/docker-compose.yml"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_326
+  - community/docs/vault
 ---
 
 # Docker networks (agentshroud-internal 172.20.0.0/16, agentshroud-isolated 172.21.0.0/16)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[docker-compose.yml (primary Docker Compose — services, networks, volumes, secrets)]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_326
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

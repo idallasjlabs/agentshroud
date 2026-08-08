@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/clawhub/SKILL.md"
 type: "document"
-community: "Module Group 350"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_350
+  - community/skills/openclaw
 ---
 
 # OpenClaw Skill: clawhub (skill registry CLI)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OpenClaw Skill Registry (SKILL.md convention)]] - `manages` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_350
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

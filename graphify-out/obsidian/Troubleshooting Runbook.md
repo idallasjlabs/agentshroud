@@ -1,18 +1,18 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/runbooks/troubleshooting.md"
+source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Module Group 353"
+community: "docs/runbooks"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_353
+  - community/docs/runbooks
 ---
 
 # Troubleshooting Runbook
 
 ## Connections
-- [[Common Troubleshooting (bot not responding, kill switch deactivation, container restart loop)]] - `contains` [EXTRACTED]
+- [[Common Issues_1]] - `contains` [EXTRACTED]
 - [[Deployment and Troubleshooting Runbook]] - `extends` [INFERRED]
 - [[Known Benign Log Messages (gateway duplicate access logs, ClamAV freshclam startup, pong timeout)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_353
+#graphify/document #graphify/EXTRACTED #community/docs/runbooks

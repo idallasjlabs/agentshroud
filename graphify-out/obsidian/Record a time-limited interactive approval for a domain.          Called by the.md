@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Module Group 71"
+community: "Gateway Security Module"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_71
+  - community/Gateway_Security_Module
 ---
 
 # Record a time-limited interactive approval for a domain.          Called by the
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.grant_timed_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_71
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

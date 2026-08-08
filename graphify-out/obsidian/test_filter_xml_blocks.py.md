@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "Module Group 89"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_89
+  - community/Gateway_Test_Suite
 ---
 
 # test_filter_xml_blocks.py
@@ -38,4 +38,4 @@ tags:
 - [[test_was_filtered_false_when_no_blocks()]] - `contains` [EXTRACTED]
 - [[test_was_filtered_true_when_block_present()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_89
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/redteam/03-session-isolation.md"
 type: "concept"
-community: "Module Group 432"
+community: "docs/redteam"
 location: "line 197"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_432
+  - community/docs/redteam
 ---
 
 # Cross-session sessions_send gating via approval queue
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Per-User Session Isolation (Remediation)]] - `requires` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_432
+#graphify/concept #graphify/EXTRACTED #community/docs/redteam

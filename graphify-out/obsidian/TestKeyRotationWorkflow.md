@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "Module Group 223"
-location: "L269"
+community: "Gateway Test Suite"
+location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_223
+  - community/Gateway_Test_Suite
 ---
 
 # TestKeyRotationWorkflow
@@ -27,4 +27,4 @@ tags:
 - [[Test the complete rotation workflow.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_223
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

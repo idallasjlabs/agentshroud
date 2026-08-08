@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_dashboard.py"
+source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "Module Group 311"
-location: "L32"
+community: "Gateway Test Suite"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_311
+  - community/Gateway_Test_Suite
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_dashboard.py]] - `contains` [EXTRACTED]
+- [[test_channel_ownership.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_311
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

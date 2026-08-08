@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "rationale"
-community: "Module Group 411"
-location: "L10"
+community: "Approval & FastAPI Ingest"
+location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_411
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Test enhanced status endpoint with observatory mode and egress info.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEnhancedStatus]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_411
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

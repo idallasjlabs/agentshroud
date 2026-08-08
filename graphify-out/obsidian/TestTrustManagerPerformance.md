@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Module Group 489"
+community: "PII Sanitizer Pipeline"
 location: "L172"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_489
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # TestTrustManagerPerformance
@@ -21,7 +21,7 @@ tags:
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[Trust check 10000 lookups in  1s.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_489
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline

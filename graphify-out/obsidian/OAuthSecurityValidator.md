@@ -1,32 +1,35 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "Module Group 103"
+community: "Gateway Test Suite"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_103
+  - community/Gateway_Test_Suite
 ---
 
 # OAuthSecurityValidator
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_35]] - `calls` [EXTRACTED]
-- [[.__init__()_80]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_43]] - `calls` [EXTRACTED]
+- [[.__init__()_99]] - `method` [EXTRACTED]
 - [[.check_state_reuse()]] - `method` [EXTRACTED]
 - [[.create_consent_cookie()]] - `method` [EXTRACTED]
 - [[.record_state_used()]] - `method` [EXTRACTED]
 - [[.register_known_shared_ids()]] - `method` [EXTRACTED]
+- [[.test_cookie_custom_max_age_expires_sooner()]] - `calls` [EXTRACTED]
 - [[.test_http_rejected()]] - `calls` [EXTRACTED]
 - [[.validate_consent_cookie()]] - `method` [EXTRACTED]
 - [[.validate_redirect_uri()]] - `method` [EXTRACTED]
 - [[.validate_request()]] - `method` [EXTRACTED]
 - [[.verify_pkce()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `semantically_similar_to` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
@@ -42,4 +45,4 @@ tags:
 - [[validator()]] - `calls` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_103
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "concept"
-community: "Module Group 393"
+community: "docs/vault"
 location: "docker/Dockerfile.agentshroud"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/Module_Group_393
+  - graphify/INFERRED
+  - community/docs/vault
 ---
 
 # SDK Routing Patches (Anthropic + Telegram → gateway:8080)
@@ -15,4 +15,4 @@ tags:
 - [[ANTHROPIC_BASE_URL env var (gateway8080 intercept)]] - `depends_on` [INFERRED]
 - [[Dockerfile.bot (dockerDockerfile.agentshroud)]] - `applies` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_393
+#graphify/concept #graphify/INFERRED #community/docs/vault

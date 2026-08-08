@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "Module Group 116"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_116
+  - community/Gateway_Test_Suite
 ---
 
 # test_metadata_guard.py
@@ -17,4 +17,4 @@ tags:
 - [[TestDocumentTagging]] - `contains` [EXTRACTED]
 - [[TestMetadataGuard]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_116
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

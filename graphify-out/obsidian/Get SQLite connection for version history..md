@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "rationale"
-community: "Version Routes & Manager Tools"
+community: "gateway/tools"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Version_Routes__Manager_Tools
+  - community/gateway/tools
 ---
 
 # Get SQLite connection for version history.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_get_db()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Version_Routes__Manager_Tools
+#graphify/rationale #graphify/EXTRACTED #community/gateway/tools

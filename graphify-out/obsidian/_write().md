@@ -1,0 +1,28 @@
+---
+source_file: "gateway/tests/test_config_hot_reload.py"
+type: "code"
+community: "Gateway Test Suite"
+location: "L58"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Gateway_Test_Suite
+---
+
+# _write()
+
+## Connections
+- [[Path_24]] - `references` [EXTRACTED]
+- [[test_apply_swaps_only_reloadable_fields()]] - `calls` [EXTRACTED]
+- [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
+- [[test_default_mtime_reads_real_file_and_handles_missing()]] - `calls` [EXTRACTED]
+- [[test_reload_applies_valid_change()]] - `calls` [EXTRACTED]
+- [[test_reload_missing_file_keeps_last_good()]] - `calls` [EXTRACTED]
+- [[test_reload_no_reloadable_field_changed()]] - `calls` [EXTRACTED]
+- [[test_reload_rejects_invalid_and_keeps_last_good()]] - `calls` [EXTRACTED]
+- [[test_reload_rejects_schema_violation_and_keeps_last_good()]] - `calls` [EXTRACTED]
+- [[test_watcher_ignores_missing_file()]] - `calls` [EXTRACTED]
+- [[test_watcher_reloads_on_mtime_change()]] - `calls` [EXTRACTED]
+- [[test_watcher_stops_on_event()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

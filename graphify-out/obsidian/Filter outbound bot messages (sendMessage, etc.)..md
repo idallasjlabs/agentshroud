@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Module Group 60"
-location: "L3106"
+community: "Collaborator Prompt Classifiers"
+location: "L3194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_60
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Filter outbound bot messages (sendMessage, etc.).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._filter_outbound()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_60
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

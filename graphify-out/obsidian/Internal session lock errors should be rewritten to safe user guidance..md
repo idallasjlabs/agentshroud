@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 757"
+community: "Gateway Test Suite"
 location: "L545"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_757
+  - community/Gateway_Test_Suite
 ---
 
 # Internal session lock errors should be rewritten to safe user guidance.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_session_lock_error_is_sanitized_for_users()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_757
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

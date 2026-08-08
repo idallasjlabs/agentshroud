@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Module Group 105"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_105
+  - community/docs/vault
 ---
 
 # ledger.py — Gateway Core Module
@@ -15,4 +15,4 @@ tags:
 - [[DataLedger (SQLite WAL, SHA-256 hash chain, privacy-by-design — hashes only, 90-day retention)]] - `documents` [EXTRACTED]
 - [[main.py — Gateway Core Module]] - `used_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_105
+#graphify/document #graphify/EXTRACTED #community/docs/vault

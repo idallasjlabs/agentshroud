@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "Module Group 195"
-location: "L134"
+community: "Gateway Ingest API"
+location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_195
+  - community/Gateway_Ingest_API
 ---
 
 # Return True if the email address is on the pre-approved recipient list.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_email_recipient_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_195
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Ingest_API

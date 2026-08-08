@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Module Group 168"
-location: "L63"
+community: "Egress & RBAC Security Core"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_168
+  - community/Egress__RBAC_Security_Core
 ---
 
 # MemoryIntegrityMonitor
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_75]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_92]] - `method` [EXTRACTED]
 - [[._compute_file_hash()]] - `method` [EXTRACTED]
 - [[._detect_modification_source()]] - `method` [EXTRACTED]
 - [[._is_in_write_window()]] - `method` [EXTRACTED]
@@ -27,11 +27,12 @@ tags:
 - [[.register_expected_write()]] - `method` [EXTRACTED]
 - [[.scan_all_monitored_files()]] - `method` [EXTRACTED]
 - [[.scan_file()]] - `method` [EXTRACTED]
-- [[.setup_method()_8]] - `calls` [EXTRACTED]
-- [[.setup_method()_10]] - `calls` [EXTRACTED]
+- [[.setup_method()_9]] - `calls` [EXTRACTED]
+- [[.setup_method()_11]] - `calls` [EXTRACTED]
 - [[.test_integrity_database_persistence()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[MemorySecurityConfig]] - `uses` [INFERRED]
@@ -51,4 +52,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_168
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

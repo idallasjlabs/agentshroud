@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "Module Group 304"
+community: "Web Control Center"
 location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_304
+  - community/Web_Control_Center
 ---
 
 # SSH host connectivity status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ssh_hosts()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_304
+#graphify/rationale #graphify/EXTRACTED #community/Web_Control_Center

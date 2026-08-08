@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "Module Group 96"
+community: "Gateway Test Suite"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_96
+  - community/Gateway_Test_Suite
 ---
 
 # ProxyDashboard
 
 ## Connections
-- [[.__init__()_4]] - `method` [EXTRACTED]
+- [[.__init__()_12]] - `method` [EXTRACTED]
 - [[.get_display()]] - `method` [EXTRACTED]
 - [[.get_report()]] - `method` [EXTRACTED]
 - [[.record_message_proxied()]] - `method` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[test_dashboard_uptime()]] - `calls` [EXTRACTED]
 - [[test_proxy_dashboard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_96
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

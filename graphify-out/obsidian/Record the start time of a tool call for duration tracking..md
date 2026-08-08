@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "rationale"
-community: "Module Group 139"
+community: "Gateway Proxy Layer"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_139
+  - community/Gateway_Proxy_Layer
 ---
 
 # Record the start time of a tool call for duration tracking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.start_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_139
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "Module Group 176"
+community: "Approval & FastAPI Ingest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_176
+  - community/Approval__FastAPI_Ingest
 ---
 
 # trivy_report.py
@@ -20,4 +20,4 @@ tags:
 - [[save_report()_1]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_176
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

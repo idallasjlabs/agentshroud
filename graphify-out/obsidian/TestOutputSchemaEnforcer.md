@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "code"
-community: "Module Group 157"
-location: "L22"
+community: "Gateway Test Suite"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_157
+  - community/Gateway_Test_Suite
 ---
 
 # TestOutputSchemaEnforcer
@@ -24,4 +24,4 @@ tags:
 - [[SchemaValidationResult]] - `uses` [INFERRED]
 - [[test_output_schema.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_157
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

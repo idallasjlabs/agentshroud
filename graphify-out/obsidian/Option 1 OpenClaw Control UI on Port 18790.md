@@ -1,0 +1,17 @@
+---
+source_file: "docs/reference/TAILSCALE_COMMANDS.md"
+type: "document"
+community: "docs/reference"
+location: "L7"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/docs/reference
+---
+
+# Option 1: OpenClaw Control UI on Port 18790
+
+## Connections
+- [[Access OpenClaw Dashboard Remotely]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/docs/reference

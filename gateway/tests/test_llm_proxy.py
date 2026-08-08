@@ -188,6 +188,54 @@ async def test_proxy_messages_strips_ollama_prefix_for_openai_compat(monkeypatch
 
 
 @pytest.mark.asyncio
+async def test_proxy_messages_plain_openai_model_substitutes_real_key(monkeypatch):
+    """Regression 2026-08-07: a plain (non-Claude, non-Gemini, non-local)
+    OpenAI-model request — e.g. voice_gateway's "use ChatGPT" direct path —
+    arrives with the GATEWAY's own internal auth token as its Bearer, which
+    OpenAI correctly 401s. This proxy exists so callers never need a real
+    provider key; the gateway must substitute its own openai_api_key here,
+    same as the existing Claude/Gemini special-cased branches already do."""
+    import builtins
+    from unittest.mock import mock_open
+
+    sanitizer = _FakeSanitizer()
+    proxy = LLMProxy(sanitizer=sanitizer)
+    monkeypatch.setattr(llm_proxy_module, "MODEL_MODE", "cloud")
+
+    captured = {}
+
+    async def _fake_forward(url, body, headers):
+        captured["url"] = url
+        captured["headers"] = headers
+        return 200, {"content-type": "application/json"}, b'{"choices": []}'
+
+    proxy._forward_request = _fake_forward  # type: ignore[method-assign]
+
+    real_open = builtins.open
+
+    def fake_open(path, *args, **kwargs):
+        if str(path) == "/run/secrets/openai_api_key":
+            return mock_open(read_data="sk-real-openai-key\n")()
+        return real_open(path, *args, **kwargs)
+
+    monkeypatch.setattr(builtins, "open", fake_open)
+
+    payload = {
+        "model": "gpt-4o-mini",
+        "messages": [{"role": "user", "content": "hello"}],
+    }
+    status, _, _ = await proxy.proxy_messages(
+        "/v1/chat/completions",
+        json.dumps(payload).encode("utf-8"),
+        {"content-type": "application/json", "authorization": "Bearer gateway-internal-token"},
+    )
+
+    assert status == 200
+    assert captured["url"].startswith("https://api.openai.com")
+    assert captured["headers"]["authorization"] == "Bearer sk-real-openai-key"
+
+
+@pytest.mark.asyncio
 async def test_proxy_messages_timeout_returns_openai_compatible_fallback():
     sanitizer = _FakeSanitizer()
     proxy = LLMProxy(sanitizer=sanitizer)

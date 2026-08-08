@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "Module Group 150"
-location: "L729"
+community: "Web Control Center"
+location: "L733"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_150
+  - community/Web_Control_Center
 ---
 
 # Security tools overview — links to all tool-specific dashboards.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security_overview()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_150
+#graphify/rationale #graphify/EXTRACTED #community/Web_Control_Center

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "concept"
-community: "Module Group 158"
+community: "docs/vault"
 location: "gateway/ingest_api/models.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_158
+  - community/docs/vault
 ---
 
 # Pydantic Request/Response Models
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Pydantic]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_158
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

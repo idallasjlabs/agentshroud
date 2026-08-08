@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Telegram Outbound Test Coverage"
+community: "Gateway Test Suite"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Outbound_Test_Coverage
+  - community/Gateway_Test_Suite
 ---
 
 # _make_sanitizer()
 
 ## Connections
-- [[._make_proxy()_3]] - `calls` [EXTRACTED]
+- [[._make_proxy()_5]] - `calls` [EXTRACTED]
 - [[._make_proxy_with_mock_buffer()]] - `calls` [EXTRACTED]
 - [[.test_activity_command_renders_entries()]] - `calls` [EXTRACTED]
 - [[.test_activity_command_reports_tracker_unhealthy()]] - `calls` [EXTRACTED]
@@ -231,4 +231,4 @@ tags:
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Outbound_Test_Coverage
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

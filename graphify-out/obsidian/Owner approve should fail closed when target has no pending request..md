@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Module Group 64"
+community: "Telegram Proxy Test Suite"
 location: "L920"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_64
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Owner /approve should fail closed when target has no pending request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_approve_command_requires_pending_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_64
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

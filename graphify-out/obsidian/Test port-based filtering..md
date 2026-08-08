@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "Module Group 71"
+community: "Gateway Test Suite"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_71
+  - community/Gateway_Test_Suite
 ---
 
 # Test port-based filtering.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_port_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_71
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "RBAC Configuration"
+community: "MCP Proxy Config"
 location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Configuration
+  - community/MCP_Proxy_Config
 ---
 
 # Result of permission check.
 
 ## Connections
+- [[PermissionCheck]] - `rationale_for` [EXTRACTED]
 - [[PermissionResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Configuration
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

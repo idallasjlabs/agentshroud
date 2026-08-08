@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Ledger Config & Test Infra"
-location: "L141"
+community: "Forward Routing & Approval"
+location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ledger_Config__Test_Infra
+  - community/Forward_Routing__Approval
 ---
 
 # sanitizer()
@@ -17,4 +17,4 @@ tags:
 - [[PIISanitizer_2]] - `references` [EXTRACTED]
 - [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ledger_Config__Test_Infra
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

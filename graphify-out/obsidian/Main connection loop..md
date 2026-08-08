@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "Module Group 120"
-location: "L78"
+community: "Gateway Test Suite"
+location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_120
+  - community/Gateway_Test_Suite
 ---
 
 # Main connection loop.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.run()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_120
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

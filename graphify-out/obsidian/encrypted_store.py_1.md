@@ -1,21 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
-type: "code"
-community: "Module Group 407"
-location: "gateway/security/encrypted_store.py"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_407
+  - community/docs/vault
 ---
 
-# encrypted_store.py
+# encrypted_store.py.md
 
 ## Connections
-- [[AES-256-GCM Authenticated Encryption]] - `implements` [EXTRACTED]
-- [[EncryptedStore (Class)]] - `contains` [EXTRACTED]
-- [[Key Rotation (EncryptedStore.rotate)]] - `implements` [EXTRACTED]
-- [[PBKDF2-HMAC-SHA256 Key Derivation (600k iterations)]] - `implements` [EXTRACTED]
-- [[env_guard.py_1]] - `references` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_407
+#graphify/document #graphify/EXTRACTED #community/docs/vault

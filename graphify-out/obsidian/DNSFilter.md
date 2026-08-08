@@ -1,32 +1,33 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
+community: "Gateway Test Suite"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Gateway_Test_Suite
 ---
 
 # DNSFilter
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_35]] - `calls` [EXTRACTED]
-- [[.__init__()_56]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_43]] - `calls` [EXTRACTED]
+- [[.__init__()_69]] - `method` [EXTRACTED]
 - [[._cleanup_rate_window()]] - `method` [EXTRACTED]
 - [[._detect_tunneling()]] - `method` [EXTRACTED]
 - [[._domain_in_allowlist()]] - `method` [EXTRACTED]
 - [[._is_private_ip()_1]] - `method` [EXTRACTED]
-- [[.check()_3]] - `method` [EXTRACTED]
+- [[.check()_4]] - `method` [EXTRACTED]
 - [[.check_rebinding()]] - `method` [EXTRACTED]
 - [[.dns_filter()]] - `calls` [EXTRACTED]
-- [[.get_audit_log()]] - `method` [EXTRACTED]
+- [[.get_audit_log()_2]] - `method` [EXTRACTED]
 - [[.get_flagged_queries()]] - `method` [EXTRACTED]
 - [[.resolve_and_cache()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -49,4 +50,4 @@ tags:
 - [[test_dns_filter.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

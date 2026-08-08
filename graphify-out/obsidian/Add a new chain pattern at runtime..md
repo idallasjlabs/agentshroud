@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Module Group 382"
+community: "Tool Chain Analyzer"
 location: "L581"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_382
+  - community/Tool_Chain_Analyzer
 ---
 
 # Add a new chain pattern at runtime.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.add_pattern()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_382
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain_Analyzer

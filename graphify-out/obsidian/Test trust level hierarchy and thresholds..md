@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "Progressive Trust Levels"
+community: "Cross-Bot Trust Ledger"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Levels
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # Test trust level hierarchy and thresholds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustLevels_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Levels
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger

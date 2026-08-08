@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Module Group 79"
+community: "Gateway Test Suite"
 location: "L842"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_79
+  - community/Gateway_Test_Suite
 ---
 
 # TestEgressSSRF
 
 ## Connections
-- [[.setup_method()_30]] - `method` [EXTRACTED]
+- [[.setup_method()_33]] - `method` [EXTRACTED]
 - [[.test_block_ipv4_mapped_ipv6_loopback()]] - `method` [EXTRACTED]
 - [[.test_block_ipv4_mapped_ipv6_private()]] - `method` [EXTRACTED]
 - [[.test_block_ipv4_private()]] - `method` [EXTRACTED]
@@ -38,7 +38,7 @@ tags:
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_79
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

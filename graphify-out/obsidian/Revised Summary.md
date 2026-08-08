@@ -1,0 +1,17 @@
+---
+source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
+type: "document"
+community: "Planning Docs"
+location: "L281"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Planning_Docs
+---
+
+# Revised Summary
+
+## Connections
+- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

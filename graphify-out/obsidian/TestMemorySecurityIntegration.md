@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Module Group 388"
-location: "L392"
+community: "Egress & RBAC Security Core"
+location: "L391"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_388
+  - community/Egress__RBAC_Security_Core
 ---
 
 # TestMemorySecurityIntegration
 
 ## Connections
-- [[.setup_method()_10]] - `method` [EXTRACTED]
-- [[.teardown_method()_2]] - `method` [EXTRACTED]
+- [[.setup_method()_11]] - `method` [EXTRACTED]
+- [[.teardown_method()_3]] - `method` [EXTRACTED]
 - [[.test_integrated_memory_protection()]] - `method` [EXTRACTED]
 - [[.test_status_reporting()]] - `method` [EXTRACTED]
 - [[ContentThreat]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[Test integration of memory security components.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_388
+#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Module Group 277"
+community: "Gateway Test Suite"
 location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_277
+  - community/Gateway_Test_Suite
 ---
 
 # TestOAuthInjection
@@ -22,4 +22,4 @@ tags:
 - [[Verify gateway-side OAuth-token translation for the Anthropic path.      Root ca]] - `rationale_for` [EXTRACTED]
 - [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_277
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

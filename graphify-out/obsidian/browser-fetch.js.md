@@ -1,21 +1,22 @@
 ---
 source_file: "skills/custom/browser-fetch/browser-fetch.js"
 type: "code"
-community: "Module Group 473"
+community: "Custom Skills"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_473
+  - community/Custom_Skills
 ---
 
 # browser-fetch.js
 
 ## Connections
-- [[appendLog()]] - `contains` [EXTRACTED]
-- [[browserFetch()]] - `contains` [EXTRACTED]
-- [[fs_1]] - `contains` [EXTRACTED]
-- [[path_1]] - `contains` [EXTRACTED]
-- [[{ chromium }]] - `contains` [EXTRACTED]
+- [[SecureBrowser SKILL]] - `semantically_similar_to` [INFERRED]
+- [[appendLog()_2]] - `contains` [EXTRACTED]
+- [[browserFetch()_2]] - `contains` [EXTRACTED]
+- [[fs_3]] - `contains` [EXTRACTED]
+- [[path_3]] - `contains` [EXTRACTED]
+- [[{ chromium }_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_473
+#graphify/code #graphify/EXTRACTED #community/Custom_Skills

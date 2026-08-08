@@ -1,22 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
-type: "code"
-community: "Module Group 436"
-location: "gateway/security/subagent_monitor.py"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_436
+  - community/docs/vault
 ---
 
-# subagent_monitor.py
+# subagent_monitor.py.md
 
 ## Connections
-- [[SubagentEventType (Enum SPAWNEDTERMINATEDKILLEDTOOL_USEDTRUST_VIOLATIONLIMIT_EXCEEDED)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor (Class)]] - `contains` [EXTRACTED]
-- [[Trust Non-Escalation via Spawn Chain (min effective trust)]] - `implements` [EXTRACTED]
-- [[falco_monitor.py_1]] - `references` [EXTRACTED]
-- [[resource_guard.py_1]] - `references` [EXTRACTED]
-- [[session_security.py_1]] - `references` [EXTRACTED]
+- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_436
+#graphify/document #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "Module Group 72"
-location: "L42"
+community: "Gateway Test Suite"
+location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_72
+  - community/Gateway_Test_Suite
 ---
 
 # Minimal approval queue mock that accepts items.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_approval_queue()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_72
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

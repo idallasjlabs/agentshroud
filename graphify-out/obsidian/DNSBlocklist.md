@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "Module Group 100"
+community: "Gateway Test Suite"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_100
+  - community/Gateway_Test_Suite
 ---
 
 # DNSBlocklist
 
 ## Connections
-- [[.__init__()_12]] - `method` [EXTRACTED]
+- [[.__init__()_21]] - `method` [EXTRACTED]
 - [[._periodic_update_loop()]] - `method` [EXTRACTED]
 - [[.download_blocklist()]] - `method` [EXTRACTED]
 - [[.is_blocked()]] - `method` [EXTRACTED]
@@ -72,4 +72,4 @@ tags:
 - [[test_dns_blocklist.py]] - `imports` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_100
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

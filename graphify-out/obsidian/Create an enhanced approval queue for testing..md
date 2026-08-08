@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
 community: "Enhanced Approval Queue"
-location: "L98"
+location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

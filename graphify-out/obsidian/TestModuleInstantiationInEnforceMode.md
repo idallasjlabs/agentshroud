@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
-location: "L151"
+community: "Egress & RBAC Security Core"
+location: "L147"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # TestModuleInstantiationInEnforceMode
@@ -37,11 +37,11 @@ tags:
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
-- [[SecurityConfig]] - `uses` [INFERRED]
+- [[SecurityConfig_2]] - `uses` [INFERRED]
 - [[SecurityModuleConfig]] - `uses` [INFERRED]
 - [[SubagentMonitorConfig]] - `uses` [INFERRED]
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[Verify modules can instantiate and operate in enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core

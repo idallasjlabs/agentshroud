@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Module Group 73"
+community: "Gateway Test Suite"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_73
+  - community/Gateway_Test_Suite
 ---
 
 # _FakeSanitizer
 
 ## Connections
-- [[.block_credentials()_1]] - `method` [EXTRACTED]
-- [[.filter_xml_blocks()_1]] - `method` [EXTRACTED]
-- [[.sanitize()_3]] - `method` [EXTRACTED]
+- [[.block_credentials()]] - `method` [EXTRACTED]
+- [[.filter_xml_blocks()]] - `method` [EXTRACTED]
+- [[.sanitize()]] - `method` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[test_credential_injector_called_in_streaming_path()]] - `calls` [EXTRACTED]
 - [[test_credential_injector_does_not_overwrite_existing_bearer()]] - `calls` [EXTRACTED]
@@ -24,6 +24,7 @@ tags:
 - [[test_filter_outbound_streaming_filters_openai_delta_content()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 - [[test_proxy_messages_cloud_mode_keeps_claude_and_uses_anthropic()]] - `calls` [EXTRACTED]
+- [[test_proxy_messages_plain_openai_model_substitutes_real_key()]] - `calls` [EXTRACTED]
 - [[test_proxy_messages_rewrites_claude_opus_to_local_model()]] - `calls` [EXTRACTED]
 - [[test_proxy_messages_strips_ollama_prefix_for_openai_compat()]] - `calls` [EXTRACTED]
 - [[test_proxy_messages_timeout_returns_anthropic_compatible_fallback()]] - `calls` [EXTRACTED]
@@ -33,4 +34,4 @@ tags:
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `calls` [EXTRACTED]
 - [[test_streaming_tool_acl_skips_unknown_user()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_73
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

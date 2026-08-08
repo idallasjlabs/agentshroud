@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "Audit Store & Ledger"
-location: "L301"
+community: "Audit Export Pipeline"
+location: "L299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Store__Ledger
+  - community/Audit_Export_Pipeline
 ---
 
 # TestAuditStoreBotId
@@ -26,4 +26,4 @@ tags:
 - [[Verify per-bot filtering in AuditStore (v1.1.0 multi-bot support).]] - `rationale_for` [EXTRACTED]
 - [[test_audit_export.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Store__Ledger
+#graphify/code #graphify/EXTRACTED #community/Audit_Export_Pipeline

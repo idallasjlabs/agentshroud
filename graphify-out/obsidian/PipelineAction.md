@@ -1,23 +1,25 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Pipeline Action & Instruction Envelope"
-location: "L31"
+community: "Security Pipeline Core"
+location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Pipeline_Action__Instruction_Envelope
+  - community/Security_Pipeline_Core
 ---
 
 # PipelineAction
 
 ## Connections
+- [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
+- [[FilterResult]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[PipelineResult_1]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
@@ -34,14 +36,19 @@ tags:
 - [[TestE2E10FailClosed]] - `uses` [INFERRED]
 - [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
 - [[TestInboundFallbackToDirectSanitizer]] - `uses` [INFERRED]
+- [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
 - [[TestInboundPipelineBlockedNonOwner]] - `uses` [INFERRED]
 - [[TestInboundPipelineBlockedOwner]] - `uses` [INFERRED]
 - [[TestInboundPipelineExceptionNonOwner]] - `uses` [INFERRED]
 - [[TestInboundPipelineExceptionOwner]] - `uses` [INFERRED]
 - [[TestInboundPipelineWired]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
+- [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
 - [[TestOutboundPipelineBlocked]] - `uses` [INFERRED]
 - [[TestOutboundPipelineWired]] - `uses` [INFERRED]
+- [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
+- [[TestTrustViolationRecording]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
@@ -56,5 +63,6 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
+- [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Pipeline_Action__Instruction_Envelope
+#graphify/code #graphify/INFERRED #community/Security_Pipeline_Core

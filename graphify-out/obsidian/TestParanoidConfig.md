@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Module Group 99"
+community: "Gateway Test Suite"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_99
+  - community/Gateway_Test_Suite
 ---
 
 # TestParanoidConfig
@@ -32,8 +32,8 @@ tags:
 - [[.test_telemetry_disabled()]] - `method` [EXTRACTED]
 - [[.test_trust_manager_enabled()]] - `method` [EXTRACTED]
 - [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[paranoid.env should enable ALL security features.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_99
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

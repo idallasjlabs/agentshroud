@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "Module Group 120"
-location: "L50"
+community: "Gateway Test Suite"
+location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_120
+  - community/Gateway_Test_Suite
 ---
 
 # Subscribe to EventBus and forward matching events to the client.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._event_fan_out()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_120
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

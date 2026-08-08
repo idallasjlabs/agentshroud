@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Module Group 78"
+community: "Gateway Test Suite"
 location: "L37"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_78
+  - community/Gateway_Test_Suite
 ---
 
 # MCPToolCall
@@ -23,6 +23,8 @@ tags:
 - [[.test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
 - [[.test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
 - [[.test_elevated_agent_can_execute()]] - `calls` [EXTRACTED]
+- [[.test_execute_none_content_result_does_not_unbind()]] - `calls` [EXTRACTED]
+- [[.test_execute_with_content_still_inspects()]] - `calls` [EXTRACTED]
 - [[.test_gateway_data_parameter_violation_blocks_non_owner()]] - `calls` [EXTRACTED]
 - [[.test_injection_blocked()]] - `calls` [EXTRACTED]
 - [[.test_low_risk_tool_allowed()]] - `calls` [EXTRACTED]
@@ -34,7 +36,7 @@ tags:
 - [[.test_private_parameter_violation_blocks_non_owner()]] - `calls` [EXTRACTED]
 - [[.test_private_tool_violation_emits_event()]] - `calls` [EXTRACTED]
 - [[.test_processing_time_recorded()]] - `calls` [EXTRACTED]
-- [[.test_rate_limit_enforced()_1]] - `calls` [EXTRACTED]
+- [[.test_rate_limit_enforced()_2]] - `calls` [EXTRACTED]
 - [[.test_read_only_agent_can_read()]] - `calls` [EXTRACTED]
 - [[.test_read_only_agent_denied_execute()]] - `calls` [EXTRACTED]
 - [[.test_session_store_parameter_violation_blocks_non_owner()]] - `calls` [EXTRACTED]
@@ -42,19 +44,23 @@ tags:
 - [[.test_stats_tracking()]] - `calls` [EXTRACTED]
 - [[.test_unknown_server_default_allow()_1]] - `calls` [EXTRACTED]
 - [[.test_workspace_contributor_parameter_violation_blocks_non_owner()]] - `calls` [EXTRACTED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
+- [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
+- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
+- [[MonkeyPatch]] - `uses` [INFERRED]
 - [[Represents an MCP tool_use request.]] - `rationale_for` [EXTRACTED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestApprovalQueue]] - `uses` [INFERRED]
@@ -68,6 +74,7 @@ tags:
 - [[TestDataclasses]] - `uses` [INFERRED]
 - [[TestEgressFilterPaths]] - `uses` [INFERRED]
 - [[TestEmitPrivacyEvent]] - `uses` [INFERRED]
+- [[TestExecuteResultInspectionBinding]] - `uses` [INFERRED]
 - [[TestExecuteToolCall]] - `uses` [INFERRED]
 - [[TestExtractEgressTargets]] - `uses` [INFERRED]
 - [[TestHashChainIntegration]] - `uses` [INFERRED]
@@ -93,13 +100,18 @@ tags:
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
-- [[__init__.py_6]] - `imports` [EXTRACTED]
+- [[_FakeApprovalQueue]] - `uses` [INFERRED]
+- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[make_call()]] - `calls` [EXTRACTED]
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy_endpoint()]] - `calls` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
+- [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
+- [[test_mcp_proxy_allows_policy_permitted_call()]] - `calls` [EXTRACTED]
+- [[test_mcp_proxy_blocks_policy_denied_call()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
+- [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_78
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

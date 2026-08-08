@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Module Group 546"
-location: "L806"
+community: "Gateway Proxy Layer"
+location: "L856"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_546
+  - community/Gateway_Proxy_Layer
 ---
 
 # Clean shutdown — close all connections.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.shutdown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_546
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

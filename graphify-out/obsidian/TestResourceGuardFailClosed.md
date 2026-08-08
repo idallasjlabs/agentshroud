@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "PII Sanitizer & Resource Guard"
-location: "L13"
+community: "LLM Proxy Resource Guard"
+location: "L10"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # TestResourceGuardFailClosed
@@ -24,4 +24,4 @@ tags:
 - [[Verify resource check methods return False (deny) on exception.]] - `rationale_for` [EXTRACTED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer__Resource_Guard
+#graphify/code #graphify/INFERRED #community/LLM_Proxy_Resource_Guard

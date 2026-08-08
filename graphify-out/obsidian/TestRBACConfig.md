@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "RBAC Configuration"
-location: "L32"
+community: "Auth & Exception Types"
+location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # TestRBACConfig
@@ -27,7 +27,8 @@ tags:
 - [[Resource_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[Test RBAC configuration.]] - `rationale_for` [EXTRACTED]
+- [[Test default RBAC configuration initialization.]] - `rationale_for` [EXTRACTED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Configuration
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

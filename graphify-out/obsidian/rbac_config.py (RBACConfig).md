@@ -1,0 +1,18 @@
+---
+source_file: "gateway/security/rbac_config.py"
+type: "code"
+community: "SOC RBAC & Auth"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/SOC_RBAC__Auth
+---
+
+# rbac_config.py (RBACConfig)
+
+## Connections
+- [[test_group_isolation.py]] - `references` [EXTRACTED]
+- [[test_shared_memory_write_acl.py]] - `references` [EXTRACTED]
+- [[test_soc_router_coverage.py]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth

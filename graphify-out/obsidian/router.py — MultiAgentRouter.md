@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "code"
-community: "Module Group 394"
+community: "docs/vault"
 location: "gateway/ingest_api/router.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_394
+  - community/docs/vault
 ---
 
 # router.py — MultiAgentRouter
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MultiAgentRouter_1]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_394
+#graphify/code #graphify/EXTRACTED #community/docs/vault

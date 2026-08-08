@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_apply_patches.js"
 type: "code"
-community: "Module Group 408"
+community: "tests/startup_smoke"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_408
+  - community/tests/startup_smoke
 ---
 
 # test_apply_patches.js
@@ -15,10 +15,10 @@ tags:
 - [[PATCHES_FILE]] - `contains` [EXTRACTED]
 - [[assert()]] - `contains` [EXTRACTED]
 - [[baseConfig()]] - `contains` [EXTRACTED]
-- [[fs_2]] - `contains` [EXTRACTED]
+- [[fs_4]] - `contains` [EXTRACTED]
 - [[os]] - `contains` [EXTRACTED]
-- [[path_2]] - `contains` [EXTRACTED]
+- [[path_4]] - `contains` [EXTRACTED]
 - [[runPatches()]] - `contains` [EXTRACTED]
 - [[{ spawnSync }]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_408
+#graphify/code #graphify/EXTRACTED #community/tests/startup_smoke

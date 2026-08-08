@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "Module Group 303"
-location: "L157"
+community: "Gateway Proxy Layer"
+location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_303
+  - community/Gateway_Proxy_Layer
 ---
 
 # Handle a single incoming client connection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._handle_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_303
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Module Group 260"
-location: "L8835"
+community: "Gateway Test Suite"
+location: "L9207"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_260
+  - community/Gateway_Test_Suite
 ---
 
 # TestFullAccessMiddlewareBypass
@@ -26,4 +26,4 @@ tags:
 - [[full_access collaborators must pass through middleware and secondary pipeline bl]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_260
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

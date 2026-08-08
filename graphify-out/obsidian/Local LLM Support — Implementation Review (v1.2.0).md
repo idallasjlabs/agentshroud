@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/planning/LOCAL_LLM_REVIEW.md"
+source_file: "docs/planning/LOCAL_LLM_REVIEW.md"
 type: "document"
-community: "Module Group 580"
+community: "Planning Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_580
+  - community/Planning_Docs
 ---
 
 # Local LLM Support — Implementation Review (v1.2.0)
@@ -14,4 +14,4 @@ tags:
 - [[LLM Proxy Source gatewayproxyllm_proxy.py]] - `references` [EXTRACTED]
 - [[LLM Routing Architecture OpenClaw → gateway8080v1 → LLMProxy → Backends]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_580
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

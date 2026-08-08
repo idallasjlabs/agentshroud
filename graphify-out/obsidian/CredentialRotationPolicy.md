@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Module Group 108"
+community: "Gateway Security Module"
 location: "L97"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Module_Group_108
+  - graphify/EXTRACTED
+  - community/Gateway_Security_Module
 ---
 
 # CredentialRotationPolicy
@@ -17,4 +17,4 @@ tags:
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_108
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

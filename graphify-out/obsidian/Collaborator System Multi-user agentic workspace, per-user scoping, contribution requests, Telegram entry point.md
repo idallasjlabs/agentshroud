@@ -1,17 +1,17 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/agentshroud-knowledge.md"
+source_file: "docs/agentshroud-knowledge.md"
 type: "concept"
-community: "Module Group 392"
+community: "docs/agentshroud-knowledge.md"
 location: "Collaborator System — Full Detail"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_392
+  - community/docs/agentshroud-knowledgemd
 ---
 
 # Collaborator System: Multi-user agentic workspace, per-user scoping, contribution requests, Telegram entry point
 
 ## Connections
-- [[AgentShroud Knowledge Reference]] - `describes` [EXTRACTED]
+- [[agentshroud-knowledge]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_392
+#graphify/concept #graphify/EXTRACTED #community/docs/agentshroud-knowledgemd

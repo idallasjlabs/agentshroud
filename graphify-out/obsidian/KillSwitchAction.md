@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Module Group 70"
-location: "L119"
+community: "Enforce-Mode Auto-Revert"
+location: "L141"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_70
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # KillSwitchAction
@@ -14,7 +14,11 @@ tags:
 ## Connections
 - [[.test_killswitch_action_default_unconfirmed()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
+- [[CitationVerifier]] - `uses` [INFERRED]
+- [[DraftEntry]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
 - [[SimpleNamespace_1]] - `uses` [INFERRED]
+- [[SimpleNamespace_2]] - `uses` [INFERRED]
 - [[TestAgentshroudUpdates]] - `uses` [INFERRED]
 - [[TestBotUpdates]] - `uses` [INFERRED]
 - [[TestConfig_1]] - `uses` [INFERRED]
@@ -27,6 +31,7 @@ tags:
 - [[TestOpenclawAliases]] - `uses` [INFERRED]
 - [[TestRebuild]] - `uses` [INFERRED]
 - [[TestRequireAuth]] - `uses` [INFERRED]
+- [[TestResolveBotContainer]] - `uses` [INFERRED]
 - [[TestSecurityReport]] - `uses` [INFERRED]
 - [[TestServiceControl]] - `uses` [INFERRED]
 - [[TestStatus_1]] - `uses` [INFERRED]
@@ -36,4 +41,4 @@ tags:
 - [[killswitch()]] - `references` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_70
+#graphify/code #graphify/INFERRED #community/Enforce-Mode_Auto-Revert

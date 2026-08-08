@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Gateway Config & Lifespan"
+community: "Gateway Security Module"
 location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Gateway_Security_Module
 ---
 
 # Calculate similarity between text and protected content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._calculate_similarity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

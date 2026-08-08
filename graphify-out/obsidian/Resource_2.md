@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Module Group 544"
-location: "L147"
+community: "SOC Dashboard"
+location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_544
+  - community/SOC_Dashboard
 ---
 
 # Resource
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.require()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_544
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

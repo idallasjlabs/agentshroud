@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "PII Sanitizer & Resource Guard"
-location: "L90"
+community: "LLM Proxy Resource Guard"
+location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # Stop background monitoring task cleanly.
 
 ## Connections
-- [[.stop()_10]] - `rationale_for` [EXTRACTED]
+- [[.stop()_11]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__Resource_Guard
+#graphify/rationale #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

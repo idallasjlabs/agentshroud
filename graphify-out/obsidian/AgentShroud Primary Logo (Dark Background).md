@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logo.png"
 type: "image"
-community: "Module Group 366"
+community: "branding/logos"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Module_Group_366
+  - community/branding/logos
 ---
 
 # AgentShroud Primary Logo (Dark Background)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Logo PNG (Dark Background)]] - `semantically_similar_to` [INFERRED]
 - [[Trust Manager Module Icon (256x256)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Module_Group_366
+#graphify/image #graphify/INFERRED #community/branding/logos

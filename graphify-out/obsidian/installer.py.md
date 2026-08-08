@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "Module Group 229"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_229
+  - community/Gateway_Test_Suite
 ---
 
 # installer.py
 
 ## Connections
+- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[InstallConfig]] - `contains` [EXTRACTED]
 - [[PrerequisiteCheck]] - `contains` [EXTRACTED]
 - [[check_prerequisites()]] - `contains` [EXTRACTED]
@@ -22,4 +23,4 @@ tags:
 - [[security.py]] - `imports_from` [EXTRACTED]
 - [[start_install()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_229
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

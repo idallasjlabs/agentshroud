@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Tool Result Sanitizer"
+community: "Security Module Middleware"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer
+  - community/Security_Module_Middleware
 ---
 
 # Test content extraction from dictionary results
 
 ## Connections
 - [[.test_extract_scannable_content_dict()]] - `rationale_for` [EXTRACTED]
+- [[.test_extract_scannable_content_list()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware

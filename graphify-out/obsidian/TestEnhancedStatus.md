@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "code"
-community: "Module Group 411"
-location: "L9"
+community: "Approval & FastAPI Ingest"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_411
+  - community/Approval__FastAPI_Ingest
 ---
 
 # TestEnhancedStatus
@@ -19,4 +19,4 @@ tags:
 - [[Test enhanced status endpoint with observatory mode and egress info.]] - `rationale_for` [EXTRACTED]
 - [[test_enhanced_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_411
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "Agent Routing & Request Models"
+community: "Forward Routing & Approval"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Routing__Request_Models
+  - community/Forward_Routing__Approval
 ---
 
 # test_list_targets()
@@ -15,4 +15,4 @@ tags:
 - [[Test listing all configured targets]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Routing__Request_Models
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "Gateway Config & Lifespan"
-location: "L56"
+community: "Gateway Security Module"
+location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Gateway_Security_Module
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_88]] - `references` [EXTRACTED]
-- [[.get_protection_stats()]] - `references` [EXTRACTED]
+- [[._parse_service_network_config()]] - `references` [EXTRACTED]
+- [[._validate_network_definitions()]] - `references` [EXTRACTED]
+- [[.get_security_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

@@ -1,19 +1,27 @@
 ---
 source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "Module Group 297"
+community: "docs/vault"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_297
+  - community/docs/vault
 ---
 
 # spaCy
 
 ## Connections
-- [[Container Errors]] - `references` [EXTRACTED]
-- [[PII Pipeline Errors]] - `troubleshoots` [EXTRACTED]
+- [[Container Errors_1]] - `references` [EXTRACTED]
+- [[Fallback Behavior]] - `contains` [EXTRACTED]
+- [[First-Boot Performance]] - `contains` [EXTRACTED]
+- [[Model]] - `contains` [EXTRACTED]
+- [[PII Pipeline Errors_2]] - `troubleshoots` [EXTRACTED]
 - [[Presidio Analyzer]] - `used_by` [EXTRACTED]
+- [[Purpose_157]] - `contains` [EXTRACTED]
+- [[Related Notes_49]] - `contains` [EXTRACTED]
+- [[Where Used_5]] - `contains` [EXTRACTED]
 - [[sanitizer.py (PII)]] - `powers` [EXTRACTED]
+- [[spacy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_297
+#graphify/document #graphify/EXTRACTED #community/docs/vault

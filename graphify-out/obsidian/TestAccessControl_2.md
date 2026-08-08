@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Module Group 111"
-location: "L67"
+community: "URL/Domain Validation Tests"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_111
+  - community/URL/Domain_Validation_Tests
 ---
 
 # TestAccessControl
@@ -23,4 +23,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_111
+#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

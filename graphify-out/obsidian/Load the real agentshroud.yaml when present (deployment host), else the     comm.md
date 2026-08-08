@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "Module Group 246"
+community: "Forward Routing & Approval"
 location: "L17"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_246
+  - community/Forward_Routing__Approval
 ---
 
 # Load the real agentshroud.yaml when present (deployment host), else the     comm
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_load_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_246
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

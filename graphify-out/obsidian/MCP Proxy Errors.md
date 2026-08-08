@@ -1,19 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Module Group 158"
+community: "docs/vault"
+location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_158
+  - community/docs/vault
 ---
 
 # MCP Proxy Errors
 
 ## Connections
-- [[Error Index]] - `indexed_by` [EXTRACTED]
-- [[MCP Proxy (tool call inspection layer)]] - `documents` [EXTRACTED]
-- [[MCP Proxy Wrapper (mcp-proxy-wrapper.js — stdio to HTTP translation)]] - `references` [EXTRACTED]
-- [[agentshroud.yaml (master config)]] - `references` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_158
+#graphify/document #graphify/EXTRACTED #community/docs/vault

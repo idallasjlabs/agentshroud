@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "code"
-community: "Module Group 237"
+community: "docs/vault"
 location: "gateway/runtime/config.py"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_237
+  - community/docs/vault
 ---
 
 # config.py (Runtime)
@@ -18,4 +18,4 @@ tags:
 - [[engine.py (Runtime)]] - `configures` [EXTRACTED]
 - [[podman_engine.py (Runtime)]] - `configures` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_237
+#graphify/code #graphify/INFERRED #community/docs/vault

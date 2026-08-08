@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/state.py"
 type: "code"
-community: "Gateway Config & Lifespan"
+community: "PII Sanitizer Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # state.py
@@ -23,8 +23,9 @@ tags:
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
+- [[SSHProxy]] - `imports` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[approval.py]] - `imports_from` [EXTRACTED]
 - [[config.py]] - `imports_from` [EXTRACTED]
@@ -41,10 +42,12 @@ tags:
 - [[mcp_proxy.py]] - `imports_from` [EXTRACTED]
 - [[pipeline.py]] - `imports_from` [EXTRACTED]
 - [[prompt_guard.py]] - `imports_from` [EXTRACTED]
+- [[proxy.py]] - `imports_from` [EXTRACTED]
 - [[router.py]] - `imports_from` [EXTRACTED]
 - [[sanitizer.py]] - `imports_from` [EXTRACTED]
+- [[test_mcp_result_endpoint.py]] - `references` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports_from` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `imports_from` [EXTRACTED]
 - [[trust_manager.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

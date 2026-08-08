@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
 type: "concept"
-community: "Module Group 449"
+community: "docs/vault"
 location: "gateway/web/api.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_449
+  - community/docs/vault
 ---
 
 # WebSocket Dashboard Streaming (/api/ws)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[api.py (gatewaywebapi.py)]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_449
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "SSH Proxy & Gateway Config"
-location: "L98"
+community: "Approval Queue Tests"
+location: "L186"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Approval_Queue_Tests
 ---
 
 # Check if a command is auto-approved (no human approval needed).          Auto-ap
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_auto_approved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSH_Proxy__Gateway_Config
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Tests

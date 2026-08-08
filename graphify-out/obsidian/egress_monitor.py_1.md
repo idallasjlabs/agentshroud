@@ -1,21 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
-type: "code"
-community: "Module Group 406"
-location: "gateway/security/egress_monitor.py"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_406
+  - community/docs/vault
 ---
 
-# egress_monitor.py
+# egress_monitor.py.md
 
 ## Connections
-- [[EgressChannel (Enum HTTPDNSMCPFILE)]] - `contains` [EXTRACTED]
-- [[EgressMonitor (Class)]] - `contains` [EXTRACTED]
-- [[Slow Drip Multi-Channel Exfiltration Detection]] - `implements` [EXTRACTED]
-- [[key_vault.py_1]] - `references` [EXTRACTED]
-- [[resource_guard.py_1]] - `references` [EXTRACTED]
+- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_406
+#graphify/document #graphify/EXTRACTED #community/docs/vault

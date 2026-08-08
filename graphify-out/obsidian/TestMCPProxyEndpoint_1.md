@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "Module Group 232"
+community: "Gateway Test Suite"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_232
+  - community/Gateway_Test_Suite
 ---
 
 # TestMCPProxyEndpoint
@@ -20,9 +20,9 @@ tags:
 - [[.test_invalid_header_identity_rejected()]] - `method` [EXTRACTED]
 - [[.test_missing_required_fields_returns_422()_1]] - `method` [EXTRACTED]
 - [[.test_owner_body_identity_rejected_without_header()]] - `method` [EXTRACTED]
-- [[.test_requires_auth()_2]] - `method` [EXTRACTED]
+- [[.test_requires_auth()_3]] - `method` [EXTRACTED]
 - [[.test_response_includes_processing_time()]] - `method` [EXTRACTED]
 - [[ProxyResult]] - `uses` [INFERRED]
 - [[test_mcp_proxy_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_232
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

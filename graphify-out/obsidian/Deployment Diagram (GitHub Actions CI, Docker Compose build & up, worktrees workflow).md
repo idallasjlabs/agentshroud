@@ -1,14 +1,14 @@
 ---
 source_file: "docs/diagrams/02-infrastructure.md"
 type: "document"
-community: "Module Group 775"
+community: "docs/diagrams"
 location: "line 115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_775
+  - community/docs/diagrams
 ---
 
 # Deployment Diagram (GitHub Actions CI, Docker Compose build & up, worktrees workflow)
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_775
+#graphify/document #graphify/EXTRACTED #community/docs/diagrams

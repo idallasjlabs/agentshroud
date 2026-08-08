@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_translator.py"
 type: "rationale"
-community: "Module Group 101"
+community: "Gateway Test Suite"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_101
+  - community/Gateway_Test_Suite
 ---
 
 # Translate an Anthropic Messages request body to OpenAI chat completions format.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[anthropic_to_openai_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_101
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

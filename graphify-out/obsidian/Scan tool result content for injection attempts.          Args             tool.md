@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "rationale"
-community: "Module Group 60"
-location: "L244"
+community: "Gateway Test Suite"
+location: "L246"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_60
+  - community/Gateway_Test_Suite
 ---
 
 # Scan tool result content for injection attempts.          Args:             tool
 
 ## Connections
-- [[.scan_tool_result()_2]] - `rationale_for` [EXTRACTED]
+- [[.scan_tool_result()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_60
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

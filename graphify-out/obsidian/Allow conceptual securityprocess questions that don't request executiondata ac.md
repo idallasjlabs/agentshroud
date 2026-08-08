@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Telegram Proxy Core"
-location: "L1380"
+community: "Collaborator Prompt Classifiers"
+location: "L1462"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Core
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Allow conceptual security/process questions that don't request execution/data ac
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._looks_like_safe_collaborator_info_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

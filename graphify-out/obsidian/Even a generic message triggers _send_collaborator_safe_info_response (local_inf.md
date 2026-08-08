@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Module Group 445"
+community: "Telegram Inbound Tests"
 location: "L7832"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_445
+  - community/Telegram_Inbound_Tests
 ---
 
 # Even a generic message triggers _send_collaborator_safe_info_response (local_inf
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_always_gets_response_for_generic_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_445
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Tests

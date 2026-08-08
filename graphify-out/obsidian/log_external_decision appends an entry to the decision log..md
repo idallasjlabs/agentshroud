@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Module Group 117"
+community: "Gateway Test Suite"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_117
+  - community/Gateway_Test_Suite
 ---
 
 # log_external_decision appends an entry to the decision log.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_log_external_decision_basic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_117
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Module Group 294"
-location: "L59"
+community: "Gateway Test Suite"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_294
+  - community/Gateway_Test_Suite
 ---
 
 # clean_clamav()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_294
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

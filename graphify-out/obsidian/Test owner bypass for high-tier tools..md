@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Module Group 78"
-location: "L303"
+community: "Enhanced Approval Queue"
+location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_78
+  - community/Enhanced_Approval_Queue
 ---
 
 # Test owner bypass for high-tier tools.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_bypass()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_78
+#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "Webhook Receiver"
-location: "L227"
+community: "URL/Domain Validation Tests"
+location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Webhook_Receiver
+  - community/URL/Domain_Validation_Tests
 ---
 
 # TestWebhookReceiverIntegration
@@ -28,4 +28,4 @@ tags:
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_session_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Webhook_Receiver
+#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

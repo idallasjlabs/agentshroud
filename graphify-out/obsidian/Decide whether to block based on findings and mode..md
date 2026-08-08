@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "MCP Inspector & Audit"
+community: "Gateway Proxy Layer"
 location: "L400"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Inspector__Audit
+  - community/Gateway_Proxy_Layer
 ---
 
 # Decide whether to block based on findings and mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._should_block()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Inspector__Audit
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_us_ssn_regex_tightened.py"
 type: "rationale"
-community: "Module Group 360"
+community: "Gateway Test Suite"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_360
+  - community/Gateway_Test_Suite
 ---
 
 # Real SSNs (not preceded by uppercase) must still be detected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_real_ssn_still_flagged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_360
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.8.0-egress-firewall.md"
 type: "document"
-community: "Module Group 461"
+community: "Planning Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_461
+  - community/Planning_Docs
 ---
 
 # Interactive Egress Firewall Feature Design (Little Snitch for Agents)
@@ -16,4 +16,4 @@ tags:
 - [[v0.8.0 Release Plan Document]] - `references` [EXTRACTED]
 - [[v0.8.0 Watchtower (Security Fixes + Module Wiring)]] - `specifies` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_461
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

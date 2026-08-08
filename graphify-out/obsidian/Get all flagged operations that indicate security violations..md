@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "Environment Guard & Leak Detection"
-location: "L412"
+community: "File Sandbox"
+location: "L422"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - community/File_Sandbox
 ---
 
 # Get all flagged operations that indicate security violations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_security_violations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

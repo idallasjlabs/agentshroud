@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Module Group 91"
+community: "Gateway Test Suite"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_91
+  - community/Gateway_Test_Suite
 ---
 
 # CanaryResult
@@ -19,4 +19,4 @@ tags:
 - [[output_canary.py]] - `contains` [EXTRACTED]
 - [[test_output_canary.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_91
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

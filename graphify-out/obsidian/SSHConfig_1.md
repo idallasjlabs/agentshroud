@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "SSH Proxy & Gateway Config"
-location: "L50"
+community: "Approval Queue Tests"
+location: "L138"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Approval_Queue_Tests
 ---
 
 # SSHConfig
 
 ## Connections
-- [[.__init__()_107]] - `references` [EXTRACTED]
+- [[.__init__()_129]] - `references` [EXTRACTED]
 - [[SSHConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/SSH_Proxy__Gateway_Config
+#graphify/code #graphify/INFERRED #community/Approval_Queue_Tests

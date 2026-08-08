@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Module Group 334"
-location: "L99"
+community: "Gateway Security Module"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_334
+  - community/Gateway_Security_Module
 ---
 
 # EgressRule
@@ -21,4 +21,4 @@ tags:
 - [[Represents an egress allowdeny rule.]] - `rationale_for` [EXTRACTED]
 - [[egress_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_334
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

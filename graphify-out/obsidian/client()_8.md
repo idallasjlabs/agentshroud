@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "Module Group 126"
-location: "L73"
+community: "Gateway Test Suite"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_126
+  - community/Gateway_Test_Suite
 ---
 
 # client()
 
 ## Connections
-- [[_make_app()]] - `calls` [EXTRACTED]
-- [[test_observatory_mode.py]] - `contains` [EXTRACTED]
+- [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_126
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

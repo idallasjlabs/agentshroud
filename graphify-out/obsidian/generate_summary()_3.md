@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Module Group 163"
+community: "Gateway Security Module"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_163
+  - community/Gateway_Security_Module
 ---
 
 # generate_summary()
 
 ## Connections
-- [[Any_58]] - `references` [EXTRACTED]
+- [[Any_62]] - `references` [EXTRACTED]
 - [[Generate a summary dict suitable for the health report.      Args         alert_1]] - `rationale_for` [EXTRACTED]
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]
 - [[get_falco_summary()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 - [[wazuh_client.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_163
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Module Group 335"
-location: "L443"
+community: "Gateway Test Suite"
+location: "L441"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_335
+  - community/Gateway_Test_Suite
 ---
 
 # TestGetSbom
@@ -17,4 +17,4 @@ tags:
 - [[.test_returns_none_when_no_dir()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_335
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

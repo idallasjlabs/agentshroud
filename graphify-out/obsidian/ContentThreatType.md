@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Module Group 142"
+community: "Egress & RBAC Security Core"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_142
+  - community/Egress__RBAC_Security_Core
 ---
 
 # ContentThreatType
@@ -23,4 +23,4 @@ tags:
 - [[memory_lifecycle.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_142
+#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core

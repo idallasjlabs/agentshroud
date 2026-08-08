@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "Module Group 113"
+community: "Gateway Test Suite"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_113
+  - community/Gateway_Test_Suite
 ---
 
 # ThreatLevel
@@ -20,4 +20,4 @@ tags:
 - [[TestURLReputation]] - `uses` [INFERRED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_113
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

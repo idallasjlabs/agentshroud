@@ -1,0 +1,317 @@
+---
+type: community
+cohesion: 0.01
+members: 246
+---
+
+# Forward Routing & Approval
+
+**Cohesion:** 0.01 - loosely connected
+**Members:** 246 nodes
+
+## Members
+- [[NOTE This branch ships hot-reload of the config FILE only. The web config]] - rationale - gateway/ingest_api/config.py
+- [[NOTE `timeout or host.max_session_seconds` treats 0 as falsy (same]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.__init__()]] - code - gateway/ingest_api/router.py
+- [[._build_forward_payload()]] - code - gateway/ingest_api/router.py
+- [[.base_url()]] - code - gateway/ingest_api/bot_config.py
+- [[.forward_to_agent()]] - code - gateway/ingest_api/router.py
+- [[.forward_to_agent_stream()]] - code - gateway/ingest_api/router.py
+- [[.health_check()]] - code - gateway/ingest_api/router.py
+- [[.list_targets()]] - code - gateway/ingest_api/router.py
+- [[.model_post_init()]] - code - gateway/ingest_api/config.py
+- [[.register_bots()]] - code - gateway/ingest_api/router.py
+- [[.resolve_target()]] - code - gateway/ingest_api/router.py
+- [[.resolved_container_name()]] - code - gateway/ingest_api/bot_config.py
+- [[.test_all_production_tool_overrides_meet_floor()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_body_agent_id_used_without_header()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_bot_config_has_telegram_token_secret_field()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_bot_config_image_field_present()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_bot_config_telegram_token_secret_set()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_clean_result_accepted()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_config_with_tool_result_pii()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_file_exists()]] - code - gateway/tests/test_config_validation.py
+- [[.test_header_user_id_overrides_body_agent_id()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_invalid_header_identity_rejected()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_mcp_proxy_data_defaults_to_empty_when_absent()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_mcp_proxy_data_parsed_from_yaml()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_openclaw_bot_config_backward_compat()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[.test_owner_body_identity_rejected_without_header()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_proxy_allowed_domains_defaults_to_empty_when_absent()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_proxy_allowed_domains_parsed_from_yaml()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_result_missing_server_name_rejected()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_result_requires_auth()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_result_returns_processing_time()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_result_with_null_content()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_result_with_pii_is_audited_not_blocked()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[.test_write_file_invalid_base64_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_remote_failure_returns_200_with_success_false()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_success_and_denial_both_create_distinct_ledger_entries()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_success_creates_matching_ledger_entry()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[.test_write_file_valid_round_trip()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[A result containing PII is audited and redacted — never blocked (results are nev]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[A result with no threats should be accepted and audited (200).]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[AgentTarget_1]] - code - gateway/ingest_api/router.py
+- [[AgentTarget]] - code - gateway/ingest_api/models.py
+- [[AgentTarget accepts custom chat_path and health_path.]] - rationale - gateway/tests/test_router.py
+- [[AgentTarget defaults chat_path and health_path correctly.]] - rationale - gateway/tests/test_router.py
+- [[Any]] - code - gateway/ingest_api/router.py
+- [[AuditExportConfig]] - code - gateway/ingest_api/config.py
+- [[Body-only owner identity must be rejected to prevent impersonation._1]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[BotConfig]] - code - gateway/ingest_api/bot_config.py
+- [[BotConfig.base_url computes http{hostname}{port}.]] - rationale - gateway/tests/test_config.py
+- [[Both bots must be reachable via the same router without conflict.]] - rationale - gateway/tests/test_router.py
+- [[Both outcomes append to the SAME audit trail — a denial is not         silently]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Build a fake httpx.Response whose .json() returns body.]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[Build the outbound payload for `target`, shared by the blocking and         stre]] - rationale - gateway/ingest_api/router.py
+- [[CI has no real agentshroud.yaml (gitignored, per-deployment secret     config) —]] - rationale - gateway/tests/conftest.py
+- [[Channel ownership configuration (P3 Telegram + email oversight, P5 iMessage)]] - rationale - gateway/ingest_api/config.py
+- [[ChannelsConfig]] - code - gateway/ingest_api/config.py
+- [[Check health of one or all agent targets          Args             target Spec]] - rationale - gateway/ingest_api/router.py
+- [[Complete gateway configuration]] - rationale - gateway/ingest_api/config.py
+- [[Compute the bot's internal base URL from hostname and port.]] - rationale - gateway/ingest_api/bot_config.py
+- [[Config with all security modules enabled.]] - rationale - gateway/tests/test_security_integration.py
+- [[Configuration for compliance audit export functionality.]] - rationale - gateway/ingest_api/config.py
+- [[Create a FastAPI TestClient with test configuration      Note This doesn't init]] - rationale - gateway/tests/conftest.py
+- [[Create a PIISanitizer instance for testing]] - rationale - gateway/tests/conftest.py
+- [[Create a router configuration for testing]] - rationale - gateway/tests/test_router.py
+- [[Create a router instance for testing]] - rationale - gateway/tests/test_router.py
+- [[Create a test configuration      Uses regex fallback for PII (no spaCy model req]] - rationale - gateway/tests/conftest.py
+- [[Declaration for a single bot encapsulated by AgentShroud.      Required bot HTTP]] - rationale - gateway/ingest_api/bot_config.py
+- [[Determine which agent should receive this content          Args             req]] - rationale - gateway/ingest_api/router.py
+- [[Downstream agent target]] - rationale - gateway/ingest_api/models.py
+- [[Empty choices list raises ForwardError.]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[Explicit container_name wins over the 'agentshroud-{id}' convention —     regres]] - rationale - gateway/tests/test_config.py
+- [[Forward sanitized content to agent via HTTP POST          Args             targ]] - rationale - gateway/ingest_api/router.py
+- [[ForwardError]] - code - gateway/ingest_api/router.py
+- [[ForwardRequest_1]] - code - gateway/ingest_api/router.py
+- [[ForwardRequest]] - code - gateway/ingest_api/models.py
+- [[Gap coverage confirm a real audit-ledger row is created for BOTH a     successf]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Gap coverage prove the 'content is DATA, not a shell string' design     goal ac]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[GatewayConfig_2]] - code - gateway/tests/conftest.py
+- [[GatewayConfig_4]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[GatewayConfig_1]] - code - gateway/ingest_api/config.py
+- [[Initialize router          Args             config Router configuration]] - rationale - gateway/ingest_api/router.py
+- [[Live regression 2026-08-07 Hermes's own internal LLM failover     (Anthropic cr]] - rationale - gateway/tests/test_router_streaming.py
+- [[Load and validate configuration from agentshroud.yaml      Search order     1.]] - rationale - gateway/ingest_api/config.py
+- [[Load the real agentshroud.yaml when present (deployment host), else the     comm]] - rationale - gateway/tests/test_config.py
+- [[Malformed OpenAI response (missing choices) raises ForwardError, not KeyError.]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[Malformed base64 is rejected at the Pydantic model layer (422),         never si]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Map agentshroud.yaml entity names to Presidiointernal entity names]] - rationale - gateway/ingest_api/config.py
+- [[Mirrors sshexec a nonzero remote exit code is surfaced in the 200         res]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Multi-agent router configuration]] - rationale - gateway/ingest_api/config.py
+- [[MultiAgentRouter]] - code - gateway/ingest_api/router.py
+- [[No explicit container_name — derives 'agentshroud-{id}' (openclaw's case).]] - rationale - gateway/tests/test_config.py
+- [[Null content is handled gracefully.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[OpenClaw BotConfig must still work without the new fields.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Path_1]] - code - gateway/ingest_api/config.py
+- [[Path_25]] - code - gateway/tests/test_config_validation.py
+- [[Path_34]] - code - gateway/tests/test_observatory_mode.py
+- [[Populate routing targets from the bots registry.          Iterates all BotConfig]] - rationale - gateway/ingest_api/router.py
+- [[Raised when forwarding to agent fails]] - rationale - gateway/ingest_api/router.py
+- [[Raised when no valid routing target found]] - rationale - gateway/ingest_api/router.py
+- [[Request missing required server_name is rejected with 422.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[Request to forward content through the gateway      Received from iOS Shortcuts,]] - rationale - gateway/ingest_api/models.py
+- [[Resolve the config file path using the same search order as load_config().]] - rationale - gateway/ingest_api/config.py
+- [[Response includes processing_time_ms.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[Result of a structured SSH file-write operation (SSHProxy.write_file())]] - rationale - gateway/ssh_proxy/proxy.py
+- [[Return Authorization headers with test token]] - rationale - gateway/tests/conftest.py
+- [[Return all configured agent targets          Returns             List of AgentT]] - rationale - gateway/ingest_api/router.py
+- [[RouterConfig_1]] - code - gateway/ingest_api/config.py
+- [[RouterConfig]] - code - gateway/ingest_api/router.py
+- [[RouterConfig must accept the Hermes Docker service hostname.]] - rationale - gateway/tests/test_config.py
+- [[RouterConfig should accept single-label Docker service hostnames.]] - rationale - gateway/tests/test_config.py
+- [[RouterError]] - code - gateway/ingest_api/router.py
+- [[Routes content to appropriate agent containers      Routing priority     1. Exp]] - rationale - gateway/ingest_api/router.py
+- [[SSHWriteResult]] - code - gateway/ssh_proxy/proxy.py
+- [[Set up app state and provide TestClient._1]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Stream sanitized content to an OpenAI-compatible agent, yielding text         de]] - rationale - gateway/ingest_api/router.py
+- [[Test ForwardRequest rejects empty content]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ForwardRequest rejects invalid source]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ForwardRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[Test PII entity type mapping]] - rationale - gateway/tests/test_config.py
+- [[Test forwarding handles HTTP error responses]] - rationale - gateway/tests/test_router.py
+- [[Test forwarding handles timeout exception]] - rationale - gateway/tests/test_router.py
+- [[Test forwarding handles unexpected exceptions]] - rationale - gateway/tests/test_router.py
+- [[Test forwarding to offline agent raises ForwardError]] - rationale - gateway/tests/test_router.py
+- [[Test health check for offline agent]] - rationale - gateway/tests/test_router.py
+- [[Test health check for single target]] - rationale - gateway/tests/test_router.py
+- [[Test health check with healthy agent]] - rationale - gateway/tests/test_router.py
+- [[Test listing all configured targets]] - rationale - gateway/tests/test_router.py
+- [[Test loading configuration from agentshroud.yaml (or the committed example).]] - rationale - gateway/tests/test_config.py
+- [[Test routing to default target]] - rationale - gateway/tests/test_router.py
+- [[Test routing with explicit route_to]] - rationale - gateway/tests/test_router.py
+- [[Test routing with invalid explicit target falls back to default]] - rationale - gateway/tests/test_router.py
+- [[Test that configuration has sensible defaults]] - rationale - gateway/tests/test_config.py
+- [[Test that configuration includes tool result PII settings]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test that load_config() populates bots — from YAML or backward-compat default.]] - rationale - gateway/tests/test_config.py
+- [[TestAllExampleConfigsExist]] - code - gateway/tests/test_config_validation.py
+- [[TestMCPProxyConfigLoading]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[TestMCPResultEndpoint]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[TestSSHWriteFileEndpoint]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[TestSSHWriteFileLedgerAudit]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[TestTelegramBotConfigTokenSecretField]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[The OpenAI payload must include a non-empty model field.]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[The real docker container name for this bot — see container_name field.]] - rationale - gateway/ingest_api/bot_config.py
+- [[Unauthenticated request is rejected.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[Valid request SSHProxy.write_file() is invoked with decoded pathcontent]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Verify BotConfig.telegram_token_secret field is present and defaults correctly.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
+- [[Verify all referenced example configs exist.]] - rationale - gateway/tests/test_config_validation.py
+- [[When agentshroud.yaml declares hermes, load_config() populates it in bots.]] - rationale - gateway/tests/test_config.py
+- [[_ensure_agentshroud_config_resolvable()]] - code - gateway/tests/conftest.py
+- [[_entity_type_mapping()]] - code - gateway/ingest_api/config.py
+- [[_load_config()]] - code - gateway/tests/test_config.py
+- [[_mock_response()]] - code - gateway/tests/test_router_openai_translation.py
+- [[_mock_stream_response()]] - code - gateway/tests/test_router_streaming.py
+- [[_sse_lines()]] - code - gateway/tests/test_router_streaming.py
+- [[auth_headers()]] - code - gateway/tests/conftest.py
+- [[auth_headers()_2]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[auth_headers()_4]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[bot_config.py]] - code - gateway/ingest_api/bot_config.py
+- [[client()_17]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[config.py]] - code - gateway/ingest_api/config.py
+- [[conftest.py]] - code - gateway/tests/conftest.py
+- [[forward_to_agent builds URL from target.chat_path.]] - rationale - gateway/tests/test_router.py
+- [[forward_to_agent extracts choices0.message.content and returns a string.]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[forward_to_agent passes response.json() through unchanged for chat targets.]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[forward_to_agent sends the generic {content, ledger_id, ...} body for chat targ]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[forward_to_agent sends {model, messages} when chat_path ends v1chatcompleti]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[full_pipeline_config()]] - code - gateway/tests/test_security_integration.py
+- [[gatewayapproval_queuequeue.py (ApprovalQueue)]] - code - gateway/approval_queue/queue.py
+- [[gatewayingest_apiledger.py (DataLedger)]] - code - gateway/ingest_api/ledger.py
+- [[gatewayingest_apirouter.py (MultiAgentRouter)]] - code - gateway/ingest_api/router.py
+- [[gatewayingest_apisanitizer.py (PIISanitizer)]] - code - gateway/ingest_api/sanitizer.py
+- [[gatewayingest_apissh_config.py (SSHConfig)]] - code - gateway/ingest_api/ssh_config.py
+- [[gatewayssh_proxyproxy.py]] - code - gateway/ssh_proxy/proxy.py
+- [[health_check builds URL from target.health_path.]] - rationale - gateway/tests/test_router.py
+- [[load_config computes CORS origins from the configured port.]] - rationale - gateway/tests/test_router.py
+- [[load_config()]] - code - gateway/ingest_api/config.py
+- [[mcp_proxy_data is an empty dict when section is absent from YAML.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[mcp_proxy_data is populated from the mcp_proxy YAML section.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[proxy_allowed_domains is empty list when proxy section is absent from YAML.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[proxy_allowed_domains is populated from the proxy.allowed_domains YAML section.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[resolve_config_path()]] - code - gateway/ingest_api/config.py
+- [[route_to='hermes' must resolve to the Hermes AgentTarget.]] - rationale - gateway/tests/test_router.py
+- [[router()_3]] - code - gateway/tests/test_router_openai_translation.py
+- [[router()_2]] - code - gateway/tests/test_router.py
+- [[router()]] - code - gateway/tests/test_router_streaming.py
+- [[router.py]] - code - gateway/ingest_api/router.py
+- [[router_config()]] - code - gateway/tests/test_router.py
+- [[sanitizer()]] - code - gateway/tests/conftest.py
+- [[test_agent_target_custom_paths()]] - code - gateway/tests/test_router.py
+- [[test_agent_target_default_paths()]] - code - gateway/tests/test_router.py
+- [[test_bot_config_base_url()]] - code - gateway/tests/test_config.py
+- [[test_bot_config_resolved_container_name_defaults_to_agentshroud_id()]] - code - gateway/tests/test_config.py
+- [[test_bot_config_resolved_container_name_uses_explicit_override()]] - code - gateway/tests/test_config.py
+- [[test_client()]] - code - gateway/tests/conftest.py
+- [[test_config()]] - code - gateway/tests/conftest.py
+- [[test_config()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[test_config.py]] - code - gateway/tests/test_config.py
+- [[test_config_defaults()]] - code - gateway/tests/test_config.py
+- [[test_config_with_ssh()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[test_config_with_ssh()_1]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[test_cors_origins_include_configured_port()]] - code - gateway/tests/test_router.py
+- [[test_entity_type_mapping()]] - code - gateway/tests/test_config.py
+- [[test_forward_request_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_forward_request_validation_empty_content()]] - code - gateway/tests/test_main_simple.py
+- [[test_forward_request_validation_invalid_source()]] - code - gateway/tests/test_main_simple.py
+- [[test_forward_to_agent_http_error()]] - code - gateway/tests/test_router.py
+- [[test_forward_to_agent_offline()]] - code - gateway/tests/test_router.py
+- [[test_forward_to_agent_timeout()]] - code - gateway/tests/test_router.py
+- [[test_forward_to_agent_unexpected_error()]] - code - gateway/tests/test_router.py
+- [[test_forward_uses_chat_path()]] - code - gateway/tests/test_router.py
+- [[test_generic_target_returns_json_as_is()]] - code - gateway/tests/test_router_openai_translation.py
+- [[test_generic_target_sends_content_body()]] - code - gateway/tests/test_router_openai_translation.py
+- [[test_health_check_healthy_agent()]] - code - gateway/tests/test_router.py
+- [[test_health_check_offline_agent()]] - code - gateway/tests/test_router.py
+- [[test_health_check_single_target()]] - code - gateway/tests/test_router.py
+- [[test_health_check_uses_health_path()]] - code - gateway/tests/test_router.py
+- [[test_hermes_and_openclaw_coexist()]] - code - gateway/tests/test_router.py
+- [[test_list_targets()]] - code - gateway/tests/test_router.py
+- [[test_load_config()]] - code - gateway/tests/test_config.py
+- [[test_load_config_has_bots()]] - code - gateway/tests/test_config.py
+- [[test_load_config_registers_hermes()]] - code - gateway/tests/test_config.py
+- [[test_mcp_result_endpoint.py]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[test_openai_empty_choices_raises_forward_error()]] - code - gateway/tests/test_router_openai_translation.py
+- [[test_openai_malformed_response_raises_forward_error()]] - code - gateway/tests/test_router_openai_translation.py
+- [[test_openai_payload_includes_model()]] - code - gateway/tests/test_router_openai_translation.py
+- [[test_openai_target_returns_content_string()]] - code - gateway/tests/test_router_openai_translation.py
+- [[test_openai_target_sends_messages_body()]] - code - gateway/tests/test_router_openai_translation.py
+- [[test_resolve_target_default()]] - code - gateway/tests/test_router.py
+- [[test_resolve_target_explicit()]] - code - gateway/tests/test_router.py
+- [[test_resolve_target_invalid_explicit()]] - code - gateway/tests/test_router.py
+- [[test_resolves_hermes_target()]] - code - gateway/tests/test_router.py
+- [[test_router.py]] - code - gateway/tests/test_router.py
+- [[test_router_config_accepts_docker_service_hostname()]] - code - gateway/tests/test_config.py
+- [[test_router_config_accepts_hermes_hostname()]] - code - gateway/tests/test_config.py
+- [[test_router_openai_translation.py]] - code - gateway/tests/test_router_openai_translation.py
+- [[test_router_streaming.py]] - code - gateway/tests/test_router_streaming.py
+- [[test_ssh_write_file_endpoint.py]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[test_stream_ignores_lines_without_data_prefix()]] - code - gateway/tests/test_router_streaming.py
+- [[test_stream_payload_sets_stream_true()]] - code - gateway/tests/test_router_streaming.py
+- [[test_stream_raises_forward_error_on_connect_failure()]] - code - gateway/tests/test_router_streaming.py
+- [[test_stream_raises_forward_error_on_http_status_error()]] - code - gateway/tests/test_router_streaming.py
+- [[test_stream_raises_forward_error_on_malformed_json()]] - code - gateway/tests/test_router_streaming.py
+- [[test_stream_rejects_non_openai_compat_target()]] - code - gateway/tests/test_router_streaming.py
+- [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - code - gateway/tests/test_router_streaming.py
+- [[test_stream_yields_content_deltas_in_order()]] - code - gateway/tests/test_router_streaming.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Forward_Routing__Approval
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 89 edges to [[_COMMUNITY_Approval Queue Tests]]
+- 65 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 31 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 24 edges to [[_COMMUNITY_Auth & Exception Types]]
+- 23 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 23 edges to [[_COMMUNITY_Enhanced Approval Queue]]
+- 18 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 13 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 11 edges to [[_COMMUNITY_Competitive Intel Store]]
+- 9 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 9 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 9 edges to [[_COMMUNITY_MCP Policy Engine]]
+- 9 edges to [[_COMMUNITY_Security Module Middleware]]
+- 8 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 8 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 7 edges to [[_COMMUNITY_SOC Dashboard]]
+- 5 edges to [[_COMMUNITY_URLDomain Validation Tests]]
+- 5 edges to [[_COMMUNITY_Gateway Ingest API]]
+- 5 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 5 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 5 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 5 edges to [[_COMMUNITY_MCP Proxy Config]]
+- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 4 edges to [[_COMMUNITY_Enforce-Mode Auto-Revert]]
+- 3 edges to [[_COMMUNITY_Collaborator Response Templates]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_SOC Collaborator Lifecycle]]
+- 2 edges to [[_COMMUNITY_SOC Dashboard]]
+- 2 edges to [[_COMMUNITY_Kill Switch Config]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Collaborator Prompt Classifiers]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_PII Config & Test Fixtures]]
+
+## Top bridge nodes
+- [[ForwardRequest]] - degree 71, connects to 15 communities
+- [[load_config()]] - degree 54, connects to 15 communities
+- [[GatewayConfig_1]] - degree 80, connects to 14 communities
+- [[config.py]] - degree 40, connects to 11 communities
+- [[RouterConfig_1]] - degree 67, connects to 8 communities

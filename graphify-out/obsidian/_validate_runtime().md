@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "code"
-community: "Module Group 156"
+community: "Gateway Test Suite"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_156
+  - community/Gateway_Test_Suite
 ---
 
 # _validate_runtime()
@@ -20,4 +20,4 @@ tags:
 - [[security.py]] - `contains` [EXTRACTED]
 - [[warn_missing_features()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_156
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

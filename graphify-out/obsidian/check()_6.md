@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_openclaw_photo.sh"
+source_file: "tests/startup_smoke/test_hermes_chown_coverage.sh"
 type: "code"
-community: "Module Group 603"
-location: "L10"
+community: "tests/startup_smoke"
+location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_603
+  - community/tests/startup_smoke
 ---
 
 # check()
 
 ## Connections
-- [[test_openclaw_photo.sh]] - `defines` [EXTRACTED]
-- [[test_openclaw_photo.sh script]] - `calls` [EXTRACTED]
+- [[test_hermes_chown_coverage.sh]] - `defines` [EXTRACTED]
+- [[test_hermes_chown_coverage.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_603
+#graphify/code #graphify/EXTRACTED #community/tests/startup_smoke

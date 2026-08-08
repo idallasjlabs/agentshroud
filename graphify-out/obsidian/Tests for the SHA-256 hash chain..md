@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Security Pipeline & Audit Chain"
+community: "Security Pipeline Core"
 location: "L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Pipeline__Audit_Chain
+  - community/Security_Pipeline_Core
 ---
 
 # Tests for the SHA-256 hash chain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditChain]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Pipeline__Audit_Chain
+#graphify/rationale #graphify/EXTRACTED #community/Security_Pipeline_Core

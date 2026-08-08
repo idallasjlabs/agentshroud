@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Module Group 200"
+community: "Gateway Test Suite"
 location: "L422"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_200
+  - community/Gateway_Test_Suite
 ---
 
 # Mock authentication dependency.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.mock_auth()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_200
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

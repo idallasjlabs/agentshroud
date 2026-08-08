@@ -1,17 +1,26 @@
 ---
-source_file: "skills/custom/browser-fetch/browser-fetch.js"
+source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Module Group 473"
-location: "L8"
+community: "Forward Routing & Approval"
+location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_473
+  - community/Forward_Routing__Approval
 ---
 
-# path
+# Path
 
 ## Connections
-- [[browser-fetch.js]] - `contains` [EXTRACTED]
+- [[.model_post_init()]] - `calls` [EXTRACTED]
+- [[BotConfig]] - `uses` [INFERRED]
+- [[SSHConfig]] - `uses` [INFERRED]
+- [[_default_mtime()]] - `references` [EXTRACTED]
+- [[config_watcher()]] - `references` [EXTRACTED]
+- [[get_config()_1]] - `calls` [EXTRACTED]
+- [[load_config()]] - `references` [EXTRACTED]
+- [[reload_config()]] - `references` [EXTRACTED]
+- [[resolve_config_path()]] - `references` [EXTRACTED]
+- [[update_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_473
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

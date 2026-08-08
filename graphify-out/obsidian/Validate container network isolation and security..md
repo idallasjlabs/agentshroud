@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "RBAC Middleware & Ingest API"
+community: "Gateway Security Module"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Gateway_Security_Module
 ---
 
 # Validate container network isolation and security.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[NetworkValidator]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

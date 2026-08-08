@@ -1,14 +1,14 @@
 ---
 source_file: "docs/diagrams/01-architecture.md"
 type: "document"
-community: "Module Group 774"
+community: "docs/diagrams"
 location: "line 91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_774
+  - community/docs/diagrams
 ---
 
 # Gateway Internals Component Diagram (IngestAPI, ProxyLayer, ApprovalQueue, SecurityModules, SSHProxy, OpProxy)
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_774
+#graphify/document #graphify/EXTRACTED #community/docs/diagrams

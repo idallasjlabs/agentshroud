@@ -1,18 +1,18 @@
 ---
 source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "concept"
-community: "Module Group 107"
+community: "skills/openclaw"
 location: "line 14"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_107
+  - community/skills/openclaw
 ---
 
 # CodexBar CLI
 
 ## Connections
 - [[CodexBar CLI Quick Reference]] - `documents` [EXTRACTED]
-- [[model-usage Skill]] - `uses` [EXTRACTED]
+- [[Model usage]] - `uses` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_107
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

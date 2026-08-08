@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "Module Group 90"
-location: "L437"
+community: "Egress & RBAC Security Core"
+location: "L431"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_90
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Test edge cases and error conditions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_edge_cases()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_90
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

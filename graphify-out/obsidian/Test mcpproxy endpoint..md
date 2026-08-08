@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Agent Routing & Request Models"
+community: "Approval & FastAPI Ingest"
 location: "L187"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agent_Routing__Request_Models
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Test /mcp/proxy endpoint.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMCPProxyEndpoint]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agent_Routing__Request_Models
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

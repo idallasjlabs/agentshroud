@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/security-scan.yml"
 type: "code"
-community: "Module Group 501"
+community: ".github/workflows"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_501
+  - community/github/workflows
 ---
 
 # Security Scan Workflow
@@ -15,4 +15,4 @@ tags:
 - [[Python Dependency Audit Job (pip-audit)]] - `references` [EXTRACTED]
 - [[Trivy Filesystem Scan Job (CRITICALHIGH CVEs)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_501
+#graphify/code #graphify/EXTRACTED #community/github/workflows

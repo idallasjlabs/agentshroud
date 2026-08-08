@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "HTTP CONNECT Proxy & Egress"
+community: "Gateway Test Suite"
 location: "L528"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_CONNECT_Proxy__Egress
+  - community/Gateway_Test_Suite
 ---
 
 # TestAllowlistMode
@@ -30,4 +30,4 @@ tags:
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_CONNECT_Proxy__Egress
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

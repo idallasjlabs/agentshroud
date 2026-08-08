@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "rationale"
-community: "Module Group 430"
+community: "Gateway Test Suite"
 location: "L131"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_430
+  - community/Gateway_Test_Suite
 ---
 
 # Forward a DNS query to upstream resolvers with failover.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[forward_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_430
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

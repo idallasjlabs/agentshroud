@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Module Group 356"
-location: "L605"
+community: "Gateway Test Suite"
+location: "L985"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_356
+  - community/Gateway_Test_Suite
 ---
 
 # TestRunAndSendCveReportImageScans
@@ -19,4 +19,4 @@ tags:
 - [[.test_image_scans_run_for_each_target()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_356
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,0 +1,17 @@
+---
+source_file: "docker/config/hermes/skills/i-eightd/README.md"
+type: "document"
+community: "Bot Skill Config"
+location: "L14"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Bot_Skill_Config
+---
+
+# Related Skills
+
+## Connections
+- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

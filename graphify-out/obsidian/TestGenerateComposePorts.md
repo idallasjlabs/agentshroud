@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_port_manager.py"
 type: "code"
-community: "Module Group 68"
+community: "Gateway Test Suite"
 location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_68
+  - community/Gateway_Test_Suite
 ---
 
 # TestGenerateComposePorts
@@ -20,4 +20,4 @@ tags:
 - [[Test docker-compose port mapping generation.]] - `rationale_for` [EXTRACTED]
 - [[test_port_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_68
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

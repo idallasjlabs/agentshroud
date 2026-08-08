@@ -1,43 +1,45 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Alert Dispatcher"
+community: "PII Config & Test Fixtures"
 location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher
+  - community/PII_Config__Test_Fixtures
 ---
 
 # DriftDetector
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_57]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_70]] - `method` [EXTRACTED]
 - [[._init_db()_1]] - `method` [EXTRACTED]
 - [[.acknowledge_alert()]] - `method` [EXTRACTED]
 - [[.check_drift()]] - `method` [EXTRACTED]
-- [[.close()_6]] - `method` [EXTRACTED]
+- [[.close()_8]] - `method` [EXTRACTED]
 - [[.get_alerts()]] - `method` [EXTRACTED]
 - [[.get_baseline()]] - `method` [EXTRACTED]
 - [[.set_baseline()]] - `method` [EXTRACTED]
-- [[.setup_method()_27]] - `calls` [EXTRACTED]
+- [[.setup_method()_30]] - `calls` [EXTRACTED]
 - [[.test_drift_detector_baseline()]] - `calls` [EXTRACTED]
 - [[.test_drift_detector_concurrent_writes()]] - `calls` [INFERRED]
 - [[.test_drift_detector_detects_change()]] - `calls` [EXTRACTED]
 - [[.test_drift_no_false_positive()]] - `calls` [EXTRACTED]
 - [[.test_simultaneous_baseline_and_config_change()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
 - [[Detect configuration drift from known-good baselines.]] - `rationale_for` [EXTRACTED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
+- [[NetworkValidator]] - `semantically_similar_to` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
@@ -78,4 +80,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

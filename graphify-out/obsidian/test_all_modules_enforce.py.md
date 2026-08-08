@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
+community: "Egress & RBAC Security Core"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # test_all_modules_enforce.py
@@ -27,7 +27,7 @@ tags:
 - [[PathIsolationConfig]] - `imports` [EXTRACTED]
 - [[PathIsolationManager]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
-- [[SecurityConfig]] - `imports` [EXTRACTED]
+- [[SecurityConfig_2]] - `imports` [EXTRACTED]
 - [[SecurityModuleConfig]] - `imports` [EXTRACTED]
 - [[SubagentMonitorConfig]] - `imports` [EXTRACTED]
 - [[TestGetModuleModeEnforceDefault]] - `contains` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[ToolChainAnalyzer]] - `imports` [EXTRACTED]
 - [[get_module_mode()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

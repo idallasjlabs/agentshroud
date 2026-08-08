@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/emergency-rollback.sh"
 type: "code"
-community: "Module Group 640"
+community: "scripts/emergency-rollback.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_640
+  - community/scripts/emergency-rollbacksh
 ---
 
 # emergency-rollback.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[emergency-rollback.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_640
+#graphify/code #graphify/EXTRACTED #community/scripts/emergency-rollbacksh

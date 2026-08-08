@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "rationale"
-community: "Module Group 96"
+community: "Gateway Test Suite"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_96
+  - community/Gateway_Test_Suite
 ---
 
 # Collects status from all security components and generates reports.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ProxyDashboard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_96
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

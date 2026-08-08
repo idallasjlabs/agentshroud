@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_replay.py"
 type: "code"
-community: "Module Group 97"
+community: "Gateway Test Suite"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_97
+  - community/Gateway_Test_Suite
 ---
 
 # test_record_inbound_skips_updates_without_update_id()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_telegram_replay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_97
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

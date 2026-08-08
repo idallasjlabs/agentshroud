@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "Module Group 73"
-location: "L325"
+community: "Gateway Test Suite"
+location: "L375"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_73
+  - community/Gateway_Test_Suite
 ---
 
 # OpenClaw already sends Authorization: Bearer — injector must leave it untouched.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_credential_injector_does_not_overwrite_existing_bearer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_73
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

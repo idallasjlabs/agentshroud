@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Module Group 63"
+community: "Gateway Test Suite"
 location: "L165"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_63
+  - community/Gateway_Test_Suite
 ---
 
 # KeyLeakDetector
 
 ## Connections
-- [[.__init__()_72]] - `method` [EXTRACTED]
+- [[.__init__()_88]] - `method` [EXTRACTED]
 - [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[.scan_outbound()]] - `method` [EXTRACTED]
 - [[.test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
@@ -24,6 +24,7 @@ tags:
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
 - [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
+- [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
 - [[TestKeyInjection]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
@@ -32,6 +33,9 @@ tags:
 - [[TestKeyScoping]] - `uses` [INFERRED]
 - [[TestKeyStorage]] - `uses` [INFERRED]
 - [[TestKeyVaultConfig]] - `uses` [INFERRED]
+- [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
+- [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
+- [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[key_vault.py]] - `contains` [EXTRACTED]
@@ -40,4 +44,4 @@ tags:
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_63
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

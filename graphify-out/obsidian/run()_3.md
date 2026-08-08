@@ -1,0 +1,47 @@
+---
+source_file: "docs/planning/reviews/enforcement-audit-script.py"
+type: "code"
+community: "Egress & RBAC Security Core"
+location: "L12"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Egress__RBAC_Security_Core
+---
+
+# run()
+
+## Connections
+- [[ApprovalHardening]] - `calls` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `calls` [INFERRED]
+- [[AuditStore_1]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `calls` [EXTRACTED]
+- [[ContextGuard]] - `calls` [EXTRACTED]
+- [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig_1]] - `calls` [EXTRACTED]
+- [[EncodingDetector]] - `calls` [EXTRACTED]
+- [[FileSandbox]] - `calls` [EXTRACTED]
+- [[FileSandboxConfig]] - `calls` [EXTRACTED]
+- [[GitGuard]] - `calls` [EXTRACTED]
+- [[MiddlewareManager]] - `calls` [EXTRACTED]
+- [[PIIConfig]] - `calls` [INFERRED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[Path_15]] - `calls` [EXTRACTED]
+- [[PathIsolationConfig]] - `calls` [EXTRACTED]
+- [[PathIsolationManager]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptProtection]] - `calls` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RBACManager_1]] - `calls` [EXTRACTED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[UserSessionManager]] - `calls` [EXTRACTED]
+- [[XMLLeakFilter]] - `calls` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
+- [[fail()_2]] - `calls` [EXTRACTED]
+- [[ok()]] - `calls` [EXTRACTED]
+- [[warn()_1]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
