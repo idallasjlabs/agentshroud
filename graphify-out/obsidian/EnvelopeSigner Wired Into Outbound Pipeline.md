@@ -1,0 +1,16 @@
+---
+source_file: "CHANGELOG.md"
+type: "rationale"
+community: "CHANGELOG.md"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/CHANGELOGmd
+---
+
+# EnvelopeSigner Wired Into Outbound Pipeline
+
+## Connections
+- [[v1.1.1 Release]] - `references` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/CHANGELOGmd
