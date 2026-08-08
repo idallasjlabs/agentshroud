@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Module Group 233"
-location: "L327"
+community: "Gateway Test Suite"
+location: "L325"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_233
+  - community/Gateway_Test_Suite
 ---
 
 # TestObservatoryMode
@@ -29,4 +29,4 @@ tags:
 - [[Test Observatory Mode configuration and endpoints.]] - `rationale_for` [EXTRACTED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_233
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

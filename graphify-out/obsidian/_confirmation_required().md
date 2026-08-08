@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Router & Correlation"
-location: "L89"
+community: "SOC Collaborator Lifecycle"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router__Correlation
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # _confirmation_required()
@@ -28,4 +28,4 @@ tags:
 - [[upgrade_gateway()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router__Correlation
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

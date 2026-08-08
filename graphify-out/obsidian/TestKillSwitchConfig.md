@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_modes.py"
 type: "code"
-community: "Module Group 224"
-location: "L81"
+community: "Gateway Test Suite"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_224
+  - community/Gateway_Test_Suite
 ---
 
 # TestKillSwitchConfig
@@ -18,4 +18,4 @@ tags:
 - [[Kill switch configuration in example configs.]] - `rationale_for` [EXTRACTED]
 - [[test_killswitch_modes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_224
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

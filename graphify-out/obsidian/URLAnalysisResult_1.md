@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
-type: "code"
-community: "Module Group 188"
-location: "gateway/proxy/url_analyzer.py"
+source_file: "docs/data/data-dictionary.md"
+type: "document"
+community: "docs/data"
+location: "L135"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_188
+  - community/docs/data
 ---
 
 # URLAnalysisResult
 
 ## Connections
-- [[url_analyzer.py (Proxy Layer)]] - `contains` [EXTRACTED]
+- [[Network Security Entities]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_188
+#graphify/document #graphify/EXTRACTED #community/docs/data

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Module Group 78"
+community: "Gateway Test Suite"
 location: "L442"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_78
+  - community/Gateway_Test_Suite
 ---
 
 # TestProxyInterception
@@ -33,4 +33,4 @@ tags:
 - [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_78
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

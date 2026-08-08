@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "Progressive Trust Levels"
-location: "L36"
+community: "Progressive Trust Config"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Levels
+  - community/Progressive_Trust_Config
 ---
 
 # _fast_ladder()
@@ -21,9 +21,9 @@ tags:
 - [[.test_typed_penalty_from_config()]] - `calls` [EXTRACTED]
 - [[.test_vouching_required_for_top_rung()]] - `calls` [EXTRACTED]
 - [[A ladder with thresholds small enough for unit tests.]] - `rationale_for` [EXTRACTED]
-- [[ProgressiveTrustConfig_2]] - `references` [EXTRACTED]
 - [[ProgressiveTrustConfig]] - `calls` [EXTRACTED]
+- [[ProgressiveTrustConfig_2]] - `references` [EXTRACTED]
 - [[PromotionThreshold]] - `calls` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Levels
+#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config

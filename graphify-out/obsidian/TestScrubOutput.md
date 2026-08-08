@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard.py"
 type: "code"
-community: "Module Group 121"
+community: "Gateway Security Module"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_121
+  - community/Gateway_Security_Module
 ---
 
 # TestScrubOutput
@@ -19,4 +19,4 @@ tags:
 - [[.test_scrubs_openai_key()]] - `method` [EXTRACTED]
 - [[test_env_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_121
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

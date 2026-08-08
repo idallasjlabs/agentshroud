@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Module Group 212"
-location: "L94"
+community: "scripts/sync-cve-registry.py"
+location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_212
+  - community/scripts/sync-cve-registrypy
 ---
 
 # _get_cvss()
@@ -15,4 +15,4 @@ tags:
 - [[_process_nvd_results()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_212
+#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

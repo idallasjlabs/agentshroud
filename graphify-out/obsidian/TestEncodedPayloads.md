@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "HTTP CONNECT Proxy & Egress"
+community: "Egress Domain Allowlist"
 location: "L482"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/HTTP_CONNECT_Proxy__Egress
+  - community/Egress_Domain_Allowlist
 ---
 
 # TestEncodedPayloads
@@ -21,4 +21,4 @@ tags:
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/HTTP_CONNECT_Proxy__Egress
+#graphify/code #graphify/INFERRED #community/Egress_Domain_Allowlist

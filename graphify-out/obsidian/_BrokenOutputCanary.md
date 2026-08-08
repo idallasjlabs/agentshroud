@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Security Pipeline & Audit Chain"
-location: "L384"
+community: "PII Sanitizer Pipeline"
+location: "L383"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Pipeline__Audit_Chain
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # _BrokenOutputCanary
@@ -24,8 +24,8 @@ tags:
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 - [[test_pipeline_fails_closed_on_output_canary_error()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Pipeline__Audit_Chain
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline

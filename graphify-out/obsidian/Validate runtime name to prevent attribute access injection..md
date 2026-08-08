@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "rationale"
-community: "Module Group 156"
+community: "Gateway Test Suite"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_156
+  - community/Gateway_Test_Suite
 ---
 
 # Validate runtime name to prevent attribute access injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_validate_runtime()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_156
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Module Group 537"
-location: "L324"
+community: "Gateway Test Suite"
+location: "L323"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_537
+  - community/Gateway_Test_Suite
 ---
 
 # TestScoreRuntimeProtection
@@ -18,4 +18,4 @@ tags:
 - [[.test_two_with_criticals()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_537
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

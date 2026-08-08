@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Authentication & Rate Limiting"
+community: "Gateway Test Suite"
 location: "L342"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Authentication__Rate_Limiting
+  - community/Gateway_Test_Suite
 ---
 
 # Zero-width obfuscation should be normalized before pipeline evaluation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_inbound_text_normalized_before_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Authentication__Rate_Limiting
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

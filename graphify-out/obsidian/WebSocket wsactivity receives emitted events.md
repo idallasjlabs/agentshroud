@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "Dashboard Routes & WebSocket"
+community: "Gateway Test Suite"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Dashboard_Routes__WebSocket
+  - community/Gateway_Test_Suite
 ---
 
 # WebSocket /ws/activity receives emitted events
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_activity_receives_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Dashboard_Routes__WebSocket
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "Module Group 123"
+community: "Gateway Test Suite"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_123
+  - community/Gateway_Test_Suite
 ---
 
 # TestContributingMdAccuracy
@@ -19,7 +19,9 @@ tags:
 - [[.test_mentions_python_311()]] - `method` [EXTRACTED]
 - [[.test_mentions_test_directory()]] - `method` [EXTRACTED]
 - [[.test_pytest_command_syntax()]] - `method` [EXTRACTED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[Verify CONTRIBUTING.md references are correct.]] - `rationale_for` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_123
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

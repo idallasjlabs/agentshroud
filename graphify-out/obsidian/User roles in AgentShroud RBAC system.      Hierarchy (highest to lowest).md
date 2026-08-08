@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "RBAC Configuration"
+community: "Auth & Exception Types"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # User roles in AgentShroud RBAC system.      Hierarchy (highest to lowest):
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Role_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Configuration
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Module Group 141"
+community: "Gateway Security Module"
 location: "L559"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_141
+  - community/Gateway_Security_Module
 ---
 
 # TestFalcoParser
@@ -21,4 +21,4 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_141
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

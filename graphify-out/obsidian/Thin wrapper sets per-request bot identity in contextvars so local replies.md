@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Module Group 160"
-location: "L2806"
+community: "Collaborator Prompt Classifiers"
+location: "L2888"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_160
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Thin wrapper: sets per-request bot identity in contextvars so local replies
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.proxy_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_160
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

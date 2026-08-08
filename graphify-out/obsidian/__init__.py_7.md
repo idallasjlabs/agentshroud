@@ -1,26 +1,39 @@
 ---
-source_file: "gateway/runtime/__init__.py"
+source_file: "gateway/proxy/__init__.py"
 type: "code"
-community: "Module Group 82"
+community: "MCP Proxy Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_82
+  - community/MCP_Proxy_Config
 ---
 
 # __init__.py
 
 ## Connections
-- [[AppleContainerEngine]] - `imports` [EXTRACTED]
-- [[ContainerEngine_2]] - `imports` [EXTRACTED]
-- [[DockerEngine]] - `imports` [EXTRACTED]
-- [[PodmanEngine]] - `imports` [EXTRACTED]
-- [[apple_engine.py]] - `re_exports` [EXTRACTED]
-- [[detect_runtime()]] - `contains` [EXTRACTED]
-- [[docker_engine.py]] - `re_exports` [EXTRACTED]
-- [[engine.py]] - `re_exports` [EXTRACTED]
-- [[get_engine()]] - `contains` [EXTRACTED]
-- [[podman_engine.py]] - `re_exports` [EXTRACTED]
+- [[FindingType]] - `imports` [EXTRACTED]
+- [[InspectionFinding]] - `imports` [EXTRACTED]
+- [[InspectionResult]] - `imports` [EXTRACTED]
+- [[MCPAuditEntry]] - `imports` [EXTRACTED]
+- [[MCPAuditTrail]] - `imports` [EXTRACTED]
+- [[MCPInspector]] - `imports` [EXTRACTED]
+- [[MCPPermissionManager]] - `imports` [EXTRACTED]
+- [[MCPProxy]] - `imports` [EXTRACTED]
+- [[MCPProxyConfig]] - `imports` [EXTRACTED]
+- [[MCPServerConfig]] - `imports` [EXTRACTED]
+- [[MCPToolCall]] - `imports` [EXTRACTED]
+- [[MCPToolConfig]] - `imports` [EXTRACTED]
+- [[MCPToolResult]] - `imports` [EXTRACTED]
+- [[MCPTransport]] - `imports` [EXTRACTED]
+- [[PermissionCheck]] - `imports` [EXTRACTED]
+- [[PermissionLevel]] - `imports` [EXTRACTED]
+- [[ProxyResult]] - `imports` [EXTRACTED]
+- [[ThreatLevel]] - `imports` [EXTRACTED]
+- [[mcp_audit.py]] - `re_exports` [EXTRACTED]
+- [[mcp_config.py]] - `re_exports` [EXTRACTED]
+- [[mcp_inspector.py]] - `re_exports` [EXTRACTED]
+- [[mcp_permissions.py]] - `re_exports` [EXTRACTED]
+- [[mcp_proxy.py]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_82
+#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config

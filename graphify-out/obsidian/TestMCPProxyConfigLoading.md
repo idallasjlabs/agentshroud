@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "SSH Proxy & Gateway Config"
+community: "Forward Routing & Approval"
 location: "L271"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Forward_Routing__Approval
 ---
 
 # TestMCPProxyConfigLoading
@@ -21,7 +21,7 @@ tags:
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[ProxyResult]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SSH_Proxy__Gateway_Config
+#graphify/code #graphify/INFERRED #community/Forward_Routing__Approval

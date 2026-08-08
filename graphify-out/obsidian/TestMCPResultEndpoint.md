@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "Module Group 255"
+community: "Forward Routing & Approval"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_255
+  - community/Forward_Routing__Approval
 ---
 
 # TestMCPResultEndpoint
@@ -27,7 +27,7 @@ tags:
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[ProxyResult]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_255
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

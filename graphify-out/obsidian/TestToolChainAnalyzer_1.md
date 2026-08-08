@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Module Group 119"
-location: "L39"
+community: "Tool Chain Analyzer"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_119
+  - community/Tool_Chain_Analyzer
 ---
 
 # TestToolChainAnalyzer
@@ -38,11 +38,12 @@ tags:
 - [[ChainPattern]] - `uses` [INFERRED]
 - [[ParamScanResult]] - `uses` [INFERRED]
 - [[ReversibilityScore]] - `uses` [INFERRED]
-- [[RiskLevel_1]] - `uses` [INFERRED]
+- [[RiskLevel_3]] - `uses` [INFERRED]
 - [[SessionChainContext]] - `uses` [INFERRED]
 - [[Test cases for ToolChainAnalyzer class.]] - `rationale_for` [EXTRACTED]
+- [[Test proper initialization of ToolChainAnalyzer.]] - `rationale_for` [EXTRACTED]
 - [[ToolCall]] - `uses` [INFERRED]
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_119
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer

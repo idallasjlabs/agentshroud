@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "Gateway Config & Lifespan"
-location: "L20"
+community: "Gateway Test Suite"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Gateway_Test_Suite
 ---
 
 # TestEnforceDefaults
@@ -23,9 +23,9 @@ tags:
 - [[.test_security_module_config_defaults()]] - `method` [EXTRACTED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[SecurityConfig]] - `uses` [INFERRED]
+- [[SecurityConfig_2]] - `uses` [INFERRED]
 - [[SecurityModuleConfig]] - `uses` [INFERRED]
 - [[Test that core security modules default to enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

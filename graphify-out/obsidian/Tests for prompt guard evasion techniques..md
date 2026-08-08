@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Module Group 323"
+community: "PromptGuard Encoding Detection"
 location: "L798"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_323
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # Tests for prompt guard evasion techniques.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptGuardEvasion]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_323
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection

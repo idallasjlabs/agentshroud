@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Module Group 99"
+community: "Gateway Test Suite"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_99
+  - community/Gateway_Test_Suite
 ---
 
 # TestMinimalConfig
@@ -18,8 +18,8 @@ tags:
 - [[.test_has_gateway_port()]] - `method` [EXTRACTED]
 - [[.test_has_log_level()]] - `method` [EXTRACTED]
 - [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[minimal.env should have reasonable defaults.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_99
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

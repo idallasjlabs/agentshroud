@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Module Group 206"
-location: "L30"
+community: "SOC Dashboard"
+location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_206
+  - community/SOC_Dashboard
 ---
 
 # TestSecurityEvent
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.test_minimal_construction()]] - `method` [EXTRACTED]
 - [[.test_optional_fields_default_none()]] - `method` [EXTRACTED]
-- [[.test_severity_ordering()]] - `method` [EXTRACTED]
+- [[.test_severity_ordering()_1]] - `method` [EXTRACTED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_206
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

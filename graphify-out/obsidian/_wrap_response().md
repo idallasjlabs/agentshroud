@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Module Group 64"
+community: "Telegram Inbound Tests"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_64
+  - community/Telegram_Inbound_Tests
 ---
 
 # _wrap_response()
@@ -105,6 +105,8 @@ tags:
 - [[.test_collaborator_who_else_uses_query_gets_privacy_safe_info()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_whoami_uses_local_notice()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_whoami_without_slash_uses_local_notice()]] - `calls` [EXTRACTED]
+- [[.test_cooldown_suppresses_second_ack()]] - `calls` [EXTRACTED]
+- [[.test_dm_hello_does_not_trigger_probe()]] - `calls` [EXTRACTED]
 - [[.test_encoding_detected_on_getUpdates()]] - `calls` [EXTRACTED]
 - [[.test_filter_disabled_does_not_set_eligibility()]] - `calls` [EXTRACTED]
 - [[.test_full_access_collaborator_passes_despite_middleware_block()]] - `calls` [EXTRACTED]
@@ -124,6 +126,10 @@ tags:
 - [[.test_healthcheck_with_zero_width_char_is_handled_locally()]] - `calls` [EXTRACTED]
 - [[.test_healthcheck_with_zero_width_mention_and_punctuation_is_handled_locally()]] - `calls` [EXTRACTED]
 - [[.test_healthcheck_word_with_punctuation_is_handled_locally()]] - `calls` [EXTRACTED]
+- [[.test_hello_in_group_sends_hermes_ack()]] - `calls` [EXTRACTED]
+- [[.test_hello_in_group_sends_openclaw_ack()]] - `calls` [EXTRACTED]
+- [[.test_hermes_mention_ignored_when_processed_as_openclaw()]] - `calls` [EXTRACTED]
+- [[.test_hermes_mention_sets_hermes_eligibility()]] - `calls` [EXTRACTED]
 - [[.test_immune_command_lists_immune_users()]] - `calls` [EXTRACTED]
 - [[.test_immune_command_no_immune_users()]] - `calls` [EXTRACTED]
 - [[.test_immune_user_message_passes_through_when_suspended()]] - `calls` [EXTRACTED]
@@ -161,6 +167,7 @@ tags:
 - [[.test_non_owner_url_with_trailing_backtick_still_queues_egress_preflight()]] - `calls` [EXTRACTED]
 - [[.test_non_owner_userinfo_url_does_not_queue_egress_preflight()]] - `calls` [EXTRACTED]
 - [[.test_non_owner_whitespace_split_url_does_not_queue_egress_preflight()]] - `calls` [EXTRACTED]
+- [[.test_openclaw_mention_does_not_affect_hermes_eligibility()]] - `calls` [EXTRACTED]
 - [[.test_oversized_document_update_is_dropped()]] - `calls` [EXTRACTED]
 - [[.test_owner_activity_is_tracked_with_flag()]] - `calls` [EXTRACTED]
 - [[.test_owner_addcollab_accepts_known_name_alias()]] - `calls` [EXTRACTED]
@@ -191,6 +198,7 @@ tags:
 - [[.test_owner_url_triggers_egress_preflight_approval()]] - `calls` [EXTRACTED]
 - [[.test_owner_whoami_uses_local_notice()]] - `calls` [EXTRACTED]
 - [[.test_owner_whoami_with_bot_mention_uses_local_notice()]] - `calls` [EXTRACTED]
+- [[.test_partial_phrase_does_not_trigger_probe()]] - `calls` [EXTRACTED]
 - [[.test_pipeline_error_fails_closed_for_non_owner()]] - `calls` [EXTRACTED]
 - [[.test_pipeline_not_called_without_text()]] - `calls` [EXTRACTED]
 - [[.test_plain_model_question_is_handled_locally()]] - `calls` [EXTRACTED]
@@ -213,12 +221,15 @@ tags:
 - [[.test_self_diagnostic_with_fullwidth_chars_is_handled_locally()]] - `calls` [EXTRACTED]
 - [[.test_self_diagnostic_with_punctuation_is_handled_locally_for_collaborator()]] - `calls` [EXTRACTED]
 - [[.test_start_resets_multi_turn_tracker_for_collaborator()]] - `calls` [EXTRACTED]
+- [[.test_status_in_group_sends_short_ack_not_full_status()]] - `calls` [EXTRACTED]
 - [[.test_stranger_exceeding_limit_gets_rate_limit_notice_not_owner_notice()]] - `calls` [EXTRACTED]
+- [[.test_stranger_hello_in_group_receives_ack()]] - `calls` [EXTRACTED]
 - [[.test_stranger_rate_limit_cooldown_suppresses_repeated_notices()]] - `calls` [EXTRACTED]
 - [[.test_stranger_within_limit_triggers_approval_workflow()]] - `calls` [EXTRACTED]
 - [[.test_suspended_drop_notice_fires_again_after_cooldown()]] - `calls` [EXTRACTED]
 - [[.test_suspended_drop_notice_respects_cooldown()_1]] - `calls` [EXTRACTED]
 - [[.test_suspended_user_receives_drop_notice()]] - `calls` [EXTRACTED]
+- [[.test_two_bots_same_group_independent_eligibility()]] - `calls` [EXTRACTED]
 - [[.test_unapproved_collaborator_slash_command_is_quarantined()]] - `calls` [EXTRACTED]
 - [[.test_unapproved_collaborator_slash_command_with_mention_and_punctuation_is_quarantined()]] - `calls` [EXTRACTED]
 - [[.test_unknown_user_always_gets_pending_or_rate_limit_notice()]] - `calls` [EXTRACTED]
@@ -230,4 +241,4 @@ tags:
 - [[.test_within_limit_document_update_passes()]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_64
+#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests

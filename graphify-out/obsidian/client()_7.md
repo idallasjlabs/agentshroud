@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_result_endpoint.py"
+source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "Module Group 311"
-location: "L51"
+community: "Slack API Proxy"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_311
+  - community/Slack_API_Proxy
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_311
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

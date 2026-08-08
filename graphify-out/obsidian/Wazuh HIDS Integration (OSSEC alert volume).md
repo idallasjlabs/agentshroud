@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "concept"
-community: "Module Group 306"
+community: "docs/vault"
 location: "gateway/security/wazuh_client.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_306
+  - community/docs/vault
 ---
 
 # Wazuh HIDS Integration (OSSEC alert volume)
 
 ## Connections
-- [[wazuh_client.py_1]] - `implements` [EXTRACTED]
+- [[wazuh_client.py_2]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_306
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

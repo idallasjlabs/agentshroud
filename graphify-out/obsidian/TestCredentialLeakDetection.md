@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_isolation.py"
 type: "code"
-community: "Module Group 384"
-location: "L97"
+community: "Gateway Test Suite"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_384
+  - community/Gateway_Test_Suite
 ---
 
 # TestCredentialLeakDetection
@@ -25,4 +25,4 @@ tags:
 - [[Test that credential patterns are detected in outbound content.]] - `rationale_for` [EXTRACTED]
 - [[test_credential_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_384
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

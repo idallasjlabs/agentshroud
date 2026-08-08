@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Module Group 222"
+community: "Gateway Test Suite"
 location: "L765"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_222
+  - community/Gateway_Test_Suite
 ---
 
 # TestCanvasWebSocket
@@ -22,4 +22,4 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_222
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

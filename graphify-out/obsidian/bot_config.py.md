@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "code"
-community: "Module Group 127"
+community: "Forward Routing & Approval"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_127
+  - community/Forward_Routing__Approval
 ---
 
 # bot_config.py
@@ -15,4 +15,4 @@ tags:
 - [[BotConfig]] - `contains` [EXTRACTED]
 - [[config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_127
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

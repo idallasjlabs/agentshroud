@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_channel_ownership.py"
+source_file: "chatbot/test_main.py"
 type: "code"
-community: "Module Group 195"
-location: "L37"
+community: "chatbot/test_main.py"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_195
+  - community/chatbot/test_mainpy
 ---
 
 # client()
 
 ## Connections
-- [[test_channel_ownership.py]] - `contains` [EXTRACTED]
+- [[test_main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_195
+#graphify/code #graphify/EXTRACTED #community/chatbot/test_mainpy

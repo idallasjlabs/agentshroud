@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "HTTP Proxy Coverage Tests"
-location: "L39"
+community: "Gateway Test Suite"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_Proxy_Coverage_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # _MockWriter
 
 ## Connections
-- [[.__init__()_119]] - `method` [EXTRACTED]
-- [[.close()_11]] - `method` [EXTRACTED]
+- [[.__init__()_149]] - `method` [EXTRACTED]
+- [[.close()_13]] - `method` [EXTRACTED]
 - [[.drain()_2]] - `method` [EXTRACTED]
 - [[.get_extra_info()_1]] - `method` [EXTRACTED]
 - [[.write()_2]] - `method` [EXTRACTED]
@@ -34,15 +34,19 @@ tags:
 - [[test_recent_stats_trimmed_to_100_entries()]] - `calls` [EXTRACTED]
 - [[test_relay_and_scan_idle_timeout_no_data_no_scan()]] - `calls` [EXTRACTED]
 - [[test_relay_and_scan_limit_reached_scans_once()]] - `calls` [EXTRACTED]
+- [[test_relay_and_scan_plain_http_port_still_scans()]] - `calls` [EXTRACTED]
 - [[test_relay_and_scan_read_error_scans_partial_buffer()]] - `calls` [EXTRACTED]
 - [[test_relay_and_scan_small_download_scanned_at_eof()]] - `calls` [EXTRACTED]
+- [[test_relay_and_scan_tls_tunnel_skips_ciphertext_scan()]] - `calls` [EXTRACTED]
 - [[test_relay_copies_bytes_until_eof()]] - `calls` [EXTRACTED]
 - [[test_relay_idle_timeout_closes_writer()]] - `calls` [EXTRACTED]
 - [[test_relay_swallows_read_errors()]] - `calls` [EXTRACTED]
 - [[test_request_line_timeout_returns_408()]] - `calls` [EXTRACTED]
 - [[test_target_without_port_defaults_to_443()]] - `calls` [EXTRACTED]
 - [[test_tunnel_all_attempts_fail_returns_502()]] - `calls` [EXTRACTED]
+- [[test_tunnel_connect_falls_back_when_happy_eyeballs_unsupported()]] - `calls` [EXTRACTED]
+- [[test_tunnel_connect_uses_happy_eyeballs()]] - `calls` [EXTRACTED]
 - [[test_tunnel_retries_then_succeeds()]] - `calls` [EXTRACTED]
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_Proxy_Coverage_Tests
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

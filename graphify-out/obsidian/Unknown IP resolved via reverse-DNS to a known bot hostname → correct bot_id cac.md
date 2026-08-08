@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "Module Group 65"
+community: "Gateway Test Suite"
 location: "L401"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_65
+  - community/Gateway_Test_Suite
 ---
 
 # Unknown IP resolved via reverse-DNS to a known bot hostname → correct bot_id cac
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_agent_id_for_peer_lazy_rdns_hit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_65
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

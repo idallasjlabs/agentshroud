@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/tests/test_web_api_coverage.py"
+source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Module Group 70"
-location: "L59"
+community: "Approval Queue Tests"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_70
+  - community/Approval_Queue_Tests
 ---
 
 # client()
 
 ## Connections
-- [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
+- [[ApprovalQueue]] - `calls` [EXTRACTED]
+- [[DataLedger]] - `calls` [EXTRACTED]
+- [[MultiAgentRouter]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
+- [[Set up app state and provide TestClient.]] - `rationale_for` [EXTRACTED]
+- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_70
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

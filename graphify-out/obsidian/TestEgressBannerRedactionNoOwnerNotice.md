@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Tool Result Sanitizer"
+community: "PII Sanitizer Pipeline"
 location: "L4700"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Result_Sanitizer
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # TestEgressBannerRedactionNoOwnerNotice
@@ -20,4 +20,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Result_Sanitizer
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline

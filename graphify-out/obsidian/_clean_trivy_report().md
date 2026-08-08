@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Module Group 210"
-location: "L1054"
+community: "Gateway Test Suite"
+location: "L1050"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_210
+  - community/Gateway_Test_Suite
 ---
 
 # _clean_trivy_report()
@@ -19,8 +19,8 @@ tags:
 - [[.test_ignores_non_image_prefixed_files()]] - `calls` [EXTRACTED]
 - [[.test_returns_empty_when_no_image_reports()]] - `calls` [EXTRACTED]
 - [[.test_returns_one_entry_per_report_file()]] - `calls` [EXTRACTED]
-- [[Any_63]] - `references` [EXTRACTED]
+- [[Any_67]] - `references` [EXTRACTED]
 - [[_critical_trivy_report()]] - `calls` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_210
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

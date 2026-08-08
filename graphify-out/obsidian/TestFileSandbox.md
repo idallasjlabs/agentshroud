@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Module Group 137"
-location: "L486"
+community: "PII Config & Test Fixtures"
+location: "L482"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_137
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestFileSandbox
@@ -66,7 +66,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_137
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

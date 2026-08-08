@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Module Group 469"
+community: "SOC RBAC & Auth"
 location: "L903"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_469
+  - community/SOC_RBAC__Auth
 ---
 
 # TestSetConfig
@@ -23,4 +23,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_469
+#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth

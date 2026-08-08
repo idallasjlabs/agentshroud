@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Tool ACL & RBAC Config"
+community: "Gateway Test Suite"
 location: "L302"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_ACL__RBAC_Config
+  - community/Gateway_Test_Suite
 ---
 
 # TestCVE2026_9367TerminalToolDenied
@@ -27,4 +27,4 @@ tags:
 - [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - `rationale_for` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_ACL__RBAC_Config
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

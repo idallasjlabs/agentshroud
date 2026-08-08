@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/cli/client.py"
 type: "code"
-community: "Module Group 300"
+community: "Gateway Test Suite"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_300
+  - community/Gateway_Test_Suite
 ---
 
 # client_from_env()
 
 ## Connections
-- [[.get()_1]] - `calls` [EXTRACTED]
+- [[.get()_2]] - `calls` [EXTRACTED]
 - [[.test_env_token_and_url_used()]] - `calls` [EXTRACTED]
 - [[.test_explicit_args_win()]] - `calls` [EXTRACTED]
 - [[.test_gateway_password_fallback()]] - `calls` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[main.py_1]] - `imports` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_300
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "code"
-community: "Module Group 251"
-location: "L293"
+community: "scripts/generate-cve-page.py"
+location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_251
+  - community/scripts/generate-cve-pagepy
 ---
 
 # _replace_between()
@@ -16,4 +16,4 @@ tags:
 - [[generate()]] - `calls` [EXTRACTED]
 - [[generate-cve-page.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_251
+#graphify/code #graphify/EXTRACTED #community/scripts/generate-cve-pagepy

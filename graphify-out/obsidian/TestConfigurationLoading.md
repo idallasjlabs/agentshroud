@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "Tool Result Sanitizer"
+community: "Security Module Middleware"
 location: "L421"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Result_Sanitizer
+  - community/Security_Module_Middleware
 ---
 
 # TestConfigurationLoading
@@ -23,4 +23,4 @@ tags:
 - [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Result_Sanitizer
+#graphify/code #graphify/INFERRED #community/Security_Module_Middleware

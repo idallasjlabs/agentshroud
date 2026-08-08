@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "SOC Bots & CVE Management"
+community: "Bot CVE Scorecard"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Bots__CVE_Management
+  - community/Bot_CVE_Scorecard
 ---
 
 # _make_owner_caller()
@@ -38,8 +38,8 @@ tags:
 - [[.test_unknown_bot_id_returns_error()]] - `calls` [EXTRACTED]
 - [[.test_unknown_bot_returns_error()]] - `calls` [EXTRACTED]
 - [[Build an SCLCaller with OWNER role — no FastAPI dependency resolution.]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[SCLCaller]] - `calls` [EXTRACTED]
+- [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Bots__CVE_Management
+#graphify/code #graphify/EXTRACTED #community/Bot_CVE_Scorecard

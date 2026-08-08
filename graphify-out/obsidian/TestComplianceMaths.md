@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Module Group 528"
+community: "Gateway Test Suite"
 location: "L1071"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_528
+  - community/Gateway_Test_Suite
 ---
 
 # TestComplianceMaths
@@ -18,4 +18,4 @@ tags:
 - [[.test_weighted_subscore_partial()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_528
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

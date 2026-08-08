@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Module Group 266"
-location: "L1126"
+community: "Gateway Test Suite"
+location: "L1193"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_266
+  - community/Gateway_Test_Suite
 ---
 
 # TestProcessingTime
@@ -29,4 +29,4 @@ tags:
 - [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_266
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Module Group 204"
+community: "Gateway Test Suite"
 location: "L645"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_204
+  - community/Gateway_Test_Suite
 ---
 
 # _install_fake_websockets()
@@ -18,4 +18,4 @@ tags:
 - [[_FakeWS]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_204
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

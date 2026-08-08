@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Module Group 120"
-location: "L38"
+community: "Auth & Exception Types"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_120
+  - community/Auth__Exception_Types
 ---
 
 # _get_rbac_manager()
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[.test_get_rbac_manager_builds_real_manager()]] - `calls` [EXTRACTED]
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[RBACManager_2]] - `references` [EXTRACTED]
 - [[RBACManager_1]] - `calls` [EXTRACTED]
+- [[RBACManager_2]] - `references` [EXTRACTED]
 - [[_resolve_caller()]] - `calls` [EXTRACTED]
 - [[auth.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_120
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

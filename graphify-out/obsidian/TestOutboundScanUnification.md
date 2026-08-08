@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Module Group 287"
+community: "Gateway Test Suite"
 location: "L5183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_287
+  - community/Gateway_Test_Suite
 ---
 
 # TestOutboundScanUnification
@@ -26,4 +26,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_287
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

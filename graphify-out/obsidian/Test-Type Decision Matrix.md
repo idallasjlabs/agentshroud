@@ -1,17 +1,18 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/governance/TEST_STRATEGY.md"
-type: "concept"
-community: "Module Group 175"
-location: "## Test-Type Decision Matrix"
+source_file: "docs/governance/TEST_STRATEGY.md"
+type: "document"
+community: "docs/governance"
+location: "L8"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_175
+  - community/docs/governance
 ---
 
 # Test-Type Decision Matrix
 
 ## Connections
+- [[Test Strategy]] - `contains` [EXTRACTED]
 - [[Test Strategy (TEST_STRATEGY.md)]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_175
+#graphify/document #graphify/EXTRACTED #community/docs/governance

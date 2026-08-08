@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Module Group 162"
+community: "Tool Chain Analyzer"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_162
+  - community/Tool_Chain_Analyzer
 ---
 
 # ToolChainAnalyzer
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_96]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_118]] - `method` [EXTRACTED]
 - [[._calculate_risk_score()]] - `method` [EXTRACTED]
 - [[._cleanup_old_sessions()_1]] - `method` [EXTRACTED]
 - [[._detect_chain_patterns()]] - `method` [EXTRACTED]
@@ -36,7 +36,8 @@ tags:
 - [[.test_disabled_analyzer()]] - `calls` [EXTRACTED]
 - [[.test_tool_chain_analyzer_instantiates()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Main tool chain analysis engine.      Tracks sequences of tool calls and identif]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -58,4 +59,4 @@ tags:
 - [[tool_chain_analyzer()]] - `calls` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_162
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer

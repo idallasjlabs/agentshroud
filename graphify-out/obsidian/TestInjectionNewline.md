@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Module Group 94"
+community: "Approval Queue Tests"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_94
+  - community/Approval_Queue_Tests
 ---
 
 # TestInjectionNewline
@@ -25,4 +25,4 @@ tags:
 - [[Test newline-based injection attempts (Finding 11)]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_94
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

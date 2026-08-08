@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Context Guard & Integrity"
+community: "PII Sanitizer Pipeline"
 location: "L92"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Context_Guard__Integrity
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # TestPromptGuardPerformance
@@ -22,7 +22,7 @@ tags:
 - [[Prompt guard 1000 messages in  5s.]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Context_Guard__Integrity
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline

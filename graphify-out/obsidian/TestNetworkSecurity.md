@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Module Group 110"
-location: "L607"
+community: "PII Config & Test Fixtures"
+location: "L603"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_110
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestNetworkSecurity
@@ -57,7 +57,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test DNS filtering, SSRF prevention, and egress control.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_110
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

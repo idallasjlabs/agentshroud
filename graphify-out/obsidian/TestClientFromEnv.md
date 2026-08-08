@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Module Group 300"
+community: "Gateway Test Suite"
 location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_300
+  - community/Gateway_Test_Suite
 ---
 
 # TestClientFromEnv
@@ -19,4 +19,4 @@ tags:
 - [[SCLClient]] - `uses` [INFERRED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_300
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

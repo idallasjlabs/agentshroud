@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "CLI & Core Gateway Routes"
-location: "L688"
+community: "Auth & Exception Types"
+location: "L669"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Auth__Exception_Types
 ---
 
 # _resolve_effective_agent_id()
@@ -19,4 +19,4 @@ tags:
 - [[mcp_proxy_endpoint()]] - `calls` [EXTRACTED]
 - [[mcp_result_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

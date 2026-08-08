@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Gateway Config & Lifespan"
-location: "L55"
+community: "Approval & FastAPI Ingest"
+location: "L61"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Config__Lifespan
+  - community/Approval__FastAPI_Ingest
 ---
 
 # _DropInvalidHTTPRequestFilter
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[.filter()]] - `method` [EXTRACTED]
 - [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - `calls` [EXTRACTED]
+- [[AlertTelegramRelay]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[EventBus]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
@@ -27,4 +28,4 @@ tags:
 - [[lifespan.py]] - `contains` [EXTRACTED]
 - [[test_config_validation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Config__Lifespan
+#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest

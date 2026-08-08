@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "Module Group 117"
+community: "Gateway Test Suite"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_117
+  - community/Gateway_Test_Suite
 ---
 
 # TestEgressApprovalQueue
@@ -37,8 +37,8 @@ tags:
 - [[ApprovalResult]] - `uses` [INFERRED]
 - [[EgressApprovalQueue]] - `uses` [INFERRED]
 - [[EgressRequest]] - `uses` [INFERRED]
-- [[RiskLevel]] - `uses` [INFERRED]
+- [[RiskLevel_2]] - `uses` [INFERRED]
 - [[Test suite for EgressApprovalQueue functionality.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_117
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Module Group 470"
-location: "L137"
+community: "Gateway Test Suite"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_470
+  - community/Gateway_Test_Suite
 ---
 
 # _mock_empty_dir()
@@ -16,4 +16,4 @@ tags:
 - [[.test_three_zero_failures_no_report_on_disk()]] - `calls` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_470
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

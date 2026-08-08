@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Tool Result Sanitizer"
+community: "PII Sanitizer Pipeline"
 location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Result_Sanitizer
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # TestPIISanitizerPerformance
@@ -22,7 +22,7 @@ tags:
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Result_Sanitizer
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline

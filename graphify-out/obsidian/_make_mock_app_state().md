@@ -1,23 +1,25 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Agent Routing & Request Models"
+community: "Gateway Test Suite"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Routing__Request_Models
+  - community/Gateway_Test_Suite
 ---
 
 # _make_mock_app_state()
 
 ## Connections
+- [[._post()]] - `calls` [EXTRACTED]
 - [[._run_forward()]] - `calls` [EXTRACTED]
 - [[.test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
+- [[.test_forward_passes_user_id_in_metadata_to_process_inbound()]] - `calls` [EXTRACTED]
 - [[AgentTarget]] - `calls` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Build a minimal mock app_state that returns a target with the given bot name.]] - `rationale_for` [EXTRACTED]
 - [[_PipelineCaptor]] - `references` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Routing__Request_Models
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
+community: "Egress & RBAC Security Core"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # TestToolResultSanitizer
 
 ## Connections
-- [[.setup_method()_34]] - `method` [EXTRACTED]
+- [[.setup_method()_37]] - `method` [EXTRACTED]
 - [[.test_blocked_pattern_detection()]] - `method` [EXTRACTED]
 - [[.test_code_blocks_preserved()]] - `method` [EXTRACTED]
 - [[.test_convenience_function()]] - `method` [EXTRACTED]
@@ -30,9 +30,9 @@ tags:
 - [[.test_malicious_link_stripping()]] - `method` [EXTRACTED]
 - [[.test_mixed_content_sanitization()]] - `method` [EXTRACTED]
 - [[.test_warn_mode()]] - `method` [EXTRACTED]
-- [[Test ToolResultSanitizer functionality.]] - `rationale_for` [EXTRACTED]
+- [[Test ToolResultSanitizerConfig.]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[test_tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

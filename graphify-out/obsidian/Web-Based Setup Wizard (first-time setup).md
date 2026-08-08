@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "concept"
-community: "Module Group 449"
+community: "docs/vault"
 location: "gateway/web/installer.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_449
+  - community/docs/vault
 ---
 
 # Web-Based Setup Wizard (first-time setup)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[installer.py (gatewaywebinstaller.py)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_449
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

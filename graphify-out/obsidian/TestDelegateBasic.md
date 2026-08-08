@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "Module Group 526"
+community: "Gateway Test Suite"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_526
+  - community/Gateway_Test_Suite
 ---
 
 # TestDelegateBasic
@@ -22,4 +22,4 @@ tags:
 - [[DelegationPrivilege]] - `uses` [INFERRED]
 - [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_526
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

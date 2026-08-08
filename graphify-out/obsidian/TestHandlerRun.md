@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Module Group 207"
+community: "Auth & Exception Types"
 location: "L725"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_207
+  - community/Auth__Exception_Types
 ---
 
 # TestHandlerRun
@@ -27,4 +27,4 @@ tags:
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_207
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

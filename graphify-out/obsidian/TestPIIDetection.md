@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Module Group 442"
+community: "Gateway Test Suite"
 location: "L183"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_442
+  - community/Gateway_Test_Suite
 ---
 
 # TestPIIDetection
@@ -34,4 +34,4 @@ tags:
 - [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_442
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

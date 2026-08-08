@@ -1,24 +1,19 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "voice_gateway/server.py"
 type: "code"
-community: "Enhanced Approval Queue"
-location: "L379"
+community: "voice_gateway/server.py"
+location: "L423"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Enhanced_Approval_Queue
+  - graphify/EXTRACTED
+  - community/voice_gateway/serverpy
 ---
 
 # WebSocket
 
 ## Connections
-- [[.connect()]] - `references` [EXTRACTED]
-- [[.disconnect()]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[ToolRiskConfig_1]] - `uses` [INFERRED]
-- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
+- [[_keepalive()]] - `references` [EXTRACTED]
+- [[_send_state()]] - `references` [EXTRACTED]
+- [[voice_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/voice_gateway/serverpy

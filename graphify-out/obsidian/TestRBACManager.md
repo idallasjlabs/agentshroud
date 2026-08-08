@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "RBAC Configuration"
-location: "L129"
+community: "Auth & Exception Types"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # TestRBACManager
 
 ## Connections
-- [[.setup_method()_17]] - `method` [EXTRACTED]
+- [[.setup_method()_20]] - `method` [EXTRACTED]
 - [[.test_list_users_and_roles()]] - `method` [EXTRACTED]
 - [[.test_permission_matrix_admin()]] - `method` [EXTRACTED]
 - [[.test_permission_matrix_collaborator()]] - `method` [EXTRACTED]
@@ -32,8 +32,9 @@ tags:
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
+- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
 - [[Test RBAC manager functionality.]] - `rationale_for` [EXTRACTED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Configuration
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "DNS Filter & Tunneling Detection"
+community: "Gateway Test Suite"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNS_Filter__Tunneling_Detection
+  - community/Gateway_Test_Suite
 ---
 
 # TestDNSTunnelingDetection
@@ -23,4 +23,4 @@ tags:
 - [[EntropyCalculator]] - `uses` [INFERRED]
 - [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNS_Filter__Tunneling_Detection
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/heartbeat.sh"
 type: "code"
-community: "Module Group 577"
-location: "L22"
+community: "Bot Container Scripts"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_577
+  - community/Bot_Container_Scripts
 ---
 
 # _log()
@@ -15,4 +15,4 @@ tags:
 - [[heartbeat.sh]] - `defines` [EXTRACTED]
 - [[heartbeat.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_577
+#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts

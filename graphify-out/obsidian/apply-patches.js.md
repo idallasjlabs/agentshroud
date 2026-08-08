@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Module Group 165"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_165
+  - community/Bot_Skill_Config
 ---
 
 # apply-patches.js
@@ -14,12 +14,13 @@ tags:
 ## Connections
 - [[COLLABORATOR_IDS]] - `contains` [EXTRACTED]
 - [[COLLAB_LOCAL_INFO_ONLY]] - `contains` [EXTRACTED]
-- [[GROUP_CHAT_ID]] - `contains` [EXTRACTED]
+- [[GROUP_CHAT_IDS]] - `contains` [EXTRACTED]
 - [[MODEL_MODE]] - `contains` [EXTRACTED]
 - [[_COLLAB_TOOL_DENY]] - `contains` [EXTRACTED]
 - [[_COLLAB_TOOL_DENY_FULL_ACCESS]] - `contains` [EXTRACTED]
 - [[_GROUP_TOOL_DENY]] - `contains` [EXTRACTED]
 - [[_is_global_full_access]] - `contains` [EXTRACTED]
+- [[_rawGroupIds]] - `contains` [EXTRACTED]
 - [[_resolveCollabDenyList()]] - `contains` [EXTRACTED]
 - [[_resolveCollabToolConfig()]] - `contains` [EXTRACTED]
 - [[_userOverrides]] - `contains` [EXTRACTED]
@@ -30,15 +31,16 @@ tags:
 - [[desiredAllowFrom]] - `contains` [EXTRACTED]
 - [[desiredProvider]] - `contains` [EXTRACTED]
 - [[extraOrigins]] - `contains` [EXTRACTED]
-- [[fs]] - `contains` [EXTRACTED]
+- [[fs_1]] - `contains` [EXTRACTED]
 - [[gpIdx]] - `contains` [EXTRACTED]
 - [[hasMain]] - `contains` [EXTRACTED]
 - [[hasOwnerBinding]] - `contains` [EXTRACTED]
 - [[missingOrigins]] - `contains` [EXTRACTED]
 - [[missingProxies]] - `contains` [EXTRACTED]
-- [[path]] - `contains` [EXTRACTED]
+- [[path_1]] - `contains` [EXTRACTED]
 - [[providerModels]] - `contains` [EXTRACTED]
+- [[staleGroupBindings]] - `contains` [EXTRACTED]
 - [[trustedProxies]] - `contains` [EXTRACTED]
 - [[{ profile _genericProfile, deny _genericCollabDeny }]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_165
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

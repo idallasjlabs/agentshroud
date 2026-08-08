@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "Module Group 276"
-location: "L90"
+community: "Gateway Proxy Layer"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_276
+  - community/Gateway_Proxy_Layer
 ---
 
 # _check_basic_auth()
@@ -18,4 +18,4 @@ tags:
 - [[_read_gateway_password()]] - `calls` [EXTRACTED]
 - [[canvas_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_276
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

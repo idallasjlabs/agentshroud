@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "PII Sanitizer & Resource Guard"
-location: "L1034"
+community: "PII Config & Test Fixtures"
+location: "L1030"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestResourceProtection
@@ -54,7 +54,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test resource limits and DoS prevention.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer__Resource_Guard
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

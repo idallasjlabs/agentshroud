@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openclaw.md"
-type: "concept"
-community: "Module Group 158"
-location: "docker/config/openclaw/apply-patches.js"
+source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_158
+  - community/docs/vault
 ---
 
-# apply-patches.js
+# apply-patches.js.md
 
 ## Connections
-- [[OpenClaw]] - `configured_by` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_158
+#graphify/document #graphify/EXTRACTED #community/docs/vault

@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
-type: "concept"
-community: "Module Group 297"
-location: "gateway/ingest_api/auth.py"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_297
+  - community/docs/vault
 ---
 
-# auth.py
+# auth.py.md
 
 ## Connections
-- [[Auth Errors]] - `documents` [EXTRACTED]
-- [[python-jose]] - `implemented_by` [EXTRACTED]
+- [[auth.py_3]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_297
+#graphify/document #graphify/EXTRACTED #community/docs/vault

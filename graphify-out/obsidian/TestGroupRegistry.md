@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Module Group 186"
-location: "L472"
+community: "Auth & Exception Types"
+location: "L469"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_186
+  - community/Auth__Exception_Types
 ---
 
 # TestGroupRegistry
@@ -36,4 +36,4 @@ tags:
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_186
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

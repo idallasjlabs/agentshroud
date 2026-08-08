@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "PII Sanitizer & Resource Guard"
-location: "L693"
+community: "PII Config & Test Fixtures"
+location: "L689"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestCryptography
 
 ## Connections
-- [[.store()_1]] - `method` [EXTRACTED]
+- [[.store()_2]] - `method` [EXTRACTED]
 - [[.test_ciphertext_not_plaintext()]] - `method` [EXTRACTED]
 - [[.test_different_plaintexts_different_ciphertexts()]] - `method` [EXTRACTED]
 - [[.test_encrypt_decrypt_roundtrip()]] - `method` [EXTRACTED]
@@ -55,7 +55,7 @@ tags:
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test encryption, key management, and secret handling.]] - `rationale_for` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer__Resource_Guard
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

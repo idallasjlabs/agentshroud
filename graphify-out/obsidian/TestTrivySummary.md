@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Module Group 563"
+community: "Gateway Test Suite"
 location: "L267"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_563
+  - community/Gateway_Test_Suite
 ---
 
 # TestTrivySummary
@@ -17,4 +17,4 @@ tags:
 - [[.test_timestamp_falls_back_to_file_mtime()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_563
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

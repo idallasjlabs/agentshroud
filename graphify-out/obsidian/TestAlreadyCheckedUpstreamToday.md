@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Module Group 169"
-location: "L523"
+community: "Gateway Test Suite"
+location: "L882"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_169
+  - community/Gateway_Test_Suite
 ---
 
 # TestAlreadyCheckedUpstreamToday
@@ -17,4 +17,4 @@ tags:
 - [[.test_returns_true_when_checked_today()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_169
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

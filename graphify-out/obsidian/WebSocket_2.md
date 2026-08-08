@@ -1,41 +1,18 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "CLI & Core Gateway Routes"
-location: "L4465"
+community: "Approval Queue Tests"
+location: "L344"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/CLI__Core_Gateway_Routes
+  - graphify/EXTRACTED
+  - community/Approval_Queue_Tests
 ---
 
 # WebSocket
 
 ## Connections
-- [[Action_1]] - `uses` [INFERRED]
-- [[ApprovalDecision]] - `uses` [INFERRED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
-- [[EmailSendRequest]] - `uses` [INFERRED]
-- [[EmailSendResponse]] - `uses` [INFERRED]
-- [[EventBus]] - `uses` [INFERRED]
-- [[ForwardError]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[ForwardResponse]] - `uses` [INFERRED]
-- [[GatewayConfig_1]] - `uses` [INFERRED]
-- [[LedgerEntry_1]] - `uses` [INFERRED]
-- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
-- [[SSHExecResponse]] - `uses` [INFERRED]
-- [[StatusResponse]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[slack_ws_relay()]] - `references` [EXTRACTED]
+- [[.connect()_1]] - `references` [EXTRACTED]
+- [[.disconnect()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CLI__Core_Gateway_Routes
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

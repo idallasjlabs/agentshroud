@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/runbooks/daily-operations.md"
+source_file: "docs/runbooks/daily-operations.md"
 type: "concept"
-community: "Module Group 514"
+community: "docs/runbooks"
 location: "line 61-90"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_514
+  - community/docs/runbooks
 ---
 
 # Weekly Checklist (pip audit, backup verification, tailscale ACL review, test suite)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Daily Operations Runbook]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_514
+#graphify/concept #graphify/EXTRACTED #community/docs/runbooks

@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/clamav.md"
-type: "concept"
-community: "Module Group 158"
-location: "gateway/security/alert_dispatcher.py"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_158
+  - community/docs/vault
 ---
 
-# alert_dispatcher.py
+# alert_dispatcher.py.md
 
 ## Connections
-- [[ClamAV]] - `references` [EXTRACTED]
-- [[Trivy]] - `triggers` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_158
+#graphify/document #graphify/EXTRACTED #community/docs/vault

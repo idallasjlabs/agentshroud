@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "Approval Hardening"
-location: "L451"
+community: "Gateway Test Suite"
+location: "L449"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Hardening
+  - community/Gateway_Test_Suite
 ---
 
 # TestDeniedRequest
@@ -20,4 +20,4 @@ tags:
 - [[Test DeniedRequest dataclass.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Hardening
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

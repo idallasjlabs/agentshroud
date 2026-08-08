@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Module Group 208"
-location: "L251"
+community: "Collaborator Response Templates"
+location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_208
+  - community/Collaborator_Response_Templates
 ---
 
 # _save_overrides()
@@ -20,4 +20,4 @@ tags:
 - [[persist_group_member_remove()]] - `calls` [EXTRACTED]
 - [[persist_user_collab_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_208
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates

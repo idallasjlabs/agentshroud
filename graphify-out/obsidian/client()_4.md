@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_e2e.py"
+source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "Module Group 272"
-location: "L24"
+community: "Gateway Test Suite"
+location: "L32"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_272
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # client()
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[Fully initialized async client with lifespan.]] - `rationale_for` [EXTRACTED]
-- [[test_e2e.py]] - `contains` [EXTRACTED]
+- [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_272
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "rationale"
-community: "Module Group 409"
+community: "Gateway Test Suite"
 location: "L186"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_409
+  - community/Gateway_Test_Suite
 ---
 
 # Verify that raw credential values never appear in log output.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_credential_never_in_logs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_409
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Security Pipeline & Audit Chain"
-location: "L198"
+community: "PII Sanitizer Pipeline"
+location: "L197"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Pipeline__Audit_Chain
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # TestE2E05CanaryTripwire
@@ -25,7 +25,7 @@ tags:
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Pipeline__Audit_Chain
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline

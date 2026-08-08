@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
-community: "Module Group 245"
-location: "L43"
+community: "Gateway Test Suite"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_245
+  - community/Gateway_Test_Suite
 ---
 
 # TestBenchmarkRegression
@@ -22,4 +22,4 @@ tags:
 - [[Benchmark regression tests — ensure latency stays within 20% of baseline.]] - `rationale_for` [EXTRACTED]
 - [[test_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_245
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

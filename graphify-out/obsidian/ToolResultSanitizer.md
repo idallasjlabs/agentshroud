@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Tool Result Sanitizer"
+community: "Security Module Middleware"
 location: "L55"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer
+  - graphify/INFERRED
+  - community/Security_Module_Middleware
 ---
 
 # ToolResultSanitizer
 
 ## Connections
-- [[.__init__()_99]] - `method` [EXTRACTED]
+- [[.__init__()_121]] - `method` [EXTRACTED]
 - [[._extract_dict_content()]] - `method` [EXTRACTED]
 - [[._extract_scannable_content()]] - `method` [EXTRACTED]
 - [[._get_sanitizer_for_tool()]] - `method` [EXTRACTED]
@@ -27,7 +27,8 @@ tags:
 - [[.test_initialization()_5]] - `calls` [EXTRACTED]
 - [[.test_sanitize_disabled()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -48,4 +49,4 @@ tags:
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Result_Sanitizer
+#graphify/code #graphify/INFERRED #community/Security_Module_Middleware

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "Module Group 216"
+community: "Gateway Test Suite"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_216
+  - community/Gateway_Test_Suite
 ---
 
 # When both PII sanitizer and prompt guard detect issues.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pii_and_prompt_guard_both_trigger()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_216
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

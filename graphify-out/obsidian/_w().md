@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Module Group 131"
+community: "Gateway Test Suite"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_131
+  - community/Gateway_Test_Suite
 ---
 
 # _w()
@@ -82,8 +82,8 @@ tags:
 - [[.test_valid()]] - `calls` [EXTRACTED]
 - [[.test_wazuh_agent_absent()]] - `calls` [EXTRACTED]
 - [[.test_wazuh_agent_detected()]] - `calls` [EXTRACTED]
-- [[Path_29]] - `references` [EXTRACTED]
+- [[Path_36]] - `references` [EXTRACTED]
 - [[Write a file under the sandbox root, creating parents.]] - `rationale_for` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_131
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

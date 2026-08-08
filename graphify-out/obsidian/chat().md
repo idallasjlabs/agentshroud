@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "code"
-community: "Module Group 312"
-location: "L112"
+community: "chatbot/main.py"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_312
+  - community/chatbot/mainpy
 ---
 
 # chat()
@@ -15,6 +15,11 @@ tags:
 - [[ChatRequest]] - `references` [EXTRACTED]
 - [[ChatResponse]] - `calls` [EXTRACTED]
 - [[Process chat message with Isaiah's personality.]] - `rationale_for` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
+- [[TestAsyncClient]] - `calls` [EXTRACTED]
+- [[TestErrorSanitization]] - `calls` [EXTRACTED]
+- [[_check_rate_limit()]] - `calls` [EXTRACTED]
 - [[main.py]] - `contains` [EXTRACTED]
+- [[require_auth()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_312
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

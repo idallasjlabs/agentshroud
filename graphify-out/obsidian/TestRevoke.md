@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "Module Group 167"
+community: "Gateway Test Suite"
 location: "L88"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_167
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # TestRevoke
@@ -21,4 +21,4 @@ tags:
 - [[DelegationPrivilege]] - `uses` [INFERRED]
 - [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_167
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

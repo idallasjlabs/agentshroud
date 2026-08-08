@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Agent Routing & Request Models"
+community: "Gateway Test Suite"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Routing__Request_Models
+  - community/Gateway_Test_Suite
 ---
 
 # TestForwardEndpoint
@@ -20,4 +20,4 @@ tags:
 - [[Test forward endpoint with middleware integration.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Routing__Request_Models
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

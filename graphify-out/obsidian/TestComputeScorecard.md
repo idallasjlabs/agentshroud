@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Module Group 134"
-location: "L870"
+community: "IEC 62443 Scorecard"
+location: "L866"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_134
+  - community/IEC_62443_Scorecard
 ---
 
 # TestComputeScorecard
@@ -34,4 +34,4 @@ tags:
 - [[.test_version_is_v090()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_134
+#graphify/code #graphify/EXTRACTED #community/IEC_62443_Scorecard

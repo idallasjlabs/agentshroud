@@ -1,19 +1,19 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Module Group 158"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_158
+  - community/docs/vault
 ---
 
 # agentshroud-gateway Container
 
 ## Connections
-- [[Container Errors]] - `troubleshoots` [INFERRED]
+- [[Container Errors_1]] - `troubleshoots` [INFERRED]
 - [[Docker Networks]] - `references` [EXTRACTED]
-- [[FastAPI_3]] - `uses` [INFERRED]
+- [[FastAPI_4]] - `uses` [INFERRED]
 - [[OpenClaw]] - `proxied_by` [EXTRACTED]
 - [[OpenSCAP]] - `runs_in` [EXTRACTED]
 - [[agentshroud-bot Container]] - `depends_on` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[agentshroud.yaml (master config)]] - `configured_by` [EXTRACTED]
 - [[gateway-data volume (SQLite ledger)]] - `mounts` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_158
+#graphify/document #graphify/EXTRACTED #community/docs/vault

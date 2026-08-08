@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "code"
-community: "Module Group 92"
+community: "PII Sanitizer Pipeline"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_92
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # canary_pipeline()
@@ -16,7 +16,7 @@ tags:
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[PromptGuard]] - `calls` [EXTRACTED]
 - [[SecurityPipeline]] - `calls` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[test_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_92
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

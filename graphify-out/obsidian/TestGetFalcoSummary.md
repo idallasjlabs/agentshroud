@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Module Group 163"
-location: "L303"
+community: "Gateway Security Module"
+location: "L301"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_163
+  - community/Gateway_Security_Module
 ---
 
 # TestGetFalcoSummary
@@ -17,4 +17,4 @@ tags:
 - [[.test_returns_summary_for_empty_dir()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_163
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

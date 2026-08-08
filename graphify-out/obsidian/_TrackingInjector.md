@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Module Group 73"
-location: "L257"
+community: "Gateway Test Suite"
+location: "L307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_73
+  - community/Gateway_Test_Suite
 ---
 
 # _TrackingInjector
 
 ## Connections
-- [[.__init__()_124]] - `method` [EXTRACTED]
+- [[.__init__()_3]] - `method` [EXTRACTED]
 - [[.inject_headers()]] - `method` [EXTRACTED]
 - [[Fake CredentialInjector that records inject_headers calls and applies Anthropic]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[test_credential_injector_not_applied_for_non_anthropic_dest()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_73
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
 community: "Enhanced Approval Queue"
-location: "L319"
+location: "L317"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -12,9 +12,10 @@ tags:
 # TestPersistence
 
 ## Connections
+- [[.test_restart_recovery_preserves_timeout_action()]] - `method` [EXTRACTED]
 - [[.test_restore_pending_items()]] - `method` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
 - [[ApprovalStore_1]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]

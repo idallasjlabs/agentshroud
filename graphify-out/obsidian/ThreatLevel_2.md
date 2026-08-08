@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "URL Analyzer & Content Scanner"
+community: "Gateway Security Module"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URL_Analyzer__Content_Scanner
+  - community/Gateway_Security_Module
 ---
 
 # ThreatLevel
@@ -17,4 +17,4 @@ tags:
 - [[git_guard.py]] - `contains` [EXTRACTED]
 - [[str]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URL_Analyzer__Content_Scanner
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

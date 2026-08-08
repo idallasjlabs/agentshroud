@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "rationale"
-community: "PII Sanitizer & Resource Guard"
+community: "LLM Proxy Resource Guard"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResourceGuardAlertBridge]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer__Resource_Guard
+#graphify/rationale #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

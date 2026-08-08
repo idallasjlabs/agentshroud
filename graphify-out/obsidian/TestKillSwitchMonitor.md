@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "code"
-community: "Module Group 98"
-location: "L41"
+community: "Kill Switch Config"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_98
+  - community/Kill_Switch_Config
 ---
 
 # TestKillSwitchMonitor
@@ -23,4 +23,4 @@ tags:
 - [[Test kill switch monitor functionality.]] - `rationale_for` [EXTRACTED]
 - [[test_killswitch_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_98
+#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Config

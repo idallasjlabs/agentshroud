@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/operations/updating.md"
+source_file: "docs/operations/updating.md"
 type: "document"
-community: "Module Group 424"
+community: "docs/operations"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Module_Group_424
+  - community/docs/operations
 ---
 
 # Updating AgentShroud (Universal Guide)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Deployment Procedure]] - `extends` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Module_Group_424
+#graphify/document #graphify/INFERRED #community/docs/operations

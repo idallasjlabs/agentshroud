@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Group Config & Teams"
-location: "L199"
+community: "Collaborator Response Templates"
+location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Config__Teams
+  - community/Collaborator_Response_Templates
 ---
 
 # _apply_persisted_overrides()
@@ -18,4 +18,4 @@ tags:
 - [[TeamsConfig]] - `references` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Config__Teams
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "rationale"
-community: "Module Group 157"
+community: "Gateway Test Suite"
 location: "L90"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_157
+  - community/Gateway_Test_Suite
 ---
 
 # Validate output against the named schema.          Args:             output: The
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.validate()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_157
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

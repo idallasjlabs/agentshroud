@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
+source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "concept"
-community: "Module Group 477"
+community: "Architecture Docs"
 location: "Current Docker Configuration"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_477
+  - community/Architecture_Docs
 ---
 
 # Volume Strategy: openclaw-config, openclaw-workspace, openclaw-ssh, openclaw-browsers; tmpfs for /tmp, .npm, .cache, .config, .local
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Write Requirements Skills, Memory, Workspace, Caches, Secrets]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_477
+#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs

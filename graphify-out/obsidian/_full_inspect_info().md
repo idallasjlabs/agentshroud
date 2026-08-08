@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "SOC Services"
+community: "SOC Service Manager"
 location: "L395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Services
+  - community/SOC_Service_Manager
 ---
 
 # _full_inspect_info()
@@ -17,4 +17,4 @@ tags:
 - [[.test_zero_started_at_skips_uptime()]] - `calls` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Services
+#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager

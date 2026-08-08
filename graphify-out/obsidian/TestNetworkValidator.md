@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "code"
-community: "Module Group 201"
+community: "Gateway Test Suite"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_201
+  - community/Gateway_Test_Suite
 ---
 
 # TestNetworkValidator
 
 ## Connections
-- [[.setup_method()_13]] - `method` [EXTRACTED]
+- [[.setup_method()_16]] - `method` [EXTRACTED]
 - [[.test_gateway_network_bridging_validation()]] - `method` [EXTRACTED]
 - [[.test_network_security_finding_structure()]] - `method` [EXTRACTED]
 - [[.test_network_validation_comprehensive_rules()]] - `method` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[NetworkValidator]] - `uses` [INFERRED]
 - [[test_network_validator.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_201
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

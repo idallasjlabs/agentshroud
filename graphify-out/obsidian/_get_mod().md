@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "Module Group 148"
-location: "L54"
+community: "Gateway Test Suite"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_148
+  - community/Gateway_Test_Suite
 ---
 
 # _get_mod()
@@ -20,4 +20,4 @@ tags:
 - [[Return the generate-cve-page module (already loaded above).]] - `rationale_for` [EXTRACTED]
 - [[test_generate_cve_page.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_148
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

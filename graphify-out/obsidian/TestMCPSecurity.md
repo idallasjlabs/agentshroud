@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Environment Guard & Leak Detection"
-location: "L464"
+community: "PII Config & Test Fixtures"
+location: "L458"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Environment_Guard__Leak_Detection
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestMCPSecurity
@@ -40,7 +40,7 @@ tags:
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test MCP tool proxy security controls.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Environment_Guard__Leak_Detection
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

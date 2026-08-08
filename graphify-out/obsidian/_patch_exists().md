@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "SOC Services"
+community: "SOC Service Manager"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Services
+  - community/SOC_Service_Manager
 ---
 
 # _patch_exists()
@@ -23,4 +23,4 @@ tags:
 - [[os.path.exists override for specific paths only.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Services
+#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager

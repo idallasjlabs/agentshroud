@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "Module Group 159"
-location: "L241"
+community: "Gateway Test Suite"
+location: "L239"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_159
+  - community/Gateway_Test_Suite
 ---
 
 # _any_detector_fires()
@@ -30,4 +30,4 @@ tags:
 - [[_prompt_guard_detects()]] - `calls` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_159
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

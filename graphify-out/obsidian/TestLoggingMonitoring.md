@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Module Group 170"
+community: "Gateway Test Suite"
 location: "L675"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_170
+  - community/Gateway_Test_Suite
 ---
 
 # TestLoggingMonitoring
@@ -16,4 +16,4 @@ tags:
 - [[.test_baseline_only()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_170
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

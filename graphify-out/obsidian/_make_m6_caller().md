@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "SOC Bots & CVE Management"
+community: "Bot CVE Scorecard"
 location: "L801"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Bots__CVE_Management
+  - community/Bot_CVE_Scorecard
 ---
 
 # _make_m6_caller()
@@ -22,4 +22,4 @@ tags:
 - [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Bots__CVE_Management
+#graphify/code #graphify/EXTRACTED #community/Bot_CVE_Scorecard

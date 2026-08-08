@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Module Group 79"
+community: "Gateway Test Suite"
 location: "L843"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_79
+  - community/Gateway_Test_Suite
 ---
 
 # Tests for SSRF protection in egress filter.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressSSRF]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_79
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

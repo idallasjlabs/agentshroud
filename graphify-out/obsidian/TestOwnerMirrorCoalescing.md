@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Telegram Proxy Outbound Tests"
+community: "PII Sanitizer Pipeline"
 location: "L4856"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Telegram_Proxy_Outbound_Tests
+  - graphify/INFERRED
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # TestOwnerMirrorCoalescing
@@ -21,4 +21,4 @@ tags:
 - [[_mirror_to_owner_if_collaborator must coalesce within the window.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Outbound_Tests
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline

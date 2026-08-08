@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Module Group 383"
+community: "Gateway Test Suite"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_383
+  - community/Gateway_Test_Suite
 ---
 
 # TestCredentialInjection
@@ -21,4 +21,4 @@ tags:
 - [[.test_strip_headers_removes_conflicting_header()]] - `method` [EXTRACTED]
 - [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_383
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

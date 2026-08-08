@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Alert Dispatcher"
+community: "PII Config & Test Fixtures"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher
+  - community/PII_Config__Test_Fixtures
 ---
 
 # alert_dispatcher.py
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AlertDispatcher]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher
+#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "Module Group 123"
-location: "L156"
+community: "Gateway Test Suite"
+location: "L308"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_123
+  - community/Gateway_Test_Suite
 ---
 
 # Verify test count claims in README/docs are reasonable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTestCountAccuracy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_123
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

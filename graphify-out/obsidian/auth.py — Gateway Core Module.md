@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Module Group 105"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_105
+  - community/docs/vault
 ---
 
 # auth.py — Gateway Core Module
@@ -15,4 +15,4 @@ tags:
 - [[Auth Module (Bearer token + token-bucket rate limiter, hmac.compare_digest)]] - `documents` [EXTRACTED]
 - [[main.py — Gateway Core Module]] - `used_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_105
+#graphify/document #graphify/EXTRACTED #community/docs/vault

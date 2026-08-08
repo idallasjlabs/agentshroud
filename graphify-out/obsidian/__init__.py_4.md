@@ -1,14 +1,14 @@
 ---
-source_file: "gateway/ingest_api/__init__.py"
+source_file: "gateway/dashboard/__init__.py"
 type: "code"
-community: "Module Group 791"
+community: "gateway/dashboard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_791
+  - community/gateway/dashboard
 ---
 
 # __init__.py
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_791
+#graphify/code #graphify/EXTRACTED #community/gateway/dashboard

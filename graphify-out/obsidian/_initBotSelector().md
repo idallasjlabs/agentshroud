@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Module Group 129"
+community: "SOC Dashboard"
 location: "L1785"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_129
+  - community/SOC_Dashboard
 ---
 
 # _initBotSelector()
 
 ## Connections
-- [[.fetch()]] - `calls` [INFERRED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_129
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Module Group 214"
+community: "Security Module Middleware"
 location: "L681"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_214
+  - community/Security_Module_Middleware
 ---
 
 # TestExtractUserId
@@ -22,4 +22,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_214
+#graphify/code #graphify/EXTRACTED #community/Security_Module_Middleware

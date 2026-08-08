@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Module Group 310"
-location: "L609"
+community: "Enforce-Mode Auto-Revert"
+location: "L685"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_310
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # TestAgentshroudUpdates
@@ -28,4 +28,4 @@ tags:
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_310
+#graphify/code #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert

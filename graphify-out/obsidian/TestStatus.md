@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Module Group 409"
+community: "Gateway Test Suite"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_409
+  - community/Gateway_Test_Suite
 ---
 
 # TestStatus
@@ -16,4 +16,4 @@ tags:
 - [[.test_get_status_structure()]] - `method` [EXTRACTED]
 - [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_409
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

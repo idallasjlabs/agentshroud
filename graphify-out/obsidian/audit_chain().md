@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Security Pipeline & Audit Chain"
+community: "Egress Domain Allowlist"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Pipeline__Audit_Chain
+  - community/Egress_Domain_Allowlist
 ---
 
 # audit_chain()
@@ -15,4 +15,4 @@ tags:
 - [[AuditChain]] - `calls` [EXTRACTED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Pipeline__Audit_Chain
+#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist

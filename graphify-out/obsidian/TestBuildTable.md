@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "Module Group 148"
-location: "L168"
+community: "Gateway Test Suite"
+location: "L180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_148
+  - community/Gateway_Test_Suite
 ---
 
 # TestBuildTable
@@ -17,7 +17,9 @@ tags:
 - [[.test_hermes_markers_and_tbody_id()]] - `method` [EXTRACTED]
 - [[.test_openclaw_markers_and_tbody_id()]] - `method` [EXTRACTED]
 - [[.test_pagination_js_uses_unique_prefix()]] - `method` [EXTRACTED]
+- [[.test_under_review_badge_rendered()]] - `method` [EXTRACTED]
+- [[.test_under_review_none_cvss_renders_dash()]] - `method` [EXTRACTED]
 - [[_build_table returns correct sentinel markers and unique element ids.]] - `rationale_for` [EXTRACTED]
 - [[test_generate_cve_page.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_148
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

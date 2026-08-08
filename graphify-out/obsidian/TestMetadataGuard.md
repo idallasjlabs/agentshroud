@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "Module Group 116"
+community: "Gateway Test Suite"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_116
+  - community/Gateway_Test_Suite
 ---
 
 # TestMetadataGuard
 
 ## Connections
-- [[.setup_method()_11]] - `method` [EXTRACTED]
+- [[.setup_method()_12]] - `method` [EXTRACTED]
 - [[.test_all_unicode_control_chars_stripped()]] - `method` [EXTRACTED]
 - [[.test_check_for_exif_detects_magic_bytes()]] - `method` [EXTRACTED]
 - [[.test_check_oversized_headers_flags_large_headers()]] - `method` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[test_metadata_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_116
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

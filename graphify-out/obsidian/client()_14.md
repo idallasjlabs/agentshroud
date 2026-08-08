@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_v1_models_synthetic.py"
+source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "code"
-community: "Module Group 498"
-location: "L31"
+community: "Gateway Test Suite"
+location: "L16"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_498
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # client()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[TestClient with a stubbed proxy IP that passes the network allowlist.]] - `rationale_for` [EXTRACTED]
-- [[test_v1_models_synthetic.py]] - `contains` [EXTRACTED]
+- [[AsyncClient]] - `calls` [INFERRED]
+- [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_498
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Module Group 66"
+community: "Gateway Security Module"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_66
+  - community/Gateway_Security_Module
 ---
 
 # _secure_zero()
@@ -22,4 +22,4 @@ tags:
 - [[encrypted_store.py]] - `contains` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_66
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

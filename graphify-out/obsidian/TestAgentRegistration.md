@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Progressive Trust Levels"
+community: "Progressive Trust Config"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Levels
+  - community/Progressive_Trust_Config
 ---
 
 # TestAgentRegistration
@@ -19,7 +19,7 @@ tags:
 - [[Test agent registration and initial trust.]] - `rationale_for` [EXTRACTED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Levels
+#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config

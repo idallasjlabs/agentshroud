@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "rationale"
-community: "Module Group 293"
+community: "Gateway Test Suite"
 location: "L661"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_293
+  - community/Gateway_Test_Suite
 ---
 
 # Test the management API endpoints with mocked runtime.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestWebAPI]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_293
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

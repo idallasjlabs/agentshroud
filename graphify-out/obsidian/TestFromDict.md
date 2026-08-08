@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "RBAC Configuration"
+community: "Auth & Exception Types"
 location: "L471"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # TestFromDict
@@ -23,4 +23,4 @@ tags:
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Configuration
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "MCP Permissions Manager"
+community: "MCP Proxy Config"
 location: "L417"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Permissions_Manager
+  - community/MCP_Proxy_Config
 ---
 
 # TestCheckAll
@@ -24,4 +24,4 @@ tags:
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Permissions_Manager
+#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config

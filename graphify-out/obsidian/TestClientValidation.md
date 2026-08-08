@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "Module Group 103"
+community: "Gateway Test Suite"
 location: "L34"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_103
+  - community/Gateway_Test_Suite
 ---
 
 # TestClientValidation
@@ -23,4 +23,4 @@ tags:
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_103
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

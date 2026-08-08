@@ -1,20 +1,26 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "CLI & Core Gateway Routes"
-location: "L34"
+community: "Approval & FastAPI Ingest"
+location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Approval__FastAPI_Ingest
 ---
 
 # auth_dep()
 
 ## Connections
-- [[Auth dependency that uses the app state config.]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
-- [[approval.py]] - `contains` [EXTRACTED]
+- [[Authentication dependency for protected endpoints]] - `rationale_for` [EXTRACTED]
+- [[Request_3]] - `references` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
+- [[main.py_2]] - `contains` [EXTRACTED]
+- [[test_channel_ownership.py]] - `imports` [EXTRACTED]
+- [[test_email_owner_bypasses_pii.py]] - `imports` [EXTRACTED]
+- [[test_forward_stream.py]] - `imports` [EXTRACTED]
+- [[test_gateway_email_service.py]] - `imports` [EXTRACTED]
+- [[test_main_endpoints.py]] - `imports` [EXTRACTED]
+- [[test_op_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

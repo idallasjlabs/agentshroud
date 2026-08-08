@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "Module Group 92"
+community: "HTTP Forwarder"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_92
+  - community/HTTP_Forwarder
 ---
 
 # canary.py
@@ -16,4 +16,4 @@ tags:
 - [[CanaryResult]] - `contains` [EXTRACTED]
 - [[run_canary()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_92
+#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Module Group 258"
-location: "L301"
+community: "PII Config & Test Fixtures"
+location: "L295"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_258
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestDoSPrevention
@@ -43,7 +43,7 @@ tags:
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test resilience against denial of service patterns.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_258
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

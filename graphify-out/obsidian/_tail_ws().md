@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "Module Group 204"
+community: "Gateway Test Suite"
 location: "L367"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_204
+  - community/Gateway_Test_Suite
 ---
 
 # _tail_ws()
@@ -20,4 +20,4 @@ tags:
 - [[tail()]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_204
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

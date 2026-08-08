@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Module Group 530"
+community: "Gateway Test Suite"
 location: "L494"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_530
+  - community/Gateway_Test_Suite
 ---
 
 # TestGetSbom
@@ -18,4 +18,4 @@ tags:
 - [[.test_valid()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_530
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

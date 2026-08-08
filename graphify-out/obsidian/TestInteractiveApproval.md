@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Egress Filter & Approval"
+community: "Gateway Test Suite"
 location: "L270"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Egress_Filter__Approval
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # TestInteractiveApproval
@@ -25,4 +25,4 @@ tags:
 - [[Interactive egress approval flow (allow once  deny).]] - `rationale_for` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__Approval
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

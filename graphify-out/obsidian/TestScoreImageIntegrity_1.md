@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Module Group 295"
-location: "L156"
+community: "Gateway Test Suite"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_295
+  - community/Gateway_Test_Suite
 ---
 
 # TestScoreImageIntegrity
@@ -20,4 +20,4 @@ tags:
 - [[.test_zero_when_nothing_present()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_295
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

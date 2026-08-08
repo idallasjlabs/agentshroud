@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Subagent Monitor"
-location: "L521"
+community: "PII Config & Test Fixtures"
+location: "L515"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Subagent_Monitor
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Trust score should have an upper bound.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_trust_cannot_exceed_max()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Subagent_Monitor
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

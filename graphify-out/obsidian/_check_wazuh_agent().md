@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "SOC Services & Health Status"
-location: "L122"
+community: "SOC Dashboard"
+location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Services__Health_Status
+  - community/SOC_Dashboard
 ---
 
 # _check_wazuh_agent()
 
 ## Connections
-- [[Return 'running', 'stopped', or 'not_installed' for wazuh-agentd (CC-01).]] - `rationale_for` [EXTRACTED]
+- [[Return 'running', 'stopped', or 'not_installed' for fluent-bit (CC-01).]] - `rationale_for` [EXTRACTED]
 - [[services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Services__Health_Status
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

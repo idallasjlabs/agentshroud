@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Tool Result Sanitizer"
+community: "Security Module Middleware"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer
+  - community/Security_Module_Middleware
 ---
 
 # Test the ToolResultPIIConfig configuration class
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolResultPIIConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware

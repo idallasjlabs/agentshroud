@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "Module Group 496"
+community: "Slack API Proxy"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_496
+  - community/Slack_API_Proxy
 ---
 
 # TestWebhookReceiverSlackExtraction
@@ -21,4 +21,4 @@ tags:
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_496
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

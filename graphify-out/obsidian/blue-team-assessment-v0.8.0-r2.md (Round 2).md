@@ -1,18 +1,20 @@
 ---
 source_file: "docs/security/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "Module Group 298"
+community: "Planning Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_298
+  - community/Planning_Docs
 ---
 
 # blue-team-assessment-v0.8.0-r2.md (Round 2)
 
 ## Connections
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment (Final)]] - `contains` [EXTRACTED]
+- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
 - [[R2-C1 RBAC endpoints missing auth (unauthenticated privilege escalation via X-User-ID) — FIXED]] - `documents` [EXTRACTED]
-- [[blue-team-assessment-v0.8.0-final]] - `succeeds` [EXTRACTED]
 - [[blue-team-assessment-v0.8.0-r3.md (Round 3 Final — 0 CRITICAL, 0 HIGH)]] - `precedes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_298
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

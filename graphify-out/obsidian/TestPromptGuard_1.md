@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Module Group 79"
+community: "PromptGuard Encoding Detection"
 location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_79
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # TestPromptGuard
 
 ## Connections
-- [[.setup_method()_24]] - `method` [EXTRACTED]
+- [[.setup_method()_27]] - `method` [EXTRACTED]
 - [[.test_base64_encoded_injection()]] - `method` [EXTRACTED]
 - [[.test_benign_base64()]] - `method` [EXTRACTED]
 - [[.test_clean_input()]] - `method` [EXTRACTED]
@@ -50,7 +50,7 @@ tags:
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_79
+#graphify/code #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection

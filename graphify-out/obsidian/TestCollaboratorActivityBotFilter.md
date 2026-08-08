@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "SOC Bots & CVE Management"
+community: "Auth & Exception Types"
 location: "L434"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SOC_Bots__CVE_Management
+  - graphify/INFERRED
+  - community/Auth__Exception_Types
 ---
 
 # TestCollaboratorActivityBotFilter
@@ -17,4 +17,4 @@ tags:
 - [[Role_1]] - `uses` [INFERRED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Bots__CVE_Management
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Router & Correlation"
-location: "L61"
+community: "SOC Collaborator Lifecycle"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router__Correlation
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # _log_audit()
 
 ## Connections
-- [[Any_60]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[AuditLogEntry]] - `calls` [EXTRACTED]
 - [[AuditResult_1]] - `references` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller_3]] - `references` [EXTRACTED]
 - [[SCLInterface_1]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[add_collaborator()_1]] - `calls` [EXTRACTED]
@@ -57,4 +58,4 @@ tags:
 - [[upgrade_gateway()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router__Correlation
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

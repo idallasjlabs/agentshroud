@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "Module Group 62"
+community: "Gateway Test Suite"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_62
+  - community/Gateway_Test_Suite
 ---
 
 # URLAnalysisResult
@@ -19,4 +19,4 @@ tags:
 - [[Result of analyzing a URL.]] - `rationale_for` [EXTRACTED]
 - [[url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_62
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

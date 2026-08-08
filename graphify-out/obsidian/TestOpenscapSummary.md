@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Module Group 532"
+community: "Gateway Test Suite"
 location: "L429"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_532
+  - community/Gateway_Test_Suite
 ---
 
 # TestOpenscapSummary
@@ -18,4 +18,4 @@ tags:
 - [[.test_not_run()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_532
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "SSH Proxy & Gateway Config"
-location: "L202"
+community: "Approval Queue Tests"
+location: "L210"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SSH_Proxy__Gateway_Config
+  - graphify/INFERRED
+  - community/Approval_Queue_Tests
 ---
 
 # TestApprovalQueuePIISanitization
@@ -19,4 +19,4 @@ tags:
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSH_Proxy__Gateway_Config
+#graphify/code #graphify/INFERRED #community/Approval_Queue_Tests

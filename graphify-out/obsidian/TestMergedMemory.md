@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "Module Group 75"
-location: "L136"
+community: "Group Workspace Isolation"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_75
+  - community/Group_Workspace_Isolation
 ---
 
 # TestMergedMemory
@@ -24,4 +24,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_75
+#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation

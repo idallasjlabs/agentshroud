@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "Module Group 62"
+community: "Gateway Test Suite"
 location: "L99"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_62
+  - community/Gateway_Test_Suite
 ---
 
 # URLAnalyzer
 
 ## Connections
-- [[.__init__()_32]] - `method` [EXTRACTED]
+- [[.__init__()_40]] - `method` [EXTRACTED]
 - [[._check_base64()]] - `method` [EXTRACTED]
 - [[._is_private_ip()]] - `method` [EXTRACTED]
 - [[._is_ssrf()]] - `method` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[.analyze()]] - `method` [EXTRACTED]
 - [[.analyze_and_pin()]] - `method` [EXTRACTED]
 - [[Analyze URLs for SSRF, data exfiltration, and suspicious patterns.]] - `rationale_for` [EXTRACTED]
-- [[Any_20]] - `uses` [INFERRED]
+- [[Any_22]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
 - [[TestBase64Heuristic]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[url_analyzer.py]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_62
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

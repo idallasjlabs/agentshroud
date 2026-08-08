@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "Module Group 189"
+community: "URL/Domain Validation Tests"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_189
+  - community/URL/Domain_Validation_Tests
 ---
 
 # ValueError
 
 ## Connections
-- [[.__init__()_62]] - `calls` [INFERRED]
+- [[.__init__()_75]] - `calls` [INFERRED]
 - [[._validate_bot_id()]] - `calls` [INFERRED]
 - [[._validate_user_id()]] - `calls` [INFERRED]
 - [[.body_not_empty()]] - `calls` [INFERRED]
@@ -33,6 +33,7 @@ tags:
 - [[.validate_source()]] - `calls` [INFERRED]
 - [[.validate_targets()]] - `calls` [INFERRED]
 - [[DelegationError]] - `inherits` [EXTRACTED]
+- [[SkillScanError]] - `inherits` [EXTRACTED]
 - [[_replace_between()]] - `calls` [INFERRED]
 - [[_validate_runtime()]] - `calls` [INFERRED]
 - [[client_from_env()]] - `calls` [INFERRED]
@@ -40,4 +41,4 @@ tags:
 - [[load_config()]] - `calls` [INFERRED]
 - [[test_is_connect_error_classification()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_189
+#graphify/code #graphify/INFERRED #community/URL/Domain_Validation_Tests

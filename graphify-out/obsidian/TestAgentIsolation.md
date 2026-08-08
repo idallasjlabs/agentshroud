@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Agent Isolation & Container Config"
+community: "Gateway Test Suite"
 location: "L646"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Agent_Isolation__Container_Config
+  - community/Gateway_Test_Suite
 ---
 
 # TestAgentIsolation
 
 ## Connections
-- [[.setup_method()_28]] - `method` [EXTRACTED]
+- [[.setup_method()_31]] - `method` [EXTRACTED]
 - [[.test_container_config_defaults()]] - `method` [EXTRACTED]
 - [[.test_generate_compose()]] - `method` [EXTRACTED]
 - [[.test_list_agents()_1]] - `method` [EXTRACTED]
@@ -41,7 +41,7 @@ tags:
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Agent_Isolation__Container_Config
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

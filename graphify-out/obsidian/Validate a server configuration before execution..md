@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "rationale"
-community: "Module Group 102"
+community: "Egress & RBAC Security Core"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_102
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Validate a server configuration before execution.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.validate_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_102
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
 community: "Enhanced Approval Queue"
-location: "L106"
+location: "L104"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -16,7 +16,7 @@ tags:
 - [[.test_get_tool_risk_tier()]] - `method` [EXTRACTED]
 - [[.test_requires_approval()]] - `method` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
 - [[ApprovalStore_1]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]

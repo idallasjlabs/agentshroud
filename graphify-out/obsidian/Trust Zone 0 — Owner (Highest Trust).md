@@ -1,17 +1,16 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
-type: "image"
-community: "Module Group 112"
+type: "concept"
+community: "docs/diagrams"
 tags:
-  - graphify/image
-  - graphify/EXPLICIT
-  - community/Module_Group_112
+  - graphify/concept
+  - graphify/EXTRACTED
+  - community/docs/diagrams
 ---
 
 # Trust Zone 0 — Owner (Highest Trust)
 
 ## Connections
-- [[Diagram 11 Trust Boundary (PNG)]] - `contains` [EXPLICIT]
-- [[Trust Zone 1 — Gateway (Trusted Enforcer)]] - `controls` [EXPLICIT]
+- [[Isaiah Jefferson (full control)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXPLICIT #community/Module_Group_112
+#graphify/concept #graphify/EXTRACTED #community/docs/diagrams

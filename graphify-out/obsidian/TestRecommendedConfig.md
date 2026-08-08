@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Module Group 99"
+community: "Gateway Test Suite"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_99
+  - community/Gateway_Test_Suite
 ---
 
 # TestRecommendedConfig
@@ -19,8 +19,8 @@ tags:
 - [[.test_ssh_requires_approval()_1]] - `method` [EXTRACTED]
 - [[.test_tailscale_enabled()]] - `method` [EXTRACTED]
 - [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[recommended.env should balance security and usability.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_99
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

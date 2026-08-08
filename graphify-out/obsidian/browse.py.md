@@ -1,22 +1,22 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Module Group 95"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_95
+  - community/Bot_Skill_Config
 ---
 
 # browse.py
 
 ## Connections
 - [[Enum]] - `imports_from` [EXTRACTED]
-- [[RiskLevel_3]] - `contains` [EXTRACTED]
+- [[RiskLevel]] - `contains` [EXTRACTED]
 - [[SecureBrowser]] - `contains` [EXTRACTED]
-- [[SecurityConfig_1]] - `contains` [EXTRACTED]
+- [[SecurityConfig]] - `contains` [EXTRACTED]
 - [[SecurityError]] - `contains` [EXTRACTED]
-- [[main()_8]] - `contains` [EXTRACTED]
+- [[main()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_95
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

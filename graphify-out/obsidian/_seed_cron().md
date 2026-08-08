@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "Module Group 578"
-location: "L82"
+community: "Bot Container Scripts"
+location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_578
+  - community/Bot_Container_Scripts
 ---
 
 # _seed_cron()
@@ -15,4 +15,4 @@ tags:
 - [[init-config.sh]] - `defines` [EXTRACTED]
 - [[init-config.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_578
+#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts

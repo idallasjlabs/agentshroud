@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "Module Group 240"
+community: "Gateway Test Suite"
 location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_240
+  - community/Gateway_Test_Suite
 ---
 
 # TestEgressManagementAPI
@@ -20,4 +20,4 @@ tags:
 - [[Test the management API endpoints (would need FastAPI test client).]] - `rationale_for` [EXTRACTED]
 - [[test_egress_enforce.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_240
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

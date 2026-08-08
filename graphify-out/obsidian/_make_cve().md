@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "Module Group 148"
-location: "L59"
+community: "Gateway Test Suite"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_148
+  - community/Gateway_Test_Suite
 ---
 
 # _make_cve()
 
 ## Connections
 - [[.test_all_four_sentinel_pairs_present()]] - `calls` [EXTRACTED]
+- [[.test_all_mitigated_only_when_no_under_review()]] - `calls` [EXTRACTED]
 - [[.test_cve_row_contains_id_and_title()]] - `calls` [EXTRACTED]
 - [[.test_generate_returns_false_when_no_change()]] - `calls` [EXTRACTED]
 - [[.test_generate_returns_true_when_changed()]] - `calls` [EXTRACTED]
@@ -28,6 +29,9 @@ tags:
 - [[.test_openclaw_markers_and_tbody_id()]] - `calls` [EXTRACTED]
 - [[.test_pagination_js_uses_unique_prefix()]] - `calls` [EXTRACTED]
 - [[.test_partial_status_phrase()]] - `calls` [EXTRACTED]
+- [[.test_under_review_badge_rendered()]] - `calls` [EXTRACTED]
+- [[.test_under_review_in_heading_not_all_mitigated()]] - `calls` [EXTRACTED]
+- [[.test_under_review_none_cvss_renders_dash()]] - `calls` [EXTRACTED]
 - [[test_generate_cve_page.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_148
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Module Group 491"
+community: "Gateway Test Suite"
 location: "L1221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_491
+  - community/Gateway_Test_Suite
 ---
 
 # TestComputeBotScorecard
@@ -19,4 +19,4 @@ tags:
 - [[.test_unknown_bot_clean_score()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_491
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,21 +1,27 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Module Group 83"
-location: "L30"
+community: "SOC Dashboard"
+location: "L2666"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_83
+  - community/SOC_Dashboard
 ---
 
 # WebSocket
 
 ## Connections
-- [[.__init__()_106]] - `references` [EXTRACTED]
-- [[Severity_1]] - `uses` [INFERRED]
-- [[WSEvent]] - `uses` [INFERRED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLError]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
 - [[WSEventType]] - `uses` [INFERRED]
-- [[ws_soc_endpoint()]] - `references` [EXTRACTED]
+- [[soc_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_83
+#graphify/code #graphify/INFERRED #community/SOC_Dashboard

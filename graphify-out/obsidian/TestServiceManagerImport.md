@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "code"
-community: "SOC Services & Health Status"
+community: "SOC Service Manager"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Services__Health_Status
+  - community/SOC_Service_Manager
 ---
 
 # TestServiceManagerImport
@@ -18,4 +18,4 @@ tags:
 - [[Verify ServiceManager can be imported without a running container engine.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Services__Health_Status
+#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager

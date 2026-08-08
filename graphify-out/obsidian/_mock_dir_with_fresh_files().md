@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Module Group 413"
-location: "L120"
+community: "Gateway Test Suite"
+location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_413
+  - community/Gateway_Test_Suite
 ---
 
 # _mock_dir_with_fresh_files()
@@ -21,4 +21,4 @@ tags:
 - [[Like _mock_dir_with_files but mtime is now (fresh).]] - `rationale_for` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_413
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

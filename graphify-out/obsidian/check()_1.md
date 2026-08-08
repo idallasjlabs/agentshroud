@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/preflight-check.sh"
 type: "code"
-community: "Module Group 590"
+community: "scripts/preflight-check.sh"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_590
+  - community/scripts/preflight-checksh
 ---
 
 # check()
@@ -15,4 +15,4 @@ tags:
 - [[preflight-check.sh]] - `defines` [EXTRACTED]
 - [[preflight-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_590
+#graphify/code #graphify/EXTRACTED #community/scripts/preflight-checksh

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
+source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "Module Group 311"
-location: "L21"
+community: "Gateway Test Suite"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_311
+  - community/Gateway_Test_Suite
 ---
 
 # client()
 
 ## Connections
 - [[AsyncClient]] - `calls` [INFERRED]
-- [[test_mcp_proxy_endpoint.py]] - `contains` [EXTRACTED]
+- [[Fully initialized async client with lifespan.]] - `rationale_for` [EXTRACTED]
+- [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_311
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

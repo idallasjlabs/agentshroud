@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "Module Group 130"
-location: "L9"
+community: "Gateway Test Suite"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_130
+  - community/Gateway_Test_Suite
 ---
 
 # TestMultilingualInjection
 
 ## Connections
-- [[.setup_method()_12]] - `method` [EXTRACTED]
+- [[.setup_method()_15]] - `method` [EXTRACTED]
 - [[.test_benign_multilingual_text()]] - `method` [EXTRACTED]
 - [[.test_case_insensitive_detection()]] - `method` [EXTRACTED]
 - [[.test_mixed_language_injection()]] - `method` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[Test multilingual prompt injection detection across Tier 1 and Tier 2 languages.]] - `rationale_for` [EXTRACTED]
 - [[test_multilingual_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_130
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

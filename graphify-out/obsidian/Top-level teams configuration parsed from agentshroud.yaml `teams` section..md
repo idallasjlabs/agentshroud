@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Group Config & Teams"
-location: "L93"
+community: "Collaborator Response Templates"
+location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Config__Teams
+  - community/Collaborator_Response_Templates
 ---
 
 # Top-level teams configuration parsed from agentshroud.yaml `teams:` section.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TeamsConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Config__Teams
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates

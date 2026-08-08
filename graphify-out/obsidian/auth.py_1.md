@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "RBAC Configuration"
+community: "Auth & Exception Types"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # auth.py
 
 ## Connections
 - [[Action_1]] - `imports` [EXTRACTED]
+- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
 - [[RBACManager_1]] - `imports` [EXTRACTED]
 - [[Resource_1]] - `imports` [EXTRACTED]
@@ -32,4 +33,4 @@ tags:
 - [[router.py_1]] - `imports_from` [EXTRACTED]
 - [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Configuration
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

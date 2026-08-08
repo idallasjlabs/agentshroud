@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Scanner Integration Tests"
-location: "L102"
+community: "Gateway Test Suite"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # _wazuh_clean()
@@ -16,7 +16,7 @@ tags:
 - [[.test_overall_clean_when_all_clean()]] - `calls` [EXTRACTED]
 - [[.test_three_when_both_running()]] - `calls` [EXTRACTED]
 - [[.test_two_when_wazuh_running()]] - `calls` [EXTRACTED]
-- [[Any_63]] - `references` [EXTRACTED]
+- [[Any_67]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Tests
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

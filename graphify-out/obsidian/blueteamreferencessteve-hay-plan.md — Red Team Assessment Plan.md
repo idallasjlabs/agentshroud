@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/skills/custom/agentshroud-blueteam/references/steve-hay-plan.md"
+source_file: "skills/custom/agentshroud-blueteam/references/steve-hay-plan.md"
 type: "document"
-community: "Module Group 173"
+community: "Custom Skills"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_173
+  - community/Custom_Skills
 ---
 
 # blueteam/references/steve-hay-plan.md — Red Team Assessment Plan
@@ -16,4 +16,4 @@ tags:
 - [[agentshroud-blueteam SKILL.md — Blue Team Auditor Skill]] - `references` [INFERRED]
 - [[redteamreferencessteve-hay-plan.md — Red Team Plan (Red Team Copy)]] - `mirrors` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_173
+#graphify/document #graphify/EXTRACTED #community/Custom_Skills

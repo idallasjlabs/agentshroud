@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_apply_patches.js"
 type: "code"
-community: "Module Group 408"
+community: "tests/startup_smoke"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_408
+  - community/tests/startup_smoke
 ---
 
 # baseConfig()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_apply_patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_408
+#graphify/code #graphify/EXTRACTED #community/tests/startup_smoke

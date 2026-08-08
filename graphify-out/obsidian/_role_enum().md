@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "SOC Services & Health Status"
+community: "SOC Dashboard"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Services__Health_Status
+  - community/SOC_Dashboard
 ---
 
 # _role_enum()
@@ -16,4 +16,4 @@ tags:
 - [[UserRole]] - `references` [EXTRACTED]
 - [[contributors.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Services__Health_Status
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

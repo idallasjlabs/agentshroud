@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "Pipeline Action & Instruction Envelope"
+community: "Cross-Bot Trust Ledger"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pipeline_Action__Instruction_Envelope
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # Two signers sharing the same key can cross-verify envelopes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_different_signers_same_key_verify()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Action__Instruction_Envelope
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger

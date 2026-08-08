@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Module Group 437"
-location: "L249"
+community: "Gateway Test Suite"
+location: "L247"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_437
+  - community/Gateway_Test_Suite
 ---
 
 # TestGetClamavSummary
@@ -17,4 +17,4 @@ tags:
 - [[.test_not_run_when_no_report()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_437
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

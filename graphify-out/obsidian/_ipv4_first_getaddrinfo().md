@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Module Group 208"
-location: "L54"
+community: "Collaborator Response Templates"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_208
+  - community/Collaborator_Response_Templates
 ---
 
 # _ipv4_first_getaddrinfo()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[telegram_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_208
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates

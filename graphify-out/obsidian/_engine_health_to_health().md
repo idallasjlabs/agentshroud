@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "SOC Services & Health Status"
-location: "L198"
+community: "SOC Dashboard"
+location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Services__Health_Status
+  - community/SOC_Dashboard
 ---
 
 # _engine_health_to_health()
@@ -16,4 +16,4 @@ tags:
 - [[HealthStatus_1]] - `references` [EXTRACTED]
 - [[services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Services__Health_Status
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

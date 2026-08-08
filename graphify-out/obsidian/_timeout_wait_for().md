@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "Module Group 184"
+community: "Gateway Test Suite"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_184
+  - community/Gateway_Test_Suite
 ---
 
 # _timeout_wait_for()
@@ -15,4 +15,4 @@ tags:
 - [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-]] - `rationale_for` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_184
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

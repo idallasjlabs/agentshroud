@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "CLI Interface"
+community: "gateway/cli"
 location: "L294"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI_Interface
+  - community/gateway/cli
 ---
 
 # TestOutputHelpers
@@ -27,4 +27,4 @@ tags:
 - [[SCLClient]] - `uses` [INFERRED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI_Interface
+#graphify/code #graphify/EXTRACTED #community/gateway/cli

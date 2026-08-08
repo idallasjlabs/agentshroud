@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "Module Group 91"
-location: "L18"
+community: "Gateway Test Suite"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_91
+  - community/Gateway_Test_Suite
 ---
 
 # TestOutputCanary
 
 ## Connections
-- [[.setup_method()_16]] - `method` [EXTRACTED]
+- [[.setup_method()_19]] - `method` [EXTRACTED]
 - [[.test_canary_cleanup()]] - `method` [EXTRACTED]
 - [[.test_canary_generation_per_session()]] - `method` [EXTRACTED]
 - [[.test_clean_response_passes()]] - `method` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[Test cases for the Output Canary System.]] - `rationale_for` [EXTRACTED]
 - [[test_output_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_91
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

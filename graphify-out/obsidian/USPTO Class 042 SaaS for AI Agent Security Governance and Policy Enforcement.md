@@ -1,17 +1,17 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "rationale"
-community: "Module Group 399"
+community: "docs/project"
 location: "line 33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_399
+  - community/docs/project
 ---
 
 # USPTO Class 042: SaaS for AI Agent Security Governance and Policy Enforcement
 
 ## Connections
-- [[USPTO Trademark Application (TEAS Plus, Class 042, Class 009)]] - `contains` [EXTRACTED]
+- [[USPTO-APPLICATION]] - `contains` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_399
+#graphify/rationale #graphify/EXTRACTED #community/docs/project

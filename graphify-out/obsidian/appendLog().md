@@ -1,18 +1,18 @@
 ---
-source_file: "skills/custom/browser-fetch/browser-fetch.js"
+source_file: "docker/config/hermes/skills/i-browser/browse.js"
 type: "code"
-community: "Module Group 473"
+community: "Bot Skill Config"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_473
+  - community/Bot_Skill_Config
 ---
 
 # appendLog()
 
 ## Connections
-- [[browser-fetch.js]] - `contains` [EXTRACTED]
+- [[browse.js]] - `contains` [EXTRACTED]
 - [[browserFetch()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_473
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

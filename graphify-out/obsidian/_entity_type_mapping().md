@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Gateway Config & Lifespan"
-location: "L365"
+community: "Forward Routing & Approval"
+location: "L368"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Forward_Routing__Approval
 ---
 
 # _entity_type_mapping()
@@ -18,4 +18,4 @@ tags:
 - [[test_config.py]] - `imports` [EXTRACTED]
 - [[test_entity_type_mapping()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

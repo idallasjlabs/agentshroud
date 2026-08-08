@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "SOC Services & Health Status"
+community: "SOC Dashboard"
 location: "L14"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Services__Health_Status
+  - community/SOC_Dashboard
 ---
 
 # UserRole
@@ -17,4 +17,4 @@ tags:
 - [[UserRole_1]] - `uses` [INFERRED]
 - [[_role_enum()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Services__Health_Status
+#graphify/code #graphify/INFERRED #community/SOC_Dashboard

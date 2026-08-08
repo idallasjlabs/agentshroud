@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Scanner Integration Tests"
+community: "Gateway Test Suite"
 location: "L1035"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # _score_runtime_protection()
@@ -15,10 +15,10 @@ tags:
 - [[.test_initial_when_not_run()_1]] - `calls` [EXTRACTED]
 - [[.test_managed_when_has_criticals()]] - `calls` [EXTRACTED]
 - [[.test_optimizing_when_clean_zero_findings()]] - `calls` [EXTRACTED]
-- [[Any_51]] - `references` [EXTRACTED]
+- [[Any_55]] - `references` [EXTRACTED]
 - [[Score domain 5 Runtime Protection (0-5).      1=module exists, 2=running with c]] - `rationale_for` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Tests
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "Module Group 74"
+community: "Slack API Proxy"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_74
+  - community/Slack_API_Proxy
 ---
 
 # TestOwnerEmailBypassesPii
@@ -17,4 +17,4 @@ tags:
 - [[.test_unknown_recipient_body_still_scrubbed()]] - `method` [EXTRACTED]
 - [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_74
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

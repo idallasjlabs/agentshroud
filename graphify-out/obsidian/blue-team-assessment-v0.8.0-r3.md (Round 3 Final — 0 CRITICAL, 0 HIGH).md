@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/blue-team-assessment-v0.8.0-r3.md"
 type: "document"
-community: "Module Group 298"
+community: "Planning Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_298
+  - community/Planning_Docs
 ---
 
 # blue-team-assessment-v0.8.0-r3.md (Round 3 Final — 0 CRITICAL, 0 HIGH)
@@ -14,4 +14,4 @@ tags:
 - [[blue-team-assessment-v0.8.0-r2.md (Round 2)]] - `precedes` [EXTRACTED]
 - [[v0.8.0 Security Posture STRONG (all criticalhigh fixed, 3 medium remaining)]] - `concludes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_298
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

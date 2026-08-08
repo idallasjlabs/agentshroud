@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Alert Dispatcher"
-location: "L195"
+community: "PII Config & Test Fixtures"
+location: "L189"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestConcurrency
@@ -40,7 +40,7 @@ tags:
 - [[SubagentEventType]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[Test thread safety and race conditions in security modules.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

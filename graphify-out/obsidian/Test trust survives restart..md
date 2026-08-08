@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "Progressive Trust Levels"
+community: "Progressive Trust Config"
 location: "L185"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Levels
+  - community/Progressive_Trust_Config
 ---
 
 # Test trust survives restart.
 
 ## Connections
-- [[TestPersistence_1]] - `rationale_for` [EXTRACTED]
+- [[TestPersistence_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Levels
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config

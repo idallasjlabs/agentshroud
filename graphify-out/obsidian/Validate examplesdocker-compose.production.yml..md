@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "rationale"
-community: "Module Group 144"
+community: "Gateway Test Suite"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_144
+  - community/Gateway_Test_Suite
 ---
 
 # Validate examples/docker-compose.production.yml.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestProductionCompose]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_144
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

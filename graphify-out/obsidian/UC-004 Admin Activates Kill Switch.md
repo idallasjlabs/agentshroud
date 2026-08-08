@@ -1,18 +1,17 @@
 ---
 source_file: "docs/requirements/use-cases.md"
-type: "concept"
-community: "Module Group 330"
-location: "line 115"
+type: "document"
+community: "docs/requirements"
+location: "L114"
 tags:
-  - graphify/concept
-  - graphify/INFERRED
-  - community/Module_Group_330
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/docs/requirements
 ---
 
 # UC-004: Admin Activates Kill Switch
 
 ## Connections
-- [[FR-007 Kill Switch emergency shutdown mechanism]] - `implements` [INFERRED]
-- [[Use Cases Document (10 use cases for AgentShroud security proxy)]] - `contains` [EXTRACTED]
+- [[Use Cases_2]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Module_Group_330
+#graphify/document #graphify/EXTRACTED #community/docs/requirements

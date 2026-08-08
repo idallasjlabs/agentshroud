@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Module Group 254"
+community: "SOC Dashboard"
 location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_254
+  - community/SOC_Dashboard
 ---
 
 # _loadSecurity()
@@ -20,4 +20,4 @@ tags:
 - [[_setText()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_254
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

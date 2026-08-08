@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "code"
-community: "Module Group 136"
+community: "Gateway Test Suite"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_136
+  - community/Gateway_Test_Suite
 ---
 
 # _err_response()
@@ -15,4 +15,4 @@ tags:
 - [[test_collaborator_greeter.py]] - `contains` [EXTRACTED]
 - [[test_send_failure_does_not_persist_state()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_136
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

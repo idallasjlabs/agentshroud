@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "RBAC Configuration"
+community: "Auth & Exception Types"
 location: "L173"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # ToolTier
@@ -15,7 +15,8 @@ tags:
 - [[._build_tool_permissions()]] - `references` [EXTRACTED]
 - [[.check_tool_permission()_1]] - `references` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -32,4 +33,4 @@ tags:
 - [[ToolTier]] - `uses` [INFERRED]
 - [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Configuration
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

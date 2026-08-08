@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Module Group 78"
+community: "Gateway Test Suite"
 location: "L613"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_78
+  - community/Gateway_Test_Suite
 ---
 
 # TestProxyRateLimiting
 
 ## Connections
-- [[.test_rate_limit_enforced()_1]] - `method` [EXTRACTED]
+- [[.test_rate_limit_enforced()_2]] - `method` [EXTRACTED]
 - [[FindingType]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_78
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

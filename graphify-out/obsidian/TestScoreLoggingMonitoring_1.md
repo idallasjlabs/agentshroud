@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Module Group 565"
-location: "L439"
+community: "Gateway Test Suite"
+location: "L438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_565
+  - community/Gateway_Test_Suite
 ---
 
 # TestScoreLoggingMonitoring
@@ -17,4 +17,4 @@ tags:
 - [[.test_two_with_wazuh()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_565
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

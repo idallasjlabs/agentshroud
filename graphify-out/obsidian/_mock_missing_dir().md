@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Module Group 295"
-location: "L144"
+community: "Gateway Test Suite"
+location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_295
+  - community/Gateway_Test_Suite
 ---
 
 # _mock_missing_dir()
@@ -19,4 +19,4 @@ tags:
 - [[.test_zero_without_sbom()]] - `calls` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_295
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

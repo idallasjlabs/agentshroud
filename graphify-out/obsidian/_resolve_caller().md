@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "SOC Authentication"
-location: "L171"
+community: "Auth & Exception Types"
+location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Authentication
+  - community/Auth__Exception_Types
 ---
 
 # _resolve_caller()
@@ -27,4 +27,4 @@ tags:
 - [[auth.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Authentication
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

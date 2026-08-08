@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Module Group 162"
-location: "L576"
+community: "Egress & RBAC Security Core"
+location: "L445"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_162
+  - community/Egress__RBAC_Security_Core
 ---
 
 # callable
 
 ## Connections
-- [[.add_alert_callback()_2]] - `references` [EXTRACTED]
+- [[.add_alert_callback()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_162
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

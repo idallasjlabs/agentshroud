@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "HTTP Proxy Coverage Tests"
-location: "L32"
+community: "Gateway Test Suite"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_Proxy_Coverage_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # _make_stream()
 
 ## Connections
-- [[StreamReader_1]] - `references` [EXTRACTED]
+- [[StreamReader_2]] - `references` [EXTRACTED]
 - [[test_bypass_logging_failure_does_not_block_tunnel()]] - `calls` [EXTRACTED]
 - [[test_bypass_with_egress_filter_lacking_approval_queue()]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
@@ -23,7 +23,9 @@ tags:
 - [[test_recent_stats_trimmed_to_100_entries()]] - `calls` [EXTRACTED]
 - [[test_target_without_port_defaults_to_443()]] - `calls` [EXTRACTED]
 - [[test_tunnel_all_attempts_fail_returns_502()]] - `calls` [EXTRACTED]
+- [[test_tunnel_connect_falls_back_when_happy_eyeballs_unsupported()]] - `calls` [EXTRACTED]
+- [[test_tunnel_connect_uses_happy_eyeballs()]] - `calls` [EXTRACTED]
 - [[test_tunnel_retries_then_succeeds()]] - `calls` [EXTRACTED]
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_Proxy_Coverage_Tests
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

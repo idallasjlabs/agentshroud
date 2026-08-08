@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Module Group 412"
+community: "Gateway Test Suite"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_412
+  - community/Gateway_Test_Suite
 ---
 
 # TestIsContainerRunning
@@ -19,4 +19,4 @@ tags:
 - [[.test_stopped_container_returns_false()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_412
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "RBAC Configuration"
+community: "Auth & Exception Types"
 location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # ToolTier
 
 ## Connections
 - [[Action_1]] - `uses` [INFERRED]
-- [[Any_49]] - `uses` [INFERRED]
+- [[Any_52]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[PermissionResult]] - `uses` [INFERRED]
 - [[RBACConfig]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[str]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Configuration
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

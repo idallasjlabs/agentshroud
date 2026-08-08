@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "Module Group 385"
-location: "L27"
+community: "Gateway Test Suite"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_385
+  - community/Gateway_Test_Suite
 ---
 
 # _parse_cron_names_from_sh()
@@ -16,6 +16,7 @@ tags:
 - [[test_competitive_landscape_job_present()]] - `calls` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `contains` [EXTRACTED]
 - [[test_init_config_has_expected_cron_job_count()]] - `calls` [EXTRACTED]
+- [[test_jira_weekly_review_job_present()]] - `calls` [EXTRACTED]
 - [[test_stability_report_job_present()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_385
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

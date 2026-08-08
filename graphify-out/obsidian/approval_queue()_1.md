@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Approval Queue Core"
+community: "Gateway Test Suite"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_Core
+  - community/Gateway_Test_Suite
 ---
 
 # approval_queue()
@@ -16,4 +16,4 @@ tags:
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Core
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

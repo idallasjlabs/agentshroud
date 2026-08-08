@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Module Group 88"
+community: "Gateway Security Module"
 location: "L406"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_88
+  - graphify/INFERRED
+  - community/Gateway_Security_Module
 ---
 
 # TestEgressFilter
 
 ## Connections
-- [[.setup_method()_26]] - `method` [EXTRACTED]
+- [[.setup_method()_29]] - `method` [EXTRACTED]
 - [[.test_allowed_domain()]] - `method` [EXTRACTED]
 - [[.test_allowed_ip()_1]] - `method` [EXTRACTED]
 - [[.test_allowed_specific_ip()]] - `method` [EXTRACTED]
@@ -44,7 +44,7 @@ tags:
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_88
+#graphify/code #graphify/INFERRED #community/Gateway_Security_Module

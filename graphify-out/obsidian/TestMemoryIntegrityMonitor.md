@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Module Group 143"
-location: "L68"
+community: "Egress & RBAC Security Core"
+location: "L67"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_143
+  - graphify/INFERRED
+  - community/Egress__RBAC_Security_Core
 ---
 
 # TestMemoryIntegrityMonitor
 
 ## Connections
-- [[.setup_method()_8]] - `method` [EXTRACTED]
-- [[.teardown_method()]] - `method` [EXTRACTED]
+- [[.setup_method()_9]] - `method` [EXTRACTED]
+- [[.teardown_method()_1]] - `method` [EXTRACTED]
 - [[.test_expected_write_window()]] - `method` [EXTRACTED]
 - [[.test_file_monitoring_new_file()]] - `method` [EXTRACTED]
 - [[.test_hash_computation()]] - `method` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[Test memory integrity monitoring.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_143
+#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core

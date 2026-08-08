@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Module Group 139"
+community: "Gateway Proxy Layer"
 location: "L351"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_139
+  - community/Gateway_Proxy_Layer
 ---
 
 # TestAuditTrailBounded
@@ -33,4 +33,4 @@ tags:
 - [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_139
+#graphify/code #graphify/INFERRED #community/Gateway_Proxy_Layer

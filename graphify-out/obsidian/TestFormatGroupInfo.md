@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "Collaborator Responses"
+community: "Collaborator Response Templates"
 location: "L86"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Collaborator_Responses
+  - graphify/INFERRED
+  - community/Collaborator_Response_Templates
 ---
 
 # TestFormatGroupInfo
@@ -19,4 +19,4 @@ tags:
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Responses
+#graphify/code #graphify/INFERRED #community/Collaborator_Response_Templates

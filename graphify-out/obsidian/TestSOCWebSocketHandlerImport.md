@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "Module Group 315"
-location: "L16"
+community: "Gateway Test Suite"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_315
+  - community/Gateway_Test_Suite
 ---
 
 # TestSOCWebSocketHandlerImport
@@ -17,4 +17,4 @@ tags:
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_315
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

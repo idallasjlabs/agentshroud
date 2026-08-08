@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "Slack Proxy Tests"
+community: "Slack API Proxy"
 location: "L557"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_Proxy_Tests
+  - community/Slack_API_Proxy
 ---
 
 # TestMultiFieldOutboundScanning
@@ -23,4 +23,4 @@ tags:
 - [[blocksattachments and upload text must be scanned, not just `text`.      Regres]] - `rationale_for` [EXTRACTED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_Proxy_Tests
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
