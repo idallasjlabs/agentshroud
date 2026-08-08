@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Module Group 258"
-location: "L344"
+community: "Egress & RBAC Security Core"
+location: "L338"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_258
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Empty strings shouldn't crash any module.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_empty_inputs_everywhere()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_258
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

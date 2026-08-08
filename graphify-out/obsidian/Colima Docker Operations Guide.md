@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/runbooks/colima-docker-guide.md"
+source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Module Group 353"
+community: "docs/runbooks"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_353
+  - community/docs/runbooks
 ---
 
 # Colima Docker Operations Guide
@@ -17,4 +17,4 @@ tags:
 - [[Docker Named Volumes (gateway-data, clamav-db, agentshroud-config, agentshroud-ssh, etc.)]] - `documents` [EXTRACTED]
 - [[asb Helper Script (auto-selects compose files by $USER and hostname)]] - `documents` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_353
+#graphify/document #graphify/EXTRACTED #community/docs/runbooks

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "rationale"
-community: "Module Group 184"
+community: "Gateway Test Suite"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_184
+  - community/Gateway_Test_Suite
 ---
 
 # No clamav_scanner configured → step skipped, no error.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_clamav_not_configured()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_184
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

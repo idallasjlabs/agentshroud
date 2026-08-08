@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Module Group 88"
+community: "PII Config & Test Fixtures"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_88
+  - community/PII_Config__Test_Fixtures
 ---
 
 # EgressPolicy
 
 ## Connections
-- [[.__init__()_59]] - `references` [EXTRACTED]
+- [[.__init__()_72]] - `references` [EXTRACTED]
 - [[.get_policy()]] - `references` [EXTRACTED]
 - [[.matches_domain()]] - `method` [EXTRACTED]
 - [[.matches_ip()]] - `method` [EXTRACTED]
 - [[.matches_port()]] - `method` [EXTRACTED]
 - [[.set_agent_policy()]] - `references` [EXTRACTED]
-- [[.setup_method()_26]] - `calls` [EXTRACTED]
-- [[.setup_method()_30]] - `calls` [EXTRACTED]
+- [[.setup_method()_29]] - `calls` [EXTRACTED]
+- [[.setup_method()_33]] - `calls` [EXTRACTED]
 - [[.test_agent_specific_policy()]] - `calls` [EXTRACTED]
 - [[.test_allowed_cidr()]] - `calls` [EXTRACTED]
 - [[.test_connect_proxy_policy_allows_smtp_gmail_465()]] - `calls` [EXTRACTED]
@@ -48,7 +48,7 @@ tags:
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
@@ -74,6 +74,7 @@ tags:
 - [[TestMCPSecurity]] - `uses` [INFERRED]
 - [[TestMonitorMode]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
+- [[TestOpenClawResearchDomainsAllowlisted]] - `uses` [INFERRED]
 - [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPerAgentPolicy]] - `uses` [INFERRED]
 - [[TestPrivilegeEscalation]] - `uses` [INFERRED]
@@ -109,4 +110,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_88
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

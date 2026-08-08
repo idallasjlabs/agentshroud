@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
+community: "Egress & RBAC Security Core"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # OutputCanary
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_82]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_101]] - `method` [EXTRACTED]
 - [[._create_detection_patterns()]] - `method` [EXTRACTED]
 - [[._create_invisible_canary()]] - `method` [EXTRACTED]
 - [[._scan_for_canary()]] - `method` [EXTRACTED]
@@ -21,12 +21,13 @@ tags:
 - [[.cleanup_expired_canaries()]] - `method` [EXTRACTED]
 - [[.generate_canary()]] - `method` [EXTRACTED]
 - [[.get_status()_1]] - `method` [EXTRACTED]
-- [[.setup_method()_16]] - `calls` [EXTRACTED]
+- [[.setup_method()_19]] - `calls` [EXTRACTED]
 - [[.test_incident_logging()]] - `calls` [EXTRACTED]
 - [[.test_output_canary_instantiates()]] - `calls` [EXTRACTED]
 - [[.test_partial_canary_match_handling()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Main Output Canary System for detecting prompt leakage.      This system generat]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -44,4 +45,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_output_canary.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

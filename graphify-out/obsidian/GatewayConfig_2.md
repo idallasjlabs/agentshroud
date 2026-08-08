@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Ledger Config & Test Infra"
-location: "L59"
+community: "Forward Routing & Approval"
+location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Ledger_Config__Test_Infra
+  - community/Forward_Routing__Approval
 ---
 
 # GatewayConfig
@@ -18,10 +18,10 @@ tags:
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[sanitizer()]] - `references` [EXTRACTED]
 - [[test_client()]] - `references` [EXTRACTED]
 - [[test_config()]] - `references` [EXTRACTED]
 - [[test_ledger()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ledger_Config__Test_Infra
+#graphify/code #graphify/INFERRED #community/Forward_Routing__Approval

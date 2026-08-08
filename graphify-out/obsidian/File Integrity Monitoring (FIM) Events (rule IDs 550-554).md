@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "concept"
-community: "Module Group 306"
+community: "docs/vault"
 location: "gateway/security/wazuh_client.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_306
+  - community/docs/vault
 ---
 
 # File Integrity Monitoring (FIM) Events (rule IDs 550-554)
 
 ## Connections
-- [[wazuh_client.py_1]] - `detects` [EXTRACTED]
+- [[wazuh_client.py_2]] - `detects` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_306
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

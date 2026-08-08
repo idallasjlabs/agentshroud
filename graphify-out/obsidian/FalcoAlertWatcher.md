@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Module Group 242"
+community: "Gateway Security Module"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_242
+  - community/Gateway_Security_Module
 ---
 
 # FalcoAlertWatcher
 
 ## Connections
-- [[.__init__()_64]] - `method` [EXTRACTED]
+- [[.__init__()_77]] - `method` [EXTRACTED]
 - [[._handle_critical()]] - `method` [EXTRACTED]
 - [[._process_new_alerts()]] - `method` [EXTRACTED]
 - [[.run()_4]] - `method` [EXTRACTED]
-- [[.stop()_9]] - `method` [EXTRACTED]
+- [[.stop()_10]] - `method` [EXTRACTED]
 - [[Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts.]] - `rationale_for` [EXTRACTED]
 - [[falco_monitor.py]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[test_stop_halts_run_loop()]] - `calls` [EXTRACTED]
 - [[test_warning_alert_not_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_242
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

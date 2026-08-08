@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "Module Group 77"
+community: "Gateway Test Suite"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_77
+  - community/Gateway_Test_Suite
 ---
 
 # MockDNSVerdict
 
 ## Connections
-- [[.__init__()_143]] - `method` [EXTRACTED]
+- [[.__init__()_177]] - `method` [EXTRACTED]
 - [[.test_browser_security_blocks_high_risk_urls()]] - `calls` [EXTRACTED]
 - [[.test_browser_security_flags_medium_risk_urls()]] - `calls` [EXTRACTED]
 - [[.test_browser_security_skips_non_browser_user_agents()]] - `calls` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[WebProxyResult]] - `uses` [INFERRED]
 - [[test_web_proxy_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_77
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

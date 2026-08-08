@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Module Group 205"
-location: "L791"
+community: "Gateway Proxy Layer"
+location: "L841"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_205
+  - community/Gateway_Proxy_Layer
 ---
 
 # Get proxy statistics.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_stats()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_205
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

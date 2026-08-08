@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Module Group 76"
+community: "Gateway Test Suite"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_76
+  - community/Gateway_Test_Suite
 ---
 
 # InjectionRule
 
 ## Connections
-- [[.__init__()_97]] - `references` [EXTRACTED]
+- [[.__init__()_119]] - `references` [EXTRACTED]
 - [[Rule for detecting injection patterns in tool results.]] - `rationale_for` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_76
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

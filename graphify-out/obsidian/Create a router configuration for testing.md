@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "SSH Proxy & Gateway Config"
+community: "Forward Routing & Approval"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Forward_Routing__Approval
 ---
 
 # Create a router configuration for testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[router_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SSH_Proxy__Gateway_Config
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

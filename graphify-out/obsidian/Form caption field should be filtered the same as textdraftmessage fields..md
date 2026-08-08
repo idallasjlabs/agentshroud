@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 680"
+community: "Gateway Test Suite"
 location: "L1083"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_680
+  - community/Gateway_Test_Suite
 ---
 
 # Form caption field should be filtered the same as text/draft/message fields.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_form_caption_tool_payload_is_normalized()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_680
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Module Group 231"
-location: "L62"
+community: "Gateway Security Module"
+location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_231
+  - community/Gateway_Security_Module
 ---
 
 # Defines who an egress rule applies to.      kind values:       "all"   — applies
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressScope]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_231
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

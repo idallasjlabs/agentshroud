@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 217"
+community: "Gateway Test Suite"
 location: "L5087"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_217
+  - community/Gateway_Test_Suite
 ---
 
 # If the pipeline crashes on a multipart body, non-owner captions are blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_multipart_fails_closed_for_non_owner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_217
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

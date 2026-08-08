@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "Gateway Config & Lifespan"
-location: "L204"
+community: "Progressive Trust Config"
+location: "L227"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Progressive_Trust_Config
 ---
 
 # Get the previous trust level for demotion, or None if already at min.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_previous_trust_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config

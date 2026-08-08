@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "MCP Config & Proxy"
+community: "Gateway Test Suite"
 location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Config__Proxy
+  - community/Gateway_Test_Suite
 ---
 
 # MCPProxyConfig
@@ -28,4 +28,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[make_config()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Config__Proxy
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

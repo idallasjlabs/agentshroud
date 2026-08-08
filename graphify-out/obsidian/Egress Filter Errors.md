@@ -1,18 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: "Module Group 297"
+community: "docs/vault"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_297
+  - community/docs/vault
 ---
 
-# Egress Filter Errors
+# Egress Filter Errors.md
 
 ## Connections
-- [[EgressFilter (Network-level Outbound Control Module)]] - `documents` [EXTRACTED]
-- [[Error Index]] - `indexes` [EXTRACTED]
-- [[agentshroud.yaml (master config)]] - `references` [EXTRACTED]
+- [[Egress Filter Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_297
+#graphify/document #graphify/EXTRACTED #community/docs/vault

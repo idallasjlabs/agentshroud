@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
+community: "PII Config & Test Fixtures"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Middleware__Ingest_API
+  - community/PII_Config__Test_Fixtures
 ---
 
 # EgressChannel
@@ -35,4 +35,4 @@ tags:
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

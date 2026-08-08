@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "Module Group 189"
+community: "URL/Domain Validation Tests"
 location: "L212"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_189
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Extract the key_id from an encrypted blob without decrypting.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_blob_key_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_189
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

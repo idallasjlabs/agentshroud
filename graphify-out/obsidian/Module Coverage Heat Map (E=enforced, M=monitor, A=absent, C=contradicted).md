@@ -1,17 +1,17 @@
 ---
 source_file: "docs/redteam/feature-priorities.md"
 type: "document"
-community: "Module Group 401"
+community: "docs/redteam"
 location: "line 455"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_401
+  - community/docs/redteam
 ---
 
 # Module Coverage Heat Map (E=enforced, M=monitor, A=absent, C=contradicted)
 
 ## Connections
-- [[Enterprise Security Feature Priorities Report (v0.4.0–v0.9.0)]] - `produces` [EXTRACTED]
+- [[feature-priorities_1]] - `produces` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_401
+#graphify/document #graphify/EXTRACTED #community/docs/redteam

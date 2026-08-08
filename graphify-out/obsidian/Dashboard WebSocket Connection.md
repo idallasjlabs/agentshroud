@@ -1,12 +1,12 @@
 ---
 source_file: "web/management-dashboard.html"
 type: "concept"
-community: "Module Group 273"
+community: "web/management-dashboard.html"
 location: "line 886"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_273
+  - community/web/management-dashboardhtml
 ---
 
 # Dashboard WebSocket Connection
@@ -15,4 +15,4 @@ tags:
 - [[Dashboard Live Events Panel (WebSocket)]] - `populated_by` [EXTRACTED]
 - [[dashboard()]] - `uses` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_273
+#graphify/concept #graphify/EXTRACTED #community/web/management-dashboardhtml

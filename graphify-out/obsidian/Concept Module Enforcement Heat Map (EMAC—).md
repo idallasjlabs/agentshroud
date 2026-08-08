@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/skills/custom/agentshroud-blueteam/SKILL.md"
+source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "concept"
-community: "Module Group 173"
+community: "Custom Skills"
 location: "lines 21-26"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_173
+  - community/Custom_Skills
 ---
 
 # Concept: Module Enforcement Heat Map (E/M/A/C/?/—)
@@ -16,4 +16,4 @@ tags:
 - [[blueteamreferencessteve-hay-assessment.md — Steven Hay STPA-Sec Assessment]] - `references` [EXTRACTED]
 - [[scriptsREADME.md — Utility Scripts Catalog]] - `references` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_173
+#graphify/concept #graphify/EXTRACTED #community/Custom_Skills

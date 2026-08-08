@@ -1,11 +1,11 @@
 ---
 source_file: "docs/v0.9.0-testing-guide.md"
 type: "concept"
-community: "Module Group 203"
+community: "docs/v0.9.0-testing-guide.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_203
+  - community/docs/v090-testing-guidemd
 ---
 
 # Collaborator Modes (local_only / project_scoped / full_access)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud v0.9.0 Human Interface Testing Guide]] - `describes` [EXTRACTED]
 - [[v0.9.0 SOC Command Center (web UI, team collab, delegation, shared memory)]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_203
+#graphify/concept #graphify/EXTRACTED #community/docs/v090-testing-guidemd

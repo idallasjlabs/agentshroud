@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "URL Analyzer & Content Scanner"
+community: "Egress & RBAC Security Core"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URL_Analyzer__Content_Scanner
+  - community/Egress__RBAC_Security_Core
 ---
 
 # DisclosureEvent
@@ -16,4 +16,4 @@ tags:
 - [[A single disclosure event in a session.]] - `rationale_for` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URL_Analyzer__Content_Scanner
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

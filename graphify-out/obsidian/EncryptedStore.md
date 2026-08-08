@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Module Group 66"
+community: "PII Config & Test Fixtures"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_66
+  - community/PII_Config__Test_Fixtures
 ---
 
 # EncryptedStore
 
 ## Connections
-- [[.__init__()_62]] - `method` [EXTRACTED]
+- [[.__init__()_75]] - `method` [EXTRACTED]
 - [[._derive_key()]] - `method` [EXTRACTED]
 - [[._resolve_secret()]] - `method` [EXTRACTED]
 - [[.decrypt()]] - `method` [EXTRACTED]
@@ -23,8 +23,8 @@ tags:
 - [[.encrypt_b64()]] - `method` [EXTRACTED]
 - [[.get_blob_key_id()]] - `method` [EXTRACTED]
 - [[.rotate()]] - `calls` [EXTRACTED]
-- [[.setup_method()_23]] - `calls` [EXTRACTED]
-- [[.store()_1]] - `calls` [EXTRACTED]
+- [[.setup_method()_26]] - `calls` [EXTRACTED]
+- [[.store()_2]] - `calls` [EXTRACTED]
 - [[.test_custom_key_id()]] - `calls` [EXTRACTED]
 - [[.test_encrypt_decrypt_still_works_after_zeroing()]] - `calls` [EXTRACTED]
 - [[.test_encrypted_store_constant_time()]] - `calls` [INFERRED]
@@ -39,7 +39,7 @@ tags:
 - [[AES-256-GCM encrypted storage with key derivation and rotation support.]] - `rationale_for` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
@@ -78,4 +78,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_66
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

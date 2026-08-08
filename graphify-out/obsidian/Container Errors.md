@@ -1,18 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "Module Group 297"
+community: "docs/vault"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_297
+  - community/docs/vault
 ---
 
-# Container Errors
+# Container Errors.md
 
 ## Connections
-- [[Error Index]] - `indexes` [EXTRACTED]
-- [[agentshroud-gateway Container]] - `troubleshoots` [INFERRED]
-- [[spaCy]] - `references` [EXTRACTED]
+- [[Container Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_297
+#graphify/document #graphify/EXTRACTED #community/docs/vault

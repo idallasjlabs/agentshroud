@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "Module Group 85"
-location: "L499"
+community: "Kill Switch Config"
+location: "L498"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_85
+  - community/Kill_Switch_Config
 ---
 
 # Count events in the last N seconds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._count_recent_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_85
+#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch_Config

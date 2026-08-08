@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "code"
-community: "Module Group 274"
+community: "Security Docs"
 location: "gateway/security/egress_filter.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_274
+  - community/Security_Docs
 ---
 
 # EgressFilter (egress_filter.py) — Outbound domain allowlist/denylist, default-deny
@@ -17,4 +17,4 @@ tags:
 - [[OWASP Agentic AI (ASI) Coverage (ASI-01 through ASI-10)]] - `mapped_to` [EXTRACTED]
 - [[SecurityPipeline (proxypipeline.py) — Central inboundoutbound security orchestration]] - `orchestrates` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_274
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

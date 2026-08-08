@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "Module Group 193"
+community: "gateway/runtime"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_193
+  - community/gateway/runtime
 ---
 
 # DockerEngine
 
 ## Connections
-- [[.__init__()_38]] - `method` [EXTRACTED]
+- [[.__init__()_46]] - `method` [EXTRACTED]
 - [[._cmd()_1]] - `method` [EXTRACTED]
 - [[.build()_1]] - `method` [EXTRACTED]
 - [[.compose_down()_1]] - `method` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[.push()_1]] - `method` [EXTRACTED]
 - [[.rm()_1]] - `method` [EXTRACTED]
 - [[.run()_2]] - `method` [EXTRACTED]
-- [[.setup_method()_20]] - `calls` [EXTRACTED]
+- [[.setup_method()_23]] - `calls` [EXTRACTED]
 - [[.stop()_6]] - `method` [EXTRACTED]
 - [[.unpause()_1]] - `method` [EXTRACTED]
 - [[.volume_create()_1]] - `method` [EXTRACTED]
@@ -52,8 +52,8 @@ tags:
 - [[TestRuntimeConfig]] - `uses` [INFERRED]
 - [[TestSecurityFeatures]] - `uses` [INFERRED]
 - [[TestWebAPI]] - `uses` [INFERRED]
-- [[__init__.py_7]] - `imports` [EXTRACTED]
+- [[__init__.py_8]] - `imports` [EXTRACTED]
 - [[docker_engine.py]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_193
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime

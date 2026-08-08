@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Module Group 252"
-location: "L110"
+community: "Gateway Security Module"
+location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_252
+  - community/Gateway_Security_Module
 ---
 
 # EgressApprovalQueue
 
 ## Connections
-- [[.__init__()_58]] - `method` [EXTRACTED]
+- [[.__init__()_71]] - `method` [EXTRACTED]
 - [[._append_decision()]] - `method` [EXTRACTED]
 - [[._assess_risk()]] - `method` [EXTRACTED]
 - [[._check_existing_rule()]] - `method` [EXTRACTED]
@@ -45,4 +45,4 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_252
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

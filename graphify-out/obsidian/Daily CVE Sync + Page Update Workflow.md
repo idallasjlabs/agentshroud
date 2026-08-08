@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/update-cve-page.yml"
 type: "code"
-community: "Module Group 617"
+community: ".github/workflows"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_617
+  - community/github/workflows
 ---
 
 # Daily CVE Sync + Page Update Workflow
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Agent CVE Registry (OpenClaw + Hermes, daily NVD sync)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_617
+#graphify/code #graphify/EXTRACTED #community/github/workflows

@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Audit Store & Ledger"
-location: "L2286"
+community: "Approval & FastAPI Ingest"
+location: "L2498"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Store__Ledger
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Export tamper-evident audit events in SOC/SIEM formats.
 
 ## Connections
+- [[run_openscap_scan()]] - `rationale_for` [EXTRACTED]
 - [[soc_export()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Store__Ledger
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

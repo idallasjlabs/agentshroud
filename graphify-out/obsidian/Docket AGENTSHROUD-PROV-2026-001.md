@@ -1,17 +1,17 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "concept"
-community: "Module Group 342"
+community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 location: "Section 1.5"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_342
+  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
 ---
 
 # Docket: AGENTSHROUD-PROV-2026-001
 
 ## Connections
-- [[USPTO Provisional Patent Application]] - `references` [EXTRACTED]
+- [[USPTO_PROVISIONAL_PATENT_APPLICATION]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_342
+#graphify/concept #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd

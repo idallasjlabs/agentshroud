@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "URL Analyzer & Content Scanner"
+community: "Gateway Test Suite"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URL_Analyzer__Content_Scanner
+  - community/Gateway_Test_Suite
 ---
 
 # EgressRequest
@@ -21,4 +21,4 @@ tags:
 - [[test_soc_egress.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URL_Analyzer__Content_Scanner
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

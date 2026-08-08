@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "rationale"
-community: "Ledger Config & Test Infra"
-location: "L60"
+community: "Forward Routing & Approval"
+location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ledger_Config__Test_Infra
+  - community/Forward_Routing__Approval
 ---
 
 # Create a test configuration      Uses regex fallback for PII (no spaCy model req
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ledger_Config__Test_Infra
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

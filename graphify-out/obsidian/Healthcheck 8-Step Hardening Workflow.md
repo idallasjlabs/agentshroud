@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "concept"
-community: "Module Group 627"
+community: "skills/openclaw"
 location: "lines 23-246"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_627
+  - community/skills/openclaw
 ---
 
 # Healthcheck 8-Step Hardening Workflow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Skill healthcheck (host security hardening)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_627
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

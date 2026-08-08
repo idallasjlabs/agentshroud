@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "CLI Interface"
+community: "gateway/cli"
 location: "L322"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CLI_Interface
+  - community/gateway/cli
 ---
 
 # Emergency freeze: pause all bot containers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[freeze()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CLI_Interface
+#graphify/rationale #graphify/EXTRACTED #community/gateway/cli

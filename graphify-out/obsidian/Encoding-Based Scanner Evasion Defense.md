@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "concept"
-community: "Module Group 319"
+community: "docs/vault"
 location: "gateway/security/input_normalizer.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_319
+  - community/docs/vault
 ---
 
 # Encoding-Based Scanner Evasion Defense
 
 ## Connections
-- [[input_normalizer.py_1]] - `implements` [EXTRACTED]
+- [[input_normalizer.py_2]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_319
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "CLI & Core Gateway Routes"
-location: "L704"
+community: "Auth & Exception Types"
+location: "L685"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Auth__Exception_Types
 ---
 
 # MCP tool call interception endpoint.      Receives an MCP tool call, runs it thr
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mcp_proxy_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Pipeline Action & Instruction Envelope"
-location: "L391"
+community: "Cross-Bot Trust Ledger"
+location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pipeline_Action__Instruction_Envelope
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # EnvelopeSigner must attest outbound responses — C46 wiring.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEnvelopeSignerInPipeline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Action__Instruction_Envelope
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger

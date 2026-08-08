@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "rationale"
-community: "Ledger Config & Test Infra"
-location: "L98"
+community: "PII Sanitizer Pipeline"
+location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ledger_Config__Test_Infra
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Create an initialized in-memory ledger for testing      Yields the ledger, then
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ledger()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ledger_Config__Test_Infra
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

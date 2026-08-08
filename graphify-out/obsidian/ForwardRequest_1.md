@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Agent Routing & Request Models"
-location: "L98"
+community: "Forward Routing & Approval"
+location: "L116"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Agent_Routing__Request_Models
+  - community/Forward_Routing__Approval
 ---
 
 # ForwardRequest
@@ -15,6 +15,6 @@ tags:
 - [[.resolve_target()]] - `references` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Agent_Routing__Request_Models
+#graphify/code #graphify/INFERRED #community/Forward_Routing__Approval

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Module Group 190"
+community: "Gateway Test Suite"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_190
+  - community/Gateway_Test_Suite
 ---
 
 # DelegationManager
 
 ## Connections
-- [[.__init__()_55]] - `method` [EXTRACTED]
+- [[.__init__()_67]] - `method` [EXTRACTED]
 - [[._load()]] - `method` [EXTRACTED]
 - [[._require_owner()]] - `method` [EXTRACTED]
 - [[._revoke_by_user_privilege()]] - `method` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_190
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

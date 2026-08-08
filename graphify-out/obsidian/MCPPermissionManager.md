@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCP Permissions Manager"
+community: "MCP Proxy Config"
 location: "L175"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Permissions_Manager
+  - community/MCP_Proxy_Config
 ---
 
 # MCPPermissionManager
 
 ## Connections
-- [[.__init__()_19]] - `method` [EXTRACTED]
+- [[.__init__()_27]] - `method` [EXTRACTED]
 - [[._load_privacy_policy()]] - `method` [EXTRACTED]
 - [[._recompile_private_data_patterns()]] - `method` [EXTRACTED]
 - [[._record_private_access_attempt()]] - `method` [EXTRACTED]
@@ -35,10 +35,10 @@ tags:
 - [[.test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
 - [[.test_privacy_policy_overrides_patterns()]] - `calls` [EXTRACTED]
 - [[.test_privacy_policy_status_when_missing_file()]] - `calls` [EXTRACTED]
-- [[Any_15]] - `uses` [INFERRED]
+- [[Any_17]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
@@ -48,11 +48,11 @@ tags:
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[MCPToolResult]] - `uses` [INFERRED]
@@ -73,6 +73,7 @@ tags:
 - [[TestDataclasses]] - `uses` [INFERRED]
 - [[TestEgressFilterPaths]] - `uses` [INFERRED]
 - [[TestEmitPrivacyEvent]] - `uses` [INFERRED]
+- [[TestExecuteResultInspectionBinding]] - `uses` [INFERRED]
 - [[TestExecuteToolCall]] - `uses` [INFERRED]
 - [[TestExtractEgressTargets]] - `uses` [INFERRED]
 - [[TestHashChainIntegration]] - `uses` [INFERRED]
@@ -102,7 +103,7 @@ tags:
 - [[TestToolPermission]] - `uses` [INFERRED]
 - [[TestTrustLevels]] - `uses` [INFERRED]
 - [[TestTrustMapping]] - `uses` [INFERRED]
-- [[__init__.py_6]] - `imports` [EXTRACTED]
+- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[mcp_permissions.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
@@ -112,4 +113,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Permissions_Manager
+#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config

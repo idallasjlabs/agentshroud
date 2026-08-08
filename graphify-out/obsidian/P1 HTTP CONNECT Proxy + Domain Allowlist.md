@@ -1,17 +1,21 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/planning/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
-type: "concept"
-community: "Module Group 510"
-location: "## P1"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
+type: "document"
+community: "Planning Docs"
+location: "L76"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_510
+  - community/Planning_Docs
 ---
 
 # P1: HTTP CONNECT Proxy + Domain Allowlist
 
 ## Connections
-- [[Plan Reset 2026-02-22 Security Hardening — Real Agent Containment]] - `defines` [EXTRACTED]
+- [[Changes]] - `contains` [EXTRACTED]
+- [[Plan AgentShroud Security Hardening — Real Agent Containment]] - `contains` [EXTRACTED]
+- [[Tests (TDD)]] - `contains` [EXTRACTED]
+- [[Verification_9]] - `contains` [EXTRACTED]
+- [[What Exists]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_510
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

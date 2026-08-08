@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "rationale"
-community: "Module Group 114"
+community: "Gateway Test Suite"
 location: "L195"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_114
+  - community/Gateway_Test_Suite
 ---
 
 # Generate a full health report.      Args:         summaries: Dict mapping tool n
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[generate_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_114
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

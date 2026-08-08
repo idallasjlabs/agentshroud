@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Module Group 252"
-location: "L770"
+community: "Gateway Security Module"
+location: "L769"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_252
+  - community/Gateway_Security_Module
 ---
 
 # Enable/disable emergency global egress deny.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_emergency_block_all()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_252
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

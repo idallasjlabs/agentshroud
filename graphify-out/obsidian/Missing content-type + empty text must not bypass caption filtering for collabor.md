@@ -1,17 +1,24 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 716"
+community: "Gateway Test Suite"
 location: "L1932"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_716
+  - community/Gateway_Test_Suite
 ---
 
 # Missing content-type + empty text must not bypass caption filtering for collabor
 
 ## Connections
+- [[.test_json_without_content_type_empty_text_with_caption_is_still_filtered()]] - `rationale_for` [EXTRACTED]
+- [[.test_json_without_content_type_empty_text_with_content_is_still_filtered()]] - `rationale_for` [EXTRACTED]
+- [[.test_json_without_content_type_empty_text_with_draft_is_still_filtered()]] - `rationale_for` [EXTRACTED]
+- [[.test_json_without_content_type_empty_text_with_message_is_still_filtered()]] - `rationale_for` [EXTRACTED]
 - [[.test_urlencoded_without_content_type_empty_text_with_caption_is_still_filtered()]] - `rationale_for` [EXTRACTED]
+- [[.test_urlencoded_without_content_type_empty_text_with_content_is_still_filtered()]] - `rationale_for` [EXTRACTED]
+- [[.test_urlencoded_without_content_type_empty_text_with_draft_is_still_filtered()]] - `rationale_for` [EXTRACTED]
+- [[.test_urlencoded_without_content_type_empty_text_with_message_is_still_filtered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_716
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

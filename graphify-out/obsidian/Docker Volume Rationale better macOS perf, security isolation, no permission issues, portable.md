@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/architecture/WORKSPACE_DECISION.md"
+source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "rationale"
-community: "Module Group 477"
+community: "Architecture Docs"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_477
+  - community/Architecture_Docs
 ---
 
 # Docker Volume Rationale: better macOS perf, security isolation, no permission issues, portable
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Workspace Decision Docker Volume (not bind mount)]] - `contains` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_477
+#graphify/rationale #graphify/EXTRACTED #community/Architecture_Docs

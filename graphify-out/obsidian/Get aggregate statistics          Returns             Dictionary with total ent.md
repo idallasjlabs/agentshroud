@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "Ledger Config & Test Infra"
+community: "PII Sanitizer Pipeline"
 location: "L348"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Ledger_Config__Test_Infra
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Get aggregate statistics          Returns:             Dictionary with total ent
 
 ## Connections
-- [[.get_stats()_1]] - `rationale_for` [EXTRACTED]
+- [[.get_stats()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Ledger_Config__Test_Infra
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

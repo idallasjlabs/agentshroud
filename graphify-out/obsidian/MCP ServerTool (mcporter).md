@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/mcporter/SKILL.md"
 type: "concept"
-community: "Module Group 107"
+community: "skills/openclaw"
 location: "line 27"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_107
+  - community/skills/openclaw
 ---
 
 # MCP Server/Tool (mcporter)
 
 ## Connections
-- [[mcporter Skill]] - `enables` [EXTRACTED]
+- [[mcporter]] - `enables` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_107
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

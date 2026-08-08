@@ -1,33 +1,34 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
+community: "PII Config & Test Fixtures"
 location: "L17"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Middleware__Ingest_API
+  - community/PII_Config__Test_Fixtures
 ---
 
 # LogSanitizer
 
 ## Connections
-- [[.__init__()_74]] - `method` [EXTRACTED]
+- [[.__init__()_90]] - `method` [EXTRACTED]
 - [[._compile_patterns()]] - `method` [EXTRACTED]
 - [[._sanitize_text()]] - `method` [EXTRACTED]
 - [[.filter()_1]] - `method` [EXTRACTED]
 - [[.sanitizer()_2]] - `calls` [EXTRACTED]
 - [[.setup_method()_7]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
 - [[Custom logging filter that sanitizes sensitive data from log records.]] - `rationale_for` [EXTRACTED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
@@ -58,4 +59,4 @@ tags:
 - [[test_log_sanitizer.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

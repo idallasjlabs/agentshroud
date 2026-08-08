@@ -1,21 +1,27 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Module Group 542"
-location: "gateway/approval_queue/enhanced_queue.py"
+community: "Enhanced Approval Queue"
+location: "L410"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_542
+  - graphify/INFERRED
+  - community/Enhanced_Approval_Queue
 ---
 
 # EnhancedApprovalQueue
 
 ## Connections
-- [[ApprovalRequest_4]] - `uses` [EXTRACTED]
-- [[EnhancedApprovalQueue — Human-in-the-Loop Approval]] - `defines` [EXTRACTED]
-- [[MCPProxy_2]] - `uses` [EXTRACTED]
-- [[SecurityPipeline_2]] - `uses` [EXTRACTED]
-- [[version_routes.py — Version Management API]] - `depends_on` [EXTRACTED]
+- [[ApprovalQueue]] - `uses` [INFERRED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[ApprovalStore_1]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[MFAResult]] - `uses` [INFERRED]
+- [[ToolRiskConfig_1]] - `uses` [INFERRED]
+- [[_submit_enhanced_high_risk()]] - `references` [EXTRACTED]
+- [[_submit_tool_call()]] - `references` [EXTRACTED]
+- [[enhanced_mfa_queue()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_542
+#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue

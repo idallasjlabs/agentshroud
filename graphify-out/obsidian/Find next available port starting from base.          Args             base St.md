@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "rationale"
-community: "Module Group 68"
+community: "Gateway Test Suite"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_68
+  - community/Gateway_Test_Suite
 ---
 
 # Find next available port starting from base.          Args:             base: St
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.find_available_port()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_68
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

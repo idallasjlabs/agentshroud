@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-23-roadmap-gantt.png"
 type: "image"
-community: "Module Group 422"
+community: "docs/governance"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Module_Group_422
+  - community/docs/governance
 ---
 
 # Diagram 23: Roadmap Gantt (PNG)
@@ -14,6 +14,6 @@ tags:
 - [[Diagram 20 Observability Map (PNG)]] - `conceptually_related_to` [INFERRED]
 - [[Diagram 21 Team Structure (PNG)]] - `conceptually_related_to` [INFERRED]
 - [[Diagram 22 Dependency Graph (PNG)]] - `conceptually_related_to` [INFERRED]
-- [[Diagram 23 Roadmap Gantt (SVG)]] - `conceptually_related_to` [INFERRED]
+- [[GSD Cadence — Get Shit Done Governance (doc)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Module_Group_422
+#graphify/image #graphify/INFERRED #community/docs/governance

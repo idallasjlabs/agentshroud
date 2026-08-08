@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "rationale"
-community: "Module Group 139"
+community: "Gateway Proxy Layer"
 location: "L106"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_139
+  - community/Gateway_Proxy_Layer
 ---
 
 # Log an outgoing MCP tool call.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.log_tool_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_139
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

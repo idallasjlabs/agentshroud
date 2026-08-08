@@ -1,13 +1,13 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/vault/04 - Environment Variables/GATEWAY_URL.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
 type: "document"
-community: "Module Group 782"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_782
+  - community/docs/vault
 ---
 
 # GATEWAY_URL (env var — external client URL for iOS Shortcuts, browser extension, mgmt tools)
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_782
+#graphify/document #graphify/EXTRACTED #community/docs/vault

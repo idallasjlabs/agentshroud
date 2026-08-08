@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Tool Result Sanitizer"
+community: "PII Sanitizer Pipeline"
 location: "L299"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Result_Sanitizer
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Mock configuration for middleware tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.mock_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

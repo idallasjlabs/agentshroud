@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Module Group 132"
-location: "L362"
+community: "Approval Queue Tests"
+location: "L370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_132
+  - community/Approval_Queue_Tests
 ---
 
 # JSON API responses should have Cache-Control: no-store
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_json_api_has_cache_control()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_132
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Tests

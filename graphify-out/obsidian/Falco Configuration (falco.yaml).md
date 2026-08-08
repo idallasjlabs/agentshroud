@@ -1,11 +1,11 @@
 ---
 source_file: "docker/falco/falco.yaml"
 type: "code"
-community: "Module Group 138"
+community: "docker/falco"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_138
+  - community/docker/falco
 ---
 
 # Falco Configuration (falco.yaml)
@@ -14,4 +14,4 @@ tags:
 - [[Falco Runtime Security (eBPF kernel monitoring)]] - `configures` [EXTRACTED]
 - [[Falco Security Rules (rules.yaml)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_138
+#graphify/code #graphify/EXTRACTED #community/docker/falco

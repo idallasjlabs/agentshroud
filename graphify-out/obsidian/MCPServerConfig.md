@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "MCP Config & Proxy"
+community: "Gateway Test Suite"
 location: "L66"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Config__Proxy
+  - community/Gateway_Test_Suite
 ---
 
 # MCPServerConfig
@@ -20,11 +20,11 @@ tags:
 - [[.test_start_send_and_stop()]] - `calls` [EXTRACTED]
 - [[.test_start_without_env_passes_none()]] - `calls` [EXTRACTED]
 - [[.test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
-- [[Any_15]] - `uses` [INFERRED]
+- [[Any_17]] - `uses` [INFERRED]
 - [[Configuration for an MCP server.]] - `rationale_for` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
@@ -62,6 +62,7 @@ tags:
 - [[TestDataclasses]] - `uses` [INFERRED]
 - [[TestEgressFilterPaths]] - `uses` [INFERRED]
 - [[TestEmitPrivacyEvent]] - `uses` [INFERRED]
+- [[TestExecuteResultInspectionBinding]] - `uses` [INFERRED]
 - [[TestExecuteToolCall]] - `uses` [INFERRED]
 - [[TestExtractEgressTargets]] - `uses` [INFERRED]
 - [[TestHashChainIntegration]] - `uses` [INFERRED]
@@ -91,9 +92,9 @@ tags:
 - [[TestToolPermission]] - `uses` [INFERRED]
 - [[TestTrustLevels]] - `uses` [INFERRED]
 - [[TestTrustMapping]] - `uses` [INFERRED]
-- [[__init__.py_6]] - `imports` [EXTRACTED]
-- [[config()_1]] - `calls` [EXTRACTED]
+- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[config()_2]] - `calls` [EXTRACTED]
+- [[config()_3]] - `calls` [EXTRACTED]
 - [[make_config()]] - `calls` [EXTRACTED]
 - [[mcp_config.py]] - `contains` [EXTRACTED]
 - [[mcp_permissions.py]] - `imports` [EXTRACTED]
@@ -102,4 +103,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Config__Proxy
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

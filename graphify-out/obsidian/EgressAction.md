@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Module Group 79"
+community: "Gateway Test Suite"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_79
+  - community/Gateway_Test_Suite
 ---
 
 # EgressAction
@@ -26,12 +26,15 @@ tags:
 - [[TestEgressManagementAPI]] - `uses` [INFERRED]
 - [[TestEgressPolicy]] - `uses` [INFERRED]
 - [[TestEgressSSRF]] - `uses` [INFERRED]
+- [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
 - [[TestEncryptedStore]] - `uses` [INFERRED]
 - [[TestEnforceMode]] - `uses` [INFERRED]
+- [[TestEnforcementWiring]] - `uses` [INFERRED]
 - [[TestIPRules]] - `uses` [INFERRED]
 - [[TestInteractiveApproval]] - `uses` [INFERRED]
 - [[TestLogging]] - `uses` [INFERRED]
 - [[TestMonitorMode]] - `uses` [INFERRED]
+- [[TestOpenClawResearchDomainsAllowlisted]] - `uses` [INFERRED]
 - [[TestPerAgentPolicy]] - `uses` [INFERRED]
 - [[TestPromptGuard_1]] - `uses` [INFERRED]
 - [[TestPromptGuardEvasion]] - `uses` [INFERRED]
@@ -49,7 +52,8 @@ tags:
 - [[test_egress_enforce.py]] - `imports` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 - [[test_http_proxy.py]] - `imports` [EXTRACTED]
+- [[test_module_stats.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_79
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

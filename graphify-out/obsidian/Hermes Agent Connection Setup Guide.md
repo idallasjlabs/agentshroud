@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Module Group 194"
+community: "Setup Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_194
+  - community/Setup_Docs
 ---
 
 # Hermes Agent Connection Setup Guide
@@ -17,4 +17,4 @@ tags:
 - [[Tailscale Serve URL marvin.tail240ea8.ts.net]] - `references` [EXTRACTED]
 - [[hermes_api_key Docker Secret Setup]] - `requires` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_194
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

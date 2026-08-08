@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Module Group 231"
-location: "L61"
+community: "Gateway Security Module"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_231
+  - community/Gateway_Security_Module
 ---
 
 # EgressScope
@@ -24,4 +24,4 @@ tags:
 - [[override_egress_rule()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_231
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

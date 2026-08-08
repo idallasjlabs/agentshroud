@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "MCP Config & Proxy"
+community: "Gateway Test Suite"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Config__Proxy
+  - community/Gateway_Test_Suite
 ---
 
 # FakeProcess
 
 ## Connections
-- [[.__init__()_126]] - `method` [EXTRACTED]
+- [[.__init__()_159]] - `method` [EXTRACTED]
 - [[.kill()]] - `method` [EXTRACTED]
 - [[.terminate()]] - `method` [EXTRACTED]
 - [[.test_start_send_and_stop()]] - `calls` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Config__Proxy
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

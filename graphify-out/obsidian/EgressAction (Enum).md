@@ -1,14 +1,14 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "code"
-community: "Module Group 804"
+community: "docs/vault"
 location: "gateway/security/egress_filter.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_804
+  - community/docs/vault
 ---
 
 # EgressAction (Enum)
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_804
+#graphify/code #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "rationale"
-community: "Version Routes & Manager Tools"
+community: "Gateway Ingest API"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Version_Routes__Manager_Tools
+  - community/Gateway_Ingest_API
 ---
 
 # List available OpenClaw versions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_available_versions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Version_Routes__Manager_Tools
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Ingest_API

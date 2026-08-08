@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "CLI & Core Gateway Routes"
-location: "L2068"
+community: "Approval & FastAPI Ingest"
+location: "L2280"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Discard a blocked outbound message after admin review.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[discard_blocked_outbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

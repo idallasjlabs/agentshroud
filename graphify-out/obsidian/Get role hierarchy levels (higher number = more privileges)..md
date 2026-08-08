@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "RBAC Configuration"
+community: "Auth & Exception Types"
 location: "L343"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # Get role hierarchy levels (higher number = more privileges).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_role_hierarchy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Configuration
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

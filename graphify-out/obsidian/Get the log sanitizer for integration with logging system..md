@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "RBAC Middleware & Ingest API"
-location: "L1219"
+community: "Security Module Middleware"
+location: "L1354"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Security_Module_Middleware
 ---
 
 # Get the log sanitizer for integration with logging system.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_log_sanitizer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware

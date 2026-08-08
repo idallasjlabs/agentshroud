@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Module Group 110"
-location: "L417"
+community: "Gateway Security Module"
+location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_110
+  - community/Gateway_Security_Module
 ---
 
 # Git guard errors shouldn't expose full file paths.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_git_guard_no_path_leak()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_110
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

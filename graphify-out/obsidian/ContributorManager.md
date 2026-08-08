@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Module Group 83"
+community: "SOC Dashboard"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_83
+  - community/SOC_Dashboard
 ---
 
 # ContributorManager
 
 ## Connections
-- [[.__init__()_104]] - `method` [EXTRACTED]
+- [[.__init__()_126]] - `method` [EXTRACTED]
 - [[._build_record()]] - `method` [EXTRACTED]
 - [[._ensure_rbac()]] - `method` [EXTRACTED]
 - [[._ensure_teams()]] - `method` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[.list_contributors()]] - `method` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_60]] - `uses` [INFERRED]
+- [[Any_64]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult_1]] - `uses` [INFERRED]
 - [[Builds ContributorRecord instances from RBACConfig + TeamsConfig.]] - `rationale_for` [EXTRACTED]
@@ -36,8 +36,9 @@ tags:
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[Platform]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_5]] - `uses` [INFERRED]
+- [[Request_7]] - `uses` [INFERRED]
 - [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLCaller_3]] - `uses` [INFERRED]
 - [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
@@ -48,10 +49,10 @@ tags:
 - [[SetUserModeRequest]] - `uses` [INFERRED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
 - [[UserRole_1]] - `uses` [INFERRED]
-- [[WebSocket_5]] - `uses` [INFERRED]
+- [[WebSocket_6]] - `uses` [INFERRED]
 - [[contributors.py]] - `contains` [EXTRACTED]
 - [[get_user()]] - `calls` [EXTRACTED]
 - [[list_users()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_83
+#graphify/code #graphify/INFERRED #community/SOC_Dashboard

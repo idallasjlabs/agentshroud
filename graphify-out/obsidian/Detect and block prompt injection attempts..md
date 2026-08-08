@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "Context Guard & Integrity"
+community: "PII Sanitizer Pipeline"
 location: "L582"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Context_Guard__Integrity
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Detect and block prompt injection attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PromptGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Context_Guard__Integrity
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

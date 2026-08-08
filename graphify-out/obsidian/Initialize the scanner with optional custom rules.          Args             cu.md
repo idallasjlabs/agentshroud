@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "rationale"
-community: "Module Group 76"
+community: "Gateway Test Suite"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_76
+  - community/Gateway_Test_Suite
 ---
 
 # Initialize the scanner with optional custom rules.          Args:             cu
 
 ## Connections
-- [[.__init__()_97]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_119]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_76
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

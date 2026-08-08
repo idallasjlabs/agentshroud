@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "URL Analyzer & Content Scanner"
+community: "Auth & Exception Types"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URL_Analyzer__Content_Scanner
+  - community/Auth__Exception_Types
 ---
 
 # Enum
@@ -19,6 +19,8 @@ tags:
 - [[AuditResult]] - `inherits` [EXTRACTED]
 - [[ChainAction]] - `inherits` [EXTRACTED]
 - [[ContentThreatType]] - `inherits` [EXTRACTED]
+- [[Coverage]] - `inherits` [EXTRACTED]
+- [[Decision]] - `inherits` [EXTRACTED]
 - [[DelegationPrivilege]] - `inherits` [EXTRACTED]
 - [[DisclosureCategory]] - `inherits` [EXTRACTED]
 - [[EgressAction]] - `inherits` [EXTRACTED]
@@ -26,12 +28,15 @@ tags:
 - [[EgressStatus]] - `inherits` [EXTRACTED]
 - [[FindingSeverity]] - `inherits` [EXTRACTED]
 - [[FindingType]] - `inherits` [EXTRACTED]
+- [[GroupRole]] - `inherits` [EXTRACTED]
 - [[HealthStatus]] - `inherits` [EXTRACTED]
+- [[HostStatus]] - `inherits` [EXTRACTED]
 - [[InfoCategory]] - `inherits` [EXTRACTED]
 - [[InjectionAction]] - `inherits` [EXTRACTED]
 - [[InjectionSeverity]] - `inherits` [EXTRACTED]
 - [[IsolationStatus]] - `inherits` [EXTRACTED]
 - [[LockdownLevel]] - `inherits` [EXTRACTED]
+- [[MCPPolicyAction]] - `inherits` [EXTRACTED]
 - [[MCPTransport]] - `inherits` [EXTRACTED]
 - [[MockEgressChannel]] - `inherits` [EXTRACTED]
 - [[MockThreatLevel]] - `inherits` [EXTRACTED]
@@ -41,16 +46,18 @@ tags:
 - [[Platform]] - `inherits` [EXTRACTED]
 - [[ProxyAction]] - `inherits` [EXTRACTED]
 - [[Resource_1]] - `inherits` [EXTRACTED]
-- [[RiskLevel_3]] - `inherits` [EXTRACTED]
 - [[RiskLevel]] - `inherits` [EXTRACTED]
 - [[RiskLevel_1]] - `inherits` [EXTRACTED]
 - [[RiskLevel_2]] - `inherits` [EXTRACTED]
+- [[RiskLevel_3]] - `inherits` [EXTRACTED]
+- [[RiskLevel_5]] - `inherits` [EXTRACTED]
+- [[RiskLevel_4]] - `inherits` [EXTRACTED]
 - [[Role_1]] - `inherits` [EXTRACTED]
 - [[RotationStatus]] - `inherits` [EXTRACTED]
 - [[SCLInterface]] - `inherits` [EXTRACTED]
 - [[ServicePrivacy]] - `inherits` [EXTRACTED]
 - [[ServiceStatus]] - `inherits` [EXTRACTED]
-- [[Severity_1]] - `inherits` [EXTRACTED]
+- [[Severity_2]] - `inherits` [EXTRACTED]
 - [[SubagentEventType]] - `inherits` [EXTRACTED]
 - [[ThreatAction]] - `inherits` [EXTRACTED]
 - [[ThreatLevel]] - `inherits` [EXTRACTED]
@@ -60,21 +67,31 @@ tags:
 - [[URLVerdict]] - `inherits` [EXTRACTED]
 - [[UserRole_1]] - `inherits` [EXTRACTED]
 - [[ViolationType]] - `inherits` [EXTRACTED]
+- [[VulnClass]] - `inherits` [EXTRACTED]
 - [[WSEventType]] - `inherits` [EXTRACTED]
+- [[_State]] - `inherits` [EXTRACTED]
 - [[agent_isolation.py]] - `imports_from` [EXTRACTED]
 - [[browse.py]] - `imports_from` [EXTRACTED]
+- [[browse.py_1]] - `imports_from` [EXTRACTED]
+- [[browse.py_2]] - `imports_from` [EXTRACTED]
 - [[browser_security.py]] - `imports_from` [EXTRACTED]
+- [[cross_bot_trust_ledger.py]] - `imports_from` [EXTRACTED]
 - [[delegation.py]] - `imports_from` [EXTRACTED]
+- [[differential_pii_detector.py]] - `imports_from` [EXTRACTED]
 - [[egress_approval.py]] - `imports_from` [EXTRACTED]
 - [[egress_filter.py]] - `imports_from` [EXTRACTED]
 - [[egress_monitor.py]] - `imports_from` [EXTRACTED]
 - [[git_guard.py]] - `imports_from` [EXTRACTED]
+- [[group_rbac.py]] - `imports_from` [EXTRACTED]
 - [[key_rotation.py]] - `imports_from` [EXTRACTED]
 - [[mcp_config.py]] - `imports_from` [EXTRACTED]
 - [[mcp_inspector.py]] - `imports_from` [EXTRACTED]
+- [[mcp_policy.py]] - `imports_from` [EXTRACTED]
 - [[memory_integrity.py]] - `imports_from` [EXTRACTED]
 - [[memory_lifecycle.py]] - `imports_from` [EXTRACTED]
 - [[models.py_1]] - `imports_from` [EXTRACTED]
+- [[module_stats.py]] - `imports_from` [EXTRACTED]
+- [[multi_host_test.py]] - `imports_from` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `imports_from` [EXTRACTED]
 - [[outbound_filter.py]] - `imports_from` [EXTRACTED]
 - [[pipeline.py]] - `imports_from` [EXTRACTED]
@@ -84,13 +101,16 @@ tags:
 - [[prompt_guard.py]] - `imports_from` [EXTRACTED]
 - [[rbac.py]] - `imports_from` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
+- [[server.py]] - `imports_from` [EXTRACTED]
+- [[skill_guard.py]] - `imports_from` [EXTRACTED]
 - [[subagent_monitor.py]] - `imports_from` [EXTRACTED]
 - [[test_web_proxy_security.py]] - `imports_from` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `imports_from` [EXTRACTED]
 - [[tool_result_injection.py]] - `imports_from` [EXTRACTED]
+- [[triage-cve-mitigations.py]] - `imports_from` [EXTRACTED]
 - [[trust_manager.py]] - `imports_from` [EXTRACTED]
 - [[url_analyzer.py]] - `imports_from` [EXTRACTED]
 - [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URL_Analyzer__Content_Scanner
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

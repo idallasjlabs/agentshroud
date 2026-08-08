@@ -1,18 +1,16 @@
 ---
 source_file: "docker/docker-compose.agentshroud-bot.raspberrypi.yml"
 type: "code"
-community: "Module Group 174"
+community: "docs/vault"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_174
+  - community/docs/vault
 ---
 
 # Docker Compose Override — Raspberry Pi (agentshroud-bot)
 
 ## Connections
-- [[AgentShroud Gateway (Core Security Proxy)]] - `configures` [EXTRACTED]
-- [[Docker Compose Production (docker-compose.yml)]] - `extends` [EXTRACTED]
 - [[Raspberry Pi 4B (ARM64 edgetest node)]] - `deployed_on` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_174
+#graphify/code #graphify/EXTRACTED #community/docs/vault

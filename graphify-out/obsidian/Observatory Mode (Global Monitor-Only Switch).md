@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8.0-egress-firewall.md"
 type: "concept"
-community: "Module Group 461"
+community: "Planning Docs"
 location: "line 54"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_461
+  - community/Planning_Docs
 ---
 
 # Observatory Mode (Global Monitor-Only Switch)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Interactive Egress Firewall Feature Design (Little Snitch for Agents)]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_461
+#graphify/concept #graphify/EXTRACTED #community/Planning_Docs

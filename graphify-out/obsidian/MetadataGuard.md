@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "Module Group 110"
+community: "PII Config & Test Fixtures"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_110
+  - community/PII_Config__Test_Fixtures
 ---
 
 # MetadataGuard
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_77]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_94]] - `method` [EXTRACTED]
 - [[.check_for_exif()]] - `method` [EXTRACTED]
 - [[.check_oversized_headers()]] - `method` [EXTRACTED]
 - [[.get_document_tag()]] - `method` [EXTRACTED]
@@ -21,14 +21,15 @@ tags:
 - [[.sanitize_filename()]] - `method` [EXTRACTED]
 - [[.sanitize_headers()]] - `method` [EXTRACTED]
 - [[.sanitize_image_metadata()]] - `method` [EXTRACTED]
-- [[.setup_method()_11]] - `calls` [EXTRACTED]
+- [[.setup_method()_12]] - `calls` [EXTRACTED]
 - [[.tag_document()]] - `method` [EXTRACTED]
 - [[.test_metadata_guard_strips_internal_headers()]] - `calls` [INFERRED]
 - [[.test_metadata_oversized_headers()]] - `calls` [EXTRACTED]
 - [[.test_metadata_path_traversal_stripped()]] - `calls` [EXTRACTED]
 - [[.test_metadata_sanitize_filename()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[Guards against metadata channel attacks and information disclosure.]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -36,7 +37,7 @@ tags:
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
@@ -66,4 +67,4 @@ tags:
 - [[test_metadata_guard.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_110
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

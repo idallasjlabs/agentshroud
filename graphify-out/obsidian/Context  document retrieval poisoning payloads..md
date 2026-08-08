@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "Module Group 159"
-location: "L302"
+community: "Gateway Test Suite"
+location: "L300"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_159
+  - community/Gateway_Test_Suite
 ---
 
 # Context / document retrieval poisoning payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestContextInjection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_159
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

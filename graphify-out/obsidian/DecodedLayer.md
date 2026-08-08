@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "Security Pipeline & Audit Chain"
-location: "L44"
+community: "PII Sanitizer Pipeline"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Pipeline__Audit_Chain
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # DecodedLayer
 
 ## Connections
 - [[.analyze()_1]] - `calls` [EXTRACTED]
+- [[.decode_rot13()]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Pipeline__Audit_Chain
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

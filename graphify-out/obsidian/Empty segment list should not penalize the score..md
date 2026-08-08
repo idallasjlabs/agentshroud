@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "rationale"
-community: "Context Guard & Integrity"
-location: "L99"
+community: "Gateway Test Suite"
+location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Context_Guard__Integrity
+  - community/Gateway_Test_Suite
 ---
 
 # Empty segment list should not penalize the score.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_empty_context_scores_clean()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Context_Guard__Integrity
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

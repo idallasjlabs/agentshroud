@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "RBAC Configuration"
+community: "Auth & Exception Types"
 location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # Derive and reset auto-groups from current RBAC user list, then load custom group
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.init_auto_groups()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Configuration
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

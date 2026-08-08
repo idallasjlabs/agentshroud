@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "document"
-community: "Module Group 415"
+community: "docs/diagrams"
 location: "line 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_415
+  - community/docs/diagrams
 ---
 
 # On-Call Runbook Decision Tree (crash loop, context limit, gateway unhealthy, security alert, no Telegram response)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Diagram Library (23 diagrams Architecture, Infrastructure, Data, Security, Behavior, Operations, Team)]] - `indexes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_415
+#graphify/document #graphify/EXTRACTED #community/docs/diagrams

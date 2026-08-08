@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Module Group 167"
+community: "Gateway Test Suite"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_167
+  - community/Gateway_Test_Suite
 ---
 
 # Delegation
@@ -30,4 +30,4 @@ tags:
 - [[delegation.py]] - `contains` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_167
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

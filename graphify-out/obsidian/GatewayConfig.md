@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "CLI & Core Gateway Routes"
+community: "Gateway Test Suite"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Gateway_Test_Suite
 ---
 
 # GatewayConfig
@@ -16,4 +16,4 @@ tags:
 - [[create_auth_dependency()]] - `references` [EXTRACTED]
 - [[get_auth_dependency()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

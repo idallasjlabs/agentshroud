@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "rationale"
-community: "Module Group 272"
+community: "Gateway Test Suite"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_272
+  - community/Gateway_Test_Suite
 ---
 
 # GET /dashboard/stats returns JSON stats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_stats_returns_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_272
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "Module Group 458"
+community: "Egress & RBAC Security Core"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_458
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Create an invisible version of the canary using various techniques.          Arg
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._create_invisible_canary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_458
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

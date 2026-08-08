@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/runbooks/troubleshooting.md"
+source_file: "docs/runbooks/troubleshooting.md"
 type: "concept"
-community: "Module Group 353"
+community: "docs/runbooks"
 location: "line 201-525"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_353
+  - community/docs/runbooks
 ---
 
 # Known Benign Log Messages (gateway duplicate access logs, ClamAV freshclam startup, pong timeout)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Troubleshooting Runbook]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_353
+#graphify/concept #graphify/EXTRACTED #community/docs/runbooks

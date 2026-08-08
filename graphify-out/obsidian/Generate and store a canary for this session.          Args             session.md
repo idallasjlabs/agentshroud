@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "Module Group 458"
+community: "Egress & RBAC Security Core"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_458
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Generate and store a canary for this session.          Args:             session
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.generate_canary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_458
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

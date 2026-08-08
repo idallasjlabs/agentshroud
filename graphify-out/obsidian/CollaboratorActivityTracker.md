@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "Module Group 140"
+community: "Gateway Security Module"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_140
+  - community/Gateway_Security_Module
 ---
 
 # CollaboratorActivityTracker
 
 ## Connections
-- [[.__init__()_50]] - `method` [EXTRACTED]
+- [[.__init__()_59]] - `method` [EXTRACTED]
 - [[._append_contributor_log()]] - `method` [EXTRACTED]
 - [[._coerce_timestamp()]] - `method` [EXTRACTED]
 - [[._normalize_preview()]] - `method` [EXTRACTED]
@@ -24,9 +24,10 @@ tags:
 - [[.test_failed_write_makes_unhealthy()]] - `calls` [EXTRACTED]
 - [[.test_initial_state_healthy()]] - `calls` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[Path_25]] - `uses` [INFERRED]
+- [[Path_30]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_3]] - `uses` [INFERRED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `uses` [INFERRED]
+- [[TestDefaultBotId]] - `uses` [INFERRED]
 - [[TestDomainValidationHelper]] - `uses` [INFERRED]
 - [[TestEgressBannerRedactionNoOwnerNotice]] - `uses` [INFERRED]
 - [[TestEgressTargetExtraction]] - `uses` [INFERRED]
@@ -63,4 +64,4 @@ tags:
 - [[test_unknown_user_recorded_when_dynamic_tracking_enabled()]] - `calls` [EXTRACTED]
 - [[tracker()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_140
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

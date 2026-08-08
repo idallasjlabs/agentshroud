@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "Module Group 103"
+community: "PII Config & Test Fixtures"
 location: "L31"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_103
+  - community/PII_Config__Test_Fixtures
 ---
 
 # ConfusedDeputyError
@@ -15,7 +15,7 @@ tags:
 - [[.validate_request()]] - `calls` [EXTRACTED]
 - [[OAuthError]] - `inherits` [EXTRACTED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestClientValidation]] - `uses` [INFERRED]
 - [[TestConsentCookieBinding]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
@@ -34,4 +34,4 @@ tags:
 - [[oauth_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_103
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

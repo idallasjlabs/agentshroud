@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "Module Group 244"
+community: "Gateway Test Suite"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_244
+  - community/Gateway_Test_Suite
 ---
 
 # Install the log sanitizer on all existing loggers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[install_log_sanitizer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_244
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

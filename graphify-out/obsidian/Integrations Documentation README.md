@@ -1,13 +1,13 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/integrations/README.md"
+source_file: "docs/integrations/README.md"
 type: "document"
-community: "Module Group 792"
+community: "docs/integrations"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_792
+  - community/docs/integrations
 ---
 
 # Integrations Documentation README
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_792
+#graphify/document #graphify/EXTRACTED #community/docs/integrations

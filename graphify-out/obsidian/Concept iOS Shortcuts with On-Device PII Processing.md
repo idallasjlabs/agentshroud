@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/shortcuts/README.md"
+source_file: "shortcuts/README.md"
 type: "concept"
-community: "Module Group 173"
+community: "Custom Skills"
 location: "lines 50-56"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Module_Group_173
+  - graphify/EXTRACTED
+  - community/Custom_Skills
 ---
 
 # Concept: iOS Shortcuts with On-Device PII Processing
@@ -15,4 +15,4 @@ tags:
 - [[icloud SKILL.md — iCloud Services Skill]] - `related_to` [INFERRED]
 - [[shortcutsREADME.md — iOSmacOS Shortcuts Catalog]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Module_Group_173
+#graphify/concept #graphify/EXTRACTED #community/Custom_Skills

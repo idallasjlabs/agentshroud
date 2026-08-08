@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "code"
-community: "Module Group 343"
+community: "docs/vault"
 location: "gateway/proxy/mcp_audit.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_343
+  - community/docs/vault
 ---
 
 # MCPAuditTrail
@@ -18,4 +18,4 @@ tags:
 - [[mcp_audit.py — MCPAuditTrail]] - `defines` [EXTRACTED]
 - [[mcp_proxy.py — MCPProxy]] - `used_by` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_343
+#graphify/code #graphify/EXTRACTED #community/docs/vault

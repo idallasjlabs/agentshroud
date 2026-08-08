@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "Gateway Config & Lifespan"
-location: "L74"
+community: "Approval & FastAPI Ingest"
+location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Approval__FastAPI_Ingest
 ---
 
 # FastAPI lifespan - startup and shutdown
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[lifespan()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "concept"
-community: "Module Group 500"
+community: "docker/falco"
 location: "Architecture section"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_500
+  - community/docker/falco
 ---
 
 # Container Stack Architecture (gateway + openclaw + hermes + hci)
@@ -16,4 +16,4 @@ tags:
 - [[Docker Configuration README]] - `references` [EXTRACTED]
 - [[Docker Network Isolation (agentshroud-internal 172.20.016, agentshroud-isolated 172.21.016)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_500
+#graphify/concept #graphify/EXTRACTED #community/docker/falco

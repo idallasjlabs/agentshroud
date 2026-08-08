@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/planning/LOCAL_LLM_REVIEW.md"
+source_file: "docs/planning/LOCAL_LLM_REVIEW.md"
 type: "concept"
-community: "Module Group 580"
+community: "Planning Docs"
 location: "## 1. Architecture Overview"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_580
+  - community/Planning_Docs
 ---
 
 # LLM Routing Architecture: OpenClaw → gateway:8080/v1 → LLMProxy → Backends
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Local LLM Support — Implementation Review (v1.2.0)]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_580
+#graphify/concept #graphify/EXTRACTED #community/Planning_Docs

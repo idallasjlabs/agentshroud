@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Module Group 63"
+community: "Gateway Test Suite"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_63
+  - community/Gateway_Test_Suite
 ---
 
 # KeyScope
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_63
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

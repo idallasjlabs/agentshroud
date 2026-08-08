@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Alert Dispatcher"
-location: "L865"
+community: "PII Config & Test Fixtures"
+location: "L861"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Duplicate alerts should be deduplicated.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_alert_dedup()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

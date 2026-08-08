@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Config Validation Tests"
-location: "L427"
+community: "Gateway Test Suite"
+location: "L479"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Config_Validation_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # HERMES_DASHBOARD_INSECURE may only be enabled with a loopback-only host publish.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_hermes_dashboard_insecure_optin_is_loopback_bounded()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Config_Validation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

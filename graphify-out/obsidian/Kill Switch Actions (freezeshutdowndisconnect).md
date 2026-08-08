@@ -1,16 +1,16 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "concept"
-community: "Module Group 568"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_568
+  - community/docs/vault
 ---
 
 # Kill Switch Actions (freeze/shutdown/disconnect)
 
 ## Connections
-- [[Kill Switch Procedure Runbook]] - `describes` [EXTRACTED]
+- [[Kill Switch Procedure]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_568
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

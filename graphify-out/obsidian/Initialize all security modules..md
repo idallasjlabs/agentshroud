@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "RBAC Middleware & Ingest API"
-location: "L92"
+community: "Egress & RBAC Security Core"
+location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Initialize all security modules.
 
 ## Connections
-- [[.__init__()_8]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_18]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

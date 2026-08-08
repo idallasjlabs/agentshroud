@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "Pipeline Action & Instruction Envelope"
+community: "Cross-Bot Trust Ledger"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pipeline_Action__Instruction_Envelope
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # Envelopes signed with one key should not verify with a different key.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_different_keys_fail_verification()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Action__Instruction_Envelope
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger

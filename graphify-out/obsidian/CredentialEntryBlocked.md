@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "Module Group 113"
+community: "Gateway Test Suite"
 location: "L39"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_113
+  - community/Gateway_Test_Suite
 ---
 
 # CredentialEntryBlocked
 
 ## Connections
 - [[.can_enter_credentials()]] - `calls` [EXTRACTED]
-- [[Exception_1]] - `inherits` [EXTRACTED]
+- [[Exception]] - `inherits` [EXTRACTED]
 - [[TestCredentialProtection]] - `uses` [INFERRED]
 - [[TestScreenshotAnalysis]] - `uses` [INFERRED]
 - [[TestSocialEngineeringDetection]] - `uses` [INFERRED]
 - [[TestURLReputation]] - `uses` [INFERRED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_113
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

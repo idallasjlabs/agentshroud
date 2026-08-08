@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "concept"
-community: "Module Group 325"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_325
+  - community/docs/vault
 ---
 
 # MCP Shell Injection Prevention
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ConsentFramework_1]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_325
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

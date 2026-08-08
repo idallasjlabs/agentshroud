@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Module Group 102"
+community: "PII Config & Test Fixtures"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_102
+  - community/PII_Config__Test_Fixtures
 ---
 
 # ConsentDecision
@@ -18,7 +18,7 @@ tags:
 - [[.validate_config()]] - `references` [EXTRACTED]
 - [[.validate_configs()]] - `references` [EXTRACTED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestConsentDecision]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
@@ -46,4 +46,4 @@ tags:
 - [[consent_framework.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_102
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

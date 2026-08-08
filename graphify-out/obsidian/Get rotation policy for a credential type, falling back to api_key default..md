@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "rationale"
-community: "Module Group 93"
+community: "Gateway Test Suite"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_93
+  - community/Gateway_Test_Suite
 ---
 
 # Get rotation policy for a credential type, falling back to api_key default.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_policy()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_93
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Context Guard & Integrity"
+community: "PromptGuard Encoding Detection"
 location: "L254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Context_Guard__Integrity
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # Explicit ignore-instructions payload embedded in a tool result.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_direct_injection_in_tool_result_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Context_Guard__Integrity
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Module Group 266"
+community: "Gateway Test Suite"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_266
+  - community/Gateway_Test_Suite
 ---
 
 # MCPToolResult
@@ -30,19 +30,23 @@ tags:
 - [[.test_result_audit_logged()]] - `calls` [EXTRACTED]
 - [[.test_result_processing_time()]] - `calls` [EXTRACTED]
 - [[.test_tool_result_timestamp_default()]] - `calls` [EXTRACTED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
+- [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPPolicyConfig_1]] - `uses` [INFERRED]
+- [[MCPPolicyEngine_1]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
-- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
+- [[MonkeyPatch]] - `uses` [INFERRED]
 - [[Represents an MCP tool result.]] - `rationale_for` [EXTRACTED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestApprovalQueue]] - `uses` [INFERRED]
@@ -55,6 +59,7 @@ tags:
 - [[TestDataclasses]] - `uses` [INFERRED]
 - [[TestEgressFilterPaths]] - `uses` [INFERRED]
 - [[TestEmitPrivacyEvent]] - `uses` [INFERRED]
+- [[TestExecuteResultInspectionBinding]] - `uses` [INFERRED]
 - [[TestExecuteToolCall]] - `uses` [INFERRED]
 - [[TestExtractEgressTargets]] - `uses` [INFERRED]
 - [[TestHashChainIntegration]] - `uses` [INFERRED]
@@ -77,11 +82,14 @@ tags:
 - [[TestStdioConnection]] - `uses` [INFERRED]
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
-- [[__init__.py_6]] - `imports` [EXTRACTED]
+- [[_FakeApprovalQueue]] - `uses` [INFERRED]
+- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[mcp_result_endpoint()]] - `calls` [EXTRACTED]
+- [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
+- [[test_mcp_proxy_allows_policy_permitted_call()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_266
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

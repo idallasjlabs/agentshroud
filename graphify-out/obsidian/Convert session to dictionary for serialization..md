@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Session Manager & Webhook"
-location: "L61"
+community: "URL/Domain Validation Tests"
+location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager__Webhook
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Convert session to dictionary for serialization.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.to_dict()_11]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__Webhook
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

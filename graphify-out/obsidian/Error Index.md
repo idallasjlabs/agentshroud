@@ -1,21 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Module Group 297"
+community: "docs/vault"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_297
+  - community/docs/vault
 ---
 
-# Error Index
+# Error Index.md
 
 ## Connections
-- [[Auth Errors]] - `indexes` [EXTRACTED]
-- [[Container Errors]] - `indexes` [EXTRACTED]
-- [[Egress Filter Errors]] - `indexes` [EXTRACTED]
-- [[MCP Proxy Errors]] - `indexed_by` [EXTRACTED]
-- [[PII Pipeline Errors]] - `indexed_by` [EXTRACTED]
-- [[Prompt Injection Blocks]] - `indexed_by` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_297
+#graphify/document #graphify/EXTRACTED #community/docs/vault

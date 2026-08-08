@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "concept"
-community: "Module Group 343"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_343
+  - community/docs/vault
 ---
 
 # Fail-Closed MCP Tool Call Interception
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[mcp-proxy-wrapper.js — MCP Fail-Closed Stdio Proxy]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_343
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

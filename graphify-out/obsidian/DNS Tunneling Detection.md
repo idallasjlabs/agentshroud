@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "concept"
-community: "Module Group 188"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_188
+  - community/docs/vault
 ---
 
 # DNS Tunneling Detection
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[DNSFilter_1]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_188
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

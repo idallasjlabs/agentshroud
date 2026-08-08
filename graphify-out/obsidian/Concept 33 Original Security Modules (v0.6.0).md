@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/skills/custom/agentshroud-blueteam/references/module-inventory.md"
+source_file: "skills/custom/agentshroud-blueteam/references/module-inventory.md"
 type: "concept"
-community: "Module Group 173"
+community: "Custom Skills"
 location: "lines 1-39"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_173
+  - community/Custom_Skills
 ---
 
 # Concept: 33 Original Security Modules (v0.6.0)
@@ -16,4 +16,4 @@ tags:
 - [[blueteamreferencesmodule-inventory.md — Security Module Inventory]] - `defines` [EXTRACTED]
 - [[blueteamreferencessteve-hay-plan.md — Red Team Assessment Plan]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_173
+#graphify/concept #graphify/EXTRACTED #community/Custom_Skills

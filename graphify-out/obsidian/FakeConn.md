@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Module Group 124"
+community: "Gateway Test Suite"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_124
+  - community/Gateway_Test_Suite
 ---
 
 # FakeConn
 
 ## Connections
-- [[.__init__()_127]] - `method` [EXTRACTED]
+- [[.__init__()_160]] - `method` [EXTRACTED]
 - [[.send_request()_2]] - `method` [EXTRACTED]
-- [[.stop()_11]] - `method` [EXTRACTED]
+- [[.stop()_12]] - `method` [EXTRACTED]
 - [[.test_execution_redacts_admin_private_content()]] - `calls` [EXTRACTED]
 - [[.test_execution_with_none_content_skips_result_inspection()]] - `calls` [EXTRACTED]
 - [[.test_generic_exception()]] - `calls` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_124
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Telegram Outbound Test Coverage"
+community: "Gateway Test Suite"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Outbound_Test_Coverage
+  - community/Gateway_Test_Suite
 ---
 
 # If pipeline crashes, non-owner messages must be blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_outbound_fails_closed_for_non_owner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Outbound_Test_Coverage
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

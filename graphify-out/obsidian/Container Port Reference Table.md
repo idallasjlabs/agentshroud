@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "rationale"
-community: "Module Group 500"
+community: "docker/falco"
 location: "Port Reference section"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_500
+  - community/docker/falco
 ---
 
 # Container Port Reference Table
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Docker Configuration README]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_500
+#graphify/rationale #graphify/EXTRACTED #community/docker/falco

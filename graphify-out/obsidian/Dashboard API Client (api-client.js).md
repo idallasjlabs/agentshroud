@@ -1,12 +1,12 @@
 ---
 source_file: "web/management-dashboard.html"
 type: "concept"
-community: "Module Group 273"
+community: "web/management-dashboard.html"
 location: "line 796"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_273
+  - community/web/management-dashboardhtml
 ---
 
 # Dashboard API Client (api-client.js)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Setup Wizard (setup-wizard.html)]] - `depends_on` [EXTRACTED]
 - [[dashboard()]] - `depends_on` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_273
+#graphify/concept #graphify/EXTRACTED #community/web/management-dashboardhtml

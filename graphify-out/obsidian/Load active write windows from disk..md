@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Module Group 168"
-location: "L126"
+community: "Egress & RBAC Security Core"
+location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_168
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Load active write windows from disk.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._load_write_windows()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_168
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

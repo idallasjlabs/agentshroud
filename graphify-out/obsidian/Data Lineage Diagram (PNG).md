@@ -1,19 +1,18 @@
 ---
 source_file: "docs/diagrams/images/diagram-09-data-lineage.png"
 type: "image"
-community: "Module Group 373"
+community: "docs/flows"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Module_Group_373
+  - community/docs/flows
 ---
 
 # Data Lineage Diagram (PNG)
 
 ## Connections
-- [[Data Flow Diagram (PNG)]] - `conceptually_related_to` [INFERRED]
-- [[Data Lineage Diagram (SVG)]] - `same_content_as` [EXPLICIT]
 - [[Entity Relationship Diagram - Database Schema (PNG)]] - `conceptually_related_to` [INFERRED]
 - [[Network Topology Diagram (PNG)]] - `conceptually_related_to` [INFERRED]
+- [[data-flow-diagram]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Module_Group_373
+#graphify/image #graphify/INFERRED #community/docs/flows

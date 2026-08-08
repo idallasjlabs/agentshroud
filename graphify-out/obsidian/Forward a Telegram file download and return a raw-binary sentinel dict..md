@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Module Group 160"
-location: "L7965"
+community: "Collaborator Prompt Classifiers"
+location: "L8166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_160
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Forward a Telegram file download and return a raw-binary sentinel dict.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._forward_file_download()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_160
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

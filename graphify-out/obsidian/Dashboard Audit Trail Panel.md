@@ -1,12 +1,12 @@
 ---
 source_file: "web/management-dashboard.html"
 type: "concept"
-community: "Module Group 273"
+community: "web/management-dashboard.html"
 location: "line 591"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_273
+  - community/web/management-dashboardhtml
 ---
 
 # Dashboard Audit Trail Panel
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dashboard()]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_273
+#graphify/concept #graphify/EXTRACTED #community/web/management-dashboardhtml

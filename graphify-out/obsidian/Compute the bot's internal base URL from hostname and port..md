@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "rationale"
-community: "Module Group 127"
-location: "L71"
+community: "Forward Routing & Approval"
+location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_127
+  - community/Forward_Routing__Approval
 ---
 
 # Compute the bot's internal base URL from hostname and port.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.base_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_127
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

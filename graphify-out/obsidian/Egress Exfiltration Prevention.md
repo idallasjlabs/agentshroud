@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "concept"
-community: "Module Group 325"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_325
+  - community/docs/vault
 ---
 
 # Egress Exfiltration Prevention
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[EgressFilterConfig_2]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_325
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

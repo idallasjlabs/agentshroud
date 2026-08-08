@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Inbound Tests"
+community: "Telegram Proxy Test Suite"
 location: "L3060"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound_Tests
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Collaborator blocked-tool policy question should be answered safely and informat
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_blocked_tools_question_gets_safe_info_not_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Alert Dispatcher"
+community: "PII Config & Test Fixtures"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher
+  - community/PII_Config__Test_Fixtures
 ---
 
 # ContainerSnapshot
@@ -17,7 +17,7 @@ tags:
 - [[.from_dict()_4]] - `method` [EXTRACTED]
 - [[.get_baseline()]] - `references` [EXTRACTED]
 - [[.set_baseline()]] - `references` [EXTRACTED]
-- [[.setup_method()_27]] - `calls` [EXTRACTED]
+- [[.setup_method()_30]] - `calls` [EXTRACTED]
 - [[.test_acknowledge_alert()]] - `calls` [EXTRACTED]
 - [[.test_alerts_persisted()]] - `calls` [EXTRACTED]
 - [[.test_config_hash_changes()]] - `calls` [EXTRACTED]
@@ -39,7 +39,7 @@ tags:
 - [[.to_dict()_7]] - `method` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
@@ -77,4 +77,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

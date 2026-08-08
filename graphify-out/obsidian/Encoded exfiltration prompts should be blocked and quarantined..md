@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Module Group 64"
+community: "Telegram Proxy Test Suite"
 location: "L3952"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_64
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Encoded exfiltration prompts should be blocked and quarantined.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_encoded_exfil_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_64
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

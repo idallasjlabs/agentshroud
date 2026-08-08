@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "rationale"
-community: "Module Group 418"
+community: "Approval & FastAPI Ingest"
 location: "L65"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_418
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Emit an event to all subscribers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.emit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_418
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

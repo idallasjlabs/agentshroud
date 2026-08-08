@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "rationale"
-community: "Module Group 272"
+community: "Gateway Test Suite"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_272
+  - community/Gateway_Test_Suite
 ---
 
 # GET /dashboard without auth returns 403.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_requires_auth()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_272
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

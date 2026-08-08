@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "Module Group 153"
+community: "Gateway Test Suite"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_153
+  - community/Gateway_Test_Suite
 ---
 
 # Default report_prefix produces a 'trivy-' filename.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_default_prefix()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_153
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

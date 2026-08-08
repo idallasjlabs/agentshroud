@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/live-dashboard-256x256.png"
 type: "image"
-community: "Module Group 375"
+community: "branding/icons"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Module_Group_375
+  - community/branding/icons
 ---
 
 # Live Dashboard — Module Icon
@@ -14,4 +14,4 @@ tags:
 - [[Drift Detector — Module Icon]] - `conceptually_related_to` [INFERRED]
 - [[Kill Switch — Module Icon]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Module_Group_375
+#graphify/image #graphify/INFERRED #community/branding/icons

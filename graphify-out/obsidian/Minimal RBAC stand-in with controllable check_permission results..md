@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "rationale"
-community: "Module Group 120"
+community: "Auth & Exception Types"
 location: "L165"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_120
+  - community/Auth__Exception_Types
 ---
 
 # Minimal RBAC stand-in with controllable check_permission results.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeRBAC_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_120
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

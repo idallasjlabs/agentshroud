@@ -1,11 +1,11 @@
 ---
 source_file: "examples/egress-config.yml"
 type: "concept"
-community: "Module Group 313"
+community: "Planning Docs"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Module_Group_313
+  - community/Planning_Docs
 ---
 
 # Key Vault (leak detection, log redaction)
@@ -14,4 +14,4 @@ tags:
 - [[1Password Integration (AgentShroud)]] - `related_to` [INFERRED]
 - [[Egress Control Config Example]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Module_Group_313
+#graphify/concept #graphify/INFERRED #community/Planning_Docs

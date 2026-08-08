@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "SOC Services & Health Status"
+community: "SOC Dashboard"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Services__Health_Status
+  - community/SOC_Dashboard
 ---
 
 # ContributorRecord
@@ -15,8 +15,9 @@ tags:
 - [[._build_record()]] - `references` [EXTRACTED]
 - [[.get_contributor()]] - `references` [EXTRACTED]
 - [[.list_contributors()]] - `references` [EXTRACTED]
+- [[.test_construction()_1]] - `calls` [INFERRED]
 - [[ContributorRecord_1]] - `uses` [INFERRED]
 - [[Platform]] - `uses` [INFERRED]
 - [[UserRole_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Services__Health_Status
+#graphify/code #graphify/INFERRED #community/SOC_Dashboard

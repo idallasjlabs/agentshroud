@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "RBAC Middleware & Ingest API"
+community: "PII Config & Test Fixtures"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Custom logging filter that sanitizes sensitive data from log records.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LogSanitizer_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

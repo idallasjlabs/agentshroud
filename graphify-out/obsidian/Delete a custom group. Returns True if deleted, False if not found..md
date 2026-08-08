@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Module Group 186"
+community: "Auth & Exception Types"
 location: "L264"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_186
+  - community/Auth__Exception_Types
 ---
 
 # Delete a custom group. Returns True if deleted, False if not found.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.delete_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_186
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

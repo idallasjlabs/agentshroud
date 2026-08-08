@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "SOC Router Tests"
+community: "SOC RBAC & Auth"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router_Tests
+  - community/SOC_RBAC__Auth
 ---
 
 # FakeCaller
 
 ## Connections
-- [[.__init__()_135]] - `method` [EXTRACTED]
+- [[.__init__()_169]] - `method` [EXTRACTED]
 - [[.is_group_admin()_2]] - `method` [EXTRACTED]
-- [[.is_owner()_3]] - `method` [EXTRACTED]
+- [[.is_owner()_4]] - `method` [EXTRACTED]
 - [[.require()_1]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[test_set_user_role_owner_success()]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router_Tests
+#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth

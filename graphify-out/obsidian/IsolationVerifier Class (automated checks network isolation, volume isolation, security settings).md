@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/per-agent-isolation.md"
 type: "concept"
-community: "Module Group 579"
+community: "Architecture Docs"
 location: "line 133"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_579
+  - community/Architecture_Docs
 ---
 
 # IsolationVerifier Class (automated checks: network isolation, volume isolation, security settings)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Per-Agent Container Isolation Architecture Document]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_579
+#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs

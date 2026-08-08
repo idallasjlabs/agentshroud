@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "rationale"
-community: "Module Group 93"
+community: "Gateway Test Suite"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_93
+  - community/Gateway_Test_Suite
 ---
 
 # Configuration for key rotation policies and schedules.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[KeyRotationConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_93
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

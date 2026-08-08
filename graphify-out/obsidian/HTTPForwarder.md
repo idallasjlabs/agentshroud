@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "Module Group 92"
+community: "HTTP Forwarder"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_92
+  - community/HTTP_Forwarder
 ---
 
 # HTTPForwarder
 
 ## Connections
-- [[.__init__()_14]] - `method` [EXTRACTED]
+- [[.__init__()_23]] - `method` [EXTRACTED]
 - [[.forward()]] - `method` [EXTRACTED]
-- [[.get_stats()_2]] - `method` [EXTRACTED]
+- [[.get_stats()_3]] - `method` [EXTRACTED]
 - [[.health_check()_1]] - `method` [EXTRACTED]
 - [[.is_healthy()]] - `method` [EXTRACTED]
 - [[.last_forward_time()]] - `method` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[test_forwarder_error_handling()]] - `calls` [EXTRACTED]
 - [[unhealthy_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_92
+#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder

@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "Module Group 485"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_485
+  - community/skills/openclaw
 ---
 
 # OpenClaw tmux Skill
@@ -14,4 +14,4 @@ tags:
 - [[Claude Code tmux Session Patterns]] - `describes` [EXTRACTED]
 - [[tmux Session Control]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_485
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

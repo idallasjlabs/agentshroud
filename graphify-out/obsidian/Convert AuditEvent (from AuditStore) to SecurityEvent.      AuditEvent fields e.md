@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "rationale"
-community: "Module Group 206"
+community: "SOC Dashboard"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_206
+  - community/SOC_Dashboard
 ---
 
 # Convert AuditEvent (from AuditStore) to SecurityEvent.      AuditEvent fields: e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[from_audit_chain_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_206
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard

@@ -1,12 +1,12 @@
 ---
 source_file: "web/management-dashboard.html"
 type: "concept"
-community: "Module Group 273"
+community: "web/management-dashboard.html"
 location: "line 654"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Module_Group_273
+  - graphify/EXTRACTED
+  - community/web/management-dashboardhtml
 ---
 
 # Dashboard Kill Switch Panel (emergency termination)
@@ -15,4 +15,4 @@ tags:
 - [[Dashboard Agent Trust Levels Panel]] - `relates_to` [INFERRED]
 - [[dashboard()]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Module_Group_273
+#graphify/concept #graphify/EXTRACTED #community/web/management-dashboardhtml

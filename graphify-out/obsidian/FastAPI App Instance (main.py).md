@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "concept"
-community: "Module Group 158"
+community: "docs/vault"
 location: "gateway/ingest_api/main.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_158
+  - community/docs/vault
 ---
 
 # FastAPI App Instance (main.py)
 
 ## Connections
-- [[FastAPI_3]] - `implemented_by` [EXTRACTED]
+- [[FastAPI_4]] - `implemented_by` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_158
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

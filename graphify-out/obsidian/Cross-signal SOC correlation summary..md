@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "CLI & Core Gateway Routes"
-location: "L2104"
+community: "Approval & FastAPI Ingest"
+location: "L2316"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Cross-signal SOC correlation summary.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[soc_correlation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

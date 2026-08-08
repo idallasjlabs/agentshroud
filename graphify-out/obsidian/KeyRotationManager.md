@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Module Group 108"
+community: "Gateway Security Module"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_108
+  - community/Gateway_Security_Module
 ---
 
 # KeyRotationManager
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_69]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_85]] - `method` [EXTRACTED]
 - [[._generate_new_credential()]] - `method` [EXTRACTED]
 - [[._read_credential_from_1password()]] - `method` [EXTRACTED]
 - [[._retire_old_credential_after_grace_period()]] - `method` [EXTRACTED]
@@ -32,10 +32,11 @@ tags:
 - [[.setup_manager_with_credential()]] - `calls` [EXTRACTED]
 - [[.test_check_and_rotate_due_credentials()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[EgressAllowlistResponse]] - `uses` [INFERRED]
 - [[EgressAllowlistUpdate]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Manages automated rotation of credentials with zero downtime.]] - `rationale_for` [EXTRACTED]
@@ -44,18 +45,27 @@ tags:
 - [[MockValidator]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
+- [[TestCheckAndRotateDisabled]] - `uses` [INFERRED]
 - [[TestCredentialInfo]] - `uses` [INFERRED]
 - [[TestCredentialRotationPolicy]] - `uses` [INFERRED]
+- [[TestEmergencyAndRetire]] - `uses` [INFERRED]
+- [[TestGenerateAndValidate]] - `uses` [INFERRED]
 - [[TestKeyRotationConfig]] - `uses` [INFERRED]
 - [[TestKeyRotationManager]] - `uses` [INFERRED]
 - [[TestKeyRotationWorkflow]] - `uses` [INFERRED]
+- [[TestReadFrom1Password]] - `uses` [INFERRED]
+- [[TestRotateGuardBranches]] - `uses` [INFERRED]
+- [[TestStatusHelpers]] - `uses` [INFERRED]
+- [[TestStoreIn1Password]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[credentials_health()]] - `calls` [EXTRACTED]
 - [[credentials_status()]] - `calls` [EXTRACTED]
 - [[key_rotation.py]] - `contains` [EXTRACTED]
 - [[management.py]] - `imports` [EXTRACTED]
+- [[manager()_2]] - `calls` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[rotate_credential()]] - `calls` [EXTRACTED]
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
+- [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_108
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

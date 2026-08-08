@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Context Guard & Integrity"
+community: "Gateway Security Module"
 location: "L512"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Context_Guard__Integrity
+  - community/Gateway_Security_Module
 ---
 
 # Create a provenance record for a context segment.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.tag_segment()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Context_Guard__Integrity
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

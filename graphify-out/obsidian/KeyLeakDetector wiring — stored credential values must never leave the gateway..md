@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Pipeline Action & Instruction Envelope"
-location: "L462"
+community: "Gateway Test Suite"
+location: "L574"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pipeline_Action__Instruction_Envelope
+  - community/Gateway_Test_Suite
 ---
 
 # KeyLeakDetector wiring — stored credential values must never leave the gateway.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyLeakDetection_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Action__Instruction_Envelope
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

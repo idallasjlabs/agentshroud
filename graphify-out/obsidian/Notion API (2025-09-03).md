@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/notion/SKILL.md"
 type: "concept"
-community: "Module Group 107"
+community: "skills/openclaw"
 location: "line 41"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_107
+  - community/skills/openclaw
 ---
 
 # Notion API (2025-09-03)
 
 ## Connections
-- [[notion Skill]] - `uses` [EXTRACTED]
+- [[notion]] - `uses` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_107
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

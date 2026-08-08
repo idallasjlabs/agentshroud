@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Module Group 397"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_397
+  - community/skills/openclaw
 ---
 
 # OpenClaw Skill: himalaya (IMAP/SMTP email CLI)
@@ -15,4 +15,4 @@ tags:
 - [[Himalaya MML Message Composition Reference]] - `references` [EXTRACTED]
 - [[Homebrew-installed OpenClaw Skills (camsnap, gog, goplaces, gifgrep, himalaya, github, gemini)]] - `member_of` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_397
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

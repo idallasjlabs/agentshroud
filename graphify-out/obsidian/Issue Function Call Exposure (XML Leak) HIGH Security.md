@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "rationale"
-community: "Module Group 425"
+community: "Planning Docs"
 location: "line 29"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_425
+  - community/Planning_Docs
 ---
 
 # Issue: Function Call Exposure (XML Leak) HIGH Security
@@ -15,4 +15,4 @@ tags:
 - [[Consolidated Issues Report (2026-03-09)]] - `contains` [EXTRACTED]
 - [[Phase 1 XML Function Call Exposure Security Fix]] - `mitigated_by` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_425
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

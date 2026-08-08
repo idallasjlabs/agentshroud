@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/summarize/SKILL.md"
 type: "concept"
-community: "Module Group 107"
+community: "skills/openclaw"
 location: "line 66"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_107
+  - community/skills/openclaw
 ---
 
 # Gemini 3 Flash Preview (summarize default model)
 
 ## Connections
-- [[summarize Skill]] - `uses` [EXTRACTED]
+- [[Summarize]] - `uses` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_107
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

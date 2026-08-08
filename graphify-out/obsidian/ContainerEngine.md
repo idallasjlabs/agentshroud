@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "Module Group 371"
+community: "Gateway Test Suite"
 location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_371
+  - community/Gateway_Test_Suite
 ---
 
 # ContainerEngine
@@ -18,4 +18,4 @@ tags:
 - [[PodmanEngine]] - `uses` [INFERRED]
 - [[get_engine()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_371
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

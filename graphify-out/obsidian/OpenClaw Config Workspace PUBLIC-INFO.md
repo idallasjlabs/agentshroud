@@ -1,17 +1,16 @@
 ---
 source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Module Group 138"
+community: "Bot Container Scripts"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_138
+  - community/Bot_Container_Scripts
 ---
 
 # OpenClaw Config Workspace PUBLIC-INFO
 
 ## Connections
-- [[AgentShroud Gateway (Core Security Proxy)]] - `describes` [EXTRACTED]
 - [[Collaborator Isolation (read-only advisory access)]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_138
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts

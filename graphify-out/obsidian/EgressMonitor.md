@@ -1,26 +1,27 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
+community: "Egress & RBAC Security Core"
 location: "L85"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # EgressMonitor
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_35]] - `calls` [EXTRACTED]
-- [[.__init__()_60]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_43]] - `calls` [EXTRACTED]
+- [[.__init__()_73]] - `method` [EXTRACTED]
 - [[.check_anomalies()]] - `method` [EXTRACTED]
 - [[.daily_summary()]] - `method` [EXTRACTED]
 - [[.get_events()_1]] - `method` [EXTRACTED]
 - [[.record()_1]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -39,4 +40,4 @@ tags:
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core

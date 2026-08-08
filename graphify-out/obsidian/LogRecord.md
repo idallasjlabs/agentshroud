@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Gateway Config & Lifespan"
-location: "L58"
+community: "Auth & Exception Types"
+location: "L64"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Config__Lifespan
+  - community/Auth__Exception_Types
 ---
 
 # LogRecord
 
 ## Connections
 - [[.filter()]] - `references` [EXTRACTED]
+- [[AlertTelegramRelay]] - `uses` [INFERRED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[EventBus]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
@@ -22,4 +23,4 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Config__Lifespan
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

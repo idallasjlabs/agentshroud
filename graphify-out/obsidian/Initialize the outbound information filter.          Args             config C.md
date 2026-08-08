@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "Module Group 198"
+community: "Gateway Security Module"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_198
+  - community/Gateway_Security_Module
 ---
 
 # Initialize the outbound information filter.          Args:             config: C
 
 ## Connections
-- [[.__init__()_81]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_100]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_198
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

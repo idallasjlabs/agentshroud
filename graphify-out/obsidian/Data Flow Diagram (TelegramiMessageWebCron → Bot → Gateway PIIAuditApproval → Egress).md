@@ -1,19 +1,14 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "document"
-community: "Module Group 238"
+community: "docs/diagrams"
 location: "line 7"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Module_Group_238
+  - graphify/EXTRACTED
+  - community/docs/diagrams
 ---
 
 # Data Flow Diagram (Telegram/iMessage/Web/Cron → Bot → Gateway PII/Audit/Approval → Egress)
 
-## Connections
-- [[Approval Queue (SQLite-based, human-in-the-loop, risk-based queuing)]] - `visualizes` [INFERRED]
-- [[Audit Ledger (SHA-256 Hash Chain, blockchain-inspired, tamper-evident)]] - `visualizes` [INFERRED]
-- [[PII Sanitizer (Microsoft Presidio + custom regex, spaCy models)]] - `visualizes` [INFERRED]
-
-#graphify/document #graphify/INFERRED #community/Module_Group_238
+#graphify/document #graphify/EXTRACTED #community/docs/diagrams

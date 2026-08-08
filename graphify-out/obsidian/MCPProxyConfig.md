@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "MCP Config & Proxy"
+community: "MCP Proxy Config"
 location: "L85"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Config__Proxy
+  - community/MCP_Proxy_Config
 ---
 
 # MCPProxyConfig
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[.from_dict()]] - `method` [EXTRACTED]
 - [[.test_disabled_server_blocked()]] - `calls` [EXTRACTED]
-- [[Any_15]] - `uses` [INFERRED]
+- [[Any_17]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
-- [[Exception_3]] - `uses` [INFERRED]
+- [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
@@ -55,6 +55,7 @@ tags:
 - [[TestDataclasses]] - `uses` [INFERRED]
 - [[TestEgressFilterPaths]] - `uses` [INFERRED]
 - [[TestEmitPrivacyEvent]] - `uses` [INFERRED]
+- [[TestExecuteResultInspectionBinding]] - `uses` [INFERRED]
 - [[TestExecuteToolCall]] - `uses` [INFERRED]
 - [[TestExtractEgressTargets]] - `uses` [INFERRED]
 - [[TestHashChainIntegration]] - `uses` [INFERRED]
@@ -85,9 +86,9 @@ tags:
 - [[TestTrustLevels]] - `uses` [INFERRED]
 - [[TestTrustMapping]] - `uses` [INFERRED]
 - [[Top-level MCP proxy configuration.]] - `rationale_for` [EXTRACTED]
-- [[__init__.py_6]] - `imports` [EXTRACTED]
-- [[config()_1]] - `calls` [EXTRACTED]
+- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[config()_2]] - `calls` [EXTRACTED]
+- [[config()_3]] - `calls` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
@@ -99,4 +100,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Config__Proxy
+#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config

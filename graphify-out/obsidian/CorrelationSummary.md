@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "Module Group 543"
+community: "Gateway Security Module"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_543
+  - community/Gateway_Security_Module
 ---
 
 # CorrelationSummary
@@ -16,4 +16,4 @@ tags:
 - [[build_correlation_summary()]] - `references` [EXTRACTED]
 - [[soc_correlation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_543
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

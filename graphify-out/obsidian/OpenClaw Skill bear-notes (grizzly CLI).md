@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "Module Group 350"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_350
+  - community/skills/openclaw
 ---
 
 # OpenClaw Skill: bear-notes (grizzly CLI)
@@ -15,4 +15,4 @@ tags:
 - [[OpenClaw Skill Registry (SKILL.md convention)]] - `implements` [EXTRACTED]
 - [[macOS-Only OpenClaw Skills (apple-notes, apple-reminders, bear-notes)]] - `member_of` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_350
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

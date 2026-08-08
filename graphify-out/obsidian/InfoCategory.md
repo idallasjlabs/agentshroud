@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Module Group 282"
+community: "Gateway Security Module"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_282
+  - community/Gateway_Security_Module
 ---
 
 # InfoCategory
 
 ## Connections
-- [[.__init__()_81]] - `calls` [EXTRACTED]
+- [[.__init__()_100]] - `calls` [EXTRACTED]
 - [[._is_allowed_for_trust()]] - `references` [EXTRACTED]
 - [[Categories of information that may need filtering.]] - `rationale_for` [EXTRACTED]
 - [[Enum]] - `inherits` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 - [[test_outbound_filter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_282
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

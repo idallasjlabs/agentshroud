@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Config Validation Tests"
-location: "L483"
+community: "Gateway Test Suite"
+location: "L535"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Config_Validation_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # Control center launcher should be robust to current working directory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_start_control_center_script_uses_repo_relative_exec()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Config_Validation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Module Group 395"
-location: "L51"
+community: "Egress & RBAC Security Core"
+location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_395
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Convert to dictionary for JSON serialization.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.to_dict()_10]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_395
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

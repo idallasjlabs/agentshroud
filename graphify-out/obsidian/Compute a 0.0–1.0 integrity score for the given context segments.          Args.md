@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "rationale"
-community: "Context Guard & Integrity"
-location: "L79"
+community: "Gateway Test Suite"
+location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Context_Guard__Integrity
+  - community/Gateway_Test_Suite
 ---
 
 # Compute a 0.0–1.0 integrity score for the given context segments.          Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.score_context()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Context_Guard__Integrity
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

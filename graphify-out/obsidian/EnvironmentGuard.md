@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Environment Guard & Leak Detection"
+community: "PII Config & Test Fixtures"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Environment_Guard__Leak_Detection
+  - community/PII_Config__Test_Fixtures
 ---
 
 # EnvironmentGuard
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_63]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_76]] - `method` [EXTRACTED]
 - [[._contains_env_access_patterns()]] - `method` [EXTRACTED]
 - [[._looks_like_credential()]] - `method` [EXTRACTED]
 - [[._record_leakage()]] - `method` [EXTRACTED]
@@ -30,9 +30,10 @@ tags:
 - [[.test_env_guard_scrub_output()]] - `calls` [EXTRACTED]
 - [[.test_env_guard_scrubs_output()]] - `calls` [INFERRED]
 - [[.test_natural_language_question_is_allowed()]] - `calls` [EXTRACTED]
-- [[.test_unparseable_text_is_allowed()]] - `calls` [EXTRACTED]
+- [[.test_unparseable_text_is_allowed()_1]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[Guard against environment variable leakage and unauthorized access.]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -40,7 +41,9 @@ tags:
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
+- [[TestCheckCommandExecution]] - `uses` [INFERRED]
+- [[TestCheckFileAccess]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
@@ -59,7 +62,9 @@ tags:
 - [[TestKeyVaultWired]] - `uses` [INFERRED]
 - [[TestLLMProxyEndpoints]] - `uses` [INFERRED]
 - [[TestLoggingSecurity]] - `uses` [INFERRED]
+- [[TestLooksLikeCredential]] - `uses` [INFERRED]
 - [[TestMCPSecurity]] - `uses` [INFERRED]
+- [[TestMonitorEnvironmentAccess]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
 - [[TestNotifyUserBlockedSanitization]] - `uses` [INFERRED]
 - [[TestPIIDetection_1]] - `uses` [INFERRED]
@@ -67,15 +72,19 @@ tags:
 - [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestResourceGuardFailClosed]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
+- [[TestScrubCommandOutput]] - `uses` [INFERRED]
+- [[TestSummaryAndExport]] - `uses` [INFERRED]
 - [[TestSupplyChain_1]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[env_guard.py]] - `contains` [EXTRACTED]
 - [[get_env_guard()]] - `references` [EXTRACTED]
+- [[guard()_2]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
+- [[test_env_guard_class.py]] - `implements` [EXTRACTED]
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Environment_Guard__Leak_Detection
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

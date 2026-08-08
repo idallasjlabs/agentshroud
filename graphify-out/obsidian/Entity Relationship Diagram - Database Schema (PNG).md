@@ -1,18 +1,17 @@
 ---
 source_file: "docs/diagrams/images/diagram-08-erd.png"
 type: "image"
-community: "Module Group 373"
+community: "docs/flows"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Module_Group_373
+  - community/docs/flows
 ---
 
 # Entity Relationship Diagram - Database Schema (PNG)
 
 ## Connections
-- [[Data Flow Diagram (PNG)]] - `produces_schema_for` [INFERRED]
 - [[Data Lineage Diagram (PNG)]] - `conceptually_related_to` [INFERRED]
-- [[Entity Relationship Diagram - Database Schema (SVG)]] - `same_content_as` [EXPLICIT]
+- [[data-flow-diagram]] - `produces_schema_for` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Module_Group_373
+#graphify/image #graphify/INFERRED #community/docs/flows

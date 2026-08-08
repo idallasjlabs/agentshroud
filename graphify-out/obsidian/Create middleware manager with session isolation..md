@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Session Manager & Webhook"
-location: "L360"
+community: "URL/Domain Validation Tests"
+location: "L358"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager__Webhook
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Create middleware manager with session isolation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.middleware_manager()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__Webhook
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

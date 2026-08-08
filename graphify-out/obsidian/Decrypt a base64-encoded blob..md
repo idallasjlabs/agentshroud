@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "Module Group 66"
+community: "Gateway Security Module"
 location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_66
+  - community/Gateway_Security_Module
 ---
 
 # Decrypt a base64-encoded blob.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.decrypt_b64()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_66
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

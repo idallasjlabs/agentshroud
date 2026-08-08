@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "Module Group 82"
+community: "gateway/runtime"
 location: "L112"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_82
+  - community/gateway/runtime
 ---
 
 # ContainerInfo
@@ -16,4 +16,4 @@ tags:
 - [[ContainerEngine_2]] - `uses` [INFERRED]
 - [[ContainerInfo_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_82
+#graphify/code #graphify/INFERRED #community/gateway/runtime

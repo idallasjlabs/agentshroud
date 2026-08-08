@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "rationale"
-community: "Module Group 127"
-location: "L71"
+community: "Gateway Test Suite"
+location: "L72"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_127
+  - community/Gateway_Test_Suite
 ---
 
 # Integration tests for the /telegram-api/{path} route with multi-bot registry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTelegramProxyRouteMultiBot]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_127
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Module Group 60"
-location: "L1006"
+community: "Collaborator Prompt Classifiers"
+location: "L1088"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_60
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Detect plain NO_REPLY sentinel with light punctuation wrapping.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._is_no_reply_token()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_60
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

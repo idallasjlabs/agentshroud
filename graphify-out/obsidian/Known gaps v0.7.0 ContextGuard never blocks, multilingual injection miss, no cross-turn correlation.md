@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reviews/enforcement-audit-v0.7.0.md"
 type: "rationale"
-community: "Module Group 582"
+community: "docs/reviews"
 location: "line 77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_582
+  - community/docs/reviews
 ---
 
 # Known gaps v0.7.0: ContextGuard never blocks, multilingual injection miss, no cross-turn correlation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Enforcement Audit Results v0.7.0 (4040 tests, 0 failures, CONDITIONAL GO)]] - `identifies` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_582
+#graphify/rationale #graphify/EXTRACTED #community/docs/reviews

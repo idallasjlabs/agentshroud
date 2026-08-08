@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "rationale"
-community: "Subagent Monitor"
+community: "Gateway Test Suite"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Subagent_Monitor
+  - community/Gateway_Test_Suite
 ---
 
 # If sub-agent tries tool above its trust, flag it.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_trust_violation_flagged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Subagent_Monitor
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

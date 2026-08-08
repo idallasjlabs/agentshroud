@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/state.py"
 type: "rationale"
-community: "Gateway Config & Lifespan"
-location: "L23"
+community: "PII Sanitizer Pipeline"
+location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Container for application-wide state
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AppState]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

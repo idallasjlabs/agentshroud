@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
+community: "PII Config & Test Fixtures"
 location: "L67"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Middleware__Ingest_API
+  - community/PII_Config__Test_Fixtures
 ---
 
 # ContextGuard
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_53]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_62]] - `method` [EXTRACTED]
 - [[._detect_hidden_instructions()]] - `method` [EXTRACTED]
 - [[._detect_instruction_injection()]] - `method` [EXTRACTED]
 - [[._detect_rapid_context_growth()]] - `method` [EXTRACTED]
@@ -37,7 +37,8 @@ tags:
 - [[.test_json_injection_in_context()]] - `calls` [INFERRED]
 - [[.test_oversized_json_payload()]] - `calls` [INFERRED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[Guard against context window poisoning attacks.]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -47,7 +48,7 @@ tags:
 - [[Resource]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestCheckMessage]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
@@ -94,11 +95,11 @@ tags:
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[pipeline()_1]] - `calls` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_context_guard.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
 type: "concept"
-community: "Module Group 237"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_237
+  - community/docs/vault
 ---
 
 # Container Runtime Abstraction
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ContainerEngine (Abstract)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_237
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

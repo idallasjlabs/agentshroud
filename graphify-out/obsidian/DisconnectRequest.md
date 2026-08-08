@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Module Group 83"
-location: "L781"
+community: "SOC Dashboard"
+location: "L778"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_83
+  - community/SOC_Dashboard
 ---
 
 # DisconnectRequest
@@ -21,9 +21,9 @@ tags:
 - [[SCLError]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
 - [[WSEventType]] - `uses` [INFERRED]
 - [[killswitch_disconnect()]] - `references` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_83
+#graphify/code #graphify/INFERRED #community/SOC_Dashboard

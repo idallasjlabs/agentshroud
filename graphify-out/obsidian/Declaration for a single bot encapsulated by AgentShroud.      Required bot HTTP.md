@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "rationale"
-community: "Module Group 127"
-location: "L21"
+community: "Forward Routing & Approval"
+location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_127
+  - community/Forward_Routing__Approval
 ---
 
 # Declaration for a single bot encapsulated by AgentShroud.      Required bot HTTP
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[BotConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_127
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

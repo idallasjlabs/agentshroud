@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "Module Group 116"
+community: "Gateway Test Suite"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_116
+  - community/Gateway_Test_Suite
 ---
 
 # Create and store a provenance tag for a document.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.tag_document()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_116
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

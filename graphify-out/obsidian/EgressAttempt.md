@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Module Group 71"
+community: "Gateway Security Module"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_71
+  - community/Gateway_Security_Module
 ---
 
 # EgressAttempt
 
 ## Connections
+- [[._check_impl()]] - `references` [EXTRACTED]
 - [[._record()_1]] - `references` [EXTRACTED]
-- [[.check()_4]] - `references` [EXTRACTED]
+- [[.check()_5]] - `references` [EXTRACTED]
 - [[.check_async()]] - `references` [EXTRACTED]
 - [[.get_log()]] - `references` [EXTRACTED]
 - [[EgressFilter_2]] - `uses` [INFERRED]
@@ -25,10 +26,11 @@ tags:
 - [[TestInteractiveApproval]] - `uses` [INFERRED]
 - [[TestLogging]] - `uses` [INFERRED]
 - [[TestMonitorMode]] - `uses` [INFERRED]
+- [[TestOpenClawResearchDomainsAllowlisted]] - `uses` [INFERRED]
 - [[TestPerAgentPolicy]] - `uses` [INFERRED]
 - [[TestSMTPIMAPPorts]] - `uses` [INFERRED]
 - [[TestURLParsing]] - `uses` [INFERRED]
 - [[egress_filter.py]] - `contains` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_71
+#graphify/code #graphify/INFERRED #community/Gateway_Security_Module

@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/camsnap/SKILL.md"
 type: "document"
-community: "Module Group 397"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_397
+  - community/skills/openclaw
 ---
 
 # OpenClaw Skill: camsnap (RTSP/ONVIF camera capture)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Homebrew-installed OpenClaw Skills (camsnap, gog, goplaces, gifgrep, himalaya, github, gemini)]] - `member_of` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_397
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

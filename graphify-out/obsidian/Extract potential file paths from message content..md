@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "RBAC Middleware & Ingest API"
-location: "L953"
+community: "Security Module Middleware"
+location: "L1088"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Security_Module_Middleware
 ---
 
 # Extract potential file paths from message content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._extract_file_paths()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware

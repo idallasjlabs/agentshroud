@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 713"
+community: "Gateway Test Suite"
 location: "L1889"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_713
+  - community/Gateway_Test_Suite
 ---
 
 # Form payload plain NO_REPLY should map to deterministic wait guidance.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_urlencoded_plain_no_reply_is_still_filtered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_713
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

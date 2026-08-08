@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Router & Correlation"
-location: "L1220"
+community: "SOC Collaborator Lifecycle"
+location: "L1221"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Router__Correlation
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # Delete a group at runtime (owner only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[delete_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Router__Correlation
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

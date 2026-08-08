@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bots/hermes/start.sh"
-type: "code"
-community: "Module Group 316"
-location: "L21"
+source_file: "docs/vault/00 - START HERE/Home.md"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_316
+  - community/docs/vault
 ---
 
-# HOME
+# Home.md
 
 ## Connections
-- [[start.sh]] - `defines` [EXTRACTED]
+- [[AgentShroud Vault Home]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_316
+#graphify/document #graphify/EXTRACTED #community/docs/vault

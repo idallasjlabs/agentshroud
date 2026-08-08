@@ -1,17 +1,14 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "document"
-community: "Module Group 262"
+community: "docs/diagrams"
 location: "line 122"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Module_Group_262
+  - graphify/EXTRACTED
+  - community/docs/diagrams
 ---
 
 # Monitoring & Observability Map (GET /status, GET /ledger, docker logs, Telegram notifications; gaps: Loki/Prometheus not wired)
 
-## Connections
-- [[Gap Analysis - No API contract tests, no canary rollout, CI threshold mismatch, no DAST]] - `supports` [INFERRED]
-
-#graphify/document #graphify/INFERRED #community/Module_Group_262
+#graphify/document #graphify/EXTRACTED #community/docs/diagrams

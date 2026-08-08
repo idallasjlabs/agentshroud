@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/kill-switch-256x256.png"
 type: "image"
-community: "Module Group 375"
+community: "branding/icons"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Module_Group_375
+  - community/branding/icons
 ---
 
 # Kill Switch — Module Icon
@@ -14,4 +14,4 @@ tags:
 - [[Drift Detector — Module Icon]] - `conceptually_related_to` [INFERRED]
 - [[Live Dashboard — Module Icon]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Module_Group_375
+#graphify/image #graphify/INFERRED #community/branding/icons

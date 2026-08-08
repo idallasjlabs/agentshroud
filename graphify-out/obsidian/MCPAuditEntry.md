@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "Module Group 139"
+community: "Gateway Proxy Layer"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_139
+  - community/Gateway_Proxy_Layer
 ---
 
 # MCPAuditEntry
@@ -21,7 +21,7 @@ tags:
 - [[.log_tool_call()]] - `references` [EXTRACTED]
 - [[.log_tool_result()]] - `references` [EXTRACTED]
 - [[A single MCP tool call audit entry.]] - `rationale_for` [EXTRACTED]
-- [[__init__.py_6]] - `imports` [EXTRACTED]
+- [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[mcp_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_139
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

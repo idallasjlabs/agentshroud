@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "Module Group 279"
+community: "Gateway Proxy Layer"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_279
+  - community/Gateway_Proxy_Layer
 ---
 
 # EgressTelegramNotifier
 
 ## Connections
-- [[.__init__()_29]] - `method` [EXTRACTED]
+- [[.__init__()_37]] - `method` [EXTRACTED]
 - [[._api_url()]] - `method` [EXTRACTED]
 - [[._async_send()]] - `method` [EXTRACTED]
 - [[._send_request()]] - `method` [EXTRACTED]
@@ -24,6 +24,7 @@ tags:
 - [[.handle_callback()]] - `method` [EXTRACTED]
 - [[.notifier()]] - `calls` [EXTRACTED]
 - [[.notify_pending()]] - `method` [EXTRACTED]
+- [[.send_text()]] - `method` [EXTRACTED]
 - [[Sends Telegram inline keyboard notifications for egress approval.      Supports]] - `rationale_for` [EXTRACTED]
 - [[TestEgressTelegramNotify]] - `uses` [INFERRED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
@@ -36,4 +37,4 @@ tags:
 - [[test_egress_callback_stale.py]] - `imports` [EXTRACTED]
 - [[test_egress_telegram_notify.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_279
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

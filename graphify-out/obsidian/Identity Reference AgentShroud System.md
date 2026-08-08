@@ -1,16 +1,23 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/architecture/IDENTITY.md"
+source_file: "docs/architecture/IDENTITY.md"
 type: "document"
-community: "Module Group 620"
+community: "Architecture Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_620
+  - community/Architecture_Docs
 ---
 
 # Identity Reference: AgentShroud System
 
 ## Connections
+- [[IDENTITY_1]] - `contains` [EXTRACTED]
 - [[System Owner Dallas Jefferson (@agentshroud.ai), Bot @agentshroud.ai_bot]] - `defines` [EXTRACTED]
+- [[🎯 Bot Identity Configuration]] - `contains` [EXTRACTED]
+- [[👤 You (The Real Person)]] - `contains` [EXTRACTED]
+- [[💬 Communication Flow]] - `contains` [EXTRACTED]
+- [[📱 How It Works]] - `contains` [EXTRACTED]
+- [[🔐 Security]] - `contains` [EXTRACTED]
+- [[🤖 Your AI Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_620
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

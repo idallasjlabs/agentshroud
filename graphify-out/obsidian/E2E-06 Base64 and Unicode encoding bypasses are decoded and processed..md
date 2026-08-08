@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "Security Pipeline & Audit Chain"
-location: "L229"
+community: "PII Sanitizer Pipeline"
+location: "L228"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Pipeline__Audit_Chain
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # E2E-06: Base64 and Unicode encoding bypasses are decoded and processed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E06EncodingBypassDetection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Pipeline__Audit_Chain
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

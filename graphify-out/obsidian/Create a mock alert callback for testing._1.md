@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Module Group 179"
-location: "L35"
+community: "Tool Chain Analyzer"
+location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_179
+  - community/Tool_Chain_Analyzer
 ---
 
 # Create a mock alert callback for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mock_alert_callback()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_179
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain_Analyzer

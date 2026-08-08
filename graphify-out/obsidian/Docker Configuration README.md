@@ -1,11 +1,11 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "Module Group 500"
+community: "docker/falco"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_500
+  - community/docker/falco
 ---
 
 # Docker Configuration README
@@ -15,4 +15,4 @@ tags:
 - [[Container Stack Architecture (gateway + openclaw + hermes + hci)]] - `references` [EXTRACTED]
 - [[Docker Quickstart Guide]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_500
+#graphify/document #graphify/EXTRACTED #community/docker/falco

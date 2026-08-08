@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "rationale"
-community: "Context Guard & Integrity"
-location: "L104"
+community: "Gateway Test Suite"
+location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Context_Guard__Integrity
+  - community/Gateway_Test_Suite
 ---
 
 # Duplicate content hashes reduce score.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_duplicate_hashes_detected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Context_Guard__Integrity
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

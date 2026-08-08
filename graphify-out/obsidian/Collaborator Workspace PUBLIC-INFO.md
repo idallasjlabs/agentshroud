@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Module Group 192"
+community: "Bot Container Scripts"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_192
+  - community/Bot_Container_Scripts
 ---
 
 # Collaborator Workspace PUBLIC-INFO
@@ -17,7 +17,6 @@ tags:
 - [[Isaiah Dallas Jefferson Jr. (OwnerCIEProduct Owner)]] - `authored_by` [EXTRACTED]
 - [[Outbound Security Pipeline (Agent to User)]] - `describes` [EXTRACTED]
 - [[RBAC — Role-Based Access Control]] - `references` [EXTRACTED]
-- [[SecurityPipeline (76-Module InboundOutbound Pipeline)]] - `describes` [EXTRACTED]
 - [[Transparent Proxy Design Philosophy]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_192
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts

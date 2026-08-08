@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Approval Hardening"
-location: "L59"
+community: "Gateway Security Module"
+location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Hardening
+  - community/Gateway_Security_Module
 ---
 
 # Create approval hardening instance for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.hardening()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Hardening
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

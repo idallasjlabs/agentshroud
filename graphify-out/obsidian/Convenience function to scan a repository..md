@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Module Group 80"
+community: "Gateway Security Module"
 location: "L491"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_80
+  - community/Gateway_Security_Module
 ---
 
 # Convenience function to scan a repository.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[scan_repository()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_80
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Module Group 132"
-location: "L179"
+community: "Approval Queue Tests"
+location: "L187"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_132
+  - community/Approval_Queue_Tests
 ---
 
 # GET /dashboard with invalid cookie returns 403
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_dashboard_bad_cookie_returns_403()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_132
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Tests

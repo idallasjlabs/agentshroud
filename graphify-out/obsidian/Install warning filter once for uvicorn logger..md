@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "Gateway Config & Lifespan"
-location: "L64"
+community: "Approval & FastAPI Ingest"
+location: "L70"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Install warning filter once for uvicorn logger.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_install_uvicorn_warning_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

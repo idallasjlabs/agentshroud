@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Module Group 194"
+community: "Setup Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_194
+  - community/Setup_Docs
 ---
 
 # OpenClaw Setup Guide (v0.2.0)
@@ -16,4 +16,4 @@ tags:
 - [[OpenClaw Control UI (port 1878918790)]] - `describes` [EXTRACTED]
 - [[Telegram Bot Setup for OpenClaw (multi-device)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_194
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs
