@@ -1,20 +1,22 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "code"
-community: "Module Group 220"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_220
+  - community/Gateway_Test_Suite
 ---
 
 # test_llm_quota_detector.py
 
 ## Connections
 - [[TestIsOverloaded]] - `contains` [EXTRACTED]
+- [[TestOverloadedMultiProvider]] - `contains` [EXTRACTED]
 - [[is_overloaded()]] - `imports` [EXTRACTED]
 - [[is_quota_exhausted()]] - `imports` [EXTRACTED]
+- [[llm_quota_detector.py]] - `references` [EXTRACTED]
 - [[test_200_never_triggers()]] - `contains` [EXTRACTED]
 - [[test_400_without_quota_substring_not_flagged()]] - `contains` [EXTRACTED]
 - [[test_500_never_triggers()]] - `contains` [EXTRACTED]
@@ -28,4 +30,4 @@ tags:
 - [[test_no_false_positive_on_anthropic_request_rate_limit()]] - `contains` [EXTRACTED]
 - [[test_non_json_body_anthropic_429_no_substring_match()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_220
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

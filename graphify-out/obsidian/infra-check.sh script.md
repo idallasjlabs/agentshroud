@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/infra-check.sh"
 type: "code"
-community: "Module Group 647"
+community: "scripts/infra-check.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_647
+  - community/scripts/infra-checksh
 ---
 
 # infra-check.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[infra-check.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_647
+#graphify/code #graphify/EXTRACTED #community/scripts/infra-checksh

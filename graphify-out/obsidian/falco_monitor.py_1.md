@@ -1,21 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
-type: "code"
-community: "Module Group 306"
-location: "gateway/security/falco_monitor.py"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_306
+  - community/docs/vault
 ---
 
-# falco_monitor.py
+# falco_monitor.py.md
 
 ## Connections
-- [[Falco Priority → AgentShroud Severity Map]] - `contains` [EXTRACTED]
-- [[Falco Runtime Security Engine Integration]] - `implements` [EXTRACTED]
-- [[health_report.py_1]] - `aggregates` [EXTRACTED]
-- [[subagent_monitor.py_1]] - `references` [EXTRACTED]
-- [[wazuh_client.py_1]] - `references` [EXTRACTED]
+- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_306
+#graphify/document #graphify/EXTRACTED #community/docs/vault

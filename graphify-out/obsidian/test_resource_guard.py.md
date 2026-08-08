@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "PII Sanitizer & Resource Guard"
+community: "LLM Proxy Resource Guard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # test_resource_guard.py
@@ -16,4 +16,4 @@ tags:
 - [[ResourceLimits]] - `imports` [EXTRACTED]
 - [[TestResourceGuard]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

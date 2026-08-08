@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/skill.json"
-type: "code"
-community: "Module Group 299"
-location: "L4"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+type: "document"
+community: "docs/vault"
+location: "L11"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_299
+  - community/docs/vault
 ---
 
-# description
+# Description
 
 ## Connections
-- [[skill.json]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_299
+#graphify/document #graphify/EXTRACTED #community/docs/vault

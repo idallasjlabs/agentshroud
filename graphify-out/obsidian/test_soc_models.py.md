@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "SOC Services & Health Status"
+community: "SOC Dashboard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Services__Health_Status
+  - community/SOC_Dashboard
 ---
 
 # test_soc_models.py
@@ -18,13 +18,13 @@ tags:
 - [[HealthStatus]] - `imports` [EXTRACTED]
 - [[Platform]] - `imports` [EXTRACTED]
 - [[ResourceUsage_1]] - `imports` [EXTRACTED]
-- [[RiskLevel_2]] - `imports` [EXTRACTED]
+- [[RiskLevel_4]] - `imports` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `imports` [EXTRACTED]
 - [[SCLError]] - `imports` [EXTRACTED]
 - [[SecurityEvent_1]] - `imports` [EXTRACTED]
 - [[ServiceDescriptor]] - `imports` [EXTRACTED]
 - [[ServiceStatus]] - `imports` [EXTRACTED]
-- [[Severity_1]] - `imports` [EXTRACTED]
+- [[Severity_2]] - `imports` [EXTRACTED]
 - [[TestContributorRecord]] - `contains` [EXTRACTED]
 - [[TestEgressRequest]] - `contains` [EXTRACTED]
 - [[TestSCLError]] - `contains` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[WSEvent]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Services__Health_Status
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

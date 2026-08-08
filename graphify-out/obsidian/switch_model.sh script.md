@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/switch_model.sh"
 type: "code"
-community: "Module Group 434"
+community: "scripts/switch_model.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_434
+  - community/scripts/switch_modelsh
 ---
 
 # switch_model.sh script
@@ -17,5 +17,6 @@ tags:
 - [[switch_model.sh]] - `contains` [EXTRACTED]
 - [[upsert_env_value()]] - `calls` [EXTRACTED]
 - [[usage()_4]] - `calls` [EXTRACTED]
+- [[verify_both_bots_healthy()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_434
+#graphify/code #graphify/EXTRACTED #community/scripts/switch_modelsh

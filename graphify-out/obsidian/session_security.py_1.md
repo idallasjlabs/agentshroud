@@ -1,22 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
-type: "code"
-community: "Module Group 320"
-location: "gateway/security/session_security.py"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_320
+  - community/docs/vault
 ---
 
-# session_security.py
+# session_security.py.md
 
 ## Connections
-- [[Event Injection Prevention (trusted source registry)]] - `implements` [EXTRACTED]
-- [[Session Hijacking Prevention (IP+UA fingerprint binding)]] - `implements` [EXTRACTED]
-- [[SessionManager (Class)]] - `contains` [EXTRACTED]
-- [[log_sanitizer.py_1]] - `references` [EXTRACTED]
-- [[oauth_security.py_1]] - `references` [EXTRACTED]
-- [[subagent_monitor.py_1]] - `references` [EXTRACTED]
+- [[session_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_320
+#graphify/document #graphify/EXTRACTED #community/docs/vault

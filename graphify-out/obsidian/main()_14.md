@@ -1,21 +1,18 @@
 ---
-source_file: "src/interfaces/chat_console.py"
+source_file: "scripts/gemini-review.py"
 type: "code"
-community: "Module Group 349"
-location: "L121"
+community: "scripts/gemini-review.py"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_349
+  - community/scripts/gemini-reviewpy
 ---
 
 # main()
 
 ## Connections
-- [[chat_console.py]] - `contains` [EXTRACTED]
-- [[check_status()]] - `calls` [EXTRACTED]
-- [[print_banner()]] - `calls` [EXTRACTED]
-- [[print_help()]] - `calls` [EXTRACTED]
-- [[send_message()]] - `calls` [EXTRACTED]
+- [[call_gemini()]] - `calls` [EXTRACTED]
+- [[gemini-review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_349
+#graphify/code #graphify/EXTRACTED #community/scripts/gemini-reviewpy

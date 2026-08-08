@@ -1,19 +1,25 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Module Group 481"
-location: "L111"
+community: "Bot Skill Config"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_481
+  - community/Bot_Skill_Config
 ---
 
 # main()
 
 ## Connections
-- [[Path_30]] - `calls` [EXTRACTED]
-- [[export()]] - `calls` [EXTRACTED]
-- [[export-telegram-history.py]] - `contains` [EXTRACTED]
+- [[._take_screenshot()]] - `calls` [EXTRACTED]
+- [[.click()]] - `calls` [EXTRACTED]
+- [[.close()]] - `calls` [EXTRACTED]
+- [[.extract()]] - `calls` [EXTRACTED]
+- [[.fill_field()]] - `calls` [EXTRACTED]
+- [[.navigate()]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser]] - `calls` [EXTRACTED]
+- [[browse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_481
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

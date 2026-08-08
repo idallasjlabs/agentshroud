@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Module Group 176"
-location: "L262"
+community: "Gateway Security Module"
+location: "L312"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_176
+  - community/Gateway_Security_Module
 ---
 
 # cve_report_scheduler()
@@ -18,4 +18,4 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_176
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

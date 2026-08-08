@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Module Group 72"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_72
+  - community/Gateway_Test_Suite
 ---
 
 # test_redteam_probes.py
@@ -25,10 +25,11 @@ tags:
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[_make_approval_queue()]] - `contains` [EXTRACTED]
 - [[_make_full_pipeline()]] - `contains` [EXTRACTED]
 - [[_make_pii_sanitizer()]] - `contains` [EXTRACTED]
+- [[i-sec-offense Red Team Adversarial Tester]] - `references` [EXTRACTED]
 - [[pipeline()_2]] - `contains` [EXTRACTED]
 - [[test_admin_action_requires_approval()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_records_all_events()]] - `contains` [EXTRACTED]
@@ -54,4 +55,4 @@ tags:
 - [[test_ssn_redacted_outbound()]] - `contains` [EXTRACTED]
 - [[test_trust_escalation_blocked()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_72
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Module Group 126"
-location: "L157"
+community: "Enforce-Mode Auto-Revert"
+location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_126
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # set_mode()
@@ -20,4 +20,4 @@ tags:
 - [[api.py]] - `contains` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_126
+#graphify/code #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert

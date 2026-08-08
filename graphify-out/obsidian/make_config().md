@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "MCP Config & Proxy"
+community: "Gateway Test Suite"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Config__Proxy
+  - community/Gateway_Test_Suite
 ---
 
 # make_config()
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[.test_passthrough_process_tool_result()]] - `calls` [EXTRACTED]
 - [[.test_passthrough_with_execute()]] - `calls` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `references` [EXTRACTED]
 - [[MCPProxyConfig]] - `calls` [EXTRACTED]
+- [[MCPProxyConfig_3]] - `references` [EXTRACTED]
 - [[MCPServerConfig]] - `calls` [EXTRACTED]
 - [[MCPToolConfig]] - `calls` [EXTRACTED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Config__Proxy
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

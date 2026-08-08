@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Module Group 63"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_63
+  - community/Gateway_Test_Suite
 ---
 
 # key_vault.py
@@ -21,4 +21,4 @@ tags:
 - [[KeyVaultConfig]] - `contains` [EXTRACTED]
 - [[LeakScanResult]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_63
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

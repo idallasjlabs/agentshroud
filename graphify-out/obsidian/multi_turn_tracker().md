@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "URL Analyzer & Content Scanner"
-location: "L24"
+community: "Egress & RBAC Security Core"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URL_Analyzer__Content_Scanner
+  - community/Egress__RBAC_Security_Core
 ---
 
 # multi_turn_tracker()
@@ -16,4 +16,4 @@ tags:
 - [[MultiTurnTracker]] - `calls` [EXTRACTED]
 - [[test_multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URL_Analyzer__Content_Scanner
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

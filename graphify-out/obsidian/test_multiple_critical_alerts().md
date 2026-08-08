@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_falco_watcher.py"
 type: "code"
-community: "Module Group 242"
-location: "L116"
+community: "Gateway Security Module"
+location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_242
+  - community/Gateway_Security_Module
 ---
 
 # test_multiple_critical_alerts()
@@ -16,4 +16,4 @@ tags:
 - [[_make_alert()]] - `calls` [EXTRACTED]
 - [[test_falco_watcher.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_242
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

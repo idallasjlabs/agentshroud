@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Context Guard & Integrity"
+community: "PromptGuard Encoding Detection"
 location: "L180"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Context_Guard__Integrity
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # register_system_prompt + verify_system_prompt should succeed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_register_and_verify()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Context_Guard__Integrity
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection

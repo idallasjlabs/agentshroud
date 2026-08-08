@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "Module Group 272"
+community: "Gateway Test Suite"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_272
+  - community/Gateway_Test_Suite
 ---
 
 # test_status_endpoint()
@@ -15,4 +15,4 @@ tags:
 - [[GET status returns service info.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_272
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

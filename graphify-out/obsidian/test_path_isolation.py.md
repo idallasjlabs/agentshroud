@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Gateway_Test_Suite
 ---
 
 # test_path_isolation.py
@@ -19,4 +19,4 @@ tags:
 - [[TestPathIsolationManager]] - `contains` [EXTRACTED]
 - [[TestPathRewriteResult]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

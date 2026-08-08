@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Module Group 124"
+community: "Gateway Test Suite"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_124
+  - community/Gateway_Test_Suite
 ---
 
 # make_proxy()
@@ -43,9 +43,9 @@ tags:
 - [[MCPAuditTrail]] - `calls` [EXTRACTED]
 - [[MCPInspector]] - `calls` [EXTRACTED]
 - [[MCPPermissionManager]] - `calls` [EXTRACTED]
-- [[MCPProxy_1]] - `references` [EXTRACTED]
 - [[MCPProxy]] - `calls` [EXTRACTED]
+- [[MCPProxy_1]] - `references` [EXTRACTED]
 - [[make_config()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_124
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

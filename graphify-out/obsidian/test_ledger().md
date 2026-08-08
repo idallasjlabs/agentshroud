@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Ledger Config & Test Infra"
-location: "L97"
+community: "PII Sanitizer Pipeline"
+location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ledger_Config__Test_Infra
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # test_ledger()
@@ -18,4 +18,4 @@ tags:
 - [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ledger_Config__Test_Infra
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/package.json"
-type: "code"
-community: "Module Group 367"
-location: "L11"
+source_file: "BRAND.md"
+type: "document"
+community: "branding/README.md"
+location: "L77"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_367
+  - community/branding/READMEmd
 ---
 
-# license
+# License
 
 ## Connections
-- [[package.json]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_367
+#graphify/document #graphify/EXTRACTED #community/branding/READMEmd

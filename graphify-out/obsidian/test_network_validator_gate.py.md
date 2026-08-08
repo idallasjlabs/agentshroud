@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "Module Group 86"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_86
+  - community/Gateway_Security_Module
 ---
 
 # test_network_validator_gate.py
@@ -16,7 +16,8 @@ tags:
 - [[TestExpectedNetworksAllowlist]] - `contains` [EXTRACTED]
 - [[TestGateScope]] - `contains` [EXTRACTED]
 - [[TestValidatorAPI]] - `contains` [EXTRACTED]
+- [[network_validator.py]] - `references` [EXTRACTED]
 - [[tmp_compose()]] - `contains` [EXTRACTED]
 - [[validate_network_security()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_86
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

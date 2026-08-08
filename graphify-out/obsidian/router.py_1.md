@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Router & Correlation"
+community: "SOC Collaborator Lifecycle"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router__Correlation
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # router.py
@@ -29,6 +29,7 @@ tags:
 - [[EgressScope]] - `imports` [EXTRACTED]
 - [[EgressScopeRequest]] - `contains` [EXTRACTED]
 - [[EmergencyBlockRequest]] - `contains` [EXTRACTED]
+- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[GroupConfig]] - `imports` [EXTRACTED]
 - [[LoginRequest]] - `contains` [EXTRACTED]
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
@@ -48,7 +49,7 @@ tags:
 - [[SetModuleModeRequest]] - `contains` [EXTRACTED]
 - [[SetRoleRequest]] - `contains` [EXTRACTED]
 - [[SetUserModeRequest]] - `contains` [EXTRACTED]
-- [[Severity_1]] - `imports` [EXTRACTED]
+- [[Severity_2]] - `imports` [EXTRACTED]
 - [[SharedMemoryManager]] - `imports` [EXTRACTED]
 - [[UpdateDisplayNameRequest]] - `contains` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
@@ -60,6 +61,7 @@ tags:
 - [[_launch_scan_background()]] - `contains` [EXTRACTED]
 - [[_log_audit()]] - `contains` [EXTRACTED]
 - [[_minimal_dashboard_html()]] - `contains` [EXTRACTED]
+- [[_module_stats_snapshot()]] - `contains` [EXTRACTED]
 - [[_risk_level_label()]] - `contains` [EXTRACTED]
 - [[_ssh_compose()]] - `contains` [EXTRACTED]
 - [[acknowledge_config_integrity()]] - `contains` [EXTRACTED]
@@ -88,6 +90,7 @@ tags:
 - [[get_agent_cves()]] - `contains` [EXTRACTED]
 - [[get_caller()]] - `imports` [EXTRACTED]
 - [[get_collaborator_activity()]] - `contains` [EXTRACTED]
+- [[get_collector()]] - `imports` [EXTRACTED]
 - [[get_config()]] - `contains` [EXTRACTED]
 - [[get_egress_history()]] - `contains` [EXTRACTED]
 - [[get_egress_log()]] - `contains` [EXTRACTED]
@@ -98,6 +101,7 @@ tags:
 - [[get_health()_1]] - `contains` [EXTRACTED]
 - [[get_llm_failover_stats()]] - `contains` [EXTRACTED]
 - [[get_modules()]] - `contains` [EXTRACTED]
+- [[get_modules_heatmap()]] - `contains` [EXTRACTED]
 - [[get_privacy_policies()]] - `contains` [EXTRACTED]
 - [[get_risk_score()]] - `contains` [EXTRACTED]
 - [[get_risk_summary()]] - `contains` [EXTRACTED]
@@ -127,6 +131,7 @@ tags:
 - [[list_pending_approvals()_1]] - `contains` [EXTRACTED]
 - [[list_services()]] - `contains` [EXTRACTED]
 - [[list_users()]] - `contains` [EXTRACTED]
+- [[load_config()]] - `imports` [EXTRACTED]
 - [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[models.py_1]] - `imports_from` [EXTRACTED]
 - [[override_egress_rule()]] - `contains` [EXTRACTED]
@@ -143,6 +148,7 @@ tags:
 - [[remove_group_member()]] - `contains` [EXTRACTED]
 - [[rename_group()]] - `contains` [EXTRACTED]
 - [[restart_service()_1]] - `contains` [EXTRACTED]
+- [[revoke_approved_collaborator()]] - `imports` [EXTRACTED]
 - [[revoke_collaborator()]] - `contains` [EXTRACTED]
 - [[revoke_delegation()]] - `contains` [EXTRACTED]
 - [[revoke_egress_history()]] - `contains` [EXTRACTED]
@@ -167,4 +173,4 @@ tags:
 - [[verify_audit_chain()]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router__Correlation
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

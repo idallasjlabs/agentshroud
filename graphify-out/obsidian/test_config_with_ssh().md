@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "SSH Proxy & Gateway Config"
+community: "Forward Routing & Approval"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Forward_Routing__Approval
 ---
 
 # test_config_with_ssh()
@@ -16,7 +16,7 @@ tags:
 - [[GatewayConfig_1]] - `calls` [EXTRACTED]
 - [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[PIIConfig]] - `calls` [EXTRACTED]
-- [[RouterConfig]] - `calls` [EXTRACTED]
+- [[RouterConfig_1]] - `calls` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSH_Proxy__Gateway_Config
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

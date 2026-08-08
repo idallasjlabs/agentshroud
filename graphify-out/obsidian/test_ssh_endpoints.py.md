@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "SSH Proxy & Gateway Config"
+community: "Approval Queue Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSH_Proxy__Gateway_Config
+  - community/Approval_Queue_Tests
 ---
 
 # test_ssh_endpoints.py
@@ -20,7 +20,7 @@ tags:
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
 - [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
-- [[RouterConfig]] - `imports` [EXTRACTED]
+- [[RouterConfig_1]] - `imports` [EXTRACTED]
 - [[SSHConfig]] - `imports` [EXTRACTED]
 - [[SSHHostConfig]] - `imports` [EXTRACTED]
 - [[SSHProxy]] - `imports` [EXTRACTED]
@@ -30,9 +30,11 @@ tags:
 - [[TestSSHHistory]] - `contains` [EXTRACTED]
 - [[TestSSHHosts]] - `contains` [EXTRACTED]
 - [[TestSSHRequireApprovalFalse]] - `contains` [EXTRACTED]
+- [[TestSSHValidateCwd]] - `contains` [EXTRACTED]
 - [[auth_headers()_3]] - `contains` [EXTRACTED]
-- [[client()_13]] - `contains` [EXTRACTED]
+- [[client()_16]] - `contains` [EXTRACTED]
+- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
 - [[ssh_config()]] - `contains` [EXTRACTED]
 - [[test_config_with_ssh()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSH_Proxy__Gateway_Config
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

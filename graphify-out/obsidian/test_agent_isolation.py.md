@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "code"
-community: "Agent Isolation & Container Config"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Agent_Isolation__Container_Config
+  - community/Gateway_Test_Suite
 ---
 
 # test_agent_isolation.py
@@ -24,4 +24,4 @@ tags:
 - [[TestVolumeIsolation]] - `contains` [EXTRACTED]
 - [[_make_config()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Agent_Isolation__Container_Config
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

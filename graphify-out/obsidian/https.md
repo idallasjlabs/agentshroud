@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/setup-https-proxy.js"
+source_file: "docker/config/hermes/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "Module Group 329"
-location: "L49"
+community: "Bot Skill Config"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_329
+  - community/Bot_Skill_Config
 ---
 
 # https
 
 ## Connections
-- [[setup-https-proxy.js]] - `contains` [EXTRACTED]
+- [[calendar.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_329
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

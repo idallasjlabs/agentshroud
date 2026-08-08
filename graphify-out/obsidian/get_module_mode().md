@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Gateway Config & Lifespan"
+community: "Approval & FastAPI Ingest"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Approval__FastAPI_Ingest
 ---
 
 # get_module_mode()
@@ -28,4 +28,4 @@ tags:
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

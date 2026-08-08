@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "rationale"
-community: "Module Group 148"
-location: "L220"
+community: "Gateway Test Suite"
+location: "L247"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_148
+  - community/Gateway_Test_Suite
 ---
 
 # generate() rewrites index.html with correct sections for both agents.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGenerate]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_148
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

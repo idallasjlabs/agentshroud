@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_claude_via_openai_path.py"
 type: "code"
-community: "Module Group 101"
+community: "Gateway Test Suite"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_101
+  - community/Gateway_Test_Suite
 ---
 
 # test_anthropic_to_openai_response_envelope()
@@ -15,4 +15,4 @@ tags:
 - [[anthropic_to_openai_response()]] - `calls` [EXTRACTED]
 - [[test_claude_via_openai_path.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_101
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

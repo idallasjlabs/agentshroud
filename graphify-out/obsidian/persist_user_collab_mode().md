@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Module Group 208"
-location: "L301"
+community: "Collaborator Response Templates"
+location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_208
+  - community/Collaborator_Response_Templates
 ---
 
 # persist_user_collab_mode()
@@ -22,4 +22,4 @@ tags:
 - [[set_user_collab_mode()]] - `calls` [EXTRACTED]
 - [[test_group_config.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_208
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates

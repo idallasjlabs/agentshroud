@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "MCP Config & Proxy"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Config__Proxy
+  - community/Gateway_Test_Suite
 ---
 
 # test_mcp_proxy_coverage.py
@@ -45,4 +45,4 @@ tags:
 - [[make_config()]] - `contains` [EXTRACTED]
 - [[make_proxy()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Config__Proxy
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

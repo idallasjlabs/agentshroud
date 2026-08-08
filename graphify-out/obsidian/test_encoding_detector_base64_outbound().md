@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Module Group 72"
-location: "L249"
+community: "Gateway Test Suite"
+location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_72
+  - community/Gateway_Test_Suite
 ---
 
 # test_encoding_detector_base64_outbound()
@@ -16,4 +16,4 @@ tags:
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_72
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

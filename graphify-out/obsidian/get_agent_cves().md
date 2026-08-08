@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Bots & CVE Management"
-location: "L2168"
+community: "Bot CVE Scorecard"
+location: "L2211"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Bots__CVE_Management
+  - community/Bot_CVE_Scorecard
 ---
 
 # get_agent_cves()
@@ -15,10 +15,11 @@ tags:
 - [[.test_known_bot_returns_cve_summary()]] - `calls` [EXTRACTED]
 - [[.test_no_bot_id_defaults_to_openclaw()]] - `calls` [EXTRACTED]
 - [[.test_unknown_bot_returns_error()]] - `calls` [EXTRACTED]
-- [[Return the CVE registry for the wrapped AI agent.      When bot_id is provided,]] - `rationale_for` [EXTRACTED]
+- [[Return the tracked advisory registry for the wrapped AI agent.      When bot_id]] - `rationale_for` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller_3]] - `references` [EXTRACTED]
 - [[get_agent_cve_summary()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Bots__CVE_Management
+#graphify/code #graphify/EXTRACTED #community/Bot_CVE_Scorecard

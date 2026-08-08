@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/run-as-root.sh"
 type: "code"
-community: "Module Group 615"
+community: "Custom Skills"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_615
+  - community/Custom_Skills
 ---
 
 # run-as-root.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run-as-root.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_615
+#graphify/code #graphify/EXTRACTED #community/Custom_Skills

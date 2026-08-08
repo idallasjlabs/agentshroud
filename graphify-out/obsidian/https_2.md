@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/icloud/scripts/calendar.js"
+source_file: "docker/config/openclaw/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "Module Group 377"
+community: "Bot Skill Config"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_377
+  - community/Bot_Skill_Config
 ---
 
 # https
 
 ## Connections
-- [[calendar.js]] - `contains` [EXTRACTED]
+- [[calendar.js_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_377
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

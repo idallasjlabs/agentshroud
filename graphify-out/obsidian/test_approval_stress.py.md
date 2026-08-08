@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalQueueItem_3]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_2]] - `imports` [EXTRACTED]
+- [[ApprovalQueueItem]] - `imports` [EXTRACTED]
+- [[ApprovalRequest]] - `imports` [EXTRACTED]
 - [[ApprovalStore_1]] - `imports` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `contains` [EXTRACTED]
 - [[TestApprovalTimeout]] - `contains` [EXTRACTED]

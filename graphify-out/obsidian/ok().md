@@ -1,18 +1,18 @@
 ---
-source_file: "docs/reviews/enforcement-audit-script.py"
+source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
+community: "Egress & RBAC Security Core"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # ok()
 
 ## Connections
 - [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

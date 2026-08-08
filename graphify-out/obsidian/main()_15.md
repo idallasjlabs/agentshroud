@@ -1,19 +1,25 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "Module Group 164"
-location: "L428"
+community: "scripts/generate_branding_assets.py"
+location: "L550"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_164
+  - community/scripts/generate_branding_assetspy
 ---
 
 # main()
 
 ## Connections
-- [[.run()_6]] - `calls` [EXTRACTED]
-- [[ControlCenter]] - `calls` [EXTRACTED]
-- [[text_control_center.py]] - `contains` [EXTRACTED]
+- [[generate_branding_assets.py]] - `contains` [EXTRACTED]
+- [[generate_email()]] - `calls` [EXTRACTED]
+- [[generate_favicons()]] - `calls` [EXTRACTED]
+- [[generate_feature_icons()]] - `calls` [EXTRACTED]
+- [[generate_icon_sizes()]] - `calls` [EXTRACTED]
+- [[generate_presentation()]] - `calls` [EXTRACTED]
+- [[generate_social()]] - `calls` [EXTRACTED]
+- [[generate_svg_logos()]] - `calls` [EXTRACTED]
+- [[generate_variants()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_164
+#graphify/code #graphify/EXTRACTED #community/scripts/generate_branding_assetspy

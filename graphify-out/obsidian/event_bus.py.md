@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "CLI & Core Gateway Routes"
+community: "Approval & FastAPI Ingest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Approval__FastAPI_Ingest
 ---
 
 # event_bus.py
@@ -22,4 +22,4 @@ tags:
 - [[make_event()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

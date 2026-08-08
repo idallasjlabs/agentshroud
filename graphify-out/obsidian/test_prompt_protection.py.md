@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "Gateway Config & Lifespan"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Gateway_Security_Module
 ---
 
 # test_prompt_protection.py
@@ -19,4 +19,4 @@ tags:
 - [[prompt_protection()]] - `contains` [EXTRACTED]
 - [[sample_protected_content()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

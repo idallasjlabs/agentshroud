@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_2]] - `imports` [EXTRACTED]
-- [[ApprovalStore_1]] - `imports` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `imports` [EXTRACTED]
-- [[MCPProxy]] - `imports` [EXTRACTED]
+- [[ApprovalRequest]] - `imports` [EXTRACTED]
+- [[ApprovalStore_1]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `implements` [EXTRACTED]
+- [[MCPProxy]] - `references` [EXTRACTED]
 - [[MCPToolCall]] - `imports` [EXTRACTED]
 - [[TestApprovalWorkflow]] - `contains` [EXTRACTED]
 - [[TestMCPProxyIntegration]] - `contains` [EXTRACTED]

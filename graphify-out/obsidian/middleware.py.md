@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
+community: "Egress & RBAC Security Core"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # middleware.py
@@ -63,8 +63,11 @@ tags:
 - [[ToolTier]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[XMLLeakFilter]] - `imports` [EXTRACTED]
+- [[i-sec-defense Blue Team Security Auditor]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[normalize_input()]] - `imports` [EXTRACTED]
+- [[test_main_endpoints.py]] - `references` [EXTRACTED]
+- [[test_middleware_coverage.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

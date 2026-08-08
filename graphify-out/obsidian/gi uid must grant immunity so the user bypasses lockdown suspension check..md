@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Module Group 69"
-location: "L8290"
+community: "Telegram Inbound Tests"
+location: "L8289"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_69
+  - community/Telegram_Inbound_Tests
 ---
 
 # /gi <uid> must grant immunity so the user bypasses lockdown suspension check.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_grant_immunity_bypasses_suspension()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_69
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Tests

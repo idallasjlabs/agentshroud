@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/gateway/requirements.txt"
+source_file: "gateway/requirements.txt"
 type: "document"
-community: "Module Group 499"
+community: "gateway/requirements.txt"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_499
+  - community/gateway/requirementstxt
 ---
 
 # requirements.txt — Gateway Python Dependencies
@@ -14,4 +14,4 @@ tags:
 - [[Concept FastAPI + Uvicorn + Pydantic Gateway Stack]] - `defines` [EXTRACTED]
 - [[Concept Microsoft Presidio PII Detection Engine]] - `depends_on` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_499
+#graphify/document #graphify/EXTRACTED #community/gateway/requirementstxt

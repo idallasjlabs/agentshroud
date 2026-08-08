@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "PII Sanitizer & Resource Guard"
+community: "LLM Proxy Resource Guard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer__Resource_Guard
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # resource_guard.py
@@ -15,7 +15,10 @@ tags:
 - [[ResourceGuard]] - `contains` [EXTRACTED]
 - [[ResourceLimits]] - `contains` [EXTRACTED]
 - [[ResourceUsage]] - `contains` [EXTRACTED]
+- [[VRAMHeadroomError]] - `contains` [EXTRACTED]
 - [[get_resource_guard()]] - `contains` [EXTRACTED]
 - [[setup_resource_guard()]] - `contains` [EXTRACTED]
+- [[test_llm_proxy_local_parity.py]] - `references` [EXTRACTED]
+- [[test_resource_guard_limits.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer__Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Module Group 73"
-location: "L440"
+community: "Gateway Test Suite"
+location: "L490"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_73
+  - community/Gateway_Test_Suite
 ---
 
 # test_streaming_tool_acl_allows_permitted_tool()
@@ -18,4 +18,4 @@ tags:
 - [[_FakeToolACL]] - `calls` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_73
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

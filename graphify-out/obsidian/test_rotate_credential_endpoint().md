@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "Module Group 93"
-location: "L506"
+community: "Gateway Test Suite"
+location: "L505"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_93
+  - community/Gateway_Test_Suite
 ---
 
 # test_rotate_credential_endpoint()
@@ -15,4 +15,4 @@ tags:
 - [[Test the POST managecredentialsrotate{credential_id} endpoint.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_93
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

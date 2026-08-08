@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "Module Group 82"
+community: "gateway/runtime"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_82
+  - community/gateway/runtime
 ---
 
 # engine.py
@@ -15,9 +15,9 @@ tags:
 - [[ABC]] - `imports_from` [EXTRACTED]
 - [[ContainerEngine_2]] - `contains` [EXTRACTED]
 - [[ContainerInfo_2]] - `contains` [EXTRACTED]
-- [[__init__.py_7]] - `re_exports` [EXTRACTED]
+- [[__init__.py_8]] - `re_exports` [EXTRACTED]
 - [[apple_engine.py]] - `imports_from` [EXTRACTED]
 - [[docker_engine.py]] - `imports_from` [EXTRACTED]
 - [[podman_engine.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_82
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime

@@ -1,18 +1,22 @@
 ---
-source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Module Group 550"
-location: "L32"
+community: "Gateway Skills System"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_550
+  - community/Gateway_Skills_System
 ---
 
 # main()
 
 ## Connections
-- [[generate_image.py]] - `contains` [EXTRACTED]
-- [[get_api_key()]] - `calls` [EXTRACTED]
+- [[Path_21]] - `calls` [EXTRACTED]
+- [[SkillGuard]] - `calls` [EXTRACTED]
+- [[SkillGuard.scan_skill_tree()]] - `calls` [EXTRACTED]
+- [[_build_tree()]] - `calls` [EXTRACTED]
+- [[_print_findings()]] - `calls` [EXTRACTED]
+- [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_550
+#graphify/code #graphify/EXTRACTED #community/Gateway_Skills_System

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Module Group 114"
+community: "Gateway Test Suite"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_114
+  - community/Gateway_Test_Suite
 ---
 
 # generate_report()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.test_generate_report()_1]] - `calls` [EXTRACTED]
 - [[.test_history_persistence()]] - `calls` [EXTRACTED]
-- [[Any_37]] - `references` [EXTRACTED]
+- [[Any_39]] - `references` [EXTRACTED]
 - [[Generate a full health report.      Args         summaries Dict mapping tool n]] - `rationale_for` [EXTRACTED]
 - [[Path_12]] - `references` [EXTRACTED]
 - [[calculate_overall_score()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[score_to_grade()]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_114
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

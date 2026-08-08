@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "CLI & Core Gateway Routes"
+community: "Gateway Test Suite"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Gateway_Test_Suite
 ---
 
 # create_auth_dependency()
@@ -31,4 +31,4 @@ tags:
 - [[test_auth_dependency_missing_header()]] - `calls` [EXTRACTED]
 - [[test_auth_dependency_valid_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

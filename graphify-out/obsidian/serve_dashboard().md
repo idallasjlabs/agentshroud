@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Dashboard Routes & WebSocket"
+community: "Gateway Test Suite"
 location: "L453"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Routes__WebSocket
+  - community/Gateway_Test_Suite
 ---
 
 # serve_dashboard()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[JSONResponse]] - `calls` [INFERRED]
 - [[Path_2]] - `calls` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
+- [[Request_5]] - `references` [EXTRACTED]
 - [[Serve the dashboard HTML (requires auth via query param or cookie)      On first]] - `rationale_for` [EXTRACTED]
 - [[dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Routes__WebSocket
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

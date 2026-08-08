@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "code"
-community: "Module Group 278"
-location: "L96"
+community: "Gateway Test Suite"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_278
+  - community/Gateway_Test_Suite
 ---
 
 # test_bots_cron_prompts_exclude_short_uids()
@@ -17,4 +17,4 @@ tags:
 - [[_load_jobs()]] - `calls` [EXTRACTED]
 - [[test_cron_jobs_prompts.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_278
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

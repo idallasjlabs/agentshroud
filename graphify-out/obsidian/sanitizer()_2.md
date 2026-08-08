@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Security Pipeline & Audit Chain"
-location: "L50"
+community: "PII Sanitizer Pipeline"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Pipeline__Audit_Chain
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # sanitizer()
@@ -15,4 +15,4 @@ tags:
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Pipeline__Audit_Chain
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "Module Group 229"
+community: "Gateway Test Suite"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_229
+  - community/Gateway_Test_Suite
 ---
 
 # detect_runtime()
@@ -18,7 +18,7 @@ tags:
 - [[.test_detect_none()]] - `calls` [EXTRACTED]
 - [[.test_detect_podman()]] - `calls` [EXTRACTED]
 - [[Auto-detect which container runtimes are available on this system.]] - `rationale_for` [EXTRACTED]
-- [[__init__.py_7]] - `contains` [EXTRACTED]
+- [[__init__.py_8]] - `contains` [EXTRACTED]
 - [[api.py]] - `imports` [EXTRACTED]
 - [[check_prerequisites()]] - `calls` [EXTRACTED]
 - [[get_engine()]] - `calls` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[installer.py]] - `imports` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_229
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

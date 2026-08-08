@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_anthropic_openai_translator.py"
 type: "code"
-community: "Module Group 101"
-location: "L277"
+community: "Gateway Test Suite"
+location: "L276"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_101
+  - community/Gateway_Test_Suite
 ---
 
 # test_sse_translator_empty_stream_emits_full_sequence()
@@ -15,4 +15,4 @@ tags:
 - [[_collect_sse()]] - `calls` [EXTRACTED]
 - [[test_anthropic_openai_translator.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_101
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

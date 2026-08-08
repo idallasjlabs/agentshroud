@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/tailscale-serve.sh"
+source_file: "docker/bots/hermes/run-standalone.sh"
 type: "code"
-community: "Module Group 520"
-location: "L71"
+community: "Bot Container Scripts"
+location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_520
+  - community/Bot_Container_Scripts
 ---
 
 # cmd_status()
 
 ## Connections
-- [[tailscale-serve.sh]] - `defines` [EXTRACTED]
-- [[tailscale-serve.sh script]] - `calls` [EXTRACTED]
+- [[run-standalone.sh]] - `defines` [EXTRACTED]
+- [[run-standalone.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_520
+#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Module Group 213"
-location: "L2615"
+community: "Bot CVE Scorecard"
+location: "L2617"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_213
+  - community/Bot_CVE_Scorecard
 ---
 
 # compute_bot_scorecard()
@@ -27,11 +27,11 @@ tags:
 - [[.test_risk_level_yellow_50_to_79()]] - `calls` [EXTRACTED]
 - [[.test_score_clamped_to_hundred()]] - `calls` [EXTRACTED]
 - [[.test_score_clamped_to_zero()]] - `calls` [EXTRACTED]
-- [[Any_51]] - `references` [EXTRACTED]
+- [[Any_55]] - `references` [EXTRACTED]
 - [[Per-bot scorecard scoped to a single bot's image scan and egress stats.      Sco]] - `rationale_for` [EXTRACTED]
 - [[get_security_scorecard()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_213
+#graphify/code #graphify/EXTRACTED #community/Bot_CVE_Scorecard

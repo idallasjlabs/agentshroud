@@ -1,13 +1,13 @@
 ---
 source_file: "docs/security/history-purge-plan.md"
 type: "document"
-community: "Module Group 790"
+community: "Security Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_790
+  - community/Security_Docs
 ---
 
 # history-purge-plan.md (git history purge before public repo)
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_790
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

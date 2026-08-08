@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "Environment Guard & Leak Detection"
-location: "L40"
+community: "File Sandbox"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - community/File_Sandbox
 ---
 
 # strict_sandbox()
@@ -16,4 +16,4 @@ tags:
 - [[Sandbox with separation of privilege enforcement.]] - `rationale_for` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox

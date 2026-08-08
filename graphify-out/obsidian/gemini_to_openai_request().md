@@ -1,21 +1,23 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "code"
-community: "Module Group 178"
+community: "Gateway Test Suite"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_178
+  - community/Gateway_Test_Suite
 ---
 
 # gemini_to_openai_request()
 
 ## Connections
 - [[._failover_request()]] - `calls` [EXTRACTED]
+- [[LLMProxy._failover_request()]] - `calls` [EXTRACTED]
 - [[Translate a Gemini generateContent request body to OpenAI chat format.      Retu]] - `rationale_for` [EXTRACTED]
 - [[_parts_to_text()]] - `calls` [EXTRACTED]
 - [[_system_instruction_text()]] - `calls` [EXTRACTED]
+- [[anthropic_to_openai_request()]] - `semantically_similar_to` [INFERRED]
 - [[gemini_openai_translator.py]] - `contains` [EXTRACTED]
 - [[llm_proxy.py]] - `imports` [EXTRACTED]
 - [[test_gemini_basic_text_request()]] - `calls` [EXTRACTED]
@@ -28,4 +30,4 @@ tags:
 - [[test_gemini_role_mapping_model_to_assistant()]] - `calls` [EXTRACTED]
 - [[test_gemini_system_instruction_snake_case_and_string()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_178
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Module Group 73"
-location: "L348"
+community: "Gateway Test Suite"
+location: "L398"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_73
+  - community/Gateway_Test_Suite
 ---
 
 # test_credential_injector_not_applied_for_non_anthropic_dest()
@@ -19,4 +19,4 @@ tags:
 - [[_make_fake_urlopen()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_73
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
-community: "Module Group 245"
-location: "L23"
+community: "Gateway Test Suite"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_245
+  - community/Gateway_Test_Suite
 ---
 
 # load_baseline()
@@ -15,4 +15,4 @@ tags:
 - [[.setup_method()]] - `calls` [EXTRACTED]
 - [[test_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_245
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

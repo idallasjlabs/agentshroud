@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Module Group 294"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_294
+  - community/Gateway_Test_Suite
 ---
 
 # test_scorecard_scoring.py
@@ -40,4 +40,4 @@ tags:
 - [[not_run_trivy()]] - `contains` [EXTRACTED]
 - [[scanner_integration.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_294
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

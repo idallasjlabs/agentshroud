@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Module Group 93"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_93
+  - community/Gateway_Test_Suite
 ---
 
 # key_rotation.py
@@ -19,8 +19,8 @@ tags:
 - [[KeyRotationConfig_1]] - `imports` [EXTRACTED]
 - [[KeyRotationManager]] - `contains` [EXTRACTED]
 - [[RotationStatus]] - `contains` [EXTRACTED]
-- [[datetime_2]] - `imports_from` [EXTRACTED]
+- [[datetime_3]] - `imports_from` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports_from` [EXTRACTED]
 - [[key_rotation_config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_93
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

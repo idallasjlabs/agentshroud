@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "code"
-community: "Pipeline Action & Instruction Envelope"
+community: "Cross-Bot Trust Ledger"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pipeline_Action__Instruction_Envelope
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # test_instruction_envelope.py
@@ -17,4 +17,4 @@ tags:
 - [[TestEnvelopeSigner]] - `contains` [EXTRACTED]
 - [[signer()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pipeline_Action__Instruction_Envelope
+#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger

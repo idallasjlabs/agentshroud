@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "rationale"
-community: "Module Group 100"
+community: "Gateway Test Suite"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_100
+  - community/Gateway_Test_Suite
 ---
 
 # stats() returns the expected keys.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_stats_returns_counts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_100
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

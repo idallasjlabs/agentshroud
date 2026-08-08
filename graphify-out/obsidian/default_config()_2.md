@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_file_sandbox.py"
+source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "Environment Guard & Leak Detection"
-location: "L19"
+community: "Egress & RBAC Security Core"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - community/Egress__RBAC_Security_Core
 ---
 
 # default_config()
 
 ## Connections
-- [[FileSandboxConfig]] - `calls` [EXTRACTED]
-- [[test_file_sandbox.py]] - `contains` [EXTRACTED]
+- [[EgressMonitorConfig]] - `calls` [EXTRACTED]
+- [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

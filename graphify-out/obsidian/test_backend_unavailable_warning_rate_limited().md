@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Module Group 73"
-location: "L551"
+community: "Gateway Test Suite"
+location: "L601"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_73
+  - community/Gateway_Test_Suite
 ---
 
 # test_backend_unavailable_warning_rate_limited()
@@ -16,4 +16,4 @@ tags:
 - [[Repeated connect failures log one WARNING per window, not per request.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_73
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "code"
-community: "Module Group 511"
+community: "docs/vault"
 location: "gateway/proxy/mcp_config.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_511
+  - community/docs/vault
 ---
 
 # mcp_config.py — MCP Proxy Configuration
@@ -15,4 +15,4 @@ tags:
 - [[MCPProxyConfig_4]] - `defines` [EXTRACTED]
 - [[PermissionLevel (Enum)]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_511
+#graphify/code #graphify/EXTRACTED #community/docs/vault

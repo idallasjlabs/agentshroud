@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/video-frames/SKILL.md"
 type: "concept"
-community: "Module Group 665"
+community: "skills/openclaw"
 location: "line 1-3"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_665
+  - community/skills/openclaw
 ---
 
 # ffmpeg Frame Extraction
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw video-frames Skill]] - `uses` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_665
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "rationale"
-community: "Module Group 100"
+community: "Gateway Test Suite"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_100
+  - community/Gateway_Test_Suite
 ---
 
 # stats() — verify blocked/allowlist/denylist counts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestStats]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_100
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

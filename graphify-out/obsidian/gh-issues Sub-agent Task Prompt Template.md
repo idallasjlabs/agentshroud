@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Module Group 423"
+community: "skills/openclaw"
 location: "lines 329-493"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_423
+  - community/skills/openclaw
 ---
 
 # gh-issues Sub-agent Task Prompt Template
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Skill gh-issues (GitHub auto-fix orchestrator)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_423
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

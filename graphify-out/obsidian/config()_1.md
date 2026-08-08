@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_permissions.py"
+source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "MCP Config & Proxy"
-location: "L69"
+community: "Kill Switch Config"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Config__Proxy
+  - community/Kill_Switch_Config
 ---
 
 # config()
 
 ## Connections
-- [[MCPProxyConfig]] - `calls` [EXTRACTED]
-- [[MCPServerConfig]] - `calls` [EXTRACTED]
-- [[MCPToolConfig]] - `calls` [EXTRACTED]
-- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
+- [[KillSwitchConfig]] - `calls` [EXTRACTED]
+- [[KillSwitchConfig_1]] - `calls` [INFERRED]
+- [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Config__Proxy
+#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Config

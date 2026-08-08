@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "Module Group 219"
-location: "L58"
+community: "scripts/generate_branding_assets.py"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_219
+  - community/scripts/generate_branding_assetspy
 ---
 
 # ensure()
 
 ## Connections
-- [[Path_31]] - `references` [EXTRACTED]
+- [[Path_42]] - `references` [EXTRACTED]
 - [[generate_branding_assets.py]] - `contains` [EXTRACTED]
 - [[generate_email()]] - `calls` [EXTRACTED]
 - [[generate_favicons()]] - `calls` [EXTRACTED]
@@ -22,6 +22,6 @@ tags:
 - [[generate_social()]] - `calls` [EXTRACTED]
 - [[generate_svg_logos()]] - `calls` [EXTRACTED]
 - [[generate_variants()]] - `calls` [EXTRACTED]
-- [[save()]] - `calls` [EXTRACTED]
+- [[save()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_219
+#graphify/code #graphify/EXTRACTED #community/scripts/generate_branding_assetspy

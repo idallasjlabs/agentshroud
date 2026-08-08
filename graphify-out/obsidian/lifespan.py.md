@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Gateway Config & Lifespan"
+community: "Approval & FastAPI Ingest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Approval__FastAPI_Ingest
 ---
 
 # lifespan.py
@@ -15,6 +15,7 @@ tags:
 - [[NOTE Gateway-side Slack Socket Mode listener removed.]] - `rationale_for` [EXTRACTED]
 - [[AgentRegistry]] - `imports` [EXTRACTED]
 - [[AlertDispatcher]] - `imports` [EXTRACTED]
+- [[AlertTelegramRelay]] - `imports` [EXTRACTED]
 - [[ApprovalStore_1]] - `imports` [EXTRACTED]
 - [[AuditStore_1]] - `imports` [EXTRACTED]
 - [[CanaryTripwire]] - `imports` [EXTRACTED]
@@ -22,9 +23,14 @@ tags:
 - [[ConfigIntegrityMonitor]] - `imports` [EXTRACTED]
 - [[ContainerConfig]] - `imports` [EXTRACTED]
 - [[ContextIntegrityScorer]] - `imports` [EXTRACTED]
+- [[CronStateMonitor]] - `imports` [EXTRACTED]
+- [[CrossBotTrustLedger]] - `imports` [EXTRACTED]
 - [[DNSBlocklist]] - `imports` [EXTRACTED]
+- [[DataExfilVolumeConfig]] - `imports` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `imports` [EXTRACTED]
 - [[DataLedger]] - `imports` [EXTRACTED]
 - [[DelegationManager]] - `imports` [EXTRACTED]
+- [[DifferentialPIIDetector]] - `imports` [EXTRACTED]
 - [[DriftDetector]] - `imports` [EXTRACTED]
 - [[EgressApprovalQueue]] - `imports` [EXTRACTED]
 - [[EgressFilter_1]] - `imports` [EXTRACTED]
@@ -36,7 +42,7 @@ tags:
 - [[EnvelopeSigner]] - `imports` [EXTRACTED]
 - [[EventBus]] - `imports` [EXTRACTED]
 - [[FalcoAlertWatcher]] - `imports` [EXTRACTED]
-- [[FastAPI_1]] - `imports_from` [EXTRACTED]
+- [[FastAPI_2]] - `imports_from` [EXTRACTED]
 - [[GroupRegistry]] - `imports` [EXTRACTED]
 - [[HTTPConnectProxy]] - `imports` [EXTRACTED]
 - [[HeuristicClassifier]] - `imports` [EXTRACTED]
@@ -46,6 +52,8 @@ tags:
 - [[KeyVaultConfig]] - `imports` [EXTRACTED]
 - [[KillSwitchMonitor]] - `imports` [EXTRACTED]
 - [[LLMProxy]] - `imports` [EXTRACTED]
+- [[MCPPolicyConfig]] - `imports` [EXTRACTED]
+- [[MCPPolicyEngine]] - `imports` [EXTRACTED]
 - [[MCPProxy]] - `imports` [EXTRACTED]
 - [[MCPProxyConfig]] - `imports` [EXTRACTED]
 - [[MemoryIntegrityConfig]] - `imports` [EXTRACTED]
@@ -64,17 +72,21 @@ tags:
 - [[PromptGuard]] - `imports` [EXTRACTED]
 - [[PromptProtection]] - `imports` [EXTRACTED]
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
+- [[RateLimitConfig]] - `imports` [EXTRACTED]
+- [[RateLimitGuard]] - `imports` [EXTRACTED]
+- [[ReportStore]] - `imports` [EXTRACTED]
 - [[SSHProxy]] - `imports` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[ToolACLEnforcer]] - `imports` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[WebProxy_1]] - `imports` [EXTRACTED]
 - [[WebProxyConfig]] - `imports` [EXTRACTED]
 - [[XMLLeakFilter]] - `imports` [EXTRACTED]
 - [[_DropInvalidHTTPRequestFilter]] - `contains` [EXTRACTED]
+- [[_build_per_bot_telegram_tokens()]] - `contains` [EXTRACTED]
 - [[_install_uvicorn_warning_filter()]] - `contains` [EXTRACTED]
 - [[_is_fixture_uid()]] - `imports` [EXTRACTED]
 - [[agent_isolation.py]] - `imports_from` [EXTRACTED]
@@ -83,6 +95,7 @@ tags:
 - [[check_monitor_mode_warnings()]] - `imports` [EXTRACTED]
 - [[clamav_scanner.py]] - `imports_from` [EXTRACTED]
 - [[config.py]] - `imports_from` [EXTRACTED]
+- [[config_watcher()]] - `imports` [EXTRACTED]
 - [[cve_report_scheduler()]] - `imports` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `imports_from` [EXTRACTED]
 - [[dns_blocklist.py]] - `imports_from` [EXTRACTED]
@@ -95,6 +108,7 @@ tags:
 - [[get_module_mode()]] - `imports` [EXTRACTED]
 - [[get_trivy_summary()]] - `imports` [EXTRACTED]
 - [[get_wazuh_summary()]] - `imports` [EXTRACTED]
+- [[ghsa_ingest_scheduler()]] - `imports` [EXTRACTED]
 - [[health_report.py]] - `imports_from` [EXTRACTED]
 - [[http_proxy.py]] - `imports_from` [EXTRACTED]
 - [[install_log_handler()]] - `imports` [EXTRACTED]
@@ -110,6 +124,8 @@ tags:
 - [[pipeline.py]] - `imports_from` [EXTRACTED]
 - [[prompt_guard.py]] - `imports_from` [EXTRACTED]
 - [[proxy.py]] - `imports_from` [EXTRACTED]
+- [[resolve_config_path()]] - `imports` [EXTRACTED]
+- [[resolve_enforcement_mode()]] - `imports` [EXTRACTED]
 - [[router.py]] - `imports_from` [EXTRACTED]
 - [[run_canary()]] - `imports` [EXTRACTED]
 - [[sanitizer.py]] - `imports_from` [EXTRACTED]
@@ -126,4 +142,4 @@ tags:
 - [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

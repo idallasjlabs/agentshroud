@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Module Group 282"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_282
+  - community/Gateway_Security_Module
 ---
 
 # test_outbound_filter.py
@@ -19,4 +19,4 @@ tags:
 - [[TestIntegration]] - `contains` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_282
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

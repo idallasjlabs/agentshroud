@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Module Group 72"
-location: "L114"
+community: "Gateway Test Suite"
+location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_72
+  - community/Gateway_Test_Suite
 ---
 
 # test_egress_blocks_unknown_domain()
@@ -15,4 +15,4 @@ tags:
 - [[Probe 1.6 EgressFilter must block non-allowlisted domains.]] - `rationale_for` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_72
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

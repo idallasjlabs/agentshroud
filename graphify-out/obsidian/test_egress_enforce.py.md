@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "Module Group 240"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_240
+  - community/Gateway_Test_Suite
 ---
 
 # test_egress_enforce.py
@@ -21,4 +21,4 @@ tags:
 - [[get_egress_config()]] - `imports` [EXTRACTED]
 - [[set_egress_config()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_240
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

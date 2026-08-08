@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Module Group 169"
-location: "L57"
+community: "Gateway Test Suite"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_169
+  - community/Gateway_Test_Suite
 ---
 
 # format_cve_report()
@@ -23,11 +23,11 @@ tags:
 - [[.test_status_critical_when_critical_present()]] - `calls` [EXTRACTED]
 - [[.test_total_vulnerability_count_shown()]] - `calls` [EXTRACTED]
 - [[.test_zero_count_severity_omitted()]] - `calls` [EXTRACTED]
-- [[Any_33]] - `references` [EXTRACTED]
+- [[Any_35]] - `references` [EXTRACTED]
 - [[Format a Trivy scan result into a Telegram-ready Markdown message.      Args]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
 - [[generate_summary()_2]] - `calls` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_169
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

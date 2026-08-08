@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/skill.json"
 type: "code"
-community: "Module Group 299"
+community: "Custom Skills"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_299
+  - community/Custom_Skills
 ---
 
 # requiresApproval
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_299
+#graphify/code #graphify/EXTRACTED #community/Custom_Skills

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "Module Group 219"
-location: "L497"
+community: "scripts/generate_branding_assets.py"
+location: "L492"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_219
+  - community/scripts/generate_branding_assetspy
 ---
 
 # generate_svg_logos()
@@ -15,6 +15,6 @@ tags:
 - [[Create SVG files that embed the logo PNGs as base64 data URIs.      These are sc]] - `rationale_for` [EXTRACTED]
 - [[ensure()]] - `calls` [EXTRACTED]
 - [[generate_branding_assets.py]] - `contains` [EXTRACTED]
-- [[main()_6]] - `calls` [EXTRACTED]
+- [[main()_15]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_219
+#graphify/code #graphify/EXTRACTED #community/scripts/generate_branding_assetspy

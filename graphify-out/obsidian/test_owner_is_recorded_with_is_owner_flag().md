@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "Module Group 104"
-location: "L57"
+community: "Gateway Test Suite"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_104
+  - community/Gateway_Test_Suite
 ---
 
 # test_owner_is_recorded_with_is_owner_flag()
@@ -15,4 +15,4 @@ tags:
 - [[Owner messages are now recorded with is_owner=True (not silently dropped).]] - `rationale_for` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_104
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

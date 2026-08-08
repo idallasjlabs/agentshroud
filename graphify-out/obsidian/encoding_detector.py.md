@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "Security Pipeline & Audit Chain"
+community: "PII Sanitizer Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Pipeline__Audit_Chain
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # encoding_detector.py
@@ -16,5 +16,8 @@ tags:
 - [[EncodingConfig]] - `contains` [EXTRACTED]
 - [[EncodingDetector]] - `contains` [EXTRACTED]
 - [[EncodingResult]] - `contains` [EXTRACTED]
+- [[differential_pii_detector.py]] - `semantically_similar_to` [INFERRED]
+- [[i-sec-defense Blue Team Security Auditor]] - `references` [EXTRACTED]
+- [[i-sec-offense Red Team Adversarial Tester]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Pipeline__Audit_Chain
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

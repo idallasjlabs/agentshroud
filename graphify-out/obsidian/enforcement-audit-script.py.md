@@ -1,12 +1,12 @@
 ---
-source_file: "docs/reviews/enforcement-audit-script.py"
+source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
+community: "Egress & RBAC Security Core"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # enforcement-audit-script.py
@@ -37,14 +37,14 @@ tags:
 - [[Role_1]] - `imports` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[XMLLeakFilter]] - `imports` [EXTRACTED]
 - [[fail()_2]] - `contains` [EXTRACTED]
 - [[key_rotation.py]] - `imports_from` [EXTRACTED]
 - [[memory_lifecycle.py]] - `imports_from` [EXTRACTED]
 - [[ok()]] - `contains` [EXTRACTED]
-- [[run()]] - `contains` [EXTRACTED]
+- [[run()_3]] - `contains` [EXTRACTED]
 - [[warn()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/security-scan.sh"
 type: "code"
-community: "Module Group 463"
+community: "scripts/security-scan.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_463
+  - community/scripts/security-scansh
 ---
 
 # security-scan.sh script
@@ -16,6 +16,6 @@ tags:
 - [[info()_1]] - `calls` [EXTRACTED]
 - [[security-scan.sh_1]] - `contains` [EXTRACTED]
 - [[success()]] - `calls` [EXTRACTED]
-- [[warn()_2]] - `calls` [EXTRACTED]
+- [[warn()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_463
+#graphify/code #graphify/EXTRACTED #community/scripts/security-scansh

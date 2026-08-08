@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gmail_credential_retrieval.py"
 type: "code"
-community: "Module Group 196"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_196
+  - community/Gateway_Test_Suite
 ---
 
 # test_gmail_credential_retrieval.py
@@ -17,4 +17,4 @@ tags:
 - [[_completed()]] - `contains` [EXTRACTED]
 - [[_get_gmail_app_password()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_196
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

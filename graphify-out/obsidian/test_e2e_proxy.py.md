@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Sidecar Security Scanner"
+community: "HTTP Forwarder"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sidecar_Security_Scanner
+  - community/HTTP_Forwarder
 ---
 
 # test_e2e_proxy.py
@@ -26,7 +26,7 @@ tags:
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[SidecarScanner]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
 - [[_PassInboundPipeline]] - `contains` [EXTRACTED]
 - [[_StubForwarder]] - `contains` [EXTRACTED]
@@ -65,4 +65,4 @@ tags:
 - [[test_webhook_strips_pii()]] - `contains` [EXTRACTED]
 - [[trust_manager()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sidecar_Security_Scanner
+#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder

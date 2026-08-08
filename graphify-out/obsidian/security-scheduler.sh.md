@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-scheduler.sh"
 type: "code"
-community: "Module Group 518"
+community: "Docker Deploy Scripts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_518
+  - community/Docker_Deploy_Scripts
 ---
 
 # security-scheduler.sh
@@ -14,7 +14,8 @@ tags:
 ## Connections
 - [[_stamp_read()]] - `defines` [EXTRACTED]
 - [[_stamp_write()]] - `defines` [EXTRACTED]
+- [[gateway-seccomp.json (Docker seccomp profile)]] - `conceptually_related_to` [AMBIGUOUS]
 - [[log()_4]] - `defines` [EXTRACTED]
 - [[security-scheduler.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_518
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

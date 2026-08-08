@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_auth.py"
 type: "code"
-community: "SOC Authentication"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Authentication
+  - community/Gateway_Test_Suite
 ---
 
 # test_soc_auth.py
@@ -19,4 +19,4 @@ tags:
 - [[issue_ws_token()]] - `imports` [EXTRACTED]
 - [[redeem_ws_token()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Authentication
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

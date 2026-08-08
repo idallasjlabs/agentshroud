@@ -1,18 +1,19 @@
 ---
 source_file: "scripts/tailscale-serve.sh"
 type: "code"
-community: "Module Group 520"
-location: "L36"
+community: "scripts/tailscale-serve.sh"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_520
+  - community/scripts/tailscale-servesh
 ---
 
 # cmd_start()
 
 ## Connections
+- [[cmd_persist()]] - `calls` [EXTRACTED]
 - [[tailscale-serve.sh]] - `defines` [EXTRACTED]
 - [[tailscale-serve.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_520
+#graphify/code #graphify/EXTRACTED #community/scripts/tailscale-servesh

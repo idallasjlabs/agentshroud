@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Module Group 102"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_102
+  - community/Gateway_Test_Suite
 ---
 
 # consent_framework.py
@@ -19,4 +19,4 @@ tags:
 - [[ShellInjectionDetected]] - `contains` [EXTRACTED]
 - [[test_consent_framework.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_102
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

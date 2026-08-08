@@ -1,46 +1,23 @@
 ---
-source_file: "docs/reviews/enforcement-audit-script.py"
+source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
-location: "L12"
+community: "Bot Skill Config"
+location: "L321"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Bot_Skill_Config
 ---
 
 # run()
 
 ## Connections
-- [[ApprovalHardening]] - `calls` [EXTRACTED]
-- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
-- [[ApprovalQueue]] - `calls` [INFERRED]
-- [[AuditStore_1]] - `calls` [EXTRACTED]
-- [[CanaryTripwire]] - `calls` [EXTRACTED]
-- [[ContextGuard]] - `calls` [EXTRACTED]
-- [[EgressFilter_1]] - `calls` [EXTRACTED]
-- [[EgressFilterConfig_1]] - `calls` [EXTRACTED]
-- [[EncodingDetector]] - `calls` [EXTRACTED]
-- [[FileSandbox]] - `calls` [EXTRACTED]
-- [[FileSandboxConfig]] - `calls` [EXTRACTED]
-- [[GitGuard]] - `calls` [EXTRACTED]
-- [[MiddlewareManager]] - `calls` [EXTRACTED]
-- [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[Path_14]] - `calls` [EXTRACTED]
-- [[PathIsolationConfig]] - `calls` [EXTRACTED]
-- [[PathIsolationManager]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
-- [[PromptProtection]] - `calls` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[RBACManager_1]] - `calls` [EXTRACTED]
-- [[SecurityPipeline]] - `calls` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
-- [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[XMLLeakFilter]] - `calls` [EXTRACTED]
-- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
-- [[fail()_2]] - `calls` [EXTRACTED]
-- [[ok()]] - `calls` [EXTRACTED]
-- [[warn()_1]] - `calls` [EXTRACTED]
+- [[Parse argv, resolve credentials, dispatch the subcommand. Returns exit code.]] - `rationale_for` [EXTRACTED]
+- [[_build_arg_parser()]] - `calls` [EXTRACTED]
+- [[add_comment()]] - `calls` [EXTRACTED]
+- [[create_issue()]] - `calls` [EXTRACTED]
+- [[fetch_credentials()]] - `calls` [EXTRACTED]
+- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
+- [[transition_issue()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

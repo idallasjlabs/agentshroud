@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Gateway Config & Lifespan"
+community: "Approval & FastAPI Ingest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Approval__FastAPI_Ingest
 ---
 
 # dashboard_endpoints.py
@@ -25,7 +25,7 @@ tags:
 - [[logs_recent()]] - `contains` [EXTRACTED]
 - [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[proxy_status()_1]] - `contains` [EXTRACTED]
-- [[require_auth()]] - `imports` [EXTRACTED]
+- [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[ssh_hosts()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

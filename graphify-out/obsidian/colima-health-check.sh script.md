@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "Module Group 462"
+community: "Docker Deploy Scripts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_462
+  - community/Docker_Deploy_Scripts
 ---
 
 # colima-health-check.sh script
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[colima-health-check.sh]] - `contains` [EXTRACTED]
 - [[log()]] - `calls` [EXTRACTED]
-- [[notify()]] - `calls` [EXTRACTED]
+- [[notify()_1]] - `calls` [EXTRACTED]
 - [[write_state()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_462
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

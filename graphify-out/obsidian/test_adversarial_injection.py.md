@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "Module Group 159"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_159
+  - community/Gateway_Test_Suite
 ---
 
 # test_adversarial_injection.py
@@ -29,4 +29,4 @@ tags:
 - [[_prompt_guard_detects()]] - `contains` [EXTRACTED]
 - [[normalize_input()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_159
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

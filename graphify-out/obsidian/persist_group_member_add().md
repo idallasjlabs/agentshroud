@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Module Group 208"
-location: "L265"
+community: "Collaborator Response Templates"
+location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_208
+  - community/Collaborator_Response_Templates
 ---
 
 # persist_group_member_add()
@@ -21,4 +21,4 @@ tags:
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_208
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates

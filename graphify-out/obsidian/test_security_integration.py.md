@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Module Group 216"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_216
+  - community/Gateway_Test_Suite
 ---
 
 # test_security_integration.py
@@ -27,14 +27,14 @@ tags:
 - [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
-- [[RouterConfig]] - `imports` [EXTRACTED]
+- [[RouterConfig_1]] - `imports` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[TrustManager]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[approval_queue()_1]] - `contains` [EXTRACTED]
 - [[egress_filter()_1]] - `contains` [EXTRACTED]
 - [[encrypted_store()]] - `contains` [EXTRACTED]
 - [[full_pipeline_config()]] - `contains` [EXTRACTED]
-- [[ledger()_1]] - `contains` [EXTRACTED]
+- [[ledger()_2]] - `contains` [EXTRACTED]
 - [[prompt_guard()_2]] - `contains` [EXTRACTED]
 - [[sanitizer()_4]] - `contains` [EXTRACTED]
 - [[test_drift_detection_in_pipeline()]] - `contains` [EXTRACTED]
@@ -50,4 +50,4 @@ tags:
 - [[test_trust_insufficient_action_blocked()]] - `contains` [EXTRACTED]
 - [[trust_manager()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_216
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

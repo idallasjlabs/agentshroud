@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Module Group 111"
+community: "URL/Domain Validation Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_111
+  - community/URL/Domain_Validation_Tests
 ---
 
 # test_session_manager.py
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[ConversationMessage]] - `imports` [EXTRACTED]
 - [[TestAccessControl_2]] - `contains` [EXTRACTED]
+- [[TestAtomicRegistryWrites]] - `contains` [EXTRACTED]
 - [[TestConversationHistory]] - `contains` [EXTRACTED]
 - [[TestInputValidation]] - `contains` [EXTRACTED]
 - [[TestMultiBotIsolation]] - `contains` [EXTRACTED]
@@ -25,5 +26,6 @@ tags:
 - [[UserSession]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[mgr()_2]] - `contains` [EXTRACTED]
+- [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_111
+#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Module Group 73"
-location: "L581"
+community: "Gateway Test Suite"
+location: "L631"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_73
+  - community/Gateway_Test_Suite
 ---
 
 # test_cloud_backend_connect_failure_still_returns_502()
@@ -16,4 +16,4 @@ tags:
 - [[LLMProxy]] - `calls` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_73
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

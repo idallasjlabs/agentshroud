@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Module Group 126"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_126
+  - community/Gateway_Test_Suite
 ---
 
 # test_observatory_mode.py
 
 ## Connections
-- [[FastAPI_2]] - `imports_from` [EXTRACTED]
+- [[FastAPI_3]] - `imports_from` [EXTRACTED]
 - [[GatewayConfig_1]] - `imports` [EXTRACTED]
 - [[KillSwitchConfig]] - `imports` [EXTRACTED]
 - [[KillSwitchMonitor]] - `imports` [EXTRACTED]
@@ -27,10 +27,10 @@ tags:
 - [[TestObservatoryModeAPI]] - `contains` [EXTRACTED]
 - [[TestSetMode]] - `contains` [EXTRACTED]
 - [[_make_app()]] - `contains` [EXTRACTED]
-- [[client()_8]] - `contains` [EXTRACTED]
+- [[client()_11]] - `contains` [EXTRACTED]
 - [[get_module_mode()]] - `imports` [EXTRACTED]
-- [[require_auth()]] - `imports` [EXTRACTED]
+- [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[reset_env_and_task()]] - `contains` [EXTRACTED]
 - [[set_mode()_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_126
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

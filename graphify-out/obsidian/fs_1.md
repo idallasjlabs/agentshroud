@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/browser-fetch.js"
+source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Module Group 473"
-location: "L7"
+community: "Bot Skill Config"
+location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_473
+  - community/Bot_Skill_Config
 ---
 
 # fs
 
 ## Connections
-- [[browser-fetch.js]] - `contains` [EXTRACTED]
+- [[apply-patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_473
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

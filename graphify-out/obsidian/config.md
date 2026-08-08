@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/icloud/scripts/calendar.js"
-type: "code"
-community: "Module Group 377"
-location: "L10"
+source_file: "skills/openclaw/summarize/SKILL.md"
+type: "document"
+community: "skills/openclaw"
+location: "L76"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_377
+  - community/skills/openclaw
 ---
 
-# CONFIG
+# Config
 
 ## Connections
-- [[calendar.js]] - `contains` [EXTRACTED]
+- [[Summarize]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_377
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

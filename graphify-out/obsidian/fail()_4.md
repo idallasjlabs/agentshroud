@@ -1,22 +1,18 @@
 ---
-source_file: "scripts/verify-proxy.sh"
+source_file: "scripts/tailscale-check.sh"
 type: "code"
-community: "Module Group 380"
-location: "L23"
+community: "scripts/tailscale-check.sh"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_380
+  - community/scripts/tailscale-checksh
 ---
 
 # fail()
 
 ## Connections
-- [[run_bypass()]] - `calls` [EXTRACTED]
-- [[run_canary()_1]] - `calls` [EXTRACTED]
-- [[run_chain()]] - `calls` [EXTRACTED]
-- [[run_full()]] - `calls` [EXTRACTED]
-- [[run_quick()]] - `calls` [EXTRACTED]
-- [[verify-proxy.sh]] - `defines` [EXTRACTED]
+- [[tailscale-check.sh]] - `defines` [EXTRACTED]
+- [[tailscale-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_380
+#graphify/code #graphify/EXTRACTED #community/scripts/tailscale-checksh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Module Group 208"
-location: "L313"
+community: "Collaborator Response Templates"
+location: "L312"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_208
+  - community/Collaborator_Response_Templates
 ---
 
 # persist_group_create()
@@ -19,4 +19,4 @@ tags:
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_208
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates

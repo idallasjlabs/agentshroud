@@ -1,29 +1,37 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Gateway Config & Lifespan"
-location: "L73"
+community: "Approval & FastAPI Ingest"
+location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Approval__FastAPI_Ingest
 ---
 
 # lifespan()
 
 ## Connections
+- [[._path()]] - `calls` [INFERRED]
 - [[AgentRegistry]] - `calls` [EXTRACTED]
 - [[AlertDispatcher]] - `calls` [EXTRACTED]
+- [[AlertTelegramRelay]] - `calls` [EXTRACTED]
+- [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[ApprovalStore_1]] - `calls` [EXTRACTED]
 - [[AuditStore_1]] - `calls` [EXTRACTED]
 - [[CanaryTripwire]] - `calls` [EXTRACTED]
 - [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
 - [[ConfigIntegrityMonitor]] - `calls` [EXTRACTED]
+- [[ContainerConfig_1]] - `calls` [INFERRED]
 - [[ContainerConfig]] - `calls` [EXTRACTED]
 - [[ContextIntegrityScorer]] - `calls` [EXTRACTED]
+- [[CronStateMonitor]] - `calls` [EXTRACTED]
 - [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[DataExfilVolumeConfig]] - `calls` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `calls` [EXTRACTED]
 - [[DataLedger]] - `calls` [EXTRACTED]
 - [[DelegationManager]] - `calls` [EXTRACTED]
+- [[DifferentialPIIDetector]] - `calls` [EXTRACTED]
 - [[DriftDetector]] - `calls` [EXTRACTED]
 - [[EgressApprovalQueue]] - `calls` [EXTRACTED]
 - [[EgressFilter_1]] - `calls` [EXTRACTED]
@@ -34,10 +42,11 @@ tags:
 - [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 - [[EnvelopeSigner]] - `calls` [EXTRACTED]
 - [[EventBus]] - `calls` [EXTRACTED]
-- [[FastAPI_1]] - `references` [EXTRACTED]
+- [[FastAPI_2]] - `references` [EXTRACTED]
 - [[FastAPI lifespan - startup and shutdown]] - `rationale_for` [EXTRACTED]
 - [[GroupRegistry]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
+- [[HeuristicClassifier_1]] - `calls` [INFERRED]
 - [[HeuristicClassifier]] - `calls` [EXTRACTED]
 - [[IsolationVerifier]] - `calls` [EXTRACTED]
 - [[KeyLeakDetector]] - `calls` [EXTRACTED]
@@ -45,10 +54,14 @@ tags:
 - [[KeyVaultConfig]] - `calls` [EXTRACTED]
 - [[KillSwitchMonitor]] - `calls` [EXTRACTED]
 - [[LLMProxy]] - `calls` [EXTRACTED]
+- [[MCPPolicyEngine]] - `calls` [EXTRACTED]
 - [[MCPProxy]] - `calls` [EXTRACTED]
+- [[MCPProxyConfig_5]] - `calls` [EXTRACTED]
 - [[MCPProxyConfig]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityConfig_1]] - `calls` [INFERRED]
 - [[MemoryIntegrityConfig]] - `calls` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleConfig_1]] - `calls` [INFERRED]
 - [[MemoryLifecycleConfig]] - `calls` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
@@ -62,23 +75,31 @@ tags:
 - [[PromptGuard]] - `calls` [EXTRACTED]
 - [[PromptProtection]] - `calls` [EXTRACTED]
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RateLimitConfig]] - `calls` [EXTRACTED]
+- [[RateLimitGuard]] - `calls` [EXTRACTED]
+- [[ReportStore]] - `calls` [EXTRACTED]
 - [[SSHProxy]] - `calls` [EXTRACTED]
 - [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
-- [[TrustManager]] - `calls` [EXTRACTED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 - [[WebProxy_1]] - `calls` [EXTRACTED]
+- [[WebProxy]] - `calls` [EXTRACTED]
 - [[WebProxyConfig]] - `calls` [EXTRACTED]
 - [[XMLLeakFilter]] - `calls` [EXTRACTED]
+- [[_build_per_bot_telegram_tokens()]] - `calls` [EXTRACTED]
 - [[_install_uvicorn_warning_filter()]] - `calls` [EXTRACTED]
 - [[check_monitor_mode_warnings()]] - `calls` [EXTRACTED]
+- [[config_watcher()]] - `calls` [EXTRACTED]
 - [[get_module_mode()]] - `calls` [EXTRACTED]
 - [[install_log_handler()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `contains` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
+- [[resolve_config_path()]] - `calls` [EXTRACTED]
+- [[resolve_enforcement_mode()]] - `calls` [EXTRACTED]
 - [[setup_resource_guard()]] - `calls` [EXTRACTED]
 - [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

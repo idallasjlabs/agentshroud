@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "code"
-community: "Module Group 220"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_220
+  - community/Gateway_Test_Suite
 ---
 
 # llm_quota_detector.py
@@ -18,5 +18,6 @@ tags:
 - [[is_overloaded()]] - `contains` [EXTRACTED]
 - [[is_quota_exhausted()]] - `contains` [EXTRACTED]
 - [[is_rate_limited_post_retry()]] - `contains` [EXTRACTED]
+- [[test_llm_quota_detector.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_220
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCP Inspector & Audit"
+community: "MCP Proxy Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Inspector__Audit
+  - community/MCP_Proxy_Config
 ---
 
 # mcp_proxy.py
@@ -15,6 +15,7 @@ tags:
 - [[ConnectionPool]] - `contains` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `imports` [EXTRACTED]
 - [[HttpSseConnection]] - `contains` [EXTRACTED]
+- [[InspectionResult]] - `imports` [EXTRACTED]
 - [[MCPAuditTrail]] - `imports` [EXTRACTED]
 - [[MCPInspector]] - `imports` [EXTRACTED]
 - [[MCPPermissionManager]] - `imports` [EXTRACTED]
@@ -26,7 +27,7 @@ tags:
 - [[MCPTransport]] - `imports` [EXTRACTED]
 - [[ProxyResult]] - `contains` [EXTRACTED]
 - [[StdioConnection]] - `contains` [EXTRACTED]
-- [[__init__.py_6]] - `re_exports` [EXTRACTED]
+- [[__init__.py_7]] - `re_exports` [EXTRACTED]
 - [[enhanced_queue.py]] - `imports_from` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[main.py_2]] - `imports_from` [EXTRACTED]
@@ -36,5 +37,7 @@ tags:
 - [[mcp_inspector.py]] - `imports_from` [EXTRACTED]
 - [[mcp_permissions.py]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `references` [EXTRACTED]
+- [[test_mcp_result_endpoint.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Inspector__Audit
+#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config

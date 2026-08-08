@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_ledger.py"
+source_file: "gateway/tests/test_event_bus.py"
 type: "code"
-community: "Ledger Config & Test Infra"
-location: "L138"
+community: "Approval & FastAPI Ingest"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ledger_Config__Test_Infra
+  - community/Approval__FastAPI_Ingest
 ---
 
 # test_get_stats()
 
 ## Connections
-- [[Test stats calculation]] - `rationale_for` [EXTRACTED]
-- [[test_ledger.py]] - `contains` [EXTRACTED]
+- [[Stats track event counts]] - `rationale_for` [EXTRACTED]
+- [[make_event()]] - `calls` [EXTRACTED]
+- [[test_event_bus.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ledger_Config__Test_Infra
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_callback_stale.py"
 type: "code"
-community: "Module Group 410"
+community: "Gateway Test Suite"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_410
+  - community/Gateway_Test_Suite
 ---
 
 # test_edit_decision_message_real_error_still_logs_error()
@@ -16,4 +16,4 @@ tags:
 - [[_real_err()]] - `calls` [EXTRACTED]
 - [[test_egress_callback_stale.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_410
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

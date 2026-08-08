@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "Module Group 167"
+community: "Gateway Test Suite"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_167
+  - community/Gateway_Test_Suite
 ---
 
 # mgr()
@@ -16,4 +16,4 @@ tags:
 - [[In-memory delegation manager (no disk IO).]] - `rationale_for` [EXTRACTED]
 - [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_167
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

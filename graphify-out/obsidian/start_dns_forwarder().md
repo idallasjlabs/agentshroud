@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "Module Group 275"
+community: "Gateway Proxy Layer"
 location: "L279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_275
+  - community/Gateway_Proxy_Layer
 ---
 
 # start_dns_forwarder()
@@ -19,7 +19,7 @@ tags:
 - [[dns_forwarder.py]] - `contains` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main()_2]] - `calls` [EXTRACTED]
+- [[main()_9]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_275
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "Module Group 481"
+community: "scripts/export-telegram-history.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_481
+  - community/scripts/export-telegram-historypy
 ---
 
 # export-telegram-history.py
@@ -15,6 +15,6 @@ tags:
 - [[_require_env()]] - `contains` [EXTRACTED]
 - [[_serialize()]] - `contains` [EXTRACTED]
 - [[export()]] - `contains` [EXTRACTED]
-- [[main()_4]] - `contains` [EXTRACTED]
+- [[main()_13]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_481
+#graphify/code #graphify/EXTRACTED #community/scripts/export-telegram-historypy

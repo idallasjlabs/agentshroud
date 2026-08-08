@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-entrypoint.sh"
 type: "code"
-community: "Module Group 553"
+community: "Docker Deploy Scripts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_553
+  - community/Docker_Deploy_Scripts
 ---
 
 # security-entrypoint.sh
@@ -16,4 +16,4 @@ tags:
 - [[log()_1]] - `defines` [EXTRACTED]
 - [[security-entrypoint.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_553
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

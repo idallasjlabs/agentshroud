@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "Module Group 219"
+community: "scripts/generate_branding_assets.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_219
+  - community/scripts/generate_branding_assetspy
 ---
 
 # generate_branding_assets.py
@@ -24,7 +24,7 @@ tags:
 - [[get_font()]] - `contains` [EXTRACTED]
 - [[icon_on_canvas()]] - `contains` [EXTRACTED]
 - [[load_logo()]] - `contains` [EXTRACTED]
-- [[main()_6]] - `contains` [EXTRACTED]
-- [[save()]] - `contains` [EXTRACTED]
+- [[main()_15]] - `contains` [EXTRACTED]
+- [[save()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_219
+#graphify/code #graphify/EXTRACTED #community/scripts/generate_branding_assetspy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Egress Filter & Approval"
-location: "L514"
+community: "Gateway Test Suite"
+location: "L513"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter__Approval
+  - community/Gateway_Test_Suite
 ---
 
 # test_grant_timed_approval_invalid_iso_is_ignored()
@@ -16,4 +16,4 @@ tags:
 - [[grant_timed_approval with a malformed date should not raise or store anything.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter__Approval
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "Module Group 275"
-location: "L309"
+community: "Bot Container Scripts"
+location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_275
+  - community/Bot_Container_Scripts
 ---
 
 # main()
 
 ## Connections
-- [[dns_forwarder.py]] - `contains` [EXTRACTED]
-- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
+- [[render()]] - `calls` [EXTRACTED]
+- [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_275
+#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts

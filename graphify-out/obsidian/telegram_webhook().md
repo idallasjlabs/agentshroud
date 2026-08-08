@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Module Group 195"
-location: "L140"
+community: "Gateway Ingest API"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_195
+  - community/Gateway_Ingest_API
 ---
 
 # telegram_webhook()
 
 ## Connections
-- [[AuthRequired_3]] - `references` [EXTRACTED]
-- [[Request_3]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_5]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[Telegram inbound webhook (P3 channel ownership).      All Telegram messages des]] - `rationale_for` [EXTRACTED]
 - [[WebhookReceiver]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_195
+#graphify/code #graphify/EXTRACTED #community/Gateway_Ingest_API

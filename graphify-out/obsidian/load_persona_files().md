@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "code"
-community: "Module Group 312"
-location: "L39"
+community: "chatbot/main.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_312
+  - community/chatbot/mainpy
 ---
 
 # load_persona_files()
@@ -16,4 +16,4 @@ tags:
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_312
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

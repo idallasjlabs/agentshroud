@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "Module Group 73"
-location: "L420"
+community: "Gateway Test Suite"
+location: "L470"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_73
+  - community/Gateway_Test_Suite
 ---
 
 # content_block_start with terminal_tool must be replaced with a text error block.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_73
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "MCP Config & Proxy"
-location: "L33"
+community: "MCP Proxy Config"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Config__Proxy
+  - community/MCP_Proxy_Config
 ---
 
 # config()
@@ -15,6 +15,6 @@ tags:
 - [[MCPProxyConfig]] - `calls` [EXTRACTED]
 - [[MCPServerConfig]] - `calls` [EXTRACTED]
 - [[MCPToolConfig]] - `calls` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Config__Proxy
+#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "Module Group 136"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_136
+  - community/Gateway_Test_Suite
 ---
 
 # collaborator_greeter.py
@@ -15,4 +15,4 @@ tags:
 - [[CollaboratorGreeter]] - `contains` [EXTRACTED]
 - [[main.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_136
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

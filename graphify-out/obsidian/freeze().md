@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "CLI Interface"
+community: "gateway/cli"
 location: "L321"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI_Interface
+  - community/gateway/cli
 ---
 
 # freeze()
@@ -17,4 +17,4 @@ tags:
 - [[get()]] - `calls` [EXTRACTED]
 - [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI_Interface
+#graphify/code #graphify/EXTRACTED #community/gateway/cli

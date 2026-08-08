@@ -1,22 +1,31 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "Module Group 123"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_123
+  - community/Gateway_Test_Suite
 ---
 
 # test_docs_accuracy.py
 
 ## Connections
+- [[CONTRIBUTING]] - `references` [EXTRACTED]
+- [[FastAPI app (main.py)]] - `references` [INFERRED]
+- [[MiddlewareManager]] - `imports` [EXTRACTED]
+- [[README]] - `references` [EXTRACTED]
+- [[SECURITY]] - `references` [EXTRACTED]
+- [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[TestContributingMdAccuracy]] - `contains` [EXTRACTED]
+- [[TestLifespanWiresEveryPipelineModule]] - `contains` [EXTRACTED]
+- [[TestManageModulesEndpointAccuracy]] - `contains` [EXTRACTED]
 - [[TestReadmeAccuracy]] - `contains` [EXTRACTED]
 - [[TestReadmeModulesMatchCode]] - `contains` [EXTRACTED]
 - [[TestSecurityMdAccuracy]] - `contains` [EXTRACTED]
 - [[TestTestCountAccuracy]] - `contains` [EXTRACTED]
 - [[_read_file()]] - `contains` [EXTRACTED]
+- [[main.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_123
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

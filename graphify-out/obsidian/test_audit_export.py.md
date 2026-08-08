@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "Audit Store & Ledger"
+community: "Audit Export Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Store__Ledger
+  - community/Audit_Export_Pipeline
 ---
 
 # test_audit_export.py
@@ -21,4 +21,4 @@ tags:
 - [[TestAuditStore]] - `contains` [EXTRACTED]
 - [[TestAuditStoreBotId]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Store__Ledger
+#graphify/code #graphify/EXTRACTED #community/Audit_Export_Pipeline

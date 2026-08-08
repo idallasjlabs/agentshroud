@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Module Group 141"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_141
+  - community/Gateway_Security_Module
 ---
 
 # falco_monitor.py
@@ -15,7 +15,7 @@ tags:
 - [[FalcoAlertWatcher]] - `contains` [EXTRACTED]
 - [[categorize_alerts()]] - `contains` [EXTRACTED]
 - [[configure_rules()]] - `contains` [EXTRACTED]
-- [[datetime_1]] - `imports_from` [EXTRACTED]
+- [[datetime_2]] - `imports_from` [EXTRACTED]
 - [[generate_summary()_1]] - `contains` [EXTRACTED]
 - [[is_agentshroud_rule()]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[read_alerts()]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_141
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

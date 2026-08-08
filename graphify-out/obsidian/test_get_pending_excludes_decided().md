@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Approval Queue Core"
-location: "L148"
+community: "Gateway Test Suite"
+location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_Core
+  - community/Gateway_Test_Suite
 ---
 
 # test_get_pending_excludes_decided()
 
 ## Connections
-- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
+- [[ApprovalRequest]] - `calls` [EXTRACTED]
 - [[Test that get_pending excludes decided requests]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Core
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

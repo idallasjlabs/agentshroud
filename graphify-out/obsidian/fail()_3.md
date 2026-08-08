@@ -1,18 +1,19 @@
 ---
-source_file: "scripts/tailscale-check.sh"
+source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "Module Group 519"
-location: "L17"
+community: "scripts/check-vendor-compat.sh"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_519
+  - community/scripts/check-vendor-compatsh
 ---
 
 # fail()
 
 ## Connections
-- [[tailscale-check.sh]] - `defines` [EXTRACTED]
-- [[tailscale-check.sh script]] - `calls` [EXTRACTED]
+- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
+- [[check_hermes()]] - `calls` [EXTRACTED]
+- [[check_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_519
+#graphify/code #graphify/EXTRACTED #community/scripts/check-vendor-compatsh

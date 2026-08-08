@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Module Group 141"
+community: "Gateway Security Module"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_141
+  - community/Gateway_Security_Module
 ---
 
 # configure_rules()
@@ -15,4 +15,4 @@ tags:
 - [[Extend AGENTSHROUD_RULES with bot-specific name prefixes.      Called at gateway]] - `rationale_for` [EXTRACTED]
 - [[falco_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_141
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

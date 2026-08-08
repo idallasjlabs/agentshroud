@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "Version Routes & Manager Tools"
+community: "Gateway Ingest API"
 location: "L285"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Version_Routes__Manager_Tools
+  - community/Gateway_Ingest_API
 ---
 
 # rollback()
@@ -15,13 +15,14 @@ tags:
 - [[.test_no_history()]] - `calls` [EXTRACTED]
 - [[.test_no_previous_version()]] - `calls` [EXTRACTED]
 - [[.test_successful_rollback()]] - `calls` [EXTRACTED]
-- [[Any_66]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[Rollback to the previous version.]] - `rationale_for` [EXTRACTED]
 - [[_get_db()]] - `calls` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]
 - [[downgrade()]] - `calls` [EXTRACTED]
+- [[rollback_bot()]] - `semantically_similar_to` [INFERRED]
 - [[rollback_version()]] - `calls` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `imports` [EXTRACTED]
 - [[version_routes.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Version_Routes__Manager_Tools
+#graphify/code #graphify/EXTRACTED #community/Gateway_Ingest_API

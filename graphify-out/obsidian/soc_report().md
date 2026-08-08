@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Dashboard Routes & WebSocket"
-location: "L2133"
+community: "Approval & FastAPI Ingest"
+location: "L2345"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Dashboard_Routes__WebSocket
+  - community/Approval__FastAPI_Ingest
 ---
 
 # soc_report()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[Consolidated SOC report for dashboardSIEM pull workflows.]] - `rationale_for` [EXTRACTED]
 - [[_build_activity_entries_from_contributor_logs()]] - `calls` [EXTRACTED]
 - [[_build_activity_summary_from_contributor_logs()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[build_correlation_summary()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Dashboard_Routes__WebSocket
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

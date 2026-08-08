@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Ledger Config & Test Infra"
-location: "L128"
+community: "Forward Routing & Approval"
+location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ledger_Config__Test_Infra
+  - community/Forward_Routing__Approval
 ---
 
 # test_client()
@@ -16,4 +16,4 @@ tags:
 - [[GatewayConfig_2]] - `references` [EXTRACTED]
 - [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ledger_Config__Test_Infra
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

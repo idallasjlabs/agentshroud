@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "Module Group 331"
+community: "Docker Deploy Scripts"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_331
+  - community/Docker_Deploy_Scripts
 ---
 
 # op_proxy_read_with_retry()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[start-agentshroud.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_331
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

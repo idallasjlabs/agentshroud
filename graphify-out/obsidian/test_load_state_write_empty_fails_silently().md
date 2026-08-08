@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "code"
-community: "Module Group 136"
+community: "Gateway Test Suite"
 location: "L294"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_136
+  - community/Gateway_Test_Suite
 ---
 
 # test_load_state_write_empty_fails_silently()
@@ -16,4 +16,4 @@ tags:
 - [[When state JSON is corrupt AND writing the empty recovery file fails, no excepti]] - `rationale_for` [EXTRACTED]
 - [[test_collaborator_greeter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_136
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/httpx.md"
-type: "concept"
-community: "Module Group 105"
-location: "gateway/proxy/llm_proxy.py"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+type: "document"
+community: "docs/vault"
+location: "L1"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_105
+  - community/docs/vault
 ---
 
-# llm_proxy.py
+# llm_proxy.py.md
 
 ## Connections
-- [[httpx]] - `used_by` [EXTRACTED]
+- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_105
+#graphify/document #graphify/EXTRACTED #community/docs/vault

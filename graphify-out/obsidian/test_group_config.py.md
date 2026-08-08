@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "Group Config & Teams"
+community: "Collaborator Response Templates"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Config__Teams
+  - community/Collaborator_Response_Templates
 ---
 
 # test_group_config.py
@@ -25,4 +25,4 @@ tags:
 - [[persist_user_collab_mode()]] - `imports` [EXTRACTED]
 - [[teams()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Config__Teams
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates

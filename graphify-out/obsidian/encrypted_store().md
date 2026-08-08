@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Module Group 216"
+community: "Gateway Test Suite"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_216
+  - community/Gateway_Test_Suite
 ---
 
 # encrypted_store()
@@ -15,4 +15,4 @@ tags:
 - [[EncryptedStore]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_216
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

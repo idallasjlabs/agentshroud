@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "Module Group 103"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_103
+  - community/Gateway_Test_Suite
 ---
 
 # test_oauth_security.py
@@ -17,7 +17,7 @@ tags:
 - [[TestPKCE]] - `contains` [EXTRACTED]
 - [[TestRedirectURI]] - `contains` [EXTRACTED]
 - [[TestStateValidation]] - `contains` [EXTRACTED]
-- [[oauth_security.py]] - `imports_from` [EXTRACTED]
+- [[oauth_security.py]] - `references` [EXTRACTED]
 - [[validator()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_103
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

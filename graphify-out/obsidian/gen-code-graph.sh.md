@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/gen-code-graph.sh"
 type: "code"
-community: "Module Group 645"
+community: "scripts/gen-code-graph.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_645
+  - community/scripts/gen-code-graphsh
 ---
 
 # gen-code-graph.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[gen-code-graph.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_645
+#graphify/code #graphify/EXTRACTED #community/scripts/gen-code-graphsh

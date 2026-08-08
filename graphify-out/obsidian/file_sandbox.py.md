@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Environment Guard & Leak Detection"
+community: "File Sandbox"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - community/File_Sandbox
 ---
 
 # file_sandbox.py
@@ -20,5 +20,6 @@ tags:
 - [[PIIScanResult]] - `contains` [EXTRACTED]
 - [[PIIScanner]] - `contains` [EXTRACTED]
 - [[StagingPattern]] - `contains` [EXTRACTED]
+- [[i-sec-defense Blue Team Security Auditor]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox

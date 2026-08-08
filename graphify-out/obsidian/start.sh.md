@@ -1,17 +1,18 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "Module Group 316"
+community: "Bot Container Scripts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_316
+  - community/Bot_Container_Scripts
 ---
 
 # start.sh
 
 ## Connections
+- [[Crash backoff escalation (5 restarts600s - 300s pause)]] - `references` [EXTRACTED]
 - [[HERMES_HOME]] - `defines` [EXTRACTED]
 - [[HOME]] - `defines` [EXTRACTED]
 - [[XDG_CACHE_HOME]] - `defines` [EXTRACTED]
@@ -23,6 +24,9 @@ tags:
 - [[_telegram_get_me_ready()]] - `defines` [EXTRACTED]
 - [[_telegram_send()]] - `defines` [EXTRACTED]
 - [[_telegram_send_photo()]] - `defines` [EXTRACTED]
+- [[hermes service (docker-compose.yml, profiles hermesfull)]] - `references` [EXTRACTED]
+- [[init-config.sh]] - `calls` [EXTRACTED]
+- [[main()_3]] - `calls` [EXTRACTED]
 - [[start.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_316
+#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts

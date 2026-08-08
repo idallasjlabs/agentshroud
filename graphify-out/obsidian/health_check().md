@@ -1,18 +1,19 @@
 ---
 source_file: "chatbot/main.py"
 type: "code"
-community: "Module Group 312"
-location: "L101"
+community: "chatbot/test_main.py"
+location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_312
+  - community/chatbot/test_mainpy
 ---
 
 # health_check()
 
 ## Connections
-- [[Health check endpoint for Docker.]] - `rationale_for` [EXTRACTED]
+- [[Health check endpoint for Docker.      Reports degraded status when the OpenAI c]] - `rationale_for` [EXTRACTED]
+- [[TestHealthCheck]] - `calls` [EXTRACTED]
 - [[main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_312
+#graphify/code #graphify/EXTRACTED #community/chatbot/test_mainpy

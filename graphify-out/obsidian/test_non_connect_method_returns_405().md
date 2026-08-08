@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Module Group 65"
+community: "Gateway Test Suite"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_65
+  - community/Gateway_Test_Suite
 ---
 
 # test_non_connect_method_returns_405()
@@ -17,4 +17,4 @@ tags:
 - [[_make_stream()]] - `calls` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_65
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

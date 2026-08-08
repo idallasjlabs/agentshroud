@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/scripts/README.md"
+source_file: "scripts/README.md"
 type: "document"
-community: "Module Group 173"
+community: "Custom Skills"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Module_Group_173
+  - community/Custom_Skills
 ---
 
 # scripts/README.md — Utility Scripts Catalog
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Concept Module Enforcement Heat Map (EMAC—)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Module_Group_173
+#graphify/document #graphify/INFERRED #community/Custom_Skills

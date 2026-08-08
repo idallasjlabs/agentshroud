@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "Module Group 107"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_107
+  - community/skills/openclaw
 ---
 
 # oracle Skill
@@ -14,4 +14,4 @@ tags:
 - [[OpenClaw Skill Ecosystem]] - `part_of` [EXTRACTED]
 - [[oracle Browser Engine (GPT-5.2 Pro)]] - `uses` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_107
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

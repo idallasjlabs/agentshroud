@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_acl.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Tool ACL & RBAC Config"
-location: "L41"
+community: "Gateway Test Suite"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_ACL__RBAC_Config
+  - community/Gateway_Test_Suite
 ---
 
 # rbac()
 
 ## Connections
-- [[_make_rbac()_1]] - `calls` [EXTRACTED]
-- [[test_tool_acl.py]] - `contains` [EXTRACTED]
+- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_ACL__RBAC_Config
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "Module Group 92"
+community: "HTTP Forwarder"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_92
+  - community/HTTP_Forwarder
 ---
 
 # run_canary()
@@ -27,4 +27,4 @@ tags:
 - [[test_canary_with_unhealthy_forwarder()]] - `calls` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_92
+#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder

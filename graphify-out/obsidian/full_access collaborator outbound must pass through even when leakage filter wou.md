@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Module Group 260"
-location: "L8982"
+community: "Gateway Test Suite"
+location: "L9354"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_260
+  - community/Gateway_Test_Suite
 ---
 
 # full_access collaborator outbound must pass through even when leakage filter wou
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_full_access_outbound_not_blocked_by_leakage_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_260
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

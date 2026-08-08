@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/quick_validate.py"
 type: "code"
-community: "Module Group 268"
+community: "skills/openclaw"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_268
+  - community/skills/openclaw
 ---
 
 # quick_validate.py
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[validate_skill()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_268
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

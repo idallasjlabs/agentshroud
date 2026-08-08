@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Module Group 142"
+community: "Egress & RBAC Security Core"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_142
+  - community/Egress__RBAC_Security_Core
 ---
 
 # memory_lifecycle.py
@@ -21,4 +21,4 @@ tags:
 - [[RetentionAction]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_142
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

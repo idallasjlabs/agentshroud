@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "code"
-community: "Module Group 411"
+community: "Approval & FastAPI Ingest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_411
+  - community/Approval__FastAPI_Ingest
 ---
 
 # test_enhanced_status.py
 
 ## Connections
-- [[StatusResponse]] - `imports` [EXTRACTED]
+- [[StatusResponse]] - `implements` [EXTRACTED]
 - [[TestEnhancedStatus]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_411
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

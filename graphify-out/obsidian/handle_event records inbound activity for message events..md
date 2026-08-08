@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "Module Group 289"
+community: "Gateway Test Suite"
 location: "L480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_289
+  - community/Gateway_Test_Suite
 ---
 
 # handle_event records inbound activity for message events.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_message_event_records_activity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_289
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Gateway Config & Lifespan"
+community: "PromptGuard Encoding Detection"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # prompt_guard.py
@@ -21,7 +21,9 @@ tags:
 - [[detect_base64_payloads()]] - `imports` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[main.py_2]] - `imports_from` [EXTRACTED]
+- [[multi_turn_tracker.py]] - `semantically_similar_to` [INFERRED]
 - [[normalize_input()]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
+- [[test_multilingual_injection.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/code #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection

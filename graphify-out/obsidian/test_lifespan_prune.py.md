@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "Module Group 263"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_263
+  - community/Gateway_Test_Suite
 ---
 
 # test_lifespan_prune.py
@@ -22,4 +22,4 @@ tags:
 - [[test_prune_keeps_real_uid_markdown()]] - `contains` [EXTRACTED]
 - [[test_prune_walks_all_contributor_dirs()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_263
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

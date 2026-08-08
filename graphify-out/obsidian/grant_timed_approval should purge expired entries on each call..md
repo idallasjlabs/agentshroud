@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Egress Filter & Approval"
-location: "L522"
+community: "Gateway Test Suite"
+location: "L521"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Filter__Approval
+  - community/Gateway_Test_Suite
 ---
 
 # grant_timed_approval should purge expired entries on each call.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_grant_timed_approval_cleans_stale_entries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter__Approval
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

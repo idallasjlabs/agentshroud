@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/package.json"
-type: "code"
-community: "Module Group 367"
-location: "L4"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
+type: "document"
+community: "docs/vault"
+location: "L11"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_367
+  - community/docs/vault
 ---
 
-# description
+# Description
 
 ## Connections
-- [[package.json]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_367
+#graphify/document #graphify/EXTRACTED #community/docs/vault

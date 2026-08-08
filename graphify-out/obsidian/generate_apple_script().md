@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "code"
-community: "Module Group 211"
+community: "Gateway Test Suite"
 location: "L180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_211
+  - community/Gateway_Test_Suite
 ---
 
 # generate_apple_script()
@@ -19,4 +19,4 @@ tags:
 - [[compose_generator.py]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_211
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

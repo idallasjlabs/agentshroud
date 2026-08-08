@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/post-deploy-check.sh"
 type: "code"
-community: "Module Group 589"
+community: "scripts/canary-deploy.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_589
+  - community/scripts/canary-deploysh
 ---
 
 # post-deploy-check.sh script
@@ -15,4 +15,4 @@ tags:
 - [[check()]] - `calls` [EXTRACTED]
 - [[post-deploy-check.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_589
+#graphify/code #graphify/EXTRACTED #community/scripts/canary-deploysh

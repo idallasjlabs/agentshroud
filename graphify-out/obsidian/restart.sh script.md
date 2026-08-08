@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/restart.sh"
 type: "code"
-community: "Module Group 656"
+community: "Docker Deploy Scripts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_656
+  - community/Docker_Deploy_Scripts
 ---
 
 # restart.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[restart.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_656
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

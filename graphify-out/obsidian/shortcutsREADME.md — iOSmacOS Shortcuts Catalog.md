@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/shortcuts/README.md"
+source_file: "shortcuts/README.md"
 type: "document"
-community: "Module Group 173"
+community: "Custom Skills"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_173
+  - community/Custom_Skills
 ---
 
 # shortcuts/README.md — iOS/macOS Shortcuts Catalog
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Concept iOS Shortcuts with On-Device PII Processing]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_173
+#graphify/document #graphify/EXTRACTED #community/Custom_Skills

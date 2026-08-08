@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "Module Group 113"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_113
+  - community/Gateway_Test_Suite
 ---
 
 # test_browser_security.py
@@ -19,4 +19,4 @@ tags:
 - [[browser_security.py]] - `imports_from` [EXTRACTED]
 - [[guard()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_113
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

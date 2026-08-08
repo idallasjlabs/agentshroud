@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator_gate.py"
 type: "rationale"
-community: "Module Group 86"
+community: "Gateway Security Module"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_86
+  - community/Gateway_Security_Module
 ---
 
 # post-deploy-check.sh fails ONLY on critical. These tests pin that contract.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGateScope]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_86
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

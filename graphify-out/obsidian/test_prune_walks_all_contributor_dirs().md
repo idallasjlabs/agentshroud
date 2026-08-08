@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "Module Group 263"
+community: "Gateway Test Suite"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_263
+  - community/Gateway_Test_Suite
 ---
 
 # test_prune_walks_all_contributor_dirs()
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `calls` [EXTRACTED]
 - [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
+- [[CollaboratorActivityTracker_1]] - `calls` [EXTRACTED]
 - [[Startup prune must remove fixture markdown files from every contributor dir.]] - `rationale_for` [EXTRACTED]
 - [[_make_md()]] - `calls` [EXTRACTED]
 - [[_prune_fixture_markdown()]] - `calls` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_263
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

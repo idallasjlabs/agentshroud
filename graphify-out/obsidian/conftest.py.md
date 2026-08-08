@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Ledger Config & Test Infra"
+community: "Forward Routing & Approval"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Ledger_Config__Test_Infra
+  - community/Forward_Routing__Approval
 ---
 
 # conftest.py
@@ -18,11 +18,14 @@ tags:
 - [[LedgerConfig]] - `imports` [EXTRACTED]
 - [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
-- [[RouterConfig]] - `imports` [EXTRACTED]
+- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[_ensure_agentshroud_config_resolvable()]] - `contains` [EXTRACTED]
 - [[auth_headers()]] - `contains` [EXTRACTED]
+- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
+- [[resolve_config_path()]] - `imports` [EXTRACTED]
 - [[sanitizer()]] - `contains` [EXTRACTED]
 - [[test_client()]] - `contains` [EXTRACTED]
 - [[test_config()]] - `contains` [EXTRACTED]
 - [[test_ledger()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Ledger_Config__Test_Infra
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

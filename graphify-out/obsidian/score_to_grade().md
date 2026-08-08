@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Module Group 114"
+community: "Gateway Test Suite"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_114
+  - community/Gateway_Test_Suite
 ---
 
 # score_to_grade()
@@ -22,4 +22,4 @@ tags:
 - [[health_report.py]] - `contains` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_114
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

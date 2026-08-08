@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Module Group 189"
-location: "L601"
+community: "URL/Domain Validation Tests"
+location: "L651"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_189
+  - community/URL/Domain_Validation_Tests
 ---
 
 # test_is_connect_error_classification()
@@ -16,4 +16,4 @@ tags:
 - [[_is_connect_error matches connection-level failures only.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_189
+#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

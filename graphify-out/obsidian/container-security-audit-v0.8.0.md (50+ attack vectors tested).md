@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/container-security-audit-v0.8.0.md"
 type: "document"
-community: "Module Group 503"
+community: "Security Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_503
+  - community/Security_Docs
 ---
 
 # container-security-audit-v0.8.0.md (50+ attack vectors tested)
@@ -15,4 +15,4 @@ tags:
 - [[Container Audit C3 proc1environ secrets exposure — MITIGATED (tmpfs files, defense-in-depth)]] - `documents` [EXTRACTED]
 - [[Container Network Architecture (agentshroud-isolatedinternal dual-network, iptables rules)]] - `documents` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_503
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

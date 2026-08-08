@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Scanner Integration Tests"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Scanner_Integration_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # test_scanner_integration.py
@@ -74,4 +74,4 @@ tags:
 - [[get_trivy_summary()]] - `imports` [EXTRACTED]
 - [[get_wazuh_summary()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Tests
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

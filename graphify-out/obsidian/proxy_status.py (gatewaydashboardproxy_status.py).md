@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
 type: "code"
-community: "Module Group 449"
+community: "docs/vault"
 location: "gateway/dashboard/proxy_status.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_449
+  - community/docs/vault
 ---
 
 # proxy_status.py (gateway/dashboard/proxy_status.py)
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Proxy Status Aggregation (MCPLLMTelegramHTTPWeb)]] - `implements` [EXTRACTED]
 - [[api.py (gatewaywebapi.py)]] - `used_by` [EXTRACTED]
-- [[health_report.py_1]] - `references` [EXTRACTED]
+- [[health_report.py_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_449
+#graphify/code #graphify/EXTRACTED #community/docs/vault

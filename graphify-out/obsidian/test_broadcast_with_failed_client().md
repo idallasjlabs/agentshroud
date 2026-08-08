@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Module Group 74"
-location: "L313"
+community: "Gateway Test Suite"
+location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_74
+  - community/Gateway_Test_Suite
 ---
 
 # test_broadcast_with_failed_client()
@@ -16,4 +16,4 @@ tags:
 - [[Test broadcast handles failed client sends]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_74
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

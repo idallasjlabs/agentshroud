@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "Webhook Receiver"
+community: "URL/Domain Validation Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Webhook_Receiver
+  - community/URL/Domain_Validation_Tests
 ---
 
 # test_session_isolation.py
@@ -23,4 +23,4 @@ tags:
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Webhook_Receiver
+#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

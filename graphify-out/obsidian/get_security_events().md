@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Router & Correlation"
-location: "L147"
+community: "Bot CVE Scorecard"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router__Correlation
+  - community/Bot_CVE_Scorecard
 ---
 
 # get_security_events()
@@ -17,9 +17,10 @@ tags:
 - [[.test_security_events_filters_by_bot_id()]] - `calls` [EXTRACTED]
 - [[.test_security_events_nonexistent_bot_returns_empty_not_404()]] - `calls` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller_3]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[collect_recent_events()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router__Correlation
+#graphify/code #graphify/EXTRACTED #community/Bot_CVE_Scorecard
