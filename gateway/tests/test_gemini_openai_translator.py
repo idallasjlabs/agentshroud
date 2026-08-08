@@ -289,9 +289,7 @@ def test_gemini_to_openai_response_envelope():
 
 def test_gemini_to_openai_response_max_tokens_finish_reason():
     gem = {
-        "candidates": [
-            {"content": {"parts": [{"text": "cut off"}]}, "finishReason": "MAX_TOKENS"}
-        ],
+        "candidates": [{"content": {"parts": [{"text": "cut off"}]}, "finishReason": "MAX_TOKENS"}],
     }
     out = gemini_to_openai_response(gem, original_model="gemini-2.5-flash")
     assert out["choices"][0]["finish_reason"] == "length"

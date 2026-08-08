@@ -219,8 +219,7 @@ async def test_stream_skips_chunk_missing_choices_key_and_continues(router, monk
     ]
 
     assert received == ["Before.", " After."], (
-        "malformed-shape chunk must be skipped, not abort the stream: "
-        f"{received!r}"
+        "malformed-shape chunk must be skipped, not abort the stream: " f"{received!r}"
     )
 
 

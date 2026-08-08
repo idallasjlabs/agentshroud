@@ -91,6 +91,7 @@ def test_resolve_trust_level_non_owner_user_id_does_not_upgrade():
     result = _resolve_user_trust_level(pipeline, _target(), _request(user_id="someone-else"))
     assert result == "UNTRUSTED"
 
+
 # ── _sentences_from_deltas ───────────────────────────────────────────────────
 
 
@@ -181,10 +182,7 @@ async def test_filtered_stream_releases_sentences_in_order():
     pipeline = _PassthroughPipeline()
     sentences = _aiter(["First.", "Second.", "Third."])
     released = [
-        s
-        async for s in _filtered_sentence_stream(
-            sentences, pipeline, "hermes", "FULL", "voice"
-        )
+        s async for s in _filtered_sentence_stream(sentences, pipeline, "hermes", "FULL", "voice")
     ]
     assert released == ["First.", "Second.", "Third."]
 
@@ -207,10 +205,7 @@ async def test_filtered_stream_single_sentence_flushed_alone():
     pipeline = _PassthroughPipeline()
     sentences = _aiter(["Only one."])
     released = [
-        s
-        async for s in _filtered_sentence_stream(
-            sentences, pipeline, "hermes", "FULL", "voice"
-        )
+        s async for s in _filtered_sentence_stream(sentences, pipeline, "hermes", "FULL", "voice")
     ]
     assert released == ["Only one."]
     assert pipeline.calls == ["Only one."]
@@ -221,10 +216,7 @@ async def test_filtered_stream_blocked_window_releases_nothing_for_that_window()
     pipeline = _BlockingPipeline()
     sentences = _aiter(["This has a secret.", "This is fine."])
     released = [
-        s
-        async for s in _filtered_sentence_stream(
-            sentences, pipeline, "hermes", "FULL", "voice"
-        )
+        s async for s in _filtered_sentence_stream(sentences, pipeline, "hermes", "FULL", "voice")
     ]
     # First window (secret+fine) blocked entirely; "fine" becomes the new
     # pending and is flushed alone at stream end, unblocked.
@@ -247,10 +239,7 @@ async def test_filtered_stream_sentinel_stripped_fails_safe_by_releasing_all():
     pipeline = _SentinelEatingPipeline()
     sentences = _aiter(["First.", "Second."])
     released = [
-        s
-        async for s in _filtered_sentence_stream(
-            sentences, pipeline, "hermes", "FULL", "voice"
-        )
+        s async for s in _filtered_sentence_stream(sentences, pipeline, "hermes", "FULL", "voice")
     ]
     assert released == ["First. Second."]
 
@@ -260,10 +249,7 @@ async def test_filtered_stream_blocked_final_sentence_yields_nothing():
     pipeline = _BlockingPipeline()
     sentences = _aiter(["Fine sentence.", "Another fine one.", "Has a secret."])
     released = [
-        s
-        async for s in _filtered_sentence_stream(
-            sentences, pipeline, "hermes", "FULL", "voice"
-        )
+        s async for s in _filtered_sentence_stream(sentences, pipeline, "hermes", "FULL", "voice")
     ]
     # Window 1 ("Fine sentence." + "Another fine one.") is clean → releases
     # "Fine sentence.". Window 2 ("Another fine one." + "Has a secret.")
@@ -287,9 +273,7 @@ async def test_filtered_stream_redaction_applies_to_released_sentence():
     sentences = _aiter(["Card is 4111111111111111.", "Thanks."])
     released = [
         s
-        async for s in _filtered_sentence_stream(
-            sentences, pipeline, "hermes", "STANDARD", "voice"
-        )
+        async for s in _filtered_sentence_stream(sentences, pipeline, "hermes", "STANDARD", "voice")
     ]
     assert released[0] == "Card is [REDACTED]."
 
@@ -325,7 +309,9 @@ def _make_stream_app_state(sentences_out):
     mock_state.sanitizer.sanitize = AsyncMock(
         return_value=MagicMock(sanitized_content="test", redactions=[], entity_types_found=[])
     )
-    mock_state.sanitizer.block_credentials = AsyncMock(side_effect=lambda content, source: (content, False))
+    mock_state.sanitizer.block_credentials = AsyncMock(
+        side_effect=lambda content, source: (content, False)
+    )
     mock_state.ledger = MagicMock()
     mock_state.ledger.record = AsyncMock(
         return_value=MagicMock(id="ledger-id", content_hash="hash", timestamp="ts")
@@ -393,7 +379,9 @@ def test_forward_stream_emits_sentence_events_then_done():
 
 def test_forward_stream_rejects_non_openai_compat_target():
     mock_state = _make_stream_app_state([])
-    target = AgentTarget(name="openclaw", url="http://agentshroud-openclaw:18789", chat_path="/chat")
+    target = AgentTarget(
+        name="openclaw", url="http://agentshroud-openclaw:18789", chat_path="/chat"
+    )
     mock_state.router.resolve_target = AsyncMock(return_value=target)
 
     resp = _post_stream(mock_state)

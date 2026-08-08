@@ -309,9 +309,7 @@ class MultiAgentRouter:
                 status, or a stream line can't be parsed as valid SSE/JSON.
         """
         if "chat/completions" not in target.chat_path:
-            raise ForwardError(
-                f"Agent {target.name} has no streaming-compatible chat_path"
-            )
+            raise ForwardError(f"Agent {target.name} has no streaming-compatible chat_path")
 
         payload = self._build_forward_payload(
             target, sanitized_content, ledger_id, metadata, stream=True
@@ -357,8 +355,7 @@ class MultiAgentRouter:
                             # chunks in the same stream carried real content.
                             # Skip the one malformed line and keep streaming.
                             logger.warning(
-                                f"Skipping malformed SSE chunk shape from "
-                                f"{target.name}: {exc}"
+                                f"Skipping malformed SSE chunk shape from " f"{target.name}: {exc}"
                             )
                             continue
                         content = delta.get("content")

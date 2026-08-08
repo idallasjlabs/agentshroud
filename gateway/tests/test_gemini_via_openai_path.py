@@ -112,9 +112,7 @@ async def test_proxy_gemini_translation_failure_falls_through_gracefully(monkeyp
     def _broken_translator(*args, **kwargs):
         raise ValueError("boom")
 
-    monkeypatch.setattr(
-        "gateway.proxy.llm_proxy.openai_to_gemini_request", _broken_translator
-    )
+    monkeypatch.setattr("gateway.proxy.llm_proxy.openai_to_gemini_request", _broken_translator)
 
     captured: dict = {}
 
