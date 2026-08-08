@@ -1,0 +1,274 @@
+---
+type: community
+cohesion: 0.01
+members: 213
+---
+
+# URL/Domain Validation Tests
+
+**Cohesion:** 0.01 - loosely connected
+**Members:** 213 nodes
+
+## Members
+- [[.__init__()_44]] - code - gateway/proxy/webhook_receiver.py
+- [[.__init__()_75]] - code - gateway/security/encrypted_store.py
+- [[.__init__()_112]] - code - gateway/security/session_manager.py
+- [[._can_create_directory()]] - code - gateway/proxy/webhook_receiver.py
+- [[._extract_message()]] - code - gateway/proxy/webhook_receiver.py
+- [[._extract_user_id()_1]] - code - gateway/proxy/webhook_receiver.py
+- [[._extract_username()]] - code - gateway/proxy/webhook_receiver.py
+- [[._load_sessions()]] - code - gateway/security/session_manager.py
+- [[._prepare_session_payload()]] - code - gateway/proxy/webhook_receiver.py
+- [[._replace_message()]] - code - gateway/proxy/webhook_receiver.py
+- [[._resolve_secret()]] - code - gateway/security/encrypted_store.py
+- [[._save_sessions()]] - code - gateway/security/session_manager.py
+- [[._session_key()]] - code - gateway/security/session_manager.py
+- [[._validate_bot_id()]] - code - gateway/security/session_manager.py
+- [[._validate_user_id()]] - code - gateway/security/session_manager.py
+- [[.add_conversation_message()]] - code - gateway/security/session_manager.py
+- [[.body_not_empty()]] - code - gateway/ingest_api/models.py
+- [[.can_user_access_group()]] - code - gateway/security/session_manager.py
+- [[.can_user_access_session()]] - code - gateway/security/session_manager.py
+- [[.cleanup_old_sessions()_1]] - code - gateway/security/session_manager.py
+- [[.content_not_empty()]] - code - gateway/ingest_api/models.py
+- [[.from_dict()_10]] - code - gateway/security/session_manager.py
+- [[.get_blob_key_id()]] - code - gateway/security/encrypted_store.py
+- [[.get_merged_context()]] - code - gateway/security/session_manager.py
+- [[.get_or_create_group_session()]] - code - gateway/security/session_manager.py
+- [[.get_or_create_session()]] - code - gateway/security/session_manager.py
+- [[.get_session_context()]] - code - gateway/security/session_manager.py
+- [[.get_session_prompt_addition()]] - code - gateway/security/session_manager.py
+- [[.get_stats()_11]] - code - gateway/proxy/webhook_receiver.py
+- [[.get_user_workspace_path()]] - code - gateway/security/session_manager.py
+- [[.list_sessions_for_user()]] - code - gateway/security/session_manager.py
+- [[.middleware_manager()]] - code - gateway/tests/test_session_isolation.py
+- [[.process_webhook()]] - code - gateway/proxy/webhook_receiver.py
+- [[.reanchor_system_prompt()]] - code - gateway/security/session_manager.py
+- [[.session_manager()]] - code - gateway/tests/test_session_isolation.py
+- [[.session_manager()_1]] - code - gateway/tests/test_session_isolation.py
+- [[.subject_not_empty()]] - code - gateway/ingest_api/models.py
+- [[.temp_workspace()_2]] - code - gateway/tests/test_session_isolation.py
+- [[.temp_workspace()_3]] - code - gateway/tests/test_session_isolation.py
+- [[.temp_workspace()]] - code - gateway/tests/test_session_isolation.py
+- [[.temp_workspace()_1]] - code - gateway/tests/test_session_isolation.py
+- [[.test_add_message()]] - code - gateway/tests/test_session_manager.py
+- [[.test_atomic_save_never_leaves_partial_registry_on_crash()]] - code - gateway/tests/test_session_manager.py
+- [[.test_complete_user_isolation()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_concurrent_saves_do_not_lose_entries()]] - code - gateway/tests/test_session_manager.py
+- [[.test_conversation_history_isolation()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_conversation_history_limit()]] - code - gateway/tests/test_session_manager.py
+- [[.test_default_trust_level_is_untrusted()]] - code - gateway/tests/test_session_manager.py
+- [[.test_empty_user_id_rejected()]] - code - gateway/tests/test_session_manager.py
+- [[.test_get_or_create_returns_same_session()]] - code - gateway/tests/test_session_manager.py
+- [[.test_get_session_context_contains_user_id()]] - code - gateway/tests/test_session_manager.py
+- [[.test_load_tolerates_corrupt_registry()]] - code - gateway/tests/test_session_manager.py
+- [[.test_load_tolerates_empty_registry()]] - code - gateway/tests/test_session_manager.py
+- [[.test_long_user_id_rejected()]] - code - gateway/tests/test_session_manager.py
+- [[.test_memory_file_created()]] - code - gateway/tests/test_session_manager.py
+- [[.test_memory_file_isolation()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_middleware_cross_session_blocking()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_middleware_file_path_isolation()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_middleware_normalizes_invisible_unicode()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_middleware_own_workspace_allowed()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_middleware_owner_bypass()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_middleware_session_context_injection()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_middleware_user_identification()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_no_temp_files_left_behind()]] - code - gateway/tests/test_session_manager.py
+- [[.test_non_owner_cannot_view_other_sessions()]] - code - gateway/tests/test_session_manager.py
+- [[.test_non_owner_empty_when_no_session()]] - code - gateway/tests/test_session_manager.py
+- [[.test_owner_access_control()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_owner_admin_access()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_owner_can_access_any_session()]] - code - gateway/tests/test_session_manager.py
+- [[.test_owner_can_view_all_sessions()]] - code - gateway/tests/test_session_manager.py
+- [[.test_path_traversal_rejected()_1]] - code - gateway/tests/test_session_manager.py
+- [[.test_prompt_addition_mentions_isolation()]] - code - gateway/tests/test_session_manager.py
+- [[.test_reanchor_contains_security_notice()]] - code - gateway/tests/test_session_manager.py
+- [[.test_reanchor_prepends_preamble()]] - code - gateway/tests/test_session_manager.py
+- [[.test_reanchor_preserves_original_content()]] - code - gateway/tests/test_session_manager.py
+- [[.test_save_uses_atomic_replace()]] - code - gateway/tests/test_session_manager.py
+- [[.test_session_context_generation()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_session_creation()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_session_isolation_directories()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_session_listing_authorization()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_session_persistence()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_session_prompt_isolation()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_session_to_dict_and_back()]] - code - gateway/tests/test_session_manager.py
+- [[.test_sessions_are_isolated()]] - code - gateway/tests/test_session_manager.py
+- [[.test_special_chars_rejected()]] - code - gateway/tests/test_session_manager.py
+- [[.test_trust_level_per_user()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_update_trust_level()]] - code - gateway/tests/test_session_manager.py
+- [[.test_user_can_access_own_session()]] - code - gateway/tests/test_session_manager.py
+- [[.test_user_cannot_access_other_session()]] - code - gateway/tests/test_session_manager.py
+- [[.test_webhook_conversation_logging()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_webhook_session_context_injection()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_webhook_user_id_extraction()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_workspace_directory_created()]] - code - gateway/tests/test_session_manager.py
+- [[.to_dict()_11]] - code - gateway/security/session_manager.py
+- [[.update_user_trust_level()]] - code - gateway/security/session_manager.py
+- [[.validate_default_url()]] - code - gateway/ingest_api/config.py
+- [[.validate_mode()]] - code - gateway/security/group_config.py
+- [[.validate_signature()]] - code - gateway/proxy/webhook_receiver.py
+- [[.validate_source()]] - code - gateway/ingest_api/models.py
+- [[.validate_targets()]] - code - gateway/ingest_api/config.py
+- [[A corruptpartial registry file must not crash construction.]] - rationale - gateway/tests/test_session_manager.py
+- [[A single message in a conversation.]] - rationale - gateway/security/session_manager.py
+- [[A successful save leaves only the final registry file, no .tmp.]] - rationale - gateway/tests/test_session_manager.py
+- [[Add a message to the user's conversation history for a specific bot.]] - rationale - gateway/security/session_manager.py
+- [[An empty registry file must not crash construction.]] - rationale - gateway/tests/test_session_manager.py
+- [[Any_23]] - code - gateway/proxy/webhook_receiver.py
+- [[Any_56]] - code - gateway/security/session_manager.py
+- [[Atomically persist current sessions to the metadata file.          Writes are se]] - rationale - gateway/security/session_manager.py
+- [[Check if a user can access another user's session.]] - rationale - gateway/security/session_manager.py
+- [[Check if we can create the given directory path.]] - rationale - gateway/proxy/webhook_receiver.py
+- [[Clean up sessions that haven't been active for the specified number of days.]] - rationale - gateway/security/session_manager.py
+- [[Concurrent add_conversation_message calls (each of which saves) must         not]] - rationale - gateway/tests/test_session_manager.py
+- [[ConversationMessage]] - code - gateway/security/session_manager.py
+- [[Convert session to dictionary for serialization.]] - rationale - gateway/security/session_manager.py
+- [[Create a UserSessionManager with a temp base workspace and an owner.]] - rationale - gateway/tests/test_session_manager.py
+- [[Create a session manager with temporary workspace.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create a session manager.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create a temporary workspace for testing.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create a temporary workspace.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create middleware manager with session isolation.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create session from dictionary.]] - rationale - gateway/security/session_manager.py
+- [[End-to-end integration tests for session isolation.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Extract display name from webhook payload.]] - rationale - gateway/proxy/webhook_receiver.py
+- [[Extract message text from webhook payload (Telegram format).]] - rationale - gateway/proxy/webhook_receiver.py
+- [[Extract the key_id from an encrypted blob without decrypting.]] - rationale - gateway/security/encrypted_store.py
+- [[Extract user ID from webhook payload based on source platform.]] - rationale - gateway/proxy/webhook_receiver.py
+- [[Get existing session or create a new one for the (user_id, bot_id) pair.]] - rationale - gateway/security/session_manager.py
+- [[Get or create a shared workspace + MEMORY.md for a group.]] - rationale - gateway/security/session_manager.py
+- [[Get session context for injection into agent request.]] - rationale - gateway/security/session_manager.py
+- [[Get session-specific prompt addition for the agent.]] - rationale - gateway/security/session_manager.py
+- [[Get the workspace path for a user within a bot's namespace.]] - rationale - gateway/security/session_manager.py
+- [[GroupSession]] - code - gateway/security/session_manager.py
+- [[History should be capped at 1000 messages.]] - rationale - gateway/tests/test_session_manager.py
+- [[If the write to the temp file fails mid-flight, the existing         registry on]] - rationale - gateway/tests/test_session_manager.py
+- [[Initialize session manager.          Args             base_workspace Base dire]] - rationale - gateway/security/session_manager.py
+- [[Initialize the encrypted store.          Args             master_secret The ma]] - rationale - gateway/security/encrypted_store.py
+- [[Input normalization should strip zero-width obfuscation before guards run.]] - rationale - gateway/tests/test_session_isolation.py
+- [[List session keys that the requesting user is allowed to see.          Returns t]] - rationale - gateway/security/session_manager.py
+- [[Load existing sessions from metadata file.          Handles both the new ``{use]] - rationale - gateway/security/session_manager.py
+- [[Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id]] - rationale - gateway/security/session_manager.py
+- [[Original system prompt content is always preserved in the output.]] - rationale - gateway/tests/test_session_manager.py
+- [[Path_4]] - code - gateway/proxy/webhook_receiver.py
+- [[Path_17]] - code - gateway/security/session_manager.py
+- [[Preamble contains a security notice keyword.]] - rationale - gateway/tests/test_session_manager.py
+- [[Prepare payload with session context injection.]] - rationale - gateway/proxy/webhook_receiver.py
+- [[Process an incoming webhook through the security pipeline.]] - rationale - gateway/proxy/webhook_receiver.py
+- [[Re-anchoring prepends a security notice to the system prompt.]] - rationale - gateway/tests/test_session_manager.py
+- [[Receives webhooks and routes them through the security pipeline.      In product]] - rationale - gateway/proxy/webhook_receiver.py
+- [[Registry writes must be atomic (os.replace) and serialized (lock).      The sess]] - rationale - gateway/tests/test_session_manager.py
+- [[Replace message text in payload with sanitized version.]] - rationale - gateway/proxy/webhook_receiver.py
+- [[Represents a shared workspace + memory for a group.]] - rationale - gateway/security/session_manager.py
+- [[Represents an isolated session for a user within a specific bot workspace.]] - rationale - gateway/security/session_manager.py
+- [[Resolve master secret from args, file, or environment.]] - rationale - gateway/security/encrypted_store.py
+- [[Return True if user_id is a member of group_id.          Checks rbac_config.get_]] - rationale - gateway/security/session_manager.py
+- [[Return the cache key string for a (user_id, bot_id) pair.]] - rationale - gateway/security/session_manager.py
+- [[Return the system prompt with a re-anchoring preamble prepended.          Called]] - rationale - gateway/security/session_manager.py
+- [[Return user MEMORY.md + all accessible group MEMORY.md contents for prompt injec]] - rationale - gateway/security/session_manager.py
+- [[Test WebhookReceiver integration with session isolation.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test complete isolation between two users.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test middleware enforcement of session boundaries.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that conversation histories are isolated per user.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that conversations are logged per user.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that each user gets isolated directories.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that memory files are isolated per user.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that middleware blocks access to sensitive system files.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that middleware blocks cross-session access attempts.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that middleware injects session context.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that middleware requires user identification.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that owner can access all sessions.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that owner can perform cross-session actions.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that owneradmin can access all user sessions.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that session context is injected into forwarded requests.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that session context is properly generated.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that session listing respects authorization.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that session prompts include isolation instructions.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that sessions persist across manager restarts.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that trust levels are tracked per user.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that user IDs are properly extracted from webhook payloads.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that user sessions are created properly.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test that users can access their own workspace.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Test the UserSessionManager for per-user isolation.]] - rationale - gateway/tests/test_session_isolation.py
+- [[TestAccessControl_2]] - code - gateway/tests/test_session_manager.py
+- [[TestAtomicRegistryWrites]] - code - gateway/tests/test_session_manager.py
+- [[TestConversationHistory]] - code - gateway/tests/test_session_manager.py
+- [[TestInputValidation]] - code - gateway/tests/test_session_manager.py
+- [[TestMiddlewareSessionEnforcement]] - code - gateway/tests/test_session_isolation.py
+- [[TestSerialization_1]] - code - gateway/tests/test_session_manager.py
+- [[TestSessionContext]] - code - gateway/tests/test_session_manager.py
+- [[TestSessionIsolation]] - code - gateway/tests/test_session_manager.py
+- [[TestSessionIsolationEndToEnd]] - code - gateway/tests/test_session_isolation.py
+- [[TestSystemPromptReanchoring]] - code - gateway/tests/test_session_manager.py
+- [[TestTrustLevel]] - code - gateway/tests/test_session_manager.py
+- [[TestUserSessionManager]] - code - gateway/tests/test_session_isolation.py
+- [[TestWebhookReceiverIntegration]] - code - gateway/tests/test_session_isolation.py
+- [[Update the trust level for a user within a bot's namespace.]] - rationale - gateway/security/session_manager.py
+- [[UserSession]] - code - gateway/security/session_manager.py
+- [[UserSessionManager]] - code - gateway/security/session_manager.py
+- [[Validate and sanitize bot_id to prevent path traversal.          Allows alphanum]] - rationale - gateway/security/session_manager.py
+- [[Validate and sanitize user_id to prevent path traversal.          Only allows al]] - rationale - gateway/security/session_manager.py
+- [[Validate that default_url uses httphttps and targets an internal Docker host.]] - rationale - gateway/ingest_api/config.py
+- [[Validate that each target URL uses httphttps and targets an internal Docker hos]] - rationale - gateway/ingest_api/config.py
+- [[Validate the X-Telegram-Bot-Api-Secret-Token header.          Uses constant-time]] - rationale - gateway/proxy/webhook_receiver.py
+- [[ValueError]] - code
+- [[WebhookReceiver]] - code - gateway/proxy/webhook_receiver.py
+- [[_is_connect_error matches connection-level failures only.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[_save_sessions must go through os.replace(tmp, final), never a         partial i]] - rationale - gateway/tests/test_session_manager.py
+- [[_score_access_control_authorization() (domain 14, FR2)]] - code - gateway/security/scanner_integration.py
+- [[mgr()_2]] - code - gateway/tests/test_session_manager.py
+- [[session_manager.py]] - code - gateway/security/session_manager.py
+- [[test_is_connect_error_classification()]] - code - gateway/tests/test_llm_proxy.py
+- [[test_session_isolation.py]] - code - gateway/tests/test_session_isolation.py
+- [[test_session_manager.py]] - code - gateway/tests/test_session_manager.py
+- [[webhook_receiver.py]] - code - gateway/proxy/webhook_receiver.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/URL/Domain_Validation_Tests
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 35 edges to [[_COMMUNITY_Security Module Middleware]]
+- 28 edges to [[_COMMUNITY_Group Workspace Isolation]]
+- 21 edges to [[_COMMUNITY_Auth & Exception Types]]
+- 13 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 9 edges to [[_COMMUNITY_Slack API Proxy]]
+- 9 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 8 edges to [[_COMMUNITY_HTTP Forwarder]]
+- 6 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 5 edges to [[_COMMUNITY_Forward Routing & Approval]]
+- 5 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 5 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Ingest API]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_PII Config & Test Fixtures]]
+- 2 edges to [[_COMMUNITY_Approval Queue Tests]]
+- 2 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Progressive Trust Config]]
+- 2 edges to [[_COMMUNITY_SOC RBAC & Auth]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 1 edge to [[_COMMUNITY_Enhanced Approval Queue]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_scriptsgenerate-cve-page.py]]
+- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 1 edge to [[_COMMUNITY_LLM Proxy Resource Guard]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Collaborator Response Templates]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+
+## Top bridge nodes
+- [[UserSessionManager]] - degree 153, connects to 14 communities
+- [[ValueError]] - degree 29, connects to 12 communities
+- [[WebhookReceiver]] - degree 43, connects to 6 communities
+- [[TestMiddlewareSessionEnforcement]] - degree 18, connects to 3 communities
+- [[TestWebhookReceiverIntegration]] - degree 15, connects to 3 communities

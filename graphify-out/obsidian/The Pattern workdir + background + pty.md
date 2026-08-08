@@ -1,0 +1,17 @@
+---
+source_file: "skills/openclaw/coding-agent/SKILL.md"
+type: "document"
+community: "skills/openclaw"
+location: "L70"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/skills/openclaw
+---
+
+# The Pattern: workdir + background + pty
+
+## Connections
+- [[Coding Agent (bash-first)]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

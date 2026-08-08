@@ -1,0 +1,140 @@
+---
+type: community
+cohesion: 0.04
+members: 101
+---
+
+# MCP Policy Engine
+
+**Cohesion:** 0.04 - loosely connected
+**Members:** 101 nodes
+
+## Members
+- [[.__init__()_91]] - code - gateway/security/mcp_policy.py
+- [[.__init__()_158]] - code - gateway/tests/test_mcp_policy.py
+- [[.__post_init__()_4]] - code - gateway/security/mcp_policy.py
+- [[._decide()]] - code - gateway/security/mcp_policy.py
+- [[._tier_for()]] - code - gateway/security/mcp_policy.py
+- [[.allowed()]] - code - gateway/security/mcp_policy.py
+- [[.enforce()]] - code - gateway/security/mcp_policy.py
+- [[.evaluate()]] - code - gateway/security/mcp_policy.py
+- [[.from_dict()_6]] - code - gateway/security/mcp_policy.py
+- [[.submit_tool_request()_1]] - code - gateway/tests/test_mcp_policy.py
+- [[.test_configured_servers_are_allowlisted_by_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[.test_engine_allows_known_server_under_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[.test_engine_denies_unknown_server_under_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[.test_engine_requires_approval_for_destructive_tool_on_known_server()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[.test_explicit_policy_section_is_not_overridden()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[.test_missing_section_yields_deny_by_default_policy()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[.test_no_mcp_section_still_deny_by_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[.wait_for_decision()_1]] - code - gateway/tests/test_mcp_policy.py
+- [[A REAL EnhancedApprovalQueue + default ToolRiskConfig must NOT let the     engin]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A config with no mcp_proxy AND no mcp_policy still yields a fail-closed]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[A destructive tool the operator forgot to classify is still caught as     high-r]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A fullwidthhomoglyph tool name must not evade the denylistkeyword     heuristi]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A knownallowlisted server's non-high-risk tool is still ALLOWED — no breakage.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[A malformed default_action in YAML must not fail open — it becomes deny.]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A policy-permitted call passes the policy gate (inspectionpermission     layers]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A representative policy two allowlisted servers, one denylisted server,     a p]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A risk tier declared with a bare tool name applies on any allowlisted     server]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A server both allowed and denied is denied (deny wins).]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A stock config (no mcp_policy) must produce a non-empty, deny-by-default policy]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[An empty config denies everything — never a blanket allow.]] - rationale - gateway/tests/test_mcp_policy.py
+- [[An operator-authored mcp_policy section must be honoured verbatim.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[Any_44]] - code - gateway/security/mcp_policy.py
+- [[Decides allow  deny  require-approval for MCP tool calls.      Usage]] - rationale - gateway/security/mcp_policy.py
+- [[Declarative MCP security policy.      Loaded from the ``mcp_policy`` section of]] - rationale - gateway/security/mcp_policy.py
+- [[End-to-end the engine wired into MCPProxy with a REAL approval queue     must n]] - rationale - gateway/tests/test_mcp_policy.py
+- [[Evaluate a single MCP tool call. Pure — no IO, no side effects         beyond b]] - rationale - gateway/security/mcp_policy.py
+- [[Evaluate and resolve the decision to a terminal ALLOWDENY.          For REQUIRE]] - rationale - gateway/security/mcp_policy.py
+- [[Fail-closed intent even on a known server, an obviously destructive         too]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[Fail-closed a high-risk tool with no approval queue wired is denied,     never]] - rationale - gateway/tests/test_mcp_policy.py
+- [[Fail-closed if the queue returns requires_wait=False for a call the     engine]] - rationale - gateway/tests/test_mcp_policy.py
+- [[Knownconfigured MCP servers must be carried into the default allowlist]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[LOW finding when owner_bypass is enabled but owner_user_id is left     blank, t]] - rationale - gateway/tests/test_mcp_policy.py
+- [[MCPPolicyAction]] - code - gateway/security/mcp_policy.py
+- [[MCPPolicyConfig_1]] - code - gateway/tests/test_mcp_policy.py
+- [[MCPPolicyConfig]] - code - gateway/security/mcp_policy.py
+- [[MCPPolicyDecision]] - code - gateway/security/mcp_policy.py
+- [[MCPPolicyEngine_1]] - code - gateway/tests/test_mcp_policy.py
+- [[MCPPolicyEngine]] - code - gateway/security/mcp_policy.py
+- [[Minimal stand-in for EnhancedApprovalQueue.      Records submissions and returns]] - rationale - gateway/tests/test_mcp_policy.py
+- [[MonkeyPatch]] - code - gateway/tests/test_mcp_policy.py
+- [[Normalize a servertool reference for robust, evasion-resistant matching.      A]] - rationale - gateway/security/mcp_policy.py
+- [[Owner skips the approval gate for high-risk tools, but a denylisted     tool is]] - rationale - gateway/tests/test_mcp_policy.py
+- [[Parse a policy config from a plain dict (e.g. loaded from YAML).]] - rationale - gateway/security/mcp_policy.py
+- [[Path_31]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[Resolve the risk tier for a tool.          Explicit classification (qualified be]] - rationale - gateway/security/mcp_policy.py
+- [[TestDefaultMcpPolicyIsFailClosed]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[TestDefaultPolicyNoMcpServers]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[The engine wired into MCPProxy blocks a denied call before dispatch —     the fa]] - rationale - gateway/tests/test_mcp_policy.py
+- [[The result of evaluating a single MCP tool call against the policy.]] - rationale - gateway/security/mcp_policy.py
+- [[The synthesised default, fed to the engine, DENIES an unknown server.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[The three terminal policy outcomes for an MCP tool call.]] - rationale - gateway/security/mcp_policy.py
+- [[True only for a terminal ALLOW.          REQUIRE_APPROVAL is not allowed on it]] - rationale - gateway/security/mcp_policy.py
+- [[When an operator explicitly opts into default-allow, a non-allowlisted     serve]] - rationale - gateway/tests/test_mcp_policy.py
+- [[_FakeApprovalQueue]] - code - gateway/tests/test_mcp_policy.py
+- [[_base_config()]] - code - gateway/tests/test_mcp_policy.py
+- [[_norm()]] - code - gateway/security/mcp_policy.py
+- [[_write()_1]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[engine()]] - code - gateway/tests/test_mcp_policy.py
+- [[evaluate() records the decision for the SOC module heat-map.]] - rationale - gateway/tests/test_mcp_policy.py
+- [[mcp_policy.py]] - code - gateway/security/mcp_policy.py
+- [[test_allowlisted_server_safe_tool_is_allowed()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_bare_tool_name_risk_tier_applies_across_servers()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_critical_tool_requires_approval()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_decision_records_soc_heatmap()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_default_allow_opt_in_permits_non_allowlisted_safe_tool()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_default_deny_posture_when_no_config()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_denied_tool_can_be_specified_bare_or_qualified()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_denylist_wins_over_allowlist()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_denylisted_server_is_denied_even_if_tool_safe()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_denylisted_tool_is_denied()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_allows_allowlisted_safe_tool()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_blocks_unknown_server()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_high_risk_denied_on_rejection()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_high_risk_enqueues_and_allows_on_approval()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_high_risk_queue_no_wait_denies_closed()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_high_risk_without_queue_denies_closed()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_real_queue_high_risk_not_downgraded_to_allow (regression guard)]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_real_queue_high_risk_not_downgraded_to_allow()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_unicode_evasion_still_denied()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_high_risk_tool_requires_approval()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_invalid_default_action_falls_back_to_deny()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_keyword_heuristic_auto_classifies_unlisted_destructive_tool()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_mcp_policy.py]] - code - gateway/tests/test_mcp_policy.py
+- [[test_mcp_policy_default_failclosed.py]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[test_mcp_proxy_allows_policy_permitted_call()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_mcp_proxy_blocks_policy_denied_call()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_owner_bypass_defaults_to_rbac_owner_identity()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_owner_bypasses_approval_but_not_hard_deny()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_server_and_tool_matching_is_case_insensitive()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_unknown_server_is_denied_by_default()]] - code - gateway/tests/test_mcp_policy.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/MCP_Policy_Engine
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 21 edges to [[_COMMUNITY_Enhanced Approval Queue]]
+- 16 edges to [[_COMMUNITY_Auth & Exception Types]]
+- 16 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 9 edges to [[_COMMUNITY_Forward Routing & Approval]]
+- 6 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 1 edge to [[_COMMUNITY_SOC Dashboard]]
+- 1 edge to [[_COMMUNITY_Group RBAC Roles]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+
+## Top bridge nodes
+- [[test_mcp_policy.py]] - degree 46, connects to 4 communities
+- [[MCPPolicyEngine_1]] - degree 39, connects to 4 communities
+- [[_FakeApprovalQueue]] - degree 20, connects to 4 communities
+- [[MCPPolicyConfig_1]] - degree 14, connects to 4 communities
+- [[MonkeyPatch]] - degree 13, connects to 4 communities

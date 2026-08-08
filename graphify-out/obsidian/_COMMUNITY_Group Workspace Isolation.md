@@ -1,0 +1,219 @@
+---
+type: community
+cohesion: 0.01
+members: 178
+---
+
+# Group Workspace Isolation
+
+**Cohesion:** 0.01 - loosely connected
+**Members:** 178 nodes
+
+## Members
+- [[.__init__()_114]] - code - gateway/security/shared_memory.py
+- [[._is_authorized_group_writer()]] - code - gateway/security/shared_memory.py
+- [[._strip_private_content()]] - code - gateway/security/shared_memory.py
+- [[.append_to_group_memory()]] - code - gateway/security/shared_memory.py
+- [[.append_to_user_memory()]] - code - gateway/security/shared_memory.py
+- [[.contains_private_content()]] - code - gateway/security/shared_memory.py
+- [[.get_group_memory()]] - code - gateway/security/shared_memory.py
+- [[.get_merged_memory_for_user()]] - code - gateway/security/shared_memory.py
+- [[.get_topic_scoped_memory()]] - code - gateway/security/shared_memory.py
+- [[.get_user_memory()]] - code - gateway/security/shared_memory.py
+- [[.resolve_workspace()]] - code - gateway/security/group_workspace.py
+- [[.test_active_group_appears_first()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_ai_security_research_domains_in_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_append_to_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_append_to_user_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_bot_agent_ids_are_namespace_separated_from_user_ids()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_clean_text_not_flagged()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_collaborator_gets_filtered_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_cross_group_member_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_detects_api_key_pattern()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_detects_bearer_token()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_detects_private_section_header()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_duckduckgo_in_permanent_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_empty_author_is_denied()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_failover_search_engines_in_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_foreign_writer_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_get_group_memory_empty_initially()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_get_user_memory_openclaw_and_hermes_are_separate_paths()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_get_user_memory_returns_string()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_group_a_write_invisible_from_group_b()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_b_write_invisible_from_group_a()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_id_uses_group_prefix_namespace()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_memory_physically_isolated()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_write_invisible_from_user_dm()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_group_write_io_failure_returns_false()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_group_writes_are_independent_namespaces()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_hc_ping_in_permanent_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hermes_dashboard_forwarder_bind_address_is_documented()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hermes_dashboard_stays_loopback_and_gateway_uses_the_bridge_port()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hermes_memory_write_does_not_appear_in_openclaw_memory()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hermes_registered_with_standard_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_hermes_violation_does_not_affect_openclaw_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_legacy_no_author_write_still_appends()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_legacy_no_rbac_write_still_appends()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_member_authorized()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_member_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_merged_memory_separates_group_and_dm()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_missing_rbac_is_denied()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_multiple_appends_accumulate()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_non_member_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_nousresearch_in_permanent_allowlist()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_openclaw_memory_write_does_not_appear_in_hermes_memory()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_openclaw_violation_does_not_affect_hermes_trust()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_owner_gets_unfiltered_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_owner_sees_all_groups()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_owner_write_into_user_memory_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_owner_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_run_standalone_sets_matching_bridge_port()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_self_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_shared_memory_manager_get_user_memory_accepts_bot_id()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[.test_strip_private_content_redacts_api_key()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_strip_private_section()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_topic_scoped_excludes_non_matching_project_scoped_group()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_topic_scoped_includes_local_only_group()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_topic_scoped_returns_matching_group()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_unknown_group_write_is_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_unknown_user_sees_only_private_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_user_dm_write_invisible_from_group()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_user_dm_write_invisible_from_other_group()]] - code - gateway/tests/test_group_isolation.py
+- [[.test_user_does_not_see_other_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_user_memory_isolated_between_users()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_user_sees_own_private_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_user_sees_their_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_user_write_io_failure_returns_false()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[A legitimate group member's write lands.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[A member of group B cannot write into group A's memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[A non-owner author cannot write into another user's private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[A user may write into their own private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[A user who is NOT a member of the target group cannot poison its memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[AI-security researchcompetitive-intel domains must be allowlisted.          The]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[An emptyNone author is never authorized.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[Append a timestamped entry to the group shared memory file.          Authorizati]] - rationale - gateway/security/shared_memory.py
+- [[Append content to user's private memory file.          Authorization (RT-5, WS-E]] - rationale - gateway/security/shared_memory.py
+- [[BT-H1 SharedMemoryManager.get_user_memory must accept a bot_id parameter.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-H3 The filesystem paths for openclaw and hermes sessions differ.          Re]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-H4 (reverse) Writing to Hermes workspace does not bleed into OpenClaw.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-H4 Writing to the openclaw workspace must not leak into the hermes workspace]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-M1 The Hermes TCP dashboard forwarder (port 9119) binds on 0.0.0.0.      Thi]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[BT-M1 Verify the forwarder bind address — currently 0.0.0.0 (accepted risk).]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Back-compat existing callers that pass no author_idrbac_config keep working.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[Back-compat with no RBAC context supplied, the namespace-isolation         call]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[Both groups store separate content with no cross-contamination.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Build merged memory context for bot prompt injection.          Includes]] - rationale - gateway/security/shared_memory.py
+- [[Content appended to group-A memory must not appear in group-B memory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Content appended to group-B must not appear in group-A memory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Content written to a group must not appear in any user's private DM memory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Content written to a user DM must not appear in any group memory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Finding BT-H1BT-H2BT-H3 SharedMemoryManager must not collapse bot workspaces.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Finding RT-N1RT-N2 TrustManager uses shared in-memory DB keyed by agent_id.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Group workspace content must not leak into any user's DM workspace.]] - rationale - gateway/tests/test_group_isolation.py
+- [[GroupAccessDenied]] - code - gateway/security/group_workspace.py
+- [[Hermes base image is from nousresearch.com — must be in egress allowlist.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Hermes ddgs-based web search requires duckduckgo.com.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Hermes heartbeat uses hc-ping.com for dead-man's switch.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Hermes's dashboard binds 127.0.0.1 inside its own container (vendor     hermes-a]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[High-level shared-memory API wrapping UserSessionManager storage.]] - rationale - gateway/security/shared_memory.py
+- [[If the underlying session store raises, the authorized write reports         fai]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[Isolated temporary workspace for session manager.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[No RBAC principal → cannot authorize → deny (fail-closed).]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[PR190 failover search engines must be allowlisted.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N1 (reverse) Hermes violation must not demote OpenClaw.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N1 Recording a violation against openclaw MUST NOT change hermes trust.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N2 Bot agent IDs ('openclaw', 'hermes') are separate from user IDs.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N3 After seeding, hermes trust level is STANDARD (matching lifespan.py).]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[RT-N3 lifespan.py seeds 'hermes' with STANDARD trust.      Verifies the seeding]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[Raised when a user is not permitted to access a group workspace.      Subclasses]] - rationale - gateway/security/group_workspace.py
+- [[Read raw group shared memory. Returns empty string if not yet created.]] - rationale - gateway/security/shared_memory.py
+- [[Read raw private memory for a user.          Args             user_id The user]] - rationale - gateway/security/shared_memory.py
+- [[Remove private-looking content from shared memory before serving         to non-]] - rationale - gateway/security/shared_memory.py
+- [[Resolve the workspacecontext for an inbound message, fail-closed.          Retu]] - rationale - gateway/security/group_workspace.py
+- [[Resolved workspacecontext identity for a single inbound message.      Attribute]] - rationale - gateway/security/group_workspace.py
+- [[Return True if ``author_id`` may WRITE to ``group_id`` shared memory.          R]] - rationale - gateway/security/shared_memory.py
+- [[Return True if text contains patterns matching privatesensitive content.]] - rationale - gateway/security/shared_memory.py
+- [[Return memory from groups whose focus_topics match the query text.          For]] - rationale - gateway/security/shared_memory.py
+- [[SharedMemoryManager]] - code - gateway/security/shared_memory.py
+- [[TestAuthorizationHelper]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[TestBotIdIsolationInSharedMemory]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestCrossBotTrustPivot]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestGroupMemoryInvisibleFromDM]] - code - gateway/tests/test_group_isolation.py
+- [[TestGroupMemoryNamespaceIsolation]] - code - gateway/tests/test_group_isolation.py
+- [[TestGroupMemoryReadWrite]] - code - gateway/tests/test_shared_memory.py
+- [[TestGroupMemoryWriteACL]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[TestHermesDashboardBridgeReachability]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestHermesDashboardForwarderBinding]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestHermesEgressAllowlist]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestHermesTrustSeeding]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[TestMergedMemory]] - code - gateway/tests/test_shared_memory.py
+- [[TestPrivateContentDetection]] - code - gateway/tests/test_shared_memory.py
+- [[TestTopicScopedMemory]] - code - gateway/tests/test_shared_memory.py
+- [[TestUserMemoryWriteACL]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[TestUserPrivateMemory]] - code - gateway/tests/test_shared_memory.py
+- [[TestWriteFailurePath]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[The owner may write into any group's memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[The owner may write into any user's private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[User DM content must not leak into a group the user is NOT a member of.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Verify that Hermes-specific egress destinations are in the canonical allowlist.]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[WorkspaceContext]] - code - gateway/security/group_workspace.py
+- [[Writes in group-A must not be readable from group-B.]] - rationale - gateway/tests/test_group_isolation.py
+- [[Writing to a group that does not exist in the RBAC config is denied.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[agent_isolation.py (AgentRegistry)]] - code - gateway/security/agent_isolation.py
+- [[get_merged_memory_for_user returns group section and private section separately.]] - rationale - gateway/tests/test_group_isolation.py
+- [[group-A and group-B memory files must be in separate directories.]] - rationale - gateway/tests/test_group_isolation.py
+- [[group-{chat_id} sessions must live under the 'groups' subdirectory.]] - rationale - gateway/tests/test_group_isolation.py
+- [[group_config.py (TeamsConfig)]] - code - gateway/security/group_config.py
+- [[group_workspace.py]] - code - gateway/security/group_workspace.py
+- [[rbac()]] - code - gateway/tests/test_group_isolation.py
+- [[rbac()_4]] - code - gateway/tests/test_shared_memory.py
+- [[rbac()_5]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[run-standalone.sh is the actual deploy path for Hermes (docker run, not]] - rationale - gateway/tests/test_security_regressions_v1_2.py
+- [[session_manager()_1]] - code - gateway/tests/test_group_isolation.py
+- [[session_manager()_3]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[session_manager()_4]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[session_manager.py (UserSessionManager)]] - code - gateway/security/session_manager.py
+- [[session_mgr()]] - code - gateway/tests/test_shared_memory.py
+- [[shared_memory()]] - code - gateway/tests/test_group_isolation.py
+- [[shared_memory()_2]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[shared_memory.py]] - code - gateway/security/shared_memory.py
+- [[shared_memory.py (SharedMemoryManager)]] - code - gateway/security/shared_memory.py
+- [[smm()]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[smm()_1]] - code - gateway/tests/test_shared_memory.py
+- [[teams()_2]] - code - gateway/tests/test_group_isolation.py
+- [[test_group_isolation.py]] - code - gateway/tests/test_group_isolation.py
+- [[test_security_regressions_v1_2.py]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[test_shared_memory.py]] - code - gateway/tests/test_shared_memory.py
+- [[test_shared_memory_write_acl.py]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[tmp_workspace()]] - code - gateway/tests/test_group_isolation.py
+- [[tmp_workspace()_1]] - code - gateway/tests/test_security_regressions_v1_2.py
+- [[tmp_workspace()_2]] - code - gateway/tests/test_shared_memory.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Group_Workspace_Isolation
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 28 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 28 edges to [[_COMMUNITY_URLDomain Validation Tests]]
+- 22 edges to [[_COMMUNITY_Auth & Exception Types]]
+- 20 edges to [[_COMMUNITY_Collaborator Response Templates]]
+- 15 edges to [[_COMMUNITY_Progressive Trust Config]]
+- 8 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_SOC Collaborator Lifecycle]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_SOC RBAC & Auth]]
+- 2 edges to [[_COMMUNITY_PII Config & Test Fixtures]]
+- 1 edge to [[_COMMUNITY_SOC Service Manager]]
+- 1 edge to [[_COMMUNITY_Group RBAC Roles]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+
+## Top bridge nodes
+- [[SharedMemoryManager]] - degree 56, connects to 6 communities
+- [[test_group_isolation.py]] - degree 19, connects to 5 communities
+- [[test_security_regressions_v1_2.py]] - degree 19, connects to 5 communities
+- [[GroupAccessDenied]] - degree 15, connects to 4 communities
+- [[test_shared_memory_write_acl.py]] - degree 15, connects to 4 communities

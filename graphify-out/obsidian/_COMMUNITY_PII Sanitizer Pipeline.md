@@ -1,0 +1,464 @@
+---
+type: community
+cohesion: 0.01
+members: 365
+---
+
+# PII Sanitizer Pipeline
+
+**Cohesion:** 0.01 - loosely connected
+**Members:** 365 nodes
+
+## Members
+- [[.__init__()_17]] - code - gateway/ingest_api/ledger.py
+- [[.__init__()_19]] - code - gateway/ingest_api/sanitizer.py
+- [[.__init__()_74]] - code - gateway/security/encoding_detector.py
+- [[._hash_content()]] - code - gateway/ingest_api/ledger.py
+- [[._init_presidio()]] - code - gateway/ingest_api/sanitizer.py
+- [[._sanitize_presidio()]] - code - gateway/ingest_api/sanitizer.py
+- [[._sanitize_regex()]] - code - gateway/ingest_api/sanitizer.py
+- [[.analyze()_1]] - code - gateway/security/encoding_detector.py
+- [[.block_credentials()_1]] - code - gateway/ingest_api/sanitizer.py
+- [[.check_response()_1]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.close()_4]] - code - gateway/ingest_api/ledger.py
+- [[.decode_base64_segments()]] - code - gateway/security/encoding_detector.py
+- [[.decode_hex()]] - code - gateway/security/encoding_detector.py
+- [[.decode_rot13()]] - code - gateway/security/encoding_detector.py
+- [[.decode_url()]] - code - gateway/security/encoding_detector.py
+- [[.default_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.delete_entry()]] - code - gateway/ingest_api/ledger.py
+- [[.enforce_retention()]] - code - gateway/ingest_api/ledger.py
+- [[.filter_xml_blocks()_1]] - code - gateway/ingest_api/sanitizer.py
+- [[.get_entry()]] - code - gateway/ingest_api/ledger.py
+- [[.get_mode()]] - code - gateway/ingest_api/sanitizer.py
+- [[.get_stats()_2]] - code - gateway/ingest_api/ledger.py
+- [[.get_supported_entities()]] - code - gateway/ingest_api/sanitizer.py
+- [[.guard()_2]] - code - gateway/tests/test_performance.py
+- [[.guard()_5]] - code - gateway/tests/test_security_audit.py
+- [[.initialize()_2]] - code - gateway/ingest_api/ledger.py
+- [[.ledger()]] - code - gateway/tests/test_performance.py
+- [[.ledger()_1]] - code - gateway/tests/test_performance.py
+- [[.mock_config()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.pipeline()_1]] - code - gateway/tests/test_performance.py
+- [[.pipeline()]] - code - gateway/tests/test_performance.py
+- [[.reanchor_delimiters()]] - code - gateway/security/prompt_guard.py
+- [[.record()]] - code - gateway/ingest_api/ledger.py
+- [[.replace_homoglyphs()]] - code - gateway/security/encoding_detector.py
+- [[.sanitize()_1]] - code - gateway/ingest_api/sanitizer.py
+- [[.sanitize()_3]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.sanitizer()]] - code - gateway/tests/test_performance.py
+- [[.sanitizer()_1]] - code - gateway/tests/test_security_audit.py
+- [[.set_global_mode()]] - code - gateway/proxy/pipeline.py
+- [[.setup_method()_5]] - code - gateway/tests/test_encoding_detector.py
+- [[.strip_zero_width()]] - code - gateway/security/encoding_detector.py
+- [[.test_1000_entries_all_recorded()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_1000_entries_under_5s()]] - code - gateway/tests/test_performance.py
+- [[.test_1000_messages_under_10s()]] - code - gateway/tests/test_performance.py
+- [[.test_1000_messages_under_5s()]] - code - gateway/tests/test_performance.py
+- [[.test_100_inbound_messages_under_5s()]] - code - gateway/tests/test_performance.py
+- [[.test_100_outbound_messages_under_5s()]] - code - gateway/tests/test_performance.py
+- [[.test_50_concurrent_writes()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_agents_process_independently()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_base64_content_decoded()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_base64_detected()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_benign_message_passes()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_blocked_message_has_audit_entry()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_canary_token_triggers_block()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_classic_injection_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_clean_response_not_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_clean_response_passes_unchanged()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_concurrent_write_and_read()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_config_disable_base64()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_content_hashes_are_unique()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_credit_card_stripped_from_response()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_cross_context_injection_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_default_pii_config_meets_floor()]] - code - gateway/tests/test_tool_result_pii.py
+- [[.test_delete_entry_removes_it()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_delete_nonexistent_returns_false()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_detection_accuracy_at_scale()]] - code - gateway/tests/test_performance.py
+- [[.test_email_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_empty_input()_1]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_encoding_detector_is_wired()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_enforce_retention_deletes_expired()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_entry_retrieval_by_id()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_forwarded_message_has_audit_entry()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_hash_is_sha256()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_hash_matches_content()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_homoglyph_replaced()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_jailbreak_blocked()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_low_trust_cannot_delete_file()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_many_pii_entities()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[.test_nested_encoding()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_nonexistent_entry_returns_none()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_phone_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_pii_detection_accuracy_at_scale()]] - code - gateway/tests/test_performance.py
+- [[.test_pii_from_agent_a_not_in_agent_b_audit()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_pii_inbound_latency()]] - code - gateway/tests/test_performance.py
+- [[.test_pii_sanitizer_default_enforcement()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_pii_sanitizer_mode_param()]] - code - gateway/tests/test_enforce_defaults.py
+- [[.test_pii_scan_time_independent_of_content()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[.test_pipeline_raises_with_only_prompt_guard()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_pipeline_raises_without_pii_sanitizer()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_plain_text_no_detection()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_prompt_guard_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
+- [[.test_prompt_guard_large_input()]] - code - gateway/tests/test_security_audit.py
+- [[.test_query_after_1000_entries()]] - code - gateway/tests/test_performance.py
+- [[.test_query_filter_by_source()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_query_pagination()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_regex_redos_email()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[.test_regex_redos_ssn()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[.test_resolve_text_field_falls_back_to_first_string_when_all_empty()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_resolve_text_field_prefers_first_non_empty_field()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[.test_short_base64_not_flagged()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_single_inbound_under_200ms()]] - code - gateway/tests/test_performance.py
+- [[.test_single_message_pipeline_under_100ms()]] - code - gateway/tests/test_performance.py
+- [[.test_single_outbound_under_200ms()]] - code - gateway/tests/test_performance.py
+- [[.test_ssn_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_stats_correct()]] - code - gateway/tests/test_audit_chain.py
+- [[.test_trusted_agent_can_send_message()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[.test_unicode_normalization_bypass()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[.test_url_encoding_detected()]] - code - gateway/tests/test_encoding_detector.py
+- [[.test_write_baseline_json()]] - code - gateway/tests/test_performance.py
+- [[.test_zero_width_stripped()]] - code - gateway/tests/test_encoding_detector.py
+- [[100 messages through process_inbound in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
+- [[50 concurrent write operations should all succeed.]] - rationale - gateway/tests/test_audit_chain.py
+- [[A homoglyph-obfuscated injection is normalized-and-blocked inbound.      The pay]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[A nested base64(base64(injection)) payload is peeled and blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[A plain unencoded benign message is untouched by the encoding step.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[AppState]] - code - gateway/ingest_api/state.py
+- [[Async SQLite-backed data ledger      Records all content forwarded through the g]] - rationale - gateway/ingest_api/ledger.py
+- [[Attempting to create a pipeline with no PII sanitizer raises RuntimeError.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Audit chain 1000 entries in  5s.]] - rationale - gateway/tests/test_performance.py
+- [[B1 one-shot 400-retry for unbalanced HTML parse errors.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Block credential display via untrusted sources (e.g., Telegram)          Args]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Blocking agent A does not affect agent B's processing.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Can retrieve specific entry by ID for verification.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Chain with many entries — verify integrity.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Cleartext injection is not re-rotated into noise (indicator already present).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Close database connection]] - rationale - gateway/ingest_api/ledger.py
+- [[Collect and write benchmark baselines to .benchmarksbaseline-v1.0.0.json.]] - rationale - gateway/tests/test_performance.py
+- [[Concurrent writes and reads don't conflict.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Concurrent writes to chain.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Container for application-wide state]] - rationale - gateway/ingest_api/state.py
+- [[Content hash should be a valid SHA-256 hex digest.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Create a new ledger entry          Args             source Source identifier (]] - rationale - gateway/ingest_api/ledger.py
+- [[Create an initialized in-memory ledger for testing      Yields the ledger, then]] - rationale - gateway/tests/conftest.py
+- [[Create database, tables, and run initial cleanup          Must be called before]] - rationale - gateway/ingest_api/ledger.py
+- [[Data ledger configuration]] - rationale - gateway/ingest_api/config.py
+- [[DataLedger]] - code - gateway/ingest_api/ledger.py
+- [[Decode rot13-obfuscated injection payloads.          rot13 is self-inverse and a]] - rationale - gateway/security/encoding_detector.py
+- [[DecodedLayer]] - code - gateway/security/encoding_detector.py
+- [[Default PII configuration for tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Delete entries older than retention_days          Returns             Number of]] - rationale - gateway/ingest_api/ledger.py
+- [[Deleted entry is gone (right to erasure).]] - rationale - gateway/tests/test_audit_chain.py
+- [[Deleting nonexistent entry returns False.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Detect and block prompt injection attempts.]] - rationale - gateway/security/prompt_guard.py
+- [[Detect and redact PII from content          Args             content Text to s]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Different content should produce different hashes.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Double-base64 encoded lower-ranked injection is caught (was top-5 only).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[E2E-01 PromptGuard blocks high-confidence injection payloads.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-02 Social security numbers and email are redacted before forwarding.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-03 PII in agent responses is stripped before delivery.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-04 ContextGuard detects session-level injection in multi-turn context.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-05 Canary tokens in responses trigger full block.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-06 Base64 and Unicode encoding bypasses are decoded and processed.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-07 Low-trust agent cannot perform high-risk actions.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-08 Every pipeline event — block or forward — produces an audit entry.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-09 Two agents process independently with no cross-contamination.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[E2E-10 SecurityPipeline refuses to operate without PII sanitizer.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Email regex should not be vulnerable to ReDoS.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Empty inbound text is handled without error.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Encoding detector is active in the pipeline.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[EncodingConfig]] - code - gateway/security/encoding_detector.py
+- [[EncodingDetector]] - code - gateway/security/encoding_detector.py
+- [[EncodingResult]] - code - gateway/security/encoding_detector.py
+- [[End-to-end pipeline latency for a single message.]] - rationale - gateway/tests/test_performance.py
+- [[End-to-end scanner STRIPs a base64-encoded lower-ranked injection.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Even with PromptGuard, pipeline refuses to start without PII sanitizer.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Export chain and re-verify.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Fetch a single ledger entry by ID          Args             entry_id Entry UUI]] - rationale - gateway/ingest_api/ledger.py
+- [[Filter entries by source.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Forget this' - permanently delete a ledger entry          Implements right to er]] - rationale - gateway/ingest_api/ledger.py
+- [[Fully percent-encoded injection is decoded-and-blocked on inbound.      The dete]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Get aggregate statistics          Returns             Dictionary with total ent]] - rationale - gateway/ingest_api/ledger.py
+- [[If an agent response contains a registered canary value, block it.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[If the encoding detector raises, non-owner traffic is blocked (fail-closed).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Initialize Microsoft Presidio engines          Falls back to regex if Presidios]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Initialize sanitizer          Args             config PII configuration from a]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Injecting a system-level override via a follow-up message is blocked.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Injection attempts should be detected even under load.]] - rationale - gateway/tests/test_performance.py
+- [[Large inputs shouldn't crash prompt guard.]] - rationale - gateway/tests/test_security_audit.py
+- [[LedgerConfig]] - code - gateway/ingest_api/config.py
+- [[Looking up nonexistent entry returns None.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Main security pipeline that all messages pass through.      Wires together Prom]] - rationale - gateway/proxy/pipeline.py
+- [[Message with hundreds of PII entities should complete.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Mock configuration for middleware tests]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Ordinary base64 content with no injection indicators is forwarded.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Outbound filter must redact egress banners but NOT call _send_owner_admin_notice]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[OutputCanary that always crashes.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Owner encoded-injection is audited and allowed, never blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Owner messages should NOT be blocked when security module crashes (owner exempti]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[PII detection and redaction configuration]] - rationale - gateway/ingest_api/config.py
+- [[PII detection and redaction engine      Attempts to use Microsoft Presidio with]] - rationale - gateway/ingest_api/sanitizer.py
+- [[PII redacted for agent A does not leak into agent B's audit trail.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[PII sanitizer 1000 messages in  10s.]] - rationale - gateway/tests/test_performance.py
+- [[PII scanning time should be roughly linear, not exponential.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[PII-laden messages through inbound pipeline — verify redaction + timing.]] - rationale - gateway/tests/test_performance.py
+- [[PIIConfig]] - code - gateway/ingest_api/config.py
+- [[PIISanitizer_1]] - code - gateway/security/tool_result_sanitizer.py
+- [[PIISanitizer_2]] - code - gateway/tests/conftest.py
+- [[PIISanitizer_3]] - code - gateway/tests/test_redteam_probes.py
+- [[PIISanitizer]] - code - gateway/ingest_api/sanitizer.py
+- [[Paginated queries return correct subsets.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Pipeline must BLOCK (not pass through) when EnhancedToolResultSanitizer crashes]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Pipeline must BLOCK (not pass through) when OutputCanary crashes for non-owner.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Pipeline must refuse to start without PII sanitizer (fail-closed).]] - rationale - gateway/tests/test_redteam_probes.py
+- [[Pipeline wired with the guards relevant to inbound encoding defence.      No Tru]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Pipeline with all modules disabled acts as passthrough.]] - rationale - gateway/tests/test_security_integration.py
+- [[Pipeline with only PII enabled, prompt guard disabled.]] - rationale - gateway/tests/test_security_integration.py
+- [[Process 1000 mixed messages in under 10 seconds.]] - rationale - gateway/tests/test_performance.py
+- [[Prompt guard 1000 messages in  5s.]] - rationale - gateway/tests/test_performance.py
+- [[PromptGuard]] - code - gateway/security/prompt_guard.py
+- [[Query performance after 1000 entries.]] - rationale - gateway/tests/test_performance.py
+- [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c_1]] - rationale - gateway/tests/test_ledger.py
+- [[RedactionResult_1]] - code - gateway/ingest_api/sanitizer.py
+- [[RedactionResult_3]] - code - gateway/security/tool_result_sanitizer.py
+- [[Regression tests for Telegram HTML parse error caused by PII placeholders.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Remove Claude XML function call blocks from responses          Strips out intern]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Response containing base64-encoded payload is decoded by the pipeline.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Retention enforcement removes expired entries.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Retention enforcement.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Return current enforcement mode          Returns             enforce or moni]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Return list of entity types currently enabled          Returns             List]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Run standard benchmarks and write results to .benchmarksbaseline-v1.0.0.json.]] - rationale - gateway/tests/test_performance.py
+- [[SHA-256 hash of content string          Args             content Text to hash]] - rationale - gateway/ingest_api/ledger.py
+- [[SSN regex should not be vulnerable to ReDoS.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Sanitize using Microsoft Presidio          Wraps synchronous Presidio calls in a]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Sanitize using regex patterns (fallback mode)          Detects         - US_SSN]] - rationale - gateway/ingest_api/sanitizer.py
+- [[Sanitizer that always crashes — simulates module failure.]] - rationale - gateway/tests/test_e2e_watchtower.py
+- [[Scan 1000 messages in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
+- [[SecurityPipeline_1]] - code - gateway/tests/test_redteam_probes.py
+- [[SecurityPipeline_2]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[SecurityPipeline]] - code - gateway/proxy/pipeline.py
+- [[SecurityPipeline.process_inboundoutbound latency via the real pipeline class.]] - rationale - gateway/tests/test_performance.py
+- [[Set global observatory mode for all security modules.          Args]] - rationale - gateway/proxy/pipeline.py
+- [[Single message through SecurityPipeline.process_inbound  200ms.]] - rationale - gateway/tests/test_performance.py
+- [[Single message through full pipeline in under 100ms.]] - rationale - gateway/tests/test_performance.py
+- [[Stats reflect actual data.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Store configuration          Actual database connection created in initialize().]] - rationale - gateway/ingest_api/ledger.py
+- [[Strip injected fake delimiters and return sanitized message.          Called whe]] - rationale - gateway/security/prompt_guard.py
+- [[Tamper detection at various chain positions.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Test PIISanitizer accepts and stores mode parameter.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test PIISanitizer defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[Test creating a ledger entry]] - rationale - gateway/tests/test_ledger.py
+- [[Test deleting a ledger entry]] - rationale - gateway/tests/test_ledger.py
+- [[Test deleting a non-existent entry]] - rationale - gateway/tests/test_ledger.py
+- [[Test ledger query with source filter]] - rationale - gateway/tests/test_ledger.py
+- [[Test paginated ledger query]] - rationale - gateway/tests/test_ledger.py
+- [[Test querying ledger with forwarded_to filter]] - rationale - gateway/tests/test_ledger.py
+- [[Test querying ledger with time range filters]] - rationale - gateway/tests/test_ledger.py
+- [[Test retrieving a ledger entry by ID]] - rationale - gateway/tests/test_ledger.py
+- [[Test stats calculation]] - rationale - gateway/tests/test_ledger.py
+- [[Test that individual modules respect the enforcemonitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
+- [[TestAuditChainIntegrity]] - code - gateway/tests/test_audit_chain.py
+- [[TestAuditChainPerformance]] - code - gateway/tests/test_performance.py
+- [[TestBenchmarkBaseline]] - code - gateway/tests/test_performance.py
+- [[TestChainExportAndVerification]] - code - gateway/tests/test_audit_chain.py
+- [[TestConcurrentWrites]] - code - gateway/tests/test_audit_chain.py
+- [[TestE2E01PromptGuardBlocking]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E02InboundPIIRedaction]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E03OutboundPIIRedaction]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E04ContextGuardBlocking]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E05CanaryTripwire]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E06EncodingBypassDetection]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E07TrustEnforcement]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E08AuditChainIntegrity]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E09SessionIsolation]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestE2E10FailClosed]] - code - gateway/tests/test_e2e_watchtower.py
+- [[TestEgressBannerRedactionNoOwnerNotice]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestEncodingDetector]] - code - gateway/tests/test_encoding_detector.py
+- [[TestForwardToTelegramTimeouts]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestFullPipelineLatency]] - code - gateway/tests/test_performance.py
+- [[TestModuleEnforcement]] - code - gateway/tests/test_enforce_defaults.py
+- [[TestOutboundTextFieldResolution]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestOwnerActivityNotice]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestOwnerMirrorCoalescing]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestPIISanitizerPerformance]] - code - gateway/tests/test_performance.py
+- [[TestParseModeStrippedAfterPIIRedaction]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestPendingNoticeIncludesEgressSection]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestPromptGuardPerformance]] - code - gateway/tests/test_performance.py
+- [[TestRetention]] - code - gateway/tests/test_audit_chain.py
+- [[TestSecurityPipelineChainLatency]] - code - gateway/tests/test_performance.py
+- [[TestTamperDetection]] - code - gateway/tests/test_audit_chain.py
+- [[TestTelegram400Retry]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestTrustManagerPerformance]] - code - gateway/tests/test_performance.py
+- [[Tests for TelegramAPIProxy outbound security pipeline integration.  Proves that]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Tests that _forward_to_telegram uses correct urlopen timeouts.      Regression g]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[The check_rot13 config flag gates the rot13 layer.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Trust check 10000 lookups in  1s.]] - rationale - gateway/tests/test_performance.py
+- [[Unicode tricks shouldn't bypass PII detection.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Unit tests for outbound text field resolution helper behavior.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[Verify detection accuracy doesn't degrade at scale.]] - rationale - gateway/tests/test_performance.py
+- [[Verify hash matches SHA-256 of the content.]] - rationale - gateway/tests/test_audit_chain.py
+- [[WS-E RT-2 Inbound Encoding Bypass Fix Rationale]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[Write 1000 audit entries in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
+- [[Write 1000 entries and verify they're all there.]] - rationale - gateway/tests/test_audit_chain.py
+- [[_BrokenOutputCanary]] - code - gateway/tests/test_e2e_watchtower.py
+- [[_BrokenSanitizer]] - code - gateway/tests/test_e2e_watchtower.py
+- [[_make_pipeline()_4]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[_mirror_to_owner_if_collaborator must coalesce within the window.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_send_owner_activity_notice must render tracker entries or honest error.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[_send_owner_pending_notice must append Pending Egress Requests when queue non-em]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[`_check_encoded_content` now matches rules beyond the old top-5 slice.      Fail]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[`_detect_encoded_injection` matches rules beyond the old top-6 slice.      `jail]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[base64-wrapped DAN injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[canary_pipeline()]] - code - gateway/tests/test_canary.py
+- [[encoding_detector.py]] - code - gateway/security/encoding_detector.py
+- [[hex-encoded injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[hex-encoded lower-ranked injection is caught by the full ruleset.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[ledger()]] - code - gateway/tests/test_audit_chain.py
+- [[ledger()_2]] - code - gateway/tests/test_security_integration.py
+- [[ledger.py]] - code - gateway/ingest_api/ledger.py
+- [[pii_config()_1]] - code - gateway/tests/test_e2e_watchtower.py
+- [[pipeline()_1]] - code - gateway/tests/test_e2e_watchtower.py
+- [[rot13 decode is NOT applied to benign prose (no injection indicators).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[rot13 layer is surfaced when the decoded text reveals injection language.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[rot13-looking prose with no injection indicators is left alone.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[rot13-obfuscated injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[sanitizer()_2]] - code - gateway/tests/test_e2e_watchtower.py
+- [[sanitizer()_3]] - code - gateway/tests/test_filter_xml_blocks.py
+- [[sanitizer.py]] - code - gateway/ingest_api/sanitizer.py
+- [[state.py]] - code - gateway/ingest_api/state.py
+- [[test_audit_chain.py]] - code - gateway/tests/test_audit_chain.py
+- [[test_delete_entry()]] - code - gateway/tests/test_ledger.py
+- [[test_delete_nonexistent()]] - code - gateway/tests/test_ledger.py
+- [[test_e2e_watchtower.py]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_encoding_detector.py]] - code - gateway/tests/test_encoding_detector.py
+- [[test_encoding_detector_decodes_rot13_injection()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_encoding_detector_rot13_can_be_disabled()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_encoding_detector_rot13_empty_text()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_encoding_detector_rot13_ignores_benign_prose()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_encoding_detector_rot13_skips_already_visible_injection()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_enforce_defaults.py]] - code - gateway/tests/test_enforce_defaults.py
+- [[test_get_entry()]] - code - gateway/tests/test_ledger.py
+- [[test_get_stats()_2]] - code - gateway/tests/test_ledger.py
+- [[test_inbound_base64_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_benign_base64_not_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_benign_rot13_prose_not_decoded_or_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_encoding_detector_error_fails_closed()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_hex_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_nested_base64_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_owner_encoded_injection_allowed()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_plain_benign_message_not_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_rot13_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_unicode_homoglyph_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_inbound_url_encoded_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_initialize_is_idempotent()_1]] - code - gateway/tests/test_ledger.py
+- [[test_ledger()]] - code - gateway/tests/conftest.py
+- [[test_ledger.py]] - code - gateway/tests/test_ledger.py
+- [[test_performance.py]] - code - gateway/tests/test_performance.py
+- [[test_pipeline_all_modules_disabled()]] - code - gateway/tests/test_security_integration.py
+- [[test_pipeline_fails_closed_on_enhanced_sanitizer_error()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_pipeline_fails_closed_on_output_canary_error()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_pipeline_fails_closed_without_pii()]] - code - gateway/tests/test_redteam_probes.py
+- [[test_pipeline_owner_exempt_from_fail_closed()]] - code - gateway/tests/test_e2e_watchtower.py
+- [[test_pipeline_selective_modules()]] - code - gateway/tests/test_security_integration.py
+- [[test_prompt_guard_double_encoded_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_prompt_guard_encoded_check_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_query_ledger()]] - code - gateway/tests/test_ledger.py
+- [[test_query_with_filter()]] - code - gateway/tests/test_ledger.py
+- [[test_query_with_forwarded_to_filter()]] - code - gateway/tests/test_ledger.py
+- [[test_query_with_time_filters()]] - code - gateway/tests/test_ledger.py
+- [[test_record_entry()]] - code - gateway/tests/test_ledger.py
+- [[test_telegram_proxy_outbound.py]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[test_tool_injection_encoded_check_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_tool_injection_hex_encoded_uses_full_ruleset()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_tool_injection_scan_blocks_encoded_lower_ranked_rule()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+- [[test_ws_e_rt2_inbound_encoding.py]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/PII_Sanitizer_Pipeline
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 76 edges to [[_COMMUNITY_PII Config & Test Fixtures]]
+- 65 edges to [[_COMMUNITY_Forward Routing & Approval]]
+- 60 edges to [[_COMMUNITY_Security Module Middleware]]
+- 50 edges to [[_COMMUNITY_Approval Queue Tests]]
+- 48 edges to [[_COMMUNITY_Security Pipeline Core]]
+- 36 edges to [[_COMMUNITY_Progressive Trust Config]]
+- 33 edges to [[_COMMUNITY_Cross-Bot Trust Ledger]]
+- 32 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 29 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 27 edges to [[_COMMUNITY_PromptGuard Encoding Detection]]
+- 21 edges to [[_COMMUNITY_HTTP Forwarder]]
+- 18 edges to [[_COMMUNITY_Auth & Exception Types]]
+- 14 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 13 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 12 edges to [[_COMMUNITY_Gateway Security Module]]
+- 12 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 10 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 10 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 9 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
+- 8 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 7 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 7 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 7 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 6 edges to [[_COMMUNITY_Gateway Security Module]]
+- 6 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 6 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 5 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 4 edges to [[_COMMUNITY_Gateway Ingest API]]
+- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 4 edges to [[_COMMUNITY_Gateway Security Module]]
+- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Security Module]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_SOC Dashboard]]
+- 2 edges to [[_COMMUNITY_Enhanced Approval Queue]]
+- 2 edges to [[_COMMUNITY_SOC RBAC & Auth]]
+- 2 edges to [[_COMMUNITY_URLDomain Validation Tests]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Gateway Security Module]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Slack API Proxy]]
+- 1 edge to [[_COMMUNITY_Gateway Ingest API]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_MCP Proxy Config]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Telegram Inbound Tests]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Enforce-Mode Auto-Revert]]
+- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+
+## Top bridge nodes
+- [[PIIConfig]] - degree 180, connects to 29 communities
+- [[PIISanitizer]] - degree 149, connects to 28 communities
+- [[SecurityPipeline]] - degree 128, connects to 22 communities
+- [[PromptGuard]] - degree 146, connects to 16 communities
+- [[state.py]] - degree 37, connects to 16 communities

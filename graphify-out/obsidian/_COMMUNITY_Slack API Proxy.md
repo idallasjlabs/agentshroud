@@ -1,0 +1,275 @@
+---
+type: community
+cohesion: 0.02
+members: 199
+---
+
+# Slack API Proxy
+
+**Cohesion:** 0.02 - loosely connected
+**Members:** 199 nodes
+
+## Members
+- [[.__call__()_10]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.__init__()_35]] - code - gateway/proxy/slack_proxy.py
+- [[.__init__()_159]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.__init__()_166]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.__init__()_176]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[._call_slack_api()]] - code - gateway/proxy/slack_proxy.py
+- [[._intercept_connections_open()]] - code - gateway/proxy/slack_proxy.py
+- [[._is_owner_channel()]] - code - gateway/proxy/slack_proxy.py
+- [[.consume_relay_token()]] - code - gateway/proxy/slack_proxy.py
+- [[.get_stats()_8]] - code - gateway/proxy/slack_proxy.py
+- [[.handle_event()]] - code - gateway/proxy/slack_proxy.py
+- [[.info_filter_redaction_count()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.invite_channel_member()]] - code - gateway/proxy/slack_proxy.py
+- [[.kick_channel_member()]] - code - gateway/proxy/slack_proxy.py
+- [[.mock_forwarder()]] - code - gateway/tests/test_session_isolation.py
+- [[.mock_pipeline()]] - code - gateway/tests/test_session_isolation.py
+- [[.provision_group_channel()]] - code - gateway/proxy/slack_proxy.py
+- [[.proxy_outbound()]] - code - gateway/proxy/slack_proxy.py
+- [[.test_already_in_channel_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_approval_decision()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_approval_queue_list()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_attachments_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_blocks_scanned_even_when_text_present()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_cached_corr_without_colon_falls_back_to_channel()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_cached_inbound_corr_skips_history_lookup()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_cant_kick_self_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_chat_postmessage_content_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_chat_update_content_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_client_disconnect_returns_499()]] - code - gateway/tests/test_security_fixes.py
+- [[.test_close_stops_resource_guard()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_close_swallows_stop_errors()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_close_with_no_resource_guard()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_connections_open_missing_url_passthrough()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_connections_open_rewrites_url()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_connections_open_skips_content_pipeline()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_connections_open_slack_error_passthrough()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_consume_relay_token_one_time()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_consume_relay_token_unknown()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_dm_reply_recovers_inbound_via_conversations_history()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_each_reconnect_issues_unique_token()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_extract_user_id_slack()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_extract_user_id_slack_missing_event()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_extract_user_id_telegram_unchanged()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_extract_username_slack()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_extract_username_slack_fallback_to_user_id()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_file_upload_initial_comment_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_get_stats_returns_counters()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_google_proxy_json_body_passthrough()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_google_proxy_non_json_body_passthrough()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_history_error_records_outbound_without_correlation()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_is_owner_channel_empty_owner_uid_always_false()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_is_owner_channel_matches_owner_uid()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_is_owner_channel_no_match_for_other()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_malformed_json_body_forwards_with_empty_payload()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_mcp_proxy_endpoint()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_missing_args_return_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_missing_args_return_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_missing_channel_or_text_skips_tracking()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_name_truncated_to_80_chars()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_network_error_returns_synthetic_failure()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_no_bot_token_returns_error()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_no_token_returns_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_no_token_returns_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_no_token_returns_none()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_non_message_method_not_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_owner_clean_message_passes()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_owner_high_risk_leakage_blocked_before_pipeline()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_owner_info_filter_redaction_blocks()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_owner_pipeline_exception_fail_closed()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_non_owner_tailscale_hostname_blocked()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_not_in_channel_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_other_error_returns_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_other_error_returns_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_outbound_blocked_returns_error()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_owner_channel_uses_full_trust()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_owner_pipeline_exception_fail_open()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_owner_recipient_body_preserved()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[.test_post_ephemeral_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_recovery_exception_is_non_fatal()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_redaction_count_access_error_is_non_fatal()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_sanitized_text_replaces_original()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_sanitized_with_redactions()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_sanitized_without_redactions()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_sanitizer_error_fails_open()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_send_owner_endpoint_also_bypasses_pii()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[.test_slack_error_returns_none()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_status_endpoint()]] - code - gateway/tests/test_main_endpoints.py
+- [[.test_store_error_returns_empty()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[.test_structured_field_sanitization_blocks_delivery()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_structured_text_serialized_for_preview()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_success_posts_with_bearer_token()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_success_returns_channel_id_with_sanitized_name()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_success_returns_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_success_returns_true()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_system_message_not_tracked()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_system_notification_skips_pipeline()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_text_sanitization_still_applied()]] - code - gateway/tests/test_slack_proxy.py
+- [[.test_thread_reply_recovers_inbound_via_conversations_replies()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_tracker_exception_does_not_break_response()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_unknown_content_type_ignored()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[.test_unknown_recipient_body_still_scrubbed()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[.test_urlencoded_body_parsed()]] - code - gateway/tests/test_slack_proxy.py
+- [[emailsend-owner delegates to email_send and also skips PII for the owner.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[A dict text payload is JSON-serialized before the 80-char preview.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[A secret hidden in blocks must be caught even if `text` is benign.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[AsyncMock]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Bodies with an unrecognized Content-Type are not parsed at all.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Cached correlation for the channel → no Slack history call; outbound         is]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Channel name is lowercased, spacesunderscores → hyphens, symbols dropped.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Connection failure → {'ok' False, 'error' exc} (no exception leaks).]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Correlation ID with no '' separator → outbound attributed to channel id.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Create a Slack channel for a group. Returns channel_id or None on failure.]] - rationale - gateway/proxy/slack_proxy.py
+- [[Create a SlackAPIProxy with a fake token and no real secretfile IO.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Create a SlackAPIProxy with test credentials and no real IO.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Create a mock forwarder.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create a mock security pipeline.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Each call to apps.connections.open issues a distinct relay token.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Exception during inbound recovery → swallowed; outbound still recorded.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Handle an inbound Slack event payload received via Socket Mode.          Called]] - rationale - gateway/proxy/slack_proxy.py
+- [[Happy path POSTs to slack.comapimethod with injected bot token.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[History lookup returns ok=False → no inbound record; outbound still         logg]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[If the pipeline wants to redact inside blocks JSON, delivery is blocked]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Intercept apps.connections.open rewrite the returned WSS URL to route         t]] - rationale - gateway/proxy/slack_proxy.py
+- [[Invite a Slack user to a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
+- [[JSON upstream responses must stay JSON.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Legacy attachments are scanned for leaked content.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Minimal async callable for monkeypatching.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Non-owner channel Tailscale hostname triggers leakage pre-check → blocked.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel clean message with no leakage passes through.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel error reading info_filter_redaction_count is swallowed]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Non-owner channel high-risk leakage detected before pipeline → blocked.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel pipeline exception → blocked (fail-closed).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel pipeline passes but info_filter_redaction_count  0 → blocked]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-thread reply → conversations.history lookup; bot and subtype         message]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Owner channel pipeline called with user_trust_level=FULL, message forwarded.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Owner channel pipeline exception → logged but message still forwarded.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Owner-allowlisted recipient receives body verbatim; pii_redacted=False.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[P0 security Slack outbound must differentiate owner vs collaborator channels.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[POST to httpsslack.comapimethod with the bot token.]] - rationale - gateway/proxy/slack_proxy.py
+- [[Pipeline result whose redaction-count attribute raises on access.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Plain-text sanitization keeps working (redacted text forwarded).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Plain-text upstream errors must not turn into gateway 500s.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Pop and return the real WSS URL for a relay token (one-time use).          Retur]] - rationale - gateway/proxy/slack_proxy.py
+- [[Proxies bot Slack Web API calls through SecurityPipeline.      Outbound flow (bo]] - rationale - gateway/proxy/slack_proxy.py
+- [[Proxy a bot Slack Web API call through the security pipeline.          For messa]] - rationale - gateway/proxy/slack_proxy.py
+- [[Remove a Slack user from a channel. Returns True on success.]] - rationale - gateway/proxy/slack_proxy.py
+- [[Return True if channel is a DM with the configured owner.          In Slack, DM]] - rationale - gateway/proxy/slack_proxy.py
+- [[SlackAPIProxy_2]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[SlackAPIProxy]] - code - gateway/proxy/slack_proxy.py
+- [[Test MCP proxy endpoint basic functionality.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test basic status endpoint functionality.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test listing pending approvals.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test making approval decisions.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[TestBodyParsing]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestCallSlackApi]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestClose]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestInviteChannelMember]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestKickChannelMember]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestMultiFieldOutboundScanning]] - code - gateway/tests/test_slack_proxy.py
+- [[TestOutboundTracking]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestOwnerChannelFiltering]] - code - gateway/tests/test_slack_proxy.py
+- [[TestOwnerEmailBypassesPii]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[TestProvisionGroupChannel]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestProxyOutbound]] - code - gateway/tests/test_slack_proxy.py
+- [[TestRedactionCountErrorSwallow]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestSocketModeRelay]] - code - gateway/tests/test_slack_proxy.py
+- [[TestWebhookReceiverSlackExtraction]] - code - gateway/tests/test_slack_proxy.py
+- [[Thread reply with no cached corr → conversations.replies lookup recovers]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Tracker errors are non-fatal — Slack response still returned to bot.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Unknown recipient's body is PII-scrubbed before approval queue submission.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[Unparseable JSON body → warning logged, empty payload forwarded (no crash).]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[When body() raises ClientDisconnect the handler returns 499 without crashing.]] - rationale - gateway/tests/test_security_fixes.py
+- [[_RaisingRedactionResult]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[_make_proxy()_3]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[_make_proxy()_2]] - code - gateway/tests/test_slack_proxy.py
+- [[_pass_result()]] - code - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open Slack error response returned unchanged.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open pipeline is NOT invoked (not a message method).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open real WSS URL is stored and relay URL returned.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open response without url field returned unchanged.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[blocksattachments and upload text must be scanned, not just `text`.      Regres]] - rationale - gateway/tests/test_slack_proxy.py
+- [[bypass_auth()_1]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[chat.postEphemeral text goes through the pipeline like postMessage.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[chat.postMessage without channeltext → nothing recorded, no lookups.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[client()_7]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[consume_relay_token returns None for unknown tokens.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[consume_relay_token returns the URL once then None.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[files.upload initial_commenttitle text is scanned.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[is_system=True chat.postMessage bypasses the tracker entirely.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[slack_proxy.py]] - code - gateway/proxy/slack_proxy.py
+- [[test_cve_report_queued()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_email_owner_bypasses_pii.py]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[test_launch_scan_background_exec_failure()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_rollback_gateway_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_run_scanner_validation_and_launch()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_slack_proxy.py]] - code - gateway/tests/test_slack_proxy.py
+- [[test_slack_proxy_coverage.py]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[test_upgrade_bot_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_upgrade_gateway_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Slack_API_Proxy
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 32 edges to [[_COMMUNITY_SOC RBAC & Auth]]
+- 11 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 11 edges to [[_COMMUNITY_Security Pipeline Core]]
+- 10 edges to [[_COMMUNITY_Security Module Middleware]]
+- 10 edges to [[_COMMUNITY_Auth & Exception Types]]
+- 9 edges to [[_COMMUNITY_URLDomain Validation Tests]]
+- 9 edges to [[_COMMUNITY_Bot CVE Scorecard]]
+- 8 edges to [[_COMMUNITY_Voice Gateway Tests]]
+- 8 edges to [[_COMMUNITY_Cross-Bot Trust Ledger]]
+- 7 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 6 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 5 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 5 edges to [[_COMMUNITY_Enforce-Mode Auto-Revert]]
+- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 4 edges to [[_COMMUNITY_Approval Queue Tests]]
+- 4 edges to [[_COMMUNITY_Telegram Inbound Tests]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_voice_gatewayserver.py]]
+- 3 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_chatbottest_main.py]]
+- 2 edges to [[_COMMUNITY_chatbottest_main.py]]
+- 2 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Ingest API]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 1 edge to [[_COMMUNITY_Collaborator Response Templates]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+
+## Top bridge nodes
+- [[AsyncMock]] - degree 242, connects to 42 communities
+- [[SlackAPIProxy]] - degree 38, connects to 4 communities
+- [[TestClose]] - degree 8, connects to 4 communities
+- [[slack_proxy.py]] - degree 4, connects to 3 communities
+- [[test_slack_proxy.py]] - degree 10, connects to 2 communities
