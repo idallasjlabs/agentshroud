@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/peer-review.sh"
+source_file: "tests/startup_smoke/test_apply_patches.js"
 type: "code"
-community: "Module Group 588"
-location: "L21"
+community: "tests/startup_smoke"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_588
+  - community/tests/startup_smoke
 ---
 
-# PATH
+# path
 
 ## Connections
-- [[peer-review.sh]] - `defines` [EXTRACTED]
+- [[test_apply_patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_588
+#graphify/code #graphify/EXTRACTED #community/tests/startup_smoke

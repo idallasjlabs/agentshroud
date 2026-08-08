@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Module Group 83"
-location: "L139"
+community: "SOC Dashboard"
+location: "L138"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_83
+  - community/SOC_Dashboard
 ---
 
 # SCLCaller
 
 ## Connections
-- [[.__init__()_103]] - `method` [EXTRACTED]
+- [[.__init__()_125]] - `method` [EXTRACTED]
 - [[.is_group_admin()_1]] - `method` [EXTRACTED]
-- [[.is_owner()_1]] - `method` [EXTRACTED]
+- [[.is_owner()_2]] - `method` [EXTRACTED]
 - [[.require()]] - `method` [EXTRACTED]
 - [[.test_get_caller_passthrough()]] - `calls` [EXTRACTED]
 - [[.test_is_group_admin_with_teams_config()]] - `calls` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[.test_require_denied_without_reason_uses_forbidden()]] - `calls` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_60]] - `uses` [INFERRED]
+- [[Any_64]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult_1]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
@@ -38,9 +38,10 @@ tags:
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_5]] - `uses` [INFERRED]
+- [[Request_7]] - `uses` [INFERRED]
 - [[Resolved identity of the SCL caller, including role and user_id.]] - `rationale_for` [EXTRACTED]
 - [[SCLCaller_1]] - `uses` [INFERRED]
+- [[SCLCaller_3]] - `uses` [INFERRED]
 - [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
@@ -50,7 +51,7 @@ tags:
 - [[SetRoleRequest]] - `uses` [INFERRED]
 - [[SetUserModeRequest]] - `uses` [INFERRED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
-- [[WebSocket_5]] - `uses` [INFERRED]
+- [[WebSocket_6]] - `uses` [INFERRED]
 - [[_make_owner_caller()]] - `calls` [EXTRACTED]
 - [[_resolve_caller()]] - `references` [EXTRACTED]
 - [[auth.py_1]] - `contains` [EXTRACTED]
@@ -59,4 +60,4 @@ tags:
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_83
+#graphify/code #graphify/INFERRED #community/SOC_Dashboard

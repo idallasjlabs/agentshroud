@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "rationale"
-community: "Module Group 116"
+community: "Gateway Test Suite"
 location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_116
+  - community/Gateway_Test_Suite
 ---
 
 # Test that all specified unicode control characters are stripped.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_all_unicode_control_chars_stripped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_116
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

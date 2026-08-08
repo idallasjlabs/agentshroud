@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "Approval Queue Core"
-location: "L103"
+community: "Gateway Test Suite"
+location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue_Core
+  - community/Gateway_Test_Suite
 ---
 
 # Test deciding on nonexistent request raises KeyError
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_decide_nonexistent_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Core
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

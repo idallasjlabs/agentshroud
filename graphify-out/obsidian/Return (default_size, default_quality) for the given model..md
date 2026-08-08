@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "rationale"
-community: "Module Group 379"
+community: "skills/openclaw"
 location: "L66"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_379
+  - community/skills/openclaw
 ---
 
 # Return (default_size, default_quality) for the given model.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_model_defaults()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_379
+#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw

@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/operations/raspberry-pi.md"
+source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "Module Group 424"
+community: "docs/operations"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Module_Group_424
+  - community/docs/operations
 ---
 
 # Raspberry Pi Deployment Guide
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Deployment Procedure]] - `complements` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Module_Group_424
+#graphify/document #graphify/INFERRED #community/docs/operations

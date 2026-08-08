@@ -1,12 +1,12 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/postmortem.md"
 type: "document"
-community: "Module Group 191"
+community: "CONTRIBUTING.md"
 location: "lines 1-61"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Module_Group_191
+  - community/CONTRIBUTINGmd
 ---
 
 # Postmortem Issue Template (Mandatory Test Requirement)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test Guidelines (pytest-asyncio, conftest, no network calls)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Module_Group_191
+#graphify/document #graphify/INFERRED #community/CONTRIBUTINGmd

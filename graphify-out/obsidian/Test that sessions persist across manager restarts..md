@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Session Manager & Webhook"
-location: "L584"
+community: "URL/Domain Validation Tests"
+location: "L582"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager__Webhook
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Test that sessions persist across manager restarts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_session_persistence()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__Webhook
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

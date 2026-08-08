@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "Module Group 289"
+community: "Gateway Test Suite"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_289
+  - community/Gateway_Test_Suite
 ---
 
 # SlackAPIProxy
@@ -20,6 +20,6 @@ tags:
 - [[.test_tracker_error_does_not_propagate()]] - `calls` [EXTRACTED]
 - [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
-- [[_make_proxy()_1]] - `references` [EXTRACTED]
+- [[_make_proxy()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_289
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

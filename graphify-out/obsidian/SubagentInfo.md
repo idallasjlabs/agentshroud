@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Subagent Monitor"
+community: "PII Config & Test Fixtures"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Subagent_Monitor
+  - community/PII_Config__Test_Fixtures
 ---
 
 # SubagentInfo
@@ -16,4 +16,4 @@ tags:
 - [[.register_spawn()]] - `references` [EXTRACTED]
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Subagent_Monitor
+#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

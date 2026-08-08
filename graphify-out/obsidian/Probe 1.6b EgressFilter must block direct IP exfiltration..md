@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "Module Group 72"
-location: "L127"
+community: "Gateway Test Suite"
+location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_72
+  - community/Gateway_Test_Suite
 ---
 
 # Probe 1.6b: EgressFilter must block direct IP exfiltration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_egress_blocks_ip_exfil()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_72
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

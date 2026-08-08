@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/sidecar.py"
 type: "rationale"
-community: "Sidecar Security Scanner"
+community: "HTTP Forwarder"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Sidecar_Security_Scanner
+  - community/HTTP_Forwarder
 ---
 
 # Scan a message through the security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Sidecar_Security_Scanner
+#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder

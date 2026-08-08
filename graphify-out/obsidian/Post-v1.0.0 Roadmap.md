@@ -1,17 +1,16 @@
 ---
 source_file: "docs/ROADMAP-POST-v1.0.md"
 type: "document"
-community: "Module Group 138"
+community: "docs/ROADMAP-POST-v1.0.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_138
+  - community/docs/ROADMAP-POST-v10md
 ---
 
 # Post-v1.0.0 Roadmap
 
 ## Connections
-- [[AgentShroud Gateway (Core Security Proxy)]] - `references` [EXTRACTED]
 - [[Apple Platform Integration (Roadmap — WidgetKit, APNs, WatchOS)]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_138
+#graphify/document #graphify/EXTRACTED #community/docs/ROADMAP-POST-v10md

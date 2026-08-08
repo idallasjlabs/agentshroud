@@ -1,12 +1,12 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Module Group 95"
+community: "Bot Skill Config"
 location: "L426"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_95
+  - community/Bot_Skill_Config
 ---
 
 # SecurityError
@@ -16,8 +16,8 @@ tags:
 - [[.extract()]] - `calls` [EXTRACTED]
 - [[.fill_field()]] - `calls` [EXTRACTED]
 - [[.navigate()]] - `calls` [EXTRACTED]
-- [[Exception_1]] - `inherits` [EXTRACTED]
+- [[Exception]] - `inherits` [EXTRACTED]
 - [[Raised when security policy is violated]] - `rationale_for` [EXTRACTED]
 - [[browse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_95
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

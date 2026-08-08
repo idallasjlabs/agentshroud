@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "rationale"
-community: "Module Group 279"
+community: "Gateway Proxy Layer"
 location: "L115"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_279
+  - community/Gateway_Proxy_Layer
 ---
 
 # Send a request to Telegram Bot API (sync, run in executor).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._send_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_279
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

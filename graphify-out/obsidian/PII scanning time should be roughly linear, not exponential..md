@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Module Group 66"
-location: "L87"
+community: "PII Sanitizer Pipeline"
+location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_66
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # PII scanning time should be roughly linear, not exponential.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pii_scan_time_independent_of_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_66
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

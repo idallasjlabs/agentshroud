@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "rationale"
-community: "Module Group 251"
-location: "L334"
+community: "scripts/generate-cve-page.py"
+location: "L395"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_251
+  - community/scripts/generate-cve-pagepy
 ---
 
 # Regenerate all CVE sections in docs/index.html.  Returns True if changed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[generate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_251
+#graphify/rationale #graphify/EXTRACTED #community/scripts/generate-cve-pagepy

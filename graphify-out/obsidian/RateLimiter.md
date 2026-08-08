@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "Authentication & Rate Limiting"
+community: "Gateway Test Suite"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Authentication__Rate_Limiting
+  - community/Gateway_Test_Suite
 ---
 
 # RateLimiter
 
 ## Connections
-- [[.__init__()_5]] - `method` [EXTRACTED]
-- [[.__init__()_30]] - `calls` [EXTRACTED]
+- [[.__init__()_14]] - `method` [EXTRACTED]
+- [[.__init__()_38]] - `calls` [EXTRACTED]
 - [[.check()]] - `method` [EXTRACTED]
 - [[.test_collaborator_rate_limit_notice_falls_back_without_markdown()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_rate_limit_notice_includes_retry_window()]] - `calls` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[.test_collaborator_rate_limit_resets_after_window()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_rate_limit_retry_after_seconds_uses_window()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - `calls` [EXTRACTED]
-- [[Any_18]] - `uses` [INFERRED]
+- [[Any_20]] - `uses` [INFERRED]
 - [[AsyncMock]] - `uses` [INFERRED]
 - [[BlockingPipeline]] - `uses` [INFERRED]
 - [[EncodingDetectingPipeline]] - `uses` [INFERRED]
@@ -40,9 +40,11 @@ tags:
 - [[TestFileDownload]] - `uses` [INFERRED]
 - [[TestFullAccessMiddlewareBypass]] - `uses` [INFERRED]
 - [[TestGroupMentionFilter]] - `uses` [INFERRED]
+- [[TestGroupPresenceProbe]] - `uses` [INFERRED]
 - [[TestInboundPipelineOnGetUpdates]] - `uses` [INFERRED]
 - [[TestIsGroupMessage]] - `uses` [INFERRED]
 - [[TestNoResponseGuarantee]] - `uses` [INFERRED]
+- [[TestPerBotGroupMentionFilter]] - `uses` [INFERRED]
 - [[TestProgressiveLockdownUX]] - `uses` [INFERRED]
 - [[TestStrangerRateLimit]] - `uses` [INFERRED]
 - [[_OutboundScan]] - `uses` [INFERRED]
@@ -57,4 +59,4 @@ tags:
 - [[test_security.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Authentication__Rate_Limiting
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

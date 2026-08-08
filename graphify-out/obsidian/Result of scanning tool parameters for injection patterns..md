@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Module Group 179"
+community: "Tool Chain Analyzer"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_179
+  - community/Tool_Chain_Analyzer
 ---
 
 # Result of scanning tool parameters for injection patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ParamScanResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_179
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain_Analyzer

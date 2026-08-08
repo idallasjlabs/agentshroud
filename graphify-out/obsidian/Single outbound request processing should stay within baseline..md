@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "rationale"
-community: "Module Group 245"
-location: "L73"
+community: "Gateway Test Suite"
+location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_245
+  - community/Gateway_Test_Suite
 ---
 
 # Single outbound request processing should stay within baseline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_single_outbound_latency()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_245
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

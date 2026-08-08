@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Module Group 185"
-location: "L180"
+community: "Gateway Test Suite"
+location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_185
+  - community/Gateway_Test_Suite
 ---
 
 # Test credential registration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_register_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_185
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

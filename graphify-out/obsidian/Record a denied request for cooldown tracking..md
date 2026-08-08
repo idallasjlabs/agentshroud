@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Approval Hardening"
+community: "Gateway Security Module"
 location: "L372"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Hardening
+  - community/Gateway_Security_Module
 ---
 
 # Record a denied request for cooldown tracking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.record_denied_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Hardening
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

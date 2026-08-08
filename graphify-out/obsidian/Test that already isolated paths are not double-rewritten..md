@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Module Group 118"
-location: "L211"
+community: "Gateway Test Suite"
+location: "L210"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_118
+  - community/Gateway_Test_Suite
 ---
 
 # Test that already isolated paths are not double-rewritten.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_already_isolated_paths_not_rewritten()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_118
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

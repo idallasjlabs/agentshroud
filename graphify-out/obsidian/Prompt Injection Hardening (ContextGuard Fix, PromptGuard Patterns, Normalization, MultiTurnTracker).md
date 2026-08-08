@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8.0-release-plan.md"
 type: "concept"
-community: "Module Group 351"
+community: "Planning Docs"
 location: "line 32"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_351
+  - community/Planning_Docs
 ---
 
 # Prompt Injection Hardening (ContextGuard Fix, PromptGuard Patterns, Normalization, MultiTurnTracker)
@@ -16,4 +16,4 @@ tags:
 - [[v0.8.0 Release Plan Document]] - `contains` [EXTRACTED]
 - [[v0.8.0 Watchtower (Security Fixes + Module Wiring)]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_351
+#graphify/concept #graphify/EXTRACTED #community/Planning_Docs

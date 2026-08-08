@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "Module Group 233"
-location: "L357"
+community: "Gateway Test Suite"
+location: "L355"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_233
+  - community/Gateway_Test_Suite
 ---
 
 # Test SecurityPipeline.set_global_mode method.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_security_pipeline_set_global_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_233
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

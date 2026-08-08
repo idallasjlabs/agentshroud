@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Module Group 118"
-location: "L152"
+community: "Gateway Test Suite"
+location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_118
+  - community/Gateway_Test_Suite
 ---
 
 # Test path rewriting for nested /tmp paths.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_path_rewriting_nested_paths()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_118
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

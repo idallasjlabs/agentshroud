@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "Agent Routing & Request Models"
-location: "L122"
+community: "Gateway Test Suite"
+location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agent_Routing__Request_Models
+  - community/Gateway_Test_Suite
 ---
 
 # Pipeline receives 'openclaw' as agent_id when routed to openclaw.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_agent_id_propagated_for_openclaw()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agent_Routing__Request_Models
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

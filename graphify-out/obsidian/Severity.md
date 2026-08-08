@@ -1,19 +1,40 @@
 ---
-source_file: "gateway/soc/event_adapter.py"
+source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Module Group 206"
-location: "L23"
+community: "Gateway Test Suite"
+location: "L76"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_206
+  - community/Gateway_Test_Suite
 ---
 
 # Severity
 
 ## Connections
-- [[SecurityEvent_1]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
-- [[_map_severity()]] - `references` [EXTRACTED]
+- [[.severity()]] - `references` [EXTRACTED]
+- [[CompletedProcess_3]] - `uses` [INFERRED]
+- [[IntEnum]] - `inherits` [EXTRACTED]
+- [[Ordered severity ladder (``IntEnum`` so comparisons work).]] - `rationale_for` [EXTRACTED]
+- [[Path_37]] - `uses` [INFERRED]
+- [[ScanResult_4]] - `uses` [INFERRED]
+- [[SkillGuard_1]] - `uses` [INFERRED]
+- [[TestAggregation]] - `uses` [INFERRED]
+- [[TestCleanSkill]] - `uses` [INFERRED]
+- [[TestClient]] - `uses` [INFERRED]
+- [[TestExecOfDownload]] - `uses` [INFERRED]
+- [[TestExfiltration]] - `uses` [INFERRED]
+- [[TestKnownMalicious]] - `uses` [INFERRED]
+- [[TestObfuscation]] - `uses` [INFERRED]
+- [[TestOversizedUnscannable]] - `uses` [INFERRED]
+- [[TestPathTraversal]] - `uses` [INFERRED]
+- [[TestPrivilegeEscalation_1]] - `uses` [INFERRED]
+- [[TestReloadIntegration]] - `uses` [INFERRED]
+- [[TestScanEntrypoint]] - `uses` [INFERRED]
+- [[TestScanEntrypointInProcess]] - `uses` [INFERRED]
+- [[TestSecretAccess]] - `uses` [INFERRED]
+- [[TestSyncScriptPreflight]] - `uses` [INFERRED]
+- [[skill_guard.py]] - `contains` [EXTRACTED]
+- [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_206
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

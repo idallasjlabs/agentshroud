@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Module Group 80"
+community: "Gateway Security Module"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_80
+  - community/Gateway_Security_Module
 ---
 
 # Scan arbitrary text content for malicious git/supply-chain patterns.          Th
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_80
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

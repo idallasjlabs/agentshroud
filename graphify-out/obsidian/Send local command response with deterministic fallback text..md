@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Module Group 87"
-location: "L7051"
+community: "Gateway Proxy Layer"
+location: "L7202"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_87
+  - community/Gateway_Proxy_Layer
 ---
 
 # Send local command response with deterministic fallback text.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._send_local_notice_with_fallback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_87
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

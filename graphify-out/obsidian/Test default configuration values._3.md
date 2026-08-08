@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Module Group 143"
-location: "L37"
+community: "Egress & RBAC Security Core"
+location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_143
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Test default configuration values.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_default_config()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_143
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

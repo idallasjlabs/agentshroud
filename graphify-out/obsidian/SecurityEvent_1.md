@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Module Group 206"
+community: "SOC Dashboard"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_206
+  - community/SOC_Dashboard
 ---
 
 # SecurityEvent
@@ -17,10 +17,10 @@ tags:
 - [[.test_minimal_construction()]] - `calls` [EXTRACTED]
 - [[.test_no_bot_id_returns_all_events()]] - `calls` [EXTRACTED]
 - [[.test_optional_fields_default_none()]] - `calls` [EXTRACTED]
-- [[Any_59]] - `uses` [INFERRED]
+- [[Any_63]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[SecurityEvent]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
+- [[Severity_1]] - `uses` [INFERRED]
 - [[event_adapter.py]] - `imports` [EXTRACTED]
 - [[from_anomaly_alert()]] - `calls` [EXTRACTED]
 - [[from_audit_chain_entry()]] - `calls` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_206
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

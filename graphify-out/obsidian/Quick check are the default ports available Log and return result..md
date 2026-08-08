@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "rationale"
-community: "Module Group 68"
+community: "Gateway Test Suite"
 location: "L267"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_68
+  - community/Gateway_Test_Suite
 ---
 
 # Quick check: are the default ports available? Log and return result.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_and_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_68
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,16 +1,16 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "concept"
-community: "Module Group 369"
+community: "docs/ssh-security-review.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_369
+  - community/docs/ssh-security-reviewmd
 ---
 
 # SSH Approval Flow (auto-approve vs human-review vs deny)
 
 ## Connections
-- [[SSH Capability Architecture Document]] - `describes` [EXTRACTED]
+- [[ssh-capability]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_369
+#graphify/concept #graphify/EXTRACTED #community/docs/ssh-security-reviewmd

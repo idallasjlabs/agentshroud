@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "Module Group 91"
-location: "L68"
+community: "Gateway Test Suite"
+location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_91
+  - community/Gateway_Test_Suite
 ---
 
 # Test that leaked canaries are detected in responses.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_leaked_canary_detected_in_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_91
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Alert Dispatcher"
-location: "L225"
+community: "PII Config & Test Fixtures"
+location: "L219"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Alert_Dispatcher
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Rapid trust score updates shouldn't corrupt state.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_trust_manager_rapid_updates()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

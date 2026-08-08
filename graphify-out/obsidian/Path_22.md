@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_credential_injector.py"
+source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "Module Group 277"
-location: "L209"
+community: "PII Config & Test Fixtures"
+location: "L27"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_277
+  - graphify/INFERRED
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Path
 
 ## Connections
-- [[._make_anthropic_injector()]] - `references` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[dispatcher()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_277
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

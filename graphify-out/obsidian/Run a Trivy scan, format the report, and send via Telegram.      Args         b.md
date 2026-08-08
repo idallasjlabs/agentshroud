@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "Module Group 169"
-location: "L145"
+community: "Gateway Test Suite"
+location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_169
+  - community/Gateway_Test_Suite
 ---
 
 # Run a Trivy scan, format the report, and send via Telegram.      Args:         b
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_and_send_cve_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_169
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

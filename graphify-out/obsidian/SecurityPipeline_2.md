@@ -1,23 +1,26 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "Module Group 314"
-location: "gateway/proxy/pipeline.py"
+community: "PII Sanitizer Pipeline"
+location: "L53"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_314
+  - graphify/INFERRED
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # SecurityPipeline
 
 ## Connections
-- [[AuditChain_1]] - `uses` [EXTRACTED]
-- [[EnhancedApprovalQueue_2]] - `uses` [EXTRACTED]
-- [[MiddlewareManager_1]] - `feeds_into` [INFERRED]
-- [[PIISanitizer_4]] - `requires` [EXTRACTED]
-- [[forwarder.py — HTTPForwarder]] - `references` [EXTRACTED]
-- [[mcp_proxy.py — MCPProxy]] - `references` [EXTRACTED]
-- [[pipeline.py — SecurityPipeline]] - `defines` [EXTRACTED]
+- [[EncodingConfig]] - `uses` [INFERRED]
+- [[EncodingDetector]] - `uses` [INFERRED]
+- [[InjectionAction]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[PipelineAction]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
+- [[_make_pipeline()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_314
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline

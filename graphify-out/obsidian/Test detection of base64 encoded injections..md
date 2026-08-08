@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "Module Group 76"
-location: "L85"
+community: "Gateway Test Suite"
+location: "L82"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_76
+  - community/Gateway_Test_Suite
 ---
 
 # Test detection of base64 encoded injections.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_base64_encoded_injection()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_76
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

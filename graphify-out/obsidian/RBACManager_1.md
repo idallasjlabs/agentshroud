@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "RBAC Configuration"
+community: "Auth & Exception Types"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # RBACManager
 
 ## Connections
-- [[.__init__()_89]] - `method` [EXTRACTED]
+- [[.__init__()_109]] - `method` [EXTRACTED]
 - [[._build_permission_matrix()]] - `method` [EXTRACTED]
 - [[._build_tool_permissions()]] - `method` [EXTRACTED]
 - [[.audit_privilege_change()]] - `method` [EXTRACTED]
@@ -26,13 +26,14 @@ tags:
 - [[.is_privilege_escalation()]] - `method` [EXTRACTED]
 - [[.list_users_and_roles()]] - `method` [EXTRACTED]
 - [[.set_user_role()]] - `method` [EXTRACTED]
-- [[.setup_method()_17]] - `calls` [EXTRACTED]
+- [[.setup_method()_20]] - `calls` [EXTRACTED]
 - [[.test_invalid_action_resource_combinations()]] - `calls` [EXTRACTED]
 - [[.test_invalid_user_id()]] - `calls` [EXTRACTED]
 - [[.test_permission_check_with_context()]] - `calls` [EXTRACTED]
 - [[.test_rbac_manager_without_config()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -55,8 +56,8 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[rbac.py]] - `contains` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[set_user_role()_1]] - `calls` [EXTRACTED]
 - [[test_rbac.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBAC_Configuration
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

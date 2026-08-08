@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Module Group 119"
-location: "L208"
+community: "Tool Chain Analyzer"
+location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_119
+  - community/Tool_Chain_Analyzer
 ---
 
 # Test that normal tool sequences pass through.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_normal_tool_sequences_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_119
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain_Analyzer

@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "Progressive Lockdown"
+community: "Gateway Test Suite"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Lockdown
+  - community/Gateway_Test_Suite
 ---
 
 # ProgressiveLockdown
 
 ## Connections
-- [[.__init__()_30]] - `calls` [EXTRACTED]
-- [[.__init__()_86]] - `method` [EXTRACTED]
+- [[.__init__()_38]] - `calls` [EXTRACTED]
+- [[.__init__()_105]] - `method` [EXTRACTED]
 - [[._get_state()]] - `method` [EXTRACTED]
 - [[.all_statuses()]] - `method` [EXTRACTED]
 - [[.get_status()_2]] - `method` [EXTRACTED]
 - [[.is_suspended()]] - `method` [EXTRACTED]
 - [[.record_block()]] - `method` [EXTRACTED]
-- [[.reset()_1]] - `method` [EXTRACTED]
+- [[.reset()_2]] - `method` [EXTRACTED]
 - [[.test_alert_level_at_3_blocks()]] - `calls` [EXTRACTED]
 - [[.test_all_statuses_empty_initially()]] - `calls` [EXTRACTED]
 - [[.test_all_statuses_excludes_reset_users()]] - `calls` [EXTRACTED]
@@ -31,12 +31,12 @@ tags:
 - [[.test_reset_removes_suspended_state()]] - `calls` [EXTRACTED]
 - [[.test_reset_true_for_known_user()]] - `calls` [EXTRACTED]
 - [[.test_suspended_level_at_10_blocks()]] - `calls` [EXTRACTED]
-- [[Any_18]] - `uses` [INFERRED]
+- [[Any_20]] - `uses` [INFERRED]
 - [[FakePipelineResult]] - `uses` [INFERRED]
 - [[FakeRBAC]] - `uses` [INFERRED]
 - [[PassthroughPipeline]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[TestCollabLockdownNotifications]] - `uses` [INFERRED]
 - [[TestLockedCommand]] - `uses` [INFERRED]
 - [[TestProgressiveLockdownUnit]] - `uses` [INFERRED]
@@ -48,4 +48,4 @@ tags:
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Lockdown
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

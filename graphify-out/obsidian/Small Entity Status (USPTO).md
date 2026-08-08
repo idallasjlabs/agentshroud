@@ -1,17 +1,17 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "concept"
-community: "Module Group 342"
+community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 location: "Section 1.7"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_342
+  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
 ---
 
 # Small Entity Status (USPTO)
 
 ## Connections
-- [[USPTO Provisional Patent Application]] - `describes` [EXTRACTED]
+- [[USPTO_PROVISIONAL_PATENT_APPLICATION]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_342
+#graphify/concept #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd

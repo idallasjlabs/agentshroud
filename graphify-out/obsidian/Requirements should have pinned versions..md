@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Environment Guard & Leak Detection"
-location: "L675"
+community: "PII Config & Test Fixtures"
+location: "L686"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Requirements should have pinned versions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_requirements_pinned()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

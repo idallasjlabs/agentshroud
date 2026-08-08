@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "code"
-community: "Module Group 211"
+community: "Gateway Test Suite"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_211
+  - community/Gateway_Test_Suite
 ---
 
 # ServiceDef
@@ -33,4 +33,4 @@ tags:
 - [[generate_compose()]] - `references` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_211
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

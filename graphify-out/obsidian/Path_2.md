@@ -1,17 +1,17 @@
 ---
-source_file: "tests/startup_smoke/test_apply_patches.js"
+source_file: "scripts/deploy.sh"
 type: "code"
-community: "Module Group 408"
-location: "L23"
+community: "scripts/deploy.sh"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_408
+  - community/scripts/deploysh
 ---
 
-# path
+# PATH
 
 ## Connections
-- [[test_apply_patches.js]] - `contains` [EXTRACTED]
+- [[deploy.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_408
+#graphify/code #graphify/EXTRACTED #community/scripts/deploysh

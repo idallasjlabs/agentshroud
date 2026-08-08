@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/tests/test_config_validation.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Module Group 99"
-location: "L17"
+community: "Gateway Skills System"
+location: "L42"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_99
+  - community/Gateway_Skills_System
 ---
 
 # Path
 
 ## Connections
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
-- [[_parse_env_file()]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
+- [[SkillsManifest]] - `uses` [INFERRED]
+- [[_build_tree()]] - `references` [EXTRACTED]
+- [[main()_10]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_99
+#graphify/code #graphify/INFERRED #community/Gateway_Skills_System

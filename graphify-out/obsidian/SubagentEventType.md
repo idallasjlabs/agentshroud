@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Subagent Monitor"
+community: "PII Config & Test Fixtures"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Subagent_Monitor
+  - community/PII_Config__Test_Fixtures
 ---
 
 # SubagentEventType
@@ -35,4 +35,4 @@ tags:
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Subagent_Monitor
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

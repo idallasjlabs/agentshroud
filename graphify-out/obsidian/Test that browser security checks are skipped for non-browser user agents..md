@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "Module Group 77"
+community: "Gateway Test Suite"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_77
+  - community/Gateway_Test_Suite
 ---
 
 # Test that browser security checks are skipped for non-browser user agents.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_browser_security_skips_non_browser_user_agents()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_77
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Module Group 168"
-location: "L208"
+community: "Egress & RBAC Security Core"
+location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_168
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Scan a single file for integrity changes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_168
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

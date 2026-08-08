@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "Privacy Policy"
+community: "Gateway Test Suite"
 location: "L250"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Privacy_Policy
+  - community/Gateway_Test_Suite
 ---
 
 # Return True if the owner should be alerted about this access attempt.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.should_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Privacy_Policy
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

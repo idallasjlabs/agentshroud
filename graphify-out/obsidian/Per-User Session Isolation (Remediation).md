@@ -1,11 +1,11 @@
 ---
 source_file: "docs/redteam/03-session-isolation.md"
 type: "document"
-community: "Module Group 432"
+community: "docs/redteam"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_432
+  - community/docs/redteam
 ---
 
 # Per-User Session Isolation (Remediation)
@@ -18,4 +18,4 @@ tags:
 - [[Telegram user ID as session partition key]] - `uses` [EXTRACTED]
 - [[Tier 1 Deployment Blockers (6 features, score 4.0+)]] - `requires` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_432
+#graphify/document #graphify/EXTRACTED #community/docs/redteam

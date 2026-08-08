@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "rationale"
-community: "Module Group 130"
-location: "L10"
+community: "Gateway Test Suite"
+location: "L8"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_130
+  - community/Gateway_Test_Suite
 ---
 
 # Test multilingual prompt injection detection across Tier 1 and Tier 2 languages.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMultilingualInjection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_130
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "rationale"
-community: "Module Group 75"
-location: "L253"
+community: "Group Workspace Isolation"
+location: "L366"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_75
+  - community/Group_Workspace_Isolation
 ---
 
 # Return True if text contains patterns matching private/sensitive content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.contains_private_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_75
+#graphify/rationale #graphify/EXTRACTED #community/Group_Workspace_Isolation

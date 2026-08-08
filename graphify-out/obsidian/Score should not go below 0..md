@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "Module Group 359"
+community: "Progressive Trust Config"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_359
+  - community/Progressive_Trust_Config
 ---
 
 # Score should not go below 0.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_score_floor_at_zero()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_359
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config

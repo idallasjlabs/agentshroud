@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Security Scanner Integration"
+community: "IEC 62443 Scorecard"
 location: "L655"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Scanner_Integration
+  - community/IEC_62443_Scorecard
 ---
 
 # Return True if a non-zombie falco process is running inside this container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_falco_running()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Scanner_Integration
+#graphify/rationale #graphify/EXTRACTED #community/IEC_62443_Scorecard

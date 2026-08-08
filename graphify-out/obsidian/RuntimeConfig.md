@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "code"
-community: "Module Group 281"
+community: "Gateway Test Suite"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_281
+  - community/Gateway_Test_Suite
 ---
 
 # RuntimeConfig
@@ -23,4 +23,4 @@ tags:
 - [[config.py_1]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_281
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

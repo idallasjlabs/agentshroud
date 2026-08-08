@@ -1,11 +1,11 @@
 ---
 source_file: "docs/redteam/live-assessment-results.md"
 type: "document"
-community: "Module Group 402"
+community: "docs/redteam"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_402
+  - community/docs/redteam
 ---
 
 # Red Team Live Assessment Results (v0.6.0 → v0.7.0)
@@ -17,4 +17,4 @@ tags:
 - [[v0.6.0 Identified Gaps 0% enforcement, no outbound filter, no HITL, no isolation, credentials exposed]] - `identifies` [EXTRACTED]
 - [[v0.7.0 Sprint Status (Session Isolation in progress, others complete)]] - `tracks` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_402
+#graphify/document #graphify/EXTRACTED #community/docs/redteam

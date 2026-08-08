@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Module Group 388"
-location: "L393"
+community: "Egress & RBAC Security Core"
+location: "L392"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_388
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Test integration of memory security components.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMemorySecurityIntegration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_388
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

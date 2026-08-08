@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Telegram Proxy Core"
-location: "L353"
+community: "Collaborator Prompt Classifiers"
+location: "L381"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Core
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # TelegramAPIProxy
 
 ## Connections
-- [[.__init__()_30]] - `method` [EXTRACTED]
+- [[.__init__()_38]] - `method` [EXTRACTED]
 - [[._active_bot_id()]] - `method` [EXTRACTED]
 - [[._active_send_token()]] - `method` [EXTRACTED]
 - [[._answer_callback_query()]] - `method` [EXTRACTED]
@@ -30,6 +30,7 @@ tags:
 - [[._contains_legacy_block_notice()]] - `method` [EXTRACTED]
 - [[._edit_telegram_message()]] - `method` [EXTRACTED]
 - [[._emit_quarantine_event()]] - `method` [EXTRACTED]
+- [[._enforce_group_workspace_access()]] - `method` [EXTRACTED]
 - [[._extract_embedded_tool_call_json()]] - `method` [EXTRACTED]
 - [[._extract_first_egress_target()]] - `method` [EXTRACTED]
 - [[._extract_owner_target()]] - `method` [EXTRACTED]
@@ -40,6 +41,7 @@ tags:
 - [[._forward_file_download()]] - `method` [EXTRACTED]
 - [[._forward_to_telegram()]] - `method` [EXTRACTED]
 - [[._get_user_projects()]] - `method` [EXTRACTED]
+- [[._group_workspace_manager()]] - `method` [EXTRACTED]
 - [[._handle_addtogroup_command()]] - `method` [EXTRACTED]
 - [[._handle_groupinfo_command()]] - `method` [EXTRACTED]
 - [[._handle_groups_command()]] - `method` [EXTRACTED]
@@ -97,6 +99,7 @@ tags:
 - [[._looks_like_unicode_obfuscation_bypass_request()]] - `method` [EXTRACTED]
 - [[._looks_like_unsafe_scheme_request()]] - `method` [EXTRACTED]
 - [[._looks_like_web_access_request()]] - `method` [EXTRACTED]
+- [[._matches_presence_probe()]] - `method` [EXTRACTED]
 - [[._mirror_to_owner_if_collaborator()]] - `method` [EXTRACTED]
 - [[._multipart_boundary()]] - `method` [EXTRACTED]
 - [[._multipart_get_field()]] - `method` [EXTRACTED]
@@ -144,7 +147,9 @@ tags:
 - [[._telegram_kick_member()]] - `method` [EXTRACTED]
 - [[._trigger_web_fetch_approval()]] - `method` [EXTRACTED]
 - [[._trigger_web_search_log()]] - `method` [EXTRACTED]
+- [[._username_for_bot()]] - `method` [EXTRACTED]
 - [[.get_stats()_9]] - `method` [EXTRACTED]
+- [[.proxy()]] - `calls` [EXTRACTED]
 - [[.proxy_request()]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
 - [[AsyncMock]] - `uses` [INFERRED]
@@ -155,6 +160,8 @@ tags:
 - [[FakePipelineResult_1]] - `uses` [INFERRED]
 - [[FakeRBAC]] - `uses` [INFERRED]
 - [[FakeRBAC_1]] - `uses` [INFERRED]
+- [[FastAPI app (main.py)]] - `references` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `uses` [INFERRED]
 - [[PassthroughPipeline]] - `uses` [INFERRED]
 - [[PassthroughPipeline_1]] - `uses` [INFERRED]
 - [[PipelineResult_1]] - `uses` [INFERRED]
@@ -172,7 +179,12 @@ tags:
 - [[TestCollaboratorPromptClassifiers]] - `uses` [INFERRED]
 - [[TestCollaboratorRateLimitRecovery]] - `uses` [INFERRED]
 - [[TestCommandTokenNormalization]] - `uses` [INFERRED]
+- [[TestConfigGate]] - `uses` [INFERRED]
+- [[TestCrossGroupIsolation]] - `uses` [INFERRED]
 - [[TestDRYOwnerChatID]] - `uses` [INFERRED]
+- [[TestDefaultBotId]] - `uses` [INFERRED]
+- [[TestDefensiveGuards]] - `uses` [INFERRED]
+- [[TestDmIsolation]] - `uses` [INFERRED]
 - [[TestDomainValidationHelper]] - `uses` [INFERRED]
 - [[TestEgressBannerRedactionNoOwnerNotice]] - `uses` [INFERRED]
 - [[TestEgressConfigDefaultEnforce]] - `uses` [INFERRED]
@@ -184,6 +196,8 @@ tags:
 - [[TestFullAccessMiddlewareBypass]] - `uses` [INFERRED]
 - [[TestGitGuardDefaultEnforce]] - `uses` [INFERRED]
 - [[TestGroupMentionFilter]] - `uses` [INFERRED]
+- [[TestGroupPresenceProbe]] - `uses` [INFERRED]
+- [[TestInboundChokepointWiring]] - `uses` [INFERRED]
 - [[TestInboundFallbackToDirectSanitizer]] - `uses` [INFERRED]
 - [[TestInboundPipelineBlockedNonOwner]] - `uses` [INFERRED]
 - [[TestInboundPipelineBlockedOwner]] - `uses` [INFERRED]
@@ -197,9 +211,11 @@ tags:
 - [[TestLLMProxyEndpoints]] - `uses` [INFERRED]
 - [[TestLockedCommand]] - `uses` [INFERRED]
 - [[TestLooksLikeSafeCollaboratorInfoQuery]] - `uses` [INFERRED]
+- [[TestMembersShareGroupWorkspace]] - `uses` [INFERRED]
 - [[TestMultiBotContextvarRouting]] - `uses` [INFERRED]
 - [[TestMultipartOutboundPipeline]] - `uses` [INFERRED]
 - [[TestNoResponseGuarantee]] - `uses` [INFERRED]
+- [[TestNonMemberDenied]] - `uses` [INFERRED]
 - [[TestNotifyUserBlockedSanitization]] - `uses` [INFERRED]
 - [[TestOutboundClassifierHelpers]] - `uses` [INFERRED]
 - [[TestOutboundPipelineBlocked]] - `uses` [INFERRED]
@@ -211,6 +227,7 @@ tags:
 - [[TestOwnerMirrorCoalescing]] - `uses` [INFERRED]
 - [[TestParseModeStrippedAfterPIIRedaction]] - `uses` [INFERRED]
 - [[TestPendingNoticeIncludesEgressSection]] - `uses` [INFERRED]
+- [[TestPerBotGroupMentionFilter]] - `uses` [INFERRED]
 - [[TestProgressiveLockdownUX]] - `uses` [INFERRED]
 - [[TestProgressiveLockdownUnit]] - `uses` [INFERRED]
 - [[TestReplayBufferOffsetParsing]] - `uses` [INFERRED]
@@ -225,11 +242,12 @@ tags:
 - [[TestTrackerGetHealth]] - `uses` [INFERRED]
 - [[TestUnlockCommand]] - `uses` [INFERRED]
 - [[TestWebSearchLog]] - `uses` [INFERRED]
-- [[_make_proxy()]] - `calls` [EXTRACTED]
-- [[_make_proxy()_3]] - `calls` [EXTRACTED]
+- [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[slack_proxy.py]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `contains` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `imports` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `imports` [EXTRACTED]
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
@@ -237,4 +255,4 @@ tags:
 - [[test_telegram_proxy_multibot.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Core
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

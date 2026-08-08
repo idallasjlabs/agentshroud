@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "rationale"
-community: "Module Group 263"
+community: "Gateway Test Suite"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_263
+  - community/Gateway_Test_Suite
 ---
 
 # Startup prune must remove fixture markdown files from every contributor dir.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prune_walks_all_contributor_dirs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_263
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

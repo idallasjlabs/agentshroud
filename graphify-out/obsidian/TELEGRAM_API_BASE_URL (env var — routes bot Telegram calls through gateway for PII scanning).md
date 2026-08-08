@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
+source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
 type: "document"
-community: "Module Group 326"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_326
+  - community/docs/vault
 ---
 
 # TELEGRAM_API_BASE_URL (env var — routes bot Telegram calls through gateway for PII scanning)
@@ -14,4 +14,4 @@ tags:
 - [[agentshroud-bot service (docker-compose port 18789, 4GB memory, isolated network)]] - `sets` [EXTRACTED]
 - [[gateway service (docker-compose port 8080, read-only rootfs, 1280MB memory)]] - `routes_traffic_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_326
+#graphify/document #graphify/EXTRACTED #community/docs/vault

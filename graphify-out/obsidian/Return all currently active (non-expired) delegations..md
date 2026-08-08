@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "Module Group 190"
+community: "Gateway Test Suite"
 location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_190
+  - community/Gateway_Test_Suite
 ---
 
 # Return all currently active (non-expired) delegations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_active_delegations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_190
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

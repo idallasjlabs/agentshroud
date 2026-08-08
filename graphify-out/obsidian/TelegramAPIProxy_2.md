@@ -1,19 +1,21 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Proxy Inbound Tests"
-location: "L8756"
+community: "Telegram Proxy Test Suite"
+location: "L8752"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Inbound_Tests
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # TelegramAPIProxy
 
 ## Connections
-- [[._make_proxy()_1]] - `references` [EXTRACTED]
 - [[._make_proxy()]] - `calls` [EXTRACTED]
+- [[._make_proxy()_1]] - `references` [EXTRACTED]
+- [[._make_proxy()_3]] - `references` [EXTRACTED]
+- [[._make_proxy()_2]] - `references` [EXTRACTED]
 - [[.test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - `calls` [EXTRACTED]
 - [[.test_block_notice_sent_without_markdown_parse_mode()]] - `calls` [EXTRACTED]
 - [[.test_blocked_command_is_quarantined()]] - `calls` [EXTRACTED]
@@ -245,4 +247,4 @@ tags:
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound_Tests
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

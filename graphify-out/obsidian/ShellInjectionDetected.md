@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Module Group 102"
+community: "Gateway Test Suite"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_102
+  - community/Gateway_Test_Suite
 ---
 
 # ShellInjectionDetected
@@ -20,4 +20,4 @@ tags:
 - [[TestWhitelistBlacklist]] - `uses` [INFERRED]
 - [[consent_framework.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_102
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "rationale"
-community: "Module Group 275"
+community: "Gateway Proxy Layer"
 location: "L284"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_275
+  - community/Gateway_Proxy_Layer
 ---
 
 # Start the DNS forwarding server with optional blocklist.      Returns the transp
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[start_dns_forwarder()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_275
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

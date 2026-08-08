@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "rationale"
-community: "Version Routes & Manager Tools"
+community: "Gateway Ingest API"
 location: "L289"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Version_Routes__Manager_Tools
+  - community/Gateway_Ingest_API
 ---
 
 # Rollback to the previous version.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rollback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Version_Routes__Manager_Tools
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Ingest_API

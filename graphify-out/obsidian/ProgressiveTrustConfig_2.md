@@ -1,22 +1,26 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "Progressive Trust Levels"
-location: "L36"
+community: "Progressive Trust Config"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Levels
+  - community/Progressive_Trust_Config
 ---
 
 # ProgressiveTrustConfig
 
 ## Connections
+- [[.test_default_mode_is_enforce()_4]] - `calls` [EXTRACTED]
 - [[.test_default_penalties_cover_all_violation_types()]] - `calls` [EXTRACTED]
+- [[.test_enforce_mode_blocks()]] - `calls` [EXTRACTED]
 - [[.test_full_level_wildcard_allows_everything()]] - `calls` [EXTRACTED]
 - [[.test_is_tool_allowed_per_level()]] - `calls` [EXTRACTED]
 - [[.test_is_tool_allowed_wildcard()]] - `calls` [EXTRACTED]
 - [[.test_level_order()]] - `calls` [EXTRACTED]
+- [[.test_monitor_mode_logs_but_does_not_block_via_trust_gate()]] - `calls` [EXTRACTED]
+- [[.test_monitor_mode_still_allows_permitted_tools()]] - `calls` [EXTRACTED]
 - [[.test_next_and_previous_levels()]] - `calls` [EXTRACTED]
 - [[.test_tool_allowed_at_level()]] - `calls` [EXTRACTED]
 - [[.test_tool_denied_above_level()]] - `calls` [EXTRACTED]
@@ -30,8 +34,8 @@ tags:
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustLevel]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_fast_ladder()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Levels
+#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config

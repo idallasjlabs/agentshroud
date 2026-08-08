@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "document"
-community: "Module Group 572"
+community: "docs/setup-slack.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_572
+  - community/docs/setup-slackmd
 ---
 
 # Slack Channel Setup Guide
@@ -14,4 +14,4 @@ tags:
 - [[Slack Bot Tokens (xoxb-, xapp-)]] - `requires` [EXTRACTED]
 - [[Slack Socket Mode Architecture]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_572
+#graphify/document #graphify/EXTRACTED #community/docs/setup-slackmd

@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "Module Group 76"
-location: "L27"
+community: "Gateway Test Suite"
+location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_76
+  - community/Gateway_Test_Suite
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[.setup_method()_33]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_36]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultInjectionScanner]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_76
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

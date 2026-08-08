@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "CLI & Core Gateway Routes"
-location: "L210"
+community: "Auth & Exception Types"
+location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Auth__Exception_Types
 ---
 
 # Request to execute an SSH command
 
 ## Connections
-- [[SSHExecRequest_1]] - `rationale_for` [EXTRACTED]
+- [[SSHExecRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

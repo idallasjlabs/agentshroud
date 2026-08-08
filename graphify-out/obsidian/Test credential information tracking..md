@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Module Group 93"
-location: "L99"
+community: "Gateway Test Suite"
+location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_93
+  - community/Gateway_Test_Suite
 ---
 
 # Test credential information tracking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCredentialInfo]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_93
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

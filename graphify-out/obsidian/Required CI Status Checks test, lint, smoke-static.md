@@ -1,12 +1,12 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/governance/BRANCH_PROTECTION.md"
+source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "concept"
-community: "Module Group 576"
+community: "docs/governance"
 location: "Required Status Checks"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_576
+  - community/docs/governance
 ---
 
 # Required CI Status Checks: test, lint, smoke-static
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Branch Protection Rules (BRANCH_PROTECTION.md)]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_576
+#graphify/concept #graphify/EXTRACTED #community/docs/governance

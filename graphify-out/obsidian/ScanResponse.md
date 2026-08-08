@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "Sidecar Security Scanner"
+community: "HTTP Forwarder"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sidecar_Security_Scanner
+  - community/HTTP_Forwarder
 ---
 
 # ScanResponse
@@ -16,4 +16,4 @@ tags:
 - [[Response from sidecar scan.]] - `rationale_for` [EXTRACTED]
 - [[sidecar.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sidecar_Security_Scanner
+#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder

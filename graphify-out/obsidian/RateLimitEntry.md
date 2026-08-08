@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCP Inspector & Audit"
+community: "MCP Proxy Config"
 location: "L144"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Inspector__Audit
+  - community/MCP_Proxy_Config
 ---
 
 # RateLimitEntry
@@ -20,4 +20,4 @@ tags:
 - [[Track rate limit state for a tool+agent combo.]] - `rationale_for` [EXTRACTED]
 - [[mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Inspector__Audit
+#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_alert_dispatcher_retry.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Alert Dispatcher"
-location: "L27"
+community: "Gateway Security Module"
+location: "L66"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Alert_Dispatcher
+  - graphify/EXTRACTED
+  - community/Gateway_Security_Module
 ---
 
 # Path
 
 ## Connections
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[dispatcher()]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

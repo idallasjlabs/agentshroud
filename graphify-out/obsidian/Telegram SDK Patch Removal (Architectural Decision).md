@@ -1,17 +1,17 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/reviews/phase-review-2026-03-04.md"
+source_file: "docs/reviews/phase-review-2026-03-04.md"
 type: "rationale"
-community: "Module Group 280"
+community: "docs/reviews"
 location: "line 48-59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_280
+  - community/docs/reviews
 ---
 
 # Telegram SDK Patch Removal (Architectural Decision)
 
 ## Connections
-- [[Phase Review 2026-03-04]] - `documents` [EXTRACTED]
+- [[phase-review-2026-03-03]] - `documents` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_280
+#graphify/rationale #graphify/EXTRACTED #community/docs/reviews

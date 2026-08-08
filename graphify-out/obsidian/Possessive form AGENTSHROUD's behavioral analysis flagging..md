@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Module Group 181"
-location: "L560"
+community: "Gateway Test Suite"
+location: "L555"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_181
+  - community/Gateway_Test_Suite
 ---
 
 # Possessive form: AGENTSHROUD's behavioral analysis flagging.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_possessive_flagging()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_181
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Module Group 669"
-location: "L105"
+community: "Gateway Test Suite"
+location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_669
+  - community/Gateway_Test_Suite
 ---
 
 # Test that sensitive MCP tool names are filtered.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_mcp_tool_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_669
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

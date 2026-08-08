@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "Audit Store & Ledger"
-location: "L101"
+community: "Audit Export Pipeline"
+location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Store__Ledger
+  - community/Audit_Export_Pipeline
 ---
 
 # Test hash chain maintains integrity.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_hash_chain_integrity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Store__Ledger
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline

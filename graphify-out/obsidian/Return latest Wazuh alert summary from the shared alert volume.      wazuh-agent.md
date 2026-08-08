@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Module Group 228"
+community: "Gateway Security Module"
 location: "L746"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_228
+  - community/Gateway_Security_Module
 ---
 
 # Return latest Wazuh alert summary from the shared alert volume.      wazuh-agent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_wazuh_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_228
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "Module Group 61"
+community: "Gateway Test Suite"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_61
+  - community/Gateway_Test_Suite
 ---
 
 # Test content with multiple instances of same PII type
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_multiple_same_type_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_61
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

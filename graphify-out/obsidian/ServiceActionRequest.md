@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Router & Correlation"
-location: "L567"
+community: "SOC Collaborator Lifecycle"
+location: "L564"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router__Correlation
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # ServiceActionRequest
@@ -21,7 +21,7 @@ tags:
 - [[SCLError]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
 - [[WSEventType]] - `uses` [INFERRED]
 - [[killswitch_freeze()]] - `references` [EXTRACTED]
 - [[killswitch_shutdown()]] - `references` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[upgrade_gateway()]] - `references` [EXTRACTED]
 - [[upgrade_hermes()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router__Correlation
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

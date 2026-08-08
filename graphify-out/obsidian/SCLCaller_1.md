@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Router & Correlation"
-location: "L61"
+community: "SOC Collaborator Lifecycle"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Router__Correlation
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # SCLCaller
@@ -17,11 +17,8 @@ tags:
 - [[ContributorManager]] - `uses` [INFERRED]
 - [[SCLCaller]] - `uses` [INFERRED]
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLError]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
-- [[WSEventType]] - `uses` [INFERRED]
 - [[_log_audit()]] - `references` [EXTRACTED]
 - [[acknowledge_config_integrity()]] - `references` [EXTRACTED]
 - [[add_collaborator()_1]] - `references` [EXTRACTED]
@@ -49,6 +46,7 @@ tags:
 - [[get_health()_1]] - `references` [EXTRACTED]
 - [[get_llm_failover_stats()]] - `references` [EXTRACTED]
 - [[get_modules()]] - `references` [EXTRACTED]
+- [[get_modules_heatmap()]] - `references` [EXTRACTED]
 - [[get_privacy_policies()]] - `references` [EXTRACTED]
 - [[get_risk_score()]] - `references` [EXTRACTED]
 - [[get_risk_summary()]] - `references` [EXTRACTED]
@@ -100,4 +98,4 @@ tags:
 - [[upgrade_hermes()]] - `references` [EXTRACTED]
 - [[verify_audit_chain()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Router__Correlation
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

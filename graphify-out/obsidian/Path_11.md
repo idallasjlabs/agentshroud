@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Module Group 80"
+community: "Gateway Security Module"
 location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_80
+  - community/Gateway_Security_Module
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_66]] - `calls` [EXTRACTED]
+- [[.__init__()_79]] - `calls` [EXTRACTED]
 - [[._analyze_file_content()]] - `references` [EXTRACTED]
 - [[._analyze_script_file()]] - `references` [EXTRACTED]
 - [[._quarantine_suspicious_files()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[._scan_setup_py()]] - `references` [EXTRACTED]
 - [[.scan_git_repository()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_80
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

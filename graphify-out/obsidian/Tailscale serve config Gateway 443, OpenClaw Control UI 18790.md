@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "concept"
-community: "Module Group 629"
+community: "docs/reference"
 location: "line 29"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_629
+  - community/docs/reference
 ---
 
 # Tailscale serve config: Gateway :443, OpenClaw Control UI :18790
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tailscale Remote Access Setup (marvin.tail240ea8.ts.net)]] - `documents` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_629
+#graphify/concept #graphify/EXTRACTED #community/docs/reference

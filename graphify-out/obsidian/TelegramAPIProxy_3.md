@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Telegram Proxy Outbound Tests"
+community: "Gateway Test Suite"
 location: "L4521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Outbound_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # TelegramAPIProxy
 
 ## Connections
 - [[._make_owner_proxy()]] - `calls` [EXTRACTED]
-- [[._make_proxy()_3]] - `references` [EXTRACTED]
+- [[._make_proxy()_5]] - `references` [EXTRACTED]
 - [[._make_proxy_with_mock_buffer()]] - `calls` [EXTRACTED]
 - [[.test_activity_command_renders_entries()]] - `calls` [EXTRACTED]
 - [[.test_activity_command_reports_tracker_unhealthy()]] - `calls` [EXTRACTED]
@@ -53,6 +53,8 @@ tags:
 - [[.test_collaborator_pairing_code_leakage_is_redacted_json()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_security_monitoring_threshold_notice_is_normalized_form()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_security_monitoring_threshold_notice_is_normalized_json()]] - `calls` [EXTRACTED]
+- [[.test_contextvar_takes_precedence_over_default()]] - `calls` [EXTRACTED]
+- [[.test_default_is_openclaw_when_not_injected()]] - `calls` [EXTRACTED]
 - [[.test_embedded_tool_call_json_is_removed_from_text()]] - `calls` [EXTRACTED]
 - [[.test_embedded_web_fetch_json_queues_approval_when_available()]] - `calls` [EXTRACTED]
 - [[.test_fail_closed_replaces_caption_payload()]] - `calls` [EXTRACTED]
@@ -93,6 +95,7 @@ tags:
 - [[.test_html_parse_mode_preserved_without_redaction_placeholders()]] - `calls` [EXTRACTED]
 - [[.test_html_parse_mode_removed_for_redaction_placeholders()]] - `calls` [EXTRACTED]
 - [[.test_info_filter_redaction_escalates_to_block_for_non_owner()]] - `calls` [EXTRACTED]
+- [[.test_injected_default_overrides_openclaw()]] - `calls` [EXTRACTED]
 - [[.test_json_caption_pipeline_block_replaces_caption()]] - `calls` [EXTRACTED]
 - [[.test_json_caption_sanitized_in_place()]] - `calls` [EXTRACTED]
 - [[.test_json_without_content_type_empty_text_with_caption_is_still_filtered()]] - `calls` [EXTRACTED]
@@ -230,4 +233,4 @@ tags:
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Outbound_Tests
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

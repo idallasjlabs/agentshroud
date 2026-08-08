@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Module Group 437"
+community: "Gateway Test Suite"
 location: "L385"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_437
+  - community/Gateway_Test_Suite
 ---
 
 # Return True if clamd Unix socket /tmp/clamd.ctl is connectable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_clamd_running()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_437
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

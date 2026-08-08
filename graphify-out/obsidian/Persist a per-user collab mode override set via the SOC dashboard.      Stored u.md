@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Module Group 208"
-location: "L302"
+community: "Collaborator Response Templates"
+location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_208
+  - community/Collaborator_Response_Templates
 ---
 
 # Persist a per-user collab mode override set via the SOC dashboard.      Stored u
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[persist_user_collab_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_208
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates

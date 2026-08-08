@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Group Config & Teams"
-location: "L152"
+community: "Collaborator Response Templates"
+location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Config__Teams
+  - community/Collaborator_Response_Templates
 ---
 
 # Return mapping of group_id → admin_user_id for all groups that have an admin.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_group_admin_ids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Config__Teams
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates

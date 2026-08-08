@@ -1,12 +1,12 @@
 ---
 source_file: "docs/redteam/03-session-isolation.md"
 type: "concept"
-community: "Module Group 432"
+community: "docs/redteam"
 location: "line 249"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_432
+  - community/docs/redteam
 ---
 
 # Telegram user ID as session partition key
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Per-User Session Isolation (Remediation)]] - `uses` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_432
+#graphify/concept #graphify/EXTRACTED #community/docs/redteam

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "Module Group 91"
-location: "L131"
+community: "Gateway Test Suite"
+location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_91
+  - community/Gateway_Test_Suite
 ---
 
 # Test that sessions without canaries return safe results.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_session_without_canary_returns_safe_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_91
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

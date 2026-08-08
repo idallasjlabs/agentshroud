@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Subagent Monitor"
+community: "PII Config & Test Fixtures"
 location: "L34"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Subagent_Monitor
+  - community/PII_Config__Test_Fixtures
 ---
 
 # SubagentEvent
 
 ## Connections
 - [[._log_event()]] - `calls` [EXTRACTED]
-- [[.get_audit_log()_3]] - `references` [EXTRACTED]
+- [[.get_audit_log()_5]] - `references` [EXTRACTED]
 - [[.get_flagged_events()]] - `references` [EXTRACTED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestContextGuard_1]] - `uses` [INFERRED]
 - [[TestCryptography]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Subagent_Monitor
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

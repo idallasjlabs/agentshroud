@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Tool Result Sanitizer"
+community: "PII Sanitizer Pipeline"
 location: "L31"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Result_Sanitizer
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # PIIConfig
@@ -19,24 +19,31 @@ tags:
 - [[.pipeline()_1]] - `calls` [EXTRACTED]
 - [[.pipeline()]] - `calls` [EXTRACTED]
 - [[.sanitizer()]] - `calls` [EXTRACTED]
+- [[.sanitizer()_1]] - `calls` [INFERRED]
 - [[.set_config()]] - `calls` [EXTRACTED]
 - [[.test_default_bot_and_sanitizer_configured()]] - `calls` [EXTRACTED]
 - [[.test_default_pii_config_meets_floor()]] - `calls` [EXTRACTED]
 - [[.test_email_content_scanning()]] - `calls` [EXTRACTED]
 - [[.test_icloud_contact_scanning()]] - `calls` [EXTRACTED]
+- [[.test_many_pii_entities()]] - `calls` [INFERRED]
 - [[.test_middleware_set_config_disabled()]] - `calls` [EXTRACTED]
 - [[.test_middleware_set_config_missing()]] - `calls` [EXTRACTED]
 - [[.test_pii_sanitizer_default_enforcement()]] - `calls` [EXTRACTED]
 - [[.test_pii_sanitizer_mode_param()]] - `calls` [EXTRACTED]
+- [[.test_pii_scan_time_independent_of_content()]] - `calls` [INFERRED]
+- [[.test_regex_redos_email()]] - `calls` [INFERRED]
+- [[.test_regex_redos_ssn()]] - `calls` [INFERRED]
 - [[.test_single_message_pipeline_under_100ms()]] - `calls` [EXTRACTED]
 - [[.test_tool_specific_config()]] - `calls` [EXTRACTED]
+- [[.test_unicode_normalization_bypass()]] - `calls` [INFERRED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
-- [[Any_56]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Any_60]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
-- [[GatewayConfig_3]] - `uses` [INFERRED]
+- [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -53,6 +60,7 @@ tags:
 - [[Resource]] - `uses` [INFERRED]
 - [[SSHConfig]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_3]] - `uses` [INFERRED]
 - [[TestAnalyzeRequestForRBAC]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
@@ -63,7 +71,9 @@ tags:
 - [[TestConfidenceFloor]] - `uses` [INFERRED]
 - [[TestConfigurationLoading]] - `uses` [INFERRED]
 - [[TestContextGuard]] - `uses` [INFERRED]
+- [[TestCriticalGuardInitFailClosed]] - `uses` [INFERRED]
 - [[TestCrossSessionAccess]] - `uses` [INFERRED]
+- [[TestDefaultBotId]] - `uses` [INFERRED]
 - [[TestDomainValidationHelper]] - `uses` [INFERRED]
 - [[TestE2E01PromptGuardBlocking]] - `uses` [INFERRED]
 - [[TestE2E02InboundPIIRedaction]] - `uses` [INFERRED]
@@ -121,7 +131,13 @@ tags:
 - [[TestSSHExec]] - `uses` [INFERRED]
 - [[TestSSHHistory]] - `uses` [INFERRED]
 - [[TestSSHHosts]] - `uses` [INFERRED]
+- [[TestSSHProxyValidateWriteFile]] - `uses` [INFERRED]
+- [[TestSSHProxyWriteFileTransport]] - `uses` [INFERRED]
 - [[TestSSHRequireApprovalFalse]] - `uses` [INFERRED]
+- [[TestSSHValidateCwd]] - `uses` [INFERRED]
+- [[TestSSHWriteFileEndpoint]] - `uses` [INFERRED]
+- [[TestSSHWriteFileLedgerAudit]] - `uses` [INFERRED]
+- [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
 - [[TestScanToolResult]] - `uses` [INFERRED]
 - [[TestSecurityPipelineChainLatency]] - `uses` [INFERRED]
 - [[TestSetConfig]] - `uses` [INFERRED]
@@ -141,6 +157,7 @@ tags:
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
 - [[_StubForwarder]] - `uses` [INFERRED]
 - [[_make_pii_sanitizer()]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 - [[canary_pipeline()]] - `calls` [EXTRACTED]
 - [[config.py]] - `contains` [EXTRACTED]
@@ -150,12 +167,14 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[pii_config()]] - `calls` [EXTRACTED]
 - [[pii_config()_1]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [INFERRED]
 - [[sanitizer()_3]] - `calls` [EXTRACTED]
 - [[sanitizer.py]] - `imports` [EXTRACTED]
 - [[test_canary.py]] - `imports` [EXTRACTED]
 - [[test_config()]] - `calls` [EXTRACTED]
 - [[test_config()_1]] - `calls` [EXTRACTED]
 - [[test_config_with_ssh()]] - `calls` [EXTRACTED]
+- [[test_config_with_ssh()_1]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
@@ -168,8 +187,10 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
+- [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
+- [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Result_Sanitizer
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline

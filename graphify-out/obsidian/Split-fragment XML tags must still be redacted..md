@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Module Group 81"
-location: "L231"
+community: "Gateway Test Suite"
+location: "L228"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_81
+  - community/Gateway_Test_Suite
 ---
 
 # Split-fragment XML tags must still be redacted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_partial_xml_tool_tag_is_filtered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_81
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

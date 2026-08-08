@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/launch-instance.sh"
+source_file: "skills/custom/browser-fetch/browser-fetch.js"
 type: "code"
-community: "Module Group 516"
-location: "L14"
+community: "Custom Skills"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_516
+  - community/Custom_Skills
 ---
 
-# PATH
+# path
 
 ## Connections
-- [[launch-instance.sh]] - `defines` [EXTRACTED]
+- [[browser-fetch.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_516
+#graphify/code #graphify/EXTRACTED #community/Custom_Skills

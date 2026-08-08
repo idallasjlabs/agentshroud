@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Collaborator Responses"
-location: "L34"
+community: "Collaborator Response Templates"
+location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Collaborator_Responses
+  - community/Collaborator_Response_Templates
 ---
 
 # ProjectConfig
@@ -40,4 +40,4 @@ tags:
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 - [[test_group_config.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Collaborator_Responses
+#graphify/code #graphify/INFERRED #community/Collaborator_Response_Templates

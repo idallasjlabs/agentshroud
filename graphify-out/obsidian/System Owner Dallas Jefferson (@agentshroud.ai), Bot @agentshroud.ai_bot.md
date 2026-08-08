@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/architecture/IDENTITY.md"
+source_file: "docs/architecture/IDENTITY.md"
 type: "concept"
-community: "Module Group 620"
+community: "Architecture Docs"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_620
+  - community/Architecture_Docs
 ---
 
 # System Owner: Dallas Jefferson (@agentshroud.ai), Bot: @agentshroud.ai_bot
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Identity Reference AgentShroud System]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_620
+#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs

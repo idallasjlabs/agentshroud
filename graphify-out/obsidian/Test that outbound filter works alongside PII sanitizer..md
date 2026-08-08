@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Module Group 198"
-location: "L609"
+community: "Gateway Security Module"
+location: "L604"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_198
+  - community/Gateway_Security_Module
 ---
 
 # Test that outbound filter works alongside PII sanitizer.
 
 ## Connections
 - [[.test_with_pii_sanitizer_compatibility()]] - `rationale_for` [EXTRACTED]
+- [[TestIntegration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_198
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

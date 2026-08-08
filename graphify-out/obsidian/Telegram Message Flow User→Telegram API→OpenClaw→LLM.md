@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "concept"
-community: "Module Group 194"
+community: "Setup Docs"
 location: "lines 68-80"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_194
+  - community/Setup_Docs
 ---
 
 # Telegram Message Flow: User→Telegram API→OpenClaw→LLM
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Telegram Bot Setup for OpenClaw (multi-device)]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_194
+#graphify/concept #graphify/EXTRACTED #community/Setup_Docs

@@ -1,17 +1,17 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/agentshroud-knowledge.md"
+source_file: "docs/agentshroud-knowledge.md"
 type: "concept"
-community: "Module Group 392"
+community: "docs/agentshroud-knowledge.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_392
+  - community/docs/agentshroud-knowledgemd
 ---
 
 # SOC Command Center Five Pillars: Security Ops, Platform Ops, Contributor Mgmt, Observability, Multi-Interface Control
 
 ## Connections
-- [[AgentShroud Knowledge Reference]] - `describes` [EXTRACTED]
 - [[Multi-Platform Control Surface Telegram, Web Dashboard, TUI, CLI, Browser Extension, Mobile Shortcuts, REST API]] - `extends` [INFERRED]
+- [[agentshroud-knowledge]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_392
+#graphify/concept #graphify/EXTRACTED #community/docs/agentshroud-knowledgemd

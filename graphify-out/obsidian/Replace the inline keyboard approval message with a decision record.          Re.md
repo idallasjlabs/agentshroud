@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "rationale"
-community: "Module Group 328"
-location: "L296"
+community: "Gateway Proxy Layer"
+location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_328
+  - community/Gateway_Proxy_Layer
 ---
 
 # Replace the inline keyboard approval message with a decision record.          Re
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.edit_decision_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_328
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Module Group 200"
+community: "Gateway Test Suite"
 location: "L511"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_200
+  - community/Gateway_Test_Suite
 ---
 
 # Test POST /manage/egress/approve/{request_id} endpoint logic.
 
 ## Connections
 - [[.test_approve_endpoint_logic()]] - `rationale_for` [EXTRACTED]
+- [[.test_deny_endpoint_logic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_200
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

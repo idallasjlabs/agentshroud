@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "URL Analyzer & Content Scanner"
+community: "Egress & RBAC Security Core"
 location: "L364"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URL_Analyzer__Content_Scanner
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Remove old sessions to prevent memory bloat.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._cleanup_old_sessions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URL_Analyzer__Content_Scanner
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

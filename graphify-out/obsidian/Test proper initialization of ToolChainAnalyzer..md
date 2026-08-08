@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Module Group 119"
-location: "L43"
+community: "Tool Chain Analyzer"
+location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_119
+  - community/Tool_Chain_Analyzer
 ---
 
 # Test proper initialization of ToolChainAnalyzer.
 
 ## Connections
 - [[.test_initialization()_4]] - `rationale_for` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_119
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain_Analyzer

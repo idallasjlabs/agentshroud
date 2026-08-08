@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "Privacy Policy"
+community: "Gateway Test Suite"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Privacy_Policy
+  - community/Gateway_Test_Suite
 ---
 
 # PrivacyPolicyEnforcer
 
 ## Connections
-- [[.__init__()_85]] - `method` [EXTRACTED]
+- [[.__init__()_104]] - `method` [EXTRACTED]
 - [[._get_role_value()]] - `method` [EXTRACTED]
 - [[._user_in_allowed_groups()]] - `method` [EXTRACTED]
 - [[.contains_private_data()]] - `method` [EXTRACTED]
@@ -33,10 +33,10 @@ tags:
 - [[TestPrivacyPolicyParsing]] - `uses` [INFERRED]
 - [[TestResponseFiltering]] - `uses` [INFERRED]
 - [[TestServiceAccessControl]] - `uses` [INFERRED]
-- [[enforcer()_1]] - `calls` [EXTRACTED]
+- [[enforcer()_2]] - `calls` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Privacy_Policy
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

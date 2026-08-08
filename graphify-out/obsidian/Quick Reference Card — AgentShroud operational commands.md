@@ -1,13 +1,13 @@
 ---
 source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "Module Group 800"
+community: "docs/reference"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_800
+  - community/docs/reference
 ---
 
 # Quick Reference Card — AgentShroud operational commands
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_800
+#graphify/document #graphify/EXTRACTED #community/docs/reference

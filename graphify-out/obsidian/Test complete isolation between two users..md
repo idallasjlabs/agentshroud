@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Session Manager & Webhook"
-location: "L505"
+community: "URL/Domain Validation Tests"
+location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Session_Manager__Webhook
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Test complete isolation between two users.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_complete_user_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Session_Manager__Webhook
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Module Group 672"
+community: "Telegram Proxy Test Suite"
 location: "L1268"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_672
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Revoked users should be routed into owner re-approval workflow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_revoked_user_messages_require_owner_reapproval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_672
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

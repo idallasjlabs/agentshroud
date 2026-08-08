@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Module Group 162"
-location: "L63"
+community: "Tool Chain Analyzer"
+location: "L60"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_162
+  - community/Tool_Chain_Analyzer
 ---
 
 # Test that disabled analyzer allows all calls.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_disabled_analyzer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_162
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain_Analyzer

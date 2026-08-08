@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Module Group 348"
-location: "L2473"
+community: "Approval & FastAPI Ingest"
+location: "L2689"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_348
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Run all locally available security scanners and return consolidated results.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_all_scanners()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_348
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

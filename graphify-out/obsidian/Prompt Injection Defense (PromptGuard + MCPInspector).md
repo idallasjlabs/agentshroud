@@ -1,16 +1,13 @@
 ---
 source_file: "docs/SECURITY_PLAN.md"
 type: "concept"
-community: "Module Group 138"
+community: "docs/SECURITY_PLAN.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_138
+  - community/docs/SECURITY_PLANmd
 ---
 
 # Prompt Injection Defense (PromptGuard + MCPInspector)
 
-## Connections
-- [[AgentShroud Security Hardening Plan]] - `describes` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_138
+#graphify/concept #graphify/EXTRACTED #community/docs/SECURITY_PLANmd

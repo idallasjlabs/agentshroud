@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "HTTP CONNECT Proxy & Egress"
+community: "Egress Domain Allowlist"
 location: "L95"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/HTTP_CONNECT_Proxy__Egress
+  - community/Egress_Domain_Allowlist
 ---
 
 # RateLimiter
 
 ## Connections
-- [[.__init__()_34]] - `method` [EXTRACTED]
-- [[.__init__()_35]] - `calls` [EXTRACTED]
+- [[.__init__()_42]] - `method` [EXTRACTED]
+- [[.__init__()_43]] - `calls` [EXTRACTED]
 - [[.check()_1]] - `method` [EXTRACTED]
 - [[.reset()]] - `method` [EXTRACTED]
 - [[.test_rate_limiter_reset()]] - `calls` [EXTRACTED]
@@ -41,4 +41,4 @@ tags:
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/HTTP_CONNECT_Proxy__Egress
+#graphify/code #graphify/INFERRED #community/Egress_Domain_Allowlist

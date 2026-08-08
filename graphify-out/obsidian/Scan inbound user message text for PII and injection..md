@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Module Group 480"
-location: "L827"
+community: "Gateway Test Suite"
+location: "L1169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_480
+  - community/Gateway_Test_Suite
 ---
 
 # Scan inbound user message text for PII and injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._scan_inbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_480
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "Module Group 91"
-location: "L264"
+community: "Gateway Test Suite"
+location: "L263"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_91
+  - community/Gateway_Test_Suite
 ---
 
 # Test that incidents are logged when enabled.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_incident_logging()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_91
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

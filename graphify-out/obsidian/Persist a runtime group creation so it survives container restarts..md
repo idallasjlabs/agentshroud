@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Module Group 208"
-location: "L320"
+community: "Collaborator Response Templates"
+location: "L319"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_208
+  - community/Collaborator_Response_Templates
 ---
 
 # Persist a runtime group creation so it survives container restarts.
 
 ## Connections
 - [[persist_group_create()]] - `rationale_for` [EXTRACTED]
+- [[persist_group_delete()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_208
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates

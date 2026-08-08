@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_replay.py"
 type: "rationale"
-community: "Module Group 97"
+community: "Gateway Test Suite"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_97
+  - community/Gateway_Test_Suite
 ---
 
 # SQLite-backed Telegram update store, safe for concurrent asyncio callers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[UpdateReplayBuffer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_97
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

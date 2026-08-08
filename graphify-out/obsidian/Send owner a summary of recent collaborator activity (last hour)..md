@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Module Group 87"
-location: "L7226"
+community: "Gateway Proxy Layer"
+location: "L7377"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_87
+  - community/Gateway_Proxy_Layer
 ---
 
 # Send owner a summary of recent collaborator activity (last hour).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._send_owner_activity_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_87
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

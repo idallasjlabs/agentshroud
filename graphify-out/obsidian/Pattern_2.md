@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Module Group 458"
+community: "Egress & RBAC Security Core"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_458
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Pattern
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._create_detection_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_458
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

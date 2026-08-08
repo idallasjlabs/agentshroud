@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Telegram Proxy Core"
-location: "L693"
+community: "Collaborator Prompt Classifiers"
+location: "L775"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Core
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Resolve target by id, static alias, or pending username alias.          Resoluti
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._extract_owner_target_resolved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

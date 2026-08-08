@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Module Group 142"
-location: "L194"
+community: "Auth & Exception Types"
+location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_142
+  - community/Auth__Exception_Types
 ---
 
 # Set up test environment.
 
 ## Connections
-- [[.setup_method()_9]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_20]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_21]] - `rationale_for` [EXTRACTED]
+- [[TestRBACIntegration]] - `rationale_for` [EXTRACTED]
+- [[TestRBACManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_142
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

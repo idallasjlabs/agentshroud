@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 235"
+community: "Gateway Test Suite"
 location: "L4242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_235
+  - community/Gateway_Test_Suite
 ---
 
 # Static response builder for collaborator conceptual queries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestBuildCollaboratorSafeInfoResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_235
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

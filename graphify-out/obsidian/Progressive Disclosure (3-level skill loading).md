@@ -1,18 +1,18 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "concept"
-community: "Module Group 107"
+community: "skills/openclaw"
 location: "line 115"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Module_Group_107
+  - graphify/EXTRACTED
+  - community/skills/openclaw
 ---
 
 # Progressive Disclosure (3-level skill loading)
 
 ## Connections
 - [[Skill Anatomy (SKILL.md + scriptsreferencesassets)]] - `governs` [INFERRED]
-- [[skill-creator Skill]] - `defines` [EXTRACTED]
+- [[Skill Creator]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Module_Group_107
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

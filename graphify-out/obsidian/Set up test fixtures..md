@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Module Group 198"
-location: "L26"
+community: "Gateway Test Suite"
+location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_198
+  - community/Gateway_Test_Suite
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[.setup_method()_14]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_17]] - `rationale_for` [EXTRACTED]
+- [[TestOutboundInfoFilter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_198
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

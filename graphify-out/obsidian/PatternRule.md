@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Module Group 79"
+community: "PromptGuard Encoding Detection"
 location: "L45"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_79
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # PatternRule
 
 ## Connections
-- [[.__init__()_87]] - `references` [EXTRACTED]
+- [[.__init__()_106]] - `references` [EXTRACTED]
 - [[.test_custom_pattern()]] - `calls` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_79
+#graphify/code #graphify/INFERRED #community/PromptGuard_Encoding_Detection

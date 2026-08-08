@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "Module Group 604"
-location: "L318"
+community: "Gateway Test Suite"
+location: "L316"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_604
+  - community/Gateway_Test_Suite
 ---
 
 # System prompt extraction payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptExtraction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_604
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

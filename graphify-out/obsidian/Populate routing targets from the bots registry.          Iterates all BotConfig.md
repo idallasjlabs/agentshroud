@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "Agent Routing & Request Models"
-location: "L73"
+community: "Forward Routing & Approval"
+location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agent_Routing__Request_Models
+  - community/Forward_Routing__Approval
 ---
 
 # Populate routing targets from the bots registry.          Iterates all BotConfig
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.register_bots()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agent_Routing__Request_Models
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

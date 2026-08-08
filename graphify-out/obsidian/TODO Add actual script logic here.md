@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
 type: "rationale"
-community: "Module Group 354"
+community: "skills/openclaw"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_354
+  - community/skills/openclaw
 ---
 
 # # TODO: Add actual script logic here
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[init_skill.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_354
+#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw

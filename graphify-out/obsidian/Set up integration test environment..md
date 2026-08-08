@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Module Group 388"
-location: "L396"
+community: "Egress & RBAC Security Core"
+location: "L395"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_388
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Set up integration test environment.
 
 ## Connections
-- [[.setup_method()_10]] - `rationale_for` [EXTRACTED]
+- [[.setup_method()_11]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_388
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

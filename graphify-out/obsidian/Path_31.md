@@ -1,19 +1,20 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "Module Group 219"
-location: "L58"
+community: "MCP Policy Engine"
+location: "L73"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Module_Group_219
+  - graphify/INFERRED
+  - community/MCP_Policy_Engine
 ---
 
 # Path
 
 ## Connections
-- [[ensure()]] - `references` [EXTRACTED]
-- [[get_font()]] - `calls` [EXTRACTED]
-- [[save()]] - `references` [EXTRACTED]
+- [[MCPPolicyAction]] - `uses` [INFERRED]
+- [[MCPPolicyConfig]] - `uses` [INFERRED]
+- [[MCPPolicyEngine]] - `uses` [INFERRED]
+- [[_write()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_219
+#graphify/code #graphify/INFERRED #community/MCP_Policy_Engine

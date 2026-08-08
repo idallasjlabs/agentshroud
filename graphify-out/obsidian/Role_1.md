@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "RBAC Configuration"
+community: "Auth & Exception Types"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Configuration
+  - community/Auth__Exception_Types
 ---
 
 # Role
@@ -16,11 +16,11 @@ tags:
 - [[.get_users_by_role()]] - `references` [EXTRACTED]
 - [[.set_user_role()_1]] - `references` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
-- [[Any_49]] - `uses` [INFERRED]
-- [[Any_65]] - `uses` [INFERRED]
-- [[AuthRequired]] - `uses` [INFERRED]
+- [[Any_52]] - `uses` [INFERRED]
+- [[Any_69]] - `uses` [INFERRED]
+- [[AuthRequired_1]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
-- [[Exception]] - `uses` [INFERRED]
+- [[Exception_1]] - `uses` [INFERRED]
 - [[FakeAuditStore]] - `uses` [INFERRED]
 - [[FakeCaller]] - `uses` [INFERRED]
 - [[FakeGroup]] - `uses` [INFERRED]
@@ -33,15 +33,16 @@ tags:
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
-- [[Request]] - `uses` [INFERRED]
+- [[Request_3]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[Role]] - `uses` [INFERRED]
 - [[SCLCaller_2]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHExecRequest_1]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
 - [[SimpleNamespace]] - `uses` [INFERRED]
-- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[TeamsConfig]] - `uses` [INFERRED]
+- [[TeamsConfig_2]] - `uses` [INFERRED]
 - [[TestAdminAccess]] - `uses` [INFERRED]
 - [[TestAgentCvesBotId]] - `uses` [INFERRED]
 - [[TestAuditAndAlert]] - `uses` [INFERRED]
@@ -99,8 +100,9 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[ToolRateLimit]] - `uses` [INFERRED]
 - [[ToolTier_1]] - `uses` [INFERRED]
+- [[TrustLevel_1]] - `conceptually_related_to` [INFERRED]
 - [[User roles in AgentShroud RBAC system.      Hierarchy (highest to lowest)]] - `rationale_for` [EXTRACTED]
-- [[WebSocket_2]] - `uses` [INFERRED]
+- [[WebSocket_3]] - `uses` [INFERRED]
 - [[_FakeBus]] - `uses` [INFERRED]
 - [[_FakeRBAC_1]] - `uses` [INFERRED]
 - [[_Svc]] - `uses` [INFERRED]
@@ -123,4 +125,4 @@ tags:
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Configuration
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

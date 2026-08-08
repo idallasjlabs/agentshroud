@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Module Group 208"
-location: "L266"
+community: "Collaborator Response Templates"
+location: "L265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_208
+  - community/Collaborator_Response_Templates
 ---
 
 # Persist a runtime group membership addition.
 
 ## Connections
 - [[persist_group_member_add()]] - `rationale_for` [EXTRACTED]
+- [[persist_group_member_remove()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_208
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates

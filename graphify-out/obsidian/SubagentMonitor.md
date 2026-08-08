@@ -1,30 +1,31 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Subagent Monitor"
+community: "PII Config & Test Fixtures"
 location: "L66"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Subagent_Monitor
+  - community/PII_Config__Test_Fixtures
 ---
 
 # SubagentMonitor
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_94]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_116]] - `method` [EXTRACTED]
 - [[._log_event()]] - `method` [EXTRACTED]
 - [[.check_tool_usage()]] - `method` [EXTRACTED]
 - [[.deregister()]] - `method` [EXTRACTED]
 - [[.get_active()]] - `method` [EXTRACTED]
-- [[.get_audit_log()_3]] - `method` [EXTRACTED]
+- [[.get_audit_log()_5]] - `method` [EXTRACTED]
 - [[.get_flagged_events()]] - `method` [EXTRACTED]
 - [[.kill_agent()]] - `method` [EXTRACTED]
 - [[.kill_all()]] - `method` [EXTRACTED]
 - [[.register_spawn()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -32,7 +33,7 @@ tags:
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuditTrail_2]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestConcurrentLimits]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
@@ -67,4 +68,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Subagent_Monitor
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

@@ -1,27 +1,56 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "SSH Proxy & Gateway Config"
-location: "L47"
+community: "Approval Queue Tests"
+location: "L135"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/SSH_Proxy__Gateway_Config
+  - graphify/EXTRACTED
+  - community/Approval_Queue_Tests
 ---
 
 # SSHProxy
 
 ## Connections
-- [[.__init__()_107]] - `method` [EXTRACTED]
+- [[.__init__()_129]] - `method` [EXTRACTED]
 - [[.execute()]] - `method` [EXTRACTED]
 - [[.is_auto_approved()]] - `method` [EXTRACTED]
 - [[.no_approval_client()]] - `calls` [EXTRACTED]
+- [[.test_absolute_path_accepted()]] - `calls` [EXTRACTED]
+- [[.test_absolute_path_outside_root_rejected()]] - `calls` [EXTRACTED]
+- [[.test_absolute_path_under_root_accepted()]] - `calls` [EXTRACTED]
+- [[.test_backtick_rejected()]] - `calls` [EXTRACTED]
+- [[.test_content_at_exact_cap_accepted()]] - `calls` [EXTRACTED]
+- [[.test_content_with_semicolon_backtick_redirect_round_trips_through_full_endpoint()]] - `calls` [EXTRACTED]
+- [[.test_dotdot_traversal_from_absolute_path_rejected()]] - `calls` [EXTRACTED]
+- [[.test_dotdot_traversal_rejected()]] - `calls` [EXTRACTED]
+- [[.test_home_tilde_accepted()]] - `calls` [EXTRACTED]
+- [[.test_invalid_base64_rejected()]] - `calls` [EXTRACTED]
+- [[.test_null_byte_rejected()]] - `calls` [EXTRACTED]
+- [[.test_oversized_content_rejected()]] - `calls` [EXTRACTED]
+- [[.test_pipe_rejected()]] - `calls` [EXTRACTED]
+- [[.test_prefix_collision_sibling_dir_rejected()]] - `calls` [EXTRACTED]
+- [[.test_relative_path_rejected()]] - `calls` [EXTRACTED]
+- [[.test_relative_path_resolved_under_root_accepted()]] - `calls` [EXTRACTED]
+- [[.test_root_itself_rejected()]] - `calls` [EXTRACTED]
+- [[.test_semicolon_rejected()]] - `calls` [EXTRACTED]
 - [[.test_ssh_approval_sanitizes_command_pii()]] - `calls` [EXTRACTED]
 - [[.test_ssh_command_uses_strict_checking()]] - `calls` [EXTRACTED]
+- [[.test_unknown_host_rejected()]] - `calls` [EXTRACTED]
+- [[.test_whitespace_only_path_rejected_at_proxy_layer()]] - `calls` [EXTRACTED]
+- [[.test_write_file_non_numeric_stdout_falls_back_to_zero_bytes()]] - `calls` [EXTRACTED]
+- [[.test_write_file_oserror_from_subprocess()]] - `calls` [EXTRACTED]
+- [[.test_write_file_remote_command_is_identical_across_calls()]] - `calls` [EXTRACTED]
+- [[.test_write_file_sends_path_and_content_via_stdin()]] - `calls` [EXTRACTED]
+- [[.test_write_file_timeout()]] - `calls` [EXTRACTED]
+- [[.test_write_file_unknown_host_raises()]] - `calls` [EXTRACTED]
 - [[.validate_command()]] - `method` [EXTRACTED]
+- [[.validate_cwd()]] - `method` [EXTRACTED]
+- [[.validate_write_file()]] - `method` [EXTRACTED]
+- [[.write_file()]] - `method` [EXTRACTED]
 - [[SSH command proxy with validation and audit support]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHConfig]] - `uses` [INFERRED]
+- [[SSHConfig_2]] - `uses` [INFERRED]
 - [[SSHProxy_1]] - `uses` [INFERRED]
 - [[TestApprovalQueuePIISanitization]] - `uses` [INFERRED]
 - [[TestDashboardCookieAuth]] - `uses` [INFERRED]
@@ -37,20 +66,29 @@ tags:
 - [[TestSSHExec]] - `uses` [INFERRED]
 - [[TestSSHHistory]] - `uses` [INFERRED]
 - [[TestSSHHosts]] - `uses` [INFERRED]
+- [[TestSSHProxyValidateWriteFile]] - `uses` [INFERRED]
+- [[TestSSHProxyWriteFileTransport]] - `uses` [INFERRED]
 - [[TestSSHRequireApprovalFalse]] - `uses` [INFERRED]
 - [[TestSSHStrictHostKeyChecking]] - `uses` [INFERRED]
+- [[TestSSHValidateCwd]] - `uses` [INFERRED]
+- [[TestSSHWriteFileEndpoint]] - `uses` [INFERRED]
+- [[TestSSHWriteFileLedgerAudit]] - `uses` [INFERRED]
+- [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
 - [[TestTelegramProxyClientDisconnect]] - `uses` [INFERRED]
 - [[TestValidateCommand]] - `uses` [INFERRED]
 - [[TestVersionConsistency]] - `uses` [INFERRED]
 - [[TestWebSocketHandshakeAuth]] - `uses` [INFERRED]
-- [[__init__.py_10]] - `imports` [EXTRACTED]
-- [[client()_13]] - `calls` [EXTRACTED]
+- [[__init__.py_12]] - `imports` [EXTRACTED]
+- [[client()_16]] - `calls` [EXTRACTED]
+- [[client()_17]] - `calls` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[proxy.py]] - `contains` [EXTRACTED]
+- [[state.py]] - `imports` [EXTRACTED]
 - [[test_security_fixes.py]] - `imports` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
+- [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SSH_Proxy__Gateway_Config
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

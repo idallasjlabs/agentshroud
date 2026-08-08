@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Module Group 80"
+community: "Gateway Security Module"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_80
+  - community/Gateway_Security_Module
 ---
 
 # SecurityFinding
@@ -25,4 +25,4 @@ tags:
 - [[A security finding in git hooks or install scripts.]] - `rationale_for` [EXTRACTED]
 - [[git_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_80
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

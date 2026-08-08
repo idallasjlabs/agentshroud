@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "RBAC Middleware & Ingest API"
-location: "L1129"
+community: "Security Module Middleware"
+location: "L1264"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Security_Module_Middleware
 ---
 
 # Scan tool result for injection attempts and return sanitized content.          A
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RBAC_Middleware__Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware

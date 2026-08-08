@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Gateway Config & Lifespan"
+community: "Approval & FastAPI Ingest"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Approval__FastAPI_Ingest
 ---
 
 # PromptProtection
 
 ## Connections
-- [[.__init__()_88]] - `method` [EXTRACTED]
+- [[.__init__()_107]] - `method` [EXTRACTED]
 - [[._calculate_similarity()]] - `method` [EXTRACTED]
 - [[._compile_detection_patterns()_1]] - `method` [EXTRACTED]
 - [[._load_protected_content()]] - `method` [EXTRACTED]
@@ -31,7 +31,7 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[prompt_protection()]] - `calls` [EXTRACTED]
 - [[prompt_protection.py]] - `contains` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[test_prompt_protection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

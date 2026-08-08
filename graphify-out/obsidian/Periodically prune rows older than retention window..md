@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_replay.py"
 type: "rationale"
-community: "Module Group 97"
+community: "Gateway Test Suite"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_97
+  - community/Gateway_Test_Suite
 ---
 
 # Periodically prune rows older than retention window.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.cleanup_if_due()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_97
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

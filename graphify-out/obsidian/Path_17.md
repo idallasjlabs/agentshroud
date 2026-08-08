@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Module Group 153"
-location: "L145"
+community: "URL/Domain Validation Tests"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_153
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Path
 
 ## Connections
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[.__init__()_112]] - `references` [EXTRACTED]
+- [[.from_dict()_10]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_153
+#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

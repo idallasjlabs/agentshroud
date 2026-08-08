@@ -1,27 +1,28 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Module Group 120"
-location: "L27"
+community: "Auth & Exception Types"
+location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_120
+  - community/Auth__Exception_Types
 ---
 
 # SOCWebSocketHandler
 
 ## Connections
-- [[.__init__()_106]] - `method` [EXTRACTED]
+- [[.__init__()_128]] - `method` [EXTRACTED]
 - [[._event_fan_out()]] - `method` [EXTRACTED]
 - [[._keepalive_loop()]] - `method` [EXTRACTED]
 - [[._send_event()]] - `method` [EXTRACTED]
 - [[.run()_5]] - `method` [EXTRACTED]
-- [[Any_65]] - `uses` [INFERRED]
+- [[Any_69]] - `uses` [INFERRED]
 - [[Manages a single wssoc client connection.]] - `rationale_for` [EXTRACTED]
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler_3]] - `uses` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
 - [[SimpleNamespace]] - `uses` [INFERRED]
 - [[TestCoerceToWSEvent]] - `uses` [INFERRED]
 - [[TestCoerceToWSEventExtra]] - `uses` [INFERRED]
@@ -50,6 +51,5 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
-- [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_120
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

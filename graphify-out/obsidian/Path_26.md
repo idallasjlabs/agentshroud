@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_network_validator_gate.py"
+source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Module Group 86"
-location: "L33"
+community: "Gateway Test Suite"
+location: "L209"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Module_Group_86
+  - graphify/EXTRACTED
+  - community/Gateway_Test_Suite
 ---
 
 # Path
 
 ## Connections
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[tmp_compose()]] - `references` [EXTRACTED]
+- [[._make_anthropic_injector()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_86
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

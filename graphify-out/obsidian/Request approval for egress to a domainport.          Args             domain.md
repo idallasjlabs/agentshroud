@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Module Group 522"
-location: "L360"
+community: "Gateway Security Module"
+location: "L359"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_522
+  - community/Gateway_Security_Module
 ---
 
 # Request approval for egress to a domain/port.          Args:             domain:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.request_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_522
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

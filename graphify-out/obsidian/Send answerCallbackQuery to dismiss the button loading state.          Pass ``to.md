@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "rationale"
-community: "Module Group 328"
-location: "L266"
+community: "Gateway Proxy Layer"
+location: "L271"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_328
+  - community/Gateway_Proxy_Layer
 ---
 
 # Send answerCallbackQuery to dismiss the button loading state.          Pass ``to
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.answer_callback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_328
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

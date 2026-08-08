@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RECOVERY_PLAN.md"
 type: "rationale"
-community: "Module Group 425"
+community: "Planning Docs"
 location: "line 183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_425
+  - community/Planning_Docs
 ---
 
 # Phase 2: User Actions (Anthropic Credits, iMessage Permission)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_425
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

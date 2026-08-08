@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "Module Group 190"
+community: "Gateway Test Suite"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_190
+  - community/Gateway_Test_Suite
 ---
 
 # Revoke all delegations for a specific user. Returns count removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.revoke_all_for_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_190
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "rationale"
-community: "Module Group 411"
-location: "L13"
+community: "Approval & FastAPI Ingest"
+location: "L8"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_411
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Test that StatusResponse model accepts new fields.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_status_response_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_411
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

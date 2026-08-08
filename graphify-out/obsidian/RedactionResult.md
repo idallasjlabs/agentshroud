@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Tool Result Sanitizer"
-location: "L185"
+community: "Security Module Middleware"
+location: "L207"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Result_Sanitizer
+  - community/Security_Module_Middleware
 ---
 
 # RedactionResult
@@ -18,7 +18,7 @@ tags:
 - [[.test_sanitize_dict_with_pii()]] - `calls` [EXTRACTED]
 - [[.test_sanitize_string_with_pii()]] - `calls` [EXTRACTED]
 - [[.test_tool_specific_configuration()]] - `calls` [EXTRACTED]
-- [[Any_56]] - `uses` [INFERRED]
+- [[Any_60]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[PIIConfig_1]] - `uses` [INFERRED]
 - [[PIIConfig_2]] - `uses` [INFERRED]
@@ -40,4 +40,4 @@ tags:
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Result_Sanitizer
+#graphify/code #graphify/INFERRED #community/Security_Module_Middleware

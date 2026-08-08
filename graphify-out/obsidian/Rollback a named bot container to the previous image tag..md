@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Web API & Dashboard UI"
-location: "L533"
+community: "Competitive Intel Store"
+location: "L587"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Web_API__Dashboard_UI
+  - community/Competitive_Intel_Store
 ---
 
 # Rollback a named bot container to the previous image tag.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rollback_bot()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Web_API__Dashboard_UI
+#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store

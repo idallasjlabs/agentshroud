@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "Security Pipeline & Audit Chain"
-location: "L1178"
+community: "PII Sanitizer Pipeline"
+location: "L1669"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Pipeline__Audit_Chain
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Set global observatory mode for all security modules.          Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_global_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Pipeline__Audit_Chain
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

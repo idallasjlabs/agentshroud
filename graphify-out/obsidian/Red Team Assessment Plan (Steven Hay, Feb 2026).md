@@ -1,11 +1,11 @@
 ---
 source_file: "docs/redteam/plan.md"
 type: "document"
-community: "Module Group 402"
+community: "docs/redteam"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_402
+  - community/docs/redteam
 ---
 
 # Red Team Assessment Plan (Steven Hay, Feb 2026)
@@ -19,4 +19,4 @@ tags:
 - [[Research references Attacker Moves Second, Agents Rule of Two, Log-To-Leak, ToolHijacker, CVE-2026-22708]] - `cites` [EXTRACTED]
 - [[STPA-Sec methodology (MITLeveson) for control structure analysis]] - `uses` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_402
+#graphify/document #graphify/EXTRACTED #community/docs/redteam

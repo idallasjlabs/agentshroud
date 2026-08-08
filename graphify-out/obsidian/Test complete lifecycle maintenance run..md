@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Module Group 256"
-location: "L342"
+community: "Egress & RBAC Security Core"
+location: "L341"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_256
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Test complete lifecycle maintenance run.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_lifecycle_maintenance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_256
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/cli/client.py"
 type: "code"
-community: "Module Group 106"
+community: "gateway/cli"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_106
+  - community/gateway/cli
 ---
 
 # SCLClient
 
 ## Connections
-- [[.__init__()_3]] - `method` [EXTRACTED]
+- [[.__init__()_11]] - `method` [EXTRACTED]
 - [[._request()]] - `method` [EXTRACTED]
 - [[.add_collaborator()]] - `method` [EXTRACTED]
 - [[.add_group_member()]] - `method` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[.delete()]] - `method` [EXTRACTED]
 - [[.deny_egress()]] - `method` [EXTRACTED]
 - [[.freeze()]] - `method` [EXTRACTED]
-- [[.get()_1]] - `method` [EXTRACTED]
+- [[.get()_2]] - `method` [EXTRACTED]
 - [[.get_correlation()]] - `method` [EXTRACTED]
 - [[.get_egress_pending()]] - `method` [EXTRACTED]
 - [[.get_events()]] - `method` [EXTRACTED]
@@ -31,7 +31,7 @@ tags:
 - [[.get_risk()]] - `method` [EXTRACTED]
 - [[.get_services()]] - `method` [EXTRACTED]
 - [[.get_users()]] - `method` [EXTRACTED]
-- [[.post()_1]] - `method` [EXTRACTED]
+- [[.post()_2]] - `method` [EXTRACTED]
 - [[.put()]] - `method` [EXTRACTED]
 - [[.restart_service()]] - `method` [EXTRACTED]
 - [[.run_scan()]] - `method` [EXTRACTED]
@@ -45,8 +45,8 @@ tags:
 - [[.test_init_strips_trailing_slash_and_builds_soc_base()]] - `calls` [EXTRACTED]
 - [[.test_post_serializes_body()]] - `calls` [EXTRACTED]
 - [[.test_put_and_delete_methods()]] - `calls` [EXTRACTED]
-- [[Any_3]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
+- [[Any_6]] - `uses` [INFERRED]
+- [[Exception_3]] - `uses` [INFERRED]
 - [[Minimal synchronous httpx-free client for the SCL API.]] - `rationale_for` [EXTRACTED]
 - [[TestClientFromEnv]] - `uses` [INFERRED]
 - [[TestEgressAndAdminCommands]] - `uses` [INFERRED]
@@ -67,4 +67,4 @@ tags:
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 - [[test_convenience_methods_hit_expected_endpoints()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_106
+#graphify/code #graphify/EXTRACTED #community/gateway/cli
