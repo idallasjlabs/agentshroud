@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/agent_cve_registry.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "Module Group 84"
-location: "L3965"
+community: "gateway/runtime"
+location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_84
+  - community/gateway/runtime
 ---
 
 # Any
 
 ## Connections
-- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
+- [[.inspect()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_84
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime

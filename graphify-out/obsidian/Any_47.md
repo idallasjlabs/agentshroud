@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Module Group 91"
-location: "L231"
+community: "Egress & RBAC Security Core"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_91
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Any
 
 ## Connections
-- [[._scan_for_canary()]] - `references` [EXTRACTED]
-- [[.get_status()_1]] - `references` [EXTRACTED]
+- [[.__init__()_97]] - `references` [EXTRACTED]
+- [[.get_global_stats()]] - `references` [EXTRACTED]
+- [[.get_session_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_91
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

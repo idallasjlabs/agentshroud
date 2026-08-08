@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/client.py"
 type: "rationale"
-community: "Module Group 300"
+community: "Gateway Test Suite"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_300
+  - community/Gateway_Test_Suite
 ---
 
 # Build SCLClient from args or environment variables.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[client_from_env()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_300
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "CLI Interface"
-location: "L39"
+community: "Gateway Test Suite"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI_Interface
+  - community/Gateway_Test_Suite
 ---
 
 # Any
 
 ## Connections
-- [[SCLClient]] - `uses` [INFERRED]
-- [[_output()]] - `references` [EXTRACTED]
+- [[.__init__()_8]] - `references` [EXTRACTED]
+- [[._default_send()]] - `references` [EXTRACTED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI_Interface
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Module Group 60"
-location: "L623"
+community: "Collaborator Prompt Classifiers"
+location: "L705"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_60
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Activate per-chat cascade window to prevent streaming-fragment leak-through.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._set_outbound_block_cascade()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_60
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

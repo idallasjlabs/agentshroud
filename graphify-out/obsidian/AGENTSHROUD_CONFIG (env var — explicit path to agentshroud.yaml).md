@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "Module Group 344"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_344
+  - community/docs/vault
 ---
 
 # AGENTSHROUD_CONFIG (env var — explicit path to agentshroud.yaml)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[agentshroud.yaml (master gateway configuration file)]] - `configures` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_344
+#graphify/document #graphify/EXTRACTED #community/docs/vault

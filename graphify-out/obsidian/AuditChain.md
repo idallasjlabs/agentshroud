@@ -1,31 +1,33 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Security Pipeline & Audit Chain"
-location: "L118"
+community: "Security Pipeline Core"
+location: "L131"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Pipeline__Audit_Chain
+  - community/Security_Pipeline_Core
 ---
 
 # AuditChain
 
 ## Connections
-- [[.__init__()_24]] - `method` [EXTRACTED]
-- [[.__init__()_25]] - `calls` [EXTRACTED]
+- [[.__init__()_32]] - `method` [EXTRACTED]
+- [[.__init__()_33]] - `calls` [EXTRACTED]
 - [[.__len__()_1]] - `method` [EXTRACTED]
 - [[.append()]] - `method` [EXTRACTED]
 - [[.append_block()]] - `method` [EXTRACTED]
+- [[.append_owner_bypass()]] - `method` [EXTRACTED]
 - [[.entries()_1]] - `method` [EXTRACTED]
 - [[.last_hash()_1]] - `method` [EXTRACTED]
 - [[.test_append_chain()]] - `calls` [EXTRACTED]
+- [[.test_append_owner_bypass_persists_high_severity()]] - `calls` [EXTRACTED]
 - [[.test_append_single()]] - `calls` [EXTRACTED]
 - [[.test_audit_chain_hash_chained()]] - `calls` [EXTRACTED]
 - [[.test_chain_continuity_preserved_across_wrap()]] - `calls` [EXTRACTED]
 - [[.test_content_hash_deterministic()]] - `calls` [EXTRACTED]
 - [[.test_default_window_is_10k()_1]] - `calls` [EXTRACTED]
-- [[.test_different_content_different_hash()]] - `calls` [EXTRACTED]
+- [[.test_different_content_different_hash()_1]] - `calls` [EXTRACTED]
 - [[.test_entries_returns_copy()]] - `calls` [EXTRACTED]
 - [[.test_genesis()]] - `calls` [EXTRACTED]
 - [[.test_metadata()]] - `calls` [EXTRACTED]
@@ -39,9 +41,12 @@ tags:
 - [[.test_window_capped_at_max_entries()_1]] - `calls` [EXTRACTED]
 - [[.total_appended()_1]] - `method` [EXTRACTED]
 - [[.verify_chain()_1]] - `method` [EXTRACTED]
+- [[BotIncidentSeverity]] - `uses` [INFERRED]
+- [[FilterResult]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[SHA-256 hash chain for tamper-evident audit logging.]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline]] - `shares_data_with` [EXTRACTED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChain_1]] - `uses` [INFERRED]
@@ -64,17 +69,22 @@ tags:
 - [[TestEncodedPayloads]] - `uses` [INFERRED]
 - [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
 - [[TestHiddenContent]] - `uses` [INFERRED]
+- [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
+- [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
 - [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPassthroughMode_1]] - `uses` [INFERRED]
+- [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
 - [[TestRateLimiting_3]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]
+- [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[TestWebProxyConfig]] - `uses` [INFERRED]
 - [[TestZeroWidthAttacks]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
@@ -91,4 +101,4 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Pipeline__Audit_Chain
+#graphify/code #graphify/INFERRED #community/Security_Pipeline_Core

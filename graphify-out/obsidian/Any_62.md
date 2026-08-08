@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/tests/test_resource_guard_wiring.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "PII Sanitizer & Resource Guard"
-location: "L62"
+community: "Gateway Security Module"
+location: "L66"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/PII_Sanitizer__Resource_Guard
+  - graphify/EXTRACTED
+  - community/Gateway_Security_Module
 ---
 
 # Any
 
 ## Connections
-- [[._build_bridge()]] - `references` [EXTRACTED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
+- [[generate_summary()_3]] - `references` [EXTRACTED]
+- [[get_fim_events()]] - `references` [EXTRACTED]
+- [[get_rootkit_events()]] - `references` [EXTRACTED]
+- [[parse_alert()_1]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer__Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

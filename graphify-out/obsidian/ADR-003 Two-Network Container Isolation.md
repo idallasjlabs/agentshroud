@@ -1,16 +1,23 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/architecture/adr/ADR-003-two-network-container-isolation.md"
-type: "rationale"
-community: "Module Group 341"
+source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
+type: "concept"
+community: "Architecture Docs"
 tags:
-  - graphify/rationale
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_341
+  - community/Architecture_Docs
 ---
 
 # ADR-003: Two-Network Container Isolation
 
 ## Connections
-- [[Two-Network Architecture agentshroud_external (172.20.0.024) + agentshroud_internal (172.21.0.024); Gateway dual-homed]] - `defines` [EXTRACTED]
+- [[ADR-003-two-network-container-isolation]] - `contains` [EXTRACTED]
+- [[Consequences_2]] - `contains` [EXTRACTED]
+- [[Context_2]] - `contains` [EXTRACTED]
+- [[Decision_4]] - `contains` [EXTRACTED]
+- [[Status_2]] - `contains` [EXTRACTED]
+- [[Three-Network Architecture (externalmgmtinternal)]] - `conceptually_related_to` [AMBIGUOUS]
+- [[Two-Network Docker Architecture]] - `conceptually_related_to` [EXTRACTED]
+- [[agentshroud-isolated network (172.21.0.016)_1]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_341
+#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs

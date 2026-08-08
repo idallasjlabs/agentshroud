@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "Agent Routing & Request Models"
-location: "L134"
+community: "Gateway Test Suite"
+location: "L55"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Agent_Routing__Request_Models
+  - graphify/EXTRACTED
+  - community/Gateway_Test_Suite
 ---
 
 # Any
 
 ## Connections
-- [[.forward_to_agent()]] - `references` [EXTRACTED]
-- [[.health_check()]] - `references` [EXTRACTED]
-- [[AgentTarget]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[.__call__()]] - `references` [EXTRACTED]
+- [[.__init__()_13]] - `references` [EXTRACTED]
+- [[._clean_tool()]] - `references` [EXTRACTED]
+- [[._coerce()]] - `references` [EXTRACTED]
+- [[._handle()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Agent_Routing__Request_Models
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

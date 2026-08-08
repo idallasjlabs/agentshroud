@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Enhanced Approval Queue"
-location: "L63"
+community: "Approval Queue Tests"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/Approval_Queue_Tests
 ---
 
 # ApprovalQueueItem
 
 ## Connections
-- [[.load_all()]] - `references` [EXTRACTED]
-- [[.load_pending()]] - `references` [EXTRACTED]
-- [[.save()]] - `references` [EXTRACTED]
+- [[.decide()_1]] - `references` [EXTRACTED]
+- [[.get_item()_1]] - `references` [EXTRACTED]
+- [[.get_pending()_1]] - `references` [EXTRACTED]
+- [[.submit()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

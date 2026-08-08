@@ -1,28 +1,24 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Module Group 83"
-location: "L61"
+community: "Gateway Security Module"
+location: "L28"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Module_Group_83
+  - graphify/EXTRACTED
+  - community/Gateway_Security_Module
 ---
 
 # Any
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLError]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
-- [[WSEventType]] - `uses` [INFERRED]
-- [[_log_audit()]] - `references` [EXTRACTED]
-- [[auth_ws_token()]] - `references` [EXTRACTED]
+- [[.__init__()_120]] - `references` [EXTRACTED]
+- [[._extract_dict_content()]] - `references` [EXTRACTED]
+- [[._extract_scannable_content()]] - `references` [EXTRACTED]
+- [[._reconstruct_result()]] - `references` [EXTRACTED]
+- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_83
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

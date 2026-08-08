@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "rationale"
-community: "Module Group 232"
+community: "Gateway Test Suite"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_232
+  - community/Gateway_Test_Suite
 ---
 
 # A clean tool call with no threats should be allowed (200).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_clean_tool_call_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_232
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

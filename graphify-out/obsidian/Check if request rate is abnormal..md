@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "Module Group 85"
-location: "L531"
+community: "Kill Switch Config"
+location: "L530"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_85
+  - community/Kill_Switch_Config
 ---
 
 # Check if request rate is abnormal.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_request_rate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_85
+#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch_Config

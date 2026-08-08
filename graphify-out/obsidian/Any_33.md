@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/daily_cve_report.py"
+source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Module Group 250"
-location: "L57"
+community: "PII Config & Test Fixtures"
+location: "L465"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_250
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Any
 
 ## Connections
-- [[check_upstream_cves()]] - `references` [EXTRACTED]
-- [[format_cve_report()]] - `references` [EXTRACTED]
-- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
-- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
+- [[.get_attack_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_250
+#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 740"
+community: "Gateway Test Suite"
 location: "L309"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_740
+  - community/Gateway_Test_Suite
 ---
 
 # Blocked outbound messages should be stored in outbound quarantine.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_long_outbound_message_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_740
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

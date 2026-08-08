@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "Pipeline Action & Instruction Envelope"
+community: "Cross-Bot Trust Ledger"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pipeline_Action__Instruction_Envelope
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # A signed instruction or tool result.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[InstructionEnvelope]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Action__Instruction_Envelope
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger

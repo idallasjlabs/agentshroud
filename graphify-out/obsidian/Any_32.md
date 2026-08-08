@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Context Guard & Integrity"
-location: "L65"
+community: "Gateway Test Suite"
+location: "L25"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Context_Guard__Integrity
+  - graphify/EXTRACTED
+  - community/Gateway_Test_Suite
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_54]] - `references` [EXTRACTED]
-- [[ContextSegment]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[SystemPromptFingerprint]] - `uses` [INFERRED]
+- [[generate_summary()]] - `references` [EXTRACTED]
+- [[parse_clamscan_output()]] - `references` [EXTRACTED]
+- [[run_clamscan()]] - `references` [EXTRACTED]
+- [[save_report()]] - `references` [EXTRACTED]
+- [[scan_bytes()]] - `references` [EXTRACTED]
+- [[update_virus_db()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Context_Guard__Integrity
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

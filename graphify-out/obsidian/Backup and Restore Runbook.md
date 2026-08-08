@@ -1,11 +1,11 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/runbooks/backup-restore.md"
+source_file: "docs/runbooks/backup-restore.md"
 type: "document"
-community: "Module Group 583"
+community: "docs/runbooks"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_583
+  - community/docs/runbooks
 ---
 
 # Backup and Restore Runbook
@@ -14,4 +14,4 @@ tags:
 - [[Critical Data Audit Ledger + Docker Secrets (1Password-managed)]] - `documents` [EXTRACTED]
 - [[Disaster Recovery Procedure (clone, conda env, restore secrets from 1Password)]] - `documents` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_583
+#graphify/document #graphify/EXTRACTED #community/docs/runbooks

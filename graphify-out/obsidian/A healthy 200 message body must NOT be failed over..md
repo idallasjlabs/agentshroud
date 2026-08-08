@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "rationale"
-community: "Module Group 183"
-location: "L589"
+community: "Gateway Test Suite"
+location: "L662"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_183
+  - community/Gateway_Test_Suite
 ---
 
 # A healthy 200 message body must NOT be failed over.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_proxy_normal_200_passthrough_untouched()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_183
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

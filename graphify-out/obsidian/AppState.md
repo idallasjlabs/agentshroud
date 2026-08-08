@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/state.py"
 type: "code"
-community: "Gateway Config & Lifespan"
-location: "L22"
+community: "PII Sanitizer Pipeline"
+location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Config__Lifespan
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # AppState
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[state.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Config__Lifespan
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline

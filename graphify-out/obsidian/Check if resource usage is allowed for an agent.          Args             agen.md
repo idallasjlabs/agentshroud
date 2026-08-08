@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "Module Group 189"
-location: "L173"
+community: "LLM Proxy Resource Guard"
+location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_189
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # Check if resource usage is allowed for an agent.          Args:             agen
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_resource()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_189
+#graphify/rationale #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

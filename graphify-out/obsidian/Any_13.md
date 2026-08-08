@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "MCP Config & Proxy"
-location: "L98"
+community: "HTTP Forwarder"
+location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Config__Proxy
+  - community/HTTP_Forwarder
 ---
 
 # Any
 
 ## Connections
-- [[.from_dict()]] - `references` [EXTRACTED]
+- [[.get_stats()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Config__Proxy
+#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder

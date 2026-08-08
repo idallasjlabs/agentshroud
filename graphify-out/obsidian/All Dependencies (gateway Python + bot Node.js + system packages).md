@@ -1,18 +1,18 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/vault/05 - Dependencies/All Dependencies.md"
+source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "Module Group 370"
+community: "docs/vault"
 location: "gateway/requirements.txt"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_370
+  - community/docs/vault
 ---
 
 # All Dependencies (gateway Python + bot Node.js + system packages)
 
 ## Connections
-- [[Dockerfile.gateway]] - `uses` [EXTRACTED]
+- [[Dockerfile.gateway_1]] - `uses` [EXTRACTED]
 - [[aiosqlite (≥0.20.0 — async SQLite driver for audit ledger and approval queue store)]] - `contains` [EXTRACTED]
 - [[fastapi (≥0.115.0 — web framework for gateway API routing)]] - `contains` [EXTRACTED]
 - [[httpx (≥0.28.0 — async HTTP client for proxying requests to external APIs)]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[uvicornstandard (≥0.34.0 — ASGI server for FastAPI, port 8080)]] - `contains` [EXTRACTED]
 - [[websockets (≥14.0 — WebSocket server for approval queue and dashboard)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_370
+#graphify/document #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "Module Group 199"
+community: "Gateway Proxy Layer"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_199
+  - community/Gateway_Proxy_Layer
 ---
 
 # A single finding from content scanning.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContentFinding]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_199
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

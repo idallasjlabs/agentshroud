@@ -1,12 +1,12 @@
 ---
 source_file: "CONTRIBUTING.md"
 type: "document"
-community: "Module Group 191"
+community: "CONTRIBUTING.md"
 location: "lines 1-112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_191
+  - community/CONTRIBUTINGmd
 ---
 
 # AgentShroud Contribution Guide
@@ -16,4 +16,4 @@ tags:
 - [[Pull Request Process and Requirements]] - `references` [EXTRACTED]
 - [[Test Guidelines (pytest-asyncio, conftest, no network calls)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_191
+#graphify/document #graphify/EXTRACTED #community/CONTRIBUTINGmd

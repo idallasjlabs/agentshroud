@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Module Group 162"
+community: "Tool Chain Analyzer"
 location: "L515"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_162
+  - community/Tool_Chain_Analyzer
 ---
 
 # Approve a pending tool call that required approval.          Args:             s
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.approve_pending_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_162
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain_Analyzer

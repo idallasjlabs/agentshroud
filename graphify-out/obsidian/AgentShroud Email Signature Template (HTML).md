@@ -1,11 +1,11 @@
 ---
 source_file: "branding/email/signature-template.html"
 type: "document"
-community: "Module Group 226"
+community: "docker/bot-capabilities.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_226
+  - community/docker/bot-capabilitiesmd
 ---
 
 # AgentShroud Email Signature Template (HTML)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud™ Trademark (Isaiah Dallas Jefferson Jr., USPTO Serial 99728633)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_226
+#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd

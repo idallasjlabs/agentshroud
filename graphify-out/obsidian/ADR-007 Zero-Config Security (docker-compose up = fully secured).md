@@ -1,17 +1,22 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/architecture/adr/ADR-007-zero-config-security.md"
-type: "rationale"
-community: "Module Group 341"
+source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
+type: "document"
+community: "Architecture Docs"
+location: "L1"
 tags:
-  - graphify/rationale
-  - graphify/INFERRED
-  - community/Module_Group_341
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Architecture_Docs
 ---
 
 # ADR-007: Zero-Config Security (docker-compose up = fully secured)
 
 ## Connections
+- [[ADR-007-zero-config-security]] - `contains` [EXTRACTED]
 - [[AgentShroud Governance Proxy Transparent proxy between AI agents and external systems]] - `configures` [INFERRED]
-- [[Zero-Config Hierarchy Hardcoded Defaults → Environment Detection → Env Vars → Config Files]] - `defines` [EXTRACTED]
+- [[Consequences_6]] - `contains` [EXTRACTED]
+- [[Context_6]] - `contains` [EXTRACTED]
+- [[Decision_8]] - `contains` [EXTRACTED]
+- [[Status_6]] - `contains` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/Module_Group_341
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

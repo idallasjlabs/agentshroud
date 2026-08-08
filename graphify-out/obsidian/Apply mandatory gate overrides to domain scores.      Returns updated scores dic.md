@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Security Scanner Integration"
-location: "L2082"
+community: "IEC 62443 Scorecard"
+location: "L2084"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Scanner_Integration
+  - community/IEC_62443_Scorecard
 ---
 
 # Apply mandatory gate overrides to domain scores.      Returns updated scores dic
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_evaluate_mandatory_gates()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Scanner_Integration
+#graphify/rationale #graphify/EXTRACTED #community/IEC_62443_Scorecard

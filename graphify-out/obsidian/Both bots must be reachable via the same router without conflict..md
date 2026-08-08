@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "Agent Routing & Request Models"
+community: "Forward Routing & Approval"
 location: "L353"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Agent_Routing__Request_Models
+  - community/Forward_Routing__Approval
 ---
 
 # Both bots must be reachable via the same router without conflict.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_hermes_and_openclaw_coexist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Agent_Routing__Request_Models
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

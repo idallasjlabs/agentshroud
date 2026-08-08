@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "Module Group 246"
+community: "Forward Routing & Approval"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_246
+  - community/Forward_Routing__Approval
 ---
 
 # BotConfig.base_url computes http://{hostname}:{port}.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_bot_config_base_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_246
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

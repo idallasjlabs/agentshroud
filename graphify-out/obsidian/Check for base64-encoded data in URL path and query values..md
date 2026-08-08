@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "rationale"
-community: "Module Group 62"
+community: "Gateway Test Suite"
 location: "L293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_62
+  - community/Gateway_Test_Suite
 ---
 
 # Check for base64-encoded data in URL path and query values.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_base64()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_62
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

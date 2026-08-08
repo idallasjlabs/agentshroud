@@ -1,12 +1,12 @@
 ---
 source_file: "docs/redteam/05-credential-isolation.md"
 type: "concept"
-community: "Module Group 400"
+community: "docs/redteam"
 location: "line 173"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_400
+  - community/docs/redteam
 ---
 
 # Agent container network isolation (internal only, no external)
@@ -15,4 +15,4 @@ tags:
 - [[Credential Isolation (Remediation) — gateway-only secrets]] - `requires` [EXTRACTED]
 - [[Docker networks agentshroud-internal (Gateway-Host) + agentshroud-isolated (Gateway-Agent)]] - `implements` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_400
+#graphify/concept #graphify/EXTRACTED #community/docs/redteam

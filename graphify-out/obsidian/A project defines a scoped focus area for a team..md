@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Collaborator Responses"
-location: "L35"
+community: "Collaborator Response Templates"
+location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Responses
+  - community/Collaborator_Response_Templates
 ---
 
 # A project defines a scoped focus area for a team.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ProjectConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Responses
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates

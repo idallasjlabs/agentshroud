@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "rationale"
-community: "Module Group 157"
-location: "L48"
+community: "Gateway Test Suite"
+location: "L47"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_157
+  - community/Gateway_Test_Suite
 ---
 
 # Base64 blobs > 1 KB encoded (≈ 1370 chars) should be redacted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_large_base64_stripped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_157
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

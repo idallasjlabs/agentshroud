@@ -1,18 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Module Group 394"
-location: "gateway/ingest_api/models.py"
+community: "Gateway Test Suite"
+location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_394
+  - community/Gateway_Test_Suite
 ---
 
 # AgentTarget
 
 ## Connections
-- [[MultiAgentRouter_1]] - `uses` [EXTRACTED]
-- [[models.py — Pydantic API Schema]] - `defines` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[_resolve_user_trust_level()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_394
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

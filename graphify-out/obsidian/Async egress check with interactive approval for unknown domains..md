@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Module Group 71"
-location: "L308"
+community: "Gateway Security Module"
+location: "L327"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_71
+  - community/Gateway_Security_Module
 ---
 
 # Async egress check with interactive approval for unknown domains.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_async()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_71
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

@@ -1,16 +1,18 @@
 ---
-source_file: "docs/diagrams/images/diagram-10-data-dictionary.svg"
-type: "image"
-community: "Module Group 539"
+source_file: "AGENTS.md"
+type: "document"
+community: "AGENTS.md"
+location: "L1"
 tags:
-  - graphify/image
-  - graphify/EXPLICIT
-  - community/Module_Group_539
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/AGENTSmd
 ---
 
 # AGENTS.md
 
 ## Connections
-- [[agentshroud-config Volume]] - `contains` [EXPLICIT]
+- [[Goal Codex is a secondarytertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.]] - `contains` [EXTRACTED]
+- [[Guidance for ChatGPT Codex CLI when working in this repository.]] - `contains` [EXTRACTED]
 
-#graphify/image #graphify/EXPLICIT #community/Module_Group_539
+#graphify/document #graphify/EXTRACTED #community/AGENTSmd

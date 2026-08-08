@@ -1,32 +1,30 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Module Group 60"
-location: "L2611"
+community: "Security Pipeline Core"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_60
+  - community/Security_Pipeline_Core
 ---
 
 # Any
 
 ## Connections
-- [[._apply_outbound_model_error_rewrites()]] - `references` [EXTRACTED]
-- [[._apply_outbound_status_notices()]] - `references` [EXTRACTED]
-- [[._build_ack_only_updates()]] - `references` [EXTRACTED]
-- [[._check_collaborator_leakage()]] - `references` [EXTRACTED]
-- [[._extract_embedded_tool_call_json()]] - `references` [EXTRACTED]
-- [[._handle_outbound_tool_calls()]] - `references` [EXTRACTED]
-- [[._parse_tool_call_json()]] - `references` [EXTRACTED]
-- [[._redact_owner_ids()]] - `references` [EXTRACTED]
-- [[._resolve_text_field()]] - `references` [EXTRACTED]
-- [[._trigger_web_fetch_approval()]] - `references` [EXTRACTED]
-- [[._trigger_web_search_log()]] - `references` [EXTRACTED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[DelegationPrivilege]] - `uses` [INFERRED]
-- [[ProgressiveLockdown]] - `uses` [INFERRED]
+- [[._process_inbound_core()]] - `references` [EXTRACTED]
+- [[._process_outbound_core()]] - `references` [EXTRACTED]
+- [[.append()]] - `references` [EXTRACTED]
+- [[.append_block()]] - `references` [EXTRACTED]
+- [[.append_owner_bypass()]] - `references` [EXTRACTED]
+- [[.get_stats()_6]] - `references` [EXTRACTED]
+- [[.process_inbound()_1]] - `references` [EXTRACTED]
+- [[.process_outbound()_2]] - `references` [EXTRACTED]
+- [[.to_dict()_1]] - `references` [EXTRACTED]
+- [[BotIncidentSeverity]] - `uses` [INFERRED]
+- [[FilterResult]] - `uses` [INFERRED]
+- [[InjectionAction]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
-- [[RateLimiter]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_60
+#graphify/code #graphify/EXTRACTED #community/Security_Pipeline_Core

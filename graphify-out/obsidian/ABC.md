@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Module Group 82"
+community: "gateway/runtime"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_82
+  - community/gateway/runtime
 ---
 
 # ABC
@@ -14,4 +14,4 @@ tags:
 - [[ContainerEngine_2]] - `inherits` [EXTRACTED]
 - [[engine.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_82
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime

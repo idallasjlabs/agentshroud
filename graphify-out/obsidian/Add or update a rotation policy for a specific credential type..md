@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "rationale"
-community: "Module Group 93"
+community: "Gateway Test Suite"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_93
+  - community/Gateway_Test_Suite
 ---
 
 # Add or update a rotation policy for a specific credential type.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.add_custom_policy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_93
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

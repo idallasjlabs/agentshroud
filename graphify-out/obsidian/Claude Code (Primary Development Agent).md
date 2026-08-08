@@ -1,17 +1,18 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "Module Group 174"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_174
+  - community/docs/vault
 ---
 
 # Claude Code (Primary Development Agent)
 
 ## Connections
-- [[Development Team Structure (TEAM.md)]] - `defines` [EXTRACTED]
+- [[For Agents and Bots]] - `contains` [EXTRACTED]
 - [[Multi-Agent Development Workflow (ClaudeGeminiCodex hierarchy)]] - `includes` [EXTRACTED]
+- [[TEAM]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_174
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

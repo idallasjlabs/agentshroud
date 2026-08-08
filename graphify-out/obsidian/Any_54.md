@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Module Group 543"
-location: "L44"
+community: "LLM Proxy Resource Guard"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_543
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # Any
 
 ## Connections
-- [[.to_dict()_12]] - `references` [EXTRACTED]
+- [[._alert_high_usage()]] - `references` [EXTRACTED]
+- [[._get_disk_io_stats()]] - `references` [EXTRACTED]
+- [[.add_alert_callback()_1]] - `references` [EXTRACTED]
+- [[.get_usage_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_543
+#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Module Group 472"
+community: "PII Sanitizer Pipeline"
 location: "L4515"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_472
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # B1: one-shot 400-retry for unbalanced HTML parse errors.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTelegram400Retry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_472
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

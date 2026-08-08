@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "RBAC Middleware & Ingest API"
+community: "Egress & RBAC Security Core"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RBAC_Middleware__Ingest_API
+  - community/Egress__RBAC_Security_Core
 ---
 
 # BrowserSecurityGuard
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_35]] - `calls` [EXTRACTED]
-- [[.__init__()_48]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_43]] - `calls` [EXTRACTED]
+- [[.__init__()_56]] - `method` [EXTRACTED]
 - [[.analyze_content()]] - `method` [EXTRACTED]
 - [[.analyze_screenshot()]] - `method` [EXTRACTED]
 - [[.can_enter_credentials()]] - `method` [EXTRACTED]
@@ -22,7 +22,8 @@ tags:
 - [[.register_screenshot_hook()]] - `method` [EXTRACTED]
 - [[.test_browser_security_guard_instantiates()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -43,4 +44,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RBAC_Middleware__Ingest_API
+#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core

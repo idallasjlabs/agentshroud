@@ -1,24 +1,25 @@
 ---
-source_file: "docs/SECURITY_PLAN.md"
+source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "Module Group 138"
+community: "Planning Docs"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_138
+  - community/Planning_Docs
 ---
 
 # AgentShroud Security Hardening Plan
 
 ## Connections
-- [[Approval Queue (Human-in-the-Loop for Sensitive Actions)]] - `references` [EXTRACTED]
-- [[Credential Isolation (gateway as sole credential holder via op-proxy)]] - `describes` [EXTRACTED]
-- [[Docker Network Isolation (agentshroud-internal 172.20.016, agentshroud-isolated 172.21.016)]] - `describes` [EXTRACTED]
-- [[Documentation Index (docsREADME.md)]] - `references` [INFERRED]
-- [[EgressFilter (Network-level Outbound Control Module)]] - `describes` [EXTRACTED]
-- [[MCP Proxy (tool call inspection layer)]] - `describes` [EXTRACTED]
-- [[PII Sanitizer (Microsoft Presidio, 0.9 Confidence Minimum)]] - `describes` [EXTRACTED]
-- [[Prompt Injection Defense (PromptGuard + MCPInspector)]] - `describes` [EXTRACTED]
-- [[Security Hardening Phases P0–FINAL]] - `defines` [EXTRACTED]
+- [[Current State (2026-02-24)]] - `contains` [EXTRACTED]
+- [[Current State (v0.7.0 → All Phases Complete)]] - `contains` [EXTRACTED]
+- [[Execution Order]] - `contains` [EXTRACTED]
+- [[GitHub Workflow]] - `contains` [EXTRACTED]
+- [[Roadmap_1]] - `contains` [EXTRACTED]
+- [[SECURITY_PLAN]] - `contains` [EXTRACTED]
+- [[Threat Coverage Matrix]] - `contains` [EXTRACTED]
+- [[What Security Experts Will See]] - `contains` [EXTRACTED]
+- [[Why This Matters_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_138
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

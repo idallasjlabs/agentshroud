@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Module Group 194"
+community: "Setup Docs"
 tags:
   - graphify/document
   - graphify/INFERRED_HIGH
-  - community/Module_Group_194
+  - community/Setup_Docs
 ---
 
 # API Keys Setup Guide (OpenAI + Anthropic OAuth)
@@ -15,4 +15,4 @@ tags:
 - [[LLM Secret Files (anthropic_oauth_token, openai_api_key, google_api_key)]] - `related_to` [INFERRED_HIGH]
 - [[OpenClaw Setup Guide (v0.2.0)]] - `references` [INFERRED_HIGH]
 
-#graphify/document #graphify/INFERRED_HIGH #community/Module_Group_194
+#graphify/document #graphify/INFERRED_HIGH #community/Setup_Docs

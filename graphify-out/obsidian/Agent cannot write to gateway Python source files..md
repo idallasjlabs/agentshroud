@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Module Group 389"
-location: "L68"
+community: "File Sandbox"
+location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_389
+  - community/File_Sandbox
 ---
 
 # Agent cannot write to gateway Python source files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_gateway_source_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_389
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

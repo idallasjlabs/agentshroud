@@ -2,7 +2,7 @@
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
 community: "Enhanced Approval Queue"
-location: "L160"
+location: "L182"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # A pending approval request in the queue
 
 ## Connections
-- [[ApprovalQueueItem_3]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueueItem]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue

@@ -1,16 +1,17 @@
 ---
-source_file: "docs/diagrams/images/diagram-10-data-dictionary.svg"
-type: "image"
-community: "Module Group 539"
+source_file: "BRAND.md"
+type: "document"
+community: "branding/README.md"
+location: "L1"
 tags:
-  - graphify/image
-  - graphify/EXPLICIT
-  - community/Module_Group_539
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/branding/READMEmd
 ---
 
 # BRAND.md
 
 ## Connections
-- [[agentshroud-config Volume]] - `contains` [EXPLICIT]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/image #graphify/EXPLICIT #community/Module_Group_539
+#graphify/document #graphify/EXTRACTED #community/branding/READMEmd

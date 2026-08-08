@@ -1,17 +1,16 @@
 ---
 source_file: "docs/diagrams/images/diagram-13-network-security-egress.svg"
-type: "image"
-community: "Module Group 112"
+type: "concept"
+community: "docs/diagrams"
 tags:
-  - graphify/image
-  - graphify/EXPLICIT
-  - community/Module_Group_112
+  - graphify/concept
+  - graphify/EXTRACTED
+  - community/docs/diagrams
 ---
 
-# Bot Makes Outbound Request (any HTTPS connection)
+# Bot makes outbound request (any HTTPS connection)
 
 ## Connections
-- [[Diagram 13 Network Security Egress (PNG)]] - `contains` [EXPLICIT]
-- [[HTTP_PROXY set (httpgateway8181)]] - `flows_to` [EXPLICIT]
+- [[HTTP_PROXY set (httpgateway8181)]] - `calls` [EXTRACTED]
 
-#graphify/image #graphify/EXPLICIT #community/Module_Group_112
+#graphify/concept #graphify/EXTRACTED #community/docs/diagrams

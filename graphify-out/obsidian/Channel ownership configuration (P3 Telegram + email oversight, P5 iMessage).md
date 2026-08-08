@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Gateway Config & Lifespan"
+community: "Forward Routing & Approval"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Config__Lifespan
+  - community/Forward_Routing__Approval
 ---
 
 # Channel ownership configuration (P3: Telegram + email oversight, P5: iMessage)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ChannelsConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Config__Lifespan
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

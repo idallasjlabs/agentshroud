@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Module Group 71"
-location: "L164"
+community: "Gateway Security Module"
+location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_71
+  - community/Gateway_Security_Module
 ---
 
 # Check if an outbound connection is allowed.          Args:             agent_id:
 
 ## Connections
-- [[.check()_4]] - `rationale_for` [EXTRACTED]
+- [[._check_impl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_71
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

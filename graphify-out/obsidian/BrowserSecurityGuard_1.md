@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "code"
-community: "Module Group 325"
+community: "docs/vault"
 location: "gateway/security/browser_security.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_325
+  - community/docs/vault
 ---
 
 # BrowserSecurityGuard
@@ -15,4 +15,4 @@ tags:
 - [[Browser Social Engineering Detection]] - `implements` [EXTRACTED]
 - [[browser_security.py (Security)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_325
+#graphify/code #graphify/EXTRACTED #community/docs/vault

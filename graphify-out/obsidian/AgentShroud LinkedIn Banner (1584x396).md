@@ -1,11 +1,11 @@
 ---
 source_file: "branding/social/linkedin-banner-1584x396.png"
 type: "image"
-community: "Module Group 376"
+community: "branding/logos"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Module_Group_376
+  - community/branding/logos
 ---
 
 # AgentShroud LinkedIn Banner (1584x396)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud GitHub Social Preview (1280x640)]] - `semantically_similar_to` [INFERRED]
 - [[AgentShroud Open Graph Image (1200x630)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Module_Group_376
+#graphify/image #graphify/INFERRED #community/branding/logos

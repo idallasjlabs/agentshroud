@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCP Inspector & Audit"
+community: "MCP Proxy Config"
 location: "L446"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Inspector__Audit
+  - community/MCP_Proxy_Config
 ---
 
 # Check if an agent can call a specific tool.          Default-allow: only blocks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_tool_permission()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Inspector__Audit
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

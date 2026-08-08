@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Module Group 389"
-location: "L92"
+community: "File Sandbox"
+location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_389
+  - community/File_Sandbox
 ---
 
 # Any .py file in gateway directory should be blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_any_python_file_in_gateway_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_389
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

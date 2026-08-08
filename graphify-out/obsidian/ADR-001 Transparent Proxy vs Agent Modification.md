@@ -1,17 +1,22 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
-type: "rationale"
-community: "Module Group 341"
+source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
+type: "document"
+community: "Architecture Docs"
+location: "L1"
 tags:
-  - graphify/rationale
-  - graphify/INFERRED
-  - community/Module_Group_341
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Architecture_Docs
 ---
 
 # ADR-001: Transparent Proxy vs Agent Modification
 
 ## Connections
 - [[ADR-001 (docsadr) Proxy-Layer Inversion Model]] - `aligns_with` [INFERRED]
-- [[ADR-001 Decision Transparent Proxy — zero modification for existing OpenClaw, separation of concerns, auditable]] - `contains` [EXTRACTED]
+- [[ADR-001-transparent-proxy-vs-agent-modification]] - `contains` [EXTRACTED]
+- [[Consequences]] - `contains` [EXTRACTED]
+- [[Context]] - `contains` [EXTRACTED]
+- [[Decision_2]] - `contains` [EXTRACTED]
+- [[Status]] - `contains` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/Module_Group_341
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

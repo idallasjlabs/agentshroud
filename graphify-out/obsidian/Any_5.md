@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "Ledger Config & Test Infra"
-location: "L347"
+community: "gateway/cli"
+location: "L23"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Ledger_Config__Test_Infra
+  - graphify/EXTRACTED
+  - community/gateway/cli
 ---
 
 # Any
 
 ## Connections
-- [[.get_stats()_1]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `uses` [INFERRED]
-- [[LedgerEntry_1]] - `uses` [INFERRED]
-- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
+- [[._request()]] - `references` [EXTRACTED]
+- [[.delete()]] - `references` [EXTRACTED]
+- [[.get()_2]] - `references` [EXTRACTED]
+- [[.post()_2]] - `references` [EXTRACTED]
+- [[.put()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Ledger_Config__Test_Infra
+#graphify/code #graphify/EXTRACTED #community/gateway/cli

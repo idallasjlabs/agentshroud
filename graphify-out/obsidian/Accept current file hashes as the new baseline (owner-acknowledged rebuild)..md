@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "rationale"
-community: "Module Group 264"
+community: "Gateway Test Suite"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_264
+  - community/Gateway_Test_Suite
 ---
 
 # Accept current file hashes as the new baseline (owner-acknowledged rebuild).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.reset_baseline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_264
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

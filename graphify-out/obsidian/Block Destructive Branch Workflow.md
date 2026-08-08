@@ -1,16 +1,13 @@
 ---
 source_file: ".github/workflows/block-destructive-branch.yml"
 type: "code"
-community: "Module Group 301"
+community: ".github/workflows"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Module_Group_301
+  - graphify/EXTRACTED
+  - community/github/workflows
 ---
 
 # Block Destructive Branch Workflow
 
-## Connections
-- [[CI Pipeline Workflow]] - `conceptually_related_to` [INFERRED]
-
-#graphify/code #graphify/INFERRED #community/Module_Group_301
+#graphify/code #graphify/EXTRACTED #community/github/workflows

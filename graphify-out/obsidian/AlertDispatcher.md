@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Alert Dispatcher"
+community: "PII Config & Test Fixtures"
 location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Alert_Dispatcher
+  - community/PII_Config__Test_Fixtures
 ---
 
 # AlertDispatcher
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_42]] - `method` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_50]] - `method` [EXTRACTED]
 - [[._format_alert_message()]] - `method` [EXTRACTED]
 - [[._is_duplicate()]] - `method` [EXTRACTED]
 - [[._is_rate_limited()]] - `method` [EXTRACTED]
@@ -29,17 +29,19 @@ tags:
 - [[.test_alert_dispatcher_init()]] - `calls` [EXTRACTED]
 - [[.test_alert_dispatcher_write()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
+- [[CronStateMonitor]] - `calls` [INFERRED]
 - [[Dispatches security alerts with dedup and rate limiting.]] - `rationale_for` [EXTRACTED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[Path_19]] - `uses` [INFERRED]
+- [[Path_22]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAlertDispatcher]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth]] - `uses` [INFERRED]
+- [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestClamAVParser]] - `uses` [INFERRED]
 - [[TestClamAVRun]] - `uses` [INFERRED]
 - [[TestClamAVSummary]] - `uses` [INFERRED]
@@ -83,7 +85,7 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_alert_dispatcher_retry.py]] - `imports` [EXTRACTED]
-- [[test_security_audit.py]] - `imports` [EXTRACTED]
-- [[test_security_toolchain.py]] - `imports` [EXTRACTED]
+- [[test_security_audit.py]] - `references` [EXTRACTED]
+- [[test_security_toolchain.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Alert_Dispatcher
+#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "concept"
-community: "Module Group 393"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_393
+  - community/docs/vault
 ---
 
 # ANTHROPIC_BASE_URL env var (gateway:8080 intercept)
@@ -14,4 +14,4 @@ tags:
 - [[All Environment Variables (reference)]] - `documents` [EXTRACTED]
 - [[SDK Routing Patches (Anthropic + Telegram → gateway8080)]] - `depends_on` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_393
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

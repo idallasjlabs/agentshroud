@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "Module Group 419"
-location: "L157"
+community: "Kill Switch Config"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_419
+  - community/Kill_Switch_Config
 ---
 
 # Any
 
 ## Connections
-- [[get_sanitizer_stats()]] - `references` [EXTRACTED]
+- [[.to_dict()_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_419
+#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Config

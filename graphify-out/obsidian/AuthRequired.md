@@ -1,102 +1,21 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "CLI & Core Gateway Routes"
-location: "L422"
+community: "Gateway Ingest API"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI__Core_Gateway_Routes
+  - community/Gateway_Ingest_API
 ---
 
 # AuthRequired
 
 ## Connections
-- [[Action_1]] - `uses` [INFERRED]
-- [[ApprovalDecision]] - `uses` [INFERRED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
-- [[ApprovalRequest_2]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
-- [[EmailSendRequest]] - `uses` [INFERRED]
-- [[EmailSendResponse]] - `uses` [INFERRED]
-- [[EventBus]] - `uses` [INFERRED]
-- [[ForwardError]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[ForwardResponse]] - `uses` [INFERRED]
-- [[GatewayConfig_1]] - `uses` [INFERRED]
-- [[LedgerEntry_1]] - `uses` [INFERRED]
-- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
-- [[SSHExecResponse]] - `uses` [INFERRED]
-- [[StatusResponse]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[_scanner_summary()]] - `references` [EXTRACTED]
-- [[add_blocked_domain()]] - `references` [EXTRACTED]
-- [[container_security_profile()]] - `references` [EXTRACTED]
-- [[deep_security_test()]] - `references` [EXTRACTED]
-- [[delete_ledger_entry()]] - `references` [EXTRACTED]
-- [[discard_blocked_message()]] - `references` [EXTRACTED]
-- [[discard_blocked_outbound()]] - `references` [EXTRACTED]
-- [[egress_add_rule()]] - `references` [EXTRACTED]
-- [[egress_approve()]] - `references` [EXTRACTED]
-- [[egress_deny()]] - `references` [EXTRACTED]
-- [[egress_emergency_block()]] - `references` [EXTRACTED]
-- [[egress_log()]] - `references` [EXTRACTED]
-- [[egress_pending()]] - `references` [EXTRACTED]
-- [[egress_remove_rule()]] - `references` [EXTRACTED]
-- [[egress_risk_preview()]] - `references` [EXTRACTED]
-- [[egress_rules()]] - `references` [EXTRACTED]
-- [[falco_alerts()]] - `references` [EXTRACTED]
-- [[full_security_report()]] - `references` [EXTRACTED]
-- [[get_dns_stats()]] - `references` [EXTRACTED]
-- [[get_ledger_entry()]] - `references` [EXTRACTED]
-- [[get_my_permissions()]] - `references` [EXTRACTED]
-- [[get_soc2_compliance_report()]] - `references` [EXTRACTED]
-- [[get_user_permissions()]] - `references` [EXTRACTED]
-- [[killswitch_status()]] - `references` [EXTRACTED]
-- [[list_agents()]] - `references` [EXTRACTED]
-- [[list_blocked_domains()]] - `references` [EXTRACTED]
-- [[list_blocked_message_quarantine()]] - `references` [EXTRACTED]
-- [[list_blocked_outbound_quarantine()]] - `references` [EXTRACTED]
-- [[list_security_modules()]] - `references` [EXTRACTED]
-- [[list_users_and_roles()]] - `references` [EXTRACTED]
-- [[llm_proxy_stats()]] - `references` [EXTRACTED]
-- [[mcp_proxy_endpoint()]] - `references` [EXTRACTED]
-- [[mcp_result_endpoint()]] - `references` [EXTRACTED]
-- [[op_proxy()]] - `references` [EXTRACTED]
-- [[privacy_audit()]] - `references` [EXTRACTED]
-- [[privacy_policy_status()]] - `references` [EXTRACTED]
-- [[proxy_status()]] - `references` [EXTRACTED]
-- [[quarantine_summary()]] - `references` [EXTRACTED]
-- [[query_ledger()]] - `references` [EXTRACTED]
-- [[refresh_dns_blocklist()]] - `references` [EXTRACTED]
-- [[release_blocked_message()]] - `references` [EXTRACTED]
-- [[release_blocked_outbound()]] - `references` [EXTRACTED]
-- [[remove_blocked_domain()]] - `references` [EXTRACTED]
-- [[run_all_scanners()]] - `references` [EXTRACTED]
-- [[run_canary_checks()]] - `references` [EXTRACTED]
-- [[run_cis_benchmark()]] - `references` [EXTRACTED]
-- [[run_clamav_scan()]] - `references` [EXTRACTED]
-- [[run_openscap_scan()]] - `references` [EXTRACTED]
-- [[run_trivy_scan()]] - `references` [EXTRACTED]
-- [[scanner_history()]] - `references` [EXTRACTED]
-- [[security_health_report()]] - `references` [EXTRACTED]
-- [[set_user_role()]] - `references` [EXTRACTED]
-- [[soc_correlation()]] - `references` [EXTRACTED]
-- [[soc_events()]] - `references` [EXTRACTED]
-- [[soc_export()]] - `references` [EXTRACTED]
-- [[soc_report()]] - `references` [EXTRACTED]
-- [[ssh_exec()]] - `references` [EXTRACTED]
-- [[ssh_history()]] - `references` [EXTRACTED]
-- [[ssh_hosts()]] - `references` [EXTRACTED]
-- [[system_control()]] - `references` [EXTRACTED]
-- [[verify_killswitch()]] - `references` [EXTRACTED]
-- [[wazuh_alerts()]] - `references` [EXTRACTED]
+- [[email_send()]] - `references` [EXTRACTED]
+- [[email_send_owner()]] - `references` [EXTRACTED]
+- [[forward_content()]] - `references` [EXTRACTED]
+- [[forward_content_stream()]] - `references` [EXTRACTED]
+- [[telegram_webhook()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI__Core_Gateway_Routes
+#graphify/code #graphify/EXTRACTED #community/Gateway_Ingest_API

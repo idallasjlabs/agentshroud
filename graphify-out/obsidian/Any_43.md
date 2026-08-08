@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Module Group 142"
-location: "L379"
+community: "PII Config & Test Fixtures"
+location: "L157"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Module_Group_142
+  - graphify/EXTRACTED
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Any
 
 ## Connections
-- [[.get_lifecycle_status()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
+- [[get_sanitizer_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_142
+#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

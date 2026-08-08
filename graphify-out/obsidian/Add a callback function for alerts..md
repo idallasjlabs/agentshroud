@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Module Group 573"
+community: "Egress & RBAC Security Core"
 location: "L446"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_573
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Add a callback function for alerts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.add_alert_callback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_573
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

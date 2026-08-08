@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Module Group 151"
-location: "L1099"
+community: "Gateway Proxy Layer"
+location: "L1443"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_151
+  - community/Gateway_Proxy_Layer
 ---
 
 # Apply outbound text filters to known streaming response formats.          Also e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._filter_streaming_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_151
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

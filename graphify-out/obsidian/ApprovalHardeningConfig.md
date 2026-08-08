@@ -1,27 +1,28 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Approval Hardening"
+community: "Gateway Test Suite"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Hardening
+  - community/Gateway_Test_Suite
 ---
 
 # ApprovalHardeningConfig
 
 ## Connections
-- [[.__init__()_8]] - `calls` [EXTRACTED]
-- [[.__init__()_43]] - `references` [EXTRACTED]
+- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_51]] - `references` [EXTRACTED]
 - [[.config()]] - `calls` [EXTRACTED]
 - [[.test_cooldown_disabled_when_feature_disabled()]] - `calls` [EXTRACTED]
 - [[.test_custom_config()]] - `calls` [EXTRACTED]
 - [[.test_deception_detection_disabled()]] - `calls` [EXTRACTED]
 - [[.test_default_config()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_10]] - `uses` [INFERRED]
 - [[Configuration for approval queue hardening.]] - `rationale_for` [EXTRACTED]
+- [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -35,7 +36,7 @@ tags:
 - [[approval_hardening.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[test_approval_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Hardening
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

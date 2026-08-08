@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "rationale"
-community: "Module Group 213"
+community: "Bot CVE Scorecard"
 location: "L749"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_213
+  - community/Bot_CVE_Scorecard
 ---
 
 # Bot not in config → image='', scan skipped, score based on egress only.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_missing_bot_returns_empty_image()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_213
+#graphify/rationale #graphify/EXTRACTED #community/Bot_CVE_Scorecard

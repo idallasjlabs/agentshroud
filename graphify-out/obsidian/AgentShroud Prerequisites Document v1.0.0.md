@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Module Group 400"
+community: "docs/redteam"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_400
+  - community/docs/redteam
 ---
 
 # AgentShroud Prerequisites Document v1.0.0
@@ -15,4 +15,4 @@ tags:
 - [[Gateway Python dependencies FastAPI, Presidio, spaCy, aiosqlite, python-jose, websockets]] - `documents` [EXTRACTED]
 - [[Secret backends macOS Keychain (default) → 1Password → secretstore → homedir]] - `documents` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_400
+#graphify/document #graphify/EXTRACTED #community/docs/redteam

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Module Group 121"
+community: "Gateway Security Module"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_121
+  - community/Gateway_Security_Module
 ---
 
 # Check if file access should be blocked to prevent environment leakage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_file_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_121
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

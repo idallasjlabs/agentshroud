@@ -1,16 +1,21 @@
 ---
-source_file: "/Users/ijefferson.admin/Development/agentshroud/docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
-type: "rationale"
-community: "Module Group 341"
+source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
+type: "document"
+community: "Architecture Docs"
+location: "L1"
 tags:
-  - graphify/rationale
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_341
+  - community/Architecture_Docs
 ---
 
 # ADR-004: API Keys Never in Agent Container
 
 ## Connections
-- [[Proxy-Side API Key Management Keys in AgentShroud only, injected into requests per destination pattern]] - `defines` [EXTRACTED]
+- [[ADR-004-api-keys-never-in-agent-container]] - `contains` [EXTRACTED]
+- [[Consequences_3]] - `contains` [EXTRACTED]
+- [[Context_3]] - `contains` [EXTRACTED]
+- [[Decision_5]] - `contains` [EXTRACTED]
+- [[Status_3]] - `contains` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_341
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

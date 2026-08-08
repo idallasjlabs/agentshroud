@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "Module Group 322"
+community: "PII Sanitizer Pipeline"
 location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_322
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # 100 messages through process_inbound in under 5 seconds.
 
 ## Connections
 - [[.test_100_inbound_messages_under_5s()]] - `rationale_for` [EXTRACTED]
+- [[.test_100_outbound_messages_under_5s()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_322
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

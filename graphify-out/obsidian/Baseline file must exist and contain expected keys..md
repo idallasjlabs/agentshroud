@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "rationale"
-community: "Module Group 245"
-location: "L113"
+community: "Gateway Test Suite"
+location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_245
+  - community/Gateway_Test_Suite
 ---
 
 # Baseline file must exist and contain expected keys.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_baseline_file_exists()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_245
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

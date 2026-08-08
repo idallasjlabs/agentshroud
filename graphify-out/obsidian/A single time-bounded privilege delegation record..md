@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "Module Group 167"
+community: "Gateway Test Suite"
 location: "L60"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_167
+  - community/Gateway_Test_Suite
 ---
 
 # A single time-bounded privilege delegation record.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Delegation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_167
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

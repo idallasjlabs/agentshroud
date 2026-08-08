@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "rationale"
-community: "Module Group 310"
-location: "L590"
+community: "Enforce-Mode Auto-Revert"
+location: "L666"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_310
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # Build a subprocess.run double that simulates the upgrade git flow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_gitless_run()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_310
+#graphify/rationale #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert

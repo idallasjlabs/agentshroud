@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Egress Filter & Approval"
-location: "L22"
+community: "Gateway Test Suite"
+location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Filter__Approval
+  - community/Gateway_Test_Suite
 ---
 
 # ApprovalResult
@@ -25,6 +25,7 @@ tags:
 - [[TestInteractiveApproval]] - `uses` [INFERRED]
 - [[TestLogging]] - `uses` [INFERRED]
 - [[TestMonitorMode]] - `uses` [INFERRED]
+- [[TestOpenClawResearchDomainsAllowlisted]] - `uses` [INFERRED]
 - [[TestPerAgentPolicy]] - `uses` [INFERRED]
 - [[TestSMTPIMAPPorts]] - `uses` [INFERRED]
 - [[TestURLParsing]] - `uses` [INFERRED]
@@ -32,4 +33,4 @@ tags:
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Filter__Approval
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

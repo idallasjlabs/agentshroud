@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "CLI Interface"
+community: "gateway/cli"
 location: "L287"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CLI_Interface
+  - community/gateway/cli
 ---
 
 # Add a user to a group.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[add_group_member()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CLI_Interface
+#graphify/rationale #graphify/EXTRACTED #community/gateway/cli

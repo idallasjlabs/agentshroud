@@ -1,11 +1,11 @@
 ---
 source_file: "branding/README.md"
 type: "document"
-community: "Module Group 226"
+community: "branding/colors"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_226
+  - community/branding/colors
 ---
 
 # Branding README / Overview
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Branding Assets Index]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_226
+#graphify/document #graphify/EXTRACTED #community/branding/colors

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/RELEASE-ANNOUNCEMENT-v1.0.0.md"
 type: "rationale"
-community: "Module Group 427"
+community: "Planning Docs"
 location: "line 29"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_427
+  - community/Planning_Docs
 ---
 
 # 9 OpenClaw CVEs Fully Mitigated (v1.0.0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v1.0.0 Fortress Release Announcement]] - `announces` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_427
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

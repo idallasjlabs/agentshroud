@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "concept"
-community: "Module Group 192"
+community: "Bot Skill Config"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Module_Group_192
+  - community/Bot_Skill_Config
 ---
 
 # Automated CVE Watch (Hermes weekly cron)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Hermes Cron Jobs (jobs.yaml)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Module_Group_192
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

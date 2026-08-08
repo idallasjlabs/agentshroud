@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Module Group 91"
+community: "Gateway Test Suite"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_91
+  - community/Gateway_Test_Suite
 ---
 
 # CanaryConfig
 
 ## Connections
-- [[.__init__()_82]] - `references` [EXTRACTED]
-- [[.setup_method()_16]] - `calls` [EXTRACTED]
+- [[.__init__()_101]] - `references` [EXTRACTED]
+- [[.setup_method()_19]] - `calls` [EXTRACTED]
 - [[.test_incident_logging()]] - `calls` [EXTRACTED]
 - [[.test_partial_canary_match_handling()]] - `calls` [EXTRACTED]
 - [[Configuration for the Output Canary System.]] - `rationale_for` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[output_canary.py]] - `contains` [EXTRACTED]
 - [[test_output_canary.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_91
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

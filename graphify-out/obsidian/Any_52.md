@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Session Manager & Webhook"
-location: "L60"
+community: "Auth & Exception Types"
+location: "L187"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Session_Manager__Webhook
+  - graphify/INFERRED
+  - community/Auth__Exception_Types
 ---
 
 # Any
 
 ## Connections
-- [[.add_conversation_message()]] - `references` [EXTRACTED]
-- [[.from_dict()_9]] - `references` [EXTRACTED]
-- [[.get_session_context()]] - `references` [EXTRACTED]
-- [[.reanchor_system_prompt()]] - `references` [EXTRACTED]
-- [[.to_dict()_11]] - `references` [EXTRACTED]
+- [[.check_permission()]] - `references` [EXTRACTED]
+- [[.get_user_permissions_summary()]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Session_Manager__Webhook
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "document"
-community: "Module Group 399"
+community: "docs/project"
 location: "line 38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_399
+  - community/docs/project
 ---
 
 # AgentShroud Mission Statement (Timestamped Record Feb 22 2026)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Trademark Prior Use Record]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_399
+#graphify/document #graphify/EXTRACTED #community/docs/project

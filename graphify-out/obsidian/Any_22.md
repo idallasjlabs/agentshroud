@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Module Group 152"
-location: "L149"
+community: "Gateway Test Suite"
+location: "L75"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Module_Group_152
+  - community/Gateway_Test_Suite
 ---
 
 # Any
 
 ## Connections
-- [[.inspect()]] - `references` [EXTRACTED]
-- [[ContainerEngine_2]] - `uses` [INFERRED]
-- [[ContainerInfo_2]] - `uses` [INFERRED]
+- [[._audit()]] - `references` [EXTRACTED]
+- [[.get_stats()_10]] - `references` [EXTRACTED]
+- [[.to_dict()_2]] - `references` [EXTRACTED]
+- [[URLAnalyzer]] - `uses` [INFERRED]
+- [[WebContentScanner]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_152
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,20 +1,17 @@
 ---
-source_file: "cli/src/main.rs"
-type: "code"
-community: "Module Group 182"
-location: "L20"
+source_file: "skills/openclaw/voice-call/SKILL.md"
+type: "document"
+community: "skills/openclaw"
+location: "L19"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_182
+  - community/skills/openclaw
 ---
 
-# Cli
+# CLI
 
 ## Connections
-- [[Commands]] - `references` [EXTRACTED]
-- [[OutputFormat]] - `references` [EXTRACTED]
-- [[String]] - `references` [EXTRACTED]
-- [[main.rs]] - `contains` [EXTRACTED]
+- [[Voice Call]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_182
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

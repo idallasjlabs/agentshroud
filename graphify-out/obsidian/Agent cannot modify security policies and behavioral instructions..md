@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Environment Guard & Leak Detection"
-location: "L100"
+community: "File Sandbox"
+location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Environment_Guard__Leak_Detection
+  - community/File_Sandbox
 ---
 
 # Agent cannot modify security policies and behavioral instructions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSecurityPolicyProtection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Environment_Guard__Leak_Detection
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

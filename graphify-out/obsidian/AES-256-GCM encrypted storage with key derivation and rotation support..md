@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "Module Group 66"
+community: "PII Config & Test Fixtures"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_66
+  - community/PII_Config__Test_Fixtures
 ---
 
 # AES-256-GCM encrypted storage with key derivation and rotation support.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EncryptedStore]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_66
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

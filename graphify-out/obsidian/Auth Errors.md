@@ -1,18 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: "Module Group 297"
+community: "docs/vault"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_297
+  - community/docs/vault
 ---
 
-# Auth Errors
+# Auth Errors.md
 
 ## Connections
-- [[Error Index]] - `indexes` [EXTRACTED]
-- [[Shared Secret Authentication]] - `troubleshoots` [INFERRED]
-- [[auth.py_2]] - `documents` [EXTRACTED]
+- [[Auth Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_297
+#graphify/document #graphify/EXTRACTED #community/docs/vault

@@ -1,22 +1,33 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Module Group 77"
-location: "L75"
+community: "Collaborator Prompt Classifiers"
+location: "L2693"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Module_Group_77
+  - graphify/EXTRACTED
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Any
 
 ## Connections
-- [[._audit()]] - `references` [EXTRACTED]
-- [[.get_stats()_10]] - `references` [EXTRACTED]
-- [[.to_dict()_2]] - `references` [EXTRACTED]
-- [[URLAnalyzer]] - `uses` [INFERRED]
-- [[WebContentScanner]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[._apply_outbound_model_error_rewrites()]] - `references` [EXTRACTED]
+- [[._apply_outbound_status_notices()]] - `references` [EXTRACTED]
+- [[._build_ack_only_updates()]] - `references` [EXTRACTED]
+- [[._check_collaborator_leakage()]] - `references` [EXTRACTED]
+- [[._extract_embedded_tool_call_json()]] - `references` [EXTRACTED]
+- [[._handle_outbound_tool_calls()]] - `references` [EXTRACTED]
+- [[._parse_tool_call_json()]] - `references` [EXTRACTED]
+- [[._redact_owner_ids()]] - `references` [EXTRACTED]
+- [[._resolve_text_field()]] - `references` [EXTRACTED]
+- [[._trigger_web_fetch_approval()]] - `references` [EXTRACTED]
+- [[._trigger_web_search_log()]] - `references` [EXTRACTED]
+- [[ApprovalMode]] - `uses` [INFERRED]
+- [[DelegationPrivilege]] - `uses` [INFERRED]
+- [[GroupWorkspaceManager]] - `uses` [INFERRED]
+- [[ProgressiveLockdown]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[RateLimiter]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Module_Group_77
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

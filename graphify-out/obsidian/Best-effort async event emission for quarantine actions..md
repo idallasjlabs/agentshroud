@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Module Group 160"
-location: "L6744"
+community: "Collaborator Prompt Classifiers"
+location: "L6895"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_160
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Best-effort async event emission for quarantine actions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._emit_quarantine_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_160
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

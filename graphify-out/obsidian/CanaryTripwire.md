@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "Module Group 115"
+community: "Gateway Test Suite"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Module_Group_115
+  - community/Gateway_Test_Suite
 ---
 
 # CanaryTripwire
 
 ## Connections
-- [[.__init__()_49]] - `method` [EXTRACTED]
+- [[.__init__()_57]] - `method` [EXTRACTED]
 - [[._check_encoded()]] - `method` [EXTRACTED]
 - [[._check_plain()]] - `method` [EXTRACTED]
 - [[._normalize()]] - `method` [EXTRACTED]
@@ -43,8 +43,8 @@ tags:
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[pipeline()_1]] - `calls` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_3]] - `calls` [EXTRACTED]
 - [[test_canary_tripwire.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Module_Group_115
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

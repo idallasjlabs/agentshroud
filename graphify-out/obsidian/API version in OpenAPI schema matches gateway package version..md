@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract.py"
 type: "rationale"
-community: "Module Group 271"
+community: "Gateway Test Suite"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_271
+  - community/Gateway_Test_Suite
 ---
 
 # API version in OpenAPI schema matches gateway package version.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_version_consistency()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_271
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Module Group 205"
-location: "L307"
+community: "Gateway Proxy Layer"
+location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Module_Group_205
+  - community/Gateway_Proxy_Layer
 ---
 
 # Best-effort privacy event emission.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._emit_privacy_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Module_Group_205
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

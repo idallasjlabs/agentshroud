@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reviews/blue-team-audit-v0.7.0.md"
 type: "document"
-community: "Module Group 401"
+community: "docs/redteam"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_401
+  - community/docs/redteam
 ---
 
 # Blue Team Security Audit Report v0.7.0
@@ -17,4 +17,4 @@ tags:
 - [[Security pipeline flow PromptGuard → PII → TrustManager → ApprovalQueue → AuditChain]] - `documents` [EXTRACTED]
 - [[v0.7.0 Blue Team 35 modules, 25 enforced, 10 monitor — GO for red team]] - `reports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_401
+#graphify/document #graphify/EXTRACTED #community/docs/redteam
