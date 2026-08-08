@@ -1,16 +1,16 @@
 # Graph Report - agentshroud  (2026-08-07)
 
 ## Corpus Check
-- 1293 files · ~2,048,185 words
+- 1293 files · ~2,048,625 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 29167 nodes · 48601 edges · 1678 communities (1293 shown, 385 thin omitted)
+- 29167 nodes · 48602 edges · 1716 communities (1329 shown, 387 thin omitted)
 - Extraction: 85% EXTRACTED · 15% INFERRED · 0% AMBIGUOUS · INFERRED: 7390 edges (avg confidence: 0.53)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1fec5a70`
+- Built from commit: `6d58c956`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -1386,9 +1386,11 @@
 - [[_COMMUNITY_Community 1385|Community 1385]]
 - [[_COMMUNITY_Community 1386|Community 1386]]
 - [[_COMMUNITY_Community 1387|Community 1387]]
+- [[_COMMUNITY_Community 1388|Community 1388]]
 - [[_COMMUNITY_Community 1389|Community 1389]]
 - [[_COMMUNITY_Community 1390|Community 1390]]
 - [[_COMMUNITY_Community 1391|Community 1391]]
+- [[_COMMUNITY_Community 1392|Community 1392]]
 - [[_COMMUNITY_Community 1393|Community 1393]]
 - [[_COMMUNITY_Community 1394|Community 1394]]
 - [[_COMMUNITY_Community 1395|Community 1395]]
@@ -1399,6 +1401,7 @@
 - [[_COMMUNITY_Community 1400|Community 1400]]
 - [[_COMMUNITY_Community 1401|Community 1401]]
 - [[_COMMUNITY_Community 1402|Community 1402]]
+- [[_COMMUNITY_Community 1403|Community 1403]]
 - [[_COMMUNITY_Community 1404|Community 1404]]
 - [[_COMMUNITY_Community 1405|Community 1405]]
 - [[_COMMUNITY_Community 1406|Community 1406]]
@@ -1419,24 +1422,40 @@
 - [[_COMMUNITY_Community 1421|Community 1421]]
 - [[_COMMUNITY_Community 1422|Community 1422]]
 - [[_COMMUNITY_Community 1423|Community 1423]]
+- [[_COMMUNITY_Community 1424|Community 1424]]
 - [[_COMMUNITY_Community 1425|Community 1425]]
+- [[_COMMUNITY_Community 1426|Community 1426]]
 - [[_COMMUNITY_Community 1427|Community 1427]]
 - [[_COMMUNITY_Community 1428|Community 1428]]
+- [[_COMMUNITY_Community 1429|Community 1429]]
 - [[_COMMUNITY_Community 1430|Community 1430]]
+- [[_COMMUNITY_Community 1431|Community 1431]]
+- [[_COMMUNITY_Community 1432|Community 1432]]
+- [[_COMMUNITY_Community 1433|Community 1433]]
+- [[_COMMUNITY_Community 1434|Community 1434]]
+- [[_COMMUNITY_Community 1435|Community 1435]]
+- [[_COMMUNITY_Community 1436|Community 1436]]
 - [[_COMMUNITY_Community 1437|Community 1437]]
+- [[_COMMUNITY_Community 1438|Community 1438]]
 - [[_COMMUNITY_Community 1439|Community 1439]]
 - [[_COMMUNITY_Community 1440|Community 1440]]
+- [[_COMMUNITY_Community 1441|Community 1441]]
 - [[_COMMUNITY_Community 1442|Community 1442]]
 - [[_COMMUNITY_Community 1443|Community 1443]]
+- [[_COMMUNITY_Community 1444|Community 1444]]
 - [[_COMMUNITY_Community 1445|Community 1445]]
 - [[_COMMUNITY_Community 1446|Community 1446]]
+- [[_COMMUNITY_Community 1447|Community 1447]]
+- [[_COMMUNITY_Community 1448|Community 1448]]
 - [[_COMMUNITY_Community 1449|Community 1449]]
 - [[_COMMUNITY_Community 1450|Community 1450]]
+- [[_COMMUNITY_Community 1451|Community 1451]]
 - [[_COMMUNITY_Community 1452|Community 1452]]
 - [[_COMMUNITY_Community 1453|Community 1453]]
 - [[_COMMUNITY_Community 1454|Community 1454]]
 - [[_COMMUNITY_Community 1455|Community 1455]]
 - [[_COMMUNITY_Community 1456|Community 1456]]
+- [[_COMMUNITY_Community 1457|Community 1457]]
 - [[_COMMUNITY_Community 1458|Community 1458]]
 - [[_COMMUNITY_Community 1459|Community 1459]]
 - [[_COMMUNITY_Community 1460|Community 1460]]
@@ -1447,7 +1466,9 @@
 - [[_COMMUNITY_Community 1465|Community 1465]]
 - [[_COMMUNITY_Community 1466|Community 1466]]
 - [[_COMMUNITY_Community 1467|Community 1467]]
+- [[_COMMUNITY_Community 1468|Community 1468]]
 - [[_COMMUNITY_Community 1469|Community 1469]]
+- [[_COMMUNITY_Community 1470|Community 1470]]
 - [[_COMMUNITY_Community 1471|Community 1471]]
 - [[_COMMUNITY_Community 1472|Community 1472]]
 - [[_COMMUNITY_Community 1473|Community 1473]]
@@ -1478,12 +1499,14 @@
 - [[_COMMUNITY_Community 1511|Community 1511]]
 - [[_COMMUNITY_Community 1512|Community 1512]]
 - [[_COMMUNITY_Community 1513|Community 1513]]
+- [[_COMMUNITY_Community 1514|Community 1514]]
 - [[_COMMUNITY_Community 1515|Community 1515]]
 - [[_COMMUNITY_Community 1516|Community 1516]]
 - [[_COMMUNITY_Community 1517|Community 1517]]
 - [[_COMMUNITY_Community 1518|Community 1518]]
 - [[_COMMUNITY_Community 1519|Community 1519]]
 - [[_COMMUNITY_Community 1520|Community 1520]]
+- [[_COMMUNITY_Community 1521|Community 1521]]
 - [[_COMMUNITY_Community 1522|Community 1522]]
 - [[_COMMUNITY_Community 1523|Community 1523]]
 - [[_COMMUNITY_Community 1524|Community 1524]]
@@ -1501,14 +1524,18 @@
 - [[_COMMUNITY_Community 1536|Community 1536]]
 - [[_COMMUNITY_Community 1537|Community 1537]]
 - [[_COMMUNITY_Community 1538|Community 1538]]
+- [[_COMMUNITY_Community 1539|Community 1539]]
+- [[_COMMUNITY_Community 1540|Community 1540]]
 - [[_COMMUNITY_Community 1541|Community 1541]]
 - [[_COMMUNITY_Community 1542|Community 1542]]
 - [[_COMMUNITY_Community 1543|Community 1543]]
 - [[_COMMUNITY_Community 1544|Community 1544]]
 - [[_COMMUNITY_Community 1545|Community 1545]]
+- [[_COMMUNITY_Community 1546|Community 1546]]
 - [[_COMMUNITY_Community 1547|Community 1547]]
 - [[_COMMUNITY_Community 1548|Community 1548]]
 - [[_COMMUNITY_Community 1549|Community 1549]]
+- [[_COMMUNITY_Community 1550|Community 1550]]
 - [[_COMMUNITY_Community 1551|Community 1551]]
 - [[_COMMUNITY_Community 1552|Community 1552]]
 - [[_COMMUNITY_Community 1553|Community 1553]]
@@ -1516,13 +1543,19 @@
 - [[_COMMUNITY_Community 1555|Community 1555]]
 - [[_COMMUNITY_Community 1556|Community 1556]]
 - [[_COMMUNITY_Community 1557|Community 1557]]
+- [[_COMMUNITY_Community 1558|Community 1558]]
+- [[_COMMUNITY_Community 1559|Community 1559]]
 - [[_COMMUNITY_Community 1560|Community 1560]]
 - [[_COMMUNITY_Community 1561|Community 1561]]
 - [[_COMMUNITY_Community 1562|Community 1562]]
 - [[_COMMUNITY_Community 1563|Community 1563]]
 - [[_COMMUNITY_Community 1564|Community 1564]]
+- [[_COMMUNITY_Community 1565|Community 1565]]
+- [[_COMMUNITY_Community 1566|Community 1566]]
+- [[_COMMUNITY_Community 1567|Community 1567]]
 - [[_COMMUNITY_Community 1568|Community 1568]]
 - [[_COMMUNITY_Community 1569|Community 1569]]
+- [[_COMMUNITY_Community 1570|Community 1570]]
 - [[_COMMUNITY_Community 1571|Community 1571]]
 - [[_COMMUNITY_Community 1572|Community 1572]]
 - [[_COMMUNITY_Community 1573|Community 1573]]
@@ -1557,28 +1590,57 @@
 - [[_COMMUNITY_Community 1602|Community 1602]]
 - [[_COMMUNITY_Community 1603|Community 1603]]
 - [[_COMMUNITY_Community 1604|Community 1604]]
+- [[_COMMUNITY_Community 1605|Community 1605]]
 - [[_COMMUNITY_Community 1606|Community 1606]]
 - [[_COMMUNITY_Community 1607|Community 1607]]
 - [[_COMMUNITY_Community 1608|Community 1608]]
+- [[_COMMUNITY_Community 1609|Community 1609]]
+- [[_COMMUNITY_Community 1610|Community 1610]]
 - [[_COMMUNITY_Community 1611|Community 1611]]
+- [[_COMMUNITY_Community 1612|Community 1612]]
+- [[_COMMUNITY_Community 1613|Community 1613]]
 - [[_COMMUNITY_Community 1614|Community 1614]]
 - [[_COMMUNITY_Community 1615|Community 1615]]
+- [[_COMMUNITY_Community 1616|Community 1616]]
+- [[_COMMUNITY_Community 1617|Community 1617]]
 - [[_COMMUNITY_Community 1618|Community 1618]]
 - [[_COMMUNITY_Community 1619|Community 1619]]
 - [[_COMMUNITY_Community 1620|Community 1620]]
+- [[_COMMUNITY_Community 1621|Community 1621]]
 - [[_COMMUNITY_Community 1622|Community 1622]]
 - [[_COMMUNITY_Community 1623|Community 1623]]
 - [[_COMMUNITY_Community 1624|Community 1624]]
 - [[_COMMUNITY_Community 1625|Community 1625]]
+- [[_COMMUNITY_Community 1626|Community 1626]]
+- [[_COMMUNITY_Community 1627|Community 1627]]
+- [[_COMMUNITY_Community 1628|Community 1628]]
 - [[_COMMUNITY_Community 1629|Community 1629]]
+- [[_COMMUNITY_Community 1630|Community 1630]]
 - [[_COMMUNITY_Community 1631|Community 1631]]
+- [[_COMMUNITY_Community 1632|Community 1632]]
+- [[_COMMUNITY_Community 1633|Community 1633]]
+- [[_COMMUNITY_Community 1634|Community 1634]]
+- [[_COMMUNITY_Community 1635|Community 1635]]
 - [[_COMMUNITY_Community 1636|Community 1636]]
 - [[_COMMUNITY_Community 1637|Community 1637]]
+- [[_COMMUNITY_Community 1638|Community 1638]]
+- [[_COMMUNITY_Community 1639|Community 1639]]
+- [[_COMMUNITY_Community 1640|Community 1640]]
+- [[_COMMUNITY_Community 1641|Community 1641]]
+- [[_COMMUNITY_Community 1642|Community 1642]]
+- [[_COMMUNITY_Community 1643|Community 1643]]
+- [[_COMMUNITY_Community 1644|Community 1644]]
 - [[_COMMUNITY_Community 1645|Community 1645]]
 - [[_COMMUNITY_Community 1646|Community 1646]]
+- [[_COMMUNITY_Community 1647|Community 1647]]
+- [[_COMMUNITY_Community 1648|Community 1648]]
 - [[_COMMUNITY_Community 1649|Community 1649]]
+- [[_COMMUNITY_Community 1650|Community 1650]]
+- [[_COMMUNITY_Community 1651|Community 1651]]
 - [[_COMMUNITY_Community 1652|Community 1652]]
+- [[_COMMUNITY_Community 1653|Community 1653]]
 - [[_COMMUNITY_Community 1654|Community 1654]]
+- [[_COMMUNITY_Community 1655|Community 1655]]
 - [[_COMMUNITY_Community 1656|Community 1656]]
 - [[_COMMUNITY_Community 1657|Community 1657]]
 - [[_COMMUNITY_Community 1658|Community 1658]]
@@ -1600,32 +1662,19 @@
 - [[_COMMUNITY_Community 1674|Community 1674]]
 - [[_COMMUNITY_Community 1675|Community 1675]]
 - [[_COMMUNITY_Community 1676|Community 1676]]
-- [[_COMMUNITY_Community 1677|Community 1677]]
 - [[_COMMUNITY_Community 1678|Community 1678]]
 - [[_COMMUNITY_Community 1679|Community 1679]]
-- [[_COMMUNITY_Community 1680|Community 1680]]
-- [[_COMMUNITY_Community 1681|Community 1681]]
 - [[_COMMUNITY_Community 1682|Community 1682]]
-- [[_COMMUNITY_Community 1683|Community 1683]]
 - [[_COMMUNITY_Community 1684|Community 1684]]
 - [[_COMMUNITY_Community 1685|Community 1685]]
-- [[_COMMUNITY_Community 1686|Community 1686]]
 - [[_COMMUNITY_Community 1687|Community 1687]]
-- [[_COMMUNITY_Community 1688|Community 1688]]
-- [[_COMMUNITY_Community 1689|Community 1689]]
-- [[_COMMUNITY_Community 1690|Community 1690]]
 - [[_COMMUNITY_Community 1691|Community 1691]]
 - [[_COMMUNITY_Community 1692|Community 1692]]
-- [[_COMMUNITY_Community 1693|Community 1693]]
 - [[_COMMUNITY_Community 1694|Community 1694]]
 - [[_COMMUNITY_Community 1695|Community 1695]]
-- [[_COMMUNITY_Community 1696|Community 1696]]
-- [[_COMMUNITY_Community 1697|Community 1697]]
-- [[_COMMUNITY_Community 1698|Community 1698]]
 - [[_COMMUNITY_Community 1699|Community 1699]]
 - [[_COMMUNITY_Community 1700|Community 1700]]
 - [[_COMMUNITY_Community 1701|Community 1701]]
-- [[_COMMUNITY_Community 1702|Community 1702]]
 - [[_COMMUNITY_Community 1703|Community 1703]]
 - [[_COMMUNITY_Community 1704|Community 1704]]
 - [[_COMMUNITY_Community 1705|Community 1705]]
@@ -1633,13 +1682,8 @@
 - [[_COMMUNITY_Community 1707|Community 1707]]
 - [[_COMMUNITY_Community 1708|Community 1708]]
 - [[_COMMUNITY_Community 1709|Community 1709]]
-- [[_COMMUNITY_Community 1710|Community 1710]]
 - [[_COMMUNITY_Community 1711|Community 1711]]
-- [[_COMMUNITY_Community 1712|Community 1712]]
-- [[_COMMUNITY_Community 1713|Community 1713]]
 - [[_COMMUNITY_Community 1714|Community 1714]]
-- [[_COMMUNITY_Community 1715|Community 1715]]
-- [[_COMMUNITY_Community 1716|Community 1716]]
 - [[_COMMUNITY_Community 1717|Community 1717]]
 - [[_COMMUNITY_Community 1718|Community 1718]]
 - [[_COMMUNITY_Community 1719|Community 1719]]
@@ -1648,18 +1692,12 @@
 - [[_COMMUNITY_Community 1722|Community 1722]]
 - [[_COMMUNITY_Community 1723|Community 1723]]
 - [[_COMMUNITY_Community 1724|Community 1724]]
-- [[_COMMUNITY_Community 1725|Community 1725]]
-- [[_COMMUNITY_Community 1726|Community 1726]]
-- [[_COMMUNITY_Community 1727|Community 1727]]
 - [[_COMMUNITY_Community 1728|Community 1728]]
 - [[_COMMUNITY_Community 1729|Community 1729]]
 - [[_COMMUNITY_Community 1730|Community 1730]]
 - [[_COMMUNITY_Community 1731|Community 1731]]
-- [[_COMMUNITY_Community 1732|Community 1732]]
 - [[_COMMUNITY_Community 1733|Community 1733]]
 - [[_COMMUNITY_Community 1734|Community 1734]]
-- [[_COMMUNITY_Community 1735|Community 1735]]
-- [[_COMMUNITY_Community 1736|Community 1736]]
 - [[_COMMUNITY_Community 1737|Community 1737]]
 - [[_COMMUNITY_Community 1738|Community 1738]]
 
@@ -1688,8 +1726,8 @@
   gateway/security/soc_correlation.py → scripts/migrate-cve-registry-ghsa.py
 
 ## Import Cycles
-- 1-file cycle: `gateway/ingest_api/lifespan.py -> gateway/ingest_api/lifespan.py`
 - 1-file cycle: `voice_gateway/server.py -> voice_gateway/server.py`
+- 1-file cycle: `gateway/ingest_api/lifespan.py -> gateway/ingest_api/lifespan.py`
 - 1-file cycle: `chatbot/main.py -> chatbot/main.py`
 - 1-file cycle: `cli/src/main.rs -> cli/src/main.rs`
 - 1-file cycle: `docker/config/hermes/workspace/jira_weekly_review.py -> docker/config/hermes/workspace/jira_weekly_review.py`
@@ -1717,51 +1755,51 @@
 - **AgentShroud Brand Icon Set** —  [INFERRED]
 - **AgentShroud Complete Brand Identity Suite** —  [INFERRED]
 
-## Communities (1678 total, 385 thin omitted)
+## Communities (1716 total, 387 thin omitted)
 
 ### Community 0 - "PII Sanitization & Alerts"
 Cohesion: 0.02
-Nodes (181): TelegramAPIProxy, FakeRBAC, _make_update(), PassthroughPipeline, Owner /addcollab should add collaborator and clear revoked state., Owner /addcollab without target should return usage guidance., Owner /addcollab should accept known collaborator short-name aliases., Owner /deny should fail closed when target has no pending request. (+173 more)
+Nodes (179): TelegramAPIProxy, FakeRBAC, _make_update(), PassthroughPipeline, Owner /addcollab should add collaborator and clear revoked state., Owner /addcollab should accept known collaborator short-name aliases., Owner /restorecollabs should restore baseline collaborator IDs., Owner /deny should fail closed when target has no pending request. (+171 more)
 
 ### Community 1 - "Egress & RBAC Policy"
-Cohesion: 0.05
-Nodes (31): get_caller(), _get_config_token(), issue_session_token(), issue_ws_token(), Issue a short-lived, single-use WebSocket token for a user., Consume a WS token and return the user_id, or None if invalid/expired., FastAPI dependency: resolve Bearer/cookie token → user_id → role., Public FastAPI dependency injected by SCL route handlers. (+23 more)
+Cohesion: 0.13
+Nodes (10): issue_session_token(), FastAPI dependency: resolve Bearer/cookie token → user_id → role., Derive an HMAC session token and register it in the session store., Return user_id if token is a valid unexpired session token, else None., _resolve_caller(), _verify_session_token(), auth_login(), Exchange gateway token for a session cookie. (+2 more)
 
 ### Community 2 - "Approval Queue & Gateway Config"
-Cohesion: 0.05
-Nodes (33): SSHConfig, SSH command proxy with validation and audit support, Validate a command against allow/deny lists and injection patterns.          Ret, Check if a command is auto-approved (no human approval needed).          Auto-ap, Validate a remote working-directory path.  Must be absolute and shell-safe., Validate a structured /ssh/write_file request (host, path, content).          Re, Write file content to a remote host via structured (non-shell-string) transport., Result of a structured SSH file-write operation (SSHProxy.write_file()) (+25 more)
+Cohesion: 0.03
+Nodes (50): SSHConfig, SSH command proxy with validation and audit support, Validate a command against allow/deny lists and injection patterns.          Ret, Check if a command is auto-approved (no human approval needed).          Auto-ap, Validate a remote working-directory path.  Must be absolute and shell-safe., Validate a structured /ssh/write_file request (host, path, content).          Re, Write file content to a remote host via structured (non-shell-string) transport., Result of a structured SSH file-write operation (SSHProxy.write_file()) (+42 more)
 
 ### Community 3 - "Telegram Proxy & Owner Auth"
-Cohesion: 0.07
-Nodes (44): ProgressiveTrustConfig, ProgressiveTrustConfig, TrustManager, ProgressiveTrustConfig, PromotionThreshold, Check if a tool is allowed for the given trust level., Get trust levels in ascending order., Get the next trust level for promotion, or None if already at max. (+36 more)
+Cohesion: 0.03
+Nodes (86): ProgressiveTrustConfig, ProgressiveTrustConfig, TrustManager, ProgressiveTrustConfig, PromotionThreshold, Check if a tool is allowed for the given trust level., Get trust levels in ascending order., Get the next trust level for promotion, or None if already at max. (+78 more)
 
 ### Community 4 - "RBAC Roles & Tool Tiers"
-Cohesion: 0.04
-Nodes (24): Test detection of tool inventory queries., Test detection of credential-related queries., Test detection of system information queries., Test detection of file reference patterns., Test that scores accumulate across turns., Test threshold-based warning system., Test that sessions get blocked at high scores., Test detection of repeated queries with different phrasing. (+16 more)
+Cohesion: 0.02
+Nodes (57): Any, AlertLevel, ConsistencyScore, DisclosureCategory, DisclosureEvent, Compile regex patterns for detecting disclosure categories., Track a message and response pair for disclosure analysis.          Args:, Analyze user message for disclosure patterns. (+49 more)
 
 ### Community 5 - "PII Redaction & XML Filtering"
-Cohesion: 0.03
-Nodes (57): AuditEvent, AuditStore, Path, soc_export(), AuditExportConfig, AuditExporter, Export events in Common Event Format (CEF).          CEF Format: CEF:Version|Dev, Parse CEF lines and extract entryHash/previousHash for chain verification. (+49 more)
+Cohesion: 0.04
+Nodes (34): AuditEvent, AuditStore, Path, Export events in Common Event Format (CEF).          CEF Format: CEF:Version|Dev, Parse CEF lines and extract entryHash/previousHash for chain verification., Export events in JSON-LD format with security ontology., Export events in standard JSON format., Verify the integrity of an exported audit log.          Args:             export (+26 more)
 
 ### Community 6 - "Collaborator Message Sanitization"
 Cohesion: 0.05
-Nodes (30): Any, _OutboundScan, Concise collaborator-safe reason text without internal leakage., Detect patterns that must redact for ALL non-owner chats, including full_access., Detect leakage patterns blocked for local_only/project_scoped collaborators., Strip optional markdown json fences around model output., Parse leaked model tool-call JSON blobs (e.g. {'name': 'NO_REPLY', ...})., Find first embedded tool-call JSON object inside arbitrary text. (+22 more)
+Nodes (29): Any, Best-effort check to avoid treating local file names as egress domains., Concise collaborator-safe reason text without internal leakage., Detect patterns that must redact for ALL non-owner chats, including full_access., Detect leakage patterns blocked for local_only/project_scoped collaborators., Strip optional markdown json fences around model output., Parse leaked model tool-call JSON blobs (e.g. {'name': 'NO_REPLY', ...})., Find first embedded tool-call JSON object inside arbitrary text. (+21 more)
 
 ### Community 7 - "Agent Registry & Isolation"
-Cohesion: 0.02
-Nodes (108): EnhancedApprovalQueue, Close the store and cancel timeout tasks., Get the risk tier for a tool., Get the policy for a risk tier., Check if a tool requires approval based on risk tier and policy., Submit a tool call request for approval.          Args:             tool_name: T, Add an action to the approval queue with policy-based timeout., Schedule a timeout task for a request. (+100 more)
+Cohesion: 0.04
+Nodes (61): EnhancedApprovalQueue, Close the store and cancel timeout tasks., Get the risk tier for a tool., Get the policy for a risk tier., Check if a tool requires approval based on risk tier and policy., Submit a tool call request for approval.          Args:             tool_name: T, Add an action to the approval queue with policy-based timeout., Schedule a timeout task for a request. (+53 more)
 
 ### Community 8 - "PII Detection Config"
-Cohesion: 0.04
-Nodes (43): Check if a URL's domain is in the allowlist., Check if domain matches pattern (supports wildcards)., Check if URL contains any blocked patterns., Check if this is an internal link (relative, anchor, etc.)., Extract code blocks to preserve them during sanitization., Restore code blocks after sanitization., Remove or warn about markdown images pointing to non-allowlisted domains., Remove or warn about markdown links pointing to non-allowlisted domains. (+35 more)
+Cohesion: 0.03
+Nodes (63): RedactionResult, Any, PIIConfig, PIISanitizer, RedactionResult, Set configuration and initialize tool result sanitizer, Individual redaction record, Result of PII sanitization (+55 more)
 
 ### Community 9 - "Egress Filtering & Approval"
 Cohesion: 0.04
-Nodes (137): SCLCaller, JSONResponse, load_persisted_collaborators(), persist_approved_collaborator(), Read dynamically approved collaborator IDs from disk., Append a collaborator UID to the persistent store (idempotent, file-locked)., Remove a collaborator UID from the persistent store (file-locked).      Returns, revoke_approved_collaborator() (+129 more)
+Nodes (126): Any, SCLCaller, JSONResponse, load_persisted_collaborators(), persist_approved_collaborator(), Read dynamically approved collaborator IDs from disk., Append a collaborator UID to the persistent store (idempotent, file-locked)., Remove a collaborator UID from the persistent store (file-locked).      Returns (+118 more)
 
 ### Community 10 - "Teams & Group RBAC"
-Cohesion: 0.06
-Nodes (30): Strip potentially malicious markdown from tool results.      Removes:     - Mark, strip_markdown_exfil(), InjectionAction, InjectionResult, InjectionRule, InjectionSeverity, Scanner for detecting prompt injection in tool results., Initialize the scanner with optional custom rules.          Args:             cu (+22 more)
+Cohesion: 0.05
+Nodes (36): Strip potentially malicious markdown from tool results.      Removes:     - Mark, strip_markdown_exfil(), InjectionAction, InjectionResult, InjectionRule, InjectionSeverity, Scanner for detecting prompt injection in tool results., Initialize the scanner with optional custom rules.          Args:             cu (+28 more)
 
 ### Community 11 - "LLM Proxy & Resource Guard"
 Cohesion: 0.02
@@ -1769,23 +1807,23 @@ Nodes (34): _fake_contributor_manager(), FakeAuditStore, FakeCaller, FakeGroup, 
 
 ### Community 12 - "Enhanced Approval Queue (WS)"
 Cohesion: 0.02
-Nodes (77): Detect conceptual file-purpose questions without direct content requests., Detect plain-language model status questions for deterministic local reply., Detect plain NO_REPLY sentinel with light punctuation wrapping., Best-effort check to avoid treating local file names as egress domains., Detect collaborator prompts probing sensitive filesystem paths/secrets., Detect collaborator prompts attempting path traversal style file access., Detect collaborator prompts targeting cloud metadata endpoints., Detect collaborator prompts targeting local/internal network hosts. (+69 more)
+Nodes (71): Detect conceptual file-purpose questions without direct content requests., Detect plain-language model status questions for deterministic local reply., Detect collaborator prompts probing sensitive filesystem paths/secrets., Detect collaborator prompts attempting path traversal style file access., Detect collaborator prompts targeting cloud metadata endpoints., Detect collaborator prompts targeting local/internal network hosts., Detect collaborator prompts asking to decode/deobfuscate and execute commands., Detect collaborator probes asking for direct command/tool inventories. (+63 more)
 
 ### Community 13 - "Slack Proxy Integration"
-Cohesion: 0.03
-Nodes (111): Any, MCPServerConfig, Any, EnhancedApprovalQueue, MCPProxyConfig, MCPServerConfig, Exception, MCPProxyConfig (+103 more)
+Cohesion: 0.06
+Nodes (30): MCPProxy, MCPToolCall, Send an HTTP request to the MCP server., Main MCP proxy that intercepts tool calls and routes through security.      Tran, Extract outbound URL-like targets from nested MCP tool parameters., Wire optional event bus for privacy/security telemetry., Best-effort privacy event emission., Redact admin-private data from tool results for non-owner agents. (+22 more)
 
 ### Community 14 - "Webhook Receiver & User Access"
-Cohesion: 0.07
-Nodes (46): Path, GatewayConfig, Path, apply_reloadable_config(), AuditExportConfig, ChannelsConfig, config_watcher(), _default_mtime() (+38 more)
+Cohesion: 0.13
+Nodes (30): GatewayConfig, Path, apply_reloadable_config(), config_watcher(), _default_mtime(), Copy only the reloadable-field subset from ``new`` onto ``current`` in place., Re-parse and validate ``config_path``; atomically swap in reloadable fields., Return the file mtime, or -1.0 if the file is missing (treated as no-op). (+22 more)
 
 ### Community 15 - "Community 15"
 Cohesion: 0.03
-Nodes (41): EgressFilter, DomainSettings, Check if a domain is on the allowlist (used when mode == 'allowlist')., Get settings for a specific domain, falling back to defaults., Check if a domain is on the denylist., Per-domain configuration overrides., Configuration for the web traffic proxy.      Default-allow: all URLs pass unles, WebProxyConfig (+33 more)
+Nodes (42): EgressFilter, DomainSettings, Check if a domain is on the allowlist (used when mode == 'allowlist')., Get settings for a specific domain, falling back to defaults., Check if a domain is on the denylist., Per-domain configuration overrides., Configuration for the web traffic proxy.      Default-allow: all URLs pass unles, WebProxyConfig (+34 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.06
-Nodes (32): approvals(), audit(), collaborators(), credentials_health(), credentials_status(), EgressAllowlistResponse, EgressAllowlistUpdate, falco_dashboard() (+24 more)
+Nodes (37): get_egress_config(), Get the global egress filter configuration., Set the global egress filter configuration., set_egress_config(), Test that config can be saved and retrieved., approvals(), audit(), collaborators() (+29 more)
 
 ### Community 17 - "Community 17"
 Cohesion: 0.09
@@ -1793,23 +1831,23 @@ Nodes (35): ArgumentParser, add_comment(), _adf_doc(), _auth_headers(), _base_ur
 
 ### Community 18 - "Community 18"
 Cohesion: 0.05
-Nodes (20): SubagentEvent, SubagentInfo, SubagentMonitor, ToolCheckResult, default_config(), monitor(), monitor_config(), If sub-agent tries tool above its trust, flag it. (+12 more)
+Nodes (16): default_config(), monitor(), monitor_config(), If sub-agent tries tool above its trust, flag it., Monitor mode flags but allows., In monitor mode, even trust violations are allowed (just flagged)., Default mode is enforce after v0.8.0 enforcement hardening., strict_config() (+8 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.01
-Nodes (250): PIIConfig, Any, Path, AlertDispatcher, Remove expired entries from seen IDs cache.          Returns:             Number, Dispatches security alerts with dedup and rate limiting., CanaryResult, Result of running the canary system. (+242 more)
+Nodes (225): PIIConfig, Any, Any, Any, LogRecord, Path, AlertDispatcher, Check if alert was already seen within dedup window. (+217 more)
 
 ### Community 20 - "Community 20"
 Cohesion: 0.03
 Nodes (38): PermissionError, Thin wrapper around the container engine that produces ServiceDescriptors., Return the container engine from app_state if not injected., Pull the latest image then restart the container., Read container logs via Docker Unix socket — fallback when engine unavailable., ServiceManager, _FakeResponse, _FakeUnixSocket (+30 more)
 
 ### Community 21 - "Community 21"
-Cohesion: 0.03
-Nodes (34): EgressFilter, Filter outbound connections based on allowlists with enforce/monitor modes., Set the Telegram notifier for egress approval requests., Set interactive egress approval queue., Set optional event bus for real-time egress telemetry., Record a time-limited interactive approval for a domain.          Called by the, Set a per-agent egress policy., Get effective policy for an agent. (+26 more)
+Cohesion: 0.10
+Nodes (11): Test EgressFilter with enforce/monitor modes., Test that enforce mode blocks domains not in allowlist., Test that monitor mode allows unknown domains but logs them., Test wildcard matching in allowlist., Test that denylist overrides allowlist in strict mode., Test denylist behavior in monitor mode., Test that private IPs are blocked regardless of mode., Test port-based filtering. (+3 more)
 
 ### Community 22 - "Community 22"
-Cohesion: 0.03
-Nodes (69): AuditChain, SHA-256 hash chain for tamper-evident audit logging., CrossBotTrustLedger, Shared trust decay channel for multi-bot deployments.      Usage::          ledg, Return the number of incidents currently in the ledger., EnvelopeSigner, InstructionEnvelope, A signed instruction or tool result. (+61 more)
+Cohesion: 0.06
+Nodes (36): EnvelopeSigner, InstructionEnvelope, A signed instruction or tool result., Signs and verifies InstructionEnvelopes.      Usage::          signer = Envelope, Return a signed envelope for content., Return True if the envelope's signature is valid., Convenience: sign a system prompt as issuer='system'., Convenience: sign a tool result as issuer='tool:<tool_name>'. (+28 more)
 
 ### Community 23 - "Community 23"
 Cohesion: 0.02
@@ -1817,59 +1855,59 @@ Nodes (10): Unit tests for collaborator-facing prompt classification helpers., B
 
 ### Community 24 - "Community 24"
 Cohesion: 0.04
-Nodes (65): _FakeSanitizer, _make_proxy(), _openai_ok(), ollama/qwen3:14b → qwen3-14b for LM Studio backend., For Ollama backend the colon is kept (Ollama expects it)., mlx_lm backend: colon is kept (no LM Studio dash convention)., If the model already uses dashes (LM Studio native ID), normalizing again is a n, ollama/ prefix is stripped during proxy_messages dispatch and normalization foll (+57 more)
+Nodes (67): _FakeSanitizer, _make_proxy(), _openai_ok(), ollama/qwen3:14b → qwen3-14b for LM Studio backend., For Ollama backend the colon is kept (Ollama expects it)., mlx_lm backend: colon is kept (no LM Studio dash convention)., If the model already uses dashes (LM Studio native ID), normalizing again is a n, ollama/ prefix is stripped during proxy_messages dispatch and normalization foll (+59 more)
 
 ### Community 25 - "Community 25"
-Cohesion: 0.13
-Nodes (12): Process an approval decision          Args:             request_id: Request UUID, Get all pending (not expired, not decided) items          First expires any stal, Fetch a single queue item by ID          Args:             request_id: Request U, Remove decided (approved/rejected/expired) items older than max_age_seconds., Check all pending items and expire those past timeout          Returns:, Send a JSON message to all connected WebSocket clients          Silently removes, Best-effort JSONL persistence for queue lifecycle events., Persist queue items to disk for restart durability (best effort).          Uses (+4 more)
+Cohesion: 0.04
+Nodes (64): ApprovalQueue, Process an approval decision          Args:             request_id: Request UUID, Get all pending (not expired, not decided) items          First expires any stal, Fetch a single queue item by ID          Args:             request_id: Request U, Remove decided (approved/rejected/expired) items older than max_age_seconds., Check all pending items and expire those past timeout          Returns:, # NOTE: Called within _lock context, In-memory approval queue with WebSocket notifications      Actions requiring app (+56 more)
 
 ### Community 26 - "Community 26"
 Cohesion: 0.05
-Nodes (17): RateLimiter, Simple token-bucket rate limiter      Limits requests per client IP to prevent r, Args:             max_requests: Maximum requests allowed in the time window, Check if client is within rate limit          Args:             client_id: Usual, Rate-limited collaborators should receive a deterministic retry-window notice., Rate-limit notice path should key retry window by user_id, not chat_id., Repeated rate-limited messages should each receive a deterministic notice., If notice send fails, cooldown should not suppress the next retry attempt. (+9 more)
+Nodes (19): RateLimiter, Simple token-bucket rate limiter      Limits requests per client IP to prevent r, Args:             max_requests: Maximum requests allowed in the time window, Check if client is within rate limit          Args:             client_id: Usual, Test rate limiting behavior, test_rate_limiter(), Rate-limited collaborators should receive a deterministic retry-window notice., Rate-limit notice path should key retry window by user_id, not chat_id. (+11 more)
 
 ### Community 27 - "Community 27"
 Cohesion: 0.08
 Nodes (26): main(), Validate URL against allowlist/blocklist          Security: This is the primary, Check if domain matches pattern (supports wildcards), Classify action risk level          Security: Determines if approval is needed, Check if action requires approval          Security: Approval queue integration, Log security-related events, Log browser action to audit trail, Initialize browser with security settings (+18 more)
 
 ### Community 28 - "Community 28"
-Cohesion: 0.04
-Nodes (39): SlackAPIProxy, Return True if channel is a DM with the configured owner.          In Slack, DM, Proxy a bot Slack Web API call through the security pipeline.          For messa, POST to https://slack.com/api/<method> with the bot token., Intercept apps.connections.open: rewrite the returned WSS URL to route         t, Pop and return the real WSS URL for a relay token (one-time use).          Retur, Handle an inbound Slack event payload received via Socket Mode.          Called, Create a Slack channel for a group. Returns channel_id or None on failure. (+31 more)
+Cohesion: 0.03
+Nodes (63): SlackAPIProxy, Test WebSocket client connection, Test broadcast handles failed client sends, test_broadcast_with_failed_client(), test_websocket_connect(), TestClose, TestProcessToolResult, When body() raises ClientDisconnect the handler returns 499 without crashing. (+55 more)
 
 ### Community 29 - "Community 29"
 Cohesion: 0.08
 Nodes (26): main(), Validate URL against allowlist/blocklist          Security: This is the primary, Check if domain matches pattern (supports wildcards), Classify action risk level          Security: Determines if approval is needed, Check if action requires approval          Security: Approval queue integration, Log security-related events, Log browser action to audit trail, Initialize browser with security settings (+18 more)
 
 ### Community 30 - "Community 30"
-Cohesion: 0.02
-Nodes (89): Path, ForwardRequest, Request to forward content through the gateway      Received from iOS Shortcuts,, _parse_env_file(), minimal.env should have reasonable defaults., recommended.env should balance security and usability., GatewayConfig validation behavior., Parse a .env file into a dict (ignoring comments and blanks). (+81 more)
+Cohesion: 0.01
+Nodes (91): Path, ForwardRequest, Request to forward content through the gateway      Received from iOS Shortcuts,, _parse_env_file(), minimal.env should have reasonable defaults., recommended.env should balance security and usability., GatewayConfig validation behavior., Parse a .env file into a dict (ignoring comments and blanks). (+83 more)
 
 ### Community 31 - "Community 31"
 Cohesion: 0.02
-Nodes (75): Any, LLMProxy, Any, get_resource_guard(), Add a callback function to be called when resource alerts are triggered., Start background monitoring task., Stop background monitoring task cleanly., Best-effort cleanup for test contexts that don't call stop(). (+67 more)
+Nodes (98): Any, Any, LLMProxy, Any, GitGuard, Threat levels for detected issues., Monitor for git clone and npm install operations., Get a summary of all findings. (+90 more)
 
 ### Community 32 - "Community 32"
 Cohesion: 0.05
 Nodes (49): Any, Any, Connection, downgrade_version(), get_available_versions(), get_current_version(), get_version_history(), Downgrade to a previous version. Requires approval_id unless dry_run. (+41 more)
 
 ### Community 33 - "Community 33"
-Cohesion: 0.03
-Nodes (82): EgressFilter, ApprovalResult, Result of an approval request., EgressFilterConfig, get_egress_config(), Configuration for egress filtering enforcement., Get the global egress filter configuration., Set the global egress filter configuration. (+74 more)
+Cohesion: 0.04
+Nodes (61): EgressFilter, ApprovalResult, Result of an approval request., EgressFilterConfig, Configuration for egress filtering enforcement., EgressAction, EgressAttempt, Test the management API endpoints (would need FastAPI test client). (+53 more)
 
 ### Community 34 - "Community 34"
-Cohesion: 0.11
-Nodes (9): Stop the MCP server process., FakeApprovalQueue, FakeConn, make_call(), make_proxy(), Stand-in connection injected into the proxy's pool., TestApprovalQueue, TestExecuteToolCall (+1 more)
+Cohesion: 0.10
+Nodes (14): ConnectionPool, Pool of connections to MCP servers., FakeApprovalQueue, FakeConn, make_call(), make_proxy(), Stand-in connection injected into the proxy's pool., TestApprovalQueue (+6 more)
 
 ### Community 35 - "Community 35"
-Cohesion: 0.03
-Nodes (61): ApprovalDecision, Any, ApprovalRequest, AuthRequired, Request, WebSocket, GatewayEvent, make_event() (+53 more)
+Cohesion: 0.07
+Nodes (10): Returns empty result when scanner_result_history is empty., Returns scanner events from app_state.scanner_result_history., Status query param filters by summary.status., Limit param caps the number of returned items., test_manage_soc_events_endpoint(), test_manage_soc_report_endpoint(), test_soc_scanners_recent_empty(), test_soc_scanners_recent_limit() (+2 more)
 
 ### Community 36 - "Community 36"
-Cohesion: 0.06
-Nodes (30): _BlockedOutboundPipeline, _make_mock_app_state(), _make_trust_app_state(), _PipelineCaptor, Pipeline receives 'openclaw' as agent_id when routed to openclaw., Pipeline receives 'hermes' as agent_id when routed to hermes., Regression: 'default' must never appear in agent_id when a named target is resol, process_inbound must receive metadata={'user_id': ...} from /forward so that (+22 more)
+Cohesion: 0.03
+Nodes (55): Any, DeceptionDetection, DeniedRequest, Record of a denied approval request., Analyze an approval request for potential deception or social engineering., Normalize description by removing misleading language., Check for mismatch between description and actual parameters., Check for misleading language patterns in description. (+47 more)
 
 ### Community 37 - "Community 37"
-Cohesion: 0.04
-Nodes (30): TrustConfig, trust_manager(), trust_manager(), Verify you can't jump from UNTRUSTED to FULL in one step., Rapid successes should be capped by rate limiting., manager(), Test earning and losing trust., Agent should be promoted when score crosses threshold. (+22 more)
+Cohesion: 0.18
+Nodes (5): Test earning and losing trust., Agent should be promoted when score crosses threshold., Agent should be demoted on violations., Score should not go below 0., TestTrustProgression
 
 ### Community 38 - "Community 38"
 Cohesion: 0.04
@@ -1881,11 +1919,11 @@ Nodes (25): Any, AlertTelegramRelay, Await in-flight sends (test/shutdown helper
 
 ### Community 40 - "Community 40"
 Cohesion: 0.04
-Nodes (18): FileOperation, FileVerdict, PIIFinding, PIIScanner, PIIScanResult, Detect path traversal attempts in raw input before normalization., Check if path matches any blocked pattern., Check if this is an immutable security file by name. (+10 more)
+Nodes (22): FileOperation, FileVerdict, PIIFinding, PIIScanner, PIIScanResult, Detect path traversal attempts in raw input before normalization., Check if path matches any blocked pattern., Check if this is an immutable security file by name. (+14 more)
 
 ### Community 41 - "Community 41"
-Cohesion: 0.07
-Nodes (16): KeyAuditEvent, KeyEntry, KeyInjector, KeyScope, KeyVault, KeyVaultConfig, LeakScanResult, Check if any stored key values appear in text. Returns matching key names. (+8 more)
+Cohesion: 0.08
+Nodes (11): KeyInjector, KeyLeakDetector, config(), TestKeyInjection, TestKeyLeakDetection, TestKeyRedaction, TestKeyRotation, TestKeyScoping (+3 more)
 
 ### Community 42 - "Community 42"
 Cohesion: 0.04
@@ -1896,40 +1934,40 @@ Cohesion: 0.04
 Nodes (45): 1. Docker Desktop, 1. Phone Number (Separate from Main), 1Password (Optional — Teams / Shared Credentials), 2. Gmail Account (Dedicated for Bot), 2. Python 3.11+, 3. Python Packages, 3. Telegram Account (Bot Communication), 4. Node.js 22+ (for OpenClaw) (+37 more)
 
 ### Community 44 - "Community 44"
-Cohesion: 0.05
-Nodes (43): ContainerConfig, AgentRegistry, ContainerConfig, IsolationCheck, IsolationStatus, IsolationVerifier, Verify that each agent has its own volume (no shared filesystems)., Full shared-nothing verification: network + volume + security settings. (+35 more)
+Cohesion: 0.07
+Nodes (27): ContainerConfig, AgentRegistry, ContainerConfig, IsolationCheck, IsolationStatus, IsolationVerifier, Registry mapping agent IDs to container configurations., Register an agent with its container configuration. (+19 more)
 
 ### Community 45 - "Community 45"
-Cohesion: 0.04
-Nodes (79): Path, _app_state_has(), compute_scorecard(), _determine_compliance_level(), _determine_iec_sl(), _evaluate_mandatory_gates(), _is_container_running(), _is_containerized() (+71 more)
+Cohesion: 0.06
+Nodes (65): Path, _app_state_has(), _evaluate_mandatory_gates(), _is_container_running(), _is_containerized(), _is_falco_running(), _is_fluent_bit_running(), _is_wazuh_agent_running() (+57 more)
 
 ### Community 46 - "Community 46"
 Cohesion: 0.07
-Nodes (64): StreamReader, HTTPConnectProxy, _allowlist_proxy(), _capture_scans(), _CloseRaisesWriter, _eof_target_connection(), _make_stream(), _MockWriter (+56 more)
+Nodes (69): StreamReader, HTTPConnectProxy, HTTPConnectProxy, Start the CONNECT proxy server., Stop the CONNECT proxy server., Return proxy traffic statistics., Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali, _allowlist_proxy() (+61 more)
 
 ### Community 47 - "Community 47"
-Cohesion: 0.04
-Nodes (69): FetchOutcome, Path, HTTPAuthorizationCredentials, Path, WebSocket, Verify token using constant-time comparison      Uses hmac.compare_digest to pre, verify_token(), CitationVerifier (+61 more)
+Cohesion: 0.13
+Nodes (17): CitationVerifier, DraftEntry, An unverified competitor claim submitted for citation checking., Verifies competitor claims against re-fetched, allowlisted sources., _FakeFetcher, Deterministic fetcher: maps url -> (status, sha_or_None). Records calls., test_default_allowlist_uses_permanent_egress_domains(), TestVerifyEntry (+9 more)
 
 ### Community 48 - "Community 48"
 Cohesion: 0.03
-Nodes (74): GroupApprovalRouter, Return True if agent_id represents a Telegram group workspace., Extract the raw chat_id from a group-{chat_id} agent_id.          Returns None i, Build the owner DM notification text., Build the group thread reply notification text., No-op send stub — used when no transport is injected., Routes approval notifications to owner DM and (optionally) group thread.      Ar, Route an approval notification to the appropriate recipients.          Routing l (+66 more)
+Nodes (66): Initialize enhanced approval queue.          Args:             config: Basic app, ApprovalStore, ApprovalQueueConfig, MFAGuard, ApprovalRequest, Request for human approval of a sensitive action      Submitted by an agent when, approval_queue(), queue_config() (+58 more)
 
 ### Community 49 - "Community 49"
 Cohesion: 0.02
-Nodes (84): _fake_kokoro_pipeline(), _mock_stream_resp(), _call_agent_stream must POST to /forward/stream with stream:true, not     the ol, synthesize() runs the Kokoro pipeline; when rates match no resampling occurs., _call_agent_stream must pass a structured httpx.Timeout to AsyncClient.      The, When OUTPUT_SAMPLE_RATE (24000, Kokoro native) != TARGET_SAMPLE_RATE     (16000), When ?agent= is absent the default agent must be 'direct' (fast local     model), No ?agent= param → _DEFAULT_AGENT is used for routing. (+76 more)
+Nodes (82): _mock_stream_resp(), _call_agent_stream must POST to /forward/stream with stream:true, not     the ol, A connection-level error (not a status/timeout) also falls back to the     troub, _call_agent_stream must pass a structured httpx.Timeout to AsyncClient.      The, When ?agent= is absent the default agent must be 'direct' (fast local     model), No ?agent= param → _DEFAULT_AGENT is used for routing., Directly invoke ``voice_endpoint`` with a mocked WebSocket whose second     ``re, ConnectionClosedError (WS code 1006 — ungraceful ESP disconnect, e.g. device (+74 more)
 
 ### Community 50 - "Community 50"
 Cohesion: 0.05
 Nodes (30): TelegramAPIProxy, LockdownAction, LockdownLevel, ProgressiveLockdown, Return True if the user's session is currently suspended., Return current lockdown state for a user (for /collabs or owner inspection)., Owner command: reset lockdown state for a user. Returns True if existed., Return lockdown status for all tracked users. (+22 more)
 
 ### Community 51 - "Community 51"
-Cohesion: 0.07
-Nodes (30): SCLCaller, get_agent_cves(), get_config(), list_bots(), Return the list of registered bots. Falls back to backward-compat OpenClaw defau, Return the tracked advisory registry for the wrapped AI agent.      When bot_id, _make_app_state(), _make_bot_config() (+22 more)
+Cohesion: 0.05
+Nodes (42): compute_bot_scorecard(), Per-bot scorecard scoped to a single bot's image scan and egress stats.      Sco, get_agent_cves(), get_collaborator_activity(), get_config(), get_egress_history(), get_egress_pending(), get_scanner_results() (+34 more)
 
 ### Community 52 - "Community 52"
-Cohesion: 0.04
-Nodes (68): Any, Request to scan a message., Response from sidecar scan., Sidecar security scanner — reduced security, traffic can bypass.      This is fo, Scan a message through the security pipeline., ScanRequest, ScanResponse, SidecarScanner (+60 more)
+Cohesion: 0.07
+Nodes (16): AuditChain, SHA-256 hash chain for tamper-evident audit logging., Verify the integrity of the retained hash-chain window.          When the bounde, Verify empty audit chain is valid., Verify single-entry chain is valid., test_audit_chain_empty_valid(), test_audit_chain_single_entry(), Audit chain is a hash chain: each entry references the previous hash. (+8 more)
 
 ### Community 53 - "Community 53"
 Cohesion: 0.09
@@ -1940,28 +1978,28 @@ Cohesion: 0.08
 Nodes (26): main(), Validate URL against allowlist/blocklist          Security: This is the primary, Check if domain matches pattern (supports wildcards), Classify action risk level          Security: Determines if approval is needed, Check if action requires approval          Security: Approval queue integration, Log security-related events, Log browser action to audit trail, Initialize browser with security settings (+18 more)
 
 ### Community 55 - "Community 55"
-Cohesion: 0.11
-Nodes (19): get_features_for_runtime(), get_missing_features(), get_security_comparison(), get_security_options(), Validate runtime name to prevent attribute access injection., Return features available for a given runtime., Return features NOT available for a given runtime., Return a comparison dict: {feature_name: {runtime: supported}}. (+11 more)
+Cohesion: 0.03
+Nodes (93): WebSocket, get_features_for_runtime(), get_missing_features(), get_security_comparison(), get_security_options(), Validate runtime name to prevent attribute access injection., Return features available for a given runtime., Return features NOT available for a given runtime. (+85 more)
 
 ### Community 56 - "Community 56"
-Cohesion: 0.04
-Nodes (30): _make_proxy(), _pass_result(), Create a SlackAPIProxy with test credentials and no real I/O., P0 security: Slack outbound must differentiate owner vs collaborator channels., Owner channel: pipeline called with user_trust_level=FULL, message forwarded., Non-owner channel: high-risk leakage detected before pipeline → blocked., Non-owner channel: Tailscale hostname triggers leakage pre-check → blocked., Non-owner channel: pipeline exception → blocked (fail-closed). (+22 more)
+Cohesion: 0.05
+Nodes (29): _make_proxy(), _pass_result(), Create a SlackAPIProxy with test credentials and no real I/O., P0 security: Slack outbound must differentiate owner vs collaborator channels., Owner channel: pipeline called with user_trust_level=FULL, message forwarded., Non-owner channel: high-risk leakage detected before pipeline → blocked., Non-owner channel: Tailscale hostname triggers leakage pre-check → blocked., Non-owner channel: pipeline exception → blocked (fail-closed). (+21 more)
 
 ### Community 57 - "Community 57"
 Cohesion: 0.05
-Nodes (48): add_collaborator(), add_group_member(), approve(), cli(), deny(), freeze(), get(), get_correlation() (+40 more)
+Nodes (53): add(), add_collaborator(), add_group_member(), approve(), cli(), _default_format(), deny(), freeze() (+45 more)
 
 ### Community 58 - "Community 58"
-Cohesion: 0.07
-Nodes (34): Any, Score domain 4: Container Hardening (0-5).      Baseline of 3 because docker-com, Score domain 5: Runtime Protection (0-5).      1=module exists, 2=running with c, Score domain 9: Logging & Monitoring (0-5).      1=SOC exists, 2=Wazuh running,, Score domain 10: Compliance Auditing (0-5).      0=not run, 2=has failures, 3=ze, Score domain 12: Incident Response (0-5).      1=SOC exists, 2=Falco running, 3=, Score domain 1: Image Integrity (0-5).      1=SBOM exists, 2=Trivy ran, 3=zero c, _score_compliance_auditing() (+26 more)
+Cohesion: 0.06
+Nodes (37): Any, Score domain 4: Container Hardening (0-5).      Baseline of 3 because docker-com, Score domain 5: Runtime Protection (0-5).      1=module exists, 2=running with c, Score domain 9: Logging & Monitoring (0-5).      1=SOC exists, 2=Wazuh running,, Score domain 10: Compliance Auditing (0-5).      0=not run, 2=has failures, 3=ze, Score domain 11: Secure Development (0-5).      1=Trivy in build, 2=semgrep conf, Score domain 12: Incident Response (0-5).      1=SOC exists, 2=Falco running, 3=, Score domain 1: Image Integrity (0-5).      1=SBOM exists, 2=Trivy ran, 3=zero c (+29 more)
 
 ### Community 59 - "Community 59"
 Cohesion: 0.03
-Nodes (39): Underscore-delimited embedding_provider wording should still trigger rewrite., Collaborator outbound text with raw file/trace leakage markers should be blocked, Collaborators should not receive internal egress approval banners., Collaborators should not receive telegram user-id enrollment leakage text., If pipeline crashes, owner messages should still go through., Healthcheck SKILL.md sandbox errors should rewrite when payload uses message fie, JSON content field should keep healthcheck SKILL.md text unchanged when sandbox, Embedding/provider memory errors should also be rewritten for urlencoded payload (+31 more)
+Nodes (38): Collaborator outbound text with raw file/trace leakage markers should be blocked, If pipeline crashes, non-owner messages must be blocked., Form payload approval banners must be redacted for collaborators., JSON caption field should keep healthcheck SKILL.md text unchanged when sandbox, Healthcheck sandbox SKILL.md errors should rewrite when payload uses content fie, Slash-separated embedding/provider wording should rewrite for form payloads., Hyphen-separated embedding-provider wording should rewrite for form payloads., Healthcheck SKILL messages without sandbox context should not trigger sandbox re (+30 more)
 
 ### Community 60 - "Community 60"
 Cohesion: 0.03
-Nodes (76): TeamsConfig, build_project_context_injection(), format_addtogroup_success(), format_already_member(), format_group_info(), format_groups_list(), format_no_permission(), format_not_member() (+68 more)
+Nodes (49): TeamsConfig, build_project_context_injection(), format_addtogroup_success(), format_already_member(), format_group_info(), format_groups_list(), format_no_permission(), format_not_member() (+41 more)
 
 ### Community 61 - "Community 61"
 Cohesion: 0.04
@@ -1969,23 +2007,23 @@ Nodes (28): GroupAccessDenied, GroupWorkspaceManager, Canonical workspace id for
 
 ### Community 62 - "Community 62"
 Cohesion: 0.05
-Nodes (50): Path, ScanResult, CompletedProcess, Path, ScanResult, TestClient, IntEnum, Finding (+42 more)
+Nodes (49): Path, ScanResult, CompletedProcess, Path, ScanResult, TestClient, Finding, Aggregated result of scanning a skill file or an entire skill tree. (+41 more)
 
 ### Community 63 - "Community 63"
-Cohesion: 0.04
-Nodes (34): Dashboard should set httpOnly cookie and redirect to clean URL, GET /dashboard?token=valid sets cookie and redirects to /dashboard, GET /dashboard with valid cookie serves HTML, GET /dashboard with invalid cookie returns 403, GET /dashboard with no auth returns 403, GET /dashboard?token=wrong returns 403, Dashboard ws-token endpoint returns token only for cookie-authed sessions, GET /dashboard/ws-token with valid cookie returns token (+26 more)
+Cohesion: 0.17
+Nodes (7): Dashboard should set httpOnly cookie and redirect to clean URL, GET /dashboard?token=valid sets cookie and redirects to /dashboard, GET /dashboard with valid cookie serves HTML, GET /dashboard with invalid cookie returns 403, GET /dashboard with no auth returns 403, GET /dashboard?token=wrong returns 403, TestDashboardCookieAuth
 
 ### Community 64 - "Community 64"
-Cohesion: 0.06
-Nodes (23): RBACConfig, PrivacyPolicy, PrivacyPolicyEnforcer, Privacy policy configuration.      Loaded from agentshroud.yaml `privacy:` secti, Parse from a YAML/dict representation.          Example YAML:             privac, Return a default policy with all known private services locked down., Evaluates access control and filters responses per privacy policy., Return True if user_id may access the named service. (+15 more)
+Cohesion: 0.05
+Nodes (20): PrivacyPolicy, PrivacyPolicyEnforcer, Privacy policy configuration.      Loaded from agentshroud.yaml `privacy:` secti, Parse from a YAML/dict representation.          Example YAML:             privac, Return a default policy with all known private services locked down., Evaluates access control and filters responses per privacy policy., Return True if user_id may access the named service., Return True if an access attempt to this service should be logged. (+12 more)
 
 ### Community 65 - "Community 65"
 Cohesion: 0.05
-Nodes (52): HTTPConnectProxy, Start the CONNECT proxy server., Stop the CONNECT proxy server., Return proxy traffic statistics., Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali, _DummyTargetWriter, _make_stream(), _MockWriter (+44 more)
+Nodes (46): _DummyTargetWriter, _make_stream(), _MockWriter, CONNECT to a private IP is blocked by SSRF protection., HTTPConnectProxy ships with a populated default allowlist., api.telegram.org must NOT be a system bypass domain.      Direct CONNECT tunnels, System bypass domains should be logged to the SOC decision history., System bypass domains should not error when egress_filter is None. (+38 more)
 
 ### Community 66 - "Community 66"
 Cohesion: 0.01
-Nodes (157): EgressFilterConfig, RedactionResult, Any, PIIConfig, PIISanitizer, RedactionResult, PIISanitizer, SecurityPipeline (+149 more)
+Nodes (198): Any, PIISanitizer, SecurityPipeline, SecurityPipeline, PIISanitizer, Initialize Microsoft Presidio engines          Falls back to regex if Presidio/s, PII detection and redaction engine      Attempts to use Microsoft Presidio with, Initialize sanitizer          Args:             config: PII configuration from a (+190 more)
 
 ### Community 67 - "Community 67"
 Cohesion: 0.08
@@ -2000,16 +2038,16 @@ Cohesion: 0.04
 Nodes (54): _make_group_update(), _no_owner_mirror(), Stub the fire-and-forget owner activity mirror.      The mirror runs via asyncio, Tests for lockdown UX: /unlock fix, collaborator notifications, /locked, immunit, /unlock <uid> must call reset() on the lockdown module and confirm to owner., /unlock must clear the suspended-drop notice cooldown so user gets fresh notice, /unlock for a user with no lockdown state must say so., Collaborator must receive warning text when they reach 3 security blocks. (+46 more)
 
 ### Community 70 - "Community 70"
-Cohesion: 0.04
-Nodes (30): SimpleNamespace, TestModeRequestModel, _container(), _engine(), _fake_ws(), _gitless_run(), _module_state_guard(), Restore AGENTSHROUD_MODE, revert task, and WS token registry per test. (+22 more)
+Cohesion: 0.13
+Nodes (5): _engine(), TestBotUpdates, TestLogs, TestSecurityReport, TestServiceControl
 
 ### Community 71 - "Community 71"
-Cohesion: 0.04
-Nodes (51): _make_approval_queue(), _make_full_pipeline(), _make_pii_sanitizer(), pipeline(), Probe 1.1c: admin_action must require approval or be trust-blocked., Probe 1.6: EgressFilter must block non-allowlisted domains., Probe 1.6b: EgressFilter must block direct IP exfiltration., Probe 1.6c: EgressFilter must block internal/private IP ranges. (+43 more)
+Cohesion: 0.02
+Nodes (79): EgressFilter, EgressPolicy, Filter outbound connections based on allowlists with enforce/monitor modes., Set the Telegram notifier for egress approval requests., Set interactive egress approval queue., Set optional event bus for real-time egress telemetry., Record a time-limited interactive approval for a domain.          Called by the, Set a per-agent egress policy. (+71 more)
 
 ### Community 72 - "Community 72"
 Cohesion: 0.03
-Nodes (62): Any, callable, ChainMatch, ChainPattern, ParamScanResult, Result of scanning tool parameters for injection patterns., How reversible an action is (1.0 = fully reversible, 0.0 = irreversible)., Represents a single tool call. (+54 more)
+Nodes (62): Any, ChainAction, ChainMatch, ChainPattern, ParamScanResult, Result of scanning tool parameters for injection patterns., How reversible an action is (1.0 = fully reversible, 0.0 = irreversible)., Represents a single tool call. (+54 more)
 
 ### Community 73 - "Community 73"
 Cohesion: 0.05
@@ -2017,47 +2055,47 @@ Nodes (59): LLMProxy, Scan request data for PII and injection across different p
 
 ### Community 74 - "Community 74"
 Cohesion: 0.01
-Nodes (176): Action, Any, Exception, RBACManager, Resource, ToolTier, Any, Any (+168 more)
+Nodes (245): EgressFilterConfig, Action, Any, Exception, RBACManager, Resource, ToolTier, Any (+237 more)
 
 ### Community 75 - "Community 75"
 Cohesion: 0.06
-Nodes (15): GroupRoleResolver, Return True if user_id is the owner in group_chat_id., Return True if user_id is at least a member (member or owner)., Return True if the tool is classified as high-risk.          High-risk tools req, Set or update the role for a user in a specific group., Remove a user's role entry from a group (falls back to READ_ONLY)., Return all user→role mappings for a group., Resolve per-group roles for Telegram group workspace members.      Args: (+7 more)
+Nodes (20): GroupRole, GroupRoleResolver, Return True if user_id is the owner in group_chat_id., Return True if user_id is at least a member (member or owner)., Return True if the tool is classified as high-risk.          High-risk tools req, Set or update the role for a user in a specific group., Remove a user's role entry from a group (falls back to READ_ONLY)., Return all user→role mappings for a group. (+12 more)
 
 ### Community 76 - "Community 76"
 Cohesion: 0.06
 Nodes (35): "Access Denied", AWS Profile Basics, AWS SSO Configuration, Best Practices, Check Current Profile, Configuration Files, Configure New Profile, Default Profile vs Named Profiles (+27 more)
 
 ### Community 77 - "Community 77"
-Cohesion: 0.09
-Nodes (23): ProxyAction, Result of proxying a web request., WebProxyResult, MockDNSVerdict, MockEgressChannel, MockEgressEvent, MockThreatLevel, MockURLResult (+15 more)
+Cohesion: 0.06
+Nodes (29): Any, ProxyAction, Check if request is within rate limit. Returns True if allowed., Check an outbound HTTP request before it's sent.          This is the pre-flight, Scan a response body for prompt injection, PII, and hidden content.          Thi, Result of proxying a web request., Record an audit entry in the hash chain., Get proxy statistics. (+21 more)
 
 ### Community 78 - "Community 78"
-Cohesion: 0.07
-Nodes (25): RBACConfig, Group, GroupRegistry, _load_persisted_groups(), _persist_groups(), A named group of users., Manages user groups including auto-groups and custom groups., Derive and reset auto-groups from current RBAC user list, then load custom group (+17 more)
+Cohesion: 0.04
+Nodes (16): _bot(), mm(), MiddlewareManager built via __new__ — every module attr explicitly None     so e, _scan_result(), TestAnalyzeRequestForRBAC, TestExtractFilePaths, TestExtractUserId, TestFileSandboxStep (+8 more)
 
 ### Community 79 - "Community 79"
-Cohesion: 0.05
-Nodes (49): Agents with no streaming-compatible chat_path (OpenClaw) get a 400 from     the, A stream that goes straight to 'done' with no sentence events (e.g.     everythi, SSE keepalive comments (': ...') and blank lines are ignored, not     treated as, A single corrupted SSE line logs a warning and is skipped — it must not     abor, A non-400 HTTP error (e.g. 500) is a real failure, not the OpenClaw     no-strea, A connection-level error (not a status/timeout) also falls back to the     troub, _call_agent_stream POSTs to /forward/stream and yields each sentence     event a, _sse_body() (+41 more)
+Cohesion: 0.04
+Nodes (65): FastAPI, Agents with no streaming-compatible chat_path (OpenClaw) get a 400 from     the, A non-400 HTTP error (e.g. 500) is a real failure, not the OpenClaw     no-strea, Request body must carry the configured model and max_tokens=150., test_call_agent_stream_non_400_http_error_falls_back(), test_call_agent_stream_non_streaming_agent_returns_telegram_notice(), test_call_llm_sends_correct_model_and_max_tokens(), _mock_stream_resp() (+57 more)
 
 ### Community 80 - "Community 80"
-Cohesion: 0.06
-Nodes (68): AuthRequired, EmailSendRequest, AgentTarget, ForwardRequest, Request, ForwardError, Raised when forwarding to agent fails, auth_dep() (+60 more)
+Cohesion: 0.13
+Nodes (33): _filtered_sentence_stream(), Buffer streamed text deltas and yield each complete sentence as soon as     its, 2-sentence sliding window over `sentences`: each window (previous +     current,, _sentences_from_deltas(), _aiter(), _BlockingPipeline, _make_stream_app_state(), _parse_sse_events() (+25 more)
 
 ### Community 81 - "Community 81"
-Cohesion: 0.05
-Nodes (28): Any, FilterMatch, InfoCategory, Compile all filter patterns into regex objects., Categories of information that may need filtering., Filter agent response for sensitive information disclosure.          Args:, A single match found by the outbound filter., Check if a disclosure category is permitted for the user's trust level. (+20 more)
+Cohesion: 0.10
+Nodes (13): Test cases for the widened fabricated_security_notice pattern., Original pattern: exact past-tense form., blocking' continuous form., continues blocking' — adverb + gerund form., flagging' gerund form., Possessive form: AGENTSHROUD's behavioral analysis flagging., Standalone 'blocked unauthorized command execution' without AGENTSHROUD prefix., blocking suspicious code execution' variant. (+5 more)
 
 ### Community 82 - "Community 82"
 Cohesion: 0.06
 Nodes (20): ABC, ContainerInfo, ContainerInfo, Any, ContainerInfo, ContainerEngine, ContainerInfo, Retrieve container logs. (+12 more)
 
 ### Community 83 - "Community 83"
-Cohesion: 0.05
-Nodes (23): Per-request bot token for gateway-originated Telegram sends.          Returns th, Create a single-use invite link for a Telegram group. Returns URL or None., Kick (ban + unban) a user from a Telegram group. Returns True on success., Notify a collaborator they have exceeded the hourly rate limit., Estimate seconds until collaborator rate limit window opens again., Notify an unknown/unapproved user they have exceeded the access request rate lim, Send a Telegram message with an inline keyboard., Edit an existing Telegram message in-place (removes inline keyboard too). (+15 more)
+Cohesion: 0.10
+Nodes (11): Send local command response with deterministic fallback text., Send deterministic gateway health status without model invocation., Send deterministic model status without model invocation., Send deterministic /help command list without model invocation., Send deterministic identity/role notice to simplify approval workflows., Send owner a summary of recent collaborator activity (last hour)., Send deterministic owner pending-approval snapshot., Send owner-friendly collaborator roster with known labels. (+3 more)
 
 ### Community 84 - "Community 84"
-Cohesion: 0.20
-Nodes (6): domain_matches(), Return True if *domain* matches any pattern (exact or ``*.`` wildcard).      Sin, Get the effective allowlist for a specific agent., Check if a domain matches the denylist., Check if domain matches any pattern in the list (supports wildcards)., Public: does *domain* match any pattern in the effective default allowlist?
+Cohesion: 0.33
+Nodes (3): Get the effective allowlist for a specific agent., Check if a domain matches the denylist., Check if domain matches any pattern in the list (supports wildcards).
 
 ### Community 85 - "Community 85"
 Cohesion: 0.06
@@ -2065,15 +2103,19 @@ Nodes (35): "Access Denied", AWS Profile Basics, AWS SSO Configuration, Best Pra
 
 ### Community 86 - "Community 86"
 Cohesion: 0.09
-Nodes (20): Any, KeyRotationManager, Whether credential needs rotation based on age., Validate a credential.          Returns:             tuple: (is_valid, message), Manages automated rotation of credentials with zero downtime., Register a credential for rotation management., Get detailed status for a credential., Get status for all managed credentials. (+12 more)
+Nodes (17): CredentialRotationPolicy, Any, Whether credential needs rotation based on age., Validate a credential.          Returns:             tuple: (is_valid, message), Register a credential for rotation management., Get detailed status for a credential., Get status for all managed credentials., Calculate overall credential health score. (+9 more)
 
 ### Community 87 - "Community 87"
 Cohesion: 0.06
-Nodes (35): Any, ForwarderConfig, ForwardResult, HTTPForwarder, Check if the OpenClaw backend is healthy., Configuration for the HTTP forwarder., Result of forwarding a request., Forwards sanitized requests to the OpenClaw backend.      In production, uses ai (+27 more)
+Nodes (37): Any, ForwarderConfig, ForwardResult, HTTPForwarder, Check if the OpenClaw backend is healthy., Configuration for the HTTP forwarder., Result of forwarding a request., Forwards sanitized requests to the OpenClaw backend.      In production, uses ai (+29 more)
 
 ### Community 88 - "Community 88"
-Cohesion: 0.08
-Nodes (8): CanaryConfig, CanaryResult, CanaryTripwire, Pipeline-compatible bridge: scan response text and return TripwireResponse., Bridge result returned by scan_response() for pipeline compatibility., Register a new canary value at runtime for dynamic tripwire testing., TripwireResponse, TestCanaryTripwire
+Cohesion: 0.09
+Nodes (4): CanaryConfig, Bridge result returned by scan_response() for pipeline compatibility., TripwireResponse, TestCanaryTripwire
+
+### Community 89 - "Community 89"
+Cohesion: 0.05
+Nodes (32): GroupApprovalRouter, Return True if agent_id represents a Telegram group workspace., Extract the raw chat_id from a group-{chat_id} agent_id.          Returns None i, Build the owner DM notification text., Build the group thread reply notification text., No-op send stub — used when no transport is injected., Routes approval notifications to owner DM and (optionally) group thread.      Ar, Route an approval notification to the appropriate recipients.          Routing l (+24 more)
 
 ### Community 90 - "Community 90"
 Cohesion: 0.04
@@ -2092,8 +2134,8 @@ Cohesion: 0.13
 Nodes (10): prompt_guard(), Create a PromptGuard instance for testing, </system> style fake tags should be stripped., --- new instructions patterns should be stripped., Test PromptGuard initialization, Normal markdown headers (# Title) should not be stripped., Test that normal messages pass through, test_benign_message() (+2 more)
 
 ### Community 94 - "Community 94"
-Cohesion: 0.02
-Nodes (66): Append a timestamped entry to the group shared memory file.          Authorizati, Read raw private memory for a user.          Args:             user_id: The user, Append content to user's private memory file.          Authorization (RT-5, WS-E, Build merged memory context for bot prompt injection.          Includes:, Return memory from groups whose focus_topics match the query text.          For, Return True if text contains patterns matching private/sensitive content., Remove private-looking content from shared memory before serving         to non-, High-level shared-memory API wrapping UserSessionManager storage. (+58 more)
+Cohesion: 0.03
+Nodes (62): Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id, Check if a user can access another user's session., Return True if user_id is a member of group_id.          Checks rbac_config.get_, UserSessionManager, Append a timestamped entry to the group shared memory file.          Authorizati, Read raw private memory for a user.          Args:             user_id: The user, Append content to user's private memory file.          Authorization (RT-5, WS-E, Build merged memory context for bot prompt injection.          Includes: (+54 more)
 
 ### Community 95 - "Community 95"
 Cohesion: 0.06
@@ -2124,16 +2166,16 @@ Cohesion: 0.06
 Nodes (49): _random_msg_id(), Translate an OpenAI-compat SSE byte stream to Anthropic SSE byte events.      Yi, _sse(), translate_openai_sse_to_anthropic(), _anthropic_content_to_openai(), _anthropic_system_to_openai(), anthropic_to_openai_request(), anthropic_to_openai_response() (+41 more)
 
 ### Community 102 - "Community 102"
-Cohesion: 0.09
-Nodes (10): ConfigValidationError, ConsentFramework, Validate a server configuration before execution., ServerConfig, ShellInjectionDetected, framework(), TestConsentDecision, TestEnvironmentValidation (+2 more)
+Cohesion: 0.12
+Nodes (8): ConfigValidationError, ServerConfig, ShellInjectionDetected, framework(), TestConsentDecision, TestEnvironmentValidation, TestServerConfigValidation, TestWhitelistBlacklist
 
 ### Community 104 - "Community 104"
 Cohesion: 0.05
-Nodes (26): SSHConfig, Configuration for a single SSH host, SSHHostConfig, Result of an SSH command execution, Execute a command on a remote host via SSH., SSHResult, SSHProxy, Approval queue details must be PII-sanitized before storage (+18 more)
+Nodes (21): SSHConfig, Result of an SSH command execution, Execute a command on a remote host via SSH., SSHResult, SSHProxy, cwd is validated and passed to proxy.execute()., cwd with shell metacharacters is rejected before execution., cwd must be an absolute path. (+13 more)
 
 ### Community 105 - "Community 105"
-Cohesion: 0.13
-Nodes (30): Auth Module (Bearer token + token-bucket rate limiter, hmac.compare_digest), agentshroud-bot Container (Node.js 22 OpenClaw, port 18789, 4 GB, isolated network), DataLedger (SQLite WAL, SHA-256 hash chain, privacy-by-design — hashes only, 90-day retention), EventBus (in-process pub/sub, 200-event rolling buffer, auth failure escalation), agentshroud-gateway Container (Python 3.13 / FastAPI, port 8080, 1280 MB, read-only rootfs), Gateway Initialization Order, main.py — FastAPI Entrypoint (5-step POST /forward pipeline, 22 lifespan steps), MCP Proxy (tool call inspection layer) (+22 more)
+Cohesion: 0.15
+Nodes (26): Auth Module (Bearer token + token-bucket rate limiter, hmac.compare_digest), agentshroud-bot Container (Node.js 22 OpenClaw, port 18789, 4 GB, isolated network), DataLedger (SQLite WAL, SHA-256 hash chain, privacy-by-design — hashes only, 90-day retention), EventBus (in-process pub/sub, 200-event rolling buffer, auth failure escalation), agentshroud-gateway Container (Python 3.13 / FastAPI, port 8080, 1280 MB, read-only rootfs), main.py — FastAPI Entrypoint (5-step POST /forward pipeline, 22 lifespan steps), MCP Proxy Wrapper (mcp-proxy-wrapper.js — stdio to HTTP translation), Monitor Mode (log-only, no enforcement) (+18 more)
 
 ### Community 106 - "Community 106"
 Cohesion: 0.10
@@ -2144,8 +2186,8 @@ Cohesion: 0.07
 Nodes (23): MCP Server/Tool (mcporter), mcporter, nano-pdf, Quick start, Find the active vault(s), Obsidian, obsidian-cli Tool, obsidian-cli quick start (+15 more)
 
 ### Community 108 - "Community 108"
-Cohesion: 0.03
-Nodes (72): ForwardRequest, AgentTarget, Downstream agent target, Determine which agent should receive this content          Args:             req, Raised when no valid routing target found, RouterError, _mock_response(), forward_to_agent extracts choices[0].message.content and returns a string. (+64 more)
+Cohesion: 0.02
+Nodes (110): AgentTarget, Any, ForwardRequest, AgentTarget, Downstream agent target, ForwardError, Determine which agent should receive this content          Args:             req, Build the outbound payload for `target`, shared by the blocking and         stre (+102 more)
 
 ### Community 109 - "Community 109"
 Cohesion: 0.07
@@ -2160,24 +2202,24 @@ Cohesion: 0.05
 Nodes (43): DifferentialPIIConfig, DifferentialPIIDetector, DifferentialPIIConfig, DifferentialPIIDetector, _normalize_adversarial(), PIIHit, PIIHitSeverity, Full scan result for a tool result or prompt. (+35 more)
 
 ### Community 113 - "Community 113"
-Cohesion: 0.08
-Nodes (8): CredentialEntryBlocked, ThreatAssessment, ThreatLevel, guard(), TestCredentialProtection, TestScreenshotAnalysis, TestSocialEngineeringDetection, TestURLReputation
+Cohesion: 0.07
+Nodes (11): IntEnum, CredentialEntryBlocked, PhishingURLDetected, SocialEngineeringDetected, ThreatAssessment, ThreatLevel, guard(), TestCredentialProtection (+3 more)
 
 ### Community 114 - "Community 114"
 Cohesion: 0.09
 Nodes (22): Any, Connection, Path, calculate_overall_score(), calculate_tool_score(), format_report(), generate_report(), get_trend() (+14 more)
 
 ### Community 115 - "Community 115"
-Cohesion: 0.09
-Nodes (31): Any, PipelineResult, AuditChainEntry, PipelineAction, PipelineResult, Process an outbound response through the security pipeline.          Thin wrappe, Process an outbound response through the security pipeline., An entry in the SHA-256 hash chain audit ledger. (+23 more)
+Cohesion: 0.10
+Nodes (27): Any, PipelineResult, AuditChainEntry, PipelineResult, Process an outbound response through the security pipeline.          Thin wrappe, Process an outbound response through the security pipeline., An entry in the SHA-256 hash chain audit ledger., Record a trust-score violation and propagate cross-bot decay.          Called on (+19 more)
 
 ### Community 116 - "Community 116"
-Cohesion: 0.08
-Nodes (12): Test that header sanitization stops at size limit., Test that EXIF metadata is removed from image data., Test that non-EXIF data is preserved., Test comprehensive internal IP pattern matching., Test that all specified unicode control characters are stripped., Test that sensitive headers are stripped., Test that internal IPs are redacted from headers., Test that unicode control characters are stripped. (+4 more)
+Cohesion: 0.05
+Nodes (17): DocumentTag, Create and store a provenance tag for a document., Look up a document tag by its SHA-256 content hash., Provenance record for a document ingested into the agent context., Test that header sanitization stops at size limit., Test that EXIF metadata is removed from image data., Test that non-EXIF data is preserved., Test comprehensive internal IP pattern matching. (+9 more)
 
 ### Community 117 - "Community 117"
-Cohesion: 0.02
-Nodes (69): ApprovalMode, EgressApprovalQueue, EgressRequest, EgressRule, EgressScope, Thread-safe asyncio queue for managing egress approval requests.      Features:, Initialize the approval queue.          Args:             rules_file: Path to pe, Set optional event bus for approval telemetry. (+61 more)
+Cohesion: 0.05
+Nodes (21): Test that session rules are not persisted to disk., Test approval flow with permanent rule creation., Test approval flow with session rule creation., Test approval flow with one-time approval., Test denial flow with rule creation., Test suite for EgressApprovalQueue functionality., Test request timeout behavior., Test that existing rules bypass the approval queue. (+13 more)
 
 ### Community 118 - "Community 118"
 Cohesion: 0.05
@@ -2185,35 +2227,35 @@ Nodes (41): 1. What Needs to WRITE?, 2. What Needs to PERSIST?, 3. What's System
 
 ### Community 119 - "Community 119"
 Cohesion: 0.09
-Nodes (36): classify(), ClassProfile, _consume_field(), final_status(), is_source_fixed(), main(), parse_version(), Any (+28 more)
+Nodes (37): classify(), ClassProfile, _consume_field(), Coverage, final_status(), is_source_fixed(), main(), parse_version() (+29 more)
 
 ### Community 120 - "Community 120"
-Cohesion: 0.07
-Nodes (38): FastAPI, Response, A response without choices[0].message.content raises RuntimeError., Request body must carry the configured model and max_tokens=150., The full messages history (system + prior turns) is sent in the request body., test_call_llm_malformed_response_raises(), test_call_llm_sends_correct_model_and_max_tokens(), test_call_llm_sends_full_history() (+30 more)
+Cohesion: 0.29
+Nodes (7): Request, Response, firmware_bin(), _get_firmware_etag(), _ota_token_ok(), Constant-time allowlist check for an OTA ``?token=`` value.      Returns True wh, Serve the current ESP32 firmware binary for OTA (SCRUM-58).      Contract expect
 
 ### Community 121 - "Community 121"
-Cohesion: 0.12
-Nodes (10): check_command(), EnvironmentLeakage, get_env_guard(), Detected environment variable leakage., Get the global environment guard instance., Check if command execution should be allowed.      Args:         cmd: Command to, Scrub API keys and sensitive patterns from text output.      Args:         text:, scrub_output() (+2 more)
+Cohesion: 0.08
+Nodes (16): check_command(), EnvironmentLeakage, get_env_guard(), Check if command execution should be blocked to prevent environment leakage., Check if command contains patterns that could access environment., Scrub environment variables and API keys from command output.          Args:, Detected environment variable leakage., Check if a value looks like a credential. (+8 more)
 
 ### Community 122 - "Community 122"
-Cohesion: 0.08
-Nodes (24): _is_fresh(), Score domain 6: Malware Defense (0-5).      1=module installed or not_run, 3=cla, Return True if the most recent report file was written within max_age_hours., Score domain 2: Vulnerability Management (0-5).      1=module installed but no r, _score_malware_defense(), _score_vulnerability_management(), TestScoreMalwareDefense, TestScoreVulnerabilityManagement (+16 more)
+Cohesion: 0.09
+Nodes (22): Score domain 6: Malware Defense (0-5).      1=module installed or not_run, 3=cla, Score domain 2: Vulnerability Management (0-5).      1=module installed but no r, _score_malware_defense(), _score_vulnerability_management(), TestScoreMalwareDefense, TestScoreVulnerabilityManagement, _clean_clamav(), _clean_trivy() (+14 more)
 
 ### Community 123 - "Community 123"
-Cohesion: 0.04
-Nodes (42): Pattern, HeuristicClassifier, PromptGuard, ClassificationResult, HeuristicClassifier, [EXPERIMENTAL] Attempt to load a fine-tuned ML model. Returns True on success., Score a single signal pattern. Returns 0.0–1.0., Detect unusual Unicode patterns that suggest evasion. (+34 more)
+Cohesion: 0.07
+Nodes (39): HeuristicClassifier, PromptGuard, Detect plain NO_REPLY sentinel with light punctuation wrapping., Detect internal approval/egress banner text that must remain owner-only., Detect legacy bracket-style block notices for collaborator normalization., Map internal status/policy texts to user-safe replacement notices.          Pure, HeuristicClassifier, [EXPERIMENTAL] Attempt to load a fine-tuned ML model. Returns True on success. (+31 more)
 
 ### Community 124 - "Community 124"
-Cohesion: 0.04
-Nodes (9): config(), mgr(), TestCheckAll, TestInferPermission, TestPermissionLevel, TestRateLimiting, TestServerAccess, TestTrustLevels (+1 more)
+Cohesion: 0.05
+Nodes (19): Any, MCPProxyConfig, MCPProxy, MCPToolConfig, PermissionLevel, Configuration for a specific MCP tool., Parse config from a dictionary (e.g. loaded from YAML)., config() (+11 more)
 
 ### Community 125 - "Community 125"
-Cohesion: 0.11
-Nodes (18): approval_queue(), queue_config(), Test deciding on nonexistent request raises KeyError, Create approval queue configuration for testing, Test getting nonexistent item returns None, Test WebSocket client disconnection, Create approval queue instance for testing, Queue store file should persist items and status transitions. (+10 more)
+Cohesion: 0.08
+Nodes (23): Any, EnhancedApprovalQueue, MCPProxyConfig, MCPAuditTrail, MCPInspector, MCPPermissionManager, MCPProxyConfig, MCPTransport (+15 more)
 
 ### Community 126 - "Community 126"
-Cohesion: 0.17
-Nodes (10): ContentFinding, Scan content for security issues.          Args:             content: The web co, Scan for prompt injection patterns., Scan HTML for hidden instructions in comments, invisible elements, meta tags., Scan for base64-encoded or otherwise obfuscated payloads., A single finding from content scanning., Detect zero-width character sequences (steganographic attacks)., Scan response content for PII. (+2 more)
+Cohesion: 0.13
+Nodes (16): ContentFinding, FindingSeverity, Scan web content for prompt injection, PII, and hidden payloads.      All findin, Scan content for security issues.          Args:             content: The web co, Scan for prompt injection patterns., Scan HTML for hidden instructions in comments, invisible elements, meta tags., Scan for base64-encoded or otherwise obfuscated payloads., A single finding from content scanning. (+8 more)
 
 ### Community 127 - "Community 127"
 Cohesion: 0.05
@@ -2224,8 +2266,8 @@ Cohesion: 0.06
 Nodes (54): _ago(), _allGroups, _api(), _appendLogLine(), _applyAndRenderSbom(), _botContainerName(), _botParam(), _connectWS() (+46 more)
 
 ### Community 129 - "Community 129"
-Cohesion: 0.07
-Nodes (32): limit_request_body(), Reject request bodies larger than 1MB before parsing.      Checks Content-Length, Add security headers to all responses (defense-in-depth).      Also catches Pyth, security_headers_middleware(), limit_request_body returns a clean 400 when the client drops mid-upload.      Wi, limit_request_body re-injects a fully-read chunked body and calls downstream., limit_request_body rejects chunked bodies over 1MB with 413., Test global exception handler (+24 more)
+Cohesion: 0.09
+Nodes (28): limit_request_body(), log_requests(), Reject request bodies larger than 1MB before parsing.      Checks Content-Length, Log all incoming requests      Never logs request bodies (may contain PII)., Add security headers to all responses (defense-in-depth).      Also catches Pyth, security_headers_middleware(), limit_request_body returns a clean 400 when the client drops mid-upload.      Wi, limit_request_body re-injects a fully-read chunked body and calls downstream. (+20 more)
 
 ### Community 130 - "Community 130"
 Cohesion: 0.05
@@ -2244,36 +2286,36 @@ Cohesion: 0.06
 Nodes (7): guard(), TestCheckCommandExecution, TestCheckFileAccess, TestLooksLikeCredential, TestMonitorEnvironmentAccess, TestScrubCommandOutput, TestSummaryAndExport
 
 ### Community 134 - "Community 134"
-Cohesion: 0.05
-Nodes (22): Any, LogRecord, tail parameter is clamped to 1-100., When pipeline exists, stats should reflect its data., test_alert_store_push_and_summary(), test_log_buffer_ring(), test_log_buffer_tail(), test_logs_recent_tail_clamped() (+14 more)
+Cohesion: 0.10
+Nodes (8): tail parameter is clamped to 1-100., When pipeline exists, stats should reflect its data., test_log_buffer_ring(), test_log_buffer_tail(), test_logs_recent_tail_clamped(), test_proxy_status_includes_pipeline_stats(), LogBuffer, Ring buffer for recent log/audit entries.
 
 ### Community 135 - "Community 135"
-Cohesion: 0.06
-Nodes (42): _make_pipeline(), rot13-obfuscated injection is decoded-and-blocked on the inbound path., Fully percent-encoded injection is decoded-and-blocked on inbound.      The dete, A homoglyph-obfuscated injection is normalized-and-blocked inbound.      The pay, A nested base64(base64(injection)) payload is peeled and blocked., Ordinary base64 content with no injection indicators is forwarded., rot13-looking prose with no injection indicators is left alone., A plain unencoded benign message is untouched by the encoding step. (+34 more)
+Cohesion: 0.08
+Nodes (18): MCPServerConfig, Exception, MCPServerConfig, Configuration for an MCP server., HttpSseConnection, Start the MCP server process., Send a JSON-RPC request and read the response., Stop the MCP server process. (+10 more)
 
 ### Community 136 - "Community 136"
-Cohesion: 0.12
-Nodes (13): CollaboratorGreeter, Sends a branded greeting photo to each (bot, user) pair once per 24 h., Greet user if cooldown has expired. Returns True when greeting was sent., _load_taglines falls back to default when JSON is valid but not a list., _load_state returns {} when state file is a JSON list (not a dict)., When state JSON is corrupt AND writing the empty recovery file fails, no excepti, _load_state reads and returns a pre-existing valid JSON dict., test_caption_length_clamped() (+5 more)
+Cohesion: 0.10
+Nodes (17): CollaboratorGreeter, Sends a branded greeting photo to each (bot, user) pair once per 24 h., Greet user if cooldown has expired. Returns True when greeting was sent., _load_taglines falls back to default when JSON is valid but not a list., _load_state returns {} when state file is a JSON list (not a dict)., _persist_state failure must not raise., When state JSON is corrupt AND writing the empty recovery file fails, no excepti, _load_state reads and returns a pre-existing valid JSON dict. (+9 more)
 
 ### Community 137 - "Community 137"
-Cohesion: 0.09
-Nodes (28): _bot_service_names() must use each bot's real container name, not a     hardcode, test_bot_service_names_uses_resolved_container_name(), _bot_service_names(), _get_default_bot_dockerfile(), _get_engine(), get_logs(), killswitch(), Compute valid service names from config + sidecars at call-time. Uses     each b (+20 more)
+Cohesion: 0.05
+Nodes (26): _apply_persisted_overrides(), Return all groups the user belongs to., Return all projects accessible to the user via group membership., Return deduplicated list of all user IDs across all groups., Return mapping of group_id → admin_user_id for all groups that have an admin., Return the first project accessible to a user (primary project)., Return the safe_response_prefix for the first group that the user belongs to, Return the effective collab_mode for a user.          Resolution order: (+18 more)
 
 ### Community 138 - "Community 138"
 Cohesion: 0.12
 Nodes (17): Credential Isolation (gateway as sole credential holder via op-proxy), Falco Rule: Container Shell Spawned, Falco Rule: Unexpected Outbound Connection, Falco Rule: Privilege Escalation Attempt, Falco Runtime Security (eBPF kernel monitoring), Falco Rule: Secret File Access, Docker Compose --profile full (activates Hermes + HCI), Docker Network Isolation (agentshroud-internal 172.20.0/16, agentshroud-isolated 172.21.0/16) (+9 more)
 
 ### Community 139 - "Community 139"
-Cohesion: 0.07
-Nodes (15): Any, MCPAuditEntry, MCPAuditTrail, Log an outgoing MCP tool call., Log an incoming MCP tool result., Verify integrity of the retained MCP audit hash-chain window.          Anchors a, A single MCP tool call audit entry., Generate an MCP audit report summary. (+7 more)
+Cohesion: 0.09
+Nodes (14): Any, MCPAuditEntry, MCPAuditTrail, Log an outgoing MCP tool call., Log an incoming MCP tool result., Verify integrity of the retained MCP audit hash-chain window.          Anchors a, A single MCP tool call audit entry., Generate an MCP audit report summary. (+6 more)
 
 ### Community 140 - "Community 140"
-Cohesion: 0.11
-Nodes (18): Any, ContextIntegrityScorer, IntegrityScore, Rolling context integrity score for a session., Scores the integrity of a session's context.      Usage::          scorer = Cont, Compute a 0.0–1.0 integrity score for the given context segments.          Args:, HMAC-SHA256 fingerprint for a registered system prompt., SystemPromptFingerprint (+10 more)
+Cohesion: 0.09
+Nodes (23): Any, ContextSegment, Tagged provenance record for a context segment., Create a provenance record for a context segment., Tag a segment and append it to the session's provenance log., Return ordered list of provenance records for the session., ContextIntegrityScorer, IntegrityScore (+15 more)
 
 ### Community 141 - "Community 141"
-Cohesion: 0.05
-Nodes (20): Test redaction of targeted infrastructure details.          Generic hostnames (e, Product name 'agentshroud' and 'agentshroud-openclaw' are public branding — must, Test that dynamically registered bot hostnames are redacted., Test redaction of user ID patterns., Test redaction of credential patterns., Test that normal content passes through without redaction., Test adding protected content., Test fuzzy matching against protected content. (+12 more)
+Cohesion: 0.11
+Nodes (10): Test redaction of targeted infrastructure details.          Generic hostnames (e, Test that normal content passes through without redaction., Test fuzzy matching against protected content., Test loading protected content from files., Test that content is properly fingerprinted with hashes., Test edge cases and error conditions., Test cases for PromptProtection class., Test proper initialization of PromptProtection. (+2 more)
 
 ### Community 142 - "Community 142"
 Cohesion: 0.06
@@ -2292,12 +2334,12 @@ Cohesion: 0.06
 Nodes (17): Test handling invalid callback data., Test Telegram egress notification system., Test callback for non-existent request., Test cleanup removes expired pending requests., Test answering callback query., Test answer_callback handles errors., Test risk level emoji display., handle_callback must include agent_id so the proxy can notify the originating co (+9 more)
 
 ### Community 146 - "Community 146"
-Cohesion: 0.06
-Nodes (32): CrossBotTrustLedger, TrustManager, BotIncidentSeverity, IncidentRecord, A single cross-bot incident recorded in the ledger., Return the registered peers for *bot_name* (empty list if none)., Log an incident and propagate trust decay to registered peers.          Args:, Recursive BFS propagation up to max_propagation_depth hops. (+24 more)
+Cohesion: 0.05
+Nodes (39): CrossBotTrustLedger, TrustManager, TrustManager, BotIncidentSeverity, CrossBotTrustLedger, IncidentRecord, A single cross-bot incident recorded in the ledger., Shared trust decay channel for multi-bot deployments.      Usage::          ledg (+31 more)
 
 ### Community 147 - "Community 147"
-Cohesion: 0.09
-Nodes (6): Any, PodmanEngine, Generate a systemd unit file for a container., Container engine backed by the Podman CLI., Detect podman compose or podman-compose., TestPodmanEngine
+Cohesion: 0.12
+Nodes (5): Any, PodmanEngine, Generate a systemd unit file for a container., Container engine backed by the Podman CLI., Detect podman compose or podman-compose.
 
 ### Community 148 - "Community 148"
 Cohesion: 0.12
@@ -2321,7 +2363,7 @@ Nodes (20): Any, Path, MemoryLifecycleConfig, MemoryLifecycleManager, Scan memor
 
 ### Community 153 - "Community 153"
 Cohesion: 0.07
-Nodes (19): Any, Path, generate_summary(), parse_trivy_output(), Save a Trivy report to the log directory.      Args:         report: Parsed repo, Generate a summary dict suitable for the health report.      Args:         repor, Run a Trivy scan and return parsed results.      Args:         target: Scan targ, Parse raw Trivy JSON output into a structured summary.      Args:         raw: R (+11 more)
+Nodes (17): Path, _build_image_targets(), Build the list of container image targets for Trivy image scanning.      Combine, parse_trivy_output(), Save a Trivy report to the log directory.      Args:         report: Parsed repo, Parse raw Trivy JSON output into a structured summary.      Args:         raw: R, save_report(), Empty AGENTSHROUD_TRIVY_IMAGES adds no extra entries beyond         gateway + th (+9 more)
 
 ### Community 154 - "Community 154"
 Cohesion: 0.06
@@ -2344,8 +2386,8 @@ Cohesion: 0.07
 Nodes (35): Container Integration, Playwright, Purpose, Related Notes, Security Controls, Volume, agentshroud-bot Container, agentshroud-gateway Container (+27 more)
 
 ### Community 159 - "Community 159"
-Cohesion: 0.04
-Nodes (56): FastAPI, LogRecord, Any, check_monitor_mode_warnings(), get_module_mode(), Return module mode, respecting the global permissive override., Log warnings for any core modules running in monitor mode., EventBus (+48 more)
+Cohesion: 0.18
+Nodes (6): Any, Load protected content from configured sources., Add content to the protected registry.          Args:             name: Identifi, Get statistics about the protection system., Initialize prompt protection system.          Args:             config: Configur, Compile regex patterns for detecting disclosure attempts.
 
 ### Community 160 - "Community 160"
 Cohesion: 0.06
@@ -2360,8 +2402,8 @@ Cohesion: 0.05
 Nodes (37): 10. Steve Hay Assessment Alignment, 1.1 Module Integration Status, 1.2 Critical Security Pipeline Flow, 1. Security Module Analysis, 2.1 Loss Categories, 2.2 Heat Map Matrix, 2.3 Coverage Analysis, 2. Steve Hay Heat Map Assessment (+29 more)
 
 ### Community 163 - "Community 163"
-Cohesion: 0.05
-Nodes (33): Any, Path, Any, datetime, generate_summary(), parse_clamscan_output(), Save a ClamAV report to the log directory., Generate a summary dict suitable for the health report.      Args:         repor (+25 more)
+Cohesion: 0.06
+Nodes (27): Any, Path, Any, datetime, generate_summary(), Save a ClamAV report to the log directory., Generate a summary dict suitable for the health report.      Args:         repor, Update ClamAV virus database using freshclam.      Args:         freshclam_bin: (+19 more)
 
 ### Community 164 - "Community 164"
 Cohesion: 0.12
@@ -2372,8 +2414,8 @@ Cohesion: 0.07
 Nodes (30): allAllowedOrigins, allowedOrigins, cIdx, COLLAB_LOCAL_INFO_ONLY, _COLLAB_TOOL_DENY, _COLLAB_TOOL_DENY_FULL_ACCESS, COLLABORATOR_IDS, config (+22 more)
 
 ### Community 166 - "Community 166"
-Cohesion: 0.14
-Nodes (18): Path, get_clamav_summary(), get_trivy_image_summaries(), _is_clamd_running(), Return True if clamd Unix socket /tmp/clamd.ctl is connectable., Return per-image Trivy scan summaries from saved image reports.      Reads repor, Return latest ClamAV scan summary from saved reports.      When ClamAV is instal, _clean_trivy_report() (+10 more)
+Cohesion: 0.22
+Nodes (13): Path, get_trivy_image_summaries(), Return per-image Trivy scan summaries from saved image reports.      Reads repor, _clean_trivy_report(), _critical_trivy_report(), Write a fake image report file in the expected filename format., Files named trivy-*.json (fs scans) are not included., bot_id + config param restricts results to that bot's image. (+5 more)
 
 ### Community 167 - "Community 167"
 Cohesion: 0.06
@@ -2392,8 +2434,8 @@ Cohesion: 0.07
 Nodes (13): flags(), fs(), Redirect every Path(...) constructed inside the module into a sandbox.      Abso, Replace _app_state_has with a controllable membership set., Replace shutil.which with a controllable name → path mapping., TestAccessControl, TestAgenticScorers, TestAppStateHas (+5 more)
 
 ### Community 171 - "Community 171"
-Cohesion: 0.05
-Nodes (45): GatewayConfig, AuthRequired, Request, create_auth_dependency(), get_auth_dependency(), Create authentication dependency callable      This is a synchronous wrapper tha, Factory that returns authentication dependency for FastAPI      This allows us t, auth_dep() (+37 more)
+Cohesion: 0.06
+Nodes (39): GatewayConfig, Request, HTTPAuthorizationCredentials, create_auth_dependency(), get_auth_dependency(), Create authentication dependency callable      This is a synchronous wrapper tha, Verify token using constant-time comparison      Uses hmac.compare_digest to pre, Factory that returns authentication dependency for FastAPI      This allows us t (+31 more)
 
 ### Community 172 - "Community 172"
 Cohesion: 0.10
@@ -2416,8 +2458,8 @@ Cohesion: 0.05
 Nodes (37): 1. Add Public Key to Target Host, 2. Add Host Configuration (Optional but Recommended), 3. Test Connection, Adding Additional Hosts, Backup and Recovery, Backup SSH Keys, Configured Hosts, 🔐 Credentials in 1Password (+29 more)
 
 ### Community 177 - "Community 177"
-Cohesion: 0.09
-Nodes (21): CredentialRotationPolicy, datetime, KeyRotationConfig, CredentialRotationPolicy, KeyRotationConfig, Get rotation policy for a credential type, falling back to api_key default., Add or update a rotation policy for a specific credential type., Check if a specific emergency trigger is enabled. (+13 more)
+Cohesion: 0.06
+Nodes (37): datetime, CredentialRotationPolicy, KeyRotationConfig, Get rotation policy for a credential type, falling back to api_key default., Add or update a rotation policy for a specific credential type., Check if a specific emergency trigger is enabled., Build a complete op:// reference for a credential., Rotation policy for a specific credential type. (+29 more)
 
 ### Community 178 - "Community 178"
 Cohesion: 0.08
@@ -2432,12 +2474,12 @@ Cohesion: 0.08
 Nodes (12): FilterResult, Scan outbound text for command / code injection patterns.          Does NOT modi, Result from XML leak filtering., Filter outbound response content to remove sensitive information.          Args:, Test cases for XMLLeakFilter., Set up test fixtures., Test that clean responses pass through unchanged., Test removal of function call XML blocks. (+4 more)
 
 ### Community 181 - "Community 181"
-Cohesion: 0.18
-Nodes (9): format_cve_report(), Run a Trivy scan, format the report, and send via Telegram.      Args:         b, Format a Trivy scan result into a Telegram-ready Markdown message.      Args:, run_and_send_cve_report(), _make_error_report(), _make_report(), Build a minimal parsed Trivy report., TestFormatCveReport (+1 more)
+Cohesion: 0.08
+Nodes (16): Any, format_cve_report(), Run a Trivy scan, format the report, and send via Telegram.      Args:         b, Format a Trivy scan result into a Telegram-ready Markdown message.      Args:, run_and_send_cve_report(), generate_summary(), Generate a summary dict suitable for the health report.      Args:         repor, _make_error_report() (+8 more)
 
 ### Community 182 - "Community 182"
-Cohesion: 0.06
-Nodes (75): Client, Commands, Option, OutputFormat, RefCell, Result, Self, AddResource (+67 more)
+Cohesion: 0.07
+Nodes (72): Client, Option, RefCell, Result, Self, AddResource, ApprovalAction, approvals_list_empty() (+64 more)
 
 ### Community 183 - "Community 183"
 Cohesion: 0.14
@@ -2453,7 +2495,7 @@ Nodes (30): `00 - START HERE/Home.md`, `00 - START HERE/Quick Reference.md`, `00
 
 ### Community 186 - "Community 186"
 Cohesion: 0.06
-Nodes (57): # NOTE: Called within _lock context, ApprovalQueue, MFAGuard, MFAResult, Verify a TOTP second factor for high-risk operations (fail-closed).      Args:, Build an MFAGuard from environment variables / Docker secret file.          Reco, Return True if ``action_type`` requires a second factor right now.          Two, Verify the second factor for a high-risk action.          Args:             acti (+49 more)
+Nodes (55): ApprovalQueue, MFAGuard, MFAResult, Verify a TOTP second factor for high-risk operations (fail-closed).      Args:, Build an MFAGuard from environment variables / Docker secret file.          Reco, Return True if ``action_type`` requires a second factor right now.          Two, Verify the second factor for a high-risk action.          Args:             acti, Decode a base32 secret; return b"" on empty/invalid input. (+47 more)
 
 ### Community 187 - "Community 187"
 Cohesion: 0.08
@@ -2484,8 +2526,8 @@ Cohesion: 0.05
 Nodes (36): API Keys Setup Guide (OpenAI + Anthropic OAuth), Anthropic Credential Isolation via Gateway (v0.5.0+), Device Pairing Management Guide, Device Pairing File Locations (pending.json, paired.json), Dual-Layer Auth: Gateway Password + Device Pairing, hermes_api_key Docker Secret Setup, HCI (Hermes Control Interface) — port 9121, Hermes OpenAI-Compatible API (port 8642) (+28 more)
 
 ### Community 195 - "Community 195"
-Cohesion: 0.03
-Nodes (72): deque, Path, Any, Any, FastAPI, Path, KillSwitchConfig, KillSwitchConfig (+64 more)
+Cohesion: 0.04
+Nodes (50): Any, FastAPI, Path, KillSwitchConfig, Convert configuration to dictionary for serialization., Configuration for kill switch monitoring and verification., KillSwitchMonitor, Monitor and verify kill switch functionality.      Provides automated verificati (+42 more)
 
 ### Community 196 - "Community 196"
 Cohesion: 0.14
@@ -2505,15 +2547,15 @@ Nodes (34): 10.1 Test Metrics Dashboard, 10.2 Release Readiness Criteria, 10. Te
 
 ### Community 202 - "Community 202"
 Cohesion: 0.07
-Nodes (23): Path, CollaboratorActivityTracker, Return a health snapshot suitable for /status/detail., Append one activity entry for any tracked collaborator or the owner.          Ar, Mirror activity into workspace contributor logs used by daily digests., Normalize previews to single-line safe text for JSONL + markdown mirrors., Normalize username for safe contributor-log tokenization., Best-effort float timestamp coercion for resilient log reads. (+15 more)
+Nodes (22): Any, Check if the agent is responding within expected parameters.          Returns:, Detect unusual patterns that might indicate rogue behavior.          Args:, Get current kill switch monitor status.          Returns:             Dict conta, Test if the kill switch script exists., Test if the kill switch script has correct permissions., Test if Docker is available., Test if the kill switch script has valid syntax. (+14 more)
 
 ### Community 203 - "Community 203"
 Cohesion: 0.08
 Nodes (23): AgentShroud Operations Cheat Sheet, Colima VM, Container Basics, Hermes Agent Management, Host IPs (extra_hosts), Key Paths, Kill Switch (Emergency), Colima macOS Docker Runtime Configuration (+15 more)
 
 ### Community 204 - "Community 204"
-Cohesion: 0.13
-Nodes (8): _default_format(), _is_tty(), _tail_ws(), _FakeConnect, _FakeWS, _install_fake_websockets(), Async-iterable WebSocket double., TestTailWS
+Cohesion: 0.15
+Nodes (6): _tail_ws(), _FakeConnect, _FakeWS, _install_fake_websockets(), Async-iterable WebSocket double., TestTailWS
 
 ### Community 205 - "Community 205"
 Cohesion: 0.09
@@ -2525,7 +2567,7 @@ Nodes (30): Alert Prioritization Display, Anti-Patterns to Flag, CLI / TUI UX, C
 
 ### Community 207 - "Community 207"
 Cohesion: 0.04
-Nodes (79): Any, Path, MCPPolicyConfig, MCPPolicyEngine, MonkeyPatch, MCPPolicyAction, MCPPolicyConfig, MCPPolicyDecision (+71 more)
+Nodes (77): Any, Path, MCPPolicyConfig, MCPPolicyEngine, MonkeyPatch, MCPPolicyAction, MCPPolicyConfig, MCPPolicyDecision (+69 more)
 
 ### Community 208 - "Community 208"
 Cohesion: 0.08
@@ -2533,23 +2575,23 @@ Nodes (12): _entry(), Regression guard for the 2026-07-29 staleness incident.   
 
 ### Community 209 - "Community 209"
 Cohesion: 0.09
-Nodes (19): Security module configuration, Complete security configuration, SecurityConfig, SecurityModuleConfig, Verify SecurityConfig and SecurityModuleConfig default to enforce., TestSecurityConfigDefaults, Test that monitor mode warnings contain required information., Test that individual modules respect the enforce/monitor mode. (+11 more)
+Nodes (13): Complete security configuration, SecurityConfig, Test that monitor mode warnings contain required information., Test that core security modules default to enforce mode., Test that SecurityModuleConfig defaults to enforce mode., Test that PII sanitizer defaults to redact action., Test that all core modules default to enforce mode., Test get_module_mode returns enforce when no override set. (+5 more)
 
 ### Community 210 - "Community 210"
 Cohesion: 0.07
 Nodes (29): 1. Always Specify Risk Level, 2. Use Allowlisting Liberally, 3. Take Screenshots for Audit Trail, 4. Handle CAPTCHAs Gracefully, 5. Never Extract Credentials, "Action requires approval but none granted", Approval Integration, Audit Logging (+21 more)
 
 ### Community 211 - "Community 211"
-Cohesion: 0.03
-Nodes (121): ApprovalQueue, In-memory approval queue with WebSocket notifications      Actions requiring app, GatewayConfig, PIISanitizer, GatewayConfig, ApprovalQueueConfig, GatewayConfig, LedgerConfig (+113 more)
+Cohesion: 0.02
+Nodes (155): Path, GatewayConfig, PIISanitizer, GatewayConfig, BotConfig, Declaration for a single bot encapsulated by AgentShroud.      Required bot HTTP, Compute the bot's internal base URL from hostname and port., The real docker container name for this bot — see container_name field. (+147 more)
 
 ### Community 212 - "Community 212"
-Cohesion: 0.08
-Nodes (46): append_ghsa_entries(), append_to_hermes_registry(), append_to_registry(), _classify(), _entry_to_py(), _extract_affected_max(), _extract_fix_version(), fetch_ghsa_advisories() (+38 more)
+Cohesion: 0.07
+Nodes (50): append_ghsa_entries(), append_to_hermes_registry(), append_to_registry(), _classify(), _entry_to_py(), _extract_affected_max(), _extract_fix_version(), fetch_ghsa_advisories() (+42 more)
 
 ### Community 213 - "Community 213"
-Cohesion: 0.10
-Nodes (10): check_upstream_cves(), Fetch one agent's GitHub Security Advisories and return advisories we don't trac, _make_github_advisory(), Build a minimal GitHub Security Advisory payload keyed on GHSA id.      ``ghsa_i, Stub urllib.request.urlopen to return a list of advisories., TestAlreadyCheckedUpstreamToday, TestAlreadyIngestedGhsaToday, TestCheckUpstreamCves (+2 more)
+Cohesion: 0.30
+Nodes (6): check_upstream_cves(), Fetch one agent's GitHub Security Advisories and return advisories we don't trac, _make_github_advisory(), Build a minimal GitHub Security Advisory payload keyed on GHSA id.      ``ghsa_i, Stub urllib.request.urlopen to return a list of advisories., TestCheckUpstreamCves
 
 ### Community 214 - "Community 214"
 Cohesion: 0.06
@@ -2560,8 +2602,8 @@ Cohesion: 0.09
 Nodes (20): Phone number with separator must still be redacted., UID in parens — as written in contributor logs — must not be redacted., Regex-only path must not match bare 10-digit digit string as phone number., Test email address redaction, Test phone number redaction, Test credit card redaction, Test content with no PII, Test content with multiple PII types (+12 more)
 
 ### Community 216 - "Community 216"
-Cohesion: 0.06
-Nodes (30): Citation, CompetitorEntry, Fetcher, CompetitiveIntelReport, CompetitiveIntelReport, Path, IntelReportStore, Re-fetch *url* and return a Citation iff it is allowlisted + live.          SSRF (+22 more)
+Cohesion: 0.10
+Nodes (18): Citation, CompetitorEntry, Fetcher, CompetitiveIntelReport, Re-fetch *url* and return a Citation iff it is allowlisted + live.          SSRF, Return a CompetitorEntry with only its valid citations, or None.          None m, Verify every draft claim; return a report of only verified claims.          Clai, domain_matches() (+10 more)
 
 ### Community 217 - "Community 217"
 Cohesion: 0.06
@@ -2580,24 +2622,24 @@ Cohesion: 0.17
 Nodes (19): _is_anthropic_quota(), _is_google_quota(), _is_openai_quota(), is_quota_exhausted(), Return (True, token) if the response indicates a billing/quota wall.      The st, Anthropic returns the Claude.ai OAuth quota copy with HTTP 400     (wrapped as i, Generic 400 validation errors must NOT trigger failover., test_200_never_triggers() (+11 more)
 
 ### Community 221 - "Community 221"
-Cohesion: 0.05
-Nodes (18): Missing 'subject' or 'body' returns 422., Missing 'to' field returns 422., Endpoint returns 401 without auth override., Email to an allowed recipient returns 200 with status=approved., Approved response includes sanitized_body field., Allowed (owner) recipient receives the body verbatim — PII scan is skipped., PII in email body IS redacted before queuing for unknown recipients., Unknown recipient triggers approval queue and returns 202. (+10 more)
+Cohesion: 0.10
+Nodes (11): Missing 'subject' or 'body' returns 422., Missing 'to' field returns 422., Endpoint returns 401 without auth override., Email to an allowed recipient returns 200 with status=approved., Approved response includes sanitized_body field., Allowed (owner) recipient receives the body verbatim — PII scan is skipped., PII in email body IS redacted before queuing for unknown recipients., Unknown recipient triggers approval queue and returns 202. (+3 more)
 
 ### Community 222 - "Community 222"
 Cohesion: 0.15
 Nodes (8): _FakeUpstreamWS, _FakeWSConnect, Drive the canvas ASGI app with scripted receive events; collect sends., Fake upstream WebSocket: yields scripted messages, records sends., Async context manager mimicking websockets.connect()., _run_asgi(), TestCanvasWebSocket, _ws_scope()
 
 ### Community 223 - "Community 223"
-Cohesion: 0.14
-Nodes (9): Any, Check if alert was already seen within dedup window., Check if we've exceeded the rate limit., Append alert to JSONL log file., POST alert to /api/alerts with bounded retry + backoff.          Returns True on, Format alert as human-readable message., Get buffered alerts for daily digest.          Args:             clear: Clear bu, Get dispatcher statistics. (+1 more)
+Cohesion: 0.07
+Nodes (11): Pattern, ClassificationResult, Score a single signal pattern. Returns 0.0–1.0., Detect unusual Unicode patterns that suggest evasion., Classify text for injection probability.          Args:             text: Input, Heuristic-based classification using multi-signal analysis., [EXPERIMENTAL] ML model classification placeholder., Result of injection classification. (+3 more)
 
 ### Community 224 - "Community 224"
 Cohesion: 0.10
 Nodes (4): Verify the kill switch script structure and modes., Kill switch configuration in example configs., TestKillSwitchConfig, TestKillSwitchScript
 
 ### Community 225 - "Community 225"
-Cohesion: 0.17
-Nodes (10): ContextAttack, Analyze a message for context poisoning attempts.          Args:             ses, Detect instruction injection attempts., Detect repetition-based context stuffing attacks., Detect rapid context window filling., Detect hidden instructions buried in large text blocks., Detected context window attack attempt., Determine if a message should be blocked.          Returns:             Tuple of (+2 more)
+Cohesion: 0.14
+Nodes (12): ContextAttack, get_context_guard(), Analyze a message for context poisoning attempts.          Args:             ses, Detect instruction injection attempts., Detect repetition-based context stuffing attacks., Detect rapid context window filling., Detect hidden instructions buried in large text blocks., Detected context window attack attempt. (+4 more)
 
 ### Community 226 - "Community 226"
 Cohesion: 0.22
@@ -2632,8 +2674,8 @@ Cohesion: 0.07
 Nodes (26): CompletedProcess, Path, local qwen3:14b: second run leaves env identical., local-coder target: second run leaves env identical., local-anchor target: second run leaves env identical., anthropic target: second run leaves env identical., Expected keys are present in docker/.env after a switch., --verify flag causes switch_model.sh to check both bots are healthy. (+18 more)
 
 ### Community 234 - "Community 234"
-Cohesion: 0.05
-Nodes (18): record_activity with bot_id='hermes' stores bot_id in the entry., record_activity without bot_id stores bot_id=None in the entry., get_activity(bot_id=...) returns only entries matching that bot_id., get_activity_summary returns a by_bot breakdown keyed by bot_id., get_activity_summary returns empty by_bot when no log file exists., process_webhook passes agent_id as bot_id to record_activity., IDs < 10000 should be treated as test fixtures by the pruner heuristic., Real Telegram UIDs (9-10 digits) must NOT be pruned. (+10 more)
+Cohesion: 0.02
+Nodes (90): CollaboratorActivityTracker, Path, Path, CollaboratorActivityTracker, _is_fixture_uid(), Return a health snapshot suitable for /status/detail., Append one activity entry for any tracked collaborator or the owner.          Ar, Mirror activity into workspace contributor logs used by daily digests. (+82 more)
 
 ### Community 235 - "Community 235"
 Cohesion: 0.10
@@ -2648,8 +2690,8 @@ Cohesion: 0.15
 Nodes (16): Container Runtime Abstraction, AppleContainerEngine, apple_engine.py (Runtime), compose_generator.py (Runtime), ServiceDef, config.py (Runtime), RuntimeConfig, DockerEngine (+8 more)
 
 ### Community 238 - "Community 238"
-Cohesion: 0.09
-Nodes (13): Test RBAC manager functionality., Set up test environment., Test viewer role permissions., Test collaborator role permissions., Test admin role permissions., Test owner role permissions., Test tool tier access permissions., Test setting user roles. (+5 more)
+Cohesion: 0.06
+Nodes (10): Verify CONTRIBUTING.md references are correct., The test command in CONTRIBUTING.md should be valid., Verify README.md claims match actual implementation., This representative sample of modules mentioned in README should exist as code., README claims Python 3.9+., Verify SECURITY.md content., _read_file(), TestContributingMdAccuracy (+2 more)
 
 ### Community 239 - "Community 239"
 Cohesion: 0.25
@@ -2659,9 +2701,17 @@ Nodes (18): date, aggregate_costs(), build_json_all(), build_json_current(), epr
 Cohesion: 0.07
 Nodes (32): autoOpenFile, AWS_PROFILE, AWS_REGION, FASTMCP_LOG_LEVEL, FASTMCP_NO_BANNER, outputPath, PATH, .llm_settings/mcp-servers/atlassian/agentshroud/mcp-atlassian.sh (+24 more)
 
+### Community 242 - "Community 242"
+Cohesion: 0.04
+Nodes (27): DNSFilter, DNSQuery, DNSVerdict, Resolve domain to an IP and cache it for 5 minutes., Return True if a DNS rebinding attack is detected.          Re-resolves the doma, Return True if the IP address is in a private / loopback range., TunnelingPattern, default_config() (+19 more)
+
 ### Community 243 - "Community 243"
 Cohesion: 0.11
 Nodes (6): Path, _age(), Set a file's mtime to `hours` hours in the past., TestComplianceAuditing, TestRuntimeProtectionAndMalware, TestVulnerabilityManagement
+
+### Community 244 - "Community 244"
+Cohesion: 0.11
+Nodes (8): Any, Pattern, get_sanitizer_stats(), install_log_sanitizer(), Install the log sanitizer on all existing loggers., Get statistics about sanitization patterns., Compile regex patterns for sensitive data detection., TestLogSanitizer
 
 ### Community 245 - "Community 245"
 Cohesion: 0.14
@@ -2684,8 +2734,8 @@ Cohesion: 0.04
 Nodes (45): Additional Controls Checklist, AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap, Context, Critical Files (v0.8.0 Changes), DELIVERABLE 1 — Domain-by-Domain Assessment, DELIVERABLE 2 — Maturity Scorecard, DELIVERABLE 3 — v0.8.0 Implementation Items, DELIVERABLE 4 — v1.0 Roadmap (+37 more)
 
 ### Community 250 - "Community 250"
-Cohesion: 0.07
-Nodes (32): Any, datetime, get_agent_cve_source(), get_agent_ghsa_repo(), Return the CVE-pipeline config for *bot_id* (raises KeyError if unknown).      A, Return the resolved GitHub advisory repo slug for *bot_id*.      Honors the per-, _already_checked_upstream_today(), _already_ingested_ghsa_today() (+24 more)
+Cohesion: 0.06
+Nodes (32): Any, datetime, _already_checked_upstream_today(), _already_ingested_ghsa_today(), _already_sent_today(), cve_report_scheduler(), format_upstream_cve_alert(), ghsa_ingest_scheduler() (+24 more)
 
 ### Community 251 - "Community 251"
 Cohesion: 0.17
@@ -2716,8 +2766,8 @@ Cohesion: 0.06
 Nodes (31): 1. Always Specify Risk Level, 1Password Integration, 2. Use Allowlisting Liberally, 3. Take Screenshots for Audit Trail, 4. Handle CAPTCHAs Gracefully, 5. Never Extract Credentials, "Action requires approval but none granted", Approval Integration (+23 more)
 
 ### Community 259 - "Community 259"
-Cohesion: 0.20
-Nodes (6): compute_bot_scorecard(), Per-bot scorecard scoped to a single bot's image scan and egress stats.      Sco, Bot with no image scan data should default critical/high/medium to 0., Bot not in config → image='', scan skipped, score based on egress only., If egress_filter.get_stats raises, denials defaults to 0 (no crash)., TestComputeBotScorecard
+Cohesion: 0.09
+Nodes (12): Return True if channel is a DM with the configured owner.          In Slack, DM, Proxy a bot Slack Web API call through the security pipeline.          For messa, POST to https://slack.com/api/<method> with the bot token., Intercept apps.connections.open: rewrite the returned WSS URL to route         t, Pop and return the real WSS URL for a relay token (one-time use).          Retur, Handle an inbound Slack event payload received via Socket Mode.          Called, Create a Slack channel for a group. Returns channel_id or None on failure., Invite a Slack user to a channel. Returns True on success. (+4 more)
 
 ### Community 260 - "Community 260"
 Cohesion: 0.11
@@ -2756,8 +2806,8 @@ Cohesion: 0.18
 Nodes (7): main(), package_skill(), Package a skill folder into a .skill file.      Args:         skill_path: Path t, Basic validation of a skill, validate_skill(), TestPackageSkillSecurity, TestCase
 
 ### Community 269 - "Community 269"
-Cohesion: 0.10
-Nodes (15): Any, aggregate_results(), get_fluent_bit_summary(), get_openscap_summary(), get_trivy_summary(), _load_latest_json(), Load the most recent JSON report file from a directory.      Args:         direc, Return latest Trivy scan summary from saved reports.      When Trivy is installe (+7 more)
+Cohesion: 0.18
+Nodes (6): get_openscap_summary(), _load_latest_json(), Load the most recent JSON report file from a directory.      Args:         direc, Return latest OpenSCAP compliance summary from saved reports., TestGetOpenscapSummary, TestLoadLatestJson
 
 ### Community 270 - "Community 270"
 Cohesion: 0.11
@@ -2805,11 +2855,11 @@ Nodes (16): Phase Review 2026-03-03, Go/No-Go Decision: GO - Continue Developmen
 
 ### Community 281 - "Community 281"
 Cohesion: 0.03
-Nodes (32): TelegramAPIProxy, Collaborator multi-turn disclosure block prose should be normalized., Collaborators should never receive pairing codes or pairing approval commands., Form payloads containing pairing secrets must be blocked for collaborators., JSON caption field should keep healthcheck SKILL.md text unchanged when sandbox, Hyphen-separated embedding-provider wording should rewrite for form payloads., Form caption should keep non-healthcheck SKILL.md sandbox text unchanged., Missing content-type + empty text must not bypass content filtering for collabor (+24 more)
+Nodes (32): TelegramAPIProxy, Empty text field must not bypass filtering when message contains tool payload., Empty text field must not bypass filtering when content contains tool payload., Healthcheck SKILL.md sandbox errors should rewrite when payload uses message fie, JSON message field with embedding/provider hints but no error keyword should rem, JSON message field should keep non-healthcheck SKILL.md sandbox text unchanged., Form payload healthcheck SKILL text without sandbox context should keep original, Healthcheck sandbox SKILL.md errors should rewrite when form payload uses conten (+24 more)
 
 ### Community 282 - "Community 282"
-Cohesion: 0.08
-Nodes (18): MockValidator, Test validator registration., Test the complete rotation workflow., Set up manager with a credential that needs rotation., Mock validator for testing., Test complete successful rotation workflow., Test rotation workflow with validation failure and rollback., Mock validation that can be controlled. (+10 more)
+Cohesion: 0.10
+Nodes (12): MockValidator, Test validator registration., Test the complete rotation workflow., Set up manager with a credential that needs rotation., Mock validator for testing., Test complete successful rotation workflow., Test rotation workflow with validation failure and rollback., Mock validation that can be controlled. (+4 more)
 
 ### Community 283 - "Community 283"
 Cohesion: 0.06
@@ -2818,6 +2868,10 @@ Nodes (30): 🔐 Core Security Principle, 🏗️ Credential Architecture — Ho
 ### Community 284 - "Community 284"
 Cohesion: 0.06
 Nodes (30): Add Long Description, Add Screenshots, Add Security Badge, "Authentication required", "clawhub: command not found", 🎨 Customize Skill Page (Optional), 📋 Detailed Step-by-Step, Immediate (Day 1) (+22 more)
+
+### Community 285 - "Community 285"
+Cohesion: 0.09
+Nodes (15): EgressRequest, Risk assessment levels for egress requests., Represents a pending egress approval request., RiskLevel, Test cleanup of expired pending requests., Test suite for egress approval API endpoints., Mock app_state with egress approval queue., Mock authentication dependency. (+7 more)
 
 ### Community 286 - "Community 286"
 Cohesion: 0.25
@@ -2832,8 +2886,8 @@ Cohesion: 0.15
 Nodes (4): CredentialInjector, Test the CredentialInjector module., Agent container should have no secrets., TestCredentialInjector
 
 ### Community 289 - "Community 289"
-Cohesion: 0.03
-Nodes (54): Any, Any, Path, EnvironmentGuard, Check if command execution should be blocked to prevent environment leakage., Check if command contains patterns that could access environment., Scrub environment variables and API keys from command output.          Args:, Check if a value looks like a credential. (+46 more)
+Cohesion: 0.14
+Nodes (14): Path, Scan arbitrary text content for malicious git/supply-chain patterns.          Th, Scan a git repository for malicious hooks and scripts.          Args:, Scan git hooks directory for malicious content., Scan package.json for suspicious install scripts., Scan setup.py for suspicious installation scripts., Scan pyproject.toml for suspicious build scripts., Analyze a script file for malicious patterns. (+6 more)
 
 ### Community 290 - "Community 290"
 Cohesion: 0.06
@@ -2848,16 +2902,16 @@ Cohesion: 0.06
 Nodes (41): CompletedProcess, _bearer_from_argv(), _build_payload_via_shell(), _extract_payload_builder(), _fenced_code_blocks(), Wrapper is COPY'd into and chmod'd in BOTH bot Dockerfiles., Hermes' belt-and-suspenders tirith trust must be scoped, never blanket.      It, The wrapper must NOT shell out to python3/python for JSON building.      Regress (+33 more)
 
 ### Community 293 - "Community 293"
-Cohesion: 0.20
-Nodes (17): Any, SecurityEvent, Severity, from_anomaly_alert(), from_audit_chain_entry(), from_dict(), from_egress_attempt(), from_pipeline_result() (+9 more)
+Cohesion: 0.19
+Nodes (19): Any, SecurityEvent, Severity, collect_recent_events(), from_anomaly_alert(), from_audit_chain_entry(), from_dict(), from_egress_attempt() (+11 more)
 
 ### Community 295 - "Community 295"
 Cohesion: 0.11
 Nodes (18): Test deleting a ledger entry, Test deleting a non-existent entry, Test stats calculation, Test creating a ledger entry, Test querying ledger with time range filters, Test querying ledger with forwarded_to filter, Test retrieving a ledger entry by ID, Test paginated ledger query (+10 more)
 
 ### Community 296 - "Community 296"
-Cohesion: 0.03
-Nodes (74): Enum, Any, HealthStatus, FindingSeverity, Coverage, Threat levels for detected issues., ThreatLevel, Decision (+66 more)
+Cohesion: 0.06
+Nodes (42): ContributorRecord, Any, HealthStatus, ServiceDescriptor, ServiceStatus, _role_enum(), Alarm, AlarmStatus (+34 more)
 
 ### Community 297 - "Community 297"
 Cohesion: 0.08
@@ -2872,8 +2926,8 @@ Cohesion: 0.14
 Nodes (13): author, dependencies, playwright, description, keywords, name, auditLogging, filesystemAccess (+5 more)
 
 ### Community 300 - "Community 300"
-Cohesion: 0.16
-Nodes (5): client_from_env(), Build SCLClient from args or environment variables., _FakeHTTPResponse, Context-manager stand-in for the object urlopen() yields., TestClientFromEnv
+Cohesion: 0.36
+Nodes (3): client_from_env(), Build SCLClient from args or environment variables., TestClientFromEnv
 
 ### Community 302 - "Community 302"
 Cohesion: 0.14
@@ -2908,12 +2962,12 @@ Cohesion: 0.07
 Nodes (28): The record is emitted through the module logger for A/B comparison., With WHISPER_MODEL_SIZE unset, the resolved size stays small.en., Setting WHISPER_MODEL_SIZE=base.en flips the resolved model (A/B)., A garbage WHISPER_MODEL_SIZE env value does not break startup., The A/B measurement fires on the real transcribe path (model mocked).      Prove, No requested value → the default is used (behaviour unchanged)., A valid requested value overrides the default (the A/B knob)., Operator-friendly: trims + lowercases before matching. (+20 more)
 
 ### Community 311 - "Community 311"
-Cohesion: 0.13
-Nodes (8): Return (field_name, text_value) for Telegram-style outbound payloads., Thin wrapper: sets per-request bot identity in contextvars so local replies, Proxy a single Telegram API request.          For getUpdates responses: scan eac, Suppress repeated startup/shutdown system notices in short windows., True when filtered payload should be dropped instead of forwarded., Return the @username (without @) for the given bot_id.          Looks up ``_bot_, Send a rate-limited activity mirror to the owner chat for collaborator messages., Forward a Telegram file download and return a raw-binary sentinel dict.
+Cohesion: 0.10
+Nodes (11): Return (field_name, text_value) for Telegram-style outbound payloads., Thin wrapper: sets per-request bot identity in contextvars so local replies, Proxy a single Telegram API request.          For getUpdates responses: scan eac, Suppress repeated startup/shutdown system notices in short windows., True when filtered payload should be dropped instead of forwarded., Return the @username (without @) for the given bot_id.          Looks up ``_bot_, Create a single-use invite link for a Telegram group. Returns URL or None., Kick (ban + unban) a user from a Telegram group. Returns True on success. (+3 more)
 
 ### Community 312 - "Community 312"
-Cohesion: 0.10
-Nodes (11): Test Observatory Mode configuration and endpoints., Test that get_module_mode respects AGENTSHROUD_MODE env var., Test that pinned modules always return enforce even in monitor mode., Test SecurityPipeline.set_global_mode method., Test set_global_mode handles missing components gracefully., Test that observatory mode state is properly initialized., Test auto-revert timer functionality., Test module mode resolution with pinned modules. (+3 more)
+Cohesion: 0.15
+Nodes (8): CompetitiveIntelReport, CompetitorEntry, Raised when a loaded report fails its hash integrity check., A single competitor record in a competitive intel report., ReportIntegrityError, Tests for Pydantic model validation., TestCompetitiveIntelReportSchema, TestIntelReportHashIntegrity
 
 ### Community 313 - "Community 313"
 Cohesion: 0.30
@@ -2948,8 +3002,8 @@ Cohesion: 0.10
 Nodes (20): Configuration / Environment Variables, Confused Deputy Attack Prevention (MCP OAuth), Function Details, HMAC-Signed Consent Cookies, Key Classes / Functions, oauth_security.py, OAuthSecurityValidator (Class), OAuthSecurityValidator.create_consent_cookie(client_id, scopes, user_id) (+12 more)
 
 ### Community 321 - "Community 321"
-Cohesion: 0.09
-Nodes (12): ConfusedDeputyError, OAuthError, OAuthRequest, OAuthSecurityValidator, PKCEViolation, RedirectMismatch, TestClientValidation, TestConsentCookieBinding (+4 more)
+Cohesion: 0.04
+Nodes (26): ConfusedDeputyError, OAuthError, OAuthRequest, OAuthSecurityValidator, PKCEViolation, RedirectMismatch, TestClientValidation, TestConsentCookieBinding (+18 more)
 
 ### Community 322 - "Community 322"
 Cohesion: 0.05
@@ -2960,8 +3014,8 @@ Cohesion: 0.18
 Nodes (11): CRITICAL-1: history.env Committed with Live Telegram Credentials, CRITICAL-2: No Request Body Size Limits (OOM Vector via Pydantic models), Security Assessment v0.8.0, Overall Security Grade B+ (Strong architecture, specific gaps before v1.0), HIGH-1: ML Injection Classifier is Entirely a Stub (gateway/security/ml_classifier.py), HIGH-2: Approval Queue Telegram Notifications Unimplemented (TODO at line 326), CRITICAL: ContextGuard Never Blocks (should_block_message returns False always), Prompt Injection Assessment v0.7.0 (+3 more)
 
 ### Community 325 - "Community 325"
-Cohesion: 0.20
-Nodes (20): esp_err_t, esp_event_base_t, ws_client_handle_t, _deliver_utterance(), rlog_task(), _on_event(), ws_client_connected(), ws_client_create() (+12 more)
+Cohesion: 0.11
+Nodes (36): esp_err_t, esp_event_base_t, esp_event_base_t, ws_client_handle_t, lv_display_t, app_main(), _build_ws_url(), _deliver_utterance() (+28 more)
 
 ### Community 326 - "Community 326"
 Cohesion: 0.24
@@ -3012,8 +3066,8 @@ Cohesion: 0.07
 Nodes (28): About the Creator, AgentShroud™ — Project Knowledge Base, Architecture, Architecture Review, Current Status, Design Philosophy, Development Phases, Documentation & Ideas (+20 more)
 
 ### Community 338 - "Community 338"
-Cohesion: 0.08
-Nodes (17): GatewayEmailService, GatewayEmailService, The subset of ``smtplib.SMTP_SSL`` the service uses., Sends owner-comms email over an injectable SMTP transport., Build the MIME message string (multipart/alternative).          For HTML mail th, Send one email synchronously.  Blocking — call in an executor.          Raises t, SmtpLike, Protocol (+9 more)
+Cohesion: 0.11
+Nodes (12): GatewayEmailService, GatewayEmailService, Sends owner-comms email over an injectable SMTP transport., _FakeSmtp, POST /email/send to the owner sends via forward._email_service — proving, Records login/sendmail; usable as a context manager like SMTP_SSL., _service(), test_sender_property() (+4 more)
 
 ### Community 339 - "Community 339"
 Cohesion: 0.11
@@ -3021,7 +3075,7 @@ Nodes (31): DataExfilVolumeConfig, DataExfilVolumeGuard, Observe one outbound re
 
 ### Community 340 - "Community 340"
 Cohesion: 0.15
-Nodes (10): AgentTarget, Any, Build the outbound payload for `target`, shared by the blocking and         stre, Forward sanitized content to agent via HTTP POST          Args:             targ, Stream sanitized content to an OpenAI-compatible agent, yielding text         de, Check health of one or all agent targets          Args:             target: Spec, Return all configured agent targets          Returns:             List of AgentT, Initialize router          Args:             config: Router configuration (+2 more)
+Nodes (23): AuthRequired, EmailSendRequest, ForwardRequest, Request, auth_dep(), email_send(), email_send_owner(), forward_content() (+15 more)
 
 ### Community 341 - "Community 341"
 Cohesion: 0.20
@@ -3048,8 +3102,8 @@ Cohesion: 0.10
 Nodes (20): AgentShroud Data Dictionary, ApprovalRequest, AuditEntry, Configuration Entities, ConfigurationSetting, Core Audit Entities, Data Classification, Data Retention Policies (+12 more)
 
 ### Community 348 - "Community 348"
-Cohesion: 0.05
-Nodes (20): Any, falco_alerts(), Return recent Falco runtime security alerts with summary., Return recent Wazuh HIDS alerts with FIM and rootkit summary., wazuh_alerts(), Persist a report awaiting an async sanitizer (presidio) if injected.          Sa, Prune oldest reports so the shared volume can't be filled., Metadata (no content) for all reports, newest first.          O(n) file reads pe (+12 more)
+Cohesion: 0.06
+Nodes (16): Any, Persist a report awaiting an async sanitizer (presidio) if injected.          Sa, Prune oldest reports so the shared volume can't be filled., Metadata (no content) for all reports, newest first.          O(n) file reads pe, Filesystem-backed shared report store on the gateway-data volume., Persist a report (sync sanitizer path); return its id.          Sanitizes ALL fr, ReportStore, Route-level: POST/GET /api/reports through the FastAPI app (SCRUM-79). (+8 more)
 
 ### Community 349 - "Community 349"
 Cohesion: 0.25
@@ -3204,7 +3258,7 @@ Cohesion: 0.08
 Nodes (23): Guardrails, Invocation, Jira ticket — every development batch gets one, Mode A — Single task, Mode B — Comprehensive review sweep, Reviewers and fixer available to you, Role, Skill: OpenClaw Dev Workflow (ODEV) (+15 more)
 
 ### Community 390 - "Community 390"
-Cohesion: 0.19
+Cohesion: 0.21
 Nodes (13): Path, FalcoAlertWatcher, Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts., Poll Falco alert files until stopped., _make_alert(), Watcher works without a lockdown module — only logs., test_critical_alert_triggers_lockdown(), test_deduplication_same_alert_twice() (+5 more)
 
 ### Community 391 - "Community 391"
@@ -3376,8 +3430,8 @@ Cohesion: 0.39
 Nodes (7): ensure_local_model_available(), preflight_local(), upsert_env_value(), usage(), verify_both_bots_healthy(), wait_for_local_model(), switch_model.sh script
 
 ### Community 435 - "Community 435"
-Cohesion: 0.02
-Nodes (176): add(), Exception, Any, AuthRequired, Exception, Request, WebSocket, Get aggregate statistics          Returns:             Dictionary with total ent (+168 more)
+Cohesion: 0.01
+Nodes (413): ApprovalDecision, Enum, Exception, Any, Any, FastAPI, LogRecord, AuthRequired (+405 more)
 
 ### Community 436 - "Community 436"
 Cohesion: 0.10
@@ -3412,7 +3466,7 @@ Cohesion: 0.25
 Nodes (5): Every collaborator message must produce a response — never a silent drop., Even a generic message triggers _send_collaborator_safe_info_response (local_inf, A blocked slash command must always produce a protected notice., Unknown users must always receive either a pending notice or a rate-limit notice, TestNoResponseGuarantee
 
 ### Community 446 - "Community 446"
-Cohesion: 0.21
+Cohesion: 0.19
 Nodes (3): _audit_entry(), TestCollectRecentEvents, TestFromAuditChainEntry
 
 ### Community 447 - "Community 447"
@@ -3507,6 +3561,10 @@ Nodes (23): Bad: API Change (FORBIDDEN), Bad: Logic Change (FORBIDDEN), Critical
 Cohesion: 0.08
 Nodes (23): AgentShroud Deployment Architecture, Apple Containers (macOS), Cloud Provider Secrets, Default Port Allocation, Deployment Modes, Deployment Validation, DNS Routing Configuration, Docker Runtime (+15 more)
 
+### Community 470 - "Community 470"
+Cohesion: 0.08
+Nodes (12): Test that OpenClaw container isolation is validated., Test that missing internal network is flagged., Test detection of multiple configuration violations., Test handling of invalid/non-existent files., Test handling of empty configuration., Test NetworkSecurityFinding dataclass structure., Test comprehensive network validation rules., Test that a valid docker-compose configuration passes. (+4 more)
+
 ### Community 471 - "Community 471"
 Cohesion: 0.08
 Nodes (23): API Keys, Changing AI Model, check-status.sh, Common Tasks, Container Management, Container unhealthy, Debugging Issues, devices.sh (+15 more)
@@ -3584,12 +3642,12 @@ Cohesion: 0.09
 Nodes (21): 1. Create HTML content, 2. Find your canvas host URL, 3. Find connected nodes, 4. Present content, 5. Navigate, snapshot, or hide, Actions, Architecture, Canvas Skill (+13 more)
 
 ### Community 493 - "Community 493"
-Cohesion: 0.21
-Nodes (15): CollaboratorActivityTracker, Path, _is_fixture_uid(), Return True when uid looks like a test fixture that should be silently dropped., _make_md(), _prune_fixture_markdown(), Run the same markdown-prune logic as lifespan.py and return pruned count., Create a fake contributor markdown file for the given uid. (+7 more)
+Cohesion: 0.12
+Nodes (12): FetchOutcome, Path, IntelReportStore, Persistent store for competitive intelligence reports.      Each report is saved, Persist *report* to the store, linking it to the previous report.          Sets, Load the most recently saved report.          Args:             verify: If True,, Load all reports in chronological order (oldest first)., Walk the entire report chain and verify hash linkage.          Returns: (+4 more)
 
 ### Community 494 - "Community 494"
 Cohesion: 0.12
-Nodes (6): Validate that default_url uses http/https and targets an internal Docker host., Validate that each target URL uses http/https and targets an internal Docker hos, Extract the key_id from an encrypted blob without decrypting., Check if resource usage is allowed for an agent.          Args:             agen, Validate and sanitize bot_id to prevent path traversal.          Allows alphanum, ValueError
+Nodes (6): SimpleNamespace, TestDefaultBotDockerfile, TestKillSwitch, TestRebuild, TestRequireAuth, KillSwitchAction
 
 ### Community 495 - "Community 495"
 Cohesion: 0.11
@@ -3597,7 +3655,7 @@ Nodes (17): AgentShroud Schema Documentation, Approval Queue Schema, Audit Chain
 
 ### Community 496 - "Community 496"
 Cohesion: 0.11
-Nodes (19): get_collector(), ModuleStatsCollector, Thread-safe per-module allow/block/sanitize counters., Record one enforcement decision for ``module``.          Never raises: an unknow, Return a per-module stats snapshot with totals and block rate., Ergonomic recorder for enforcement points — never raises.      ``sanitized=True`, record_decision(), SCRUM-80 F1 regression — a DENIED egress attempt must count as blocked.      The (+11 more)
+Nodes (20): Decision, get_collector(), ModuleStatsCollector, Thread-safe per-module allow/block/sanitize counters., Record one enforcement decision for ``module``.          Never raises: an unknow, Return a per-module stats snapshot with totals and block rate., Ergonomic recorder for enforcement points — never raises.      ``sanitized=True`, record_decision() (+12 more)
 
 ### Community 497 - "Community 497"
 Cohesion: 0.09
@@ -3700,16 +3758,16 @@ Cohesion: 0.09
 Nodes (21): Access Control (7), 🛡️ AgentShroud Security Inventory (v0.8.0), Audit & Compliance (4), Collaborator Testing, Encryption & Key Management (3), External Integrations (4), Inbound Defense (6), Infrastructure Protection (8) (+13 more)
 
 ### Community 523 - "Community 523"
-Cohesion: 0.01
-Nodes (72): MiddlewareManager, Check if user_id is the system owner via RBAC config (single source of truth)., Extract potential file paths from message content., Check if a file path is allowed for a user to access., Scan tool result for injection attempts and return sanitized content.          A, Filter outbound response to remove sensitive XML and path information., Get the log sanitizer for integration with logging system., Set configuration and initialize tool result sanitizer (+64 more)
+Cohesion: 0.04
+Nodes (16): _FakeRBAC, A security-critical guard whose constructor RAISES during __init__ must     NOT, Deterministic stand-in for RBACManager., _req(), TestBrowserSecurity, TestContextGuard, TestCriticalGuardInitFailClosed, TestCrossSessionAccess (+8 more)
 
 ### Community 524 - "Community 524"
 Cohesion: 0.14
-Nodes (27): face_state_t, _on_vg_state(), tts_task(), delivery_resume_offset(), delivery_track_sent_ok(), playback_gate_should_open(), ui_face_set_state(), wakeword_set_tts_playing() (+19 more)
+Nodes (28): face_state_t, _on_vg_state(), tts_task(), delivery_resume_offset(), delivery_track_sent_ok(), playback_gate_should_open(), ui_face_set_state(), wakeword_set_tts_playing() (+20 more)
 
 ### Community 525 - "Community 525"
-Cohesion: 0.13
-Nodes (31): ws_client_handle_t, lv_event_t, _send_status_beacon(), voice_task(), _touch_pressed(), _touch_start_only(), _btn_pressed(), _btn_released() (+23 more)
+Cohesion: 0.12
+Nodes (29): esp_err_t, lv_event_t, _touch_pressed(), _touch_start_only(), _btn_pressed(), _btn_released(), _ptt_end(), _ptt_start() (+21 more)
 
 ### Community 526 - "Community 526"
 Cohesion: 0.10
@@ -3717,7 +3775,7 @@ Nodes (20): Attachments, Common Operations, Configuration Setup, Debugging, Dele
 
 ### Community 537 - "Community 537"
 Cohesion: 0.14
-Nodes (7): _contains_internal_approval_banner must only fire on real egress banners., Common LLM prose with 'risk:', 'tool:', 'id:' must NOT trigger the matcher., Generic 'domain:' mention without the egress emoji must not trigger., The canonical 🌐 *Egress Request* header from TelegramEgressNotifier must match., Inline-keyboard callback tokens must always match (egress_allow_always_<uuid>)., egress_deny_ callback token must match., TestInternalBannerMatcher
+Nodes (18): _OutboundScan, Result of the shared outbound text security scan.      processed: a scan path (c, _load_overrides(), persist_group_collab_mode(), persist_group_create(), persist_group_delete(), persist_group_member_add(), persist_group_member_remove() (+10 more)
 
 ### Community 538 - "Community 538"
 Cohesion: 0.09
@@ -3745,7 +3803,7 @@ Nodes (20): 1. Accomplishments This Phase, 2. Security Value Audit — Genuine P
 
 ### Community 544 - "Community 544"
 Cohesion: 0.08
-Nodes (18): CredentialInfo, Information about a managed credential., Age of credential in days., Whether credential is currently in grace period., Test credential age calculation., Test warning threshold calculation., Test rotation requirement calculation., Test grace period status tracking. (+10 more)
+Nodes (13): CredentialInfo, Information about a managed credential., Age of credential in days., Whether credential is currently in grace period., _old_cred(), TestEmergencyAndRetire, TestRotateGuardBranches, TestStatusHelpers (+5 more)
 
 ### Community 545 - "Community 545"
 Cohesion: 0.12
@@ -3785,7 +3843,7 @@ Nodes (3): alert_critical(), log(), security-entrypoint.sh script
 
 ### Community 554 - "Community 554"
 Cohesion: 0.09
-Nodes (13): CredentialValidator, Base class for credential validators., Register a validator for a credential type., Status of a credential rotation., RotationStatus, _old_cred(), TestCheckAndRotateDisabled, TestEmergencyAndRetire (+5 more)
+Nodes (11): KeyRotationConfig, KeyRotationManager, Manages automated rotation of credentials with zero downtime., Initialize the key rotation manager., Register a validator for a credential type., Safely read a credential from 1Password using op CLI., manager(), TestCheckAndRotateDisabled (+3 more)
 
 ### Community 555 - "Community 555"
 Cohesion: 0.50
@@ -3804,12 +3862,12 @@ Cohesion: 0.83
 Nodes (3): fail(), pass(), test-op-auth.sh script
 
 ### Community 565 - "Community 565"
-Cohesion: 0.14
-Nodes (5): DocumentTag, Create and store a provenance tag for a document., Look up a document tag by its SHA-256 content hash., Provenance record for a document ingested into the agent context., TestDocumentTagging
+Cohesion: 0.09
+Nodes (22): encrypted_store(), prompt_guard(), Clean message flows through entire pipeline without issues., Message with PII gets sanitized and logged correctly., When both PII sanitizer and prompt guard detect issues., Agent with low trust cannot perform elevated actions., Multiple messages through pipeline concurrently — thread safety., Pipeline with only PII enabled, prompt guard disabled. (+14 more)
 
 ### Community 566 - "Community 566"
-Cohesion: 0.21
-Nodes (7): Any, Process an incoming webhook through the security pipeline., Prepare payload with session context injection., Extract display name from webhook payload., Extract user ID from webhook payload based on source platform., Extract message text from webhook payload (Telegram format)., Replace message text in payload with sanitized version.
+Cohesion: 0.08
+Nodes (21): Any, Path, Validate the X-Telegram-Bot-Api-Secret-Token header.          Uses constant-time, Process an incoming webhook through the security pipeline., Prepare payload with session context injection., Extract display name from webhook payload., Receives webhooks and routes them through the security pipeline.      In product, Extract user ID from webhook payload based on source platform. (+13 more)
 
 ### Community 567 - "Community 567"
 Cohesion: 0.67
@@ -3900,8 +3958,8 @@ Cohesion: 0.10
 Nodes (19): 1. Code Audit, 2. Verify Open Findings, 3. Test Each Module, 4. Collaborator Isolation, 5. Update the Module Matrix, Additional Security Components, AgentShroud v0.8.0 — Full Security & Functionality Audit, Architecture (+11 more)
 
 ### Community 613 - "Community 613"
-Cohesion: 0.15
-Nodes (8): WebSocket endpoints must validate token during handshake, not first message, WS /ws/approvals closes immediately without token, WS /ws/approvals closes with bad token, WS /ws/approvals rejects the master auth token -- R3-L4 removed the         mast, WS /ws/approvals accepts valid scoped WS token, WS /ws/activity closes immediately without token, WS /ws/activity closes with bad token, TestWebSocketHandshakeAuth
+Cohesion: 0.10
+Nodes (12): EgressApprovalQueue, Thread-safe asyncio queue for managing egress approval requests.      Features:, Set optional event bus for approval telemetry., Approve a pending egress request.          Args:             request_id: ID of r, Deny a pending egress request.          Args:             request_id: ID of requ, Get list of pending approval requests., Append an entry to the capped decision audit log (CC-40)., Log an automatic allow/deny from EgressFilter.check() (non-interactive). (+4 more)
 
 ### Community 614 - "Community 614"
 Cohesion: 0.67
@@ -3916,8 +3974,8 @@ Cohesion: 0.15
 Nodes (12): Collaborator Setup Checklist, Executive Summary, Files intentionally not for collaborators, Optional local tooling, Required for local model-profile persistence, Required for standard Docker runtime, Required if using 1Password-backed secret retrieval, Required if using external LLM providers (+4 more)
 
 ### Community 667 - "Community 667"
-Cohesion: 0.08
-Nodes (18): FetchOutcome, make_httpx_fetcher(), Result of re-fetching a candidate citation URL through the web proxy., A source counts as proven only on a 2xx with non-empty content., Production fetcher: stream the URL and hash the body as proof-of-source.      SE, _FakeStreamResponse, Stand-in for the object httpx.stream() yields as a context manager., Patch httpx.stream; return a list that records the call kwargs. (+10 more)
+Cohesion: 0.12
+Nodes (9): make_httpx_fetcher(), Production fetcher: stream the URL and hash the body as proof-of-source.      SE, _FakeStreamResponse, Stand-in for the object httpx.stream() yields as a context manager., Patch httpx.stream; return a list that records the call kwargs., TestMakeHttpxFetcher, Fake httpx.stream context manager yielding a body in chunks., _StreamResp (+1 more)
 
 ### Community 668 - "Community 668"
 Cohesion: 0.15
@@ -3928,8 +3986,8 @@ Cohesion: 0.07
 Nodes (28): §1 — Re-audit of v0.8.0 Prior Findings, §2 — New v1.2.0 Findings (OpenClaw-specific), 3.1 PII Sanitizer — confidence floor, 3.2 Egress filter — enforce mode, 3.3 form-urlencoded outbound bypass (PR#158 regression check), 3.4 KeyVault seeding includes Hermes secrets, 3.5 Telegram proxy multi-bot token validation, 3.6 CONNECT proxy force-blocks api.telegram.org (+20 more)
 
 ### Community 670 - "Community 670"
-Cohesion: 0.16
-Nodes (14): Build normalized scanner summary for SOC/dashboard telemetry., Persist last scanner result and emit live event-bus telemetry., Run ClamAV antivirus scan. Tries clamdscan (daemon) first, falls back to clamsca, Run Trivy vulnerability scan., Return normalized scanner state + latest results for SOC/dashboard views., Export tamper-evident audit events in SOC/SIEM formats., Run OpenSCAP XCCDF evaluation against the running container., Run all locally available security scanners and return consolidated results. (+6 more)
+Cohesion: 0.10
+Nodes (14): Any, LogRecord, test_alert_store_push_and_summary(), Alert, alerts_summary(), AlertStore, _check_host(), logs_recent() (+6 more)
 
 ### Community 671 - "Community 671"
 Cohesion: 0.07
@@ -4005,7 +4063,7 @@ Nodes (18): 10. Seccomp Profile Conflicts (x86_64), 11. Bot Token Migration Conf
 
 ### Community 689 - "Community 689"
 Cohesion: 0.05
-Nodes (23): WebSocket, SOCWebSocketHandler, SOCWebSocketHandler, WSEvent, _coerce_to_ws_event(), Convert an EventBus item to WSEvent, return None if conversion fails., Manages a single /ws/soc client connection., Subscribe to EventBus and forward matching events to the client. (+15 more)
+Nodes (33): WebSocket, SOCWebSocketHandler, _get_config_token(), issue_ws_token(), Issue a short-lived, single-use WebSocket token for a user., Consume a WS token and return the user_id, or None if invalid/expired., Read the gateway auth token from env/secret.      Resolution order (matches inge, redeem_ws_token() (+25 more)
 
 ### Community 690 - "Community 690"
 Cohesion: 0.11
@@ -4060,8 +4118,8 @@ Cohesion: 0.11
 Nodes (17): AgentShroud™ Security Policy, Compliance Alignment, Emergency Response, Layer 1 — Core Pipeline (P0), Layer 2 — Middleware (P1), Layer 3 — Output Protection, Layer 4 — Tool & Agent Control, Layer 5 — Network & Egress (+9 more)
 
 ### Community 703 - "Community 703"
-Cohesion: 0.09
-Nodes (10): ContainerSnapshot, DriftAlert, Retrieve baseline snapshot for a container., Compare current config against baseline, return any drift alerts., SHA-256 hash of the config for quick comparison., Store a known-good baseline configuration. Returns config hash., Verify drift is detected even with rapid changes., TestDriftDetector (+2 more)
+Cohesion: 0.18
+Nodes (9): FetchOutcome, Result of re-fetching a candidate citation URL through the web proxy., A source counts as proven only on a 2xx with non-empty content., _draft(), _FakeFetcher, _inject_fetcher(), Point the endpoint's verifier at a deterministic fake fetcher., TestSubmitAuth (+1 more)
 
 ### Community 704 - "Community 704"
 Cohesion: 0.08
@@ -4076,8 +4134,8 @@ Cohesion: 0.11
 Nodes (16): Configuration, Database Schema, Drift Categories and Severity, drift_detector.py, DriftDetector.acknowledge_alert(alert_id), DriftDetector.check_drift(current), DriftDetector.get_alerts(container_id, unacknowledged_only, limit), DriftDetector.set_baseline(snapshot) (+8 more)
 
 ### Community 707 - "Community 707"
-Cohesion: 0.02
-Nodes (80): RBACConfig, TeamsConfig, GroupRole, Per-group roles for Telegram group workspace members.      Hierarchy (highest to, Numeric rank for comparison — higher is more privileged., Return True if this role is permitted to REQUEST high-risk tools.          OWNER, Merge group membership and admin IDs from TeamsConfig into RBAC.          Called, Return member IDs of a group, or empty list if no teams config. (+72 more)
+Cohesion: 0.06
+Nodes (24): RBACConfig, TeamsConfig, Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml, Enforces tool-level access control based on user role and group membership., Return per-user tool denial counts since last restart (V9-2: SOC correlation)., Return True if the user is within rate limits for the given tool.          Side-, ToolACLConfig, ToolACLEnforcer (+16 more)
 
 ### Community 708 - "Community 708"
 Cohesion: 0.11
@@ -4132,8 +4190,8 @@ Cohesion: 0.12
 Nodes (17): 1. Command Injection, 1. Pre-populate known_hosts, 2. Host Spoofing / Man-in-the-Middle, 2. Network Segmentation, 3. Credential Theft, 3. Key Rotation, 4. Privilege Escalation, 4. Rate Limiting (+9 more)
 
 ### Community 721 - "Community 721"
-Cohesion: 0.15
-Nodes (8): Test RBAC integration with middleware., Set up test environment., Close sqlite-holding sub-modules so Python 3.13's GC does not         finalize t, Test that RBAC is properly initialized in middleware., Test that RBAC blocks unauthorized access attempts., Test that RBAC allows authorized access., Test RBAC handling when user ID is missing., TestRBACIntegration
+Cohesion: 0.10
+Nodes (7): _container(), _module_state_guard(), Restore AGENTSHROUD_MODE, revert task, and WS token registry per test., TestGetEngineHelper, TestMgmtWsTokens, TestOpenclawAliases, TestStatus
 
 ### Community 722 - "Community 722"
 Cohesion: 0.12
@@ -4216,8 +4274,8 @@ Cohesion: 0.15
 Nodes (6): Tests for prompt guard evasion techniques., Zero-width chars between letters should not bypass detection., Fullwidth chars NFKC-normalized — injection defeated., Double-encoded base64 injection should be caught., Mix of Latin and Cyrillic should trigger homoglyph detection., TestPromptGuardEvasion
 
 ### Community 742 - "Community 742"
-Cohesion: 0.03
-Nodes (50): BotConfig, Declaration for a single bot encapsulated by AgentShroud.      Required bot HTTP, Compute the bot's internal base URL from hostname and port., The real docker container name for this bot — see container_name field., _load_config(), RouterConfig should accept single-label Docker service hostnames., Test PII entity type mapping, When agentshroud.yaml declares hermes:, load_config() populates it in bots. (+42 more)
+Cohesion: 0.05
+Nodes (21): If no tokens are registered, any token must be rejected., Tests for per-request bot token routing via contextvars.      Regression suite f, Outside a proxy_request call, _active_send_token() returns self._bot_token., When _inbound_bot_token is set, _active_send_token() returns it., Outside a proxy_request call, _active_bot_id() returns 'openclaw'., When _inbound_bot_id is set, _active_bot_id() returns it., _send_telegram_text uses the inbound contextvar token, not self._bot_token., Without contextvar, _send_telegram_text uses self._bot_token. (+13 more)
 
 ### Community 743 - "Community 743"
 Cohesion: 0.12
@@ -4380,8 +4438,8 @@ Cohesion: 0.13
 Nodes (13): Configuration / Environment Variables, Default Allowlist, Default Denylist Categories, egress_config.py, EgressFilterConfig.get_effective_allowlist(agent_id), EgressFilterConfig.is_denylisted(domain), EgressFilterConfig._matches_any_pattern(domain, patterns), Function Details (+5 more)
 
 ### Community 827 - "Community 827"
-Cohesion: 0.08
-Nodes (23): Related Notes, Startup Flow Diagram, 1Password Integration (AgentShroud), DNS Filter (entropy threshold, rate limits), File Sandbox (path allow/block lists), Gateway Startup Sequence, Key Vault (leak detection, log redaction), Egress Control Config Example (+15 more)
+Cohesion: 0.14
+Nodes (14): 1Password Vault Sharing Instructions, Current Files Status, Current Situation, How to Share the Vault, Next Steps, Option 1: Share Existing Vault, Option 2: Create and Share New Vault, Option 3: Use the Bot's Private Vault (+6 more)
 
 ### Community 828 - "Community 828"
 Cohesion: 0.15
@@ -4392,8 +4450,8 @@ Cohesion: 0.16
 Nodes (10): SSH Approval Flow (auto-approve vs human-review vs deny), SSHHostConfig (per-host allow/deny/auto-approve lists, timeout, key_path), SSH Command Injection Detection (INJECTION_PATTERNS regex + asyncio subprocess exec), SSH Proxy Module (gateway/ssh_proxy/proxy.py), Adversarial Red-Team / Blue-Team Assessment, AgentShroud v1.3.0, Executive Summary, How to regenerate this report accurately (+2 more)
 
 ### Community 830 - "Community 830"
-Cohesion: 0.26
-Nodes (5): check_message(), get_context_guard(), Get the global context guard instance., Check if message should be allowed, with detailed findings.      Args:         t, TestCheckMessage
+Cohesion: 0.16
+Nodes (4): check_message(), Check if message should be allowed, with detailed findings.      Args:         t, TestCheckMessage, TestSourceTagging
 
 ### Community 831 - "Community 831"
 Cohesion: 0.14
@@ -4596,8 +4654,8 @@ Cohesion: 0.17
 Nodes (11): Config Keys Read, Environment Variables Used, Imports From / Exports To, Key Classes / Functions, Known Issues / Notes, Purpose, Related, Responsibilities (+3 more)
 
 ### Community 881 - "Community 881"
-Cohesion: 0.24
-Nodes (9): face_emotion_t, lv_obj_t, ws_vg_state_t, face_animation_pause(), _apply_state_cb(), _find_canvas(), _report_and_place_canvas(), _state_to_emotion() (+1 more)
+Cohesion: 0.22
+Nodes (10): face_emotion_t, lv_obj_t, ws_vg_state_t, face_animation_pause(), _apply_state_cb(), _find_canvas(), _report_and_place_canvas(), _state_to_emotion() (+2 more)
 
 ### Community 882 - "Community 882"
 Cohesion: 0.17
@@ -4628,8 +4686,8 @@ Cohesion: 0.17
 Nodes (12): Anatomy of a Skill, Assets (`assets/`), Bundled Resources (optional), Concise is Key, Core Principles, Progressive Disclosure Design Principle, Progressive Disclosure Patterns, References (`references/`) (+4 more)
 
 ### Community 889 - "Community 889"
-Cohesion: 0.04
-Nodes (51): Any, RBACConfig, Role, ToolTier, RBACManager, Role, Any, SimpleNamespace (+43 more)
+Cohesion: 0.26
+Nodes (3): _FakeRBAC, Minimal RBAC stand-in with controllable check_permission results., TestSCLCaller
 
 ### Community 890 - "Community 890"
 Cohesion: 0.17
@@ -4912,8 +4970,8 @@ Cohesion: 0.54
 Nodes (6): check_hermes(), check_openclaw(), fail(), pass(), warn(), check-vendor-compat.sh script
 
 ### Community 961 - "Community 961"
-Cohesion: 0.17
-Nodes (6): Any, Check if request is within rate limit. Returns True if allowed., Check an outbound HTTP request before it's sent.          This is the pre-flight, Scan a response body for prompt injection, PII, and hidden content.          Thi, Record an audit entry in the hash chain., Get proxy statistics.
+Cohesion: 0.18
+Nodes (9): Any, aggregate_results(), get_fluent_bit_summary(), get_wazuh_summary(), Return latest Wazuh alert summary from the shared alert volume.      wazuh-agent, Return Fluent Bit log collector status.      Fluent Bit is a log shipper, not a, Aggregate results from all security scanners into a unified dict.      Returns:, TestAggregateResults (+1 more)
 
 ### Community 962 - "Community 962"
 Cohesion: 0.22
@@ -4928,8 +4986,12 @@ Cohesion: 0.22
 Nodes (9): AgentShroud Security Scripts Reference, Alerting, Best Practices, Logging, Monitoring Integration, Prometheus/Grafana, scan.sh, Script Permissions (+1 more)
 
 ### Community 965 - "Community 965"
-Cohesion: 0.07
-Nodes (27): Auto-Detection, Dashboard Access, Default Configuration, Development (local testing), Health Check, Multi-Instance Setup, Option A: Docker (Most Common), Option A: macOS Keychain (Default — no software required) (+19 more)
+Cohesion: 0.22
+Nodes (9): Dashboard Access, Health Check, Proxy Mode (Default), Sidecar Mode, Step 1: Clone the Repository, Step 4: Choose Security Mode, Step 7: Verify Installation, Step-by-Step Installation (+1 more)
+
+### Community 966 - "Community 966"
+Cohesion: 0.11
+Nodes (6): MCPToolCall, MCPToolResult, Represents an MCP tool result., TestDataclasses, TestInjectionDetection, TestProxyResultProcessing
 
 ### Community 967 - "Community 967"
 Cohesion: 0.11
@@ -4981,7 +5043,7 @@ Nodes (10): BlockingPipeline, EncodingDetectingPipeline, FakePipelineResult, Pip
 
 ### Community 979 - "Community 979"
 Cohesion: 0.21
-Nodes (40): AuditResult, BaseModel, ContributorRecord, Any, Request, WebSocket, SCLInterface, Resolved identity of the SCL caller, including role and user_id. (+32 more)
+Nodes (42): AuditResult, BaseModel, RBACManager, Role, Any, Request, WebSocket, SCLInterface (+34 more)
 
 ### Community 980 - "Community 980"
 Cohesion: 0.25
@@ -5044,8 +5106,8 @@ Cohesion: 0.25
 Nodes (7): Fast text-only hint (low noise), OpenClaw Session JSONL Store, Location, session-logs, Structure, Tips, Trigger
 
 ### Community 995 - "Community 995"
-Cohesion: 0.05
-Nodes (40): 1Password Authentication Failed, 1Password Integration, AgentShroud Setup Guide, agentshroud.yaml - Main Configuration, Audit Trail Verification, Configuration Reference, Configure AgentShroud, Container Unhealthy (+32 more)
+Cohesion: 0.25
+Nodes (8): AgentShroud Setup Guide, Environment Variables, Mac Studio Example, Multi-Instance Setup, Port Auto-Detection, Quick Start (5 minutes), What is AgentShroud?, What's Next?
 
 ### Community 996 - "Community 996"
 Cohesion: 0.25
@@ -5156,16 +5218,16 @@ Cohesion: 0.50
 Nodes (4): v0.8.0 Baseline Delivered Capabilities, Security Assessment PASS=6 WARN=0 FAIL=0, Owner Daily Telegram Validation Checklist, v0.8.0 Watchtower Execution Summary
 
 ### Community 1023 - "Community 1023"
-Cohesion: 0.17
-Nodes (7): Any, Pattern, get_sanitizer_stats(), install_log_sanitizer(), Install the log sanitizer on all existing loggers., Get statistics about sanitization patterns., Compile regex patterns for sensitive data detection.
+Cohesion: 0.26
+Nodes (4): Path, IntelReportStore, If the previous report file is corrupt, save must not raise., TestIntelReportStore
 
 ### Community 1024 - "Community 1024"
 Cohesion: 0.29
 Nodes (7): Add Swap File, Backup Strategy, Cooling Recommendations, Important Notes, Optional: Automated Security Updates, Power Supply, Security Hardening Checklist
 
 ### Community 1025 - "Community 1025"
-Cohesion: 0.25
-Nodes (7): HTTP 400 — Unknown MCP Server, HTTP 403 — MCP Tool Permission Denied, HTTP 429 — MCP Rate Limit Exceeded, HTTP 502 — MCP Server Unreachable, MCP Proxy Errors, MCP Proxy Wrapper Issues (Bot Side), Related Notes
+Cohesion: 0.18
+Nodes (11): HTTP 400 — Unknown MCP Server, HTTP 403 — MCP Tool Permission Denied, HTTP 429 — MCP Rate Limit Exceeded, HTTP 502 — MCP Server Unreachable, MCP Proxy Errors, MCP Proxy Wrapper Issues (Bot Side), Related Notes, Gateway Initialization Order (+3 more)
 
 ### Community 1026 - "Community 1026"
 Cohesion: 0.33
@@ -5176,7 +5238,7 @@ Cohesion: 0.50
 Nodes (4): 5.1 Health Checks, 5.2 Logging, 5.3 Monitoring Checklist, 5. Runtime Monitoring
 
 ### Community 1028 - "Community 1028"
-Cohesion: 0.17
+Cohesion: 0.18
 Nodes (12): _fw_client(), Wire the /firmware/bin route to a fake binary + a fixed OTA token allowlist., GET /firmware/bin: token gate, 200 + quoted SHA-256 ETag, HEAD ETag parity., If-None-Match equal to the current ETag → 304 with no body.      This is the who, A stale/mismatched If-None-Match must serve the full new binary (200)., Authenticated request but no firmware on disk → 404 (not a 500/empty 200)., Empty allowlist = OTA un-gated: any non-empty token is accepted (200)., test_firmware_bin_304_on_matching_if_none_match() (+4 more)
 
 ### Community 1029 - "Community 1029"
@@ -5511,6 +5573,10 @@ Nodes (5): Layer 1: Pattern Matching, Layer 2: Unicode Normalization, Layer 3: M
 Cohesion: 0.40
 Nodes (5): Docker Test, GitHub Integration Test, Performance Test, Phase 10: Validation Checklist, System Verification
 
+### Community 1115 - "Community 1115"
+Cohesion: 0.12
+Nodes (10): EgressScope, Save rules to persistent storage., Defines who an egress rule applies to.      kind values:       "all"   — applies, Get all rules (permanent and session) with scope information., Return all rules whose scope matches the given user context (synchronous, lock-f, Revoke an active rule associated with a decision log entry (CC-40)., Add or modify an egress rule.          Args:             domain: Target domain, Remove an egress rule.          Args:             domain: Domain to remove rule (+2 more)
+
 ### Community 1116 - "Community 1116"
 Cohesion: 0.18
 Nodes (6): detect_base64_payloads(), Detect potential base64-encoded payloads in text.     Returns list of decoded st, Check for suspicious base64 content that decodes to injection attempts., Detect unicode obfuscation tricks., Scan input text for prompt injection patterns.          Args:             text:, Scan tool result content for indirect prompt injection.          Tool results (w
@@ -5616,8 +5682,8 @@ Cohesion: 0.12
 Nodes (16): Follow-up (within 48 hours), Glue Job Rollback, Immediate (within 2 hours), Incident Response Workflow, Phase 1: ASSESS (Max 5 minutes), Phase 2: COMMUNICATE (Concurrent with assess), Phase 3: MITIGATE (Rollback First!), Post-Incident (+8 more)
 
 ### Community 1142 - "Community 1142"
-Cohesion: 0.04
-Nodes (39): Any, Path, NetworkConfiguration, NetworkSecurityFinding, Parse network configuration for a service., Validate network definitions in compose file., Validate service network isolation., A network security finding. (+31 more)
+Cohesion: 0.06
+Nodes (27): Any, Path, NetworkConfiguration, NetworkSecurityFinding, Parse network configuration for a service., Validate network definitions in compose file., Validate service network isolation., A network security finding. (+19 more)
 
 ### Community 1143 - "Community 1143"
 Cohesion: 0.50
@@ -5660,8 +5726,8 @@ Cohesion: 0.50
 Nodes (4): 8.1 Test Coverage, 8.2 Resource Footprint, 8.3 Latency, 8. Performance & Testing
 
 ### Community 1153 - "Community 1153"
-Cohesion: 0.24
-Nodes (4): EgressRequest, TestConfirmationModel, TestEgressRequestModel, TestEgressRequest
+Cohesion: 0.11
+Nodes (9): GroupRoleResolver correctly maps Telegram user IDs to per-group roles., owner_in_group resolves to GroupRole.OWNER., Regular member resolves to GroupRole.MEMBER., Read-only user resolves to GroupRole.READ_ONLY., User not in role map defaults to GroupRole.READ_ONLY (deny-by-default)., Unknown group_chat_id defaults to GroupRole.READ_ONLY., email_sending is recognized as a high-risk tool., web_search is NOT a high-risk tool. (+1 more)
 
 ### Community 1154 - "Community 1154"
 Cohesion: 0.50
@@ -5688,8 +5754,8 @@ Cohesion: 0.50
 Nodes (3): Competitive Analysis Reports Archive, Default Selection Notes, Reports
 
 ### Community 1160 - "Community 1160"
-Cohesion: 0.07
-Nodes (28): Approval Queue Issues, Connectivity Issues, Container Stability Issues, Debugging Commands, Egress / Network Issues, PII / Sanitization Issues, Prompt Injection Issues, Quick Diagnosis Flow (+20 more)
+Cohesion: 0.14
+Nodes (13): Approval Queue Health, Basic Status (No Auth), Bot Health Check, Container Health Check, Full Health Report (Auth Required), Gateway Health Endpoints, Health Check Intervals (Docker), Health Checks (+5 more)
 
 ### Community 1161 - "Community 1161"
 Cohesion: 0.50
@@ -5704,8 +5770,8 @@ Cohesion: 0.50
 Nodes (4): Detection Locations, Detection Patterns, Effectiveness Metrics, PII Detection System
 
 ### Community 1164 - "Community 1164"
-Cohesion: 0.21
-Nodes (7): Any, Inspect an outgoing tool call for security threats., Inspect a tool result for PII and encoding issues., Recursively scan a value, appending findings in-place., Scan a single string for all threat types., Recursively redact HIGH-severity PII from a value., Decide whether to block based on findings and mode.
+Cohesion: 0.11
+Nodes (16): Any, InspectionFinding, MCPInspector, Inspects MCP tool calls and responses for security threats., Inspect an outgoing tool call for security threats., Inspect a tool result for PII and encoding issues., Recursively scan a value, appending findings in-place., Scan a single string for all threat types. (+8 more)
 
 ### Community 1165 - "Community 1165"
 Cohesion: 0.50
@@ -5736,8 +5802,12 @@ Cohesion: 0.50
 Nodes (4): Phase 1: OS Hardening & Cleanup, Snap Cleanup (Free Resources), SSH Hardening, System Updates
 
 ### Community 1172 - "Community 1172"
-Cohesion: 0.03
-Nodes (54): Test WebSocket client connection, Test broadcast handles failed client sends, test_broadcast_with_failed_client(), test_websocket_connect(), Unknown recipient's body is PII-scrubbed before approval queue submission., Owner-allowlisted recipient receives body verbatim; pii_redacted=False., /email/send-owner delegates to email_send and also skips PII for the owner., TestOwnerEmailBypassesPii (+46 more)
+Cohesion: 0.20
+Nodes (4): Unknown recipient's body is PII-scrubbed before approval queue submission., Owner-allowlisted recipient receives body verbatim; pii_redacted=False., /email/send-owner delegates to email_send and also skips PII for the owner., TestOwnerEmailBypassesPii
+
+### Community 1173 - "Community 1173"
+Cohesion: 0.06
+Nodes (13): PatternRule, Args:             block_threshold: Score at or above which input is blocked., Tests for key material zeroing (C2 fix)., Ensure zeroing doesn't break normal encrypt/decrypt flow., Tests for SSRF protection in egress filter., Tests for trust manager hardening., Unknown event types should not inject SQL., Tests for drift detector hardening. (+5 more)
 
 ### Community 1174 - "Community 1174"
 Cohesion: 0.22
@@ -5800,12 +5870,12 @@ Cohesion: 0.67
 Nodes (3): Maintenance Procedures, Regular Maintenance Tasks, Update Procedure
 
 ### Community 1189 - "Community 1189"
-Cohesion: 0.30
-Nodes (4): format_upstream_cve_alert(), Format a Telegram alert for newly detected upstream CVEs.      The alert is titl, The alert says CVEs are auto-registered under_review (honest, not 'add manually', TestFormatUpstreamCveAlert
+Cohesion: 0.16
+Nodes (7): Second PUT cancels the first revert task., Auto-revert task sets mode back to enforce after delay., TestModeRequestModel, TestMode, ModeRequest, Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'., set_mode()
 
 ### Community 1190 - "Community 1190"
-Cohesion: 0.09
-Nodes (22): Any, datetime, Path, get_falco_summary(), get_wazuh_summary(), Return latest Falco alert summary from the local alert directory.      CC-20: If, Return latest Wazuh alert summary from the shared alert volume.      wazuh-agent, generate_summary() (+14 more)
+Cohesion: 0.10
+Nodes (19): Any, datetime, Path, get_falco_summary(), Return latest Falco alert summary from the local alert directory.      CC-20: If, generate_summary(), get_fim_events(), get_rootkit_events() (+11 more)
 
 ### Community 1191 - "Community 1191"
 Cohesion: 0.18
@@ -5849,7 +5919,7 @@ Nodes (11): AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions, Appro
 
 ### Community 1223 - "Community 1223"
 Cohesion: 0.03
-Nodes (46): Path, Any, Check if we can create the given directory path., GroupSession, Represents a shared workspace + memory for a group., Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id, Return the cache key string for a (user_id, bot_id) pair., Atomically persist current sessions to the metadata file.          Writes are se (+38 more)
+Nodes (34): Pattern, Any, Path, Validate that default_url uses http/https and targets an internal Docker host., Validate that each target URL uses http/https and targets an internal Docker hos, Extract the key_id from an encrypted blob without decrypting., Initialize the encrypted store.          Args:             master_secret: The ma, Resolve master secret from args, file, or environment. (+26 more)
 
 ### Community 1224 - "Community 1224"
 Cohesion: 0.40
@@ -5896,52 +5966,56 @@ Cohesion: 0.13
 Nodes (14): Check A — Substantive change on the losing side?, Check B — Tied to a real ticket?, Check C — Still broken at HEAD (not self-healed)?, Guardrails, Invocation Forms, Jira / PR Comment Format, Role, Skill: Audit Branch (AB) — Merge Regression Detection (+6 more)
 
 ### Community 1241 - "Community 1241"
-Cohesion: 0.14
-Nodes (6): ContextSegment, Tagged provenance record for a context segment., Create a provenance record for a context segment., Tag a segment and append it to the session's provenance log., Return ordered list of provenance records for the session., TestSourceTagging
+Cohesion: 0.12
+Nodes (11): Verify /manage/modules enumerates every module MiddlewareManager wires.      Mid, The endpoint's P1 section must be generated from ALL_MODULE_ATTRS,         not a, Execute the real endpoint against a fully-populated app_state and         verify, Every SecurityPipeline.ALL_MODULE_ATTRS name must be passed as a kwarg     in li, Verify test count claims in README/docs are reasonable., We should have at least 350 tests (README says 351+)., Verify each module listed in README has actual implementation., TestLifespanWiresEveryPipelineModule (+3 more)
 
 ### Community 1242 - "Community 1242"
 Cohesion: 0.13
 Nodes (14): Guardrails, Invocation, Role, Skill: Create PR with Pre-Flight Audit (CRPR), Step 0 — Pre-flight checks, Step 1 — Check for an in-progress merge, Step 2 — Merge without committing, Step 3 — Audit the pending merge (+6 more)
 
 ### Community 1244 - "Community 1244"
-Cohesion: 0.05
-Nodes (17): hermes_dashboard_proxy(), Reverse-proxy the Hermes Agent dashboard through the gateway., Test error handling across endpoints., Test 404 handling for non-existent endpoints., Test 405 handling for wrong HTTP methods., Test quarantine management endpoints in main.py., hermes_dashboard_proxy must reject traversal sequences before forwarding., hermes_dashboard_proxy raises HTTPException(400) for traversal in path. (+9 more)
+Cohesion: 0.03
+Nodes (32): Test /status endpoint., Test basic status endpoint functionality., Test approval queue endpoints., Test listing pending approvals., Test making approval decisions., Test /mcp/proxy endpoint., Test MCP proxy endpoint basic functionality., Test error handling across endpoints. (+24 more)
+
+### Community 1245 - "Community 1245"
+Cohesion: 0.18
+Nodes (4): parse_clamscan_output(), Parse clamscan output into structured results.      Args:         output: Raw st, TestClamAVParser, TestClamAVSummary
 
 ### Community 1246 - "Community 1246"
-Cohesion: 0.22
-Nodes (5): Create a new ledger entry          Args:             source: Source identifier (, Query ledger entries with pagination and filters          Args:             page, Fetch a single ledger entry by ID          Args:             entry_id: Entry UUI, SHA-256 hash of content string          Args:             content: Text to hash, LedgerEntry
+Cohesion: 0.12
+Nodes (7): Standard Telegram message payload is accepted., Empty payload is handled gracefully (skipped, not error)., Response always includes a 'status' field., Without a pipeline configured, status is passthrough (not error)., Endpoint returns 401 without auth override., Malformed body is handled defensively (empty dict fallback)., TestTelegramWebhook
 
 ### Community 1247 - "Community 1247"
-Cohesion: 0.25
-Nodes (5): Test /forward endpoint with middleware integration., Test that middleware can block requests with HTTP 403., Test that middleware allows requests when they pass checks., Test that middleware errors cause requests to be blocked., TestForwardEndpoint
+Cohesion: 0.12
+Nodes (9): Test denylist wildcard matching., Test EgressFilterConfig functionality., Test default configuration values., Test config creation from environment in enforce mode., Test config creation from environment in monitor mode., Test specific egress mode environment variable., Test basic allowlist functionality., Test allowlist with denylist in strict mode. (+1 more)
 
 ### Community 1252 - "Community 1252"
 Cohesion: 0.35
 Nodes (5): _fake_runner(), Return a runner that looks up (exit_code, output) by host name., TestRunMultiHost, Run ``command`` on each host via ``runner`` and aggregate the results.      A ru, run_multi_host()
 
 ### Community 1253 - "Community 1253"
-Cohesion: 0.40
-Nodes (4): _compute_weighted_subscore(), Return weighted sub-score as 0.0–100.0 percentage., _compute_weighted_subscore returns 0.0 for an empty domain map., _compute_weighted_subscore returns 100.0 when all domains score 5.
+Cohesion: 0.10
+Nodes (16): compute_scorecard(), _compute_weighted_subscore(), _determine_compliance_level(), _determine_iec_sl(), Return weighted sub-score as 0.0–100.0 percentage., Determine the highest achieved IEC 62443 Security Level.      SL 1: All IEC-mapp, Determine composite compliance level using the weakest-link rule.      All 7 sub, Compute the 33-domain Security Scorecard.      Domains 1–21: Container infrastru (+8 more)
 
 ### Community 1254 - "Community 1254"
 Cohesion: 0.27
 Nodes (4): TestMain, main(), Render an aligned PASS/FAIL table plus a totals line., CLI entry point. Returns the aggregated exit code (0 = all passed).
 
 ### Community 1255 - "Community 1255"
-Cohesion: 0.29
-Nodes (4): TrustManager, Build a ledger where every bot in *bot_ids* is a mutual peer of         every ot, Register bot_b as a peer of bot_a.          Args:             bot_a: Source bot, Attach a TrustManager instance to a bot name.
+Cohesion: 0.15
+Nodes (12): Related Notes, Startup Flow Diagram, 1Password Integration (AgentShroud), Crash Recovery Options (5 levels), DNS Filter (entropy threshold, rate limits), File Sandbox (path allow/block lists), Gateway Startup Sequence, Key Vault (leak detection, log redaction) (+4 more)
 
 ### Community 1256 - "Community 1256"
 Cohesion: 0.20
 Nodes (4): Configuration for container runtime selection and behavior.      Loaded from env, Resolve rootless setting based on runtime., RuntimeConfig, TestRuntimeConfig
 
 ### Community 1257 - "Community 1257"
-Cohesion: 0.33
-Nodes (4): Path, Initialize session manager.          Args:             base_workspace: Base dire, Load existing sessions from metadata file.          Handles both the new ``"{use, Create session from dictionary.
+Cohesion: 0.13
+Nodes (8): sign() + verify() should return True for unmodified content., Modifying content after signing should fail verification., Modifying the signature directly should fail verification., wrap_system_prompt() sets issuer='system' and passes verification., wrap_tool_result() sets issuer='tool:<name>' and passes verification., Two signers sharing the same key can cross-verify envelopes., Envelopes signed with one key should not verify with a different key., TestEnvelopeSigner
 
 ### Community 1258 - "Community 1258"
-Cohesion: 0.38
-Nodes (4): B1: one-shot 400-retry for unbalanced HTML parse errors., First sendMessage returns 400 'can't parse entities'; retry with plain text succ, Persistent 400 returns the error after exactly one retry (no infinite loop)., TestTelegram400Retry
+Cohesion: 0.14
+Nodes (8): Read-only members must be denied high-risk tools in any group context., Read-only member denied email_sending even when called from group context., Read-only member denied file_deletion in group context., Read-only member denied external_api_calls in group context., Read-only member denied skill_installation in group context., Read-only member IS allowed web_search (low-risk) in group context., Read-only member IS allowed read tool in group context., TestReadOnlyMemberGroupContext
 
 ### Community 1259 - "Community 1259"
 Cohesion: 0.33
@@ -5956,16 +6030,20 @@ Cohesion: 0.18
 Nodes (3): Unit tests for TelegramAPIProxy._bot_is_mentioned()., Media messages use caption + caption_entities., TestBotIsMentioned
 
 ### Community 1264 - "Community 1264"
-Cohesion: 0.29
-Nodes (4): Scan 1000 messages in under 5 seconds., Injection attempts should be detected even under load., Prompt guard: 1000 messages in < 5s., TestPromptGuardPerformance
+Cohesion: 0.18
+Nodes (3): _gitless_run(), Build a subprocess.run double that simulates the upgrade git flow., TestAgentshroudUpdates
+
+### Community 1265 - "Community 1265"
+Cohesion: 0.15
+Nodes (12): Approval Queue Issues, Connectivity Issues, Container Stability Issues, Debugging Commands, Egress / Network Issues, PII / Sanitization Issues, Prompt Injection Issues, Quick Diagnosis Flow (+4 more)
 
 ### Community 1266 - "Community 1266"
-Cohesion: 0.03
-Nodes (57): Validate the X-Telegram-Bot-Api-Secret-Token header.          Uses constant-time, Receives webhooks and routes them through the security pipeline.      In product, WebhookReceiver, ConversationMessage, A single message in a conversation., Represents an isolated session for a user within a specific bot workspace., UserSession, Test that memory files are isolated per user. (+49 more)
+Cohesion: 0.02
+Nodes (61): ConversationMessage, A single message in a conversation., Represents an isolated session for a user within a specific bot workspace., UserSession, Test that memory files are isolated per user., Test that session context is properly generated., Test that session prompts include isolation instructions., Test that owner can access all sessions. (+53 more)
 
 ### Community 1267 - "Community 1267"
-Cohesion: 0.40
-Nodes (3): MCPProxyConfig, Compile private data patterns once for efficient repeated use., Load optional admin-private tool patterns from policy file.
+Cohesion: 0.06
+Nodes (31): MCPProxyConfig, MCPServerConfig, PermissionLevel, MCPPermissionManager, PermissionCheck, PrivateAccessAttempt, PrivateRedactionEvent, RateLimitEntry (+23 more)
 
 ### Community 1268 - "Community 1268"
 Cohesion: 0.24
@@ -5979,13 +6057,17 @@ Nodes (3): Return HMAC key: env var preferred, session-scoped random fallback., 
 Cohesion: 0.13
 Nodes (14): SECTION 10 — SHUTDOWN & RECOVERY SEQUENCE, SECTION 11 — KNOWN FAILURE MODES & TROUBLESHOOTING MATRIX, SECTION 12 — MERMAID FLOWCHART (Complete System Map), SECTION 13 — QUICK REFERENCE CARD, SECTION 1 — SYSTEM OVERVIEW (Plain English), SECTION 2 — COMPLETE FILE & DIRECTORY MAP, SECTION 3 — EVERY ENVIRONMENT VARIABLE, SECTION 4 — ALL EXTERNAL DEPENDENCIES (+6 more)
 
+### Community 1271 - "Community 1271"
+Cohesion: 0.19
+Nodes (6): Public entry — records the decision for the SOC heat-map (SCRUM-80),         the, Check whether user_id may invoke the named tool.          Returns:             (, Check whether user_id may invoke tool_name when acting inside a group workspace., Return the list of tools the user is allowed to use (union of all sets)., Return tools explicitly denied for this user., Collect additional tools granted to the user via their group memberships.
+
 ### Community 1272 - "Community 1272"
 Cohesion: 0.20
 Nodes (6): Unknown/unapproved users have stricter rate limits than collaborators.      Afte, First message from unknown user (within limit) queues approval flow., Once stranger exhausts rate limit, they get a rate-limit notice; owner is NOT no, Repeated rate-limited messages within the cooldown window send at most one notic, _send_stranger_rate_limit_notice must include a reset time in HH:MM UTC format., TestStrangerRateLimit
 
 ### Community 1273 - "Community 1273"
-Cohesion: 0.33
-Nodes (3): No RBAC principal → cannot authorize → deny (fail-closed)., An empty/None author is never authorized., TestAuthorizationHelper
+Cohesion: 0.24
+Nodes (5): _make_integrity_pipeline(), Pipeline with ContextGuard + ContextIntegrityScorer mocks., ContextIntegrityScorer must run in process_inbound() — C21 wiring., 0.3 ≤ score < 0.6 warns but never blocks., TestContextIntegrityInPipeline
 
 ### Community 1274 - "Community 1274"
 Cohesion: 0.25
@@ -5996,16 +6078,16 @@ Cohesion: 0.25
 Nodes (7): graphify reference: extra exports and benchmark, Step 6b - Wiki (only if --wiki flag), Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag), Step 7b - SVG export (only if --svg flag), Step 7c - GraphML export (only if --graphml flag), Step 7d - MCP server (only if --mcp flag), Step 8 - Token reduction benchmark (only if total_words > 5000)
 
 ### Community 1276 - "Community 1276"
-Cohesion: 0.12
-Nodes (24): esp_event_base_t, esp_err_t, esp_err_t, lv_display_t, app_main(), _build_ws_url(), _lvgl_flush_wait_yield(), _on_tts_pcm() (+16 more)
+Cohesion: 0.36
+Nodes (8): esp_err_t, audio_capture_frame(), audio_get_saved_volume(), audio_init(), audio_play(), audio_preinit(), audio_set_volume(), audio_volume_tick()
 
 ### Community 1277 - "Community 1277"
 Cohesion: 0.47
 Nodes (4): Path, _run_wrapper(), TestWrapperSubprocess, _write_exec()
 
 ### Community 1278 - "Community 1278"
-Cohesion: 0.40
-Nodes (3): LogRecord, Filter log record, sanitizing sensitive content., Sanitize sensitive data in text.
+Cohesion: 0.17
+Nodes (6): Send a Telegram message with an inline keyboard., Parse owner command target as numeric id or known collaborator alias., Resolve owner target from pending-request username aliases (e.g., /approve ana)., Send deterministic pending-approval notice to unknown/revoked users., Resolve target by id, static alias, or pending username alias.          Resoluti, Queue owner approval request for unknown/revoked users.
 
 ### Community 1279 - "Community 1279"
 Cohesion: 0.13
@@ -6040,8 +6122,8 @@ Cohesion: 0.43
 Nodes (7): esp_http_client_event_t, esp_err_t, _http_event_handler(), _nvs_get_etag(), _nvs_set_etag(), ota_check(), _ws_to_https_base()
 
 ### Community 1288 - "Community 1288"
-Cohesion: 0.50
-Nodes (3): Score domain 11: Secure Development (0-5).      1=Trivy in build, 2=semgrep conf, _score_secure_development(), TestScoreSecureDevelopment
+Cohesion: 0.24
+Nodes (6): Verify that each agent has its own volume (no shared filesystems)., Full shared-nothing verification: network + volume + security settings., Generate Docker Compose config for all registered agents., Get container config for an agent., List all registered agent IDs., Verify that each agent has its own network namespace.
 
 ### Community 1289 - "Community 1289"
 Cohesion: 0.13
@@ -6076,12 +6158,12 @@ Cohesion: 0.13
 Nodes (14): AgentShroud Blue Team Security Auditor, Audit Procedure, Critical Rules, Heat Map Legend, Infrastructure, Loss Categories, Methodology, Output Format (+6 more)
 
 ### Community 1297 - "Community 1297"
-Cohesion: 0.50
-Nodes (3): ConsistencyScore, Compute a heuristic consistency score between query and response.          Retur, Heuristic consistency score between a query and its response.
+Cohesion: 0.20
+Nodes (6): EgressRule, Initialize the approval queue.          Args:             rules_file: Path to pe, Pre-approve known service domains at startup without interactive prompts., Load rules from persistent storage., Check if domain matches an existing rule., Represents an egress allow/deny rule.
 
 ### Community 1298 - "Community 1298"
-Cohesion: 0.18
-Nodes (6): Extract outbound URL-like targets from nested MCP tool parameters., Best-effort privacy event emission., Redact admin-private data from tool results for non-owner agents., Process an MCP tool call through the security pipeline.          Args:, Process a tool result coming back (for cases where execution happens externally), Check if a tool call requires approval and wait for it if needed.
+Cohesion: 0.22
+Nodes (7): ProtectedContent, Scan text for protected content and return redacted version.          Args:, Calculate similarity between text and protected content., Redact text that fuzzy matches protected content., A piece of content that should be protected from disclosure., Result of scanning and redacting content., RedactionResult
 
 ### Community 1299 - "Community 1299"
 Cohesion: 0.52
@@ -6095,13 +6177,21 @@ Nodes (6): Active, `docs/planning/` — Index, Historic / archive, How to add a 
 Cohesion: 0.57
 Nodes (6): deploy_ref(), die(), log(), run(), run_in_repo(), canary-deploy.sh script
 
+### Community 1302 - "Community 1302"
+Cohesion: 0.18
+Nodes (4): hermes_dashboard_proxy must reject traversal sequences before forwarding., hermes_dashboard_proxy raises HTTPException(400) for traversal in path., hermes_dashboard_proxy raises HTTPException(400) for traversal in query string., TestHermesDashboardPathTraversal
+
+### Community 1303 - "Community 1303"
+Cohesion: 0.29
+Nodes (4): Automated verification that verify_killswitch() returns required fields., dry_run=True must never trigger actual kill switch execution., verify_killswitch() must write a log entry for auditability., TestKillSwitchVerification
+
 ### Community 1304 - "Community 1304"
 Cohesion: 0.14
 Nodes (13): API Call Structure, Apollo — Audio Systems Producer, Audio Quality Settings, Error Handling, Input Requirements, Output, Primary API: Text-to-Dialogue, Quality Checklist (+5 more)
 
 ### Community 1305 - "Community 1305"
-Cohesion: 0.04
-Nodes (70): AuthRequired, Path, Request, WebSocket, Consolidated SOC report for dashboard/SIEM pull workflows., soc_report(), activity_websocket(), auth_dep() (+62 more)
+Cohesion: 0.03
+Nodes (82): AuthRequired, Path, Request, WebSocket, activity_websocket(), auth_dep(), _build_activity_entries_from_contributor_logs(), _build_activity_summary_from_contributor_logs() (+74 more)
 
 ### Community 1306 - "Community 1306"
 Cohesion: 0.29
@@ -6153,11 +6243,15 @@ Nodes (13): 1. Scope of Change, 2. What Changes and Why, 3. Scalability Gate, 4.
 
 ### Community 1318 - "Community 1318"
 Cohesion: 0.03
-Nodes (32): Test that sensitive MCP tool names are filtered., Test that common English words are not filtered., Test that Telegram user IDs are filtered., Test that security module references are filtered., AgentShroud brand name must pass through unredacted (Fix C)., Test that credential paths are filtered., Test that internal file paths are filtered., Test suite for the outbound information filter. (+24 more)
+Nodes (43): FilterMatch, InfoCategory, Categories of information that may need filtering., Filter agent response for sensitive information disclosure.          Args:, A single match found by the outbound filter., Check if a disclosure category is permitted for the user's trust level., Classify the risk level of a response based on info disclosure density., Test that sensitive MCP tool names are filtered. (+35 more)
 
 ### Community 1320 - "Community 1320"
-Cohesion: 0.03
-Nodes (43): PathRewriteResult, Get the isolated temp directory path for a user., Sanitize user ID to prevent path traversal attacks., Rewrite a path to isolate it to the user's namespace.          Args:, Check if path is trying to access the base AgentShroud directory., Check if path is trying to access another user's isolated namespace.          Re, Apply path rewriting rules to isolate paths per user., Ensure user's isolated directory exists. (+35 more)
+Cohesion: 0.05
+Nodes (21): Test user session registration., Test ending user session., Test path rewriting for /tmp files., Test path rewriting for nested /tmp paths., Test paths that don't need rewriting., Test blocking direct access to base agentshroud directory., Test blocking cross-user namespace access., Test allowing access to own namespace. (+13 more)
+
+### Community 1321 - "Community 1321"
+Cohesion: 0.38
+Nodes (10): AgentTarget, Resolve the outbound trust level for `request`, shared by the blocking     and s, _resolve_user_trust_level(), _request(), _target(), test_resolve_trust_level_maps_trust_score_to_tier(), test_resolve_trust_level_no_trust_info_for_target_defaults_untrusted(), test_resolve_trust_level_no_trust_manager_defaults_untrusted() (+2 more)
 
 ### Community 1322 - "Community 1322"
 Cohesion: 0.15
@@ -6208,8 +6302,8 @@ Cohesion: 0.40
 Nodes (4): CVE Triage — Gaps & Development Plan (OpenClaw), Gap detail (development plan), Gap themes, Resulting status breakdown
 
 ### Community 1334 - "Community 1334"
-Cohesion: 0.27
-Nodes (5): _build_image_targets(), Build the list of container image targets for Trivy image scanning.      Combine, Empty AGENTSHROUD_TRIVY_IMAGES adds no extra entries beyond         gateway + th, Regression guard: AGENTSHROUD_TRIVY_IMAGES used to be the ONLY         source of, TestBuildImageTargets
+Cohesion: 0.22
+Nodes (5): The subset of ``smtplib.SMTP_SSL`` the service uses., Build the MIME message string (multipart/alternative).          For HTML mail th, Send one email synchronously.  Blocking — call in an executor.          Raises t, SmtpLike, Protocol
 
 ### Community 1335 - "Community 1335"
 Cohesion: 0.60
@@ -6218,6 +6312,10 @@ Nodes (3): check(), make_fake_bin(), test-container-runtime.sh script
 ### Community 1336 - "Community 1336"
 Cohesion: 0.50
 Nodes (4): check(), PYTHONPATH, SKILLGUARD_TEST_DEST_ROOT, test-skills-sync.sh script
+
+### Community 1337 - "Community 1337"
+Cohesion: 0.24
+Nodes (7): get_trivy_summary(), _is_fresh(), Score domain 29: AI Model & Supply Chain Integrity (0-5). MITRE ATLAS, OWASP LLM, Return True if the most recent report file was written within max_age_hours., Return latest Trivy scan summary from saved reports.      When Trivy is installe, _score_ai_model_supply_chain(), TestGetTrivySummary
 
 ### Community 1338 - "Community 1338"
 Cohesion: 0.17
@@ -6279,6 +6377,10 @@ Nodes (3): entries, generated_at, version
 Cohesion: 0.50
 Nodes (3): entries, generated_at, version
 
+### Community 1355 - "Community 1355"
+Cohesion: 0.29
+Nodes (4): Run a Trivy scan and return parsed results.      Args:         target: Scan targ, run_trivy_scan(), scan_type='image' is passed correctly to the trivy binary., TestTrivyRun
+
 ### Community 1358 - "Community 1358"
 Cohesion: 0.17
 Nodes (11): Athena — Knowledge Distiller, cheatsheet.md, <description of what this does>, Input Requirements, Output Format, Persona, Quality Checklist, Role (+3 more)
@@ -6307,6 +6409,10 @@ Nodes (10): architecture.puml (PlantUML), Daedalus — Concept Illustrator, diag
 Cohesion: 0.40
 Nodes (5): Dual Network Topology: external + internal (isolated), OpenClaw Container Isolation: No Port Mapping, DNS via Gateway, docker-compose.secure.yml: Full Network Isolation Proxy Mode, docker-compose.sidecar.yml: Optional Sidecar Scanning Mode, Sidecar Mode Warning: Does Not Guarantee All Traffic Scanned
 
+### Community 1382 - "Community 1382"
+Cohesion: 0.22
+Nodes (5): A non-owner author cannot write into another user's private memory., A user may write into their own private memory., The owner may write into any user's private memory., Back-compat: existing callers that pass no author_id/rbac_config keep working., TestUserMemoryWriteACL
+
 ### Community 1383 - "Community 1383"
 Cohesion: 0.40
 Nodes (5): Implementation Steps, Step 1: Update Gateway to Block Credentials in Telegram, Step 2: Add Command Restrictions, Step 3: Update agentshroud.yaml, Step 4: Test the Protection
@@ -6334,6 +6440,10 @@ Nodes (9): 1. Schema Validation, 2. Partition Coverage, 3. Data Quality Checks, 
 ### Community 1391 - "Community 1391"
 Cohesion: 0.04
 Nodes (45): Text before and after XML blocks is preserved., Unclosed <function_calls> block (truncated output) is removed., Unclosed <thinking> block is removed., Unclosed <function_results> block is removed., Unclosed <system-reminder> block is removed., Three or more consecutive newlines are collapsed to two., Result is stripped of leading/trailing whitespace., Normal text without XML blocks is returned unchanged. (+37 more)
+
+### Community 1392 - "Community 1392"
+Cohesion: 0.22
+Nodes (9): A stream that goes straight to 'done' with no sentence events (e.g.     everythi, SSE keepalive comments (': ...') and blank lines are ignored, not     treated as, A single corrupted SSE line logs a warning and is skipped — it must not     abor, _call_agent_stream POSTs to /forward/stream and yields each sentence     event a, _sse_body(), test_call_agent_stream_empty_stream_yields_nothing(), test_call_agent_stream_malformed_json_line_skipped_not_fatal(), test_call_agent_stream_skips_blank_and_comment_lines() (+1 more)
 
 ### Community 1393 - "Community 1393"
 Cohesion: 0.27
@@ -6367,9 +6477,9 @@ Nodes (4): 1. Defense in Depth, 2. Simple Rules Are Secure, 3. Bot's Superior Re
 Cohesion: 0.27
 Nodes (8): args, CONFIG, createEvent(), { execSync }, https, listEvents(), makeRequest(), parseCalendarData()
 
-### Community 1402 - "Community 1402"
-Cohesion: 0.07
-Nodes (4): Wire optional event bus for privacy/security telemetry., Clean shutdown — close all connections., In strict mode, sensitive ops with injection ARE blocked., TestAuditTrail
+### Community 1403 - "Community 1403"
+Cohesion: 0.33
+Nodes (3): _fake_ws(), TestWsLogs, TestWsUpdates
 
 ### Community 1404 - "Community 1404"
 Cohesion: 0.22
@@ -6396,8 +6506,8 @@ Cohesion: 0.22
 Nodes (8): Input Requirements, Output Format, Persona, Quality Checklist, Role, System Prompt, User Prompt Template, Vulcan — Subject Matter Auditor
 
 ### Community 1415 - "Community 1415"
-Cohesion: 0.40
-Nodes (3): Accept a WebSocket connection and add to connected set          Args:, Remove a WebSocket connection from connected set          Args:             webs, WebSocket
+Cohesion: 0.29
+Nodes (8): Path, ConfigUpdate, import_config(), Update configuration (writes YAML and optionally restarts)., Import configuration from uploaded data., update_config(), dashboard_main(), Serve the main dashboard page.
 
 ### Community 1417 - "Community 1417"
 Cohesion: 0.25
@@ -6427,6 +6537,10 @@ Nodes (7): Input Requirements, Oracle — Feedback Analyst, Output Format, Perso
 Cohesion: 0.12
 Nodes (26): MemoryIntegrityConfig, MemoryIntegrityConfig, MemoryLifecycleConfig, MemorySecurityConfig, Configuration for memory file integrity monitoring., Configuration for memory lifecycle management., Combined memory security configuration., FileIntegrityRecord (+18 more)
 
+### Community 1424 - "Community 1424"
+Cohesion: 0.32
+Nodes (5): get_clamav_summary(), _is_clamd_running(), Return True if clamd Unix socket /tmp/clamd.ctl is connectable., Return latest ClamAV scan summary from saved reports.      When ClamAV is instal, TestGetClamavSummary
+
 ### Community 1425 - "Community 1425"
 Cohesion: 0.29
 Nodes (6): Deployment Matrix  (Direct to Prod), GitHub Actions Best Practices, Quality Gates  (execution order), Review Flags  (block the merge), Role, Skill: CI/CD Pipeline Advisor (CICD)
@@ -6439,9 +6553,41 @@ Nodes (6): Feedback Guidelines, Output Format, Production-Specific Review Checks
 Cohesion: 0.29
 Nodes (6): Deployment Matrix  (Direct to Prod), GitHub Actions Best Practices, Quality Gates  (execution order), Review Flags  (block the merge), Role, Skill: CI/CD Pipeline Advisor (CICD)
 
+### Community 1429 - "Community 1429"
+Cohesion: 0.25
+Nodes (8): _fake_kokoro_pipeline(), synthesize() runs the Kokoro pipeline; when rates match no resampling occurs., When OUTPUT_SAMPLE_RATE (24000, Kokoro native) != TARGET_SAMPLE_RATE     (16000), Stand-in for kokoro.KPipeline: a callable yielding (graphemes, phonemes,     aud, synthesize() feeds the normalised (no-markdown, no-token) text to Kokoro.      V, test_tts_resamples_24000_to_16000(), test_tts_synthesize_passes_normalised_text_to_kokoro(), test_tts_synthesize_via_kokoro()
+
 ### Community 1430 - "Community 1430"
 Cohesion: 0.29
 Nodes (6): Feedback Guidelines, Output Format, Production-Specific Review Checks, Review Principles, Role, Skill: Code Review (CR)
+
+### Community 1431 - "Community 1431"
+Cohesion: 0.29
+Nodes (3): deque, Path, KillSwitchConfig
+
+### Community 1432 - "Community 1432"
+Cohesion: 0.33
+Nodes (4): Any, Compile all filter patterns into regex objects., Get filter statistics., Initialize the outbound information filter.          Args:             config: C
+
+### Community 1433 - "Community 1433"
+Cohesion: 0.29
+Nodes (7): 1Password Authentication Failed, Container Unhealthy, Gmail Connection Issues, Performance Issues, Port Already in Use, Tests Failing, Troubleshooting
+
+### Community 1434 - "Community 1434"
+Cohesion: 0.29
+Nodes (6): lifespan startup must install ThreadPoolExecutor(max_workers=64)., Hermes API forwarder must include an HTTP-method peek to drop non-HTTP connectio, Non-HTTP bytes (e.g. TLS ClientHello) must be dropped without proxying., test_hermes_forwarder_drops_non_http(), test_lifespan_hermes_forwarder_has_http_peek(), test_lifespan_installs_64_worker_executor()
+
+### Community 1436 - "Community 1436"
+Cohesion: 0.33
+Nodes (6): Audit Trail Verification, Dashboard Security Events, Health Check Verification, Production Checklist, Security Testing, Security Verification
+
+### Community 1438 - "Community 1438"
+Cohesion: 0.33
+Nodes (6): Option A: macOS Keychain (Default — no software required), Option B: Linux (secret-tool / GNOME Keyring — Default on Linux), Option C: 1Password Service Account (Optional — Teams / Shared Credentials), Option D: Docker Secrets (Swarm Mode), Option E: Environment Variables (Development Only), Step 3: Configure Secrets Management
+
+### Community 1444 - "Community 1444"
+Cohesion: 0.33
+Nodes (3): PII sanitiser mock that simulates two entity redactions., Owner query must pass through PII sanitisation unchanged; sanitiser not called., Non-owner query must still be PII-scrubbed (detector + threshold unchanged).
 
 ### Community 1445 - "Community 1445"
 Cohesion: 0.40
@@ -6450,6 +6596,18 @@ Nodes (5): appendLog(), browserFetch(), { chromium }, fs, path
 ### Community 1446 - "Community 1446"
 Cohesion: 0.40
 Nodes (5): appendLog(), browserFetch(), { chromium }, fs, path
+
+### Community 1448 - "Community 1448"
+Cohesion: 0.40
+Nodes (3): Assess risk level for a domain/port combination.          Returns:             R, Public risk assessment helper for management/API surfaces., Request approval for egress to a domain/port.          Args:             domain:
+
+### Community 1450 - "Community 1450"
+Cohesion: 0.40
+Nodes (5): 1Password Integration, Configure AgentShroud, Create a Service Account, Important Notes, Set Up Vault Access
+
+### Community 1451 - "Community 1451"
+Cohesion: 0.40
+Nodes (5): agentshroud.yaml - Main Configuration, Configuration Reference, egress-config.yml - Egress Filtering, Example Configurations, mcp-config.yml - MCP Server Registry
 
 ### Community 1452 - "Community 1452"
 Cohesion: 0.40
@@ -6466,6 +6624,10 @@ Nodes (4): Atlas — Curriculum Architect, Purpose, Related Skills, Usage
 ### Community 1456 - "Community 1456"
 Cohesion: 0.40
 Nodes (4): AWS Cloud Management & FinOps, Purpose, Related Skills, Usage
+
+### Community 1457 - "Community 1457"
+Cohesion: 0.40
+Nodes (5): Manual Update Process, Rollback If Needed, Update AgentShroud, Update OpenClaw, Updating
 
 ### Community 1458 - "Community 1458"
 Cohesion: 0.40
@@ -6507,9 +6669,17 @@ Nodes (4): Hermes — Podcast Production Orchestrator, Purpose, Related Skills, 
 Cohesion: 0.40
 Nodes (4): iCloud Data Manager (ICLOUD), Purpose, Related Skills, Usage
 
+### Community 1468 - "Community 1468"
+Cohesion: 0.40
+Nodes (4): prompt_protection(), Create a PromptProtection instance for testing., Sample protected content for testing., sample_protected_content()
+
 ### Community 1469 - "Community 1469"
 Cohesion: 0.40
 Nodes (4): macOS System Administrator (MAC), Purpose, Related Skills, Usage
+
+### Community 1470 - "Community 1470"
+Cohesion: 0.50
+Nodes (4): Auto-Detection, Default Configuration, Multi-Instance Setup, Step 5: Configure Ports
 
 ### Community 1471 - "Community 1471"
 Cohesion: 0.40
@@ -6620,8 +6790,12 @@ Cohesion: 0.40
 Nodes (4): Browser — Secure Browser Automation, Purpose, Related Skills, Usage
 
 ### Community 1513 - "Community 1513"
-Cohesion: 0.11
-Nodes (18): _resolve_bot_container must use BotConfig.resolved_container_name, not     a har, TestResolveBotContainer, check_agentshroud_updates(), check_bot_updates(), check_openclaw_updates(), Resolve the real Docker container name for a given bot_id — from     BotConfig.r, Check for updates for the named bot container., Upgrade a named bot container. (+10 more)
+Cohesion: 0.50
+Nodes (4): Development (local testing), Production (background daemon), Production with Restart Policy, Step 6: Deploy AgentShroud
+
+### Community 1514 - "Community 1514"
+Cohesion: 0.50
+Nodes (4): Option A: Docker (Most Common), Option B: Podman (Red Hat/Enterprise), Option C: Apple Containers (macOS 26+), Step 2: Choose Your Container Runtime
 
 ### Community 1515 - "Community 1515"
 Cohesion: 0.40
@@ -6642,6 +6816,10 @@ Nodes (4): Daedalus — Concept Illustrator, Purpose, Related Skills, Usage
 ### Community 1519 - "Community 1519"
 Cohesion: 0.40
 Nodes (4): Data Validation (DATA-VAL), Purpose, Related Skills, Usage
+
+### Community 1521 - "Community 1521"
+Cohesion: 0.50
+Nodes (4): Optional Requirements, Prerequisites, Supported Platforms, System Requirements
 
 ### Community 1522 - "Community 1522"
 Cohesion: 0.40
@@ -6681,7 +6859,7 @@ Nodes (4): MCP Doctor (MCPM-DOCTOR), Purpose, Related Skills, Usage
 
 ### Community 1532 - "Community 1532"
 Cohesion: 0.03
-Nodes (33): _make_sanitizer(), Caption-only payloads should not bypass collaborator leak normalization., Form payload empty text should not shadow message filtering., Empty text field must not bypass filtering when content contains tool payload., Cannot access' phrasing should be rewritten for healthcheck SKILL.md sandbox mes, Embedding provider wording variants should rewrite for urlencoded payloads., Form-encoded sendMessage bodies must also be scanned by the pipeline.          R, Healthcheck SKILL.md sandbox errors should be rewritten for urlencoded payloads. (+25 more)
+Nodes (33): _make_sanitizer(), Form caption field should be filtered the same as text/draft/message fields., Form payloads containing pairing secrets must be blocked for collaborators., Collaborators should not receive telegram user-id enrollment leakage text., Runtime memory provider errors should rewrite when payload uses draft field., JSON content field should keep healthcheck SKILL.md text unchanged when sandbox, Embedding/provider memory errors should also be rewritten for urlencoded payload, Embedding provider wording variants should rewrite for urlencoded payloads. (+25 more)
 
 ### Community 1533 - "Community 1533"
 Cohesion: 0.40
@@ -6706,6 +6884,10 @@ Nodes (4): Pull Request Generator (PR), Purpose, Related Skills, Usage
 ### Community 1538 - "Community 1538"
 Cohesion: 0.40
 Nodes (4): Incident Response (INCIDENT), Purpose, Related Skills, Usage
+
+### Community 1539 - "Community 1539"
+Cohesion: 0.67
+Nodes (3): Commands, OutputFormat, Cli
 
 ### Community 1541 - "Community 1541"
 Cohesion: 0.40
@@ -6768,18 +6950,18 @@ Cohesion: 0.50
 Nodes (4): _minimal_dashboard_html(), Serve the unified SOC web dashboard., Fallback minimal dashboard when template file is missing., soc_dashboard()
 
 ## Knowledge Gaps
-- **8061 isolated node(s):** `version`, `generated_at`, `entries`, `version`, `generated_at` (+8056 more)
+- **8061 isolated node(s):** `lv_display_t`, `ui_state_t`, `esp_event_base_t`, `ws_vg_state_t`, `ws_client_handle_t` (+8056 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **385 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **387 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `lifespan()` connect `Community 159` to `Approval Queue & Gateway Config`, `Telegram Proxy & Owner Auth`, `PII Redaction & XML Filtering`, `Agent Registry & Isolation`, `Community 264`, `Teams & Group RBAC`, `Community 523`, `Community 140`, `Slack Proxy Integration`, `Webhook Receiver & User Access`, `Community 15`, `Community 1423`, `Community 275`, `Community 19`, `Community 21`, `Community 22`, `Community 279`, `Community 152`, `Community 157`, `Community 31`, `Community 33`, `Community 39`, `Community 167`, `Community 41`, `Community 44`, `Community 435`, `Community 64`, `Community 65`, `Community 66`, `Community 195`, `Community 193`, `Community 707`, `Community 1223`, `Community 73`, `Community 202`, `Community 74`, `Community 205`, `Community 78`, `Community 207`, `Community 211`, `Community 339`, `Community 88`, `Community 348`, `Community 94`, `Community 100`, `Community 364`, `Community 111`, `Community 117`, `Community 123`?**
-  _High betweenness centrality (0.038) - this node is a cross-community bridge._
-- **Why does `TelegramAPIProxy` connect `Enhanced Approval Queue (WS)` to `PII Sanitization & Alerts`, `Community 260`, `Collaborator Message Sanitization`, `Community 1172`, `Community 23`, `Community 281`, `Community 26`, `Community 537`, `Community 28`, `Community 285`, `Community 31`, `Community 289`, `Community 167`, `Community 50`, `Community 435`, `Community 311`, `Community 187`, `Community 60`, `Community 61`, `Community 445`, `Community 59`, `Community 66`, `Community 707`, `Community 69`, `Community 198`, `Community 202`, `Community 978`, `Community 83`, `Community 1238`, `Community 1115`, `Community 742`, `Community 103`, `Community 1258`, `Community 1261`, `Community 115`, `Community 117`, `Community 1272`, `Community 381`, `Community 254`?**
+- **Why does `lifespan()` connect `Community 435` to `Approval Queue & Gateway Config`, `Telegram Proxy & Owner Auth`, `PII Redaction & XML Filtering`, `Agent Registry & Isolation`, `Community 264`, `Teams & Group RBAC`, `Community 140`, `Slack Proxy Integration`, `Webhook Receiver & User Access`, `Community 15`, `Community 1423`, `Community 275`, `Community 19`, `Community 22`, `Community 279`, `Community 152`, `Community 25`, `Community 157`, `Community 31`, `Community 39`, `Community 167`, `Community 41`, `Community 44`, `Community 46`, `Community 64`, `Community 193`, `Community 66`, `Community 195`, `Community 707`, `Community 71`, `Community 73`, `Community 74`, `Community 205`, `Community 207`, `Community 211`, `Community 339`, `Community 348`, `Community 94`, `Community 100`, `Community 613`, `Community 234`, `Community 364`, `Community 111`, `Community 123`, `Community 125`?**
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
+- **Why does `TelegramAPIProxy` connect `Enhanced Approval Queue (WS)` to `PII Sanitization & Alerts`, `Community 259`, `Community 260`, `Collaborator Message Sanitization`, `Community 23`, `Community 537`, `Community 281`, `Community 26`, `Community 28`, `Community 31`, `Community 167`, `Community 50`, `Community 435`, `Community 311`, `Community 187`, `Community 60`, `Community 61`, `Community 445`, `Community 59`, `Community 69`, `Community 198`, `Community 978`, `Community 83`, `Community 211`, `Community 1238`, `Community 742`, `Community 103`, `Community 234`, `Community 1261`, `Community 115`, `Community 254`, `Community 1272`, `Community 123`, `Community 381`, `Community 1278`?**
   _High betweenness centrality (0.035) - this node is a cross-community bridge._
-- **Why does `RBACConfig` connect `Community 707` to `Egress & RBAC Policy`, `Community 259`, `Community 1273`, `Collaborator Message Sanitization`, `Egress Filtering & Approval`, `Community 523`, `Enhanced Approval Queue (WS)`, `Slack Proxy Integration`, `Community 22`, `Community 159`, `Community 673`, `Community 296`, `Community 44`, `Community 689`, `Community 50`, `Community 51`, `Community 435`, `Community 566`, `Community 60`, `Community 61`, `Community 189`, `Community 446`, `Community 64`, `Community 66`, `Community 1223`, `Community 74`, `Community 75`, `Community 78`, `Community 207`, `Community 80`, `Community 721`, `Community 979`, `Community 94`, `Community 238`, `Community 1266`, `Community 1267`, `Community 115`, `Community 889`, `Community 509`?**
+- **Why does `RBACConfig` connect `Community 435` to `Egress & RBAC Policy`, `Community 1153`, `Collaborator Message Sanitization`, `Community 137`, `Egress Filtering & Approval`, `Enhanced Approval Queue (WS)`, `Community 537`, `Community 1435`, `Community 673`, `Community 296`, `Community 1321`, `Community 44`, `Community 689`, `Community 50`, `Community 51`, `Community 52`, `Community 566`, `Community 61`, `Community 189`, `Community 446`, `Community 64`, `Community 66`, `Community 707`, `Community 74`, `Community 75`, `Community 207`, `Community 340`, `Community 94`, `Community 1382`, `Community 1258`, `Community 1388`, `Community 115`, `Community 1267`, `Community 889`, `Community 509`?**
   _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **Are the 235 inferred relationships involving `AsyncMock` (e.g. with `.test_chat_success_returns_parsed_response()` and `.test_openai_rate_limit_error_returns_429()`) actually correct?**
   _`AsyncMock` has 235 INFERRED edges - model-reasoned connections that need verification._

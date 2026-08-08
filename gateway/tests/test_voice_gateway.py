@@ -681,6 +681,33 @@ def test_token_falls_back_to_env_when_no_file(tmp_path, monkeypatch):
     assert srv._GATEWAY_TOKEN == "env-token"
 
 
+# ── Voice system message — version grounding ───────────────────────────────
+
+
+def test_voice_system_message_includes_agentshroud_version(monkeypatch):
+    """Regression 2026-08-08: the voice assistant answered "what version is
+    AgentShroud" with "1.0.0" — not hardcoded anywhere, pure hallucination,
+    because the system prompt had zero version info in it. AGENTSHROUD_VERSION
+    (docker/versions.env, synced from gateway/__init__.py by
+    scripts/sync-version.sh) must be grounded in the prompt."""
+    import voice_gateway.server as srv
+
+    monkeypatch.setenv("AGENTSHROUD_VERSION", "1.3.0")
+    msg = srv._voice_system_message()
+    assert "AgentShroud version 1.3.0" in msg["content"]
+
+
+def test_voice_system_message_version_unknown_when_env_unset(monkeypatch):
+    """No fabricated version when the env var is genuinely unset — say
+    'unknown' rather than making something up, consistent with why this
+    field was added in the first place."""
+    import voice_gateway.server as srv
+
+    monkeypatch.delenv("AGENTSHROUD_VERSION", raising=False)
+    msg = srv._voice_system_message()
+    assert "AgentShroud version unknown" in msg["content"]
+
+
 def test_stt_default_model_size_is_small_en(monkeypatch):
     """Default _MODEL_SIZE is 'small.en' when WHISPER_MODEL_SIZE is not set."""
     import importlib

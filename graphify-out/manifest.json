@@ -5085,8 +5085,8 @@
     "semantic_hash": ""
   },
   "firmware/voice-terminal/main/app_main.c": {
-    "mtime": 1786095005.5507417,
-    "ast_hash": "291f75a7cbb9aa34fa1dd169f7ea6da6",
+    "mtime": 1786096733.6415305,
+    "ast_hash": "82a54d6013c51322b01061964a07629e",
     "semantic_hash": ""
   },
   "firmware/voice-terminal/main/audio.c": {
@@ -5535,8 +5535,8 @@
     "semantic_hash": ""
   },
   "gateway/tests/test_voice_gateway.py": {
-    "mtime": 1786095198.6512034,
-    "ast_hash": "38af4d4f58a28e54584ee1985758037e",
+    "mtime": 1786096804.7462022,
+    "ast_hash": "3ec6dad195a793379a0ca78b4e69da5e",
     "semantic_hash": ""
   },
   "gateway/tests/test_voice_latency_guard.py": {
@@ -5630,8 +5630,8 @@
     "semantic_hash": ""
   },
   "voice_gateway/server.py": {
-    "mtime": 1786095091.486748,
-    "ast_hash": "c95c70a3f264964a3e96c7c4710f44c5",
+    "mtime": 1786096644.998038,
+    "ast_hash": "f92e650145ee4404d0044a4cb39b7238",
     "semantic_hash": ""
   },
   "voice_gateway/stt.py": {

@@ -12,7 +12,10 @@ services:
   # ── Gateway ──────────────────────────────────────────────────────────────────
   # Security proxy, HTTP CONNECT proxy, DNS forwarder, API gateway.
   # SOLE egress point for all container traffic. All outbound logged.
-  # Set AGENTSHROUD_VERSION=1.0.0 to build/run versioned images. Defaults to :latest.
+  # AGENTSHROUD_VERSION is sourced from docker/versions.env (via scripts/asb —
+  # see that file's header). Defaults to :latest if unset/not built through
+  # scripts/asb. Kept in sync with gateway/__init__.py's __version__ by
+  # scripts/sync-version.sh.
   gateway:
     build:
       context: ..
@@ -391,6 +394,7 @@ services:
         # an unset value must fail the build loudly (empty FROM), not silently
         # float to whatever :latest currently resolves to.
         HERMES_IMAGE: ${HERMES_IMAGE}
+        AGENTSHROUD_VERSION: ${AGENTSHROUD_VERSION:-latest}
     container_name: agentshroud-hermes-v2
     hostname: agentshroud-hermes-v2
     restart: unless-stopped
@@ -527,6 +531,11 @@ services:
       # with exit 255) — confirmed 2026-07-28 via /Users/ijefferson.admin/.colima/_lima/colima/ha.stderr.log.
       - "127.0.0.1:8765:8765"
     environment:
+      # Runtime version, not just a build-time image LABEL — voice_gateway's
+      # system prompt includes it so the voice assistant answers "what
+      # version" questions from real data instead of guessing (live
+      # regression 2026-08-08: it answered "1.0.0" from nowhere).
+      AGENTSHROUD_VERSION: ${AGENTSHROUD_VERSION:-latest}
       HTTP_PROXY: http://gateway:8181
       HTTPS_PROXY: http://gateway:8181
       NO_PROXY: gateway,agentshroud-voice-gateway,127.0.0.1,localhost

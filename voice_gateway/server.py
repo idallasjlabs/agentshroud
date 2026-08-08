@@ -658,8 +658,17 @@ def _voice_system_message() -> Dict[str, str]:
     """Build a system message with the current date/time for voice context."""
     tz = ZoneInfo(os.environ.get("GATEWAY_TZ", "America/New_York"))
     now = datetime.now(tz).strftime("%A, %B %d, %Y at %-I:%M %p %Z")
+    # Ground "what version is AgentShroud" answers in real data — without
+    # this the LLM has no version info in its context at all and guesses a
+    # plausible-sounding default (live regression 2026-08-08: it answered
+    # "1.0.0" from nowhere; not hardcoded anywhere, pure hallucination).
+    # AGENTSHROUD_VERSION is a runtime env var sourced from
+    # docker/versions.env, kept in sync with gateway/__init__.py's
+    # __version__ by scripts/sync-version.sh.
+    version = os.environ.get("AGENTSHROUD_VERSION", "unknown")
     content = (
-        f"You are a concise voice assistant built into an ESP32 device. "
+        f"You are a concise voice assistant built into an ESP32 device, "
+        f"part of AgentShroud version {version}. "
         f"The current date and time is {now}. "
         "Keep every response to 1-2 short spoken sentences — no markdown, "
         "no bullet points, no lists. Plain conversational English only. "
