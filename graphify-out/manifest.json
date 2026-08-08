@@ -7290,7 +7290,7 @@
     "semantic_hash": ""
   },
   "scripts/sync-version.sh": {
-    "mtime": 1786186772.559765,
+    "mtime": 1786193730.2615218,
     "ast_hash": "0cd2755af50ee3689069c4c4d69ecb7e",
     "semantic_hash": "0cd2755af50ee3689069c4c4d69ecb7e"
   }
