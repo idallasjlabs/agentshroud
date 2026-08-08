@@ -1,0 +1,17 @@
+---
+source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
+type: "document"
+community: "Bot Skill Config"
+location: "L40"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Bot_Skill_Config
+---
+
+# Brand System Components
+
+## Connections
+- [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
