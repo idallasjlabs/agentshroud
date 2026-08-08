@@ -1,0 +1,33 @@
+---
+source_file: "gateway/tests/test_differential_pii_detector.py"
+type: "code"
+community: "Gateway Test Suite"
+location: "L1"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Gateway_Test_Suite
+---
+
+# test_differential_pii_detector.py
+
+## Connections
+- [[DifferentialPIIConfig]] - `imports` [EXTRACTED]
+- [[DifferentialPIIDetector]] - `imports` [EXTRACTED]
+- [[DifferentialPIIDetector (Module 28)]] - `implements` [EXTRACTED]
+- [[PIIHit]] - `imports` [EXTRACTED]
+- [[PIIHitSeverity]] - `imports` [EXTRACTED]
+- [[TestAdversarialFormattingCaught]] - `contains` [EXTRACTED]
+- [[TestAsymmetricFloor]] - `contains` [EXTRACTED]
+- [[TestDeterministicPresidioInit]] - `contains` [EXTRACTED]
+- [[TestDifferentialPIIDetectorConstruction]] - `contains` [EXTRACTED]
+- [[TestPerToolConfiguration]] - `contains` [EXTRACTED]
+- [[TestPresidioPathContract]] - `contains` [EXTRACTED]
+- [[TestRedaction]] - `contains` [EXTRACTED]
+- [[TestStandardPIIAlwaysCaught]] - `contains` [EXTRACTED]
+- [[TestToolResultPIIReport]] - `contains` [EXTRACTED]
+- [[_FakeRecognizerResult]] - `contains` [EXTRACTED]
+- [[default_config()]] - `contains` [EXTRACTED]
+- [[detector()]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

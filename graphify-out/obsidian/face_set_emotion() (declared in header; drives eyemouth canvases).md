@@ -1,0 +1,17 @@
+---
+source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
+type: "code"
+community: "ESP32 Firmware"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/ESP32_Firmware
+---
+
+# face_set_emotion() (declared in header; drives eye/mouth canvases)
+
+## Connections
+- [[_apply_state_cb()]] - `calls` [EXTRACTED]
+- [[ui_face_init()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware

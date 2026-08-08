@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_voice_gateway.py"
+type: "code"
+community: "Gateway Test Suite"
+location: "L3215"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Gateway_Test_Suite
+---
+
+# test_tts_resume_stale_cache_ignored()
+
+## Connections
+- [[A resume cache older than the freshness window must not replay.]] - `rationale_for` [EXTRACTED]
+- [[_mock_ws()]] - `calls` [EXTRACTED]
+- [[test_voice_gateway.py]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
