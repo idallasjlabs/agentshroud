@@ -209,9 +209,7 @@ class TestArchiveOldEvents:
         def hold_write_lock():
             conn = sqlite3.connect(db, timeout=1)
             conn.execute("BEGIN IMMEDIATE")
-            conn.execute(
-                "UPDATE audit_events SET severity = severity WHERE id = 1"
-            )
+            conn.execute("UPDATE audit_events SET severity = severity WHERE id = 1")
             lock_acquired.set()
             release_lock.wait(timeout=5)
             conn.commit()

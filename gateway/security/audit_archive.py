@@ -109,9 +109,7 @@ def archive_old_events(
             archive_conn.commit()
 
             ids = [row["id"] for row in rows]
-            live_conn.executemany(
-                "DELETE FROM audit_events WHERE id = ?", [(i,) for i in ids]
-            )
+            live_conn.executemany("DELETE FROM audit_events WHERE id = ?", [(i,) for i in ids])
             live_conn.commit()
 
             # VACUUM needs roughly the live db's own size again in scratch
@@ -213,9 +211,7 @@ def purge_low_value_events(
                 archive_conn.commit()
 
                 ids = [row["id"] for row in rows]
-                live_conn.executemany(
-                    "DELETE FROM audit_events WHERE id = ?", [(i,) for i in ids]
-                )
+                live_conn.executemany("DELETE FROM audit_events WHERE id = ?", [(i,) for i in ids])
                 live_conn.commit()
 
                 total_archived += len(ids)
