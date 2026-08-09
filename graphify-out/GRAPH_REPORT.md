@@ -1,7 +1,7 @@
 # Graph Report - agentshroud  (2026-08-09)
 
 ## Corpus Check
-- 1297 files · ~2,052,759 words
+- 1297 files · ~2,052,753 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `46d52f1c`
+- Built from commit: `2746a8b0`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

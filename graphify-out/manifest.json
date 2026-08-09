@@ -7300,13 +7300,13 @@
     "semantic_hash": ""
   },
   "gateway/security/audit_archive.py": {
-    "mtime": 1786273147.1644967,
-    "ast_hash": "d8634f42c5682fe808d622d4df5ee89e",
+    "mtime": 1786288323.1637058,
+    "ast_hash": "875d60bcb5f5e675430b0f0341471c6f",
     "semantic_hash": ""
   },
   "gateway/tests/test_audit_archive.py": {
-    "mtime": 1786273181.877577,
-    "ast_hash": "ac9c1c434ee2ae68177ac96d20f7b648",
+    "mtime": 1786288323.2136583,
+    "ast_hash": "d22c07ce67a3c30bcaf15d1e98c1f179",
     "semantic_hash": ""
   }
 }
