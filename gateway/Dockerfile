@@ -394,6 +394,7 @@ COPY docker/scripts/security-entrypoint.sh /usr/local/bin/security-entrypoint.sh
 COPY docker/scripts/security-scheduler.sh /usr/local/bin/security-scheduler.sh
 COPY docker/scripts/security-scan.sh /usr/local/bin/security-scan.sh
 COPY docker/scripts/security-report.sh /usr/local/bin/security-report.sh
+COPY docker/scripts/security-report-retention.sh /usr/local/bin/security-report-retention.sh
 COPY docker/scripts/gateway-start.sh /usr/local/bin/gateway-start.sh
 RUN chmod +x /usr/local/bin/security-*.sh /usr/local/bin/gateway-start.sh
 
