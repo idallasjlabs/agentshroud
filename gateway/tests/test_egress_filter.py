@@ -267,6 +267,49 @@ class TestEgressAttempt:
         assert result.details  # Should have a helpful error message
 
 
+class TestAuditStorePersistence:
+    """Only DENY decisions are persisted to the tamper-evident audit store.
+
+    ALLOW decisions are already tracked via record_decision() (module_stats)
+    and the in-memory ring buffer; persisting every ALLOW as well caused
+    unbounded growth in production (57M+ rows / 32GB in under 90 days)."""
+
+    class FakeAuditStore:
+        def __init__(self):
+            self.events = []
+
+        async def log_event(self, **kwargs):
+            self.events.append(kwargs)
+
+    @pytest.mark.asyncio
+    async def test_deny_is_persisted_to_audit_store(self):
+        import asyncio
+
+        cfg = EgressFilterConfig(mode="enforce", default_allowlist=["api.anthropic.com"])
+        store = self.FakeAuditStore()
+        ef = EgressFilter(config=cfg, audit_store=store)
+
+        ef.check("bot", "https://blocked.example.com")
+        await asyncio.sleep(0)
+
+        assert len(store.events) == 1
+        assert store.events[0]["event_type"] == "egress_filter"
+        assert store.events[0]["severity"] == "HIGH"
+
+    @pytest.mark.asyncio
+    async def test_allow_is_not_persisted_to_audit_store(self):
+        import asyncio
+
+        cfg = EgressFilterConfig(mode="enforce", default_allowlist=["api.anthropic.com"])
+        store = self.FakeAuditStore()
+        ef = EgressFilter(config=cfg, audit_store=store)
+
+        ef.check("bot", "https://api.anthropic.com/v1/messages")
+        await asyncio.sleep(0)
+
+        assert store.events == []
+
+
 class TestInteractiveApproval:
     """Interactive egress approval flow (allow once / deny)."""
 

@@ -509,8 +509,15 @@ class EgressFilter:
         if len(self._log) > self._max_log_size:
             self._log = self._log[-self._max_log_size // 2 :]
 
-        # Persist to SQLite audit store if configured (fire-and-forget)
-        if self._audit_store is not None:
+        # Persist DENY decisions to the tamper-evident SQLite audit store
+        # (fire-and-forget). ALLOW decisions are the overwhelming majority of
+        # egress traffic and are already tracked via record_decision() above
+        # (module_stats — lightweight in-memory counters for the dashboard)
+        # and self._log (recent-history ring buffer); persisting every one to
+        # the permanent hash chain as well caused unbounded growth — one real
+        # deployment reached 57M+ rows / 32GB in under 90 days, ~99.99% of it
+        # ALLOW entries carrying no security signal beyond "traffic flowed".
+        if self._audit_store is not None and action == EgressAction.DENY:
             import asyncio
 
             try:

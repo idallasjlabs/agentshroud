@@ -12,8 +12,12 @@ LOG_DIR="/var/log/security"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 SCAN_SCRIPT="${SCRIPT_DIR}/security-scan.sh"
 REPORT_SCRIPT="${SCRIPT_DIR}/security-report.sh"
+RETENTION_SCRIPT="${SCRIPT_DIR}/security-report-retention.sh"
 FALCO_ALERT_DIR="${FALCO_ALERT_DIR:-/var/log/falco}"
 GATEWAY_URL="${GATEWAY_URL:-http://localhost:8080}"
+AUDIT_DB="${AUDIT_DB:-/app/data/audit.db}"
+AUDIT_ARCHIVE_DB="${AUDIT_ARCHIVE_DB:-/app/data/audit_archive.db}"
+AUDIT_RETENTION_DAYS="${AUDIT_RETENTION_DAYS:-90}"
 
 mkdir -p "$LOG_DIR"
 
@@ -37,6 +41,8 @@ LAST_CLAMAV_DATE="$(_stamp_read clamav)"
 LAST_OSCAP_DATE="$(_stamp_read oscap)"
 LAST_SBOM_DATE="$(_stamp_read sbom)"
 LAST_REPORT_DATE="$(_stamp_read report)"
+LAST_RETENTION_DATE="$(_stamp_read retention)"
+LAST_AUDIT_ARCHIVE_MONTH="$(_stamp_read audit_archive)"
 LAST_FALCO_CHECK=0
 
 log "Security scheduler started (last_report=${LAST_REPORT_DATE:-never})"
@@ -89,6 +95,32 @@ while true; do
         log "Generating daily health report"
         "$REPORT_SCRIPT" 2>&1 >> "$LOG_DIR/scheduler.log" || log "Report generation failed"
         LAST_REPORT_DATE="$CURRENT_DATE"; _stamp_write report "$CURRENT_DATE"
+    fi
+
+    # Report retention at 6 AM UTC (after OpenSCAP) — keep newest N per scan type,
+    # preventing the unbounded daily accumulation of openscap/oscap/sbom/trivy/clamav
+    # reports. Runs daily; deletion itself is idempotent/cheap so no rush.
+    if [ "$CURRENT_HOUR" = "06" ] && [ "$LAST_RETENTION_DATE" != "$CURRENT_DATE" ] && [ -x "$RETENTION_SCRIPT" ]; then
+        log "Running scheduled report retention"
+        "$RETENTION_SCRIPT" 2>&1 >> "$LOG_DIR/scheduler.log" || log "Report retention failed"
+        LAST_RETENTION_DATE="$CURRENT_DATE"; _stamp_write retention "$CURRENT_DATE"
+    fi
+
+    # Audit log archival on the 1st of each month at 7 AM UTC — moves
+    # audit_events rows older than AUDIT_RETENTION_DAYS into a separate
+    # archive database (verbatim, preserving the hash chain data) and VACUUMs
+    # the live db. Gated by month (not date) since it only needs to run once.
+    CURRENT_MONTH=$(date -u +%Y-%m)
+    CURRENT_DAY=$(date -u +%d)
+    if [ "$CURRENT_DAY" = "01" ] && [ "$CURRENT_HOUR" = "07" ] && [ "$LAST_AUDIT_ARCHIVE_MONTH" != "$CURRENT_MONTH" ]; then
+        log "Running scheduled audit log archival (cutoff=${AUDIT_RETENTION_DAYS}d)"
+        if python3 -m gateway.security.audit_archive age \
+            --db "$AUDIT_DB" --archive "$AUDIT_ARCHIVE_DB" \
+            --cutoff-days "$AUDIT_RETENTION_DAYS" 2>&1 >> "$LOG_DIR/scheduler.log"; then
+            LAST_AUDIT_ARCHIVE_MONTH="$CURRENT_MONTH"; _stamp_write audit_archive "$CURRENT_MONTH"
+        else
+            log "Audit log archival failed"
+        fi
     fi
 
     # Falco alert check every 5 minutes
