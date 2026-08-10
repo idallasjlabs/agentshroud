@@ -1,16 +1,16 @@
 # Graph Report - agentshroud  (2026-08-10)
 
 ## Corpus Check
-- 1299 files · ~2,057,426 words
+- 1299 files · ~2,057,514 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 30314 nodes · 51188 edges · 1740 communities (1321 shown, 419 thin omitted)
+- 30313 nodes · 51188 edges · 1739 communities (1321 shown, 418 thin omitted)
 - Extraction: 85% EXTRACTED · 15% INFERRED · 0% AMBIGUOUS · INFERRED: 7668 edges (avg confidence: 0.54)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6b0f427c`
+- Built from commit: `d89ed991`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -1599,7 +1599,6 @@
 - [[_COMMUNITY_examplesdocker-compose.minimal.yml|examples/docker-compose.minimal.yml]]
 - [[_COMMUNITY_docsflows|docs/flows]]
 - [[_COMMUNITY_.githubISSUE_TEMPLATE|.github/ISSUE_TEMPLATE]]
-- [[_COMMUNITY_.githubdependabot.yml|.github/dependabot.yml]]
 - [[_COMMUNITY_.githubISSUE_TEMPLATE|.github/ISSUE_TEMPLATE]]
 - [[_COMMUNITY_.githubFUNDING.yml|.github/FUNDING.yml]]
 - [[_COMMUNITY_.githubISSUE_TEMPLATE|.github/ISSUE_TEMPLATE]]
@@ -1859,7 +1858,7 @@
 - **SecureBrowser defense-in-depth: policy doc, config allowlist, and enforcing code form one security framework** — references_securitypolicies_md, securebrowser_config_yaml, scripts_browse_py [INFERRED 0.85]
 - **TTS click/clipping fix: lead-silence pad, sentence gap, and per-clip edge-fade in synthesize()** — voice_gateway_server_ttsleadsilence, voice_gateway_server_ttssentencegap, voice_gateway_tts_synthesize [INFERRED 0.85]
 
-## Communities (1740 total, 419 thin omitted)
+## Communities (1739 total, 418 thin omitted)
 
 ### Community 0 - "PII Config & Test Fixtures"
 Cohesion: 0.03
@@ -7012,9 +7011,9 @@ Nodes (4): Option A: Docker (Most Common), Option B: Podman (Red Hat/Enterprise)
   examples/agentshroud-with-tool-risk.yaml · relation: rationale_for
 
 ## Knowledge Gaps
-- **8176 isolated node(s):** `version`, `generated_at`, `entries`, `Role`, `Invocation` (+8171 more)
+- **8175 isolated node(s):** `version`, `generated_at`, `entries`, `Role`, `Invocation` (+8170 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **419 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **418 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
