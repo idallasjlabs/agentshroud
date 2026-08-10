@@ -74,6 +74,13 @@ from .routes.health import router as health_router
 from .state import app_state
 from .version_routes import router as version_router
 
+# Minimum interval between Telegram token-registry rebuilds triggered by a
+# cache miss (see telegram_api_proxy). Bounds secret-store re-reads under a
+# flood of unknown-token requests while still letting a bot's secret that
+# arrives shortly after gateway boot (e.g. an ephemeral-secrets copy step
+# racing gateway's healthcheck) self-heal without a full process restart.
+_TELEGRAM_REGISTRY_REBUILD_MIN_INTERVAL = 10.0
+
 # Module-level IP allowlists for proxy endpoints (parsed once, not per-request).
 # Defaults to the prod isolated subnet. Override via PROXY_ALLOWED_NETWORKS env var
 # (comma-separated CIDRs) to support alternate deployments (e.g. dev on 172.21.0.0/16).
@@ -4544,6 +4551,23 @@ _slack_proxy = SlackAPIProxy(
 )
 
 
+def _build_telegram_token_registry() -> dict[str, str]:
+    """Build the Telegram bot-token → bot_id registry from configured secrets."""
+    _registry: dict[str, str] = {}
+    for _bid, _bcfg in app_state.config.bots.items():
+        _secret_name = _bcfg.telegram_token_secret or (
+            "telegram_bot_token" if _bid == "openclaw" else f"telegram_bot_token_{_bid}"
+        )
+        _tok = _read_secret(_secret_name) or None
+        if _tok:
+            _registry[_tok] = _bid
+    # Legacy fallback: 'telegram_bot_token' covers OpenClaw even if not declared in BotConfig
+    _legacy = _read_secret("telegram_bot_token") or None
+    if _legacy and _legacy not in _registry:
+        _registry[_legacy] = "openclaw"
+    return _registry
+
+
 @app.api_route(
     "/telegram-api/{path:path}",
     methods=["GET", "POST", "PUT", "DELETE"],
@@ -4579,27 +4603,33 @@ async def telegram_api_proxy(path: str, request: Request):
     # M6: Validate bot token against the multi-bot registry.
     # Registry is built lazily from BotConfig.telegram_token_secret + the legacy
     # 'telegram_bot_token' secret (OpenClaw default). Keyed token → bot_id.
-    if not getattr(app_state, "_telegram_token_registry", None):
-        _registry: dict[str, str] = {}
-        for _bid, _bcfg in app_state.config.bots.items():
-            _secret_name = _bcfg.telegram_token_secret or (
-                "telegram_bot_token" if _bid == "openclaw" else f"telegram_bot_token_{_bid}"
-            )
-            _tok = _read_secret(_secret_name) or None
-            if _tok:
-                _registry[_tok] = _bid
-        # Legacy fallback: 'telegram_bot_token' covers OpenClaw even if not declared in BotConfig
-        _legacy = _read_secret("telegram_bot_token") or None
-        if _legacy and _legacy not in _registry:
-            _registry[_legacy] = "openclaw"
+    #
+    # Rebuild-on-miss: a bot's secret file can still be mid-sync when gateway
+    # serves its first Telegram-proxy request (e.g. an ephemeral-secrets copy
+    # step racing gateway's healthcheck at boot). Caching that miss forever
+    # would 403 the bot until a full gateway restart, so an unrecognised token
+    # forces one fresh re-read of the secrets — debounced by
+    # _TELEGRAM_REGISTRY_REBUILD_MIN_INTERVAL so a flood of unknown tokens
+    # can't force unbounded secret-store re-reads.
+    _registry = getattr(app_state, "_telegram_token_registry", None)
+    _registry_built_at = getattr(app_state, "_telegram_token_registry_built_at", 0.0)
+    _registry_miss = _registry is None or bot_token not in _registry
+    if _registry_miss and (
+        time.time() - _registry_built_at >= _TELEGRAM_REGISTRY_REBUILD_MIN_INTERVAL
+    ):
+        _registry = _build_telegram_token_registry()
         if not _registry:
             logger.error(
                 "Telegram proxy: no bot tokens configured — rejecting request (fail-closed)"
             )
             raise HTTPException(status_code=503, detail="Telegram proxy not configured")
         app_state._telegram_token_registry = _registry
+        app_state._telegram_token_registry_built_at = time.time()
+    elif _registry is None:
+        logger.error("Telegram proxy: no bot tokens configured — rejecting request (fail-closed)")
+        raise HTTPException(status_code=503, detail="Telegram proxy not configured")
 
-    matched_bot_id = app_state._telegram_token_registry.get(bot_token)
+    matched_bot_id = _registry.get(bot_token)
     if not matched_bot_id:
         logger.warning("Telegram proxy: unrecognised bot token — rejecting request")
         raise HTTPException(status_code=403, detail="Invalid bot token")

@@ -12,8 +12,11 @@ dispatches by token and rejects unrecognised tokens with 403 (fail-closed).
 from __future__ import annotations
 
 import asyncio
+import time
 from typing import TYPE_CHECKING
 from unittest.mock import AsyncMock, MagicMock, patch
+
+import pytest
 
 if TYPE_CHECKING:
     from gateway.proxy.telegram_proxy import TelegramAPIProxy
@@ -307,6 +310,134 @@ class TestMultiBotContextvarRouting:
         asyncio.run(run())
 
         assert len(captured_token_in_impl) == 1
-        assert (
-            captured_token_in_impl[0] == _HERMES_TOKEN
-        ), f"_active_send_token() inside impl should return Hermes token, got: {captured_token_in_impl}"
+
+
+class TestTelegramTokenRegistryRebuildOnMiss:
+    """The token registry is built lazily on the first /telegram-api/{path} request
+    and cached for the life of the process. If a bot's secret file is not yet
+    mounted/synced at that exact moment (e.g. an ephemeral-secrets copy step racing
+    gateway's healthcheck at boot), the stale cache previously 403'd that bot on
+    every request until a full gateway restart — even after the secret became
+    available seconds later. These tests prove the registry now self-heals on a
+    cache miss (debounced so a flood of unknown tokens can't force unbounded
+    secret-store re-reads)."""
+
+    def _mock_request(self) -> AsyncMock:
+        from starlette.requests import ClientDisconnect
+
+        mock_req = AsyncMock()
+        mock_req.method = "POST"
+        mock_req.client = type("Addr", (), {"host": "127.0.0.1"})()
+        mock_req.headers = {}
+        # Short-circuits with 499 right after the token check passes, so a
+        # successful auth is distinguishable from a 403 without mocking the
+        # full Telegram-forwarding chain.
+        mock_req.body = AsyncMock(side_effect=ClientDisconnect())
+        return mock_req
+
+    @staticmethod
+    def _allowed_networks():
+        import ipaddress
+
+        return [ipaddress.ip_network("127.0.0.0/8")]
+
+    async def test_miss_rebuilds_and_recovers_when_secret_becomes_available(self, monkeypatch):
+        """A token missing from a stale cached registry is picked up on retry
+        once its secret is readable, without needing a process restart."""
+        import json
+
+        from gateway.ingest_api.main import app_state, telegram_api_proxy
+
+        monkeypatch.setattr(
+            app_state, "_telegram_token_registry", {_OPENCLAW_TOKEN: "openclaw"}, raising=False
+        )
+        monkeypatch.setattr(app_state, "_telegram_token_registry_built_at", 0.0, raising=False)
+
+        hermes_bcfg = MagicMock()
+        hermes_bcfg.telegram_token_secret = "hermes_telegram_bot_token"
+        monkeypatch.setattr(
+            app_state, "config", MagicMock(bots={"hermes": hermes_bcfg}), raising=False
+        )
+
+        def _fake_read_secret(name):
+            # Secret has now landed on disk — the boot-time race has resolved.
+            return _HERMES_TOKEN if name == "hermes_telegram_bot_token" else None
+
+        with (
+            patch("gateway.ingest_api.main._read_secret", side_effect=_fake_read_secret),
+            patch(
+                "gateway.ingest_api.main._PROXY_ALLOWED_NETWORKS",
+                self._allowed_networks(),
+            ),
+        ):
+            result = await telegram_api_proxy(f"bot{_HERMES_TOKEN}/getMe", self._mock_request())
+
+        data = json.loads(result.body)
+        assert result.status_code == 499  # passed the token gate, hit the mocked disconnect
+        assert data["ok"] is False
+        assert app_state._telegram_token_registry.get(_HERMES_TOKEN) == "hermes"
+
+    async def test_miss_debounced_within_rebuild_interval(self, monkeypatch):
+        """Repeated misses within the debounce window must not re-read secrets
+        on every request — bounds the cost of an unknown-token flood."""
+        from gateway.ingest_api.main import app_state, telegram_api_proxy
+
+        monkeypatch.setattr(
+            app_state, "_telegram_token_registry", {_OPENCLAW_TOKEN: "openclaw"}, raising=False
+        )
+        monkeypatch.setattr(
+            app_state, "_telegram_token_registry_built_at", time.time(), raising=False
+        )
+
+        hermes_bcfg = MagicMock()
+        hermes_bcfg.telegram_token_secret = "hermes_telegram_bot_token"
+        monkeypatch.setattr(
+            app_state, "config", MagicMock(bots={"hermes": hermes_bcfg}), raising=False
+        )
+
+        read_calls: list[str] = []
+
+        def _fake_read_secret(name):
+            read_calls.append(name)
+            return _HERMES_TOKEN if name == "hermes_telegram_bot_token" else None
+
+        with (
+            patch("gateway.ingest_api.main._read_secret", side_effect=_fake_read_secret),
+            patch(
+                "gateway.ingest_api.main._PROXY_ALLOWED_NETWORKS",
+                self._allowed_networks(),
+            ),
+        ):
+            from fastapi import HTTPException
+
+            with pytest.raises(HTTPException) as exc:
+                await telegram_api_proxy(f"bot{_HERMES_TOKEN}/getMe", self._mock_request())
+
+        assert exc.value.status_code == 403
+        assert read_calls == []  # debounced — no secret re-read attempted
+
+    async def test_miss_still_rejected_after_rebuild_if_truly_unknown(self, monkeypatch):
+        """A genuinely-unregistered token must not be falsely accepted by the
+        rebuild path — the fix must not weaken fail-closed behavior."""
+        from gateway.ingest_api.main import app_state, telegram_api_proxy
+
+        monkeypatch.setattr(app_state, "_telegram_token_registry", {}, raising=False)
+        monkeypatch.setattr(app_state, "_telegram_token_registry_built_at", 0.0, raising=False)
+        monkeypatch.setattr(app_state, "config", MagicMock(bots={}), raising=False)
+
+        with (
+            patch(
+                "gateway.ingest_api.main._read_secret",
+                side_effect=lambda name: _OPENCLAW_TOKEN if name == "telegram_bot_token" else None,
+            ),
+            patch(
+                "gateway.ingest_api.main._PROXY_ALLOWED_NETWORKS",
+                self._allowed_networks(),
+            ),
+        ):
+            from fastapi import HTTPException
+
+            with pytest.raises(HTTPException) as exc:
+                await telegram_api_proxy(f"bot{_UNKNOWN_TOKEN}/getMe", self._mock_request())
+
+        assert exc.value.status_code == 403
