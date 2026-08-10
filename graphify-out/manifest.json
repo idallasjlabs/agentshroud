@@ -205,7 +205,7 @@
     "semantic_hash": "31f73d032175b62934186ea0846b37ad"
   },
   "docker/scripts/security-scheduler.sh": {
-    "mtime": 1786273155.0298429,
+    "mtime": 1786289663.9757917,
     "ast_hash": "d99133d3699752c3b54bb717e06801de",
     "semantic_hash": ""
   },
@@ -735,7 +735,7 @@
     "semantic_hash": "d21b4916076c0586f4324a7d6f80c6fc"
   },
   "gateway/security/egress_filter.py": {
-    "mtime": 1786236078.646618,
+    "mtime": 1786289663.9771492,
     "ast_hash": "8dc74dfa7c135ea1b7671e47e86d9d0f",
     "semantic_hash": ""
   },
@@ -1290,7 +1290,7 @@
     "semantic_hash": "170fe0ac31d83c2240dc73ea70a5e517"
   },
   "gateway/tests/test_egress_filter.py": {
-    "mtime": 1786236119.5351882,
+    "mtime": 1786289663.9782012,
     "ast_hash": "069edeff9868919da172961d0ea4e484",
     "semantic_hash": ""
   },
@@ -5035,9 +5035,9 @@
     "semantic_hash": "eac930806dd33962f8d65298b800d0b9"
   },
   "docker/config/hermes/manifest.json": {
-    "mtime": 1786193726.352763,
-    "ast_hash": "9df592f6ff702f6d18574d892fe10b76",
-    "semantic_hash": "9df592f6ff702f6d18574d892fe10b76"
+    "mtime": 1786357586.7292788,
+    "ast_hash": "613f58514b468863b2209e3c6d72bdb3",
+    "semantic_hash": ""
   },
   "docker/config/hermes/mcp/servers.json": {
     "mtime": 1785351807.2833116,
@@ -5050,9 +5050,9 @@
     "semantic_hash": "f388fef96d7147a3ae526d445a33fb96"
   },
   "docker/config/openclaw/manifest.json": {
-    "mtime": 1786193726.3531654,
-    "ast_hash": "408cfb8aef9926ae20a7b1f28f11b9a5",
-    "semantic_hash": "408cfb8aef9926ae20a7b1f28f11b9a5"
+    "mtime": 1786357586.7306232,
+    "ast_hash": "3541c72bf14081146c1f0c032a480890",
+    "semantic_hash": ""
   },
   "docker/config/openclaw/mcp/servers.json": {
     "mtime": 1785928088.8378928,
@@ -7230,24 +7230,24 @@
     "semantic_hash": "cb0495dcdd2a7aa165fcff0aba6fba53"
   },
   "docker/config/hermes/skills/i-hdev/SKILL.md": {
-    "mtime": 1786009553.9638307,
-    "ast_hash": "4965ffc3a5d0292c56626a5ec5455ecd",
-    "semantic_hash": "4965ffc3a5d0292c56626a5ec5455ecd"
+    "mtime": 1786357586.7297993,
+    "ast_hash": "3803f0ca9a3673a3400ee48993631c49",
+    "semantic_hash": ""
   },
   "docker/config/hermes/skills/i-odev/SKILL.md": {
-    "mtime": 1786009553.9643915,
-    "ast_hash": "438458018a416ec2ef1a9d67e8f1a5c0",
-    "semantic_hash": "438458018a416ec2ef1a9d67e8f1a5c0"
+    "mtime": 1786357586.730266,
+    "ast_hash": "97e8bfc449441c2a0a539a2933cbd593",
+    "semantic_hash": ""
   },
   "docker/config/openclaw/skills/i-hdev/SKILL.md": {
-    "mtime": 1786009553.9651554,
-    "ast_hash": "4965ffc3a5d0292c56626a5ec5455ecd",
-    "semantic_hash": "4965ffc3a5d0292c56626a5ec5455ecd"
+    "mtime": 1786357586.7308517,
+    "ast_hash": "3803f0ca9a3673a3400ee48993631c49",
+    "semantic_hash": ""
   },
   "docker/config/openclaw/skills/i-odev/SKILL.md": {
-    "mtime": 1786009553.965442,
-    "ast_hash": "438458018a416ec2ef1a9d67e8f1a5c0",
-    "semantic_hash": "438458018a416ec2ef1a9d67e8f1a5c0"
+    "mtime": 1786357586.7310624,
+    "ast_hash": "97e8bfc449441c2a0a539a2933cbd593",
+    "semantic_hash": ""
   },
   "docker/config/hermes/workspace/jira_dev_ticket.py": {
     "mtime": 1785975805.03176,
@@ -7295,18 +7295,28 @@
     "semantic_hash": "0cd2755af50ee3689069c4c4d69ecb7e"
   },
   "docker/scripts/security-report-retention.sh": {
-    "mtime": 1786234888.312949,
+    "mtime": 1786289663.975305,
     "ast_hash": "ebd0f10056f604fb2d38cfa51bf6dbb5",
     "semantic_hash": ""
   },
   "gateway/security/audit_archive.py": {
-    "mtime": 1786288323.1637058,
+    "mtime": 1786289663.976637,
     "ast_hash": "875d60bcb5f5e675430b0f0341471c6f",
     "semantic_hash": ""
   },
   "gateway/tests/test_audit_archive.py": {
-    "mtime": 1786288323.2136583,
+    "mtime": 1786289663.9777272,
     "ast_hash": "d22c07ce67a3c30bcaf15d1e98c1f179",
+    "semantic_hash": ""
+  },
+  "docs/runbooks/hermes-openclaw-dev-workflow.md": {
+    "mtime": 1786357586.7315638,
+    "ast_hash": "2af143bc42e970f8d3b972e837d255f6",
+    "semantic_hash": ""
+  },
+  "docs/papers/attack-teardowns-rovoblast-cross-turn.md": {
+    "mtime": 1786361705.6105175,
+    "ast_hash": "8d9a68d2ee75680a3ad0bd7fc9ef7256",
     "semantic_hash": ""
   }
 }

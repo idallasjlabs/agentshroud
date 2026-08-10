@@ -201,11 +201,95 @@ agentshroud-ssh-exec.sh marvin "gemini --skip-trust -p \"Review this diff for bu
 
 Only act on findings that are clearly real (either tool flags something
 concrete and specific, not a vague style preference). Fix via `claude -p`
-(see Step 5b in Mode B for the exact pattern), re-run Step 4, repeat once if
+(see Mode B Step 2c for the exact pattern), re-run Step 4, repeat once if
 needed. If a reviewer keeps flagging something you've already addressed,
 note the disagreement in the PR instead of looping indefinitely.
 
-### Step 6 — Push and open the PR
+### Step 6 — Build and validate containers
+
+Build the affected images from THIS worktree's code, under a project name
+that never collides with the live `agentshroud-bot` stack you're running
+under — **build only, no `up`, no port binding, zero risk of disrupting the
+OpenClaw you're talking to right now**:
+
+```
+agentshroud-ssh-exec.sh marvin "docker-compose -f docker/docker-compose.yml -f docker/docker-compose.agentshroud-bot.marvin.yml -p agentshroud-bot-verify build gateway openclaw" "" "/Users/agentshroud-bot/Development/agentshroud-odev-<slug>"
+```
+
+If the task touched `docker/bots/hermes/` or hermes-related gateway code,
+also build hermes:
+
+```
+agentshroud-ssh-exec.sh marvin "docker-compose -f docker/docker-compose.yml -f docker/docker-compose.agentshroud-bot.marvin.yml -p agentshroud-bot-verify build hermes" "" "/Users/agentshroud-bot/Development/agentshroud-odev-<slug>"
+```
+
+Then run the static smoke suite — the same "Startup Smoke Tests (static)"
+gate CI runs, no live containers, no port risk, catches config/wiring
+errors before you ever push:
+
+```
+agentshroud-ssh-exec.sh marvin "bash scripts/smoke.sh" "" "/Users/agentshroud-bot/Development/agentshroud-odev-<slug>"
+```
+
+If a build or the smoke suite fails: read the actual error, go back to Step
+3, fix, retest from Step 4. Do not open a PR on a failing build or smoke
+suite.
+
+Clean up the verify-only images afterward so they don't accumulate on disk:
+
+```
+agentshroud-ssh-exec.sh marvin "docker-compose -f docker/docker-compose.yml -f docker/docker-compose.agentshroud-bot.marvin.yml -p agentshroud-bot-verify down --rmi local" "" "/Users/agentshroud-bot/Development/agentshroud-odev-<slug>"
+```
+
+**Why not a live `up -d`:** a full live-and-monitored deploy is what the
+owner's own redeploy already does after merge — duplicating it here would
+mean either a silent port conflict (the live stack already holds those
+ports) or a second, unmonitored live stack. Build + static smoke is the
+safe, useful pre-merge signal.
+
+### Step 7 — Update documentation and website
+
+Judgment call, not a blanket action — only touch docs this specific change
+actually affects:
+
+- Changed a script's flags/usage, a module's public behavior, an API
+  contract, or added/removed a skill? Update the corresponding file under
+  `docs/` (check `docs/runbooks/`, `docs/reference/`, `docs/api/` for an
+  existing page first — prefer editing over creating new).
+- Only touch the public site (`docs/index.html`, `docs/CNAME`) if the
+  change is genuinely public-facing (roadmap, feature list, install
+  instructions). Most dev-batch tasks will not need this.
+- If nothing applies, say so explicitly in the PR description ("no doc
+  changes needed — internal fix, no documented behavior changed") instead
+  of silently skipping the question.
+
+### Step 8 — Update the knowledge graph
+
+```
+agentshroud-ssh-exec.sh marvin "graphify --version" "" "/Users/agentshroud-bot/Development/agentshroud-odev-<slug>"
+```
+
+If that fails (not installed), install it once — non-interactive, uses the
+Gemini backend automatically since `GEMINI_API_KEY` is already exported in
+your environment (no Claude subagent orchestration needed, unlike when the
+owner runs `/graphify` interactively):
+
+```
+agentshroud-ssh-exec.sh marvin "pip install --user graphifyy -q" "" "/Users/agentshroud-bot/Development/agentshroud-odev-<slug>"
+```
+
+Then update the graph incrementally:
+
+```
+agentshroud-ssh-exec.sh marvin "graphify . --update --obsidian" "" "/Users/agentshroud-bot/Development/agentshroud-odev-<slug>"
+```
+
+This regenerates `graphify-out/` — include it in the commit in Step 9 like
+any other changed file. If it errors for a reason other than "not
+installed" (e.g. Gemini API connectivity), report the exact error and
+proceed without it — it's a nice-to-have, not a merge gate.
+
+### Step 9 — Push and open the PR
 
 ```
 agentshroud-ssh-exec.sh marvin "git add -A" "" "/Users/agentshroud-bot/Development/agentshroud-odev-<slug>"
@@ -216,13 +300,13 @@ agentshroud-ssh-exec.sh marvin "gh pr create --title '<concise title>' --body '<
 
 Capture the PR URL from the output.
 
-### Step 6b — Update the Jira ticket with the PR link
+### Step 9b — Update the Jira ticket with the PR link
 
 ```
 python3 /home/node/.openclaw/workspace/jira_dev_ticket.py comment --issue SCRUM-<n> --body "PR opened: <PR URL>. Tests: <pass/fail summary>. Review: <clean, or N findings addressed>."
 ```
 
-### Step 7 — Notify the owner
+### Step 10 — Notify the owner
 
 Send a Telegram message yourself (your own native send capability — never
 route this through `agentshroud-ssh-exec.sh`):
@@ -239,7 +323,7 @@ Reply "merge it" when you want this on main.
 
 **Halt here.** Do not merge. Wait for the owner's explicit follow-up.
 
-### Step 8 — Merge (only on explicit owner instruction)
+### Step 11 — Merge (only on explicit owner instruction)
 
 ```
 agentshroud-ssh-exec.sh marvin "gh pr merge --admin --squash --delete-branch" "" "/Users/agentshroud-bot/Development/agentshroud-odev-<slug>"
@@ -257,7 +341,7 @@ python3 /home/node/.openclaw/workspace/jira_dev_ticket.py transition --issue SCR
 If "Done" doesn't match an available transition name, the comment above is
 still real tracking — don't treat a transition mismatch as a task failure.
 
-### Step 9 — Clean up
+### Step 12 — Clean up
 
 ```
 agentshroud-ssh-exec.sh marvin "git checkout main" "" "/Users/agentshroud-bot/Development/agentshroud"
@@ -362,14 +446,27 @@ python3 /home/node/.openclaw/workspace/jira_dev_ticket.py comment --issue SCRUM-
 
 ### Step 3 — After the last directory (or a natural stopping point)
 
-Push, then open ONE PR summarizing every directory's findings and fixes
+Once, for the whole sweep — not per-directory:
+
+**a. Build and validate containers** — same as Mode A Step 6 (isolated
+`agentshroud-bot-verify` project, build-only, no live `up`, then `bash
+scripts/smoke.sh`, then tear down the verify images). If it fails, fix and
+re-run before continuing.
+
+**b. Update documentation and website** — same judgment call as Mode A Step
+7, applied across everything the sweep touched.
+
+**c. Update the knowledge graph** — same as Mode A Step 8
+(`graphify . --update --obsidian`, installing it first if needed).
+
+Then push, and open ONE PR summarizing every directory's findings and fixes
 across the whole sweep (a table: directory | findings | fixed | skipped |
 tests). Comment the PR link on the Jira ticket
 (`jira_dev_ticket.py comment --issue SCRUM-<n> --body "PR opened: <PR URL>..."`).
 Send a final Telegram message with the PR link and the Jira ticket link.
 **Halt** — no merge without the owner's explicit follow-up, exactly like Mode
-A Step 8. Once the owner explicitly merges, close out the ticket the same way
-as Mode A Step 8 (comment + transition to "Done").
+A Step 11. Once the owner explicitly merges, close out the ticket the same
+way as Mode A Step 11 (comment + transition to "Done").
 
 If you judge you've hit a natural stopping point before finishing the full
 directory list (diminishing findings, or you're running low on your own
@@ -386,7 +483,7 @@ silently stopping — name which directories remain for a future sweep.
 - **Never write outside the current worktree's allowed root.** Treat a
   rejection as a signal your path is wrong, not an obstacle to route around.
 - **Never touch the primary `Development/agentshroud` checkout** for actual
-  edits — only for Step 1/9's sync/cleanup, which only ever fetch/checkout/
+  edits — only for Step 1/12's sync/cleanup, which only ever fetch/checkout/
   pull, never write files there.
 - **If a tool call returns a real error** (not just "no issues found"), read
   the actual error and act on it — do not retry blindly, and do not
