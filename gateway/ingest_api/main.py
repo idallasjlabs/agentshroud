@@ -4626,9 +4626,7 @@ async def telegram_api_proxy(path: str, request: Request):
         app_state._telegram_token_registry = _registry
         app_state._telegram_token_registry_built_at = time.time()
     elif _registry is None:
-        logger.error(
-            "Telegram proxy: no bot tokens configured — rejecting request (fail-closed)"
-        )
+        logger.error("Telegram proxy: no bot tokens configured — rejecting request (fail-closed)")
         raise HTTPException(status_code=503, detail="Telegram proxy not configured")
 
     matched_bot_id = _registry.get(bot_token)

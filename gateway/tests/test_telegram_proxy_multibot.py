@@ -348,12 +348,16 @@ class TestTelegramTokenRegistryRebuildOnMiss:
 
         from gateway.ingest_api.main import app_state, telegram_api_proxy
 
-        monkeypatch.setattr(app_state, "_telegram_token_registry", {_OPENCLAW_TOKEN: "openclaw"}, raising=False)
+        monkeypatch.setattr(
+            app_state, "_telegram_token_registry", {_OPENCLAW_TOKEN: "openclaw"}, raising=False
+        )
         monkeypatch.setattr(app_state, "_telegram_token_registry_built_at", 0.0, raising=False)
 
         hermes_bcfg = MagicMock()
         hermes_bcfg.telegram_token_secret = "hermes_telegram_bot_token"
-        monkeypatch.setattr(app_state, "config", MagicMock(bots={"hermes": hermes_bcfg}), raising=False)
+        monkeypatch.setattr(
+            app_state, "config", MagicMock(bots={"hermes": hermes_bcfg}), raising=False
+        )
 
         def _fake_read_secret(name):
             # Secret has now landed on disk — the boot-time race has resolved.
@@ -378,12 +382,18 @@ class TestTelegramTokenRegistryRebuildOnMiss:
         on every request — bounds the cost of an unknown-token flood."""
         from gateway.ingest_api.main import app_state, telegram_api_proxy
 
-        monkeypatch.setattr(app_state, "_telegram_token_registry", {_OPENCLAW_TOKEN: "openclaw"}, raising=False)
-        monkeypatch.setattr(app_state, "_telegram_token_registry_built_at", time.time(), raising=False)
+        monkeypatch.setattr(
+            app_state, "_telegram_token_registry", {_OPENCLAW_TOKEN: "openclaw"}, raising=False
+        )
+        monkeypatch.setattr(
+            app_state, "_telegram_token_registry_built_at", time.time(), raising=False
+        )
 
         hermes_bcfg = MagicMock()
         hermes_bcfg.telegram_token_secret = "hermes_telegram_bot_token"
-        monkeypatch.setattr(app_state, "config", MagicMock(bots={"hermes": hermes_bcfg}), raising=False)
+        monkeypatch.setattr(
+            app_state, "config", MagicMock(bots={"hermes": hermes_bcfg}), raising=False
+        )
 
         read_calls: list[str] = []
 
