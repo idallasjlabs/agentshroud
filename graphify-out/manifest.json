@@ -5035,7 +5035,7 @@
     "semantic_hash": "eac930806dd33962f8d65298b800d0b9"
   },
   "docker/config/hermes/manifest.json": {
-    "mtime": 1786356112.7067406,
+    "mtime": 1786357586.7292788,
     "ast_hash": "613f58514b468863b2209e3c6d72bdb3",
     "semantic_hash": ""
   },
@@ -5050,7 +5050,7 @@
     "semantic_hash": "f388fef96d7147a3ae526d445a33fb96"
   },
   "docker/config/openclaw/manifest.json": {
-    "mtime": 1786356108.8945947,
+    "mtime": 1786357586.7306232,
     "ast_hash": "3541c72bf14081146c1f0c032a480890",
     "semantic_hash": ""
   },
@@ -7230,22 +7230,22 @@
     "semantic_hash": "cb0495dcdd2a7aa165fcff0aba6fba53"
   },
   "docker/config/hermes/skills/i-hdev/SKILL.md": {
-    "mtime": 1786355896.1570165,
+    "mtime": 1786357586.7297993,
     "ast_hash": "3803f0ca9a3673a3400ee48993631c49",
     "semantic_hash": ""
   },
   "docker/config/hermes/skills/i-odev/SKILL.md": {
-    "mtime": 1786355977.9614754,
+    "mtime": 1786357586.730266,
     "ast_hash": "97e8bfc449441c2a0a539a2933cbd593",
     "semantic_hash": ""
   },
   "docker/config/openclaw/skills/i-hdev/SKILL.md": {
-    "mtime": 1786355997.286566,
+    "mtime": 1786357586.7308517,
     "ast_hash": "3803f0ca9a3673a3400ee48993631c49",
     "semantic_hash": ""
   },
   "docker/config/openclaw/skills/i-odev/SKILL.md": {
-    "mtime": 1786355997.2918384,
+    "mtime": 1786357586.7310624,
     "ast_hash": "97e8bfc449441c2a0a539a2933cbd593",
     "semantic_hash": ""
   },
@@ -7310,8 +7310,13 @@
     "semantic_hash": ""
   },
   "docs/runbooks/hermes-openclaw-dev-workflow.md": {
-    "mtime": 1786354384.5769184,
+    "mtime": 1786357586.7315638,
     "ast_hash": "2af143bc42e970f8d3b972e837d255f6",
+    "semantic_hash": ""
+  },
+  "docs/papers/attack-teardowns-rovoblast-cross-turn.md": {
+    "mtime": 1786361705.6105175,
+    "ast_hash": "8d9a68d2ee75680a3ad0bd7fc9ef7256",
     "semantic_hash": ""
   }
 }
