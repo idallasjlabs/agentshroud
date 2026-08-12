@@ -595,12 +595,16 @@ class TestConfigValidation:
         assert "anthropic/claude-opus-4-6" in script
         assert "agents.defaults.model" in script or "config.agents.defaults.model" in script
 
-    def test_compose_sets_qwen_local_model_overrides(self):
-        """Main compose stack should expose a single model-mode switch with local/cloud refs."""
+    def test_compose_sets_fieldflare_local_model_overrides(self):
+        """Main compose stack should expose a single model-mode switch with local/cloud refs.
+
+        Default local model is Turbo Fieldflare (gemma-4-26b-a4b-it, MLX) as of
+        2026-08 — see docs/planning/LOCAL_LLM_REVIEW.md.
+        """
         compose = (REPO_ROOT / "docker" / "docker-compose.yml").read_text()
         assert "AGENTSHROUD_MODEL_MODE=${AGENTSHROUD_MODEL_MODE:-cloud}" in compose
         assert (
-            "AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-ollama/qwen3:14b}"
+            "AGENTSHROUD_LOCAL_MODEL_REF=${AGENTSHROUD_LOCAL_MODEL_REF:-openai-local/gemma-4-26b-a4b-it}"
             in compose
         )
         assert (

@@ -13,7 +13,14 @@
 # Hermes container. They are fetched at run time from the gateway op-proxy
 # (POST /credentials/op-proxy), which reads 1Password on the gateway side and
 # returns a single field value per call. Auth to Jira is HTTP Basic:
-# base64(email:token) against https://<domain> (agentshroudai.atlassian.net).
+# base64(email:token).
+#
+# The comment POST targets the scoped-token gateway (https://api.atlassian.com/
+# ex/jira/{cloudId}/...), NOT the classic https://{site}.atlassian.net/rest/...
+# domain — Atlassian's newer scoped API tokens are rejected with a bare 401
+# against the classic domain even when fully valid (confirmed live 2026-08-11).
+# The cloud ID is resolved once per run via the unauthenticated, public
+# https://{domain}/_edge/tenant_info endpoint rather than hardcoded.
 #
 # This module is self-contained (stdlib only) so it runs inside the Hermes image
 # from /opt/data/workspace/. Pure functions (summary builder, ADF comment-payload
@@ -112,14 +119,22 @@ def build_comment_payload(summary_text: str) -> dict:
     }
 
 
-def build_comment_url(domain: str, issue_key: str = ISSUE_KEY) -> str:
-    """Build the REST v3 add-comment URL for the given cloud domain."""
+def build_comment_url(cloud_id: str, issue_key: str = ISSUE_KEY) -> str:
+    """Build the REST v3 add-comment URL against the cloud-id gateway."""
+    clean = cloud_id.strip()
+    if not clean:
+        raise ValueError("cloud_id is required to build the comment URL")
+    return f"https://api.atlassian.com/ex/jira/{clean}/rest/api/3/issue/{issue_key}/comment"
+
+
+def build_tenant_info_url(domain: str) -> str:
+    """Unauthenticated site-to-cloud-ID discovery URL."""
     clean = domain.strip().rstrip("/")
     if not clean:
-        raise ValueError("domain is required to build the comment URL")
+        raise ValueError("domain is required")
     if not clean.startswith("http"):
         clean = f"https://{clean}"
-    return f"{clean}/rest/api/3/issue/{issue_key}/comment"
+    return f"{clean}/_edge/tenant_info"
 
 
 def build_weekly_summary(
@@ -208,6 +223,31 @@ def _http_post_json(url: str, body: bytes, headers: dict, timeout: int = 30) -> 
         return resp.status, resp.read().decode("utf-8", errors="replace")
 
 
+def _http_get(url: str, headers: dict, timeout: int = 30) -> tuple[int, str]:
+    """GET and return (status_code, response_text). HTTPError is treated as a
+    normal response so callers can inspect the body instead of unwinding."""
+    req = urllib.request.Request(url, headers=headers, method="GET")
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:  # noqa: S310 (fixed scheme)
+            return resp.status, resp.read().decode("utf-8", errors="replace")
+    except urllib.error.HTTPError as exc:
+        return exc.code, exc.read().decode("utf-8", errors="replace")
+
+
+def resolve_cloud_id(domain: str, get_fn=_http_get) -> str:
+    """Resolve a site domain to its Atlassian cloud ID via the public,
+    unauthenticated tenant_info endpoint (not hardcoded — survives the org's
+    cloud ID ever changing)."""
+    url = build_tenant_info_url(domain)
+    status, text = get_fn(url, {"Accept": "application/json"})
+    if status != 200:
+        raise RuntimeError(f"tenant_info lookup failed: HTTP {status} — {text[:300]}")
+    cloud_id = json.loads(text).get("cloudId")
+    if not cloud_id:
+        raise RuntimeError(f"tenant_info response had no cloudId: {text[:300]}")
+    return cloud_id
+
+
 def fetch_op_secret(reference: str, auth_token: str, post_fn=_http_post_json) -> str:
     """Fetch one secret field from the gateway op-proxy. Returns the value."""
     url, body, headers = build_op_proxy_request(reference, auth_token)
@@ -218,14 +258,14 @@ def fetch_op_secret(reference: str, auth_token: str, post_fn=_http_post_json) ->
 
 
 def post_comment(
-    domain: str,
+    cloud_id: str,
     email: str,
     token: str,
     payload: dict,
     post_fn=_http_post_json,
 ) -> tuple[int, str]:
     """POST the ADF comment to Jira with Basic auth. Returns (status, text)."""
-    url = build_comment_url(domain)
+    url = build_comment_url(cloud_id)
     headers = {
         "Content-Type": "application/json",
         "Accept": "application/json",
@@ -238,7 +278,7 @@ def post_comment(
 # --- Orchestration -----------------------------------------------------------
 
 
-def run(post_fn=_http_post_json, commits_fn=_git_commits_last_week) -> int:
+def run(post_fn=_http_post_json, commits_fn=_git_commits_last_week, get_fn=_http_get) -> int:
     """Fetch creds, build summary, post the comment. Returns a process exit code."""
     gateway_token = os.environ.get("GATEWAY_AUTH_TOKEN", "")
     if not gateway_token:
@@ -249,6 +289,7 @@ def run(post_fn=_http_post_json, commits_fn=_git_commits_last_week) -> int:
         token = fetch_op_secret(OP_REF_TOKEN, gateway_token, post_fn=post_fn)
         email = fetch_op_secret(OP_REF_EMAIL, gateway_token, post_fn=post_fn)
         domain = fetch_op_secret(OP_REF_DOMAIN, gateway_token, post_fn=post_fn)
+        cloud_id = resolve_cloud_id(domain, get_fn=get_fn)
     except (urllib.error.URLError, RuntimeError, KeyError, ValueError) as exc:
         logger.error("Failed to fetch Atlassian credentials from op-proxy: %s", exc)
         return 1
@@ -259,7 +300,7 @@ def run(post_fn=_http_post_json, commits_fn=_git_commits_last_week) -> int:
     payload = build_comment_payload(summary)
 
     try:
-        status, text = post_comment(domain, email, token, payload, post_fn=post_fn)
+        status, text = post_comment(cloud_id, email, token, payload, post_fn=post_fn)
     except urllib.error.URLError as exc:
         logger.error("Jira comment POST failed (network): %s", exc)
         return 1

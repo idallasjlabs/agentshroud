@@ -85,44 +85,82 @@ def test_op_refs_target_the_atlassian_item():
 # URL builders
 # ---------------------------------------------------------------------------
 
+_CLOUD_ID = "7a044ff7-e2cf-40e6-b6f0-e3e080898fbb"
 
-def test_issue_url_targets_rest_v3():
-    assert jdt.build_issue_url("agentshroudai.atlassian.net") == (
-        "https://agentshroudai.atlassian.net/rest/api/3/issue"
+
+def test_issue_url_targets_cloud_id_gateway():
+    assert jdt.build_issue_url(_CLOUD_ID) == (
+        f"https://api.atlassian.com/ex/jira/{_CLOUD_ID}/rest/api/3/issue"
     )
 
 
-def test_issue_url_accepts_full_https_domain():
-    assert jdt.build_issue_url("https://agentshroudai.atlassian.net/") == (
-        "https://agentshroudai.atlassian.net/rest/api/3/issue"
-    )
-
-
-def test_issue_url_rejects_empty_domain():
+def test_issue_url_rejects_empty_cloud_id():
     with pytest.raises(ValueError):
         jdt.build_issue_url("")
 
 
 def test_comment_url_targets_arbitrary_issue():
-    assert jdt.build_comment_url("agentshroudai.atlassian.net", "SCRUM-123") == (
-        "https://agentshroudai.atlassian.net/rest/api/3/issue/SCRUM-123/comment"
+    assert jdt.build_comment_url(_CLOUD_ID, "SCRUM-123") == (
+        f"https://api.atlassian.com/ex/jira/{_CLOUD_ID}/rest/api/3/issue/SCRUM-123/comment"
     )
 
 
 def test_comment_url_rejects_empty_issue_key():
     with pytest.raises(ValueError):
-        jdt.build_comment_url("agentshroudai.atlassian.net", "")
+        jdt.build_comment_url(_CLOUD_ID, "")
 
 
 def test_transitions_url_targets_arbitrary_issue():
-    assert jdt.build_transitions_url("agentshroudai.atlassian.net", "SCRUM-123") == (
-        "https://agentshroudai.atlassian.net/rest/api/3/issue/SCRUM-123/transitions"
+    assert jdt.build_transitions_url(_CLOUD_ID, "SCRUM-123") == (
+        f"https://api.atlassian.com/ex/jira/{_CLOUD_ID}/rest/api/3/issue/SCRUM-123/transitions"
     )
 
 
 def test_transitions_url_rejects_empty_issue_key():
     with pytest.raises(ValueError):
-        jdt.build_transitions_url("agentshroudai.atlassian.net", "")
+        jdt.build_transitions_url(_CLOUD_ID, "")
+
+
+def test_tenant_info_url_targets_edge_endpoint():
+    assert jdt.build_tenant_info_url("agentshroudai.atlassian.net") == (
+        "https://agentshroudai.atlassian.net/_edge/tenant_info"
+    )
+
+
+def test_tenant_info_url_accepts_full_https_domain():
+    assert jdt.build_tenant_info_url("https://agentshroudai.atlassian.net/") == (
+        "https://agentshroudai.atlassian.net/_edge/tenant_info"
+    )
+
+
+def test_tenant_info_url_rejects_empty_domain():
+    with pytest.raises(ValueError):
+        jdt.build_tenant_info_url("")
+
+
+def test_resolve_cloud_id_parses_response():
+    def transport(url, body, headers, method="GET", timeout=30):
+        assert url == "https://agentshroudai.atlassian.net/_edge/tenant_info"
+        assert method == "GET"
+        return 200, json.dumps({"cloudId": _CLOUD_ID})
+
+    assert jdt.resolve_cloud_id("agentshroudai.atlassian.net", request_fn=transport) == _CLOUD_ID
+
+
+def test_resolve_cloud_id_raises_on_non_200():
+    def transport(url, body, headers, method="GET", timeout=30):
+        return 500, "server error"
+
+    with pytest.raises(RuntimeError):
+        jdt.resolve_cloud_id("agentshroudai.atlassian.net", request_fn=transport)
+
+
+def test_resolve_cloud_id_raises_when_field_missing():
+    def transport(url, body, headers, method="GET", timeout=30):
+        return 200, json.dumps({})
+
+    with pytest.raises(RuntimeError):
+        jdt.resolve_cloud_id("agentshroudai.atlassian.net", request_fn=transport)
 
 
 # ---------------------------------------------------------------------------
@@ -230,6 +268,8 @@ class _MockTransport:
         if url.endswith("/credentials/op-proxy"):
             ref = json.loads(body.decode())["reference"]
             return 200, json.dumps({"value": self._secrets[ref]})
+        if url.endswith("/_edge/tenant_info"):
+            return 200, json.dumps({"cloudId": _CLOUD_ID})
         return self._jira_status, self._jira_body
 
 
@@ -243,7 +283,7 @@ def test_run_create_posts_issue_with_basic_auth(monkeypatch):
     assert rc == 0
 
     url, body, headers, method = transport.calls[-1]
-    assert url == "https://agentshroudai.atlassian.net/rest/api/3/issue"
+    assert url == f"https://api.atlassian.com/ex/jira/{_CLOUD_ID}/rest/api/3/issue"
     assert method == "POST"
     expected_auth = "Basic " + base64.b64encode(b"agentshroud.ai@gmail.com:atl-token-xyz").decode()
     assert headers["Authorization"] == expected_auth
@@ -261,7 +301,9 @@ def test_run_comment_posts_to_correct_issue(monkeypatch):
     assert rc == 0
 
     url, body, headers, method = transport.calls[-1]
-    assert url == "https://agentshroudai.atlassian.net/rest/api/3/issue/SCRUM-356/comment"
+    assert url == (
+        f"https://api.atlassian.com/ex/jira/{_CLOUD_ID}/rest/api/3/issue/SCRUM-356/comment"
+    )
     assert method == "POST"
     payload = json.loads(body.decode())
     assert payload["body"]["content"][0]["content"][0]["text"] == "batch update"
@@ -279,6 +321,8 @@ def test_run_transition_applies_matching_transition(monkeypatch):
                 jdt.OP_REF_DOMAIN: "agentshroudai.atlassian.net",
             }
             return 200, json.dumps({"value": values[ref]})
+        if url.endswith("/_edge/tenant_info"):
+            return 200, json.dumps({"cloudId": _CLOUD_ID})
         if method == "GET":
             return 200, json.dumps(
                 {"transitions": [{"id": "31", "name": "Done", "to": {"name": "Done"}}]}
@@ -302,6 +346,8 @@ def test_run_transition_fails_when_no_matching_transition(monkeypatch):
                 jdt.OP_REF_DOMAIN: "agentshroudai.atlassian.net",
             }
             return 200, json.dumps({"value": values[ref]})
+        if url.endswith("/_edge/tenant_info"):
+            return 200, json.dumps({"cloudId": _CLOUD_ID})
         return 200, json.dumps(
             {"transitions": [{"id": "31", "name": "Done", "to": {"name": "Done"}}]}
         )

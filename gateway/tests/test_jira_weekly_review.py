@@ -83,20 +83,58 @@ def test_op_refs_target_the_atlassian_item():
 # Comment URL + ADF payload
 # ---------------------------------------------------------------------------
 
+_CLOUD_ID = "7a044ff7-e2cf-40e6-b6f0-e3e080898fbb"
+
 
 def test_comment_url_targets_scrum_81_rest_v3():
-    url = jwr.build_comment_url("agentshroudai.atlassian.net")
-    assert url == "https://agentshroudai.atlassian.net/rest/api/3/issue/SCRUM-81/comment"
+    url = jwr.build_comment_url(_CLOUD_ID)
+    assert url == f"https://api.atlassian.com/ex/jira/{_CLOUD_ID}/rest/api/3/issue/SCRUM-81/comment"
 
 
-def test_comment_url_accepts_full_https_domain():
-    url = jwr.build_comment_url("https://agentshroudai.atlassian.net/")
-    assert url == "https://agentshroudai.atlassian.net/rest/api/3/issue/SCRUM-81/comment"
-
-
-def test_comment_url_rejects_empty_domain():
+def test_comment_url_rejects_empty_cloud_id():
     with pytest.raises(ValueError):
         jwr.build_comment_url("")
+
+
+def test_tenant_info_url_targets_edge_endpoint():
+    assert jwr.build_tenant_info_url("agentshroudai.atlassian.net") == (
+        "https://agentshroudai.atlassian.net/_edge/tenant_info"
+    )
+
+
+def test_tenant_info_url_accepts_full_https_domain():
+    assert jwr.build_tenant_info_url("https://agentshroudai.atlassian.net/") == (
+        "https://agentshroudai.atlassian.net/_edge/tenant_info"
+    )
+
+
+def test_tenant_info_url_rejects_empty_domain():
+    with pytest.raises(ValueError):
+        jwr.build_tenant_info_url("")
+
+
+def test_resolve_cloud_id_parses_response():
+    def get_fn(url, headers, timeout=30):
+        assert url == "https://agentshroudai.atlassian.net/_edge/tenant_info"
+        return 200, json.dumps({"cloudId": _CLOUD_ID})
+
+    assert jwr.resolve_cloud_id("agentshroudai.atlassian.net", get_fn=get_fn) == _CLOUD_ID
+
+
+def test_resolve_cloud_id_raises_on_non_200():
+    def get_fn(url, headers, timeout=30):
+        return 500, "server error"
+
+    with pytest.raises(RuntimeError):
+        jwr.resolve_cloud_id("agentshroudai.atlassian.net", get_fn=get_fn)
+
+
+def test_resolve_cloud_id_raises_when_field_missing():
+    def get_fn(url, headers, timeout=30):
+        return 200, json.dumps({})
+
+    with pytest.raises(RuntimeError):
+        jwr.resolve_cloud_id("agentshroudai.atlassian.net", get_fn=get_fn)
 
 
 def test_comment_payload_is_valid_adf_doc():
@@ -171,15 +209,23 @@ class _MockTransport:
         return 201, json.dumps({"id": "10001"})
 
 
+def _get_fn_stub(url, headers, timeout=30):
+    return 200, json.dumps({"cloudId": _CLOUD_ID})
+
+
 def test_run_posts_comment_with_basic_auth(monkeypatch):
     monkeypatch.setenv("GATEWAY_AUTH_TOKEN", "gw-tok")
     transport = _MockTransport()
-    rc = jwr.run(post_fn=transport, commits_fn=lambda: ["abc SCRUM-81 wire cron"])
+    rc = jwr.run(
+        post_fn=transport,
+        commits_fn=lambda: ["abc SCRUM-81 wire cron"],
+        get_fn=_get_fn_stub,
+    )
     assert rc == 0
 
     # Last call is the Jira comment POST — verify auth + URL + ADF body.
     url, body, headers = transport.calls[-1]
-    assert url == "https://agentshroudai.atlassian.net/rest/api/3/issue/SCRUM-81/comment"
+    assert url == f"https://api.atlassian.com/ex/jira/{_CLOUD_ID}/rest/api/3/issue/SCRUM-81/comment"
     expected = "Basic " + base64.b64encode(b"agentshroud.ai@gmail.com:atl-token-xyz").decode()
     assert headers["Authorization"] == expected
     payload = json.loads(body.decode())
@@ -207,7 +253,7 @@ def test_run_returns_1_on_jira_rejection(monkeypatch):
             return 200, json.dumps({"value": val})
         return 401, json.dumps({"errorMessages": ["auth failed"]})
 
-    rc = jwr.run(post_fn=transport, commits_fn=lambda: [])
+    rc = jwr.run(post_fn=transport, commits_fn=lambda: [], get_fn=_get_fn_stub)
     assert rc == 1
 
 
