@@ -61,6 +61,10 @@ GOOGLE_API_BASE = "https://generativelanguage.googleapis.com"
 OLLAMA_API_BASE = "http://host.docker.internal:11434"
 LMSTUDIO_API_BASE = os.environ.get("LMSTUDIO_API_BASE") or "http://host.docker.internal:1234"
 MLXLM_API_BASE = os.environ.get("MLXLM_API_BASE") or "http://host.docker.internal:8234"
+# Turbo Fieldflare — MLX-native Gemma 4 26B-A4B server (agentshroud_mlx project),
+# OpenAI-compatible (/v1/chat/completions, /v1/models), no auth. Default local
+# model as of 2026-08 — see docs/planning/LOCAL_LLM_REVIEW.md.
+FIELDFLARE_API_BASE = os.environ.get("FIELDFLARE_API_BASE") or "http://host.docker.internal:8238"
 MAIN_MODEL = os.environ.get("AGENTSHROUD_LOCAL_MODEL", "qwen2.5-coder:7b")
 MODEL_MODE = os.environ.get("AGENTSHROUD_MODEL_MODE", "local").lower()
 
@@ -68,16 +72,23 @@ MODEL_MODE = os.environ.get("AGENTSHROUD_MODEL_MODE", "local").lower()
 # Checked before the generic Ollama fallback — only needed for models that do NOT
 # run under Ollama (e.g. mlx_lm or LM Studio on a different port).
 # Models not listed here fall through to OLLAMA_API_BASE automatically.
+#
+# Order matters: matching is first-prefix-wins (see _local_failover_base), so
+# "gemma-4-26b-a4b-it" (Turbo Fieldflare's exact model ID) MUST precede the
+# generic "gemma" entry below, or it would incorrectly match "gemma" first and
+# route to LM Studio instead of Fieldflare.
 LOCAL_MODEL_ROUTES: dict[str, str] = {
     "mlx-community/deepseek-r1": MLXLM_API_BASE,  # mlx-lm full-ID: DeepSeek-R1-0528-Qwen3-8B-4bit
     "deepseek-r1": MLXLM_API_BASE,  # Reasoning — mlx_lm on :8234 (no tool calling)
+    "gemma-4-26b-a4b-it": FIELDFLARE_API_BASE,  # Turbo Fieldflare — MLX Gemma 4 on :8238
     "qwen3": LMSTUDIO_API_BASE,  # Qwen3 family — LM Studio on :1234
     "qwen2.5-coder": LMSTUDIO_API_BASE,  # Coding — LM Studio on :1234
-    "gemma": LMSTUDIO_API_BASE,  # Gemma family — LM Studio on :1234
+    "gemma": LMSTUDIO_API_BASE,  # Other Gemma models — LM Studio on :1234
 }
 
 # Per-backend operator hints returned in the structured 503 body when a local
-# backend (mlx_lm / Ollama / LM Studio) is unreachable at connect time.
+# backend (mlx_lm / Ollama / LM Studio / Turbo Fieldflare) is unreachable at
+# connect time.
 _LOCAL_BACKEND_HINTS: dict[str, str] = {
     MLXLM_API_BASE: (
         "mlx_lm backend is not running on the host. " "Start it with: mlx_lm.server --port 8234"
@@ -86,6 +97,9 @@ _LOCAL_BACKEND_HINTS: dict[str, str] = {
     LMSTUDIO_API_BASE: (
         "LM Studio backend is not running on the host. "
         "Start the LM Studio local server (default port 1234)."
+    ),
+    FIELDFLARE_API_BASE: (
+        "Turbo Fieldflare backend is not running on the host. Start it with: tf-start"
     ),
 }
 
@@ -632,6 +646,8 @@ class LLMProxy:
             "ollama",
             "lmstudio",
             "mlxlm",
+            "gemma",
+            "fieldflare",
         ]
 
         # INTERCEPT: If the system tries to use Claude Opus, force it to use the configured local model
@@ -900,6 +916,8 @@ class LLMProxy:
             "ollama",
             "lmstudio",
             "mlxlm",
+            "gemma",
+            "fieldflare",
         ]
         is_ollama = (
             any(k in model_lower for k in local_keywords)

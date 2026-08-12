@@ -121,6 +121,7 @@ LOCAL_MODEL_NAME="qwen3:14b"
 OLLAMA_PROVIDER_API="ollama"  # overridden to openai-completions for LM Studio targets
 LMSTUDIO_API_BASE="${LMSTUDIO_API_BASE:-http://host.docker.internal:1234}"
 MLXLM_API_BASE="${MLXLM_API_BASE:-http://host.docker.internal:8234}"
+FIELDFLARE_API_BASE="${FIELDFLARE_API_BASE:-http://host.docker.internal:8238}"
 ANCHOR_MODEL="${AGENTSHROUD_ANCHOR_MODEL:-qwen3.6-27b}"
 CODING_MODEL="${AGENTSHROUD_CODING_MODEL:-qwen2.5-coder:32b}"
 REASONING_MODEL="${AGENTSHROUD_REASONING_MODEL:-deepseek-r1}"
@@ -178,6 +179,21 @@ case "$TARGET" in
     OPENCLAW_MAIN_MODEL="openai-local/qwen3-14b"
     LOCAL_MODEL_NAME="qwen3-14b"
     ANCHOR_MODEL="qwen3-14b"
+    OLLAMA_PROVIDER_API="openai-completions"
+    if [[ -n "${CUSTOM_MODEL_REF}" ]]; then
+      LOCAL_MODEL_NAME="${CUSTOM_MODEL_REF#*/}"
+      LOCAL_REF="openai-local/${LOCAL_MODEL_NAME}"
+      OPENCLAW_MAIN_MODEL="${LOCAL_REF}"
+      ANCHOR_MODEL="${LOCAL_MODEL_NAME}"
+    fi
+    ;;
+  # ── Local — Turbo Fieldflare (MLX Gemma 4, :8238) ────────────────────────────
+  local-fieldflare)
+    MODEL_MODE="local-multi"
+    LOCAL_REF="openai-local/gemma-4-26b-a4b-it"
+    OPENCLAW_MAIN_MODEL="openai-local/gemma-4-26b-a4b-it"
+    LOCAL_MODEL_NAME="gemma-4-26b-a4b-it"
+    ANCHOR_MODEL="gemma-4-26b-a4b-it"
     OLLAMA_PROVIDER_API="openai-completions"
     if [[ -n "${CUSTOM_MODEL_REF}" ]]; then
       LOCAL_MODEL_NAME="${CUSTOM_MODEL_REF#*/}"
@@ -431,6 +447,7 @@ fi
 if [[ "${MODEL_MODE}" == "local-multi" ]]; then
   upsert_env_value "${MODEL_ENV_FILE}" "LMSTUDIO_API_BASE" "${LMSTUDIO_API_BASE}"
   upsert_env_value "${MODEL_ENV_FILE}" "MLXLM_API_BASE" "${MLXLM_API_BASE}"
+  upsert_env_value "${MODEL_ENV_FILE}" "FIELDFLARE_API_BASE" "${FIELDFLARE_API_BASE}"
   upsert_env_value "${MODEL_ENV_FILE}" "AGENTSHROUD_ANCHOR_MODEL" "${ANCHOR_MODEL}"
   upsert_env_value "${MODEL_ENV_FILE}" "AGENTSHROUD_CODING_MODEL" "${CODING_MODEL}"
   upsert_env_value "${MODEL_ENV_FILE}" "AGENTSHROUD_REASONING_MODEL" "${REASONING_MODEL}"
@@ -498,7 +515,10 @@ verify_both_bots_healthy() {
 if [[ "${SWITCH_MODEL_TEST_MODE}" != "1" ]]; then
   # For local-multi mode, load the anchor model in LM Studio at the correct context window.
   # LM Studio's JIT load uses a small default context; we must set it explicitly.
-  if [[ "${MODEL_MODE}" == "local-multi" ]]; then
+  # Skip for Fieldflare — it runs on its own MLX server (:8238), not LM Studio;
+  # loading its model name into LM Studio would silently load nothing / the
+  # wrong model (LM Studio doesn't have "gemma-4-26b-a4b-it").
+  if [[ "${MODEL_MODE}" == "local-multi" && "${TARGET}" != "local-fieldflare" ]]; then
     LMS_CMD="${HOME}/.cache/lm-studio/bin/lms"
     LMS_CONTEXT="${LMS_CONTEXT:-32768}"
     if command -v "${LMS_CMD}" &>/dev/null; then
@@ -521,11 +541,12 @@ if [[ "${SWITCH_MODEL_TEST_MODE}" != "1" ]]; then
   OLLAMA_API_KEY="${OLLAMA_API_KEY:-ollama-local}" \
   LMSTUDIO_API_BASE="${LMSTUDIO_API_BASE}" \
   MLXLM_API_BASE="${MLXLM_API_BASE}" \
+  FIELDFLARE_API_BASE="${FIELDFLARE_API_BASE}" \
   AGENTSHROUD_ANCHOR_MODEL="${ANCHOR_MODEL}" \
   AGENTSHROUD_CODING_MODEL="${CODING_MODEL}" \
   AGENTSHROUD_REASONING_MODEL="${REASONING_MODEL}" \
   OPENCLAW_GATEWAY_BIND="${OPENCLAW_GATEWAY_BIND:-lan}" \
-  $COMPOSE -f "${COMPOSE_FILE}" up -d --force-recreate gateway bot
+  $COMPOSE -f "${COMPOSE_FILE}" up -d --force-recreate gateway openclaw
 fi
 
 if [[ "${VERIFY_AFTER_SWITCH}" == "true" ]]; then

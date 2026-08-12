@@ -20,6 +20,7 @@ import pytest
 
 from gateway.proxy import llm_proxy as llm_proxy_module
 from gateway.proxy.llm_proxy import (
+    FIELDFLARE_API_BASE,
     LMSTUDIO_API_BASE,
     MLXLM_API_BASE,
     OLLAMA_API_BASE,
@@ -541,6 +542,30 @@ def test_local_secondary_failover_base_routes_correctly():
     # unknown model → Ollama
     base3 = LLMProxy._local_failover_base("llama3.2")
     assert base3 == OLLAMA_API_BASE
+
+
+def test_local_failover_base_routes_fieldflare_gemma_before_generic_gemma():
+    """Turbo Fieldflare's exact model ID must win over the generic 'gemma' LM
+    Studio route — regression test for the ordering bug where adding
+    'gemma-4-26b-a4b-it' after the pre-existing 'gemma' entry would have made
+    it unreachable (first-prefix-match-wins iteration)."""
+    base = LLMProxy._local_failover_base("gemma-4-26b-a4b-it")
+    assert base == FIELDFLARE_API_BASE
+
+
+def test_local_failover_base_other_gemma_models_still_route_to_lmstudio():
+    """A Gemma model that is NOT Turbo Fieldflare's exact ID still falls
+    through to the generic 'gemma' -> LM Studio route (backward compat)."""
+    base = LLMProxy._local_failover_base("gemma-2-9b-it")
+    assert base == LMSTUDIO_API_BASE
+
+
+def test_get_local_model_reads_fieldflare_ref(monkeypatch):
+    """_get_local_model strips the provider prefix for a Fieldflare ref, same
+    as it does for ollama/lmstudio refs."""
+    monkeypatch.setenv("AGENTSHROUD_LOCAL_MODEL_REF", "openai-local/gemma-4-26b-a4b-it")
+    proxy = _make_proxy()
+    assert proxy._get_local_model() == "gemma-4-26b-a4b-it"
 
 
 # ---------------------------------------------------------------------------

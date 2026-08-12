@@ -15,8 +15,18 @@
 # token/email/domain are NEVER stored in the bot image. They are fetched at run
 # time from the gateway op-proxy (POST /credentials/op-proxy), which reads
 # 1Password on the gateway side and returns a single field value per call.
-# Auth to Jira is HTTP Basic: base64(email:token) against
-# https://agentshroudai.atlassian.net.
+# Auth to Jira is HTTP Basic: base64(email:token).
+#
+# API calls target the scoped-token gateway (https://api.atlassian.com/ex/jira/
+# {cloudId}/...), NOT the classic https://{site}.atlassian.net/rest/... domain.
+# Atlassian's newer scoped API tokens (the "ATATT3xFfGF0..." prefix) are
+# rejected with a bare 401 against the classic domain even when fully valid —
+# confirmed live 2026-08-11 (classic domain: 401 for a token that immediately
+# succeeded against the cloud-id gateway with the exact same credentials). The
+# cloud ID itself is resolved once per run via the unauthenticated, public
+# https://{domain}/_edge/tenant_info endpoint (Atlassian's documented
+# site-to-cloud-ID discovery mechanism) rather than hardcoded, so this keeps
+# working if the org's cloud ID ever changes.
 #
 # This module is self-contained (stdlib only) so it runs inside the Hermes /
 # OpenClaw images from their own workspace directory. Pure functions (URL/
@@ -90,32 +100,40 @@ def build_basic_auth_header(email: str, token: str) -> str:
     return "Basic " + base64.b64encode(raw).decode("ascii")
 
 
-def _base_url(domain: str) -> str:
+def _cloud_base_url(cloud_id: str) -> str:
+    clean = cloud_id.strip()
+    if not clean:
+        raise ValueError("cloud_id is required")
+    return f"https://api.atlassian.com/ex/jira/{clean}"
+
+
+def build_issue_url(cloud_id: str) -> str:
+    """REST v3 URL for creating an issue."""
+    return f"{_cloud_base_url(cloud_id)}/rest/api/3/issue"
+
+
+def build_comment_url(cloud_id: str, issue_key: str) -> str:
+    """REST v3 add-comment URL for an arbitrary issue key."""
+    if not issue_key:
+        raise ValueError("issue_key is required")
+    return f"{_cloud_base_url(cloud_id)}/rest/api/3/issue/{issue_key}/comment"
+
+
+def build_transitions_url(cloud_id: str, issue_key: str) -> str:
+    """REST v3 transitions URL (GET to list, POST to apply) for an issue."""
+    if not issue_key:
+        raise ValueError("issue_key is required")
+    return f"{_cloud_base_url(cloud_id)}/rest/api/3/issue/{issue_key}/transitions"
+
+
+def build_tenant_info_url(domain: str) -> str:
+    """Unauthenticated site-to-cloud-ID discovery URL."""
     clean = domain.strip().rstrip("/")
     if not clean:
         raise ValueError("domain is required")
     if not clean.startswith("http"):
         clean = f"https://{clean}"
-    return clean
-
-
-def build_issue_url(domain: str) -> str:
-    """REST v3 URL for creating an issue."""
-    return f"{_base_url(domain)}/rest/api/3/issue"
-
-
-def build_comment_url(domain: str, issue_key: str) -> str:
-    """REST v3 add-comment URL for an arbitrary issue key."""
-    if not issue_key:
-        raise ValueError("issue_key is required")
-    return f"{_base_url(domain)}/rest/api/3/issue/{issue_key}/comment"
-
-
-def build_transitions_url(domain: str, issue_key: str) -> str:
-    """REST v3 transitions URL (GET to list, POST to apply) for an issue."""
-    if not issue_key:
-        raise ValueError("issue_key is required")
-    return f"{_base_url(domain)}/rest/api/3/issue/{issue_key}/transitions"
+    return f"{clean}/_edge/tenant_info"
 
 
 def _adf_doc(text: str) -> dict:
@@ -204,15 +222,32 @@ def fetch_op_secret(reference: str, auth_token: str, request_fn=_http_request) -
     return json.loads(text)["value"]
 
 
+def resolve_cloud_id(domain: str, request_fn=_http_request) -> str:
+    """Resolve a site domain to its Atlassian cloud ID via the public,
+    unauthenticated tenant_info endpoint (not hardcoded — survives the org's
+    cloud ID ever changing)."""
+    url = build_tenant_info_url(domain)
+    status, text = request_fn(url, None, {"Accept": "application/json"}, "GET")
+    if status != 200:
+        raise RuntimeError(f"tenant_info lookup failed: HTTP {status} — {text[:300]}")
+    cloud_id = json.loads(text).get("cloudId")
+    if not cloud_id:
+        raise RuntimeError(f"tenant_info response had no cloudId: {text[:300]}")
+    return cloud_id
+
+
 def fetch_credentials(request_fn=_http_request) -> tuple[str, str, str]:
-    """Resolve (token, email, domain) via the gateway op-proxy."""
+    """Resolve (token, email, cloud_id) via the gateway op-proxy plus a public
+    tenant_info lookup. cloud_id (not the classic site domain) is what every
+    Jira REST call actually targets — see module docstring."""
     gateway_token = os.environ.get("GATEWAY_AUTH_TOKEN", "")
     if not gateway_token:
         raise RuntimeError("GATEWAY_AUTH_TOKEN not set — cannot reach op-proxy")
     token = fetch_op_secret(OP_REF_TOKEN, gateway_token, request_fn=request_fn)
     email = fetch_op_secret(OP_REF_EMAIL, gateway_token, request_fn=request_fn)
     domain = fetch_op_secret(OP_REF_DOMAIN, gateway_token, request_fn=request_fn)
-    return token, email, domain
+    cloud_id = resolve_cloud_id(domain, request_fn=request_fn)
+    return token, email, cloud_id
 
 
 def _auth_headers(email: str, token: str) -> dict:
@@ -224,7 +259,7 @@ def _auth_headers(email: str, token: str) -> dict:
 
 
 def create_issue(
-    domain: str,
+    cloud_id: str,
     email: str,
     token: str,
     project_key: str,
@@ -239,7 +274,7 @@ def create_issue(
     payload = build_create_issue_payload(
         project_key, summary, description, issue_type, parent_key, labels
     )
-    url = build_issue_url(domain)
+    url = build_issue_url(cloud_id)
     status, text = request_fn(
         url, json.dumps(payload).encode("utf-8"), _auth_headers(email, token), "POST"
     )
@@ -249,7 +284,7 @@ def create_issue(
 
 
 def add_comment(
-    domain: str,
+    cloud_id: str,
     email: str,
     token: str,
     issue_key: str,
@@ -258,7 +293,7 @@ def add_comment(
 ) -> None:
     """Add a comment to an existing Jira issue."""
     payload = build_comment_payload(body_text)
-    url = build_comment_url(domain, issue_key)
+    url = build_comment_url(cloud_id, issue_key)
     status, text = request_fn(
         url, json.dumps(payload).encode("utf-8"), _auth_headers(email, token), "POST"
     )
@@ -267,7 +302,7 @@ def add_comment(
 
 
 def transition_issue(
-    domain: str,
+    cloud_id: str,
     email: str,
     token: str,
     issue_key: str,
@@ -275,7 +310,7 @@ def transition_issue(
     request_fn=_http_request,
 ) -> None:
     """Move an issue to the named status (matched against available transitions)."""
-    url = build_transitions_url(domain, issue_key)
+    url = build_transitions_url(cloud_id, issue_key)
     status, text = request_fn(url, None, _auth_headers(email, token), "GET")
     if status != 200:
         raise RuntimeError(f"Jira get-transitions failed: HTTP {status} — {text[:300]}")
@@ -323,7 +358,7 @@ def run(argv: list[str], request_fn=_http_request) -> int:
     args = _build_arg_parser().parse_args(argv)
 
     try:
-        token, email, domain = fetch_credentials(request_fn=request_fn)
+        token, email, cloud_id = fetch_credentials(request_fn=request_fn)
     except RuntimeError as exc:
         logger.error("Credential fetch failed: %s", exc)
         print(str(exc), file=sys.stderr)
@@ -333,7 +368,7 @@ def run(argv: list[str], request_fn=_http_request) -> int:
         if args.command == "create":
             labels = [s.strip() for s in args.labels.split(",")] if args.labels else None
             key = create_issue(
-                domain,
+                cloud_id,
                 email,
                 token,
                 args.project,
@@ -346,10 +381,10 @@ def run(argv: list[str], request_fn=_http_request) -> int:
             )
             print(json.dumps({"key": key}))
         elif args.command == "comment":
-            add_comment(domain, email, token, args.issue, args.body, request_fn=request_fn)
+            add_comment(cloud_id, email, token, args.issue, args.body, request_fn=request_fn)
             print(json.dumps({"ok": True}))
         elif args.command == "transition":
-            transition_issue(domain, email, token, args.issue, args.status, request_fn=request_fn)
+            transition_issue(cloud_id, email, token, args.issue, args.status, request_fn=request_fn)
             print(json.dumps({"ok": True}))
     except (RuntimeError, ValueError) as exc:
         logger.error("%s failed: %s", args.command, exc)
