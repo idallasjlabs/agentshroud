@@ -26,6 +26,7 @@ RUN sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.source
         unzip \
         gosu \
         gnupg \
+        python3 \
         clamav clamav-daemon clamav-freshclam \
     && rm -rf /var/cache/apt/archives/*.deb /var/lib/apt/lists/*
 
