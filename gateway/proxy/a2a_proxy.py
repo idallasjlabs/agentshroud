@@ -191,8 +191,15 @@ class A2AProxy:
         token = auth_header[len(prefix) :].strip()
         if not token:
             return None
+        # False positive on the next line, confirmed against the rule source
+        # (.semgrep.yml): agentshroud-log-sensitive-key's pattern
+        # ($LOGGER.$LEVEL(..., $SECRET, ...)) matches any two-part method call
+        # whose argument name contains "token" — hmac.compare_digest is a
+        # timing-safe comparison, the opposite of logging the value. Neither
+        # known_token nor token is ever passed to a logger anywhere in this
+        # file.
         for known_token, peer_id in self._peer_tokens.items():
-            if hmac.compare_digest(known_token, token):
+            if hmac.compare_digest(known_token, token):  # nosemgrep: agentshroud-log-sensitive-key
                 return peer_id
         return None
 
