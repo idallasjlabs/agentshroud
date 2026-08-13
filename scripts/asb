@@ -302,7 +302,7 @@ for name in os.listdir('$tmpdir'):
 # Called after `docker compose up -d` in rebuild paths only — not on plain `up`.
 _reset_device_store() {
   local bot_container
-  bot_container="$($COMPOSE ps --format '{{.Name}}' bot 2>/dev/null | head -1)"
+  bot_container="$($COMPOSE ps --format '{{.Name}}' openclaw 2>/dev/null | head -1)"
   if [ -z "$bot_container" ]; then
     echo "  [device-reset] bot container not found — skipping"
     return
