@@ -17,11 +17,9 @@ from __future__ import annotations
 from gateway.security.progressive_trust_config import (
     ProgressiveTrustConfig,
     PromotionThreshold,
-)
-from gateway.security.progressive_trust_config import TrustLevel as PLevel
-from gateway.security.progressive_trust_config import (
     ViolationType,
 )
+from gateway.security.progressive_trust_config import TrustLevel as PLevel
 from gateway.security.trust_manager import (
     _MANAGER_BY_PROGRESSIVE,
     _PROGRESSIVE_BY_MANAGER,

@@ -41,7 +41,8 @@ def tmp_compose(tmp_path: Path):
 
 class TestValidatorAPI:
     def test_get_security_report_shape(self, tmp_compose):
-        compose = tmp_compose("""
+        compose = tmp_compose(
+            """
             version: '3.8'
             services:
               gateway:
@@ -51,7 +52,8 @@ class TestValidatorAPI:
               agentshroud-internal: {}
               agentshroud-isolated:
                 internal: true
-            """)
+            """
+        )
         v = validate_network_security(str(compose))
         report = v.get_security_report()
         assert "total_findings" in report
@@ -64,7 +66,8 @@ class TestGateScope:
     """post-deploy-check.sh fails ONLY on critical. These tests pin that contract."""
 
     def test_clean_compose_yields_zero_critical(self, tmp_compose):
-        compose = tmp_compose("""
+        compose = tmp_compose(
+            """
             version: '3.8'
             services:
               gateway:
@@ -75,7 +78,8 @@ class TestGateScope:
               agentshroud-internal: {}
               agentshroud-isolated:
                 internal: true
-            """)
+            """
+        )
         critical = validate_network_security(str(compose)).get_security_report()["by_severity"][
             "critical"
         ]
@@ -84,7 +88,8 @@ class TestGateScope:
     def test_privileged_service_is_critical(self, tmp_compose):
         """A privileged container is the textbook escape-the-sandbox finding —
         validator MUST flag it critical or the deploy gate is theater."""
-        compose = tmp_compose("""
+        compose = tmp_compose(
+            """
             version: '3.8'
             services:
               gateway:
@@ -93,7 +98,8 @@ class TestGateScope:
                 networks: [agentshroud-internal]
             networks:
               agentshroud-internal: {}
-            """)
+            """
+        )
         v = validate_network_security(str(compose))
         report = v.get_security_report()
         # The validator's _parse_service_network_config records privileged=True; the

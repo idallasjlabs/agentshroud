@@ -3,7 +3,7 @@
 > Complete guide for using Claude Code skills. Skills are invoked with: `/<skill-name>`
 > Example: `/tdd`, `/pr`, `/eightd`
 
-**Last Updated:** 2026-04-28 | **Total Skills:** 57
+**Last Updated:** 2026-08-10 | **Total Skills:** 59
 
 ---
 
@@ -55,6 +55,7 @@ All skills live under `.claude/skills/<name>/SKILL.md` (flat structure):
 ├── eightd/SKILL.md
 ├── gg/SKILL.md
 ├── gitops/SKILL.md
+├── hdev/SKILL.md
 ├── hermes/SKILL.md
 ├── icloud/SKILL.md
 ├── incident-response/SKILL.md
@@ -69,6 +70,7 @@ All skills live under `.claude/skills/<name>/SKILL.md` (flat structure):
 ├── mm/SKILL.md
 ├── mnemosyne/SKILL.md
 ├── observability/SKILL.md
+├── odev/SKILL.md
 ├── oracle/SKILL.md
 ├── pm/SKILL.md
 ├── pr/SKILL.md
@@ -190,6 +192,12 @@ All skills live under `.claude/skills/<name>/SKILL.md` (flat structure):
 | Skill | Invoke | Description |
 |-------|--------|-------------|
 | **browser** | `/browser` | Playwright-powered browser automation with URL allowlisting and audit logging |
+
+### Autonomous Remote Dev Workflows (2)
+| Skill | Invoke | Description |
+|-------|--------|-------------|
+| **hdev** | `/hdev` | Autonomous dev workflow for Hermes under the `agentshroud-bot` account — branch, code, test, multi-LLM review, PR, halt for merge approval |
+| **odev** | `/odev` | Autonomous dev workflow for OpenClaw under the `agentshroud-bot` account — branch, code, test, multi-LLM review, PR, halt for merge approval |
 
 ### Podcast Pipeline (9)
 | Skill | Invoke | Role in Pipeline |

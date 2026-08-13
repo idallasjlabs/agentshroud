@@ -24,6 +24,7 @@ from gateway.proxy.llm_proxy import (
     LMSTUDIO_API_BASE,
     MLXLM_API_BASE,
     OLLAMA_API_BASE,
+    OMLX_API_BASE,
     LLMProxy,
 )
 from gateway.security.resource_guard import (
@@ -566,6 +567,43 @@ def test_get_local_model_reads_fieldflare_ref(monkeypatch):
     monkeypatch.setenv("AGENTSHROUD_LOCAL_MODEL_REF", "openai-local/gemma-4-26b-a4b-it")
     proxy = _make_proxy()
     assert proxy._get_local_model() == "gemma-4-26b-a4b-it"
+
+
+def test_local_failover_base_routes_omlx_gemma_before_generic_gemma():
+    """oMLX's gemma-4-12B-it-4bit must win over the generic 'gemma' LM Studio
+    route, and over Turbo Fieldflare's distinct gemma-4-26b-a4b-it route —
+    same ordering-bug class as the Fieldflare regression test above."""
+    base = LLMProxy._local_failover_base("gemma-4-12B-it-4bit")
+    assert base == OMLX_API_BASE
+
+
+def test_local_failover_base_routes_omlx_deepseek_r1_qwen3_8b():
+    """oMLX's DeepSeek-R1-0528-Qwen3-8B must win over the generic
+    'deepseek-r1' -> mlx_lm route (no-tool-calling backend)."""
+    base = LLMProxy._local_failover_base("DeepSeek-R1-0528-Qwen3-8B-6bit")
+    assert base == OMLX_API_BASE
+
+
+def test_local_backend_headers_injects_bearer_token_for_omlx(monkeypatch):
+    """oMLX requires a bearer token, unlike LM Studio/mlx_lm/Fieldflare."""
+    monkeypatch.setattr(llm_proxy_module, "OMLX_API_KEY", "test-omlx-key-123")
+    headers = LLMProxy._local_backend_headers(OMLX_API_BASE, {"content-type": "application/json"})
+    assert headers["authorization"] == "Bearer test-omlx-key-123"
+
+
+def test_local_backend_headers_no_auth_for_fieldflare():
+    """Fieldflare and other no-auth local backends are left untouched."""
+    original = {"content-type": "application/json"}
+    headers = LLMProxy._local_backend_headers(FIELDFLARE_API_BASE, original)
+    assert "authorization" not in headers
+    assert headers == original
+
+
+def test_local_backend_headers_does_not_mutate_input():
+    """Returns a copy — never mutates the caller's headers dict in place."""
+    original = {"content-type": "application/json"}
+    LLMProxy._local_backend_headers(FIELDFLARE_API_BASE, original)
+    assert original == {"content-type": "application/json"}
 
 
 # ---------------------------------------------------------------------------

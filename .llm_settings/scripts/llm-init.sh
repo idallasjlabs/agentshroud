@@ -581,7 +581,7 @@ _llm_init_skill_allowed() {
     local _profile="$2"
     local _src="$3"
     [ "$_profile" = "all" ] && return 0
-    local _pfile="$_src/../skill-profiles/${_profile}.txt"
+    local _pfile="$_src/skill-profiles/${_profile}.txt"
     [ -f "$_pfile" ] || return 0  # profile file missing — allow all (safe fallback)
     grep -qxF "$_skill" "$_pfile" && return 0
     return 1
@@ -1663,7 +1663,7 @@ llm-init() {
     echo "     ├── scripts/                  (deployment & security scripts)"
     echo "     │   ├── llm-init.sh"
     echo "     │   └── security/             (direnv, pgpass, audit)"
-    echo "     ├── skills/                   (58 skill definitions — all CLIs)"
+    echo "     ├── skills/                   (60 skill definitions — all CLIs)"
     echo "     ├── sre/                      (SRE runbooks and definitions)"
     echo "     ├── templates/                (.gitignore, pre-commit, .gitallowed)"
     echo "     └── WORKFLOW.md               (multi-agent workflow guide)"
