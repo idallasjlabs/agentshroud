@@ -50,6 +50,27 @@ class ViolationType(Enum):
     MALICIOUS_INTENT = "malicious_intent"
     POLICY_VIOLATION = "policy_violation"
 
+    # A2A (Agent-to-Agent) protocol governance (SCRUM-129) — see
+    # docs/security/threat-model.md, "A2A Protocol Threat Analysis".
+    #
+    # A peer attempted GetTask/CancelTask/SubscribeToTask on a task_id it did
+    # not create. Independent mitigation for upstream Hermes issue #83701
+    # (contextId collision can merge cross-tenant conversation history) — a
+    # strong signal of either a client bug or active cross-tenant probing,
+    # heavier than a generic POLICY_VIOLATION but not immediate-demotion
+    # severe (a single ownership mismatch could still be a legitimate client
+    # retry race; a pattern of them is caught by the score decay, not a
+    # one-shot demotion).
+    A2A_TASK_OWNERSHIP_VIOLATION = "a2a_task_ownership_violation"
+    # A peer's SetTaskPushNotificationConfig callback URL failed the hardened
+    # SSRF canonicalization check (is_safe_a2a_callback_url — independent
+    # mitigation for upstream issue #78298: decimal/hex/octal/trailing-dot
+    # IP-encoding bypasses). Unlike a task-ownership mismatch, there is no
+    # benign explanation for a callback URL that canonicalizes to a private/
+    # loopback/metadata address — this is unambiguous malicious intent,
+    # hence severe_violation_types below.
+    A2A_SSRF_CALLBACK_ATTEMPT = "a2a_ssrf_callback_attempt"
+
 
 @dataclass
 class PromotionThreshold:
@@ -160,6 +181,14 @@ class ProgressiveTrustConfig:
             ViolationType.RATE_LIMIT_EXCEEDED: 10,
             ViolationType.MALICIOUS_INTENT: 100,
             ViolationType.POLICY_VIOLATION: 30,
+            # Heavier than generic POLICY_VIOLATION (a real cross-tenant
+            # boundary probe, not just an unlisted-peer routing miss) but
+            # below MALICIOUS_INTENT — see ViolationType docstring above.
+            ViolationType.A2A_TASK_OWNERSHIP_VIOLATION: 60,
+            # Same tier as MALICIOUS_INTENT — no benign explanation exists
+            # for a callback URL that canonicalizes to a private/loopback/
+            # metadata address.
+            ViolationType.A2A_SSRF_CALLBACK_ATTEMPT: 100,
         }
     )
 
@@ -167,7 +196,12 @@ class ProgressiveTrustConfig:
     auto_demotion_enabled: bool = True
     severe_violation_immediate_demotion: bool = True
     severe_violation_types: Set[ViolationType] = field(
-        default_factory=lambda: {ViolationType.MALICIOUS_INTENT, ViolationType.UNAUTHORIZED_ACCESS}
+        default_factory=lambda: {
+            ViolationType.MALICIOUS_INTENT,
+            ViolationType.UNAUTHORIZED_ACCESS,
+            # Unambiguous malicious intent — see ViolationType docstring above.
+            ViolationType.A2A_SSRF_CALLBACK_ATTEMPT,
+        }
     )
 
     # Enforcement mode — the operational monitor↔enforce lever (SCRUM-78).

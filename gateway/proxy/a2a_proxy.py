@@ -132,6 +132,17 @@ class A2AProxy:
         result = await proxy.process_inbound_request(raw_body, auth_header, source_ip)
     """
 
+    # matched_rule -> ViolationType for the two A2A-specific policy denials
+    # that have an independent-mitigation story (see docs/security/
+    # threat-model.md). Every other denial (peer_denylist, default_deny,
+    # generic risk-tier approval refusal) is a routing/authorization outcome,
+    # not evidence of an attack against a specific known peer, and is
+    # deliberately NOT recorded against the trust ladder here.
+    _VIOLATION_TYPE_BY_RULE = {
+        "task_ownership": "A2A_TASK_OWNERSHIP_VIOLATION",
+        "ssrf_callback_blocked": "A2A_SSRF_CALLBACK_ATTEMPT",
+    }
+
     def __init__(
         self,
         policy_engine: A2APolicyEngine,
@@ -139,6 +150,7 @@ class A2AProxy:
         forwarder: Optional[Any] = None,
         pii_detector: Optional[Any] = None,
         audit_store: Optional[Any] = None,
+        trust_manager: Optional[Any] = None,
         bot_id: str = "hermes",
     ):
         self._policy_engine = policy_engine
@@ -149,6 +161,11 @@ class A2AProxy:
         self._forwarder = forwarder
         self._pii_detector = pii_detector
         self._audit_store = audit_store
+        # Optional — TrustManager (gateway/security/trust_manager.py) is
+        # already agent-id-keyed and protocol-agnostic, so an A2A peer_id is
+        # registered and scored exactly like any other agent identity. No new
+        # trust system needed, just the two ViolationType entries above.
+        self._trust_manager = trust_manager
         self._bot_id = bot_id
 
     # ---- peer identity resolution ------------------------------------
@@ -287,6 +304,7 @@ class A2AProxy:
         result.matched_rule = decision.matched_rule
         if not decision.allowed:
             result.block_reason = decision.reason
+            self._record_trust_violation(peer_id, decision.matched_rule, decision.reason)
             await self._audit(result, source_ip, severity="warning")
             return result
 
@@ -336,6 +354,31 @@ class A2AProxy:
             result.upstream_body = body
         await self._audit(result, source_ip, severity="info")
         return result
+
+    # ---- trust scoring -----------------------------------------------
+
+    def _record_trust_violation(self, peer_id: str, matched_rule: str, reason: str) -> None:
+        """Record a typed violation against the peer's trust score for the
+        two A2A-specific denials with an independent-mitigation story (task
+        ownership, SSRF callback). Every other denial (unlisted/denylisted
+        peer, generic risk-tier refusal) is a routing/authorization outcome,
+        not attack evidence, and is deliberately not recorded here. No-op if
+        no trust_manager was configured — this is optional defense-in-depth,
+        not required for the policy engine's own allow/deny correctness.
+        """
+        if self._trust_manager is None:
+            return
+        type_name = self._VIOLATION_TYPE_BY_RULE.get(matched_rule)
+        if type_name is None:
+            return
+        try:
+            from gateway.security.progressive_trust_config import ViolationType
+
+            self._trust_manager.record_violation(
+                peer_id, details=reason, violation_type=getattr(ViolationType, type_name)
+            )
+        except Exception:  # pragma: no cover - trust scoring must never block a decision
+            logger.error("A2A proxy trust-violation recording failed (non-fatal)", exc_info=True)
 
     # ---- audit -----------------------------------------------------------
 
