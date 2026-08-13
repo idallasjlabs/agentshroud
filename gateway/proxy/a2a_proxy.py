@@ -50,6 +50,8 @@ from typing import Any, Dict, Optional, Tuple
 
 from gateway.security.a2a_policy import A2AMethod, A2APolicyEngine
 
+_DEFAULT_FORWARD_TIMEOUT_SECONDS = 30.0
+
 logger = logging.getLogger("agentshroud.proxy.a2a_proxy")
 
 # Pre-1.0 A2A peers sent lowercase, path-style method names. Hermes itself
@@ -411,6 +413,53 @@ class A2AProxy:
             result.audit_entry_id = getattr(event, "event_id", "") or ""
         except Exception:  # pragma: no cover - audit failure must never block
             logger.error("A2A proxy audit logging failed (non-fatal)", exc_info=True)
+
+
+class HermesA2AForwarder:
+    """Real HTTP forwarder to Hermes's internal A2A JSON-RPC listener.
+
+    Matches the ``forward(body: str) -> (status, body)`` contract A2AProxy
+    expects, and the connection-pooling posture ``mcp_proxy.py``'s
+    ``HttpSseConnection`` uses (one persisted ``aiohttp.ClientSession``, not a
+    connection per call). This is the piece that actually gets used in
+    production; A2AProxy itself stays fully unit-testable via dependency
+    injection, matching mcp_proxy.py's own separation between "does the
+    networking" and "does the governance."
+    """
+
+    def __init__(
+        self,
+        base_url: str,
+        timeout_seconds: float = _DEFAULT_FORWARD_TIMEOUT_SECONDS,
+    ):
+        self._base_url = base_url.rstrip("/")
+        self._timeout_seconds = timeout_seconds
+        self._session = None
+
+    async def forward(self, body: str) -> Tuple[int, str]:
+        try:
+            import aiohttp
+        except ImportError as exc:  # pragma: no cover - environment guard
+            raise RuntimeError(
+                "aiohttp required for A2A forwarding. Install with: pip install aiohttp"
+            ) from exc
+
+        if self._session is None:
+            self._session = aiohttp.ClientSession()
+
+        async with self._session.post(
+            self._base_url,
+            data=body,
+            headers={"Content-Type": "application/json"},
+            timeout=aiohttp.ClientTimeout(total=self._timeout_seconds),
+        ) as resp:
+            response_text = await resp.text()
+            return resp.status, response_text
+
+    async def close(self) -> None:
+        if self._session is not None:
+            await self._session.close()
+            self._session = None
 
 
 def _redact_message_text(raw_body: Dict[str, Any], redacted_text: str) -> Dict[str, Any]:
