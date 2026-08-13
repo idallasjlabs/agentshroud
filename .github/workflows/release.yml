@@ -77,6 +77,19 @@ jobs:
           VERSION="${VERSION#v}"
           echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
 
+      - name: Read pinned OpenClaw version
+        id: openclaw_version
+        run: |
+          # docker/versions.env is the single source of truth for vendored
+          # bot versions (see its own header comment) — the Dockerfile's
+          # OPENCLAW_VERSION ARG has no default and fails the build if unset.
+          OPENCLAW_VERSION="$(sed -n 's/^OPENCLAW_VERSION=\(.*\)$/\1/p' docker/versions.env)"
+          if [ -z "$OPENCLAW_VERSION" ]; then
+            echo "::error::Could not read OPENCLAW_VERSION from docker/versions.env" >&2
+            exit 1
+          fi
+          echo "version=${OPENCLAW_VERSION}" >> "$GITHUB_OUTPUT"
+
       - name: Build gateway image
         run: |
           docker build \
@@ -91,6 +104,7 @@ jobs:
           docker build \
             -f docker/bots/openclaw/Dockerfile \
             --build-arg AGENTSHROUD_VERSION=${{ steps.version.outputs.version }} \
+            --build-arg OPENCLAW_VERSION=${{ steps.openclaw_version.outputs.version }} \
             -t agentshroud-bot:${{ steps.version.outputs.version }} \
             -t agentshroud-bot:latest \
             .
