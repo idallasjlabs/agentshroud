@@ -864,13 +864,50 @@ class TestInboundPipelineOnGetUpdates:
         assert any("access denied" in msg.lower() for _, msg in notices)
 
     @pytest.mark.asyncio
-    async def test_owner_approve_command_requires_target_user_id(self, monkeypatch):
-        """Owner /approve without target should return usage guidance."""
+    async def test_owner_bare_approve_with_no_pending_falls_through_to_agent(self, monkeypatch):
+        """Owner /approve with no target and NO pending collaborator request
+        must not be swallowed by the collaborator-approval handler — it may
+        be meant for a downstream agent's own approval queue (e.g. Hermes's
+        vendor CLI has its own separate dangerous-command "/approve" flow).
+        Regression test: this used to always intercept and answer with a
+        collaborator-approval usage message, making it impossible for the
+        owner to ever approve/deny a pending agent-side operation."""
         notices: list[tuple[int, str]] = []
         owner_id = "8096968754"
         proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
         proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
         proxy._bot_token = "test-token"
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append((chat_id, message))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        update = _make_update("/approve", user_id=owner_id, chat_id=int(owner_id))
+        response = _wrap_response(update)
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == [update]
+        assert notices == []
+
+    @pytest.mark.asyncio
+    async def test_owner_approve_ambiguous_multiple_pending_shows_usage(self, monkeypatch):
+        """Owner /approve without target, with 2+ pending collaborator
+        requests, is genuinely ambiguous — gateway must still intercept and
+        ask which one, rather than guessing or forwarding blindly."""
+        notices: list[tuple[int, str]] = []
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+        for target_id in ("1111111111", "2222222222"):
+            proxy._pending_collaborator_requests[target_id] = {
+                "user_id": target_id,
+                "chat_id": target_id,
+                "username": "target",
+                "requested_at": time.time(),
+                "expires_at": time.time() + 90,
+            }
 
         async def fake_owner_notice(chat_id: int, message: str):
             notices.append((chat_id, message))
@@ -941,13 +978,45 @@ class TestInboundPipelineOnGetUpdates:
         assert "no pending request found" in notices[0][1].lower()
 
     @pytest.mark.asyncio
-    async def test_owner_deny_command_requires_target_user_id(self, monkeypatch):
-        """Owner /deny without target should return usage guidance."""
+    async def test_owner_bare_deny_with_no_pending_falls_through_to_agent(self, monkeypatch):
+        """Owner /deny with no target and NO pending collaborator request
+        must not be swallowed — same fix/rationale as the matching /approve
+        regression test above."""
         notices: list[tuple[int, str]] = []
         owner_id = "8096968754"
         proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
         proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
         proxy._bot_token = "test-token"
+
+        async def fake_owner_notice(chat_id: int, message: str):
+            notices.append((chat_id, message))
+            return None
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_owner_notice)
+
+        update = _make_update("/deny", user_id=owner_id, chat_id=int(owner_id))
+        response = _wrap_response(update)
+        result = await proxy._filter_inbound_updates(response)
+        assert result["result"] == [update]
+        assert notices == []
+
+    @pytest.mark.asyncio
+    async def test_owner_deny_ambiguous_multiple_pending_shows_usage(self, monkeypatch):
+        """Owner /deny without target, with 2+ pending collaborator
+        requests, is genuinely ambiguous — gateway must still intercept."""
+        notices: list[tuple[int, str]] = []
+        owner_id = "8096968754"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[])
+        proxy._bot_token = "test-token"
+        for target_id in ("1111111111", "2222222222"):
+            proxy._pending_collaborator_requests[target_id] = {
+                "user_id": target_id,
+                "chat_id": target_id,
+                "username": "target",
+                "requested_at": time.time(),
+                "expires_at": time.time() + 90,
+            }
 
         async def fake_owner_notice(chat_id: int, message: str):
             notices.append((chat_id, message))

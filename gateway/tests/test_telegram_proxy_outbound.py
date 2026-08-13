@@ -2068,18 +2068,28 @@ class TestOutboundPipelineIntegration:
 
     @pytest.mark.asyncio
     async def test_html_parse_mode_removed_for_redaction_placeholders(self):
-        """HTML parse mode should be dropped for redaction placeholder tokens."""
+        """Redaction placeholder tokens should be HTML-escaped, not strip
+        parse_mode for the whole message — a single <EMAIL_ADDRESS> used to
+        kill formatting for every legitimate <b>/<code>/<i> tag alongside it
+        in the same message."""
+
+        class _MockRBAC:
+            owner_user_id = "8096968754"
+
         proxy = TelegramAPIProxy(sanitizer=_make_sanitizer())
+        proxy._rbac = _MockRBAC()
         body = json.dumps(
             {
-                "chat_id": "7614658040",
-                "text": "Contact: <EMAIL_ADDRESS>",
+                "chat_id": "8096968754",
+                "text": "<b>Contact</b>: <EMAIL_ADDRESS>",
                 "parse_mode": "HTML",
             }
         ).encode()
         result = json.loads(await proxy._filter_outbound(body, "application/json"))
-        assert "parse_mode" not in result
-        assert "<EMAIL_ADDRESS>" in result["text"]
+        assert result.get("parse_mode") == "HTML"
+        assert "&lt;EMAIL_ADDRESS&gt;" in result["text"]
+        assert "<EMAIL_ADDRESS>" not in result["text"]
+        assert "<b>Contact</b>" in result["text"]
 
     @pytest.mark.asyncio
     async def test_html_parse_mode_preserved_without_redaction_placeholders(self):
@@ -4345,12 +4355,13 @@ class TestParseModeStrippedAfterPIIRedaction:
         return proxy
 
     @pytest.mark.asyncio
-    async def test_parse_mode_stripped_when_email_redacted_fallback_path(self):
-        """parse_mode must be removed when sanitizer injects <EMAIL_ADDRESS> (owner, fallback path).
+    async def test_parse_mode_preserved_and_placeholder_escaped_email_fallback_path(self):
+        """PII redaction must not strip parse_mode for the whole message (owner, fallback path).
 
         For owner chats the collaborator-HTML strip is skipped, so the PII sanitizer
-        runs with parse_mode=HTML still active. After redaction, <EMAIL_ADDRESS> in
-        the text must cause parse_mode to be removed before the response is forwarded.
+        runs with parse_mode=HTML still active. After redaction, the resulting
+        <EMAIL_ADDRESS> placeholder must be HTML-escaped so it renders as literal
+        text — parse_mode=HTML itself must be preserved for the rest of the message.
         """
         sanitizer = _make_sanitizer()
         proxy = self._make_owner_proxy(sanitizer=sanitizer)
@@ -4358,7 +4369,7 @@ class TestParseModeStrippedAfterPIIRedaction:
         body = json.dumps(
             {
                 "chat_id": self._OWNER_ID,
-                "text": "Contact me at user@example.com for details.",
+                "text": "<b>Contact</b> me at user@example.com for details.",
                 "parse_mode": "HTML",
             }
         ).encode()
@@ -4367,21 +4378,23 @@ class TestParseModeStrippedAfterPIIRedaction:
         result_data = json.loads(result)
 
         assert "user@example.com" not in result_data["text"], "Email should be redacted"
-        assert result_data.get("parse_mode", "") != "HTML", (
-            "parse_mode=HTML must be stripped when PII placeholders like "
-            "<EMAIL_ADDRESS> are present — Telegram rejects these as invalid tags"
+        assert result_data.get("parse_mode") == "HTML", (
+            "parse_mode=HTML must be preserved — only the placeholder itself "
+            "needs escaping, not the whole message's formatting"
         )
+        assert "&lt;EMAIL_ADDRESS&gt;" in result_data["text"]
+        assert "<b>Contact</b>" in result_data["text"]
 
     @pytest.mark.asyncio
-    async def test_parse_mode_stripped_when_phone_redacted_fallback_path(self):
-        """parse_mode must be removed when sanitizer injects <PHONE_NUMBER> (owner, fallback path)."""
+    async def test_parse_mode_preserved_and_placeholder_escaped_phone_fallback_path(self):
+        """PII redaction must not strip parse_mode for the whole message (owner, fallback path, phone)."""
         sanitizer = _make_sanitizer()
         proxy = self._make_owner_proxy(sanitizer=sanitizer)
 
         body = json.dumps(
             {
                 "chat_id": self._OWNER_ID,
-                "text": "Call 555-867-5309 to schedule.",
+                "text": "<b>Call</b> 555-867-5309 to schedule.",
                 "parse_mode": "HTML",
             }
         ).encode()
@@ -4390,9 +4403,8 @@ class TestParseModeStrippedAfterPIIRedaction:
         result_data = json.loads(result)
 
         assert "555-867-5309" not in result_data["text"], "Phone should be redacted"
-        assert (
-            result_data.get("parse_mode", "") != "HTML"
-        ), "parse_mode=HTML must be stripped when PII placeholders are present"
+        assert result_data.get("parse_mode") == "HTML"
+        assert "<b>Call</b>" in result_data["text"]
 
     @pytest.mark.asyncio
     async def test_parse_mode_preserved_when_no_pii_detected(self):
@@ -4417,8 +4429,8 @@ class TestParseModeStrippedAfterPIIRedaction:
         ), "parse_mode=HTML must be preserved when the text contains no PII"
 
     @pytest.mark.asyncio
-    async def test_parse_mode_stripped_when_pipeline_sanitizes_email(self):
-        """parse_mode must be removed when pipeline produces <EMAIL_ADDRESS> (owner, pipeline path)."""
+    async def test_parse_mode_preserved_and_placeholder_escaped_pipeline_path(self):
+        """PII redaction via the pipeline path must not strip parse_mode either (owner, pipeline path)."""
         from types import SimpleNamespace
 
         class PIIPipeline:
@@ -4437,7 +4449,7 @@ class TestParseModeStrippedAfterPIIRedaction:
         body = json.dumps(
             {
                 "chat_id": self._OWNER_ID,
-                "text": "Send to user@example.com please.",
+                "text": "<b>Send</b> to user@example.com please.",
                 "parse_mode": "HTML",
             }
         ).encode()
@@ -4446,9 +4458,9 @@ class TestParseModeStrippedAfterPIIRedaction:
         result_data = json.loads(result)
 
         assert "user@example.com" not in result_data["text"], "Email should be redacted"
-        assert (
-            result_data.get("parse_mode", "") != "HTML"
-        ), "parse_mode=HTML must be stripped when pipeline produces PII placeholders"
+        assert result_data.get("parse_mode") == "HTML"
+        assert "&lt;EMAIL_ADDRESS&gt;" in result_data["text"]
+        assert "<b>Send</b>" in result_data["text"]
 
 
 class TestForwardToTelegramTimeouts:
