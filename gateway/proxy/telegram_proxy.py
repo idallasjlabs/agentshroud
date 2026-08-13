@@ -82,6 +82,12 @@ logger = logging.getLogger("agentshroud.proxy.telegram_api")
 TELEGRAM_API_BASE = "https://api.telegram.org"
 _SUPPRESS_OUTBOUND_TOKEN = "__AGENTSHROUD_SUPPRESS_OUTBOUND__"
 
+# PII sanitizer redaction placeholders (e.g. <EMAIL_ADDRESS>, <PHONE_NUMBER>) —
+# valid redaction output, but an invalid Telegram HTML tag if sent verbatim
+# with parse_mode=HTML. Distinct from Telegram's own supported lowercase tags
+# (<b>, <code>, <pre>, ...): placeholders are always uppercase identifiers.
+_PII_PLACEHOLDER_RE = re.compile(r"<([A-Z][A-Z0-9_]{1,64})>")
+
 # Maximum file size accepted from inbound media (50 MB — matches Telegram Bot API limit).
 # Telegram includes a `file_size` field on document/video/audio/voice/photo objects.
 # Payloads exceeding this are dropped before reaching the bot (CVE-2026-32049 mitigation).
@@ -366,10 +372,12 @@ class _OutboundScan:
         replacement.
     replacement: the new text to deliver, or None when the text is unchanged.
     blocked: the text was withheld and replacement carries the block notice.
-    strip_parse_mode_hint: "" (leave parse_mode alone), "placeholder" (strip
-        HTML parse_mode only when redaction placeholders like <EMAIL_ADDRESS>
-        are present), or "always" (strip HTML parse_mode unconditionally).
-        Applied by JSON/form callers; multipart bodies carry no parse_mode.
+    strip_parse_mode_hint: "" (leave text alone), "placeholder" or "always"
+        (HTML-escape any PII redaction placeholders like <EMAIL_ADDRESS> in
+        the text, preserving parse_mode=HTML for the rest of the message —
+        despite the name, this no longer strips parse_mode; see
+        _escape_pii_placeholders). Applied by JSON/form callers; multipart
+        bodies carry no parse_mode.
     """
 
     processed: bool = False
@@ -3179,6 +3187,19 @@ class TelegramAPIProxy:
         return True
 
     @staticmethod
+    def _escape_pii_placeholders(text: str) -> str:
+        """HTML-escape PII redaction placeholders so they render as literal
+        text instead of being parsed as (invalid) Telegram HTML tags.
+
+        Preserves parse_mode=HTML for the rest of the message — previously a
+        single placeholder like <EMAIL_ADDRESS> anywhere in a message caused
+        parse_mode to be stripped entirely, breaking every legitimate <b>/
+        <code>/<i> tag in that message too, not just the placeholder. A
+        no-op when no placeholder pattern is present.
+        """
+        return _PII_PLACEHOLDER_RE.sub(lambda m: f"&lt;{m.group(1)}&gt;", text)
+
+    @staticmethod
     def _build_ack_only_updates(inbound_updates: list[Any]) -> list[dict[str, Any]]:
         """Return minimal getUpdates payload entries containing only update_id."""
         ack_only: list[dict[str, Any]] = []
@@ -3261,9 +3282,12 @@ class TelegramAPIProxy:
                     parse_mode = ""
                 if parse_mode == "HTML" and isinstance(data.get(text_key), str):
                     msg_text = data[text_key]
-                    # Strip parse_mode when PII placeholders are present (would cause 400)
-                    if re.search(r"<[A-Z][A-Z0-9_]{1,64}>", msg_text):
-                        data.pop("parse_mode", None)
+                    # Escape PII placeholders instead of stripping parse_mode —
+                    # preserves HTML formatting for the rest of the message.
+                    if _PII_PLACEHOLDER_RE.search(msg_text):
+                        msg_text = self._escape_pii_placeholders(msg_text)
+                        data[text_key] = msg_text
+                        text = msg_text
                         self._stats["outbound_filtered"] += 1
                     # D1 fix: strip parse_mode when HTML tags are imbalanced (Telegram returns
                     # 400 "can't parse entities" on mismatched <code>/<pre> etc.)
@@ -3284,14 +3308,11 @@ class TelegramAPIProxy:
                         # caption must replace the caption, never a spurious
                         # "text" key that Telegram ignores.
                         data[text_key] = scan.replacement
-                    if scan.strip_parse_mode_hint == "always":
-                        if str(data.get("parse_mode", "")).upper() == "HTML":
-                            data.pop("parse_mode", None)
-                    elif scan.strip_parse_mode_hint == "placeholder":
-                        if str(data.get("parse_mode", "")).upper() == "HTML" and re.search(
-                            r"<[A-Z][A-Z0-9_]{1,64}>", str(data.get(text_key, ""))
+                    if scan.strip_parse_mode_hint in ("always", "placeholder"):
+                        if str(data.get("parse_mode", "")).upper() == "HTML" and isinstance(
+                            data.get(text_key), str
                         ):
-                            data.pop("parse_mode", None)
+                            data[text_key] = self._escape_pii_placeholders(data[text_key])
                     return json.dumps(data).encode()
             elif "x-www-form-urlencoded" in ct or (
                 not ct
@@ -3365,14 +3386,11 @@ class TelegramAPIProxy:
                 if scan.processed:
                     if scan.replacement is not None:
                         data[text_key] = scan.replacement
-                    if scan.strip_parse_mode_hint == "always":
-                        if str(data.get("parse_mode", "")).upper() == "HTML":
-                            data.pop("parse_mode", None)
-                    elif scan.strip_parse_mode_hint == "placeholder":
-                        if str(data.get("parse_mode", "")).upper() == "HTML" and re.search(
-                            r"<[A-Z][A-Z0-9_]{1,64}>", str(data.get(text_key, ""))
+                    if scan.strip_parse_mode_hint in ("always", "placeholder"):
+                        if str(data.get("parse_mode", "")).upper() == "HTML" and isinstance(
+                            data.get(text_key), str
                         ):
-                            data.pop("parse_mode", None)
+                            data[text_key] = self._escape_pii_placeholders(data[text_key])
                     return urllib.parse.urlencode(data).encode()
         except Exception as e:
             logger.error(f"Outbound filter error: {e}")
@@ -3668,9 +3686,9 @@ class TelegramAPIProxy:
             if pii_result.entity_types_found:
                 new_text = pii_result.sanitized_content
                 self._stats["outbound_filtered"] += 1
-                # Strip HTML parse_mode to prevent tag parse errors from PII
-                # placeholders, e.g. <EMAIL_ADDRESS> is a valid redaction but an
-                # invalid Telegram HTML tag.
+                # Escape PII placeholders (e.g. <EMAIL_ADDRESS>) at send time —
+                # a valid redaction but an invalid Telegram HTML tag if sent
+                # verbatim. See _escape_pii_placeholders.
                 scan.strip_parse_mode_hint = "always"
                 logger.info(
                     "Outbound %s: PII redacted: chat_id=%s types=%s",
@@ -5229,25 +5247,42 @@ class TelegramAPIProxy:
                         ),
                     )
                     continue
-                elif is_owner and cmd_base in _LOCAL_APPROVE_COMMANDS:
+                elif (
+                    is_owner
+                    and cmd_base in _LOCAL_APPROVE_COMMANDS
+                    and (
+                        self._extract_owner_target_resolved(text)
+                        or self._pending_collaborator_requests
+                    )
+                ):
+                    # Guard above requires an explicit target OR at least one
+                    # pending collaborator request. Without it, a bare
+                    # "/approve"/"/deny" meant for a DIFFERENT pending
+                    # approval — e.g. a downstream agent's own dangerous-
+                    # command approval queue (Hermes's vendor CLI has its
+                    # own separate "/approve"/"/approve session"/"/deny"
+                    # flow) — was being silently swallowed here and answered
+                    # with a collaborator-approval usage message the owner
+                    # never asked for, with no way to actually reach the
+                    # agent's real pending approval. Falling through here
+                    # (no `continue`) lets the message forward normally.
                     target_id = self._extract_owner_target_resolved(text)
                     if not target_id:
                         pending_ids = list(self._pending_collaborator_requests.keys())
                         if len(pending_ids) == 1:
                             target_id = pending_ids[0]
                         else:
-                            if pending_ids:
-                                _pending_lines = []
-                                for _pid in pending_ids[:5]:
-                                    _pi = self._pending_collaborator_requests.get(_pid, {}) or {}
-                                    _pu = str(_pi.get("username", "")).strip()
-                                    _pu_label = (
-                                        f"@{_pu}" if _pu and _pu != "unknown" else "no username"
-                                    )
-                                    _pending_lines.append(f"  {_pu_label} ({_pid})")
-                                pending_hint = "\nPending:\n" + "\n".join(_pending_lines)
-                            else:
-                                pending_hint = "\nPending: none"
+                            # len(pending_ids) > 1 here: the elif guard above
+                            # already ensures at least one pending request
+                            # exists when no explicit target was given, and
+                            # the ==1 case is handled above.
+                            _pending_lines = []
+                            for _pid in pending_ids[:5]:
+                                _pi = self._pending_collaborator_requests.get(_pid, {}) or {}
+                                _pu = str(_pi.get("username", "")).strip()
+                                _pu_label = f"@{_pu}" if _pu and _pu != "unknown" else "no username"
+                                _pending_lines.append(f"  {_pu_label} ({_pid})")
+                            pending_hint = "\nPending:\n" + "\n".join(_pending_lines)
                             await self._send_owner_admin_notice(
                                 chat_id,
                                 f"{_PROTECT_HEADER}Usage: /approve <user_id|@username>{pending_hint}",
@@ -5289,18 +5324,27 @@ class TelegramAPIProxy:
                         except Exception:
                             pass
                     continue
-                elif is_owner and cmd_base in _LOCAL_DENY_COMMANDS:
+                elif (
+                    is_owner
+                    and cmd_base in _LOCAL_DENY_COMMANDS
+                    and (
+                        self._extract_owner_target_resolved(text)
+                        or self._pending_collaborator_requests
+                    )
+                ):
+                    # See the matching comment on the /approve branch above —
+                    # same fix: a bare "/deny" meant for a downstream agent's
+                    # own approval queue must not be swallowed here when
+                    # gateway itself has nothing pending.
                     target_id = self._extract_owner_target_resolved(text)
                     if not target_id:
                         pending_ids = list(self._pending_collaborator_requests.keys())
                         if len(pending_ids) == 1:
                             target_id = pending_ids[0]
                         else:
-                            pending_hint = (
-                                f"\nPending: {', '.join(pending_ids[:5])}"
-                                if pending_ids
-                                else "\nPending: none"
-                            )
+                            # len(pending_ids) > 1 here — see the /approve
+                            # branch's matching comment above.
+                            pending_hint = f"\nPending: {', '.join(pending_ids[:5])}"
                             await self._send_owner_admin_notice(
                                 chat_id,
                                 f"{_PROTECT_HEADER}Usage: /deny <telegram_user_id|name>{pending_hint}",
