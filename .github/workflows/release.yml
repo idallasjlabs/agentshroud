@@ -50,7 +50,14 @@ jobs:
           fi
 
       - name: Run tests
-        run: pytest gateway/tests/ -q --tb=short
+        run: |
+          # This job never runs the authoritative ubuntu+3.11 combo (see
+          # ci.yml's "Leak gate" comment) — the ResourceWarning/
+          # PytestUnraisableExceptionWarning leak gate must be report-only
+          # here too, or GC-timing false positives block every release.
+          pytest gateway/tests/ -q --tb=short \
+            -W default::pytest.PytestUnraisableExceptionWarning \
+            -W default::ResourceWarning
 
   docker-build-push:
     name: Docker Build & Tag
