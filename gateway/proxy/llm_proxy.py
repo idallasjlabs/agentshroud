@@ -65,6 +65,15 @@ MLXLM_API_BASE = os.environ.get("MLXLM_API_BASE") or "http://host.docker.interna
 # OpenAI-compatible (/v1/chat/completions, /v1/models), no auth. Default local
 # model as of 2026-08 — see docs/planning/LOCAL_LLM_REVIEW.md.
 FIELDFLARE_API_BASE = os.environ.get("FIELDFLARE_API_BASE") or "http://host.docker.internal:8238"
+# oMLX — OpenAI-compatible local server (agentshroud_mlx/local-llms project),
+# hosts DeepSeek-R1-0528-Qwen3-8B and gemma-4-12B-it-4bit. Unlike the other
+# local backends, oMLX requires a bearer token (see OMLX_API_KEY below) —
+# confirmed 2026-08-13: gemma-4-26b-a4b-it via Turbo Fieldflare could not
+# reliably produce well-formed tool calls under Hermes's real tool-heavy
+# workload (see docs/planning/LOCAL_LLM_REVIEW.md); gemma-4-12B-it-4bit via
+# oMLX produced a correct tool call on the same class of request.
+OMLX_API_BASE = os.environ.get("OMLX_API_BASE") or "http://host.docker.internal:8000"
+OMLX_API_KEY = os.environ.get("OMLX_API_KEY", "")
 MAIN_MODEL = os.environ.get("AGENTSHROUD_LOCAL_MODEL", "qwen2.5-coder:7b")
 MODEL_MODE = os.environ.get("AGENTSHROUD_MODEL_MODE", "local").lower()
 
@@ -79,8 +88,10 @@ MODEL_MODE = os.environ.get("AGENTSHROUD_MODEL_MODE", "local").lower()
 # route to LM Studio instead of Fieldflare.
 LOCAL_MODEL_ROUTES: dict[str, str] = {
     "mlx-community/deepseek-r1": MLXLM_API_BASE,  # mlx-lm full-ID: DeepSeek-R1-0528-Qwen3-8B-4bit
+    "deepseek-r1-0528-qwen3-8b": OMLX_API_BASE,  # oMLX — reasoning model, tool-calling capable
     "deepseek-r1": MLXLM_API_BASE,  # Reasoning — mlx_lm on :8234 (no tool calling)
     "gemma-4-26b-a4b-it": FIELDFLARE_API_BASE,  # Turbo Fieldflare — MLX Gemma 4 on :8238
+    "gemma-4-12b-it-4bit": OMLX_API_BASE,  # oMLX — Gemma 4 12B, confirmed tool-calling works
     "qwen3": LMSTUDIO_API_BASE,  # Qwen3 family — LM Studio on :1234
     "qwen2.5-coder": LMSTUDIO_API_BASE,  # Coding — LM Studio on :1234
     "gemma": LMSTUDIO_API_BASE,  # Other Gemma models — LM Studio on :1234
@@ -241,9 +252,8 @@ class LLMProxy:
             else:
                 return None
 
-            f_status, f_headers, f_body = await self._forward_request(
-                fo_url, fo_body, {"content-type": "application/json"}
-            )
+            fo_headers = self._local_backend_headers(fo_base, {"content-type": "application/json"})
+            f_status, f_headers, f_body = await self._forward_request(fo_url, fo_body, fo_headers)
 
             if f_status == 200 and f_body:
                 self._stats["failover_local_secondary_succeeded"] = (
@@ -286,6 +296,21 @@ class LLMProxy:
         if base_url == LMSTUDIO_API_BASE:
             return local_model.replace(":", "-")
         return local_model
+
+    @staticmethod
+    def _local_backend_headers(base_url: str, headers: dict) -> dict:
+        """Inject per-backend auth for local backends that require it.
+
+        Unlike LM Studio / mlx_lm / Turbo Fieldflare (no auth), oMLX requires
+        a bearer token. Returns a copy of headers — never mutates the input,
+        matching the OpenAI-path convention above.
+        """
+        if base_url == OMLX_API_BASE and OMLX_API_KEY:
+            headers = dict(headers)
+            headers["authorization"] = f"Bearer {OMLX_API_KEY}"
+            headers.pop("Authorization", None)
+            headers.pop("x-api-key", None)
+        return headers
 
     def _emit_failover_notice(self, token: str, translated: bool) -> None:
         """Send a single Telegram notice per cooldown window when failover activates."""
@@ -414,9 +439,8 @@ class LLMProxy:
             else:
                 return None  # Unknown provider — no translator
 
-            f_status, f_headers, f_body = await self._forward_request(
-                fo_url, fo_body, {"content-type": "application/json"}
-            )
+            fo_headers = self._local_backend_headers(fo_base, {"content-type": "application/json"})
+            f_status, f_headers, f_body = await self._forward_request(fo_url, fo_body, fo_headers)
 
             if f_status == 200 and f_body:
                 if translate_back == "anthropic":
@@ -703,6 +727,7 @@ class LLMProxy:
                     model_name = normalized
                     model_lower = model_name.lower()
                     body = json.dumps(request_data).encode()
+            headers = self._local_backend_headers(base_url, headers)
         elif is_openai:
             base_url = OPENAI_API_BASE
             # Same gap the Claude-translation branch above exists to close:
@@ -961,6 +986,8 @@ class LLMProxy:
 
         if self.credential_injector and base_url == ANTHROPIC_API_BASE:
             self.credential_injector.inject_headers("api.anthropic.com", forward_headers)
+        if is_ollama:
+            forward_headers = self._local_backend_headers(base_url, forward_headers)
 
         _failover_opt_out = headers.get("x-agentshroud-no-failover", "") == "1"
         _failover_enabled = os.environ.get("AGENTSHROUD_FAILOVER_ON_QUOTA", "1") == "1"
@@ -1039,7 +1066,9 @@ class LLMProxy:
                                             "POST",
                                             fo_url,
                                             content=fo_body,
-                                            headers={"content-type": "application/json"},
+                                            headers=self._local_backend_headers(
+                                                fo_base, {"content-type": "application/json"}
+                                            ),
                                         ) as fo_resp:
                                             if fo_resp.status_code == 200:
                                                 self._stats["failover_quota_succeeded"] = (

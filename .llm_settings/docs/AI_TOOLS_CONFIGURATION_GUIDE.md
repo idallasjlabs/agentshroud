@@ -51,7 +51,7 @@ Claude Code is the **PRIMARY developer** in this repository. It has the most adv
 │       ├── block_credential_read.sh
 │       ├── block_credential_write.sh
 │       └── block_main_commits.sh
-├── skills/                    # 57 skill definitions (flat structure)
+├── skills/                    # 59 skill definitions (flat structure)
 │   ├── <name>/SKILL.md       # Each skill: /agile, /apollo, /aws, /bdd, /browser, ...
 │   └── reference/SKILLS_GUIDE.md
 ├── settings.json             # Team-shared configuration
@@ -75,11 +75,11 @@ roadmap-agent, rollback-agent, script-agent, scrum-master-agent, security-review
 sprint-planner, sre-agent, supply-chain-security-agent, tdd-engineer, tech-writer,
 testrunner, threat-model-agent, value-stream-agent, voice-generation-agent
 
-**57 Skills** (`.claude/skills/<name>/SKILL.md`):
+**59 Skills** (`.claude/skills/<name>/SKILL.md`):
 agile, apollo, architecture-review, athena, atlas, aws, bdd, browser, bs, cd,
 chaos-engineering, ci, cicd, cr, daedalus, data, devsecops, eightd, gg, gitops,
-hermes, icloud, incident-response, kaizen, kanban, mac, mc, mcpm, mcpm-auth-reset,
-mcpm-aws-profile, mcpm-doctor, mm, mnemosyne, observability, oracle, pm, pr, production,
+hdev, hermes, icloud, incident-response, kaizen, kanban, mac, mc, mcpm, mcpm-auth-reset,
+mcpm-aws-profile, mcpm-doctor, mm, mnemosyne, observability, odev, oracle, pm, pr, production,
 ps, qa, sad, sav, scrum, sdlc, sec, sec-defense, sec-offense, session-prompt, socrates,
 sre, tdd, ti, tw, ui, ux, value-stream-mapping, vulcan
 
@@ -113,7 +113,7 @@ sre, tdd, ti, tw, ui, ux, value-stream-mapping, vulcan
 ### Unique Features
 
 - **Agents**: 54 specialized subagents (full list above)
-- **Skills**: 57 custom workflows invoked with `/skill-name`
+- **Skills**: 59 custom workflows invoked with `/skill-name`
 - **Hooks**: 6 PreToolUse hook scripts (credential blocking, format, test-runner, dangerous-bash guard)
 - **Context file**: `CLAUDE.md` loaded automatically
 - **Local overrides**: `settings.local.json` for personal settings

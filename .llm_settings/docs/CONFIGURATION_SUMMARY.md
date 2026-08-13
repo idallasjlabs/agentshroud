@@ -118,7 +118,7 @@ LLM_Settings/
 ### Claude Code ('.claude/')
 - **Format:** JSON
 - **Agents:** Subagents (doc-writer, security-reviewer, testrunner)
-- **Skills:** 57 skills — `/agile`, `/apollo`, `/architecture-review`, `/athena`, `/atlas`, `/aws`, `/bdd`, `/browser`, `/bs`, `/cd`, `/chaos-engineering`, `/ci`, `/cicd`, `/cr`, `/daedalus`, `/data`, `/devsecops`, `/eightd`, `/gg`, `/gitops`, `/hermes`, `/icloud`, `/incident-response`, `/kaizen`, `/kanban`, `/mac`, `/mc`, `/mcpm`, `/mcpm-auth-reset`, `/mcpm-aws-profile`, `/mcpm-doctor`, `/mm`, `/mnemosyne`, `/observability`, `/oracle`, `/pm`, `/pr`, `/production`, `/ps`, `/qa`, `/sad`, `/sav`, `/scrum`, `/sdlc`, `/sec`, `/sec-defense`, `/sec-offense`, `/session-prompt`, `/socrates`, `/sre`, `/tdd`, `/ti`, `/tw`, `/ui`, `/ux`, `/value-stream-mapping`, `/vulcan`
+- **Skills:** 59 skills — `/agile`, `/apollo`, `/architecture-review`, `/athena`, `/atlas`, `/aws`, `/bdd`, `/browser`, `/bs`, `/cd`, `/chaos-engineering`, `/ci`, `/cicd`, `/cr`, `/daedalus`, `/data`, `/devsecops`, `/eightd`, `/gg`, `/gitops`, `/hdev`, `/hermes`, `/icloud`, `/incident-response`, `/kaizen`, `/kanban`, `/mac`, `/mc`, `/mcpm`, `/mcpm-auth-reset`, `/mcpm-aws-profile`, `/mcpm-doctor`, `/mm`, `/mnemosyne`, `/observability`, `/odev`, `/oracle`, `/pm`, `/pr`, `/production`, `/ps`, `/qa`, `/sad`, `/sav`, `/scrum`, `/sdlc`, `/sec`, `/sec-defense`, `/sec-offense`, `/session-prompt`, `/socrates`, `/sre`, `/tdd`, `/ti`, `/tw`, `/ui`, `/ux`, `/value-stream-mapping`, `/vulcan`
 - **Hooks:** 6 hooks (warn_dangerous_bash, auto_format_python, run_targeted_tests, block_credential_read, block_credential_write, block_main_commits)
 - **Context:** CLAUDE.md loaded automatically
 - **MCP:** Via .mcp.json (GitHub, Atlassian, AWS API, XMind Generator)

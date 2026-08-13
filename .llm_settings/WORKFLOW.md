@@ -20,7 +20,7 @@ This repository implements a full lifecycle AI-augmented development system.
 |-------|--------|
 | Idea | `/i-pm`, `/i-agile`, `/i-scrum` |
 | Design | `/i-sad`, `/i-architecture-review` |
-| Development | `/i-tdd`, `/i-apollo`, `/i-atlas` |
+| Development | `/i-tdd`, `/i-apollo`, `/i-atlas`, `/i-hdev`, `/i-odev` |
 | Testing | `/i-qa`, `/i-bdd`, `/i-cr` |
 | Security | `/i-sec`, `/i-sec-defense`, `i-security-reviewer` (subagent) |
 | Build | `/i-ci`, `/i-cd`, `/i-cicd` |
