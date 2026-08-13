@@ -23,6 +23,7 @@ from contextlib import asynccontextmanager
 from unittest.mock import MagicMock, patch
 
 import pytest
+
 import voice_gateway.server as srv
 from voice_gateway.server import _call_agent_stream, _record_turn_latency, _voice_forward_metadata
 
