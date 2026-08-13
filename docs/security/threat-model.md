@@ -236,6 +236,138 @@ Prompt Injection
 - **Rootless Docker**: Run Docker daemon as non-root user where possible
 - **Socket Proxying**: Filtered Docker API access through AgentShroud gateway
 
+## A2A (Agent-to-Agent) Protocol Threat Analysis
+
+SCRUM-129. Hermes Agent v0.20.0+ (deployed: v0.20.1) adds support for the real
+Google/Linux Foundation A2A v1.0.1 protocol (JSON-RPC 2.0 over HTTP, port 9900),
+letting Hermes discover, call, and be called by other A2A-compliant agents. Both
+Hermes's inbound A2A platform adapter and its outbound `a2a` toolset are disabled
+by default — this analysis, and the `gateway/security/a2a_policy.py` /
+`gateway/proxy/a2a_proxy.py` governance module it drives, are the prerequisite for
+ever enabling either. Scope: **inbound only** (an external peer calling Hermes).
+Outbound governance is architecturally capped by the existing CONNECT-tunnel proxy's
+opacity to HTTPS payload content and is tracked as a separate follow-up, not
+covered here.
+
+Five specific gaps below (gap #1-#5) come from a direct source-level audit of
+Hermes's own A2A plugin (`plugins/platforms/a2a/`, upstream PRs/issues #83701,
+#80534/#80779, #78298, #77872, #81042) as of v0.20.1 — all five were still open
+(unpatched) at time of writing. AgentShroud's interceptor is designed to catch
+each of these independently of whether/when Hermes fixes its own code, since
+AgentShroud terminates the inbound connection itself rather than trusting Hermes's
+identity/authorization handling.
+
+### S — Spoofing: Peer Identity Collapse Behind a Reverse Proxy
+
+**Description**: Hermes's own identity derivation falls back to the raw socket
+address when only a single shared `A2A_BEARER_TOKEN` is configured (gap #80534/
+#80779). Behind any reverse proxy — including AgentShroud's own — every distinct
+peer sharing that proxy collapses into one identity, silently breaking Hermes's
+own rate limiting, peer allow-list, and audit attribution.
+
+**Mitigation**: AgentShroud resolves peer identity itself, from the
+`Authorization: Bearer` token's mapped alias (`A2A_PEER_TOKENS` semantics) —
+never from socket address or `X-Forwarded-For`. A trusted internal header
+(`X-AgentShroud-A2A-Peer-Id`) is forwarded to Hermes so its own broken derivation
+is never consulted. This is the same trusted-header pattern used for
+`_resolve_effective_agent_id` elsewhere in the gateway.
+
+### T — Tampering: Cross-Tenant Task Ownership via `contextId` Collision
+
+**Description**: Hermes's `contextId` filename sanitization strips all
+non-`[A-Za-z0-9_-]` characters, so distinct caller-controlled context IDs (e.g.
+`tenant/a` vs `tenanta`) can collide and merge persisted conversation histories on
+disk (gap #83701). A peer that predicts or brute-forces another tenant's
+`contextId` can read or write into their conversation history via `GetTask`/
+`SubscribeToTask`.
+
+**Mitigation**: `A2APolicyEngine` maintains its own `{task_id: peer_id}` map, set
+at `SendMessage` task creation using AgentShroud's own resolved peer identity —
+never Hermes's contextId handling. Any `GetTask`/`CancelTask`/`SubscribeToTask`
+where the caller doesn't own the referenced task is denied before the request
+ever reaches Hermes. Logged as `ViolationType.A2A_TASK_OWNERSHIP_VIOLATION`.
+
+### R — Repudiation: Rejected Auth Attempts Not Audited
+
+**Description**: Rejected 401/403 A2A requests were not written to Hermes's own
+`a2a_audit.jsonl` (gap #81042; unconfirmed whether patched in v0.20.1) — a
+security-relevant signal (who's probing the endpoint) invisible in Hermes's audit
+trail.
+
+**Mitigation**: AgentShroud logs every policy decision — ALLOW, DENY, and
+auth-failure DENY (checked before `policy_engine.evaluate()` is ever called,
+since an unauthenticated caller has no peer_id to evaluate) — through the same
+audit path MCP governance already uses. This makes Hermes's own audit gap
+irrelevant to AgentShroud's record.
+
+### I — Information Disclosure / Elevation of Privilege: Unsandboxed Live-Session Injection
+
+**Description**: Inbound A2A tasks are injected into Hermes's *live gateway
+session* — the same conversation memory and tool access as the human operator's
+own session — rather than a sandboxed clone. A malicious or compromised peer's
+task therefore doesn't just talk to Hermes; it operates with the same effective
+privilege as the operator for the duration of that task. This is a structural
+Hermes design decision, not a bug to patch — it defines the ceiling of what a
+successfully-authenticated-but-malicious peer can do, and is why default-deny
+peer allow-listing (not just method-level policy) is the primary control.
+
+**Mitigation**: `A2APolicyConfig.default_action = DENY` — unknown peers are
+rejected outright, before any task is created. `SendStreamingMessage` (the
+highest-bandwidth path into the live session) is classified high-risk,
+requiring approval-queue sign-off rather than blanket allow even for known
+peers. `owner_bypass` defaults `False` unconditionally for A2A — an external
+peer is never treated as equivalent to the human operator.
+
+### I — Information Disclosure: SSRF via Push-Notification Callback URLs
+
+**Description**: Hermes's `is_safe_callback_url` SSRF guard on
+`SetPushNotificationConfig` does string-prefix hostname matching, then only
+re-validates canonical dotted-decimal IPv4 via `ipaddress.ip_address()` — decimal
+(`2130706433`), hex (`0x7f000001`), octal (`0177.0.0.1`), and trailing-dot
+(`localhost.`) encodings bypass both checks and resolve to blocked ranges
+(127.0.0.1, the 169.254.169.254 cloud-metadata endpoint) despite the documented
+guard (gap #78298). This is the same class of bug already present in this repo's
+own `gateway/security/egress_filter.py::_is_private_ip` (~line 459-480) — noted
+as a separate, pre-existing, repo-wide follow-up, not fixed as part of this
+ticket's scope.
+
+**Mitigation**: A dedicated hardened callback-URL validator in
+`a2a_policy.py` explicitly parses decimal/hex/octal IPv4 literals and
+trailing-dot hostnames *before* delegating to `ipaddress`, resolves hostnames
+and checks the resolved IP (not just the literal) against private/link-local/
+metadata-IP ranges, and re-checks on every use (not just at config-set time) to
+guard against DNS rebinding. Rejection is logged as
+`ViolationType.A2A_SSRF_CALLBACK_ATTEMPT` and placed in `severe_violation_types`
+(immediate trust demotion) — a bypass attempt here is unambiguous malicious
+intent, not an accident.
+
+### E — Elevation of Privilege: Cross-Process Isolation Break
+
+**Description**: Hermes's A2A adapter runs on a plain `threading.Thread`, not an
+`asyncio.Task` (gap #77872), so Python contextvars used for per-profile
+`HERMES_HOME` isolation don't propagate — inbound requests can silently resolve
+to the process-wide default profile instead of the intended multi-tenant
+profile, breaking trust-gate/audit/persistence isolation between tenants.
+
+**Mitigation**: Detection/containment, not a fix — AgentShroud cannot patch
+Hermes's internal thread/contextvar bug. But because `A2AProxy` (not Hermes)
+resolves and attaches peer identity, and terminates one connection per request,
+the identity AgentShroud recorded and audited stays correct in AgentShroud's own
+trust ledger regardless of any internal cross-wiring on Hermes's side — any
+resulting Hermes-side misattribution becomes a detectable discrepancy against
+AgentShroud's audit trail rather than a silent, unlogged failure.
+
+### Not Yet Mitigated (Explicitly Deferred)
+
+- **Discovery reconnaissance**: `GET /.well-known/agent-card.json` is
+  unauthenticated by spec design and intentionally passthrough (not
+  policy-gated) — audited, not blocked. Accepted risk: this is the spec's own
+  contract, not a Hermes-specific gap.
+- **Outbound governance** (Hermes calling other peers): coarse peer-domain
+  allow/deny only, riding the existing HTTP CONNECT-tunnel proxy — no
+  method-level policy or PII scanning on outgoing `Message` content is possible
+  without a materially larger TLS-interception project. Separate ticket.
+
 ## Threat Intelligence Integration
 
 AgentShroud integrates with external threat intelligence feeds:
@@ -273,5 +405,8 @@ Context Multiplier:
 | Resource DoS | Container Limits | Rate Limiting | Resource Monitoring |
 | Prompt Injection | Pattern Matching | Unicode Normalization | Anomaly Detection |
 | Container Escape | seccomp Profiles | Capability Dropping | Runtime Monitoring |
+| A2A Identity Collapse | Trusted-Header Resolution | Bearer-Token Peer Mapping | Audit Trail |
+| A2A Task Ownership Violation | Task-Owner Tracking | Default-Deny Peer Allowlist | Trust Ledger Decay |
+| A2A SSRF (Callback URLs) | Hardened IP Canonicalization | Re-check on Every Use | Severe Violation Demotion |
 
 This comprehensive threat model ensures AgentShroud addresses security risks across all STRIDE categories while providing layered defenses and comprehensive monitoring for threat detection and response.
