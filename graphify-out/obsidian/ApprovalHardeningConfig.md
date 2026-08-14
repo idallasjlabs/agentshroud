@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Egress & RBAC Security Core"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress__RBAC_Security_Core
 ---
 
 # ApprovalHardeningConfig
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_51]] - `references` [EXTRACTED]
 - [[.config()]] - `calls` [EXTRACTED]
 - [[.test_cooldown_disabled_when_feature_disabled()]] - `calls` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[.test_deception_detection_disabled()]] - `calls` [EXTRACTED]
 - [[.test_default_config()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Configuration for approval queue hardening.]] - `rationale_for` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[run()_3]] - `calls` [EXTRACTED]
 - [[test_approval_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

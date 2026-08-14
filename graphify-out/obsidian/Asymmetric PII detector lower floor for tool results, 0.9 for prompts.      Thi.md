@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "gateway/runtime"
 location: "L300"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/gateway/runtime
 ---
 
 # Asymmetric PII detector: lower floor for tool results, 0.9 for prompts.      Thi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DifferentialPIIDetector]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/gateway/runtime

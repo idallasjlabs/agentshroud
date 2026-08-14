@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "docs/vault"
+community: "Security Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Docs
 ---
 
 # Architecture Overview — AgentShroud
@@ -18,4 +18,4 @@ tags:
 - [[agentshroud-bot Container (Node.js 22 OpenClaw, port 18789, 4 GB, isolated network)]] - `describes` [EXTRACTED]
 - [[agentshroud-gateway Container (Python 3.13  FastAPI, port 8080, 1280 MB, read-only rootfs)]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

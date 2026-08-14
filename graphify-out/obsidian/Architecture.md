@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "README.md"
+community: "skills/openclaw"
 location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/READMEmd
+  - community/skills/openclaw
 ---
 
 # Architecture
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud™ README]] - `references` [EXTRACTED]
 - [[README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/READMEmd
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

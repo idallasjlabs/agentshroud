@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "docs/vault"
+community: "skills/openclaw"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/skills/openclaw
 ---
 
 # Architecture Overview
@@ -20,4 +20,4 @@ tags:
 - [[Related Notes_2]] - `contains` [EXTRACTED]
 - [[Summary_21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

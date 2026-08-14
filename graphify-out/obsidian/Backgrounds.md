@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "branding/guidelines"
+community: "docker/docker-compose.yml"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/docker/docker-composeyml
 ---
 
 # Backgrounds
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Logo Usage_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/guidelines
+#graphify/document #graphify/EXTRACTED #community/docker/docker-composeyml

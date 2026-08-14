@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Security Module"
 location: "L533"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Security_Module
 ---
 
 # Audit System Performance Metrics
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Performance and Scalability]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

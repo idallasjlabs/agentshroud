@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "concept"
-community: "Setup Docs"
+community: "Gateway Test Suite"
 location: "lines 41-55"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # BlueBubbles Recommended for iMessage (replaces SSH-based approach)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[iMessage Integration Status (Partially Working)]] - `recommends` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Setup_Docs
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

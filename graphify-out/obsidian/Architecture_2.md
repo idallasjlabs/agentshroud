@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Planning Docs"
+community: "skills/openclaw"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/skills/openclaw
 ---
 
 # Architecture
@@ -19,4 +19,4 @@ tags:
 - [[Security Modules]] - `contains` [EXTRACTED]
 - [[The Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

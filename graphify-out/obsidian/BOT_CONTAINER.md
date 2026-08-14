@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-bot-agents.sh"
 type: "code"
-community: "scripts/sync-llm-settings.sh"
+community: "docs/user-guide.md"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-llm-settingssh
+  - community/docs/user-guidemd
 ---
 
 # BOT_CONTAINER
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update-bot-agents.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-llm-settingssh
+#graphify/code #graphify/EXTRACTED #community/docs/user-guidemd

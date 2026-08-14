@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Test Suite"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Gateway_Test_Suite
 ---
 
 # BaseModel
@@ -18,8 +18,8 @@ tags:
 - [[ApprovalDecision]] - `inherits` [EXTRACTED]
 - [[ApprovalDecisionRequest]] - `inherits` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `inherits` [EXTRACTED]
-- [[ApprovalQueueItem]] - `inherits` [EXTRACTED]
-- [[ApprovalRequest]] - `inherits` [EXTRACTED]
+- [[ApprovalQueueItem_3]] - `inherits` [EXTRACTED]
+- [[ApprovalRequest_3]] - `inherits` [EXTRACTED]
 - [[AuditExportConfig]] - `inherits` [EXTRACTED]
 - [[AuditLogEntry]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `inherits` [EXTRACTED]
@@ -52,8 +52,8 @@ tags:
 - [[IntelDraftRequest]] - `inherits` [EXTRACTED]
 - [[KillSwitchAction]] - `inherits` [EXTRACTED]
 - [[LedgerConfig]] - `inherits` [EXTRACTED]
-- [[LedgerEntry]] - `inherits` [EXTRACTED]
-- [[LedgerQueryResponse]] - `inherits` [EXTRACTED]
+- [[LedgerEntry_1]] - `inherits` [EXTRACTED]
+- [[LedgerQueryResponse_1]] - `inherits` [EXTRACTED]
 - [[LoginRequest]] - `inherits` [EXTRACTED]
 - [[MCPProxyRequest]] - `inherits` [EXTRACTED]
 - [[MCPResultRequest]] - `inherits` [EXTRACTED]
@@ -68,14 +68,14 @@ tags:
 - [[RenameGroupRequest]] - `inherits` [EXTRACTED]
 - [[ResourceUsage_1]] - `inherits` [EXTRACTED]
 - [[RollbackRequest]] - `inherits` [EXTRACTED]
-- [[RouterConfig_1]] - `inherits` [EXTRACTED]
+- [[RouterConfig]] - `inherits` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `inherits` [EXTRACTED]
 - [[SCLError]] - `inherits` [EXTRACTED]
 - [[SSHConfig]] - `inherits` [EXTRACTED]
-- [[SSHExecRequest]] - `inherits` [EXTRACTED]
+- [[SSHExecRequest_1]] - `inherits` [EXTRACTED]
 - [[SSHExecResponse]] - `inherits` [EXTRACTED]
 - [[SSHHostConfig]] - `inherits` [EXTRACTED]
-- [[SSHWriteFileRequest]] - `inherits` [EXTRACTED]
+- [[SSHWriteFileRequest_1]] - `inherits` [EXTRACTED]
 - [[SSHWriteFileResponse]] - `inherits` [EXTRACTED]
 - [[ScanRequest_1]] - `inherits` [EXTRACTED]
 - [[SecurityConfig_2]] - `inherits` [EXTRACTED]
@@ -98,4 +98,4 @@ tags:
 - [[VersionRequest]] - `inherits` [EXTRACTED]
 - [[WSEvent]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

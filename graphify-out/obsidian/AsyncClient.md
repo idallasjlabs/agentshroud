@@ -12,7 +12,7 @@ tags:
 # AsyncClient
 
 ## Connections
-- [[.__init__()_20]] - `references` [EXTRACTED]
+- [[.__init__()_18]] - `references` [EXTRACTED]
 - [[._get_client()]] - `references` [EXTRACTED]
 - [[client()_4]] - `calls` [INFERRED]
 - [[client()_5]] - `calls` [INFERRED]

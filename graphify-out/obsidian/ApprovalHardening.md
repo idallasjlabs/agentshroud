@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Egress & RBAC Security Core"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Egress__RBAC_Security_Core
 ---
 
 # ApprovalHardening
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_51]] - `method` [EXTRACTED]
 - [[._check_description_parameter_mismatch()]] - `method` [EXTRACTED]
 - [[._check_misleading_language()]] - `method` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[.test_deception_detection_disabled()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Anti-social-engineering hardening for approval queue.]] - `rationale_for` [EXTRACTED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -50,4 +50,4 @@ tags:
 - [[run()_3]] - `calls` [EXTRACTED]
 - [[test_approval_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

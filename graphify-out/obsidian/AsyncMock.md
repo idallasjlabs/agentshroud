@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Slack API Proxy"
-location: "L8442"
+community: "Gateway Test Suite"
+location: "L8511"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Slack_API_Proxy
+  - community/Gateway_Test_Suite
 ---
 
 # AsyncMock
 
 ## Connections
 - [[.__call__()_10]] - `method` [EXTRACTED]
-- [[.__init__()_159]] - `calls` [INFERRED]
-- [[.__init__()_176]] - `method` [EXTRACTED]
+- [[.__init__()_169]] - `calls` [INFERRED]
+- [[.__init__()_186]] - `method` [EXTRACTED]
 - [[._handler()]] - `calls` [INFERRED]
+- [[._mock_request()]] - `calls` [INFERRED]
 - [[._passthrough_pii()]] - `calls` [INFERRED]
 - [[._passthrough_pii()_1]] - `calls` [INFERRED]
 - [[._pipeline_with_trust()]] - `calls` [INFERRED]
@@ -255,4 +256,4 @@ tags:
 - [[test_ws_pipeline_error_logs_and_recovers_to_idle()]] - `calls` [INFERRED]
 - [[test_ws_sentence_chunked_tts_calls_synthesize_per_sentence()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Slack_API_Proxy
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

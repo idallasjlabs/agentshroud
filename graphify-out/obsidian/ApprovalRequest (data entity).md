@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "docs/diagrams"
+community: "Gateway Test Suite"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/docs/diagrams
+  - community/Gateway_Test_Suite
 ---
 
 # ApprovalRequest (data entity)
@@ -15,4 +15,4 @@ tags:
 - [[TrustLevel (data entity)]] - `conceptually_related_to` [INFERRED]
 - [[approval_requests SQLite table]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/docs/diagrams
+#graphify/concept #graphify/INFERRED #community/Gateway_Test_Suite

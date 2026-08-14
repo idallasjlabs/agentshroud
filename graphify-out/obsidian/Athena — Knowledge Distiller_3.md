@@ -1,17 +1,21 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
-type: "concept"
-community: "Architecture Docs"
+source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
+type: "document"
+community: "Bot Skill Config"
+location: "L6"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Apollo — Audio Systems Producer_3]] - `shares_data_with` [EXTRACTED]
-- [[Oracle — Feedback Analyst_4]] - `shares_data_with` [EXTRACTED]
+- [[Input Requirements_11]] - `contains` [EXTRACTED]
+- [[Output Format_13]] - `contains` [EXTRACTED]
+- [[Persona_8]] - `contains` [EXTRACTED]
+- [[Role_41]] - `contains` [EXTRACTED]
+- [[SKILL_68]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "branding/INDEX.md"
+community: "Security Docs"
 location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/INDEXmd
+  - community/Security_Docs
 ---
 
 # Assets Needed
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📝 To-Do]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/INDEXmd
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

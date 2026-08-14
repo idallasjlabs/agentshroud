@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Security Pipeline Core"
+community: "SOC RBAC & Auth"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Pipeline_Core
+  - community/SOC_RBAC__Auth
 ---
 
 # AuditChainEntry
@@ -24,4 +24,4 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Pipeline_Core
+#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth

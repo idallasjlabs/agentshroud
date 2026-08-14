@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/browse.js"
 type: "rationale"
-community: "Bot Skill Config"
+community: "docs/vault"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # Audit-log-every-fetch design rationale
@@ -15,4 +15,4 @@ tags:
 - [[appendLog()_3]] - `conceptually_related_to` [EXTRACTED]
 - [[browserFetch() (Node.js Playwright fetch)]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

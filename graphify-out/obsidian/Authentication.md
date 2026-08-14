@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: ".github/COPILOT_CLI_SETUP.md"
+community: "Gateway Test Suite"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/COPILOT_CLI_SETUPmd
+  - community/Gateway_Test_Suite
 ---
 
 # Authentication
@@ -16,4 +16,4 @@ tags:
 - [[Option 1 GitHub Login]] - `contains` [EXTRACTED]
 - [[Option 2 Personal Access Token]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

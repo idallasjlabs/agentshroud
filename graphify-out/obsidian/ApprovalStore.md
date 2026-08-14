@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "Collaborator Prompt Classifiers"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enhanced_Approval_Queue
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # ApprovalStore
 
 ## Connections
-- [[.__init__()_7]] - `references` [EXTRACTED]
+- [[.__init__()_2]] - `references` [EXTRACTED]
 - [[.test_restart_recovery_preserves_timeout_action()]] - `calls` [INFERRED]
 - [[.test_restore_pending_items()]] - `calls` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem]] - `uses` [INFERRED]
-- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
 - [[ApprovalStore_1]] - `uses` [INFERRED]
 - [[MFAGuard_2]] - `uses` [INFERRED]
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[temp_store()]] - `calls` [INFERRED]
 - [[test_websocket_notifications()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Classifiers

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "docs/vault"
+community: "skills/openclaw"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/skills/openclaw
 ---
 
 # Bot / Docker Container Dependencies
@@ -17,4 +17,4 @@ tags:
 - [[Node.js Packages (installed globally)]] - `contains` [EXTRACTED]
 - [[System Packages (apt)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

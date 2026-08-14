@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "Collaborator Prompt Classifiers"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # ApprovalStore
 
 ## Connections
-- [[.__init__()_10]] - `method` [EXTRACTED]
+- [[.__init__()_5]] - `method` [EXTRACTED]
 - [[.close()_3]] - `method` [EXTRACTED]
 - [[.initialize()_1]] - `method` [EXTRACTED]
 - [[.load_all()]] - `method` [EXTRACTED]
@@ -22,12 +22,12 @@ tags:
 - [[.test_restore_pending_items()]] - `calls` [EXTRACTED]
 - [[.test_store_persists_across_reopen()]] - `calls` [EXTRACTED]
 - [[.update_status()]] - `method` [EXTRACTED]
-- [[Any_2]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
+- [[ApprovalQueueItem]] - `uses` [INFERRED]
 - [[ApprovalQueueItem_4]] - `uses` [INFERRED]
-- [[ApprovalRequest_1]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
@@ -35,7 +35,7 @@ tags:
 - [[MCPPolicyEngine_1]] - `uses` [INFERRED]
 - [[MFAGuard]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_23]] - `uses` [INFERRED]
+- [[Path_24]] - `uses` [INFERRED]
 - [[SQLite-backed persistence for approval queue items.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `uses` [INFERRED]
 - [[TestApprovalTimeout]] - `uses` [INFERRED]
@@ -47,7 +47,7 @@ tags:
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
-- [[WebSocket_1]] - `uses` [INFERRED]
+- [[WebSocket]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
 - [[_real_queue()]] - `calls` [EXTRACTED]
 - [[enhanced_mfa_queue()]] - `calls` [EXTRACTED]
@@ -70,4 +70,4 @@ tags:
 - [[test_store_survives_restart()]] - `calls` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

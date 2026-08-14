@@ -12,6 +12,6 @@ tags:
 # Args:             resolve_dns: If True, resolve hostnames to IPs and check those
 
 ## Connections
-- [[.__init__()_40]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_39]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

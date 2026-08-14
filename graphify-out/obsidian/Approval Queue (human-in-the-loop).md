@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Architecture Docs"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/docs/vault
 ---
 
 # Approval Queue (human-in-the-loop)
@@ -14,4 +14,4 @@ tags:
 - [[SOC Dashboard]] - `shares_data_with` [EXTRACTED]
 - [[SecurityPipeline (75 modules, 7 layers)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

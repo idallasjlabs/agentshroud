@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Approval Queue Tests"
+community: "Telegram Proxy Test Suite"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # ApprovalQueue
 
 ## Connections
-- [[.__init__()_9]] - `method` [EXTRACTED]
+- [[.__init__()_4]] - `method` [EXTRACTED]
 - [[._append_audit_event()]] - `method` [EXTRACTED]
 - [[._expire_stale()]] - `method` [EXTRACTED]
 - [[._load_pending_store()]] - `method` [EXTRACTED]
@@ -53,7 +53,7 @@ tags:
 - [[queue()]] - `calls` [EXTRACTED]
 - [[queue.py]] - `contains` [EXTRACTED]
 - [[run()_3]] - `calls` [INFERRED]
-- [[test_approval_queue.py]] - `implements` [EXTRACTED]
+- [[test_approval_queue.py]] - `imports` [EXTRACTED]
 - [[test_approval_stress.py]] - `imports` [EXTRACTED]
 - [[test_cleanup_decided_persists_removal_to_disk()]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `imports` [EXTRACTED]
@@ -64,4 +64,4 @@ tags:
 - [[test_store_persists_submit_and_decision()]] - `calls` [EXTRACTED]
 - [[test_store_restores_items_on_init()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

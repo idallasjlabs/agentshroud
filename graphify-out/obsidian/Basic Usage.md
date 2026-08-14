@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: ".github/COPILOT_CLI_SETUP.md"
+community: "Architecture Docs"
 location: "L167"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/COPILOT_CLI_SETUPmd
+  - community/Architecture_Docs
 ---
 
 # Basic Usage
@@ -18,4 +18,4 @@ tags:
 - [[Select Model]] - `contains` [EXTRACTED]
 - [[Start Interactive Session]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

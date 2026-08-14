@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "docs/governance"
 location: "L217"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/docs/governance
 ---
 
 # Bot not responding on Telegram
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Troubleshooting_27]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/docs/governance

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "rationale"
-community: "Gateway Ingest API"
-location: "L127"
+community: "PII Sanitizer Pipeline"
+location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Auth dependency that uses the app state config.
 
 ## Connections
-- [[auth_dep()]] - `rationale_for` [EXTRACTED]
+- [[auth_dep()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

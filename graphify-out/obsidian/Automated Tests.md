@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Custom Skills"
+community: "skills/openclaw"
 location: "L238"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/skills/openclaw
 ---
 
 # Automated Tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Testing_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

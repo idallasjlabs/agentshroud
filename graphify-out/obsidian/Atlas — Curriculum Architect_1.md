@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[Input Requirements_2]] - `contains` [EXTRACTED]
 - [[OKE Channel — CPA Exam Context]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
 - [[Output Format_1]] - `contains` [EXTRACTED]
 - [[Persona_1]] - `contains` [EXTRACTED]
 - [[Quality Checklist_2]] - `contains` [EXTRACTED]

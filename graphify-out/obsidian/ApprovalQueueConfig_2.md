@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "Telegram Proxy Test Suite"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enhanced_Approval_Queue
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # ApprovalQueueConfig
@@ -17,12 +17,12 @@ tags:
 - [[.test_enforce_mode_disabled()]] - `calls` [EXTRACTED]
 - [[.test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
 - [[.test_restore_pending_items()]] - `calls` [EXTRACTED]
-- [[Any_2]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
 - [[Approval queue configuration]] - `rationale_for` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
-- [[ApprovalRequest_1]] - `uses` [INFERRED]
+- [[ApprovalQueueItem]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
@@ -59,7 +59,7 @@ tags:
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
-- [[WebSocket_1]] - `uses` [INFERRED]
+- [[WebSocket]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
 - [[_queue()]] - `calls` [EXTRACTED]
 - [[_real_queue()]] - `calls` [EXTRACTED]
@@ -89,4 +89,4 @@ tags:
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite

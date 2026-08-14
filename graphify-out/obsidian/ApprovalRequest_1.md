@@ -1,25 +1,20 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "Enhanced Approval Queue"
-location: "L215"
+community: "Gateway Test Suite"
+location: "L63"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Enhanced_Approval_Queue
+  - graphify/EXTRACTED
+  - community/Gateway_Test_Suite
 ---
 
 # ApprovalRequest
 
 ## Connections
-- [[.submit()]] - `references` [EXTRACTED]
-- [[.submit_tool_request()]] - `calls` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem]] - `uses` [INFERRED]
-- [[ApprovalRequest]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig_1]] - `uses` [INFERRED]
-- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
+- [[._build_group_reply_text()]] - `references` [EXTRACTED]
+- [[._build_owner_dm_text()]] - `references` [EXTRACTED]
+- [[.route_approval()]] - `references` [EXTRACTED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

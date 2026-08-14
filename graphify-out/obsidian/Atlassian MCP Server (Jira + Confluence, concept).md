@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Setup Docs"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Docs
 ---
 
 # Atlassian MCP Server (Jira + Confluence, concept)
@@ -15,4 +15,4 @@ tags:
 - [[i-mcpm-auth-reset SKILL (MCP Auth Reset)]] - `references` [EXTRACTED]
 - [[i-mcpm-doctor SKILL (MCP Doctor)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Setup_Docs

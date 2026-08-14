@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Approval Queue Tests"
-location: "L71"
+community: "Collaborator Prompt Classifiers"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # ApprovalQueueItem
 
 ## Connections
-- [[.decide()_1]] - `references` [EXTRACTED]
-- [[.get_item()_1]] - `references` [EXTRACTED]
-- [[.get_pending()_1]] - `references` [EXTRACTED]
-- [[.submit()_1]] - `references` [EXTRACTED]
+- [[.load_all()]] - `references` [EXTRACTED]
+- [[.load_pending()]] - `references` [EXTRACTED]
+- [[.save()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

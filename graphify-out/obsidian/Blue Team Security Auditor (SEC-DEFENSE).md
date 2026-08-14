@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: ".github/PULL_REQUEST_TEMPLATE.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/github/PULL_REQUEST_TEMPLATEmd
 ---
 
 # Blue Team Security Auditor (SEC-DEFENSE)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_32]] - `contains` [EXTRACTED]
 - [[Usage_33]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/github/PULL_REQUEST_TEMPLATEmd
