@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "Gateway Test Suite"
 location: "L1141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Gateway_Test_Suite
 ---
 
 # submit_competitive_intel()
@@ -20,4 +20,4 @@ tags:
 - [[_intel_verifier()]] - `calls` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

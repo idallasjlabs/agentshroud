@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/switch_model.sh"
 type: "code"
-community: "scripts/switch_model.sh"
+community: "AGENTS.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/switch_modelsh
+  - community/AGENTSmd
 ---
 
 # switch_model.sh script
@@ -19,4 +19,4 @@ tags:
 - [[usage()_4]] - `calls` [EXTRACTED]
 - [[verify_both_bots_healthy()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/switch_modelsh
+#graphify/code #graphify/EXTRACTED #community/AGENTSmd

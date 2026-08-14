@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_Skill_Config
 ---
 
 # test_data_exfil_volume_guard.py
 
 ## Connections
 - [[DataExfilVolumeConfig]] - `imports` [EXTRACTED]
-- [[DataExfilVolumeGuard]] - `implements` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `imports` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[_make_pipeline()_1]] - `contains` [EXTRACTED]
 - [[test_accepts_str_and_bytes()]] - `contains` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_single_response_over_cap_blocks()]] - `contains` [EXTRACTED]
 - [[test_under_single_cap_allows()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

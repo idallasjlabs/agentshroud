@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "document"
-community: "docs/ssh-security-review.md"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/ssh-security-reviewmd
+  - community/Bot_Skill_Config
 ---
 
 # ssh-security-review.md
@@ -16,4 +16,4 @@ tags:
 - [[SSH Proxy Module (gatewayssh_proxyproxy.py)]] - `reviews` [EXTRACTED]
 - [[SSH Security Review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/ssh-security-reviewmd
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

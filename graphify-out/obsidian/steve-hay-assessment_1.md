@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/steve-hay-assessment.md"
 type: "document"
-community: "Custom Skills"
+community: "Community 1501"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Community_1501
 ---
 
 # steve-hay-assessment.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[feature-priorities_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Community_1501

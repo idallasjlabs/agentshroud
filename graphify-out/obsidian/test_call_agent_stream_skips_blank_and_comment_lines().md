@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L1122"
+community: "voice_gateway/server.py"
+location: "L1127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/voice_gateway/serverpy
 ---
 
 # test_call_agent_stream_skips_blank_and_comment_lines()
@@ -17,4 +17,4 @@ tags:
 - [[_sse_body()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/voice_gateway/serverpy

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-serve.sh"
 type: "code"
-community: "scripts/tailscale-serve.sh"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/tailscale-servesh
+  - community/Bot_Skill_Config
 ---
 
 # tailscale-serve.sh
@@ -18,4 +18,4 @@ tags:
 - [[cmd_stop()]] - `defines` [EXTRACTED]
 - [[tailscale-serve.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/tailscale-servesh
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

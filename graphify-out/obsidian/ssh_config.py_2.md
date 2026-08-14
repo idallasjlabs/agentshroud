@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "docs/vault"
+community: "Architecture Docs"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Architecture_Docs
 ---
 
 # ssh_config.py
@@ -24,4 +24,4 @@ tags:
 - [[SSHHostConfig Fields]] - `contains` [EXTRACTED]
 - [[ssh_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

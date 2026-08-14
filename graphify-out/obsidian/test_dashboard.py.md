@@ -19,6 +19,7 @@ tags:
 - [[_load_contributor_logs()]] - `imports` [EXTRACTED]
 - [[_parse_collaborator_log_dirs()]] - `imports` [EXTRACTED]
 - [[client()_4]] - `contains` [EXTRACTED]
+- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[sync_client()]] - `contains` [EXTRACTED]
 - [[test_build_activity_entries_from_contributor_logs()]] - `contains` [EXTRACTED]

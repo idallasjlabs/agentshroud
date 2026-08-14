@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Test Suite"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Gateway_Test_Suite
 ---
 
 # str
 
 ## Connections
+- [[A2AMethod]] - `inherits` [EXTRACTED]
+- [[A2APolicyAction]] - `inherits` [EXTRACTED]
 - [[Action_1]] - `inherits` [EXTRACTED]
 - [[AlarmStatus]] - `inherits` [EXTRACTED]
 - [[AlertLevel]] - `inherits` [EXTRACTED]
@@ -54,4 +56,4 @@ tags:
 - [[VulnClass]] - `inherits` [EXTRACTED]
 - [[WSEventType]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

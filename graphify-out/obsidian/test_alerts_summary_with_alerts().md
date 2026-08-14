@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "Web Control Center"
+community: "docs/vault"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_Control_Center
+  - community/docs/vault
 ---
 
 # test_alerts_summary_with_alerts()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_Control_Center
+#graphify/code #graphify/EXTRACTED #community/docs/vault

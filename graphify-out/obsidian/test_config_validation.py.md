@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Planning Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # test_config_validation.py
 
 ## Connections
 - [[ForwardRequest]] - `imports` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
 - [[TestAllExampleConfigsExist]] - `contains` [EXTRACTED]
 - [[TestConfigValidation]] - `contains` [EXTRACTED]
 - [[TestMinimalConfig]] - `contains` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[_parse_env_file()]] - `contains` [EXTRACTED]
 - [[examples config files (minimalrecommendedparanoid .env + docker-compose)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

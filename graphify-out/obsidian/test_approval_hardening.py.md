@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Kill Switch Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Kill_Switch_Config
 ---
 
 # test_approval_hardening.py
@@ -21,4 +21,4 @@ tags:
 - [[TestDeceptionDetection]] - `contains` [EXTRACTED]
 - [[TestDeniedRequest]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Config

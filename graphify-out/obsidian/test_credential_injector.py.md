@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Docker Deploy Scripts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Docker_Deploy_Scripts
 ---
 
 # test_credential_injector.py
@@ -20,4 +20,4 @@ tags:
 - [[injector()]] - `contains` [EXTRACTED]
 - [[secrets_dir()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "LLM Proxy Resource Guard"
 location: "L1767"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # test_agent_cves_reports_under_review()
@@ -15,4 +15,4 @@ tags:
 - [[SOC agent-cves surfaces auto-registered under_review advisories honestly.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

@@ -15,8 +15,9 @@ tags:
 - [[TestEmailSend]] - `contains` [EXTRACTED]
 - [[TestTelegramWebhook]] - `contains` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[auth_dep()_1]] - `imports` [EXTRACTED]
+- [[auth_dep()_3]] - `imports` [EXTRACTED]
 - [[bypass_auth()]] - `contains` [EXTRACTED]
 - [[client()_2]] - `contains` [EXTRACTED]
+- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

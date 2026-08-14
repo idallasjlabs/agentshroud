@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/test-system.sh"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Community 1493"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Community_1493
 ---
 
 # test-system.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test-system.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1493

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/telegram.sh"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Community 1492"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Community_1492
 ---
 
 # telegram.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[telegram.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1492

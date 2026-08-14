@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Web Control Center"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Web_Control_Center
 ---
 
 # switch_model.sh local qwen3:14b --verify exits 0.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_verify_flag_with_model_ref()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Web_Control_Center

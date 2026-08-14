@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/state.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Slack API Proxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Slack_API_Proxy
 ---
 
 # state.py
@@ -45,9 +45,8 @@ tags:
 - [[proxy.py]] - `imports_from` [EXTRACTED]
 - [[router.py]] - `imports_from` [EXTRACTED]
 - [[sanitizer.py]] - `imports_from` [EXTRACTED]
-- [[test_mcp_result_endpoint.py]] - `references` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports_from` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `imports_from` [EXTRACTED]
 - [[trust_manager.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

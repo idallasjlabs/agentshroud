@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Security_Module
 ---
 
 # test_approval_queue.py
 
 ## Connections
-- [[ApprovalQueue]] - `implements` [EXTRACTED]
+- [[ApprovalQueue]] - `imports` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalRequest]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
 - [[approval_queue()]] - `contains` [EXTRACTED]
 - [[queue_config()]] - `contains` [EXTRACTED]
 - [[test_broadcast_with_failed_client()]] - `contains` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[test_websocket_connect()]] - `contains` [EXTRACTED]
 - [[test_websocket_disconnect()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

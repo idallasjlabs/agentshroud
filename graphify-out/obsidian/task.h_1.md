@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h"
 type: "code"
-community: "ESP32 Firmware"
+community: "docs/ROADMAP-POST-v1.0.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/docs/ROADMAP-POST-v10md
 ---
 
 # task.h
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[vTaskDelay()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/docs/ROADMAP-POST-v10md

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "Collaborator Prompt Classifiers"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # test_approval_stress.py
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalQueueItem]] - `imports` [EXTRACTED]
-- [[ApprovalRequest]] - `imports` [EXTRACTED]
+- [[ApprovalQueueItem_3]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
 - [[ApprovalStore_1]] - `imports` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `contains` [EXTRACTED]
 - [[TestApprovalTimeout]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[queue()]] - `contains` [EXTRACTED]
 - [[store()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

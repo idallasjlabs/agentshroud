@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "CHANGELOG.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/CHANGELOGmd
 ---
 
 # test_agentshroud_manager.py
@@ -30,4 +30,4 @@ tags:
 - [[tmp_db()]] - `contains` [EXTRACTED]
 - [[upgrade()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/CHANGELOGmd

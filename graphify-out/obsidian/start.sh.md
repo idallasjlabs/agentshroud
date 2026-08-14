@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "Bot Container Scripts"
+community: "CONTRIBUTING.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/CONTRIBUTINGmd
 ---
 
 # start.sh
@@ -24,9 +24,8 @@ tags:
 - [[_telegram_get_me_ready()]] - `defines` [EXTRACTED]
 - [[_telegram_send()]] - `defines` [EXTRACTED]
 - [[_telegram_send_photo()]] - `defines` [EXTRACTED]
-- [[hermes service (docker-compose.yml, profiles hermesfull)]] - `references` [EXTRACTED]
 - [[init-config.sh]] - `calls` [EXTRACTED]
 - [[main()_3]] - `calls` [EXTRACTED]
 - [[start.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/CONTRIBUTINGmd

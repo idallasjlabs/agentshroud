@@ -15,7 +15,6 @@ tags:
 - [[Egress filter without _approval_queue attr - bypass proceeds silently.]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
-- [[SimpleNamespace_2]] - `calls` [INFERRED]
 - [[_MockWriter_1]] - `calls` [EXTRACTED]
 - [[_eof_target_connection()]] - `calls` [EXTRACTED]
 - [[_make_stream()_1]] - `calls` [EXTRACTED]

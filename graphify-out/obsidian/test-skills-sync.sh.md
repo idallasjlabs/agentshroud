@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/smoke.d/test-skills-sync.sh"
 type: "code"
-community: "scripts/sync-llm-settings.sh"
+community: "docs/user-guide.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-llm-settingssh
+  - community/docs/user-guidemd
 ---
 
 # test-skills-sync.sh
@@ -20,4 +20,4 @@ tags:
 - [[test-skills-sync.sh script]] - `contains` [EXTRACTED]
 - [[validate-skills-manifest.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-llm-settingssh
+#graphify/code #graphify/EXTRACTED #community/docs/user-guidemd

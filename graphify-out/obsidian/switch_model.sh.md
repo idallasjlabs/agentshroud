@@ -1,17 +1,19 @@
 ---
 source_file: "scripts/switch_model.sh"
 type: "code"
-community: "scripts/switch_model.sh"
+community: "AGENTS.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/switch_modelsh
+  - community/AGENTSmd
 ---
 
 # switch_model.sh
 
 ## Connections
+- [[Gateway Service]] - `references` [EXTRACTED]
+- [[OpenClaw Bot Service]] - `references` [EXTRACTED]
 - [[ensure_local_model_available()]] - `defines` [EXTRACTED]
 - [[normalize_cloud_ref()]] - `defines` [EXTRACTED]
 - [[preflight_local()]] - `defines` [EXTRACTED]
@@ -21,4 +23,4 @@ tags:
 - [[verify_both_bots_healthy()]] - `defines` [EXTRACTED]
 - [[wait_for_local_model()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/switch_modelsh
+#graphify/code #graphify/EXTRACTED #community/AGENTSmd

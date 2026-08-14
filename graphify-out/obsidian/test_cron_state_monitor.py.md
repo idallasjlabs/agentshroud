@@ -12,7 +12,7 @@ tags:
 # test_cron_state_monitor.py
 
 ## Connections
-- [[CronStateMonitor]] - `implements` [EXTRACTED]
+- [[CronStateMonitor]] - `imports` [EXTRACTED]
 - [[TestAdversarial]] - `contains` [EXTRACTED]
 - [[TestParsing]] - `contains` [EXTRACTED]
 - [[TestTransitions]] - `contains` [EXTRACTED]

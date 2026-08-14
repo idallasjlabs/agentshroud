@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/spotify-player/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Community 1505"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Community_1505
 ---
 
 # spogo / spotify_player
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_167]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Community_1505

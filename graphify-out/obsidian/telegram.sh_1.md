@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "browser-extension/package.json"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/browser-extension/packagejson
 ---
 
 # telegram.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/browser-extension/packagejson

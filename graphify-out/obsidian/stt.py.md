@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "voice_gateway/stt.py"
+community: "Security Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_gateway/sttpy
+  - community/Security_Docs
 ---
 
 # stt.py
@@ -22,4 +22,4 @@ tags:
 - [[test_voice_stt_model_ab.py]] - `imports` [EXTRACTED]
 - [[transcribe()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/sttpy
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

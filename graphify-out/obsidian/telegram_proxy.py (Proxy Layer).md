@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
 type: "code"
-community: "docs/vault"
+community: "Planning Docs"
 location: "gateway/proxy/telegram_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Planning_Docs
 ---
 
 # telegram_proxy.py (Proxy Layer)
@@ -15,4 +15,4 @@ tags:
 - [[TelegramAPIProxy_4]] - `contains` [EXTRACTED]
 - [[url_analyzer.py (Proxy Layer)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "scripts/sync-cve-registry.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/scripts/sync-cve-registrypy
 ---
 
 # test_config.py
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[BotConfig]] - `imports` [EXTRACTED]
 - [[GatewayConfig_1]] - `imports` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
 - [[_bot_service_names()]] - `imports` [EXTRACTED]
 - [[_entity_type_mapping()]] - `imports` [EXTRACTED]
 - [[_load_config()]] - `contains` [EXTRACTED]
-- [[load_config()]] - `implements` [EXTRACTED]
+- [[load_config()]] - `imports` [EXTRACTED]
 - [[test_bot_config_base_url()]] - `contains` [EXTRACTED]
 - [[test_bot_config_resolved_container_name_defaults_to_agentshroud_id()]] - `contains` [EXTRACTED]
 - [[test_bot_config_resolved_container_name_uses_explicit_override()]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_router_config_accepts_docker_service_hostname()]] - `contains` [EXTRACTED]
 - [[test_router_config_accepts_hermes_hostname()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
