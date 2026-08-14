@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "File Sandbox"
+community: "URL/Domain Validation Tests"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/URL/Domain_Validation_Tests
 ---
 
 # enforce_config()
@@ -16,4 +16,4 @@ tags:
 - [[FileSandboxConfig]] - `calls` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

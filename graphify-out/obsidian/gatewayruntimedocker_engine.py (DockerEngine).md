@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Bot Skill Config"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_Skill_Config
 ---
 
 # gateway/runtime/docker_engine.py (DockerEngine)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_runtime_engines.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

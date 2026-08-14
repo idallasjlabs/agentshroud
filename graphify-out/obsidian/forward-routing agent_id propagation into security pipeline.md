@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "SOC Dashboard"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/SOC_Dashboard
 ---
 
 # forward-routing agent_id propagation into security pipeline
@@ -14,4 +14,4 @@ tags:
 - [[TrustManager_1]] - `calls` [INFERRED]
 - [[test_forward_routing.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/SOC_Dashboard

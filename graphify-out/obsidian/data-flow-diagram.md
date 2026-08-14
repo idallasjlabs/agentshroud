@@ -1,12 +1,12 @@
 ---
 source_file: "docs/flows/data-flow-diagram.md"
 type: "document"
-community: "docs/flows"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/docs/flows
+  - community/docs/vault
 ---
 
 # data-flow-diagram.md
@@ -18,4 +18,4 @@ tags:
 - [[Entity Relationship Diagram - Database Schema (PNG)]] - `produces_schema_for` [INFERRED]
 - [[Network Topology Diagram (PNG)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/docs/flows
+#graphify/document #graphify/INFERRED #community/docs/vault

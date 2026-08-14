@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "Setup Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Setup_Docs
 ---
 
 # dns_blocklist.py
@@ -16,4 +16,4 @@ tags:
 - [[dns_forwarder.py]] - `imports_from` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/Setup_Docs

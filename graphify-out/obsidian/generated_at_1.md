@@ -12,6 +12,6 @@ tags:
 # generated_at
 
 ## Connections
-- [[manifest.json_1]] - `contains` [EXTRACTED]
+- [[manifest.json_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

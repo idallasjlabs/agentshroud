@@ -1,11 +1,11 @@
 ---
 source_file: "examples/"
 type: "document"
-community: "Gateway Test Suite"
+community: "Planning Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # examples/ config files (minimal/recommended/paranoid .env + docker-compose)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_config_validation.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

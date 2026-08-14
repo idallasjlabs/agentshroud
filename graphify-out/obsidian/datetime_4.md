@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Gateway Security Module"
-location: "L66"
+community: "skills/openclaw"
+location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/skills/openclaw
 ---
 
 # datetime
 
 ## Connections
-- [[read_alerts()_1]] - `references` [EXTRACTED]
-- [[wazuh_client.py]] - `imports_from` [EXTRACTED]
+- [[.register_credential()]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
+- [[KeyRotationConfig_1]] - `uses` [INFERRED]
+- [[key_rotation.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

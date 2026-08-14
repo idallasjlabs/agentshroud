@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_Skill_Config
 ---
 
 # data_exfil_volume_guard.py
@@ -18,4 +18,4 @@ tags:
 - [[_SessionState]] - `contains` [EXTRACTED]
 - [[egress_filter.py]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

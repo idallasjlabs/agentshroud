@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gateway Ingest API"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Ingest_API
 ---
 
 # detect_runtime()
@@ -27,4 +27,4 @@ tags:
 - [[installer.py]] - `imports` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Ingest_API

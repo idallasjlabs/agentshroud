@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # egress_monitor.py
@@ -28,4 +28,4 @@ tags:
 - [[key_vault.py_2]] - `references` [EXTRACTED]
 - [[resource_guard.py_2]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

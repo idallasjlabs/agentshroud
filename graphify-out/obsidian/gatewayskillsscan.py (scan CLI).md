@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "scripts/sync-llm-settings.sh"
+community: "docs/user-guide.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-llm-settingssh
+  - community/docs/user-guidemd
 ---
 
 # gateway/skills/scan.py (scan CLI)
@@ -14,4 +14,4 @@ tags:
 - [[sync-llm-settings.sh]] - `calls` [EXTRACTED]
 - [[test_skill_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-llm-settingssh
+#graphify/code #graphify/EXTRACTED #community/docs/user-guidemd

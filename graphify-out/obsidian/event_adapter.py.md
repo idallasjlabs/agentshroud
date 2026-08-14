@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Voice Gateway Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Voice_Gateway_Tests
 ---
 
 # event_adapter.py
@@ -24,4 +24,4 @@ tags:
 - [[models.py_1]] - `imports_from` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Tests

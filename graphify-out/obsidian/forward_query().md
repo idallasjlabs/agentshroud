@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "chatbot/test_main.py"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/chatbot/test_mainpy
 ---
 
 # forward_query()
@@ -20,4 +20,4 @@ tags:
 - [[dns_forwarder.py]] - `contains` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/chatbot/test_mainpy

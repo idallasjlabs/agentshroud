@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "ESP32 Firmware"
+community: "Gateway Test Suite"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Gateway_Test_Suite
 ---
 
 # do_tap()
@@ -21,4 +21,4 @@ tags:
 - [[wakeword_ptt_press()]] - `calls` [INFERRED]
 - [[wakeword_ptt_release()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

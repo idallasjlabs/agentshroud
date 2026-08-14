@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Voice Gateway Tests"
 location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Voice_Gateway_Tests
 ---
 
 # from_anomaly_alert()
 
 ## Connections
-- [[Any_63]] - `references` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[Convert an AnomalyAlert (from EgressMonitorSOCCorrelation) to SecurityEvent.]] - `rationale_for` [EXTRACTED]
 - [[SecurityEvent]] - `references` [EXTRACTED]
 - [[SecurityEvent_1]] - `calls` [EXTRACTED]
 - [[_map_severity()]] - `calls` [EXTRACTED]
 - [[event_adapter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Tests

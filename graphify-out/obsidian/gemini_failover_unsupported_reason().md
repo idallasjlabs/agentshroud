@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[._failover_request()]] - `calls` [EXTRACTED]
 - [[.proxy_messages()]] - `calls` [EXTRACTED]
-- [[LLMProxy._failover_request()]] - `calls` [EXTRACTED]
 - [[Return a reason string if this Gemini request cannot be failed over.      Return]] - `rationale_for` [EXTRACTED]
 - [[gemini_openai_translator.py]] - `contains` [EXTRACTED]
 - [[llm_proxy.py]] - `imports` [EXTRACTED]

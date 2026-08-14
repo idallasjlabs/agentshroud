@@ -29,7 +29,7 @@ tags:
 - [[.test_returns_all_drifted_items()]] - `calls` [EXTRACTED]
 - [[.to_json()]] - `calls` [EXTRACTED]
 - [[Copy all files in manifest from source to each per-bot destination.      Beh]] - `rationale_for` [EXTRACTED]
-- [[Path_20]] - `references` [EXTRACTED]
+- [[Path_21]] - `references` [EXTRACTED]
 - [[PlannedAction]] - `references` [EXTRACTED]
 - [[SkillsManifest]] - `references` [EXTRACTED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]

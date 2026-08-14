@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "code"
-community: "Architecture Docs"
+community: "docs/vault"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/docs/vault
 ---
 
 # gateway/soc/router.py (SOC Shared Command Layer)
@@ -14,4 +14,4 @@ tags:
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `implements` [EXTRACTED]
 - [[SOC Dashboard]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/docs/vault

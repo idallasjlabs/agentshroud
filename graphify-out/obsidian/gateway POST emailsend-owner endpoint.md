@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api"
 type: "concept"
-community: "docker/docker-compose.yml"
+community: "CONTRIBUTING.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docker/docker-composeyml
+  - community/CONTRIBUTINGmd
 ---
 
 # gateway POST /email/send-owner endpoint
@@ -13,6 +13,5 @@ tags:
 ## Connections
 - [[_email_owner()]] - `calls` [EXTRACTED]
 - [[email_helper.sh]] - `calls` [EXTRACTED]
-- [[voice-gateway service (ESP32-S3-BOX-3 STTTTS bridge)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/docker/docker-composeyml
+#graphify/concept #graphify/EXTRACTED #community/CONTRIBUTINGmd

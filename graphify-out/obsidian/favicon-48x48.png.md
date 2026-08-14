@@ -1,11 +1,11 @@
 ---
 source_file: "branding/favicons/favicon-48x48.png"
 type: "image"
-community: "branding/favicons"
+community: "docs/reviews"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/branding/favicons
+  - community/docs/reviews
 ---
 
 # favicon-48x48.png
@@ -14,4 +14,4 @@ tags:
 - [[icon-16x16.png]] - `semantically_similar_to` [INFERRED]
 - [[icon-512x512.png]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/branding/favicons
+#graphify/image #graphify/INFERRED #community/docs/reviews

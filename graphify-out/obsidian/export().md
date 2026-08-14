@@ -1,21 +1,22 @@
 ---
 source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "scripts/export-telegram-history.py"
-location: "L81"
+community: "Bot Skill Config"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/export-telegram-historypy
+  - community/Bot_Skill_Config
 ---
 
 # export()
 
 ## Connections
-- [[Path_41]] - `references` [EXTRACTED]
+- [[Path_44]] - `references` [EXTRACTED]
 - [[_require_env()]] - `calls` [EXTRACTED]
 - [[_serialize()]] - `calls` [EXTRACTED]
+- [[datetime_8]] - `references` [EXTRACTED]
 - [[export-telegram-history.py]] - `contains` [EXTRACTED]
-- [[main()_13]] - `calls` [EXTRACTED]
+- [[main()_15]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/export-telegram-historypy
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

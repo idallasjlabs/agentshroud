@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/scripts/find-sessions.sh"
 type: "code"
-community: "skills/openclaw"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Bot_Skill_Config
 ---
 
 # find-sessions.sh
@@ -16,4 +16,4 @@ tags:
 - [[list_sessions()]] - `defines` [EXTRACTED]
 - [[usage()_6]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skills/openclaw
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

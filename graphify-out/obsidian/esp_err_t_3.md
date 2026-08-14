@@ -1,18 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/ota.c"
+source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "ESP32 Firmware"
-location: "L14"
+community: "Gateway Test Suite"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Gateway_Test_Suite
 ---
 
 # esp_err_t
 
 ## Connections
-- [[_http_event_handler()]] - `references` [EXTRACTED]
-- [[ota_check()]] - `references` [EXTRACTED]
+- [[wakeword_init()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Gateway_Test_Suite
 ---
 
 # drift_detector.py
@@ -16,4 +16,4 @@ tags:
 - [[DriftAlert]] - `contains` [EXTRACTED]
 - [[DriftDetector]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

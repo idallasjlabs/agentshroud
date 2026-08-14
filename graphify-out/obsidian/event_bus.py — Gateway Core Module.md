@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "docs/vault"
+community: "Security Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Docs
 ---
 
 # event_bus.py — Gateway Core Module
@@ -15,4 +15,4 @@ tags:
 - [[EventBus (in-process pubsub, 200-event rolling buffer, auth failure escalation)]] - `documents` [EXTRACTED]
 - [[main.py — Gateway Core Module]] - `used_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

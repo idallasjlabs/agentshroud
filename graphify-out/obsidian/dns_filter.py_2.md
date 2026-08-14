@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # dns_filter.py
@@ -25,4 +25,4 @@ tags:
 - [[Threat Model_8]] - `contains` [EXTRACTED]
 - [[dns_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

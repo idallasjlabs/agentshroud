@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "concept"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "docker/docker-compose.yml"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # gateway service (docker-compose: port 8080, read-only rootfs, 1280MB memory)
@@ -18,4 +18,4 @@ tags:
 - [[docker-compose.yml (primary Docker Compose — services, networks, volumes, secrets)]] - `defines` [EXTRACTED]
 - [[gateway-seccomp.json (deny-by-default syscall allowlist for gateway container)]] - `applied_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

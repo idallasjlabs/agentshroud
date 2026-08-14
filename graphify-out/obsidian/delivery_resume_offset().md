@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/playback_logic.h"
 type: "code"
-community: "ESP32 Firmware"
+community: "Gateway Test Suite"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Gateway_Test_Suite
 ---
 
 # delivery_resume_offset()
@@ -18,4 +18,4 @@ tags:
 - [[test_resume_offset_first_attempt_is_zero()]] - `calls` [INFERRED]
 - [[test_resume_offset_rewinds_8kb()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

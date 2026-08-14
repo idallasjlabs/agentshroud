@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[._failover_request()]] - `calls` [EXTRACTED]
-- [[LLMProxy._failover_request()]] - `calls` [EXTRACTED]
 - [[Translate a Gemini generateContent request body to OpenAI chat format.      Retu]] - `rationale_for` [EXTRACTED]
 - [[_parts_to_text()]] - `calls` [EXTRACTED]
 - [[_system_instruction_text()]] - `calls` [EXTRACTED]

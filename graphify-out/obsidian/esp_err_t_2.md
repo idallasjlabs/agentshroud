@@ -1,20 +1,18 @@
 ---
-source_file: "firmware/voice-terminal/main/audio.c"
+source_file: "firmware/voice-terminal/main/ota.c"
 type: "code"
-community: "ESP32 Firmware"
-location: "L41"
+community: "docs/vault"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/docs/vault
 ---
 
 # esp_err_t
 
 ## Connections
-- [[audio_init()]] - `references` [EXTRACTED]
-- [[audio_play()]] - `references` [EXTRACTED]
-- [[audio_preinit()]] - `references` [EXTRACTED]
-- [[audio_set_volume()]] - `references` [EXTRACTED]
+- [[_http_event_handler()]] - `references` [EXTRACTED]
+- [[ota_check()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/docs/vault

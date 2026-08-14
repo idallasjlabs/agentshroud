@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/feature-priorities.md"
 type: "document"
-community: "docs/redteam"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/redteam
+  - community/Bot_Skill_Config
 ---
 
 # feature-priorities
@@ -21,4 +21,4 @@ tags:
 - [[Unsafe Control Actions UCA-1 through UCA-17]] - `enumerates` [EXTRACTED]
 - [[feature-priorities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/redteam
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

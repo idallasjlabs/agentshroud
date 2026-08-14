@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # falco_monitor.py
@@ -27,4 +27,4 @@ tags:
 - [[subagent_monitor.py_2]] - `references` [EXTRACTED]
 - [[wazuh_client.py_2]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

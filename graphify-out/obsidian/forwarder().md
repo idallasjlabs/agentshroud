@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "HTTP Forwarder"
-location: "L103"
+community: "Planning Docs"
+location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/Planning_Docs
 ---
 
 # forwarder()
 
 ## Connections
-- [[ForwarderConfig]] - `calls` [EXTRACTED]
-- [[HTTPForwarder]] - `calls` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[_StubForwarder]] - `references` [EXTRACTED]
+- [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

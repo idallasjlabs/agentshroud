@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "Bot Container Scripts"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Gateway_Test_Suite
 ---
 
 # dashboard_bridge.py
@@ -15,8 +15,7 @@ tags:
 - [[_handle()]] - `contains` [EXTRACTED]
 - [[_pipe()]] - `contains` [EXTRACTED]
 - [[_read_request_headers()]] - `contains` [EXTRACTED]
-- [[hermes service (docker-compose.yml, profiles hermesfull)]] - `references` [EXTRACTED]
 - [[main()_1]] - `contains` [EXTRACTED]
 - [[rewrite_request_headers()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

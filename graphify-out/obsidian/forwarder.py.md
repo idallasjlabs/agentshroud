@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "HTTP Forwarder"
+community: "SOC Collaborator Lifecycle"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # forwarder.py
@@ -16,4 +16,4 @@ tags:
 - [[ForwarderConfig]] - `contains` [EXTRACTED]
 - [[HTTPForwarder]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

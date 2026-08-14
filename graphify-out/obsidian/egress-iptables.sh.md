@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/egress-iptables.sh"
 type: "code"
-community: "scripts/egress-iptables.sh"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/egress-iptablessh
+  - community/Gateway_Test_Suite
 ---
 
 # egress-iptables.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[egress-iptables.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/egress-iptablessh
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/bsp/esp-bsp.h"
 type: "code"
-community: "ESP32 Firmware"
+community: "Planning Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Planning_Docs
 ---
 
 # esp-bsp.h
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[bsp_iot_button_create()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

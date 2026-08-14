@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Security Module Middleware"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Security_Module_Middleware
 ---
 
 # egress_monitor.py
@@ -22,4 +22,4 @@ tags:
 - [[Enum]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/Security_Module_Middleware

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/mcp-proxy-wrapper.js"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Custom Skills"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Custom_Skills
 ---
 
 # gatewayPost()
@@ -16,4 +16,4 @@ tags:
 - [[inspectCall()]] - `calls` [EXTRACTED]
 - [[mcp-proxy-wrapper.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Custom_Skills

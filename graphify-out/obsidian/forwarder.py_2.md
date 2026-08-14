@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # forwarder.py
@@ -20,4 +20,4 @@ tags:
 - [[Responsibilities_11]] - `contains` [EXTRACTED]
 - [[forwarder.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

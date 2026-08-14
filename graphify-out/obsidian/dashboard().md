@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "web/management-dashboard.html"
+community: "skills/openclaw"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/web/management-dashboardhtml
+  - community/skills/openclaw
 ---
 
 # dashboard()
@@ -20,9 +20,8 @@ tags:
 - [[Dashboard Live Events Panel (WebSocket)]] - `contains` [EXTRACTED]
 - [[Dashboard Security Modules Panel]] - `contains` [EXTRACTED]
 - [[Dashboard WebSocket Connection]] - `uses` [EXTRACTED]
-- [[Path_40]] - `calls` [EXTRACTED]
+- [[Path_41]] - `calls` [EXTRACTED]
 - [[Serve the main management dashboard.]] - `rationale_for` [EXTRACTED]
-- [[dashboard.html (Control Center Template)]] - `references` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/web/management-dashboardhtml
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "Web Control Center"
+community: "Community 1776"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_Control_Center
+  - community/Community_1776
 ---
 
 # egress_config.py (get/set_egress_config)
 
-## Connections
-- [[get_egress_allowlist()]] - `calls` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Web_Control_Center
+#graphify/code #graphify/EXTRACTED #community/Community_1776

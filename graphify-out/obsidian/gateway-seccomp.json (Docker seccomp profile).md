@@ -1,11 +1,11 @@
 ---
 source_file: "docker/seccomp/gateway-seccomp.json"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Bot Skill Config"
 tags:
   - graphify/code
   - graphify/AMBIGUOUS
-  - community/Docker_Deploy_Scripts
+  - community/Bot_Skill_Config
 ---
 
 # gateway-seccomp.json (Docker seccomp profile)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[security-scheduler.sh]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/code #graphify/AMBIGUOUS #community/Docker_Deploy_Scripts
+#graphify/code #graphify/AMBIGUOUS #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/deploy.sh"
 type: "code"
-community: "scripts/deploy.sh"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/deploysh
+  - community/Bot_Skill_Config
 ---
 
 # deploy.sh
@@ -14,6 +14,5 @@ tags:
 ## Connections
 - [[PATH_2]] - `defines` [EXTRACTED]
 - [[deploy.sh script]] - `contains` [EXTRACTED]
-- [[setup-secrets.sh (Credential Extraction)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/deploysh
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

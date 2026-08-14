@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/gemini-review.py"
 type: "code"
-community: "scripts/gemini-review.py"
+community: "Architecture Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/gemini-reviewpy
+  - community/Architecture_Docs
 ---
 
 # gemini-review.py
 
 ## Connections
 - [[call_gemini()]] - `contains` [EXTRACTED]
-- [[main()_14]] - `contains` [EXTRACTED]
+- [[main()_16]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/gemini-reviewpy
+#graphify/code #graphify/EXTRACTED #community/Architecture_Docs

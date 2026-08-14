@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "gateway/runtime"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/gateway/runtime
 ---
 
 # differential_pii_detector.py
@@ -21,4 +21,4 @@ tags:
 - [[_normalize_adversarial()]] - `contains` [EXTRACTED]
 - [[encoding_detector.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime

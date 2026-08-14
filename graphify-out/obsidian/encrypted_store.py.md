@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Bot_Skill_Config
 ---
 
 # encrypted_store.py
@@ -15,4 +15,4 @@ tags:
 - [[EncryptedStore]] - `contains` [EXTRACTED]
 - [[_secure_zero()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

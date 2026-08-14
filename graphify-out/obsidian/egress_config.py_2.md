@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # egress_config.py
@@ -23,4 +23,4 @@ tags:
 - [[Threat Model_10]] - `contains` [EXTRACTED]
 - [[egress_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

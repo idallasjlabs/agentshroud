@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/esp_err.h"
 type: "code"
-community: "ESP32 Firmware"
+community: "gateway/utils"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/gateway/utils
 ---
 
 # esp_err.h
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/gateway/utils

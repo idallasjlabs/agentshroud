@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "scripts/triage-cve-mitigations.py"
+community: "Gateway Test Suite"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/triage-cve-mitigationspy
+  - community/Gateway_Test_Suite
 ---
 
 # gateway/security/agent_cve_registry.py (known CVE registry, referenced)
@@ -18,4 +18,4 @@ tags:
 - [[test_agent_cve_registry.py]] - `imports_from` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

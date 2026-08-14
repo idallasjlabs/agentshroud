@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/docs/vault
 ---
 
 # dashboard_endpoints.py
@@ -28,4 +28,4 @@ tags:
 - [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[ssh_hosts()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/docs/vault

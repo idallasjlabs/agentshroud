@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "Setup Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Setup_Docs
 ---
 
 # dns_forwarder.py
@@ -23,4 +23,4 @@ tags:
 - [[parse_query()]] - `contains` [EXTRACTED]
 - [[start_dns_forwarder()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/Setup_Docs

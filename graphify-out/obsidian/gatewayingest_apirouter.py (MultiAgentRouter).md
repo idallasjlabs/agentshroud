@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "Telegram Proxy Test Suite"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # gateway/ingest_api/router.py (MultiAgentRouter)
@@ -14,4 +14,4 @@ tags:
 - [[test_router_streaming.py]] - `references` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

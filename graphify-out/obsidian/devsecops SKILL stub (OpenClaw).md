@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-devsecops/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "branding/INDEX.md"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - community/branding/INDEXmd
 ---
 
 # devsecops SKILL stub (OpenClaw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CICD Pipeline Advisor SKILL (OpenClaw)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/document #graphify/INFERRED #community/branding/INDEXmd

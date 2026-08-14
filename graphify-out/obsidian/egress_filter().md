@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Security Docs"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Security_Docs
 ---
 
 # egress_filter()
@@ -17,4 +17,4 @@ tags:
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

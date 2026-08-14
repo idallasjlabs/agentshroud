@@ -1,18 +1,13 @@
 ---
 source_file: "docker/docker-compose.agentshroud-bot.marvin.yml"
 type: "code"
-community: "docker/docker-compose.yml"
+community: "Gateway Security Module"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/docker-composeyml
+  - community/Gateway_Security_Module
 ---
 
 # docker-compose.agentshroud-bot.marvin.yml (dev host override)
 
-## Connections
-- [[agentshroud-isolated network (DMZ tier, internaltrue)]] - `references` [EXTRACTED]
-- [[gateway service (docker-compose.yml)]] - `references` [EXTRACTED]
-- [[hermes service (docker-compose.yml, profiles hermesfull)]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/docker/docker-composeyml
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

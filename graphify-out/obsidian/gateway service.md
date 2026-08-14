@@ -1,17 +1,24 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
-type: "document"
-community: "docs/vault"
-location: "L47"
+source_file: "docker/docker-compose.yml"
+type: "code"
+community: "AGENTS.md"
+location: "lines 19-232"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/AGENTSmd
 ---
 
-# gateway service
+# Gateway Service
 
 ## Connections
-- [[Default Service Configuration]] - `contains` [EXTRACTED]
+- [[DAST Scan (Nuclei) Job]] - `references` [EXTRACTED]
+- [[Hermes Dashboard Bridge Port Wiring (9119-9120)]] - `shares_data_with` [EXTRACTED]
+- [[Hermes Dev Workflow Skill (i-hdev)]] - `references` [EXTRACTED]
+- [[LLMProxy (llm_proxy.py)]] - `shares_data_with` [EXTRACTED]
+- [[OpenClaw Dev Workflow Skill (i-odev)]] - `references` [EXTRACTED]
+- [[Release Workflow_1]] - `references` [INFERRED]
+- [[Three-Tier Network Segmentation (IEC 62443 FR5)]] - `rationale_for` [EXTRACTED]
+- [[switch_model.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/AGENTSmd

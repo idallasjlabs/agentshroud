@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L9265"
+community: "docs/project"
+location: "L9334"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/project
 ---
 
 # full_access bypass applies even when the message has no interrogative marker.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/project

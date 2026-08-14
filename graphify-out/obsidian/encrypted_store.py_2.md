@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "docs/vault"
+community: "Custom Skills"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Custom_Skills
 ---
 
 # encrypted_store.py
@@ -30,4 +30,4 @@ tags:
 - [[encrypted_store.py_1]] - `contains` [EXTRACTED]
 - [[env_guard.py_2]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Custom_Skills

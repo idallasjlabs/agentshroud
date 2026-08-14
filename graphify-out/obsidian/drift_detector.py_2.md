@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # drift_detector.py
@@ -25,4 +25,4 @@ tags:
 - [[Threat Model_9]] - `contains` [EXTRACTED]
 - [[drift_detector.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

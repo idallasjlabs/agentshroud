@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Gateway Ingest API"
+community: "PII Sanitizer Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # dashboard.py
@@ -21,7 +21,7 @@ tags:
 - [[_validate_ws_token()]] - `contains` [EXTRACTED]
 - [[activity_websocket()]] - `contains` [EXTRACTED]
 - [[auth.py]] - `imports_from` [EXTRACTED]
-- [[auth_dep()_3]] - `contains` [EXTRACTED]
+- [[auth_dep()_2]] - `contains` [EXTRACTED]
 - [[build_correlation_summary()]] - `imports` [EXTRACTED]
 - [[create_auth_dependency()]] - `imports` [EXTRACTED]
 - [[dashboard_stats()]] - `contains` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[serve_dashboard()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

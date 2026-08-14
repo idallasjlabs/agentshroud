@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Gateway_Test_Suite
 ---
 
 # egress_approval.py
@@ -23,4 +23,4 @@ tags:
 - [[egress_config.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

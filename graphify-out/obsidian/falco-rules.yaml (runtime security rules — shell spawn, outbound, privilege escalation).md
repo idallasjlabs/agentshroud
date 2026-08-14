@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "docker/falco/rules.yaml"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # falco-rules.yaml (runtime security rules — shell spawn, outbound, privilege escalation)
@@ -19,4 +19,4 @@ tags:
 - [[agentshroud-bot service (docker-compose port 18789, 4GB memory, isolated network)]] - `monitors` [EXTRACTED]
 - [[wazuh-ossec.conf (SIEMHIDS — gateway logs, FIM on agentshroud.yaml and secrets)]] - `complements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

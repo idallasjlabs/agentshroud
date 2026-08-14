@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/entrypoint-agentshroud.sh"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Gateway_Test_Suite
 ---
 
 # entrypoint-agentshroud.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[entrypoint-agentshroud.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
