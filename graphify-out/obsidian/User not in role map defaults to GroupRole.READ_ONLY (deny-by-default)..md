@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Group RBAC Roles"
+community: "docs/vault"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/docs/vault
 ---
 
 # User not in role map defaults to GroupRole.READ_ONLY (deny-by-default).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_non_member_defaults_to_readonly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Docker Deploy Scripts"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Docker_Deploy_Scripts
 ---
 
 # Usage
@@ -21,4 +21,4 @@ tags:
 - [[Move a card to another list]] - `contains` [EXTRACTED]
 - [[Trello Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts

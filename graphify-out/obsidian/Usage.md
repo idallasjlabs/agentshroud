@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "docker/README.md"
+community: "docs/vault"
 location: "L274"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/READMEmd
+  - community/docs/vault
 ---
 
 # Usage
@@ -21,4 +21,4 @@ tags:
 - [[Test Chat]] - `contains` [EXTRACTED]
 - [[View Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/READMEmd
+#graphify/document #graphify/EXTRACTED #community/docs/vault

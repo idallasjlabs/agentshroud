@@ -1,12 +1,12 @@
 ---
 source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "docs/integrations"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/integrations
+  - community/Gateway_Security_Module
 ---
 
 # Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)
@@ -22,4 +22,4 @@ tags:
 - [[Usage_81]] - `contains` [EXTRACTED]
 - [[voice-terminal-esp32-s3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/integrations
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

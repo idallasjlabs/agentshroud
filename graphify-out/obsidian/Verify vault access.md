@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "Setup Docs"
+community: "docs/vault"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/docs/vault
 ---
 
 # Verify vault access:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Testing After Sharing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/vault

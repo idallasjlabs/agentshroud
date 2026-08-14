@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "URL/Domain Validation Tests"
+community: "Approval Queue Tests"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/URL/Domain_Validation_Tests
+  - community/Approval_Queue_Tests
 ---
 
 # UserSessionManager
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
-- [[.__init__()_44]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
+- [[.__init__()_43]] - `calls` [EXTRACTED]
 - [[.__init__()_112]] - `method` [EXTRACTED]
 - [[._load_sessions()]] - `method` [EXTRACTED]
 - [[._save_sessions()]] - `method` [EXTRACTED]
@@ -44,13 +44,12 @@ tags:
 - [[.test_session_persistence()]] - `calls` [EXTRACTED]
 - [[.update_user_trust_level()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
-- [[Any_23]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
+- [[Any_24]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
-- [[FastAPI_2]] - `uses` [INFERRED]
+- [[FastAPI_1]] - `uses` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
-- [[LogRecord_3]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MCPProxyRequest]] - `uses` [INFERRED]
 - [[MCPResultRequest]] - `uses` [INFERRED]
@@ -61,7 +60,7 @@ tags:
 - [[Path_4]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
 - [[TestAccessControl_2]] - `uses` [INFERRED]
 - [[TestAgentRegistryGroupIdentity]] - `uses` [INFERRED]
@@ -166,4 +165,4 @@ tags:
 - [[usm()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/URL/Domain_Validation_Tests
+#graphify/code #graphify/INFERRED #community/Approval_Queue_Tests

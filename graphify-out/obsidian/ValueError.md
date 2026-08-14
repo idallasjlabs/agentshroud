@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "URL/Domain Validation Tests"
+community: "Competitive Intel Store"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/URL/Domain_Validation_Tests
+  - community/Competitive_Intel_Store
 ---
 
 # ValueError
@@ -41,4 +41,4 @@ tags:
 - [[load_config()]] - `calls` [INFERRED]
 - [[test_is_connect_error_classification()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/URL/Domain_Validation_Tests
+#graphify/code #graphify/INFERRED #community/Competitive_Intel_Store

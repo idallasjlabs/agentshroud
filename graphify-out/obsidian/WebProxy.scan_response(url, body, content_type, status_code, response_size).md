@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "docs/vault"
+community: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
 ---
 
 # WebProxy.scan_response(url, body, content_type, status_code, response_size)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_18]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd

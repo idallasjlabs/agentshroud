@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Bot Container Scripts"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Bot_Container_Scripts
 ---
 
 # Verify hash matches SHA-256 of the content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_hash_matches_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Container_Scripts

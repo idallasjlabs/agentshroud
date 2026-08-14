@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/adr"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/adr
 ---
 
 # Vulcan — Subject Matter Auditor
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_79]] - `contains` [EXTRACTED]
 - [[Usage_80]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/adr

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "URL/Domain Validation Tests"
+community: "Competitive Intel Store"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Competitive_Intel_Store
 ---
 
 # Validate that default_url uses http/https and targets an internal Docker host.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.validate_default_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store

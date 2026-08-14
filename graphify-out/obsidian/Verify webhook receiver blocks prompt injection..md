@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "HTTP Forwarder"
+community: "Planning Docs"
 location: "L385"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/Planning_Docs
 ---
 
 # Verify webhook receiver blocks prompt injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_webhook_blocks_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "docs/integrations"
+community: "Gateway Security Module"
 location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/integrations
+  - community/Gateway_Security_Module
 ---
 
 # Usage
@@ -20,4 +20,4 @@ tags:
 - [[Voice volume]] - `contains` [EXTRACTED]
 - [[Wake word]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/integrations
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

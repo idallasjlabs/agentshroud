@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "src/interfaces"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/src/interfaces
 ---
 
 # Usage
@@ -20,4 +20,4 @@ tags:
 - [[Navigate to URL_1]] - `contains` [EXTRACTED]
 - [[Take Screenshot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/src/interfaces

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "rationale"
-community: "Egress & RBAC Security Core"
+community: "docs/testing"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/docs/testing
 ---
 
 # Verify SecurityConfig and SecurityModuleConfig default to enforce.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSecurityConfigDefaults]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/rationale #graphify/EXTRACTED #community/docs/testing

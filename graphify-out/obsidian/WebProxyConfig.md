@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "Egress Domain Allowlist"
+community: "Gateway Test Suite"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Domain_Allowlist
+  - community/Gateway_Test_Suite
 ---
 
 # WebProxyConfig
 
 ## Connections
-- [[.__init__()_24]] - `calls` [EXTRACTED]
+- [[.__init__()_22]] - `calls` [EXTRACTED]
 - [[.allowlist_config()]] - `calls` [EXTRACTED]
 - [[.get_domain_settings()]] - `method` [EXTRACTED]
 - [[.is_domain_allowed()]] - `method` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[.test_wildcard_domain_settings()]] - `calls` [EXTRACTED]
 - [[.test_wildcard_matches_root_domain()]] - `calls` [EXTRACTED]
 - [[.test_wildcard_matches_subdomain()]] - `calls` [EXTRACTED]
-- [[Any_22]] - `uses` [INFERRED]
+- [[Any_23]] - `uses` [INFERRED]
 - [[Configuration for the web traffic proxy.      Default-allow all URLs pass unles]] - `rationale_for` [EXTRACTED]
 - [[EgressFilter]] - `uses` [INFERRED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
@@ -95,4 +95,4 @@ tags:
 - [[web_config.py]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

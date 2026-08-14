@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "PromptGuard Encoding Detection"
+community: "MCP Policy Engine"
 location: "L370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard_Encoding_Detection
+  - community/MCP_Policy_Engine
 ---
 
 # Verify you can't jump from UNTRUSTED to FULL in one step.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_trust_escalation_attack()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine

@@ -1,11 +1,12 @@
 ---
 source_file: "SECURITY.md"
-type: "concept"
-community: "CHANGELOG.md"
+type: "document"
+community: "Gateway Test Suite"
+location: "L52"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Gateway_Test_Suite
 ---
 
 # Upstream Agent CVE Tracking
@@ -15,4 +16,4 @@ tags:
 - [[Daily CVE Sync + Page Update Workflow_1]] - `references` [EXTRACTED]
 - [[v1.3.0 Reliability Release]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

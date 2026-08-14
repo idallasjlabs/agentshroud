@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-data/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "scripts/agentshroud-manage.sh"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/scripts/agentshroud-managesh
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/scripts/agentshroud-managesh

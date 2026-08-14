@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "SOC Dashboard"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/SOC_Dashboard
 ---
 
 # WS-E SCRUM-73/74: a body-supplied user_id must NOT grant owner identity     to t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOwnerSpoofingViaForwardBody]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard

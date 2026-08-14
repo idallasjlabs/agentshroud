@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gateway Security Module"
 location: "L111"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Security_Module
 ---
 
 # WebProxy
 
 ## Connections
-- [[.__init__()_24]] - `references` [EXTRACTED]
+- [[.__init__()_22]] - `references` [EXTRACTED]
 - [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[_allowlist_proxy()]] - `calls` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[test_proxy_created_with_custom_web_proxy()]] - `calls` [INFERRED]
 - [[test_telegram_api_blocked_in_connect_proxy()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Gateway_Security_Module

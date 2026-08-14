@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "CHANGELOG.md"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/CHANGELOGmd
 ---
 
 # Upgrade OpenClaw to a target version.      Requires a prior security review and
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upgrade()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/CHANGELOGmd

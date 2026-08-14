@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Community 1496"
 location: "L571"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Security_Module
+  - community/Community_1496
 ---
 
 # UserSessionManager.reanchor_system_prompt() (C16)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PromptGuard.reanchor_delimiters() (C8)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Security_Module
+#graphify/code #graphify/INFERRED #community/Community_1496
