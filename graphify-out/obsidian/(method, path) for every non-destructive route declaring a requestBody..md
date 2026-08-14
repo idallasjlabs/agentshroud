@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract_fuzz.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "docs/README.md"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/READMEmd
 ---
 
 # (method, path) for every non-destructive route declaring a requestBody.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_fuzzable_endpoints()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/READMEmd
