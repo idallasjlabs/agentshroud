@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Gateway Proxy Layer"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Proxy_Layer
 ---
 
 # Structured verdict returned by :meth:`RateLimitGuard.check`.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RateLimitDecision]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "LLM Proxy Resource Guard"
+community: "Gateway Test Suite"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/Gateway_Test_Suite
 ---
 
 # Stop background monitoring task cleanly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.stop()_11]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "gateway/cli"
+community: "Gateway Test Suite"
 location: "L353"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/cli
+  - community/Gateway_Test_Suite
 ---
 
 # Stream real-time events or logs via WebSocket.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[tail()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/cli
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

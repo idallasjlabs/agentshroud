@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/04-separation-of-privilege.md"
 type: "document"
-community: "Planning Docs"
+community: "docs/project"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/docs/project
 ---
 
 # Step 2: Add AgentShroud paths to File I/O Sandboxing deny list
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remediation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/project

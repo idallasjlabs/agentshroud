@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "Enhanced Approval Queue"
+community: "Collaborator Prompt Classifiers"
 location: "L197"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Store marks expired items on load.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_store_expires_old_items()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

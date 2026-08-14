@@ -2,7 +2,7 @@
 source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
 community: "Bot Skill Config"
-location: "L363"
+location: "L447"
 tags:
   - graphify/document
   - graphify/EXTRACTED

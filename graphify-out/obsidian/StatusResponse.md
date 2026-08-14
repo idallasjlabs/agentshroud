@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "docs/README.md"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/docs/READMEmd
 ---
 
 # StatusResponse
@@ -21,12 +21,12 @@ tags:
 - [[MCPResultRequest]] - `uses` [INFERRED]
 - [[OpProxyRequest]] - `uses` [INFERRED]
 - [[Paginated ledger query results]] - `rationale_for` [EXTRACTED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
 - [[TestEnhancedStatus]] - `uses` [INFERRED]
 - [[health.py]] - `imports` [EXTRACTED]
 - [[health_check_detail()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[models.py]] - `contains` [EXTRACTED]
-- [[test_enhanced_status.py]] - `implements` [EXTRACTED]
+- [[test_enhanced_status.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/docs/READMEmd

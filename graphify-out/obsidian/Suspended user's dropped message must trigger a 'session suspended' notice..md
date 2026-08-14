@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Inbound Tests"
-location: "L8156"
+community: "Group RBAC Roles"
+location: "L8225"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Tests
+  - community/Group_RBAC_Roles
 ---
 
 # Suspended user's dropped message must trigger a 'session suspended' notice.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_suspended_user_receives_drop_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC_Roles

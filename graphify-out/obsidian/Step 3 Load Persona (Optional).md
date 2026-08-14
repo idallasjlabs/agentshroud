@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Setup Docs"
+community: "Gateway Test Suite"
 location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Step 3: Load Persona (Optional)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Initial Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

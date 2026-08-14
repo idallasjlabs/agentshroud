@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "scripts/triage-cve-mitigations.py"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/scripts/triage-cve-mitigationspy
 ---
 
 # Stop periodic updates.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.stop()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/scripts/triage-cve-mitigationspy

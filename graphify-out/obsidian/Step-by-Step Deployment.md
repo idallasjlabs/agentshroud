@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "docs/operations"
+community: "examples/docker-commands.md"
 location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/examples/docker-commandsmd
 ---
 
 # Step-by-Step Deployment
@@ -24,4 +24,4 @@ tags:
 - [[Step 8 Service Startup]] - `contains` [EXTRACTED]
 - [[Step 9 Health Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/examples/docker-commandsmd

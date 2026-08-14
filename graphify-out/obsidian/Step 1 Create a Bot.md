@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-telegram.md"
 type: "document"
-community: "docs/setup-slack.md"
+community: "Security Docs"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/setup-slackmd
+  - community/Security_Docs
 ---
 
 # Step 1: Create a Bot
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/setup-slackmd
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

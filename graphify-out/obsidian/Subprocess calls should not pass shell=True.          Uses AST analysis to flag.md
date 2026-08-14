@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
+community: "Security Module Middleware"
 location: "L657"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Security_Module_Middleware
 ---
 
 # Subprocess calls should not pass shell=True.          Uses AST analysis to flag
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_no_shell_true_in_subprocess()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware

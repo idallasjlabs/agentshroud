@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/transcribe.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Custom Skills"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Custom_Skills
 ---
 
 # Step 2.5 - Transcribe video / audio files (only if video files detected)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference transcribe video and audio_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Custom_Skills

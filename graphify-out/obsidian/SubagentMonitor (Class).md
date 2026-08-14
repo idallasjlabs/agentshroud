@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "code"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "gateway/security/subagent_monitor.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # SubagentMonitor (Class)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

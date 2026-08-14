@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "browser-extension/README.md"
+community: "Bot Skill Config"
 location: "L276"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-extension/READMEmd
+  - community/Bot_Skill_Config
 ---
 
 # Step 3: Update agentshroud.yaml
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Implementation Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-extension/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

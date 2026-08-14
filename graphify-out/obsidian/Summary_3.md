@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "docs/compliance"
+community: "Gateway Test Suite"
 location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/compliance
+  - community/Gateway_Test_Suite
 ---
 
 # Summary
@@ -15,4 +15,4 @@ tags:
 - [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
 - [[Key Components Referenced (v1.0.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/compliance
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

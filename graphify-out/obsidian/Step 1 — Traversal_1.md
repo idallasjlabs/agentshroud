@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/query.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # Step 1 — Traversal
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference query, path, explain_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/vault

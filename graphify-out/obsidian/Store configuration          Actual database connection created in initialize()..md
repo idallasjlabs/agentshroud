@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Bot Skill Config"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Bot_Skill_Config
 ---
 
 # Store configuration          Actual database connection created in initialize().
 
 ## Connections
-- [[.__init__()_17]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_12]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

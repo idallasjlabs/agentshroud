@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
-location: "L4092"
+community: "Bot Skill Config"
+location: "L4110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Bot_Skill_Config
 ---
 
 # Suppress repeated startup/shutdown system notices in short windows.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._suppress_duplicate_system_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
