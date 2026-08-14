@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Docs"
 location: "L458"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Docs
 ---
 
 # _run_scan_cli()
@@ -17,7 +17,7 @@ tags:
 - [[.test_cli_fails_closed_on_unreadable_file()]] - `calls` [EXTRACTED]
 - [[.test_cli_missing_source_nonzero()]] - `calls` [EXTRACTED]
 - [[CompletedProcess_3]] - `references` [EXTRACTED]
-- [[Path_37]] - `references` [EXTRACTED]
+- [[Path_38]] - `references` [EXTRACTED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

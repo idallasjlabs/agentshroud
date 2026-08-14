@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "concept"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "agentshroud.yaml"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # agentshroud.yaml (master config)
@@ -16,4 +16,4 @@ tags:
 - [[MCP Proxy Errors_2]] - `references` [EXTRACTED]
 - [[agentshroud-gateway Container]] - `configured_by` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

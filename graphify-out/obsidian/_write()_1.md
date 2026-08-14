@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "MCP Policy Engine"
+community: "Egress Domain Allowlist"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Egress_Domain_Allowlist
 ---
 
 # _write()
@@ -19,7 +19,7 @@ tags:
 - [[.test_explicit_policy_section_is_not_overridden()]] - `calls` [EXTRACTED]
 - [[.test_missing_section_yields_deny_by_default_policy()]] - `calls` [EXTRACTED]
 - [[.test_no_mcp_section_still_deny_by_default()]] - `calls` [EXTRACTED]
-- [[Path_31]] - `references` [EXTRACTED]
+- [[Path_32]] - `references` [EXTRACTED]
 - [[test_mcp_policy_default_failclosed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist

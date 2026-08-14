@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L534"
+community: "Planning Docs"
+location: "L538"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # _openai_resp()
@@ -18,4 +18,4 @@ tags:
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 - [[test_ws_full_utterance_state_sequence()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

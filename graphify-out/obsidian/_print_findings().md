@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Gateway Skills System"
+community: "gateway/runtime"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Skills_System
+  - community/gateway/runtime
 ---
 
 # _print_findings()
@@ -16,4 +16,4 @@ tags:
 - [[main()_10]] - `calls` [EXTRACTED]
 - [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Skills_System
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime

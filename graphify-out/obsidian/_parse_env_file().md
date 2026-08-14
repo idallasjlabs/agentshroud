@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Planning Docs"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # _parse_env_file()
@@ -16,7 +16,7 @@ tags:
 - [[.config()_1]] - `calls` [EXTRACTED]
 - [[.config()_3]] - `calls` [EXTRACTED]
 - [[Parse a .env file into a dict (ignoring comments and blanks).]] - `rationale_for` [EXTRACTED]
-- [[Path_25]] - `references` [EXTRACTED]
+- [[Path_26]] - `references` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

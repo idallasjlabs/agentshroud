@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Security Module Middleware"
+community: "Approval Queue Tests"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Module_Middleware
+  - community/Approval_Queue_Tests
 ---
 
 # _req()
@@ -57,4 +57,4 @@ tags:
 - [[test_api_alerts_endpoint_emits_bus_event()]] - `calls` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Module_Middleware
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

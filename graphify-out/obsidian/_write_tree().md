@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Docs"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Docs
 ---
 
 # _write_tree()
@@ -25,7 +25,7 @@ tags:
 - [[.test_sync_aborts_on_dangerous_tree()]] - `calls` [EXTRACTED]
 - [[.test_sync_allows_clean_tree()]] - `calls` [EXTRACTED]
 - [[.test_sync_dry_run_does_not_write_but_still_scans()]] - `calls` [EXTRACTED]
-- [[Path_37]] - `references` [EXTRACTED]
+- [[Path_38]] - `references` [EXTRACTED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_streaming.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "Slack API Proxy"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Slack_API_Proxy
 ---
 
 # _sse_lines()
@@ -15,4 +15,4 @@ tags:
 - [[test_router_streaming.py]] - `contains` [EXTRACTED]
 - [[test_stream_yields_content_deltas_in_order()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

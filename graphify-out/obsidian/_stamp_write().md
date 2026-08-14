@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-scheduler.sh"
 type: "code"
-community: "Docker Deploy Scripts"
-location: "L30"
+community: "Bot Skill Config"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Bot_Skill_Config
 ---
 
 # _stamp_write()
@@ -15,4 +15,4 @@ tags:
 - [[security-scheduler.sh]] - `defines` [EXTRACTED]
 - [[security-scheduler.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

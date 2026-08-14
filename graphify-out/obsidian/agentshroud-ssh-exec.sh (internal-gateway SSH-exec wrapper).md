@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/agentshroud-ssh-exec.sh"
 type: "code"
-community: "Gateway Test Suite"
+community: "ESP32 Firmware"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/ESP32_Firmware
 ---
 
 # agentshroud-ssh-exec.sh (internal-gateway SSH-exec wrapper)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_bots_ssh_exec_wrapper.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware

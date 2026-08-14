@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "ESP32 Firmware"
+community: "Gateway Test Suite"
 location: "L392"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Gateway_Test_Suite
 ---
 
 # _on_vg_state()
@@ -19,7 +19,6 @@ tags:
 - [[wakeword_tts_playing()]] - `calls` [INFERRED]
 - [[wakeword_tts_stop_requested()]] - `calls` [INFERRED]
 - [[ws_client_create() — registers callbacks + starts client]] - `calls` [EXTRACTED]
-- [[ws_vg_state_t_2]] - `references` [EXTRACTED]
 - [[ws_vg_state_t]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

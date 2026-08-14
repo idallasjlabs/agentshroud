@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/patch_telegram_do_request.py"
 type: "code"
-community: "Bot Container Scripts"
-location: "L72"
+community: "Bot Skill Config"
+location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Bot_Skill_Config
 ---
 
 # _wrapped()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[patch_telegram_do_request.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

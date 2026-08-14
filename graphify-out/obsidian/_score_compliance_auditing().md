@@ -16,7 +16,7 @@ tags:
 - [[.test_defined_when_oscap_binary_present()]] - `calls` [EXTRACTED]
 - [[.test_managed_when_has_failures()]] - `calls` [EXTRACTED]
 - [[.test_zero_when_not_run()]] - `calls` [EXTRACTED]
-- [[Any_55]] - `references` [EXTRACTED]
+- [[Any_57]] - `references` [EXTRACTED]
 - [[Score domain 10 Compliance Auditing (0-5).      0=not run, 2=has failures, 3=ze]] - `rationale_for` [EXTRACTED]
 - [[_is_fresh()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/agentshroud-knowledge.md"
 type: "document"
-community: "docs/agentshroud-knowledge.md"
+community: "gateway/tools"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/agentshroud-knowledgemd
+  - community/gateway/tools
 ---
 
 # agentshroud-knowledge.md
@@ -22,4 +22,4 @@ tags:
 - [[SOC Command Center Five Pillars Security Ops, Platform Ops, Contributor Mgmt, Observability, Multi-Interface Control]] - `describes` [EXTRACTED]
 - [[Target Agents OpenClaw, PicoClaw, NanoClaw, NanoBot, memU, CrocBot]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/agentshroud-knowledgemd
+#graphify/document #graphify/EXTRACTED #community/gateway/tools

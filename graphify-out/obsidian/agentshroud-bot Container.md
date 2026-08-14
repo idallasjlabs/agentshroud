@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # agentshroud-bot Container
@@ -21,4 +21,4 @@ tags:
 - [[agentshroud-ssh volume (SSH keypair)]] - `mounts` [EXTRACTED]
 - [[agentshroud-workspace volume (agent files)]] - `mounts` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

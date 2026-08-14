@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-agentshroud.sh"
 type: "code"
-community: "scripts/restore-backup.sh"
+community: "Bot Skill Config"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/restore-backupsh
+  - community/Bot_Skill_Config
 ---
 
 # _rollback()
@@ -15,4 +15,4 @@ tags:
 - [[update-agentshroud.sh]] - `defines` [EXTRACTED]
 - [[update-agentshroud.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/restore-backupsh
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

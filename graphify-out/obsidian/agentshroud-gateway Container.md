@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # agentshroud-gateway Container
@@ -23,4 +23,4 @@ tags:
 - [[agentshroud.yaml (master config)]] - `configured_by` [EXTRACTED]
 - [[gateway-data volume (SQLite ledger)]] - `mounts` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

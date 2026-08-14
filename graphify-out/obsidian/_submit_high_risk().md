@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ApprovalQueue_1]] - `references` [EXTRACTED]
-- [[ApprovalRequest]] - `calls` [EXTRACTED]
+- [[ApprovalRequest_3]] - `calls` [EXTRACTED]
 - [[test_decide_mfa_disabled_approves_without_code()]] - `calls` [EXTRACTED]
 - [[test_decide_mfa_enabled_invalid_code_denied()]] - `calls` [EXTRACTED]
 - [[test_decide_mfa_enabled_missing_code_denied()]] - `calls` [EXTRACTED]

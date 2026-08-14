@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "gateway/requirements.txt"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # aiosqlite (≥0.20.0 — async SQLite driver for audit ledger and approval queue store)
@@ -16,4 +16,4 @@ tags:
 - [[Docker volumes (gateway-data, agentshroud-config, agentshroud-workspace, agentshroud-ssh)]] - `persists_to` [EXTRACTED]
 - [[aiosqlite WAL mode (Write-Ahead Logging for crash-safe ledger)]] - `uses` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

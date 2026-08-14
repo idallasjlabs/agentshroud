@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "browser-extension/README.md"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/browser-extension/READMEmd
 ---
 
 # _parse_cron_names_from_sh()
@@ -19,4 +19,4 @@ tags:
 - [[test_jira_weekly_review_job_present()]] - `calls` [EXTRACTED]
 - [[test_stability_report_job_present()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/browser-extension/READMEmd

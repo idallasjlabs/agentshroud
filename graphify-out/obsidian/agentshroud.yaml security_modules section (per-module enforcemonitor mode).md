@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "concept"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "agentshroud.yaml"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # agentshroud.yaml security_modules section (per-module enforce/monitor mode)
@@ -15,4 +15,4 @@ tags:
 - [[AGENTSHROUD_MODE (env var — enforcemonitor global security module override)]] - `overrides` [EXTRACTED]
 - [[agentshroud.yaml (master gateway configuration file)]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

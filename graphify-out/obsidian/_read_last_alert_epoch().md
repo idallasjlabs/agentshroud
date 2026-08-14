@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/crashwatch.sh"
 type: "code"
-community: "Bot Container Scripts"
+community: "browser-extension/README.md"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/browser-extension/READMEmd
 ---
 
 # _read_last_alert_epoch()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[crashwatch.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/browser-extension/READMEmd

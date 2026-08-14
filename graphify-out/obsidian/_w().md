@@ -82,7 +82,7 @@ tags:
 - [[.test_valid()]] - `calls` [EXTRACTED]
 - [[.test_wazuh_agent_absent()]] - `calls` [EXTRACTED]
 - [[.test_wazuh_agent_detected()]] - `calls` [EXTRACTED]
-- [[Path_36]] - `references` [EXTRACTED]
+- [[Path_37]] - `references` [EXTRACTED]
 - [[Write a file under the sandbox root, creating parents.]] - `rationale_for` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "concept"
-community: "docs/vault"
+community: "Security Docs"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Docs
 ---
 
 # agentshroud-bot Container (Node.js 22 OpenClaw, port 18789, 4 GB, isolated network)
@@ -20,4 +20,4 @@ tags:
 - [[Two-Stage Startup (gateway healthy before bot starts — depends_on service_healthy)]] - `sequences` [EXTRACTED]
 - [[Website OpenClaw Bot Section]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Security_Docs

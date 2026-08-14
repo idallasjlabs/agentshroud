@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "gateway/tools"
+community: "skills/openclaw"
 location: "L298"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/tools
+  - community/skills/openclaw
 ---
 
 # _resolve_command()
@@ -16,4 +16,4 @@ tags:
 - [[main()_11]] - `calls` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/tools
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

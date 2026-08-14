@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "concept"
-community: "docs/vault"
+community: "Security Docs"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Docs
 ---
 
 # agentshroud-gateway Container (Python 3.13 / FastAPI, port 8080, 1280 MB, read-only rootfs)
@@ -18,4 +18,4 @@ tags:
 - [[Startup Sequence — AgentShroud]] - `references` [EXTRACTED]
 - [[Two-Stage Startup (gateway healthy before bot starts — depends_on service_healthy)]] - `depends_on` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Security_Docs

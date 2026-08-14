@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/README.md"
 type: "document"
-community: "Planning Docs"
+community: "docs/flows"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/docs/flows
 ---
 
 # `docs/planning/` — Index
@@ -19,4 +19,4 @@ tags:
 - [[README_86]] - `contains` [EXTRACTED]
 - [[What does NOT live here]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/flows

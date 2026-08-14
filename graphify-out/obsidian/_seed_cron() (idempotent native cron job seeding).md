@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "Bot Container Scripts"
+community: "docs/diagrams"
 location: "init-config.sh:213"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Bot_Container_Scripts
+  - community/docs/diagrams
 ---
 
 # _seed_cron() (idempotent native cron job seeding)
@@ -19,4 +19,4 @@ tags:
 - [[Weekly Kaizen Review (OpenClaw cron job)]] - `semantically_similar_to` [INFERRED]
 - [[init-config.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Bot_Container_Scripts
+#graphify/code #graphify/INFERRED #community/docs/diagrams

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Inbound Tests"
+community: "Group RBAC Roles"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Tests
+  - community/Group_RBAC_Roles
 ---
 
 # _wrap_response()
@@ -173,15 +173,17 @@ tags:
 - [[.test_owner_addcollab_accepts_known_name_alias()]] - `calls` [EXTRACTED]
 - [[.test_owner_addcollab_adds_target_and_notifies()]] - `calls` [EXTRACTED]
 - [[.test_owner_addcollab_requires_target()]] - `calls` [EXTRACTED]
+- [[.test_owner_approve_ambiguous_multiple_pending_shows_usage()]] - `calls` [EXTRACTED]
 - [[.test_owner_approve_command_grants_pending_user()]] - `calls` [EXTRACTED]
 - [[.test_owner_approve_command_requires_pending_request()]] - `calls` [EXTRACTED]
-- [[.test_owner_approve_command_requires_target_user_id()]] - `calls` [EXTRACTED]
 - [[.test_owner_approve_command_resolves_pending_username_alias()]] - `calls` [EXTRACTED]
 - [[.test_owner_approve_without_target_auto_selects_single_pending()]] - `calls` [EXTRACTED]
+- [[.test_owner_bare_approve_with_no_pending_falls_through_to_agent()]] - `calls` [EXTRACTED]
+- [[.test_owner_bare_deny_with_no_pending_falls_through_to_agent()]] - `calls` [EXTRACTED]
 - [[.test_owner_collabs_command_shows_named_roster()]] - `calls` [EXTRACTED]
+- [[.test_owner_deny_ambiguous_multiple_pending_shows_usage()]] - `calls` [EXTRACTED]
 - [[.test_owner_deny_command_denies_pending_user()]] - `calls` [EXTRACTED]
 - [[.test_owner_deny_command_requires_pending_request()]] - `calls` [EXTRACTED]
-- [[.test_owner_deny_command_requires_target_user_id()]] - `calls` [EXTRACTED]
 - [[.test_owner_deny_command_resolves_pending_username_alias()]] - `calls` [EXTRACTED]
 - [[.test_owner_deny_without_target_auto_selects_single_pending()]] - `calls` [EXTRACTED]
 - [[.test_owner_healthcheck_is_handled_locally()]] - `calls` [EXTRACTED]
@@ -241,4 +243,4 @@ tags:
 - [[.test_within_limit_document_update_passes()]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests
+#graphify/code #graphify/EXTRACTED #community/Group_RBAC_Roles

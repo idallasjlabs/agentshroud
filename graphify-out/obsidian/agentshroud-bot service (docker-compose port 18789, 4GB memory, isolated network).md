@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "concept"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "docker/docker-compose.yml"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # agentshroud-bot service (docker-compose: port 18789, 4GB memory, isolated network)
@@ -22,4 +22,4 @@ tags:
 - [[docker-compose.yml (primary Docker Compose — services, networks, volumes, secrets)]] - `defines` [EXTRACTED]
 - [[falco-rules.yaml (runtime security rules — shell spawn, outbound, privilege escalation)]] - `monitors` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
-location: "L1422"
+community: "PII Sanitizer Pipeline"
+location: "L1429"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # _record_scanner_result()
@@ -21,4 +21,4 @@ tags:
 - [[run_openscap_scan()]] - `calls` [EXTRACTED]
 - [[run_trivy_scan()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

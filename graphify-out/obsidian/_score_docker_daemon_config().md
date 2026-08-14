@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "IEC 62443 Scorecard"
+community: "gateway/cli"
 location: "L1631"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IEC_62443_Scorecard
+  - community/gateway/cli
 ---
 
 # _score_docker_daemon_config()
@@ -19,4 +19,4 @@ tags:
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IEC_62443_Scorecard
+#graphify/code #graphify/EXTRACTED #community/gateway/cli

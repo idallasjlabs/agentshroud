@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "voice_gateway/tts.py"
+community: "Planning Docs"
 location: "L133-173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_gateway/ttspy
+  - community/Planning_Docs
 ---
 
 # _record_turn_latency() — structured per-turn latency logging
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_call_agent_stream() — SSE streaming from gateway forwardstream]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/ttspy
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "ESP32 Firmware"
+community: "Gateway Test Suite"
 location: "L150"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ESP32_Firmware
+  - community/Gateway_Test_Suite
 ---
 
 # _touch_start_only()
@@ -20,4 +20,4 @@ tags:
 - [[wakeword_ptt_release()]] - `calls` [INFERRED]
 - [[wakeword_triggered()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ESP32_Firmware
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

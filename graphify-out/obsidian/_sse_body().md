@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L999"
+community: "voice_gateway/server.py"
+location: "L1003"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/voice_gateway/serverpy
 ---
 
 # _sse_body()
@@ -18,4 +18,4 @@ tags:
 - [[test_call_agent_stream_yields_sentences_in_order()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/voice_gateway/serverpy

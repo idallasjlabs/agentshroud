@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway Tests"
-location: "L3035"
+community: "Security Pipeline Core"
+location: "L3060"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Security_Pipeline_Core
 ---
 
 # _reset_reply_resume()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/code #graphify/EXTRACTED #community/Security_Pipeline_Core

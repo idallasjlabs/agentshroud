@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway Tests"
-location: "L1536"
+community: "Security Pipeline Core"
+location: "L1544"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Security_Pipeline_Core
 ---
 
 # _run_disconnect_test()
@@ -18,4 +18,4 @@ tags:
 - [[test_ws_connectionclosed_error_logs_info_no_traceback()]] - `calls` [EXTRACTED]
 - [[test_ws_connectionclosed_ok_logs_info_no_traceback()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/code #graphify/EXTRACTED #community/Security_Pipeline_Core

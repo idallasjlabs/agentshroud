@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "ESP32 Firmware"
 location: "L269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/ESP32_Firmware
 ---
 
 # _run_wrapper_capture_bearer()
@@ -20,4 +20,4 @@ tags:
 - [[test_token_resolved_from_hermes_auth_token_file()]] - `calls` [EXTRACTED]
 - [[test_token_resolved_from_openclaw_password_file()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware

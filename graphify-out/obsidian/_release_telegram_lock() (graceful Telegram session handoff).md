@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "Bot Container Scripts"
+community: "CONTRIBUTING.md"
 location: "start.sh:177"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/CONTRIBUTINGmd
 ---
 
 # _release_telegram_lock() (graceful Telegram session handoff)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_telegram_bot_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/CONTRIBUTINGmd

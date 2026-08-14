@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "Progressive Trust Config"
+community: "Gateway Test Suite"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/Gateway_Test_Suite
 ---
 
 # _set_state()
@@ -28,7 +28,7 @@ tags:
 - [[.test_vouching_required_for_top_rung()]] - `calls` [EXTRACTED]
 - [[Seed stored scorelevel directly (same technique lifespan.py uses).]] - `rationale_for` [EXTRACTED]
 - [[TrustLevel_2]] - `references` [EXTRACTED]
-- [[TrustManager_3]] - `references` [EXTRACTED]
+- [[TrustManager_4]] - `references` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

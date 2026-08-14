@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # agentshroud-blueteam SKILL.md — Blue Team Auditor Skill
@@ -18,4 +18,4 @@ tags:
 - [[blueteamreferencessteve-hay-plan.md — Red Team Assessment Plan]] - `references` [INFERRED]
 - [[skillsREADME.md — Skills Library Index]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

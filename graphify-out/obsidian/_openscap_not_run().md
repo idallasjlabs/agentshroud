@@ -17,7 +17,7 @@ tags:
 - [[.test_baseline_three_when_openscap_not_run()]] - `calls` [EXTRACTED]
 - [[.test_defined_when_oscap_binary_present()]] - `calls` [EXTRACTED]
 - [[.test_zero_when_not_run()]] - `calls` [EXTRACTED]
-- [[Any_67]] - `references` [EXTRACTED]
+- [[Any_69]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

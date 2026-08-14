@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Collaborator Response Templates"
+community: "Gateway Test Suite"
 location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Gateway_Test_Suite
 ---
 
 # _save_overrides()
@@ -20,4 +20,4 @@ tags:
 - [[persist_group_member_remove()]] - `calls` [EXTRACTED]
 - [[persist_user_collab_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

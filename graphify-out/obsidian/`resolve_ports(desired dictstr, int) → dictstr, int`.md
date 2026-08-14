@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: "docs/vault"
+community: "skills/openclaw"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/skills/openclaw
 ---
 
 # `resolve_ports(desired: dict[str, int]) → dict[str, int]`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Class `PortManager`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

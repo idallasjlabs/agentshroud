@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[.test_one_when_no_wazuh_no_fluent()]] - `calls` [EXTRACTED]
 - [[.test_two_when_wazuh_running()]] - `calls` [EXTRACTED]
-- [[Any_55]] - `references` [EXTRACTED]
-- [[Path_16]] - `calls` [EXTRACTED]
+- [[Any_57]] - `references` [EXTRACTED]
+- [[Path_17]] - `calls` [EXTRACTED]
 - [[Score domain 9 Logging & Monitoring (0-5).      1=SOC exists, 2=Wazuh running,]] - `rationale_for` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]

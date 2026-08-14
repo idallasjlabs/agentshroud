@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "docs/project"
 location: "L946"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/docs/project
 ---
 
 # _skills_reload_paths()
 
 ## Connections
-- [[Path_40]] - `references` [EXTRACTED]
+- [[Path_41]] - `references` [EXTRACTED]
 - [[Resolve the source (``~.llm_settings``) and bot-config destinations.      Extr]] - `rationale_for` [EXTRACTED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/code #graphify/EXTRACTED #community/docs/project

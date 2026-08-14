@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "agentshroud.yaml"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # agentshroud.yaml (master gateway configuration file)
@@ -23,4 +23,4 @@ tags:
 - [[docker-compose.yml (primary Docker Compose — services, networks, volumes, secrets)]] - `mounts` [EXTRACTED]
 - [[pyyaml (≥6.0.0 — parse agentshroud.yaml config file)]] - `parses` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[ForwardRequest]] - `calls` [EXTRACTED]
+- [[ForwardRequest_4]] - `calls` [INFERRED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 - [[test_resolve_trust_level_maps_trust_score_to_tier()]] - `calls` [EXTRACTED]
 - [[test_resolve_trust_level_no_trust_info_for_target_defaults_untrusted()]] - `calls` [EXTRACTED]

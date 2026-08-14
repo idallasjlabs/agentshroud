@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Architecture Docs"
 location: "L324"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Architecture_Docs
 ---
 
 # _write_exec()
@@ -16,7 +16,7 @@ tags:
 - [[.test_wrapper_dry_run_never_calls_ssh()]] - `calls` [EXTRACTED]
 - [[.test_wrapper_env_host_override()]] - `calls` [EXTRACTED]
 - [[.test_wrapper_mixed_exit_codes_fail()]] - `calls` [EXTRACTED]
-- [[Path_32]] - `references` [EXTRACTED]
+- [[Path_33]] - `references` [EXTRACTED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Architecture_Docs

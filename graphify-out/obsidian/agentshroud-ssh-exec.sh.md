@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/agentshroud-ssh-exec.sh"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Gateway Proxy Layer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Gateway_Proxy_Layer
 ---
 
 # agentshroud-ssh-exec.sh
@@ -17,7 +17,6 @@ tags:
 - [[IDENTITY]] - `references` [EXTRACTED]
 - [[_json_escape()]] - `defines` [EXTRACTED]
 - [[_read_token_file()]] - `defines` [EXTRACTED]
-- [[agentshroud-email-send.sh (gateway wrapper pattern origin)]] - `semantically_similar_to` [EXTRACTED]
 - [[agentshroud-ssh-exec.sh script]] - `contains` [EXTRACTED]
 - [[agentshroud-ssh-write-file.sh]] - `semantically_similar_to` [EXTRACTED]
 - [[context]] - `references` [EXTRACTED]
@@ -26,4 +25,4 @@ tags:
 - [[openclaw-identity.md (OpenClaw bot identity)]] - `references` [EXTRACTED]
 - [[start-agentshroud.sh]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

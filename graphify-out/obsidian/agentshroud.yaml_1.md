@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "docs/vault"
+community: "Setup Docs"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Setup_Docs
 ---
 
 # agentshroud.yaml
@@ -25,4 +25,4 @@ tags:
 - [[security_modules section]] - `contains` [EXTRACTED]
 - [[ssh section]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

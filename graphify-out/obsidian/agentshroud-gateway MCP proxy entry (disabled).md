@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/mcp/servers.json"
 type: "concept"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # agentshroud-gateway MCP proxy entry (disabled)
@@ -15,4 +15,4 @@ tags:
 - [[Hermes MCP Servers Config]] - `references` [EXTRACTED]
 - [[graphify exports reference]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/concept #graphify/INFERRED #community/Gateway_Test_Suite
