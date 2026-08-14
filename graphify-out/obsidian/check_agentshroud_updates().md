@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "docs/project"
 location: "L617"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/docs/project
 ---
 
 # check_agentshroud_updates()
@@ -16,4 +16,4 @@ tags:
 - [[Rollback OpenClaw (backward-compat alias for updatesbotopenclawrollback).]] - `rationale_for` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/code #graphify/EXTRACTED #community/docs/project

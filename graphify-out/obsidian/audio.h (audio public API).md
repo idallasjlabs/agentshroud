@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.h"
 type: "code"
-community: "ESP32 Firmware"
+community: "Community 1454"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Community_1454
 ---
 
 # audio.h (audio public API)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[audio.c (ES7210 mic  ES8311 speaker driver)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Community_1454

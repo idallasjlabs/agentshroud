@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Gateway Security Module"
+community: "Bot Skill Config"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Security_Module
+  - community/Bot_Skill_Config
 ---
 
 # cls
@@ -20,9 +20,10 @@ tags:
 - [[.from_dict()_5]] - `calls` [INFERRED]
 - [[.from_dict()_6]] - `calls` [INFERRED]
 - [[.from_dict()_7]] - `calls` [INFERRED]
-- [[.from_dict()_9]] - `calls` [INFERRED]
 - [[.from_dict()_8]] - `calls` [INFERRED]
 - [[.from_dict()_10]] - `calls` [INFERRED]
+- [[.from_dict()_9]] - `calls` [INFERRED]
+- [[.from_dict()_11]] - `calls` [INFERRED]
 - [[.from_env()]] - `calls` [INFERRED]
 - [[.from_env()_1]] - `calls` [INFERRED]
 - [[.from_env()_2]] - `calls` [INFERRED]
@@ -32,4 +33,4 @@ tags:
 - [[.from_source()]] - `calls` [INFERRED]
 - [[_Instr]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Security_Module
+#graphify/code #graphify/INFERRED #community/Bot_Skill_Config

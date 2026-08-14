@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/module-inventory.md"
 type: "document"
-community: "Custom Skills"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # blueteam/references/module-inventory.md — Security Module Inventory
@@ -15,4 +15,4 @@ tags:
 - [[agentshroud-blueteam SKILL.md — Blue Team Auditor Skill]] - `references` [EXTRACTED]
 - [[redteamreferencesmodule-inventory.md — Security Module Inventory (Red Team Copy)]] - `mirrors` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

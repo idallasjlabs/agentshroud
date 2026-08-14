@@ -1,19 +1,19 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "ESP32 Firmware"
+community: "docs/vault"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/docs/vault
 ---
 
 # audio_play()
 
 ## Connections
 - [[audio.c]] - `contains` [EXTRACTED]
-- [[esp_err_t_2]] - `references` [EXTRACTED]
+- [[esp_err_t_1]] - `references` [EXTRACTED]
 - [[tts_task()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/docs/vault

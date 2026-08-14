@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/smoke.d/test-container-runtime.sh"
 type: "code"
-community: "scripts/smoke.d"
+community: "docs/user-guide.md"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/smoked
+  - community/docs/user-guidemd
 ---
 
 # check()
@@ -15,4 +15,4 @@ tags:
 - [[test-container-runtime.sh]] - `defines` [EXTRACTED]
 - [[test-container-runtime.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/smoked
+#graphify/code #graphify/EXTRACTED #community/docs/user-guidemd

@@ -1,13 +1,13 @@
 ---
 source_file: "skills/custom/icloud/scripts/calendar.js"
 type: "code"
-community: "Custom Skills"
+community: "Community 1727"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Community_1727
 ---
 
 # calendar.js (iCloud CalDAV skill)
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Community_1727

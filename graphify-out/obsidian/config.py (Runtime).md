@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "code"
-community: "docs/vault"
+community: "Custom Skills"
 location: "gateway/runtime/config.py"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/vault
+  - community/Custom_Skills
 ---
 
 # config.py (Runtime)
@@ -18,4 +18,4 @@ tags:
 - [[engine.py (Runtime)]] - `configures` [EXTRACTED]
 - [[podman_engine.py (Runtime)]] - `configures` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/docs/vault
+#graphify/code #graphify/INFERRED #community/Custom_Skills

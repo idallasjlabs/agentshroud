@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "HTTP Forwarder"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/HTTP_Forwarder
 ---
 
 # collaborator_tracker.py
@@ -15,4 +15,4 @@ tags:
 - [[CollaboratorActivityTracker]] - `contains` [EXTRACTED]
 - [[_is_fixture_uid()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder

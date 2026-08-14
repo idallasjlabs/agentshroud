@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "docs/vault"
+community: "docker-compose.secure.yml"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docker-composesecureyml
 ---
 
 # browser-fetch.js
@@ -18,4 +18,4 @@ tags:
 - [[Security Controls_1]] - `contains` [EXTRACTED]
 - [[browser-fetch.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/docker-composesecureyml

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/container-security-audit-v0.8.0.md"
 type: "code"
-community: "Security Docs"
+community: "Setup Docs"
 location: "docker/scripts/colima-firewall.sh"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Setup_Docs
 ---
 
 # colima-firewall.sh (iptables DOCKER-USER chain — blocks bot→host:22, bot→pihole:53/80)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Container Audit C1C2 SSH bypass via -F devnull + raw TCP — MITIGATED (iptables DOCKER-USER chain)]] - `mitigated_by` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Setup_Docs

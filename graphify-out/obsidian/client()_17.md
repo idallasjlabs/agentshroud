@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "Telegram Proxy Test Suite"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # client()
@@ -20,4 +20,4 @@ tags:
 - [[Set up app state and provide TestClient._1]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[.proxy_messages()]] - `calls` [EXTRACTED]
 - [[Anthropic v1messages response → OpenAI v1chatcompletions envelope.]] - `rationale_for` [EXTRACTED]
-- [[LLMProxy.proxy_messages()]] - `calls` [EXTRACTED]
 - [[_random_msg_id()_1]] - `calls` [EXTRACTED]
 - [[anthropic_openai_translator.py]] - `contains` [EXTRACTED]
 - [[llm_proxy.py]] - `imports` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "gateway/README.md"
 location: "L573"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/gateway/READMEmd
 ---
 
 # check_message()
@@ -24,4 +24,4 @@ tags:
 - [[get_context_guard()]] - `calls` [EXTRACTED]
 - [[test_context_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/gateway/READMEmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Approval Queue Tests"
+community: "Telegram Proxy Test Suite"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # client()
@@ -20,4 +20,4 @@ tags:
 - [[Set up app state and provide TestClient.]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

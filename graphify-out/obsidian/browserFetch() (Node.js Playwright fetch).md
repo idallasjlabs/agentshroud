@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/browse.js"
 type: "code"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "browse.js:10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # browserFetch() (Node.js Playwright fetch)
@@ -17,4 +17,4 @@ tags:
 - [[appendLog()_3]] - `calls` [EXTRACTED]
 - [[browser-fetch package.json]] - `references` [AMBIGUOUS]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/docs/vault

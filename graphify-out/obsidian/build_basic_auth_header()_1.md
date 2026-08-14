@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Bot Skill Config"
-location: "L82"
+community: "Setup Docs"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Docs
 ---
 
 # build_basic_auth_header()
@@ -16,4 +16,4 @@ tags:
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
 - [[post_comment()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Setup_Docs

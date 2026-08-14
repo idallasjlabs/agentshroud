@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Gateway_Test_Suite
 ---
 
 # daily_cve_report.py
@@ -20,15 +20,14 @@ tags:
 - [[check_upstream_cves()]] - `contains` [EXTRACTED]
 - [[cron_state_monitor.py]] - `semantically_similar_to` [INFERRED]
 - [[cve_report_scheduler()]] - `contains` [EXTRACTED]
-- [[datetime_1]] - `imports_from` [EXTRACTED]
+- [[datetime_2]] - `imports_from` [EXTRACTED]
 - [[format_cve_report()]] - `contains` [EXTRACTED]
 - [[format_upstream_cve_alert()]] - `contains` [EXTRACTED]
 - [[generate_summary()_2]] - `imports` [EXTRACTED]
-- [[get_agent_cve_source()]] - `calls` [EXTRACTED]
+- [[get_agent_cve_source()]] - `imports` [EXTRACTED]
 - [[get_agent_ghsa_repo()]] - `imports` [EXTRACTED]
 - [[ghsa_ingest_scheduler()]] - `contains` [EXTRACTED]
-- [[health_report.py]] - `semantically_similar_to` [INFERRED]
-- [[list_cve_agents()]] - `calls` [EXTRACTED]
+- [[list_cve_agents()]] - `imports` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `contains` [EXTRACTED]
 - [[run_trivy_scan()_1]] - `imports` [EXTRACTED]
@@ -39,4 +38,4 @@ tags:
 - [[trivy_report.py]] - `imports_from` [EXTRACTED]
 - [[upstream_cve_check_scheduler()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

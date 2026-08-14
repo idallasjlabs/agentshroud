@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "SOC Collaborator Lifecycle"
+community: "Gateway Test Suite"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/Gateway_Test_Suite
 ---
 
 # build_correlation_summary()
@@ -26,4 +26,4 @@ tags:
 - [[soc_correlation.py]] - `contains` [EXTRACTED]
 - [[soc_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

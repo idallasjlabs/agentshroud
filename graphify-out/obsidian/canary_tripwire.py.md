@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/vault
 ---
 
 # canary_tripwire.py
@@ -19,4 +19,4 @@ tags:
 - [[i-sec-defense Blue Team Security Auditor]] - `references` [EXTRACTED]
 - [[i-sec-offense Red Team Adversarial Tester]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "docs/vault"
+community: "docs/diagrams"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/diagrams
 ---
 
 # config.py
@@ -22,4 +22,4 @@ tags:
 - [[Rootless Resolution Table]] - `contains` [EXTRACTED]
 - [[config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/docs/diagrams

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "Security Docs"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/skills/openclaw
 ---
 
 # blue-team-assessment-v0.8.0.md (Initial assessment)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Initial C1 (hardcoded owner ID middleware.py94), C2 (hardcoded ID webhook_receiver.py45) — FIXED]] - `documents` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

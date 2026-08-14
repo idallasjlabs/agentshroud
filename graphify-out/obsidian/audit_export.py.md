@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Audit Export Pipeline"
+community: "Telegram Inbound Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Telegram_Inbound_Tests
 ---
 
 # audit_export.py
@@ -19,4 +19,4 @@ tags:
 - [[audit_store.py]] - `imports_from` [EXTRACTED]
 - [[i-sec-defense Blue Team Security Auditor]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests

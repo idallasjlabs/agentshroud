@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/backup-bot-memory.sh"
 type: "code"
-community: "scripts/backup-bot-memory.sh"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/backup-bot-memorysh
+  - community/Gateway_Test_Suite
 ---
 
 # backup-bot-memory.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[backup-bot-memory.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/backup-bot-memorysh
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

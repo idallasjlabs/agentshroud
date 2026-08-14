@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "IEC 62443 Scorecard"
+community: "docs/papers"
 location: "L2397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IEC_62443_Scorecard
+  - community/docs/papers
 ---
 
 # compute_scorecard()
@@ -25,7 +25,7 @@ tags:
 - [[.test_timestamp_present()_1]] - `calls` [EXTRACTED]
 - [[.test_totals_present()]] - `calls` [EXTRACTED]
 - [[.test_version_is_v090()]] - `calls` [EXTRACTED]
-- [[Any_55]] - `references` [EXTRACTED]
+- [[Any_57]] - `references` [EXTRACTED]
 - [[Compute the 33-domain Security Scorecard.      Domains 1–21 Container infrastru]] - `rationale_for` [EXTRACTED]
 - [[_compute_weighted_subscore()]] - `calls` [EXTRACTED]
 - [[_determine_compliance_level()]] - `calls` [EXTRACTED]
@@ -74,4 +74,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IEC_62443_Scorecard
+#graphify/code #graphify/EXTRACTED #community/docs/papers

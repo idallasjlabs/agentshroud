@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "Cross-Bot Trust Ledger"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/Gateway_Test_Suite
 ---
 
 # cross_bot_trust_ledger.py
@@ -19,4 +19,4 @@ tags:
 - [[TrustDecayPolicy]] - `contains` [EXTRACTED]
 - [[TrustManager_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "Architecture Docs"
+community: "gateway/tools"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/gateway/tools
 ---
 
 # audit_entries SQLite table
@@ -15,4 +15,4 @@ tags:
 - [[AuditEntry (data entity)]] - `implements` [EXTRACTED]
 - [[mcp_audit_entries SQLite table]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/gateway/tools

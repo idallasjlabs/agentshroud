@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
-location: "L33"
+community: "PII Sanitizer Pipeline"
+location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # auth_dep()
 
 ## Connections
 - [[Auth dependency that uses the app state config._1]] - `rationale_for` [EXTRACTED]
-- [[Request_4]] - `references` [EXTRACTED]
-- [[approval.py]] - `contains` [EXTRACTED]
+- [[Request_3]] - `references` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
+- [[dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

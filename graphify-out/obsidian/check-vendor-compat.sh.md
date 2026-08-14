@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "scripts/check-vendor-compat.sh"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/check-vendor-compatsh
+  - community/Bot_Skill_Config
 ---
 
 # check-vendor-compat.sh
@@ -18,7 +18,6 @@ tags:
 - [[check_openclaw()]] - `defines` [EXTRACTED]
 - [[fail()_3]] - `defines` [EXTRACTED]
 - [[pass()_2]] - `defines` [EXTRACTED]
-- [[security_review()]] - `semantically_similar_to` [INFERRED]
 - [[warn()_2]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/check-vendor-compatsh
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

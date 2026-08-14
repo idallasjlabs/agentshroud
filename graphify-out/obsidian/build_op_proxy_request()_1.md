@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Bot Skill Config"
-location: "L67"
+community: "Planning Docs"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # build_op_proxy_request()
@@ -16,4 +16,4 @@ tags:
 - [[fetch_op_secret()_1]] - `calls` [EXTRACTED]
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "src/interfaces"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/src/interfaces
 ---
 
 # classify()
@@ -21,4 +21,4 @@ tags:
 - [[run_multi_host()]] - `calls` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/src/interfaces

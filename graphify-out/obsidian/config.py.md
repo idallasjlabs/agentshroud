@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "Slack API Proxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Slack_API_Proxy
 ---
 
 # config.py
@@ -20,7 +20,7 @@ tags:
 - [[GatewayConfig_1]] - `contains` [EXTRACTED]
 - [[LedgerConfig]] - `contains` [EXTRACTED]
 - [[PIIConfig]] - `contains` [EXTRACTED]
-- [[RouterConfig_1]] - `contains` [EXTRACTED]
+- [[RouterConfig]] - `contains` [EXTRACTED]
 - [[SSHConfig]] - `imports` [EXTRACTED]
 - [[SecurityConfig_2]] - `contains` [EXTRACTED]
 - [[SecurityModuleConfig]] - `contains` [EXTRACTED]
@@ -50,7 +50,6 @@ tags:
 - [[ssh_config.py]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_mcp_policy_default_failclosed.py]] - `references` [EXTRACTED]
-- [[test_mcp_result_endpoint.py]] - `references` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

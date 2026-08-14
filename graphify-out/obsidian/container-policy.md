@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/container-policy.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # container-policy.md
@@ -16,4 +16,4 @@ tags:
 - [[Container Security Policy — AgentShroud]] - `contains` [EXTRACTED]
 - [[Secret Management Hierarchy (1Password → Docker Secrets → env vars for non-sensitive only)]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

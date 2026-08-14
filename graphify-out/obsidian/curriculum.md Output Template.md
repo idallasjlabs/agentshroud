@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "skills/openclaw"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/skills/openclaw
 ---
 
 # curriculum.md Output Template
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Atlas — Curriculum Architect (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

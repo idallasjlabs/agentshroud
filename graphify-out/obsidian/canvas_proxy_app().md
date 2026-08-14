@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "Architecture Docs"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Architecture_Docs
 ---
 
 # canvas_proxy_app()
@@ -20,4 +20,4 @@ tags:
 - [[canvas_proxy.py]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/Architecture_Docs

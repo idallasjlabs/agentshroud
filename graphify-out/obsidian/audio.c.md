@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "ESP32 Firmware"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/docs/vault
 ---
 
 # audio.c
@@ -21,4 +21,4 @@ tags:
 - [[audio_set_volume()]] - `contains` [EXTRACTED]
 - [[audio_volume_tick()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/docs/vault

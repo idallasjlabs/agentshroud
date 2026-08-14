@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "docs/vault"
 location: "L1122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/vault
 ---
 
 # bot_id + config param restricts results to that bot's image.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_bot_id_filter_matches_bot_image()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

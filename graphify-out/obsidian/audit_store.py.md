@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "Audit Export Pipeline"
+community: "Telegram Inbound Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Telegram_Inbound_Tests
 ---
 
 # audit_store.py
@@ -16,4 +16,4 @@ tags:
 - [[AuditStore_1]] - `contains` [EXTRACTED]
 - [[audit_export.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests

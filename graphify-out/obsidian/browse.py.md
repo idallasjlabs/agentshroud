@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Bot Skill Config"
+community: "branding/README.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/branding/READMEmd
 ---
 
 # browse.py
@@ -19,4 +19,4 @@ tags:
 - [[SecurityError]] - `contains` [EXTRACTED]
 - [[main()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/branding/READMEmd

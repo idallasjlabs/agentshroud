@@ -14,8 +14,6 @@ tags:
 ## Connections
 - [[._failover_request()]] - `calls` [EXTRACTED]
 - [[._local_secondary_failover_request()]] - `calls` [EXTRACTED]
-- [[LLMProxy._failover_request()]] - `calls` [EXTRACTED]
-- [[LLMProxy.proxy_messages_streaming()]] - `calls` [EXTRACTED]
 - [[Translate an Anthropic Messages request body to OpenAI chat completions format.]] - `rationale_for` [EXTRACTED]
 - [[_anthropic_content_to_openai()]] - `calls` [EXTRACTED]
 - [[_anthropic_system_to_openai()]] - `calls` [EXTRACTED]

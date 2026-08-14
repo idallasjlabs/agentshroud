@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/bot-access-audit.sh"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Bot_Skill_Config
 ---
 
 # bot-access-audit.sh
@@ -15,4 +15,4 @@ tags:
 - [[bot-access-audit.sh script]] - `contains` [EXTRACTED]
 - [[run_op()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

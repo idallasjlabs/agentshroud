@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "concept"
-community: "docs/vault"
+community: "docs/redteam"
 location: "docker/config/openclaw/apply-patches.js"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/redteam
 ---
 
 # apply-patches.js
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw]] - `configured_by` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/docs/redteam

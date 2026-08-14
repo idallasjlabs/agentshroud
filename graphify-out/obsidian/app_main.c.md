@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "ESP32 Firmware"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Gateway_Test_Suite
 ---
 
 # app_main.c
@@ -21,7 +21,7 @@ tags:
 - [[_on_vg_state()]] - `contains` [EXTRACTED]
 - [[_on_ws_ctrl()]] - `contains` [EXTRACTED]
 - [[_send_status_beacon()]] - `contains` [EXTRACTED]
-- [[app_main()]] - `contains` [EXTRACTED]
+- [[app_main()_1]] - `contains` [EXTRACTED]
 - [[playback_logic.h]] - `imports` [EXTRACTED]
 - [[remote_log.h]] - `imports` [EXTRACTED]
 - [[rlog_task()]] - `contains` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[wifi_event_handler()]] - `contains` [EXTRACTED]
 - [[wifi_init()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

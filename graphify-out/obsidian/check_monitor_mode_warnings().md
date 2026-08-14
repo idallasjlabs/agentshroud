@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "Slack API Proxy"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Slack_API_Proxy
 ---
 
 # check_monitor_mode_warnings()
@@ -23,4 +23,4 @@ tags:
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

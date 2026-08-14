@@ -1,11 +1,11 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "concept"
-community: "README.md"
+community: "Security Docs"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/READMEmd
+  - graphify/EXTRACTED
+  - community/Security_Docs
 ---
 
 # asb Wrapper Script
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
 - [[Quickstart]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/READMEmd
+#graphify/concept #graphify/EXTRACTED #community/Security_Docs

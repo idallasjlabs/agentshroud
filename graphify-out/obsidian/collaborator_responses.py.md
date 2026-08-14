@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_responses.py"
 type: "code"
-community: "Collaborator Response Templates"
+community: "Group Workspace Isolation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Group_Workspace_Isolation
 ---
 
 # collaborator_responses.py
@@ -29,4 +29,4 @@ tags:
 - [[group_config.py]] - `imports_from` [EXTRACTED]
 - [[slack_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation

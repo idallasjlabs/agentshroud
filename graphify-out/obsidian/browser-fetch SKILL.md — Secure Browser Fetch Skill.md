@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # browser-fetch SKILL.md — Secure Browser Fetch Skill
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[skillsREADME.md — Skills Library Index]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,17 +1,16 @@
 ---
 source_file: "gateway/ingest_api/static/chat.html"
 type: "code"
-community: "gateway/requirements.txt"
+community: "Planning Docs"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/gateway/requirementstxt
+  - graphify/EXTRACTED
+  - community/Planning_Docs
 ---
 
 # chat.html — Secure Chat Interface
 
 ## Connections
-- [[Concept Microsoft Presidio PII Detection Engine]] - `references` [INFERRED]
 - [[Concept Secure Chat Interface (PII Protected, Audit Logged)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/gateway/requirementstxt
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

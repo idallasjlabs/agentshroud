@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "rationale"
-community: "Cross-Bot Trust Ledger"
+community: "Gateway Test Suite"
 location: "L497"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/Gateway_Test_Suite
 ---
 
 # build_full_mesh: N-agent-scalable topology construction.      Adding a 3rd/4th/N
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestBuildFullMesh]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

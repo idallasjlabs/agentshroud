@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/steve-hay-plan.md"
 type: "document"
-community: "Custom Skills"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # blueteam/references/steve-hay-plan.md — Red Team Assessment Plan
@@ -16,4 +16,4 @@ tags:
 - [[agentshroud-blueteam SKILL.md — Blue Team Auditor Skill]] - `references` [INFERRED]
 - [[redteamreferencessteve-hay-plan.md — Red Team Plan (Red Team Copy)]] - `mirrors` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

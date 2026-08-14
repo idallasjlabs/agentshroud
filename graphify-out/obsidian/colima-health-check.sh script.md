@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Gateway Proxy Layer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Gateway_Proxy_Layer
 ---
 
 # colima-health-check.sh script
@@ -17,4 +17,4 @@ tags:
 - [[notify()_1]] - `calls` [EXTRACTED]
 - [[write_state()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
