@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: ".github/agents"
+community: "Security Docs"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/agents
+  - community/Security_Docs
 ---
 
 # Test Augmentation Specialist
@@ -23,4 +23,4 @@ tags:
 - [[Your Responsibilities]] - `contains` [EXTRACTED]
 - [[test-augmenter.agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/agents
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

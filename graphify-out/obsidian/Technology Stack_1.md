@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "L203"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Technology Stack
@@ -17,4 +17,4 @@ tags:
 - [[Monitoring and Observability]] - `contains` [EXTRACTED]
 - [[Security Technologies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

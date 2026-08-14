@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Collaborator Response Templates"
+community: "Group Workspace Isolation"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Collaborator_Response_Templates
+  - community/Group_Workspace_Isolation
 ---
 
 # TeamsConfig
@@ -33,7 +33,6 @@ tags:
 - [[Role_1]] - `uses` [INFERRED]
 - [[TeamsConfig_1]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
-- [[TeamsConfig_3]] - `uses` [INFERRED]
 - [[TestAdminAccess]] - `uses` [INFERRED]
 - [[TestAdminChecks]] - `uses` [INFERRED]
 - [[TestAgentRegistryGroupIdentity]] - `uses` [INFERRED]
@@ -113,4 +112,4 @@ tags:
 - [[test_shared_memory_write_acl.py]] - `imports` [EXTRACTED]
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Collaborator_Response_Templates
+#graphify/code #graphify/INFERRED #community/Group_Workspace_Isolation

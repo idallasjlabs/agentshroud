@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Kill Switch Config"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Kill_Switch_Config
 ---
 
 # Test detection of destructive commands not indicated in description.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_deception_detection_destructive_command_not_indicated()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch_Config

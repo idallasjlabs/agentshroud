@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "Setup Docs"
+community: "Planning Docs"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Planning_Docs
 ---
 
 # Test IMAP Connection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📧 iCloud Mail (IMAPSMTP)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

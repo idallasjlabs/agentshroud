@@ -1,11 +1,11 @@
 ---
 source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "Custom Skills"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # Test Coverage Report (AgentShroud v1.3.0)
@@ -17,4 +17,4 @@ tags:
 - [[Red-Team Assessment Plan]] - `cites` [EXTRACTED]
 - [[Test Plan (AgentShroud v0.9.0)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

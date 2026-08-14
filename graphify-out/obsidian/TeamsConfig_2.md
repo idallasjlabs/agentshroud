@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "File Sandbox"
 location: "L28"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/File_Sandbox
 ---
 
 # TeamsConfig
@@ -21,4 +21,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[_make_rbac()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/File_Sandbox

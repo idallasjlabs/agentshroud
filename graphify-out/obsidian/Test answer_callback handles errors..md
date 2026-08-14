@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_telegram_notify.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "gateway/runtime"
 location: "L187"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/gateway/runtime
 ---
 
 # Test answer_callback handles errors.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_answer_callback_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/gateway/runtime

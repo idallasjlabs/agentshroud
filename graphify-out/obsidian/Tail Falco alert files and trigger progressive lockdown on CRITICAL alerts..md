@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Bot Container Scripts"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Bot_Container_Scripts
 ---
 
 # Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FalcoAlertWatcher]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Container_Scripts

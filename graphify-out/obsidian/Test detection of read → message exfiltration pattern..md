@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Tool Chain Analyzer"
+community: "Gateway Test Suite"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Chain_Analyzer
+  - community/Gateway_Test_Suite
 ---
 
 # Test detection of read → message exfiltration pattern.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_read_to_message_exfiltration()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain_Analyzer
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

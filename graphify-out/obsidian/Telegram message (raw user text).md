@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-09-data-lineage.svg"
 type: "concept"
-community: "docs/diagrams"
+community: "skills/openclaw"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/skills/openclaw
 ---
 
 # Telegram message (raw user text)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[original_content_hash = SHA-256(raw)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/diagrams
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

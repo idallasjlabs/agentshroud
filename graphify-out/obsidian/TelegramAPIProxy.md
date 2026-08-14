@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Collaborator Prompt Classifiers"
-location: "L381"
+community: "Cross-Bot Trust Ledger"
+location: "L389"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # TelegramAPIProxy
 
 ## Connections
-- [[.__init__()_38]] - `method` [EXTRACTED]
+- [[.__init__()_37]] - `method` [EXTRACTED]
 - [[._active_bot_id()]] - `method` [EXTRACTED]
 - [[._active_send_token()]] - `method` [EXTRACTED]
 - [[._answer_callback_query()]] - `method` [EXTRACTED]
@@ -31,6 +31,7 @@ tags:
 - [[._edit_telegram_message()]] - `method` [EXTRACTED]
 - [[._emit_quarantine_event()]] - `method` [EXTRACTED]
 - [[._enforce_group_workspace_access()]] - `method` [EXTRACTED]
+- [[._escape_pii_placeholders()]] - `method` [EXTRACTED]
 - [[._extract_embedded_tool_call_json()]] - `method` [EXTRACTED]
 - [[._extract_first_egress_target()]] - `method` [EXTRACTED]
 - [[._extract_owner_target()]] - `method` [EXTRACTED]
@@ -239,6 +240,7 @@ tags:
 - [[TestTelegramBotConfigTokenSecretField]] - `uses` [INFERRED]
 - [[TestTelegramProxyRouteMultiBot]] - `uses` [INFERRED]
 - [[TestTelegramTokenRegistry]] - `uses` [INFERRED]
+- [[TestTelegramTokenRegistryRebuildOnMiss]] - `uses` [INFERRED]
 - [[TestTrackerGetHealth]] - `uses` [INFERRED]
 - [[TestUnlockCommand]] - `uses` [INFERRED]
 - [[TestWebSearchLog]] - `uses` [INFERRED]
@@ -255,4 +257,4 @@ tags:
 - [[test_telegram_proxy_multibot.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger

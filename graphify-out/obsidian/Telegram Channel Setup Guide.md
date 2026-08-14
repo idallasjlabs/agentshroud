@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup-telegram.md"
 type: "document"
-community: "docs/setup-telegram.md"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/setup-telegrammd
+  - community/skills/openclaw
 ---
 
 # Telegram Channel Setup Guide
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Telegram BotFather Bot Creation]] - `requires` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/setup-telegrammd
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

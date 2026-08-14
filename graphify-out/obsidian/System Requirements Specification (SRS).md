@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/system-requirements.md"
 type: "document"
-community: "docs/requirements"
+community: "Planning Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/requirements
+  - community/Planning_Docs
 ---
 
 # System Requirements Specification (SRS)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud v0.9.0]] - `contains` [EXTRACTED]
 - [[system-requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/requirements
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # TELEGRAM_API_BASE_URL
@@ -20,4 +20,4 @@ tags:
 - [[TELEGRAM_API_BASE_URL]] - `contains` [EXTRACTED]
 - [[Value_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

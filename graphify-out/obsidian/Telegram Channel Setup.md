@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-telegram.md"
 type: "document"
-community: "docs/setup-slack.md"
+community: "Security Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/setup-slackmd
+  - community/Security_Docs
 ---
 
 # Telegram Channel Setup
@@ -24,4 +24,4 @@ tags:
 - [[Troubleshooting_20]] - `contains` [EXTRACTED]
 - [[setup-telegram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/setup-slackmd
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

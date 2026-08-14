@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-04-infrastructure-hosting.svg"
 type: "image"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Tailscale Overlay Network (tail240ea8.ts.net)
@@ -17,4 +17,4 @@ tags:
 - [[raspberrypi (100.107.248.66, agentshroud-bot user)]] - `shares_data_with` [EXTRACTED]
 - [[trillian (100.94.68.61, development node)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/image #graphify/EXTRACTED #community/Gateway_Test_Suite

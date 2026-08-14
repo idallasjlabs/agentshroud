@@ -1,12 +1,12 @@
 ---
 source_file: "docs/testing/test-plan.md"
 type: "document"
-community: "docs/ssh-security-review.md"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/ssh-security-reviewmd
+  - community/Bot_Skill_Config
 ---
 
 # Test Plan
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud v0.9.0_1]] - `contains` [EXTRACTED]
 - [[test-plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/ssh-security-reviewmd
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

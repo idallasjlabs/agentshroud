@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
+community: "Auth & Exception Types"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Auth__Exception_Types
 ---
 
 # Test PII sanitization — works with Presidio (Python ≤3.13) or regex fallback (3.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPIIDetection_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

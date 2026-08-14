@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "docs/vault"
 location: "L132"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/docs/vault
 ---
 
 # Test deleting a non-existent entry
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_delete_nonexistent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

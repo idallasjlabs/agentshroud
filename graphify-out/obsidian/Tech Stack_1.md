@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "gateway/README.md"
+community: "Architecture Docs"
 location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gateway/READMEmd
+  - community/Architecture_Docs
 ---
 
 # Tech Stack
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Gateway Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gateway/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

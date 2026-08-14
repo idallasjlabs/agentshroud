@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-01-c4-context.svg"
 type: "image"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Tailscale (encrypted overlay network)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud (system, C4 context)]] - `shares_data_with` [EXTRACTED]
 - [[Tailscale Overlay Network (tail240ea8.ts.net)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/image #graphify/EXTRACTED #community/Gateway_Test_Suite

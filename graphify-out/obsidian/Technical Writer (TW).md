@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-tw/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/diagrams"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/diagrams
 ---
 
 # Technical Writer (TW)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_38]] - `contains` [EXTRACTED]
 - [[Usage_39]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/diagrams

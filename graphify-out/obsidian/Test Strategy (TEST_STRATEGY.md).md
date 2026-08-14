@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/TEST_STRATEGY.md"
 type: "document"
-community: "docs/governance"
+community: "Security Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/governance
+  - community/Security_Docs
 ---
 
 # Test Strategy (TEST_STRATEGY.md)
@@ -16,4 +16,4 @@ tags:
 - [[Startup Smoke Assertions (testsstartup_smoke)]] - `defines` [EXTRACTED]
 - [[Test-Type Decision Matrix]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/governance
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

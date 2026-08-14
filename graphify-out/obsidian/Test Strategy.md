@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/TEST_STRATEGY.md"
 type: "document"
-community: "docs/governance"
+community: "Security Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/governance
+  - community/Security_Docs
 ---
 
 # Test Strategy
@@ -19,4 +19,4 @@ tags:
 - [[Test-Type Decision Matrix]] - `contains` [EXTRACTED]
 - [[When to Add a Smoke Assertion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/governance
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

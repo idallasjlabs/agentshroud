@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
+community: "docs/README.md"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/docs/READMEmd
 ---
 
 # Test enhanced status endpoint with observatory mode and egress info.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEnhancedStatus]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/docs/READMEmd

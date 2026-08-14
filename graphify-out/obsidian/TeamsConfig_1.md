@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "Collaborator Response Templates"
+community: "Group Workspace Isolation"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Group_Workspace_Isolation
 ---
 
 # TeamsConfig
@@ -21,4 +21,4 @@ tags:
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[teams()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation

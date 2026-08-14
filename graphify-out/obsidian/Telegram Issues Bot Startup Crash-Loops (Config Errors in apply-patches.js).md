@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "rationale"
-community: "Planning Docs"
+community: "docs/vault"
 location: "line 18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/docs/vault
 ---
 
 # Telegram Issues: Bot Startup Crash-Loops (Config Errors in apply-patches.js)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Telegram Issues ContextGuard False Positives (Collaborator Blocked)]] - `co_occurs_with` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

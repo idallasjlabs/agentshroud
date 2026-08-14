@@ -1,12 +1,12 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # TEAM.md
@@ -23,4 +23,4 @@ tags:
 - [[Tailscale Mesh VPN (tail240ea8.ts.net)]] - `references` [EXTRACTED]
 - [[Trillian (Mac Mini Intel — secondary buildCI)]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

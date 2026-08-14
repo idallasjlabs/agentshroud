@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Setup Docs"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/docs/vault
 ---
 
 # Telegram Bot Setup for OpenClaw
@@ -23,4 +23,4 @@ tags:
 - [[TELEGRAM_SETUP]] - `contains` [EXTRACTED]
 - [[Troubleshooting_28]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/vault
