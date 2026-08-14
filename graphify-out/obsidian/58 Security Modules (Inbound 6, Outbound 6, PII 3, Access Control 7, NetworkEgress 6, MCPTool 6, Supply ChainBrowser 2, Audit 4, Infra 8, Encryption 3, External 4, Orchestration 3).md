@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "concept"
-community: "Security Docs"
+community: "Bot Skill Config"
 location: "gateway/security/"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Skill_Config
 ---
 
 # 58 Security Modules (Inbound 6, Outbound 6, PII 3, Access Control 7, Network/Egress 6, MCP/Tool 6, Supply Chain/Browser 2, Audit 4, Infra 8, Encryption 3, External 4, Orchestration 3)
@@ -19,4 +19,4 @@ tags:
 - [[SecurityPipeline (proxypipeline.py) — Central inboundoutbound security orchestration]] - `includes` [EXTRACTED]
 - [[security-inventory.md (v0.8.0 58 modules, 9 configs, 24 docs, 38 test files, 22332233 passing)]] - `inventories` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Security_Docs
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

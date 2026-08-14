@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "concept"
-community: "Security Docs"
+community: "Bot Skill Config"
 location: "line 16-60"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Skill_Config
 ---
 
 # 3-Layer Credential Protection (Gateway Filter + Console-Only + Audit Logging)
@@ -16,4 +16,4 @@ tags:
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - `documents` [EXTRACTED]
 - [[Security Implementation Verification]] - `verifies` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Security_Docs
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
