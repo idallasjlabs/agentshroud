@@ -1,11 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
-type: "concept"
-community: "docs/project"
+type: "document"
+community: "Gateway Security Module"
+location: "L401"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Gateway_Security_Module
 ---
 
 # IEC 62443 Industrial Security Framework
@@ -20,4 +21,4 @@ tags:
 - [[audit-specification]] - `references` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

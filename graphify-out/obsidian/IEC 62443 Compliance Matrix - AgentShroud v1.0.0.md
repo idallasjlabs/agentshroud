@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "docs/compliance"
+community: "Bot Skill Config"
 location: "line 1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/compliance
+  - community/Bot_Skill_Config
 ---
 
 # IEC 62443 Compliance Matrix - AgentShroud v1.0.0
@@ -21,4 +21,4 @@ tags:
 - [[FR 6 Timely Response to Events - SL 3 (AuditStore SHA-256 hash chain, Falco, Wazuh, AlertDispatcher)]] - `contains` [EXTRACTED]
 - [[FR 7 Resource Availability - SL 2 (ProgressiveLockdown, Docker resource limits, backup scripts)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/compliance
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

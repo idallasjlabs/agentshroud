@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "gateway/tools"
+community: "docs/vault"
 location: "L69"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/gateway/tools
+  - community/docs/vault
 ---
 
 # HostResult
@@ -19,7 +19,7 @@ tags:
 - [[.test_render_summary_all_pass_overall()]] - `calls` [EXTRACTED]
 - [[.test_render_summary_contains_hosts_and_overall()]] - `calls` [EXTRACTED]
 - [[.unreachable()]] - `references` [EXTRACTED]
-- [[Path_32]] - `uses` [INFERRED]
+- [[Path_33]] - `uses` [INFERRED]
 - [[Result of running the command on a single host.]] - `rationale_for` [EXTRACTED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
 - [[TestClassify]] - `uses` [INFERRED]
@@ -36,4 +36,4 @@ tags:
 - [[run_multi_host()]] - `references` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/gateway/tools
+#graphify/code #graphify/INFERRED #community/docs/vault

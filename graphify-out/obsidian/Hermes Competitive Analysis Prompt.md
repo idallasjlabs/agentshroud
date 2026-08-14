@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/workspace/competitive-analysis.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # Hermes Competitive Analysis Prompt
@@ -14,4 +14,4 @@ tags:
 - [[Competitive Intelligence Automation (HermesOpenClaw recurring reports)]] - `defines` [EXTRACTED]
 - [[Hermes Cron Jobs (jobs.yaml)]] - `referenced_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

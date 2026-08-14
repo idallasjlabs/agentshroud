@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
-location: "L2932"
+community: "PII Config & Test Fixtures"
+location: "L3001"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Hypothetical execution policy questions should get safe info, not hard block.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_hypothetical_execution_question_gets_safe_info()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

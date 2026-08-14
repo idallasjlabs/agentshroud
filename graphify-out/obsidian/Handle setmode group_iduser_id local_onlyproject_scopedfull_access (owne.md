@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Response Templates"
-location: "L7904"
+community: "Group Workspace Isolation"
+location: "L7948"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Group_Workspace_Isolation
 ---
 
 # Handle /setmode <group_id|user_id> <local_only|project_scoped|full_access> (owne
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._handle_setmode_command()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/rationale #graphify/EXTRACTED #community/Group_Workspace_Isolation

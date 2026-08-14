@@ -32,7 +32,7 @@ tags:
 - [[.test_no_teams_config_fails_closed()]] - `calls` [EXTRACTED]
 - [[.test_rbac_without_is_owner_callable()]] - `calls` [EXTRACTED]
 - [[.test_two_members_of_same_group_share_one_workspace_id()]] - `calls` [EXTRACTED]
-- [[Any_20]] - `uses` [INFERRED]
+- [[Any_21]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `semantically_similar_to` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Resolve and access-control shared group workspaces.      Args         teams_con]] - `rationale_for` [EXTRACTED]

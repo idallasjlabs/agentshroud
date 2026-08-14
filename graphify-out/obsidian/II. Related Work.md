@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "docs/papers"
+community: "Architecture Docs"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Architecture_Docs
 ---
 
 # II. Related Work
@@ -17,4 +17,4 @@ tags:
 - [[II-B. STPA-Sec]] - `contains` [EXTRACTED]
 - [[II-C. Transparent Proxy Architectures]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/papers
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

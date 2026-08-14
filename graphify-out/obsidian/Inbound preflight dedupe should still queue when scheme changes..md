@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
-location: "L5801"
+community: "PII Config & Test Fixtures"
+location: "L5870"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Inbound preflight dedupe should still queue when scheme changes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_non_owner_preflight_cooldown_is_scheme_port_scoped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

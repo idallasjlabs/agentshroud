@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Architecture Docs"
+community: "scripts/generate_branding_assets.py"
 location: "L383"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/scripts/generate_branding_assetspy
 ---
 
 # HashiCorp Vault Integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Secrets Management Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/scripts/generate_branding_assetspy

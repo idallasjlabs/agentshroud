@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/README.md"
 type: "document"
-community: "Planning Docs"
+community: "docs/flows"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/docs/flows
 ---
 
 # Historic / archive
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[`docsplanning` — Index]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/flows

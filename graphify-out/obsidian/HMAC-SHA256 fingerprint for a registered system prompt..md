@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Audit Export Pipeline"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Audit_Export_Pipeline
 ---
 
 # HMAC-SHA256 fingerprint for a registered system prompt.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SystemPromptFingerprint]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline

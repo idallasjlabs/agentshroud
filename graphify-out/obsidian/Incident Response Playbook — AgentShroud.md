@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/incident-response.md"
 type: "document"
-community: "Security Docs"
+community: "skills/openclaw"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/skills/openclaw
 ---
 
 # Incident Response Playbook — AgentShroud
@@ -22,4 +22,4 @@ tags:
 - [[Communication Templates]] - `contains` [EXTRACTED]
 - [[incident-response_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

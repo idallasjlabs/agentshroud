@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
+community: "Collaborator Response Templates"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Collaborator_Response_Templates
 ---
 
 # Guard against environment variable leakage and unauthorized access.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EnvironmentGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates

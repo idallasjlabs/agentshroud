@@ -12,14 +12,14 @@ tags:
 # HTTPConnectProxy
 
 ## Connections
-- [[.__init__()_24]] - `method` [EXTRACTED]
+- [[.__init__()_22]] - `method` [EXTRACTED]
 - [[._agent_id_for_peer()]] - `method` [EXTRACTED]
 - [[._clamav_scan_bytes()]] - `method` [EXTRACTED]
 - [[._handle_client()]] - `method` [EXTRACTED]
 - [[._process_connect()]] - `method` [EXTRACTED]
 - [[._relay()]] - `method` [EXTRACTED]
 - [[._relay_and_scan()]] - `method` [EXTRACTED]
-- [[.get_stats()_4]] - `method` [EXTRACTED]
+- [[.get_stats()_3]] - `method` [EXTRACTED]
 - [[.start()]] - `method` [EXTRACTED]
 - [[.stop()_1]] - `method` [EXTRACTED]
 - [[Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali]] - `rationale_for` [EXTRACTED]

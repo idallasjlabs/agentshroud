@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "docs/papers"
+community: "Architecture Docs"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Architecture_Docs
 ---
 
 # II-B. STPA-Sec
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[II. Related Work]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/papers
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

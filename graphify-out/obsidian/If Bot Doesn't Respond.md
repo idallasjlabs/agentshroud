@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Setup Docs"
+community: "Gateway Test Suite"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # If Bot Doesn't Respond
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 1 Test Telegram Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

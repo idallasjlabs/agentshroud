@@ -2,7 +2,7 @@
 source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
 type: "document"
 community: "Bot Skill Config"
-location: "L381"
+location: "L478"
 tags:
   - graphify/document
   - graphify/EXTRACTED

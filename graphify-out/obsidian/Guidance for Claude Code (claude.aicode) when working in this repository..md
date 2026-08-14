@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "CLAUDE.md"
+community: "Planning Docs"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CLAUDEmd
+  - community/Planning_Docs
 ---
 
 # Guidance for Claude Code (claude.ai/code) when working in this repository.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CLAUDE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CLAUDEmd
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

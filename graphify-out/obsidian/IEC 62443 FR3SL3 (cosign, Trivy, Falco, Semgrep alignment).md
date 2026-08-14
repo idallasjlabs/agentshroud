@@ -1,12 +1,12 @@
 ---
 source_file: ".github/workflows/security-scan.yml"
 type: "concept"
-community: ".github/workflows"
+community: "Bot Skill Config"
 location: "image-signing job comment"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/github/workflows
+  - community/Bot_Skill_Config
 ---
 
 # IEC 62443 FR3/SL3 (cosign, Trivy, Falco, Semgrep alignment)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Image Signing & Provenance Job (cosign, keyless OIDC, IEC 62443 FR3SL3)]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/github/workflows
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

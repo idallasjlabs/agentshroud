@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "Architecture Docs"
+community: "Setup Docs"
 location: "L538"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Setup_Docs
 ---
 
 # How to Access Workspace Files
@@ -16,4 +16,4 @@ tags:
 - [[Option B Bind Mount (Easier for You)]] - `contains` [EXTRACTED]
 - [[What Does OpenClaw Actually Need to Write]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

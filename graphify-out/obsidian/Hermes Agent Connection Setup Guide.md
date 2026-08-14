@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Setup Docs"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Hermes Agent Connection Setup Guide
@@ -17,4 +17,4 @@ tags:
 - [[Tailscale Serve URL marvin.tail240ea8.ts.net]] - `references` [EXTRACTED]
 - [[hermes_api_key Docker Secret Setup]] - `requires` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

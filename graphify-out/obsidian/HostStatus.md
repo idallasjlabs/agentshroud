@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "src/interfaces"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/src/interfaces
 ---
 
 # HostStatus
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[Outcome classification for a single host.]] - `rationale_for` [EXTRACTED]
-- [[Path_32]] - `uses` [INFERRED]
+- [[Path_33]] - `uses` [INFERRED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
 - [[TestClassify]] - `uses` [INFERRED]
 - [[TestHostResult]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[str]] - `inherits` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/src/interfaces

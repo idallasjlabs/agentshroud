@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "browser-extension/README.md"
+community: "Bot Skill Config"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-extension/READMEmd
+  - community/Bot_Skill_Config
 ---
 
 # Implementation Status
@@ -20,4 +20,4 @@ tags:
 - [[Step 3 Update agentshroud.yaml]] - `contains` [EXTRACTED]
 - [[Step 4 Test the Protection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-extension/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

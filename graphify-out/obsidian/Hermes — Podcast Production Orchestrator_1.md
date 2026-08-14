@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-hermes/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Docker Deploy Scripts"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Docker_Deploy_Scripts
 ---
 
 # Hermes — Podcast Production Orchestrator
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_52]] - `contains` [EXTRACTED]
 - [[Usage_55]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts

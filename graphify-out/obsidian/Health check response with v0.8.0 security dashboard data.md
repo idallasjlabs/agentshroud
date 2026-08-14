@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
+community: "docs/README.md"
 location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/docs/READMEmd
 ---
 
 # Health check response with v0.8.0 security dashboard data
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[StatusResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/docs/READMEmd

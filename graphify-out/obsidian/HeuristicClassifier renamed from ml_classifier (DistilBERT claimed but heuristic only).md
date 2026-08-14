@@ -1,12 +1,12 @@
 ---
 source_file: "docs/agentshroud-security-overview-v0.8.0.md"
 type: "concept"
-community: "Architecture Docs"
+community: "gateway/tools"
 location: "HIGH-1 finding"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/gateway/tools
 ---
 
 # HeuristicClassifier: renamed from ml_classifier (DistilBERT claimed but heuristic only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Overview v0.8.0]] - `documents` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/concept #graphify/EXTRACTED #community/gateway/tools

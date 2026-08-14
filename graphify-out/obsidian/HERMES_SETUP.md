@@ -1,18 +1,18 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "docs/project"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Gateway_Security_Module
 ---
 
 # HERMES_SETUP.md
 
 ## Connections
-- [[Approval Queue_1]] - `references` [EXTRACTED]
+- [[Approval Queue_2]] - `references` [EXTRACTED]
 - [[EgressFilter_3]] - `references` [EXTRACTED]
 - [[Hermes Agent (OpenAI-compatible LLM endpoint)]] - `references` [EXTRACTED]
 - [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[PII (Personally Identifiable Information)]] - `references` [EXTRACTED]
 - [[Prompt Injection]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

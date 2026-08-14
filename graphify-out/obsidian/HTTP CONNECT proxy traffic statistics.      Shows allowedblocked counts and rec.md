@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
-location: "L509"
+community: "PII Sanitizer Pipeline"
+location: "L516"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # HTTP CONNECT proxy traffic statistics.      Shows allowed/blocked counts and rec
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[proxy_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

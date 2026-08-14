@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "HTTP Forwarder"
+community: "SOC Collaborator Lifecycle"
 location: "L475"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # If the outbound pipeline crashes, the bot response must be withheld.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_webhook_outbound_pipeline_crash_fails_closed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Security Module"
 location: "L204"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Dashboard
+  - community/Gateway_Security_Module
 ---
 
 # HealthStatus
@@ -18,4 +18,4 @@ tags:
 - [[ServiceStatus]] - `uses` [INFERRED]
 - [[_engine_health_to_health()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Dashboard
+#graphify/code #graphify/INFERRED #community/Gateway_Security_Module

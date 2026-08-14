@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "rationale"
-community: "Group Workspace Isolation"
+community: "Gateway Test Suite"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Workspace_Isolation
+  - community/Gateway_Test_Suite
 ---
 
 # High-level shared-memory API wrapping UserSessionManager storage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SharedMemoryManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Workspace_Isolation
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

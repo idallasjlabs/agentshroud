@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "docs/vault"
+community: "Setup Docs"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Setup_Docs
 ---
 
 # HTTP_PROXY / HTTPS_PROXY
@@ -20,4 +20,4 @@ tags:
 - [[Value_3]] - `contains` [EXTRACTED]
 - [[When Enabled]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

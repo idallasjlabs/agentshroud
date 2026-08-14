@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "Group RBAC Roles"
+community: "Gateway Test Suite"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/Gateway_Test_Suite
 ---
 
 # GroupRoleResolver
@@ -49,4 +49,4 @@ tags:
 - [[test_group_rbac.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

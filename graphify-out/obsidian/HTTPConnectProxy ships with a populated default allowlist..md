@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Gateway Security Module"
 location: "L29"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Security_Module
 ---
 
 # HTTPConnectProxy ships with a populated default allowlist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_default_allowed_domains_non_empty()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

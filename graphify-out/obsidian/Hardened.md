@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "CHANGELOG.md"
+community: "Gateway Test Suite"
 location: "L408"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Gateway_Test_Suite
 ---
 
 # Hardened
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1.0.0 — featv1.0.0 — Fortress (2026-03-31)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Custom Skills"
+community: "skills/openclaw"
 location: "L290"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/skills/openclaw
 ---
 
 # Incident Response
@@ -16,4 +16,4 @@ tags:
 - [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
 - [[Security Event Triggers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

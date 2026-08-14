@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "concept"
-community: "Bot Container Scripts"
+community: "docs/diagrams"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/docs/diagrams
 ---
 
 # Hermes Competitive Intelligence Email job
@@ -16,4 +16,4 @@ tags:
 - [[agentshroud-email-send.sh]] - `references` [EXTRACTED]
 - [[render_md_email.py_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/concept #graphify/EXTRACTED #community/docs/diagrams

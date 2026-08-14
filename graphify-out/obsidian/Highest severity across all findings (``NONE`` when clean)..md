@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "gateway/runtime"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/gateway/runtime
 ---
 
 # Highest severity across all findings (``NONE`` when clean).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.severity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/gateway/runtime

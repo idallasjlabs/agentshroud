@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "docs/papers"
+community: "Architecture Docs"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Architecture_Docs
 ---
 
 # III-A. Attacker Model
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[III. Threat Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/papers
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

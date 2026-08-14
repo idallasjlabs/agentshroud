@@ -1,12 +1,12 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "branding/INDEX.md"
+community: "Security Docs"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/INDEXmd
+  - community/Security_Docs
 ---
 
 # Icon Sets
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📊 Asset Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/INDEXmd
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

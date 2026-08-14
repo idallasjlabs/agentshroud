@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "document"
-community: "skills/openclaw"
+community: "docs/compliance"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/docs/compliance
 ---
 
 # Himalaya MML Message Composition Reference
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OpenClaw Skill himalaya (IMAPSMTP email CLI)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/docs/compliance

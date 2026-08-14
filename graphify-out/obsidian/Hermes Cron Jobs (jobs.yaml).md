@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "document"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # Hermes Cron Jobs (jobs.yaml)
@@ -17,4 +17,4 @@ tags:
 - [[Daily Memory Journal Cron (Hermes nightly consolidation)]] - `implements` [EXTRACTED]
 - [[Hermes Competitive Analysis Prompt]] - `referenced_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Security Docs"
+community: "Bot Skill Config"
 location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Skill_Config
 ---
 
 # HIGH VALUE:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 3 Plan Reality Check]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

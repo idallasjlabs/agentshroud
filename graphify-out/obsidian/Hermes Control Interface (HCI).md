@@ -1,11 +1,11 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "concept"
-community: "CHANGELOG.md"
+community: "skills/openclaw"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/skills/openclaw
 ---
 
 # Hermes Control Interface (HCI)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
 - [[Hermes Bot]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

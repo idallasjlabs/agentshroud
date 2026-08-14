@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/configuration.md"
 type: "document"
-community: "skills/openclaw"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Bot_Skill_Config
 ---
 
 # Himalaya Configuration Reference
@@ -23,4 +23,4 @@ tags:
 - [[iCloud Configuration]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

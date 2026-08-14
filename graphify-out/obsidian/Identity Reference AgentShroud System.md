@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/IDENTITY.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Identity Reference: AgentShroud System
@@ -20,4 +20,4 @@ tags:
 - [[🔐 Security]] - `contains` [EXTRACTED]
 - [[🤖 Your AI Bot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

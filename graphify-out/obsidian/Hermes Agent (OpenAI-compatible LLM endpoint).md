@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "concept"
-community: "docs/project"
+community: "Gateway Security Module"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Gateway_Security_Module
 ---
 
 # Hermes Agent (OpenAI-compatible LLM endpoint)
@@ -14,4 +14,4 @@ tags:
 - [[HERMES_SETUP]] - `references` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/project
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Security_Module

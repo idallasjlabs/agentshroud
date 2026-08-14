@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Setup Docs"
+community: "Docker Deploy Scripts"
 location: "L385"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Docker_Deploy_Scripts
 ---
 
 # Health Check
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 7 Verify Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts

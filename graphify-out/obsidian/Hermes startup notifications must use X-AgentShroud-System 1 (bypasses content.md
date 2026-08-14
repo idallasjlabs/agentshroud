@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Community 1521"
 location: "L406"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Community_1521
 ---
 
 # Hermes startup notifications must use X-AgentShroud-System: 1 (bypasses content
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_hermes_startup_telegram_calls_use_system_header()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Community_1521

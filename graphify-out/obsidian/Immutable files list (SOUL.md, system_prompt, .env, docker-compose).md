@@ -1,12 +1,12 @@
 ---
 source_file: "docs/redteam/04-separation-of-privilege.md"
 type: "concept"
-community: "docs/redteam"
+community: "Bot Skill Config"
 location: "line 153"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/redteam
+  - community/Bot_Skill_Config
 ---
 
 # Immutable files list (SOUL.md, system_prompt, .env, docker-compose)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Separation of Privilege (Remediation) — gateway read-only to agent]] - `enforces` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/redteam
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

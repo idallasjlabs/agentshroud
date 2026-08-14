@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # Immediate (within 2 hours)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Incident_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/vault

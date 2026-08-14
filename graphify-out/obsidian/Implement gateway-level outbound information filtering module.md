@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "Planning Docs"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/docs/vault
 ---
 
 # Implement gateway-level outbound information filtering module
@@ -22,4 +22,4 @@ tags:
 - [[Severity_9]] - `contains` [EXTRACTED]
 - [[Verification_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/vault

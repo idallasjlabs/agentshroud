@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # IEC 62443 Compliance Matrix (FR1-FR7 Foundational Requirements)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

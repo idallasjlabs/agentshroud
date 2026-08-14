@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/README.md"
 type: "document"
-community: "CONTRIBUTING.md"
+community: "docs/vault"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CONTRIBUTINGmd
+  - community/docs/vault
 ---
 
 # Implementation Status
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Utility Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CONTRIBUTINGmd
+#graphify/document #graphify/EXTRACTED #community/docs/vault

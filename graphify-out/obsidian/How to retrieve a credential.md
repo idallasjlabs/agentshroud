@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "docker/bot-capabilities.md"
+community: "Gateway Test Suite"
 location: "L225"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/bot-capabilitiesmd
+  - community/Gateway_Test_Suite
 ---
 
 # How to retrieve a credential
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

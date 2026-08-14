@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Security Module"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Security_Module
 ---
 
 # Health Checks Runbook
@@ -16,4 +16,4 @@ tags:
 - [[Gateway Health Endpoints]] - `describes` [EXTRACTED]
 - [[troubleshooting]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

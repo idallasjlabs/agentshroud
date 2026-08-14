@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/http-proxy-256x256.png"
 type: "image"
-community: "branding/icons"
+community: "Bot Skill Config"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/branding/icons
+  - community/Bot_Skill_Config
 ---
 
 # HTTP Proxy — Module Icon
@@ -15,4 +15,4 @@ tags:
 - [[Prompt Guard — Module Icon]] - `conceptually_related_to` [INFERRED]
 - [[SSH Proxy — Module Icon]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/branding/icons
+#graphify/image #graphify/INFERRED #community/Bot_Skill_Config

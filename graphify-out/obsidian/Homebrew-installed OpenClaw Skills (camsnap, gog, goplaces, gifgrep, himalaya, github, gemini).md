@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/camsnap/SKILL.md"
 type: "concept"
-community: "skills/openclaw"
+community: "docs/compliance"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/docs/compliance
 ---
 
 # Homebrew-installed OpenClaw Skills (camsnap, gog, goplaces, gifgrep, himalaya, github, gemini)
@@ -18,4 +18,4 @@ tags:
 - [[OpenClaw Skill goplaces (Google Places API CLI)]] - `member_of` [EXTRACTED]
 - [[OpenClaw Skill himalaya (IMAPSMTP email CLI)]] - `member_of` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/skills/openclaw
+#graphify/concept #graphify/EXTRACTED #community/docs/compliance

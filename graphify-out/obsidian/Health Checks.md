@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "docs/vault"
+community: "skills/openclaw"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/skills/openclaw
 ---
 
 # Health Checks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Proxy Layer"
 location: "L278"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Proxy_Layer
 ---
 
 # Important Behaviors
@@ -19,4 +19,4 @@ tags:
 - [[`AuditChain.append_block()` — Guaranteed Persistence Guarantee]] - `contains` [EXTRACTED]
 - [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Proxy_Layer

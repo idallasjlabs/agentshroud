@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "gateway/tools"
+community: "docs/diagrams"
 location: "L180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/tools
+  - community/docs/diagrams
 ---
 
 # HostRunner
@@ -16,4 +16,4 @@ tags:
 - [[run_multi_host()]] - `references` [EXTRACTED]
 - [[ssh_runner()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/tools
+#graphify/code #graphify/EXTRACTED #community/docs/diagrams
