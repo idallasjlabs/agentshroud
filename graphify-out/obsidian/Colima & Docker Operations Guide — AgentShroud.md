@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "docs/runbooks"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Gateway_Test_Suite
 ---
 
 # Colima & Docker Operations Guide — AgentShroud
@@ -26,4 +26,4 @@ tags:
 - [[9. VPN Networking Fix (Cisco AnyConnect)]] - `contains` [EXTRACTED]
 - [[colima-docker-guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

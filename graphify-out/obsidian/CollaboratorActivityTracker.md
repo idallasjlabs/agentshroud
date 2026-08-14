@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "Gateway Security Module"
+community: "HTTP Forwarder"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/HTTP_Forwarder
 ---
 
 # CollaboratorActivityTracker
@@ -24,7 +24,7 @@ tags:
 - [[.test_failed_write_makes_unhealthy()]] - `calls` [EXTRACTED]
 - [[.test_initial_state_healthy()]] - `calls` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[Path_30]] - `uses` [INFERRED]
+- [[Path_31]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_3]] - `uses` [INFERRED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `uses` [INFERRED]
 - [[TestDefaultBotId]] - `uses` [INFERRED]
@@ -64,4 +64,4 @@ tags:
 - [[test_unknown_user_recorded_when_dynamic_tracking_enabled()]] - `calls` [EXTRACTED]
 - [[tracker()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder

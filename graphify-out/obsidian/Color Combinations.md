@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "branding/colors"
+community: "branding/typography"
 location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/colors
+  - community/branding/typography
 ---
 
 # Color Combinations
@@ -16,4 +16,4 @@ tags:
 - [[Dark Theme]] - `contains` [EXTRACTED]
 - [[Light Theme]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/colors
+#graphify/document #graphify/EXTRACTED #community/branding/typography

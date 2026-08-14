@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "CLI Client (Rust)"
+community: "docs/testing"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI_Client_Rust
+  - community/docs/testing
 ---
 
 # CollabMode
@@ -16,4 +16,4 @@ tags:
 - [[Display]] - `implements` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI_Client_Rust
+#graphify/code #graphify/EXTRACTED #community/docs/testing

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
+community: "Collaborator Response Templates"
 location: "L393"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Collaborator_Response_Templates
 ---
 
 # Clear the list of detected leakages.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.clear_detected_leakages()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates

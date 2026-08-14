@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Architecture Docs"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/docs/vault
 ---
 
 # Compliance Alignment (9 standards)
@@ -15,4 +15,4 @@ tags:
 - [[Website Image CVE Transparency Section]] - `conceptually_related_to` [INFERRED]
 - [[Website Standards Alignment  Compliance Grid]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

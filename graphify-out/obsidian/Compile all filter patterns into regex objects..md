@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Bot CVE Scorecard"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Bot_CVE_Scorecard
 ---
 
 # Compile all filter patterns into regex objects.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._compile_patterns()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Bot_CVE_Scorecard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
+community: "Egress & RBAC Security Core"
 location: "L487"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Clean up old session data.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.cleanup_old_sessions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

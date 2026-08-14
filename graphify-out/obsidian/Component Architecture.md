@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Component Architecture
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud System Architecture Document (SAD)]] - `contains` [EXTRACTED]
 - [[Core Components]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "skills/openclaw"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/skills/openclaw
 ---
 
 # Configuration for key rotation policies and schedules.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[KeyRotationConfig_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw

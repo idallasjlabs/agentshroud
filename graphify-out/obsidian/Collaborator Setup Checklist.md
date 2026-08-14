@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
 type: "document"
-community: "Security Docs"
+community: "ESP32 Firmware"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/ESP32_Firmware
 ---
 
 # Collaborator Setup Checklist
@@ -19,4 +19,4 @@ tags:
 - [[Required if using external LLM providers]] - `contains` [EXTRACTED]
 - [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware

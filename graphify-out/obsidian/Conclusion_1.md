@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "Planning Docs"
+community: "Bot Container Scripts"
 location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Bot_Container_Scripts
 ---
 
 # Conclusion
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts

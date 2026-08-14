@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Inbound Tests"
-location: "L8067"
+community: "Group RBAC Roles"
+location: "L8136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Tests
+  - community/Group_RBAC_Roles
 ---
 
 # Collaborator must receive suspension notice at block 10.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collab_gets_suspension_notice_at_10_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC_Roles

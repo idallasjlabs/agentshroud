@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "concept"
-community: "Custom Skills"
+community: "Bot Skill Config"
 location: "lines 21-26"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # Concept: Module Enforcement Heat Map (E/M/A/C/?/—)
@@ -16,4 +16,4 @@ tags:
 - [[blueteamreferencessteve-hay-assessment.md — Steven Hay STPA-Sec Assessment]] - `references` [EXTRACTED]
 - [[scriptsREADME.md — Utility Scripts Catalog]] - `references` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Custom_Skills
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

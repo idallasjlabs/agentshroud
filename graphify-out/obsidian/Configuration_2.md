@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "Architecture Docs"
+community: "Setup Docs"
 location: "L495"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Setup_Docs
 ---
 
 # Configuration:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Recommended Configuration for Your Use Case]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

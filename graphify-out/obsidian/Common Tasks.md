@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Bot Skill Config"
 location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Bot_Skill_Config
 ---
 
 # Common Tasks
@@ -18,4 +18,4 @@ tags:
 - [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 - [[Updating Telegram Bot Token]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

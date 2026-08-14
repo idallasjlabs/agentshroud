@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Bot Skill Config"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_Skill_Config
 ---
 
 # Configuration for :class:`DataExfilVolumeGuard`.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DataExfilVolumeConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # Confidence Threshold
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

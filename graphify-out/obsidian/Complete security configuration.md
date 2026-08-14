@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "docs/testing"
 location: "L136"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/testing
 ---
 
 # Complete security configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecurityConfig_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/testing

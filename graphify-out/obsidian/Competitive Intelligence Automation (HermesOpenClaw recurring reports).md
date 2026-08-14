@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "concept"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # Competitive Intelligence Automation (Hermes/OpenClaw recurring reports)
@@ -16,4 +16,4 @@ tags:
 - [[OpenClaw Bot Identity (IDENTITY.md)]] - `references` [EXTRACTED]
 - [[OpenClaw Competitive Analysis Prompt]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

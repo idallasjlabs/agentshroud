@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "branding/colors"
 location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/branding/colors
 ---
 
 # Codex CLI
@@ -18,4 +18,4 @@ tags:
 - [[Flags]] - `contains` [EXTRACTED]
 - [[Reviewing PRs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/branding/colors

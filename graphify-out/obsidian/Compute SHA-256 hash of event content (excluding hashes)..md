@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "Audit Export Pipeline"
+community: "Telegram Inbound Tests"
 location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Telegram_Inbound_Tests
 ---
 
 # Compute SHA-256 hash of event content (excluding hashes).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.compute_content_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Tests

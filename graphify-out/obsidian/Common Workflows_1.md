@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Architecture Docs"
+community: ".mcp.json"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/mcpjson
 ---
 
 # Common Workflows
@@ -19,4 +19,4 @@ tags:
 - [[Workflow 4 Bulk File Operations]] - `contains` [EXTRACTED]
 - [[Workflow 5 Interactive Editing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/mcpjson

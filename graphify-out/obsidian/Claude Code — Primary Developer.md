@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "concept"
-community: "AGENTS.md"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AGENTSmd
+  - community/docs/vault
 ---
 
 # Claude Code — Primary Developer
@@ -14,4 +14,4 @@ tags:
 - [[Codex Prime Directive Not Primary Developer]] - `rationale_for` [EXTRACTED]
 - [[Multi-Agent Hierarchy (ClaudeGeminiCodex)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/AGENTSmd
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

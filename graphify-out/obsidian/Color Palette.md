@@ -1,12 +1,12 @@
 ---
 source_file: "branding/README.md"
 type: "document"
-community: "branding/README.md"
+community: "Gateway Test Suite"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/Gateway_Test_Suite
 ---
 
 # Color Palette
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Brand Colors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "Progressive Trust Config"
-location: "L66"
+community: "Gateway Test Suite"
+location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/Gateway_Test_Suite
 ---
 
 # Configuration for the progressive trust system.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ProgressiveTrustConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

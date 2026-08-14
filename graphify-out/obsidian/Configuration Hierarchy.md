@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Configuration Hierarchy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Decision_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

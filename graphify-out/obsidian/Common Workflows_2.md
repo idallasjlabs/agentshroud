@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Bot Skill Config"
 location: "L384"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Bot_Skill_Config
 ---
 
 # Common Workflows
@@ -19,4 +19,4 @@ tags:
 - [[Set up multiple apps]] - `contains` [EXTRACTED]
 - [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

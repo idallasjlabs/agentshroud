@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Gateway Proxy Layer"
+community: "Bot Skill Config"
 location: "L856"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Bot_Skill_Config
 ---
 
 # Clean shutdown — close all connections.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.shutdown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

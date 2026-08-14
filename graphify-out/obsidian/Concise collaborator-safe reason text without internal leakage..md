@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
-location: "L2182"
+community: "Gateway Test Suite"
+location: "L2190"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Gateway_Test_Suite
 ---
 
 # Concise collaborator-safe reason text without internal leakage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._collaborator_safe_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

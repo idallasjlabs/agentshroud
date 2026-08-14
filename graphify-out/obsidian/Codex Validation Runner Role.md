@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "concept"
-community: "AGENTS.md"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/AGENTSmd
+  - community/docs/vault
 ---
 
 # Codex Validation Runner Role
@@ -14,4 +14,4 @@ tags:
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 - [[validation-runner.agent]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/AGENTSmd
+#graphify/concept #graphify/INFERRED #community/docs/vault

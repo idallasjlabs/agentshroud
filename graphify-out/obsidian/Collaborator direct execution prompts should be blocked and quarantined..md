@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
-location: "L2903"
+community: "CHANGELOG.md"
+location: "L2972"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/CHANGELOGmd
 ---
 
 # Collaborator direct execution prompts should be blocked and quarantined.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_execution_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/CHANGELOGmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Inbound Tests"
-location: "L7988"
+community: "Group RBAC Roles"
+location: "L8057"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Tests
+  - community/Group_RBAC_Roles
 ---
 
 # Collaborator must receive warning text when they reach 3 security blocks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collab_gets_alert_notice_at_3_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC_Roles

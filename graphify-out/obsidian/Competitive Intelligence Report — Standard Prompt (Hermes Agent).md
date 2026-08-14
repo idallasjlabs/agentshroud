@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/competitive-analysis.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # Competitive Intelligence Report — Standard Prompt (Hermes Agent)
@@ -18,4 +18,4 @@ tags:
 - [[REPORT STRUCTURE]] - `contains` [EXTRACTED]
 - [[competitive-analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "docs/runbooks"
+community: "Planning Docs"
 location: "L473"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Planning_Docs
 ---
 
 # ClamAV: `SelfCheck: Database status OK.`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Known Log Messages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

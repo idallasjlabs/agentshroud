@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Egress & RBAC Security Core"
+community: "skills/openclaw"
 location: "L454"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/skills/openclaw
 ---
 
 # Compute a heuristic consistency score between query and response.          Retur
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.score_response_consistency()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw

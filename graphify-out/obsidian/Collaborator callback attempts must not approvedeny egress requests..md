@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
-location: "L5634"
+community: "PII Config & Test Fixtures"
+location: "L5703"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Collaborator callback attempts must not approve/deny egress requests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_egress_callback_from_collaborator_is_rejected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

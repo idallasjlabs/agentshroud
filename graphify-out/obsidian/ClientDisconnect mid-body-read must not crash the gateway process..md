@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Approval Queue Tests"
+community: "Forward Routing & Approval"
 location: "L394"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/Forward_Routing__Approval
 ---
 
 # ClientDisconnect mid-body-read must not crash the gateway process.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTelegramProxyClientDisconnect]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

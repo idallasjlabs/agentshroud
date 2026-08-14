@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "CLI Command Client (Rust)"
+community: "Web Control Center"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI_Command_Client_Rust
+  - community/Web_Control_Center
 ---
 
 # Commands
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Cli]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI_Command_Client_Rust
+#graphify/code #graphify/EXTRACTED #community/Web_Control_Center

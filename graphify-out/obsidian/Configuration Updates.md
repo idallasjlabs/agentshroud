@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "docs/operations"
+community: "Gateway Test Suite"
 location: "L445"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Gateway_Test_Suite
 ---
 
 # Configuration Updates
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. System Updates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

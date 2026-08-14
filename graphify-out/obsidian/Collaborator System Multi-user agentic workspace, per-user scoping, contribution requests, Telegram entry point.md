@@ -1,12 +1,12 @@
 ---
 source_file: "docs/agentshroud-knowledge.md"
 type: "concept"
-community: "docs/agentshroud-knowledge.md"
+community: "gateway/tools"
 location: "Collaborator System — Full Detail"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/agentshroud-knowledgemd
+  - community/gateway/tools
 ---
 
 # Collaborator System: Multi-user agentic workspace, per-user scoping, contribution requests, Telegram entry point
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud-knowledge]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/agentshroud-knowledgemd
+#graphify/concept #graphify/EXTRACTED #community/gateway/tools

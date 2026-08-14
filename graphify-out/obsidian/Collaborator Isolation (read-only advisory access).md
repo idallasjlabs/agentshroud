@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
 type: "concept"
-community: "Bot Container Scripts"
+community: "ESP32 Firmware"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/ESP32_Firmware
 ---
 
 # Collaborator Isolation (read-only advisory access)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OpenClaw Config Workspace PUBLIC-INFO]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/concept #graphify/EXTRACTED #community/ESP32_Firmware

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.svg"
 type: "concept"
-community: "docs/diagrams"
+community: "Bot Skill Config"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Bot_Skill_Config
 ---
 
 # Claude Code (claude-sonnet-4-6) — Lead Engineer / Primary Developer
@@ -15,4 +15,4 @@ tags:
 - [[Gemini CLI — Test Engineer  Secondary Developer]] - `calls` [EXTRACTED]
 - [[Isaiah Jefferson (Product Owner  Architect  PM  Operator)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/diagrams
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

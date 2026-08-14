@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "scripts/sync-cve-registry.py"
 location: "L276"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/scripts/sync-cve-registrypy
 ---
 
 # Configuration for compliance audit export functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AuditExportConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

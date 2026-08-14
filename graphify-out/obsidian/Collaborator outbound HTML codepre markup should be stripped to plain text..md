@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
 community: "Gateway Test Suite"
-location: "L2100"
+location: "L2110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

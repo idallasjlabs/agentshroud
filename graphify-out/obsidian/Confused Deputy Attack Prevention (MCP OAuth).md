@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "concept"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "gateway/security/oauth_security.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # Confused Deputy Attack Prevention (MCP OAuth)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[oauth_security.py_2]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

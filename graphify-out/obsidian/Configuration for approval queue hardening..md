@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Egress & RBAC Security Core"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Configuration for approval queue hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalHardeningConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

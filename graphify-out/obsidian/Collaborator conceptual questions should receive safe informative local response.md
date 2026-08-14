@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
-location: "L3103"
+community: "PII Config & Test Fixtures"
+location: "L3172"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Collaborator conceptual questions should receive safe informative local response
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_safe_info_query_gets_local_safe_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

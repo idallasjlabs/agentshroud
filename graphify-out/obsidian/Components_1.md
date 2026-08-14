@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "docs/ssh-capability.md"
+community: "docker/bot-capabilities.md"
 location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/ssh-capabilitymd
+  - community/docker/bot-capabilitiesmd
 ---
 
 # Components
@@ -18,4 +18,4 @@ tags:
 - [[`SSHConfig`  `SSHHostConfig` (`gatewayingest_apissh_config.py`)]] - `contains` [EXTRACTED]
 - [[`SSHProxy` (`gatewayssh_proxyproxy.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/ssh-capabilitymd
+#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd

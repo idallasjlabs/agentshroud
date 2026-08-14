@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Gateway Test Suite"
 location: "L95"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Security_Module
+  - community/Gateway_Test_Suite
 ---
 
 # CompetitiveIntelReport
@@ -32,7 +32,7 @@ tags:
 - [[Fetcher]] - `uses` [INFERRED]
 - [[IntelReportStore_1]] - `uses` [INFERRED]
 - [[IntelReportStore]] - `calls` [EXTRACTED]
-- [[Path_29]] - `uses` [INFERRED]
+- [[Path_30]] - `uses` [INFERRED]
 - [[Schema for a Hermes-generated competitive intelligence report.      The ``conten]] - `rationale_for` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `uses` [INFERRED]
 - [[TestFetchOutcome]] - `uses` [INFERRED]
@@ -49,4 +49,4 @@ tags:
 - [[test_citation_verifier.py]] - `imports` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Security_Module
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

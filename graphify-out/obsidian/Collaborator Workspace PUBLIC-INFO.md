@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Bot Container Scripts"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Gateway_Test_Suite
 ---
 
 # Collaborator Workspace PUBLIC-INFO
@@ -19,4 +19,4 @@ tags:
 - [[RBAC — Role-Based Access Control]] - `references` [EXTRACTED]
 - [[Transparent Proxy Design Philosophy]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

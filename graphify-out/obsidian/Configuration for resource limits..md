@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "LLM Proxy Resource Guard"
+community: "Setup Docs"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/Setup_Docs
 ---
 
 # Configuration for resource limits.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ResourceLimits]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/rationale #graphify/EXTRACTED #community/Setup_Docs

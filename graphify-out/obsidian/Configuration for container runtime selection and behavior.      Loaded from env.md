@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Planning Docs"
 location: "L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # Configuration for container runtime selection and behavior.      Loaded from env
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RuntimeConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

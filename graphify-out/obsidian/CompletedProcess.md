@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Bot Skill Config"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_Skill_Config
 ---
 
 # CompletedProcess
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._run()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

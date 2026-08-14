@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
 type: "document"
-community: "skills/openclaw"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Gateway_Test_Suite
 ---
 
 # CodexBar CLI Quick Reference
@@ -14,4 +14,4 @@ tags:
 - [[CodexBar CLI]] - `documents` [EXTRACTED]
 - [[Model usage]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

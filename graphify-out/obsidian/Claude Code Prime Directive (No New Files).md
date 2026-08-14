@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "AGENTS.md"
+community: "docs/vault"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/AGENTSmd
+  - community/docs/vault
 ---
 
 # Claude Code Prime Directive (No New Files)
@@ -16,4 +16,4 @@ tags:
 - [[test-augmenter.agent]] - `semantically_similar_to` [INFERRED]
 - [[validation-runner.agent]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/AGENTSmd
+#graphify/rationale #graphify/INFERRED #community/docs/vault

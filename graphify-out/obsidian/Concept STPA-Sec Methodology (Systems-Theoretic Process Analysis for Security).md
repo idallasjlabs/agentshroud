@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "concept"
-community: "Custom Skills"
+community: "Bot Skill Config"
 location: "line 10"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # Concept: STPA-Sec Methodology (Systems-Theoretic Process Analysis for Security)
@@ -17,4 +17,4 @@ tags:
 - [[blueteamreferencessteve-hay-assessment.md — Steven Hay STPA-Sec Assessment]] - `uses` [EXTRACTED]
 - [[blueteamreferencessteve-hay-plan.md — Red Team Assessment Plan]] - `uses` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Custom_Skills
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

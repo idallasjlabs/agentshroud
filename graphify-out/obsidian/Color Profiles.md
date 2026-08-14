@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "branding/guidelines"
+community: "Architecture Docs"
 location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/Architecture_Docs
 ---
 
 # Color Profiles
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[File Formats & Deliverables]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/guidelines
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

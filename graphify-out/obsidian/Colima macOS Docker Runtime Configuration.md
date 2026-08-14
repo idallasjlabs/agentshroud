@@ -1,12 +1,12 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "document"
-community: "CHEATSHEET.md"
+community: "Gateway Test Suite"
 location: "lines 53-90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CHEATSHEETmd
+  - community/Gateway_Test_Suite
 ---
 
 # Colima macOS Docker Runtime Configuration
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
 - [[Colima macOS Docker Runtime (Replaces Docker Desktop)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CHEATSHEETmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

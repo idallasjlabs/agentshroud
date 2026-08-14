@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gmail_credential_retrieval.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Bot Skill Config"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_Skill_Config
 ---
 
 # CompletedProcess
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_completed()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "docs/user-guide.md"
+community: "Gateway Test Suite"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/user-guidemd
+  - community/Gateway_Test_Suite
 ---
 
 # Commands
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Interacting via Telegram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/user-guidemd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

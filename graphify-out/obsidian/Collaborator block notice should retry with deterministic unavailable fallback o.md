@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
-location: "L6786"
+community: "PII Config & Test Fixtures"
+location: "L6855"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Collaborator block notice should retry with deterministic unavailable fallback o
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_notify_user_blocked_uses_collaborator_fallback_when_send_fails()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

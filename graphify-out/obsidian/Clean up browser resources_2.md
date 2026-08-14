@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "Custom Skills"
+community: "Gateway Security Module"
 location: "L402"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Gateway_Security_Module
 ---
 
 # Clean up browser resources
 
 ## Connections
-- [[.close()_18]] - `rationale_for` [EXTRACTED]
+- [[.close()_19]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Custom_Skills
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

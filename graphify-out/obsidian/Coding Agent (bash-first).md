@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "branding/colors"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/branding/colors
 ---
 
 # Coding Agent (bash-first)
@@ -26,4 +26,4 @@ tags:
 - [[⚠️ PTY Mode Required!]] - `contains` [EXTRACTED]
 - [[⚠️ Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/branding/colors

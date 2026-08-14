@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "AGENTS.md"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSmd
+  - community/docs/vault
 ---
 
 # Codex Configuration (.codex/config.toml)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSmd
+#graphify/document #graphify/EXTRACTED #community/docs/vault

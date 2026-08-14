@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Gateway Test Suite"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Gateway_Test_Suite
 ---
 
 # Common Queries
@@ -23,4 +23,4 @@ tags:
 - [[Tool usage breakdown]] - `contains` [EXTRACTED]
 - [[session-logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

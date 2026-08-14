@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/competitive-security-matrix.md"
 type: "document"
-community: "Security Docs"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Competitive Security Matrix — AgentShroud vs AI Agent Platforms
@@ -19,4 +19,4 @@ tags:
 - [[Updated Magic Quadrant Position]] - `contains` [EXTRACTED]
 - [[competitive-security-matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
