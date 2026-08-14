@@ -259,16 +259,21 @@ class EnhancedApprovalQueue:
                 f"timeout={timeout_seconds}s"
             )
 
-            # Broadcast to WebSocket clients
-            await self.broadcast(
-                {
-                    "type": "new_request",
-                    "data": {
-                        **item.model_dump(),
-                        "risk_tier": request.details.get("risk_tier", "unknown"),
-                        "tool_name": request.details.get("tool_name", "unknown"),
-                    },
-                }
+            # Broadcast to WebSocket clients. SCRUM-154: fire-and-forget via
+            # create_task (not await) — we're still holding self._lock here,
+            # and a dead client's send() must never wedge every future
+            # submit()/decide()/_timeout_request() call.
+            asyncio.create_task(
+                self.broadcast(
+                    {
+                        "type": "new_request",
+                        "data": {
+                            **item.model_dump(),
+                            "risk_tier": request.details.get("risk_tier", "unknown"),
+                            "tool_name": request.details.get("tool_name", "unknown"),
+                        },
+                    }
+                )
             )
 
             # Send Telegram notification for critical tier
@@ -319,15 +324,18 @@ class EnhancedApprovalQueue:
 
             logger.info(f"Approval request {request_id} timed out (action: {action})")
 
-            # Broadcast timeout
-            await self.broadcast(
-                {
-                    "type": "request_expired",
-                    "data": {
-                        "request_id": request_id,
-                        "timeout_action": action,
-                    },
-                }
+            # Broadcast timeout. SCRUM-154: create_task, not await — see
+            # submit()'s broadcast for why (still holding self._lock here).
+            asyncio.create_task(
+                self.broadcast(
+                    {
+                        "type": "request_expired",
+                        "data": {
+                            "request_id": request_id,
+                            "timeout_action": action,
+                        },
+                    }
+                )
             )
 
     async def wait_for_decision(self, request_id: str, timeout: float = 300) -> bool:
@@ -415,17 +423,20 @@ class EnhancedApprovalQueue:
                 f"(reason: {reason or 'none'})"
             )
 
-            # Broadcast decision
-            await self.broadcast(
-                {
-                    "type": "decision",
-                    "data": {
-                        "request_id": request_id,
-                        "status": status,
-                        "reason": reason,
-                        "decided_by": decided_by,
-                    },
-                }
+            # Broadcast decision. SCRUM-154: create_task, not await — see
+            # submit()'s broadcast for why (still holding self._lock here).
+            asyncio.create_task(
+                self.broadcast(
+                    {
+                        "type": "decision",
+                        "data": {
+                            "request_id": request_id,
+                            "status": status,
+                            "reason": reason,
+                            "decided_by": decided_by,
+                        },
+                    }
+                )
             )
 
             # Load the updated item to return
@@ -496,13 +507,23 @@ class EnhancedApprovalQueue:
         logger.info(f"WebSocket client disconnected (remaining: {len(self.connected_clients)})")
 
     async def broadcast(self, message: dict[str, Any]) -> None:
-        """Send a JSON message to all connected WebSocket clients."""
+        """Send a JSON message to all connected WebSocket clients.
+
+        SCRUM-154: bounds each client's send with a timeout so a single dead
+        client (closed laptop, VPN blip, backgrounded tab — anything that
+        stops reading without a clean TCP close) can never hang this call
+        indefinitely. Callers that invoke broadcast() while holding
+        self._lock (submit/decide/_timeout_request use asyncio.create_task
+        for exactly that reason) still depend on this method eventually
+        returning; without a bound, a stalled send() would leave that
+        fire-and-forget task running forever.
+        """
         disconnected = set()
 
         for client in list(self.connected_clients):
             try:
-                await client.send_json(message)
-            except Exception as e:
+                await asyncio.wait_for(client.send_json(message), timeout=5.0)
+            except (Exception, asyncio.TimeoutError) as e:
                 logger.warning(f"Failed to send to WebSocket client: {e}")
                 disconnected.add(client)
 

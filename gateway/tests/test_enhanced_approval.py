@@ -473,3 +473,98 @@ async def test_websocket_notifications():
         await _aio.wait_for(store.close(), timeout=1.0)
     except Exception:
         pass
+
+
+class _HangingWebSocket:
+    """A WebSocket stand-in whose send_json never returns.
+
+    Models a real-world dead client — laptop closed, VPN blip, backgrounded
+    tab — that stops reading without a clean TCP close, so the OS-level send
+    buffer fills and the write blocks forever.
+    """
+
+    async def send_json(self, message: dict) -> None:
+        await asyncio.Event().wait()  # never set — hangs until cancelled
+
+
+@pytest.mark.asyncio
+async def test_submit_does_not_deadlock_on_hung_websocket_client():
+    """SCRUM-154: a dead WebSocket client must never wedge the approval lock.
+
+    submit()/decide()/_timeout_request() broadcast to connected SOC/dashboard
+    clients while holding self._lock. Before the fix, a single client whose
+    send_json() never returns (dead socket, full send buffer) held the lock
+    forever, blocking every future submit()/decide()/_timeout_request() call
+    — i.e. every approval-gated action from either bot, indefinitely, with
+    no exception ever raised and no CPU/memory pressure to signal the hang.
+    """
+    import tempfile
+
+    store = ApprovalStore(tempfile.mktemp(suffix=".db"))
+    await store.initialize()
+
+    config = ToolRiskConfig()
+    queue = EnhancedApprovalQueue(
+        store=store, config=ApprovalQueueConfig(enforce_mode=True), tool_risk_config=config
+    )
+    queue.connected_clients.add(_HangingWebSocket())
+
+    try:
+        request_id, requires_wait = await asyncio.wait_for(
+            queue.submit_tool_request("exec", {"command": "test"}, "test_agent"),
+            timeout=3.0,
+        )
+    except asyncio.TimeoutError:
+        pytest.fail(
+            "submit() deadlocked with a hung WebSocket client still holding "
+            "the approval lock — SCRUM-154 regression"
+        )
+    assert requires_wait
+    assert request_id
+
+    # decide() must also not deadlock with the same hung client still attached.
+    try:
+        await asyncio.wait_for(
+            queue.decide(request_id, approved=True, decided_by="test"),
+            timeout=3.0,
+        )
+    except asyncio.TimeoutError:
+        pytest.fail(
+            "decide() deadlocked with a hung WebSocket client still holding "
+            "the approval lock — SCRUM-154 regression"
+        )
+
+    try:
+        await asyncio.wait_for(store.close(), timeout=1.0)
+    except Exception:
+        pass
+
+
+@pytest.mark.asyncio
+async def test_broadcast_does_not_hang_forever_on_dead_client():
+    """broadcast() itself must bound its wait per-client, not just rely on
+    callers moving it off the lock — defense in depth so an orphaned
+    fire-and-forget broadcast task can't accumulate forever either."""
+    import tempfile
+
+    store = ApprovalStore(tempfile.mktemp(suffix=".db"))
+    await store.initialize()
+
+    config = ToolRiskConfig()
+    queue = EnhancedApprovalQueue(
+        store=store, config=ApprovalQueueConfig(enforce_mode=True), tool_risk_config=config
+    )
+    queue.connected_clients.add(_HangingWebSocket())
+
+    # broadcast()'s own per-client bound is 5s; give the outer wait headroom
+    # above that so this only fails if broadcast() itself hangs indefinitely,
+    # not merely takes as long as its documented per-client timeout.
+    try:
+        await asyncio.wait_for(queue.broadcast({"type": "test", "data": {}}), timeout=8.0)
+    except asyncio.TimeoutError:
+        pytest.fail("broadcast() hung indefinitely on a dead client — SCRUM-154 regression")
+
+    try:
+        await asyncio.wait_for(store.close(), timeout=1.0)
+    except Exception:
+        pass

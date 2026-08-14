@@ -122,8 +122,11 @@ class ApprovalQueue:
                 }
             )
 
-            # Broadcast to WebSocket clients
-            await self.broadcast({"type": "new_request", "data": item.model_dump()})
+            # Broadcast to WebSocket clients. SCRUM-154: create_task, not
+            # await — we're still holding self._lock here, matching the
+            # pattern already used by _expire_stale below (a dead client's
+            # send() must never wedge every future queue call).
+            asyncio.create_task(self.broadcast({"type": "new_request", "data": item.model_dump()}))
 
             return item
 
@@ -210,16 +213,19 @@ class ApprovalQueue:
                 }
             )
 
-            # Broadcast decision
-            await self.broadcast(
-                {
-                    "type": "decision",
-                    "data": {
-                        "request_id": request_id,
-                        "status": item.status,
-                        "reason": reason,
-                    },
-                }
+            # Broadcast decision. SCRUM-154: create_task, not await — see
+            # submit()'s broadcast for why (still holding self._lock here).
+            asyncio.create_task(
+                self.broadcast(
+                    {
+                        "type": "decision",
+                        "data": {
+                            "request_id": request_id,
+                            "status": item.status,
+                            "reason": reason,
+                        },
+                    }
+                )
             )
 
             # Decided items remain in self.pending for in-session lookups and are
@@ -365,6 +371,12 @@ class ApprovalQueue:
 
         Silently removes clients that have disconnected.
 
+        SCRUM-154: bounds each client's send with a timeout so a single dead
+        client (closed laptop, VPN blip, backgrounded tab) can never hang
+        this call indefinitely — callers that fire this off via
+        asyncio.create_task while holding self._lock still depend on it
+        eventually returning.
+
         Args:
             message: Dictionary to send as JSON
         """
@@ -372,8 +384,8 @@ class ApprovalQueue:
 
         for client in list(self.connected_clients):
             try:
-                await client.send_json(message)
-            except Exception as e:
+                await asyncio.wait_for(client.send_json(message), timeout=5.0)
+            except (Exception, asyncio.TimeoutError) as e:
                 logger.warning(f"Failed to send to WebSocket client: {e}")
                 disconnected.add(client)
 
