@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Web Control Center"
-location: "L67"
+community: "Approval & FastAPI Ingest"
+location: "L726"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Web_Control_Center
+  - graphify/INFERRED
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Any
 
 ## Connections
-- [[.recent()]] - `references` [EXTRACTED]
-- [[.tail()]] - `references` [EXTRACTED]
-- [[_check_host()]] - `references` [EXTRACTED]
+- [[._handler()]] - `references` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[PermissionResult]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_Control_Center
+#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest

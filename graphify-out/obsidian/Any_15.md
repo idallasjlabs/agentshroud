@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L98"
+community: "Setup Docs"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Setup_Docs
 ---
 
 # Any
 
 ## Connections
-- [[.from_dict()]] - `references` [EXTRACTED]
+- [[.generate_report()]] - `references` [EXTRACTED]
+- [[.log_tool_call()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Setup_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Setup Docs"
+community: "Bot Container Scripts"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Bot_Container_Scripts
 ---
 
 # AgentShroud Setup Guide
@@ -25,4 +25,4 @@ tags:
 - [[What's Next]] - `contains` [EXTRACTED]
 - [[setup-guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts

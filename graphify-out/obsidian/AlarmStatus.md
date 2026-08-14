@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Test Suite"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Gateway_Test_Suite
 ---
 
 # AlarmStatus
@@ -16,4 +16,4 @@ tags:
 - [[models.py_1]] - `contains` [EXTRACTED]
 - [[str]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

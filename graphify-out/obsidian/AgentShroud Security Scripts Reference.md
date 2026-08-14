@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Security Docs"
+community: "docs/operations"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/docs/operations
 ---
 
 # AgentShroud Security Scripts Reference
@@ -22,4 +22,4 @@ tags:
 - [[scan.sh_1]] - `contains` [EXTRACTED]
 - [[verify-security.sh_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/operations

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/flows/sequence-diagrams.md"
 type: "document"
-community: "docs/flows"
+community: "Security Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/flows
+  - community/Security_Docs
 ---
 
 # AgentShroud Sequence Diagrams
@@ -19,4 +19,4 @@ tags:
 - [[5. Web Fetch Flow]] - `contains` [EXTRACTED]
 - [[sequence-diagrams]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/flows
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

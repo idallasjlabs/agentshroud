@@ -1,25 +1,20 @@
 ---
-source_file: "gateway/soc/event_adapter.py"
+source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "SOC Dashboard"
-location: "L23"
+community: "docs/vault"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/docs/vault
 ---
 
 # Any
 
 ## Connections
-- [[SecurityEvent_1]] - `uses` [INFERRED]
-- [[Severity_2]] - `uses` [INFERRED]
-- [[_map_severity()]] - `references` [EXTRACTED]
-- [[collect_recent_events()]] - `references` [EXTRACTED]
-- [[from_anomaly_alert()]] - `references` [EXTRACTED]
-- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
-- [[from_dict()]] - `references` [EXTRACTED]
-- [[from_egress_attempt()]] - `references` [EXTRACTED]
-- [[from_pipeline_result()]] - `references` [EXTRACTED]
+- [[generate_summary()_2]] - `references` [EXTRACTED]
+- [[parse_trivy_output()]] - `references` [EXTRACTED]
+- [[run_trivy_scan()_1]] - `references` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/docs/vault

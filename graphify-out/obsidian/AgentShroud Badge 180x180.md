@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/variants/badge-180x180.png"
 type: "image"
-community: "branding/logos"
+community: "docs/integrations"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/branding/logos
+  - community/docs/integrations
 ---
 
 # AgentShroud Badge 180x180
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Badge 60x60]] - `semantically_similar_to` [INFERRED]
 - [[AgentShroud Logo PNG (Dark Background)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/branding/logos
+#graphify/image #graphify/INFERRED #community/docs/integrations

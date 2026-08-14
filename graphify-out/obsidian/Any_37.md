@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Gateway Security Module"
-location: "L67"
+community: "Gateway Test Suite"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Gateway_Test_Suite
 ---
 
 # Any
 
 ## Connections
-- [[._handle_critical()]] - `references` [EXTRACTED]
-- [[categorize_alerts()]] - `references` [EXTRACTED]
-- [[generate_summary()_1]] - `references` [EXTRACTED]
-- [[parse_alert()]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[check_upstream_cves()]] - `references` [EXTRACTED]
+- [[format_cve_report()]] - `references` [EXTRACTED]
+- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
+- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
+- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
+- [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

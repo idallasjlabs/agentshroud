@@ -1,11 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Security Docs"
+community: "Setup Docs"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Setup_Docs
 ---
 
 # AgentShroud Security Architecture
@@ -39,4 +40,4 @@ tags:
 - [[Trust Level]] - `references` [EXTRACTED]
 - [[threat-model]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

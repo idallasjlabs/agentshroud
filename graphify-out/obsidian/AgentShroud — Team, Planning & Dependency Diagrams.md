@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/07-team-planning.md"
 type: "document"
-community: "docs/diagrams"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Bot_Skill_Config
 ---
 
 # AgentShroud — Team, Planning & Dependency Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[22. Dependency Graph — Component Dependencies]] - `contains` [EXTRACTED]
 - [[23. Roadmap  Timeline — Development Phases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/diagrams
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

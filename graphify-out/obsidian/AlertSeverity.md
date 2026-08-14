@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Security Module Middleware"
 location: "L32"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Config__Test_Fixtures
+  - community/Security_Module_Middleware
 ---
 
 # AlertSeverity
@@ -22,4 +22,4 @@ tags:
 - [[egress_monitor.py]] - `contains` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/INFERRED #community/Security_Module_Middleware

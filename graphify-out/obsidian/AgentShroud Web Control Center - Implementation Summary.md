@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/WEB_CONTROL_CENTER_SUMMARY.md"
 type: "document"
-community: "docs/project"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/docs/vault
 ---
 
 # AgentShroud Web Control Center - Implementation Summary
@@ -24,4 +24,4 @@ tags:
 - [[🚀 What Was Built]] - `contains` [EXTRACTED]
 - [[🚢 Deployment Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/docs/vault

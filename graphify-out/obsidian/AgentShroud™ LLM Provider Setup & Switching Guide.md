@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/LLM_PROVIDER_SETUP.md"
 type: "document"
-community: "Setup Docs"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # AgentShroud™ LLM Provider Setup & Switching Guide
@@ -19,4 +19,4 @@ tags:
 - [[5. Verification & Troubleshooting]] - `contains` [EXTRACTED]
 - [[LLM_PROVIDER_SETUP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

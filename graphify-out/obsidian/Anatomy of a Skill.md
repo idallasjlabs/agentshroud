@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Custom Skills"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Custom_Skills
 ---
 
 # Anatomy of a Skill
@@ -17,4 +17,4 @@ tags:
 - [[SKILL.md (required)]] - `contains` [EXTRACTED]
 - [[What to Not Include in a Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Custom_Skills

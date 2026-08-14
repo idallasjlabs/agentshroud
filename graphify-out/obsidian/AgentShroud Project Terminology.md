@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "document"
-community: "docs/project"
+community: "docs/vault"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/docs/vault
 ---
 
 # AgentShroud Project Terminology
@@ -34,4 +34,4 @@ tags:
 - [[W]] - `contains` [EXTRACTED]
 - [[Z]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/docs/vault

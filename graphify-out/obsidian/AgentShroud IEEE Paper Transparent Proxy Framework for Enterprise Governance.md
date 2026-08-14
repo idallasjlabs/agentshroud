@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "paper"
-community: "docs/papers"
+community: "Bot Skill Config"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Bot_Skill_Config
 ---
 
 # AgentShroud IEEE Paper: Transparent Proxy Framework for Enterprise Governance
@@ -16,4 +16,4 @@ tags:
 - [[Security Pipeline 8 Guards (PromptGuard, PII, TrustManager, EgressFilter, ApprovalQueue, OutboundInfoFilter, CanaryTripwire, EncodingDetector)]] - `describes` [EXTRACTED]
 - [[Threat Model L1 Data Disclosure, L2 Unauthorized Actions, L3 Agent Integrity, L4 Audit Integrity]] - `defines` [EXTRACTED]
 
-#graphify/paper #graphify/EXTRACTED #community/docs/papers
+#graphify/paper #graphify/EXTRACTED #community/Bot_Skill_Config

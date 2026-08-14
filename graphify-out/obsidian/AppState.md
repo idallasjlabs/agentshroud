@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/state.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Slack API Proxy"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer_Pipeline
+  - community/Slack_API_Proxy
 ---
 
 # AppState
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[state.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/INFERRED #community/Slack_API_Proxy

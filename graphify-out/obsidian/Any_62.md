@@ -1,21 +1,24 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Gateway Security Module"
-location: "L66"
+community: "Telegram Proxy Test Suite"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_3]] - `references` [EXTRACTED]
-- [[get_fim_events()]] - `references` [EXTRACTED]
-- [[get_rootkit_events()]] - `references` [EXTRACTED]
-- [[parse_alert()_1]] - `references` [EXTRACTED]
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[.__init__()_120]] - `references` [EXTRACTED]
+- [[._extract_dict_content()]] - `references` [EXTRACTED]
+- [[._extract_scannable_content()]] - `references` [EXTRACTED]
+- [[._reconstruct_result()]] - `references` [EXTRACTED]
+- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

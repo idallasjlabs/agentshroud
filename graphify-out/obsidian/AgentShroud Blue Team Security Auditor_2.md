@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "Security Docs"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Security_Docs
 ---
 
 # AgentShroud Blue Team Security Auditor
@@ -19,4 +19,4 @@ tags:
 - [[Output Format_27]] - `contains` [EXTRACTED]
 - [[SKILL_126]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

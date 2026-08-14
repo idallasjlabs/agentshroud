@@ -1,11 +1,11 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "README.md"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/READMEmd
+  - community/skills/openclaw
 ---
 
 # AgentShroud™ README
@@ -24,4 +24,4 @@ tags:
 - [[Release Workflow]] - `conceptually_related_to` [INFERRED]
 - [[Trademark]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/READMEmd
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

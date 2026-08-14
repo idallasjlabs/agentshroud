@@ -1,11 +1,11 @@
 ---
 source_file: "branding/favicons/favicon-32x32.png"
 type: "image"
-community: "branding/logos"
+community: "docs/integrations"
 tags:
   - graphify/image
   - graphify/EXPLICIT
-  - community/branding/logos
+  - community/docs/integrations
 ---
 
 # AgentShroud Favicon 32x32
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud Favicon 256x256]] - `semantically_similar_to` [EXPLICIT]
 - [[AgentShroud Logo PNG (Dark Background)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/EXPLICIT #community/branding/logos
+#graphify/image #graphify/EXPLICIT #community/docs/integrations

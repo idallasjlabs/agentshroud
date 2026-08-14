@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "code"
-community: "Bot Container Scripts"
+community: "docs/diagrams"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/docs/diagrams
 ---
 
 # Agentic AI Threat Intelligence (OpenClaw cron job)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OpenClaw cron jobs.json (bot-config store, SCRUM-61 monitored)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/docs/diagrams

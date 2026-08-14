@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "Gateway Proxy Layer"
-location: "L93"
+community: "docs/vault"
+location: "L1487"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/docs/vault
 ---
 
 # Any
 
 ## Connections
-- [[.generate_report()]] - `references` [EXTRACTED]
-- [[.log_tool_call()]] - `references` [EXTRACTED]
+- [[._filter_streaming_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/docs/vault

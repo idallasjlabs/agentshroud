@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L75"
+community: "Gateway Proxy Layer"
+location: "L82"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - graphify/EXTRACTED
+  - community/Gateway_Proxy_Layer
 ---
 
 # Any
 
 ## Connections
-- [[._audit()]] - `references` [EXTRACTED]
-- [[.get_stats()_10]] - `references` [EXTRACTED]
-- [[.to_dict()_2]] - `references` [EXTRACTED]
-- [[URLAnalyzer]] - `uses` [INFERRED]
-- [[WebContentScanner]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[.pull_undelivered()]] - `references` [EXTRACTED]
+- [[.record_inbound()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

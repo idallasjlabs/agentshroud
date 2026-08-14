@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md"
 type: "document"
-community: "Planning Docs"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Bot_Skill_Config
 ---
 
 # AgentShroud Recovery Plan v0.4.0
@@ -19,4 +19,4 @@ tags:
 - [[RECOVERY_PLAN_PARTIAL]] - `contains` [EXTRACTED]
 - [[RELEASE HISTORY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

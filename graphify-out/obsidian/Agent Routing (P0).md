@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "CHANGELOG.md"
+community: "Gateway Test Suite"
 location: "L760"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Gateway_Test_Suite
 ---
 
 # Agent Routing (P0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Fixed]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

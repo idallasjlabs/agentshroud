@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/00 - START HERE/Home.md"
 type: "document"
-community: "docs/vault"
+community: "Security Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Docs
 ---
 
 # AgentShroud Vault Home
@@ -26,4 +26,4 @@ tags:
 - [[ledger.py — Gateway Core Module]] - `indexes` [EXTRACTED]
 - [[main.py — Gateway Core Module]] - `indexes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/agentshroud-security-overview-v0.8.0.md"
 type: "document"
-community: "Architecture Docs"
+community: "gateway/tools"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/gateway/tools
 ---
 
 # AgentShroud Security Overview v0.8.0
@@ -16,4 +16,4 @@ tags:
 - [[v0.8.0 Security Finding Remediation 19 findings resolved (CRITICAL through LOW)]] - `documents` [EXTRACTED]
 - [[v0.8.0 Test Result 2263 passed, 0 failed, 0 skipped]] - `documents` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/gateway/tools

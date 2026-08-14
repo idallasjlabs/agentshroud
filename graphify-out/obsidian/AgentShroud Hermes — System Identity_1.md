@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/agents/hermes-soul.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # AgentShroud Hermes — System Identity
@@ -20,4 +20,4 @@ tags:
 - [[Your Role_1]] - `contains` [EXTRACTED]
 - [[hermes-soul]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

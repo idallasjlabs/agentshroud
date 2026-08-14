@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "scripts/sync-cve-registry.py"
+community: "Gateway Test Suite"
 location: "L377"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Gateway_Test_Suite
 ---
 
 # Append new_entries to _HERMES_CVE_REGISTRY.  Returns count appended.      Insert
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[append_to_hermes_registry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,11 +1,11 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "dashboard/README.md"
+community: "Architecture Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard/READMEmd
+  - community/Architecture_Docs
 ---
 
 # AgentShroud Dashboard README (React 18, not yet implemented)
@@ -14,4 +14,4 @@ tags:
 - [[Dashboard Action Feed Component (WebSocket live stream)]] - `references` [EXTRACTED]
 - [[Dashboard Kill Switch Component (halt all agent activity)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "document"
-community: "docs/project"
+community: "ESP32 Firmware"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/ESP32_Firmware
 ---
 
 # AgentShroud™ Telegram-Reported Issues
@@ -18,4 +18,4 @@ tags:
 - [[🟠 HIGH Security & Logic Issues]] - `contains` [EXTRACTED]
 - [[🟡 MEDIUM Infrastructure & Deployment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware

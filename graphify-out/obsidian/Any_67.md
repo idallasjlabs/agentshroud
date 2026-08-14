@@ -1,32 +1,24 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L54"
+community: "Gateway Security Module"
+location: "L25"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - graphify/INFERRED
+  - community/Gateway_Security_Module
 ---
 
 # Any
 
 ## Connections
-- [[_clamav_clean()]] - `references` [EXTRACTED]
-- [[_clamav_infected()]] - `references` [EXTRACTED]
-- [[_clean_trivy_report()]] - `references` [EXTRACTED]
-- [[_critical_trivy_report()]] - `references` [EXTRACTED]
-- [[_falco_clean()]] - `references` [EXTRACTED]
-- [[_falco_critical()]] - `references` [EXTRACTED]
-- [[_falco_not_run()]] - `references` [EXTRACTED]
-- [[_openscap_clean()]] - `references` [EXTRACTED]
-- [[_openscap_not_run()]] - `references` [EXTRACTED]
-- [[_openscap_warn()]] - `references` [EXTRACTED]
-- [[_trivy_clean()]] - `references` [EXTRACTED]
-- [[_trivy_critical()]] - `references` [EXTRACTED]
-- [[_trivy_not_run()]] - `references` [EXTRACTED]
-- [[_wazuh_clean()]] - `references` [EXTRACTED]
-- [[_wazuh_not_run()]] - `references` [EXTRACTED]
-- [[_write_image_report()]] - `references` [EXTRACTED]
+- [[.__init__()_127]] - `references` [EXTRACTED]
+- [[._describe_service()]] - `references` [EXTRACTED]
+- [[._get_engine()]] - `references` [EXTRACTED]
+- [[HealthStatus]] - `uses` [INFERRED]
+- [[ResourceUsage_1]] - `uses` [INFERRED]
+- [[ServiceDescriptor]] - `uses` [INFERRED]
+- [[ServiceStatus]] - `uses` [INFERRED]
+- [[_inspect_via_socket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Gateway_Security_Module

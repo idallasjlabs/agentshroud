@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/blue-team-audit-v0.7.0.md"
 type: "document"
-community: "Planning Docs"
+community: "CLAUDE.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/CLAUDEmd
 ---
 
 # AgentShroud v0.7.0 Blue Team Security Audit Report
@@ -31,4 +31,4 @@ tags:
 - [[PromptGuard (Prompt Injection Defense)]] - `references` [EXTRACTED]
 - [[blue-team-audit-v0.7.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/CLAUDEmd

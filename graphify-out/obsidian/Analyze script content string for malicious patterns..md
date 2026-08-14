@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Collaborator Response Templates"
 location: "L385"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Collaborator_Response_Templates
 ---
 
 # Analyze script content string for malicious patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._analyze_script_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates

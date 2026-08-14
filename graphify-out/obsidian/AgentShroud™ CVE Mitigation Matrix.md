@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "Security Docs"
+community: "docs/project"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/docs/project
 ---
 
 # AgentShroud™ CVE Mitigation Matrix
@@ -23,4 +23,4 @@ tags:
 - [[Verification_11]] - `contains` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/project

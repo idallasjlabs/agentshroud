@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Bot Container Scripts"
+community: "Setup Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Setup_Docs
 ---
 
 # AgentShroud — Collaborator Knowledge Base
@@ -20,4 +20,4 @@ tags:
 - [[What is AgentShroud]] - `contains` [EXTRACTED]
 - [[Who Can Use It]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

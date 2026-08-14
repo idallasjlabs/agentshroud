@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
-location: "L102"
+community: "Approval & FastAPI Ingest"
+location: "L187"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - graphify/INFERRED
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Any
 
 ## Connections
-- [[._alert_high_usage()]] - `references` [EXTRACTED]
-- [[._get_disk_io_stats()]] - `references` [EXTRACTED]
-- [[.add_alert_callback()_1]] - `references` [EXTRACTED]
-- [[.get_usage_stats()]] - `references` [EXTRACTED]
+- [[.check_permission()]] - `references` [EXTRACTED]
+- [[.get_user_permissions_summary()]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest

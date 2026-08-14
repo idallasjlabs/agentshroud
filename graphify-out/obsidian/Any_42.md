@@ -1,37 +1,29 @@
 ---
-source_file: "gateway/security/killswitch_monitor.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Kill Switch Config"
-location: "L37"
+community: "Gateway Test Suite"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Kill_Switch_Config
+  - community/Gateway_Test_Suite
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_89]] - `references` [EXTRACTED]
-- [[._check_request_rate()]] - `references` [EXTRACTED]
-- [[._check_system_resources()]] - `references` [EXTRACTED]
-- [[._check_token_usage()]] - `references` [EXTRACTED]
-- [[._check_tool_call_rate()]] - `references` [EXTRACTED]
-- [[._get_system_stats()]] - `references` [EXTRACTED]
-- [[._log_heartbeat_result()]] - `references` [EXTRACTED]
-- [[._log_verification_result()]] - `references` [EXTRACTED]
-- [[._send_anomaly_alert()]] - `references` [EXTRACTED]
-- [[._send_heartbeat_alert()]] - `references` [EXTRACTED]
-- [[._send_verification_alert()]] - `references` [EXTRACTED]
-- [[._test_docker_available()]] - `references` [EXTRACTED]
-- [[._test_killswitch_mode()]] - `references` [EXTRACTED]
-- [[._test_script_exists()]] - `references` [EXTRACTED]
-- [[._test_script_permissions()]] - `references` [EXTRACTED]
-- [[._test_script_syntax()]] - `references` [EXTRACTED]
-- [[.anomaly_detection()]] - `references` [EXTRACTED]
-- [[.get_status()]] - `references` [EXTRACTED]
-- [[.heartbeat_check()]] - `references` [EXTRACTED]
-- [[.verify_killswitch()]] - `references` [EXTRACTED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
+- [[._generate_new_credential()]] - `references` [EXTRACTED]
+- [[._validate_credential()]] - `references` [EXTRACTED]
+- [[.check_and_rotate_due_credentials()]] - `references` [EXTRACTED]
+- [[.cleanup_retired_credentials()]] - `references` [EXTRACTED]
+- [[.emergency_rotate_credential()]] - `references` [EXTRACTED]
+- [[.get_all_credentials_status()]] - `references` [EXTRACTED]
+- [[.get_credential_status()]] - `references` [EXTRACTED]
+- [[.get_health_score()]] - `references` [EXTRACTED]
+- [[.register_credential()]] - `references` [EXTRACTED]
+- [[.rotate_credential()]] - `references` [EXTRACTED]
+- [[.validate()]] - `references` [EXTRACTED]
+- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
+- [[KeyRotationConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Config
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

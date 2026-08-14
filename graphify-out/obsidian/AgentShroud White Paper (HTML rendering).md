@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.html"
 type: "paper"
-community: "Planning Docs"
+community: "CLAUDE.md"
 tags:
   - graphify/paper
   - graphify/INFERRED
-  - community/Planning_Docs
+  - community/CLAUDEmd
 ---
 
 # AgentShroud White Paper (HTML rendering)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud White Paper v1.1 (Feb 2026)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/paper #graphify/INFERRED #community/Planning_Docs
+#graphify/paper #graphify/INFERRED #community/CLAUDEmd

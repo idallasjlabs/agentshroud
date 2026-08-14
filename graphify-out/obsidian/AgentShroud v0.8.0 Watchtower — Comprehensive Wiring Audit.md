@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "Planning Docs"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # AgentShroud v0.8.0 "Watchtower" — Comprehensive Wiring Audit
@@ -21,4 +21,4 @@ tags:
 - [[🔴 CRITICAL — Not Wired (code exists, tests pass, but NOT running in production)]] - `contains` [EXTRACTED]
 - [[🟡 MEDIUM — Partially Wired or Degraded]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # AgentShroud Blue Team Security Auditor
@@ -19,4 +19,4 @@ tags:
 - [[Output Format_9]] - `contains` [EXTRACTED]
 - [[SKILL_50]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

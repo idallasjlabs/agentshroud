@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
 type: "document"
-community: "Planning Docs"
+community: "chatbot/main.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/chatbot/mainpy
 ---
 
 # AgentShroud v0.7.0 — Red Team Remediation Plan
@@ -24,4 +24,4 @@ tags:
 - [[v0.6.0 → v0.7.0 Delta]] - `contains` [EXTRACTED]
 - [[v0.7.0-remediation-plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/chatbot/mainpy

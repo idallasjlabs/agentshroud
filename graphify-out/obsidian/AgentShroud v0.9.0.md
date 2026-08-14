@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/system-requirements.md"
 type: "document"
-community: "docs/requirements"
+community: "Planning Docs"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/requirements
+  - community/Planning_Docs
 ---
 
 # AgentShroud v0.9.0
@@ -20,4 +20,4 @@ tags:
 - [[6. Risk Assessment]] - `contains` [EXTRACTED]
 - [[System Requirements Specification (SRS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/requirements
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

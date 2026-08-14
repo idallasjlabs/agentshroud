@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
+community: "docs/reference"
 location: "L533"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/docs/reference
 ---
 
 # Allowed read path should pass.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_proc_meminfo_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/docs/reference

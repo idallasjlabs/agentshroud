@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "File Sandbox"
+community: "URL/Domain Validation Tests"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Agent cannot modify AgentShroud's own source code.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAgentShroudSourceCodeProtection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

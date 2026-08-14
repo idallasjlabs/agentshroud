@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Container Scripts"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Container_Scripts
 ---
 
 # All Environment Variables (reference)
@@ -17,4 +17,4 @@ tags:
 - [[Docker Secrets Pattern (_FILE variables)]] - `documents` [EXTRACTED]
 - [[GATEWAY_AUTH_TOKEN_FILE env var]] - `documents` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts

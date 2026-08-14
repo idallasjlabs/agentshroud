@@ -1,11 +1,11 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "branding/colors"
+community: "branding/typography"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/colors
+  - community/branding/typography
 ---
 
 # AgentShroud Typography Guidelines (Inter + JetBrains Mono)
@@ -15,4 +15,4 @@ tags:
 - [[Inter Primary Typeface (finalized)]] - `references` [EXTRACTED]
 - [[JetBrains Mono Monospace Typeface (finalized)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/colors
+#graphify/document #graphify/EXTRACTED #community/branding/typography

@@ -1,11 +1,11 @@
 ---
 source_file: "branding/agentshroud-mockup.png"
 type: "image"
-community: "branding/logos"
+community: "docs/integrations"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/branding/logos
+  - community/docs/integrations
 ---
 
 # AgentShroud Brand Mockup (Merchandise)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Email Banner (600x150)]] - `semantically_similar_to` [INFERRED]
 - [[AgentShroud Logo PNG (Dark Background)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/branding/logos
+#graphify/image #graphify/INFERRED #community/docs/integrations

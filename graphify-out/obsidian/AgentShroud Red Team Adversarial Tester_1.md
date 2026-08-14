@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # AgentShroud Red Team Adversarial Tester
@@ -20,4 +20,4 @@ tags:
 - [[SKILL_114]] - `contains` [EXTRACTED]
 - [[Writing Exploit Tests_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/vault

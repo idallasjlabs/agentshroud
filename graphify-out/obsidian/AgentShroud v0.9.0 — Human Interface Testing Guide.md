@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/v0.9.0-testing-guide.md"
 type: "document"
-community: "Planning Docs"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/docs/vault
 ---
 
 # AgentShroud v0.9.0 — Human Interface Testing Guide
@@ -23,4 +23,4 @@ tags:
 - [[Team Configuration Reference]] - `contains` [EXTRACTED]
 - [[v0.9.0-testing-guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/vault

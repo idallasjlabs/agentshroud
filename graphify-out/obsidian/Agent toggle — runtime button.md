@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: "ESP32 Firmware"
+community: "docs/vault"
 location: "L450"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/docs/vault
 ---
 
 # Agent toggle — runtime button
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[11. Current status (v1.2.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/docs/vault

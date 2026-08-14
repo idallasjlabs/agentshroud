@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/module-inventory.md"
 type: "document"
-community: "Custom Skills"
+community: "Planning Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Planning_Docs
 ---
 
 # AgentShroud Module Inventory
@@ -17,4 +17,4 @@ tags:
 - [[module-inventory]] - `contains` [EXTRACTED]
 - [[v0.7.0 New Modules (Tier 2+3 + Hardening)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # AgentShroud System Architecture Document (SAD)
@@ -20,4 +20,4 @@ tags:
 - [[Two-Network Docker Architecture]] - `contains` [EXTRACTED]
 - [[system-architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

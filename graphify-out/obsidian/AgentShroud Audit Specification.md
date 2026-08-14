@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Security_Module
 ---
 
 # AgentShroud Audit Specification
@@ -21,4 +21,4 @@ tags:
 - [[Retention Policies]] - `contains` [EXTRACTED]
 - [[audit-specification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

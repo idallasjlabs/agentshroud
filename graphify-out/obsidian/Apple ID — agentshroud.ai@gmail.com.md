@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "concept"
-community: "Setup Docs"
+community: "Custom Skills"
 location: "lines 1-5"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Custom_Skills
 ---
 
 # Apple ID — agentshroud.ai@gmail.com
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Apple Services Setup (iCloud Mail, CalDAV, CardDAV)]] - `configures` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Setup_Docs
+#graphify/concept #graphify/EXTRACTED #community/Custom_Skills

@@ -1,18 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "CHANGELOG.md"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Gateway_Test_Suite
 ---
 
 # AgentShroud™ Changelog
 
 ## Connections
 - [[AgentShroud™ README]] - `references` [EXTRACTED]
-- [[CI Leak Gate Platform Scoping (ubuntu+3.11 only)]] - `conceptually_related_to` [INFERRED]
 - [[Release Workflow]] - `references` [EXTRACTED]
 - [[Trademark]] - `references` [INFERRED]
 - [[v0.4.0 Release]] - `references` [EXTRACTED]
@@ -30,4 +29,4 @@ tags:
 - [[v1.2.4 Security Patch]] - `references` [EXTRACTED]
 - [[v1.3.0 Reliability Release]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

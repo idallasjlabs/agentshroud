@@ -1,12 +1,12 @@
 ---
 source_file: ".semgrep.yml"
 type: "code"
-community: "CHANGELOG.md"
+community: "Gateway Test Suite"
 location: "lines 1-196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Gateway_Test_Suite
 ---
 
 # AgentShroud Semgrep SAST Rules
@@ -23,4 +23,4 @@ tags:
 - [[Semgrep SAST Pre-commit Hook]] - `references` [EXTRACTED]
 - [[v0.9.0 Sentinel SOC Team Collab and IEC 62443 Security Tools (2026-03-18)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

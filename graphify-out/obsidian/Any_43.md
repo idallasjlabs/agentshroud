@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "PII Config & Test Fixtures"
-location: "L157"
+community: "Security Docs"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Security_Docs
 ---
 
 # Any
 
 ## Connections
-- [[get_sanitizer_stats()]] - `references` [EXTRACTED]
+- [[.to_dict()_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

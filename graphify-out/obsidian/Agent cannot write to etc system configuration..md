@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "File Sandbox"
+community: "URL/Domain Validation Tests"
 location: "L164"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Agent cannot write to /etc/ system configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_etc_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

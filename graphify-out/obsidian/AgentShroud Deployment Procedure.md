@@ -1,11 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "docs/operations"
+community: "Gateway Test Suite"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Gateway_Test_Suite
 ---
 
 # AgentShroud Deployment Procedure
@@ -29,4 +30,4 @@ tags:
 - [[deployment-procedure]] - `contains` [EXTRACTED]
 - [[macOS Deployment Guide]] - `complements` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

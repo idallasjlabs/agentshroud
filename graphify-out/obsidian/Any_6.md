@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "gateway/cli"
-location: "L39"
+community: "docs/vault"
+location: "L35"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/gateway/cli
+  - graphify/EXTRACTED
+  - community/docs/vault
 ---
 
 # Any
 
 ## Connections
-- [[SCLClient]] - `uses` [INFERRED]
-- [[_output()]] - `references` [EXTRACTED]
+- [[.get_recent()]] - `references` [EXTRACTED]
+- [[.get_stats()]] - `references` [EXTRACTED]
+- [[.to_dict()]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/gateway/cli
+#graphify/code #graphify/EXTRACTED #community/docs/vault

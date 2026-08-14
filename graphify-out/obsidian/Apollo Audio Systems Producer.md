@@ -20,7 +20,7 @@ tags:
 - [[Technical Specification]] - `contains` [EXTRACTED]
 - [[Vulcan (i-vulcan skill, script approver)]] - `references` [EXTRACTED]
 - [[i-apollo README]] - `references` [INFERRED]
-- [[manifest.json]] - `references` [EXTRACTED]
+- [[manifest.json_1]] - `references` [EXTRACTED]
 - [[podcast_plan.json (voice config)]] - `references` [EXTRACTED]
 - [[script.md (Vulcan-approved dialogue input)]] - `references` [EXTRACTED]
 

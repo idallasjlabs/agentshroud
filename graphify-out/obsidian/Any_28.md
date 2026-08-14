@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/agent_cve_registry.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L15489"
+community: "docker/QUICKSTART.md"
+location: "L159"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - graphify/INFERRED
+  - community/docker/QUICKSTARTmd
 ---
 
 # Any
 
 ## Connections
-- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
+- [[.inspect()_3]] - `references` [EXTRACTED]
+- [[ContainerEngine_2]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/docker/QUICKSTARTmd

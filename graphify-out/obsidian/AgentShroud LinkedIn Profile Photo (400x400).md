@@ -1,11 +1,11 @@
 ---
 source_file: "branding/social/linkedin-profile-400x400.png"
 type: "image"
-community: "branding/logos"
+community: "docs/integrations"
 tags:
   - graphify/image
   - graphify/EXPLICIT
-  - community/branding/logos
+  - community/docs/integrations
 ---
 
 # AgentShroud LinkedIn Profile Photo (400x400)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Logo PNG (Dark Background)]] - `semantically_similar_to` [EXPLICIT]
 - [[AgentShroud Telegram Bot Avatar (512x512)]] - `semantically_similar_to` [EXPLICIT]
 
-#graphify/image #graphify/EXPLICIT #community/branding/logos
+#graphify/image #graphify/EXPLICIT #community/docs/integrations

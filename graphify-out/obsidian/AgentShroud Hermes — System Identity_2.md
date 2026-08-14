@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/agents/hermes-soul.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Planning Docs"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # AgentShroud Hermes — System Identity
@@ -20,4 +20,4 @@ tags:
 - [[Your Role_2]] - `contains` [EXTRACTED]
 - [[hermes-soul_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

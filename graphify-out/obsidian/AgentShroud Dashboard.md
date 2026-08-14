@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Security Docs"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Skill_Config
 ---
 
 # AgentShroud Dashboard
@@ -18,4 +18,4 @@ tags:
 - [[README_3]] - `contains` [EXTRACTED]
 - [[Tech Stack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

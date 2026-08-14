@@ -1,73 +1,22 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/ingest_api/version_routes.py"
 type: "code"
-community: "Egress & RBAC Security Core"
-location: "L496"
+community: "CHANGELOG.md"
+location: "L51"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Egress__RBAC_Security_Core
+  - graphify/EXTRACTED
+  - community/CHANGELOGmd
 ---
 
 # Any
 
 ## Connections
-- [[._analyze_request_for_rbac()]] - `references` [EXTRACTED]
-- [[._check_cross_session_access()]] - `references` [EXTRACTED]
-- [[._check_rbac_permissions()]] - `references` [EXTRACTED]
-- [[._enforce_session_isolation()]] - `references` [EXTRACTED]
-- [[._extract_user_id()]] - `references` [EXTRACTED]
-- [[._is_tool_call_request()]] - `references` [EXTRACTED]
-- [[.process_request()]] - `references` [EXTRACTED]
-- [[.process_tool_result()]] - `references` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[AgentRegistry]] - `uses` [INFERRED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[ApprovalHardening]] - `uses` [INFERRED]
-- [[ApprovalHardeningConfig]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
-- [[BrowserSecurityGuard]] - `uses` [INFERRED]
-- [[ConsentFramework]] - `uses` [INFERRED]
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[DNSFilter]] - `uses` [INFERRED]
-- [[DNSFilterConfig]] - `uses` [INFERRED]
-- [[DriftDetector]] - `uses` [INFERRED]
-- [[EgressMonitor]] - `uses` [INFERRED]
-- [[EgressMonitorConfig]] - `uses` [INFERRED]
-- [[EnvironmentGuard]] - `uses` [INFERRED]
-- [[FileSandbox]] - `uses` [INFERRED]
-- [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[GitGuard]] - `uses` [INFERRED]
-- [[KeyRotationManager]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
-- [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
-- [[MemoryLifecycleManager]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
-- [[MetadataGuard]] - `uses` [INFERRED]
-- [[MultiTurnTracker]] - `uses` [INFERRED]
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[OAuthSecurityValidator]] - `uses` [INFERRED]
-- [[OutputCanary]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PathIsolationConfig]] - `uses` [INFERRED]
-- [[PathIsolationManager]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[SessionManager]] - `uses` [INFERRED]
-- [[SubagentMonitor]] - `uses` [INFERRED]
-- [[SubagentMonitorConfig]] - `uses` [INFERRED]
-- [[ToolChainAnalyzer]] - `uses` [INFERRED]
-- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
-- [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
-- [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
-- [[ToolTier_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[XMLLeakFilter]] - `uses` [INFERRED]
+- [[downgrade_version()]] - `references` [EXTRACTED]
+- [[get_current_version()]] - `references` [EXTRACTED]
+- [[get_version_history()]] - `references` [EXTRACTED]
+- [[review_version()]] - `references` [EXTRACTED]
+- [[rollback_version()]] - `references` [EXTRACTED]
+- [[upgrade_version()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/CHANGELOGmd

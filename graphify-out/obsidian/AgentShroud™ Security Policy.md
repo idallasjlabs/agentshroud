@@ -1,11 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "SECURITY.md"
+community: "Security Docs"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECURITYmd
+  - community/Security_Docs
 ---
 
 # AgentShroud™ Security Policy
@@ -26,4 +27,4 @@ tags:
 - [[Trademark]] - `references` [INFERRED]
 - [[Upstream Agent CVE Tracking]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SECURITYmd
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

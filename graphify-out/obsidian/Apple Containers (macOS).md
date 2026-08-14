@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Architecture Docs"
+community: "scripts/generate_branding_assets.py"
 location: "L187"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/scripts/generate_branding_assetspy
 ---
 
 # Apple Containers (macOS)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Multi-Runtime Support_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/scripts/generate_branding_assetspy

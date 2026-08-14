@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Setup Docs"
+community: "Docker Deploy Scripts"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Docker_Deploy_Scripts
 ---
 
 # AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist
@@ -30,4 +30,4 @@ tags:
 - [[Phase 9 OpenClaw Agent Configuration]] - `contains` [EXTRACTED]
 - [[Troubleshooting_21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts

@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Egress & RBAC Security Core"
-location: "L379"
+community: "Egress Domain Allowlist"
+location: "L200"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Egress__RBAC_Security_Core
+  - graphify/EXTRACTED
+  - community/Egress_Domain_Allowlist
 ---
 
 # Any
 
 ## Connections
-- [[.get_lifecycle_status()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
+- [[.enforce()_1]] - `references` [EXTRACTED]
+- [[.evaluate()_1]] - `references` [EXTRACTED]
+- [[.from_dict()_7]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist

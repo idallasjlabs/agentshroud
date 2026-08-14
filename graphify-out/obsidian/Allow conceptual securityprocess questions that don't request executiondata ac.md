@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
-location: "L1462"
+community: "Cross-Bot Trust Ledger"
+location: "L1470"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # Allow conceptual security/process questions that don't request execution/data ac
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._looks_like_safe_collaborator_info_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger

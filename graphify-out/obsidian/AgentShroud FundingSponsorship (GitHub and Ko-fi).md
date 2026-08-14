@@ -1,14 +1,14 @@
 ---
 source_file: ".github/FUNDING.yml"
 type: "document"
-community: ".github/FUNDING.yml"
+community: "Community 1707"
 location: "lines 1-2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/FUNDINGyml
+  - community/Community_1707
 ---
 
 # AgentShroud Funding/Sponsorship (GitHub and Ko-fi)
 
-#graphify/document #graphify/EXTRACTED #community/github/FUNDINGyml
+#graphify/document #graphify/EXTRACTED #community/Community_1707

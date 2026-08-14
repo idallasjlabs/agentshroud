@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Web Control Center"
+community: "docs/vault"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_Control_Center
+  - community/docs/vault
 ---
 
 # Alert
@@ -15,4 +15,4 @@ tags:
 - [[.push()_4]] - `calls` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_Control_Center
+#graphify/code #graphify/EXTRACTED #community/docs/vault

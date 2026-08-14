@@ -1,11 +1,11 @@
 ---
 source_file: "docs/redteam/v0.7.0-remediation-plan.md"
 type: "document"
-community: "docs/redteam"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/redteam
+  - community/skills/openclaw
 ---
 
 # AgentShroud v0.7.0 Red Team Remediation Plan
@@ -21,4 +21,4 @@ tags:
 - [[feature-priorities_1]] - `derived_from` [EXTRACTED]
 - [[v0.7.0 Sprint Plan 6 Tier-1 sprints (enforce-default, outbound, HITL, isolation, privilege, credential)]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/redteam
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

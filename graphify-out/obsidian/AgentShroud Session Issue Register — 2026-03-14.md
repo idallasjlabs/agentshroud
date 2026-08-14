@@ -1,11 +1,12 @@
 ---
 source_file: "docs/planning/reviews/session-issue-register-2026-03-14.md"
 type: "document"
-community: "Planning Docs"
+community: "Gateway Test Suite"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # AgentShroud Session Issue Register — 2026-03-14
@@ -20,4 +21,4 @@ tags:
 - [[Summary_11]] - `contains` [EXTRACTED]
 - [[XMLFunction-Call Leak Filter]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

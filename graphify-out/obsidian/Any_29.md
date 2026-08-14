@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Gateway Security Module"
-location: "L58"
+community: "Bot Skill Config"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Bot_Skill_Config
 ---
 
 # Any
 
 ## Connections
-- [[._format_alert_message()]] - `references` [EXTRACTED]
-- [[._log_alert()]] - `references` [EXTRACTED]
-- [[._send_notification()]] - `references` [EXTRACTED]
-- [[.dispatch()]] - `references` [EXTRACTED]
-- [[.get_digest()]] - `references` [EXTRACTED]
-- [[.get_stats()_12]] - `references` [EXTRACTED]
+- [[.from_dict()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

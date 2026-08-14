@@ -1,11 +1,11 @@
 ---
 source_file: "branding/social/github-social-preview-1280x640.png"
 type: "image"
-community: "branding/logos"
+community: "docs/integrations"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/branding/logos
+  - community/docs/integrations
 ---
 
 # AgentShroud GitHub Social Preview (1280x640)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Open Graph Image (1200x630)]] - `semantically_similar_to` [EXPLICIT]
 - [[AgentShroud Title Slide (1920x1080)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/branding/logos
+#graphify/image #graphify/INFERRED #community/docs/integrations

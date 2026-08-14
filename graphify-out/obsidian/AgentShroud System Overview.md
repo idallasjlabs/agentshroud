@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "docs/vault"
+community: "Security Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Docs
 ---
 
 # AgentShroud System Overview
@@ -24,4 +24,4 @@ tags:
 - [[Who Depends On It]] - `contains` [EXTRACTED]
 - [[Why It Exists]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

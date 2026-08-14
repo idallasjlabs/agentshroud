@@ -1,22 +1,24 @@
 ---
-source_file: "gateway/ingest_api/version_routes.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Gateway Ingest API"
-location: "L51"
+community: "Architecture Docs"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - community/Architecture_Docs
 ---
 
 # Any
 
 ## Connections
-- [[downgrade_version()]] - `references` [EXTRACTED]
-- [[get_current_version()]] - `references` [EXTRACTED]
-- [[get_version_history()]] - `references` [EXTRACTED]
-- [[review_version()]] - `references` [EXTRACTED]
-- [[rollback_version()]] - `references` [EXTRACTED]
-- [[upgrade_version()]] - `references` [EXTRACTED]
+- [[.__init__()_16]] - `references` [EXTRACTED]
+- [[.extract_text_for_pii_scan()]] - `references` [EXTRACTED]
+- [[.parse_jsonrpc_request()]] - `references` [EXTRACTED]
+- [[.process_inbound_request()]] - `references` [EXTRACTED]
+- [[A2AMethod]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[ViolationType]] - `uses` [INFERRED]
+- [[_redact_message_text()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Architecture_Docs

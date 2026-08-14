@@ -1,11 +1,11 @@
 ---
 source_file: "web/setup-wizard.html"
 type: "code"
-community: "web/management-dashboard.html"
+community: "skills/openclaw"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/web/management-dashboardhtml
+  - community/skills/openclaw
 ---
 
 # AgentShroud Setup Wizard (setup-wizard.html)
@@ -20,4 +20,4 @@ tags:
 - [[Wizard Step 6 System Verification  Health Checks]] - `contains` [EXTRACTED]
 - [[dashboard()]] - `leads_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/web/management-dashboardhtml
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

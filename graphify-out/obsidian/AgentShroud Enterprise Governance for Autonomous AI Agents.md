@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "document"
-community: "docs/papers"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Gateway_Test_Suite
 ---
 
 # AgentShroud: Enterprise Governance for Autonomous AI Agents
@@ -28,4 +28,4 @@ tags:
 - [[Executive Summary]] - `contains` [EXTRACTED]
 - [[agentshroud-whitepaper]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/papers
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

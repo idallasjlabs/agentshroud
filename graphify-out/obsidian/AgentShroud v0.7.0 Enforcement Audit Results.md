@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
 type: "document"
-community: "Planning Docs"
+community: "CLAUDE.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/CLAUDEmd
 ---
 
 # AgentShroud v0.7.0 Enforcement Audit Results
@@ -32,4 +32,4 @@ tags:
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `references` [EXTRACTED]
 - [[enforcement-audit-v0.7.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/CLAUDEmd

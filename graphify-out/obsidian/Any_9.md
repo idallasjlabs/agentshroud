@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Auth & Exception Types"
-location: "L347"
+community: "Slack API Proxy"
+location: "L152"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - graphify/EXTRACTED
+  - community/Slack_API_Proxy
 ---
 
 # Any
 
 ## Connections
-- [[.get_stats()_2]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[._build_forward_payload()]] - `references` [EXTRACTED]
+- [[.forward_to_agent()]] - `references` [EXTRACTED]
+- [[.forward_to_agent_stream()]] - `references` [EXTRACTED]
+- [[.health_check()]] - `references` [EXTRACTED]
+- [[AgentTarget]] - `uses` [INFERRED]
+- [[ForwardRequest]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

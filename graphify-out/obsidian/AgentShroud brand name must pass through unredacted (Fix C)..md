@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Bot CVE Scorecard"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_CVE_Scorecard
 ---
 
 # AgentShroud brand name must pass through unredacted (Fix C).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_agentshroud_name_not_redacted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Bot_CVE_Scorecard

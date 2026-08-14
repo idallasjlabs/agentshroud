@@ -1,11 +1,11 @@
 ---
 source_file: "branding/agentshroud-logo-light-bg.png"
 type: "image"
-community: "branding/logos"
+community: "docs/integrations"
 tags:
   - graphify/image
   - graphify/EXPLICIT
-  - community/branding/logos
+  - community/docs/integrations
 ---
 
 # AgentShroud Logo (Light Background)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Logo PNG (Dark Background)]] - `semantically_similar_to` [EXPLICIT]
 
-#graphify/image #graphify/EXPLICIT #community/branding/logos
+#graphify/image #graphify/EXPLICIT #community/docs/integrations

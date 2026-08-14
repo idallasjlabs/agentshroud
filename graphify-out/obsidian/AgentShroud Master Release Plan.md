@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Planning Docs"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/docs/vault
 ---
 
 # AgentShroud Master Release Plan
@@ -18,4 +18,4 @@ tags:
 - [[v1.2.0 Local LLMs (Ollama, LM Studio, mlx_lm)]] - `contains` [EXTRACTED]
 - [[v1.3.0 Platform Expansion (Voice, CLITUI, SSH, Apple Integration)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/vault

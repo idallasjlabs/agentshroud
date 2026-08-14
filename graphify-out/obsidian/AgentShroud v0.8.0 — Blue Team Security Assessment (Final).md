@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "Planning Docs"
+community: "Security Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Security_Docs
 ---
 
 # AgentShroud v0.8.0 — Blue Team Security Assessment (Final)
@@ -18,4 +18,4 @@ tags:
 - [[Summary_12]] - `contains` [EXTRACTED]
 - [[blue-team-assessment-v0.8.0-r2.md (Round 2)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

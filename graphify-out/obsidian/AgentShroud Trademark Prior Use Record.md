@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "document"
-community: "docs/project"
+community: ".github/agents"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/github/agents
 ---
 
 # AgentShroud Trademark Prior Use Record
@@ -23,4 +23,4 @@ tags:
 - [[Trademark Notice (AgentShroud USPTO Serial No. 99728633)]] - `supports` [INFERRED]
 - [[USPTO-APPLICATION]] - `provides_evidence_for` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/github/agents

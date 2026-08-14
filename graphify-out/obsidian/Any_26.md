@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "gateway/runtime"
-location: "L123"
+community: "Bot Skill Config"
+location: "L139"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/gateway/runtime
+  - graphify/INFERRED
+  - community/Bot_Skill_Config
 ---
 
 # Any
 
 ## Connections
-- [[.inspect()_2]] - `references` [EXTRACTED]
+- [[.inspect()_1]] - `references` [EXTRACTED]
+- [[ContainerEngine_2]] - `uses` [INFERRED]
+- [[ContainerInfo_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/runtime
+#graphify/code #graphify/INFERRED #community/Bot_Skill_Config

@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L56"
+community: "Security Docs"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Docs
 ---
 
 # Any
 
 ## Connections
-- [[calculate_overall_score()]] - `references` [EXTRACTED]
-- [[calculate_tool_score()]] - `references` [EXTRACTED]
-- [[format_report()]] - `references` [EXTRACTED]
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[._handle_critical()]] - `references` [EXTRACTED]
+- [[categorize_alerts()]] - `references` [EXTRACTED]
+- [[generate_summary()_1]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

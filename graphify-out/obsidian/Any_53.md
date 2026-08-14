@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L182"
+community: "Gateway Security Module"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Security_Module
 ---
 
 # Any
 
 ## Connections
-- [[.get()_4]] - `references` [EXTRACTED]
-- [[.list()]] - `references` [EXTRACTED]
+- [[.__init__()_107]] - `references` [EXTRACTED]
+- [[.get_protection_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

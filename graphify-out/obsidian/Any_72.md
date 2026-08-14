@@ -1,27 +1,22 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "scripts/migrate-cve-registry-ghsa.py"
-location: "L122"
+community: "CHANGELOG.md"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/migrate-cve-registry-ghsapy
+  - community/CHANGELOGmd
 ---
 
 # Any
 
 ## Connections
-- [[_advisory_patched_versions()]] - `references` [EXTRACTED]
-- [[_advisory_text_tokens()]] - `references` [EXTRACTED]
-- [[build_id_plan()]] - `references` [EXTRACTED]
-- [[compute_stats()]] - `references` [EXTRACTED]
-- [[fetch_advisories()]] - `references` [EXTRACTED]
-- [[gather_advisories()]] - `references` [EXTRACTED]
-- [[load_registry()]] - `references` [EXTRACTED]
-- [[load_snapshot()]] - `references` [EXTRACTED]
-- [[match_entry()]] - `references` [EXTRACTED]
-- [[render_manual_review()]] - `references` [EXTRACTED]
-- [[rewrite_registry_text()]] - `references` [EXTRACTED]
+- [[check_current_version()]] - `references` [EXTRACTED]
+- [[downgrade()]] - `references` [EXTRACTED]
+- [[list_versions()]] - `references` [EXTRACTED]
+- [[rollback()]] - `references` [EXTRACTED]
+- [[security_review()]] - `references` [EXTRACTED]
+- [[upgrade()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/migrate-cve-registry-ghsapy
+#graphify/code #graphify/EXTRACTED #community/CHANGELOGmd

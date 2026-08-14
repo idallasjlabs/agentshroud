@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "web/management-dashboard.html"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/web/management-dashboardhtml
 ---
 
 # AgentShroud Red Team Adversarial Tester
@@ -20,4 +20,4 @@ tags:
 - [[SKILL_51]] - `contains` [EXTRACTED]
 - [[Writing Exploit Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/web/management-dashboardhtml

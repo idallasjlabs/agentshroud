@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/png/logo.png"
 type: "image"
-community: "branding/logos"
+community: "docs/integrations"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/branding/logos
+  - community/docs/integrations
 ---
 
 # AgentShroud Logo PNG (Dark Background)
@@ -28,4 +28,4 @@ tags:
 - [[AgentShroud Primary Logo (Dark Background)]] - `semantically_similar_to` [INFERRED]
 - [[AgentShroud Telegram Bot Avatar (512x512)]] - `semantically_similar_to` [EXPLICIT]
 
-#graphify/image #graphify/INFERRED #community/branding/logos
+#graphify/image #graphify/INFERRED #community/docs/integrations

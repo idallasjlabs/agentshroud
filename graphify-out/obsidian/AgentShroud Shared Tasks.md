@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Planning Docs"
+community: "Bot Skill Config"
 location: "L383"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Bot_Skill_Config
 ---
 
 # AgentShroud Shared Tasks:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Apple Reminders — Items Recovered]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

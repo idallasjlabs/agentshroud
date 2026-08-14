@@ -1,11 +1,11 @@
 ---
 source_file: "branding/email/email-banner-600x150.png"
 type: "image"
-community: "branding/logos"
+community: "docs/integrations"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/branding/logos
+  - community/docs/integrations
 ---
 
 # AgentShroud Email Banner (600x150)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Brand Mockup (Merchandise)]] - `semantically_similar_to` [INFERRED]
 - [[AgentShroud Logo PNG (Dark Background)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/branding/logos
+#graphify/image #graphify/INFERRED #community/docs/integrations

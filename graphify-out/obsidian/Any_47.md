@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Egress & RBAC Security Core"
-location: "L94"
+community: "Progressive Trust Config"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Progressive_Trust_Config
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_97]] - `references` [EXTRACTED]
-- [[.get_global_stats()]] - `references` [EXTRACTED]
-- [[.get_session_stats()]] - `references` [EXTRACTED]
+- [[.from_dict()_8]] - `references` [EXTRACTED]
+- [[.get_integrity_status()]] - `references` [EXTRACTED]
+- [[.get_recent_alerts()]] - `references` [EXTRACTED]
+- [[.to_dict()_10]] - `references` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[MemorySecurityConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config

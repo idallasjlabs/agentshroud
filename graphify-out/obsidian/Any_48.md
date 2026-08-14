@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Gateway Security Module"
-location: "L124"
+community: "Progressive Trust Config"
+location: "L379"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - graphify/INFERRED
+  - community/Progressive_Trust_Config
 ---
 
 # Any
 
 ## Connections
-- [[._parse_service_network_config()]] - `references` [EXTRACTED]
-- [[._validate_network_definitions()]] - `references` [EXTRACTED]
-- [[.get_security_report()]] - `references` [EXTRACTED]
+- [[.get_lifecycle_status()]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[MemorySecurityConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/INFERRED #community/Progressive_Trust_Config

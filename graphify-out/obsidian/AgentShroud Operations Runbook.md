@@ -1,11 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "docs/operations"
+community: "Gateway Test Suite"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Gateway_Test_Suite
 ---
 
 # AgentShroud Operations Runbook
@@ -26,4 +27,4 @@ tags:
 - [[Trust Manager  Progressive Trust System]] - `references` [EXTRACTED]
 - [[runbook]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "branding/guidelines"
+community: "Architecture Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/Architecture_Docs
 ---
 
 # AgentShroud Brand Guidelines
@@ -29,4 +29,4 @@ tags:
 - [[Typography in Practice]] - `contains` [EXTRACTED]
 - [[brand-guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/guidelines
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

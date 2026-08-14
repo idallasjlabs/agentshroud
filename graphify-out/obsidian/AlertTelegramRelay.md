@@ -13,16 +13,15 @@ tags:
 
 ## Connections
 - [[.__call__()]] - `method` [EXTRACTED]
-- [[.__init__()_13]] - `method` [EXTRACTED]
+- [[.__init__()_8]] - `method` [EXTRACTED]
 - [[._clean_tool()]] - `method` [EXTRACTED]
 - [[._coerce()]] - `method` [EXTRACTED]
 - [[._dedup_key()]] - `method` [EXTRACTED]
 - [[._handle()]] - `method` [EXTRACTED]
 - [[._spawn_send()]] - `method` [EXTRACTED]
 - [[.flush()]] - `method` [EXTRACTED]
-- [[FastAPI_2]] - `uses` [INFERRED]
+- [[FastAPI_1]] - `uses` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
-- [[LogRecord_3]] - `uses` [INFERRED]
 - [[Subscribe to the gateway EventBus; relay security alerts to Telegram.]] - `rationale_for` [EXTRACTED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
 - [[_SendSpy]] - `uses` [INFERRED]

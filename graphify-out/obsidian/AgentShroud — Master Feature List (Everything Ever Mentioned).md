@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Planning Docs"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Bot_Skill_Config
 ---
 
 # AgentShroud — Master Feature List (Everything Ever Mentioned)
@@ -23,4 +23,4 @@ tags:
 - [[v1.0.0 — Fortress (Polish + Public Release)]] - `contains` [EXTRACTED]
 - [[⚠️ STATUS UPDATE — 2026-07-09 (read before the per-item marks below)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

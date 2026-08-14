@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Setup Docs"
+community: "Bot Skill Config"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Alternative: Auto-Pairing URL
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,18 +1,27 @@
 ---
-source_file: "scripts/triage-cve-mitigations.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "scripts/triage-cve-mitigations.py"
-location: "L731"
+community: "Gateway Test Suite"
+location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/triage-cve-mitigationspy
+  - community/Gateway_Test_Suite
 ---
 
 # Any
 
 ## Connections
-- [[summarize()]] - `references` [EXTRACTED]
-- [[triage_entry()]] - `references` [EXTRACTED]
+- [[_advisory_patched_versions()]] - `references` [EXTRACTED]
+- [[_advisory_text_tokens()]] - `references` [EXTRACTED]
+- [[build_id_plan()]] - `references` [EXTRACTED]
+- [[compute_stats()]] - `references` [EXTRACTED]
+- [[fetch_advisories()]] - `references` [EXTRACTED]
+- [[gather_advisories()]] - `references` [EXTRACTED]
+- [[load_registry()]] - `references` [EXTRACTED]
+- [[load_snapshot()]] - `references` [EXTRACTED]
+- [[match_entry()]] - `references` [EXTRACTED]
+- [[render_manual_review()]] - `references` [EXTRACTED]
+- [[rewrite_registry_text()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

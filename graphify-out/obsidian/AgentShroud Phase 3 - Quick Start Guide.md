@@ -1,12 +1,12 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "docker/QUICKSTART.md"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/QUICKSTARTmd
+  - community/Bot_Skill_Config
 ---
 
 # AgentShroud Phase 3 - Quick Start Guide
@@ -25,4 +25,4 @@ tags:
 - [[Troubleshooting]] - `contains` [EXTRACTED]
 - [[Voice Terminal (optional — ESP32-S3-BOX-3 + Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/QUICKSTARTmd
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

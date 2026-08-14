@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Auth & Exception Types"
-location: "L187"
+community: "docs/reviews"
+location: "L231"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - graphify/EXTRACTED
+  - community/docs/reviews
 ---
 
 # Any
 
 ## Connections
-- [[.check_permission()]] - `references` [EXTRACTED]
-- [[.get_user_permissions_summary()]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[._scan_for_canary()]] - `references` [EXTRACTED]
+- [[.get_status()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/docs/reviews

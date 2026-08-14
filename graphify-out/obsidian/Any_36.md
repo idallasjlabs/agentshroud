@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "PII Config & Test Fixtures"
-location: "L289"
+community: "Audit Export Pipeline"
+location: "L64"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - graphify/INFERRED
+  - community/Audit_Export_Pipeline
 ---
 
 # Any
 
 ## Connections
-- [[.get_leakage_summary()]] - `references` [EXTRACTED]
-- [[.monitor_environment_access()]] - `references` [EXTRACTED]
+- [[.__init__()_63]] - `references` [EXTRACTED]
+- [[ContextSegment]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[SystemPromptFingerprint]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/INFERRED #community/Audit_Export_Pipeline

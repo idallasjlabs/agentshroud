@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Gateway Test Suite"
 location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Config__Test_Fixtures
+  - community/Gateway_Test_Suite
 ---
 
 # AlertDispatcher
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_50]] - `method` [EXTRACTED]
 - [[._format_alert_message()]] - `method` [EXTRACTED]
 - [[._is_duplicate()]] - `method` [EXTRACTED]
@@ -29,14 +29,14 @@ tags:
 - [[.test_alert_dispatcher_init()]] - `calls` [EXTRACTED]
 - [[.test_alert_dispatcher_write()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[CronStateMonitor]] - `calls` [INFERRED]
 - [[Dispatches security alerts with dedup and rate limiting.]] - `rationale_for` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[Path_22]] - `uses` [INFERRED]
+- [[Path_23]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAlertDispatcher]] - `uses` [INFERRED]
@@ -88,4 +88,4 @@ tags:
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 - [[test_security_toolchain.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

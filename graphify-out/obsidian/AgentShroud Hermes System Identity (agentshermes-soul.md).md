@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/agents/hermes-soul.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # AgentShroud Hermes System Identity (agents/hermes-soul.md)
@@ -13,6 +13,6 @@ tags:
 ## Connections
 - [[Agents Folder README]] - `references` [INFERRED]
 - [[SOUL_2]] - `semantically_similar_to` [INFERRED]
-- [[manifest.json]] - `references` [EXTRACTED]
+- [[manifest.json_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/document #graphify/INFERRED #community/Gateway_Test_Suite

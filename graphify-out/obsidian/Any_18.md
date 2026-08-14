@@ -1,30 +1,29 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Security Pipeline Core"
-location: "L88"
+community: "docs/operations"
+location: "L119"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Security_Pipeline_Core
+  - graphify/INFERRED
+  - community/docs/operations
 ---
 
 # Any
 
 ## Connections
-- [[._process_inbound_core()]] - `references` [EXTRACTED]
-- [[._process_outbound_core()]] - `references` [EXTRACTED]
-- [[.append()]] - `references` [EXTRACTED]
-- [[.append_block()]] - `references` [EXTRACTED]
-- [[.append_owner_bypass()]] - `references` [EXTRACTED]
-- [[.get_stats()_6]] - `references` [EXTRACTED]
-- [[.process_inbound()_1]] - `references` [EXTRACTED]
-- [[.process_outbound()_2]] - `references` [EXTRACTED]
-- [[.to_dict()_1]] - `references` [EXTRACTED]
-- [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[FilterResult]] - `uses` [INFERRED]
-- [[InjectionAction]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[ViolationType]] - `uses` [INFERRED]
+- [[._execute_tool_call()]] - `references` [EXTRACTED]
+- [[._extract_egress_targets()]] - `references` [EXTRACTED]
+- [[._sanitize_admin_private_data()]] - `references` [EXTRACTED]
+- [[.get_stats()_5]] - `references` [EXTRACTED]
+- [[.send_request()]] - `references` [EXTRACTED]
+- [[.send_request()_1]] - `references` [EXTRACTED]
+- [[InspectionResult]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Pipeline_Core
+#graphify/code #graphify/INFERRED #community/docs/operations

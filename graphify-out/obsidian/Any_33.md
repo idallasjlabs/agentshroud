@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "PII Config & Test Fixtures"
-location: "L465"
+community: "Auth & Exception Types"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Auth__Exception_Types
 ---
 
 # Any
 
 ## Connections
-- [[.get_attack_summary()]] - `references` [EXTRACTED]
+- [[.to_dict()_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

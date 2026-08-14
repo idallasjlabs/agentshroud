@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/proxy/llm_proxy.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "Gateway Proxy Layer"
-location: "L1440"
+community: "Gateway Test Suite"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Gateway_Test_Suite
 ---
 
 # Any
 
 ## Connections
-- [[._filter_streaming_event()]] - `references` [EXTRACTED]
+- [[.__init__()_3]] - `references` [EXTRACTED]
+- [[._default_send()]] - `references` [EXTRACTED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

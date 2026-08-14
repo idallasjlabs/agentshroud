@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "docs/api"
+community: "docs/vault"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/api
+  - community/docs/vault
 ---
 
 # AgentShroud v1.3.0
@@ -17,4 +17,4 @@ tags:
 - [[Overview_3]] - `contains` [EXTRACTED]
 - [[Overview_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/api
+#graphify/document #graphify/EXTRACTED #community/docs/vault

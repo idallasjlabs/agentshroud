@@ -1,29 +1,20 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Gateway Proxy Layer"
-location: "L119"
+community: "docs/operations"
+location: "L140"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Gateway_Proxy_Layer
+  - graphify/EXTRACTED
+  - community/docs/operations
 ---
 
 # Any
 
 ## Connections
-- [[._execute_tool_call()]] - `references` [EXTRACTED]
-- [[._extract_egress_targets()]] - `references` [EXTRACTED]
-- [[._sanitize_admin_private_data()]] - `references` [EXTRACTED]
-- [[.get_stats()_5]] - `references` [EXTRACTED]
-- [[.send_request()]] - `references` [EXTRACTED]
-- [[.send_request()_1]] - `references` [EXTRACTED]
-- [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
+- [[._redact_pii()]] - `references` [EXTRACTED]
+- [[._scan_value()]] - `references` [EXTRACTED]
+- [[.inspect_tool_call()]] - `references` [EXTRACTED]
+- [[.inspect_tool_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/docs/operations

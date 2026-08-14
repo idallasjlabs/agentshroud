@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Telegram Proxy Test Suite"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Agent with low trust cannot perform elevated actions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_trust_insufficient_action_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

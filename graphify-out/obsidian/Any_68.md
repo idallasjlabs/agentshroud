@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L516"
+community: "docs/vault"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - graphify/INFERRED
+  - community/docs/vault
 ---
 
 # Any
 
 ## Connections
-- [[_stub_summary()]] - `references` [EXTRACTED]
+- [[._build_bridge()]] - `references` [EXTRACTED]
+- [[ResourceGuard]] - `uses` [INFERRED]
+- [[ResourceLimits]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/docs/vault

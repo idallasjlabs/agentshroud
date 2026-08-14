@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "docker/bot-capabilities.md"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/bot-capabilitiesmd
+  - community/Gateway_Test_Suite
 ---
 
 # AgentShroud Bot Capabilities
@@ -17,4 +17,4 @@ tags:
 - [[Trademark Statements]] - `contains` [EXTRACTED]
 - [[bot-capabilities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

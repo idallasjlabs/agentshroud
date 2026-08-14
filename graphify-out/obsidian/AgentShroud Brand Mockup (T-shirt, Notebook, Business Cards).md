@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/png/logo-mockup.png"
 type: "image"
-community: "branding/logos"
+community: "docs/integrations"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/branding/logos
+  - community/docs/integrations
 ---
 
 # AgentShroud Brand Mockup (T-shirt, Notebook, Business Cards)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Logo PNG (Dark Background)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/branding/logos
+#graphify/image #graphify/INFERRED #community/docs/integrations

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "branding/typography"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/typography
+  - community/docs/vault
 ---
 
 # AgentShroud Typography Guidelines
@@ -21,4 +21,4 @@ tags:
 - [[Usage Guidelines_2]] - `contains` [EXTRACTED]
 - [[typography]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/typography
+#graphify/document #graphify/EXTRACTED #community/docs/vault

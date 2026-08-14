@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "Slack API Proxy"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Slack_API_Proxy
 ---
 
 # AgentTarget
@@ -17,14 +17,14 @@ tags:
 - [[.test_blocked_outbound_replaced_with_policy_notice()]] - `calls` [EXTRACTED]
 - [[.test_default_not_used_in_pipeline()]] - `calls` [EXTRACTED]
 - [[AgentTarget_1]] - `uses` [INFERRED]
-- [[Any]] - `uses` [INFERRED]
+- [[Any_9]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[Downstream agent target]] - `rationale_for` [EXTRACTED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[POST forwardstream (streaming voice pipeline)]] - `references` [EXTRACTED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[RouterError]] - `uses` [INFERRED]
 - [[TestAgentIdPropagatedFromTarget]] - `uses` [INFERRED]
 - [[TestOutboundBlockedNotDelivered]] - `uses` [INFERRED]
@@ -72,4 +72,4 @@ tags:
 - [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - `calls` [EXTRACTED]
 - [[test_stream_yields_content_deltas_in_order()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

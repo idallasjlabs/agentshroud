@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Gateway Security Module"
-location: "L439"
+community: "Collaborator Response Templates"
+location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Collaborator_Response_Templates
 ---
 
 # Any
 
 ## Connections
-- [[.get_findings_summary()]] - `references` [EXTRACTED]
+- [[.get_leakage_summary()]] - `references` [EXTRACTED]
+- [[.monitor_environment_access()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates

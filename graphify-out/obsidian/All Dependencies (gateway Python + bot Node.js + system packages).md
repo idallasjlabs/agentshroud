@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "gateway/requirements.txt"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # All Dependencies (gateway Python + bot Node.js + system packages)
@@ -27,4 +27,4 @@ tags:
 - [[uvicornstandard (≥0.34.0 — ASGI server for FastAPI, port 8080)]] - `contains` [EXTRACTED]
 - [[websockets (≥14.0 — WebSocket server for approval queue and dashboard)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

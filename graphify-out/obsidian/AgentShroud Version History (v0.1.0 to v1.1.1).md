@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "CHANGELOG.md"
+community: "Gateway Test Suite"
 location: "lines 1-626"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Gateway_Test_Suite
 ---
 
 # AgentShroud Version History (v0.1.0 to v1.1.1)
@@ -17,4 +17,4 @@ tags:
 - [[v1.1.0 Hermes Multi-bot Release (2026-05-29)]] - `references` [EXTRACTED]
 - [[v1.1.1 Release Guard Wiring and Ops Hardening (2026-06-10)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

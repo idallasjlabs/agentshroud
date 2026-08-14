@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "concept"
-community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+community: ".github/agents"
 location: "Summary of the Invention"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+  - community/github/agents
 ---
 
 # AgentShroud Governance Proxy: Transparent proxy between AI agents and external systems
@@ -16,4 +16,4 @@ tags:
 - [[ADR-007 Zero-Config Security (docker-compose up = fully secured)]] - `configures` [INFERRED]
 - [[USPTO_PROVISIONAL_PATENT_APPLICATION]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+#graphify/concept #graphify/EXTRACTED #community/github/agents

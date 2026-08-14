@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "paper"
-community: "Planning Docs"
+community: "CLAUDE.md"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/CLAUDEmd
 ---
 
 # AgentShroud White Paper v1.1 (Feb 2026)
@@ -24,4 +24,4 @@ tags:
 - [[Wazuh CVE-2025-24016 (CVSS 9.9 RCE)]] - `references` [EXTRACTED]
 - [[v0.8.0 Feature Interactive Egress Firewall + Observatory Mode]] - `conceptually_related_to` [INFERRED]
 
-#graphify/paper #graphify/EXTRACTED #community/Planning_Docs
+#graphify/paper #graphify/EXTRACTED #community/CLAUDEmd

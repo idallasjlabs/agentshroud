@@ -1,17 +1,18 @@
 ---
-source_file: "voice_gateway/tts.py"
+source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "voice_gateway/tts.py"
-location: "L39"
+community: "Gateway Test Suite"
+location: "L731"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_gateway/ttspy
+  - community/Gateway_Test_Suite
 ---
 
 # Any
 
 ## Connections
-- [[_get_pipeline()]] - `references` [EXTRACTED]
+- [[summarize()]] - `references` [EXTRACTED]
+- [[triage_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/ttspy
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,11 +1,11 @@
 ---
 source_file: "branding/taglines.json"
 type: "document"
-community: "branding/README.md"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/Gateway_Test_Suite
 ---
 
 # AgentShroud Taglines List
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Tagline]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

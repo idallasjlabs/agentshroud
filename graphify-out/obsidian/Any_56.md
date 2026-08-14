@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "URL/Domain Validation Tests"
-location: "L62"
+community: "Gateway Test Suite"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # Any
 
 ## Connections
-- [[.add_conversation_message()]] - `references` [EXTRACTED]
-- [[.from_dict()_10]] - `references` [EXTRACTED]
-- [[.get_session_context()]] - `references` [EXTRACTED]
-- [[.reanchor_system_prompt()]] - `references` [EXTRACTED]
-- [[.to_dict()_11]] - `references` [EXTRACTED]
+- [[._alert_high_usage()]] - `references` [EXTRACTED]
+- [[._get_disk_io_stats()]] - `references` [EXTRACTED]
+- [[.add_alert_callback()_1]] - `references` [EXTRACTED]
+- [[.get_usage_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

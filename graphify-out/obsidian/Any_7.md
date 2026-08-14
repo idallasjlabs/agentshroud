@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L55"
+community: "Bot Container Scripts"
+location: "L347"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - graphify/INFERRED
+  - community/Bot_Container_Scripts
 ---
 
 # Any
 
 ## Connections
-- [[.__call__()]] - `references` [EXTRACTED]
-- [[.__init__()_13]] - `references` [EXTRACTED]
-- [[._clean_tool()]] - `references` [EXTRACTED]
-- [[._coerce()]] - `references` [EXTRACTED]
-- [[._handle()]] - `references` [EXTRACTED]
+- [[.get_stats()_1]] - `references` [EXTRACTED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[LedgerEntry_1]] - `uses` [INFERRED]
+- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Bot_Container_Scripts

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "Approval Queue Tests"
-location: "L363"
+community: "Gateway Test Suite"
+location: "L39"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # Any
 
 ## Connections
-- [[._append_audit_event()]] - `references` [EXTRACTED]
-- [[.broadcast()_1]] - `references` [EXTRACTED]
+- [[SCLClient]] - `uses` [INFERRED]
+- [[_output()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

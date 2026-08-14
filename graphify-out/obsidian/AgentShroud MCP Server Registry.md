@@ -1,11 +1,11 @@
 ---
 source_file: ".mcp.json"
 type: "document"
-community: ".mcp.json"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcpjson
+  - community/Bot_Skill_Config
 ---
 
 # AgentShroud MCP Server Registry
@@ -24,4 +24,4 @@ tags:
 - [[Safari MCP Server]] - `references` [EXTRACTED]
 - [[XMind MCP Server]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
