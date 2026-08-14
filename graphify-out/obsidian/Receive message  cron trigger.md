@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "docs/vault"
+community: "Bot Skill Config"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # Receive message / cron trigger
@@ -18,4 +18,4 @@ tags:
 - [[agentshroud-config volume (OpenClaw config)]] - `shares_data_with` [EXTRACTED]
 - [[iMessage Input (imsg-ssh bridge)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

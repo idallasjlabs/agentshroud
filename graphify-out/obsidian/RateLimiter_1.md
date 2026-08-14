@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Egress Domain Allowlist"
+community: "Gateway Test Suite"
 location: "L95"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Domain_Allowlist
+  - community/Gateway_Test_Suite
 ---
 
 # RateLimiter
 
 ## Connections
-- [[.__init__()_42]] - `method` [EXTRACTED]
-- [[.__init__()_43]] - `calls` [EXTRACTED]
+- [[.__init__()_41]] - `method` [EXTRACTED]
+- [[.__init__()_42]] - `calls` [EXTRACTED]
 - [[.check()_1]] - `method` [EXTRACTED]
 - [[.reset()]] - `method` [EXTRACTED]
 - [[.test_rate_limiter_reset()]] - `calls` [EXTRACTED]
@@ -41,4 +41,4 @@ tags:
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Domain_Allowlist
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

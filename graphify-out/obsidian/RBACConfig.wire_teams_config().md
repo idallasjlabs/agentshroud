@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Community 1784"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Community_1784
 ---
 
 # RBACConfig.wire_teams_config()
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Community_1784

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Setup Docs"
+community: "Planning Docs"
 location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Planning_Docs
 ---
 
 # Quick Reference
@@ -18,4 +18,4 @@ tags:
 - [[List Available Models]] - `contains` [EXTRACTED]
 - [[View Configured Providers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "shortcuts/README.md"
 type: "document"
-community: "shortcuts/README.md"
+community: "docs/vault"
 location: "L223"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/shortcuts/READMEmd
+  - community/docs/vault
 ---
 
 # Recipe D — Clipboard relay (macOS menu bar / iOS)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/shortcuts/READMEmd
+#graphify/document #graphify/EXTRACTED #community/docs/vault

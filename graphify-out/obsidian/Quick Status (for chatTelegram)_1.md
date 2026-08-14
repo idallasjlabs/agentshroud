@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pm/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/TEAM.md"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/TEAMmd
 ---
 
 # Quick Status (for chat/Telegram)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Status Reporting_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/TEAMmd

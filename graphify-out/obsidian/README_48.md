@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cicd/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Planning Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

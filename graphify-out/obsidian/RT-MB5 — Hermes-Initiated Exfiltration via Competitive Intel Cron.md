@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "Planning Docs"
+community: "Gateway Security Module"
 location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Gateway_Security_Module
 ---
 
 # RT-MB5 — Hermes-Initiated Exfiltration via Competitive Intel Cron
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[§2 — New Multi-Bot Attack Scenarios (v1.1+ Surface)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

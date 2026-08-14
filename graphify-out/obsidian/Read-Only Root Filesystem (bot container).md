@@ -1,11 +1,11 @@
 ---
 source_file: "examples/docker-compose.production.yml"
 type: "concept"
-community: "examples/docker-commands.md"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/examples/docker-commandsmd
+  - community/docs/vault
 ---
 
 # Read-Only Root Filesystem (bot container)
@@ -14,4 +14,4 @@ tags:
 - [[Docker Commands Reference]] - `references` [EXTRACTED]
 - [[Docker Compose Production Example]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/examples/docker-commandsmd
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

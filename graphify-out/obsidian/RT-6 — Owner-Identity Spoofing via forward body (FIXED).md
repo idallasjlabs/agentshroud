@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "rationale"
-community: "Security Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # RT-6 — Owner-Identity Spoofing via /forward body (FIXED)
@@ -14,4 +14,4 @@ tags:
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `references` [EXTRACTED]
 - [[gatewayingest_apiroutesforward.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "docs/vault"
+community: "skills/openclaw"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/skills/openclaw
 ---
 
 # Quick Reference — AgentShroud
@@ -26,4 +26,4 @@ tags:
 - [[Start  Stop]] - `contains` [EXTRACTED]
 - [[agentshroud-gateway Container (Python 3.13  FastAPI, port 8080, 1280 MB, read-only rootfs)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

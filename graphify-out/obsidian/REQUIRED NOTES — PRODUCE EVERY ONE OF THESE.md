@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Architecture Docs"
 location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Architecture_Docs
 ---
 
 # REQUIRED NOTES — PRODUCE EVERY ONE OF THESE
@@ -35,4 +35,4 @@ tags:
 - [[`09 - DiagramsFull System Flowchart.md`]] - `contains` [EXTRACTED]
 - [[`09 - DiagramsStartup Flow Diagram.md`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

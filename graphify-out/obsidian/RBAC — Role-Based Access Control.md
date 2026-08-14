@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "concept"
-community: "Bot Container Scripts"
+community: "CLAUDE.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/CLAUDEmd
 ---
 
 # RBAC — Role-Based Access Control
@@ -16,4 +16,4 @@ tags:
 - [[Collaborator Workspace PUBLIC-INFO]] - `references` [EXTRACTED]
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/concept #graphify/EXTRACTED #community/CLAUDEmd

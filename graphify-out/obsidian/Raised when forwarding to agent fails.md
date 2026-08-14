@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "PII Sanitizer Pipeline"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Raised when forwarding to agent fails
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ForwardError]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

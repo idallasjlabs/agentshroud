@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "concept"
-community: "Setup Docs"
+community: "Architecture Docs"
 location: "lines 7-19"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Architecture_Docs
 ---
 
 # Raspberry Pi 4 — 8GB RAM, Debian 11, Tailscale
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Raspberry Pi 4 Dev Environment Setup (Bot Development Team)]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Setup_Docs
+#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs

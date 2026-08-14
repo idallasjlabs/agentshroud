@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-qa/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
 ---
 
 # Quality Assurance (QA)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_29]] - `contains` [EXTRACTED]
 - [[Usage_30]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd

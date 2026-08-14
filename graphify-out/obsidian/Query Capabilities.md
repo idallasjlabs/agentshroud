@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Security Module"
 location: "L308"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Security_Module
 ---
 
 # Query Capabilities
@@ -17,4 +17,4 @@ tags:
 - [[Query Response Format]] - `contains` [EXTRACTED]
 - [[Real-Time Event Streaming]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Egress & RBAC Security Core"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Egress__RBAC_Security_Core
 ---
 
 # RBACManager
@@ -32,7 +32,7 @@ tags:
 - [[.test_permission_check_with_context()]] - `calls` [EXTRACTED]
 - [[.test_rbac_manager_without_config()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -60,4 +60,4 @@ tags:
 - [[set_user_role()_1]] - `calls` [EXTRACTED]
 - [[test_rbac.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

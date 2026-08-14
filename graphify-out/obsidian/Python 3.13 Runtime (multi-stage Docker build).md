@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "concept"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "gateway/Dockerfile"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # Python 3.13 Runtime (multi-stage Docker build)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dockerfile.gateway_1]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

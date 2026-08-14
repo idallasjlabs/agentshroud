@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "PromptGuard Encoding Detection"
+community: "MCP Policy Engine"
 location: "L891"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard_Encoding_Detection
+  - community/MCP_Policy_Engine
 ---
 
 # Rapid successes should be capped by rate limiting.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_rate_limiting_prevents_rapid_escalation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine

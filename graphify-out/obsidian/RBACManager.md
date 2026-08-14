@@ -12,7 +12,7 @@ tags:
 # RBACManager
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.get_rbac_manager()]] - `references` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[AgentRegistry]] - `uses` [INFERRED]

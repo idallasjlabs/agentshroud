@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Approval & FastAPI Ingest"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Approval__FastAPI_Ingest
 ---
 
 # RBACConfig
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
-- [[.__init__()_27]] - `calls` [EXTRACTED]
-- [[.__init__()_33]] - `calls` [EXTRACTED]
-- [[.__init__()_38]] - `calls` [EXTRACTED]
-- [[.__init__()_44]] - `calls` [EXTRACTED]
-- [[.__post_init__()_4]] - `calls` [EXTRACTED]
-- [[.__post_init__()_7]] - `method` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
+- [[.__init__()_26]] - `calls` [EXTRACTED]
+- [[.__init__()_32]] - `calls` [EXTRACTED]
+- [[.__init__()_37]] - `calls` [EXTRACTED]
+- [[.__init__()_43]] - `calls` [EXTRACTED]
+- [[.__post_init__()_5]] - `calls` [EXTRACTED]
+- [[.__post_init__()_8]] - `method` [EXTRACTED]
 - [[._ensure_rbac()]] - `calls` [EXTRACTED]
 - [[._filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[._is_owner()]] - `calls` [EXTRACTED]
@@ -36,25 +36,24 @@ tags:
 - [[Action]] - `uses` [INFERRED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[AgentTarget_2]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
-- [[Any_18]] - `uses` [INFERRED]
-- [[Any_20]] - `uses` [INFERRED]
-- [[Any_23]] - `uses` [INFERRED]
-- [[Any_44]] - `uses` [INFERRED]
-- [[Any_52]] - `uses` [INFERRED]
-- [[Any_69]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
+- [[Any_19]] - `uses` [INFERRED]
+- [[Any_21]] - `uses` [INFERRED]
+- [[Any_24]] - `uses` [INFERRED]
+- [[Any_46]] - `uses` [INFERRED]
+- [[Any_54]] - `uses` [INFERRED]
+- [[Any_71]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
-- [[AuthRequired_5]] - `uses` [INFERRED]
+- [[AuthRequired_3]] - `uses` [INFERRED]
 - [[Configuration for Role-Based Access Control.]] - `rationale_for` [EXTRACTED]
 - [[EmailSendRequest_1]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
-- [[FastAPI_2]] - `uses` [INFERRED]
+- [[FastAPI_1]] - `uses` [INFERRED]
 - [[ForwardRequest_2]] - `uses` [INFERRED]
 - [[GroupAccessDenied]] - `uses` [INFERRED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
-- [[LogRecord_3]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
@@ -87,7 +86,7 @@ tags:
 - [[RBACManager]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[RateLimitEntry]] - `uses` [INFERRED]
-- [[Request_1]] - `uses` [INFERRED]
+- [[Request_4]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[Role]] - `uses` [INFERRED]
@@ -240,4 +239,4 @@ tags:
 - [[websocket.py]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest

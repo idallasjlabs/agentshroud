@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "rationale"
-community: "Gateway Skills System"
+community: "gateway/runtime"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Skills_System
+  - community/gateway/runtime
 ---
 
 # Read every manifest entry under *source*, failing CLOSED on unreadable files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_build_tree()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Skills_System
+#graphify/rationale #graphify/EXTRACTED #community/gateway/runtime

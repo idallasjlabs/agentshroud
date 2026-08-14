@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Group RBAC Roles"
+community: "File Sandbox"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/File_Sandbox
 ---
 
 # Read-only member denied file_deletion in group context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_readonly_denied_file_deletion_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox
