@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
 type: "document"
-community: "CLAUDE.md"
+community: "Gateway Test Suite"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CLAUDEmd
+  - community/Gateway_Test_Suite
 ---
 
 # ⚠️ Warning: killswitch.sh Path
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[P1 — Active Defense (1414 ✅)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CLAUDEmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

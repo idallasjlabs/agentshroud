@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "docs/project"
+community: "scripts/sync-cve-registry.py"
 location: "L680"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/scripts/sync-cve-registrypy
 ---
 
 # upgrade_agentshroud()
@@ -20,4 +20,4 @@ tags:
 - [[api.py]] - `contains` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/project
+#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: ".github/ISSUE_TEMPLATE"
+community: "Gateway Test Suite"
 location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/github/ISSUE_TEMPLATE
+  - community/Gateway_Test_Suite
 ---
 
 # validate_manifest()
@@ -22,4 +22,4 @@ tags:
 - [[manifest.py]] - `contains` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/github/ISSUE_TEMPLATE
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

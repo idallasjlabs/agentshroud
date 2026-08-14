@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "MCP Proxy Config"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/MCP_Proxy_Config
 ---
 
 # wrap_tool_result() sets issuer='tool:<name>' and passes verification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_envelope_wraps_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

@@ -20,7 +20,7 @@ tags:
 - [[RELEASE-PLAN]] - `contains` [EXTRACTED]
 - [[Risk Register]] - `contains` [EXTRACTED]
 - [[Success Criteria_2]] - `contains` [EXTRACTED]
-- [[Summary_5]] - `contains` [EXTRACTED]
+- [[Summary_24]] - `contains` [EXTRACTED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring (104 items)]] - `contains` [EXTRACTED]
 - [[v0.8.0-release-plan]] - `contains` [EXTRACTED]
 - [[v0.9.0 Sentinel — Data Isolation + SOC + Remediation (37 items)]] - `contains` [EXTRACTED]
