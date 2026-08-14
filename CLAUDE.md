@@ -25,6 +25,16 @@ At the start of every session, the knowledge graph for this project lives here:
 
 Do not ask where files are. Read the module index first.
 
+**`/graphify` runs in this repo must always produce a current Obsidian vault.**
+`graphify-out/obsidian/` (separate from `.obsidian-vaults/` above) is the
+graphify-generated, symbol-level knowledge vault and is a first-class
+deliverable, not optional output — run `/graphify --update --obsidian` (or
+follow up with `graphify export obsidian` if the flow used doesn't already
+include it) every time the graph is updated. Committing it: stage in
+batches of ~500 files via `git add --pathspec-from-file=<file>
+--pathspec-file-nul` — a single `git add` of the full vault overflows the
+`git-secrets` pre-commit hook's argv (ARG_MAX).
+
 ## 0) PRIME DIRECTIVE (NON-NEGOTIABLE)
 ──────────────────────────────────────────────────────────────────────────────
 
