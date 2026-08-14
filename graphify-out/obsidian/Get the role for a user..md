@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Egress & RBAC Security Core"
 location: "L260"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Get the role for a user.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_user_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

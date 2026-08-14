@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-gg/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "branding/INDEX.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/branding/INDEXmd
 ---
 
 # GIT-GUARD Skill Definition
@@ -20,4 +20,4 @@ tags:
 - [[i-gg README (Git Workflow Guardian)]] - `references` [EXTRACTED]
 - [[qa Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/branding/INDEXmd

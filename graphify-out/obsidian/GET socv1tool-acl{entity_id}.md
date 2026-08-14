@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Progressive Trust Config"
+community: "File Sandbox"
 location: "L1514"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/File_Sandbox
 ---
 
 # GET /soc/v1/tool-acl/{entity_id}
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox

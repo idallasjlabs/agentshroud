@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "concept"
-community: "docker/bot-capabilities.md"
+community: "Security Docs"
 location: "Credential Architecture section"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docker/bot-capabilitiesmd
+  - community/Security_Docs
 ---
 
 # Gateway op-proxy Credential Retrieval Architecture
@@ -15,4 +15,4 @@ tags:
 - [[System Instructions Credential Security (Ultra-Conservative v4.0)]] - `references` [EXTRACTED]
 - [[op-wrapper.sh Credential Gateway Proxy]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docker/bot-capabilitiesmd
+#graphify/concept #graphify/EXTRACTED #community/Security_Docs

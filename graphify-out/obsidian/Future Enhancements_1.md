@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "docs/reference"
+community: "Gateway Test Suite"
 location: "L338"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/reference
+  - community/Gateway_Test_Suite
 ---
 
 # Future Enhancements
@@ -19,4 +19,4 @@ tags:
 - [[Priority 4 Multi-Page Support]] - `contains` [EXTRACTED]
 - [[Priority 5 Direct Gmail Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/reference
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

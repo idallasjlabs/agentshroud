@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/pages.yml"
 type: "document"
-community: "README.md"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/READMEmd
+  - community/skills/openclaw
 ---
 
 # GitHub Pages Deploy Workflow
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud™ README]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/READMEmd
+#graphify/document #graphify/INFERRED #community/skills/openclaw

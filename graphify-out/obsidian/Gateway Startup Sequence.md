@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
 type: "concept"
-community: "docs/vault"
+community: "Gateway Security Module"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Security_Module
 ---
 
 # Gateway Startup Sequence
@@ -15,4 +15,4 @@ tags:
 - [[Restart Procedure Runbook]] - `references` [EXTRACTED]
 - [[Startup Flow Diagram_1]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Security_Module

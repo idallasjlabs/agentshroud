@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # Function Details
@@ -18,4 +18,4 @@ tags:
 - [[get_auth_dependency(config)]] - `contains` [EXTRACTED]
 - [[verify_token(token, expected_token)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "Planning Docs"
+community: "docs/flows"
 location: "L243"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/docs/flows
 ---
 
 # **GO — Continue Development**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. Go  No-Go Recommendation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/flows

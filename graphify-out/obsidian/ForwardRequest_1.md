@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "Slack API Proxy"
 location: "L116"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Forward_Routing__Approval
+  - community/Slack_API_Proxy
 ---
 
 # ForwardRequest
@@ -15,6 +15,6 @@ tags:
 - [[.resolve_target()]] - `references` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Forward_Routing__Approval
+#graphify/code #graphify/INFERRED #community/Slack_API_Proxy

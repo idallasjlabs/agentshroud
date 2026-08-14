@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/blogwatcher/SKILL.md"
 type: "concept"
-community: "skills/openclaw"
+community: "Bot Skill Config"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Bot_Skill_Config
 ---
 
 # Go-installed OpenClaw Skills (blogwatcher, blucli, eightctl, grizzly, gifgrep)
@@ -17,4 +17,4 @@ tags:
 - [[OpenClaw Skill eightctl (Eight Sleep pod control)]] - `member_of` [EXTRACTED]
 - [[OpenClaw Skill gifgrep (GIF searchdownload CLI)]] - `member_of` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/skills/openclaw
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

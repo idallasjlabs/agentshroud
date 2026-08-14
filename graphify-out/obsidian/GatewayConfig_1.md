@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "Telegram Proxy Test Suite"
 location: "L296"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Forward_Routing__Approval
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # GatewayConfig
@@ -22,7 +22,7 @@ tags:
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Complete gateway configuration]] - `rationale_for` [EXTRACTED]
-- [[FastAPI_3]] - `uses` [INFERRED]
+- [[FastAPI_2]] - `uses` [INFERRED]
 - [[GatewayConfig]] - `uses` [INFERRED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[GatewayConfig_3]] - `uses` [INFERRED]
@@ -31,12 +31,12 @@ tags:
 - [[MCPResultRequest]] - `uses` [INFERRED]
 - [[OpProxyRequest]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
-- [[Path_24]] - `uses` [INFERRED]
-- [[Path_34]] - `uses` [INFERRED]
+- [[Path_25]] - `uses` [INFERRED]
+- [[Path_35]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `shares_data_with` [EXTRACTED]
+- [[RouterConfig]] - `shares_data_with` [EXTRACTED]
 - [[SSHConfig]] - `uses` [INFERRED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
 - [[TestAutoRevert]] - `uses` [INFERRED]
 - [[TestConfidenceFloor]] - `uses` [INFERRED]
 - [[TestConfigurationLoading]] - `uses` [INFERRED]
@@ -93,4 +93,4 @@ tags:
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Forward_Routing__Approval
+#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite

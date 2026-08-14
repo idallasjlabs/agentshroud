@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Collaborator Response Templates"
 location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Security_Module
+  - community/Collaborator_Response_Templates
 ---
 
 # GitGuard
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_79]] - `method` [EXTRACTED]
 - [[._analyze_file_content()]] - `method` [EXTRACTED]
 - [[._analyze_script_content()]] - `method` [EXTRACTED]
@@ -41,7 +41,7 @@ tags:
 - [[.test_reverse_shell_flagged()]] - `calls` [EXTRACTED]
 - [[.test_wget_flagged()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -97,4 +97,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Security_Module
+#graphify/code #graphify/INFERRED #community/Collaborator_Response_Templates

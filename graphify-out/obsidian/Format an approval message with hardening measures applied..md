@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Kill Switch Config"
 location: "L420"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Kill_Switch_Config
 ---
 
 # Format an approval message with hardening measures applied.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.format_hardened_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch_Config

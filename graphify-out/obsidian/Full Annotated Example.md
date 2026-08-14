@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "docs/ssh-configuration.md"
+community: "Architecture Docs"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/ssh-configurationmd
+  - community/Architecture_Docs
 ---
 
 # Full Annotated Example
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Configuration Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/ssh-configurationmd
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "concept"
-community: "docs/vault"
+community: "Security Docs"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/docs/vault
+  - community/Security_Docs
 ---
 
 # Gateway Initialization Order
@@ -15,4 +15,4 @@ tags:
 - [[Dependency Graph Diagram]] - `describes` [EXTRACTED]
 - [[MCP Proxy (tool call inspection layer)]] - `contains` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/docs/vault
+#graphify/concept #graphify/INFERRED #community/Security_Docs

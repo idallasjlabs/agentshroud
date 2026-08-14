@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/mcp-proxy-wrapper.js"
 type: "concept"
-community: "Docker Deploy Scripts"
+community: "Custom Skills"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Custom_Skills
 ---
 
 # Gateway /mcp/proxy and /mcp/result endpoints
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[mcp-proxy-wrapper.js]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/concept #graphify/EXTRACTED #community/Custom_Skills

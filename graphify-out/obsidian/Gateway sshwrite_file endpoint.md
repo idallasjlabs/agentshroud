@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/agentshroud-ssh-write-file.sh"
 type: "concept"
-community: "Docker Deploy Scripts"
+community: "Gateway Proxy Layer"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Gateway_Proxy_Layer
 ---
 
 # Gateway /ssh/write_file endpoint
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[agentshroud-ssh-write-file.sh]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Proxy_Layer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Slack API Proxy"
 location: "L63"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Slack_API_Proxy
 ---
 
 # GatewayConfig
@@ -15,4 +15,4 @@ tags:
 - [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[_load()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Slack_API_Proxy

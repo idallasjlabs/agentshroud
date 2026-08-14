@@ -12,7 +12,7 @@ tags:
 # GatewayEmailService
 
 ## Connections
-- [[.__init__()_15]] - `method` [EXTRACTED]
+- [[.__init__()_10]] - `method` [EXTRACTED]
 - [[.build_message()]] - `method` [EXTRACTED]
 - [[.send()]] - `method` [EXTRACTED]
 - [[.sender()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[email_send()]] - `calls` [EXTRACTED]
 - [[email_service.py]] - `contains` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
-- [[test_gateway_email_service.py]] - `implements` [EXTRACTED]
+- [[test_gateway_email_service.py]] - `imports` [EXTRACTED]
 - [[test_sender_property()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

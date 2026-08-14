@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mc/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "branding/INDEX.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/branding/INDEXmd
 ---
 
 # GSDE&G Development Master Checklist Skill
@@ -17,4 +17,4 @@ tags:
 - [[i-mc README (Development Master Checklist)]] - `references` [EXTRACTED]
 - [[qa Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/branding/INDEXmd

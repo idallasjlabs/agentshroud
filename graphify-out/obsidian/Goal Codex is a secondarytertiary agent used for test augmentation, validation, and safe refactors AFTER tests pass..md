@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "AGENTS.md"
+community: "voice_gateway/tts.py"
 location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSmd
+  - community/voice_gateway/ttspy
 ---
 
 # Goal: Codex is a secondary/tertiary agent used for test augmentation, validation, and safe refactors AFTER tests pass.
@@ -25,4 +25,4 @@ tags:
 - [[AGENTS]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSmd
+#graphify/document #graphify/EXTRACTED #community/voice_gateway/ttspy

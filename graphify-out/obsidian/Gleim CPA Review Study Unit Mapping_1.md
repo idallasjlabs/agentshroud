@@ -11,6 +11,6 @@ tags:
 # Gleim CPA Review Study Unit Mapping
 
 ## Connections
-- [[OKE Channel — CPA Exam Context]] - `implements` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_1]] - `implements` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

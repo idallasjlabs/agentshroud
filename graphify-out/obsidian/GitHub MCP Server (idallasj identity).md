@@ -1,11 +1,11 @@
 ---
 source_file: ".mcp.json"
 type: "document"
-community: ".mcp.json"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcpjson
+  - community/Bot_Skill_Config
 ---
 
 # GitHub MCP Server (idallasj identity)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud MCP Server Registry]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

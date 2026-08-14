@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-02-c4-container.svg"
 type: "image"
-community: "docs/diagrams"
+community: "Gateway Test Suite"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Gateway_Test_Suite
 ---
 
 # Gateway Container (Python 3.11/FastAPI :8080)
@@ -21,4 +21,4 @@ tags:
 - [[Telegram (external system)]] - `shares_data_with` [EXTRACTED]
 - [[agentshroud-bot Container (Node.js 22 OpenClaw, port 18789, 4 GB, isolated network)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/docs/diagrams
+#graphify/image #graphify/EXTRACTED #community/Gateway_Test_Suite

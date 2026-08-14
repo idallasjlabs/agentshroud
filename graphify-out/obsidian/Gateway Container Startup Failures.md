@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "docs/vault"
+community: "skills/openclaw"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/skills/openclaw
 ---
 
 # Gateway Container Startup Failures
@@ -19,4 +19,4 @@ tags:
 - [[`ValueError Invalid YAML structure`]] - `contains` [EXTRACTED]
 - [[spaCy Model Not Loading]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

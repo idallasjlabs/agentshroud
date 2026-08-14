@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-06-cicd-deployment.svg"
 type: "image"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Git Worktrees (../agentshroud-worktrees/)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Get Shit Done (GSD) Governance Cadence]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Architecture_Docs
+#graphify/image #graphify/INFERRED #community/Gateway_Test_Suite

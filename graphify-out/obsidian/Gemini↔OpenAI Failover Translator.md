@@ -1,11 +1,11 @@
 ---
 source_file: "CHANGELOG.md"
 type: "concept"
-community: "CHANGELOG.md"
+community: "Gateway Test Suite"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Gateway_Test_Suite
 ---
 
 # Gemini↔OpenAI Failover Translator
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[v1.1.1 Release]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

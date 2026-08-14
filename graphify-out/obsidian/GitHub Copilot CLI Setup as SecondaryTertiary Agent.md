@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: ".github/COPILOT_CLI_SETUP.md"
+community: "Community 1444"
 location: "lines 1-436"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/COPILOT_CLI_SETUPmd
+  - community/Community_1444
 ---
 
 # GitHub Copilot CLI Setup as Secondary/Tertiary Agent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Three Custom Copilot Agents test-augmenter, validation-runner, safe-refactor]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd
+#graphify/document #graphify/EXTRACTED #community/Community_1444

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "Competitive Intel Store"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Competitive_Intel_Store
 ---
 
 # ForwardRequest
@@ -19,7 +19,7 @@ tags:
 - [[.test_valid_forward_request()]] - `calls` [EXTRACTED]
 - [[.validate_source()]] - `method` [EXTRACTED]
 - [[AgentTarget_1]] - `uses` [INFERRED]
-- [[Any]] - `uses` [INFERRED]
+- [[Any_9]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest_1]] - `uses` [INFERRED]
@@ -27,11 +27,11 @@ tags:
 - [[MCPResultRequest]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[OpProxyRequest]] - `uses` [INFERRED]
-- [[Path_25]] - `uses` [INFERRED]
+- [[Path_26]] - `uses` [INFERRED]
 - [[Request to forward content through the gateway      Received from iOS Shortcuts,]] - `rationale_for` [EXTRACTED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[RouterConfig_1]] - `uses` [INFERRED]
 - [[RouterError]] - `uses` [INFERRED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
 - [[TestAgentIdPropagatedFromTarget]] - `uses` [INFERRED]
 - [[TestAllExampleConfigsExist]] - `uses` [INFERRED]
 - [[TestApprovalEndpoints]] - `uses` [INFERRED]
@@ -84,4 +84,4 @@ tags:
 - [[test_shortcut_source_accepted()]] - `calls` [EXTRACTED]
 - [[test_valid_sources()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store

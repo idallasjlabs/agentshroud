@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "docs/vault"
+community: "docs/runbooks"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/runbooks
 ---
 
 # Function Details
@@ -19,4 +19,4 @@ tags:
 - [[read_alerts(alert_dir, since)]] - `contains` [EXTRACTED]
 - [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/docs/runbooks

@@ -1,13 +1,13 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "docs/api"
+community: "ESP32 Firmware"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/api
+  - community/ESP32_Firmware
 ---
 
 # Generic AI Agent Integration (HTTP Proxy Mode)
 
-#graphify/document #graphify/EXTRACTED #community/docs/api
+#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
