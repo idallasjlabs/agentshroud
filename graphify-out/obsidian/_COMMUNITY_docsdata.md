@@ -11,7 +11,7 @@ members: 5
 - [[Checklist]] - document - .github/PULL_REQUEST_TEMPLATE.md
 - [[IEC 62443 Reference]] - document - .github/PULL_REQUEST_TEMPLATE.md
 - [[PULL_REQUEST_TEMPLATE]] - document - .github/PULL_REQUEST_TEMPLATE.md
-- [[Summary]] - document - .github/PULL_REQUEST_TEMPLATE.md
+- [[Summary_20]] - document - .github/PULL_REQUEST_TEMPLATE.md
 - [[Type of Change]] - document - .github/PULL_REQUEST_TEMPLATE.md
 
 ## Live Query (requires Dataview plugin)

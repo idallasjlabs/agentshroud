@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Auth & Exception Types"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Auth__Exception_Types
 ---
 
 # drift_detector.py
@@ -16,4 +16,4 @@ tags:
 - [[DriftAlert]] - `contains` [EXTRACTED]
 - [[DriftDetector]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

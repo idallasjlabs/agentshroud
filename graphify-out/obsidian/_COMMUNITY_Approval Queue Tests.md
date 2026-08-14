@@ -1,28 +1,20 @@
 ---
 type: community
-members: 213
+members: 136
 ---
 
 # Approval Queue Tests
 
-**Members:** 213 nodes
+**Members:** 136 nodes
 
 ## Members
-- [[.__init__()_43]] - code - gateway/proxy/webhook_receiver.py
 - [[.__init__()_172]] - code - gateway/tests/test_middleware_coverage.py
-- [[._can_create_directory()]] - code - gateway/proxy/webhook_receiver.py
-- [[.can_user_access_group()]] - code - gateway/security/session_manager.py
-- [[.can_user_access_session()]] - code - gateway/security/session_manager.py
 - [[.check_permission()_1]] - code - gateway/tests/test_middleware_coverage.py
 - [[.check_tool_permission()_2]] - code - gateway/tests/test_middleware_coverage.py
 - [[.get_user_role()_2]] - code - gateway/tests/test_middleware_coverage.py
-- [[.middleware_manager()]] - code - gateway/tests/test_session_isolation.py
 - [[.test_absolute_and_relative_paths()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_active_group_appears_first()]] - code - gateway/tests/test_shared_memory.py
 - [[.test_allowed_chain_passes()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_analyzer_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_append_to_group_memory()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_append_to_user_memory()]] - code - gateway/tests/test_shared_memory.py
 - [[.test_blocked_non_owner_denied()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_blocked_owner_exempted()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_blocked_rewrite_denied()]] - code - gateway/tests/test_middleware_coverage.py
@@ -31,9 +23,6 @@ members: 213
 - [[.test_bots_resolution_error_swallowed()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_browser_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_clean_message_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_clean_text_not_flagged()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_close_with_no_resource_guard()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_collaborator_gets_filtered_group_memory()]] - code - gateway/tests/test_shared_memory.py
 - [[.test_command_indicator_allowed_when_check_passes()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_command_indicator_blocked()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_context_guard_init_raise_recorded_and_logged()]] - code - gateway/tests/test_middleware_coverage.py
@@ -44,14 +33,10 @@ members: 213
 - [[.test_default_bot_and_sanitizer_configured()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_default_deny()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_delete_action()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_detects_api_key_pattern()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_detects_bearer_token()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_detects_private_section_header()]] - code - gateway/tests/test_shared_memory.py
 - [[.test_dict_message_handled()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_direct_field()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_direct_no_session_manager_blocked()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_editor_command_and_quotes()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_empty_author_is_denied()]] - code - gateway/tests/test_shared_memory_write_acl.py
 - [[.test_env_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_exception_fails_open()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_exception_fails_open()_1]] - code - gateway/tests/test_middleware_coverage.py
@@ -62,11 +47,7 @@ members: 213
 - [[.test_fallback_without_rbac_manager()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_filter_applied()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_filter_not_applied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_foreign_writer_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[.test_get_group_memory_empty_initially()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_get_user_memory_returns_string()]] - code - gateway/tests/test_shared_memory.py
 - [[.test_git_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_group_write_io_failure_returns_false()]] - code - gateway/tests/test_shared_memory_write_acl.py
 - [[.test_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_headers_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_high_threat_blocked()]] - code - gateway/tests/test_middleware_coverage.py
@@ -75,20 +56,16 @@ members: 213
 - [[.test_isolation_error_denied()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_isolation_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_isolation_fail_closed_without_session_manager()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_legacy_no_author_write_still_appends()]] - code - gateway/tests/test_shared_memory_write_acl.py
 - [[.test_log_action_no_patterns_returns_original()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_log_action_with_patterns_returns_original()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_low_finding_allowed()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_low_severity_not_blocking()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_low_threat_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_member_authorized()]] - code - gateway/tests/test_shared_memory_write_acl.py
 - [[.test_message_dict_is_stringified_and_normalized()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_metadata_exception_non_blocking()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_metadata_fallback()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_missing_rbac_is_denied()]] - code - gateway/tests/test_shared_memory_write_acl.py
 - [[.test_missing_returns_none()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_mm_fixture_without_failed_guards_attr_is_safe()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_multiple_appends_accumulate()]] - code - gateway/tests/test_shared_memory.py
 - [[.test_no_bots_keeps_fallback_workspace()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_no_filter_passthrough()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_no_path_match_no_registration()]] - code - gateway/tests/test_middleware_coverage.py
@@ -111,9 +88,6 @@ members: 213
 - [[.test_owner_bypass()_3]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_owner_bypasses_sandbox()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_owner_exempt_when_critical_guard_failed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_owner_gets_unfiltered_group_memory()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_owner_sees_all_groups()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_owner_write_into_user_memory_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
 - [[.test_plain_message_skips_check()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_question_defaults_to_read_system()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_rbac_denied()]] - code - gateway/tests/test_middleware_coverage.py
@@ -124,50 +98,23 @@ members: 213
 - [[.test_repetition_attack_not_blocking()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_sandbox_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_sanitizer_construction_error_sets_none()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_self_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
 - [[.test_session_context_injected()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_session_context_priority()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_strip_action_returns_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_strip_private_content_redacts_api_key()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_strip_private_section()]] - code - gateway/tests/test_shared_memory.py
 - [[.test_tool_permission_denied()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_tool_permission_requires_approval()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_topic_scoped_excludes_non_matching_project_scoped_group()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_topic_scoped_includes_local_only_group()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_topic_scoped_returns_matching_group()]] - code - gateway/tests/test_shared_memory.py
 - [[.test_tracker_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_unblocked_rewrite_allowed()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_unknown_defaults_to_tool_use()]] - code - gateway/tests/test_middleware_coverage.py
-- [[.test_unknown_user_sees_only_private_memory()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_user_does_not_see_other_group_memory()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_user_memory_isolated_between_users()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_user_sees_own_private_memory()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_user_sees_their_group_memory()]] - code - gateway/tests/test_shared_memory.py
-- [[.test_user_write_io_failure_returns_false()]] - code - gateway/tests/test_shared_memory_write_acl.py
 - [[.test_users_heuristic_denied()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_warn_action_returns_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_with_rbac_manager()]] - code - gateway/tests/test_middleware_coverage.py
 - [[.test_write_action_no_tier()]] - code - gateway/tests/test_middleware_coverage.py
-- [[A non-owner author cannot write into another user's private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
 - [[A security-critical guard whose constructor RAISES during __init__ must     NOT]] - rationale - gateway/tests/test_middleware_coverage.py
-- [[A user may write into their own private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[An emptyNone author is never authorized.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Any_24]] - code - gateway/proxy/webhook_receiver.py
-- [[Back-compat existing callers that pass no author_idrbac_config keep working.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Check if a user can access another user's session.]] - rationale - gateway/security/session_manager.py
-- [[Check if we can create the given directory path.]] - rationale - gateway/proxy/webhook_receiver.py
-- [[Create middleware manager with session isolation.]] - rationale - gateway/tests/test_session_isolation.py
 - [[Deterministic stand-in for RBACManager.]] - rationale - gateway/tests/test_middleware_coverage.py
-- [[If the underlying session store raises, the authorized write reports         fai]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id]] - rationale - gateway/security/session_manager.py
 - [[MiddlewareManager built via __new__ — every module attr explicitly None     so e]] - rationale - gateway/tests/test_middleware_coverage.py
-- [[No RBAC principal → cannot authorize → deny (fail-closed).]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Path_4]] - code - gateway/proxy/webhook_receiver.py
-- [[Return True if user_id is a member of group_id.          Checks rbac_config.get_]] - rationale - gateway/security/session_manager.py
 - [[TestAnalyzeRequestForRBAC]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestAuthorizationHelper]] - code - gateway/tests/test_shared_memory_write_acl.py
 - [[TestBrowserSecurity]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestClose]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestContextGuard]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestCriticalGuardInitFailClosed]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestCrossSessionAccess]] - code - gateway/tests/test_middleware_coverage.py
@@ -177,50 +124,26 @@ members: 213
 - [[TestFileSandboxStep]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestFilterOutboundResponse]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestGitGuard_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestGroupMemoryReadWrite]] - code - gateway/tests/test_shared_memory.py
 - [[TestIsOwner]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestIsPathAllowedForUser]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestMemoryIntegrityRegistration]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestMergedMemory]] - code - gateway/tests/test_shared_memory.py
 - [[TestMetadataGuard_1]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestMultiTurnTracker]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestPathIsolationStep]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestPrivateContentDetection]] - code - gateway/tests/test_shared_memory.py
 - [[TestProcessRequestIdentity]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestProcessRequestRBAC]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestScanToolResult]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestSetConfig]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestToolChainAnalyzer]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestTopicScopedMemory]] - code - gateway/tests/test_shared_memory.py
-- [[TestUserMemoryWriteACL]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[TestUserPrivateMemory]] - code - gateway/tests/test_shared_memory.py
-- [[TestWriteFailurePath]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[The owner may write into any user's private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[UserSessionManager]] - code - gateway/security/session_manager.py
 - [[_FakeRBAC]] - code - gateway/tests/test_middleware_coverage.py
 - [[_bot()]] - code - gateway/tests/test_middleware_coverage.py
 - [[_req()]] - code - gateway/tests/test_middleware_coverage.py
 - [[_scan_result()]] - code - gateway/tests/test_middleware_coverage.py
-- [[_score_access_control_authorization() (domain 14, FR2)]] - code - gateway/security/scanner_integration.py
 - [[_tool_req()]] - code - gateway/tests/test_middleware_coverage.py
-- [[group_config.py (TeamsConfig)]] - code - gateway/security/group_config.py
 - [[mm()]] - code - gateway/tests/test_middleware_coverage.py
-- [[rbac()_4]] - code - gateway/tests/test_shared_memory.py
-- [[rbac()_5]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[rbac_config.py (RBACConfig)]] - code - gateway/security/rbac_config.py
-- [[session_manager()_4]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[session_mgr()]] - code - gateway/tests/test_shared_memory.py
-- [[shared_memory()_2]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[shared_memory.py]] - code - gateway/security/shared_memory.py
-- [[shared_memory.py (SharedMemoryManager)]] - code - gateway/security/shared_memory.py
-- [[smm()_1]] - code - gateway/tests/test_shared_memory.py
 - [[temp_workspace()_1]] - code - gateway/tests/test_middleware_coverage.py
 - [[test_middleware_coverage.py]] - code - gateway/tests/test_middleware_coverage.py
-- [[test_shared_memory.py]] - code - gateway/tests/test_shared_memory.py
-- [[test_shared_memory_write_acl.py]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[tmp_workspace()_2]] - code - gateway/tests/test_shared_memory.py
 - [[usm()]] - code - gateway/tests/test_middleware_coverage.py
-- [[webhook_receiver.py]] - code - gateway/proxy/webhook_receiver.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -230,40 +153,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 71 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
-- 26 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
-- 24 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 19 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 18 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
-- 13 edges to [[_COMMUNITY_docsUSPTO_PROVISIONAL_PATENT_APPLICATION]]
-- 12 edges to [[_COMMUNITY_Group Workspace Isolation]]
-- 11 edges to [[_COMMUNITY_Planning Docs]]
-- 11 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 7 edges to [[_COMMUNITY_Slack API Proxy]]
-- 7 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 5 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
-- 5 edges to [[_COMMUNITY_Bot Skill Config]]
-- 4 edges to [[_COMMUNITY_docsvault]]
-- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_Planning Docs]]
-- 2 edges to [[_COMMUNITY_Gateway Proxy Layer]]
+- 54 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 26 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 25 edges to [[_COMMUNITY_scriptssync-cve-registry.py]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_ESP32 Firmware]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Bot Skill Config]]
-- 1 edge to [[_COMMUNITY_MCP Policy Engine]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Planning Docs]]
-- 1 edge to [[_COMMUNITY_Docker Deploy Scripts]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_File Sandbox]]
-- 1 edge to [[_COMMUNITY_Security Module Middleware]]
-- 1 edge to [[_COMMUNITY_LLM Proxy Resource Guard]]
 
 ## Top bridge nodes
-- [[UserSessionManager]] - degree 152, connects to 20 communities
-- [[test_shared_memory_write_acl.py]] - degree 15, connects to 5 communities
 - [[test_middleware_coverage.py]] - degree 40, connects to 4 communities
-- [[_FakeRBAC]] - degree 23, connects to 3 communities
-- [[test_shared_memory.py]] - degree 13, connects to 3 communities
+- [[_FakeRBAC]] - degree 23, connects to 4 communities
+- [[TestProcessRequestIdentity]] - degree 13, connects to 3 communities
+- [[TestAnalyzeRequestForRBAC]] - degree 13, connects to 3 communities
+- [[TestIsPathAllowedForUser]] - degree 12, connects to 3 communities

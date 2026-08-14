@@ -1,23 +1,21 @@
 ---
 type: community
-members: 10
+members: 8
 ---
 
 # chatbot/test_main.py
 
-**Members:** 10 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Cross-Turn Correlation Capability]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[EgressFilter.check()]] - code - gateway/security/egress_filter.py
-- [[OpenAI Agent Message-Board Coordination Attack]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[PromptArmor Atlassian Rovo Content-Borne Injection Disclosure]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[RovoBlast Attack (Atlassian Rovo AI)]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[UK AISI Rogue Agent Actions Findings]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[Varonis RovoBlast How One Click Triggered Atlassian's AI Assistant to Leak Data]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
-- [[context_guard.py Provenance Tagging (ContextSegment)]] - code - gateway/security/context_guard.py
-- [[egress_filter.py_is_private_ip SSRF Encoding-Bypass Bug]] - rationale - gateway/security/egress_filter.py
-- [[multi_turn_tracker.py  SubagentMonitor]] - code - gateway/security/multi_turn_tracker.py
+- [[Attack Teardowns How AgentShroud Stops RovoBlast and Cross-Turn Coordination Attacks]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Honest gap]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Part 1 — RovoBlast how AgentShroud's pipeline would have stopped it]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Part 2 — Cross-turn correlation the differentiator, made concrete]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[What actually happened]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[What this document does NOT cover (explicitly out of scope here)]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Where AgentShroud's pipeline breaks each stage]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[attack-teardowns-rovoblast-cross-turn]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,12 +23,3 @@ members: 10
 TABLE source_file, type FROM #community/chatbot/test_mainpy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_docsdata]]
-- 1 edge to [[_COMMUNITY_gatewayruntime]]
-- 1 edge to [[_COMMUNITY_Egress & RBAC Security Core]]
-
-## Top bridge nodes
-- [[RovoBlast Attack (Atlassian Rovo AI)]] - degree 7, connects to 2 communities
-- [[egress_filter.py_is_private_ip SSRF Encoding-Bypass Bug]] - degree 2, connects to 1 community

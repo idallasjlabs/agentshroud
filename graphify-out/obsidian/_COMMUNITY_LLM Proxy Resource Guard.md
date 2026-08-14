@@ -150,14 +150,13 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 26 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 5 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
-- 5 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Approval Queue Tests]]
+- 6 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 5 edges to [[_COMMUNITY_Competitive Intel Store]]
+- 1 edge to [[_COMMUNITY_File Sandbox]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[test_soc_router_coverage.py]] - degree 149, connects to 6 communities
+- [[test_soc_router_coverage.py]] - degree 149, connects to 5 communities
 - [[FakeGroup]] - degree 13, connects to 2 communities
 - [[FakeCaller]] - degree 12, connects to 2 communities
 - [[FakeAuditStore_1]] - degree 7, connects to 2 communities

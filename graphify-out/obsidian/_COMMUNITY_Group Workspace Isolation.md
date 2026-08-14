@@ -1,11 +1,11 @@
 ---
 type: community
-members: 132
+members: 149
 ---
 
 # Group Workspace Isolation
 
-**Members:** 132 nodes
+**Members:** 149 nodes
 
 ## Members
 - [[._handle_addtogroup_command()]] - code - gateway/proxy/telegram_proxy.py
@@ -63,6 +63,8 @@ members: 132
 - [[.test_not_member()]] - code - gateway/tests/test_collaborator_responses.py
 - [[.test_parses_groups()]] - code - gateway/tests/test_group_config.py
 - [[.test_parses_projects()]] - code - gateway/tests/test_group_config.py
+- [[.test_persist_user_collab_mode()]] - code - gateway/tests/test_group_config.py
+- [[.test_persist_user_collab_mode_update()]] - code - gateway/tests/test_group_config.py
 - [[.test_prefix_not_returned_for_non_member()]] - code - gateway/tests/test_group_config.py
 - [[.test_prefix_returned_for_member()]] - code - gateway/tests/test_group_config.py
 - [[.test_project_scoped_mode()]] - code - gateway/tests/test_group_config.py
@@ -78,6 +80,7 @@ members: 132
 - [[A project defines a scoped focus area for a team.]] - rationale - gateway/security/group_config.py
 - [[A team group with members, admin, projects, and collab mode.]] - rationale - gateway/security/group_config.py
 - [[Build the system-prompt injection for project_scoped mode.]] - rationale - gateway/proxy/collaborator_responses.py
+- [[Calling persist_user_collab_mode twice updates the stored value.]] - rationale - gateway/tests/test_group_config.py
 - [[Format a user's accessible projects for display.]] - rationale - gateway/proxy/collaborator_responses.py
 - [[Format a user's group memberships for display.]] - rationale - gateway/proxy/collaborator_responses.py
 - [[Format detailed info for a single group.]] - rationale - gateway/proxy/collaborator_responses.py
@@ -91,6 +94,10 @@ members: 132
 - [[Merge group_overrides.json additions into the in-memory TeamsConfig.]] - rationale - gateway/security/group_config.py
 - [[Per-user collab_mode override persists to group_overrides.json and takes     pr]] - rationale - gateway/tests/test_group_config.py
 - [[Per-user override beats group-derived collab_mode.]] - rationale - gateway/tests/test_group_config.py
+- [[Persist a per-user collab mode override set via the SOC dashboard.      Stored u]] - rationale - gateway/security/group_config.py
+- [[Persist a runtime collab mode change for a group.]] - rationale - gateway/security/group_config.py
+- [[Persist a runtime group creation so it survives container restarts.]] - rationale - gateway/security/group_config.py
+- [[Persist a runtime group membership addition.]] - rationale - gateway/security/group_config.py
 - [[ProjectConfig]] - code - gateway/security/group_config.py
 - [[Return True if any focus_topic appears in the text (case-insensitive).]] - rationale - gateway/security/group_config.py
 - [[Return all groups the user belongs to.]] - rationale - gateway/security/group_config.py
@@ -122,6 +129,8 @@ members: 132
 - [[__user_overrides__ key must not be treated as a group_id.]] - rationale - gateway/tests/test_group_config.py
 - [[_apply_persisted_overrides()]] - code - gateway/security/group_config.py
 - [[_ipv4_first_getaddrinfo()]] - code - gateway/proxy/telegram_proxy.py
+- [[_load_overrides()]] - code - gateway/security/group_config.py
+- [[_save_overrides()]] - code - gateway/security/group_config.py
 - [[build_project_context_injection()]] - code - gateway/proxy/collaborator_responses.py
 - [[collaborator_responses.py]] - code - gateway/proxy/collaborator_responses.py
 - [[format_addtogroup_success()]] - code - gateway/proxy/collaborator_responses.py
@@ -134,6 +143,14 @@ members: 132
 - [[format_rmfromgroup_success()]] - code - gateway/proxy/collaborator_responses.py
 - [[format_setmode_success()]] - code - gateway/proxy/collaborator_responses.py
 - [[format_unknown_group()]] - code - gateway/proxy/collaborator_responses.py
+- [[group_config.py]] - code - gateway/security/group_config.py
+- [[persist_group_collab_mode()]] - code - gateway/security/group_config.py
+- [[persist_group_create()]] - code - gateway/security/group_config.py
+- [[persist_group_delete()]] - code - gateway/security/group_config.py
+- [[persist_group_member_add()]] - code - gateway/security/group_config.py
+- [[persist_group_member_remove()]] - code - gateway/security/group_config.py
+- [[persist_user_collab_mode writes under __user_overrides__ key.]] - rationale - gateway/tests/test_group_config.py
+- [[persist_user_collab_mode()]] - code - gateway/security/group_config.py
 - [[project()]] - code - gateway/tests/test_collaborator_responses.py
 - [[teams()]] - code - gateway/tests/test_collaborator_responses.py
 - [[teams()_1]] - code - gateway/tests/test_group_config.py
@@ -149,35 +166,33 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 23 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
 - 18 edges to [[_COMMUNITY_Cross-Bot Trust Ledger]]
-- 17 edges to [[_COMMUNITY_File Sandbox]]
-- 15 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 14 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 12 edges to [[_COMMUNITY_Approval Queue Tests]]
-- 10 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 16 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 15 edges to [[_COMMUNITY_Enhanced Approval Queue]]
+- 10 edges to [[_COMMUNITY_File Sandbox]]
+- 7 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 6 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 5 edges to [[_COMMUNITY_Competitive Intel Store]]
+- 3 edges to [[_COMMUNITY_scriptssync-cve-registry.py]]
 - 3 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
-- 3 edges to [[_COMMUNITY_Enhanced Approval Queue]]
+- 2 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Slack API Proxy]]
-- 1 edge to [[_COMMUNITY_scriptssync-cve-registry.py]]
 - 1 edge to [[_COMMUNITY_Gateway Security Module]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_MCP Policy Engine]]
 - 1 edge to [[_COMMUNITY_Bot Skill Config]]
-- 1 edge to [[_COMMUNITY_Competitive Intel Store]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_docsvault]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
 
 ## Top bridge nodes
-- [[TeamsConfig]] - degree 99, connects to 14 communities
+- [[TeamsConfig]] - degree 99, connects to 13 communities
 - [[telegram_proxy.py]] - degree 27, connects to 11 communities
-- [[GroupConfig]] - degree 32, connects to 4 communities
+- [[group_config.py]] - degree 16, connects to 3 communities
 - [[._send_owner_admin_notice()]] - degree 12, connects to 3 communities
-- [[ProjectConfig]] - degree 27, connects to 2 communities
+- [[GroupConfig]] - degree 32, connects to 2 communities

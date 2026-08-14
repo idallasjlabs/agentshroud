@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_protected_content_loading()]] - code - gateway/tests/test_prompt_protection.py
-- [[Test loading protected content from files.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[.test_urlencoded_plain_no_reply_with_punctuation_is_still_filtered()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload NO_REPLY punctuation variant should still normalize.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Gateway Security Module]]
-- 1 edge to [[_COMMUNITY_docsrunbooks]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[.test_protected_content_loading()]] - degree 3, connects to 2 communities
+- [[.test_urlencoded_plain_no_reply_with_punctuation_is_still_filtered()]] - degree 4, connects to 1 community

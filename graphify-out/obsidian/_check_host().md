@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # _check_host()
@@ -17,4 +17,4 @@ tags:
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]
 - [[ssh_hosts()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

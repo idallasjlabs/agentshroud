@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Enhanced Approval Queue"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Enhanced_Approval_Queue
 ---
 
 # auth_login()
@@ -19,4 +19,4 @@ tags:
 - [[issue_session_token()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue

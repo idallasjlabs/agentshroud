@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Gateway Proxy Layer"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Gateway_Proxy_Layer
+  - community/docs/vault
 ---
 
 # docker/scripts README.md
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[start-agentshroud.sh]] - `semantically_similar_to` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Gateway_Proxy_Layer
+#graphify/document #graphify/AMBIGUOUS #community/docs/vault

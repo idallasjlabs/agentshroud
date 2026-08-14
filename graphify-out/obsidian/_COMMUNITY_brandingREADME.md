@@ -61,8 +61,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 2 edges to [[_COMMUNITY_MCP Proxy Config]]
+- 1 edge to [[_COMMUNITY_Competitive Intel Store]]
 
 ## Top bridge nodes
 - [[SecurityError]] - degree 7, connects to 1 community

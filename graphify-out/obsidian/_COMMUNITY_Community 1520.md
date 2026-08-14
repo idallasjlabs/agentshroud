@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_startup_telegram_calls_use_system_header()]] - code - gateway/tests/test_config_validation.py
-- [[Startup notification Telegram calls should be marked as system-originated.]] - rationale - gateway/tests/test_config_validation.py
+- [[.test_long_outbound_message_quarantined()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Blocked outbound messages should be stored in outbound quarantine.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[.test_startup_telegram_calls_use_system_header()]] - degree 2, connects to 1 community
+- [[.test_long_outbound_message_quarantined()]] - degree 4, connects to 1 community

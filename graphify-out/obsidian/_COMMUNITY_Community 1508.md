@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 1508
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_openclaw_patch_script_removes_legacy_gateway_model_key()]] - code - gateway/tests/test_config_validation.py
-- [[openclaw init patch script must remove unsupported gateway.model key.]] - rationale - gateway/tests/test_config_validation.py
+- [[Automation Examples]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[CICD Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Daily Security Check (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Weekly Compliance Scan (cron)]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_docsoperations]]
 
 ## Top bridge nodes
-- [[.test_openclaw_patch_script_removes_legacy_gateway_model_key()]] - degree 2, connects to 1 community
+- [[Automation Examples]] - degree 4, connects to 1 community

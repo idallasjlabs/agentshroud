@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Architecture Docs"
+community: "Planning Docs"
 location: "L445"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Architecture_Docs
+  - community/Planning_Docs
 ---
 
 # _Event
@@ -23,4 +23,4 @@ tags:
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Architecture_Docs
+#graphify/code #graphify/INFERRED #community/Planning_Docs

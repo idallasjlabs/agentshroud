@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Collaborator Prompt Classifiers"
 location: "L382"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # cleanup_decided() should remove approved/rejected items older than threshold.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cleanup_decided_removes_old_decided_items()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

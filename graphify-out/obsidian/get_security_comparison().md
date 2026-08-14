@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "code"
-community: "docs/project"
+community: "Gateway Test Suite"
 location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Gateway_Test_Suite
 ---
 
 # get_security_comparison()
@@ -22,4 +22,4 @@ tags:
 - [[security_report()]] - `calls` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/project
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 1509
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_openclaw_version_pin_is_consistent_across_bot_images()]] - code - gateway/tests/test_config_validation.py
-- [[OpenClaw's bot Dockerfile must pin via the shared ARG OPENCLAW_VERSION         (]] - rationale - gateway/tests/test_config_validation.py
+- [[.test_status_endpoint()]] - code - gateway/tests/test_main_endpoints.py
+- [[Test status endpoint.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test basic status endpoint functionality.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[TestStatusEndpoint]] - code - gateway/tests/test_main_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 1 edge to [[_COMMUNITY_Competitive Intel Store]]
+- 1 edge to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[.test_openclaw_version_pin_is_consistent_across_bot_images()]] - degree 2, connects to 1 community
+- [[TestStatusEndpoint]] - degree 5, connects to 3 communities
+- [[.test_status_endpoint()]] - degree 3, connects to 1 community

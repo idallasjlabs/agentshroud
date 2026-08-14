@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "MCP Proxy Config"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/MCP_Proxy_Config
 ---
 
 # audit_chain()
@@ -15,4 +15,4 @@ tags:
 - [[AuditChain]] - `calls` [EXTRACTED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config

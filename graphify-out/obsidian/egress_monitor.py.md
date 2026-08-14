@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Security Module Middleware"
+community: "Egress & RBAC Security Core"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Module_Middleware
+  - community/Egress__RBAC_Security_Core
 ---
 
 # egress_monitor.py
@@ -22,4 +22,4 @@ tags:
 - [[Enum]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Module_Middleware
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

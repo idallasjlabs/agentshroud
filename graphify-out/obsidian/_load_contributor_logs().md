@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "PII Sanitizer Pipeline"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # _load_contributor_logs()
@@ -21,4 +21,4 @@ tags:
 - [[test_dashboard.py]] - `imports` [EXTRACTED]
 - [[test_load_contributor_logs_reads_multiple_dirs_and_dedupes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Setup Docs"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Setup_Docs
 ---
 
 # client()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Setup_Docs

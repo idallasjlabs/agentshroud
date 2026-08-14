@@ -1,209 +1,90 @@
 ---
 type: community
-members: 196
+members: 77
 ---
 
 # Forward Routing & Approval
 
-**Members:** 196 nodes
+**Members:** 77 nodes
 
 ## Members
-- [[..' escaping the allowed root is rejected — never reaches proxy.write_file().]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.__init__()_129]] - code - gateway/ssh_proxy/proxy.py
-- [[.execute()]] - code - gateway/ssh_proxy/proxy.py
-- [[.expand_key_path()]] - code - gateway/ingest_api/ssh_config.py
-- [[.expand_known_hosts()]] - code - gateway/ingest_api/ssh_config.py
-- [[.is_auto_approved()]] - code - gateway/ssh_proxy/proxy.py
-- [[.test_absolute_path_accepted()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_absolute_path_outside_root_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_absolute_path_under_root_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_backtick_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_content_at_exact_cap_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_content_with_semicolon_backtick_redirect_round_trips_through_full_endpoint()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_cookie_not_secure_on_http()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_dashboard_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_dashboard_bad_token_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_dashboard_cookie_auth_serves_html()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_dashboard_no_auth_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_dashboard_token_sets_cookie_and_redirects()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_dotdot_traversal_from_absolute_path_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_dotdot_traversal_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_execute_nonzero_exit()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_execute_success()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_execute_timeout()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_execute_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_home_tilde_accepted()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_invalid_base64_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_is_auto_approved_no()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_is_auto_approved_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_is_auto_approved_yes()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_json_api_has_cache_control()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_non_auto_approved_executes_directly()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_null_byte_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_oversized_content_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_pipe_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_prefix_collision_sibling_dir_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_relative_path_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_relative_path_resolved_under_root_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_root_itself_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_semicolon_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_approval_sanitizes_command_pii()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ssh_command_uses_strict_checking()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ssh_disabled_config()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_ssh_exec_auto_approved()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_cwd_accepted_and_forwarded()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_cwd_invalid_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_cwd_none_forwards_none()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_cwd_relative_path_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_denied_command()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_injection_attempt()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_no_auth()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_requires_approval()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_unknown_host()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_history()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_status_has_security_headers()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_status_returns_current_version()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_strict_host_key_checking_in_source()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_unknown_host_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_validate_auto_approve_exact_only()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_allowed()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_backslash_n_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_carriage_return_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_denied()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_dollar_brace_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_dollar_var_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_global_denied()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_and()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_backticks()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_dollar_paren()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_or()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_pipe()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_semicolon()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_newline_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_empty_command()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_whitespace_only_path_rejected_at_proxy_layer()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_absolute_path_outside_root_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_absolute_path_prefix_collision_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_denial_is_audited()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_disallowed_host_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_empty_path_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_invalid_base64_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_no_auth()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_non_numeric_stdout_falls_back_to_zero_bytes()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_oserror_from_subprocess()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_oversized_content_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_path_traversal_dotdot_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_remote_command_is_identical_across_calls()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_remote_failure_returns_200_with_success_false()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_sends_path_and_content_via_stdin()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_ssh_disabled_returns_503()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_success_and_denial_both_create_distinct_ledger_entries()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_success_creates_matching_ledger_entry()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_timeout()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_unknown_host_raises()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_valid_round_trip()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_ws_token_with_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_token_with_valid_cookie()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_token_without_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[.validate_command()]] - code - gateway/ssh_proxy/proxy.py
-- [[.validate_cwd()]] - code - gateway/ssh_proxy/proxy.py
-- [[.validate_write_file()]] - code - gateway/ssh_proxy/proxy.py
-- [[.write_file()]] - code - gateway/ssh_proxy/proxy.py
-- [[A directory that shares the root as a raw string prefix but is not         actua]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[A host not present in the SSH allowlist is rejected with 404.]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[A sibling directory that merely shares the root as a string prefix         (no ']] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Absolute path outside the approved root is rejected.]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[All API responses should include basic security headers.]] - rationale - gateway/tests/test_security_fixes.py
-- [[Approval queue details must be PII-sanitized before storage]] - rationale - gateway/tests/test_security_fixes.py
-- [[Auto-approve must be exact match, not prefix (Finding 3)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[Both outcomes append to the SAME audit trail — a denial is not         silently]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Check if a command is auto-approved (no human approval needed).          Auto-ap]] - rationale - gateway/ssh_proxy/proxy.py
-- [[ClientDisconnect mid-body-read must not crash the gateway process.]] - rationale - gateway/tests/test_security_fixes.py
-- [[Configuration for a single SSH host]] - rationale - gateway/ingest_api/ssh_config.py
-- [[Cookie secure=False on HTTP requests]] - rationale - gateway/tests/test_security_fixes.py
-- [[Dashboard cookie secure flag is dynamic based on request scheme]] - rationale - gateway/tests/test_security_fixes.py
-- [[Dashboard should set httpOnly cookie and redirect to clean URL]] - rationale - gateway/tests/test_security_fixes.py
-- [[Dashboard ws-token endpoint returns token only for cookie-authed sessions]] - rationale - gateway/tests/test_security_fixes.py
-- [[Decoded content exceeding the ~500KB cap is rejected with 413, and         proxy]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Denied write attempts are logged to the ledger for audit (no raw         content]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Direct unit coverage of validate_write_file()'s own empty-path guard         (th]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Execute a command on a remote host via SSH.]] - rationale - gateway/ssh_proxy/proxy.py
-- [[GET dashboard with invalid cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboard with no auth returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboard with valid cookie serves HTML]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardws-token with valid cookie returns token]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardtoken=valid sets cookie and redirects to dashboard]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardtoken=wrong returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET status should include security headers]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET status should return current version]] - rationale - gateway/tests/test_security_fixes.py
-- [[If the remote script exits 0 but its stdout isn't a parseable         integer, b]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[JSON API responses should have Cache-Control no-store]] - rationale - gateway/tests/test_security_fixes.py
-- [[Malformed base64 is rejected at the Pydantic model layer (422),         never si]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Mirrors sshexec a nonzero remote exit code is surfaced in the 200         res]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Omitting cwd passes cwd=None to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Result of a structured SSH file-write operation (SSHProxy.write_file())]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Result of an SSH command execution]] - rationale - gateway/ssh_proxy/proxy.py
-- [[SSH command proxy with validation and audit support]] - rationale - gateway/ssh_proxy/proxy.py
-- [[SSH exec requiring approval sanitizes PII in command before storing]] - rationale - gateway/tests/test_security_fixes.py
-- [[SSH execute builds command with StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
-- [[SSHConfig_1]] - code - gateway/ssh_proxy/proxy.py
-- [[SSHConfig_2]] - code - gateway/tests/test_ssh_proxy.py
-- [[SSHHostConfig]] - code - gateway/ingest_api/ssh_config.py
-- [[SSHProxy]] - code - gateway/ssh_proxy/proxy.py
-- [[SSHProxy_1]] - code - gateway/tests/test_ssh_proxy.py
-- [[SSHResult]] - code - gateway/ssh_proxy/proxy.py
-- [[SSHWriteResult]] - code - gateway/ssh_proxy/proxy.py
-- [[Source code uses StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
-- [[Sync TestClient for WebSocket tests_1]] - rationale - gateway/tests/test_security_fixes.py
-- [[Test SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[Test newline-based injection attempts (Finding 11)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[TestApprovalQueuePIISanitization]] - code - gateway/tests/test_security_fixes.py
-- [[TestDashboardCookieAuth]] - code - gateway/tests/test_security_fixes.py
-- [[TestDashboardSecureCookie]] - code - gateway/tests/test_security_fixes.py
-- [[TestDashboardWSToken]] - code - gateway/tests/test_security_fixes.py
-- [[TestExecute]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestGlobalSecurityHeaders]] - code - gateway/tests/test_security_fixes.py
-- [[TestInjectionNewline]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestIsAutoApproved]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestSSHDisabled]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestSSHExec]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHProxyValidateWriteFile]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[TestSSHProxyWriteFileTransport]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[TestSSHStrictHostKeyChecking]] - code - gateway/tests/test_security_fixes.py
-- [[TestSSHValidateCwd]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHWriteFileEndpoint]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[TestTelegramProxyClientDisconnect]] - code - gateway/tests/test_security_fixes.py
-- [[TestValidateCommand]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestVersionConsistency]] - code - gateway/tests/test_security_fixes.py
-- [[The remote command string must not vary with request content —         proving i]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Unit tests for SSHProxy.validate_cwd().]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Unit tests for SSHProxy.write_file() — verifies pathcontent travel as     DATA]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Valid request SSHProxy.write_file() is invoked with decoded pathcontent]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Validate a command against allowdeny lists and injection patterns.          Ret]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Validate a remote working-directory path.  Must be absolute and shell-safe.]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Validate a structured sshwrite_file request (host, path, content).          Re]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Verify SSH proxy uses StrictHostKeyChecking=yes, not accept-new]] - rationale - gateway/tests/test_security_fixes.py
-- [[Version strings should be consistent across the codebase.]] - rationale - gateway/tests/test_security_fixes.py
-- [[When require_approval=false, non-auto-approved commands execute directly.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Write file content to a remote host via structured (non-shell-string) transport.]] - rationale - gateway/ssh_proxy/proxy.py
-- [[__init__.py_12]] - code - gateway/ssh_proxy/__init__.py
-- [[_b64()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[cwd is validated and passed to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[cwd must be an absolute path.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[cwd with shell metacharacters is rejected before execution.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[gatewayingest_apimain.py (app, app_state, lifespan)]] - code - gateway/ingest_api/main.py
-- [[gatewayingest_apiroutesdashboard.py (_create_ws_token)]] - code - gateway/ingest_api/routes/dashboard.py
-- [[proxy()_2]] - code - gateway/tests/test_ssh_proxy.py
-- [[proxy.py]] - code - gateway/ssh_proxy/proxy.py
-- [[ssh binary missing  spawn failure surfaces as exit_code=-1 with         the OSE]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[ssh_config()_1]] - code - gateway/tests/test_ssh_proxy.py
-- [[ssh_config.py]] - code - gateway/ingest_api/ssh_config.py
-- [[sync_client()_1]] - code - gateway/tests/test_security_fixes.py
-- [[test_security_fixes.py]] - code - gateway/tests/test_security_fixes.py
-- [[test_ssh_proxy.py]] - code - gateway/tests/test_ssh_proxy.py
+- [[._apply_path_rewriting()]] - code - gateway/security/path_isolation.py
+- [[._check_cross_user_access()]] - code - gateway/security/path_isolation.py
+- [[._cleanup_user_directory()]] - code - gateway/security/path_isolation.py
+- [[._ensure_user_directory()]] - code - gateway/security/path_isolation.py
+- [[._get_user_temp_dir()]] - code - gateway/security/path_isolation.py
+- [[._is_base_directory_access()]] - code - gateway/security/path_isolation.py
+- [[._sanitize_user_id()]] - code - gateway/security/path_isolation.py
+- [[.cleanup_abandoned_directories()]] - code - gateway/security/path_isolation.py
+- [[.config()_4]] - code - gateway/tests/test_path_isolation.py
+- [[.end_user_session()]] - code - gateway/security/path_isolation.py
+- [[.get_user_temp_path()]] - code - gateway/security/path_isolation.py
+- [[.manager()_1]] - code - gateway/tests/test_path_isolation.py
+- [[.register_user_session()]] - code - gateway/security/path_isolation.py
+- [[.rewrite_path()]] - code - gateway/security/path_isolation.py
+- [[.temp_dir()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_allow_own_namespace_access()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_already_isolated_paths_not_rewritten()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_basic_result()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_block_base_directory_access()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_block_cross_user_access()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_blocked_result()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_cleanup_abandoned_directories()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_custom_config()_2]] - code - gateway/tests/test_path_isolation.py
+- [[.test_default_config()_5]] - code - gateway/tests/test_path_isolation.py
+- [[.test_dont_cleanup_active_user_directories()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_end_user_session()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_get_active_users()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_get_user_temp_path()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_initialization()_2]] - code - gateway/tests/test_path_isolation.py
+- [[.test_path_rewriting_nested_paths()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_path_rewriting_no_rewrite_needed()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_path_rewriting_temp_files()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_register_user_session()]] - code - gateway/tests/test_path_isolation.py
+- [[.test_user_id_sanitization()]] - code - gateway/tests/test_path_isolation.py
+- [[Apply path rewriting rules to isolate paths per user.]] - rationale - gateway/security/path_isolation.py
+- [[Check if path is trying to access another user's isolated namespace.          Re]] - rationale - gateway/security/path_isolation.py
+- [[Check if path is trying to access the base AgentShroud directory.]] - rationale - gateway/security/path_isolation.py
+- [[Clean up a user's isolated directory.]] - rationale - gateway/security/path_isolation.py
+- [[Clean up abandoned user directories based on max age.]] - rationale - gateway/security/path_isolation.py
+- [[Create path isolation manager for testing.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Create temporary directory for testing.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Create test configuration._1]] - rationale - gateway/tests/test_path_isolation.py
+- [[End a user session and optionally clean up their isolated directory.]] - rationale - gateway/security/path_isolation.py
+- [[Ensure user's isolated directory exists.]] - rationale - gateway/security/path_isolation.py
+- [[Get a path within the user's isolated temp directory.]] - rationale - gateway/security/path_isolation.py
+- [[Get the isolated temp directory path for a user.]] - rationale - gateway/security/path_isolation.py
+- [[PathRewriteResult]] - code - gateway/security/path_isolation.py
+- [[Register a new user session and create their isolated directory.]] - rationale - gateway/security/path_isolation.py
+- [[Result of path rewriting operation.]] - rationale - gateway/security/path_isolation.py
+- [[Rewrite a path to isolate it to the user's namespace.          Args]] - rationale - gateway/security/path_isolation.py
+- [[Sanitize user ID to prevent path traversal attacks.]] - rationale - gateway/security/path_isolation.py
+- [[Test PathRewriteResult dataclass.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test allowing access to own namespace.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test basic result creation.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test blocked result creation.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test blocking cross-user namespace access.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test blocking direct access to base agentshroud directory.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test cleanup of abandoned user directories.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test custom configuration values._1]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test default configuration values._4]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test ending user session.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test getting active users.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test getting user temp path.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test manager initialization.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test path isolation configuration.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test path isolation manager.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test path rewriting for tmp files.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test path rewriting for nested tmp paths.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test paths that don't need rewriting.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test that active user directories are not cleaned up.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test that already isolated paths are not double-rewritten.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test user ID sanitization.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test user session registration.]] - rationale - gateway/tests/test_path_isolation.py
+- [[TestPathIsolationConfig]] - code - gateway/tests/test_path_isolation.py
+- [[TestPathIsolationManager]] - code - gateway/tests/test_path_isolation.py
+- [[TestPathRewriteResult]] - code - gateway/tests/test_path_isolation.py
+- [[test_path_isolation.py]] - code - gateway/tests/test_path_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -213,19 +94,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 113 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
-- 11 edges to [[_COMMUNITY_Slack API Proxy]]
-- 7 edges to [[_COMMUNITY_Gateway Security Module]]
-- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Competitive Intel Store]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 25 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 1 edge to [[_COMMUNITY_Custom Skills]]
 
 ## Top bridge nodes
-- [[SSHProxy]] - degree 78, connects to 4 communities
-- [[test_security_fixes.py]] - degree 20, connects to 4 communities
-- [[SSHHostConfig]] - degree 43, connects to 3 communities
-- [[proxy.py]] - degree 8, connects to 3 communities
-- [[TestSSHProxyValidateWriteFile]] - degree 28, connects to 2 communities
+- [[TestPathIsolationManager]] - degree 24, connects to 2 communities
+- [[PathRewriteResult]] - degree 9, connects to 1 community
+- [[._get_user_temp_dir()]] - degree 8, connects to 1 community
+- [[.rewrite_path()]] - degree 7, connects to 1 community
+- [[TestPathIsolationConfig]] - degree 7, connects to 1 community

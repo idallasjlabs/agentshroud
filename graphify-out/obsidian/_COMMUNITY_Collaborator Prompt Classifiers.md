@@ -1,11 +1,11 @@
 ---
 type: community
-members: 163
+members: 224
 ---
 
 # Collaborator Prompt Classifiers
 
-**Members:** 163 nodes
+**Members:** 224 nodes
 
 ## Members
 - [[.__init__()_2]] - code - gateway/approval_queue/enhanced_queue.py
@@ -32,6 +32,7 @@ members: 163
 - [[.submit()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[.submit_tool_request()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[.test_100_concurrent_submissions()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_both_owner_dm_and_group_notified()]] - code - gateway/tests/test_group_approval_routing.py
 - [[.test_concurrent_submit_and_decide()]] - code - gateway/tests/test_approval_stress.py
 - [[.test_critical_tool_approval_flow()]] - code - gateway/tests/test_enhanced_approval.py
 - [[.test_critical_tool_denial_flow()]] - code - gateway/tests/test_enhanced_approval.py
@@ -41,7 +42,11 @@ members: 163
 - [[.test_expired_request_cannot_be_decided()]] - code - gateway/tests/test_approval_stress.py
 - [[.test_get_pending_expires_stale()]] - code - gateway/tests/test_approval_stress.py
 - [[.test_get_tool_risk_tier()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.test_group_chat_receives_thread_reply()]] - code - gateway/tests/test_group_approval_routing.py
 - [[.test_low_risk_tool_no_approval()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.test_owner_dm_contains_action_type()]] - code - gateway/tests/test_group_approval_routing.py
+- [[.test_owner_dm_references_group_chat_id()]] - code - gateway/tests/test_group_approval_routing.py
+- [[.test_owner_receives_dm_for_group_approval()]] - code - gateway/tests/test_group_approval_routing.py
 - [[.test_requires_approval()]] - code - gateway/tests/test_enhanced_approval.py
 - [[.test_restart_recovery_preserves_timeout_action()]] - code - gateway/tests/test_enhanced_approval.py
 - [[.test_restore_pending_items()]] - code - gateway/tests/test_enhanced_approval.py
@@ -55,10 +60,13 @@ members: 163
 - [[.wait_for_decision()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[100 concurrent approval requests.]] - rationale - gateway/tests/test_approval_stress.py
 - [[A pending approval request in the queue]] - rationale - gateway/ingest_api/models.py
+- [[A single group-context approval triggers both owner DM AND group reply.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[Accept a WebSocket connection and add to connected set.]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Add an action to the approval queue with policy-based timeout.]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Any]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Approval queue configuration]] - rationale - gateway/ingest_api/config.py
 - [[ApprovalQueueConfig]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalQueueConfig_2]] - code - gateway/ingest_api/config.py
 - [[ApprovalQueueItem]] - code - gateway/approval_queue/enhanced_queue.py
 - [[ApprovalQueueItem_2]] - code - gateway/approval_queue/store.py
 - [[ApprovalQueueItem_3]] - code - gateway/ingest_api/models.py
@@ -76,6 +84,8 @@ members: 163
 - [[Create a temporary SQLite store for testing.]] - rationale - gateway/tests/test_enhanced_approval.py
 - [[Create a test tool risk configuration.]] - rationale - gateway/tests/test_enhanced_approval.py
 - [[Create an enhanced approval queue for testing.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Create approval queue configuration for testing]] - rationale - gateway/tests/test_approval_queue.py
+- [[Create approval queue instance for testing]] - rationale - gateway/tests/test_approval_queue.py
 - [[Deciding an item persists the new status.]] - rationale - gateway/tests/test_approval_store.py
 - [[Deciding on already-decided request raises ValueError.]] - rationale - gateway/tests/test_approval_stress.py
 - [[Enhanced approval queue with enforce mode and tool risk tiers.      Features]] - rationale - gateway/approval_queue/enhanced_queue.py
@@ -98,15 +108,22 @@ members: 163
 - [[Load all pending (non-expired, non-decided) items.          Items whose expires_]] - rationale - gateway/approval_queue/store.py
 - [[MFAGuard]] - code - gateway/approval_queue/enhanced_queue.py
 - [[Open the database and create the schema. Idempotent a second call         must]] - rationale - gateway/approval_queue/store.py
+- [[Owner DM message text must reference the originating group chat_id.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Owner DM must describe the action_type that requires approval.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Owner must receive a DM when an approval originates from a group chat.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[Path]] - code - gateway/approval_queue/store.py
 - [[Path_24]] - code - gateway/tests/test_approval_store.py
 - [[Process an approval decision.          IEC 62443 FR1 approving a high-risk acti]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Queue persistence across restart.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Queue should restore persisted items from store file on startup.]] - rationale - gateway/tests/test_approval_queue.py
+- [[Queue store file should persist items and status transitions.]] - rationale - gateway/tests/test_approval_queue.py
 - [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c]] - rationale - gateway/tests/test_approval_store.py
 - [[Remove a WebSocket connection from connected set.]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Request for human approval of a sensitive action      Submitted by an agent when]] - rationale - gateway/ingest_api/models.py
 - [[Risk policy configuration for a tool tier]] - rationale - gateway/ingest_api/config.py
+- [[SCRUM-110 cleanup_decided() must persist the removal, not just mutate     the i]] - rationale - gateway/tests/test_approval_queue.py
 - [[SCRUM-110 restart recovery must reschedule the timeout with the         item's]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[SCRUM-110 writes go through a temp file + os.replace so a crash     mid-write c]] - rationale - gateway/tests/test_approval_queue.py
 - [[SQLite-backed persistence for approval queue items.]] - rationale - gateway/approval_queue/store.py
 - [[Schedule a timeout task for a request.]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Send Telegram notification for approval requests.          Sends a formatted mes]] - rationale - gateway/approval_queue/enhanced_queue.py
@@ -119,15 +136,28 @@ members: 163
 - [[Submit and decide requests concurrently.]] - rationale - gateway/tests/test_approval_stress.py
 - [[Test MCP proxy integration with approval queue.]] - rationale - gateway/tests/test_enhanced_approval.py
 - [[Test SQLite persistence across restarts.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test WebSocket client connection]] - rationale - gateway/tests/test_approval_queue.py
 - [[Test approval requirement logic.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test approving a pending request]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test deciding on already-decided request raises ValueError]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test deciding on an expired request raises ValueError]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test deciding on nonexistent request raises KeyError]] - rationale - gateway/tests/test_approval_queue.py
 - [[Test denial flow for critical tool.]] - rationale - gateway/tests/test_enhanced_approval.py
 - [[Test full approval flow for critical tool.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test getting a specific item by ID]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test getting all pending requests]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test getting nonexistent item returns None]] - rationale - gateway/tests/test_approval_queue.py
+- [[Test rejecting a pending request]] - rationale - gateway/tests/test_approval_queue.py
 - [[Test risk tier lookup.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test submitting an approval request]] - rationale - gateway/tests/test_approval_queue.py
 - [[Test that approval events are generated for WebSocket notification.]] - rationale - gateway/tests/test_enhanced_approval.py
 - [[Test that approval is bypassed when enforce mode is disabled.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that concurrent decision attempts are handled correctly]] - rationale - gateway/tests/test_approval_queue.py
 - [[Test that critical tools are identified as requiring approval.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that get_pending excludes decided requests]] - rationale - gateway/tests/test_approval_queue.py
 - [[Test that low-risk tools don't require approval.]] - rationale - gateway/tests/test_enhanced_approval.py
 - [[Test that pending items are restored after restart.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that requests expire after timeout]] - rationale - gateway/tests/test_approval_queue.py
 - [[Test the complete approval workflow.]] - rationale - gateway/tests/test_enhanced_approval.py
 - [[Test timeout with auto-deny.]] - rationale - gateway/tests/test_enhanced_approval.py
 - [[Test tool risk tier classification.]] - rationale - gateway/tests/test_enhanced_approval.py
@@ -137,9 +167,11 @@ members: 163
 - [[TestApprovalWorkflow]] - code - gateway/tests/test_enhanced_approval.py
 - [[TestAutoExpire]] - code - gateway/tests/test_approval_stress.py
 - [[TestConcurrentApprovalRequests]] - code - gateway/tests/test_approval_stress.py
+- [[TestGroupApprovalOwnerDM]] - code - gateway/tests/test_group_approval_routing.py
 - [[TestMCPProxyIntegration]] - code - gateway/tests/test_enhanced_approval.py
 - [[TestPersistence]] - code - gateway/tests/test_enhanced_approval.py
 - [[TestToolRiskClassification]] - code - gateway/tests/test_enhanced_approval.py
+- [[The originating group chat must receive a thread-reply notification.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[Timeout handling for approval requests.]] - rationale - gateway/tests/test_approval_stress.py
 - [[Tool risk tier configuration]] - rationale - gateway/ingest_api/config.py
 - [[ToolRiskConfig]] - code - gateway/approval_queue/enhanced_queue.py
@@ -151,24 +183,53 @@ members: 163
 - [[WebSocket]] - code - gateway/approval_queue/enhanced_queue.py
 - [[_make_item()]] - code - gateway/tests/test_approval_store.py
 - [[_real_queue()]] - code - gateway/tests/test_mcp_policy.py
+- [[approval_queue()]] - code - gateway/tests/test_approval_queue.py
+- [[cleanup_decided() must not remove pending items regardless of age.]] - rationale - gateway/tests/test_approval_queue.py
+- [[cleanup_decided() should not remove decided items newer than threshold.]] - rationale - gateway/tests/test_approval_queue.py
+- [[cleanup_decided() should remove approvedrejected items older than threshold.]] - rationale - gateway/tests/test_approval_queue.py
 - [[enhanced_mfa_queue()]] - code - gateway/tests/test_mfa_guard.py
 - [[enhanced_queue()]] - code - gateway/tests/test_enhanced_approval.py
 - [[enhanced_queue.py]] - code - gateway/approval_queue/enhanced_queue.py
 - [[get_pending should expire stale items.]] - rationale - gateway/tests/test_approval_stress.py
+- [[group_router.py]] - code - gateway/approval_queue/group_router.py
+- [[owner_chat_id receives a DM notification for every group-context approval.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[queue()]] - code - gateway/tests/test_approval_stress.py
+- [[queue_config()]] - code - gateway/tests/test_approval_queue.py
 - [[store()]] - code - gateway/tests/test_approval_store.py
 - [[store()_1]] - code - gateway/tests/test_approval_stress.py
 - [[store.py]] - code - gateway/approval_queue/store.py
 - [[temp_store()]] - code - gateway/tests/test_enhanced_approval.py
+- [[test_approval_queue.py]] - code - gateway/tests/test_approval_queue.py
 - [[test_approval_store.py]] - code - gateway/tests/test_approval_store.py
 - [[test_approval_stress.py]] - code - gateway/tests/test_approval_stress.py
 - [[test_audit_store_initialize_is_idempotent()]] - code - gateway/tests/test_approval_store.py
+- [[test_cleanup_decided_keeps_pending_items()]] - code - gateway/tests/test_approval_queue.py
+- [[test_cleanup_decided_keeps_recent_decided_items()]] - code - gateway/tests/test_approval_queue.py
+- [[test_cleanup_decided_persists_removal_to_disk()]] - code - gateway/tests/test_approval_queue.py
+- [[test_cleanup_decided_removes_old_decided_items()]] - code - gateway/tests/test_approval_queue.py
+- [[test_concurrent_decisions()]] - code - gateway/tests/test_approval_queue.py
+- [[test_decide_already_decided()]] - code - gateway/tests/test_approval_queue.py
+- [[test_decide_approval_approve()]] - code - gateway/tests/test_approval_queue.py
+- [[test_decide_approval_reject()]] - code - gateway/tests/test_approval_queue.py
+- [[test_decide_expired_request()]] - code - gateway/tests/test_approval_queue.py
+- [[test_decide_nonexistent_request()]] - code - gateway/tests/test_approval_queue.py
 - [[test_decide_persists()]] - code - gateway/tests/test_approval_store.py
 - [[test_enhanced_approval.py]] - code - gateway/tests/test_enhanced_approval.py
-- [[test_enhanced_tool_call_medium_not_gated()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_expired_items_on_reload()]] - code - gateway/tests/test_approval_store.py
+- [[test_get_item()]] - code - gateway/tests/test_approval_queue.py
+- [[test_get_item_nonexistent()]] - code - gateway/tests/test_approval_queue.py
+- [[test_get_pending()]] - code - gateway/tests/test_approval_queue.py
+- [[test_get_pending_excludes_decided()]] - code - gateway/tests/test_approval_queue.py
 - [[test_initialize_is_idempotent()]] - code - gateway/tests/test_approval_store.py
 - [[test_persist_and_reload()]] - code - gateway/tests/test_approval_store.py
+- [[test_persist_pending_store_writes_atomically()]] - code - gateway/tests/test_approval_queue.py
+- [[test_request_expiration()]] - code - gateway/tests/test_approval_queue.py
+- [[test_store_persists_submit_and_decision()]] - code - gateway/tests/test_approval_queue.py
+- [[test_store_restores_items_on_init()]] - code - gateway/tests/test_approval_queue.py
 - [[test_store_survives_restart()]] - code - gateway/tests/test_approval_store.py
+- [[test_submit_approval_request()]] - code - gateway/tests/test_approval_queue.py
+- [[test_websocket_connect()]] - code - gateway/tests/test_approval_queue.py
+- [[test_websocket_disconnect()]] - code - gateway/tests/test_approval_queue.py
 - [[test_websocket_notifications()]] - code - gateway/tests/test_enhanced_approval.py
 - [[tool_risk_config()]] - code - gateway/tests/test_enhanced_approval.py
 
@@ -180,26 +241,28 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 38 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
-- 33 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 23 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
-- 19 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 17 edges to [[_COMMUNITY_Gateway Security Module]]
-- 16 edges to [[_COMMUNITY_PromptGuard Encoding Detection]]
-- 16 edges to [[_COMMUNITY_Egress Domain Allowlist]]
-- 10 edges to [[_COMMUNITY_Slack API Proxy]]
-- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 43 edges to [[_COMMUNITY_scriptssync-cve-registry.py]]
+- 37 edges to [[_COMMUNITY_Enforce-Mode Auto-Revert]]
+- 25 edges to [[_COMMUNITY_Competitive Intel Store]]
+- 21 edges to [[_COMMUNITY_Egress Domain Allowlist]]
+- 14 edges to [[_COMMUNITY_PromptGuard Encoding Detection]]
+- 14 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 8 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 6 edges to [[_COMMUNITY_Planning Docs]]
+- 6 edges to [[_COMMUNITY_docsvault]]
 - 4 edges to [[_COMMUNITY_Telegram Inbound Tests]]
-- 3 edges to [[_COMMUNITY_Competitive Intel Store]]
-- 3 edges to [[_COMMUNITY_scriptssync-cve-registry.py]]
+- 3 edges to [[_COMMUNITY_docstesting]]
+- 2 edges to [[_COMMUNITY_SOC Dashboard]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Security Module]]
-- 1 edge to [[_COMMUNITY_Tool Chain Analyzer]]
+- 1 edge to [[_COMMUNITY_SOC RBAC & Auth]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_skillsopenclaw]]
 
 ## Top bridge nodes
-- [[ApprovalRequest_3]] - degree 89, connects to 7 communities
-- [[enhanced_queue.py]] - degree 16, connects to 7 communities
-- [[ToolRiskConfig_1]] - degree 35, connects to 6 communities
-- [[EnhancedApprovalQueue]] - degree 51, connects to 5 communities
-- [[ToolRiskPolicy_1]] - degree 23, connects to 4 communities
+- [[ApprovalQueueConfig_2]] - degree 76, connects to 7 communities
+- [[EnhancedApprovalQueue]] - degree 51, connects to 6 communities
+- [[enhanced_queue.py]] - degree 16, connects to 6 communities
+- [[ApprovalRequest_3]] - degree 89, connects to 5 communities
+- [[ToolRiskConfig_1]] - degree 35, connects to 5 communities

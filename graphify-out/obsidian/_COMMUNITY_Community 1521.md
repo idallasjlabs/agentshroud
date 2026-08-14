@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_hermes_startup_telegram_calls_use_system_header()]] - code - gateway/tests/test_config_validation.py
-- [[Hermes startup notifications must use X-AgentShroud-System 1 (bypasses content]] - rationale - gateway/tests/test_config_validation.py
+- [[.test_monitor_mode()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test that monitor mode logs but doesn't redact.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_MCP Proxy Config]]
+- 1 edge to [[_COMMUNITY_Bot CVE Scorecard]]
 
 ## Top bridge nodes
-- [[.test_hermes_startup_telegram_calls_use_system_header()]] - degree 2, connects to 1 community
+- [[.test_monitor_mode()]] - degree 3, connects to 2 communities

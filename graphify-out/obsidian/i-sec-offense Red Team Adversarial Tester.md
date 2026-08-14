@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Planning Docs"
+community: "SOC RBAC & Auth"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/SOC_RBAC__Auth
 ---
 
 # i-sec-offense: Red Team Adversarial Tester
@@ -23,4 +23,4 @@ tags:
 - [[prompt_protection.py]] - `references` [EXTRACTED]
 - [[test_redteam_probes.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/SOC_RBAC__Auth

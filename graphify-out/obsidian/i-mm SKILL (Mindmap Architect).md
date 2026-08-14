@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: "docs/agentshroud-knowledge.md"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/agentshroud-knowledgemd
+  - community/skills/openclaw
 ---
 
 # i-mm SKILL (Mindmap Architect)
@@ -17,4 +17,4 @@ tags:
 - [[markmap-mcp-server (MCP server)]] - `references` [EXTRACTED]
 - [[xmind-generator-mcp (MCP server)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/agentshroud-knowledgemd
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

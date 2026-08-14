@@ -1,19 +1,16 @@
 ---
 type: community
-members: 6
+members: 3
 ---
 
 # .github/workflows
 
-**Members:** 6 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[CI Workflow]] - code - .github/workflows/ci.yml
-- [[Dependabot Configuration]] - code - .github/dependabot.yml
-- [[Leak Gate Scoped to ubuntu+3.11]] - rationale - .github/workflows/ci.yml
-- [[Presidio-Anonymizer 2.2.364 Version Pin-Out]] - rationale - .github/dependabot.yml
-- [[cryptography=50.0.0 Security Floor]] - rationale - gateway/requirements.txt
-- [[gatewayrequirements.txt Dependency File]] - code - gateway/requirements.txt
+- [[.test_prompt_extraction_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
+- [[System prompt extraction payloads.]] - rationale - gateway/tests/test_adversarial_injection.py
+- [[TestPromptExtraction]] - code - gateway/tests/test_adversarial_injection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +20,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AGENTS]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_docsvault]]
+- 1 edge to [[_COMMUNITY_Audit Export Pipeline]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[gatewayrequirements.txt Dependency File]] - degree 4, connects to 1 community
+- [[TestPromptExtraction]] - degree 5, connects to 3 communities
+- [[.test_prompt_extraction_detection_rate()]] - degree 4, connects to 2 communities

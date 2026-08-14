@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Security Docs"
+community: "SOC Service Manager"
 location: "L665"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/SOC_Service_Manager
 ---
 
 # _gitless_run()
@@ -19,4 +19,4 @@ tags:
 - [[Build a subprocess.run double that simulates the upgrade git flow.]] - `rationale_for` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager

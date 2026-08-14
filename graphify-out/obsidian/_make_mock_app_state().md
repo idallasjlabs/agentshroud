@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Slack API Proxy"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Slack_API_Proxy
 ---
 
 # _make_mock_app_state()
@@ -22,4 +22,4 @@ tags:
 - [[_PipelineCaptor]] - `references` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

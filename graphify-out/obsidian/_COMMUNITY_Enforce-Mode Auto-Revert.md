@@ -1,135 +1,86 @@
 ---
 type: community
-members: 122
+members: 73
 ---
 
 # Enforce-Mode Auto-Revert
 
-**Members:** 122 nodes
+**Members:** 73 nodes
 
 ## Members
-- [[.__ge__()]] - code - gateway/proxy/mcp_config.py
-- [[.__gt__()]] - code - gateway/proxy/mcp_config.py
-- [[.__init__()_26]] - code - gateway/proxy/mcp_permissions.py
-- [[.__le__()]] - code - gateway/proxy/mcp_config.py
-- [[.__lt__()]] - code - gateway/proxy/mcp_config.py
-- [[._load_privacy_policy()]] - code - gateway/proxy/mcp_permissions.py
-- [[._recompile_private_data_patterns()]] - code - gateway/proxy/mcp_permissions.py
-- [[._record_private_access_attempt()]] - code - gateway/proxy/mcp_permissions.py
-- [[.check_agent_server_access()]] - code - gateway/proxy/mcp_permissions.py
-- [[.check_all()]] - code - gateway/proxy/mcp_permissions.py
-- [[.check_rate_limit()]] - code - gateway/proxy/mcp_permissions.py
-- [[.check_tool_parameters()]] - code - gateway/proxy/mcp_permissions.py
-- [[.check_tool_permission()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_privacy_policy_status()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_access_events()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_access_summary()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_data_patterns()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_redaction_events()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_private_redaction_summary()]] - code - gateway/proxy/mcp_permissions.py
-- [[.get_trust_level()]] - code - gateway/proxy/mcp_permissions.py
-- [[.infer_permission_level()]] - code - gateway/proxy/mcp_permissions.py
-- [[.level_value()]] - code - gateway/proxy/mcp_config.py
-- [[.record_private_data_redaction()]] - code - gateway/proxy/mcp_permissions.py
-- [[.set_trust_level()]] - code - gateway/proxy/mcp_permissions.py
-- [[.test_admin_allowed_at_trust_3()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_admin_denied_at_trust_2()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_admin_ge_read()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_admin_private_tool_allowed_for_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_admin_private_tool_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_all_pass()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_allowed_agent()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_clamp_high()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_clamp_low()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_combined_blocks_private_data_parameter()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_default_trust_is_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_default_write()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_denied_agent()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_disabled_server()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_exec_denied_at_trust_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_execute_lt_admin()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_explicit_config()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_full_access()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_level_values()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_memory_dot_search_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_memory_get_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_no_limit_always_allowed()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_not_in_allowlist()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_pattern_delete()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_pattern_list()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_pattern_read()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_pattern_sensitive()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_permission_denied()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_privacy_policy_overrides_patterns()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_privacy_policy_status_when_missing_file()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_allowed_for_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_agentshroud_memory_subpath()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_gateway_contributor_logs()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_memory_subpath()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_nested_private_reference()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_non_owner()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_session_store_path()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_data_parameter_denied_for_workspace_contributor_logs()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_private_redaction_event_summary()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_rate_limit_enforced()_1]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_rate_limit_per_agent()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_read_le_read()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_read_lt_write()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_read_tool_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_server_denied_stops_early()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_set_and_get()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_trust_0_read_only()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_trust_1_write()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_trust_2_execute()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_trust_3_admin()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_trust_sufficient_for_server()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_trust_too_low_for_server()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_unknown_server_default_allow()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_write_lt_execute()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_write_tool_allowed_at_trust_1()]] - code - gateway/tests/test_mcp_permissions.py
-- [[.test_write_tool_denied_at_trust_0()]] - code - gateway/tests/test_mcp_permissions.py
-- [[Aggregate recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Aggregate recent private-tool violations for SOC reporting.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Audit signal for blocked admin-private tool access attempts.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Audit signal when admin-private data is redacted from tool results.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Block non-owner tool calls that reference admin-private data pathscontent.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Check and update rate limits for a tool call.          Returns allowed=True and]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Check if an agent can access a server at all.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Check if an agent can call a specific tool.          Default-allow only blocks]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Compile private data patterns once for efficient repeated use.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Get trust level, defaulting to 1 (write) for unknown agents.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Infer the permission level needed for a tool based on its name.          Checks]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Load optional admin-private tool patterns from policy file.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[MCPPermissionManager]] - code - gateway/proxy/mcp_permissions.py
-- [[MCPProxyConfig_1]] - code - gateway/proxy/mcp_permissions.py
-- [[MCPServerConfig_1]] - code - gateway/proxy/mcp_permissions.py
-- [[Manages permissions for MCP tool calls.      Default-allow philosophy tools wor]] - rationale - gateway/proxy/mcp_permissions.py
-- [[PermissionCheck]] - code - gateway/proxy/mcp_permissions.py
-- [[PermissionLevel]] - code - gateway/proxy/mcp_config.py
-- [[PermissionLevel_1]] - code - gateway/proxy/mcp_permissions.py
-- [[PrivateAccessAttempt]] - code - gateway/proxy/mcp_permissions.py
-- [[PrivateRedactionEvent]] - code - gateway/proxy/mcp_permissions.py
-- [[RateLimitEntry]] - code - gateway/proxy/mcp_permissions.py
-- [[Record admin-private data redaction event for compliance audit.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Record blocked private-tool access attempts for SOCaudit views.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Result of permission check.]] - rationale - gateway/security/rbac.py
-- [[Return configured admin-private data redaction patterns.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return privacy policy file load status for dashboardaudit APIs.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return recent blocked private-tool attempts for auditing.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Return recent private-data redaction events.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Run all permission checks in order. Returns first failure or final success.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[Set trust level for an agent.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[TestCheckAll]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestInferPermission]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestPermissionLevel]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestRateLimiting_1]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestServerAccess]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestToolPermission]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestTrustLevels]] - code - gateway/tests/test_mcp_permissions.py
-- [[TestTrustMapping]] - code - gateway/tests/test_mcp_permissions.py
-- [[Track rate limit state for a tool+agent combo.]] - rationale - gateway/proxy/mcp_permissions.py
-- [[mgr()_1]] - code - gateway/tests/test_mcp_permissions.py
-- [[test_mcp_permissions.py]] - code - gateway/tests/test_mcp_permissions.py
+- [[NOTE Called within _lock context]] - rationale - gateway/approval_queue/queue.py
+- [[.__init__()_95]] - code - gateway/security/mfa_guard.py
+- [[._decode_secret()]] - code - gateway/security/mfa_guard.py
+- [[._prune_used()]] - code - gateway/security/mfa_guard.py
+- [[._totp_for_counter()]] - code - gateway/security/mfa_guard.py
+- [[.from_env()_3]] - code - gateway/security/mfa_guard.py
+- [[.is_required()]] - code - gateway/security/mfa_guard.py
+- [[.verify()_1]] - code - gateway/security/mfa_guard.py
+- [[AgentShroud Security Dashboard (index.html)]] - code - gateway/dashboard/index.html
+- [[ApprovalQueue_1]] - code - gateway/tests/test_mfa_guard.py
+- [[Build an MFAGuard from environment variables  Docker secret file.          Reco]] - rationale - gateway/security/mfa_guard.py
+- [[Compute the RFC 6238 TOTP value for a specific time-step counter.]] - rationale - gateway/security/mfa_guard.py
+- [[Decode a base32 secret; return b on emptyinvalid input.]] - rationale - gateway/security/mfa_guard.py
+- [[Drop replay records older than the accepted window (bounded memory).]] - rationale - gateway/security/mfa_guard.py
+- [[MFAGuard_2]] - code - gateway/security/mfa_guard.py
+- [[MFAGuard.verify()]] - code - gateway/security/mfa_guard.py
+- [[MFAResult]] - code - gateway/security/mfa_guard.py
+- [[Outcome of an MFA verification.      Attributes         allowed True if the ac]] - rationale - gateway/security/mfa_guard.py
+- [[Return True if ``action_type`` requires a second factor right now.          Two]] - rationale - gateway/security/mfa_guard.py
+- [[Submit via the real tool-call path - action_type == f'tool_call_{tier}'.]] - rationale - gateway/tests/test_mfa_guard.py
+- [[Verify a TOTP second factor for high-risk operations (fail-closed).      Args]] - rationale - gateway/security/mfa_guard.py
+- [[Verify the second factor for a high-risk action.          Args             acti]] - rationale - gateway/security/mfa_guard.py
+- [[_queue()]] - code - gateway/tests/test_mfa_guard.py
+- [[_ref_totp()]] - code - gateway/tests/test_mfa_guard.py
+- [[_submit_enhanced_high_risk()]] - code - gateway/tests/test_mfa_guard.py
+- [[_submit_high_risk()]] - code - gateway/tests/test_mfa_guard.py
+- [[_submit_tool_call()]] - code - gateway/tests/test_mfa_guard.py
+- [[_truthy()]] - code - gateway/security/mfa_guard.py
+- [[mfa_guard.py]] - code - gateway/security/mfa_guard.py
+- [[now()_1]] - code - gateway/tests/test_mfa_guard.py
+- [[queue.py]] - code - gateway/approval_queue/queue.py
+- [[test_counter_below_zero_skipped()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_custom_high_risk_action_types()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_mfa_disabled_approves_without_code()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_mfa_enabled_invalid_code_denied()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_mfa_enabled_missing_code_denied()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_mfa_enabled_replayed_code_denied()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_mfa_enabled_valid_code_approves()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_decide_reject_never_requires_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_disabled_allows_even_high_risk_with_no_code()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_disabled_by_default_allows_without_factor()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_empty_code_denies()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enabled_without_secret_denies_fail_closed()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_decide_missing_code_denied()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_decide_missing_item_fail_closed()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_decide_reject_no_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_decide_valid_code_approves()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_critical_allowed_with_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_critical_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_high_allowed_with_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_high_blocked_without_mfa()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_enhanced_tool_call_medium_not_gated()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_expired_window_code_denies()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_bad_window_defaults_to_one()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_disabled_when_flag_unset()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_enabled_no_secret_warns()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_reads_secret_and_flag()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_reads_secret_file()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_from_env_unreadable_secret_file()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_invalid_base32_secret_treated_as_unconfigured()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_invalid_code_denies()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_is_required_tool_call_disabled_never_required()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_is_required_tool_call_tier_parsing()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_mfa_guard.py]] - code - gateway/tests/test_mfa_guard.py
+- [[test_missing_code_denies_high_risk()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_non_high_risk_action_not_required()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_prune_used_drops_stale_entries()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_real_time_default_now()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_replayed_code_denies()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_uses_constant_time_compare()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_valid_totp_allows_high_risk()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_valid_totp_prev_window_allowed()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_wrong_length_code_denies()]] - code - gateway/tests/test_mfa_guard.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -139,20 +90,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 78 edges to [[_COMMUNITY_PromptGuard Encoding Detection]]
-- 60 edges to [[_COMMUNITY_Collaborator Prompt Safety]]
-- 10 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
-- 8 edges to [[_COMMUNITY_docsoperations]]
-- 5 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_Setup Docs]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_scriptssmoke.d]]
-- 2 edges to [[_COMMUNITY_.githubISSUE_TEMPLATE]]
-- 2 edges to [[_COMMUNITY_docsdiagrams]]
+- 37 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
+- 5 edges to [[_COMMUNITY_scriptssync-cve-registry.py]]
+- 2 edges to [[_COMMUNITY_dockerREADME]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_Competitive Intel Store]]
+- 1 edge to [[_COMMUNITY_Egress Domain Allowlist]]
+- 1 edge to [[_COMMUNITY_Egress & RBAC Security Core]]
 
 ## Top bridge nodes
-- [[MCPPermissionManager]] - degree 100, connects to 9 communities
-- [[PermissionLevel]] - degree 71, connects to 8 communities
-- [[PermissionCheck]] - degree 12, connects to 3 communities
-- [[RateLimitEntry]] - degree 7, connects to 3 communities
-- [[PrivateAccessAttempt]] - degree 7, connects to 3 communities
+- [[MFAGuard_2]] - degree 49, connects to 3 communities
+- [[queue.py]] - degree 13, connects to 3 communities
+- [[test_mfa_guard.py]] - degree 60, connects to 2 communities
+- [[_queue()]] - degree 11, connects to 2 communities
+- [[ApprovalQueue_1]] - degree 10, connects to 2 communities

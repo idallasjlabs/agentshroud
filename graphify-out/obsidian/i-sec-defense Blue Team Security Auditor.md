@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Gateway Security Module"
+community: "SOC RBAC & Auth"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/SOC_RBAC__Auth
 ---
 
 # i-sec-defense: Blue Team Security Auditor
@@ -28,4 +28,4 @@ tags:
 - [[rbac.py]] - `references` [EXTRACTED]
 - [[trust_manager.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/SOC_RBAC__Auth

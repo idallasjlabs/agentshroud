@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "docs/vault"
+community: "Gateway Test Suite"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # gateway/skills/manifest.py (SkillsManifest)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_skills_manifest_sync.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

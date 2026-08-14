@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "Progressive Trust Config"
+community: "docs/vault"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/docs/vault
 ---
 
 # Validate content before writing to memory file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.validate_memory_write()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

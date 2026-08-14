@@ -1,134 +1,112 @@
 ---
 type: community
-members: 160
+members: 121
 ---
 
 # Slack API Proxy
 
-**Members:** 160 nodes
+**Members:** 121 nodes
 
 ## Members
-- [[NOTE Gateway-side Slack Socket Mode listener removed.]] - rationale - gateway/ingest_api/lifespan.py
-- [[NOTE This branch ships hot-reload of the config FILE only. The web config]] - rationale - gateway/ingest_api/config.py
-- [[.__init__()_11]] - code - gateway/ingest_api/event_bus.py
 - [[.__init__()_14]] - code - gateway/ingest_api/router.py
+- [[.__init__()_152]] - code - gateway/tests/test_forward_routing.py
+- [[.__init__()_153]] - code - gateway/tests/test_forward_routing.py
 - [[._build_forward_payload()]] - code - gateway/ingest_api/router.py
-- [[.filter()]] - code - gateway/ingest_api/lifespan.py
+- [[._post()]] - code - gateway/tests/test_forward_routing.py
+- [[._post_forward()]] - code - gateway/tests/test_forward_routing.py
+- [[._run_forward()]] - code - gateway/tests/test_forward_routing.py
 - [[.forward_to_agent()]] - code - gateway/ingest_api/router.py
 - [[.forward_to_agent_stream()]] - code - gateway/ingest_api/router.py
 - [[.health_check()]] - code - gateway/ingest_api/router.py
 - [[.list_targets()]] - code - gateway/ingest_api/router.py
+- [[.process_inbound()_2]] - code - gateway/tests/test_forward_routing.py
+- [[.process_inbound()_3]] - code - gateway/tests/test_forward_routing.py
+- [[.process_inbound()_4]] - code - gateway/tests/test_forward_routing.py
+- [[.process_outbound()_2]] - code - gateway/tests/test_forward_routing.py
+- [[.process_outbound()_3]] - code - gateway/tests/test_forward_routing.py
+- [[.process_outbound()_4]] - code - gateway/tests/test_forward_routing.py
 - [[.register_bots()]] - code - gateway/ingest_api/router.py
 - [[.resolve_target()]] - code - gateway/ingest_api/router.py
-- [[.subscribe()]] - code - gateway/ingest_api/event_bus.py
-- [[.test_get_module_mode_no_env_override()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_global_monitor_override_downgrades_all()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.unsubscribe()]] - code - gateway/ingest_api/event_bus.py
-- [[A missing file (mtime -1.0) must not trigger a reload (no reject storm).]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[A structurally-valid YAML that violates the pydantic schema is rejected.]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[AGENTSHROUD_MODE=monitor must downgrade ALL modules to monitor.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[.test_agent_id_propagated_for_hermes()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_agent_id_propagated_for_openclaw()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_blocked_outbound_replaced_with_policy_notice()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_body_owner_id_with_matching_trusted_header_is_honored()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_body_owner_id_without_trusted_header_is_stripped()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_default_not_used_in_pipeline()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_empty_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_forward_passes_user_id_in_metadata_to_process_inbound()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_no_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_non_owner_body_user_id_passes_through()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_non_owner_user_id_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_owner_id_without_trusted_header_does_not_elevate_trust()]] - code - gateway/tests/test_forward_routing.py
+- [[.test_owner_user_id_elevates_trust_to_full()]] - code - gateway/tests/test_forward_routing.py
+- [[A collaborator's user_id must NOT trigger the owner elevation.]] - rationale - gateway/tests/test_forward_routing.py
+- [[A non-owner user_id is not a spoof risk and must pass through unchanged]] - rationale - gateway/tests/test_forward_routing.py
 - [[AgentTarget]] - code - gateway/ingest_api/models.py
 - [[AgentTarget_1]] - code - gateway/ingest_api/router.py
 - [[AgentTarget_4]] - code - gateway/ingest_api/router.py
 - [[AgentTarget accepts custom chat_path and health_path.]] - rationale - gateway/tests/test_router.py
 - [[AgentTarget defaults chat_path and health_path correctly.]] - rationale - gateway/tests/test_router.py
+- [[An empty string user_id must not match the owner.]] - rationale - gateway/tests/test_forward_routing.py
 - [[Any_9]] - code - gateway/ingest_api/router.py
-- [[AppState]] - code - gateway/ingest_api/state.py
-- [[Background mtime-poll watcher reload the config when the file changes.      Pol]] - rationale - gateway/ingest_api/config.py
-- [[Both bots must be reachable via the same router without conflict.]] - rationale - gateway/tests/test_router.py
-- [[Build a fake httpx.Response whose .json() returns body.]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[Build a minimal mock app_state that returns a target with the given bot name.]] - rationale - gateway/tests/test_forward_routing.py
 - [[Build the outbound payload for `target`, shared by the blocking and         stre]] - rationale - gateway/ingest_api/router.py
 - [[Check health of one or all agent targets          Args             target Spec]] - rationale - gateway/ingest_api/router.py
-- [[Container for application-wide state]] - rationale - gateway/ingest_api/state.py
-- [[Copy only the reloadable-field subset from ``new`` onto ``current`` in place.]] - rationale - gateway/ingest_api/config.py
-- [[Create a router configuration for testing]] - rationale - gateway/tests/test_router.py
-- [[Create a router instance for testing]] - rationale - gateway/tests/test_router.py
 - [[Determine which agent should receive this content          Args             req]] - rationale - gateway/ingest_api/router.py
 - [[Downstream agent target]] - rationale - gateway/ingest_api/models.py
 - [[Empty choices list raises ForwardError.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[EventBus]] - code - gateway/ingest_api/event_bus.py
-- [[Every GatewayConfig field is classified exactly once, disjointly.]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[FastAPI_1]] - code - gateway/ingest_api/lifespan.py
-- [[FastAPI lifespan - startup and shutdown]] - rationale - gateway/ingest_api/lifespan.py
-- [[File mtime changes but no reloadable field differs — reload still succeeds.]] - rationale - gateway/tests/test_config_hot_reload.py
 - [[Forward sanitized content to agent via HTTP POST          Args             targ]] - rationale - gateway/ingest_api/router.py
 - [[ForwardRequest_1]] - code - gateway/ingest_api/router.py
-- [[GatewayConfig_3]] - code - gateway/tests/test_config_hot_reload.py
+- [[Inbound passes; outbound returns blocked=True with the original text intact.]] - rationale - gateway/tests/test_forward_routing.py
 - [[Initialize router          Args             config Router configuration]] - rationale - gateway/ingest_api/router.py
-- [[Install warning filter once for uvicorn logger.]] - rationale - gateway/ingest_api/lifespan.py
+- [[Legitimate voice-gateway path owner ID in body + matching trusted         heade]] - rationale - gateway/tests/test_forward_routing.py
 - [[Live regression 2026-08-07 Hermes's own internal LLM failover     (Anthropic cr]] - rationale - gateway/tests/test_router_streaming.py
-- [[Log warnings for any core modules running in monitor mode.]] - rationale - gateway/ingest_api/config.py
-- [[LogRecord]] - code - gateway/ingest_api/lifespan.py
 - [[Malformed OpenAI response (missing choices) raises ForwardError, not KeyError.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[MultiAgentRouter]] - code - gateway/ingest_api/router.py
-- [[Path_1]] - code - gateway/ingest_api/config.py
-- [[Path_25]] - code - gateway/tests/test_config_hot_reload.py
+- [[Minimal app_state for owner-trust tests.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Minimal pipeline mock that records which agent_id it was called with.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Owner ID claimed in the body with NO trusted header must not reach the         p]] - rationale - gateway/tests/test_forward_routing.py
+- [[Pipeline mock that records the user_trust_level passed to process_outbound.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Pipeline receives 'hermes' as agent_id when routed to hermes.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Pipeline receives 'openclaw' as agent_id when routed to openclaw.]] - rationale - gateway/tests/test_forward_routing.py
 - [[Populate routing targets from the bots registry.          Iterates all BotConfig]] - rationale - gateway/ingest_api/router.py
-- [[Re-parse and validate ``config_path``; atomically swap in reloadable fields.]] - rationale - gateway/ingest_api/config.py
-- [[Resolve each configured bot's OWN Telegram token, distinct from the default.]] - rationale - gateway/ingest_api/lifespan.py
-- [[Resolve the config file path using the same search order as load_config().]] - rationale - gateway/ingest_api/config.py
+- [[Regression 'default' must never appear in agent_id when a named target is resol]] - rationale - gateway/tests/test_forward_routing.py
+- [[Regression forward returned out_result.sanitized_message without checking]] - rationale - gateway/tests/test_forward_routing.py
+- [[Requests with no user_id must not be elevated to FULL.]] - rationale - gateway/tests/test_forward_routing.py
 - [[Return all configured agent targets          Returns             List of AgentT]] - rationale - gateway/ingest_api/router.py
-- [[Return module mode, respecting the global permissive override.]] - rationale - gateway/ingest_api/config.py
-- [[Return the file mtime, or -1.0 if the file is missing (treated as no-op).]] - rationale - gateway/ingest_api/config.py
-- [[Routes content to appropriate agent containers      Routing priority     1. Exp]] - rationale - gateway/ingest_api/router.py
-- [[Simple in-process event bus with async support]] - rationale - gateway/ingest_api/event_bus.py
+- [[SCRUM-46 verify forward.py elevates trust to FULL for the owner's user_id.]] - rationale - gateway/tests/test_forward_routing.py
 - [[Stream sanitized content to an OpenAI-compatible agent, yielding text         de]] - rationale - gateway/ingest_api/router.py
-- [[Subscribe to all events]] - rationale - gateway/ingest_api/event_bus.py
-- [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - rationale - gateway/ingest_api/lifespan.py
 - [[Test forwarding handles HTTP error responses]] - rationale - gateway/tests/test_router.py
 - [[Test forwarding handles timeout exception]] - rationale - gateway/tests/test_router.py
 - [[Test forwarding handles unexpected exceptions]] - rationale - gateway/tests/test_router.py
 - [[Test forwarding to offline agent raises ForwardError]] - rationale - gateway/tests/test_router.py
-- [[Test health check for offline agent]] - rationale - gateway/tests/test_router.py
-- [[Test health check for single target]] - rationale - gateway/tests/test_router.py
-- [[Test health check with healthy agent]] - rationale - gateway/tests/test_router.py
-- [[Test listing all configured targets]] - rationale - gateway/tests/test_router.py
+- [[TestAgentIdPropagatedFromTarget]] - code - gateway/tests/test_forward_routing.py
+- [[TestOutboundBlockedNotDelivered]] - code - gateway/tests/test_forward_routing.py
+- [[TestOwnerSpoofingViaForwardBody]] - code - gateway/tests/test_forward_routing.py
+- [[TestOwnerTrustElevation]] - code - gateway/tests/test_forward_routing.py
 - [[The OpenAI payload must include a non-empty model field.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[Unsubscribe from events]] - rationale - gateway/ingest_api/event_bus.py
-- [[_DropInvalidHTTPRequestFilter]] - code - gateway/ingest_api/lifespan.py
-- [[_build_per_bot_telegram_tokens()]] - code - gateway/ingest_api/lifespan.py
-- [[_default_mtime returns the file mtime, and -1.0 when the file is absent.]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[_default_mtime()]] - code - gateway/ingest_api/config.py
-- [[_install_uvicorn_warning_filter()]] - code - gateway/ingest_api/lifespan.py
-- [[_load()]] - code - gateway/tests/test_config_hot_reload.py
-- [[_mock_response()]] - code - gateway/tests/test_router_openai_translation.py
+- [[Verify that the resolved target.name is used as agent_id in pipeline calls.]] - rationale - gateway/tests/test_forward_routing.py
+- [[WS-E SCRUM-7374 a body-supplied user_id must NOT grant owner identity     to t]] - rationale - gateway/tests/test_forward_routing.py
+- [[WS-E SCRUM-7374 a spoofed owner user_id in the body WITHOUT the         truste]] - rationale - gateway/tests/test_forward_routing.py
+- [[When request.user_id matches _owner_user_id (with the trusted header),         p]] - rationale - gateway/tests/test_forward_routing.py
+- [[_BlockedOutboundPipeline]] - code - gateway/tests/test_forward_routing.py
+- [[_PipelineCaptor]] - code - gateway/tests/test_forward_routing.py
+- [[_TrustCaptor]] - code - gateway/tests/test_forward_routing.py
+- [[_make_mock_app_state()]] - code - gateway/tests/test_forward_routing.py
+- [[_make_trust_app_state()]] - code - gateway/tests/test_forward_routing.py
 - [[_mock_stream_response()]] - code - gateway/tests/test_router_streaming.py
 - [[_sse_lines()]] - code - gateway/tests/test_router_streaming.py
-- [[_write()]] - code - gateway/tests/test_config_hot_reload.py
-- [[apply_reloadable_config()]] - code - gateway/ingest_api/config.py
-- [[check_monitor_mode_warnings()]] - code - gateway/ingest_api/config.py
-- [[config hot-reload (SCRUM-89)]] - code - gateway/ingest_api/config.py
-- [[config.py]] - code - gateway/ingest_api/config.py
-- [[config_watcher()]] - code - gateway/ingest_api/config.py
+- [[forward-routing agent_id propagation into security pipeline]] - code - gateway/ingest_api/routes/forward.py
 - [[forward_to_agent builds URL from target.chat_path.]] - rationale - gateway/tests/test_router.py
 - [[forward_to_agent extracts choices0.message.content and returns a string.]] - rationale - gateway/tests/test_router_openai_translation.py
 - [[forward_to_agent passes response.json() through unchanged for chat targets.]] - rationale - gateway/tests/test_router_openai_translation.py
 - [[forward_to_agent sends the generic {content, ledger_id, ...} body for chat targ]] - rationale - gateway/tests/test_router_openai_translation.py
 - [[forward_to_agent sends {model, messages} when chat_path ends v1chatcompleti]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[get_module_mode()]] - code - gateway/ingest_api/config.py
+- [[gatewayingest_apirouter.py (MultiAgentRouter)]] - code - gateway/ingest_api/router.py
 - [[health_check builds URL from target.health_path.]] - rationale - gateway/tests/test_router.py
-- [[ledger.py]] - code - gateway/ingest_api/ledger.py
-- [[lifespan()_1]] - code - gateway/ingest_api/lifespan.py
-- [[lifespan.py]] - code - gateway/ingest_api/lifespan.py
-- [[load_config computes CORS origins from the configured port.]] - rationale - gateway/tests/test_router.py
-- [[reload_config()]] - code - gateway/ingest_api/config.py
-- [[resolve_config_path honors the explicit arg and AGENTSHROUD_CONFIG env.]] - rationale - gateway/tests/test_config_hot_reload.py
-- [[resolve_config_path()]] - code - gateway/ingest_api/config.py
-- [[route_to='hermes' must resolve to the Hermes AgentTarget.]] - rationale - gateway/tests/test_router.py
-- [[router()_1]] - code - gateway/tests/test_router.py
-- [[router()_2]] - code - gateway/tests/test_router_openai_translation.py
-- [[router()_3]] - code - gateway/tests/test_router_streaming.py
-- [[router_config()]] - code - gateway/tests/test_router.py
-- [[sanitizer.py]] - code - gateway/ingest_api/sanitizer.py
-- [[state.py]] - code - gateway/ingest_api/state.py
+- [[process_inbound must receive metadata={'user_id' ...} from forward so that]] - rationale - gateway/tests/test_forward_routing.py
 - [[test_agent_target_custom_paths()]] - code - gateway/tests/test_router.py
 - [[test_agent_target_default_paths()]] - code - gateway/tests/test_router.py
-- [[test_apply_swaps_only_reloadable_fields()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_config_hot_reload.py]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_cors_origins_include_configured_port()]] - code - gateway/tests/test_router.py
-- [[test_default_mtime_reads_real_file_and_handles_missing()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_enforce_defaults.py]] - code - gateway/tests/test_enforce_defaults.py
-- [[test_field_partition_is_disjoint_and_covers_model()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_forward_routing.py]] - code - gateway/tests/test_forward_routing.py
 - [[test_forward_to_agent_http_error()]] - code - gateway/tests/test_router.py
 - [[test_forward_to_agent_offline()]] - code - gateway/tests/test_router.py
 - [[test_forward_to_agent_timeout()]] - code - gateway/tests/test_router.py
@@ -136,26 +114,12 @@ members: 160
 - [[test_forward_uses_chat_path()]] - code - gateway/tests/test_router.py
 - [[test_generic_target_returns_json_as_is()]] - code - gateway/tests/test_router_openai_translation.py
 - [[test_generic_target_sends_content_body()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_health_check_healthy_agent()]] - code - gateway/tests/test_router.py
-- [[test_health_check_offline_agent()]] - code - gateway/tests/test_router.py
-- [[test_health_check_single_target()]] - code - gateway/tests/test_router.py
 - [[test_health_check_uses_health_path()]] - code - gateway/tests/test_router.py
-- [[test_hermes_and_openclaw_coexist()]] - code - gateway/tests/test_router.py
-- [[test_list_targets()]] - code - gateway/tests/test_router.py
 - [[test_openai_empty_choices_raises_forward_error()]] - code - gateway/tests/test_router_openai_translation.py
 - [[test_openai_malformed_response_raises_forward_error()]] - code - gateway/tests/test_router_openai_translation.py
 - [[test_openai_payload_includes_model()]] - code - gateway/tests/test_router_openai_translation.py
 - [[test_openai_target_returns_content_string()]] - code - gateway/tests/test_router_openai_translation.py
 - [[test_openai_target_sends_messages_body()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_reload_applies_valid_change()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_reload_missing_file_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_reload_no_reloadable_field_changed()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_reload_rejects_invalid_and_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_reload_rejects_schema_violation_and_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_resolve_config_path_explicit_and_env()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_resolves_hermes_target()]] - code - gateway/tests/test_router.py
-- [[test_router.py]] - code - gateway/tests/test_router.py
-- [[test_router_openai_translation.py]] - code - gateway/tests/test_router_openai_translation.py
 - [[test_router_streaming.py]] - code - gateway/tests/test_router_streaming.py
 - [[test_stream_ignores_lines_without_data_prefix()]] - code - gateway/tests/test_router_streaming.py
 - [[test_stream_payload_sets_stream_true()]] - code - gateway/tests/test_router_streaming.py
@@ -165,9 +129,6 @@ members: 160
 - [[test_stream_rejects_non_openai_compat_target()]] - code - gateway/tests/test_router_streaming.py
 - [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - code - gateway/tests/test_router_streaming.py
 - [[test_stream_yields_content_deltas_in_order()]] - code - gateway/tests/test_router_streaming.py
-- [[test_watcher_ignores_missing_file()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_watcher_reloads_on_mtime_change()]] - code - gateway/tests/test_config_hot_reload.py
-- [[test_watcher_stops_on_event()]] - code - gateway/tests/test_config_hot_reload.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -177,96 +138,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 69 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
-- 44 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
-- 16 edges to [[_COMMUNITY_scriptssync-cve-registry.py]]
-- 16 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
-- 14 edges to [[_COMMUNITY_SOC Dashboard]]
-- 11 edges to [[_COMMUNITY_docstesting]]
-- 11 edges to [[_COMMUNITY_Forward Routing & Approval]]
-- 10 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
-- 10 edges to [[_COMMUNITY_Progressive Trust Config]]
-- 10 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
-- 10 edges to [[_COMMUNITY_Competitive Intel Store]]
-- 10 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 9 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 8 edges to [[_COMMUNITY_PromptGuard Encoding Detection]]
-- 8 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 7 edges to [[_COMMUNITY_Audit Export Pipeline]]
-- 7 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 7 edges to [[_COMMUNITY_Approval Queue Tests]]
-- 5 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 5 edges to [[_COMMUNITY_SOC RBAC & Auth]]
-- 4 edges to [[_COMMUNITY_Egress Domain Allowlist]]
-- 4 edges to [[_COMMUNITY_Setup Docs]]
-- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 4 edges to [[_COMMUNITY_HTTP Forwarder]]
-- 4 edges to [[_COMMUNITY_Bot Skill Config]]
-- 4 edges to [[_COMMUNITY_MCP Proxy Config]]
-- 4 edges to [[_COMMUNITY_Auth & Exception Types]]
-- 4 edges to [[_COMMUNITY_Gateway Proxy Layer]]
-- 4 edges to [[_COMMUNITY_Architecture Docs]]
-- 3 edges to [[_COMMUNITY_Gateway Security Module]]
-- 3 edges to [[_COMMUNITY_docsproject]]
-- 3 edges to [[_COMMUNITY_docsvault]]
+- 29 edges to [[_COMMUNITY_Competitive Intel Store]]
+- 25 edges to [[_COMMUNITY_scriptssync-cve-registry.py]]
+- 12 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Architecture Docs]]
 - 3 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_Gateway Security Module]]
-- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_Bot CVE Scorecard]]
-- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_MCP Policy Engine]]
-- 3 edges to [[_COMMUNITY_docsvault]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_scriptstriage-cve-mitigations.py]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_docsvault]]
-- 2 edges to [[_COMMUNITY_Telegram Inbound Tests]]
-- 2 edges to [[_COMMUNITY_docsvault]]
-- 2 edges to [[_COMMUNITY_Setup Docs]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_Gateway Security Module]]
-- 2 edges to [[_COMMUNITY_gatewayruntime]]
-- 2 edges to [[_COMMUNITY_Docker Deploy Scripts]]
-- 2 edges to [[_COMMUNITY_Security Docs]]
-- 2 edges to [[_COMMUNITY_Gateway Security Module]]
-- 2 edges to [[_COMMUNITY_Bot Skill Config]]
-- 2 edges to [[_COMMUNITY_Bot Skill Config]]
-- 2 edges to [[_COMMUNITY_Bot Skill Config]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_docsflows]]
-- 2 edges to [[_COMMUNITY_docsvault]]
-- 2 edges to [[_COMMUNITY_File Sandbox]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Group Workspace Isolation]]
-- 1 edge to [[_COMMUNITY_Planning Docs]]
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
-- 1 edge to [[_COMMUNITY_SOC Collaborator Lifecycle]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Planning Docs]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Security Docs]]
-- 1 edge to [[_COMMUNITY_Bot Container Scripts]]
-- 1 edge to [[_COMMUNITY_brandinglogos]]
-- 1 edge to [[_COMMUNITY_docscompliance]]
-- 1 edge to [[_COMMUNITY_Security Docs]]
-- 1 edge to [[_COMMUNITY_docsvault]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_docsvault]]
-- 1 edge to [[_COMMUNITY_scriptsexport-telegram-history.py]]
-- 1 edge to [[_COMMUNITY_Planning Docs]]
-- 1 edge to [[_COMMUNITY_Community 1514]]
-- 1 edge to [[_COMMUNITY_Group RBAC Roles]]
 
 ## Top bridge nodes
-- [[lifespan.py]] - degree 129, connects to 68 communities
-- [[lifespan()_1]] - degree 88, connects to 51 communities
-- [[state.py]] - degree 36, connects to 16 communities
-- [[config.py]] - degree 39, connects to 12 communities
-- [[_DropInvalidHTTPRequestFilter]] - degree 15, connects to 7 communities
+- [[AgentTarget]] - degree 59, connects to 4 communities
+- [[.resolve_target()]] - degree 7, connects to 3 communities
+- [[test_router_streaming.py]] - degree 16, connects to 2 communities
+- [[test_forward_routing.py]] - degree 13, connects to 2 communities
+- [[AgentTarget_1]] - degree 11, connects to 2 communities

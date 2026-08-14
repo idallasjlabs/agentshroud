@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Planning Docs"
 location: "L15435"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # get_agent_cve_source()
@@ -19,4 +19,4 @@ tags:
 - [[sync-cve-registry.py]] - `imports` [EXTRACTED]
 - [[sync_agent_ghsa()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

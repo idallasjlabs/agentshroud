@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_startup_notifications_wait_for_runtime_readiness()]] - code - gateway/tests/test_config_validation.py
-- [[Startup script should verify Telegrammodel readiness before sending online noti]] - rationale - gateway/tests/test_config_validation.py
+- [[.test_raw_web_fetch_json_approval_normalizes_leading_dot_domain()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Malformed host with leading dot should still queue approval for normalized domai]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[.test_startup_notifications_wait_for_runtime_readiness()]] - degree 2, connects to 1 community
+- [[.test_raw_web_fetch_json_approval_normalizes_leading_dot_domain()]] - degree 4, connects to 1 community

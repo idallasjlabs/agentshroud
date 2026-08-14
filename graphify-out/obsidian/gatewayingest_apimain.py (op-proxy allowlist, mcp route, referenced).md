@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "scripts/sync-cve-registry.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/scripts/sync-cve-registrypy
 ---
 
 # gateway/ingest_api/main.py (op-proxy allowlist, /mcp route, referenced)
@@ -32,4 +32,4 @@ tags:
 - [[test_ssh_write_file_endpoint.py]] - `imports_from` [EXTRACTED]
 - [[test_v1_models_synthetic.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

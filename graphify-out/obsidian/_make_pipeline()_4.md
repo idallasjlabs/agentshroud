@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "Gateway Security Module"
+community: "SOC RBAC & Auth"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/SOC_RBAC__Auth
 ---
 
 # _make_pipeline()
@@ -33,4 +33,4 @@ tags:
 - [[test_inbound_url_encoded_injection_blocked()]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth

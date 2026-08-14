@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "docs/vault"
+community: "gateway/cli"
 location: "L1934"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/gateway/cli
 ---
 
 # _score_ai_model_supply_chain()
@@ -19,4 +19,4 @@ tags:
 - [[get_trivy_summary()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/gateway/cli

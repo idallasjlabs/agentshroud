@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Slack API Proxy"
+community: "docs/reference"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/docs/reference
 ---
 
 # config hot-reload (SCRUM-89)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_config_hot_reload.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/docs/reference

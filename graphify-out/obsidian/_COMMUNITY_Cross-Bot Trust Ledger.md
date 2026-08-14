@@ -1,11 +1,11 @@
 ---
 type: community
-members: 147
+members: 151
 ---
 
 # Cross-Bot Trust Ledger
 
-**Members:** 147 nodes
+**Members:** 151 nodes
 
 ## Members
 - [[._active_bot_id()]] - code - gateway/proxy/telegram_proxy.py
@@ -71,16 +71,17 @@ members: 147
 - [[._matches_presence_probe()]] - code - gateway/proxy/telegram_proxy.py
 - [[._normalize_command_token()]] - code - gateway/proxy/telegram_proxy.py
 - [[._notify_collaborator_command_blocked()]] - code - gateway/proxy/telegram_proxy.py
+- [[._notify_user_blocked()]] - code - gateway/proxy/telegram_proxy.py
 - [[._quarantine_blocked_message()]] - code - gateway/proxy/telegram_proxy.py
+- [[._resolve_collaborator_mode()]] - code - gateway/proxy/telegram_proxy.py
 - [[._resolve_pending_username_target()]] - code - gateway/proxy/telegram_proxy.py
+- [[._sanitize_reason()]] - code - gateway/proxy/telegram_proxy.py
 - [[._send_collaborator_safe_info_response()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_disclosure()]] - code - gateway/proxy/telegram_proxy.py
 - [[._send_telegram_text()]] - code - gateway/proxy/telegram_proxy.py
-- [[._strip_json_fence()]] - code - gateway/proxy/telegram_proxy.py
 - [[._teams_config()]] - code - gateway/proxy/telegram_proxy.py
 - [[._trigger_web_fetch_approval()]] - code - gateway/proxy/telegram_proxy.py
 - [[.get_stats()_9]] - code - gateway/proxy/telegram_proxy.py
-- [[.test_url_encoded_payload_normalized()]] - code - gateway/tests/test_adversarial_injection.py
-- [[.test_zero_width_space_stripped()]] - code - gateway/tests/test_adversarial_injection.py
 - [[Allow conceptual securityprocess questions that don't request executiondata ac]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Best-effort Telegram sender with bounded retries.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Best-effort check to avoid treating local file names as egress domains.]] - rationale - gateway/proxy/telegram_proxy.py
@@ -139,6 +140,7 @@ members: 147
 - [[Persist blocked inbound messages for admin review.          Also records the blo]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Proxies Telegram Bot API calls through the security pipeline.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Queue an interactive egress approval when raw web_fetch JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Resolve effective collaboration mode for a user.          Resolution order]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Resolve owner target from pending-request username aliases (e.g., approve ana).]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Resolve target by id, static alias, or pending username alias.          Resoluti]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Return TeamsConfig from app_state if available.]] - rationale - gateway/proxy/telegram_proxy.py
@@ -149,8 +151,10 @@ members: 147
 - [[Return True when ``text`` is a bare liveness-check phrase.          Strips a lea]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Return list of ProjectConfig objects for this user, or empty list.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Scan inbound messages from getUpdates for security threats.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send a user-friendly notification when a message is blocked.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[Send tailored safe informational response for collaborator conceptual query.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Strip optional markdown json fences around model output.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send the one-time collaborator disclosure notice.          Picks the appropriate]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Strip internal paths and module names from block reasons before user display.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[TelegramAPIProxy]] - code - gateway/proxy/telegram_proxy.py
 - [[Validate normalized domain labels to avoid malformed allowlist entries.]] - rationale - gateway/proxy/telegram_proxy.py
 - [[normalize_input()]] - code - gateway/security/input_normalizer.py
@@ -164,55 +168,63 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 51 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 33 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 48 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 33 edges to [[_COMMUNITY_MCP Policy Engine]]
 - 18 edges to [[_COMMUNITY_Group Workspace Isolation]]
-- 14 edges to [[_COMMUNITY_HTTP Forwarder]]
 - 13 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 13 edges to [[_COMMUNITY_Bot Skill Config]]
 - 11 edges to [[_COMMUNITY_CHEATSHEET]]
 - 11 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 8 edges to [[_COMMUNITY_Collaborator Response Templates]]
 - 8 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 6 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 5 edges to [[_COMMUNITY_Group RBAC Roles]]
-- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 4 edges to [[_COMMUNITY_PII Config & Test Fixtures]]
 - 4 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 3 edges to [[_COMMUNITY_docsproject]]
+- 2 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
 - 2 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_docsvault]]
+- 2 edges to [[_COMMUNITY_Setup Docs]]
 - 2 edges to [[_COMMUNITY_Gateway Security Module]]
 - 2 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
-- 2 edges to [[_COMMUNITY_Planning Docs]]
-- 2 edges to [[_COMMUNITY_Audit Export Pipeline]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_docsREADME]]
-- 1 edge to [[_COMMUNITY_URLDomain Validation Tests]]
+- 1 edge to [[_COMMUNITY_Competitive Intel Store]]
+- 1 edge to [[_COMMUNITY_Auth & Exception Types]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_docsvault]]
 - 1 edge to [[_COMMUNITY_IEC 62443 Scorecard]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
 - 1 edge to [[_COMMUNITY_Security Docs]]
 - 1 edge to [[_COMMUNITY_docsproject]]
 - 1 edge to [[_COMMUNITY_docspapers]]
 - 1 edge to [[_COMMUNITY_skillsopenclaw]]
-- 1 edge to [[_COMMUNITY_scriptssync-cve-registry.py]]
+- 1 edge to [[_COMMUNITY_docstesting]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_HTTP Forwarder]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
 - 1 edge to [[_COMMUNITY_docsvault]]
 - 1 edge to [[_COMMUNITY_SECURITY]]
 - 1 edge to [[_COMMUNITY_Gateway Proxy Layer]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Planning Docs]]
+- 1 edge to [[_COMMUNITY_docsredteam]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
 - 1 edge to [[_COMMUNITY_skillsopenclaw]]
 - 1 edge to [[_COMMUNITY_Enhanced Approval Queue]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_docsvault]]
+- 1 edge to [[_COMMUNITY_Planning Docs]]
+- 1 edge to [[_COMMUNITY_MCP Proxy Config]]
+- 1 edge to [[_COMMUNITY_Audit Export Pipeline]]
 
 ## Top bridge nodes
-- [[TelegramAPIProxy]] - degree 244, connects to 39 communities
-- [[normalize_input()]] - degree 79, connects to 8 communities
+- [[TelegramAPIProxy]] - degree 244, connects to 45 communities
+- [[normalize_input()]] - degree 79, connects to 10 communities
 - [[._filter_inbound_updates()]] - degree 85, connects to 7 communities
-- [[._send_telegram_text()]] - degree 11, connects to 3 communities
 - [[slack_proxy.py]] - degree 4, connects to 3 communities
+- [[._send_telegram_text()]] - degree 11, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Security Docs"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Security_Docs
 ---
 
 # Verify that the kill switch mechanism works without actually killing.          A
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.verify_killswitch()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Security_Docs

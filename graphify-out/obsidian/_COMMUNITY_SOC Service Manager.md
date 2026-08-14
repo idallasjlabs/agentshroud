@@ -1,17 +1,19 @@
 ---
 type: community
-members: 109
+members: 118
 ---
 
 # SOC Service Manager
 
-**Members:** 109 nodes
+**Members:** 118 nodes
 
 ## Members
 - [[.test_check_bot_updates_npm_failure_and_exec_failure()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_check_bot_updates_npm_missing_binary()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_check_bot_updates_update_available()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_check_openclaw_updates_alias()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_check_updates_git_failure_returns_error()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_check_updates_reports_behind()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_create_purges_expired_tokens()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_create_returns_registered_prefixed_token()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_custom_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
@@ -49,10 +51,10 @@ members: 109
 - [[.test_report_with_healthy_runtime()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_report_with_unhealthy_runtime_falls_back_to_docker()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_requires_confirmation()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_resolves_hermes_to_the_real_renamed_container()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_resolves_openclaw_to_the_convention_default()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_restart_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_restart_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_rollback_agentshroud_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_rollback_agentshroud_success()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_rollback_bot()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_rollback_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_set_mode_cancels_previous_revert_task()]] - code - gateway/tests/test_web_api_coverage.py
@@ -69,27 +71,34 @@ members: 109
 - [[.test_stop_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_stop_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_streams_logs_then_cleans_up_on_disconnect()]] - code - gateway/tests/test_web_api_coverage.py
-- [[.test_unknown_bot_id_falls_back_to_the_naive_guess()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_update_config_rejects_unknown_keys()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_update_config_round_trips_bots_key()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_update_config_without_existing_file_skips_backup()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_update_config_writes_yaml_and_backs_up()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_history_git_failure_returns_empty()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_history_returns_commits()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_request_defaults()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_upgrade_bot_failure_reports_error_step()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_upgrade_bot_success()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_upgrade_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_pull_failure_triggers_rollback()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_skip_tests_skips_test_step()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_success_with_tests_and_security_review()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_test_failure_triggers_rollback()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_valid_modes_constant()]] - code - gateway/tests/test_observatory_mode.py
 - [[.test_valid_token_authenticates()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_validate_is_single_use()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_validate_rejects_empty_and_unprefixed()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_validate_rejects_expired_token()]] - code - gateway/tests/test_web_api_coverage.py
 - [[.test_validate_rejects_unknown_token()]] - code - gateway/tests/test_web_api_coverage.py
-- [[HTTPAuthorizationCredentials_1]] - code - gateway/web/api.py
+- [[Build a subprocess.run double that simulates the upgrade git flow.]] - rationale - gateway/tests/test_web_api_coverage.py
 - [[KillSwitchAction]] - code - gateway/web/api.py
 - [[ModeRequest]] - code - gateway/web/api.py
 - [[Require valid Bearer token for all management endpoints.]] - rationale - gateway/web/api.py
 - [[Restore AGENTSHROUD_MODE, revert task, and WS token registry per test.]] - rationale - gateway/tests/test_web_api_coverage.py
 - [[SCRUM-107 the `bots` top-level key must be allowed through PUT         apicon]] - rationale - gateway/tests/test_web_api_coverage.py
 - [[SimpleNamespace_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestAgentshroudUpdates]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestBotUpdates]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestConfig_1]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestDefaultBotDockerfile]] - code - gateway/tests/test_web_api_coverage.py
@@ -102,7 +111,6 @@ members: 109
 - [[TestOpenclawAliases]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestRebuild]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestRequireAuth]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestResolveBotContainer]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestSecurityReport]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestServiceControl]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestStatus_1]] - code - gateway/tests/test_web_api_coverage.py
@@ -112,11 +120,12 @@ members: 109
 - [[_container()]] - code - gateway/tests/test_web_api_coverage.py
 - [[_engine()]] - code - gateway/tests/test_web_api_coverage.py
 - [[_fake_ws()]] - code - gateway/tests/test_web_api_coverage.py
+- [[_gitless_run()]] - code - gateway/tests/test_web_api_coverage.py
 - [[_module_state_guard()]] - code - gateway/tests/test_web_api_coverage.py
-- [[_resolve_bot_container must use BotConfig.resolved_container_name, not     a har]] - rationale - gateway/tests/test_web_api_coverage.py
 - [[client()_20]] - code - gateway/tests/test_web_api_coverage.py
 - [[require_auth()_1]] - code - gateway/web/api.py
 - [[test_web_api_coverage.py]] - code - gateway/tests/test_web_api_coverage.py
+- [[webapi.py (POST apiintelreports)]] - code - gateway/web/api.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -126,32 +135,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_docsproject]]
-- 11 edges to [[_COMMUNITY_Security Docs]]
-- 9 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 8 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 5 edges to [[_COMMUNITY_skillsopenclaw]]
+- 17 edges to [[_COMMUNITY_Security Docs]]
+- 14 edges to [[_COMMUNITY_docsproject]]
+- 8 edges to [[_COMMUNITY_Bot Skill Config]]
 - 5 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_docsvault]]
-- 2 edges to [[_COMMUNITY_Architecture Docs]]
-- 1 edge to [[_COMMUNITY_docsvault]]
-- 1 edge to [[_COMMUNITY_Telegram Proxy Test Suite]]
-- 1 edge to [[_COMMUNITY_scriptssync-cve-registry.py]]
-- 1 edge to [[_COMMUNITY_SOC RBAC & Auth]]
-- 1 edge to [[_COMMUNITY_Security Docs]]
-- 1 edge to [[_COMMUNITY_Bot Skill Config]]
-- 1 edge to [[_COMMUNITY_Security Docs]]
-- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 3 edges to [[_COMMUNITY_Competitive Intel Store]]
+- 3 edges to [[_COMMUNITY_scriptssync-cve-registry.py]]
+- 2 edges to [[_COMMUNITY_skillsopenclaw]]
+- 2 edges to [[_COMMUNITY_Security Docs]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_docsvault]]
-- 1 edge to [[_COMMUNITY_docsvault]]
+- 1 edge to [[_COMMUNITY_MCP Proxy Config]]
+- 1 edge to [[_COMMUNITY_skillsopenclaw]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_Auth & Exception Types]]
+- 1 edge to [[_COMMUNITY_Planning Docs]]
 - 1 edge to [[_COMMUNITY_scriptsmigrate-cve-registry-ghsa.py]]
 
 ## Top bridge nodes
 - [[require_auth()_1]] - degree 16, connects to 11 communities
-- [[ModeRequest]] - degree 47, connects to 8 communities
-- [[UpdateRequest]] - degree 29, connects to 5 communities
-- [[KillSwitchAction]] - degree 27, connects to 5 communities
-- [[TestModeRequestModel]] - degree 9, connects to 5 communities
+- [[ModeRequest]] - degree 47, connects to 5 communities
+- [[UpdateRequest]] - degree 29, connects to 4 communities
+- [[webapi.py (POST apiintelreports)]] - degree 5, connects to 4 communities
+- [[KillSwitchAction]] - degree 27, connects to 3 communities

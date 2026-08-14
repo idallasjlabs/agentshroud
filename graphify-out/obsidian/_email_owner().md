@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "CONTRIBUTING.md"
+community: "Bot Skill Config"
 location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CONTRIBUTINGmd
+  - community/Bot_Skill_Config
 ---
 
 # _email_owner()
@@ -16,4 +16,4 @@ tags:
 - [[gateway POST emailsend-owner endpoint]] - `calls` [EXTRACTED]
 - [[start.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CONTRIBUTINGmd
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

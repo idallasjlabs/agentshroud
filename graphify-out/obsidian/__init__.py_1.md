@@ -1,14 +1,14 @@
 ---
-source_file: "gateway/__init__.py"
+source_file: "chatbot/__init__.py"
 type: "code"
-community: "Community 1704"
+community: "docs/project"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1704
+  - community/docs/project
 ---
 
 # __init__.py
 
-#graphify/code #graphify/EXTRACTED #community/Community_1704
+#graphify/code #graphify/EXTRACTED #community/docs/project

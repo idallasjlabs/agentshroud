@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/requirements.txt"
 type: "code"
-community: ".github/workflows"
+community: "AGENTS.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/github/workflows
+  - community/AGENTSmd
 ---
 
 # gateway/requirements.txt Dependency File
@@ -16,4 +16,4 @@ tags:
 - [[Release Workflow_1]] - `references` [EXTRACTED]
 - [[cryptography=50.0.0 Security Floor]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/github/workflows
+#graphify/code #graphify/EXTRACTED #community/AGENTSmd

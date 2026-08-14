@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Approval & FastAPI Ingest"
 location: "L34"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Approval__FastAPI_Ingest
 ---
 
 # WSEvent
@@ -20,4 +20,4 @@ tags:
 - [[WSEventType]] - `uses` [INFERRED]
 - [[_coerce_to_ws_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest

@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_collaborator_incremental_exfil_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Chunked extraction prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_plain_no_reply_token_in_multiline_markdown_fence_is_rewritten()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Multiline fenced NO_REPLY token should still normalize.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,8 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_PII Config & Test Fixtures]]
-- 1 edge to [[_COMMUNITY_Group RBAC Roles]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[.test_collaborator_incremental_exfil_request_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities
+- [[.test_plain_no_reply_token_in_multiline_markdown_fence_is_rewritten()]] - degree 4, connects to 1 community

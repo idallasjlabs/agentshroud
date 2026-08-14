@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
 type: "document"
-community: "docs/agentshroud-knowledge.md"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/agentshroud-knowledgemd
+  - community/skills/openclaw
 ---
 
 # i-ux: UX Information Architecture (referenced)
@@ -17,4 +17,4 @@ tags:
 - [[i-tw SKILL (Technical Writing)]] - `references` [EXTRACTED]
 - [[i-ui UI Expert]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/agentshroud-knowledgemd
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

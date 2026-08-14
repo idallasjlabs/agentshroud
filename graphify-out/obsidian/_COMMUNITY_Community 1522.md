@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_hermes_dockerfile_installs_xxd()]] - code - gateway/tests/test_config_validation.py
-- [[Hermes Dockerfile must install xxd — terminal_tool hex dumps fail without it.]] - rationale - gateway/tests/test_config_validation.py
+- [[.test_risk_classification()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test response risk level classification.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_Bot CVE Scorecard]]
 
 ## Top bridge nodes
-- [[.test_hermes_dockerfile_installs_xxd()]] - degree 2, connects to 1 community
+- [[.test_risk_classification()]] - degree 2, connects to 1 community

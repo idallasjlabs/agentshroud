@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "docs/testing"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/docs/testing
 ---
 
 # bot_config.py
@@ -15,4 +15,4 @@ tags:
 - [[BotConfig]] - `contains` [EXTRACTED]
 - [[config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/docs/testing

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "docs/vault"
+community: "Planning Docs"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Planning_Docs
 ---
 
 # _tcp_check()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

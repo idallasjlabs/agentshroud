@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Voice Gateway Tests"
+community: "Enhanced Approval Queue"
 location: "L931"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Enhanced_Approval_Queue
 ---
 
 # get_collaborator_activity()
@@ -20,4 +20,4 @@ tags:
 - [[router.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue

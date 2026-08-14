@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Voice Gateway Tests"
+community: "Planning Docs"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Planning_Docs
 ---
 
 # from_audit_chain_entry()
@@ -20,4 +20,4 @@ tags:
 - [[collect_recent_events()]] - `calls` [EXTRACTED]
 - [[event_adapter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

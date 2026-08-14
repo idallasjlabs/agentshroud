@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "Bot Skill Config"
+community: "docs/project"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/project
 ---
 
 # domain_matches()
@@ -20,4 +20,4 @@ tags:
 - [[citation_verifier.py]] - `imports` [EXTRACTED]
 - [[egress_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/docs/project

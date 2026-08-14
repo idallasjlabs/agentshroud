@@ -35,7 +35,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 5 edges to [[_COMMUNITY_Auth & Exception Types]]
 
 ## Top bridge nodes
 - [[TestLogSanitizer]] - degree 17, connects to 1 community

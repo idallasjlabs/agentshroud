@@ -1,11 +1,11 @@
 ---
 type: community
-members: 101
+members: 100
 ---
 
 # Egress Domain Allowlist
 
-**Members:** 101 nodes
+**Members:** 100 nodes
 
 ## Members
 - [[.__init__()_91]] - code - gateway/security/mcp_policy.py
@@ -68,7 +68,6 @@ members: 101
 - [[The engine wired into MCPProxy blocks a denied call before dispatch —     the fa]] - rationale - gateway/tests/test_mcp_policy.py
 - [[The result of evaluating a single MCP tool call against the policy.]] - rationale - gateway/security/mcp_policy.py
 - [[The synthesised default, fed to the engine, DENIES an unknown server.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[The three terminal policy outcomes for an MCP tool call.]] - rationale - gateway/security/mcp_policy.py
 - [[True only for a terminal ALLOW.          REQUIRE_APPROVAL is not allowed on it]] - rationale - gateway/security/mcp_policy.py
 - [[When an operator explicitly opts into default-allow, a non-allowlisted     serve]] - rationale - gateway/tests/test_mcp_policy.py
 - [[_FakeApprovalQueue]] - code - gateway/tests/test_mcp_policy.py
@@ -118,23 +117,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
+- 21 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
 - 16 edges to [[_COMMUNITY_PromptGuard Encoding Detection]]
 - 14 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
-- 8 edges to [[_COMMUNITY_scriptssync-cve-registry.py]]
+- 9 edges to [[_COMMUNITY_scriptssync-cve-registry.py]]
 - 6 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 5 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
-- 4 edges to [[_COMMUNITY_Slack API Proxy]]
-- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Planning Docs]]
+- 2 edges to [[_COMMUNITY_MCP Proxy Config]]
 - 2 edges to [[_COMMUNITY_Custom Skills]]
 - 1 edge to [[_COMMUNITY_Bot Skill Config]]
-- 1 edge to [[_COMMUNITY_SOC Dashboard]]
+- 1 edge to [[_COMMUNITY_Community 1513]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Enforce-Mode Auto-Revert]]
+- 1 edge to [[_COMMUNITY_Gateway Security Module]]
 
 ## Top bridge nodes
-- [[test_mcp_policy.py]] - degree 46, connects to 5 communities
-- [[MCPPolicyEngine_1]] - degree 39, connects to 5 communities
-- [[_FakeApprovalQueue]] - degree 20, connects to 5 communities
-- [[MCPPolicyConfig_1]] - degree 14, connects to 5 communities
-- [[MonkeyPatch]] - degree 13, connects to 5 communities
+- [[test_mcp_policy.py]] - degree 46, connects to 4 communities
+- [[MCPPolicyEngine_1]] - degree 39, connects to 4 communities
+- [[_FakeApprovalQueue]] - degree 20, connects to 4 communities
+- [[MCPPolicyAction]] - degree 15, connects to 4 communities
+- [[MCPPolicyConfig_1]] - degree 14, connects to 4 communities

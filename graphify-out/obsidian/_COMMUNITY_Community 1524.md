@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_hermes_dashboard_insecure_optin_is_loopback_bounded()]] - code - gateway/tests/test_config_validation.py
-- [[HERMES_DASHBOARD_INSECURE may only be enabled with a loopback-only host publish.]] - rationale - gateway/tests/test_config_validation.py
+- [[.test_collaborator_llm_timeout_error_is_normalized_to_protected_unavailable_form()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Form payload timeout rewrites should also map to protected unavailable notice fo]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[.test_hermes_dashboard_insecure_optin_is_loopback_bounded()]] - degree 2, connects to 1 community
+- [[.test_collaborator_llm_timeout_error_is_normalized_to_protected_unavailable_form()]] - degree 4, connects to 1 community

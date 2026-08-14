@@ -122,16 +122,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 22 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
 - 20 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 16 edges to [[_COMMUNITY_Competitive Intel Store]]
+- 6 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
 - 4 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
-- 2 edges to [[_COMMUNITY_Slack API Proxy]]
-- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 2 edges to [[_COMMUNITY_Planning Docs]]
+- 1 edge to [[_COMMUNITY_SOC RBAC & Auth]]
 - 1 edge to [[_COMMUNITY_Planning Docs]]
 
 ## Top bridge nodes
+- [[AuditExporter]] - degree 42, connects to 3 communities
 - [[AuditStore_1]] - degree 34, connects to 3 communities
-- [[AuditExporter]] - degree 42, connects to 2 communities
-- [[AuditExportConfig_1]] - degree 33, connects to 2 communities
+- [[AuditExportConfig_1]] - degree 33, connects to 3 communities
 - [[audit_export.py]] - degree 6, connects to 1 community
 - [[.store()]] - degree 3, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "Tool Chain Analyzer"
+community: "Security Docs"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain_Analyzer
+  - community/Security_Docs
 ---
 
 # _frame()
@@ -17,4 +17,4 @@ tags:
 - [[Build one Docker multiplexed-log frame (stdout).]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

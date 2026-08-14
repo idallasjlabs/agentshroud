@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Security Docs"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Security_Docs
 ---
 
 # _fake_stats()
@@ -23,4 +23,4 @@ tags:
 - [[.test_system_resource_memory_anomaly()]] - `calls` [EXTRACTED]
 - [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

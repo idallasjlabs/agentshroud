@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Group Workspace Isolation"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Group_Workspace_Isolation
 ---
 
 # _load_overrides()
@@ -20,4 +20,4 @@ tags:
 - [[persist_group_member_remove()]] - `calls` [EXTRACTED]
 - [[persist_user_collab_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation

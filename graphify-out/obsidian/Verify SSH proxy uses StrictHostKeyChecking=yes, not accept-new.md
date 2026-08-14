@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "scripts/sync-cve-registry.py"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/scripts/sync-cve-registrypy
 ---
 
 # Verify SSH proxy uses StrictHostKeyChecking=yes, not accept-new
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHStrictHostKeyChecking]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

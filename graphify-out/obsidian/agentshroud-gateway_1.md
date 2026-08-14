@@ -23,7 +23,7 @@ tags:
 - [[Resource Limits_1]] - `contains` [EXTRACTED]
 - [[Secrets_3]] - `contains` [EXTRACTED]
 - [[Security Hardening_4]] - `contains` [EXTRACTED]
-- [[Summary_24]] - `contains` [EXTRACTED]
+- [[Summary_43]] - `contains` [EXTRACTED]
 - [[Volumes_2]] - `contains` [EXTRACTED]
 - [[agentshroud-gateway]] - `contains` [EXTRACTED]
 - [[tmpfs Mounts_1]] - `contains` [EXTRACTED]

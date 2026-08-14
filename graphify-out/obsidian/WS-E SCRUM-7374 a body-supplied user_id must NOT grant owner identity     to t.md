@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "SOC Dashboard"
+community: "Slack API Proxy"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Slack_API_Proxy
 ---
 
 # WS-E SCRUM-73/74: a body-supplied user_id must NOT grant owner identity     to t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOwnerSpoofingViaForwardBody]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy

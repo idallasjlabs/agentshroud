@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "Audit Export Pipeline"
+community: "Gateway Test Suite"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Gateway_Test_Suite
 ---
 
 # _make_segment()
@@ -20,4 +20,4 @@ tags:
 - [[ContextSegment]] - `calls` [EXTRACTED]
 - [[test_context_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

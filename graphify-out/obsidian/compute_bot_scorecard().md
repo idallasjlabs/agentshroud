@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "L2617"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # compute_bot_scorecard()
@@ -34,4 +34,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

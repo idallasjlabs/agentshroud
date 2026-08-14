@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Slack API Proxy"
+community: "docs/reference"
 location: "L775"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/docs/reference
 ---
 
 # _default_mtime()
@@ -18,4 +18,4 @@ tags:
 - [[test_config_hot_reload.py]] - `imports` [EXTRACTED]
 - [[test_default_mtime_reads_real_file_and_handles_missing()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/docs/reference

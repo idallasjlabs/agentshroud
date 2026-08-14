@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "Tool Chain Analyzer"
+community: "Security Docs"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain_Analyzer
+  - community/Security_Docs
 ---
 
 # _patch_http_connection()
@@ -23,4 +23,4 @@ tags:
 - [[Replace http.client.HTTPConnection so the in-function _UnixHTTP subclass     exe]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

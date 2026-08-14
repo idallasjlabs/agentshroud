@@ -1,11 +1,11 @@
 ---
 type: community
-members: 355
+members: 367
 ---
 
 # PII Config & Test Fixtures
 
-**Members:** 355 nodes
+**Members:** 367 nodes
 
 ## Members
 - [[.__init__()_185]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -27,7 +27,6 @@ members: 355
 - [[.test_collaborator_approval_queue_probe_gets_safe_info()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_approval_token_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_archive_exfil_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_auth_question_about_own_keys_gets_safe_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_aws_credentials_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_blocked_tools_question_gets_safe_info_not_blocked()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_command_blocking_question_gets_safe_info_not_denial()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -39,6 +38,7 @@ members: 355
 - [[.test_collaborator_encoded_exfil_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_env_secret_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_env_secret_probe_returns_protect_secret_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_execution_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_file_metadata_question_gets_safe_info()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_file_query_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_guardrail_mod_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -48,8 +48,10 @@ members: 355
 - [[.test_collaborator_high_risk_approval_workflow_question_gets_safe_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_hypothetical_execution_question_gets_safe_info()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_identity_enumeration_query_gets_privacy_safe_info()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_incremental_exfil_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_internal_file_content_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_internal_network_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_internal_network_probe_returns_protect_egress_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_log_access_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_memory_access_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_metadata_endpoint_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -80,6 +82,7 @@ members: 355
 - [[.test_collaborator_status_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_system_prompt_probe_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_tool_trace_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_collaborator_unicode_bypass_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_unquoted_tool_payload_text_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_unsafe_scheme_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_collaborator_web_access_imperative_with_url_queues_owner_approval()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -97,7 +100,6 @@ members: 355
 - [[.test_egress_callback_applies_queue_decision()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_egress_callback_from_collaborator_is_rejected()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_egress_callback_non_dict_result_is_handled()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_forward_file_download_aborts_at_size_limit()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_healthcheck_local_notice_dedupe_handles_missing_update_id()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_healthcheck_local_notice_dedupe_with_missing_update_id_same_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_healthcheck_local_notice_is_deduped_per_update()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -106,6 +108,7 @@ members: 355
 - [[.test_healthcheck_with_leading_whitespace_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_healthcheck_with_mention_and_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_healthcheck_with_trailing_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_healthcheck_with_zero_width_char_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_healthcheck_with_zero_width_mention_and_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_healthcheck_word_with_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_model_status_command_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -145,7 +148,9 @@ members: 355
 - [[.test_owner_bare_approve_with_no_pending_falls_through_to_agent()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_owner_bare_deny_with_no_pending_falls_through_to_agent()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_owner_collabs_command_shows_named_roster()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_owner_deny_ambiguous_multiple_pending_shows_usage()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_owner_deny_command_denies_pending_user()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_owner_deny_command_requires_pending_request()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_owner_deny_command_resolves_pending_username_alias()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_owner_deny_without_target_auto_selects_single_pending()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_owner_healthcheck_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -182,6 +187,7 @@ members: 355
 - [[.test_self_diagnostic_with_punctuation_is_handled_locally_for_collaborator()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_send_telegram_text_honors_retry_after_on_http_429()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_start_resets_multi_turn_tracker_for_collaborator()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.test_unapproved_collaborator_slash_command_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_unapproved_collaborator_slash_command_with_mention_and_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_unknown_user_message_triggers_owner_approval_workflow()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[.test_unknown_user_repeated_start_still_gets_pending_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -197,10 +203,12 @@ members: 355
 - [[Blocked collaborator commands should be retained in quarantine store.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Blocked env-secret probes should return deterministic Protect secret wording.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Blocked file queries should return a deterministic Protect notice without intern]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Blocked internal-network probes should return deterministic Protect egress wordi]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Blocked secret probes should return deterministic Protect secret wording.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Bot mention + punctuation should still route to local healthcheck handler.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Build a minimal Telegram getUpdates-style update object.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Bypassdisable-policy prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Chunked extraction prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Cloud metadata endpoint probes should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Collaborator healthcheck should be handled by gateway, not model.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Collaborator help should be handled locally with safe scoped commands.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
@@ -218,6 +226,7 @@ members: 355
 - [[Collaborator callback attempts must not approvedeny egress requests.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Collaborator command-policy questions should get informative guidance, not hard]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Collaborator conceptual questions should receive safe informative local response]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Collaborator direct execution prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Collaborator direct file-access prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Collaborator messages must not queue preflight approval even with valid https ta]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Collaborator messages with ftpfile+domain tokens must not queue preflight appro]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
@@ -232,7 +241,6 @@ members: 355
 - [[Collaborator toolcommand inventory probes should return safe local guidance.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Collaborator unquoted key payload should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Collaborator web requests should return deterministic pending-approval wording.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Conceptual auth workflow questions should be answered safely (not hard-blocked).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Conceptual egress-policy questions should get safe info, not hard block.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Conceptual file-purpose questions should get safe info without file data access.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Conceptual policy questions that mention a URL should not be treated as fetch re]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
@@ -289,8 +297,10 @@ members: 355
 - [[Owner collabs should show known collaborator labels and IDs.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Owner deny username should resolve pending username and deny access.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Owner deny should deny pending collaborator and notify both parties.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner deny should fail closed when target has no pending request.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Owner deny with no target and NO pending collaborator request         must not]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Owner deny with one pending request should deny that request.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Owner deny without target, with 2+ pending collaborator         requests, is ge]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Owner healthcheck should be handled by gateway, not model.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Owner help should be handled locally and include admin approval commands.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Owner pending should return deterministic snapshot of pendingcollaboratorrevo]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
@@ -338,6 +348,8 @@ members: 355
 - [[Unicode fullwidth healthcheck command should still route to local handler.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Unicode fullwidth self-diagnostic command should still be local-handled.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Unicode zero-width obfuscation should not bypass blocked command enforcement.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unicodeinvisible-character bypass prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unknown collaborator slash commands should be blocked by default.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Unknown collaborator slash commands should stay blocked with mentionpunctuation]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Unknown non-owner user should trigger pending approval workflow and not forward.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Unknown non-owner users should still be tracked at gateway level.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
@@ -356,8 +368,8 @@ members: 355
 - [[Whitespace-split URL tokens should not queue malformed preflight approvals.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Zero-width + mentionpunctuation blocked command variants should still be quaran]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Zero-width + mentionpunctuation healthcheck variants should still route locally]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Zero-width obfuscation should not bypass local healthcheck handling.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Zero-width obfuscation should not bypass self-diagnose local handling.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_forward_file_download must raise when streamed bytes exceed limit (CVE-2026-320]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[_make_update()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[_send_telegram_text should honor Telegram retry_after when rate limited.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[proxy_request should increment inbound getUpdates stats when messages pass throu]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
@@ -372,7 +384,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 185 edges to [[_COMMUNITY_Group RBAC Roles]]
+- 192 edges to [[_COMMUNITY_Group RBAC Roles]]
 - 37 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 21 edges to [[_COMMUNITY_docsproject]]
 - 20 edges to [[_COMMUNITY_Bot Skill Config]]
@@ -383,22 +395,14 @@ SORT file.name ASC
 - 10 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 10 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 10 edges to [[_COMMUNITY_IEC 62443 Scorecard]]
-- 5 edges to [[_COMMUNITY_CHANGELOG]]
-- 5 edges to [[_COMMUNITY_chatbot__init__.py]]
-- 5 edges to [[_COMMUNITY_Security Docs]]
-- 5 edges to [[_COMMUNITY_chatbotrequirements.txt]]
-- 5 edges to [[_COMMUNITY_gatewaycli]]
-- 5 edges to [[_COMMUNITY_docsapi]]
-- 5 edges to [[_COMMUNITY_Custom Skills]]
-- 5 edges to [[_COMMUNITY_Approval Queue]]
-- 5 edges to [[_COMMUNITY_Architecture Docs]]
+- 5 edges to [[_COMMUNITY_Bot Skill Config]]
+- 5 edges to [[_COMMUNITY_Bot Skill Config]]
 - 4 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
 - 4 edges to [[_COMMUNITY_Cross-Bot Trust Ledger]]
-- 1 edge to [[_COMMUNITY_Tool Chain Analyzer]]
 
 ## Top bridge nodes
-- [[TelegramAPIProxy_2]] - degree 236, connects to 22 communities
-- [[FakeRBAC_1]] - degree 221, connects to 21 communities
-- [[PassthroughPipeline_1]] - degree 208, connects to 21 communities
-- [[_make_update()_2]] - degree 213, connects to 18 communities
-- [[TestInboundPipelineOnGetUpdates]] - degree 204, connects to 17 communities
+- [[TelegramAPIProxy_2]] - degree 236, connects to 15 communities
+- [[FakeRBAC_1]] - degree 221, connects to 14 communities
+- [[PassthroughPipeline_1]] - degree 208, connects to 14 communities
+- [[_make_update()_2]] - degree 213, connects to 11 communities
+- [[TestInboundPipelineOnGetUpdates]] - degree 204, connects to 10 communities

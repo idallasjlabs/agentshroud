@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Slack API Proxy"
+community: "docs/vault"
 location: "L61"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Slack_API_Proxy
+  - community/docs/vault
 ---
 
 # _DropInvalidHTTPRequestFilter
@@ -28,4 +28,4 @@ tags:
 - [[lifespan.py]] - `contains` [EXTRACTED]
 - [[test_config_validation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Slack_API_Proxy
+#graphify/code #graphify/INFERRED #community/docs/vault

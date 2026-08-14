@@ -2,7 +2,7 @@
 source_file: "CLAUDE.md"
 type: "document"
 community: "Setup Docs"
-location: "L375"
+location: "L385"
 tags:
   - graphify/document
   - graphify/EXTRACTED

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "docs/agentshroud-knowledge.md"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/agentshroud-knowledgemd
+  - community/skills/openclaw
 ---
 
 # i-ti SKILL (Diagram Generation)
@@ -19,4 +19,4 @@ tags:
 - [[i-ui UI Expert]] - `references` [EXTRACTED]
 - [[i-ux UX Information Architecture (referenced)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/agentshroud-knowledgemd
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

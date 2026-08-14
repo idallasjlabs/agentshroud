@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/init-openclaw-config.sh"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/docs/vault
 ---
 
 # init-openclaw-config.sh
@@ -25,4 +25,4 @@ tags:
 - [[patch-ws-proxy.sh]] - `calls` [EXTRACTED]
 - [[start-agentshroud.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/docs/vault

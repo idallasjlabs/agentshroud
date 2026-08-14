@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "SOC RBAC & Auth"
+community: "MCP Proxy Config"
 location: "L272"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/MCP_Proxy_Config
 ---
 
 # Verify the integrity of the retained hash-chain window.          When the bounde
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.verify_chain()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

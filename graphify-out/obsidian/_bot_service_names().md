@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "docs/project"
+community: "scripts/sync-cve-registry.py"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/scripts/sync-cve-registrypy
 ---
 
 # _bot_service_names()
@@ -23,4 +23,4 @@ tags:
 - [[upgrade_agentshroud()]] - `calls` [EXTRACTED]
 - [[ws_logs()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/project
+#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

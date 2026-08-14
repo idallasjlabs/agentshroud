@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/patch_telegram_do_request.py"
 type: "code"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # _Instr
@@ -16,4 +16,4 @@ tags:
 - [[cls]] - `inherits` [EXTRACTED]
 - [[patch_telegram_do_request.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/docs/vault

@@ -27,12 +27,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_PromptGuard Encoding Detection]]
-- 2 edges to [[_COMMUNITY_Enforce-Mode Auto-Revert]]
+- 6 edges to [[_COMMUNITY_PromptGuard Encoding Detection]]
+- 3 edges to [[_COMMUNITY_Collaborator Prompt Safety]]
+- 3 edges to [[_COMMUNITY_SOC Dashboard]]
 - 1 edge to [[_COMMUNITY_Setup Docs]]
-- 1 edge to [[_COMMUNITY_Collaborator Prompt Safety]]
-- 1 edge to [[_COMMUNITY_docsoperations]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[TestAuditTrail]] - degree 23, connects to 6 communities
+- [[TestAuditTrail]] - degree 23, connects to 5 communities

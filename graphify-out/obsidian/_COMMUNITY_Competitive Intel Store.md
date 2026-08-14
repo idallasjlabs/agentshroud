@@ -1,28 +1,93 @@
 ---
 type: community
-members: 95
+members: 190
 ---
 
 # Competitive Intel Store
 
-**Members:** 95 nodes
+**Members:** 190 nodes
 
 ## Members
 - [[.body_not_empty()]] - code - gateway/ingest_api/models.py
+- [[.check_resource()]] - code - gateway/security/resource_guard.py
 - [[.content_not_empty()]] - code - gateway/ingest_api/models.py
 - [[.get_blob_key_id()]] - code - gateway/security/encrypted_store.py
+- [[.path_not_empty()]] - code - gateway/ingest_api/models.py
+- [[.query()]] - code - gateway/ingest_api/ledger.py
 - [[.subject_not_empty()]] - code - gateway/ingest_api/models.py
+- [[.test_status_response_model()]] - code - gateway/tests/test_enhanced_status.py
+- [[.test_status_response_monitor_mode()]] - code - gateway/tests/test_enhanced_status.py
+- [[.test_status_response_optional_fields()]] - code - gateway/tests/test_enhanced_status.py
+- [[.validate_base64()]] - code - gateway/ingest_api/models.py
 - [[.validate_default_url()]] - code - gateway/ingest_api/config.py
 - [[.validate_mode()]] - code - gateway/security/group_config.py
 - [[.validate_source()]] - code - gateway/ingest_api/models.py
 - [[.validate_targets()]] - code - gateway/ingest_api/config.py
 - [[Add security headers to all responses (defense-in-depth).      Also catches Pyth]] - rationale - gateway/ingest_api/main.py
+- [[Alias for Hermes Anthropic SDK's apiv1 preflight path.      Some Anthropic S]] - rationale - gateway/ingest_api/main.py
+- [[Alias for hermes v0.16.0+'s OpenAI client.      Hermes upgraded to v0.16.0 on 20]] - rationale - gateway/ingest_api/main.py
 - [[An empty share-sheet payload is rejected before it reaches the pipeline.]] - rationale - gateway/tests/test_security.py
+- [[Any_7]] - code - gateway/ingest_api/ledger.py
+- [[Approval modes for rules.]] - rationale - gateway/security/egress_approval.py
+- [[ApprovalDecision]] - code - gateway/ingest_api/models.py
+- [[ApprovalMode]] - code - gateway/security/egress_approval.py
+- [[BaseModel]] - code
+- [[Build a fake httpx.Response whose .json() returns body.]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[Catch-all error handler      Never leaks stack traces or internal details to cli]] - rationale - gateway/ingest_api/main.py
+- [[Check if resource usage is allowed for an agent.          Args             agen]] - rationale - gateway/security/resource_guard.py
+- [[EmailSendRequest]] - code - gateway/ingest_api/models.py
+- [[EmailSendResponse]] - code - gateway/ingest_api/models.py
+- [[Empty STT result no LLM call, state goes directly to idle.]] - rationale - gateway/tests/test_voice_gateway.py
 - [[Every content_type an iOS Shortcut can emit is accepted with source=shortcut.]] - rationale - gateway/tests/test_security.py
+- [[Exception]] - code
+- [[Exception_1]] - code - gateway/ingest_api/main.py
 - [[Extract the key_id from an encrypted blob without decrypting.]] - rationale - gateway/security/encrypted_store.py
+- [[ForwardError]] - code - gateway/ingest_api/router.py
 - [[ForwardRequest]] - code - gateway/ingest_api/models.py
+- [[ForwardResponse]] - code - gateway/ingest_api/models.py
+- [[Health check response with v0.8.0 security dashboard data]] - rationale - gateway/ingest_api/models.py
+- [[LedgerConfig_1]] - code - gateway/ingest_api/ledger.py
+- [[LedgerEntry]] - code - gateway/ingest_api/ledger.py
+- [[LedgerEntry_1]] - code - gateway/ingest_api/models.py
+- [[LedgerQueryResponse]] - code - gateway/ingest_api/ledger.py
+- [[LedgerQueryResponse_1]] - code - gateway/ingest_api/models.py
+- [[Log all incoming requests      Never logs request bodies (may contain PII).]] - rationale - gateway/ingest_api/main.py
+- [[MCP tool call interception endpoint.      Receives an MCP tool call, runs it thr]] - rationale - gateway/ingest_api/main.py
+- [[MCP tool result outbound audit endpoint.      Receives a tool result from the bo]] - rationale - gateway/ingest_api/main.py
+- [[MCPProxyRequest]] - code - gateway/ingest_api/main.py
+- [[MCPResultRequest]] - code - gateway/ingest_api/main.py
+- [[OpProxyRequest]] - code - gateway/ingest_api/main.py
+- [[Paginated ledger query results]] - rationale - gateway/ingest_api/models.py
+- [[PhishingURLDetected]] - code - gateway/security/browser_security.py
+- [[Proxy Anthropic API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
+- [[Query ledger entries with pagination and filters          Args             page]] - rationale - gateway/ingest_api/ledger.py
+- [[Raised when forwarding to agent fails]] - rationale - gateway/ingest_api/router.py
+- [[Raised when no valid routing target found]] - rationale - gateway/ingest_api/router.py
 - [[Reject request bodies larger than 1MB before parsing.      Checks Content-Length]] - rationale - gateway/ingest_api/main.py
+- [[Request_1]] - code - gateway/ingest_api/main.py
+- [[Request body for POST credentialsop-proxy.]] - rationale - gateway/ingest_api/main.py
+- [[Request body for POST mcpproxy — intercept a single MCP tool call.]] - rationale - gateway/ingest_api/main.py
+- [[Request body for POST mcpresult — submit a tool result for outbound audit.]] - rationale - gateway/ingest_api/main.py
+- [[Request to execute an SSH command]] - rationale - gateway/ingest_api/models.py
 - [[Request to forward content through the gateway      Received from iOS Shortcuts,]] - rationale - gateway/ingest_api/models.py
+- [[Request to send an email through the gateway (P3 channel ownership).      The b]] - rationale - gateway/ingest_api/models.py
+- [[Request to write file content to an allowlisted SSH host.      Unlike SSHExecReq]] - rationale - gateway/ingest_api/models.py
+- [[Resolve trusted effective identity and prevent owner spoofing via body.]] - rationale - gateway/ingest_api/main.py
+- [[Response after content is ingested, sanitized, and logged]] - rationale - gateway/ingest_api/models.py
+- [[Response from POST emailsend.]] - rationale - gateway/ingest_api/models.py
+- [[Response from POST sshwrite_file.      success reflects whether the remote wri]] - rationale - gateway/ingest_api/models.py
+- [[Response from SSH command execution]] - rationale - gateway/ingest_api/models.py
+- [[Return True if the recipient is in the allowlist.]] - rationale - gateway/ingest_api/main.py
+- [[RouterError]] - code - gateway/ingest_api/router.py
+- [[SSHExecRequest]] - code - gateway/ingest_api/main.py
+- [[SSHExecRequest_1]] - code - gateway/ingest_api/models.py
+- [[SSHExecResponse]] - code - gateway/ingest_api/models.py
+- [[SSHWriteFileRequest]] - code - gateway/ingest_api/main.py
+- [[SSHWriteFileRequest_1]] - code - gateway/ingest_api/models.py
+- [[SSHWriteFileResponse]] - code - gateway/ingest_api/models.py
+- [[Single entry from the data ledger]] - rationale - gateway/ingest_api/models.py
+- [[SocialEngineeringDetected]] - code - gateway/security/browser_security.py
+- [[StatusResponse]] - code - gateway/ingest_api/models.py
 - [[Test ApprovalDecision with valid data]] - rationale - gateway/tests/test_main_simple.py
 - [[Test ApprovalRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
 - [[Test FastAPI lifespan initialization]] - rationale - gateway/tests/test_main_simple.py
@@ -33,6 +98,7 @@ members: 95
 - [[Test all valid sources are accepted]] - rationale - gateway/tests/test_security.py
 - [[Test content with Unicode characters]] - rationale - gateway/tests/test_security.py
 - [[Test content with multiple instances of same PII type]] - rationale - gateway/tests/test_security.py
+- [[Test enhanced status endpoint with observatory mode and egress info.]] - rationale - gateway/tests/test_enhanced_status.py
 - [[Test global exception handler]] - rationale - gateway/tests/test_main_simple.py
 - [[Test global exception handler with HTTPException]] - rationale - gateway/tests/test_main_simple.py
 - [[Test handling of extremely long content (10MB)]] - rationale - gateway/tests/test_security.py
@@ -45,28 +111,54 @@ members: 95
 - [[Test routing to default target]] - rationale - gateway/tests/test_router.py
 - [[Test routing with explicit route_to]] - rationale - gateway/tests/test_router.py
 - [[Test routing with invalid explicit target falls back to default]] - rationale - gateway/tests/test_router.py
+- [[Test status response in monitor mode.]] - rationale - gateway/tests/test_enhanced_status.py
 - [[Test that SQL injection is prevented]] - rationale - gateway/tests/test_security.py
+- [[Test that StatusResponse model accepts new fields.]] - rationale - gateway/tests/test_enhanced_status.py
 - [[Test that XSS payloads are safely stored]] - rationale - gateway/tests/test_security.py
 - [[Test that common false positives are handled]] - rationale - gateway/tests/test_security.py
 - [[Test that empty content is rejected]] - rationale - gateway/tests/test_security.py
 - [[Test that invalid source is rejected]] - rationale - gateway/tests/test_security.py
+- [[Test that new fields are optional (backward compat).]] - rationale - gateway/tests/test_enhanced_status.py
+- [[TestEnhancedStatus]] - code - gateway/tests/test_enhanced_status.py
 - [[The iOSmacOS Shortcuts source value ('shortcut') is on the allowlist.]] - rationale - gateway/tests/test_security.py
+- [[User's decision on a pending approval request]] - rationale - gateway/ingest_api/models.py
+- [[Validate and normalize agentuser identity used for policy checks.]] - rationale - gateway/ingest_api/main.py
 - [[Validate that default_url uses httphttps and targets an internal Docker host.]] - rationale - gateway/ingest_api/config.py
 - [[Validate that each target URL uses httphttps and targets an internal Docker hos]] - rationale - gateway/ingest_api/config.py
 - [[ValueError]] - code
+- [[WebSocket_2]] - code - gateway/ingest_api/main.py
+- [[WebSocket_9]] - code - gateway/ingest_api/main.py
+- [[WebSocket relay for Slack Socket Mode inbound traffic.      Bot connects here (w]] - rationale - gateway/ingest_api/main.py
+- [[_is_connect_error matches connection-level failures only.]] - rationale - gateway/tests/test_llm_proxy.py
+- [[_is_imessage_recipient_allowed()]] - code - gateway/ingest_api/main.py
+- [[_mock_response()]] - code - gateway/tests/test_router_openai_translation.py
+- [[_normalize_agent_identity()]] - code - gateway/ingest_api/main.py
+- [[_resolve_effective_agent_id()]] - code - gateway/ingest_api/main.py
 - [[content_type is a closed Literal set; a shortcut cannot invent new types.]] - rationale - gateway/tests/test_security.py
 - [[gatewayingest_apiauth.py (RateLimiter, verify_token)]] - code - gateway/ingest_api/auth.py
+- [[global_exception_handler()]] - code - gateway/ingest_api/main.py
+- [[ledger.py]] - code - gateway/ingest_api/ledger.py
 - [[limit_request_body re-injects a fully-read chunked body and calls downstream.]] - rationale - gateway/tests/test_main_simple.py
 - [[limit_request_body rejects chunked bodies over 1MB with 413.]] - rationale - gateway/tests/test_main_simple.py
 - [[limit_request_body returns a clean 400 when the client drops mid-upload.      Wi]] - rationale - gateway/tests/test_main_simple.py
 - [[limit_request_body()]] - code - gateway/ingest_api/main.py
+- [[llm_api_proxy()]] - code - gateway/ingest_api/main.py
+- [[llm_api_v1_prefix_alias()]] - code - gateway/ingest_api/main.py
+- [[llm_openai_chat_alias()]] - code - gateway/ingest_api/main.py
+- [[log_requests()]] - code - gateway/ingest_api/main.py
+- [[mcp_proxy_endpoint()]] - code - gateway/ingest_api/main.py
+- [[mcp_result_endpoint()]] - code - gateway/ingest_api/main.py
+- [[models.py]] - code - gateway/ingest_api/models.py
+- [[router.py]] - code - gateway/ingest_api/router.py
 - [[security_headers_middleware adds expected security headers.]] - rationale - gateway/tests/test_main_simple.py
 - [[security_headers_middleware re-raises BaseExceptions that are not groups.]] - rationale - gateway/tests/test_main_simple.py
 - [[security_headers_middleware returns 500 when anyio BaseExceptionGroup is raised.]] - rationale - gateway/tests/test_main_simple.py
 - [[security_headers_middleware()]] - code - gateway/ingest_api/main.py
+- [[slack_ws_relay()]] - code - gateway/ingest_api/main.py
 - [[test_approval_decision_valid()]] - code - gateway/tests/test_main_simple.py
 - [[test_approval_request_valid()]] - code - gateway/tests/test_main_simple.py
 - [[test_empty_content_rejection()]] - code - gateway/tests/test_security.py
+- [[test_enhanced_status.py]] - code - gateway/tests/test_enhanced_status.py
 - [[test_extremely_long_content()]] - code - gateway/tests/test_security.py
 - [[test_false_positive_patterns()]] - code - gateway/tests/test_security.py
 - [[test_forward_request_valid()]] - code - gateway/tests/test_main_simple.py
@@ -75,6 +167,7 @@ members: 95
 - [[test_global_exception_handler()]] - code - gateway/tests/test_main_simple.py
 - [[test_global_exception_handler_http_exception()]] - code - gateway/tests/test_main_simple.py
 - [[test_invalid_source_rejection()]] - code - gateway/tests/test_security.py
+- [[test_is_connect_error_classification()]] - code - gateway/tests/test_llm_proxy.py
 - [[test_lifespan_initialization()]] - code - gateway/tests/test_main_simple.py
 - [[test_limit_request_body_chunked_body_over_limit_rejected()]] - code - gateway/tests/test_main_simple.py
 - [[test_limit_request_body_chunked_body_within_limit_passes_through()]] - code - gateway/tests/test_main_simple.py
@@ -89,6 +182,7 @@ members: 95
 - [[test_resolve_target_default()]] - code - gateway/tests/test_router.py
 - [[test_resolve_target_explicit()]] - code - gateway/tests/test_router.py
 - [[test_resolve_target_invalid_explicit()]] - code - gateway/tests/test_router.py
+- [[test_router_openai_translation.py]] - code - gateway/tests/test_router_openai_translation.py
 - [[test_security.py]] - code - gateway/tests/test_security.py
 - [[test_security_headers_middleware_catches_exception_group()]] - code - gateway/tests/test_main_simple.py
 - [[test_security_headers_middleware_normal_response()]] - code - gateway/tests/test_main_simple.py
@@ -102,6 +196,7 @@ members: 95
 - [[test_unicode_content()]] - code - gateway/tests/test_security.py
 - [[test_valid_sources()]] - code - gateway/tests/test_security.py
 - [[test_very_large_content()]] - code - gateway/tests/test_security.py
+- [[test_ws_empty_transcript_goes_idle()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_xss_attempt()]] - code - gateway/tests/test_security.py
 
 ## Live Query (requires Dataview plugin)
@@ -112,40 +207,77 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 22 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
-- 10 edges to [[_COMMUNITY_Slack API Proxy]]
-- 9 edges to [[_COMMUNITY_SOC Dashboard]]
-- 9 edges to [[_COMMUNITY_Gateway Security Module]]
+- 62 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 38 edges to [[_COMMUNITY_scriptssync-cve-registry.py]]
+- 29 edges to [[_COMMUNITY_Slack API Proxy]]
+- 28 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 25 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
+- 24 edges to [[_COMMUNITY_Community 1513]]
+- 18 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 16 edges to [[_COMMUNITY_Telegram Inbound Tests]]
+- 14 edges to [[_COMMUNITY_docsvault]]
+- 11 edges to [[_COMMUNITY_Enhanced Approval Queue]]
+- 11 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 8 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 8 edges to [[_COMMUNITY_Docker Deploy Scripts]]
+- 7 edges to [[_COMMUNITY_docsproject]]
 - 6 edges to [[_COMMUNITY_Planning Docs]]
+- 6 edges to [[_COMMUNITY_Planning Docs]]
+- 5 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
+- 5 edges to [[_COMMUNITY_Group Workspace Isolation]]
+- 5 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 5 edges to [[_COMMUNITY_Architecture Docs]]
-- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 4 edges to [[_COMMUNITY_docsUSPTO_PROVISIONAL_PATENT_APPLICATION]]
-- 3 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
-- 3 edges to [[_COMMUNITY_docsvault]]
-- 3 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
-- 3 edges to [[_COMMUNITY_Bot Skill Config]]
+- 5 edges to [[_COMMUNITY_LLM Proxy Resource Guard]]
+- 3 edges to [[_COMMUNITY_docstesting]]
+- 3 edges to [[_COMMUNITY_SOC Service Manager]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_Enhanced Approval Queue]]
+- 2 edges to [[_COMMUNITY_CHANGELOG]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 2 edges to [[_COMMUNITY_Tool Chain Analyzer]]
+- 2 edges to [[_COMMUNITY_scriptsmigrate-cve-registry-ghsa.py]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_skillsopenclaw]]
+- 2 edges to [[_COMMUNITY_PromptGuard Encoding Detection]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Auth & Exception Types]]
+- 1 edge to [[_COMMUNITY_.githubCOPILOT_CLI_SETUP]]
+- 1 edge to [[_COMMUNITY_Planning Docs]]
+- 1 edge to [[_COMMUNITY_MCP Proxy Config]]
+- 1 edge to [[_COMMUNITY_brandingREADME]]
+- 1 edge to [[_COMMUNITY_gatewaycli]]
+- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 1 edge to [[_COMMUNITY_ESP32 Firmware]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 1 edge to [[_COMMUNITY_Enforce-Mode Auto-Revert]]
 - 1 edge to [[_COMMUNITY_docsvault]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_scriptssync-cve-registry.py]]
-- 1 edge to [[_COMMUNITY_Bot Container Scripts]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Planning Docs]]
+- 1 edge to [[_COMMUNITY_Docker Deploy Scripts]]
+- 1 edge to [[_COMMUNITY_Docker Deploy Scripts]]
+- 1 edge to [[_COMMUNITY_Community 1510]]
+- 1 edge to [[_COMMUNITY_Community 1509]]
+- 1 edge to [[_COMMUNITY_docsREADME]]
+- 1 edge to [[_COMMUNITY_Cross-Bot Trust Ledger]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Gateway Security Module]]
 - 1 edge to [[_COMMUNITY_Planning Docs]]
-- 1 edge to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_Security Docs]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Forward Routing & Approval]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Group Workspace Isolation]]
+- 1 edge to [[_COMMUNITY_Security Pipeline Core]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[ValueError]] - degree 29, connects to 16 communities
-- [[ForwardRequest]] - degree 71, connects to 9 communities
-- [[test_main_simple.py]] - degree 23, connects to 3 communities
-- [[test_security.py]] - degree 25, connects to 2 communities
-- [[limit_request_body()]] - degree 8, connects to 2 communities
+- [[BaseModel]] - degree 86, connects to 21 communities
+- [[ValueError]] - degree 29, connects to 14 communities
+- [[ForwardRequest]] - degree 71, connects to 13 communities
+- [[Exception]] - degree 23, connects to 11 communities
+- [[Request_1]] - degree 36, connects to 8 communities

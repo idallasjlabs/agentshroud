@@ -120,7 +120,7 @@ SORT file.name ASC
 - 6 edges to [[_COMMUNITY_Planning Docs]]
 - 5 edges to [[_COMMUNITY_Planning Docs]]
 - 4 edges to [[_COMMUNITY_Planning Docs]]
-- 1 edge to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 1 edge to [[_COMMUNITY_Competitive Intel Store]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Security Docs]]
 - 1 edge to [[_COMMUNITY_Security Docs]]

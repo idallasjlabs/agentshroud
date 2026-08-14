@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "HTTP Forwarder"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/Bot_Skill_Config
 ---
 
 # collaborator_tracker.py
@@ -15,4 +15,4 @@ tags:
 - [[CollaboratorActivityTracker]] - `contains` [EXTRACTED]
 - [[_is_fixture_uid()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

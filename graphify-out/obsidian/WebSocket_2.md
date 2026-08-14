@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Competitive Intel Store"
 location: "L4745"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer_Pipeline
+  - community/Competitive_Intel_Store
 ---
 
 # WebSocket
@@ -28,4 +28,4 @@ tags:
 - [[SSHWriteFileResponse]] - `uses` [INFERRED]
 - [[slack_ws_relay()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/INFERRED #community/Competitive_Intel_Store

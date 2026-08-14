@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_startup_wrapper_defaults_openclaw_bind_to_loopback()]] - code - gateway/tests/test_config_validation.py
-- [[Startup wrapper should default OpenClaw bind to loopback unless explicitly overr]] - rationale - gateway/tests/test_config_validation.py
+- [[.test_config_from_env()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Test configuration from environment variables.]] - rationale - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_Progressive Trust Config]]
 
 ## Top bridge nodes
-- [[.test_startup_wrapper_defaults_openclaw_bind_to_loopback()]] - degree 2, connects to 1 community
+- [[.test_config_from_env()]] - degree 2, connects to 1 community

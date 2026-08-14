@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_patch_slack_sdk_pong_patch_is_idempotent()]] - code - gateway/tests/test_config_validation.py
-- [[patch-slack-sdk.sh must stay quiet when the pong patch is already applied.]] - rationale - gateway/tests/test_config_validation.py
+- [[.test_tailscale_hostname_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test that Tailscale hostnames are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_Bot CVE Scorecard]]
 
 ## Top bridge nodes
-- [[.test_patch_slack_sdk_pong_patch_is_idempotent()]] - degree 2, connects to 1 community
+- [[.test_tailscale_hostname_filtering()]] - degree 2, connects to 1 community

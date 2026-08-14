@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "File Sandbox"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/File_Sandbox
 ---
 
 # Writes in group-A must not be readable from group-B.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupMemoryNamespaceIsolation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

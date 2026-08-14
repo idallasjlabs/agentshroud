@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "URL/Domain Validation Tests"
+community: "Egress & RBAC Security Core"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Egress__RBAC_Security_Core
 ---
 
 # default_config()
@@ -15,4 +15,4 @@ tags:
 - [[FileSandboxConfig]] - `calls` [EXTRACTED]
 - [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

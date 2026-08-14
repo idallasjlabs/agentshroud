@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/__init__.py"
 type: "code"
-community: "PromptGuard Encoding Detection"
+community: "SOC Dashboard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard_Encoding_Detection
+  - community/SOC_Dashboard
 ---
 
 # __init__.py
@@ -36,4 +36,4 @@ tags:
 - [[mcp_permissions.py]] - `re_exports` [EXTRACTED]
 - [[mcp_proxy.py]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

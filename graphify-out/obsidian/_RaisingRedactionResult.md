@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Setup Docs"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Setup_Docs
 ---
 
 # _RaisingRedactionResult
@@ -19,4 +19,4 @@ tags:
 - [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Setup_Docs

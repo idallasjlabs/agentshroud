@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "docs/flows"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/docs/flows
 ---
 
 # clock()
@@ -15,4 +15,4 @@ tags:
 - [[FakeClock]] - `calls` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/docs/flows

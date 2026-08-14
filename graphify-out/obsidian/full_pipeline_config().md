@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "scripts/sync-cve-registry.py"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/scripts/sync-cve-registrypy
 ---
 
 # full_pipeline_config()
@@ -20,4 +20,4 @@ tags:
 - [[RouterConfig]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

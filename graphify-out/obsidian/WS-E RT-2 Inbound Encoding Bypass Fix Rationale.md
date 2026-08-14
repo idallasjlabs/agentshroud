@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "SOC RBAC & Auth"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/SOC_RBAC__Auth
 ---
 
 # WS-E RT-2 Inbound Encoding Bypass Fix Rationale
@@ -16,4 +16,4 @@ tags:
 - [[SecurityPipeline]] - `rationale_for` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth

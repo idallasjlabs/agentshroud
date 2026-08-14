@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Community 1513"
 location: "L2666"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Community_1513
 ---
 
 # WebSocket
@@ -24,4 +24,4 @@ tags:
 - [[WSEventType]] - `uses` [INFERRED]
 - [[soc_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Community_1513

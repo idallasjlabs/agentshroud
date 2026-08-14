@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "File Sandbox"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/File_Sandbox
 ---
 
 # group-{chat_id} sessions must live under the 'groups' subdirectory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_group_id_uses_group_prefix_namespace()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

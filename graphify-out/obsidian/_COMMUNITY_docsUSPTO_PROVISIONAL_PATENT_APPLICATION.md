@@ -38,16 +38,15 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_docsapi]]
+- 2 edges to [[_COMMUNITY_docsapi]]
 - 1 edge to [[_COMMUNITY_Gateway Security Module]]
 - 1 edge to [[_COMMUNITY_Bot Skill Config]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Bot Skill Config]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[SOUL_2]] - degree 18, connects to 5 communities
+- [[SOUL_2]] - degree 18, connects to 4 communities
 - [[Isaiah Dallas Jefferson Jr. (OwnerCIEProduct Owner)]] - degree 6, connects to 3 communities
 - [[agentshroud-ssh-exec.sh helper]] - degree 4, connects to 1 community
 - [[AgentShroud Gateway]] - degree 3, connects to 1 community

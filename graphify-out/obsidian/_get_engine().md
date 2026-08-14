@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "docs/project"
+community: "Bot Skill Config"
 location: "L1215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Bot_Skill_Config
 ---
 
 # _get_engine()
@@ -28,4 +28,4 @@ tags:
 - [[upgrade_bot()_1]] - `calls` [EXTRACTED]
 - [[ws_logs()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/project
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

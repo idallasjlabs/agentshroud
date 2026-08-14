@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Slack API Proxy"
+community: "scripts/sync-cve-registry.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/scripts/sync-cve-registrypy
 ---
 
 # config.py
@@ -52,4 +52,4 @@ tags:
 - [[test_mcp_policy_default_failclosed.py]] - `references` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

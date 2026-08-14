@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # generate_summary()
@@ -21,4 +21,4 @@ tags:
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 - [[trivy_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "Bot Skill Config"
+community: "Docker Deploy Scripts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Docker_Deploy_Scripts
 ---
 
 # init-config.sh
@@ -19,4 +19,4 @@ tags:
 - [[init-config.sh script]] - `contains` [EXTRACTED]
 - [[start.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

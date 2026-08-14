@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Docs"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Docs
 ---
 
 # gateway/security/skill_guard.py (SkillGuard)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_skill_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

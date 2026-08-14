@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "docs/project"
+community: "Bot Skill Config"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Bot_Skill_Config
 ---
 
 # Validate service name against allowlist to prevent injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_validate_service_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/project
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

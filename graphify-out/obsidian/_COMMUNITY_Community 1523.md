@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_hermes_openai_api_key_wired_via_secret()]] - code - gateway/tests/test_config_validation.py
-- [[Hermes must receive OPENAI_API_KEY from the shared openai_api_key Docker secret.]] - rationale - gateway/tests/test_config_validation.py
+- [[.test_llm_timeout_error_is_sanitized()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Raw timeout errors should be rewritten to deterministic retry guidance.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[.test_hermes_openai_api_key_wired_via_secret()]] - degree 2, connects to 1 community
+- [[.test_llm_timeout_error_is_sanitized()]] - degree 4, connects to 1 community

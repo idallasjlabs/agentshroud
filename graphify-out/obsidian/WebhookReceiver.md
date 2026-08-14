@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "Planning Docs"
+community: "Gateway Test Suite"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # WebhookReceiver
@@ -55,4 +55,4 @@ tags:
 - [[test_webhook_strips_pii()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

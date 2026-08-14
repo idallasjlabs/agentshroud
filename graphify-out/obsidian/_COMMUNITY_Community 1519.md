@@ -8,8 +8,8 @@ members: 2
 **Members:** 2 nodes
 
 ## Members
-- [[.test_startup_online_notice_sent_only_after_readiness_gate()]] - code - gateway/tests/test_config_validation.py
-- [[Online notice must appear after readiness probes to avoid premature status signa]] - rationale - gateway/tests/test_config_validation.py
+- [[.test_code_block_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[Test that function_calls XML blocks are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +19,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_Bot CVE Scorecard]]
 
 ## Top bridge nodes
-- [[.test_startup_online_notice_sent_only_after_readiness_gate()]] - degree 2, connects to 1 community
+- [[.test_code_block_filtering()]] - degree 2, connects to 1 community

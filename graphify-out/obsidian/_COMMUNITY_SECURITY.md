@@ -39,17 +39,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_ESP32 Firmware]]
-- 9 edges to [[_COMMUNITY_docsvault]]
-- 3 edges to [[_COMMUNITY_HTTP Forwarder]]
-- 2 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
+- 18 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_scriptssync-cve-registry.py]]
+- 1 edge to [[_COMMUNITY_docsvault]]
 - 1 edge to [[_COMMUNITY_Cross-Bot Trust Ledger]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
 - 1 edge to [[_COMMUNITY_docsproject]]
 - 1 edge to [[_COMMUNITY_Planning Docs]]
 
 ## Top bridge nodes
-- [[TestMultipartOutboundPipeline]] - degree 15, connects to 3 communities
-- [[.test_multipart_pipeline_block_non_owner()]] - degree 6, connects to 3 communities
+- [[TestMultipartOutboundPipeline]] - degree 15, connects to 5 communities
 - [[_make_multipart_body()]] - degree 12, connects to 2 communities
-- [[.test_multipart_outbound_pipeline_called()]] - degree 5, connects to 2 communities
-- [[.test_multipart_sanitized_caption_applied_binary_intact()]] - degree 5, connects to 2 communities
+- [[.test_multipart_pipeline_block_non_owner()]] - degree 6, connects to 2 communities
+- [[.test_multipart_outbound_pipeline_called()]] - degree 5, connects to 1 community
+- [[.test_multipart_sanitized_caption_applied_binary_intact()]] - degree 5, connects to 1 community

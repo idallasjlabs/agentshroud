@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Slack API Proxy"
+community: "docs/reference"
 location: "L727"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/docs/reference
 ---
 
 # apply_reloadable_config()
@@ -19,4 +19,4 @@ tags:
 - [[test_apply_swaps_only_reloadable_fields()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/docs/reference

@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[Website Voice Terminal (ESP32-S3-BOX-3) Section]] - document - docs/index.html
+- [[GATEWAY_URL (env var — external client URL for iOS Shortcuts, browser extension, mgmt tools)]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
 
 ## Live Query (requires Dataview plugin)
 

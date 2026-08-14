@@ -18,6 +18,5 @@ tags:
 - [[Running Containers (gateway + bot, healthy)]] - `conceptually_related_to` [EXTRACTED]
 - [[Startup Sequence — AgentShroud]] - `references` [EXTRACTED]
 - [[Two-Stage Startup (gateway healthy before bot starts — depends_on service_healthy)]] - `sequences` [EXTRACTED]
-- [[Website OpenClaw Bot Section]] - `conceptually_related_to` [EXTRACTED]
 
 #graphify/concept #graphify/EXTRACTED #community/Security_Docs

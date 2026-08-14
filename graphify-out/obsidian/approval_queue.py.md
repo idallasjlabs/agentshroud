@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "docs/api"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/api
 ---
 
 # approval_queue.py.md
@@ -20,4 +20,4 @@ tags:
 - [[SOUL_2]] - `references` [EXTRACTED]
 - [[Security Controls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/docs/api

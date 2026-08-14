@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 1511
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_openclaw_patch_script_seeds_group_allowlist()]] - code - gateway/tests/test_config_validation.py
-- [[openclaw init patch script must seed Telegram group allowlist when policy is all]] - rationale - gateway/tests/test_config_validation.py
+- [[Elevator pitch_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[Key Messaging_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[One-liner_1]] - document - docker/config/openclaw/workspace/BRAND.md
+- [[What it is NOT_1]] - document - docker/config/openclaw/workspace/BRAND.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[.test_openclaw_patch_script_seeds_group_allowlist()]] - degree 2, connects to 1 community
+- [[Key Messaging_1]] - degree 4, connects to 1 community

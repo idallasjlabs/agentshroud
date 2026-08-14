@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "PromptGuard Encoding Detection"
+community: "Collaborator Prompt Safety"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard_Encoding_Detection
+  - community/Collaborator_Prompt_Safety
 ---
 
 # config()
@@ -17,4 +17,4 @@ tags:
 - [[MCPToolConfig]] - `calls` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Safety

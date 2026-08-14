@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "docs/vault"
+community: "skills/openclaw"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/skills/openclaw
 ---
 
 # _draft()
@@ -21,4 +21,4 @@ tags:
 - [[.test_too_many_entries_rejected()]] - `calls` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "docs/operations"
+community: "Gateway Test Suite"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Gateway_Test_Suite
 ---
 
 # guard()
@@ -16,4 +16,4 @@ tags:
 - [[ResourceLimits]] - `calls` [EXTRACTED]
 - [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/operations
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

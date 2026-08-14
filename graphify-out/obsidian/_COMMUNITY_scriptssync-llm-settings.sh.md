@@ -37,7 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_PromptGuard Encoding Detection]]
+- 1 edge to [[_COMMUNITY_SOC Dashboard]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes

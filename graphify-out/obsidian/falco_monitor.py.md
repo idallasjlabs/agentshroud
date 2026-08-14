@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Security Docs"
+community: "Bot Container Scripts"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Container_Scripts
 ---
 
 # falco_monitor.py
@@ -24,4 +24,4 @@ tags:
 - [[read_alerts()]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Security Module Middleware"
+community: "Auth & Exception Types"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Module_Middleware
+  - community/Auth__Exception_Types
 ---
 
 # XXE-style payloads shouldn't crash processing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_xml_entity_expansion()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 1507
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_openclaw_patch_script_recovers_corrupt_json()]] - code - gateway/tests/test_config_validation.py
-- [[openclaw init patch script must quarantine malformed JSON instead of exiting.]] - rationale - gateway/tests/test_config_validation.py
+- [[Alerting]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Logging]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[Monitoring Integration]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
+- [[PrometheusGrafana]] - document - docs/security/SECURITY_SCRIPTS_REFERENCE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_docsoperations]]
 
 ## Top bridge nodes
-- [[.test_openclaw_patch_script_recovers_corrupt_json()]] - degree 2, connects to 1 community
+- [[Monitoring Integration]] - degree 4, connects to 1 community

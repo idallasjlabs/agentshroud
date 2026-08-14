@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
+community: "docs/vault"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/docs/vault
 ---
 
 # When both PII sanitizer and prompt guard detect issues.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pii_and_prompt_guard_both_trigger()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

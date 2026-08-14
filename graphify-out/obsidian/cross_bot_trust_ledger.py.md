@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "MCP Proxy Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/MCP_Proxy_Config
 ---
 
 # cross_bot_trust_ledger.py
@@ -19,4 +19,4 @@ tags:
 - [[TrustDecayPolicy]] - `contains` [EXTRACTED]
 - [[TrustManager_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config

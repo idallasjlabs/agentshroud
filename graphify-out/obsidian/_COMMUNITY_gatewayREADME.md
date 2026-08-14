@@ -1,30 +1,32 @@
 ---
 type: community
-members: 17
+members: 19
 ---
 
 # gateway/README.md
 
-**Members:** 17 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[.guard()]] - code - gateway/tests/test_context_guard.py
-- [[.test_empty_provenance_for_unknown_session()]] - code - gateway/tests/test_context_guard.py
-- [[.test_few_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[.test_normal_message_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[.test_normal_sized_message_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[.test_oversized_message_blocked()]] - code - gateway/tests/test_context_guard.py
-- [[.test_repeated_pattern_flagged()]] - code - gateway/tests/test_context_guard.py
-- [[.test_segment_hash_integrity()]] - code - gateway/tests/test_context_guard.py
-- [[.test_segment_provenance_ordering()]] - code - gateway/tests/test_context_guard.py
-- [[.test_segment_tagging_basic()]] - code - gateway/tests/test_context_guard.py
-- [[.test_separate_sessions_isolated()]] - code - gateway/tests/test_context_guard.py
-- [[.test_short_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[Check if message should be allowed, with detailed findings.      Args         t]] - rationale - gateway/security/context_guard.py
-- [[TestCheckMessage]] - code - gateway/tests/test_context_guard.py
-- [[TestSourceTagging]] - code - gateway/tests/test_context_guard.py
-- [[check_message()]] - code - gateway/security/context_guard.py
-- [[test_context_guard.py]] - code - gateway/tests/test_context_guard.py
+- [[.teardown_method()_1]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.teardown_method()_2]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_content_sanitization()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_daily_notes_retention()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_lifecycle_maintenance()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_memory_md_size_limit()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_memory_write_validation()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_pii_detection()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[.test_prompt_injection_detection()]] - code - gateway/tests/test_memory_lifecycle.py
+- [[Clean up test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test MEMORY.md size limit enforcement.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test PII detection in memory content.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test complete lifecycle maintenance run.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test content sanitization removes threats.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test memory lifecycle management.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test prompt injection detection.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test retention policy for daily notes.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[Test validation before writing to memory files.]] - rationale - gateway/tests/test_memory_lifecycle.py
+- [[TestMemoryLifecycleManager]] - code - gateway/tests/test_memory_lifecycle.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,13 +36,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
-- 3 edges to [[_COMMUNITY_Planning Docs]]
-- 3 edges to [[_COMMUNITY_Audit Export Pipeline]]
+- 8 edges to [[_COMMUNITY_Progressive Trust Config]]
+- 2 edges to [[_COMMUNITY_docsvault]]
+- 2 edges to [[_COMMUNITY_docsoperations]]
+- 1 edge to [[_COMMUNITY_docsvault]]
 
 ## Top bridge nodes
-- [[TestCheckMessage]] - degree 9, connects to 2 communities
-- [[TestSourceTagging]] - degree 9, connects to 2 communities
-- [[test_context_guard.py]] - degree 5, connects to 2 communities
-- [[check_message()]] - degree 11, connects to 1 community
-- [[.guard()]] - degree 2, connects to 1 community
+- [[TestMemoryLifecycleManager]] - degree 21, connects to 4 communities
+- [[.teardown_method()_1]] - degree 2, connects to 1 community

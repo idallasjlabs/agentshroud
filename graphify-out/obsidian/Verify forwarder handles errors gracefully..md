@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "SOC Collaborator Lifecycle"
+community: "Gateway Test Suite"
 location: "L524"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/Gateway_Test_Suite
 ---
 
 # Verify forwarder handles errors gracefully.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forwarder_error_handling()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

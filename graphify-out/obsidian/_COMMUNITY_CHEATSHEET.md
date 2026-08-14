@@ -44,17 +44,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_SOC RBAC & Auth]]
+- 20 edges to [[_COMMUNITY_MCP Proxy Config]]
 - 11 edges to [[_COMMUNITY_Cross-Bot Trust Ledger]]
 - 9 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Approval & FastAPI Ingest]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[PipelineResult]] - degree 26, connects to 6 communities
+- [[PipelineResult]] - degree 26, connects to 4 communities
 - [[test_telegram_pipeline.py]] - degree 15, connects to 2 communities
 - [[TestOutboundPipelineWired]] - degree 6, connects to 2 communities
 - [[TestInboundPipelineWired]] - degree 5, connects to 2 communities

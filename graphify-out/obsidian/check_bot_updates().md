@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "docs/project"
+community: "Bot Skill Config"
 location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Bot_Skill_Config
 ---
 
 # check_bot_updates()
@@ -18,4 +18,4 @@ tags:
 - [[api.py]] - `contains` [EXTRACTED]
 - [[check_openclaw_updates()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/project
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

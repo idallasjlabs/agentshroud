@@ -1,15 +1,17 @@
 ---
 type: community
-members: 2
+members: 4
 ---
 
 # Community 1510
 
-**Members:** 2 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[.test_openclaw_patch_script_sets_control_ui_allowed_origins()]] - code - gateway/tests/test_config_validation.py
-- [[openclaw init patch script must seed control UI origins for non-loopback bind.]] - rationale - gateway/tests/test_config_validation.py
+- [[.test_mcp_proxy_endpoint()]] - code - gateway/tests/test_main_endpoints.py
+- [[Test mcpproxy endpoint.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test MCP proxy endpoint basic functionality.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[TestMCPProxyEndpoint]] - code - gateway/tests/test_main_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,7 +21,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 1 edge to [[_COMMUNITY_Competitive Intel Store]]
+- 1 edge to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[.test_openclaw_patch_script_sets_control_ui_allowed_origins()]] - degree 2, connects to 1 community
+- [[TestMCPProxyEndpoint]] - degree 5, connects to 3 communities
+- [[.test_mcp_proxy_endpoint()]] - degree 3, connects to 1 community

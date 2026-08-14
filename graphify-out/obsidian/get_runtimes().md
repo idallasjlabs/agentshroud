@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "Gateway Ingest API"
+community: "Gateway Test Suite"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - community/Gateway_Test_Suite
 ---
 
 # get_runtimes()
@@ -17,4 +17,4 @@ tags:
 - [[get_security_comparison()]] - `calls` [EXTRACTED]
 - [[installer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

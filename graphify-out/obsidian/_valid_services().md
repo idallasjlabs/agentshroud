@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "docs/project"
+community: "Bot Skill Config"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Bot_Skill_Config
 ---
 
 # _valid_services()
@@ -18,4 +18,4 @@ tags:
 - [[get_status()]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/project
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

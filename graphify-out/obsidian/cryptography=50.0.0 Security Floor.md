@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/requirements.txt"
 type: "rationale"
-community: ".github/workflows"
+community: "AGENTS.md"
 location: "lines 17-20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/github/workflows
+  - community/AGENTSmd
 ---
 
 # cryptography>=50.0.0 Security Floor
@@ -15,4 +15,4 @@ tags:
 - [[Presidio-Anonymizer 2.2.364 Version Pin-Out]] - `references` [EXTRACTED]
 - [[gatewayrequirements.txt Dependency File]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/github/workflows
+#graphify/rationale #graphify/EXTRACTED #community/AGENTSmd

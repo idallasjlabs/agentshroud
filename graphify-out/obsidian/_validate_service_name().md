@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "docs/project"
+community: "Bot Skill Config"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Bot_Skill_Config
 ---
 
 # _validate_service_name()
@@ -20,4 +20,4 @@ tags:
 - [[start_service()_1]] - `calls` [EXTRACTED]
 - [[stop_service()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/project
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

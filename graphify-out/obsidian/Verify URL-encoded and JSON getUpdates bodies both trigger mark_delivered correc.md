@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "HTTP Forwarder"
+community: "Gateway Test Suite"
 location: "L4610"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/Gateway_Test_Suite
 ---
 
 # Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered correc
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReplayBufferOffsetParsing]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

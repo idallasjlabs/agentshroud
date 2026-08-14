@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Architecture Docs"
+community: "Egress & RBAC Security Core"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Egress__RBAC_Security_Core
 ---
 
 # dns_filter.py
@@ -20,4 +20,4 @@ tags:
 - [[TunnelingPattern]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

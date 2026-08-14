@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "SOC RBAC & Auth"
+community: "MCP Proxy Config"
 location: "L170"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/MCP_Proxy_Config
 ---
 
 # append_owner_bypass writes to the hash chain AND persists a HIGH         'owner_
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_append_owner_bypass_persists_high_severity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

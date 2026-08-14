@@ -1,46 +1,29 @@
 ---
 type: community
-members: 33
+members: 16
 ---
 
 # docker/QUICKSTART.md
 
-**Members:** 33 nodes
+**Members:** 16 nodes
 
 ## Members
-- [[.__init__()_46]] - code - gateway/runtime/podman_engine.py
-- [[._cmd()_2]] - code - gateway/runtime/podman_engine.py
-- [[._detect_compose()]] - code - gateway/runtime/podman_engine.py
-- [[.build()_3]] - code - gateway/runtime/podman_engine.py
-- [[.compose_down()_3]] - code - gateway/runtime/podman_engine.py
-- [[.compose_up()_3]] - code - gateway/runtime/podman_engine.py
-- [[.exec()_3]] - code - gateway/runtime/podman_engine.py
-- [[.generate_systemd()]] - code - gateway/runtime/podman_engine.py
-- [[.health_check()_5]] - code - gateway/runtime/podman_engine.py
-- [[.inspect()_3]] - code - gateway/runtime/podman_engine.py
-- [[.logs()_3]] - code - gateway/runtime/podman_engine.py
-- [[.network_create()_3]] - code - gateway/runtime/podman_engine.py
-- [[.network_rm()_3]] - code - gateway/runtime/podman_engine.py
-- [[.pause()_3]] - code - gateway/runtime/podman_engine.py
-- [[.pull()_3]] - code - gateway/runtime/podman_engine.py
-- [[.push()_3]] - code - gateway/runtime/podman_engine.py
-- [[.rm()_3]] - code - gateway/runtime/podman_engine.py
-- [[.run()_3]] - code - gateway/runtime/podman_engine.py
-- [[.setup_method()_24]] - code - gateway/tests/test_runtime_engines.py
-- [[.stop()_8]] - code - gateway/runtime/podman_engine.py
-- [[.test_generate_systemd()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_health_check()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_ps_json()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_run_selinux_volumes()]] - code - gateway/tests/test_runtime_engines.py
-- [[.unpause()_3]] - code - gateway/runtime/podman_engine.py
-- [[.volume_create()_3]] - code - gateway/runtime/podman_engine.py
-- [[.volume_rm()_3]] - code - gateway/runtime/podman_engine.py
-- [[Any_28]] - code - gateway/runtime/podman_engine.py
-- [[Container engine backed by the Podman CLI.]] - rationale - gateway/runtime/podman_engine.py
-- [[Detect podman compose or podman-compose.]] - rationale - gateway/runtime/podman_engine.py
-- [[Generate a systemd unit file for a container.]] - rationale - gateway/runtime/podman_engine.py
-- [[PodmanEngine]] - code - gateway/runtime/podman_engine.py
-- [[TestPodmanEngine]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_backward_compat_alias()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_benign_text_low_score()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_clear_injection_high_score()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_cyrillic_homoglyph()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_empty_text()_1]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_encoding_evasion()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_exfiltration_attempt()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_long_benign_text()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_model_not_loaded_by_default()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_multi_signal_increases_confidence()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_roleplay_attack()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_separator_injection()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[.test_unicode_anomaly()]] - code - gateway/tests/test_heuristic_classifier.py
+- [[InjectionClassifier alias should still work.]] - rationale - gateway/tests/test_heuristic_classifier.py
+- [[Test the heuristic injection classifier.]] - rationale - gateway/tests/test_heuristic_classifier.py
+- [[TestHeuristicClassifier]] - code - gateway/tests/test_heuristic_classifier.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,20 +33,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 6 edges to [[_COMMUNITY_Bot Skill Config]]
-- 2 edges to [[_COMMUNITY_Bot Container Scripts]]
-- 2 edges to [[_COMMUNITY_Bot Skill Config]]
-- 1 edge to [[_COMMUNITY_README]]
-- 1 edge to [[_COMMUNITY_docsvault]]
-- 1 edge to [[_COMMUNITY_Gateway Ingest API]]
-- 1 edge to [[_COMMUNITY_Bot Skill Config]]
-- 1 edge to [[_COMMUNITY_docsproject]]
-- 1 edge to [[_COMMUNITY_Planning Docs]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 4 edges to [[_COMMUNITY_docsvault]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[PodmanEngine]] - degree 45, connects to 11 communities
-- [[TestPodmanEngine]] - degree 11, connects to 4 communities
-- [[Any_28]] - degree 3, connects to 1 community
+- [[TestHeuristicClassifier]] - degree 19, connects to 2 communities

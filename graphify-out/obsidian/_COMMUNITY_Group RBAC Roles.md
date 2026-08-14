@@ -119,8 +119,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 185 edges to [[_COMMUNITY_PII Config & Test Fixtures]]
-- 15 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 192 edges to [[_COMMUNITY_PII Config & Test Fixtures]]
+- 14 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 8 edges to [[_COMMUNITY_docsproject]]
 - 5 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
 - 5 edges to [[_COMMUNITY_Cross-Bot Trust Ledger]]
@@ -132,22 +132,16 @@ SORT file.name ASC
 - 3 edges to [[_COMMUNITY_Security Docs]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Slack API Proxy]]
+- 1 edge to [[_COMMUNITY_PII Sanitizer Pipeline]]
 - 1 edge to [[_COMMUNITY_docsvault]]
 - 1 edge to [[_COMMUNITY_IEC 62443 Scorecard]]
-- 1 edge to [[_COMMUNITY_CHANGELOG]]
-- 1 edge to [[_COMMUNITY_chatbot__init__.py]]
-- 1 edge to [[_COMMUNITY_Security Docs]]
-- 1 edge to [[_COMMUNITY_chatbotrequirements.txt]]
-- 1 edge to [[_COMMUNITY_gatewaycli]]
-- 1 edge to [[_COMMUNITY_docsapi]]
-- 1 edge to [[_COMMUNITY_Custom Skills]]
-- 1 edge to [[_COMMUNITY_Approval Queue]]
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
 
 ## Top bridge nodes
-- [[_wrap_response()]] - degree 230, connects to 19 communities
-- [[test_telegram_proxy_inbound.py]] - degree 28, connects to 13 communities
+- [[test_telegram_proxy_inbound.py]] - degree 28, connects to 14 communities
+- [[_wrap_response()]] - degree 230, connects to 12 communities
 - [[TestProgressiveLockdownUX]] - degree 25, connects to 4 communities
 - [[TestPerBotGroupMentionFilter]] - degree 12, connects to 4 communities
 - [[TestGroupPresenceProbe]] - degree 20, connects to 3 communities

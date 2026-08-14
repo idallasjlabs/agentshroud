@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Audit Export Pipeline"
+community: "docs/vault"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/docs/vault
 ---
 
 # Verifying a tampered prompt should return False.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_tamper_detected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

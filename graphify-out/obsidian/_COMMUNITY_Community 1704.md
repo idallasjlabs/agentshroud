@@ -8,7 +8,7 @@ members: 1
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_1]] - code - gateway/__init__.py
+- [[__init__.py]] - code - gateway/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

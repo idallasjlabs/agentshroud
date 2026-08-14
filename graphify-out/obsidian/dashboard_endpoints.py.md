@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "docs/vault"
+community: "Planning Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Planning_Docs
 ---
 
 # dashboard_endpoints.py
@@ -28,4 +28,4 @@ tags:
 - [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[ssh_hosts()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs
