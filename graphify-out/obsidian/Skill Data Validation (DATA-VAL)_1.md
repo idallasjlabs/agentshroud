@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-data/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "branding/favicons"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/branding/favicons
 ---
 
 # Skill: Data Validation (DATA-VAL)
@@ -18,4 +18,4 @@ tags:
 - [[Test Data Validation Pattern_1]] - `contains` [EXTRACTED]
 - [[Validation Layers_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/branding/favicons

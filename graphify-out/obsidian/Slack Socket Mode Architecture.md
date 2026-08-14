@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "concept"
-community: "docs/setup-slack.md"
+community: "skills/openclaw"
 location: "lines 1-16"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/setup-slackmd
+  - community/skills/openclaw
 ---
 
 # Slack Socket Mode Architecture
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Slack Channel Setup Guide]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/setup-slackmd
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "docker/QUICKSTART.md"
+community: "Bot Skill Config"
 location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/QUICKSTARTmd
+  - community/Bot_Skill_Config
 ---
 
 # Server-side setup
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Voice Terminal (optional — ESP32-S3-BOX-3 + Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/QUICKSTARTmd
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

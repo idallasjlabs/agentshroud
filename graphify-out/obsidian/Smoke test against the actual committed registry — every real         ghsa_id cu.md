@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_list_registry_ghsa_ids.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "docs/diagrams"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/diagrams
 ---
 
 # Smoke test against the actual committed registry — every real         ghsa_id cu
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_against_the_real_registry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/diagrams

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "scripts/sync-cve-registry.py"
+community: "Gateway Test Suite"
 location: "L650"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Gateway_Test_Suite
 ---
 
 # Serialize an under_review entry to Python source matching the file schema.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_ghsa_entry_to_py()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

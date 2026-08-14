@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "gateway/README.md"
+community: "Architecture Docs"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gateway/READMEmd
+  - community/Architecture_Docs
 ---
 
 # Setup
@@ -18,4 +18,4 @@ tags:
 - [[4. Test]] - `contains` [EXTRACTED]
 - [[Gateway Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gateway/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

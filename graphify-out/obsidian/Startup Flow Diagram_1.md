@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Security Module"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Security_Module
 ---
 
 # Startup Flow Diagram
@@ -17,4 +17,4 @@ tags:
 - [[Related Notes_74]] - `contains` [EXTRACTED]
 - [[Startup Flow Diagram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Security Docs"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Security_Docs
 ---
 
 # Skill: Technical Illustrator (TI)
@@ -24,4 +24,4 @@ tags:
 - [[SKILL_120]] - `contains` [EXTRACTED]
 - [[Validation Checklist_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

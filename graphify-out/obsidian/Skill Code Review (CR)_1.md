@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # Skill: Code Review (CR)
@@ -19,4 +19,4 @@ tags:
 - [[Role_45]] - `contains` [EXTRACTED]
 - [[SKILL_78]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/vault

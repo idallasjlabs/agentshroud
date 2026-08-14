@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-value-stream-mapping/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Docker Deploy Scripts"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Docker_Deploy_Scripts
 ---
 
 # Skill: value-stream-mapping
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_61]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts

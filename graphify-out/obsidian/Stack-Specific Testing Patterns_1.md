@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docker/bot-capabilities.md"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docker/bot-capabilitiesmd
 ---
 
 # Stack-Specific Testing Patterns
@@ -19,4 +19,4 @@ tags:
 - [[Step Function Input Validation_1]] - `contains` [EXTRACTED]
 - [[Zabbix API  →  `unittest.mock`_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd

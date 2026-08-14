@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "Web Control Center"
+community: "scripts/migrate-cve-registry-ghsa.py"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Web_Control_Center
+  - community/scripts/migrate-cve-registry-ghsapy
 ---
 
 # Serve the audit log page.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[audit()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Web_Control_Center
+#graphify/rationale #graphify/EXTRACTED #community/scripts/migrate-cve-registry-ghsapy

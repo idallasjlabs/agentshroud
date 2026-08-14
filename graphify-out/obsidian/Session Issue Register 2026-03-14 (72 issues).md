@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reviews/session-issue-register-2026-03-14.md"
 type: "document"
-community: "Planning Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Session Issue Register 2026-03-14 (72 issues)
@@ -16,4 +16,4 @@ tags:
 - [[Leakage Issues (18-27) - Raw JSON leakage, XML function-call leakage, egress banners]] - `contains` [EXTRACTED]
 - [[Per-Collaborator Memory Isolation (Issues 54-55) - collab-{uid} workspaces]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

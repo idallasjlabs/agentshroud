@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Architecture Docs"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Architecture_Docs
 ---
 
 # Skills by Category
@@ -25,4 +25,4 @@ tags:
 - [[System Utilities_1]] - `contains` [EXTRACTED]
 - [[Workflow_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Planning Docs"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # Skill: MCP Tools Usage (MCP-TOOLS)
@@ -17,4 +17,4 @@ tags:
 - [[Role_19]] - `contains` [EXTRACTED]
 - [[SKILL_34]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

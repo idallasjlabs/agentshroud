@@ -1,11 +1,11 @@
 ---
 source_file: "docs/redteam/04-separation-of-privilege.md"
 type: "document"
-community: "docs/redteam"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/redteam
+  - community/Bot_Skill_Config
 ---
 
 # Separation of Privilege (Remediation) — gateway read-only to agent
@@ -19,4 +19,4 @@ tags:
 - [[SSH Proxy host deny list — block SSH to gateway host]] - `configures` [EXTRACTED]
 - [[Tier 1 Deployment Blockers (6 features, score 4.0+)]] - `requires` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/redteam
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

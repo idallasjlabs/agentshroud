@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Setup Docs"
+community: "Bot Skill Config"
 location: "L282"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Sidecar Mode
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 Choose Security Mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "docs/project"
+community: "Gateway Security Module"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Gateway_Security_Module
 ---
 
 # Sidecar Mode
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[setup-guide]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/project
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Security_Module

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "Slack API Proxy"
+community: "Gateway Test Suite"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Gateway_Test_Suite
 ---
 
 # SlackAPIProxy
 
 ## Connections
-- [[.__init__()_35]] - `method` [EXTRACTED]
+- [[.__init__()_34]] - `method` [EXTRACTED]
 - [[._call_slack_api()]] - `method` [EXTRACTED]
 - [[._intercept_connections_open()]] - `method` [EXTRACTED]
 - [[._is_owner_channel()]] - `method` [EXTRACTED]
@@ -26,7 +26,6 @@ tags:
 - [[Proxies bot Slack Web API calls through SecurityPipeline.      Outbound flow (bo]] - `rationale_for` [EXTRACTED]
 - [[SlackAPIProxy_2]] - `uses` [INFERRED]
 - [[SlackAPIProxy_1]] - `uses` [INFERRED]
-- [[SlackAPIProxy_3]] - `uses` [INFERRED]
 - [[SlackSocketClient]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TestBodyParsing]] - `uses` [INFERRED]
@@ -51,4 +50,4 @@ tags:
 - [[test_slack_proxy.py]] - `imports` [EXTRACTED]
 - [[test_slack_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Approval & FastAPI Ingest"
 location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Set up test environment.
@@ -17,4 +17,4 @@ tags:
 - [[TestRBACIntegration]] - `rationale_for` [EXTRACTED]
 - [[TestRBACManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Security Module"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Gateway_Security_Module
 ---
 
 # ServiceDescriptor
@@ -20,7 +20,7 @@ tags:
 - [[.test_stopped_service()]] - `calls` [EXTRACTED]
 - [[.test_unhealthy_service()]] - `calls` [EXTRACTED]
 - [[.test_with_resource_usage()]] - `calls` [EXTRACTED]
-- [[Any_65]] - `uses` [INFERRED]
+- [[Any_67]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[HealthStatus_1]] - `uses` [INFERRED]
 - [[ServiceDescriptor_1]] - `uses` [INFERRED]
@@ -32,4 +32,4 @@ tags:
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_services.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

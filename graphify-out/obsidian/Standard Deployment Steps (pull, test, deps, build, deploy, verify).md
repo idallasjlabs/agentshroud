@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "concept"
-community: "docs/runbooks"
+community: "Gateway Security Module"
 location: "line 14-67"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Gateway_Security_Module
 ---
 
 # Standard Deployment Steps (pull, test, deps, build, deploy, verify)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Deployment Runbook]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/runbooks
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Security_Module

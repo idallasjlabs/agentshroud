@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Gateway Skills System"
+community: "gateway/runtime"
 location: "L420"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Skills_System
+  - community/gateway/runtime
 ---
 
 # SkillGuard.scan_skill_tree()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[main()_10]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Skills_System
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime

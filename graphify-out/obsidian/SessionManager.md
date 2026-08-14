@@ -12,7 +12,7 @@ tags:
 # SessionManager
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_113]] - `method` [EXTRACTED]
 - [[._fingerprint()]] - `method` [EXTRACTED]
 - [[.cleanup_expired()_3]] - `method` [EXTRACTED]
@@ -31,7 +31,7 @@ tags:
 - [[.validate_nonce()]] - `method` [EXTRACTED]
 - [[.validate_session()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]

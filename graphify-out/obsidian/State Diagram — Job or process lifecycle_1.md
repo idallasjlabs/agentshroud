@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Security Docs"
 location: "L162"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Security_Docs
 ---
 
 # State Diagram — Job or process lifecycle
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Diagram Types and Data Lakehouse Examples_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

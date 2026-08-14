@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # Skills by Category
@@ -25,4 +25,4 @@ tags:
 - [[System Utilities]] - `contains` [EXTRACTED]
 - [[Workflow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/vault

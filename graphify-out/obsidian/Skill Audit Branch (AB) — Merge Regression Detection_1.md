@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ab/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Planning Docs"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # Skill: Audit Branch (AB) — Merge Regression Detection
@@ -24,4 +24,4 @@ tags:
 - [[Step 5 — Classify findings_1]] - `contains` [EXTRACTED]
 - [[Step 6 — Output the report_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

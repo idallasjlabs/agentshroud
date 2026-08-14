@@ -16,7 +16,7 @@ tags:
 - [[Invocation_4]] - `contains` [EXTRACTED]
 - [[Jira ticket — every development batch gets one_2]] - `contains` [EXTRACTED]
 - [[Mode A — Single task_2]] - `contains` [EXTRACTED]
-- [[Mode B — Comprehensive Review Sweep]] - `contains` [EXTRACTED]
+- [[Mode B — Comprehensive review sweep_2]] - `contains` [EXTRACTED]
 - [[Reviewers and fixer available to you_2]] - `contains` [EXTRACTED]
 - [[Role_50]] - `contains` [EXTRACTED]
 - [[SKILL_86]] - `contains` [EXTRACTED]

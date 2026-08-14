@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docker/bot-capabilities.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docker/bot-capabilitiesmd
 ---
 
 # Skill: Test-Driven Development (TDD)
@@ -20,4 +20,4 @@ tags:
 - [[Stack-Specific Testing Patterns_1]] - `contains` [EXTRACTED]
 - [[Test Structure_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd

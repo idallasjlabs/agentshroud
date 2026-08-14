@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "scripts/canary-deploy.sh"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/scripts/canary-deploysh
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR)
@@ -21,4 +21,4 @@ tags:
 - [[SKILL_96]] - `contains` [EXTRACTED]
 - [[When to Invoke_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/scripts/canary-deploysh

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pm/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/TEAM.md"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/TEAMmd
 ---
 
 # Skill: Project Management (PM)
@@ -20,4 +20,4 @@ tags:
 - [[Status Reporting_1]] - `contains` [EXTRACTED]
 - [[Task Coordination_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/TEAMmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Custom Skills"
 location: "L561"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Custom_Skills
 ---
 
 # Standalone 'blocked unauthorized command execution' without AGENTSHROUD prefix.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_blocked_unauthorized_command()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Custom_Skills

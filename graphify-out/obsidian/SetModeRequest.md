@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Test Suite"
 location: "L1344"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Dashboard
+  - community/Gateway_Test_Suite
 ---
 
 # SetModeRequest
@@ -26,4 +26,4 @@ tags:
 - [[router.py_1]] - `contains` [EXTRACTED]
 - [[set_group_mode()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Dashboard
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

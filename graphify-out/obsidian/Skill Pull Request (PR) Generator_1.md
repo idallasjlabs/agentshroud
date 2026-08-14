@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Planning Docs"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # Skill: Pull Request (PR) Generator
@@ -18,4 +18,4 @@ tags:
 - [[Role_62]] - `contains` [EXTRACTED]
 - [[SKILL_105]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "Kill Switch Config"
+community: "Gateway Test Suite"
 location: "L624"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Kill_Switch_Config
+  - community/Gateway_Test_Suite
 ---
 
 # Send alert for anomaly detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._send_anomaly_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch_Config
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

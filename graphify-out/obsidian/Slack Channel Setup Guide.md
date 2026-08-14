@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "document"
-community: "docs/setup-slack.md"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/setup-slackmd
+  - community/skills/openclaw
 ---
 
 # Slack Channel Setup Guide
@@ -14,4 +14,4 @@ tags:
 - [[Slack Bot Tokens (xoxb-, xapp-)]] - `requires` [EXTRACTED]
 - [[Slack Socket Mode Architecture]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/setup-slackmd
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

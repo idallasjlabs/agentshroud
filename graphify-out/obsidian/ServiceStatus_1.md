@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Security Module"
 location: "L190"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Dashboard
+  - community/Gateway_Security_Module
 ---
 
 # ServiceStatus
@@ -18,4 +18,4 @@ tags:
 - [[ServiceStatus]] - `uses` [INFERRED]
 - [[_engine_status_to_service_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Dashboard
+#graphify/code #graphify/INFERRED #community/Gateway_Security_Module

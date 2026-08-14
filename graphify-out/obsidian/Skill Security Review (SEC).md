@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "skills/openclaw"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/skills/openclaw
 ---
 
 # Skill: Security Review (SEC)
@@ -21,4 +21,4 @@ tags:
 - [[SecureClaw-Specific Threat Model]] - `contains` [EXTRACTED]
 - [[Verification Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

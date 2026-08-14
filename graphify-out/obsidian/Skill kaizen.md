@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "scripts/disaster-recovery-backup.sh"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/scripts/disaster-recovery-backupsh
 ---
 
 # Skill: kaizen
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_27]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/scripts/disaster-recovery-backupsh

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Setup Docs"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Docs
 ---
 
 # Skill: CI/CD Pipeline Advisor (CICD)
@@ -19,4 +19,4 @@ tags:
 - [[Role_8]] - `contains` [EXTRACTED]
 - [[SKILL_14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

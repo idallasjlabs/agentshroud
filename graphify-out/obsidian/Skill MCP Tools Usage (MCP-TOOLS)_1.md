@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Architecture Docs"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Architecture_Docs
 ---
 
 # Skill: MCP Tools Usage (MCP-TOOLS)
@@ -17,4 +17,4 @@ tags:
 - [[Role_55]] - `contains` [EXTRACTED]
 - [[SKILL_97]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

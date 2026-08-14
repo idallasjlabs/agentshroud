@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "Security Module Middleware"
+community: "Telegram Proxy Test Suite"
 location: "L1358"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Module_Middleware
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Set configuration and initialize tool result sanitizer
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

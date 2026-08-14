@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # Skill: MCP Auth Reset (MCPM-AUTH-RESET)
@@ -22,4 +22,4 @@ tags:
 - [[Verification Checklist]] - `contains` [EXTRACTED]
 - [[When to Invoke]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/vault

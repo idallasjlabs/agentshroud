@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Enforce-Mode Auto-Revert"
 location: "L371"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # Set trust level for an agent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_trust_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert

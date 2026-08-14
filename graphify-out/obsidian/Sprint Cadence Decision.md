@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "document"
-community: "docs/governance"
+community: "browser-extension/options.js"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/governance
+  - community/browser-extension/optionsjs
 ---
 
 # Sprint Cadence Decision
@@ -19,4 +19,4 @@ tags:
 - [[What We Do Instead]] - `contains` [EXTRACTED]
 - [[When to Revisit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/governance
+#graphify/document #graphify/EXTRACTED #community/browser-extension/optionsjs

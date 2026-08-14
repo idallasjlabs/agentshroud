@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "voice_gateway/stt.py"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/voice_gateway/sttpy
 ---
 
 # Stack-Specific Testing Patterns
@@ -19,4 +19,4 @@ tags:
 - [[Step Function Input Validation]] - `contains` [EXTRACTED]
 - [[Zabbix API  →  `unittest.mock`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/voice_gateway/sttpy

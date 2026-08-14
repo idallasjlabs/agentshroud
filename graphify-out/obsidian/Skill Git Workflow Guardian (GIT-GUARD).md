@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-gg/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # Skill: Git Workflow Guardian (GIT-GUARD)
@@ -21,4 +21,4 @@ tags:
 - [[Role_13]] - `contains` [EXTRACTED]
 - [[SKILL_21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

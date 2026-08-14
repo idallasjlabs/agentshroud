@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "docs/vault"
+community: "skills/openclaw"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/skills/openclaw
 ---
 
 # Startup Errors
@@ -19,4 +19,4 @@ tags:
 - [[Startup Errors_1]] - `contains` [EXTRACTED]
 - [[troubleshooting]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

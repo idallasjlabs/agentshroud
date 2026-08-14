@@ -1,11 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
-type: "concept"
-community: "Architecture Docs"
+type: "document"
+community: "Bot Skill Config"
+location: "L46"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Sidecar Mode (Performance Optimized)
@@ -14,4 +15,4 @@ tags:
 - [[ADR-001 Transparent Proxy Decision]] - `conceptually_related_to` [INFERRED]
 - [[Deployment Modes]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

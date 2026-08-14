@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-observability/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "scripts/emergency-rollback.sh"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/scripts/emergency-rollbacksh
 ---
 
 # Skill: observability
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_37]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/scripts/emergency-rollbacksh

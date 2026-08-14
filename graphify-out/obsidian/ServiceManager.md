@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "SOC Service Manager"
+community: "Tool Chain Analyzer"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager
+  - community/Tool_Chain_Analyzer
 ---
 
 # ServiceManager
@@ -57,7 +57,7 @@ tags:
 - [[.update_service()]] - `method` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_64]] - `uses` [INFERRED]
+- [[Any_66]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult_1]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
@@ -71,10 +71,9 @@ tags:
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_7]] - `uses` [INFERRED]
+- [[Request_6]] - `uses` [INFERRED]
 - [[ResourceUsage_1]] - `uses` [INFERRED]
 - [[SCLCaller_1]] - `uses` [INFERRED]
-- [[SCLCaller_3]] - `uses` [INFERRED]
 - [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
@@ -103,7 +102,7 @@ tags:
 - [[TestStatusMappings]] - `uses` [INFERRED]
 - [[Thin wrapper around the container engine that produces ServiceDescriptors.]] - `rationale_for` [EXTRACTED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
-- [[WebSocket_6]] - `uses` [INFERRED]
+- [[WebSocket_5]] - `uses` [INFERRED]
 - [[_FakeResponse]] - `uses` [INFERRED]
 - [[_FakeUnixSocket]] - `uses` [INFERRED]
 - [[get_health()_1]] - `calls` [EXTRACTED]
@@ -119,4 +118,4 @@ tags:
 - [[update_service()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer

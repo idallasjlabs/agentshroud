@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
-location: "L7348"
+community: "Bot Skill Config"
+location: "L7392"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Bot_Skill_Config
 ---
 
 # Send a rate-limited activity mirror to the owner chat for collaborator messages.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._mirror_to_owner_if_collaborator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

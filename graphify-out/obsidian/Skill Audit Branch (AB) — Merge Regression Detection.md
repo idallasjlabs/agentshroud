@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # Skill: Audit Branch (AB) — Merge Regression Detection
@@ -24,4 +24,4 @@ tags:
 - [[Step 5 — Classify findings]] - `contains` [EXTRACTED]
 - [[Step 6 — Output the report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/vault

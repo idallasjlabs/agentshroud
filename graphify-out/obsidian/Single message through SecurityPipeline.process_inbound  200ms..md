@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Bot Skill Config"
 location: "L291"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Bot_Skill_Config
 ---
 
 # Single message through SecurityPipeline.process_inbound < 200ms.
@@ -15,4 +15,4 @@ tags:
 - [[.test_single_inbound_under_200ms()]] - `rationale_for` [EXTRACTED]
 - [[.test_single_outbound_under_200ms()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

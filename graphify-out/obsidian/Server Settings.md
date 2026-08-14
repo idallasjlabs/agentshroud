@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Setup Docs"
+community: "Bot Skill Config"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Server Settings
@@ -15,4 +15,4 @@ tags:
 - [[📅 Google Calendar (CalDAV)]] - `contains` [EXTRACTED]
 - [[📞 Google Contacts (CardDAV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

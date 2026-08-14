@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # Skill: Security Review (SEC)
@@ -21,4 +21,4 @@ tags:
 - [[SecureClaw-Specific Threat Model_1]] - `contains` [EXTRACTED]
 - [[Verification Commands_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-kanban/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "scripts/egress-iptables.sh"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/scripts/egress-iptablessh
 ---
 
 # Skill: kanban
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_28]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/scripts/egress-iptablessh

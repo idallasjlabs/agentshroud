@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Gateway Test Suite"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Gateway_Test_Suite
 ---
 
 # ServicePrivacy
 
 ## Connections
-- [[.from_dict()_8]] - `calls` [EXTRACTED]
+- [[.from_dict()_9]] - `calls` [EXTRACTED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[Privacy classification for a service.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[str]] - `inherits` [EXTRACTED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

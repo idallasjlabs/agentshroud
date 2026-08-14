@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Auth & Exception Types"
 location: "L45"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Config__Test_Fixtures
+  - community/Auth__Exception_Types
 ---
 
 # Session
@@ -44,4 +44,4 @@ tags:
 - [[session_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

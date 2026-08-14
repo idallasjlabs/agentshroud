@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "voice_gateway/server.py"
+community: "Planning Docs"
 location: "L424"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/voice_gateway/serverpy
+  - community/Planning_Docs
 ---
 
 # Send a heartbeat every 4 s to keep Tailscale Funnel relay and hotspot NAT alive.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_keepalive()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/voice_gateway/serverpy
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

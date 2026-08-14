@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Security Docs"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Security_Docs
 ---
 
 # Set a per-agent egress policy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_agent_policy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Security_Docs

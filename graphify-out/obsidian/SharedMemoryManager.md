@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "Group Workspace Isolation"
+community: "Gateway Test Suite"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Group_Workspace_Isolation
+  - community/Gateway_Test_Suite
 ---
 
 # SharedMemoryManager
@@ -69,4 +69,4 @@ tags:
 - [[test_shared_memory.py]] - `imports` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Group_Workspace_Isolation
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

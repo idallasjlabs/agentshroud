@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Enforce-Mode Auto-Revert"
+community: "SOC Service Manager"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enforce-Mode_Auto-Revert
+  - community/SOC_Service_Manager
 ---
 
 # SimpleNamespace
@@ -27,4 +27,4 @@ tags:
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[_container()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert
+#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager

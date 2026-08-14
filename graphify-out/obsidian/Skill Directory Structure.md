@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # Skill Directory Structure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Skills Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/vault

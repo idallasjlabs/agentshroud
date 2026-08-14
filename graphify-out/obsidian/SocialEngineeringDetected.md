@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "PII Sanitizer Pipeline"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # SocialEngineeringDetected
@@ -15,4 +15,4 @@ tags:
 - [[Exception]] - `inherits` [EXTRACTED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

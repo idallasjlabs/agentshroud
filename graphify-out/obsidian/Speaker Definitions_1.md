@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # Speaker Definitions
@@ -16,4 +16,4 @@ tags:
 - [[HOST_1]] - `contains` [EXTRACTED]
 - [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/vault

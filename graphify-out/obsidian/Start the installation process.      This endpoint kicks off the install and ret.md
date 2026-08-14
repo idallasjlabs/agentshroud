@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Gateway Ingest API"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Ingest_API
 ---
 
 # Start the installation process.      This endpoint kicks off the install and ret
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[start_install()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Ingest_API

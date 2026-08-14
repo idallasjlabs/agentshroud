@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Test Suite"
 location: "L1051"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Dashboard
+  - community/Gateway_Test_Suite
 ---
 
 # SetRoleRequest
@@ -26,4 +26,4 @@ tags:
 - [[router.py_1]] - `contains` [EXTRACTED]
 - [[set_user_role()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Dashboard
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

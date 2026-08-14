@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/per-agent-isolation.md"
 type: "concept"
-community: "Architecture Docs"
+community: "Bot Skill Config"
 location: "line 10"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Shared-Nothing Isolation (no filesystem, network, or IPC sharing between agents)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Per-Agent Container Isolation Architecture Document]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

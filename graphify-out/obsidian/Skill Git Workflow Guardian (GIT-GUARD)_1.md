@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-gg/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Planning Docs"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # Skill: Git Workflow Guardian (GIT-GUARD)
@@ -21,4 +21,4 @@ tags:
 - [[Role_49]] - `contains` [EXTRACTED]
 - [[SKILL_84]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

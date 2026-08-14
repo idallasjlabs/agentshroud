@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Gateway Proxy Layer"
-location: "L277"
+community: "Security Docs"
+location: "L316"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Security_Docs
 ---
 
 # Send a single Telegram notice per cooldown window when failover activates.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._emit_failover_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/rationale #graphify/EXTRACTED #community/Security_Docs

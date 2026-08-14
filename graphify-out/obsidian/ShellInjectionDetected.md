@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "ESP32 Firmware"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/ESP32_Firmware
 ---
 
 # ShellInjectionDetected
@@ -20,4 +20,4 @@ tags:
 - [[TestWhitelistBlacklist]] - `uses` [INFERRED]
 - [[consent_framework.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/ESP32_Firmware

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Approval & FastAPI Ingest"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Approval__FastAPI_Ingest
 ---
 
 # SharedMemoryManager.append_to_group_memory()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

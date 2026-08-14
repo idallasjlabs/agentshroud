@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "concept"
-community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+community: ".github/agents"
 location: "Section 2.2"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+  - community/github/agents
 ---
 
 # Standard Character Mark: AGENTSHROUD (Classes 9 + 42)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[USPTO_TRADEMARK_APPLICATION]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+#graphify/concept #graphify/EXTRACTED #community/github/agents

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "scripts/verify-greeter-state.sh"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/scripts/verify-greeter-statesh
 ---
 
 # Skill: kaizen
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_90]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/scripts/verify-greeter-statesh

@@ -12,8 +12,8 @@ tags:
 # ServicePolicy
 
 ## Connections
-- [[.from_dict()_9]] - `calls` [EXTRACTED]
-- [[.from_dict()_8]] - `method` [EXTRACTED]
+- [[.from_dict()_10]] - `calls` [EXTRACTED]
+- [[.from_dict()_9]] - `method` [EXTRACTED]
 - [[Privacy policy for a single service.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]

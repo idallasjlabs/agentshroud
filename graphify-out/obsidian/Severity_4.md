@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "Planning Docs"
+community: "Bot Skill Config"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Severity
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

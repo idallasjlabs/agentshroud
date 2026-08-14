@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-cd/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "scripts/canary-cron.sh"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/scripts/canary-cronsh
 ---
 
 # Skill: cd
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/scripts/canary-cronsh

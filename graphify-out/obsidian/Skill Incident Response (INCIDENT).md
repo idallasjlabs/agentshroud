@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-production/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Planning Docs"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # Skill: Incident Response (INCIDENT)
@@ -18,4 +18,4 @@ tags:
 - [[SKILL_43]] - `contains` [EXTRACTED]
 - [[Severity Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Approval & FastAPI Ingest"
 location: "L266"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Set a user's role (owner-only operation).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_user_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

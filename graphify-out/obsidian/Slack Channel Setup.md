@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-slack.md"
 type: "document"
-community: "docs/setup-slack.md"
+community: "Security Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/setup-slackmd
+  - community/Security_Docs
 ---
 
 # Slack Channel Setup
@@ -28,4 +28,4 @@ tags:
 - [[Troubleshooting_19]] - `contains` [EXTRACTED]
 - [[setup-slack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/setup-slackmd
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

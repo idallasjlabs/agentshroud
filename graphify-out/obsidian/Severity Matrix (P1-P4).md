@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-production/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Planning Docs"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # Severity Matrix (P1-P4)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-production SKILL (Incident Response  INCIDENT)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Planning_Docs
