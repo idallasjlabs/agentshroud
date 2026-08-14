@@ -36,6 +36,7 @@ logger = logging.getLogger("agentshroud.proxy.telegram_gateway_relay")
 @dataclass
 class TelegramSendResult:
     """Result of a Telegram send operation via gateway."""
+
     success: bool
     message_id: Optional[int] = None
     error: Optional[str] = None
@@ -54,9 +55,7 @@ class TelegramGatewayRelay:
         gateway_url: str | None = None,
         auth_token: str | None = None,
     ):
-        self.gateway_url = gateway_url or os.environ.get(
-            "GATEWAY_BASE_URL", "http://gateway:8080"
-        )
+        self.gateway_url = gateway_url or os.environ.get("GATEWAY_BASE_URL", "http://gateway:8080")
         self.auth_token = auth_token or os.environ.get("GATEWAY_AUTH_TOKEN", "")
 
     def send_message(
@@ -112,9 +111,7 @@ class TelegramGatewayRelay:
                 )
         except urllib.error.HTTPError as exc:
             error_body = exc.read().decode("utf-8", errors="replace")
-            logger.error(
-                "Telegram relay failed: HTTP %d — %s", exc.code, error_body[:200]
-            )
+            logger.error("Telegram relay failed: HTTP %d — %s", exc.code, error_body[:200])
             return TelegramSendResult(
                 success=False,
                 error=f"HTTP {exc.code}: {error_body[:200]}",

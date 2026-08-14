@@ -38,51 +38,58 @@ logger = logging.getLogger("agentshroud.security.subagent_governance")
 
 class GovernanceAction(str, Enum):
     """Action to take when a governance limit is hit."""
-    ALLOW = "allow"        # Log and allow (monitor mode)
-    WARN = "warn"          # Allow but flag for review
-    DENY = "deny"          # Block the action
+
+    ALLOW = "allow"  # Log and allow (monitor mode)
+    WARN = "warn"  # Allow but flag for review
+    DENY = "deny"  # Block the action
     ESCALATE = "escalate"  # Route to ApprovalQueue for human decision
 
 
 @dataclass
 class ResourceBudget:
     """Per-subagent resource limits."""
-    max_tokens: int = 100_000           # Total input+output tokens
-    max_api_calls: int = 50             # Total LLM API calls
-    max_tool_calls: int = 200           # Total tool invocations
+
+    max_tokens: int = 100_000  # Total input+output tokens
+    max_api_calls: int = 50  # Total LLM API calls
+    max_tool_calls: int = 200  # Total tool invocations
     max_egress_bytes: int = 10_485_760  # 10 MB outbound data
-    max_runtime_seconds: int = 3600     # 1 hour wall-clock time
+    max_runtime_seconds: int = 3600  # 1 hour wall-clock time
     on_exceed: GovernanceAction = GovernanceAction.DENY
 
 
 @dataclass
 class OutputTrustConfig:
     """Configuration for subagent output trust scoring."""
-    min_trust_threshold: int = 50       # Minimum score to accept output (0-100)
-    pii_check: bool = True              # Check output for PII leakage
-    injection_check: bool = True        # Check output for prompt injection
-    exfil_check: bool = True            # Check output for data exfiltration patterns
+
+    min_trust_threshold: int = 50  # Minimum score to accept output (0-100)
+    pii_check: bool = True  # Check output for PII leakage
+    injection_check: bool = True  # Check output for prompt injection
+    exfil_check: bool = True  # Check output for data exfiltration patterns
     on_low_trust: GovernanceAction = GovernanceAction.ESCALATE
 
 
 @dataclass
 class PrivilegePolicy:
     """Privilege escalation prevention policy."""
-    strict_inheritance: bool = True     # Subagent trust <= parent trust (always)
-    depth_penalty: int = 10             # Trust penalty per nesting level
-    max_depth: int = 5                  # Maximum delegation depth
-    deny_tools: list[str] = field(default_factory=lambda: [
-        "delegate_task",   # Prevent recursive delegation by default
-        "memory",          # Subagents can't modify parent's memory
-        "send_message",    # Subagents can't message users directly
-        "cronjob",         # Subagents can't create scheduled jobs
-    ])
+
+    strict_inheritance: bool = True  # Subagent trust <= parent trust (always)
+    depth_penalty: int = 10  # Trust penalty per nesting level
+    max_depth: int = 5  # Maximum delegation depth
+    deny_tools: list[str] = field(
+        default_factory=lambda: [
+            "delegate_task",  # Prevent recursive delegation by default
+            "memory",  # Subagents can't modify parent's memory
+            "send_message",  # Subagents can't message users directly
+            "cronjob",  # Subagents can't create scheduled jobs
+        ]
+    )
     on_escalation: GovernanceAction = GovernanceAction.DENY
 
 
 @dataclass
 class GovernanceConfig:
     """Top-level governance configuration."""
+
     enabled: bool = True
     mode: str = "enforce"  # "monitor" or "enforce"
     resource_budget: ResourceBudget = field(default_factory=ResourceBudget)
@@ -126,6 +133,7 @@ class GovernanceEvent:
 @dataclass
 class ResourceUsage:
     """Tracks cumulative resource consumption for a single subagent."""
+
     tokens_used: int = 0
     api_calls: int = 0
     tool_calls: int = 0
@@ -154,7 +162,8 @@ class ResourceUsage:
 @dataclass
 class OutputScore:
     """Result of scoring a subagent's output."""
-    trust_score: int          # 0-100
+
+    trust_score: int  # 0-100
     pii_detected: bool = False
     injection_detected: bool = False
     exfil_patterns: bool = False
@@ -199,10 +208,10 @@ class SubagentGovernance:
 
     def __init__(self, config: GovernanceConfig | None = None):
         self.config = config or GovernanceConfig()
-        self._usage: dict[str, dict[str, ResourceUsage]] = {}   # session -> agent -> usage
-        self._trust: dict[str, dict[str, int]] = {}              # session -> agent -> trust
-        self._depth: dict[str, dict[str, int]] = {}              # session -> agent -> depth
-        self._denied_tools: dict[str, dict[str, set]] = {}       # session -> agent -> denied tools
+        self._usage: dict[str, dict[str, ResourceUsage]] = {}  # session -> agent -> usage
+        self._trust: dict[str, dict[str, int]] = {}  # session -> agent -> trust
+        self._depth: dict[str, dict[str, int]] = {}  # session -> agent -> depth
+        self._denied_tools: dict[str, dict[str, set]] = {}  # session -> agent -> denied tools
         self._events: list[GovernanceEvent] = []
 
     # -------------------------------------------------------------------
@@ -226,7 +235,9 @@ class SubagentGovernance:
         # Check depth limit
         if depth > policy.max_depth:
             event = self._log_event(
-                session_id, agent_id, GovernanceEventType.DEPTH_EXCEEDED,
+                session_id,
+                agent_id,
+                GovernanceEventType.DEPTH_EXCEEDED,
                 policy.on_escalation,
                 f"depth={depth}, max={policy.max_depth}",
                 parent_id=parent_id,
@@ -252,7 +263,11 @@ class SubagentGovernance:
         logger.info(
             "Subagent spawn authorized: session=%s agent=%s parent=%s "
             "trust=%d depth=%d denied_tools=%s",
-            session_id, agent_id, parent_id, effective_trust, depth,
+            session_id,
+            agent_id,
+            parent_id,
+            effective_trust,
+            depth,
             policy.deny_tools,
         )
         return True, f"authorized, trust={effective_trust}, depth={depth}"
@@ -274,7 +289,9 @@ class SubagentGovernance:
         denied = self._denied_tools.get(session_id, {}).get(agent_id, set())
         if tool_name in denied:
             self._log_event(
-                session_id, agent_id, GovernanceEventType.TOOL_DENIED,
+                session_id,
+                agent_id,
+                GovernanceEventType.TOOL_DENIED,
                 GovernanceAction.DENY,
                 f"tool={tool_name} is in deny list for subagents",
             )
@@ -390,17 +407,25 @@ class SubagentGovernance:
         # Log governance events for flagged outputs
         if pii_detected:
             self._log_event(
-                session_id, agent_id, GovernanceEventType.OUTPUT_PII_DETECTED,
-                config.on_low_trust, f"PII in output: {', '.join(reasons)}",
+                session_id,
+                agent_id,
+                GovernanceEventType.OUTPUT_PII_DETECTED,
+                config.on_low_trust,
+                f"PII in output: {', '.join(reasons)}",
             )
         if injection_detected:
             self._log_event(
-                session_id, agent_id, GovernanceEventType.OUTPUT_INJECTION_DETECTED,
-                config.on_low_trust, f"Injection in output: {', '.join(reasons)}",
+                session_id,
+                agent_id,
+                GovernanceEventType.OUTPUT_INJECTION_DETECTED,
+                config.on_low_trust,
+                f"Injection in output: {', '.join(reasons)}",
             )
         if score < config.min_trust_threshold:
             self._log_event(
-                session_id, agent_id, GovernanceEventType.OUTPUT_LOW_TRUST,
+                session_id,
+                agent_id,
+                GovernanceEventType.OUTPUT_LOW_TRUST,
                 config.on_low_trust,
                 f"Output trust score {score} < threshold {config.min_trust_threshold}",
             )
@@ -420,7 +445,9 @@ class SubagentGovernance:
         if usage:
             logger.info(
                 "Subagent deregistered: session=%s agent=%s usage=%s",
-                session_id, agent_id, usage.to_dict(),
+                session_id,
+                agent_id,
+                usage.to_dict(),
             )
         return usage
 
@@ -453,7 +480,8 @@ class SubagentGovernance:
                 "denied_tools": sorted(self._denied_tools.get(session_id, {}).get(agent_id, set())),
             }
         violations = [
-            e for e in self._events
+            e
+            for e in self._events
             if e.session_id == session_id
             and e.action_taken in (GovernanceAction.DENY, GovernanceAction.ESCALATE)
         ]
@@ -496,7 +524,9 @@ class SubagentGovernance:
         # Warning at 80%
         if current >= limit * 0.8 and current < limit:
             self._log_event(
-                session_id, agent_id, GovernanceEventType.BUDGET_WARNING,
+                session_id,
+                agent_id,
+                GovernanceEventType.BUDGET_WARNING,
                 GovernanceAction.WARN,
                 f"{label}: {current}/{limit} (80% threshold)",
             )
@@ -504,7 +534,9 @@ class SubagentGovernance:
         # Hard limit
         if current >= limit:
             self._log_event(
-                session_id, agent_id, GovernanceEventType.BUDGET_EXCEEDED,
+                session_id,
+                agent_id,
+                GovernanceEventType.BUDGET_EXCEEDED,
                 budget.on_exceed,
                 f"{label}: {current}/{limit} — EXCEEDED",
             )
@@ -534,7 +566,11 @@ class SubagentGovernance:
         self._events.append(event)
         logger.info(
             "Governance event: %s %s %s action=%s — %s",
-            session_id, agent_id, event_type.value, action.value, details,
+            session_id,
+            agent_id,
+            event_type.value,
+            action.value,
+            details,
         )
         return event
 

@@ -2,6 +2,7 @@
 """Tests for A2A Governance Proxy."""
 
 import time
+
 import pytest
 
 from gateway.security.a2a_governance import (
@@ -216,23 +217,35 @@ class TestPIISanitization:
 class TestMessageFingerprint:
     def test_fingerprint_deterministic(self):
         msg1 = A2AMessage(
-            message_id="m1", message_type=A2AMessageType.TASK_REQUEST,
-            source_agent="a", target_agent="b", payload={"x": 1},
+            message_id="m1",
+            message_type=A2AMessageType.TASK_REQUEST,
+            source_agent="a",
+            target_agent="b",
+            payload={"x": 1},
         )
         msg2 = A2AMessage(
-            message_id="m2", message_type=A2AMessageType.TASK_REQUEST,
-            source_agent="a", target_agent="b", payload={"x": 1},
+            message_id="m2",
+            message_type=A2AMessageType.TASK_REQUEST,
+            source_agent="a",
+            target_agent="b",
+            payload={"x": 1},
         )
         assert msg1.fingerprint == msg2.fingerprint
 
     def test_fingerprint_differs_for_different_payloads(self):
         msg1 = A2AMessage(
-            message_id="m1", message_type=A2AMessageType.TASK_REQUEST,
-            source_agent="a", target_agent="b", payload={"x": 1},
+            message_id="m1",
+            message_type=A2AMessageType.TASK_REQUEST,
+            source_agent="a",
+            target_agent="b",
+            payload={"x": 1},
         )
         msg2 = A2AMessage(
-            message_id="m2", message_type=A2AMessageType.TASK_REQUEST,
-            source_agent="a", target_agent="b", payload={"x": 2},
+            message_id="m2",
+            message_type=A2AMessageType.TASK_REQUEST,
+            source_agent="a",
+            target_agent="b",
+            payload={"x": 2},
         )
         assert msg1.fingerprint != msg2.fingerprint
 

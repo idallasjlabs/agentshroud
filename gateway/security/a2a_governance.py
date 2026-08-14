@@ -54,29 +54,32 @@ logger = logging.getLogger("agentshroud.security.a2a_governance")
 
 class A2AMessageType(str, Enum):
     """A2A protocol message types (based on A2A v1.0 spec)."""
-    DISCOVER = "discover"          # Peer discovery request
+
+    DISCOVER = "discover"  # Peer discovery request
     CAPABILITIES = "capabilities"  # Capability advertisement
-    TASK_REQUEST = "task_request"   # Delegate a task to peer
-    TASK_RESULT = "task_result"     # Return task result
-    HEARTBEAT = "heartbeat"        # Keepalive
-    ERROR = "error"                # Error response
+    TASK_REQUEST = "task_request"  # Delegate a task to peer
+    TASK_RESULT = "task_result"  # Return task result
+    HEARTBEAT = "heartbeat"  # Keepalive
+    ERROR = "error"  # Error response
 
 
 class A2ADecision(str, Enum):
     """Governance decision for an A2A message."""
+
     ALLOW = "allow"
-    SANITIZE = "sanitize"     # Allow but strip PII/sensitive data
+    SANITIZE = "sanitize"  # Allow but strip PII/sensitive data
     DENY = "deny"
-    QUARANTINE = "quarantine" # Hold for human review
+    QUARANTINE = "quarantine"  # Hold for human review
 
 
 @dataclass
 class A2APeer:
     """Registered A2A peer agent."""
+
     agent_id: str
     agent_name: str
-    endpoint: str              # A2A endpoint URL
-    trust_score: int = 0       # 0-100, from TrustManager
+    endpoint: str  # A2A endpoint URL
+    trust_score: int = 0  # 0-100, from TrustManager
     capabilities: list[str] = field(default_factory=list)
     registered_at: float = field(default_factory=time.time)
     last_seen: float = field(default_factory=time.time)
@@ -105,6 +108,7 @@ class A2APeer:
 @dataclass
 class A2AMessage:
     """An A2A protocol message passing through the governance proxy."""
+
     message_id: str
     message_type: A2AMessageType
     source_agent: str
@@ -124,6 +128,7 @@ class A2AMessage:
 @dataclass
 class A2AGovernanceEvent:
     """Audit event for A2A governance decisions."""
+
     timestamp: float
     message_id: str
     source_agent: str
@@ -142,16 +147,17 @@ class A2AGovernanceEvent:
 @dataclass
 class A2AGovernanceConfig:
     """Configuration for the A2A governance proxy."""
+
     enabled: bool = True
-    mode: str = "enforce"                     # "monitor" or "enforce"
-    min_peer_trust: int = 50                  # Minimum trust score to communicate
-    require_mutual_auth: bool = True          # Both peers must be registered
-    sanitize_pii: bool = True                 # Strip PII from A2A messages
-    max_message_size_bytes: int = 1_048_576   # 1 MB max message
-    rate_limit_per_minute: int = 60           # Per-peer rate limit
-    max_concurrent_tasks: int = 10            # Max concurrent delegated tasks
-    audit_all_messages: bool = True           # Log every message to AuditLedger
-    quarantine_unknown_peers: bool = True     # Hold messages from unknown peers
+    mode: str = "enforce"  # "monitor" or "enforce"
+    min_peer_trust: int = 50  # Minimum trust score to communicate
+    require_mutual_auth: bool = True  # Both peers must be registered
+    sanitize_pii: bool = True  # Strip PII from A2A messages
+    max_message_size_bytes: int = 1_048_576  # 1 MB max message
+    rate_limit_per_minute: int = 60  # Per-peer rate limit
+    max_concurrent_tasks: int = 10  # Max concurrent delegated tasks
+    audit_all_messages: bool = True  # Log every message to AuditLedger
+    quarantine_unknown_peers: bool = True  # Hold messages from unknown peers
 
 
 # ---------------------------------------------------------------------------
@@ -186,7 +192,7 @@ class A2AGovernanceProxy:
         self._peers: dict[str, A2APeer] = {}
         self._events: list[A2AGovernanceEvent] = []
         self._rate_counters: dict[str, list[float]] = {}  # agent_id -> [timestamps]
-        self._active_tasks: dict[str, int] = {}            # agent_id -> count
+        self._active_tasks: dict[str, int] = {}  # agent_id -> count
 
     # -------------------------------------------------------------------
     # Peer Management
@@ -212,7 +218,9 @@ class A2AGovernanceProxy:
             peer.trust_score = max(0, min(100, trust_score))
             logger.info(
                 "A2A peer trust updated: %s %d -> %d",
-                agent_id, old_trust, peer.trust_score,
+                agent_id,
+                old_trust,
+                peer.trust_score,
             )
 
     def get_peer(self, agent_id: str) -> Optional[A2APeer]:
@@ -318,9 +326,7 @@ class A2AGovernanceProxy:
             self._rate_counters[peer_id] = []
 
         # Prune old entries
-        self._rate_counters[peer_id] = [
-            t for t in self._rate_counters[peer_id] if t > window_start
-        ]
+        self._rate_counters[peer_id] = [t for t in self._rate_counters[peer_id] if t > window_start]
 
         if len(self._rate_counters[peer_id]) >= self.config.rate_limit_per_minute:
             if self.config.mode == "enforce":
@@ -333,6 +339,7 @@ class A2AGovernanceProxy:
     def _check_message_size(self, message: A2AMessage) -> Optional[A2ADecision]:
         """Check message payload size."""
         import json
+
         try:
             size = len(json.dumps(message.payload).encode())
         except (TypeError, ValueError):
@@ -365,6 +372,7 @@ class A2AGovernanceProxy:
     def _sanitize_message(self, message: A2AMessage) -> list[str]:
         """Sanitize PII from A2A message payload. Returns list of sanitizations applied."""
         import re
+
         sanitizations: list[str] = []
         payload_str = str(message.payload)
 
@@ -415,8 +423,11 @@ class A2AGovernanceProxy:
 
         logger.info(
             "A2A governance: %s -> %s [%s] decision=%s reason=%s",
-            message.source_agent, message.target_agent,
-            message.message_type.value, decision.value, reason,
+            message.source_agent,
+            message.target_agent,
+            message.message_type.value,
+            decision.value,
+            reason,
         )
         return decision
 
@@ -452,10 +463,7 @@ class A2AGovernanceProxy:
         """Retrieve governance events with optional filters."""
         events = self._events
         if agent_id:
-            events = [
-                e for e in events
-                if e.source_agent == agent_id or e.target_agent == agent_id
-            ]
+            events = [e for e in events if e.source_agent == agent_id or e.target_agent == agent_id]
         if decision:
             events = [e for e in events if e.decision == decision]
         return events[-limit:]
