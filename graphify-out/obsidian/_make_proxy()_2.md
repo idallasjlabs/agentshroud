@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "Slack API Proxy"
+community: "SOC Dashboard"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/SOC_Dashboard
 ---
 
 # _make_proxy()
@@ -47,7 +47,6 @@ tags:
 - [[Create a SlackAPIProxy with test credentials and no real IO.]] - `rationale_for` [EXTRACTED]
 - [[SlackAPIProxy]] - `calls` [EXTRACTED]
 - [[SlackAPIProxy_1]] - `references` [EXTRACTED]
-- [[SlackAPIProxy_3]] - `references` [EXTRACTED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

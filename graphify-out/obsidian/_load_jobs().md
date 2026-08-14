@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Architecture Docs"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Architecture_Docs
 ---
 
 # _load_jobs()
 
 ## Connections
-- [[Path_27]] - `references` [EXTRACTED]
+- [[Path_28]] - `references` [EXTRACTED]
 - [[test_bots_cron_prompts_exclude_short_uids()]] - `calls` [EXTRACTED]
 - [[test_bots_cron_prompts_warn_against_denied_token()]] - `calls` [EXTRACTED]
 - [[test_cron_jobs_prompts.py]] - `contains` [EXTRACTED]
 - [[test_cron_prompts_exclude_short_uids()]] - `calls` [EXTRACTED]
 - [[test_cron_prompts_warn_against_denied_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Architecture_Docs

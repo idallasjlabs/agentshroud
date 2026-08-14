@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "docker/docker-compose.yml"
+community: "CONTRIBUTING.md"
 location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/docker-composeyml
+  - community/CONTRIBUTINGmd
 ---
 
 # _email_owner()
@@ -16,4 +16,4 @@ tags:
 - [[gateway POST emailsend-owner endpoint]] - `calls` [EXTRACTED]
 - [[start.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker/docker-composeyml
+#graphify/code #graphify/EXTRACTED #community/CONTRIBUTINGmd

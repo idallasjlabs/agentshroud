@@ -42,8 +42,10 @@ tags:
 - [[.test_wildcard_one_level()]] - `calls` [EXTRACTED]
 - [[Create an EgressFilter with a simple config.]] - `rationale_for` [EXTRACTED]
 - [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_4]] - `calls` [EXTRACTED]
 - [[EgressFilter_2]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig_1]] - `calls` [INFERRED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

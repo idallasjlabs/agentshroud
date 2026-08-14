@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Approval & FastAPI Ingest"
 location: "L604"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Approval__FastAPI_Ingest
 ---
 
 # _FakeBus
 
 ## Connections
-- [[.__init__()_168]] - `method` [EXTRACTED]
+- [[.__init__()_178]] - `method` [EXTRACTED]
 - [[.subscribe()_1]] - `method` [EXTRACTED]
 - [[.test_fan_out_filters_and_forwards()]] - `calls` [EXTRACTED]
 - [[.test_fan_out_survives_coerce_exception()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest

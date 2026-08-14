@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.__aenter__()_2]] - `method` [EXTRACTED]
 - [[.__aexit__()_2]] - `method` [EXTRACTED]
-- [[.__init__()_142]] - `method` [EXTRACTED]
+- [[.__init__()_148]] - `method` [EXTRACTED]
 - [[.test_sec_websocket_protocol_token_authenticates()]] - `calls` [EXTRACTED]
 - [[.test_token_query_param_authenticates_ws()]] - `calls` [EXTRACTED]
 - [[Async context manager mimicking websockets.connect().]] - `rationale_for` [EXTRACTED]

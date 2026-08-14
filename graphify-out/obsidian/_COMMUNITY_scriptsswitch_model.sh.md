@@ -1,24 +1,22 @@
 ---
 type: community
-cohesion: 0.39
 members: 9
 ---
 
 # scripts/switch_model.sh
 
-**Cohesion:** 0.39 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[ensure_local_model_available()]] - code - scripts/switch_model.sh
-- [[normalize_cloud_ref()]] - code - scripts/switch_model.sh
-- [[preflight_local()]] - code - scripts/switch_model.sh
-- [[switch_model.sh]] - code - scripts/switch_model.sh
-- [[switch_model.sh script]] - code - scripts/switch_model.sh
-- [[upsert_env_value()]] - code - scripts/switch_model.sh
-- [[usage()_4]] - code - scripts/switch_model.sh
-- [[verify_both_bots_healthy()]] - code - scripts/switch_model.sh
-- [[wait_for_local_model()]] - code - scripts/switch_model.sh
+- [[Configuration_3]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Current Setup (Kept)]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Decision Summary]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Files Created]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Helper Script]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Next Steps_3]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[WORKSPACE_DECISION]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Why This Matters for Read-Only Filesystem]] - document - docs/architecture/WORKSPACE_DECISION.md
+- [[Workspace Configuration Decision]] - document - docs/architecture/WORKSPACE_DECISION.md
 
 ## Live Query (requires Dataview plugin)
 

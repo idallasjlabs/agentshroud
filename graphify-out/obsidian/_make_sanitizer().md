@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "ESP32 Firmware"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/ESP32_Firmware
 ---
 
 # _make_sanitizer()
@@ -139,10 +139,10 @@ tags:
 - [[.test_outbound_fails_closed_for_non_owner()]] - `calls` [EXTRACTED]
 - [[.test_outbound_owner_exempt_from_fail_closed()]] - `calls` [EXTRACTED]
 - [[.test_outbound_pipeline_called_when_available()]] - `calls` [EXTRACTED]
+- [[.test_parse_mode_preserved_and_placeholder_escaped_email_fallback_path()]] - `calls` [EXTRACTED]
+- [[.test_parse_mode_preserved_and_placeholder_escaped_phone_fallback_path()]] - `calls` [EXTRACTED]
+- [[.test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()]] - `calls` [EXTRACTED]
 - [[.test_parse_mode_preserved_when_no_pii_detected()]] - `calls` [EXTRACTED]
-- [[.test_parse_mode_stripped_when_email_redacted_fallback_path()]] - `calls` [EXTRACTED]
-- [[.test_parse_mode_stripped_when_phone_redacted_fallback_path()]] - `calls` [EXTRACTED]
-- [[.test_parse_mode_stripped_when_pipeline_sanitizes_email()]] - `calls` [EXTRACTED]
 - [[.test_pending_includes_egress_entries()]] - `calls` [EXTRACTED]
 - [[.test_pii_redacted_on_outbound()]] - `calls` [EXTRACTED]
 - [[.test_pipeline_receives_trust_level()]] - `calls` [EXTRACTED]
@@ -231,4 +231,4 @@ tags:
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware

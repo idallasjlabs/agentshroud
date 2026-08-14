@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/cli/__init__.py"
 type: "code"
-community: "gateway/cli"
+community: "docs/project"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/cli
+  - community/docs/project
 ---
 
 # __init__.py
 
-#graphify/code #graphify/EXTRACTED #community/gateway/cli
+#graphify/code #graphify/EXTRACTED #community/docs/project

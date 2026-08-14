@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L1020"
+community: "voice_gateway/server.py"
+location: "L1024"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/voice_gateway/serverpy
 ---
 
 # _call_agent_stream POSTs to /forward/stream and yields each sentence     event a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_call_agent_stream_yields_sentences_in_order()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/voice_gateway/serverpy

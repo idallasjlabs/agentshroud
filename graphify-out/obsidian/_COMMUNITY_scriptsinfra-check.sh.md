@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # scripts/infra-check.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[infra-check.sh]] - code - scripts/infra-check.sh
-- [[infra-check.sh script]] - code - scripts/infra-check.sh
+- [[extraction-spec_1]] - document - docker/config/openclaw/skills/graphify/references/extraction-spec.md
+- [[graphify reference extraction subagent prompt_1]] - document - docker/config/openclaw/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

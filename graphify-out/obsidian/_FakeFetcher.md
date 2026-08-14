@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Gateway Test Suite"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Gateway_Test_Suite
 ---
 
 # _FakeFetcher
 
 ## Connections
 - [[.__call__()_2]] - `method` [EXTRACTED]
-- [[.__init__()_131]] - `method` [EXTRACTED]
+- [[.__init__()_137]] - `method` [EXTRACTED]
 - [[._verifier()]] - `calls` [EXTRACTED]
 - [[._verifier()_1]] - `calls` [EXTRACTED]
 - [[.test_host_confusion_urls_rejected_and_never_fetched()]] - `calls` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[test_citation_verifier.py]] - `contains` [EXTRACTED]
 - [[test_default_allowlist_uses_permanent_egress_domains()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

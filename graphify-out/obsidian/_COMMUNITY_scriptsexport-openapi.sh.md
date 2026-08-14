@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # scripts/export-openapi.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[export-openapi.sh]] - code - scripts/export-openapi.sh
-- [[export-openapi.sh script]] - code - scripts/export-openapi.sh
+- [[SKILL_49]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
+- [[Skill sdlc]] - document - docker/config/hermes/skills/i-sdlc/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

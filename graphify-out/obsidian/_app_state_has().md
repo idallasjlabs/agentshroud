@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "IEC 62443 Scorecard"
+community: "gateway/cli"
 location: "L336"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IEC_62443_Scorecard
+  - community/gateway/cli
 ---
 
 # _app_state_has()
@@ -36,4 +36,4 @@ tags:
 - [[_score_tool_use_safety()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IEC_62443_Scorecard
+#graphify/code #graphify/EXTRACTED #community/gateway/cli

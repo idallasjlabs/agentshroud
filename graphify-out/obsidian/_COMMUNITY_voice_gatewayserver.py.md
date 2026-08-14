@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # voice_gateway/server.py
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[voice_gatewayserver.py — Voice Gateway FastAPIWebSocket app]] - code - voice_gateway/server.py
+- [[GSD (Get Shit Done) Issue Template Lightweight Production Approval Gate]] - document - .github/ISSUE_TEMPLATE/gsd.md
 
 ## Live Query (requires Dataview plugin)
 

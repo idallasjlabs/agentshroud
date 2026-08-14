@@ -1,16 +1,17 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 4
 ---
 
 # src/interfaces
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[text_control_center.py — Terminal TUI control center]] - code - src/interfaces/text_control_center.py
+- [[Chat voice responses]] - document - skills/openclaw/sag/SKILL.md
+- [[ElevenLabs TTS API]] - concept - skills/openclaw/sag/SKILL.md
+- [[SKILL_162]] - document - skills/openclaw/sag/SKILL.md
+- [[sag]] - document - skills/openclaw/sag/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,3 +19,9 @@ members: 1
 TABLE source_file, type FROM #community/src/interfaces
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_docsUSPTO_TRADEMARK_APPLICATION]]
+
+## Top bridge nodes
+- [[sag]] - degree 4, connects to 1 community

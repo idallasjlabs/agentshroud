@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.47
-members: 6
+members: 7
 ---
 
 # scripts/restore-backup.sh
 
-**Cohesion:** 0.47 - moderately connected
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[_rollback()]] - code - scripts/update-agentshroud.sh
-- [[restore-backup.sh]] - code - scripts/restore-backup.sh
-- [[restore-backup.sh script]] - code - scripts/restore-backup.sh
-- [[restore_tar_to_volume()]] - code - scripts/restore-backup.sh
-- [[update-agentshroud.sh]] - code - scripts/update-agentshroud.sh
-- [[update-agentshroud.sh script]] - code - scripts/update-agentshroud.sh
+- [[DELIVERABLE 3 — v0.8.0 Implementation Items]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 1 Streaming Response Outbound Filtering — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 2 Wire MemoryIntegrityLifecycle at Startup — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 3 LLM Proxy User Identity Propagation — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 4 Adversarial Prompt Injection Test Suite — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 5 Audit Chain Guaranteed Persistence for BLOCK Events — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 6 Update ADR-002 to Reflect Enforce-by-Default — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +22,9 @@ members: 6
 TABLE source_file, type FROM #community/scripts/restore-backupsh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Planning Docs]]
+
+## Top bridge nodes
+- [[DELIVERABLE 3 — v0.8.0 Implementation Items]] - degree 7, connects to 1 community

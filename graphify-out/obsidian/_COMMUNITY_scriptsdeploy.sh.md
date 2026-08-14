@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # scripts/deploy.sh
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[PATH_2]] - code - scripts/deploy.sh
-- [[deploy.sh]] - code - scripts/deploy.sh
-- [[deploy.sh script]] - code - scripts/deploy.sh
-- [[setup-secrets.sh (Credential Extraction)]] - code - docker/setup-secrets.sh
-- [[setup_ephemeral_secrets()]] - code - scripts/asb
+- [[Pull Request Generator (PR)]] - document - docker/config/hermes/skills/i-pr/README.md
+- [[Purpose_23]] - document - docker/config/hermes/skills/i-pr/README.md
+- [[README_28]] - document - docker/config/hermes/skills/i-pr/README.md
+- [[Related Skills_26]] - document - docker/config/hermes/skills/i-pr/README.md
+- [[Usage_27]] - document - docker/config/hermes/skills/i-pr/README.md
 
 ## Live Query (requires Dataview plugin)
 

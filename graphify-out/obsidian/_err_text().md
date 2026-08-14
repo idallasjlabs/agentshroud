@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "docs/vault"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/docs/vault
 ---
 
 # _err_text()
@@ -18,4 +18,4 @@ tags:
 - [[telegram_egress_notify.py]] - `contains` [EXTRACTED]
 - [[urllib HTTPError carries the response body on .read(); fall back to str.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/docs/vault

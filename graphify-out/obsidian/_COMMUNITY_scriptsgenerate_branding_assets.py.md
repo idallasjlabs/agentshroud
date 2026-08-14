@@ -1,36 +1,35 @@
 ---
 type: community
-cohesion: 0.26
-members: 21
+members: 22
 ---
 
 # scripts/generate_branding_assets.py
 
-**Cohesion:** 0.26 - loosely connected
-**Members:** 21 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[Create SVG files that embed the logo PNGs as base64 data URIs.      These are sc]] - rationale - scripts/generate_branding_assets.py
-- [[FreeTypeFont]] - code - scripts/generate_branding_assets.py
-- [[Image]] - code - scripts/generate_branding_assets.py
-- [[Load source logo, optionally resize and composite onto bg.]] - rationale - scripts/generate_branding_assets.py
-- [[Paste transparent logo centred on a solid-colour canvas.]] - rationale - scripts/generate_branding_assets.py
-- [[Path_42]] - code - scripts/generate_branding_assets.py
-- [[ensure()]] - code - scripts/generate_branding_assets.py
-- [[generate_branding_assets.py]] - code - scripts/generate_branding_assets.py
-- [[generate_email()]] - code - scripts/generate_branding_assets.py
-- [[generate_favicons()]] - code - scripts/generate_branding_assets.py
-- [[generate_feature_icons()]] - code - scripts/generate_branding_assets.py
-- [[generate_icon_sizes()]] - code - scripts/generate_branding_assets.py
-- [[generate_presentation()]] - code - scripts/generate_branding_assets.py
-- [[generate_social()]] - code - scripts/generate_branding_assets.py
-- [[generate_svg_logos()]] - code - scripts/generate_branding_assets.py
-- [[generate_variants()]] - code - scripts/generate_branding_assets.py
-- [[get_font()]] - code - scripts/generate_branding_assets.py
-- [[icon_on_canvas()]] - code - scripts/generate_branding_assets.py
-- [[load_logo()]] - code - scripts/generate_branding_assets.py
-- [[main()_15]] - code - scripts/generate_branding_assets.py
-- [[save()_1]] - code - scripts/generate_branding_assets.py
+- [[ADR-007 Zero-Config Security]] - concept - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[AgentShroud Deployment Architecture]] - document - docs/architecture/deployment-diagram.md
+- [[Apple Containers (macOS)]] - document - docs/architecture/deployment-diagram.md
+- [[Cloud Provider Secrets]] - document - docs/architecture/deployment-diagram.md
+- [[DNS Routing Configuration]] - document - docs/architecture/deployment-diagram.md
+- [[Default Port Allocation]] - document - docs/architecture/deployment-diagram.md
+- [[Deployment Validation]] - document - docs/architecture/deployment-diagram.md
+- [[Docker Runtime]] - document - docs/architecture/deployment-diagram.md
+- [[Docker Secrets]] - document - docs/architecture/deployment-diagram.md
+- [[HashiCorp Vault Integration]] - document - docs/architecture/deployment-diagram.md
+- [[Multi-Instance Support]] - document - docs/architecture/deployment-diagram.md
+- [[Multi-Runtime Support_1]] - document - docs/architecture/deployment-diagram.md
+- [[Network Topology]] - document - docs/architecture/deployment-diagram.md
+- [[Overview_5]] - document - docs/architecture/deployment-diagram.md
+- [[Persistent Storage Architecture]] - document - docs/architecture/deployment-diagram.md
+- [[Podman Support]] - document - docs/architecture/deployment-diagram.md
+- [[Port Mappings and Auto-Detection]] - document - docs/architecture/deployment-diagram.md
+- [[Secrets Management Integration]] - document - docs/architecture/deployment-diagram.md
+- [[Three-Network Architecture]] - document - docs/architecture/deployment-diagram.md
+- [[Volume Mounts and Secrets Management]] - document - docs/architecture/deployment-diagram.md
+- [[Zero-Configuration Deployment]] - document - docs/architecture/deployment-diagram.md
+- [[deployment-diagram]] - document - docs/architecture/deployment-diagram.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,3 +37,9 @@ members: 21
 TABLE source_file, type FROM #community/scripts/generate_branding_assetspy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+
+## Top bridge nodes
+- [[AgentShroud Deployment Architecture]] - degree 8, connects to 1 community

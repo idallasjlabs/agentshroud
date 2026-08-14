@@ -1,25 +1,24 @@
 ---
 type: community
-cohesion: 0.73
-members: 10
+members: 11
 ---
 
 # scripts/verify-proxy.sh
 
-**Cohesion:** 0.73 - tightly connected
-**Members:** 10 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[fail()_5]] - code - scripts/verify-proxy.sh
-- [[info()_2]] - code - scripts/verify-proxy.sh
-- [[pass()_3]] - code - scripts/verify-proxy.sh
-- [[run_bypass()]] - code - scripts/verify-proxy.sh
-- [[run_canary()_1]] - code - scripts/verify-proxy.sh
-- [[run_chain()]] - code - scripts/verify-proxy.sh
-- [[run_full()]] - code - scripts/verify-proxy.sh
-- [[run_quick()]] - code - scripts/verify-proxy.sh
-- [[verify-proxy.sh]] - code - scripts/verify-proxy.sh
-- [[verify-proxy.sh script]] - code - scripts/verify-proxy.sh
+- [[LOW Findings_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[MEDIUM Findings_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-L1 No Global Security Headers Middleware (Reopened from R2-L1)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-L2 WebSocket Connection Leak in ws_logs (Reopened from R2-L2)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-L3 OCI Image Version Labels Still Outdated (Reopened from R2-L3)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-L4 Dashboard WS Activity Endpoint Accepts Both Master and Scoped Tokens]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-L5 Backup Files Contain Pre-Hardening Code]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-M1 Missing `aiohttp` Dependency in requirements.txt (Reopened from R2-M1)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-M2 Management WebSocket Endpoints Still Use Master Auth Token (Reopened from R2-M2)]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[R3-M3 Stale Version String in Root Dashboard HTML]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
+- [[Round 3 New Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +26,9 @@ members: 10
 TABLE source_file, type FROM #community/scripts/verify-proxysh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Planning Docs]]
+
+## Top bridge nodes
+- [[Round 3 New Findings]] - degree 3, connects to 1 community

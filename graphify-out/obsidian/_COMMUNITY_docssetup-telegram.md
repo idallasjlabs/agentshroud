@@ -1,17 +1,16 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # docs/setup-telegram.md
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[Telegram BotFather Bot Creation]] - concept - docs/setup-telegram.md
-- [[Telegram Channel Setup Guide]] - document - docs/setup-telegram.md
+- [[check()_7]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
+- [[test_hermes_cron_html_email.sh]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
+- [[test_hermes_cron_html_email.sh script]] - code - tests/startup_smoke/test_hermes_cron_html_email.sh
 
 ## Live Query (requires Dataview plugin)
 

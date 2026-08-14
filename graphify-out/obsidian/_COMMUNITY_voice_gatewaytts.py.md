@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # voice_gateway/tts.py
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[voice_gatewaytts.py — Kokoro Text-to-Speech]] - code - voice_gateway/tts.py
+- [[GitHub Pages Deploy Workflow]] - code - .github/workflows/pages.yml
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "Security Pipeline Core"
+community: "CHEATSHEET.md"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Pipeline_Core
+  - community/CHEATSHEETmd
 ---
 
 # _make_update()
@@ -20,4 +20,4 @@ tags:
 - [[.test_pipeline_process_inbound_called_with_skip_context_guard()]] - `calls` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Pipeline_Core
+#graphify/code #graphify/EXTRACTED #community/CHEATSHEETmd

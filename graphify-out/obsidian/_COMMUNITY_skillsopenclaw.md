@@ -1,16 +1,16 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 3
 ---
 
 # skills/openclaw
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[OpenClaw Skill discord (via message tool)]] - document - skills/openclaw/discord/SKILL.md
+- [[AgentShroud Config with Tool Risk Tiers (example)]] - document - examples/agentshroud-with-tool-risk.yaml
+- [[PII confidence 0.8 (example) vs 0.9 floor (CLAUDE.md §7) discrepancy]] - rationale - examples/agentshroud-with-tool-risk.yaml
+- [[Tool Risk Tier Policy (criticalhighmediumlow)]] - concept - examples/agentshroud-with-tool-risk.yaml
 
 ## Live Query (requires Dataview plugin)
 

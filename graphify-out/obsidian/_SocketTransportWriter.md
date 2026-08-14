@@ -12,7 +12,7 @@ tags:
 # _SocketTransportWriter
 
 ## Connections
-- [[.__init__()_152]] - `method` [EXTRACTED]
+- [[.__init__()_160]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
 - [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]

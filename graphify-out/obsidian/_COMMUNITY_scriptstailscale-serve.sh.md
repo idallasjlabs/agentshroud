@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.67
-members: 6
+members: 7
 ---
 
 # scripts/tailscale-serve.sh
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[cmd_persist()]] - code - scripts/tailscale-serve.sh
-- [[cmd_start()]] - code - scripts/tailscale-serve.sh
-- [[cmd_status()_1]] - code - scripts/tailscale-serve.sh
-- [[cmd_stop()]] - code - scripts/tailscale-serve.sh
-- [[tailscale-serve.sh]] - code - scripts/tailscale-serve.sh
-- [[tailscale-serve.sh script]] - code - scripts/tailscale-serve.sh
+- [[4.1 Per-bot egress allowlist completeness]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[4.2 Per-bot trust seeding]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[4.3 Per-bot CVE triage cron health]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[4.4 Hermes SOUL.md information disclosure posture]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[4.5 Hermes dashboard TCP forwarder — binding address]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[4.6 Cross-bot session isolation (FINDING BT-H1 — FIXED IN THIS PR)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§4 — Hermes-Specific Section (NEW — first assessment)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +22,9 @@ members: 6
 TABLE source_file, type FROM #community/scripts/tailscale-servesh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Docker Deploy Scripts]]
+
+## Top bridge nodes
+- [[§4 — Hermes-Specific Section (NEW — first assessment)]] - degree 7, connects to 1 community

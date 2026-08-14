@@ -1,29 +1,25 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "MCP Policy Engine"
-location: "L33"
+community: "SOC Dashboard"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/SOC_Dashboard
 ---
 
 # _base_config()
 
 ## Connections
-- [[A representative policy two allowlisted servers, one denylisted server,     a p]] - `rationale_for` [EXTRACTED]
-- [[MCPPolicyConfig_1]] - `references` [EXTRACTED]
+- [[A2APolicyConfig_1]] - `references` [EXTRACTED]
+- [[Two allowlisted peers, one denylisted peer, default-deny for everyone else.]] - `rationale_for` [EXTRACTED]
 - [[engine()]] - `calls` [EXTRACTED]
-- [[test_decision_records_soc_heatmap()]] - `calls` [EXTRACTED]
-- [[test_enforce_allows_allowlisted_safe_tool()]] - `calls` [EXTRACTED]
-- [[test_enforce_blocks_unknown_server()]] - `calls` [EXTRACTED]
-- [[test_enforce_high_risk_denied_on_rejection()]] - `calls` [EXTRACTED]
-- [[test_enforce_high_risk_enqueues_and_allows_on_approval()]] - `calls` [EXTRACTED]
-- [[test_enforce_high_risk_queue_no_wait_denies_closed()]] - `calls` [EXTRACTED]
-- [[test_enforce_high_risk_without_queue_denies_closed()]] - `calls` [EXTRACTED]
-- [[test_mcp_policy.py]] - `contains` [EXTRACTED]
-- [[test_mcp_proxy_allows_policy_permitted_call()]] - `calls` [EXTRACTED]
-- [[test_mcp_proxy_blocks_policy_denied_call()]] - `calls` [EXTRACTED]
+- [[test_a2a_policy.py]] - `contains` [EXTRACTED]
+- [[test_enforce_denies_when_queue_downgrades_requires_wait_to_false()]] - `calls` [EXTRACTED]
+- [[test_enforce_falls_back_to_legacy_queue_signature_without_force_tier()]] - `calls` [EXTRACTED]
+- [[test_enforce_high_risk_method_approved_resolves_to_allow()]] - `calls` [EXTRACTED]
+- [[test_enforce_high_risk_method_rejected_resolves_to_deny()]] - `calls` [EXTRACTED]
+- [[test_enforce_task_ownership_violation_never_reaches_approval_queue()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

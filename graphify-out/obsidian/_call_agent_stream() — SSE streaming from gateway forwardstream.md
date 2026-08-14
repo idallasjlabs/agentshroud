@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "voice_gateway/tts.py"
+community: "Planning Docs"
 location: "L722-824"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_gateway/ttspy
+  - community/Planning_Docs
 ---
 
 # _call_agent_stream() — SSE streaming from gateway /forward/stream
@@ -16,4 +16,4 @@ tags:
 - [[_voice_forward_metadata() — builds no_memory metadata for forward]] - `calls` [EXTRACTED]
 - [[voice_endpoint() — voice WebSocket handler (IDLE→LISTENING→THINKING→SPEAKING state machine)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/ttspy
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gateway Security Module"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Security_Module
 ---
 
 # _MockWriter
 
 ## Connections
-- [[.__init__()_148]] - `method` [EXTRACTED]
-- [[.close()_11]] - `method` [EXTRACTED]
+- [[.__init__()_156]] - `method` [EXTRACTED]
+- [[.close()_12]] - `method` [EXTRACTED]
 - [[.drain()]] - `method` [EXTRACTED]
 - [[.get_extra_info()]] - `method` [EXTRACTED]
 - [[.write()]] - `method` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[test_system_bypass_domain_logs_external_decision()]] - `calls` [EXTRACTED]
 - [[test_system_bypass_without_egress_filter()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

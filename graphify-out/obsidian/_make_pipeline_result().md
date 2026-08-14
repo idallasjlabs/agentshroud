@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "Security Pipeline Core"
+community: "CHEATSHEET.md"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Pipeline_Core
+  - community/CHEATSHEETmd
 ---
 
 # _make_pipeline_result()
@@ -22,4 +22,4 @@ tags:
 - [[PipelineResult_1]] - `references` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Pipeline_Core
+#graphify/code #graphify/EXTRACTED #community/CHEATSHEETmd

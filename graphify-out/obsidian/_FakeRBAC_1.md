@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Approval & FastAPI Ingest"
 location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Approval__FastAPI_Ingest
 ---
 
 # _FakeRBAC
 
 ## Connections
-- [[.__init__()_167]] - `method` [EXTRACTED]
+- [[.__init__()_177]] - `method` [EXTRACTED]
 - [[.check_permission()_2]] - `method` [EXTRACTED]
 - [[.test_get_caller_passthrough()]] - `calls` [EXTRACTED]
 - [[.test_is_group_admin_with_teams_config()]] - `calls` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

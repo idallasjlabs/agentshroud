@@ -12,7 +12,7 @@ tags:
 # _CloseRaisesWriter
 
 ## Connections
-- [[.close()_14]] - `method` [EXTRACTED]
+- [[.close()_15]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
 - [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]

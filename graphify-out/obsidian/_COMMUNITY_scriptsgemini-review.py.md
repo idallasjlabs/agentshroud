@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.67
-members: 4
+members: 5
 ---
 
 # scripts/gemini-review.py
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Call Gemini API and return the review text and exit code.      Returns]] - rationale - scripts/gemini-review.py
-- [[call_gemini()]] - code - scripts/gemini-review.py
-- [[gemini-review.py]] - code - scripts/gemini-review.py
-- [[main()_14]] - code - scripts/gemini-review.py
+- [[.test_five_with_soc_correlation_and_killswitch()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_four_with_soc_correlation()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_one_baseline_neither_running()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[.test_three_with_falco_and_wazuh()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreIncidentResponse_1]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,3 +20,9 @@ members: 4
 TABLE source_file, type FROM #community/scripts/gemini-reviewpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+
+## Top bridge nodes
+- [[TestScoreIncidentResponse_1]] - degree 5, connects to 1 community

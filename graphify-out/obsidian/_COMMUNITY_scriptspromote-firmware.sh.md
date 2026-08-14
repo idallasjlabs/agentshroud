@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+members: 4
 ---
 
 # scripts/promote-firmware.sh
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[OTA Promotion Gate Rationale (2026-07-27 incident)]] - rationale - scripts/promote-firmware.sh
-- [[promote-firmware.sh]] - code - scripts/promote-firmware.sh
-- [[promote-firmware.sh script]] - code - scripts/promote-firmware.sh
+- [[Problem pairing required but no pending requests]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Problem Approved device still can't connect]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Problem Too many pending requests]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Troubleshooting_22]] - document - docs/setup/DEVICE_PAIRING.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +19,9 @@ members: 3
 TABLE source_file, type FROM #community/scripts/promote-firmwaresh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+
+## Top bridge nodes
+- [[Troubleshooting_22]] - degree 4, connects to 1 community

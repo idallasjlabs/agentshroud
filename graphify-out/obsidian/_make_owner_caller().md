@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Bot CVE Scorecard"
+community: "Voice Gateway Tests"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_CVE_Scorecard
+  - community/Voice_Gateway_Tests
 ---
 
 # _make_owner_caller()
@@ -42,4 +42,4 @@ tags:
 - [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_CVE_Scorecard
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Tests

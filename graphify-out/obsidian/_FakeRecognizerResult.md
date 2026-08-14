@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "gateway/runtime"
 location: "L209"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/gateway/runtime
 ---
 
 # _FakeRecognizerResult
 
 ## Connections
-- [[.__init__()_138]] - `method` [EXTRACTED]
+- [[.__init__()_144]] - `method` [EXTRACTED]
 - [[.test_presidio_result_becomes_pii_hit()]] - `calls` [EXTRACTED]
 - [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]
@@ -20,4 +20,4 @@ tags:
 - [[PIIHitSeverity]] - `uses` [INFERRED]
 - [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/gateway/runtime

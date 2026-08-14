@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "Bot Container Scripts"
+community: "Custom Skills"
 location: "336"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Custom_Skills
 ---
 
 # _hermes_up()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run-standalone.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/Custom_Skills

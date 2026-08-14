@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.31
-members: 9
+members: 10
 ---
 
 # scripts/smoke.d
 
-**Cohesion:** 0.31 - loosely connected
-**Members:** 9 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[check()_2]] - code - scripts/smoke.d/test-container-runtime.sh
-- [[container-runtime.sh (detection shim)]] - code - scripts/lib/container-runtime.sh
-- [[make_fake_bin()]] - code - scripts/smoke.d/test-container-runtime.sh
-- [[run_detect()]] - code - scripts/smoke.d/test-container-runtime.sh
-- [[run_test()]] - code - scripts/smoke.sh
-- [[smoke.sh]] - code - scripts/smoke.sh
-- [[smoke.sh script]] - code - scripts/smoke.sh
-- [[test-container-runtime.sh]] - code - scripts/smoke.d/test-container-runtime.sh
-- [[test-container-runtime.sh script]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[.test_blocked_entry_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_chain_entries_linked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_hash_chain_changes_on_append()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_hash_chain_genesis()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_hash_chain_valid()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_log_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_log_tool_result()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_pii_redacted_flag()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_tampered_chain_detected()]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestAuditTrail]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +27,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_scriptssync-llm-settings.sh]]
+- 8 edges to [[_COMMUNITY_PromptGuard Encoding Detection]]
+- 2 edges to [[_COMMUNITY_Enforce-Mode Auto-Revert]]
+- 1 edge to [[_COMMUNITY_Setup Docs]]
+- 1 edge to [[_COMMUNITY_Collaborator Prompt Safety]]
+- 1 edge to [[_COMMUNITY_docsoperations]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[smoke.sh]] - degree 4, connects to 1 community
+- [[TestAuditTrail]] - degree 23, connects to 6 communities

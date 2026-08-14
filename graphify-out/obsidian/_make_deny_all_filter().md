@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
 community: "Gateway Test Suite"
-location: "L468"
+location: "L511"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,8 +13,10 @@ tags:
 
 ## Connections
 - [[EgressFilter_1]] - `calls` [EXTRACTED]
+- [[EgressFilter_4]] - `references` [EXTRACTED]
 - [[EgressFilter_2]] - `references` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig_1]] - `calls` [INFERRED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 - [[test_grant_timed_approval_allows_domain()]] - `calls` [EXTRACTED]

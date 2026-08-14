@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Cross-Bot Trust Ledger"
+community: "MCP Proxy Config"
 location: "L380"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Cross-Bot_Trust_Ledger
+  - community/MCP_Proxy_Config
 ---
 
 # _FakeIntegrityScore
@@ -30,4 +30,4 @@ tags:
 - [[_make_integrity_pipeline()]] - `calls` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Cross-Bot_Trust_Ledger
+#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config

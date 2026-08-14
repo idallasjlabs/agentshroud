@@ -1,33 +1,32 @@
 ---
 type: community
-cohesion: 0.16
-members: 18
+members: 19
 ---
 
 # scripts/canary-deploy.sh
 
-**Cohesion:** 0.16 - loosely connected
-**Members:** 18 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[Container runtime auto-detection contract (SCRUM-92)]] - rationale - docker/README.md
-- [[_cr_plugin_works()]] - code - scripts/lib/container-runtime.sh
-- [[canary-deploy.sh]] - code - scripts/canary-deploy.sh
-- [[canary-deploy.sh script]] - code - scripts/canary-deploy.sh
-- [[check()]] - code - scripts/post-deploy-check.sh
-- [[container-runtime.sh]] - code - scripts/lib/container-runtime.sh
-- [[container-runtime.sh script]] - code - scripts/lib/container-runtime.sh
-- [[container_runtime_engine()]] - code - scripts/lib/container-runtime.sh
-- [[deploy_ref()]] - code - scripts/canary-deploy.sh
-- [[detect_container_runtime()]] - code - scripts/lib/container-runtime.sh
-- [[die()]] - code - scripts/canary-deploy.sh
-- [[dockerversions.env (Pinned Vendor Versions)]] - code - docker/versions.env
-- [[log()_5]] - code - scripts/canary-deploy.sh
-- [[post-deploy-check.sh]] - code - scripts/post-deploy-check.sh
-- [[post-deploy-check.sh script]] - code - scripts/post-deploy-check.sh
-- [[run()_4]] - code - scripts/canary-deploy.sh
-- [[run_in_repo()]] - code - scripts/canary-deploy.sh
-- [[scriptsasb (builddeploy helper, secret extraction)]] - code - scripts/asb
+- [[1. Check MCP Configuration_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[2. Test GitHub MCP Server_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[3. Test Atlassian MCP Server_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[4. Test AWS API MCP Server_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Common Issues & Fixes_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Capabilities_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Diagnostic Workflow_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Issue AWS credentials not found_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Atlassian OAuth token expired_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Issue Docker not found_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Issue GitHub MCP authentication failed_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Issue npx not found_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Issue uvx not found_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Output Format_18]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Related Skills_61]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Role_54]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[SKILL_96]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
+- [[When to Invoke_5]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

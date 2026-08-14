@@ -1,19 +1,19 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "code"
-community: "voice_gateway/tts.py"
+community: "Planning Docs"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_gateway/ttspy
+  - community/Planning_Docs
 ---
 
 # _get_pipeline()
 
 ## Connections
-- [[Any_76]] - `references` [EXTRACTED]
+- [[Any_78]] - `references` [EXTRACTED]
 - [[synthesize()]] - `calls` [EXTRACTED]
 - [[tts.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/ttspy
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

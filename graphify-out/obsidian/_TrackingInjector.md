@@ -12,7 +12,7 @@ tags:
 # _TrackingInjector
 
 ## Connections
-- [[.__init__()_3]] - `method` [EXTRACTED]
+- [[.__init__()_166]] - `method` [EXTRACTED]
 - [[.inject_headers()]] - `method` [EXTRACTED]
 - [[Fake CredentialInjector that records inject_headers calls and applies Anthropic]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]

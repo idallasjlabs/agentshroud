@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
-location: "L4857"
+community: "HTTP Forwarder"
+location: "L4869"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/HTTP_Forwarder
 ---
 
 # _mirror_to_owner_if_collaborator must coalesce within the window.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOwnerMirrorCoalescing]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder

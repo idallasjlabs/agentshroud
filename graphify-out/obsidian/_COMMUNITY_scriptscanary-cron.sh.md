@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # scripts/canary-cron.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[canary-cron.sh]] - code - scripts/canary-cron.sh
-- [[canary-cron.sh script]] - code - scripts/canary-cron.sh
+- [[SKILL_11]] - document - docker/config/hermes/skills/i-cd/SKILL.md
+- [[Skill cd]] - document - docker/config/hermes/skills/i-cd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,17 +1,16 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # gateway/verify.sh
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[verify.sh]] - code - gateway/verify.sh
-- [[verify.sh script]] - code - gateway/verify.sh
+- [[check()_9]] - code - tests/startup_smoke/test_openclaw_photo.sh
+- [[test_openclaw_photo.sh]] - code - tests/startup_smoke/test_openclaw_photo.sh
+- [[test_openclaw_photo.sh script]] - code - tests/startup_smoke/test_openclaw_photo.sh
 
 ## Live Query (requires Dataview plugin)
 

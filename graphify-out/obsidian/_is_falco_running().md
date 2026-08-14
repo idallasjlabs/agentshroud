@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "IEC 62443 Scorecard"
+community: "gateway/cli"
 location: "L654"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IEC_62443_Scorecard
+  - community/gateway/cli
 ---
 
 # _is_falco_running()
 
 ## Connections
-- [[Path_16]] - `calls` [EXTRACTED]
+- [[Path_17]] - `calls` [EXTRACTED]
 - [[Return True if a non-zombie falco process is running inside this container.]] - `rationale_for` [EXTRACTED]
 - [[get_falco_summary()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IEC_62443_Scorecard
+#graphify/code #graphify/EXTRACTED #community/gateway/cli

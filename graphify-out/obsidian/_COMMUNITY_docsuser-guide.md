@@ -1,42 +1,41 @@
 ---
 type: community
-cohesion: 0.07
-members: 27
+members: 28
 ---
 
 # docs/user-guide.md
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 27 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[1. Find the Bot]] - document - docs/user-guide.md
-- [[2. Verify You're Authorized]] - document - docs/user-guide.md
-- [[3. Start Chatting]] - document - docs/user-guide.md
-- [[AgentShroud User Guide]] - document - docs/user-guide.md
-- [[Commands_2]] - document - docs/user-guide.md
-- [[Dashboard Overview]] - document - docs/user-guide.md
-- [[FAQ_1]] - document - docs/user-guide.md
-- [[Getting Started]] - document - docs/user-guide.md
-- [[Interacting via Telegram]] - document - docs/user-guide.md
-- [[Need Help_1]] - document - docs/user-guide.md
-- [[Q Can I request the AI to do something on the server]] - document - docs/user-guide.md
-- [[Q Can I use the bot in group chats]] - document - docs/user-guide.md
-- [[Q Can the AI see my personal information]] - document - docs/user-guide.md
-- [[Q How do I know my data is being protected]] - document - docs/user-guide.md
-- [[Q The bot isn't responding. What do I do]] - document - docs/user-guide.md
-- [[Q What happens if I accidentally send a password]] - document - docs/user-guide.md
-- [[Q What's the kill switch]] - document - docs/user-guide.md
-- [[Reading the Audit Trail]] - document - docs/user-guide.md
-- [[Regular Messages]] - document - docs/user-guide.md
-- [[SSH Access]] - document - docs/user-guide.md
-- [[Tips]] - document - docs/user-guide.md
-- [[Understanding Approval Requests]] - document - docs/user-guide.md
-- [[What Requires Approval]] - document - docs/user-guide.md
-- [[What You'll See]] - document - docs/user-guide.md
-- [[What is AgentShroud_3]] - document - docs/user-guide.md
-- [[Why Approvals Exist]] - document - docs/user-guide.md
-- [[user-guide]] - document - docs/user-guide.md
+- [[BOT_CONTAINER]] - code - scripts/update-bot-agents.sh
+- [[BOT_DEFAULTS_DIR]] - code - scripts/update-bot-agents.sh
+- [[BOT_LIVE_SKILLS_DIR]] - code - scripts/update-bot-agents.sh
+- [[PYTHONPATH]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[SKILLGUARD_TEST_DEST_ROOT]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[_python()]] - code - scripts/sync-llm-settings.sh
+- [[_sha256()_2]] - code - scripts/sync-llm-settings.sh
+- [[_sha256()_3]] - code - scripts/validate-skills-manifest.sh
+- [[_write_manifest()]] - code - scripts/sync-llm-settings.sh
+- [[check()_2]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[check()_3]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[container-runtime.sh (detection shim)]] - code - scripts/lib/container-runtime.sh
+- [[gatewayskillsscan.py (scan CLI)]] - code - gateway/skills/scan.py
+- [[make_fake_bin()]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[run_detect()]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[run_test()]] - code - scripts/smoke.sh
+- [[smoke.sh]] - code - scripts/smoke.sh
+- [[smoke.sh script]] - code - scripts/smoke.sh
+- [[sync-llm-settings.sh]] - code - scripts/sync-llm-settings.sh
+- [[sync-llm-settings.sh script]] - code - scripts/sync-llm-settings.sh
+- [[test-container-runtime.sh]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[test-container-runtime.sh script]] - code - scripts/smoke.d/test-container-runtime.sh
+- [[test-skills-sync.sh]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[test-skills-sync.sh script]] - code - scripts/smoke.d/test-skills-sync.sh
+- [[update-bot-agents.sh]] - code - scripts/update-bot-agents.sh
+- [[update-bot-agents.sh script]] - code - scripts/update-bot-agents.sh
+- [[validate-skills-manifest.sh]] - code - scripts/validate-skills-manifest.sh
+- [[validate-skills-manifest.sh script]] - code - scripts/validate-skills-manifest.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,3 +43,11 @@ members: 27
 TABLE source_file, type FROM #community/docs/user-guidemd
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_AGENTS]]
+
+## Top bridge nodes
+- [[update-bot-agents.sh]] - degree 6, connects to 1 community
+- [[gatewayskillsscan.py (scan CLI)]] - degree 2, connects to 1 community

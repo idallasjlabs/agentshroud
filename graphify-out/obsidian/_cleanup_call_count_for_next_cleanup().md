@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_replay.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gateway Proxy Layer"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Proxy_Layer
 ---
 
 # _cleanup_call_count_for_next_cleanup()
@@ -15,4 +15,4 @@ tags:
 - [[test_cleanup_db_error_swallowed()]] - `calls` [EXTRACTED]
 - [[test_telegram_replay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

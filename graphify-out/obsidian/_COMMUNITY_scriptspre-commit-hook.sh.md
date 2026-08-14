@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # scripts/pre-commit-hook.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[pre-commit-hook.sh]] - code - scripts/pre-commit-hook.sh
-- [[pre-commit-hook.sh script]] - code - scripts/pre-commit-hook.sh
+- [[SKILL_71]] - document - docker/config/openclaw/skills/i-bdd/SKILL.md
+- [[Skill bdd_1]] - document - docker/config/openclaw/skills/i-bdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

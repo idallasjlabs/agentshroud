@@ -1,22 +1,21 @@
 ---
 type: community
-cohesion: 0.52
-members: 7
+members: 8
 ---
 
 # scripts/security-scan.sh
 
-**Cohesion:** 0.52 - moderately connected
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[error()]] - code - scripts/security-scan.sh
-- [[info()_1]] - code - scripts/security-scan.sh
-- [[require_tool()]] - code - scripts/security-scan.sh
-- [[security-scan.sh_1]] - code - scripts/security-scan.sh
-- [[security-scan.sh script_1]] - code - scripts/security-scan.sh
-- [[success()]] - code - scripts/security-scan.sh
-- [[warn()_3]] - code - scripts/security-scan.sh
+- [[Scenario 00 — Information Disclosure (Phase 0 finding)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 01 — Enforce-by-Default]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 02 — Human-in-the-Loop Bypass]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 03 — Session Isolation]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 04 — Separation of Privilege]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 05 — Credential Isolation]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 06 — Outbound Information Filter]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§1 — Re-run of Prior Scenarios]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +23,9 @@ members: 7
 TABLE source_file, type FROM #community/scripts/security-scansh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Security Docs]]
+
+## Top bridge nodes
+- [[§1 — Re-run of Prior Scenarios]] - degree 8, connects to 1 community

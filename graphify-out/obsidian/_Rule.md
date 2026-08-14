@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Gateway Security Module"
+community: "gateway/runtime"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/gateway/runtime
 ---
 
 # _Rule
@@ -15,4 +15,4 @@ tags:
 - [[.__init__()_115]] - `references` [EXTRACTED]
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "SOC Dashboard"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/SOC_Dashboard
 ---
 
 # _PipelineCaptor
 
 ## Connections
-- [[.__init__()_145]] - `method` [EXTRACTED]
+- [[.__init__()_152]] - `method` [EXTRACTED]
 - [[._run_forward()]] - `references` [EXTRACTED]
-- [[.process_inbound()_3]] - `method` [EXTRACTED]
-- [[.process_outbound()_4]] - `method` [EXTRACTED]
+- [[.process_inbound()_2]] - `method` [EXTRACTED]
+- [[.process_outbound()_2]] - `method` [EXTRACTED]
 - [[.test_agent_id_propagated_for_hermes()]] - `calls` [EXTRACTED]
 - [[.test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
 - [[.test_body_owner_id_with_matching_trusted_header_is_honored()]] - `calls` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[_make_mock_app_state()]] - `references` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

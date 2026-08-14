@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/__init__.py"
 type: "code"
-community: "Approval Queue Tests"
+community: "Forward Routing & Approval"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/Forward_Routing__Approval
 ---
 
 # __init__.py
@@ -16,4 +16,4 @@ tags:
 - [[SSHResult]] - `imports` [EXTRACTED]
 - [[proxy.py]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

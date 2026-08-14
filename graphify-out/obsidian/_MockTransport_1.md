@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L154"
+community: "Security Docs"
+location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Docs
 ---
 
 # _MockTransport
 
 ## Connections
 - [[.__call__()_8]] - `method` [EXTRACTED]
-- [[.__init__()_156]] - `method` [EXTRACTED]
+- [[.__init__()_164]] - `method` [EXTRACTED]
 - [[Records POSTs; returns op-proxy secrets then a 201 for the comment.]] - `rationale_for` [EXTRACTED]
 - [[test_jira_weekly_review.py]] - `contains` [EXTRACTED]
 - [[test_run_posts_comment_with_basic_auth()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

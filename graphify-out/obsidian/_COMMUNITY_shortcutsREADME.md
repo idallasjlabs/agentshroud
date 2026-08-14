@@ -1,31 +1,29 @@
 ---
 type: community
-cohesion: 0.12
 members: 16
 ---
 
 # shortcuts/README.md
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[Canonical request (copy-paste `curl` to validate before building Shortcuts)]] - document - shortcuts/README.md
-- [[Content-type quick reference]] - document - shortcuts/README.md
-- [[Contract verification (automated)]] - document - shortcuts/README.md
-- [[One-time setup (do this first)]] - document - shortcuts/README.md
-- [[README_93]] - document - shortcuts/README.md
-- [[Recipe A — Share Sheet text  URL]] - document - shortcuts/README.md
-- [[Recipe B — Siri voice capture (Hey Siri, send to AgentShroud)]] - document - shortcuts/README.md
-- [[Recipe C — Screenshot relay (OCR text)]] - document - shortcuts/README.md
-- [[Recipe D — Clipboard relay (macOS menu bar  iOS)]] - document - shortcuts/README.md
-- [[Recipe E — Share Sheet photo relay]] - document - shortcuts/README.md
-- [[Request body — `ForwardRequest`]] - document - shortcuts/README.md
-- [[Response body — `ForwardResponse`]] - document - shortcuts/README.md
-- [[Status_11]] - document - shortcuts/README.md
-- [[The `forward` contract (authoritative)]] - document - shortcuts/README.md
-- [[Troubleshooting_30]] - document - shortcuts/README.md
-- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - document - shortcuts/README.md
+- [[401 Unauthorized]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[CalendarContacts not found]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Connection timeout]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Create Note]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[List Messages]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[List Notes]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Mail Operations]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Notes Operations]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[SKILL_25]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Search Mail]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Search Notes]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Security_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Send Email]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Setup]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Troubleshooting_4]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[iCloud Services]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +31,11 @@ members: 16
 TABLE source_file, type FROM #community/shortcuts/READMEmd
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+
+## Top bridge nodes
+- [[iCloud Services]] - degree 9, connects to 3 communities

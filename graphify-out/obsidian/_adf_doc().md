@@ -2,7 +2,7 @@
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
 community: "Bot Skill Config"
-location: "L121"
+location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED

@@ -1,38 +1,42 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "HTTP Forwarder"
-location: "L409"
+community: "Planning Docs"
+location: "L29"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/HTTP_Forwarder
+  - graphify/EXTRACTED
+  - community/Planning_Docs
 ---
 
 # _StubForwarder
 
 ## Connections
-- [[.__init__()_143]] - `method` [EXTRACTED]
-- [[.forward()_1]] - `method` [EXTRACTED]
-- [[AuditChain]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
-- [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[EgressPolicy]] - `uses` [INFERRED]
-- [[Forwarder stub returning a canned bot response body.]] - `rationale_for` [EXTRACTED]
-- [[ForwarderConfig]] - `uses` [INFERRED]
-- [[HTTPForwarder]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[PipelineAction]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[ScanRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
-- [[SidecarScanner]] - `uses` [INFERRED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[WebhookReceiver]] - `uses` [INFERRED]
-- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
-- [[test_webhook_outbound_block_withheld()]] - `calls` [EXTRACTED]
-- [[test_webhook_outbound_pipeline_crash_fails_closed()]] - `calls` [EXTRACTED]
+- [[.__init__()_133]] - `method` [EXTRACTED]
+- [[.forward()_2]] - `method` [EXTRACTED]
+- [[A2AMethod]] - `uses` [INFERRED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[A2AProxy]] - `uses` [INFERRED]
+- [[A2AProxyResult]] - `uses` [INFERRED]
+- [[DifferentialPIIConfig]] - `uses` [INFERRED]
+- [[DifferentialPIIDetector]] - `uses` [INFERRED]
+- [[Records what it was asked to forward; returns a canned response.]] - `rationale_for` [EXTRACTED]
+- [[forwarder()]] - `references` [EXTRACTED]
+- [[proxy()]] - `references` [EXTRACTED]
+- [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
+- [[test_agent_card_discovery_is_never_policy_gated()]] - `references` [EXTRACTED]
+- [[test_agent_card_discovery_is_still_audited()]] - `references` [EXTRACTED]
+- [[test_process_inbound_request_allowed_peer_low_risk_forwards()]] - `references` [EXTRACTED]
+- [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - `references` [EXTRACTED]
+- [[test_process_inbound_request_denial_is_also_logged_to_audit_store()]] - `references` [EXTRACTED]
+- [[test_process_inbound_request_denied_peer_never_reaches_hermes()]] - `references` [EXTRACTED]
+- [[test_process_inbound_request_high_risk_method_without_approval_queue_denied()]] - `references` [EXTRACTED]
+- [[test_process_inbound_request_logs_to_audit_store_when_configured()]] - `references` [EXTRACTED]
+- [[test_process_inbound_request_malformed_body_is_blocked()]] - `references` [EXTRACTED]
+- [[test_process_inbound_request_missing_auth_is_blocked_and_never_forwarded()]] - `references` [EXTRACTED]
+- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - `references` [EXTRACTED]
+- [[test_process_inbound_request_task_ownership_violation_blocked()]] - `references` [EXTRACTED]
+- [[test_process_inbound_request_unknown_token_is_blocked()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/HTTP_Forwarder
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

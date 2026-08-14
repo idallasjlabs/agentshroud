@@ -1,14 +1,14 @@
 ---
 source_file: "chatbot/__init__.py"
 type: "code"
-community: "chatbot/__init__.py"
+community: "docs/project"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/__init__py
+  - community/docs/project
 ---
 
 # __init__.py
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/__init__py
+#graphify/code #graphify/EXTRACTED #community/docs/project

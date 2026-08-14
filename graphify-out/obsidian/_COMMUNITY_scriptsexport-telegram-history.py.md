@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.60
-members: 6
+members: 7
 ---
 
 # scripts/export-telegram-history.py
 
-**Cohesion:** 0.60 - moderately connected
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Path_41]] - code - scripts/export-telegram-history.py
-- [[_require_env()]] - code - scripts/export-telegram-history.py
-- [[_serialize()]] - code - scripts/export-telegram-history.py
-- [[export()]] - code - scripts/export-telegram-history.py
-- [[export-telegram-history.py]] - code - scripts/export-telegram-history.py
-- [[main()_13]] - code - scripts/export-telegram-history.py
+- [[Hermes API forwarder must include an HTTP-method peek to drop non-HTTP connectio]] - rationale - gateway/tests/test_telegram_executor.py
+- [[Non-HTTP bytes (e.g. TLS ClientHello) must be dropped without proxying.]] - rationale - gateway/tests/test_telegram_executor.py
+- [[lifespan startup must install ThreadPoolExecutor(max_workers=64).]] - rationale - gateway/tests/test_telegram_executor.py
+- [[test_hermes_forwarder_drops_non_http()]] - code - gateway/tests/test_telegram_executor.py
+- [[test_lifespan_hermes_forwarder_has_http_peek()]] - code - gateway/tests/test_telegram_executor.py
+- [[test_lifespan_installs_64_worker_executor()]] - code - gateway/tests/test_telegram_executor.py
+- [[test_telegram_executor.py]] - code - gateway/tests/test_telegram_executor.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +22,9 @@ members: 6
 TABLE source_file, type FROM #community/scripts/export-telegram-historypy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Slack API Proxy]]
+
+## Top bridge nodes
+- [[test_telegram_executor.py]] - degree 4, connects to 1 community

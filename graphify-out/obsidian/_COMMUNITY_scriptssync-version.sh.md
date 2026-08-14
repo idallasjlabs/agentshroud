@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 1.00
-members: 3
+members: 4
 ---
 
 # scripts/sync-version.sh
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[check_or_fix()]] - code - scripts/sync-version.sh
-- [[sync-version.sh]] - code - scripts/sync-version.sh
-- [[sync-version.sh script]] - code - scripts/sync-version.sh
+- [[Manual Update Process]] - document - docs/setup/setup-guide.md
+- [[Rollback If Needed]] - document - docs/setup/setup-guide.md
+- [[Update OpenClaw]] - document - docs/setup/setup-guide.md
+- [[Updating]] - document - docs/setup/setup-guide.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,3 +19,10 @@ members: 3
 TABLE source_file, type FROM #community/scripts/sync-versionsh
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Bot Container Scripts]]
+- 1 edge to [[_COMMUNITY_skillsopenclaw]]
+
+## Top bridge nodes
+- [[Updating]] - degree 5, connects to 2 communities

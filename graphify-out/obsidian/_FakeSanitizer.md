@@ -12,9 +12,9 @@ tags:
 # _FakeSanitizer
 
 ## Connections
-- [[.block_credentials()]] - `method` [EXTRACTED]
-- [[.filter_xml_blocks()]] - `method` [EXTRACTED]
-- [[.sanitize()]] - `method` [EXTRACTED]
+- [[.block_credentials()_1]] - `method` [EXTRACTED]
+- [[.filter_xml_blocks()_1]] - `method` [EXTRACTED]
+- [[.sanitize()_3]] - `method` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[test_credential_injector_called_in_streaming_path()]] - `calls` [EXTRACTED]
 - [[test_credential_injector_does_not_overwrite_existing_bearer()]] - `calls` [EXTRACTED]

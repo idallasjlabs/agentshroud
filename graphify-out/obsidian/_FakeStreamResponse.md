@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "skills/openclaw"
 location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/skills/openclaw
 ---
 
 # _FakeStreamResponse
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.__enter__()]] - `method` [EXTRACTED]
 - [[.__exit__()]] - `method` [EXTRACTED]
-- [[.__init__()_132]] - `method` [EXTRACTED]
+- [[.__init__()_138]] - `method` [EXTRACTED]
 - [[.iter_bytes()]] - `method` [EXTRACTED]
 - [[.test_2xx_with_body_hashes_content()]] - `calls` [EXTRACTED]
 - [[.test_byte_budget_caps_reads()]] - `calls` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[Stand-in for the object httpx.stream() yields as a context manager.]] - `rationale_for` [EXTRACTED]
 - [[test_citation_verifier.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

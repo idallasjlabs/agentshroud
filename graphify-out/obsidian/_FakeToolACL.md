@@ -12,8 +12,8 @@ tags:
 # _FakeToolACL
 
 ## Connections
-- [[.__init__()_4]] - `method` [EXTRACTED]
-- [[.can_use_tool()]] - `method` [EXTRACTED]
+- [[.__init__()_167]] - `method` [EXTRACTED]
+- [[.can_use_tool()_1]] - `method` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[Minimal ToolACLEnforcer stub that denies a named tool.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]

@@ -1,46 +1,46 @@
 ---
 type: community
-cohesion: 0.09
-members: 31
+members: 33
 ---
 
 # gateway/runtime
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 31 nodes
+**Members:** 33 nodes
 
 ## Members
-- [[.__init__()_46]] - code - gateway/runtime/docker_engine.py
-- [[._cmd()_1]] - code - gateway/runtime/docker_engine.py
-- [[.build()_1]] - code - gateway/runtime/docker_engine.py
-- [[.client()_3]] - code - gateway/tests/test_runtime_engines.py
-- [[.compose_down()_1]] - code - gateway/runtime/docker_engine.py
-- [[.compose_up()_1]] - code - gateway/runtime/docker_engine.py
-- [[.exec()_1]] - code - gateway/runtime/docker_engine.py
-- [[.health_check()_3]] - code - gateway/runtime/docker_engine.py
-- [[.inspect()_1]] - code - gateway/runtime/docker_engine.py
-- [[.logs()_1]] - code - gateway/runtime/docker_engine.py
-- [[.network_create()_1]] - code - gateway/runtime/docker_engine.py
-- [[.network_rm()_1]] - code - gateway/runtime/docker_engine.py
-- [[.pause()_1]] - code - gateway/runtime/docker_engine.py
-- [[.pull()_1]] - code - gateway/runtime/docker_engine.py
-- [[.push()_1]] - code - gateway/runtime/docker_engine.py
-- [[.rm()_1]] - code - gateway/runtime/docker_engine.py
-- [[.run()_2]] - code - gateway/runtime/docker_engine.py
-- [[.stop()_6]] - code - gateway/runtime/docker_engine.py
-- [[.test_install()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_installer_page()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_prerequisites()]] - code - gateway/tests/test_runtime_engines.py
-- [[.test_runtimes()]] - code - gateway/tests/test_runtime_engines.py
-- [[.unpause()_1]] - code - gateway/runtime/docker_engine.py
-- [[.volume_create()_1]] - code - gateway/runtime/docker_engine.py
-- [[.volume_rm()_1]] - code - gateway/runtime/docker_engine.py
-- [[Any_25]] - code - gateway/runtime/docker_engine.py
-- [[Container engine backed by the Docker CLI.]] - rationale - gateway/runtime/docker_engine.py
-- [[ContainerEngine_1]] - code
-- [[DockerEngine]] - code - gateway/runtime/docker_engine.py
-- [[Installer must not fake completion SCRUM-107.          The endpoint has no auto]] - rationale - gateway/tests/test_runtime_engines.py
-- [[TestInstallerAPI]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_answer_callback_error()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_answer_callback_success()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_cleanup_expired_requests()_1]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_get_pending_count()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_allow_always_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_approve_1h()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_approve_4h()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_approve_permanent()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_deny()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_missing_agent_id_safe()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_request_not_found()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_handle_callback_returns_agent_id()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_notification_recipients_owner_only_by_default()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_notify_pending_failure()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_notify_pending_success()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[.test_risk_emoji_mapping()]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[Collaborators are never added to notification_recipients — only owner gets egres]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Missing agent_id in stored request returns empty string, not a crash.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Permanent approval also includes agent_id in result.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test Telegram egress notification system.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test answer_callback handles errors.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test answering callback query.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test callback for non-existent request.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test cleanup removes expired pending requests.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling 1-hour time-limited approval callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling deny callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test handling permanent (allow_always) approval callback.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test notification handles API failure gracefully.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test risk level emoji display.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[Test successful notification sending.]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[TestEgressTelegramNotify]] - code - gateway/tests/test_egress_telegram_notify.py
+- [[handle_callback must include agent_id so the proxy can notify the originating co]] - rationale - gateway/tests/test_egress_telegram_notify.py
+- [[test_egress_telegram_notify.py]] - code - gateway/tests/test_egress_telegram_notify.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,16 +50,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_gatewayruntime]]
-- 6 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_gatewayruntime]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_docsvault]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Community 1539]]
 
 ## Top bridge nodes
-- [[DockerEngine]] - degree 43, connects to 7 communities
-- [[TestInstallerAPI]] - degree 11, connects to 4 communities
-- [[ContainerEngine_1]] - degree 3, connects to 2 communities
-- [[Any_25]] - degree 3, connects to 1 community
+- [[TestEgressTelegramNotify]] - degree 22, connects to 3 communities
+- [[test_egress_telegram_notify.py]] - degree 2, connects to 1 community

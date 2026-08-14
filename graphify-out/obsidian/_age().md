@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Bot Skill Config"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_Skill_Config
 ---
 
 # _age()
@@ -16,8 +16,8 @@ tags:
 - [[.test_malware_30h_old_scan_measured()]] - `calls` [EXTRACTED]
 - [[.test_old_file_returns_false()]] - `calls` [EXTRACTED]
 - [[.test_two_day_old_clean_is_measured()]] - `calls` [EXTRACTED]
-- [[Path_36]] - `references` [EXTRACTED]
+- [[Path_37]] - `references` [EXTRACTED]
 - [[Set a file's mtime to `hours` hours in the past.]] - `rationale_for` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

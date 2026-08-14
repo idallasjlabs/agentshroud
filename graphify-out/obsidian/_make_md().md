@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "HTTP Forwarder"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/HTTP_Forwarder
 ---
 
 # _make_md()
 
 ## Connections
 - [[Create a fake contributor markdown file for the given uid.]] - `rationale_for` [EXTRACTED]
-- [[Path_30]] - `references` [EXTRACTED]
+- [[Path_31]] - `references` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `contains` [EXTRACTED]
 - [[test_prune_keeps_real_uid_markdown()]] - `calls` [EXTRACTED]
 - [[test_prune_walks_all_contributor_dirs()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder

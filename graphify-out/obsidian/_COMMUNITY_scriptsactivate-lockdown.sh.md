@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # scripts/activate-lockdown.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[activate-lockdown.sh]] - code - scripts/activate-lockdown.sh
-- [[activate-lockdown.sh script]] - code - scripts/activate-lockdown.sh
+- [[SKILL_4]] - document - docker/config/hermes/skills/i-architecture-review/SKILL.md
+- [[Skill architecture-review]] - document - docker/config/hermes/skills/i-architecture-review/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

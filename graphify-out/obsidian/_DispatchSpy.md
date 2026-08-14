@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[.__call__()_4]] - `method` [EXTRACTED]
-- [[.__init__()_136]] - `method` [EXTRACTED]
+- [[.__init__()_142]] - `method` [EXTRACTED]
 - [[.test_alert_ids_stable_per_job_episode()]] - `calls` [EXTRACTED]
 - [[.test_first_sight_failing_alerts_once()]] - `calls` [EXTRACTED]
 - [[.test_flood_capped_with_aggregate_alert()]] - `calls` [EXTRACTED]

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.__enter__()_2]] - `method` [EXTRACTED]
 - [[.__exit__()_2]] - `method` [EXTRACTED]
-- [[.__init__()_147]] - `method` [EXTRACTED]
+- [[.__init__()_155]] - `method` [EXTRACTED]
 - [[.login()_1]] - `method` [EXTRACTED]
 - [[.sendmail()_1]] - `method` [EXTRACTED]
 - [[GatewayEmailService]] - `uses` [INFERRED]

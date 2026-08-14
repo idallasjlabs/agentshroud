@@ -1,43 +1,42 @@
 ---
 type: community
-cohesion: 0.08
-members: 28
+members: 29
 ---
 
 # docs/ssh-security-review.md
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 28 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[1. Pre-populate known_hosts]] - document - docs/ssh-security-review.md
-- [[2. Network Segmentation]] - document - docs/ssh-security-review.md
-- [[3. Key Rotation]] - document - docs/ssh-security-review.md
-- [[4. Rate Limiting]] - document - docs/ssh-security-review.md
-- [[5. Output Sanitization]] - document - docs/ssh-security-review.md
-- [[6. Least-Privilege SSH Users]] - document - docs/ssh-security-review.md
-- [[Adversarial Red-Team  Blue-Team Assessment]] - document - docs/testing/test-coverage-report.md
-- [[AgentShroud v1.3.0_1]] - document - docs/testing/test-coverage-report.md
-- [[Comparison Direct SSH vs. AgentShroud SSH Proxy]] - document - docs/ssh-security-review.md
-- [[Executive Summary_14]] - document - docs/testing/test-coverage-report.md
-- [[How to regenerate this report accurately]] - document - docs/testing/test-coverage-report.md
-- [[MCP Servers]] - document - .github/COPILOT_CLI_SETUP.md
-- [[P4 Low Priority Incidents]] - document - docs/operations/incident-response.md
-- [[Recommendations for Production Deployment]] - document - docs/ssh-security-review.md
-- [[Risk Summary]] - document - docs/ssh-security-review.md
-- [[SSH Approval Flow (auto-approve vs human-review vs deny)]] - concept - docs/ssh-capability.md
-- [[SSH Command Injection Detection (INJECTION_PATTERNS regex + asyncio subprocess exec)]] - concept - docs/ssh-capability.md
-- [[SSH Proxy Module (gatewayssh_proxyproxy.py)]] - concept - docs/ssh-capability.md
-- [[SSH Security Review]] - document - docs/ssh-security-review.md
-- [[SSHHostConfig (per-host allowdenyauto-approve lists, timeout, key_path)]] - concept - docs/ssh-capability.md
-- [[Test Coverage Report]] - document - docs/testing/test-coverage-report.md
-- [[Test Plan]] - document - docs/testing/test-plan.md
-- [[User-Level Config]] - document - .github/COPILOT_CLI_SETUP.md
-- [[ssh-capability]] - document - docs/ssh-capability.md
-- [[ssh-configuration]] - document - docs/ssh-configuration.md
-- [[ssh-security-review]] - document - docs/ssh-security-review.md
-- [[test-coverage-report]] - document - docs/testing/test-coverage-report.md
-- [[test-plan]] - document - docs/testing/test-plan.md
+- [[.__init__()_196]] - code - src/interfaces/text_control_center.py
+- [[.clear_screen()]] - code - src/interfaces/text_control_center.py
+- [[.draw_approvals()]] - code - src/interfaces/text_control_center.py
+- [[.draw_box()]] - code - src/interfaces/text_control_center.py
+- [[.draw_dashboard()]] - code - src/interfaces/text_control_center.py
+- [[.draw_kill_switch()]] - code - src/interfaces/text_control_center.py
+- [[.draw_log()]] - code - src/interfaces/text_control_center.py
+- [[.draw_modules()]] - code - src/interfaces/text_control_center.py
+- [[.draw_ssh_hosts()]] - code - src/interfaces/text_control_center.py
+- [[.get_auth()]] - code - src/interfaces/text_control_center.py
+- [[.get_key()_1]] - code - src/interfaces/text_control_center.py
+- [[.make_api_request()]] - code - src/interfaces/text_control_center.py
+- [[.run()_6]] - code - src/interfaces/text_control_center.py
+- [[ANSI]] - code - src/interfaces/text_control_center.py
+- [[Clear screen and position cursor at home]] - rationale - src/interfaces/text_control_center.py
+- [[ControlCenter]] - code - src/interfaces/text_control_center.py
+- [[Draw SSH hosts status screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw a box with title]] - rationale - src/interfaces/text_control_center.py
+- [[Draw approval queue screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw audit log screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw kill switch screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw main dashboard screen]] - rationale - src/interfaces/text_control_center.py
+- [[Draw modules list screen]] - rationale - src/interfaces/text_control_center.py
+- [[Get a single keypress (non-blocking)]] - rationale - src/interfaces/text_control_center.py
+- [[Get gateway authentication]] - rationale - src/interfaces/text_control_center.py
+- [[Main control center loop]] - rationale - src/interfaces/text_control_center.py
+- [[Make authenticated API request to gateway]] - rationale - src/interfaces/text_control_center.py
+- [[main()_29]] - code - src/interfaces/text_control_center.py
+- [[text_control_center.py]] - code - src/interfaces/text_control_center.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,21 +44,3 @@ members: 28
 TABLE source_file, type FROM #community/docs/ssh-security-reviewmd
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_docsvault]]
-- 1 edge to [[_COMMUNITY_.githubCOPILOT_CLI_SETUP]]
-- 1 edge to [[_COMMUNITY_AGENTS]]
-- 1 edge to [[_COMMUNITY_docsoperations]]
-- 1 edge to [[_COMMUNITY_docsssh-capability]]
-- 1 edge to [[_COMMUNITY_docsssh-configuration]]
-- 1 edge to [[_COMMUNITY_skillsopenclaw]]
-- 1 edge to [[_COMMUNITY_Security Docs]]
-- 1 edge to [[_COMMUNITY_docstesting]]
-
-## Top bridge nodes
-- [[ssh-configuration]] - degree 9, connects to 4 communities
-- [[SSH Proxy Module (gatewayssh_proxyproxy.py)]] - degree 7, connects to 1 community
-- [[ssh-capability]] - degree 5, connects to 1 community
-- [[SSH Security Review]] - degree 5, connects to 1 community
-- [[P4 Low Priority Incidents]] - degree 2, connects to 1 community

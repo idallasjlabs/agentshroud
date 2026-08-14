@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # scripts/verify-greeter-state.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[verify-greeter-state.sh]] - code - scripts/verify-greeter-state.sh
-- [[verify-greeter-state.sh script]] - code - scripts/verify-greeter-state.sh
+- [[SKILL_90]] - document - docker/config/openclaw/skills/i-kaizen/SKILL.md
+- [[Skill kaizen_1]] - document - docker/config/openclaw/skills/i-kaizen/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

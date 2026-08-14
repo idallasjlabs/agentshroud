@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # scripts/egress-iptables.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[egress-iptables.sh]] - code - scripts/egress-iptables.sh
-- [[egress-iptables.sh script]] - code - scripts/egress-iptables.sh
+- [[SKILL_28]] - document - docker/config/hermes/skills/i-kanban/SKILL.md
+- [[Skill kanban]] - document - docker/config/hermes/skills/i-kanban/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

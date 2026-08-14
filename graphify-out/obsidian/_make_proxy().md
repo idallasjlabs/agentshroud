@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
 community: "Gateway Test Suite"
-location: "L51"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -14,9 +14,11 @@ tags:
 ## Connections
 - [[LLMProxy]] - `calls` [EXTRACTED]
 - [[LLMProxy_2]] - `references` [EXTRACTED]
+- [[LLMProxy_4]] - `references` [EXTRACTED]
 - [[_FakeSanitizer_1]] - `calls` [EXTRACTED]
 - [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `calls` [EXTRACTED]
 - [[test_deepseek_r1_routes_to_mlxlm()]] - `calls` [EXTRACTED]
+- [[test_get_local_model_reads_fieldflare_ref()]] - `calls` [EXTRACTED]
 - [[test_get_local_secondary_model_reads_env()]] - `calls` [EXTRACTED]
 - [[test_get_local_secondary_model_returns_none_when_unset()]] - `calls` [EXTRACTED]
 - [[test_hermes_cloud_mode_uses_anthropic_endpoint()]] - `calls` [EXTRACTED]
