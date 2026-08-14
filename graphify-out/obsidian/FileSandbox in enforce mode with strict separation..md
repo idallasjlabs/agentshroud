@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "File Sandbox"
+community: "URL/Domain Validation Tests"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/URL/Domain_Validation_Tests
 ---
 
 # FileSandbox in enforce mode with strict separation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[enforce_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

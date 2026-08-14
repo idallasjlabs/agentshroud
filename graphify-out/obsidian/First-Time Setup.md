@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "docs/runbooks"
+community: "docs/vault"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/docs/vault
 ---
 
 # First-Time Setup
@@ -15,4 +15,4 @@ tags:
 - [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
 - [[Quick Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/docs/vault

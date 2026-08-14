@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ab/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "skills/openclaw"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/skills/openclaw
 ---
 
 # Finding Triage Classes (CONFIRMED/PROBABLE/SELF_HEALED/FALSE_POSITIVE/GOOD_DIRECTION)
@@ -15,4 +15,4 @@ tags:
 - [[GSDL-715 (silent regression incident)]] - `conceptually_related_to` [EXTRACTED]
 - [[i-ab Audit Branch Merge Regression Detection]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

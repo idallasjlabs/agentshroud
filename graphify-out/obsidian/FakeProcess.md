@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Collaborator Prompt Safety"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Collaborator_Prompt_Safety
 ---
 
 # FakeProcess
 
 ## Connections
-- [[.__init__()_159]] - `method` [EXTRACTED]
+- [[.__init__()_169]] - `method` [EXTRACTED]
 - [[.kill()]] - `method` [EXTRACTED]
 - [[.terminate()]] - `method` [EXTRACTED]
 - [[.test_start_send_and_stop()]] - `calls` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Safety

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "docs/diagrams"
+community: "Bot Skill Config"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Bot_Skill_Config
 ---
 
 # Execute Action (tool call / reply)
@@ -14,4 +14,4 @@ tags:
 - [[LLM Inference (OpenAI  Anthropic)]] - `calls` [EXTRACTED]
 - [[PII Sanitizer (Presidio  regex)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/diagrams
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

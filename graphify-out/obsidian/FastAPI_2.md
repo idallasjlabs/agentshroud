@@ -1,27 +1,23 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
-location: "L107"
+community: "Gateway Test Suite"
+location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval__FastAPI_Ingest
+  - community/Gateway_Test_Suite
 ---
 
 # FastAPI
 
 ## Connections
-- [[AlertTelegramRelay]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[EventBus]] - `uses` [INFERRED]
-- [[GroupRegistry]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[lifespan()_1]] - `references` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
+- [[KillSwitchConfig]] - `uses` [INFERRED]
+- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[ModeRequest]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[_make_app()]] - `references` [EXTRACTED]
+- [[test_observatory_mode.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

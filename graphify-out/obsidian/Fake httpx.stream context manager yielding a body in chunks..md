@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "skills/openclaw"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/skills/openclaw
 ---
 
 # Fake httpx.stream context manager yielding a body in chunks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_StreamResp]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw

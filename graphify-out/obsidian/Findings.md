@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "Planning Docs"
+community: "docs/governance"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/docs/governance
 ---
 
 # Findings
@@ -18,4 +18,4 @@ tags:
 - [[LOW — Informational_1]] - `contains` [EXTRACTED]
 - [[MEDIUM — Recommended]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/governance

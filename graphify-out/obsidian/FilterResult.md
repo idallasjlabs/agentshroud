@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Security Pipeline Core"
+community: "SOC RBAC & Auth"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Pipeline_Core
+  - community/SOC_RBAC__Auth
 ---
 
 # FilterResult
 
 ## Connections
 - [[.filter_response()]] - `references` [EXTRACTED]
-- [[Any_18]] - `uses` [INFERRED]
+- [[Any_19]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 - [[pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Pipeline_Core
+#graphify/code #graphify/INFERRED #community/SOC_RBAC__Auth

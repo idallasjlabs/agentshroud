@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Gateway Proxy Layer"
 location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Gateway_Proxy_Layer
 ---
 
 # Examples
@@ -22,4 +22,4 @@ tags:
 - [[See - click - type (most reliable flow)]] - `contains` [EXTRACTED]
 - [[Target by window id]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Gateway_Proxy_Layer

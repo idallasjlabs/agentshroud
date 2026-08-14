@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Planning Docs"
 location: "L410"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # Fetch one agent's GitHub Security Advisories and return advisories we don't trac
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_upstream_cves()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Architecture Docs"
+community: "Bot Skill Config"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Files to Mount in Container
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 1 Isaiah's Persona Package]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

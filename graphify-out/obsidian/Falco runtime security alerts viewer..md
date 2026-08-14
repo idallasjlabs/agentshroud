@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "Web Control Center"
+community: "scripts/migrate-cve-registry-ghsa.py"
 location: "L414"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Web_Control_Center
+  - community/scripts/migrate-cve-registry-ghsapy
 ---
 
 # Falco runtime security alerts viewer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[falco_dashboard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Web_Control_Center
+#graphify/rationale #graphify/EXTRACTED #community/scripts/migrate-cve-registry-ghsapy

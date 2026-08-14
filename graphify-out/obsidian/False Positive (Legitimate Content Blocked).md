@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "docs/vault"
+community: "docs/redteam"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/redteam
 ---
 
 # False Positive (Legitimate Content Blocked)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/docs/redteam

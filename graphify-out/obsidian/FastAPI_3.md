@@ -1,23 +1,18 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "voice_gateway/server.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L60"
+community: "Planning Docs"
+location: "L357"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - graphify/EXTRACTED
+  - community/Planning_Docs
 ---
 
 # FastAPI
 
 ## Connections
-- [[GatewayConfig_1]] - `uses` [INFERRED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
-- [[_make_app()]] - `references` [EXTRACTED]
-- [[test_observatory_mode.py]] - `imports_from` [EXTRACTED]
+- [[_lifespan()]] - `references` [EXTRACTED]
+- [[server.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

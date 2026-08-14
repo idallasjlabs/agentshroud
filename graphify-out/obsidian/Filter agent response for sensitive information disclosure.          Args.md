@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Bot CVE Scorecard"
 location: "L354"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Bot_CVE_Scorecard
 ---
 
 # Filter agent response for sensitive information disclosure.          Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.filter_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Bot_CVE_Scorecard

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Setup Docs"
+community: "Bot Skill Config"
 location: "L280"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Bot_Skill_Config
 ---
 
 # For Immediate Use: CalDAV/CardDAV
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🚀 Recommended Approach]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

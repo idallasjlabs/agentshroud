@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "docs/reference"
+community: "Bot Skill Config"
 location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/reference
+  - community/Bot_Skill_Config
 ---
 
 # Files
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Quick Reference Card]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/reference
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

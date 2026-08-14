@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "branding/README.md"
 location: "L294"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/branding/READMEmd
 ---
 
 # Fill a single form field          Security: Risk classification, approval for se
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.fill_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/branding/READMEmd

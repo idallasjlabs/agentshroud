@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Planning Docs"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # Feedback Guidelines
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

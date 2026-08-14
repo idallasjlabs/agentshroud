@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
+community: "docs/api"
 location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
+  - community/docs/api
 ---
 
 # Example 3: User Wants Service Configured
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🧪 Decision Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
+#graphify/document #graphify/EXTRACTED #community/docs/api

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "LLM Proxy Resource Guard"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # FakeGroup
 
 ## Connections
-- [[.__init__()_172]] - `method` [EXTRACTED]
+- [[.__init__()_182]] - `method` [EXTRACTED]
 - [[.model_dump()_1]] - `method` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[test_set_group_mode_paths()]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

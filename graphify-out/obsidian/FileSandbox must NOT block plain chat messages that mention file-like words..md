@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Bot Skill Config"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_Skill_Config
 ---
 
 # FileSandbox must NOT block plain chat messages that mention file-like words.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFileSandboxSkippedForPlainMessages]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

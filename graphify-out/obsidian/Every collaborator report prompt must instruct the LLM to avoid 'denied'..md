@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Architecture Docs"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Architecture_Docs
 ---
 
 # Every collaborator report prompt must instruct the LLM to avoid 'denied'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cron_prompts_warn_against_denied_token()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Architecture_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "concept"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "docker/falco/rules.yaml"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # Falco rule: Crypto Mining Detection (CRITICAL — known miners or stratum protocol)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[falco-rules.yaml (runtime security rules — shell spawn, outbound, privilege escalation)]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

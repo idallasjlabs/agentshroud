@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Collaborator Response Templates"
 location: "L465"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Collaborator_Response_Templates
 ---
 
 # Export findings to a detailed report.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.export_findings_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates

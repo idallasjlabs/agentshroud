@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Planning Docs"
 location: "L579"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # For --update and --cluster-only
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

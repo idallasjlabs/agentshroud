@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "docs/setup-slack.md"
+community: "Security Docs"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/setup-slackmd
+  - community/Security_Docs
 ---
 
 # First Time Setup
@@ -25,4 +25,4 @@ tags:
 - [[Step 8 Verify Security Posture]] - `contains` [EXTRACTED]
 - [[Troubleshooting First Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/setup-slackmd
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

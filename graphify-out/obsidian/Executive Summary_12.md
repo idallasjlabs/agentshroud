@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Security Docs"
+community: "Bot Skill Config"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Executive Summary
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Threat Model (STRIDE Analysis)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Gateway Test Suite"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Security_Module
+  - community/Gateway_Test_Suite
 ---
 
 # FetchOutcome
@@ -22,4 +22,4 @@ tags:
 - [[FetchOutcome]] - `uses` [INFERRED]
 - [[IntelReportStore]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Security_Module
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

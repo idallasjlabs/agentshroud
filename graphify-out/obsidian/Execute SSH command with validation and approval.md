@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Auth & Exception Types"
-location: "L955"
+community: "PII Sanitizer Pipeline"
+location: "L962"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Execute SSH command with validation and approval
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ssh_exec()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

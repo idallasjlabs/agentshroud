@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "docs/project"
+community: "Bot Skill Config"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Bot_Skill_Config
 ---
 
 # Features Confirmed Working
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[✅ What's WORKING]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

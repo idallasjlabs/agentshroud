@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/live-assessment-results.md"
 type: "document"
-community: "Planning Docs"
+community: "docs/ssh-configuration.md"
 location: "L95"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/docs/ssh-configurationmd
 ---
 
 # Expected v0.7.0 Results
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.7.0 Remediation (In Progress)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/ssh-configurationmd

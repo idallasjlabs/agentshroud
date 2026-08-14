@@ -1,11 +1,11 @@
 ---
 source_file: "docker/falco/rules.yaml"
 type: "code"
-community: "docker/falco"
+community: "Gateway Test Suite"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/falco
+  - community/Gateway_Test_Suite
 ---
 
 # Falco Security Rules (rules.yaml)
@@ -17,4 +17,4 @@ tags:
 - [[Falco Rule Secret File Access]] - `defines` [EXTRACTED]
 - [[Falco Rule Unexpected Outbound Connection]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker/falco
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

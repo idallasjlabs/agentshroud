@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Collaborator Prompt Safety"
 location: "L444"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Collaborator_Prompt_Safety
 ---
 
 # FakeApprovalQueue
 
 ## Connections
-- [[.__init__()_161]] - `method` [EXTRACTED]
+- [[.__init__()_171]] - `method` [EXTRACTED]
 - [[.get_item()_2]] - `method` [EXTRACTED]
-- [[.submit_tool_request()_2]] - `method` [EXTRACTED]
+- [[.submit_tool_request()_4]] - `method` [EXTRACTED]
 - [[.test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [INFERRED]
 - [[.test_approved_decision_allows()]] - `calls` [EXTRACTED]
 - [[.test_denied_decision_blocks_with_item_status()]] - `calls` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[.test_tool_not_requiring_approval_allowed()]] - `calls` [EXTRACTED]
 - [[.test_unknown_domain_allowed_when_approved()]] - `calls` [INFERRED]
 - [[.test_unknown_domain_denied_when_denied()]] - `calls` [INFERRED]
-- [[.wait_for_decision()_2]] - `method` [EXTRACTED]
+- [[.wait_for_decision()_4]] - `method` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
@@ -40,4 +40,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Safety

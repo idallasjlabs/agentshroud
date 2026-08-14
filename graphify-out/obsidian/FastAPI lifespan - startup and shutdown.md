@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
+community: "Slack API Proxy"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Slack_API_Proxy
 ---
 
 # FastAPI lifespan - startup and shutdown
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[lifespan()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy

@@ -1,23 +1,27 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "SOC RBAC & Auth"
-location: "L57"
+community: "Gateway Test Suite"
+location: "L277"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # FakeAuditStore
 
 ## Connections
-- [[.__init__()_170]] - `method` [EXTRACTED]
-- [[.get_recent_entries()_1]] - `method` [EXTRACTED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[test_egress_log_filters_egress_events()]] - `calls` [EXTRACTED]
-- [[test_security_events_with_filters()]] - `calls` [EXTRACTED]
-- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
+- [[.__init__()_151]] - `method` [EXTRACTED]
+- [[.log_event()_2]] - `method` [EXTRACTED]
+- [[.test_allow_is_not_persisted_to_audit_store()]] - `calls` [EXTRACTED]
+- [[.test_deny_is_persisted_to_audit_store()]] - `calls` [EXTRACTED]
+- [[ApprovalResult]] - `uses` [INFERRED]
+- [[EgressAction]] - `uses` [INFERRED]
+- [[EgressAttempt]] - `uses` [INFERRED]
+- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[EgressFilterConfig]] - `uses` [INFERRED]
+- [[EgressPolicy]] - `uses` [INFERRED]
+- [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

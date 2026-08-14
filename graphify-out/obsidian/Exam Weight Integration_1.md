@@ -12,6 +12,6 @@ tags:
 # Exam Weight Integration
 
 ## Connections
-- [[OKE Channel — CPA Exam Context]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

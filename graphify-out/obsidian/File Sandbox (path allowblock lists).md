@@ -1,11 +1,11 @@
 ---
 source_file: "examples/egress-config.yml"
 type: "concept"
-community: "Planning Docs"
+community: "CLAUDE.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/CLAUDEmd
 ---
 
 # File Sandbox (path allow/block lists)
@@ -16,4 +16,4 @@ tags:
 - [[Egress Control Config Example]] - `describes` [EXTRACTED]
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Planning_Docs
+#graphify/concept #graphify/EXTRACTED #community/CLAUDEmd

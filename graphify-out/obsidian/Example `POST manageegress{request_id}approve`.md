@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "docs/api"
+community: "Gateway Test Suite"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/api
+  - community/Gateway_Test_Suite
 ---
 
 # Example: `POST /manage/egress/{request_id}/approve`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[API Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/api
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

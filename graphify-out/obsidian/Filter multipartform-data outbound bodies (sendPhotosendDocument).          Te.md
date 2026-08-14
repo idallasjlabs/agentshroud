@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
-location: "L3460"
+community: "Gateway Test Suite"
+location: "L3478"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Gateway_Test_Suite
 ---
 
 # Filter multipart/form-data outbound bodies (sendPhoto/sendDocument).          Te
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._filter_outbound_multipart()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

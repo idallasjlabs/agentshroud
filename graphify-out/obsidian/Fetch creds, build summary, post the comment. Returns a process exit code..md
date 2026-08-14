@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "rationale"
-community: "Bot Skill Config"
-location: "L242"
+community: "Planning Docs"
+location: "L282"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # Fetch creds, build summary, post the comment. Returns a process exit code.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

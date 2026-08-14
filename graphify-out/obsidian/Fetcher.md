@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Gateway Test Suite"
 location: "L71"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Security_Module
+  - community/Gateway_Test_Suite
 ---
 
 # Fetcher
@@ -18,4 +18,4 @@ tags:
 - [[CompetitorEntry_1]] - `uses` [INFERRED]
 - [[make_httpx_fetcher()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Security_Module
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

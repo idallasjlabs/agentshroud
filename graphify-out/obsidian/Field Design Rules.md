@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "CHANGELOG.md"
 location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/CHANGELOGmd
 ---
 
 # Field Design Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Form UX]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/CHANGELOGmd

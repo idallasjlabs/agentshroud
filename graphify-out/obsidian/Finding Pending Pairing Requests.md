@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Setup Docs"
+community: "scripts/preflight-check.sh"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/scripts/preflight-checksh
 ---
 
 # Finding Pending Pairing Requests
@@ -17,4 +17,4 @@ tags:
 - [[Method 2 View Raw Pending File]] - `contains` [EXTRACTED]
 - [[Method 3 Check Container Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/scripts/preflight-checksh

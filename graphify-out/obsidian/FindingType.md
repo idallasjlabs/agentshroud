@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "PromptGuard Encoding Detection"
 location: "L75"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # FindingType
@@ -40,4 +40,4 @@ tags:
 - [[mcp_inspector.py]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/PromptGuard_Encoding_Detection

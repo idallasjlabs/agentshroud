@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/vault"
 location: "L46"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/docs/vault
 ---
 
 # FetchOutcome
@@ -34,4 +34,4 @@ tags:
 - [[test_citation_verifier.py]] - `imports` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/docs/vault

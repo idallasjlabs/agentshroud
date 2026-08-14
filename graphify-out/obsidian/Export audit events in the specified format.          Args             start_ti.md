@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "rationale"
-community: "Audit Export Pipeline"
+community: "Telegram Inbound Tests"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Telegram_Inbound_Tests
 ---
 
 # Export audit events in the specified format.          Args:             start_ti
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.export_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Tests

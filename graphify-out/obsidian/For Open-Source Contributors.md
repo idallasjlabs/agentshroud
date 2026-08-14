@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Security Docs"
+community: "Setup Docs"
 location: "L506"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Setup_Docs
 ---
 
 # For Open-Source Contributors
@@ -16,4 +16,4 @@ tags:
 - [[Contributing]] - `contains` [EXTRACTED]
 - [[Project Goals_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

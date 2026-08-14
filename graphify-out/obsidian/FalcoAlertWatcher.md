@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Bot Container Scripts"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Bot_Container_Scripts
 ---
 
 # FalcoAlertWatcher
@@ -29,4 +29,4 @@ tags:
 - [[test_stop_halts_run_loop()]] - `calls` [EXTRACTED]
 - [[test_warning_alert_not_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts

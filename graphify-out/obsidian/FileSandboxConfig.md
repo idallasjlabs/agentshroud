@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "File Sandbox"
+community: "URL/Domain Validation Tests"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/File_Sandbox
+  - community/URL/Domain_Validation_Tests
 ---
 
 # FileSandboxConfig
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_78]] - `references` [EXTRACTED]
 - [[.monitor_sandbox()]] - `calls` [EXTRACTED]
 - [[.sandbox()]] - `calls` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[.test_file_sandbox_staging_detection()]] - `calls` [INFERRED]
 - [[.test_monitor_mode_allows_everything()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -94,4 +94,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/File_Sandbox
+#graphify/code #graphify/INFERRED #community/URL/Domain_Validation_Tests
