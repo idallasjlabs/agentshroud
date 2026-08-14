@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Enforce-Mode Auto-Revert"
+community: "Security Docs"
 location: "L685"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enforce-Mode_Auto-Revert
+  - community/Security_Docs
 ---
 
 # TestAgentshroudUpdates
@@ -28,4 +28,4 @@ tags:
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

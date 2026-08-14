@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Collaborator Prompt Classifiers"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Test timeout with auto-deny.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_timeout_auto_deny()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

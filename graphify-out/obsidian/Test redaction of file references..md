@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "skills/openclaw"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/skills/openclaw
 ---
 
 # Test redaction of file references.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_file_reference_redaction()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw

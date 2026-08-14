@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Community 1546"
 location: "L248"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Community_1546
 ---
 
 # Test loading protected content from files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_protected_content_loading()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Community_1546

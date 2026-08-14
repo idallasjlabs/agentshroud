@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Egress & RBAC Security Core"
 location: "L407"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Test that deception detection can be disabled.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_deception_detection_disabled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

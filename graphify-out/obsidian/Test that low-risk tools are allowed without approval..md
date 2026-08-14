@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Enhanced Approval Queue"
+community: "PromptGuard Encoding Detection"
 location: "L283"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # Test that low-risk tools are allowed without approval.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_low_risk_tool_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection

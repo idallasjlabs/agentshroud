@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "Egress & RBAC Security Core"
+community: "Custom Skills"
 location: "L186"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Custom_Skills
 ---
 
 # Test threshold-based warning system.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_threshold_warnings()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/rationale #graphify/EXTRACTED #community/Custom_Skills

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "Gateway Security Module"
 location: "L496"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Gateway_Security_Module
 ---
 
 # TestAlertsLocalhostEnforcement
@@ -18,4 +18,4 @@ tags:
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

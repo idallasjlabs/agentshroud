@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "docs/vault"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/docs/vault
 ---
 
 # Test ledger query with source filter
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_query_with_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/TEST_STRATEGY.md"
 type: "document"
-community: "docs/governance"
+community: "Security Docs"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/governance
+  - community/Security_Docs
 ---
 
 # Test-Type Decision Matrix
@@ -15,4 +15,4 @@ tags:
 - [[Test Strategy]] - `contains` [EXTRACTED]
 - [[Test Strategy (TEST_STRATEGY.md)]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/governance
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

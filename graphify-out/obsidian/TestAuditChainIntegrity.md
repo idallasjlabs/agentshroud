@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Bot Container Scripts"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Bot_Container_Scripts
 ---
 
 # TestAuditChainIntegrity
@@ -21,4 +21,4 @@ tags:
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[test_audit_chain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts

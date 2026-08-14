@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "gateway/tools"
+community: "skills/openclaw"
 location: "L189"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/tools
+  - community/skills/openclaw
 ---
 
 # TestBuildSshArgv
@@ -19,4 +19,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/tools
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

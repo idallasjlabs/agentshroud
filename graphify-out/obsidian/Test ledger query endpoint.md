@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_integration.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "branding/icons"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/branding/icons
 ---
 
 # Test ledger query endpoint
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ledger_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/branding/icons

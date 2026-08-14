@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "scripts/triage-cve-mitigations.py"
 location: "L373"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/scripts/triage-cve-mitigationspy
 ---
 
 # TestBlocklistWildcardsAndAllowlist
@@ -19,4 +19,4 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/scripts/triage-cve-mitigationspy

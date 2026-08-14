@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "concept"
-community: "AGENTS.md"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AGENTSmd
+  - community/docs/vault
 ---
 
 # Test-Driven Development Default
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CLAUDE.md — AgentShroud Governance]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/AGENTSmd
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "scripts/sync-cve-registry.py"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/scripts/sync-cve-registrypy
 ---
 
 # Test that load_config() populates bots — from YAML or backward-compat default.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_load_config_has_bots()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

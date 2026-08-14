@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "skills/openclaw"
+community: "Gateway Proxy Layer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Gateway_Proxy_Layer
 ---
 
 # TestCase
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TestPackageSkillSecurity]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skills/openclaw
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

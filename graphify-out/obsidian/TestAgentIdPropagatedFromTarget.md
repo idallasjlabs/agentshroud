@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "SOC Dashboard"
 location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/SOC_Dashboard
 ---
 
 # TestAgentIdPropagatedFromTarget
@@ -22,4 +22,4 @@ tags:
 - [[Verify that the resolved target.name is used as agent_id in pipeline calls.]] - `rationale_for` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard

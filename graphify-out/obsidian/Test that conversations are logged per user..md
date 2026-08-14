@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "URL/Domain Validation Tests"
+community: "Planning Docs"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Planning_Docs
 ---
 
 # Test that conversations are logged per user.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_webhook_conversation_logging()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

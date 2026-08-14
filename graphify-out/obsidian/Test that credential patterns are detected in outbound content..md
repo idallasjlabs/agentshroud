@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_isolation.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "docs/compliance"
 location: "L97"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/compliance
 ---
 
 # Test that credential patterns are detected in outbound content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCredentialLeakDetection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/compliance

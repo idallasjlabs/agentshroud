@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard_class.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/vault"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/vault
 ---
 
 # TestCheckFileAccess
@@ -19,4 +19,4 @@ tags:
 - [[EnvironmentGuard]] - `uses` [INFERRED]
 - [[test_env_guard_class.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/vault

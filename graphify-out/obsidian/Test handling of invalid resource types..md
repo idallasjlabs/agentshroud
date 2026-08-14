@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "rationale"
-community: "LLM Proxy Resource Guard"
+community: "Setup Docs"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/Setup_Docs
 ---
 
 # Test handling of invalid resource types.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_invalid_resource_type()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/rationale #graphify/EXTRACTED #community/Setup_Docs

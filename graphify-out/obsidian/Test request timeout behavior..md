@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: ".github/COPILOT_CLI_SETUP.md"
 location: "L234"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/github/COPILOT_CLI_SETUPmd
 ---
 
 # Test request timeout behavior.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_timeout_behavior()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd

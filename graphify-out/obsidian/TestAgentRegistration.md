@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Progressive Trust Config"
+community: "MCP Policy Engine"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/MCP_Policy_Engine
 ---
 
 # TestAgentRegistration
@@ -22,4 +22,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/code #graphify/EXTRACTED #community/MCP_Policy_Engine

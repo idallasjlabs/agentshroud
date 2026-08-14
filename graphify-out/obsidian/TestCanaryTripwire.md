@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/vault"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/vault
 ---
 
 # TestCanaryTripwire
@@ -38,4 +38,4 @@ tags:
 - [[TripwireResponse]] - `uses` [INFERRED]
 - [[test_canary_tripwire.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/vault

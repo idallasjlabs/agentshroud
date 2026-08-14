@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Competitive Intel Store"
 location: "L211"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Competitive_Intel_Store
 ---
 
 # Test handling of malformed metadata
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_malformed_json_metadata()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store

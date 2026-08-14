@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "Collaborator Prompt Classifiers"
 location: "L143"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enhanced_Approval_Queue
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # TestApprovalWorkflow
@@ -18,7 +18,7 @@ tags:
 - [[.test_timeout_auto_deny()]] - `method` [EXTRACTED]
 - [[.test_wait_for_decision()]] - `method` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
 - [[ApprovalStore_1]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Classifiers

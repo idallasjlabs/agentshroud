@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "SOC Service Manager"
+community: "Tool Chain Analyzer"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager
+  - community/Tool_Chain_Analyzer
 ---
 
 # TestCheckClamd
@@ -19,4 +19,4 @@ tags:
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer

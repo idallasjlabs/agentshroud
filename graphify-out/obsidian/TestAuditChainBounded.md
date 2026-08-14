@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Security Pipeline Core"
+community: "SOC RBAC & Auth"
 location: "L94"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Pipeline_Core
+  - community/SOC_RBAC__Auth
 ---
 
 # TestAuditChainBounded
@@ -38,4 +38,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Pipeline_Core
+#graphify/code #graphify/INFERRED #community/SOC_RBAC__Auth

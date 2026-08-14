@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Telegram Proxy Test Suite"
 location: "L352"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer_Pipeline
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # TestBenchmarkBaseline
@@ -24,4 +24,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite
