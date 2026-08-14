@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Community 1530"
 location: "L581"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Community_1530
 ---
 
 # OpenClaw patch script should default to local Ollama but keep API adapter config
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_openclaw_patch_defaults_to_qwen_local_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Community_1530

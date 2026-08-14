@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "Approval Queue Tests"
+community: "Forward Routing & Approval"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/Forward_Routing__Approval
 ---
 
 # Omitting cwd passes cwd=None to proxy.execute().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_ssh_exec_cwd_none_forwards_none()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

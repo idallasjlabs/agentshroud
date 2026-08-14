@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Competitive Intel Store"
+community: "Gateway Test Suite"
 location: "L1106"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Gateway_Test_Suite
 ---
 
 # One unverified competitor claim + its candidate source URLs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IntelDraftEntry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

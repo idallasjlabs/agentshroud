@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # OKE Channel — CPA Exam Prep Dialogue Guidelines
@@ -17,4 +17,4 @@ tags:
 - [[Expert Persona_1]] - `contains` [EXTRACTED]
 - [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/vault

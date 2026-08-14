@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "SOC RBAC & Auth"
 location: "L429"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/SOC_RBAC__Auth
 ---
 
 # Owner messages should NOT be blocked when security module crashes (owner exempti
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_owner_exempt_from_fail_closed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "docs/vault"
+community: "docs/redteam"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/redteam
 ---
 
 # OpenClaw
@@ -24,4 +24,4 @@ tags:
 - [[apply-patches.js_3]] - `configured_by` [EXTRACTED]
 - [[openclaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/docs/redteam

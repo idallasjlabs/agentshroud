@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "rationale"
-community: "scripts/migrate-cve-registry-ghsa.py"
+community: "Gateway Test Suite"
 location: "L182"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/migrate-cve-registry-ghsapy
+  - community/Gateway_Test_Suite
 ---
 
 # Outcome of matching one registry entry to the advisory feed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MatchResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/migrate-cve-registry-ghsapy
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

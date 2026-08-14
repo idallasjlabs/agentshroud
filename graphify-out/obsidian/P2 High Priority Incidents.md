@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Test Suite"
 location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # P2 High Priority Incidents
@@ -17,4 +17,4 @@ tags:
 - [[PII Leak Incident]] - `contains` [EXTRACTED]
 - [[Prompt Injection Detection (Web)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

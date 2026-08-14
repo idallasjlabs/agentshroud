@@ -1,12 +1,12 @@
 ---
 source_file: "BRAND.md"
 type: "document"
-community: "branding/README.md"
+community: "Gateway Test Suite"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/Gateway_Test_Suite
 ---
 
 # One-liner
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Messaging]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

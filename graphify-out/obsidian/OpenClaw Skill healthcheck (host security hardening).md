@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Gateway_Test_Suite
 ---
 
 # OpenClaw Skill: healthcheck (host security hardening)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Healthcheck 8-Step Hardening Workflow]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

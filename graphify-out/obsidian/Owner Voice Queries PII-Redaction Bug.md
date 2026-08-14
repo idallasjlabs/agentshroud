@@ -1,11 +1,11 @@
 ---
 source_file: "CHANGELOG.md"
 type: "rationale"
-community: "CHANGELOG.md"
+community: "Gateway Test Suite"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Gateway_Test_Suite
 ---
 
 # Owner Voice Queries PII-Redaction Bug
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[v1.2.4 Security Patch]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

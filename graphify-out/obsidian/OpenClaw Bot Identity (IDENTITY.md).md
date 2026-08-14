@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/workspace/IDENTITY.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # OpenClaw Bot Identity (IDENTITY.md)
@@ -14,4 +14,4 @@ tags:
 - [[Competitive Intelligence Automation (HermesOpenClaw recurring reports)]] - `references` [EXTRACTED]
 - [[Isaiah Dallas Jefferson Jr. (OwnerCIEProduct Owner)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

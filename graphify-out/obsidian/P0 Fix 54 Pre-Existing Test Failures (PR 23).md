@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "concept"
-community: "Planning Docs"
+community: "Gateway Test Suite"
 location: "## P0"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # P0: Fix 54 Pre-Existing Test Failures (PR #23)
@@ -18,4 +18,4 @@ tags:
 - [[Root Causes (5 distinct bugs)]] - `contains` [EXTRACTED]
 - [[Verification_9]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Planning_Docs
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

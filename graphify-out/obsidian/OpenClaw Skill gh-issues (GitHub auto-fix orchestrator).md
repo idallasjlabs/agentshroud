@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Approval Queue"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Approval_Queue
 ---
 
 # OpenClaw Skill: gh-issues (GitHub auto-fix orchestrator)
@@ -18,4 +18,4 @@ tags:
 - [[gh-issues Phase 6 PR Review Handler (spawn review-fix sub-agents)]] - `contains` [EXTRACTED]
 - [[gh-issues Sub-agent Task Prompt Template]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Approval_Queue

@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/wacli/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Bot_Skill_Config
 ---
 
 # OpenClaw wacli Skill
@@ -14,4 +14,4 @@ tags:
 - [[wacli Safety Rules (explicit recipient + confirm before send)]] - `enforces` [EXTRACTED]
 - [[wacli WhatsApp CLI Tool]] - `uses` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

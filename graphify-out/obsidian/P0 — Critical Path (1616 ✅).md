@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
 type: "document"
-community: "Planning Docs"
+community: "CLAUDE.md"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/CLAUDEmd
 ---
 
 # P0 — Critical Path (16/16 ✅)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud v0.7.0 Enforcement Audit Results]] - `contains` [EXTRACTED]
 - [[⚠️ Warning SecurityPipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/CLAUDEmd

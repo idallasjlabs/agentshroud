@@ -1,11 +1,11 @@
 ---
 source_file: "docs/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "docs/redteam"
+community: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/redteam
+  - community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
 ---
 
 # Outbound Information Filter module (new module #34)
@@ -19,4 +19,4 @@ tags:
 - [[Tier 1 Deployment Blockers (6 features, score 4.0+)]] - `requires` [EXTRACTED]
 - [[Trust-level disclosure overrides (FULL can see security_architectureoperational)]] - `applies` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/redteam
+#graphify/document #graphify/EXTRACTED #community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd

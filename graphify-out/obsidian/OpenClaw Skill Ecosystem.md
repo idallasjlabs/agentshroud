@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "concept"
-community: "skills/openclaw"
+community: "docs/USPTO_TRADEMARK_APPLICATION.md"
 location: "line 18"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/docs/USPTO_TRADEMARK_APPLICATIONmd
 ---
 
 # OpenClaw Skill Ecosystem
@@ -33,4 +33,4 @@ tags:
 - [[spotify-player Skill]] - `part_of` [EXTRACTED]
 - [[things-mac Skill]] - `part_of` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/skills/openclaw
+#graphify/concept #graphify/EXTRACTED #community/docs/USPTO_TRADEMARK_APPLICATIONmd

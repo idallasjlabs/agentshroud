@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Community 1458"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Community_1458
 ---
 
 # OpenClaw Skill: canvas (HTML display on connected nodes)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Canvas Skill Architecture CanvasHost + NodeBridge + NodeApp]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Community_1458

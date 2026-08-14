@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Cross-Bot Trust Ledger"
+community: "MCP Proxy Config"
 location: "L755"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/MCP_Proxy_Config
 ---
 
 # Owner query must pass through PII sanitisation unchanged; sanitiser not called.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_inbound_query_not_pii_redacted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

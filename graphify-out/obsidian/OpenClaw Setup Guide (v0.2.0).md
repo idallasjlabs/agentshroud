@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Setup Docs"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Bot_Skill_Config
 ---
 
 # OpenClaw Setup Guide (v0.2.0)
@@ -16,4 +16,4 @@ tags:
 - [[OpenClaw Control UI (port 1878918790)]] - `describes` [EXTRACTED]
 - [[Telegram Bot Setup for OpenClaw (multi-device)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

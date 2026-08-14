@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/v0.8.0-wiring-audit.md"
 type: "rationale"
-community: "Security Docs"
+community: "docs/governance"
 location: "lines 52-60"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/docs/governance
 ---
 
 # OutputCanary Not Passed to Pipeline (Critical Gap)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.8.0 Wiring Audit (Watchtower)]] - `identifies` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/docs/governance

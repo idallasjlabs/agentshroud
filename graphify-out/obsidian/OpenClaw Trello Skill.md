@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Bot_Skill_Config
 ---
 
 # OpenClaw Trello Skill
@@ -14,4 +14,4 @@ tags:
 - [[Trello API Credentials (TRELLO_API_KEY, TRELLO_TOKEN)]] - `requires` [EXTRACTED]
 - [[Trello REST API Integration]] - `uses` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

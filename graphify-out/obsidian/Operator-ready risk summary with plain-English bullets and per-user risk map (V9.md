@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Collaborator Lifecycle"
+community: "Enhanced Approval Queue"
 location: "L228"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/Enhanced_Approval_Queue
 ---
 
 # Operator-ready risk summary with plain-English bullets and per-user risk map (V9
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_risk_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "code"
-community: "Bot Container Scripts"
+community: "docs/diagrams"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/docs/diagrams
 ---
 
 # OpenClaw cron jobs.json (bot-config store, SCRUM-61 monitored)
@@ -31,4 +31,4 @@ tags:
 - [[Weekly Kaizen Review (OpenClaw cron job)]] - `references` [EXTRACTED]
 - [[jira-weekly-review job]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/docs/diagrams

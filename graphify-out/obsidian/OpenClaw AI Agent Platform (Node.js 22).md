@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "concept"
-community: "docs/vault"
+community: "Bot Container Scripts"
 location: "docker/Dockerfile.agentshroud"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Container_Scripts
 ---
 
 # OpenClaw AI Agent Platform (Node.js 22)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dockerfile.bot (dockerDockerfile.agentshroud)]] - `installs` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Bot_Container_Scripts

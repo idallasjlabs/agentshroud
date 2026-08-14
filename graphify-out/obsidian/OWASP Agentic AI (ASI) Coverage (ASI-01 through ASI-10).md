@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "concept"
-community: "Security Docs"
+community: "Bot Skill Config"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Skill_Config
 ---
 
 # OWASP Agentic AI (ASI) Coverage (ASI-01 through ASI-10)
@@ -15,4 +15,4 @@ tags:
 - [[PromptGuard (prompt_guard.py) — 49 regex patterns, 35+ languages, weighted scoring]] - `mapped_to` [EXTRACTED]
 - [[cve-mitigation-matrix.md (293 CVEs tracked, 293 fully mitigated)]] - `documents` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Security_Docs
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

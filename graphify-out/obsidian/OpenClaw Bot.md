@@ -1,11 +1,11 @@
 ---
 source_file: "README.md"
 type: "concept"
-community: "README.md"
+community: "skills/openclaw"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/READMEmd
+  - community/skills/openclaw
 ---
 
 # OpenClaw Bot
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud™ README]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/READMEmd
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

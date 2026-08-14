@@ -12,7 +12,7 @@ tags:
 # OutputCanary
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_101]] - `method` [EXTRACTED]
 - [[._create_detection_patterns()]] - `method` [EXTRACTED]
 - [[._create_invisible_canary()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[.test_output_canary_instantiates()]] - `calls` [EXTRACTED]
 - [[.test_partial_canary_match_handling()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Main Output Canary System for detecting prompt leakage.      This system generat]] - `rationale_for` [EXTRACTED]

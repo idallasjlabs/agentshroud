@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/apple-notes/SKILL.md"
 type: "concept"
-community: "skills/openclaw"
+community: "Bot Skill Config"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Bot_Skill_Config
 ---
 
 # OpenClaw Skill Registry (SKILL.md convention)
@@ -16,4 +16,4 @@ tags:
 - [[OpenClaw Skill bear-notes (grizzly CLI)]] - `implements` [EXTRACTED]
 - [[OpenClaw Skill clawhub (skill registry CLI)]] - `manages` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/skills/openclaw
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

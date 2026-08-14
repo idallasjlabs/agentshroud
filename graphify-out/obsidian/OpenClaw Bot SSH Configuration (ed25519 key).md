@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Setup Docs"
+community: "Architecture Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Architecture_Docs
 ---
 
 # OpenClaw Bot SSH Configuration (ed25519 key)
@@ -15,4 +15,4 @@ tags:
 - [[Pi SSH Target agentshroud-bot@raspberrypi.tail240ea8.ts.net]] - `configures` [EXTRACTED]
 - [[Raspberry Pi 4 Dev Environment Setup (Bot Development Team)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

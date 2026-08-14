@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "docs/diagrams"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/docs/diagrams
+  - community/Bot_Skill_Config
 ---
 
 # OpenClaw Integration Guide (v0.9.0)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/docs/diagrams
+#graphify/document #graphify/AMBIGUOUS #community/Bot_Skill_Config

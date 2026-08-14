@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
 type: "document"
-community: "docs/vault"
+community: "Setup Docs"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Setup_Docs
 ---
 
 # OPENCLAW_SANDBOX_MODE
@@ -20,4 +20,4 @@ tags:
 - [[Set In_4]] - `contains` [EXTRACTED]
 - [[Values_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

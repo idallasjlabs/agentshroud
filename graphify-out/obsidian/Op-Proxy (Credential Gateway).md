@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "docs/diagrams"
+community: "Bot Skill Config"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Bot_Skill_Config
 ---
 
 # Op-Proxy (Credential Gateway)
@@ -14,4 +14,4 @@ tags:
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `conceptually_related_to` [EXTRACTED]
 - [[Proxy Layer_1]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/docs/diagrams
+#graphify/image #graphify/EXTRACTED #community/Bot_Skill_Config

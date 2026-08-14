@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "document"
-community: "docs/diagrams"
+community: "Gateway Test Suite"
 location: "line 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Gateway_Test_Suite
 ---
 
 # On-Call Runbook Decision Tree (crash loop, context limit, gateway unhealthy, security alert, no Telegram response)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Diagram Library (23 diagrams Architecture, Infrastructure, Data, Security, Behavior, Operations, Team)]] - `indexes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/diagrams
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

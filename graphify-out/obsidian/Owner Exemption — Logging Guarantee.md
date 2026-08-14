@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Proxy Layer"
 location: "L290"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Proxy_Layer
 ---
 
 # Owner Exemption — Logging Guarantee
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Important Behaviors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Proxy_Layer
