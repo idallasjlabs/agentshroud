@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "scripts/triage-cve-mitigations.py"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/scripts/triage-cve-mitigationspy
 ---
 
 # Domain blocklist with Pi-hole-compatible list parsing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DNSBlocklist]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/scripts/triage-cve-mitigationspy

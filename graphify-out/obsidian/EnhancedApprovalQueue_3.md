@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "code"
-community: "docs/vault"
+community: "docs/api"
 location: "gateway/approval_queue/enhanced_queue.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/api
 ---
 
 # EnhancedApprovalQueue
@@ -18,4 +18,4 @@ tags:
 - [[`SecurityPipeline`]] - `uses` [EXTRACTED]
 - [[version_routes.py — Version Management API]] - `depends_on` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/docs/api

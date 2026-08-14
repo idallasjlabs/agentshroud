@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Gateway Security Module"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Gateway_Security_Module
 ---
 
 # EncodingResult
@@ -15,4 +15,4 @@ tags:
 - [[.analyze()_1]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

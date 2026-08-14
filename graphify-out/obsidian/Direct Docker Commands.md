@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "browser-extension/package.json"
 location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/browser-extension/packagejson
 ---
 
 # Direct Docker Commands
@@ -17,4 +17,4 @@ tags:
 - [[OpenClaw CLI]] - `contains` [EXTRACTED]
 - [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/browser-extension/packagejson

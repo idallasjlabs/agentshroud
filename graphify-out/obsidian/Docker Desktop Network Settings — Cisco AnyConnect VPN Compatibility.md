@@ -1,12 +1,12 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "docker/DOCKER-VPN-NETWORKING.md"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/DOCKER-VPN-NETWORKINGmd
+  - community/Bot_Skill_Config
 ---
 
 # Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility
@@ -22,4 +22,4 @@ tags:
 - [[Settings Changed]] - `contains` [EXTRACTED]
 - [[Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/DOCKER-VPN-NETWORKINGmd
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

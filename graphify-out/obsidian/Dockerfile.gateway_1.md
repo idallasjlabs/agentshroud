@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "gateway/Dockerfile"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # Dockerfile.gateway
@@ -29,4 +29,4 @@ tags:
 - [[docker-compose.yml (primary Docker Compose — services, networks, volumes, secrets)]] - `referenced_by` [EXTRACTED]
 - [[spaCy NLP (en_core_web_sm — pre-installed for PII detection)]] - `installs` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

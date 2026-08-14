@@ -1,11 +1,11 @@
 ---
 source_file: "docker/docker-compose.agentshroud-bot.trillian.yml"
 type: "code"
-community: "docs/vault"
+community: "Bot Skill Config"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # Docker Compose Override — Trillian (agentshroud-bot)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Trillian (Mac Mini Intel — secondary buildCI)]] - `deployed_on` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

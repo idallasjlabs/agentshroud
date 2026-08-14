@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "Auth & Exception Types"
+community: "Gateway Test Suite"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Gateway_Test_Suite
 ---
 
 # Enum
 
 ## Connections
+- [[A2AMethod]] - `inherits` [EXTRACTED]
+- [[A2APolicyAction]] - `inherits` [EXTRACTED]
 - [[Action_1]] - `inherits` [EXTRACTED]
 - [[AlarmStatus]] - `inherits` [EXTRACTED]
 - [[AlertLevel]] - `inherits` [EXTRACTED]
@@ -70,6 +72,7 @@ tags:
 - [[VulnClass]] - `inherits` [EXTRACTED]
 - [[WSEventType]] - `inherits` [EXTRACTED]
 - [[_State]] - `inherits` [EXTRACTED]
+- [[a2a_policy.py]] - `imports_from` [EXTRACTED]
 - [[agent_isolation.py]] - `imports_from` [EXTRACTED]
 - [[browse.py]] - `imports_from` [EXTRACTED]
 - [[browse.py_1]] - `imports_from` [EXTRACTED]
@@ -113,4 +116,4 @@ tags:
 - [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

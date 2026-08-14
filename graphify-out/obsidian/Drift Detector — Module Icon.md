@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/modules/drift-detector-256x256.png"
 type: "image"
-community: "branding/icons"
+community: "Bot Skill Config"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/branding/icons
+  - community/Bot_Skill_Config
 ---
 
 # Drift Detector — Module Icon
@@ -15,4 +15,4 @@ tags:
 - [[Kill Switch — Module Icon]] - `conceptually_related_to` [INFERRED]
 - [[Live Dashboard — Module Icon]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/branding/icons
+#graphify/image #graphify/INFERRED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/eu-ai-act-nist-matrix.md"
 type: "document"
-community: "docs/compliance"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/compliance
+  - community/Gateway_Test_Suite
 ---
 
 # EU AI Act & NIST Alignment Matrix — AgentShroud™
@@ -20,4 +20,4 @@ tags:
 - [[Positioning]] - `contains` [EXTRACTED]
 - [[eu-ai-act-nist-matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/compliance
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

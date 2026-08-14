@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "Egress Domain Allowlist"
+community: "Gateway Test Suite"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Domain_Allowlist
+  - community/Gateway_Test_Suite
 ---
 
 # DomainSettings
@@ -37,4 +37,4 @@ tags:
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 - [[web_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Domain_Allowlist
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

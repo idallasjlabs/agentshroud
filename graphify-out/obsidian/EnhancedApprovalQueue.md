@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "Collaborator Prompt Classifiers"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # EnhancedApprovalQueue
 
 ## Connections
-- [[.__init__()_7]] - `method` [EXTRACTED]
+- [[.__init__()_2]] - `method` [EXTRACTED]
 - [[._notify_telegram()]] - `method` [EXTRACTED]
 - [[._schedule_timeout()]] - `method` [EXTRACTED]
 - [[._timeout_request()]] - `method` [EXTRACTED]
@@ -35,8 +35,8 @@ tags:
 - [[.wait_for_decision()]] - `method` [EXTRACTED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem]] - `uses` [INFERRED]
-- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
 - [[ApprovalStore_1]] - `uses` [INFERRED]
 - [[Enhanced approval queue with enforce mode and tool risk tiers.      Features]] - `rationale_for` [EXTRACTED]
 - [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
@@ -59,9 +59,9 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
-- [[test_enhanced_approval.py]] - `implements` [EXTRACTED]
+- [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 - [[test_mfa_guard.py]] - `imports` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

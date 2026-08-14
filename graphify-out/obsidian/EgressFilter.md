@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Egress Domain Allowlist"
+community: "Gateway Security Module"
 location: "L111"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Domain_Allowlist
+  - community/Gateway_Security_Module
 ---
 
 # EgressFilter
 
 ## Connections
-- [[.__init__()_24]] - `references` [EXTRACTED]
+- [[.__init__()_22]] - `references` [EXTRACTED]
 - [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Domain_Allowlist
+#graphify/code #graphify/INFERRED #community/Gateway_Security_Module

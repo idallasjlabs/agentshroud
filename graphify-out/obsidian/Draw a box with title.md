@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "rationale"
-community: "src/interfaces"
+community: "docs/ssh-security-review.md"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/src/interfaces
+  - community/docs/ssh-security-reviewmd
 ---
 
 # Draw a box with title
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.draw_box()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/src/interfaces
+#graphify/rationale #graphify/EXTRACTED #community/docs/ssh-security-reviewmd

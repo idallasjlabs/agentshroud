@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "gateway/runtime"
+community: "Bot Skill Config"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/runtime
+  - community/Bot_Skill_Config
 ---
 
 # DockerEngine
 
 ## Connections
-- [[.__init__()_46]] - `method` [EXTRACTED]
+- [[.__init__()_45]] - `method` [EXTRACTED]
 - [[._cmd()_1]] - `method` [EXTRACTED]
 - [[.build()_1]] - `method` [EXTRACTED]
 - [[.compose_down()_1]] - `method` [EXTRACTED]
@@ -56,4 +56,4 @@ tags:
 - [[docker_engine.py]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/runtime
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

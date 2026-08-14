@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "MCP Policy Engine"
+community: "Egress Domain Allowlist"
 location: "L506"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Egress_Domain_Allowlist
 ---
 
 # End-to-end: the engine wired into MCPProxy with a REAL approval queue     must n
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Domain_Allowlist

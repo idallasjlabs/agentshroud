@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
+community: "Gateway Test Suite"
 location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Gateway_Test_Suite
 ---
 
 # Drift detector catches container config changes during operation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_drift_detection_in_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

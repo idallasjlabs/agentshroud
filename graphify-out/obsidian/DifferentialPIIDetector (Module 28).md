@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "gateway/runtime"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/gateway/runtime
 ---
 
 # DifferentialPIIDetector (Module 28)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_differential_pii_detector.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime

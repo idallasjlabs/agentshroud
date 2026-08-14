@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "SOC RBAC & Auth"
 location: "L281"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/SOC_RBAC__Auth
 ---
 
 # E2E-08: Every pipeline event — block or forward — produces an audit entry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E08AuditChainIntegrity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth

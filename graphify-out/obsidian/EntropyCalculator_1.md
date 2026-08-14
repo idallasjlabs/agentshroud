@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "code"
-community: "docs/vault"
+community: "Planning Docs"
 location: "gateway/security/dns_filter.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Planning_Docs
 ---
 
 # EntropyCalculator
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dns_filter.py (Security)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

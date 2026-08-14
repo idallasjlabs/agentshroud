@@ -13,10 +13,13 @@ tags:
 
 ## Connections
 - [[._record()_1]] - `references` [EXTRACTED]
+- [[EgressFilter_4]] - `uses` [INFERRED]
 - [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
+- [[FakeAuditStore]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
+- [[TestAuditStorePersistence]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
 - [[TestDriftDetectorHardened]] - `uses` [INFERRED]
 - [[TestEgressAttempt]] - `uses` [INFERRED]

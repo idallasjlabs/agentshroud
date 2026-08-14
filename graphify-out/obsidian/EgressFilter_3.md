@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "docs/vault"
+community: "docs/api"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/api
 ---
 
 # EgressFilter
@@ -30,7 +30,7 @@ tags:
 - [[SOUL_2]] - `references` [EXTRACTED]
 - [[SSRF Protection (private IP blocking)]] - `implements` [EXTRACTED]
 - [[Threat Model_11]] - `contains` [EXTRACTED]
-- [[TrustManager_4]] - `references` [EXTRACTED]
+- [[TrustManager_5]] - `references` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 - [[egress_filter.py_1]] - `contains` [EXTRACTED]
 - [[env_guard.py_2]] - `references` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[setup-guide]] - `references` [EXTRACTED]
 - [[system-requirements]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/docs/api

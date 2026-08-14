@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: "ESP32 Firmware"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/docs/vault
 ---
 
 # ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook
@@ -29,4 +29,4 @@ tags:
 - [[SETUP]] - `contains` [EXTRACTED]
 - [[What you're building]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/docs/vault

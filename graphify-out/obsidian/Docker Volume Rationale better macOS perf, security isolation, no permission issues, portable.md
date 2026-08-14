@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "rationale"
-community: "Architecture Docs"
+community: ".mcp.json"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/mcpjson
 ---
 
 # Docker Volume Rationale: better macOS perf, security isolation, no permission issues, portable
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Workspace Decision Docker Volume (not bind mount)]] - `contains` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/rationale #graphify/EXTRACTED #community/mcpjson

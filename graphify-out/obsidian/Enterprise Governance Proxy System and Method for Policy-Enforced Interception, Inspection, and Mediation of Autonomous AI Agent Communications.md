@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "concept"
-community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+community: ".github/agents"
 location: "Section 1.3"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+  - community/github/agents
 ---
 
 # Enterprise Governance Proxy System and Method for Policy-Enforced Interception, Inspection, and Mediation of Autonomous AI Agent Communications
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[USPTO_PROVISIONAL_PATENT_APPLICATION]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+#graphify/concept #graphify/EXTRACTED #community/github/agents

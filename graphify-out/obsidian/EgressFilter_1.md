@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Gateway Test Suite"
 location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Gateway_Test_Suite
 ---
 
 # EgressFilter
@@ -49,12 +49,15 @@ tags:
 - [[.test_url_parsing()]] - `calls` [EXTRACTED]
 - [[.test_wildcard_allowlist_matching()]] - `calls` [EXTRACTED]
 - [[DataExfilVolumeGuard]] - `conceptually_related_to` [EXTRACTED]
+- [[EgressFilter_4]] - `uses` [INFERRED]
 - [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
+- [[FakeAuditStore]] - `uses` [INFERRED]
 - [[Filter outbound connections based on allowlists with enforcemonitor modes.]] - `rationale_for` [EXTRACTED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
+- [[TestAuditStorePersistence]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
 - [[TestDriftDetectorHardened]] - `uses` [INFERRED]
 - [[TestEgressAttempt]] - `uses` [INFERRED]
@@ -86,7 +89,7 @@ tags:
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestURLParsing]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_make_deny_all_filter()]] - `calls` [EXTRACTED]
 - [[_make_filter()]] - `calls` [EXTRACTED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
@@ -104,10 +107,10 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_egress_enforce.py]] - `imports` [EXTRACTED]
-- [[test_egress_filter.py]] - `implements` [EXTRACTED]
+- [[test_egress_filter.py]] - `imports` [EXTRACTED]
 - [[test_module_stats.py]] - `imports` [EXTRACTED]
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

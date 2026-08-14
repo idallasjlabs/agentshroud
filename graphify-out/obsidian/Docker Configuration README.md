@@ -1,11 +1,11 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "docker/falco"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/falco
+  - community/Gateway_Test_Suite
 ---
 
 # Docker Configuration README
@@ -15,4 +15,4 @@ tags:
 - [[Container Stack Architecture (gateway + openclaw + hermes + hci)]] - `references` [EXTRACTED]
 - [[Docker Quickstart Guide]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/falco
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

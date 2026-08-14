@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Docker Deploy Scripts"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Docker_Deploy_Scripts
 ---
 
 # EgressApprovalQueue
@@ -45,4 +45,4 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

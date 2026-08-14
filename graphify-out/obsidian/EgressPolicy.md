@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Security Docs"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Config__Test_Fixtures
+  - community/Security_Docs
 ---
 
 # EgressPolicy
@@ -42,11 +42,14 @@ tags:
 - [[.test_port_not_allowed()]] - `calls` [EXTRACTED]
 - [[.test_private_ip_allowed_if_in_policy_allowlist()]] - `calls` [EXTRACTED]
 - [[Egress policy for an agent or global default.]] - `rationale_for` [EXTRACTED]
+- [[EgressFilter_4]] - `uses` [INFERRED]
 - [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
+- [[FakeAuditStore]] - `uses` [INFERRED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
+- [[TestAuditStorePersistence]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth_1]] - `uses` [INFERRED]
 - [[TestConcurrency]] - `uses` [INFERRED]
@@ -91,7 +94,7 @@ tags:
 - [[TestURLParsing]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_make_deny_all_filter()]] - `calls` [EXTRACTED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[egress_filter()]] - `calls` [EXTRACTED]
@@ -110,4 +113,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/INFERRED #community/Security_Docs

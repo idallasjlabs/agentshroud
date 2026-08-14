@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "docs/api"
+community: "docs/vault"
 location: "L635"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/api
+  - community/docs/vault
 ---
 
 # Docker Security Scanning
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CICD Pipeline Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/api
+#graphify/document #graphify/EXTRACTED #community/docs/vault

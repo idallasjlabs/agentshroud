@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "docs/vault"
 location: "L1159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/vault
 ---
 
 # Directory exists but contains only fs scan files — returns [].
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_returns_empty_when_no_image_reports()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

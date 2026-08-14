@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway Tests"
-location: "L3237"
+community: "Security Pipeline Core"
+location: "L3267"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Security_Pipeline_Core
 ---
 
 # Each synthesized sentence must ramp in/out over ~5 ms so per-sentence     Kokoro
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tts_synthesize_fades_sentence_edges()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Security_Pipeline_Core

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "docs/vault"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/docs/vault
 ---
 
 # EgressTelegramNotifier
 
 ## Connections
-- [[.__init__()_37]] - `method` [EXTRACTED]
+- [[.__init__()_36]] - `method` [EXTRACTED]
 - [[._api_url()]] - `method` [EXTRACTED]
 - [[._async_send()]] - `method` [EXTRACTED]
 - [[._send_request()]] - `method` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[test_egress_callback_stale.py]] - `imports` [EXTRACTED]
 - [[test_egress_telegram_notify.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/docs/vault

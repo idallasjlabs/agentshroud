@@ -1,11 +1,11 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "docker/falco"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/falco
+  - community/Gateway_Test_Suite
 ---
 
 # Docker Quickstart Guide
@@ -14,4 +14,4 @@ tags:
 - [[Docker Compose --profile full (activates Hermes + HCI)]] - `references` [EXTRACTED]
 - [[Docker Configuration README]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/falco
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

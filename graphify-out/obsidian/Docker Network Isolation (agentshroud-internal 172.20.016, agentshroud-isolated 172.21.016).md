@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "concept"
-community: "docker/falco"
+community: "Gateway Test Suite"
 location: "Architecture section"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/docker/falco
+  - community/Gateway_Test_Suite
 ---
 
 # Docker Network Isolation (agentshroud-internal 172.20.0/16, agentshroud-isolated 172.21.0/16)
@@ -17,4 +17,4 @@ tags:
 - [[Falco Runtime Security (eBPF kernel monitoring)]] - `complements` [INFERRED]
 - [[Security Hardening Phases P0–FINAL]] - `culminates_in` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/docker/falco
+#graphify/concept #graphify/INFERRED #community/Gateway_Test_Suite

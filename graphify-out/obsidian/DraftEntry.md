@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Gateway Test Suite"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Gateway_Test_Suite
 ---
 
 # DraftEntry
@@ -41,7 +41,7 @@ tags:
 - [[IntelDraftRequest]] - `uses` [INFERRED]
 - [[KillSwitchAction]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
-- [[Path_40]] - `uses` [INFERRED]
+- [[Path_41]] - `uses` [INFERRED]
 - [[ServiceAction]] - `uses` [INFERRED]
 - [[SkillGuardBlocked]] - `uses` [INFERRED]
 - [[TestFetchOutcome]] - `uses` [INFERRED]
@@ -49,7 +49,7 @@ tags:
 - [[TestVerifyEntry]] - `uses` [INFERRED]
 - [[TestVerifyReport]] - `uses` [INFERRED]
 - [[UpdateRequest]] - `uses` [INFERRED]
-- [[WebSocket_8]] - `uses` [INFERRED]
+- [[WebSocket_7]] - `uses` [INFERRED]
 - [[_FakeFetcher]] - `uses` [INFERRED]
 - [[_FakeStreamResponse]] - `uses` [INFERRED]
 - [[api.py]] - `imports` [EXTRACTED]
@@ -58,4 +58,4 @@ tags:
 - [[test_citation_verifier.py]] - `imports` [EXTRACTED]
 - [[test_default_allowlist_uses_permanent_egress_domains()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
