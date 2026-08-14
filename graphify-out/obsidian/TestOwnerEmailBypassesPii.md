@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Setup Docs"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Setup_Docs
 ---
 
 # TestOwnerEmailBypassesPii
@@ -17,4 +17,4 @@ tags:
 - [[.test_unknown_recipient_body_still_scrubbed()]] - `method` [EXTRACTED]
 - [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Setup_Docs

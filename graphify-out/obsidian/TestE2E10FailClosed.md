@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "Audit Export Pipeline"
 location: "L356"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_RBAC__Auth
+  - community/Audit_Export_Pipeline
 ---
 
 # TestE2E10FailClosed
@@ -28,4 +28,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_RBAC__Auth
+#graphify/code #graphify/INFERRED #community/Audit_Export_Pipeline

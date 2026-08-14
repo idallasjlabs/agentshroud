@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "Egress Domain Allowlist"
+community: "Gateway Security Module"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Domain_Allowlist
+  - community/Gateway_Security_Module
 ---
 
 # The three terminal policy outcomes for an MCP tool call.
@@ -15,4 +15,4 @@ tags:
 - [[A2APolicyAction]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyAction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Domain_Allowlist
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

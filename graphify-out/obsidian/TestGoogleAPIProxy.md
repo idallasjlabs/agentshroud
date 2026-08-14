@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Docker Deploy Scripts"
 location: "L240"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Docker_Deploy_Scripts
 ---
 
 # TestGoogleAPIProxy
@@ -19,4 +19,4 @@ tags:
 - [[Regression tests for v1beta proxy response handling.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

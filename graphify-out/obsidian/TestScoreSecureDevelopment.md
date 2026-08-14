@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/papers"
 location: "L815"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/papers
 ---
 
 # TestScoreSecureDevelopment
@@ -16,4 +16,4 @@ tags:
 - [[.test_three_when_semgrep_and_precommit_present()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/papers

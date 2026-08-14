@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: ".github/COPILOT_CLI_SETUP.md"
+community: "Docker Deploy Scripts"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/github/COPILOT_CLI_SETUPmd
+  - community/Docker_Deploy_Scripts
 ---
 
 # Test risk assessment for high-risk targets.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_risk_assessment_red()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd
+#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts

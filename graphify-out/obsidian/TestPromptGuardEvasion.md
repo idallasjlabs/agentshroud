@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Planning Docs"
+community: "Audit Export Pipeline"
 location: "L797"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Planning_Docs
+  - community/Audit_Export_Pipeline
 ---
 
 # TestPromptGuardEvasion
@@ -39,4 +39,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Planning_Docs
+#graphify/code #graphify/INFERRED #community/Audit_Export_Pipeline

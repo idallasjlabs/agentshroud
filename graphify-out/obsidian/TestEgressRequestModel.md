@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress.py"
 type: "code"
-community: "docs/vault"
+community: ".github/COPILOT_CLI_SETUP.md"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/github/COPILOT_CLI_SETUPmd
 ---
 
 # TestEgressRequestModel
@@ -17,4 +17,4 @@ tags:
 - [[.test_red_risk_high_threat()]] - `method` [EXTRACTED]
 - [[test_soc_egress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd

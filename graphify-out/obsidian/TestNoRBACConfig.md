@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "File Sandbox"
+community: "Approval & FastAPI Ingest"
 location: "L215"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/File_Sandbox
+  - community/Approval__FastAPI_Ingest
 ---
 
 # TestNoRBACConfig
@@ -21,4 +21,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/File_Sandbox
+#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest

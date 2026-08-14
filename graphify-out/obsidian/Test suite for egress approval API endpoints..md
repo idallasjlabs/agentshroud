@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Docker Deploy Scripts"
 location: "L396"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Docker_Deploy_Scripts
 ---
 
 # Test suite for egress approval API endpoints.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressApprovalAPI]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts

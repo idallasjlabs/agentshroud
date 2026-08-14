@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "ESP32 Firmware"
+community: "Gateway Test Suite"
 location: "L2807"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Gateway_Test_Suite
 ---
 
 # Trailing punctuation in leaked URL should be normalized before approval check.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_raw_web_fetch_json_approval_strips_trailing_punctuation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

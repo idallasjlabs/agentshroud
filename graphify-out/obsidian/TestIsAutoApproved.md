@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "Gateway Security Module"
 location: "L106"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Forward_Routing__Approval
+  - community/Gateway_Security_Module
 ---
 
 # TestIsAutoApproved
@@ -21,4 +21,4 @@ tags:
 - [[SSHResult]] - `uses` [INFERRED]
 - [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Forward_Routing__Approval
+#graphify/code #graphify/INFERRED #community/Gateway_Security_Module

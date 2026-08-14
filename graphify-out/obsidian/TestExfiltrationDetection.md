@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Collaborator Response Templates"
+community: "Auth & Exception Types"
 location: "L576"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Collaborator_Response_Templates
+  - community/Auth__Exception_Types
 ---
 
 # TestExfiltrationDetection
@@ -43,4 +43,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Collaborator_Response_Templates
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

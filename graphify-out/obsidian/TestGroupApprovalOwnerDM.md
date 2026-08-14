@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Collaborator Prompt Classifiers"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # TestGroupApprovalOwnerDM
@@ -22,4 +22,4 @@ tags:
 - [[Owner must receive a DM when an approval originates from a group chat.]] - `rationale_for` [EXTRACTED]
 - [[test_group_approval_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

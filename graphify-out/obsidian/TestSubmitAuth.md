@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "docs/vault"
+community: "skills/openclaw"
 location: "L172"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/vault
+  - community/skills/openclaw
 ---
 
 # TestSubmitAuth
@@ -17,4 +17,4 @@ tags:
 - [[FetchOutcome]] - `uses` [INFERRED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/docs/vault
+#graphify/code #graphify/INFERRED #community/skills/openclaw

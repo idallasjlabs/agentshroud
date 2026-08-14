@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Slack API Proxy"
 location: "L470"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Slack_API_Proxy
 ---
 
 # TestOwnerTrustElevation
@@ -23,4 +23,4 @@ tags:
 - [[SCRUM-46 verify forward.py elevates trust to FULL for the owner's user_id.]] - `rationale_for` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

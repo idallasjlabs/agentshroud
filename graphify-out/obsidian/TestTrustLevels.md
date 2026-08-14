@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "Enforce-Mode Auto-Revert"
+community: "SOC Dashboard"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enforce-Mode_Auto-Revert
+  - community/SOC_Dashboard
 ---
 
 # TestTrustLevels
@@ -23,4 +23,4 @@ tags:
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enforce-Mode_Auto-Revert
+#graphify/code #graphify/INFERRED #community/SOC_Dashboard

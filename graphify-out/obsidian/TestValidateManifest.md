@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: ".github/ISSUE_TEMPLATE"
+community: "Gateway Test Suite"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/github/ISSUE_TEMPLATE
+  - community/Gateway_Test_Suite
 ---
 
 # TestValidateManifest
@@ -21,4 +21,4 @@ tags:
 - [[SkillsManifest]] - `uses` [INFERRED]
 - [[test_skills_manifest_sync.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/github/ISSUE_TEMPLATE
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

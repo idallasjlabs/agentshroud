@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "SOC RBAC & Auth"
 location: "L323"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/SOC_RBAC__Auth
 ---
 
 # The check_rot13 config flag gates the rot13 layer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_encoding_detector_rot13_can_be_disabled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth

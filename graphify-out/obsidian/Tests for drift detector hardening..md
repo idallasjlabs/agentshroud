@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Audit Export Pipeline"
 location: "L920"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Audit_Export_Pipeline
 ---
 
 # Tests for drift detector hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDriftDetectorHardened]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline

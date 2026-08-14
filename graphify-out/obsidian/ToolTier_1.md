@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Approval & FastAPI Ingest"
 location: "L173"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress__RBAC_Security_Core
+  - community/Approval__FastAPI_Ingest
 ---
 
 # ToolTier
@@ -33,4 +33,4 @@ tags:
 - [[ToolTier]] - `uses` [INFERRED]
 - [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest

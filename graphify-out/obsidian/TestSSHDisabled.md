@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "Gateway Security Module"
 location: "L197"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Forward_Routing__Approval
+  - community/Gateway_Security_Module
 ---
 
 # TestSSHDisabled
@@ -20,4 +20,4 @@ tags:
 - [[Test SSH disabled returns 503 (Finding 12)]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Forward_Routing__Approval
+#graphify/code #graphify/INFERRED #community/Gateway_Security_Module

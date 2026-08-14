@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "skills/openclaw"
+community: "Security Docs"
 location: "L174"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/skills/openclaw
+  - community/Security_Docs
 ---
 
 # TestAutoRevert
@@ -22,4 +22,4 @@ tags:
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/skills/openclaw
+#graphify/code #graphify/INFERRED #community/Security_Docs

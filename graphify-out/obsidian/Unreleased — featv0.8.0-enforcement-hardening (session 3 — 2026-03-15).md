@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L564"
+community: "docs/vault"
+location: "L628"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/vault
 ---
 
 # [Unreleased] — feat/v0.8.0-enforcement-hardening (session 3 — 2026-03-15)
@@ -16,8 +16,11 @@ tags:
 - [[Changed]] - `contains` [EXTRACTED]
 - [[Changelog — AgentShroud™]] - `contains` [EXTRACTED]
 - [[Fixed]] - `contains` [EXTRACTED]
-- [[Summary_1]] - `contains` [EXTRACTED]
+- [[Fixed_8]] - `contains` [EXTRACTED]
+- [[Summary]] - `contains` [EXTRACTED]
+- [[Summary_11]] - `contains` [EXTRACTED]
 - [[Tests]] - `contains` [EXTRACTED]
+- [[Tests_2]] - `contains` [EXTRACTED]
 - [[Tranche Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/docs/vault

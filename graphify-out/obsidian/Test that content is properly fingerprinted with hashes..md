@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Community 1547"
+community: "docs/runbooks"
 location: "L263"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1547
+  - community/docs/runbooks
 ---
 
 # Test that content is properly fingerprinted with hashes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_hash_fingerprinting()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1547
+#graphify/rationale #graphify/EXTRACTED #community/docs/runbooks

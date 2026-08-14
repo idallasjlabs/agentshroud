@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "docs/operations"
+community: "Gateway Test Suite"
 location: "L190"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/operations
+  - community/Gateway_Test_Suite
 ---
 
 # TestExpiredUsageCleanup
@@ -19,4 +19,4 @@ tags:
 - [[VRAMHeadroomError]] - `uses` [INFERRED]
 - [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/docs/operations
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

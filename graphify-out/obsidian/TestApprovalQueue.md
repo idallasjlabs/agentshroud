@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Collaborator Prompt Safety"
+community: "Gateway Test Suite"
 location: "L462"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Collaborator_Prompt_Safety
+  - community/Gateway_Test_Suite
 ---
 
 # TestApprovalQueue
@@ -34,4 +34,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Safety
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

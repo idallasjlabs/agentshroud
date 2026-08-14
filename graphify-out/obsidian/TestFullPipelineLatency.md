@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "docs/vault"
 location: "L208"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Telegram_Proxy_Test_Suite
+  - community/docs/vault
 ---
 
 # TestFullPipelineLatency
@@ -24,4 +24,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/INFERRED #community/docs/vault

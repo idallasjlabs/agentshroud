@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "MCP Policy Engine"
+community: "Gateway Test Suite"
 location: "L96"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Policy_Engine
+  - community/Gateway_Test_Suite
 ---
 
 # TrustManager
@@ -202,4 +202,4 @@ tags:
 - [[trust_manager()_5]] - `calls` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Policy_Engine
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

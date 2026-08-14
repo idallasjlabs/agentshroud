@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "scripts/sync-cve-registry.py"
 location: "L271"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Telegram_Proxy_Test_Suite
+  - community/scripts/sync-cve-registrypy
 ---
 
 # TestMCPProxyConfigLoading
@@ -24,4 +24,4 @@ tags:
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/INFERRED #community/scripts/sync-cve-registrypy

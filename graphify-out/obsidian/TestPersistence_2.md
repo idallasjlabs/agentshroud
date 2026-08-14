@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "MCP Policy Engine"
+community: "Gateway Test Suite"
 location: "L184"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Policy_Engine
+  - community/Gateway_Test_Suite
 ---
 
 # TestPersistence
@@ -19,4 +19,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Policy_Engine
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

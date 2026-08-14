@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "Audit Export Pipeline"
+community: "docs/vault"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/docs/vault
 ---
 
 # TestSystemPromptHMAC
@@ -22,4 +22,4 @@ tags:
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[test_prompt_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/code #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "File Sandbox"
+community: "Approval & FastAPI Ingest"
 location: "L170"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/File_Sandbox
+  - community/Approval__FastAPI_Ingest
 ---
 
 # ToolACLConfig
@@ -49,4 +49,4 @@ tags:
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/File_Sandbox
+#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest

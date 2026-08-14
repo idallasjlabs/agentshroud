@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "HTTP Forwarder"
+community: "Gateway Test Suite"
 location: "L4739"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/HTTP_Forwarder
+  - community/Gateway_Test_Suite
 ---
 
 # TestPendingNoticeIncludesEgressSection
@@ -20,4 +20,4 @@ tags:
 - [[_send_owner_pending_notice must append Pending Egress Requests when queue non-em]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/HTTP_Forwarder
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

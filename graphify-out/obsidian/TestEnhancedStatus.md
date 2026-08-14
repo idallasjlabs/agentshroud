@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "code"
-community: "docs/README.md"
+community: "Competitive Intel Store"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/READMEmd
+  - community/Competitive_Intel_Store
 ---
 
 # TestEnhancedStatus
@@ -19,4 +19,4 @@ tags:
 - [[Test enhanced status endpoint with observatory mode and egress info.]] - `rationale_for` [EXTRACTED]
 - [[test_enhanced_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store

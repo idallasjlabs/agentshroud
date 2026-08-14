@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Security Docs"
+community: "Gateway Test Suite"
 location: "L406"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # TestEgressFilter
@@ -47,4 +47,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Docs
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

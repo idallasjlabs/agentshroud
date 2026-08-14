@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "branding/guidelines"
+community: "docs/vault"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/docs/vault
 ---
 
 # TestTamperDetection
@@ -21,4 +21,4 @@ tags:
 - [[Tamper detection at various chain positions.]] - `rationale_for` [EXTRACTED]
 - [[test_audit_chain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/branding/guidelines
+#graphify/code #graphify/EXTRACTED #community/docs/vault

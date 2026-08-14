@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Collaborator Prompt Classifiers"
 location: "L118"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # The originating group chat must receive a thread-reply notification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_group_chat_receives_thread_reply()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

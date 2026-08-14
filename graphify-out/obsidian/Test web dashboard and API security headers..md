@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "ESP32 Firmware"
+community: "Auth & Exception Types"
 location: "L707"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Auth__Exception_Types
 ---
 
 # Test web dashboard and API security headers.
@@ -15,4 +15,4 @@ tags:
 - [[.test_dashboard_no_inline_secrets()]] - `rationale_for` [EXTRACTED]
 - [[TestWebSecurity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

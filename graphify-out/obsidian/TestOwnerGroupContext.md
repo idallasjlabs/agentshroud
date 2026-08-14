@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "File Sandbox"
+community: "Gateway Test Suite"
 location: "L298"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/File_Sandbox
+  - community/Gateway_Test_Suite
 ---
 
 # TestOwnerGroupContext
@@ -23,4 +23,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/File_Sandbox
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

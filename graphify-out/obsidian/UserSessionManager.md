@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Approval Queue Tests"
+community: "Gateway Test Suite"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Queue_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # UserSessionManager
@@ -165,4 +165,4 @@ tags:
 - [[usm()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Queue_Tests
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

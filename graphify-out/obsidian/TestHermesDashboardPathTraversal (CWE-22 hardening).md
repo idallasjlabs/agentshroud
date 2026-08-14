@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Gateway Security Module"
+community: "PII Sanitizer Pipeline"
 location: "370-433"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Security_Module
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # TestHermesDashboardPathTraversal (CWE-22 hardening)
@@ -15,4 +15,4 @@ tags:
 - [[main.py_2]] - `implements` [INFERRED]
 - [[test_main_endpoints.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Security_Module
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline

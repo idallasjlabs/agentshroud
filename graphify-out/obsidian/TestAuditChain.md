@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "MCP Proxy Config"
 location: "L18"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_RBAC__Auth
+  - community/MCP_Proxy_Config
 ---
 
 # TestAuditChain
@@ -40,4 +40,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_RBAC__Auth
+#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config

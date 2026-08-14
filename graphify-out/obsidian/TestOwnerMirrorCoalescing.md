@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "HTTP Forwarder"
+community: "Gateway Test Suite"
 location: "L4868"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/HTTP_Forwarder
+  - community/Gateway_Test_Suite
 ---
 
 # TestOwnerMirrorCoalescing
@@ -21,4 +21,4 @@ tags:
 - [[_mirror_to_owner_if_collaborator must coalesce within the window.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/HTTP_Forwarder
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

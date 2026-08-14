@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "File Sandbox"
+community: "Approval & FastAPI Ingest"
 location: "L302"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/Approval__FastAPI_Ingest
 ---
 
 # TestCVE2026_9367TerminalToolDenied
@@ -27,4 +27,4 @@ tags:
 - [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - `rationale_for` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

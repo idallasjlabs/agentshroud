@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Slack API Proxy"
 location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Slack_API_Proxy
 ---
 
 # TestAgentIdPropagatedFromTarget
@@ -22,4 +22,4 @@ tags:
 - [[Verify that the resolved target.name is used as agent_id in pipeline calls.]] - `rationale_for` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

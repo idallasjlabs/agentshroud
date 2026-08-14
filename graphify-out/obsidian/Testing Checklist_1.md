@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/reference"
 location: "L228"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/reference
 ---
 
 # Testing Checklist
@@ -16,4 +16,4 @@ tags:
 - [[Owner Testing]] - `contains` [EXTRACTED]
 - [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/reference

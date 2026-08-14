@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "docs/flows"
+community: "Gateway Test Suite"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/flows
+  - community/Gateway_Test_Suite
 ---
 
 # TestResourceGuardLifecycle
@@ -18,4 +18,4 @@ tags:
 - [[The lifespan must stop the background monitor task on shutdown.]] - `rationale_for` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/flows
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

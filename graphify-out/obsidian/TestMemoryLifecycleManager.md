@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Progressive Trust Config"
+community: "gateway/README.md"
 location: "L189"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/gateway/READMEmd
 ---
 
 # TestMemoryLifecycleManager
@@ -34,4 +34,4 @@ tags:
 - [[Test memory lifecycle management.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/code #graphify/EXTRACTED #community/gateway/READMEmd

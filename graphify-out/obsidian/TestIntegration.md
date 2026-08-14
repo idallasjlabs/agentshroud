@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Bot CVE Scorecard"
+community: "MCP Proxy Config"
 location: "L600"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_CVE_Scorecard
+  - community/MCP_Proxy_Config
 ---
 
 # TestIntegration
@@ -21,4 +21,4 @@ tags:
 - [[Test that outbound filter works alongside PII sanitizer.]] - `rationale_for` [EXTRACTED]
 - [[test_outbound_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_CVE_Scorecard
+#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config

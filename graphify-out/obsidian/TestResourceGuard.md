@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "Setup Docs"
+community: "Gateway Security Module"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Gateway_Security_Module
 ---
 
 # TestResourceGuard
@@ -29,4 +29,4 @@ tags:
 - [[ResourceLimits]] - `uses` [INFERRED]
 - [[test_resource_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Setup_Docs
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

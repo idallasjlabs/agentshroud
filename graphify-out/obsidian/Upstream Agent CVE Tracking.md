@@ -1,12 +1,12 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Security Docs"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Docs
 ---
 
 # Upstream Agent CVE Tracking
@@ -14,6 +14,5 @@ tags:
 ## Connections
 - [[AgentShroud™ Security Policy]] - `references` [EXTRACTED]
 - [[Daily CVE Sync + Page Update Workflow_1]] - `references` [EXTRACTED]
-- [[v1.3.0 Reliability Release]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

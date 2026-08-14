@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "File Sandbox"
+community: "Gateway Test Suite"
 location: "L206"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/File_Sandbox
+  - community/Gateway_Test_Suite
 ---
 
 # ToolACLEnforcer
@@ -85,4 +85,4 @@ tags:
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/File_Sandbox
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

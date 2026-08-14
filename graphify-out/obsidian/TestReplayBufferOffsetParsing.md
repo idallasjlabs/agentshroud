@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "HTTP Forwarder"
+community: "Gateway Test Suite"
 location: "L4609"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/Gateway_Test_Suite
 ---
 
 # TestReplayBufferOffsetParsing
@@ -23,4 +23,4 @@ tags:
 - [[Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered correc]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

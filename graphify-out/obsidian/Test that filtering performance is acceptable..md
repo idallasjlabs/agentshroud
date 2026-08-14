@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Bot CVE Scorecard"
+community: "Bot Skill Config"
 location: "L386"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_CVE_Scorecard
+  - community/Bot_Skill_Config
 ---
 
 # Test that filtering performance is acceptable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_performance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_CVE_Scorecard
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

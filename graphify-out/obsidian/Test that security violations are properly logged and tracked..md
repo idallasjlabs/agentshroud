@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "URL/Domain Validation Tests"
+community: "Egress & RBAC Security Core"
 location: "L276"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Test that security violations are properly logged and tracked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSecurityViolationLogging]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

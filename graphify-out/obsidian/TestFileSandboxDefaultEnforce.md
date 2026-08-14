@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "URL/Domain Validation Tests"
+community: "Collaborator Response Templates"
 location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/URL/Domain_Validation_Tests
+  - community/Collaborator_Response_Templates
 ---
 
 # TestFileSandboxDefaultEnforce
@@ -21,4 +21,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/URL/Domain_Validation_Tests
+#graphify/code #graphify/INFERRED #community/Collaborator_Response_Templates

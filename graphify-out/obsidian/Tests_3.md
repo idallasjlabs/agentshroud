@@ -1,8 +1,8 @@
 ---
-source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
+source_file: "CHANGELOG.md"
 type: "document"
 community: "Gateway Test Suite"
-location: "L191"
+location: "L687"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,7 +12,6 @@ tags:
 # Tests
 
 ## Connections
-- [[P4 Wire MCP Proxy]] - `contains` [EXTRACTED]
-- [[P5 Wire SecurityPipeline to forward]] - `contains` [EXTRACTED]
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 2 — 2026-03-14)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

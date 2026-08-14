@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "Approval Queue Tests"
+community: "File Sandbox"
 location: "L211"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Queue_Tests
+  - community/File_Sandbox
 ---
 
 # TestAuthorizationHelper
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Queue_Tests
+#graphify/code #graphify/INFERRED #community/File_Sandbox

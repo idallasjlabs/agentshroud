@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "skills/openclaw"
 location: "L73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/skills/openclaw
 ---
 
 # Test that middleware errors cause requests to be blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_forward_middleware_error_handling()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw

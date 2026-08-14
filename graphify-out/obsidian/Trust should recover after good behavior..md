@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "MCP Policy Engine"
+community: "Gateway Test Suite"
 location: "L442"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Gateway_Test_Suite
 ---
 
 # Trust should recover after good behavior.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_trust_recovery()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
