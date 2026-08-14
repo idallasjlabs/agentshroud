@@ -24,6 +24,14 @@ from gateway.security.cross_bot_trust_ledger import (
 )
 from gateway.security.trust_manager import TrustConfig, TrustManager
 
+# Python 3.13 raises ResourceWarning for unclosed sqlite3.Connection objects
+# during GC.  TrustManager uses in-memory SQLite databases that are safely
+# discarded when the process exits — suppress the warning in tests to avoid
+# false failures from pytest's strict unraisable-exception handling.
+pytestmark = pytest.mark.filterwarnings(
+    "ignore::ResourceWarning",
+)
+
 # ---------------------------------------------------------------------------
 # Fixtures
 # ---------------------------------------------------------------------------
@@ -48,14 +56,16 @@ def ledger(policy: TrustDecayPolicy) -> CrossBotTrustLedger:
 def openclaw_tm() -> TrustManager:
     tm = TrustManager(db_path=":memory:", config=TrustConfig(initial_score=200.0))
     tm.register_agent("openclaw")
-    return tm
+    yield tm
+    tm.close()
 
 
 @pytest.fixture()
 def hermes_tm() -> TrustManager:
     tm = TrustManager(db_path=":memory:", config=TrustConfig(initial_score=200.0))
     tm.register_agent("hermes")
-    return tm
+    yield tm
+    tm.close()
 
 
 # ---------------------------------------------------------------------------

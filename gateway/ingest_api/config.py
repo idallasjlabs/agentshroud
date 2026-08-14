@@ -105,7 +105,7 @@ class ApprovalQueueConfig(BaseModel):
 
     enabled: bool = True
     actions: list[str] = Field(default_factory=list)
-    timeout_seconds: int = 3600  # 1 hour
+    timeout_seconds: int = 86400  # 24 hours
     db_path: str = ""  # Set dynamically in __init__ if empty
 
 
@@ -192,7 +192,7 @@ class ToolRiskPolicy(BaseModel):
     """Risk policy configuration for a tool tier"""
 
     require_approval: bool = False
-    timeout_seconds: int = 300  # 5 minutes default
+    timeout_seconds: int = 86400  # 24 hours default
     timeout_action: str = "deny"  # deny or allow
     notify_channels: list[str] = Field(default_factory=lambda: ["websocket"])
     owner_bypass: bool = False
@@ -204,7 +204,7 @@ class ToolRiskConfig(BaseModel):
     critical: ToolRiskPolicy = Field(
         default_factory=lambda: ToolRiskPolicy(
             require_approval=True,
-            timeout_seconds=300,
+            timeout_seconds=86400,
             timeout_action="deny",
             notify_channels=["websocket", "telegram_admin"],
             owner_bypass=False,
@@ -214,7 +214,7 @@ class ToolRiskConfig(BaseModel):
     high: ToolRiskPolicy = Field(
         default_factory=lambda: ToolRiskPolicy(
             require_approval=True,
-            timeout_seconds=300,
+            timeout_seconds=86400,
             timeout_action="deny",
             notify_channels=["websocket"],
             owner_bypass=True,
@@ -224,7 +224,7 @@ class ToolRiskConfig(BaseModel):
     medium: ToolRiskPolicy = Field(
         default_factory=lambda: ToolRiskPolicy(
             require_approval=False,
-            timeout_seconds=300,
+            timeout_seconds=86400,
             timeout_action="deny",
             notify_channels=["websocket"],
             owner_bypass=True,
@@ -234,7 +234,7 @@ class ToolRiskConfig(BaseModel):
     low: ToolRiskPolicy = Field(
         default_factory=lambda: ToolRiskPolicy(
             require_approval=False,
-            timeout_seconds=300,
+            timeout_seconds=86400,
             timeout_action="deny",
             notify_channels=["websocket"],
             owner_bypass=True,
@@ -517,7 +517,7 @@ def load_config(config_path: Optional[Path] = None) -> GatewayConfig:
     approval_config = ApprovalQueueConfig(
         enabled=security.get("approval_queue", True),
         actions=security.get("require_approval_for", []),
-        timeout_seconds=3600,  # Not in current YAML, using default
+        timeout_seconds=86400,  # 24 hours — matches ApprovalQueueConfig default
     )
 
     # Get or generate auth token

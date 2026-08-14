@@ -1087,14 +1087,25 @@ async def lifespan(app: FastAPI):
         except OSError:
             pass
 
-    # Data directories — /app/data in container, /tmp/agentshroud-data in tests
+    # Data directories — /app/data in container, /tmp/agentshroud-data in tests.
+    # The /tmp fallback may already exist owned by another user (e.g. the admin
+    # account on a shared dev host), so we fall through to a per-user temp dir
+    # rather than crashing on PermissionError.
     _data_dir = _Path("/app/data")
     try:
         _data_dir.mkdir(parents=True, exist_ok=True)
+        (_data_dir / "baselines").mkdir(parents=True, exist_ok=True)
     except OSError:
         _data_dir = _Path("/tmp/agentshroud-data")
-        _data_dir.mkdir(parents=True, exist_ok=True)
-    (_data_dir / "baselines").mkdir(parents=True, exist_ok=True)
+        try:
+            _data_dir.mkdir(parents=True, exist_ok=True)
+            (_data_dir / "baselines").mkdir(parents=True, exist_ok=True)
+        except OSError:
+            # Shared /tmp dir owned by another user — use a private temp dir
+            import tempfile as _tempfile
+
+            _data_dir = _Path(_tempfile.mkdtemp(prefix="agentshroud-data-"))
+            (_data_dir / "baselines").mkdir(parents=True, exist_ok=True)
 
     # Write startup events to scorecard evidence files.
     # Scorers check st_size > 0 — a bare touch() does not satisfy D14/D15/D19.

@@ -122,6 +122,11 @@ PERMANENT_EGRESS_DOMAINS: list[str] = [
     # ── LLM Routing (local proxy) ──
     "openrouter.ai",
     "*.openrouter.ai",
+    # ── Atlassian (Jira + Confluence — SCRUM board, dev-batch ticket tracking) ──
+    "atlassian.net",
+    "*.atlassian.net",
+    "atlassian.com",
+    "*.atlassian.com",
 ]
 
 
