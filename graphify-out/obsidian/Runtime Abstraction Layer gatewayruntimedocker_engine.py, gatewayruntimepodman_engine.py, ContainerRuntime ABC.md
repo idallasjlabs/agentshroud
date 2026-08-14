@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "concept"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "Runtime Abstraction Layer"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Runtime Abstraction Layer: gateway/runtime/docker_engine.py, gateway/runtime/podman_engine.py, ContainerRuntime ABC
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ADR-006 Multi-Runtime Container Support]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

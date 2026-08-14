@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/competitive-analysis.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # SECTION 4: NEXT STEPS TO STAY AHEAD
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[REPORT STRUCTURE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/vault

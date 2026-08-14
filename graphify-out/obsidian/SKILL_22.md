@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-gitops/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "scripts/deploy-gateway.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/scripts/deploy-gatewaysh
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill gitops]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/scripts/deploy-gatewaysh

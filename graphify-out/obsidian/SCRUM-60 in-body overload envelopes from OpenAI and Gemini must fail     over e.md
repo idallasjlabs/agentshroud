@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Planning Docs"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # SCRUM-60: in-body overload envelopes from OpenAI and Gemini must fail     over e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOverloadedMultiProvider]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

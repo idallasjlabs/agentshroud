@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-architecture-review/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "scripts/activate-lockdown.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/scripts/activate-lockdownsh
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill architecture-review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/scripts/activate-lockdownsh

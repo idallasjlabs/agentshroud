@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/updating.md"
 type: "document"
-community: "docs/operations"
+community: "skills/openclaw"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/skills/openclaw
 ---
 
 # Rollback Procedure
@@ -16,4 +16,4 @@ tags:
 - [[With Git]] - `contains` [EXTRACTED]
 - [[Without Git]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

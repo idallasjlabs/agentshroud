@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Gateway Test Suite"
 location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Gateway_Test_Suite
 ---
 
 # SOCWebSocketHandler
@@ -17,11 +17,10 @@ tags:
 - [[._keepalive_loop()]] - `method` [EXTRACTED]
 - [[._send_event()]] - `method` [EXTRACTED]
 - [[.run()_5]] - `method` [EXTRACTED]
-- [[Any_69]] - `uses` [INFERRED]
+- [[Any_71]] - `uses` [INFERRED]
 - [[Manages a single wssoc client connection.]] - `rationale_for` [EXTRACTED]
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler_2]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler_3]] - `uses` [INFERRED]
 - [[Severity_2]] - `uses` [INFERRED]
 - [[SimpleNamespace]] - `uses` [INFERRED]
 - [[TestCoerceToWSEvent]] - `uses` [INFERRED]
@@ -51,5 +50,6 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
+- [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

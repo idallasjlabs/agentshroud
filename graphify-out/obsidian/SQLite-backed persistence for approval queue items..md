@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "rationale"
-community: "Enhanced Approval Queue"
+community: "Collaborator Prompt Classifiers"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # SQLite-backed persistence for approval queue items.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalStore_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

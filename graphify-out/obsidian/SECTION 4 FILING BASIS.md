@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "docs/USPTO_TRADEMARK_APPLICATION.md"
+community: "Planning Docs"
 location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/USPTO_TRADEMARK_APPLICATIONmd
+  - community/Planning_Docs
 ---
 
 # SECTION 4: FILING BASIS
@@ -16,4 +16,4 @@ tags:
 - [[Option A Section 1(a) — Use in Commerce (if mark is already in use)]] - `contains` [EXTRACTED]
 - [[Option B Section 1(b) — Intent to Use (if not yet in commerce)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/USPTO_TRADEMARK_APPLICATIONmd
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

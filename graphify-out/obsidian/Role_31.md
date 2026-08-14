@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Planning Docs"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # Role
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

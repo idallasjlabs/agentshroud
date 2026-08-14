@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gemini/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Community 1442"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Community_1442
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Gemini CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Community_1442

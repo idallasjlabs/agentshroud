@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
 type: "concept"
-community: "docs/governance"
+community: "docs/runbooks"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/governance
+  - community/docs/runbooks
 ---
 
 # Rule 2 — Approval Tag (approved:isaiah) for High-Severity Changes
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GSD Cadence — Get Shit Done Governance (doc)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/governance
+#graphify/concept #graphify/EXTRACTED #community/docs/runbooks

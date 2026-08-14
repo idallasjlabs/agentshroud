@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "voice_gateway/stt.py"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/voice_gateway/sttpy
 ---
 
 # Role
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/voice_gateway/sttpy

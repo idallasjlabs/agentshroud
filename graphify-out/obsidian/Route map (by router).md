@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "docs/api"
+community: "Gateway Test Suite"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/api
+  - community/Gateway_Test_Suite
 ---
 
 # Route map (by router)
@@ -24,4 +24,4 @@ tags:
 - [[Scanning]] - `contains` [EXTRACTED]
 - [[Web control center (`gatewaywebapi.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/api
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

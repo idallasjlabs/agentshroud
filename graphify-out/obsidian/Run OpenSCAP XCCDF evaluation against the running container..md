@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
-location: "L2601"
+community: "PII Sanitizer Pipeline"
+location: "L2608"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Run OpenSCAP XCCDF evaluation against the running container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_openscap_scan()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

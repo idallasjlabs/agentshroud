@@ -1,11 +1,12 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
-type: "concept"
-community: "docs/governance"
+type: "document"
+community: "docs/runbooks"
+location: "L9"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/docs/governance
+  - community/docs/runbooks
 ---
 
 # Rule 1 — GSD Issue Before the Branch
@@ -15,4 +16,4 @@ tags:
 - [[GSD Cadence — Get Shit Done Governance (doc)]] - `references` [EXTRACTED]
 - [[Security-Sensitive Paths]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/governance
+#graphify/document #graphify/EXTRACTED #community/docs/runbooks

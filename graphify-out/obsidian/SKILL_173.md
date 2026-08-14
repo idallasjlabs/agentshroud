@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/voice-call/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Gateway_Test_Suite
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Voice Call]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "docker/DOCKER-VPN-NETWORKING.md"
+community: "Bot Skill Config"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/DOCKER-VPN-NETWORKINGmd
+  - community/Bot_Skill_Config
 ---
 
 # Root Cause
@@ -17,4 +17,4 @@ tags:
 - [[Secondary Python IPv6 fallback (misleading error)]] - `contains` [EXTRACTED]
 - [[Secondary transparent HTTPS proxy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/DOCKER-VPN-NETWORKINGmd
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

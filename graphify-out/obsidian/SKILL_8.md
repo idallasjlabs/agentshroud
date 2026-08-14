@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-bdd/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "scripts/backup-bot-memory.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/scripts/backup-bot-memorysh
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill bdd]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/scripts/backup-bot-memorysh

@@ -1,11 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
-type: "concept"
-community: "Architecture Docs"
+type: "document"
+community: "docs/vault"
+location: "L788"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/docs/vault
 ---
 
 # SOC Dashboard
@@ -15,4 +16,4 @@ tags:
 - [[Approval Queue (human-in-the-loop)]] - `shares_data_with` [EXTRACTED]
 - [[gatewaysocrouter.py (SOC Shared Command Layer)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/vault

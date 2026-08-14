@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "scripts/check_benchmark_regression.py"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/scripts/check_benchmark_regressionpy
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill chaos-engineering]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/scripts/check_benchmark_regressionpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Audit Export Pipeline"
 location: "L379"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Audit_Export_Pipeline
 ---
 
 # Run standard benchmarks and write results to .benchmarks/baseline-v1.0.0.json.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_write_baseline_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline

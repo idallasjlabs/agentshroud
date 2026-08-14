@@ -1,11 +1,12 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
-type: "concept"
-community: "docs/governance"
+type: "document"
+community: "docs/runbooks"
+location: "L47"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/docs/governance
+  - community/docs/runbooks
 ---
 
 # Rule 3 — Weekly Kaizen + Monthly Chaos Drill
@@ -16,4 +17,4 @@ tags:
 - [[Monthly (1st of month)]] - `contains` [EXTRACTED]
 - [[Weekly (every Friday)]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/governance
+#graphify/document #graphify/EXTRACTED #community/docs/runbooks

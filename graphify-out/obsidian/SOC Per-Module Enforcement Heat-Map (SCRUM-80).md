@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
-type: "concept"
-community: "Bot Container Scripts"
-location: "docker/README.md:545"
+type: "document"
+community: "docs/diagrams"
+location: "L545"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/docs/diagrams
 ---
 
 # SOC Per-Module Enforcement Heat-Map (SCRUM-80)
@@ -16,4 +16,4 @@ tags:
 - [[Daily CVE Triage & Remediation Scan (OpenClaw cron job)]] - `conceptually_related_to` [INFERRED]
 - [[record_decision()]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/document #graphify/EXTRACTED #community/docs/diagrams

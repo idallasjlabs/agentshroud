@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "docs/api"
+community: "Gateway Test Suite"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/api
+  - community/Gateway_Test_Suite
 ---
 
 # SOC — Shared Command Layer (`/soc/v1/*`, `gateway/soc/router.py`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Route map (by router)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/api
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

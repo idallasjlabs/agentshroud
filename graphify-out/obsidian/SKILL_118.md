@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sre/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Custom Skills"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Custom_Skills
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill sre_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Custom_Skills

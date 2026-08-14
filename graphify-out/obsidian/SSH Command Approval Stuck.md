@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "docs/runbooks"
+community: "Bot Skill Config"
 location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Bot_Skill_Config
 ---
 
 # SSH Command Approval Stuck
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Issues_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

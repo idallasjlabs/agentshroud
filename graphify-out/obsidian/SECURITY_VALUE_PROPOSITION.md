@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # SECURITY_VALUE_PROPOSITION.md
@@ -18,4 +18,4 @@ tags:
 - [[IEC 62443 Compliance Matrix (FR1-FR7 Foundational Requirements)]] - `references` [EXTRACTED]
 - [[Multi-Tenant Security Context (external hosting, security testbed, immutable infra)]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

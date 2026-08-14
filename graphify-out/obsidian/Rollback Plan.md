@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "Architecture Docs"
+community: "Bot Skill Config"
 location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Rollback Plan
@@ -17,4 +17,4 @@ tags:
 - [[PHASE_3A_3B_IMPLEMENTATION]] - `contains` [EXTRACTED]
 - [[Restore hardcoded gateway password (if secret mounting fails)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

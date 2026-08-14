@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Collaborator Lifecycle"
+community: "Enhanced Approval Queue"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/Enhanced_Approval_Queue
 ---
 
 # SCLCaller
@@ -98,4 +98,4 @@ tags:
 - [[upgrade_hermes()]] - `references` [EXTRACTED]
 - [[verify_audit_chain()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue

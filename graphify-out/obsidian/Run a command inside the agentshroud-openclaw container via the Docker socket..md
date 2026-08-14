@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Collaborator Lifecycle"
+community: "Enhanced Approval Queue"
 location: "L2428"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/Enhanced_Approval_Queue
 ---
 
 # Run a command inside the agentshroud-openclaw container via the Docker socket.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_docker_exec_bot()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Test Suite"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Dashboard
+  - community/Gateway_Test_Suite
 ---
 
 # SCLInterface
@@ -24,4 +24,4 @@ tags:
 - [[WSEventType]] - `uses` [INFERRED]
 - [[_log_audit()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Dashboard
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

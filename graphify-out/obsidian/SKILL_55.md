@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sre/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "scripts/find-ports.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/scripts/find-portssh
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill sre]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/scripts/find-portssh

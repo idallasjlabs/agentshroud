@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-agile/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/reference"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/reference
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill agile]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/reference

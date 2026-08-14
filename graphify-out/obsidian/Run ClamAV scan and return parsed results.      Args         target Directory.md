@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
+community: "Gateway Test Suite"
 location: "L59"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Gateway_Test_Suite
 ---
 
 # Run ClamAV scan and return parsed results.      Args:         target: Directory
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_clamscan()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

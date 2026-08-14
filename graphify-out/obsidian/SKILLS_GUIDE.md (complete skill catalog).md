@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Setup Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Docs
 ---
 
 # SKILLS_GUIDE.md (complete skill catalog)
@@ -40,4 +40,4 @@ tags:
 - [[i-pr README (Pull Request Generator)]] - `references` [EXTRACTED]
 - [[i-vulcan README (Subject Matter Auditor)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

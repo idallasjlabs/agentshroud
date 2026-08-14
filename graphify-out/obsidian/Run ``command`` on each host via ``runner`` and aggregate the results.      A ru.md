@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "docs/redteam"
 location: "L187"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/redteam
 ---
 
 # Run ``command`` on each host via ``runner`` and aggregate the results.      A ru
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_multi_host()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/redteam

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/blucli/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/docs/vault
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[blucli (blu)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/docs/vault

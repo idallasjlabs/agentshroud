@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Test Suite"
 location: "L138"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Dashboard
+  - community/Gateway_Test_Suite
 ---
 
 # SCLCaller
@@ -25,7 +25,7 @@ tags:
 - [[.test_require_denied_without_reason_uses_forbidden()]] - `calls` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_64]] - `uses` [INFERRED]
+- [[Any_66]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult_1]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
@@ -38,10 +38,9 @@ tags:
 - [[JSONResponse]] - `uses` [INFERRED]
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_7]] - `uses` [INFERRED]
+- [[Request_6]] - `uses` [INFERRED]
 - [[Resolved identity of the SCL caller, including role and user_id.]] - `rationale_for` [EXTRACTED]
 - [[SCLCaller_1]] - `uses` [INFERRED]
-- [[SCLCaller_3]] - `uses` [INFERRED]
 - [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
@@ -51,7 +50,7 @@ tags:
 - [[SetRoleRequest]] - `uses` [INFERRED]
 - [[SetUserModeRequest]] - `uses` [INFERRED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
-- [[WebSocket_6]] - `uses` [INFERRED]
+- [[WebSocket_5]] - `uses` [INFERRED]
 - [[_make_owner_caller()]] - `calls` [EXTRACTED]
 - [[_resolve_caller()]] - `references` [EXTRACTED]
 - [[auth.py_1]] - `contains` [EXTRACTED]
@@ -60,4 +59,4 @@ tags:
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Dashboard
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

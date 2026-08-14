@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "rationale"
-community: "Gateway Ingest API"
+community: "CHANGELOG.md"
 location: "L119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - community/CHANGELOGmd
 ---
 
 # Rollback to the previous version. Requires approval_id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rollback_version()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/CHANGELOGmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "document"
-community: "docs/data"
+community: "Planning Docs"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/data
+  - community/Planning_Docs
 ---
 
 # SQLite Database Schema
@@ -16,4 +16,4 @@ tags:
 - [[Approval Queue Schema]] - `contains` [EXTRACTED]
 - [[Database Connection Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/data
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

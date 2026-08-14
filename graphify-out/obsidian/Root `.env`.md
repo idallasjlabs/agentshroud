@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST.md"
 type: "document"
-community: "Security Docs"
+community: "ESP32 Firmware"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/ESP32_Firmware
 ---
 
 # Root `.env`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Secrets Usage and Collaborator Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware

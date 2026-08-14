@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Custom Skills"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Custom_Skills
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Custom_Skills

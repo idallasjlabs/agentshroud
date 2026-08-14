@@ -1,11 +1,11 @@
 ---
 source_file: "SESSION_PROMPT.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Planning Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # SESSION_PROMPT.md (generated)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-session-prompt Session Prompt Generator]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

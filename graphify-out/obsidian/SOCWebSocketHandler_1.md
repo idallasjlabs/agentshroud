@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Approval & FastAPI Ingest"
 location: "L726"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Approval__FastAPI_Ingest
 ---
 
 # SOCWebSocketHandler
@@ -27,4 +27,4 @@ tags:
 - [[Role_1]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

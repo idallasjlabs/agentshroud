@@ -1,11 +1,11 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "concept"
-community: "docs/ssh-security-review.md"
+community: "Bot Skill Config"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/ssh-security-reviewmd
+  - community/Bot_Skill_Config
 ---
 
 # SSH Approval Flow (auto-approve vs human-review vs deny)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ssh-capability]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/ssh-security-reviewmd
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
