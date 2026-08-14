@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "concept"
-community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+community: ".github/agents"
 location: "Component E: Trust-Differentiated Processing"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+  - community/github/agents
 ---
 
 # Trust-Differentiated Processing: OWNER/ADMIN/OPERATOR/COLLABORATOR/VIEWER role tiers with RBAC
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[USPTO_PROVISIONAL_PATENT_APPLICATION]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+#graphify/concept #graphify/EXTRACTED #community/github/agents

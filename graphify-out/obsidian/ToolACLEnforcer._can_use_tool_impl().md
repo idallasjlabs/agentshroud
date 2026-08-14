@@ -1,17 +1,14 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Community 1789"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Community_1789
 ---
 
 # ToolACLEnforcer._can_use_tool_impl()
 
-## Connections
-- [[TrustManager.is_tool_allowed()]] - `calls` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Community_1789

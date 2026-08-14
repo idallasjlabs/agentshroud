@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "docs/governance"
 location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/docs/governance
 ---
 
 # Troubleshooting
@@ -17,4 +17,4 @@ tags:
 - [[Bot not responding on Telegram]] - `contains` [EXTRACTED]
 - [[Container won't start after adding Anthropic secret]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/docs/governance

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "rationale"
-community: "docs/project"
+community: "Bot Skill Config"
 location: "line 33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Bot_Skill_Config
 ---
 
 # USPTO Class 042: SaaS for AI Agent Security Governance and Policy Enforcement
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[USPTO-APPLICATION]] - `contains` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/project
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "code"
-community: "docs/vault"
+community: "Planning Docs"
 location: "gateway/proxy/url_analyzer.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Planning_Docs
 ---
 
 # URLAnalyzer
@@ -15,4 +15,4 @@ tags:
 - [[SSRF Protection]] - `implements` [EXTRACTED]
 - [[url_analyzer.py (Proxy Layer)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

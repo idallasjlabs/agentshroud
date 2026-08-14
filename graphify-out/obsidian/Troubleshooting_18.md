@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Security Docs"
+community: "docs/operations"
 location: "L277"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/docs/operations
 ---
 
 # Troubleshooting
@@ -17,4 +17,4 @@ tags:
 - [[scan.sh reports missing OpenSCAP]] - `contains` [EXTRACTED]
 - [[verify-security.sh fails]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/operations

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/updating.md"
 type: "document"
-community: "docs/operations"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/docs/operations
+  - community/Gateway_Test_Suite
 ---
 
 # Updating AgentShroud (Universal Guide)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Deployment Procedure]] - `extends` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/docs/operations
+#graphify/document #graphify/INFERRED #community/Gateway_Test_Suite

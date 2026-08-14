@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "rationale"
-community: "Security Module Middleware"
+community: "Telegram Proxy Test Suite"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Module_Middleware
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Tool result PII sanitizer with per-tool configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolResultSanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

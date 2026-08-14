@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "HTTP Forwarder"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/HTTP_Forwarder
 ---
 
 # Tracks collaborator messages at the gateway level.      Records every inbound me
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CollaboratorActivityTracker]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder

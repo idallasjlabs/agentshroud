@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "Collaborator Prompt Classifiers"
 location: "L191"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enhanced_Approval_Queue
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # ToolRiskPolicy
 
 ## Connections
 - [[.test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
-- [[Any_2]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
-- [[ApprovalRequest_1]] - `uses` [INFERRED]
+- [[ApprovalQueueItem]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
@@ -30,10 +30,10 @@ tags:
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
-- [[WebSocket_1]] - `uses` [INFERRED]
+- [[WebSocket]] - `uses` [INFERRED]
 - [[config.py]] - `contains` [EXTRACTED]
 - [[enhanced_queue.py]] - `imports` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
 - [[tool_risk_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Classifiers

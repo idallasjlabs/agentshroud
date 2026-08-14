@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "docs/governance"
 location: "L247"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/docs/governance
 ---
 
 # Troubleshooting
@@ -17,4 +17,4 @@ tags:
 - [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 - [[Telegram bot not responding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/docs/governance

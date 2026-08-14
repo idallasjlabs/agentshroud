@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "docs/requirements"
+community: "docs/vault"
 location: "L184"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/requirements
+  - community/docs/vault
 ---
 
 # UC-006: Security Alert Triggers Notification
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Use Cases_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/requirements
+#graphify/document #graphify/EXTRACTED #community/docs/vault

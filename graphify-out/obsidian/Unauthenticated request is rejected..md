@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "skills/openclaw"
 location: "L115"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/skills/openclaw
 ---
 
 # Unauthenticated request is rejected.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_result_requires_auth()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw

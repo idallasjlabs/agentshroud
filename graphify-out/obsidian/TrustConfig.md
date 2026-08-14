@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Cross-Bot Trust Ledger"
+community: "Gateway Test Suite"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Cross-Bot_Trust_Ledger
+  - community/Gateway_Test_Suite
 ---
 
 # TrustConfig
 
 ## Connections
 - [[.__init__()_123]] - `references` [EXTRACTED]
-- [[.__post_init__()_8]] - `method` [EXTRACTED]
+- [[.__post_init__()_9]] - `method` [EXTRACTED]
 - [[._pipeline_with_trust()]] - `calls` [EXTRACTED]
 - [[._shared_tm()]] - `calls` [EXTRACTED]
 - [[.test_custom_points()]] - `calls` [EXTRACTED]
@@ -88,15 +88,15 @@ tags:
 - [[TrustDecayPolicy_1]] - `uses` [INFERRED]
 - [[TrustLevel]] - `uses` [INFERRED]
 - [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_2]] - `uses` [INFERRED]
 - [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustManager_4]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[_make_tm()]] - `calls` [EXTRACTED]
 - [[hermes_tm()]] - `calls` [EXTRACTED]
@@ -110,8 +110,8 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_trust_manager.py]] - `imports` [EXTRACTED]
-- [[trust_manager()]] - `calls` [EXTRACTED]
-- [[trust_manager()_1]] - `calls` [EXTRACTED]
+- [[trust_manager()_2]] - `calls` [EXTRACTED]
+- [[trust_manager()_3]] - `calls` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Cross-Bot_Trust_Ledger
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

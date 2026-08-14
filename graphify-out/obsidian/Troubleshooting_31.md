@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "ESP32 Firmware"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/ESP32_Firmware
 ---
 
 # Troubleshooting
@@ -17,4 +17,4 @@ tags:
 - [[Connection timeout_3]] - `contains` [EXTRACTED]
 - [[iCloud Services_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware

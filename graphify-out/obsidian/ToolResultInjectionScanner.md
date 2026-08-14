@@ -12,14 +12,14 @@ tags:
 # ToolResultInjectionScanner
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_119]] - `method` [EXTRACTED]
 - [[._detect_encoded_injection()]] - `method` [EXTRACTED]
 - [[._detect_unicode_obfuscation()]] - `method` [EXTRACTED]
 - [[.scan_tool_result()_3]] - `method` [EXTRACTED]
 - [[.setup_method()_36]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -27,6 +27,7 @@ tags:
 - [[PromptGuard]] - `semantically_similar_to` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
+- [[RovoBlast Attack (Atlassian Rovo AI)]] - `implements` [EXTRACTED]
 - [[Scanner for detecting prompt injection in tool results.]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[TestCleanContent]] - `uses` [INFERRED]

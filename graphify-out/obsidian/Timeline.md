@@ -1,12 +1,12 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/postmortem.md"
 type: "document"
-community: ".github/ISSUE_TEMPLATE"
+community: "docs/vault"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/ISSUE_TEMPLATE
+  - community/docs/vault
 ---
 
 # Timeline
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[postmortem]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/ISSUE_TEMPLATE
+#graphify/document #graphify/EXTRACTED #community/docs/vault

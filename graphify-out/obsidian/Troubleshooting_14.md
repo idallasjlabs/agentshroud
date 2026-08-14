@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "docs/operations"
+community: "Gateway Test Suite"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Gateway_Test_Suite
 ---
 
 # Troubleshooting
@@ -17,4 +17,4 @@ tags:
 - [[Out-of-Memory (OOM) Kills]] - `contains` [EXTRACTED]
 - [[Slow Builds]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

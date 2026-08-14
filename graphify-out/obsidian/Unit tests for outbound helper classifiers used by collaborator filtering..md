@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L4025"
+community: "Gateway Proxy Layer"
+location: "L4035"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Proxy_Layer
 ---
 
 # Unit tests for outbound helper classifiers used by collaborator filtering.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOutboundClassifierHelpers]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

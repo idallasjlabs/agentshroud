@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Approval & FastAPI Ingest"
 location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Approval__FastAPI_Ingest
 ---
 
 # ToolTier
 
 ## Connections
 - [[Action_1]] - `uses` [INFERRED]
-- [[Any_52]] - `uses` [INFERRED]
+- [[Any_54]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[PermissionResult]] - `uses` [INFERRED]
 - [[RBACConfig]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[str]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest

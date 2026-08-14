@@ -1,41 +1,26 @@
 ---
-source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
+source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "Cross-Bot Trust Ledger"
-location: "L48"
+community: "Gateway Test Suite"
+location: "L93"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # TrustManager
 
 ## Connections
-- [[._shared_tm()]] - `references` [EXTRACTED]
-- [[.test_bot_without_registered_trust_manager_is_skipped()]] - `references` [EXTRACTED]
-- [[.test_critical_severity_propagates_full_fraction()]] - `references` [EXTRACTED]
-- [[.test_empty_bot_list_does_not_raise()]] - `calls` [EXTRACTED]
-- [[.test_get_incidents_by_source()]] - `references` [EXTRACTED]
-- [[.test_get_incidents_with_limit()]] - `references` [EXTRACTED]
-- [[.test_high_severity_propagates_full_fraction()]] - `references` [EXTRACTED]
-- [[.test_incident_limit_retained()]] - `references` [EXTRACTED]
-- [[.test_incident_record_fields()]] - `references` [EXTRACTED]
-- [[.test_incidents_are_recorded()]] - `references` [EXTRACTED]
-- [[.test_low_severity_not_propagated()]] - `references` [EXTRACTED]
-- [[.test_medium_severity_propagates_to_peer()]] - `references` [EXTRACTED]
-- [[.test_no_self_propagation()]] - `references` [EXTRACTED]
-- [[.test_propagated_to_is_empty_for_no_peers()]] - `references` [EXTRACTED]
-- [[.test_propagation_limited_to_max_depth()]] - `calls` [EXTRACTED]
-- [[.test_propagation_registers_unregistered_peer_agent()]] - `references` [EXTRACTED]
-- [[.test_single_bot_has_no_peers_and_does_not_raise()]] - `calls` [EXTRACTED]
-- [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[CrossBotTrustLedger]] - `uses` [INFERRED]
-- [[IncidentRecord]] - `uses` [INFERRED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustDecayPolicy]] - `uses` [INFERRED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[A2AProxy]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
-- [[hermes_tm()]] - `references` [EXTRACTED]
-- [[openclaw_tm()]] - `references` [EXTRACTED]
+- [[ViolationType]] - `uses` [INFERRED]
+- [[test_generic_denial_does_not_record_a2a_specific_violation_types()]] - `references` [EXTRACTED]
+- [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `references` [EXTRACTED]
+- [[test_task_ownership_violation_records_a2a_violation_type()]] - `references` [EXTRACTED]
+- [[trust_manager()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

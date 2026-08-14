@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "branding/guidelines"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/branding/guidelines
 ---
 
 # Unsafe Control Actions (UCAs)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Methodology_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/branding/guidelines

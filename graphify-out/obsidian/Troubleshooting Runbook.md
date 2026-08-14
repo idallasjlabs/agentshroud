@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "docs/runbooks"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Bot_Skill_Config
 ---
 
 # Troubleshooting Runbook
@@ -15,4 +15,4 @@ tags:
 - [[Deployment and Troubleshooting Runbook]] - `extends` [INFERRED]
 - [[Known Benign Log Messages (gateway duplicate access logs, ClamAV freshclam startup, pong timeout)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

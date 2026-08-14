@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "docs/vault"
 location: "L1145"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/vault
 ---
 
 # Unknown bot_id with no config match falls through and returns all entries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_bot_id_filter_unknown_bot_returns_all()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

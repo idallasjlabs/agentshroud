@@ -12,6 +12,6 @@ tags:
 # TransportFactory
 
 ## Connections
-- [[.__init__()_15]] - `references` [EXTRACTED]
+- [[.__init__()_10]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

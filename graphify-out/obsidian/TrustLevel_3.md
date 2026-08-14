@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "docs/data"
+community: "skills/openclaw"
 location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/data
+  - community/skills/openclaw
 ---
 
 # TrustLevel
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Management Entities]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/data
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

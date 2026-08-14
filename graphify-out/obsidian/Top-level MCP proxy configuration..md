@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "PromptGuard Encoding Detection"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # Top-level MCP proxy configuration.
@@ -15,4 +15,4 @@ tags:
 - [[MCPProxyConfig]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection

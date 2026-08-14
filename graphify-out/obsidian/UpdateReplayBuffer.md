@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gateway Proxy Layer"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Proxy_Layer
 ---
 
 # UpdateReplayBuffer
 
 ## Connections
-- [[.__init__()_39]] - `method` [EXTRACTED]
+- [[.__init__()_38]] - `method` [EXTRACTED]
 - [[._conn_ok()]] - `method` [EXTRACTED]
 - [[._init_db()]] - `method` [EXTRACTED]
 - [[.cleanup_if_due()]] - `method` [EXTRACTED]
-- [[.close()_6]] - `method` [EXTRACTED]
+- [[.close()_7]] - `method` [EXTRACTED]
 - [[.mark_delivered()]] - `method` [EXTRACTED]
 - [[.pull_undelivered()]] - `method` [EXTRACTED]
 - [[.record_inbound()]] - `method` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[test_sqlite_failure_does_not_raise()]] - `calls` [EXTRACTED]
 - [[test_telegram_replay.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

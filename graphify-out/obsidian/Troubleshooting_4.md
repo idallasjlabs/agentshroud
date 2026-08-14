@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "shortcuts/README.md"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/shortcuts/READMEmd
 ---
 
 # Troubleshooting
@@ -17,4 +17,4 @@ tags:
 - [[Connection timeout]] - `contains` [EXTRACTED]
 - [[iCloud Services]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/shortcuts/READMEmd

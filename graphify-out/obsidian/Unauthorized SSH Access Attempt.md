@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "docs/operations"
+community: "Setup Docs"
 location: "L378"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Setup_Docs
 ---
 
 # Unauthorized SSH Access Attempt
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[P3 Medium Priority Incidents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

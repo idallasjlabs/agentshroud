@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "gateway/runtime"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/gateway/runtime
 ---
 
 # ToolResultPIIReport
@@ -18,4 +18,4 @@ tags:
 - [[Full scan result for a tool result or prompt.]] - `rationale_for` [EXTRACTED]
 - [[differential_pii_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime

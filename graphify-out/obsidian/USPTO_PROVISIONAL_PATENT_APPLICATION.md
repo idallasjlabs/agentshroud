@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+community: ".github/agents"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+  - community/github/agents
 ---
 
 # USPTO_PROVISIONAL_PATENT_APPLICATION.md
@@ -29,4 +29,4 @@ tags:
 - [[Trust-Differentiated Processing OWNERADMINOPERATORCOLLABORATORVIEWER role tiers with RBAC]] - `describes` [EXTRACTED]
 - [[USPTO_TRADEMARK_APPLICATION]] - `complements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+#graphify/document #graphify/EXTRACTED #community/github/agents

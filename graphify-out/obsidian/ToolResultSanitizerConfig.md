@@ -21,7 +21,7 @@ tags:
 - [[.test_realistic_web_scraping_result()]] - `calls` [EXTRACTED]
 - [[.test_warn_mode()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Configuration for tool result markdown sanitization.]] - `rationale_for` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]

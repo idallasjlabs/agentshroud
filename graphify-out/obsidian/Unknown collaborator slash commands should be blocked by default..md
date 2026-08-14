@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
-location: "L1544"
+community: "Architecture Docs"
+location: "L1613"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/Architecture_Docs
 ---
 
 # Unknown collaborator slash commands should be blocked by default.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_unapproved_collaborator_slash_command_is_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Architecture_Docs

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.svg"
 type: "concept"
-community: "docs/diagrams"
+community: "Bot Skill Config"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Bot_Skill_Config
 ---
 
 # Threat level? (NONE/LOW, MEDIUM, HIGH)
@@ -14,4 +14,4 @@ tags:
 - [[Approval queue (notify Isaiah via Telegram, wait up to 1 hour)]] - `calls` [EXTRACTED]
 - [[MCP Inspector (injection scan, PII scan, sensitive op scan)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/diagrams
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

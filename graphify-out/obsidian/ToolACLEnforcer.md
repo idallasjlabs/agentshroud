@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Progressive Trust Config"
+community: "File Sandbox"
 location: "L206"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Progressive_Trust_Config
+  - community/File_Sandbox
 ---
 
 # ToolACLEnforcer
@@ -16,7 +16,7 @@ tags:
 - [[._can_use_tool_impl()]] - `method` [EXTRACTED]
 - [[._get_group_tool_allowlist()]] - `method` [EXTRACTED]
 - [[._get_role()]] - `method` [EXTRACTED]
-- [[.can_use_tool()_1]] - `method` [EXTRACTED]
+- [[.can_use_tool()]] - `method` [EXTRACTED]
 - [[.can_use_tool_in_group_context()]] - `method` [EXTRACTED]
 - [[.check_tool_rate_limit()]] - `method` [EXTRACTED]
 - [[.enforcer()]] - `calls` [EXTRACTED]
@@ -74,7 +74,7 @@ tags:
 - [[TestViewerAccess]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `conceptually_related_to` [INFERRED]
 - [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustManager_4]] - `uses` [INFERRED]
 - [[enforcer()]] - `calls` [EXTRACTED]
 - [[enforcer()_3]] - `calls` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
@@ -85,4 +85,4 @@ tags:
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Progressive_Trust_Config
+#graphify/code #graphify/INFERRED #community/File_Sandbox

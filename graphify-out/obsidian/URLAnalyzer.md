@@ -12,7 +12,7 @@ tags:
 # URLAnalyzer
 
 ## Connections
-- [[.__init__()_40]] - `method` [EXTRACTED]
+- [[.__init__()_39]] - `method` [EXTRACTED]
 - [[._check_base64()]] - `method` [EXTRACTED]
 - [[._is_private_ip()]] - `method` [EXTRACTED]
 - [[._is_ssrf()]] - `method` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[.analyze()]] - `method` [EXTRACTED]
 - [[.analyze_and_pin()]] - `method` [EXTRACTED]
 - [[Analyze URLs for SSRF, data exfiltration, and suspicious patterns.]] - `rationale_for` [EXTRACTED]
-- [[Any_22]] - `uses` [INFERRED]
+- [[Any_23]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
 - [[TestBase64Heuristic]] - `uses` [INFERRED]

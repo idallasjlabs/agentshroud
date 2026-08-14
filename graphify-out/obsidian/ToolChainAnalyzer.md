@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Tool Chain Analyzer"
+community: "Gateway Test Suite"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain_Analyzer
+  - community/Gateway_Test_Suite
 ---
 
 # ToolChainAnalyzer
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_118]] - `method` [EXTRACTED]
 - [[._calculate_risk_score()]] - `method` [EXTRACTED]
 - [[._cleanup_old_sessions()_1]] - `method` [EXTRACTED]
@@ -36,7 +36,7 @@ tags:
 - [[.test_disabled_analyzer()]] - `calls` [EXTRACTED]
 - [[.test_tool_chain_analyzer_instantiates()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Main tool chain analysis engine.      Tracks sequences of tool calls and identif]] - `rationale_for` [EXTRACTED]
@@ -59,4 +59,4 @@ tags:
 - [[tool_chain_analyzer()]] - `calls` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

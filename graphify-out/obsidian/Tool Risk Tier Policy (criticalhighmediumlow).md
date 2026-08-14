@@ -1,12 +1,12 @@
 ---
 source_file: "examples/agentshroud-with-tool-risk.yaml"
 type: "concept"
-community: "examples/agentshroud-with-tool-risk.yaml"
+community: "skills/openclaw"
 location: "lines 15-79"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/examples/agentshroud-with-tool-riskyaml
+  - community/skills/openclaw
 ---
 
 # Tool Risk Tier Policy (critical/high/medium/low)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Config with Tool Risk Tiers (example)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/examples/agentshroud-with-tool-riskyaml
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

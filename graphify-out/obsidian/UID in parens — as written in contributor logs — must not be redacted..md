@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "README.md"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/READMEmd
 ---
 
 # UID in parens — as written in contributor logs — must not be redacted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_uid_inside_parens_preserved()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/READMEmd

@@ -1,9 +1,10 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
-type: "concept"
+type: "document"
 community: "Architecture Docs"
+location: "L168"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
   - community/Architecture_Docs
 ---
@@ -15,4 +16,4 @@ tags:
 - [[AgentShroud System Architecture Document (SAD)]] - `contains` [EXTRACTED]
 - [[Network Isolation Benefits]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

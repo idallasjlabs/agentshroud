@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "Collaborator Prompt Classifiers"
 location: "L201"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enhanced_Approval_Queue
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # ToolRiskConfig
 
 ## Connections
 - [[.test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
-- [[Any_2]] - `uses` [INFERRED]
+- [[Any]] - `uses` [INFERRED]
 - [[ApprovalQueue_1]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig]] - `uses` [INFERRED]
-- [[ApprovalQueueItem_1]] - `uses` [INFERRED]
-- [[ApprovalRequest_1]] - `uses` [INFERRED]
+- [[ApprovalQueueItem]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
@@ -35,7 +35,7 @@ tags:
 - [[Tool risk tier configuration]] - `rationale_for` [EXTRACTED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
-- [[WebSocket_1]] - `uses` [INFERRED]
+- [[WebSocket]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
 - [[_real_queue()]] - `calls` [EXTRACTED]
 - [[config.py]] - `contains` [EXTRACTED]
@@ -48,4 +48,4 @@ tags:
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 - [[tool_risk_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Classifiers

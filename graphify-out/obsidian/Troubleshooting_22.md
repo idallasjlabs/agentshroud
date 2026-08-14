@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Setup Docs"
+community: "scripts/promote-firmware.sh"
 location: "L333"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/scripts/promote-firmwaresh
 ---
 
 # Troubleshooting
@@ -17,4 +17,4 @@ tags:
 - [[Problem Approved device still can't connect]] - `contains` [EXTRACTED]
 - [[Problem Too many pending requests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/scripts/promote-firmwaresh

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/competitive-security-matrix.md"
 type: "concept"
-community: "Security Docs"
+community: "Bot Skill Config"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Unique Modules 12-26 (MCP proxy, web content scanner, DNS tunneling, etc. — no competitor has these)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[competitive-security-matrix]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Security_Docs
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

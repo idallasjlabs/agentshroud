@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "rationale"
-community: "Approval Queue Tests"
+community: "Forward Routing & Approval"
 location: "L431"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/Forward_Routing__Approval
 ---
 
 # Unit tests for SSHProxy.write_file() — verifies path/content travel as     DATA
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHProxyWriteFileTransport]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

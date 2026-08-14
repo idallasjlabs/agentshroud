@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Progressive Trust Config"
+community: "MCP Policy Engine"
 location: "L96"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Progressive_Trust_Config
+  - community/MCP_Policy_Engine
 ---
 
 # TrustManager
@@ -20,7 +20,7 @@ tags:
 - [[._promotion_allowed()]] - `method` [EXTRACTED]
 - [[._score_to_level()]] - `method` [EXTRACTED]
 - [[._update_score()]] - `method` [EXTRACTED]
-- [[.close()_9]] - `method` [EXTRACTED]
+- [[.close()_10]] - `method` [EXTRACTED]
 - [[.get_history()]] - `method` [EXTRACTED]
 - [[.get_trust()]] - `method` [EXTRACTED]
 - [[.is_action_allowed()]] - `method` [EXTRACTED]
@@ -45,6 +45,7 @@ tags:
 - [[.test_trust_update_performance()]] - `calls` [EXTRACTED]
 - [[.test_write_baseline_json()]] - `calls` [EXTRACTED]
 - [[.vouch_for_agent()]] - `method` [EXTRACTED]
+- [[A2APeerTestDouble]] - `uses` [INFERRED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[Cross-Bot Trust Ledger (Module 27)]] - `calls` [INFERRED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
@@ -54,6 +55,9 @@ tags:
 - [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[Request_7]] - `uses` [INFERRED]
+- [[Response]] - `uses` [INFERRED]
+- [[Response_2]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TestActionGating]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
@@ -152,13 +156,15 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[TrustManager_2]] - `uses` [INFERRED]
 - [[TrustManager_3]] - `uses` [INFERRED]
+- [[TrustManager_4]] - `uses` [INFERRED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_1]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[_make_tm()]] - `calls` [EXTRACTED]
 - [[_score_identity_authentication() (domain 13, FR1)]] - `references` [EXTRACTED]
@@ -173,6 +179,8 @@ tags:
 - [[run()_3]] - `calls` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[strict_manager()]] - `calls` [EXTRACTED]
+- [[test_a2a_integration.py]] - `imports` [EXTRACTED]
+- [[test_a2a_trust_scoring.py]] - `imports` [EXTRACTED]
 - [[test_agent_cve_registry.py — agent CVE advisory registry integrity tests]] - `conceptually_related_to` [AMBIGUOUS]
 - [[test_canary.py]] - `imports` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `references` [EXTRACTED]
@@ -188,9 +196,10 @@ tags:
 - [[test_security_regressions_v1_2.py]] - `imports` [EXTRACTED]
 - [[test_trust_manager.py]] - `imports` [EXTRACTED]
 - [[trust_manager()]] - `calls` [EXTRACTED]
-- [[trust_manager()_1]] - `calls` [EXTRACTED]
 - [[trust_manager()_2]] - `calls` [EXTRACTED]
 - [[trust_manager()_3]] - `calls` [EXTRACTED]
+- [[trust_manager()_4]] - `calls` [EXTRACTED]
+- [[trust_manager()_5]] - `calls` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Progressive_Trust_Config
+#graphify/code #graphify/INFERRED #community/MCP_Policy_Engine

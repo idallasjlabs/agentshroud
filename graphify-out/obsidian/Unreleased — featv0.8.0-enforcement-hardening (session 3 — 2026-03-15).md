@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "CHANGELOG.md"
+community: "Gateway Test Suite"
 location: "L564"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Gateway_Test_Suite
 ---
 
 # [Unreleased] — feat/v0.8.0-enforcement-hardening (session 3 — 2026-03-15)
@@ -20,4 +20,4 @@ tags:
 - [[Tests]] - `contains` [EXTRACTED]
 - [[Tranche Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
