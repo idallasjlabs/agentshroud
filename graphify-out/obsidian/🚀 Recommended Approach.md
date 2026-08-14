@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Setup Docs"
+community: "Bot Skill Config"
 location: "L278"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Bot_Skill_Config
 ---
 
 # 🚀 Recommended Approach
@@ -16,4 +16,4 @@ tags:
 - [[For Production OAuth2 + Google APIs]] - `contains` [EXTRACTED]
 - [[Google Services Setup (Calendar, Contacts, Keep)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "document"
-community: "docs/project"
+community: "ESP32 Firmware"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/ESP32_Firmware
 ---
 
 # 🟡 MEDIUM: Infrastructure & Deployment
@@ -17,4 +17,4 @@ tags:
 - [[9. Glibc TLS Incompatibility (Trillian)]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Telegram-Reported Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware

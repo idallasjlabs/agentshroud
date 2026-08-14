@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Gateway_Test_Suite
 ---
 
 # websocket.py
 
 ## Connections
-- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `contains` [EXTRACTED]
 - [[Severity_2]] - `imports` [EXTRACTED]
@@ -25,4 +24,4 @@ tags:
 - [[redeem_ws_token()]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

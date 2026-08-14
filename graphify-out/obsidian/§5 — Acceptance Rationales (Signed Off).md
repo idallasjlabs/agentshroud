@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "Planning Docs"
+community: "Security Docs"
 location: "L382"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Security_Docs
 ---
 
 # §5 — Acceptance Rationales (Signed Off)
@@ -16,4 +16,4 @@ tags:
 - [[RT-00 — Tool inventory disclosure]] - `contains` [EXTRACTED]
 - [[RT-MB4 — Hermes cron job injection via jobs.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

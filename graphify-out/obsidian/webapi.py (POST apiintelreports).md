@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/vault"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/vault
 ---
 
 # web/api.py (POST /api/intel/reports)
@@ -17,4 +17,4 @@ tags:
 - [[test_skills_manifest_sync.py]] - `references` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/vault

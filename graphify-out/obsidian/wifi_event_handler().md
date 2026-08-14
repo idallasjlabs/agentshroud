@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "ESP32 Firmware"
+community: "Gateway Test Suite"
 location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Gateway_Test_Suite
 ---
 
 # wifi_event_handler()
@@ -14,8 +14,7 @@ tags:
 ## Connections
 - [[app_main.c]] - `contains` [EXTRACTED]
 - [[esp_event_base_t]] - `references` [EXTRACTED]
-- [[esp_event_base_t_2]] - `references` [EXTRACTED]
 - [[ui_update()]] - `calls` [EXTRACTED]
 - [[vt_remote_log()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

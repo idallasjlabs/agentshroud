@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/browser-fetch.js"
 type: "code"
-community: "Custom Skills"
+community: "Gateway Test Suite"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Gateway_Test_Suite
 ---
 
 # { chromium }
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[browser-fetch.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

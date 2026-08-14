@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-check.sh"
 type: "code"
-community: "scripts/tailscale-check.sh"
+community: "Bot Skill Config"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/tailscale-checksh
+  - community/Bot_Skill_Config
 ---
 
 # warn()
@@ -15,4 +15,4 @@ tags:
 - [[tailscale-check.sh]] - `defines` [EXTRACTED]
 - [[tailscale-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/tailscale-checksh
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

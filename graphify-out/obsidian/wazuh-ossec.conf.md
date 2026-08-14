@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "docs/vault"
+community: "docs/papers"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/papers
 ---
 
 # wazuh-ossec.conf
@@ -21,4 +21,4 @@ tags:
 - [[What Wazuh Monitors in AgentShroud]] - `contains` [EXTRACTED]
 - [[wazuh-ossec]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/docs/papers

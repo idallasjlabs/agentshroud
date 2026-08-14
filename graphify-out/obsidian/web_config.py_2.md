@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "docs/vault"
+community: "src/interfaces"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/src/interfaces
 ---
 
 # web_config.py
@@ -21,4 +21,4 @@ tags:
 - [[WebProxyConfig Fields]] - `contains` [EXTRACTED]
 - [[web_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/src/interfaces

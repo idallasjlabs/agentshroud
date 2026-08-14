@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "Security Docs"
+community: "docs/vault"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/docs/vault
 ---
 
 # 🛡️ Protection Layers
@@ -17,4 +17,4 @@ tags:
 - [[Layer 2 Console Access Only (ACTIVE)]] - `contains` [EXTRACTED]
 - [[Layer 3 Audit Logging (ACTIVE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/vault

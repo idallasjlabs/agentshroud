@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "code"
-community: "docs/vault"
+community: "Planning Docs"
 location: "gateway/proxy/web_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Planning_Docs
 ---
 
 # web_proxy.py (Proxy Layer)
@@ -21,4 +21,4 @@ tags:
 - [[web_config.py (Proxy Layer)]] - `depends_on` [EXTRACTED]
 - [[web_content_scanner.py (Proxy Layer)]] - `depends_on` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

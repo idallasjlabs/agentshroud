@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r2.md"
 type: "document"
-community: "Planning Docs"
+community: "docs/operations"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/docs/operations
 ---
 
 # 🟢 INFO (nice to have)
@@ -19,4 +19,4 @@ tags:
 - [[I4 `AppState` class missing dynamically-set attributes]] - `contains` [EXTRACTED]
 - [[I5 Inline import on hot path in LLM proxy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/operations

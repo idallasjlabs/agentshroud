@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "docs/project"
+community: "Bot Skill Config"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Bot_Skill_Config
 ---
 
 # ⚠️ What's NOT Working
@@ -16,4 +16,4 @@ tags:
 - [[Critical Issues]] - `contains` [EXTRACTED]
 - [[iMessage Fix Required]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

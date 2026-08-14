@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/WEB_CONTROL_CENTER_SUMMARY.md"
 type: "document"
-community: "docs/project"
+community: "docs/vault"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/docs/vault
 ---
 
 # 🎯 Key Features Implemented
@@ -17,4 +17,4 @@ tags:
 - [[✅ Design Principles Met]] - `contains` [EXTRACTED]
 - [[✅ Technical Implementation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/docs/vault

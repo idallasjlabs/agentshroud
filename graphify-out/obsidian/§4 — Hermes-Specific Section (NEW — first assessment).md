@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "Planning Docs"
+community: "scripts/tailscale-serve.sh"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/scripts/tailscale-servesh
 ---
 
 # §4 — Hermes-Specific Section (NEW — first assessment)
@@ -20,4 +20,4 @@ tags:
 - [[4.6 Cross-bot session isolation (FINDING BT-H1 — FIXED IN THIS PR)]] - `contains` [EXTRACTED]
 - [[AgentShroud v1.2.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/scripts/tailscale-servesh

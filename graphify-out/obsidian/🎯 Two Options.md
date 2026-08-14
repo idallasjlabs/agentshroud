@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Setup Docs"
+community: "Gateway Test Suite"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # 🎯 Two Options
@@ -16,4 +16,4 @@ tags:
 - [[Option A Simple (App Password + CalDAV) - RECOMMENDED FOR NOW]] - `contains` [EXTRACTED]
 - [[Option B Full (OAuth2 + Google APIs) - Better for production]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

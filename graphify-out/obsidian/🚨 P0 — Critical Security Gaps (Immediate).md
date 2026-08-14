@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-final.md"
 type: "document"
-community: "Planning Docs"
+community: "Bot Skill Config"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Bot_Skill_Config
 ---
 
 # 🚨 **P0 — Critical Security Gaps (Immediate)**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Remaining Work — Prioritized by Value]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

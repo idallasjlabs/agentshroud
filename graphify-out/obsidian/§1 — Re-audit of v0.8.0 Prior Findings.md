@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "Planning Docs"
+community: "Docker Deploy Scripts"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Docker_Deploy_Scripts
 ---
 
 # §1 — Re-audit of v0.8.0 Prior Findings
@@ -16,4 +16,4 @@ tags:
 - [[Previously FIXED findings — verification]] - `contains` [EXTRACTED]
 - [[Previously OPEN findings — current status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts

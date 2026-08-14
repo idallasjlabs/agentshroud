@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "Planning Docs"
+community: "Architecture Docs"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Architecture_Docs
 ---
 
 # 🚀 Enhanced Deployment Options
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Deployment and Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

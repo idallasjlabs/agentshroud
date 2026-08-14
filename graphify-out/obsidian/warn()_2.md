@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "scripts/check-vendor-compat.sh"
+community: "Bot Skill Config"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/check-vendor-compatsh
+  - community/Bot_Skill_Config
 ---
 
 # warn()
@@ -16,4 +16,4 @@ tags:
 - [[check_hermes()]] - `calls` [EXTRACTED]
 - [[check_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/check-vendor-compatsh
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "docs/README.md"
+community: "Gateway Test Suite"
 location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/READMEmd
+  - community/Gateway_Test_Suite
 ---
 
 # 📋 Current Status
@@ -21,4 +21,4 @@ tags:
 - [[📋 Phase 5 Live Action Dashboard (Planned)]] - `contains` [EXTRACTED]
 - [[📋 Phase 6 Tailscale + Documentation (Planned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

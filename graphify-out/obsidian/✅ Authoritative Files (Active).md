@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Setup Docs"
+community: "docs/vault"
 location: "L200"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/docs/vault
 ---
 
 # ✅ Authoritative Files (Active)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Current Files Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/vault

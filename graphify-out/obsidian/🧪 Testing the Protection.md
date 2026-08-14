@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "Security Docs"
+community: "docs/vault"
 location: "L171"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/docs/vault
 ---
 
 # 🧪 Testing the Protection
@@ -17,4 +17,4 @@ tags:
 - [[Test 2 Via Telegram (Should Be Blocked)]] - `contains` [EXTRACTED]
 - [[Test 3 Check Audit Log]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/vault

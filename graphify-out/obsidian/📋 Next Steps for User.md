@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "docs/project"
+community: "Bot Skill Config"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Bot_Skill_Config
 ---
 
 # 📋 Next Steps for User
@@ -16,4 +16,4 @@ tags:
 - [[Immediate (Required for Bot to Work)]] - `contains` [EXTRACTED]
 - [[When Ready to Continue]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

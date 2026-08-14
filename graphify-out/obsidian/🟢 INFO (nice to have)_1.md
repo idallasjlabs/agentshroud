@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
 type: "document"
-community: "Planning Docs"
+community: "skills/openclaw"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/skills/openclaw
 ---
 
 # 🟢 INFO (nice to have)
@@ -18,4 +18,4 @@ tags:
 - [[I3 Owner ID still hardcoded (improved)]] - `contains` [EXTRACTED]
 - [[I4 Copyright headers added consistently]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

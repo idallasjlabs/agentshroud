@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Security Docs"
+community: "Bot Skill Config"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Skill_Config
 ---
 
 # ✅ Verification Tests
@@ -18,4 +18,4 @@ tags:
 - [[Test 3 Console Access (Should Display)]] - `contains` [EXTRACTED]
 - [[Test 4 Internal Use (Should Work)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
