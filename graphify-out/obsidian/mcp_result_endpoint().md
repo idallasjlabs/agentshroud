@@ -1,23 +1,24 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Auth & Exception Types"
-location: "L785"
+community: "PII Sanitizer Pipeline"
+location: "L792"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # mcp_result_endpoint()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_5]] - `references` [EXTRACTED]
 - [[MCP tool result outbound audit endpoint.      Receives a tool result from the bo]] - `rationale_for` [EXTRACTED]
 - [[MCPResultRequest]] - `references` [EXTRACTED]
 - [[MCPToolResult]] - `calls` [EXTRACTED]
-- [[Request_3]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[_resolve_effective_agent_id()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

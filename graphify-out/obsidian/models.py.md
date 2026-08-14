@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "PII Sanitizer Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # models.py
@@ -14,19 +14,19 @@ tags:
 ## Connections
 - [[AgentTarget]] - `contains` [EXTRACTED]
 - [[ApprovalDecision]] - `contains` [EXTRACTED]
-- [[ApprovalQueueItem]] - `contains` [EXTRACTED]
-- [[ApprovalRequest]] - `contains` [EXTRACTED]
+- [[ApprovalQueueItem_3]] - `contains` [EXTRACTED]
+- [[ApprovalRequest_3]] - `contains` [EXTRACTED]
 - [[EmailSendRequest]] - `contains` [EXTRACTED]
 - [[EmailSendResponse]] - `contains` [EXTRACTED]
 - [[ForwardRequest]] - `contains` [EXTRACTED]
 - [[ForwardResponse]] - `contains` [EXTRACTED]
-- [[LedgerEntry]] - `contains` [EXTRACTED]
-- [[LedgerQueryResponse]] - `contains` [EXTRACTED]
+- [[LedgerEntry_1]] - `contains` [EXTRACTED]
+- [[LedgerQueryResponse_1]] - `contains` [EXTRACTED]
 - [[RedactionDetail]] - `contains` [EXTRACTED]
 - [[RedactionResult]] - `contains` [EXTRACTED]
-- [[SSHExecRequest]] - `contains` [EXTRACTED]
+- [[SSHExecRequest_1]] - `contains` [EXTRACTED]
 - [[SSHExecResponse]] - `contains` [EXTRACTED]
-- [[SSHWriteFileRequest]] - `contains` [EXTRACTED]
+- [[SSHWriteFileRequest_1]] - `contains` [EXTRACTED]
 - [[SSHWriteFileResponse]] - `contains` [EXTRACTED]
 - [[StatusResponse]] - `contains` [EXTRACTED]
 - [[approval.py]] - `imports_from` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[store.py]] - `imports_from` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

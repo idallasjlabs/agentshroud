@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/data/openclaw-ghsa-snapshot.json"
 type: "document"
-community: "scripts/sync-cve-registry.py"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Gateway_Test_Suite
 ---
 
 # openclaw-ghsa-snapshot.json
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[sync-cve-registry.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

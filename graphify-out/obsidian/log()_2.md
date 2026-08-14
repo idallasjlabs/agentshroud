@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/security-report.sh"
+source_file: "docker/scripts/security-report-retention.sh"
 type: "code"
-community: "Docker Deploy Scripts"
-location: "L18"
+community: "Bot Skill Config"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Bot_Skill_Config
 ---
 
 # log()
 
 ## Connections
-- [[security-report.sh]] - `defines` [EXTRACTED]
-- [[security-report.sh script]] - `calls` [EXTRACTED]
+- [[security-report-retention.sh]] - `defines` [EXTRACTED]
+- [[security-report-retention.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

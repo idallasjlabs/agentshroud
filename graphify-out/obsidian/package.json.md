@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/package.json"
 type: "code"
-community: "browser-extension/package.json"
+community: "docs/compliance"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/packagejson
+  - community/docs/compliance
 ---
 
 # package.json
@@ -19,6 +19,6 @@ tags:
 - [[name_1]] - `contains` [EXTRACTED]
 - [[private]] - `contains` [EXTRACTED]
 - [[scripts]] - `contains` [EXTRACTED]
-- [[version_3]] - `contains` [EXTRACTED]
+- [[version_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson
+#graphify/code #graphify/EXTRACTED #community/docs/compliance

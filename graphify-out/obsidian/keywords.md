@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/package.json"
 type: "code"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # keywords
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[package.json_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

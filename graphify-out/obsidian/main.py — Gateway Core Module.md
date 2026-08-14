@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "docs/vault"
+community: "Security Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Docs
 ---
 
 # main.py — Gateway Core Module
@@ -24,4 +24,4 @@ tags:
 - [[ledger.py — Gateway Core Module]] - `used_by` [EXTRACTED]
 - [[main.py — FastAPI Entrypoint (5-step POST forward pipeline, 22 lifespan steps)]] - `documents` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

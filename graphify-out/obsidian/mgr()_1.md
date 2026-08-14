@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Enforce-Mode Auto-Revert"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # mgr()
@@ -15,4 +15,4 @@ tags:
 - [[MCPPermissionManager]] - `calls` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/code #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert

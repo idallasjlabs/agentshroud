@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "concept"
-community: "docs/vault"
+community: "Security Docs"
 location: "gateway/ingest_api/main.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Docs
 ---
 
 # main.py — FastAPI Entrypoint (5-step POST /forward pipeline, 22 lifespan steps)
@@ -15,4 +15,4 @@ tags:
 - [[Startup Sequence — AgentShroud]] - `references` [EXTRACTED]
 - [[main.py — Gateway Core Module]] - `documents` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Security_Docs

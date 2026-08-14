@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/canary-deploy.sh"
+source_file: "docker/scripts/security-scheduler.sh"
 type: "code"
-community: "scripts/canary-deploy.sh"
-location: "L47"
+community: "Bot Skill Config"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/canary-deploysh
+  - community/Bot_Skill_Config
 ---
 
 # log()
 
 ## Connections
-- [[canary-deploy.sh]] - `defines` [EXTRACTED]
-- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
+- [[security-scheduler.sh]] - `defines` [EXTRACTED]
+- [[security-scheduler.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/canary-deploysh
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

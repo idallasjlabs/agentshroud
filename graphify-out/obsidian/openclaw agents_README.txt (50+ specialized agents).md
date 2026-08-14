@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/openclaw/agents/_README.txt"
 type: "document"
-community: "Bot Skill Config"
+community: "Community 1750"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Community_1750
 ---
 
 # openclaw agents/_README.txt (50+ specialized agents)
 
-## Connections
-- [[openclaw manifest.json (skill file hash manifest)]] - `references` [EXTRACTED]
-
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Community_1750

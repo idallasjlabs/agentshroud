@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Enhanced Approval Queue"
 location: "L371"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Enhanced_Approval_Queue
 ---
 
 # persist_approved_collaborator()
@@ -20,4 +20,4 @@ tags:
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue

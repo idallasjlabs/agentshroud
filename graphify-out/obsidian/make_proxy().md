@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Architecture Docs"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Architecture_Docs
 ---
 
 # make_proxy()
@@ -35,4 +35,4 @@ tags:
 - [[test_proxy_normal_200_passthrough_untouched()]] - `calls` [EXTRACTED]
 - [[test_proxy_post_retry_429_now_failovers()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Architecture_Docs

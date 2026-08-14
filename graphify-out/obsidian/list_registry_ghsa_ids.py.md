@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/list_registry_ghsa_ids.py"
 type: "code"
-community: "scripts/generate-cve-page.py"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/generate-cve-pagepy
+  - community/Gateway_Test_Suite
 ---
 
 # list_registry_ghsa_ids.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[agent_cve_registry.py]] - `shares_data_with` [EXTRACTED]
 - [[gatewaysecurityagent_cve_registry.py (known CVE registry, referenced)]] - `imports_from` [EXTRACTED]
-- [[main()_16]] - `contains` [EXTRACTED]
+- [[main()_18]] - `contains` [EXTRACTED]
 - [[test_list_registry_ghsa_ids.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/generate-cve-pagepy
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

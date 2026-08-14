@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_gemini_openai_translator.py"
 type: "rationale"
 community: "Gateway Test Suite"
-location: "L307"
+location: "L305"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

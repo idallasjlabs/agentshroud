@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Auth & Exception Types"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Auth__Exception_Types
 ---
 
 # oauth_security.py
@@ -21,4 +21,4 @@ tags:
 - [[test_oauth_security.py]] - `references` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

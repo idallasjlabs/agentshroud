@@ -1,17 +1,17 @@
 ---
 source_file: "browser-extension/manifest.json"
 type: "code"
-community: "browser-extension/manifest.json"
+community: "Bot Skill Config"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/manifestjson
+  - community/Bot_Skill_Config
 ---
 
 # name
 
 ## Connections
-- [[manifest.json_2]] - `contains` [EXTRACTED]
+- [[manifest.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/manifestjson
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

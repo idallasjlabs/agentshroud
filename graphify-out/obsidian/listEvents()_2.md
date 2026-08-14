@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/icloud/scripts/calendar.js"
 type: "code"
-community: "Custom Skills"
+community: "gateway/tools"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/gateway/tools
 ---
 
 # listEvents()
@@ -16,4 +16,4 @@ tags:
 - [[makeRequest()_2]] - `calls` [EXTRACTED]
 - [[parseCalendarData()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/gateway/tools

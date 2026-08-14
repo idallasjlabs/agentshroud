@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "code"
-community: "docs/vault"
+community: "docs/api"
 location: "gateway/proxy/mcp_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/api
 ---
 
 # mcp_proxy.py — MCPProxy
@@ -18,4 +18,4 @@ tags:
 - [[`SecurityPipeline`]] - `references` [EXTRACTED]
 - [[mcp-proxy-wrapper.js — MCP Fail-Closed Stdio Proxy]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/docs/api

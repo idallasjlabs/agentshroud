@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Collaborator Response Templates"
+community: "Gateway Test Suite"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Gateway_Test_Suite
 ---
 
 # persist_group_delete()
@@ -19,4 +19,4 @@ tags:
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

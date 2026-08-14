@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "docs/USPTO_TRADEMARK_APPLICATION.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/docs/USPTO_TRADEMARK_APPLICATIONmd
 ---
 
 # oracle Skill
@@ -14,4 +14,4 @@ tags:
 - [[OpenClaw Skill Ecosystem]] - `part_of` [EXTRACTED]
 - [[oracle Browser Engine (GPT-5.2 Pro)]] - `uses` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/docs/USPTO_TRADEMARK_APPLICATIONmd

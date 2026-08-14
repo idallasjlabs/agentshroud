@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[._failover_request()]] - `calls` [EXTRACTED]
-- [[LLMProxy._failover_request()]] - `calls` [EXTRACTED]
 - [[Translate an Ollama OpenAI-compat response to Anthropic Messages API format.]] - `rationale_for` [EXTRACTED]
 - [[_random_msg_id()_1]] - `calls` [EXTRACTED]
 - [[anthropic_openai_translator.py]] - `contains` [EXTRACTED]

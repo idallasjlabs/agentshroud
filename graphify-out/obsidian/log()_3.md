@@ -1,23 +1,18 @@
 ---
-source_file: "docker/scripts/security-scan.sh"
+source_file: "docker/scripts/security-report.sh"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Bot Skill Config"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Bot_Skill_Config
 ---
 
 # log()
 
 ## Connections
-- [[alert_if_critical()]] - `calls` [EXTRACTED]
-- [[run_clamav()]] - `calls` [EXTRACTED]
-- [[run_oscap()]] - `calls` [EXTRACTED]
-- [[run_sbom()]] - `calls` [EXTRACTED]
-- [[run_trivy()]] - `calls` [EXTRACTED]
-- [[security-scan.sh]] - `defines` [EXTRACTED]
-- [[security-scan.sh script]] - `calls` [EXTRACTED]
+- [[security-report.sh]] - `defines` [EXTRACTED]
+- [[security-report.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

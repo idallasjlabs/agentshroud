@@ -1,19 +1,18 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
 type: "code"
-community: "src/interfaces"
-location: "L427"
+community: "Gateway Proxy Layer"
+location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/src/interfaces
+  - community/Gateway_Proxy_Layer
 ---
 
 # main()
 
 ## Connections
-- [[.run()_6]] - `calls` [EXTRACTED]
-- [[ControlCenter]] - `calls` [EXTRACTED]
-- [[text_control_center.py]] - `contains` [EXTRACTED]
+- [[package_skill()]] - `calls` [EXTRACTED]
+- [[package_skill.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/src/interfaces
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

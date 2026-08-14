@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "scripts/sync-cve-registry.py"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/scripts/sync-cve-registrypy
 ---
 
 # load_config()
@@ -32,9 +32,8 @@ tags:
 - [[Load and validate configuration from agentshroud.yaml      Search order     1.]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig]] - `calls` [EXTRACTED]
 - [[Path_1]] - `references` [EXTRACTED]
-- [[RouterConfig_1]] - `calls` [EXTRACTED]
+- [[RouterConfig]] - `calls` [EXTRACTED]
 - [[SSHConfig]] - `calls` [EXTRACTED]
-- [[SSHConfig_4]] - `calls` [INFERRED]
 - [[SecurityConfig_2]] - `calls` [EXTRACTED]
 - [[TeamsConfig]] - `calls` [EXTRACTED]
 - [[ToolRiskConfig_1]] - `calls` [EXTRACTED]
@@ -60,11 +59,11 @@ tags:
 - [[resolve_config_path()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[services.py]] - `imports` [EXTRACTED]
-- [[test_config.py]] - `implements` [EXTRACTED]
+- [[test_config.py]] - `imports` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `imports` [EXTRACTED]
 - [[test_mcp_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `imports` [EXTRACTED]
 - [[upgrade_agentshroud()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

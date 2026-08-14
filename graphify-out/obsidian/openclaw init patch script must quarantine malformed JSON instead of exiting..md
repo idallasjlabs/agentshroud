@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Community 1507"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Community_1507
 ---
 
 # openclaw init patch script must quarantine malformed JSON instead of exiting.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_openclaw_patch_script_recovers_corrupt_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Community_1507

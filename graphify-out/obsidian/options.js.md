@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/options.js"
 type: "code"
-community: "browser-extension/options.js"
+community: "Setup Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/optionsjs
+  - community/Setup_Docs
 ---
 
 # options.js
@@ -18,4 +18,4 @@ tags:
 - [[tokenEl]] - `contains` [EXTRACTED]
 - [[urlEl]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/optionsjs
+#graphify/code #graphify/EXTRACTED #community/Setup_Docs

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Setup Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Docs
 ---
 
 # mcpm-doctor Skill (referenced, sibling dir)
@@ -15,4 +15,4 @@ tags:
 - [[MCP Auth Reset Skill]] - `references` [EXTRACTED]
 - [[MCP Tools Usage Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

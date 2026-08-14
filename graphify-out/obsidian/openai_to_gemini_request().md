@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[.proxy_messages()]] - `calls` [EXTRACTED]
-- [[LLMProxy.proxy_messages()]] - `calls` [EXTRACTED]
 - [[Translate an OpenAI chatcompletions request body to Gemini's     generateConten]] - `rationale_for` [EXTRACTED]
 - [[_openai_content_to_parts()]] - `calls` [EXTRACTED]
 - [[gemini_openai_translator.py]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/op-wrapper.sh"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Community 1487"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Community_1487
 ---
 
 # op-wrapper.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[op-wrapper.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Community_1487

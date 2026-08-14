@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "PII Sanitizer Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # main.py
@@ -15,8 +15,8 @@ tags:
 - [[Action_1]] - `imports` [EXTRACTED]
 - [[ApprovalDecision]] - `imports` [EXTRACTED]
 - [[ApprovalMode]] - `imports` [EXTRACTED]
-- [[ApprovalQueueItem]] - `imports` [EXTRACTED]
-- [[ApprovalRequest]] - `imports` [EXTRACTED]
+- [[ApprovalQueueItem_3]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
 - [[AuditExportConfig_1]] - `imports` [EXTRACTED]
 - [[AuditExporter]] - `imports` [EXTRACTED]
 - [[CollaboratorGreeter]] - `imports` [EXTRACTED]
@@ -29,7 +29,6 @@ tags:
 - [[EmailSendResponse]] - `imports` [EXTRACTED]
 - [[EnvironmentGuard]] - `imports` [EXTRACTED]
 - [[EventBus]] - `imports` [EXTRACTED]
-- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[FileSandbox]] - `imports` [EXTRACTED]
 - [[FileSandboxConfig]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
@@ -39,8 +38,8 @@ tags:
 - [[GitGuard]] - `imports` [EXTRACTED]
 - [[HTTPConnectProxy]] - `imports` [EXTRACTED]
 - [[KillSwitchMonitor]] - `imports` [EXTRACTED]
-- [[LedgerEntry]] - `imports` [EXTRACTED]
-- [[LedgerQueryResponse]] - `imports` [EXTRACTED]
+- [[LedgerEntry_1]] - `imports` [EXTRACTED]
+- [[LedgerQueryResponse_1]] - `imports` [EXTRACTED]
 - [[LogSanitizer_1]] - `imports` [EXTRACTED]
 - [[MCPProxy]] - `imports` [EXTRACTED]
 - [[MCPProxyConfig]] - `imports` [EXTRACTED]
@@ -59,10 +58,10 @@ tags:
 - [[ResourceGuard]] - `imports` [EXTRACTED]
 - [[ResourceLimits]] - `imports` [EXTRACTED]
 - [[Role_1]] - `imports` [EXTRACTED]
-- [[SSHExecRequest]] - `imports` [EXTRACTED]
+- [[SSHExecRequest_1]] - `imports` [EXTRACTED]
 - [[SSHExecResponse]] - `imports` [EXTRACTED]
 - [[SSHProxy]] - `imports` [EXTRACTED]
-- [[SSHWriteFileRequest]] - `imports` [EXTRACTED]
+- [[SSHWriteFileRequest_1]] - `imports` [EXTRACTED]
 - [[SSHWriteFileResponse]] - `imports` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[Session]] - `imports` [EXTRACTED]
@@ -79,6 +78,7 @@ tags:
 - [[_build_activity_entries_from_contributor_logs()]] - `imports` [EXTRACTED]
 - [[_build_activity_summary_from_contributor_logs()]] - `imports` [EXTRACTED]
 - [[_build_egress_live_snapshot()]] - `imports` [EXTRACTED]
+- [[_build_telegram_token_registry()]] - `contains` [EXTRACTED]
 - [[_is_imessage_recipient_allowed()]] - `contains` [EXTRACTED]
 - [[_is_op_reference_allowed()]] - `contains` [EXTRACTED]
 - [[_load_contributor_logs()]] - `imports` [EXTRACTED]
@@ -91,7 +91,7 @@ tags:
 - [[api.py]] - `imports_from` [EXTRACTED]
 - [[approval.py]] - `imports_from` [EXTRACTED]
 - [[auth.py]] - `imports_from` [EXTRACTED]
-- [[auth_dep()_1]] - `contains` [EXTRACTED]
+- [[auth_dep()]] - `contains` [EXTRACTED]
 - [[build_correlation_summary()]] - `imports` [EXTRACTED]
 - [[check_monitor_mode_warnings()]] - `imports` [EXTRACTED]
 - [[collaborator_greeter.py]] - `imports_from` [EXTRACTED]
@@ -210,8 +210,6 @@ tags:
 - [[test_alert_telegram_relay.py]] - `imports_from` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `imports_from` [EXTRACTED]
 - [[test_main_endpoints.py]] - `references` [EXTRACTED]
-- [[test_mcp_result_endpoint.py]] - `references` [EXTRACTED]
-- [[test_op_proxy.py]] - `references` [EXTRACTED]
 - [[test_report_store.py]] - `imports_from` [EXTRACTED]
 - [[trust_manager.py]] - `imports_from` [EXTRACTED]
 - [[verify_killswitch()]] - `contains` [EXTRACTED]
@@ -221,4 +219,4 @@ tags:
 - [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

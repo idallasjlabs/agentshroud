@@ -1,25 +1,25 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Custom Skills"
-location: "L431"
+community: "Gateway Test Suite"
+location: "L886"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Gateway_Test_Suite
 ---
 
 # main()
 
 ## Connections
-- [[._take_screenshot()_2]] - `calls` [EXTRACTED]
-- [[.click()_2]] - `calls` [EXTRACTED]
-- [[.close()_18]] - `calls` [EXTRACTED]
-- [[.extract()_2]] - `calls` [EXTRACTED]
-- [[.fill_field()_2]] - `calls` [EXTRACTED]
-- [[.navigate()_2]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser_2]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_2]] - `calls` [EXTRACTED]
-- [[browse.py_2]] - `contains` [EXTRACTED]
+- [[Path_47]] - `calls` [EXTRACTED]
+- [[_print_summary()]] - `calls` [EXTRACTED]
+- [[_process_nvd_results()]] - `calls` [EXTRACTED]
+- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
+- [[append_to_hermes_registry()]] - `calls` [EXTRACTED]
+- [[append_to_registry()]] - `calls` [EXTRACTED]
+- [[fetch_nvd_cves()]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
+- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

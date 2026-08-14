@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "branding/colors"
+community: "branding/typography"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/colors
+  - community/branding/typography
 ---
 
 # palette.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Color Palette]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/colors
+#graphify/document #graphify/EXTRACTED #community/branding/typography

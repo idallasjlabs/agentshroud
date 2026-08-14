@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "gateway/tools"
+community: "skills/openclaw"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/tools
+  - community/skills/openclaw
 ---
 
 # multi_host_test.py
@@ -28,4 +28,4 @@ tags:
 - [[tail()_1]] - `contains` [EXTRACTED]
 - [[test_multi_host_test.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/tools
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

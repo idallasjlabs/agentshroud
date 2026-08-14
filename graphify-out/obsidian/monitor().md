@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Security Module Middleware"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Security_Module_Middleware
 ---
 
 # monitor()
@@ -15,4 +15,4 @@ tags:
 - [[EgressMonitor]] - `calls` [EXTRACTED]
 - [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Security_Module_Middleware

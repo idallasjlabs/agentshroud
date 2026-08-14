@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/nano-pdf/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "docs/USPTO_TRADEMARK_APPLICATION.md"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/docs/USPTO_TRADEMARK_APPLICATIONmd
 ---
 
 # nano-pdf
@@ -16,4 +16,4 @@ tags:
 - [[Quick start_1]] - `contains` [EXTRACTED]
 - [[SKILL_153]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/docs/USPTO_TRADEMARK_APPLICATIONmd

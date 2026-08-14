@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "code"
-community: "docs/vault"
+community: "docs/api"
 location: "docker/scripts/mcp-proxy-wrapper.js"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/api
 ---
 
 # mcp-proxy-wrapper.js — MCP Fail-Closed Stdio Proxy
@@ -16,4 +16,4 @@ tags:
 - [[apply-patches.js — OpenClaw Config Idempotent Patcher]] - `references` [INFERRED]
 - [[mcp_proxy.py — MCPProxy]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/docs/api

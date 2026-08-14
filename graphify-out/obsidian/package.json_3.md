@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/package.json"
 type: "code"
-community: "Custom Skills"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Gateway_Test_Suite
 ---
 
 # package.json
@@ -21,4 +21,4 @@ tags:
 - [[scripts_3]] - `contains` [EXTRACTED]
 - [[version_6]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

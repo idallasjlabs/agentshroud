@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Bot Skill Config"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Bot_Skill_Config
 ---
 
 # oracle — best use
@@ -23,4 +23,4 @@ tags:
 - [[Sessions + slugs]] - `contains` [EXTRACTED]
 - [[“Exhaustive prompt” restoration pattern]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

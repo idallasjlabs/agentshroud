@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[._failover_request()]] - `calls` [EXTRACTED]
 - [[Flatten an OpenAI message's content (string or content-block list) to     Gemini]] - `rationale_for` [EXTRACTED]
-- [[LLMProxy._failover_request()]] - `calls` [EXTRACTED]
 - [[Translate an Ollama OpenAI-compat response to Gemini candidates format.      The]] - `rationale_for` [EXTRACTED]
 - [[gemini_openai_translator.py]] - `contains` [EXTRACTED]
 - [[llm_proxy.py]] - `imports` [EXTRACTED]

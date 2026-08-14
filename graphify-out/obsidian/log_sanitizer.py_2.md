@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "docs/vault"
+community: "Planning Docs"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Planning_Docs
 ---
 
 # log_sanitizer.py
@@ -27,4 +27,4 @@ tags:
 - [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
 - [[session_security.py_2]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

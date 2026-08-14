@@ -1,17 +1,18 @@
 ---
-source_file: "scripts/list_registry_ghsa_ids.py"
+source_file: "scripts/gemini-review.py"
 type: "code"
-community: "scripts/generate-cve-page.py"
-location: "L32"
+community: "Architecture Docs"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/generate-cve-pagepy
+  - community/Architecture_Docs
 ---
 
 # main()
 
 ## Connections
-- [[list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
+- [[call_gemini()]] - `calls` [EXTRACTED]
+- [[gemini-review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/generate-cve-pagepy
+#graphify/code #graphify/EXTRACTED #community/Architecture_Docs

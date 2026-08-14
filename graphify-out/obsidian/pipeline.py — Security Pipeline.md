@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Proxy Layer"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Proxy_Layer
 ---
 
 # pipeline.py — Security Pipeline
@@ -21,4 +21,4 @@ tags:
 - [[Related_19]] - `contains` [EXTRACTED]
 - [[pipeline.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Proxy_Layer

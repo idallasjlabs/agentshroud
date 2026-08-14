@@ -1,20 +1,18 @@
 ---
-source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
+source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
 type: "code"
-community: "skills/openclaw"
-location: "L320"
+community: "Planning Docs"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Planning_Docs
 ---
 
 # main()
 
 ## Connections
-- [[init_skill()]] - `calls` [EXTRACTED]
-- [[init_skill.py]] - `contains` [EXTRACTED]
-- [[normalize_skill_name()]] - `calls` [EXTRACTED]
-- [[parse_resources()]] - `calls` [EXTRACTED]
+- [[generate_image.py]] - `contains` [EXTRACTED]
+- [[get_api_key()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skills/openclaw
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

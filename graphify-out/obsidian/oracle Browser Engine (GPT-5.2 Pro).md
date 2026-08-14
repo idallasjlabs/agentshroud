@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/oracle/SKILL.md"
 type: "concept"
-community: "skills/openclaw"
+community: "docs/USPTO_TRADEMARK_APPLICATION.md"
 location: "line 30"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/docs/USPTO_TRADEMARK_APPLICATIONmd
 ---
 
 # oracle Browser Engine (GPT-5.2 Pro)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[oracle Skill]] - `uses` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/skills/openclaw
+#graphify/concept #graphify/EXTRACTED #community/docs/USPTO_TRADEMARK_APPLICATIONmd

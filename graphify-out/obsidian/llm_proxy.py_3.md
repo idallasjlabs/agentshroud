@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "concept"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "gateway/proxy/llm_proxy.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # llm_proxy.py
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[httpx_1]] - `used_by` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

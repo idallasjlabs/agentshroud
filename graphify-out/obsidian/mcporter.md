@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/mcporter/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "docs/USPTO_TRADEMARK_APPLICATION.md"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/docs/USPTO_TRADEMARK_APPLICATIONmd
 ---
 
 # mcporter
@@ -16,4 +16,4 @@ tags:
 - [[OpenClaw Skill Ecosystem]] - `part_of` [EXTRACTED]
 - [[SKILL_150]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/docs/USPTO_TRADEMARK_APPLICATIONmd

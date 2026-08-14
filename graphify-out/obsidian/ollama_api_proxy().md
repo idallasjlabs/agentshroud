@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
-location: "L4473"
+community: "PII Sanitizer Pipeline"
+location: "L4480"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # ollama_api_proxy()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[JSONResponse]] - `calls` [EXTRACTED]
 - [[Proxy native Ollama API calls through security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[Request_3]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

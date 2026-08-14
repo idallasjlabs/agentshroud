@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/web/templates/management.html"
 type: "code"
-community: "Web Control Center"
+community: "docs/diagrams"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Web_Control_Center
+  - community/docs/diagrams
 ---
 
 # management.html — Management Dashboard UI
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dashboard.html — Web Control Center Dashboard]] - `part_of` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Web_Control_Center
+#graphify/code #graphify/INFERRED #community/docs/diagrams

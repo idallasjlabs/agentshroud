@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/switch_model.sh"
 type: "code"
-community: "scripts/switch_model.sh"
+community: "AGENTS.md"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/switch_modelsh
+  - community/AGENTSmd
 ---
 
 # normalize_cloud_ref()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[switch_model.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/switch_modelsh
+#graphify/code #graphify/EXTRACTED #community/AGENTSmd

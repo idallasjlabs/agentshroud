@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "Slack API Proxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Slack_API_Proxy
 ---
 
 # lifespan.py
@@ -42,7 +42,7 @@ tags:
 - [[EnvelopeSigner]] - `imports` [EXTRACTED]
 - [[EventBus]] - `imports` [EXTRACTED]
 - [[FalcoAlertWatcher]] - `imports` [EXTRACTED]
-- [[FastAPI_2]] - `imports_from` [EXTRACTED]
+- [[FastAPI_1]] - `imports_from` [EXTRACTED]
 - [[GroupRegistry]] - `imports` [EXTRACTED]
 - [[HTTPConnectProxy]] - `imports` [EXTRACTED]
 - [[HeuristicClassifier]] - `imports` [EXTRACTED]
@@ -142,4 +142,4 @@ tags:
 - [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

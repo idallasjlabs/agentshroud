@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "Kill Switch Config"
+community: "Security Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Kill_Switch_Config
+  - community/Security_Docs
 ---
 
 # killswitch_config.py
@@ -15,4 +15,4 @@ tags:
 - [[KillSwitchConfig]] - `contains` [EXTRACTED]
 - [[killswitch_monitor.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Config
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

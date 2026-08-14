@@ -1,18 +1,20 @@
 ---
-source_file: "scripts/gemini-review.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "scripts/gemini-review.py"
-location: "L83"
+community: "Bot Skill Config"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/gemini-reviewpy
+  - community/Bot_Skill_Config
 ---
 
 # main()
 
 ## Connections
-- [[call_gemini()]] - `calls` [EXTRACTED]
-- [[gemini-review.py]] - `contains` [EXTRACTED]
+- [[Path_43]] - `calls` [EXTRACTED]
+- [[_parse_since()_1]] - `calls` [EXTRACTED]
+- [[export-email-reports.py]] - `contains` [EXTRACTED]
+- [[export_bot()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/gemini-reviewpy
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

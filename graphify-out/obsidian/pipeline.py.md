@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Security Pipeline Core"
+community: "SOC RBAC & Auth"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Pipeline_Core
+  - community/SOC_RBAC__Auth
 ---
 
 # pipeline.py
@@ -28,4 +28,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Pipeline_Core
+#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth

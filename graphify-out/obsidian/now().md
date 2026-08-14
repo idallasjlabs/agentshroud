@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mfa_guard.py"
+source_file: "gateway/tests/test_audit_archive.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L45"
+community: "Architecture Docs"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Architecture_Docs
 ---
 
 # now()
 
 ## Connections
-- [[test_mfa_guard.py]] - `contains` [EXTRACTED]
+- [[test_audit_archive.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Architecture_Docs

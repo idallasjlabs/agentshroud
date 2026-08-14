@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
 community: "Gateway Test Suite"
-location: "L143"
+location: "L145"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

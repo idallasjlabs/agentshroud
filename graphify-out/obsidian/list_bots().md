@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Bot CVE Scorecard"
+community: "Voice Gateway Tests"
 location: "L1862"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_CVE_Scorecard
+  - community/Voice_Gateway_Tests
 ---
 
 # list_bots()
@@ -23,9 +23,8 @@ tags:
 - [[.test_single_bot_returns_list_of_one()]] - `calls` [EXTRACTED]
 - [[Return the list of registered bots. Falls back to backward-compat OpenClaw defau]] - `rationale_for` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[SCLCaller_3]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_CVE_Scorecard
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Tests

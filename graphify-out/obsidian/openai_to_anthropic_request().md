@@ -13,7 +13,6 @@ tags:
 
 ## Connections
 - [[.proxy_messages()]] - `calls` [EXTRACTED]
-- [[LLMProxy.proxy_messages()]] - `calls` [EXTRACTED]
 - [[Translate an OpenAI v1chatcompletions request body to Anthropic v1messages.]] - `rationale_for` [EXTRACTED]
 - [[anthropic_openai_translator.py]] - `contains` [EXTRACTED]
 - [[llm_proxy.py]] - `imports` [EXTRACTED]

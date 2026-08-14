@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "scripts/triage-cve-mitigations.py"
+community: "Gateway Test Suite"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/triage-cve-mitigationspy
+  - community/Gateway_Test_Suite
 ---
 
 # parse_version()
@@ -17,4 +17,4 @@ tags:
 - [[is_source_fixed()]] - `calls` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

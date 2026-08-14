@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/patch-ws-proxy.sh"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Gateway Proxy Layer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Gateway_Proxy_Layer
 ---
 
 # patch-ws-proxy.sh
@@ -15,4 +15,4 @@ tags:
 - [[init-openclaw-config.sh]] - `calls` [EXTRACTED]
 - [[patch-ws-proxy.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "code"
-community: "voice_gateway/tts.py"
+community: "Planning Docs"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_gateway/ttspy
+  - community/Planning_Docs
 ---
 
 # normalize_for_speech()
@@ -19,4 +19,4 @@ tags:
 - [[test_voice_gateway.py]] - `imports` [EXTRACTED]
 - [[tts.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/ttspy
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "Slack API Proxy"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Slack_API_Proxy
 ---
 
 # lifespan()
@@ -42,7 +42,7 @@ tags:
 - [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 - [[EnvelopeSigner]] - `calls` [EXTRACTED]
 - [[EventBus]] - `calls` [EXTRACTED]
-- [[FastAPI_2]] - `references` [EXTRACTED]
+- [[FastAPI_1]] - `references` [EXTRACTED]
 - [[FastAPI lifespan - startup and shutdown]] - `rationale_for` [EXTRACTED]
 - [[GroupRegistry]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
@@ -56,7 +56,6 @@ tags:
 - [[LLMProxy]] - `calls` [EXTRACTED]
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]
 - [[MCPProxy]] - `calls` [EXTRACTED]
-- [[MCPProxyConfig_5]] - `calls` [EXTRACTED]
 - [[MCPProxyConfig]] - `calls` [EXTRACTED]
 - [[MemoryIntegrityConfig_1]] - `calls` [INFERRED]
 - [[MemoryIntegrityConfig]] - `calls` [EXTRACTED]
@@ -102,4 +101,4 @@ tags:
 - [[setup_resource_guard()]] - `calls` [EXTRACTED]
 - [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

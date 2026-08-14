@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/agents/openclaw-identity.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # marvin (dev host, per openclaw-identity.md)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OpenClawAgentShroud Bot Identity]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

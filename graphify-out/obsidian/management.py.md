@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "Web Control Center"
+community: "scripts/migrate-cve-registry-ghsa.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_Control_Center
+  - community/scripts/migrate-cve-registry-ghsapy
 ---
 
 # management.py
@@ -15,7 +15,6 @@ tags:
 - [[EgressAllowlistResponse]] - `contains` [EXTRACTED]
 - [[EgressAllowlistUpdate]] - `contains` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
-- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[KeyRotationConfig_1]] - `imports` [EXTRACTED]
 - [[KeyRotationManager]] - `imports` [EXTRACTED]
 - [[api.py]] - `imports_from` [EXTRACTED]
@@ -41,4 +40,4 @@ tags:
 - [[update_egress_allowlist()]] - `contains` [EXTRACTED]
 - [[wazuh_dashboard()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_Control_Center
+#graphify/code #graphify/EXTRACTED #community/scripts/migrate-cve-registry-ghsapy

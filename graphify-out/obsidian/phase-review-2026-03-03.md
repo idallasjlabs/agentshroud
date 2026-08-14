@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "docs/reviews"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/reviews
+  - community/Gateway_Security_Module
 ---
 
 # phase-review-2026-03-03.md
@@ -35,4 +35,4 @@ tags:
 - [[v0.8.0 Architecture Positives (Route extraction, IP allowlisting, Supply chain hardening)]] - `documents` [EXTRACTED]
 - [[v0.8.0 Definition of Done]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/reviews
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
