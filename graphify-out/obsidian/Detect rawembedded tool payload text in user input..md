@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
-location: "L2665"
+community: "Cross-Bot Trust Ledger"
+location: "L2673"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # Detect raw/embedded tool payload text in user input.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._looks_like_tool_payload_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger

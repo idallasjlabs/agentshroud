@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/slack/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Planning Docs"
 location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Planning_Docs
 ---
 
 # Delete a message
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Actions_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

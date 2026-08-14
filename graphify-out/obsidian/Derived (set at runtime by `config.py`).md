@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Container Scripts"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Container_Scripts
 ---
 
 # Derived (set at runtime by `config.py`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Gateway Container (`agentshroud-gateway`)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Telegram Proxy Test Suite"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Default PII configuration for tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.default_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

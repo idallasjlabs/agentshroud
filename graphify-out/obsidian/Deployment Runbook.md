@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "docs/runbooks"
+community: "Gateway Security Module"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/docs/runbooks
+  - community/Gateway_Security_Module
 ---
 
 # Deployment Runbook
@@ -14,4 +14,4 @@ tags:
 - [[Daily Operations Runbook]] - `complements` [INFERRED]
 - [[Standard Deployment Steps (pull, test, deps, build, deploy, verify)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/docs/runbooks
+#graphify/document #graphify/INFERRED #community/Gateway_Security_Module

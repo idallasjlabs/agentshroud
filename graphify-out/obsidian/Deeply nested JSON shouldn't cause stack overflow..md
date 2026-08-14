@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
+community: "Security Module Middleware"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Security_Module_Middleware
 ---
 
 # Deeply nested JSON shouldn't cause stack overflow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_deeply_nested_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware

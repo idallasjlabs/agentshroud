@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/daily-operations.md"
 type: "document"
-community: "docs/runbooks"
+community: "Planning Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Planning_Docs
 ---
 
 # Daily Operations Runbook — AgentShroud
@@ -18,4 +18,4 @@ tags:
 - [[Weekly Checklist (15 minutes)]] - `contains` [EXTRACTED]
 - [[daily-operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

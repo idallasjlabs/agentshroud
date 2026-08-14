@@ -1,14 +1,14 @@
 ---
 source_file: "docs/data/README.md"
 type: "document"
-community: "docs/data"
+community: "docs/redteam"
 location: "line 1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/data
+  - community/docs/redteam
 ---
 
 # Data Documentation README (under development)
 
-#graphify/document #graphify/EXTRACTED #community/docs/data
+#graphify/document #graphify/EXTRACTED #community/docs/redteam

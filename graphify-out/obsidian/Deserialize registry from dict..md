@@ -12,6 +12,6 @@ tags:
 # Deserialize registry from dict.
 
 ## Connections
-- [[.from_dict()_2]] - `rationale_for` [EXTRACTED]
+- [[.from_dict()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

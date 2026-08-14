@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/launch-instance.sh"
 type: "code"
-community: "scripts/launch-instance.sh"
+community: "docs/diagrams"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/launch-instancesh
+  - community/docs/diagrams
 ---
 
 # DOCKER_HOST
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[launch-instance.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/launch-instancesh
+#graphify/code #graphify/EXTRACTED #community/docs/diagrams

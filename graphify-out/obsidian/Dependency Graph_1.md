@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "docs/vault"
+community: "Security Docs"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Docs
 ---
 
 # Dependency Graph
@@ -18,4 +18,4 @@ tags:
 - [[Python Package Dependencies]] - `contains` [EXTRACTED]
 - [[Related Notes_70]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

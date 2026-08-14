@@ -1,11 +1,11 @@
 ---
 source_file: "examples/egress-config.yml"
 type: "concept"
-community: "Planning Docs"
+community: "CLAUDE.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/CLAUDEmd
 ---
 
 # DNS Filter (entropy threshold, rate limits)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Egress Control Config Example]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Planning_Docs
+#graphify/concept #graphify/EXTRACTED #community/CLAUDEmd

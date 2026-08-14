@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Bot Skill Config"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_Skill_Config
 ---
 
 # DataExfilVolumeGuard
@@ -30,7 +30,7 @@ tags:
 - [[test_blocked_response_does_not_add_to_cumulative()]] - `calls` [EXTRACTED]
 - [[test_cumulative_cap_blocks_when_crossed()]] - `calls` [EXTRACTED]
 - [[test_cumulative_is_per_session()]] - `calls` [EXTRACTED]
-- [[test_data_exfil_volume_guard.py]] - `implements` [EXTRACTED]
+- [[test_data_exfil_volume_guard.py]] - `imports` [EXTRACTED]
 - [[test_disabled_never_blocks()]] - `calls` [EXTRACTED]
 - [[test_get_stats()]] - `calls` [EXTRACTED]
 - [[test_pipeline_allows_small_response()]] - `calls` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_single_response_over_cap_blocks()]] - `calls` [EXTRACTED]
 - [[test_under_single_cap_allows()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

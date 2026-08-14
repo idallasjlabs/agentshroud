@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/competitive-analysis-reports-archive.md"
 type: "document"
-community: "docs/project"
+community: "Gateway Security Module"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Gateway_Security_Module
 ---
 
 # Default Selection Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Competitive Analysis Reports Archive]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

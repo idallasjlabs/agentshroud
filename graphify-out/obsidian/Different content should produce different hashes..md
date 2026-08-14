@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Bot Container Scripts"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Bot_Container_Scripts
 ---
 
 # Different content should produce different hashes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_content_hashes_are_unique()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Container_Scripts

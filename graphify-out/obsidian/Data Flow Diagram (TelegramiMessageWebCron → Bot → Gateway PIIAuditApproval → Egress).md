@@ -1,14 +1,14 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "document"
-community: "docs/diagrams"
+community: "Gateway Ingest API"
 location: "line 7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Gateway_Ingest_API
 ---
 
 # Data Flow Diagram (Telegram/iMessage/Web/Cron → Bot → Gateway PII/Audit/Approval → Egress)
 
-#graphify/document #graphify/EXTRACTED #community/docs/diagrams
+#graphify/document #graphify/EXTRACTED #community/Gateway_Ingest_API

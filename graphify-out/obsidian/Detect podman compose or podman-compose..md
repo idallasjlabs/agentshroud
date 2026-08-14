@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/podman_engine.py"
 type: "rationale"
-community: "gateway/runtime"
+community: "docker/QUICKSTART.md"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/runtime
+  - community/docker/QUICKSTARTmd
 ---
 
 # Detect podman compose or podman-compose.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._detect_compose()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/runtime
+#graphify/rationale #graphify/EXTRACTED #community/docker/QUICKSTARTmd

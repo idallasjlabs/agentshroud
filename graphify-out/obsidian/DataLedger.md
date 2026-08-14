@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Telegram Proxy Test Suite"
 location: "L66"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer_Pipeline
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # DataLedger
 
 ## Connections
-- [[.__init__()_17]] - `method` [EXTRACTED]
+- [[.__init__()_12]] - `method` [EXTRACTED]
 - [[._hash_content()]] - `method` [EXTRACTED]
 - [[.close()_4]] - `method` [EXTRACTED]
 - [[.delete_entry()]] - `method` [EXTRACTED]
 - [[.disabled_client()]] - `calls` [EXTRACTED]
 - [[.enforce_retention()]] - `method` [EXTRACTED]
 - [[.get_entry()]] - `method` [EXTRACTED]
-- [[.get_stats()_2]] - `method` [EXTRACTED]
+- [[.get_stats()_1]] - `method` [EXTRACTED]
 - [[.initialize()_2]] - `method` [EXTRACTED]
 - [[.ledger()]] - `calls` [EXTRACTED]
 - [[.ledger()_1]] - `calls` [EXTRACTED]
@@ -28,11 +28,11 @@ tags:
 - [[.record()]] - `method` [EXTRACTED]
 - [[AppState]] - `uses` [INFERRED]
 - [[Async SQLite-backed data ledger      Records all content forwarded through the g]] - `rationale_for` [EXTRACTED]
-- [[FastAPI_2]] - `uses` [INFERRED]
+- [[FastAPI_1]] - `uses` [INFERRED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[LedgerEntry_1]] - `uses` [INFERRED]
+- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[TestAuditChainIntegrity]] - `uses` [INFERRED]
@@ -77,4 +77,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite

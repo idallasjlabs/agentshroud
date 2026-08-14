@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/v0.9.0-testing-guide.md"
 type: "document"
-community: "Planning Docs"
+community: "docs/vault"
 location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/docs/vault
 ---
 
 # Dashboard Tabs to Verify
@@ -20,4 +20,4 @@ tags:
 - [[Security Tab]] - `contains` [EXTRACTED]
 - [[Users Tab]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/vault

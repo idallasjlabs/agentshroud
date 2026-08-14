@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-18-runbook.png"
 type: "image"
-community: "docs/diagrams"
+community: "Bot Skill Config"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/docs/diagrams
+  - community/Bot_Skill_Config
 ---
 
 # Diagram 18: Runbook — Operational Troubleshooting Flowchart (PNG)
@@ -15,4 +15,4 @@ tags:
 - [[Diagram 16 State — Approval Queue Lifecycle (PNG)]] - `conceptually_related_to` [INFERRED]
 - [[Diagram 19 Incident Response — Severity Classification and Response (PNG)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/docs/diagrams
+#graphify/image #graphify/INFERRED #community/Bot_Skill_Config

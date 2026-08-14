@@ -1,11 +1,11 @@
 ---
 source_file: "dashboard/README.md"
 type: "concept"
-community: "dashboard/README.md"
+community: "Architecture Docs"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/dashboard/READMEmd
+  - community/Architecture_Docs
 ---
 
 # Dashboard Kill Switch Component (halt all agent activity)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Dashboard README (React 18, not yet implemented)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/dashboard/READMEmd
+#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_proxy_dashboard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "docs/setup-slack.md"
 location: "L97"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/setup-slackmd
 ---
 
 # Dashboard should show failed canary.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_canary_failed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/setup-slackmd

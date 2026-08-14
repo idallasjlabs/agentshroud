@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Gateway Test Suite"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Gateway_Test_Suite
 ---
 
 # Deterministic fetcher: maps url -> (status, sha_or_None). Records calls.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeFetcher]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
+community: "docs/README.md"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/docs/READMEmd
 ---
 
 # Detailed health check endpoint — authentication required.      Returns full syst
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[health_check_detail()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/docs/READMEmd

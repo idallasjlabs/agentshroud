@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Custom Skills"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Custom_Skills
 ---
 
 # Diagram Types and Data Lakehouse Examples
@@ -21,4 +21,4 @@ tags:
 - [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 - [[State Diagram — Job or process lifecycle]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Custom_Skills

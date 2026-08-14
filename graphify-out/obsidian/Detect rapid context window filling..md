@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Planning Docs"
 location: "L347"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Planning_Docs
 ---
 
 # Detect rapid context window filling.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._detect_rapid_context_growth()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

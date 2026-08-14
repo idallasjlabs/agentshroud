@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "gateway/cli"
 location: "L380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/gateway/cli
 ---
 
 # Detect if CAPTCHA is present on page
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.detect_captcha()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/gateway/cli

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "docs/vault"
+community: "Security Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Docs
 ---
 
 # Data Flow — AgentShroud Gateway
@@ -17,4 +17,4 @@ tags:
 - [[MCP Proxy Wrapper (mcp-proxy-wrapper.js — stdio to HTTP translation)]] - `traces` [EXTRACTED]
 - [[Proxy Routing (MCP→mcp_proxy, LLM→llm_proxy, Telegram→telegram_proxy, HTTP→http_proxy, Web→web_proxy)]] - `traces` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

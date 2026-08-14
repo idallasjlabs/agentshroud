@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Decision
@@ -15,4 +15,4 @@ tags:
 - [[ADR-002 Default-Allow Security Philosophy]] - `contains` [EXTRACTED]
 - [[Implementation Approach]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

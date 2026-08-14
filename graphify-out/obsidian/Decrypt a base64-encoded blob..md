@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Bot Skill Config"
 location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Bot_Skill_Config
 ---
 
 # Decrypt a base64-encoded blob.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.decrypt_b64()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "IEC 62443 Scorecard"
+community: "docs/papers"
 location: "L2321"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/IEC_62443_Scorecard
+  - community/docs/papers
 ---
 
 # Determine the highest achieved IEC 62443 Security Level.      SL 1: All IEC-mapp
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_determine_iec_sl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/IEC_62443_Scorecard
+#graphify/rationale #graphify/EXTRACTED #community/docs/papers

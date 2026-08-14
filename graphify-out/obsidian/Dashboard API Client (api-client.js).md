@@ -1,12 +1,12 @@
 ---
 source_file: "web/management-dashboard.html"
 type: "concept"
-community: "web/management-dashboard.html"
+community: "skills/openclaw"
 location: "line 796"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/web/management-dashboardhtml
+  - community/skills/openclaw
 ---
 
 # Dashboard API Client (api-client.js)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Setup Wizard (setup-wizard.html)]] - `depends_on` [EXTRACTED]
 - [[dashboard()]] - `depends_on` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/web/management-dashboardhtml
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

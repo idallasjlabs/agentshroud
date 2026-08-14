@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-09-data-lineage.png"
 type: "image"
-community: "docs/flows"
+community: "docs/vault"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/docs/flows
+  - community/docs/vault
 ---
 
 # Data Lineage Diagram (PNG)
@@ -15,4 +15,4 @@ tags:
 - [[Network Topology Diagram (PNG)]] - `conceptually_related_to` [INFERRED]
 - [[data-flow-diagram]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/docs/flows
+#graphify/image #graphify/INFERRED #community/docs/vault

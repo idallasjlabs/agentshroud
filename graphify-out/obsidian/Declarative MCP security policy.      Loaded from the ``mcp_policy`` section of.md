@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "MCP Policy Engine"
+community: "Egress Domain Allowlist"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Egress_Domain_Allowlist
 ---
 
 # Declarative MCP security policy.      Loaded from the ``mcp_policy:`` section of
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPPolicyConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Domain_Allowlist

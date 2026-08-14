@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Security Module"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Security_Module
 ---
 
 # Detailed Profiles
@@ -26,4 +26,4 @@ tags:
 - [[cryptography (Python) — Encryption Library]] - `contains` [EXTRACTED]
 - [[spaCy + Presidio — PII Detection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

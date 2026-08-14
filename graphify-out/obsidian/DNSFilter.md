@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Egress & RBAC Security Core"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress__RBAC_Security_Core
 ---
 
 # DNSFilter
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
-- [[.__init__()_43]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
+- [[.__init__()_42]] - `calls` [EXTRACTED]
 - [[.__init__()_69]] - `method` [EXTRACTED]
 - [[._cleanup_rate_window()]] - `method` [EXTRACTED]
 - [[._detect_tunneling()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[.get_flagged_queries()]] - `method` [EXTRACTED]
 - [[.resolve_and_cache()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -50,4 +50,4 @@ tags:
 - [[test_dns_filter.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

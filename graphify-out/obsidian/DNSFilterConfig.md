@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Egress & RBAC Security Core"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Egress__RBAC_Security_Core
 ---
 
 # DNSFilterConfig
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
-- [[.__init__()_43]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
+- [[.__init__()_42]] - `calls` [EXTRACTED]
 - [[.__init__()_69]] - `references` [EXTRACTED]
 - [[.dns_filter()]] - `calls` [EXTRACTED]
 - [[.test_dns_filter_config()]] - `calls` [EXTRACTED]
 - [[.test_dns_filter_default_enforce()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -62,4 +62,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core

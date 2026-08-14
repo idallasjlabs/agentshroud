@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/update-cve-page.yml"
 type: "document"
-community: "CHANGELOG.md"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Gateway_Test_Suite
 ---
 
 # Daily CVE Sync + Page Update Workflow
@@ -14,4 +14,4 @@ tags:
 - [[Pinned Vendor Versions Single Source of Truth (dockerversions.env)]] - `references` [EXTRACTED]
 - [[Upstream Agent CVE Tracking]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

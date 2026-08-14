@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "docs/vault"
+community: "Bot Skill Config"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # Dashboard (WebSocket)
@@ -15,4 +15,4 @@ tags:
 - [[Kill Switch (MonitorBlockIsolate)]] - `calls` [EXTRACTED]
 - [[Monitoring System Integration (WebhooksPrometheus)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

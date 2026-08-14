@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-20-observability-map.png"
 type: "image"
-community: "docs/governance"
+community: "docs/runbooks"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/docs/governance
+  - community/docs/runbooks
 ---
 
 # Diagram 20: Observability Map (PNG)
@@ -15,4 +15,4 @@ tags:
 - [[Diagram 22 Dependency Graph (PNG)]] - `conceptually_related_to` [INFERRED]
 - [[Diagram 23 Roadmap Gantt (PNG)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/docs/governance
+#graphify/image #graphify/INFERRED #community/docs/runbooks

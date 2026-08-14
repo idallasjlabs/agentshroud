@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/runbooks"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/runbooks
 ---
 
 # Daedalus — Concept Illustrator
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_48]] - `contains` [EXTRACTED]
 - [[Usage_51]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/runbooks

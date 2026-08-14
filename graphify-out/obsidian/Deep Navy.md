@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "branding/colors"
+community: "skills/openclaw"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/colors
+  - community/skills/openclaw
 ---
 
 # Deep Navy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Secondary Colors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/colors
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

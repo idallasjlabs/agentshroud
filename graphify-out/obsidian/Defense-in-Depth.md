@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Security Docs"
+community: "Setup Docs"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Setup_Docs
 ---
 
 # Defense-in-Depth
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Security_Docs
+#graphify/concept #graphify/EXTRACTED #community/Setup_Docs

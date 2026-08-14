@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Decision
@@ -16,4 +16,4 @@ tags:
 - [[Configuration_4]] - `contains` [EXTRACTED]
 - [[Policy Table]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

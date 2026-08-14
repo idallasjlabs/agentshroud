@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Development Workflow Read-Only Filesystem Strategy
@@ -27,4 +27,4 @@ tags:
 - [[Three-Phase Read-Only Approach (Dev→Compatibility Testing→Production Lockdown)]] - `contains` [EXTRACTED]
 - [[Write Paths Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "Setup Docs"
 location: "L160"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Proxy_Layer
+  - community/Setup_Docs
 ---
 
 # DNSForwarderProtocol
 
 ## Connections
-- [[.__init__()_22]] - `method` [EXTRACTED]
+- [[.__init__()_20]] - `method` [EXTRACTED]
 - [[._handle_query()]] - `method` [EXTRACTED]
 - [[._make_protocol()]] - `calls` [EXTRACTED]
 - [[.connection_made()]] - `method` [EXTRACTED]
@@ -44,4 +44,4 @@ tags:
 - [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/INFERRED #community/Setup_Docs

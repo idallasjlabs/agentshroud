@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "CHANGELOG.md"
 location: "L217"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/CHANGELOGmd
 ---
 
 # Dashboard UX
@@ -17,4 +17,4 @@ tags:
 - [[Drill-Down Pattern]] - `contains` [EXTRACTED]
 - [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/CHANGELOGmd

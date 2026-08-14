@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "Gateway Proxy Layer"
+community: ".github/agents"
 location: "L371"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/github/agents
 ---
 
 # Detect zero-width character sequences (steganographic attacks).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._scan_zero_width()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/rationale #graphify/EXTRACTED #community/github/agents

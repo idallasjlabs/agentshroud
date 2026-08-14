@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Setup Docs"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Docs
 ---
 
 # Deployment Matrix (Direct to Prod)
@@ -14,4 +14,4 @@ tags:
 - [[CICD Pipeline Advisor (SKILL)]] - `references` [EXTRACTED]
 - [[Skill CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Setup_Docs

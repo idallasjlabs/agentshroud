@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Security Docs"
+community: "Setup Docs"
 location: "L337"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Setup_Docs
 ---
 
 # Data Flow Control
@@ -16,4 +16,4 @@ tags:
 - [[Data Entry Points (All User-Controlled)]] - `contains` [EXTRACTED]
 - [[Principle You Decide What The Agent Sees]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

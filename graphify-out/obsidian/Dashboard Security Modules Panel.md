@@ -1,12 +1,12 @@
 ---
 source_file: "web/management-dashboard.html"
 type: "concept"
-community: "web/management-dashboard.html"
+community: "skills/openclaw"
 location: "line 538"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/web/management-dashboardhtml
+  - community/skills/openclaw
 ---
 
 # Dashboard Security Modules Panel
@@ -15,4 +15,4 @@ tags:
 - [[proxystatus Endpoint (blocked_count)]] - `queries` [EXTRACTED]
 - [[dashboard()]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/web/management-dashboardhtml
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

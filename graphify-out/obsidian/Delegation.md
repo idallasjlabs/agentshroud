@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gateway Security Module"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Security_Module
 ---
 
 # Delegation
 
 ## Connections
 - [[.delegate()]] - `references` [EXTRACTED]
-- [[.from_dict()_3]] - `method` [EXTRACTED]
+- [[.from_dict()_4]] - `method` [EXTRACTED]
 - [[.get_active_delegations()]] - `references` [EXTRACTED]
 - [[.get_delegations_for_user()]] - `references` [EXTRACTED]
 - [[.is_active()]] - `method` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[delegation.py]] - `contains` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

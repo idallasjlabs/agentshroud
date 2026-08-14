@@ -1,13 +1,17 @@
 ---
 source_file: ".github/dependabot.yml"
 type: "code"
-community: ".github/dependabot.yml"
+community: ".github/workflows"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/github/dependabotyml
+  - community/github/workflows
 ---
 
 # Dependabot Configuration
 
-#graphify/code #graphify/EXTRACTED #community/github/dependabotyml
+## Connections
+- [[Presidio-Anonymizer 2.2.364 Version Pin-Out]] - `rationale_for` [EXTRACTED]
+- [[gatewayrequirements.txt Dependency File]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/github/workflows

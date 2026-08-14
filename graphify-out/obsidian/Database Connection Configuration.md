@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "document"
-community: "docs/data"
+community: "Planning Docs"
 location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/data
+  - community/Planning_Docs
 ---
 
 # Database Connection Configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SQLite Database Schema]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/data
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

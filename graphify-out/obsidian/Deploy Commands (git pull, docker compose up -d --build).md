@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "concept"
-community: "docs/runbooks"
+community: "Bot Skill Config"
 location: "line 19-28"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Bot_Skill_Config
 ---
 
 # Deploy Commands (git pull, docker compose up -d --build)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Deployment and Troubleshooting Runbook]] - `documents` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/runbooks
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

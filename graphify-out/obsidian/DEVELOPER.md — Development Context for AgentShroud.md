@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/DEVELOPER.md"
 type: "document"
-community: "Bot Skill Config"
+community: "skills/openclaw"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/skills/openclaw
 ---
 
 # DEVELOPER.md — Development Context for AgentShroud
@@ -24,4 +24,4 @@ tags:
 - [[9. Skill Lookup]] - `contains` [EXTRACTED]
 - [[DEVELOPER]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

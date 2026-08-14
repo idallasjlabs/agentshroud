@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Architecture Docs"
 location: "L233"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Architecture_Docs
 ---
 
 # Decision Tree Map
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Use Case Patterns]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

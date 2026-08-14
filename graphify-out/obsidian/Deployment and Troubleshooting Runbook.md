@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "docs/runbooks"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Bot_Skill_Config
 ---
 
 # Deployment and Troubleshooting Runbook
@@ -16,4 +16,4 @@ tags:
 - [[Infrastructure_6]] - `documents` [EXTRACTED]
 - [[Troubleshooting Runbook]] - `extends` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

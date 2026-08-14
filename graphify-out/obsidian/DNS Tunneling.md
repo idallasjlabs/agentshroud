@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "docs/project"
+community: "Gateway Security Module"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Gateway_Security_Module
 ---
 
 # DNS Tunneling
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud v0.9.0 Deep Hardening Release Notes]] - `references` [EXTRACTED]
 - [[threat-model]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/project
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Security_Module

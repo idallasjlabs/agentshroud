@@ -1,12 +1,12 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "docs/TEAM.md"
+community: "docs/diagrams"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/TEAMmd
+  - community/docs/diagrams
 ---
 
 # DevOps / Platform Engineer — CI/CD, Infrastructure, Reliability
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Development Team]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/TEAMmd
+#graphify/document #graphify/EXTRACTED #community/docs/diagrams

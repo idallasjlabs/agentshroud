@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gateway Security Module"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Security_Module
 ---
 
 # DelegationPrivilege
@@ -17,7 +17,7 @@ tags:
 - [[.delegate()]] - `references` [EXTRACTED]
 - [[.is_delegated()]] - `references` [EXTRACTED]
 - [[.revoke()]] - `references` [EXTRACTED]
-- [[Any_20]] - `uses` [INFERRED]
+- [[Any_21]] - `uses` [INFERRED]
 - [[DelegationManager_1]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[Subset of privileges that can be delegated by the owner.]] - `rationale_for` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

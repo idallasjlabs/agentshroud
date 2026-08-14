@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
+community: "Security Module Middleware"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Security_Module_Middleware
 ---
 
 # Default mode is enforce after v0.8.0 enforcement hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_default_mode_is_enforce()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware

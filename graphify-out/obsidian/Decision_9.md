@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Decision
@@ -17,4 +17,4 @@ tags:
 - [[Trust Calculation]] - `contains` [EXTRACTED]
 - [[Trust Levels (0-4)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

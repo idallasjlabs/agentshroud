@@ -1,12 +1,12 @@
 ---
 source_file: "web/management-dashboard.html"
 type: "concept"
-community: "web/management-dashboard.html"
+community: "skills/openclaw"
 location: "line 654"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/web/management-dashboardhtml
+  - community/skills/openclaw
 ---
 
 # Dashboard Kill Switch Panel (emergency termination)
@@ -15,4 +15,4 @@ tags:
 - [[Dashboard Agent Trust Levels Panel]] - `relates_to` [INFERRED]
 - [[dashboard()]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/web/management-dashboardhtml
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw
