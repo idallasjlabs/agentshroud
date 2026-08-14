@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
 community: "Gateway Test Suite"
-location: "L413"
+location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED

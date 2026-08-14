@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/docs/vault
 ---
 
 # test_ledger.py
@@ -25,4 +25,4 @@ tags:
 - [[test_query_with_time_filters()]] - `contains` [EXTRACTED]
 - [[test_record_entry()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/docs/vault

@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
-- [[SimpleNamespace_2]] - `calls` [INFERRED]
 - [[Transport without an underlying socket (None) is skipped cleanly.]] - `rationale_for` [EXTRACTED]
 - [[_eof_target_connection()]] - `calls` [EXTRACTED]
 - [[_make_stream()_1]] - `calls` [EXTRACTED]

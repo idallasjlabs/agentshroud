@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "Group RBAC Roles"
+community: "File Sandbox"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/File_Sandbox
 ---
 
 # test_group_rbac.py
@@ -32,4 +32,4 @@ tags:
 - [[teams()_3]] - `contains` [EXTRACTED]
 - [[tool_acl.py (ToolACLEnforcer)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox

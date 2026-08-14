@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "Gateway Test Suite"
+community: ".github/COPILOT_CLI_SETUP.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/github/COPILOT_CLI_SETUPmd
 ---
 
 # test_egress_approval.py
@@ -20,4 +20,4 @@ tags:
 - [[TestEgressApprovalAPI]] - `contains` [EXTRACTED]
 - [[TestEgressApprovalQueue]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd

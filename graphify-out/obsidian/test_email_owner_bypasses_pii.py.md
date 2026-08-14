@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "Slack API Proxy"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Gateway_Test_Suite
 ---
 
 # test_email_owner_bypasses_pii.py
@@ -14,8 +14,9 @@ tags:
 ## Connections
 - [[TestOwnerEmailBypassesPii]] - `contains` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[auth_dep()_1]] - `imports` [EXTRACTED]
+- [[auth_dep()_3]] - `imports` [EXTRACTED]
 - [[bypass_auth()_1]] - `contains` [EXTRACTED]
 - [[client()_7]] - `contains` [EXTRACTED]
+- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

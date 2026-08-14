@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
 community: "Gateway Test Suite"
-location: "L394"
+location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[AgentTarget]] - `calls` [EXTRACTED]
+- [[AgentTarget_4]] - `calls` [INFERRED]
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[_make_stream_app_state()]] - `calls` [EXTRACTED]
 - [[_post_stream()]] - `calls` [EXTRACTED]

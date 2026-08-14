@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/vault
 ---
 
 # test_intel_endpoint.py
 
 ## Connections
 - [[CitationVerifier]] - `imports` [EXTRACTED]
-- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[FetchOutcome]] - `imports` [EXTRACTED]
 - [[TestHttpxFetcher]] - `contains` [EXTRACTED]
 - [[TestSubmitAuth]] - `contains` [EXTRACTED]
@@ -28,4 +27,4 @@ tags:
 - [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/vault

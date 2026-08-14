@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "HTTP Forwarder"
+community: "SOC Collaborator Lifecycle"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # test_e2e_proxy.py
@@ -29,9 +29,9 @@ tags:
 - [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
 - [[_PassInboundPipeline]] - `contains` [EXTRACTED]
-- [[_StubForwarder]] - `contains` [EXTRACTED]
+- [[_StubForwarder_2]] - `contains` [EXTRACTED]
 - [[egress_filter()]] - `contains` [EXTRACTED]
-- [[forwarder()]] - `contains` [EXTRACTED]
+- [[forwarder()_1]] - `contains` [EXTRACTED]
 - [[pii_config()]] - `contains` [EXTRACTED]
 - [[pipeline()]] - `contains` [EXTRACTED]
 - [[prompt_guard()]] - `contains` [EXTRACTED]
@@ -63,6 +63,6 @@ tags:
 - [[test_webhook_outbound_pipeline_crash_fails_closed()]] - `contains` [EXTRACTED]
 - [[test_webhook_receiver_processes()]] - `contains` [EXTRACTED]
 - [[test_webhook_strips_pii()]] - `contains` [EXTRACTED]
-- [[trust_manager()]] - `contains` [EXTRACTED]
+- [[trust_manager()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "Collaborator Prompt Classifiers"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # test_enhanced_approval.py
 
 ## Connections
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalRequest]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
 - [[ApprovalStore_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `implements` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `imports` [EXTRACTED]
 - [[MCPProxy]] - `references` [EXTRACTED]
 - [[MCPToolCall]] - `imports` [EXTRACTED]
 - [[TestApprovalWorkflow]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[test_websocket_notifications()]] - `contains` [EXTRACTED]
 - [[tool_risk_config()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

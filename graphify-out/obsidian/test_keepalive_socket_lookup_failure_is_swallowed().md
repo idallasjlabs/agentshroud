@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
-- [[SimpleNamespace_2]] - `calls` [INFERRED]
 - [[_eof_target_connection()]] - `calls` [EXTRACTED]
 - [[_make_stream()_1]] - `calls` [EXTRACTED]
 - [[get_extra_info raising must not break the established tunnel.]] - `rationale_for` [EXTRACTED]

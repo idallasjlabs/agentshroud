@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_heartbeat_egress.py"
 type: "code"
-community: "Egress Domain Allowlist"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Domain_Allowlist
+  - community/Gateway_Test_Suite
 ---
 
 # test_heartbeat_egress.py
@@ -16,4 +16,4 @@ tags:
 - [[test_hc_ping_allowed()]] - `contains` [EXTRACTED]
 - [[test_hc_ping_subdomain_not_blocked()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

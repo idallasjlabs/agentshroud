@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
 community: "Gateway Test Suite"
-location: "L531"
+location: "L533"
 tags:
   - graphify/code
   - graphify/EXTRACTED

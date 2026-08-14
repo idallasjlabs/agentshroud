@@ -19,7 +19,6 @@ tags:
 - [[_make_fake_urlopen()]] - `contains` [EXTRACTED]
 - [[_proxy_with_connect_refused()]] - `contains` [EXTRACTED]
 - [[llm_proxy.py]] - `imports_from` [EXTRACTED]
-- [[llm_proxy.py (LLMProxy)]] - `implements` [EXTRACTED]
 - [[test_all_streaming_clients_use_the_shared_connect_timeout_constant()]] - `contains` [EXTRACTED]
 - [[test_backend_unavailable_warning_rate_limited()]] - `contains` [EXTRACTED]
 - [[test_cloud_backend_connect_failure_still_returns_502()]] - `contains` [EXTRACTED]

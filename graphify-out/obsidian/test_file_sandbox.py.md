@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "File Sandbox"
+community: "URL/Domain Validation Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/URL/Domain_Validation_Tests
 ---
 
 # test_file_sandbox.py
@@ -26,4 +26,4 @@ tags:
 - [[strict_config()_1]] - `contains` [EXTRACTED]
 - [[strict_sandbox()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

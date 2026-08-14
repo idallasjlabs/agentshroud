@@ -12,13 +12,13 @@ tags:
 # test_gateway_email_service.py
 
 ## Connections
-- [[GatewayEmailService]] - `implements` [EXTRACTED]
+- [[GatewayEmailService]] - `imports` [EXTRACTED]
 - [[TestBuildMessage]] - `contains` [EXTRACTED]
 - [[TestEndpointUsesService]] - `contains` [EXTRACTED]
 - [[TestSend]] - `contains` [EXTRACTED]
 - [[_FakeSmtp]] - `contains` [EXTRACTED]
 - [[_service()]] - `contains` [EXTRACTED]
-- [[auth_dep()_1]] - `imports` [EXTRACTED]
+- [[auth_dep()]] - `imports` [EXTRACTED]
 - [[test_sender_property()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

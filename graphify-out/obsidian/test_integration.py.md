@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_integration.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "branding/icons"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/branding/icons
 ---
 
 # test_integration.py
@@ -18,4 +18,4 @@ tags:
 - [[test_ledger_query()]] - `contains` [EXTRACTED]
 - [[test_websocket_auth()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/branding/icons

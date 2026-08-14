@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Architecture Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Architecture_Docs
 ---
 
 # test_llm_proxy_failover.py
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[LLMProxy]] - `imports` [EXTRACTED]
 - [[_call_proxy()]] - `contains` [EXTRACTED]
-- [[llm_proxy.py (LLMProxy)]] - `implements` [EXTRACTED]
 - [[make_proxy()]] - `contains` [EXTRACTED]
 - [[test_already_local_request_does_not_failover()]] - `contains` [EXTRACTED]
 - [[test_failover_notification_cooldown()]] - `contains` [EXTRACTED]
@@ -36,4 +35,4 @@ tags:
 - [[test_proxy_normal_200_passthrough_untouched()]] - `contains` [EXTRACTED]
 - [[test_proxy_post_retry_429_now_failovers()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Architecture_Docs

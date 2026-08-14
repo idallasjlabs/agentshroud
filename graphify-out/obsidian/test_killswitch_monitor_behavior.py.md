@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "Kill Switch Config"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Kill_Switch_Config
+  - community/Bot_Skill_Config
 ---
 
 # test_killswitch_monitor_behavior.py
@@ -24,4 +24,4 @@ tags:
 - [[killswitch_config.py (KillSwitchConfig)]] - `references` [EXTRACTED]
 - [[killswitch_monitor.py (KillSwitchMonitor)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Config
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_hermes_mcp_reconciliation.sh"
 type: "code"
-community: "tests/startup_smoke"
+community: "skills/openclaw"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/tests/startup_smoke
+  - community/skills/openclaw
 ---
 
 # test_hermes_mcp_reconciliation.sh script
@@ -15,4 +15,4 @@ tags:
 - [[check()_8]] - `calls` [EXTRACTED]
 - [[test_hermes_mcp_reconciliation.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/tests/startup_smoke
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

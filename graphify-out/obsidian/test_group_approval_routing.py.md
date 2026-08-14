@@ -12,7 +12,7 @@ tags:
 # test_group_approval_routing.py
 
 ## Connections
-- [[ApprovalRequest]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
 - [[GroupApprovalRouter]] - `imports` [EXTRACTED]
 - [[TestDMApprovalOwnerOnly]] - `contains` [EXTRACTED]
 - [[TestGroupApprovalOwnerDM]] - `contains` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[group_router.py (GroupApprovalRouter)]] - `implements` [EXTRACTED]
 - [[ingest_api models.py (ApprovalRequest)]] - `references` [EXTRACTED]
 - [[mock_send_message()]] - `contains` [EXTRACTED]
-- [[router()_1]] - `contains` [EXTRACTED]
+- [[router()]] - `contains` [EXTRACTED]
 - [[router_with_sent()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_integrity_monitor.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Setup Docs"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Setup_Docs
 ---
 
 # test_load_baseline_tolerates_corrupt_json()
@@ -15,4 +15,4 @@ tags:
 - [[ConfigIntegrityMonitor]] - `calls` [EXTRACTED]
 - [[test_config_integrity_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Setup_Docs

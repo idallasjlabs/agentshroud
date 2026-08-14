@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "SOC RBAC & Auth"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/SOC_RBAC__Auth
 ---
 
 # test_e2e_watchtower.py
@@ -41,6 +41,6 @@ tags:
 - [[test_pipeline_fails_closed_on_enhanced_sanitizer_error()]] - `contains` [EXTRACTED]
 - [[test_pipeline_fails_closed_on_output_canary_error()]] - `contains` [EXTRACTED]
 - [[test_pipeline_owner_exempt_from_fail_closed()]] - `contains` [EXTRACTED]
-- [[trust_manager()_1]] - `contains` [EXTRACTED]
+- [[trust_manager()_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth

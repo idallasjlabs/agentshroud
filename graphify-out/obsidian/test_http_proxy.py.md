@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Security_Module
 ---
 
 # test_http_proxy.py
@@ -19,7 +19,6 @@ tags:
 - [[_DummyTargetWriter]] - `contains` [EXTRACTED]
 - [[_MockWriter]] - `contains` [EXTRACTED]
 - [[_make_stream()]] - `contains` [EXTRACTED]
-- [[egress_filter.py (EgressAction)]] - `references` [EXTRACTED]
 - [[http_proxy.py (HTTPConnectProxy)]] - `implements` [EXTRACTED]
 - [[test_agent_id_for_peer_cached_after_first_lookup()]] - `contains` [EXTRACTED]
 - [[test_agent_id_for_peer_forward_dns_hit()]] - `contains` [EXTRACTED]
@@ -53,4 +52,4 @@ tags:
 - [[web_config.py (WebProxyConfig)]] - `references` [EXTRACTED]
 - [[web_proxy.py (WebProxy)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
 community: "Gateway Test Suite"
-location: "L476"
+location: "L519"
 tags:
   - graphify/code
   - graphify/EXTRACTED

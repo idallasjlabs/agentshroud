@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
 community: "Gateway Test Suite"
-location: "L762"
+location: "L825"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # test_local_secondary_failover_secondary_non_200_returns_none()
 
 ## Connections
+- [[Secondary failover for Anthropic-format (v1messages) path translates and retur]] - `rationale_for` [EXTRACTED]
 - [[Secondary model returning non-200 increments failed stat and returns None.]] - `rationale_for` [EXTRACTED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]

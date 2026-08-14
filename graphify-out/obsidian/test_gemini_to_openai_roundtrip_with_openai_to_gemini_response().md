@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_gemini_openai_translator.py"
 type: "code"
 community: "Gateway Test Suite"
-location: "L306"
+location: "L304"
 tags:
   - graphify/code
   - graphify/EXTRACTED

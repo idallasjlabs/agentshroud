@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "gateway/runtime"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/gateway/runtime
 ---
 
 # test_differential_pii_detector.py
@@ -30,4 +30,4 @@ tags:
 - [[default_config()]] - `contains` [EXTRACTED]
 - [[detector()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime

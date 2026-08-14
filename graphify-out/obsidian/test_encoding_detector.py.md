@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Gateway_Security_Module
 ---
 
 # test_encoding_detector.py
@@ -16,4 +16,4 @@ tags:
 - [[EncodingDetector]] - `imports` [EXTRACTED]
 - [[TestEncodingDetector]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

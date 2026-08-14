@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Competitive Intel Store"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Competitive_Intel_Store
 ---
 
 # test_global_exception_handler()
@@ -16,4 +16,4 @@ tags:
 - [[global_exception_handler()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store

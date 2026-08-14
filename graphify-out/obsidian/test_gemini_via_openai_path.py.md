@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[LLMProxy]] - `imports` [EXTRACTED]
 - [[gemini_openai_translator.py]] - `references` [INFERRED]
-- [[llm_proxy.py (LLMProxy)]] - `implements` [EXTRACTED]
 - [[test_proxy_gemini_translation_failure_falls_through_gracefully()]] - `contains` [EXTRACTED]
 - [[test_proxy_rewrites_gemini_via_openai_path()]] - `contains` [EXTRACTED]
 
