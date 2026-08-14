@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Setup Docs"
+community: "docs/papers"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/docs/papers
 ---
 
 # API Keys Setup Guide
@@ -26,4 +26,4 @@ tags:
 - [[Summary Checklist]] - `contains` [EXTRACTED]
 - [[Troubleshooting_27]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/papers

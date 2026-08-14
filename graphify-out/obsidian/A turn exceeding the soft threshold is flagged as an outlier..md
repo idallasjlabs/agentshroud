@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "voice_gateway/server.py"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/voice_gateway/serverpy
 ---
 
 # A turn exceeding the soft threshold is flagged as an outlier.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_record_turn_latency_over_threshold_is_outlier()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/voice_gateway/serverpy

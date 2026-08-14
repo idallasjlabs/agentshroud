@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
 community: "Gateway Test Suite"
-location: "L3356"
+location: "L3387"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

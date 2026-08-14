@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "src/interfaces"
+community: "docs/ssh-security-review.md"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/src/interfaces
+  - community/docs/ssh-security-reviewmd
 ---
 
 # ANSI
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[text_control_center.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/src/interfaces
+#graphify/code #graphify/EXTRACTED #community/docs/ssh-security-reviewmd

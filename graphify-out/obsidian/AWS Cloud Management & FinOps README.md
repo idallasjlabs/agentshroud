@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-aws/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Setup Docs"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - community/Setup_Docs
 ---
 
 # AWS Cloud Management & FinOps README
@@ -14,4 +14,4 @@ tags:
 - [[AWS Cloud Management & FinOps Agent]] - `references` [INFERRED]
 - [[SKILLS_GUIDE.md (complete skill catalog)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/document #graphify/INFERRED #community/Setup_Docs

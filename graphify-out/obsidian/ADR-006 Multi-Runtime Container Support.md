@@ -1,11 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
-type: "concept"
-community: "Architecture Docs"
+type: "document"
+community: "Gateway Test Suite"
+location: "L1"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # ADR-006: Multi-Runtime Container Support
@@ -34,4 +35,4 @@ tags:
 - [[raspberrypi (100.107.248.66, agentshroud-bot user)]] - `conceptually_related_to` [EXTRACTED]
 - [[trillian (100.94.68.61, development node)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

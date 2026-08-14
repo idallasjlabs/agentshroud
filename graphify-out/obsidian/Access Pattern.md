@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Setup Docs"
+community: "docs/papers"
 location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/docs/papers
 ---
 
 # Access Pattern
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🚨 Security Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/papers

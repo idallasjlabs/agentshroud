@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "docs/flows"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/docs/flows
 ---
 
 # A piece of content that should be protected from disclosure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ProtectedContent]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/docs/flows

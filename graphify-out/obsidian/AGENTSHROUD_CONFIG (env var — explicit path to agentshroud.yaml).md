@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # AGENTSHROUD_CONFIG (env var — explicit path to agentshroud.yaml)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[agentshroud.yaml (master gateway configuration file)]] - `configures` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

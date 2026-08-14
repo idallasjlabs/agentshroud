@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "AGENTS.md"
+community: "voice_gateway/tts.py"
 location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSmd
+  - community/voice_gateway/ttspy
 ---
 
 # 7) CODEX CLI OPERATIONAL RULES
@@ -17,4 +17,4 @@ tags:
 - [[When to Defer to Claude Code]] - `contains` [EXTRACTED]
 - [[Your Role in the Multi-Agent System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSmd
+#graphify/document #graphify/EXTRACTED #community/voice_gateway/ttspy

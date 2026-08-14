@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/RELEASE-ANNOUNCEMENT-v1.0.0.md"
 type: "rationale"
-community: "Planning Docs"
+community: "Gateway Test Suite"
 location: "line 19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # 76 Active Security Modules Zero Stubs (v1.0.0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v1.0.0 Fortress Release Announcement]] - `announces` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

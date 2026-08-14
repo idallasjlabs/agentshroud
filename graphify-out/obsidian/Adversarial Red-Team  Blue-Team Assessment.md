@@ -1,12 +1,12 @@
 ---
 source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "docs/ssh-security-review.md"
+community: "Bot Skill Config"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/ssh-security-reviewmd
+  - community/Bot_Skill_Config
 ---
 
 # Adversarial Red-Team / Blue-Team Assessment
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/ssh-security-reviewmd
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

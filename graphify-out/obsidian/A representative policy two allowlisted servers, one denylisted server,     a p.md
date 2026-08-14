@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "MCP Policy Engine"
+community: "Egress Domain Allowlist"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Egress_Domain_Allowlist
 ---
 
 # A representative policy: two allowlisted servers, one denylisted server,     a p
 
 ## Connections
-- [[_base_config()]] - `rationale_for` [EXTRACTED]
+- [[_base_config()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Domain_Allowlist

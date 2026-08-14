@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
 type: "document"
-community: "docs/vault"
+community: "Planning Docs"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Planning_Docs
 ---
 
 # ANTHROPIC_BASE_URL
@@ -21,4 +21,4 @@ tags:
 - [[Value_1]] - `contains` [EXTRACTED]
 - [[Why It's Critical]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

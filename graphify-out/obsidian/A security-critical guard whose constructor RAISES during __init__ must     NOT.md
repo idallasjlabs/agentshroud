@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "rationale"
-community: "Security Module Middleware"
+community: "Approval Queue Tests"
 location: "L1027"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Module_Middleware
+  - community/Approval_Queue_Tests
 ---
 
 # A security-critical guard whose constructor RAISES during __init__ must     NOT
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCriticalGuardInitFailClosed]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Tests

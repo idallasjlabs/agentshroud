@@ -1,11 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # ADR-009: Enforce-by-Default Security Philosophy
@@ -23,4 +24,4 @@ tags:
 - [[Status_8]] - `contains` [EXTRACTED]
 - [[Steve Hay STPA-Sec Assessment (Feb 2026) - 0% enforcement against vanilla OpenClaw]] - `motivated_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

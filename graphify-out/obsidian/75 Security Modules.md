@@ -1,11 +1,12 @@
 ---
 source_file: "README.md"
-type: "concept"
-community: "README.md"
+type: "document"
+community: "skills/openclaw"
+location: "L165"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/READMEmd
+  - community/skills/openclaw
 ---
 
 # 75 Security Modules
@@ -31,4 +32,4 @@ tags:
 - [[V-F. Tamper-Evident Audit]] - `contains` [EXTRACTED]
 - [[v1.0.0 Fortress Release]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/READMEmd
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

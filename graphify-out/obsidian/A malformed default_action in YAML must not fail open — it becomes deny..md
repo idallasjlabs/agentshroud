@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "MCP Policy Engine"
+community: "Egress Domain Allowlist"
 location: "L197"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Egress_Domain_Allowlist
 ---
 
 # A malformed default_action in YAML must not fail open — it becomes deny.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_invalid_default_action_falls_back_to_deny()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Domain_Allowlist

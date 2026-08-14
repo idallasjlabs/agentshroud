@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
+community: "Gateway Security Module"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Gateway_Security_Module
 ---
 
 # Add bot container hostnames to the infrastructure detection patterns.          C
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.register_bot_hostnames()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
