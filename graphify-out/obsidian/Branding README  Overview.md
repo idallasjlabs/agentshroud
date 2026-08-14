@@ -1,11 +1,11 @@
 ---
 source_file: "branding/README.md"
 type: "document"
-community: "branding/colors"
+community: "branding/typography"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/colors
+  - community/branding/typography
 ---
 
 # Branding README / Overview
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Branding Assets Index]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/colors
+#graphify/document #graphify/EXTRACTED #community/branding/typography

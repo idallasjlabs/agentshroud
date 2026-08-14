@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "branding/guidelines"
+community: "docs/diagrams"
 location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/docs/diagrams
 ---
 
 # Brand Applications
@@ -19,4 +19,4 @@ tags:
 - [[Social Media_1]] - `contains` [EXTRACTED]
 - [[Website]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/guidelines
+#graphify/document #graphify/EXTRACTED #community/docs/diagrams

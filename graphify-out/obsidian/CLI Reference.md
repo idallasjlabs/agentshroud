@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Custom Skills"
+community: "Gateway Test Suite"
 location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Gateway_Test_Suite
 ---
 
 # CLI Reference
@@ -19,4 +19,4 @@ tags:
 - [[Screenshot]] - `contains` [EXTRACTED]
 - [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

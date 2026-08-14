@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "Planning Docs"
+community: "Security Docs"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Security_Docs
 ---
 
 # CRITICAL — Must Fix Before Release
@@ -16,4 +16,4 @@ tags:
 - [[C5 `status` Endpoint Exposes Security Posture Without Authentication]] - `contains` [EXTRACTED]
 - [[New Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

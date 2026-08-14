@@ -1,11 +1,11 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "branding/colors"
+community: "branding/typography"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/colors
+  - community/branding/typography
 ---
 
 # Branding Assets Index
@@ -17,4 +17,4 @@ tags:
 - [[Brand Quick Reference]] - `references` [EXTRACTED]
 - [[Branding README  Overview]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/colors
+#graphify/document #graphify/EXTRACTED #community/branding/typography

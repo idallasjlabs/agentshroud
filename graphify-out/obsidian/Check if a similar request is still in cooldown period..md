@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Kill Switch Config"
 location: "L345"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Kill_Switch_Config
 ---
 
 # Check if a similar request is still in cooldown period.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_request_in_cooldown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch_Config

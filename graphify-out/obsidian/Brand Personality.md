@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "branding/guidelines"
+community: "Bot Skill Config"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/Bot_Skill_Config
 ---
 
 # Brand Personality
@@ -16,4 +16,4 @@ tags:
 - [[Voice & Tone_1]] - `contains` [EXTRACTED]
 - [[Writing Style]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/guidelines
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

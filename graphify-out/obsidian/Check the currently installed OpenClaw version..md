@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "rationale"
-community: "gateway/tools"
+community: "CHANGELOG.md"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/tools
+  - community/CHANGELOGmd
 ---
 
 # Check the currently installed OpenClaw version.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_current_version()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/tools
+#graphify/rationale #graphify/EXTRACTED #community/CHANGELOGmd

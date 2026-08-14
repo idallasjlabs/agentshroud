@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: "docs/project"
+community: ".github/agents"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/github/agents
 ---
 
 # COMMUNICATION-TEMPLATES.md
@@ -16,4 +16,4 @@ tags:
 - [[Trademark Notice (AgentShroud USPTO Serial No. 99728633)]] - `references` [EXTRACTED]
 - [[Usage Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/github/agents

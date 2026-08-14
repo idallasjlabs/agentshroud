@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # Browser — Secure Browser Automation (SKILL)
@@ -21,4 +21,4 @@ tags:
 - [[SecureBrowser.navigate()]] - `references` [EXTRACTED]
 - [[browserFetch() (Node.js Playwright fetch)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/vault

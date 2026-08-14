@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "ESP32 Firmware"
 location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/ESP32_Firmware
 ---
 
 # "Calendar/Contacts not found"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Troubleshooting_31]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware

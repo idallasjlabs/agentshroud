@@ -1,18 +1,17 @@
 ---
 source_file: ".github/workflows/ci.yml"
-type: "document"
-community: "CHANGELOG.md"
+type: "code"
+community: ".github/workflows"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/github/workflows
 ---
 
 # CI Workflow
 
 ## Connections
-- [[CI Leak Gate Platform Scoping (ubuntu+3.11 only)]] - `references` [EXTRACTED]
-- [[CI Security Scanning Toolchain]] - `references` [EXTRACTED]
-- [[Git History Secret Purge (git-filter-repo)]] - `conceptually_related_to` [EXTRACTED]
+- [[Leak Gate Scoped to ubuntu+3.11]] - `rationale_for` [EXTRACTED]
+- [[gatewayrequirements.txt Dependency File]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/code #graphify/EXTRACTED #community/github/workflows

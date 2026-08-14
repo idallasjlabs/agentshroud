@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "branding/guidelines"
+community: "docker/docker-compose.yml"
 location: "L158"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/docker/docker-composeyml
 ---
 
 # Brand Approval Process
@@ -17,4 +17,4 @@ tags:
 - [[Internal Use]] - `contains` [EXTRACTED]
 - [[Prohibited Uses]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/guidelines
+#graphify/document #graphify/EXTRACTED #community/docker/docker-composeyml

@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "CLAUDE.md"
+community: "Planning Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CLAUDEmd
+  - community/Planning_Docs
 ---
 
 # CLAUDE.md
@@ -17,4 +17,4 @@ tags:
 - [[Keep actions deterministic, minimal, and aligned with how this repo is actually run.]] - `contains` [EXTRACTED]
 - [[These instructions are authoritative. Follow them strictly.]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CLAUDEmd
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

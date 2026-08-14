@@ -1,11 +1,11 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "branding/colors"
+community: "branding/typography"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/colors
+  - community/branding/typography
 ---
 
 # Brand Quick Reference
@@ -14,4 +14,4 @@ tags:
 - [[Brand Primary Color AgentShroud Blue (1583f0)]] - `references` [EXTRACTED]
 - [[Branding Assets Index]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/colors
+#graphify/document #graphify/EXTRACTED #community/branding/typography

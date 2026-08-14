@@ -1,13 +1,13 @@
 ---
 source_file: "chatbot/requirements.txt"
 type: "code"
-community: "chatbot/requirements.txt"
+community: "docs/project"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/requirementstxt
+  - community/docs/project
 ---
 
 # Chatbot Service Dependencies (openai, fastapi, uvicorn, pydantic)
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/requirementstxt
+#graphify/code #graphify/EXTRACTED #community/docs/project

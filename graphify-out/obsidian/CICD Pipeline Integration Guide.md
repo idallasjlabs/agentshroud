@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # CI/CD Pipeline Integration Guide
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CICD Quality Gates (14 jobs, 6 workflows)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Architecture_Docs
+#graphify/document #graphify/INFERRED #community/Gateway_Test_Suite

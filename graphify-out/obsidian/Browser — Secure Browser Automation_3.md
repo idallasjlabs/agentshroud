@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "src/interfaces"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/src/interfaces
 ---
 
 # Browser — Secure Browser Automation
@@ -26,4 +26,4 @@ tags:
 - [[Troubleshooting_7]] - `contains` [EXTRACTED]
 - [[Usage_47]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/src/interfaces

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "rationale"
-community: "Bot CVE Scorecard"
+community: "Voice Gateway Tests"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_CVE_Scorecard
+  - community/Voice_Gateway_Tests
 ---
 
 # Build an SCLCaller with OWNER role — no FastAPI dependency resolution.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_owner_caller()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_CVE_Scorecard
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Tests

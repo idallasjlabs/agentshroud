@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "LLM Proxy Resource Guard"
+community: "Gateway Test Suite"
 location: "L297"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/Gateway_Test_Suite
 ---
 
 # Check if agent has exceeded CPU time limit.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_cpu_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

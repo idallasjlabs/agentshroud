@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/BRANCH_PROTECTION.md"
 type: "document"
-community: "docs/governance"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/governance
+  - community/Bot_Skill_Config
 ---
 
 # Branch Protection Rules (BRANCH_PROTECTION.md)
@@ -14,4 +14,4 @@ tags:
 - [[Local PreToolUse Hook block_main_commits.sh]] - `references` [EXTRACTED]
 - [[Required CI Status Checks test, lint, smoke-static]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/governance
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

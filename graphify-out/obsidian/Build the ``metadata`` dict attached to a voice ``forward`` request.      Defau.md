@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "voice_gateway/server.py"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/voice_gateway/serverpy
 ---
 
 # Build the ``metadata`` dict attached to a voice ``/forward`` request.      Defau
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_voice_forward_metadata()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/voice_gateway/serverpy

@@ -12,8 +12,8 @@ tags:
 # BrowserSecurityGuard
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
-- [[.__init__()_43]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
+- [[.__init__()_42]] - `calls` [EXTRACTED]
 - [[.__init__()_56]] - `method` [EXTRACTED]
 - [[.analyze_content()]] - `method` [EXTRACTED]
 - [[.analyze_screenshot()]] - `method` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[.register_screenshot_hook()]] - `method` [EXTRACTED]
 - [[.test_browser_security_guard_instantiates()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]

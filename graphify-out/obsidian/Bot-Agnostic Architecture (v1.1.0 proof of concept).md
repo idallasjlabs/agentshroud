@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
 ---
 
 # Bot-Agnostic Architecture (v1.1.0 proof of concept)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SOUL_2]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
