@@ -46,6 +46,7 @@ jobs:
           pip install -r gateway/requirements.txt
           pip install pytest-cov
           pip install pytest-xdist
+          pip install pytest-timeout
 
       - name: Run tests with coverage
         run: |

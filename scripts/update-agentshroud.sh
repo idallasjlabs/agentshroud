@@ -173,7 +173,14 @@ _rollback() {
     set -a
     # shellcheck source=docker/versions.env
     . "$VERSIONS_ENV"
+    # shellcheck source=docker/.env disable=SC1091
+    . "$REPO_ROOT/docker/.env" 2>/dev/null || true
     set +a
+    # Same reasoning as the "rebuild + restart" step above: the local
+    # agentshroud/hermes image tag must be rebuilt from the restored
+    # HERMES_IMAGE, or `run-standalone.sh up` silently reruns whatever was
+    # last built (which, mid-rollback, is the failed candidate).
+    $COMPOSE build hermes
     bash "$REPO_ROOT/docker/bots/hermes/run-standalone.sh" down 2>/dev/null || true
     AGENTSHROUD_PROJECT="$PROJECT" \
     AGENTSHROUD_VERSION="${AGENTSHROUD_VERSION:-latest}" \
@@ -209,14 +216,42 @@ if [ "$WANT_OPENCLAW" -eq 1 ]; then
   echo "  ✓ openclaw rebuilt and restarted"
 fi
 if [ "$WANT_HERMES" -eq 1 ]; then
-  # Hermes deploys via docker run (run-standalone.sh), not compose — see
-  # project_hermes_do_request_ptb226_fix.md for why (compose-specific race).
+  # Hermes deploys via docker run (run-standalone.sh), not `docker-compose up`
+  # — see project_hermes_do_request_ptb226_fix.md for why (compose-specific
+  # race). But run-standalone.sh only ever RUNS the pre-built local image tag
+  # (agentshroud/hermes:${AGENTSHROUD_VERSION:-latest}) — it never builds it.
+  # Discovered live during the SCRUM-129 Hermes v0.20.1 bump: without this
+  # explicit build step, `down`+`up` silently restarted the OLD image (whatever
+  # was last built), while docker/versions.env's HERMES_IMAGE had already
+  # moved on — "Update Complete" would print having changed nothing running.
+  # `hermes` is a profile-gated compose service defined purely for its build
+  # block (docker/docker-compose.yml, profiles: [hermes, full]); it is never
+  # started via compose, only built. This is the same `$COMPOSE build hermes`
+  # call scripts/asb's `rebuild full` already uses for the same reason.
+  $COMPOSE build hermes
+  echo "  ✓ hermes image rebuilt from the new HERMES_IMAGE pin"
+
+  # docker/bots/hermes/run-standalone.sh reads AGENTSHROUD_MODEL_MODE /
+  # AGENTSHROUD_LOCAL_MODEL_REF / AGENTSHROUD_LOCAL_MODEL / HERMES_MAIN_MODEL
+  # from the CALLING SHELL's environment at container-creation time — it does
+  # NOT source docker/.env itself. Also discovered live during this bump:
+  # without sourcing docker/.env here, `run-standalone.sh up` fell back to its
+  # own hardcoded defaults (AGENTSHROUD_MODEL_MODE=cloud, empty
+  # HERMES_MAIN_MODEL), silently reverting Hermes from its configured local
+  # model back to the Anthropic cloud default on every update. docker/.env is
+  # the source of truth for these; source it the same way versions.env already
+  # is above (missing file is fine pre-setup, hence the `|| true`).
+  set -a
+  # shellcheck source=docker/.env disable=SC1091
+  . "$REPO_ROOT/docker/.env" 2>/dev/null || true
+  set +a
+
   bash "$REPO_ROOT/docker/bots/hermes/run-standalone.sh" down 2>/dev/null || true
   AGENTSHROUD_PROJECT="$PROJECT" \
   AGENTSHROUD_VERSION="${AGENTSHROUD_VERSION:-latest}" \
   AGENTSHROUD_SECRETS_DIR="$HOME/.agentshroud/.asb-secrets" \
     bash "$REPO_ROOT/docker/bots/hermes/run-standalone.sh" up
-  echo "  ✓ hermes rebuilt and restarted"
+  echo "  ✓ hermes restarted from the freshly built image"
 fi
 echo
 

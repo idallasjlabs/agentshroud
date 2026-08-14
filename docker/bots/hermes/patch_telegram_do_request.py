@@ -25,13 +25,31 @@
 # patch), producing an image that looks built successfully but still has the
 # crash-causing bug. Reproduced live on a real host lacking buildx. A plain .py file
 # invoked via `RUN python3 /path/to/script.py` works identically under both builders.
+#
+# Superseded-upstream check (added during the v0.18.2 -> v0.20.1 vendor bump,
+# SCRUM-129 Phase 0): as of v2026.8.13, NousResearch fixed the identical bug
+# natively — `_instrument_polling_request` in adapter.py now does the same
+# __class__-swap-onto-a___slots__-subclass technique this patch applies, citing
+# the same root cause (PTB's HTTPXRequest __slots__ on Python 3.13, upstream
+# issue #64482). When the OLD vulnerable anchor is gone, we verify the NEW
+# native fix is actually present (not just "anchor moved for some other
+# reason") before treating this patch as an intentional no-op. If neither
+# pattern is found, fail loudly as before — that's still genuine drift.
 
 import sys
 
 p = "/opt/hermes/plugins/platforms/telegram/adapter.py"
 src = open(p, encoding="utf-8").read()
 anchor = "        request.do_request = _do_request\n        return request"
+native_fix_marker = "class _InstrumentedPollingRequest("
 if anchor not in src:
+    if native_fix_marker in src and "do_request" in src and "__slots__" in src:
+        print(
+            "[hermes-build] telegram do_request patch SKIPPED (no-op) -- upstream "
+            "now ships an equivalent native fix (_InstrumentedPollingRequest class-"
+            "swap in adapter.py). Nothing to patch; this is expected on v0.20.0+."
+        )
+        sys.exit(0)
     sys.exit(
         "PATCH ANCHOR NOT FOUND in telegram adapter.py -- upstream digest drift; "
         "re-verify the do_request fix in docker/bots/hermes/patch_telegram_do_request.py."
