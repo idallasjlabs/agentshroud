@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Architecture Docs"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/docs/vault
 ---
 
 # SecurityPipeline (75 modules, 7 layers)
@@ -18,4 +18,4 @@ tags:
 - [[Website 7 Defense Layers  75 Modules Table]] - `conceptually_related_to` [EXTRACTED]
 - [[Website Production-grade Features Section]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/concept #graphify/EXTRACTED #community/docs/vault

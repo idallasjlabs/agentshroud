@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "code"
-community: "Security Docs"
+community: "Bot Skill Config"
 location: "gateway/security/proxy/pipeline.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Skill_Config
 ---
 
 # SecurityPipeline (proxy/pipeline.py) — Central inbound/outbound security orchestration
@@ -16,4 +16,4 @@ tags:
 - [[EgressFilter (egress_filter.py) — Outbound domain allowlistdenylist, default-deny]] - `orchestrates` [EXTRACTED]
 - [[PromptGuard (prompt_guard.py) — 49 regex patterns, 35+ languages, weighted scoring]] - `orchestrates` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

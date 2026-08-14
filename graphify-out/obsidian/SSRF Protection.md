@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "concept"
-community: "docs/vault"
+community: "Planning Docs"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Planning_Docs
 ---
 
 # SSRF Protection
@@ -15,4 +15,4 @@ tags:
 - [[Web Proxy Config Example]] - `describes` [EXTRACTED]
 - [[WebProxy_2]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Planning_Docs

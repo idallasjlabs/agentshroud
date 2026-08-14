@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "docker/config/ssh/"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # SSH client config (bot container — pi/marvin hosts, key-only auth, StrictHostKeyChecking)
@@ -15,4 +15,4 @@ tags:
 - [[agentshroud-bot service (docker-compose port 18789, 4GB memory, isolated network)]] - `configures` [INFERRED]
 - [[agentshroud.yaml ssh section (SSH host allowlist, denied commands)]] - `complements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

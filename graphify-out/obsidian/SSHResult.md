@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "Approval Queue Tests"
+community: "Forward Routing & Approval"
 location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Queue_Tests
+  - community/Forward_Routing__Approval
 ---
 
 # SSHResult
@@ -38,4 +38,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Queue_Tests
+#graphify/code #graphify/INFERRED #community/Forward_Routing__Approval

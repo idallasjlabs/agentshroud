@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Custom_Skills
+  - community/Gateway_Test_Suite
 ---
 
 # SecureBrowser SKILL
@@ -14,4 +14,4 @@ tags:
 - [[SecureBrowser Skill README]] - `references` [EXTRACTED]
 - [[browser-fetch.js]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Custom_Skills
+#graphify/document #graphify/INFERRED #community/Gateway_Test_Suite

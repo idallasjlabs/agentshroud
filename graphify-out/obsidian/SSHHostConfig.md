@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "Approval Queue Tests"
+community: "Forward Routing & Approval"
 location: "L15"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Queue_Tests
+  - community/Forward_Routing__Approval
 ---
 
 # SSHHostConfig
@@ -56,4 +56,4 @@ tags:
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Queue_Tests
+#graphify/code #graphify/INFERRED #community/Forward_Routing__Approval

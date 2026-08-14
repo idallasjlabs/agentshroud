@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "SOC RBAC & Auth"
 location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/SOC_RBAC__Auth
 ---
 
 # SecurityPipeline
 
 ## Connections
-- [[.__init__()_33]] - `method` [EXTRACTED]
+- [[.__init__()_32]] - `method` [EXTRACTED]
 - [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[._maybe_record_trust_violation()]] - `method` [EXTRACTED]
 - [[._pipeline_with_trust()]] - `calls` [EXTRACTED]
@@ -21,8 +21,8 @@ tags:
 - [[.get_stats()_6]] - `method` [EXTRACTED]
 - [[.pipeline()_1]] - `calls` [EXTRACTED]
 - [[.pipeline()]] - `calls` [EXTRACTED]
-- [[.process_inbound()_1]] - `method` [EXTRACTED]
-- [[.process_outbound()_2]] - `method` [EXTRACTED]
+- [[.process_inbound()]] - `method` [EXTRACTED]
+- [[.process_outbound()]] - `method` [EXTRACTED]
 - [[.set_global_mode()]] - `method` [EXTRACTED]
 - [[.test_detector_failure_fails_closed_for_non_owner()]] - `calls` [EXTRACTED]
 - [[.test_full_trust_tool_result_injection_audited_not_blocked()]] - `calls` [EXTRACTED]
@@ -40,13 +40,13 @@ tags:
 - [[AuditChain]] - `shares_data_with` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[FakeClock]] - `uses` [INFERRED]
-- [[FastAPI_3]] - `uses` [INFERRED]
+- [[FastAPI_2]] - `uses` [INFERRED]
 - [[FilterResult]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
 - [[Main security pipeline that all messages pass through.      Wires together Prom]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `shares_data_with` [INFERRED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[Path_34]] - `uses` [INFERRED]
+- [[Path_35]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
@@ -99,7 +99,7 @@ tags:
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[_make_integrity_pipeline()]] - `calls` [EXTRACTED]
 - [[_make_pipeline()]] - `calls` [EXTRACTED]
@@ -141,4 +141,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth

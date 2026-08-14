@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "docs/ssh-capability.md"
+community: "docker/bot-capabilities.md"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/ssh-capabilitymd
+  - community/docker/bot-capabilitiesmd
 ---
 
 # Security Layers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Capability — Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/ssh-capabilitymd
+#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd

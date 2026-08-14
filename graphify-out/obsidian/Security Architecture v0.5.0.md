@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "docs/reviews"
+community: "Gateway Security Module"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/reviews
+  - community/Gateway_Security_Module
 ---
 
 # Security Architecture v0.5.0
@@ -18,4 +18,4 @@ tags:
 - [[Threat Model (Prompt Injection, Credential Theft, Data Exfil, Lateral Movement, Supply Chain)]] - `contains` [EXTRACTED]
 - [[Zero-Trust Proxy Architecture (User controls data boundary)]] - `documents` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/reviews
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

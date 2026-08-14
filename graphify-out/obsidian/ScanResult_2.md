@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Gateway Security Module"
+community: "gateway/runtime"
 location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Security_Module
+  - community/gateway/runtime
 ---
 
 # ScanResult
@@ -21,8 +21,8 @@ tags:
 - [[.severity()]] - `method` [EXTRACTED]
 - [[Aggregated result of scanning a skill file or an entire skill tree.]] - `rationale_for` [EXTRACTED]
 - [[CompletedProcess_3]] - `uses` [INFERRED]
-- [[Path_21]] - `uses` [INFERRED]
-- [[Path_37]] - `uses` [INFERRED]
+- [[Path_22]] - `uses` [INFERRED]
+- [[Path_38]] - `uses` [INFERRED]
 - [[ScanResult_3]] - `uses` [INFERRED]
 - [[ScanResult_4]] - `uses` [INFERRED]
 - [[SkillGuard_1]] - `uses` [INFERRED]
@@ -45,4 +45,4 @@ tags:
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Security_Module
+#graphify/code #graphify/INFERRED #community/gateway/runtime

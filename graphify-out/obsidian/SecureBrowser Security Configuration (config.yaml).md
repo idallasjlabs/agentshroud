@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/config.yaml"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # SecureBrowser Security Configuration (config.yaml)
@@ -14,4 +14,4 @@ tags:
 - [[Browser — Secure Browser Automation (SKILL)]] - `references` [EXTRACTED]
 - [[SecureBrowser._load_config()]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/vault

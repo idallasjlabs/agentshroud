@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "concept"
-community: "Gateway Security Module"
+community: "Planning Docs"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Planning_Docs
 ---
 
 # STPA-Sec Methodology
@@ -14,4 +14,4 @@ tags:
 - [[i-sec-defense Blue Team Security Auditor]] - `references` [EXTRACTED]
 - [[i-sec-offense Red Team Adversarial Tester]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/concept #graphify/EXTRACTED #community/Planning_Docs

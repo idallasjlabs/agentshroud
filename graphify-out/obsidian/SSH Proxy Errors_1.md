@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # SSH Proxy Errors
@@ -22,4 +22,4 @@ tags:
 - [[Session Duration Exceeded]] - `contains` [EXTRACTED]
 - [[Tailscale Mesh VPN (tail240ea8.ts.net)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

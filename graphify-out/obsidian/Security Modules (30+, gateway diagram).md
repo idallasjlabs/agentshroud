@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "Architecture Docs"
+community: "docs/vault"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/docs/vault
 ---
 
 # Security Modules (30+, gateway diagram)
@@ -15,4 +15,4 @@ tags:
 - [[prompt_guard (prompt injection)]] - `shares_data_with` [EXTRACTED]
 - [[trust_manager (trust levels)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/image #graphify/EXTRACTED #community/docs/vault

@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Bot Skill Config"
+community: "branding/README.md"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/branding/READMEmd
 ---
 
 # SecureBrowser
 
 ## Connections
-- [[.__init__()_5]] - `method` [EXTRACTED]
+- [[.__init__()]] - `method` [EXTRACTED]
 - [[._classify_risk()]] - `method` [EXTRACTED]
 - [[._domain_matches()]] - `method` [EXTRACTED]
 - [[._init_browser()]] - `method` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[browse.py]] - `contains` [EXTRACTED]
 - [[main()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/branding/READMEmd

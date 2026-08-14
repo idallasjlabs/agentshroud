@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "IEC 62443 Scorecard"
+community: "gateway/cli"
 location: "L1890"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/IEC_62443_Scorecard
+  - community/gateway/cli
 ---
 
 # Score domain 27: Memory Integrity (0-5). OWASP ASI-08, MITRE ATLAS.      1=memor
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_memory_integrity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/IEC_62443_Scorecard
+#graphify/rationale #graphify/EXTRACTED #community/gateway/cli

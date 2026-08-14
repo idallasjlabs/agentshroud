@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Approval Queue Tests"
+community: "Forward Routing & Approval"
 location: "L19"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval_Queue_Tests
+  - community/Forward_Routing__Approval
 ---
 
 # SSHConfig
@@ -17,7 +17,7 @@ tags:
 - [[SSHHostConfig]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[SSHResult]] - `uses` [INFERRED]
-- [[proxy()_1]] - `references` [EXTRACTED]
+- [[proxy()_2]] - `references` [EXTRACTED]
 - [[ssh_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval_Queue_Tests
+#graphify/code #graphify/INFERRED #community/Forward_Routing__Approval

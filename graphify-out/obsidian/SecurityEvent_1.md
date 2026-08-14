@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Voice Gateway Tests"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Voice_Gateway_Tests
 ---
 
 # SecurityEvent
@@ -17,7 +17,7 @@ tags:
 - [[.test_minimal_construction()]] - `calls` [EXTRACTED]
 - [[.test_no_bot_id_returns_all_events()]] - `calls` [EXTRACTED]
 - [[.test_optional_fields_default_none()]] - `calls` [EXTRACTED]
-- [[Any_63]] - `uses` [INFERRED]
+- [[Any_65]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[SecurityEvent]] - `uses` [INFERRED]
 - [[Severity_1]] - `uses` [INFERRED]
@@ -32,4 +32,4 @@ tags:
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Tests

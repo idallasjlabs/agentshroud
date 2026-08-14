@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "document"
-community: "docs/project"
+community: "docs/vault"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/docs/vault
 ---
 
 # Security Terms
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Glossary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/docs/vault

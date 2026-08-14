@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "Custom Skills"
+community: "Bot Skill Config"
 location: "L1-504"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # SecureBrowser browse.py — enterprise secure browser automation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecureBrowser security-policies.md — threat model and policy reference]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

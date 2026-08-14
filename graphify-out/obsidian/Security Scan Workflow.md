@@ -1,11 +1,11 @@
 ---
 source_file: ".github/workflows/security-scan.yml"
 type: "code"
-community: ".github/workflows"
+community: "Bot Skill Config"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/github/workflows
+  - community/Bot_Skill_Config
 ---
 
 # Security Scan Workflow
@@ -15,4 +15,4 @@ tags:
 - [[Python Dependency Audit Job (pip-audit)]] - `references` [EXTRACTED]
 - [[Trivy Filesystem Scan Job (CRITICALHIGH CVEs)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/github/workflows
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

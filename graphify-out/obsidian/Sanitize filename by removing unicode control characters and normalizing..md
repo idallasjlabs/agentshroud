@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
+community: "Gateway Test Suite"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Gateway_Test_Suite
 ---
 
 # Sanitize filename by removing unicode control characters and normalizing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.sanitize_filename()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

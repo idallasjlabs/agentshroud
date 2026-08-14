@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "concept"
-community: "docs/ssh-security-review.md"
+community: "Bot Skill Config"
 location: "gateway/ssh_proxy/proxy.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/ssh-security-reviewmd
+  - community/Bot_Skill_Config
 ---
 
 # SSH Proxy Module (gateway/ssh_proxy/proxy.py)
@@ -20,4 +20,4 @@ tags:
 - [[test-coverage-report]] - `covers` [EXTRACTED]
 - [[test-plan]] - `tests` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/ssh-security-reviewmd
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

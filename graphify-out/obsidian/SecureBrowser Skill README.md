@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Custom Skills"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Gateway_Test_Suite
 ---
 
 # SecureBrowser Skill README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SecureBrowser SKILL]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

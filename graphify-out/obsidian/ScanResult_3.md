@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Gateway Skills System"
+community: "gateway/runtime"
 location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Skills_System
+  - community/gateway/runtime
 ---
 
 # ScanResult
@@ -18,4 +18,4 @@ tags:
 - [[SkillsManifest]] - `uses` [INFERRED]
 - [[_print_findings()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Skills_System
+#graphify/code #graphify/INFERRED #community/gateway/runtime

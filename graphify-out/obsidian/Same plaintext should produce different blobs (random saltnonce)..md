@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
+community: "Bot Skill Config"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Bot_Skill_Config
 ---
 
 # Same plaintext should produce different blobs (random salt/nonce).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_different_encryptions_differ()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

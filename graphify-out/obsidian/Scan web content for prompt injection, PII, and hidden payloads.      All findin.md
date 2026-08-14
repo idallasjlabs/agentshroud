@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: ".github/agents"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/github/agents
 ---
 
 # Scan web content for prompt injection, PII, and hidden payloads.      All findin
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[WebContentScanner]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/github/agents

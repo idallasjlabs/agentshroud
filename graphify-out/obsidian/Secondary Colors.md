@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "branding/colors"
+community: "skills/openclaw"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/colors
+  - community/skills/openclaw
 ---
 
 # Secondary Colors
@@ -17,4 +17,4 @@ tags:
 - [[Ice Blue]] - `contains` [EXTRACTED]
 - [[Steel Blue]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/colors
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

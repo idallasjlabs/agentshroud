@@ -1,12 +1,12 @@
 ---
 source_file: "docs/redteam/feature-priorities.md"
 type: "concept"
-community: "docs/redteam"
+community: "Bot Skill Config"
 location: "line 57"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/redteam
+  - community/Bot_Skill_Config
 ---
 
 # STPA-Sec methodology (MIT/Leveson) for control structure analysis
@@ -16,4 +16,4 @@ tags:
 - [[Red Team Assessment Plan (Steven Hay, Feb 2026)]] - `uses` [EXTRACTED]
 - [[feature-priorities_1]] - `uses` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/redteam
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

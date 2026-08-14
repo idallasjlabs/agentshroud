@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Bot Skill Config"
+community: "gateway/cli"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/gateway/cli
 ---
 
 # SecureBrowser
 
 ## Connections
-- [[.__init__()_6]] - `method` [EXTRACTED]
+- [[.__init__()_1]] - `method` [EXTRACTED]
 - [[._classify_risk()_1]] - `method` [EXTRACTED]
 - [[._domain_matches()_1]] - `method` [EXTRACTED]
 - [[._init_browser()_1]] - `method` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[browse.py_1]] - `contains` [EXTRACTED]
 - [[main()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/gateway/cli

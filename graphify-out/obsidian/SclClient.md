@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/cli/client.py"
 type: "code"
-community: "gateway/cli"
+community: "Gateway Test Suite"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/cli
+  - community/Gateway_Test_Suite
 ---
 
 # SCLClient
 
 ## Connections
-- [[.__init__()_11]] - `method` [EXTRACTED]
+- [[.__init__()_6]] - `method` [EXTRACTED]
 - [[._request()]] - `method` [EXTRACTED]
 - [[.add_collaborator()]] - `method` [EXTRACTED]
 - [[.add_group_member()]] - `method` [EXTRACTED]
@@ -45,7 +45,7 @@ tags:
 - [[.test_init_strips_trailing_slash_and_builds_soc_base()]] - `calls` [EXTRACTED]
 - [[.test_post_serializes_body()]] - `calls` [EXTRACTED]
 - [[.test_put_and_delete_methods()]] - `calls` [EXTRACTED]
-- [[Any_6]] - `uses` [INFERRED]
+- [[Any_4]] - `uses` [INFERRED]
 - [[Exception_3]] - `uses` [INFERRED]
 - [[Minimal synchronous httpx-free client for the SCL API.]] - `rationale_for` [EXTRACTED]
 - [[TestClientFromEnv]] - `uses` [INFERRED]
@@ -67,4 +67,4 @@ tags:
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 - [[test_convenience_methods_hit_expected_endpoints()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/cli
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

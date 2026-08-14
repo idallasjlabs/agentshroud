@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/README.md"
 type: "document"
-community: "CONTRIBUTING.md"
+community: "docs/vault"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CONTRIBUTINGmd
+  - community/docs/vault
 ---
 
 # Scripts (to be implemented throughout development)
@@ -17,4 +17,4 @@ tags:
 - [[Security Scripts]] - `contains` [EXTRACTED]
 - [[Utility Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CONTRIBUTINGmd
+#graphify/document #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Security Docs"
+community: "Planning Docs"
 location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Planning_Docs
 ---
 
 # Scenario 1: Multi-User Bot Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Revised Threat Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

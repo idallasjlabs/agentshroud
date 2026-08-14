@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "browse.py:113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # SecureBrowser._validate_url()
@@ -16,4 +16,4 @@ tags:
 - [[SecureBrowser._log_security_event()]] - `calls` [EXTRACTED]
 - [[SecureBrowser.navigate()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/docs/vault

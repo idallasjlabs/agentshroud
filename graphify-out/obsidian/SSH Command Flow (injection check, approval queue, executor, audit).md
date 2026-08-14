@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/sequence-diagrams.md"
 type: "concept"
-community: "docs/flows"
+community: "branding/colors"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/flows
+  - community/branding/colors
 ---
 
 # SSH Command Flow (injection check, approval queue, executor, audit)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Sequence Diagrams (doc)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/flows
+#graphify/concept #graphify/EXTRACTED #community/branding/colors

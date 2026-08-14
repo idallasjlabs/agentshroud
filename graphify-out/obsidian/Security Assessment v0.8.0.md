@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security-assessment-v0.8.0.md"
 type: "document"
-community: "docs/reviews"
+community: "Gateway Security Module"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/reviews
+  - community/Gateway_Security_Module
 ---
 
 # Security Assessment v0.8.0
@@ -19,4 +19,4 @@ tags:
 - [[Security Architecture v0.5.0]] - `extends` [INFERRED]
 - [[v0.8.0 'Watchtower' Enforcement Hardening]] - `assesses` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/reviews
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "rationale"
-community: "SOC Dashboard"
+community: "Gateway Security Module"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Gateway_Security_Module
 ---
 
 # STANDBY = binary installed but cannot run in this environment; should be healthy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_standby_service()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

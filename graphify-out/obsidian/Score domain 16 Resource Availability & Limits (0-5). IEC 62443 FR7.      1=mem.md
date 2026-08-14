@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "IEC 62443 Scorecard"
+community: "gateway/cli"
 location: "L1367"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/IEC_62443_Scorecard
+  - community/gateway/cli
 ---
 
 # Score domain 16: Resource Availability & Limits (0-5). IEC 62443 FR7.      1=mem
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_resource_availability()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/IEC_62443_Scorecard
+#graphify/rationale #graphify/EXTRACTED #community/gateway/cli
