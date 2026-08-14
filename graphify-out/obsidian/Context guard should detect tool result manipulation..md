@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
+community: "Security Module Middleware"
 location: "L480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Security_Module_Middleware
 ---
 
 # Context guard should detect tool result manipulation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_context_guard_tool_manipulation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware

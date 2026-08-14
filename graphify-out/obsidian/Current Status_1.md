@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/README.md"
 type: "document"
-community: "docs/api"
+community: "Setup Docs"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/api
+  - community/Setup_Docs
 ---
 
 # Current Status
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[API Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/api
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

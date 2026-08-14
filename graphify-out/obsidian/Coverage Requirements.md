@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "web/management-dashboard.html"
 location: "L323"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/web/management-dashboardhtml
 ---
 
 # Coverage Requirements
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Writing Exploit Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/web/management-dashboardhtml

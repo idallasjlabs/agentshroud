@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Security Docs"
+community: "docs/governance"
 location: "L399"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/docs/governance
 ---
 
 # Create scan.sh Script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Priority 2 Add OpenSCAP Scanning (HIGH)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/governance

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "Progressive Trust Config"
+community: "MCP Policy Engine"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/MCP_Policy_Engine
 ---
 
 # Create a trust manager with temp DB.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[manager()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine

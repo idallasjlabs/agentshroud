@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "Setup Docs"
+community: "docs/vault"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/docs/vault
 ---
 
 # Current Situation
@@ -16,4 +16,4 @@ tags:
 - [[What the bot can currently see]] - `contains` [EXTRACTED]
 - [[What the bot needs to see]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/vault

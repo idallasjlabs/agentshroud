@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Kill Switch Config"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Kill_Switch_Config
 ---
 
 # Create approval hardening instance for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.hardening()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
-location: "L2346"
+community: "Gateway Test Suite"
+location: "L2353"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Gateway_Test_Suite
 ---
 
 # Consolidated SOC report for dashboard/SIEM pull workflows.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[soc_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "docker/bot-capabilities.md"
+community: "Gateway Test Suite"
 location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/bot-capabilitiesmd
+  - community/Gateway_Test_Suite
 ---
 
 # Credential Isolation — Gateway op-proxy (ACTIVE)
@@ -20,4 +20,4 @@ tags:
 - [[Known working credentials]] - `contains` [EXTRACTED]
 - [[What NEVER to do_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

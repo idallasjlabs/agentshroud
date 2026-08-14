@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # Crash Diagnosis
@@ -17,4 +17,4 @@ tags:
 - [[Python Exception (Exit Code 1)]] - `contains` [EXTRACTED]
 - [[Segfault (Exit Code 139)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

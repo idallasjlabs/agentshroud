@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "branding/logos"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/branding/logos
 ---
 
 # Connection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[init_db()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/branding/logos

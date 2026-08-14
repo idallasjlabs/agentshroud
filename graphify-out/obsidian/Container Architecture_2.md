@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "docs/vault"
+community: "skills/openclaw"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/skills/openclaw
 ---
 
 # Container Architecture
@@ -16,4 +16,4 @@ tags:
 - [[Bot Container (`agentshroud-bot`)]] - `contains` [EXTRACTED]
 - [[Gateway Container (`agentshroud-gateway`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

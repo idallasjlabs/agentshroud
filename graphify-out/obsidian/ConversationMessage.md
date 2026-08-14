@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "URL/Domain Validation Tests"
+community: "Gateway Test Suite"
 location: "L31"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/URL/Domain_Validation_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # ConversationMessage
 
 ## Connections
 - [[.add_conversation_message()]] - `calls` [EXTRACTED]
-- [[.from_dict()_10]] - `calls` [EXTRACTED]
+- [[.from_dict()_11]] - `calls` [EXTRACTED]
 - [[A single message in a conversation.]] - `rationale_for` [EXTRACTED]
 - [[TestAccessControl_2]] - `uses` [INFERRED]
 - [[TestConversationHistory]] - `uses` [INFERRED]
@@ -32,4 +32,4 @@ tags:
 - [[test_session_isolation.py]] - `imports` [EXTRACTED]
 - [[test_session_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/URL/Domain_Validation_Tests
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

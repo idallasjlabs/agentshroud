@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "Cross-Bot Trust Ledger"
+community: "Gateway Test Suite"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/Gateway_Test_Suite
 ---
 
 # CrossBotTrustLedger
@@ -39,4 +39,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[ledger()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "Security Docs"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Security_Docs
 ---
 
 # Critical Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

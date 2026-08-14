@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/README.md"
 type: "document"
-community: "docs/requirements"
+community: "docs/setup-slack.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/requirements
+  - community/docs/setup-slackmd
 ---
 
 # Current Status
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Requirements Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/requirements
+#graphify/document #graphify/EXTRACTED #community/docs/setup-slackmd

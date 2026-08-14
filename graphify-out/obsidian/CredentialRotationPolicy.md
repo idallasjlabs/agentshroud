@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Gateway Security Module"
+community: "skills/openclaw"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/skills/openclaw
 ---
 
 # CredentialRotationPolicy
@@ -17,4 +17,4 @@ tags:
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

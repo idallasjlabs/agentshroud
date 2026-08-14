@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "Bot Skill Config"
-location: "L238"
+community: "Gateway Test Suite"
+location: "L273"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # Create a Jira issue. Returns the new issue key (e.g. 'SCRUM-124').
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[create_issue()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

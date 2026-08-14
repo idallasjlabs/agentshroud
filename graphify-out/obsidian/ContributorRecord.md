@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Test Suite"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Dashboard
+  - community/Gateway_Test_Suite
 ---
 
 # ContributorRecord
@@ -20,4 +20,4 @@ tags:
 - [[Platform]] - `uses` [INFERRED]
 - [[UserRole_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Dashboard
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

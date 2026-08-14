@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "Architecture Docs"
+community: "scripts/switch_model.sh"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/scripts/switch_modelsh
 ---
 
 # Current Setup (Kept)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Configuration_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/scripts/switch_modelsh

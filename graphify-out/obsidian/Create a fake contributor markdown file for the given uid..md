@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "HTTP Forwarder"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/HTTP_Forwarder
 ---
 
 # Create a fake contributor markdown file for the given uid.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_md()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder

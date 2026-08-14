@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "docs/operations"
 location: "L320"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/operations
 ---
 
 # CredentialInjector.get_all_loaded_values returns all loaded credential values.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_get_all_loaded_values_method()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/operations

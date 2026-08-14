@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/docker_engine.py"
 type: "rationale"
-community: "gateway/runtime"
+community: "Bot Skill Config"
 location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/runtime
+  - community/Bot_Skill_Config
 ---
 
 # Container engine backed by the Docker CLI.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DockerEngine]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/runtime
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

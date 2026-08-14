@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Custom Skills"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Custom_Skills
 ---
 
 # Core Discipline: Understand → Diagram → Validate → Export
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Custom_Skills

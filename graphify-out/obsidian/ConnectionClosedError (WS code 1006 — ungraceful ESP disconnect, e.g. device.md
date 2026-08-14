@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway Tests"
-location: "L1609"
+community: "Security Pipeline Core"
+location: "L1617"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Security_Pipeline_Core
 ---
 
 # ConnectionClosedError (WS code 1006 — ungraceful ESP disconnect, e.g. device
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_connectionclosed_error_logs_info_no_traceback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Security_Pipeline_Core

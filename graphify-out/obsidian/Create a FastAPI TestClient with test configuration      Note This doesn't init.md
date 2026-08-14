@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "Telegram Proxy Test Suite"
 location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Create a FastAPI TestClient with test configuration      Note: This doesn't init
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_client()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "concept"
-community: "docker/falco"
+community: "Gateway Test Suite"
 location: "Architecture section"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docker/falco
+  - community/Gateway_Test_Suite
 ---
 
 # Container Stack Architecture (gateway + openclaw + hermes + hci)
@@ -16,4 +16,4 @@ tags:
 - [[Docker Configuration README]] - `references` [EXTRACTED]
 - [[Docker Network Isolation (agentshroud-internal 172.20.016, agentshroud-isolated 172.21.016)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docker/falco
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

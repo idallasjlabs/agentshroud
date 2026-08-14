@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Planning Docs"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Planning_Docs
 ---
 
 # Context tracking for a session.
@@ -15,4 +15,4 @@ tags:
 - [[SessionContext]] - `rationale_for` [EXTRACTED]
 - [[SessionContext_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "README.md"
+community: "Gateway Test Suite"
 location: "L236"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/READMEmd
+  - community/Gateway_Test_Suite
 ---
 
 # Control Centers
@@ -17,4 +17,4 @@ tags:
 - [[Terminal Control Center]] - `contains` [EXTRACTED]
 - [[Web Control Center]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

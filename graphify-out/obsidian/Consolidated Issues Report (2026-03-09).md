@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "document"
-community: "Planning Docs"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Consolidated Issues Report (2026-03-09)
@@ -15,4 +15,4 @@ tags:
 - [[Issue PII Redaction Disabled (spaCyPresidio)]] - `contains` [EXTRACTED]
 - [[Issue Streaming Responses Bypass Outbound Filtering]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

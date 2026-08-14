@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/README.md"
 type: "document"
-community: "docs/data"
+community: "Community 1249"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/data
+  - community/Community_1249
 ---
 
 # Current Status
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Data Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/data
+#graphify/document #graphify/EXTRACTED #community/Community_1249

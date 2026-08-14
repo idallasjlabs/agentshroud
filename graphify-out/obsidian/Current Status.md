@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Bot Container Scripts"
+community: "docs/vault"
 location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/docs/vault
 ---
 
 # Current Status
@@ -16,4 +16,4 @@ tags:
 - [[Development Phases]] - `contains` [EXTRACTED]
 - [[v0.8.0 Focus Areas]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/document #graphify/EXTRACTED #community/docs/vault

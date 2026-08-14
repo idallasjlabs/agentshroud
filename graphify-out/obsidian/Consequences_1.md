@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Consequences
@@ -17,4 +17,4 @@ tags:
 - [[Negative Consequences_1]] - `contains` [EXTRACTED]
 - [[Positive Consequences_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

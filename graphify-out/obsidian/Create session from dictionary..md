@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "URL/Domain Validation Tests"
+community: "Gateway Test Suite"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # Create session from dictionary.
 
 ## Connections
-- [[.from_dict()_10]] - `rationale_for` [EXTRACTED]
+- [[.from_dict()_11]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

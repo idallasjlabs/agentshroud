@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Egress & RBAC Security Core"
 location: "L67"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Config__Test_Fixtures
+  - community/Egress__RBAC_Security_Core
 ---
 
 # ContextGuard
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_62]] - `method` [EXTRACTED]
 - [[._detect_hidden_instructions()]] - `method` [EXTRACTED]
 - [[._detect_instruction_injection()]] - `method` [EXTRACTED]
@@ -37,7 +37,7 @@ tags:
 - [[.test_json_injection_in_context()]] - `calls` [INFERRED]
 - [[.test_oversized_json_payload()]] - `calls` [INFERRED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[Guard against context window poisoning attacks.]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
@@ -102,4 +102,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core

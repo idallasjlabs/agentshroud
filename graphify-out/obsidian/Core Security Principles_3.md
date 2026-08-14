@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Custom Skills"
+community: "Bot Skill Config"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # Core Security Principles
@@ -18,4 +18,4 @@ tags:
 - [[4. Fail Secure]] - `contains` [EXTRACTED]
 - [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/state.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Slack API Proxy"
 location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Slack_API_Proxy
 ---
 
 # Container for application-wide state
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AppState]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy

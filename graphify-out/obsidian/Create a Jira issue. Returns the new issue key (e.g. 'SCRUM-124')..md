@@ -2,7 +2,7 @@
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "rationale"
 community: "Bot Skill Config"
-location: "L238"
+location: "L273"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

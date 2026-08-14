@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "rationale"
-community: "SOC Dashboard"
+community: "Voice Gateway Tests"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Voice_Gateway_Tests
 ---
 
 # Convert a PipelineResult to SecurityEvent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[from_pipeline_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Tests

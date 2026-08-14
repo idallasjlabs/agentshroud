@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/README.md"
 type: "document"
-community: "src/interfaces"
+community: "Bot Skill Config"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/src/interfaces
+  - community/Bot_Skill_Config
 ---
 
 # Control Center
@@ -17,4 +17,4 @@ tags:
 - [[Usage_92]] - `contains` [EXTRACTED]
 - [[What it Shows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/src/interfaces
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

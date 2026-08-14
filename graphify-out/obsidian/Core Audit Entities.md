@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "docs/data"
+community: "skills/openclaw"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/data
+  - community/skills/openclaw
 ---
 
 # Core Audit Entities
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Data Dictionary]] - `contains` [EXTRACTED]
 - [[AuditEntry]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/data
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "Telegram Proxy Test Suite"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Create a PIISanitizer instance for testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sanitizer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

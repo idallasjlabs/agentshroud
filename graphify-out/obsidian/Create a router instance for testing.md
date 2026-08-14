@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "Slack API Proxy"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Slack_API_Proxy
 ---
 
 # Create a router instance for testing
 
 ## Connections
-- [[router()_2]] - `rationale_for` [EXTRACTED]
+- [[router()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "Cross-Bot Trust Ledger"
+community: "Gateway Test Suite"
 location: "L125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Cross-Bot_Trust_Ledger
+  - community/Gateway_Test_Suite
 ---
 
 # CrossBotTrustLedger
@@ -42,7 +42,7 @@ tags:
 - [[TestTrustDecayPolicyValidation]] - `uses` [INFERRED]
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[TrustDecayPolicy_1]] - `uses` [INFERRED]
-- [[TrustManager_2]] - `uses` [INFERRED]
+- [[TrustManager_3]] - `uses` [INFERRED]
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
@@ -52,4 +52,4 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[trust_manager.py]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Cross-Bot_Trust_Ledger
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

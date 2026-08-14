@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Consequences
@@ -17,4 +17,4 @@ tags:
 - [[Negative Consequences_5]] - `contains` [EXTRACTED]
 - [[Positive Consequences_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

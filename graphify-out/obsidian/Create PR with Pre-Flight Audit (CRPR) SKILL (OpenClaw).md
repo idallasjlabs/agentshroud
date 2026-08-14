@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "branding/INDEX.md"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - community/branding/INDEXmd
 ---
 
 # Create PR with Pre-Flight Audit (CRPR) SKILL (OpenClaw)
@@ -14,4 +14,4 @@ tags:
 - [[Code Review (CR) SKILL (OpenClaw)]] - `conceptually_related_to` [INFERRED]
 - [[qa Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/document #graphify/INFERRED #community/branding/INDEXmd

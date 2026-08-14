@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Slack API Proxy"
 location: "L728"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Slack_API_Proxy
 ---
 
 # Copy only the reloadable-field subset from ``new`` onto ``current`` in place.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[apply_reloadable_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Progressive Trust Config"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Progressive_Trust_Config
 ---
 
 # ContentThreat
 
 ## Connections
-- [[.__post_init__()_5]] - `method` [EXTRACTED]
+- [[.__post_init__()_6]] - `method` [EXTRACTED]
 - [[.get_recent_threats()]] - `references` [EXTRACTED]
 - [[.sanitize_content()]] - `references` [EXTRACTED]
 - [[.scan_content_for_threats()]] - `references` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[memory_lifecycle.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config

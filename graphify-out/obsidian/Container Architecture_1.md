@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Architecture Docs"
+community: "Bot Skill Config"
 location: "L693"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Container Architecture
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[10. Infrastructure & Runtime]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

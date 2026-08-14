@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Test Suite"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Dashboard
+  - community/Gateway_Test_Suite
 ---
 
 # ContributorManager
@@ -20,7 +20,7 @@ tags:
 - [[.list_contributors()]] - `method` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_64]] - `uses` [INFERRED]
+- [[Any_66]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult_1]] - `uses` [INFERRED]
 - [[Builds ContributorRecord instances from RBACConfig + TeamsConfig.]] - `rationale_for` [EXTRACTED]
@@ -36,9 +36,8 @@ tags:
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[Platform]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
-- [[Request_7]] - `uses` [INFERRED]
+- [[Request_6]] - `uses` [INFERRED]
 - [[SCLCaller_1]] - `uses` [INFERRED]
-- [[SCLCaller_3]] - `uses` [INFERRED]
 - [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
 - [[ServiceActionRequest]] - `uses` [INFERRED]
@@ -49,10 +48,10 @@ tags:
 - [[SetUserModeRequest]] - `uses` [INFERRED]
 - [[UpdateDisplayNameRequest]] - `uses` [INFERRED]
 - [[UserRole_1]] - `uses` [INFERRED]
-- [[WebSocket_6]] - `uses` [INFERRED]
+- [[WebSocket_5]] - `uses` [INFERRED]
 - [[contributors.py]] - `contains` [EXTRACTED]
 - [[get_user()]] - `calls` [EXTRACTED]
 - [[list_users()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Dashboard
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

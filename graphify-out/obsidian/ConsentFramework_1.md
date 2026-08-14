@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "code"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "gateway/security/consent_framework.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # ConsentFramework
@@ -15,4 +15,4 @@ tags:
 - [[MCP Shell Injection Prevention]] - `implements` [EXTRACTED]
 - [[consent_framework.py (Security)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

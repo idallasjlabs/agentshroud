@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "ESP32 Firmware"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Config__Test_Fixtures
+  - community/ESP32_Firmware
 ---
 
 # ConsentDecision
@@ -46,4 +46,4 @@ tags:
 - [[consent_framework.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/INFERRED #community/ESP32_Firmware

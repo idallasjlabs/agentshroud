@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "Progressive Trust Config"
+community: "MCP Policy Engine"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/MCP_Policy_Engine
 ---
 
 # Convert score to trust level based on thresholds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._score_to_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine

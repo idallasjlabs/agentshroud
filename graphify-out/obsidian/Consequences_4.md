@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
 type: "document"
-community: "Architecture Docs"
+community: "gateway/tools"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/gateway/tools
 ---
 
 # Consequences
@@ -17,4 +17,4 @@ tags:
 - [[Negative Consequences_4]] - `contains` [EXTRACTED]
 - [[Positive Consequences_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/gateway/tools

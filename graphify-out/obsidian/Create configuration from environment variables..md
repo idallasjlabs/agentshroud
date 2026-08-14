@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Bot Skill Config"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Bot_Skill_Config
 ---
 
 # Create configuration from environment variables.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_env()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

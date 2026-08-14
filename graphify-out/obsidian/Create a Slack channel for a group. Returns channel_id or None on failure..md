@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "Gateway Test Suite"
 location: "L443"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Gateway_Test_Suite
 ---
 
 # Create a Slack channel for a group. Returns channel_id or None on failure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.provision_group_channel()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

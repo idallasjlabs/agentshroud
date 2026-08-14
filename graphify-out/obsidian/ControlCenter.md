@@ -1,18 +1,18 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "src/interfaces"
+community: "docs/ssh-security-review.md"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/src/interfaces
+  - community/docs/ssh-security-reviewmd
 ---
 
 # ControlCenter
 
 ## Connections
-- [[.__init__()_186]] - `method` [EXTRACTED]
+- [[.__init__()_196]] - `method` [EXTRACTED]
 - [[.clear_screen()]] - `method` [EXTRACTED]
 - [[.draw_approvals()]] - `method` [EXTRACTED]
 - [[.draw_box()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[.get_key()_1]] - `method` [EXTRACTED]
 - [[.make_api_request()]] - `method` [EXTRACTED]
 - [[.run()_6]] - `method` [EXTRACTED]
-- [[main()_27]] - `calls` [EXTRACTED]
+- [[main()_29]] - `calls` [EXTRACTED]
 - [[text_control_center.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/src/interfaces
+#graphify/code #graphify/EXTRACTED #community/docs/ssh-security-reviewmd

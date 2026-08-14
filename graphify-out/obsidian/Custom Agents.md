@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: ".github/COPILOT_CLI_SETUP.md"
+community: "browser-extension/popup.js"
 location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/COPILOT_CLI_SETUPmd
+  - community/browser-extension/popupjs
 ---
 
 # Custom Agents
@@ -17,4 +17,4 @@ tags:
 - [[3. safe-refactor]] - `contains` [EXTRACTED]
 - [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd
+#graphify/document #graphify/EXTRACTED #community/browser-extension/popupjs

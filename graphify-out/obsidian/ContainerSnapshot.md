@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Gateway Test Suite"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Config__Test_Fixtures
+  - community/Gateway_Test_Suite
 ---
 
 # ContainerSnapshot
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.check_drift()]] - `references` [EXTRACTED]
 - [[.config_hash()]] - `method` [EXTRACTED]
-- [[.from_dict()_4]] - `method` [EXTRACTED]
+- [[.from_dict()_5]] - `method` [EXTRACTED]
 - [[.get_baseline()]] - `references` [EXTRACTED]
 - [[.set_baseline()]] - `references` [EXTRACTED]
 - [[.setup_method()_30]] - `calls` [EXTRACTED]
@@ -77,4 +77,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

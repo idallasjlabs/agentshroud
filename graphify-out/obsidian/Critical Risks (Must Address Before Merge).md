@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "Planning Docs"
+community: "Bot Container Scripts"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Bot_Container_Scripts
 ---
 
 # Critical Risks (Must Address Before Merge)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Risks & Gaps_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts

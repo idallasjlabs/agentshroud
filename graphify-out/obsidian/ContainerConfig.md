@@ -12,7 +12,7 @@ tags:
 # ContainerConfig
 
 ## Connections
-- [[.from_dict()_2]] - `calls` [EXTRACTED]
+- [[.from_dict()_3]] - `calls` [EXTRACTED]
 - [[.get()_3]] - `references` [EXTRACTED]
 - [[.register()]] - `references` [EXTRACTED]
 - [[.setup_method()_31]] - `calls` [EXTRACTED]

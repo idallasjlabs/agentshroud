@@ -1,12 +1,12 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "docs/TEAM.md"
+community: "docs/diagrams"
 location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/TEAMmd
+  - community/docs/diagrams
 ---
 
 # Container Architecture
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Development Environment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/TEAMmd
+#graphify/document #graphify/EXTRACTED #community/docs/diagrams

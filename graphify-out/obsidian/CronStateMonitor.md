@@ -46,7 +46,7 @@ tags:
 - [[cron_state_monitor.py]] - `contains` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[test_cron_state_monitor.py]] - `implements` [EXTRACTED]
+- [[test_cron_state_monitor.py]] - `imports` [EXTRACTED]
 - [[test_poll_loop_runs_and_stops()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
