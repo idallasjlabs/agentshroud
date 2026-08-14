@@ -1,12 +1,12 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "document"
-community: "CHEATSHEET.md"
+community: "Gateway Test Suite"
 location: "lines 427-435"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CHEATSHEETmd
+  - community/Gateway_Test_Suite
 ---
 
 # Lab Host IPs (marvin, trillian, raspberrypi, Pi-hole)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CHEATSHEETmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

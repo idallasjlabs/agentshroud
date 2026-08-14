@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "Kill Switch Config"
+community: "Security Docs"
 location: "L37"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Kill_Switch_Config
+  - community/Security_Docs
 ---
 
 # KillSwitchConfig
@@ -25,4 +25,4 @@ tags:
 - [[KillSwitchConfig]] - `uses` [INFERRED]
 - [[config()_1]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Kill_Switch_Config
+#graphify/code #graphify/INFERRED #community/Security_Docs

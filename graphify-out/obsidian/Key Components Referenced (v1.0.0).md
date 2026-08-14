@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "docs/compliance"
+community: "Gateway Test Suite"
 location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/compliance
+  - community/Gateway_Test_Suite
 ---
 
 # Key Components Referenced (v1.0.0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Summary_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/compliance
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

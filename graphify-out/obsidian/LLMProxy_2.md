@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
-location: "L51"
+community: "Gateway Test Suite"
+location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/LLM_Proxy_Resource_Guard
+  - community/Gateway_Test_Suite
 ---
 
 # LLMProxy
@@ -18,4 +18,4 @@ tags:
 - [[VRAMHeadroomError]] - `uses` [INFERRED]
 - [[_make_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

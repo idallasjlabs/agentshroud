@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/transcribe.md"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # LLM writes its own Whisper domain-hint prompt
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[graphify transcribe reference]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "docs/claude-security-audit-prompt.md"
+community: "Bot Skill Config"
 location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/claude-security-audit-promptmd
+  - community/Bot_Skill_Config
 ---
 
 # Known Findings (Blue Team Assessment + Steve Hay's Review)
@@ -17,4 +17,4 @@ tags:
 - [[Open Findings]] - `contains` [EXTRACTED]
 - [[Steve Hay's Specific Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/claude-security-audit-promptmd
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

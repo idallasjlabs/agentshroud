@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Enforce-Mode Auto-Revert"
+community: "SOC Service Manager"
 location: "L141"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enforce-Mode_Auto-Revert
+  - community/SOC_Service_Manager
 ---
 
 # KillSwitchAction
@@ -18,7 +18,6 @@ tags:
 - [[DraftEntry]] - `uses` [INFERRED]
 - [[IntelReportStore]] - `uses` [INFERRED]
 - [[SimpleNamespace_1]] - `uses` [INFERRED]
-- [[SimpleNamespace_2]] - `uses` [INFERRED]
 - [[TestAgentshroudUpdates]] - `uses` [INFERRED]
 - [[TestBotUpdates]] - `uses` [INFERRED]
 - [[TestConfig_1]] - `uses` [INFERRED]
@@ -41,4 +40,4 @@ tags:
 - [[killswitch()]] - `references` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enforce-Mode_Auto-Revert
+#graphify/code #graphify/INFERRED #community/SOC_Service_Manager

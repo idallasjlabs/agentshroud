@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Egress & RBAC Security Core"
 location: "L65"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Initialize RBAC manager with configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__init__()_109]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

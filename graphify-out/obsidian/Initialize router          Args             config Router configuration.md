@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "Slack API Proxy"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Slack_API_Proxy
 ---
 
 # Initialize router          Args:             config: Router configuration
 
 ## Connections
-- [[.__init__()]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_14]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy

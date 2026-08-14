@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "Kill Switch Config"
+community: "Bot Skill Config"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Kill_Switch_Config
+  - community/Bot_Skill_Config
 ---
 
 # KillSwitchMonitor
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_89]] - `method` [EXTRACTED]
 - [[._check_request_rate()]] - `method` [EXTRACTED]
 - [[._check_system_resources()]] - `method` [EXTRACTED]
@@ -59,15 +59,15 @@ tags:
 - [[.test_verify_killswitch_script_not_exists()]] - `calls` [EXTRACTED]
 - [[.verify_killswitch()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
-- [[FastAPI_3]] - `uses` [INFERRED]
+- [[FastAPI_2]] - `uses` [INFERRED]
 - [[KillSwitchConfig]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[Monitor and verify kill switch functionality.      Provides automated verificati]] - `rationale_for` [EXTRACTED]
-- [[Path_34]] - `uses` [INFERRED]
+- [[Path_35]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAnomalyDetection_1]] - `uses` [INFERRED]
@@ -94,4 +94,4 @@ tags:
 - [[test_killswitch_monitor_behavior.py]] - `imports` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Config
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

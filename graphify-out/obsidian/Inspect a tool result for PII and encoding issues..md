@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "Gateway Proxy Layer"
+community: "docs/operations"
 location: "L181"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/docs/operations
 ---
 
 # Inspect a tool result for PII and encoding issues.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.inspect_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/rationale #graphify/EXTRACTED #community/docs/operations

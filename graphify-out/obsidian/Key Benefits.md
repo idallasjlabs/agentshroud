@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Key Benefits
@@ -18,4 +18,4 @@ tags:
 - [[4. Better Development Workflow]] - `contains` [EXTRACTED]
 - [[Distributed OpenClaw Node Architecture (Raspberry Pi 4)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

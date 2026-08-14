@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/LLM_PROVIDER_SETUP.md"
 type: "concept"
-community: "Setup Docs"
+community: "Bot Skill Config"
 location: "lines 44-57"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Bot_Skill_Config
 ---
 
 # LLM Provider Model Strings (anthropic/, openai/, google/, ollama)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LLM Provider Setup & Switching Guide]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Setup_Docs
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

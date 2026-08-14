@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Security Docs"
+community: "Bot Skill Config"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Kill Switch
@@ -18,4 +18,4 @@ tags:
 - [[Mode 2 shutdown]] - `contains` [EXTRACTED]
 - [[Mode 3 disconnect (⚠️ DANGEROUS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

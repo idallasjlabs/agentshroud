@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "concept"
-community: "Security Docs"
+community: "Bot Skill Config"
 location: "gateway/security/"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Key Security Modules: PromptGuard, SecurityPipeline, EgressFilter, RBACConfig, TrustManager, AuditStore, KillswitchMonitor
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security-inventory.md (v0.8.0 58 modules, 9 configs, 24 docs, 38 test files, 22332233 passing)]] - `highlights` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Security_Docs
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

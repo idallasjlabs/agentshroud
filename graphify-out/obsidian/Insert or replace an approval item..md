@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "rationale"
-community: "Approval Queue"
+community: "Collaborator Prompt Classifiers"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Insert or replace an approval item.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.save()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

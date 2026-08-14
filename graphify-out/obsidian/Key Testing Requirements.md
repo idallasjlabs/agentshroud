@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: ".github/COPILOT_CLI_SETUP.md"
+community: "skills/openclaw"
 location: "L271"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/COPILOT_CLI_SETUPmd
+  - community/skills/openclaw
 ---
 
 # Key Testing Requirements
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Repository Context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

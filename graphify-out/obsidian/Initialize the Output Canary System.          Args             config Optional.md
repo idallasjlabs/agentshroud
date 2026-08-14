@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "docs/reviews"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/reviews
 ---
 
 # Initialize the Output Canary System.          Args:             config: Optional
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__init__()_101]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/reviews

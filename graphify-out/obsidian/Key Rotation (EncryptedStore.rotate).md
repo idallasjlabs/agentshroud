@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "concept"
-community: "docs/vault"
+community: "Custom Skills"
 location: "gateway/security/encrypted_store.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Custom_Skills
 ---
 
 # Key Rotation (EncryptedStore.rotate)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[encrypted_store.py_2]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Custom_Skills

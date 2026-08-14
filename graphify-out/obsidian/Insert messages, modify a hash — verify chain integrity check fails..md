@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "HTTP Forwarder"
+community: "SOC Collaborator Lifecycle"
 location: "L328"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # Insert messages, modify a hash — verify chain integrity check fails.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tampered_audit_detected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

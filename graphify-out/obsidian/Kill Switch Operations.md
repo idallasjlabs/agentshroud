@@ -1,11 +1,11 @@
 ---
 source_file: "CHEATSHEET.md"
 type: "concept"
-community: "SECURITY.md"
+community: "Security Docs"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SECURITYmd
+  - community/Security_Docs
 ---
 
 # Kill Switch Operations
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Operations Cheat Sheet]] - `references` [EXTRACTED]
 - [[AgentShroud™ Security Policy]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/SECURITYmd
+#graphify/concept #graphify/EXTRACTED #community/Security_Docs

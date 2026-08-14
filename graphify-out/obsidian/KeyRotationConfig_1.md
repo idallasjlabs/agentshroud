@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "skills/openclaw"
 location: "L52"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/skills/openclaw
 ---
 
 # KeyRotationConfig
@@ -23,7 +23,7 @@ tags:
 - [[.test_default_config_has_common_policies()]] - `calls` [EXTRACTED]
 - [[.test_get_op_reference_builds_correctly()]] - `calls` [EXTRACTED]
 - [[.test_get_policy_returns_default_for_unknown_type()]] - `calls` [EXTRACTED]
-- [[Any_40]] - `uses` [INFERRED]
+- [[Any_42]] - `uses` [INFERRED]
 - [[Configuration for key rotation policies and schedules.]] - `rationale_for` [EXTRACTED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy]] - `uses` [INFERRED]
@@ -48,7 +48,7 @@ tags:
 - [[TestStoreIn1Password]] - `uses` [INFERRED]
 - [[credentials_health()]] - `calls` [EXTRACTED]
 - [[credentials_status()]] - `calls` [EXTRACTED]
-- [[datetime_3]] - `uses` [INFERRED]
+- [[datetime_4]] - `uses` [INFERRED]
 - [[key_rotation.py]] - `imports` [EXTRACTED]
 - [[key_rotation_config.py]] - `contains` [EXTRACTED]
 - [[management.py]] - `imports` [EXTRACTED]
@@ -57,4 +57,4 @@ tags:
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/skills/openclaw

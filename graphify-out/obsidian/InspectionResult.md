@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "docs/operations"
 location: "L97"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Proxy_Config
+  - community/docs/operations
 ---
 
 # InspectionResult
@@ -16,7 +16,7 @@ tags:
 - [[.highest_threat()]] - `method` [EXTRACTED]
 - [[.inspect_tool_call()]] - `references` [EXTRACTED]
 - [[.inspect_tool_result()]] - `references` [EXTRACTED]
-- [[Any_17]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[mcp_inspector.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config
+#graphify/code #graphify/INFERRED #community/docs/operations

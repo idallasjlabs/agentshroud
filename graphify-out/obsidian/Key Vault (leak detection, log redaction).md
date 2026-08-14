@@ -1,11 +1,11 @@
 ---
 source_file: "examples/egress-config.yml"
 type: "concept"
-community: "Planning Docs"
+community: "CLAUDE.md"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Planning_Docs
+  - community/CLAUDEmd
 ---
 
 # Key Vault (leak detection, log redaction)
@@ -14,4 +14,4 @@ tags:
 - [[1Password Integration (AgentShroud)]] - `related_to` [INFERRED]
 - [[Egress Control Config Example]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Planning_Docs
+#graphify/concept #graphify/INFERRED #community/CLAUDEmd

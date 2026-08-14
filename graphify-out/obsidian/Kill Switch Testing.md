@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "Security Docs"
+community: "skills/openclaw"
 location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/skills/openclaw
 ---
 
 # Kill Switch Testing
@@ -17,4 +17,4 @@ tags:
 - [[Phase 3A3B Implementation Verification Results]] - `contains` [EXTRACTED]
 - [[Shutdown Mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

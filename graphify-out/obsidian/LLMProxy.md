@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
 community: "Gateway Test Suite"
-location: "L97"
+location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # LLMProxy
 
 ## Connections
-- [[.__init__()_1]] - `method` [EXTRACTED]
+- [[.__init__()_23]] - `method` [EXTRACTED]
 - [[._apply_filters()]] - `method` [EXTRACTED]
 - [[._build_timeout_fallback_response()]] - `method` [EXTRACTED]
 - [[._emit_failover_notice()]] - `method` [EXTRACTED]
@@ -26,6 +26,7 @@ tags:
 - [[._get_local_secondary_model()]] - `method` [EXTRACTED]
 - [[._is_connect_error()]] - `method` [EXTRACTED]
 - [[._is_local_oom()]] - `method` [EXTRACTED]
+- [[._local_backend_headers()]] - `method` [EXTRACTED]
 - [[._local_backend_unavailable_response()]] - `method` [EXTRACTED]
 - [[._local_failover_base()]] - `method` [EXTRACTED]
 - [[._local_secondary_failover_request()]] - `method` [EXTRACTED]
@@ -33,11 +34,12 @@ tags:
 - [[._record_failover_event()]] - `method` [EXTRACTED]
 - [[._scan_inbound()]] - `method` [EXTRACTED]
 - [[._scan_request_data()]] - `method` [EXTRACTED]
-- [[.get_stats()]] - `method` [EXTRACTED]
+- [[.get_stats()_4]] - `method` [EXTRACTED]
 - [[.proxy_messages()]] - `method` [EXTRACTED]
 - [[.proxy_messages_streaming()]] - `method` [EXTRACTED]
 - [[LLMProxy_1]] - `uses` [INFERRED]
 - [[LLMProxy_2]] - `uses` [INFERRED]
+- [[LLMProxy_4]] - `uses` [INFERRED]
 - [[Proxies LLM API calls (Anthropic, OpenAI, Google) through the security pipeline.]] - `rationale_for` [EXTRACTED]
 - [[_FakeSanitizer]] - `uses` [INFERRED]
 - [[_FakeSanitizer_1]] - `uses` [INFERRED]

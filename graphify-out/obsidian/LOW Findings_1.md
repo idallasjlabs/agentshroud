@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
 type: "document"
-community: "Planning Docs"
+community: "scripts/verify-proxy.sh"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/scripts/verify-proxysh
 ---
 
 # LOW Findings
@@ -19,4 +19,4 @@ tags:
 - [[R3-L5 Backup Files Contain Pre-Hardening Code]] - `contains` [EXTRACTED]
 - [[Round 3 New Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/scripts/verify-proxysh

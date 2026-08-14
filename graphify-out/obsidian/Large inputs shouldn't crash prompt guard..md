@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Audit Export Pipeline"
 location: "L1080"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Audit_Export_Pipeline
 ---
 
 # Large inputs shouldn't crash prompt guard.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_prompt_guard_large_input()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline

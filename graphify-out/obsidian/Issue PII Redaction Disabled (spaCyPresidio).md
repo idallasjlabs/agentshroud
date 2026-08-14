@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "rationale"
-community: "Planning Docs"
+community: "Bot Skill Config"
 location: "line 72"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Issue: PII Redaction Disabled (spaCy/Presidio)
@@ -16,4 +16,4 @@ tags:
 - [[Remediation Four Core Modules Must Default Enforce (PII, PromptInjection, Egress, MCP Proxy)]] - `addresses` [INFERRED]
 - [[System Status Report (2026-02-21)]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

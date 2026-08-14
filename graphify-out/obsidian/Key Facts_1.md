@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/memory/context.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Gateway Proxy Layer"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Gateway_Proxy_Layer
 ---
 
 # Key Facts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[context]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Gateway_Proxy_Layer

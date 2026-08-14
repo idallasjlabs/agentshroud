@@ -1,13 +1,13 @@
 ---
 source_file: "docs/integrations/README.md"
 type: "document"
-community: "docs/integrations"
+community: "Community 1740"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/integrations
+  - community/Community_1740
 ---
 
 # Integrations Documentation README
 
-#graphify/document #graphify/EXTRACTED #community/docs/integrations
+#graphify/document #graphify/EXTRACTED #community/Community_1740

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "concept"
-community: "docs/operations"
+community: "Setup Docs"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Setup_Docs
 ---
 
 # Kill Switch (FREEZE/SHUTDOWN/DISCONNECT)
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud Operations Runbook]] - `references` [EXTRACTED]
 - [[AgentShroud White Paper v1.1 (Feb 2026)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/operations
+#graphify/concept #graphify/EXTRACTED #community/Setup_Docs

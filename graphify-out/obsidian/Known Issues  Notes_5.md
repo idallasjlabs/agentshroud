@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "docs/vault"
+community: "README.md"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/READMEmd
 ---
 
 # Known Issues / Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[models.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/READMEmd

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
 type: "document"
-community: "ESP32 Firmware"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Bot_Skill_Config
 ---
 
 # LVGL KAWAII FACE
@@ -20,4 +20,4 @@ tags:
 - [[Thread safety]] - `contains` [EXTRACTED]
 - [[Usage_87]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

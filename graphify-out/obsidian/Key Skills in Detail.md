@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "L285"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Key Skills in Detail
@@ -19,4 +19,4 @@ tags:
 - [[`sec-offense` — Red Team Adversarial Tester]] - `contains` [EXTRACTED]
 - [[`tdd` — Test-Driven Development Coach]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

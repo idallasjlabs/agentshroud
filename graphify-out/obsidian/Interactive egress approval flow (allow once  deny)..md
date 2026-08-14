@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
 community: "Gateway Test Suite"
-location: "L271"
+location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

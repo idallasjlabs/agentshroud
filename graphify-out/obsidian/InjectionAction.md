@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Security Pipeline Core"
+community: "Gateway Test Suite"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Pipeline_Core
+  - community/Gateway_Test_Suite
 ---
 
 # InjectionAction
 
 ## Connections
-- [[Any_18]] - `uses` [INFERRED]
+- [[Any_19]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
@@ -47,4 +47,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Pipeline_Core
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

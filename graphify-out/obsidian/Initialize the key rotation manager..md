@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "skills/openclaw"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/skills/openclaw
 ---
 
 # Initialize the key rotation manager.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__init__()_85]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw
