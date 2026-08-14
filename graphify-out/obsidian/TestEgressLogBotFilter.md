@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Approval & FastAPI Ingest"
 location: "L311"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Approval__FastAPI_Ingest
 ---
 
 # TestEgressLogBotFilter
@@ -17,4 +17,4 @@ tags:
 - [[Role_1]] - `uses` [INFERRED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest

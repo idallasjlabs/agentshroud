@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "ESP32 Firmware"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/ESP32_Firmware
 ---
 
 # TestContributingMdAccuracy
@@ -24,4 +24,4 @@ tags:
 - [[Verify CONTRIBUTING.md references are correct.]] - `rationale_for` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware

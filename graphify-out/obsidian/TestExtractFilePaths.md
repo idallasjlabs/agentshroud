@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Security Module Middleware"
+community: "Approval Queue Tests"
 location: "L756"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Module_Middleware
+  - community/Approval_Queue_Tests
 ---
 
 # TestExtractFilePaths
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Module_Middleware
+#graphify/code #graphify/INFERRED #community/Approval_Queue_Tests

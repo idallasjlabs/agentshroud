@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Slack API Proxy"
+community: "Approval Queue Tests"
 location: "L983"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Slack_API_Proxy
+  - community/Approval_Queue_Tests
 ---
 
 # TestClose
@@ -21,4 +21,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Slack_API_Proxy
+#graphify/code #graphify/INFERRED #community/Approval_Queue_Tests

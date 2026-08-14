@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Custom Skills"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Custom_Skills
 ---
 
 # TestMultiTurnTracker
@@ -42,4 +42,4 @@ tags:
 - [[ThresholdConfig]] - `uses` [INFERRED]
 - [[test_multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Custom_Skills

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Docs"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Docs
 ---
 
 # TestOpProxyEndpoint
@@ -20,4 +20,4 @@ tags:
 - [[.test_valid_reference_returns_value()]] - `method` [EXTRACTED]
 - [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

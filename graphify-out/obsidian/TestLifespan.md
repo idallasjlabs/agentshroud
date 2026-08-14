@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "chatbot/test_main.py"
+community: "Gateway Test Suite"
 location: "L310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/test_mainpy
+  - community/Gateway_Test_Suite
 ---
 
 # TestLifespan
@@ -19,4 +19,4 @@ tags:
 - [[lifespan()]] - `calls` [EXTRACTED]
 - [[test_main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/test_mainpy
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

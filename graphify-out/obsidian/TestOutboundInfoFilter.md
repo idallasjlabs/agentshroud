@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Bot CVE Scorecard"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_CVE_Scorecard
 ---
 
 # TestOutboundInfoFilter
@@ -50,4 +50,4 @@ tags:
 - [[Test suite for the outbound information filter.]] - `rationale_for` [EXTRACTED]
 - [[test_outbound_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Bot_CVE_Scorecard

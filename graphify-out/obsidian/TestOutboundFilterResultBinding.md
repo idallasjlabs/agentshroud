@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Cross-Bot Trust Ledger"
+community: "MCP Proxy Config"
 location: "L786"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Cross-Bot_Trust_Ledger
+  - community/MCP_Proxy_Config
 ---
 
 # TestOutboundFilterResultBinding
@@ -32,4 +32,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Cross-Bot_Trust_Ledger
+#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config

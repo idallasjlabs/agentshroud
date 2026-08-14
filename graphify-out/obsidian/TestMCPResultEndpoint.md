@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "skills/openclaw"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/skills/openclaw
 ---
 
 # TestMCPResultEndpoint
@@ -27,7 +27,7 @@ tags:
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[ProxyResult]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
 - [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

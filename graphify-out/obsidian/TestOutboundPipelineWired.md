@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "Security Pipeline Core"
+community: "CHEATSHEET.md"
 location: "L197"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Pipeline_Core
+  - community/CHEATSHEETmd
 ---
 
 # TestOutboundPipelineWired
@@ -19,4 +19,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Pipeline_Core
+#graphify/code #graphify/INFERRED #community/CHEATSHEETmd

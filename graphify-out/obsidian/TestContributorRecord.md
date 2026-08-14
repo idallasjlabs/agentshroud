@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Security Module"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Gateway_Security_Module
 ---
 
 # TestContributorRecord
@@ -15,4 +15,4 @@ tags:
 - [[.test_construction()_1]] - `method` [EXTRACTED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

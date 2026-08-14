@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Planning Docs"
 location: "L395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # TestEgressApprovalAPI
@@ -28,4 +28,4 @@ tags:
 - [[Test suite for egress approval API endpoints.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_git_guard.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Collaborator Response Templates"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Collaborator_Response_Templates
 ---
 
 # TestGitGuard
@@ -24,4 +24,4 @@ tags:
 - [[GitGuard]] - `uses` [INFERRED]
 - [[test_git_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates

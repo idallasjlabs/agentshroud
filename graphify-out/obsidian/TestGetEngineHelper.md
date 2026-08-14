@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Enforce-Mode Auto-Revert"
+community: "SOC Service Manager"
 location: "L983"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enforce-Mode_Auto-Revert
+  - community/SOC_Service_Manager
 ---
 
 # TestGetEngineHelper
@@ -18,4 +18,4 @@ tags:
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enforce-Mode_Auto-Revert
+#graphify/code #graphify/INFERRED #community/SOC_Service_Manager

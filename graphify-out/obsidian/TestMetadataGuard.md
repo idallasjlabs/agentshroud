@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Setup Docs"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Setup_Docs
 ---
 
 # TestMetadataGuard
@@ -29,4 +29,4 @@ tags:
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[test_metadata_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Setup_Docs

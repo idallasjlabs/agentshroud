@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Collaborator Prompt Safety"
-location: "L6874"
+community: "IEC 62443 Scorecard"
+location: "L6943"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Safety
+  - community/IEC_62443_Scorecard
 ---
 
 # TestCollaboratorPromptClassifiers
@@ -104,4 +104,4 @@ tags:
 - [[Unit tests for collaborator-facing prompt classification helpers.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Safety
+#graphify/code #graphify/EXTRACTED #community/IEC_62443_Scorecard

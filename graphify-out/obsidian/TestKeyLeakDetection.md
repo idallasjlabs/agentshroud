@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "MCP Proxy Config"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/MCP_Proxy_Config
 ---
 
 # TestKeyLeakDetection
@@ -22,4 +22,4 @@ tags:
 - [[KeyVaultConfig]] - `uses` [INFERRED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config

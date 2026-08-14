@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "Kill Switch Config"
+community: "Bot Skill Config"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Kill_Switch_Config
+  - community/Bot_Skill_Config
 ---
 
 # TestHeartbeat
@@ -19,4 +19,4 @@ tags:
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Config
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

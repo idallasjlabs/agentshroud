@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.test_dm_approval_no_group_side_effect()]] - `method` [EXTRACTED]
 - [[.test_dm_approval_routes_only_to_owner()]] - `method` [EXTRACTED]
-- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
 - [[DM-context approvals must not trigger group notifications.]] - `rationale_for` [EXTRACTED]
 - [[GroupApprovalRouter]] - `uses` [INFERRED]
 - [[test_group_approval_routing.py]] - `contains` [EXTRACTED]

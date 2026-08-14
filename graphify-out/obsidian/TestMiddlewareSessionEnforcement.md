@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "URL/Domain Validation Tests"
+community: "Gateway Test Suite"
 location: "L346"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # TestMiddlewareSessionEnforcement
@@ -31,4 +31,4 @@ tags:
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_session_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

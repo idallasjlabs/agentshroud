@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Bot Skill Config"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Bot_Skill_Config
 ---
 
 # TestEncryptedStore
@@ -48,4 +48,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

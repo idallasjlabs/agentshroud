@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
+community: "Collaborator Response Templates"
 location: "L82"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/LLM_Proxy_Resource_Guard
+  - community/Collaborator_Response_Templates
 ---
 
 # TestEgressConfigDefaultEnforce
@@ -21,4 +21,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/INFERRED #community/Collaborator_Response_Templates

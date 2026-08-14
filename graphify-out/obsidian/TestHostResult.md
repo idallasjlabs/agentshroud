@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "gateway/tools"
+community: "docs/vault"
 location: "L92"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/gateway/tools
+  - community/docs/vault
 ---
 
 # TestHostResult
@@ -18,4 +18,4 @@ tags:
 - [[MultiHostResult]] - `uses` [INFERRED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/gateway/tools
+#graphify/code #graphify/INFERRED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Inbound Tests"
-location: "L7827"
+community: "docs/papers"
+location: "L7896"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Tests
+  - community/docs/papers
 ---
 
 # TestNoResponseGuarantee
@@ -21,4 +21,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests
+#graphify/code #graphify/EXTRACTED #community/docs/papers

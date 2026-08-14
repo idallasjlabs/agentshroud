@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Approval Queue Tests"
+community: "Forward Routing & Approval"
 location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/Forward_Routing__Approval
 ---
 
 # TestGlobalSecurityHeaders
@@ -20,4 +20,4 @@ tags:
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

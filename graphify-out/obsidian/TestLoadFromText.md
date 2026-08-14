@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/diagrams"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/diagrams
 ---
 
 # TestLoadFromText
@@ -22,4 +22,4 @@ tags:
 - [[load_from_text() — multi-line parsing, dedup, allowlist skip.]] - `rationale_for` [EXTRACTED]
 - [[test_dns_blocklist.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/diagrams

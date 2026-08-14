@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "Gateway Security Module"
 location: "370-433"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval__FastAPI_Ingest
+  - community/Gateway_Security_Module
 ---
 
 # TestHermesDashboardPathTraversal (CWE-22 hardening)
@@ -15,4 +15,4 @@ tags:
 - [[main.py_2]] - `implements` [INFERRED]
 - [[test_main_endpoints.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/INFERRED #community/Gateway_Security_Module

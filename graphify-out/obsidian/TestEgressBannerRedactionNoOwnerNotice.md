@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
-location: "L4700"
+community: "HTTP Forwarder"
+location: "L4712"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer_Pipeline
+  - community/HTTP_Forwarder
 ---
 
 # TestEgressBannerRedactionNoOwnerNotice
@@ -18,6 +18,7 @@ tags:
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[egress_deny_ callback token must match.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/INFERRED #community/HTTP_Forwarder

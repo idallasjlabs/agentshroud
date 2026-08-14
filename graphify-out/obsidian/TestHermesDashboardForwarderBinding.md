@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "Group Workspace Isolation"
+community: "Gateway Test Suite"
 location: "L300"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Group_Workspace_Isolation
+  - community/Gateway_Test_Suite
 ---
 
 # TestHermesDashboardForwarderBinding
@@ -20,4 +20,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Group_Workspace_Isolation
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

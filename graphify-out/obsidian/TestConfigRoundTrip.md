@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "gateway/runtime"
+community: "Bot Skill Config"
 location: "L861"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/gateway/runtime
+  - community/Bot_Skill_Config
 ---
 
 # TestConfigRoundTrip
@@ -21,4 +21,4 @@ tags:
 - [[ServiceDef]] - `uses` [INFERRED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/gateway/runtime
+#graphify/code #graphify/INFERRED #community/Bot_Skill_Config

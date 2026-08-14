@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "Group Workspace Isolation"
+community: "Gateway Test Suite"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Workspace_Isolation
+  - community/Gateway_Test_Suite
 ---
 
 # TestGroupMemoryWriteACL
@@ -24,4 +24,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

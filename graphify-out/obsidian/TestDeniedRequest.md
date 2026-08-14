@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Kill Switch Config"
 location: "L449"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Kill_Switch_Config
 ---
 
 # TestDeniedRequest
@@ -20,4 +20,4 @@ tags:
 - [[Test DeniedRequest dataclass.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Kill_Switch_Config

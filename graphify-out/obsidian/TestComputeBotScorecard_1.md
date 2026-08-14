@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Bot CVE Scorecard"
+community: "Architecture Docs"
 location: "L649"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_CVE_Scorecard
+  - community/Architecture_Docs
 ---
 
 # TestComputeBotScorecard
@@ -32,4 +32,4 @@ tags:
 - [[Role_1]] - `uses` [INFERRED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_CVE_Scorecard
+#graphify/code #graphify/EXTRACTED #community/Architecture_Docs

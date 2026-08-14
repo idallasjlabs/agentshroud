@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Custom Skills"
 location: "L518"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Custom_Skills
 ---
 
 # TestFabricatedSecurityNotice
@@ -33,4 +33,4 @@ tags:
 - [[Test cases for the widened fabricated_security_notice pattern.]] - `rationale_for` [EXTRACTED]
 - [[test_outbound_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Custom_Skills

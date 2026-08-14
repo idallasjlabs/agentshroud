@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_consent_framework.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "ESP32 Firmware"
 location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/ESP32_Firmware
 ---
 
 # TestEnvironmentValidation
@@ -23,4 +23,4 @@ tags:
 - [[ShellInjectionDetected]] - `uses` [INFERRED]
 - [[test_consent_framework.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware

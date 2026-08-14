@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Auth & Exception Types"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Auth__Exception_Types
 ---
 
 # TestConsentCookieBinding
@@ -28,4 +28,4 @@ tags:
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

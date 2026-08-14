@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
 community: "Gateway Test Suite"
-location: "L613"
+location: "L656"
 tags:
   - graphify/code
   - graphify/INFERRED

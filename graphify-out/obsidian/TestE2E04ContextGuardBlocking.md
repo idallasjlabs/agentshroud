@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "SOC RBAC & Auth"
 location: "L177"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer_Pipeline
+  - community/SOC_RBAC__Auth
 ---
 
 # TestE2E04ContextGuardBlocking
@@ -27,4 +27,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/INFERRED #community/SOC_RBAC__Auth

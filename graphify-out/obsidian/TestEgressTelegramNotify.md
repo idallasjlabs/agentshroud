@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_telegram_notify.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "gateway/runtime"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/gateway/runtime
 ---
 
 # TestEgressTelegramNotify
@@ -35,4 +35,4 @@ tags:
 - [[Test Telegram egress notification system.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_telegram_notify.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime

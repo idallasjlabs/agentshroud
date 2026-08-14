@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
+community: "URL/Domain Validation Tests"
 location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/LLM_Proxy_Resource_Guard
+  - community/URL/Domain_Validation_Tests
 ---
 
 # TestFileSandboxDefaultEnforce
@@ -21,4 +21,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/INFERRED #community/URL/Domain_Validation_Tests

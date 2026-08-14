@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
+community: "docs/vault"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/docs/vault
 ---
 
 # TestCpuMemoryDiskLimits
@@ -25,4 +25,4 @@ tags:
 - [[VRAMHeadroomError]] - `uses` [INFERRED]
 - [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/docs/vault

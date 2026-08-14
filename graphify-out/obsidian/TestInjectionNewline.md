@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Approval Queue Tests"
+community: "Forward Routing & Approval"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/Forward_Routing__Approval
 ---
 
 # TestInjectionNewline
@@ -25,4 +25,4 @@ tags:
 - [[Test newline-based injection attempts (Finding 11)]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

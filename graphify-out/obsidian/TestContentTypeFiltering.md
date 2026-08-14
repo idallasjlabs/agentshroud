@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Egress Domain Allowlist"
+community: "Gateway Test Suite"
 location: "L362"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Domain_Allowlist
+  - community/Gateway_Test_Suite
 ---
 
 # TestContentTypeFiltering
@@ -22,4 +22,4 @@ tags:
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Domain_Allowlist
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

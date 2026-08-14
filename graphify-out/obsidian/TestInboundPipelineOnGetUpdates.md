@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "PII Config & Test Fixtures"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/PII_Config__Test_Fixtures
 ---
 
 # TestInboundPipelineOnGetUpdates
@@ -158,15 +158,17 @@ tags:
 - [[.test_owner_addcollab_accepts_known_name_alias()]] - `method` [EXTRACTED]
 - [[.test_owner_addcollab_adds_target_and_notifies()]] - `method` [EXTRACTED]
 - [[.test_owner_addcollab_requires_target()]] - `method` [EXTRACTED]
+- [[.test_owner_approve_ambiguous_multiple_pending_shows_usage()]] - `method` [EXTRACTED]
 - [[.test_owner_approve_command_grants_pending_user()]] - `method` [EXTRACTED]
 - [[.test_owner_approve_command_requires_pending_request()]] - `method` [EXTRACTED]
-- [[.test_owner_approve_command_requires_target_user_id()]] - `method` [EXTRACTED]
 - [[.test_owner_approve_command_resolves_pending_username_alias()]] - `method` [EXTRACTED]
 - [[.test_owner_approve_without_target_auto_selects_single_pending()]] - `method` [EXTRACTED]
+- [[.test_owner_bare_approve_with_no_pending_falls_through_to_agent()]] - `method` [EXTRACTED]
+- [[.test_owner_bare_deny_with_no_pending_falls_through_to_agent()]] - `method` [EXTRACTED]
 - [[.test_owner_collabs_command_shows_named_roster()]] - `method` [EXTRACTED]
+- [[.test_owner_deny_ambiguous_multiple_pending_shows_usage()]] - `method` [EXTRACTED]
 - [[.test_owner_deny_command_denies_pending_user()]] - `method` [EXTRACTED]
 - [[.test_owner_deny_command_requires_pending_request()]] - `method` [EXTRACTED]
-- [[.test_owner_deny_command_requires_target_user_id()]] - `method` [EXTRACTED]
 - [[.test_owner_deny_command_resolves_pending_username_alias()]] - `method` [EXTRACTED]
 - [[.test_owner_deny_without_target_auto_selects_single_pending()]] - `method` [EXTRACTED]
 - [[.test_owner_healthcheck_is_handled_locally()]] - `method` [EXTRACTED]
@@ -215,4 +217,4 @@ tags:
 - [[Verify that _filter_inbound_updates() calls pipeline.process_inbound().]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

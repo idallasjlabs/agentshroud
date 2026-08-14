@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Auth & Exception Types"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Auth__Exception_Types
 ---
 
 # TestKeyVaultConfig
@@ -19,4 +19,4 @@ tags:
 - [[KeyVaultConfig]] - `uses` [INFERRED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

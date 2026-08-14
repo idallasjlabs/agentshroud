@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "MCP Policy Engine"
+community: "Egress Domain Allowlist"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Policy_Engine
+  - community/Egress_Domain_Allowlist
 ---
 
 # TestDefaultPolicyNoMcpServers
@@ -18,4 +18,4 @@ tags:
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[test_mcp_policy_default_failclosed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Policy_Engine
+#graphify/code #graphify/INFERRED #community/Egress_Domain_Allowlist

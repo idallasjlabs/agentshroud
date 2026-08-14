@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Enforce-Mode Auto-Revert"
+community: "SOC Service Manager"
 location: "L246"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enforce-Mode_Auto-Revert
+  - community/SOC_Service_Manager
 ---
 
 # TestModeRequestModel
@@ -22,4 +22,4 @@ tags:
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enforce-Mode_Auto-Revert
+#graphify/code #graphify/INFERRED #community/SOC_Service_Manager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
+community: "docs/operations"
 location: "L211"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/LLM_Proxy_Resource_Guard
+  - community/docs/operations
 ---
 
 # TestGlobalAccessor
@@ -18,4 +18,4 @@ tags:
 - [[VRAMHeadroomError]] - `uses` [INFERRED]
 - [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/INFERRED #community/docs/operations
