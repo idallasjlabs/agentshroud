@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/agentshroud-knowledge.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/agentshroud-knowledgemd
 ---
 
 # i-ui: UI Expert
@@ -15,4 +15,4 @@ tags:
 - [[i-ti SKILL (Diagram Generation)]] - `references` [EXTRACTED]
 - [[i-ux UX Information Architecture (referenced)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/agentshroud-knowledgemd

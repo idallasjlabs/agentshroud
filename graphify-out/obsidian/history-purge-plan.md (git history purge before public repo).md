@@ -1,13 +1,13 @@
 ---
 source_file: "docs/security/history-purge-plan.md"
 type: "document"
-community: "Security Docs"
+community: "Community 1713"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Community_1713
 ---
 
 # history-purge-plan.md (git history purge before public repo)
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Community_1713

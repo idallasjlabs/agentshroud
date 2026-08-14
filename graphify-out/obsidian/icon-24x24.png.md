@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/app/icon-24x24.png"
 type: "image"
-community: "branding/favicons"
+community: "docs/reviews"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/branding/favicons
+  - community/docs/reviews
 ---
 
 # icon-24x24.png
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[icon-1024x1024.png]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/branding/favicons
+#graphify/image #graphify/INFERRED #community/docs/reviews

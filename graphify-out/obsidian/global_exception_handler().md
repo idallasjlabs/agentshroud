@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Auth & Exception Types"
-location: "L385"
+community: "PII Sanitizer Pipeline"
+location: "L392"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # global_exception_handler()
@@ -16,10 +16,10 @@ tags:
 - [[Exception]] - `references` [EXTRACTED]
 - [[Exception_1]] - `references` [EXTRACTED]
 - [[JSONResponse]] - `calls` [EXTRACTED]
-- [[Request_3]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[test_global_exception_handler()]] - `calls` [EXTRACTED]
 - [[test_global_exception_handler_http_exception()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

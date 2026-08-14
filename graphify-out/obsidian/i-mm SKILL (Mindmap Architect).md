@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/agentshroud-knowledge.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/agentshroud-knowledgemd
 ---
 
 # i-mm SKILL (Mindmap Architect)
@@ -17,4 +17,4 @@ tags:
 - [[markmap-mcp-server (MCP server)]] - `references` [EXTRACTED]
 - [[xmind-generator-mcp (MCP server)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/agentshroud-knowledgemd

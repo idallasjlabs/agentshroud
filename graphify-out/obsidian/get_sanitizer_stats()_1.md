@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "docs/vault"
+community: "Planning Docs"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Planning_Docs
 ---
 
 # get_sanitizer_stats()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_43]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

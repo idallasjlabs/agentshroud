@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/exports.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Planning Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # graphify reference: extra exports and benchmark
@@ -20,4 +20,4 @@ tags:
 - [[Step 8 - Token reduction benchmark (only if total_words  5000)_1]] - `contains` [EXTRACTED]
 - [[exports_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

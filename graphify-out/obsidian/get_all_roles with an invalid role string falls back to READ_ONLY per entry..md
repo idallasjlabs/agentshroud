@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Group RBAC Roles"
+community: "Gateway Test Suite"
 location: "L425"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/Gateway_Test_Suite
 ---
 
 # get_all_roles with an invalid role string falls back to READ_ONLY per entry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_get_all_roles_invalid_string_defaults_to_readonly()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

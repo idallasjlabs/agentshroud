@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Planning Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)
@@ -18,4 +18,4 @@ tags:
 - [[i-sec-defense README (Blue Team Security Auditor)]] - `references` [INFERRED]
 - [[i-sec-offense SKILL (Red Team Adversarial Tester, AgentShroud)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

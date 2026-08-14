@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-gg/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "CONTRIBUTING.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/CONTRIBUTINGmd
 ---
 
 # i-gg README — Git Workflow Guardian (GIT-GUARD)
@@ -14,4 +14,4 @@ tags:
 - [[SKILLS_GUIDE.md (complete skill catalog)]] - `references` [EXTRACTED]
 - [[i-gg SKILL — Git Workflow Guardian (GIT-GUARD)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/CONTRIBUTINGmd

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/query.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
 ---
 
 # graphify query/path/explain reference
@@ -15,7 +15,7 @@ tags:
 - [[graphify path command]] - `references` [EXTRACTED]
 - [[Constrained query-vocabulary expansion]] - `references` [EXTRACTED]
 - [[graphify SKILL]] - `references` [EXTRACTED]
-- [[manifest.json]] - `references` [EXTRACTED]
+- [[manifest.json_1]] - `references` [EXTRACTED]
 - [[save-result Feedback Loop]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd

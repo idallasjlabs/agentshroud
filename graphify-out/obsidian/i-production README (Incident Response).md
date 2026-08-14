@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Planning Docs"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # i-production README (Incident Response)
@@ -14,4 +14,4 @@ tags:
 - [[GSDE&G Skills Reference Guide]] - `references` [EXTRACTED]
 - [[i-production SKILL (Incident Response  INCIDENT)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/document #graphify/INFERRED #community/Planning_Docs

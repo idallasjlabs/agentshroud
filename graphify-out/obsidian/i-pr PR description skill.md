@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-crpr/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "CONTRIBUTING.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/CONTRIBUTINGmd
 ---
 
 # /i-pr PR description skill
@@ -14,4 +14,4 @@ tags:
 - [[i-crpr Create PR with Pre-Flight Audit (CRPR)]] - `references` [EXTRACTED]
 - [[i-gg SKILL — Git Workflow Guardian (GIT-GUARD)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/CONTRIBUTINGmd

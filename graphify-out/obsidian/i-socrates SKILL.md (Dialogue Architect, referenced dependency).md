@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Architecture Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Architecture_Docs
 ---
 
 # i-socrates SKILL.md (Dialogue Architect, referenced dependency)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-vulcan SKILL.md (Subject Matter Auditor, podcast QA gate)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

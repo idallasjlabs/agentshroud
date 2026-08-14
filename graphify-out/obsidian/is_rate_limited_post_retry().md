@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Bot Container Scripts"
 location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_Container_Scripts
 ---
 
 # is_rate_limited_post_retry()
 
 ## Connections
 - [[.proxy_messages()]] - `calls` [EXTRACTED]
-- [[LLMProxy.proxy_messages()]] - `calls` [EXTRACTED]
 - [[Return (True, anthropic_rate_limitopenai_rate_limit...) for a     persiste]] - `rationale_for` [EXTRACTED]
 - [[llm_proxy.py]] - `imports` [EXTRACTED]
 - [[llm_quota_detector.py]] - `contains` [EXTRACTED]
@@ -22,4 +21,4 @@ tags:
 - [[test_detector_skips_non_429()]] - `calls` [EXTRACTED]
 - [[test_rate_limit_failover.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts

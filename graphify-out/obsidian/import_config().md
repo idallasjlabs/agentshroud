@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "docs/project"
 location: "L458"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/docs/project
 ---
 
 # import_config()
@@ -17,4 +17,4 @@ tags:
 - [[api.py]] - `contains` [EXTRACTED]
 - [[update_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/code #graphify/EXTRACTED #community/docs/project

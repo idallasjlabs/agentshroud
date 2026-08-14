@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Auth & Exception Types"
-location: "L3985"
+community: "PII Sanitizer Pipeline"
+location: "L3992"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # get_user_permissions()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_5]] - `references` [EXTRACTED]
 - [[Get permissions summary for a user (admin+ only).]] - `rationale_for` [EXTRACTED]
-- [[Request_3]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

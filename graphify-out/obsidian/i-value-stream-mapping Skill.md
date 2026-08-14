@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-value-stream-mapping/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "skills/openclaw"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/skills/openclaw
 ---
 
 # i-value-stream-mapping Skill
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[DEVELOPER]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

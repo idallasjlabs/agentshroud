@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "concept"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "gateway/security/health_report.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # health_report.py
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenSCAP]] - `integrated_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

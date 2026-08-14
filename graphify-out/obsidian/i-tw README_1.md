@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tw/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/agentshroud-knowledge.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/agentshroud-knowledgemd
 ---
 
 # i-tw README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-tw SKILL (Technical Writing)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/agentshroud-knowledgemd

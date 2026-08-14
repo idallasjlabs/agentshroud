@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Bot Skill Config"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_Skill_Config
 ---
 
 # key_rotation.py (KeyRotationManager)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_key_rotation_internals.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

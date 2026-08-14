@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Planning Docs"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # is_overloaded()
@@ -35,10 +35,9 @@ tags:
 - [[.test_overloaded_word_in_chat_content_not_flagged()]] - `calls` [EXTRACTED]
 - [[.test_quota_statuses_not_claimed()]] - `calls` [EXTRACTED]
 - [[.test_unrecognized_error_shape_not_flagged()]] - `calls` [EXTRACTED]
-- [[LLMProxy.proxy_messages()]] - `calls` [EXTRACTED]
 - [[Return (True, provider_overloaded) for a provider capacity-error     envelop]] - `rationale_for` [EXTRACTED]
 - [[llm_proxy.py]] - `imports` [EXTRACTED]
 - [[llm_quota_detector.py]] - `contains` [EXTRACTED]
 - [[test_llm_quota_detector.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

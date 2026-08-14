@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Setup Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Docs
 ---
 
 # i-mcpm-aws-profile SKILL (AWS Profile Config)
@@ -17,4 +17,4 @@ tags:
 - [[i-mcpm-aws-profile README]] - `references` [EXTRACTED]
 - [[i-mcpm-doctor SKILL (MCP Doctor)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

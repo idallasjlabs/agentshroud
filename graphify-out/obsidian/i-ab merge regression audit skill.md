@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-crpr/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "CONTRIBUTING.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/CONTRIBUTINGmd
 ---
 
 # /i-ab merge regression audit skill
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-crpr Create PR with Pre-Flight Audit (CRPR)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/CONTRIBUTINGmd

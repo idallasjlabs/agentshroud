@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Custom Skills"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Custom_Skills
 ---
 
 # i-ti SKILL.md (Technical Illustrator, Mermaid diagrams)
@@ -16,6 +16,5 @@ tags:
 - [[i-tw SKILL.md (Technical Writer)]] - `references` [EXTRACTED]
 - [[i-ui SKILL.md (UI Engineer, CSS architecture, WCAG AA)]] - `references` [EXTRACTED]
 - [[i-ux SKILL.md (UX Designer, IA, Nielsen heuristics)]] - `references` [EXTRACTED]
-- [[openclaw manifest.json (skill file hash manifest)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Custom_Skills

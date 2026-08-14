@@ -20,7 +20,6 @@ tags:
 - [[PostgreSQL RDS (fe-gsdl-poc-database)]] - `implements` [EXTRACTED]
 - [[Quality Assurance README]] - `references` [EXTRACTED]
 - [[i-mc SKILL (GSDE&G Development Master Checklist)]] - `references` [EXTRACTED]
-- [[i-odev SKILL (OpenClaw Dev Workflow)]] - `semantically_similar_to` [INFERRED]
 - [[i-pm SKILL (Project Management)]] - `references` [EXTRACTED]
 - [[i-pr SKILL (Pull Request Generator)]] - `references` [EXTRACTED]
 - [[i-ps SKILL (PrePost-Deploy Checklists)]] - `references` [EXTRACTED]

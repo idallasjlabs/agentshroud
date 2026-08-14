@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "Setup Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # iMessage Integration Status (Partially Working)
@@ -14,4 +14,4 @@ tags:
 - [[BlueBubbles Recommended for iMessage (replaces SSH-based approach)]] - `recommends` [EXTRACTED]
 - [[iMessage Error -1743 AppleScript Automation Permission]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,11 +1,11 @@
 ---
 source_file: "branding/icons/app/icon-16x16.png"
 type: "image"
-community: "branding/favicons"
+community: "docs/reviews"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/branding/favicons
+  - community/docs/reviews
 ---
 
 # icon-16x16.png
@@ -14,4 +14,4 @@ tags:
 - [[favicon-48x48.png]] - `semantically_similar_to` [INFERRED]
 - [[icon-1024x1024.png]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/branding/favicons
+#graphify/image #graphify/INFERRED #community/docs/reviews

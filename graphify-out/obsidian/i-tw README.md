@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-tw/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Custom Skills"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Custom_Skills
 ---
 
 # i-tw README.md
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-tw SKILL.md (Technical Writer)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Custom_Skills

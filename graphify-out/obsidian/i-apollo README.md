@@ -13,6 +13,6 @@ tags:
 ## Connections
 - [[Apollo Audio Systems Producer]] - `references` [INFERRED]
 - [[SKILLS_GUIDE.md (complete skill catalog)]] - `references` [EXTRACTED]
-- [[manifest.json]] - `references` [EXTRACTED]
+- [[manifest.json_1]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

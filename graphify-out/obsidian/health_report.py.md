@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "branding/logos"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/branding/logos
 ---
 
 # health_report.py
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[calculate_overall_score()]] - `contains` [EXTRACTED]
 - [[calculate_tool_score()]] - `contains` [EXTRACTED]
-- [[daily_cve_report.py]] - `semantically_similar_to` [INFERRED]
 - [[format_report()]] - `contains` [EXTRACTED]
 - [[generate_report()]] - `contains` [EXTRACTED]
 - [[get_trend()]] - `contains` [EXTRACTED]
@@ -24,4 +23,4 @@ tags:
 - [[score_to_grade()]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/branding/logos

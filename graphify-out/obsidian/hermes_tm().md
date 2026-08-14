@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "Cross-Bot Trust Ledger"
+community: "Gateway Test Suite"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/Gateway_Test_Suite
 ---
 
 # hermes_tm()
 
 ## Connections
 - [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager_2]] - `references` [EXTRACTED]
+- [[TrustManager_3]] - `references` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

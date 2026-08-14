@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Inbound Tests"
-location: "L9131"
+community: "Group RBAC Roles"
+location: "L9200"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Tests
+  - community/Group_RBAC_Roles
 ---
 
 # hello, can you help?' must reach the LLM path, not be swallowed by the probe.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_partial_phrase_does_not_trigger_probe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC_Roles

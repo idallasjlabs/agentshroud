@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sre/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Community 1726"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Community_1726
 ---
 
 # i-sre: SRE Practices
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Community_1726

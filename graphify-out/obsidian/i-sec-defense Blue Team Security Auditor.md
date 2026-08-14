@@ -12,7 +12,6 @@ tags:
 
 ## Connections
 - [[Blue Team Audit Report v0.7.0]] - `references` [EXTRACTED]
-- [[CredentialInjector_1]] - `references` [EXTRACTED]
 - [[STPA-Sec Methodology_1]] - `references` [EXTRACTED]
 - [[audit_export.py]] - `references` [EXTRACTED]
 - [[canary_tripwire.py]] - `references` [EXTRACTED]

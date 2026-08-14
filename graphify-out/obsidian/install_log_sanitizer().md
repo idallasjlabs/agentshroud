@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docker/falco"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docker/falco
 ---
 
 # install_log_sanitizer()
@@ -18,4 +18,4 @@ tags:
 - [[log_sanitizer.py]] - `contains` [EXTRACTED]
 - [[test_log_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docker/falco

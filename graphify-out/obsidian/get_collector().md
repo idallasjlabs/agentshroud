@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Custom Skills"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Custom_Skills
 ---
 
 # get_collector()
@@ -24,4 +24,4 @@ tags:
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[test_module_stats.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Custom_Skills

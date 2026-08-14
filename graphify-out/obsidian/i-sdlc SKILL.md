@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-sdlc/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Community 1725"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Community_1725
 ---
 
 # i-sdlc SKILL
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Community_1725

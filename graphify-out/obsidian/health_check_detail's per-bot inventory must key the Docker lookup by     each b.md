@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "SOC RBAC & Auth"
+community: "Gateway Test Suite"
 location: "L534"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/Gateway_Test_Suite
 ---
 
 # health_check_detail's per-bot inventory must key the Docker lookup by     each b
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHealthCheckDetailBotsInventory]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

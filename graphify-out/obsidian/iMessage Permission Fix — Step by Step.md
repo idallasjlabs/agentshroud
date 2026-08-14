@@ -1,11 +1,11 @@
 ---
 source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "Setup Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # iMessage Permission Fix — Step by Step
@@ -18,4 +18,4 @@ tags:
 - [[The Error We're Getting]] - `contains` [EXTRACTED]
 - [[iMessage Integration Fix (imsg + imessage-exporter)]] - `related_to` [INFERRED_HIGH]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

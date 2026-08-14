@@ -1,11 +1,12 @@
 ---
 source_file: "shortcuts/README.md"
 type: "document"
-community: "shortcuts/README.md"
+community: "docs/vault"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/shortcuts/READMEmd
+  - community/docs/vault
 ---
 
 # iOS / macOS Shortcuts — Relay to AgentShroud
@@ -24,4 +25,4 @@ tags:
 - [[The `forward` contract (authoritative)]] - `contains` [EXTRACTED]
 - [[Troubleshooting_30]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/shortcuts/READMEmd
+#graphify/document #graphify/EXTRACTED #community/docs/vault

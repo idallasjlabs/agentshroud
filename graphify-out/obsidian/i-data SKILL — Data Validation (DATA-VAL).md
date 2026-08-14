@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-data/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Setup Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Docs
 ---
 
 # i-data SKILL — Data Validation (DATA-VAL)
@@ -14,4 +14,4 @@ tags:
 - [[i-data README — Data Validation (DATA-VAL)]] - `references` [EXTRACTED]
 - [[i-eightd SKILL — 8D Root Cause Analysis]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

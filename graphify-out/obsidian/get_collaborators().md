@@ -12,9 +12,9 @@ tags:
 # get_collaborators()
 
 ## Connections
-- [[AuthRequired_3]] - `references` [EXTRACTED]
+- [[AuthRequired_2]] - `references` [EXTRACTED]
 - [[Path_2]] - `calls` [EXTRACTED]
-- [[Request_5]] - `references` [EXTRACTED]
+- [[Request_3]] - `references` [EXTRACTED]
 - [[Return collaborator data from the shared bot workspace volume.      Reads COLLAB]] - `rationale_for` [EXTRACTED]
 - [[_build_activity_entries_from_contributor_logs()]] - `calls` [EXTRACTED]
 - [[_build_activity_summary_from_contributor_logs()]] - `calls` [EXTRACTED]

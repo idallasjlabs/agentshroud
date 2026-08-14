@@ -1,12 +1,12 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/gsd.md"
 type: "document"
-community: ".github/ISSUE_TEMPLATE"
+community: "docs/diagrams"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/ISSUE_TEMPLATE
+  - community/docs/diagrams
 ---
 
 # gsd.md
@@ -18,4 +18,4 @@ tags:
 - [[Outcome]] - `contains` [EXTRACTED]
 - [[Problem]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/ISSUE_TEMPLATE
+#graphify/document #graphify/EXTRACTED #community/docs/diagrams

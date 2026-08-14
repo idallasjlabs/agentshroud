@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "PII Sanitizer Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # health.py
 
 ## Connections
-- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[StatusResponse]] - `imports` [EXTRACTED]
 - [[auth.py]] - `imports_from` [EXTRACTED]
 - [[auth_dep()_4]] - `contains` [EXTRACTED]
@@ -25,4 +24,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

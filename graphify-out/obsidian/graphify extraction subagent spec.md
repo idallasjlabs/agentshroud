@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/extraction-spec.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # graphify extraction subagent spec
@@ -16,6 +16,6 @@ tags:
 - [[Node ID format must match AST extractor]] - `references` [EXTRACTED]
 - [[Semantic Extraction — Part B (parallel subagents)]] - `references` [EXTRACTED]
 - [[graphify SKILL]] - `references` [EXTRACTED]
-- [[manifest.json]] - `references` [EXTRACTED]
+- [[manifest.json_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

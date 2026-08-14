@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/github-and-merge.md"
 type: "document"
-community: "Bot Skill Config"
+community: "skills/openclaw"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/skills/openclaw
 ---
 
 # graphify reference: GitHub clone and cross-repo merge
@@ -15,4 +15,4 @@ tags:
 - [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)]] - `contains` [EXTRACTED]
 - [[github-and-merge]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "docs/README.md"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/docs/READMEmd
 ---
 
 # health_check_detail()
@@ -18,4 +18,4 @@ tags:
 - [[StatusResponse]] - `calls` [EXTRACTED]
 - [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/docs/READMEmd

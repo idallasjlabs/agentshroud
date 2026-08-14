@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "dashboard/README.md"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/dashboard/READMEmd
 ---
 
 # iCloud Services Skill
@@ -15,4 +15,4 @@ tags:
 - [[calendar.js (iCloud CalDAV script)]] - `implements` [EXTRACTED]
 - [[i-icloud README (ICLOUD Data Manager)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/dashboard/READMEmd
