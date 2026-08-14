@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "File Sandbox"
+community: "Approval & FastAPI Ingest"
 location: "L272"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Calls within limits should pass.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_under_threshold_passes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

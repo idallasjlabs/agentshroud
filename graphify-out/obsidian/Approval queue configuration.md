@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
+community: "Collaborator Prompt Classifiers"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Approval queue configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalQueueConfig_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

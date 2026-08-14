@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "MCP Policy Engine"
+community: "docs/vault"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/docs/vault
 ---
 
 # 10000 trust lookups in under 1 second.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_10000_lookups_under_1s()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

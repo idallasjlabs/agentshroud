@@ -2,7 +2,7 @@
 source_file: "CLAUDE.md"
 type: "document"
 community: "Planning Docs"
-location: "L166"
+location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED

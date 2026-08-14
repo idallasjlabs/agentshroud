@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "HTTP Forwarder"
+community: "Bot Skill Config"
 location: "L246"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/Bot_Skill_Config
 ---
 
 # Best-effort float timestamp coercion for resilient log reads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._coerce_timestamp()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

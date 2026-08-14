@@ -26,7 +26,7 @@ tags:
 - [[RBAC — Role-Based Access Control]] - `references` [EXTRACTED]
 - [[Recommendation_1]] - `contains` [EXTRACTED]
 - [[Round 3 New Findings]] - `contains` [EXTRACTED]
-- [[Summary_13]] - `contains` [EXTRACTED]
+- [[Summary_32]] - `contains` [EXTRACTED]
 - [[Verification of ALL Prior Findings]] - `contains` [EXTRACTED]
 - [[Verification of Round 1 Fixes]] - `contains` [EXTRACTED]
 - [[blue-team-assessment-v0.8.0-r2.md (Round 2)]] - `contains` [EXTRACTED]

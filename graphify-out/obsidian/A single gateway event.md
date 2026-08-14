@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "rationale"
-community: "docs/vault"
+community: "PII Sanitizer Pipeline"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # A single gateway event
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GatewayEvent]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

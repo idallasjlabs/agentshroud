@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "concept"
-community: "Gateway Test Suite"
+community: "docs/api"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/api
 ---
 
 # AI Security Standards Tracker job
@@ -16,4 +16,4 @@ tags:
 - [[PromptGuard_2]] - `references` [EXTRACTED]
 - [[approval_queue.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/docs/api

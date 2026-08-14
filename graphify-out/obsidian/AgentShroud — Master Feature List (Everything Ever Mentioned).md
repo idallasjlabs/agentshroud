@@ -17,7 +17,7 @@ tags:
 - [[Infrastructure_4]] - `contains` [EXTRACTED]
 - [[MASTER-FEATURE-LIST]] - `contains` [EXTRACTED]
 - [[Post-v1.0.0 — Deferred]] - `contains` [EXTRACTED]
-- [[Summary_4]] - `contains` [EXTRACTED]
+- [[Summary_23]] - `contains` [EXTRACTED]
 - [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - `contains` [EXTRACTED]
 - [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - `contains` [EXTRACTED]
 - [[v1.0.0 — Fortress (Polish + Public Release)]] - `contains` [EXTRACTED]

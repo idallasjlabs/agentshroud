@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "MCP Policy Engine"
+community: "Gateway Test Suite"
 location: "L408"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Gateway_Test_Suite
 ---
 
 # Check the progressive ladder's threshold for promotion to target_level.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._promotion_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

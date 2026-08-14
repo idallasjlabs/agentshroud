@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Gateway Test Suite"
+community: "Competitive Intel Store"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Competitive_Intel_Store
 ---
 
 # BaseModel
@@ -98,4 +98,4 @@ tags:
 - [[VersionRequest]] - `inherits` [EXTRACTED]
 - [[WSEvent]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "skills/openclaw"
+community: "Security Docs"
 location: "L215"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Security_Docs
 ---
 
 # Auto-revert task sets mode back to enforce after delay.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_auto_revert_restores_enforce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw
+#graphify/rationale #graphify/EXTRACTED #community/Security_Docs

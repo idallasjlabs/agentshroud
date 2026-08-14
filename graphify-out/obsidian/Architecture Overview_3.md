@@ -18,6 +18,6 @@ tags:
 - [[Gateway Internal Layer Order]] - `contains` [EXTRACTED]
 - [[Network Topology_1]] - `contains` [EXTRACTED]
 - [[Related Notes_2]] - `contains` [EXTRACTED]
-- [[Summary_21]] - `contains` [EXTRACTED]
+- [[Summary_40]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/skills/openclaw

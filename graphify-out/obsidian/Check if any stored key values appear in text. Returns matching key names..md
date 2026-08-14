@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "MCP Proxy Config"
 location: "L131"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/MCP_Proxy_Config
 ---
 
 # Check if any stored key values appear in text. Returns matching key names.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_value_match()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

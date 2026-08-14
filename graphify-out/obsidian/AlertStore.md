@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # AlertStore
@@ -21,4 +21,4 @@ tags:
 - [[test_alert_store_push_and_summary()]] - `calls` [EXTRACTED]
 - [[test_dashboard_endpoints.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

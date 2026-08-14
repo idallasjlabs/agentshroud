@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "URL/Domain Validation Tests"
+community: "Egress & RBAC Security Core"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Agent cannot modify security policies and behavioral instructions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSecurityPolicyProtection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

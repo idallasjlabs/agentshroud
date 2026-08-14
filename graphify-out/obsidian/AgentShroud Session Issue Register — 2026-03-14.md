@@ -18,7 +18,7 @@ tags:
 - [[Linked Artifacts]] - `contains` [EXTRACTED]
 - [[Recommended Next Closure Sequence]] - `contains` [EXTRACTED]
 - [[Session Issue Register 2026-03-14 (72 issues)]] - `contains` [EXTRACTED]
-- [[Summary_11]] - `contains` [EXTRACTED]
+- [[Summary_30]] - `contains` [EXTRACTED]
 - [[XMLFunction-Call Leak Filter]] - `references` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

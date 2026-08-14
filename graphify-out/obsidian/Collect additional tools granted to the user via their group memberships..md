@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "File Sandbox"
+community: "Gateway Test Suite"
 location: "L546"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/Gateway_Test_Suite
 ---
 
 # Collect additional tools granted to the user via their group memberships.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._get_group_tool_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

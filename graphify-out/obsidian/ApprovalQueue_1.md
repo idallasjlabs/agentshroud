@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Enforce-Mode Auto-Revert"
 location: "L304"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # ApprovalQueue
@@ -23,4 +23,4 @@ tags:
 - [[_queue()]] - `references` [EXTRACTED]
 - [[_submit_high_risk()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Enforce-Mode_Auto-Revert

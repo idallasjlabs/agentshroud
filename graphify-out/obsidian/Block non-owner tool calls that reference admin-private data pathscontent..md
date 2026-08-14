@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "Enforce-Mode Auto-Revert"
+community: "SOC Dashboard"
 location: "L500"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enforce-Mode_Auto-Revert
+  - community/SOC_Dashboard
 ---
 
 # Block non-owner tool calls that reference admin-private data paths/content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_tool_parameters()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard

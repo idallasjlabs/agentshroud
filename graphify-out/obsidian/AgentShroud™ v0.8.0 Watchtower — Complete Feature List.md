@@ -24,7 +24,7 @@ tags:
 - [[J. Code Cleanup (5 features)]] - `contains` [EXTRACTED]
 - [[K. Misc Quick Wins (11 features)]] - `contains` [EXTRACTED]
 - [[Moved to v0.9.0 Sentinel]] - `contains` [EXTRACTED]
-- [[Summary_15]] - `contains` [EXTRACTED]
+- [[Summary_34]] - `contains` [EXTRACTED]
 - [[v0.8.0-feature-list-final]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

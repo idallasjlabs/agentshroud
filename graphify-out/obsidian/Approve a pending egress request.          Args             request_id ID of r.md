@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Docker Deploy Scripts"
 location: "L476"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Docker_Deploy_Scripts
 ---
 
 # Approve a pending egress request.          Args:             request_id: ID of r
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.approve()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts

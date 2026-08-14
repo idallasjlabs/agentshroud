@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/reference"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/reference
 ---
 
 # Collaborator Testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Testing Checklist_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/reference

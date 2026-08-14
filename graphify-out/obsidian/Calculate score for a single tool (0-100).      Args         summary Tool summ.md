@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "rationale"
-community: "Planning Docs"
+community: "branding/logos"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/branding/logos
 ---
 
 # Calculate score for a single tool (0-100).      Args:         summary: Tool summ
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[calculate_tool_score()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/branding/logos

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "Setup Docs"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Setup_Docs
+  - community/docs/vault
 ---
 
 # Browser — Secure Browser Automation (README)
@@ -14,4 +14,4 @@ tags:
 - [[Browser — Secure Browser Automation (SKILL)]] - `references` [INFERRED]
 - [[SKILLS_GUIDE.md (complete skill catalog)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Setup_Docs
+#graphify/document #graphify/INFERRED #community/docs/vault

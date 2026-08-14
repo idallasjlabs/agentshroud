@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "PromptGuard Encoding Detection"
+community: "Collaborator Prompt Safety"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard_Encoding_Detection
+  - community/Collaborator_Prompt_Safety
 ---
 
 # Any
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_dict()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Safety

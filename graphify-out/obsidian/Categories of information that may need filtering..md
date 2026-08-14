@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "Bot CVE Scorecard"
+community: "MCP Proxy Config"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_CVE_Scorecard
+  - community/MCP_Proxy_Config
 ---
 
 # Categories of information that may need filtering.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[InfoCategory]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_CVE_Scorecard
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

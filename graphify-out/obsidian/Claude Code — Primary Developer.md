@@ -12,6 +12,5 @@ tags:
 
 ## Connections
 - [[Codex Prime Directive Not Primary Developer]] - `rationale_for` [EXTRACTED]
-- [[Multi-Agent Hierarchy (ClaudeGeminiCodex)]] - `semantically_similar_to` [INFERRED]
 
 #graphify/concept #graphify/EXTRACTED #community/docs/vault

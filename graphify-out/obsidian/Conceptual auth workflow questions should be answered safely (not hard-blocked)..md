@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
+community: "Bot Skill Config"
 location: "L3214"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Bot_Skill_Config
 ---
 
 # Conceptual auth workflow questions should be answered safely (not hard-blocked).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_auth_question_about_own_keys_gets_safe_guidance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

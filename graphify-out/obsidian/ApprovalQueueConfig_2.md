@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "Collaborator Prompt Classifiers"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Telegram_Proxy_Test_Suite
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # ApprovalQueueConfig
@@ -89,4 +89,4 @@ tags:
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Classifiers

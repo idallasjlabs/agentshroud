@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "docs/project"
+community: "Gateway Test Suite"
 location: "L834"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Gateway_Test_Suite
 ---
 
 # Aggregate security report.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/project
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

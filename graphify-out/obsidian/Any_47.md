@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Progressive Trust Config"
+community: ".github/ISSUE_TEMPLATE"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/github/ISSUE_TEMPLATE
 ---
 
 # Any
@@ -19,4 +19,4 @@ tags:
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[MemorySecurityConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/code #graphify/EXTRACTED #community/github/ISSUE_TEMPLATE

@@ -17,7 +17,7 @@ tags:
 - [[Prior Findings — Verification]] - `contains` [EXTRACTED]
 - [[R3 Findings (NEW — this round)]] - `contains` [EXTRACTED]
 - [[Release Recommendation]] - `contains` [EXTRACTED]
-- [[Summary_10]] - `contains` [EXTRACTED]
+- [[Summary_29]] - `contains` [EXTRACTED]
 - [[phase-review-2026-03-03]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/skills/openclaw

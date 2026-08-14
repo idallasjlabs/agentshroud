@@ -15,7 +15,7 @@ tags:
 - [[Fixes Applied]] - `contains` [EXTRACTED]
 - [[New Findings]] - `contains` [EXTRACTED]
 - [[Prior Assessment (v0.8.0) — Status]] - `contains` [EXTRACTED]
-- [[Summary_12]] - `contains` [EXTRACTED]
+- [[Summary_31]] - `contains` [EXTRACTED]
 - [[blue-team-assessment-v0.8.0-r2.md (Round 2)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Security_Docs

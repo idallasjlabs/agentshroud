@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "URL/Domain Validation Tests"
+community: "Egress & RBAC Security Core"
 location: "L188"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Agent can write to its own workspace directory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_workspace_write_allowed()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "Enforce-Mode Auto-Revert"
+community: "SOC Dashboard"
 location: "L446"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enforce-Mode_Auto-Revert
+  - community/SOC_Dashboard
 ---
 
 # Check if an agent can call a specific tool.          Default-allow: only blocks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_tool_permission()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard

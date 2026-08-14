@@ -30,6 +30,5 @@ tags:
 - [[V-D. Encrypted Container Communication]] - `contains` [EXTRACTED]
 - [[V-E. DNS-Layer Enforcement]] - `contains` [EXTRACTED]
 - [[V-F. Tamper-Evident Audit]] - `contains` [EXTRACTED]
-- [[v1.0.0 Fortress Release]] - `semantically_similar_to` [INFERRED]
 
 #graphify/document #graphify/EXTRACTED #community/skills/openclaw

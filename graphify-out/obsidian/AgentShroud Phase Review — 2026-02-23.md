@@ -56,9 +56,9 @@ tags:
 - [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `conceptually_related_to` [INFERRED]
 - [[OWNER_USER_IDS bypass mechanism]] - `references` [EXTRACTED]
 - [[Phase Review P0 — Core Pipeline Wiring]] - `references` [EXTRACTED]
-- [[Summary_7]] - `contains` [EXTRACTED]
-- [[Summary_8]] - `contains` [EXTRACTED]
-- [[Summary_9]] - `contains` [EXTRACTED]
+- [[Summary_26]] - `contains` [EXTRACTED]
+- [[Summary_27]] - `contains` [EXTRACTED]
+- [[Summary_28]] - `contains` [EXTRACTED]
 - [[phase-review-2026-02-23]] - `contains` [EXTRACTED]
 - [[phase-review-2026-03-03]] - `contains` [EXTRACTED]
 

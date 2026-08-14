@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "chatbot/__init__.py"
+community: "PII Config & Test Fixtures"
 location: "L3613"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/chatbot/__init__py
+  - community/PII_Config__Test_Fixtures
 ---
 
 # Chunked extraction prompts should be blocked and quarantined.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_incremental_exfil_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/chatbot/__init__py
+#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures

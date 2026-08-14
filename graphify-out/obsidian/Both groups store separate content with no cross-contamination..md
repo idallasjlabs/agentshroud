@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "File Sandbox"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/File_Sandbox
 ---
 
 # Both groups store separate content with no cross-contamination.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_group_writes_are_independent_namespaces()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

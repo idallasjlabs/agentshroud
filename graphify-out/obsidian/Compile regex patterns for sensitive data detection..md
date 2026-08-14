@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "Egress & RBAC Security Core"
+community: "Auth & Exception Types"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Auth__Exception_Types
 ---
 
 # Compile regex patterns for sensitive data detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._compile_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

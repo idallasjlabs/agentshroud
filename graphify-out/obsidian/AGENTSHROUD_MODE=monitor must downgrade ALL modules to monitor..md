@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "scripts/sync-cve-registry.py"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/scripts/sync-cve-registrypy
 ---
 
 # AGENTSHROUD_MODE=monitor must downgrade ALL modules to monitor.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_global_monitor_override_downgrades_all()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

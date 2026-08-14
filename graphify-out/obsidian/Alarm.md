@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Community 1513"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Community_1513
 ---
 
 # Alarm
@@ -15,4 +15,4 @@ tags:
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[models.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Community_1513

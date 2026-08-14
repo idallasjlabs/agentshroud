@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Egress & RBAC Security Core"
+community: "Approval & FastAPI Ingest"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Check if a user can use tools of a specific tier.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_tool_permission()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

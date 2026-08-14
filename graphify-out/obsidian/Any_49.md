@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "docs/vault"
+community: "Egress & RBAC Security Core"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Any
@@ -16,4 +16,4 @@ tags:
 - [[.get_global_stats()]] - `references` [EXTRACTED]
 - [[.get_session_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Collaborator Response Templates"
+community: "Auth & Exception Types"
 location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Auth__Exception_Types
 ---
 
 # Any
@@ -15,4 +15,4 @@ tags:
 - [[.get_leakage_summary()]] - `references` [EXTRACTED]
 - [[.monitor_environment_access()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

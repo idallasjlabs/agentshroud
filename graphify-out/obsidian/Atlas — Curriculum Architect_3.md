@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # Atlas — Curriculum Architect
@@ -23,4 +23,4 @@ tags:
 - [[User Prompt Template_5]] - `contains` [EXTRACTED]
 - [[User Prompt Template — OKE Channel_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

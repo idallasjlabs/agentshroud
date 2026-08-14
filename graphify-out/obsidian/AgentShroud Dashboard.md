@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "ESP32 Firmware"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/ESP32_Firmware
 ---
 
 # AgentShroud Dashboard
@@ -18,4 +18,4 @@ tags:
 - [[README_3]] - `contains` [EXTRACTED]
 - [[Tech Stack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware

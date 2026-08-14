@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "docs/vault"
+community: "Docker Deploy Scripts"
 location: "L62"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/vault
+  - community/Docker_Deploy_Scripts
 ---
 
 # Any
@@ -16,4 +16,4 @@ tags:
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[ResourceLimits]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/docs/vault
+#graphify/code #graphify/INFERRED #community/Docker_Deploy_Scripts
