@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Tool Chain Analyzer"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain_Analyzer
+  - community/Gateway_Test_Suite
 ---
 
 # test_tool_chain_analyzer.py
@@ -28,4 +28,4 @@ tags:
 - [[mock_alert_callback()_1]] - `contains` [EXTRACTED]
 - [[tool_chain_analyzer()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

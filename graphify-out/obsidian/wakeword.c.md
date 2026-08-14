@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "ESP32 Firmware"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Gateway_Test_Suite
 ---
 
 # wakeword.c
@@ -41,4 +41,4 @@ tags:
 - [[wakeword_tts_stop_request()]] - `contains` [EXTRACTED]
 - [[wakeword_tts_stop_requested()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

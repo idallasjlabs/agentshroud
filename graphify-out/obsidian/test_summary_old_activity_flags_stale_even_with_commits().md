@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L142"
+community: "Security Docs"
+location: "L180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Docs
 ---
 
 # test_summary_old_activity_flags_stale_even_with_commits()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_jira_weekly_review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

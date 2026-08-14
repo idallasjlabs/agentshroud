@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h"
 type: "code"
-community: "ESP32 Firmware"
+community: "skills/openclaw"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/skills/openclaw
 ---
 
 # vTaskDelay()
@@ -15,4 +15,4 @@ tags:
 - [[TickType_t_1]] - `references` [EXTRACTED]
 - [[task.h]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

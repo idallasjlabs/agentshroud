@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/quick_validate.py"
 type: "code"
-community: "skills/openclaw"
+community: "Gateway Proxy Layer"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Gateway_Proxy_Layer
 ---
 
 # validate_skill()
@@ -16,4 +16,4 @@ tags:
 - [[package_skill()]] - `calls` [INFERRED]
 - [[quick_validate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skills/openclaw
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

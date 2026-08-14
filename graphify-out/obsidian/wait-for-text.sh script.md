@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/scripts/wait-for-text.sh"
 type: "code"
-community: "skills/openclaw"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Bot_Skill_Config
 ---
 
 # wait-for-text.sh script
@@ -15,4 +15,4 @@ tags:
 - [[usage()_7]] - `calls` [EXTRACTED]
 - [[wait-for-text.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skills/openclaw
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

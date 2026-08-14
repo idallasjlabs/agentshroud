@@ -1,19 +1,18 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "voice_gateway/server.py"
+community: "Planning Docs"
 location: "L828"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_gateway/serverpy
+  - community/Planning_Docs
 ---
 
 # voice_endpoint()
 
 ## Connections
-- [[WebSocket]] - `references` [EXTRACTED]
-- [[WebSocket_9]] - `references` [EXTRACTED]
+- [[WebSocket_8]] - `references` [EXTRACTED]
 - [[_answer_volume_query()]] - `calls` [EXTRACTED]
 - [[_call_agent_stream()]] - `calls` [EXTRACTED]
 - [[_call_llm()]] - `calls` [EXTRACTED]
@@ -25,4 +24,4 @@ tags:
 - [[_voice_system_message()]] - `calls` [EXTRACTED]
 - [[server.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/serverpy
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

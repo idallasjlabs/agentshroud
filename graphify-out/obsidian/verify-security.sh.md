@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/verify-security.sh"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "docs/project"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/docs/project
 ---
 
 # verify-security.sh
@@ -17,4 +17,4 @@ tags:
 - [[check_warn()]] - `defines` [EXTRACTED]
 - [[verify-security.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/docs/project

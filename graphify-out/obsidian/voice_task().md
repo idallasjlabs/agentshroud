@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "ESP32 Firmware"
+community: "Gateway Test Suite"
 location: "L688"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ESP32_Firmware
+  - community/Gateway_Test_Suite
 ---
 
 # voice_task()
@@ -42,4 +42,4 @@ tags:
 - [[ws_client_send_stop()]] - `calls` [INFERRED]
 - [[ws_client_set_ctrl_cb()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ESP32_Firmware
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

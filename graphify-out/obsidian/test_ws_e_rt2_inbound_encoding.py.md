@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Gateway_Security_Module
 ---
 
 # test_ws_e_rt2_inbound_encoding.py
@@ -44,4 +44,4 @@ tags:
 - [[test_tool_injection_hex_encoded_uses_full_ruleset()]] - `contains` [EXTRACTED]
 - [[test_tool_injection_scan_blocks_encoded_lower_ranked_rule()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

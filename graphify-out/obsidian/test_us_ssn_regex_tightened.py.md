@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_us_ssn_regex_tightened.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "skills/openclaw"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/skills/openclaw
 ---
 
 # test_us_ssn_regex_tightened.py
@@ -18,4 +18,4 @@ tags:
 - [[test_real_ssn_still_flagged()]] - `contains` [EXTRACTED]
 - [[test_ssn_at_start_of_string_still_flagged()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

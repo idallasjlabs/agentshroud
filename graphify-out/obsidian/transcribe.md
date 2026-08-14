@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/transcribe.md"
 type: "document"
-community: "Bot Skill Config"
+community: "skills/openclaw"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/skills/openclaw
 ---
 
 # transcribe.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference transcribe video and audio]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

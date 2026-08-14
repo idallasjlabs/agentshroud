@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Bot Skill Config"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Bot_Skill_Config
 ---
 
 # test_unknown_user_recorded_when_dynamic_tracking_enabled()
@@ -15,4 +15,4 @@ tags:
 - [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
 community: "Gateway Test Suite"
-location: "L2501"
+location: "L2523"
 tags:
   - graphify/code
   - graphify/EXTRACTED

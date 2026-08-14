@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Egress Domain Allowlist"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Domain_Allowlist
+  - community/Gateway_Test_Suite
 ---
 
 # test_web_proxy.py
@@ -38,6 +38,6 @@ tags:
 - [[audit_chain()]] - `contains` [EXTRACTED]
 - [[config()_4]] - `contains` [EXTRACTED]
 - [[passthrough_proxy()_1]] - `contains` [EXTRACTED]
-- [[proxy()_2]] - `contains` [EXTRACTED]
+- [[proxy()_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

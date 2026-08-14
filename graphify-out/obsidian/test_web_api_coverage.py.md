@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Enforce-Mode Auto-Revert"
+community: "SOC Service Manager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enforce-Mode_Auto-Revert
+  - community/SOC_Service_Manager
 ---
 
 # test_web_api_coverage.py
 
 ## Connections
-- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[KillSwitchAction]] - `imports` [EXTRACTED]
 - [[ModeRequest]] - `imports` [EXTRACTED]
 - [[TestAgentshroudUpdates]] - `contains` [EXTRACTED]
@@ -44,4 +43,4 @@ tags:
 - [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert
+#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager

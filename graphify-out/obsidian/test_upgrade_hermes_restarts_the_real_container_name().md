@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "LLM Proxy Resource Guard"
 location: "L2035"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # test_upgrade_hermes_restarts_the_real_container_name()
@@ -15,4 +15,4 @@ tags:
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 - [[update_service() must be called with the real container name     (agentshroud-he]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

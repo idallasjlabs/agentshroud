@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "ESP32 Firmware"
+community: "Gateway Test Suite"
 location: "L316"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ESP32_Firmware
+  - community/Gateway_Test_Suite
 ---
 
 # tts_task()
@@ -23,4 +23,4 @@ tags:
 - [[wakeword_tts_stop_clear()]] - `calls` [INFERRED]
 - [[wakeword_tts_stop_requested()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ESP32_Firmware
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

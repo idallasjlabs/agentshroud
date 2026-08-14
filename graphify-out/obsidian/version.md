@@ -1,8 +1,8 @@
 ---
-source_file: "docker/config/hermes/manifest.json"
+source_file: "browser-extension/manifest.json"
 type: "code"
 community: "Bot Skill Config"
-location: "L2"
+location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED

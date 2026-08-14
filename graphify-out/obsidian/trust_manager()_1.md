@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_e2e_watchtower.py"
+source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "Cross-Bot Trust Ledger"
-location: "L54"
+community: "Gateway Test Suite"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/Gateway_Test_Suite
 ---
 
 # trust_manager()
 
 ## Connections
-- [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
-- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `calls` [EXTRACTED]
+- [[TrustManager_2]] - `calls` [EXTRACTED]
+- [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

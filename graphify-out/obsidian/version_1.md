@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/manifest.json"
+source_file: "browser-extension/package.json"
 type: "code"
-community: "Bot Skill Config"
-location: "L2"
+community: "docs/compliance"
+location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/compliance
 ---
 
 # version
 
 ## Connections
-- [[manifest.json_1]] - `contains` [EXTRACTED]
+- [[package.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/docs/compliance

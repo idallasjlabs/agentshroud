@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Security_Module
 ---
 
 # test_xml_leak_filter.py
@@ -17,4 +17,4 @@ tags:
 - [[TestXMLLeakFilter]] - `contains` [EXTRACTED]
 - [[XMLLeakFilter]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

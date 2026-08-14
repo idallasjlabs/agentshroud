@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Telegram Inbound Tests"
+community: "Group RBAC Roles"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Tests
+  - community/Group_RBAC_Roles
 ---
 
 # test_telegram_proxy_inbound.py
@@ -41,4 +41,4 @@ tags:
 - [[_wrap_response()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests
+#graphify/code #graphify/EXTRACTED #community/Group_RBAC_Roles

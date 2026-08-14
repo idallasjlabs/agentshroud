@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "Collaborator Prompt Classifiers"
 location: "L447"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # test_websocket_notifications()
@@ -20,4 +20,4 @@ tags:
 - [[ToolRiskConfig_1]] - `calls` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

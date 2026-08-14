@@ -27,6 +27,5 @@ tags:
 - [[test_select_model_size_is_case_and_whitespace_insensitive()]] - `contains` [EXTRACTED]
 - [[test_transcribe_emits_latency_record()]] - `contains` [EXTRACTED]
 - [[test_valid_model_sizes_contains_documented_ab_set()]] - `contains` [EXTRACTED]
-- [[voice_gatewaystt.py]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

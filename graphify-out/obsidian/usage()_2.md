@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/workspace.sh"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Planning Docs"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Planning_Docs
 ---
 
 # usage()
@@ -15,4 +15,4 @@ tags:
 - [[workspace.sh]] - `defines` [EXTRACTED]
 - [[workspace.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

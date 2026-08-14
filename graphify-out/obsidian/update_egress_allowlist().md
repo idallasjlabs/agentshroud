@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[EgressAllowlistUpdate]] - `references` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig_1]] - `calls` [INFERRED]
 - [[Update egress allowlist configuration (owner only).]] - `rationale_for` [EXTRACTED]
 - [[get_egress_config()]] - `calls` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]

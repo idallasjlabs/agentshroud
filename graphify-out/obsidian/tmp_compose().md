@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Gateway Test Suite"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Gateway_Test_Suite
 ---
 
 # tmp_compose()
@@ -15,7 +15,7 @@ tags:
 - [[.test_clean_compose_yields_zero_critical()]] - `calls` [EXTRACTED]
 - [[.test_get_security_report_shape()]] - `calls` [EXTRACTED]
 - [[.test_privileged_service_is_critical()]] - `calls` [EXTRACTED]
-- [[Path_33]] - `references` [EXTRACTED]
+- [[Path_34]] - `references` [EXTRACTED]
 - [[test_network_validator_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

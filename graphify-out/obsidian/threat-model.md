@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "docs/project"
+community: "Gateway Security Module"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Gateway_Security_Module
 ---
 
 # threat-model.md
@@ -19,7 +19,6 @@ tags:
 - [[PII (Personally Identifiable Information)]] - `references` [EXTRACTED]
 - [[Prompt Injection]] - `references` [EXTRACTED]
 - [[SSRF (Server-Side Request Forgery)]] - `references` [EXTRACTED]
-- [[STRIDE Threat Modeling Methodology]] - `references` [EXTRACTED]
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

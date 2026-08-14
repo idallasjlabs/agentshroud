@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "scripts/triage-cve-mitigations.py"
+community: "Gateway Test Suite"
 location: "L731"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/triage-cve-mitigationspy
+  - community/Gateway_Test_Suite
 ---
 
 # triage_entry()
 
 ## Connections
-- [[Any_74]] - `references` [EXTRACTED]
+- [[Any_76]] - `references` [EXTRACTED]
 - [[Produce an honest mitigation verdict for a single advisory entry.      Combines]] - `rationale_for` [EXTRACTED]
 - [[TriageResult]] - `references` [EXTRACTED]
 - [[classify()_1]] - `calls` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 - [[triage_agent()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

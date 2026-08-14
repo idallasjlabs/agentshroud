@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "voice_gateway/server.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/voice_gateway/serverpy
 ---
 
 # test_voice_latency_guard.py
@@ -34,4 +34,4 @@ tags:
 - [[test_voice_gateway.py]] - `conceptually_related_to` [INFERRED]
 - [[voice_gatewayserver.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/voice_gateway/serverpy

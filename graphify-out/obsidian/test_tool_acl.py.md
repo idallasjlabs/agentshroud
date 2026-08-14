@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "File Sandbox"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/File_Sandbox
 ---
 
 # test_tool_acl.py
@@ -31,4 +31,4 @@ tags:
 - [[enforcer()_3]] - `contains` [EXTRACTED]
 - [[rbac()_6]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox

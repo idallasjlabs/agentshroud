@@ -1,11 +1,11 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "voice_gateway/server.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/voice_gateway/serverpy
 ---
 
 # voice_gateway/server.py
@@ -14,4 +14,4 @@ tags:
 - [[test_voice_gateway.py]] - `references` [EXTRACTED]
 - [[test_voice_latency_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/voice_gateway/serverpy

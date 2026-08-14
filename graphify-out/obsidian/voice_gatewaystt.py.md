@@ -1,17 +1,16 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Pipeline Core"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Pipeline_Core
 ---
 
 # voice_gateway/stt.py
 
 ## Connections
 - [[test_voice_gateway.py]] - `references` [EXTRACTED]
-- [[test_voice_stt_model_ab.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Pipeline_Core

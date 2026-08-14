@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_integration.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L70"
+community: "MCP Policy Engine"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/MCP_Policy_Engine
 ---
 
 # trust_manager()
 
 ## Connections
+- [[TrustConfig]] - `calls` [EXTRACTED]
 - [[TrustManager_1]] - `calls` [EXTRACTED]
-- [[test_security_integration.py]] - `contains` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/MCP_Policy_Engine

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "Security Module Middleware"
+community: "Telegram Proxy Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Module_Middleware
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # test_tool_result_pii.py
@@ -26,4 +26,4 @@ tags:
 - [[ToolResultPIIConfig]] - `imports` [EXTRACTED]
 - [[ToolResultSanitizer]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Module_Middleware
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

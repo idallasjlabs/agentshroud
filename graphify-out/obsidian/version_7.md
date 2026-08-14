@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/skill.json"
 type: "code"
-community: "Custom Skills"
+community: "Bot Skill Config"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # version
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[skill.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

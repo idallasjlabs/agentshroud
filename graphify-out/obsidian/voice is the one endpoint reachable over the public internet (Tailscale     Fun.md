@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway Tests"
-location: "L977"
+community: "Security Pipeline Core"
+location: "L981"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Security_Pipeline_Core
 ---
 
 # /voice is the one endpoint reachable over the public internet (Tailscale     Fun
 
 ## Connections
-- [[_mock_stream_resp()]] - `rationale_for` [EXTRACTED]
 - [[test_ws_token_check_uses_constant_time_comparison()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Security_Pipeline_Core

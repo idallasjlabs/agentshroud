@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # text_control_center.py / agentshroud_manager.py
@@ -18,4 +18,4 @@ tags:
 - [[Relationship to Web API]] - `contains` [EXTRACTED]
 - [[text_control_center.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

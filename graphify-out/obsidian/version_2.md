@@ -1,17 +1,17 @@
 ---
-source_file: "browser-extension/manifest.json"
+source_file: "docker/config/hermes/manifest.json"
 type: "code"
-community: "browser-extension/manifest.json"
-location: "L4"
+community: "Gateway Test Suite"
+location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/manifestjson
+  - community/Gateway_Test_Suite
 ---
 
 # version
 
 ## Connections
-- [[manifest.json_2]] - `contains` [EXTRACTED]
+- [[manifest.json_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/manifestjson
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

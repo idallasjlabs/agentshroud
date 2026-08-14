@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Collaborator Lifecycle"
+community: "Enhanced Approval Queue"
 location: "L681"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/Enhanced_Approval_Queue
 ---
 
 # update_service()
@@ -15,7 +15,6 @@ tags:
 - [[JSONResponse]] - `references` [EXTRACTED]
 - [[Pull the latest image for a container and restart it.]] - `rationale_for` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[SCLCaller_3]] - `references` [EXTRACTED]
 - [[ServiceActionRequest]] - `references` [EXTRACTED]
 - [[ServiceManager]] - `calls` [EXTRACTED]
 - [[_confirmation_required()]] - `calls` [EXTRACTED]
@@ -23,4 +22,4 @@ tags:
 - [[router.py_1]] - `contains` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue

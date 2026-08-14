@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Slack API Proxy"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Slack_API_Proxy
 ---
 
 # test_watcher_reloads_on_mtime_change()
@@ -17,4 +17,4 @@ tags:
 - [[config_watcher()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

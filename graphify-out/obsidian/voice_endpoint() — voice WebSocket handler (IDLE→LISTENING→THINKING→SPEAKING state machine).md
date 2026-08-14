@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "voice_gateway/tts.py"
+community: "Planning Docs"
 location: "L827-1333"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_gateway/ttspy
+  - community/Planning_Docs
 ---
 
 # voice_endpoint() — /voice WebSocket handler (IDLE→LISTENING→THINKING→SPEAKING state machine)
@@ -23,4 +23,4 @@ tags:
 - [[synthesize()]] - `calls` [EXTRACTED]
 - [[transcribe()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/ttspy
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

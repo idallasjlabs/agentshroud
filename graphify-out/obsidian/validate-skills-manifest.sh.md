@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/validate-skills-manifest.sh"
 type: "code"
-community: "scripts/sync-llm-settings.sh"
+community: "docs/user-guide.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-llm-settingssh
+  - community/docs/user-guidemd
 ---
 
 # validate-skills-manifest.sh
@@ -17,4 +17,4 @@ tags:
 - [[test-skills-sync.sh]] - `calls` [EXTRACTED]
 - [[validate-skills-manifest.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-llm-settingssh
+#graphify/code #graphify/EXTRACTED #community/docs/user-guidemd

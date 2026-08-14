@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Group RBAC Roles"
+community: "File Sandbox"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/File_Sandbox
 ---
 
 # tool_acl.py (ToolACLEnforcer)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_group_rbac.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox

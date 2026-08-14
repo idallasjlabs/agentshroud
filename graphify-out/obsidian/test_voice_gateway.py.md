@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Voice Gateway Tests"
+community: "Security Pipeline Core"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Security_Pipeline_Core
 ---
 
 # test_voice_gateway.py
@@ -126,4 +126,4 @@ tags:
 - [[voice_gatewayserver.py]] - `references` [EXTRACTED]
 - [[voice_gatewaystt.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/code #graphify/EXTRACTED #community/Security_Pipeline_Core

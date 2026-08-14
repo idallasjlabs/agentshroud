@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Progressive Trust Config"
+community: "MCP Policy Engine"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/MCP_Policy_Engine
 ---
 
 # test_trust_manager.py
@@ -27,4 +27,4 @@ tags:
 - [[strict_manager()]] - `contains` [EXTRACTED]
 - [[trust_db()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/code #graphify/EXTRACTED #community/MCP_Policy_Engine

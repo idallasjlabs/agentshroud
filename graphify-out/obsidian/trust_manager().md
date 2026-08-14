@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "HTTP Forwarder"
-location: "L57"
+community: "MCP Policy Engine"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/MCP_Policy_Engine
 ---
 
 # trust_manager()
 
 ## Connections
-- [[TrustConfig]] - `calls` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `calls` [EXTRACTED]
 - [[TrustManager_1]] - `calls` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[test_a2a_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/code #graphify/EXTRACTED #community/MCP_Policy_Engine

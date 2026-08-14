@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "scripts/verify-proxy.sh"
+community: "ESP32 Firmware"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/verify-proxysh
+  - community/ESP32_Firmware
 ---
 
 # verify-proxy.sh
@@ -22,4 +22,4 @@ tags:
 - [[run_quick()]] - `defines` [EXTRACTED]
 - [[verify-proxy.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/verify-proxysh
+#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware

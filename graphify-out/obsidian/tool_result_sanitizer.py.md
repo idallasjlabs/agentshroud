@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Security Module Middleware"
+community: "Telegram Proxy Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Module_Middleware
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # tool_result_sanitizer.py
@@ -18,4 +18,4 @@ tags:
 - [[ToolResultPIIConfig]] - `contains` [EXTRACTED]
 - [[ToolResultSanitizer]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Module_Middleware
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
