@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "PII Sanitizer Pipeline"
 location: "L454"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Serve the dashboard HTML (requires auth via query param or cookie)      On first
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[serve_dashboard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

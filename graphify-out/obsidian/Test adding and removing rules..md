@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: ".github/COPILOT_CLI_SETUP.md"
+community: "Docker Deploy Scripts"
 location: "L268"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/github/COPILOT_CLI_SETUPmd
+  - community/Docker_Deploy_Scripts
 ---
 
 # Test adding and removing rules.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_rule_management()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd
+#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: ".mcp.json"
-location: "L366"
+community: "Planning Docs"
+location: "L155"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcpjson
+  - community/Planning_Docs
 ---
 
 # Summary
 
 ## Connections
-- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
+- [[1.2.4 — releasev1.2.4 (2026-06-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

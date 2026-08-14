@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "docs/diagrams"
+community: "docker/README.md"
 location: "L545"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/docker/READMEmd
 ---
 
 # SOC Per-Module Enforcement Heat-Map (SCRUM-80)
@@ -16,4 +16,4 @@ tags:
 - [[Daily CVE Triage & Remediation Scan (OpenClaw cron job)]] - `conceptually_related_to` [INFERRED]
 - [[record_decision()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/diagrams
+#graphify/document #graphify/EXTRACTED #community/docker/READMEmd

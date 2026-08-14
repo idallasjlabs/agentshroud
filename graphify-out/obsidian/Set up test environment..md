@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Progressive Trust Config"
+community: "docs/operations"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/docs/operations
 ---
 
 # Set up test environment.
@@ -15,4 +15,4 @@ tags:
 - [[.setup_method()_9]] - `rationale_for` [EXTRACTED]
 - [[.setup_method()_10]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/rationale #graphify/EXTRACTED #community/docs/operations

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/hermes-openclaw-dev-workflow.md"
 type: "document"
-community: "Setup Docs"
+community: "AGENTS.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/AGENTSmd
 ---
 
 # Starting a Development Task via Hermes / OpenClaw
@@ -21,4 +21,4 @@ tags:
 - [[What is not currently automated (the 4 gaps)]] - `contains` [EXTRACTED]
 - [[hermes-openclaw-dev-workflow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/AGENTSmd

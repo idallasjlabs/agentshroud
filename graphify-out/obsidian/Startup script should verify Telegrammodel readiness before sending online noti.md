@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Community 1518"
+community: "Architecture Docs"
 location: "L369"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1518
+  - community/Architecture_Docs
 ---
 
 # Startup script should verify Telegram/model readiness before sending online noti
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_startup_notifications_wait_for_runtime_readiness()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1518
+#graphify/rationale #graphify/EXTRACTED #community/Architecture_Docs

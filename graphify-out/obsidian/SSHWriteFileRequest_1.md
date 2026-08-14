@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Competitive Intel Store"
 location: "L261"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer_Pipeline
+  - community/Competitive_Intel_Store
 ---
 
 # SSHWriteFileRequest
@@ -29,4 +29,4 @@ tags:
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/INFERRED #community/Competitive_Intel_Store

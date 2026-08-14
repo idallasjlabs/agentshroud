@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "docs/project"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/project
 ---
 
 # Return True if *domain* matches any pattern (exact or ``*.`` wildcard).      Sin
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[domain_matches()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/docs/project

@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Gateway Security Module"
-location: "L11"
+community: "docs/vault"
+location: "L434"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/docs/vault
 ---
 
 # Summary
 
 ## Connections
-- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
+- [[Key Changes (2026-03-04 1216 UTC)]] - `contains` [EXTRACTED]
+- [[Key Changes (2026-04-08)]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/docs/vault

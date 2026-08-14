@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Progressive Trust Config"
+community: "docs/operations"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/docs/operations
 ---
 
 # RetentionAction
@@ -21,4 +21,4 @@ tags:
 - [[MemorySecurityConfig]] - `uses` [INFERRED]
 - [[memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/code #graphify/EXTRACTED #community/docs/operations

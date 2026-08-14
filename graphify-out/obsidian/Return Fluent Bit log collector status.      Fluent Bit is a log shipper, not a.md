@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 location: "L837"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # Return Fluent Bit log collector status.      Fluent Bit is a log shipper, not a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_fluent_bit_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

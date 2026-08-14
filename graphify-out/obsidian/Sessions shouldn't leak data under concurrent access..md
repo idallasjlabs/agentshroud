@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Security Module Middleware"
+community: "Egress & RBAC Security Core"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Module_Middleware
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Sessions shouldn't leak data under concurrent access.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_context_guard_session_isolation_under_load()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

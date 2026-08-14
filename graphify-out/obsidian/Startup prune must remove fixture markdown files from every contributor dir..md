@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "rationale"
-community: "HTTP Forwarder"
+community: "Bot Skill Config"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/Bot_Skill_Config
 ---
 
 # Startup prune must remove fixture markdown files from every contributor dir.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prune_walks_all_contributor_dirs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "Progressive Trust Config"
+community: "docs/operations"
 location: "L328"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/docs/operations
 ---
 
 # Run all lifecycle maintenance tasks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.run_lifecycle_maintenance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/rationale #graphify/EXTRACTED #community/docs/operations

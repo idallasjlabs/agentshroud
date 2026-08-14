@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Auth & Exception Types"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Auth__Exception_Types
 ---
 
 # Sanitize filename by removing unicode control characters and normalizing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.sanitize_filename()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

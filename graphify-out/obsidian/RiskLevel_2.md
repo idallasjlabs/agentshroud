@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: ".github/COPILOT_CLI_SETUP.md"
+community: "Docker Deploy Scripts"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/github/COPILOT_CLI_SETUPmd
+  - community/Docker_Deploy_Scripts
 ---
 
 # RiskLevel
@@ -20,4 +20,4 @@ tags:
 - [[egress_approval.py]] - `contains` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

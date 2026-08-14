@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+community: "Gateway Test Suite"
 location: "L533"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+  - community/Gateway_Test_Suite
 ---
 
 # Return user MEMORY.md + all accessible group MEMORY.md contents for prompt injec
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_merged_context()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

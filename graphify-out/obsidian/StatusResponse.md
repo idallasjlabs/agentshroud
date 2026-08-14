@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "docs/README.md"
+community: "Competitive Intel Store"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/READMEmd
+  - community/Competitive_Intel_Store
 ---
 
 # StatusResponse
@@ -29,4 +29,4 @@ tags:
 - [[models.py]] - `contains` [EXTRACTED]
 - [[test_enhanced_status.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store

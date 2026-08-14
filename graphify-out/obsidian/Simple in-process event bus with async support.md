@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "Planning Docs"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Planning_Docs
 ---
 
 # Simple in-process event bus with async support
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EventBus]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

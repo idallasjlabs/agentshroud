@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # Simple in-memory alert store. Thread-safe enough for single-process use.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AlertStore]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

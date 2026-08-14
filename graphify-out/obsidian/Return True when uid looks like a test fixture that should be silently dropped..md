@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "HTTP Forwarder"
+community: "Bot Skill Config"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/Bot_Skill_Config
 ---
 
 # Return True when uid looks like a test fixture that should be silently dropped.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_fixture_uid()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

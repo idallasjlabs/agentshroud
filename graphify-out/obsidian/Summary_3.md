@@ -1,18 +1,17 @@
 ---
-source_file: "docs/compliance/iec-62443-matrix.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L116"
+community: "Planning Docs"
+location: "L180"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # Summary
 
 ## Connections
-- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
-- [[Key Components Referenced (v1.0.0)]] - `contains` [EXTRACTED]
+- [[1.2.3 — releasev1.2.3 (2026-06-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

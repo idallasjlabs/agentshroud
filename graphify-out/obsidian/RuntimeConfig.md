@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "code"
-community: "Planning Docs"
+community: "Bot Skill Config"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Bot_Skill_Config
 ---
 
 # RuntimeConfig
@@ -23,4 +23,4 @@ tags:
 - [[config.py_1]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

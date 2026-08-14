@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Community 1543"
+community: "Bot Skill Config"
 location: "L188"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1543
+  - community/Bot_Skill_Config
 ---
 
 # Test adding protected content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_add_protected_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1543
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

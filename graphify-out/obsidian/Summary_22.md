@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "Bot Container Scripts"
-location: "L11"
+community: "Gateway Test Suite"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Gateway_Test_Suite
 ---
 
 # Summary
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
+- [[Key Components Referenced (v1.0.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

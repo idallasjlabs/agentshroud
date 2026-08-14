@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "docs/governance"
-location: "L74"
+community: "Security Docs"
+location: "L761"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/governance
+  - community/Security_Docs
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - `contains` [EXTRACTED]
+- [[0.7.0 - 2026-02-25]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/governance
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

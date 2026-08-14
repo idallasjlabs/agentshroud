@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L385"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # Return True if clamd Unix socket /tmp/clamd.ctl is connectable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_clamd_running()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "docs/vault"
+community: "Gateway Test Suite"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # SecurityPipeline (75 modules, 7 layers)
@@ -15,7 +15,5 @@ tags:
 - [[Approval Queue (human-in-the-loop)]] - `shares_data_with` [EXTRACTED]
 - [[Compliance Alignment (9 standards)]] - `rationale_for` [EXTRACTED]
 - [[Security Modules (30+, gateway diagram)]] - `conceptually_related_to` [EXTRACTED]
-- [[Website 7 Defense Layers  75 Modules Table]] - `conceptually_related_to` [EXTRACTED]
-- [[Website Production-grade Features Section]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Voice Gateway Tests"
+community: "Planning Docs"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Planning_Docs
 ---
 
 # SecurityEvent
@@ -21,4 +21,4 @@ tags:
 - [[from_egress_attempt()]] - `references` [EXTRACTED]
 - [[from_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

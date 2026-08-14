@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "scripts/sync-cve-registry.py"
 location: "L42"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Telegram_Proxy_Test_Suite
+  - community/scripts/sync-cve-registrypy
 ---
 
 # SSHConfig
@@ -73,4 +73,4 @@ tags:
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/INFERRED #community/scripts/sync-cve-registrypy

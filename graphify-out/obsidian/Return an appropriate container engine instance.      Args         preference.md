@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "rationale"
-community: "Bot Container Scripts"
+community: "Gateway Test Suite"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Gateway_Test_Suite
 ---
 
 # Return an appropriate container engine instance.      Args:         preference:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_engine()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

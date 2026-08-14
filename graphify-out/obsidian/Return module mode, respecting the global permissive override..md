@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "Planning Docs"
 location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Planning_Docs
 ---
 
 # Return module mode, respecting the global permissive override.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_module_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "shortcuts/README.md"
-location: "L135"
+community: "Planning Docs"
+location: "L187"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/shortcuts/READMEmd
+  - community/Planning_Docs
 ---
 
 # Security
 
 ## Connections
-- [[iCloud Services]] - `contains` [EXTRACTED]
+- [[1.2.3 — releasev1.2.3 (2026-06-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/shortcuts/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

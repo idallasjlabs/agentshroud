@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "docs/operations"
+community: "Gateway Proxy Layer"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Gateway_Proxy_Layer
 ---
 
 # Send a JSON-RPC request and read the response.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.send_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/operations
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer

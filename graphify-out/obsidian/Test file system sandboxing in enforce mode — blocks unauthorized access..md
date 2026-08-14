@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "docs/reference"
+community: "Auth & Exception Types"
 location: "L483"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/reference
+  - community/Auth__Exception_Types
 ---
 
 # Test file system sandboxing in enforce mode — blocks unauthorized access.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFileSandbox]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/reference
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

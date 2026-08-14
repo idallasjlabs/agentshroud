@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
+community: "docs/vault"
 location: "L278"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/docs/vault
 ---
 
 # Retention enforcement removes expired entries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_enforce_retention_deletes_expired()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

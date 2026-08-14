@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "scripts/sync-cve-registry.py"
 location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Forward_Routing__Approval
+  - community/scripts/sync-cve-registrypy
 ---
 
 # SSHResult
@@ -38,4 +38,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Forward_Routing__Approval
+#graphify/code #graphify/INFERRED #community/scripts/sync-cve-registrypy

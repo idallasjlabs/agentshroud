@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Egress & RBAC Security Core"
+community: "Gateway Test Suite"
 location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Gateway_Test_Suite
 ---
 
 # Test detection of blocked patterns in URLs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_blocked_pattern_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

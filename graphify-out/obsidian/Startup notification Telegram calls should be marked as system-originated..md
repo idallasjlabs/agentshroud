@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Community 1520"
+community: "Architecture Docs"
 location: "L397"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1520
+  - community/Architecture_Docs
 ---
 
 # Startup notification Telegram calls should be marked as system-originated.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_startup_telegram_calls_use_system_header()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1520
+#graphify/rationale #graphify/EXTRACTED #community/Architecture_Docs

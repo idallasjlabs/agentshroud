@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "SOC Dashboard"
+community: "Slack API Proxy"
 location: "L471"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Slack_API_Proxy
 ---
 
 # SCRUM-46: verify forward.py elevates trust to FULL for the owner's user_id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOwnerTrustElevation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy

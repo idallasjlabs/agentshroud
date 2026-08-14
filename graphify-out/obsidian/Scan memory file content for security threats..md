@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "Progressive Trust Config"
+community: "docs/vault"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/docs/vault
 ---
 
 # Scan memory file content for security threats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan_content_for_threats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

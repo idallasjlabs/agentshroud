@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Forward Routing & Approval"
 location: "L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Forward_Routing__Approval
 ---
 
 # Test blocking direct access to base agentshroud directory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_block_base_directory_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval

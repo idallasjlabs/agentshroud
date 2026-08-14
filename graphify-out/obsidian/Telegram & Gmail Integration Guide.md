@@ -20,7 +20,7 @@ tags:
 - [[Part 5 Telegram Troubleshooting]] - `contains` [EXTRACTED]
 - [[Part 6 Complete System Test]] - `contains` [EXTRACTED]
 - [[Part 7 Maintaining Functionality]] - `contains` [EXTRACTED]
-- [[Summary_20]] - `contains` [EXTRACTED]
+- [[Summary_39]] - `contains` [EXTRACTED]
 - [[TELEGRAM_GMAIL_SETUP]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

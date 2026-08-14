@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Voice Gateway Tests"
+community: "Planning Docs"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Voice_Gateway_Tests
+  - community/Planning_Docs
 ---
 
 # Severity
@@ -16,4 +16,4 @@ tags:
 - [[Severity_2]] - `uses` [INFERRED]
 - [[_map_severity()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Voice_Gateway_Tests
+#graphify/code #graphify/INFERRED #community/Planning_Docs

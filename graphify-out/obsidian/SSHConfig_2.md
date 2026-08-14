@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "Gateway Security Module"
 location: "L19"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Forward_Routing__Approval
+  - community/Gateway_Security_Module
 ---
 
 # SSHConfig
@@ -20,4 +20,4 @@ tags:
 - [[proxy()_2]] - `references` [EXTRACTED]
 - [[ssh_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Forward_Routing__Approval
+#graphify/code #graphify/INFERRED #community/Gateway_Security_Module

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "Docker Deploy Scripts"
+community: "Gateway Test Suite"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Gateway_Test_Suite
 ---
 
 # Test earning and losing trust.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustProgression]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Community 1545"
+community: "docs/runbooks"
 location: "L235"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1545
+  - community/docs/runbooks
 ---
 
 # Test getting protection statistics.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_protection_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1545
+#graphify/rationale #graphify/EXTRACTED #community/docs/runbooks

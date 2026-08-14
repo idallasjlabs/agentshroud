@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Cross-Bot Trust Ledger"
 location: "L8078"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # Send a user-friendly notification when a message is blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._notify_user_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger

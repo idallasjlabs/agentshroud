@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Collaborator Response Templates"
+community: "Auth & Exception Types"
 location: "L577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Auth__Exception_Types
 ---
 
 # Test detection of data exfiltration patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestExfiltrationDetection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

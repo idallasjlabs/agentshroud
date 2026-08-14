@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Tool Chain Analyzer"
 location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Tool_Chain_Analyzer
 ---
 
 # Return ServiceDescriptor for each known container plus internal gateway services
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.list_services()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain_Analyzer

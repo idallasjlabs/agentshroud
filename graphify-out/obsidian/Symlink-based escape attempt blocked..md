@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "docs/reference"
+community: "Auth & Exception Types"
 location: "L573"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/reference
+  - community/Auth__Exception_Types
 ---
 
 # Symlink-based escape attempt blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_symlink_traversal_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/reference
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

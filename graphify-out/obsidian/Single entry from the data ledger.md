@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Competitive Intel Store"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Competitive_Intel_Store
 ---
 
 # Single entry from the data ledger
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LedgerEntry_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store

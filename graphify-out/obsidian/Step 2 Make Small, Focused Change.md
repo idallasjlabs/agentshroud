@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Architecture Docs"
 location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Architecture_Docs
 ---
 
 # Step 2: Make Small, Focused Change
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Refactoring Workflow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

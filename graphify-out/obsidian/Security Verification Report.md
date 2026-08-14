@@ -17,7 +17,7 @@ tags:
 - [[Gitignore Protection (Multi-Layer)]] - `contains` [EXTRACTED]
 - [[SECURITY_VERIFICATION]] - `contains` [EXTRACTED]
 - [[Security Guarantees_2]] - `contains` [EXTRACTED]
-- [[Summary_18]] - `contains` [EXTRACTED]
+- [[Summary_37]] - `contains` [EXTRACTED]
 - [[Verification Tests]] - `contains` [EXTRACTED]
 - [[What Is Protected (Never Committed)]] - `contains` [EXTRACTED]
 - [[What Users Need to Do]] - `contains` [EXTRACTED]

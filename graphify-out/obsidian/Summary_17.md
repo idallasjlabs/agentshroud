@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L604"
+community: "Security Docs"
+location: "L847"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Docs
 ---
 
 # Summary
 
 ## Connections
-- [[Development Workflow Read-Only Filesystem Strategy]] - `contains` [EXTRACTED]
+- [[0.4.0 - 2026-02-19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Competitive Intel Store"
 location: "L961"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer_Pipeline
+  - community/Competitive_Intel_Store
 ---
 
 # SSHExecRequest
@@ -40,4 +40,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[ssh_exec()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/INFERRED #community/Competitive_Intel_Store

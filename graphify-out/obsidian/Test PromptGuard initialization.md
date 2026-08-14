@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Audit Export Pipeline"
+community: "Planning Docs"
 location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Planning_Docs
 ---
 
 # Test PromptGuard initialization
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prompt_guard_init()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

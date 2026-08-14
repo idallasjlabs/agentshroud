@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "MCP Policy Engine"
 location: "L7421"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/MCP_Policy_Engine
 ---
 
 # Send owner a summary of recent collaborator activity (last hour).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._send_owner_activity_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine

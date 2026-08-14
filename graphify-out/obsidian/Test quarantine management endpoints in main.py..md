@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "PII Sanitizer Pipeline"
 location: "L293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Test quarantine management endpoints in main.py.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestQuarantineEndpoints]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

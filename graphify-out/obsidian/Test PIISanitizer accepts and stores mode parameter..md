@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
+community: "docs/testing"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/docs/testing
 ---
 
 # Test PIISanitizer accepts and stores mode parameter.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pii_sanitizer_mode_param()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/testing

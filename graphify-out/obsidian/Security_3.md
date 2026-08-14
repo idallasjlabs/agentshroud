@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L135"
+community: "ESP32 Firmware"
+location: "L453"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/ESP32_Firmware
 ---
 
 # Security
 
 ## Connections
-- [[iCloud Services_1]] - `contains` [EXTRACTED]
+- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware

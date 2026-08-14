@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_VERIFICATION.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "docs/operations"
-location: "L5"
+community: "Docker Deploy Scripts"
+location: "L894"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Docker_Deploy_Scripts
 ---
 
 # Summary
 
 ## Connections
-- [[Security Verification Report]] - `contains` [EXTRACTED]
+- [[0.2.0 - 2026-02-17]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts

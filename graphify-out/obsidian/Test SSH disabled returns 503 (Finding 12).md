@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "Gateway Security Module"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Gateway_Security_Module
 ---
 
 # Test SSH disabled returns 503 (Finding #12)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHDisabled]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

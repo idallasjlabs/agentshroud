@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "ESP32 Firmware"
-location: "L135"
+community: "Security Docs"
+location: "L948"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Security_Docs
 ---
 
 # Security
 
 ## Connections
-- [[iCloud Services_3]] - `contains` [EXTRACTED]
+- [[0.1.0 - 2026-02-16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

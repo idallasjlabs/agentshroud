@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "rationale"
-community: "SOC Collaborator Lifecycle"
+community: "Gateway Test Suite"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/Gateway_Test_Suite
 ---
 
 # Set a mock response handler for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_response_handler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

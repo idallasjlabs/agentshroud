@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/cve-registry-manual-review.md"
+source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L14"
+community: "CLAUDE.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/CLAUDEmd
 ---
 
 # Summary
 
 ## Connections
-- [[cve-registry-manual-review]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 Enforcement Audit Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/CLAUDEmd

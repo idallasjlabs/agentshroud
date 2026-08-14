@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "docs/project"
 location: "L1193"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/project
 ---
 
 # Return recent competitive-intelligence reports in reverse-chronological order.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_competitive_intel_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/project

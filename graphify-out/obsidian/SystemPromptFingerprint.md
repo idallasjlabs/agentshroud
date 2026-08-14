@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Audit Export Pipeline"
+community: "Gateway Test Suite"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Audit_Export_Pipeline
+  - community/Gateway_Test_Suite
 ---
 
 # SystemPromptFingerprint
@@ -28,4 +28,4 @@ tags:
 - [[test_context_integrity.py]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Audit_Export_Pipeline
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

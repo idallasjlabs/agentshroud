@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Tool Chain Analyzer"
 location: "L190"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Security_Module
+  - community/Tool_Chain_Analyzer
 ---
 
 # ServiceStatus
@@ -18,4 +18,4 @@ tags:
 - [[ServiceStatus]] - `uses` [INFERRED]
 - [[_engine_status_to_service_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Security_Module
+#graphify/code #graphify/INFERRED #community/Tool_Chain_Analyzer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Security Module Middleware"
+community: "Auth & Exception Types"
 location: "L66"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Module_Middleware
+  - community/Auth__Exception_Types
 ---
 
 # SubagentMonitor
@@ -68,4 +68,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Module_Middleware
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

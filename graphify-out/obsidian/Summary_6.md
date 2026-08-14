@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "CLAUDE.md"
-location: "L6"
+community: "Bot Container Scripts"
+location: "L313"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CLAUDEmd
+  - community/Bot_Container_Scripts
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud v0.7.0 Enforcement Audit Results]] - `contains` [EXTRACTED]
+- [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CLAUDEmd
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts

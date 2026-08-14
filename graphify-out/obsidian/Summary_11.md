@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/session-issue-register-2026-03-14.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L8"
+community: "docs/vault"
+location: "L630"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/vault
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Session Issue Register — 2026-03-14]] - `contains` [EXTRACTED]
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/docs/vault

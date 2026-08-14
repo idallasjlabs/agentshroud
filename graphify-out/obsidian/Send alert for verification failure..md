@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Security Docs"
 location: "L591"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Security_Docs
 ---
 
 # Send alert for verification failure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._send_verification_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Security_Docs

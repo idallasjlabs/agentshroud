@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/project"
 location: "L137"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/docs/project
 ---
 
 # ServiceAction
@@ -18,4 +18,4 @@ tags:
 - [[IntelReportStore]] - `uses` [INFERRED]
 - [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/docs/project

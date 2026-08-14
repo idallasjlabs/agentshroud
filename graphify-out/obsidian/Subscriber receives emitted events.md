@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "PII Sanitizer Pipeline"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Subscriber receives emitted events
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_subscribe_receive_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

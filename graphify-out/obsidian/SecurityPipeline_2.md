@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "Gateway Security Module"
+community: "MCP Proxy Config"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Security_Module
+  - community/MCP_Proxy_Config
 ---
 
 # SecurityPipeline
@@ -23,4 +23,4 @@ tags:
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[_make_pipeline()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Security_Module
+#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config

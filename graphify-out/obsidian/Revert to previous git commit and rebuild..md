@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "docs/project"
+community: "Bot Skill Config"
 location: "L786"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Bot_Skill_Config
 ---
 
 # Revert to previous git commit and rebuild.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rollback_agentshroud()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/project
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

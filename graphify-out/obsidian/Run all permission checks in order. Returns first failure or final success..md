@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "Enforce-Mode Auto-Revert"
+community: "SOC Dashboard"
 location: "L626"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enforce-Mode_Auto-Revert
+  - community/SOC_Dashboard
 ---
 
 # Run all permission checks in order. Returns first failure or final success.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_all()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: ".github/COPILOT_CLI_SETUP.md"
+community: "Docker Deploy Scripts"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/github/COPILOT_CLI_SETUPmd
+  - community/Docker_Deploy_Scripts
 ---
 
 # Risk assessment levels for egress requests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RiskLevel_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd
+#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts

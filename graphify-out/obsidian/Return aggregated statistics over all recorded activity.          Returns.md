@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "HTTP Forwarder"
+community: "Bot Skill Config"
 location: "L300"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/Bot_Skill_Config
 ---
 
 # Return aggregated statistics over all recorded activity.          Returns:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_activity_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

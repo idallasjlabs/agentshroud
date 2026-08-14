@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "scripts/sync-cve-registry.py"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/scripts/sync-cve-registrypy
 ---
 
 # Routes content to appropriate agent containers      Routing priority:     1. Exp
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MultiAgentRouter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

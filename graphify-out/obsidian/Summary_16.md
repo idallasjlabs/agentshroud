@@ -1,8 +1,8 @@
 ---
-source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
+source_file: "CHANGELOG.md"
 type: "document"
 community: "Gateway Test Suite"
-location: "L383"
+location: "L817"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Summary
 
 ## Connections
-- [[Credential Security Policy]] - `contains` [EXTRACTED]
+- [[0.5.0 - 2026-02-21]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

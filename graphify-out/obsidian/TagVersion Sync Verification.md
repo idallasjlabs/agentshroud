@@ -13,6 +13,5 @@ tags:
 
 ## Connections
 - [[Release Workflow_1]] - `rationale_for` [EXTRACTED]
-- [[gateway__init__.py __version__]] - `references` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AGENTSmd

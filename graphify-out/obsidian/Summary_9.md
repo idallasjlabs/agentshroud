@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "docs/reference"
-location: "L228"
+community: "Setup Docs"
+location: "L466"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/reference
+  - community/Setup_Docs
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
+- [[1.0.0 — featv1.0.0 — Fortress (2026-03-31)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/reference
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

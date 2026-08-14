@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "Enforce-Mode Auto-Revert"
+community: "SOC Dashboard"
 location: "L371"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enforce-Mode_Auto-Revert
+  - community/SOC_Dashboard
 ---
 
 # Set trust level for an agent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_trust_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard

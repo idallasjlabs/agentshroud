@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L4533"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # TelegramAPIProxy
@@ -233,4 +233,4 @@ tags:
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

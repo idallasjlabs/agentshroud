@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Gateway Test Suite"
 location: "L293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Gateway_Test_Suite
 ---
 
 # Same injection multiple times shouldn't bypass.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_repeated_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

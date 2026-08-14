@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "MCP Proxy Config"
 location: "L344"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/MCP_Proxy_Config
 ---
 
 # Return the number of incidents currently in the ledger.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.incident_count()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

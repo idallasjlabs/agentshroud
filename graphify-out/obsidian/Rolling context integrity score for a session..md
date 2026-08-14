@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "rationale"
-community: "Audit Export Pipeline"
+community: "Gateway Test Suite"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Gateway_Test_Suite
 ---
 
 # Rolling context integrity score for a session.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IntegrityScore]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

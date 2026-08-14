@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "scripts/sync-cve-registry.py"
 location: "L15"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Forward_Routing__Approval
+  - community/scripts/sync-cve-registrypy
 ---
 
 # SSHHostConfig
@@ -56,4 +56,4 @@ tags:
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Forward_Routing__Approval
+#graphify/code #graphify/INFERRED #community/scripts/sync-cve-registrypy

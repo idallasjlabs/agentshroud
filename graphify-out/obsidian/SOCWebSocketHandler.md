@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Approval & FastAPI Ingest"
 location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Approval__FastAPI_Ingest
 ---
 
 # SOCWebSocketHandler
@@ -52,4 +52,4 @@ tags:
 - [[websocket.py]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "docs/vault"
 location: "L265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/vault
 ---
 
 # SecurityPipeline.process_inbound/outbound latency via the real pipeline class.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSecurityPipelineChainLatency]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

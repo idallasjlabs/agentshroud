@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Docker Deploy Scripts"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Docker_Deploy_Scripts
 ---
 
 # Result of an approval request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts

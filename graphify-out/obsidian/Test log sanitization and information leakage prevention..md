@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Collaborator Response Templates"
+community: "Auth & Exception Types"
 location: "L952"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Auth__Exception_Types
 ---
 
 # Test log sanitization and information leakage prevention.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLoggingSecurity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

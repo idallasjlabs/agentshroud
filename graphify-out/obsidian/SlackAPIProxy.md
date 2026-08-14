@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Setup Docs"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Setup_Docs
 ---
 
 # SlackAPIProxy
@@ -50,4 +50,4 @@ tags:
 - [[test_slack_proxy.py]] - `imports` [EXTRACTED]
 - [[test_slack_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Setup_Docs

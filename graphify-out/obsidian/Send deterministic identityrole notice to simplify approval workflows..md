@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "MCP Policy Engine"
 location: "L7358"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/MCP_Policy_Engine
 ---
 
 # Send deterministic identity/role notice to simplify approval workflows.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._send_local_whoami_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine

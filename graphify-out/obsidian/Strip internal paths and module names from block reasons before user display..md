@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Cross-Bot Trust Ledger"
 location: "L995"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # Strip internal paths and module names from block reasons before user display.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._sanitize_reason()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
