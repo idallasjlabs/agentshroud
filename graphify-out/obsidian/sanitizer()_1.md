@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "SOC Collaborator Lifecycle"
+community: "docs/vault"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/docs/vault
 ---
 
 # sanitizer()
@@ -15,4 +15,4 @@ tags:
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/code #graphify/EXTRACTED #community/docs/vault

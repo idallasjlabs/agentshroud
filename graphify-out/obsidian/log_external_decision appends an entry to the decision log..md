@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: ".github/COPILOT_CLI_SETUP.md"
+community: "Docker Deploy Scripts"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/github/COPILOT_CLI_SETUPmd
+  - community/Docker_Deploy_Scripts
 ---
 
 # log_external_decision appends an entry to the decision log.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_log_external_decision_basic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd
+#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts

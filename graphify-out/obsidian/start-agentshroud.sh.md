@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/docs/vault
 ---
 
 # start-agentshroud.sh
@@ -28,4 +28,4 @@ tags:
 - [[op_proxy_read_with_retry()]] - `defines` [EXTRACTED]
 - [[start-agentshroud.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/docs/vault

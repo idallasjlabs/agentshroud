@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "Security Docs"
+community: "skills/openclaw"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/skills/openclaw
 ---
 
 # test_key_rotation.py
@@ -29,4 +29,4 @@ tags:
 - [[test_credentials_status_endpoint()]] - `contains` [EXTRACTED]
 - [[test_rotate_credential_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

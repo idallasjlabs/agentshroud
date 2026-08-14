@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "Approval Queue Tests"
+community: "File Sandbox"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/File_Sandbox
 ---
 
 # test_shared_memory_write_acl.py
@@ -28,4 +28,4 @@ tags:
 - [[shared_memory()_2]] - `contains` [EXTRACTED]
 - [[shared_memory.py (SharedMemoryManager)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox

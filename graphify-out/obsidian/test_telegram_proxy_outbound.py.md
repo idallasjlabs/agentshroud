@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "HTTP Forwarder"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/Gateway_Test_Suite
 ---
 
 # test_telegram_proxy_outbound.py
@@ -43,4 +43,4 @@ tags:
 - [[_make_sanitizer()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

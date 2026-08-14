@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Setup Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Setup_Docs
 ---
 
 # test_channel_ownership.py
@@ -20,4 +20,4 @@ tags:
 - [[client()_2]] - `contains` [EXTRACTED]
 - [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Setup_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Bot CVE Scorecard"
+community: "MCP Proxy Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_CVE_Scorecard
+  - community/MCP_Proxy_Config
 ---
 
 # outbound_filter.py
@@ -21,4 +21,4 @@ tags:
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[main.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_CVE_Scorecard
+#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config

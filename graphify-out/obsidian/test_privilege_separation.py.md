@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "URL/Domain Validation Tests"
+community: "Egress & RBAC Security Core"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Egress__RBAC_Security_Core
 ---
 
 # test_privilege_separation.py
@@ -28,4 +28,4 @@ tags:
 - [[middleware_manager()]] - `contains` [EXTRACTED]
 - [[strict_sandbox()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

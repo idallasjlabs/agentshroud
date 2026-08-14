@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Security Module Middleware"
+community: "File Sandbox"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Module_Middleware
+  - community/File_Sandbox
 ---
 
 # session_manager.py (UserSessionManager)
@@ -18,4 +18,4 @@ tags:
 - [[test_session_manager.py]] - `references` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Module_Middleware
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox

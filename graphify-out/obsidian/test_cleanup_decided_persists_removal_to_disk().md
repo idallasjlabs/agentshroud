@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Collaborator Prompt Classifiers"
 location: "L440"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # test_cleanup_decided_persists_removal_to_disk()
@@ -17,4 +17,4 @@ tags:
 - [[SCRUM-110 cleanup_decided() must persist the removal, not just mutate     the i]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

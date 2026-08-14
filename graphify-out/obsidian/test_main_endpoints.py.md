@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Gateway Security Module"
+community: "PII Sanitizer Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # test_main_endpoints.py
@@ -34,4 +34,4 @@ tags:
 - [[middleware.py]] - `references` [EXTRACTED]
 - [[receive_security_alert()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

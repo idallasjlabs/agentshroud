@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "docs/operations"
+community: "PromptGuard Encoding Detection"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # strict_inspector()
@@ -16,4 +16,4 @@ tags:
 - [[MCPInspector_1]] - `calls` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/operations
+#graphify/code #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection

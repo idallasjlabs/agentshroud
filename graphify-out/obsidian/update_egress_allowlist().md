@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "scripts/migrate-cve-registry-ghsa.py"
 location: "L951"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/scripts/migrate-cve-registry-ghsapy
 ---
 
 # update_egress_allowlist()
@@ -20,4 +20,4 @@ tags:
 - [[management.py]] - `contains` [EXTRACTED]
 - [[set_egress_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/scripts/migrate-cve-registry-ghsapy

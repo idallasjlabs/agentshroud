@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "docs/vault"
 location: "L208"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/docs/vault
 ---
 
 # test_trust_insufficient_action_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Agent with low trust cannot perform elevated actions.]] - `rationale_for` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/vault

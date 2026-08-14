@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "docs/vault"
+community: "Gateway Test Suite"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # prompt_guard (prompt injection)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Security Modules (30+, gateway diagram)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/docs/vault
+#graphify/image #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -5,15 +5,14 @@ community: "docs/vault"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/docs/vault
 ---
 
 # test-augmenter.agent.md
 
 ## Connections
-- [[Claude Code Prime Directive (No New Files)]] - `semantically_similar_to` [INFERRED]
 - [[Codex Test Augmenter Role]] - `semantically_similar_to` [INFERRED]
 - [[Test Augmentation Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/docs/vault

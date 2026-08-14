@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Auth & Exception Types"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Auth__Exception_Types
 ---
 
 # log_sanitizer.py
@@ -16,4 +16,4 @@ tags:
 - [[get_sanitizer_stats()]] - `contains` [EXTRACTED]
 - [[install_log_sanitizer()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

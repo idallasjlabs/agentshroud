@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "Gateway Security Module"
+community: "SOC RBAC & Auth"
 location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/SOC_RBAC__Auth
 ---
 
 # test_prompt_guard_encoded_check_uses_full_ruleset()
@@ -16,4 +16,4 @@ tags:
 - [[`_check_encoded_content` now matches rules beyond the old top-5 slice.      Fail]] - `rationale_for` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth

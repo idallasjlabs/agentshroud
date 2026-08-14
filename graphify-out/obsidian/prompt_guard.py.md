@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Audit Export Pipeline"
+community: "MCP Proxy Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/MCP_Proxy_Config
 ---
 
 # prompt_guard.py
@@ -26,4 +26,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_multilingual_injection.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config

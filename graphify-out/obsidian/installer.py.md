@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "Gateway Ingest API"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - community/Gateway_Test_Suite
 ---
 
 # installer.py
@@ -22,4 +22,4 @@ tags:
 - [[security.py]] - `imports_from` [EXTRACTED]
 - [[start_install()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

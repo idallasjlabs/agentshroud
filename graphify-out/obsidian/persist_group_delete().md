@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Group Workspace Isolation"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Group_Workspace_Isolation
 ---
 
 # persist_group_delete()
@@ -19,4 +19,4 @@ tags:
 - [[group_config.py]] - `contains` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation

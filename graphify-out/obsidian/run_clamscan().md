@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Docs"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Docs
 ---
 
 # run_clamscan()
@@ -23,4 +23,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

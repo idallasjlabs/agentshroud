@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/docs/vault
 ---
 
 # test_audit_chain.py
@@ -21,4 +21,4 @@ tags:
 - [[TestTamperDetection]] - `contains` [EXTRACTED]
 - [[ledger()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/vault

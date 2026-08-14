@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # test_skills_manifest_sync.py
@@ -31,4 +31,4 @@ tags:
 - [[validate_manifest()]] - `imports` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

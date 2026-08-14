@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Competitive Intel Store"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Competitive_Intel_Store
 ---
 
 # models.py
@@ -40,4 +40,4 @@ tags:
 - [[store.py]] - `imports_from` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "PII Sanitizer Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # soc_correlation.py
@@ -15,4 +15,4 @@ tags:
 - [[CorrelationSummary]] - `contains` [EXTRACTED]
 - [[build_correlation_summary()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

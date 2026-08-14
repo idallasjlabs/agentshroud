@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Slack API Proxy"
+community: "Planning Docs"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Planning_Docs
 ---
 
 # lifespan()
@@ -101,4 +101,4 @@ tags:
 - [[setup_resource_guard()]] - `calls` [EXTRACTED]
 - [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

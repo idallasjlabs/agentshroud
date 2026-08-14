@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "scripts/sync-cve-registry.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/scripts/sync-cve-registrypy
 ---
 
 # test_security_fixes.py
@@ -33,4 +33,4 @@ tags:
 - [[sync_client()_1]] - `contains` [EXTRACTED]
 - [[telegram_api_proxy()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Audit Export Pipeline"
+community: "docs/vault"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/docs/vault
 ---
 
 # prompt_guard()
@@ -15,4 +15,4 @@ tags:
 - [[PromptGuard]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/code #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "docs/vault"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/docs/vault
 ---
 
 # test_config()
@@ -21,4 +21,4 @@ tags:
 - [[RouterConfig]] - `calls` [EXTRACTED]
 - [[conftest.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/vault

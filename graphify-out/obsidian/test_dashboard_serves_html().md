@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Planning Docs"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # test_dashboard_serves_html()
@@ -15,4 +15,4 @@ tags:
 - [[GET dashboard with valid cookie auth returns HTML.]] - `rationale_for` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

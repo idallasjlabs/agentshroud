@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Collaborator Prompt Classifiers"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # test_approval_queue.py
@@ -40,4 +40,4 @@ tags:
 - [[test_websocket_connect()]] - `contains` [EXTRACTED]
 - [[test_websocket_disconnect()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

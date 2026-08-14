@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "Audit Export Pipeline"
+community: "Planning Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Planning_Docs
 ---
 
 # test_prompt_guard.py
@@ -23,4 +23,4 @@ tags:
 - [[test_benign_message()]] - `contains` [EXTRACTED]
 - [[test_prompt_guard_init()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

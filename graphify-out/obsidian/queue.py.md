@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Enforce-Mode Auto-Revert"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # queue.py
@@ -26,4 +26,4 @@ tags:
 - [[models.py]] - `imports_from` [EXTRACTED]
 - [[test_mfa_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert

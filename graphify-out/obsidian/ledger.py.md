@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "Slack API Proxy"
+community: "Competitive Intel Store"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Competitive_Intel_Store
 ---
 
 # ledger.py
@@ -21,4 +21,4 @@ tags:
 - [[models.py]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store

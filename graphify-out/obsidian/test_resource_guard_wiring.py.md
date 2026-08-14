@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "docs/flows"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/flows
+  - community/Gateway_Test_Suite
 ---
 
 # test_resource_guard_wiring.py
@@ -19,4 +19,4 @@ tags:
 - [[TestResourceGuardWiring]] - `contains` [EXTRACTED]
 - [[setup_resource_guard()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/flows
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

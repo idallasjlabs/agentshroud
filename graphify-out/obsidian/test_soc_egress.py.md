@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress.py"
 type: "code"
-community: "docs/vault"
+community: "Community 1513"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Community_1513
 ---
 
 # test_soc_egress.py
@@ -20,4 +20,4 @@ tags:
 - [[TestConfirmationModel]] - `contains` [EXTRACTED]
 - [[TestEgressRequestModel]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Community_1513

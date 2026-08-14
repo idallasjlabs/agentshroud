@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/list_registry_ghsa_ids.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Planning Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # list_registry_ghsa_ids.py
@@ -17,4 +17,4 @@ tags:
 - [[main()_18]] - `contains` [EXTRACTED]
 - [[test_list_registry_ghsa_ids.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

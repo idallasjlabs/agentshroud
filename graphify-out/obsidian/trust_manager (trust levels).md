@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "docs/vault"
+community: "Gateway Test Suite"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # trust_manager (trust levels)
@@ -14,4 +14,4 @@ tags:
 - [[Security Modules (30+, gateway diagram)]] - `shares_data_with` [EXTRACTED]
 - [[TrustManager_5]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/docs/vault
+#graphify/image #graphify/EXTRACTED #community/Gateway_Test_Suite

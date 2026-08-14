@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "docs/vault"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/docs/vault
 ---
 
 # jira_dev_ticket.py (Generalized Jira dev-ticket helper)
@@ -15,4 +15,4 @@ tags:
 - [[init-openclaw-config.sh]] - `references` [EXTRACTED]
 - [[jira_weekly_review.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/docs/vault

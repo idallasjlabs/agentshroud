@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "PII Sanitizer Pipeline"
 location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # test_ws_activity_receives_events()
@@ -17,4 +17,4 @@ tags:
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

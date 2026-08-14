@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "code"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # test_auth.py
@@ -27,4 +27,4 @@ tags:
 - [[test_verify_token_valid()]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

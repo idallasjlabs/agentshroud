@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "docs/vault"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/docs/vault
 ---
 
 # test_initialize_is_idempotent()
@@ -17,4 +17,4 @@ tags:
 - [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c_1]] - `rationale_for` [EXTRACTED]
 - [[test_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/vault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "PII Sanitizer Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # test_event_bus.py
@@ -25,4 +25,4 @@ tags:
 - [[test_subscribe_receive_events()]] - `contains` [EXTRACTED]
 - [[test_unsubscribe_stops_events()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

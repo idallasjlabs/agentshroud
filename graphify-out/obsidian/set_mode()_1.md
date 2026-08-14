@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "skills/openclaw"
+community: "Security Docs"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Security_Docs
 ---
 
 # set_mode()
@@ -20,4 +20,4 @@ tags:
 - [[api.py]] - `contains` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skills/openclaw
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

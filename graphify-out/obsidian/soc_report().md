@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "PII Sanitizer Pipeline"
 location: "L2352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # soc_report()
@@ -23,4 +23,4 @@ tags:
 - [[build_correlation_summary()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

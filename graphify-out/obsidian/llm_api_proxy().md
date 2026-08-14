@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Competitive Intel Store"
 location: "L4311"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Competitive_Intel_Store
 ---
 
 # llm_api_proxy()
@@ -19,4 +19,4 @@ tags:
 - [[llm_openai_chat_alias()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store

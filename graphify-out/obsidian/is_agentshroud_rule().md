@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Security Docs"
+community: "Bot Container Scripts"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Container_Scripts
 ---
 
 # is_agentshroud_rule()
@@ -20,4 +20,4 @@ tags:
 - [[read_alerts()]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts

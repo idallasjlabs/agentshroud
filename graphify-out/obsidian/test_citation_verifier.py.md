@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/project"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/project
 ---
 
 # test_citation_verifier.py
@@ -28,4 +28,4 @@ tags:
 - [[make_httpx_fetcher()]] - `imports` [EXTRACTED]
 - [[test_default_allowlist_uses_permanent_egress_domains()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/project

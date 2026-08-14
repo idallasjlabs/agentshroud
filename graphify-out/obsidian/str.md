@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Gateway Test Suite"
+community: "Community 1513"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Community_1513
 ---
 
 # str
@@ -56,4 +56,4 @@ tags:
 - [[VulnClass]] - `inherits` [EXTRACTED]
 - [[WSEventType]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Community_1513

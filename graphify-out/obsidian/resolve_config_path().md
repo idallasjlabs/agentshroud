@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Slack API Proxy"
+community: "docs/reference"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/docs/reference
 ---
 
 # resolve_config_path()
@@ -23,4 +23,4 @@ tags:
 - [[test_config_hot_reload.py]] - `imports` [EXTRACTED]
 - [[test_resolve_config_path_explicit_and_env()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/docs/reference

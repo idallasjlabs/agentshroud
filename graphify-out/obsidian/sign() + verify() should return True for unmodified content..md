@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "MCP Proxy Config"
 location: "L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/MCP_Proxy_Config
 ---
 
 # sign() + verify() should return True for unmodified content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_sign_and_verify_roundtrip()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

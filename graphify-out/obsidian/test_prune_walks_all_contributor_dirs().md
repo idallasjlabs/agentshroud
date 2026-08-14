@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "HTTP Forwarder"
+community: "Bot Skill Config"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/Bot_Skill_Config
 ---
 
 # test_prune_walks_all_contributor_dirs()
@@ -19,4 +19,4 @@ tags:
 - [[_prune_fixture_markdown()]] - `calls` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

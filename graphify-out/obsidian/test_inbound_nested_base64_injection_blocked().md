@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "Gateway Security Module"
+community: "SOC RBAC & Auth"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/SOC_RBAC__Auth
 ---
 
 # test_inbound_nested_base64_injection_blocked()
@@ -16,4 +16,4 @@ tags:
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth

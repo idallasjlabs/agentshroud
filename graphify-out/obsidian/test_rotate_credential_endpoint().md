@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "Security Docs"
+community: "skills/openclaw"
 location: "L505"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/skills/openclaw
 ---
 
 # test_rotate_credential_endpoint()
@@ -15,4 +15,4 @@ tags:
 - [[Test the POST managecredentialsrotate{credential_id} endpoint.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

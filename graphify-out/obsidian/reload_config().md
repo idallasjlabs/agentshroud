@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Slack API Proxy"
+community: "docs/reference"
 location: "L745"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/docs/reference
 ---
 
 # reload_config()
@@ -26,4 +26,4 @@ tags:
 - [[test_reload_rejects_invalid_and_keeps_last_good()]] - `calls` [EXTRACTED]
 - [[test_reload_rejects_schema_violation_and_keeps_last_good()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/docs/reference

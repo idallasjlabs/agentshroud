@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "docs/project"
+community: "Bot Skill Config"
 location: "L785"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Bot_Skill_Config
 ---
 
 # rollback_agentshroud()
@@ -16,4 +16,4 @@ tags:
 - [[_get_engine()]] - `calls` [EXTRACTED]
 - [[api.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/project
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

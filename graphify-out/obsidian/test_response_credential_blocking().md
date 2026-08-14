@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "docs/vault"
 location: "L346"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/docs/vault
 ---
 
 # test_response_credential_blocking()
@@ -15,4 +15,4 @@ tags:
 - [[Outbound responses have credentials blocked for untrusted sources.]] - `rationale_for` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/vault

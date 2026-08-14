@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "File Sandbox"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/File_Sandbox
 ---
 
 # teams()
@@ -15,4 +15,4 @@ tags:
 - [[TeamsConfig]] - `calls` [EXTRACTED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/File_Sandbox

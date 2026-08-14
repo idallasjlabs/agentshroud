@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Tool Chain Analyzer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Tool_Chain_Analyzer
 ---
 
 # services.py
@@ -28,4 +28,4 @@ tags:
 - [[load_config()]] - `imports` [EXTRACTED]
 - [[models.py_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer

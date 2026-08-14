@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gateway Security Module"
 location: "L731"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Security_Module
 ---
 
 # triage_entry()
@@ -20,4 +20,4 @@ tags:
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 - [[triage_agent()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

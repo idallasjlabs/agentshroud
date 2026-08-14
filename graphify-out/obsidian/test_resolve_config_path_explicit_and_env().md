@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "Slack API Proxy"
+community: "docs/reference"
 location: "L265"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/docs/reference
 ---
 
 # test_resolve_config_path_explicit_and_env()
@@ -16,4 +16,4 @@ tags:
 - [[resolve_config_path()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/docs/reference

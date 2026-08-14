@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "code"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # test_rate_limiter_blocks_excess_requests()
@@ -16,4 +16,4 @@ tags:
 - [[Test rate limiter blocks requests over limit]] - `rationale_for` [EXTRACTED]
 - [[test_auth.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

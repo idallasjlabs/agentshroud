@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Enforce-Mode Auto-Revert"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # test_mfa_guard.py
@@ -73,4 +73,4 @@ tags:
 - [[test_valid_totp_prev_window_allowed()]] - `contains` [EXTRACTED]
 - [[test_wrong_length_code_denies()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert

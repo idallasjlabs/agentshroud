@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Security Module Middleware"
+community: "Auth & Exception Types"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Module_Middleware
+  - community/Auth__Exception_Types
 ---
 
 # test_security_audit_advanced.py
@@ -26,4 +26,4 @@ tags:
 - [[test_security_audit.py]] - `conceptually_related_to` [INFERRED]
 - [[webapi.py (POST apiintelreports)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Module_Middleware
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

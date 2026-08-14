@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Security Docs"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/docs/vault
 ---
 
 # test_security_toolchain.py
@@ -55,4 +55,4 @@ tags:
 - [[score_to_grade()]] - `imports` [EXTRACTED]
 - [[update_virus_db()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/docs/vault

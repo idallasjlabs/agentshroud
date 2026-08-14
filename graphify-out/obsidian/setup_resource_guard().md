@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "docs/flows"
+community: "Gateway Test Suite"
 location: "L467"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/flows
+  - community/Gateway_Test_Suite
 ---
 
 # setup_resource_guard()
@@ -22,4 +22,4 @@ tags:
 - [[resource_guard.py]] - `contains` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/flows
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Gateway Test Suite"
 location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Gateway_Test_Suite
 ---
 
 # sanitize_tool_result()
@@ -20,4 +20,4 @@ tags:
 - [[test_tool_result_sanitizer_enhanced.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

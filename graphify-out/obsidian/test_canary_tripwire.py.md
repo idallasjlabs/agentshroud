@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "docs/vault"
+community: "SOC RBAC & Auth"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/SOC_RBAC__Auth
 ---
 
 # test_canary_tripwire.py
@@ -17,4 +17,4 @@ tags:
 - [[TestCanaryTripwire]] - `contains` [EXTRACTED]
 - [[TripwireResponse]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth

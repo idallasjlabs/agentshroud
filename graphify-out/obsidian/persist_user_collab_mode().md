@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Group Workspace Isolation"
 location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Group_Workspace_Isolation
 ---
 
 # persist_user_collab_mode()
@@ -22,4 +22,4 @@ tags:
 - [[set_user_collab_mode()]] - `calls` [EXTRACTED]
 - [[test_group_config.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation

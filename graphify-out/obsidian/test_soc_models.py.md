@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Community 1513"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Community_1513
 ---
 
 # test_soc_models.py
@@ -35,4 +35,4 @@ tags:
 - [[WSEvent]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Community_1513

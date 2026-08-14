@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Tool Chain Analyzer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Tool_Chain_Analyzer
 ---
 
 # test_soc_services.py
@@ -20,4 +20,4 @@ tags:
 - [[TestServiceManagerGetLogs]] - `contains` [EXTRACTED]
 - [[TestServiceManagerImport]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer

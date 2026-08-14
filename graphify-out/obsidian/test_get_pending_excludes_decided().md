@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Collaborator Prompt Classifiers"
 location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # test_get_pending_excludes_decided()
@@ -16,4 +16,4 @@ tags:
 - [[Test that get_pending excludes decided requests]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

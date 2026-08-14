@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "MCP Proxy Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/MCP_Proxy_Config
 ---
 
 # pipeline.py
@@ -28,4 +28,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config

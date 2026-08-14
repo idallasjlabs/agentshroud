@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Docs
 ---
 
 # test_observatory_mode.py
@@ -33,4 +33,4 @@ tags:
 - [[reset_env_and_task()]] - `contains` [EXTRACTED]
 - [[set_mode()_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

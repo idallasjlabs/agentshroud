@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "docs/vault"
+community: "skills/openclaw"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/skills/openclaw
 ---
 
 # test_intel_endpoint.py
@@ -27,4 +27,4 @@ tags:
 - [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

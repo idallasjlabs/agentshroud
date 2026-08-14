@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Planning Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Planning_Docs
 ---
 
 # prompt_protection.py
@@ -18,4 +18,4 @@ tags:
 - [[i-sec-defense Blue Team Security Auditor]] - `references` [EXTRACTED]
 - [[i-sec-offense Red Team Adversarial Tester]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

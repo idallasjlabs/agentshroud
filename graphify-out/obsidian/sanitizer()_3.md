@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "Gateway Test Suite"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/Gateway_Test_Suite
 ---
 
 # sanitizer()
@@ -16,4 +16,4 @@ tags:
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[test_filter_xml_blocks.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

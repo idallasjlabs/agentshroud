@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Gateway Test Suite"
 location: "L202"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # openclaw and hermes sessions for the same user must not share a directory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_different_bots_get_different_workspace_dirs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

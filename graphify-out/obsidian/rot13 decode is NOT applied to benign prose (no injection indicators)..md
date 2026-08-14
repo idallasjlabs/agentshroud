@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "SOC RBAC & Auth"
 location: "L308"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/SOC_RBAC__Auth
 ---
 
 # rot13 decode is NOT applied to benign prose (no injection indicators).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_encoding_detector_rot13_ignores_benign_prose()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth

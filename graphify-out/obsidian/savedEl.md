@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/options.js"
 type: "code"
-community: "Setup Docs"
+community: "browser-extension/background.js"
 location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/browser-extension/backgroundjs
 ---
 
 # savedEl
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[options.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Setup_Docs
+#graphify/code #graphify/EXTRACTED #community/browser-extension/backgroundjs

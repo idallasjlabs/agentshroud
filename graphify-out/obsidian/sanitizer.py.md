@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "Slack API Proxy"
+community: "Telegram Proxy Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # sanitizer.py
@@ -21,4 +21,4 @@ tags:
 - [[models.py]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

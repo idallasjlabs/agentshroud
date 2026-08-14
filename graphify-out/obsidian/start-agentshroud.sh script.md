@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/docs/vault
 ---
 
 # start-agentshroud.sh script
@@ -21,4 +21,4 @@ tags:
 - [[_telegram_send_photo()_1]] - `calls` [EXTRACTED]
 - [[start-agentshroud.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/docs/vault

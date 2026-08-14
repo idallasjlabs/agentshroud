@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "scripts/sync-cve-registry.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/scripts/sync-cve-registrypy
 ---
 
 # ssh_config.py
@@ -16,4 +16,4 @@ tags:
 - [[SSHHostConfig]] - `contains` [EXTRACTED]
 - [[config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
