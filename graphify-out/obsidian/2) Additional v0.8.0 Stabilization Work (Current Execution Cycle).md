@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-execution-summary-draft.md"
 type: "document"
-community: "docs/project"
+community: "SOC Dashboard"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/SOC_Dashboard
 ---
 
 # 2) Additional v0.8.0 Stabilization Work (Current Execution Cycle)
@@ -16,4 +16,4 @@ tags:
 - [[Assessmentquality loop support delivered]] - `contains` [EXTRACTED]
 - [[Telegram securityUX hardening delivered]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/SOC_Dashboard

@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "AGENTS.md"
+community: "voice_gateway/tts.py"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSmd
+  - community/voice_gateway/ttspy
 ---
 
 # 1) REPOSITORY OVERVIEW
@@ -16,4 +16,4 @@ tags:
 - [[Primary Focus_1]] - `contains` [EXTRACTED]
 - [[Supporting Integrations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSmd
+#graphify/document #graphify/EXTRACTED #community/voice_gateway/ttspy
