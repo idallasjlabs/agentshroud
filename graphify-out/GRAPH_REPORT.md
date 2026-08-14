@@ -1,16 +1,16 @@
 # Graph Report - agentshroud  (2026-08-14)
 
 ## Corpus Check
-- 1308 files · ~2,074,791 words
+- 1309 files · ~2,077,406 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 30327 nodes · 51328 edges · 1696 communities (1325 shown, 371 thin omitted)
-- Extraction: 85% EXTRACTED · 15% INFERRED · 0% AMBIGUOUS · INFERRED: 7797 edges (avg confidence: 0.54)
+- 30331 nodes · 51336 edges · 1788 communities (1359 shown, 429 thin omitted)
+- Extraction: 85% EXTRACTED · 15% INFERRED · 0% AMBIGUOUS · INFERRED: 7796 edges (avg confidence: 0.54)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8fd639ce`
+- Built from commit: `82815303`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -1538,19 +1538,112 @@
 - [[_COMMUNITY_Community 1523|Community 1523]]
 - [[_COMMUNITY_Community 1524|Community 1524]]
 - [[_COMMUNITY_Community 1525|Community 1525]]
+- [[_COMMUNITY_Community 1526|Community 1526]]
+- [[_COMMUNITY_Community 1527|Community 1527]]
+- [[_COMMUNITY_Community 1528|Community 1528]]
+- [[_COMMUNITY_Community 1529|Community 1529]]
+- [[_COMMUNITY_Community 1530|Community 1530]]
+- [[_COMMUNITY_Community 1531|Community 1531]]
+- [[_COMMUNITY_Community 1532|Community 1532]]
+- [[_COMMUNITY_Community 1533|Community 1533]]
+- [[_COMMUNITY_Community 1534|Community 1534]]
+- [[_COMMUNITY_Community 1535|Community 1535]]
+- [[_COMMUNITY_Community 1536|Community 1536]]
+- [[_COMMUNITY_Community 1537|Community 1537]]
+- [[_COMMUNITY_Community 1538|Community 1538]]
 - [[_COMMUNITY_Community 1539|Community 1539]]
 - [[_COMMUNITY_Gateway Test Suite|Gateway Test Suite]]
+- [[_COMMUNITY_Community 1541|Community 1541]]
+- [[_COMMUNITY_Community 1542|Community 1542]]
+- [[_COMMUNITY_Community 1543|Community 1543]]
+- [[_COMMUNITY_Community 1544|Community 1544]]
+- [[_COMMUNITY_Community 1545|Community 1545]]
 - [[_COMMUNITY_Community 1546|Community 1546]]
+- [[_COMMUNITY_Community 1547|Community 1547]]
+- [[_COMMUNITY_Community 1548|Community 1548]]
+- [[_COMMUNITY_Community 1549|Community 1549]]
+- [[_COMMUNITY_Community 1550|Community 1550]]
+- [[_COMMUNITY_Community 1551|Community 1551]]
+- [[_COMMUNITY_Community 1552|Community 1552]]
+- [[_COMMUNITY_Community 1553|Community 1553]]
+- [[_COMMUNITY_Community 1554|Community 1554]]
 - [[_COMMUNITY_docsapi|docs/api]]
+- [[_COMMUNITY_Community 1556|Community 1556]]
+- [[_COMMUNITY_Community 1557|Community 1557]]
+- [[_COMMUNITY_Community 1558|Community 1558]]
+- [[_COMMUNITY_Community 1559|Community 1559]]
 - [[_COMMUNITY_chatbot__init__.py|chatbot/__init__.py]]
+- [[_COMMUNITY_Community 1561|Community 1561]]
+- [[_COMMUNITY_Community 1562|Community 1562]]
+- [[_COMMUNITY_Community 1563|Community 1563]]
+- [[_COMMUNITY_Community 1564|Community 1564]]
+- [[_COMMUNITY_Community 1565|Community 1565]]
+- [[_COMMUNITY_Community 1566|Community 1566]]
+- [[_COMMUNITY_Community 1567|Community 1567]]
+- [[_COMMUNITY_Community 1568|Community 1568]]
+- [[_COMMUNITY_Community 1569|Community 1569]]
+- [[_COMMUNITY_Community 1570|Community 1570]]
+- [[_COMMUNITY_Community 1571|Community 1571]]
+- [[_COMMUNITY_Community 1572|Community 1572]]
+- [[_COMMUNITY_Community 1573|Community 1573]]
+- [[_COMMUNITY_Community 1574|Community 1574]]
+- [[_COMMUNITY_Community 1575|Community 1575]]
+- [[_COMMUNITY_Community 1576|Community 1576]]
 - [[_COMMUNITY_docsdiagrams|docs/diagrams]]
 - [[_COMMUNITY_docsdiagrams|docs/diagrams]]
+- [[_COMMUNITY_Community 1579|Community 1579]]
+- [[_COMMUNITY_Community 1580|Community 1580]]
+- [[_COMMUNITY_Community 1581|Community 1581]]
+- [[_COMMUNITY_Community 1582|Community 1582]]
+- [[_COMMUNITY_Community 1583|Community 1583]]
+- [[_COMMUNITY_Community 1584|Community 1584]]
+- [[_COMMUNITY_Community 1585|Community 1585]]
+- [[_COMMUNITY_Community 1586|Community 1586]]
+- [[_COMMUNITY_Community 1587|Community 1587]]
+- [[_COMMUNITY_Community 1588|Community 1588]]
+- [[_COMMUNITY_Community 1589|Community 1589]]
+- [[_COMMUNITY_Community 1590|Community 1590]]
+- [[_COMMUNITY_Community 1591|Community 1591]]
+- [[_COMMUNITY_Community 1592|Community 1592]]
+- [[_COMMUNITY_Community 1593|Community 1593]]
+- [[_COMMUNITY_Community 1594|Community 1594]]
+- [[_COMMUNITY_Community 1595|Community 1595]]
+- [[_COMMUNITY_Community 1596|Community 1596]]
+- [[_COMMUNITY_Community 1597|Community 1597]]
+- [[_COMMUNITY_Community 1598|Community 1598]]
+- [[_COMMUNITY_Community 1599|Community 1599]]
+- [[_COMMUNITY_Community 1600|Community 1600]]
+- [[_COMMUNITY_Community 1601|Community 1601]]
 - [[_COMMUNITY_docsflows|docs/flows]]
+- [[_COMMUNITY_Community 1603|Community 1603]]
+- [[_COMMUNITY_Community 1604|Community 1604]]
+- [[_COMMUNITY_Community 1605|Community 1605]]
+- [[_COMMUNITY_Community 1606|Community 1606]]
+- [[_COMMUNITY_Community 1607|Community 1607]]
+- [[_COMMUNITY_Community 1608|Community 1608]]
+- [[_COMMUNITY_Community 1609|Community 1609]]
+- [[_COMMUNITY_Community 1610|Community 1610]]
+- [[_COMMUNITY_Community 1611|Community 1611]]
+- [[_COMMUNITY_Community 1612|Community 1612]]
+- [[_COMMUNITY_Community 1613|Community 1613]]
+- [[_COMMUNITY_Community 1614|Community 1614]]
+- [[_COMMUNITY_Community 1615|Community 1615]]
 - [[_COMMUNITY_Bot Skill Config|Bot Skill Config]]
+- [[_COMMUNITY_Community 1617|Community 1617]]
+- [[_COMMUNITY_Community 1618|Community 1618]]
+- [[_COMMUNITY_Community 1619|Community 1619]]
+- [[_COMMUNITY_Community 1620|Community 1620]]
+- [[_COMMUNITY_Community 1621|Community 1621]]
+- [[_COMMUNITY_Community 1622|Community 1622]]
+- [[_COMMUNITY_Community 1623|Community 1623]]
+- [[_COMMUNITY_Community 1624|Community 1624]]
+- [[_COMMUNITY_Community 1625|Community 1625]]
+- [[_COMMUNITY_Community 1626|Community 1626]]
+- [[_COMMUNITY_Community 1627|Community 1627]]
+- [[_COMMUNITY_Community 1628|Community 1628]]
 - [[_COMMUNITY_docsdiagrams|docs/diagrams]]
-- [[_COMMUNITY_docsdiagrams|docs/diagrams]]
-- [[_COMMUNITY_docsdiagrams|docs/diagrams]]
-- [[_COMMUNITY_ESP32 Firmware|ESP32 Firmware]]
+- [[_COMMUNITY_Community 1630|Community 1630]]
+- [[_COMMUNITY_Community 1631|Community 1631]]
 - [[_COMMUNITY_Bot Skill Config|Bot Skill Config]]
 - [[_COMMUNITY_Bot Skill Config|Bot Skill Config]]
 - [[_COMMUNITY_Bot Skill Config|Bot Skill Config]]
@@ -1689,8 +1782,8 @@
   CHEATSHEET.md → README.md
 - `Audit-log-every-fetch design rationale` --semantically_similar_to--> `AWS Cloud Management & FinOps Agent`  [INFERRED] [semantically similar]
   docker/config/openclaw/skills/i-browser/browse.js → docker/config/hermes/skills/i-aws/SKILL.md
-- `agentshroud-isolated network (172.21.0.0/16)` --conceptually_related_to--> `ADR-003: Two-Network Container Isolation`  [AMBIGUOUS]
-  docs/diagrams/images/diagram-04-infrastructure-hosting.svg → docs/architecture/adr/ADR-003-two-network-container-isolation.md
+- `WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)` --references--> `rbac.py (5-level RBAC hierarchy)`  [EXTRACTED]
+  docs/security/ws-e-audit-v1.2.md → gateway/security/rbac.py
 
 ## Import Cycles
 - 1-file cycle: `chatbot/main.py -> chatbot/main.py`
@@ -1713,131 +1806,127 @@
 - **Three-Tier Network Segmentation (IEC 62443 FR5)** — docker_docker_compose_gateway_service, docker_docker_compose_agentshroud_internal_network, docker_docker_compose_agentshroud_isolated_network, docker_docker_compose_agentshroud_dmz_network [EXTRACTED 1.00]
 - **Multi-LLM Dev Review Workflow (Hermes/OpenClaw)** — i_hdev_skill, i_odev_skill, runbooks_hermes_openclaw_dev_workflow_doc [EXTRACTED 1.00]
 
-## Communities (1696 total, 371 thin omitted)
+## Communities (1788 total, 429 thin omitted)
 
 ### Community 0 - "PII Config & Test Fixtures"
 Cohesion: 0.02
-Nodes (184): TelegramAPIProxy, FakeRBAC, _make_update(), PassthroughPipeline, Owner /deny without target, with 2+ pending collaborator         requests, is ge, Owner /deny with one pending request should deny that request., Owner /pending should return deterministic snapshot of pending/collaborator/revo, Owner /addcollab without target should return usage guidance. (+176 more)
+Nodes (178): TelegramAPIProxy, FakeRBAC, _make_update(), PassthroughPipeline, Owner /deny with one pending request should deny that request., Owner /pending should return deterministic snapshot of pending/collaborator/revo, Owner /addcollab without target should return usage guidance., Owner /addcollab should accept known collaborator short-name aliases. (+170 more)
 
 ### Community 1 - "Egress & RBAC Security Core"
-Cohesion: 0.01
-Nodes (191): Action, Any, Exception, RBACManager, Resource, ToolTier, Any, Any (+183 more)
+Cohesion: 0.03
+Nodes (60): Any, ApprovalHardening, ApprovalHardeningConfig, DeceptionDetection, DeniedRequest, Record of a denied approval request., Anti-social-engineering hardening for approval queue., Analyze an approval request for potential deception or social engineering. (+52 more)
 
 ### Community 2 - "Telegram Proxy Test Suite"
-Cohesion: 0.03
-Nodes (61): RedactionResult, Any, PIIConfig, PIISanitizer, RedactionResult, Individual redaction record, Result of PII sanitization, RedactionDetail (+53 more)
+Cohesion: 0.04
+Nodes (57): RedactionResult, Any, PIIConfig, Set configuration and initialize tool result sanitizer, Individual redaction record, Result of PII sanitization, RedactionDetail, RedactionResult (+49 more)
 
 ### Community 3 - "PII Sanitizer Pipeline"
 Cohesion: 0.01
-Nodes (257): ApprovalDecision, AuthRequired, GatewayConfig, AuthRequired, ApprovalRequest, AuthRequired, Request, WebSocket (+249 more)
+Nodes (276): AuthRequired, Exception, Any, AuthRequired, Exception, Request, WebSocket, EventBus (+268 more)
 
 ### Community 4 - "Auth & Exception Types"
 Cohesion: 0.01
-Nodes (220): PIIConfig, Any, Any, Path, Any, Pattern, Path, IsolationStatus (+212 more)
+Nodes (251): PIIConfig, Any, Path, Path, IsolationStatus, AlertDispatcher, Remove expired entries from seen IDs cache.          Returns:             Number, Dispatches security alerts with dedup and rate limiting. (+243 more)
 
 ### Community 5 - "Approval & FastAPI Ingest"
-Cohesion: 0.01
-Nodes (171): Any, RBACConfig, Role, ToolTier, WebSocket, RBACConfig, RBACConfig, SCLCaller (+163 more)
+Cohesion: 0.02
+Nodes (114): Any, RBACConfig, Role, ToolTier, RBACConfig, SCLCaller, Any, SimpleNamespace (+106 more)
 
 ### Community 6 - "Approval Queue Tests"
-Cohesion: 0.02
-Nodes (32): _bot(), _FakeRBAC, mm(), A security-critical guard whose constructor RAISES during __init__ must     NOT, Deterministic stand-in for RBACManager., MiddlewareManager built via __new__ — every module attr explicitly None     so e, _req(), _scan_result() (+24 more)
+Cohesion: 0.03
+Nodes (30): _bot(), _FakeRBAC, mm(), A security-critical guard whose constructor RAISES during __init__ must     NOT, Deterministic stand-in for RBACManager., MiddlewareManager built via __new__ — every module attr explicitly None     so e, _req(), _scan_result() (+22 more)
 
 ### Community 7 - "Forward Routing & Approval"
 Cohesion: 0.03
-Nodes (42): PathRewriteResult, Get the isolated temp directory path for a user., Sanitize user ID to prevent path traversal attacks., Rewrite a path to isolate it to the user's namespace.          Args:, Check if path is trying to access the base AgentShroud directory., Check if path is trying to access another user's isolated namespace.          Re, Apply path rewriting rules to isolate paths per user., Ensure user's isolated directory exists. (+34 more)
+Nodes (49): any, PathIsolationManager, PathRewriteResult, Get the isolated temp directory path for a user., Sanitize user ID to prevent path traversal attacks., Rewrite a path to isolate it to the user's namespace.          Args:, Check if path is trying to access the base AgentShroud directory., Check if path is trying to access another user's isolated namespace.          Re (+41 more)
 
 ### Community 8 - "Security Module Middleware"
-Cohesion: 0.10
-Nodes (15): AlertSeverity, EgressEvent, default_config(), monitor(), monitor_config(), Small amounts across multiple channels should be detected., Normal usage across channels should not trigger drip detection., Alerts in monitor mode should never block. (+7 more)
+Cohesion: 0.03
+Nodes (112): ApprovalDecision, Any, ApprovalRequest, AuthRequired, Request, WebSocket, AuthRequired, Path (+104 more)
 
 ### Community 9 - "Collaborator Prompt Classifiers"
 Cohesion: 0.02
-Nodes (167): EnhancedApprovalQueue, Close the store and cancel timeout tasks., Get the risk tier for a tool., Get the policy for a risk tier., Check if a tool requires approval based on risk tier and policy., Submit a tool call request for approval.          Args:             tool_name: T, Add an action to the approval queue with policy-based timeout., Schedule a timeout task for a request. (+159 more)
+Nodes (162): EnhancedApprovalQueue, Close the store and cancel timeout tasks., Get the risk tier for a tool., Get the policy for a risk tier., Check if a tool requires approval based on risk tier and policy., Submit a tool call request for approval.          Args:             tool_name: T, Add an action to the approval queue with policy-based timeout., Schedule a timeout task for a request. (+154 more)
 
 ### Community 10 - "URL/Domain Validation Tests"
-Cohesion: 0.06
-Nodes (15): FileOperation, FileVerdict, PIIFinding, PIIScanner, PIIScanResult, Detect path traversal attempts in raw input before normalization., Check if path matches any blocked pattern., Check if this is an immutable security file by name. (+7 more)
+Cohesion: 0.04
+Nodes (22): FileOperation, FileVerdict, PIIFinding, PIIScanner, PIIScanResult, Detect path traversal attempts in raw input before normalization., Check if path matches any blocked pattern., Check if this is an immutable security file by name. (+14 more)
 
 ### Community 11 - "Slack API Proxy"
-Cohesion: 0.03
-Nodes (86): AgentTarget, AgentTarget, Any, ForwardRequest, forward-routing agent_id propagation into security pipeline, AgentTarget, Downstream agent target, gateway/ingest_api/router.py (MultiAgentRouter) (+78 more)
+Cohesion: 0.06
+Nodes (45): AgentTarget, AgentTarget, Downstream agent target, gateway/ingest_api/router.py (MultiAgentRouter), test_forward_stream_rejects_non_openai_compat_target(), forward_to_agent extracts choices[0].message.content and returns a string., Malformed OpenAI response (missing choices) raises ForwardError, not KeyError., Empty choices list raises ForwardError. (+37 more)
 
 ### Community 12 - "Cross-Bot Trust Ledger"
 Cohesion: 0.02
-Nodes (76): Best-effort guardrail: collaborator prompts requesting direct file access., Detect conceptual file-purpose questions without direct content requests., Detect plain-language model status questions for deterministic local reply., Detect plain NO_REPLY sentinel with light punctuation wrapping., Best-effort check to avoid treating local file names as egress domains., Detect collaborator prompts probing sensitive filesystem paths/secrets., Detect collaborator prompts attempting path traversal style file access., Detect collaborator prompts targeting cloud metadata endpoints. (+68 more)
+Nodes (72): Best-effort guardrail: collaborator prompts requesting direct file access., Detect conceptual file-purpose questions without direct content requests., Detect plain-language model status questions for deterministic local reply., Detect collaborator prompts probing sensitive filesystem paths/secrets., Detect collaborator prompts attempting path traversal style file access., Detect collaborator prompts targeting cloud metadata endpoints., Detect collaborator prompts targeting local/internal network hosts., Detect collaborator prompts asking to decode/deobfuscate and execute commands. (+64 more)
 
 ### Community 13 - "Progressive Trust Config"
-Cohesion: 0.09
-Nodes (28): MemoryIntegrityConfig, MemoryIntegrityConfig, MemoryLifecycleConfig, MemorySecurityConfig, Configuration for memory file integrity monitoring., Configuration for memory lifecycle management., Combined memory security configuration., FileIntegrityRecord (+20 more)
+Cohesion: 0.03
+Nodes (82): Any, Path, Any, Path, MemoryIntegrityConfig, MemoryLifecycleConfig, MemoryIntegrityConfig, MemoryLifecycleConfig (+74 more)
 
 ### Community 14 - "Group Workspace Isolation"
 Cohesion: 0.03
-Nodes (74): TeamsConfig, build_project_context_injection(), format_addtogroup_success(), format_already_member(), format_group_info(), format_groups_list(), format_no_permission(), format_not_member() (+66 more)
+Nodes (44): TeamsConfig, build_project_context_injection(), format_addtogroup_success(), format_already_member(), format_group_info(), format_groups_list(), format_no_permission(), format_not_member() (+36 more)
 
 ### Community 15 - "LLM Proxy Resource Guard"
 Cohesion: 0.02
 Nodes (36): gateway/soc/auth.py (get_caller), gateway/soc/router.py (SCL REST endpoints), _fake_contributor_manager(), FakeAuditStore, FakeCaller, FakeGroup, holder(), _make_service_manager() (+28 more)
 
 ### Community 16 - "SOC RBAC & Auth"
-Cohesion: 0.02
-Nodes (103): i-sec-defense README, i-sec-defense: Blue Team Security Auditor, i-sec-offense README, i-sec-offense: Red Team Adversarial Tester, Red Team Canary Values (FAKE_SSN, FAKE_KEY, Project Nightingale), Blue Team Audit Report v0.7.0, Red Team Report v0.7.0, CanaryConfig (+95 more)
+Cohesion: 0.01
+Nodes (156): PIISanitizer, SecurityPipeline, SecurityPipeline, i-sec-defense README, i-sec-defense: Blue Team Security Auditor, i-sec-offense README, i-sec-offense: Red Team Adversarial Tester, PipelineAction (+148 more)
 
 ### Community 17 - "File Sandbox"
-Cohesion: 0.03
-Nodes (42): agent_isolation.py (AgentRegistry), group_config.py (TeamsConfig), rbac_config.py (RBACConfig), session_manager.py (UserSessionManager), shared_memory.py (SharedMemoryManager), Content appended to group-B must not appear in group-A memory., Both groups store separate content with no cross-contamination., group-A and group-B memory files must be in separate directories. (+34 more)
+Cohesion: 0.15
+Nodes (7): A member of group B cannot write into group A's memory., A legitimate group member's write lands., The owner may write into any group's memory., Writing to a group that does not exist in the RBAC config is denied., Back-compat: with no RBAC context supplied, the namespace-isolation         call, A user who is NOT a member of the target group cannot poison its memory., TestGroupMemoryWriteACL
 
 ### Community 18 - "Collaborator Response Templates"
-Cohesion: 0.04
-Nodes (36): Any, Path, GitGuard, Scan arbitrary text content for malicious git/supply-chain patterns.          Th, Scan a git repository for malicious hooks and scripts.          Args:, Scan git hooks directory for malicious content., Scan package.json for suspicious install scripts., Scan setup.py for suspicious installation scripts. (+28 more)
+Cohesion: 0.14
+Nodes (14): Path, Scan arbitrary text content for malicious git/supply-chain patterns.          Th, Scan a git repository for malicious hooks and scripts.          Args:, Scan git hooks directory for malicious content., Scan package.json for suspicious install scripts., Scan setup.py for suspicious installation scripts., Scan pyproject.toml for suspicious build scripts., Analyze a script file for malicious patterns. (+6 more)
 
 ### Community 19 - "Enhanced Approval Queue"
 Cohesion: 0.04
-Nodes (134): SCLCaller, cors_middleware(), google_api_proxy(), ollama_api_proxy(), CORS middleware that uses config from app_state, Proxy Google Gemini API calls through security pipeline., Proxy native Ollama API calls through security pipeline., Proxy bot Slack Web API calls through SecurityPipeline.      Restricted to the i (+126 more)
+Nodes (131): SCLCaller, JSONResponse, load_persisted_collaborators(), persist_approved_collaborator(), Read dynamically approved collaborator IDs from disk., Append a collaborator UID to the persistent store (idempotent, file-locked)., Remove a collaborator UID from the persistent store (file-locked).      Returns, Initialize user roles based on configuration. (+123 more)
 
 ### Community 20 - "Enforce-Mode Auto-Revert"
-Cohesion: 0.05
-Nodes (58): # NOTE: Called within _lock context, ApprovalQueue, AgentShroud Security Dashboard (index.html), MFAGuard, MFAResult, Verify a TOTP second factor for high-risk operations (fail-closed).      Args:, Build an MFAGuard from environment variables / Docker secret file.          Reco, Return True if ``action_type`` requires a second factor right now.          Two (+50 more)
+Cohesion: 0.08
+Nodes (47): MFAGuard, Verify a TOTP second factor for high-risk operations (fail-closed).      Args:, Decode a base32 secret; return b"" on empty/invalid input., _queue(), Submit via the real tool-call path -> action_type == f'tool_call_{tier}'., _ref_totp(), _submit_enhanced_high_risk(), _submit_high_risk() (+39 more)
 
 ### Community 21 - "SOC Collaborator Lifecycle"
-Cohesion: 0.04
-Nodes (66): Any, Request to scan a message., Response from sidecar scan., Sidecar security scanner — reduced security, traffic can bypass.      This is fo, Scan a message through the security pipeline., ScanRequest, ScanResponse, SidecarScanner (+58 more)
+Cohesion: 0.03
+Nodes (81): Any, ForwarderConfig, ForwardResult, HTTPForwarder, Check if the OpenClaw backend is healthy., Configuration for the HTTP forwarder., Result of forwarding a request., Forwards sanitized requests to the OpenClaw backend.      In production, uses ai (+73 more)
 
 ### Community 22 - "Tool Chain Analyzer"
 Cohesion: 0.03
-Nodes (50): Any, HealthStatus, ServiceDescriptor, ServiceStatus, HealthStatus, ResourceUsage, ServiceDescriptor, ServiceStatus (+42 more)
+Nodes (39): PermissionError, gateway/soc/services.py (ServiceManager), Thin wrapper around the container engine that produces ServiceDescriptors., Return the container engine from app_state if not injected., Pull the latest image then restart the container., Read container logs via Docker Unix socket — fallback when engine unavailable., ServiceManager, _FakeResponse (+31 more)
 
 ### Community 24 - "PromptGuard Encoding Detection"
 Cohesion: 0.05
-Nodes (41): MCPProxyConfig, MCPInspector, MCPPermissionManager, FindingType, MCPInspector, Inspects MCP tool calls and responses for security threats., Threat level classification., Type of security finding. (+33 more)
+Nodes (38): MCPInspector, MCPPermissionManager, FindingType, Threat level classification., Type of security finding., ThreatLevel, MCPProxy, MCPToolCall (+30 more)
 
 ### Community 25 - "SOC Service Manager"
 Cohesion: 0.03
-Nodes (33): SimpleNamespace, TestModeRequestModel, _container(), _engine(), _fake_ws(), _gitless_run(), _module_state_guard(), Restore AGENTSHROUD_MODE, revert task, and WS token registry per test. (+25 more)
+Nodes (37): SimpleNamespace, HTTPAuthorizationCredentials, A revert task is created (and is an asyncio.Task)., Second PUT cancels the first revert task., Auto-revert task sets mode back to enforce after delay., TestAutoRevert, TestModeRequestModel, _container() (+29 more)
 
 ### Community 26 - "MCP Proxy Config"
-Cohesion: 0.02
-Nodes (127): Enum, Any, Any, SecurityPipeline, AuditChain, AuditChainEntry, PipelineAction, Process an outbound response through the security pipeline.          Thin wrappe (+119 more)
+Cohesion: 0.07
+Nodes (16): AuditChain, SHA-256 hash chain for tamper-evident audit logging., Verify the integrity of the retained hash-chain window.          When the bounde, Verify empty audit chain is valid., Verify single-entry chain is valid., test_audit_chain_empty_valid(), test_audit_chain_single_entry(), Audit chain is a hash chain: each entry references the previous hash. (+8 more)
 
 ### Community 27 - "Telegram Inbound Tests"
-Cohesion: 0.03
-Nodes (56): AuditEvent, AuditStore, Path, AuditExportConfig, AuditExporter, Export events in Common Event Format (CEF).          CEF Format: CEF:Version|Dev, Parse CEF lines and extract entryHash/previousHash for chain verification., Export events in JSON-LD format with security ontology. (+48 more)
+Cohesion: 0.02
+Nodes (100): AuditEvent, AuditStore, Action, Any, Exception, RBACManager, Resource, ToolTier (+92 more)
 
 ### Community 28 - "Group RBAC Roles"
 Cohesion: 0.04
 Nodes (54): _make_group_update(), _no_owner_mirror(), Stub the fire-and-forget owner activity mirror.      The mirror runs via asyncio, Tests for lockdown UX: /unlock fix, collaborator notifications, /locked, immunit, /unlock <uid> must call reset() on the lockdown module and confirm to owner., /unlock must clear the suspended-drop notice cooldown so user gets fresh notice, /unlock for a user with no lockdown state must say so., Collaborator must receive warning text when they reach 3 security blocks. (+46 more)
 
-### Community 29 - "Audit Export Pipeline"
-Cohesion: 0.02
-Nodes (37): detect_base64_payloads(), Detect potential base64-encoded payloads in text.     Returns list of decoded st, PatternRule, PromptGuard, Detect and block prompt injection attempts., Args:             block_threshold: Score at or above which input is blocked., Strip injected fake delimiters and return sanitized message.          Called whe, Check for suspicious base64 content that decodes to injection attempts. (+29 more)
-
 ### Community 30 - "Egress Domain Allowlist"
-Cohesion: 0.04
-Nodes (79): Any, Path, MCPPolicyConfig, MCPPolicyEngine, MonkeyPatch, MCPPolicyAction, MCPPolicyConfig, MCPPolicyDecision (+71 more)
+Cohesion: 0.03
+Nodes (115): Any, Path, _entity_type_mapping(), load_config(), Map agentshroud.yaml entity names to Presidio/internal entity names, Load and validate configuration from agentshroud.yaml      Search order:     1., MCPPolicyConfig, MCPPolicyEngine (+107 more)
 
 ### Community 31 - "Kill Switch Config"
-Cohesion: 0.03
-Nodes (54): Any, DeceptionDetection, DeniedRequest, Record of a denied approval request., Analyze an approval request for potential deception or social engineering., Normalize description by removing misleading language., Check for mismatch between description and actual parameters., Check for misleading language patterns in description. (+46 more)
+Cohesion: 0.02
+Nodes (51): enforce_config(), Agent cannot modify SOUL.md behavioral instructions., Agent cannot modify SOUL.md even in workspace path., Agent cannot modify system prompt files., Agent cannot modify gateway configuration., Agent cannot modify AgentShroud configuration files., Agent cannot write to gateway config directory., Agent cannot modify Docker Compose configuration. (+43 more)
 
 ### Community 32 - "MCP Policy Engine"
 Cohesion: 0.05
@@ -1848,8 +1937,8 @@ Cohesion: 0.02
 Nodes (91): _fake_kokoro_pipeline(), _mock_stream_resp(), Build a mock httpx.Response usable as the yield value of a mocked     AsyncClien, _call_agent_stream must POST to /forward/stream with stream:true, not     the ol, synthesize() runs the Kokoro pipeline; when rates match no resampling occurs., _call_agent_stream must pass a structured httpx.Timeout to AsyncClient.      The, When OUTPUT_SAMPLE_RATE (24000, Kokoro native) != TARGET_SAMPLE_RATE     (16000), When ?agent= is absent the default agent must be 'direct' (fast local     model) (+83 more)
 
 ### Community 34 - "Competitive Intel Store"
-Cohesion: 0.02
-Nodes (168): BaseModel, Exception, Any, Exception, Request, WebSocket, gateway/ingest_api/auth.py (RateLimiter, verify_token), Validate that default_url uses http/https and targets an internal Docker host. (+160 more)
+Cohesion: 0.03
+Nodes (75): GatewayConfig, Request, create_auth_dependency(), get_auth_dependency(), gateway/ingest_api/auth.py (RateLimiter, verify_token), Create authentication dependency callable      This is a synchronous wrapper tha, Verify token using constant-time comparison      Uses hmac.compare_digest to pre, Factory that returns authentication dependency for FastAPI      This allows us t (+67 more)
 
 ### Community 35 - "IEC 62443 Scorecard"
 Cohesion: 0.02
@@ -1860,40 +1949,40 @@ Cohesion: 0.07
 Nodes (72): Client, Option, RefCell, Result, Self, AddResource, ApprovalAction, approvals_list_empty() (+64 more)
 
 ### Community 37 - "Collaborator Prompt Safety"
-Cohesion: 0.08
-Nodes (35): Any, MCPServerConfig, Exception, MCPProxyConfig, MCPProxy, MCPToolCall, MCPServerConfig, MCPToolConfig (+27 more)
+Cohesion: 0.09
+Nodes (27): EnhancedApprovalQueue, MCPProxyConfig, MCPServerConfig, Exception, MCPProxyConfig, MCPProxy, MCPToolCall, MCPServerConfig (+19 more)
 
 ### Community 38 - "Voice Gateway Tests"
-Cohesion: 0.07
-Nodes (38): get_agent_cves(), get_config(), get_egress_history(), get_egress_pending(), get_scanner_results(), get_security_events(), get_security_scorecard(), list_bots() (+30 more)
+Cohesion: 0.06
+Nodes (37): SecurityEvent, get_agent_cves(), get_collaborator_activity(), get_config(), get_egress_pending(), get_security_events(), get_security_scorecard(), list_bots() (+29 more)
 
 ### Community 39 - "Bot CVE Scorecard"
-Cohesion: 0.05
-Nodes (22): Test that sensitive MCP tool names are filtered., Test that Telegram user IDs are filtered., AgentShroud brand name must pass through unredacted (Fix C)., Test that credential paths are filtered., Test that internal file paths are filtered., Test suite for the outbound information filter., Set up test fixtures., Known collaborator names should be redacted. (+14 more)
+Cohesion: 0.03
+Nodes (32): Test that sensitive MCP tool names are filtered., Test that common English words are not filtered., Test that Telegram user IDs are filtered., Test that security module references are filtered., AgentShroud brand name must pass through unredacted (Fix C)., Test that credential paths are filtered., Test that internal file paths are filtered., Test suite for the outbound information filter. (+24 more)
 
 ### Community 40 - "Gateway Test Suite"
 Cohesion: 0.04
-Nodes (31): DomainSettings, Check if a domain is on the allowlist (used when mode == 'allowlist')., Get settings for a specific domain, falling back to defaults., Check if a domain is on the denylist., Per-domain configuration overrides., Configuration for the web traffic proxy.      Default-allow: all URLs pass unles, WebProxyConfig, RateLimiter (+23 more)
+Nodes (29): DomainSettings, Check if a domain is on the allowlist (used when mode == 'allowlist')., Get settings for a specific domain, falling back to defaults., Check if a domain is on the denylist., Per-domain configuration overrides., Configuration for the web traffic proxy.      Default-allow: all URLs pass unles, WebProxyConfig, RateLimiter (+21 more)
 
 ### Community 41 - "gateway/runtime"
 Cohesion: 0.05
-Nodes (43): DifferentialPIIConfig, DifferentialPIIDetector, DifferentialPIIDetector, DifferentialPIIDetector (Module 28), _normalize_adversarial(), PIIHit, PIIHitSeverity, Full scan result for a tool result or prompt. (+35 more)
+Nodes (45): DifferentialPIIConfig, DifferentialPIIDetector, DifferentialPIIConfig, DifferentialPIIDetector, DifferentialPIIDetector (Module 28), _normalize_adversarial(), PIIHit, PIIHitSeverity (+37 more)
 
 ### Community 42 - "Gateway Test Suite"
 Cohesion: 0.03
-Nodes (83): LLMProxy, LLMProxy, _FakeSanitizer, _make_proxy(), _openai_ok(), ollama/qwen3:14b → qwen3-14b for LM Studio backend., For Ollama backend the colon is kept (Ollama expects it)., mlx_lm backend: colon is kept (no LM Studio dash convention). (+75 more)
+Nodes (84): LLMProxy, LLMProxy, _make_proxy(), _openai_ok(), ollama/qwen3:14b → qwen3-14b for LM Studio backend., For Ollama backend the colon is kept (Ollama expects it)., mlx_lm backend: colon is kept (no LM Studio dash convention)., If the model already uses dashes (LM Studio native ID), normalizing again is a n (+76 more)
 
 ### Community 43 - "Gateway Test Suite"
-Cohesion: 0.02
-Nodes (139): ProgressiveTrustConfig, ProgressiveTrustConfig, TrustManager, PIISanitizer, SecurityPipeline, ProgressiveTrustConfig, PromotionThreshold, Fail-closed resolver for the enforcement-mode env var (SCRUM-78).      Returns " (+131 more)
+Cohesion: 0.04
+Nodes (63): ProgressiveTrustConfig, ProgressiveTrustConfig, TrustManager, ProgressiveTrustConfig, PromotionThreshold, Fail-closed resolver for the enforcement-mode env var (SCRUM-78).      Returns ", Check if a tool is allowed for the given trust level., Get trust levels in ascending order. (+55 more)
 
 ### Community 44 - "Gateway Test Suite"
 Cohesion: 0.05
-Nodes (32): CrossBotTrustLedger, TrustManager, TrustManager, IncidentRecord, Cross-Bot Trust Ledger (Module 27), A single cross-bot incident recorded in the ledger., Build a ledger where every bot in *bot_ids* is a mutual peer of         every ot, Register bot_b as a peer of bot_a.          Args:             bot_a: Source bot (+24 more)
+Nodes (40): CrossBotTrustLedger, TrustManager, TrustManager, BotIncidentSeverity, CrossBotTrustLedger, IncidentRecord, Cross-Bot Trust Ledger (Module 27), A single cross-bot incident recorded in the ledger. (+32 more)
 
 ### Community 45 - "Gateway Test Suite"
-Cohesion: 0.13
-Nodes (17): PromptGuard, _any_detector_fires(), _normalizer_transforms(), _prompt_guard_detects(), Return True if PromptGuard assigns a non-zero score or blocks., Return True if InputNormalizer changes the text (encoding detected)., Combined: detected if ANY defense layer triggers., Classic instruction-override payloads — should have near-100% detection. (+9 more)
+Cohesion: 0.08
+Nodes (35): HeuristicClassifier, PromptGuard, HeuristicClassifier, [EXPERIMENTAL] Attempt to load a fine-tuned ML model. Returns True on success., Heuristic injection classifier using multi-signal analysis.      Scoring approac, normalize_input(), Normalize input text to defeat encoding-based evasion.      Applied before all s, _any_detector_fires() (+27 more)
 
 ### Community 46 - "Gateway Test Suite"
 Cohesion: 0.06
@@ -1904,12 +1993,12 @@ Cohesion: 0.14
 Nodes (9): Any, Check if alert was already seen within dedup window., Check if we've exceeded the rate limit., Append alert to JSONL log file., POST alert to /api/alerts with bounded retry + backoff.          Returns True on, Format alert as human-readable message., Get buffered alerts for daily digest.          Args:             clear: Clear bu, Get dispatcher statistics. (+1 more)
 
 ### Community 48 - "Gateway Test Suite"
-Cohesion: 0.03
-Nodes (57): SlackAPIProxy, Test broadcast handles failed client sends, test_broadcast_with_failed_client(), TestProcessToolResult, Create a mock security pipeline., Create a mock forwarder., _make_proxy(), Cached correlation for the channel → no Slack history call; outbound         is (+49 more)
+Cohesion: 0.04
+Nodes (39): SlackAPIProxy, Return True if channel is a DM with the configured owner.          In Slack, DM, Proxy a bot Slack Web API call through the security pipeline.          For messa, POST to https://slack.com/api/<method> with the bot token., Intercept apps.connections.open: rewrite the returned WSS URL to route         t, Pop and return the real WSS URL for a relay token (one-time use).          Retur, Handle an inbound Slack event payload received via Socket Mode.          Called, Create a Slack channel for a group. Returns channel_id or None on failure. (+31 more)
 
 ### Community 49 - "docs/project"
-Cohesion: 0.03
-Nodes (87): Citation, CompetitorEntry, Fetcher, FetchOutcome, CompetitiveIntelReport, Path, HTTPAuthorizationCredentials, Path (+79 more)
+Cohesion: 0.04
+Nodes (74): ContainerEngine, Path, WebSocket, get_engine(), Return an appropriate container engine instance.      Args:         preference:, TestGetEngine, _resolve_bot_container must use BotConfig.resolved_container_name, not     a har, TestResolveBotContainer (+66 more)
 
 ### Community 50 - "Gateway Test Suite"
 Cohesion: 0.05
@@ -1920,80 +2009,80 @@ Cohesion: 0.07
 Nodes (69): StreamReader, HTTPConnectProxy, HTTPConnectProxy, Start the CONNECT proxy server., Stop the CONNECT proxy server., Return proxy traffic statistics., Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali, _allowlist_proxy() (+61 more)
 
 ### Community 52 - "Gateway Test Suite"
-Cohesion: 0.03
-Nodes (41): GroupAccessDenied, GroupWorkspaceManager, group_workspace.py (GroupWorkspaceManager), Canonical workspace id for a group chat_id: ``group-{chat_id}``., Canonical workspace id for a direct-message context: ``dm-{user_id}``., Return True if user_id is the system owner (oversight override)., Return True if user_id may access the workspace for ``group_chat_id``., Resolve the workspace/context for an inbound message, fail-closed.          Retu (+33 more)
+Cohesion: 0.02
+Nodes (53): GroupRole, GroupRoleResolver, group_rbac.py (GroupRoleResolver), Return True if user_id is the owner in group_chat_id., Return True if user_id is at least a member (member or owner)., Return True if the tool is classified as high-risk.          High-risk tools req, Set or update the role for a user in a specific group., Remove a user's role entry from a group (falls back to READ_ONLY). (+45 more)
 
 ### Community 53 - "Gateway Test Suite"
 Cohesion: 0.04
-Nodes (42): Set configuration and initialize tool result sanitizer, Check if a URL's domain is in the allowlist., Check if domain matches pattern (supports wildcards)., Check if URL contains any blocked patterns., Check if this is an internal link (relative, anchor, etc.)., Extract code blocks to preserve them during sanitization., Restore code blocks after sanitization., Remove or warn about markdown images pointing to non-allowlisted domains. (+34 more)
+Nodes (41): Check if a URL's domain is in the allowlist., Check if domain matches pattern (supports wildcards)., Check if URL contains any blocked patterns., Check if this is an internal link (relative, anchor, etc.)., Extract code blocks to preserve them during sanitization., Restore code blocks after sanitization., Remove or warn about markdown images pointing to non-allowlisted domains., Configuration for tool result markdown sanitization. (+33 more)
 
 ### Community 54 - "Gateway Test Suite"
-Cohesion: 0.07
-Nodes (34): Any, ForwarderConfig, ForwardResult, HTTPForwarder, Check if the OpenClaw backend is healthy., Configuration for the HTTP forwarder., Result of forwarding a request., Forwards sanitized requests to the OpenClaw backend.      In production, uses ai (+26 more)
+Cohesion: 0.33
+Nodes (4): DM-context approvals must not trigger group notifications., When group_chat_id is None, only the owner receives a notification., DM approval must not send any message to a group chat ID., TestDMApprovalOwnerOnly
 
 ### Community 55 - "CHANGELOG.md"
 Cohesion: 0.05
 Nodes (49): Any, Any, Connection, downgrade_version(), get_available_versions(), get_current_version(), get_version_history(), Downgrade to a previous version. Requires approval_id unless dry_run. (+41 more)
 
 ### Community 56 - "Gateway Test Suite"
-Cohesion: 0.05
-Nodes (30): TelegramAPIProxy, LockdownAction, LockdownLevel, ProgressiveLockdown, Return True if the user's session is currently suspended., Return current lockdown state for a user (for /collabs or owner inspection)., Owner command: reset lockdown state for a user. Returns True if existed., Return lockdown status for all tracked users. (+22 more)
+Cohesion: 0.07
+Nodes (26): TelegramAPIProxy, LockdownAction, LockdownLevel, ProgressiveLockdown, Return True if the user's session is currently suspended., Return current lockdown state for a user (for /collabs or owner inspection)., Owner command: reset lockdown state for a user. Returns True if existed., Return lockdown status for all tracked users. (+18 more)
 
 ### Community 57 - "Gateway Test Suite"
-Cohesion: 0.02
-Nodes (120): EgressFilter, EgressFilterConfig, EgressFilter, # NOTE: api.telegram.org is intentionally NOT listed here.  The bot is, EgressFilterConfig, get_egress_config(), Configuration for egress filtering enforcement., Get the effective allowlist for a specific agent. (+112 more)
+Cohesion: 0.06
+Nodes (24): ApprovalResult, Result of an approval request., _make_filter(), IP allowlist and private-IP SSRF protection., Private IPs are blocked by default to prevent SSRF., EgressFilter correctly parses URLs, host:port, and bare hostnames., EgressFilter records attempts and provides stats., Create an EgressFilter with a simple config. (+16 more)
 
 ### Community 58 - "Gateway Test Suite"
 Cohesion: 0.08
 Nodes (17): GatewayEmailService, GatewayEmailService, The subset of ``smtplib.SMTP_SSL`` the service uses., Sends owner-comms email over an injectable SMTP transport., Build the MIME message string (multipart/alternative).          For HTML mail th, Send one email synchronously.  Blocking — call in an executor.          Raises t, SmtpLike, Protocol (+9 more)
 
 ### Community 59 - "Gateway Security Module"
-Cohesion: 0.09
-Nodes (12): SSHConfig, SSHProxy, proxy(), Test newline-based injection attempts (Finding #11), Auto-approve must be exact match, not prefix (Finding #3), Test SSH disabled returns 503 (Finding #12), ssh_config(), TestExecute (+4 more)
+Cohesion: 0.10
+Nodes (7): SSHProxy, Test newline-based injection attempts (Finding #11), Auto-approve must be exact match, not prefix (Finding #3), TestExecute, TestInjectionNewline, TestIsAutoApproved, TestValidateCommand
 
 ### Community 60 - "Gateway Test Suite"
 Cohesion: 0.14
 Nodes (14): Black Formatter Pre-commit Hook, Detect-Secrets Hook (Yelp), Gitleaks Secret Scanner Hook, Ruff Linter Pre-commit Hook, Pre-commit Secret Scanning Configuration, Semgrep SAST Pre-commit Hook, Semgrep Rule: Hardcoded Secrets (CWE-798), IEC 62443 4-1 SDL SAST Alignment (+6 more)
 
 ### Community 61 - "Gateway Test Suite"
-Cohesion: 0.05
-Nodes (21): ConfusedDeputyError, OAuthError, OAuthRequest, PKCEViolation, RedirectMismatch, TestClientValidation, TestConsentCookieBinding, TestPKCE (+13 more)
+Cohesion: 0.09
+Nodes (7): OAuthRequest, TestClientValidation, TestConsentCookieBinding, TestPKCE, TestRedirectURI, TestStateValidation, validator()
 
 ### Community 62 - "Gateway Test Suite"
-Cohesion: 0.01
-Nodes (107): Any, Path, Any, Path, Validate the X-Telegram-Bot-Api-Secret-Token header.          Uses constant-time, Process an incoming webhook through the security pipeline., Prepare payload with session context injection., Extract display name from webhook payload. (+99 more)
+Cohesion: 0.04
+Nodes (30): ConversationMessage, A single message in a conversation., Represents an isolated session for a user within a specific bot workspace., UserSession, End-to-end integration tests for session isolation., Test complete isolation between two users., Test that owner/admin can access all user sessions., Test that sessions persist across manager restarts. (+22 more)
 
 ### Community 63 - "Gateway Test Suite"
-Cohesion: 0.05
-Nodes (41): Any, Path, NetworkConfiguration, NetworkSecurityFinding, NetworkValidator, Parse network configuration for a service., Validate network definitions in compose file., Validate service network isolation. (+33 more)
+Cohesion: 0.09
+Nodes (11): Test that OpenClaw container isolation is validated., Test that missing internal network is flagged., Test detection of multiple configuration violations., Test handling of invalid/non-existent files., Test handling of empty configuration., Test comprehensive network validation rules., Test that a valid docker-compose configuration passes., Test that gateway service network bridging is validated. (+3 more)
 
 ### Community 64 - "SOC Dashboard"
-Cohesion: 0.06
-Nodes (53): A2AMethod, A2APolicyEngine, is_safe_a2a_callback_url(), Hardened SSRF guard for A2A push-notification callback URLs.      Independent mi, _base_config(), engine(), A2A peers are never equivalent to the human operator — unlike MCP,     owner_byp, A task_id AgentShroud never saw created (e.g. the very first GetTask     against (+45 more)
+Cohesion: 0.05
+Nodes (60): A2AMethod, A2APolicyConfig, A2APolicyEngine, A2APolicyDecision, is_safe_a2a_callback_url(), The result of evaluating a single A2A request against the policy., True only for a terminal ALLOW. REQUIRE_APPROVAL is not allowed on         its o, Hardened SSRF guard for A2A push-notification callback URLs.      Independent mi (+52 more)
 
 ### Community 65 - "Gateway Test Suite"
 Cohesion: 0.13
 Nodes (15): ChainAction, ParamScanResult, Result of scanning tool parameters for injection patterns., How reversible an action is (1.0 = fully reversible, 0.0 = irreversible)., Tool call chain context for a session., Risk levels for tool call chains., Actions to take on suspicious chains., ReversibilityScore (+7 more)
 
 ### Community 66 - "Gateway Test Suite"
-Cohesion: 0.01
-Nodes (147): TelegramAPIProxy, _make_sanitizer(), Underscore-delimited embedding_provider wording should still trigger rewrite., Collaborator multi-turn disclosure block prose should be normalized., Collaborator outbound text with raw file/trace leakage markers should be blocked, Collaborator form payload with raw tool/file leakage markers should be blocked., Caption-only payloads should not bypass collaborator leak normalization., Form caption field should be filtered the same as text/draft/message fields. (+139 more)
+Cohesion: 0.03
+Nodes (32): Collaborator outbound text with raw file/trace leakage markers should be blocked, Caption-only payloads should not bypass collaborator leak normalization., Form caption field should be filtered the same as text/draft/message fields., Form payload user-id enrollment leakage should also be blocked., Runtime memory provider errors should rewrite when payload uses draft field., Embedding provider wording variants should rewrite for urlencoded payloads., Slash-separated embedding/provider wording should rewrite for form payloads., Form payload non-embedding memory errors should keep original text. (+24 more)
 
 ### Community 67 - "Gateway Security Module"
-Cohesion: 0.05
-Nodes (57): EgressFilter, http_proxy.py (HTTPConnectProxy), web_config.py (WebProxyConfig), web_proxy.py (WebProxy), HTTP web traffic proxy for OpenClaw.      Intercepts all outbound web requests,, WebProxy, _DummyTargetWriter, _make_stream() (+49 more)
+Cohesion: 0.04
+Nodes (60): EgressFilter, http_proxy.py (HTTPConnectProxy), web_config.py (WebProxyConfig), web_proxy.py (WebProxy), Check if request is within rate limit. Returns True if allowed., HTTP web traffic proxy for OpenClaw.      Intercepts all outbound web requests,, Check an outbound HTTP request before it's sent.          This is the pre-flight, Scan a response body for prompt injection, PII, and hidden content.          Thi (+52 more)
 
 ### Community 68 - "SOC Dashboard"
-Cohesion: 0.05
-Nodes (29): _make_proxy(), _pass_result(), Create a SlackAPIProxy with test credentials and no real I/O., P0 security: Slack outbound must differentiate owner vs collaborator channels., Owner channel: pipeline called with user_trust_level=FULL, message forwarded., Non-owner channel: high-risk leakage detected before pipeline → blocked., Non-owner channel: Tailscale hostname triggers leakage pre-check → blocked., Non-owner channel: pipeline exception → blocked (fail-closed). (+21 more)
+Cohesion: 0.04
+Nodes (30): _make_proxy(), _pass_result(), Create a SlackAPIProxy with test credentials and no real I/O., P0 security: Slack outbound must differentiate owner vs collaborator channels., Owner channel: pipeline called with user_trust_level=FULL, message forwarded., Non-owner channel: high-risk leakage detected before pipeline → blocked., Non-owner channel: Tailscale hostname triggers leakage pre-check → blocked., Non-owner channel: pipeline exception → blocked (fail-closed). (+22 more)
 
 ### Community 69 - "Gateway Test Suite"
-Cohesion: 0.05
-Nodes (36): GroupApprovalRouter, group_router.py (GroupApprovalRouter), Return True if agent_id represents a Telegram group workspace., Extract the raw chat_id from a group-{chat_id} agent_id.          Returns None i, Build the owner DM notification text., Build the group thread reply notification text., No-op send stub — used when no transport is injected., Routes approval notifications to owner DM and (optionally) group thread.      Ar (+28 more)
+Cohesion: 0.17
+Nodes (10): GroupApprovalRouter, Routes approval notifications to owner DM and (optionally) group thread.      Ar, GroupApprovalRouter must correctly distinguish group vs DM context., agent_id starting with 'group-' is recognized as group context., agent_id starting with 'collab-' is NOT recognized as group context., agent_id='default' is NOT recognized as group context., Extract the raw chat_id from a group-{chat_id} agent_id., extract_group_chat_id returns None for non-group agent IDs. (+2 more)
 
 ### Community 70 - "Gateway Test Suite"
-Cohesion: 0.06
-Nodes (54): LLMProxy, Proxies LLM API calls (Anthropic, OpenAI, Google) through the security pipeline., If openai_to_gemini_request raises, the request must still be     forwarded (unm, The combined path: /v1/chat/completions with model=gemini-* must end     up POST, test_proxy_gemini_translation_failure_falls_through_gracefully(), test_proxy_rewrites_gemini_via_openai_path(), _FakeSanitizer, _FakeToolACL (+46 more)
+Cohesion: 0.05
+Nodes (56): LLMProxy, Proxies LLM API calls (Anthropic, OpenAI, Google) through the security pipeline., If openai_to_gemini_request raises, the request must still be     forwarded (unm, The combined path: /v1/chat/completions with model=gemini-* must end     up POST, test_proxy_gemini_translation_failure_falls_through_gracefully(), test_proxy_rewrites_gemini_via_openai_path(), _FakeSanitizer, _FakeToolACL (+48 more)
 
 ### Community 71 - "Gateway Test Suite"
 Cohesion: 0.07
@@ -2001,15 +2090,15 @@ Nodes (10): Returns empty result when scanner_result_history is empty., Returns 
 
 ### Community 72 - "Gateway Test Suite"
 Cohesion: 0.04
-Nodes (35): Any, _OutboundScan, Concise collaborator-safe reason text without internal leakage., Detect patterns that must redact for ALL non-owner chats, including full_access., Detect leakage patterns blocked for local_only/project_scoped collaborators., Strip optional markdown json fences around model output., Parse leaked model tool-call JSON blobs (e.g. {'name': 'NO_REPLY', ...})., Find first embedded tool-call JSON object inside arbitrary text. (+27 more)
+Nodes (33): Any, Detect plain NO_REPLY sentinel with light punctuation wrapping., Best-effort check to avoid treating local file names as egress domains., Concise collaborator-safe reason text without internal leakage., Detect patterns that must redact for ALL non-owner chats, including full_access., Detect leakage patterns blocked for local_only/project_scoped collaborators., Detect internal approval/egress banner text that must remain owner-only., Detect legacy bracket-style block notices for collaborator normalization. (+25 more)
 
 ### Community 73 - "gateway/cli"
 Cohesion: 0.05
-Nodes (74): Path, generate_summary(), generate_summary(), Generate a summary dict suitable for the health report.      Args:         alert, _app_state_has(), _evaluate_mandatory_gates(), _is_container_running(), _is_containerized() (+66 more)
+Nodes (67): Path, _app_state_has(), _evaluate_mandatory_gates(), _is_container_running(), _is_containerized(), _is_falco_running(), _is_fluent_bit_running(), _is_wazuh_agent_running() (+59 more)
 
 ### Community 74 - "Gateway Test Suite"
-Cohesion: 0.09
-Nodes (40): Request, Response, TrustManager, A2AProxy, HermesA2AForwarder, ParsedA2ARequest, Terminates inbound A2A HTTP requests, enforces policy, forwards.      Usage::, Parse a JSON-RPC 2.0 A2A request body into method/task_id/         callback_url. (+32 more)
+Cohesion: 0.10
+Nodes (38): Request, Response, TrustManager, A2AProxy, HermesA2AForwarder, Terminates inbound A2A HTTP requests, enforces policy, forwards.      Usage::, Real HTTP forwarder to Hermes's internal A2A JSON-RPC listener.      Matches the, Response (+30 more)
 
 ### Community 75 - "Gateway Test Suite"
 Cohesion: 0.06
@@ -2017,7 +2106,7 @@ Nodes (54): _ago(), _allGroups, _api(), _appendLogLine(), _applyAndRenderSbom(),
 
 ### Community 76 - "Gateway Test Suite"
 Cohesion: 0.06
-Nodes (22): Any, Add a callback function to be called when resource alerts are triggered., Start background monitoring task., Stop background monitoring task cleanly., Best-effort cleanup for test contexts that don't call stop()., Background task to monitor resource usage and trigger alerts., Check system-wide resource usage for anomalies (synchronous)., Trigger a resource usage alert synchronously. (+14 more)
+Nodes (23): Any, Add a callback function to be called when resource alerts are triggered., Start background monitoring task., Stop background monitoring task cleanly., Best-effort cleanup for test contexts that don't call stop()., Background task to monitor resource usage and trigger alerts., Check system-wide resource usage for anomalies (synchronous)., Trigger a resource usage alert synchronously. (+15 more)
 
 ### Community 77 - "Gateway Security Module"
 Cohesion: 0.06
@@ -2041,27 +2130,27 @@ Nodes (47): AgentShroud (security proxy), Approval Queue, Audit Trail, Container
 
 ### Community 82 - "Gateway Test Suite"
 Cohesion: 0.07
-Nodes (38): Any, Any, aggregate_results(), get_fluent_bit_summary(), Score domain 4: Container Hardening (0-5).      Baseline of 3 because docker-com, Score domain 5: Runtime Protection (0-5).      1=module exists, 2=running with c, Score domain 9: Logging & Monitoring (0-5).      1=SOC exists, 2=Wazuh running,, Score domain 10: Compliance Auditing (0-5).      0=not run, 2=has failures, 3=ze (+30 more)
+Nodes (37): Any, Any, aggregate_results(), get_fluent_bit_summary(), Score domain 4: Container Hardening (0-5).      Baseline of 3 because docker-com, Score domain 5: Runtime Protection (0-5).      1=module exists, 2=running with c, Score domain 9: Logging & Monitoring (0-5).      1=SOC exists, 2=Wazuh running,, Score domain 10: Compliance Auditing (0-5).      0=not run, 2=has failures, 3=ze (+29 more)
 
 ### Community 83 - "Gateway Test Suite"
-Cohesion: 0.12
-Nodes (11): issue_session_token(), issue_ws_token(), Issue a short-lived, single-use WebSocket token for a user., Consume a WS token and return the user_id, or None if invalid/expired., Derive an HMAC session token and register it in the session store., Return user_id if token is a valid unexpired session token, else None., redeem_ws_token(), _verify_session_token() (+3 more)
+Cohesion: 0.03
+Nodes (56): EnvelopeSigner, InstructionEnvelope, A signed instruction or tool result., Signs and verifies InstructionEnvelopes.      Usage::          signer = Envelope, Return a signed envelope for content., Return True if the envelope's signature is valid., Convenience: sign a system prompt as issuer='system'., Convenience: sign a tool result as issuer='tool:<tool_name>'. (+48 more)
 
 ### Community 84 - "Gateway Test Suite"
 Cohesion: 0.05
 Nodes (19): Any, Persist a report awaiting an async sanitizer (presidio) if injected.          Sa, Prune oldest reports so the shared volume can't be filled., Metadata (no content) for all reports, newest first.          O(n) file reads pe, Filesystem-backed shared report store on the gateway-data volume., Persist a report (sync sanitizer path); return its id.          Sanitizes ALL fr, ReportStore, GET /soc/v1/services (list_services endpoint) (+11 more)
 
 ### Community 85 - "Gateway Test Suite"
-Cohesion: 0.04
-Nodes (29): Any, _looks_like_base64(), Analyze URLs for SSRF, data exfiltration, and suspicious patterns., Args:             resolve_dns: If True, resolve hostnames to IPs and check those, Analyze a URL for security issues.          Returns URLAnalysisResult with verdi, Check if hostname is a private/reserved address (SSRF attempt)., Check if an IP address is private/reserved/loopback., Resolve hostname to IP. Returns None on failure.          NOTE: DNS rebinding at (+21 more)
-
-### Community 86 - "Gateway Test Suite"
 Cohesion: 0.06
-Nodes (16): get_resource_guard(), Raised when a local-model call is rejected because estimated VRAM usage     woul, Pre-flight VRAM headroom check before dispatching a long-context local-model cal, Get the global resource guard instance, creating it lazily on first call., Current resource usage metrics., ResourceUsage, VRAMHeadroomError, VRAMHeadroomError must be a distinct exception, not a subclass of ResourceWarnin (+8 more)
+Nodes (14): _looks_like_base64(), Heuristic: does this string look like base64-encoded data?, analyzer(), Ensure normal browsing URLs pass through., PII detection in URLs — flagged, not blocked., Data exfiltration patterns in URLs — flagged, not blocked., Short base64 strings are normal (e.g., API tokens in URLs)., Edge cases and malformed URLs. (+6 more)
+
+### Community 87 - "ESP32 Firmware"
+Cohesion: 0.10
+Nodes (15): EgressAttempt, Get effective policy for an agent., Public entry — records the decision for the SOC heat-map (SCRUM-80),         the, Check if an outbound connection is allowed.          Args:             agent_id:, Async egress check with interactive approval for unknown domains., Check if domain matches any domain in the allowlist (supports wildcards)., Check if IP matches any IP/CIDR in the list., Check if host looks like an IPv6 address. (+7 more)
 
 ### Community 88 - "Gateway Test Suite"
-Cohesion: 0.05
-Nodes (22): PrivacyPolicy, PrivacyPolicyEnforcer, Privacy policy configuration.      Loaded from agentshroud.yaml `privacy:` secti, Parse from a YAML/dict representation.          Example YAML:             privac, Return a default policy with all known private services locked down., Evaluates access control and filters responses per privacy policy., Return True if user_id may access the named service., Return True if an access attempt to this service should be logged. (+14 more)
+Cohesion: 0.06
+Nodes (23): RBACConfig, PrivacyPolicy, PrivacyPolicyEnforcer, Privacy policy configuration.      Loaded from agentshroud.yaml `privacy:` secti, Parse from a YAML/dict representation.          Example YAML:             privac, Return a default policy with all known private services locked down., Evaluates access control and filters responses per privacy policy., Return True if user_id may access the named service. (+15 more)
 
 ### Community 89 - "Gateway Test Suite"
 Cohesion: 0.08
@@ -2076,32 +2165,36 @@ Cohesion: 0.08
 Nodes (48): append_ghsa_entries(), append_to_hermes_registry(), append_to_registry(), _classify(), _entry_to_py(), _extract_affected_max(), _extract_fix_version(), fetch_ghsa_advisories() (+40 more)
 
 ### Community 92 - "Gateway Test Suite"
-Cohesion: 0.04
-Nodes (53): _make_approval_queue(), _make_full_pipeline(), _make_pii_sanitizer(), pipeline(), Probe 1.1c: admin_action must require approval or be trust-blocked., Probe 1.6: EgressFilter must block non-allowlisted domains., Probe 1.6b: EgressFilter must block direct IP exfiltration., Probe 1.6c: EgressFilter must block internal/private IP ranges. (+45 more)
+Cohesion: 0.10
+Nodes (20): Any, Path, Validate the X-Telegram-Bot-Api-Secret-Token header.          Uses constant-time, Process an incoming webhook through the security pipeline., Prepare payload with session context injection., Extract display name from webhook payload., Receives webhooks and routes them through the security pipeline.      In product, Extract user ID from webhook payload based on source platform. (+12 more)
 
 ### Community 93 - "SOC Dashboard"
-Cohesion: 0.03
-Nodes (46): MCPProxyConfig, MCPServerConfig, EnhancedApprovalQueue, PermissionLevel, MCPProxyConfig, PermissionLevel, Top-level MCP proxy configuration., MCPPermissionManager (+38 more)
+Cohesion: 0.05
+Nodes (15): Any, MCPToolConfig, PermissionLevel, Configuration for a specific MCP tool., Parse config from a dictionary (e.g. loaded from YAML)., config(), mgr(), TestCheckAll (+7 more)
+
+### Community 94 - "Gateway Test Suite"
+Cohesion: 0.05
+Nodes (48): Citation, CompetitorEntry, Fetcher, FetchOutcome, CompetitiveIntelReport, Path, CitationVerifier, DraftEntry (+40 more)
 
 ### Community 95 - "Gateway Test Suite"
 Cohesion: 0.07
 Nodes (49): face_config_t, esp_err_t, face_emotion_t, lv_obj_t, face_emotion_t, lv_obj_t, ws_vg_state_t, esp_err_t (+41 more)
 
 ### Community 96 - "Gateway Security Module"
-Cohesion: 0.09
-Nodes (37): classify(), ClassProfile, _consume_field(), Coverage, final_status(), is_source_fixed(), main(), parse_version() (+29 more)
+Cohesion: 0.10
+Nodes (34): classify(), ClassProfile, _consume_field(), final_status(), is_source_fixed(), main(), parse_version(), Any (+26 more)
 
 ### Community 97 - "Gateway Test Suite"
 Cohesion: 0.09
 Nodes (19): CronStateMonitor, JobState, One poll pass over all stores.  Never raises., Evaluate one job.  Returns 1 if a NEW episode was alerted.          Flood guard, Start the poll loop as an asyncio task (idempotent)., Normalized view of one bot cron job., Poll bot cron stores; dispatch AlertDispatcher alerts on failures., Read one bot's cron store; tolerate absence/corruption. (+11 more)
 
 ### Community 98 - "docs/operations"
-Cohesion: 0.14
-Nodes (12): Any, InspectionFinding, InspectionResult, Return the highest threat level from all findings., Inspect an outgoing tool call for security threats., Inspect a tool result for PII and encoding issues., Recursively scan a value, appending findings in-place., Scan a single string for all threat types. (+4 more)
+Cohesion: 0.18
+Nodes (11): Any, InspectionFinding, MCPInspector, Inspects MCP tool calls and responses for security threats., Inspect an outgoing tool call for security threats., Inspect a tool result for PII and encoding issues., Recursively scan a value, appending findings in-place., Scan a single string for all threat types. (+3 more)
 
 ### Community 99 - "scripts/sync-cve-registry.py"
 Cohesion: 0.01
-Nodes (202): ApprovalQueue, gateway/approval_queue/queue.py (ApprovalQueue), In-memory approval queue with WebSocket notifications      Actions requiring app, Accept a WebSocket connection and add to connected set          Args:, Remove a WebSocket connection from connected set          Args:             webs, WebSocket, gateway/ingest_api/main.py (op-proxy allowlist, /mcp route, referenced), SSHConfig (+194 more)
+Nodes (256): ApprovalQueue, gateway/approval_queue/queue.py (ApprovalQueue), In-memory approval queue with WebSocket notifications      Actions requiring app, Accept a WebSocket connection and add to connected set          Args:, Remove a WebSocket connection from connected set          Args:             webs, examples/ config files (minimal/recommended/paranoid .env + docker-compose), WebSocket, FastAPI (+248 more)
 
 ### Community 100 - "Gateway Test Suite"
 Cohesion: 0.06
@@ -2117,27 +2210,27 @@ Nodes (54): _mock_ws(), _pcm_bytes(), Sentence-chunked TTS: synthesize() is call
 
 ### Community 103 - "Gateway Test Suite"
 Cohesion: 0.05
-Nodes (51): AWS Cloud Management & FinOps Agent, Cost Optimization Priority, Cross-Account & Future Proofing, Decision Framework, Deliverables, EBS Performance Analysis (Critical Pattern), Expertise, Guardrails (+43 more)
+Nodes (44): AWS Cloud Management & FinOps Agent, Cost Optimization Priority, Cross-Account & Future Proofing, Decision Framework, Deliverables, EBS Performance Analysis (Critical Pattern), Expertise, Guardrails (+36 more)
 
 ### Community 104 - "Gateway Test Suite"
-Cohesion: 0.07
-Nodes (27): ProxyAction, Check if request is within rate limit. Returns True if allowed., Check an outbound HTTP request before it's sent.          This is the pre-flight, Scan a response body for prompt injection, PII, and hidden content.          Thi, Result of proxying a web request., Record an audit entry in the hash chain., WebProxyResult, MockDNSVerdict (+19 more)
+Cohesion: 0.06
+Nodes (24): ProxyAction, Result of proxying a web request., WebProxyResult, MockDNSVerdict, MockEgressChannel, MockEgressEvent, MockThreatLevel, MockURLResult (+16 more)
 
 ### Community 105 - "Gateway Test Suite"
-Cohesion: 0.17
-Nodes (3): revert_after_minutes below 1 is clamped to 1., revert_after_minutes above 480 is clamped to 480., TestSetMode
+Cohesion: 0.04
+Nodes (33): _apply_persisted_overrides(), Return deduplicated list of all user IDs across all groups., Return mapping of group_id → admin_user_id for all groups that have an admin., Merge group_overrides.json additions into the in-memory TeamsConfig., Top-level teams configuration parsed from agentshroud.yaml `teams:` section., TeamsConfig, GroupAccessDenied, GroupWorkspaceManager (+25 more)
 
 ### Community 106 - "Gateway Test Suite"
 Cohesion: 0.09
-Nodes (17): ScanResult, IntEnum, Ordered severity ladder (``IntEnum`` so comparisons work)., Severity, SkillGuard, _finding_categories(), guard(), TestAggregation (+9 more)
+Nodes (21): CompletedProcess, ScanResult, IntEnum, gateway/security/skill_guard.py (SkillGuard), Ordered severity ladder (``IntEnum`` so comparisons work)., What the caller should do with the scanned skill., Recommendation, Severity (+13 more)
 
 ### Community 107 - "Gateway Test Suite"
 Cohesion: 0.05
-Nodes (21): InjectionResult, InjectionSeverity, Check for base64 or hex encoded injection attempts., Detect unicode-based obfuscation techniques., Result from tool result injection scan., Test cases for ToolResultInjectionScanner., Set up test fixtures., Test that clean content passes through unchanged. (+13 more)
+Nodes (28): Strip potentially malicious markdown from tool results.      Removes:     - Mark, strip_markdown_exfil(), InjectionAction, InjectionResult, InjectionRule, InjectionSeverity, Initialize the scanner with optional custom rules.          Args:             cu, Check for base64 or hex encoded injection attempts. (+20 more)
 
 ### Community 108 - "Gateway Proxy Layer"
-Cohesion: 0.09
-Nodes (16): Gateway /ssh/exec endpoint, Gateway /ssh/write_file endpoint, Active Projects, Key Facts, Pending Tasks, hermes-soul.md (Hermes system identity), openclaw-identity.md (OpenClaw bot identity), openclaw cron/jobs.json (scheduled agent turns) (+8 more)
+Cohesion: 0.12
+Nodes (13): Gateway /ssh/exec endpoint, Gateway /ssh/write_file endpoint, hermes-soul.md (Hermes system identity), openclaw-identity.md (OpenClaw bot identity), openclaw cron/jobs.json (scheduled agent turns), agentshroud-ssh-exec.sh script, agentshroud-ssh-write-file.sh script, competitive-analysis.md (bot workspace competitive-intel source of truth) (+5 more)
 
 ### Community 109 - "docs/reference"
 Cohesion: 0.04
@@ -2148,28 +2241,28 @@ Cohesion: 0.05
 Nodes (50): _call_agent_stream POSTs to /forward/stream and yields each sentence     event a, Agents with no streaming-compatible chat_path (OpenClaw) get a 400 from     the, A stream that goes straight to 'done' with no sentence events (e.g.     everythi, SSE keepalive comments (': ...') and blank lines are ignored, not     treated as, A single corrupted SSE line logs a warning and is skipped — it must not     abor, A non-400 HTTP error (e.g. 500) is a real failure, not the OpenClaw     no-strea, A connection-level error (not a status/timeout) also falls back to the     troub, _sse_body() (+42 more)
 
 ### Community 111 - "Planning Docs"
-Cohesion: 0.08
-Nodes (43): A2AProxy, A2APolicyEngine, DifferentialPIIConfig, Configuration for DifferentialPIIDetector.      Attributes:         tool_result_, _base_policy_engine(), _Event, forwarder(), _jsonrpc() (+35 more)
+Cohesion: 0.07
+Nodes (45): A2AProxy, A2APolicyEngine, A2AProxyResult, Result of proxying a single inbound A2A request., _base_policy_engine(), _Event, forwarder(), _jsonrpc() (+37 more)
 
 ### Community 112 - "docs/vault"
 Cohesion: 0.10
 Nodes (8): tail parameter is clamped to 1-100., When pipeline exists, stats should reflect its data., test_log_buffer_ring(), test_log_buffer_tail(), test_logs_recent_tail_clamped(), test_proxy_status_includes_pipeline_stats(), LogBuffer, Ring buffer for recent log/audit entries.
 
 ### Community 114 - "Bot Skill Config"
-Cohesion: 0.03
-Nodes (56): CollaboratorActivityTracker, Path, Path, CollaboratorActivityTracker, _is_fixture_uid(), Return a health snapshot suitable for /status/detail., Append one activity entry for any tracked collaborator or the owner.          Ar, Mirror activity into workspace contributor logs used by daily digests. (+48 more)
+Cohesion: 0.04
+Nodes (26): record_activity with bot_id='hermes' stores bot_id in the entry., record_activity without bot_id stores bot_id=None in the entry., get_activity(bot_id=...) returns only entries matching that bot_id., get_activity_summary returns a by_bot breakdown keyed by bot_id., get_activity_summary returns empty by_bot when no log file exists., IDs < 10000 should be treated as test fixtures by the pruner heuristic., Real Telegram UIDs (9-10 digits) must NOT be pruned., Short numeric UIDs (< 7 digits) must be silently dropped before any write. (+18 more)
 
 ### Community 115 - "Gateway Test Suite"
-Cohesion: 0.06
-Nodes (68): EmailSendRequest, AgentTarget, AuthRequired, ForwardRequest, Request, MultiAgentRouter._build_forward_payload(), MultiAgentRouter.forward_to_agent(), MultiAgentRouter.forward_to_agent_stream() (+60 more)
+Cohesion: 0.13
+Nodes (28): POST /forward/stream (streaming voice pipeline), _filtered_sentence_stream(), Buffer streamed text deltas and yield each complete sentence as soon as     its, 2-sentence sliding window over `sentences`: each window (previous +     current,, _sentences_from_deltas(), _aiter(), _BlockingPipeline, _PassthroughPipeline (+20 more)
 
 ### Community 116 - "Gateway Test Suite"
 Cohesion: 0.11
 Nodes (18): Any, ContextIntegrityScorer, IntegrityScore, Rolling context integrity score for a session., Scores the integrity of a session's context.      Usage::          scorer = Cont, Compute a 0.0–1.0 integrity score for the given context segments.          Args:, HMAC-SHA256 fingerprint for a registered system prompt., SystemPromptFingerprint (+10 more)
 
 ### Community 117 - "Gateway Test Suite"
-Cohesion: 0.03
-Nodes (35): ABC, ContainerEngine, ContainerInfo, Any, ContainerInfo, Any, ContainerEngine, Any (+27 more)
+Cohesion: 0.04
+Nodes (23): ABC, Any, ContainerInfo, ContainerInfo, Any, ContainerInfo, AppleContainerEngine, Container engine backed by Apple's `container` CLI. (+15 more)
 
 ### Community 118 - "Bot Skill Config"
 Cohesion: 0.06
@@ -2180,36 +2273,36 @@ Cohesion: 0.11
 Nodes (10): Derive a 256-bit key from master secret using PBKDF2-HMAC-SHA256., Encrypt data using AES-256-GCM.          Args:             data: String, bytes,, Decrypt an AES-256-GCM encrypted blob.          Args:             blob: The encr, Decrypt and return as UTF-8 string., Decrypt and return as parsed JSON dict., Encrypt and return as base64-encoded string., Decrypt a base64-encoded blob., Re-encrypt blobs with a new master secret.          Args:             blobs: Lis (+2 more)
 
 ### Community 120 - "Gateway Security Module"
-Cohesion: 0.08
-Nodes (12): Sustained high CPU fires the alert after debounce samples are crossed., A single over-threshold sample followed by an under-threshold sample is suppress, Test that different agents have isolated resource tracking., Test handling of invalid resource types., Test ResourceGuardConfig dataclass., stop() should cancel background monitor cleanly., Test that resource usage under limits passes., Test that resource usage over limits is blocked. (+4 more)
+Cohesion: 0.04
+Nodes (28): TelegramAPIProxy, Collaborators should never receive pairing codes or pairing approval commands., Collaborators should not receive telegram user-id enrollment leakage text., Cannot access' phrasing should be rewritten for healthcheck SKILL.md sandbox mes, Healthcheck SKILL.md sandbox errors should rewrite when payload uses caption fie, Embedding/provider memory errors should also be rewritten for urlencoded payload, Healthcheck SKILL messages without sandbox context should not trigger sandbox re, Healthcheck sandbox messages without SKILL.md marker should not trigger rewrite. (+20 more)
 
 ### Community 121 - "Gateway Test Suite"
-Cohesion: 0.10
-Nodes (16): Setup resource guard with custom limits., Configuration for resource limits., ResourceLimits, setup_resource_guard(), check_vram_headroom raises VRAMHeadroomError when estimated VRAM exceeds budget., Small context request passes VRAM headroom check., VRAM check is skipped when max_vram_headroom_mb=0 (disabled)., 128k token request at 4 bytes/token KV cache triggers rejection at 4096 MB headr (+8 more)
+Cohesion: 0.04
+Nodes (42): agent_isolation.py (AgentRegistry), group_config.py (TeamsConfig), rbac_config.py (RBACConfig), session_manager.py (UserSessionManager), shared_memory.py (SharedMemoryManager), Append a timestamped entry to the group shared memory file.          Authorizati, Read raw private memory for a user.          Args:             user_id: The user, Append content to user's private memory file.          Authorization (RT-5, WS-E (+34 more)
 
 ### Community 122 - "Gateway Test Suite"
 Cohesion: 0.09
 Nodes (45): esp_event_base_t, ws_client_handle_t, ws_vg_state_t, esp_err_t, esp_event_base_t, ws_client_handle_t, lv_display_t, app_main() (+37 more)
 
 ### Community 123 - "Custom Skills"
-Cohesion: 0.03
-Nodes (38): AlertLevel, ConsistencyScore, DisclosureCategory, Categories of information that contribute to disclosure scoring., Alert severity levels., Compute a heuristic consistency score between query and response.          Retur, Heuristic consistency score between a query and its response., Configuration for alert thresholds. (+30 more)
+Cohesion: 0.05
+Nodes (22): Test detection of tool inventory queries., Test detection of credential-related queries., Test detection of system information queries., Test detection of file reference patterns., Test that scores accumulate across turns., Test threshold-based warning system., Test that sessions get blocked at high scores., Test detection of repeated queries with different phrasing. (+14 more)
 
 ### Community 124 - "Gateway Test Suite"
 Cohesion: 0.07
-Nodes (39): AgentShroud™ Brand Guidelines, Brand Identity, Colors, Communication Templates, Elevator pitch, Key Messaging, License, Logo Usage (+31 more)
+Nodes (36): AgentShroud™ Brand Guidelines, Brand Identity, Colors, Elevator pitch, Key Messaging, License, Logo Usage, One-liner (+28 more)
 
 ### Community 125 - "Gateway Test Suite"
-Cohesion: 0.22
-Nodes (6): ChainPattern, Definition of a suspicious tool call pattern., Initialize the tool chain analyzer.          Args:             config: Configura, Load default suspicious chain patterns., Load custom patterns from configuration., Add a new chain pattern at runtime.
+Cohesion: 0.05
+Nodes (22): RBACConfig, TeamsConfig, Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml, ToolACLConfig, enforcer(), _make_rbac(), Calls within limits should pass., Exceeding per-minute limit should return False. (+14 more)
 
 ### Community 126 - "docs/vault"
-Cohesion: 0.11
-Nodes (9): parse_trivy_output(), Parse raw Trivy JSON output into a structured summary.      Args:         raw: R, Default report_prefix produces a 'trivy-' filename., Custom report_prefix is used verbatim., Saved file is valid JSON containing the report keys., save_report creates the log directory if it does not exist., TestTrivyParser, TestTrivySaveReport (+1 more)
+Cohesion: 0.07
+Nodes (17): Path, _build_image_targets(), Build the list of container image targets for Trivy image scanning.      Combine, parse_trivy_output(), Save a Trivy report to the log directory.      Args:         report: Parsed repo, Parse raw Trivy JSON output into a structured summary.      Args:         raw: R, save_report(), Empty AGENTSHROUD_TRIVY_IMAGES adds no extra entries beyond         gateway + th (+9 more)
 
 ### Community 127 - "Gateway Test Suite"
-Cohesion: 0.40
-Nodes (4): SOCWebSocketHandler, Test event filtering via the subscriptions set (mirrors _event_fan_out logic)., Replicate the filter logic from _event_fan_out., TestSubscriptionFilter
+Cohesion: 0.09
+Nodes (11): SOCWebSocketHandler, _coerce_to_ws_event(), Convert an EventBus item to WSEvent, return None if conversion fails., Subscribe to EventBus and forward matching events to the client., Main connection loop., TestCoerceToWSEventExtra, Test event filtering via the subscriptions set (mirrors _event_fan_out logic)., Replicate the filter logic from _event_fan_out. (+3 more)
 
 ### Community 128 - "Gateway Test Suite"
 Cohesion: 0.10
@@ -2220,8 +2313,8 @@ Cohesion: 0.07
 Nodes (25): CompletedProcess, Path, local qwen3:14b: second run leaves env identical., local-coder target: second run leaves env identical., anthropic target: second run leaves env identical., Expected keys are present in docker/.env after a switch., --verify flag causes switch_model.sh to check both bots are healthy., switch_model.sh local --verify exits 0 (mocked health checks). (+17 more)
 
 ### Community 130 - "Gateway Test Suite"
-Cohesion: 0.11
-Nodes (8): FakeApprovalQueue, FakeConn, make_call(), make_proxy(), Stand-in connection injected into the proxy's pool., TestApprovalQueue, TestExecuteToolCall, TestResultProcessingAndLifecycle
+Cohesion: 0.12
+Nodes (11): FakeApprovalQueue, FakeConn, make_call(), make_config(), make_proxy(), Stand-in connection injected into the proxy's pool., TestApprovalQueue, TestEgressFilterPaths (+3 more)
 
 ### Community 131 - "docs/runbooks"
 Cohesion: 0.04
@@ -2233,7 +2326,7 @@ Nodes (44): AES-256-GCM Authenticated Encryption, Blob Wire Format, Configuratio
 
 ### Community 133 - "Security Docs"
 Cohesion: 0.08
-Nodes (37): Configuration & Infrastructure, Diagrams, Module Index, Navigate This Vault, Operations, Components, Key Design Decisions, Related Notes (+29 more)
+Nodes (34): Configuration & Infrastructure, Diagrams, Module Index, Navigate This Vault, Operations, Components, Key Design Decisions, Related Notes (+26 more)
 
 ### Community 134 - "Gateway Test Suite"
 Cohesion: 0.20
@@ -2244,16 +2337,16 @@ Cohesion: 0.05
 Nodes (25): Any, CanaryConfig, CanaryResult, Check if response contains the session's canary (prompt leakage detected)., Scan response text for a specific canary.          Args:             session_id:, Return canary status for dashboard.          Args:             session_id: Sessi, Result of checking a response for canary presence., Configuration for the Output Canary System. (+17 more)
 
 ### Community 136 - "Gateway Test Suite"
-Cohesion: 0.10
-Nodes (14): Any, LogRecord, test_alert_store_push_and_summary(), Alert, alerts_summary(), AlertStore, _check_host(), logs_recent() (+6 more)
+Cohesion: 0.08
+Nodes (19): _BlockedOutboundPipeline, _make_mock_app_state(), _PipelineCaptor, Pipeline receives 'openclaw' as agent_id when routed to openclaw., Pipeline receives 'hermes' as agent_id when routed to hermes., Regression: 'default' must never appear in agent_id when a named target is resol, process_inbound must receive metadata={'user_id': ...} from /forward so that, Minimal pipeline mock that records which agent_id it was called with. (+11 more)
 
 ### Community 137 - ".github/COPILOT_CLI_SETUP.md"
-Cohesion: 0.27
-Nodes (6): EgressRequest, Represents a pending egress approval request., EgressRequest, Test cleanup of expired pending requests., TestEgressRequestModel, TestEgressRequest
+Cohesion: 0.05
+Nodes (57): ContributorRecord, Enum, Any, HealthStatus, URLVerdict, FindingSeverity, Coverage, Fixed taxonomy of advisory vulnerability classes. (+49 more)
 
 ### Community 138 - "Gateway Test Suite"
 Cohesion: 0.04
-Nodes (45): Text before and after XML blocks is preserved., Unclosed <function_calls> block (truncated output) is removed., Unclosed <thinking> block is removed., Unclosed <function_results> block is removed., Unclosed <system-reminder> block is removed., Three or more consecutive newlines are collapsed to two., Result is stripped of leading/trailing whitespace., Normal text without XML blocks is returned unchanged. (+37 more)
+Nodes (44): Text before and after XML blocks is preserved., Unclosed <function_calls> block (truncated output) is removed., Unclosed <thinking> block is removed., Unclosed <function_results> block is removed., Unclosed <system-reminder> block is removed., Three or more consecutive newlines are collapsed to two., Result is stripped of leading/trailing whitespace., Normal text without XML blocks is returned unchanged. (+36 more)
 
 ### Community 139 - "branding/README.md"
 Cohesion: 0.08
@@ -2265,7 +2358,7 @@ Nodes (26): main(), Validate URL against allowlist/blocklist          Security: 
 
 ### Community 141 - "Planning Docs"
 Cohesion: 0.05
-Nodes (12): examples/ config files (minimal/recommended/paranoid .env + docker-compose), Path, _parse_env_file(), minimal.env should have reasonable defaults., recommended.env should balance security and usability., Parse a .env file into a dict (ignoring comments and blanks)., paranoid.env should enable ALL security features., Verify all referenced example configs exist. (+4 more)
+Nodes (9): Path, _parse_env_file(), minimal.env should have reasonable defaults., recommended.env should balance security and usability., Parse a .env file into a dict (ignoring comments and blanks)., paranoid.env should enable ALL security features., TestMinimalConfig, TestParanoidConfig (+1 more)
 
 ### Community 142 - "Gateway Security Module"
 Cohesion: 0.12
@@ -2285,7 +2378,7 @@ Nodes (26): main(), Validate URL against allowlist/blocklist          Security: 
 
 ### Community 146 - "Gateway Test Suite"
 Cohesion: 0.06
-Nodes (26): _build_telegram_token_registry(), Build the Telegram bot-token → bot_id registry from configured secrets., Proxy Telegram Bot API calls through security pipeline., telegram_api_proxy(), When body() raises ClientDisconnect the handler returns 499 without crashing., An unregistered token must not be matched — fail-closed., If no tokens are registered, any token must be rejected., Tests for per-request bot token routing via contextvars.      Regression suite f (+18 more)
+Nodes (21): _build_telegram_token_registry(), Build the Telegram bot-token → bot_id registry from configured secrets., Proxy Telegram Bot API calls through security pipeline., telegram_api_proxy(), When body() raises ClientDisconnect the handler returns 499 without crashing., An unregistered token must not be matched — fail-closed., If no tokens are registered, any token must be rejected., The token registry is built lazily on the first /telegram-api/{path} request (+13 more)
 
 ### Community 147 - "Gateway Test Suite"
 Cohesion: 0.05
@@ -2328,28 +2421,32 @@ Cohesion: 0.05
 Nodes (42): Development Workflow Read-Only Filesystem Strategy, Three-Phase Read-Only Approach (Dev→Compatibility Testing→Production Lockdown), 1. What Needs to WRITE?, 2. What Needs to PERSIST?, 3. What's System-Level?, Current Configuration Status, Current Features: Write Requirements, Current Recommendation (+34 more)
 
 ### Community 157 - "Gateway Test Suite"
-Cohesion: 0.16
-Nodes (7): PermissionError, _patch_open(), EPERM means the process exists but is owned by another user., Stale PID (ESRCH) is not EPERM — falls through to /proc scan, then standby., Intercept builtins.open for specific paths; delegate everything else., TestCheckFluentBit, TestCheckWazuhAgent
+Cohesion: 0.07
+Nodes (21): _get_config_token(), issue_session_token(), issue_ws_token(), Issue a short-lived, single-use WebSocket token for a user., Consume a WS token and return the user_id, or None if invalid/expired., Read the gateway auth token from env/secret.      Resolution order (matches inge, Derive an HMAC session token and register it in the session store., Return user_id if token is a valid unexpired session token, else None. (+13 more)
 
 ### Community 158 - "Gateway Security Module"
 Cohesion: 0.05
 Nodes (41): CRITICAL-1: history.env Committed with Live Telegram Credentials, CRITICAL-2: No Request Body Size Limits (OOM Vector via Pydantic models), Security Assessment v0.8.0, Overall Security Grade B+ (Strong architecture, specific gaps before v1.0), HIGH-1: ML Injection Classifier is Entirely a Stub (gateway/security/ml_classifier.py), HIGH-2: Approval Queue Telegram Notifications Unimplemented (TODO at line 326), Go/No-Go Decision: GO - Continue Development, LLM API Reverse Proxy (gateway/proxy/llm_proxy.py) (+33 more)
 
 ### Community 159 - "Gateway Test Suite"
-Cohesion: 0.07
-Nodes (36): main(), resolve_model.py (Hermes model resolver), provider_for_model(), CLI: `resolve_model.py [model|provider]`. Defaults to 'model'., Strip a known provider prefix from a model ref, leaving the bare model name., Return the Hermes provider key for a bare model name.      Local models (qwen/ll, Resolve (model, provider) for Hermes from the container environment.      Preced, _resolve_from_env() (+28 more)
+Cohesion: 0.09
+Nodes (17): resolve_model.py (Hermes model resolver), local mode with HERMES_MAIN_MODEL set → bare local model + ollama provider., local mode, HERMES_MAIN_MODEL empty → use AGENTSHROUD_LOCAL_MODEL_REF., cloud mode, HERMES_MAIN_MODEL empty → use AGENTSHROUD_CLOUD_MODEL_REF., cloud mode with everything unset → safe Anthropic default, never empty., local mode must not use a stale cloud HERMES_MAIN_MODEL.      Guards against the, Mode comparison tolerates case and surrounding whitespace from env files., No arg → emit the model (start.sh convenience). (+9 more)
 
 ### Community 160 - "Gateway Test Suite"
+Cohesion: 0.05
+Nodes (17): RateLimiter, Simple token-bucket rate limiter      Limits requests per client IP to prevent r, Args:             max_requests: Maximum requests allowed in the time window, Check if client is within rate limit          Args:             client_id: Usual, Rate-limited collaborators should receive a deterministic retry-window notice., Rate-limit notice path should key retry window by user_id, not chat_id., Repeated rate-limited messages should each receive a deterministic notice., If notice send fails, cooldown should not suppress the next retry attempt. (+9 more)
+
+### Community 161 - "Architecture Docs"
 Cohesion: 0.04
-Nodes (41): RateLimiter, Simple token-bucket rate limiter      Limits requests per client IP to prevent r, Args:             max_requests: Maximum requests allowed in the time window, Check if client is within rate limit          Args:             client_id: Usual, Verify token using constant-time comparison      Uses hmac.compare_digest to pre, verify_token(), Test auth dependency with missing Authorization header, Test auth dependency with invalid auth scheme (+33 more)
+Nodes (27): DNSFilter, DNSQuery, DNSVerdict, Resolve domain to an IP and cache it for 5 minutes., Return True if a DNS rebinding attack is detected.          Re-resolves the doma, Return True if the IP address is in a private / loopback range., TunnelingPattern, default_config() (+19 more)
 
 ### Community 162 - "Security Docs"
-Cohesion: 0.22
-Nodes (7): _FakeResponse, _frame(), _patch_http_connection(), Build one Docker multiplexed-log frame (stdout)., Replace http.client.HTTPConnection so the in-function _UnixHTTP subclass     exe, TestInspectViaSocket, TestLogsViaSocket
+Cohesion: 0.03
+Nodes (43): Any, Path, _score_access_control_authorization() (domain 14, FR2), _score_identity_authentication() (domain 13, FR1), GroupSession, Represents a shared workspace + memory for a group., Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id, Initialize session manager.          Args:             base_workspace: Base dire (+35 more)
 
 ### Community 163 - "Gateway Test Suite"
-Cohesion: 0.09
-Nodes (9): GroupRoleResolver, Return True if the tool is classified as high-risk.          High-risk tools req, Remove a user's role entry from a group (falls back to READ_ONLY)., Resolve per-group roles for Telegram group workspace members.      Args:, Test GroupRole.rank, can_use_high_risk, and GroupRoleResolver helpers., remove_role on a user not in map is a no-op (no exception)., An invalid role string in the map falls back to READ_ONLY., get_all_roles with an invalid role string falls back to READ_ONLY per entry. (+1 more)
+Cohesion: 0.05
+Nodes (16): default_config(), monitor(), monitor_config(), If sub-agent tries tool above its trust, flag it., Monitor mode flags but allows., In monitor mode, even trust violations are allowed (just flagged)., Default mode is enforce after v0.8.0 enforcement hardening., strict_config() (+8 more)
 
 ### Community 164 - "Gateway Test Suite"
 Cohesion: 0.14
@@ -2372,20 +2469,20 @@ Cohesion: 0.07
 Nodes (24): compute_backoff(), Open the WebSocket and process events until Slack requests disconnect., Capped exponential backoff with jitter for reconnect attempts.      Returns a wa, Maintains a persistent Socket Mode WebSocket connection to Slack.      Call run(, Main reconnect loop. Runs until stop() is called., Signal the run loop to exit., Call apps.connections.open to get a fresh WSS URL., SlackSocketClient (+16 more)
 
 ### Community 169 - "Gateway Test Suite"
-Cohesion: 0.09
-Nodes (12): format_cve_report(), daily_cve_report module, Format a Trivy scan result into a Telegram-ready Markdown message.      Args:, _make_error_report(), _make_report(), Build a minimal parsed Trivy report., TestAlreadyCheckedUpstreamToday, TestAlreadyIngestedGhsaToday (+4 more)
+Cohesion: 0.08
+Nodes (17): Any, format_cve_report(), daily_cve_report module, Run a Trivy scan, format the report, and send via Telegram.      Args:         b, Format a Trivy scan result into a Telegram-ready Markdown message.      Args:, run_and_send_cve_report(), generate_summary(), Generate a summary dict suitable for the health report.      Args:         repor (+9 more)
 
 ### Community 170 - "Gateway Test Suite"
 Cohesion: 0.08
 Nodes (39): ArgumentParser, add_comment(), _adf_doc(), _auth_headers(), _build_arg_parser(), build_basic_auth_header(), build_comment_payload(), build_comment_url() (+31 more)
 
 ### Community 171 - "docs/vault"
-Cohesion: 0.12
-Nodes (12): Pattern, ClassificationResult, HeuristicClassifier, heuristic_classifier.py (HeuristicClassifier), [EXPERIMENTAL] Attempt to load a fine-tuned ML model. Returns True on success., Score a single signal pattern. Returns 0.0–1.0., Detect unusual Unicode patterns that suggest evasion., Classify text for injection probability.          Args:             text: Input (+4 more)
+Cohesion: 0.08
+Nodes (29): EmailSendRequest, AgentTarget, AuthRequired, ForwardRequest, Request, MultiAgentRouter._build_forward_payload(), MultiAgentRouter.forward_to_agent(), MultiAgentRouter.forward_to_agent_stream() (+21 more)
 
 ### Community 172 - "docs/vault"
-Cohesion: 0.09
-Nodes (22): Score domain 6: Malware Defense (0-5).      1=module installed or not_run, 3=cla, Score domain 2: Vulnerability Management (0-5).      1=module installed but no r, _score_malware_defense(), _score_vulnerability_management(), TestScoreMalwareDefense, TestScoreVulnerabilityManagement, _clean_clamav(), _clean_trivy() (+14 more)
+Cohesion: 0.08
+Nodes (25): _is_fresh(), Score domain 6: Malware Defense (0-5).      1=module installed or not_run, 3=cla, Return True if the most recent report file was written within max_age_hours., Score domain 2: Vulnerability Management (0-5).      1=module installed but no r, _score_malware_defense(), _score_vulnerability_management(), _clamav_infected(), TestScoreMalwareDefense (+17 more)
 
 ### Community 173 - "Architecture Docs"
 Cohesion: 0.05
@@ -2396,12 +2493,12 @@ Cohesion: 0.05
 Nodes (36): First Time Setup, Prerequisites, Related Notes, Step 1: Create Secret Files, Step 3: Configure 1Password Items, Step 4: Build Container Images, Step 5: Start Containers, Step 6: Verify Setup (+28 more)
 
 ### Community 175 - "Setup Docs"
-Cohesion: 0.07
-Nodes (16): Return True if channel is a DM with the configured owner.          In Slack, DM, Proxy a bot Slack Web API call through the security pipeline.          For messa, POST to https://slack.com/api/<method> with the bot token., Intercept apps.connections.open: rewrite the returned WSS URL to route         t, Pop and return the real WSS URL for a relay token (one-time use).          Retur, Handle an inbound Slack event payload received via Socket Mode.          Called, Create a Slack channel for a group. Returns channel_id or None on failure., Invite a Slack user to a channel. Returns True on success. (+8 more)
+Cohesion: 0.10
+Nodes (20): AlertSeverity, AnomalyAlert, EgressChannel, EgressEvent, EgressMonitor, EgressMonitorConfig, EgressSummary, default_config() (+12 more)
 
 ### Community 176 - "Gateway Test Suite"
-Cohesion: 0.11
-Nodes (17): Additional Costs (Option 2 vs Option 1), Architecture Comparison, Benefits Gained, Best Use Cases for Distributed Node Approach, Comparison Matrix, Concept Overview, Conclusion, Cost-Benefit Analysis (+9 more)
+Cohesion: 0.05
+Nodes (37): 1. True Distributed AI, 2. Enhanced Security, 3. Advanced Capabilities, 4. Better Development Workflow, Additional Costs (Option 2 vs Option 1), Architecture Comparison, Benefits Gained, Best Use Cases for Distributed Node Approach (+29 more)
 
 ### Community 177 - "Security Docs"
 Cohesion: 0.07
@@ -2412,8 +2509,8 @@ Cohesion: 0.05
 Nodes (38): AgentShroud Security Architecture, Executive Summary, Defense-in-Depth, API Key Security, Approval Queue Workflow, Architecture Diagram, Audit Log Encryption, Authentication and Authorization Framework (+30 more)
 
 ### Community 179 - "Gateway Test Suite"
-Cohesion: 0.07
-Nodes (35): Any, datetime, Any, _already_checked_upstream_today(), _already_ingested_ghsa_today(), _already_sent_today(), cve_report_scheduler(), ghsa_ingest_scheduler() (+27 more)
+Cohesion: 0.08
+Nodes (28): Any, datetime, _already_checked_upstream_today(), _already_ingested_ghsa_today(), _already_sent_today(), cve_report_scheduler(), ghsa_ingest_scheduler(), Send a message via Telegram Bot API. Returns True on success.      ``text`` is d (+20 more)
 
 ### Community 180 - "Gateway Test Suite"
 Cohesion: 0.12
@@ -2428,12 +2525,12 @@ Cohesion: 0.11
 Nodes (31): DataExfilVolumeConfig, DataExfilVolumeGuard, Observe one outbound response and decide allow/block.          A blocked respons, Clear cumulative + baseline state for a session (e.g. on new session)., Configuration for :class:`DataExfilVolumeGuard`., Structured verdict returned by :meth:`DataExfilVolumeGuard.observe`., Cumulative + adaptive outbound-volume anomaly detector, per session., _SessionState (+23 more)
 
 ### Community 183 - "Bot Skill Config"
-Cohesion: 0.14
-Nodes (8): key_rotation_config.py (KeyRotationConfig), key_rotation.py (KeyRotationManager), manager(), _old_cred(), TestCheckAndRotateDisabled, TestEmergencyAndRetire, TestRotateGuardBranches, TestStatusHelpers
+Cohesion: 0.09
+Nodes (14): key_rotation_config.py (KeyRotationConfig), CredentialValidator, key_rotation.py (KeyRotationManager), Base class for credential validators., Status of a credential rotation., RotationStatus, manager(), _old_cred() (+6 more)
 
 ### Community 184 - "Gateway Proxy Layer"
-Cohesion: 0.19
-Nodes (21): RateLimitConfig, RateLimitGuard, Configuration for :class:`RateLimitGuard`.      All windows are per (agent_id, t, Adaptive per-agent / per-tool sliding-window rate limiter with burst detection., _make_pipeline(), No injected clock: the guard falls back to time.monotonic and still works., Build a SecurityPipeline with only the guards needed to exercise the     RateLim, test_burst_clears_after_burst_window() (+13 more)
+Cohesion: 0.11
+Nodes (28): RateLimitConfig, RateLimitDecision, RateLimitGuard, Record one request for (agent_id, tool) and decide allow/block.          Fail-cl, Configuration for :class:`RateLimitGuard`.      All windows are per (agent_id, t, Structured verdict returned by :meth:`RateLimitGuard.check`., Adaptive per-agent / per-tool sliding-window rate limiter with burst detection., clock() (+20 more)
 
 ### Community 185 - "Gateway Security Module"
 Cohesion: 0.08
@@ -2444,8 +2541,8 @@ Cohesion: 0.06
 Nodes (36): Cisco AnyConnect VPN Networking Fix (col0 vmnet route), Colima (primary macOS runtime), gateway/runtime/docker_engine.py, gateway/runtime/podman_engine.py, 1. Pre-cache the Lima disk image, 2. Start Colima, 3. Apply the VPN networking fix, 4. Verify (+28 more)
 
 ### Community 187 - "CLAUDE.md"
-Cohesion: 0.10
-Nodes (32): Approval Queue (human-in-the-loop), ContextGuard (context window poisoning defense), DNS Filter (entropy threshold, rate limits), Egress Filter / SSRF Protection, File Sandbox (path allow/block lists), GitGuard (supply-chain hook scanning), Key Vault (leak detection, log redaction), MCP Proxy Layer (tool-call interception) (+24 more)
+Cohesion: 0.09
+Nodes (31): Approval Queue (human-in-the-loop), ContextGuard (context window poisoning defense), DNS Filter (entropy threshold, rate limits), Egress Filter / SSRF Protection, File Sandbox (path allow/block lists), GitGuard (supply-chain hook scanning), Key Vault (leak detection, log redaction), MCP Proxy Layer (tool-call interception) (+23 more)
 
 ### Community 188 - "Bot Skill Config"
 Cohesion: 0.05
@@ -2456,8 +2553,8 @@ Cohesion: 0.14
 Nodes (25): Any, AlertTelegramRelay, Await in-flight sends (test/shutdown helper)., Accept GatewayEvent objects or plain dicts from legacy emitters., Subscribe to the gateway EventBus; relay security alerts to Telegram., _alert_event(), Regression (SCRUM-61): /api/alerts used to call event_bus.publish(),     a metho, _SendSpy (+17 more)
 
 ### Community 190 - "Gateway Test Suite"
-Cohesion: 0.08
-Nodes (23): CredentialRotationPolicy, Any, KeyRotationConfig, KeyRotationManager, Whether credential needs rotation based on age., Validate a credential.          Returns:             tuple: (is_valid, message), Manages automated rotation of credentials with zero downtime., Initialize the key rotation manager. (+15 more)
+Cohesion: 0.07
+Nodes (25): Any, KeyRotationManager, Whether credential needs rotation based on age., Validate a credential.          Returns:             tuple: (is_valid, message), Manages automated rotation of credentials with zero downtime., Initialize the key rotation manager., Register a credential for rotation management., Register a validator for a credential type. (+17 more)
 
 ### Community 191 - "Gateway Test Suite"
 Cohesion: 0.09
@@ -2484,19 +2581,19 @@ Cohesion: 0.12
 Nodes (18): datetime, Path, archive_old_events(), _cli(), purge_low_value_events(), Archive+delete ALL rows matching (event_type, severity), regardless of age., Move audit_events older than cutoff_days into archive_path, then delete + VACUUM, _chain_events() (+10 more)
 
 ### Community 197 - "Architecture Docs"
-Cohesion: 0.06
-Nodes (35): Abstract, AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents, I. Introduction, II-A. AI Agent Security, II-B. STPA-Sec, II-C. Transparent Proxy Architectures, II. Related Work, III-A. Attacker Model (+27 more)
+Cohesion: 0.10
+Nodes (20): Abstract, AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents, I. Introduction, II-A. AI Agent Security, II-B. STPA-Sec, II-C. Transparent Proxy Architectures, II. Related Work, III-A. Attacker Model (+12 more)
 
 ### Community 198 - "Gateway Security Module"
-Cohesion: 0.08
-Nodes (8): CredentialEntryBlocked, ThreatAssessment, ThreatLevel, guard(), TestCredentialProtection, TestScreenshotAnalysis, TestSocialEngineeringDetection, TestURLReputation
+Cohesion: 0.07
+Nodes (9): CredentialEntryBlocked, PhishingURLDetected, SocialEngineeringDetected, ThreatLevel, guard(), TestCredentialProtection, TestScreenshotAnalysis, TestSocialEngineeringDetection (+1 more)
 
 ### Community 199 - "docs/papers"
 Cohesion: 0.08
 Nodes (19): compute_scorecard(), _compute_weighted_subscore(), _determine_compliance_level(), _determine_iec_sl(), Score domain 11: Secure Development (0-5).      1=Trivy in build, 2=semgrep conf, Return weighted sub-score as 0.0–100.0 percentage., Determine the highest achieved IEC 62443 Security Level.      SL 1: All IEC-mapp, Determine composite compliance level using the weakest-link rule.      All 7 sub (+11 more)
 
 ### Community 200 - "Web Control Center"
-Cohesion: 0.05
+Cohesion: 0.06
 Nodes (19): Test Dutch injection detection., Set up PromptGuard with standard thresholds., Test Ukrainian injection detection (Tier 2)., Test Persian/Farsi injection detection (Tier 2)., Test Bengali injection detection (Tier 2)., Test Japanese injection detection., Test Tamil injection detection (Tier 2)., Test Tagalog injection detection (Tier 2). (+11 more)
 
 ### Community 201 - "Gateway Test Suite"
@@ -2512,24 +2609,24 @@ Cohesion: 0.11
 Nodes (26): Path, ConfigIntegrityMonitor, Accept current file hashes as the new baseline (owner-acknowledged rebuild)., Format Telegram alert text for detected config changes., Computes and verifies SHA256 hashes of monitored bot config files.      At gatew, Return hex SHA256 of a file, or None if the file does not exist., Load the last known baseline from disk. Returns empty dict if not found., Persist the current hashes as the new baseline. (+18 more)
 
 ### Community 204 - "docs/testing"
-Cohesion: 0.05
-Nodes (32): BotConfig, Declaration for a single bot encapsulated by AgentShroud.      Required bot HTTP, Compute the bot's internal base URL from hostname and port., The real docker container name for this bot — see container_name field., Security module configuration, Complete security configuration, SecurityConfig, SecurityModuleConfig (+24 more)
+Cohesion: 0.08
+Nodes (16): Validate that default_url uses http/https and targets an internal Docker host., Validate that each target URL uses http/https and targets an internal Docker hos, Extract the key_id from an encrypted blob without decrypting., GroupRegistry, _persist_groups(), Manages user groups including auto-groups and custom groups., Return group by ID, or None., Create or replace a custom group and persist it. (+8 more)
 
 ### Community 205 - "Gateway Test Suite"
 Cohesion: 0.06
-Nodes (8): rbac(), session_mgr(), smm(), TestGroupMemoryReadWrite, TestMergedMemory, TestPrivateContentDetection, TestTopicScopedMemory, TestUserPrivateMemory
+Nodes (20): Configuration for resource limits., ResourceLimits, check_vram_headroom raises VRAMHeadroomError when estimated VRAM exceeds budget., Small context request passes VRAM headroom check., 128k token request at 4 bytes/token KV cache triggers rejection at 4096 MB headr, test_resource_guard_vram_estimate_128k_tokens_triggers_rejection(), test_resource_guard_vram_headroom_check_allows_small_context(), test_resource_guard_vram_headroom_check_raises_on_insufficient_vram() (+12 more)
 
 ### Community 206 - "Gateway Test Suite"
-Cohesion: 0.09
-Nodes (14): check_command(), EnvironmentLeakage, get_env_guard(), Check if command execution should be blocked to prevent environment leakage., Check if command contains patterns that could access environment., Detected environment variable leakage., Record a detected environment leakage., Get the global environment guard instance. (+6 more)
+Cohesion: 0.08
+Nodes (16): check_command(), EnvironmentLeakage, get_env_guard(), Check if command execution should be blocked to prevent environment leakage., Check if command contains patterns that could access environment., Scrub environment variables and API keys from command output.          Args:, Detected environment variable leakage., Check if a value looks like a credential. (+8 more)
 
 ### Community 207 - "docs/vault"
 Cohesion: 0.06
 Nodes (7): guard(), TestCheckCommandExecution, TestCheckFileAccess, TestLooksLikeCredential, TestMonitorEnvironmentAccess, TestScrubCommandOutput, TestSummaryAndExport
 
 ### Community 208 - "docs/README.md"
-Cohesion: 0.17
-Nodes (6): AuthRequired, FastAPI app (main.py), health_check_detail(), Detailed health check endpoint — authentication required.      Returns full syst, _fuzzable_endpoints(), (method, path) for every non-destructive route declaring a requestBody.
+Cohesion: 0.22
+Nodes (5): Test that new fields are optional (backward compat)., Test enhanced status endpoint with observatory mode and egress info., Test status response in monitor mode., Test that StatusResponse model accepts new fields., TestEnhancedStatus
 
 ### Community 209 - "Setup Docs"
 Cohesion: 0.06
@@ -2564,8 +2661,8 @@ Cohesion: 0.08
 Nodes (33): agentshroud.yaml (master gateway configuration file), agentshroud.yaml mcp_proxy section (per-server/tool MCP permissions), agentshroud.yaml proxy section (egress allowlist, port 8181), agentshroud.yaml security_modules section (per-module enforce/monitor mode), agentshroud.yaml security section (PII, approval queue, network isolation), agentshroud.yaml ssh section (SSH host allowlist, denied commands), agentshroud-bot service (docker-compose: port 18789, 4GB memory, isolated network), docker-compose.yml (primary Docker Compose — services, networks, volumes, secrets) (+25 more)
 
 ### Community 217 - "skills/openclaw"
-Cohesion: 0.07
-Nodes (34): datetime, CredentialRotationPolicy, KeyRotationConfig, Get rotation policy for a credential type, falling back to api_key default., Add or update a rotation policy for a specific credential type., Check if a specific emergency trigger is enabled., Build a complete op:// reference for a credential., Rotation policy for a specific credential type. (+26 more)
+Cohesion: 0.10
+Nodes (19): CredentialRotationPolicy, datetime, KeyRotationConfig, CredentialRotationPolicy, KeyRotationConfig, Get rotation policy for a credential type, falling back to api_key default., Add or update a rotation policy for a specific credential type., Check if a specific emergency trigger is enabled. (+11 more)
 
 ### Community 218 - "Gateway Test Suite"
 Cohesion: 0.06
@@ -2580,12 +2677,12 @@ Cohesion: 0.07
 Nodes (32): autoOpenFile, AWS_PROFILE, AWS_REGION, FASTMCP_LOG_LEVEL, FASTMCP_NO_BANNER, outputPath, PATH, .llm_settings/mcp-servers/atlassian/agentshroud/mcp-atlassian.sh (+24 more)
 
 ### Community 221 - "docker/QUICKSTART.md"
-Cohesion: 0.12
-Nodes (3): Test the heuristic injection classifier., InjectionClassifier alias should still work., TestHeuristicClassifier
+Cohesion: 0.05
+Nodes (38): MCPProxyConfig, MCPServerConfig, PermissionLevel, MCPProxyConfig, Top-level MCP proxy configuration., InspectionResult, Return the highest threat level from all findings., Result of inspecting a tool call or response. (+30 more)
 
 ### Community 222 - "Gateway Test Suite"
 Cohesion: 0.06
-Nodes (32): 1. Starting and Stopping AgentShroud, 2. Health Monitoring, 3. Viewing Audit Logs, 4. Handling Alerts, 5. API Key Rotation, 6. System Updates, 7. Backup and Restore Procedures, 8. Common Troubleshooting Scenarios (+24 more)
+Nodes (33): Kill Switch (FREEZE/SHUTDOWN/DISCONNECT), 1. Starting and Stopping AgentShroud, 2. Health Monitoring, 3. Viewing Audit Logs, 4. Handling Alerts, 5. API Key Rotation, 6. System Updates, 7. Backup and Restore Procedures (+25 more)
 
 ### Community 223 - "Gateway Test Suite"
 Cohesion: 0.06
@@ -2593,11 +2690,11 @@ Nodes (32): AgentShroud Method ✅, Architecture, Audit Log Format, Browser-Fetc
 
 ### Community 224 - "Custom Skills"
 Cohesion: 0.11
-Nodes (20): Decision, get_collector(), ModuleStatsCollector, Thread-safe per-module allow/block/sanitize counters., Record one enforcement decision for ``module``.          Never raises: an unknow, Return a per-module stats snapshot with totals and block rate., Ergonomic recorder for enforcement points — never raises.      ``sanitized=True`, record_decision() (+12 more)
+Nodes (18): Decision, get_collector(), ModuleStatsCollector, Thread-safe per-module allow/block/sanitize counters., Record one enforcement decision for ``module``.          Never raises: an unknow, Return a per-module stats snapshot with totals and block rate., SCRUM-80 F1 regression — a DENIED egress attempt must count as blocked.      The, SCRUM-80 — the record helper + wrapped enforcement points feed real data. (+10 more)
 
 ### Community 225 - "Setup Docs"
-Cohesion: 0.04
-Nodes (23): auth_dep(), Auth dependency that uses the app state config., Missing 'subject' or 'body' returns 422., Missing 'to' field returns 422., Email to an allowed recipient returns 200 with status=approved., Approved response includes sanitized_body field., Allowed (owner) recipient receives the body verbatim — PII scan is skipped., PII in email body IS redacted before queuing for unknown recipients. (+15 more)
+Cohesion: 0.06
+Nodes (17): Missing 'subject' or 'body' returns 422., Missing 'to' field returns 422., Email to an allowed recipient returns 200 with status=approved., Approved response includes sanitized_body field., Allowed (owner) recipient receives the body verbatim — PII scan is skipped., PII in email body IS redacted before queuing for unknown recipients., Unknown recipient triggers approval queue and returns 202., Unknown recipient with no approval queue configured returns 403. (+9 more)
 
 ### Community 226 - "Gateway Ingest API"
 Cohesion: 0.14
@@ -2608,20 +2705,20 @@ Cohesion: 0.06
 Nodes (16): Test handling deny callback., Test Telegram egress notification system., Test callback for non-existent request., Test cleanup removes expired pending requests., Test answering callback query., Test answer_callback handles errors., Test risk level emoji display., handle_callback must include agent_id so the proxy can notify the originating co (+8 more)
 
 ### Community 228 - "scripts/migrate-cve-registry-ghsa.py"
-Cohesion: 0.06
-Nodes (34): approvals(), audit(), collaborators(), credentials_health(), credentials_status(), dashboard_main(), EgressAllowlistResponse, EgressAllowlistUpdate (+26 more)
+Cohesion: 0.03
+Nodes (66): EgressFilterConfig, get_egress_config(), Configuration for egress filtering enforcement., Get the global egress filter configuration., set_egress_config(), EgressFilter, Filter outbound connections based on allowlists with enforce/monitor modes., Set the Telegram notifier for egress approval requests. (+58 more)
 
 ### Community 229 - "Bot Skill Config"
 Cohesion: 0.06
 Nodes (32): Check your activity, Command Details, Common Workflows, Direct Messages, Engagement, Error Handling, Global Flags, Go (+24 more)
 
 ### Community 230 - "Bot Skill Config"
-Cohesion: 0.08
-Nodes (29): Container Integration, Playwright, Purpose, Related Notes, Security Controls, Volume, agentshroud-bot Container, agentshroud-gateway Container (+21 more)
+Cohesion: 0.09
+Nodes (27): agentshroud-bot Container, agentshroud-gateway Container, agentshroud-internal, agentshroud-isolated, DNS Resolution, Docker Networks, Network Architecture, Related Notes (+19 more)
 
 ### Community 231 - "Bot Skill Config"
-Cohesion: 0.07
-Nodes (14): Verify /manage/modules enumerates every module MiddlewareManager wires.      Mid, The endpoint's P1 section must be generated from ALL_MODULE_ATTRS,         not a, Execute the real endpoint against a fully-populated app_state and         verify, Every SecurityPipeline.ALL_MODULE_ATTRS name must be passed as a kwarg     in li, Verify test count claims in README/docs are reasonable., We should have at least 350 tests (README says 351+)., Verify each module listed in README has actual implementation., Verify SECURITY.md content. (+6 more)
+Cohesion: 0.02
+Nodes (45): AuthRequired, FastAPI app (main.py), MiddlewareManager, Extract user ID from request data., Check if user_id is the system owner via RBAC config (single source of truth)., Extract potential file paths from message content., Check if a file path is allowed for a user to access., Return True only when the request contains actual tool calls or tool results. (+37 more)
 
 ### Community 232 - "Bot Skill Config"
 Cohesion: 0.06
@@ -2640,12 +2737,12 @@ Cohesion: 0.06
 Nodes (31): 1. Always Specify Risk Level, 1Password Integration, 2. Use Allowlisting Liberally, 3. Take Screenshots for Audit Trail, 4. Handle CAPTCHAs Gracefully, 5. Never Extract Credentials, "Action requires approval but none granted", Approval Integration (+23 more)
 
 ### Community 236 - "docs/operations"
-Cohesion: 0.09
-Nodes (17): Any, MemoryLifecycleConfig, MemoryLifecycleManager, Archive a file to the archive directory., Enforce retention policy for daily notes., Enforce size limit for MEMORY.md file., Run all lifecycle maintenance tasks., Clean up old threat records. (+9 more)
+Cohesion: 0.07
+Nodes (12): Pattern, ClassificationResult, heuristic_classifier.py (HeuristicClassifier), Score a single signal pattern. Returns 0.0–1.0., Detect unusual Unicode patterns that suggest evasion., Classify text for injection probability.          Args:             text: Input, Heuristic-based classification using multi-signal analysis., [EXPERIMENTAL] ML model classification placeholder. (+4 more)
 
 ### Community 237 - "docs/reference"
-Cohesion: 0.12
-Nodes (34): Path, GatewayConfig, Path, apply_reloadable_config(), config_watcher(), _default_mtime(), config hot-reload (SCRUM-89), Resolve the config file path using the same search order as load_config(). (+26 more)
+Cohesion: 0.03
+Nodes (81): Path, GatewayConfig, Path, BotConfig, Declaration for a single bot encapsulated by AgentShroud.      Required bot HTTP, Compute the bot's internal base URL from hostname and port., The real docker container name for this bot — see container_name field., apply_reloadable_config() (+73 more)
 
 ### Community 238 - "Gateway Test Suite"
 Cohesion: 0.12
@@ -2676,12 +2773,12 @@ Cohesion: 0.06
 Nodes (30): Alert Prioritization Display, Anti-Patterns to Flag, CLI / TUI UX, CLI UX Rules, Confirmation Patterns, Content Organization Patterns, Contextual Actions, Core Discipline: Discover → Define → Design → Validate (+22 more)
 
 ### Community 245 - "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
-Cohesion: 0.30
-Nodes (14): _err_response(), _make_greeter(), _ok_response(), Unexpected exception in maybe_greet must be caught and return False., test_bot_isolation(), test_exception_in_maybe_greet_returns_false(), test_first_call_sends_greeting_and_persists_state(), test_first_name_none_uses_there_fallback() (+6 more)
+Cohesion: 0.09
+Nodes (12): Test middleware enforcement of session boundaries., Create a temporary workspace., Create middleware manager with session isolation., Test that middleware requires user identification., Test that middleware injects session context., Test that middleware blocks cross-session access attempts., Test that owner can perform cross-session actions., Test that middleware blocks access to sensitive system files. (+4 more)
 
 ### Community 246 - "Gateway Test Suite"
 Cohesion: 0.08
-Nodes (31): graphify SKILL.md, Structural (AST) Extraction — Part A, Community Detection / Clustering, Cumulative Token Cost Tracker, Extraction Cache Check — Step B0, Gemini Semantic Extraction Backend, Obsidian Vault Export (opt-in --obsidian), Semantic Extraction — Part B (parallel subagents) (+23 more)
+Nodes (30): graphify SKILL.md, Structural (AST) Extraction — Part A, Community Detection / Clustering, Cumulative Token Cost Tracker, Extraction Cache Check — Step B0, Gemini Semantic Extraction Backend, God Nodes Analysis, Obsidian Vault Export (opt-in --obsidian) (+22 more)
 
 ### Community 247 - "Gateway Test Suite"
 Cohesion: 0.07
@@ -2692,16 +2789,16 @@ Cohesion: 0.06
 Nodes (30): 1Password Integration (Optional), AgentShroud Deployment Procedure, Container Won't Start, Database Connection Issues, Deployment Modes, Functional Testing, Grafana Dashboard Configuration, Maintenance Procedures (+22 more)
 
 ### Community 249 - "Planning Docs"
-Cohesion: 0.13
-Nodes (10): prompt_guard(), Create a PromptGuard instance for testing, </system> style fake tags should be stripped., --- new instructions patterns should be stripped., Test PromptGuard initialization, Normal markdown headers (# Title) should not be stripped., Test that normal messages pass through, test_benign_message() (+2 more)
+Cohesion: 0.09
+Nodes (10): ContainerSnapshot, DriftAlert, Retrieve baseline snapshot for a container., Compare current config against baseline, return any drift alerts., SHA-256 hash of the config for quick comparison., Store a known-good baseline configuration. Returns config hash., Verify drift is detected even with rapid changes., TestDriftDetector (+2 more)
 
 ### Community 250 - "docs/vault"
 Cohesion: 0.06
 Nodes (30): Add Long Description, Add Screenshots, Add Security Badge, "Authentication required", "clawhub: command not found", 🎨 Customize Skill Page (Optional), 📋 Detailed Step-by-Step, Immediate (Day 1) (+22 more)
 
 ### Community 251 - "Bot Skill Config"
-Cohesion: 0.10
-Nodes (11): CredentialInfo, Information about a managed credential., Age of credential in days., Whether credential is currently in grace period., Test credential age calculation., Test warning threshold calculation., Test rotation requirement calculation., Test grace period status tracking. (+3 more)
+Cohesion: 0.16
+Nodes (10): CredentialInfo, Information about a managed credential., Age of credential in days., Whether credential is currently in grace period., Test credential age calculation., Test warning threshold calculation., Test rotation requirement calculation., Test grace period status tracking. (+2 more)
 
 ### Community 252 - "Bot Skill Config"
 Cohesion: 0.09
@@ -2712,8 +2809,8 @@ Cohesion: 0.07
 Nodes (29): Build Stages, Image Labels (OCI), Pre-installed Tools, Related Notes, Runtime Command, Security Hardening, Stage 1: Builder (`python:3.13-slim AS builder`), Stage 2: Runtime (`python:3.13-slim`) (+21 more)
 
 ### Community 254 - "Gateway Test Suite"
-Cohesion: 0.07
-Nodes (27): Container Errors, Container Won't Stop (Stuck in Stopping), Exit Code Reference, `no-new-privileges` Security Denial, OOM Kill (Exit Code 137), Port Already in Use, Read-Only Filesystem Errors, Related Notes (+19 more)
+Cohesion: 0.10
+Nodes (18): Container Errors, Container Won't Stop (Stuck in Stopping), Exit Code Reference, `no-new-privileges` Security Denial, OOM Kill (Exit Code 137), Port Already in Use, Read-Only Filesystem Errors, Related Notes (+10 more)
 
 ### Community 255 - "Gateway Test Suite"
 Cohesion: 0.07
@@ -2728,8 +2825,8 @@ Cohesion: 0.07
 Nodes (30): 1.1 Application Type, 1.2 Inventor(s), 1.3 Title of Invention, 1.4 Correspondence Address, 1.5 Attorney/Agent (if applicable), 1.6 U.S. Government Interest, 1.7 Entity Status, AgentShroud -- USPTO Provisional Patent Application (+22 more)
 
 ### Community 258 - "Security Docs"
-Cohesion: 0.02
-Nodes (86): deque, Path, Any, Any, FastAPI, Path, KillSwitchConfig, KillSwitchConfig (+78 more)
+Cohesion: 0.11
+Nodes (14): Any, Check if the agent is responding within expected parameters.          Returns:, Detect unusual patterns that might indicate rogue behavior.          Args:, Get current kill switch monitor status.          Returns:             Dict conta, Get current system statistics., Remove metrics older than cutoff_time., Count events in the last N seconds., Check if tool call rate is abnormal. (+6 more)
 
 ### Community 259 - "Security Docs"
 Cohesion: 0.07
@@ -2748,8 +2845,8 @@ Cohesion: 0.07
 Nodes (28): 1. Branch Creation, 2. Development (TDD), 3. Production Testing (if needed), 4. Pull Request, 5. Pre-Merge, Cloud & FinOps, Common Commands Quick Reference, Content & Communication (+20 more)
 
 ### Community 263 - "AGENTS.md"
-Cohesion: 0.07
-Nodes (37): Gateway Service, Hermes Dashboard Bridge Port Wiring (9119->9120), Hermes Agent Service, Three-Tier Network Segmentation (IEC 62443 FR5), OpenClaw Bot Service, cryptography>=50.0.0 Security Floor, gateway/requirements.txt Dependency File, Dependabot Configuration (+29 more)
+Cohesion: 0.26
+Nodes (11): Gateway Service, Hermes Dashboard Bridge Port Wiring (9119->9120), Hermes Agent Service, Three-Tier Network Segmentation (IEC 62443 FR5), OpenClaw Bot Service, Hermes Dev Workflow Skill (i-hdev), Jira Ticket Per Dev Batch (Standing Rule), Multi-LLM Review Loop (Codex+Gemini review, Claude fixer) (+3 more)
 
 ### Community 264 - "docs/vault"
 Cohesion: 0.08
@@ -2760,20 +2857,20 @@ Cohesion: 0.16
 Nodes (28): LLMProxy, _call_proxy(), make_proxy(), x-agentshroud-interactive: 1 → the first 429 returns immediately (no     2s/4s/8, Without the interactive flag the 3-retry loop is unchanged (guards the     herme, Updated 2026-06-15: a plain 429 that escaped the upstream retry loop     NOW tri, HTTP 200 with an overloaded_error body must trigger local failover., A healthy 200 message body must NOT be failed over. (+20 more)
 
 ### Community 266 - "Security Docs"
-Cohesion: 0.15
-Nodes (16): CompletedProcess, Path, TestClient, gateway/security/skill_guard.py (SkillGuard), Raised when SkillGuard is handed content it cannot scan., What the caller should do with the scanned skill., Recommendation, SkillScanError (+8 more)
+Cohesion: 0.16
+Nodes (12): Path, TestClient, Raised when SkillGuard is handed content it cannot scan., SkillScanError, Exercise ``gateway.skills.scan.main`` directly for exit-code coverage., The parallel bash sync path must invoke SkillGuard before copying., _run_scan_cli(), TestReloadIntegration (+4 more)
 
 ### Community 267 - "docs/ssh-security-review.md"
 Cohesion: 0.12
 Nodes (15): ANSI, ControlCenter, main(), Clear screen and position cursor at home, Draw a box with title, Draw main dashboard screen, Draw approval queue screen, Draw kill switch screen (+7 more)
 
 ### Community 268 - "Gateway Test Suite"
-Cohesion: 0.15
-Nodes (9): HeuristicClassifier, _heuristic_detects(), Return True if HeuristicClassifier flags as injection or uncertain., End-to-end: all 110+ payloads against combined defense layer., Ensure the payload library stays above 100 entries (CI regression gate)., Report per-category detection rates for observability (not a gate)., HeuristicClassifier returns injection or uncertain on known bad payloads., TestHeuristicClassifierDirectly (+1 more)
+Cohesion: 0.04
+Nodes (20): EgressAction, PatternRule, Args:             block_threshold: Score at or above which input is blocked., Tests for key material zeroing (C2 fix)., Ensure zeroing doesn't break normal encrypt/decrypt flow., Tests for prompt guard evasion techniques., Zero-width chars between letters should not bypass detection., Fullwidth chars NFKC-normalized — injection defeated. (+12 more)
 
 ### Community 269 - "skills/openclaw"
 Cohesion: 0.08
-Nodes (16): make_httpx_fetcher(), citation_verifier module, Production fetcher: stream the URL and hash the body as proof-of-source.      SE, _FakeStreamResponse, Stand-in for the object httpx.stream() yields as a context manager., Patch httpx.stream; return a list that records the call kwargs., TestMakeHttpxFetcher, _draft() (+8 more)
+Nodes (16): make_httpx_fetcher(), Production fetcher: stream the URL and hash the body as proof-of-source.      SE, _FakeStreamResponse, Stand-in for the object httpx.stream() yields as a context manager., Patch httpx.stream; return a list that records the call kwargs., TestMakeHttpxFetcher, _draft(), _FakeFetcher (+8 more)
 
 ### Community 270 - "docs/vault"
 Cohesion: 0.07
@@ -2804,68 +2901,68 @@ Cohesion: 0.07
 Nodes (27): Monitoring System Integration (Webhooks/Prometheus), Approval Queue (SQLite), Dashboard (WebSocket), Kill Switch (Monitor/Block/Isolate), TrustManager, Approval Queue (gateway diagram), Configuration (TrustConfig), Database Schema (+19 more)
 
 ### Community 277 - "Bot Skill Config"
-Cohesion: 0.11
-Nodes (18): 3B.1: Create killswitch.sh ✅, Created, Disable seccomp (if causing startup failures), Emergency container access, Files Changed, Modified, Next Steps, No Changes (Already Correct) (+10 more)
+Cohesion: 0.07
+Nodes (27): 3A.1: Re-enable seccomp profiles ✅, 3A.2: Make OpenClaw container read-only ✅, 3A.3: Remove NET_RAW capability ✅, 3A.4: Add mDNS/Bonjour disable ✅, 3A.5: Move gateway password to Docker secrets ✅, 3A.6: Create verify-security.sh ✅, 3A.7: Create scan.sh (OpenSCAP) ✅, 3A.8: Change DM policy to allowlist ✅ (+19 more)
 
 ### Community 278 - "Bot Skill Config"
 Cohesion: 0.08
 Nodes (27): AgentShroud Competitive Security Score: 26/26 (100%) vs nearest competitor 4/26 (15%), Unique Modules 12-26 (MCP proxy, web content scanner, DNS tunneling, etc. — no competitor has these), CVE-2026-22172 (CVSS 9.9): WebSocket Scope Self-Declaration — Fully Mitigated, CVE-2026-22708 (CVSS 9.8): AI Agent Container Escape via Prompt Injection — Fully Mitigated, CWE Coverage (CWE-22, 78, 89, 200, 287, 346, 384, 502, 526, 532, 617, 798, 918), cve-mitigation-matrix.md (293 CVEs tracked, 293 fully mitigated), agent_cve_registry.py (293 CVEs: 19 CRITICAL, 113 HIGH, 148 MEDIUM, 13 LOW), OWASP Agentic AI (ASI) Coverage (ASI-01 through ASI-10) (+19 more)
 
 ### Community 279 - "Bot Skill Config"
-Cohesion: 0.13
-Nodes (13): SSH Approval Flow (auto-approve vs human-review vs deny), SSHHostConfig (per-host allow/deny/auto-approve lists, timeout, key_path), SSH Command Injection Detection (INJECTION_PATTERNS regex + asyncio subprocess exec), SSH Proxy Module (gateway/ssh_proxy/proxy.py), MCP Servers, User-Level Config, P4 Low Priority Incidents, Adversarial Red-Team / Blue-Team Assessment (+5 more)
+Cohesion: 0.07
+Nodes (26): SSH Approval Flow (auto-approve vs human-review vs deny), SSHHostConfig (per-host allow/deny/auto-approve lists, timeout, key_path), SSH Command Injection Detection (INJECTION_PATTERNS regex + asyncio subprocess exec), SSH Proxy Module (gateway/ssh_proxy/proxy.py), API Endpoints (`gateway/ingest_api/main.py`), Approval-Required Commands, Architecture, Auto-Approved Commands (+18 more)
 
 ### Community 280 - "Bot Skill Config"
 Cohesion: 0.08
 Nodes (26): Athena — Knowledge Distiller, cheatsheet.md, <description of what this does>, Input Requirements, Output Format, Persona, Quality Checklist, Role (+18 more)
 
 ### Community 281 - "docker/README.md"
-Cohesion: 0.11
-Nodes (21): Daily CVE Triage & Remediation Scan (OpenClaw cron job), AgentShroud Docker Configuration, Architecture, Container Runtime Support (SCRUM-92), Container Stack, Cron Failure Alerting (SCRUM-61), Detection contract, MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93) (+13 more)
+Cohesion: 0.08
+Nodes (27): AgentShroud Docker Configuration, Architecture, Container Runtime Support (SCRUM-92), Container Stack, Core Configuration, Cron Failure Alerting (SCRUM-61), Detection contract, Development (+19 more)
 
 ### Community 282 - "Security Docs"
-Cohesion: 0.10
-Nodes (13): Any, Path, parse_clamscan_output(), Save a ClamAV report to the log directory., Update ClamAV virus database using freshclam.      Args:         freshclam_bin:, Run ClamAV scan and return parsed results.      Args:         target: Directory, Parse clamscan output into structured results.      Args:         output: Raw st, run_clamscan() (+5 more)
+Cohesion: 0.09
+Nodes (15): Any, Path, generate_summary(), parse_clamscan_output(), Save a ClamAV report to the log directory., Update ClamAV virus database using freshclam.      Args:         freshclam_bin:, Run ClamAV scan and return parsed results.      Args:         target: Directory, Parse clamscan output into structured results.      Args:         output: Raw st (+7 more)
 
 ### Community 283 - "docs/user-guide.md"
-Cohesion: 0.09
-Nodes (19): container-runtime.sh (detection shim), run_test(), _python(), _write_manifest(), BOT_CONTAINER, BOT_DEFAULTS_DIR, BOT_LIVE_SKILLS_DIR, gateway/skills/scan.py (scan CLI) (+11 more)
+Cohesion: 0.19
+Nodes (9): _python(), _write_manifest(), gateway/skills/scan.py (scan CLI), check(), PYTHONPATH, SKILLGUARD_TEST_DEST_ROOT, test-skills-sync.sh script, sync-llm-settings.sh script (+1 more)
 
 ### Community 284 - "docs/USPTO_TRADEMARK_APPLICATION.md"
 Cohesion: 0.07
 Nodes (23): MCP Server/Tool (mcporter), mcporter, nano-pdf, Quick start, Find the active vault(s), Obsidian, obsidian-cli Tool, obsidian-cli quick start (+15 more)
 
 ### Community 285 - "Gateway Security Module"
-Cohesion: 0.13
-Nodes (9): WebSocket endpoints must validate token during handshake, not first message, WS /ws/approvals closes immediately without token, WS /ws/approvals closes with bad token, WS /ws/approvals rejects the master auth token -- R3-L4 removed the         mast, WS /ws/approvals accepts valid scoped WS token, WS /ws/activity closes immediately without token, WS /ws/activity closes with bad token, WS /ws/activity accepts valid scoped WS token (+1 more)
+Cohesion: 0.09
+Nodes (6): Any, PodmanEngine, Generate a systemd unit file for a container., Container engine backed by the Podman CLI., Detect podman compose or podman-compose., TestPodmanEngine
 
 ### Community 286 - "Gateway Test Suite"
 Cohesion: 0.07
 Nodes (27): calculate_overall_score(summaries), calculate_tool_score(summary), Weighted Composite Security Score (0-100, A-F grade), Configuration / Environment Variables, format_report(report), Function Details, generate_report(summaries, db_path, save_history), get_trend(days, db_path) (+19 more)
 
 ### Community 287 - "Bot Skill Config"
-Cohesion: 0.10
-Nodes (12): manager(), _plain_msg(), Unit tests for the _is_tool_call_request helper (TDD RED phase)., FileSandbox must NOT block plain chat messages that mention file-like words., Owner (8096968754) must not be blocked by content-pattern scanning.     They sho, MiddlewareManager with real session_manager, all other deps mocked.      Uses __, session_manager(), TestFileSandboxSkippedForPlainMessages (+4 more)
+Cohesion: 0.06
+Nodes (8): rbac(), session_mgr(), smm(), TestGroupMemoryReadWrite, TestMergedMemory, TestPrivateContentDetection, TestTopicScopedMemory, TestUserPrivateMemory
 
 ### Community 288 - "Custom Skills"
-Cohesion: 0.10
-Nodes (13): Test cases for the widened fabricated_security_notice pattern., Original pattern: exact past-tense form., blocking' continuous form., continues blocking' — adverb + gerund form., flagging' gerund form., Possessive form: AGENTSHROUD's behavioral analysis flagging., Standalone 'blocked unauthorized command execution' without AGENTSHROUD prefix., blocking suspicious code execution' variant. (+5 more)
+Cohesion: 0.05
+Nodes (28): Any, FilterMatch, InfoCategory, Compile all filter patterns into regex objects., Categories of information that may need filtering., Filter agent response for sensitive information disclosure.          Args:, A single match found by the outbound filter., Check if a disclosure category is permitted for the user's trust level. (+20 more)
 
 ### Community 289 - "docs/project"
 Cohesion: 0.07
 Nodes (13): flags(), fs(), Redirect every Path(...) constructed inside the module into a sandbox.      Abso, Replace _app_state_has with a controllable membership set., Replace shutil.which with a controllable name → path mapping., TestAccessControl, TestAgenticScorers, TestAppStateHas (+5 more)
 
 ### Community 290 - "Gateway Test Suite"
-Cohesion: 0.14
-Nodes (11): group_rbac.py (GroupRoleResolver), tool_acl.py (ToolACLEnforcer), acl_config(), enforcer(), group_role_resolver(), Owner must have unrestricted access even in group context., Owner is allowed ALL tools in group context., Owner group-context check must match standard can_use_tool result. (+3 more)
+Cohesion: 0.08
+Nodes (15): get_resource_guard(), Raised when a local-model call is rejected because estimated VRAM usage     woul, Pre-flight VRAM headroom check before dispatching a long-context local-model cal, Get the global resource guard instance, creating it lazily on first call., Current resource usage metrics., ResourceUsage, VRAMHeadroomError, VRAMHeadroomError must be a distinct exception, not a subclass of ResourceWarnin (+7 more)
 
 ### Community 291 - "Planning Docs"
 Cohesion: 0.08
 Nodes (27): Kaiser-windowed sinc anti-aliasing filter suppresses content above the output, Frequencies well below the Nyquist (≤3 kHz) must pass through with minimal     a, test_resample_antialias_attenuates_above_nyquist(), test_resample_passband_preserved(), _call_agent_stream() — SSE streaming from gateway /forward/stream, _call_llm() — fast-path POST to gateway /v1/chat/completions, _parse_model_switch_command() — parses spoken use/tell/switch commands, _parse_volume_command() — parses spoken 'set volume X%' command (+19 more)
 
 ### Community 292 - "Gateway Test Suite"
-Cohesion: 0.08
-Nodes (24): ClamAV, First Boot, Gateway Usage, Installation, Purpose, Related Notes, Installation in Gateway, Key Commands (+16 more)
+Cohesion: 0.07
+Nodes (27): ClamAV, First Boot, Gateway Usage, Installation, Purpose, Related Notes, Installation in Gateway, Key Commands (+19 more)
 
 ### Community 293 - "Setup Docs"
 Cohesion: 0.12
@@ -2873,7 +2970,7 @@ Nodes (26): Atlassian MCP Server (Jira + Confluence, concept), AWS Agent (Athena
 
 ### Community 294 - "Setup Docs"
 Cohesion: 0.07
-Nodes (25): Kill Switch (FREEZE/SHUTDOWN/DISCONNECT), Purpose, Related Skills, Usage, AgentShroud Incident Response Plan, Audit Chain Tampering, Contact Information, Container Escape Attempt (+17 more)
+Nodes (25): Trust Manager / Progressive Trust System, Purpose, Related Skills, Usage, AgentShroud Incident Response Plan, Audit Chain Tampering, Contact Information, Container Escape Attempt (+17 more)
 
 ### Community 295 - "Custom Skills"
 Cohesion: 0.07
@@ -2892,8 +2989,8 @@ Cohesion: 0.07
 Nodes (26): Accessibility Requirements, Anti-Patterns to Flag, BEM (Block Element Modifier), Breakpoints (mobile-first), Button, Component contract rules, Component file structure, Component Patterns (+18 more)
 
 ### Community 299 - "Bot Skill Config"
-Cohesion: 0.13
-Nodes (26): ArgumentParser, add_comment(), _adf_doc(), _auth_headers(), _build_arg_parser(), build_basic_auth_header(), build_comment_payload(), build_comment_url() (+18 more)
+Cohesion: 0.08
+Nodes (38): ArgumentParser, add_comment(), _adf_doc(), _auth_headers(), _build_arg_parser(), build_basic_auth_header(), build_comment_payload(), build_comment_url() (+30 more)
 
 ### Community 300 - "Bot Skill Config"
 Cohesion: 0.07
@@ -2916,8 +3013,8 @@ Cohesion: 0.07
 Nodes (26): Accessibility Requirements, Anti-Patterns to Flag, BEM (Block Element Modifier), Breakpoints (mobile-first), Button, Component contract rules, Component file structure, Component Patterns (+18 more)
 
 ### Community 305 - "Security Docs"
-Cohesion: 0.11
-Nodes (18): E - Elevation of Privilege, I - Information Disclosure, R - Repudiation, S - Spoofing Identity, STRIDE Threat Analysis, T - Tampering with Data, Threat: Agent Identity Spoofing, Threat: API Key Impersonation (+10 more)
+Cohesion: 0.20
+Nodes (10): E - Elevation of Privilege, R - Repudiation, S - Spoofing Identity, STRIDE Threat Analysis, Threat: Agent Identity Spoofing, Threat: API Key Impersonation, Threat: Container Escape, Threat: Docker Socket Access (+2 more)
 
 ### Community 306 - "Gateway Test Suite"
 Cohesion: 0.07
@@ -2937,15 +3034,15 @@ Nodes (26): "401 Unauthorized", Add Contact, "Calendar/Contacts not found", Cale
 
 ### Community 310 - "docs/vault"
 Cohesion: 0.11
-Nodes (15): Path, MemoryIntegrityMonitor, Save integrity database to disk., Load active write windows from disk., Save active write windows to disk., Register an expected write to a file to prevent false alerts., Check if a file is currently in a write grace window., Attempt to detect the source of a file modification.          Detection strategy (+7 more)
+Nodes (5): Verify that different bots get independent workspaces per user., openclaw and hermes sessions for the same user must not share a directory., Existing plain user_id keys (no separator) are promoted to user::openclaw., If legacy users/{uid}/MEMORY.md exists, first openclaw session copies it., TestMultiBotIsolation
 
 ### Community 311 - ".github/agents"
 Cohesion: 0.08
 Nodes (24): AgentShroud™ Communication Templates, For Agents and Bots, Gemini CLI / ChatGPT Codex (secondary agents), OpenClaw Bot (agentshroud-bot), Option 1 — Clean & Professional, Option 2 — Compact, Option 3 — Full Collaborator Notice, Option 4 — Documentation Footer (+16 more)
 
 ### Community 312 - "CHEATSHEET.md"
-Cohesion: 0.18
-Nodes (17): PipelineResult, PipelineResult, Result of running a message through the security pipeline., _getUpdates_response(), _make_pipeline_result(), _make_proxy(), _make_update(), sendMessageDraft must be suppressed to prevent draft flicker leaks. (+9 more)
+Cohesion: 0.09
+Nodes (29): Any, PipelineResult, AuditChainEntry, PipelineResult, Process an outbound response through the security pipeline.          Thin wrappe, Process an outbound response through the security pipeline., An entry in the SHA-256 hash chain audit ledger., Record a trust-score violation and propagate cross-bot decay.          Called on (+21 more)
 
 ### Community 313 - "Planning Docs"
 Cohesion: 0.13
@@ -2957,11 +3054,11 @@ Nodes (26): 4. Risks & Gaps — Critical Security Concerns, 🔴 **HIGH RISK —
 
 ### Community 315 - "Bot Skill Config"
 Cohesion: 0.05
-Nodes (20): generate_apple_script(), generate_compose(), Generate a shell script to start services with Apple Containers.      Apple Cont, Definition of a single service for compose generation., Generate a compose YAML file for Docker or Podman.      Args:         services:, ServiceDef, gateway/runtime/config.py (RuntimeConfig), Configuration for container runtime selection and behavior.      Loaded from env (+12 more)
+Nodes (16): generate_apple_script(), generate_compose(), Generate a shell script to start services with Apple Containers.      Apple Cont, Definition of a single service for compose generation., Generate a compose YAML file for Docker or Podman.      Args:         services:, ServiceDef, gateway/runtime/config.py (RuntimeConfig), gateway/runtime/docker_engine.py (DockerEngine) (+8 more)
 
 ### Community 316 - "Bot Skill Config"
-Cohesion: 0.14
-Nodes (8): Read-only members must be denied high-risk tools in any group context., Read-only member denied email_sending even when called from group context., Read-only member denied file_deletion in group context., Read-only member denied external_api_calls in group context., Read-only member denied skill_installation in group context., Read-only member IS allowed web_search (low-risk) in group context., Read-only member IS allowed read tool in group context., TestReadOnlyMemberGroupContext
+Cohesion: 0.09
+Nodes (6): ContainerEngine, Any, DockerEngine, Container engine backed by the Docker CLI., Installer must not fake completion: SCRUM-107.          The endpoint has no auto, TestInstallerAPI
 
 ### Community 317 - "Gateway Security Module"
 Cohesion: 0.08
@@ -2988,8 +3085,8 @@ Cohesion: 0.08
 Nodes (25): Core Identity (from IDENTITY.md, SOUL.md, USER.md), Critical Constraint, Deferred Security Controls (Phase 5+), DEFERRED TO PHASE 4+ (Advanced Features), Files to Mount in Container, MUST HAVE (Phase 3 - Minimum Viable Chat), Must-Implement Security Controls (from 10_skills_to_harden_openclaw.txt), Notes (+17 more)
 
 ### Community 323 - "Bot Skill Config"
-Cohesion: 0.07
-Nodes (34): Atlas — Curriculum Architect, Coverage Types, CPA Curriculum Frontmatter Addition, Episode Closing, Exam Weight Integration, Gleim Unit Mapping, Input Requirements, Mandatory Acronym Expansion (+26 more)
+Cohesion: 0.10
+Nodes (25): Atlas — Curriculum Architect, Coverage Types, CPA Curriculum Frontmatter Addition, Episode Closing, Exam Weight Integration, Gleim Unit Mapping, Input Requirements, Mandatory Acronym Expansion (+17 more)
 
 ### Community 324 - "Bot Skill Config"
 Cohesion: 0.08
@@ -3040,24 +3137,24 @@ Cohesion: 0.08
 Nodes (25): OWNER_USER_IDS bypass mechanism, Blue Team Security Assessment — AgentShroud v0.8.0 Round 2, CRITICAL Findings, Executive Summary, HIGH Findings, LOW Findings, MEDIUM Findings, R2-C1: RBAC Management Endpoints Missing Authentication (+17 more)
 
 ### Community 337 - "docs/diagrams"
-Cohesion: 0.11
-Nodes (23): OpenClaw cron jobs.json (bot-config store, SCRUM-61 monitored), Agentic AI Threat Intelligence (OpenClaw cron job), AI Security Standards Watch (OpenClaw cron job), Monthly Chaos Engineering Drill job, Collaborator Daily Digest (OpenClaw cron job), Collaborator Report - Evening (OpenClaw cron job), Collaborator Report - Morning (OpenClaw cron job), Competitive Analysis Email AM/PM (OpenClaw cron job) (+15 more)
+Cohesion: 0.10
+Nodes (25): OpenClaw cron jobs.json (bot-config store, SCRUM-61 monitored), Agentic AI Threat Intelligence (OpenClaw cron job), AI Security Standards Watch (OpenClaw cron job), Monthly Chaos Engineering Drill job, Collaborator Daily Digest (OpenClaw cron job), Collaborator Report - Evening (OpenClaw cron job), Collaborator Report - Morning (OpenClaw cron job), Competitive Analysis Email AM/PM (OpenClaw cron job) (+17 more)
 
 ### Community 338 - "Architecture Docs"
-Cohesion: 0.11
-Nodes (14): A2APolicyEngine, Any, A2AProxyResult, Resolve peer identity from the Authorization: Bearer token.          Never falls, Flatten an A2A Message's `parts` array to plain text for PII         scanning., GET /.well-known/agent-card.json — never policy-gated (the A2A         spec requ, Record a typed violation against the peer's trust score for the         two A2A-, Return a copy of raw_body with the first text Part's content replaced     by the (+6 more)
+Cohesion: 0.16
+Nodes (9): killswitch_config.py (KillSwitchConfig), KillSwitchMonitor, killswitch_monitor.py (KillSwitchMonitor), Monitor and verify kill switch functionality.      Provides automated verificati, _fake_stats(), TestAnomalyDetection, TestHeartbeat, TestStatusAndStats (+1 more)
 
 ### Community 339 - "branding/logos"
-Cohesion: 0.09
+Cohesion: 0.08
 Nodes (21): Any, Connection, calculate_overall_score(), calculate_tool_score(), format_report(), generate_report(), get_trend(), init_db() (+13 more)
 
 ### Community 340 - "Gateway Test Suite"
-Cohesion: 0.08
-Nodes (24): 12. Roadmap, 13. Conclusion, 1.1 The New Attack Surface, 1.2 The Industry Gap, 1.3 Threat Model, 1. The Problem: Unsecured AI Agents, 6.1 Market Overview, 6.2 Comparison Table (+16 more)
+Cohesion: 0.29
+Nodes (7): 11.1 Complete 26-Module Security Matrix, 11.2 Unique AgentShroud Modules (No Competitor Implementation), 11.3 Competitor Analysis Details, 11.4 Security Coverage Gap Analysis, 11.5 Security Score Evolution, 11.6 Industry Implications, 11. Competitive Security Comparison Matrix
 
 ### Community 341 - "docs/vault"
 Cohesion: 0.08
-Nodes (22): 🛡️ AgentShroud Release Plan, 🟡 Apple Messages Integration (4 items), Current Execution Tracker (2026-03-14), Current hard gate, Current status snapshot, 🟢 Development Infrastructure (4 items), 🟢 Infrastructure (5 items), Key Changes (2026-03-04 12:16 UTC) (+14 more)
+Nodes (21): 🛡️ AgentShroud Release Plan, Current Execution Tracker (2026-03-14), Current hard gate, Current status snapshot, Key Changes (2026-03-04 12:16 UTC), Key Changes (2026-04-08), Live tracker files, Summary (+13 more)
 
 ### Community 342 - "Setup Docs"
 Cohesion: 0.05
@@ -3076,8 +3173,8 @@ Cohesion: 0.08
 Nodes (24): R2-C1: RBAC endpoints missing auth (unauthenticated privilege escalation via X-User-ID) — FIXED, blue-team-assessment-v0.8.0-r2.md (Round 2), blue-team-assessment-v0.8.0-r3.md (Round 3 Final — 0 CRITICAL, 0 HIGH), v0.8.0 Security Posture: STRONG (all critical/high fixed, 3 medium remaining), AgentShroud v0.8.0 — Blue Team Security Assessment, C1: Hardcoded Owner User ID in middleware.py:94, C2: Hardcoded Owner User ID in webhook_receiver.py:45, C3: Bot Tokens Partially Exposed in Chat History (+16 more)
 
 ### Community 346 - "Bot Skill Config"
-Cohesion: 0.15
-Nodes (5): Validate the token → bot_id registry logic extracted from the route handler., Token matching must be exact — case-sensitive., Registry maps two distinct tokens to two distinct bot_ids., Tokens are the registry keys — no two bots share a token., TestTelegramTokenRegistry
+Cohesion: 0.08
+Nodes (15): prompt_guard(), Create a PromptGuard instance for testing, register_system_prompt + verify_system_prompt should succeed., Verifying a tampered prompt should return False., Empty prompt should still register and verify cleanly., Explicit key parameter should override session key., </system> style fake tags should be stripped., --- new instructions patterns should be stripped. (+7 more)
 
 ### Community 347 - "Planning Docs"
 Cohesion: 0.08
@@ -3091,13 +3188,9 @@ Nodes (23): For /graphify add and --watch, For /graphify query, For the commit h
 Cohesion: 0.08
 Nodes (23): Approval Router — `gateway/ingest_api/routes/approval.py` (no prefix), Core / Root — main.py, Dashboard API Router — `gateway/web/dashboard_endpoints.py` (prefix `/api`), Dashboard Router — `gateway/ingest_api/routes/dashboard.py` (no prefix), Endpoints, Environment Variables Used, Forward Router — `gateway/ingest_api/routes/forward.py` (no prefix), Health Router — `gateway/ingest_api/routes/health.py` (no prefix) (+15 more)
 
-### Community 350 - "docs/vault"
-Cohesion: 0.24
-Nodes (6): Path, _build_image_targets(), Build the list of container image targets for Trivy image scanning.      Combine, Empty AGENTSHROUD_TRIVY_IMAGES adds no extra entries beyond         gateway + th, Regression guard: AGENTSHROUD_TRIVY_IMAGES used to be the ONLY         source of, TestBuildImageTargets
-
 ### Community 351 - "skills/openclaw"
-Cohesion: 0.07
-Nodes (34): curriculum.md (input requirement), Atlas README, Atlas — Curriculum Architect (README), i-atlas SKILL (Curriculum Architect), Atlas — Curriculum Architect (SKILL), Bloom's Taxonomy, curriculum.md output, curriculum.md Output Template (+26 more)
+Cohesion: 0.15
+Nodes (12): i-value-stream-mapping Skill, 1. Owner & Governance Context, 2. Project, 3. Prime Directive, 4. Development Rules (TDD), 5. Language & Tooling Standards, 6. Runtime Environment (CRITICAL), 7. SSH Development Workflow (+4 more)
 
 ### Community 352 - "Planning Docs"
 Cohesion: 0.10
@@ -3108,8 +3201,8 @@ Cohesion: 0.11
 Nodes (11): EgressTelegramNotifier, Return the Telegram bot token to use for a given agent_id.          If the agent, Send a request to Telegram Bot API (sync, run in executor)., Async wrapper around sync Telegram API call., Send a plain text message — public transport for other gateway         component, Send Telegram message with time-limited approve/deny buttons.          Buttons:, Process inline button callback. Returns action result.          Actions: allow_1, Send answerCallbackQuery to dismiss the button loading state.          Pass ``to (+3 more)
 
 ### Community 354 - ".github/agents"
-Cohesion: 0.13
-Nodes (15): ContentFinding, Scan web content for prompt injection, PII, and hidden payloads.      All findin, Scan content for security issues.          Args:             content: The web co, Scan for prompt injection patterns., Scan HTML for hidden instructions in comments, invisible elements, meta tags., Scan for base64-encoded or otherwise obfuscated payloads., A single finding from content scanning., Detect zero-width character sequences (steganographic attacks). (+7 more)
+Cohesion: 0.06
+Nodes (31): Any, # NOTE: api.telegram.org is intentionally NOT listed here.  The bot is, Analyze URLs for SSRF, data exfiltration, and suspicious patterns., Args:             resolve_dns: If True, resolve hostnames to IPs and check those, Analyze a URL for security issues.          Returns URLAnalysisResult with verdi, Check if hostname is a private/reserved address (SSRF attempt)., Check if an IP address is private/reserved/loopback., Resolve hostname to IP. Returns None on failure.          NOTE: DNS rebinding at (+23 more)
 
 ### Community 355 - "skills/openclaw"
 Cohesion: 0.08
@@ -3120,12 +3213,12 @@ Cohesion: 0.09
 Nodes (23): A. Steve Hay Requirements — ALL Tiers (14 features), AgentShroud™ v0.8.0 "Watchtower" — Complete Feature List, B. Wire ALL Modules Into Request Path (14 features), C. Bug Fixes (9 items), D. Interactive Egress Firewall (7 features), E. Observatory Mode (6 features), G. Pi-hole DNS Stack (9 features), H. Enhanced Audit & Compliance (5 features) (+15 more)
 
 ### Community 358 - "Bot Skill Config"
-Cohesion: 0.11
-Nodes (22): Agent Modification Approach (rejected alternative), ADR-001: Transparent Proxy Decision, ADR-004: Proxy-Side API Key Management, Deployment Modes, Proxy Mode (Recommended), Sidecar Mode (Performance Optimized), Gateway (FastAPI), PII Sanitizer (Presidio + Regex) (+14 more)
+Cohesion: 0.10
+Nodes (24): Agent Modification Approach (rejected alternative), ADR-001: Transparent Proxy Decision, ADR-004: Proxy-Side API Key Management, Deployment Modes, Proxy Mode (Recommended), Sidecar Mode (Performance Optimized), Gateway (FastAPI), PII Sanitizer (Presidio + Regex) (+16 more)
 
 ### Community 359 - "Bot Skill Config"
-Cohesion: 0.07
-Nodes (28): Gateway Management/Control-Plane API (v1.3.0), gateway/ingest_api/main.py, gateway/soc/router.py (SOC Shared Command Layer), gateway/web/api.py (Web control center), MCP Server Integration Guide, OpenClaw Integration Guide (v0.9.0), 11. Automated Operations, 11 Cron Jobs (+20 more)
+Cohesion: 0.09
+Nodes (23): ADR-002: Default-Allow with Comprehensive Logging, Gateway Management/Control-Plane API (v1.3.0), gateway/ingest_api/main.py, gateway/soc/router.py (SOC Shared Command Layer), gateway/web/api.py (Web control center), OpenClaw Integration Guide (v0.9.0), 11. Automated Operations, 11 Cron Jobs (+15 more)
 
 ### Community 360 - "Gateway Test Suite"
 Cohesion: 0.09
@@ -3140,24 +3233,24 @@ Cohesion: 0.13
 Nodes (8): _default_format(), _is_tty(), _tail_ws(), _FakeConnect, _FakeWS, _install_fake_websockets(), Async-iterable WebSocket double., TestTailWS
 
 ### Community 363 - "Planning Docs"
-Cohesion: 0.10
-Nodes (23): DNS Tunneling Detection, SSRF Protection, web_proxy.py, Web Proxy Config Example, telegram_proxy.py (Proxy Layer), TelegramAPIProxy, url_analyzer.py (Proxy Layer), URLAnalysisResult (+15 more)
+Cohesion: 0.11
+Nodes (21): DNS Tunneling Detection, SSRF Protection, telegram_proxy.py (Proxy Layer), TelegramAPIProxy, url_analyzer.py (Proxy Layer), URLAnalysisResult, URLAnalyzer, URLVerdict (+13 more)
 
 ### Community 364 - "Planning Docs"
-Cohesion: 0.13
-Nodes (22): datetime, _adf_paragraph(), build_comment_payload(), build_op_proxy_request(), build_tenant_info_url(), build_weekly_summary(), extract_scrum_items(), fetch_op_secret() (+14 more)
+Cohesion: 0.10
+Nodes (30): datetime, _adf_paragraph(), build_basic_auth_header(), build_comment_payload(), build_comment_url(), build_op_proxy_request(), build_tenant_info_url(), build_weekly_summary() (+22 more)
 
 ### Community 365 - "Gateway Test Suite"
 Cohesion: 0.09
 Nodes (21): BlueBubbles Recommended for iMessage (replaces SSH-based approach), iMessage Error -1743: AppleScript Automation Permission, iMessage Integration Fix (imsg + imessage-exporter), iMessage Permission Fix — Step by Step, iMessage Integration Status (Partially Working), Current Setup (CORRECT), Next Steps, Option 1: Grant Automation Permission (REQUIRED) (+13 more)
 
 ### Community 366 - "README.md"
-Cohesion: 0.09
-Nodes (4): Any, AppleContainerEngine, Container engine backed by Apple's `container` CLI., TestAppleContainerEngine
+Cohesion: 0.22
+Nodes (9): docker/scripts README.md, _dns_warmup_probe(), _model_runtime_ready(), _reconcile_security_critical_cron(), _slack_send(), _telegram_get_me_ready(), _telegram_send(), _telegram_send_photo() (+1 more)
 
 ### Community 367 - "Planning Docs"
-Cohesion: 0.19
-Nodes (19): Any, SecurityEvent, Severity, collect_recent_events(), from_anomaly_alert(), from_audit_chain_entry(), from_dict(), from_egress_attempt() (+11 more)
+Cohesion: 0.23
+Nodes (15): Any, SecurityEvent, Severity, from_anomaly_alert(), from_audit_chain_entry(), from_dict(), from_egress_attempt(), from_pipeline_result() (+7 more)
 
 ### Community 368 - "docs/runbooks"
 Cohesion: 0.11
@@ -3180,16 +3273,16 @@ Cohesion: 0.09
 Nodes (22): Buffered streaming filter (`_filter_outbound_streaming`), Claude Opus intercept, Configuration, Constructor dependencies (dependency injection), Environment variables, Failover chain, Failover controls, Failover notifications (+14 more)
 
 ### Community 373 - "Gateway Test Suite"
-Cohesion: 0.22
-Nodes (3): MCPToolResult, Represents an MCP tool result., TestProxyResultProcessing
+Cohesion: 0.15
+Nodes (4): MCPToolResult, Represents an MCP tool result., TestAuditQueries, TestProxyResultProcessing
 
 ### Community 374 - "Gateway Test Suite"
 Cohesion: 0.07
-Nodes (32): Request, detect_runtime(), Auto-detect which container runtimes are available on this system., get_features_for_runtime(), get_missing_features(), get_security_comparison(), get_security_options(), Validate runtime name to prevent attribute access injection. (+24 more)
+Nodes (30): Request, detect_runtime(), Auto-detect which container runtimes are available on this system., get_features_for_runtime(), get_missing_features(), get_security_comparison(), get_security_options(), Validate runtime name to prevent attribute access injection. (+22 more)
 
 ### Community 375 - "Gateway Test Suite"
-Cohesion: 0.12
-Nodes (13): DisclosureEvent, Track a message and response pair for disclosure analysis.          Args:, Analyze user message for disclosure patterns., Analyze agent response for potential information leaks., Score message based on disclosure patterns., Score agent response for potential leaks., Normalize query for repeated query detection., Add a disclosure event to the session. (+5 more)
+Cohesion: 0.07
+Nodes (26): Any, callable, DisclosureEvent, MultiTurnTracker, Compile regex patterns for detecting disclosure categories., Track a message and response pair for disclosure analysis.          Args:, Analyze user message for disclosure patterns., Analyze agent response for potential information leaks. (+18 more)
 
 ### Community 376 - "docs/vault"
 Cohesion: 0.09
@@ -3212,8 +3305,8 @@ Cohesion: 0.09
 Nodes (21): ADR-007: Zero-Config Security, AgentShroud Deployment Architecture, Apple Containers (macOS), Cloud Provider Secrets, Default Port Allocation, Deployment Validation, DNS Routing Configuration, Docker Runtime (+13 more)
 
 ### Community 381 - "Gateway Test Suite"
-Cohesion: 0.11
-Nodes (21): AgentShroud Hermes System Identity (agents/hermes-soul.md), Security Reviewer Agent, OpenClaw/AgentShroud Bot Identity, marvin (dev host, per openclaw-identity.md), raspberrypi (per openclaw-identity.md), trillian (per openclaw-identity.md), Agents Folder README, God Nodes Analysis (+13 more)
+Cohesion: 0.14
+Nodes (16): AgentShroud Hermes System Identity (agents/hermes-soul.md), Security Reviewer Agent, OpenClaw/AgentShroud Bot Identity, marvin (dev host, per openclaw-identity.md), raspberrypi (per openclaw-identity.md), trillian (per openclaw-identity.md), Agents Folder README, entries (+8 more)
 
 ### Community 382 - "Bot Skill Config"
 Cohesion: 0.12
@@ -3236,8 +3329,8 @@ Cohesion: 0.09
 Nodes (21): Anti-Patterns to Flag, Architecture (C4 / block) — System boundaries and components, ASCII Art (fallback — no renderer available), Brand Theme Block (Mermaid), Core Discipline: Understand → Diagram → Validate → Export, Data Flow — How data moves and transforms, Dependencies, Diagram Types and Data Lakehouse Examples (+13 more)
 
 ### Community 387 - "Gateway Security Module"
-Cohesion: 0.11
-Nodes (13): Any, Match, PromptProtection, Load protected content from configured sources., Add content to the protected registry.          Args:             name: Identifi, Replace a regex match with a redaction placeholder., Add bot container hostnames to the infrastructure detection patterns.          C, Get statistics about the protection system. (+5 more)
+Cohesion: 0.14
+Nodes (8): Test key rotation manager functionality., Create a manager with test configuration., Create a sample credential for testing., Test credential registration., Test credential status reporting., Test health score calculation with all healthy credentials., Test health score with mixed credential states., TestKeyRotationManager
 
 ### Community 388 - "docs/vault"
 Cohesion: 0.14
@@ -3284,8 +3377,8 @@ Cohesion: 0.09
 Nodes (20): In-Process API Key Isolation, Configuration / Environment Variables, Function Details, Generic Key Patterns Detected, Key Classes / Functions, KeyInjector (Class), KeyLeakDetector (Class), KeyVault (Class) (+12 more)
 
 ### Community 399 - "Architecture Docs"
-Cohesion: 0.17
-Nodes (7): Regular members can use medium-risk tools but not private/admin tools., Regular member IS allowed web_search in group context., Regular member IS allowed read/write in group context., Regular member denied gmail (private tool) even in group context., Regular member denied ssh (private tool) in group context., Regular member (non-owner group role) is denied high-risk tools that require app, TestMemberGroupContext
+Cohesion: 0.09
+Nodes (12): Test that memory files are isolated per user., Test that session context is properly generated., Test that session prompts include isolation instructions., Test that owner can access all sessions., Test that session listing respects authorization., Test that trust levels are tracked per user., Test the UserSessionManager for per-user isolation., Create a session manager with temporary workspace. (+4 more)
 
 ### Community 400 - "docs/diagrams"
 Cohesion: 0.09
@@ -3312,16 +3405,16 @@ Cohesion: 0.13
 Nodes (12): Process an approval decision          Args:             request_id: Request UUID, Get all pending (not expired, not decided) items          First expires any stal, Fetch a single queue item by ID          Args:             request_id: Request U, Remove decided (approved/rejected/expired) items older than max_age_seconds., Check all pending items and expire those past timeout          Returns:, Send a JSON message to all connected WebSocket clients          Silently removes, Best-effort JSONL persistence for queue lifecycle events., Persist queue items to disk for restart durability (best effort).          Uses (+4 more)
 
 ### Community 406 - "docs/data"
-Cohesion: 0.09
-Nodes (22): A2APolicyConfig, _BaseAddress, IPv4Address, A2AMethod, A2APolicyDecision, _address_is_public(), _canonicalize_ip_literal(), _int_to_ipv4() (+14 more)
+Cohesion: 0.06
+Nodes (30): _BaseAddress, A2APolicyEngine, Any, IPv4Address, ParsedA2ARequest, Resolve peer identity from the Authorization: Bearer token.          Never falls, Parse a JSON-RPC 2.0 A2A request body into method/task_id/         callback_url., Flatten an A2A Message's `parts` array to plain text for PII         scanning. (+22 more)
 
 ### Community 407 - "Bot Skill Config"
 Cohesion: 0.10
 Nodes (20): action, default_popup, default_title, background, service_worker, browser_specific_settings, gecko, description (+12 more)
 
 ### Community 408 - "Bot Skill Config"
-Cohesion: 0.16
-Nodes (8): cls, Path, Load configuration from environment variables., Load from a config dictionary (e.g. from YAML)., Create config from environment variables and AGENTSHROUD_MODE., Create configuration from environment variables., Build a ManifestEntry by reading *path* from disk., Build a manifest by walking *source* (``~/.llm_settings/``).          Raises:
+Cohesion: 0.18
+Nodes (7): Verify that Hermes-specific egress destinations are in the canonical allowlist., Hermes base image is from nousresearch.com — must be in egress allowlist., Hermes heartbeat uses hc-ping.com for dead-man's switch., Hermes ddgs-based web search requires duckduckgo.com., PR#190 failover search engines must be allowlisted., AI-security research/competitive-intel domains must be allowlisted.          The, TestHermesEgressAllowlist
 
 ### Community 409 - "Bot Skill Config"
 Cohesion: 0.10
@@ -3352,8 +3445,8 @@ Cohesion: 0.10
 Nodes (20): Audit Access, Audit Retention, Audit Trail Standards, Automated Tests, Compliance, Future Enhancements, Incident Playbook, Incident Response (+12 more)
 
 ### Community 416 - "docs/vault"
-Cohesion: 0.20
-Nodes (10): 3.1 Hierarchy, 3.2 Rules, 3.3 Secret Rotation, 3. Secret Management, 5.1 Health Checks, 5.2 Logging, 5.3 Monitoring Checklist, 5. Runtime Monitoring (+2 more)
+Cohesion: 0.10
+Nodes (21): 1.1 Capabilities, 1.2 Seccomp Profile, 1.3 Read-Only Filesystem (Planned), 1.4 Non-Root Execution, 1.5 Resource Limits, 1. Container Hardening, 3.1 Hierarchy, 3.2 Rules (+13 more)
 
 ### Community 417 - "Bot Skill Config"
 Cohesion: 0.10
@@ -3379,10 +3472,6 @@ Nodes (8): _FakeUpstreamWS, _FakeWSConnect, Drive the canvas ASGI app with scrip
 Cohesion: 0.10
 Nodes (4): Verify the kill switch script structure and modes., Kill switch configuration in example configs., TestKillSwitchConfig, TestKillSwitchScript
 
-### Community 423 - "Gateway Test Suite"
-Cohesion: 0.04
-Nodes (19): Tests for TelegramAPIProxy outbound security pipeline integration.  Proves that, Unit tests for deterministic runtime error rewrite helper behavior., Unit tests for outbound target extraction helper used by egress preflight., Unit tests for outbound text field resolution helper behavior., B1: one-shot 400-retry for unbalanced HTML parse errors., First sendMessage returns 400 'can't parse entities'; retry with plain text succ, Persistent 400 returns the error after exactly one retry (no infinite loop)., _send_owner_pending_notice must append Pending Egress Requests when queue non-em (+11 more)
-
 ### Community 424 - "Gateway Test Suite"
 Cohesion: 0.10
 Nodes (20): 1. EgressTelegramNotifier — Little Snitch Inline Buttons, 2. Approval Queue — Missing Telegram Notifications, 3. OutputCanary — Not Passed to Pipeline, 4. EnhancedToolResultSanitizer — Not Passed to Pipeline, 5. LLMProxy — Never Instantiated, 6. Callback Query Handler for Inline Buttons, 7. KeyVault — Instantiated but Not Used, 8. SidecarScanner — External Tool Interface (+12 more)
@@ -3396,24 +3485,24 @@ Cohesion: 0.10
 Nodes (19): Auto-Restart, Crash Diagnosis, Crash Recovery, Data Recovery, Immediate Assessment, Ledger Database, OOM Kill (Exit Code 137), Option 1: Simple Restart (most common fix) (+11 more)
 
 ### Community 427 - "Architecture Docs"
-Cohesion: 0.18
-Nodes (10): ADR-003: Two-Network Container Isolation, Consequences, Context, Decision, Mitigation, Negative Consequences, Network Configuration, Positive Consequences (+2 more)
+Cohesion: 0.10
+Nodes (19): ADR-003: Two-Network Container Isolation, Consequences, Context, Decision, Mitigation, Negative Consequences, Network Configuration, Positive Consequences (+11 more)
 
 ### Community 428 - "Bot Skill Config"
-Cohesion: 0.10
-Nodes (19): Architecture Overview, Configuration, Integration Testing, OpenClaw Integration (Primary Target), 2.1 Design Principle: Transparent Proxy, 2.2 Why Transparent Proxy?, 2.3 Data Flow, 10. Known Gaps / Open Items (+11 more)
+Cohesion: 0.12
+Nodes (16): Architecture Overview, 2.1 Design Principle: Transparent Proxy, 2.2 Why Transparent Proxy?, 2.3 Data Flow, 10. Known Gaps / Open Items, 11. Quick Reference — Switching to Local Mode, 2. Source Files, 3. How Provider Detection Works (`llm_proxy.py:95-153`) (+8 more)
 
 ### Community 429 - "Security Docs"
-Cohesion: 0.09
-Nodes (23): Kill Switch Operations, AgentShroud™ Security Policy, Compliance Alignment, Emergency Response, Layer 1 — Core Pipeline (P0), Layer 2 — Middleware (P1), Layer 3 — Output Protection, Layer 4 — Tool & Agent Control (+15 more)
+Cohesion: 0.12
+Nodes (15): Kill Switch Operations, AgentShroud™ Security Policy, Compliance Alignment, Emergency Response, 7-Layer Security Architecture, Monitor Mode Warning, Reporting a Vulnerability, Response Timeline (+7 more)
 
 ### Community 430 - "branding/colors"
 Cohesion: 0.10
 Nodes (19): Auto-Notify on Completion, Bash Tool Parameters, Batch PR Reviews (parallel army!), Building/Creating, Claude Code, Codex CLI, Coding Agent (bash-first), Flags (+11 more)
 
 ### Community 431 - "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
-Cohesion: 0.12
-Nodes (19): Collaborator Workspace SOUL (Isaiah Jefferson Identity), Bot-Agnostic Architecture (v1.1.0 proof of concept), Patent Pending (US Provisional App No. 64/018,744), AgentShroud Gateway, AgentShroud Hermes — System Identity, Capabilities, Core Behaviors, marvin (lab host) (+11 more)
+Cohesion: 0.10
+Nodes (22): Collaborator Workspace SOUL (Isaiah Jefferson Identity), Bot-Agnostic Architecture (v1.1.0 proof of concept), Patent Pending (US Provisional App No. 64/018,744), AgentShroud Gateway, AgentShroud Hermes — System Identity, Capabilities, Core Behaviors, marvin (lab host) (+14 more)
 
 ### Community 432 - "docs/vault"
 Cohesion: 0.10
@@ -3447,6 +3536,10 @@ Nodes (19): 1. Code Audit, 2. Verify Open Findings, 3. Test Each Module, 4. Coll
 Cohesion: 0.14
 Nodes (12): CompletedProcess, CompletedProcess, _get_gmail_app_password(), Read Gmail app password from 1Password using the gateway's cached session., Run a CLI command and return the result., Start a container. Returns container id., _completed(), OP_SESSION is set — primary op read path. (+4 more)
 
+### Community 440 - "Bot Skill Config"
+Cohesion: 0.04
+Nodes (37): CollaboratorActivityTracker, Path, Path, CollaboratorActivityTracker, _is_fixture_uid(), Return a health snapshot suitable for /status/detail., Append one activity entry for any tracked collaborator or the owner.          Ar, Mirror activity into workspace contributor logs used by daily digests. (+29 more)
+
 ### Community 441 - "Gateway Ingest API"
 Cohesion: 0.18
 Nodes (10): Consequences, Context, Decision, Mitigation, Negative Consequences, Positive Consequences, Progressive Controls, Status (+2 more)
@@ -3461,11 +3554,11 @@ Nodes (20): PromptGuard, Configuration, Dependencies, Environment Variables, Fun
 
 ### Community 444 - "Docker Deploy Scripts"
 Cohesion: 0.02
-Nodes (65): ApprovalResult, EgressApprovalQueue, EgressRule, EgressScope, Thread-safe asyncio queue for managing egress approval requests.      Features:, Initialize the approval queue.          Args:             rules_file: Path to pe, Set optional event bus for approval telemetry., Pre-approve known service domains at startup without interactive prompts. (+57 more)
+Nodes (68): _OutboundScan, Result of the shared outbound text security scan.      processed: a scan path (c, ApprovalMode, EgressApprovalQueue, EgressRule, EgressScope, Thread-safe asyncio queue for managing egress approval requests.      Features:, Initialize the approval queue.          Args:             rules_file: Path to pe (+60 more)
 
 ### Community 445 - "Gateway Test Suite"
-Cohesion: 0.18
-Nodes (6): GroupRole, Set or update the role for a user in a specific group., Return all user→role mappings for a group., Per-group roles for Telegram group workspace members.      Hierarchy (highest to, Numeric rank for comparison — higher is more privileged., Return True if this role is permitted to REQUEST high-risk tools.          OWNER
+Cohesion: 0.27
+Nodes (11): i-bs: Brand System (referenced), i-mm SKILL (Mindmap Architect), i-ti README, i-ti SKILL (Diagram Generation), i-tw README, i-tw SKILL (Technical Writing), i-ui: UI Expert, i-ux: UX Information Architecture (referenced) (+3 more)
 
 ### Community 446 - "skills/openclaw"
 Cohesion: 0.10
@@ -3476,8 +3569,8 @@ Cohesion: 0.10
 Nodes (19): Configuration / Environment Variables, Function Details, Key Classes / Functions, Purpose, Related, Responsibilities, SubagentEventType (Enum: SPAWNED/TERMINATED/KILLED/TOOL_USED/TRUST_VIOLATION/LIMIT_EXCEEDED), SubagentMonitor (Class) (+11 more)
 
 ### Community 448 - "docs/vault"
-Cohesion: 0.15
-Nodes (9): get_sbom(), get_trivy_summary(), Score domain 3: Supply Chain (0-5).      0=no SBOM, 2=SBOM exists, 3=SBOM has pa, Return latest Trivy scan summary from saved reports.      When Trivy is installe, Return the latest SBOM (Software Bill of Materials) as parsed JSON., _score_supply_chain(), TestGetSbom, TestGetTrivySummary (+1 more)
+Cohesion: 0.13
+Nodes (11): get_sbom(), get_trivy_summary(), Score domain 3: Supply Chain (0-5).      0=no SBOM, 2=SBOM exists, 3=SBOM has pa, Score domain 29: AI Model & Supply Chain Integrity (0-5). MITRE ATLAS, OWASP LLM, Return latest Trivy scan summary from saved reports.      When Trivy is installe, Return the latest SBOM (Software Bill of Materials) as parsed JSON., _score_ai_model_supply_chain(), _score_supply_chain() (+3 more)
 
 ### Community 449 - "docs/requirements"
 Cohesion: 0.11
@@ -3486,10 +3579,6 @@ Nodes (10): check_upstream_cves(agent_id=...) selects that agent's OWN repo + li
 ### Community 450 - "scripts/sync-llm-settings.sh"
 Cohesion: 0.10
 Nodes (10): Missing server_name or tool_name should return 422., Response should include processing_time_ms., x-agentshroud-user-id header must override spoofable body agent_id., Body agent_id is used only when trusted header is absent., Body-only owner identity must be rejected to prevent impersonation., A clean tool call with no threats should be allowed (200)., Tool call with injection pattern in parameters should return 403., POST /mcp/proxy without auth should return 401. (+2 more)
-
-### Community 452 - "Gateway Test Suite"
-Cohesion: 0.10
-Nodes (7): hermes_dashboard_proxy(), Reverse-proxy the Hermes Agent dashboard through the gateway., hermes_dashboard_proxy must reject traversal sequences before forwarding., hermes_dashboard_proxy raises HTTPException(400) for traversal in path., TestHermesDashboardPathTraversal, Static response builder for collaborator conceptual queries., TestBuildCollaboratorSafeInfoResponse
 
 ### Community 453 - "Gateway Test Suite"
 Cohesion: 0.10
@@ -3500,8 +3589,8 @@ Cohesion: 0.12
 Nodes (18): ADR-005: SHA-256 Hash Chain Audit Integrity, Consequences, Context, Decision, Hash Chain Structure, Implementation Details, Negative Consequences, Positive Consequences (+10 more)
 
 ### Community 455 - "Gateway Test Suite"
-Cohesion: 0.08
-Nodes (24): ADR-002: Default-Allow with Comprehensive Logging, Enforce-by-Default Policy (all modules mode: enforce, v0.8.0+), Steve Hay STPA-Sec Assessment (Feb 2026) - 0% enforcement against vanilla OpenClaw, ADR-009 supersedes ADR-002 (Default-Allow Security Philosophy), ADR-009: Enforce-by-Default Security Philosophy, Configuration, Consequences, Context (+16 more)
+Cohesion: 0.11
+Nodes (18): Enforce-by-Default Policy (all modules mode: enforce, v0.8.0+), Steve Hay STPA-Sec Assessment (Feb 2026) - 0% enforcement against vanilla OpenClaw, ADR-009 supersedes ADR-002 (Default-Allow Security Philosophy), ADR-009: Enforce-by-Default Security Philosophy, Configuration, Consequences, Context, Decision (+10 more)
 
 ### Community 456 - "branding/typography"
 Cohesion: 0.11
@@ -3548,8 +3637,8 @@ Cohesion: 0.11
 Nodes (18): Assigning Work, CHANGELOG.md Updates, Continuity Files, Definition of Done (from CLAUDE.md), Escalation, Known Risks, Project Roadmap, Quick Status (for chat/Telegram) (+10 more)
 
 ### Community 467 - "Bot Container Scripts"
-Cohesion: 0.06
-Nodes (28): Any, datetime, Path, categorize_alerts(), configure_rules(), FalcoAlertWatcher, is_agentshroud_rule(), parse_alert() (+20 more)
+Cohesion: 0.07
+Nodes (29): Any, datetime, Path, categorize_alerts(), configure_rules(), FalcoAlertWatcher, generate_summary(), is_agentshroud_rule() (+21 more)
 
 ### Community 468 - "Bot Skill Config"
 Cohesion: 0.11
@@ -3584,16 +3673,16 @@ Cohesion: 0.14
 Nodes (4): _basic(), _http_scope(), TestCanvasAuthHelpers, TestCanvasHTTP
 
 ### Community 476 - "Gateway Test Suite"
-Cohesion: 0.11
-Nodes (19): 1. Command Injection, 1. Pre-populate known_hosts, 2. Host Spoofing / Man-in-the-Middle, 2. Network Segmentation, 3. Credential Theft, 3. Key Rotation, 4. Privilege Escalation, 4. Rate Limiting (+11 more)
+Cohesion: 0.22
+Nodes (9): 1. Command Injection, 2. Host Spoofing / Man-in-the-Middle, 3. Credential Theft, 4. Privilege Escalation, 6. Audit Log Tampering / PII Leakage, Comparison: Direct SSH vs. AgentShroud SSH Proxy, Risk Summary, SSH Security Review (+1 more)
 
 ### Community 477 - "docs/vault"
-Cohesion: 0.11
-Nodes (9): GroupRoleResolver correctly maps Telegram user IDs to per-group roles., owner_in_group resolves to GroupRole.OWNER., Regular member resolves to GroupRole.MEMBER., Read-only user resolves to GroupRole.READ_ONLY., User not in role map defaults to GroupRole.READ_ONLY (deny-by-default)., Unknown group_chat_id defaults to GroupRole.READ_ONLY., email_sending is recognized as a high-risk tool., web_search is NOT a high-risk tool. (+1 more)
+Cohesion: 0.18
+Nodes (6): domain_matches(), Return True if *domain* matches any pattern (exact or ``*.`` wildcard).      Sin, Get the effective allowlist for a specific agent., Check if a domain matches the denylist., Check if domain matches any pattern in the list (supports wildcards)., Public: does *domain* match any pattern in the effective default allowlist?
 
 ### Community 478 - "docs/vault"
 Cohesion: 0.01
-Nodes (138): LogRecord, GatewayConfig, PIISanitizer, LedgerConfig, Data ledger configuration, DataLedger, Create a new ledger entry          Args:             source: Source identifier (, Fetch a single ledger entry by ID          Args:             entry_id: Entry UUI (+130 more)
+Nodes (122): Any, FastAPI, Path, LedgerConfig, Data ledger configuration, DataLedger, Create a new ledger entry          Args:             source: Source identifier (, Forget this' - permanently delete a ledger entry          Implements right to er (+114 more)
 
 ### Community 479 - "docs/vault"
 Cohesion: 0.16
@@ -3640,12 +3729,12 @@ Cohesion: 0.11
 Nodes (18): AgentShroud Development Team — Agile Structure, Collaborators (Advisory — Read-Only), Communication & Tooling, Container Architecture, Data Engineers / Analysts, Development Environment, Development Team, Development Workflow (+10 more)
 
 ### Community 490 - "Bot Skill Config"
-Cohesion: 0.11
-Nodes (18): presidio-analyzer / presidio-anonymizer Dependencies, A2A (Agent-to-Agent) Protocol Threat Analysis, Assets Under Protection, AgentShroud Threat Model (STRIDE Analysis), E — Elevation of Privilege: Cross-Process Isolation Break, Executive Summary, I — Information Disclosure / Elevation of Privilege: Unsandboxed Live-Session Injection, I — Information Disclosure: SSRF via Push-Notification Callback URLs (+10 more)
+Cohesion: 0.20
+Nodes (10): presidio-analyzer / presidio-anonymizer Dependencies, Assets Under Protection, AgentShroud Threat Model (STRIDE Analysis), Executive Summary, Mitigation Coverage Matrix, System Components in Scope, Threat Feeds, Threat Intelligence Integration (+2 more)
 
 ### Community 491 - "docs/api"
-Cohesion: 0.05
-Nodes (42): 11. Ledger Recording, 1. MCP Proxy Wrapper (Bot Side), 2. Authentication (Gateway Entry), 3. Middleware Manager, 4. Input Normalization, 5. PII Sanitization, 6. Prompt Injection Defense, 9. Proxy Routing (+34 more)
+Cohesion: 0.06
+Nodes (33): 10. Approval Queue, 11. Ledger Recording, 1. MCP Proxy Wrapper (Bot Side), 2. Authentication (Gateway Entry), 3. Middleware Manager, 4. Input Normalization, 5. PII Sanitization, 6. Prompt Injection Defense (+25 more)
 
 ### Community 492 - "branding/INDEX.md"
 Cohesion: 0.14
@@ -3672,7 +3761,7 @@ Cohesion: 0.16
 Nodes (16): Verify an image signature using cosign keyless OIDC verification.      Args:, Verify multiple image signatures concurrently.      Returns:         Dict mappin, verify_image(), verify_images(), _instant_wait_for(), verify_images: exception from one task is caught, others continue., Test replacement for asyncio.wait_for — awaits coroutine directly., Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un- (+8 more)
 
 ### Community 498 - "docker/falco"
-Cohesion: 0.19
+Cohesion: 0.18
 Nodes (3): install_log_sanitizer(), Install the log sanitizer on all existing loggers., TestLogSanitizer
 
 ### Community 499 - "Bot Skill Config"
@@ -3704,8 +3793,8 @@ Cohesion: 0.11
 Nodes (8): Unauthenticated request is rejected., Null content is handled gracefully., Request missing required server_name is rejected with 422., Response includes processing_time_ms., Body-only owner identity must be rejected to prevent impersonation., A result with no threats should be accepted and audited (200)., A result containing PII is audited and redacted — never blocked (results are nev, TestMCPResultEndpoint
 
 ### Community 506 - "Planning Docs"
-Cohesion: 0.22
-Nodes (7): ProtectedContent, Scan text for protected content and return redacted version.          Args:, Calculate similarity between text and protected content., Redact text that fuzzy matches protected content., A piece of content that should be protected from disclosure., Result of scanning and redacting content., RedactionResult
+Cohesion: 0.18
+Nodes (5): Return all groups the user belongs to., Return all projects accessible to the user via group membership., Return the first project accessible to a user (primary project)., Return the safe_response_prefix for the first group that the user belongs to, Return the effective collab_mode for a user.          Resolution order:
 
 ### Community 507 - "docs/project"
 Cohesion: 0.11
@@ -3752,8 +3841,8 @@ Cohesion: 0.12
 Nodes (16): Cost & timeline (indicative), Readiness assessment — existing controls vs SOC 2 Common Criteria, Recommendation, SOC 2 Type II — Attestation Path & Go/No-Go Scoping, Tracking, What SOC 2 Type II actually requires, Why this is on the board, 10.1 Core Runtime Dependencies (+8 more)
 
 ### Community 518 - "Gateway Test Suite"
-Cohesion: 0.07
-Nodes (28): HTTP 400 — Unknown MCP Server, HTTP 403 — MCP Tool Permission Denied, HTTP 429 — MCP Rate Limit Exceeded, HTTP 502 — MCP Server Unreachable, MCP Proxy Errors, MCP Proxy Wrapper Issues (Bot Side), Related Notes, Credential Isolation (gateway as sole credential holder via op-proxy) (+20 more)
+Cohesion: 0.12
+Nodes (17): Credential Isolation (gateway as sole credential holder via op-proxy), Falco Rule: Container Shell Spawned, Falco Rule: Unexpected Outbound Connection, Falco Rule: Privilege Escalation Attempt, Falco Runtime Security (eBPF kernel monitoring), Falco Rule: Secret File Access, Docker Compose --profile full (activates Hermes + HCI), Docker Network Isolation (agentshroud-internal 172.20.0/16, agentshroud-isolated 172.21.0/16) (+9 more)
 
 ### Community 519 - "Planning Docs"
 Cohesion: 0.12
@@ -3768,8 +3857,8 @@ Cohesion: 0.12
 Nodes (16): Follow-up (within 48 hours), Glue Job Rollback, Immediate (within 2 hours), Incident Response Workflow, Phase 1: ASSESS (Max 5 minutes), Phase 2: COMMUNICATE (Concurrent with assess), Phase 3: MITIGATE (Rollback First!), Post-Incident (+8 more)
 
 ### Community 522 - "AGENTS.md"
-Cohesion: 0.18
-Nodes (13): Container runtime auto-detection contract (SCRUM-92), _cr_plugin_works(), detect_container_runtime(), scripts/asb (build/deploy helper, secret extraction), deploy_ref(), die(), log(), run() (+5 more)
+Cohesion: 0.57
+Nodes (6): deploy_ref(), die(), log(), run(), run_in_repo(), canary-deploy.sh script
 
 ### Community 523 - "Planning Docs"
 Cohesion: 0.13
@@ -3780,8 +3869,8 @@ Cohesion: 0.12
 Nodes (16): Config Keys Read, Environment Variables Used, Extended v0.8.0 Modules, FileSandbox Configuration (hardcoded in __init__), Imports From / Exports To, Key Classes / Functions, Known Issues / Notes, Memory Security (+8 more)
 
 ### Community 525 - "CONTRIBUTING.md"
-Cohesion: 0.23
-Nodes (11): _release_telegram_lock() (graceful Telegram session handoff), HERMES_HOME, HOME, _telegram_bot_token(), _telegram_get_me_ready(), _telegram_send(), _telegram_send_photo(), XDG_CACHE_HOME (+3 more)
+Cohesion: 0.26
+Nodes (10): HERMES_HOME, HOME, _telegram_bot_token(), _telegram_get_me_ready(), _telegram_send(), _telegram_send_photo(), XDG_CACHE_HOME, XDG_DATA_HOME (+2 more)
 
 ### Community 526 - "Gateway Proxy Layer"
 Cohesion: 0.12
@@ -3812,8 +3901,8 @@ Cohesion: 0.18
 Nodes (7): main(), package_skill(), Package a skill folder into a .skill file.      Args:         skill_path: Path t, Basic validation of a skill, validate_skill(), TestPackageSkillSecurity, TestCase
 
 ### Community 533 - "gateway/README.md"
-Cohesion: 0.11
-Nodes (10): Test memory lifecycle management., Test PII detection in memory content., Test prompt injection detection., Test content sanitization removes threats., Test validation before writing to memory files., Test retention policy for daily notes., Test MEMORY.md size limit enforcement., Test complete lifecycle maintenance run. (+2 more)
+Cohesion: 0.05
+Nodes (23): manager(), Test earning and losing trust., Agent should be promoted when score crosses threshold., Agent should be demoted on violations., Score should not go below 0., Test trust history tracking., Test trust survives restart., Create a temporary trust database. (+15 more)
 
 ### Community 534 - "Gateway Test Suite"
 Cohesion: 0.20
@@ -3832,8 +3921,8 @@ Cohesion: 0.18
 Nodes (6): get_openscap_summary(), _load_latest_json(), Load the most recent JSON report file from a directory.      Args:         direc, Return latest OpenSCAP compliance summary from saved reports., TestGetOpenscapSummary, TestLoadLatestJson
 
 ### Community 538 - "docs/operations"
-Cohesion: 0.22
-Nodes (9): AgentShroud Security Scripts Reference, Best Practices, killswitch.sh doesn't confirm, scan.sh, scan.sh reports missing OpenSCAP, Script Permissions, Troubleshooting, verify-security.sh (+1 more)
+Cohesion: 0.08
+Nodes (24): Container Hardening Controls (cap_drop ALL, seccomp, read-only FS, non-root, resource limits), Secret Management Hierarchy (1Password → Docker Secrets → env vars for non-sensitive only), killswitch.sh (freeze/shutdown/disconnect emergency response), scan.sh (OpenSCAP + Docker Bench compliance scan), verify-security.sh (13-check security script), AgentShroud Security Scripts Reference, Alerting, Automation Examples (+16 more)
 
 ### Community 539 - "docs/operations"
 Cohesion: 0.12
@@ -3860,8 +3949,8 @@ Cohesion: 0.15
 Nodes (17): Dashboard Agent Trust Levels Panel, Dashboard API Client (api-client.js), Dashboard Audit Trail Panel, Dashboard Kill Switch Panel (emergency termination), Dashboard Live Events Panel (WebSocket), /proxy/status Endpoint (blocked_count), Dashboard Security Modules Panel, Dashboard WebSocket Connection (+9 more)
 
 ### Community 545 - "docs/vault"
-Cohesion: 0.12
-Nodes (16): 10. Approval Queue, 2.1 Docker Networks, 2.2 Exposed Ports, 2.3 Tailscale Network, 2. Network Isolation, 1. Container Isolation, 2. Capability Dropping, 3. Resource Limits (+8 more)
+Cohesion: 0.25
+Nodes (8): 2.1 Docker Networks, 2.2 Exposed Ports, 2.3 Tailscale Network, 2. Network Isolation, 6. DNS Filter, 7. TLS Termination and Inspection, 8. Network Rate Limiter, Layer 2: Network Security (4 Modules)
 
 ### Community 546 - "Gateway Test Suite"
 Cohesion: 0.12
@@ -3896,8 +3985,8 @@ Cohesion: 0.12
 Nodes (14): Purpose, Related Skills, Usage, GitHub Actions Best Practices, Quality Gates  (execution order), Review Flags  (block the merge), Role, Skill: CI/CD Pipeline Advisor (CICD) (+6 more)
 
 ### Community 554 - "shortcuts/README.md"
-Cohesion: 0.10
-Nodes (20): "401 Unauthorized", "Calendar/Contacts not found", Calendar Operations, "Connection timeout", Create Event, Create Note, Delete Event, iCloud Services (+12 more)
+Cohesion: 0.08
+Nodes (25): "401 Unauthorized", Add Contact, "Calendar/Contacts not found", Calendar Operations, "Connection timeout", Contact Operations, Create Event, Create Note (+17 more)
 
 ### Community 555 - "Gateway Test Suite"
 Cohesion: 0.12
@@ -3944,16 +4033,16 @@ Cohesion: 0.12
 Nodes (15): 1. Clone the Repository, 2. Install Docker, 3. Set Up Secrets, 4. Configure AgentShroud, 5. Build and Start, 6. Verify, Architecture Notes, Deploying AgentShroud on Linux (x86_64 / aarch64) (+7 more)
 
 ### Community 566 - "Bot Skill Config"
-Cohesion: 0.12
-Nodes (16): 3.10 Egress Filtering — Phase 7, 3.11 Drift Detection — Phase 7, 3.12 Container Hardening, 3.13 MCP Proxy Layer — Phase 9, 3.14 Web Traffic Proxy — Phase 10, 3.15 Full Egress Control — Phase 11, 3.1 PII Sanitizer, 3.2 Audit Ledger (+8 more)
+Cohesion: 0.06
+Nodes (30): 12. Roadmap, 13. Conclusion, 1.1 The New Attack Surface, 1.2 The Industry Gap, 1.3 Threat Model, 1. The Problem: Unsecured AI Agents, 3.10 Egress Filtering — Phase 7, 3.11 Drift Detection — Phase 7 (+22 more)
 
 ### Community 567 - "Bot Skill Config"
 Cohesion: 0.13
 Nodes (8): Return (field_name, text_value) for Telegram-style outbound payloads., Thin wrapper: sets per-request bot identity in contextvars so local replies, Proxy a single Telegram API request.          For getUpdates responses: scan eac, Suppress repeated startup/shutdown system notices in short windows., True when filtered payload should be dropped instead of forwarded., Return the @username (without @) for the given bot_id.          Looks up ``_bot_, Send a rate-limited activity mirror to the owner chat for collaborator messages., Forward a Telegram file download and return a raw-binary sentinel dict.
 
 ### Community 568 - "Bot Skill Config"
-Cohesion: 0.12
-Nodes (15): Constraints, Evidence, Flip core security modules from monitor to enforce mode, Problem, Remediation, Root Cause, Severity, Step 1: Change default mode in gateway configuration (+7 more)
+Cohesion: 0.15
+Nodes (13): Constraints, Evidence, Flip core security modules from monitor to enforce mode, Problem, Remediation, Root Cause, Severity, Step 1: Change default mode in gateway configuration (+5 more)
 
 ### Community 569 - "Bot Skill Config"
 Cohesion: 0.12
@@ -3980,12 +4069,12 @@ Cohesion: 0.16
 Nodes (18): [0.2.0] - 2026-02-17, Added, Added, Added, Added, Added, Changed, P1: HTTP CONNECT Proxy (PR #24) (+10 more)
 
 ### Community 575 - "Docker Deploy Scripts"
-Cohesion: 0.29
-Nodes (5): Any, End-to-end: register the bridge on a real ResourceGuard, trigger         its ale, The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher., Recreate the lifespan bridge closure verbatim from gateway/ingest_api/lifespan.p, TestResourceGuardAlertBridge
+Cohesion: 0.20
+Nodes (9): Atlas — Curriculum Architect, Input Requirements, Output Format, Persona, Quality Checklist, Role, System Prompt, User Prompt Template (+1 more)
 
 ### Community 576 - "skills/openclaw"
-Cohesion: 0.12
-Nodes (16): 1. Detection — What Triggers an Incident, 2. Severity Classification, 3. Response Procedures, 4. Kill Switch Usage Guide, 5. Evidence Preservation, 6. Post-Incident Review Template, 8. Contacts and Escalation, Audit Ledger Export (+8 more)
+Cohesion: 0.11
+Nodes (19): Communication Templates, 1. Detection — What Triggers an Incident, 2. Severity Classification, 3. Response Procedures, 4. Kill Switch Usage Guide, 5. Evidence Preservation, 6. Post-Incident Review Template, 8. Contacts and Escalation (+11 more)
 
 ### Community 577 - "Bot Skill Config"
 Cohesion: 0.12
@@ -4013,7 +4102,7 @@ Nodes (15): Canonical request (copy-paste `curl` to validate before building Sho
 
 ### Community 583 - "docs/vault"
 Cohesion: 0.20
-Nodes (5): register_system_prompt + verify_system_prompt should succeed., Verifying a tampered prompt should return False., Empty prompt should still register and verify cleanly., Explicit key parameter should override session key., TestSystemPromptHMAC
+Nodes (10): 9.1 Log Sanitizer (gateway/security/log_sanitizer.py), 9.2 Environment Leakage Guard (gateway/security/env_guard.py), 9.3 Context Window Poisoning Defense (gateway/security/context_guard.py), 9.4 Git Hook Guard (gateway/security/git_guard.py), 9.5 Metadata Channel Guard (gateway/security/metadata_guard.py), 9.6 Network Isolation Validator (gateway/security/network_validator.py), 9.7 Resource Exhaustion Guard (gateway/security/resource_guard.py), 9.8 Tool Result Injection Scanning (MCP Inspector Enhancement) (+2 more)
 
 ### Community 584 - "Planning Docs"
 Cohesion: 0.25
@@ -4024,8 +4113,8 @@ Cohesion: 0.12
 Nodes (9): Regression tests for the JSON/form/multipart scan unification.      Each test pi, Pipeline-sanitized sendPhoto captions must replace the caption itself., Pipeline-blocked caption payloads must have the caption replaced., Owner-ID-redacted form text must still reach the pipeline scan.          Regress, Unknown raw tool-call JSON in form bodies is quarantined for audit.          Tig, Markdown exfil links are stripped from form bodies (parity with JSON)., Markdown exfil links are stripped from multipart captions (parity)., Fail-closed substitution must target the resolved text field.          Regressio (+1 more)
 
 ### Community 586 - "docs/runbooks"
-Cohesion: 0.20
-Nodes (4): Tests for indirect prompt injection detection in tool results., Explicit ignore-instructions payload embedded in a tool result., Tool result scan blocks at score ≥ 0.6 vs direct scan threshold of 0.8., TestToolResultScan
+Cohesion: 0.10
+Nodes (14): Any, LogRecord, test_alert_store_push_and_summary(), Alert, alerts_summary(), AlertStore, _check_host(), logs_recent() (+6 more)
 
 ### Community 587 - "docs/runbooks"
 Cohesion: 0.13
@@ -4033,11 +4122,11 @@ Nodes (14): After Disconnect, After Freeze, After Shutdown, Kill Switch Actions,
 
 ### Community 588 - "docs/vault"
 Cohesion: 0.22
-Nodes (9): 3A.1: Re-enable seccomp profiles ✅, 3A.2: Make OpenClaw container read-only ✅, 3A.3: Remove NET_RAW capability ✅, 3A.4: Add mDNS/Bonjour disable ✅, 3A.5: Move gateway password to Docker secrets ✅, 3A.6: Create verify-security.sh ✅, 3A.7: Create scan.sh (OpenSCAP) ✅, 3A.8: Change DM policy to allowlist ✅ (+1 more)
+Nodes (8): Test the /manage/credentials/status endpoint., Test credential rotation policy configuration., Test the POST /manage/credentials/rotate/{credential_id} endpoint., Test default policy has reasonable values., test_credentials_health_endpoint(), test_credentials_status_endpoint(), test_rotate_credential_endpoint(), TestCredentialRotationPolicy
 
 ### Community 589 - "Gateway Test Suite"
-Cohesion: 0.10
-Nodes (19): ADR-001: Transparent Proxy vs Agent Modification, Agent Modification Cons:, Agent Modification Pros:, Consequences, Context, Decision, Key Considerations, Mitigation Strategies (+11 more)
+Cohesion: 0.13
+Nodes (14): ADR-001: Transparent Proxy vs Agent Modification, Agent Modification Cons:, Agent Modification Pros:, Consequences, Context, Decision, Key Considerations, Mitigation Strategies (+6 more)
 
 ### Community 590 - "Security Docs"
 Cohesion: 0.13
@@ -4104,8 +4193,8 @@ Cohesion: 0.15
 Nodes (14): Gateway /mcp/proxy and /mcp/result endpoints, auditResult(), child, [command, ...commandArgs], dashDash, gatewayPost(), http, https (+6 more)
 
 ### Community 606 - "Gateway Test Suite"
-Cohesion: 0.17
-Nodes (10): ChainMatch, Represents a single tool call., A detected suspicious chain., Analyze a tool call for suspicious chain patterns.          Args:             se, Detect if current call completes a suspicious pattern., Check if a call matches the source pattern, including parameter analysis., Calculate risk score for a detected chain., Trigger alert callbacks for a detected chain. (+2 more)
+Cohesion: 0.21
+Nodes (8): ChainPattern, Represents a single tool call., Definition of a suspicious tool call pattern., Detect if current call completes a suspicious pattern., Check if a call matches the source pattern, including parameter analysis., Calculate risk score for a detected chain., Add a new chain pattern at runtime., ToolCall
 
 ### Community 607 - "Bot Skill Config"
 Cohesion: 0.18
@@ -4184,16 +4273,16 @@ Cohesion: 0.13
 Nodes (13): Configuration / Environment Variables, Default Allowlist, Default Denylist Categories, egress_config.py, EgressFilterConfig.get_effective_allowlist(agent_id), EgressFilterConfig.is_denylisted(domain), EgressFilterConfig._matches_any_pattern(domain, patterns), Function Details (+5 more)
 
 ### Community 626 - "Docker Deploy Scripts"
-Cohesion: 0.13
-Nodes (14): AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist, Cost Estimate, Current System Profile, Next Steps After Setup, Phase 1: OS Hardening & Cleanup, Phase 4: Project Structure, Phase 5: CI/CD Pipeline (GitHub Actions), Phase 6: Docker Configuration (+6 more)
+Cohesion: 0.06
+Nodes (32): Add Swap File, Additional Dev Tools, AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist, Backup Strategy, Bot Account (Manual Setup Required), Bot Account (You Do This Manually), Clone Repo on Pi, Cooling Recommendations (+24 more)
 
 ### Community 627 - "Gateway Test Suite"
 Cohesion: 0.17
 Nodes (13): fs, HERMES_INIT, OC_INIT, os, path, read(), readHermesMcpServers(), REPO (+5 more)
 
 ### Community 628 - "docs/vault"
-Cohesion: 0.09
-Nodes (16): Gateway /credentials/op-proxy endpoint, docker/scripts README.md, _dns_warmup_probe(), _model_runtime_ready(), _reconcile_security_critical_cron(), _slack_send(), _telegram_get_me_ready(), _telegram_send() (+8 more)
+Cohesion: 0.11
+Nodes (10): Gateway /credentials/op-proxy endpoint, Active Projects, Key Facts, Pending Tasks, init-openclaw-config.sh script, patch-anthropic-sdk.sh script, patch-slack-sdk.sh script, patch-telegram-sdk.sh script (+2 more)
 
 ### Community 629 - "docs/vault"
 Cohesion: 0.30
@@ -4204,8 +4293,8 @@ Cohesion: 0.25
 Nodes (8): Check Status, Hermes / HCI, Port Reference, Start the Stack, Stop the Stack, Test Chat, Usage, View Logs
 
 ### Community 631 - "Gateway Test Suite"
-Cohesion: 0.29
-Nodes (7): Docker Secrets Management (deployment doc), Docker Secrets Structure (/run/secrets/), Docker Compose (infra diagram), Docker Secrets (infra diagram), Named Docker Volumes, agentshroud-internal network (172.20.0.0/16), agentshroud-isolated network (172.21.0.0/16)
+Cohesion: 0.20
+Nodes (6): BT-H4 (reverse): Writing to Hermes workspace does not bleed into OpenClaw., BT-H1: SharedMemoryManager.get_user_memory must accept a bot_id parameter., Finding BT-H1/BT-H2/BT-H3: SharedMemoryManager must not collapse bot workspaces., BT-H3: The filesystem paths for openclaw and hermes sessions differ.          Re, BT-H4: Writing to the openclaw workspace must not leak into the hermes workspace, TestBotIdIsolationInSharedMemory
 
 ### Community 633 - "Gateway Test Suite"
 Cohesion: 0.20
@@ -4228,8 +4317,8 @@ Cohesion: 0.14
 Nodes (13): Animation Guidelines (motion principles, timing tokens), AgentShroud Brand Guidelines, Brand Identity, Color Profiles, Contact, File Formats & Deliverables, Hierarchy, Logo Files (+5 more)
 
 ### Community 638 - "browser-extension/background.js"
-Cohesion: 0.15
-Nodes (14): clipPage(), forwardUrl(), loadConfig(), notify(), reportResult(), icon48.png — solid blue (#2b6cff) placeholder icon, no logo/text, save(), savedEl (+6 more)
+Cohesion: 0.24
+Nodes (10): clipPage(), forwardUrl(), loadConfig(), notify(), reportResult(), icon48.png — solid blue (#2b6cff) placeholder icon, no logo/text, popup.html (toolbar popup UI), send() (+2 more)
 
 ### Community 639 - "docs/compliance"
 Cohesion: 0.14
@@ -4240,8 +4329,8 @@ Cohesion: 0.14
 Nodes (13): author, dependencies, playwright, description, keywords, name, auditLogging, filesystemAccess (+5 more)
 
 ### Community 641 - "Bot Skill Config"
-Cohesion: 0.22
-Nodes (9): Action Feed, Data Ledger Viewer, Features, Kill Switch, Memory Browser, Network Inspector, Mode 1: freeze, Mode 2: shutdown (+1 more)
+Cohesion: 0.14
+Nodes (13): Action Feed, AgentShroud Dashboard, Components (to be implemented in Week 2), Data Ledger Viewer, Features, Implementation Status, Kill Switch, Memory Browser (+5 more)
 
 ### Community 642 - "Bot Skill Config"
 Cohesion: 0.14
@@ -4276,8 +4365,8 @@ Cohesion: 0.22
 Nodes (8): StreamReader, StreamWriter, Handle a single incoming client connection., Resolve source IP to a bot_id; lazily extends registry via DNS.          The sta, Parse CONNECT request, check allowlist, relay or block., Copy bytes from reader to writer until EOF.          ``idle_timeout`` (default 1, Copy bytes from reader to writer, sampling the first scan_limit bytes         fo, Write data to a temp file and scan with ClamAV.          Runs in a thread execut
 
 ### Community 650 - "Gateway Test Suite"
-Cohesion: 0.11
-Nodes (10): _contains_internal_approval_banner must only fire on real egress banners., Common LLM prose with 'risk:', 'tool:', 'id:' must NOT trigger the matcher., Generic 'domain:' mention without the egress emoji must not trigger., The canonical 🌐 *Egress Request* header from TelegramEgressNotifier must match., Inline-keyboard callback tokens must always match (egress_allow_always_<uuid>)., egress_deny_ callback token must match., Outbound filter must redact egress banners but NOT call _send_owner_admin_notice, When outbound text matches the banner, text is replaced but owner is NOT notifie (+2 more)
+Cohesion: 0.03
+Nodes (30): _make_sanitizer(), Underscore-delimited embedding_provider wording should still trigger rewrite., Collaborator form payload with raw tool/file leakage markers should be blocked., Collaborators should not receive internal egress approval banners., Wording variants for healthcheck SKILL.md sandbox errors should be rewritten., If pipeline crashes, owner messages should still go through., Memory provider runtime errors should rewrite when payload uses message field., Form payload embedding/provider hints without 'error' should keep original text. (+22 more)
 
 ### Community 651 - "branding/guidelines"
 Cohesion: 0.14
@@ -4332,12 +4421,12 @@ Cohesion: 0.14
 Nodes (12): consent_framework.py, ConsentFramework.add_to_blacklist(command) / remove_from_blacklist(command), ConsentFramework.add_to_whitelist(command) / remove_from_whitelist(command), ConsentFramework.validate_config(config), Function Details, Key Classes / Functions, Purpose, Related (+4 more)
 
 ### Community 665 - "Gateway Test Suite"
-Cohesion: 0.29
-Nodes (7): Migration Path (SSH → Distributed Node), Step 1: Verify Option 1 Working, Step 2: Install OpenClaw on Pi, Step 3: Pair Nodes, Step 4: Test Basic Communication, Step 5: Migrate Workflows, Step 6: Deprecate SSH (Optional)
+Cohesion: 0.22
+Nodes (9): MCP Server Integration Guide, MCP Proxy, Web Proxy, mcp-config.yml, http_proxy.py (HTTP CONNECT :8181, domain allowlist), mcp_proxy.py (MCP tool call gate), Op-Proxy (Credential Gateway), Proxy Layer (+1 more)
 
 ### Community 666 - "Security Docs"
-Cohesion: 0.12
-Nodes (9): Tests for _forward_file_download() and proxy_request() binary path.      Regress, _forward_file_download returns dict with _raw_body, _content_type, _status_code., proxy_request with path_prefix='file/' returns _raw_body sentinel (no JSON parse, proxy_request returns 502 sentinel when file download raises., Inbound update with document.file_size > limit must be dropped (CVE-2026-32049)., Inbound update with document.file_size within limit must pass (CVE-2026-32049)., _forward_file_download must raise when streamed bytes exceed limit (CVE-2026-320, proxy_request without file/ prefix still JSON-parses the response. (+1 more)
+Cohesion: 0.14
+Nodes (8): Tests for _forward_file_download() and proxy_request() binary path.      Regress, _forward_file_download returns dict with _raw_body, _content_type, _status_code., proxy_request with path_prefix='file/' returns _raw_body sentinel (no JSON parse, proxy_request returns 502 sentinel when file download raises., Inbound update with document.file_size > limit must be dropped (CVE-2026-32049)., Inbound update with document.file_size within limit must pass (CVE-2026-32049)., proxy_request without file/ prefix still JSON-parses the response., TestFileDownload
 
 ### Community 667 - "Security Docs"
 Cohesion: 0.15
@@ -4388,8 +4477,8 @@ Cohesion: 0.15
 Nodes (12): Anti-Patterns to Flag, Core Discipline: Red → Green → Refactor, Glue Job Logic  →  test transformations outside Spark, PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`, Python / Boto3 / AWS  →  `moto`, Role, Rules, Skill: Test-Driven Development (TDD) (+4 more)
 
 ### Community 679 - "docker/bot-capabilities.md"
-Cohesion: 0.15
-Nodes (13): API Endpoints (`gateway/ingest_api/main.py`), Approval-Required Commands, Architecture, Auto-Approved Commands, Components, Denied Commands, Overview, Request Flow (+5 more)
+Cohesion: 0.12
+Nodes (13): KillSwitchConfig, config(), Test anomaly detection with normal metrics., Test anomaly detection with excessive tool calls., Test status retrieval., Test kill switch configuration., Test default configuration values., Test kill switch monitor functionality. (+5 more)
 
 ### Community 680 - "docker/docker-compose.yml"
 Cohesion: 0.15
@@ -4400,8 +4489,8 @@ Cohesion: 0.15
 Nodes (13): Atlassian MCP Server (agentshroud), Atlassian MCP Server (fluence), Atlassian MCP Server (idallasj), AWS API MCP Server (readonly), AgentShroud MCP Server Registry, DEVONthink MCP Server, GitHub MCP Server (default), GitHub MCP Server (agentshroud identity) (+5 more)
 
 ### Community 682 - "Bot Skill Config"
-Cohesion: 0.17
-Nodes (13): filter_xml_blocks() Function, Recovery Plan Partial (v0.4.0 Released State), XML Filter Shipped in v0.4.0 (sanitizer.py, pipeline.py), Phase 0: Stabilization, Phase 1: XML Function Call Exposure Security Fix, Phase 2: User Actions (Anthropic Credits, iMessage Permission), Recovery Plan v0.4.0, Consolidated Issues Report (2026-03-09) (+5 more)
+Cohesion: 0.13
+Nodes (15): filter_xml_blocks() Function, Recovery Plan Partial (v0.4.0 Released State), XML Filter Shipped in v0.4.0 (sanitizer.py, pipeline.py), Phase 0: Stabilization, Phase 1: XML Function Call Exposure Security Fix, Phase 2: User Actions (Anthropic Credits, iMessage Permission), Recovery Plan v0.4.0, Consolidated Issues Report (2026-03-09) (+7 more)
 
 ### Community 683 - "Bot Skill Config"
 Cohesion: 0.22
@@ -4448,8 +4537,8 @@ Cohesion: 0.17
 Nodes (11): Added, Changed, Changelog — AgentShroud™, Fixed, Migration Notes, Recommended Steps, Summary, Tests (+3 more)
 
 ### Community 694 - "docs/vault"
-Cohesion: 0.33
-Nodes (3): Return True if user_id is the owner in group_chat_id., Return True if user_id is at least a member (member or owner)., Return the GroupRole for user_id in group_chat_id.          Returns GroupRole.RE
+Cohesion: 0.16
+Nodes (12): forward-routing agent_id propagation into security pipeline, _make_trust_app_state(), Pipeline mock that records the user_trust_level passed to process_outbound., Minimal app_state for owner-trust tests., SCRUM-46: verify forward.py elevates trust to FULL for the owner's user_id., When request.user_id matches _owner_user_id (with the trusted header),         p, A collaborator's user_id must NOT trigger the owner elevation., Requests with no user_id must not be elevated to FULL. (+4 more)
 
 ### Community 695 - "ESP32 Firmware"
 Cohesion: 0.15
@@ -4472,24 +4561,24 @@ Cohesion: 0.15
 Nodes (13): Body, Frontmatter, Learn Proven Design Patterns, Skill Creation Process, Skill Naming, Start with Reusable Skill Contents, Step 1: Understanding the Skill with Concrete Examples, Step 2: Planning the Reusable Skill Contents (+5 more)
 
 ### Community 700 - "Planning Docs"
-Cohesion: 0.04
-Nodes (45): Any, FastAPI, check_monitor_mode_warnings(), get_module_mode(), Return module mode, respecting the global permissive override., Log warnings for any core modules running in monitor mode., EventBus, Simple in-process event bus with async support (+37 more)
+Cohesion: 0.12
+Nodes (15): test_dashboard_serves_html(), Forward without auth returns 401/403., Submit SSH command → approval queued., GET /dashboard with valid cookie auth returns HTML., GET /dashboard/stats returns JSON stats., GET /dashboard without auth returns 403., GET /status returns service info., Forward content → PII sanitized → ledger entry created → event bus fired. (+7 more)
 
 ### Community 701 - "docs/vault"
 Cohesion: 0.18
 Nodes (6): _CloseRaisesTargetWriter, _DummyTargetWriter, _HeaderTimeoutReader, start() binds a real loopback server; a client gets a parsed response;     stop(, First readline returns the request line; the next stalls., test_start_serves_and_stop_closes_loopback()
 
 ### Community 702 - "docs/vault"
-Cohesion: 0.20
-Nodes (7): Path, ContentThreat, Scan memory file content for security threats., Sanitize content by removing/redacting threats., Validate content before writing to memory file., Detected threat in memory file content., Test cleanup of old threat records.
+Cohesion: 0.31
+Nodes (6): container-runtime.sh (detection shim), run_test(), check(), make_fake_bin(), test-container-runtime.sh script, smoke.sh script
 
 ### Community 703 - "Planning Docs"
-Cohesion: 0.33
-Nodes (3): Return HMAC key: env var preferred, session-scoped random fallback., Compute and return an HMAC-SHA256 fingerprint for the system prompt., Return True if prompt_text matches the stored HMAC fingerprint.
+Cohesion: 0.22
+Nodes (9): 🟡 Apple Messages Integration (4 items), 🟢 Development Infrastructure (4 items), 🟢 Infrastructure (5 items), 🟢 Multi-Agent Architecture (3 items), 🔴 Private Service Data Isolation (6 items), 🔴 Security Operations Center (SOC) (6 items), 🟡 Security Tools — Full Integration (5 items), 🟡 Steve Hay Remediation (4 items) (+1 more)
 
 ### Community 705 - "Gateway Test Suite"
-Cohesion: 0.33
-Nodes (3): RateLimitDecision, Record one request for (agent_id, tool) and decide allow/block.          Fail-cl, Structured verdict returned by :meth:`RateLimitGuard.check`.
+Cohesion: 0.39
+Nodes (7): ensure_local_model_available(), preflight_local(), upsert_env_value(), usage(), verify_both_bots_healthy(), wait_for_local_model(), switch_model.sh script
 
 ### Community 706 - "Docker Deploy Scripts"
 Cohesion: 0.15
@@ -4508,12 +4597,16 @@ Cohesion: 0.17
 Nodes (11): Common Issues, Configuration Files, Environment Variables (required), Health Checks, Key Ports, Kill Switch, Logs, Quick Reference — AgentShroud (+3 more)
 
 ### Community 710 - "Gateway Test Suite"
-Cohesion: 0.12
-Nodes (20): ADR-008: Progressive Trust Level System, 1Password Integration (service account), ApprovalRequest (data entity), RateLimitBucket (data entity), TrustLevel (data entity), agentshroud.yaml (main config schema), agent_trust SQLite table, approval_requests SQLite table (+12 more)
+Cohesion: 0.17
+Nodes (19): 1Password Integration (service account), agentshroud-bot Container (Node.js 22 OpenClaw, port 18789, 4 GB, isolated network), agentshroud-gateway Container (Python 3.13 / FastAPI, port 8080, 1280 MB, read-only rootfs), MCP Proxy Wrapper (mcp-proxy-wrapper.js — stdio to HTTP translation), Network Topology (agentshroud-internal 172.20/16 + agentshroud-isolated 172.21/16), Two-Stage Startup (gateway healthy before bot starts — depends_on: service_healthy), AgentShroud (system, C4 context), Anthropic API (external system) (+11 more)
 
 ### Community 711 - "Gateway Test Suite"
 Cohesion: 0.18
 Nodes (12): Browser Social Engineering Detection, Egress Exfiltration Prevention, MCP Shell Injection Prevention, BrowserSecurityGuard, browser_security.py (Security), ThreatAssessment, ConsentDecision, ConsentFramework (+4 more)
+
+### Community 712 - "Gateway Test Suite"
+Cohesion: 0.22
+Nodes (8): 🛡️ AgentShroud Security Inventory (v0.8.0), Collaborator Testing, Owner Testing, Security Architecture Documents (24), Security Configuration Files (9), Security Test Files (38), Summary, Testing Checklist
 
 ### Community 713 - "Gateway Test Suite"
 Cohesion: 0.17
@@ -4572,8 +4665,8 @@ Cohesion: 0.20
 Nodes (12): Audit query GET /ledger (hashes only), content_hash = SHA-256(sanitized), ledger row (id, timestamp, source, hashes, sanitized flag, expires_at), LLM API call (sanitized text only), original_content_hash = SHA-256(raw), PII Redaction ([PHONE_NUMBER], [EMAIL_ADDRESS], [SSN]), Response to user (Telegram / iMessage), Auto-delete at expires_at (+4 more)
 
 ### Community 727 - "Bot Skill Config"
-Cohesion: 0.30
-Nodes (6): Run Trivy vulnerability scan., run_trivy_scan(), Run a Trivy scan and return parsed results.      Args:         target: Scan targ, run_trivy_scan(), scan_type='image' is passed correctly to the trivy binary., TestTrivyRun
+Cohesion: 0.06
+Nodes (39): EgressFilter, EgressFilterConfig, EgressFilter, EgressPolicy, Set a per-agent egress policy., Egress policy for an agent or global default., FakeAuditStore, _make_deny_all_filter() (+31 more)
 
 ### Community 728 - "Bot Skill Config"
 Cohesion: 0.17
@@ -4620,8 +4713,8 @@ Cohesion: 0.17
 Nodes (12): Architecture Review (Positive Observations), Prior Findings — Verification, R2 Findings (all verified fixed), R3 Findings (NEW — this round), R3-W1 — WARNING: Stale version string in control page HTML, R3-W2 — WARNING: Stale OCI label version in Dockerfile, R3-W3 — WARNING: Dead code `_is_imessage_recipient_allowed` in forward.py, R3-W4 — WARNING: Debug log leaking agent response content (+4 more)
 
 ### Community 739 - "Planning Docs"
-Cohesion: 0.40
-Nodes (5): 1. True Distributed AI, 2. Enhanced Security, 3. Advanced Capabilities, 4. Better Development Workflow, Key Benefits
+Cohesion: 0.13
+Nodes (11): AgentTarget, Any, ForwardRequest, Determine which agent should receive this content          Args:             req, Build the outbound payload for `target`, shared by the blocking and         stre, Forward sanitized content to agent via HTTP POST          Args:             targ, Stream sanitized content to an OpenAI-compatible agent, yielding text         de, Check health of one or all agent targets          Args:             target: Spec (+3 more)
 
 ### Community 740 - "docs/vault"
 Cohesion: 0.35
@@ -4632,16 +4725,16 @@ Cohesion: 0.42
 Nodes (11): check_container(), cmd_cat(), cmd_cp_from(), cmd_cp_to(), cmd_ls(), cmd_mkdir(), cmd_rm(), cmd_shell() (+3 more)
 
 ### Community 742 - "docs/reference"
-Cohesion: 0.10
-Nodes (20): 🛡️ AgentShroud Security Inventory (v0.8.0), Audit & Compliance (4), Collaborator Testing, Encryption & Key Management (3), External Integrations (4), Inbound Defense (6), Infrastructure Protection (8), MCP/Tool Security (6) (+12 more)
+Cohesion: 0.17
+Nodes (12): Audit & Compliance (4), Encryption & Key Management (3), External Integrations (4), Inbound Defense (6), Infrastructure Protection (8), MCP/Tool Security (6), Network & Egress (6), Orchestration (3) (+4 more)
 
 ### Community 743 - "Custom Skills"
 Cohesion: 0.17
 Nodes (12): Anatomy of a Skill, Assets (`assets/`), Bundled Resources (optional), Concise is Key, Core Principles, Progressive Disclosure Design Principle, Progressive Disclosure Patterns, References (`references/`) (+4 more)
 
 ### Community 744 - "docs/runbooks"
-Cohesion: 0.08
-Nodes (14): Test redaction of targeted infrastructure details.          Generic hostnames (e, Product name 'agentshroud' and 'agentshroud-openclaw' are public branding — must, Test that dynamically registered bot hostnames are redacted., Test redaction of user ID patterns., Test redaction of credential patterns., Test that normal content passes through without redaction., Test fuzzy matching against protected content., Test text with multiple types of sensitive content. (+6 more)
+Cohesion: 0.03
+Nodes (46): Any, Match, fail(), ok(), run(), warn(), PromptProtection, ProtectedContent (+38 more)
 
 ### Community 745 - "skills/openclaw"
 Cohesion: 0.18
@@ -4656,8 +4749,12 @@ Cohesion: 0.27
 Nodes (4): Unit tests for voice_gateway.tts.split_for_speech (pure function, no I/O)., split_for_speech normalises the full text so no markdown or tokens survive., A fragment under 12 chars is merged into the following chunk., TestSplitForSpeech
 
 ### Community 748 - "Security Docs"
-Cohesion: 0.17
-Nodes (3): Default-deny allowlist: unlisted domains are blocked., Default (denylist) mode is unchanged., TestAllowlistMode
+Cohesion: 0.15
+Nodes (10): Tests for per-request bot token routing via contextvars.      Regression suite f, Outside a proxy_request call, _active_send_token() returns self._bot_token., When _inbound_bot_token is set, _active_send_token() returns it., Outside a proxy_request call, _active_bot_id() returns 'openclaw'., When _inbound_bot_id is set, _active_bot_id() returns it., _send_telegram_text uses the inbound contextvar token, not self._bot_token., Without contextvar, _send_telegram_text uses self._bot_token., After proxy_request returns, _inbound_bot_token is reset to its prior value. (+2 more)
+
+### Community 749 - "Security Docs"
+Cohesion: 0.25
+Nodes (7): HTTP 400 — Unknown MCP Server, HTTP 403 — MCP Tool Permission Denied, HTTP 429 — MCP Rate Limit Exceeded, HTTP 502 — MCP Server Unreachable, MCP Proxy Errors, MCP Proxy Wrapper Issues (Bot Side), Related Notes
 
 ### Community 750 - "Setup Docs"
 Cohesion: 0.17
@@ -4688,8 +4785,8 @@ Cohesion: 0.20
 Nodes (11): [0.5.0] - 2026-02-21, [0.6.0] - 2026-02-23, Added, Added, Agent Routing (P0), Fixed, Fixed, Fixed (+3 more)
 
 ### Community 757 - "Gateway Test Suite"
-Cohesion: 0.15
-Nodes (12): Metrics to Track, AgentShroud System Architecture Document (SAD), Component Architecture, Core Technologies, Executive Overview, Monitoring and Observability, Network Isolation Benefits:, Security Technologies (+4 more)
+Cohesion: 0.18
+Nodes (10): Metrics to Track, AgentShroud System Architecture Document (SAD), Component Architecture, Core Technologies, Executive Overview, Monitoring and Observability, Security Technologies, System Context (+2 more)
 
 ### Community 758 - "Gateway Test Suite"
 Cohesion: 0.18
@@ -4733,7 +4830,7 @@ Nodes (11): ABSTRACT, BACKGROUND OF THE INVENTION, CROSS-REFERENCE TO RELATED AP
 
 ### Community 768 - "Architecture Docs"
 Cohesion: 0.03
-Nodes (38): ForwardRequest, RouterConfig, GatewayConfig validation behavior., openclaw init patch script must quarantine malformed JSON instead of exiting., openclaw init patch script must remove unsupported gateway.model key., OpenClaw's bot Dockerfile must pin via the shared ARG OPENCLAW_VERSION         (, openclaw init patch script must seed control UI origins for non-loopback bind., openclaw init patch script must seed Telegram group allowlist when policy is all (+30 more)
+Nodes (37): ForwardRequest, GatewayConfig validation behavior., openclaw init patch script must quarantine malformed JSON instead of exiting., openclaw init patch script must remove unsupported gateway.model key., OpenClaw's bot Dockerfile must pin via the shared ARG OPENCLAW_VERSION         (, openclaw init patch script must seed control UI origins for non-loopback bind., openclaw init patch script must seed Telegram group allowlist when policy is all, apply-patches.js must reference AGENTSHROUD_GROUP_CHAT_IDS (multi-group). (+29 more)
 
 ### Community 769 - "Custom Skills"
 Cohesion: 0.18
@@ -4827,6 +4924,10 @@ Nodes (5): _fake_runner(), Return a runner that looks up (exit_code, output) by 
 Cohesion: 0.31
 Nodes (3): TestParseHosts, parse_hosts(), Parse a comma/whitespace-separated host list into a de-duplicated list.      Emp
 
+### Community 792 - "Bot Skill Config"
+Cohesion: 0.20
+Nodes (5): hermes_dashboard_proxy(), Reverse-proxy the Hermes Agent dashboard through the gateway., hermes_dashboard_proxy must reject traversal sequences before forwarding., hermes_dashboard_proxy raises HTTPException(400) for traversal in path., TestHermesDashboardPathTraversal
+
 ### Community 793 - "docs/vault"
 Cohesion: 0.18
 Nodes (3): Unit tests for TelegramAPIProxy._bot_is_mentioned()., Media messages use caption + caption_entities., TestBotIsMentioned
@@ -4896,8 +4997,12 @@ Cohesion: 0.20
 Nodes (9): ANTI-HALLUCINATION CHECKLIST, CRITICAL RULES — READ BEFORE DOING ANYTHING, OUTPUT REQUIREMENTS, REPORT STRUCTURE, SECTION 1: MARKET ANALYSIS, SECTION 2: COMPETITIVE ANALYSIS — AGENT SECURITY TOOLS, SECTION 3: AUTONOMOUS AGENT ECOSYSTEM UPDATE, SECTION 4: NEXT STEPS TO STAY AHEAD (+1 more)
 
 ### Community 810 - "docs/vault"
-Cohesion: 0.20
-Nodes (10): build_op_proxy_request(), build_tenant_info_url(), fetch_credentials(), fetch_op_secret(), Unauthenticated site-to-cloud-ID discovery URL., Fetch one secret field from the gateway op-proxy. Returns the value., Resolve a site domain to its Atlassian cloud ID via the public,     unauthentica, Resolve (token, email, cloud_id) via the gateway op-proxy plus a public     tena (+2 more)
+Cohesion: 0.29
+Nodes (8): ADR-008: Progressive Trust Level System, ApprovalRequest (data entity), RateLimitBucket (data entity), TrustLevel (data entity), agentshroud.yaml (main config schema), agent_trust SQLite table, approval_requests SQLite table, Approval DB (SQLite/aiosqlite)
+
+### Community 811 - "docs/vault"
+Cohesion: 0.29
+Nodes (8): cryptography>=50.0.0 Security Floor, gateway/requirements.txt Dependency File, Dependabot Configuration, Presidio-Anonymizer 2.2.364 Version Pin-Out, Leak Gate Scoped to ubuntu+3.11, CI Workflow, Release Workflow, Tag/Version Sync Verification
 
 ### Community 812 - "Bot Skill Config"
 Cohesion: 0.20
@@ -4919,13 +5024,17 @@ Nodes (9): 1. GitHub MCP, 2. Atlassian MCP (Jira + Confluence), 3. AWS API MCP, 
 Cohesion: 0.20
 Nodes (9): ANTI-HALLUCINATION CHECKLIST, CRITICAL RULES — READ BEFORE DOING ANYTHING, OUTPUT REQUIREMENTS, REPORT STRUCTURE, SECTION 1: MARKET ANALYSIS, SECTION 2: COMPETITIVE ANALYSIS — AGENT SECURITY TOOLS, SECTION 3: AUTONOMOUS AGENT ECOSYSTEM UPDATE, SECTION 4: NEXT STEPS TO STAY AHEAD (+1 more)
 
+### Community 817 - "chatbot/test_main.py"
+Cohesion: 0.25
+Nodes (5): Any, Pattern, get_sanitizer_stats(), Get statistics about sanitization patterns., Compile regex patterns for sensitive data detection.
+
 ### Community 818 - "README.md"
 Cohesion: 0.20
 Nodes (9): Config Keys Read, Environment Variables Used, Imports From / Exports To, Key Classes / Functions, Known Issues / Notes, models.py, Purpose, Related (+1 more)
 
 ### Community 819 - "Bot Container Scripts"
-Cohesion: 0.40
-Nodes (4): prompt_protection(), Create a PromptProtection instance for testing., Sample protected content for testing., sample_protected_content()
+Cohesion: 0.19
+Nodes (11): Path, NetworkValidator, Validate container network isolation and security., Convenience function to validate network security., validate_network_security(), post-deploy-check.sh fails ONLY on critical. These tests pin that contract., A privileged container is the textbook escape-the-sandbox finding —         vali, TestExpectedNetworksAllowlist (+3 more)
 
 ### Community 820 - "docs/vault"
 Cohesion: 0.20
@@ -4967,9 +5076,13 @@ Nodes (9): default_out_dir(), get_model_defaults(), main(), pick_prompts(), Retu
 Cohesion: 0.73
 Nodes (9): fail(), info(), pass(), run_bypass(), run_canary(), run_chain(), run_full(), run_quick() (+1 more)
 
+### Community 830 - "docs/flows"
+Cohesion: 0.11
+Nodes (17): EgressFilter, Configuration, EgressFilter (Class), EgressPolicy (Dataclass), EgressFilter.check(agent_id, destination, port), EgressFilter._is_private_ip(host), EgressFilter._record(agent_id, dest, port, action, rule), EgressPolicy.matches_domain(domain) (+9 more)
+
 ### Community 831 - "docs/flows"
-Cohesion: 0.50
-Nodes (4): Community, Documentation, Related AgentShroud Docs, Resources
+Cohesion: 0.29
+Nodes (4): Any, Get risk level for a session based on detected attacks., Get summary of detected attacks., Export attack detection report.
 
 ### Community 832 - "Gateway Test Suite"
 Cohesion: 0.20
@@ -4984,20 +5097,20 @@ Cohesion: 0.27
 Nodes (8): args, CONFIG, createEvent(), { execSync }, https, listEvents(), makeRequest(), parseCalendarData()
 
 ### Community 835 - "branding/guidelines"
-Cohesion: 0.50
-Nodes (4): Decision Points, Implementation Timeline, Next Steps, Prerequisites (Before Implementation)
+Cohesion: 0.29
+Nodes (4): Any, Monitor an agent's environment access attempts.          Args:             agent, Get summary of all detected leakages., Export leakage findings to a report file.
 
 ### Community 836 - "Bot Container Scripts"
-Cohesion: 0.50
-Nodes (4): Core Configuration, Documentation, Files, Secrets
+Cohesion: 0.15
+Nodes (12): Any, Request to scan a message., Response from sidecar scan., Sidecar security scanner — reduced security, traffic can bypass.      This is fo, Scan a message through the security pipeline., ScanRequest, ScanResponse, SidecarScanner (+4 more)
 
 ### Community 837 - "skills/openclaw"
 Cohesion: 0.20
 Nodes (3): Default Anthropic mapping must strip x-api-key (regression guard)., strip_headers must remove x-api-key before injecting Authorization: Bearer., TestCredentialInjection
 
 ### Community 839 - "docs/diagrams"
-Cohesion: 0.20
-Nodes (4): Verify README.md claims match actual implementation., This representative sample of modules mentioned in README should exist as code., README claims Python 3.9+., TestReadmeAccuracy
+Cohesion: 0.12
+Nodes (9): Test WebhookReceiver integration with session isolation., Create a session manager., Create a mock security pipeline., Create a mock forwarder., Test that user IDs are properly extracted from webhook payloads., Test that conversations are logged per user., Test that session context is injected into forwarded requests., Create a temporary workspace for testing. (+1 more)
 
 ### Community 841 - "skills/openclaw"
 Cohesion: 0.24
@@ -5064,8 +5177,8 @@ Cohesion: 0.22
 Nodes (9): Prompt Injection Detection (Web), Kill Switch Triggered, P2 High Priority Incidents, PII Leak Incident, WebContentScanner, Layer 1: Pattern Matching, Layer 2: Unicode Normalization, Layer 3: Multi-Layer Decoding (+1 more)
 
 ### Community 858 - "Gateway Test Suite"
-Cohesion: 0.22
-Nodes (7): Container Hardening Controls (cap_drop ALL, seccomp, read-only FS, non-root, resource limits), Secret Management Hierarchy (1Password → Docker Secrets → env vars for non-sensitive only), killswitch.sh (freeze/shutdown/disconnect emergency response), scan.sh (OpenSCAP + Docker Bench compliance scan), verify-security.sh (13-check security script), VERIFICATION_RESULTS.md (Phase 3A/3B implementation verification), Phase 3A/3B Completion Status (seccomp enabled, NET_RAW removed, kill switch implemented)
+Cohesion: 0.14
+Nodes (8): cls, Path, _Instr, Create config from environment variables and AGENTSHROUD_MODE., Load configuration from environment variables., Create configuration from environment variables., Build a ManifestEntry by reading *path* from disk., Build a manifest by walking *source* (``~/.llm_settings/``).          Raises:
 
 ### Community 859 - "Gateway Test Suite"
 Cohesion: 0.22
@@ -5112,8 +5225,8 @@ Cohesion: 0.22
 Nodes (5): Any, Filter outbound LLM response for credential leaks and XML., Apply XML and credential filters to text., Filter buffered SSE-like streaming responses for XML/credential leaks and ToolAC, Apply outbound text filters to known streaming response formats.          Also e
 
 ### Community 870 - "docs/vault"
-Cohesion: 0.50
-Nodes (4): Development, Exec into Container, Rebuild Containers, Verify Security
+Cohesion: 0.16
+Nodes (15): main(), provider_for_model(), CLI: `resolve_model.py [model|provider]`. Defaults to 'model'., Strip a known provider prefix from a model ref, leaving the bare model name., Return the Hermes provider key for a bare model name.      Local models (qwen/ll, Resolve (model, provider) for Hermes from the container environment.      Preced, _resolve_from_env(), resolve_model() (+7 more)
 
 ### Community 871 - "docs/vault"
 Cohesion: 0.25
@@ -5128,7 +5241,7 @@ Cohesion: 0.22
 Nodes (9): Accessibility, Animation Guidelines, Color Usage, CSS Reference, Logo Animation Constraints, Motion Principles, Primary Color Application, Status & Feedback Animations (+1 more)
 
 ### Community 874 - "Custom Skills"
-Cohesion: 0.39
+Cohesion: 0.46
 Nodes (7): cmd_down(), cmd_logs(), cmd_status(), cmd_up(), _secret_mount_args(), _wait_for_gateway_healthy(), run-standalone.sh script
 
 ### Community 875 - "docs/compliance"
@@ -5188,8 +5301,8 @@ Cohesion: 0.42
 Nodes (8): export(), main(), _parse_since(), datetime, Path, Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD, _require_env(), _serialize()
 
 ### Community 889 - "Bot Skill Config"
-Cohesion: 0.67
-Nodes (3): gateway POST /email/send-owner endpoint, _email_owner(), email_helper.sh script
+Cohesion: 0.29
+Nodes (3): Sensitive ops are flagged but not blocked in default mode., In strict mode, sensitive ops with injection ARE blocked., TestSensitiveOps
 
 ### Community 890 - "docker/README.md"
 Cohesion: 0.22
@@ -5200,28 +5313,28 @@ Cohesion: 0.22
 Nodes (6): injector(), Verify that raw credential values never appear in log output., Create a temp secrets directory with a test credential., CredentialInjector with a custom mapping pointing at the temp secrets., secrets_dir(), TestStatus
 
 ### Community 892 - "ESP32 Firmware"
-Cohesion: 0.22
-Nodes (3): Verify CONTRIBUTING.md references are correct., The test command in CONTRIBUTING.md should be valid., TestContributingMdAccuracy
+Cohesion: 0.14
+Nodes (6): Configuration for container runtime selection and behavior.      Loaded from env, Load configuration from environment variables., Load from a config dictionary (e.g. from YAML)., Resolve rootless setting based on runtime., RuntimeConfig, TestRuntimeConfig
 
 ### Community 893 - "Gateway Test Suite"
 Cohesion: 0.42
 Nodes (8): _real_err(), _stale_callback_err(), _stale_edit_err(), test_answer_callback_real_error_still_logs_error(), test_answer_callback_stale_logs_debug_not_error(), test_edit_decision_message_real_error_still_logs_error(), test_edit_decision_message_stale_logs_debug_not_error(), test_stale_detectors()
 
 ### Community 895 - "skills/openclaw"
-Cohesion: 0.25
-Nodes (5): Test /forward endpoint with middleware integration., Test that middleware can block requests with HTTP 403., Test that middleware allows requests when they pass checks., Test that middleware errors cause requests to be blocked., TestForwardEndpoint
+Cohesion: 0.03
+Nodes (45): Test broadcast handles failed client sends, test_broadcast_with_failed_client(), Unknown recipient's body is PII-scrubbed before approval queue submission., Owner-allowlisted recipient receives body verbatim; pii_redacted=False., /email/send-owner delegates to email_send and also skips PII for the owner., TestOwnerEmailBypassesPii, Test basic status endpoint functionality., Test listing pending approvals. (+37 more)
 
 ### Community 896 - "docs/vault"
-Cohesion: 0.50
-Nodes (4): 2.1 Loss Categories, 2.2 Heat Map Matrix, 2.3 Coverage Analysis, 2. Steve Hay Heat Map Assessment
+Cohesion: 0.12
+Nodes (8): Test if the kill switch script exists., Test if the kill switch script has correct permissions., Test if Docker is available., Test if the kill switch script has valid syntax., Test a specific kill switch mode.          Args:             mode: The kill swit, Log verification result to file., Verify that the kill switch mechanism works without actually killing.          A, Send alert for verification failure.
 
 ### Community 898 - "Gateway Test Suite"
 Cohesion: 0.22
 Nodes (3): _mock_dir_with_fresh_files(), Like _mock_dir_with_files but mtime is now (fresh)., TestScoreComplianceAuditing
 
 ### Community 899 - "docs/redteam"
-Cohesion: 0.27
-Nodes (6): Regression tests for Telegram HTML parse error caused by PII placeholders., Return a TelegramAPIProxy configured with a mock owner RBAC., PII redaction must not strip parse_mode for the whole message (owner, fallback p, parse_mode=HTML must be preserved for owner when text contains no PII., PII redaction via the pipeline path must not strip parse_mode either (owner, pip, TestParseModeStrippedAfterPIIRedaction
+Cohesion: 0.25
+Nodes (4): Return a TelegramAPIProxy configured with a mock owner RBAC., PII redaction must not strip parse_mode for the whole message (owner, fallback p, parse_mode=HTML must be preserved for owner when text contains no PII., PII redaction via the pipeline path must not strip parse_mode either (owner, pip
 
 ### Community 901 - "scripts/check-vendor-compat.sh"
 Cohesion: 0.22
@@ -5260,8 +5373,8 @@ Cohesion: 0.25
 Nodes (7): httpx, Key Features Used, Purpose, Related Notes, Security Note, Where Used, llm_proxy.py
 
 ### Community 910 - "Gateway Test Suite"
-Cohesion: 0.39
-Nodes (4): Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered correc, URL-encoded getUpdates body must call mark_delivered with the correct int offset, JSON getUpdates body must still call mark_delivered (existing behaviour preserve, TestReplayBufferOffsetParsing
+Cohesion: 0.17
+Nodes (8): NetworkConfiguration, Validate service network isolation., Validate port exposure configuration., Validate DNS configuration for security., Validate network mode configurations., Container network configuration., Validate that no containers are running in privileged mode., Validate docker-compose network configuration.          Args:             compos
 
 ### Community 912 - "Gateway Test Suite"
 Cohesion: 0.29
@@ -5284,8 +5397,8 @@ Cohesion: 0.25
 Nodes (7): 1. EU AI Act — high-risk operational requirements, 2. NIST AI RMF 1.0 mapping, 3. NIST AI Agent Standards Initiative (2026) — identity & authorization themes, 4. Honest gap list (with tracking), 5. Evidence trail — where an auditor looks, EU AI Act & NIST Alignment Matrix — AgentShroud™, Positioning
 
 ### Community 917 - "Gateway Test Suite"
-Cohesion: 0.29
-Nodes (8): AI Security Standards Tracker (NIST/CSA MAESTRO/OWASP/EU AI Act weekly scan), Competitive Intelligence Automation (Hermes/OpenClaw recurring reports), Automated CVE Watch (Hermes weekly cron), Daily Memory Journal Cron (Hermes nightly consolidation), Hermes Competitive Analysis Prompt, Hermes Cron Jobs (jobs.yaml), OpenClaw Competitive Analysis Prompt, OpenClaw Bot Identity (IDENTITY.md)
+Cohesion: 0.33
+Nodes (7): AI Security Standards Tracker (NIST/CSA MAESTRO/OWASP/EU AI Act weekly scan), Competitive Intelligence Automation (Hermes/OpenClaw recurring reports), Automated CVE Watch (Hermes weekly cron), Daily Memory Journal Cron (Hermes nightly consolidation), Hermes Competitive Analysis Prompt, Hermes Cron Jobs (jobs.yaml), OpenClaw Competitive Analysis Prompt
 
 ### Community 918 - "Gateway Test Suite"
 Cohesion: 0.25
@@ -5336,8 +5449,8 @@ Cohesion: 0.25
 Nodes (7): Input Requirements, Oracle — Feedback Analyst, Output Format, Persona, Quality Checklist, Role, System Prompt
 
 ### Community 930 - "docs/vault"
-Cohesion: 0.50
-Nodes (4): 3.1 HIGH Priority Issues, 3.2 MEDIUM Priority Issues, 3.3 LOW Priority Issues, 3. Critical Findings & Risks
+Cohesion: 0.29
+Nodes (6): lifespan startup must install ThreadPoolExecutor(max_workers=64)., Hermes API forwarder must include an HTTP-method peek to drop non-HTTP connectio, Non-HTTP bytes (e.g. TLS ClientHello) must be dropped without proxying., test_hermes_forwarder_drops_non_http(), test_lifespan_hermes_forwarder_has_http_peek(), test_lifespan_installs_64_worker_executor()
 
 ### Community 931 - "docs/vault"
 Cohesion: 0.68
@@ -5346,10 +5459,6 @@ Nodes (7): alert_if_critical(), log(), run_clamav(), run_oscap(), run_sbom(), ru
 ### Community 932 - "docs/vault"
 Cohesion: 0.39
 Nodes (7): esp_http_client_event_t, esp_err_t, _http_event_handler(), _nvs_get_etag(), _nvs_set_etag(), ota_check(), _ws_to_https_base()
-
-### Community 933 - "docs/vault"
-Cohesion: 0.50
-Nodes (4): 4.1 Default Configuration Analysis, 4.2 Global Mode Override Testing, 4.3 Module-Specific Configuration, 4. Configuration Security Assessment
 
 ### Community 934 - "docs/vault"
 Cohesion: 0.39
@@ -5412,8 +5521,8 @@ Cohesion: 0.46
 Nodes (7): cmd_buildkit(), cmd_diagnose(), cmd_nuclear(), cmd_restart(), cmd_safe_prune(), usage(), docker-cleanup.sh script
 
 ### Community 949 - "Bot Skill Config"
-Cohesion: 0.50
-Nodes (4): 8.1 Attack Surface Hardening, 8.2 Monitoring & Detection, 8.3 Resilience Testing, 8. Red Team Readiness Assessment
+Cohesion: 0.33
+Nodes (4): save(), savedEl, tokenEl, urlEl
 
 ### Community 950 - "docs/flows"
 Cohesion: 0.25
@@ -5440,8 +5549,8 @@ Cohesion: 0.43
 Nodes (7): _alert(), The alert must already be in alert_log before notification runs.      Before the, test_all_attempts_fail_logs_warning_not_error(), test_backoff_called_between_attempts(), test_dispatch_persists_alert_even_if_notification_fails(), test_succeeds_after_one_transient_failure(), test_succeeds_on_first_attempt()
 
 ### Community 958 - "docs/diagrams"
-Cohesion: 0.39
-Nodes (3): Smoke test against the actual committed registry — every real         ghsa_id cu, _script(), TestListRegistryGhsaIds
+Cohesion: 0.40
+Nodes (4): Container runtime auto-detection contract (SCRUM-92), _cr_plugin_works(), detect_container_runtime(), container-runtime.sh script
 
 ### Community 960 - "src/interfaces"
 Cohesion: 0.36
@@ -5472,8 +5581,8 @@ Cohesion: 0.25
 Nodes (7): Additional Controls Checklist, AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap, Context, Critical Files (v0.8.0 Changes), DELIVERABLE 2 — Maturity Scorecard, Implementation Sequence (v0.8.0 Execution Order), Top-10 Gaps by Exploitability x Impact (Post v0.8.0)
 
 ### Community 967 - "Planning Docs"
-Cohesion: 0.25
-Nodes (8): Also in v0.9.0, Blocked By, Components, Goal, Prerequisites, Secure Voice Conversations (ElevenLabs + Twilio), Status, v0.9.0 — Apple Messages Integration
+Cohesion: 0.30
+Nodes (14): _err_response(), _make_greeter(), _ok_response(), Unexpected exception in maybe_greet must be caught and return False., test_bot_isolation(), test_exception_in_maybe_greet_returns_false(), test_first_call_sends_greeting_and_persists_state(), test_first_name_none_uses_there_fallback() (+6 more)
 
 ### Community 968 - "Docker Deploy Scripts"
 Cohesion: 0.25
@@ -5488,8 +5597,8 @@ Cohesion: 0.25
 Nodes (8): §1 — Re-run of Prior Scenarios, Scenario 00 — Information Disclosure (Phase 0 finding), Scenario 01 — Enforce-by-Default, Scenario 02 — Human-in-the-Loop Bypass, Scenario 03 — Session Isolation, Scenario 04 — Separation of Privilege, Scenario 05 — Credential Isolation, Scenario 06 — Outbound Information Filter
 
 ### Community 971 - "Setup Docs"
-Cohesion: 0.25
-Nodes (8): build_basic_auth_header(), build_comment_url(), _http_get(), post_comment(), Build the REST v3 add-comment URL against the cloud-id gateway., GET and return (status_code, response_text). HTTPError is treated as a     norma, POST the ADF comment to Jira with Basic auth. Returns (status, text)., Return the HTTP Basic auth header value: base64(email:token).
+Cohesion: 0.13
+Nodes (8): sign() + verify() should return True for unmodified content., Modifying content after signing should fail verification., Modifying the signature directly should fail verification., wrap_system_prompt() sets issuer='system' and passes verification., wrap_tool_result() sets issuer='tool:<name>' and passes verification., Two signers sharing the same key can cross-verify envelopes., Envelopes signed with one key should not verify with a different key., TestEnvelopeSigner
 
 ### Community 972 - "Setup Docs"
 Cohesion: 0.25
@@ -5552,8 +5661,8 @@ Cohesion: 0.29
 Nodes (7): Check Current Profile, List Available Profiles, Change Default Model, Check Telegram Channel Status, List Available Models, Quick Reference, View Configured Providers
 
 ### Community 987 - "Planning Docs"
-Cohesion: 0.29
-Nodes (6): 1. GitHub MCP, 2. Atlassian MCP (Jira + Confluence), 3. AWS API MCP, Available MCP Servers, Role, Skill: MCP Tools Usage (MCP-TOOLS)
+Cohesion: 0.14
+Nodes (8): MFAResult, Build an MFAGuard from environment variables / Docker secret file.          Reco, Return True if ``action_type`` requires a second factor right now.          Two, Verify the second factor for a high-risk action.          Args:             acti, Compute the RFC 6238 TOTP value for a specific time-step counter., Drop replay records older than the accepted window (bounded memory)., Outcome of an MFA verification.      Attributes:         allowed: True if the ac, _truthy()
 
 ### Community 988 - "docs/vault"
 Cohesion: 0.29
@@ -5572,8 +5681,8 @@ Cohesion: 0.29
 Nodes (6): 1. Normal Message Flow, 2. MCP Tool Call Flow, 3. Kill Switch Activation Flow, 4. SSH Command Flow, 5. Web Fetch Flow, AgentShroud Sequence Diagrams
 
 ### Community 992 - "browser-extension/popup.js"
-Cohesion: 0.29
-Nodes (7): 1. Add Test Coverage, 1. test-augmenter, 2. Run Validation Suite, 2. validation-runner, 3. safe-refactor, Common Workflows, Custom Agents
+Cohesion: 0.22
+Nodes (5): _make_integrity_pipeline(), Pipeline with ContextGuard + ContextIntegrityScorer mocks., ContextIntegrityScorer must run in process_inbound() — C21 wiring., 0.3 ≤ score < 0.6 warns but never blocks., TestContextIntegrityInPipeline
 
 ### Community 993 - "browser-extension/options.js"
 Cohesion: 0.29
@@ -5631,10 +5740,6 @@ Nodes (7): i-mcpm-auth-reset README, MCP Auth Reset Skill, i-mcpm-aws-profile RE
 Cohesion: 0.29
 Nodes (7): VII-A. Enforce-by-Default (R-02, R-03), VII-B. Outbound Information Filter (R-01), VII-C. Per-User Session Isolation (R-04, R-05), VII-D. Separation of Privilege (R-06, R-07), VII-E. Human-in-the-Loop (R-08, R-09), VII-F. Credential Isolation (R-10, R-11, R-12), VII. v0.8.0 Remediation
 
-### Community 1007 - "ESP32 Firmware"
-Cohesion: 0.29
-Nodes (7): 11.1 Complete 26-Module Security Matrix, 11.2 Unique AgentShroud Modules (No Competitor Implementation), 11.3 Competitor Analysis Details, 11.4 Security Coverage Gap Analysis, 11.5 Security Score Evolution, 11.6 Industry Implications, 11. Competitive Security Comparison Matrix
-
 ### Community 1008 - "docs/flows"
 Cohesion: 0.29
 Nodes (6): Active, `docs/planning/` — Index, Historic / archive, How to add a plan, Layout, What does NOT live here
@@ -5660,8 +5765,8 @@ Cohesion: 0.52
 Nodes (6): error(), info(), require_tool(), success(), warn(), security-scan.sh script
 
 ### Community 1014 - "gateway/tools"
-Cohesion: 0.29
-Nodes (7): Add Swap File, Backup Strategy, Cooling Recommendations, Important Notes, Optional: Automated Security Updates, Power Supply, Security Hardening Checklist
+Cohesion: 0.23
+Nodes (6): EgressRequest, Represents a pending egress approval request., EgressRequest, TestConfirmationModel, TestEgressRequestModel, TestEgressRequest
 
 ### Community 1015 - "docs/diagrams"
 Cohesion: 0.29
@@ -5676,8 +5781,8 @@ Cohesion: 0.33
 Nodes (6): Apache License 2.0 (skill-creator), About Skills, Progressive Disclosure (3-level skill loading), Skill Anatomy (SKILL.md + scripts/references/assets), Skill Creator, What Skills Provide
 
 ### Community 1018 - ".github/ISSUE_TEMPLATE"
-Cohesion: 0.33
-Nodes (4): Any, Get alerts from the last N hours., Get current integrity monitoring status., Convert to dictionary for JSON serialization.
+Cohesion: 0.40
+Nodes (5): Implementation Status, Step 1: Update Gateway to Block Credentials in Telegram, Step 2: Add Command Restrictions, Step 3: Update agentshroud.yaml, Step 4: Test the Protection
 
 ### Community 1019 - "docs/vault"
 Cohesion: 0.29
@@ -5692,12 +5797,16 @@ Cohesion: 0.29
 Nodes (4): Verify Docker Compose configuration isolates secrets correctly., Gateway service should have secrets configured., Agent (agentshroud) service should not have credential secrets., TestDockerSecretIsolation
 
 ### Community 1022 - "docs/project"
-Cohesion: 0.50
-Nodes (4): 9.1 Security Maturity Level, 9.2 Threat Model Coverage, 9.3 GO/NO-GO Decision, 9. Final Assessment
+Cohesion: 0.33
+Nodes (12): _load_overrides(), persist_group_collab_mode(), persist_group_create(), persist_group_delete(), persist_group_member_add(), persist_group_member_remove(), persist_user_collab_mode(), Persist a runtime group membership addition. (+4 more)
+
+### Community 1024 - "Planning Docs"
+Cohesion: 0.15
+Nodes (6): detect_base64_payloads(), Detect potential base64-encoded payloads in text.     Returns list of decoded st, Check for suspicious base64 content that decodes to injection attempts., Detect unicode obfuscation tricks., Scan input text for prompt injection patterns.          Args:             text:, Scan tool result content for indirect prompt injection.          Tool results (w
 
 ### Community 1025 - "scripts/export-telegram-history.py"
-Cohesion: 0.67
-Nodes (3): 1.1 Module Integration Status, 1.2 Critical Security Pipeline Flow, 1. Security Module Analysis
+Cohesion: 0.19
+Nodes (6): Public entry — records the decision for the SOC heat-map (SCRUM-80),         the, Check whether user_id may invoke the named tool.          Returns:             (, Check whether user_id may invoke tool_name when acting inside a group workspace., Return the list of tools the user is allowed to use (union of all sets)., Return tools explicitly denied for this user., Collect additional tools granted to the user via their group memberships.
 
 ### Community 1026 - "scripts/restore-backup.sh"
 Cohesion: 0.29
@@ -5739,10 +5848,6 @@ Nodes (4): Initialize approval queue          Args:             config: Approval
 Cohesion: 0.33
 Nodes (6): Blue Team Final: H4 (isolated network not internal), H5 (WS master token), H6 (path traversal), H7 (error disclosure) — FIXED, Container Audit C1/C2: SSH bypass via -F /dev/null + raw TCP — MITIGATED (iptables DOCKER-USER chain), Container Audit C3: /proc/1/environ secrets exposure — MITIGATED (tmpfs files, defense-in-depth), Container Network Architecture (agentshroud-isolated/internal dual-network, iptables rules), colima-firewall.sh (iptables DOCKER-USER chain — blocks bot→host:22, bot→pihole:53/80), container-security-audit-v0.8.0.md (50+ attack vectors tested)
 
-### Community 1036 - "Setup Docs"
-Cohesion: 0.67
-Nodes (3): 5.1 New v0.7.0 Features Assessment, 5.2 Pipeline Integration Verification, 5. Integration Gap Analysis
-
 ### Community 1037 - "Setup Docs"
 Cohesion: 0.33
 Nodes (5): Browser Fetch Skill, Features, Usage, Use Cases, Security
@@ -5760,8 +5865,8 @@ Cohesion: 0.33
 Nodes (6): AgentShroud Contribution Guide, Patent Pending (App No. 64/018,744) and Trademark Notice, Pull Request Process and Requirements, Test Guidelines (pytest-asyncio, conftest, no network calls), Postmortem Issue Template (Mandatory Test Requirement), Pull Request Checklist (IEC 62443, Coverage, Trademark, PII)
 
 ### Community 1041 - "Gateway Test Suite"
-Cohesion: 0.67
-Nodes (3): P1 — Active Defense (14/14 ✅), ⚠️ Warning: ContextGuard Enforcement, ⚠️ Warning: killswitch.sh Path
+Cohesion: 0.30
+Nodes (6): Run Trivy vulnerability scan., run_trivy_scan(), Run a Trivy scan and return parsed results.      Args:         target: Scan targ, run_trivy_scan(), scan_type='image' is passed correctly to the trivy binary., TestTrivyRun
 
 ### Community 1042 - "Gateway Test Suite"
 Cohesion: 0.33
@@ -5871,6 +5976,10 @@ Nodes (6): 1. Accomplishments This Phase, 🎯 **Binary Detection & Graceful Deg
 Cohesion: 0.33
 Nodes (6): 1. Accomplishments This Phase — Delivered Security Infrastructure, 🎯 **Complete Security Module Pipeline — 33/33 Modules Active**, 🔍 **Enhanced PII Detection & Compliance**, 🧪 **Enhanced Testing Infrastructure — 1547 Tests + 125 Security Audits**, 🎛️ **Production-Ready Control Centers**, 🏗️ **Robust Infrastructure & Architecture**
 
+### Community 1070 - "Bot Skill Config"
+Cohesion: 0.33
+Nodes (12): _make_stream_app_state(), _parse_sse_events(), _post_stream(), Build a mock app_state whose router streams `sentences_out` as raw     text delt, test_forward_stream_503_when_no_pipeline_configured(), test_forward_stream_drops_credential_bearing_sentence(), test_forward_stream_emits_sentence_events_then_done(), test_forward_stream_forward_error_still_emits_done_event() (+4 more)
+
 ### Community 1071 - "Bot Skill Config"
 Cohesion: 0.47
 Nodes (4): restore_tar_to_volume(), _rollback(), restore-backup.sh script, update-agentshroud.sh script
@@ -5883,13 +5992,17 @@ Nodes (4): log(), _stamp_write(), gateway-seccomp.json (Docker seccomp profile),
 Cohesion: 0.67
 Nodes (5): cmd_persist(), cmd_start(), cmd_status(), cmd_stop(), tailscale-serve.sh script
 
+### Community 1074 - "Bot Skill Config"
+Cohesion: 0.67
+Nodes (4): graphify GitHub clone & merge reference, graphify clone command, graphify merge-graphs command, Per-subfolder graphify-out avoids output clobbering
+
 ### Community 1075 - "Bot Skill Config"
 Cohesion: 0.33
 Nodes (6): CRITICAL (Do First):, HIGH VALUE:, LOW VALUE (Maybe Later):, MEDIUM VALUE:, Phase 3 Plan Reality Check, SKIP (Over-Engineering):
 
 ### Community 1076 - "Bot Skill Config"
-Cohesion: 0.33
-Nodes (6): Additional Dev Tools, Docker & Docker Compose, Git Configuration, Node.js (for OpenClaw & AgentShroud), Phase 2: Development Tools, Python (for testing tools)
+Cohesion: 0.17
+Nodes (7): Content appended to group-B must not appear in group-A memory., Both groups store separate content with no cross-contamination., group-A and group-B memory files must be in separate directories., group-{chat_id} sessions must live under the 'groups' subdirectory., Writes in group-A must not be readable from group-B., Content appended to group-A memory must not appear in group-B memory., TestGroupMemoryNamespaceIsolation
 
 ### Community 1077 - "Bot Skill Config"
 Cohesion: 0.33
@@ -5920,20 +6033,12 @@ Cohesion: 0.33
 Nodes (5): AgentShroud Skills Library, Custom Skills, Directory Structure, OpenClaw Built-in Skills, Usage
 
 ### Community 1090 - "Bot Skill Config"
-Cohesion: 0.32
-Nodes (5): Tests that _forward_to_telegram uses correct urlopen timeouts.      Regression g, Return a urlopen mock that records the timeout kwarg and succeeds., sendMessage and similar calls must use a 15s urlopen timeout., getUpdates must use a 60s urlopen timeout so the long-poll is not aborted early., TestForwardToTelegramTimeouts
-
-### Community 1092 - "Bot Skill Config"
 Cohesion: 0.33
-Nodes (6): 2.1 New `voice_gateway/` service, 2.2 Close the governed-path schema gap for Hermes  ⚠️ required, 2.3 Compose + tailnet exposure, 2.4 Egress & governance — what does NOT change, 2.5 Tests (CLAUDE.md §4, coverage gate `fail_under=84`), 2. Server-side work this branch must implement
-
-### Community 1093 - "Bot Skill Config"
-Cohesion: 0.33
-Nodes (6): 6.1 Toolchain + board support, 6.2 Roaming WiFi (join first reachable, skip captive portals), 6.3 Join the tailnet (MicroLink), 6.4 Connect to the Voice Gateway, 6.5 Audio + display state machine, 6. Firmware
+Nodes (3): Return a urlopen mock that records the timeout kwarg and succeeds., sendMessage and similar calls must use a 15s urlopen timeout., getUpdates must use a 60s urlopen timeout so the long-poll is not aborted early.
 
 ### Community 1094 - "Bot Skill Config"
-Cohesion: 0.33
-Nodes (6): 6. Tailscale — secure ESP→Hermes link ✅ LIVE (see docs/integrations/voice-terminal-esp32-s3.md), 6a. marvin is your tailnet host, 6b. Generate an auth key for the device, 6c. Add MicroLink to the firmware (SUPERSEDED — production uses Tailscale Funnel, no on-device client), 6d. Expose the Voice Gateway on marvin ✅ LIVE (`tailscale serve --bg 8765`), 6e. ACL lock-down (recommended)
+Cohesion: 0.17
+Nodes (3): Default-deny allowlist: unlisted domains are blocked., Default (denylist) mode is unchanged., TestAllowlistMode
 
 ### Community 1095 - "Bot Skill Config"
 Cohesion: 0.33
@@ -6050,14 +6155,6 @@ Nodes (4): Hermes — Podcast Production Orchestrator, Purpose, Related Skills, 
 ### Community 1125 - "Bot Skill Config"
 Cohesion: 0.40
 Nodes (4): iCloud Data Manager (ICLOUD), Purpose, Related Skills, Usage
-
-### Community 1126 - "Bot Skill Config"
-Cohesion: 0.40
-Nodes (5): Add Contact, Contact Operations, List Contacts, Search Contacts, Update Contact
-
-### Community 1127 - "Bot Skill Config"
-Cohesion: 0.06
-Nodes (36): _resolve_bot_container must use BotConfig.resolved_container_name, not     a har, TestResolveBotContainer, check_agentshroud_updates(), check_bot_updates(), check_openclaw_updates(), _get_engine(), get_logs(), killswitch() (+28 more)
 
 ### Community 1128 - "Bot Skill Config"
 Cohesion: 0.40
@@ -6307,14 +6404,6 @@ Nodes (5): ssh_config.py — SSH Proxy Configuration, SSHConfig, SSHHostConfig, 
 Cohesion: 0.50
 Nodes (3): ArgumentParser, TestParserAndCommandResolution, build_parser()
 
-### Community 1190 - "Architecture Docs"
-Cohesion: 0.40
-Nodes (5): Basic Usage, Check Context Usage, Run with Specific Agent, Select Model, Start Interactive Session
-
-### Community 1191 - "branding/colors"
-Cohesion: 0.40
-Nodes (5): Install Script, Installation, macOS / Linux, npm (Cross-platform), Windows
-
 ### Community 1192 - "docs/data"
 Cohesion: 0.40
 Nodes (4): Checklist, IEC 62443 Reference, Summary, Type of Change
@@ -6328,8 +6417,8 @@ Cohesion: 0.33
 Nodes (6): [1.1.1] — fix/guard-wiring-and-ops-hardening (2026-06-10), Added, Fixed, Removed, Security, Summary
 
 ### Community 1195 - "Bot Skill Config"
-Cohesion: 0.40
-Nodes (5): Cron Scheduler (8 scheduled jobs), iMessage Input (imsg-ssh bridge), Receive message / cron trigger, Telegram Input (@agentshroud_bot), Web UI Input (localhost:18790)
+Cohesion: 0.18
+Nodes (10): group_router.py (GroupApprovalRouter), gateway/approval_queue/group_router.py (group-{chatId} agent-id scheme, referenced), ingest_api models.py (ApprovalRequest), apply-patches.js (idempotent openclaw.json patch script), mock_send_message(), Mock async Telegram sendMessage to capture DM and group notifications., GroupApprovalRouter wired with a mock Telegram send function., Return (router, sent_list) tuple for assertion convenience. (+2 more)
 
 ### Community 1196 - "Bot Skill Config"
 Cohesion: 0.40
@@ -6368,8 +6457,8 @@ Cohesion: 0.50
 Nodes (5): graphify query/path/explain reference, /graphify explain command, /graphify path command, save-result Feedback Loop, Constrained query-vocabulary expansion
 
 ### Community 1205 - "ESP32 Firmware"
-Cohesion: 0.40
-Nodes (5): 7.1 Pre-Red Team (Critical), 7.2 Short-term (High Priority), 7.3 Medium-term (Medium Priority), 7.4 Long-term (Low Priority), 7. Recommendations by Severity
+Cohesion: 0.06
+Nodes (34): 10. Steve Hay Assessment Alignment, 1.1 Module Integration Status, 1.2 Critical Security Pipeline Flow, 1. Security Module Analysis, 2.1 Loss Categories, 2.2 Heat Map Matrix, 2.3 Coverage Analysis, 2. Steve Hay Heat Map Assessment (+26 more)
 
 ### Community 1206 - "ESP32 Firmware"
 Cohesion: 0.40
@@ -6408,8 +6497,8 @@ Cohesion: 0.70
 Nodes (4): check_fail(), check_pass(), check_warn(), verify-security.sh script
 
 ### Community 1216 - "Gateway Proxy Layer"
-Cohesion: 0.33
-Nodes (6): 1.1 Capabilities, 1.2 Seccomp Profile, 1.3 Read-Only Filesystem (Planned), 1.4 Non-Root Execution, 1.5 Resource Limits, 1. Container Hardening
+Cohesion: 0.20
+Nodes (11): curriculum.md (input requirement), Atlas README, Atlas — Curriculum Architect (README), i-atlas SKILL (Curriculum Architect), Atlas — Curriculum Architect (SKILL), Bloom's Taxonomy, curriculum.md output, curriculum.md Output Template (+3 more)
 
 ### Community 1217 - "Custom Skills"
 Cohesion: 0.40
@@ -6422,10 +6511,6 @@ Nodes (5): OpenSCAP & IEC 62443 Compliance - CRITICAL ✅, Read-Only Filesystem 
 ### Community 1219 - "Planning Docs"
 Cohesion: 0.40
 Nodes (5): Revised Threat Model, Scenario 1: Multi-User Bot Access, Scenario 2: External Hosting (AWS/GCP), Scenario 3: Prompt Injection → System Compromise, Scenario 4: Supply Chain Attack (Malicious Skill)
-
-### Community 1220 - "Planning Docs"
-Cohesion: 0.40
-Nodes (5): Bot Account (Manual Setup Required), Bot Account (You Do This Manually), Clone Repo on Pi, Phase 3: GitHub Setup, Repo Access
 
 ### Community 1221 - "Planning Docs"
 Cohesion: 0.40
@@ -6444,20 +6529,12 @@ Cohesion: 0.40
 Nodes (4): AgentShroud Module Inventory, Original 33 Modules (v0.6.0), Pipeline Integration Points, v0.7.0 New Modules (Tier 2+3 + Hardening)
 
 ### Community 1225 - "Planning Docs"
-Cohesion: 0.33
-Nodes (4): Test approval queue endpoints., Test listing pending approvals., Test making approval decisions., TestApprovalEndpoints
-
-### Community 1237 - "Docker Deploy Scripts"
-Cohesion: 0.33
-Nodes (4): Test error handling across endpoints., Test 404 handling for non-existent endpoints., Test 405 handling for wrong HTTP methods., TestErrorHandling
-
-### Community 1238 - "Docker Deploy Scripts"
-Cohesion: 0.33
-Nodes (4): Regression tests for /v1beta proxy response handling., Plain-text upstream errors must not turn into gateway 500s., JSON upstream responses must stay JSON., TestGoogleAPIProxy
+Cohesion: 0.22
+Nodes (6): NetworkSecurityFinding, A network security finding., Validate runtime network configuration using Docker API., Validate a single container's runtime network configuration., Detect drift between compose file and runtime configuration., Test NetworkSecurityFinding dataclass structure.
 
 ### Community 1241 - "Community 1241"
-Cohesion: 0.40
-Nodes (5): 12. OTA Wireless Firmware Updates, How it works, One-time bootstrap (USB flash — do this when back at marvin), Ongoing update workflow (no USB ever again), Troubleshooting OTA
+Cohesion: 0.29
+Nodes (4): Automated verification that verify_killswitch() returns required fields., dry_run=True must never trigger actual kill switch execution., verify_killswitch() must write a log entry for auditability., TestKillSwitchVerification
 
 ### Community 1242 - "Security Docs"
 Cohesion: 0.50
@@ -6556,8 +6633,8 @@ Cohesion: 0.50
 Nodes (3): Action, Resource, Raise 403 if the caller lacks the required permission.
 
 ### Community 1266 - "skills/openclaw"
-Cohesion: 0.50
-Nodes (4): Environment, Key Testing Requirements, Primary Focus, Repository Context
+Cohesion: 0.29
+Nodes (4): Verify _quarantine_blocked_message sends threshold warnings to the collaborator., The 4th block stays at ALERT but must NOT fire a second notification., Owner should receive an escalation notice on the 3rd block., TestCollabLockdownNotifications
 
 ### Community 1267 - "Architecture Docs"
 Cohesion: 0.50
@@ -6583,6 +6660,10 @@ Nodes (3): entries, generated_at, version
 Cohesion: 0.50
 Nodes (3): Current Status, Planned Documents, Project Documentation
 
+### Community 1273 - "Bot Skill Config"
+Cohesion: 0.20
+Nodes (9): Container Integration, Playwright, Purpose, Related Notes, Security Controls, Volume, browser_security.py, web_proxy.py (+1 more)
+
 ### Community 1274 - "Bot Skill Config"
 Cohesion: 0.50
 Nodes (4): SecureBrowser security-policies.md — threat model and policy reference, SecureBrowser browse.py — enterprise secure browser automation, SecureBrowser class — enterprise-controlled Playwright wrapper, SecureBrowser config.yaml — allowlist/approval/audit security config
@@ -6590,6 +6671,10 @@ Nodes (4): SecureBrowser security-policies.md — threat model and policy refere
 ### Community 1275 - "docs/setup-slack.md"
 Cohesion: 0.50
 Nodes (3): Current Status, Planned Documents, Requirements Documentation
+
+### Community 1276 - "ESP32 Firmware"
+Cohesion: 0.20
+Nodes (9): Common Missing Domains, Diagnosis, Egress Filter Errors, Egress Filter Not Initialized, Fix: Add Domain to Allowlist, HTTP 403 — Egress Blocked, Monitor Mode — Egress Not Enforced, Related Notes (+1 more)
 
 ### Community 1277 - "ESP32 Firmware"
 Cohesion: 0.40
@@ -6600,16 +6685,16 @@ Cohesion: 0.40
 Nodes (5): [1.3.0] "Reliability" (2026-07-21), Added, Changed, Fixed, Summary
 
 ### Community 1279 - "ESP32 Firmware"
-Cohesion: 0.40
-Nodes (4): AgentShroud Dashboard, Components (to be implemented in Week 2), Implementation Status, Tech Stack
+Cohesion: 0.29
+Nodes (5): Any, End-to-end: register the bridge on a real ResourceGuard, trigger         its ale, The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher., Recreate the lifespan bridge closure verbatim from gateway/ingest_api/lifespan.p, TestResourceGuardAlertBridge
 
 ### Community 1280 - "docs/governance"
 Cohesion: 0.40
 Nodes (3): LogRecord, Filter log record, sanitizing sensitive content., Sanitize sensitive data in text.
 
 ### Community 1281 - "branding/guidelines"
-Cohesion: 0.40
-Nodes (5): 4.1 Base Images, 4.2 Dependencies, 4.3 Image Build, 4.4 Image Storage, 4. Image Provenance and Updates
+Cohesion: 0.24
+Nodes (6): Setup resource guard with custom limits., setup_resource_guard(), The lifespan must stop the background monitor task on shutdown., ResourceGuard is instantiated at startup and reachable on app_state., TestResourceGuardLifecycle, TestResourceGuardWiring
 
 ### Community 1282 - "Bot Container Scripts"
 Cohesion: 0.50
@@ -6695,6 +6780,10 @@ Nodes (3): Current Status, Planned Documents, Testing Documentation
 Cohesion: 0.83
 Nodes (3): fail(), pass(), test-op-auth.sh script
 
+### Community 1316 - "Gateway Test Suite"
+Cohesion: 0.20
+Nodes (6): Group workspace content must not leak into any user's DM workspace., Content written to a group must not appear in any user's private DM memory., Content written to a user DM must not appear in any group memory., User DM content must not leak into a group the user is NOT a member of., get_merged_memory_for_user returns group section and private section separately., TestGroupMemoryInvisibleFromDM
+
 ### Community 1317 - "Gateway Test Suite"
 Cohesion: 0.50
 Nodes (4): DELIVERABLE 4 — v1.0 Roadmap, Phase 1: Foundation Hardening (v0.8.0, completed), Phase 2: Detection Enhancement (v0.9.3–v0.9.5, Weeks 5-10), Phase 3: Operational Maturity (v0.9.6–v1.0.0, Weeks 11-16)
@@ -6740,8 +6829,8 @@ Cohesion: 0.50
 Nodes (4): [1.2.0] — feat/esp32-s3-hermes-voice (2026-06-24), Added, Fixed, Summary
 
 ### Community 1337 - "Bot Skill Config"
-Cohesion: 0.10
-Nodes (14): Any, callable, Main tool chain analysis engine.      Tracks sequences of tool calls and identif, Approve a pending tool call that required approval.          Args:             s, Get statistics for a session., Get global analyzer statistics., Add a callback function for chain detection alerts., Scan tool parameters for injection payloads and return sanitized copy. (+6 more)
+Cohesion: 0.09
+Nodes (17): Any, callable, Main tool chain analysis engine.      Tracks sequences of tool calls and identif, Initialize the tool chain analyzer.          Args:             config: Configura, Load default suspicious chain patterns., Load custom patterns from configuration., Approve a pending tool call that required approval.          Args:             s, Get statistics for a session. (+9 more)
 
 ### Community 1338 - "Bot Skill Config"
 Cohesion: 0.67
@@ -6758,6 +6847,10 @@ Nodes (3): Diagram 08: Entity Relationship Diagram, Diagram 09: Data Lineage, Di
 ### Community 1342 - "Bot Skill Config"
 Cohesion: 0.67
 Nodes (3): Gateway observability (GET /status, GET /ledger, MCP audit log, HTTP CONNECT proxy stats), GET /ledger audit query API, Observability Gaps (Future Work): no log aggregation, no metrics export, no uptime monitor, Zabbix uninstalled
+
+### Community 1343 - "Bot Skill Config"
+Cohesion: 0.20
+Nodes (4): Tests for indirect prompt injection detection in tool results., Explicit ignore-instructions payload embedded in a tool result., Tool result scan blocks at score ≥ 0.6 vs direct scan threshold of 0.8., TestToolResultScan
 
 ### Community 1344 - "Bot Skill Config"
 Cohesion: 0.67
@@ -6815,29 +6908,169 @@ Nodes (3): wacli Safety Rules (explicit recipient + confirm before send), OpenCl
 Cohesion: 0.67
 Nodes (3): dashboard.html — Web Control Center Dashboard, installer.html — Installation Wizard UI, management.html — Management Dashboard UI
 
+### Community 1417 - "scripts/gen-code-graph.sh"
+Cohesion: 0.22
+Nodes (5): Any, Parse network configuration for a service., Validate network definitions in compose file., Get comprehensive network security report., Export network security report to file.
+
 ### Community 1507 - "Community 1507"
-Cohesion: 0.50
-Nodes (4): Alerting, Logging, Monitoring Integration, Prometheus/Grafana
-
-### Community 1508 - "Community 1508"
-Cohesion: 0.50
-Nodes (4): Automation Examples, CI/CD Integration, Daily Security Check (cron), Weekly Compliance Scan (cron)
-
-### Community 1509 - "Community 1509"
-Cohesion: 0.50
-Nodes (3): Test /status endpoint., Test basic status endpoint functionality., TestStatusEndpoint
-
-### Community 1510 - "Community 1510"
-Cohesion: 0.50
-Nodes (3): Test /mcp/proxy endpoint., Test MCP proxy endpoint basic functionality., TestMCPProxyEndpoint
+Cohesion: 0.22
+Nodes (9): TABLE IV: Test Coverage by Defense Layer, TABLE V: Phase 8.5 E2E Verification Scenarios, TABLE VI: Post-Remediation Coverage Summary, TABLE VII: Security Module Comparison, VIII-A. Test Coverage, VIII-B. Enforcement Verification, VIII-C. Module Coverage Matrix, VIII-D. Competitive Analysis (+1 more)
 
 ### Community 1511 - "Community 1511"
 Cohesion: 0.50
 Nodes (4): Elevator pitch, Key Messaging, One-liner, What it is NOT
 
+### Community 1512 - "Community 1512"
+Cohesion: 0.42
+Nodes (8): describe_cron(), docker_exec(), fmt_ts(), load_hermes_jobs(), load_openclaw_jobs(), main(), Best-effort plain-language gloss of a 5-field cron expression., render_html()
+
 ### Community 1513 - "Community 1513"
-Cohesion: 0.12
-Nodes (53): AuditResult, ContributorRecord, Any, Request, WebSocket, SCLInterface, Threat levels for detected issues., ThreatLevel (+45 more)
+Cohesion: 0.19
+Nodes (44): AuditResult, BaseModel, RBACManager, Role, Any, Request, WebSocket, WebSocket (+36 more)
+
+### Community 1514 - "Community 1514"
+Cohesion: 0.22
+Nodes (5): A non-owner author cannot write into another user's private memory., A user may write into their own private memory., The owner may write into any user's private memory., Back-compat: existing callers that pass no author_id/rbac_config keep working., TestUserMemoryWriteACL
+
+### Community 1517 - "Gateway Test Suite"
+Cohesion: 0.25
+Nodes (8): How to start a task, Monitoring progress, Source of truth, Starting a Development Task via Hermes / OpenClaw, Status: ready to use, with 4 known gaps (see below), Things that will make a task halt and ask you, not fail silently, What happens automatically (confirmed real, in, What is **not** currently automated (the 4 gaps)
+
+### Community 1519 - "Community 1519"
+Cohesion: 0.25
+Nodes (8): Layer 1 — Core Pipeline (P0), Layer 2 — Middleware (P1), Layer 3 — Output Protection, Layer 4 — Tool & Agent Control, Layer 5 — Network & Egress, Layer 6 — File & Memory Integrity, Layer 7 — Infrastructure & Supply Chain, Security Architecture
+
+### Community 1523 - "Community 1523"
+Cohesion: 0.25
+Nodes (8): A2A (Agent-to-Agent) Protocol Threat Analysis, E — Elevation of Privilege: Cross-Process Isolation Break, I — Information Disclosure / Elevation of Privilege: Unsandboxed Live-Session Injection, I — Information Disclosure: SSRF via Push-Notification Callback URLs, Not Yet Mitigated (Explicitly Deferred), R — Repudiation: Rejected Auth Attempts Not Audited, S — Spoofing: Peer Identity Collapse Behind a Reverse Proxy, T — Tampering: Cross-Tenant Task Ownership via `contextId` Collision
+
+### Community 1529 - "Community 1529"
+Cohesion: 0.29
+Nodes (5): ChainMatch, A detected suspicious chain., Analyze a tool call for suspicious chain patterns.          Args:             se, Trigger alert callbacks for a detected chain., Remove old sessions to prevent memory bloat.
+
+### Community 1535 - "Community 1535"
+Cohesion: 0.39
+Nodes (3): Smoke test against the actual committed registry — every real         ghsa_id cu, _script(), TestListRegistryGhsaIds
+
+### Community 1536 - "Community 1536"
+Cohesion: 0.25
+Nodes (5): Finding RT-N1/RT-N2: TrustManager uses shared in-memory DB keyed by agent_id., RT-N1: Recording a violation against openclaw MUST NOT change hermes trust., RT-N1 (reverse): Hermes violation must not demote OpenClaw., RT-N2: Bot agent IDs ('openclaw', 'hermes') are separate from user IDs., TestCrossBotTrustPivot
+
+### Community 1543 - "Community 1543"
+Cohesion: 0.39
+Nodes (4): Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered correc, URL-encoded getUpdates body must call mark_delivered with the correct int offset, JSON getUpdates body must still call mark_delivered (existing behaviour preserve, TestReplayBufferOffsetParsing
+
+### Community 1550 - "Community 1550"
+Cohesion: 0.38
+Nodes (4): Build the owner DM notification text., Build the group thread reply notification text., Route an approval notification to the appropriate recipients.          Routing l, ApprovalRequest
+
+### Community 1552 - "Community 1552"
+Cohesion: 0.29
+Nodes (6): 1. GitHub MCP, 2. Atlassian MCP (Jira + Confluence), 3. AWS API MCP, Available MCP Servers, Role, Skill: MCP Tools Usage (MCP-TOOLS)
+
+### Community 1554 - "Community 1554"
+Cohesion: 0.29
+Nodes (7): Operating Rules (Non-Negotiable), Rule 1: All Regions, Every Time, Rule 2: Default Read-Only, Rule 3: Script Everything, Rule 4: Evidence-First Recommendations, Rule 5: Safe Tagging, Rule 6: Never Delete Automatically
+
+### Community 1556 - "Community 1556"
+Cohesion: 0.29
+Nodes (7): 1. Pre-populate known_hosts, 2. Network Segmentation, 3. Key Rotation, 4. Rate Limiting, 5. Output Sanitization, 6. Least-Privilege SSH Users, Recommendations for Production Deployment
+
+### Community 1557 - "Community 1557"
+Cohesion: 0.29
+Nodes (7): 1. Add Test Coverage, 1. test-augmenter, 2. Run Validation Suite, 2. validation-runner, 3. safe-refactor, Common Workflows, Custom Agents
+
+### Community 1560 - "chatbot/__init__.py"
+Cohesion: 0.33
+Nodes (4): Verifies per-bot session path layout is correctly separated., Session directory path must embed bot_id so filesystem confirms isolation., Session manager must reject bot_id with path traversal characters., TestSessionPathSeparation
+
+### Community 1565 - "Community 1565"
+Cohesion: 0.38
+Nodes (4): B1: one-shot 400-retry for unbalanced HTML parse errors., First sendMessage returns 400 'can't parse entities'; retry with plain text succ, Persistent 400 returns the error after exactly one retry (no infinite loop)., TestTelegram400Retry
+
+### Community 1567 - "Community 1567"
+Cohesion: 0.33
+Nodes (6): TABLE II: Unsafe Control Action Distribution, TABLE III: STPA-Sec Requirement Tiers, VI-A. Methodology, VI-B. Findings, VI-C. Requirements, VI. STPA-Sec Analysis
+
+### Community 1570 - "Community 1570"
+Cohesion: 0.33
+Nodes (3): Parse owner command target as numeric id or known collaborator alias., Resolve owner target from pending-request username aliases (e.g., /approve ana)., Resolve target by id, static alias, or pending username alias.          Resoluti
+
+### Community 1573 - "Community 1573"
+Cohesion: 0.33
+Nodes (3): Return HMAC key: env var preferred, session-scoped random fallback., Compute and return an HMAC-SHA256 fingerprint for the system prompt., Return True if prompt_text matches the stored HMAC fingerprint.
+
+### Community 1574 - "Community 1574"
+Cohesion: 0.33
+Nodes (4): Cover the no-op _default_send stub used when no transport is injected., GroupApprovalRouter._default_send returns {ok: True} without raising., Router with no send_message_fn uses the default stub (no network calls)., TestGroupApprovalRouterDefaultSend
+
+### Community 1575 - "Community 1575"
+Cohesion: 0.33
+Nodes (3): PII sanitiser mock that simulates two entity redactions., Owner query must pass through PII sanitisation unchanged; sanitiser not called., Non-owner query must still be PII-scrubbed (detector + threshold unchanged).
+
+### Community 1579 - "Community 1579"
+Cohesion: 0.33
+Nodes (6): 2.1 New `voice_gateway/` service, 2.2 Close the governed-path schema gap for Hermes  ⚠️ required, 2.3 Compose + tailnet exposure, 2.4 Egress & governance — what does NOT change, 2.5 Tests (CLAUDE.md §4, coverage gate `fail_under=84`), 2. Server-side work this branch must implement
+
+### Community 1580 - "Community 1580"
+Cohesion: 0.33
+Nodes (6): 6.1 Toolchain + board support, 6.2 Roaming WiFi (join first reachable, skip captive portals), 6.3 Join the tailnet (MicroLink), 6.4 Connect to the Voice Gateway, 6.5 Audio + display state machine, 6. Firmware
+
+### Community 1581 - "Community 1581"
+Cohesion: 0.33
+Nodes (6): 6. Tailscale — secure ESP→Hermes link ✅ LIVE (see docs/integrations/voice-terminal-esp32-s3.md), 6a. marvin is your tailnet host, 6b. Generate an auth key for the device, 6c. Add MicroLink to the firmware (SUPERSEDED — production uses Tailscale Funnel, no on-device client), 6d. Expose the Voice Gateway on marvin ✅ LIVE (`tailscale serve --bg 8765`), 6e. ACL lock-down (recommended)
+
+### Community 1582 - "Community 1582"
+Cohesion: 0.40
+Nodes (3): Any, Get a summary of all findings., Export findings to a detailed report.
+
+### Community 1583 - "Community 1583"
+Cohesion: 0.40
+Nodes (5): Basic Usage, Check Context Usage, Run with Specific Agent, Select Model, Start Interactive Session
+
+### Community 1584 - "Community 1584"
+Cohesion: 0.40
+Nodes (5): Install Script, Installation, macOS / Linux, npm (Cross-platform), Windows
+
+### Community 1585 - "Community 1585"
+Cohesion: 0.40
+Nodes (4): BOT_CONTAINER, BOT_DEFAULTS_DIR, BOT_LIVE_SKILLS_DIR, update-bot-agents.sh script
+
+### Community 1586 - "Community 1586"
+Cohesion: 0.40
+Nodes (5): I - Information Disclosure, Threat: DNS Data Exfiltration, Threat: Environment Variable Leakage, Threat: PII Leakage in Logs, Threat: SSRF (Server-Side Request Forgery)
+
+### Community 1588 - "Community 1588"
+Cohesion: 0.40
+Nodes (3): /api/alerts must reject non-localhost callers (S1 fix)., Handler returns ok=True when called from 127.0.0.1., TestAlertsLocalhostEnforcement
+
+### Community 1590 - "Community 1590"
+Cohesion: 0.40
+Nodes (5): 12. OTA Wireless Firmware Updates, How it works, One-time bootstrap (USB flash — do this when back at marvin), Ongoing update workflow (no USB ever again), Troubleshooting OTA
+
+### Community 1593 - "Community 1593"
+Cohesion: 0.67
+Nodes (3): gateway POST /email/send-owner endpoint, _email_owner(), email_helper.sh script
+
+### Community 1594 - "Community 1594"
+Cohesion: 0.50
+Nodes (4): Environment, Key Testing Requirements, Primary Focus, Repository Context
+
+### Community 1595 - "Community 1595"
+Cohesion: 0.50
+Nodes (4): Re-read ``~/.llm_settings/`` and sync skills/agents/MCP into both bot configs., Re-read ``~/.llm_settings/``, scan for supply-chain risk, deploy to both bots., skills_reload(), _skills_reload_impl()
+
+### Community 1596 - "Community 1596"
+Cohesion: 0.67
+Nodes (3): D - Denial of Service, Threat: Context Window Stuffing, Threat: Resource Exhaustion
+
+### Community 1597 - "Community 1597"
+Cohesion: 0.67
+Nodes (3): T - Tampering with Data, Threat: Audit Log Tampering, Threat: Configuration Drift
+
+### Community 1599 - "Community 1599"
+Cohesion: 0.67
+Nodes (3): Hermes Cannot Force-Switch to Custom-Named Local Model (Gap #8), LOCAL_MODEL_ROUTES Dict, Turbo Fieldflare Local Backend
 
 ## Ambiguous Edges - Review These
 - `security-scheduler.sh` → `gateway-seccomp.json (Docker seccomp profile)`  [AMBIGUOUS]
@@ -6878,9 +7111,9 @@ Nodes (53): AuditResult, ContributorRecord, Any, Request, WebSocket, SCLInterfac
   examples/agentshroud-with-tool-risk.yaml · relation: rationale_for
 
 ## Knowledge Gaps
-- **8334 isolated node(s):** `Guidance for Claude Code (claude.ai/code) when working in this repository.`, `These instructions are authoritative. Follow them strictly.`, `Keep actions deterministic, minimal, and aligned with how this repo is actually run.`, `KNOWLEDGE MAP — READ THIS FIRST`, `0) PRIME DIRECTIVE (NON-NEGOTIABLE)` (+8329 more)
+- **8333 isolated node(s):** `HOME`, `HERMES_HOME`, `XDG_STATE_HOME`, `XDG_DATA_HOME`, `XDG_CACHE_HOME` (+8328 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **371 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **429 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
