@@ -1,12 +1,12 @@
 ---
 source_file: "docs/testing/README.md"
 type: "document"
-community: "docs/testing"
+community: "Setup Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/testing
+  - community/Setup_Docs
 ---
 
 # Testing Documentation
@@ -16,4 +16,4 @@ tags:
 - [[Planned Documents_6]] - `contains` [EXTRACTED]
 - [[README_89]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/testing
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

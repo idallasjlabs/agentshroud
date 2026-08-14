@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "ESP32 Firmware"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/ESP32_Firmware
 ---
 
 # The test command in CONTRIBUTING.md should be valid.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pytest_command_syntax()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/ESP32_Firmware

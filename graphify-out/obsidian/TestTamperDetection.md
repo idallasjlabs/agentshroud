@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "branding/guidelines"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/branding/guidelines
 ---
 
 # TestTamperDetection
@@ -21,4 +21,4 @@ tags:
 - [[Tamper detection at various chain positions.]] - `rationale_for` [EXTRACTED]
 - [[test_audit_chain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/branding/guidelines

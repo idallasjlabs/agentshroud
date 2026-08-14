@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_FIX.md"
 type: "document"
-community: "Setup Docs"
+community: "Gateway Test Suite"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # The Fix
@@ -16,4 +16,4 @@ tags:
 - [[Option 2 Check if Messages.app is Signed In]] - `contains` [EXTRACTED]
 - [[iMessage Integration Fix (imsg + imessage-exporter)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

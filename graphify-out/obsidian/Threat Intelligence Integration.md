@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Security Docs"
-location: "L239"
+community: "Bot Skill Config"
+location: "L371"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Threat Intelligence Integration
@@ -16,4 +16,4 @@ tags:
 - [[Threat Feeds]] - `contains` [EXTRACTED]
 - [[Threat Scoring Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

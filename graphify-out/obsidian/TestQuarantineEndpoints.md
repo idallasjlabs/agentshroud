@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "Gateway Security Module"
 location: "L292"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Gateway_Security_Module
 ---
 
 # TestQuarantineEndpoints
@@ -20,4 +20,4 @@ tags:
 - [[Test quarantine management endpoints in main.py.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

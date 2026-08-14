@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "scripts/gemini-review.py"
 location: "L519"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/scripts/gemini-reviewpy
 ---
 
 # TestScoreIncidentResponse
@@ -18,4 +18,4 @@ tags:
 - [[.test_three_with_falco_and_wazuh()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/scripts/gemini-reviewpy

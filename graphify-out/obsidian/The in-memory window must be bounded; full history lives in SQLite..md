@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Security Pipeline Core"
+community: "SOC RBAC & Auth"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Pipeline_Core
+  - community/SOC_RBAC__Auth
 ---
 
 # The in-memory window must be bounded; full history lives in SQLite.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditChainBounded]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Pipeline_Core
+#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth

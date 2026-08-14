@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Web Control Center"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Web_Control_Center
 ---
 
 # TestSwitchModelIdempotent
@@ -21,4 +21,4 @@ tags:
 - [[switch_model.sh local m twice must leave docker.env unchanged on second run.]] - `rationale_for` [EXTRACTED]
 - [[test_switch_model_idempotent.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Web_Control_Center

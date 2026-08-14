@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
 community: "Gateway Test Suite"
-location: "L71"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED

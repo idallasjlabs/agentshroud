@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Tool Chain Analyzer"
+community: "Gateway Test Suite"
 location: "L525"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Chain_Analyzer
+  - community/Gateway_Test_Suite
 ---
 
 # TestReversibilityScoring
@@ -28,4 +28,4 @@ tags:
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Chain_Analyzer
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

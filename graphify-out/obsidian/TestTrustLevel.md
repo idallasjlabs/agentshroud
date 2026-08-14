@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "URL/Domain Validation Tests"
+community: "Gateway Test Suite"
 location: "L148"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/URL/Domain_Validation_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # TestTrustLevel
@@ -18,4 +18,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/URL/Domain_Validation_Tests
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "ESP32 Firmware"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/ESP32_Firmware
 ---
 
 # The wrapper hard-codes the internal control-plane endpoint and nothing else.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_wrapper_targets_only_internal_gateway_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/ESP32_Firmware
