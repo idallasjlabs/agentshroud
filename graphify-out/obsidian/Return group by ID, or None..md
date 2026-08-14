@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Approval & FastAPI Ingest"
 location: "L241"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Return group by ID, or None.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

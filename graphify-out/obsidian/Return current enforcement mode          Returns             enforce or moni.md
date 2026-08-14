@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Telegram Proxy Test Suite"
 location: "L410"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Return current enforcement mode          Returns:             "enforce" or "moni
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

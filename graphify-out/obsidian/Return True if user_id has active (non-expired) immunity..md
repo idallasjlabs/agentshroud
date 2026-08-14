@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
-location: "L583"
+community: "Cross-Bot Trust Ledger"
+location: "L591"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # Return True if user_id has active (non-expired) immunity.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._is_immune()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "rationale"
-community: "Bot Container Scripts"
+community: "Gateway Test Suite"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Gateway_Test_Suite
 ---
 
 # Rewrite the Host header to `new_host` and normalize Connection framing.      `he
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rewrite_request_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

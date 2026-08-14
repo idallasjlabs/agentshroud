@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Auth & Exception Types"
-location: "L670"
+community: "PII Sanitizer Pipeline"
+location: "L677"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Resolve trusted effective identity and prevent owner spoofing via body.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_resolve_effective_agent_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

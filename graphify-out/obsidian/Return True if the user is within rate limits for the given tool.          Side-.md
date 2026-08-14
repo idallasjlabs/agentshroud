@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Progressive Trust Config"
+community: "File Sandbox"
 location: "L499"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/File_Sandbox
 ---
 
 # Return True if the user is within rate limits for the given tool.          Side-
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_tool_rate_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

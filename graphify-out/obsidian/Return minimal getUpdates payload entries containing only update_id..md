@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
-location: "L3183"
+community: "Gateway Test Suite"
+location: "L3204"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Gateway_Test_Suite
 ---
 
 # Return minimal getUpdates payload entries containing only update_id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._build_ack_only_updates()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

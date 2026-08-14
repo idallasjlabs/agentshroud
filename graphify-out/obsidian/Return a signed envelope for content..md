@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "Cross-Bot Trust Ledger"
+community: "MCP Proxy Config"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/MCP_Proxy_Config
 ---
 
 # Return a signed envelope for content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.sign()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

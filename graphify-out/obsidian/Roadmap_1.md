@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "Planning Docs"
+community: "browser-extension/manifest.json"
 location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/browser-extension/manifestjson
 ---
 
 # Roadmap
@@ -21,4 +21,4 @@ tags:
 - [[P4 Wire MCP Proxy ✅ DONE]] - `contains` [EXTRACTED]
 - [[P5 Wire SecurityPipeline to forward ✅ DONE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/browser-extension/manifestjson

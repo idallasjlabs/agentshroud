@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
-location: "L7739"
+community: "Gateway Test Suite"
+location: "L7783"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Gateway_Test_Suite
 ---
 
 # Resolve effective collaboration mode for a user.          Resolution order:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._resolve_collaborator_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

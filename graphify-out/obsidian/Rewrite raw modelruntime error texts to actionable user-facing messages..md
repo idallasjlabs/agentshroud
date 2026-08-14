@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
-location: "L3881"
+community: "Gateway Test Suite"
+location: "L3899"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Gateway_Test_Suite
 ---
 
 # Rewrite raw model/runtime error texts to actionable user-facing messages.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._apply_outbound_model_error_rewrites()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

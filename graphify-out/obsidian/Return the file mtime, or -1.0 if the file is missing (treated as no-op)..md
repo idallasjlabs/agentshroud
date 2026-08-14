@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Slack API Proxy"
 location: "L776"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Slack_API_Proxy
 ---
 
 # Return the file mtime, or -1.0 if the file is missing (treated as no-op).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_default_mtime()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy

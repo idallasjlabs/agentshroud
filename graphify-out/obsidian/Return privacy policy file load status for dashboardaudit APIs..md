@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Enforce-Mode Auto-Revert"
 location: "L367"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # Return privacy policy file load status for dashboard/audit APIs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_privacy_policy_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert

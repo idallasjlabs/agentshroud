@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "scripts/sync-cve-registry.py"
+community: "Gateway Test Suite"
 location: "L190"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Gateway_Test_Suite
 ---
 
 # Return (status, mitigation, defense_layers).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_classify()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

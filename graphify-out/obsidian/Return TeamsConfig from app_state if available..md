@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
-location: "L7679"
+community: "Cross-Bot Trust Ledger"
+location: "L7723"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # Return TeamsConfig from app_state if available.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._teams_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger

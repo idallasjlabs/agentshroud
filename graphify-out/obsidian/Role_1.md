@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Approval & FastAPI Ingest"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Role
@@ -16,12 +16,12 @@ tags:
 - [[.get_users_by_role()]] - `references` [EXTRACTED]
 - [[.set_user_role()_1]] - `references` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
-- [[Any_52]] - `uses` [INFERRED]
-- [[Any_69]] - `uses` [INFERRED]
-- [[AuthRequired_1]] - `uses` [INFERRED]
+- [[Any_54]] - `uses` [INFERRED]
+- [[Any_71]] - `uses` [INFERRED]
+- [[AuthRequired]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[Exception_1]] - `uses` [INFERRED]
-- [[FakeAuditStore]] - `uses` [INFERRED]
+- [[FakeAuditStore_1]] - `uses` [INFERRED]
 - [[FakeCaller]] - `uses` [INFERRED]
 - [[FakeGroup]] - `uses` [INFERRED]
 - [[MCPProxyRequest]] - `uses` [INFERRED]
@@ -33,13 +33,13 @@ tags:
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
-- [[Request_3]] - `uses` [INFERRED]
+- [[Request_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[Role]] - `uses` [INFERRED]
 - [[SCLCaller_2]] - `uses` [INFERRED]
 - [[SOCWebSocketHandler_1]] - `uses` [INFERRED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest]] - `uses` [INFERRED]
 - [[SimpleNamespace]] - `uses` [INFERRED]
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[TeamsConfig_2]] - `uses` [INFERRED]
@@ -102,7 +102,7 @@ tags:
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[TrustLevel_1]] - `conceptually_related_to` [INFERRED]
 - [[User roles in AgentShroud RBAC system.      Hierarchy (highest to lowest)]] - `rationale_for` [EXTRACTED]
-- [[WebSocket_3]] - `uses` [INFERRED]
+- [[WebSocket_2]] - `uses` [INFERRED]
 - [[_FakeBus]] - `uses` [INFERRED]
 - [[_FakeRBAC_1]] - `uses` [INFERRED]
 - [[_Svc]] - `uses` [INFERRED]
@@ -125,4 +125,4 @@ tags:
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest

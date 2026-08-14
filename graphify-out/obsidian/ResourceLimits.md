@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
+community: "Setup Docs"
 location: "L49"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/LLM_Proxy_Resource_Guard
+  - community/Setup_Docs
 ---
 
 # ResourceLimits
@@ -22,7 +22,7 @@ tags:
 - [[.test_setup_with_custom_limits_overrides_defaults()]] - `calls` [EXTRACTED]
 - [[.test_stop_cancels_monitor_task()]] - `calls` [EXTRACTED]
 - [[.test_usage_stats()]] - `calls` [EXTRACTED]
-- [[Any_66]] - `uses` [INFERRED]
+- [[Any_68]] - `uses` [INFERRED]
 - [[Configuration for resource limits.]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy_2]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
@@ -62,4 +62,4 @@ tags:
 - [[test_resource_guard_wiring.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/INFERRED #community/Setup_Docs

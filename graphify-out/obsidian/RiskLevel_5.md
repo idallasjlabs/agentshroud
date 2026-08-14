@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "Custom Skills"
+community: "Gateway Security Module"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Gateway_Security_Module
 ---
 
 # RiskLevel
@@ -19,4 +19,4 @@ tags:
 - [[Risk classification for browser actions_2]] - `rationale_for` [EXTRACTED]
 - [[browse.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module

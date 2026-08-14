@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Telegram Proxy Test Suite"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Retention enforcement.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRetention]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

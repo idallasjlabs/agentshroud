@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/README.md"
 type: "document"
-community: "docs/requirements"
+community: "docs/setup-slack.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/requirements
+  - community/docs/setup-slackmd
 ---
 
 # Requirements Documentation
@@ -16,4 +16,4 @@ tags:
 - [[Planned Documents_5]] - `contains` [EXTRACTED]
 - [[README_88]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/requirements
+#graphify/document #graphify/EXTRACTED #community/docs/setup-slackmd

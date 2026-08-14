@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Gateway Ingest API"
 location: "L180"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Gateway_Ingest_API
 ---
 
 # Required prompt to schedule (always)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Periodic checks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Gateway_Ingest_API

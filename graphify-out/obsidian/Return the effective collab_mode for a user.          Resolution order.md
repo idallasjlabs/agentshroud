@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Collaborator Response Templates"
+community: "Group Workspace Isolation"
 location: "L168"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Group_Workspace_Isolation
 ---
 
 # Return the effective collab_mode for a user.          Resolution order:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_user_collab_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/rationale #graphify/EXTRACTED #community/Group_Workspace_Isolation

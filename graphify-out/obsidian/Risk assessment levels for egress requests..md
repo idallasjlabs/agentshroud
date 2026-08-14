@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: ".github/COPILOT_CLI_SETUP.md"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/github/COPILOT_CLI_SETUPmd
 ---
 
 # Risk assessment levels for egress requests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RiskLevel_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd

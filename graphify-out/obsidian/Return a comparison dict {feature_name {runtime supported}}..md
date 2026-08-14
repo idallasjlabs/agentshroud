@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "docs/project"
 location: "L141"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/project
 ---
 
 # Return a comparison dict: {feature_name: {runtime: supported}}.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_security_comparison()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/project

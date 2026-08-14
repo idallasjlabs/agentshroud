@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "SOC Dashboard"
+community: "Gateway Security Module"
 location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Gateway_Security_Module
 ---
 
 # Return ServiceDescriptor for each known container plus internal gateway services
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.list_services()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

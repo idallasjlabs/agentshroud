@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Bot Skill Config"
+community: "gateway/cli"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/gateway/cli
 ---
 
 # RiskLevel
@@ -19,4 +19,4 @@ tags:
 - [[Risk classification for browser actions_1]] - `rationale_for` [EXTRACTED]
 - [[browse.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/gateway/cli

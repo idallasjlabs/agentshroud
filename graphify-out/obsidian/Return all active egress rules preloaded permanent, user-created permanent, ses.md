@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Collaborator Lifecycle"
+community: "Enhanced Approval Queue"
 location: "L336"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/Enhanced_Approval_Queue
 ---
 
 # Return all active egress rules: preloaded permanent, user-created permanent, ses
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_egress_rules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue

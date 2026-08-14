@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Competitive Intel Store"
+community: "Gateway Test Suite"
 location: "L1065"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Gateway_Test_Suite
 ---
 
 # Return the latest validated competitive-intelligence report.      Auth-gated (ow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_competitive_intel()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

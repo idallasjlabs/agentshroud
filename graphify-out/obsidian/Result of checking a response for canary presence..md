@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "docs/reviews"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/reviews
 ---
 
 # Result of checking a response for canary presence.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CanaryResult_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/reviews

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "PII Sanitizer Pipeline"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Response after content is ingested, sanitized, and logged
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ForwardResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

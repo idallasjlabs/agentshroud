@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
+community: "docs/operations"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/docs/operations
 ---
 
 # ResourceUsage
@@ -17,4 +17,4 @@ tags:
 - [[Current resource usage metrics.]] - `rationale_for` [EXTRACTED]
 - [[resource_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/docs/operations

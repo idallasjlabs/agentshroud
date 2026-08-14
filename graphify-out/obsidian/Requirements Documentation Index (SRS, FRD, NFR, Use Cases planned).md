@@ -1,13 +1,13 @@
 ---
 source_file: "docs/requirements/README.md"
 type: "document"
-community: "docs/requirements"
+community: "Community 1769"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/requirements
+  - community/Community_1769
 ---
 
 # Requirements Documentation Index (SRS, FRD, NFR, Use Cases planned)
 
-#graphify/document #graphify/EXTRACTED #community/docs/requirements
+#graphify/document #graphify/EXTRACTED #community/Community_1769

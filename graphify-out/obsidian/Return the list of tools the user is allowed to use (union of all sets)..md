@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Progressive Trust Config"
+community: "File Sandbox"
 location: "L463"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/File_Sandbox
 ---
 
 # Return the list of tools the user is allowed to use (union of all sets).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_allowed_tools()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

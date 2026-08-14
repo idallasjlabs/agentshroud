@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "SOC Dashboard"
+community: "Gateway Security Module"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Gateway_Security_Module
 ---
 
 # Return the gateway's own container plus each configured bot's real     container
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_known_services()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

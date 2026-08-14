@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
-location: "L4057"
+community: "PII Sanitizer Pipeline"
+location: "L4064"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Return a paginated list of blocked domains.      Authentication required.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[list_blocked_domains()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

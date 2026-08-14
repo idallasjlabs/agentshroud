@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Competitive Intel Store"
+community: "docs/project"
 location: "L786"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/docs/project
 ---
 
 # Revert to previous git commit and rebuild.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rollback_agentshroud()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/rationale #graphify/EXTRACTED #community/docs/project

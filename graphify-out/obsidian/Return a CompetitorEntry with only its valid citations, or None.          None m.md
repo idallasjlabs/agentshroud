@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Gateway Test Suite"
 location: "L188"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Gateway_Test_Suite
 ---
 
 # Return a CompetitorEntry with only its valid citations, or None.          None m
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.verify_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

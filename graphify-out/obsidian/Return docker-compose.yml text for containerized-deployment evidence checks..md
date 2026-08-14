@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "IEC 62443 Scorecard"
+community: "gateway/cli"
 location: "L417"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/IEC_62443_Scorecard
+  - community/gateway/cli
 ---
 
 # Return docker-compose.yml text for containerized-deployment evidence checks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_read_compose_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/IEC_62443_Scorecard
+#graphify/rationale #graphify/EXTRACTED #community/gateway/cli

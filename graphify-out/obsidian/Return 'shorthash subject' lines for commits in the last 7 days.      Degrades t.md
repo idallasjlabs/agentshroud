@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "rationale"
-community: "Bot Skill Config"
-location: "L184"
+community: "Planning Docs"
+location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # Return 'shorthash subject' lines for commits in the last 7 days.      Degrades t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_git_commits_last_week()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

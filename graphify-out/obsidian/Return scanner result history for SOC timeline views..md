@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
-location: "L1785"
+community: "PII Sanitizer Pipeline"
+location: "L1792"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Return scanner result history for SOC timeline views.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[scanner_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

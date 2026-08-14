@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Security Module"
 location: "L251"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Security_Module
 ---
 
 # Retention Policies
@@ -16,4 +16,4 @@ tags:
 - [[Archival Process]] - `contains` [EXTRACTED]
 - [[Tier-Based Retention Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

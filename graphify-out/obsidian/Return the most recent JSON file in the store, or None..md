@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "Competitive Intel Store"
+community: "Gateway Test Suite"
 location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Gateway_Test_Suite
 ---
 
 # Return the most recent JSON file in the store, or None.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._load_latest_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

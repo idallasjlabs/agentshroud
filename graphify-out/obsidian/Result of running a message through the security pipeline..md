@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "Security Pipeline Core"
+community: "CHEATSHEET.md"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Pipeline_Core
+  - community/CHEATSHEETmd
 ---
 
 # Result of running a message through the security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PipelineResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Pipeline_Core
+#graphify/rationale #graphify/EXTRACTED #community/CHEATSHEETmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Enforce-Mode Auto-Revert"
 location: "L363"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # Return configured admin-private data redaction patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_private_data_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert

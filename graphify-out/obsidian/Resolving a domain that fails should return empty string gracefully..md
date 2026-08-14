@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Egress & RBAC Security Core"
 location: "L238"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Resolving a domain that fails should return empty string gracefully.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_resolve_and_cache_empty_domain_graceful()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

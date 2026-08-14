@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Approval & FastAPI Ingest"
 location: "L141"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Return member IDs of a group, or empty list if no teams config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_user_groups_by_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

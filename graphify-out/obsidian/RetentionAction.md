@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Progressive Trust Config"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Progressive_Trust_Config
 ---
 
 # RetentionAction
 
 ## Connections
-- [[.__post_init__()_6]] - `method` [EXTRACTED]
+- [[.__post_init__()_7]] - `method` [EXTRACTED]
 - [[.archive_file()]] - `calls` [EXTRACTED]
 - [[.enforce_memory_md_size_limit()]] - `calls` [EXTRACTED]
 - [[.get_recent_actions()]] - `references` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[MemorySecurityConfig]] - `uses` [INFERRED]
 - [[memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config

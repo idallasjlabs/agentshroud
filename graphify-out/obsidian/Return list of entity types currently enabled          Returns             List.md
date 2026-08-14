@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Telegram Proxy Test Suite"
 location: "L402"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Return list of entity types currently enabled          Returns:             List
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_supported_entities()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

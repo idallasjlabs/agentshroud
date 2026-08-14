@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-09-data-lineage.svg"
 type: "concept"
-community: "docs/diagrams"
+community: "skills/openclaw"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/skills/openclaw
 ---
 
 # Response to user (Telegram / iMessage)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[LLM API call (sanitized text only)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/diagrams
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

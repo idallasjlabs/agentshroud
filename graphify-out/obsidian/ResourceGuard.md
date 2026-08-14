@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
+community: "Gateway Test Suite"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/Gateway_Test_Suite
 ---
 
 # ResourceGuard
 
 ## Connections
 - [[.__del__()]] - `method` [EXTRACTED]
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_111]] - `method` [EXTRACTED]
 - [[._alert_high_usage()]] - `method` [EXTRACTED]
 - [[._check_system_resources()_1]] - `method` [EXTRACTED]
@@ -46,8 +46,8 @@ tags:
 - [[.test_stop_cancels_monitor_task_and_idempotent()]] - `calls` [EXTRACTED]
 - [[.test_usage_stats()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
-- [[Any_66]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
+- [[Any_68]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LLMProxy_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
@@ -106,4 +106,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

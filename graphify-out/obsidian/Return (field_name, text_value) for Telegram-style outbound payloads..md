@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
-location: "L2847"
+community: "Bot Skill Config"
+location: "L2855"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Bot_Skill_Config
 ---
 
 # Return (field_name, text_value) for Telegram-style outbound payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._resolve_text_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

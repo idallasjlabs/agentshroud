@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
-location: "L607"
+community: "Bot Skill Config"
+location: "L615"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Bot_Skill_Config
 ---
 
 # Return the @username (without @) for the given bot_id.          Looks up ``_bot_
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._username_for_bot()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "IEC 62443 Scorecard"
+community: "gateway/cli"
 location: "L412"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/IEC_62443_Scorecard
+  - community/gateway/cli
 ---
 
 # Return True if running inside a Docker container (/.dockerenv present).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_containerized()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/IEC_62443_Scorecard
+#graphify/rationale #graphify/EXTRACTED #community/gateway/cli

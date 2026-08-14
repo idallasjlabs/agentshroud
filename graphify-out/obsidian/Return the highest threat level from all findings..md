@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "docs/operations"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/docs/operations
 ---
 
 # Return the highest threat level from all findings.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.highest_threat()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/docs/operations

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Security Module"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Security_Module
 ---
 
 # Restart Procedure Runbook
@@ -15,4 +15,4 @@ tags:
 - [[Crash Recovery Runbook]] - `references` [EXTRACTED]
 - [[Gateway Startup Sequence]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

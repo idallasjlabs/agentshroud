@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Docker Deploy Scripts"
 location: "L692"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Docker_Deploy_Scripts
 ---
 
 # Revoke an active rule associated with a decision log entry (CC-40).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.revoke_decision()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts

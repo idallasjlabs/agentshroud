@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "ESP32 Firmware"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/ESP32_Firmware
 ---
 
 # Return the contents of ``` fenced code blocks (the runnable recipes).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_fenced_code_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/ESP32_Firmware

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Gateway Security Module"
 location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Security_Module
 ---
 
 # Return True if the user currently holds the delegated privilege.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_delegated()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

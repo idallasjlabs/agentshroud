@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Bot CVE Scorecard"
+community: "Voice Gateway Tests"
 location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_CVE_Scorecard
+  - community/Voice_Gateway_Tests
 ---
 
 # Return egress decision history (approve/deny/timeout) (CC-40).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_egress_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_CVE_Scorecard
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Tests

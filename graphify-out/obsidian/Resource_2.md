@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "SOC Dashboard"
+community: "skills/openclaw"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/skills/openclaw
 ---
 
 # Resource
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.require()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/skills/openclaw

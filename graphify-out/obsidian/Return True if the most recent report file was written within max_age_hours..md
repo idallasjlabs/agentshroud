@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "docs/vault"
 location: "L322"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/vault
 ---
 
 # Return True if the most recent report file was written within max_age_hours.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_fresh()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

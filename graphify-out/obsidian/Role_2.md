@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Test Suite"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Gateway_Test_Suite
 ---
 
 # Role
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__init__()_125]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Bot CVE Scorecard"
+community: "Voice Gateway Tests"
 location: "L1863"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_CVE_Scorecard
+  - community/Voice_Gateway_Tests
 ---
 
 # Return the list of registered bots. Falls back to backward-compat OpenClaw defau
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[list_bots()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_CVE_Scorecard
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Gateway Ingest API"
 location: "L1043"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Ingest_API
 ---
 
 # Return value includes image_scans list.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_image_scan_result_in_return_value()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Ingest_API

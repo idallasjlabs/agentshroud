@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "branding/README.md"
 location: "L422"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/branding/READMEmd
 ---
 
 # Return complete audit log
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_audit_log()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/branding/READMEmd

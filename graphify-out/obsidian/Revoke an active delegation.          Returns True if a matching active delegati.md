@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Gateway Security Module"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Security_Module
 ---
 
 # Revoke an active delegation.          Returns True if a matching active delegati
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.revoke()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

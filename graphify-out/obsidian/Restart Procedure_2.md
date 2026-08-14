@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # Restart Procedure
@@ -23,4 +23,4 @@ tags:
 - [[When to Restart]] - `contains` [EXTRACTED]
 - [[Zero-Downtime Restart (Advanced)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Collaborator Response Templates"
+community: "Group Workspace Isolation"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Group_Workspace_Isolation
 ---
 
 # Return the safe_response_prefix for the first group that the user belongs to
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_group_safe_response_prefix()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/rationale #graphify/EXTRACTED #community/Group_Workspace_Isolation
