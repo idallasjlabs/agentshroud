@@ -1,22 +1,21 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "LLM Proxy Resource Guard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/LLM_Proxy_Resource_Guard
 ---
 
 # test_soc_router_coverage.py
 
 ## Connections
 - [[ApprovalMode]] - `imports` [EXTRACTED]
-- [[FakeAuditStore]] - `contains` [EXTRACTED]
+- [[FakeAuditStore_1]] - `contains` [EXTRACTED]
 - [[FakeCaller]] - `contains` [EXTRACTED]
 - [[FakeGroup]] - `contains` [EXTRACTED]
-- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[Role_1]] - `imports` [EXTRACTED]
 - [[_Svc]] - `contains` [EXTRACTED]
 - [[_fake_contributor_manager()]] - `contains` [EXTRACTED]
@@ -163,4 +162,4 @@ tags:
 - [[test_upgrade_hermes_restarts_the_real_container_name()]] - `contains` [EXTRACTED]
 - [[test_websocket_route_dispatch()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_proxy_dashboard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/setup-slack.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/setup-slackmd
 ---
 
 # test_proxy_dashboard.py
@@ -28,4 +28,4 @@ tags:
 - [[test_dashboard_uptime()]] - `contains` [EXTRACTED]
 - [[test_status_report_to_display()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/setup-slackmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "MCP Policy Engine"
+community: "Egress Domain Allowlist"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Egress_Domain_Allowlist
 ---
 
 # test_mcp_policy.py
@@ -25,9 +25,9 @@ tags:
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
 - [[ToolRiskConfig_1]] - `imports` [EXTRACTED]
 - [[_FakeApprovalQueue]] - `contains` [EXTRACTED]
-- [[_base_config()]] - `contains` [EXTRACTED]
+- [[_base_config()_1]] - `contains` [EXTRACTED]
 - [[_real_queue()]] - `contains` [EXTRACTED]
-- [[engine()]] - `contains` [EXTRACTED]
+- [[engine()_1]] - `contains` [EXTRACTED]
 - [[mcp_policy.py]] - `references` [EXTRACTED]
 - [[test_allowlisted_server_safe_tool_is_allowed()]] - `contains` [EXTRACTED]
 - [[test_bare_tool_name_risk_tier_applies_across_servers()]] - `contains` [EXTRACTED]
@@ -59,4 +59,4 @@ tags:
 - [[test_server_and_tool_matching_is_case_insensitive()]] - `contains` [EXTRACTED]
 - [[test_unknown_server_is_denied_by_default()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist

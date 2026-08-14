@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Bot CVE Scorecard"
+community: "Voice Gateway Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_CVE_Scorecard
+  - community/Voice_Gateway_Tests
 ---
 
 # test_soc_bots.py
@@ -51,4 +51,4 @@ tags:
 - [[list_bots()]] - `imports` [EXTRACTED]
 - [[list_services()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_CVE_Scorecard
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Tests

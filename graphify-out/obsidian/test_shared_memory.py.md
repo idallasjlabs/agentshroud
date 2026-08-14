@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "Group Workspace Isolation"
+community: "Approval Queue Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Workspace_Isolation
+  - community/Approval_Queue_Tests
 ---
 
 # test_shared_memory.py
@@ -26,4 +26,4 @@ tags:
 - [[smm()_1]] - `contains` [EXTRACTED]
 - [[tmp_workspace()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

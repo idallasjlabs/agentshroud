@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/vault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/vault
 ---
 
 # test_skills_manifest_sync.py
 
 ## Connections
-- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[ManifestEntry]] - `imports` [EXTRACTED]
 - [[PlannedAction]] - `imports` [EXTRACTED]
 - [[SkillsManifest]] - `imports` [EXTRACTED]
@@ -32,4 +31,4 @@ tags:
 - [[validate_manifest()]] - `imports` [EXTRACTED]
 - [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/vault

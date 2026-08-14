@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "voice_gateway/tts.py"
-location: "L1890"
+community: "Planning Docs"
+location: "L1903"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_gateway/ttspy
+  - community/Planning_Docs
 ---
 
 # test_resample_passband_preserved()
@@ -16,4 +16,4 @@ tags:
 - [[_resample_s16le_mono()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/ttspy
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

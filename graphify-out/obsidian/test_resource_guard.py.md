@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
+community: "Setup Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/Setup_Docs
 ---
 
 # test_resource_guard.py
@@ -16,4 +16,4 @@ tags:
 - [[ResourceLimits]] - `imports` [EXTRACTED]
 - [[TestResourceGuard]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/Setup_Docs

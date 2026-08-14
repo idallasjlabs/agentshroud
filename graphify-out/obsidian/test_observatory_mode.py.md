@@ -12,7 +12,7 @@ tags:
 # test_observatory_mode.py
 
 ## Connections
-- [[FastAPI_3]] - `imports_from` [EXTRACTED]
+- [[FastAPI_2]] - `imports_from` [EXTRACTED]
 - [[GatewayConfig_1]] - `imports` [EXTRACTED]
 - [[KillSwitchConfig]] - `imports` [EXTRACTED]
 - [[KillSwitchMonitor]] - `imports` [EXTRACTED]

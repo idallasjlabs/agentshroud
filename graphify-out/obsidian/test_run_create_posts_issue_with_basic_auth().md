@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L236"
+community: "Security Docs"
+location: "L276"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Docs
 ---
 
 # test_run_create_posts_issue_with_basic_auth()
@@ -15,4 +15,4 @@ tags:
 - [[_MockTransport]] - `calls` [EXTRACTED]
 - [[test_jira_dev_ticket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

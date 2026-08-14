@@ -15,5 +15,6 @@ tags:
 - [[ProxyResult]] - `imports` [EXTRACTED]
 - [[TestMCPProxyEndpoint_1]] - `contains` [EXTRACTED]
 - [[client()_9]] - `contains` [EXTRACTED]
+- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

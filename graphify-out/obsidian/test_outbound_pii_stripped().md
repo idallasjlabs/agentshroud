@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "HTTP Forwarder"
+community: "SOC Collaborator Lifecycle"
 location: "L311"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # test_outbound_pii_stripped()
 
 ## Connections
-- [[.process_outbound()_3]] - `calls` [EXTRACTED]
+- [[.process_outbound()_1]] - `calls` [EXTRACTED]
 - [[Mock OpenClaw response containing PII — verify stripped.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

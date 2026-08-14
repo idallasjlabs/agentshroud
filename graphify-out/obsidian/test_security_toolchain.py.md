@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Docs
 ---
 
 # test_security_toolchain.py
@@ -34,11 +34,6 @@ tags:
 - [[calculate_tool_score()]] - `imports` [EXTRACTED]
 - [[categorize_alerts()]] - `imports` [EXTRACTED]
 - [[format_report()]] - `imports` [EXTRACTED]
-- [[gatewaysecurityclamav_scanner.py]] - `references` [EXTRACTED]
-- [[gatewaysecurityfalco_monitor.py]] - `references` [EXTRACTED]
-- [[gatewaysecurityhealth_report.py]] - `references` [EXTRACTED]
-- [[gatewaysecuritytrivy_report.py]] - `references` [EXTRACTED]
-- [[gatewaysecuritywazuh_client.py]] - `references` [EXTRACTED]
 - [[generate_report()]] - `imports` [EXTRACTED]
 - [[generate_summary()]] - `imports` [EXTRACTED]
 - [[generate_summary()_1]] - `imports` [EXTRACTED]
@@ -60,4 +55,4 @@ tags:
 - [[score_to_grade()]] - `imports` [EXTRACTED]
 - [[update_virus_db()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Docs

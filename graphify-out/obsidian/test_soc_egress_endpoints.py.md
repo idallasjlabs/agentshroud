@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[client()_14]] - `contains` [EXTRACTED]
+- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[test_manage_egress_add_remove_rule_and_risk()]] - `contains` [EXTRACTED]
 - [[test_manage_egress_emergency_toggle()]] - `contains` [EXTRACTED]

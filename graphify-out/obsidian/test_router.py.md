@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "Slack API Proxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Slack_API_Proxy
 ---
 
 # test_router.py
@@ -17,8 +17,8 @@ tags:
 - [[ForwardRequest]] - `imports` [EXTRACTED]
 - [[GatewayConfig_1]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
-- [[router()_2]] - `contains` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
+- [[router()_1]] - `contains` [EXTRACTED]
 - [[router_config()]] - `contains` [EXTRACTED]
 - [[test_agent_target_custom_paths()]] - `contains` [EXTRACTED]
 - [[test_agent_target_default_paths()]] - `contains` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_resolve_target_invalid_explicit()]] - `contains` [EXTRACTED]
 - [[test_resolves_hermes_target()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
+community: "docs/flows"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/docs/flows
 ---
 
 # test_resource_guard_wiring.py
@@ -19,4 +19,4 @@ tags:
 - [[TestResourceGuardWiring]] - `contains` [EXTRACTED]
 - [[setup_resource_guard()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/docs/flows

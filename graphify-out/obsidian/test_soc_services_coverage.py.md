@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "SOC Service Manager"
+community: "Tool Chain Analyzer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager
+  - community/Tool_Chain_Analyzer
 ---
 
 # test_soc_services_coverage.py
@@ -37,4 +37,4 @@ tags:
 - [[_patch_open()]] - `contains` [EXTRACTED]
 - [[gatewaysocservices.py (ServiceManager)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer

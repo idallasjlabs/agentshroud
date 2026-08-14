@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "README.md"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/READMEmd
 ---
 
 # test_real_phone_still_redacted()
@@ -15,4 +15,4 @@ tags:
 - [[Phone number with separator must still be redacted.]] - `rationale_for` [EXTRACTED]
 - [[test_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/READMEmd

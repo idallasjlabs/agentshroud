@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "PromptGuard Encoding Detection"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard_Encoding_Detection
+  - community/Gateway_Test_Suite
 ---
 
 # test_security_hardening.py
@@ -42,4 +42,4 @@ tags:
 - [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[_secure_zero()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

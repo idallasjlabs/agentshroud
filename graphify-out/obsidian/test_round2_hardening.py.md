@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
+community: "Collaborator Response Templates"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/Collaborator_Response_Templates
 ---
 
 # test_round2_hardening.py
@@ -30,4 +30,4 @@ tags:
 - [[Tests for Round 2 hardening — 9 fixes.]] - `rationale_for` [EXTRACTED]
 - [[scan_repository()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates

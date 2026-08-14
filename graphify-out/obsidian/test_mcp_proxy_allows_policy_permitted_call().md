@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "MCP Policy Engine"
+community: "Egress Domain Allowlist"
 location: "L396"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Egress_Domain_Allowlist
 ---
 
 # test_mcp_proxy_allows_policy_permitted_call()
@@ -18,7 +18,7 @@ tags:
 - [[MCPProxy]] - `calls` [EXTRACTED]
 - [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[MCPToolResult]] - `calls` [EXTRACTED]
-- [[_base_config()]] - `calls` [EXTRACTED]
+- [[_base_config()_1]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist

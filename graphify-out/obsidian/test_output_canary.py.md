@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/reviews"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/reviews
 ---
 
 # test_output_canary.py
@@ -17,4 +17,4 @@ tags:
 - [[OutputCanary]] - `imports` [EXTRACTED]
 - [[TestOutputCanary]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/reviews

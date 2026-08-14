@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "ESP32 Firmware"
+community: "Gateway Test Suite"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Gateway_Test_Suite
 ---
 
 # test_playback_state.c (host-native unit tests, SCRUM-59)
@@ -18,4 +18,4 @@ tags:
 - [[wakeword.c (PTT + WakeNet trigger)]] - `references` [EXTRACTED]
 - [[wakeword_ptt_press()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Telegram Proxy Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # test_security_integration.py
@@ -27,7 +27,7 @@ tags:
 - [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
 - [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[approval_queue()_1]] - `contains` [EXTRACTED]
@@ -48,6 +48,6 @@ tags:
 - [[test_pipeline_selective_modules()]] - `contains` [EXTRACTED]
 - [[test_response_credential_blocking()]] - `contains` [EXTRACTED]
 - [[test_trust_insufficient_action_blocked()]] - `contains` [EXTRACTED]
-- [[trust_manager()_2]] - `contains` [EXTRACTED]
+- [[trust_manager()_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

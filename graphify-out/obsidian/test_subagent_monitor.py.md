@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Module Middleware"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Module_Middleware
 ---
 
 # test_subagent_monitor.py
@@ -28,4 +28,4 @@ tags:
 - [[strict_config()_2]] - `contains` [EXTRACTED]
 - [[strict_monitor()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Module_Middleware

@@ -12,7 +12,6 @@ tags:
 # test_skill_guard.py
 
 ## Connections
-- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[Recommendation]] - `imports` [EXTRACTED]
 - [[ScanResult_2]] - `imports` [EXTRACTED]
 - [[Severity]] - `imports` [EXTRACTED]

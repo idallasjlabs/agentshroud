@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "PromptGuard Encoding Detection"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # test_mcp_proxy.py
@@ -56,7 +56,7 @@ tags:
 - [[mcp_permissions.py]] - `references` [EXTRACTED]
 - [[mcp_proxy.py]] - `references` [EXTRACTED]
 - [[passthrough_proxy()]] - `contains` [EXTRACTED]
-- [[proxy()]] - `contains` [EXTRACTED]
+- [[proxy()_1]] - `contains` [EXTRACTED]
 - [[strict_inspector()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection

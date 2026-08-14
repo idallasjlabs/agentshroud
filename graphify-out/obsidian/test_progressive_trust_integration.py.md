@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "Progressive Trust Config"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/Gateway_Test_Suite
 ---
 
 # test_progressive_trust_integration.py
@@ -32,8 +32,6 @@ tags:
 - [[_fast_ladder()]] - `contains` [EXTRACTED]
 - [[_make_tm()]] - `contains` [EXTRACTED]
 - [[_set_state()]] - `contains` [EXTRACTED]
-- [[progressive_trust_config.py]] - `references` [EXTRACTED]
 - [[resolve_enforcement_mode()]] - `imports` [EXTRACTED]
-- [[trust_manager.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

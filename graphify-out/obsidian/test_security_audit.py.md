@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Auth & Exception Types"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Auth__Exception_Types
 ---
 
 # test_security_audit.py
@@ -63,18 +63,14 @@ tags:
 - [[gatewaysecurityclamav_scanner.py]] - `references` [EXTRACTED]
 - [[gatewaysecuritycontext_guard.py (ContextGuard)]] - `references` [EXTRACTED]
 - [[gatewaysecuritydns_filter.py (DNSFilterConfig)]] - `references` [EXTRACTED]
-- [[gatewaysecuritydrift_detector.py (DriftDetector)]] - `references` [EXTRACTED]
 - [[gatewaysecurityencrypted_store.py (EncryptedStore)]] - `references` [EXTRACTED]
 - [[gatewaysecurityfalco_monitor.py]] - `references` [EXTRACTED]
 - [[gatewaysecurityfile_sandbox.py (FileSandbox)]] - `references` [EXTRACTED]
-- [[gatewaysecurityhealth_report.py]] - `references` [EXTRACTED]
 - [[gatewaysecuritykey_vault.py (KeyVault)]] - `references` [EXTRACTED]
 - [[gatewaysecuritymetadata_guard.py (MetadataGuard)]] - `references` [EXTRACTED]
-- [[gatewaysecuritynetwork_validator.py (NetworkValidator)]] - `references` [EXTRACTED]
 - [[gatewaysecurityoauth_security.py]] - `references` [EXTRACTED]
 - [[gatewaysecurityprompt_guard.py (PromptGuard)]] - `references` [EXTRACTED]
 - [[gatewaysecuritytrivy_report.py]] - `references` [EXTRACTED]
-- [[gatewaysecuritytrust_manager.py (TrustManager)]] - `references` [EXTRACTED]
 - [[gatewaysecuritywazuh_client.py]] - `references` [EXTRACTED]
 - [[health_report.py]] - `imports_from` [EXTRACTED]
 - [[parse_clamscan_output()]] - `imports` [EXTRACTED]
@@ -85,4 +81,4 @@ tags:
 - [[trivy_report.py]] - `imports_from` [EXTRACTED]
 - [[wazuh_client.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
