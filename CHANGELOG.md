@@ -8,6 +8,70 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.0] "A2A Governance" (2026-08-14)
+
+### Summary
+
+v1.5.0 adds inbound governance for Hermes's Agent-to-Agent (A2A) protocol
+support (SCRUM-129) — a new, previously-ungoverned attack surface introduced
+by Hermes Agent v0.20.0's real Google/Linux Foundation A2A v1.0.1
+implementation. Bumps the pinned Hermes image to v0.20.1 and fixes two
+pre-existing bugs in the vendor-update pipeline discovered along the way.
+
+### Added
+
+- **`gateway/security/a2a_policy.py`** — `A2APolicyEngine`: peer allow/deny
+  lists, per-method risk tiers, task-ownership enforcement (independent
+  mitigation for upstream Hermes gap #83701 — cross-tenant task/contextId
+  collision), and a hardened SSRF-safe callback-URL validator
+  (`is_safe_a2a_callback_url`, independent mitigation for gap #78298 —
+  decimal/hex/octal/trailing-dot IP-encoding bypasses).
+- **`gateway/proxy/a2a_proxy.py`** — `A2AProxy`: inbound JSON-RPC 2.0
+  interceptor terminating A2A peer connections, resolving peer identity from
+  bearer tokens (never socket address — independent mitigation for gap
+  #80534/#80779), PII-scanning `Message.parts` content, and forwarding to
+  Hermes's internal listener.
+- Two new `ViolationType` entries (`A2A_TASK_OWNERSHIP_VIOLATION`,
+  `A2A_SSRF_CALLBACK_ATTEMPT`) wired into the existing `TrustManager`
+  progressive-trust ladder — an SSRF-callback rejection is unambiguous
+  malicious intent and triggers immediate demotion.
+- New top-level "A2A Protocol Threat Analysis" section in
+  `docs/security/threat-model.md`, STRIDE-mapped to the 5 confirmed
+  currently-unpatched upstream Hermes A2A gaps.
+- `pytest-timeout` safety net (`pytest.ini`: `timeout = 60`,
+  `timeout_method = thread`) — turns any future test hang into a fast,
+  diagnosable failure instead of a 20-minute silent CI mystery.
+
+### Fixed
+
+- **`scripts/update-agentshroud.sh`** never rebuilt the local
+  `agentshroud/hermes` image after bumping `HERMES_IMAGE` in
+  `docker/versions.env` — a silent no-op that restarted the *old* version
+  while printing "Update Complete." Also never sourced `docker/.env`,
+  silently reverting Hermes's model routing to
+  `AGENTSHROUD_MODEL_MODE=cloud` on every vendor bump.
+
+### Changed
+
+- Hermes vendor pin bumped `v0.18.2` → `v0.20.1` (digest-pinned, not
+  `:latest`). Both Hermes's inbound A2A adapter and outbound `a2a` toolset
+  remain **disabled by default** — this release ships the governance module
+  inert; enabling A2A in production is explicitly deferred pending the
+  adversarial test suite in `gateway/tests/test_a2a_integration.py`.
+
+### Known issues
+
+- **SCRUM-145** (tracked, not blocking): a real hang in
+  `gateway/tests/test_ws_stop_during_speaking_aborts_tts` was found causing
+  intermittent 20-minute `macos-latest, 3.11` CI timeouts. Root mechanism
+  location confirmed (asyncio event loop deadlock); root cause not yet
+  fully resolved — mitigated by the new pytest-timeout safety net above.
+- Outbound A2A toolset governance is out of scope for this release (capped
+  by the existing CONNECT-tunnel proxy's opacity to HTTPS payload content)
+  — tracked as a separate follow-up.
+
+---
+
 ## [1.3.0] "Reliability" (2026-07-21)
 
 ### Summary
