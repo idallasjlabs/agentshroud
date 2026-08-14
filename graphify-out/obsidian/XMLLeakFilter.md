@@ -12,7 +12,7 @@ tags:
 # XMLLeakFilter
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_124]] - `method` [EXTRACTED]
 - [[.filter_function_calls_only()]] - `method` [EXTRACTED]
 - [[.filter_response()_2]] - `method` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[.setup_method()_38]] - `calls` [EXTRACTED]
 - [[.xml_filter()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[Filter to remove sensitive XML and path information from outbound responses.]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]

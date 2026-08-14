@@ -1,177 +1,142 @@
 ---
 type: community
-cohesion: 0.02
-members: 162
+members: 129
 ---
 
 # File Sandbox
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 162 nodes
+**Members:** 129 nodes
 
 ## Members
-- [[.__init__()_78]] - code - gateway/security/file_sandbox.py
-- [[._check()]] - code - gateway/security/file_sandbox.py
-- [[._detect_raw_traversal()]] - code - gateway/security/file_sandbox.py
-- [[._is_immutable_file()]] - code - gateway/security/file_sandbox.py
-- [[._match_pattern()]] - code - gateway/security/file_sandbox.py
-- [[._matches_allowed_paths()]] - code - gateway/security/file_sandbox.py
-- [[._matches_blocked()]] - code - gateway/security/file_sandbox.py
-- [[.check_read()]] - code - gateway/security/file_sandbox.py
-- [[.check_write()]] - code - gateway/security/file_sandbox.py
-- [[.detect_staging_patterns()]] - code - gateway/security/file_sandbox.py
-- [[.get_audit_log()_3]] - code - gateway/security/file_sandbox.py
-- [[.get_security_violations()]] - code - gateway/security/file_sandbox.py
-- [[.get_temp_files()]] - code - gateway/security/file_sandbox.py
-- [[.monitor_sandbox()]] - code - gateway/tests/test_security_audit.py
-- [[.record_network_activity()]] - code - gateway/security/file_sandbox.py
-- [[.sandbox()]] - code - gateway/tests/test_security_audit.py
-- [[.scan()_3]] - code - gateway/security/file_sandbox.py
-- [[.test_any_python_file_in_gateway_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_api_key_pattern_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_audit_has_path()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_case_sensitivity()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_config_yaml_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_credential_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_credit_card_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_default_blocks_sensitive_paths()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_default_has_reasonable_allowed_paths()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_default_mode_is_enforce()_2]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_docker_compose_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_dockerfile_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_email_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_enforce_blocks_outside_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_enforce_blocks_sensitive()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_env_file_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_etc_passwd_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_etc_shadow_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_etc_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_file_sandbox_instantiates()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[.test_file_sandbox_mcp_write()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[.test_file_sandbox_staging_detection()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[.test_gateway_config_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_gateway_source_read_flagged()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_gateway_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_large_write_then_network_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_large_write_without_network_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_modules_source_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_monitor_mode_allows_everything()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_multiple_violations_tracked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_no_pii_clean()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_normal_operations_not_violations()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_path_traversal_blocked()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_pii_in_write_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_project_files_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_read_logged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_relative_path_resolution()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_security_module_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_sensitive_config_read_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_small_writes_not_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_soul_md_in_workspace_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_soul_md_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_ssh_private_key_flagged()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_ssn_detected()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_symlink_resolution()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_system_info_read_allowed()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_system_prompt_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_temp_file_tracking()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_tmp_read_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_tmp_write_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_tmp_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_usr_bin_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_var_log_write_blocked()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_violation_recorded_in_audit()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_wildcard_pattern_matching()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_workspace_read_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_workspace_read_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_workspace_subdirectory_write_allowed()]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_workspace_write_allowed()]] - code - gateway/tests/test_file_sandbox.py
-- [[.test_workspace_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[.test_write_logged()]] - code - gateway/tests/test_file_sandbox.py
-- [[Agent can read basic system info.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can read its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can still write to its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can write to tmp for temporary files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can write to its own workspace directory.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent can write to subdirectories in workspace.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify AgentShroud configuration files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify AgentShroud's own source code.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify Docker Compose configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify Dockerfile.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify SOUL.md behavioral instructions.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify SOUL.md even in workspace path.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify gateway configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify security policies and behavioral instructions.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify system paths.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot modify system prompt files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot read sensitive configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to etc system configuration.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to usrbin system binaries.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to varlog system logs.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to gateway Python source files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to gateway config directory.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to security framework files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Agent cannot write to security module source files.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Any .py file in gateway directory should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Case variations should not bypass protection.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Check if path is within any allowed pattern.]] - rationale - gateway/security/file_sandbox.py
-- [[Check if path matches any blocked pattern.]] - rationale - gateway/security/file_sandbox.py
-- [[Check if this is an immutable security file by name.]] - rationale - gateway/security/file_sandbox.py
-- [[Detect data staging patterns (collect → compress → exfil).]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Detect path traversal attempts in raw input before normalization.]] - rationale - gateway/security/file_sandbox.py
-- [[Enhanced pattern matching for file paths.]] - rationale - gateway/security/file_sandbox.py
-- [[Even blocked paths are allowed in monitor mode (just flagged).]] - rationale - gateway/tests/test_file_sandbox.py
-- [[FileOperation]] - code - gateway/security/file_sandbox.py
-- [[FileSandbox]] - code - gateway/security/file_sandbox.py
-- [[FileSandbox in enforce mode with strict separation.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[FileSandboxConfig]] - code - gateway/security/file_sandbox.py
-- [[FileVerdict]] - code - gateway/security/file_sandbox.py
-- [[Get all flagged operations that indicate security violations.]] - rationale - gateway/security/file_sandbox.py
-- [[MCP file writes should go through sandbox.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Middleware manager for request processing tests.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Monitor-mode sandbox for comparison testing.]] - rationale - gateway/tests/test_security_audit.py
-- [[Multiple violations should all be tracked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Normal workspace operations should not be flagged as violations.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[PIIFinding]] - code - gateway/security/file_sandbox.py
-- [[PIIScanResult]] - code - gateway/security/file_sandbox.py
-- [[PIIScanner]] - code - gateway/security/file_sandbox.py
-- [[Path traversal attempts should be blocked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Reading gateway source should be flaggedblocked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Relative paths should be resolved properly.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Sandbox with separation of privilege enforcement.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Security violations should be recorded in audit log.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[StagingPattern]] - code - gateway/security/file_sandbox.py
-- [[Symlinks should be resolved - symlink to blocked path must be caught.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test  wildcard patterns work correctly.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test edge cases and potential bypass attempts.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test file path pattern matching logic.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test read access controls.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[Test that security violations are properly logged and tracked.]] - rationale - gateway/tests/test_privilege_separation.py
-- [[TestAgentShroudSourceCodeProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestConfigurationProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestEdgeCases]] - code - gateway/tests/test_privilege_separation.py
-- [[TestFileAudit]] - code - gateway/tests/test_file_sandbox.py
-- [[TestFileSandboxConfig]] - code - gateway/tests/test_file_sandbox.py
-- [[TestNormalFileOperations]] - code - gateway/tests/test_file_sandbox.py
-- [[TestPIIScanning]] - code - gateway/tests/test_file_sandbox.py
-- [[TestPatternMatching]] - code - gateway/tests/test_privilege_separation.py
-- [[TestReadAccess]] - code - gateway/tests/test_privilege_separation.py
-- [[TestSecurityPolicyProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestSecurityViolationLogging]] - code - gateway/tests/test_privilege_separation.py
-- [[TestSensitivePathBlocking]] - code - gateway/tests/test_file_sandbox.py
-- [[TestStagingPatternDetection]] - code - gateway/tests/test_file_sandbox.py
-- [[TestSystemPathProtection]] - code - gateway/tests/test_privilege_separation.py
-- [[TestWorkspaceAccessPreserved]] - code - gateway/tests/test_privilege_separation.py
-- [[default_config()_3]] - code - gateway/tests/test_file_sandbox.py
-- [[enforce_config()]] - code - gateway/tests/test_privilege_separation.py
-- [[file_sandbox.py]] - code - gateway/security/file_sandbox.py
-- [[middleware_manager()]] - code - gateway/tests/test_privilege_separation.py
-- [[sandbox()]] - code - gateway/tests/test_file_sandbox.py
-- [[strict_config()_1]] - code - gateway/tests/test_file_sandbox.py
-- [[strict_sandbox()]] - code - gateway/tests/test_file_sandbox.py
-- [[strict_sandbox()_1]] - code - gateway/tests/test_privilege_separation.py
-- [[test_file_sandbox.py]] - code - gateway/tests/test_file_sandbox.py
-- [[test_privilege_separation.py]] - code - gateway/tests/test_privilege_separation.py
+- [[.__init__()_117]] - code - gateway/security/tool_acl.py
+- [[._can_use_tool_impl()]] - code - gateway/security/tool_acl.py
+- [[._get_group_tool_allowlist()]] - code - gateway/security/tool_acl.py
+- [[._get_role()]] - code - gateway/security/tool_acl.py
+- [[.can_use_high_risk()]] - code - gateway/security/group_rbac.py
+- [[.can_use_tool()]] - code - gateway/security/tool_acl.py
+- [[.can_use_tool_in_group_context()]] - code - gateway/security/tool_acl.py
+- [[.check_tool_rate_limit()]] - code - gateway/security/tool_acl.py
+- [[.effective_admin()]] - code - gateway/security/tool_acl.py
+- [[.effective_collaborator_allowed()]] - code - gateway/security/tool_acl.py
+- [[.effective_private()]] - code - gateway/security/tool_acl.py
+- [[.enforcer()]] - code - gateway/tests/test_tool_acl.py
+- [[.get_allowed_tools()]] - code - gateway/security/tool_acl.py
+- [[.get_denial_counts()]] - code - gateway/security/tool_acl.py
+- [[.get_denied_tools()]] - code - gateway/security/tool_acl.py
+- [[.rank()]] - code - gateway/security/group_rbac.py
+- [[.test_admin_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_admin_can_use_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_admin_can_use_collaborator_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_admin_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_admin_denied_tools_contains_private()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_allowed_tools_does_not_include_private()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_blocked_from_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_can_use_allowed_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_can_use_unknown_tool_when_not_denied()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_denied_tools_includes_admin_and_private()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_collaborator_denied_unknown_by_default()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_enforcer_without_trust_manager_unchanged()]] - code - gateway/tests/test_progressive_trust_integration.py
+- [[.test_group_allowlist_grants_extra_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_member_allowed_read_write_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_member_allowed_web_search_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_member_denied_gmail_private_tool_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_member_denied_high_risk_tools_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_member_denied_ssh_private_tool_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_no_rbac_allows_read()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_no_rbac_defaults_to_viewer()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_owner_allowed_all_tools_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_owner_allowed_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_owner_can_use_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_owner_can_use_any_unknown_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_owner_can_use_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_owner_denied_tools_is_empty()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_owner_unrestricted_matches_dm_behavior()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_per_minute_limit_exceeded_blocks()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_per_user_isolation()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_private_and_admin_do_not_overlap()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_private_and_admin_do_not_overlap_with_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_private_tool_still_blocked_even_when_deny_unknown_false()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_project_allowed_tools_grant_access()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_readonly_allowed_read_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_allowed_web_search_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_denied_email_sending_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_denied_external_api_calls_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_denied_file_deletion_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_readonly_denied_skill_installation_in_group()]] - code - gateway/tests/test_group_rbac.py
+- [[.test_terminal_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_terminal_tool_in_private_tools()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_terminal_tool_not_in_collab_allowed()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_under_threshold_passes()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_unlisted_tool_always_passes()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_viewer_blocked_from_admin_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_viewer_blocked_from_private_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[.test_viewer_denied_terminal_tool()]] - code - gateway/tests/test_tool_acl.py
+- [[Calls within limits should pass.]] - rationale - gateway/tests/test_tool_acl.py
+- [[Check whether user_id may invoke the named tool.          Returns             (]] - rationale - gateway/security/tool_acl.py
+- [[Check whether user_id may invoke tool_name when acting inside a group workspace.]] - rationale - gateway/security/tool_acl.py
+- [[Collect additional tools granted to the user via their group memberships.]] - rationale - gateway/security/tool_acl.py
+- [[Enforces tool-level access control based on user role and group membership.]] - rationale - gateway/security/tool_acl.py
+- [[Exceeding per-minute limit should return False.]] - rationale - gateway/tests/test_tool_acl.py
+- [[GET socv1tool-acl{entity_id}]] - code - gateway/soc/router.py
+- [[GroupRole]] - code - gateway/security/group_rbac.py
+- [[Numeric rank for comparison — higher is more privileged.]] - rationale - gateway/security/group_rbac.py
+- [[Owner group-context check must match standard can_use_tool result.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Owner is allowed ALL tools in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Owner must have unrestricted access even in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Per-group roles for Telegram group workspace members.      Hierarchy (highest to]] - rationale - gateway/security/group_rbac.py
+- [[Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml]] - rationale - gateway/security/tool_acl.py
+- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the_1]] - rationale - gateway/security/tool_acl.py
+- [[Rate limits are tracked independently per user.]] - rationale - gateway/tests/test_tool_acl.py
+- [[Read-only member IS allowed read tool in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member IS allowed web_search (low-risk) in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied email_sending even when called from group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied external_api_calls in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied file_deletion in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only member denied skill_installation in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Read-only members must be denied high-risk tools in any group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Regular member (non-owner group role) is denied high-risk tools that require app]] - rationale - gateway/tests/test_group_rbac.py
+- [[Regular member IS allowed readwrite in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Regular member IS allowed web_search in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Regular member denied gmail (private tool) even in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Regular member denied ssh (private tool) in group context.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Regular members can use medium-risk tools but not privateadmin tools.]] - rationale - gateway/tests/test_group_rbac.py
+- [[Return True if the user is within rate limits for the given tool.          Side-]] - rationale - gateway/security/tool_acl.py
+- [[Return True if this role is permitted to REQUEST high-risk tools.          OWNER]] - rationale - gateway/security/group_rbac.py
+- [[Return per-user tool denial counts since last restart (V9-2 SOC correlation).]] - rationale - gateway/security/tool_acl.py
+- [[Return the list of tools the user is allowed to use (union of all sets).]] - rationale - gateway/security/tool_acl.py
+- [[Return tools explicitly denied for this user.]] - rationale - gateway/security/tool_acl.py
+- [[TeamsConfig_2]] - code - gateway/tests/test_tool_acl.py
+- [[TestAdminAccess]] - code - gateway/tests/test_tool_acl.py
+- [[TestCVE2026_9367TerminalToolDenied]] - code - gateway/tests/test_tool_acl.py
+- [[TestClassificationSets]] - code - gateway/tests/test_tool_acl.py
+- [[TestCollaboratorAccess]] - code - gateway/tests/test_tool_acl.py
+- [[TestDenyUnknownFalse]] - code - gateway/tests/test_tool_acl.py
+- [[TestGroupToolAllowlist]] - code - gateway/tests/test_tool_acl.py
+- [[TestMemberGroupContext]] - code - gateway/tests/test_group_rbac.py
+- [[TestNoRBACConfig]] - code - gateway/tests/test_tool_acl.py
+- [[TestOwnerAccess]] - code - gateway/tests/test_tool_acl.py
+- [[TestOwnerGroupContext]] - code - gateway/tests/test_group_rbac.py
+- [[TestReadOnlyMemberGroupContext]] - code - gateway/tests/test_group_rbac.py
+- [[TestToolRateLimiting]] - code - gateway/tests/test_tool_acl.py
+- [[TestViewerAccess]] - code - gateway/tests/test_tool_acl.py
+- [[ToolACLConfig]] - code - gateway/security/tool_acl.py
+- [[ToolACLEnforcer]] - code - gateway/security/tool_acl.py
+- [[Tools not in the rate-limit map should always pass.]] - rationale - gateway/tests/test_tool_acl.py
+- [[_make_rbac()_1]] - code - gateway/tests/test_tool_acl.py
+- [[acl_config()]] - code - gateway/tests/test_group_rbac.py
+- [[enforcer()]] - code - gateway/tests/test_group_rbac.py
+- [[enforcer()_3]] - code - gateway/tests/test_tool_acl.py
+- [[group_rbac.py (GroupRoleResolver)]] - code - gateway/security/group_rbac.py
+- [[group_role_resolver()]] - code - gateway/tests/test_group_rbac.py
+- [[rbac()_1]] - code - gateway/tests/test_group_rbac.py
+- [[rbac()_6]] - code - gateway/tests/test_tool_acl.py
+- [[teams()_3]] - code - gateway/tests/test_group_rbac.py
+- [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - rationale - gateway/tests/test_tool_acl.py
+- [[test_group_rbac.py]] - code - gateway/tests/test_group_rbac.py
+- [[test_tool_acl.py]] - code - gateway/tests/test_tool_acl.py
+- [[tool_acl.py (ToolACLEnforcer)]] - code - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -181,18 +146,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 50 edges to [[_COMMUNITY_PII Config & Test Fixtures]]
-- 35 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
-- 13 edges to [[_COMMUNITY_Security Module Middleware]]
-- 10 edges to [[_COMMUNITY_LLM Proxy Resource Guard]]
-- 2 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Security Module]]
-- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 41 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 20 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 17 edges to [[_COMMUNITY_Group Workspace Isolation]]
+- 15 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 5 edges to [[_COMMUNITY_Custom Skills]]
+- 4 edges to [[_COMMUNITY_docsvault]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Slack API Proxy]]
+- 1 edge to [[_COMMUNITY_Gateway Proxy Layer]]
+- 1 edge to [[_COMMUNITY_Approval Queue Tests]]
 
 ## Top bridge nodes
-- [[FileSandboxConfig]] - degree 81, connects to 6 communities
-- [[FileSandbox]] - degree 83, connects to 4 communities
-- [[PIIScanner]] - degree 16, connects to 1 community
-- [[test_privilege_separation.py]] - degree 15, connects to 1 community
-- [[file_sandbox.py]] - degree 9, connects to 1 community
+- [[ToolACLEnforcer]] - degree 72, connects to 7 communities
+- [[test_group_rbac.py]] - degree 19, connects to 5 communities
+- [[GroupRole]] - degree 19, connects to 4 communities
+- [[ToolACLConfig]] - degree 36, connects to 3 communities
+- [[TestReadOnlyMemberGroupContext]] - degree 14, connects to 3 communities

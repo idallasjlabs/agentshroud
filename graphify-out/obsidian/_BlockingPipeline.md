@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
 community: "Gateway Test Suite"
-location: "L164"
+location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # _BlockingPipeline
 
 ## Connections
-- [[.process_outbound()_1]] - `method` [EXTRACTED]
+- [[.process_outbound()_6]] - `method` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest]] - `uses` [INFERRED]

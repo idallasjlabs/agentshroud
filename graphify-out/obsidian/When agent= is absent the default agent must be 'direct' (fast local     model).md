@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Voice Gateway Tests"
-location: "L1504"
+community: "Security Pipeline Core"
+location: "L1512"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Security_Pipeline_Core
 ---
 
 # When ?agent= is absent the default agent must be 'direct' (fast local     model)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_default_agent_is_direct()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Security_Pipeline_Core

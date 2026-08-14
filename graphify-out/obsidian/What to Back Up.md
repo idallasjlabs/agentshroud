@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/backup-restore.md"
 type: "document"
-community: "docs/runbooks"
+community: "Bot Skill Config"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Bot_Skill_Config
 ---
 
 # What to Back Up
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Backup & Restore Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

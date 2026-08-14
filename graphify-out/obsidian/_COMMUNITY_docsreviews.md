@@ -1,18 +1,22 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+members: 9
 ---
 
 # docs/reviews
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[Enforcement Audit Results v0.7.0 (4040 tests, 0 failures, CONDITIONAL GO)]] - document - docs/reviews/enforcement-audit-v0.7.0.md
-- [[Known gaps v0.7.0 ContextGuard never blocks, multilingual injection miss, no cross-turn correlation]] - rationale - docs/reviews/enforcement-audit-v0.7.0.md
-- [[P0 Critical Path 1616 PromptGuard blocks DANXMLoverride, PII redacts SSNemail]] - rationale - docs/reviews/enforcement-audit-v0.7.0.md
+- [[favicon-48x48.png]] - image - branding/favicons/favicon-48x48.png
+- [[favicon-64x64.png]] - image - branding/favicons/favicon-64x64.png
+- [[favicon-96x96.png]] - image - branding/favicons/favicon-96x96.png
+- [[icon-1024x1024.png]] - image - branding/icons/app/icon-1024x1024.png
+- [[icon-128x128.png]] - image - branding/icons/app/icon-128x128.png
+- [[icon-16x16.png]] - image - branding/icons/app/icon-16x16.png
+- [[icon-192x192.png]] - image - branding/favicons/icon-192x192.png
+- [[icon-24x24.png]] - image - branding/icons/app/icon-24x24.png
+- [[icon-512x512.png]] - image - branding/favicons/icon-512x512.png
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,9 +24,3 @@ members: 3
 TABLE source_file, type FROM #community/docs/reviews
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_docsredteam]]
-
-## Top bridge nodes
-- [[Enforcement Audit Results v0.7.0 (4040 tests, 0 failures, CONDITIONAL GO)]] - degree 3, connects to 1 community

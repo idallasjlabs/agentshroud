@@ -1,17 +1,20 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+members: 7
 ---
 
 # Setup Docs
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[iCloud App-Specific Passwords for 2FA]] - concept - docs/setup/ICLOUD-SERVICES-SETUP.md
-- [[iCloud Services Setup (Mail, CalDAV, CardDAV, Notes)]] - document - docs/setup/ICLOUD-SERVICES-SETUP.md
+- [[MCP AWS Profile Configuration Skill]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[MCP Auth Reset Skill]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[MCP Tools Usage Skill]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[i-mcpm README (MCP Tools Usage)_1]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[i-mcpm-auth-reset README_1]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/README.md
+- [[i-mcpm-aws-profile README_1]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
+- [[mcpm-doctor Skill (referenced, sibling dir)]] - document - docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # ESP32 Firmware
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[esp_log.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_log.h
+- [[Generic AI Agent Integration (HTTP Proxy Mode)]] - document - docs/api/integration-guide.md
 
 ## Live Query (requires Dataview plugin)
 

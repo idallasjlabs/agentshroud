@@ -1,27 +1,21 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "SOC Dashboard"
-location: "L2666"
+community: "Gateway Test Suite"
+location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Dashboard
+  - community/Gateway_Test_Suite
 ---
 
 # WebSocket
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLError]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
+- [[.__init__()_128]] - `references` [EXTRACTED]
 - [[Severity_2]] - `uses` [INFERRED]
+- [[WSEvent]] - `uses` [INFERRED]
 - [[WSEventType]] - `uses` [INFERRED]
-- [[soc_websocket()]] - `references` [EXTRACTED]
+- [[ws_soc_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Dashboard
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

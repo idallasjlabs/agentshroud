@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "docs/user-guide.md"
+community: "Gateway Test Suite"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/user-guidemd
+  - community/Gateway_Test_Suite
 ---
 
 # What You'll See
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dashboard Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/user-guidemd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

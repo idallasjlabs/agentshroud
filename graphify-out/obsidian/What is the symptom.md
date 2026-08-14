@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-18-runbook.svg"
 type: "concept"
-community: "docs/diagrams"
+community: "Bot Skill Config"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Bot_Skill_Config
 ---
 
 # What is the symptom?
@@ -17,4 +17,4 @@ tags:
 - [[Context limit exceeded, bot resets mid-conversation]] - `calls` [EXTRACTED]
 - [[Security alert (blocked domain, HIGH MCP threat, canary token triggered)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/diagrams
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

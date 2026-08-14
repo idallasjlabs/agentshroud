@@ -1,16 +1,22 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 9
 ---
 
 # Planning Docs
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[Phases]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Apollo — Audio Systems Producer_3]] - concept - docs/architecture/agentic-os.md
+- [[Athena — Knowledge Distiller_4]] - concept - docs/architecture/agentic-os.md
+- [[Atlas — Curriculum Architect_4]] - concept - docs/architecture/agentic-os.md
+- [[Daedalus — Concept Illustrator_4]] - concept - docs/architecture/agentic-os.md
+- [[Hermes — Reference Verifier (podcast agent)]] - concept - docs/architecture/agentic-os.md
+- [[Mnemosyne — Retention Engineer_4]] - concept - docs/architecture/agentic-os.md
+- [[Oracle — Feedback Analyst_4]] - concept - docs/architecture/agentic-os.md
+- [[Socrates — Dialogue Architect_4]] - concept - docs/architecture/agentic-os.md
+- [[Vulcan — Subject Matter Auditor_4]] - concept - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 

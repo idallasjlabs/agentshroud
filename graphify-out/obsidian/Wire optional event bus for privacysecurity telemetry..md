@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "PromptGuard Encoding Detection"
 location: "L308"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # Wire optional event bus for privacy/security telemetry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.set_event_bus()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection

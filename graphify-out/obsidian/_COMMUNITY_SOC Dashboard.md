@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # SOC Dashboard
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[POST socv1delegation]] - code - gateway/soc/router.py
+- [[Website Voice Terminal (ESP32-S3-BOX-3) Section]] - document - docs/index.html
 
 ## Live Query (requires Dataview plugin)
 

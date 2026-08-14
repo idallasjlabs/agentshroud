@@ -1,186 +1,145 @@
 ---
 type: community
-cohesion: 0.02
-members: 171
+members: 132
 ---
 
 # LLM Proxy Resource Guard
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 171 nodes
+**Members:** 132 nodes
 
 ## Members
-- [[.__del__()]] - code - gateway/security/resource_guard.py
-- [[.__init__()_111]] - code - gateway/security/resource_guard.py
-- [[._alert_high_usage()]] - code - gateway/security/resource_guard.py
-- [[._build_bridge()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[._check_system_resources()_1]] - code - gateway/security/resource_guard.py
-- [[._cleanup_expired_usage()]] - code - gateway/security/resource_guard.py
-- [[._get_disk_io_stats()]] - code - gateway/security/resource_guard.py
-- [[._monitor_resources()]] - code - gateway/security/resource_guard.py
-- [[._start_monitoring_task()]] - code - gateway/security/resource_guard.py
-- [[.add_alert_callback()_1]] - code - gateway/security/resource_guard.py
-- [[.check_cpu_limit()]] - code - gateway/security/resource_guard.py
-- [[.check_disk_write_limit()]] - code - gateway/security/resource_guard.py
-- [[.check_memory_limit()]] - code - gateway/security/resource_guard.py
-- [[.check_resource()]] - code - gateway/security/resource_guard.py
-- [[.check_vram_headroom()]] - code - gateway/security/resource_guard.py
-- [[.cleanup_temp_files()]] - code - gateway/security/resource_guard.py
-- [[.get_usage_stats()]] - code - gateway/security/resource_guard.py
-- [[.register_temp_file()]] - code - gateway/security/resource_guard.py
-- [[.setup_method()_22]] - code - gateway/tests/test_resource_guard.py
-- [[.start_request_tracking()]] - code - gateway/security/resource_guard.py
-- [[.stop()_11]] - code - gateway/security/resource_guard.py
-- [[.stop_monitoring()]] - code - gateway/security/resource_guard.py
-- [[.teardown_method()_5]] - code - gateway/tests/test_resource_guard.py
-- [[.test_bridge_registered_via_add_alert_callback_fires_through()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_brief_spike_below_debounce_does_not_alert()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_check_cpu_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_check_disk_write_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_check_memory_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_check_resource_over_limit_blocked()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_check_resource_temp_files_limit()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_check_resource_under_limit_passes()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_cleanup_keeps_fresh_agents()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cleanup_removes_stale_agents()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cleanup_tolerates_missing_file()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cleanup_unlinks_existing_and_clears_registry()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cpu_limit_check()]] - code - gateway/tests/test_security_audit.py
-- [[.test_cpu_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cpu_limit_fails_closed_on_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_cpu_limit_ok_when_under()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_default_mode_is_enforce()_5]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_disabled_when_threshold_zero()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_disk_write_limit()]] - code - gateway/tests/test_security_audit.py
-- [[.test_disk_write_limit_allows_when_no_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_disk_write_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_disk_write_limit_under_threshold()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_from_environment_defaults_to_enforce()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_get_resource_guard_is_lazy_singleton()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_get_usage_stats_for_agent()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_get_usage_stats_system_wide()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_invalid_resource_type()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_keyvault_instantiated_and_seeded_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_llm_stats_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_memory_limit_check()]] - code - gateway/tests/test_security_audit.py
-- [[.test_memory_limit_fails_closed_on_error()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_memory_limit_ok_and_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_missing_timestamp_falls_back_to_zero()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_multiple_agents_isolated()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_natural_language_question_is_allowed()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_no_hardcoded_owner_id_in_lifespan()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_non_spike_alert_dispatched_with_medium_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_passes_with_sufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_pipeline_scans_outbound_for_key_leaks()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_register_blocks_over_limit()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_register_under_limit()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_rejects_insufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_request_count_limiting()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_resource_guard_config()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_resource_guard_init()]] - code - gateway/tests/test_security_audit.py
-- [[.test_sanitize_reason_preserves_simple_text()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_sanitize_reason_strips_file_paths()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_sanitize_reason_strips_module_paths()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_setup_resource_guard_returns_real_guard_with_default_limits()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_setup_with_custom_limits_overrides_defaults()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_spike_alert_dispatched_with_high_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_start_request_tracking_records_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_start_request_tracking_survives_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[.test_stop_cancels_monitor_task()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_stop_cancels_monitor_task_and_idempotent()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[.test_system_resource_monitoring_alerts_after_debounce()]] - code - gateway/tests/test_resource_guard.py
-- [[.test_unparseable_text_is_allowed()_1]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_usage_stats()]] - code - gateway/tests/test_security_audit.py
-- [[.test_v1_endpoint_handles_non_json_upstream_bodies()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_v1_endpoint_is_defined()]] - code - gateway/tests/test_round2_hardening.py
-- [[.test_window_expiry_resets_usage()]] - code - gateway/tests/test_resource_guard.py
-- [[128k token request at 4 bytestoken KV cache triggers rejection at 4096 MB headr]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[A single over-threshold sample followed by an under-threshold sample is suppress]] - rationale - gateway/tests/test_resource_guard.py
-- [[Add a callback function to be called when resource alerts are triggered.]] - rationale - gateway/security/resource_guard.py
-- [[Any_54]] - code - gateway/security/resource_guard.py
-- [[Any_66]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[Background task to monitor resource usage and trigger alerts.]] - rationale - gateway/security/resource_guard.py
-- [[Best-effort cleanup for test contexts that don't call stop().]] - rationale - gateway/security/resource_guard.py
-- [[Check if agent has exceeded CPU time limit.]] - rationale - gateway/security/resource_guard.py
-- [[Check if agent has exceeded disk write limit.]] - rationale - gateway/security/resource_guard.py
-- [[Check if agent has exceeded memory limit.]] - rationale - gateway/security/resource_guard.py
-- [[Check if resource usage is allowed for an agent.          Args             agen]] - rationale - gateway/security/resource_guard.py
-- [[Check system-wide resource usage for anomalies (synchronous).]] - rationale - gateway/security/resource_guard.py
-- [[Clean up old usage data (older than 5 minutes).]] - rationale - gateway/security/resource_guard.py
-- [[Clean up temporary files for an agent.]] - rationale - gateway/security/resource_guard.py
-- [[Configuration for resource limits.]] - rationale - gateway/security/resource_guard.py
-- [[Current resource usage metrics.]] - rationale - gateway/security/resource_guard.py
-- [[End-to-end register the bridge on a real ResourceGuard, trigger         its ale]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[Get current disk IO statistics.]] - rationale - gateway/security/resource_guard.py
-- [[Get current usage statistics.]] - rationale - gateway/security/resource_guard.py
-- [[Get the global resource guard instance, creating it lazily on first call.]] - rationale - gateway/security/resource_guard.py
-- [[LLMProxy_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[Monitor and limit resource usage per agentrequest.]] - rationale - gateway/security/resource_guard.py
-- [[Pre-flight VRAM headroom check before dispatching a long-context local-model cal]] - rationale - gateway/security/resource_guard.py
-- [[Proxy endpoint must not crash if upstream returns non-JSON body.]] - rationale - gateway/tests/test_round2_hardening.py
-- [[Raised when a local-model call is rejected because estimated VRAM usage     woul]] - rationale - gateway/security/resource_guard.py
-- [[Recreate the lifespan bridge closure verbatim from gatewayingest_apilifespan.p]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[Register a temporary file for tracking.]] - rationale - gateway/security/resource_guard.py
-- [[ResourceGuard]] - code - gateway/security/resource_guard.py
-- [[ResourceGuard is instantiated at startup and reachable on app_state.]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[ResourceLimits]] - code - gateway/security/resource_guard.py
-- [[ResourceUsage]] - code - gateway/security/resource_guard.py
-- [[Setup resource guard with custom limits.]] - rationale - gateway/security/resource_guard.py
-- [[Small context request passes VRAM headroom check.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[Start background monitoring task.]] - rationale - gateway/security/resource_guard.py
-- [[Start tracking resources for a specific agentrequest.]] - rationale - gateway/security/resource_guard.py
-- [[Stop background monitoring task cleanly.]] - rationale - gateway/security/resource_guard.py
-- [[Stop background monitoring.]] - rationale - gateway/security/resource_guard.py
-- [[Sustained high CPU fires the alert after debounce samples are crossed.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test ResourceGuardConfig dataclass.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test handling of invalid resource types.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test request count per minute limiting.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test temp file count limiting.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that different agents have isolated resource tracking.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that resource usage over limits is blocked.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that resource usage resets after time window.]] - rationale - gateway/tests/test_resource_guard.py
-- [[Test that resource usage under limits passes.]] - rationale - gateway/tests/test_resource_guard.py
-- [[TestCpuMemoryDiskLimits]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestDRYOwnerChatID]] - code - gateway/tests/test_round2_hardening.py
-- [[TestEgressConfigDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
-- [[TestEnvGuardFailOpen]] - code - gateway/tests/test_round2_hardening.py
-- [[TestExpiredUsageCleanup]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestFileSandboxDefaultEnforce]] - code - gateway/tests/test_round2_hardening.py
-- [[TestGlobalAccessor]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestKeyVaultWired]] - code - gateway/tests/test_round2_hardening.py
-- [[TestLLMProxyEndpoints]] - code - gateway/tests/test_round2_hardening.py
-- [[TestNotifyUserBlockedSanitization]] - code - gateway/tests/test_round2_hardening.py
-- [[TestResourceGuard]] - code - gateway/tests/test_resource_guard.py
-- [[TestResourceGuardAlertBridge]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[TestResourceGuardFailClosed]] - code - gateway/tests/test_round2_hardening.py
-- [[TestResourceGuardLifecycle]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[TestResourceGuardWiring]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[TestTempFiles]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestUsageStatsAndTracking]] - code - gateway/tests/test_resource_guard_limits.py
-- [[TestVramHeadroom]] - code - gateway/tests/test_resource_guard_limits.py
-- [[Tests for Round 2 hardening — 9 fixes.]] - rationale - gateway/tests/test_round2_hardening.py
-- [[The llm-proxystats endpoint must exist.]] - rationale - gateway/tests/test_round2_hardening.py
-- [[The v1{path} endpoint must exist (enabled in v0.9.0).]] - rationale - gateway/tests/test_round2_hardening.py
-- [[The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher.]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[The lifespan must stop the background monitor task on shutdown.]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[Trigger a resource usage alert synchronously.]] - rationale - gateway/security/resource_guard.py
-- [[VRAM check is skipped when max_vram_headroom_mb=0 (disabled).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[VRAMHeadroomError]] - code - gateway/security/resource_guard.py
-- [[Verify resource check methods return False (deny) on exception.]] - rationale - gateway/tests/test_round2_hardening.py
-- [[check_vram_headroom raises VRAMHeadroomError when estimated VRAM exceeds budget.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[get_resource_guard()]] - code - gateway/security/resource_guard.py
-- [[guard()_3]] - code - gateway/tests/test_resource_guard_limits.py
-- [[resource_guard.py]] - code - gateway/security/resource_guard.py
-- [[setup_resource_guard()]] - code - gateway/security/resource_guard.py
-- [[stop() should cancel background monitor cleanly.]] - rationale - gateway/tests/test_resource_guard.py
-- [[test_resource_guard.py]] - code - gateway/tests/test_resource_guard.py
-- [[test_resource_guard_limits.py]] - code - gateway/tests/test_resource_guard_limits.py
-- [[test_resource_guard_vram_estimate_128k_tokens_triggers_rejection()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_vram_headroom_check_allows_small_context()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_vram_headroom_check_disabled_when_threshold_zero()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_vram_headroom_check_raises_on_insufficient_vram()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[test_resource_guard_wiring.py]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[test_round2_hardening.py]] - code - gateway/tests/test_round2_hardening.py
+- [[.__init__()_179]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.__init__()_180]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.__init__()_181]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.__init__()_182]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.get_recent_entries()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.is_group_admin()_2]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.is_owner()_4]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.model_dump()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.model_dump()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[.require()_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[FakeAuditStore_1]] - code - gateway/tests/test_soc_router_coverage.py
+- [[FakeCaller]] - code - gateway/tests/test_soc_router_coverage.py
+- [[FakeGroup]] - code - gateway/tests/test_soc_router_coverage.py
+- [[SOC agent-cves surfaces auto-registered under_review advisories honestly.]] - rationale - gateway/tests/test_soc_router_coverage.py
+- [[Stands in for SCLCaller RBAC require() is a no-op, owner is switchable.]] - rationale - gateway/tests/test_soc_router_coverage.py
+- [[_Svc]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_fake_contributor_manager()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[_make_service_manager()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[gatewaysocauth.py (get_caller)]] - code - gateway/soc/auth.py
+- [[gatewaysocrouter.py (SCL REST endpoints)]] - code - gateway/soc/router.py
+- [[holder()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[state()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_add_collaborator()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_add_group_member_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_agent_cves_known_and_unknown()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_agent_cves_registry_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_agent_cves_reports_under_review()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_missing_queue()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_approvals_pending()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_export_unavailable()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_verify_chain_raises()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_verify_chain_unavailable()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_verify_chain_valid()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_auth_login_dev_mode_omits_secure_flag()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_auth_login_no_configured_token()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_auth_login_success_sets_secure_cookie()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_auth_login_wrong_token()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_auth_ws_token()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_collaborator_activity_filters()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_collaborator_activity_no_tracker()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_collaborator_activity_pairing()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_config_integrity_acknowledge()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_correlation_fallback_builder()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_correlation_unavailable_on_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_correlation_via_engine()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_create_delegation_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_create_group_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_cve_report_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_dashboard_fallback_when_template_missing()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_dashboard_serves_template_with_cache_busting()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_delete_group_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_docker_exec_bot_create_failures()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_docker_exec_bot_socket_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_docker_exec_bot_success_and_frame_parsing()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_deny()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_deny_missing_queue()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_history_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_history_revoke_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_log_filters_egress_events()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rule_override_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rule_remove_no_queue()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_emergency_block_confirmed()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_emergency_block_filter_raises_still_ok()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_emergency_block_requires_confirmation()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_fetch_latest_release_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_fetch_latest_release_success()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_file_hash_existing_and_missing()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_get_config_variants()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_get_group()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_get_modules_modes()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_get_modules_unavailable()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_get_updates_variants()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_get_user_found_and_missing()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_group_memory_clear()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_group_memory_clear_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_group_memory_read()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_health_healthy_and_degraded()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_disconnect_owner_gate()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_freeze()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_killswitch_shutdown()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_list_bots_default_and_configured()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_list_delegations()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_list_groups_empty_and_populated()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_list_services_and_bot_filter()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_list_users()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_llm_failover_stats()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_log_audit_survives_app_state_failure()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_minimal_dashboard_html_contents()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_privacy_policies()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_remove_group_member_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_rename_group_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_revoke_collaborator()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_revoke_delegation_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_risk_defaults_low_on_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_risk_fallback_builder()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_risk_level_label_boundaries()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_risk_summary()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_risk_summary_fallback_on_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_risk_via_engine_critical()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_sbom_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_scan_results()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_scanners_aggregate()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_scanners_aggregate_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_scanners_recent()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_scorecard_global_bot_and_error()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_security_alerts_dispatcher_raises()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_security_alerts_no_dispatcher()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_security_alerts_with_dispatcher()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_security_events_no_store()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_security_events_with_filters()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_service_logs()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_service_restart()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_service_start()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_service_stop_confirmation_then_stop()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_service_update()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_services_rebuild()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_set_group_mode_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_set_log_level()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_set_module_mode_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_set_user_collab_mode()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_set_user_role_invalid()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_set_user_role_non_owner_denied()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_set_user_role_owner_success()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_soc_router_coverage.py]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_ssh_compose_no_host()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_tool_acl()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_trivy_summary()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_update_display_name()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_upgrade_hermes_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_upgrade_hermes_restarts_the_real_container_name()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_websocket_route_dispatch()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[update_service() must be called with the real container name     (agentshroud-he]] - rationale - gateway/tests/test_soc_router_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -190,23 +149,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 42 edges to [[_COMMUNITY_PII Config & Test Fixtures]]
-- 13 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 12 edges to [[_COMMUNITY_Gateway Security Module]]
-- 10 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
-- 10 edges to [[_COMMUNITY_File Sandbox]]
-- 9 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
-- 9 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 4 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
-- 1 edge to [[_COMMUNITY_Auth & Exception Types]]
+- 26 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 5 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 5 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Security Module Middleware]]
-- 1 edge to [[_COMMUNITY_URLDomain Validation Tests]]
-- 1 edge to [[_COMMUNITY_SOC Dashboard]]
+- 1 edge to [[_COMMUNITY_Approval Queue Tests]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[ResourceGuard]] - degree 93, connects to 6 communities
-- [[test_round2_hardening.py]] - degree 17, connects to 5 communities
-- [[TestResourceGuardFailClosed]] - degree 11, connects to 5 communities
-- [[TestLLMProxyEndpoints]] - degree 10, connects to 5 communities
-- [[TestNotifyUserBlockedSanitization]] - degree 10, connects to 5 communities
+- [[test_soc_router_coverage.py]] - degree 149, connects to 6 communities
+- [[FakeGroup]] - degree 13, connects to 2 communities
+- [[FakeCaller]] - degree 12, connects to 2 communities
+- [[FakeAuditStore_1]] - degree 7, connects to 2 communities
+- [[_Svc]] - degree 7, connects to 2 communities

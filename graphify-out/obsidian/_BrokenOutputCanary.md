@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "SOC RBAC & Auth"
 location: "L383"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer_Pipeline
+  - community/SOC_RBAC__Auth
 ---
 
 # _BrokenOutputCanary
@@ -28,4 +28,4 @@ tags:
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 - [[test_pipeline_fails_closed_on_output_canary_error()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/INFERRED #community/SOC_RBAC__Auth

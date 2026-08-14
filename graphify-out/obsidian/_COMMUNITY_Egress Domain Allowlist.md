@@ -1,119 +1,114 @@
 ---
 type: community
-cohesion: 0.04
-members: 104
+members: 101
 ---
 
 # Egress Domain Allowlist
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 104 nodes
+**Members:** 101 nodes
 
 ## Members
-- [[.__init__()_24]] - code - gateway/proxy/http_proxy.py
-- [[.__init__()_42]] - code - gateway/proxy/web_proxy.py
-- [[.get_domain_settings()]] - code - gateway/proxy/web_config.py
-- [[.is_domain_allowed()]] - code - gateway/proxy/web_config.py
-- [[.is_domain_denied()]] - code - gateway/proxy/web_config.py
-- [[.reset()]] - code - gateway/proxy/web_proxy.py
-- [[.test_allowed_domain_passes()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_audit_chain_valid()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_aws_key_in_response_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_base64_encoded_injection_in_html()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_base64_in_query_flagged()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_base64_in_url_path_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_blocked_request_audited()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_case_insensitive()_2]] - code - gateway/tests/test_web_proxy.py
-- [[.test_clean_comment_not_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_clean_content_no_injection()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_custom_denylist()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_custom_domain_size_limit()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_data_exfil_instruction_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_denied_domain_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_denied_domain_malware()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_denied_subdomain_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_different_domains_independent()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_domain_denied()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_domain_not_in_denylist_passes()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_empty_allowlist_blocks_everything()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_exact_match()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_get_domain_settings_custom()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_get_domain_settings_default()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_github_passes()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_ignore_instructions_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_injection_adds_security_headers()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_injection_in_hidden_div()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_injection_in_html_comment()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_injection_in_invisible_text()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_injection_in_meta_tag()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_injection_stats()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_large_response_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_long_query_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_no_audit_chain_no_crash()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_normal_content_type_not_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_normal_response_not_flagged_for_size()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_passthrough_adds_header()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_passthrough_allows_everything()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_passthrough_mode_default_off()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_passthrough_skips_content_scan()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_pii_in_response_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_pii_in_url_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_private_key_in_response_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_rate_limit_blocks_excess()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_rate_limiter_reset()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_request_audited()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_response_audited()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_role_override_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_single_zwc_not_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_ssn_in_url_flagged()_1]] - code - gateway/tests/test_web_proxy.py
-- [[.test_stackoverflow_passes()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_stats_tracked()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_suspicious_content_type_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_system_delimiter_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_tool_invocation_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_wildcard_does_not_match_other_root()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_wildcard_domain_settings()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_wildcard_matches_root_domain()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_wildcard_matches_subdomain()]] - code - gateway/tests/test_web_proxy.py
-- [[.test_zero_width_chars_detected()]] - code - gateway/tests/test_web_proxy.py
-- [[Check if a domain is on the allowlist (used when mode == 'allowlist').]] - rationale - gateway/proxy/web_config.py
-- [[Check if a domain is on the denylist.]] - rationale - gateway/proxy/web_config.py
-- [[Configuration for the web traffic proxy.      Default-allow all URLs pass unles]] - rationale - gateway/proxy/web_config.py
-- [[DomainSettings]] - code - gateway/proxy/web_config.py
-- [[EgressFilter]] - code - gateway/proxy/http_proxy.py
-- [[Get settings for a specific domain, falling back to defaults.]] - rationale - gateway/proxy/web_config.py
-- [[HTTP web traffic proxy for OpenClaw.      Intercepts all outbound web requests,]] - rationale - gateway/proxy/web_proxy.py
-- [[Per-domain configuration overrides.]] - rationale - gateway/proxy/web_config.py
-- [[Proxy works without an audit chain.]] - rationale - gateway/tests/test_web_proxy.py
-- [[RateLimiter_1]] - code - gateway/proxy/web_proxy.py
-- [[Simple in-memory per-domain rate limiter using sliding window.]] - rationale - gateway/proxy/web_proxy.py
-- [[Single zero-width chars are normal (e.g., word joiners).]] - rationale - gateway/tests/test_web_proxy.py
-- [[TestAuditChain_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestContentTypeFiltering]] - code - gateway/tests/test_web_proxy.py
-- [[TestDataExfiltration_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestDomainDenylist]] - code - gateway/tests/test_web_proxy.py
-- [[TestEncodedPayloads]] - code - gateway/tests/test_web_proxy.py
-- [[TestHiddenContent]] - code - gateway/tests/test_web_proxy.py
-- [[TestIsDomainAllowed]] - code - gateway/tests/test_web_proxy.py
-- [[TestPIIDetection_2]] - code - gateway/tests/test_web_proxy.py
-- [[TestPassthroughMode_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestPromptInjectionDetection]] - code - gateway/tests/test_web_proxy.py
-- [[TestRateLimiting_3]] - code - gateway/tests/test_web_proxy.py
-- [[TestResponseSizeLimits]] - code - gateway/tests/test_web_proxy.py
-- [[TestStats_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestWebProxyConfig]] - code - gateway/tests/test_web_proxy.py
-- [[TestZeroWidthAttacks]] - code - gateway/tests/test_web_proxy.py
-- [[Unit tests for WebProxyConfig.is_domain_allowed().]] - rationale - gateway/tests/test_web_proxy.py
-- [[WebProxy_1]] - code - gateway/proxy/web_proxy.py
-- [[WebProxyConfig]] - code - gateway/proxy/web_config.py
-- [[audit_chain()]] - code - gateway/tests/test_web_proxy.py
-- [[config()_4]] - code - gateway/tests/test_web_proxy.py
-- [[passthrough_proxy()_1]] - code - gateway/tests/test_web_proxy.py
-- [[proxy()_2]] - code - gateway/tests/test_web_proxy.py
-- [[test_hc_ping_allowed()]] - code - gateway/tests/test_heartbeat_egress.py
-- [[test_hc_ping_subdomain_not_blocked()]] - code - gateway/tests/test_heartbeat_egress.py
-- [[test_heartbeat_egress.py]] - code - gateway/tests/test_heartbeat_egress.py
-- [[test_web_proxy.py]] - code - gateway/tests/test_web_proxy.py
+- [[.__init__()_91]] - code - gateway/security/mcp_policy.py
+- [[.__init__()_168]] - code - gateway/tests/test_mcp_policy.py
+- [[.__post_init__()_5]] - code - gateway/security/mcp_policy.py
+- [[._decide()_1]] - code - gateway/security/mcp_policy.py
+- [[._tier_for()_1]] - code - gateway/security/mcp_policy.py
+- [[.allowed()_1]] - code - gateway/security/mcp_policy.py
+- [[.enforce()_1]] - code - gateway/security/mcp_policy.py
+- [[.evaluate()_1]] - code - gateway/security/mcp_policy.py
+- [[.from_dict()_7]] - code - gateway/security/mcp_policy.py
+- [[.submit_tool_request()_3]] - code - gateway/tests/test_mcp_policy.py
+- [[.test_configured_servers_are_allowlisted_by_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[.test_engine_allows_known_server_under_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[.test_engine_denies_unknown_server_under_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[.test_engine_requires_approval_for_destructive_tool_on_known_server()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[.test_explicit_policy_section_is_not_overridden()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[.test_missing_section_yields_deny_by_default_policy()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[.test_no_mcp_section_still_deny_by_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[.wait_for_decision()_3]] - code - gateway/tests/test_mcp_policy.py
+- [[A REAL EnhancedApprovalQueue + default ToolRiskConfig must NOT let the     engin]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A config with no mcp_proxy AND no mcp_policy still yields a fail-closed]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[A destructive tool the operator forgot to classify is still caught as     high-r]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A fullwidthhomoglyph tool name must not evade the denylistkeyword     heuristi]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A knownallowlisted server's non-high-risk tool is still ALLOWED — no breakage.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[A malformed default_action in YAML must not fail open — it becomes deny.]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A policy-permitted call passes the policy gate (inspectionpermission     layers]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A representative policy two allowlisted servers, one denylisted server,     a p]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A risk tier declared with a bare tool name applies on any allowlisted     server]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A server both allowed and denied is denied (deny wins).]] - rationale - gateway/tests/test_mcp_policy.py
+- [[A stock config (no mcp_policy) must produce a non-empty, deny-by-default policy]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[An empty config denies everything — never a blanket allow.]] - rationale - gateway/tests/test_mcp_policy.py
+- [[An operator-authored mcp_policy section must be honoured verbatim.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[Any_46]] - code - gateway/security/mcp_policy.py
+- [[Decides allow  deny  require-approval for MCP tool calls.      Usage]] - rationale - gateway/security/mcp_policy.py
+- [[Declarative MCP security policy.      Loaded from the ``mcp_policy`` section of]] - rationale - gateway/security/mcp_policy.py
+- [[End-to-end the engine wired into MCPProxy with a REAL approval queue     must n]] - rationale - gateway/tests/test_mcp_policy.py
+- [[Evaluate a single MCP tool call. Pure — no IO, no side effects         beyond b]] - rationale - gateway/security/mcp_policy.py
+- [[Evaluate and resolve the decision to a terminal ALLOWDENY.          For REQUIRE]] - rationale - gateway/security/mcp_policy.py
+- [[Fail-closed intent even on a known server, an obviously destructive         too]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[Fail-closed a high-risk tool with no approval queue wired is denied,     never]] - rationale - gateway/tests/test_mcp_policy.py
+- [[Fail-closed if the queue returns requires_wait=False for a call the     engine]] - rationale - gateway/tests/test_mcp_policy.py
+- [[Knownconfigured MCP servers must be carried into the default allowlist]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[LOW finding when owner_bypass is enabled but owner_user_id is left     blank, t]] - rationale - gateway/tests/test_mcp_policy.py
+- [[MCPPolicyAction]] - code - gateway/security/mcp_policy.py
+- [[MCPPolicyConfig]] - code - gateway/security/mcp_policy.py
+- [[MCPPolicyConfig_1]] - code - gateway/tests/test_mcp_policy.py
+- [[MCPPolicyDecision]] - code - gateway/security/mcp_policy.py
+- [[MCPPolicyEngine]] - code - gateway/security/mcp_policy.py
+- [[MCPPolicyEngine_1]] - code - gateway/tests/test_mcp_policy.py
+- [[Minimal stand-in for EnhancedApprovalQueue.      Records submissions and returns]] - rationale - gateway/tests/test_mcp_policy.py
+- [[MonkeyPatch]] - code - gateway/tests/test_mcp_policy.py
+- [[Normalize a servertool reference for robust, evasion-resistant matching.      A]] - rationale - gateway/security/mcp_policy.py
+- [[Owner skips the approval gate for high-risk tools, but a denylisted     tool is]] - rationale - gateway/tests/test_mcp_policy.py
+- [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - rationale - gateway/security/mcp_policy.py
+- [[Path_32]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[Resolve the risk tier for a tool.          Explicit classification (qualified be]] - rationale - gateway/security/mcp_policy.py
+- [[TestDefaultMcpPolicyIsFailClosed]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[TestDefaultPolicyNoMcpServers]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[The engine wired into MCPProxy blocks a denied call before dispatch —     the fa]] - rationale - gateway/tests/test_mcp_policy.py
+- [[The result of evaluating a single MCP tool call against the policy.]] - rationale - gateway/security/mcp_policy.py
+- [[The synthesised default, fed to the engine, DENIES an unknown server.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[The three terminal policy outcomes for an MCP tool call.]] - rationale - gateway/security/mcp_policy.py
+- [[True only for a terminal ALLOW.          REQUIRE_APPROVAL is not allowed on it]] - rationale - gateway/security/mcp_policy.py
+- [[When an operator explicitly opts into default-allow, a non-allowlisted     serve]] - rationale - gateway/tests/test_mcp_policy.py
+- [[_FakeApprovalQueue]] - code - gateway/tests/test_mcp_policy.py
+- [[_base_config()_1]] - code - gateway/tests/test_mcp_policy.py
+- [[_norm()_1]] - code - gateway/security/mcp_policy.py
+- [[_write()_1]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[engine()_1]] - code - gateway/tests/test_mcp_policy.py
+- [[evaluate() records the decision for the SOC module heat-map.]] - rationale - gateway/tests/test_mcp_policy.py
+- [[mcp_policy.py]] - code - gateway/security/mcp_policy.py
+- [[test_allowlisted_server_safe_tool_is_allowed()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_bare_tool_name_risk_tier_applies_across_servers()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_critical_tool_requires_approval()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_decision_records_soc_heatmap()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_default_allow_opt_in_permits_non_allowlisted_safe_tool()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_default_deny_posture_when_no_config()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_denied_tool_can_be_specified_bare_or_qualified()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_denylist_wins_over_allowlist()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_denylisted_server_is_denied_even_if_tool_safe()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_denylisted_tool_is_denied()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_allows_allowlisted_safe_tool()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_blocks_unknown_server()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_high_risk_denied_on_rejection()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_high_risk_enqueues_and_allows_on_approval()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_high_risk_queue_no_wait_denies_closed()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_high_risk_without_queue_denies_closed()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_real_queue_high_risk_not_downgraded_to_allow (regression guard)]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_real_queue_high_risk_not_downgraded_to_allow()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_enforce_unicode_evasion_still_denied()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_high_risk_tool_requires_approval()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_invalid_default_action_falls_back_to_deny()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_keyword_heuristic_auto_classifies_unlisted_destructive_tool()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_mcp_policy.py]] - code - gateway/tests/test_mcp_policy.py
+- [[test_mcp_policy_default_failclosed.py]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
+- [[test_mcp_proxy_allows_policy_permitted_call()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_mcp_proxy_blocks_policy_denied_call()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_owner_bypass_defaults_to_rbac_owner_identity()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_owner_bypasses_approval_but_not_hard_deny()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_server_and_tool_matching_is_case_insensitive()]] - code - gateway/tests/test_mcp_policy.py
+- [[test_unknown_server_is_denied_by_default()]] - code - gateway/tests/test_mcp_policy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -123,21 +118,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 30 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 23 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 19 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 17 edges to [[_COMMUNITY_Security Pipeline Core]]
-- 13 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
-- 9 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 8 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 16 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
+- 16 edges to [[_COMMUNITY_PromptGuard Encoding Detection]]
+- 14 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 8 edges to [[_COMMUNITY_scriptssync-cve-registry.py]]
 - 6 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 5 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 4 edges to [[_COMMUNITY_Gateway Proxy Layer]]
-- 2 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 5 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
+- 4 edges to [[_COMMUNITY_Slack API Proxy]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Custom Skills]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_SOC Dashboard]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[WebProxy_1]] - degree 74, connects to 10 communities
-- [[WebProxyConfig]] - degree 82, connects to 9 communities
-- [[RateLimiter_1]] - degree 28, connects to 6 communities
-- [[test_web_proxy.py]] - degree 27, connects to 4 communities
-- [[DomainSettings]] - degree 24, connects to 3 communities
+- [[test_mcp_policy.py]] - degree 46, connects to 5 communities
+- [[MCPPolicyEngine_1]] - degree 39, connects to 5 communities
+- [[_FakeApprovalQueue]] - degree 20, connects to 5 communities
+- [[MCPPolicyConfig_1]] - degree 14, connects to 5 communities
+- [[MonkeyPatch]] - degree 13, connects to 5 communities

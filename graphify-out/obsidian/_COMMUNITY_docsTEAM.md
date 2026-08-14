@@ -1,33 +1,32 @@
 ---
 type: community
-cohesion: 0.11
-members: 18
+members: 19
 ---
 
 # docs/TEAM.md
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 18 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[AgentShroud Development Team — Agile Structure]] - document - docs/TEAM.md
-- [[Collaborators (Advisory — Read-Only)]] - document - docs/TEAM.md
-- [[Communication & Tooling]] - document - docs/TEAM.md
-- [[Container Architecture]] - document - docs/TEAM.md
-- [[Data Engineers  Analysts]] - document - docs/TEAM.md
-- [[DevOps  Platform Engineer — CICD, Infrastructure, Reliability]] - document - docs/TEAM.md
-- [[Development Environment]] - document - docs/TEAM.md
-- [[Development Team]] - document - docs/TEAM.md
-- [[Development Workflow]] - document - docs/TEAM.md
-- [[Engineers (Backend, Frontend, Full-Stack)]] - document - docs/TEAM.md
-- [[Hardware]] - document - docs/TEAM.md
-- [[How It Works]] - document - docs/TEAM.md
-- [[Key Principles]] - document - docs/TEAM.md
-- [[Product Owner]] - document - docs/TEAM.md
-- [[QA  Test Engineers — Embedded, Not a Separate Gate]] - document - docs/TEAM.md
-- [[Scrum Master  Agile Coach]] - document - docs/TEAM.md
-- [[Sprint Cadence]] - document - docs/TEAM.md
-- [[UX  Design — One Sprint Ahead]] - document - docs/TEAM.md
+- [[Assigning Work_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[CHANGELOG.md Updates_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Continuity Files_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Definition of Done (from CLAUDE.md)_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Escalation_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Known Risks_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Project Roadmap_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Quick Status (for chatTelegram)_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[README.md Updates_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Risk Management_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Role_61]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[SKILL_104]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Skill Project Management (PM)_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Status Reporting_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Task Coordination_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[Tracking Format_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE.md` (always current)_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
+- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)_1]] - document - docker/config/openclaw/skills/i-pm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,9 +34,3 @@ members: 18
 TABLE source_file, type FROM #community/docs/TEAMmd
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_docsvault]]
-
-## Top bridge nodes
-- [[AgentShroud Development Team — Agile Structure]] - degree 9, connects to 1 community

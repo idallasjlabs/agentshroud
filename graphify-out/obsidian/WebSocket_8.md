@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "voice_gateway/server.py"
 type: "code"
-community: "Competitive Intel Store"
-location: "L882"
+community: "Planning Docs"
+location: "L423"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Competitive_Intel_Store
+  - graphify/EXTRACTED
+  - community/Planning_Docs
 ---
 
 # WebSocket
 
 ## Connections
-- [[CitationVerifier]] - `uses` [INFERRED]
-- [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
-- [[ws_logs()]] - `references` [EXTRACTED]
-- [[ws_updates()]] - `references` [EXTRACTED]
+- [[_keepalive()]] - `references` [EXTRACTED]
+- [[_send_state()]] - `references` [EXTRACTED]
+- [[voice_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Competitive_Intel_Store
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

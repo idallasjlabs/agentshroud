@@ -1,16 +1,16 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 3
 ---
 
 # Bot Skill Config
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[SecurityError (exception)]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[ControlCenter class — TUI dashboard controller]] - code - src/interfaces/text_control_center.py
+- [[draw_dashboard() — renders main TUI dashboard screen]] - code - src/interfaces/text_control_center.py
+- [[make_api_request() — authenticated gateway API call helper]] - code - src/interfaces/text_control_center.py
 
 ## Live Query (requires Dataview plugin)
 

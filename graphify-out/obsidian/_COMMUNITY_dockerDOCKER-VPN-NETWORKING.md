@@ -1,29 +1,28 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+members: 15
 ---
 
 # docker/DOCKER-VPN-NETWORKING.md
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[DOCKER-VPN-NETWORKING]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[How to Apply]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[If It Stops Working After a VPN Reconnect]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Network Architecture (unchanged)]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Primary gVisor networking mode]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Problem_1]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Related Files]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Root Cause_1]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Secondary Python IPv6 fallback (misleading error)]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Secondary transparent HTTPS proxy]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Settings Changed]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[Verification]] - document - docker/DOCKER-VPN-NETWORKING.md
-- [[With VPN connected]] - document - docker/DOCKER-VPN-NETWORKING.md
+- [[Advanced Integrations]] - document - docs/planning/RELEASE-PLAN.md
+- [[Browser Extension_2]] - document - docs/planning/RELEASE-PLAN.md
+- [[Command Center — CLITUI (moved from v1.0.0 on 2026-03-20)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Full Configuration System]] - document - docs/planning/RELEASE-PLAN.md
+- [[Infrastructure (moved from v0.9.0 on 2026-03-04)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Integration Hub]] - document - docs/planning/RELEASE-PLAN.md
+- [[Mac Mini Onboarding]] - document - docs/planning/RELEASE-PLAN.md
+- [[Multi-Host Deployment_1]] - document - docs/planning/RELEASE-PLAN.md
+- [[Multi-Platform Container Support_1]] - document - docs/planning/RELEASE-PLAN.md
+- [[Personal Infrastructure Monitor]] - document - docs/planning/RELEASE-PLAN.md
+- [[SSH Chat Interface (moved from v1.0.0 on 2026-03-20)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Secure Voice (moved from v0.9.0 on 2026-03-04)]] - document - docs/planning/RELEASE-PLAN.md
+- [[Security Hardening_1]] - document - docs/planning/RELEASE-PLAN.md
+- [[iOSmacOS Shortcuts_1]] - document - docs/planning/RELEASE-PLAN.md
+- [[v1.3.0 — Platform Expansion (53 items)]] - document - docs/planning/RELEASE-PLAN.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +30,9 @@ members: 14
 TABLE source_file, type FROM #community/docker/DOCKER-VPN-NETWORKINGmd
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_docsvault]]
+
+## Top bridge nodes
+- [[v1.3.0 — Platform Expansion (53 items)]] - degree 15, connects to 1 community

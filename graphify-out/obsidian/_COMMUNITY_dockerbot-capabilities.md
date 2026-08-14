@@ -1,23 +1,22 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+members: 9
 ---
 
 # docker/bot-capabilities.md
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[AgentShroud Bot Capabilities]] - document - docker/bot-capabilities.md
-- [[Option 1 — Professional (email, formal)]] - document - docker/bot-capabilities.md
-- [[Option 2 — Compact (Telegram, Slack — default)]] - document - docker/bot-capabilities.md
-- [[Option 3 — Full Collaborator Notice (first contact only)]] - document - docker/bot-capabilities.md
-- [[Rules_1]] - document - docker/bot-capabilities.md
-- [[Trademark Statements]] - document - docker/bot-capabilities.md
-- [[Which statement to use]] - document - docker/bot-capabilities.md
-- [[bot-capabilities]] - document - docker/bot-capabilities.md
+- [[API Basics]] - document - skills/openclaw/notion/SKILL.md
+- [[Common Operations_1]] - document - skills/openclaw/notion/SKILL.md
+- [[Key Differences in 2025-09-03]] - document - skills/openclaw/notion/SKILL.md
+- [[Notes_6]] - document - skills/openclaw/notion/SKILL.md
+- [[Notion API (2025-09-03)]] - concept - skills/openclaw/notion/SKILL.md
+- [[Property Types]] - document - skills/openclaw/notion/SKILL.md
+- [[SKILL_154]] - document - skills/openclaw/notion/SKILL.md
+- [[Setup_6]] - document - skills/openclaw/notion/SKILL.md
+- [[notion]] - document - skills/openclaw/notion/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,8 +26,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dockerbot-capabilities]]
-- 1 edge to [[_COMMUNITY_dockerbot-capabilities]]
+- 1 edge to [[_COMMUNITY_docsUSPTO_TRADEMARK_APPLICATION]]
 
 ## Top bridge nodes
-- [[AgentShroud Bot Capabilities]] - degree 4, connects to 2 communities
+- [[notion]] - degree 9, connects to 1 community

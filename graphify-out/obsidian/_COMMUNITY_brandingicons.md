@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.53
-members: 6
+members: 7
 ---
 
 # branding/icons
 
-**Cohesion:** 0.53 - moderately connected
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Agent Isolation Module Icon]] - image - branding/icons/modules/agent-isolation-256x256.png
-- [[AgentShroud App Icon 256x256]] - image - branding/icons/app/icon-256x256.png
-- [[AgentShroud App Icon 32x32]] - image - branding/icons/app/icon-32x32.png
-- [[AgentShroud macOS Rounded App Icon 1024x1024]] - image - branding/icons/app/icon-macos-rounded-1024x1024.png
-- [[Approval Queue Module Icon]] - image - branding/icons/modules/approval-queue-256x256.png
-- [[Audit Ledger Module Icon]] - image - branding/icons/modules/audit-ledger-256x256.png
+- [[A. `mac_app_catalog.json` — Machine-readable manifest_1]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[B. `mac_app_catalog.md` — Human-readable catalog_1]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Discovery Strategy_1]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 2 — Deduplication & Normalization_1]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 3 — Categorization_1]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 4 — Enrichment_1]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
+- [[Phase 5 — Output Generation_1]] - document - docker/config/openclaw/skills/i-mac/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +22,10 @@ members: 6
 TABLE source_file, type FROM #community/branding/icons
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_docsvault]]
+
+## Top bridge nodes
+- [[Discovery Strategy_1]] - degree 7, connects to 2 communities

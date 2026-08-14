@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "MCP Policy Engine"
+community: "Egress Domain Allowlist"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Egress_Domain_Allowlist
 ---
 
 # When an operator explicitly opts into default-allow, a non-allowlisted     serve
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_default_allow_opt_in_permits_non_allowlisted_safe_tool()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Domain_Allowlist

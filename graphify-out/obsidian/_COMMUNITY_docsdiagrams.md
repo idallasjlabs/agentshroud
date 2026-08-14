@@ -1,16 +1,19 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 6
 ---
 
 # docs/diagrams
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[Diagram 22 Dependency Graph]] - image - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[1password_service_account Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[agentshroud-bot container (starts after gateway healthy)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[agentshroud-gateway container (starts first)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[docker-agentshroud image (FROM node22-bookworm-slim)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[docker-gateway image (FROM python3.11-slim, gatewayDockerfile)]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
+- [[gateway_password.txt Docker secret]] - concept - docs/diagrams/images/diagram-22-dependency-graph.svg
 
 ## Live Query (requires Dataview plugin)
 

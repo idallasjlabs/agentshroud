@@ -1,21 +1,26 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+members: 13
 ---
 
 # docs/operations
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[8. Common Troubleshooting Scenarios]] - document - docs/operations/runbook.md
-- [[Database Locked Errors]] - document - docs/operations/runbook.md
-- [[High Memory Usage]] - document - docs/operations/runbook.md
-- [[Performance Issues]] - document - docs/operations/runbook.md
-- [[SSLTLS Certificate Issues]] - document - docs/operations/runbook.md
-- [[Service Won't Start]] - document - docs/operations/runbook.md
+- [[Body]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Frontmatter]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Learn Proven Design Patterns]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Skill Creation Process]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Skill Naming]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Start with Reusable Skill Contents]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 1 Understanding the Skill with Concrete Examples]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 2 Planning the Reusable Skill Contents]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 3 Initializing the Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 4 Edit the Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 5 Packaging a Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 6 Iterate]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Update SKILL]] - document - skills/openclaw/skill-creator/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,7 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_docsoperations]]
+- 1 edge to [[_COMMUNITY_docsdiagrams]]
 
 ## Top bridge nodes
-- [[8. Common Troubleshooting Scenarios]] - degree 6, connects to 1 community
+- [[Skill Creation Process]] - degree 8, connects to 1 community

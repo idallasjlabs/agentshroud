@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Gateway Ingest API"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Gateway_Ingest_API
 ---
 
 # Workflow (follow in order)
@@ -23,4 +23,4 @@ tags:
 - [[8) Verify and report]] - `contains` [EXTRACTED]
 - [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Gateway_Ingest_API

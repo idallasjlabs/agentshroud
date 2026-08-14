@@ -1,125 +1,118 @@
 ---
 type: community
-cohesion: 0.04
-members: 110
+members: 105
 ---
 
 # Telegram Inbound Tests
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 110 nodes
+**Members:** 105 nodes
 
 ## Members
-- [[._make_proxy()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[._make_proxy()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collab_gets_alert_notice_at_3_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collab_gets_escalation_notice_at_5_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collab_gets_suspension_notice_at_10_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collab_threshold_notices_fire_only_once_per_level()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_always_gets_response_for_generic_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_blocked_command_always_gets_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_cooldown_suppresses_second_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_dm_hello_does_not_trigger_probe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_filter_disabled_does_not_set_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_grant_immunity_bypasses_suspension()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_group_command_with_bot_suffix_eligible()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_group_message_with_mention_forwarded_and_eligible()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_group_message_without_mention_forwarded_but_flagged()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_hello_in_group_sends_hermes_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_hello_in_group_sends_openclaw_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_hermes_mention_ignored_when_processed_as_openclaw()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_hermes_mention_sets_hermes_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_immune_command_lists_immune_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_immune_command_no_immune_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_immune_user_lockdown_not_incremented()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_immune_user_message_passes_through_when_suspended()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_locked_no_active_lockdowns()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_locked_shows_suspended_users()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_no_bot_username_does_not_set_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_openclaw_mention_does_not_affect_hermes_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_partial_phrase_does_not_trigger_probe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_predicate_hello_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_predicate_hi_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_predicate_partial_match_does_not_fire()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_predicate_status_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_predicate_strips_leading_bot_mention()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_predicate_trailing_punctuation_stripped()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_predicate_whos_there_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_private_message_does_not_set_eligibility_flag()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_revoke_immunity_restores_enforcement()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_revoke_immunity_unknown_user()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_status_in_group_sends_short_ack_not_full_status()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_stranger_hello_in_group_receives_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_suspended_drop_notice_fires_again_after_cooldown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_suspended_drop_notice_respects_cooldown()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_suspended_user_receives_drop_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_two_bots_same_group_independent_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_unknown_user_always_gets_pending_or_rate_limit_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_unlock_calls_reset_on_lockdown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_unlock_clears_suspended_drop_cooldown()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_unlock_unknown_user_returns_no_state_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_username_for_bot_falls_back_to_default()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_username_for_bot_returns_per_bot_username()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[command@botname marks chat as response-eligible.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[gi uid must grant immunity so the user bypasses lockdown suspension check.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[immune must list all immune user IDs.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[immune with no immune users must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[locked must list users with non-normal lockdown state.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[locked with no active lockdowns must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[ri uid must remove immunity and confirm to owner.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[ri for a user not in immune set must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[status in a group sends only the short liveness ack (no operational details).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[unlock uid must call reset() on the lockdown module and confirm to owner.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[unlock for a user with no lockdown state must say so.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[unlock must clear the suspended-drop notice cooldown so user gets fresh notice]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[@agentshroud_bot mention sets only openclaw eligible; hermes entry is absent.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[@agentshroud_hermes_bot hello' normalises to 'hello' → matches.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[@agentshroud_hermes_bot mention sets hermes eligibility, not openclaw.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[@agentshroud_hermes_bot message processed as openclaw yields ineligible for open]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[A blocked slash command must always produce a protected notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[A dropped message past the cooldown window must produce a new notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[A stranger (not owner, not collaborator) typing 'hello' in a group still gets th]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Build a Telegram group message update.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator must receive escalation notice at block 5.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator must receive suspension notice at block 10.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator must receive warning text when they reach 3 security blocks.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[DMs don't interact with the group eligibility map.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Even a generic message triggers _send_collaborator_safe_info_response (local_inf]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Every collaborator message must produce a response — never a silent drop.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Group messages with @mention are forwarded and mark chat as response-eligible.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Group messages without @mention are forwarded (for context) but mark chat as res]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Group presence probe bare trigger phrases make each bot reply with a short live]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Immune user must not be dropped by the suspension path (stub must not appear).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Integration tests for group at-mention filtering.      The bot reads ALL group m]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Per-bot eligibility — each bot in a shared group tracks mention state independen]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Second 'hello' within the cooldown window must NOT send a second ack.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Second dropped message within cooldown window must NOT produce another notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Stub the fire-and-forget owner activity mirror.      The mirror runs via asyncio]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Suspended user's dropped message must trigger a 'session suspended' notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestGroupMentionFilter]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestGroupPresenceProbe]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestNoResponseGuarantee]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestPerBotGroupMentionFilter]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestProgressiveLockdownUX]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Tests for lockdown UX unlock fix, collaborator notifications, locked, immunit]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[The probe is group-only; 'hello' in a DM chat must not fire the ack.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Threshold notices must not repeat on subsequent blocks at the same level.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Two bots in the same group track eligibility independently.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unknown bot_id falls back to _bot_username.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unknown users must always receive either a pending notice or a rate-limit notice]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[When bot_username is unset the filter is bypassed entirely.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[When group_mention_only is disabled, eligibility map is not populated.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_make_group_update()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[_no_owner_mirror()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[_quarantine_blocked_message must NOT increment lockdown count for immune users.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_username_for_bot returns the correct @username for each bot_id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_wrap_response()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[hello!' and 'hello' should both match.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[hello' (bare) in a group triggers '✅ @agentshroud_bot online' from openclaw.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[hello' in a group triggers '✅ @agentshroud_hermes_bot online' when processed as]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[hello, can you help' must NOT match — exact-match guard.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[hello, can you help' must reach the LLM path, not be swallowed by the probe.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[test_telegram_proxy_inbound.py]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[.__init__()_52]] - code - gateway/security/audit_export.py
+- [[.__init__()_53]] - code - gateway/security/audit_export.py
+- [[.__init__()_54]] - code - gateway/security/audit_store.py
+- [[.__init__()_55]] - code - gateway/security/audit_store.py
+- [[._default_jsonld_context()]] - code - gateway/security/audit_export.py
+- [[._export_cef()]] - code - gateway/security/audit_export.py
+- [[._export_json()]] - code - gateway/security/audit_export.py
+- [[._export_jsonld()]] - code - gateway/security/audit_export.py
+- [[._generate_event_id()]] - code - gateway/security/audit_store.py
+- [[._get_latest_hash()]] - code - gateway/security/audit_store.py
+- [[._parse_cef_for_verification()]] - code - gateway/security/audit_export.py
+- [[.audit_store()]] - code - gateway/tests/test_audit_export.py
+- [[.audit_store()_1]] - code - gateway/tests/test_audit_export.py
+- [[.close()_8]] - code - gateway/security/audit_store.py
+- [[.compute_content_hash()]] - code - gateway/security/audit_store.py
+- [[.compute_entry_hash()]] - code - gateway/security/audit_store.py
+- [[.export_config()]] - code - gateway/tests/test_audit_export.py
+- [[.export_events()]] - code - gateway/security/audit_export.py
+- [[.get_recent_entries()]] - code - gateway/security/audit_store.py
+- [[.get_stats()_14]] - code - gateway/security/audit_store.py
+- [[.initialize()_3]] - code - gateway/security/audit_store.py
+- [[.log_event()]] - code - gateway/security/audit_store.py
+- [[.query_events()]] - code - gateway/security/audit_store.py
+- [[.store()]] - code - gateway/tests/test_audit_export.py
+- [[.test_content_hash()]] - code - gateway/tests/test_audit_export.py
+- [[.test_entry_hash_chain()]] - code - gateway/tests/test_audit_export.py
+- [[.test_event_creation()]] - code - gateway/tests/test_audit_export.py
+- [[.test_event_to_dict_includes_bot_id()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_cef()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_filtering()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_json()]] - code - gateway/tests/test_audit_export.py
+- [[.test_export_json_ld()]] - code - gateway/tests/test_audit_export.py
+- [[.test_hash_chain_integrity()]] - code - gateway/tests/test_audit_export.py
+- [[.test_log_event()]] - code - gateway/tests/test_audit_export.py
+- [[.test_log_event_default_bot_id_is_openclaw()]] - code - gateway/tests/test_audit_export.py
+- [[.test_log_event_stores_bot_id()]] - code - gateway/tests/test_audit_export.py
+- [[.test_migration_adds_bot_id_column()]] - code - gateway/tests/test_audit_export.py
+- [[.test_query_events()]] - code - gateway/tests/test_audit_export.py
+- [[.test_query_events_bot_filter()]] - code - gateway/tests/test_audit_export.py
+- [[.test_query_events_bot_filter_combined_with_severity()]] - code - gateway/tests/test_audit_export.py
+- [[.test_stats()]] - code - gateway/tests/test_audit_export.py
+- [[.test_tamper_detection()]] - code - gateway/tests/test_audit_export.py
+- [[.test_verify_export_integrity()]] - code - gateway/tests/test_audit_export.py
+- [[.to_dict()_4]] - code - gateway/security/audit_store.py
+- [[.verify_export_integrity()]] - code - gateway/security/audit_export.py
+- [[.verify_hash_chain()]] - code - gateway/security/audit_store.py
+- [[AuditEvent]] - code - gateway/security/audit_export.py
+- [[AuditEvent_1]] - code - gateway/security/audit_store.py
+- [[AuditExportConfig_1]] - code - gateway/security/audit_export.py
+- [[AuditExporter]] - code - gateway/security/audit_export.py
+- [[AuditStore]] - code - gateway/security/audit_export.py
+- [[AuditStore_1]] - code - gateway/security/audit_store.py
+- [[Close the database connection._1]] - rationale - gateway/security/audit_store.py
+- [[Compute SHA-256 hash of event content (excluding hashes).]] - rationale - gateway/security/audit_store.py
+- [[Compute entry hash including previous hash (chain).]] - rationale - gateway/security/audit_store.py
+- [[Configuration for audit export functionality.]] - rationale - gateway/security/audit_export.py
+- [[Convert to dictionary representation.]] - rationale - gateway/security/audit_store.py
+- [[Create audit store with test data.]] - rationale - gateway/tests/test_audit_export.py
+- [[Create in-memory audit store for testing.]] - rationale - gateway/tests/test_audit_export.py
+- [[Create test export configuration.]] - rationale - gateway/tests/test_audit_export.py
+- [[Default JSON-LD context for security ontology.]] - rationale - gateway/security/audit_export.py
+- [[Export audit events in the specified format.          Args             start_ti]] - rationale - gateway/security/audit_export.py
+- [[Export events in Common Event Format (CEF).          CEF Format CEFVersionDev]] - rationale - gateway/security/audit_export.py
+- [[Export events in JSON-LD format with security ontology.]] - rationale - gateway/security/audit_export.py
+- [[Export events in standard JSON format.]] - rationale - gateway/security/audit_export.py
+- [[Exports audit events in various compliance formats.]] - rationale - gateway/security/audit_export.py
+- [[Generate a unique event ID based on timestamp + random.]] - rationale - gateway/security/audit_store.py
+- [[Get audit store statistics.]] - rationale - gateway/security/audit_store.py
+- [[Get the entry_hash of the most recent event for chain continuation.]] - rationale - gateway/security/audit_store.py
+- [[Log a new audit event with hash chain integrity.          Args             bot_]] - rationale - gateway/security/audit_store.py
+- [[Open the database, create the schema, and run column migrations.          Initia]] - rationale - gateway/security/audit_store.py
+- [[Opening a pre-migration DB (no bot_id column) should auto-migrate.]] - rationale - gateway/tests/test_audit_export.py
+- [[Parse CEF lines and extract entryHashpreviousHash for chain verification.]] - rationale - gateway/security/audit_export.py
+- [[Path_7]] - code - gateway/security/audit_store.py
+- [[Query audit events with optional filters.          Args             bot_id Whe]] - rationale - gateway/security/audit_store.py
+- [[Represents a single audit event.      The ``bot_id`` field identifies which bot]] - rationale - gateway/security/audit_store.py
+- [[Return the most recent audit entries (alias for query_events with limit).]] - rationale - gateway/security/audit_store.py
+- [[SQLite-backed audit event store with tamper-evident hash chain.]] - rationale - gateway/security/audit_store.py
+- [[Test AuditEvent functionality.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test AuditExporter functionality.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test AuditStore functionality.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test CEF export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test JSON export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test JSON-LD export format.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test audit store statistics.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test basic audit event creation.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test content hash computation.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test export integrity verification.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test export with filters.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test hash chain computation.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test hash chain maintains integrity.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test logging audit events.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test querying events with filters.]] - rationale - gateway/tests/test_audit_export.py
+- [[Test tamper detection in exports.]] - rationale - gateway/tests/test_audit_export.py
+- [[TestAuditEvent]] - code - gateway/tests/test_audit_export.py
+- [[TestAuditExporter]] - code - gateway/tests/test_audit_export.py
+- [[TestAuditStore]] - code - gateway/tests/test_audit_export.py
+- [[TestAuditStoreBotId]] - code - gateway/tests/test_audit_export.py
+- [[TextIO]] - code - gateway/security/audit_export.py
+- [[Verify per-bot filtering in AuditStore (v1.1.0 multi-bot support).]] - rationale - gateway/tests/test_audit_export.py
+- [[Verify the integrity of an exported audit log.          Args             export]] - rationale - gateway/security/audit_export.py
+- [[Verify the integrity of the hash chain.          Args             start_id Sta]] - rationale - gateway/security/audit_store.py
+- [[audit_export.py]] - code - gateway/security/audit_export.py
+- [[audit_store.py]] - code - gateway/security/audit_store.py
+- [[test_audit_export.py]] - code - gateway/tests/test_audit_export.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -129,21 +122,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 212 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
-- 23 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 7 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 6 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
-- 6 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
-- 5 edges to [[_COMMUNITY_SOC RBAC & Auth]]
-- 4 edges to [[_COMMUNITY_Slack API Proxy]]
-- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_PII Sanitizer Pipeline]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Collaborator Prompt Safety]]
+- 22 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 20 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 4 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
+- 2 edges to [[_COMMUNITY_Slack API Proxy]]
+- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 1 edge to [[_COMMUNITY_Planning Docs]]
 
 ## Top bridge nodes
-- [[test_telegram_proxy_inbound.py]] - degree 28, connects to 10 communities
-- [[_wrap_response()]] - degree 228, connects to 4 communities
-- [[TestProgressiveLockdownUX]] - degree 25, connects to 4 communities
-- [[TestPerBotGroupMentionFilter]] - degree 12, connects to 4 communities
-- [[TestGroupPresenceProbe]] - degree 20, connects to 3 communities
+- [[AuditStore_1]] - degree 34, connects to 3 communities
+- [[AuditExporter]] - degree 42, connects to 2 communities
+- [[AuditExportConfig_1]] - degree 33, connects to 2 communities
+- [[audit_export.py]] - degree 6, connects to 1 community
+- [[.store()]] - degree 3, connects to 1 community

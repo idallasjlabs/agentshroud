@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "Architecture Docs"
+community: "scripts/switch_model.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/scripts/switch_modelsh
 ---
 
 # Workspace Configuration Decision
@@ -20,4 +20,4 @@ tags:
 - [[WORKSPACE_DECISION]] - `contains` [EXTRACTED]
 - [[Why This Matters for Read-Only Filesystem]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/scripts/switch_modelsh

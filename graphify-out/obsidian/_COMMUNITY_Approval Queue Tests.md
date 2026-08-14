@@ -1,273 +1,226 @@
 ---
 type: community
-cohesion: 0.01
-members: 258
+members: 213
 ---
 
 # Approval Queue Tests
 
-**Cohesion:** 0.01 - loosely connected
-**Members:** 258 nodes
+**Members:** 213 nodes
 
 ## Members
-- [[..' escaping the allowed root is rejected — never reaches proxy.write_file().]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.__init__()_9]] - code - gateway/approval_queue/queue.py
-- [[.__init__()_129]] - code - gateway/ssh_proxy/proxy.py
-- [[._append_audit_event()]] - code - gateway/approval_queue/queue.py
-- [[._expire_stale()]] - code - gateway/approval_queue/queue.py
-- [[._load_pending_store()]] - code - gateway/approval_queue/queue.py
-- [[._persist_pending_store()]] - code - gateway/approval_queue/queue.py
-- [[.broadcast()_1]] - code - gateway/approval_queue/queue.py
-- [[.cleanup_decided()]] - code - gateway/approval_queue/queue.py
-- [[.connect()_1]] - code - gateway/approval_queue/queue.py
-- [[.decide()_1]] - code - gateway/approval_queue/queue.py
-- [[.disabled_client()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.disconnect()_1]] - code - gateway/approval_queue/queue.py
-- [[.execute()]] - code - gateway/ssh_proxy/proxy.py
-- [[.expand_key_path()]] - code - gateway/ingest_api/ssh_config.py
-- [[.expand_known_hosts()]] - code - gateway/ingest_api/ssh_config.py
-- [[.get_item()_1]] - code - gateway/approval_queue/queue.py
-- [[.get_pending()_1]] - code - gateway/approval_queue/queue.py
-- [[.is_auto_approved()]] - code - gateway/ssh_proxy/proxy.py
-- [[.no_approval_client()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.submit()_1]] - code - gateway/approval_queue/queue.py
-- [[.test_absolute_path_accepted()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_absolute_path_outside_root_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_absolute_path_under_root_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_backtick_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_content_at_exact_cap_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_content_with_semicolon_backtick_redirect_round_trips_through_full_endpoint()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_cookie_not_secure_on_http()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_dashboard_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_dashboard_bad_token_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_dashboard_cookie_auth_serves_html()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_dashboard_no_auth_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_dashboard_token_sets_cookie_and_redirects()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_dotdot_traversal_from_absolute_path_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_dotdot_traversal_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_execute_nonzero_exit()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_execute_success()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_execute_timeout()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_execute_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_home_tilde_accepted()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_invalid_base64_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_is_auto_approved_no()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_is_auto_approved_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_is_auto_approved_yes()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_json_api_has_cache_control()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_non_auto_approved_executes_directly()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_null_byte_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_oversized_content_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_pipe_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_prefix_collision_sibling_dir_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_relative_path_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_relative_path_resolved_under_root_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_root_itself_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_semicolon_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_approval_sanitizes_command_pii()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ssh_command_uses_strict_checking()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ssh_disabled_config()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_ssh_exec_auto_approved()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_cwd_accepted_and_forwarded()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_cwd_invalid_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_cwd_none_forwards_none()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_cwd_relative_path_rejects_400()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_denied_command()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_disabled_returns_503()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_injection_attempt()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_no_auth()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_requires_approval()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_exec_unknown_host()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_history()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_ssh_hosts_list()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[.test_status_has_security_headers()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_status_returns_current_version()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_strict_host_key_checking_in_source()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_unknown_host_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_validate_auto_approve_exact_only()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_allowed()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_backslash_n_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_carriage_return_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_denied()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_dollar_brace_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_dollar_var_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_global_denied()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_and()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_backticks()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_dollar_paren()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_or()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_pipe()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_injection_blocked_semicolon()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_newline_injection()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_not_in_allowlist()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_command_unknown_host()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_validate_empty_command()]] - code - gateway/tests/test_ssh_proxy.py
-- [[.test_whitespace_only_path_rejected_at_proxy_layer()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_absolute_path_outside_root_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_absolute_path_prefix_collision_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_denial_is_audited()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_disallowed_host_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_empty_path_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_no_auth()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_non_numeric_stdout_falls_back_to_zero_bytes()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_oserror_from_subprocess()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_oversized_content_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_path_traversal_dotdot_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_remote_command_is_identical_across_calls()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_sends_path_and_content_via_stdin()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_ssh_disabled_returns_503()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_timeout()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_write_file_unknown_host_raises()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[.test_ws_activity_rejects_bad_token()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_activity_rejects_empty_token()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_activity_rejects_master_token()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_activity_rejects_no_token()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_approvals_accepts_valid_token()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_approvals_rejects_bad_token()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_approvals_rejects_master_token()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_approvals_rejects_no_token()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_token_with_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_token_with_valid_cookie()]] - code - gateway/tests/test_security_fixes.py
-- [[.test_ws_token_without_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[.validate_command()]] - code - gateway/ssh_proxy/proxy.py
-- [[.validate_cwd()]] - code - gateway/ssh_proxy/proxy.py
-- [[.validate_write_file()]] - code - gateway/ssh_proxy/proxy.py
-- [[.write_file()]] - code - gateway/ssh_proxy/proxy.py
-- [[A directory that shares the root as a raw string prefix but is not         actua]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[A host not present in the SSH allowlist is rejected with 404.]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[A sibling directory that merely shares the root as a string prefix         (no ']] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Absolute path outside the approved root is rejected.]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Accept a WebSocket connection and add to connected set          Args]] - rationale - gateway/approval_queue/queue.py
-- [[Add an action to the approval queue          Args             request Approval]] - rationale - gateway/approval_queue/queue.py
-- [[All API responses should include basic security headers.]] - rationale - gateway/tests/test_security_fixes.py
-- [[Any_4]] - code - gateway/approval_queue/queue.py
-- [[Approval queue details must be PII-sanitized before storage]] - rationale - gateway/tests/test_security_fixes.py
-- [[ApprovalQueue]] - code - gateway/approval_queue/queue.py
-- [[ApprovalQueueConfig_1]] - code - gateway/approval_queue/queue.py
-- [[ApprovalQueueItem_2]] - code - gateway/approval_queue/queue.py
-- [[ApprovalRequest_3]] - code - gateway/approval_queue/queue.py
-- [[Auto-approve must be exact match, not prefix (Finding 3)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[Best-effort JSONL persistence for queue lifecycle events.]] - rationale - gateway/approval_queue/queue.py
-- [[Check all pending items and expire those past timeout          Returns]] - rationale - gateway/approval_queue/queue.py
-- [[Check if a command is auto-approved (no human approval needed).          Auto-ap]] - rationale - gateway/ssh_proxy/proxy.py
-- [[ClientDisconnect mid-body-read must not crash the gateway process.]] - rationale - gateway/tests/test_security_fixes.py
-- [[Configuration for a single SSH host]] - rationale - gateway/ingest_api/ssh_config.py
-- [[Cookie secure=False on HTTP requests]] - rationale - gateway/tests/test_security_fixes.py
-- [[Dashboard cookie secure flag is dynamic based on request scheme]] - rationale - gateway/tests/test_security_fixes.py
-- [[Dashboard should set httpOnly cookie and redirect to clean URL]] - rationale - gateway/tests/test_security_fixes.py
-- [[Dashboard ws-token endpoint returns token only for cookie-authed sessions]] - rationale - gateway/tests/test_security_fixes.py
-- [[Decoded content exceeding the ~500KB cap is rejected with 413, and         proxy]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Denied write attempts are logged to the ledger for audit (no raw         content]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Direct unit coverage of validate_write_file()'s own empty-path guard         (th]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Execute a command on a remote host via SSH.]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Fetch a single queue item by ID          Args             request_id Request U]] - rationale - gateway/approval_queue/queue.py
-- [[GET dashboard with invalid cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboard with no auth returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboard with valid cookie serves HTML]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardws-token with valid cookie returns token]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardtoken=valid sets cookie and redirects to dashboard]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardtoken=wrong returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET status should include security headers]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET status should return current version]] - rationale - gateway/tests/test_security_fixes.py
-- [[Get all pending (not expired, not decided) items          First expires any stal]] - rationale - gateway/approval_queue/queue.py
-- [[If the remote script exits 0 but its stdout isn't a parseable         integer, b]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[In-memory approval queue with WebSocket notifications      Actions requiring app]] - rationale - gateway/approval_queue/queue.py
-- [[Initialize approval queue          Args             config Approval queue conf]] - rationale - gateway/approval_queue/queue.py
-- [[JSON API responses should have Cache-Control no-store]] - rationale - gateway/tests/test_security_fixes.py
-- [[Load queue items from store file when present.]] - rationale - gateway/approval_queue/queue.py
-- [[MFAGuard_1]] - code - gateway/approval_queue/queue.py
-- [[Management WebSocket endpoints should use scoped tokens, not master auth.]] - rationale - gateway/tests/test_security_fixes.py
-- [[Omitting cwd passes cwd=None to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Persist queue items to disk for restart durability (best effort).          Uses]] - rationale - gateway/approval_queue/queue.py
-- [[Process an approval decision          Args             request_id Request UUID]] - rationale - gateway/approval_queue/queue.py
-- [[Remove a WebSocket connection from connected set          Args             webs]] - rationale - gateway/approval_queue/queue.py
-- [[Remove decided (approvedrejectedexpired) items older than max_age_seconds.]] - rationale - gateway/approval_queue/queue.py
-- [[Result of an SSH command execution]] - rationale - gateway/ssh_proxy/proxy.py
-- [[SSH command proxy with validation and audit support]] - rationale - gateway/ssh_proxy/proxy.py
-- [[SSH exec requiring approval sanitizes PII in command before storing]] - rationale - gateway/tests/test_security_fixes.py
-- [[SSH execute builds command with StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
-- [[SSHConfig_1]] - code - gateway/ssh_proxy/proxy.py
-- [[SSHConfig_2]] - code - gateway/tests/test_ssh_proxy.py
-- [[SSHConfig]] - code - gateway/ingest_api/ssh_config.py
-- [[SSHConfig_4]] - code - gateway/ssh_proxy/proxy.py
-- [[SSHHostConfig]] - code - gateway/ingest_api/ssh_config.py
-- [[SSHProxy]] - code - gateway/ssh_proxy/proxy.py
-- [[SSHProxy_1]] - code - gateway/tests/test_ssh_proxy.py
-- [[SSHResult]] - code - gateway/ssh_proxy/proxy.py
-- [[Send a JSON message to all connected WebSocket clients          Silently removes]] - rationale - gateway/approval_queue/queue.py
-- [[Set up app state and provide TestClient.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Source code uses StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
-- [[Sync TestClient for WebSocket tests_1]] - rationale - gateway/tests/test_security_fixes.py
-- [[Test SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[Test newline-based injection attempts (Finding 11)]] - rationale - gateway/tests/test_ssh_proxy.py
-- [[Test require_approval=false executes directly (Finding 5)]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Test that SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[TestApprovalQueuePIISanitization]] - code - gateway/tests/test_security_fixes.py
-- [[TestDashboardCookieAuth]] - code - gateway/tests/test_security_fixes.py
-- [[TestDashboardSecureCookie]] - code - gateway/tests/test_security_fixes.py
-- [[TestDashboardWSToken]] - code - gateway/tests/test_security_fixes.py
-- [[TestExecute]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestGlobalSecurityHeaders]] - code - gateway/tests/test_security_fixes.py
-- [[TestInjectionNewline]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestIsAutoApproved]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestManagementWSTokenScoping]] - code - gateway/tests/test_security_fixes.py
-- [[TestSSHDisabled]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestSSHDisabledEndpoint]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHExec]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHHistory]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHHosts]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHProxyValidateWriteFile]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[TestSSHProxyWriteFileTransport]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[TestSSHRequireApprovalFalse]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestSSHStrictHostKeyChecking]] - code - gateway/tests/test_security_fixes.py
-- [[TestSSHValidateCwd]] - code - gateway/tests/test_ssh_endpoints.py
-- [[TestTelegramProxyClientDisconnect]] - code - gateway/tests/test_security_fixes.py
-- [[TestValidateCommand]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestVersionConsistency]] - code - gateway/tests/test_security_fixes.py
-- [[TestWebSocketHandshakeAuth]] - code - gateway/tests/test_security_fixes.py
-- [[The remote command string must not vary with request content —         proving i]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Unit tests for SSHProxy.validate_cwd().]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Unit tests for SSHProxy.write_file() — verifies pathcontent travel as     DATA]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[Validate a command against allowdeny lists and injection patterns.          Ret]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Validate a remote working-directory path.  Must be absolute and shell-safe.]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Validate a structured sshwrite_file request (host, path, content).          Re]] - rationale - gateway/ssh_proxy/proxy.py
-- [[Verify SSH proxy uses StrictHostKeyChecking=yes, not accept-new]] - rationale - gateway/tests/test_security_fixes.py
-- [[Version strings should be consistent across the codebase.]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsactivity closes immediately without token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsactivity closes with bad token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsactivity should reject empty token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsactivity should reject master auth token (R3-L4)]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsapprovals accepts valid scoped WS token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsapprovals closes immediately without token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsapprovals closes with bad token]] - rationale - gateway/tests/test_security_fixes.py
-- [[WS wsapprovals rejects the master auth token -- R3-L4 removed the         mast]] - rationale - gateway/tests/test_security_fixes.py
-- [[WebSocket_2]] - code - gateway/approval_queue/queue.py
-- [[WebSocket endpoints must validate token during handshake, not first message]] - rationale - gateway/tests/test_security_fixes.py
-- [[When require_approval=false, non-auto-approved commands execute directly.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[Write file content to a remote host via structured (non-shell-string) transport.]] - rationale - gateway/ssh_proxy/proxy.py
-- [[__init__.py_12]] - code - gateway/ssh_proxy/__init__.py
-- [[_b64()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[auth_headers()_3]] - code - gateway/tests/test_ssh_endpoints.py
-- [[client()_16]] - code - gateway/tests/test_ssh_endpoints.py
-- [[cwd is validated and passed to proxy.execute().]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[cwd must be an absolute path.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[cwd with shell metacharacters is rejected before execution.]] - rationale - gateway/tests/test_ssh_endpoints.py
-- [[gatewayingest_apimain.py (app, app_state, lifespan)]] - code - gateway/ingest_api/main.py
-- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - code - gateway/ingest_api/main.py
-- [[gatewayingest_apiroutesdashboard.py (_create_ws_token)]] - code - gateway/ingest_api/routes/dashboard.py
-- [[jira_weekly_review.py (SCRUM-81 weekly heartbeat cron)]] - code - docker/config/hermes/workspace/jira_weekly_review.py
-- [[proxy()_1]] - code - gateway/tests/test_ssh_proxy.py
-- [[proxy.py]] - code - gateway/ssh_proxy/proxy.py
-- [[ssh binary missing  spawn failure surfaces as exit_code=-1 with         the OSE]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[ssh_config()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[ssh_config()_1]] - code - gateway/tests/test_ssh_proxy.py
-- [[ssh_config()_2]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[ssh_config.py]] - code - gateway/ingest_api/ssh_config.py
-- [[sync_client()_1]] - code - gateway/tests/test_security_fixes.py
-- [[test_security_fixes.py]] - code - gateway/tests/test_security_fixes.py
-- [[test_ssh_endpoints.py]] - code - gateway/tests/test_ssh_endpoints.py
-- [[test_ssh_proxy.py]] - code - gateway/tests/test_ssh_proxy.py
+- [[.__init__()_43]] - code - gateway/proxy/webhook_receiver.py
+- [[.__init__()_172]] - code - gateway/tests/test_middleware_coverage.py
+- [[._can_create_directory()]] - code - gateway/proxy/webhook_receiver.py
+- [[.can_user_access_group()]] - code - gateway/security/session_manager.py
+- [[.can_user_access_session()]] - code - gateway/security/session_manager.py
+- [[.check_permission()_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[.check_tool_permission()_2]] - code - gateway/tests/test_middleware_coverage.py
+- [[.get_user_role()_2]] - code - gateway/tests/test_middleware_coverage.py
+- [[.middleware_manager()]] - code - gateway/tests/test_session_isolation.py
+- [[.test_absolute_and_relative_paths()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_active_group_appears_first()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_allowed_chain_passes()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_analyzer_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_append_to_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_append_to_user_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_blocked_non_owner_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_blocked_owner_exempted()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_blocked_rewrite_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_blocked_with_chain_match()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_blocked_without_chain_match()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_bots_resolution_error_swallowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_browser_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_clean_message_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_clean_text_not_flagged()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_close_with_no_resource_guard()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_collaborator_gets_filtered_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_command_indicator_allowed_when_check_passes()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_command_indicator_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_context_guard_init_raise_recorded_and_logged()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_critical_attack_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_critical_finding_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_critical_tool_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_cross_user_path_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_default_bot_and_sanitizer_configured()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_default_deny()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_delete_action()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_detects_api_key_pattern()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_detects_bearer_token()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_detects_private_section_header()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_dict_message_handled()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_direct_field()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_direct_no_session_manager_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_editor_command_and_quotes()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_empty_author_is_denied()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_env_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_exception_fails_open()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_exception_fails_open()_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_exception_fails_secure()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_execute_action_medium_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_existing_session_context_not_reinjected()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_expected_write_registered()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_fallback_without_rbac_manager()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_filter_applied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_filter_not_applied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_foreign_writer_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_get_group_memory_empty_initially()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_get_user_memory_returns_string()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_git_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_group_write_io_failure_returns_false()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_headers_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_high_threat_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_high_tool_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_invisible_chars_normalized()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_isolation_error_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_isolation_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_isolation_fail_closed_without_session_manager()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_legacy_no_author_write_still_appends()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_log_action_no_patterns_returns_original()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_log_action_with_patterns_returns_original()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_low_finding_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_low_severity_not_blocking()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_low_threat_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_member_authorized()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_message_dict_is_stringified_and_normalized()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_metadata_exception_non_blocking()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_metadata_fallback()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_missing_rbac_is_denied()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_missing_returns_none()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_mm_fixture_without_failed_guards_attr_is_safe()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_multiple_appends_accumulate()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_no_bots_keeps_fallback_workspace()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_no_filter_passthrough()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_no_path_match_no_registration()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_no_paths()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_no_scanner_passthrough()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_no_session_manager_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_no_user_id_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_non_critical_guard_failure_not_recorded()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_non_default_bot_fallback()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_non_owner_blocked()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_non_owner_blocked_when_critical_guard_failed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_not_configured_guard_does_not_fail_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_other_user_under_users_base_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_outer_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_own_workspace_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_own_workspace_path_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_owner_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_owner_bypass()_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_owner_bypass()_2]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_owner_bypass()_3]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_owner_bypasses_sandbox()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_owner_exempt_when_critical_guard_failed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_owner_gets_unfiltered_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_owner_sees_all_groups()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_owner_write_into_user_memory_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_plain_message_skips_check()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_question_defaults_to_read_system()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_rbac_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_rbac_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_rbac_pass_logs_role_and_allows()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_rbac_requires_approval()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_read_action_low_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_repetition_attack_not_blocking()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_sandbox_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_sanitizer_construction_error_sets_none()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_self_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_session_context_injected()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_session_context_priority()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_strip_action_returns_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_strip_private_content_redacts_api_key()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_strip_private_section()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_tool_permission_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_tool_permission_requires_approval()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_topic_scoped_excludes_non_matching_project_scoped_group()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_topic_scoped_includes_local_only_group()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_topic_scoped_returns_matching_group()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_tracker_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_unblocked_rewrite_allowed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_unknown_defaults_to_tool_use()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_unknown_user_sees_only_private_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_user_does_not_see_other_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_user_memory_isolated_between_users()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_user_sees_own_private_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_user_sees_their_group_memory()]] - code - gateway/tests/test_shared_memory.py
+- [[.test_user_write_io_failure_returns_false()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[.test_users_heuristic_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_warn_action_returns_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_with_rbac_manager()]] - code - gateway/tests/test_middleware_coverage.py
+- [[.test_write_action_no_tier()]] - code - gateway/tests/test_middleware_coverage.py
+- [[A non-owner author cannot write into another user's private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[A security-critical guard whose constructor RAISES during __init__ must     NOT]] - rationale - gateway/tests/test_middleware_coverage.py
+- [[A user may write into their own private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[An emptyNone author is never authorized.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[Any_24]] - code - gateway/proxy/webhook_receiver.py
+- [[Back-compat existing callers that pass no author_idrbac_config keep working.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[Check if a user can access another user's session.]] - rationale - gateway/security/session_manager.py
+- [[Check if we can create the given directory path.]] - rationale - gateway/proxy/webhook_receiver.py
+- [[Create middleware manager with session isolation.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Deterministic stand-in for RBACManager.]] - rationale - gateway/tests/test_middleware_coverage.py
+- [[If the underlying session store raises, the authorized write reports         fai]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id]] - rationale - gateway/security/session_manager.py
+- [[MiddlewareManager built via __new__ — every module attr explicitly None     so e]] - rationale - gateway/tests/test_middleware_coverage.py
+- [[No RBAC principal → cannot authorize → deny (fail-closed).]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[Path_4]] - code - gateway/proxy/webhook_receiver.py
+- [[Return True if user_id is a member of group_id.          Checks rbac_config.get_]] - rationale - gateway/security/session_manager.py
+- [[TestAnalyzeRequestForRBAC]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestAuthorizationHelper]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[TestBrowserSecurity]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestClose]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestContextGuard]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestCriticalGuardInitFailClosed]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestCrossSessionAccess]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestEnvGuard]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestExtractFilePaths]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestExtractUserId]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestFileSandboxStep]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestFilterOutboundResponse]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestGitGuard_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestGroupMemoryReadWrite]] - code - gateway/tests/test_shared_memory.py
+- [[TestIsOwner]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestIsPathAllowedForUser]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestMemoryIntegrityRegistration]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestMergedMemory]] - code - gateway/tests/test_shared_memory.py
+- [[TestMetadataGuard_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestMultiTurnTracker]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestPathIsolationStep]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestPrivateContentDetection]] - code - gateway/tests/test_shared_memory.py
+- [[TestProcessRequestIdentity]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestProcessRequestRBAC]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestScanToolResult]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestSetConfig]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestToolChainAnalyzer]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestTopicScopedMemory]] - code - gateway/tests/test_shared_memory.py
+- [[TestUserMemoryWriteACL]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[TestUserPrivateMemory]] - code - gateway/tests/test_shared_memory.py
+- [[TestWriteFailurePath]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[The owner may write into any user's private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[UserSessionManager]] - code - gateway/security/session_manager.py
+- [[_FakeRBAC]] - code - gateway/tests/test_middleware_coverage.py
+- [[_bot()]] - code - gateway/tests/test_middleware_coverage.py
+- [[_req()]] - code - gateway/tests/test_middleware_coverage.py
+- [[_scan_result()]] - code - gateway/tests/test_middleware_coverage.py
+- [[_score_access_control_authorization() (domain 14, FR2)]] - code - gateway/security/scanner_integration.py
+- [[_tool_req()]] - code - gateway/tests/test_middleware_coverage.py
+- [[group_config.py (TeamsConfig)]] - code - gateway/security/group_config.py
+- [[mm()]] - code - gateway/tests/test_middleware_coverage.py
+- [[rbac()_4]] - code - gateway/tests/test_shared_memory.py
+- [[rbac()_5]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[rbac_config.py (RBACConfig)]] - code - gateway/security/rbac_config.py
+- [[session_manager()_4]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[session_mgr()]] - code - gateway/tests/test_shared_memory.py
+- [[shared_memory()_2]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[shared_memory.py]] - code - gateway/security/shared_memory.py
+- [[shared_memory.py (SharedMemoryManager)]] - code - gateway/security/shared_memory.py
+- [[smm()_1]] - code - gateway/tests/test_shared_memory.py
+- [[temp_workspace()_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[test_middleware_coverage.py]] - code - gateway/tests/test_middleware_coverage.py
+- [[test_shared_memory.py]] - code - gateway/tests/test_shared_memory.py
+- [[test_shared_memory_write_acl.py]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[tmp_workspace()_2]] - code - gateway/tests/test_shared_memory.py
+- [[usm()]] - code - gateway/tests/test_middleware_coverage.py
+- [[webhook_receiver.py]] - code - gateway/proxy/webhook_receiver.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -277,29 +230,40 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 89 edges to [[_COMMUNITY_Forward Routing & Approval]]
-- 50 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
-- 21 edges to [[_COMMUNITY_Enhanced Approval Queue]]
+- 71 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 26 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
+- 24 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 19 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 18 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 13 edges to [[_COMMUNITY_docsUSPTO_PROVISIONAL_PATENT_APPLICATION]]
+- 12 edges to [[_COMMUNITY_Group Workspace Isolation]]
+- 11 edges to [[_COMMUNITY_Planning Docs]]
+- 11 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 7 edges to [[_COMMUNITY_Slack API Proxy]]
 - 7 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 7 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
-- 5 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 4 edges to [[_COMMUNITY_Slack API Proxy]]
+- 5 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 5 edges to [[_COMMUNITY_Bot Skill Config]]
+- 4 edges to [[_COMMUNITY_docsvault]]
+- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
 - 3 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_Bot Skill Config]]
-- 2 edges to [[_COMMUNITY_SOC Dashboard]]
+- 3 edges to [[_COMMUNITY_Planning Docs]]
+- 2 edges to [[_COMMUNITY_Gateway Proxy Layer]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_URLDomain Validation Tests]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Egress & RBAC Security Core]]
-- 1 edge to [[_COMMUNITY_SOC Service Manager]]
-- 1 edge to [[_COMMUNITY_MCP Proxy Config]]
-- 1 edge to [[_COMMUNITY_Web Control Center]]
+- 2 edges to [[_COMMUNITY_ESP32 Firmware]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_MCP Policy Engine]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Planning Docs]]
+- 1 edge to [[_COMMUNITY_Docker Deploy Scripts]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_File Sandbox]]
+- 1 edge to [[_COMMUNITY_Security Module Middleware]]
+- 1 edge to [[_COMMUNITY_LLM Proxy Resource Guard]]
 
 ## Top bridge nodes
-- [[SSHConfig]] - degree 60, connects to 6 communities
-- [[ApprovalQueue]] - degree 51, connects to 6 communities
-- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - degree 11, connects to 5 communities
-- [[SSHProxy]] - degree 78, connects to 3 communities
-- [[TestSSHProxyValidateWriteFile]] - degree 28, connects to 3 communities
+- [[UserSessionManager]] - degree 152, connects to 20 communities
+- [[test_shared_memory_write_acl.py]] - degree 15, connects to 5 communities
+- [[test_middleware_coverage.py]] - degree 40, connects to 4 communities
+- [[_FakeRBAC]] - degree 23, connects to 3 communities
+- [[test_shared_memory.py]] - degree 13, connects to 3 communities

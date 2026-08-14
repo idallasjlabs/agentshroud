@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "Architecture Docs"
+community: ".mcp.json"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/mcpjson
 ---
 
 # Workspace Decision: Docker Volume (not bind mount)
@@ -15,4 +15,4 @@ tags:
 - [[OpenClaw Workspace Usage Guide]] - `implements` [EXTRACTED]
 - [[OpenClaw Write Requirements Skills, Memory, Workspace, Caches, Secrets]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/mcpjson

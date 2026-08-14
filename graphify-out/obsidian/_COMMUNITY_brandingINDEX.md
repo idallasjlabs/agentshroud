@@ -1,32 +1,31 @@
 ---
 type: community
-cohesion: 0.12
-members: 17
+members: 18
 ---
 
 # branding/INDEX.md
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 17 nodes
+**Members:** 18 nodes
 
 ## Members
-- [[AgentShroud Branding Assets Index]] - document - branding/INDEX.md
-- [[Assets Needed]] - document - branding/INDEX.md
-- [[Brand Color]] - document - branding/INDEX.md
-- [[Documentation_1]] - document - branding/INDEX.md
-- [[Documentation Needed]] - document - branding/INDEX.md
-- [[Documentation Status]] - document - branding/INDEX.md
-- [[INDEX]] - document - branding/INDEX.md
-- [[Icon Sets]] - document - branding/INDEX.md
-- [[Logo Files]] - document - branding/INDEX.md
-- [[Logo Formats Available]] - document - branding/INDEX.md
-- [[Social Media]] - document - branding/INDEX.md
-- [[🎨 Quick Access]] - document - branding/INDEX.md
-- [[💡 Usage Tips]] - document - branding/INDEX.md
-- [[📁 Directory Overview]] - document - branding/INDEX.md
-- [[📊 Asset Summary]] - document - branding/INDEX.md
-- [[📝 To-Do]] - document - branding/INDEX.md
-- [[📞 Contact]] - document - branding/INDEX.md
+- [[8D Root Cause Analysis README (OpenClaw)]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[8D Root Cause Analysis SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-eightd/SKILL.md
+- [[Branch Naming Convention (featfixhotfixchorerefactortestdocs)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[CICD Pipeline Advisor SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Code Review (CR) README (OpenClaw)]] - document - docker/config/openclaw/skills/i-cr/README.md
+- [[Code Review (CR) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[Create PR with Pre-Flight Audit (CRPR) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-crpr/SKILL.md
+- [[Data Validation (DATA-VAL) README (OpenClaw)]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Data Validation (DATA-VAL) SKILL (OpenClaw)]] - document - docker/config/openclaw/skills/i-data/SKILL.md
+- [[GIT-GUARD Skill Definition]] - document - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[GSDE&G Development Master Checklist Skill]] - document - docker/config/openclaw/skills/i-mc/SKILL.md
+- [[Mandatory 10-Step Git Workflow]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[Protected Branch Policy (main)]] - concept - docker/config/openclaw/skills/i-gg/SKILL.md
+- [[devsecops SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-devsecops/SKILL.md
+- [[gitops Skill (stub)]] - document - docker/config/openclaw/skills/i-gitops/SKILL.md
+- [[i-gg README (Git Workflow Guardian)]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[i-mc README (Development Master Checklist)]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[qa Skill (referenced, sibling dir)]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

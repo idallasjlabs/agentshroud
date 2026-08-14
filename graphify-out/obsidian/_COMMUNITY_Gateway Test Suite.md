@@ -1,16 +1,15 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # Gateway Test Suite
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[test_anthropic_openai_translator.py — AnthropicOpenAI translator tests]] - code - gateway/tests/test_anthropic_openai_translator.py
+- [[OpenClaw SOUL]] - document - docker/config/openclaw/workspace/SOUL.md
+- [[SOUL.md Freshness Check Job]] - code - .github/workflows/ci.yml
 
 ## Live Query (requires Dataview plugin)
 

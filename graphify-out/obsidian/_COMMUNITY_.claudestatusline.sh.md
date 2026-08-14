@@ -1,17 +1,16 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # .claude/statusline.sh
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[statusline.sh]] - code - .claude/statusline.sh
-- [[statusline.sh script]] - code - .claude/statusline.sh
+- [[FreeRTOS.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
+- [[TickType_t]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
+- [[xTaskGetTickCount()]] - code - firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h
 
 ## Live Query (requires Dataview plugin)
 

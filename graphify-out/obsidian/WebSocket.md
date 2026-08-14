@@ -1,19 +1,25 @@
 ---
-source_file: "voice_gateway/server.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "voice_gateway/server.py"
-location: "L423"
+community: "Collaborator Prompt Classifiers"
+location: "L487"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/voice_gateway/serverpy
+  - graphify/INFERRED
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # WebSocket
 
 ## Connections
-- [[_keepalive()]] - `references` [EXTRACTED]
-- [[_send_state()]] - `references` [EXTRACTED]
-- [[voice_endpoint()]] - `references` [EXTRACTED]
+- [[.connect()]] - `references` [EXTRACTED]
+- [[.disconnect()]] - `references` [EXTRACTED]
+- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[ApprovalStore_1]] - `uses` [INFERRED]
+- [[MFAGuard_2]] - `uses` [INFERRED]
+- [[ToolRiskConfig_1]] - `uses` [INFERRED]
+- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/serverpy
+#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Classifiers

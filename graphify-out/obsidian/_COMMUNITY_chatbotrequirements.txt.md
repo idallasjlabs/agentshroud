@@ -1,16 +1,15 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # chatbot/requirements.txt
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Chatbot Service Dependencies (openai, fastapi, uvicorn, pydantic)]] - code - chatbot/requirements.txt
+- [[.test_collaborator_unicode_bypass_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Unicodeinvisible-character bypass prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,3 +17,10 @@ members: 1
 TABLE source_file, type FROM #community/chatbot/requirementstxt
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 5 edges to [[_COMMUNITY_PII Config & Test Fixtures]]
+- 1 edge to [[_COMMUNITY_Group RBAC Roles]]
+
+## Top bridge nodes
+- [[.test_collaborator_unicode_bypass_request_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities

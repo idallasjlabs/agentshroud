@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "Group Workspace Isolation"
+community: "Gateway Test Suite"
 location: "L63"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Group_Workspace_Isolation
+  - community/Gateway_Test_Suite
 ---
 
 # WorkspaceContext
@@ -19,4 +19,4 @@ tags:
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[group_workspace.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Group_Workspace_Isolation
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,21 +1,20 @@
 ---
 type: community
-cohesion: 0.40
-members: 6
+members: 7
 ---
 
 # browser-extension/popup.js
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 6 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[icon48.png — solid blue (2b6cff) placeholder icon, no logotext]] - image - browser-extension/icons/icon48.png
-- [[popup.html (toolbar popup UI)]] - code - browser-extension/popup.html
-- [[popup.js]] - code - browser-extension/popup.js
-- [[send()]] - code - browser-extension/popup.js
-- [[setStatus()]] - code - browser-extension/popup.js
-- [[statusEl]] - code - browser-extension/popup.js
+- [[1. Add Test Coverage]] - document - .github/COPILOT_CLI_SETUP.md
+- [[1. test-augmenter]] - document - .github/COPILOT_CLI_SETUP.md
+- [[2. Run Validation Suite]] - document - .github/COPILOT_CLI_SETUP.md
+- [[2. validation-runner]] - document - .github/COPILOT_CLI_SETUP.md
+- [[3. safe-refactor]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Common Workflows]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Custom Agents]] - document - .github/COPILOT_CLI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,8 +24,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_browser-extensionbackground.js]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[popup.js]] - degree 5, connects to 1 community
-- [[send()]] - degree 3, connects to 1 community
+- [[Custom Agents]] - degree 4, connects to 1 community
+- [[Common Workflows]] - degree 4, connects to 1 community

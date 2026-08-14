@@ -1,19 +1,17 @@
 ---
-source_file: "voice_gateway/server.py"
+source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "voice_gateway/server.py"
-location: "L423"
+community: "PII Sanitizer Pipeline"
+location: "L4745"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_gateway/serverpy
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # WebSocket
 
 ## Connections
-- [[_keepalive()]] - `references` [EXTRACTED]
-- [[_send_state()]] - `references` [EXTRACTED]
-- [[voice_endpoint()]] - `references` [EXTRACTED]
+- [[slack_ws_relay()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/serverpy
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

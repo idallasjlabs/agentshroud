@@ -1,17 +1,16 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # docs/ROADMAP-POST-v1.0.md
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[Apple Platform Integration (Roadmap — WidgetKit, APNs, WatchOS)]] - concept - docs/ROADMAP-POST-v1.0.md
-- [[Post-v1.0.0 Roadmap]] - document - docs/ROADMAP-POST-v1.0.md
+- [[TickType_t_3]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
+- [[task.h_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
+- [[vTaskDelay()_1]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h
 
 ## Live Query (requires Dataview plugin)
 

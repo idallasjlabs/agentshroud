@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RECOVERY_PLAN_PARTIAL.md"
 type: "rationale"
-community: "Planning Docs"
+community: "Bot Skill Config"
 location: "line 77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Bot_Skill_Config
 ---
 
 # XML Filter Shipped in v0.4.0 (sanitizer.py, pipeline.py)
@@ -15,4 +15,4 @@ tags:
 - [[Recovery Plan Partial (v0.4.0 Released State)]] - `documents` [EXTRACTED]
 - [[filter_xml_blocks() Function]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

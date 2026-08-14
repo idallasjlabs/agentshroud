@@ -1,20 +1,22 @@
 ---
 type: community
-cohesion: 0.50
-members: 5
+members: 9
 ---
 
 # docs/papers
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 5 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[52 Security Modules Across 7 Defense Layers (v0.8.0)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[AgentShroud IEEE Paper Transparent Proxy Framework for Enterprise Governance]] - paper - docs/papers/agentshroud-ieee-paper.md
-- [[STPA-Sec Analysis 17 Unsafe Control Actions, 4 Loss Categories]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Security Pipeline 8 Guards (PromptGuard, PII, TrustManager, EgressFilter, ApprovalQueue, OutboundInfoFilter, CanaryTripwire, EncodingDetector)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Threat Model L1 Data Disclosure, L2 Unauthorized Actions, L3 Agent Integrity, L4 Audit Integrity]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[Alert Levels]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Integration with Gateway]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Key OSSEC Config Sections (Inferred)]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Purpose_146]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Related Notes_27]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[Relationship to Other Security Modules]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[What Wazuh Monitors in AgentShroud]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[wazuh-ossec.conf]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
+- [[wazuh-ossec]] - document - docs/vault/03 - Configuration/wazuh-ossec.md
 
 ## Live Query (requires Dataview plugin)
 

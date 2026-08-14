@@ -1,17 +1,16 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # docker/upgrade.sh
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[upgrade.sh]] - code - docker/upgrade.sh
-- [[upgrade.sh script]] - code - docker/upgrade.sh
+- [[check()_4]] - code - tests/startup_smoke/test_bot_boot_live.sh
+- [[test_bot_boot_live.sh]] - code - tests/startup_smoke/test_bot_boot_live.sh
+- [[test_bot_boot_live.sh script]] - code - tests/startup_smoke/test_bot_boot_live.sh
 
 ## Live Query (requires Dataview plugin)
 

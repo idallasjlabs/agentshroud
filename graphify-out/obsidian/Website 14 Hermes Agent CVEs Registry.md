@@ -1,13 +1,13 @@
 ---
 source_file: "docs/index.html"
 type: "document"
-community: "docs/index.html"
+community: "Gateway Skills System"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/indexhtml
+  - community/Gateway_Skills_System
 ---
 
 # Website: 14 Hermes Agent CVEs Registry
 
-#graphify/document #graphify/EXTRACTED #community/docs/indexhtml
+#graphify/document #graphify/EXTRACTED #community/Gateway_Skills_System

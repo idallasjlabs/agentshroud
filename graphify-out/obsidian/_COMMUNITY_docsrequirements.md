@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # docs/requirements
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Requirements Documentation Index (SRS, FRD, NFR, Use Cases planned)]] - document - docs/requirements/README.md
+- [[Network Topology (agentshroud-internal 172.20.x, agentshroud-isolated 172.21.x, RFC1918 blocked)]] - document - docs/diagrams/02-infrastructure.md
 
 ## Live Query (requires Dataview plugin)
 

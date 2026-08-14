@@ -1,11 +1,11 @@
 ---
 source_file: "docs/index.html"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Website: 816 OpenClaw CVEs Registry
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Gap Analysis & Recommendations]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Architecture_Docs
+#graphify/document #graphify/AMBIGUOUS #community/Gateway_Test_Suite

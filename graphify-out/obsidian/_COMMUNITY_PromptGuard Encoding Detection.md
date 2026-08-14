@@ -1,134 +1,122 @@
 ---
 type: community
-cohesion: 0.02
-members: 119
+members: 109
 ---
 
 # PromptGuard Encoding Detection
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 119 nodes
+**Members:** 109 nodes
 
 ## Members
-- [[--- new instructions patterns should be stripped.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[.__init__()_106]] - code - gateway/security/prompt_guard.py
-- [[._check_encoded_content()]] - code - gateway/security/prompt_guard.py
-- [[._check_unicode_tricks()]] - code - gateway/security/prompt_guard.py
-- [[.guard()_4]] - code - gateway/tests/test_prompt_guard.py
-- [[.guard()_3]] - code - gateway/tests/test_prompt_guard.py
-- [[.pg()_1]] - code - gateway/tests/test_prompt_guard.py
-- [[.scan()_4]] - code - gateway/security/prompt_guard.py
-- [[.scan_tool_result()_2]] - code - gateway/security/prompt_guard.py
-- [[.setup_method()_27]] - code - gateway/tests/test_security_hardening.py
-- [[.setup_method()_32]] - code - gateway/tests/test_security_hardening.py
-- [[.setup_method()_28]] - code - gateway/tests/test_security_hardening.py
-- [[.teardown_method()_6]] - code - gateway/tests/test_security_hardening.py
-- [[.test_action_allowed_basic()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_action_denied_high_trust()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_action_unknown_agent()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_base64_encoded_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_benign_base64()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_benign_tool_result_passes()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_clean_input()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_combined_attack_high_score()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_custom_pattern()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_dan_jailbreak()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.test_delimiter_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_direct_injection_in_tool_result_blocked()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_double_base64_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_empty_input()_3]] - code - gateway/tests/test_security_hardening.py
-- [[.test_empty_prompt()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_empty_tool_result_passes()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_encrypt_decrypt_still_works_after_zeroing()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_event_type_validation()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_explicit_key_used()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_failure_decreases_score()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_forget_everything()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_fullwidth_detection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_get_trust()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_get_trust_unknown()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_history()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_homoglyph_detection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_ignore_instructions()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_indirect_injection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_key_rotation_with_zeroing()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_lower_threshold_than_direct_scan()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_mixed_case_still_caught()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_new_instructions_override()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_none_input()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_preserves_legitimate_markdown()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_prompt_extraction()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_prompt_leak_question()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_rate_limiting_prevents_rapid_escalation()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_register_agent()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_register_and_verify()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_register_idempotent()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_role_override_in_tool_result_blocked()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_role_reassignment()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.test_rtl_override()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_rtl_override_detection()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_sanitized_output()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_score_never_negative()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_sqlite_persistence()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_strips_fake_system_tags()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_strips_separator_overrides()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_success_increases_score()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_tamper_detected()]] - code - gateway/tests/test_prompt_guard.py
-- [[.test_trust_escalation_attack()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_trust_level_progression()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_unicode_zero_width()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_violation_large_decrease()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_warn_threshold()]] - code - gateway/tests/test_security_hardening.py
-- [[.test_xml_tag_injection()_1]] - code - gateway/tests/test_security_hardening.py
-- [[.test_zero_width_evasion()]] - code - gateway/tests/test_security_hardening.py
-- [[system style fake tags should be stripped.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Args             block_threshold Score at or above which input is blocked.]] - rationale - gateway/security/prompt_guard.py
-- [[Check for suspicious base64 content that decodes to injection attempts.]] - rationale - gateway/security/prompt_guard.py
-- [[Create a PromptGuard instance for testing]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Detect potential base64-encoded payloads in text.     Returns list of decoded st]] - rationale - gateway/security/input_normalizer.py
-- [[Detect unicode obfuscation tricks.]] - rationale - gateway/security/prompt_guard.py
-- [[Double-encoded base64 injection should be caught.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Empty prompt should still register and verify cleanly.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Ensure zeroing doesn't break normal encryptdecrypt flow.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Explicit ignore-instructions payload embedded in a tool result.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Explicit key parameter should override session key.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Fullwidth chars NFKC-normalized — injection defeated.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Mix of Latin and Cyrillic should trigger homoglyph detection.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Normal markdown headers ( Title) should not be stripped.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[PatternRule]] - code - gateway/security/prompt_guard.py
-- [[Rapid successes should be capped by rate limiting.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Scan input text for prompt injection patterns.          Args             text]] - rationale - gateway/security/prompt_guard.py
-- [[Scan tool result content for indirect prompt injection.          Tool results (w]] - rationale - gateway/security/prompt_guard.py
-- [[Test PromptGuard initialization]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Test that normal messages pass through]] - rationale - gateway/tests/test_prompt_guard.py
-- [[TestDriftDetectorHardened]] - code - gateway/tests/test_security_hardening.py
-- [[TestPromptGuard_1]] - code - gateway/tests/test_security_hardening.py
-- [[TestPromptGuardEvasion]] - code - gateway/tests/test_security_hardening.py
-- [[TestReanchorDelimiters]] - code - gateway/tests/test_prompt_guard.py
-- [[TestSecureZero]] - code - gateway/tests/test_security_hardening.py
-- [[TestSystemPromptHMAC]] - code - gateway/tests/test_prompt_guard.py
-- [[TestToolResultScan]] - code - gateway/tests/test_prompt_guard.py
-- [[TestTrustManager]] - code - gateway/tests/test_security_hardening.py
-- [[TestTrustManagerHardened]] - code - gateway/tests/test_security_hardening.py
-- [[Tests for drift detector hardening.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Tests for indirect prompt injection detection in tool results.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Tests for key material zeroing (C2 fix).]] - rationale - gateway/tests/test_security_hardening.py
-- [[Tests for prompt guard evasion techniques.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Tests for trust manager hardening.]] - rationale - gateway/tests/test_security_hardening.py
-- [[ThreatAction]] - code - gateway/security/prompt_guard.py
-- [[Tool result scan blocks at score ≥ 0.6 vs direct scan threshold of 0.8.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Unknown event types should not inject SQL.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Verify you can't jump from UNTRUSTED to FULL in one step.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Verifying a tampered prompt should return False.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Zero-width chars between letters should not bypass detection.]] - rationale - gateway/tests/test_security_hardening.py
-- [[detect_base64_payloads()]] - code - gateway/security/input_normalizer.py
-- [[prompt_guard()_1]] - code - gateway/tests/test_prompt_guard.py
-- [[prompt_guard.py]] - code - gateway/security/prompt_guard.py
-- [[register_system_prompt + verify_system_prompt should succeed.]] - rationale - gateway/tests/test_prompt_guard.py
-- [[test_benign_message()]] - code - gateway/tests/test_prompt_guard.py
-- [[test_prompt_guard.py]] - code - gateway/tests/test_prompt_guard.py
-- [[test_prompt_guard_init()]] - code - gateway/tests/test_prompt_guard.py
-- [[test_security_hardening.py]] - code - gateway/tests/test_security_hardening.py
+- [[.__post_init__()]] - code - gateway/proxy/mcp_proxy.py
+- [[.from_dict()]] - code - gateway/proxy/mcp_config.py
+- [[.mcp_proxy_with_approval()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.set_event_bus()]] - code - gateway/proxy/mcp_proxy.py
+- [[.test_audit_entry_created()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_blocked_entries()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_chain_includes_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_chain_valid_after_calls()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_clean_call_allowed()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_deeply_nested_pii()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_disabled_server_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_elevated_agent_can_execute()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_empty_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_execute_none_content_result_does_not_unbind()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_execute_with_content_still_inspects()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_failed_entries()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_filter_by_agent()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_filter_by_server()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_filter_by_tool()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_from_dict_basic()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_from_dict_defaults()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_from_dict_http_transport()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_gateway_data_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_generate_report()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_heavy_url_encoding_flagged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_highest_threat_high()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_highest_threat_none()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_injection_blocked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_inspection_result_threat_level()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_large_base64_flagged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_list_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_low_risk_tool_allowed()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.test_network_request_flagged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_no_pii_scan()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_none_values_in_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_owner_bypass()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.test_passthrough_allows_everything()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_passthrough_still_audits()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_pii_redacted_in_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_private_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_private_tool_violation_emits_event()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_processing_time_recorded()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_rate_limit_enforced()_2]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_read_only_agent_can_read()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_read_only_agent_denied_execute()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_sensitive_blocked_strict_with_injection()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_sensitive_not_blocked_default()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_session_store_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_shell_command_flagged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_small_base64_ok()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_stats_blocked_counted()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_stats_tracking()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_tool_result_none_content()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_tool_result_string_content()]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_unknown_server_default_allow()_1]] - code - gateway/tests/test_mcp_proxy.py
+- [[.test_workspace_contributor_parameter_violation_blocks_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
+- [[A single finding from inspection.]] - rationale - gateway/proxy/mcp_inspector.py
+- [[Any_16]] - code - gateway/proxy/mcp_config.py
+- [[Configuration for a specific MCP tool.]] - rationale - gateway/proxy/mcp_config.py
+- [[Create an MCP proxy with approval queue.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[FindingType]] - code - gateway/proxy/mcp_inspector.py
+- [[In strict mode, sensitive ops with injection ARE blocked.]] - rationale - gateway/tests/test_mcp_proxy.py
+- [[InspectionFinding]] - code - gateway/proxy/mcp_inspector.py
+- [[MCPProxy]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPProxyConfig]] - code - gateway/proxy/mcp_config.py
+- [[MCPToolCall]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPToolConfig]] - code - gateway/proxy/mcp_config.py
+- [[MCPTransport]] - code - gateway/proxy/mcp_config.py
+- [[Main MCP proxy that intercepts tool calls and routes through security.      Tran]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Parse config from a dictionary (e.g. loaded from YAML).]] - rationale - gateway/proxy/mcp_config.py
+- [[ProxyResult]] - code - gateway/proxy/mcp_proxy.py
+- [[Regression result_inspection was possibly-unbound when the executed tool     re]] - rationale - gateway/tests/test_mcp_proxy.py
+- [[Represents an MCP tool_use request.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Result of proxying an MCP tool call.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Sensitive ops are flagged but not blocked in default mode.]] - rationale - gateway/tests/test_mcp_proxy.py
+- [[Test owner bypass for high-tier tools.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that low-risk tools are allowed without approval.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[TestAllowDenyList]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestAuditQueries]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestChainIntegrityMultiple]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestConfigParsing]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestExecuteResultInspectionBinding]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestHashChainIntegration]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestInspectorEdgeCases]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestPassthroughMode]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestPrivacyPolicyEvents]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestProcessingTime]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestProxyInterception]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestProxyPermissions]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestProxyRateLimiting]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestProxyStats]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestSensitiveOps]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestSuspiciousEncoding]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestThreatLevelCalc]] - code - gateway/tests/test_mcp_proxy.py
+- [[Threat level classification.]] - rationale - gateway/proxy/mcp_inspector.py
+- [[ThreatLevel]] - code - gateway/proxy/mcp_inspector.py
+- [[Top-level MCP proxy configuration.]] - rationale - gateway/proxy/mcp_config.py
+- [[Type of security finding.]] - rationale - gateway/proxy/mcp_inspector.py
+- [[Wire optional event bus for privacysecurity telemetry.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[__init__.py_7]] - code - gateway/proxy/__init__.py
+- [[config()_2]] - code - gateway/tests/test_mcp_permissions.py
+- [[config()_3]] - code - gateway/tests/test_mcp_proxy.py
+- [[mcp_audit.py]] - code - gateway/proxy/mcp_audit.py
+- [[mcp_config.py]] - code - gateway/proxy/mcp_config.py
+- [[mcp_inspector.py]] - code - gateway/proxy/mcp_inspector.py
+- [[mcp_permissions.py]] - code - gateway/proxy/mcp_permissions.py
+- [[mcp_proxy.py]] - code - gateway/proxy/mcp_proxy.py
+- [[passthrough_proxy()]] - code - gateway/tests/test_mcp_proxy.py
+- [[test_mcp_proxy.py]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -138,30 +126,30 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 44 edges to [[_COMMUNITY_PII Config & Test Fixtures]]
-- 27 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
-- 24 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 22 edges to [[_COMMUNITY_Cross-Bot Trust Ledger]]
-- 20 edges to [[_COMMUNITY_Progressive Trust Config]]
-- 14 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 10 edges to [[_COMMUNITY_Gateway Security Module]]
-- 5 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_Gateway Security Module]]
-- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_Auth & Exception Types]]
-- 2 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
-- 2 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
-- 2 edges to [[_COMMUNITY_Security Pipeline Core]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_SOC Dashboard]]
+- 139 edges to [[_COMMUNITY_Collaborator Prompt Safety]]
+- 78 edges to [[_COMMUNITY_Enforce-Mode Auto-Revert]]
+- 67 edges to [[_COMMUNITY_docsoperations]]
+- 38 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 37 edges to [[_COMMUNITY_Setup Docs]]
+- 16 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
+- 16 edges to [[_COMMUNITY_Egress Domain Allowlist]]
+- 8 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 8 edges to [[_COMMUNITY_Slack API Proxy]]
+- 8 edges to [[_COMMUNITY_scriptssmoke.d]]
+- 8 edges to [[_COMMUNITY_.githubISSUE_TEMPLATE]]
+- 8 edges to [[_COMMUNITY_docsdiagrams]]
+- 6 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 4 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_Approval & FastAPI Ingest]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Egress & RBAC Security Core]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_scriptssync-llm-settings.sh]]
+- 1 edge to [[_COMMUNITY_skillsopenclaw]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
 
 ## Top bridge nodes
-- [[ThreatAction]] - degree 33, connects to 10 communities
-- [[test_security_hardening.py]] - degree 29, connects to 9 communities
-- [[TestSecureZero]] - degree 23, connects to 8 communities
-- [[prompt_guard.py]] - degree 13, connects to 8 communities
-- [[TestPromptGuard_1]] - degree 40, connects to 7 communities
+- [[MCPProxy]] - degree 90, connects to 13 communities
+- [[MCPToolCall]] - degree 101, connects to 11 communities
+- [[MCPProxyConfig]] - degree 87, connects to 10 communities
+- [[MCPTransport]] - degree 63, connects to 8 communities
+- [[test_mcp_proxy.py]] - degree 46, connects to 8 communities

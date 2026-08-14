@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: ".github/agents"
+community: "Bot Skill Config"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/agents
+  - community/Bot_Skill_Config
 ---
 
 # What You CAN Refactor
@@ -16,4 +16,4 @@ tags:
 - [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
 - [[Safe Refactorings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/agents
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

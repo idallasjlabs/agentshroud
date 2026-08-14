@@ -1,149 +1,138 @@
 ---
 type: community
-cohesion: 0.03
-members: 134
+members: 125
 ---
 
 # Enhanced Approval Queue
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 134 nodes
+**Members:** 125 nodes
 
 ## Members
-- [[.__init__()_7]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.__init__()_10]] - code - gateway/approval_queue/store.py
-- [[._notify_telegram()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[._schedule_timeout()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[._timeout_request()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.broadcast()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.close()_2]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.close()_3]] - code - gateway/approval_queue/store.py
-- [[.connect()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.decide()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.disconnect()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.get_item()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.get_pending()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.get_policy_for_tier()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.get_tool_risk_tier()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.initialize()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.initialize()_1]] - code - gateway/approval_queue/store.py
-- [[.mcp_proxy_with_approval()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.requires_approval()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.submit()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.submit_tool_request()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[.test_100_concurrent_submissions()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_critical_tool_approval_flow()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_critical_tool_denial_flow()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_critical_tool_requires_approval()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_enforce_mode_disabled()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_get_tool_risk_tier()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_low_risk_tool_allowed()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_low_risk_tool_no_approval()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_owner_bypass()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_requires_approval()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_restart_recovery_preserves_timeout_action()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_restore_pending_items()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.test_store_expires_old_items()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_store_persists_across_reopen()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_store_save_and_load()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_store_update_status()]] - code - gateway/tests/test_approval_stress.py
-- [[.test_wait_for_decision()]] - code - gateway/tests/test_enhanced_approval.py
-- [[.update_status()]] - code - gateway/approval_queue/store.py
-- [[.wait_for_decision()]] - code - gateway/approval_queue/enhanced_queue.py
-- [[100 concurrent approval requests.]] - rationale - gateway/tests/test_approval_stress.py
-- [[A pending approval request in the queue]] - rationale - gateway/ingest_api/models.py
-- [[Accept a WebSocket connection and add to connected set.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Add an action to the approval queue with policy-based timeout.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Any_2]] - code - gateway/approval_queue/enhanced_queue.py
-- [[Approval queue configuration]] - rationale - gateway/ingest_api/config.py
-- [[ApprovalQueueConfig]] - code - gateway/approval_queue/enhanced_queue.py
-- [[ApprovalQueueConfig_2]] - code - gateway/ingest_api/config.py
-- [[ApprovalQueueItem_1]] - code - gateway/approval_queue/enhanced_queue.py
-- [[ApprovalQueueItem]] - code - gateway/ingest_api/models.py
-- [[ApprovalRequest_1]] - code - gateway/approval_queue/enhanced_queue.py
-- [[ApprovalStore_1]] - code - gateway/approval_queue/store.py
-- [[ApprovalStore]] - code - gateway/approval_queue/enhanced_queue.py
-- [[Auto-expire old requests.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Build a REAL EnhancedApprovalQueue with a default ToolRiskConfig.      The defau]] - rationale - gateway/tests/test_mcp_policy.py
-- [[Check if a tool requires approval based on risk tier and policy.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Close the database connection.]] - rationale - gateway/approval_queue/store.py
-- [[Close the store and cancel timeout tasks.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Create a temporary SQLite store for testing.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Create a test tool risk configuration.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Create an MCP proxy with approval queue.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Create an enhanced approval queue for testing.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Enhanced approval queue with enforce mode and tool risk tiers.      Features]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[EnhancedApprovalQueue]] - code - gateway/approval_queue/enhanced_queue.py
-- [[EnhancedApprovalQueue_2]] - code - gateway/tests/test_mfa_guard.py
-- [[Fetch a single queue item by ID.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Get all pending approval items.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Get the policy for a risk tier.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Get the risk tier for a tool.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Handle timeout for a pending request.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Initialize enhanced approval queue.          Args             config Basic app]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Initialize the store and restore pending items.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Items saved to store can be reloaded.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Items survive store closereopen cycle.]] - rationale - gateway/tests/test_approval_stress.py
-- [[MFAGuard]] - code - gateway/approval_queue/enhanced_queue.py
-- [[Open the database and create the schema. Idempotent a second call         must]] - rationale - gateway/approval_queue/store.py
-- [[Path]] - code - gateway/approval_queue/store.py
-- [[Process an approval decision.          IEC 62443 FR1 approving a high-risk acti]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Queue persistence across restart.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Remove a WebSocket connection from connected set.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Risk policy configuration for a tool tier]] - rationale - gateway/ingest_api/config.py
-- [[SCRUM-110 restart recovery must reschedule the timeout with the         item's]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[SQLite-backed persistence for approval queue items.]] - rationale - gateway/approval_queue/store.py
-- [[Schedule a timeout task for a request.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Send Telegram notification for approval requests.          Sends a formatted mes]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Send a JSON message to all connected WebSocket clients.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Status updates persist.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Store marks expired items on load.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Submit 100 requests concurrently — all should succeed.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Submit a tool call request for approval.          Args             tool_name T]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Test MCP proxy integration with approval queue.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test SQLite persistence across restarts.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test approval requirement logic.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test denial flow for critical tool.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test full approval flow for critical tool.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test owner bypass for high-tier tools.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test risk tier lookup.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test that approval events are generated for WebSocket notification.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test that approval is bypassed when enforce mode is disabled.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test that critical tools are identified as requiring approval.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test that low-risk tools are allowed without approval.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test that low-risk tools don't require approval.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test that pending items are restored after restart.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test the complete approval workflow.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test tool risk tier classification.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[Test waiting for approval decision.]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[TestApprovalStorePersistence]] - code - gateway/tests/test_approval_stress.py
-- [[TestApprovalTimeout]] - code - gateway/tests/test_approval_stress.py
-- [[TestApprovalWorkflow]] - code - gateway/tests/test_enhanced_approval.py
-- [[TestAutoExpire]] - code - gateway/tests/test_approval_stress.py
-- [[TestConcurrentApprovalRequests]] - code - gateway/tests/test_approval_stress.py
-- [[TestMCPProxyIntegration]] - code - gateway/tests/test_enhanced_approval.py
-- [[TestPersistence]] - code - gateway/tests/test_enhanced_approval.py
-- [[TestToolRiskClassification]] - code - gateway/tests/test_enhanced_approval.py
-- [[Timeout handling for approval requests.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Tool risk tier configuration]] - rationale - gateway/ingest_api/config.py
-- [[ToolRiskConfig_1]] - code - gateway/ingest_api/config.py
-- [[ToolRiskConfig]] - code - gateway/approval_queue/enhanced_queue.py
-- [[ToolRiskPolicy_1]] - code - gateway/ingest_api/config.py
-- [[ToolRiskPolicy]] - code - gateway/approval_queue/enhanced_queue.py
-- [[Update the status of an existing item.]] - rationale - gateway/approval_queue/store.py
-- [[Wait for an approval decision.          Returns             True if approved, F]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[WebSocket_1]] - code - gateway/approval_queue/enhanced_queue.py
-- [[_real_queue()]] - code - gateway/tests/test_mcp_policy.py
-- [[enhanced_mfa_queue()]] - code - gateway/tests/test_mfa_guard.py
-- [[enhanced_queue()]] - code - gateway/tests/test_enhanced_approval.py
-- [[queue()]] - code - gateway/tests/test_approval_stress.py
-- [[store()_1]] - code - gateway/tests/test_approval_stress.py
-- [[store.py]] - code - gateway/approval_queue/store.py
-- [[temp_store()]] - code - gateway/tests/test_enhanced_approval.py
-- [[test_approval_stress.py]] - code - gateway/tests/test_approval_stress.py
-- [[test_enhanced_approval.py]] - code - gateway/tests/test_enhanced_approval.py
-- [[test_websocket_notifications()]] - code - gateway/tests/test_enhanced_approval.py
-- [[tool_risk_config()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.__post_init__()_8]] - code - gateway/security/rbac_config.py
+- [[Add or override a specific egress domain rule (CC-10).      Supports optional sc]] - rationale - gateway/soc/router.py
+- [[Append a collaborator UID to the persistent store (idempotent, file-locked).]] - rationale - gateway/security/rbac_config.py
+- [[Change the root log level at runtime without restart (CC-44).]] - rationale - gateway/soc/router.py
+- [[Clear shared memory for a group workspace (owner only).]] - rationale - gateway/soc/router.py
+- [[Create a new group at runtime (owner only).]] - rationale - gateway/soc/router.py
+- [[Create a time-bounded privilege delegation (owner only).]] - rationale - gateway/soc/router.py
+- [[Delete a group at runtime (owner only).]] - rationale - gateway/soc/router.py
+- [[Get tool allowdeny lists for a user or group entity.]] - rationale - gateway/soc/router.py
+- [[In-place openclaw upgrade runs npm install -g inside the bot container.      No]] - rationale - gateway/soc/router.py
+- [[Initialize user roles based on configuration.]] - rationale - gateway/security/rbac_config.py
+- [[Issue a short-lived WebSocket token for wssoc.]] - rationale - gateway/soc/router.py
+- [[JSONResponse]] - code - gateway/soc/router.py
+- [[Launch security-scan.sh for the given scanner and discard the handle (fire-and-f]] - rationale - gateway/soc/router.py
+- [[List all active privilege delegations.]] - rationale - gateway/soc/router.py
+- [[List security modules with availability, mode, and descriptions (CC-42, CC-43).]] - rationale - gateway/soc/router.py
+- [[List service privacy policies (read-only view).]] - rationale - gateway/soc/router.py
+- [[Live per-module enforcement heat-map (SCRUM-80).      Real allowblocksanitize]] - rationale - gateway/soc/router.py
+- [[Operator-ready risk summary with plain-English bullets and per-user risk map (V9]] - rationale - gateway/soc/router.py
+- [[Pull the latest Hermes Agent image and restart the container.      Unlike OpenCl]] - rationale - gateway/soc/router.py
+- [[Pull the latest image for a container and restart it.]] - rationale - gateway/soc/router.py
+- [[Query GitHub releases API. Returns {tag_name ..., html_url ...} or {error]] - rationale - gateway/soc/router.py
+- [[Read dynamically approved collaborator IDs from disk.]] - rationale - gateway/security/rbac_config.py
+- [[Read raw shared memory for a group workspace.]] - rationale - gateway/soc/router.py
+- [[Read the live per-module enforcement counters (SCRUM-80); tolerate absence.]] - rationale - gateway/soc/router.py
+- [[Recent scanner events from the in-process startupscheduled scan history.      C]] - rationale - gateway/soc/router.py
+- [[Remove a collaborator UID from the persistent store (file-locked).      Returns]] - rationale - gateway/security/rbac_config.py
+- [[Remove an egress rule for a domain (CC-10).]] - rationale - gateway/soc/router.py
+- [[Rename a group (CC-34).]] - rationale - gateway/soc/router.py
+- [[Reset the config integrity baseline to the current file state.      Use after a]] - rationale - gateway/soc/router.py
+- [[Return all active egress rules preloaded permanent, user-created permanent, ses]] - rationale - gateway/soc/router.py
+- [[Return current LLM quota failover statistics.]] - rationale - gateway/soc/router.py
+- [[Return the latest Software Bill of Materials (SBOM) in SPDX JSON format.      Ge]] - rationale - gateway/soc/router.py
+- [[Return the latest Trivy vulnerability scan results.      Trivy scans are run at]] - rationale - gateway/soc/router.py
+- [[Revoke a privilege delegation. Omit privilege to revoke all for the user.]] - rationale - gateway/soc/router.py
+- [[Revoke an active rule from a past approval decision (CC-40).]] - rationale - gateway/soc/router.py
+- [[Run a Trivy CVE scan immediately and send the report via Telegram.      Requires]] - rationale - gateway/soc/router.py
+- [[Run a command inside the agentshroud-openclaw container via the Docker socket.]] - rationale - gateway/soc/router.py
+- [[Run a shell command on the Docker Compose host via SSH.      Requires AGENTSHROU]] - rationale - gateway/soc/router.py
+- [[SCLCaller_1]] - code - gateway/soc/router.py
+- [[ServiceActionRequest]] - code - gateway/soc/router.py
+- [[Set per-user collab mode override (persists across restarts).]] - rationale - gateway/soc/router.py
+- [[Switch a security module between enforcemonitordisabled modes at runtime (CC-4]] - rationale - gateway/soc/router.py
+- [[Update a user's display name (CC-35).]] - rationale - gateway/soc/router.py
+- [[_app_state()]] - code - gateway/soc/router.py
+- [[_confirmation_required()]] - code - gateway/soc/router.py
+- [[_docker_exec_bot()]] - code - gateway/soc/router.py
+- [[_fetch_latest_release()]] - code - gateway/soc/router.py
+- [[_file_hash()]] - code - gateway/soc/router.py
+- [[_launch_scan_background()]] - code - gateway/soc/router.py
+- [[_log_audit()]] - code - gateway/soc/router.py
+- [[_module_stats_snapshot()]] - code - gateway/soc/router.py
+- [[_risk_level_label()]] - code - gateway/soc/router.py
+- [[_ssh_compose()]] - code - gateway/soc/router.py
+- [[acknowledge_config_integrity()]] - code - gateway/soc/router.py
+- [[add_collaborator()_1]] - code - gateway/soc/router.py
+- [[add_group_member()_1]] - code - gateway/soc/router.py
+- [[approve_egress()]] - code - gateway/soc/router.py
+- [[approve_request()]] - code - gateway/soc/router.py
+- [[auth_ws_token()]] - code - gateway/soc/router.py
+- [[clear_group_memory()]] - code - gateway/soc/router.py
+- [[create_delegation()]] - code - gateway/soc/router.py
+- [[create_group()]] - code - gateway/soc/router.py
+- [[delete_group()]] - code - gateway/soc/router.py
+- [[deny_egress()]] - code - gateway/soc/router.py
+- [[deny_request()]] - code - gateway/soc/router.py
+- [[emergency_block_egress()]] - code - gateway/soc/router.py
+- [[export_audit()]] - code - gateway/soc/router.py
+- [[get_egress_log()]] - code - gateway/soc/router.py
+- [[get_egress_rules()]] - code - gateway/soc/router.py
+- [[get_group()]] - code - gateway/soc/router.py
+- [[get_group_memory()]] - code - gateway/soc/router.py
+- [[get_health()_1]] - code - gateway/soc/router.py
+- [[get_llm_failover_stats()]] - code - gateway/soc/router.py
+- [[get_modules()]] - code - gateway/soc/router.py
+- [[get_modules_heatmap()]] - code - gateway/soc/router.py
+- [[get_privacy_policies()]] - code - gateway/soc/router.py
+- [[get_risk_score()]] - code - gateway/soc/router.py
+- [[get_risk_summary()]] - code - gateway/soc/router.py
+- [[get_sbom()_1]] - code - gateway/soc/router.py
+- [[get_scan_results()]] - code - gateway/soc/router.py
+- [[get_scanner_recent_events()]] - code - gateway/soc/router.py
+- [[get_security_alerts()]] - code - gateway/soc/router.py
+- [[get_service_logs()]] - code - gateway/soc/router.py
+- [[get_soc_correlation()]] - code - gateway/soc/router.py
+- [[get_tool_acl()]] - code - gateway/soc/router.py
+- [[get_trivy_results()]] - code - gateway/soc/router.py
+- [[get_updates()]] - code - gateway/soc/router.py
+- [[get_user()]] - code - gateway/soc/router.py
+- [[killswitch_disconnect()]] - code - gateway/soc/router.py
+- [[killswitch_freeze()]] - code - gateway/soc/router.py
+- [[killswitch_shutdown()]] - code - gateway/soc/router.py
+- [[list_delegations()]] - code - gateway/soc/router.py
+- [[list_groups()]] - code - gateway/soc/router.py
+- [[list_pending_approvals()_1]] - code - gateway/soc/router.py
+- [[list_users()]] - code - gateway/soc/router.py
+- [[load_persisted_collaborators()]] - code - gateway/security/rbac_config.py
+- [[override_egress_rule()]] - code - gateway/soc/router.py
+- [[persist_approved_collaborator()]] - code - gateway/security/rbac_config.py
+- [[rebuild_all_services()]] - code - gateway/soc/router.py
+- [[remove_egress_rule()]] - code - gateway/soc/router.py
+- [[remove_group_member()]] - code - gateway/soc/router.py
+- [[rename_group()]] - code - gateway/soc/router.py
+- [[restart_service()_1]] - code - gateway/soc/router.py
+- [[revoke_approved_collaborator()]] - code - gateway/security/rbac_config.py
+- [[revoke_collaborator()]] - code - gateway/soc/router.py
+- [[revoke_delegation()]] - code - gateway/soc/router.py
+- [[revoke_egress_history()]] - code - gateway/soc/router.py
+- [[rollback_gateway()]] - code - gateway/soc/router.py
+- [[router.py_1]] - code - gateway/soc/router.py
+- [[run_scanner()]] - code - gateway/soc/router.py
+- [[set_group_mode()]] - code - gateway/soc/router.py
+- [[set_log_level()]] - code - gateway/soc/router.py
+- [[set_module_mode()]] - code - gateway/soc/router.py
+- [[set_user_collab_mode()]] - code - gateway/soc/router.py
+- [[set_user_role()_1]] - code - gateway/soc/router.py
+- [[start_service()]] - code - gateway/soc/router.py
+- [[stop_service()_1]] - code - gateway/soc/router.py
+- [[trigger_cve_report()]] - code - gateway/soc/router.py
+- [[update_display_name()]] - code - gateway/soc/router.py
+- [[update_service()]] - code - gateway/soc/router.py
+- [[upgrade_bot()]] - code - gateway/soc/router.py
+- [[upgrade_gateway()]] - code - gateway/soc/router.py
+- [[upgrade_hermes()]] - code - gateway/soc/router.py
+- [[verify_audit_chain()]] - code - gateway/soc/router.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -153,26 +142,39 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 36 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 26 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 23 edges to [[_COMMUNITY_Forward Routing & Approval]]
-- 21 edges to [[_COMMUNITY_MCP Policy Engine]]
-- 21 edges to [[_COMMUNITY_Approval Queue Tests]]
-- 14 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 13 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 7 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
-- 6 edges to [[_COMMUNITY_Auth & Exception Types]]
-- 4 edges to [[_COMMUNITY_SOC Dashboard]]
-- 3 edges to [[_COMMUNITY_Approval Queue]]
-- 2 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 80 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 37 edges to [[_COMMUNITY_Voice Gateway Tests]]
+- 12 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 11 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 11 edges to [[_COMMUNITY_Tool Chain Analyzer]]
+- 10 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 7 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 6 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Group Workspace Isolation]]
+- 3 edges to [[_COMMUNITY_Gateway Security Module]]
+- 3 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 3 edges to [[_COMMUNITY_docsvault]]
+- 2 edges to [[_COMMUNITY_scriptssync-cve-registry.py]]
+- 2 edges to [[_COMMUNITY_Competitive Intel Store]]
+- 2 edges to [[_COMMUNITY_Docker Deploy Scripts]]
+- 2 edges to [[_COMMUNITY_Custom Skills]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_MCP Proxy Config]]
-- 1 edge to [[_COMMUNITY_SOC Service Manager]]
-- 1 edge to [[_COMMUNITY_URLDomain Validation Tests]]
+- 2 edges to [[_COMMUNITY_skillsopenclaw]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Cross-Bot Trust Ledger]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_docspapers]]
+- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_Gateway Security Module]]
 
 ## Top bridge nodes
-- [[ApprovalQueueConfig_2]] - degree 76, connects to 8 communities
-- [[EnhancedApprovalQueue]] - degree 51, connects to 7 communities
-- [[ApprovalStore_1]] - degree 57, connects to 6 communities
-- [[ToolRiskConfig_1]] - degree 35, connects to 6 communities
-- [[ApprovalQueueItem]] - degree 35, connects to 5 communities
+- [[router.py_1]] - degree 159, connects to 23 communities
+- [[JSONResponse]] - degree 43, connects to 9 communities
+- [[SCLCaller_1]] - degree 85, connects to 3 communities
+- [[create_group()]] - degree 8, connects to 3 communities
+- [[persist_approved_collaborator()]] - degree 7, connects to 3 communities

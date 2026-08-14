@@ -1,17 +1,21 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+members: 8
 ---
 
 # docs/governance
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[GSD Cadence Chosen Over Formal Scrum]] - rationale - docs/governance/SPRINT_CADENCE.md
-- [[Sprint Cadence Decision (SPRINT_CADENCE.md)]] - document - docs/governance/SPRINT_CADENCE.md
+- [[ApprovalQueue Missing Telegram Notifications (Critical Gap)]] - rationale - docs/security/v0.8.0-wiring-audit.md
+- [[Confirmed Wired Inbound Pipeline Modules (RBAC, SessionIsolation, PromptGuard, etc.)]] - document - docs/security/v0.8.0-wiring-audit.md
+- [[EgressTelegramNotifier — Not Instantiated (Critical Gap)]] - rationale - docs/security/v0.8.0-wiring-audit.md
+- [[EnhancedToolResultSanitizer Not Passed to Pipeline (Critical Gap)]] - rationale - docs/security/v0.8.0-wiring-audit.md
+- [[LLMProxy Never Instantiated (Critical Gap)]] - rationale - docs/security/v0.8.0-wiring-audit.md
+- [[OutputCanary Not Passed to Pipeline (Critical Gap)]] - rationale - docs/security/v0.8.0-wiring-audit.md
+- [[v0.8.0 Fix Priority List (P0–P3)]] - rationale - docs/security/v0.8.0-wiring-audit.md
+- [[v0.8.0 Wiring Audit (Watchtower)]] - document - docs/security/v0.8.0-wiring-audit.md
 
 ## Live Query (requires Dataview plugin)
 

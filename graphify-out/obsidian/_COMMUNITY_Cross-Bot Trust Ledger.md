@@ -1,207 +1,160 @@
 ---
 type: community
-cohesion: 0.02
-members: 192
+members: 147
 ---
 
 # Cross-Bot Trust Ledger
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 192 nodes
+**Members:** 147 nodes
 
 ## Members
-- [[.__init__()_65]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[.__init__()_83]] - code - gateway/security/instruction_envelope.py
-- [[.__post_init__()_2]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[.__post_init__()_8]] - code - gateway/security/trust_manager.py
-- [[._compute_signature()]] - code - gateway/security/instruction_envelope.py
-- [[._missing_()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[._pipeline_with_trust()]] - code - gateway/tests/test_pipeline_unit.py
-- [[._propagate()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[._redacting_pii()]] - code - gateway/tests/test_pipeline_unit.py
-- [[._shared_tm()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.build_full_mesh()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[.get_incidents()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[.incident_count()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[.peers_of()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[.record_incident()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[.register_peer()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[.register_trust_manager()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[.sign()]] - code - gateway/security/instruction_envelope.py
-- [[.test_adding_a_fourth_bot_extends_the_mesh_to_everyone()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_blocked_request_decays_trust_score()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_blocked_request_propagates_to_cross_bot_peer()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_bot_without_registered_trust_manager_is_skipped()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_clean_message_passes()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_clean_request_does_not_touch_trust_score()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_context_guard_error_fails_closed()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_critical_injection_blocks()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_critical_severity_propagates_full_fraction()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_custom_points()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_default_config()_8]] - code - gateway/tests/test_trust_manager.py
-- [[.test_default_policy_is_sane()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_different_keys_fail_verification()]] - code - gateway/tests/test_instruction_envelope.py
-- [[.test_different_signers_same_key_verify()]] - code - gateway/tests/test_instruction_envelope.py
-- [[.test_empty_bot_list_does_not_raise()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_empty_ledger_has_no_incidents()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_envelope_metadata_in_audit_entry()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_envelope_wraps_system_prompt()]] - code - gateway/tests/test_instruction_envelope.py
-- [[.test_envelope_wraps_tool_result()]] - code - gateway/tests/test_instruction_envelope.py
-- [[.test_every_bot_shares_the_same_trust_manager()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_fraction_above_one_rejected()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_from_string()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_get_incidents_by_source()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_get_incidents_with_limit()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_high_injection_blocks()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_high_score_forwards_and_records()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_high_severity_propagates_full_fraction()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_incident_limit_retained()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_incident_on_one_bot_propagates_to_all_mesh_peers()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_incident_record_fields()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_incidents_are_recorded()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_invalid_string_returns_none()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_lockdown_block_is_audited()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_lockdown_score_allows_owner()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_lockdown_score_blocks_non_owner()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_low_severity_not_propagated()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_medium_severity_propagates_to_peer()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_missing_trust_manager_does_not_raise()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_no_context_guard_passes_through()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_no_outbound_filter_does_not_unbind()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_no_scorer_leaves_result_unscored()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_no_self_propagation()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_no_signer_leaves_envelope_empty()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_non_owner_block_does_not_emit_owner_bypass()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_non_owner_inbound_query_still_redacted()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_non_string_returns_none()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_ordering()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_outbound_response_is_signed_and_verifiable()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_owner_bypass_audited_at_every_guard()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_owner_bypass_is_recorded_in_audit_chain()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_owner_exempted_block_does_not_decay_trust()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_owner_inbound_query_not_pii_redacted()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_propagated_to_is_empty_for_no_peers()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_propagation_limited_to_max_depth()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_propagation_registers_unregistered_peer_agent()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_register_peer()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_register_peer_is_bidirectional_by_default()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_repetition_attack_does_not_block()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_scorer_error_allows_owner()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_scorer_error_fails_closed_non_owner()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_scorer_invoked_with_session_segments()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_sign_and_verify_roundtrip()]] - code - gateway/tests/test_instruction_envelope.py
-- [[.test_signer_failure_never_blocks()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_single_bot_has_no_peers_and_does_not_raise()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_skip_context_guard_bypasses_step0()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_tampered_content_fails()]] - code - gateway/tests/test_instruction_envelope.py
-- [[.test_tampered_signature_fails()]] - code - gateway/tests/test_instruction_envelope.py
-- [[.test_three_bots_form_a_full_mesh()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_thresholds_populated()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_tool_result_uses_wrap_tool_result()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_trust_level_ordering()]] - code - gateway/tests/test_trust_manager.py
-- [[.test_two_bots_are_mutual_peers()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_unregistered_bot_has_no_peers()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_warn_zone_forwards()]] - code - gateway/tests/test_pipeline_unit.py
-- [[.test_zero_decay_fraction_rejected()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.test_zero_max_depth_rejected()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[.verify()]] - code - gateway/security/instruction_envelope.py
-- [[.wrap_system_prompt()]] - code - gateway/security/instruction_envelope.py
-- [[.wrap_tool_result()]] - code - gateway/security/instruction_envelope.py
-- [[0.3 ≤ score  0.6 warns but never blocks.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[A signed instruction or tool result.]] - rationale - gateway/security/instruction_envelope.py
-- [[A single cross-bot incident recorded in the ledger.]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[An incident on openclaw should not re-apply to openclaw via the ledger.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[Attach a TrustManager instance to a bot name.]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[BotIncidentSeverity]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[Build a ledger where every bot in bot_ids is a mutual peer of         every ot]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Configuration for how incidents decay peer trust scores.      Attributes]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[ContextGuard must run in SecurityPipeline.process_inbound() — A2.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[ContextIntegrityScorer must run in process_inbound() — C21 wiring.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Convenience sign a system prompt as issuer='system'.]] - rationale - gateway/security/instruction_envelope.py
-- [[Convenience sign a tool result as issuer='tooltool_name'.]] - rationale - gateway/security/instruction_envelope.py
-- [[Cross-Bot Trust Ledger (Module 27)]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[CrossBotTrustLedger_1]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[CrossBotTrustLedger]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[Default propagation policy.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[Depth-2 propagation A → B → C but NOT C → D when max_depth=2.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[End-to-end a real incident on bot A decays trust on bots B and C         in a 3]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[EnvelopeSigner]] - code - gateway/security/instruction_envelope.py
-- [[EnvelopeSigner must attest outbound responses — C46 wiring.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Envelopes signed with one key should not verify with a different key.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[IncidentRecord]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[InstructionEnvelope]] - code - gateway/security/instruction_envelope.py
-- [[Log an incident and propagate trust decay to registered peers.          Args]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Minimal SecurityPipeline with a real PII sanitizer stub.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Modifying content after signing should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[Modifying the signature directly should fail verification.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[No trust_manager configured — the hook must no-op, not crash the         request]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Non-owner query must still be PII-scrubbed (detector + threshold unchanged).]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Ordered severity levels for cross-bot incidents.      Values map to IEC 62443 SL]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Owner messages that would trip a guard are logged but never         blocked — re]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Owner query must pass through PII sanitisation unchanged; sanitiser not called.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[PII sanitiser mock that simulates two entity redactions.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Peer agent not registered in TrustManager should be auto-registered.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[Pipeline with ContextGuard + ContextIntegrityScorer mocks.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Propagation to a peer with no registered TrustManager must not raise.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[Recursive BFS propagation up to max_propagation_depth hops.]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Register bot_b as a peer of bot_a.          Args             bot_a Source bot]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Regression filter_result was possibly-unbound in process_outbound when no     o]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Return True if the envelope's signature is valid.]] - rationale - gateway/security/instruction_envelope.py
-- [[Return a signed envelope for content.]] - rationale - gateway/security/instruction_envelope.py
-- [[Return incidents, optionally filtered by source bot.          Args]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Return the number of incidents currently in the ledger.]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Return the registered peers for bot_name (empty list if none).]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[ScanResult_1]] - code - gateway/security/prompt_guard.py
-- [[SecurityPipeline._maybe_record_trust_violation — centralized hook that     fires]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Shared trust decay channel for multi-bot deployments.      Usage          ledg]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Signs and verifies InstructionEnvelopes.      Usage          signer = Envelope]] - rationale - gateway/security/instruction_envelope.py
-- [[Step 2 PII sanitisation must be skipped for the authenticated owner.      Non-ow]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Test configuration options.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test trust level hierarchy and thresholds.]] - rationale - gateway/tests/test_trust_manager.py
-- [[TestBotIncidentSeverity]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[TestBuildFullMesh]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[TestConfig]] - code - gateway/tests/test_trust_manager.py
-- [[TestContextGuardInPipeline]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestContextIntegrityInPipeline]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestCrossBotTrustLedgerConstruction]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[TestEnvelopeSigner]] - code - gateway/tests/test_instruction_envelope.py
-- [[TestEnvelopeSignerInPipeline]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestGetIncidentsLimit]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[TestInboundPIIOwnerExemption]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestIncidentAudit]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[TestIncidentPropagation]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[TestOutboundFilterResultBinding]] - code - gateway/tests/test_pipeline_unit.py
-- [[TestTrustDecayPolicyValidation]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[TestTrustLevels_1]] - code - gateway/tests/test_trust_manager.py
-- [[TestTrustViolationRecording]] - code - gateway/tests/test_pipeline_unit.py
-- [[The exact scenario the user asked for add a 4th bot and it just works.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[TrustConfig]] - code - gateway/security/trust_manager.py
-- [[TrustDecayPolicy]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[TrustDecayPolicy_1]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[TrustManager]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[TrustManager_2]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[Two signers sharing the same key can cross-verify envelopes.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[_FakeAttack]] - code - gateway/tests/test_pipeline_unit.py
-- [[_FakeIntegrityScore]] - code - gateway/tests/test_pipeline_unit.py
-- [[_make_integrity_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
-- [[_make_pipeline()_2]] - code - gateway/tests/test_pipeline_unit.py
-- [[_make_signer_pipeline()]] - code - gateway/tests/test_pipeline_unit.py
-- [[build_full_mesh N-agent-scalable topology construction.      Adding a 3rd4thN]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[cross_bot_trust_ledger.py]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[hermes_tm()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[instruction_envelope.py]] - code - gateway/security/instruction_envelope.py
-- [[ledger()_1]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[openclaw_tm()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[policy()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[sign() + verify() should return True for unmodified content.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[signer()]] - code - gateway/tests/test_instruction_envelope.py
-- [[skip_context_guard=True must prevent ContextGuard from running — used by Telegra]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[test_cross_bot_trust_ledger.py]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[test_instruction_envelope.py]] - code - gateway/tests/test_instruction_envelope.py
-- [[test_pipeline_unit.py]] - code - gateway/tests/test_pipeline_unit.py
-- [[trust_manager()_1]] - code - gateway/tests/test_e2e_watchtower.py
-- [[wrap_system_prompt() sets issuer='system' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
-- [[wrap_tool_result() sets issuer='toolname' and passes verification.]] - rationale - gateway/tests/test_instruction_envelope.py
+- [[._active_bot_id()]] - code - gateway/proxy/telegram_proxy.py
+- [[._apply_outbound_status_notices()]] - code - gateway/proxy/telegram_proxy.py
+- [[._bot_is_mentioned()]] - code - gateway/proxy/telegram_proxy.py
+- [[._build_collaborator_safe_info_response()]] - code - gateway/proxy/telegram_proxy.py
+- [[._contains_internal_approval_banner()]] - code - gateway/proxy/telegram_proxy.py
+- [[._contains_legacy_block_notice()]] - code - gateway/proxy/telegram_proxy.py
+- [[._enforce_group_workspace_access()]] - code - gateway/proxy/telegram_proxy.py
+- [[._extract_first_egress_target()]] - code - gateway/proxy/telegram_proxy.py
+- [[._extract_owner_target()]] - code - gateway/proxy/telegram_proxy.py
+- [[._extract_owner_target_resolved()]] - code - gateway/proxy/telegram_proxy.py
+- [[._filter_inbound_updates()]] - code - gateway/proxy/telegram_proxy.py
+- [[._get_user_projects()]] - code - gateway/proxy/telegram_proxy.py
+- [[._group_workspace_manager()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_group_message()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_immune()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_no_reply_token()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_valid_domain_name()]] - code - gateway/proxy/telegram_proxy.py
+- [[._is_within_project_scope()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_allowlist_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_approval_action_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_approval_queue_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_approval_token_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_archive_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_collaborator_privacy_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_command_enumeration_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_cross_tenant_data_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_cross_user_messaging_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_encoded_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_env_secret_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_execution_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_file_metadata_question()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_file_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_filename_reference()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_guardrail_modification_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_hidden_channel_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_hypothetical_execution_question()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_identity_enumeration_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_incremental_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_internal_network_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_log_access_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_memory_access_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_metadata_endpoint_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_model_status_question()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_model_switch_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_obfuscated_command_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_pairing_or_access_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_path_traversal_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_plugin_discovery_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_policy_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_safe_collaborator_info_query()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_scheduler_or_autorun_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_secret_value_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_sensitive_path_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_service_control_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_system_prompt_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_tool_payload_text()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_tool_trace_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_unicode_obfuscation_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_unsafe_scheme_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._looks_like_web_access_request()]] - code - gateway/proxy/telegram_proxy.py
+- [[._matches_presence_probe()]] - code - gateway/proxy/telegram_proxy.py
+- [[._normalize_command_token()]] - code - gateway/proxy/telegram_proxy.py
+- [[._notify_collaborator_command_blocked()]] - code - gateway/proxy/telegram_proxy.py
+- [[._quarantine_blocked_message()]] - code - gateway/proxy/telegram_proxy.py
+- [[._resolve_pending_username_target()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_collaborator_safe_info_response()]] - code - gateway/proxy/telegram_proxy.py
+- [[._send_telegram_text()]] - code - gateway/proxy/telegram_proxy.py
+- [[._strip_json_fence()]] - code - gateway/proxy/telegram_proxy.py
+- [[._teams_config()]] - code - gateway/proxy/telegram_proxy.py
+- [[._trigger_web_fetch_approval()]] - code - gateway/proxy/telegram_proxy.py
+- [[.get_stats()_9]] - code - gateway/proxy/telegram_proxy.py
+- [[.test_url_encoded_payload_normalized()]] - code - gateway/tests/test_adversarial_injection.py
+- [[.test_zero_width_space_stripped()]] - code - gateway/tests/test_adversarial_injection.py
+- [[Allow conceptual securityprocess questions that don't request executiondata ac]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Best-effort Telegram sender with bounded retries.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Best-effort check to avoid treating local file names as egress domains.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Best-effort guardrail collaborator prompts requesting direct file access.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Build a GroupWorkspaceManager from current teamsRBAC config.          Returns a]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Build informative but non-sensitive response for collaborator conceptual questio]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect chunkedpartial extraction prompts intended to bypass output controls.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator probes asking for direct commandtool inventories.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts asking about other userssessionsidentities.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts asking for raw secrettokenpassword values.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts asking to bypass controls via unicodeinvisible tric]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts asking to bypassdisable approvals or protections.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts asking to decodedeobfuscate and execute commands.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting cross-tenantworkspace data access.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting ownercollaborator identity disclosure.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting path traversal style file access.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting scheduledautomatic task execution.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting securityconfig guardrail changes.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting servicecontainer lifecycle control.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts attempting to approvedeny queued actions.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts probing sensitive filesystem pathssecrets.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting archivebulk export of internal content.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting direct memory contentsearch access.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting direct systemaudit log contents.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting environment variablesecret listings.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting external webnetwork fetch behavior.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting pairingaccess bootstrap artifacts.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting plugintool auto-discovery inventory.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting raw tool tracesargumentsresults.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts requesting system promptagent instruction leakage.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts targeting cloud metadata endpoints.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts targeting localinternal network hosts.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts trying to bypass domain allowlistegress policy.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts trying to inspect approval queue internalsmetadata.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts trying to obtaincraft approval callback tokens.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator prompts trying to switch runtime modelprovider configuratio]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator requests to run commands or perform direct execution.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect collaborator requests using disallowed URL schemes.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect conceptual file-purpose questions without direct content requests.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect internal approvalegress banner text that must remain owner-only.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect legacy bracket-style block notices for collaborator normalization.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect plain NO_REPLY sentinel with light punctuation wrapping.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect plain-language model status questions for deterministic local reply.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect policy questions about execution behavior (not actual execution asks).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect rawembedded tool payload text in user input.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect requests to encode sensitiveinternal content for exfiltration.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Detect requests to extract hidden-channel content from sensitiveinternal source]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Extract first outbound web target (URL or bare domain) for egress preflight.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Fail-closed member check for a group-context inbound message.          Returns T]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Map internal statuspolicy texts to user-safe replacement notices.          Pure]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Normalize first command token so small obfuscations don't bypass local handlers.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Normalize input text to defeat encoding-based evasion.      Applied before all s]] - rationale - gateway/security/input_normalizer.py
+- [[Notify a collaborator that a privileged command is not available.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Parse owner command target as numeric id or known collaborator alias.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Per-request bot_id for activity tracking.          Returns the bot_id set by pro]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Persist blocked inbound messages for admin review.          Also records the blo]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Proxies Telegram Bot API calls through the security pipeline.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Queue an interactive egress approval when raw web_fetch JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Resolve owner target from pending-request username aliases (e.g., approve ana).]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Resolve target by id, static alias, or pending username alias.          Resoluti]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return TeamsConfig from app_state if available.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True if message originates from a group or supergroup chat.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True if text has any keyword overlap with the user's project focus_topics]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True if the bot is @mentioned or a bot_command targets this bot.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True if user_id has active (non-expired) immunity.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True when ``text`` is a bare liveness-check phrase.          Strips a lea]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return list of ProjectConfig objects for this user, or empty list.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Scan inbound messages from getUpdates for security threats.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Send tailored safe informational response for collaborator conceptual query.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Strip optional markdown json fences around model output.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[TelegramAPIProxy]] - code - gateway/proxy/telegram_proxy.py
+- [[Validate normalized domain labels to avoid malformed allowlist entries.]] - rationale - gateway/proxy/telegram_proxy.py
+- [[normalize_input()]] - code - gateway/security/input_normalizer.py
+- [[slack_proxy.py]] - code - gateway/proxy/slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -211,27 +164,55 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 63 edges to [[_COMMUNITY_Progressive Trust Config]]
-- 47 edges to [[_COMMUNITY_Security Pipeline Core]]
-- 40 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 33 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
-- 22 edges to [[_COMMUNITY_PromptGuard Encoding Detection]]
-- 10 edges to [[_COMMUNITY_Gateway Security Module]]
-- 8 edges to [[_COMMUNITY_Slack API Proxy]]
-- 4 edges to [[_COMMUNITY_HTTP Forwarder]]
-- 3 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 51 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 33 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 18 edges to [[_COMMUNITY_Group Workspace Isolation]]
+- 14 edges to [[_COMMUNITY_HTTP Forwarder]]
+- 13 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 13 edges to [[_COMMUNITY_Bot Skill Config]]
+- 11 edges to [[_COMMUNITY_CHEATSHEET]]
+- 11 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 8 edges to [[_COMMUNITY_Collaborator Response Templates]]
+- 8 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 5 edges to [[_COMMUNITY_Group RBAC Roles]]
+- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 4 edges to [[_COMMUNITY_PII Config & Test Fixtures]]
+- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 3 edges to [[_COMMUNITY_docsproject]]
+- 2 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_PII Config & Test Fixtures]]
-- 1 edge to [[_COMMUNITY_Auth & Exception Types]]
-- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 2 edges to [[_COMMUNITY_docsvault]]
+- 2 edges to [[_COMMUNITY_Gateway Security Module]]
+- 2 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 2 edges to [[_COMMUNITY_Planning Docs]]
+- 2 edges to [[_COMMUNITY_Audit Export Pipeline]]
+- 1 edge to [[_COMMUNITY_docsREADME]]
+- 1 edge to [[_COMMUNITY_URLDomain Validation Tests]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 1 edge to [[_COMMUNITY_docsvault]]
+- 1 edge to [[_COMMUNITY_IEC 62443 Scorecard]]
+- 1 edge to [[_COMMUNITY_Security Docs]]
+- 1 edge to [[_COMMUNITY_docsproject]]
+- 1 edge to [[_COMMUNITY_docspapers]]
+- 1 edge to [[_COMMUNITY_skillsopenclaw]]
+- 1 edge to [[_COMMUNITY_scriptssync-cve-registry.py]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_docsvault]]
+- 1 edge to [[_COMMUNITY_SECURITY]]
+- 1 edge to [[_COMMUNITY_Gateway Proxy Layer]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Planning Docs]]
+- 1 edge to [[_COMMUNITY_skillsopenclaw]]
+- 1 edge to [[_COMMUNITY_Enhanced Approval Queue]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[TrustConfig]] - degree 101, connects to 11 communities
-- [[test_pipeline_unit.py]] - degree 31, connects to 6 communities
-- [[_FakeAttack]] - degree 27, connects to 6 communities
-- [[TestContextGuardInPipeline]] - degree 27, connects to 6 communities
-- [[TestContextIntegrityInPipeline]] - degree 26, connects to 6 communities
+- [[TelegramAPIProxy]] - degree 244, connects to 39 communities
+- [[normalize_input()]] - degree 79, connects to 8 communities
+- [[._filter_inbound_updates()]] - degree 85, connects to 7 communities
+- [[._send_telegram_text()]] - degree 11, connects to 3 communities
+- [[slack_proxy.py]] - degree 4, connects to 3 communities

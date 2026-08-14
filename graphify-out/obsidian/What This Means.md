@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "Planning Docs"
+community: "docs/reference"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/docs/reference
 ---
 
 # What This Means
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. Accomplishments This Phase (Feb 25 – Mar 3)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/reference

@@ -1,136 +1,130 @@
 ---
 type: community
-cohesion: 0.03
-members: 121
+members: 117
 ---
 
 # Tool Chain Analyzer
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 121 nodes
+**Members:** 117 nodes
 
 ## Members
-- [[.__init__()_118]] - code - gateway/security/tool_chain_analyzer.py
-- [[._calculate_risk_score()]] - code - gateway/security/tool_chain_analyzer.py
-- [[._cleanup_old_sessions()_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[._detect_chain_patterns()]] - code - gateway/security/tool_chain_analyzer.py
-- [[._load_custom_patterns()]] - code - gateway/security/tool_chain_analyzer.py
-- [[._load_default_patterns()]] - code - gateway/security/tool_chain_analyzer.py
-- [[._matches_source_pattern()]] - code - gateway/security/tool_chain_analyzer.py
-- [[._trigger_alert()_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[.add_alert_callback()_2]] - code - gateway/security/tool_chain_analyzer.py
-- [[.add_pattern()]] - code - gateway/security/tool_chain_analyzer.py
-- [[.analyze_tool_call()]] - code - gateway/security/tool_chain_analyzer.py
-- [[.analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.analyzer()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.analyzer()_2]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.approve_pending_call()]] - code - gateway/security/tool_chain_analyzer.py
-- [[.get_global_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[.get_session_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[.sanitize_tool_params()]] - code - gateway/security/tool_chain_analyzer.py
-- [[.score_reversibility()]] - code - gateway/security/tool_chain_analyzer.py
-- [[.test_alert_callbacks()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_approval_system()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_basic_tool_call_tracking()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_chain_length_limits()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_clean_params_pass()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_config_file_to_outbound()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_credential_to_outbound_blocking()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_custom_patterns()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_delete_file_mostly_irreversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_disabled_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_edge_cases()_3]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_exec_to_network_pattern()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_global_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_initialization()_4]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_legitimate_file_path_passes()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_multiple_params_scanned()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_normal_tool_sequences_allowed()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_param_path_traversal_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_param_sql_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_param_template_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_pattern_configuration()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_rapid_file_enumeration()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_read_file_fully_reversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_read_to_http_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_read_to_message_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_reversibility_below_threshold_has_reasoning()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_risk_score_calculation()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_sanitization_returns_cleaned()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_session_cleanup()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_session_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_shell_bleed_bypass_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_time_window_expiry()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[.test_unknown_tool_defaults_low()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[A detected suspicious chain.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Actions to take on suspicious chains.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Add a callback function for chain detection alerts.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Add a new chain pattern at runtime.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Analyze a tool call for suspicious chain patterns.          Args             se]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Any_59]] - code - gateway/security/tool_chain_analyzer.py
-- [[Approve a pending tool call that required approval.          Args             s]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Calculate risk score for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[ChainAction]] - code - gateway/security/tool_chain_analyzer.py
-- [[ChainMatch]] - code - gateway/security/tool_chain_analyzer.py
-- [[ChainPattern]] - code - gateway/security/tool_chain_analyzer.py
-- [[Check if a call matches the source pattern, including parameter analysis.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Create a ToolChainAnalyzer instance for testing.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Create a mock alert callback for testing._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Definition of a suspicious tool call pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Detect if current call completes a suspicious pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Get global analyzer statistics.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Get statistics for a session._1]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[How reversible an action is (1.0 = fully reversible, 0.0 = irreversible).]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Initialize the tool chain analyzer.          Args             config Configura]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Load custom patterns from configuration.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Load default suspicious chain patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Main tool chain analysis engine.      Tracks sequences of tool calls and identif]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[ParamScanResult]] - code - gateway/security/tool_chain_analyzer.py
-- [[Remove old sessions to prevent memory bloat._1]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Represents a single tool call.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Result of scanning tool parameters for injection patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Return a reversibility score for the given tool call (1.0 = safe, 0.1 = irrevers]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[ReversibilityScore]] - code - gateway/security/tool_chain_analyzer.py
-- [[Risk levels for tool call chains.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[RiskLevel_3]] - code - gateway/security/tool_chain_analyzer.py
-- [[Scan tool parameters for injection payloads and return sanitized copy.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[SessionChainContext]] - code - gateway/security/tool_chain_analyzer.py
-- [[Test alert callback functionality._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test approval system interface.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test basic tool call tracking functionality.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test cases for ToolChainAnalyzer class.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test cleanup of old sessions._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test detection of config file access → outbound pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test detection of exec → network communication pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test detection of rapid file enumeration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test detection of read → HTTP exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test detection of read → message exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test edge cases and error conditions._2]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test getting global statistics.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test getting session statistics._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test loading custom patterns from configuration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test proper initialization of ToolChainAnalyzer.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test risk score calculation for detected chains.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that chain length limits are respected.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that credential access → outbound tools are blocked.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that disabled analyzer allows all calls.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that normal tool sequences pass through.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that patterns are properly configured.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[Test that patterns don't match outside time windows.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[TestParamSanitization]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[TestReversibilityScoring]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[TestShellBleedPatterns]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[TestToolChainAnalyzer_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[Tool call chain context for a session.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[ToolCall]] - code - gateway/security/tool_chain_analyzer.py
-- [[ToolChainAnalyzer]] - code - gateway/security/tool_chain_analyzer.py
-- [[Trigger alert callbacks for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
-- [[Verify expanded _PARAM_INJECTION_PATTERNS catch piped-interpreter and     heredo]] - rationale - gateway/tests/test_tool_chain_analyzer.py
-- [[callable_1]] - code - gateway/security/tool_chain_analyzer.py
-- [[mock_alert_callback()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[test_tool_chain_analyzer.py]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[tool_chain_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
-- [[tool_chain_analyzer.py]] - code - gateway/security/tool_chain_analyzer.py
+- [[.__init__()_127]] - code - gateway/soc/services.py
+- [[.__init__()_183]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.__init__()_184]] - code - gateway/tests/test_soc_services_coverage.py
+- [[._get_engine()]] - code - gateway/soc/services.py
+- [[._logs_via_socket()]] - code - gateway/soc/services.py
+- [[.close()_18]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.connect()_2]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.get_logs()_1]] - code - gateway/soc/services.py
+- [[.mgr_with_engine()]] - code - gateway/tests/test_soc_services.py
+- [[.read()_2]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.restart_service()_1]] - code - gateway/soc/services.py
+- [[.settimeout()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.start_service()]] - code - gateway/soc/services.py
+- [[.stop_service()_1]] - code - gateway/soc/services.py
+- [[.test_200_returns_parsed_json()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_404_returns_empty_dict()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_500_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_all_actions_false_without_engine()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_bytes_payload_is_decoded()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_empty_info_means_container_not_found()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_engine_error_falls_back_to_socket()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_engine_failure_falls_back_to_socket_data()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_engine_failure_falls_back_to_socket_then_unknown()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_engine_health_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_engine_status_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_esrch_falls_through_to_proc_scan()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_exception_returns_empty()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_exception_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_falls_back_to_openclaw_only_on_config_load_failure()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_full_running_descriptor()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_get_logs_module_filter_case_insensitive()]] - code - gateway/tests/test_soc_services.py
+- [[.test_get_logs_module_filter_empty_returns_all()]] - code - gateway/tests/test_soc_services.py
+- [[.test_get_logs_module_filter_excludes_non_matching()]] - code - gateway/tests/test_soc_services.py
+- [[.test_get_logs_module_filter_keeps_matching_lines()]] - code - gateway/tests/test_soc_services.py
+- [[.test_get_logs_no_engine_returns_empty()]] - code - gateway/tests/test_soc_services.py
+- [[.test_get_logs_no_filter_returns_tail()]] - code - gateway/tests/test_soc_services.py
+- [[.test_import()]] - code - gateway/tests/test_soc_services.py
+- [[.test_injected_engine_returned()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_instantiate_without_engine()]] - code - gateway/tests/test_soc_services.py
+- [[.test_internal_probe_failure_keeps_container_descriptors()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_internal_services_status_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_malformed_sections_fall_back_to_defaults()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_no_engine_no_socket()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_non_200_returns_empty()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_not_installed()_1]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_not_installed()_2]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_not_installed()_3]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_not_installed()_4]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_parse_exception_returns_unknown()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_parses_multiplexed_frames()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_resolution_failure_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_resolved_from_runtime_module()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_restart_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_pid_file()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_pid_file()_1]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_proc_scan()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_proc_scan()_1]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_proc_scan()_2]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_via_socket()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_when_content_present()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_running_when_kill_raises_eperm()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_socket_fallback_empty_lines()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_standby_when_no_pid_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_standby_when_no_socket_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_start_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_stop_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_stopped_when_content_missing()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_stopped_when_no_pid_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_tail_limit_applied()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_unparseable_started_at_yields_no_uptime()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_update_engine_without_pull_support()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_update_pull_failure_still_restarts()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_update_pull_then_restart()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_update_restart_failure_returns_false()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_uses_resolved_container_name_from_real_config()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_zero_started_at_skips_uptime()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.update_service()]] - code - gateway/soc/services.py
+- [[Build one Docker multiplexed-log frame (stdout).]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[EPERM means the process exists but is owned by another user.]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[Intercept builtins.open for specific paths; delegate everything else.]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[PermissionError]] - code
+- [[Pull the latest image then restart the container.]] - rationale - gateway/soc/services.py
+- [[Read container logs via Docker Unix socket — fallback when engine unavailable.]] - rationale - gateway/soc/services.py
+- [[Replace http.client.HTTPConnection so the in-function _UnixHTTP subclass     exe]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[Return the container engine from app_state if not injected.]] - rationale - gateway/soc/services.py
+- [[ServiceManager]] - code - gateway/soc/services.py
+- [[Stale PID (ESRCH) is not EPERM — falls through to proc scan, then standby.]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[Stand-in for socket.socket — records calls, never opens a real fd.]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[TestCheckClamd]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestCheckFluentBit]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestCheckOpenscap]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestCheckWazuhAgent]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestDescribeService]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestGetEngine_1]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestGetLogs]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestInspectViaSocket]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestKnownServices]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestLifecycleActions]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestListServices]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestLogsViaSocket]] - code - gateway/tests/test_soc_services_coverage.py
+- [[TestServiceManagerGetLogs]] - code - gateway/tests/test_soc_services.py
+- [[TestServiceManagerImport]] - code - gateway/tests/test_soc_services.py
+- [[TestStatusMappings]] - code - gateway/tests/test_soc_services_coverage.py
+- [[Thin wrapper around the container engine that produces ServiceDescriptors.]] - rationale - gateway/soc/services.py
+- [[Unit tests for ServiceManager.get_logs — including module_filter behaviour.]] - rationale - gateway/tests/test_soc_services.py
+- [[Verify ServiceManager can be imported without a running container engine.]] - rationale - gateway/tests/test_soc_services.py
+- [[_FakeResponse]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_FakeUnixSocket]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_frame()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_full_inspect_info()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_known_services() must resolve each bot's real container name — not a     hardco]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[_patch_exists()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_patch_http_connection()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[_patch_open()]] - code - gateway/tests/test_soc_services_coverage.py
+- [[gatewaysocservices.py (ServiceManager)]] - code - gateway/soc/services.py
+- [[os.path.exists override for specific paths only.]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[test_soc_services_coverage.py]] - code - gateway/tests/test_soc_services_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -140,13 +134,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
-- 3 edges to [[_COMMUNITY_Auth & Exception Types]]
-- 2 edges to [[_COMMUNITY_SOC Dashboard]]
-- 1 edge to [[_COMMUNITY_Security Module Middleware]]
+- 24 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 18 edges to [[_COMMUNITY_Gateway Security Module]]
+- 11 edges to [[_COMMUNITY_Enhanced Approval Queue]]
+- 1 edge to [[_COMMUNITY_Collaborator Prompt Classifiers]]
+- 1 edge to [[_COMMUNITY_docsvault]]
+- 1 edge to [[_COMMUNITY_Bot Container Scripts]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Voice Gateway Tests]]
+- 1 edge to [[_COMMUNITY_PII Config & Test Fixtures]]
 
 ## Top bridge nodes
-- [[ToolChainAnalyzer]] - degree 46, connects to 2 communities
-- [[ChainAction]] - degree 10, connects to 2 communities
-- [[RiskLevel_3]] - degree 10, connects to 2 communities
-- [[tool_chain_analyzer.py]] - degree 10, connects to 1 community
+- [[ServiceManager]] - degree 105, connects to 4 communities
+- [[PermissionError]] - degree 6, connects to 3 communities
+- [[._get_engine()]] - degree 12, connects to 2 communities
+- [[test_soc_services_coverage.py]] - degree 24, connects to 1 community
+- [[_FakeResponse]] - degree 13, connects to 1 community

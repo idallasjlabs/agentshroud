@@ -1,12 +1,12 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "docs/claude-security-audit-prompt.md"
+community: "Bot Skill Config"
 location: "L156"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/claude-security-audit-promptmd
+  - community/Bot_Skill_Config
 ---
 
 # Your Tasks
@@ -20,4 +20,4 @@ tags:
 - [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
 - [[Collaborator Access Control Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/claude-security-audit-promptmd
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

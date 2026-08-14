@@ -1,17 +1,21 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+members: 8
 ---
 
 # Bot Container Scripts
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Collaborator Isolation (read-only advisory access)]] - concept - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
-- [[OpenClaw Config Workspace PUBLIC-INFO]] - document - docker/bots/openclaw/config/workspace/PUBLIC-INFO.md
+- [[Fast text-only hint (low noise)]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Location]] - document - skills/openclaw/session-logs/SKILL.md
+- [[OpenClaw Session JSONL Store]] - concept - skills/openclaw/session-logs/SKILL.md
+- [[SKILL_163]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Structure_2]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Tips_4]] - document - skills/openclaw/session-logs/SKILL.md
+- [[Trigger_2]] - document - skills/openclaw/session-logs/SKILL.md
+- [[session-logs]] - document - skills/openclaw/session-logs/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +23,10 @@ members: 2
 TABLE source_file, type FROM #community/Bot_Container_Scripts
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_docsUSPTO_TRADEMARK_APPLICATION]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+
+## Top bridge nodes
+- [[session-logs]] - degree 9, connects to 2 communities

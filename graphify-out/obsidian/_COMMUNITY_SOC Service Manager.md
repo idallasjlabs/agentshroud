@@ -1,133 +1,122 @@
 ---
 type: community
-cohesion: 0.03
-members: 118
+members: 109
 ---
 
 # SOC Service Manager
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 118 nodes
+**Members:** 109 nodes
 
 ## Members
-- [[.__init__()_127]] - code - gateway/soc/services.py
-- [[.__init__()_173]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.__init__()_174]] - code - gateway/tests/test_soc_services_coverage.py
-- [[._get_engine()]] - code - gateway/soc/services.py
-- [[._logs_via_socket()]] - code - gateway/soc/services.py
-- [[.close()_17]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.connect()_2]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.get_logs()_1]] - code - gateway/soc/services.py
-- [[.get_service()]] - code - gateway/soc/services.py
-- [[.mgr_with_engine()]] - code - gateway/tests/test_soc_services.py
-- [[.read()_2]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.restart_service()_1]] - code - gateway/soc/services.py
-- [[.settimeout()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.start_service()]] - code - gateway/soc/services.py
-- [[.stop_service()_1]] - code - gateway/soc/services.py
-- [[.test_200_returns_parsed_json()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_404_returns_empty_dict()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_500_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_all_actions_false_without_engine()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_bytes_payload_is_decoded()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_empty_info_means_container_not_found()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_engine_error_falls_back_to_socket()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_engine_failure_falls_back_to_socket_data()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_engine_failure_falls_back_to_socket_then_unknown()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_engine_health_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_engine_status_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_esrch_falls_through_to_proc_scan()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_exception_returns_empty()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_exception_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_falls_back_to_openclaw_only_on_config_load_failure()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_full_running_descriptor()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_get_logs_module_filter_case_insensitive()]] - code - gateway/tests/test_soc_services.py
-- [[.test_get_logs_module_filter_empty_returns_all()]] - code - gateway/tests/test_soc_services.py
-- [[.test_get_logs_module_filter_excludes_non_matching()]] - code - gateway/tests/test_soc_services.py
-- [[.test_get_logs_module_filter_keeps_matching_lines()]] - code - gateway/tests/test_soc_services.py
-- [[.test_get_logs_no_engine_returns_empty()]] - code - gateway/tests/test_soc_services.py
-- [[.test_get_logs_no_filter_returns_tail()]] - code - gateway/tests/test_soc_services.py
-- [[.test_import()]] - code - gateway/tests/test_soc_services.py
-- [[.test_injected_engine_returned()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_instantiate_without_engine()]] - code - gateway/tests/test_soc_services.py
-- [[.test_internal_probe_failure_keeps_container_descriptors()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_internal_services_status_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_malformed_sections_fall_back_to_defaults()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_no_engine_no_socket()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_non_200_returns_empty()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_not_installed()_1]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_not_installed()_2]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_not_installed()_4]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_not_installed()_3]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_parse_exception_returns_unknown()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_parses_multiplexed_frames()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_resolution_failure_returns_none()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_resolved_from_runtime_module()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_restart_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_pid_file()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_pid_file()_1]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_proc_scan()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_proc_scan()_1]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_proc_scan()_2]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_via_socket()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_when_content_present()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_running_when_kill_raises_eperm()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_socket_fallback_empty_lines()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_standby_when_no_pid_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_standby_when_no_socket_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_start_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_stop_success_and_failure()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_stopped_when_content_missing()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_stopped_when_no_pid_and_no_process()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_tail_limit_applied()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_unparseable_started_at_yields_no_uptime()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_update_engine_without_pull_support()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_update_pull_failure_still_restarts()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_update_pull_then_restart()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_update_restart_failure_returns_false()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_uses_resolved_container_name_from_real_config()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.test_zero_started_at_skips_uptime()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[.update_service()]] - code - gateway/soc/services.py
-- [[Build one Docker multiplexed-log frame (stdout).]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[EPERM means the process exists but is owned by another user.]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[Intercept builtins.open for specific paths; delegate everything else.]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[PermissionError]] - code
-- [[Pull the latest image then restart the container.]] - rationale - gateway/soc/services.py
-- [[Read container logs via Docker Unix socket — fallback when engine unavailable.]] - rationale - gateway/soc/services.py
-- [[Replace http.client.HTTPConnection so the in-function _UnixHTTP subclass     exe]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[Return the container engine from app_state if not injected.]] - rationale - gateway/soc/services.py
-- [[ServiceManager]] - code - gateway/soc/services.py
-- [[Stale PID (ESRCH) is not EPERM — falls through to proc scan, then standby.]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[Stand-in for socket.socket — records calls, never opens a real fd.]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[TestCheckClamd]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestCheckFluentBit]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestCheckOpenscap]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestCheckWazuhAgent]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestDescribeService]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestGetEngine_1]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestGetLogs]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestInspectViaSocket]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestKnownServices]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestLifecycleActions]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestListServices]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestLogsViaSocket]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestServiceManagerGetLogs]] - code - gateway/tests/test_soc_services.py
-- [[TestServiceManagerImport]] - code - gateway/tests/test_soc_services.py
-- [[TestStatusMappings]] - code - gateway/tests/test_soc_services_coverage.py
-- [[Thin wrapper around the container engine that produces ServiceDescriptors.]] - rationale - gateway/soc/services.py
-- [[Unit tests for ServiceManager.get_logs — including module_filter behaviour.]] - rationale - gateway/tests/test_soc_services.py
-- [[Verify ServiceManager can be imported without a running container engine.]] - rationale - gateway/tests/test_soc_services.py
-- [[_FakeResponse]] - code - gateway/tests/test_soc_services_coverage.py
-- [[_FakeUnixSocket]] - code - gateway/tests/test_soc_services_coverage.py
-- [[_frame()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[_full_inspect_info()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[_known_services() must resolve each bot's real container name — not a     hardco]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[_patch_exists()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[_patch_http_connection()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[_patch_open()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[gatewaysocservices.py (ServiceManager)]] - code - gateway/soc/services.py
-- [[os.path.exists override for specific paths only.]] - rationale - gateway/tests/test_soc_services_coverage.py
-- [[test_soc_services_coverage.py]] - code - gateway/tests/test_soc_services_coverage.py
+- [[.test_check_bot_updates_npm_failure_and_exec_failure()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_check_bot_updates_npm_missing_binary()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_check_bot_updates_update_available()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_check_openclaw_updates_alias()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_create_purges_expired_tokens()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_create_returns_registered_prefixed_token()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_custom_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_default_bot_dockerfile_used()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_default_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_disconnect_reports_failure_on_engine_errors()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_disconnect_stops_and_removes_bot()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_echoes_status_until_disconnect()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_export_config_delegates_to_get()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_fallback_when_config_load_fails()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_fallback_when_default_bot_has_no_dockerfile()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_fallback_when_no_bots()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_first_bot_used_when_no_default_flag()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_freeze_reports_failure_when_pause_fails()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_config_reads_yaml()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_config_when_file_missing()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_engine_uses_runtime_config()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_logs_combined_handles_partial_failure()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_logs_for_service()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_logs_service_not_found_returns_404()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_logs_unknown_service_rejected()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_get_mode_default_enforce()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_import_config_delegates_to_update()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_invalid_mode_rejected()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_invalid_service_name_rejected()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_invalid_token_closes_4003()_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_invalid_token_raises_401()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_killswitch_action_default_unconfirmed()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_master_token_rejected_4003()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_missing_token_closes_4001()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_missing_token_closes_4001()_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_mode_request_defaults()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_rebuild_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_rebuild_success()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_report_with_healthy_runtime()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_report_with_unhealthy_runtime_falls_back_to_docker()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_requires_confirmation()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_resolves_hermes_to_the_real_renamed_container()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_resolves_openclaw_to_the_convention_default()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_restart_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_restart_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_rollback_bot()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_rollback_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_cancels_previous_revert_task()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_clamps_high_revert()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_enforce_revert_task_is_noop()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_invalid_returns_400()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_set_mode_monitor_auto_reverts()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_shutdown_brings_stack_down()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_shutdown_failure_reports_error()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_start_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_start_service_success()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_status_runtime_failure_degrades_gracefully()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_status_with_running_and_stopped_containers()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_stop_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_stop_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_streams_logs_then_cleans_up_on_disconnect()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_unknown_bot_id_falls_back_to_the_naive_guess()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_config_rejects_unknown_keys()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_config_round_trips_bots_key()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_config_without_existing_file_skips_backup()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_update_config_writes_yaml_and_backs_up()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_bot_failure_reports_error_step()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_bot_success()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_upgrade_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_valid_modes_constant()]] - code - gateway/tests/test_observatory_mode.py
+- [[.test_valid_token_authenticates()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_validate_is_single_use()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_validate_rejects_empty_and_unprefixed()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_validate_rejects_expired_token()]] - code - gateway/tests/test_web_api_coverage.py
+- [[.test_validate_rejects_unknown_token()]] - code - gateway/tests/test_web_api_coverage.py
+- [[HTTPAuthorizationCredentials_1]] - code - gateway/web/api.py
+- [[KillSwitchAction]] - code - gateway/web/api.py
+- [[ModeRequest]] - code - gateway/web/api.py
+- [[Require valid Bearer token for all management endpoints.]] - rationale - gateway/web/api.py
+- [[Restore AGENTSHROUD_MODE, revert task, and WS token registry per test.]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[SCRUM-107 the `bots` top-level key must be allowed through PUT         apicon]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[SimpleNamespace_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestBotUpdates]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestConfig_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestDefaultBotDockerfile]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestGetEngineHelper]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestKillSwitch_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestLogs]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestMgmtWsTokens]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestMode]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestModeRequestModel]] - code - gateway/tests/test_observatory_mode.py
+- [[TestOpenclawAliases]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestRebuild]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestRequireAuth]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestResolveBotContainer]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestSecurityReport]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestServiceControl]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestStatus_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestWsLogs]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestWsUpdates]] - code - gateway/tests/test_web_api_coverage.py
+- [[UpdateRequest]] - code - gateway/web/api.py
+- [[_container()]] - code - gateway/tests/test_web_api_coverage.py
+- [[_engine()]] - code - gateway/tests/test_web_api_coverage.py
+- [[_fake_ws()]] - code - gateway/tests/test_web_api_coverage.py
+- [[_module_state_guard()]] - code - gateway/tests/test_web_api_coverage.py
+- [[_resolve_bot_container must use BotConfig.resolved_container_name, not     a har]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[client()_20]] - code - gateway/tests/test_web_api_coverage.py
+- [[require_auth()_1]] - code - gateway/web/api.py
+- [[test_web_api_coverage.py]] - code - gateway/tests/test_web_api_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -137,19 +126,32 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 24 edges to [[_COMMUNITY_SOC Dashboard]]
-- 18 edges to [[_COMMUNITY_SOC Dashboard]]
-- 13 edges to [[_COMMUNITY_SOC Collaborator Lifecycle]]
-- 1 edge to [[_COMMUNITY_Enhanced Approval Queue]]
-- 1 edge to [[_COMMUNITY_Approval Queue Tests]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Group Workspace Isolation]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 12 edges to [[_COMMUNITY_docsproject]]
+- 11 edges to [[_COMMUNITY_Security Docs]]
+- 9 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 8 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 5 edges to [[_COMMUNITY_skillsopenclaw]]
+- 5 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_docsvault]]
+- 2 edges to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_docsvault]]
+- 1 edge to [[_COMMUNITY_Telegram Proxy Test Suite]]
+- 1 edge to [[_COMMUNITY_scriptssync-cve-registry.py]]
 - 1 edge to [[_COMMUNITY_SOC RBAC & Auth]]
+- 1 edge to [[_COMMUNITY_Security Docs]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_Security Docs]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_docsvault]]
+- 1 edge to [[_COMMUNITY_docsvault]]
+- 1 edge to [[_COMMUNITY_scriptsmigrate-cve-registry-ghsa.py]]
 
 ## Top bridge nodes
-- [[ServiceManager]] - degree 106, connects to 3 communities
-- [[PermissionError]] - degree 6, connects to 3 communities
-- [[._get_engine()]] - degree 12, connects to 2 communities
-- [[test_soc_services_coverage.py]] - degree 24, connects to 1 community
-- [[_FakeResponse]] - degree 13, connects to 1 community
+- [[require_auth()_1]] - degree 16, connects to 11 communities
+- [[ModeRequest]] - degree 47, connects to 8 communities
+- [[UpdateRequest]] - degree 29, connects to 5 communities
+- [[KillSwitchAction]] - degree 27, connects to 5 communities
+- [[TestModeRequestModel]] - degree 9, connects to 5 communities

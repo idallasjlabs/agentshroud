@@ -1,113 +1,108 @@
 ---
 type: community
-cohesion: 0.03
-members: 98
+members: 95
 ---
 
 # Competitive Intel Store
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 98 nodes
+**Members:** 95 nodes
 
 ## Members
-- [[.__init__()_84]] - code - gateway/security/intel_report.py
-- [[.__init__()_181]] - code - gateway/web/api.py
-- [[._load_latest_file()]] - code - gateway/security/intel_report.py
-- [[.save()_1]] - code - gateway/security/intel_report.py
-- [[A draft competitive-intel report submitted for citation verification.]] - rationale - gateway/web/api.py
-- [[Build a CitationVerifier wired to the production (httpx) fetcher.      Isolated]] - rationale - gateway/web/api.py
-- [[Check for AgentShroud updates from GitHub.]] - rationale - gateway/web/api.py
-- [[Check for OpenClaw updates (backward-compat alias for updatesbotopenclaw).]] - rationale - gateway/web/api.py
-- [[Check for updates for the named bot container.]] - rationale - gateway/web/api.py
-- [[Compute valid service names from config + sidecars at call-time. Uses     each b]] - rationale - gateway/web/api.py
-- [[ConfigUpdate]] - code - gateway/web/api.py
-- [[Create a short-lived WebSocket-only token for management endpoints.]] - rationale - gateway/web/api.py
-- [[Emergency kill switch freeze, shutdown, or disconnect.]] - rationale - gateway/web/api.py
-- [[Export current configuration.]] - rationale - gateway/web/api.py
-- [[Get current configuration.]] - rationale - gateway/web/api.py
-- [[Get the active container engine.]] - rationale - gateway/web/api.py
-- [[Import configuration from uploaded data.]] - rationale - gateway/web/api.py
-- [[IntelDraftEntry]] - code - gateway/web/api.py
-- [[IntelDraftRequest]] - code - gateway/web/api.py
-- [[IntelReportStore]] - code - gateway/security/intel_report.py
-- [[One unverified competitor claim + its candidate source URLs.]] - rationale - gateway/web/api.py
-- [[Path_13]] - code - gateway/security/intel_report.py
-- [[Path_40]] - code - gateway/web/api.py
-- [[Persist report to the store, linking it to the previous report.          Sets]] - rationale - gateway/security/intel_report.py
-- [[Persistent store for competitive intelligence reports.      Each report is saved]] - rationale - gateway/security/intel_report.py
-- [[Pull latest AgentShroud, test, rebuild, restart. Auto-rollback on failure.]] - rationale - gateway/web/api.py
-- [[Raised when SkillGuard blocks a dangerous skill tree before deploy.]] - rationale - gateway/web/api.py
-- [[Re-read ``~.llm_settings`` and sync skillsagentsMCP into both bot configs.]] - rationale - gateway/web/api.py
-- [[Re-read ``~.llm_settings``, scan for supply-chain risk, deploy to both bots.]] - rationale - gateway/web/api.py
-- [[Rebuild containers with latest images.]] - rationale - gateway/web/api.py
-- [[Resolve the Dockerfile for the default bot from gateway config.]] - rationale - gateway/web/api.py
-- [[Resolve the source (``~.llm_settings``) and bot-config destinations.      Extr]] - rationale - gateway/web/api.py
-- [[Restart a specific service container.]] - rationale - gateway/web/api.py
-- [[Retrieve container logs with optional filtering.]] - rationale - gateway/web/api.py
-- [[Return an IntelReportStore pointed at the configured data directory.]] - rationale - gateway/web/api.py
-- [[Return real container names for all configured bots (e.g.     'agentshroud-open]] - rationale - gateway/web/api.py
-- [[Return recent competitive-intelligence reports in reverse-chronological order.]] - rationale - gateway/web/api.py
-- [[Return the current AGENTSHROUD_MODE.]] - rationale - gateway/web/api.py
-- [[Return the latest validated competitive-intelligence report.      Auth-gated (ow]] - rationale - gateway/web/api.py
-- [[Return the most recent JSON file in the store, or None.]] - rationale - gateway/security/intel_report.py
-- [[Return update history from audit log.]] - rationale - gateway/web/api.py
-- [[Revert to previous git commit and rebuild.]] - rationale - gateway/web/api.py
-- [[Rollback OpenClaw (backward-compat alias for updatesbotopenclawrollback).]] - rationale - gateway/web/api.py
-- [[Rollback a named bot container to the previous image tag.]] - rationale - gateway/web/api.py
-- [[ServiceAction]] - code - gateway/web/api.py
-- [[SkillGuardBlocked]] - code - gateway/web/api.py
-- [[Start a specific service container.]] - rationale - gateway/web/api.py
-- [[Stop a specific service container.]] - rationale - gateway/web/api.py
-- [[Update configuration (writes YAML and optionally restarts).]] - rationale - gateway/web/api.py
-- [[Upgrade OpenClaw (backward-compat alias for updatesbotopenclawupgrade).]] - rationale - gateway/web/api.py
-- [[Upgrade a named bot container.]] - rationale - gateway/web/api.py
-- [[Validate a management WebSocket token (single-use, time-limited).]] - rationale - gateway/web/api.py
-- [[Validate service name against allowlist to prevent injection.]] - rationale - gateway/web/api.py
-- [[Verify and persist a draft competitive-intel report (SCRUM-75).      Each draft]] - rationale - gateway/web/api.py
-- [[WebSocket_8]] - code - gateway/web/api.py
-- [[WebSocket endpoint for real-time log streaming. Requires scoped WS token.]] - rationale - gateway/web/api.py
-- [[WebSocket for real-time update progress. Requires scoped WS token.]] - rationale - gateway/web/api.py
-- [[_bot_service_names()]] - code - gateway/web/api.py
-- [[_bot_service_names() must use each bot's real container name, not a     hardcode]] - rationale - gateway/tests/test_config.py
-- [[_create_mgmt_ws_token()]] - code - gateway/web/api.py
-- [[_get_default_bot_dockerfile()]] - code - gateway/web/api.py
-- [[_get_engine()]] - code - gateway/web/api.py
-- [[_intel_store()]] - code - gateway/web/api.py
-- [[_intel_verifier()]] - code - gateway/web/api.py
-- [[_skills_reload_impl()]] - code - gateway/web/api.py
-- [[_skills_reload_paths()]] - code - gateway/web/api.py
-- [[_valid_services()]] - code - gateway/web/api.py
-- [[_validate_mgmt_ws_token()]] - code - gateway/web/api.py
-- [[_validate_service_name()]] - code - gateway/web/api.py
-- [[api.py]] - code - gateway/web/api.py
-- [[check_agentshroud_updates()]] - code - gateway/web/api.py
-- [[check_bot_updates()]] - code - gateway/web/api.py
-- [[check_openclaw_updates()]] - code - gateway/web/api.py
-- [[export_config()]] - code - gateway/web/api.py
-- [[get_competitive_intel()]] - code - gateway/web/api.py
-- [[get_competitive_intel_history()]] - code - gateway/web/api.py
-- [[get_config()_1]] - code - gateway/web/api.py
-- [[get_logs()_1]] - code - gateway/web/api.py
-- [[get_mode()]] - code - gateway/web/api.py
-- [[import_config()]] - code - gateway/web/api.py
-- [[killswitch()]] - code - gateway/web/api.py
-- [[rebuild()]] - code - gateway/web/api.py
-- [[restart_service()_2]] - code - gateway/web/api.py
-- [[rollback_agentshroud()]] - code - gateway/web/api.py
-- [[rollback_bot()]] - code - gateway/web/api.py
-- [[rollback_openclaw()]] - code - gateway/web/api.py
-- [[skills_reload()]] - code - gateway/web/api.py
-- [[start_service()_1]] - code - gateway/web/api.py
-- [[stop_service()_2]] - code - gateway/web/api.py
-- [[submit_competitive_intel()]] - code - gateway/web/api.py
-- [[test_bot_service_names_uses_resolved_container_name()]] - code - gateway/tests/test_config.py
-- [[update_config()]] - code - gateway/web/api.py
-- [[update_history()]] - code - gateway/web/api.py
-- [[upgrade_agentshroud()]] - code - gateway/web/api.py
-- [[upgrade_bot()_1]] - code - gateway/web/api.py
-- [[upgrade_openclaw()]] - code - gateway/web/api.py
-- [[ws_logs()]] - code - gateway/web/api.py
-- [[ws_updates()]] - code - gateway/web/api.py
+- [[.body_not_empty()]] - code - gateway/ingest_api/models.py
+- [[.content_not_empty()]] - code - gateway/ingest_api/models.py
+- [[.get_blob_key_id()]] - code - gateway/security/encrypted_store.py
+- [[.subject_not_empty()]] - code - gateway/ingest_api/models.py
+- [[.validate_default_url()]] - code - gateway/ingest_api/config.py
+- [[.validate_mode()]] - code - gateway/security/group_config.py
+- [[.validate_source()]] - code - gateway/ingest_api/models.py
+- [[.validate_targets()]] - code - gateway/ingest_api/config.py
+- [[Add security headers to all responses (defense-in-depth).      Also catches Pyth]] - rationale - gateway/ingest_api/main.py
+- [[An empty share-sheet payload is rejected before it reaches the pipeline.]] - rationale - gateway/tests/test_security.py
+- [[Every content_type an iOS Shortcut can emit is accepted with source=shortcut.]] - rationale - gateway/tests/test_security.py
+- [[Extract the key_id from an encrypted blob without decrypting.]] - rationale - gateway/security/encrypted_store.py
+- [[ForwardRequest]] - code - gateway/ingest_api/models.py
+- [[Reject request bodies larger than 1MB before parsing.      Checks Content-Length]] - rationale - gateway/ingest_api/main.py
+- [[Request to forward content through the gateway      Received from iOS Shortcuts,]] - rationale - gateway/ingest_api/models.py
+- [[Test ApprovalDecision with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ApprovalRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[Test FastAPI lifespan initialization]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ForwardRequest rejects empty content]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ForwardRequest rejects invalid source]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ForwardRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[Test PII detection with special characters nearby]] - rationale - gateway/tests/test_security.py
+- [[Test all valid sources are accepted]] - rationale - gateway/tests/test_security.py
+- [[Test content with Unicode characters]] - rationale - gateway/tests/test_security.py
+- [[Test content with multiple instances of same PII type]] - rationale - gateway/tests/test_security.py
+- [[Test global exception handler]] - rationale - gateway/tests/test_main_simple.py
+- [[Test global exception handler with HTTPException]] - rationale - gateway/tests/test_main_simple.py
+- [[Test handling of extremely long content (10MB)]] - rationale - gateway/tests/test_security.py
+- [[Test handling of malformed metadata]] - rationale - gateway/tests/test_security.py
+- [[Test handling of null bytes (potential injection attack)]] - rationale - gateway/tests/test_security.py
+- [[Test handling of very large content (1MB+)]] - rationale - gateway/tests/test_security.py
+- [[Test overlapping or nested PII patterns]] - rationale - gateway/tests/test_security.py
+- [[Test rate limiting behavior]] - rationale - gateway/tests/test_security.py
+- [[Test request logging middleware]] - rationale - gateway/tests/test_main_simple.py
+- [[Test routing to default target]] - rationale - gateway/tests/test_router.py
+- [[Test routing with explicit route_to]] - rationale - gateway/tests/test_router.py
+- [[Test routing with invalid explicit target falls back to default]] - rationale - gateway/tests/test_router.py
+- [[Test that SQL injection is prevented]] - rationale - gateway/tests/test_security.py
+- [[Test that XSS payloads are safely stored]] - rationale - gateway/tests/test_security.py
+- [[Test that common false positives are handled]] - rationale - gateway/tests/test_security.py
+- [[Test that empty content is rejected]] - rationale - gateway/tests/test_security.py
+- [[Test that invalid source is rejected]] - rationale - gateway/tests/test_security.py
+- [[The iOSmacOS Shortcuts source value ('shortcut') is on the allowlist.]] - rationale - gateway/tests/test_security.py
+- [[Validate that default_url uses httphttps and targets an internal Docker host.]] - rationale - gateway/ingest_api/config.py
+- [[Validate that each target URL uses httphttps and targets an internal Docker hos]] - rationale - gateway/ingest_api/config.py
+- [[ValueError]] - code
+- [[content_type is a closed Literal set; a shortcut cannot invent new types.]] - rationale - gateway/tests/test_security.py
+- [[gatewayingest_apiauth.py (RateLimiter, verify_token)]] - code - gateway/ingest_api/auth.py
+- [[limit_request_body re-injects a fully-read chunked body and calls downstream.]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body rejects chunked bodies over 1MB with 413.]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body returns a clean 400 when the client drops mid-upload.      Wi]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body()]] - code - gateway/ingest_api/main.py
+- [[security_headers_middleware adds expected security headers.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware re-raises BaseExceptions that are not groups.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware returns 500 when anyio BaseExceptionGroup is raised.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware()]] - code - gateway/ingest_api/main.py
+- [[test_approval_decision_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_approval_request_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_empty_content_rejection()]] - code - gateway/tests/test_security.py
+- [[test_extremely_long_content()]] - code - gateway/tests/test_security.py
+- [[test_false_positive_patterns()]] - code - gateway/tests/test_security.py
+- [[test_forward_request_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_forward_request_validation_empty_content()]] - code - gateway/tests/test_main_simple.py
+- [[test_forward_request_validation_invalid_source()]] - code - gateway/tests/test_main_simple.py
+- [[test_global_exception_handler()]] - code - gateway/tests/test_main_simple.py
+- [[test_global_exception_handler_http_exception()]] - code - gateway/tests/test_main_simple.py
+- [[test_invalid_source_rejection()]] - code - gateway/tests/test_security.py
+- [[test_lifespan_initialization()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_chunked_body_over_limit_rejected()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_chunked_body_within_limit_passes_through()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_client_disconnect_returns_clean_response()]] - code - gateway/tests/test_main_simple.py
+- [[test_log_requests_middleware()]] - code - gateway/tests/test_main_simple.py
+- [[test_main_simple.py]] - code - gateway/tests/test_main_simple.py
+- [[test_malformed_json_metadata()]] - code - gateway/tests/test_security.py
+- [[test_multiple_same_type_pii()]] - code - gateway/tests/test_security.py
+- [[test_nested_pii_patterns()]] - code - gateway/tests/test_security.py
+- [[test_null_bytes_in_content()]] - code - gateway/tests/test_security.py
+- [[test_rate_limiter()]] - code - gateway/tests/test_security.py
+- [[test_resolve_target_default()]] - code - gateway/tests/test_router.py
+- [[test_resolve_target_explicit()]] - code - gateway/tests/test_router.py
+- [[test_resolve_target_invalid_explicit()]] - code - gateway/tests/test_router.py
+- [[test_security.py]] - code - gateway/tests/test_security.py
+- [[test_security_headers_middleware_catches_exception_group()]] - code - gateway/tests/test_main_simple.py
+- [[test_security_headers_middleware_normal_response()]] - code - gateway/tests/test_main_simple.py
+- [[test_security_headers_middleware_reraises_non_group()]] - code - gateway/tests/test_main_simple.py
+- [[test_shortcut_content_types_accepted()]] - code - gateway/tests/test_security.py
+- [[test_shortcut_empty_content_rejected()]] - code - gateway/tests/test_security.py
+- [[test_shortcut_rejects_unknown_content_type()]] - code - gateway/tests/test_security.py
+- [[test_shortcut_source_accepted()]] - code - gateway/tests/test_security.py
+- [[test_special_characters_in_pii()]] - code - gateway/tests/test_security.py
+- [[test_sql_injection_attempt()]] - code - gateway/tests/test_security.py
+- [[test_unicode_content()]] - code - gateway/tests/test_security.py
+- [[test_valid_sources()]] - code - gateway/tests/test_security.py
+- [[test_very_large_content()]] - code - gateway/tests/test_security.py
+- [[test_xss_attempt()]] - code - gateway/tests/test_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -117,28 +112,40 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_Gateway Security Module]]
-- 16 edges to [[_COMMUNITY_Enforce-Mode Auto-Revert]]
-- 11 edges to [[_COMMUNITY_Forward Routing & Approval]]
-- 10 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 7 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 5 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
-- 4 edges to [[_COMMUNITY_SOC Dashboard]]
+- 22 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 10 edges to [[_COMMUNITY_Slack API Proxy]]
+- 9 edges to [[_COMMUNITY_SOC Dashboard]]
+- 9 edges to [[_COMMUNITY_Gateway Security Module]]
+- 6 edges to [[_COMMUNITY_Planning Docs]]
+- 5 edges to [[_COMMUNITY_Architecture Docs]]
 - 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 4 edges to [[_COMMUNITY_docsUSPTO_PROVISIONAL_PATENT_APPLICATION]]
+- 3 edges to [[_COMMUNITY_Collaborator Prompt Classifiers]]
+- 3 edges to [[_COMMUNITY_docsvault]]
+- 3 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
+- 3 edges to [[_COMMUNITY_Bot Skill Config]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_Gateway Security Module]]
+- 2 edges to [[_COMMUNITY_Enhanced Approval Queue]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_Web Control Center]]
-- 1 edge to [[_COMMUNITY_Auth & Exception Types]]
+- 2 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_docsvault]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_scriptssync-cve-registry.py]]
+- 1 edge to [[_COMMUNITY_Bot Container Scripts]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 1 edge to [[_COMMUNITY_Planning Docs]]
+- 1 edge to [[_COMMUNITY_Egress & RBAC Security Core]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Ingest API]]
-- 1 edge to [[_COMMUNITY_webmanagement-dashboard.html]]
+- 1 edge to [[_COMMUNITY_Forward Routing & Approval]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Group Workspace Isolation]]
 
 ## Top bridge nodes
-- [[api.py]] - degree 73, connects to 12 communities
-- [[IntelReportStore]] - degree 39, connects to 4 communities
-- [[Path_40]] - degree 8, connects to 3 communities
-- [[_skills_reload_impl()]] - degree 8, connects to 3 communities
-- [[SkillGuardBlocked]] - degree 8, connects to 2 communities
+- [[ValueError]] - degree 29, connects to 16 communities
+- [[ForwardRequest]] - degree 71, connects to 9 communities
+- [[test_main_simple.py]] - degree 23, connects to 3 communities
+- [[test_security.py]] - degree 25, connects to 2 communities
+- [[limit_request_body()]] - degree 8, connects to 2 communities

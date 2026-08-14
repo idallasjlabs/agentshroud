@@ -1,42 +1,41 @@
 ---
 type: community
-cohesion: 0.07
-members: 27
+members: 28
 ---
 
 # docs/USPTO_TRADEMARK_APPLICATION.md
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 27 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[1.1 Owner  Applicant]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[1.2 Attorney Information]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[2.1 Mark Type]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[2.2 The Mark]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[2.3 Mark Literal Element]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[2.4 Translation  Transliteration]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[2.5 Mark Description (for standard character mark)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[AgentShroud -- USPTO Trademark Application]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Class 42 — Software as a Service (SaaS)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Class 9 — Computer Software]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Filing Reference_1]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Option A Section 1(a) — Use in Commerce (if mark is already in use)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Option B Section 1(b) — Intent to Use (if not yet in commerce)]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Recommended Searches]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 10 ESTIMATED COSTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 1 APPLICANT INFORMATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 2 MARK INFORMATION]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 3 GOODS AND SERVICES]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 4 FILING BASIS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 5 DECLARATION  SIGNATURE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 6 PRIOR SEARCH RESULTS]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 8 POST-FILING TIMELINE]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[SECTION 9 IMPORTANT NOTES]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[TEAS Plus vs. TEAS Standard]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[The TM Symbol]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Trademark vs. Patent]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
-- [[Why Standard Character Mark First]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Find the active vault(s)]] - document - skills/openclaw/obsidian/SKILL.md
+- [[Foodora API Integration (ordercli)]] - concept - skills/openclaw/ordercli/SKILL.md
+- [[MCP ServerTool (mcporter)]] - concept - skills/openclaw/mcporter/SKILL.md
+- [[Obsidian]] - document - skills/openclaw/obsidian/SKILL.md
+- [[OpenAI Audio Transcriptions Endpoint]] - concept - skills/openclaw/openai-whisper-api/SKILL.md
+- [[OpenClaw Skill Ecosystem]] - concept - skills/openclaw/skill-creator/SKILL.md
+- [[Quick start_1]] - document - skills/openclaw/nano-pdf/SKILL.md
+- [[SKILL_150]] - document - skills/openclaw/mcporter/SKILL.md
+- [[SKILL_153]] - document - skills/openclaw/nano-pdf/SKILL.md
+- [[SKILL_155]] - document - skills/openclaw/obsidian/SKILL.md
+- [[SKILL_160]] - document - skills/openclaw/ordercli/SKILL.md
+- [[SKILL_166]] - document - skills/openclaw/songsee/SKILL.md
+- [[Slack API (OpenClaw bot token)]] - concept - skills/openclaw/slack/SKILL.md
+- [[mcporter]] - document - skills/openclaw/mcporter/SKILL.md
+- [[nano-pdf]] - document - skills/openclaw/nano-pdf/SKILL.md
+- [[obsidian-cli Tool]] - concept - skills/openclaw/obsidian/SKILL.md
+- [[obsidian-cli quick start]] - document - skills/openclaw/obsidian/SKILL.md
+- [[openai-whisper Skill (local)]] - document - skills/openclaw/openai-whisper/SKILL.md
+- [[openai-whisper-api Skill]] - document - skills/openclaw/openai-whisper-api/SKILL.md
+- [[oracle Browser Engine (GPT-5.2 Pro)]] - concept - skills/openclaw/oracle/SKILL.md
+- [[oracle Skill]] - document - skills/openclaw/oracle/SKILL.md
+- [[ordercli]] - document - skills/openclaw/ordercli/SKILL.md
+- [[slack Skill]] - document - skills/openclaw/slack/SKILL.md
+- [[songsee]] - document - skills/openclaw/songsee/SKILL.md
+- [[spogo CLI (preferred Spotify client)]] - concept - skills/openclaw/spotify-player/SKILL.md
+- [[spotify-player Skill]] - document - skills/openclaw/spotify-player/SKILL.md
+- [[things-mac Skill]] - document - skills/openclaw/things-mac/SKILL.md
+- [[things3-cli (Things 3 URL Scheme + DB)]] - concept - skills/openclaw/things-mac/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,8 +45,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_docsUSPTO_PROVISIONAL_PATENT_APPLICATION]]
-- 1 edge to [[_COMMUNITY_docsUSPTO_PROVISIONAL_PATENT_APPLICATION]]
+- 2 edges to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_dockerbot-capabilities]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_Gateway Proxy Layer]]
+- 1 edge to [[_COMMUNITY_srcinterfaces]]
+- 1 edge to [[_COMMUNITY_Bot Container Scripts]]
+- 1 edge to [[_COMMUNITY_docsdiagrams]]
 
 ## Top bridge nodes
-- [[AgentShroud -- USPTO Trademark Application]] - degree 12, connects to 2 communities
+- [[OpenClaw Skill Ecosystem]] - degree 20, connects to 8 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Auth & Exception Types"
-location: "L1093"
+community: "PII Sanitizer Pipeline"
+location: "L1100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Write file content to an allowlisted SSH host via structured transport.      Unl
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ssh_write_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

@@ -1,17 +1,16 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+members: 3
 ---
 
 # .github/COPILOT_CLI_SETUP.md
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[GitHub Copilot CLI Setup as SecondaryTertiary Agent]] - document - .github/COPILOT_CLI_SETUP.md
-- [[Three Custom Copilot Agents test-augmenter, validation-runner, safe-refactor]] - document - .github/COPILOT_CLI_SETUP.md
+- [[.test_invalid_json_returns_empty()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[.test_reads_daemon_json()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestDaemonConfigReader]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,3 +18,12 @@ members: 2
 TABLE source_file, type FROM #community/github/COPILOT_CLI_SETUPmd
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_docsproject]]
+
+## Top bridge nodes
+- [[TestDaemonConfigReader]] - degree 3, connects to 1 community
+- [[.test_reads_daemon_json()]] - degree 2, connects to 1 community
+- [[.test_invalid_json_returns_empty()]] - degree 2, connects to 1 community

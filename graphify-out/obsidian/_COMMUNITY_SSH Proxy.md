@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # SSH Proxy
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[SSHProxy.write_file()]] - code - gateway/ssh_proxy/proxy.py
+- [[Docker Compose Minimal Example]] - document - examples/docker-compose.minimal.yml
 
 ## Live Query (requires Dataview plugin)
 

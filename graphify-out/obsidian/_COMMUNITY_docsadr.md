@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+members: 5
 ---
 
 # docs/adr
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[ADR-001-proxy-layer-inversion]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[Alternatives rejected]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[Decision_1]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
-- [[Rationale]] - document - docs/adr/ADR-001-proxy-layer-inversion.md
+- [[Purpose_73]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[README_78]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[Related Skills_79]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[Usage_80]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[Vulcan — Subject Matter Auditor_2]] - document - docker/config/openclaw/skills/i-vulcan/README.md
 
 ## Live Query (requires Dataview plugin)
 

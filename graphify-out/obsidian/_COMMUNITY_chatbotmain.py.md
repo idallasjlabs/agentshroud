@@ -1,32 +1,31 @@
 ---
 type: community
-cohesion: 0.17
-members: 17
+members: 18
 ---
 
 # chatbot/main.py
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 17 nodes
+**Members:** 18 nodes
 
 ## Members
-- [[ChatRequest]] - code - chatbot/main.py
-- [[ChatResponse]] - code - chatbot/main.py
-- [[FastAPI_1]] - code - chatbot/main.py
-- [[FastAPI lifespan - initialize OpenAI client and persona once.]] - rationale - chatbot/main.py
-- [[HTTPAuthorizationCredentials]] - code - chatbot/main.py
-- [[Isaiah Chat Service - Phase 3 MVP Minimal chat service with Isaiah's personality]] - rationale - chatbot/main.py
-- [[Load Isaiah's persona from IDENTITY, SOUL, and USER files.]] - rationale - chatbot/main.py
-- [[Process chat message with Isaiah's personality.]] - rationale - chatbot/main.py
-- [[Read the expected auth token from env or secrets.]] - rationale - chatbot/main.py
-- [[Request_2]] - code - chatbot/main.py
-- [[Require valid Bearer token for chat endpoints.      When CHATBOT_AUTH_TOKEN is n]] - rationale - chatbot/main.py
-- [[_get_auth_token()]] - code - chatbot/main.py
-- [[chat()]] - code - chatbot/main.py
-- [[lifespan()]] - code - chatbot/main.py
-- [[load_persona_files()]] - code - chatbot/main.py
-- [[main.py]] - code - chatbot/main.py
-- [[require_auth()]] - code - chatbot/main.py
+- [[4 Architectural Gaps (No Existing Module)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[AgentShroud v0.7.0 — Red Team Remediation Plan]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[Critical Finding]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[Implementation Notes]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[Loss Categories_2]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[Red Team Engagement Plan (Pending)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[Source]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[Sprint 1 Enforce-by-Default (R-02, R-03)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[Sprint 2 Outbound Information Filter (R-01)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[Sprint 3 Human-in-the-Loop (R-08, R-09)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[Sprint 4 Per-User Session Isolation (R-04, R-05)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[Sprint 5 Separation of Privilege (R-06, R-07)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[Sprint 6 Credential Isolation (R-10, R-11, R-12)]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[Tier 1 Must-Have (Deployment Blockers) — v0.7.0 Scope]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[Tier 2 Should-Have (Compliance Enablers) — v0.7.x or v0.8.0]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[Tier 3 Nice-to-Have — v0.9.0+]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[v0.6.0 → v0.7.0 Delta]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
+- [[v0.7.0-remediation-plan]] - document - docs/planning/redteam/v0.7.0-remediation-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,20 +33,3 @@ members: 17
 TABLE source_file, type FROM #community/chatbot/mainpy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_SOC Dashboard]]
-- 2 edges to [[_COMMUNITY_chatbottest_main.py]]
-- 1 edge to [[_COMMUNITY_chatbottest_main.py]]
-- 1 edge to [[_COMMUNITY_chatbottest_main.py]]
-- 1 edge to [[_COMMUNITY_chatbottest_main.py]]
-- 1 edge to [[_COMMUNITY_chatbottest_main.py]]
-- 1 edge to [[_COMMUNITY_chatbottest_main.py]]
-- 1 edge to [[_COMMUNITY_chatbottest_main.py]]
-
-## Top bridge nodes
-- [[chat()]] - degree 9, connects to 3 communities
-- [[main.py]] - degree 11, connects to 2 communities
-- [[lifespan()]] - degree 6, connects to 1 community
-- [[require_auth()]] - degree 6, connects to 1 community
-- [[_get_auth_token()]] - degree 5, connects to 1 community

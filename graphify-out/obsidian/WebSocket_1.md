@@ -1,25 +1,18 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Enhanced Approval Queue"
-location: "L487"
+community: "Bot Skill Config"
+location: "L344"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Enhanced_Approval_Queue
+  - graphify/EXTRACTED
+  - community/Bot_Skill_Config
 ---
 
 # WebSocket
 
 ## Connections
-- [[.connect()]] - `references` [EXTRACTED]
-- [[.disconnect()]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
-- [[ApprovalQueueItem]] - `uses` [INFERRED]
-- [[ApprovalRequest]] - `uses` [INFERRED]
-- [[ApprovalStore_1]] - `uses` [INFERRED]
-- [[MFAGuard_2]] - `uses` [INFERRED]
-- [[ToolRiskConfig_1]] - `uses` [INFERRED]
-- [[ToolRiskPolicy_1]] - `uses` [INFERRED]
+- [[.connect()_1]] - `references` [EXTRACTED]
+- [[.disconnect()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

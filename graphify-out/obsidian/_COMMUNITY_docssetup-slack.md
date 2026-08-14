@@ -1,18 +1,17 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+members: 4
 ---
 
 # docs/setup-slack.md
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[Slack Bot Tokens (xoxb-, xapp-)]] - concept - docs/setup-slack.md
-- [[Slack Channel Setup Guide]] - document - docs/setup-slack.md
-- [[Slack Socket Mode Architecture]] - concept - docs/setup-slack.md
+- [[Current Status_7]] - document - docs/requirements/README.md
+- [[Planned Documents_5]] - document - docs/requirements/README.md
+- [[README_88]] - document - docs/requirements/README.md
+- [[Requirements Documentation]] - document - docs/requirements/README.md
 
 ## Live Query (requires Dataview plugin)
 

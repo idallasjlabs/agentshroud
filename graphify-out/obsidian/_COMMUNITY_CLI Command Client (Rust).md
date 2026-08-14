@@ -1,31 +1,27 @@
 ---
 type: community
-cohesion: 0.06
-members: 95
+members: 92
 ---
 
 # CLI Command Client (Rust)
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 95 nodes
+**Members:** 92 nodes
 
 ## Members
 - [[.get()]] - code - cli/src/main.rs
 - [[.get()_1]] - code - cli/src/main.rs
-- [[.new()_1]] - code - cli/src/main.rs
 - [[.new()]] - code - cli/src/main.rs
+- [[.new()_1]] - code - cli/src/main.rs
 - [[.new()_2]] - code - cli/src/main.rs
 - [[.ok()]] - code - cli/src/main.rs
 - [[.post()]] - code - cli/src/main.rs
 - [[.post()_1]] - code - cli/src/main.rs
-- [[.request()_1]] - code - cli/src/main.rs
 - [[.request()]] - code - cli/src/main.rs
+- [[.request()_1]] - code - cli/src/main.rs
 - [[.with()]] - code - cli/src/main.rs
 - [[AddResource]] - code - cli/src/main.rs
 - [[ApprovalAction]] - code - cli/src/main.rs
-- [[Cli]] - code - cli/src/main.rs
 - [[Client]] - code - cli/src/main.rs
-- [[Commands]] - code - cli/src/main.rs
 - [[Commands_1]] - code - cli/src/main.rs
 - [[FakeTransport]] - code - cli/src/main.rs
 - [[GatewayClient]] - code - cli/src/main.rs
@@ -35,7 +31,6 @@ members: 95
 - [[HttpTransport]] - code - cli/src/main.rs
 - [[Method]] - code - cli/src/main.rs
 - [[Option]] - code - cli/src/main.rs
-- [[OutputFormat]] - code - cli/src/main.rs
 - [[OutputFormat_1]] - code - cli/src/main.rs
 - [[RefCell]] - code - cli/src/main.rs
 - [[ReqwestTransport]] - code - cli/src/main.rs
@@ -114,16 +109,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ESP32 Firmware]]
-- 2 edges to [[_COMMUNITY_CLI Client (Rust)]]
-- 2 edges to [[_COMMUNITY_ESP32 Firmware]]
-- 2 edges to [[_COMMUNITY_ESP32 Firmware]]
+- 2 edges to [[_COMMUNITY_Web Control Center]]
+- 2 edges to [[_COMMUNITY_docstesting]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_ESP32 Firmware]]
-- 1 edge to [[_COMMUNITY_ESP32 Firmware]]
-- 1 edge to [[_COMMUNITY_ESP32 Firmware]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_docsvault]]
+- 1 edge to [[_COMMUNITY_docsvault]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[String]] - degree 32, connects to 7 communities
-- [[main.rs]] - degree 74, connects to 1 community
+- [[String]] - degree 32, connects to 8 communities
+- [[main.rs]] - degree 74, connects to 2 communities
 - [[Result]] - degree 14, connects to 1 community

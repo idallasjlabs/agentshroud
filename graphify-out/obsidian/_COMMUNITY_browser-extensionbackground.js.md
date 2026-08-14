@@ -1,28 +1,27 @@
 ---
 type: community
-cohesion: 0.27
-members: 13
+members: 14
 ---
 
 # browser-extension/background.js
 
-**Cohesion:** 0.27 - loosely connected
-**Members:** 13 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[AgentShroudForwarder.buildClipPayload]] - code - browser-extension/lib/forwarder.js
-- [[AgentShroudForwarder.buildClipTarget]] - code - browser-extension/lib/forwarder.js
-- [[AgentShroudForwarder.buildUrlPayload]] - code - browser-extension/lib/forwarder.js
-- [[AgentShroudForwarder.postForward]] - code - browser-extension/lib/forwarder.js
-- [[AgentShroudForwarder.validateConfig]] - code - browser-extension/lib/forwarder.js
 - [[background.js]] - code - browser-extension/background.js
 - [[clipPage()]] - code - browser-extension/background.js
 - [[extractPageContent()]] - code - browser-extension/background.js
 - [[forwardUrl()]] - code - browser-extension/background.js
 - [[getActiveTab()]] - code - browser-extension/background.js
+- [[icon48.png — solid blue (2b6cff) placeholder icon, no logotext]] - image - browser-extension/icons/icon48.png
 - [[loadConfig()]] - code - browser-extension/background.js
 - [[notify()]] - code - browser-extension/background.js
+- [[popup.html (toolbar popup UI)]] - code - browser-extension/popup.html
+- [[popup.js]] - code - browser-extension/popup.js
 - [[reportResult()]] - code - browser-extension/background.js
+- [[send()]] - code - browser-extension/popup.js
+- [[setStatus()]] - code - browser-extension/popup.js
+- [[statusEl]] - code - browser-extension/popup.js
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,11 +31,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_browser-extensionpopup.js]]
-- 1 edge to [[_COMMUNITY_browser-extensionmanifest.json]]
-- 1 edge to [[_COMMUNITY_browser-extensionREADME]]
-- 1 edge to [[_COMMUNITY_browser-extensionoptions.js]]
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_docsvault]]
+- 1 edge to [[_COMMUNITY_Setup Docs]]
 
 ## Top bridge nodes
-- [[background.js]] - degree 11, connects to 3 communities
+- [[background.js]] - degree 11, connects to 2 communities
 - [[loadConfig()]] - degree 4, connects to 1 community

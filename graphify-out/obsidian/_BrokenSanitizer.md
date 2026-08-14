@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "SOC RBAC & Auth"
 location: "L376"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer_Pipeline
+  - community/SOC_RBAC__Auth
 ---
 
 # _BrokenSanitizer
 
 ## Connections
-- [[.sanitize()_3]] - `method` [EXTRACTED]
+- [[.sanitize()_2]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[CanaryTripwire]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
@@ -29,4 +29,4 @@ tags:
 - [[test_pipeline_fails_closed_on_enhanced_sanitizer_error()]] - `calls` [EXTRACTED]
 - [[test_pipeline_owner_exempt_from_fail_closed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/INFERRED #community/SOC_RBAC__Auth

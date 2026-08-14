@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
+community: "Architecture Docs"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
+  - community/Architecture_Docs
 ---
 
 # Why This Rule?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎯 The Ultra-Conservative Approach]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

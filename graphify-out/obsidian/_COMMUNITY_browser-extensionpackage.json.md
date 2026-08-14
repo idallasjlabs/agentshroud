@@ -1,29 +1,28 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+members: 15
 ---
 
 # browser-extension/package.json
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[collectCoverageFrom]] - code - browser-extension/package.json
-- [[description_1]] - code - browser-extension/package.json
-- [[devDependencies]] - code - browser-extension/package.json
-- [[jest]] - code - browser-extension/package.json
-- [[jest_1]] - code - browser-extension/package.json
-- [[license]] - code - browser-extension/package.json
-- [[name_1]] - code - browser-extension/package.json
-- [[package.json]] - code - browser-extension/package.json
-- [[private]] - code - browser-extension/package.json
-- [[scripts]] - code - browser-extension/package.json
-- [[test]] - code - browser-extension/package.json
-- [[testcoverage]] - code - browser-extension/package.json
-- [[testEnvironment]] - code - browser-extension/package.json
-- [[version_3]] - code - browser-extension/package.json
+- [[API Keys]] - document - docker/scripts/README.md
+- [[Container Management]] - document - docker/scripts/README.md
+- [[Direct Docker Commands]] - document - docker/scripts/README.md
+- [[File Locations_1]] - document - docker/scripts/README.md
+- [[OpenClaw CLI]] - document - docker/scripts/README.md
+- [[OpenClaw Management Scripts]] - document - docker/scripts/README.md
+- [[Quick Reference_2]] - document - docker/scripts/README.md
+- [[README_79]] - document - docker/scripts/README.md
+- [[Security Notes]] - document - docker/scripts/README.md
+- [[check-status.sh_1]] - document - docker/scripts/README.md
+- [[devices.sh_1]] - document - docker/scripts/README.md
+- [[logs.sh_1]] - document - docker/scripts/README.md
+- [[restart.sh_1]] - document - docker/scripts/README.md
+- [[set-model.sh_1]] - document - docker/scripts/README.md
+- [[telegram.sh_1]] - document - docker/scripts/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +30,10 @@ members: 14
 TABLE source_file, type FROM #community/browser-extension/packagejson
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_docsgovernance]]
+
+## Top bridge nodes
+- [[OpenClaw Management Scripts]] - degree 13, connects to 2 communities

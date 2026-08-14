@@ -1,19 +1,19 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+members: 6
 ---
 
 # branding/colors
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Members:** 6 nodes
 
 ## Members
-- [[Deep Navy]] - document - branding/colors/palette.md
-- [[Ice Blue]] - document - branding/colors/palette.md
-- [[Secondary Colors]] - document - branding/colors/palette.md
-- [[Steel Blue]] - document - branding/colors/palette.md
+- [[AgentShroud Sequence Diagrams (doc)]] - document - docs/flows/sequence-diagrams.md
+- [[Diagram 15 Sequence — Telegram]] - image - docs/diagrams/images/diagram-15-sequence-telegram.svg
+- [[Kill Switch Activation Flow (SOFT_KILL, HARD_KILL, PANIC)]] - concept - docs/flows/sequence-diagrams.md
+- [[Normal Message Flow (User - Gateway - Sanitizer - Audit - OpenClaw - Audit - User)]] - concept - docs/flows/sequence-diagrams.md
+- [[SSH Command Flow (injection check, approval queue, executor, audit)]] - concept - docs/flows/sequence-diagrams.md
+- [[Web Fetch Flow (URL analysis, SSRF protection, content scanning)]] - concept - docs/flows/sequence-diagrams.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +21,3 @@ members: 4
 TABLE source_file, type FROM #community/branding/colors
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_brandingcolors]]
-
-## Top bridge nodes
-- [[Secondary Colors]] - degree 4, connects to 1 community

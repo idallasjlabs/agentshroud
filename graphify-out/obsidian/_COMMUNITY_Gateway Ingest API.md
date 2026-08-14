@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Gateway Ingest API
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_6]] - code - gateway/ingest_api/routes/__init__.py
+- [[Data Flow Diagram (TelegramiMessageWebCron → Bot → Gateway PIIAuditApproval → Egress)]] - document - docs/diagrams/03-data.md
 
 ## Live Query (requires Dataview plugin)
 

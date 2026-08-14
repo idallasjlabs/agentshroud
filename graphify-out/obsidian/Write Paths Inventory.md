@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Test Suite"
 location: "L479"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Write Paths Inventory
@@ -16,4 +16,4 @@ tags:
 - [[Development Workflow Read-Only Filesystem Strategy]] - `contains` [EXTRACTED]
 - [[Potentially Needed (Discovered During Testing)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

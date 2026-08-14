@@ -1,234 +1,176 @@
 ---
 type: community
-cohesion: 0.02
-members: 219
+members: 163
 ---
 
 # Collaborator Prompt Classifiers
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 219 nodes
+**Members:** 163 nodes
 
 ## Members
-- [[._active_bot_id()]] - code - gateway/proxy/telegram_proxy.py
-- [[._apply_outbound_model_error_rewrites()]] - code - gateway/proxy/telegram_proxy.py
-- [[._apply_outbound_status_notices()]] - code - gateway/proxy/telegram_proxy.py
-- [[._bot_is_mentioned()]] - code - gateway/proxy/telegram_proxy.py
-- [[._build_ack_only_updates()]] - code - gateway/proxy/telegram_proxy.py
-- [[._build_collaborator_safe_info_response()]] - code - gateway/proxy/telegram_proxy.py
-- [[._check_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
-- [[._collaborator_safe_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_critical_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_high_risk_collaborator_leakage()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_internal_approval_banner()]] - code - gateway/proxy/telegram_proxy.py
-- [[._contains_legacy_block_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._emit_quarantine_event()]] - code - gateway/proxy/telegram_proxy.py
-- [[._enforce_group_workspace_access()]] - code - gateway/proxy/telegram_proxy.py
-- [[._extract_embedded_tool_call_json()]] - code - gateway/proxy/telegram_proxy.py
-- [[._extract_first_egress_target()]] - code - gateway/proxy/telegram_proxy.py
-- [[._extract_owner_target()]] - code - gateway/proxy/telegram_proxy.py
-- [[._extract_owner_target_resolved()]] - code - gateway/proxy/telegram_proxy.py
-- [[._filter_inbound_updates()]] - code - gateway/proxy/telegram_proxy.py
-- [[._filter_outbound()_1]] - code - gateway/proxy/telegram_proxy.py
-- [[._filter_outbound_multipart()]] - code - gateway/proxy/telegram_proxy.py
-- [[._forward_file_download()]] - code - gateway/proxy/telegram_proxy.py
-- [[._get_user_projects()]] - code - gateway/proxy/telegram_proxy.py
-- [[._group_workspace_manager()]] - code - gateway/proxy/telegram_proxy.py
-- [[._handle_outbound_tool_calls()]] - code - gateway/proxy/telegram_proxy.py
-- [[._html_tags_balanced()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_group_message()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_immune()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_no_reply_token()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_owner_chat()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_suppressed_outbound_payload()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_valid_domain_name()]] - code - gateway/proxy/telegram_proxy.py
-- [[._is_within_project_scope()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_allowlist_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_approval_action_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_approval_queue_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_approval_token_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_archive_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_collaborator_privacy_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_command_enumeration_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_cross_tenant_data_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_cross_user_messaging_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_encoded_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_env_secret_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_execution_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_file_metadata_question()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_file_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_filename_reference()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_guardrail_modification_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_hidden_channel_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_hypothetical_execution_question()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_identity_enumeration_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_incremental_exfil_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_internal_network_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_log_access_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_memory_access_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_metadata_endpoint_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_model_status_question()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_model_switch_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_obfuscated_command_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_pairing_or_access_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_path_traversal_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_plugin_discovery_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_policy_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_safe_collaborator_info_query()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_scheduler_or_autorun_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_secret_value_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_sensitive_path_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_service_control_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_system_prompt_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_tool_payload_text()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_tool_trace_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_unicode_obfuscation_bypass_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_unsafe_scheme_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._looks_like_web_access_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[._matches_presence_probe()]] - code - gateway/proxy/telegram_proxy.py
-- [[._mirror_to_owner_if_collaborator()]] - code - gateway/proxy/telegram_proxy.py
-- [[._multipart_boundary()]] - code - gateway/proxy/telegram_proxy.py
-- [[._multipart_get_field()]] - code - gateway/proxy/telegram_proxy.py
-- [[._multipart_replace_field()]] - code - gateway/proxy/telegram_proxy.py
-- [[._normalize_command_token()]] - code - gateway/proxy/telegram_proxy.py
-- [[._notify_collaborator_command_blocked()]] - code - gateway/proxy/telegram_proxy.py
-- [[._notify_user_blocked()]] - code - gateway/proxy/telegram_proxy.py
-- [[._parse_tool_call_json()]] - code - gateway/proxy/telegram_proxy.py
-- [[._proxy_request_impl()]] - code - gateway/proxy/telegram_proxy.py
-- [[._quarantine_blocked_message()]] - code - gateway/proxy/telegram_proxy.py
-- [[._quarantine_outbound_block()]] - code - gateway/proxy/telegram_proxy.py
-- [[._redact_owner_ids()]] - code - gateway/proxy/telegram_proxy.py
-- [[._resolve_collaborator_mode()]] - code - gateway/proxy/telegram_proxy.py
-- [[._resolve_pending_username_target()]] - code - gateway/proxy/telegram_proxy.py
-- [[._resolve_text_field()]] - code - gateway/proxy/telegram_proxy.py
-- [[._rewrite_known_runtime_errors()]] - code - gateway/proxy/telegram_proxy.py
-- [[._sanitize_reason()]] - code - gateway/proxy/telegram_proxy.py
-- [[._scan_outbound_text()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_collaborator_safe_info_response()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_disclosure()]] - code - gateway/proxy/telegram_proxy.py
-- [[._send_telegram_text()]] - code - gateway/proxy/telegram_proxy.py
-- [[._set_outbound_block_cascade()]] - code - gateway/proxy/telegram_proxy.py
-- [[._strip_collaborator_html_markup()]] - code - gateway/proxy/telegram_proxy.py
-- [[._strip_json_fence()]] - code - gateway/proxy/telegram_proxy.py
-- [[._suppress_duplicate_system_notice()]] - code - gateway/proxy/telegram_proxy.py
-- [[._teams_config()]] - code - gateway/proxy/telegram_proxy.py
-- [[._trigger_web_fetch_approval()]] - code - gateway/proxy/telegram_proxy.py
-- [[._trigger_web_search_log()]] - code - gateway/proxy/telegram_proxy.py
-- [[._username_for_bot()]] - code - gateway/proxy/telegram_proxy.py
-- [[.get_stats()_9]] - code - gateway/proxy/telegram_proxy.py
-- [[.proxy_request()]] - code - gateway/proxy/telegram_proxy.py
-- [[.test_url_encoded_payload_normalized()]] - code - gateway/tests/test_adversarial_injection.py
-- [[.test_zero_width_space_stripped()]] - code - gateway/tests/test_adversarial_injection.py
-- [[Activate per-chat cascade window to prevent streaming-fragment leak-through.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Allow conceptual securityprocess questions that don't request executiondata ac]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Any_20]] - code - gateway/proxy/telegram_proxy.py
-- [[Best-effort Telegram sender with bounded retries.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Best-effort async event emission for quarantine actions.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Best-effort check to avoid treating local file names as egress domains.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Best-effort guardrail collaborator prompts requesting direct file access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Build a GroupWorkspaceManager from current teamsRBAC config.          Returns a]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Build informative but non-sensitive response for collaborator conceptual questio]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Concise collaborator-safe reason text without internal leakage.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Core outbound security scan shared by JSON, form, and multipart branches.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect chunkedpartial extraction prompts intended to bypass output controls.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator probes asking for direct commandtool inventories.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts asking about other userssessionsidentities.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts asking for raw secrettokenpassword values.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts asking to bypass controls via unicodeinvisible tric]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts asking to bypassdisable approvals or protections.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts asking to decodedeobfuscate and execute commands.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting cross-tenantworkspace data access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting ownercollaborator identity disclosure.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting path traversal style file access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting scheduledautomatic task execution.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting securityconfig guardrail changes.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting servicecontainer lifecycle control.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts attempting to approvedeny queued actions.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts probing sensitive filesystem pathssecrets.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting archivebulk export of internal content.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting direct memory contentsearch access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting direct systemaudit log contents.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting environment variablesecret listings.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting external webnetwork fetch behavior.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting pairingaccess bootstrap artifacts.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting plugintool auto-discovery inventory.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting raw tool tracesargumentsresults.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts requesting system promptagent instruction leakage.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts targeting cloud metadata endpoints.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts targeting localinternal network hosts.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts trying to bypass domain allowlistegress policy.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts trying to inspect approval queue internalsmetadata.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts trying to obtaincraft approval callback tokens.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator prompts trying to switch runtime modelprovider configuratio]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator requests to run commands or perform direct execution.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect collaborator requests using disallowed URL schemes.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect conceptual file-purpose questions without direct content requests.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect internal approvalegress banner text that must remain owner-only.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect leakage patterns blocked for local_onlyproject_scoped collaborators.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect legacy bracket-style block notices for collaborator normalization.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect patterns that must redact for ALL non-owner chats, including full_access.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect plain NO_REPLY sentinel with light punctuation wrapping.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect plain-language model status questions for deterministic local reply.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect policy questions about execution behavior (not actual execution asks).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect rawembedded tool payload text in user input.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect requests to encode sensitiveinternal content for exfiltration.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Detect requests to extract hidden-channel content from sensitiveinternal source]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Extract a non-file text field value from a multipartform-data body.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Extract first outbound web target (URL or bare domain) for egress preflight.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Extract the boundary token from a multipart Content-Type header.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Fail-closed member check for a group-context inbound message.          Returns T]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Filter multipartform-data outbound bodies (sendPhotosendDocument).          Te]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Filter outbound bot messages (sendMessage, etc.).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Find first embedded tool-call JSON object inside arbitrary text.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Forward a Telegram file download and return a raw-binary sentinel dict.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Intercept leaked raw tool-call JSON in outbound text.          Shared by the JSO]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Log a web_search egress event with user attribution when raw JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Map internal statuspolicy texts to user-safe replacement notices.          Pure]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Map recurring runtimeprovider failures to deterministic operator guidance.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Normalize first command token so small obfuscations don't bypass local handlers.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Normalize input text to defeat encoding-based evasion.      Applied before all s]] - rationale - gateway/security/input_normalizer.py
-- [[Notify a collaborator that a privileged command is not available.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Parse leaked model tool-call JSON blobs (e.g. {'name' 'NO_REPLY', ...}).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Parse owner command target as numeric id or known collaborator alias.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Per-request bot_id for activity tracking.          Returns the bot_id set by pro]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Persist blocked inbound messages for admin review.          Also records the blo]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Persist blocked outbound messages for admin review.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Proxies Telegram Bot API calls through the security pipeline.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Proxy a single Telegram API request.          For getUpdates responses scan eac]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Queue an interactive egress approval when raw web_fetch JSON leaks.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Redact the owner's Telegram user ID from collaborator-bound text.          Strip]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Remove Telegram HTML formatting tags from collaborator outbound text.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Replace a non-file text field value in a multipartform-data body.          Only]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve effective collaboration mode for a user.          Resolution order]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve owner target from pending-request username aliases (e.g., approve ana).]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Resolve target by id, static alias, or pending username alias.          Resoluti]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return (field_name, text_value) for Telegram-style outbound payloads.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return TeamsConfig from app_state if available.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True if message originates from a group or supergroup chat.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True if text has any keyword overlap with the user's project focus_topics]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True if the bot is @mentioned or a bot_command targets this bot.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True if user_id has active (non-expired) immunity.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True only when every Telegram-supported HTML open tag has a matching clos]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True when ``text`` is a bare liveness-check phrase.          Strips a lea]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return True when chat_id belongs to the configured owner.          Handles both]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return a safe-notice replacement when protected content would leak.          Cri]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return list of ProjectConfig objects for this user, or empty list.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return minimal getUpdates payload entries containing only update_id.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Return the @username (without @) for the given bot_id.          Looks up ``_bot_]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Rewrite raw modelruntime error texts to actionable user-facing messages.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Scan inbound messages from getUpdates for security threats.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send a rate-limited activity mirror to the owner chat for collaborator messages.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send a user-friendly notification when a message is blocked.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send tailored safe informational response for collaborator conceptual query.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Send the one-time collaborator disclosure notice.          Picks the appropriate]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Strip internal paths and module names from block reasons before user display.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Strip optional markdown json fences around model output.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Suppress repeated startupshutdown system notices in short windows.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[TelegramAPIProxy]] - code - gateway/proxy/telegram_proxy.py
-- [[Thin wrapper sets per-request bot identity in contextvars so local replies]] - rationale - gateway/proxy/telegram_proxy.py
-- [[True when filtered payload should be dropped instead of forwarded.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[Validate normalized domain labels to avoid malformed allowlist entries.]] - rationale - gateway/proxy/telegram_proxy.py
-- [[normalize_input()]] - code - gateway/security/input_normalizer.py
+- [[.__init__()_2]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.__init__()_5]] - code - gateway/approval_queue/store.py
+- [[._notify_telegram()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[._schedule_timeout()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[._timeout_request()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.broadcast()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.close()_2]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.close()_3]] - code - gateway/approval_queue/store.py
+- [[.connect()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.decide()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.disconnect()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.get_item()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.get_pending()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.get_policy_for_tier()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.get_tool_risk_tier()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.initialize()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.initialize()_1]] - code - gateway/approval_queue/store.py
+- [[.load_all()]] - code - gateway/approval_queue/store.py
+- [[.load_pending()]] - code - gateway/approval_queue/store.py
+- [[.requires_approval()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.save()]] - code - gateway/approval_queue/store.py
+- [[.submit()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.submit_tool_request()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[.test_100_concurrent_submissions()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_concurrent_submit_and_decide()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_critical_tool_approval_flow()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.test_critical_tool_denial_flow()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.test_critical_tool_requires_approval()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.test_double_decide_raises()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_enforce_mode_disabled()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.test_expired_request_cannot_be_decided()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_get_pending_expires_stale()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_get_tool_risk_tier()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.test_low_risk_tool_no_approval()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.test_requires_approval()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.test_restart_recovery_preserves_timeout_action()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.test_restore_pending_items()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.test_store_expires_old_items()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_store_persists_across_reopen()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_store_save_and_load()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_store_update_status()]] - code - gateway/tests/test_approval_stress.py
+- [[.test_timeout_auto_deny()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.test_wait_for_decision()]] - code - gateway/tests/test_enhanced_approval.py
+- [[.update_status()]] - code - gateway/approval_queue/store.py
+- [[.wait_for_decision()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[100 concurrent approval requests.]] - rationale - gateway/tests/test_approval_stress.py
+- [[A pending approval request in the queue]] - rationale - gateway/ingest_api/models.py
+- [[Accept a WebSocket connection and add to connected set.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Add an action to the approval queue with policy-based timeout.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Any]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalQueueConfig]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalQueueItem]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalQueueItem_2]] - code - gateway/approval_queue/store.py
+- [[ApprovalQueueItem_3]] - code - gateway/ingest_api/models.py
+- [[ApprovalQueueItem_4]] - code - gateway/tests/test_approval_store.py
+- [[ApprovalRequest]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalRequest_3]] - code - gateway/ingest_api/models.py
+- [[ApprovalStore]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ApprovalStore_1]] - code - gateway/approval_queue/store.py
+- [[AuditStore same idempotency contract as ApprovalStore.]] - rationale - gateway/tests/test_approval_store.py
+- [[Auto-expire old requests.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Build a REAL EnhancedApprovalQueue with a default ToolRiskConfig.      The defau]] - rationale - gateway/tests/test_mcp_policy.py
+- [[Check if a tool requires approval based on risk tier and policy.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Close the database connection.]] - rationale - gateway/approval_queue/store.py
+- [[Close the store and cancel timeout tasks.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Create a temporary SQLite store for testing.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Create a test tool risk configuration.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Create an enhanced approval queue for testing.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Deciding an item persists the new status.]] - rationale - gateway/tests/test_approval_store.py
+- [[Deciding on already-decided request raises ValueError.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Enhanced approval queue with enforce mode and tool risk tiers.      Features]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[EnhancedApprovalQueue]] - code - gateway/approval_queue/enhanced_queue.py
+- [[EnhancedApprovalQueue_2]] - code - gateway/tests/test_mfa_guard.py
+- [[Expired items are marked expired during load_pending.]] - rationale - gateway/tests/test_approval_store.py
+- [[Expired request raises ValueError on decide.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Fetch a single queue item by ID.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Get all pending approval items.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Get the policy for a risk tier.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Get the risk tier for a tool.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Handle timeout for a pending request.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Initialize enhanced approval queue.          Args             config Basic app]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Initialize the store and restore pending items.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Insert or replace an approval item.]] - rationale - gateway/approval_queue/store.py
+- [[Items saved by one store instance are visible to another.]] - rationale - gateway/tests/test_approval_store.py
+- [[Items saved to store can be reloaded.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Items survive store closereopen cycle.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Load all items (for auditdebugging).]] - rationale - gateway/approval_queue/store.py
+- [[Load all pending (non-expired, non-decided) items.          Items whose expires_]] - rationale - gateway/approval_queue/store.py
+- [[MFAGuard]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Open the database and create the schema. Idempotent a second call         must]] - rationale - gateway/approval_queue/store.py
+- [[Path]] - code - gateway/approval_queue/store.py
+- [[Path_24]] - code - gateway/tests/test_approval_store.py
+- [[Process an approval decision.          IEC 62443 FR1 approving a high-risk acti]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Queue persistence across restart.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c]] - rationale - gateway/tests/test_approval_store.py
+- [[Remove a WebSocket connection from connected set.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Request for human approval of a sensitive action      Submitted by an agent when]] - rationale - gateway/ingest_api/models.py
+- [[Risk policy configuration for a tool tier]] - rationale - gateway/ingest_api/config.py
+- [[SCRUM-110 restart recovery must reschedule the timeout with the         item's]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[SQLite-backed persistence for approval queue items.]] - rationale - gateway/approval_queue/store.py
+- [[Schedule a timeout task for a request.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Send Telegram notification for approval requests.          Sends a formatted mes]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Send a JSON message to all connected WebSocket clients.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Simulates a full restart cycle save, close, reopen, verify.]] - rationale - gateway/tests/test_approval_store.py
+- [[Status updates persist.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Store marks expired items on load.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Submit 100 requests concurrently — all should succeed.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Submit a tool call request for approval.          Args             tool_name T]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Submit and decide requests concurrently.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Test MCP proxy integration with approval queue.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test SQLite persistence across restarts.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test approval requirement logic.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test denial flow for critical tool.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test full approval flow for critical tool.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test risk tier lookup.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that approval events are generated for WebSocket notification.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that approval is bypassed when enforce mode is disabled.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that critical tools are identified as requiring approval.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that low-risk tools don't require approval.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test that pending items are restored after restart.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test the complete approval workflow.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test timeout with auto-deny.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test tool risk tier classification.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[Test waiting for approval decision.]] - rationale - gateway/tests/test_enhanced_approval.py
+- [[TestApprovalStorePersistence]] - code - gateway/tests/test_approval_stress.py
+- [[TestApprovalTimeout]] - code - gateway/tests/test_approval_stress.py
+- [[TestApprovalWorkflow]] - code - gateway/tests/test_enhanced_approval.py
+- [[TestAutoExpire]] - code - gateway/tests/test_approval_stress.py
+- [[TestConcurrentApprovalRequests]] - code - gateway/tests/test_approval_stress.py
+- [[TestMCPProxyIntegration]] - code - gateway/tests/test_enhanced_approval.py
+- [[TestPersistence]] - code - gateway/tests/test_enhanced_approval.py
+- [[TestToolRiskClassification]] - code - gateway/tests/test_enhanced_approval.py
+- [[Timeout handling for approval requests.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Tool risk tier configuration]] - rationale - gateway/ingest_api/config.py
+- [[ToolRiskConfig]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ToolRiskConfig_1]] - code - gateway/ingest_api/config.py
+- [[ToolRiskPolicy]] - code - gateway/approval_queue/enhanced_queue.py
+- [[ToolRiskPolicy_1]] - code - gateway/ingest_api/config.py
+- [[Update the status of an existing item.]] - rationale - gateway/approval_queue/store.py
+- [[Wait for an approval decision.          Returns             True if approved, F]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[WebSocket]] - code - gateway/approval_queue/enhanced_queue.py
+- [[_make_item()]] - code - gateway/tests/test_approval_store.py
+- [[_real_queue()]] - code - gateway/tests/test_mcp_policy.py
+- [[enhanced_mfa_queue()]] - code - gateway/tests/test_mfa_guard.py
+- [[enhanced_queue()]] - code - gateway/tests/test_enhanced_approval.py
+- [[enhanced_queue.py]] - code - gateway/approval_queue/enhanced_queue.py
+- [[get_pending should expire stale items.]] - rationale - gateway/tests/test_approval_stress.py
+- [[store()]] - code - gateway/tests/test_approval_store.py
+- [[store()_1]] - code - gateway/tests/test_approval_stress.py
+- [[store.py]] - code - gateway/approval_queue/store.py
+- [[temp_store()]] - code - gateway/tests/test_enhanced_approval.py
+- [[test_approval_store.py]] - code - gateway/tests/test_approval_store.py
+- [[test_approval_stress.py]] - code - gateway/tests/test_approval_stress.py
+- [[test_audit_store_initialize_is_idempotent()]] - code - gateway/tests/test_approval_store.py
+- [[test_decide_persists()]] - code - gateway/tests/test_approval_store.py
+- [[test_enhanced_approval.py]] - code - gateway/tests/test_enhanced_approval.py
+- [[test_enhanced_tool_call_medium_not_gated()]] - code - gateway/tests/test_mfa_guard.py
+- [[test_expired_items_on_reload()]] - code - gateway/tests/test_approval_store.py
+- [[test_initialize_is_idempotent()]] - code - gateway/tests/test_approval_store.py
+- [[test_persist_and_reload()]] - code - gateway/tests/test_approval_store.py
+- [[test_store_survives_restart()]] - code - gateway/tests/test_approval_store.py
+- [[test_websocket_notifications()]] - code - gateway/tests/test_enhanced_approval.py
+- [[tool_risk_config()]] - code - gateway/tests/test_enhanced_approval.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -238,52 +180,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 36 edges to [[_COMMUNITY_Gateway Proxy Layer]]
-- 18 edges to [[_COMMUNITY_Collaborator Response Templates]]
-- 14 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 12 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 11 edges to [[_COMMUNITY_Security Pipeline Core]]
-- 9 edges to [[_COMMUNITY_LLM Proxy Resource Guard]]
-- 9 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
-- 8 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 8 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 6 edges to [[_COMMUNITY_Auth & Exception Types]]
-- 6 edges to [[_COMMUNITY_Telegram Inbound Tests]]
-- 5 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 4 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
+- 38 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
+- 33 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 23 edges to [[_COMMUNITY_PII Sanitizer Pipeline]]
+- 19 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 17 edges to [[_COMMUNITY_Gateway Security Module]]
+- 16 edges to [[_COMMUNITY_PromptGuard Encoding Detection]]
+- 16 edges to [[_COMMUNITY_Egress Domain Allowlist]]
+- 10 edges to [[_COMMUNITY_Slack API Proxy]]
 - 4 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 3 edges to [[_COMMUNITY_Approval & FastAPI Ingest]]
-- 3 edges to [[_COMMUNITY_Slack API Proxy]]
-- 3 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_Egress & RBAC Security Core]]
+- 4 edges to [[_COMMUNITY_Telegram Inbound Tests]]
+- 3 edges to [[_COMMUNITY_Competitive Intel Store]]
+- 3 edges to [[_COMMUNITY_scriptssync-cve-registry.py]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_PromptGuard Encoding Detection]]
-- 1 edge to [[_COMMUNITY_Gateway Security Module]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Collaborator Prompt Safety]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Forward Routing & Approval]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 - 1 edge to [[_COMMUNITY_Gateway Security Module]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Security Module]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Security Module]]
+- 1 edge to [[_COMMUNITY_Tool Chain Analyzer]]
 
 ## Top bridge nodes
-- [[TelegramAPIProxy]] - degree 242, connects to 35 communities
-- [[normalize_input()]] - degree 79, connects to 7 communities
-- [[._filter_inbound_updates()]] - degree 85, connects to 5 communities
-- [[Any_20]] - degree 17, connects to 5 communities
-- [[._send_telegram_text()]] - degree 11, connects to 2 communities
+- [[ApprovalRequest_3]] - degree 89, connects to 7 communities
+- [[enhanced_queue.py]] - degree 16, connects to 7 communities
+- [[ToolRiskConfig_1]] - degree 35, connects to 6 communities
+- [[EnhancedApprovalQueue]] - degree 51, connects to 5 communities
+- [[ToolRiskPolicy_1]] - degree 23, connects to 4 communities

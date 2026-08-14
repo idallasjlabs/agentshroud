@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Security Docs"
+community: "skills/openclaw"
 location: "L307"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/skills/openclaw
 ---
 
 # What Should You Do Next?
@@ -17,4 +17,4 @@ tags:
 - [[Option B Full Vision (All Phase 3+ Features)]] - `contains` [EXTRACTED]
 - [[Option C Abandon AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

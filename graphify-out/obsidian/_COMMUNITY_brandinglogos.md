@@ -1,38 +1,38 @@
 ---
 type: community
-cohesion: 0.12
-members: 23
+members: 25
 ---
 
 # branding/logos
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 23 nodes
+**Members:** 25 nodes
 
 ## Members
-- [[AgentShroud Apple Touch Icon]] - image - branding/favicons/apple-touch-icon.png
-- [[AgentShroud Badge 180x180]] - image - branding/logos/variants/badge-180x180.png
-- [[AgentShroud Badge 60x60]] - image - branding/logos/variants/badge-60x60.png
-- [[AgentShroud Brand Mockup (Merchandise)]] - image - branding/agentshroud-mockup.png
-- [[AgentShroud Brand Mockup (T-shirt, Notebook, Business Cards)]] - image - branding/logos/png/logo-mockup.png
-- [[AgentShroud Content Slide Template (1920x1080)]] - image - branding/presentation/content-slide-template-1920x1080.png
-- [[AgentShroud Email Banner (600x150)]] - image - branding/email/email-banner-600x150.png
-- [[AgentShroud Favicon 128x128]] - image - branding/favicons/favicon-128x128.png
-- [[AgentShroud Favicon 16x16]] - image - branding/favicons/favicon-16x16.png
-- [[AgentShroud Favicon 256x256]] - image - branding/favicons/favicon-256x256.png
-- [[AgentShroud Favicon 32x32]] - image - branding/favicons/favicon-32x32.png
-- [[AgentShroud GitHub Social Preview (1280x640)]] - image - branding/social/github-social-preview-1280x640.png
-- [[AgentShroud LinkedIn Banner (1584x396)]] - image - branding/social/linkedin-banner-1584x396.png
-- [[AgentShroud LinkedIn Profile Photo (400x400)]] - image - branding/social/linkedin-profile-400x400.png
-- [[AgentShroud Logo (Light Background)]] - image - branding/agentshroud-logo-light-bg.png
-- [[AgentShroud Logo PNG (Dark Background)]] - image - branding/logos/png/logo.png
-- [[AgentShroud Logo SVG]] - image - branding/logos/svg/logo.svg
-- [[AgentShroud Logo Transparent Background]] - image - branding/logos/png/logo-transparent.png
-- [[AgentShroud Open Graph Image (1200x630)]] - image - branding/social/open-graph-1200x630.png
-- [[AgentShroud Primary Logo (Dark Background)]] - image - branding/logo.png
-- [[AgentShroud Telegram Bot Avatar (512x512)]] - image - branding/social/telegram-avatar-512x512.png
-- [[AgentShroud Title Slide (1920x1080)]] - image - branding/presentation/title-slide-1920x1080.png
-- [[Trust Manager Module Icon (256x256)]] - image - branding/icons/modules/trust-manager-256x256.png
+- [[.test_all_modules_have_copyright()]] - code - gateway/tests/test_security_audit.py
+- [[.test_format_report_string()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_generate_report()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_history_persistence()]] - code - gateway/tests/test_security_toolchain.py
+- [[.test_no_eval_or_exec_in_security()]] - code - gateway/tests/test_security_audit.py
+- [[.test_no_hardcoded_secrets_in_source()]] - code - gateway/tests/test_security_audit.py
+- [[.test_trend_empty_db()]] - code - gateway/tests/test_security_toolchain.py
+- [[All security modules should have copyright header.]] - rationale - gateway/tests/test_security_audit.py
+- [[Any_41]] - code - gateway/security/health_report.py
+- [[Connection]] - code - gateway/security/health_report.py
+- [[Format a health report as a human-readable string.      Args         report Fu]] - rationale - gateway/security/health_report.py
+- [[Generate a full health report.      Args         summaries Dict mapping tool n]] - rationale - gateway/security/health_report.py
+- [[Get score trend for the last N days.      Args         days Number of days to]] - rationale - gateway/security/health_report.py
+- [[Initialize the SQLite database for history tracking.      Args         db_path]] - rationale - gateway/security/health_report.py
+- [[No hardcoded secrets in Python source files.]] - rationale - gateway/tests/test_security_audit.py
+- [[Path_13]] - code - gateway/security/health_report.py
+- [[Save a health report to history.      Args         score Overall score.]] - rationale - gateway/security/health_report.py
+- [[Security modules should not call eval() or exec().          Uses AST analysis]] - rationale - gateway/tests/test_security_audit.py
+- [[TestHealthReport]] - code - gateway/tests/test_security_toolchain.py
+- [[format_report()]] - code - gateway/security/health_report.py
+- [[generate_report()]] - code - gateway/security/health_report.py
+- [[get_trend()]] - code - gateway/security/health_report.py
+- [[health_report.py]] - code - gateway/security/health_report.py
+- [[init_db()]] - code - gateway/security/health_report.py
+- [[save_to_history()]] - code - gateway/security/health_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,3 +40,18 @@ members: 23
 TABLE source_file, type FROM #community/branding/logos
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 5 edges to [[_COMMUNITY_Planning Docs]]
+- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 4 edges to [[_COMMUNITY_Auth & Exception Types]]
+- 4 edges to [[_COMMUNITY_Security Docs]]
+- 3 edges to [[_COMMUNITY_Bot Skill Config]]
+- 1 edge to [[_COMMUNITY_Slack API Proxy]]
+
+## Top bridge nodes
+- [[health_report.py]] - degree 10, connects to 4 communities
+- [[generate_report()]] - degree 12, connects to 3 communities
+- [[Any_41]] - degree 6, connects to 2 communities
+- [[TestHealthReport]] - degree 6, connects to 2 communities
+- [[Path_13]] - degree 10, connects to 1 community

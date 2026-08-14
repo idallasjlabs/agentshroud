@@ -1,16 +1,15 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # docs/index.html
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Website Voice Terminal (ESP32-S3-BOX-3) Section]] - document - docs/index.html
+- [[.test_proxy_request_duplicate_no_reply_messages_return_deterministic_reply()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Repeated NO_REPLY payloads should still return deterministic non-empty replies.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,3 +17,11 @@ members: 1
 TABLE source_file, type FROM #community/docs/indexhtml
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_ESP32 Firmware]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_docsvault]]
+
+## Top bridge nodes
+- [[.test_proxy_request_duplicate_no_reply_messages_return_deterministic_reply()]] - degree 4, connects to 3 communities

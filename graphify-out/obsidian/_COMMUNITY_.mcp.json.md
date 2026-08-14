@@ -1,28 +1,27 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+members: 14
 ---
 
 # .mcp.json
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[AWS API MCP Server (readonly)]] - document - .mcp.json
-- [[AgentShroud MCP Server Registry]] - document - .mcp.json
-- [[Atlassian MCP Server (agentshroud)]] - document - .mcp.json
-- [[Atlassian MCP Server (fluence)]] - document - .mcp.json
-- [[Atlassian MCP Server (idallasj)]] - document - .mcp.json
-- [[DEVONthink MCP Server]] - document - .mcp.json
-- [[GitHub MCP Server (agentshroud identity)]] - document - .mcp.json
-- [[GitHub MCP Server (default)]] - document - .mcp.json
-- [[GitHub MCP Server (fluence identity)]] - document - .mcp.json
-- [[GitHub MCP Server (idallasj identity)]] - document - .mcp.json
-- [[Home Assistant MCP Server]] - document - .mcp.json
-- [[Safari MCP Server]] - document - .mcp.json
-- [[XMind MCP Server]] - document - .mcp.json
+- [[1. Clone the Repository_1]] - document - docs/operations/macos.md
+- [[2. Install Docker Desktop]] - document - docs/operations/macos.md
+- [[3. Set Up Secrets_1]] - document - docs/operations/macos.md
+- [[4. Configure AgentShroud_1]] - document - docs/operations/macos.md
+- [[5. Build and Start_1]] - document - docs/operations/macos.md
+- [[6. Verify_1]] - document - docs/operations/macos.md
+- [[Apple Silicon vs Intel]] - document - docs/operations/macos.md
+- [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - document - docs/operations/macos.md
+- [[Docker Desktop Resource Allocation]] - document - docs/operations/macos.md
+- [[Fresh Install_1]] - document - docs/operations/macos.md
+- [[Prerequisites_5]] - document - docs/operations/macos.md
+- [[Running Without Docker (Native Python)]] - document - docs/operations/macos.md
+- [[Updating to Latest Release_1]] - document - docs/operations/macos.md
+- [[macos]] - document - docs/operations/macos.md
 
 ## Live Query (requires Dataview plugin)
 

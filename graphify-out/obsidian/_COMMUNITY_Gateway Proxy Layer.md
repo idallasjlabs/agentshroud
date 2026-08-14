@@ -1,19 +1,30 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+members: 17
 ---
 
 # Gateway Proxy Layer
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[.shutdown()]] - code - gateway/proxy/mcp_proxy.py
-- [[.stop()_3]] - code - gateway/proxy/mcp_proxy.py
-- [[.stop_all()]] - code - gateway/proxy/mcp_proxy.py
-- [[Clean shutdown — close all connections.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[App + window management]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[Capture screenshots + analyze]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[Common capture parameters]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[Common motiontyping parameters]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[Common targeting parameters (most interaction commands)]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[Examples]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[Features (all CLI capabilities, excluding agentMCP)]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[Keyboard input]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[Live capture (motion-aware)]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[Menus, menubar, dock]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[Mouse + gesture input]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[Peekaboo]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[Quickstart (happy path)]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[SKILL_161]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[See - click - type (most reliable flow)]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[Target by window id]] - document - skills/openclaw/peekaboo/SKILL.md
+- [[macOS UI Automation (Peekaboo)]] - concept - skills/openclaw/peekaboo/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,10 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_docsUSPTO_TRADEMARK_APPLICATION]]
 
 ## Top bridge nodes
-- [[.stop_all()]] - degree 3, connects to 1 community
-- [[.shutdown()]] - degree 3, connects to 1 community
-- [[.stop()_3]] - degree 2, connects to 1 community
+- [[Peekaboo]] - degree 9, connects to 1 community

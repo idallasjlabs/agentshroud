@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.83
 members: 4
 ---
 
 # docker/tests
 
-**Cohesion:** 0.83 - tightly connected
 **Members:** 4 nodes
 
 ## Members
-- [[fail()_1]] - code - docker/tests/test-op-auth.sh
-- [[pass()_1]] - code - docker/tests/test-op-auth.sh
-- [[test-op-auth.sh]] - code - docker/tests/test-op-auth.sh
-- [[test-op-auth.sh script]] - code - docker/tests/test-op-auth.sh
+- [[For git commit hook]] - document - docker/config/hermes/skills/graphify/references/hooks.md
+- [[For native CLAUDE.md integration]] - document - docker/config/hermes/skills/graphify/references/hooks.md
+- [[graphify reference commit hook and native CLAUDE.md integration]] - document - docker/config/hermes/skills/graphify/references/hooks.md
+- [[hooks]] - document - docker/config/hermes/skills/graphify/references/hooks.md
 
 ## Live Query (requires Dataview plugin)
 

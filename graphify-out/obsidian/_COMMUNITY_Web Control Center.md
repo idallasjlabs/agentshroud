@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Web Control Center
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[__init__.py_16]] - code - gateway/web/__init__.py
+- [[i-sre SKILL.md (SRE practices skill, minimal stub)]] - document - docker/config/hermes/skills/i-sre/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

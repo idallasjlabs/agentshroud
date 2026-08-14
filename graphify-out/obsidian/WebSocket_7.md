@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L29"
+community: "docs/project"
+location: "L882"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/docs/project
 ---
 
 # WebSocket
 
 ## Connections
-- [[.__init__()_128]] - `references` [EXTRACTED]
-- [[Severity_2]] - `uses` [INFERRED]
-- [[WSEvent]] - `uses` [INFERRED]
-- [[WSEventType]] - `uses` [INFERRED]
-- [[ws_soc_endpoint()]] - `references` [EXTRACTED]
+- [[CitationVerifier]] - `uses` [INFERRED]
+- [[DraftEntry]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
+- [[ws_logs()]] - `references` [EXTRACTED]
+- [[ws_updates()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/docs/project

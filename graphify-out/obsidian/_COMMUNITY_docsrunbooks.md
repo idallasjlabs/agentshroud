@@ -1,18 +1,28 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+members: 15
 ---
 
 # docs/runbooks
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[Backup and Restore Runbook]] - document - docs/runbooks/backup-restore.md
-- [[Critical Data Audit Ledger + Docker Secrets (1Password-managed)]] - concept - docs/runbooks/backup-restore.md
-- [[Disaster Recovery Procedure (clone, conda env, restore secrets from 1Password)]] - concept - docs/runbooks/backup-restore.md
+- [[After Disconnect]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[After Freeze]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[After Shutdown]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Kill Switch Actions]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Kill Switch Actions (freezeshutdowndisconnect)]] - concept - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Kill Switch Monitoring]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Kill Switch Procedure_1]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 1 Dashboard (Recommended)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 2 API]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 3 Script]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Method 4 Docker Direct (Last Resort)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Post-Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[Related Notes_68]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[When to Use]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 
 ## Live Query (requires Dataview plugin)
 

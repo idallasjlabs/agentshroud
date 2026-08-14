@@ -1,16 +1,20 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 7
 ---
 
 # Custom Skills
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[calendar.js (iCloud CalDAV skill)]] - code - skills/custom/icloud/scripts/calendar.js
+- [[i-bs SKILL.md (Brand Systems, referenced dependency)]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[i-ti README]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[i-ti SKILL.md (Technical Illustrator, Mermaid diagrams)]] - document - docker/config/hermes/skills/i-ti/SKILL.md
+- [[i-tw README]] - document - docker/config/hermes/skills/i-tw/README.md
+- [[i-tw SKILL.md (Technical Writer)]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[i-ui SKILL.md (UI Engineer, CSS architecture, WCAG AA)]] - document - docker/config/hermes/skills/i-ui/SKILL.md
+- [[i-ux SKILL.md (UX Designer, IA, Nielsen heuristics)]] - document - docker/config/hermes/skills/i-ux/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/index.html"
 type: "document"
-community: "Architecture Docs"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/docs/vault
 ---
 
 # Website: Standards Alignment / Compliance Grid
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Compliance Alignment (9 standards)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/vault

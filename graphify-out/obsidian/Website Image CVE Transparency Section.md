@@ -1,11 +1,11 @@
 ---
 source_file: "docs/index.html"
 type: "document"
-community: "Architecture Docs"
+community: "docs/vault"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Architecture_Docs
+  - community/docs/vault
 ---
 
 # Website: Image CVE Transparency Section
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Compliance Alignment (9 standards)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Architecture_Docs
+#graphify/document #graphify/INFERRED #community/docs/vault

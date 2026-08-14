@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "code"
-community: "Bot Container Scripts"
+community: "CONTRIBUTING.md"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/CONTRIBUTINGmd
 ---
 
 # XDG_CACHE_HOME
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[start.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/CONTRIBUTINGmd

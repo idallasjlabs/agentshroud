@@ -1,17 +1,26 @@
 ---
 type: community
-cohesion: 1.00
-members: 2
+members: 13
 ---
 
 # Docker Deploy Scripts
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 2 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[toggle-readonly.sh]] - code - docker/scripts/toggle-readonly.sh
-- [[toggle-readonly.sh script]] - code - docker/scripts/toggle-readonly.sh
+- [[Add a comment to a card]] - document - skills/openclaw/trello/SKILL.md
+- [[Archive a card]] - document - skills/openclaw/trello/SKILL.md
+- [[Create a card]] - document - skills/openclaw/trello/SKILL.md
+- [[Examples_1]] - document - skills/openclaw/trello/SKILL.md
+- [[List boards]] - document - skills/openclaw/trello/SKILL.md
+- [[List cards in a list]] - document - skills/openclaw/trello/SKILL.md
+- [[List lists in a board]] - document - skills/openclaw/trello/SKILL.md
+- [[Move a card to another list]] - document - skills/openclaw/trello/SKILL.md
+- [[Notes_8]] - document - skills/openclaw/trello/SKILL.md
+- [[SKILL_171]] - document - skills/openclaw/trello/SKILL.md
+- [[Setup_7]] - document - skills/openclaw/trello/SKILL.md
+- [[Trello Skill]] - document - skills/openclaw/trello/SKILL.md
+- [[Usage_91]] - document - skills/openclaw/trello/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

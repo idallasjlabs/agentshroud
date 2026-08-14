@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "URL/Domain Validation Tests"
+community: "Planning Docs"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Planning_Docs
 ---
 
 # WebhookReceiver
 
 ## Connections
-- [[.__init__()_44]] - `method` [EXTRACTED]
+- [[.__init__()_43]] - `method` [EXTRACTED]
 - [[._can_create_directory()]] - `method` [EXTRACTED]
 - [[._extract_message()]] - `method` [EXTRACTED]
 - [[._extract_user_id()_1]] - `method` [EXTRACTED]
@@ -28,7 +28,6 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Receives webhooks and routes them through the security pipeline.      In product]] - `rationale_for` [EXTRACTED]
 - [[SlackAPIProxy_1]] - `uses` [INFERRED]
-- [[SlackAPIProxy_3]] - `uses` [INFERRED]
 - [[TestHandleEvent]] - `uses` [INFERRED]
 - [[TestMiddlewareSessionEnforcement]] - `uses` [INFERRED]
 - [[TestMultiFieldOutboundScanning]] - `uses` [INFERRED]
@@ -41,7 +40,7 @@ tags:
 - [[TestWebhookReceiverSlackExtraction]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[forward.py]] - `imports` [EXTRACTED]
 - [[telegram_webhook()]] - `calls` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `imports` [EXTRACTED]
@@ -56,4 +55,4 @@ tags:
 - [[test_webhook_strips_pii()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

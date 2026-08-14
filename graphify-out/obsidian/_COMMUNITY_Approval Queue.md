@@ -1,16 +1,21 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 8
 ---
 
 # Approval Queue
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[__init__.py_2]] - code - gateway/approval_queue/__init__.py
+- [[Coding Agent PTY Pattern (ptytrue + background + workdir)]] - concept - skills/openclaw/coding-agent/SKILL.md
+- [[OpenClaw Skill coding-agent (CodexClaude CodePi delegation)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[OpenClaw Skill gh-issues (GitHub auto-fix orchestrator)]] - document - skills/openclaw/gh-issues/SKILL.md
+- [[gh-issues 6-Phase Orchestration (ParseFetchConfirmPreflightSpawnReview)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[gh-issues Claim-based In-Progress Tracking (data.clawdbotgh-issues-claims.json)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[gh-issues Cron Mode (sequential cursor tracking)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[gh-issues Phase 6 PR Review Handler (spawn review-fix sub-agents)]] - concept - skills/openclaw/gh-issues/SKILL.md
+- [[gh-issues Sub-agent Task Prompt Template]] - document - skills/openclaw/gh-issues/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

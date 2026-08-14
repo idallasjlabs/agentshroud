@@ -1,18 +1,27 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Gateway Ingest API"
-location: "L561"
+community: "Gateway Test Suite"
+location: "L2666"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - graphify/INFERRED
+  - community/Gateway_Test_Suite
 ---
 
 # WebSocket
 
 ## Connections
-- [[activity_websocket()]] - `references` [EXTRACTED]
-- [[egress_websocket()]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLError]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
+- [[WSEventType]] - `uses` [INFERRED]
+- [[soc_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,110 +1,105 @@
 ---
 type: community
-cohesion: 0.02
-members: 95
+members: 92
 ---
 
 # Collaborator Prompt Safety
 
-**Cohesion:** 0.02 - loosely connected
-**Members:** 95 nodes
+**Members:** 92 nodes
 
 ## Members
-- [[.test_action_risk_probe_gets_no_banner_risk_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_safe_notice_maps_internal_network_probe_to_egress_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_safe_notice_maps_metadata_probe_to_secret_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_safe_notice_maps_obfuscated_probe_to_scope_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_collaborator_safe_notice_uses_canonical_header_with_blank_line()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_dns_ping_probe_gets_network_probe_policy_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_how_does_routes_to_local_handler()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_local_whoami_collaborator_uses_unavailable_fallback_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_local_whoami_owner_uses_owner_fallback_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_allowlist_bypass_request_detects_redirect_evasion_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_allowlist_bypass_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_approval_action_request_detects_approve_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_approval_action_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_approval_queue_probe_detects_internal_metadata_query()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_approval_queue_probe_ignores_generic_approval_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_approval_token_probe_detects_callback_forgery_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_approval_token_probe_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_archive_exfil_request_detects_archive_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_archive_exfil_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_cross_tenant_data_probe_detects_access_attempt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_cross_tenant_data_probe_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_cross_user_messaging_request_detects_direct_messaging_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_cross_user_messaging_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_encoded_exfil_request_detects_encoded_data_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_encoded_exfil_request_ignores_conceptual_encoding_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_env_secret_probe_detects_env_listing_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_env_secret_probe_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_file_query_detects_internal_file_content_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_guardrail_modification_request_detects_update_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_guardrail_modification_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_guardrail_modification_request_ignores_self_mod_policy_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_hidden_channel_exfil_request_detects_hidden_metadata_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_hidden_channel_exfil_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_hypothetical_execution_question_detects_approval_wording()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_identity_enumeration_query_detects_owner_id_probe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_incremental_exfil_request_detects_chunked_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_incremental_exfil_request_ignores_normal_file_policy_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_internal_network_probe_detects_loopback_target()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_internal_network_probe_detects_private_range_target()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_internal_network_probe_ignores_non_execution_context()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_log_access_request_detects_direct_log_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_log_access_request_ignores_conceptual_logging_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_memory_access_request_detects_memory_search_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_memory_access_request_ignores_conceptual_memory_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_metadata_endpoint_probe_detects_imds_style()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_metadata_endpoint_probe_requires_intent_marker()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_model_switch_request_detects_switch_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_model_switch_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_obfuscated_command_probe_detects_decode_and_execute()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_obfuscated_command_probe_ignores_conceptual_discussion()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_pairing_or_access_probe_detects_pairing_artifact_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_pairing_or_access_probe_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_path_traversal_request_detects_dotdot_path()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_path_traversal_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_plugin_discovery_request_detects_inventory_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_plugin_discovery_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_policy_bypass_request_detects_disable_approval_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_policy_bypass_request_ignores_defensive_discussion()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_scheduler_or_autorun_request_detects_cron_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_scheduler_or_autorun_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_secret_value_request_detects_direct_secret_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_secret_value_request_ignores_api_key_policy_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_secret_value_request_ignores_conceptual_credential_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_sensitive_path_probe_detects_aws_credentials_style()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_sensitive_path_probe_detects_shell_style()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_sensitive_path_probe_requires_intent_marker()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_service_control_request_detects_restart_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_service_control_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_system_prompt_probe_detects_instruction_leak_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_system_prompt_probe_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_tool_trace_request_detects_raw_trace_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_tool_trace_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_unicode_obfuscation_bypass_request_detects_evasion_prompt()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_unicode_obfuscation_bypass_request_ignores_conceptual_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_unsafe_scheme_request_detects_file_scheme_fetch()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_unsafe_scheme_request_ignores_conceptual_scheme_question()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_web_access_request_bare_domain_imperative()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_web_access_request_imperative_with_url()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_looks_like_web_access_request_policy_question_with_url()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_message_processing_probe_gets_no_banner_natural_response()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_notify_collaborator_command_blocked_retries_with_unavailable_notice_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_owner_versus_collaborator_probe_gets_no_banner_direct_answer()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_safe_info_response_exception_sends_unavailable_fallback()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[.test_streaming_chunking_probe_gets_output_delivery_policy_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[B1.2b pipelineprocessing questions should get a natural answer without restric]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[B1.5c action-risk questions should get a natural answer without restriction ban]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[B3.2d DNSping probes should return network probe notice with banner.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[B5.3c identity discrimination question should get a natural answer without rest]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[BT5c streamingchunking questions should return output delivery policy with ban]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator-safe notices must use the canonical protected header format.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Exception in safe-info response should still deliver unavailable notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Probes containing 'how does' should be caught by _looks_like_safe_collaborator_i]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestCollaboratorPromptClassifiers]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unit tests for collaborator-facing prompt classification helpers.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[.__init__()_27]] - code - gateway/proxy/mcp_proxy.py
+- [[.__init__()_28]] - code - gateway/proxy/mcp_proxy.py
+- [[.__init__()_29]] - code - gateway/proxy/mcp_proxy.py
+- [[.__init__()_170]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.__init__()_171]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[._fake_aiohttp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.get_item()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.get_or_create()]] - code - gateway/proxy/mcp_proxy.py
+- [[.is_running()]] - code - gateway/proxy/mcp_proxy.py
+- [[.kill()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.remove()]] - code - gateway/proxy/mcp_proxy.py
+- [[.send_request()_2]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.stop()_2]] - code - gateway/proxy/mcp_proxy.py
+- [[.stop()_12]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.submit_tool_request()_4]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.terminate()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_approved_decision_allows()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_async_egress_filter_deny_uses_rule_as_reason()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_denied_decision_blocks_with_item_status()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_denied_decision_with_missing_item_defaults_denied()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_egress_filter_allow_passes_through()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_emit_swallows_bus_errors()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_emits_event_to_bus()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_execution_redacts_admin_private_content()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_execution_with_none_content_skips_result_inspection()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_generic_exception()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_get_or_create_by_transport_and_caching()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_get_stats_after_allowed_call()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_get_stats_zero_and_after_calls()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_missing_aiohttp_raises_runtime_error()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_no_patterns_returns_unchanged()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_no_queue_allows_by_default()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_owner_bypasses_redaction()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_passthrough_process_tool_result()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_passthrough_with_execute()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_process_tool_call_blocks_on_denial()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_process_tool_result_handles_none_content()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_process_tool_result_redacts_private_data()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_redacts_nested_dict_list_tuple()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_sanitized_params_preferred_over_originals()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_send_request_and_session_reuse()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_server_error_response()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_server_error_response_without_message()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_shutdown_stops_all_connections()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_start_send_and_stop()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_start_without_env_passes_none()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_stop_all_clears_pool()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_stop_kills_on_wait_timeout()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_successful_execution_with_result_inspection()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_sync_egress_filter_deny_blocks()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_timeout_error()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_tool_call_generates_id_and_timestamp()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_tool_not_requiring_approval_allowed()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_tool_result_timestamp_default()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.test_unknown_server_returns_error_result()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.wait()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[.wait_for_decision()_4]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[Configuration for an MCP server.]] - rationale - gateway/proxy/mcp_config.py
+- [[ConnectionPool]] - code - gateway/proxy/mcp_proxy.py
+- [[Exception_4]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[FakeApprovalQueue]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[FakeConn]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[FakeProcess]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[Get existing connection or create a new one.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[HttpSseConnection]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPProxy_1]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPProxyConfig_3]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[MCPServerConfig]] - code - gateway/proxy/mcp_config.py
+- [[MCPServerConfig_2]] - code - gateway/proxy/mcp_proxy.py
+- [[MCPToolCall_1]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[Manages a stdio connection to an MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Manages an HTTPSSE connection to an MCP server.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Pool of connections to MCP servers.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[Stand-in connection injected into the proxy's pool.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
+- [[Stand-in for asyncio.subprocess.Process — no real child process.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
+- [[StdioConnection]] - code - gateway/proxy/mcp_proxy.py
+- [[Stop the MCP server process.]] - rationale - gateway/proxy/mcp_proxy.py
+- [[TestApprovalQueue]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestConnectionPool]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestDataclasses]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestEgressFilterPaths]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestEmitPrivacyEvent]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestExecuteToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestHttpSseConnection]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestPassthrough]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestResultProcessingAndLifecycle]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestSanitizeAdminPrivateData]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[TestStdioConnection]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[make_call()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[make_config()]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[make_proxy()_1]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[test_mcp_proxy_coverage.py]] - code - gateway/tests/test_mcp_proxy_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -114,15 +109,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_Telegram Proxy Test Suite]]
+- 139 edges to [[_COMMUNITY_PromptGuard Encoding Detection]]
+- 60 edges to [[_COMMUNITY_Enforce-Mode Auto-Revert]]
+- 38 edges to [[_COMMUNITY_docsoperations]]
+- 30 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 26 edges to [[_COMMUNITY_Setup Docs]]
+- 4 edges to [[_COMMUNITY_Gateway Test Suite]]
+- 2 edges to [[_COMMUNITY_Bot Skill Config]]
 - 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Egress & RBAC Security Core]]
-- 1 edge to [[_COMMUNITY_Collaborator Prompt Classifiers]]
-- 1 edge to [[_COMMUNITY_Telegram Inbound Tests]]
+- 1 edge to [[_COMMUNITY_scriptssmoke.d]]
+- 1 edge to [[_COMMUNITY_.githubISSUE_TEMPLATE]]
+- 1 edge to [[_COMMUNITY_docsdiagrams]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
 
 ## Top bridge nodes
-- [[TestCollaboratorPromptClassifiers]] - degree 91, connects to 4 communities
-- [[.test_safe_info_response_exception_sends_unavailable_fallback()]] - degree 4, connects to 1 community
-- [[.test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure()]] - degree 3, connects to 1 community
-- [[.test_local_whoami_collaborator_uses_unavailable_fallback_on_send_failure()]] - degree 3, connects to 1 community
-- [[.test_local_whoami_owner_uses_owner_fallback_on_send_failure()]] - degree 3, connects to 1 community
+- [[MCPServerConfig]] - degree 90, connects to 8 communities
+- [[FakeApprovalQueue]] - degree 27, connects to 7 communities
+- [[ConnectionPool]] - degree 36, connects to 6 communities
+- [[HttpSseConnection]] - degree 35, connects to 6 communities
+- [[FakeProcess]] - degree 23, connects to 6 communities

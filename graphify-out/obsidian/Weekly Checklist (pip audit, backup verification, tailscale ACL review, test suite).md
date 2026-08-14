@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/daily-operations.md"
 type: "concept"
-community: "docs/runbooks"
+community: "Gateway Security Module"
 location: "line 61-90"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Gateway_Security_Module
 ---
 
 # Weekly Checklist (pip audit, backup verification, tailscale ACL review, test suite)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Daily Operations Runbook]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/runbooks
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Security_Module

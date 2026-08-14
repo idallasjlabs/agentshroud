@@ -1,20 +1,23 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+members: 10
 ---
 
 # chatbot/test_main.py
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[.test_internal_error_not_leaked()]] - code - chatbot/test_main.py
-- [[.test_openai_auth_error_returns_503()]] - code - chatbot/test_main.py
-- [[OpenAI AuthenticationError returns 503 without leaking the key.]] - rationale - chatbot/test_main.py
-- [[OpenAI exceptions should not leak internal details to the client.]] - rationale - chatbot/test_main.py
-- [[TestErrorSanitization]] - code - chatbot/test_main.py
+- [[Cross-Turn Correlation Capability]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[EgressFilter.check()]] - code - gateway/security/egress_filter.py
+- [[OpenAI Agent Message-Board Coordination Attack]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[PromptArmor Atlassian Rovo Content-Borne Injection Disclosure]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[RovoBlast Attack (Atlassian Rovo AI)]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[UK AISI Rogue Agent Actions Findings]] - concept - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[Varonis RovoBlast How One Click Triggered Atlassian's AI Assistant to Leak Data]] - document - docs/papers/attack-teardowns-rovoblast-cross-turn.md
+- [[context_guard.py Provenance Tagging (ContextSegment)]] - code - gateway/security/context_guard.py
+- [[egress_filter.py_is_private_ip SSRF Encoding-Bypass Bug]] - rationale - gateway/security/egress_filter.py
+- [[multi_turn_tracker.py  SubagentMonitor]] - code - gateway/security/multi_turn_tracker.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,11 +27,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Slack API Proxy]]
-- 1 edge to [[_COMMUNITY_chatbotmain.py]]
-- 1 edge to [[_COMMUNITY_chatbottest_main.py]]
+- 1 edge to [[_COMMUNITY_docsdata]]
+- 1 edge to [[_COMMUNITY_gatewayruntime]]
+- 1 edge to [[_COMMUNITY_Egress & RBAC Security Core]]
 
 ## Top bridge nodes
-- [[TestErrorSanitization]] - degree 4, connects to 2 communities
-- [[.test_internal_error_not_leaked()]] - degree 3, connects to 1 community
-- [[.test_openai_auth_error_returns_503()]] - degree 3, connects to 1 community
+- [[RovoBlast Attack (Atlassian Rovo AI)]] - degree 7, connects to 2 communities
+- [[egress_filter.py_is_private_ip SSRF Encoding-Bypass Bug]] - degree 2, connects to 1 community

@@ -1,23 +1,41 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+members: 28
 ---
 
 # docker/README.md
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[Check Status_1]] - document - docker/README.md
-- [[Hermes  HCI]] - document - docker/README.md
-- [[Port Reference]] - document - docker/README.md
-- [[Start the Stack]] - document - docker/README.md
-- [[Stop the Stack_1]] - document - docker/README.md
-- [[Test Chat]] - document - docker/README.md
-- [[Usage]] - document - docker/README.md
-- [[View Logs]] - document - docker/README.md
+- [[AgentShroud Docker Configuration]] - document - docker/README.md
+- [[Architecture_1]] - document - docker/README.md
+- [[Container Runtime Support (SCRUM-92)]] - document - docker/README.md
+- [[Container Stack]] - document - docker/README.md
+- [[Core Configuration]] - document - docker/README.md
+- [[Cron Failure Alerting (SCRUM-61)]] - document - docker/README.md
+- [[Detection contract]] - document - docker/README.md
+- [[Development_1]] - document - docker/README.md
+- [[Documentation_3]] - document - docker/README.md
+- [[Exec into Container]] - document - docker/README.md
+- [[Files]] - document - docker/README.md
+- [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - concept - docker/README.md
+- [[Multi-Bot Shared Report Store (SCRUM-79)]] - document - docker/README.md
+- [[Network DMZ — IEC 62443 FR5 (Restricted Data Flow) · SCRUM-93]] - document - docker/README.md
+- [[Network DMZ — IEC 62443 FR5 (SCRUM-93)]] - concept - docker/README.md
+- [[Next Steps (Phase 4+)]] - document - docker/README.md
+- [[Progressive-Trust Enforcement Mode (SCRUM-78)]] - document - docker/README.md
+- [[Quick Start_1]] - document - docker/README.md
+- [[README_4]] - document - docker/README.md
+- [[Rebuild Containers]] - document - docker/README.md
+- [[Reference]] - document - docker/README.md
+- [[Reproducible dev shell (Nix flake)]] - document - docker/README.md
+- [[Secrets_1]] - document - docker/README.md
+- [[Security Features (Deferred to Phase 5+)]] - document - docker/README.md
+- [[Security Features (Implemented)]] - document - docker/README.md
+- [[Startup Warnings Reference]] - document - docker/README.md
+- [[Troubleshooting_1]] - document - docker/README.md
+- [[Verify Security]] - document - docker/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +45,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dockerREADME]]
+- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_docsdiagrams]]
+- 1 edge to [[_COMMUNITY_docsvault]]
 
 ## Top bridge nodes
-- [[Usage]] - degree 8, connects to 1 community
+- [[AgentShroud Docker Configuration]] - degree 18, connects to 2 communities
+- [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - degree 3, connects to 1 community

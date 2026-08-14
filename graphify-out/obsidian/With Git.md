@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/updating.md"
 type: "document"
-community: "docs/operations"
+community: "skills/openclaw"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/skills/openclaw
 ---
 
 # With Git
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Rollback Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

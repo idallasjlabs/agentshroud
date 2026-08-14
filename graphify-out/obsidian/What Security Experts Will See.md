@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "Planning Docs"
+community: "browser-extension/manifest.json"
 location: "L313"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/browser-extension/manifestjson
 ---
 
 # What Security Experts Will See
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Hardening Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/browser-extension/manifestjson

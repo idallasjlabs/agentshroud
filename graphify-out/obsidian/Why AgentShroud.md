@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "README.md"
+community: "Gateway Test Suite"
 location: "L362"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/READMEmd
+  - community/Gateway_Test_Suite
 ---
 
 # Why AgentShroud
@@ -16,4 +16,4 @@ tags:
 - [[Core Objectives]] - `contains` [EXTRACTED]
 - [[README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

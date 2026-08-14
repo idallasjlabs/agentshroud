@@ -1,16 +1,15 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # chatbot/__init__.py
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[__init__.py]] - code - chatbot/__init__.py
+- [[.test_collaborator_incremental_exfil_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Chunked extraction prompts should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -18,3 +17,10 @@ members: 1
 TABLE source_file, type FROM #community/chatbot/__init__py
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 5 edges to [[_COMMUNITY_PII Config & Test Fixtures]]
+- 1 edge to [[_COMMUNITY_Group RBAC Roles]]
+
+## Top bridge nodes
+- [[.test_collaborator_incremental_exfil_request_is_blocked_and_quarantined()]] - degree 7, connects to 2 communities
