@@ -6,6 +6,7 @@
 
 from __future__ import annotations
 
+import asyncio
 import json
 from unittest.mock import MagicMock
 
@@ -724,3 +725,122 @@ async def test_failover_routes_qwen3_to_lm_studio_with_normalized_model(monkeypa
 
     assert captured["url"].startswith(LMSTUDIO_API_BASE)
     assert captured["model"] == "qwen3-14b"
+
+
+# ---------------------------------------------------------------------------
+# SCRUM-154 — a slow/stalled response body must not freeze the event loop
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.asyncio
+async def test_forward_request_slow_read_does_not_block_event_loop(monkeypatch):
+    """A real production incident: a stalled chunked response from a local
+    model backend blocked the gateway's entire event loop for the duration
+    of response.read() — confirmed live via py-spy showing MainThread itself
+    stuck inside http.client's chunked reader. urlopen() was already wrapped
+    in run_in_executor, but the subsequent .read() call was not, so the
+    body-read happened directly on the event loop instead of the executor
+    thread. Reproduces the freeze with a response whose .read() blocks
+    synchronously (time.sleep, matching what a stalled socket read actually
+    does), and asserts a concurrent "canary" coroutine keeps ticking the
+    whole time — proof the event loop stayed free to run other work.
+    """
+    import time
+
+    proxy = make_proxy()
+
+    class _SlowResponse:
+        status = 200
+        headers = {"content-type": "application/json"}
+
+        def read(self):
+            time.sleep(1.0)  # blocking, not asyncio.sleep — this is the bug
+            return OLLAMA_OK_BODY
+
+        def close(self):
+            pass
+
+    def fake_urlopen(req, timeout=None, context=None):
+        return _SlowResponse()
+
+    monkeypatch.setattr("urllib.request.urlopen", fake_urlopen)
+
+    canary_ticks = 0
+
+    async def canary():
+        nonlocal canary_ticks
+        for _ in range(15):
+            await asyncio.sleep(0.05)
+            canary_ticks += 1
+
+    forward_task = asyncio.create_task(
+        proxy._forward_request("http://host.docker.internal:8000/v1/chat/completions", b"{}", {})
+    )
+    canary_task = asyncio.create_task(canary())
+
+    status, _, body = await asyncio.wait_for(forward_task, timeout=5.0)
+    await canary_task
+
+    assert status == 200
+    assert body == OLLAMA_OK_BODY
+    # If .read() ran on the event loop (the bug), the canary would have been
+    # unable to tick at all during that 1s window — it only gets to run
+    # between awaits, and a blocking time.sleep() inside the same thread
+    # starves every other coroutine. A healthy isolation leaves it free to
+    # complete most/all of its 15 ticks (~750ms) well within the 1s block.
+    assert canary_ticks >= 10, (
+        f"canary only ticked {canary_ticks}/15 times during the slow read — "
+        "the event loop was blocked, SCRUM-154 regression"
+    )
+
+
+@pytest.mark.asyncio
+async def test_forward_request_slow_http_error_read_does_not_block_event_loop(monkeypatch):
+    """Same freeze, but on the HTTPError branch's e.read() — also moved off
+    the event loop as part of the SCRUM-154 fix."""
+    import io
+    import time
+    import urllib.error
+
+    proxy = make_proxy()
+
+    def fake_urlopen(req, timeout=None, context=None):
+        err = urllib.error.HTTPError(
+            "http://host.docker.internal:8000/v1/chat/completions",
+            400,
+            "bad request",
+            {},
+            io.BytesIO(b'{"error":"bad request"}'),
+        )
+        real_read = err.read
+
+        def _slow_read():
+            time.sleep(1.0)
+            return real_read()
+
+        err.read = _slow_read  # type: ignore[method-assign]
+        raise err
+
+    monkeypatch.setattr("urllib.request.urlopen", fake_urlopen)
+
+    canary_ticks = 0
+
+    async def canary():
+        nonlocal canary_ticks
+        for _ in range(15):
+            await asyncio.sleep(0.05)
+            canary_ticks += 1
+
+    forward_task = asyncio.create_task(
+        proxy._forward_request("http://host.docker.internal:8000/v1/chat/completions", b"{}", {})
+    )
+    canary_task = asyncio.create_task(canary())
+
+    status, _, _ = await asyncio.wait_for(forward_task, timeout=5.0)
+    await canary_task
+
+    assert status == 400
+    assert canary_ticks >= 10, (
+        f"canary only ticked {canary_ticks}/15 times during the slow error "
+        "read — the event loop was blocked, SCRUM-154 regression"
+    )

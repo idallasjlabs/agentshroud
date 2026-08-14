@@ -1642,21 +1642,38 @@ class LLMProxy:
 
         for _attempt in range(_MAX_RETRIES + 1):
             req = urllib.request.Request(url, data=body, headers=forward_headers)
-            try:
-                response = await loop.run_in_executor(
-                    None,
-                    lambda: urllib.request.urlopen(req, timeout=1800, context=self._ssl_context),
-                )
+
+            def _urlopen_and_read(_req=req):
+                # SCRUM-154: the ENTIRE urlopen+read+close sequence must run
+                # on the executor thread, not just urlopen(). response.read()
+                # blocks until the full body arrives — for a chunked stream
+                # from a slow/stalled backend (local model server, cloud
+                # API), that used to happen directly on the event loop,
+                # freezing every other request the gateway was handling
+                # (including bare GET /status, which has no dependency on
+                # this code path at all) for up to the full socket timeout.
+                # Confirmed live via py-spy: MainThread blocked in exactly
+                # this read() during a real production hang.
+                response = urllib.request.urlopen(_req, timeout=1800, context=self._ssl_context)
                 try:
-                    resp_body = response.read()
-                    resp_headers = dict(response.headers)
-                    return response.status, resp_headers, resp_body
+                    return response.status, dict(response.headers), response.read()
                 finally:
                     response.close()
+
+            try:
+                response_status, resp_headers, resp_body = await loop.run_in_executor(
+                    None, _urlopen_and_read
+                )
+                return response_status, resp_headers, resp_body
             except urllib.error.HTTPError as e:
-                resp_body = e.read()
-                resp_headers = dict(e.headers)
-                e.close()
+
+                def _read_error_body(_e=e):
+                    try:
+                        return dict(_e.headers), _e.read()
+                    finally:
+                        _e.close()
+
+                resp_headers, resp_body = await loop.run_in_executor(None, _read_error_body)
                 if e.code not in _RETRYABLE or _attempt >= _MAX_RETRIES:
                     return e.code, resp_headers, resp_body
                 # Respect Retry-After header (Anthropic 429 includes it)
