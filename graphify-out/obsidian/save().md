@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/options.js"
 type: "code"
-community: "browser-extension/options.js"
+community: "Setup Docs"
 location: "L19"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/browser-extension/optionsjs
+  - community/Setup_Docs
 ---
 
 # save()
@@ -15,4 +15,4 @@ tags:
 - [[loadConfig()]] - `semantically_similar_to` [INFERRED]
 - [[options.js]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/browser-extension/optionsjs
+#graphify/code #graphify/INFERRED #community/Setup_Docs

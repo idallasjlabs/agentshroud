@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "code"
-community: "Bot Container Scripts"
+community: "Custom Skills"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Custom_Skills
 ---
 
 # run-standalone.sh
@@ -19,7 +19,6 @@ tags:
 - [[cmd_logs()]] - `defines` [EXTRACTED]
 - [[cmd_status()]] - `defines` [EXTRACTED]
 - [[cmd_up()]] - `defines` [EXTRACTED]
-- [[hermes service (docker-compose.yml, profiles hermesfull)]] - `conceptually_related_to` [EXTRACTED]
 - [[run-standalone.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/Custom_Skills

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "Approval Queue Tests"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/Approval_Queue_Tests
 ---
 
 # rbac_config.py (RBACConfig)
@@ -15,4 +15,4 @@ tags:
 - [[test_shared_memory_write_acl.py]] - `references` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

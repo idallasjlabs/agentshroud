@@ -1,11 +1,11 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/steve-hay-assessment.md"
 type: "rationale"
-community: "Custom Skills"
+community: "Bot Skill Config"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # redteam/references/steve-hay-assessment.md — Steve Hay Assessment (Red Team Copy)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[blueteamreferencessteve-hay-assessment.md — Steven Hay STPA-Sec Assessment]] - `mirrors` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Custom_Skills
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Telegram Inbound Tests"
-location: "L8344"
+community: "Group RBAC Roles"
+location: "L8413"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Tests
+  - community/Group_RBAC_Roles
 ---
 
 # /ri <uid> must remove immunity and confirm to owner.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_revoke_immunity_restores_enforcement()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC_Roles

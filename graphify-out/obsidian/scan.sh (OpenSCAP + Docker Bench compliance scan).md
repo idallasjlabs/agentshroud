@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Test Suite"
 location: "docker/scripts/scan.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # scan.sh (OpenSCAP + Docker Bench compliance scan)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECURITY_SCRIPTS_REFERENCE]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/popup.js"
 type: "code"
-community: "browser-extension/popup.js"
+community: "browser-extension/background.js"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/popupjs
+  - community/browser-extension/backgroundjs
 ---
 
 # send()
@@ -16,4 +16,4 @@ tags:
 - [[popup.js]] - `contains` [EXTRACTED]
 - [[setStatus()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/popupjs
+#graphify/code #graphify/EXTRACTED #community/browser-extension/backgroundjs

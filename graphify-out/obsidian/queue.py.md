@@ -13,13 +13,11 @@ tags:
 
 ## Connections
 - [[NOTE Called within _lock context]] - `rationale_for` [EXTRACTED]
-- [[AgentShroud Gateway OpenAPI Spec]] - `references` [INFERRED]
 - [[AgentShroud Security Dashboard (index.html)]] - `conceptually_related_to` [INFERRED]
 - [[ApprovalQueue]] - `contains` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalQueueItem]] - `imports` [EXTRACTED]
-- [[ApprovalRequest]] - `imports` [EXTRACTED]
-- [[FastAPI]] - `imports_from` [EXTRACTED]
+- [[ApprovalQueueItem_3]] - `imports` [EXTRACTED]
+- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
 - [[MFAGuard_2]] - `imports` [EXTRACTED]
 - [[MFAGuard.verify()]] - `calls` [EXTRACTED]
 - [[config.py]] - `imports_from` [EXTRACTED]

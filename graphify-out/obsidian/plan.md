@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/plan.md"
 type: "document"
-community: "Planning Docs"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # plan.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[plan_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

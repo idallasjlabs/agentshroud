@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
+community: "docs/operations"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/docs/operations
 ---
 
 # resource_guard.py
@@ -21,4 +21,4 @@ tags:
 - [[test_llm_proxy_local_parity.py]] - `references` [EXTRACTED]
 - [[test_resource_guard_limits.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/docs/operations

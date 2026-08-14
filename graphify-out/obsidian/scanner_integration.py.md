@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "IEC 62443 Scorecard"
+community: "gateway/cli"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IEC_62443_Scorecard
+  - community/gateway/cli
 ---
 
 # scanner_integration.py
@@ -80,4 +80,4 @@ tags:
 - [[read_alerts()_1]] - `imports` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IEC_62443_Scorecard
+#graphify/code #graphify/EXTRACTED #community/gateway/cli

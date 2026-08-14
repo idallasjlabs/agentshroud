@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/options.js"
 type: "code"
-community: "browser-extension/options.js"
+community: "Setup Docs"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/optionsjs
+  - community/Setup_Docs
 ---
 
 # restore()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[options.js]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/optionsjs
+#graphify/code #graphify/EXTRACTED #community/Setup_Docs

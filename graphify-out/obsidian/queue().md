@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "Telegram Proxy Test Suite"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # queue()
@@ -16,4 +16,4 @@ tags:
 - [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
 - [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

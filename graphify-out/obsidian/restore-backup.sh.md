@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/restore-backup.sh"
 type: "code"
-community: "scripts/restore-backup.sh"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/restore-backupsh
+  - community/Bot_Skill_Config
 ---
 
 # restore-backup.sh
@@ -16,4 +16,4 @@ tags:
 - [[restore_tar_to_volume()]] - `defines` [EXTRACTED]
 - [[update-agentshroud.sh]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/restore-backupsh
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

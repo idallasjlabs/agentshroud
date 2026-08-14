@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/soc/templates/soc.html"
 type: "code"
-community: "Custom Skills"
+community: "Bot Skill Config"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # soc.html — SOC Command Center UI
@@ -16,4 +16,4 @@ tags:
 - [[Concept SOC Command Center (Security Operations Center UI)]] - `implements` [EXTRACTED]
 - [[soc_dashboard() — serves SOC SPA]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

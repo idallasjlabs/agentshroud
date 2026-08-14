@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "docs/README.md"
+community: "Gateway Test Suite"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/READMEmd
+  - community/Gateway_Test_Suite
 ---
 
 # [setup/](./setup/) - Setup & Configuration Guides
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📚 Documentation Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

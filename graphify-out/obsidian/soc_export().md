@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Audit Export Pipeline"
-location: "L2491"
+community: "PII Sanitizer Pipeline"
+location: "L2498"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # soc_export()
@@ -14,8 +14,9 @@ tags:
 ## Connections
 - [[AuditExportConfig_1]] - `calls` [EXTRACTED]
 - [[AuditExporter]] - `calls` [EXTRACTED]
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_5]] - `references` [EXTRACTED]
 - [[Export tamper-evident audit events in SOCSIEM formats.]] - `rationale_for` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

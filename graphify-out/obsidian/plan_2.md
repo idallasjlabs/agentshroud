@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/steve-hay-plan.md"
 type: "document"
-community: "Custom Skills"
+community: "Community 1500"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Community_1500
 ---
 
 # plan
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[steve-hay-plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Community_1500

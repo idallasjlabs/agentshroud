@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "PromptGuard Encoding Detection"
+community: "Audit Export Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard_Encoding_Detection
+  - community/Audit_Export_Pipeline
 ---
 
 # prompt_guard.py
@@ -26,4 +26,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_multilingual_injection.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection
+#graphify/code #graphify/EXTRACTED #community/Audit_Export_Pipeline

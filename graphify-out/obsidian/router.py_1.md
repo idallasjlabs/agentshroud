@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Collaborator Lifecycle"
+community: "Enhanced Approval Queue"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/Enhanced_Approval_Queue
 ---
 
 # router.py
@@ -29,7 +29,6 @@ tags:
 - [[EgressScope]] - `imports` [EXTRACTED]
 - [[EgressScopeRequest]] - `contains` [EXTRACTED]
 - [[EmergencyBlockRequest]] - `contains` [EXTRACTED]
-- [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[GroupConfig]] - `imports` [EXTRACTED]
 - [[LoginRequest]] - `contains` [EXTRACTED]
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
@@ -173,4 +172,4 @@ tags:
 - [[verify_audit_chain()]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/playback_logic.h"
 type: "code"
-community: "ESP32 Firmware"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Gateway_Test_Suite
 ---
 
 # playback_logic.h
@@ -17,4 +17,4 @@ tags:
 - [[delivery_track_sent_ok()]] - `contains` [EXTRACTED]
 - [[playback_gate_should_open()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

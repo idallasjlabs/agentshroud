@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/setup-slack.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/setup-slackmd
 ---
 
 # proxy_status.py
@@ -15,4 +15,4 @@ tags:
 - [[ProxyDashboard]] - `contains` [EXTRACTED]
 - [[ProxyStatusReport]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/setup-slackmd

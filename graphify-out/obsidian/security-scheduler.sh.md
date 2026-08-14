@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-scheduler.sh"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Bot Skill Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Bot_Skill_Config
 ---
 
 # security-scheduler.sh
@@ -15,7 +15,7 @@ tags:
 - [[_stamp_read()]] - `defines` [EXTRACTED]
 - [[_stamp_write()]] - `defines` [EXTRACTED]
 - [[gateway-seccomp.json (Docker seccomp profile)]] - `conceptually_related_to` [AMBIGUOUS]
-- [[log()_4]] - `defines` [EXTRACTED]
+- [[log()_5]] - `defines` [EXTRACTED]
 - [[security-scheduler.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

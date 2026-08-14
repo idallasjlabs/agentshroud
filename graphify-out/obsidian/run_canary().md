@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "HTTP Forwarder"
+community: "SOC Collaborator Lifecycle"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # run_canary()
@@ -27,4 +27,4 @@ tags:
 - [[test_canary_with_unhealthy_forwarder()]] - `calls` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

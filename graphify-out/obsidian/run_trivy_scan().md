@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L1511"
+community: "Bot Skill Config"
+location: "L1518"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Bot_Skill_Config
 ---
 
 # run_trivy_scan()
@@ -18,11 +18,12 @@ tags:
 - [[.test_run_success()]] - `calls` [INFERRED]
 - [[.test_run_timeout()]] - `calls` [INFERRED]
 - [[.test_trivy_binary_not_found()]] - `calls` [INFERRED]
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_5]] - `references` [EXTRACTED]
 - [[Run Trivy vulnerability scan.]] - `rationale_for` [EXTRACTED]
 - [[_record_scanner_result()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[run_all_scanners()]] - `calls` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Bot_Skill_Config

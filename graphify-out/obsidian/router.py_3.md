@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "docs/vault"
+community: "docs/ssh-capability.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/ssh-capabilitymd
 ---
 
 # router.py
@@ -23,4 +23,4 @@ tags:
 - [[Responsibilities_5]] - `contains` [EXTRACTED]
 - [[router.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/docs/ssh-capabilitymd

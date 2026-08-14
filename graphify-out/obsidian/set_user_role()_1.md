@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Collaborator Lifecycle"
+community: "Enhanced Approval Queue"
 location: "L1056"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/Enhanced_Approval_Queue
 ---
 
 # set_user_role()
@@ -16,9 +16,8 @@ tags:
 - [[RBACManager_1]] - `calls` [EXTRACTED]
 - [[Role_1]] - `calls` [EXTRACTED]
 - [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[SCLCaller_3]] - `references` [EXTRACTED]
 - [[SetRoleRequest]] - `references` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue

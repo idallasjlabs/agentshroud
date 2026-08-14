@@ -15,7 +15,7 @@ tags:
 - [[.test_returns_summary_without_token()]] - `calls` [EXTRACTED]
 - [[.test_sends_telegram_on_success()]] - `calls` [EXTRACTED]
 - [[.test_trivy_error_still_sends_error_report()]] - `calls` [EXTRACTED]
-- [[Any_35]] - `references` [EXTRACTED]
+- [[Any_37]] - `references` [EXTRACTED]
 - [[Run a Trivy scan, format the report, and send via Telegram.      Args         b]] - `rationale_for` [EXTRACTED]
 - [[_build_image_targets()]] - `calls` [EXTRACTED]
 - [[_send_telegram()]] - `calls` [EXTRACTED]

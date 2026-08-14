@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Custom Skills"
+community: "Bot Skill Config"
 location: "L2679"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # soc_dashboard() — serves SOC SPA
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[soc.html — SOC Command Center UI]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

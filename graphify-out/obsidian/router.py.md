@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "PII Sanitizer Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # router.py
@@ -16,7 +16,7 @@ tags:
 - [[ForwardError]] - `contains` [EXTRACTED]
 - [[ForwardRequest]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `contains` [EXTRACTED]
-- [[RouterConfig_1]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
 - [[RouterError]] - `contains` [EXTRACTED]
 - [[config.py]] - `imports_from` [EXTRACTED]
 - [[forward.py]] - `imports_from` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

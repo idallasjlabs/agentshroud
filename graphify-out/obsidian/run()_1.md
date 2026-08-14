@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Bot Skill Config"
-location: "L241"
+community: "Planning Docs"
+location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # run()
@@ -20,5 +20,6 @@ tags:
 - [[fetch_op_secret()_1]] - `calls` [EXTRACTED]
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
 - [[post_comment()]] - `calls` [EXTRACTED]
+- [[resolve_cloud_id()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

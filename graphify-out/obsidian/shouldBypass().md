@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/setup-https-proxy.js"
 type: "code"
-community: "Bot Skill Config"
+community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
 ---
 
 # shouldBypass()
@@ -16,4 +16,4 @@ tags:
 - [[proxyCreateConnection()]] - `calls` [EXTRACTED]
 - [[setup-https-proxy.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd

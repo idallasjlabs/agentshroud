@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/sag/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "src/interfaces"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/src/interfaces
 ---
 
 # sag
@@ -17,4 +17,4 @@ tags:
 - [[OpenClaw Skill Ecosystem]] - `part_of` [EXTRACTED]
 - [[SKILL_162]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/src/interfaces

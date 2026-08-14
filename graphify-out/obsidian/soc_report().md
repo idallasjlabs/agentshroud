@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
-location: "L2345"
+community: "Gateway Test Suite"
+location: "L2352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Gateway_Test_Suite
 ---
 
 # soc_report()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_5]] - `references` [EXTRACTED]
 - [[Consolidated SOC report for dashboardSIEM pull workflows.]] - `rationale_for` [EXTRACTED]
 - [[_build_activity_entries_from_contributor_logs()]] - `calls` [EXTRACTED]
 - [[_build_activity_summary_from_contributor_logs()]] - `calls` [EXTRACTED]
@@ -22,4 +23,4 @@ tags:
 - [[build_correlation_summary()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

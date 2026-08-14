@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_router_openai_translation.py"
+source_file: "gateway/tests/test_router_streaming.py"
 type: "code"
-community: "Forward Routing & Approval"
-location: "L25"
+community: "Slack API Proxy"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Slack_API_Proxy
 ---
 
 # router()
 
 ## Connections
 - [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[RouterConfig_1]] - `calls` [EXTRACTED]
-- [[test_router_openai_translation.py]] - `contains` [EXTRACTED]
+- [[RouterConfig]] - `calls` [EXTRACTED]
+- [[RouterConfig_1]] - `calls` [INFERRED]
+- [[test_router_streaming.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

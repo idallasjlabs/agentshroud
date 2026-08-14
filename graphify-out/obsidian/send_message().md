@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/chat_console.py"
 type: "code"
-community: "src/interfaces"
+community: "Bot Container Scripts"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/src/interfaces
+  - community/Bot_Container_Scripts
 ---
 
 # send_message()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Send message to OpenClaw via gateway]] - `rationale_for` [EXTRACTED]
 - [[chat_console.py]] - `contains` [EXTRACTED]
-- [[main()_26]] - `calls` [EXTRACTED]
+- [[main()_28]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/src/interfaces
+#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts

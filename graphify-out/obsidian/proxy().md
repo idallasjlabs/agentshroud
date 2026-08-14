@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L80"
+community: "Planning Docs"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # proxy()
 
 ## Connections
-- [[MCPAuditTrail]] - `calls` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `calls` [INFERRED]
-- [[MCPInspector]] - `calls` [EXTRACTED]
-- [[MCPInspector_1]] - `calls` [INFERRED]
-- [[MCPPermissionManager]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `calls` [INFERRED]
-- [[MCPProxy]] - `calls` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[A2AProxy_1]] - `references` [EXTRACTED]
+- [[_StubForwarder]] - `references` [EXTRACTED]
+- [[_base_policy_engine()]] - `calls` [EXTRACTED]
+- [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

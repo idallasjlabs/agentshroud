@@ -12,7 +12,7 @@ tags:
 # sanitize_tool_result()
 
 ## Connections
-- [[.sanitize()_2]] - `calls` [EXTRACTED]
+- [[.sanitize()_1]] - `calls` [EXTRACTED]
 - [[.test_convenience_function()]] - `calls` [EXTRACTED]
 - [[Convenience function to sanitize tool result content.      Args         content]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]

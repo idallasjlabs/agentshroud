@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/playback_logic.h"
 type: "code"
-community: "ESP32 Firmware"
+community: "Gateway Test Suite"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ESP32_Firmware
+  - community/Gateway_Test_Suite
 ---
 
 # playback_gate_should_open()
@@ -21,4 +21,4 @@ tags:
 - [[test_gate_stays_closed_before_any_cap()]] - `calls` [INFERRED]
 - [[tts_task()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ESP32_Firmware
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

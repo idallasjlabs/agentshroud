@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Planning Docs"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # scan_bytes()
 
 ## Connections
-- [[Any_32]] - `references` [EXTRACTED]
+- [[Any_34]] - `references` [EXTRACTED]
 - [[Stream bytes to clamdscan for inline malware scanning.      Uses ``clamdscan --s]] - `rationale_for` [EXTRACTED]
 - [[clamav_scanner.py]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[test_scan_bytes_infected()]] - `calls` [EXTRACTED]
 - [[test_scan_bytes_timeout()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

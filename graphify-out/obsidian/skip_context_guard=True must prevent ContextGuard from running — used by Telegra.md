@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Cross-Bot Trust Ledger"
+community: "MCP Proxy Config"
 location: "L363"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/MCP_Proxy_Config
 ---
 
 # skip_context_guard=True must prevent ContextGuard from running — used by Telegra
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_skip_context_guard_bypasses_step0()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

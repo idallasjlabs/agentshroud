@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "skills/openclaw"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/skills/openclaw
 ---
 
 # scripts/audit_merge_regression.py
@@ -14,4 +14,4 @@ tags:
 - [[GSDL-715 (silent regression incident)]] - `references` [EXTRACTED]
 - [[i-ab Audit Branch Merge Regression Detection]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/skills/openclaw

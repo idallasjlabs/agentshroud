@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "docs/vault"
+community: "skills/openclaw"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/skills/openclaw
 ---
 
 # session_security.py
@@ -27,4 +27,4 @@ tags:
 - [[session_security.py_1]] - `contains` [EXTRACTED]
 - [[subagent_monitor.py_2]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

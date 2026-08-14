@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "code"
-community: "docs/vault"
+community: "Custom Skills"
 location: "gateway/runtime/security.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Custom_Skills
 ---
 
 # security.py (Runtime)
@@ -18,4 +18,4 @@ tags:
 - [[podman_engine.py (Runtime)]] - `referenced_by` [EXTRACTED]
 - [[warn_missing_features()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Custom_Skills

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/clamav.md"
 type: "concept"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "docker/scripts/security-scheduler.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # security-scheduler.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ClamAV]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "code"
-community: "chatbot/main.py"
+community: "Gateway Test Suite"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/Gateway_Test_Suite
 ---
 
 # require_auth()
@@ -19,4 +19,4 @@ tags:
 - [[chat()]] - `calls` [EXTRACTED]
 - [[main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

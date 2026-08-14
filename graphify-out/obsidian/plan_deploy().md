@@ -19,7 +19,7 @@ tags:
 - [[.test_plan_is_pure_writes_nothing()]] - `calls` [EXTRACTED]
 - [[.test_plan_maps_canonical_to_each_bot_destination()]] - `calls` [EXTRACTED]
 - [[Compute the deploy plan without mutating the filesystem.      Pure with respect]] - `rationale_for` [EXTRACTED]
-- [[Path_20]] - `references` [EXTRACTED]
+- [[Path_21]] - `references` [EXTRACTED]
 - [[PlannedAction]] - `references` [EXTRACTED]
 - [[SkillsManifest]] - `references` [EXTRACTED]
 - [[deploy_manifest()]] - `calls` [EXTRACTED]

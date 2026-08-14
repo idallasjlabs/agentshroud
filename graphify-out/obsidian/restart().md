@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "gateway/cli"
+community: "Gateway Test Suite"
 location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/cli
+  - community/Gateway_Test_Suite
 ---
 
 # restart()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/cli
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

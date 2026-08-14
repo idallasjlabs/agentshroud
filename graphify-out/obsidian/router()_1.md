@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_group_approval_routing.py"
+source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L52"
+community: "Slack API Proxy"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Slack_API_Proxy
 ---
 
 # router()
 
 ## Connections
-- [[GroupApprovalRouter]] - `calls` [EXTRACTED]
-- [[GroupApprovalRouter wired with a mock Telegram send function.]] - `rationale_for` [EXTRACTED]
-- [[test_group_approval_routing.py]] - `contains` [EXTRACTED]
+- [[Create a router instance for testing]] - `rationale_for` [EXTRACTED]
+- [[MultiAgentRouter]] - `calls` [EXTRACTED]
+- [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/agents/i-security-reviewer.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Docker Deploy Scripts"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Docker_Deploy_Scripts
 ---
 
 # security-reviewer
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[i-security-reviewer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts

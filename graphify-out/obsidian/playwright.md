@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # Playwright
@@ -23,4 +23,4 @@ tags:
 - [[playwright_1]] - `contains` [EXTRACTED]
 - [[web_proxy.py_3]] - `proxied_by` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

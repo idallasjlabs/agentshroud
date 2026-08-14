@@ -1,11 +1,11 @@
 ---
 source_file: "shortcuts/README.md"
 type: "document"
-community: "Custom Skills"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # shortcuts/README.md — iOS/macOS Shortcuts Catalog
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Concept iOS Shortcuts with On-Device PII Processing]] - `defines` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

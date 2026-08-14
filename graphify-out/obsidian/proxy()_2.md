@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Egress Domain Allowlist"
-location: "L34"
+community: "Forward Routing & Approval"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Domain_Allowlist
+  - community/Forward_Routing__Approval
 ---
 
 # proxy()
 
 ## Connections
-- [[WebProxy_1]] - `calls` [EXTRACTED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[SSHConfig_2]] - `references` [EXTRACTED]
+- [[SSHProxy_1]] - `references` [EXTRACTED]
+- [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval

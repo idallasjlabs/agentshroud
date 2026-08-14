@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gateway Proxy Layer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Proxy_Layer
 ---
 
 # rate_limit_guard.py
@@ -17,4 +17,4 @@ tags:
 - [[RateLimitGuard]] - `contains` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer

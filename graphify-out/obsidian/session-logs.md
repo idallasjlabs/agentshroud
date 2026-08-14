@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Bot Container Scripts"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Bot_Container_Scripts
 ---
 
 # session-logs
@@ -22,4 +22,4 @@ tags:
 - [[Tips_4]] - `contains` [EXTRACTED]
 - [[Trigger_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts

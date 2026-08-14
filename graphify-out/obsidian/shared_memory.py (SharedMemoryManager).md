@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "Group Workspace Isolation"
+community: "Approval Queue Tests"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Workspace_Isolation
+  - community/Approval_Queue_Tests
 ---
 
 # shared_memory.py (SharedMemoryManager)
@@ -16,4 +16,4 @@ tags:
 - [[test_security_regressions_v1_2.py]] - `references` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests

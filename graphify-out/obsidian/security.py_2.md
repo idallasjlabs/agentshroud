@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "document"
-community: "docs/vault"
+community: "docs/requirements"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/requirements
 ---
 
 # security.py
@@ -21,4 +21,4 @@ tags:
 - [[Security Feature Registry]] - `contains` [EXTRACTED]
 - [[security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/docs/requirements

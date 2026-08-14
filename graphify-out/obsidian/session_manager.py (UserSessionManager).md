@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Group Workspace Isolation"
+community: "Security Module Middleware"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Workspace_Isolation
+  - community/Security_Module_Middleware
 ---
 
 # session_manager.py (UserSessionManager)
@@ -18,4 +18,4 @@ tags:
 - [[test_session_manager.py]] - `references` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation
+#graphify/code #graphify/EXTRACTED #community/Security_Module_Middleware

@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/README.md"
 type: "document"
-community: "Custom Skills"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # scripts/README.md — Utility Scripts Catalog
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Concept Module Enforcement Heat Map (EMAC—)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Custom_Skills
+#graphify/document #graphify/INFERRED #community/Bot_Skill_Config

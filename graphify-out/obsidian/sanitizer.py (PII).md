@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "concept"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "gateway/ingest_api/sanitizer.py"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # sanitizer.py (PII)
@@ -16,4 +16,4 @@ tags:
 - [[Presidio Analyzer]] - `implemented_by` [EXTRACTED]
 - [[spaCy]] - `powers` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

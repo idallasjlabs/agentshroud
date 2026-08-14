@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "docs/diagrams"
+community: "Bot Skill Config"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Bot_Skill_Config
 ---
 
 # sanitizer.py (PII redaction, Presidio/regex)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[PII Sanitizer (Presidio + Regex)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/docs/diagrams
+#graphify/image #graphify/EXTRACTED #community/Bot_Skill_Config

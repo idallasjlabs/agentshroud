@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: "docs/vault"
+community: "skills/openclaw"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/skills/openclaw
 ---
 
 # port_manager.py
@@ -19,4 +19,4 @@ tags:
 - [[Related Notes_10]] - `contains` [EXTRACTED]
 - [[port_manager.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

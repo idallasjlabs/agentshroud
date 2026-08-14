@@ -1,20 +1,19 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "voice_gateway/server.py"
+community: "Planning Docs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_gateway/serverpy
+  - community/Planning_Docs
 ---
 
 # server.py
 
 ## Connections
 - [[Enum]] - `imports_from` [EXTRACTED]
-- [[FastAPI]] - `imports_from` [EXTRACTED]
-- [[FastAPI_5]] - `imports_from` [EXTRACTED]
+- [[FastAPI_3]] - `imports_from` [EXTRACTED]
 - [[_State]] - `contains` [EXTRACTED]
 - [[__init__.py_17]] - `imports_from` [EXTRACTED]
 - [[__main__.py]] - `imports_from` [EXTRACTED]
@@ -43,4 +42,4 @@ tags:
 - [[tts.py]] - `imports_from` [EXTRACTED]
 - [[voice_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/serverpy
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs
