@@ -350,6 +350,20 @@ _HERMES_PY="/opt/hermes/.venv/bin/python3"
                     && hermes config set model.provider "${_provider}" 2>/dev/null \
                     && echo "[hermes-startup] ✓ Model set to ${_model} (provider=${_provider}, mode=${AGENTSHROUD_MODEL_MODE:-cloud})" \
                     || echo "[hermes-startup] ⚠ Could not set resolved model ${_model}"
+                # cron.model / cron.model_provider is a SEPARATE resolution axis
+                # from model.default/model.provider above — the cron scheduler's
+                # pre-dispatch preflight (hermes/cron/scheduler.py
+                # _preflight_check_provider_key) only consults job.provider or
+                # this cron.* fleet default, never model.default. Left unset,
+                # every cron job with provider=null blocks with "No Anthropic
+                # credentials found" regardless of what model.default resolved
+                # to above — discovered 2026-08-14 when every scheduled job
+                # failed immediately after a routine rebuild despite the main
+                # chat model correctly resolving to the local model.
+                hermes config set cron.model "${_model}" 2>/dev/null \
+                    && hermes config set cron.model_provider "${_provider}" 2>/dev/null \
+                    && echo "[hermes-startup] ✓ Cron fleet default set to ${_model} (provider=${_provider})" \
+                    || echo "[hermes-startup] ⚠ Could not set cron fleet default ${_model}"
             else
                 echo "[hermes-startup] ⚠ Model resolver produced no model — leaving migration default"
             fi

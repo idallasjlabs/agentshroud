@@ -334,6 +334,18 @@ _reset_device_store() {
 # still deploy via $COMPOSE exactly as before. See project memory
 # project_hermes_do_request_ptb226_fix.md for the full investigation.
 _hermes_up() {
+  # run-standalone.sh reads AGENTSHROUD_MODEL_MODE/AGENTSHROUD_LOCAL_MODEL_REF/
+  # AGENTSHROUD_LOCAL_MODEL/HERMES_MAIN_MODEL from the CALLING shell's env at
+  # container-creation time, not from docker/.env automatically. Without this,
+  # asb rebuild/up silently defaults Hermes to AGENTSHROUD_MODEL_MODE=cloud
+  # (Anthropic), which then fails every cron job with a missing-credential
+  # error since this deployment intentionally runs on a local model. Same fix
+  # already applied in scripts/update-agentshroud.sh — see that script's
+  # comment for the full incident history.
+  set -a
+  # shellcheck source=docker/.env
+  . "$REPO_DIR/docker/.env" 2>/dev/null || true
+  set +a
   AGENTSHROUD_PROJECT="$PROJECT" \
   AGENTSHROUD_VERSION="${AGENTSHROUD_VERSION:-latest}" \
   AGENTSHROUD_SECRETS_DIR="$HOME/.agentshroud/.asb-secrets" \

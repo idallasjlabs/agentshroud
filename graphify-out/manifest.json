@@ -4880,9 +4880,9 @@
     "semantic_hash": "336a7fea415d3b86948ad6ede2648045"
   },
   "gateway/openapi.json": {
-    "mtime": 1786615563.806379,
-    "ast_hash": "cb26b802880a179d66ebcbdcaf742273",
-    "semantic_hash": "cb26b802880a179d66ebcbdcaf742273"
+    "mtime": 1786695557.012737,
+    "ast_hash": "417dccd9983d1a15ecf91b6c833bc7eb",
+    "semantic_hash": ""
   },
   "gateway/tests/test_cli_coverage.py": {
     "mtime": 1781729433.6054413,
