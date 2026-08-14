@@ -2,7 +2,7 @@
 source_file: "CHANGELOG.md"
 type: "document"
 community: "Gateway Test Suite"
-location: "L903"
+location: "L967"
 tags:
   - graphify/document
   - graphify/EXTRACTED

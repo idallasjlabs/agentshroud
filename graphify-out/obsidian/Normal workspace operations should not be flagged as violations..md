@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "URL/Domain Validation Tests"
+community: "Egress & RBAC Security Core"
 location: "L300"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Normal workspace operations should not be flagged as violations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_normal_operations_not_violations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

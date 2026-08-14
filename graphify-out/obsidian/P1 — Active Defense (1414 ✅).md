@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
 type: "document"
-community: "CLAUDE.md"
+community: "Gateway Test Suite"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CLAUDEmd
+  - community/Gateway_Test_Suite
 ---
 
 # P1 — Active Defense (14/14 ✅)
@@ -16,4 +16,4 @@ tags:
 - [[⚠️ Warning ContextGuard Enforcement]] - `contains` [EXTRACTED]
 - [[⚠️ Warning killswitch.sh Path]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CLAUDEmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "SOC Dashboard"
+community: "Slack API Proxy"
 location: "L532"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Slack_API_Proxy
 ---
 
 # Requests with no user_id must not be elevated to FULL.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_no_user_id_does_not_elevate_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy

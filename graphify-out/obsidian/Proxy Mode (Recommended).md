@@ -14,6 +14,5 @@ tags:
 ## Connections
 - [[ADR-001 Transparent Proxy Decision]] - `implements` [EXTRACTED]
 - [[Deployment Modes]] - `contains` [EXTRACTED]
-- [[Website AgentShroud Infrastructure Section]] - `conceptually_related_to` [INFERRED]
 
 #graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

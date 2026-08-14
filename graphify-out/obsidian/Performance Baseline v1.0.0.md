@@ -10,7 +10,4 @@ tags:
 
 # Performance Baseline v1.0.0
 
-## Connections
-- [[v1.0.0 Fortress Release]] - `references` [EXTRACTED]
-
 #graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

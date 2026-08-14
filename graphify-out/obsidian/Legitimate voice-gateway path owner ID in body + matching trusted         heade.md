@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "SOC Dashboard"
+community: "Slack API Proxy"
 location: "L282"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Slack_API_Proxy
 ---
 
 # Legitimate voice-gateway path: owner ID in body + matching trusted         heade
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_body_owner_id_with_matching_trusted_header_is_honored()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy

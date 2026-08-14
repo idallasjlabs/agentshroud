@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Architecture Docs"
+community: "Security Docs"
 location: "L268"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Architecture_Docs
+  - community/Security_Docs
 ---
 
 # Path
@@ -19,4 +19,4 @@ tags:
 - [[ModeRequest]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Architecture_Docs
+#graphify/code #graphify/INFERRED #community/Security_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "File Sandbox"
+community: "Gateway Test Suite"
 location: "L299"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/Gateway_Test_Suite
 ---
 
 # Owner must have unrestricted access even in group context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOwnerGroupContext]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

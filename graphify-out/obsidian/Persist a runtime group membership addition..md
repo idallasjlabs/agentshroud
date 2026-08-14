@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Group Workspace Isolation"
 location: "L265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Group_Workspace_Isolation
 ---
 
 # Persist a runtime group membership addition.
@@ -15,4 +15,4 @@ tags:
 - [[persist_group_member_add()]] - `rationale_for` [EXTRACTED]
 - [[persist_group_member_remove()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Group_Workspace_Isolation

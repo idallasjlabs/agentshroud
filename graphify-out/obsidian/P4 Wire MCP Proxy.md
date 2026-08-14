@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Changes]] - `contains` [EXTRACTED]
 - [[Plan AgentShroud Security Hardening — Real Agent Containment]] - `contains` [EXTRACTED]
-- [[Tests_3]] - `contains` [EXTRACTED]
+- [[Tests_7]] - `contains` [EXTRACTED]
 - [[Verification_9]] - `contains` [EXTRACTED]
 - [[What Exists]] - `contains` [EXTRACTED]
 

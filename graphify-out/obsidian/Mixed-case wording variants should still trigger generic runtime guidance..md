@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L898"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # Mixed-case wording variants should still trigger generic runtime guidance.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_memory_provider_error_case_variant_is_rewritten_generic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

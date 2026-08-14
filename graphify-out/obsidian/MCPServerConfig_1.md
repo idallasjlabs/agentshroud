@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "Enforce-Mode Auto-Revert"
+community: "SOC Dashboard"
 location: "L378"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enforce-Mode_Auto-Revert
+  - community/SOC_Dashboard
 ---
 
 # MCPServerConfig
@@ -18,4 +18,4 @@ tags:
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Enforce-Mode_Auto-Revert
+#graphify/code #graphify/INFERRED #community/SOC_Dashboard

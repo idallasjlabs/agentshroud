@@ -1,11 +1,11 @@
 ---
 source_file: "examples/mcp-config.yml"
 type: "document"
-community: "Security Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # MCP Proxy Config Example
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Proxy (tool call inspection layer)]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

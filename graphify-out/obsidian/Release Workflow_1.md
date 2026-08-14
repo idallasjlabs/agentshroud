@@ -13,7 +13,6 @@ tags:
 ## Connections
 - [[Gateway Service]] - `references` [INFERRED]
 - [[TagVersion Sync Verification]] - `rationale_for` [EXTRACTED]
-- [[dockerversions.env (Vendor Version Pins)]] - `references` [EXTRACTED]
 - [[gatewayrequirements.txt Dependency File]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AGENTSmd

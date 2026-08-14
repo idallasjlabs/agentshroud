@@ -12,6 +12,6 @@ tags:
 # Key Changes (2026-04-08)
 
 ## Connections
-- [[Summary_5]] - `contains` [EXTRACTED]
+- [[Summary_24]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/docs/vault

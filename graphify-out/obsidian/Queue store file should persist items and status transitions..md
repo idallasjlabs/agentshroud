@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Collaborator Prompt Classifiers"
 location: "L341"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Queue store file should persist items and status transitions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_store_persists_submit_and_decision()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

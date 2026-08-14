@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "MCP Proxy Config"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/MCP_Proxy_Config
 ---
 
 # Ordered severity levels for cross-bot incidents.      Values map to IEC 62443 SL
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[BotIncidentSeverity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

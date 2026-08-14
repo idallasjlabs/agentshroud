@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Architecture Docs"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Architecture_Docs
 ---
 
 # Refactoring Workflow
@@ -18,4 +18,4 @@ tags:
 - [[Step 3 Verify Tests Still Pass]] - `contains` [EXTRACTED]
 - [[Step 4 Check Code Quality]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

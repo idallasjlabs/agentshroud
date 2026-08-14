@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "src/interfaces"
+community: "Community 1523"
 location: "L767"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/src/interfaces
+  - community/Community_1523
 ---
 
 # Raw timeout errors should be rewritten to deterministic retry guidance.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_llm_timeout_error_is_sanitized()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/src/interfaces
+#graphify/rationale #graphify/EXTRACTED #community/Community_1523

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+community: "Gateway Test Suite"
 location: "L112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+  - community/Gateway_Test_Suite
 ---
 
 # Represents a shared workspace + memory for a group.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupSession]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

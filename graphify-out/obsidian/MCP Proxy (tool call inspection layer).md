@@ -1,11 +1,11 @@
 ---
 source_file: "docs/SECURITY_PLAN.md"
 type: "concept"
-community: "Security Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # MCP Proxy (tool call inspection layer)
@@ -19,4 +19,4 @@ tags:
 - [[MCP Proxy Errors_2]] - `documents` [EXTRACTED]
 - [[Security Hardening Phases P0–FINAL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Security_Docs
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

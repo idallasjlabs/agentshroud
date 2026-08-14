@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "concept"
-community: "chatbot/test_main.py"
+community: "Planning Docs"
 location: "line 43"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/chatbot/test_mainpy
+  - community/Planning_Docs
 ---
 
 # OpenAI Agent Message-Board Coordination Attack
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Cross-Turn Correlation Capability]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/chatbot/test_mainpy
+#graphify/concept #graphify/EXTRACTED #community/Planning_Docs

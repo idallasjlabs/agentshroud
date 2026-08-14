@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Enhanced Approval Queue"
 location: "L4704"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Enhanced_Approval_Queue
 ---
 
 # Proxy bot Slack Web API calls through SecurityPipeline.      Restricted to the i
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[slack_api_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "File Sandbox"
+community: "Approval & FastAPI Ingest"
 location: "L285"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Rate limits are tracked independently per user.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_per_user_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

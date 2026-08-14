@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "voice_gateway/tts.py"
+community: "Planning Docs"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/voice_gateway/ttspy
+  - community/Planning_Docs
 ---
 
 # Python Standards
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4) LANGUAGE & TOOLING STANDARDS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/voice_gateway/ttspy
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

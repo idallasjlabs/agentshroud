@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "MCP Policy Engine"
+community: "Gateway Test Suite"
 location: "L229"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Gateway_Test_Suite
 ---
 
 # Record a security violation, significantly decreasing trust.          With a pro
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.record_violation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

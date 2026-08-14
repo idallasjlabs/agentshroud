@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "docs/project"
+community: "scripts/sync-cve-registry.py"
 location: "L489"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/scripts/sync-cve-registrypy
 ---
 
 # Rebuild containers with latest images.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rebuild()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/project
+#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

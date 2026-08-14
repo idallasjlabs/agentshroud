@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "File Sandbox"
+community: "Bot Skill Config"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/Bot_Skill_Config
 ---
 
 # Read-only member denied external_api_calls in group context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_readonly_denied_external_api_calls_in_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

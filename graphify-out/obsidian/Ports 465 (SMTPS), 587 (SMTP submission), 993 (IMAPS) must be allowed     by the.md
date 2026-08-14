@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Security Docs"
+community: "Gateway Test Suite"
 location: "L583"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Ports 465 (SMTPS), 587 (SMTP submission), 993 (IMAPS) must be allowed     by the
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSMTPIMAPPorts]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

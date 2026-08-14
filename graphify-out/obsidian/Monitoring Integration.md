@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "docs/operations"
+community: "Community 1507"
 location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Community_1507
 ---
 
 # Monitoring Integration
@@ -17,4 +17,4 @@ tags:
 - [[Logging]] - `contains` [EXTRACTED]
 - [[PrometheusGrafana]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Community_1507

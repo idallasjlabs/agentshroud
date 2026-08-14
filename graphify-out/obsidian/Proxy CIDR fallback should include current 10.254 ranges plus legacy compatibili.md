@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "skills/openclaw"
+community: "Architecture Docs"
 location: "L329"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Architecture_Docs
 ---
 
 # Proxy CIDR fallback should include current 10.254 ranges plus legacy compatibili
@@ -15,4 +15,4 @@ tags:
 - [[.test_lifespan_op_prewarm_guarded_against_pytest()]] - `rationale_for` [EXTRACTED]
 - [[.test_proxy_allowed_network_default_includes_current_subnets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw
+#graphify/rationale #graphify/EXTRACTED #community/Architecture_Docs

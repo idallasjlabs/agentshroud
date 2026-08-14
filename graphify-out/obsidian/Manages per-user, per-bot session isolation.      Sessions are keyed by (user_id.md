@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Approval Queue Tests"
+community: "Gateway Test Suite"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/Gateway_Test_Suite
 ---
 
 # Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[UserSessionManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

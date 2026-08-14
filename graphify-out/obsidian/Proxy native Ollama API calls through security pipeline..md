@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Enhanced Approval Queue"
 location: "L4481"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Enhanced_Approval_Queue
 ---
 
 # Proxy native Ollama API calls through security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ollama_api_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue

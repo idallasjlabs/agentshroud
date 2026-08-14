@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Tool Chain Analyzer"
+community: "Gateway Test Suite"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Chain_Analyzer
+  - community/Gateway_Test_Suite
 ---
 
 # PermissionError
@@ -18,4 +18,4 @@ tags:
 - [[.test_running_via_proc_scan()_2]] - `calls` [INFERRED]
 - [[GroupAccessDenied]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Chain_Analyzer
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "docs/operations"
+community: "PromptGuard Encoding Detection"
 location: "L230"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/operations
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # MCPPermissionManager
@@ -24,4 +24,4 @@ tags:
 - [[MCPTransport]] - `uses` [INFERRED]
 - [[proxy()_1]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/docs/operations
+#graphify/code #graphify/INFERRED #community/PromptGuard_Encoding_Detection

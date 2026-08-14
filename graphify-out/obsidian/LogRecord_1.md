@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "docs/governance"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/docs/governance
 ---
 
 # LogRecord
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.filter()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/docs/governance

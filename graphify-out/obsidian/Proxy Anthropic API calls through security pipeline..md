@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Competitive Intel Store"
 location: "L4312"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Competitive_Intel_Store
 ---
 
 # Proxy Anthropic API calls through security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[llm_api_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "MCP Proxy Config"
 location: "L71"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/MCP_Proxy_Config
 ---
 
 # KeyVault
@@ -67,4 +67,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[vault()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config

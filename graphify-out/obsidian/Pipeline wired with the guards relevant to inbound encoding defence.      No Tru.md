@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "SOC RBAC & Auth"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/SOC_RBAC__Auth
 ---
 
 # Pipeline wired with the guards relevant to inbound encoding defence.      No Tru
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_pipeline()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth

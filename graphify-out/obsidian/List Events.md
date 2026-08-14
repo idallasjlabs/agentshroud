@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "shortcuts/README.md"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/shortcuts/READMEmd
 ---
 
 # List Events
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Calendar Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/shortcuts/READMEmd

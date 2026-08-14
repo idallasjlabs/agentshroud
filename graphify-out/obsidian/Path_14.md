@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/project"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/project
 ---
 
 # Path
@@ -16,4 +16,4 @@ tags:
 - [[._load_latest_file()]] - `references` [EXTRACTED]
 - [[.save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/project

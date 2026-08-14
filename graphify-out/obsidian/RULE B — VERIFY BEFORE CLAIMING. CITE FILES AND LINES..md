@@ -2,7 +2,7 @@
 source_file: "CLAUDE.md"
 type: "document"
 community: "skills/README.md"
-location: "L123"
+location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED

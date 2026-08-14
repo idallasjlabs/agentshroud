@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "branding/logos"
+community: "Auth & Exception Types"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/branding/logos
+  - community/Auth__Exception_Types
 ---
 
 # Path
@@ -23,4 +23,4 @@ tags:
 - [[init_db()]] - `references` [EXTRACTED]
 - [[save_to_history()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/branding/logos
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

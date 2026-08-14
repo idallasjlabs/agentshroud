@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "HTTP Forwarder"
+community: "Bot Skill Config"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/Bot_Skill_Config
 ---
 
 # Path
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__init__()_59]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

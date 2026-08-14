@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "skills/openclaw"
+community: "Gateway Test Suite"
 location: "L122"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/skills/openclaw
+  - community/Gateway_Test_Suite
 ---
 
 # KeyRotationConfig
@@ -16,4 +16,4 @@ tags:
 - [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
 - [[KeyRotationConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/skills/openclaw
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "HTTP Forwarder"
+community: "Gateway Test Suite"
 location: "L4713"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/Gateway_Test_Suite
 ---
 
 # Outbound filter must redact egress banners but NOT call _send_owner_admin_notice
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressBannerRedactionNoOwnerNotice]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

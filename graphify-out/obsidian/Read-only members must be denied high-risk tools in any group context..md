@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "File Sandbox"
+community: "Bot Skill Config"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/Bot_Skill_Config
 ---
 
 # Read-only members must be denied high-risk tools in any group context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReadOnlyMemberGroupContext]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

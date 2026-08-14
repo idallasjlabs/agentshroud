@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Setup Docs"
+community: "Gateway Test Suite"
 location: "L49"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Setup_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # ResourceLimits
@@ -62,4 +62,4 @@ tags:
 - [[test_resource_guard_wiring.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Setup_Docs
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

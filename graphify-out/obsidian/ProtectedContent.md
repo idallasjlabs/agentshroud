@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "docs/flows"
+community: "Planning Docs"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/flows
+  - community/Planning_Docs
 ---
 
 # ProtectedContent
@@ -20,4 +20,4 @@ tags:
 - [[prompt_protection.py]] - `contains` [EXTRACTED]
 - [[test_prompt_protection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/flows
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

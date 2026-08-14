@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "SOC RBAC & Auth"
+community: "MCP Proxy Config"
 location: "L1606"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/MCP_Proxy_Config
 ---
 
 # Record a trust-score violation and propagate cross-bot decay.          Called on
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._maybe_record_trust_violation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

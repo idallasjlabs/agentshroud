@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "MCP Proxy Config"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/MCP_Proxy_Config
 ---
 
 # KeyAuditEvent
@@ -16,4 +16,4 @@ tags:
 - [[.get_audit_log()_4]] - `references` [EXTRACTED]
 - [[key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config

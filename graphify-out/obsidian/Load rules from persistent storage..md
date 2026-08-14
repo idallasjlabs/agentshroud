@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Gateway Proxy Layer"
+community: "Docker Deploy Scripts"
 location: "L278"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Docker_Deploy_Scripts
 ---
 
 # Load rules from persistent storage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._load_rules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts

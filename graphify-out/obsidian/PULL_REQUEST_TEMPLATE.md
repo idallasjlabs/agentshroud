@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Checklist]] - `contains` [EXTRACTED]
 - [[IEC 62443 Reference]] - `contains` [EXTRACTED]
-- [[Summary]] - `contains` [EXTRACTED]
+- [[Summary_20]] - `contains` [EXTRACTED]
 - [[Type of Change]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/docs/data

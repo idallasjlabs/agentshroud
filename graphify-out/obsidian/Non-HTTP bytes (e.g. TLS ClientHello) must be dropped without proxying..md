@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_executor.py"
 type: "rationale"
-community: "scripts/export-telegram-history.py"
+community: "Planning Docs"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/export-telegram-historypy
+  - community/Planning_Docs
 ---
 
 # Non-HTTP bytes (e.g. TLS ClientHello) must be dropped without proxying.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_hermes_forwarder_drops_non_http()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/export-telegram-historypy
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

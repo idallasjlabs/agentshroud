@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # Path
@@ -15,4 +15,4 @@ tags:
 - [[.__init__()_112]] - `references` [EXTRACTED]
 - [[.from_dict()_11]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

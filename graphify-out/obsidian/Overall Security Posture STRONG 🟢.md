@@ -12,6 +12,6 @@ tags:
 # Overall Security Posture: **STRONG** 🟢
 
 ## Connections
-- [[Summary_13]] - `contains` [EXTRACTED]
+- [[Summary_32]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Planning_Docs

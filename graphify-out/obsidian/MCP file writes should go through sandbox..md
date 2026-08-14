@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "URL/Domain Validation Tests"
+community: "Egress & RBAC Security Core"
 location: "L491"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Egress__RBAC_Security_Core
 ---
 
 # MCP file writes should go through sandbox.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_file_sandbox_mcp_write()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

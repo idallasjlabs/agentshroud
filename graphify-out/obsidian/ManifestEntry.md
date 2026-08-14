@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # ManifestEntry
@@ -28,4 +28,4 @@ tags:
 - [[manifest.py]] - `contains` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/docs/vault
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
