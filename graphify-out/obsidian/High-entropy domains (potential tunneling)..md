@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Auth & Exception Types"
 location: "L613"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Auth__Exception_Types
 ---
 
 # High-entropy domains (potential tunneling).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_dns_entropy_calculator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

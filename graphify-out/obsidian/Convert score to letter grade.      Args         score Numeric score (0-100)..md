@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "rationale"
-community: "Planning Docs"
+community: "branding/logos"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/branding/logos
 ---
 
 # Convert score to letter grade.      Args:         score: Numeric score (0-100).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[score_to_grade()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/branding/logos

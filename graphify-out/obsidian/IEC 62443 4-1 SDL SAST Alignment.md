@@ -13,6 +13,5 @@ tags:
 
 ## Connections
 - [[AgentShroud Semgrep SAST Rules]] - `rationale_for` [EXTRACTED]
-- [[IEC 62443 Compliance Framework (FR1-FR7 Mapped to SL Levels)]] - `conceptually_related_to` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Bot CVE Scorecard"
+community: "MCP Proxy Config"
 location: "L601"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_CVE_Scorecard
+  - community/MCP_Proxy_Config
 ---
 
 # Integration tests with other security components.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIntegration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_CVE_Scorecard
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

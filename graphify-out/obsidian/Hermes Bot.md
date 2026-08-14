@@ -1,11 +1,11 @@
 ---
 source_file: "README.md"
 type: "concept"
-community: "skills/openclaw"
+community: "Gateway Test Suite"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Gateway_Test_Suite
 ---
 
 # Hermes Bot
@@ -13,6 +13,5 @@ tags:
 ## Connections
 - [[AgentShroud™ README]] - `references` [EXTRACTED]
 - [[Hermes Control Interface (HCI)]] - `conceptually_related_to` [EXTRACTED]
-- [[Hermes Crash-Storm Root Cause (tirith rules list bug)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/skills/openclaw
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

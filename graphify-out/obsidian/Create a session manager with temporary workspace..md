@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Gateway Proxy Layer"
+community: "Gateway Test Suite"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Gateway_Test_Suite
 ---
 
 # Create a session manager with temporary workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.session_manager()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

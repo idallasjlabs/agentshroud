@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "rationale"
-community: "PromptGuard Encoding Detection"
+community: "Collaborator Prompt Safety"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard_Encoding_Detection
+  - community/Collaborator_Prompt_Safety
 ---
 
 # Configuration for a specific MCP tool.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPToolConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Safety

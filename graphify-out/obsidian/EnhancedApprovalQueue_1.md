@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "docs/operations"
+community: "SOC Dashboard"
 location: "L230"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/operations
+  - community/SOC_Dashboard
 ---
 
 # EnhancedApprovalQueue
@@ -21,4 +21,4 @@ tags:
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/docs/operations
+#graphify/code #graphify/INFERRED #community/SOC_Dashboard

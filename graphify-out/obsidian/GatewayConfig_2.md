@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "docs/vault"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Telegram_Proxy_Test_Suite
+  - community/docs/vault
 ---
 
 # GatewayConfig
@@ -24,4 +24,4 @@ tags:
 - [[test_config()]] - `references` [EXTRACTED]
 - [[test_ledger()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/INFERRED #community/docs/vault

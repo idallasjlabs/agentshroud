@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "docs/vault"
+community: ".github/COPILOT_CLI_SETUP.md"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/github/COPILOT_CLI_SETUPmd
 ---
 
 # EgressRequest
@@ -21,4 +21,4 @@ tags:
 - [[test_soc_egress.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd

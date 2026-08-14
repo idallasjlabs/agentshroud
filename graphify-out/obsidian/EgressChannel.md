@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Security Module Middleware"
+community: "Auth & Exception Types"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Module_Middleware
+  - community/Auth__Exception_Types
 ---
 
 # EgressChannel
@@ -35,4 +35,4 @@ tags:
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Module_Middleware
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

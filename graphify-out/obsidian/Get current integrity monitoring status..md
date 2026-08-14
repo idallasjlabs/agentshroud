@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Progressive Trust Config"
+community: ".github/ISSUE_TEMPLATE"
 location: "L343"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/github/ISSUE_TEMPLATE
 ---
 
 # Get current integrity monitoring status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_integrity_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/rationale #graphify/EXTRACTED #community/github/ISSUE_TEMPLATE

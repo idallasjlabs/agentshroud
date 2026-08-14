@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Auth & Exception Types"
 location: "L45"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Auth__Exception_Types
 ---
 
 # Encryption/decryption time should not leak plaintext length.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_encrypted_store_constant_time()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

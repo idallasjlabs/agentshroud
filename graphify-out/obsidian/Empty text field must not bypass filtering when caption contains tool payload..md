@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L1098"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # Empty text field must not bypass filtering when caption contains tool payload.
@@ -17,4 +17,4 @@ tags:
 - [[.test_collaborator_empty_text_with_draft_payload_is_normalized_json()]] - `rationale_for` [EXTRACTED]
 - [[.test_collaborator_empty_text_with_message_payload_is_normalized_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

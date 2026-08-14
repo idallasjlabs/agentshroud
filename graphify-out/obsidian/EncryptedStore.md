@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Auth & Exception Types"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - community/Auth__Exception_Types
 ---
 
 # EncryptedStore
@@ -78,4 +78,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

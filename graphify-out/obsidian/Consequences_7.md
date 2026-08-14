@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Gateway Ingest API"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Ingest_API
 ---
 
 # Consequences
@@ -17,4 +17,4 @@ tags:
 - [[Negative Consequences_6]] - `contains` [EXTRACTED]
 - [[Positive Consequences_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Gateway_Ingest_API

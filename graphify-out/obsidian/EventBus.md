@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Slack API Proxy"
+community: "Planning Docs"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Planning_Docs
 ---
 
 # EventBus
@@ -40,4 +40,4 @@ tags:
 - [[test_event_bus.py]] - `imports` [EXTRACTED]
 - [[test_subscribed_relay_receives_bus_emissions()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/Planning_Docs

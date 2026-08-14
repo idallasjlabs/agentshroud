@@ -21,7 +21,7 @@ tags:
 - [[FR 6 Timely Response to Events (TRE)]] - `contains` [EXTRACTED]
 - [[FR 7 Resource Availability (RA)]] - `contains` [EXTRACTED]
 - [[Overview_7]] - `contains` [EXTRACTED]
-- [[Summary_3]] - `contains` [EXTRACTED]
+- [[Summary_22]] - `contains` [EXTRACTED]
 - [[iec-62443-matrix]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

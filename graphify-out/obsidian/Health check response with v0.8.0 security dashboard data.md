@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "docs/README.md"
+community: "Competitive Intel Store"
 location: "L162"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/READMEmd
+  - community/Competitive_Intel_Store
 ---
 
 # Health check response with v0.8.0 security dashboard data
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[StatusResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/READMEmd
+#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store

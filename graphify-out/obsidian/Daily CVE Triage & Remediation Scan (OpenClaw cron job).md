@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "code"
-community: "docs/diagrams"
+community: "docker/README.md"
 tags:
   - graphify/code
   - graphify/AMBIGUOUS
-  - community/docs/diagrams
+  - community/docker/READMEmd
 ---
 
 # Daily CVE Triage & Remediation Scan (OpenClaw cron job)
@@ -15,4 +15,4 @@ tags:
 - [[OpenClaw cron jobs.json (bot-config store, SCRUM-61 monitored)]] - `references` [EXTRACTED]
 - [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/AMBIGUOUS #community/docs/diagrams
+#graphify/code #graphify/AMBIGUOUS #community/docker/READMEmd

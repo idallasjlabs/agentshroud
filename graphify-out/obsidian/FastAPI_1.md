@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Slack API Proxy"
+community: "Planning Docs"
 location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Slack_API_Proxy
+  - community/Planning_Docs
 ---
 
 # FastAPI
@@ -24,4 +24,4 @@ tags:
 - [[lifespan()_1]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Slack_API_Proxy
+#graphify/code #graphify/INFERRED #community/Planning_Docs

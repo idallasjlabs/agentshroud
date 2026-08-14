@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Audit Export Pipeline"
 location: "L819"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Audit_Export_Pipeline
 ---
 
 # Double-encoded base64 injection should be caught.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_double_base64_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline

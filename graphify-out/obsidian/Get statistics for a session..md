@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "docs/vault"
+community: "Egress & RBAC Security Core"
 location: "L404"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Egress__RBAC_Security_Core
 ---
 
 # Get statistics for a session.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_session_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

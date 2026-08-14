@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Security Docs"
+community: "Gateway Test Suite"
 location: "L593"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # EgressPolicy default allows port 587 (SMTP submission/STARTTLS).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_default_policy_allows_smtp_submission()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

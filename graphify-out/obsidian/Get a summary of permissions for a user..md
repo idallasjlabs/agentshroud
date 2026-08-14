@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Egress & RBAC Security Core"
+community: "Approval & FastAPI Ingest"
 location: "L294"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Get a summary of permissions for a user.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_user_permissions_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "MCP Proxy Config"
 location: "L125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/MCP_Proxy_Config
 ---
 
 # CrossBotTrustLedger
@@ -52,4 +52,4 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[trust_manager.py]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config

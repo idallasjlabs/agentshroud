@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Community 1534"
+community: "Architecture Docs"
 location: "L646"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1534
+  - community/Architecture_Docs
 ---
 
 # Hermes SOUL.md must document all three lab hosts and the gateway /ssh/exec recip
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_hermes_soul_documents_ssh_hosts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1534
+#graphify/rationale #graphify/EXTRACTED #community/Architecture_Docs

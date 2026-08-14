@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Approval & FastAPI Ingest"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Convert an EventBus item to WSEvent, return None if conversion fails.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_coerce_to_ws_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

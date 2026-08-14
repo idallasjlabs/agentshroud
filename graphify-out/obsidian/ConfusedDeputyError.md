@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Gateway Test Suite"
 location: "L31"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Gateway_Test_Suite
 ---
 
 # ConfusedDeputyError
@@ -34,4 +34,4 @@ tags:
 - [[oauth_security.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

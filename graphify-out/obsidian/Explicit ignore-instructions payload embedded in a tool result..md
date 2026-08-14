@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Audit Export Pipeline"
+community: "docs/runbooks"
 location: "L254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/docs/runbooks
 ---
 
 # Explicit ignore-instructions payload embedded in a tool result.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_direct_injection_in_tool_result_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/docs/runbooks

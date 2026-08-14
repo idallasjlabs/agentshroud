@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "docs/vault"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/docs/vault
 ---
 
 # Fetch a single ledger entry by ID          Args:             entry_id: Entry UUI
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

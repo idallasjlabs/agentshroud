@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "ESP32 Firmware"
+community: "Auth & Exception Types"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ESP32_Firmware
+  - community/Auth__Exception_Types
 ---
 
 # ConsentDecision
@@ -46,4 +46,4 @@ tags:
 - [[consent_framework.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ESP32_Firmware
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

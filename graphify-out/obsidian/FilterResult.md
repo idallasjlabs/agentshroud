@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "MCP Proxy Config"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_RBAC__Auth
+  - community/MCP_Proxy_Config
 ---
 
 # FilterResult
@@ -23,4 +23,4 @@ tags:
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 - [[pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_RBAC__Auth
+#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config

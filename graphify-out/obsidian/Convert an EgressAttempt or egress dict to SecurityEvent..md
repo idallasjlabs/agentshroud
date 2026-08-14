@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "rationale"
-community: "Voice Gateway Tests"
+community: "Planning Docs"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Planning_Docs
 ---
 
 # Convert an EgressAttempt or egress dict to SecurityEvent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[from_egress_attempt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

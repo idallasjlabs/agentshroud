@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Dependency Graph Diagram
@@ -14,4 +14,4 @@ tags:
 - [[Gateway Initialization Order]] - `describes` [EXTRACTED]
 - [[MCP Proxy (tool call inspection layer)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

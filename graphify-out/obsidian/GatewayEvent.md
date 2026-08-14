@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "docs/vault"
+community: "PII Sanitizer Pipeline"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # GatewayEvent
@@ -18,4 +18,4 @@ tags:
 - [[event_bus.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

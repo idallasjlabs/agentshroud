@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "docs/vault"
+community: ".github/COPILOT_CLI_SETUP.md"
 location: "L46"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/vault
+  - community/github/COPILOT_CLI_SETUPmd
 ---
 
 # EgressRequest
@@ -24,4 +24,4 @@ tags:
 - [[egress_approval.py]] - `contains` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/docs/vault
+#graphify/code #graphify/INFERRED #community/github/COPILOT_CLI_SETUPmd

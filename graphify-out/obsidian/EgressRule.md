@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Docker Deploy Scripts"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Docker_Deploy_Scripts
 ---
 
 # EgressRule
@@ -21,4 +21,4 @@ tags:
 - [[Represents an egress allowdeny rule.]] - `rationale_for` [EXTRACTED]
 - [[egress_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts

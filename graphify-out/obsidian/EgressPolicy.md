@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Security Docs"
+community: "Gateway Test Suite"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # EgressPolicy
@@ -113,4 +113,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Docs
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

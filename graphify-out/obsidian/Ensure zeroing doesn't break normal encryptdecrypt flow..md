@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Audit Export Pipeline"
 location: "L783"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Audit_Export_Pipeline
 ---
 
 # Ensure zeroing doesn't break normal encrypt/decrypt flow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_encrypt_decrypt_still_works_after_zeroing()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline

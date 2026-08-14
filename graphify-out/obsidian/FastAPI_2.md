@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Docs"
 location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Security_Docs
 ---
 
 # FastAPI
@@ -20,4 +20,4 @@ tags:
 - [[_make_app()]] - `references` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Security_Docs

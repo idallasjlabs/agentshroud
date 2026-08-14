@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "URL/Domain Validation Tests"
+community: "Egress & RBAC Security Core"
 location: "L186"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/URL/Domain_Validation_Tests
+  - community/Egress__RBAC_Security_Core
 ---
 
 # FileSandbox
@@ -96,4 +96,4 @@ tags:
 - [[test_privilege_separation.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/URL/Domain_Validation_Tests
+#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core

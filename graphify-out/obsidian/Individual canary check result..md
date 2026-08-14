@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "rationale"
-community: "SOC Collaborator Lifecycle"
+community: "Gateway Test Suite"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/Gateway_Test_Suite
 ---
 
 # Individual canary check result.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CanaryCheck]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

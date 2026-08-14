@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+community: "Gateway Test Suite"
 location: "L381"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+  - community/Gateway_Test_Suite
 ---
 
 # Get session context for injection into agent request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_session_context()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

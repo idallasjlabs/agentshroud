@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "MCP Policy Engine"
+community: "Gateway Test Suite"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Gateway_Test_Suite
 ---
 
 # Config with strict thresholds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[strict_config()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

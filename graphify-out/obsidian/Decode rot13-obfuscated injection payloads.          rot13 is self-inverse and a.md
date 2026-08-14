@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "SOC RBAC & Auth"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/SOC_RBAC__Auth
 ---
 
 # Decode rot13-obfuscated injection payloads.          rot13 is self-inverse and a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.decode_rot13()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth

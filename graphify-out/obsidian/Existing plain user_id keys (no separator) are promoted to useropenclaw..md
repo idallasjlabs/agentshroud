@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Gateway Test Suite"
 location: "L264"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Existing plain user_id keys (no separator) are promoted to user::openclaw.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_legacy_session_promoted_on_load()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

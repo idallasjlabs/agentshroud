@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Security Docs"
+community: "Gateway Test Suite"
 location: "L499"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Egress filter should be available for MCP network calls.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_egress_filter_blocks_mcp_exfil()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Architecture Docs"
+community: "Auth & Exception Types"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Architecture_Docs
+  - community/Auth__Exception_Types
 ---
 
 # EntropyCalculator
@@ -47,4 +47,4 @@ tags:
 - [[test_dns_filter.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Architecture_Docs
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

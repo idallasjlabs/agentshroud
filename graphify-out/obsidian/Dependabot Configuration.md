@@ -1,11 +1,11 @@
 ---
 source_file: ".github/dependabot.yml"
 type: "code"
-community: ".github/workflows"
+community: "AGENTS.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/github/workflows
+  - community/AGENTSmd
 ---
 
 # Dependabot Configuration
@@ -14,4 +14,4 @@ tags:
 - [[Presidio-Anonymizer 2.2.364 Version Pin-Out]] - `rationale_for` [EXTRACTED]
 - [[gatewayrequirements.txt Dependency File]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/github/workflows
+#graphify/code #graphify/EXTRACTED #community/AGENTSmd

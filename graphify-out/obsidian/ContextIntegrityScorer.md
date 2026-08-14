@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "Audit Export Pipeline"
+community: "Gateway Test Suite"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Gateway_Test_Suite
 ---
 
 # ContextIntegrityScorer
@@ -25,4 +25,4 @@ tags:
 - [[scorer()]] - `calls` [EXTRACTED]
 - [[test_context_integrity.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "Setup Docs"
+community: "Gateway Test Suite"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Configuration for resource limits.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ResourceLimits]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Setup_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

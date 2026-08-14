@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Test Suite"
 location: "L161"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # D - Denial of Service
@@ -17,4 +17,4 @@ tags:
 - [[Threat Context Window Stuffing]] - `contains` [EXTRACTED]
 - [[Threat Resource Exhaustion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

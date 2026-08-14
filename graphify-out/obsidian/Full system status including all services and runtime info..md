@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "docs/project"
+community: "Gateway Test Suite"
 location: "L233"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Gateway_Test_Suite
 ---
 
 # Full system status including all services and runtime info.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/project
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

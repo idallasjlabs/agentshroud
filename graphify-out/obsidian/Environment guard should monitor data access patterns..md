@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Collaborator Response Templates"
+community: "Auth & Exception Types"
 location: "L605"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Auth__Exception_Types
 ---
 
 # Environment guard should monitor data access patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_env_guard_detects_data_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

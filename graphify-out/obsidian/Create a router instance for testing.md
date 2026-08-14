@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "scripts/sync-cve-registry.py"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/scripts/sync-cve-registrypy
 ---
 
 # Create a router instance for testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[router()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

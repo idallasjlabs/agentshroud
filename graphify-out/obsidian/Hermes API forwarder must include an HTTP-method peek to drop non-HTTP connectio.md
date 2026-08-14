@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_executor.py"
 type: "rationale"
-community: "scripts/export-telegram-history.py"
+community: "Planning Docs"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/export-telegram-historypy
+  - community/Planning_Docs
 ---
 
 # Hermes API forwarder must include an HTTP-method peek to drop non-HTTP connectio
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_lifespan_hermes_forwarder_has_http_peek()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/export-telegram-historypy
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

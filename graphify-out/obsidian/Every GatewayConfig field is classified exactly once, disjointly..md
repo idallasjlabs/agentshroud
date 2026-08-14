@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "docs/reference"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/docs/reference
 ---
 
 # Every GatewayConfig field is classified exactly once, disjointly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_field_partition_is_disjoint_and_covers_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/docs/reference

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Collaborator Prompt Safety"
+community: "Gateway Test Suite"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Safety
+  - community/Gateway_Test_Suite
 ---
 
 # FakeConn
@@ -43,4 +43,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Safety
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "scripts/sync-cve-registry.py"
+community: "docs/testing"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/docs/testing
 ---
 
 # Explicit container_name wins over the 'agentshroud-{id}' convention —     regres
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_bot_config_resolved_container_name_uses_explicit_override()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/docs/testing

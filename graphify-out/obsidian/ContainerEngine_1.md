@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # ContainerEngine
@@ -15,4 +15,4 @@ tags:
 - [[DockerEngine]] - `inherits` [EXTRACTED]
 - [[PodmanEngine]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

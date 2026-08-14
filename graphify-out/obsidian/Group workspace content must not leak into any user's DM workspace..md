@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "File Sandbox"
 location: "L148"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/File_Sandbox
 ---
 
 # Group workspace content must not leak into any user's DM workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupMemoryInvisibleFromDM]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Gateway Test Suite"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Gateway_Test_Suite
 ---
 
 # Health Checks
@@ -23,4 +23,4 @@ tags:
 - [[Related Notes_67]] - `contains` [EXTRACTED]
 - [[Security Health Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

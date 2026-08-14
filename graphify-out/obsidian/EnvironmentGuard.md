@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Collaborator Response Templates"
+community: "Auth & Exception Types"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Collaborator_Response_Templates
+  - community/Auth__Exception_Types
 ---
 
 # EnvironmentGuard
@@ -87,4 +87,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Collaborator_Response_Templates
+#graphify/code #graphify/INFERRED #community/Auth__Exception_Types

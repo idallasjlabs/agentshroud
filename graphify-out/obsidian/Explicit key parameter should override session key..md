@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Audit Export Pipeline"
+community: "docs/vault"
 location: "L201"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/docs/vault
 ---
 
 # Explicit key parameter should override session key.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_explicit_key_used()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

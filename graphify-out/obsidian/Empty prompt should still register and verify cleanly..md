@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Audit Export Pipeline"
+community: "docs/vault"
 location: "L195"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/docs/vault
 ---
 
 # Empty prompt should still register and verify cleanly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_empty_prompt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

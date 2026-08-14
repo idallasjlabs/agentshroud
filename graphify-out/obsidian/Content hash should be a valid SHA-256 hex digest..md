@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "Bot Container Scripts"
+community: "docs/vault"
 location: "L76"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/docs/vault
 ---
 
 # Content hash should be a valid SHA-256 hex digest.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_hash_is_sha256()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

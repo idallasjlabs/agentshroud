@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "rationale"
-community: "Tool Chain Analyzer"
+community: "Gateway Test Suite"
 location: "L85"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Tool_Chain_Analyzer
+  - community/Gateway_Test_Suite
 ---
 
 # Intercept builtins.open for specific paths; delegate everything else.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_patch_open()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain_Analyzer
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

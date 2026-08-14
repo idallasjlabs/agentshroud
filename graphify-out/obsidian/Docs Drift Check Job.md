@@ -1,17 +1,14 @@
 ---
 source_file: ".github/workflows/ci.yml"
 type: "code"
-community: "AGENTS.md"
+community: "docs/diagrams"
 location: "lines 257-278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AGENTSmd
+  - community/docs/diagrams
 ---
 
 # Docs Drift Check Job
 
-## Connections
-- [[gateway__init__.py __version__]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/AGENTSmd
+#graphify/code #graphify/EXTRACTED #community/docs/diagrams

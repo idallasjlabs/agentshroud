@@ -19,7 +19,7 @@ tags:
 - [[3) DEFINITION OF DONE (DoD)]] - `contains` [EXTRACTED]
 - [[4) LANGUAGE & TOOLING STANDARDS]] - `contains` [EXTRACTED]
 - [[5) ENVIRONMENT SETUP]] - `contains` [EXTRACTED]
-- [[6) SECURITY & SAFETY REQUIREMENTS]] - `contains` [EXTRACTED]
+- [[6) SECURITY & SAFETY REQUIREMENTS_1]] - `contains` [EXTRACTED]
 - [[7) CODEX CLI OPERATIONAL RULES]] - `contains` [EXTRACTED]
 - [[8) CODEX CLI CONFIGURATION]] - `contains` [EXTRACTED]
 - [[AGENTS]] - `contains` [EXTRACTED]
