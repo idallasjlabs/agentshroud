@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "branding/colors"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/branding/colors
 ---
 
 # Process Tool Actions (for background sessions)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[⚠️ PTY Mode Required!]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/branding/colors

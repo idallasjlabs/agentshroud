@@ -12,7 +12,7 @@ tags:
 # ProgressiveLockdown
 
 ## Connections
-- [[.__init__()_38]] - `calls` [EXTRACTED]
+- [[.__init__()_37]] - `calls` [EXTRACTED]
 - [[.__init__()_105]] - `method` [EXTRACTED]
 - [[._get_state()]] - `method` [EXTRACTED]
 - [[.all_statuses()]] - `method` [EXTRACTED]
@@ -31,7 +31,7 @@ tags:
 - [[.test_reset_removes_suspended_state()]] - `calls` [EXTRACTED]
 - [[.test_reset_true_for_known_user()]] - `calls` [EXTRACTED]
 - [[.test_suspended_level_at_10_blocks()]] - `calls` [EXTRACTED]
-- [[Any_20]] - `uses` [INFERRED]
+- [[Any_21]] - `uses` [INFERRED]
 - [[FakePipelineResult]] - `uses` [INFERRED]
 - [[FakeRBAC]] - `uses` [INFERRED]
 - [[PassthroughPipeline]] - `uses` [INFERRED]

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # PodmanEngine.compose_up(file, detach) / compose_down(file)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_24]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

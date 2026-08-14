@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "docs/operations"
+community: "Setup Docs"
 location: "L476"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Setup_Docs
 ---
 
 # Post-Incident Activities
@@ -17,4 +17,4 @@ tags:
 - [[Lessons Learned Integration]] - `contains` [EXTRACTED]
 - [[Post-Incident Review Template]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

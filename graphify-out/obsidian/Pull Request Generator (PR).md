@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-pr/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "scripts/deploy.sh"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/scripts/deploysh
 ---
 
 # Pull Request Generator (PR)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_26]] - `contains` [EXTRACTED]
 - [[Usage_27]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/scripts/deploysh

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "document"
-community: "docs/operations"
+community: "Gateway Test Suite"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Gateway_Test_Suite
 ---
 
 # Prerequisites
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

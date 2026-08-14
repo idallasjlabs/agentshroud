@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
-location: "L382"
+community: "Cross-Bot Trust Ledger"
+location: "L390"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Cross-Bot_Trust_Ledger
 ---
 
 # Proxies Telegram Bot API calls through the security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TelegramAPIProxy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger

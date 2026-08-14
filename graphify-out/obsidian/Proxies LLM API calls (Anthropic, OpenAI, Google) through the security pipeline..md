@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
 community: "Gateway Test Suite"
-location: "L98"
+location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

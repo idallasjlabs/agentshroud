@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Setup Docs"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Docs
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[incident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

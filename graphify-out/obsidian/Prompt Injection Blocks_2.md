@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "docs/vault"
+community: "docs/redteam"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/redteam
 ---
 
 # Prompt Injection Blocks
@@ -22,4 +22,4 @@ tags:
 - [[Tool Result Injections]] - `contains` [EXTRACTED]
 - [[input_normalizer.py_3]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/docs/redteam

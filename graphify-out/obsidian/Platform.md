@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Gateway Test Suite"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Gateway_Test_Suite
 ---
 
 # Platform
@@ -21,4 +21,4 @@ tags:
 - [[str]] - `inherits` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

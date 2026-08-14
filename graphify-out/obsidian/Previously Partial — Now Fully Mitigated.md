@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "Security Docs"
+community: "docs/project"
 location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/docs/project
 ---
 
 # Previously Partial — Now Fully Mitigated
@@ -17,4 +17,4 @@ tags:
 - [[CVE-2026-34425 — CVSS 5.4 MEDIUM — Preflight Validation Bypass (Shell-Bleed)]] - `contains` [EXTRACTED]
 - [[CVE-2026-3690 — CVSS 7.4 HIGH — Canvas Authentication Bypass]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/project

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reviews/prompt-injection-assessment-2026-02-25.md"
 type: "document"
-community: "docs/reviews"
+community: "Gateway Security Module"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/reviews
+  - community/Gateway_Security_Module
 ---
 
 # Prompt Injection Assessment v0.7.0
@@ -16,4 +16,4 @@ tags:
 - [[Prompt Injection Gaps (multilingual, chat format, LLaMA tokens, payload splitting, crescendo)]] - `documents` [EXTRACTED]
 - [[v0.8.0 Recommendations (Fix ContextGuard enforcement, add 15+ patterns, encoding normalization)]] - `proposes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/reviews
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

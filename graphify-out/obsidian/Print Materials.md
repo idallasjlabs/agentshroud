@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "branding/guidelines"
+community: "docs/diagrams"
 location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/docs/diagrams
 ---
 
 # Print Materials
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Brand Applications]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/guidelines
+#graphify/document #graphify/EXTRACTED #community/docs/diagrams

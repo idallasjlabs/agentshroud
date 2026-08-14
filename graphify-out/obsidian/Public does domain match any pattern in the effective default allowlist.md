@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Bot Skill Config"
 location: "L307"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_Skill_Config
 ---
 
 # Public: does *domain* match any pattern in the effective default allowlist?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.matches_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

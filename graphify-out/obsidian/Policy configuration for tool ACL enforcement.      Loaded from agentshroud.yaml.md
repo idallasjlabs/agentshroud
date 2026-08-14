@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "File Sandbox"
 location: "L171"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/File_Sandbox
 ---
 
 # Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolACLConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

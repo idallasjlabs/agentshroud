@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "PromptGuard Encoding Detection"
 location: "L72"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Proxy_Config
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # ProxyResult
@@ -31,4 +31,4 @@ tags:
 - [[test_mcp_proxy_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config
+#graphify/code #graphify/INFERRED #community/PromptGuard_Encoding_Detection

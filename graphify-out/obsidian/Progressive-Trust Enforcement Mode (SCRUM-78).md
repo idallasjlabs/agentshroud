@@ -1,10 +1,10 @@
 ---
 source_file: "docker/README.md"
-type: "concept"
+type: "document"
 community: "docker/README.md"
-location: "docker/README.md:498"
+location: "L498"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
   - community/docker/READMEmd
 ---
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
 - [[README_4]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docker/READMEmd
+#graphify/document #graphify/EXTRACTED #community/docker/READMEmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Security Docs"
+community: "Setup Docs"
 location: "L339"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Setup_Docs
 ---
 
 # Principle: You Decide What The Agent Sees
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Data Flow Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

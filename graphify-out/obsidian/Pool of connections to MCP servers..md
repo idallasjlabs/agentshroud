@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Collaborator Prompt Safety"
 location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Collaborator_Prompt_Safety
 ---
 
 # Pool of connections to MCP servers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ConnectionPool]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Safety

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Architecture Docs"
+community: "scripts/generate_branding_assets.py"
 location: "L290"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/scripts/generate_branding_assetspy
 ---
 
 # Port Mappings and Auto-Detection
@@ -16,4 +16,4 @@ tags:
 - [[Default Port Allocation]] - `contains` [EXTRACTED]
 - [[Multi-Instance Support]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/scripts/generate_branding_assetspy

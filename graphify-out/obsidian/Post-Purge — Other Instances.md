@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/history-purge-plan.md"
 type: "document"
-community: "Security Docs"
+community: "docs/vault"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/docs/vault
 ---
 
 # Post-Purge — Other Instances
@@ -17,4 +17,4 @@ tags:
 - [[Pi]] - `contains` [EXTRACTED]
 - [[Trillian (when back online)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/vault

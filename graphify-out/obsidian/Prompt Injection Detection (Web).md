@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "concept"
-community: "Security Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Prompt Injection Detection (Web)
@@ -16,4 +16,4 @@ tags:
 - [[P2 High Priority Incidents]] - `contains` [EXTRACTED]
 - [[WebContentScanner_2]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Security_Docs
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

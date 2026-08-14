@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Test Suite"
 location: "L267"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Planned Features: Write Requirements
@@ -17,4 +17,4 @@ tags:
 - [[Feature OpenSCAP Scanning (Phase 3A)]] - `contains` [EXTRACTED]
 - [[Feature SSH Proxy (Phase 4)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

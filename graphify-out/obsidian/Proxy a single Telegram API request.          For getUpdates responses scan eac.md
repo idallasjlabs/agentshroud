@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
-location: "L2909"
+community: "Bot Skill Config"
+location: "L2917"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Bot_Skill_Config
 ---
 
 # Proxy a single Telegram API request.          For getUpdates responses: scan eac
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._proxy_request_impl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "Planning Docs"
+community: "Bot Skill Config"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Problem
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

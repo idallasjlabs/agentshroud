@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/canvas_proxy.py"
 type: "rationale"
-community: "Gateway Proxy Layer"
+community: "Architecture Docs"
 location: "L141"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Architecture_Docs
 ---
 
 # Proxy an HTTP request after validating Basic Auth.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_handle_http()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/rationale #graphify/EXTRACTED #community/Architecture_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Audit Export Pipeline"
 location: "L581"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer_Pipeline
+  - community/Audit_Export_Pipeline
 ---
 
 # PromptGuard
@@ -39,7 +39,7 @@ tags:
 - [[.test_warn_threshold()]] - `calls` [EXTRACTED]
 - [[.test_write_baseline_json()]] - `calls` [EXTRACTED]
 - [[.verify_system_prompt()]] - `method` [EXTRACTED]
-- [[Any_34]] - `uses` [INFERRED]
+- [[Any_36]] - `uses` [INFERRED]
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
 - [[Detect and block prompt injection attempts.]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `uses` [INFERRED]
@@ -123,7 +123,7 @@ tags:
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[canary_pipeline()]] - `calls` [EXTRACTED]
@@ -159,4 +159,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/INFERRED #community/Audit_Export_Pipeline

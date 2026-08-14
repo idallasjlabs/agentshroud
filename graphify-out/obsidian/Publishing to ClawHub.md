@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Custom Skills"
+community: "Gateway Test Suite"
 location: "L355"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Gateway_Test_Suite
 ---
 
 # Publishing to ClawHub
@@ -17,4 +17,4 @@ tags:
 - [[Step 2 Test Locally]] - `contains` [EXTRACTED]
 - [[Step 3 Publish]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Enforce-Mode Auto-Revert"
 location: "L153"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Proxy_Config
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # PrivateAccessAttempt
@@ -20,4 +20,4 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config
+#graphify/code #graphify/INFERRED #community/Enforce-Mode_Auto-Revert

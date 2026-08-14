@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "SOC Service Manager"
+community: "Tool Chain Analyzer"
 location: "L377"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager
+  - community/Tool_Chain_Analyzer
 ---
 
 # Pull the latest image then restart the container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.update_service()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Service_Manager
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain_Analyzer

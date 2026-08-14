@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "browser-extension/README.md"
+community: "docs/vault"
 location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-extension/READMEmd
+  - community/docs/vault
 ---
 
 # Privacy Features
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Browser Extension]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-extension/READMEmd
+#graphify/document #graphify/EXTRACTED #community/docs/vault

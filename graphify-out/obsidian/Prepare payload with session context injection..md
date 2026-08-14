@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "rationale"
-community: "URL/Domain Validation Tests"
+community: "Planning Docs"
 location: "L280"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Planning_Docs
 ---
 
 # Prepare payload with session context injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._prepare_session_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ps/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "docs/claude-security-audit-prompt.md"
 location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/claude-security-audit-promptmd
 ---
 
 # Post-Deployment Verification
@@ -17,4 +17,4 @@ tags:
 - [[Sign-Off_1]] - `contains` [EXTRACTED]
 - [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/docs/claude-security-audit-promptmd

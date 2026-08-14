@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Setup Docs"
+community: "scripts/promote-firmware.sh"
 location: "L348"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/scripts/promote-firmwaresh
 ---
 
 # Problem: Approved device still can't connect
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Troubleshooting_22]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/scripts/promote-firmwaresh

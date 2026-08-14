@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "docs/vault"
+community: "Gateway Security Module"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Security_Module
 ---
 
 # PromptGuard
@@ -31,4 +31,4 @@ tags:
 - [[Weighted Pattern Scoring (26+ rules, score cap 5.0)]] - `implements` [EXTRACTED]
 - [[input_normalizer.py_2]] - `depends_on` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Security_Module

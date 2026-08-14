@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "branding/guidelines"
+community: "Architecture Docs"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/Architecture_Docs
 ---
 
 # Primary Color Application
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Color Usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/guidelines
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

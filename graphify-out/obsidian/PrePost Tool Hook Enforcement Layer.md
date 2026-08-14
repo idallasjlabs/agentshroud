@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Pre/Post Tool Hook Enforcement Layer
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CICD Quality Gates (14 jobs, 6 workflows)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

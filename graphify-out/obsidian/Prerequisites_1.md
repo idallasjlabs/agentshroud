@@ -1,12 +1,12 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "docker/QUICKSTART.md"
+community: "Bot Skill Config"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/QUICKSTARTmd
+  - community/Bot_Skill_Config
 ---
 
 # Prerequisites
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/QUICKSTARTmd
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

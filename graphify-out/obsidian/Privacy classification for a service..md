@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Gateway Test Suite"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Gateway_Test_Suite
 ---
 
 # Privacy classification for a service.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ServicePrivacy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

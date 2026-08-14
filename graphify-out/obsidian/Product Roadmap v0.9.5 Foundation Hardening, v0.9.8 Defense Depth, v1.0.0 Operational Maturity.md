@@ -1,11 +1,11 @@
 ---
 source_file: "docs/agentshroud-knowledge.md"
 type: "concept"
-community: "docs/agentshroud-knowledge.md"
+community: "gateway/tools"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/agentshroud-knowledgemd
+  - community/gateway/tools
 ---
 
 # Product Roadmap: v0.9.5 Foundation Hardening, v0.9.8 Defense Depth, v1.0.0 Operational Maturity
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[agentshroud-knowledge]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/agentshroud-knowledgemd
+#graphify/concept #graphify/EXTRACTED #community/gateway/tools

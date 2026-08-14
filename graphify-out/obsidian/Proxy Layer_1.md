@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "docs/diagrams"
+community: "Bot Skill Config"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Bot_Skill_Config
 ---
 
 # Proxy Layer
@@ -17,4 +17,4 @@ tags:
 - [[ssh_proxy (approved hosts only)]] - `shares_data_with` [EXTRACTED]
 - [[web_proxy.py (domain allowlist engine)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/docs/diagrams
+#graphify/image #graphify/EXTRACTED #community/Bot_Skill_Config

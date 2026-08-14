@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/setup-slack.md"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/setup-slackmd
 ---
 
 # ProxyDashboard
 
 ## Connections
-- [[.__init__()_12]] - `method` [EXTRACTED]
+- [[.__init__()_7]] - `method` [EXTRACTED]
 - [[.get_display()]] - `method` [EXTRACTED]
 - [[.get_report()]] - `method` [EXTRACTED]
 - [[.record_message_proxied()]] - `method` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[test_dashboard_uptime()]] - `calls` [EXTRACTED]
 - [[test_proxy_dashboard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/setup-slackmd

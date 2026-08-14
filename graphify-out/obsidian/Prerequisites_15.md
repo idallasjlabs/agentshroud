@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Bot Skill Config"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Bot_Skill_Config
 ---
 
 # Prerequisites
@@ -17,4 +17,4 @@ tags:
 - [[Secret Safety (Mandatory)]] - `contains` [EXTRACTED]
 - [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

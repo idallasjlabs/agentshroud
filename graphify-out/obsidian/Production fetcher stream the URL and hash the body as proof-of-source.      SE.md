@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "skills/openclaw"
 location: "L72"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/skills/openclaw
 ---
 
 # Production fetcher: stream the URL and hash the body as proof-of-source.      SE
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[make_httpx_fetcher()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw

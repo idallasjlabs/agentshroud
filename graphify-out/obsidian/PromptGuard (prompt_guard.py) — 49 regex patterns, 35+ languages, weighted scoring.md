@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "code"
-community: "Security Docs"
+community: "Bot Skill Config"
 location: "gateway/security/prompt_guard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Skill_Config
 ---
 
 # PromptGuard (prompt_guard.py) — 49 regex patterns, 35+ languages, weighted scoring
@@ -17,4 +17,4 @@ tags:
 - [[OWASP Agentic AI (ASI) Coverage (ASI-01 through ASI-10)]] - `mapped_to` [EXTRACTED]
 - [[SecurityPipeline (proxypipeline.py) — Central inboundoutbound security orchestration]] - `orchestrates` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

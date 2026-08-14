@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-socrates/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Bot Container Scripts"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Bot_Container_Scripts
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts

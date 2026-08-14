@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.__init__()_104]] - `references` [EXTRACTED]
 - [[.default()]] - `method` [EXTRACTED]
-- [[.from_dict()_9]] - `method` [EXTRACTED]
+- [[.from_dict()_10]] - `method` [EXTRACTED]
 - [[Privacy policy configuration.      Loaded from agentshroud.yaml `privacy` secti]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]

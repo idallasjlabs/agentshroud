@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/prompt-injection-assessment-2026-02-25.md"
 type: "document"
-community: "Planning Docs"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Prompt Injection Assessment — AgentShroud v0.7.0
@@ -18,4 +18,4 @@ tags:
 - [[prompt-injection-assessment-2026-02-25]] - `contains` [EXTRACTED]
 - [[v0.8.0 Recommendations (Priority Order)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

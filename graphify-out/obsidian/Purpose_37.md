@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-apollo/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "skills/openclaw"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/skills/openclaw
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

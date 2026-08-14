@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/deployment-diagram.md"
-type: "concept"
-community: "Architecture Docs"
+source_file: "docs/operations/deployment-procedure.md"
+type: "document"
+community: "Gateway Test Suite"
+location: "L70"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Proxy Mode (Recommended)
 
 ## Connections
-- [[ADR-001 Transparent Proxy Decision]] - `implements` [EXTRACTED]
-- [[Deployment Modes]] - `contains` [EXTRACTED]
-- [[Website AgentShroud Infrastructure Section]] - `conceptually_related_to` [INFERRED]
+- [[Deployment Modes_1]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
