@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "scripts/triage-cve-mitigations.py"
+community: "Gateway Test Suite"
 location: "L858"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/triage-cve-mitigationspy
+  - community/Gateway_Test_Suite
 ---
 
 # Render a Python list-of-strings literal matching the file's style.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_py_list_literal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/triage-cve-mitigationspy
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/redteam/01-enforce-by-default.md"
 type: "concept"
-community: "Planning Docs"
+community: "Bot Skill Config"
 location: "line 17"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Planning_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Remediation: Four Core Modules Must Default Enforce (PII, PromptInjection, Egress, MCP Proxy)
@@ -16,4 +16,4 @@ tags:
 - [[Issue PII Redaction Disabled (spaCyPresidio)]] - `addresses` [INFERRED]
 - [[v0.8.0 Watchtower (Security Fixes + Module Wiring)]] - `addresses` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Planning_Docs
+#graphify/concept #graphify/INFERRED #community/Bot_Skill_Config

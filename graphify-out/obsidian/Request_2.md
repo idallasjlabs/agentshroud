@@ -1,17 +1,20 @@
 ---
-source_file: "chatbot/main.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "chatbot/main.py"
-location: "L183"
+community: "docs/README.md"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/docs/READMEmd
 ---
 
 # Request
 
 ## Connections
-- [[chat()]] - `references` [EXTRACTED]
+- [[auth_dep()_1]] - `references` [EXTRACTED]
+- [[decide_approval()]] - `references` [EXTRACTED]
+- [[list_pending_approvals()]] - `references` [EXTRACTED]
+- [[submit_approval_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/docs/READMEmd

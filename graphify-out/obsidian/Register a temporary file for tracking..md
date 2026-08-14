@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "LLM Proxy Resource Guard"
+community: "Gateway Test Suite"
 location: "L401"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/Gateway_Test_Suite
 ---
 
 # Register a temporary file for tracking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.register_temp_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

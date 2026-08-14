@@ -1,11 +1,11 @@
 ---
 source_file: "docs/redteam/plan.md"
 type: "document"
-community: "docs/redteam"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/redteam
+  - community/Bot_Skill_Config
 ---
 
 # Red Team Assessment Plan (Steven Hay, Feb 2026)
@@ -19,4 +19,4 @@ tags:
 - [[Research references Attacker Moves Second, Agents Rule of Two, Log-To-Leak, ToolHijacker, CVE-2026-22708]] - `cites` [EXTRACTED]
 - [[STPA-Sec methodology (MITLeveson) for control structure analysis]] - `uses` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/redteam
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

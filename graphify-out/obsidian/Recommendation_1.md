@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/soc2-attestation-path.md"
 type: "document"
-community: "docs/compliance"
+community: "Gateway Test Suite"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/compliance
+  - community/Gateway_Test_Suite
 ---
 
 # Recommendation
@@ -20,4 +20,4 @@ tags:
 - [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
 - [[SOC 2 Type II — Attestation Path & GoNo-Go Scoping]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/compliance
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

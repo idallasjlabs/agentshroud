@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "Audit Export Pipeline"
+community: "Telegram Inbound Tests"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Telegram_Inbound_Tests
 ---
 
 # Represents a single audit event.      The ``bot_id`` field identifies which bot
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AuditEvent_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Tests

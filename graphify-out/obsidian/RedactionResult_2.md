@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Gateway Security Module"
+community: "docs/flows"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/docs/flows
 ---
 
 # RedactionResult
@@ -18,4 +18,4 @@ tags:
 - [[prompt_protection.py]] - `contains` [EXTRACTED]
 - [[test_prompt_protection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/docs/flows

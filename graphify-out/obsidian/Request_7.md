@@ -1,27 +1,23 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "SOC Dashboard"
-location: "L2679"
+community: "Gateway Test Suite"
+location: "L61"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Dashboard
+  - community/Gateway_Test_Suite
 ---
 
 # Request
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLError]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[Severity_2]] - `uses` [INFERRED]
-- [[WSEventType]] - `uses` [INFERRED]
-- [[soc_dashboard()]] - `references` [EXTRACTED]
+- [[._handle()_1]] - `references` [EXTRACTED]
+- [[A2APolicyConfig]] - `uses` [INFERRED]
+- [[A2APolicyEngine_1]] - `uses` [INFERRED]
+- [[A2AProxy]] - `uses` [INFERRED]
+- [[HermesA2AForwarder]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Dashboard
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

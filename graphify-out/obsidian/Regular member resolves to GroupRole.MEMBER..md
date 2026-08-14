@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Group RBAC Roles"
+community: "docs/vault"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/docs/vault
 ---
 
 # Regular member resolves to GroupRole.MEMBER.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_member_resolves_to_member_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/rationale #graphify/EXTRACTED #community/docs/vault

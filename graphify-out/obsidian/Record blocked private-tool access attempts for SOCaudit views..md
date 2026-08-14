@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Enforce-Mode Auto-Revert"
 location: "L262"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # Record blocked private-tool access attempts for SOC/audit views.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._record_private_access_attempt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert

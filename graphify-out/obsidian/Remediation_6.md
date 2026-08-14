@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "Planning Docs"
+community: "Bot Skill Config"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Remediation
@@ -22,4 +22,4 @@ tags:
 - [[Step 7 Add credential leak detection to egress filtering]] - `contains` [EXTRACTED]
 - [[Step 8 Verify no credentials remain in agent container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "branding/guidelines"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/branding/guidelines
 ---
 
 # Red Team Adversarial Tester (SEC-OFFENSE)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_33]] - `contains` [EXTRACTED]
 - [[Usage_34]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/branding/guidelines

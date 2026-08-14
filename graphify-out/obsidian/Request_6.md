@@ -1,17 +1,27 @@
 ---
-source_file: "gateway/ingest_api/routes/health.py"
+source_file: "gateway/soc/router.py"
 type: "code"
 community: "Gateway Test Suite"
-location: "L18"
+location: "L2679"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
+  - graphify/INFERRED
   - community/Gateway_Test_Suite
 ---
 
 # Request
 
 ## Connections
-- [[auth_dep()_4]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLError]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[Severity_2]] - `uses` [INFERRED]
+- [[WSEventType]] - `uses` [INFERRED]
+- [[soc_dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

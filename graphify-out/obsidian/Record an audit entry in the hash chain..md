@@ -12,6 +12,6 @@ tags:
 # Record an audit entry in the hash chain.
 
 ## Connections
-- [[._audit()]] - `rationale_for` [EXTRACTED]
+- [[._audit()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

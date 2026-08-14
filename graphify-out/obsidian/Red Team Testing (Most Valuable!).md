@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Bot Container Scripts"
+community: "docs/vault"
 location: "L185"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/docs/vault
 ---
 
 # Red Team Testing (Most Valuable!)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[How to Contribute]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/document #graphify/EXTRACTED #community/docs/vault

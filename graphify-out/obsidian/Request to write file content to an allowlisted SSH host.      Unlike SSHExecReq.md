@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "PII Sanitizer Pipeline"
 location: "L262"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Request to write file content to an allowlisted SSH host.      Unlike SSHExecReq
 
 ## Connections
-- [[SSHWriteFileRequest]] - `rationale_for` [EXTRACTED]
+- [[SSHWriteFileRequest_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "Gateway Proxy Layer"
+community: "docs/operations"
 location: "L235"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/docs/operations
 ---
 
 # Recursively scan a value, appending findings in-place.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._scan_value()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/rationale #graphify/EXTRACTED #community/docs/operations

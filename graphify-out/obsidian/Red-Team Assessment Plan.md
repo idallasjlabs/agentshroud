@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/redteam/plan.md"
 type: "document"
-community: "Custom Skills"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # Red-Team Assessment Plan
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Test Coverage Report (AgentShroud v1.3.0)]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

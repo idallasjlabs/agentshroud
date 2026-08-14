@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/RECOVERY_PLAN.md"
 type: "document"
-community: "Planning Docs"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Recovery Plan v0.4.0
@@ -16,4 +16,4 @@ tags:
 - [[Phase 2 User Actions (Anthropic Credits, iMessage Permission)]] - `contains` [EXTRACTED]
 - [[Recovery Plan Partial (v0.4.0 Released State)]] - `updates` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

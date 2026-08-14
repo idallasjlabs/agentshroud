@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Telegram Proxy Test Suite"
 location: "L171"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer_Pipeline
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # RedactionResult
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[._sanitize_presidio()]] - `references` [EXTRACTED]
 - [[._sanitize_regex()]] - `references` [EXTRACTED]
-- [[.sanitize()_1]] - `references` [EXTRACTED]
+- [[.sanitize()]] - `references` [EXTRACTED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
 - [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite

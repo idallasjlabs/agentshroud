@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: ".github/agents"
+community: "Gateway Test Suite"
 location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/agents
+  - community/Gateway_Test_Suite
 ---
 
 # Report Format
@@ -16,4 +16,4 @@ tags:
 - [[Successful Validation]] - `contains` [EXTRACTED]
 - [[Validation Runner Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/agents
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

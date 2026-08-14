@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "Gateway Ingest API"
-location: "L385"
+community: "PII Sanitizer Pipeline"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # Request
 
 ## Connections
-- [[auth_dep()_3]] - `references` [EXTRACTED]
-- [[dashboard_stats()]] - `references` [EXTRACTED]
-- [[dashboard_ws_token()]] - `references` [EXTRACTED]
-- [[get_collaborators()]] - `references` [EXTRACTED]
-- [[serve_dashboard()]] - `references` [EXTRACTED]
+- [[auth_dep()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

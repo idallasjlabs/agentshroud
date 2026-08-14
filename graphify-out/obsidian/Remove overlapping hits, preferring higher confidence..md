@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "gateway/runtime"
 location: "L506"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/gateway/runtime
 ---
 
 # Remove overlapping hits, preferring higher confidence.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._deduplicate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/gateway/runtime

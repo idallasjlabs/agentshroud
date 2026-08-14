@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Custom Skills"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Custom_Skills
 ---
 
 # Record one enforcement decision for ``module``.          Never raises: an unknow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.record()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Custom_Skills

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "SOC Dashboard"
 location: "L165"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/SOC_Dashboard
 ---
 
 # Regression: 'default' must never appear in agent_id when a named target is resol
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_default_not_used_in_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard

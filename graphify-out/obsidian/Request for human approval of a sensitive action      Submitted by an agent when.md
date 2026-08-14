@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Collaborator Prompt Classifiers"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Request for human approval of a sensitive action      Submitted by an agent when
 
 ## Connections
-- [[ApprovalRequest]] - `rationale_for` [EXTRACTED]
+- [[ApprovalRequest_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

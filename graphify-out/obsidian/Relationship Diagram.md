@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "docs/data"
+community: "skills/openclaw"
 location: "L280"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/data
+  - community/skills/openclaw
 ---
 
 # Relationship Diagram
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Data Dictionary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/data
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

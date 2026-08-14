@@ -1,11 +1,11 @@
 ---
 source_file: "docs/redteam/live-assessment-results.md"
 type: "document"
-community: "docs/redteam"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/redteam
+  - community/Bot_Skill_Config
 ---
 
 # Red Team Live Assessment Results (v0.6.0 → v0.7.0)
@@ -17,4 +17,4 @@ tags:
 - [[v0.6.0 Identified Gaps 0% enforcement, no outbound filter, no HITL, no isolation, credentials exposed]] - `identifies` [EXTRACTED]
 - [[v0.7.0 Sprint Status (Session Isolation in progress, others complete)]] - `tracks` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/redteam
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
