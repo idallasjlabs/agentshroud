@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_jira_dev_ticket.py"
+type: "code"
+community: "Security Docs"
+location: "L97"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Security_Docs
+---
+
+# test_issue_url_rejects_empty_cloud_id()
+
+## Connections
+- [[test_jira_dev_ticket.py]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Security_Docs
