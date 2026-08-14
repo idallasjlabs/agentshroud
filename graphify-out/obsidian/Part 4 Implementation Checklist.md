@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Architecture Docs"
+community: "Bot Skill Config"
 location: "L226"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Part 4: Implementation Checklist
@@ -19,4 +19,4 @@ tags:
 - [[Step 4 Integration Testing (Day 2)]] - `contains` [EXTRACTED]
 - [[Step 5 Documentation (Day 3)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

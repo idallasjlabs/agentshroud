@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "web/management-dashboard.html"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/web/management-dashboardhtml
 ---
 
 # Phase 2: Prompt Injection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Attack Phases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/web/management-dashboardhtml

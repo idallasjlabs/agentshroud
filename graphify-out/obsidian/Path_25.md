@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_config_validation.py"
+source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "Forward Routing & Approval"
-location: "L17"
+community: "Slack API Proxy"
+location: "L58"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Forward_Routing__Approval
+  - graphify/EXTRACTED
+  - community/Slack_API_Proxy
 ---
 
 # Path
 
 ## Connections
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
-- [[_parse_env_file()]] - `references` [EXTRACTED]
+- [[GatewayConfig_1]] - `uses` [INFERRED]
+- [[_load()]] - `references` [EXTRACTED]
+- [[_write()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

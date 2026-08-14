@@ -1,12 +1,12 @@
 ---
 source_file: ".github/PULL_REQUEST_TEMPLATE.md"
 type: "document"
-community: ".github/PULL_REQUEST_TEMPLATE.md"
+community: "docs/data"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/PULL_REQUEST_TEMPLATEmd
+  - community/docs/data
 ---
 
 # PULL_REQUEST_TEMPLATE.md
@@ -17,4 +17,4 @@ tags:
 - [[Summary]] - `contains` [EXTRACTED]
 - [[Type of Change]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/PULL_REQUEST_TEMPLATEmd
+#graphify/document #graphify/EXTRACTED #community/docs/data

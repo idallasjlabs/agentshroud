@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "Planning Docs"
+community: "Architecture Docs"
 location: "L148"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Architecture_Docs
 ---
 
 # Performance Benchmarks
@@ -17,4 +17,4 @@ tags:
 - [[Security Module Performance]] - `contains` [EXTRACTED]
 - [[Throughput Improvements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

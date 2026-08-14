@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "concept"
-community: "docs/vault"
+community: "Gateway Test Suite"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # PII Confidence Threshold (pii_min_confidence: 0.9)
@@ -14,4 +14,4 @@ tags:
 - [[PII Pipeline Errors_2]] - `references` [EXTRACTED]
 - [[Presidio Analyzer]] - `configured_by` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

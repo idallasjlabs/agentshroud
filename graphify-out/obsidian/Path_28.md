@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_generate_cve_page.py"
+source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L249"
+community: "Architecture Docs"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Architecture_Docs
 ---
 
 # Path
 
 ## Connections
-- [[._run_generate()]] - `references` [EXTRACTED]
+- [[_load_jobs()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Architecture_Docs

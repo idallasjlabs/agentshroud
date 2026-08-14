@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Egress & RBAC Security Core"
-location: "L65"
+community: "Gateway Test Suite"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Gateway_Test_Suite
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_92]] - `references` [EXTRACTED]
-- [[._compute_file_hash()]] - `references` [EXTRACTED]
-- [[._detect_modification_source()]] - `references` [EXTRACTED]
-- [[.scan_file()]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
+- [[.__init__()_84]] - `references` [EXTRACTED]
+- [[._load_latest_file()]] - `references` [EXTRACTED]
+- [[.save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

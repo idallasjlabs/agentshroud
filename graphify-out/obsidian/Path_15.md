@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Egress & RBAC Security Core"
-location: "L75"
+community: "Progressive Trust Config"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Progressive_Trust_Config
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_93]] - `references` [EXTRACTED]
-- [[.archive_file()]] - `references` [EXTRACTED]
-- [[.validate_memory_write()]] - `references` [EXTRACTED]
-- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
+- [[.__init__()_92]] - `references` [EXTRACTED]
+- [[._compute_file_hash()]] - `references` [EXTRACTED]
+- [[._detect_modification_source()]] - `references` [EXTRACTED]
+- [[.scan_file()]] - `references` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[MemorySecurityConfig]] - `uses` [INFERRED]
-- [[run()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config

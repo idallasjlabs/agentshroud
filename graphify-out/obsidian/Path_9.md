@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L49"
+community: "HTTP Forwarder"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/HTTP_Forwarder
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_60]] - `references` [EXTRACTED]
-- [[._hash_file()]] - `references` [EXTRACTED]
+- [[.__init__()_59]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder

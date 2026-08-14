@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
-location: "L717"
+community: "Bot Skill Config"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Bot_Skill_Config
 ---
 
 # Path
 
 ## Connections
-- [[main()_18]] - `calls` [EXTRACTED]
-- [[run_ghsa_sync()]] - `references` [EXTRACTED]
-- [[sync_agent_ghsa()]] - `references` [EXTRACTED]
+- [[export()]] - `references` [EXTRACTED]
+- [[main()_15]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

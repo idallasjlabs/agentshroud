@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_credential_injector.py"
+source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L209"
+community: "Planning Docs"
+location: "L17"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - graphify/INFERRED
+  - community/Planning_Docs
 ---
 
 # Path
 
 ## Connections
-- [[._make_anthropic_injector()]] - `references` [EXTRACTED]
+- [[ForwardRequest]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
+- [[_parse_env_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Planning_Docs

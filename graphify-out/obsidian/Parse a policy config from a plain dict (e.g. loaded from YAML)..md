@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "MCP Policy Engine"
-location: "L201"
+community: "Bot Skill Config"
+location: "L211"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Bot_Skill_Config
 ---
 
 # Parse a policy config from a plain dict (e.g. loaded from YAML).
 
 ## Connections
-- [[.from_dict()_6]] - `rationale_for` [EXTRACTED]
+- [[.from_dict()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

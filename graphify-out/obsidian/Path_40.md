@@ -1,24 +1,23 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "Competitive Intel Store"
-location: "L946"
+community: "Web Control Center"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Web_Control_Center
 ---
 
 # Path
 
 ## Connections
-- [[CitationVerifier]] - `uses` [INFERRED]
-- [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
-- [[_skills_reload_paths()]] - `references` [EXTRACTED]
-- [[dashboard()]] - `calls` [EXTRACTED]
-- [[dashboard_main()]] - `calls` [EXTRACTED]
-- [[get_config()_1]] - `calls` [EXTRACTED]
-- [[update_config()]] - `calls` [EXTRACTED]
+- [[._run_and_read()_1]] - `calls` [EXTRACTED]
+- [[._run_and_read()]] - `calls` [EXTRACTED]
+- [[._run_twice()]] - `calls` [EXTRACTED]
+- [[.test_verify_flag_accepted_without_error()]] - `calls` [EXTRACTED]
+- [[.test_verify_flag_with_model_ref()]] - `calls` [EXTRACTED]
+- [[_read_env()]] - `references` [EXTRACTED]
+- [[_run_switch()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/code #graphify/EXTRACTED #community/Web_Control_Center

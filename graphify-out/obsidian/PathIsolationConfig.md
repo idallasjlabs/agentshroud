@@ -12,14 +12,14 @@ tags:
 # PathIsolationConfig
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_103]] - `references` [EXTRACTED]
 - [[.config()_4]] - `calls` [EXTRACTED]
 - [[.test_custom_config()_2]] - `calls` [EXTRACTED]
 - [[.test_default_config()_5]] - `calls` [EXTRACTED]
 - [[.test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Configuration for path isolation system.]] - `rationale_for` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]

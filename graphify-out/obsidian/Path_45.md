@@ -1,17 +1,19 @@
 ---
-source_file: "scripts/triage-cve-mitigations.py"
+source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "scripts/triage-cve-mitigations.py"
-location: "L1116"
+community: "scripts/generate-cve-page.py"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/triage-cve-mitigationspy
+  - community/scripts/generate-cve-pagepy
 ---
 
 # Path
 
 ## Connections
-- [[_rel()]] - `references` [EXTRACTED]
+- [[ensure()]] - `references` [EXTRACTED]
+- [[get_font()]] - `calls` [EXTRACTED]
+- [[save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/scripts/generate-cve-pagepy

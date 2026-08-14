@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/skills/manifest.py"
+source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Gateway Security Module"
-location: "L62"
+community: "docs/vault"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/docs/vault
 ---
 
 # Path
 
 ## Connections
-- [[.from_file()]] - `references` [EXTRACTED]
-- [[.from_source()]] - `references` [EXTRACTED]
-- [[deploy_manifest()]] - `references` [EXTRACTED]
-- [[plan_deploy()]] - `references` [EXTRACTED]
-- [[validate_manifest()]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/docs/vault

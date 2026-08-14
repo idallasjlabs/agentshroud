@@ -1,11 +1,11 @@
 ---
 source_file: ".benchmarks/baseline-v1.0.0.json"
 type: "document"
-community: "CHANGELOG.md"
+community: "Gateway Test Suite"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Gateway_Test_Suite
 ---
 
 # Performance Baseline v1.0.0
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[v1.0.0 Fortress Release]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "rationale"
-community: "Gateway Ingest API"
+community: "CHANGELOG.md"
 location: "L75"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - community/CHANGELOGmd
 ---
 
 # Perform security review for a target version (no approval needed).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[review_version()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/CHANGELOGmd

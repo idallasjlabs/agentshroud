@@ -1,26 +1,25 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "PII Config & Test Fixtures"
-location: "L116"
+community: "Collaborator Response Templates"
+location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Collaborator_Response_Templates
 ---
 
 # Path
 
 ## Connections
-- [[.test_alert_dedup()]] - `calls` [EXTRACTED]
-- [[.test_alert_dispatcher_init()]] - `calls` [EXTRACTED]
-- [[.test_alert_dispatcher_write()]] - `calls` [EXTRACTED]
-- [[.test_all_modules_have_copyright()]] - `calls` [EXTRACTED]
-- [[.test_no_eval_or_exec_in_security()]] - `calls` [EXTRACTED]
-- [[.test_no_hardcoded_secrets_in_source()]] - `calls` [EXTRACTED]
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[init_db()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[.__init__()_79]] - `calls` [EXTRACTED]
+- [[._analyze_file_content()]] - `references` [EXTRACTED]
+- [[._analyze_script_file()]] - `references` [EXTRACTED]
+- [[._quarantine_suspicious_files()]] - `calls` [EXTRACTED]
+- [[._scan_git_hooks()]] - `references` [EXTRACTED]
+- [[._scan_package_json()]] - `references` [EXTRACTED]
+- [[._scan_pyproject_toml()]] - `references` [EXTRACTED]
+- [[._scan_setup_py()]] - `references` [EXTRACTED]
+- [[.scan_git_repository()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates

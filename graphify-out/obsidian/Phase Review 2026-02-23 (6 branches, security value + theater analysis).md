@@ -1,11 +1,11 @@
 ---
 source_file: "docs/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "docs/reviews"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/reviews
+  - community/Bot_Skill_Config
 ---
 
 # Phase Review 2026-02-23 (6 branches, security value + theater analysis)
@@ -15,4 +15,4 @@ tags:
 - [[Phase Review 2026-02-24 (1365 tests, async startup, hybrid PII pipeline)]] - `precedes` [INFERRED]
 - [[Security Theater components hardcoded dashboards, empty test files, no-op GitGuard]] - `identifies` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/reviews
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

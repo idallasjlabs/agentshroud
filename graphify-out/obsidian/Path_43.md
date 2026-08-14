@@ -1,18 +1,19 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "scripts/migrate-cve-registry-ghsa.py"
-location: "L472"
+community: "Bot Skill Config"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/migrate-cve-registry-ghsapy
+  - community/Bot_Skill_Config
 ---
 
 # Path
 
 ## Connections
-- [[gather_advisories()]] - `calls` [EXTRACTED]
-- [[load_snapshot()]] - `references` [EXTRACTED]
+- [[_report_date()]] - `calls` [EXTRACTED]
+- [[export_bot()]] - `references` [EXTRACTED]
+- [[main()_14]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/migrate-cve-registry-ghsapy
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

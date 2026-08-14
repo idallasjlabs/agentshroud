@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Gateway Skills System"
-location: "L42"
+community: "Bot Skill Config"
+location: "L62"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Gateway_Skills_System
+  - graphify/EXTRACTED
+  - community/Bot_Skill_Config
 ---
 
 # Path
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
-- [[_build_tree()]] - `references` [EXTRACTED]
-- [[main()_10]] - `calls` [EXTRACTED]
+- [[.from_file()]] - `references` [EXTRACTED]
+- [[.from_source()]] - `references` [EXTRACTED]
+- [[deploy_manifest()]] - `references` [EXTRACTED]
+- [[plan_deploy()]] - `references` [EXTRACTED]
+- [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Skills_System
+#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config

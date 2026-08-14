@@ -1,18 +1,24 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "scripts/export-telegram-history.py"
-location: "L81"
+community: "docs/project"
+location: "L946"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/export-telegram-historypy
+  - community/docs/project
 ---
 
 # Path
 
 ## Connections
-- [[export()]] - `references` [EXTRACTED]
-- [[main()_13]] - `calls` [EXTRACTED]
+- [[CitationVerifier]] - `uses` [INFERRED]
+- [[DraftEntry]] - `uses` [INFERRED]
+- [[IntelReportStore]] - `uses` [INFERRED]
+- [[_skills_reload_paths()]] - `references` [EXTRACTED]
+- [[dashboard()]] - `calls` [EXTRACTED]
+- [[dashboard_main()]] - `calls` [EXTRACTED]
+- [[get_config()_1]] - `calls` [EXTRACTED]
+- [[update_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/export-telegram-historypy
+#graphify/code #graphify/EXTRACTED #community/docs/project

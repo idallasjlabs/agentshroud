@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "Audit Export Pipeline"
-location: "L125"
+community: "Architecture Docs"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Architecture_Docs
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_55]] - `references` [EXTRACTED]
+- [[archive_old_events()]] - `references` [EXTRACTED]
+- [[purge_low_value_events()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Architecture_Docs

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "SOC Service Manager"
+community: "Tool Chain Analyzer"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Service_Manager
+  - community/Tool_Chain_Analyzer
 ---
 
 # PermissionError
@@ -18,4 +18,4 @@ tags:
 - [[.test_running_via_proc_scan()_2]] - `calls` [INFERRED]
 - [[GroupAccessDenied]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Service_Manager
+#graphify/code #graphify/INFERRED #community/Tool_Chain_Analyzer

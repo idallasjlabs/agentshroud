@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Security Pipeline Core"
+community: "SOC RBAC & Auth"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Pipeline_Core
+  - community/SOC_RBAC__Auth
 ---
 
 # PipelineAction
@@ -54,7 +54,7 @@ tags:
 - [[_FakeAttack]] - `uses` [INFERRED]
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[pipeline.py]] - `contains` [EXTRACTED]
 - [[str]] - `inherits` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `imports` [EXTRACTED]
@@ -65,4 +65,4 @@ tags:
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Pipeline_Core
+#graphify/code #graphify/INFERRED #community/SOC_RBAC__Auth

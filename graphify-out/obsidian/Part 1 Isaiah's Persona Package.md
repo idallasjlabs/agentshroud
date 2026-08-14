@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Architecture Docs"
+community: "Bot Skill Config"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Part 1: Isaiah's Persona Package
@@ -18,4 +18,4 @@ tags:
 - [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 - [[Professional Context (for relevant responses)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

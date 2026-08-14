@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Gateway Proxy Layer"
-location: "L332"
+community: "Security Docs"
+location: "L371"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Security_Docs
 ---
 
 # Persist a failover event to the audit chain if wired.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._record_failover_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/rationale #graphify/EXTRACTED #community/Security_Docs

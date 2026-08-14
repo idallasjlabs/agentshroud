@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "rationale"
-community: "Group RBAC Roles"
+community: "File Sandbox"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/File_Sandbox
 ---
 
 # Per-group roles for Telegram group workspace members.      Hierarchy (highest to
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupRole]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox

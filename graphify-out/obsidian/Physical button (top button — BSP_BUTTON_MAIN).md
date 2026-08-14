@@ -1,12 +1,12 @@
 ---
 source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "docs/integrations"
+community: "Gateway Security Module"
 location: "L251"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/integrations
+  - community/Gateway_Security_Module
 ---
 
 # Physical button (top button — BSP_BUTTON_MAIN)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Usage_81]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/integrations
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

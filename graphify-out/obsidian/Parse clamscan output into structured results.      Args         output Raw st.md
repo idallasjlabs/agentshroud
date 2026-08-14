@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Docker Deploy Scripts"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Docker_Deploy_Scripts
 ---
 
 # Parse clamscan output into structured results.      Args:         output: Raw st
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[parse_clamscan_output()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts

@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "voice_gateway/server.py"
+community: "Planning Docs"
 location: "L686"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/voice_gateway/serverpy
+  - community/Planning_Docs
 ---
 
 # POST conversation history to the gateway's OpenAI-compat endpoint.      Fast pat
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_call_llm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/voice_gateway/serverpy
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

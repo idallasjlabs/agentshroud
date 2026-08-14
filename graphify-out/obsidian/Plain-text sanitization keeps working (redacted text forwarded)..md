@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "SOC Dashboard"
 location: "L686"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/SOC_Dashboard
 ---
 
 # Plain-text sanitization keeps working (redacted text forwarded).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_text_sanitization_still_applied()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard

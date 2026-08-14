@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/PRIOR-USE.md"
 type: "document"
-community: "docs/project"
+community: ".github/agents"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/github/agents
 ---
 
 # PRIOR-USE.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Trademark Prior Use Record]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/github/agents

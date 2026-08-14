@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L145"
+community: "Telegram Inbound Tests"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Inbound_Tests
 ---
 
 # Path
 
 ## Connections
-- [[save_report()]] - `references` [EXTRACTED]
+- [[.__init__()_55]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests

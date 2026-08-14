@@ -1,38 +1,38 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Telegram Proxy Test Suite"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer_Pipeline
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # PIISanitizer
 
 ## Connections
-- [[.__init__()_19]] - `method` [EXTRACTED]
+- [[.__init__()_15]] - `method` [EXTRACTED]
 - [[._init_presidio()]] - `method` [EXTRACTED]
 - [[._sanitize_presidio()]] - `method` [EXTRACTED]
 - [[._sanitize_regex()]] - `method` [EXTRACTED]
-- [[.block_credentials()_1]] - `method` [EXTRACTED]
+- [[.block_credentials()]] - `method` [EXTRACTED]
 - [[.disabled_client()]] - `calls` [EXTRACTED]
-- [[.filter_xml_blocks()_1]] - `method` [EXTRACTED]
+- [[.filter_xml_blocks()]] - `method` [EXTRACTED]
 - [[.get_mode()]] - `method` [EXTRACTED]
 - [[.get_supported_entities()]] - `method` [EXTRACTED]
 - [[.no_approval_client()]] - `calls` [EXTRACTED]
 - [[.pipeline()_1]] - `calls` [EXTRACTED]
 - [[.pipeline()]] - `calls` [EXTRACTED]
-- [[.sanitize()_1]] - `method` [EXTRACTED]
+- [[.sanitize()]] - `method` [EXTRACTED]
 - [[.sanitizer()]] - `calls` [EXTRACTED]
 - [[.sanitizer()_1]] - `calls` [EXTRACTED]
 - [[.test_pii_sanitizer_default_enforcement()]] - `calls` [EXTRACTED]
 - [[.test_pii_sanitizer_mode_param()]] - `calls` [EXTRACTED]
 - [[.test_single_message_pipeline_under_100ms()]] - `calls` [EXTRACTED]
-- [[Any_60]] - `uses` [INFERRED]
+- [[Any_62]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
-- [[FastAPI_2]] - `uses` [INFERRED]
+- [[FastAPI_1]] - `uses` [INFERRED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
 - [[PII detection and redaction engine      Attempts to use Microsoft Presidio with]] - `rationale_for` [EXTRACTED]
@@ -127,7 +127,7 @@ tags:
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
-- [[_StubForwarder]] - `uses` [INFERRED]
+- [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_make_pii_sanitizer()]] - `calls` [EXTRACTED]
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
@@ -162,4 +162,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite

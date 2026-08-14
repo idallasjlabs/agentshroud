@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Security Pipeline Core"
+community: "CHEATSHEET.md"
 location: "L51"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Pipeline_Core
+  - community/CHEATSHEETmd
 ---
 
 # PipelineResult
@@ -15,8 +15,8 @@ tags:
 - [[._maybe_record_trust_violation()]] - `references` [EXTRACTED]
 - [[._process_inbound_core()]] - `references` [EXTRACTED]
 - [[._process_outbound_core()]] - `references` [EXTRACTED]
-- [[.process_inbound()_1]] - `references` [EXTRACTED]
-- [[.process_outbound()_2]] - `references` [EXTRACTED]
+- [[.process_inbound()]] - `references` [EXTRACTED]
+- [[.process_outbound()]] - `references` [EXTRACTED]
 - [[.to_dict()_1]] - `method` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[FilterResult]] - `uses` [INFERRED]
@@ -39,4 +39,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Pipeline_Core
+#graphify/code #graphify/INFERRED #community/CHEATSHEETmd

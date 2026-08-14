@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "gateway/README.md"
+community: "Architecture Docs"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gateway/READMEmd
+  - community/Architecture_Docs
 ---
 
 # PII Sanitizer
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Features_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gateway/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

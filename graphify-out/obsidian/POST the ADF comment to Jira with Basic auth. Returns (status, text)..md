@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "rationale"
-community: "Bot Skill Config"
-location: "L227"
+community: "Setup Docs"
+location: "L267"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Docs
 ---
 
 # POST the ADF comment to Jira with Basic auth. Returns (status, text).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[post_comment()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Setup_Docs

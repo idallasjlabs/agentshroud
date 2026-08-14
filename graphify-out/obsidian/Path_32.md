@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/tests/test_multi_host_test.py"
+source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L324"
+community: "Egress Domain Allowlist"
+location: "L73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Egress_Domain_Allowlist
 ---
 
 # Path
 
 ## Connections
-- [[HostResult]] - `uses` [INFERRED]
-- [[HostStatus]] - `uses` [INFERRED]
-- [[MultiHostResult]] - `uses` [INFERRED]
-- [[_run_wrapper()]] - `references` [EXTRACTED]
-- [[_write_exec()]] - `references` [EXTRACTED]
+- [[MCPPolicyAction]] - `uses` [INFERRED]
+- [[MCPPolicyConfig]] - `uses` [INFERRED]
+- [[MCPPolicyEngine]] - `uses` [INFERRED]
+- [[_write()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Egress_Domain_Allowlist

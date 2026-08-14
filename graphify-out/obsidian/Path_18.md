@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L145"
+community: "docs/vault"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/vault
 ---
 
 # Path
 
 ## Connections
-- [[_build_image_targets()]] - `calls` [EXTRACTED]
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[.__init__()_112]] - `references` [EXTRACTED]
+- [[.from_dict()_11]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/docs/vault

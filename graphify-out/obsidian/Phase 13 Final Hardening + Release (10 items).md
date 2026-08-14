@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Planning Docs"
+community: "Gateway Test Suite"
 location: "L319"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Phase 13: Final Hardening + Release (10 items)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v1.0.0 Fortress (Ship-Ready Public Release, 116 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

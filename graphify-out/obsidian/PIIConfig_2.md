@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Telegram Proxy Test Suite"
 location: "L28"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Security_Module
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # PIIConfig
@@ -19,4 +19,4 @@ tags:
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Security_Module
+#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite

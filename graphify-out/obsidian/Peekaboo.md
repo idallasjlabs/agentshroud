@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Gateway Proxy Layer"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Gateway_Proxy_Layer
 ---
 
 # Peekaboo
@@ -22,4 +22,4 @@ tags:
 - [[SKILL_161]] - `contains` [EXTRACTED]
 - [[macOS UI Automation (Peekaboo)]] - `enables` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Gateway_Proxy_Layer

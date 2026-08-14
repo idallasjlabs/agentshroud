@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/tests/test_alert_dispatcher_retry.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "PII Config & Test Fixtures"
-location: "L27"
+community: "gateway/runtime"
+location: "L42"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Config__Test_Fixtures
+  - community/gateway/runtime
 ---
 
 # Path
 
 ## Connections
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[dispatcher()]] - `references` [EXTRACTED]
+- [[Recommendation]] - `uses` [INFERRED]
+- [[ScanResult_2]] - `uses` [INFERRED]
+- [[SkillGuard]] - `uses` [INFERRED]
+- [[SkillsManifest]] - `uses` [INFERRED]
+- [[_build_tree()]] - `references` [EXTRACTED]
+- [[main()_10]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/INFERRED #community/gateway/runtime

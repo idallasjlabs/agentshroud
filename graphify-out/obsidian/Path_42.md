@@ -1,19 +1,20 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "scripts/generate_branding_assets.py"
-location: "L55"
+community: "docs/vault"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/generate_branding_assetspy
+  - community/docs/vault
 ---
 
 # Path
 
 ## Connections
-- [[ensure()]] - `references` [EXTRACTED]
-- [[get_font()]] - `calls` [EXTRACTED]
-- [[save()_1]] - `references` [EXTRACTED]
+- [[_docker_read_file()]] - `references` [EXTRACTED]
+- [[export_hermes()]] - `references` [EXTRACTED]
+- [[export_openclaw()]] - `references` [EXTRACTED]
+- [[main()_13]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/generate_branding_assetspy
+#graphify/code #graphify/EXTRACTED #community/docs/vault

@@ -12,7 +12,7 @@ tags:
 # PathIsolationManager
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_103]] - `method` [EXTRACTED]
 - [[._apply_path_rewriting()]] - `method` [EXTRACTED]
 - [[._check_cross_user_access()]] - `method` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[.rewrite_path()]] - `method` [EXTRACTED]
 - [[.test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Manages per-user path isolation for temporary files and directories.]] - `rationale_for` [EXTRACTED]

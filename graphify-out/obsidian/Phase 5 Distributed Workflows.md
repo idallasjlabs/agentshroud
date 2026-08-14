@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "L341"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Phase 5: Distributed Workflows
@@ -17,4 +17,4 @@ tags:
 - [[Workflow 2 Continuous Development]] - `contains` [EXTRACTED]
 - [[Workflow 3 IoT + AI Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
