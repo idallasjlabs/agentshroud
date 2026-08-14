@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "File Sandbox"
+community: "URL/Domain Validation Tests"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Multiple violations should all be tracked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_multiple_violations_tracked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

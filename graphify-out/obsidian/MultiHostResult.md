@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "gateway/tools"
+community: "docs/vault"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/tools
+  - community/docs/vault
 ---
 
 # MultiHostResult
@@ -22,7 +22,7 @@ tags:
 - [[.test_render_summary_empty()]] - `calls` [EXTRACTED]
 - [[.unreachable()]] - `method` [EXTRACTED]
 - [[Aggregated outcome across all hosts.]] - `rationale_for` [EXTRACTED]
-- [[Path_32]] - `uses` [INFERRED]
+- [[Path_33]] - `uses` [INFERRED]
 - [[TestBuildSshArgv]] - `uses` [INFERRED]
 - [[TestClassify]] - `uses` [INFERRED]
 - [[TestHostResult]] - `uses` [INFERRED]
@@ -38,4 +38,4 @@ tags:
 - [[run_multi_host()]] - `references` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/tools
+#graphify/code #graphify/EXTRACTED #community/docs/vault

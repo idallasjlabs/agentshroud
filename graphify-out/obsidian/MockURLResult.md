@@ -12,7 +12,7 @@ tags:
 # MockURLResult
 
 ## Connections
-- [[.__init__()_178]] - `method` [EXTRACTED]
+- [[.__init__()_188]] - `method` [EXTRACTED]
 - [[.test_browser_security_blocks_high_risk_urls()]] - `calls` [EXTRACTED]
 - [[.test_browser_security_flags_medium_risk_urls()]] - `calls` [EXTRACTED]
 - [[.test_browser_security_skips_non_browser_user_agents()]] - `calls` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Bot Skill Config"
 location: "L159"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Bot_Skill_Config
 ---
 
 # Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GitHub Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

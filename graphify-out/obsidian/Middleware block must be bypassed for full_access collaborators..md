@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L9223"
+community: "docs/project"
+location: "L9292"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/docs/project
 ---
 
 # Middleware block must be bypassed for full_access collaborators.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_full_access_collaborator_passes_despite_middleware_block()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/docs/project

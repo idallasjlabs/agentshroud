@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Kill Switch Config"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Kill_Switch_Config
 ---
 
 # Normalize description by removing misleading language.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._normalize_description()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch_Config

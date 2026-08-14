@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "docs/api"
+community: "docs/vault"
 location: "L338"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/api
+  - community/docs/vault
 ---
 
 # Monitoring System Integration
@@ -16,4 +16,4 @@ tags:
 - [[Prometheus Metrics]] - `contains` [EXTRACTED]
 - [[Webhook Alerts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/api
+#graphify/document #graphify/EXTRACTED #community/docs/vault

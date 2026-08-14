@@ -12,7 +12,7 @@ tags:
 # MockDNSVerdict
 
 ## Connections
-- [[.__init__()_177]] - `method` [EXTRACTED]
+- [[.__init__()_187]] - `method` [EXTRACTED]
 - [[.test_browser_security_blocks_high_risk_urls()]] - `calls` [EXTRACTED]
 - [[.test_browser_security_flags_medium_risk_urls()]] - `calls` [EXTRACTED]
 - [[.test_browser_security_skips_non_browser_user_agents()]] - `calls` [EXTRACTED]

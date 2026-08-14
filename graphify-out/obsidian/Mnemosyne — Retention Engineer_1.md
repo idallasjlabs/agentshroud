@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Planning Docs"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Planning_Docs
 ---
 
 # Mnemosyne — Retention Engineer
@@ -20,4 +20,4 @@ tags:
 - [[SKILL_36]] - `contains` [EXTRACTED]
 - [[System Prompt_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

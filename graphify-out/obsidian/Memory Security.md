@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Security Module"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Security_Module
 ---
 
 # Memory Security
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Modules Initialized]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module

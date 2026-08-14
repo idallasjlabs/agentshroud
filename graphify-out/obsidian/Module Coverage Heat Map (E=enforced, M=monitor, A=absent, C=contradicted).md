@@ -1,12 +1,12 @@
 ---
 source_file: "docs/redteam/feature-priorities.md"
 type: "document"
-community: "docs/redteam"
+community: "Bot Skill Config"
 location: "line 455"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/redteam
+  - community/Bot_Skill_Config
 ---
 
 # Module Coverage Heat Map (E=enforced, M=monitor, A=absent, C=contradicted)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[feature-priorities_1]] - `produces` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/redteam
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

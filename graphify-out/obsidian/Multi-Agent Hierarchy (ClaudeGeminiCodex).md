@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "concept"
-community: "AGENTS.md"
+community: "docs/vault"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/AGENTSmd
+  - community/docs/vault
 ---
 
 # Multi-Agent Hierarchy (Claude/Gemini/Codex)
@@ -14,4 +14,4 @@ tags:
 - [[CLAUDE.md — AgentShroud Governance]] - `references` [EXTRACTED]
 - [[Claude Code — Primary Developer]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/AGENTSmd
+#graphify/concept #graphify/INFERRED #community/docs/vault

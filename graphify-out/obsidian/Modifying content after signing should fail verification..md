@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "Cross-Bot Trust Ledger"
+community: "Gateway Test Suite"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/Gateway_Test_Suite
 ---
 
 # Modifying content after signing should fail verification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_tampered_content_fails()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

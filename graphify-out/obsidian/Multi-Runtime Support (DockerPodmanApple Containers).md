@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "concept"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Multi-Runtime Support (Docker/Podman/Apple Containers)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ADR-006 Multi-Runtime Container Support]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

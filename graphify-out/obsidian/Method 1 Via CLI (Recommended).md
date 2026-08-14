@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Setup Docs"
+community: "scripts/preflight-check.sh"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/scripts/preflight-checksh
 ---
 
 # Method 1: Via CLI (Recommended)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Finding Pending Pairing Requests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/scripts/preflight-checksh

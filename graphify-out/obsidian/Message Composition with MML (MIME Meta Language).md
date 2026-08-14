@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "document"
-community: "skills/openclaw"
+community: "Gateway Test Suite"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Gateway_Test_Suite
 ---
 
 # Message Composition with MML (MIME Meta Language)
@@ -21,4 +21,4 @@ tags:
 - [[Tips_3]] - `contains` [EXTRACTED]
 - [[message-composition]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

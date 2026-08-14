@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Custom Skills"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Custom_Skills
 ---
 
 # ModuleStatsCollector
@@ -31,4 +31,4 @@ tags:
 - [[test_thread_safe_under_concurrency()]] - `calls` [EXTRACTED]
 - [[test_unknown_module_created_on_demand()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Custom_Skills

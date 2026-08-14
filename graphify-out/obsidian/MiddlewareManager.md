@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Security Module Middleware"
+community: "Egress & RBAC Security Core"
 location: "L86"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Module_Middleware
+  - community/Egress__RBAC_Security_Core
 ---
 
 # MiddlewareManager
 
 ## Connections
-- [[.__init__()_18]] - `method` [EXTRACTED]
+- [[.__init__()_13]] - `method` [EXTRACTED]
 - [[._analyze_request_for_rbac()]] - `method` [EXTRACTED]
 - [[._check_cross_session_access()]] - `method` [EXTRACTED]
 - [[._check_rbac_permissions()]] - `method` [EXTRACTED]
@@ -62,7 +62,7 @@ tags:
 - [[ApprovalHardeningConfig]] - `uses` [INFERRED]
 - [[AuditExportConfig_1]] - `uses` [INFERRED]
 - [[AuditExporter]] - `uses` [INFERRED]
-- [[AuthRequired_1]] - `uses` [INFERRED]
+- [[AuthRequired]] - `uses` [INFERRED]
 - [[BrowserSecurityGuard]] - `uses` [INFERRED]
 - [[ConsentFramework]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
@@ -73,14 +73,13 @@ tags:
 - [[EgressMonitorConfig]] - `uses` [INFERRED]
 - [[EnvironmentGuard]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
-- [[FastAPI_2]] - `uses` [INFERRED]
+- [[FastAPI_1]] - `uses` [INFERRED]
 - [[FileSandbox]] - `uses` [INFERRED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
 - [[GitGuard]] - `uses` [INFERRED]
 - [[KeyRotationManager]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
-- [[LogRecord_3]] - `uses` [INFERRED]
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[MCPProxyRequest]] - `uses` [INFERRED]
 - [[MCPResultRequest]] - `uses` [INFERRED]
@@ -100,11 +99,11 @@ tags:
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
-- [[Request_3]] - `uses` [INFERRED]
+- [[Request_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[ResourceGuard]] - `uses` [INFERRED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `shares_data_with` [INFERRED]
 - [[SessionManager]] - `uses` [INFERRED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
@@ -177,7 +176,7 @@ tags:
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
-- [[WebSocket_3]] - `uses` [INFERRED]
+- [[WebSocket_2]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
 - [[_FakeRBAC]] - `uses` [INFERRED]
@@ -197,4 +196,4 @@ tags:
 - [[test_session_isolation.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Module_Middleware
+#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core

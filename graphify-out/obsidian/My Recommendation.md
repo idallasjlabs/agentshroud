@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Security Docs"
+community: "skills/openclaw"
 location: "L353"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/skills/openclaw
 ---
 
 # My Recommendation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Value Proposition]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw

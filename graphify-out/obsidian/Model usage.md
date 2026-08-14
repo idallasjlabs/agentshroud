@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Gateway Test Suite"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Gateway_Test_Suite
 ---
 
 # Model usage
@@ -23,4 +23,4 @@ tags:
 - [[References_5]] - `contains` [EXTRACTED]
 - [[SKILL_151]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

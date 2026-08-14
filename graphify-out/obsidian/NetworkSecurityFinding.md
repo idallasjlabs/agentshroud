@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Gateway Test Suite"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Gateway_Test_Suite
 ---
 
 # NetworkSecurityFinding
@@ -28,4 +28,4 @@ tags:
 - [[network_validator.py]] - `contains` [EXTRACTED]
 - [[test_network_validator.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Test Suite"
 location: "L278"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Multi-Layer Detection Strategy
@@ -17,4 +17,4 @@ tags:
 - [[Layer 3 Multi-Layer Decoding]] - `contains` [EXTRACTED]
 - [[Prompt Injection Detection (Web)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

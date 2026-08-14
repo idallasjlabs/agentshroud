@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
+community: "Gateway Test Suite"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Gateway_Test_Suite
 ---
 
 # # NOTE: api.telegram.org is intentionally NOT listed here.  The bot is
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[http_proxy.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

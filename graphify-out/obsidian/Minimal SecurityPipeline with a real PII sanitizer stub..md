@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Cross-Bot Trust Ledger"
+community: "MCP Proxy Config"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/MCP_Proxy_Config
 ---
 
 # Minimal SecurityPipeline with a real PII sanitizer stub.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_pipeline()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config

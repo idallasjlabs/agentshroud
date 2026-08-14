@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reviews/phase-review-p0-2026-02-23.md"
 type: "rationale"
-community: "docs/reviews"
+community: "Gateway Security Module"
 location: "line 162-172"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/reviews
+  - community/Gateway_Security_Module
 ---
 
 # NOT READY FOR MERGE - Blocking Issues (missing test deps, no fail-safe tests)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase Review P0 Core Pipeline Wiring 2026-02-23]] - `contains` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/reviews
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

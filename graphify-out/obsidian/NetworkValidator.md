@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Egress & RBAC Security Core"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Egress__RBAC_Security_Core
 ---
 
 # NetworkValidator
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
-- [[.__init__()_43]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
+- [[.__init__()_42]] - `calls` [EXTRACTED]
 - [[.__init__()_98]] - `method` [EXTRACTED]
 - [[._parse_service_network_config()]] - `method` [EXTRACTED]
 - [[._validate_container_runtime_config()]] - `method` [EXTRACTED]
@@ -32,13 +32,12 @@ tags:
 - [[.validate_docker_compose_config()]] - `method` [EXTRACTED]
 - [[.validate_runtime_configuration()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
-- [[DriftDetector]] - `semantically_similar_to` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[Path_33]] - `uses` [INFERRED]
+- [[Path_34]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
@@ -69,4 +68,4 @@ tags:
 - [[validate_network_security()]] - `references` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core

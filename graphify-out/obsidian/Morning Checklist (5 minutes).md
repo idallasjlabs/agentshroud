@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/daily-operations.md"
 type: "document"
-community: "docs/runbooks"
+community: "Planning Docs"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Planning_Docs
 ---
 
 # Morning Checklist (5 minutes)
@@ -19,4 +19,4 @@ tags:
 - [[5. Resource Usage]] - `contains` [EXTRACTED]
 - [[Daily Operations Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Planning_Docs

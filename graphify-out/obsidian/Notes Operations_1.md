@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # Notes Operations
@@ -17,4 +17,4 @@ tags:
 - [[Search Notes_1]] - `contains` [EXTRACTED]
 - [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

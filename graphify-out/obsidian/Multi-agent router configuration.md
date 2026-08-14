@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "Telegram Proxy Test Suite"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Multi-agent router configuration
 
 ## Connections
-- [[RouterConfig_1]] - `rationale_for` [EXTRACTED]
+- [[RouterConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "L608"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Next Steps
@@ -17,4 +17,4 @@ tags:
 - [[Implementation Timeline]] - `contains` [EXTRACTED]
 - [[Prerequisites (Before Implementation)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

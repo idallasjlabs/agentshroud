@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
+community: "docs/reference"
 location: "L584"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/docs/reference
 ---
 
 # Monitor mode flags but allows — verify difference from enforce.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_monitor_mode_allows_everything()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/docs/reference

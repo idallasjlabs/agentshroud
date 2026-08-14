@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Progressive Trust Config"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Progressive_Trust_Config
 ---
 
 # MemoryLifecycleManager
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_93]] - `method` [EXTRACTED]
 - [[._cleanup_old_actions()]] - `method` [EXTRACTED]
 - [[._cleanup_old_threats()]] - `method` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[.setup_method()_11]] - `calls` [EXTRACTED]
 - [[.validate_memory_write()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Manages memory file lifecycle and content security.]] - `rationale_for` [EXTRACTED]
@@ -50,4 +50,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config

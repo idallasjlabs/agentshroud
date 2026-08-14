@@ -12,7 +12,7 @@ tags:
 # MultiTurnTracker
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_97]] - `method` [EXTRACTED]
 - [[._add_disclosure_event()]] - `method` [EXTRACTED]
 - [[._analyze_agent_response()]] - `method` [EXTRACTED]
@@ -34,7 +34,7 @@ tags:
 - [[.track_message()]] - `method` [EXTRACTED]
 - [[.tracker()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Main multi-turn disclosure tracking engine.      Maintains session state and sco]] - `rationale_for` [EXTRACTED]

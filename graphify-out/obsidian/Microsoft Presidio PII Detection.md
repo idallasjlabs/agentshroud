@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
 type: "concept"
-community: "docs/vault"
+community: "Gateway Test Suite"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # Microsoft Presidio PII Detection
@@ -14,4 +14,4 @@ tags:
 - [[MiddlewareManager_1]] - `uses` [INFERRED]
 - [[PIISanitizer_4]] - `uses` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/docs/vault
+#graphify/concept #graphify/INFERRED #community/Gateway_Test_Suite

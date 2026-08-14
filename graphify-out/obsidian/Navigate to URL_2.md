@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "Bot Skill Config"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Bot_Skill_Config
 ---
 
 # Navigate to URL
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Usage_90]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "SOC Dashboard"
 location: "L433"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/SOC_Dashboard
 ---
 
 # Minimal app_state for owner-trust tests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_trust_app_state()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard

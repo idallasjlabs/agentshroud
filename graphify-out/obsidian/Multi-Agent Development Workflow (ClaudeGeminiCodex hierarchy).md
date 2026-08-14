@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "docs/vault"
+community: "Bot Skill Config"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # Multi-Agent Development Workflow (Claude/Gemini/Codex hierarchy)
@@ -15,4 +15,4 @@ tags:
 - [[Gemini CLI + Codex (SecondaryTertiary QA Agents)]] - `includes` [EXTRACTED]
 - [[TEAM]] - `defines` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

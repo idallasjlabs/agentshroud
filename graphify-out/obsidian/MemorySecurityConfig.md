@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Progressive Trust Config"
 location: "L97"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress__RBAC_Security_Core
+  - community/Progressive_Trust_Config
 ---
 
 # MemorySecurityConfig
@@ -15,9 +15,9 @@ tags:
 - [[.from_env()_2]] - `method` [EXTRACTED]
 - [[.setup_method()_11]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
-- [[Any_45]] - `uses` [INFERRED]
-- [[Any_46]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
+- [[Any_47]] - `uses` [INFERRED]
+- [[Any_48]] - `uses` [INFERRED]
 - [[Combined memory security configuration.]] - `rationale_for` [EXTRACTED]
 - [[ContentThreat]] - `uses` [INFERRED]
 - [[ContentThreatType]] - `uses` [INFERRED]
@@ -31,8 +31,8 @@ tags:
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[ModificationSource]] - `uses` [INFERRED]
-- [[Path_14]] - `uses` [INFERRED]
 - [[Path_15]] - `uses` [INFERRED]
+- [[Path_16]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[RetentionAction]] - `uses` [INFERRED]
@@ -47,4 +47,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/INFERRED #community/Progressive_Trust_Config

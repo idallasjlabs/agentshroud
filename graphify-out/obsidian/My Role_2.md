@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/IDENTITY.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Gateway Proxy Layer"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Gateway_Proxy_Layer
 ---
 
 # My Role
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IDENTITY.md - Who I Am_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Gateway_Proxy_Layer

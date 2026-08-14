@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "HTTP Forwarder"
+community: "SOC Collaborator Lifecycle"
 location: "L618"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/SOC_Collaborator_Lifecycle
 ---
 
 # Message with both PII and injection — blocked before PII scan.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_mixed_pii_and_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle

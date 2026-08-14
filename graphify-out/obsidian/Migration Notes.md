@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "CHANGELOG.md"
+community: "Gateway Test Suite"
 location: "L891"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Gateway_Test_Suite
 ---
 
 # Migration Notes
@@ -17,4 +17,4 @@ tags:
 - [[v0.3.0 → v0.4.0]] - `contains` [EXTRACTED]
 - [[v0.4.0 → v0.5.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Progressive Trust Config"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Progressive_Trust_Config
 ---
 
 # ModificationSource
 
 ## Connections
 - [[._detect_modification_source()]] - `references` [EXTRACTED]
-- [[.from_dict()_7]] - `calls` [EXTRACTED]
+- [[.from_dict()_8]] - `calls` [EXTRACTED]
 - [[.register_expected_write()]] - `references` [EXTRACTED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[memory_integrity.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config

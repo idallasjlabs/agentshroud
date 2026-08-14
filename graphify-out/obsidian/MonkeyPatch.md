@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "MCP Policy Engine"
+community: "Egress Domain Allowlist"
 location: "L252"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Policy_Engine
+  - community/Egress_Domain_Allowlist
 ---
 
 # MonkeyPatch
@@ -26,4 +26,4 @@ tags:
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[test_decision_records_soc_heatmap()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Policy_Engine
+#graphify/code #graphify/INFERRED #community/Egress_Domain_Allowlist

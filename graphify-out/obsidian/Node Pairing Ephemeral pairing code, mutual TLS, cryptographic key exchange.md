@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "concept"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "Phase 2: Node Pairing"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Node Pairing: Ephemeral pairing code, mutual TLS, cryptographic key exchange
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Distributed OpenClaw Node Architecture (Raspberry Pi 4)]] - `describes` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite

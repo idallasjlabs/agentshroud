@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "HTTP Forwarder"
 location: "L227"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/HTTP_Forwarder
 ---
 
 # Normalize previews to single-line safe text for JSONL + markdown mirrors.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._normalize_preview()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/HTTP_Forwarder

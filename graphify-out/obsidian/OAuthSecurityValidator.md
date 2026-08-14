@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Auth & Exception Types"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Auth__Exception_Types
 ---
 
 # OAuthSecurityValidator
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
-- [[.__init__()_43]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
+- [[.__init__()_42]] - `calls` [EXTRACTED]
 - [[.__init__()_99]] - `method` [EXTRACTED]
 - [[.check_state_reuse()]] - `method` [EXTRACTED]
 - [[.create_consent_cookie()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[.validate_request()]] - `method` [EXTRACTED]
 - [[.verify_pkce()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MFAGuard_2]] - `semantically_similar_to` [INFERRED]
@@ -45,4 +45,4 @@ tags:
 - [[validator()]] - `calls` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types

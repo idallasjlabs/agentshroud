@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # Monitoring System Integration (Webhooks/Prometheus)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Dashboard (WebSocket)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/docs/vault
+#graphify/document #graphify/INFERRED #community/Bot_Skill_Config

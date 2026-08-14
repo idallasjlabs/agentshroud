@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "Custom Skills"
+community: "Gateway Security Module"
 location: "L246"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Gateway_Security_Module
 ---
 
 # Navigate to URL          Security: URL validation, audit logging
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.navigate()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Custom_Skills
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module

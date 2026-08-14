@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # Method 2: Set Permanently (Shell Config)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Switch AWS Profile for MCP_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

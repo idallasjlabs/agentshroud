@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Progressive Trust Config"
 location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress__RBAC_Security_Core
+  - community/Progressive_Trust_Config
 ---
 
 # MemoryLifecycleConfig
 
 ## Connections
 - [[.setup_method()_10]] - `calls` [EXTRACTED]
-- [[Any_46]] - `uses` [INFERRED]
+- [[Any_48]] - `uses` [INFERRED]
 - [[Configuration for memory lifecycle management.]] - `rationale_for` [EXTRACTED]
 - [[ContentThreat]] - `uses` [INFERRED]
 - [[ContentThreatType]] - `uses` [INFERRED]
 - [[MemoryLifecycleConfig_1]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `uses` [INFERRED]
-- [[Path_15]] - `uses` [INFERRED]
+- [[Path_16]] - `uses` [INFERRED]
 - [[RetentionAction]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[memory_lifecycle.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/INFERRED #community/Progressive_Trust_Config

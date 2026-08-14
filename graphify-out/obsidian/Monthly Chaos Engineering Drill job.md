@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "concept"
-community: "Bot Container Scripts"
+community: "docs/diagrams"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/docs/diagrams
 ---
 
 # Monthly Chaos Engineering Drill job
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OpenClaw cron jobs.json (bot-config store, SCRUM-61 monitored)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/concept #graphify/EXTRACTED #community/docs/diagrams

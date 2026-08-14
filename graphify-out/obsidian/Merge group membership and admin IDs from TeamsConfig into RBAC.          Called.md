@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Approval & FastAPI Ingest"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Approval__FastAPI_Ingest
 ---
 
 # Merge group membership and admin IDs from TeamsConfig into RBAC.          Called
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.wire_teams_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest

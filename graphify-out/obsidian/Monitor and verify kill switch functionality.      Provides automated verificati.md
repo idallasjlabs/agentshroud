@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "Kill Switch Config"
+community: "Bot Skill Config"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Kill_Switch_Config
+  - community/Bot_Skill_Config
 ---
 
 # Monitor and verify kill switch functionality.      Provides automated verificati
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[KillSwitchMonitor]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch_Config
+#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config

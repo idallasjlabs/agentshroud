@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "code"
-community: "docs/vault"
+community: "Architecture Docs"
 location: "gateway/ingest_api/router.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Architecture_Docs
 ---
 
 # MultiAgentRouter
@@ -17,4 +17,4 @@ tags:
 - [[HTTPForwarder_1]] - `delegates_to` [INFERRED]
 - [[router.py — MultiAgentRouter]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Architecture_Docs

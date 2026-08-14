@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Test Suite"
 location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # NOTHING is over-engineered. Everything has a purpose.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[What's Actually Over-Engineered (Revised Answer)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

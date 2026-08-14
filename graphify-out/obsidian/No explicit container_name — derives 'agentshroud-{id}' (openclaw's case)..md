@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "scripts/sync-cve-registry.py"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/scripts/sync-cve-registrypy
 ---
 
 # No explicit container_name — derives 'agentshroud-{id}' (openclaw's case).
@@ -15,4 +15,4 @@ tags:
 - [[test_bot_config_resolved_container_name_defaults_to_agentshroud_id()]] - `rationale_for` [EXTRACTED]
 - [[test_router_config_accepts_docker_service_hostname()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

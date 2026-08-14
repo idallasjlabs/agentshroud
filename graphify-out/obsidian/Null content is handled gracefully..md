@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "skills/openclaw"
 location: "L128"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/skills/openclaw
 ---
 
 # Null content is handled gracefully.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_result_with_null_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw

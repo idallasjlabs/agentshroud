@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Progressive Trust Config"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Progressive_Trust_Config
 ---
 
 # MemoryIntegrityMonitor
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_92]] - `method` [EXTRACTED]
 - [[._compute_file_hash()]] - `method` [EXTRACTED]
 - [[._detect_modification_source()]] - `method` [EXTRACTED]
@@ -31,7 +31,7 @@ tags:
 - [[.setup_method()_11]] - `calls` [EXTRACTED]
 - [[.test_integrity_database_persistence()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
@@ -52,4 +52,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "code"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "gateway/ingest_api/middleware.py"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # MiddlewareManager
@@ -17,4 +17,4 @@ tags:
 - [[middleware.py — P1 Security Hardening Middleware]] - `defines` [EXTRACTED]
 - [[models.py — Pydantic API Schema]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/docs/vault
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

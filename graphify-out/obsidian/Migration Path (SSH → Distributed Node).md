@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Architecture Docs"
+community: "Gateway Test Suite"
 location: "L461"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # Migration Path (SSH → Distributed Node)
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 Migrate Workflows]] - `contains` [EXTRACTED]
 - [[Step 6 Deprecate SSH (Optional)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

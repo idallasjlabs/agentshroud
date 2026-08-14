@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "rationale"
-community: "Group Workspace Isolation"
+community: "Approval Queue Tests"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Workspace_Isolation
+  - community/Approval_Queue_Tests
 ---
 
 # No RBAC principal → cannot authorize → deny (fail-closed).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_missing_rbac_is_denied()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Workspace_Isolation
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Tests

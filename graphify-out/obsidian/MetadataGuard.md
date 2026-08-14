@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Gateway Test Suite"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Config__Test_Fixtures
+  - community/Gateway_Test_Suite
 ---
 
 # MetadataGuard
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.__init__()_94]] - `method` [EXTRACTED]
 - [[.check_for_exif()]] - `method` [EXTRACTED]
 - [[.check_oversized_headers()]] - `method` [EXTRACTED]
@@ -28,7 +28,7 @@ tags:
 - [[.test_metadata_path_traversal_stripped()]] - `calls` [EXTRACTED]
 - [[.test_metadata_sanitize_filename()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[Guards against metadata channel attacks and information disclosure.]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
@@ -67,4 +67,4 @@ tags:
 - [[test_metadata_guard.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite

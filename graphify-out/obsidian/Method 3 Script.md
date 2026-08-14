@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "docs/vault"
+community: "docs/runbooks"
 location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/runbooks
 ---
 
 # Method 3: Script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/docs/runbooks

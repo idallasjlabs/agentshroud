@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_forward_stream.py"
 type: "rationale"
 community: "Gateway Test Suite"
-location: "L133"
+location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

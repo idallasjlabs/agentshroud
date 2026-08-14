@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Security Docs"
+community: "Bot Skill Config"
 location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Mode 1: freeze
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Kill Switch]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

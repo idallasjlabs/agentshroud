@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Gateway Test Suite"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gateway_Test_Suite
 ---
 
 # Methodology
@@ -17,4 +17,4 @@ tags:
 - [[Loss Categories]] - `contains` [EXTRACTED]
 - [[Unsafe Control Actions (UCAs)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

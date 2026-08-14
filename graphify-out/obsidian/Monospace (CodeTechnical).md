@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "branding/typography"
+community: "docs/vault"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/typography
+  - community/docs/vault
 ---
 
 # Monospace (Code/Technical)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Font Families]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/typography
+#graphify/document #graphify/EXTRACTED #community/docs/vault

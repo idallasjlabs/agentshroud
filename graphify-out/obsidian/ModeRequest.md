@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Enforce-Mode Auto-Revert"
+community: "SOC Service Manager"
 location: "L155"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Enforce-Mode_Auto-Revert
+  - community/SOC_Service_Manager
 ---
 
 # ModeRequest
@@ -25,11 +25,10 @@ tags:
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[DraftEntry]] - `uses` [INFERRED]
-- [[FastAPI_3]] - `uses` [INFERRED]
+- [[FastAPI_2]] - `uses` [INFERRED]
 - [[IntelReportStore]] - `uses` [INFERRED]
-- [[Path_34]] - `uses` [INFERRED]
+- [[Path_35]] - `uses` [INFERRED]
 - [[SimpleNamespace_1]] - `uses` [INFERRED]
-- [[SimpleNamespace_2]] - `uses` [INFERRED]
 - [[TestAgentshroudUpdates]] - `uses` [INFERRED]
 - [[TestAutoRevert]] - `uses` [INFERRED]
 - [[TestBotUpdates]] - `uses` [INFERRED]
@@ -61,4 +60,4 @@ tags:
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Enforce-Mode_Auto-Revert
+#graphify/code #graphify/INFERRED #community/SOC_Service_Manager

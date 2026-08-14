@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "Security Docs"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Security_Docs
 ---
 
 # Methodology
@@ -17,4 +17,4 @@ tags:
 - [[Loss Categories_3]] - `contains` [EXTRACTED]
 - [[Unsafe Control Actions (UCAs)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

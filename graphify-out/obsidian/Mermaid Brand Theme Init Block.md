@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "docs/agentshroud-knowledge.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/docs/agentshroud-knowledgemd
 ---
 
 # Mermaid Brand Theme Init Block
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-ti SKILL (Diagram Generation)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/docs/agentshroud-knowledgemd

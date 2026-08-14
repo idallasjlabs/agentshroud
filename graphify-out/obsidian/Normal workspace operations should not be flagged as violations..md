@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "File Sandbox"
+community: "URL/Domain Validation Tests"
 location: "L300"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/URL/Domain_Validation_Tests
 ---
 
 # Normal workspace operations should not be flagged as violations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_normal_operations_not_violations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests

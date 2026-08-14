@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "Slack API Proxy"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Slack_API_Proxy
 ---
 
 # MultiAgentRouter
 
 ## Connections
-- [[.__init__()]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `method` [EXTRACTED]
 - [[._build_forward_payload()]] - `method` [EXTRACTED]
 - [[.disabled_client()]] - `calls` [EXTRACTED]
 - [[.forward_to_agent()]] - `method` [EXTRACTED]
@@ -25,16 +25,15 @@ tags:
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
 - [[BotConfig]] - `shares_data_with` [EXTRACTED]
-- [[FastAPI_2]] - `uses` [INFERRED]
+- [[FastAPI_1]] - `uses` [INFERRED]
 - [[ForwardRequest]] - `uses` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
-- [[LogRecord_3]] - `uses` [INFERRED]
 - [[MCPProxyRequest]] - `uses` [INFERRED]
 - [[MCPResultRequest]] - `uses` [INFERRED]
 - [[OpProxyRequest]] - `uses` [INFERRED]
-- [[RouterConfig_1]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
 - [[Routes content to appropriate agent containers      Routing priority     1. Exp]] - `rationale_for` [EXTRACTED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
+- [[SSHExecRequest]] - `uses` [INFERRED]
 - [[TestSSHDisabledEndpoint]] - `uses` [INFERRED]
 - [[TestSSHExec]] - `uses` [INFERRED]
 - [[TestSSHHistory]] - `uses` [INFERRED]
@@ -52,9 +51,9 @@ tags:
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
-- [[router()_3]] - `calls` [EXTRACTED]
 - [[router()_2]] - `calls` [EXTRACTED]
-- [[router()]] - `calls` [EXTRACTED]
+- [[router()_1]] - `calls` [EXTRACTED]
+- [[router()_3]] - `calls` [EXTRACTED]
 - [[router.py]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_hermes_and_openclaw_coexist()]] - `calls` [EXTRACTED]
@@ -65,4 +64,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy

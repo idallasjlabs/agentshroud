@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "docs/vault"
+community: "Gateway Test Suite"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Gateway_Test_Suite
 ---
 
 # OAuthSecurityValidator.create_consent_cookie(client_id, scopes, user_id)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_44]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

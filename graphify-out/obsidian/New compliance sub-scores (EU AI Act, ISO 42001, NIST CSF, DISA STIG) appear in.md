@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "IEC 62443 Scorecard"
+community: "docs/papers"
 location: "L934"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/IEC_62443_Scorecard
+  - community/docs/papers
 ---
 
 # New compliance sub-scores (EU AI Act, ISO 42001, NIST CSF, DISA STIG) appear in
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_compliance_new_keys_present()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/IEC_62443_Scorecard
+#graphify/rationale #graphify/EXTRACTED #community/docs/papers

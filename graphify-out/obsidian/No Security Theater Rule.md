@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "AGENTS.md"
+community: "docs/vault"
 tags:
   - graphify/rationale
   - graphify/INFERRED
-  - community/AGENTSmd
+  - community/docs/vault
 ---
 
 # No Security Theater Rule
@@ -15,4 +15,4 @@ tags:
 - [[CLAUDE.md — AgentShroud Governance]] - `references` [EXTRACTED]
 - [[v1.3.0 Reliability Release]] - `semantically_similar_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/AGENTSmd
+#graphify/rationale #graphify/INFERRED #community/docs/vault

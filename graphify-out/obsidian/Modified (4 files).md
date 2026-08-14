@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "Security Docs"
+community: "skills/openclaw"
 location: "L196"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/skills/openclaw
 ---
 
 # Modified (4 files)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Files ModifiedCreated]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/skills/openclaw
