@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "docs/vault"
+community: "Bot Skill Config"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Bot_Skill_Config
 ---
 
 # Marvin (Mac Studio M1 Ultra — primary dev server)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TEAM]] - `describes` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

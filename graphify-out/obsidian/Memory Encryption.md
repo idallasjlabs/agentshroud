@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Security Docs"
+community: "Setup Docs"
 location: "L326"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Setup_Docs
 ---
 
 # Memory Encryption
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Encryption and Cryptographic Controls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

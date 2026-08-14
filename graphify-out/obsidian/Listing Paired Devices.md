@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Setup Docs"
+community: "Bot Skill Config"
 location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Bot_Skill_Config
 ---
 
 # Listing Paired Devices
@@ -16,4 +16,4 @@ tags:
 - [[View All Paired Devices]] - `contains` [EXTRACTED]
 - [[View Detailed Device Information]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

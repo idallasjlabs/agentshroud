@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "MCP Policy Engine"
+community: "Egress Domain Allowlist"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Egress_Domain_Allowlist
 ---
 
 # MCPPolicyEngine
@@ -24,7 +24,7 @@ tags:
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
-- [[engine()]] - `references` [EXTRACTED]
+- [[engine()_1]] - `references` [EXTRACTED]
 - [[test_allowlisted_server_safe_tool_is_allowed()]] - `references` [EXTRACTED]
 - [[test_bare_tool_name_risk_tier_applies_across_servers()]] - `calls` [EXTRACTED]
 - [[test_critical_tool_requires_approval()]] - `references` [EXTRACTED]
@@ -52,4 +52,4 @@ tags:
 - [[test_server_and_tool_matching_is_case_insensitive()]] - `references` [EXTRACTED]
 - [[test_unknown_server_is_denied_by_default()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist

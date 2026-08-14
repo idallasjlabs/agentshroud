@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-14-logic-flow.svg"
 type: "concept"
-community: "docs/diagrams"
+community: "Bot Skill Config"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Bot_Skill_Config
 ---
 
 # MCP Inspector (injection scan, PII scan, sensitive op scan)
@@ -14,4 +14,4 @@ tags:
 - [[LLM inference (OpenAI GPT-4o or Anthropic Claude)]] - `calls` [EXTRACTED]
 - [[Threat level (NONELOW, MEDIUM, HIGH)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/diagrams
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

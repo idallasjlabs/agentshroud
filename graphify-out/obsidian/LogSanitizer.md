@@ -12,7 +12,7 @@ tags:
 # LogSanitizer
 
 ## Connections
-- [[.__init__()_18]] - `calls` [EXTRACTED]
+- [[.__init__()_13]] - `calls` [EXTRACTED]
 - [[.get_log_sanitizer()]] - `references` [EXTRACTED]
 - [[.sanitizer()_2]] - `calls` [INFERRED]
 - [[.setup_method()_7]] - `calls` [INFERRED]

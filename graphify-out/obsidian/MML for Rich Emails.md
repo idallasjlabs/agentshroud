@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "document"
-community: "skills/openclaw"
+community: "Gateway Test Suite"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Gateway_Test_Suite
 ---
 
 # MML for Rich Emails
@@ -18,4 +18,4 @@ tags:
 - [[Mixed Content (Text + Attachments)]] - `contains` [EXTRACTED]
 - [[Multipart Messages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

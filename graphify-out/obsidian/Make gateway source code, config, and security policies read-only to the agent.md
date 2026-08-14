@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/04-separation-of-privilege.md"
 type: "document"
-community: "Planning Docs"
+community: "docs/project"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/docs/project
 ---
 
 # Make gateway source code, config, and security policies read-only to the agent
@@ -21,4 +21,4 @@ tags:
 - [[Severity_7]] - `contains` [EXTRACTED]
 - [[Verification_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/docs/project

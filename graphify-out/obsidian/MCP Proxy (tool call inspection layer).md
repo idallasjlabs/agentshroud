@@ -1,11 +1,11 @@
 ---
 source_file: "docs/SECURITY_PLAN.md"
 type: "concept"
-community: "docs/vault"
+community: "Security Docs"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Docs
 ---
 
 # MCP Proxy (tool call inspection layer)
@@ -19,4 +19,4 @@ tags:
 - [[MCP Proxy Errors_2]] - `documents` [EXTRACTED]
 - [[Security Hardening Phases P0–FINAL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Security_Docs

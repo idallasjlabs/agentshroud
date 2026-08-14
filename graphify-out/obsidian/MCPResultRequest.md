@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Auth & Exception Types"
-location: "L774"
+community: "PII Sanitizer Pipeline"
+location: "L781"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # MCPResultRequest
@@ -15,8 +15,8 @@ tags:
 - [[Action_1]] - `uses` [INFERRED]
 - [[ApprovalDecision]] - `uses` [INFERRED]
 - [[ApprovalMode]] - `uses` [INFERRED]
-- [[ApprovalQueueItem]] - `uses` [INFERRED]
-- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[ApprovalQueueItem_3]] - `uses` [INFERRED]
+- [[ApprovalRequest_3]] - `uses` [INFERRED]
 - [[AuditExportConfig_1]] - `uses` [INFERRED]
 - [[AuditExporter]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
@@ -27,20 +27,20 @@ tags:
 - [[ForwardRequest]] - `uses` [INFERRED]
 - [[ForwardResponse]] - `uses` [INFERRED]
 - [[GatewayConfig_1]] - `uses` [INFERRED]
-- [[LedgerEntry]] - `uses` [INFERRED]
-- [[LedgerQueryResponse]] - `uses` [INFERRED]
+- [[LedgerEntry_1]] - `uses` [INFERRED]
+- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[Request body for POST mcpresult — submit a tool result for outbound audit.]] - `rationale_for` [EXTRACTED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
+- [[SSHExecRequest_1]] - `uses` [INFERRED]
 - [[SSHExecResponse]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest]] - `uses` [INFERRED]
+- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
 - [[SSHWriteFileResponse]] - `uses` [INFERRED]
 - [[StatusResponse]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[mcp_result_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline

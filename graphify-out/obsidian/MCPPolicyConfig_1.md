@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "MCP Policy Engine"
+community: "Egress Domain Allowlist"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Policy_Engine
+  - community/Egress_Domain_Allowlist
 ---
 
 # MCPPolicyConfig
@@ -24,7 +24,7 @@ tags:
 - [[MCPToolResult]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
-- [[_base_config()]] - `references` [EXTRACTED]
+- [[_base_config()_1]] - `references` [EXTRACTED]
 - [[test_default_deny_posture_when_no_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Policy_Engine
+#graphify/code #graphify/INFERRED #community/Egress_Domain_Allowlist

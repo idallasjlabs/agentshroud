@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Progressive Trust Config"
+community: "MCP Policy Engine"
 location: "L429"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/MCP_Policy_Engine
 ---
 
 # Low-trust agents should be blocked from high-risk actions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_trust_level_enforcement()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine

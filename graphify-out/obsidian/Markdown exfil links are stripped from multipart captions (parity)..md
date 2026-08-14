@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L5323"
+community: "Planning Docs"
+location: "L5335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # Markdown exfil links are stripped from multipart captions (parity).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_multipart_markdown_exfil_link_scrubbed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

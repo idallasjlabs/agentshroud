@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L557"
+community: "Planning Docs"
+location: "L561"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Planning_Docs
 ---
 
 # Leading/trailing whitespace in the model reply is stripped.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_call_llm_strips_whitespace()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs

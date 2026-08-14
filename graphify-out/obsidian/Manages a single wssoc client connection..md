@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Gateway Test Suite"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Gateway_Test_Suite
 ---
 
 # Manages a single /ws/soc client connection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SOCWebSocketHandler]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite

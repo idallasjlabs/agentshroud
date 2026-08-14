@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Security Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Security_Docs
 ---
 
 # MCP Auth Reset (MCPM-AUTH-RESET)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_56]] - `contains` [EXTRACTED]
 - [[Usage_59]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

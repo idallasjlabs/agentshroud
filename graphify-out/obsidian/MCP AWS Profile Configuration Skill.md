@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Setup Docs"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Docs
 ---
 
 # MCP AWS Profile Configuration Skill
@@ -16,4 +16,4 @@ tags:
 - [[i-mcpm-aws-profile README_1]] - `references` [EXTRACTED]
 - [[mcpm-doctor Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Community 1514"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Community_1514
 ---
 
 # Lifespan filter should suppress repeated malformed HTTP warning noise.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Community_1514

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "rationale"
-community: "Gateway Ingest API"
+community: "CHANGELOG.md"
 location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - community/CHANGELOGmd
 ---
 
 # List available OpenClaw versions (from git tags or known versions).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[list_available_versions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/rationale #graphify/EXTRACTED #community/CHANGELOGmd

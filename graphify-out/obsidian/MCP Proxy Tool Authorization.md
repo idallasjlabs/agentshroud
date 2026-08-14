@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Security Docs"
+community: "Gateway Test Suite"
 location: "L238"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Test_Suite
 ---
 
 # MCP Proxy Tool Authorization
@@ -16,4 +16,4 @@ tags:
 - [[Dynamic Permission Adjustment]] - `contains` [EXTRACTED]
 - [[Tool Categories and Trust Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

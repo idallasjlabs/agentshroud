@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "SOC Collaborator Lifecycle"
+community: "Enhanced Approval Queue"
 location: "L1585"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/Enhanced_Approval_Queue
 ---
 
 # List service privacy policies (read-only view).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_privacy_policies()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue

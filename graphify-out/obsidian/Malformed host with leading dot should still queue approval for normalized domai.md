@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L2764"
+community: "ESP32 Firmware"
+location: "L2774"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/ESP32_Firmware
 ---
 
 # Malformed host with leading dot should still queue approval for normalized domai
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_raw_web_fetch_json_approval_normalizes_leading_dot_domain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/ESP32_Firmware

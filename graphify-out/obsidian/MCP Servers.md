@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "docs/ssh-security-review.md"
+community: "Bot Skill Config"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/ssh-security-reviewmd
+  - community/Bot_Skill_Config
 ---
 
 # MCP Servers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/ssh-security-reviewmd
+#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config

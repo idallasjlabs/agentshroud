@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "PromptGuard Encoding Detection"
 location: "L224"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # MCPProxy
 
 ## Connections
-- [[.__init__()_31]] - `method` [EXTRACTED]
+- [[.__init__()_30]] - `method` [EXTRACTED]
 - [[._emit_privacy_event()]] - `method` [EXTRACTED]
 - [[._execute_tool_call()]] - `method` [EXTRACTED]
 - [[._extract_egress_targets()]] - `method` [EXTRACTED]
@@ -93,7 +93,7 @@ tags:
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy_endpoint()]] - `calls` [EXTRACTED]
 - [[passthrough_proxy()]] - `calls` [EXTRACTED]
-- [[proxy()]] - `calls` [EXTRACTED]
+- [[proxy()_1]] - `calls` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `references` [EXTRACTED]
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
@@ -103,4 +103,4 @@ tags:
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/PromptGuard_Encoding_Detection

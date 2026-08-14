@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "rationale"
-community: "scripts/generate_branding_assets.py"
+community: "scripts/generate-cve-page.py"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/generate_branding_assetspy
+  - community/scripts/generate-cve-pagepy
 ---
 
 # Load source logo, optionally resize and composite onto bg.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_logo()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/generate_branding_assetspy
+#graphify/rationale #graphify/EXTRACTED #community/scripts/generate-cve-pagepy

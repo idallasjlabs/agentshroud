@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Collaborator Prompt Safety"
 location: "L66"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Collaborator_Prompt_Safety
 ---
 
 # MCPServerConfig
@@ -20,7 +20,7 @@ tags:
 - [[.test_start_send_and_stop()]] - `calls` [EXTRACTED]
 - [[.test_start_without_env_passes_none()]] - `calls` [EXTRACTED]
 - [[.test_stop_kills_on_wait_timeout()]] - `calls` [EXTRACTED]
-- [[Any_17]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Configuration for an MCP server.]] - `rationale_for` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
@@ -103,4 +103,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Safety

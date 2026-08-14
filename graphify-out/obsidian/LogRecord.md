@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Slack API Proxy"
 location: "L64"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Slack_API_Proxy
 ---
 
 # LogRecord
@@ -23,4 +23,4 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Slack_API_Proxy

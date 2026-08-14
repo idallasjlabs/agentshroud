@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "Approval Queue Tests"
+community: "Setup Docs"
 location: "L425"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/Setup_Docs
 ---
 
 # Load queue items from store file when present.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._load_pending_store()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Setup_Docs

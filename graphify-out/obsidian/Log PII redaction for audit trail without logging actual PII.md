@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Telegram Proxy Test Suite"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # Log PII redaction for audit trail without logging actual PII
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._log_redaction_audit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite

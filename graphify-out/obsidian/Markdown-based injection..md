@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
+community: "Auth & Exception Types"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Auth__Exception_Types
 ---
 
 # Markdown-based injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_prompt_leaking_via_markdown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types

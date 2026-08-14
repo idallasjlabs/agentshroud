@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Enforce-Mode Auto-Revert"
 location: "L175"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Proxy_Config
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # MCPPermissionManager
 
 ## Connections
-- [[.__init__()_27]] - `method` [EXTRACTED]
+- [[.__init__()_26]] - `method` [EXTRACTED]
 - [[._load_privacy_policy()]] - `method` [EXTRACTED]
 - [[._recompile_private_data_patterns()]] - `method` [EXTRACTED]
 - [[._record_private_access_attempt()]] - `method` [EXTRACTED]
@@ -35,7 +35,7 @@ tags:
 - [[.test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
 - [[.test_privacy_policy_overrides_patterns()]] - `calls` [EXTRACTED]
 - [[.test_privacy_policy_status_when_missing_file()]] - `calls` [EXTRACTED]
-- [[Any_17]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[Exception_4]] - `uses` [INFERRED]
@@ -108,9 +108,9 @@ tags:
 - [[mcp_permissions.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[mgr()_1]] - `calls` [EXTRACTED]
-- [[proxy()]] - `calls` [EXTRACTED]
+- [[proxy()_1]] - `calls` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config
+#graphify/code #graphify/INFERRED #community/Enforce-Mode_Auto-Revert

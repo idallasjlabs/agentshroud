@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "MCP Policy Engine"
+community: "Egress Domain Allowlist"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Egress_Domain_Allowlist
 ---
 
 # MCPPolicyDecision
 
 ## Connections
-- [[._decide()]] - `references` [EXTRACTED]
-- [[.allowed()]] - `method` [EXTRACTED]
-- [[.enforce()]] - `references` [EXTRACTED]
-- [[.evaluate()]] - `references` [EXTRACTED]
+- [[._decide()_1]] - `references` [EXTRACTED]
+- [[.allowed()_1]] - `method` [EXTRACTED]
+- [[.enforce()_1]] - `references` [EXTRACTED]
+- [[.evaluate()_1]] - `references` [EXTRACTED]
 - [[MCPPolicyConfig_1]] - `uses` [INFERRED]
 - [[MCPPolicyEngine_1]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[mcp_policy.py]] - `contains` [EXTRACTED]
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist

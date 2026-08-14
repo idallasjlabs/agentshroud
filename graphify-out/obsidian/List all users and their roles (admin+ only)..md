@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Auth & Exception Types"
-location: "L3912"
+community: "PII Sanitizer Pipeline"
+location: "L3919"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # List all users and their roles (admin+ only).
 
 ## Connections
-- [[get_my_permissions()]] - `rationale_for` [EXTRACTED]
 - [[list_users_and_roles()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

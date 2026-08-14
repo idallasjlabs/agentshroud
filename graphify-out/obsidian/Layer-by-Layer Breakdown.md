@@ -1,18 +1,19 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "docs/vault"
+community: "docs/runbooks"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/runbooks
 ---
 
 # Layer-by-Layer Breakdown
 
 ## Connections
 - [[1. MCP Proxy Wrapper (Bot Side)]] - `contains` [EXTRACTED]
+- [[10. Approval Queue]] - `contains` [EXTRACTED]
 - [[11. Ledger Recording]] - `contains` [EXTRACTED]
 - [[2. Authentication (Gateway Entry)]] - `contains` [EXTRACTED]
 - [[3. Middleware Manager]] - `contains` [EXTRACTED]
@@ -25,4 +26,4 @@ tags:
 - [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 - [[approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/docs/runbooks

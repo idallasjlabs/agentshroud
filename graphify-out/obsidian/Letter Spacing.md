@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "branding/typography"
+community: "docs/vault"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/typography
+  - community/docs/vault
 ---
 
 # Letter Spacing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Typography Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/typography
+#graphify/document #graphify/EXTRACTED #community/docs/vault

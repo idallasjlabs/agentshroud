@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-15-sequence-telegram.svg"
 type: "concept"
-community: "docs/diagrams"
+community: "Bot Skill Config"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Bot_Skill_Config
 ---
 
 # MCP inspection (injection scan NONE, PII scan NONE, sensitive op NONE)
@@ -14,4 +14,4 @@ tags:
 - [[Bot Container (agent decides reply + tool call)]] - `calls` [EXTRACTED]
 - [[OpenAI API (POST v1chatcompletions)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/diagrams
+#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config

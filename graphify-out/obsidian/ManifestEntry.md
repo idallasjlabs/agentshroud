@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/vault"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/docs/vault
 ---
 
 # ManifestEntry
@@ -16,7 +16,7 @@ tags:
 - [[.from_file()]] - `method` [EXTRACTED]
 - [[.to_dict()_13]] - `method` [EXTRACTED]
 - [[A single item in the skills manifest.]] - `rationale_for` [EXTRACTED]
-- [[Path_38]] - `uses` [INFERRED]
+- [[Path_39]] - `uses` [INFERRED]
 - [[TestClient_1]] - `uses` [INFERRED]
 - [[TestDeployDryRun]] - `uses` [INFERRED]
 - [[TestDeployManifest]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[manifest.py]] - `contains` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/docs/vault

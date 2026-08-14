@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "Setup Docs"
 location: "L230"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Proxy_Layer
+  - community/Setup_Docs
 ---
 
 # MCPAuditTrail
 
 ## Connections
-- [[.__init__()_31]] - `references` [EXTRACTED]
+- [[.__init__()_30]] - `references` [EXTRACTED]
 - [[.test_default_window_is_10k()]] - `calls` [INFERRED]
 - [[.test_egress_allows_non_url_tool_call()]] - `calls` [INFERRED]
 - [[.test_egress_denied_blocks_url_tool_call()]] - `calls` [INFERRED]
@@ -28,6 +28,6 @@ tags:
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 - [[audit()]] - `calls` [INFERRED]
-- [[proxy()]] - `calls` [INFERRED]
+- [[proxy()_1]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/INFERRED #community/Setup_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Enforce-Mode Auto-Revert"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Enforce-Mode_Auto-Revert
 ---
 
 # Load optional admin-private tool patterns from policy file.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._load_privacy_policy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert

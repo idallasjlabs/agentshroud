@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "README.md"
+community: "Gateway Test Suite"
 location: "L487"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/READMEmd
+  - community/Gateway_Test_Suite
 ---
 
 # Media
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite

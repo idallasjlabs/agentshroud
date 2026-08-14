@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Egress & RBAC Security Core"
 location: "L17"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Config__Test_Fixtures
+  - community/Egress__RBAC_Security_Core
 ---
 
 # LogSanitizer
@@ -19,7 +19,7 @@ tags:
 - [[.sanitizer()_2]] - `calls` [EXTRACTED]
 - [[.setup_method()_7]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
-- [[Any_10]] - `uses` [INFERRED]
+- [[Any_8]] - `uses` [INFERRED]
 - [[Custom logging filter that sanitizes sensitive data from log records.]] - `rationale_for` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
@@ -59,4 +59,4 @@ tags:
 - [[test_log_sanitizer.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
-location: "L2067"
+community: "PII Sanitizer Pipeline"
+location: "L2074"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # List quarantined blocked inbound messages for admin review.
@@ -15,4 +15,4 @@ tags:
 - [[list_blocked_message_quarantine()]] - `rationale_for` [EXTRACTED]
 - [[list_blocked_outbound_quarantine()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

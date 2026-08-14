@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "docs/operations"
 location: "L130"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/docs/operations
 ---
 
 # MCPInspector
 
 ## Connections
-- [[.__init__()_26]] - `method` [EXTRACTED]
+- [[.__init__()_25]] - `method` [EXTRACTED]
 - [[._redact_pii()]] - `method` [EXTRACTED]
 - [[._scan_text()]] - `method` [EXTRACTED]
 - [[._scan_value()]] - `method` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[.inspect_tool_result()]] - `method` [EXTRACTED]
 - [[.test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
 - [[.test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
-- [[Any_17]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[Exception_4]] - `uses` [INFERRED]
@@ -82,9 +82,9 @@ tags:
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[mcp_inspector.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
-- [[proxy()]] - `calls` [EXTRACTED]
+- [[proxy()_1]] - `calls` [EXTRACTED]
 - [[strict_inspector()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/docs/operations

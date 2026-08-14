@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "MCP Policy Engine"
+community: "Egress Domain Allowlist"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Egress_Domain_Allowlist
 ---
 
 # MCPPolicyConfig
 
 ## Connections
 - [[.__init__()_91]] - `references` [EXTRACTED]
-- [[.__post_init__()_4]] - `method` [EXTRACTED]
-- [[.from_dict()_6]] - `method` [EXTRACTED]
+- [[.__post_init__()_5]] - `method` [EXTRACTED]
+- [[.from_dict()_7]] - `method` [EXTRACTED]
 - [[Declarative MCP security policy.      Loaded from the ``mcp_policy`` section of]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyConfig_1]] - `uses` [INFERRED]
 - [[MCPPolicyEngine_1]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_31]] - `uses` [INFERRED]
+- [[Path_32]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist

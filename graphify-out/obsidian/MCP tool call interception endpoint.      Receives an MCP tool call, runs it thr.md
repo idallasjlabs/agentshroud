@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Auth & Exception Types"
-location: "L685"
+community: "PII Sanitizer Pipeline"
+location: "L692"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/PII_Sanitizer_Pipeline
 ---
 
 # MCP tool call interception endpoint.      Receives an MCP tool call, runs it thr
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mcp_proxy_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline

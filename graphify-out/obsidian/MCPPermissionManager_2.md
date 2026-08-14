@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "code"
-community: "docs/vault"
+community: "docs/api"
 location: "gateway/proxy/mcp_permissions.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/docs/api
 ---
 
 # MCPPermissionManager
@@ -18,4 +18,4 @@ tags:
 - [[PermissionLevel (Enum)]] - `used_by` [EXTRACTED]
 - [[mcp_permissions.py — MCPPermissionManager]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/docs/api

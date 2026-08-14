@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Architecture Docs"
 location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Architecture_Docs
 ---
 
 # Markmap Generation via MCP
@@ -17,4 +17,4 @@ tags:
 - [[Markmap Source Format]] - `contains` [EXTRACTED]
 - [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Architecture_Docs

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "Setup Docs"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Proxy_Layer
+  - community/Setup_Docs
 ---
 
 # MCPAuditTrail
 
 ## Connections
-- [[.__init__()_25]] - `method` [EXTRACTED]
+- [[.__init__()_24]] - `method` [EXTRACTED]
 - [[.__len__()]] - `method` [EXTRACTED]
 - [[._compute_chain_hash()]] - `method` [EXTRACTED]
 - [[.entries()]] - `method` [EXTRACTED]
@@ -35,7 +35,7 @@ tags:
 - [[.test_window_capped_at_max_entries()]] - `calls` [EXTRACTED]
 - [[.total_appended()]] - `method` [EXTRACTED]
 - [[.verify_chain()]] - `method` [EXTRACTED]
-- [[Any_17]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[Audit trail for MCP tool calls, integrated with SHA-256 hash chain.]] - `rationale_for` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
@@ -96,8 +96,8 @@ tags:
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[mcp_audit.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
-- [[proxy()]] - `calls` [EXTRACTED]
+- [[proxy()_1]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/INFERRED #community/Setup_Docs

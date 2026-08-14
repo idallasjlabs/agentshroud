@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "rationale"
-community: "Approval Queue"
+community: "Collaborator Prompt Classifiers"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue
+  - community/Collaborator_Prompt_Classifiers
 ---
 
 # Load all pending (non-expired, non-decided) items.          Items whose expires_
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.load_pending()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers

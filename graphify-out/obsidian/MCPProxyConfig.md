@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "PromptGuard Encoding Detection"
 location: "L85"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Proxy_Config
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # MCPProxyConfig
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.from_dict()]] - `method` [EXTRACTED]
 - [[.test_disabled_server_blocked()]] - `calls` [EXTRACTED]
-- [[Any_17]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[Exception_4]] - `uses` [INFERRED]
@@ -100,4 +100,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config
+#graphify/code #graphify/INFERRED #community/PromptGuard_Encoding_Detection

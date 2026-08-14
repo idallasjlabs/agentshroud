@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Telegram Proxy Test Suite"
 location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PII_Sanitizer_Pipeline
+  - community/Telegram_Proxy_Test_Suite
 ---
 
 # LedgerConfig
@@ -16,7 +16,7 @@ tags:
 - [[.ledger()]] - `calls` [EXTRACTED]
 - [[.ledger()_1]] - `calls` [EXTRACTED]
 - [[.no_approval_client()]] - `calls` [EXTRACTED]
-- [[Any_9]] - `uses` [INFERRED]
+- [[Any_7]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Data ledger configuration]] - `rationale_for` [EXTRACTED]
@@ -24,8 +24,8 @@ tags:
 - [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[GatewayConfig_4]] - `uses` [INFERRED]
 - [[LedgerConfig_1]] - `uses` [INFERRED]
-- [[LedgerEntry_1]] - `uses` [INFERRED]
-- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
+- [[LedgerEntry]] - `uses` [INFERRED]
+- [[LedgerQueryResponse]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[SSHConfig]] - `uses` [INFERRED]
 - [[TestAuditChainIntegrity]] - `uses` [INFERRED]
@@ -74,4 +74,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite

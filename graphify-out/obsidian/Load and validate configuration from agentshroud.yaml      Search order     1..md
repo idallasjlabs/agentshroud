@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "scripts/sync-cve-registry.py"
 location: "L407"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/scripts/sync-cve-registrypy
 ---
 
 # Load and validate configuration from agentshroud.yaml      Search order:     1.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy

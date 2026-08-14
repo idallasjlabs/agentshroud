@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "PromptGuard Encoding Detection"
 location: "L18"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/PromptGuard_Encoding_Detection
 ---
 
 # MCPTransport
 
 ## Connections
 - [[.from_dict()]] - `calls` [EXTRACTED]
-- [[Any_17]] - `uses` [INFERRED]
+- [[Any_18]] - `uses` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
@@ -76,4 +76,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/PromptGuard_Encoding_Detection

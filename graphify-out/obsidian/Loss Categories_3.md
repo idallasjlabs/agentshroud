@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "Security Docs"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Security_Docs
 ---
 
 # Loss Categories
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Methodology_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Security_Docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
+community: "Slack API Proxy"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Slack_API_Proxy
 ---
 
 # Log warnings for any core modules running in monitor mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_monitor_mode_warnings()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy

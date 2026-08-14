@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "branding/guidelines"
+community: "docker/docker-compose.yml"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/docker/docker-composeyml
 ---
 
 # Logo Usage
@@ -18,4 +18,4 @@ tags:
 - [[Minimum Size]] - `contains` [EXTRACTED]
 - [[Prohibited Uses]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/guidelines
+#graphify/document #graphify/EXTRACTED #community/docker/docker-composeyml

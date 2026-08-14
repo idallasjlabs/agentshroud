@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "concept"
-community: "docs/vault"
+community: "Security Docs"
 location: "docker/scripts/mcp-proxy-wrapper.js"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Docs
 ---
 
 # MCP Proxy Wrapper (mcp-proxy-wrapper.js — stdio to HTTP translation)
@@ -19,4 +19,4 @@ tags:
 - [[agentshroud-bot Container (Node.js 22 OpenClaw, port 18789, 4 GB, isolated network)]] - `contains` [EXTRACTED]
 - [[agentshroud-gateway Container (Python 3.13  FastAPI, port 8080, 1280 MB, read-only rootfs)]] - `routes_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Security_Docs

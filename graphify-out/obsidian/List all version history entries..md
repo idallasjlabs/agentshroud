@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "CHANGELOG.md"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/CHANGELOGmd
 ---
 
 # List all version history entries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[list_versions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/CHANGELOGmd

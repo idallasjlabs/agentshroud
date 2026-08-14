@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "MCP Policy Engine"
+community: "Egress Domain Allowlist"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Egress_Domain_Allowlist
 ---
 
 # MCPPolicyEngine
 
 ## Connections
 - [[.__init__()_91]] - `method` [EXTRACTED]
-- [[._decide()]] - `method` [EXTRACTED]
-- [[._tier_for()]] - `method` [EXTRACTED]
-- [[.enforce()]] - `method` [EXTRACTED]
-- [[.evaluate()]] - `method` [EXTRACTED]
+- [[._decide()_1]] - `method` [EXTRACTED]
+- [[._tier_for()_1]] - `method` [EXTRACTED]
+- [[.enforce()_1]] - `method` [EXTRACTED]
+- [[.evaluate()_1]] - `method` [EXTRACTED]
 - [[.test_engine_allows_known_server_under_default()]] - `calls` [EXTRACTED]
 - [[.test_engine_denies_unknown_server_under_default()]] - `calls` [EXTRACTED]
 - [[.test_engine_requires_approval_for_destructive_tool_on_known_server()]] - `calls` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[MCPPolicyConfig_1]] - `uses` [INFERRED]
 - [[MCPPolicyEngine_1]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
-- [[Path_31]] - `uses` [INFERRED]
+- [[Path_32]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]
@@ -59,4 +59,4 @@ tags:
 - [[test_owner_bypass_defaults_to_rbac_owner_identity()]] - `calls` [EXTRACTED]
 - [[test_owner_bypasses_approval_but_not_hard_deny()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist

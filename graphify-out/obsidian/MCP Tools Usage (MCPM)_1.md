@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Setup Docs"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Docs
 ---
 
 # MCP Tools Usage (MCPM)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_62]] - `contains` [EXTRACTED]
 - [[Usage_63]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Setup_Docs
