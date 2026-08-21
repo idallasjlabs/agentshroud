@@ -13490,6 +13490,99 @@
         ]
       }
     },
+    "/soc/v1/users/{user_id}/pause": {
+      "post": {
+        "description": "Pause a contributor's bot access without removing their record.",
+        "operationId": "pause_collaborator_endpoint_soc_v1_users__user_id__pause_post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "user_id",
+            "required": true,
+            "schema": {
+              "title": "User Id",
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-soc-token",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Soc-Token"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "soc_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Soc Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Pause Collaborator Endpoint Soc V1 Users  User Id  Pause Post",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Pause Collaborator Endpoint",
+        "tags": [
+          "soc"
+        ]
+      }
+    },
     "/soc/v1/users/{user_id}/role": {
       "put": {
         "operationId": "set_user_role_soc_v1_users__user_id__role_put",
@@ -13587,6 +13680,99 @@
           }
         },
         "summary": "Set User Role",
+        "tags": [
+          "soc"
+        ]
+      }
+    },
+    "/soc/v1/users/{user_id}/unpause": {
+      "post": {
+        "description": "Resume a paused contributor's bot access.",
+        "operationId": "unpause_collaborator_endpoint_soc_v1_users__user_id__unpause_post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "user_id",
+            "required": true,
+            "schema": {
+              "title": "User Id",
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-soc-token",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Soc-Token"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "soc_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Soc Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "title": "Response Unpause Collaborator Endpoint Soc V1 Users  User Id  Unpause Post",
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Unpause Collaborator Endpoint",
         "tags": [
           "soc"
         ]
