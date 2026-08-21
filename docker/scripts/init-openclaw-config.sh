@@ -339,12 +339,19 @@ fi
 # the sandboxed exec tool from reaching the gateway for SSH-exec, breaking any
 # cron job that shells out via agentshroud-ssh-exec.sh.
 if [ -n "${_openclaw_bin}" ]; then
+  # AGENTSHROUD_PROJECT (docker-compose.yml, sourced from scripts/asb's
+  # exported $PROJECT) carries the actual compose project prefix — "agentshroud"
+  # in prod, "agentshroud-bot" on the dev host — so this matches whichever
+  # environment is running instead of only ever matching prod (2026-08-21 fix;
+  # every dev-host sandboxed cron job failed with "network ... not found"
+  # until this was parameterized).
+  _sandbox_network="${AGENTSHROUD_PROJECT:-agentshroud}_agentshroud-isolated"
   openclaw config set agents.defaults.sandbox.mode all 2>/dev/null
   openclaw config set agents.defaults.sandbox.backend docker 2>/dev/null
   openclaw config set agents.defaults.sandbox.scope session 2>/dev/null
   openclaw config set agents.defaults.sandbox.workspaceAccess rw 2>/dev/null
-  openclaw config set agents.defaults.sandbox.docker.network agentshroud_agentshroud-isolated 2>/dev/null \
-    && echo "[init] ✓ Sandbox config applied (mode=all, backend=docker, scope=session, workspaceAccess=rw, docker.network=agentshroud_agentshroud-isolated)" \
+  openclaw config set agents.defaults.sandbox.docker.network "${_sandbox_network}" 2>/dev/null \
+    && echo "[init] ✓ Sandbox config applied (mode=all, backend=docker, scope=session, workspaceAccess=rw, docker.network=${_sandbox_network})" \
     || echo "[init] ⚠ Could not apply sandbox config"
 else
   echo "[init] ⚠ openclaw CLI not on PATH — skipping sandbox config"

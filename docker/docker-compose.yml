@@ -372,6 +372,13 @@ services:
       - GATEWAY_HOST_PORT=8080
       - AGENTSHROUD_GROUP_CHAT_IDS=${AGENTSHROUD_GROUP_CHAT_IDS:-}
       - AGENTSHROUD_GROUP_CHAT_ID=${AGENTSHROUD_GROUP_CHAT_ID:-}
+      # scripts/asb exports $PROJECT ("agentshroud" prod / "agentshroud-bot"
+      # dev) before invoking compose — needed by init-openclaw-config.sh to
+      # build the correct compose-project-prefixed sandbox network name
+      # (${AGENTSHROUD_PROJECT}_agentshroud-isolated), which otherwise only
+      # matched prod and left every dev-host sandboxed cron job unable to
+      # find its network (2026-08-21).
+      - AGENTSHROUD_PROJECT=${PROJECT:-agentshroud}
       - OPENCLAW_BOT_NAME=agentshroud_bot
       - OPENCLAW_BOT_EMAIL=${OPENCLAW_BOT_EMAIL:-bot@example.com}
       # OPENCLAW_DISABLE_HOST_FILESYSTEM and OPENCLAW_SANDBOX_MODE=strict used
