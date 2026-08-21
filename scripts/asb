@@ -46,12 +46,16 @@ fi
 . "$REPO_DIR/scripts/lib/container-runtime.sh"
 CE="$(detect_container_runtime)" || exit 1
 
-# Project name: "agentshroud" for prod, "agentshroud-bot" for bot account
+# Project name: "agentshroud" for prod, "agentshroud-bot" for bot account.
+# Exported so docker-compose.yml's ${PROJECT:-agentshroud} interpolation can
+# pass it through to containers that need to know their own compose-project-
+# prefixed network names (e.g. OpenClaw's sandbox.docker.network config).
 if [ "$USER" = "agentshroud-bot" ]; then
   PROJECT="agentshroud-bot"
 else
   PROJECT="agentshroud"
 fi
+export PROJECT
 
 if [ "$USER" = "agentshroud-bot" ]; then
   OVERRIDE="$REPO_DIR/docker/docker-compose.agentshroud-bot.${HOST}.yml"
