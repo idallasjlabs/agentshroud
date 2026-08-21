@@ -30,7 +30,7 @@ import os
 import sys
 
 # Provider-prefixed refs emitted by switch_model.sh, e.g. "ollama/qwen3:14b",
-# "lmstudio/qwen3-14b", "openai-local/qwen3.6-27b", "anthropic/claude-opus-4-7".
+# "lmstudio/qwen3-14b", "openai-local/qwen3.8-27b-mlx", "anthropic/claude-opus-4-7".
 _KNOWN_PREFIXES = (
     "ollama/",
     "lmstudio/",

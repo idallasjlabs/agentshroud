@@ -423,6 +423,12 @@ case "${1:-}" in
     $COMPOSE $_PROFILE_FLAG up -d
     [[ "$_WANT_HERMES" == "1" ]] && _hermes_up
     bash "$REPO_DIR/scripts/post-deploy-check.sh" || true
+    # Hermes/OpenClaw's own per-task sandbox containers (--network none) are
+    # never cleaned up by the vendored tools themselves — a stuck/failing cron
+    # job can silently accumulate dozens of exited containers between manual
+    # `asb prune` runs (2026-08-20). Sweep them on every routine bring-up too,
+    # not just build/rebuild.
+    _prune_docker
     ;;
   down)
     # --profile full stops voice-gateway if running (Hermes is not compose-managed)

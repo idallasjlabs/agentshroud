@@ -914,7 +914,7 @@ async def test_stats_local_secondary_failover_succeeded_incremented(monkeypatch)
         ("ollama/qwen3:14b", "qwen3-14b", LMSTUDIO_API_BASE),
         ("ollama/llama3.2:3b", "llama3.2:3b", OLLAMA_API_BASE),
         ("ollama/deepseek-r1:latest", "deepseek-r1:latest", MLXLM_API_BASE),
-        ("lmstudio/qwen3.6-27b", "qwen3.6-27b", LMSTUDIO_API_BASE),
+        ("lmstudio/qwen3.8-27b-mlx", "qwen3.8-27b-mlx", MLXLM_API_BASE),
         ("qwen3:14b", "qwen3-14b", LMSTUDIO_API_BASE),
         ("deepseek-r1", "deepseek-r1", MLXLM_API_BASE),
     ],

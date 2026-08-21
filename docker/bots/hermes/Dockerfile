@@ -110,6 +110,14 @@ COPY docker/bots/hermes/patch_telegram_do_request.py /tmp/patch_telegram_do_requ
 RUN /opt/hermes/.venv/bin/python3 /tmp/patch_telegram_do_request.py \
     && rm /tmp/patch_telegram_do_request.py
 
+# Standalone/cron Telegram delivery silently ignored telegram.extra.base_url,
+# defaulting to a direct api.telegram.org connection that Hermes's own
+# NO_PROXY deliberately keeps un-proxied — see patch script header for the
+# full root cause (every scheduled delivery failed silently for days).
+COPY docker/bots/hermes/patch_telegram_send_base_url.py /tmp/patch_telegram_send_base_url.py
+RUN /opt/hermes/.venv/bin/python3 /tmp/patch_telegram_send_base_url.py \
+    && rm /tmp/patch_telegram_send_base_url.py
+
 # Give s6 15s grace before SIGKILL so the TERM trap can release the Telegram
 # long-poll lock and wait up to 8s for the asyncio daemon to exit cleanly.
 # Default is 5000ms which cuts the trap short before lock release completes.

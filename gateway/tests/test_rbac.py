@@ -37,8 +37,9 @@ class TestRBACConfig:
         assert config.get_user_role("8096968754") == Role.OWNER
         assert config.is_owner("8096968754")
 
-        # Check collaborator role assignments
-        collaborators = ["8506022825", "8545356403", "15712621992", "8279589982", "8526379012"]
+        # Check collaborator role assignments (current hardcoded defaults —
+        # see rbac_config.py's "Trimmed 2026-08-18" comment for the removed IDs)
+        collaborators = ["8506022825", "8279589982", "7614658040"]
         for user_id in collaborators:
             assert config.get_user_role(user_id) == Role.COLLABORATOR
             assert config.is_collaborator_or_higher(user_id)
@@ -96,10 +97,8 @@ class TestRBACConfig:
         collaborators = config.get_users_by_role(Role.COLLABORATOR)
         expected_collaborators = [
             "8506022825",
-            "8545356403",
-            "15712621992",
             "8279589982",
-            "8526379012",
+            "7614658040",
         ]
         for user_id in expected_collaborators:
             assert user_id in collaborators
@@ -565,3 +564,181 @@ class TestGroupRegistry:
         registry = GroupRegistry()
         registry.init_auto_groups(self._make_rbac())
         assert registry.is_member("nonexistent", "8506022825") is False
+
+
+# ── Collaborator removal / pause persistence tests (Bug 1 + Pause feature) ────
+
+
+class TestCollaboratorPersistence:
+    """removed_collaborator_ids / paused_collaborator_ids share approved_collaborators.json."""
+
+    def _store_path(self, tmp_path, monkeypatch):
+        import gateway.security.rbac_config as rc
+
+        monkeypatch.setattr(
+            rc, "_APPROVED_COLLABORATORS_FILE", tmp_path / "approved_collaborators.json"
+        )
+        return rc
+
+    def test_persist_and_load_collaborator(self, tmp_path, monkeypatch):
+        rc = self._store_path(tmp_path, monkeypatch)
+        rc.persist_approved_collaborator("111")
+        assert "111" in rc.load_persisted_collaborators()
+
+    def test_load_removed_and_paused_ids_empty_when_no_file(self, tmp_path, monkeypatch):
+        rc = self._store_path(tmp_path, monkeypatch)
+        assert rc.load_removed_collaborator_ids() == []
+        assert rc.load_paused_collaborator_ids() == []
+
+    def test_revoke_removes_dynamic_collaborator_and_records_removal(self, tmp_path, monkeypatch):
+        rc = self._store_path(tmp_path, monkeypatch)
+        rc.persist_approved_collaborator("222")
+        assert rc.revoke_approved_collaborator("222") is True
+        assert "222" not in rc.load_persisted_collaborators()
+        assert "222" in rc.load_removed_collaborator_ids()
+
+    def test_revoke_hardcoded_collaborator_records_removal_even_though_never_persisted(
+        self, tmp_path, monkeypatch
+    ):
+        """Bug 1: revoking a hardcoded default (never in approved_collaborators.json)
+        must still succeed and be recorded so it actually takes effect."""
+        rc = self._store_path(tmp_path, monkeypatch)
+        assert "8506022825" not in rc.load_persisted_collaborators()
+        assert rc.revoke_approved_collaborator("8506022825") is True
+        assert "8506022825" in rc.load_removed_collaborator_ids()
+
+    def test_removed_hardcoded_collaborator_excluded_from_effective_set(
+        self, tmp_path, monkeypatch
+    ):
+        """Bug 1: RBACConfig.__post_init__ must exclude persisted-removed IDs from the
+        effective collaborator_user_ids, even for hardcoded defaults."""
+        rc = self._store_path(tmp_path, monkeypatch)
+        rc.revoke_approved_collaborator("8506022825")
+        config = rc.RBACConfig()
+        assert "8506022825" not in config.collaborator_user_ids
+        assert config.get_user_role("8506022825") != rc.Role.COLLABORATOR
+        # The other hardcoded default is untouched.
+        assert "8279589982" in config.collaborator_user_ids
+
+    def test_removed_dynamic_collaborator_excluded_from_effective_set(self, tmp_path, monkeypatch):
+        rc = self._store_path(tmp_path, monkeypatch)
+        rc.persist_approved_collaborator("555")
+        assert "555" in rc.RBACConfig().collaborator_user_ids
+        rc.revoke_approved_collaborator("555")
+        assert "555" not in rc.RBACConfig().collaborator_user_ids
+
+    def test_revoke_returns_false_on_io_error(self, tmp_path, monkeypatch):
+        rc = self._store_path(tmp_path, monkeypatch)
+
+        def boom(self, *a, **kw):
+            raise OSError("read-only filesystem")
+
+        monkeypatch.setattr(rc.Path, "mkdir", boom)
+        assert rc.revoke_approved_collaborator("999") is False
+
+    def test_pause_and_unpause_collaborator(self, tmp_path, monkeypatch):
+        rc = self._store_path(tmp_path, monkeypatch)
+        assert rc.pause_collaborator("333") is True
+        assert "333" in rc.load_paused_collaborator_ids()
+        assert rc.unpause_collaborator("333") is True
+        assert "333" not in rc.load_paused_collaborator_ids()
+
+    def test_pause_does_not_remove_from_collaborator_role(self, tmp_path, monkeypatch):
+        """Pausing is access-gating only, not a role/removal change (constraint check)."""
+        rc = self._store_path(tmp_path, monkeypatch)
+        rc.pause_collaborator("8506022825")
+        config = rc.RBACConfig()
+        assert "8506022825" in config.collaborator_user_ids
+        assert config.get_user_role("8506022825") == rc.Role.COLLABORATOR
+
+    def test_pause_returns_false_on_io_error(self, tmp_path, monkeypatch):
+        rc = self._store_path(tmp_path, monkeypatch)
+
+        def boom(self, *a, **kw):
+            raise OSError("read-only filesystem")
+
+        monkeypatch.setattr(rc.Path, "mkdir", boom)
+        assert rc.pause_collaborator("444") is False
+
+    def test_unpause_returns_false_on_io_error(self, tmp_path, monkeypatch):
+        rc = self._store_path(tmp_path, monkeypatch)
+
+        def boom(self, *a, **kw):
+            raise OSError("read-only filesystem")
+
+        monkeypatch.setattr(rc.Path, "mkdir", boom)
+        assert rc.unpause_collaborator("444") is False
+
+    def test_load_collab_store_returns_empty_on_corrupt_json(self, tmp_path, monkeypatch):
+        rc = self._store_path(tmp_path, monkeypatch)
+        rc._APPROVED_COLLABORATORS_FILE.parent.mkdir(parents=True, exist_ok=True)
+        rc._APPROVED_COLLABORATORS_FILE.write_text("{not valid json", encoding="utf-8")
+        assert rc._load_collab_store() == {}
+        assert rc.load_removed_collaborator_ids() == []
+
+    def test_persist_is_idempotent(self, tmp_path, monkeypatch):
+        rc = self._store_path(tmp_path, monkeypatch)
+        rc.persist_approved_collaborator("777")
+        rc.persist_approved_collaborator("777")
+        assert rc.load_persisted_collaborators().count("777") == 1
+
+    def test_persist_returns_none_on_mkdir_error(self, tmp_path, monkeypatch):
+        rc = self._store_path(tmp_path, monkeypatch)
+
+        def boom(self, *a, **kw):
+            raise OSError("read-only filesystem")
+
+        monkeypatch.setattr(rc.Path, "mkdir", boom)
+        assert rc.persist_approved_collaborator("666") is None
+        assert "666" not in rc.load_persisted_collaborators()
+
+    def test_persist_returns_none_on_inner_write_error(self, tmp_path, monkeypatch):
+        rc = self._store_path(tmp_path, monkeypatch)
+
+        def boom(*a, **kw):
+            raise OSError("disk full")
+
+        monkeypatch.setattr(rc, "_write_collab_store", boom)
+        assert rc.persist_approved_collaborator("888") is None
+        assert "888" not in rc.load_persisted_collaborators()
+
+    def test_revoke_returns_false_on_inner_write_error(self, tmp_path, monkeypatch):
+        rc = self._store_path(tmp_path, monkeypatch)
+
+        def boom(*a, **kw):
+            raise OSError("disk full")
+
+        monkeypatch.setattr(rc, "_write_collab_store", boom)
+        assert rc.revoke_approved_collaborator("999") is False
+
+    def test_pause_returns_false_on_inner_write_error(self, tmp_path, monkeypatch):
+        rc = self._store_path(tmp_path, monkeypatch)
+
+        def boom(*a, **kw):
+            raise OSError("disk full")
+
+        monkeypatch.setattr(rc, "_write_collab_store", boom)
+        assert rc.pause_collaborator("111") is False
+
+    def test_unpause_returns_false_on_inner_write_error(self, tmp_path, monkeypatch):
+        rc = self._store_path(tmp_path, monkeypatch)
+
+        def boom(*a, **kw):
+            raise OSError("disk full")
+
+        monkeypatch.setattr(rc, "_write_collab_store", boom)
+        assert rc.unpause_collaborator("222") is False
+
+    def test_removed_and_paused_ids_coexist_independently(self, tmp_path, monkeypatch):
+        """Writes to one exclusion set must not clobber the other persisted keys."""
+        rc = self._store_path(tmp_path, monkeypatch)
+        rc.persist_approved_collaborator("aaa")
+        rc.pause_collaborator("bbb")
+        rc.revoke_approved_collaborator("ccc")
+
+        assert "aaa" in rc.load_persisted_collaborators()
+        assert "bbb" in rc.load_paused_collaborator_ids()
+        assert "ccc" in rc.load_removed_collaborator_ids()
+        # Each store key stays intact after all three writes.
+        assert "bbb" not in rc.load_removed_collaborator_ids()
+        assert "ccc" not in rc.load_paused_collaborator_ids()

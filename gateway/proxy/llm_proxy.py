@@ -65,6 +65,28 @@ MLXLM_API_BASE = os.environ.get("MLXLM_API_BASE") or "http://host.docker.interna
 # OpenAI-compatible (/v1/chat/completions, /v1/models), no auth. Default local
 # model as of 2026-08 — see docs/planning/LOCAL_LLM_REVIEW.md.
 FIELDFLARE_API_BASE = os.environ.get("FIELDFLARE_API_BASE") or "http://host.docker.internal:8238"
+# Rapid-MLX — tool-call server (agentshroud_mlx project), 8-bit KV cache for
+# faster large-context prefill than plain LM Studio serving of the same base
+# model. No auth. Added 2026-08-18 after gemma-4-12B-it-4bit (via oMLX)
+# repeatedly showed non-terminating generation under Hermes's real cron
+# workload despite temperature/max_tokens tuning — see
+# [[project_hermes_local_model_temperature_repetition_loop]]. Switched
+# 2026-08-19 from qwen3-14b to NVIDIA Nemotron 3.5 Lightning 30B-A3B after a
+# local-llms-repo bake-off found 6/6 perfect multi-step tool-call trials
+# (vs. qwen3-14b's frequent silent-completion/hallucinated-success failures)
+# at 262K native context — see docker/bots/hermes/CONTINUE-2026-08-17.md /
+# session notes for the full investigation. Root cause of the earlier
+# crashes was partly an unbounded Metal cache OOM (50.8GB peak observed),
+# now capped via RAPID_MLX_CACHE_MB/RAPID_MLX_GPU_UTIL in the local-llms repo.
+RAPID_MLX_API_BASE = os.environ.get("RAPID_MLX_API_BASE") or "http://host.docker.internal:8002"
+# Rapid-MLX's own /v1/models reports its loaded weights by full local path, not
+# a friendly name — a short alias like "qwen3-14b-rapid" must be translated
+# before forwarding (see _normalize_local_model). Overridable since this path
+# is host-specific.
+RAPID_MLX_MODEL_ID = os.environ.get(
+    "RAPID_MLX_MODEL_ID",
+    "/Users/ijefferson.admin/.cache/lm-studio/models/mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-4bit",
+)
 # oMLX — OpenAI-compatible local server (agentshroud_mlx/local-llms project),
 # hosts DeepSeek-R1-0528-Qwen3-8B and gemma-4-12B-it-4bit. Unlike the other
 # local backends, oMLX requires a bearer token (see OMLX_API_KEY below) —
@@ -92,7 +114,17 @@ LOCAL_MODEL_ROUTES: dict[str, str] = {
     "deepseek-r1": MLXLM_API_BASE,  # Reasoning — mlx_lm on :8234 (no tool calling)
     "gemma-4-26b-a4b-it": FIELDFLARE_API_BASE,  # Turbo Fieldflare — MLX Gemma 4 on :8238
     "gemma-4-12b-it-4bit": OMLX_API_BASE,  # oMLX — Gemma 4 12B, confirmed tool-calling works
-    "qwen3": LMSTUDIO_API_BASE,  # Qwen3 family — LM Studio on :1234
+    # qwen3.8-27b-mlx MUST be listed before the generic "qwen3" prefix below —
+    # dict iteration is insertion-order and the lookup returns the first
+    # startswith() match, so a less-specific earlier entry would shadow this
+    # one forever. LM Studio cannot load this model's qwen3_5 architecture
+    # yet (confirmed 2026-08-17 — needs an LM Studio engine update); it's
+    # served via mlx_lm on :8234 instead, opt-in (`services.sh mlx-lm start`).
+    "qwen3.8-27b-mlx": MLXLM_API_BASE,  # Qwen3.8-27B — mlx_lm on :8234, NOT LM Studio
+    # qwen3-14b-rapid MUST precede the generic "qwen3" entry below for the same
+    # first-prefix-wins reason as qwen3.8-27b-mlx above.
+    "qwen3-14b-rapid": RAPID_MLX_API_BASE,  # Rapid-MLX — tool-call-optimized, 8-bit KV, :8002
+    "qwen3": LMSTUDIO_API_BASE,  # Qwen3 family (14b, coder, etc.) — LM Studio on :1234
     "qwen2.5-coder": LMSTUDIO_API_BASE,  # Coding — LM Studio on :1234
     "gemma": LMSTUDIO_API_BASE,  # Other Gemma models — LM Studio on :1234
 }
@@ -111,6 +143,10 @@ _LOCAL_BACKEND_HINTS: dict[str, str] = {
     ),
     FIELDFLARE_API_BASE: (
         "Turbo Fieldflare backend is not running on the host. Start it with: tf-start"
+    ),
+    RAPID_MLX_API_BASE: (
+        "Rapid-MLX backend is not running on the host. "
+        "Start it with: services.sh rapid-mlx start"
     ),
 }
 
@@ -295,7 +331,98 @@ class LLMProxy:
         # colons ('qwen3:14b'). Normalize so the dispatch matches a loaded model.
         if base_url == LMSTUDIO_API_BASE:
             return local_model.replace(":", "-")
+        # Rapid-MLX only recognizes its weights by full local path — confirmed
+        # live 2026-08-18: requesting "qwen3-14b-rapid" 404s with "model does
+        # not exist. Available: /Users/.../Qwen3-14B-MLX-4bit".
+        if base_url == RAPID_MLX_API_BASE:
+            return RAPID_MLX_MODEL_ID
         return local_model
+
+    @staticmethod
+    def _suppress_qwen3_thinking(request_data: dict) -> bool:
+        """Append '/no_think' to the last user message, in place, if not already present.
+
+        Qwen3-family models emit chain-of-thought ("reasoning_content") before
+        the real answer by default. Under Hermes/OpenClaw's real agentic
+        workload this repeatedly produced non-terminating generation (see
+        [[project_hermes_local_model_temperature_repetition_loop]]) — the same
+        failure class that disqualified qwen3.8-27b-mlx earlier. The
+        'chat_template_kwargs': {'enable_thinking': false} field is silently
+        ignored by this serving stack (confirmed live 2026-08-18); only the
+        '/no_think' suffix in the message text actually disables it. Applied
+        at the gateway so every caller (Hermes cron, OpenClaw agents, direct
+        API use) gets this automatically, not just hand-patched jobs.
+
+        Returns True if the request body was modified (caller must re-encode).
+        """
+        messages = request_data.get("messages")
+        if not isinstance(messages, list):
+            return False
+        for msg in reversed(messages):
+            if not isinstance(msg, dict) or msg.get("role") != "user":
+                continue
+            content = msg.get("content")
+            if isinstance(content, str):
+                if "/no_think" in content:
+                    return False
+                msg["content"] = content + " /no_think"
+                return True
+            if isinstance(content, list):
+                for part in reversed(content):
+                    if isinstance(part, dict) and part.get("type") == "text":
+                        text = part.get("text", "")
+                        if "/no_think" in text:
+                            return False
+                        part["text"] = text + " /no_think"
+                        return True
+            return False
+        return False
+
+    @staticmethod
+    def _widen_optional_tool_param_types(request_data: dict) -> bool:
+        """Add 'null' as an accepted type for every non-required tool parameter, in place.
+
+        Rapid-MLX's constrained tool-call decoding fills every optional
+        argument with JSON null instead of omitting the key (confirmed live
+        2026-08-19: Hermes's skills_list(category: str = None) call was
+        rejected with "HTTP 400: ... Expected string, got NoneType" even
+        though 'category' is correctly absent from the schema's 'required'
+        list). The tool schemas themselves are correct OpenAI-style JSON
+        Schema — 'string' alone just doesn't permit null per spec. Widening
+        every non-required property's declared type to also accept null lets
+        the model's actual (harmless — it means "omitted") output pass
+        validation without touching any tool's own schema definition.
+
+        Returns True if the request body was modified (caller must re-encode).
+        """
+        tools = request_data.get("tools")
+        if not isinstance(tools, list):
+            return False
+        changed = False
+        for tool in tools:
+            if not isinstance(tool, dict):
+                continue
+            fn = tool.get("function") if tool.get("type") == "function" else tool
+            if not isinstance(fn, dict):
+                continue
+            params = fn.get("parameters")
+            if not isinstance(params, dict):
+                continue
+            properties = params.get("properties")
+            if not isinstance(properties, dict):
+                continue
+            required = set(params.get("required") or [])
+            for prop_name, prop_schema in properties.items():
+                if prop_name in required or not isinstance(prop_schema, dict):
+                    continue
+                prop_type = prop_schema.get("type")
+                if isinstance(prop_type, str) and prop_type != "null":
+                    prop_schema["type"] = [prop_type, "null"]
+                    changed = True
+                elif isinstance(prop_type, list) and "null" not in prop_type:
+                    prop_type.append("null")
+                    changed = True
+        return changed
 
     @staticmethod
     def _local_backend_headers(base_url: str, headers: dict) -> dict:
@@ -727,6 +854,11 @@ class LLMProxy:
                     model_name = normalized
                     model_lower = model_name.lower()
                     body = json.dumps(request_data).encode()
+                if base_url == RAPID_MLX_API_BASE:
+                    changed_thinking = self._suppress_qwen3_thinking(request_data)
+                    changed_tools = self._widen_optional_tool_param_types(request_data)
+                    if changed_thinking or changed_tools:
+                        body = json.dumps(request_data).encode()
             headers = self._local_backend_headers(base_url, headers)
         elif is_openai:
             base_url = OPENAI_API_BASE
@@ -962,6 +1094,22 @@ class LLMProxy:
                 if model_lower.startswith(prefix):
                     base_url = route_url
                     break
+            # Same normalization + thinking-suppression as proxy_messages — this
+            # streaming path resolved base_url correctly but never rewrote the
+            # payload itself, so "qwen3-14b-rapid" was forwarded unchanged and
+            # 404'd against Rapid-MLX (confirmed live 2026-08-18: every OpenClaw
+            # job failed with "couldn't generate a response" because OpenClaw
+            # always sends stream:true, which only ever hit this function).
+            if request_data:
+                normalized = self._normalize_local_model(model_name, base_url)
+                if normalized != model_name:
+                    request_data["model"] = normalized
+                    model_name = normalized
+                    model_lower = model_name.lower()
+                if base_url == RAPID_MLX_API_BASE:
+                    self._suppress_qwen3_thinking(request_data)
+                    self._widen_optional_tool_param_types(request_data)
+                body = json.dumps(request_data).encode()
         elif is_openai:
             base_url = OPENAI_API_BASE
         elif is_google:

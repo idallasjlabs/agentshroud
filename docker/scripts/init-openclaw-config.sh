@@ -11,6 +11,8 @@
 # What this does:
 #   1. Bootstraps cron/jobs.json from image defaults (only on fresh volume)
 #   2. Patches openclaw.json for required agent routing (always, idempotent)
+#      2e. Registers/reconciles MCP servers from mcp/servers.json (always)
+#      2f. Applies agents.defaults.sandbox.* config (always, idempotent)
 #   3. Manages workspace brand/identity files
 #   4. Refreshes SSH config (approved host allowlist) from image defaults
 
@@ -287,10 +289,65 @@ if [ -f "${MCP_SERVERS_JSON}" ] && [ -n "${_openclaw_bin}" ]; then
   else
     echo "[init] ⚠ No enabled MCP servers found in ${MCP_SERVERS_JSON} — skipping"
   fi
+
+  # Reconciliation: the loop above only ever ADDS servers newly present in
+  # _mcp_rows (enabled ones) and never revisits a server already in `openclaw
+  # mcp list` — so a server that WAS enabled and got registered, then later had
+  # its servers.json entry flipped to enabled:false (e.g. agentshroud-gateway,
+  # disabled 2026-07-18 because gateway has never actually served /mcp — see
+  # servers.json's own comment), stays registered forever across every future
+  # boot. Explicitly unset any currently-registered server whose servers.json
+  # entry is enabled:false, every startup, so a disable actually takes effect.
+  _mcp_disabled="$(node -e "
+    try {
+      const cfg = JSON.parse(require('fs').readFileSync('${MCP_SERVERS_JSON}', 'utf8'));
+      const servers = (cfg && cfg.servers) || {};
+      for (const [name, s] of Object.entries(servers)) {
+        if (s && s.enabled === false) process.stdout.write(name + '\n');
+      }
+    } catch (e) { process.stderr.write('mcp parse error: ' + e.message + '\n'); }
+  " 2>/dev/null)"
+  if [ -n "${_mcp_disabled}" ]; then
+    _mcp_existing="$(openclaw mcp list 2>/dev/null || true)"
+    printf '%s\n' "${_mcp_disabled}" | while IFS= read -r _name; do
+      [ -n "${_name}" ] || continue
+      if printf '%s' "${_mcp_existing}" | grep -qw "${_name}"; then
+        if openclaw mcp unset "${_name}" >/dev/null 2>&1; then
+          echo "[init] ✓ Unregistered disabled MCP server '${_name}'"
+        else
+          echo "[init] ⚠ Could not unregister disabled MCP server '${_name}' (will retry next boot)"
+        fi
+      fi
+    done
+  fi
 elif [ ! -f "${MCP_SERVERS_JSON}" ]; then
   echo "[init] ⚠ No synced mcp/servers.json at ${MCP_SERVERS_JSON} — run scripts/sync-llm-settings.sh (skipping MCP)"
 else
   echo "[init] ⚠ openclaw CLI not on PATH — skipping MCP registration"
+fi
+
+# ── 2f. Sandbox config — required for all agent-run isolation (idempotent) ───
+# agents.defaults.sandbox.* controls whether OpenClaw's exec/read/write/edit
+# tools run inside a per-task Docker sandbox at all. This config lives only in
+# OpenClaw's own openclaw.json on the agentshroud-config volume — a fresh
+# volume (or one predating the 2026-08-17 sandboxing fix) has NONE of this set,
+# which means sandboxing is silently OFF (OPENCLAW_SANDBOX_MODE env var is
+# dead — grepped the whole installed package, zero references). Apply on every
+# boot, mirroring how docker/bots/hermes/start.sh bakes its own idempotent
+# `hermes config set terminal.*` calls. docker.network must be the isolated
+# network (NOT OpenClaw's own network:none default) — network:none also blocks
+# the sandboxed exec tool from reaching the gateway for SSH-exec, breaking any
+# cron job that shells out via agentshroud-ssh-exec.sh.
+if [ -n "${_openclaw_bin}" ]; then
+  openclaw config set agents.defaults.sandbox.mode all 2>/dev/null
+  openclaw config set agents.defaults.sandbox.backend docker 2>/dev/null
+  openclaw config set agents.defaults.sandbox.scope session 2>/dev/null
+  openclaw config set agents.defaults.sandbox.workspaceAccess rw 2>/dev/null
+  openclaw config set agents.defaults.sandbox.docker.network agentshroud_agentshroud-isolated 2>/dev/null \
+    && echo "[init] ✓ Sandbox config applied (mode=all, backend=docker, scope=session, workspaceAccess=rw, docker.network=agentshroud_agentshroud-isolated)" \
+    || echo "[init] ⚠ Could not apply sandbox config"
+else
+  echo "[init] ⚠ openclaw CLI not on PATH — skipping sandbox config"
 fi
 
 # ── 3. Workspace brand/identity files ────────────────────────────────────────

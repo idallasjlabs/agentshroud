@@ -673,6 +673,37 @@ class TestInboundPipelineOnGetUpdates:
         assert "collaborator access revoked" in captured["payload"]["text"].lower()
 
     @pytest.mark.asyncio
+    async def test_owner_revoke_command_persists_pause_to_disk(self, tmp_path, monkeypatch):
+        """/revoke must persist through pause_collaborator() so the pause survives
+        a gateway restart and is visible to the SOC web UI, not just in-memory."""
+        import gateway.security.rbac_config as rc
+
+        monkeypatch.setattr(
+            rc, "_APPROVED_COLLABORATORS_FILE", tmp_path / "approved_collaborators.json"
+        )
+
+        def fake_urlopen(req, timeout=None, context=None):
+            class DummyResponse:
+                pass
+
+            return DummyResponse()
+
+        monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+        owner_id = "8096968754"
+        target_id = "7614658040"
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+        proxy._rbac = FakeRBAC(owner_id=owner_id, collaborators=[target_id])
+        proxy._bot_token = "test-token"
+
+        response = _wrap_response(
+            _make_update(f"/revoke {target_id}", user_id=owner_id, chat_id=int(owner_id))
+        )
+        await proxy._filter_inbound_updates(response)
+
+        assert target_id in rc.load_paused_collaborator_ids()
+
+    @pytest.mark.asyncio
     async def test_owner_revoke_command_requires_target_user_id(self, monkeypatch):
         """Owner /revoke without target should return usage guidance."""
         captured: dict[str, Any] = {}
@@ -7981,6 +8012,76 @@ class TestProgressiveLockdownUX:
         proxy._rbac = FakeRBAC(owner_id=self._OWNER, collaborators=[self._COLLAB])
         proxy._bot_token = "test-token"
         return proxy
+
+    # ── Pause persistence wiring ───────────────────────────────────────────────
+
+    @pytest.mark.asyncio
+    async def test_proxy_seeds_runtime_revoked_from_persisted_paused_set(
+        self, tmp_path, monkeypatch
+    ):
+        """On construction, _runtime_revoked_collaborators must be backed by the
+        persisted paused_collaborator_ids store, not start empty every time."""
+        import gateway.security.rbac_config as rc
+
+        monkeypatch.setattr(
+            rc, "_APPROVED_COLLABORATORS_FILE", tmp_path / "approved_collaborators.json"
+        )
+        rc.pause_collaborator("7777777777")
+
+        proxy = TelegramAPIProxy(pipeline=PassthroughPipeline())
+
+        assert "7777777777" in proxy._runtime_revoked_collaborators
+
+    @pytest.mark.asyncio
+    async def test_unlock_persists_unpause_to_disk(self, tmp_path, monkeypatch):
+        """/unlock must persist through unpause_collaborator() so resume survives
+        a gateway restart and is visible to the SOC web UI."""
+        import gateway.security.rbac_config as rc
+
+        monkeypatch.setattr(
+            rc, "_APPROVED_COLLABORATORS_FILE", tmp_path / "approved_collaborators.json"
+        )
+        rc.pause_collaborator(self._COLLAB)
+
+        proxy = self._make_proxy()
+        proxy._runtime_revoked_collaborators.add(self._COLLAB)
+
+        async def fake_notice(chat_id, message):
+            pass
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_notice)
+
+        r = _wrap_response(
+            _make_update(f"/unlock {self._COLLAB}", user_id=self._OWNER, chat_id=int(self._OWNER))
+        )
+        await proxy._filter_inbound_updates(r)
+
+        assert self._COLLAB not in rc.load_paused_collaborator_ids()
+        assert self._COLLAB not in proxy._runtime_revoked_collaborators
+
+    @pytest.mark.asyncio
+    async def test_unlock_clears_manual_pause_without_prior_lockdown_state(self, monkeypatch):
+        """A user manually /revoke'd (paused) with no ProgressiveLockdown block
+        history must still be fully unlocked by /unlock. Previously, only
+        lockdown.reset() controlled whether the runtime-revoked flag was
+        cleared, so a purely-manual pause with no auto-escalation history could
+        never be cleared by /unlock."""
+        proxy = self._make_proxy()
+        proxy._runtime_revoked_collaborators.add(self._COLLAB)
+        notices = []
+
+        async def fake_notice(chat_id, message):
+            notices.append(message)
+
+        monkeypatch.setattr(proxy, "_send_owner_admin_notice", fake_notice)
+
+        r = _wrap_response(
+            _make_update(f"/unlock {self._COLLAB}", user_id=self._OWNER, chat_id=int(self._OWNER))
+        )
+        await proxy._filter_inbound_updates(r)
+
+        assert self._COLLAB not in proxy._runtime_revoked_collaborators
+        assert any("unlocked" in n.lower() for n in notices)
 
     # ── Fix 1: /unlock calls reset() not unlock_user() ───────────────────────
 

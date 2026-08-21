@@ -40,14 +40,14 @@ Cloud — Google Gemini:
 
 Local — single model (LM Studio :1234):
   local-coder        qwen3-coder-30b-a3b-instruct         (best for tool loops)
-  local-anchor       qwen3.6-27b                          (generalist 27B)
+  local-anchor       qwen3.8-27b-mlx                      (generalist 27B)
   local-qwen14       qwen3-14b                            (smallest bot-capable)
 
 Local — Ollama (back-compat):
   local              ollama/qwen3:14b via Ollama :11434
 
 Local — multi-role (LM Studio :1234 + mlx_lm :8234):
-  local-multi        anchor=qwen3.6-27b  coding=qwen2.5-coder:32b  reasoning=deepseek-r1
+  local-multi        anchor=qwen3.8-27b-mlx  coding=qwen2.5-coder:32b  reasoning=deepseek-r1
 
 Optional [model_ref] overrides the default for any target.
 Optional --wait (with `local` target): poll until Ollama model is available.
@@ -122,7 +122,7 @@ OLLAMA_PROVIDER_API="ollama"  # overridden to openai-completions for LM Studio t
 LMSTUDIO_API_BASE="${LMSTUDIO_API_BASE:-http://host.docker.internal:1234}"
 MLXLM_API_BASE="${MLXLM_API_BASE:-http://host.docker.internal:8234}"
 FIELDFLARE_API_BASE="${FIELDFLARE_API_BASE:-http://host.docker.internal:8238}"
-ANCHOR_MODEL="${AGENTSHROUD_ANCHOR_MODEL:-qwen3.6-27b}"
+ANCHOR_MODEL="${AGENTSHROUD_ANCHOR_MODEL:-qwen3.8-27b-mlx}"
 CODING_MODEL="${AGENTSHROUD_CODING_MODEL:-qwen2.5-coder:32b}"
 REASONING_MODEL="${AGENTSHROUD_REASONING_MODEL:-deepseek-r1}"
 
@@ -161,10 +161,10 @@ case "$TARGET" in
     ;;
   local-anchor)
     MODEL_MODE="local-multi"
-    LOCAL_REF="openai-local/qwen3.6-27b"
-    OPENCLAW_MAIN_MODEL="openai-local/qwen3.6-27b"
-    LOCAL_MODEL_NAME="qwen3.6-27b"
-    ANCHOR_MODEL="qwen3.6-27b"
+    LOCAL_REF="openai-local/qwen3.8-27b-mlx"
+    OPENCLAW_MAIN_MODEL="openai-local/qwen3.8-27b-mlx"
+    LOCAL_MODEL_NAME="qwen3.8-27b-mlx"
+    ANCHOR_MODEL="qwen3.8-27b-mlx"
     OLLAMA_PROVIDER_API="openai-completions"
     if [[ -n "${CUSTOM_MODEL_REF}" ]]; then
       LOCAL_MODEL_NAME="${CUSTOM_MODEL_REF#*/}"
@@ -391,15 +391,27 @@ preflight_local() {
   if [[ "${mode}" != "local-multi" ]]; then
     return 0
   fi
-  # Probe LM Studio for the requested model
-  local lms_models
-  lms_models="$(curl -fsS --max-time 2 "${LMSTUDIO_API_BASE}/v1/models" 2>/dev/null || true)"
-  if [[ -z "${lms_models}" ]]; then
-    echo "[switch-model] WARN: LM Studio not reachable at ${LMSTUDIO_API_BASE}" >&2
-    echo "[switch-model] WARN: ensure LM Studio server is running (lms server start)" >&2
-  elif ! echo "${lms_models}" | grep -q "${model_name}"; then
-    echo "[switch-model] WARN: model '${model_name}' not found in LM Studio at ${LMSTUDIO_API_BASE}" >&2
-    echo "[switch-model] WARN: load it with: lms load ${model_name}" >&2
+  # qwen3.8-27b-mlx lives on mlx_lm (:8234), not LM Studio — LM Studio can't
+  # load its qwen3_5 architecture yet (confirmed 2026-08-17, needs an engine
+  # update). Probing LM Studio for it would always false-positive "not found".
+  # Must match gateway/proxy/llm_proxy.py's LOCAL_MODEL_ROUTES routing exactly,
+  # or this warning drifts from what actually serves the request.
+  if [[ "${model_name}" == "qwen3.8-27b-mlx" ]]; then
+    if ! curl -fsS --max-time 2 "${MLXLM_API_BASE}/v1/models" 2>/dev/null | grep -q .; then
+      echo "[switch-model] WARN: mlx_lm not reachable at ${MLXLM_API_BASE}" >&2
+      echo "[switch-model] WARN: qwen3.8-27b-mlx is served via mlx_lm, not LM Studio — start it with: services.sh mlx-lm start" >&2
+    fi
+  else
+    # Probe LM Studio for the requested model
+    local lms_models
+    lms_models="$(curl -fsS --max-time 2 "${LMSTUDIO_API_BASE}/v1/models" 2>/dev/null || true)"
+    if [[ -z "${lms_models}" ]]; then
+      echo "[switch-model] WARN: LM Studio not reachable at ${LMSTUDIO_API_BASE}" >&2
+      echo "[switch-model] WARN: ensure LM Studio server is running (lms server start)" >&2
+    elif ! echo "${lms_models}" | grep -q "${model_name}"; then
+      echo "[switch-model] WARN: model '${model_name}' not found in LM Studio at ${LMSTUDIO_API_BASE}" >&2
+      echo "[switch-model] WARN: load it with: lms load ${model_name}" >&2
+    fi
   fi
   # For the 3-role target, also probe mlx_lm (reasoning role)
   if [[ "${TARGET}" == "local-multi" ]]; then

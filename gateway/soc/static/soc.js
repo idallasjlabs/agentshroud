@@ -831,6 +831,7 @@ function _renderUsers(users) {
       </td>
       <td style="font-size:11px">${_esc(u.lockdown_level ?? '—')}</td>
       <td>
+        <button class="btn btn-sm ${u.paused ? 'btn-primary' : 'btn-warning'}" onclick="window._togglePauseCollab('${_esc(u.user_id)}',${u.paused ? 'true' : 'false'})">${u.paused ? 'Resume' : 'Pause'}</button>
         <button class="btn btn-sm btn-danger" onclick="window._removeCollab('${_esc(u.user_id)}')">Remove</button>
       </td>
     </tr>`
@@ -1223,6 +1224,19 @@ window._removeCollab = function(uid) {
     _toast(data?.ok ? 'User removed' : `Error: ${data?.message}`, data?.ok ? 'success' : 'danger');
     _loadContributors();
   });
+};
+
+window._togglePauseCollab = function(uid, isPaused) {
+  const action = isPaused ? 'unpause' : 'pause';
+  const title   = isPaused ? 'Resume collaborator' : 'Pause collaborator';
+  const body    = isPaused
+    ? `Resume bot access for user "${uid}"?`
+    : `Pause bot access for user "${uid}"? Their record is kept — this only blocks messages until resumed.`;
+  _confirm(title, body, async () => {
+    const { data } = await _post(`/users/${encodeURIComponent(uid)}/${action}`);
+    _toast(data?.ok ? `User ${isPaused ? 'resumed' : 'paused'}` : `Error: ${data?.message}`, data?.ok ? 'success' : 'danger');
+    _loadContributors();
+  }, false);
 };
 
 // ── Group management panel ──────────────────────────────────────────────────

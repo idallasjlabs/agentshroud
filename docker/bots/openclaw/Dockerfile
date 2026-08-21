@@ -30,6 +30,20 @@ RUN sed -i 's/^Signed-By:.*/Trusted: yes/' /etc/apt/sources.list.d/debian.source
         clamav clamav-daemon clamav-freshclam \
     && rm -rf /var/cache/apt/archives/*.deb /var/lib/apt/lists/*
 
+# Docker CLI only (no daemon) — required for agents.defaults.sandbox.backend=docker.
+# OpenClaw shells out to the `docker` binary itself (dockerode/DOCKER_HOST alone is
+# not enough — confirmed 2026-08-17: "Sandbox mode requires Docker, but the 'docker'
+# command was not found in PATH"). This container never gets a docker.sock mount;
+# DOCKER_HOST points at the scoped docker-socket-proxy service instead (see
+# docker-compose.yml). docker-ce-cli is the client package only, no daemon/dockerd.
+RUN curl -sSfL https://download.docker.com/linux/debian/gpg \
+        | gpg --dearmor -o /usr/share/keyrings/docker.gpg \
+    && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker.gpg] https://download.docker.com/linux/debian bookworm stable" \
+        > /etc/apt/sources.list.d/docker.list \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends docker-ce-cli \
+    && rm -rf /var/cache/apt/archives/*.deb /var/lib/apt/lists/*
+
 # Trivy vulnerability scanner — pinned version with checksum verification (M7 fix)
 ARG TRIVY_VERSION=0.72.0  # SCRUM-100: patched Go
 # R2-M1: Download Trivy with checksum verification for supply chain integrity

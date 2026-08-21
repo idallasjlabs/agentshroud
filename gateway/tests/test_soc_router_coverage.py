@@ -882,6 +882,61 @@ async def test_revoke_collaborator(client, holder):
     assert resp.json()["action"] == "revoked"
 
 
+async def test_revoke_collaborator_ok_reflects_actual_result(client, holder, monkeypatch):
+    """Bug 1 fix: 'ok' must reflect whether the removal actually took effect,
+    not be hardcoded True regardless of outcome."""
+    holder["caller"] = OWNER
+
+    monkeypatch.setattr(
+        "gateway.security.rbac_config.revoke_approved_collaborator", lambda uid: True
+    )
+    resp = await client.delete("/soc/v1/users/777/collaborator")
+    assert resp.json() == {
+        "ok": True,
+        "user_id": "777",
+        "action": "revoked",
+        "persisted": True,
+        "note": "Removed from persistent store. Restart gateway to fully purge runtime RBAC cache.",
+    }
+
+    monkeypatch.setattr(
+        "gateway.security.rbac_config.revoke_approved_collaborator", lambda uid: False
+    )
+    resp2 = await client.delete("/soc/v1/users/777/collaborator")
+    assert resp2.json()["ok"] is False
+    assert resp2.json()["persisted"] is False
+
+
+async def test_pause_collaborator_endpoint(client, holder, monkeypatch):
+    monkeypatch.setattr("gateway.security.rbac_config.pause_collaborator", lambda uid: True)
+    holder["caller"] = NON_OWNER
+    resp = await client.post("/soc/v1/users/777/pause")
+    assert resp.status_code == 403
+
+    holder["caller"] = OWNER
+    resp = await client.post("/soc/v1/users/777/pause")
+    assert resp.json() == {"ok": True, "user_id": "777", "action": "paused"}
+
+    monkeypatch.setattr("gateway.security.rbac_config.pause_collaborator", lambda uid: False)
+    resp2 = await client.post("/soc/v1/users/777/pause")
+    assert resp2.json()["ok"] is False
+
+
+async def test_unpause_collaborator_endpoint(client, holder, monkeypatch):
+    monkeypatch.setattr("gateway.security.rbac_config.unpause_collaborator", lambda uid: True)
+    holder["caller"] = NON_OWNER
+    resp = await client.post("/soc/v1/users/777/unpause")
+    assert resp.status_code == 403
+
+    holder["caller"] = OWNER
+    resp = await client.post("/soc/v1/users/777/unpause")
+    assert resp.json() == {"ok": True, "user_id": "777", "action": "unpaused"}
+
+    monkeypatch.setattr("gateway.security.rbac_config.unpause_collaborator", lambda uid: False)
+    resp2 = await client.post("/soc/v1/users/777/unpause")
+    assert resp2.json()["ok"] is False
+
+
 _ACTIVITY = [
     {
         "timestamp": 3.0,

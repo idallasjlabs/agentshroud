@@ -63,8 +63,9 @@ class ContributorManager:
             except Exception:
                 pass
 
+        paused_ids = self._load_paused_ids()
         for uid, role in rbac.user_roles.items():
-            records.append(self._build_record(uid, role.value, teams, activity_by_user))
+            records.append(self._build_record(uid, role.value, teams, activity_by_user, paused_ids))
         return records
 
     def get_contributor(self, user_id: str) -> Optional[ContributorRecord]:
@@ -78,7 +79,17 @@ class ContributorManager:
                 activity_by_user = summary.get("by_user", {})
             except Exception:
                 pass
-        return self._build_record(user_id, role.value, teams, activity_by_user)
+        paused_ids = self._load_paused_ids()
+        return self._build_record(user_id, role.value, teams, activity_by_user, paused_ids)
+
+    @staticmethod
+    def _load_paused_ids() -> set:
+        try:
+            from ..security.rbac_config import load_paused_collaborator_ids
+
+            return {str(uid) for uid in load_paused_collaborator_ids()}
+        except Exception:
+            return set()
 
     def _build_record(
         self,
@@ -86,6 +97,7 @@ class ContributorManager:
         role_value: str,
         teams,
         activity_by_user: Dict[str, dict],
+        paused_ids: Optional[set] = None,
     ) -> ContributorRecord:
         # Groups
         groups: List[str] = []
@@ -135,10 +147,12 @@ class ContributorManager:
                 getattr(app_state, "telegram_proxy", None), "_lockdown", None
             )
             if lockdown:
-                level = lockdown.get_level(user_id)
-                lockdown_level = str(level).lower() if level else "normal"
+                status = lockdown.get_status(user_id)
+                lockdown_level = str(status.get("level", "normal")).lower()
         except Exception:
             pass
+
+        paused = str(user_id) in (paused_ids or set())
 
         return ContributorRecord(
             user_id=user_id,
@@ -153,4 +167,5 @@ class ContributorManager:
             lockdown_level=lockdown_level,
             immunity_active=immunity_active,
             immunity_expires=immunity_expires,
+            paused=paused,
         )

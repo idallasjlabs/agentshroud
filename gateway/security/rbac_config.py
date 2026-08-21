@@ -63,15 +63,16 @@ class RBACConfig:
     owner_user_id: str = "8096968754"
 
     # Pre-configured collaborators
+    # Trimmed 2026-08-18 (owner directive) — removed 8545356403 (Chris Shelton),
+    # 15712621992 (Gabriel Fuentes), 8526379012 (TJ Winter), 8633775668 (Ana):
+    # none had any real human-sent message in their session transcripts, only
+    # automated heartbeat/system entries — kept 8506022825 (Brett Galura),
+    # 8279589982 (Steve Hay), 7614658040 (Isaiah, collaborator test account).
     collaborator_user_ids: List[str] = field(
         default_factory=lambda: [
             "8506022825",
-            "8545356403",
-            "15712621992",
             "8279589982",
-            "8526379012",
             "7614658040",
-            "8633775668",
         ]
     )
 
@@ -109,6 +110,15 @@ class RBACConfig:
         for _uid in load_persisted_collaborators():
             if _uid not in self.collaborator_user_ids and str(_uid) != str(self.owner_user_id):
                 self.collaborator_user_ids.append(_uid)
+
+        # Exclude persisted removals (Remove button) — applies to hardcoded defaults
+        # AND dynamically-added collaborators alike. Effective set is:
+        #   (hardcoded defaults ∪ persisted additions) − persisted removals
+        _removed = {str(uid) for uid in load_removed_collaborator_ids()}
+        if _removed:
+            self.collaborator_user_ids = [
+                uid for uid in self.collaborator_user_ids if str(uid) not in _removed
+            ]
 
         # Set owner role
         if self.owner_user_id:
@@ -350,6 +360,15 @@ def _persist_groups(groups: Dict[str, Group]) -> None:
 # Collaborator persistence — approvals made via inline buttons persist across
 # gateway restarts. Written to /app/data/approved_collaborators.json on the
 # shared data volume.
+#
+# Store shape:
+#   {
+#     "collaborators": [...],           # dynamically-approved (Add) IDs
+#     "removed_collaborator_ids": [...],# exclusion set (Remove) — trumps both
+#                                        # hardcoded defaults and "collaborators"
+#     "paused_collaborator_ids": [...]  # owner-initiated access pause (Pause/Resume,
+#                                        # also driven by Telegram /revoke + /unlock)
+#   }
 # ---------------------------------------------------------------------------
 _collab_persist_logger = logging.getLogger("agentshroud.security.rbac_config")
 _APPROVED_COLLABORATORS_FILE = (
@@ -357,36 +376,71 @@ _APPROVED_COLLABORATORS_FILE = (
 )
 
 
-def load_persisted_collaborators() -> list[str]:
-    """Read dynamically approved collaborator IDs from disk."""
+def _load_collab_store() -> dict:
+    """Read the full collaborator persistence store (all keys) from disk."""
     try:
         if _APPROVED_COLLABORATORS_FILE.exists():
-            data = json.loads(_APPROVED_COLLABORATORS_FILE.read_text(encoding="utf-8"))
-            return [str(uid) for uid in data.get("collaborators", [])]
+            return json.loads(_APPROVED_COLLABORATORS_FILE.read_text(encoding="utf-8"))
     except Exception as exc:
         _collab_persist_logger.warning("Could not read approved_collaborators.json: %s", exc)
-    return []
+    return {}
+
+
+def _write_collab_store(data: dict) -> None:
+    """Write the full collaborator persistence store (all keys) to disk."""
+    _APPROVED_COLLABORATORS_FILE.write_text(json.dumps(data, indent=2), encoding="utf-8")
+
+
+def _ensure_collab_dir() -> bool:
+    """Ensure the persistence store's parent directory exists. Returns False on failure."""
+    try:
+        _APPROVED_COLLABORATORS_FILE.parent.mkdir(parents=True, exist_ok=True)
+        return True
+    except OSError as _mkdir_exc:
+        _collab_persist_logger.warning("Could not create collaborator persist dir: %s", _mkdir_exc)
+        return False
+
+
+def load_persisted_collaborators() -> list[str]:
+    """Read dynamically approved collaborator IDs from disk."""
+    return [str(uid) for uid in _load_collab_store().get("collaborators", [])]
+
+
+def load_removed_collaborator_ids() -> list[str]:
+    """Read persisted collaborator-removal exclusions from disk (Bug 1 fix).
+
+    Applies on top of `collaborator_user_ids` (hardcoded defaults + dynamic
+    additions) so Remove works uniformly regardless of where a collaborator
+    ID originated.
+    """
+    return [str(uid) for uid in _load_collab_store().get("removed_collaborator_ids", [])]
+
+
+def load_paused_collaborator_ids() -> list[str]:
+    """Read persisted paused-collaborator IDs from disk.
+
+    Owner-initiated manual pause (web UI Pause/Resume or Telegram /revoke,
+    /unlock) — distinct from ProgressiveLockdown's automatic SUSPENDED escalation.
+    """
+    return [str(uid) for uid in _load_collab_store().get("paused_collaborator_ids", [])]
 
 
 def persist_approved_collaborator(uid: str) -> None:
     """Append a collaborator UID to the persistent store (idempotent, file-locked)."""
-    try:
-        _APPROVED_COLLABORATORS_FILE.parent.mkdir(parents=True, exist_ok=True)
-    except OSError as _mkdir_exc:
-        _collab_persist_logger.warning("Could not create collaborator persist dir: %s", _mkdir_exc)
+    if not _ensure_collab_dir():
         return
     lock_path = _APPROVED_COLLABORATORS_FILE.with_suffix(".lock")
     try:
         with open(lock_path, "w") as lock_fh:
             fcntl.flock(lock_fh, fcntl.LOCK_EX)
             try:
-                existing = load_persisted_collaborators()
+                data = _load_collab_store()
+                existing = [str(u) for u in data.get("collaborators", [])]
                 if uid in existing:
                     return
                 existing.append(uid)
-                _APPROVED_COLLABORATORS_FILE.write_text(
-                    json.dumps({"collaborators": existing}, indent=2), encoding="utf-8"
-                )
+                data["collaborators"] = existing
+                _write_collab_store(data)
                 _collab_persist_logger.info("Persisted approved collaborator: %s", uid)
             finally:
                 fcntl.flock(lock_fh, fcntl.LOCK_UN)
@@ -395,27 +449,98 @@ def persist_approved_collaborator(uid: str) -> None:
 
 
 def revoke_approved_collaborator(uid: str) -> bool:
-    """Remove a collaborator UID from the persistent store (file-locked).
+    """Remove a collaborator from effective access (file-locked).
 
-    Returns True if the UID was found and removed, False otherwise.
+    Strips the UID from the dynamically-approved list (if present) AND records
+    it in the removed-collaborator exclusion set so hardcoded defaults (e.g.
+    Brett Galura, Steve Hay) are excluded too — the Remove button works
+    uniformly for hardcoded and dynamic collaborators alike (Bug 1 fix).
+
+    Returns True on success (regardless of whether the UID was previously in
+    the dynamic "collaborators" list), False on I/O failure.
     """
+    if not _ensure_collab_dir():
+        return False
     lock_path = _APPROVED_COLLABORATORS_FILE.with_suffix(".lock")
     try:
         with open(lock_path, "w") as lock_fh:
             fcntl.flock(lock_fh, fcntl.LOCK_EX)
             try:
-                existing = load_persisted_collaborators()
+                data = _load_collab_store()
                 uid_str = str(uid)
-                if uid_str not in existing:
-                    return False
-                existing = [u for u in existing if u != uid_str]
-                _APPROVED_COLLABORATORS_FILE.write_text(
-                    json.dumps({"collaborators": existing}, indent=2), encoding="utf-8"
-                )
-                _collab_persist_logger.info("Revoked approved collaborator: %s", uid)
+                collaborators = [str(u) for u in data.get("collaborators", []) if str(u) != uid_str]
+                data["collaborators"] = collaborators
+                removed = [str(u) for u in data.get("removed_collaborator_ids", [])]
+                if uid_str not in removed:
+                    removed.append(uid_str)
+                data["removed_collaborator_ids"] = removed
+                _write_collab_store(data)
+                _collab_persist_logger.info("Revoked collaborator: %s", uid_str)
                 return True
             finally:
                 fcntl.flock(lock_fh, fcntl.LOCK_UN)
     except Exception as exc:
         _collab_persist_logger.warning("Could not revoke approved collaborator %s: %s", uid, exc)
+        return False
+
+
+def pause_collaborator(uid: str) -> bool:
+    """Pause a collaborator's bot access without removing their record (file-locked).
+
+    Adds the UID to the persisted paused-collaborator set. Distinct from
+    `revoke_approved_collaborator` — the collaborator's role/record is
+    untouched, only inbound access is blocked until `unpause_collaborator`.
+
+    Returns True on success, False on I/O failure.
+    """
+    if not _ensure_collab_dir():
+        return False
+    lock_path = _APPROVED_COLLABORATORS_FILE.with_suffix(".lock")
+    try:
+        with open(lock_path, "w") as lock_fh:
+            fcntl.flock(lock_fh, fcntl.LOCK_EX)
+            try:
+                data = _load_collab_store()
+                uid_str = str(uid)
+                paused = [str(u) for u in data.get("paused_collaborator_ids", [])]
+                if uid_str not in paused:
+                    paused.append(uid_str)
+                data["paused_collaborator_ids"] = paused
+                _write_collab_store(data)
+                _collab_persist_logger.info("Paused collaborator: %s", uid_str)
+                return True
+            finally:
+                fcntl.flock(lock_fh, fcntl.LOCK_UN)
+    except Exception as exc:
+        _collab_persist_logger.warning("Could not pause collaborator %s: %s", uid, exc)
+        return False
+
+
+def unpause_collaborator(uid: str) -> bool:
+    """Resume a paused collaborator's bot access (file-locked).
+
+    Removes the UID from the persisted paused-collaborator set.
+
+    Returns True on success, False on I/O failure.
+    """
+    if not _ensure_collab_dir():
+        return False
+    lock_path = _APPROVED_COLLABORATORS_FILE.with_suffix(".lock")
+    try:
+        with open(lock_path, "w") as lock_fh:
+            fcntl.flock(lock_fh, fcntl.LOCK_EX)
+            try:
+                data = _load_collab_store()
+                uid_str = str(uid)
+                paused = [
+                    str(u) for u in data.get("paused_collaborator_ids", []) if str(u) != uid_str
+                ]
+                data["paused_collaborator_ids"] = paused
+                _write_collab_store(data)
+                _collab_persist_logger.info("Unpaused collaborator: %s", uid_str)
+                return True
+            finally:
+                fcntl.flock(lock_fh, fcntl.LOCK_UN)
+    except Exception as exc:
+        _collab_persist_logger.warning("Could not unpause collaborator %s: %s", uid, exc)
         return False
