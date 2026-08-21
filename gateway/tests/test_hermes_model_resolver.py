@@ -52,7 +52,7 @@ provider_for_model = resolver.provider_for_model
     [
         ("ollama/qwen3:14b", "qwen3:14b"),
         ("lmstudio/qwen3-14b", "qwen3-14b"),
-        ("openai-local/qwen3.6-27b", "qwen3.6-27b"),
+        ("openai-local/qwen3.8-27b-mlx", "qwen3.8-27b-mlx"),
         ("anthropic/claude-opus-4-7", "claude-opus-4-7"),
         ("google/gemini-3-pro", "gemini-3-pro"),
         ("qwen3:14b", "qwen3:14b"),  # no prefix — unchanged

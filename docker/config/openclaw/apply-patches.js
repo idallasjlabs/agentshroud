@@ -58,7 +58,7 @@ const LMSTUDIO_BASE_URL_RAW = process.env.LMSTUDIO_API_BASE || 'http://host.dock
 const LMSTUDIO_BASE_URL = /\/v1\/?$/i.test(LMSTUDIO_BASE_URL_RAW)
   ? LMSTUDIO_BASE_URL_RAW.replace(/\/+$/, '')
   : `${LMSTUDIO_BASE_URL_RAW.replace(/\/+$/, '')}/v1`;
-const LMSTUDIO_ANCHOR_MODEL = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3.6-27b';
+const LMSTUDIO_ANCHOR_MODEL = process.env.AGENTSHROUD_ANCHOR_MODEL || 'qwen3.8-27b-mlx';
 const LMSTUDIO_CODING_MODEL = process.env.AGENTSHROUD_CODING_MODEL || 'qwen2.5-coder:32b';
 
 // Patch 0: agents.defaults.model (startup/default model resolution path)
@@ -199,12 +199,17 @@ config.models.providers = config.models.providers || {};
 // uses OpenAI stream parsing instead of Ollama-native parsing.
 const PROVIDER_KEY = MODEL_MODE === 'local-multi' ? 'openai-local' : 'ollama';
 const currentProvider = config.models.providers[PROVIDER_KEY] || {};
-// Context windows per model role (must match what LM Studio actually loads).
-// Anchor (qwen3-14b): 32768 — loaded via `printf '1\n' | lms load qwen3-14b --context-length 32768`
-//   M1 Ultra has 64-128GB unified memory; 32K is stable for competitive-intel cron jobs.
+// Context windows per model role (must match what the serving backend actually
+// loads — a mismatch here causes OpenClaw's own precheck to falsely reject
+// jobs as "context overflow" even when the real backend has headroom).
+// Anchor: 262144 — rapid-mlx serving NVIDIA Nemotron 3.5 Lightning 30B-A3B
+//   (switched 2026-08-19 from qwen3-14b's 32768 after a local-llms bake-off;
+//   262144 is the model's verified native max_position_embeddings via
+//   rapid-mlx's own /v1/models — no server flag reduces it).
 // Reasoning (deepseek-r1-*): 16384 — smaller model, 16K is sufficient.
-// Coding: 32768 — match anchor.
-const ANCHOR_CONTEXT_WINDOW = 32768;
+// Coding: 32768 — match anchor's old value; not yet re-verified against the
+//   qwen3-coder-30b-a3b fallback's real capacity.
+const ANCHOR_CONTEXT_WINDOW = 262144;
 const REASONING_CONTEXT_WINDOW = 16384;
 const CODING_CONTEXT_WINDOW = 32768;
 
@@ -307,14 +312,16 @@ if (!hasMain) {
   }
 }
 
+// Trimmed 2026-08-18 (owner directive) — removed 8545356403 (Chris Shelton),
+// 15712621992 (Gabriel Fuentes), 8526379012 (TJ Winter), 8633775668 (Ana):
+// none had any real human-sent message in their session transcripts, only
+// automated heartbeat/system entries. Mirrors the same trim in
+// gateway/security/rbac_config.py's collaborator_user_ids — keep both in
+// sync if this list changes again.
 const COLLABORATOR_IDS = {
   '8506022825': 'Brett Galura',
-  '8545356403': 'Chris Shelton',
-  '15712621992': 'Gabriel Fuentes',
   '8279589982': 'Steve Hay',
-  '8526379012': 'TJ Winter',
   '7614658040': 'Isaiah (collaborator test)',
-  '8633775668': 'Ana',
 };
 const OWNER_TELEGRAM_ID = '8096968754';
 

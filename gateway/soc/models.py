@@ -188,6 +188,9 @@ class ContributorRecord(BaseModel):
     lockdown_level: str = "normal"
     immunity_active: bool = False
     immunity_expires: Optional[str] = None
+    # Owner-initiated manual pause (web UI Pause/Resume or Telegram /revoke, /unlock).
+    # Distinct from ProgressiveLockdown's automatic SUSPENDED escalation (lockdown_level).
+    paused: bool = False
 
 
 # ---------------------------------------------------------------------------

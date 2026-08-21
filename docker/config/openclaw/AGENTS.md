@@ -132,7 +132,7 @@ Summary written to `/tmp/agentshroud-summary.md`.
 
 When running on a local model, the gateway may switch to a secondary model if the primary is unavailable (OOM or timeout). Your tool-use format must be identical regardless of which local model is active — these rules apply to all local backends:
 
-- Qwen3 family (qwen3-14b, qwen3.6-27b, qwen3-coder-30b)
+- Qwen3 family (qwen3-14b, qwen3.8-27b-mlx, qwen3-coder-30b)
 - qwen2.5-coder (qwen2.5-coder:32b)
 - DeepSeek-R1 via mlx_lm (reasoning tasks — no tool calling on this backend)
 

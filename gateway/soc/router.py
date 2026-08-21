@@ -919,12 +919,50 @@ async def revoke_collaborator(
     removed = revoke_approved_collaborator(user_id)
     _log_audit(caller, "revoke collaborator", target=user_id)
     return {
-        "ok": True,
+        "ok": removed,
         "user_id": user_id,
         "action": "revoked",
         "persisted": removed,
         "note": "Removed from persistent store. Restart gateway to fully purge runtime RBAC cache.",
     }
+
+
+@router.post("/users/{user_id}/pause")
+async def pause_collaborator_endpoint(
+    user_id: str,
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Pause a contributor's bot access without removing their record."""
+    caller.require(Action.MANAGE, Resource.USERS)
+    if not caller.is_owner():
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
+    from ..security.rbac_config import pause_collaborator
+
+    ok = pause_collaborator(user_id)
+    _log_audit(caller, "pause collaborator", target=user_id)
+    return {"ok": ok, "user_id": user_id, "action": "paused"}
+
+
+@router.post("/users/{user_id}/unpause")
+async def unpause_collaborator_endpoint(
+    user_id: str,
+    caller: SCLCaller = Depends(get_caller),
+) -> Dict:
+    """Resume a paused contributor's bot access."""
+    caller.require(Action.MANAGE, Resource.USERS)
+    if not caller.is_owner():
+        raise HTTPException(
+            status_code=403,
+            detail={"error": True, "code": "PERMISSION_DENIED", "message": "Owner required"},
+        )
+    from ..security.rbac_config import unpause_collaborator
+
+    ok = unpause_collaborator(user_id)
+    _log_audit(caller, "unpause collaborator", target=user_id)
+    return {"ok": ok, "user_id": user_id, "action": "unpaused"}
 
 
 @router.get("/collaborators/activity")

@@ -350,6 +350,36 @@ _HERMES_PY="/opt/hermes/.venv/bin/python3"
                     && hermes config set model.provider "${_provider}" 2>/dev/null \
                     && echo "[hermes-startup] ✓ Model set to ${_model} (provider=${_provider}, mode=${AGENTSHROUD_MODEL_MODE:-cloud})" \
                     || echo "[hermes-startup] ⚠ Could not set resolved model ${_model}"
+                # Sandboxed terminal execution (2026-08-17) — idempotent, applied on
+                # every boot since a fresh hermes-config volume has none of this.
+                # These MUST be set via `hermes config set` (nested terminal.* keys
+                # in config.yaml), NOT as TERMINAL_DOCKER_* environment variables —
+                # confirmed the hard way: env vars only reach an internal capability
+                # probe (task_id="prompt-backend-probe" in agent/prompt_builder.py),
+                # never the real per-task sandbox container agent/tools use, which
+                # reads container_config from config.yaml. terminal.docker_volumes
+                # bind-mounts the REAL host path backing the hermes-config docker
+                # volume (not Hermes's own in-container /opt/data path — the Docker
+                # daemon resolves bind sources in its own host/DooD namespace, not
+                # Hermes's) so sandboxed read/write/edit/exec still persists to the
+                # real workspace cron jobs depend on. terminal.docker_network=false
+                # + docker_extra_args=["--network","none"] together are what actually
+                # produce NetworkMode:none — network=false alone still left the
+                # sandbox on the default bridge network with real internet egress.
+                hermes config set terminal.backend docker 2>/dev/null
+                hermes config set terminal.docker_network false 2>/dev/null
+                hermes config set terminal.docker_extra_args '["--network","none"]' 2>/dev/null
+                hermes config set terminal.docker_volumes '["/var/lib/docker/volumes/hermes-config/_data:/opt/data:rw"]' 2>/dev/null \
+                    && echo "[hermes-startup] ✓ Sandboxed terminal execution enabled (docker backend, network:none, workspace bind-mounted)" \
+                    || echo "[hermes-startup] ⚠ Could not enable sandboxed terminal execution"
+                # Auxiliary fallback lane (2026-08-20) — idempotent, applied on every
+                # boot. Without this, auxiliary tasks (vision, web_extract, etc.) that
+                # exhaust the local/custom provider silently fall back to a non-free
+                # OpenRouter model and may incur real spend — matches the local-model-
+                # only policy applied everywhere else in this deployment.
+                hermes config set auxiliary.free_only true 2>/dev/null \
+                    && echo "[hermes-startup] ✓ Auxiliary fallback restricted to free models" \
+                    || echo "[hermes-startup] ⚠ Could not restrict auxiliary fallback to free models"
                 # cron.model / cron.model_provider is a SEPARATE resolution axis
                 # from model.default/model.provider above — the cron scheduler's
                 # pre-dispatch preflight (hermes/cron/scheduler.py

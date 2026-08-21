@@ -74,7 +74,13 @@ _socket.getaddrinfo = _ipv4_first_getaddrinfo
 from urllib.parse import urlparse
 
 from gateway.security.input_normalizer import normalize_input, strip_markdown_exfil
-from gateway.security.rbac_config import RBACConfig, persist_approved_collaborator
+from gateway.security.rbac_config import (
+    RBACConfig,
+    load_paused_collaborator_ids,
+    pause_collaborator,
+    persist_approved_collaborator,
+    unpause_collaborator,
+)
 from gateway.utils.secrets import read_secret as _read_secret_static
 
 logger = logging.getLogger("agentshroud.proxy.telegram_api")
@@ -499,7 +505,13 @@ class TelegramAPIProxy:
         # Track which collaborator user IDs have already received the disclosure notice
         # this session. Persisted in-memory only — resets on gateway restart (acceptable).
         self._disclosure_sent: set[str] = set()
-        self._runtime_revoked_collaborators: set[str] = set()
+        # Backed by the persisted paused_collaborator_ids store (rbac_config.py) so
+        # manual pause/resume survives gateway restarts and is visible/controllable
+        # from the SOC web UI, not just the Telegram /revoke and /unlock commands.
+        try:
+            self._runtime_revoked_collaborators: set[str] = set(load_paused_collaborator_ids())
+        except Exception:
+            self._runtime_revoked_collaborators = set()
         self._pending_collaborator_requests: dict[str, dict[str, Any]] = {}
         # Map str(chat_id) → user_id for known collaborators. Used to attribute
         # outbound bot sendMessage calls to the correct collaborator in activity logs.
@@ -5231,6 +5243,7 @@ class TelegramAPIProxy:
                             f"{_PROTECT_HEADER}Cannot revoke owner access.",
                         )
                         continue
+                    pause_collaborator(target_id)
                     self._runtime_revoked_collaborators.add(target_id)
                     self._disclosure_sent.discard(target_id)
                     try:
@@ -5388,8 +5401,15 @@ class TelegramAPIProxy:
                         )
                         continue
                     unlocked = self._lockdown.reset(target_id)
-                    if unlocked:
+                    # Manual pause (web UI Pause or /revoke) is independent of
+                    # ProgressiveLockdown's block-count state — a user paused without
+                    # ever tripping an auto-escalation has no lockdown state to reset,
+                    # so `unlocked` alone must not gate clearing the pause.
+                    was_paused = target_id in self._runtime_revoked_collaborators
+                    if was_paused:
+                        unpause_collaborator(target_id)
                         self._runtime_revoked_collaborators.discard(target_id)
+                    if unlocked or was_paused:
                         self._suspended_drop_notice_until.pop(target_id, None)
                         await self._send_owner_admin_notice(
                             chat_id,
