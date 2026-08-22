@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Planning Docs"
+community: "Claude"
 location: "L197"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Claude
 ---
 
 # 4) TEST-DRIVEN DEVELOPMENT (DEFAULT)
@@ -16,4 +16,4 @@ tags:
 - [[Red → Green → Refactor]] - `contains` [EXTRACTED]
 - [[Test quality rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Claude
