@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/peekaboo/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Gateway Proxy Layer"
+community: "Skill (i-mcpm)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Skill_i-mcpm
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Peekaboo]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm

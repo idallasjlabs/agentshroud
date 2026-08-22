@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bot-capabilities.md"
+source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L24"
+community: "Skill (i-mm)"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-mm
 ---
 
 # Rules
 
 ## Connections
-- [[Trademark Statements]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mm

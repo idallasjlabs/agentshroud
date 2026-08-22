@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sad/SKILL.md"
+source_file: ".agents/skills/i-release/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-release)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-release
 ---
 
 # SKILL.md
 
 ## Connections
-- [[System Audit & Documentation]] - `contains` [EXTRACTED]
+- [[Skill Release (i-release)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-release

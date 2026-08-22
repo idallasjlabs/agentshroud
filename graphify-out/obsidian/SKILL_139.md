@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/coding-agent/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "branding/colors"
+community: "Skill (i-chaos-engineering)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/colors
+  - community/Skill_i-chaos-engineering
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Coding Agent (bash-first)]] - `contains` [EXTRACTED]
+- [[Skill chaos-engineering_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/colors
+#graphify/document #graphify/EXTRACTED #community/Skill_i-chaos-engineering

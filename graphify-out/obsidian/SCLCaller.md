@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Community 1513"
+community: "Router (soc)"
 location: "L138"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_1513
+  - community/Router_soc
 ---
 
 # SCLCaller
 
 ## Connections
-- [[.__init__()_125]] - `method` [EXTRACTED]
+- [[.__init__()_129]] - `method` [EXTRACTED]
 - [[.is_group_admin()_1]] - `method` [EXTRACTED]
 - [[.is_owner()_2]] - `method` [EXTRACTED]
 - [[.require()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[.test_require_denied_without_reason_uses_forbidden()]] - `calls` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_66]] - `uses` [INFERRED]
+- [[Any_67]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult_1]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
@@ -59,4 +59,4 @@ tags:
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1513
+#graphify/code #graphify/INFERRED #community/Router_soc

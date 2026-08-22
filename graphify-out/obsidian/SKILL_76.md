@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ci/SKILL.md"
+source_file: "docker/config/hermes/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Skill (i-chaos-engineering)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Skill_i-chaos-engineering
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill ci_1]] - `contains` [EXTRACTED]
+- [[Skill chaos-engineering_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Skill_i-chaos-engineering

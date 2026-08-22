@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Security Docs"
+community: "Uspto Provisional Patent Application (docs)"
 location: "L805"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Uspto_Provisional_Patent_Application_docs
 ---
 
 # SECTION 5: IMPORTANT NOTES
@@ -18,4 +18,4 @@ tags:
 - [[What is NOT in this application (by design)]] - `contains` [EXTRACTED]
 - [[What you MUST file within 12 months]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Uspto_Provisional_Patent_Application_docs

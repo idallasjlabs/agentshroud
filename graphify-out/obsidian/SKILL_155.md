@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/obsidian/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-kanban/SKILL.md"
 type: "document"
-community: "docs/USPTO_TRADEMARK_APPLICATION.md"
+community: "Skill (i-kanban)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/USPTO_TRADEMARK_APPLICATIONmd
+  - community/Skill_i-kanban
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Obsidian]] - `contains` [EXTRACTED]
+- [[Skill kanban_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/USPTO_TRADEMARK_APPLICATIONmd
+#graphify/document #graphify/EXTRACTED #community/Skill_i-kanban

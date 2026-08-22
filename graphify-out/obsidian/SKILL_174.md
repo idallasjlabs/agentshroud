@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/wacli/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sav/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-sav)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-sav
 ---
 
 # SKILL.md
 
 ## Connections
-- [[wacli]] - `contains` [EXTRACTED]
+- [[System Audit Vault (Obsidian)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sav

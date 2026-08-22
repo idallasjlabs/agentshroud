@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
+source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "CHANGELOG.md"
-location: "L29"
+community: "Bot Capabilities (docker)"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Bot_Capabilities_docker
 ---
 
 # Rules
 
 ## Connections
-- [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
+- [[Trademark Statements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/document #graphify/EXTRACTED #community/Bot_Capabilities_docker

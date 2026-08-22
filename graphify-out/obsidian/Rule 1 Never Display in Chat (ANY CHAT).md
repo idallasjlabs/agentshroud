@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "System Instructions Security (docker)"
 location: "L95"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/System_Instructions_Security_docker
 ---
 
 # Rule 1: Never Display in Chat (ANY CHAT)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📊 Security Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/System_Instructions_Security_docker

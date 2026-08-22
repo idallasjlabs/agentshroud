@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/openai-whisper/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 1457"
+community: "Skill (i-mcpm-auth-reset)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1457
+  - community/Skill_i-mcpm-auth-reset
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Whisper (CLI)]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1457
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-auth-reset

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "voice_gateway/stt.py"
-location: "L20"
+community: "Skill (i-tw)"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/voice_gateway/sttpy
+  - community/Skill_i-tw
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/voice_gateway/sttpy
+#graphify/document #graphify/EXTRACTED #community/Skill_i-tw

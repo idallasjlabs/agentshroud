@@ -1,17 +1,17 @@
 ---
 source_file: "docs/diagrams/images/diagram-06-cicd-deployment.svg"
 type: "image"
-community: "Gateway Test Suite"
+community: "Diagram 01 C4 Context (images)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Diagram_01_C4_Context_images
 ---
 
 # Running Containers (gateway + bot, healthy)
 
 ## Connections
+- [[AgentShroud Bot Container (Node.js 22OpenClaw 18789)]] - `conceptually_related_to` [EXTRACTED]
 - [[Gateway Container (Python 3.11FastAPI 8080)]] - `conceptually_related_to` [EXTRACTED]
-- [[agentshroud-bot Container (Node.js 22 OpenClaw, port 18789, 4 GB, isolated network)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/image #graphify/EXTRACTED #community/Diagram_01_C4_Context_images

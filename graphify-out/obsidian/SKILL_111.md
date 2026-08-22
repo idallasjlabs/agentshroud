@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-scrum/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Skill (i-sav)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Skill_i-sav
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill scrum_1]] - `contains` [EXTRACTED]
+- [[System Audit Vault (Obsidian)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sav

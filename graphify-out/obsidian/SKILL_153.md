@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/nano-pdf/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "docs/USPTO_TRADEMARK_APPLICATION.md"
+community: "Skill (i-incident-response)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/USPTO_TRADEMARK_APPLICATIONmd
+  - community/Skill_i-incident-response
 ---
 
 # SKILL.md
 
 ## Connections
-- [[nano-pdf]] - `contains` [EXTRACTED]
+- [[Skill incident-response_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/USPTO_TRADEMARK_APPLICATIONmd
+#graphify/document #graphify/EXTRACTED #community/Skill_i-incident-response

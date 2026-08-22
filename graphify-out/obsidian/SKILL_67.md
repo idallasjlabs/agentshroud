@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-architecture-review/SKILL.md"
+source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Skill (i-apollo)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Skill_i-apollo
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill architecture-review_1]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Skill_i-apollo

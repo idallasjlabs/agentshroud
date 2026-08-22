@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "scripts/sync-version.sh"
+community: "Updating (operations)"
 location: "L775"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/sync-versionsh
+  - community/Updating_operations
 ---
 
 # Rollback If Needed
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Updating]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/sync-versionsh
+#graphify/document #graphify/EXTRACTED #community/Updating_operations

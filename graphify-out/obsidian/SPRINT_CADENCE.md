@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/SPRINT_CADENCE.md"
 type: "document"
-community: "browser-extension/options.js"
+community: "Sprint Cadence (governance)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-extension/optionsjs
+  - community/Sprint_Cadence_governance
 ---
 
 # SPRINT_CADENCE.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Sprint Cadence Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-extension/optionsjs
+#graphify/document #graphify/EXTRACTED #community/Sprint_Cadence_governance

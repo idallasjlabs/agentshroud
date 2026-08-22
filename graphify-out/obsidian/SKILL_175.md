@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/weather/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-scrum/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-scrum)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-scrum
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Weather Skill]] - `contains` [EXTRACTED]
+- [[Skill scrum_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-scrum

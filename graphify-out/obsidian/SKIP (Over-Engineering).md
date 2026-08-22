@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Security Value Proposition (security)"
 location: "L282"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Security_Value_Proposition_security
 ---
 
 # SKIP (Over-Engineering):
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 3 Plan Reality Check]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Security_Value_Proposition_security

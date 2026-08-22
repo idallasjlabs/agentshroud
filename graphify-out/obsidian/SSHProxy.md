@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Ssh Write File Endpoint"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Ssh_Write_File_Endpoint
 ---
 
 # SSHProxy
 
 ## Connections
-- [[.__init__()_129]] - `method` [EXTRACTED]
+- [[.__init__()_133]] - `method` [EXTRACTED]
 - [[.execute()]] - `method` [EXTRACTED]
 - [[.is_auto_approved()]] - `method` [EXTRACTED]
 - [[.no_approval_client()]] - `calls` [EXTRACTED]
@@ -51,6 +51,7 @@ tags:
 - [[SSH command proxy with validation and audit support]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHConfig_2]] - `uses` [INFERRED]
+- [[SSHHostConfig]] - `shares_data_with` [EXTRACTED]
 - [[SSHProxy_1]] - `uses` [INFERRED]
 - [[TestApprovalQueuePIISanitization]] - `uses` [INFERRED]
 - [[TestDashboardCookieAuth]] - `uses` [INFERRED]
@@ -91,4 +92,4 @@ tags:
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Ssh_Write_File_Endpoint

@@ -1,17 +1,17 @@
 ---
-source_file: "AGENTS.md"
+source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "voice_gateway/tts.py"
-location: "L19"
+community: "Skill (i-bs)"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/voice_gateway/ttspy
+  - community/Skill_i-bs
 ---
 
 # Rules
 
 ## Connections
-- [[0) PRIME DIRECTIVE (CODEX ROLE - NON-NEGOTIABLE)]] - `contains` [EXTRACTED]
+- [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/voice_gateway/ttspy
+#graphify/document #graphify/EXTRACTED #community/Skill_i-bs

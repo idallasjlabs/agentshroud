@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sad/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sad/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-sad)"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-sad
 ---
 
 # SECTION 5 — PREREQUISITE SETUP (Step-by-Step)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit & Documentation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sad

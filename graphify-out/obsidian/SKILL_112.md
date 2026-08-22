@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sdlc/SKILL.md"
+source_file: "docker/config/hermes/skills/i-scrum/SKILL.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Skill (i-scrum)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Skill_i-scrum
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill sdlc_1]] - `contains` [EXTRACTED]
+- [[Skill scrum_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Skill_i-scrum

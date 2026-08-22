@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-devsecops/SKILL.md"
+source_file: ".agents/skills/i-devsecops/SKILL.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Skill (i-devsecops)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Skill_i-devsecops
 ---
 
 # SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill devsecops]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Skill_i-devsecops

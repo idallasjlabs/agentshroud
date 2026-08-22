@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "Planning Docs"
+community: "Uspto Trademark Application (docs)"
 location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Uspto_Trademark_Application_docs
 ---
 
 # SECTION 3: GOODS AND SERVICES
@@ -16,4 +16,4 @@ tags:
 - [[Class 42 — Software as a Service (SaaS)]] - `contains` [EXTRACTED]
 - [[Class 9 — Computer Software]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Uspto_Trademark_Application_docs

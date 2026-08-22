@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Soc Websocket"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Soc_Websocket
 ---
 
 # SOCWebSocketHandler
@@ -17,4 +17,4 @@ tags:
 - [[.test_instantiate()]] - `calls` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Soc_Websocket

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/notion/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "docker/bot-capabilities.md"
+community: "Skill (i-kaizen)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/bot-capabilitiesmd
+  - community/Skill_i-kaizen
 ---
 
 # SKILL.md
 
 ## Connections
-- [[notion]] - `contains` [EXTRACTED]
+- [[Skill kaizen_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd
+#graphify/document #graphify/EXTRACTED #community/Skill_i-kaizen

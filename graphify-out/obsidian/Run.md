@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-image-gen/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Gen (scripts)"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Gen_scripts
 ---
 
 # Run
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenAI Image Gen]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Gen_scripts

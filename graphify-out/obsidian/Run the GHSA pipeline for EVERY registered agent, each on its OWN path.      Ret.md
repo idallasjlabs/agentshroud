@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Sync Cve Registry (scripts)"
 location: "L777"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Sync_Cve_Registry_scripts
 ---
 
 # Run the GHSA pipeline for EVERY registered agent, each on its OWN path.      Ret
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_ghsa_sync()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Sync_Cve_Registry_scripts

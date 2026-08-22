@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/gemini/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
 type: "document"
-community: "Community 1442"
+community: "Skill (i-cr)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1442
+  - community/Skill_i-cr
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Gemini CLI]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1442
+#graphify/document #graphify/EXTRACTED #community/Skill_i-cr

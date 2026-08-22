@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sad/SKILL.md"
+source_file: ".agents/skills/i-sad/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-sad)"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-sad
 ---
 
 # SECTION 6 — STARTUP SEQUENCE (Exact Order of Operations)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit & Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sad

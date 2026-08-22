@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
+source_file: ".agents/skills/i-sre/SKILL.md"
 type: "document"
-community: "voice_gateway/stt.py"
+community: "Skill (i-sre)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/voice_gateway/sttpy
+  - community/Skill_i-sre
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
+- [[Skill sre]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/voice_gateway/sttpy
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sre

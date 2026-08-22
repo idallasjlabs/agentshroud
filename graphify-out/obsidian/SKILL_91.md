@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-kanban/SKILL.md"
+source_file: "docker/config/hermes/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Skill (i-kaizen)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Skill_i-kaizen
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill kanban_1]] - `contains` [EXTRACTED]
+- [[Skill kaizen_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Skill_i-kaizen

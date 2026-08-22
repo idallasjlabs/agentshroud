@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-scrum/SKILL.md"
+source_file: ".agents/skills/i-sav/SKILL.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Skill (i-sav)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Skill_i-sav
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill scrum]] - `contains` [EXTRACTED]
+- [[System Audit Vault (Obsidian)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sav

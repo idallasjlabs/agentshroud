@@ -1,20 +1,22 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "SOC Collaborator Lifecycle"
+community: "SOC Router (Collaborator Mgmt)"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/SOC_Router_Collaborator_Mgmt
 ---
 
 # SCLCaller
 
 ## Connections
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
 - [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
 - [[_log_audit()]] - `references` [EXTRACTED]
 - [[acknowledge_config_integrity()]] - `references` [EXTRACTED]
 - [[add_collaborator()_1]] - `references` [EXTRACTED]
@@ -69,6 +71,7 @@ tags:
 - [[list_services()]] - `references` [EXTRACTED]
 - [[list_users()]] - `references` [EXTRACTED]
 - [[override_egress_rule()]] - `references` [EXTRACTED]
+- [[pause_collaborator_endpoint()]] - `references` [EXTRACTED]
 - [[rebuild_all_services()]] - `references` [EXTRACTED]
 - [[remove_egress_rule()]] - `references` [EXTRACTED]
 - [[remove_group_member()]] - `references` [EXTRACTED]
@@ -87,6 +90,7 @@ tags:
 - [[start_service()]] - `references` [EXTRACTED]
 - [[stop_service()_1]] - `references` [EXTRACTED]
 - [[trigger_cve_report()]] - `references` [EXTRACTED]
+- [[unpause_collaborator_endpoint()]] - `references` [EXTRACTED]
 - [[update_display_name()]] - `references` [EXTRACTED]
 - [[update_service()]] - `references` [EXTRACTED]
 - [[upgrade_bot()]] - `references` [EXTRACTED]
@@ -94,4 +98,4 @@ tags:
 - [[upgrade_hermes()]] - `references` [EXTRACTED]
 - [[verify_audit_chain()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/code #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt

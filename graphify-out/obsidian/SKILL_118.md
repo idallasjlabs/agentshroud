@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sre/SKILL.md"
+source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "Skill (i-socrates)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Skill_i-socrates
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill sre_1]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Skill_i-socrates

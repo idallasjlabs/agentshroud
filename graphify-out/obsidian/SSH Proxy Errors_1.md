@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Error index (07 - Errors & Troubleshooting)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Error_index_07_-_Errors__Troubleshooting
 ---
 
 # SSH Proxy Errors
@@ -16,10 +16,8 @@ tags:
 - [[HTTP 403 — SSH Host Not Allowed]] - `contains` [EXTRACTED]
 - [[Related Notes_62]] - `contains` [EXTRACTED]
 - [[SSH Connection Timeout]] - `contains` [EXTRACTED]
-- [[SSH Host Allowlist]] - `describes` [EXTRACTED]
 - [[SSH Key Not Found]] - `contains` [EXTRACTED]
 - [[SSH Proxy Errors]] - `contains` [EXTRACTED]
 - [[Session Duration Exceeded]] - `contains` [EXTRACTED]
-- [[Tailscale Mesh VPN (tail240ea8.ts.net)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Error_index_07_-_Errors__Troubleshooting

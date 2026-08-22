@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-kaizen/SKILL.md"
+source_file: "docker/config/hermes/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "scripts/verify-greeter-state.sh"
+community: "Skill (i-incident-response)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/verify-greeter-statesh
+  - community/Skill_i-incident-response
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill kaizen_1]] - `contains` [EXTRACTED]
+- [[Skill incident-response_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/verify-greeter-statesh
+#graphify/document #graphify/EXTRACTED #community/Skill_i-incident-response

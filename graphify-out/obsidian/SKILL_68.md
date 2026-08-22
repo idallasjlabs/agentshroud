@@ -1,19 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
+source_file: "docker/config/hermes/skills/i-architecture-review/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-architecture-review)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-architecture-review
 ---
 
 # SKILL.md
 
 ## Connections
-- [[description of what this does_1]] - `contains` [EXTRACTED]
-- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
-- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
+- [[Skill architecture-review_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-architecture-review

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/camsnap/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Skill (i-browser)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Skill_i-browser
 ---
 
 # SKILL.md
 
 ## Connections
-- [[camsnap]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Skill_i-browser

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-devsecops/SKILL.md"
+source_file: "docker/config/hermes/skills/i-data/SKILL.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Skill (i-data)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Skill_i-data
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill devsecops_1]] - `contains` [EXTRACTED]
+- [[Skill Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Skill_i-data

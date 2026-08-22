@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-data/SKILL.md"
+source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "branding/favicons"
-location: "L7"
+community: "Skill (i-daedalus)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/favicons
+  - community/Skill_i-daedalus
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/favicons
+#graphify/document #graphify/EXTRACTED #community/Skill_i-daedalus

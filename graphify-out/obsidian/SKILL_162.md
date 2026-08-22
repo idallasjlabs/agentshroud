@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/sag/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
 type: "document"
-community: "src/interfaces"
+community: "Skill (i-mm)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/src/interfaces
+  - community/Skill_i-mm
 ---
 
 # SKILL.md
 
 ## Connections
-- [[sag]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/src/interfaces
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mm

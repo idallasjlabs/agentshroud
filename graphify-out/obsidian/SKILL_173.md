@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/voice-call/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sad/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-sad)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-sad
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Voice Call]] - `contains` [EXTRACTED]
+- [[System Audit & Documentation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sad

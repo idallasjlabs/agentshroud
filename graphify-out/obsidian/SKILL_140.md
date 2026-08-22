@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/discord/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-ci/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-ci)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-ci
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Discord (Via `message`)]] - `contains` [EXTRACTED]
+- [[Skill ci_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ci

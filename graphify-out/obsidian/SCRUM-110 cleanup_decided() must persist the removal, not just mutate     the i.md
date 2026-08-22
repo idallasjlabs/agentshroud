@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
+community: "Approval Queue"
 location: "L441"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Approval_Queue
 ---
 
 # SCRUM-110: cleanup_decided() must persist the removal, not just mutate     the i
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cleanup_decided_persists_removal_to_disk()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue

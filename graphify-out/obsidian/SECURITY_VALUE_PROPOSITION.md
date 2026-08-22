@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Development Workflow Read Only (security)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Development_Workflow_Read_Only_security
 ---
 
 # SECURITY_VALUE_PROPOSITION.md
@@ -14,8 +14,13 @@ tags:
 ## Connections
 - [[AgentShroud Security Value Proposition]] - `contains` [EXTRACTED]
 - [[AgentShroud Security Value Proposition - REVISED]] - `contains` [EXTRACTED]
-- [[Gateway Security Value (Approval Queue, PII Sanitizer, Audit Ledger)]] - `describes` [EXTRACTED]
-- [[IEC 62443 Compliance Matrix (FR1-FR7 Foundational Requirements)]] - `references` [EXTRACTED]
-- [[Multi-Tenant Security Context (external hosting, security testbed, immutable infra)]] - `describes` [EXTRACTED]
+- [[Approval Queue — Core Security Value]] - `references` [EXTRACTED]
+- [[DEVELOPMENT_WORKFLOW_READ_ONLY]] - `conceptually_related_to` [INFERRED]
+- [[IEC 62443 Compliance Matrix]] - `references` [EXTRACTED]
+- [[MVP Recommendation (Option A)]] - `references` [EXTRACTED]
+- [[Multi-UserMulti-Tenant Threat Model (Reversal Driver)]] - `references` [EXTRACTED]
+- [[Read-Only Filesystem (Planned)]] - `references` [EXTRACTED]
+- [[Ultra-Conservative Credential Display Policy]] - `references` [EXTRACTED]
+- [[VERIFICATION_RESULTS]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read_Only_security

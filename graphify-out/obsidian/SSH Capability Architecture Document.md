@@ -1,20 +1,22 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "Module Group 369"
+community: "V1.2.0 Master Plan (v1.2)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Module_Group_369
+  - community/V120_Master_Plan_v12
 ---
 
 # SSH Capability Architecture Document
 
 ## Connections
-- [[Approval Queue (Human-in-the-Loop for Sensitive Actions)]] - `references` [EXTRACTED]
-- [[SSH Approval Flow (auto-approve vs human-review vs deny)]] - `describes` [EXTRACTED]
-- [[SSH Command Injection Detection (INJECTION_PATTERNS regex + asyncio subprocess exec)]] - `describes` [EXTRACTED]
-- [[SSH Proxy Module (gatewayssh_proxyproxy.py)]] - `describes` [EXTRACTED]
-- [[SSHHostConfig (per-host allowdenyauto-approve lists, timeout, key_path)]] - `describes` [EXTRACTED]
+- [[Architecture_11]] - `contains` [EXTRACTED]
+- [[Components_1]] - `contains` [EXTRACTED]
+- [[Overview_18]] - `contains` [EXTRACTED]
+- [[Request Flow]] - `contains` [EXTRACTED]
+- [[SSHProxy Controlled Remote Command Execution via Gateway API]] - `references` [EXTRACTED]
+- [[Security Layers]] - `contains` [EXTRACTED]
+- [[ssh-capability]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Module_Group_369
+#graphify/document #graphify/EXTRACTED #community/V120_Master_Plan_v12

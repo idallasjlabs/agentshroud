@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-value-stream-mapping/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "Skill (i-ux)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Skill_i-ux
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill value-stream-mapping_1]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ux

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sre/SKILL.md"
+source_file: ".agents/skills/i-socrates/SKILL.md"
 type: "document"
-community: "scripts/find-ports.sh"
+community: "Skill (i-socrates)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/find-portssh
+  - community/Skill_i-socrates
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill sre]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/find-portssh
+#graphify/document #graphify/EXTRACTED #community/Skill_i-socrates

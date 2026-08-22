@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/spotify-player/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
 type: "document"
-community: "Community 1505"
+community: "Skill (i-pca)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1505
+  - community/Skill_i-pca
 ---
 
 # SKILL.md
 
 ## Connections
-- [[spogo  spotify_player]] - `contains` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1505
+#graphify/document #graphify/EXTRACTED #community/Skill_i-pca

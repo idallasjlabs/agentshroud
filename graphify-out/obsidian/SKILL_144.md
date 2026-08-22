@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/gifgrep/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-daedalus)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-daedalus
 ---
 
 # SKILL.md
 
 ## Connections
-- [[gifgrep]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-daedalus

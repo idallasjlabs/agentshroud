@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/gh-issues/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-crpr)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-crpr
 ---
 
 # SKILL.md
 
 ## Connections
-- [[gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-crpr

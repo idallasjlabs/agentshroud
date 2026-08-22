@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/apple-notes/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-architecture-review/SKILL.md"
 type: "document"
-community: "ESP32 Firmware"
+community: "Skill (i-architecture-review)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Skill_i-architecture-review
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Apple Notes CLI]] - `contains` [EXTRACTED]
+- [[Skill architecture-review_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Skill_i-architecture-review

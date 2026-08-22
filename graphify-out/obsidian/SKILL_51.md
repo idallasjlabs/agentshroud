@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
+source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "web/management-dashboard.html"
+community: "Skill (i-sec-defense)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web/management-dashboardhtml
+  - community/Skill_i-sec-defense
 ---
 
 # SKILL.md
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web/management-dashboardhtml
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense

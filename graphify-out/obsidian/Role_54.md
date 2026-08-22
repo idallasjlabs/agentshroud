@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "scripts/canary-deploy.sh"
+community: "Skill (i-mcpm-aws-profile)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/canary-deploysh
+  - community/Skill_i-mcpm-aws-profile
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/canary-deploysh
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-aws-profile

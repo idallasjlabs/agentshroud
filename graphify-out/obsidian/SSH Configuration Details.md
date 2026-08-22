@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Openclaw Ssh Setup (setup)"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Openclaw_Ssh_Setup_setup
 ---
 
 # SSH Configuration Details
@@ -17,4 +17,4 @@ tags:
 - [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
 - [[SSH Config File Location]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Openclaw_Ssh_Setup_setup

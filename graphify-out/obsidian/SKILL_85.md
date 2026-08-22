@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gitops/SKILL.md"
+source_file: "docker/config/hermes/skills/i-gg/SKILL.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Skill (i-gg)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Skill_i-gg
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill gitops_1]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Skill_i-gg

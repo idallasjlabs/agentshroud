@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "rationale"
-community: "Architecture Docs"
+community: "Cron Jobs Prompts"
 location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Cron_Jobs_Prompts
 ---
 
 # SSH config must have a Host *.tail240ea8.ts.net block BEFORE Host * block.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ssh_config_routes_tailnet_fqdn()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Cron_Jobs_Prompts

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/clawhub/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-cd/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-cd)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-cd
 ---
 
 # SKILL.md
 
 ## Connections
-- [[ClawHub CLI]] - `contains` [EXTRACTED]
+- [[Skill cd_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-cd

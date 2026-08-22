@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/nano-banana-pro/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-icloud)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-icloud
 ---
 
 # SKILL.md
 
 ## Connections
-- [[nano-banana-pro Skill (Gemini 3 Pro Image)]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud

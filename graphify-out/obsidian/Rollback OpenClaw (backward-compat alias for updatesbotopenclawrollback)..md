@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Api (web)"
 location: "L612"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Api_web
 ---
 
 # Rollback OpenClaw (backward-compat alias for /updates/bot/openclaw/rollback).
 
 ## Connections
-- [[check_agentshroud_updates()]] - `rationale_for` [EXTRACTED]
 - [[rollback_openclaw()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Api_web

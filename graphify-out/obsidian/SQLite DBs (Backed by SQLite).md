@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.svg"
 type: "concept"
-community: "docs/diagrams"
+community: "Diagram 10 Data Dictionary (images)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Diagram_10_Data_Dictionary_images
 ---
 
 # SQLite DBs (Backed by SQLite)
@@ -15,4 +15,4 @@ tags:
 - [[approval_items table (pending, approved, rejected, expired; 1h TTL)]] - `conceptually_related_to` [EXTRACTED]
 - [[ledger table (indexed on timestamp, source, forwarded_to)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/diagrams
+#graphify/concept #graphify/EXTRACTED #community/Diagram_10_Data_Dictionary_images

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/gog/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-devsecops/SKILL.md"
 type: "document"
-community: "Community 1445"
+community: "Skill (i-devsecops)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1445
+  - community/Skill_i-devsecops
 ---
 
 # SKILL.md
 
 ## Connections
-- [[gog]] - `contains` [EXTRACTED]
+- [[Skill devsecops_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1445
+#graphify/document #graphify/EXTRACTED #community/Skill_i-devsecops

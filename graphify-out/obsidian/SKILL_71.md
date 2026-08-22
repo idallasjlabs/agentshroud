@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bdd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "document"
-community: "scripts/pre-commit-hook.sh"
+community: "Skill (i-aws)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/pre-commit-hooksh
+  - community/Skill_i-aws
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill bdd_1]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/pre-commit-hooksh
+#graphify/document #graphify/EXTRACTED #community/Skill_i-aws

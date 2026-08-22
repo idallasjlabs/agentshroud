@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-value-stream-mapping/SKILL.md"
+source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Skill (i-ux)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Skill_i-ux
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill value-stream-mapping]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ux

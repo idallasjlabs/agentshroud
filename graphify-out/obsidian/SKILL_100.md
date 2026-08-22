@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-observability/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Skill (i-mnemosyne)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Skill_i-mnemosyne
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill observability_1]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mnemosyne

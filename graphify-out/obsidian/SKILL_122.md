@@ -1,17 +1,24 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
+source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-tw)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-tw
 ---
 
 # SKILL.md
 
 ## Connections
-- [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
+- [[Expected output_1]] - `contains` [EXTRACTED]
+- [[Expected ok_1]] - `contains` [EXTRACTED]
+- [[Expected INFO Re-queued 3 jobs_1]] - `contains` [EXTRACTED]
+- [[If not → escalate to field team via ops-alerts_1]] - `contains` [EXTRACTED]
+- [[Query the control DB_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)_1]] - `contains` [EXTRACTED]
+- [[INFO Extracted 1,204 records → s3my-bucketlanding..._1]] - `contains` [EXTRACTED]
+- [[→ {site site1, test_mode True, output_prefix _testsite1}_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-tw
