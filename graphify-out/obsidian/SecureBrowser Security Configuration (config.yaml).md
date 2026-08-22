@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/config.yaml"
 type: "document"
-community: "docs/vault"
+community: "Browse (scripts)"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/docs/vault
+  - graphify/INFERRED
+  - community/Browse_scripts
 ---
 
 # SecureBrowser Security Configuration (config.yaml)
@@ -14,4 +14,4 @@ tags:
 - [[Browser — Secure Browser Automation (SKILL)]] - `references` [EXTRACTED]
 - [[SecureBrowser._load_config()]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/INFERRED #community/Browse_scripts

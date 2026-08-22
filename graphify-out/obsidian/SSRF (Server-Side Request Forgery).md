@@ -1,18 +1,17 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Gateway Security Module"
+community: "Glossary (project)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Glossary_project
 ---
 
 # SSRF (Server-Side Request Forgery)
 
 ## Connections
 - [[system-requirements]] - `references` [EXTRACTED]
-- [[threat-model]] - `references` [EXTRACTED]
 - [[use-cases]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/concept #graphify/EXTRACTED #community/Glossary_project

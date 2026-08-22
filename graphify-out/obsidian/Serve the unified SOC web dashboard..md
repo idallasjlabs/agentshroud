@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "skills/openclaw"
-location: "L2680"
+community: "Router (soc)"
+location: "L2718"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Router_soc
 ---
 
 # Serve the unified SOC web dashboard.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[soc_dashboard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw
+#graphify/rationale #graphify/EXTRACTED #community/Router_soc

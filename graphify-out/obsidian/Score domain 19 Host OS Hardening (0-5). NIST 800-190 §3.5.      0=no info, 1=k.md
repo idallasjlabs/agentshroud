@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "gateway/cli"
+community: "Scanner Integration (security)"
 location: "L1565"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/cli
+  - community/Scanner_Integration_security
 ---
 
 # Score domain 19: Host OS Hardening (0-5). NIST 800-190 §3.5.      0=no info, 1=k
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_host_os_hardening()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/cli
+#graphify/rationale #graphify/EXTRACTED #community/Scanner_Integration_security

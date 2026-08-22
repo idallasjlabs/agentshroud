@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "docs/vault"
+community: "Memory Lifecycle & Integrity"
 location: "L139"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # Save active write windows to disk.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._save_write_windows()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

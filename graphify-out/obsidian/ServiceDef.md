@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Runtime Engines"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - community/Runtime_Engines
 ---
 
 # ServiceDef
@@ -33,4 +33,4 @@ tags:
 - [[generate_compose()]] - `references` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/code #graphify/INFERRED #community/Runtime_Engines

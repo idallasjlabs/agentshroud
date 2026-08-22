@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "MCP Policy Engine"
-location: "L7473"
+community: "Telegram Proxy Core"
+location: "L7493"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Telegram_Proxy_Core
 ---
 
 # Send deterministic owner pending-approval snapshot.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._send_owner_pending_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core

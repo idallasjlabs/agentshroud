@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Web Proxy Security"
 location: "L442"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Web_Proxy_Security
 ---
 
 # Scan a response body for prompt injection, PII, and hidden content.          Thi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Web_Proxy_Security

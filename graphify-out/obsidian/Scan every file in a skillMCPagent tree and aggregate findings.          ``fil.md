@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "gateway/runtime"
+community: "Skill Guard (security)"
 location: "L421"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/runtime
+  - community/Skill_Guard_security
 ---
 
 # Scan every file in a skill/MCP/agent tree and aggregate findings.          ``fil
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan_skill_tree()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/runtime
+#graphify/rationale #graphify/EXTRACTED #community/Skill_Guard_security

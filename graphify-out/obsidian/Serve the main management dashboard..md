@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "skills/openclaw"
+community: "Management (web)"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Management_web
 ---
 
 # Serve the main management dashboard.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dashboard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw
+#graphify/rationale #graphify/EXTRACTED #community/Management_web

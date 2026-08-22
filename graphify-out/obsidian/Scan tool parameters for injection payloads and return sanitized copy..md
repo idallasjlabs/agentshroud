@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Tool Chain & CVE Triage"
 location: "L588"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # Scan tool parameters for injection payloads and return sanitized copy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.sanitize_tool_params()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

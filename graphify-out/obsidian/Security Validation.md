@@ -1,12 +1,12 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Quickstart (docker)"
 location: "L326"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Quickstart_docker
 ---
 
 # Security Validation
@@ -16,4 +16,4 @@ tags:
 - [[Check File Permissions]] - `contains` [EXTRACTED]
 - [[Verify Isolation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Quickstart_docker

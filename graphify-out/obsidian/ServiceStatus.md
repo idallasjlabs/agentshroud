@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Tool Chain Analyzer"
+community: "SOC Services"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain_Analyzer
+  - community/SOC_Services
 ---
 
 # ServiceStatus
 
 ## Connections
-- [[Any_67]] - `uses` [INFERRED]
+- [[Any_68]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[HealthStatus_1]] - `uses` [INFERRED]
 - [[ServiceDescriptor_1]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[test_soc_services.py]] - `imports` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer
+#graphify/code #graphify/EXTRACTED #community/SOC_Services

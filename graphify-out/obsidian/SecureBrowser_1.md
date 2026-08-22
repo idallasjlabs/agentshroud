@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "gateway/cli"
+community: "Browse (scripts)"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/cli
+  - community/Browse_scripts
 ---
 
 # SecureBrowser
@@ -29,8 +29,8 @@ tags:
 - [[.fill_field()_1]] - `method` [EXTRACTED]
 - [[.get_audit_log()_1]] - `method` [EXTRACTED]
 - [[.navigate()_1]] - `method` [EXTRACTED]
-- [[Secure browser automation with enterprise controls      Security guarantees_1]] - `rationale_for` [EXTRACTED]
+- [[Secure browser automation with enterprise controls      Security guarantees]] - `rationale_for` [EXTRACTED]
 - [[browse.py_1]] - `contains` [EXTRACTED]
-- [[main()_5]] - `calls` [EXTRACTED]
+- [[main()_6]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/cli
+#graphify/code #graphify/EXTRACTED #community/Browse_scripts

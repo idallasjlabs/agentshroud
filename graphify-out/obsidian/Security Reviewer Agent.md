@@ -1,17 +1,16 @@
 ---
 source_file: "docker/config/hermes/agents/i-security-reviewer.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Soul (hermes)"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - graphify/INFERRED
+  - community/Soul_hermes
 ---
 
 # Security Reviewer Agent
 
 ## Connections
 - [[Agents Folder README]] - `references` [INFERRED]
-- [[manifest.json_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/INFERRED #community/Soul_hermes

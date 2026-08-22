@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
 type: "document"
-community: "Security Docs"
-location: "L948"
+community: "Gateway Op Proxy Url (04 - Environment Variables)"
+location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Gateway_Op_Proxy_Url_04_-_Environment_Variables
 ---
 
 # Security
 
 ## Connections
-- [[0.1.0 - 2026-02-16]] - `contains` [EXTRACTED]
+- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Gateway_Op_Proxy_Url_04_-_Environment_Variables

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "docs/reference"
+community: "Security Inventory (security)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/reference
+  - community/Security_Inventory_security
 ---
 
 # Security Modules (58)
@@ -26,4 +26,4 @@ tags:
 - [[Supply Chain & Browser (2)]] - `contains` [EXTRACTED]
 - [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/reference
+#graphify/document #graphify/EXTRACTED #community/Security_Inventory_security

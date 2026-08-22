@@ -1,17 +1,24 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "SECURITY.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L23"
+community: "Security"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security
 ---
 
 # Security Architecture
 
 ## Connections
-- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
+- [[Layer 1 — Core Pipeline (P0)]] - `contains` [EXTRACTED]
+- [[Layer 2 — Middleware (P1)]] - `contains` [EXTRACTED]
+- [[Layer 3 — Output Protection]] - `contains` [EXTRACTED]
+- [[Layer 4 — Tool & Agent Control]] - `contains` [EXTRACTED]
+- [[Layer 5 — Network & Egress]] - `contains` [EXTRACTED]
+- [[Layer 6 — File & Memory Integrity]] - `contains` [EXTRACTED]
+- [[Layer 7 — Infrastructure & Supply Chain]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Security

@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Security Docs"
-location: "L785"
+community: "Skill (i-icloud)"
+location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Skill_i-icloud
 ---
 
 # Security
 
 ## Connections
-- [[0.7.0 - 2026-02-25]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Collaborator Response Templates"
+community: "Git Guard (security)"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Git_Guard_security
 ---
 
 # SecurityFinding
@@ -25,4 +25,4 @@ tags:
 - [[A security finding in git hooks or install scripts.]] - `rationale_for` [EXTRACTED]
 - [[git_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/code #graphify/EXTRACTED #community/Git_Guard_security

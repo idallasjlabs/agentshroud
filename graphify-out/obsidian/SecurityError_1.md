@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "gateway/cli"
+community: "Browse (scripts)"
 location: "L426"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/cli
+  - community/Browse_scripts
 ---
 
 # SecurityError
@@ -17,7 +17,7 @@ tags:
 - [[.fill_field()_1]] - `calls` [EXTRACTED]
 - [[.navigate()_1]] - `calls` [EXTRACTED]
 - [[Exception]] - `inherits` [EXTRACTED]
-- [[Raised when security policy is violated_1]] - `rationale_for` [EXTRACTED]
+- [[Raised when security policy is violated]] - `rationale_for` [EXTRACTED]
 - [[browse.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/cli
+#graphify/code #graphify/EXTRACTED #community/Browse_scripts

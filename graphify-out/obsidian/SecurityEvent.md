@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Planning Docs"
+community: "Event Adapter (soc)"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Event_Adapter_soc
 ---
 
 # SecurityEvent
@@ -21,4 +21,4 @@ tags:
 - [[from_egress_attempt()]] - `references` [EXTRACTED]
 - [[from_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Event_Adapter_soc

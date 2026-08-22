@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Troubleshooting (runbooks)"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Troubleshooting_runbooks
 ---
 
 # Security Module Issues
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting_runbooks

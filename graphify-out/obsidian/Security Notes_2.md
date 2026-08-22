@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Openclaw Setup (setup)"
 location: "L412"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Openclaw_Setup_setup
 ---
 
 # Security Notes
@@ -16,4 +16,4 @@ tags:
 - [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
 - [[Recommendations_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Openclaw_Setup_setup

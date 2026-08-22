@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Privacy Policy"
 location: "L48"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - graphify/EXTRACTED
+  - community/Privacy_Policy
 ---
 
 # ServicePolicy
@@ -15,13 +15,7 @@ tags:
 - [[.from_dict()_10]] - `calls` [EXTRACTED]
 - [[.from_dict()_9]] - `method` [EXTRACTED]
 - [[Privacy policy for a single service.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
-- [[TestAuditAndAlert]] - `uses` [INFERRED]
-- [[TestPrivacyPolicyParsing]] - `uses` [INFERRED]
-- [[TestResponseFiltering]] - `uses` [INFERRED]
-- [[TestServiceAccessControl]] - `uses` [INFERRED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
-- [[test_privacy_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Privacy_Policy

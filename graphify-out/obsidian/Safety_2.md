@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/oracle/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L113"
+community: "Skill (i-pr)"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-pr
 ---
 
 # Safety
 
 ## Connections
-- [[oracle — best use]] - `contains` [EXTRACTED]
+- [[Content Requirements_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-pr

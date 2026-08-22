@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L404"
+community: "Skill (i-browser)"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-browser
 ---
 
 # Security Architecture
 
 ## Connections
-- [[Defense in Depth]] - `contains` [EXTRACTED]
-- [[Distributed OpenClaw Node Architecture (Raspberry Pi 4)]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-browser

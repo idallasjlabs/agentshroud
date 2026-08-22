@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "Path Isolation (security)"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Path_Isolation_security
 ---
 
 # Sanitize user ID to prevent path traversal attacks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._sanitize_user_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/Path_Isolation_security

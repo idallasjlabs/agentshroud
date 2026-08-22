@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/cli/client.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Client (cli)"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Client_cli
 ---
 
 # SCLClient
 
 ## Connections
-- [[.__init__()_6]] - `method` [EXTRACTED]
+- [[.__init__()_7]] - `method` [EXTRACTED]
 - [[._request()]] - `method` [EXTRACTED]
 - [[.add_collaborator()]] - `method` [EXTRACTED]
 - [[.add_group_member()]] - `method` [EXTRACTED]
@@ -59,6 +59,7 @@ tags:
 - [[_FakeConnect]] - `uses` [INFERRED]
 - [[_FakeHTTPResponse]] - `uses` [INFERRED]
 - [[_FakeWS]] - `uses` [INFERRED]
+- [[agentshroud-soc CLI Group]] - `calls` [EXTRACTED]
 - [[cli()]] - `calls` [EXTRACTED]
 - [[client.py]] - `contains` [EXTRACTED]
 - [[client_from_env()]] - `references` [EXTRACTED]
@@ -67,4 +68,4 @@ tags:
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 - [[test_convenience_methods_hit_expected_endpoints()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Client_cli

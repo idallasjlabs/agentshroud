@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Security Docs"
+community: "Threat Model (security)"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Threat_Model_security
 ---
 
 # STRIDE Threat Analysis
@@ -20,4 +20,4 @@ tags:
 - [[S - Spoofing Identity]] - `contains` [EXTRACTED]
 - [[T - Tampering with Data]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Threat_Model_security

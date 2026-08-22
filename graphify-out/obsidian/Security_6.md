@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L833"
+community: "Skill (i-mcpm-aws-profile)"
+location: "L298"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-mcpm-aws-profile
 ---
 
 # Security
 
 ## Connections
-- [[Fixed_13]] - `contains` [EXTRACTED]
+- [[Best Practices_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-aws-profile

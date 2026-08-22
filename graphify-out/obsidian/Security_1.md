@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Planning Docs"
-location: "L187"
+community: "Skill (i-mcpm-aws-profile)"
+location: "L298"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-mcpm-aws-profile
 ---
 
 # Security
 
 ## Connections
-- [[1.2.3 — releasev1.2.3 (2026-06-29)]] - `contains` [EXTRACTED]
+- [[Best Practices_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-aws-profile

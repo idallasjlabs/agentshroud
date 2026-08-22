@@ -1,19 +1,18 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "docs/vault"
+community: "Security Architecture (security)"
 location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Architecture_security
 ---
 
 # Security Controls
 
 ## Connections
 - [[1. Container Isolation]] - `contains` [EXTRACTED]
-- [[10. Approval Queue]] - `contains` [EXTRACTED]
 - [[2. Capability Dropping]] - `contains` [EXTRACTED]
 - [[2. Network Isolation]] - `contains` [EXTRACTED]
 - [[3. Resource Limits]] - `contains` [EXTRACTED]
@@ -23,4 +22,4 @@ tags:
 - [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 - [[approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Security_Architecture_security

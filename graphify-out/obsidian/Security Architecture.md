@@ -1,24 +1,17 @@
 ---
-source_file: "SECURITY.md"
+source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Security Docs"
-location: "L15"
+community: "Skill (i-browser)"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Skill_i-browser
 ---
 
 # Security Architecture
 
 ## Connections
-- [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
-- [[Layer 1 — Core Pipeline (P0)]] - `contains` [EXTRACTED]
-- [[Layer 2 — Middleware (P1)]] - `contains` [EXTRACTED]
-- [[Layer 3 — Output Protection]] - `contains` [EXTRACTED]
-- [[Layer 4 — Tool & Agent Control]] - `contains` [EXTRACTED]
-- [[Layer 5 — Network & Egress]] - `contains` [EXTRACTED]
-- [[Layer 6 — File & Memory Integrity]] - `contains` [EXTRACTED]
-- [[Layer 7 — Infrastructure & Supply Chain]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-browser

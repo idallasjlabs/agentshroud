@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "SOC Collaborator Lifecycle"
+community: "E2e Proxy"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/E2e_Proxy
 ---
 
 # ScanResponse
@@ -16,4 +16,4 @@ tags:
 - [[Response from sidecar scan.]] - `rationale_for` [EXTRACTED]
 - [[sidecar.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/code #graphify/EXTRACTED #community/E2e_Proxy

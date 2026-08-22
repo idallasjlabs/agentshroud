@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "gateway/runtime"
+community: "Skill Guard (security)"
 location: "L322"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/runtime
+  - community/Skill_Guard_security
 ---
 
 # Scan one skill artefact (``name`` = relative path, ``content`` = text).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan_file()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/runtime
+#graphify/rationale #graphify/EXTRACTED #community/Skill_Guard_security

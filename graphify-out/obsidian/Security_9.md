@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "shortcuts/README.md"
-location: "L135"
+community: "Skill (browser-fetch)"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/shortcuts/READMEmd
+  - community/Skill_browser-fetch
 ---
 
 # Security
 
 ## Connections
-- [[iCloud Services]] - `contains` [EXTRACTED]
+- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/shortcuts/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Skill_browser-fetch

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "docs/vault"
+community: "Memory Lifecycle & Integrity"
 location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # Sanitize content by removing/redacting threats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.sanitize_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

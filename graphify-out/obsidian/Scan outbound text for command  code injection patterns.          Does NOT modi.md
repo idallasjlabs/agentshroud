@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Xml Leak Filter"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Xml_Leak_Filter
 ---
 
 # Scan outbound text for command / code injection patterns.          Does NOT modi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scan_command_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Xml_Leak_Filter

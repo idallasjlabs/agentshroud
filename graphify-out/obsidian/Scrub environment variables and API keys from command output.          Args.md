@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Env Guard (security)"
 location: "L217"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Env_Guard_security
 ---
 
 # Scrub environment variables and API keys from command output.          Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.scrub_command_output()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Env_Guard_security

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Security Hardening"
 location: "L75"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Hardening
 ---
 
 # Serialize registry to dict.
 
 ## Connections
-- [[.to_dict()_3]] - `rationale_for` [EXTRACTED]
+- [[.to_dict()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Security_Hardening

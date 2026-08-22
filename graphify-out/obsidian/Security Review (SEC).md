@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/README.md"
+source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (i-sec)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_i-sec
 ---
 
 # Security Review (SEC)
 
 ## Connections
 - [[Purpose_31]] - `contains` [EXTRACTED]
-- [[README_36]] - `contains` [EXTRACTED]
+- [[README_31]] - `contains` [EXTRACTED]
 - [[Related Skills_34]] - `contains` [EXTRACTED]
-- [[Usage_35]] - `contains` [EXTRACTED]
+- [[Usage_34]] - `contains` [EXTRACTED]
 - [[i-security-reviewer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_i-sec

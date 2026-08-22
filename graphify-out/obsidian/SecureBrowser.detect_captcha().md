@@ -1,14 +1,14 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 1772"
+community: "Browse (scripts)"
 location: "browse.py:379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1772
+  - community/Browse_scripts
 ---
 
 # SecureBrowser.detect_captcha()
 
-#graphify/code #graphify/EXTRACTED #community/Community_1772
+#graphify/code #graphify/EXTRACTED #community/Browse_scripts

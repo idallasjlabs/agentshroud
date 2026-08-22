@@ -1,31 +1,31 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (securebrowser)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_securebrowser
 ---
 
 # SecureBrowser - Enterprise Secure Browser Automation
 
 ## Connections
-- [[Approval Integration_2]] - `contains` [EXTRACTED]
-- [[Audit Logging_3]] - `contains` [EXTRACTED]
-- [[Best Practices_5]] - `contains` [EXTRACTED]
-- [[Core Security Principles_2]] - `contains` [EXTRACTED]
-- [[Example Apple ID Creation (Semi-Automated)_2]] - `contains` [EXTRACTED]
+- [[Approval Integration_3]] - `contains` [EXTRACTED]
+- [[Audit Logging_4]] - `contains` [EXTRACTED]
+- [[Best Practices_7]] - `contains` [EXTRACTED]
+- [[Core Security Principles_3]] - `contains` [EXTRACTED]
+- [[Example Apple ID Creation (Semi-Automated)_3]] - `contains` [EXTRACTED]
 - [[Integration with AgentShroud]] - `contains` [EXTRACTED]
-- [[Limitations_3]] - `contains` [EXTRACTED]
-- [[Risk Levels_2]] - `contains` [EXTRACTED]
-- [[SKILL_130]] - `contains` [EXTRACTED]
-- [[Security Architecture_4]] - `contains` [EXTRACTED]
-- [[Security Configuration_2]] - `contains` [EXTRACTED]
-- [[Security Guarantees_4]] - `contains` [EXTRACTED]
+- [[Limitations_4]] - `contains` [EXTRACTED]
+- [[Risk Levels_3]] - `contains` [EXTRACTED]
+- [[SKILL_194]] - `contains` [EXTRACTED]
+- [[Security Architecture_5]] - `contains` [EXTRACTED]
+- [[Security Configuration_3]] - `contains` [EXTRACTED]
+- [[Security Guarantees_5]] - `contains` [EXTRACTED]
 - [[See Also]] - `contains` [EXTRACTED]
-- [[Troubleshooting_33]] - `contains` [EXTRACTED]
-- [[Usage_90]] - `contains` [EXTRACTED]
+- [[Troubleshooting_37]] - `contains` [EXTRACTED]
+- [[Usage_130]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_securebrowser

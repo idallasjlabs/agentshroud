@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Server (voice_gateway)"
 location: "L376"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Server_voice_gateway
 ---
 
 # Serve the current ESP32 firmware binary for OTA (SCRUM-58).      Contract expect
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[firmware_bin()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Server_voice_gateway

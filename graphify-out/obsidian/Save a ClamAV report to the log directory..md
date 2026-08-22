@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "rationale"
-community: "Security Docs"
+community: "Security Toolchain"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Security_Toolchain
 ---
 
 # Save a ClamAV report to the log directory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[save_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Security_Toolchain

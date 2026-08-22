@@ -1,22 +1,17 @@
 ---
-source_file: "docs/security-assessment-v0.8.0.md"
+source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Release Announcement V1.0.0 (v1.0)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Release_Announcement_V100_v10
 ---
 
 # Security Assessment v0.8.0
 
 ## Connections
-- [[CRITICAL-1 history.env Committed with Live Telegram Credentials]] - `identifies` [EXTRACTED]
-- [[CRITICAL-2 No Request Body Size Limits (OOM Vector via Pydantic models)]] - `identifies` [EXTRACTED]
-- [[HIGH-1 ML Injection Classifier is Entirely a Stub (gatewaysecurityml_classifier.py)]] - `identifies` [EXTRACTED]
-- [[HIGH-2 Approval Queue Telegram Notifications Unimplemented (TODO at line 326)]] - `identifies` [EXTRACTED]
-- [[Overall Security Grade B+ (Strong architecture, specific gaps before v1.0)]] - `contains` [EXTRACTED]
-- [[Security Architecture v0.5.0]] - `extends` [INFERRED]
-- [[v0.8.0 'Watchtower' Enforcement Hardening]] - `assesses` [EXTRACTED]
+- [[AgentShroud Security Overview v0.8.0]] - `references` [EXTRACTED]
+- [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Release_Announcement_V100_v10

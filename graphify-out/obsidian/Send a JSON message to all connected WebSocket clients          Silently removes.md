@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "docs/vault"
-location: "L364"
+community: "Queue (approval_queue)"
+location: "L370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Queue_approval_queue
 ---
 
 # Send a JSON message to all connected WebSocket clients          Silently removes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.broadcast()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Queue_approval_queue

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Openclaw Ssh Setup (setup)"
 location: "L160"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Openclaw_Ssh_Setup_setup
 ---
 
 # Security Considerations
@@ -16,4 +16,4 @@ tags:
 - [[⚠️ Important Security Notes]] - `contains` [EXTRACTED]
 - [[✅ Security Features Enabled]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Openclaw_Ssh_Setup_setup

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "RBAC & Ingest Middleware"
 location: "L229"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/RBAC__Ingest_Middleware
 ---
 
 # Sanitize tool result content by filtering markdown links and images.          Ar
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.sanitize()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

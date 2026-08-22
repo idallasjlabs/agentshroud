@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Telegram Outbound Proxy Tests"
 location: "L3560"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Outbound_Proxy_Tests
 ---
 
 # Scheme-relative URLs in leaked JSON should normalize to HTTPS approval.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_raw_web_fetch_json_scheme_relative_url_queues_https_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Outbound_Proxy_Tests

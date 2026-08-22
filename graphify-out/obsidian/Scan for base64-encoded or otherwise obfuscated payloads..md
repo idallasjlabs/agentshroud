@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: ".github/agents"
+community: "Url Analyzer"
 location: "L322"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/github/agents
+  - community/Url_Analyzer
 ---
 
 # Scan for base64-encoded or otherwise obfuscated payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._scan_encoded_payloads()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/github/agents
+#graphify/rationale #graphify/EXTRACTED #community/Url_Analyzer

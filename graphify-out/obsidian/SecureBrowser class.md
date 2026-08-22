@@ -1,19 +1,24 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Browse (scripts)"
 location: "class SecureBrowser"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Browse_scripts
 ---
 
 # SecureBrowser class
 
 ## Connections
+- [[Browser — Secure Browser Automation (SKILL)]] - `references` [EXTRACTED]
 - [[Browser — Secure Browser Automation SKILL (OpenClaw)]] - `conceptually_related_to` [INFERRED]
 - [[RiskLevel enum]] - `shares_data_with` [EXTRACTED]
+- [[SecureBrowser Security Config (config.yaml)]] - `shares_data_with` [INFERRED]
+- [[SecurityConfig dataclass]] - `shares_data_with` [EXTRACTED]
+- [[SecurityError exception]] - `references` [EXTRACTED]
 - [[browse.py — SecureBrowser CLI (OpenClaw)]] - `implements` [EXTRACTED]
+- [[main() CLI entrypoint]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Browse_scripts

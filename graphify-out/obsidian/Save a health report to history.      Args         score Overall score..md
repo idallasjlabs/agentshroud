@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "rationale"
-community: "branding/logos"
+community: "Health Report (security)"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/branding/logos
+  - community/Health_Report_security
 ---
 
 # Save a health report to history.      Args:         score: Overall score.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[save_to_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/branding/logos
+#graphify/rationale #graphify/EXTRACTED #community/Health_Report_security

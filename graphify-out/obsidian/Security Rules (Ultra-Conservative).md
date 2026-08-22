@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Bot Capabilities (docker)"
 location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_Capabilities_docker
 ---
 
 # Security Rules (Ultra-Conservative)
@@ -17,4 +17,4 @@ tags:
 - [[🟢 Console Commands (ALWAYS display)]] - `contains` [EXTRACTED]
 - [[🟢 Internal Use (ALWAYS allowed)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Bot_Capabilities_docker

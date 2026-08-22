@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Device Pairing (setup)"
 location: "L233"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Device_Pairing_setup
 ---
 
 # Scenario 3: Multiple Computers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Scenarios]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Device_Pairing_setup

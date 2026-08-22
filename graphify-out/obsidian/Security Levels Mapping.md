@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Glossary (project)"
 location: "L403"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Glossary_project
 ---
 
 # Security Levels Mapping
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[IEC 62443 Industrial Security Framework]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Glossary_project

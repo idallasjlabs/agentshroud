@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Audit & Watchtower Tests"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # SecurityPipeline
@@ -27,4 +27,4 @@ tags:
 - [[_make_full_pipeline()]] - `references` [EXTRACTED]
 - [[test_pipeline_fails_closed_without_pii()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests

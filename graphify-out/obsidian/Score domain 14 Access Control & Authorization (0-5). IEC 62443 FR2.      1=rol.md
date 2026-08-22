@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "gateway/cli"
+community: "Scanner Integration (security)"
 location: "L1298"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/cli
+  - community/Scanner_Integration_security
 ---
 
 # Score domain 14: Access Control & Authorization (0-5). IEC 62443 FR2.      1=rol
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_score_access_control_authorization()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/cli
+#graphify/rationale #graphify/EXTRACTED #community/Scanner_Integration_security

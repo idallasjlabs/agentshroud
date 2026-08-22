@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "CLI Command Client (Rust)"
+community: "Main (src)"
 location: "L243"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI_Command_Client_Rust
+  - community/Main_src
 ---
 
 # Self
@@ -18,4 +18,4 @@ tags:
 - [[.ok()]] - `references` [EXTRACTED]
 - [[.with()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI_Command_Client_Rust
+#graphify/code #graphify/EXTRACTED #community/Main_src

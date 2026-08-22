@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Security Docs"
-location: "L1185"
+community: "Llm Proxy (proxy)"
+location: "L1361"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Llm_Proxy_proxy
 ---
 
 # Scan request data for PII and injection across different provider formats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._scan_request_data()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Llm_Proxy_proxy

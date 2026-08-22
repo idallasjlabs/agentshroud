@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Security Audit & Watchtower Tests"
 location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # SecurityPipeline
 
 ## Connections
-- [[.__init__()_32]] - `method` [EXTRACTED]
+- [[.__init__()_33]] - `method` [EXTRACTED]
 - [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[._maybe_record_trust_violation()]] - `method` [EXTRACTED]
 - [[._pipeline_with_trust()]] - `calls` [EXTRACTED]
@@ -39,17 +39,26 @@ tags:
 - [[.verify_audit_chain()]] - `method` [EXTRACTED]
 - [[AuditChain]] - `shares_data_with` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
+- [[Data Flow]] - `references` [EXTRACTED]
+- [[EncodingDetector]] - `calls` [EXTRACTED]
 - [[FakeClock]] - `uses` [INFERRED]
+- [[FalcoAlertWatcher]] - `conceptually_related_to` [INFERRED]
 - [[FastAPI_2]] - `uses` [INFERRED]
 - [[FilterResult]] - `uses` [INFERRED]
+- [[HTTPConnectProxy]] - `semantically_similar_to` [INFERRED]
+- [[HTTPForwarder]] - `references` [EXTRACTED]
 - [[InjectionAction]] - `uses` [INFERRED]
+- [[LLMProxy]] - `references` [AMBIGUOUS]
+- [[MCPProxy]] - `references` [EXTRACTED]
 - [[Main security pipeline that all messages pass through.      Wires together Prom]] - `rationale_for` [EXTRACTED]
-- [[MiddlewareManager]] - `shares_data_with` [INFERRED]
+- [[PIISanitizer]] - `conceptually_related_to` [AMBIGUOUS]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[Path_35]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[SidecarScanner]] - `calls` [EXTRACTED]
+- [[SlackAPIProxy]] - `calls` [EXTRACTED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
@@ -92,8 +101,10 @@ tags:
 - [[TestTestCountAccuracy]] - `uses` [INFERRED]
 - [[TestTrustManagerPerformance]] - `uses` [INFERRED]
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[WS-E RT-2 Inbound Encoding Bypass Fix Rationale]] - `rationale_for` [EXTRACTED]
+- [[WebhookReceiver]] - `calls` [EXTRACTED]
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_FakeAttack]] - `uses` [INFERRED]
@@ -109,18 +120,23 @@ tags:
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[_make_signer_pipeline()]] - `calls` [EXTRACTED]
 - [[_process_inbound()]] - `calls` [EXTRACTED]
+- [[canary-cron.sh embedded Python main()]] - `calls` [EXTRACTED]
 - [[canary_pipeline()]] - `calls` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[forward_content()]] - `calls` [EXTRACTED]
 - [[forward_content_stream()]] - `calls` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[list_security_modules()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
+- [[main.py_3]] - `references` [EXTRACTED]
 - [[pipeline()]] - `calls` [EXTRACTED]
 - [[pipeline()_1]] - `calls` [EXTRACTED]
 - [[pipeline.py]] - `contains` [EXTRACTED]
 - [[run()_3]] - `calls` [EXTRACTED]
+- [[run_canary()_1]] - `references` [EXTRACTED]
+- [[run_canary()]] - `calls` [INFERRED]
+- [[run_chain()]] - `references` [EXTRACTED]
+- [[run_quick()]] - `references` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_canary.py]] - `imports` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `imports` [EXTRACTED]
@@ -141,4 +157,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

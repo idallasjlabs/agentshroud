@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/config.yaml"
 type: "code"
-community: "Bot Skill Config"
+community: "Browse (scripts)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Browse_scripts
 ---
 
 # SecureBrowser Security Configuration (config.yaml, OpenClaw)
@@ -14,4 +14,4 @@ tags:
 - [[Browser — Secure Browser Automation SKILL (OpenClaw)]] - `references` [EXTRACTED]
 - [[browse.py — SecureBrowser CLI (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Browse_scripts

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Gateway Test Suite"
+community: "Adr 009 Enforce By (adr)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Adr_009_Enforce_By_adr
 ---
 
 # SecurityPipeline (75 modules, 7 layers)
@@ -16,4 +16,4 @@ tags:
 - [[Compliance Alignment (9 standards)]] - `rationale_for` [EXTRACTED]
 - [[Security Modules (30+, gateway diagram)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/Adr_009_Enforce_By_adr

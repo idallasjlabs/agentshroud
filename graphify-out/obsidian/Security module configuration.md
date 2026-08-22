@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "docs/testing"
+community: "All Modules Enforce"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/testing
+  - community/All_Modules_Enforce
 ---
 
 # Security module configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecurityModuleConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/testing
+#graphify/rationale #graphify/EXTRACTED #community/All_Modules_Enforce

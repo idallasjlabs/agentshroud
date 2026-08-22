@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Deployment (runbooks)"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Deployment_runbooks
 ---
 
 # Scripts Copied to `/usr/local/bin`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Deployment_runbooks

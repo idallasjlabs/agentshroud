@@ -1,12 +1,12 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "ESP32 Firmware"
+community: "Skill (i-icloud)"
 location: "L88"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Skill_i-icloud
 ---
 
 # Send Email
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mail Operations_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud

@@ -1,18 +1,17 @@
 ---
 source_file: ".github/workflows/security-scan.yml"
-type: "code"
-community: "Bot Skill Config"
+type: "document"
+community: "Security"
 tags:
-  - graphify/code
-  - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - graphify/document
+  - graphify/INFERRED
+  - community/Security
 ---
 
 # Security Scan Workflow
 
 ## Connections
-- [[Image Signing & Provenance Job (cosign, keyless OIDC, IEC 62443 FR3SL3)]] - `references` [EXTRACTED]
-- [[Python Dependency Audit Job (pip-audit)]] - `references` [EXTRACTED]
-- [[Trivy Filesystem Scan Job (CRITICALHIGH CVEs)]] - `references` [EXTRACTED]
+- [[CI Security Scanning Toolchain]] - `references` [EXTRACTED]
+- [[daily_cve_report.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/INFERRED #community/Security

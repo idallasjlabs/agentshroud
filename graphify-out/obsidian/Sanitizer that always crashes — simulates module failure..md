@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "SOC RBAC & Auth"
+community: "Security Audit & Watchtower Tests"
 location: "L377"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Sanitizer that always crashes — simulates module failure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_BrokenSanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

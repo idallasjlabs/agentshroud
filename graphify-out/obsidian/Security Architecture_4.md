@@ -1,17 +1,18 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L22"
+community: "Distributed Openclaw Node Architecture (architecture)"
+location: "L404"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Distributed_Openclaw_Node_Architecture_architecture
 ---
 
 # Security Architecture
 
 ## Connections
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[Defense in Depth]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Distributed_Openclaw_Node_Architecture_architecture

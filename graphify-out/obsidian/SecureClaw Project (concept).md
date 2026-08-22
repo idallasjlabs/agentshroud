@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Skill (i-pm)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-pm
 ---
 
 # SecureClaw Project (concept)
 
-## Connections
-- [[i-pm SKILL (Project Management)]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Skill_i-pm

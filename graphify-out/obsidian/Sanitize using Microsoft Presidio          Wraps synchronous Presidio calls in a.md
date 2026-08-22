@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
+community: "Tool Result Pii"
 location: "L209"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/Tool_Result_Pii
 ---
 
 # Sanitize using Microsoft Presidio          Wraps synchronous Presidio calls in a
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._sanitize_presidio()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Pii

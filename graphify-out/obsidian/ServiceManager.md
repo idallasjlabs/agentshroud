@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Tool Chain Analyzer"
+community: "SOC Services"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain_Analyzer
+  - community/SOC_Services
 ---
 
 # ServiceManager
 
 ## Connections
-- [[.__init__()_127]] - `method` [EXTRACTED]
+- [[.__init__()_131]] - `method` [EXTRACTED]
 - [[._describe_service()]] - `method` [EXTRACTED]
 - [[._get_engine()]] - `method` [EXTRACTED]
 - [[._logs_via_socket()]] - `method` [EXTRACTED]
@@ -57,7 +57,7 @@ tags:
 - [[.update_service()]] - `method` [EXTRACTED]
 - [[AddCollaboratorRequest]] - `uses` [INFERRED]
 - [[AddGroupMemberRequest]] - `uses` [INFERRED]
-- [[Any_66]] - `uses` [INFERRED]
+- [[Any_67]] - `uses` [INFERRED]
 - [[ApprovalDecisionRequest]] - `uses` [INFERRED]
 - [[AuditResult_1]] - `uses` [INFERRED]
 - [[CreateDelegationRequest]] - `uses` [INFERRED]
@@ -72,7 +72,6 @@ tags:
 - [[LoginRequest]] - `uses` [INFERRED]
 - [[RenameGroupRequest]] - `uses` [INFERRED]
 - [[Request_6]] - `uses` [INFERRED]
-- [[ResourceUsage_1]] - `uses` [INFERRED]
 - [[SCLCaller_1]] - `uses` [INFERRED]
 - [[SCLInterface_1]] - `uses` [INFERRED]
 - [[ScanRequest_1]] - `uses` [INFERRED]
@@ -118,4 +117,4 @@ tags:
 - [[update_service()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer
+#graphify/code #graphify/EXTRACTED #community/SOC_Services

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "docs/testing"
+community: "All Modules Enforce"
 location: "L128"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/testing
+  - community/All_Modules_Enforce
 ---
 
 # SecurityModuleConfig
@@ -28,4 +28,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/docs/testing
+#graphify/code #graphify/INFERRED #community/All_Modules_Enforce
