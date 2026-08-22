@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "gateway/runtime"
+community: "Skill Guard (security)"
 location: "L121"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/runtime
+  - community/Skill_Guard_security
 ---
 
 # ALLOW below MEDIUM, FLAG at MEDIUM/HIGH, BLOCK at CRITICAL.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.recommendation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/runtime
+#graphify/rationale #graphify/EXTRACTED #community/Skill_Guard_security

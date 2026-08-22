@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Deployment Diagram (architecture)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Deployment_Diagram_architecture
 ---
 
 # ADR-001: Transparent Proxy Decision
@@ -16,4 +16,4 @@ tags:
 - [[Proxy Mode (Recommended)]] - `implements` [EXTRACTED]
 - [[Sidecar Mode (Performance Optimized)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Deployment_Diagram_architecture

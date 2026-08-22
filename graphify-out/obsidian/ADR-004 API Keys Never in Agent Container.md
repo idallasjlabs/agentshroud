@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Adr 004 Api Keys (adr)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Adr_004_Api_Keys_adr
 ---
 
 # ADR-004: API Keys Never in Agent Container
@@ -18,4 +18,4 @@ tags:
 - [[Decision_5]] - `contains` [EXTRACTED]
 - [[Status_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Adr_004_Api_Keys_adr

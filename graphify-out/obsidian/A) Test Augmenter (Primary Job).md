@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "voice_gateway/tts.py"
+community: "Agents"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/voice_gateway/ttspy
+  - community/Agents
 ---
 
 # A) Test Augmenter (Primary Job)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2) WHAT YOU SHOULD DO (YOUR JOBS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/voice_gateway/ttspy
+#graphify/document #graphify/EXTRACTED #community/Agents

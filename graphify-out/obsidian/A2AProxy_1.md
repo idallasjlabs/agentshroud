@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Planning Docs"
+community: "A2a Proxy"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/A2a_Proxy
 ---
 
 # A2AProxy
@@ -19,7 +19,7 @@ tags:
 - [[A2AProxyResult]] - `uses` [INFERRED]
 - [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]
-- [[proxy()]] - `references` [EXTRACTED]
+- [[proxy()_1]] - `references` [EXTRACTED]
 - [[test_agent_card_discovery_is_never_policy_gated()]] - `references` [EXTRACTED]
 - [[test_agent_card_discovery_is_still_audited()]] - `references` [EXTRACTED]
 - [[test_process_inbound_request_allowed_peer_low_risk_forwards()]] - `references` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[test_resolve_peer_id_uses_constant_time_comparison()]] - `references` [EXTRACTED]
 - [[test_resolve_peer_id_whitespace_only_token_returns_none()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/A2a_Proxy

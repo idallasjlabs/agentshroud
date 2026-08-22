@@ -1,11 +1,11 @@
 ---
 source_file: "SECURITY.md"
 type: "concept"
-community: "Security Docs"
+community: "Security"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Security_Docs
+  - community/Security
 ---
 
 # 7-Layer Security Architecture
@@ -14,4 +14,4 @@ tags:
 - [[75 Security Modules]] - `semantically_similar_to` [INFERRED]
 - [[AgentShroud™ Security Policy]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Security_Docs
+#graphify/concept #graphify/INFERRED #community/Security

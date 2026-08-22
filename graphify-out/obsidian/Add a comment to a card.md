@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/trello/SKILL.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Skill (trello)"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Skill_trello
 ---
 
 # Add a comment to a card
 
 ## Connections
-- [[Usage_91]] - `contains` [EXTRACTED]
+- [[Usage_131]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Skill_trello

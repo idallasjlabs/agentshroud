@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Clamav (05 - Dependencies)"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Clamav_05_-_Dependencies
 ---
 
 # ARM64 Support
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Trivy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Clamav_05_-_Dependencies

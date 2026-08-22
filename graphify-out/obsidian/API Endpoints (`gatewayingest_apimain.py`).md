@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "docker/bot-capabilities.md"
+community: "V1.2.0 Master Plan (v1.2)"
 location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/bot-capabilitiesmd
+  - community/V120_Master_Plan_v12
 ---
 
 # API Endpoints (`gateway/ingest_api/main.py`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Components_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd
+#graphify/document #graphify/EXTRACTED #community/V120_Master_Plan_v12

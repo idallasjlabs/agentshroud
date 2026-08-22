@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "A2a Integration"
 location: "L382"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/A2a_Integration
 ---
 
 # A2APolicyEngine
 
 ## Connections
-- [[.__init__()_47]] - `method` [EXTRACTED]
+- [[.__init__()_50]] - `method` [EXTRACTED]
 - [[._decide()]] - `method` [EXTRACTED]
 - [[._tier_for()]] - `method` [EXTRACTED]
 - [[.enforce()]] - `method` [EXTRACTED]
@@ -38,9 +38,11 @@ tags:
 - [[ParsedA2ARequest]] - `uses` [INFERRED]
 - [[Request_7]] - `uses` [INFERRED]
 - [[Response]] - `uses` [INFERRED]
-- [[Response_2]] - `uses` [INFERRED]
+- [[SubagentMonitor]] - `semantically_similar_to` [INFERRED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TrustManager_2]] - `uses` [INFERRED]
+- [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - `implements` [EXTRACTED]
+- [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - `implements` [EXTRACTED]
 - [[_Event]] - `uses` [INFERRED]
 - [[_LegacyStubApprovalQueue]] - `uses` [INFERRED]
 - [[_StubApprovalQueue]] - `uses` [INFERRED]
@@ -69,4 +71,4 @@ tags:
 - [[test_task_ownership_denial_is_not_bypassable_by_high_risk_approval_path()]] - `calls` [EXTRACTED]
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/A2a_Integration

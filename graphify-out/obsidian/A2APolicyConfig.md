@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "A2a Integration"
 location: "L175"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/A2a_Integration
 ---
 
 # A2APolicyConfig
 
 ## Connections
-- [[.__init__()_47]] - `references` [EXTRACTED]
+- [[.__init__()_50]] - `references` [EXTRACTED]
 - [[.__post_init__()_2]] - `method` [EXTRACTED]
 - [[.from_dict()_2]] - `method` [EXTRACTED]
 - [[.test_bare_config_denies_every_peer()]] - `calls` [EXTRACTED]
@@ -25,7 +25,6 @@ tags:
 - [[Declarative A2A security policy.      Loaded from the ``a2a_policy`` section of]] - `rationale_for` [EXTRACTED]
 - [[Request_7]] - `uses` [INFERRED]
 - [[Response]] - `uses` [INFERRED]
-- [[Response_2]] - `uses` [INFERRED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TrustManager_2]] - `uses` [INFERRED]
 - [[_Event]] - `uses` [INFERRED]
@@ -41,4 +40,4 @@ tags:
 - [[test_a2a_proxy.py]] - `imports` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/A2a_Integration

@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Claude"
 location: "L270"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Claude
 ---
 
 # 7) AGENTSHROUD-SPECIFIC CONSTRAINTS
@@ -18,4 +18,4 @@ tags:
 - [[Hard constraints]] - `contains` [EXTRACTED]
 - [[Key source directories]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Claude

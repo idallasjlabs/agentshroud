@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Api Contract"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Api_Contract
 ---
 
 # API endpoints should not return 500 on malformed/empty requests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_no_500_on_empty_requests()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Api_Contract

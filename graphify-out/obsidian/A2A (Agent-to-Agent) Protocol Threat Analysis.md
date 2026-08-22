@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Threat Model (security)"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Threat_Model_security
 ---
 
 # A2A (Agent-to-Agent) Protocol Threat Analysis
@@ -21,4 +21,4 @@ tags:
 - [[S — Spoofing Peer Identity Collapse Behind a Reverse Proxy]] - `contains` [EXTRACTED]
 - [[T — Tampering Cross-Tenant Task Ownership via `contextId` Collision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Threat_Model_security

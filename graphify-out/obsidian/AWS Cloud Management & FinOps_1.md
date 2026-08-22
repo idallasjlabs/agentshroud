@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/README.md"
+source_file: "docker/config/hermes/skills/i-aws/README.md"
 type: "document"
-community: "docs/redteam"
+community: "Readme (i-aws)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/redteam
+  - community/Readme_i-aws
 ---
 
 # AWS Cloud Management & FinOps
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_43]] - `contains` [EXTRACTED]
 - [[Usage_45]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/redteam
+#graphify/document #graphify/EXTRACTED #community/Readme_i-aws

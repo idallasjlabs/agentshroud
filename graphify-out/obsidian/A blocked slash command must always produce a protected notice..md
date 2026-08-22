@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "docs/papers"
-location: "L7922"
+community: "Telegram Proxy Inbound"
+location: "L7953"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Telegram_Proxy_Inbound
 ---
 
 # A blocked slash command must always produce a protected notice.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_blocked_command_always_gets_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/papers
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

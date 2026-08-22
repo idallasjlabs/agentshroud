@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "rationale"
-community: "scripts/sync-cve-registry.py"
+community: "All Modules Enforce"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/All_Modules_Enforce
 ---
 
 # AGENTSHROUD_MODE=monitor must downgrade ALL modules to monitor.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_global_monitor_override_downgrades_all()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/All_Modules_Enforce

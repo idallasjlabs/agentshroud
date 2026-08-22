@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "concept"
-community: "Gateway Test Suite"
+community: "Adr 009 Enforce By (adr)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Adr_009_Enforce_By_adr
 ---
 
 # ADR-002: Default-Allow with Comprehensive Logging
@@ -14,4 +14,4 @@ tags:
 - [[ADR-009 Enforce-by-Default Security Philosophy]] - `references` [EXTRACTED]
 - [[SecurityPipeline (75 modules, 7 layers)]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/Adr_009_Enforce_By_adr

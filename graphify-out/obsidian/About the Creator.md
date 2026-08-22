@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "docs/vault"
+community: "Public Info (collaborator-workspace)"
 location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Public_Info_collaborator-workspace
 ---
 
 # About the Creator
@@ -18,4 +18,4 @@ tags:
 - [[The Thesis]] - `contains` [EXTRACTED]
 - [[What He Builds]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Public_Info_collaborator-workspace

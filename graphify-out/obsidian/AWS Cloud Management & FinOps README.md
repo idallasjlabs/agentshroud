@@ -1,17 +1,16 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/README.md"
+source_file: ".agents/skills/i-aws/README.md"
 type: "document"
-community: "Setup Docs"
+community: "Skill (i-aws)"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Setup_Docs
+  - graphify/EXTRACTED
+  - community/Skill_i-aws
 ---
 
 # AWS Cloud Management & FinOps README
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent]] - `references` [INFERRED]
-- [[SKILLS_GUIDE.md (complete skill catalog)]] - `references` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_2]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-aws

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "docs/runbooks"
+community: "Prerequisites (reference)"
 location: "L533"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Prerequisites_reference
 ---
 
 # Accounts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[✅ Setup Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Prerequisites_reference

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "docs/vault"
+community: "Publish To Clawhub (reference)"
 location: "L197"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Publish_To_Clawhub_reference
 ---
 
 # Add Security Badge
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎨 Customize Skill Page (Optional)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Publish_To_Clawhub_reference

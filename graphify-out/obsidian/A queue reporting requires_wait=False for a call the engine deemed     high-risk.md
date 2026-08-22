@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "rationale"
-community: "SOC Dashboard"
+community: "A2a Policy"
 location: "L412"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/A2a_Policy
 ---
 
 # A queue reporting requires_wait=False for a call the engine deemed     high-risk
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_enforce_denies_when_queue_downgrades_requires_wait_to_false()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/A2a_Policy

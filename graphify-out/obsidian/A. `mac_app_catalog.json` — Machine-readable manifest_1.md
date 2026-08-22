@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "branding/icons"
+community: "Skill (i-mac)"
 location: "L291"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/icons
+  - community/Skill_i-mac
 ---
 
 # A. `mac_app_catalog.json` — Machine-readable manifest
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 5 — Output Generation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/icons
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mac

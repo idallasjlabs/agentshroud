@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Quick Reference (reference)"
 location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Quick_Reference_reference
 ---
 
 # Access Points
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Quick Reference Card]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference_reference

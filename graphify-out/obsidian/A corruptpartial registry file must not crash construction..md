@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Session Manager"
 location: "L351"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Session_Manager
 ---
 
 # A corrupt/partial registry file must not crash construction.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_load_tolerates_corrupt_registry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Session_Manager

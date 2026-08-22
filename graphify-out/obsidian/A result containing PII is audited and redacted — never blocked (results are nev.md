@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "skills/openclaw"
+community: "Mcp Result Endpoint"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Mcp_Result_Endpoint
 ---
 
 # A result containing PII is audited and redacted — never blocked (results are nev
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_result_with_pii_is_audited_not_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw
+#graphify/rationale #graphify/EXTRACTED #community/Mcp_Result_Endpoint

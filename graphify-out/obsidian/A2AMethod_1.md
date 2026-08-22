@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "SOC Dashboard"
+community: "A2a Policy"
 location: "L106"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Dashboard
+  - community/A2a_Policy
 ---
 
 # A2AMethod
@@ -21,4 +21,4 @@ tags:
 - [[test_low_risk_methods_are_allowed()]] - `references` [EXTRACTED]
 - [[test_medium_risk_methods_are_allowed()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Dashboard
+#graphify/code #graphify/INFERRED #community/A2a_Policy

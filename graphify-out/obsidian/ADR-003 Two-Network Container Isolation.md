@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-003-two-network-container-isolation.md"
 type: "document"
-community: "Architecture Docs"
+community: "Adr 003 Two Network (adr)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Adr_003_Two_Network_adr
 ---
 
 # ADR-003: Two-Network Container Isolation
@@ -19,6 +19,6 @@ tags:
 - [[Status_2]] - `contains` [EXTRACTED]
 - [[Three-Network Architecture (externalmgmtinternal)]] - `conceptually_related_to` [AMBIGUOUS]
 - [[Two-Network Docker Architecture]] - `conceptually_related_to` [EXTRACTED]
-- [[agentshroud-isolated network (172.21.0.016)_1]] - `conceptually_related_to` [AMBIGUOUS]
+- [[agentshroud-isolated network (172.21.0.016)]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Adr_003_Two_Network_adr

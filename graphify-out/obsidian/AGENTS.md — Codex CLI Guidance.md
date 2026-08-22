@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "docs/vault"
+community: "Agents"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Agents
 ---
 
 # AGENTS.md — Codex CLI Guidance
@@ -18,4 +18,4 @@ tags:
 - [[Codex Validation Runner Role]] - `references` [EXTRACTED]
 - [[Data Lakehouse Platform (GSDL)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Agents

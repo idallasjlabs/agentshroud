@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Daily Cve Report (security)"
 location: "L1248"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Daily_Cve_Report_security
 ---
 
 # A raised per-agent check error is ISOLATED — the ingest still completes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_per_agent_check_error_is_isolated_not_fatal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Daily_Cve_Report_security

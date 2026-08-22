@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "concept"
-community: "Gateway Test Suite"
+community: "Diagram 01 C4 Context (images)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Diagram_01_C4_Context_images
 ---
 
 # ADR-008: Progressive Trust Level System
@@ -15,4 +15,4 @@ tags:
 - [[TrustManager_5]] - `conceptually_related_to` [EXTRACTED]
 - [[agent_trust SQLite table]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/Diagram_01_C4_Context_images

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
 type: "concept"
-community: "scripts/generate_branding_assets.py"
+community: "Deployment Diagram (architecture)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/scripts/generate_branding_assetspy
+  - community/Deployment_Diagram_architecture
 ---
 
 # ADR-007: Zero-Config Security
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Zero-Configuration Deployment]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/scripts/generate_branding_assetspy
+#graphify/concept #graphify/EXTRACTED #community/Deployment_Diagram_architecture

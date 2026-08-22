@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/README.md"
 type: "document"
-community: "Setup Docs"
+community: "Readme (api)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Readme_api
 ---
 
 # API Documentation
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Current Status_1]] - `contains` [EXTRACTED]
 - [[Planned Documents]] - `contains` [EXTRACTED]
-- [[README_81]] - `contains` [EXTRACTED]
+- [[README_118]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_api

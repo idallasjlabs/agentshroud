@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "skills/openclaw"
+community: "Readme"
 location: "L165"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Readme
 ---
 
 # 75 Security Modules
@@ -21,7 +21,7 @@ tags:
 - [[Core Security Pipeline]] - `contains` [EXTRACTED]
 - [[Infrastructure & Monitoring]] - `contains` [EXTRACTED]
 - [[Proxy & Network Layer]] - `contains` [EXTRACTED]
-- [[README]] - `contains` [EXTRACTED]
+- [[README_37]] - `contains` [EXTRACTED]
 - [[Supporting Infrastructure]] - `contains` [EXTRACTED]
 - [[TABLE I Security Module Inventory (52 Modules)]] - `contains` [EXTRACTED]
 - [[V-A. PII Sanitizer]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[V-E. DNS-Layer Enforcement]] - `contains` [EXTRACTED]
 - [[V-F. Tamper-Evident Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Readme

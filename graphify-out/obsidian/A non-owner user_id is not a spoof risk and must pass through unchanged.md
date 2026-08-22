@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "Forward Routing"
 location: "L295"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Forward_Routing
 ---
 
 # A non-owner user_id is not a spoof risk and must pass through unchanged
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_non_owner_body_user_id_passes_through()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing

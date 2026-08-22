@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Setup Docs"
+community: "Agentic Os (architecture)"
 location: "L669"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Agentic_Os_architecture
 ---
 
 # Actions Requiring Approval
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[9. Human-in-the-Loop Controls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Agentic_Os_architecture

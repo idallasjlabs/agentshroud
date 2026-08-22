@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "A2a Integration"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/A2a_Integration
 ---
 
 # A2AProxy
 
 ## Connections
-- [[.__init__()_16]] - `method` [EXTRACTED]
+- [[.__init__()_17]] - `method` [EXTRACTED]
 - [[._audit()]] - `method` [EXTRACTED]
 - [[._record_trust_violation()]] - `method` [EXTRACTED]
 - [[.extract_text_for_pii_scan()]] - `method` [EXTRACTED]
@@ -25,11 +25,13 @@ tags:
 - [[A2APolicyEngine_3]] - `uses` [INFERRED]
 - [[A2APolicyEngine_1]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
+- [[HermesA2AForwarder]] - `calls` [EXTRACTED]
 - [[Request_7]] - `uses` [INFERRED]
 - [[Response]] - `uses` [INFERRED]
-- [[Response_2]] - `uses` [INFERRED]
 - [[Terminates inbound A2A HTTP requests, enforces policy, forwards.      Usage]] - `rationale_for` [EXTRACTED]
 - [[TrustManager_2]] - `uses` [INFERRED]
+- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[Upstream Hermes Gap 80534 — Peer Identity Resolved From SocketX-Forwarded-For Instead Of Bearer Token]] - `implements` [EXTRACTED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_Event]] - `uses` [INFERRED]
 - [[_StubAuditStore]] - `uses` [INFERRED]
@@ -49,4 +51,4 @@ tags:
 - [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `calls` [EXTRACTED]
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/A2a_Integration

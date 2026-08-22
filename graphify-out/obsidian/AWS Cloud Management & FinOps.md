@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/README.md"
+source_file: ".agents/skills/i-aws/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-aws)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-aws
 ---
 
 # AWS Cloud Management & FinOps
 
 ## Connections
 - [[Purpose_3]] - `contains` [EXTRACTED]
-- [[README_8]] - `contains` [EXTRACTED]
+- [[README_3]] - `contains` [EXTRACTED]
 - [[Related Skills_3]] - `contains` [EXTRACTED]
-- [[Usage_5]] - `contains` [EXTRACTED]
+- [[Usage_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-aws

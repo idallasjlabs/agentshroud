@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Setup Docs"
+community: "Claude"
 location: "L369"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Claude
 ---
 
 # 9) GOVERNANCE & DECISION-MAKING
@@ -17,4 +17,4 @@ tags:
 - [[When to clarify]] - `contains` [EXTRACTED]
 - [[When to defer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Claude
