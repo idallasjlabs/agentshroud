@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "rationale"
-community: "docs/testing"
+community: "All Modules Enforce"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/testing
+  - community/All_Modules_Enforce
 ---
 
 # Test that PII sanitizer defaults to redact action.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pii_sanitizer_default_action()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/testing
+#graphify/rationale #graphify/EXTRACTED #community/All_Modules_Enforce

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "HTTP Forwarder"
+community: "Telegram Proxy Outbound"
 location: "L3943"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTP_Forwarder
+  - community/Telegram_Proxy_Outbound
 ---
 
 # TestDomainValidationHelper
@@ -36,4 +36,4 @@ tags:
 - [[Unit tests for domain validator used by egress approval flow.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTP_Forwarder
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Outbound

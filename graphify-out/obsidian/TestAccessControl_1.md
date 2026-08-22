@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "docs/project"
+community: "Scanner Integration Coverage"
 location: "L725"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Scanner_Integration_Coverage
 ---
 
 # TestAccessControl
@@ -16,4 +16,4 @@ tags:
 - [[.test_missing_rbac_zero()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/project
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Coverage

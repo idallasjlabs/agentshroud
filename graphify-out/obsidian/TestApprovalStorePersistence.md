@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "Collaborator Prompt Classifiers"
+community: "Queue (approval_queue)"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Queue_approval_queue
 ---
 
 # TestApprovalStorePersistence
@@ -24,4 +24,4 @@ tags:
 - [[Queue persistence across restart.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/code #graphify/EXTRACTED #community/Queue_approval_queue

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Regressions V1 2"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Regressions_V1_2
 ---
 
 # TestBotIdIsolationInSharedMemory
@@ -23,4 +23,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Regressions_V1_2

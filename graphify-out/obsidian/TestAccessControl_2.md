@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Session Manager"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Session_Manager
 ---
 
 # TestAccessControl
@@ -18,9 +18,8 @@ tags:
 - [[.test_owner_can_view_all_sessions()]] - `method` [EXTRACTED]
 - [[.test_user_can_access_own_session()]] - `method` [EXTRACTED]
 - [[.test_user_cannot_access_other_session()]] - `method` [EXTRACTED]
-- [[ConversationMessage]] - `uses` [INFERRED]
 - [[UserSession]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Session_Manager

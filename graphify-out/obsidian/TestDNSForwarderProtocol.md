@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "docs/vault"
+community: "Dns Canvas Coverage"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Dns_Canvas_Coverage
 ---
 
 # TestDNSForwarderProtocol
@@ -26,4 +26,4 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Dns_Canvas_Coverage

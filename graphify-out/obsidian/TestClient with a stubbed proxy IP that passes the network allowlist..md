@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_v1_models_synthetic.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "V1 Models Synthetic"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/V1_Models_Synthetic
 ---
 
 # TestClient with a stubbed proxy IP that passes the network allowlist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[client()_18]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/V1_Models_Synthetic

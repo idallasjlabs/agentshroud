@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "OAuth & Metadata Guard"
 location: "L34"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/OAuth__Metadata_Guard
 ---
 
 # TestClientValidation
@@ -23,4 +23,4 @@ tags:
 - [[RedirectMismatch]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/OAuth__Metadata_Guard

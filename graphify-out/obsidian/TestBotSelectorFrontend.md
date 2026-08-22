@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Voice Gateway Tests"
+community: "Soc Bots"
 location: "L828"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Soc_Bots
 ---
 
 # TestBotSelectorFrontend
@@ -22,6 +22,7 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[Unit tests for the M6 bot selector backend — socv1bots + bot_id filtering.]] - `rationale_for` [EXTRACTED]
+- [[get_security_events()]] - `calls` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/code #graphify/EXTRACTED #community/Soc_Bots

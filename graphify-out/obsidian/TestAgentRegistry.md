@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Hardening"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Hardening
 ---
 
 # TestAgentRegistry
@@ -20,9 +20,8 @@ tags:
 - [[.test_unregister_removes_agent()]] - `method` [EXTRACTED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[ContainerConfig]] - `uses` [INFERRED]
-- [[IsolationCheck]] - `uses` [INFERRED]
 - [[IsolationStatus]] - `uses` [INFERRED]
 - [[IsolationVerifier]] - `uses` [INFERRED]
 - [[test_agent_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Hardening

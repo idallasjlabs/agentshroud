@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Security Hardening"
 location: "L689"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Security_Hardening
 ---
 
 # TestCryptography
@@ -22,7 +22,6 @@ tags:
 - [[.test_tampered_ciphertext_fails()]] - `method` [EXTRACTED]
 - [[.test_wrong_key_fails()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
-- [[CanaryResult]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -58,4 +57,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Security_Hardening

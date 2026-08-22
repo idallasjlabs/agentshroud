@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
+community: "Approval Queue"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Approval_Queue
 ---
 
 # Test that requests expire after timeout
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_request_expiration()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "rationale"
-community: "Competitive Intel Store"
+community: "Auth"
 location: "L8"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Auth
 ---
 
 # Test that StatusResponse model accepts new fields.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_status_response_model()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/rationale #graphify/EXTRACTED #community/Auth

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "scripts/sync-cve-registry.py"
+community: "Config"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Config
 ---
 
 # Test that configuration has sensible defaults
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_config_defaults()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Config

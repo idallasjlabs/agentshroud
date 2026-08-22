@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "Tool ACL & Group RBAC"
 location: "L302"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Tool_ACL__Group_RBAC
 ---
 
 # TestCVE2026_9367TerminalToolDenied
@@ -19,6 +19,7 @@ tags:
 - [[.test_terminal_tool_in_private_tools()]] - `method` [EXTRACTED]
 - [[.test_terminal_tool_not_in_collab_allowed()]] - `method` [EXTRACTED]
 - [[.test_viewer_denied_terminal_tool()]] - `method` [EXTRACTED]
+- [[CVE-2026-9367 terminal_tool command injection bypass fix]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[TeamsConfig]] - `uses` [INFERRED]
@@ -27,4 +28,4 @@ tags:
 - [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - `rationale_for` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/Tool_ACL__Group_RBAC

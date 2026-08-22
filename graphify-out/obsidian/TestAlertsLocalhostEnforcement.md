@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Main Endpoints"
 location: "L496"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Main_Endpoints
 ---
 
 # TestAlertsLocalhostEnforcement
@@ -18,4 +18,4 @@ tags:
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Main_Endpoints

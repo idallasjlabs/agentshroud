@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
+community: "Tool Result Pii"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/Tool_Result_Pii
 ---
 
 # Test the ToolResultSanitizer class
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolResultSanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Pii

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "CHANGELOG.md"
+community: "Agentshroud Manager"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Agentshroud_Manager
 ---
 
 # TestDowngrade
@@ -17,4 +17,4 @@ tags:
 - [[.test_successful_downgrade()]] - `method` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/code #graphify/EXTRACTED #community/Agentshroud_Manager

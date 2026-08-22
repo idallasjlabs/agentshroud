@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "Soc Websocket"
 location: "L541"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Soc_Websocket
 ---
 
 # TestCoerceToWSEventExtra
@@ -28,4 +28,4 @@ tags:
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/Soc_Websocket

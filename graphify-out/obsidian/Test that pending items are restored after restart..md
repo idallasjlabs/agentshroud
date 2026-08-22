@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
+community: "Enhanced Approval"
 location: "L322"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Enhanced_Approval
 ---
 
 # Test that pending items are restored after restart.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_restore_pending_items()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval

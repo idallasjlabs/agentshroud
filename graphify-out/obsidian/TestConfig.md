@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Cross Bot Trust Ledger"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Cross_Bot_Trust_Ledger
 ---
 
 # TestConfig
@@ -20,4 +20,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Cross_Bot_Trust_Ledger

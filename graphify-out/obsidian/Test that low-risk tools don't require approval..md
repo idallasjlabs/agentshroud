@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
+community: "Enhanced Approval"
 location: "L238"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Enhanced_Approval
 ---
 
 # Test that low-risk tools don't require approval.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_low_risk_tool_no_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval

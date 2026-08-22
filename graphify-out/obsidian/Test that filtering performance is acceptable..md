@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Outbound Filter"
 location: "L386"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Outbound_Filter
 ---
 
 # Test that filtering performance is acceptable.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_performance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Outbound_Filter

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "Group Workspace Isolation"
+community: "Group Config & Collaborator Responses"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Workspace_Isolation
+  - community/Group_Config__Collaborator_Responses
 ---
 
 # TestConstantMessages
@@ -21,4 +21,4 @@ tags:
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation
+#graphify/code #graphify/EXTRACTED #community/Group_Config__Collaborator_Responses

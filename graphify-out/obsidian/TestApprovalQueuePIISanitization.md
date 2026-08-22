@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Security Fixes & SSH Write Endpoint"
 location: "L210"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/scripts/sync-cve-registrypy
+  - community/Security_Fixes__SSH_Write_Endpoint
 ---
 
 # TestApprovalQueuePIISanitization
@@ -19,4 +19,4 @@ tags:
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/INFERRED #community/Security_Fixes__SSH_Write_Endpoint

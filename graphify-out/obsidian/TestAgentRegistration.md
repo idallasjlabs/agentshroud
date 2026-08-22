@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Regressions V1 2"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Regressions_V1_2
 ---
 
 # TestAgentRegistration
@@ -22,4 +22,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Regressions_V1_2

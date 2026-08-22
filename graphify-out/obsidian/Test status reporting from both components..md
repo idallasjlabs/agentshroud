@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Progressive Trust Config"
+community: "Memory Lifecycle & Integrity"
 location: "L449"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # Test status reporting from both components.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_status_reporting()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "Kill Switch Config"
+community: "Approval Hardening"
 location: "L424"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Kill_Switch_Config
+  - community/Approval_Hardening
 ---
 
 # TestDeceptionDetection
@@ -21,4 +21,4 @@ tags:
 - [[Test DeceptionDetection dataclass.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Kill_Switch_Config
+#graphify/code #graphify/INFERRED #community/Approval_Hardening

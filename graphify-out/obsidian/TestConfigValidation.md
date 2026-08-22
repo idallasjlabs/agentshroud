@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Architecture Docs"
+community: "Config Validation & Router"
 location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Config_Validation__Router
 ---
 
 # TestConfigValidation
@@ -58,4 +58,4 @@ tags:
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Config_Validation__Router

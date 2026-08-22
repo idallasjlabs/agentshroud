@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Planning Docs"
+community: "Scanner Integration Coverage"
 location: "L1071"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Scanner_Integration_Coverage
 ---
 
 # TestComplianceMaths
@@ -18,4 +18,4 @@ tags:
 - [[.test_weighted_subscore_partial()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Coverage

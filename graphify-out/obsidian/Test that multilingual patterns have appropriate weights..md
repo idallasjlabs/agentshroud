@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "rationale"
-community: "Web Control Center"
+community: "Multilingual Injection"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Web_Control_Center
+  - community/Multilingual_Injection
 ---
 
 # Test that multilingual patterns have appropriate weights.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pattern_priority()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Web_Control_Center
+#graphify/rationale #graphify/EXTRACTED #community/Multilingual_Injection

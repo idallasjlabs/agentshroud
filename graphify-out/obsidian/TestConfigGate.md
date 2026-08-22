@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Group Workspace Manager"
 location: "L247"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Group_Workspace_Manager
 ---
 
 # TestConfigGate
@@ -24,4 +24,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Group_Workspace_Manager

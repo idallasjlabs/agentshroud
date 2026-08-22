@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "Telegram Inbound Tests"
+community: "Audit Export"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Tests
+  - community/Audit_Export
 ---
 
 # TestAuditStore
@@ -22,6 +22,7 @@ tags:
 - [[AuditExporter]] - `uses` [INFERRED]
 - [[AuditStore_1]] - `uses` [INFERRED]
 - [[Test AuditStore functionality.]] - `rationale_for` [EXTRACTED]
+- [[TestAuditExporter]] - `references` [INFERRED]
 - [[test_audit_export.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests
+#graphify/code #graphify/EXTRACTED #community/Audit_Export

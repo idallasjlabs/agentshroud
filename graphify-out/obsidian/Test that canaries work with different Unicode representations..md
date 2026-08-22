@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "docs/reviews"
+community: "Output Canary"
 location: "L247"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/reviews
+  - community/Output_Canary
 ---
 
 # Test that canaries work with different Unicode representations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_unicode_normalization_resistance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/reviews
+#graphify/rationale #graphify/EXTRACTED #community/Output_Canary

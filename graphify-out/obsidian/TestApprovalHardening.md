@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "Kill Switch Config"
+community: "Approval Hardening"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Kill_Switch_Config
+  - community/Approval_Hardening
 ---
 
 # TestApprovalHardening
@@ -45,4 +45,4 @@ tags:
 - [[Test approval hardening functionality.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Config
+#graphify/code #graphify/EXTRACTED #community/Approval_Hardening

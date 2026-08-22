@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Daily Cve Report"
 location: "L1122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Daily_Cve_Report
 ---
 
 # TestAlreadyIngestedGhsaToday
@@ -17,4 +17,4 @@ tags:
 - [[.test_returns_true_when_ingested_today()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report

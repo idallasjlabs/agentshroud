@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Egress Filter"
 location: "L270"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Egress_Filter
 ---
 
 # TestAuditStorePersistence
@@ -23,4 +23,4 @@ tags:
 - [[Only DENY decisions are persisted to the tamper-evident audit store.      ALLOW]] - `rationale_for` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Egress_Filter

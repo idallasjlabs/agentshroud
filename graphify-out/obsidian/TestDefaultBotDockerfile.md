@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "SOC Service Manager"
+community: "Web Api Coverage"
 location: "L457"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager
+  - community/Web_Api_Coverage
 ---
 
 # TestDefaultBotDockerfile
@@ -22,4 +22,4 @@ tags:
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager
+#graphify/code #graphify/EXTRACTED #community/Web_Api_Coverage

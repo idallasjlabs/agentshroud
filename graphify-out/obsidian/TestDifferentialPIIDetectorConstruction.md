@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "gateway/runtime"
+community: "Differential Pii Detector"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/gateway/runtime
+  - community/Differential_Pii_Detector
 ---
 
 # TestDifferentialPIIDetectorConstruction
@@ -19,4 +19,4 @@ tags:
 - [[PIIHitSeverity]] - `uses` [INFERRED]
 - [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/gateway/runtime
+#graphify/code #graphify/INFERRED #community/Differential_Pii_Detector

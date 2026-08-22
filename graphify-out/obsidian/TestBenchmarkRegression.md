@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
-community: "Security Docs"
+community: "Benchmark Regression"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Benchmark_Regression
 ---
 
 # TestBenchmarkRegression
@@ -20,6 +20,7 @@ tags:
 - [[.test_single_inbound_latency()]] - `method` [EXTRACTED]
 - [[.test_single_outbound_latency()]] - `method` [EXTRACTED]
 - [[Benchmark regression tests — ensure latency stays within 20% of baseline.]] - `rationale_for` [EXTRACTED]
+- [[HTTPConnectProxy]] - `references` [EXTRACTED]
 - [[test_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Benchmark_Regression

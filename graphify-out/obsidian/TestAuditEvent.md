@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "Telegram Inbound Tests"
+community: "Audit Export"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Tests
+  - community/Audit_Export
 ---
 
 # TestAuditEvent
@@ -22,4 +22,4 @@ tags:
 - [[Test AuditEvent functionality.]] - `rationale_for` [EXTRACTED]
 - [[test_audit_export.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests
+#graphify/code #graphify/EXTRACTED #community/Audit_Export

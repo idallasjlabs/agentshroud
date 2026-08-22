@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Soc Bots"
 location: "L649"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Soc_Bots
 ---
 
 # TestComputeBotScorecard
@@ -30,6 +30,7 @@ tags:
 - [[.test_score_clamped_to_zero()]] - `method` [EXTRACTED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
+- [[compute_bot_scorecard()]] - `calls` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Soc_Bots

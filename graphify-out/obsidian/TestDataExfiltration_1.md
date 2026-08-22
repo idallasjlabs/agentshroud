@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Web Proxy"
 location: "L386"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Web_Proxy
 ---
 
 # TestDataExfiltration
@@ -19,8 +19,9 @@ tags:
 - [[DomainSettings]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
+- [[TestDataExfiltration]] - `semantically_similar_to` [INFERRED]
 - [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Web_Proxy

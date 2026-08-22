@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "scripts/triage-cve-mitigations.py"
+community: "Dns Blocklist"
 location: "L438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/triage-cve-mitigationspy
+  - community/Dns_Blocklist
 ---
 
 # TestBlocklistUpdate
@@ -18,4 +18,4 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/Dns_Blocklist

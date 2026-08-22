@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "skills/openclaw"
+community: "Key Rotation"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/skills/openclaw
+  - community/Key_Rotation
 ---
 
 # TestCredentialRotationPolicy
@@ -22,4 +22,4 @@ tags:
 - [[Test credential rotation policy configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/skills/openclaw
+#graphify/code #graphify/INFERRED #community/Key_Rotation

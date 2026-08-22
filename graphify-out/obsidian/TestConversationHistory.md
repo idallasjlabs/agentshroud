@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Session Manager"
 location: "L125"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - graphify/EXTRACTED
+  - community/Session_Manager
 ---
 
 # TestConversationHistory
@@ -14,9 +14,8 @@ tags:
 ## Connections
 - [[.test_add_message()]] - `method` [EXTRACTED]
 - [[.test_conversation_history_limit()]] - `method` [EXTRACTED]
-- [[ConversationMessage]] - `uses` [INFERRED]
 - [[UserSession]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Session_Manager

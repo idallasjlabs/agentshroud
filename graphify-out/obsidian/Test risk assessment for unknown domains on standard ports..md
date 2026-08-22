@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Docker Deploy Scripts"
+community: "Egress Approval (security)"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Egress_Approval_security
 ---
 
 # Test risk assessment for unknown domains on standard ports.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_risk_assessment_yellow()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Approval_security

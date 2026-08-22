@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "Security Audit & Watchtower Tests"
 location: "L82"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_RBAC__Auth
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # TestE2E01PromptGuardBlocking
@@ -29,4 +29,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_RBAC__Auth
+#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests

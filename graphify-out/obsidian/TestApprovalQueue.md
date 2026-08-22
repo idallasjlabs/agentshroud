@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Mcp Proxy Coverage"
 location: "L462"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Mcp_Proxy_Coverage
 ---
 
 # TestApprovalQueue
@@ -34,4 +34,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Mcp_Proxy_Coverage

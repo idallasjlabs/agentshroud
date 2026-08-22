@@ -1,12 +1,12 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Quickstart (docker)"
 location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Quickstart_docker
 ---
 
 # Test the System
@@ -18,4 +18,4 @@ tags:
 - [[4. Verify Isaiah's Personality]] - `contains` [EXTRACTED]
 - [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Quickstart_docker

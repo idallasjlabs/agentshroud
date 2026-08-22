@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "rationale"
-community: "Web Control Center"
+community: "Multilingual Injection"
 location: "L225"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Web_Control_Center
+  - community/Multilingual_Injection
 ---
 
 # Test resistance to basic obfuscation attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_obfuscation_resistance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Web_Control_Center
+#graphify/rationale #graphify/EXTRACTED #community/Multilingual_Injection

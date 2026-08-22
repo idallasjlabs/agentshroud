@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
+community: "Tool Result Pii"
 location: "L401"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/Tool_Result_Pii
 ---
 
 # Test tool result processing when sanitizer raises an exception
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_process_tool_result_sanitizer_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Pii

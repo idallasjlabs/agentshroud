@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "Tool ACL & Group RBAC"
 location: "L251"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval__FastAPI_Ingest
+  - community/Tool_ACL__Group_RBAC
 ---
 
 # TestClassificationSets
@@ -21,4 +21,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/INFERRED #community/Tool_ACL__Group_RBAC

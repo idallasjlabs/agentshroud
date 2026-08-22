@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Kill Switch Config"
+community: "Approval Hardening"
 location: "L248"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Kill_Switch_Config
+  - community/Approval_Hardening
 ---
 
 # Test that different requests are not affected by cooldown.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_different_requests_not_in_cooldown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch_Config
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Hardening

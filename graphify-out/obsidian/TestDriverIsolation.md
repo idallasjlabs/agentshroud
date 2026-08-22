@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Triage Cve Mitigations"
 location: "L424"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Triage_Cve_Mitigations
 ---
 
 # TestDriverIsolation
@@ -19,4 +19,4 @@ tags:
 - [[.test_triage_agent_openclaw_all_under_review_processed()]] - `method` [EXTRACTED]
 - [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Triage_Cve_Mitigations

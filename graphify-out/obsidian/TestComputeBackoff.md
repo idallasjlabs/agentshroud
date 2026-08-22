@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Slack Socket Client"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Slack_Socket_Client
 ---
 
 # TestComputeBackoff
@@ -21,4 +21,4 @@ tags:
 - [[Unit tests for the reconnect backoff calculation.]] - `rationale_for` [EXTRACTED]
 - [[test_slack_socket_client.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Slack_Socket_Client

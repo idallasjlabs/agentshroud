@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
+community: "Tool Result Pii"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/Tool_Result_Pii
 ---
 
 # Test tool-specific configuration overrides
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_tool_specific_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Pii

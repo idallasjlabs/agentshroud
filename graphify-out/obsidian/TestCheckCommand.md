@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Env Guard (security)"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Env_Guard_security
 ---
 
 # TestCheckCommand
@@ -24,4 +24,4 @@ tags:
 - [[.test_blocks_proc_star_environ()]] - `method` [EXTRACTED]
 - [[test_env_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Env_Guard_security

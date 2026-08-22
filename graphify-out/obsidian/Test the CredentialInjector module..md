@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_isolation.py"
 type: "rationale"
-community: "docs/vault"
+community: "Credential Isolation"
 location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Credential_Isolation
 ---
 
 # Test the CredentialInjector module.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCredentialInjector]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Credential_Isolation

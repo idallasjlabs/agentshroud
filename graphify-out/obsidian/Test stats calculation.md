@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "rationale"
-community: "docs/vault"
+community: "Ledger"
 location: "L139"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Ledger
 ---
 
 # Test stats calculation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_stats()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Ledger

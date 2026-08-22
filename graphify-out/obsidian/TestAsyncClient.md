@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Main (chatbot)"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Main_chatbot
 ---
 
 # TestAsyncClient
@@ -18,4 +18,4 @@ tags:
 - [[chat()]] - `calls` [EXTRACTED]
 - [[test_main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Main_chatbot

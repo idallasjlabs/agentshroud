@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Security Regressions V1 2"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Regressions_V1_2
 ---
 
 # Test trust history tracking.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHistory]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Security_Regressions_V1_2

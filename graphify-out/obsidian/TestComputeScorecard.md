@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "docs/papers"
+community: "Scanner Integration"
 location: "L866"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Scanner_Integration
 ---
 
 # TestComputeScorecard
@@ -34,4 +34,4 @@ tags:
 - [[.test_version_is_v090()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/papers
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Outbound Filter"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Outbound_Filter
 ---
 
 # Test that trust level overrides work correctly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_trust_level_overrides()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Outbound_Filter

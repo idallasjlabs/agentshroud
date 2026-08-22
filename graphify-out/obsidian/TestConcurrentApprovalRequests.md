@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "Collaborator Prompt Classifiers"
+community: "Queue (approval_queue)"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Queue_approval_queue
 ---
 
 # TestConcurrentApprovalRequests
@@ -22,4 +22,4 @@ tags:
 - [[ApprovalStore_1]] - `uses` [INFERRED]
 - [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Classifiers
+#graphify/code #graphify/INFERRED #community/Queue_approval_queue

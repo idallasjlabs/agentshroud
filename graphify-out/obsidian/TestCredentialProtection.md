@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Browser Security"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Browser_Security
 ---
 
 # TestCredentialProtection
@@ -23,4 +23,4 @@ tags:
 - [[ThreatLevel_1]] - `uses` [INFERRED]
 - [[test_browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Browser_Security

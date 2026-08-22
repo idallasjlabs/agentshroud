@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "skills/openclaw"
+community: "Credential Injector"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Credential_Injector
 ---
 
 # TestCredentialInjection
@@ -19,6 +19,7 @@ tags:
 - [[.test_has_credential_true_for_loaded()]] - `method` [EXTRACTED]
 - [[.test_injection_disabled()]] - `method` [EXTRACTED]
 - [[.test_strip_headers_removes_conflicting_header()]] - `method` [EXTRACTED]
+- [[TestCredentialInjector]] - `semantically_similar_to` [INFERRED]
 - [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skills/openclaw
+#graphify/code #graphify/EXTRACTED #community/Credential_Injector

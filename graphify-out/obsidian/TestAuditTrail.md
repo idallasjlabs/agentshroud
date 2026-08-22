@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "scripts/smoke.d"
+community: "Mcp Proxy"
 location: "L286"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/scripts/smoked
+  - community/Mcp_Proxy
 ---
 
 # TestAuditTrail
@@ -36,4 +36,4 @@ tags:
 - [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/scripts/smoked
+#graphify/code #graphify/INFERRED #community/Mcp_Proxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Key Rotation"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Key_Rotation
 ---
 
 # Test rotation requirement calculation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_should_rotate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Key_Rotation

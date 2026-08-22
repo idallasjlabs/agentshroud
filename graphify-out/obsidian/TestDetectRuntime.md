@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Installer (web)"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Installer_web
 ---
 
 # TestDetectRuntime
@@ -24,4 +24,4 @@ tags:
 - [[ServiceDef]] - `uses` [INFERRED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Installer_web
