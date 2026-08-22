@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "rationale"
-community: "Approval Queue Tests"
+community: "Middleware & Session Isolation"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/Middleware__Session_Isolation
 ---
 
 # Deterministic stand-in for RBACManager.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeRBAC]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Middleware__Session_Isolation

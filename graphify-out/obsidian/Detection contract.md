@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "docker/README.md"
+community: "Readme (docker)"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/READMEmd
+  - community/Readme_docker
 ---
 
 # Detection contract
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Container Runtime Support (SCRUM-92)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Readme_docker

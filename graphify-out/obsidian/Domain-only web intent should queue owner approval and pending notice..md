@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
-location: "L1930"
+community: "Telegram Inbound Proxy Tests"
+location: "L1961"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Telegram_Inbound_Proxy_Tests
 ---
 
 # Domain-only web intent should queue owner approval and pending notice.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_web_access_request_with_bare_domain_queues_owner_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Proxy_Tests

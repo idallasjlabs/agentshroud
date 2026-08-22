@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Planning Docs"
+community: "Differential Pii Detector"
 location: "L259"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Planning_Docs
+  - community/Differential_Pii_Detector
 ---
 
 # DifferentialPIIConfig
 
 ## Connections
-- [[.__init__()_68]] - `references` [EXTRACTED]
+- [[.__init__()_71]] - `references` [EXTRACTED]
 - [[.__post_init__()_4]] - `method` [EXTRACTED]
 - [[A2APolicyEngine_3]] - `uses` [INFERRED]
 - [[A2AProxy_1]] - `uses` [INFERRED]
@@ -38,4 +38,4 @@ tags:
 - [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - `calls` [EXTRACTED]
 - [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Planning_Docs
+#graphify/code #graphify/INFERRED #community/Differential_Pii_Detector

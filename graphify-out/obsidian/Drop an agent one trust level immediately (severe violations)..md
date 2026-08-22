@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Progressive Trust Integration"
 location: "L251"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Progressive_Trust_Integration
 ---
 
 # Drop an agent one trust level immediately (severe violations).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._force_demotion()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Integration

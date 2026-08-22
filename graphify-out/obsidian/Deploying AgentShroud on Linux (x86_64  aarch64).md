@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Linux (operations)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Linux_operations
 ---
 
 # Deploying AgentShroud on Linux (x86_64 / aarch64)
@@ -20,4 +20,4 @@ tags:
 - [[VPS Deployment Notes]] - `contains` [EXTRACTED]
 - [[linux]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Linux_operations

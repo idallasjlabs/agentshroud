@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Port Manager"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Port_Manager
 ---
 
 # Detect port conflicts and auto-assign available ports.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PortManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Port_Manager

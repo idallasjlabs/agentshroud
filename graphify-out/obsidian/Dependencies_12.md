@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
 type: "document"
-community: "docs/vault"
-location: "L177"
+community: "Skill (i-bs)"
+location: "L297"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skill_i-bs
 ---
 
 # Dependencies
 
 ## Connections
-- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
+- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skill_i-bs

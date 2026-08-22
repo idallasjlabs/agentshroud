@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (canvas)"
 location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_canvas
 ---
 
 # Debugging
@@ -18,4 +18,4 @@ tags:
 - [[Content not updating]] - `contains` [EXTRACTED]
 - [[White screen  content not loading]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_canvas

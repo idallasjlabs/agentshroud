@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "Custom Skills"
+community: "Module Stats"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Module_Stats
 ---
 
 # Decision
@@ -20,4 +20,4 @@ tags:
 - [[str]] - `inherits` [EXTRACTED]
 - [[test_module_stats.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Module_Stats

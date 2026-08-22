@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pm/SKILL.md"
 type: "document"
-community: "docs/TEAM.md"
+community: "Skill (i-pm)"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/TEAMmd
+  - community/Skill_i-pm
 ---
 
 # Definition of Done (from CLAUDE.md)
 
 ## Connections
-- [[Task Coordination_1]] - `contains` [EXTRACTED]
+- [[Task Coordination_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/TEAMmd
+#graphify/document #graphify/EXTRACTED #community/Skill_i-pm

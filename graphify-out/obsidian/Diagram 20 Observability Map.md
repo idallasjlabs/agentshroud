@@ -1,13 +1,13 @@
 ---
 source_file: "docs/diagrams/images/diagram-20-observability-map.svg"
 type: "image"
-community: "Community 1736"
+community: "Diagram 20 Observability Map (images)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1736
+  - community/Diagram_20_Observability_Map_images
 ---
 
 # Diagram 20: Observability Map
 
-#graphify/image #graphify/EXTRACTED #community/Community_1736
+#graphify/image #graphify/EXTRACTED #community/Diagram_20_Observability_Map_images

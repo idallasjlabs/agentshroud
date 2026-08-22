@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-13-network-security-egress.svg"
 type: "concept"
-community: "docs/diagrams"
+community: "Diagram 13 Network Security (images)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Diagram_13_Network_Security_images
 ---
 
 # Domain allowlisted? (agentshroud.yaml proxy.allowed_domains)
@@ -16,4 +16,4 @@ tags:
 - [[HTTP CONNECT tunnel to gateway8181]] - `calls` [EXTRACTED]
 - [[HTTP_PROXY set (httpgateway8181)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/diagrams
+#graphify/concept #graphify/EXTRACTED #community/Diagram_13_Network_Security_images

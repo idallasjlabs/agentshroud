@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Security Pipeline Core"
+community: "Voice Gateway"
 location: "L716"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Pipeline_Core
+  - community/Voice_Gateway
 ---
 
 # Default _MODEL_SIZE is 'small.en' when WHISPER_MODEL_SIZE is not set.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_stt_default_model_size_is_small_en()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Pipeline_Core
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway

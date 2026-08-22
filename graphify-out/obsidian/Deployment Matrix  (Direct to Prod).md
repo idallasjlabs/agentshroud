@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/SKILL.md"
+source_file: ".agents/skills/i-cicd/SKILL.md"
 type: "document"
-community: "docs/vault"
+community: "Skill (i-cicd)"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skill_i-cicd
 ---
 
 # Deployment Matrix  (Direct to Prod)
 
 ## Connections
-- [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[Skill CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skill_i-cicd

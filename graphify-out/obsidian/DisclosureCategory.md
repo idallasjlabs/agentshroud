@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Custom Skills"
+community: "Multi Turn Tracker (security)"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Multi_Turn_Tracker_security
 ---
 
 # DisclosureCategory
@@ -21,4 +21,4 @@ tags:
 - [[str]] - `inherits` [EXTRACTED]
 - [[test_multi_turn_tracker.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Multi_Turn_Tracker_security

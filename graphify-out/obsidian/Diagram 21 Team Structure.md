@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-21-team-structure.svg"
 type: "image"
-community: "docs/runbooks"
+community: "Gsd Cadence (governance)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Gsd_Cadence_governance
 ---
 
 # Diagram 21: Team Structure
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Multi-Agent Role Matrix (AGENT_ROLES.md)]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/docs/runbooks
+#graphify/image #graphify/EXTRACTED #community/Gsd_Cadence_governance

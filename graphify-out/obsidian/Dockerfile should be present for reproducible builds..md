@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Security Audit & Watchtower Tests"
 location: "L1098"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Dockerfile should be present for reproducible builds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_dockerfile_exists()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

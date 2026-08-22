@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "Audit Export Pipeline"
+community: "Security Audit & Watchtower Tests"
 location: "L582"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Detect and block prompt injection attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PromptGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Security Audit & Watchtower Tests"
 location: "L60"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Detect configuration drift from known-good baselines.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DriftDetector]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

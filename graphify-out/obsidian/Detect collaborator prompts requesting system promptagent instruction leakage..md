@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Cross-Bot Trust Ledger"
-location: "L2160"
+community: "Telegram Proxy Core"
+location: "L2172"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/Telegram_Proxy_Core
 ---
 
 # Detect collaborator prompts requesting system prompt/agent instruction leakage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._looks_like_system_prompt_probe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core

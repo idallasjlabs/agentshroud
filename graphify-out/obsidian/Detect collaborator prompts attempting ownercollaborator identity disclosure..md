@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Cross-Bot Trust Ledger"
-location: "L1450"
+community: "Telegram Proxy Core"
+location: "L1462"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/Telegram_Proxy_Core
 ---
 
 # Detect collaborator prompts attempting owner/collaborator identity disclosure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._looks_like_identity_enumeration_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Cross-Bot Trust Ledger"
-location: "L1826"
+community: "Telegram Proxy Core"
+location: "L1838"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/Telegram_Proxy_Core
 ---
 
 # Detect collaborator prompts requesting archive/bulk export of internal content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._looks_like_archive_exfil_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core

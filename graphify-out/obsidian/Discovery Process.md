@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "Planning Docs"
+community: "Icloud Services Setup (setup)"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Icloud_Services_Setup_setup
 ---
 
 # Discovery Process
@@ -15,4 +15,4 @@ tags:
 - [[📅 iCloud Calendar (CalDAV)]] - `contains` [EXTRACTED]
 - [[📞 iCloud Contacts (CardDAV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Icloud_Services_Setup_setup

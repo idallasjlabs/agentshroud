@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "Router"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Router
 ---
 
 # Determine which agent should receive this content          Args:             req
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.resolve_target()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Router

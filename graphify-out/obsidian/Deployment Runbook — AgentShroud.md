@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "docs/vault"
+community: "Deployment (runbooks)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Deployment_runbooks
 ---
 
 # Deployment Runbook — AgentShroud
@@ -20,4 +20,4 @@ tags:
 - [[Version Tagging]] - `contains` [EXTRACTED]
 - [[deployment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Deployment_runbooks

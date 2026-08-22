@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L2561"
+community: "Telegram Proxy Core"
+location: "L2573"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Proxy_Core
 ---
 
 # Detect patterns that must redact for ALL non-owner chats, including full_access.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._contains_critical_collaborator_leakage()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core

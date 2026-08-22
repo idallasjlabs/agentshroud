@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-05-network-topology.svg"
 type: "image"
-community: "Gateway Test Suite"
+community: "Adr 006 Multi Runtime (adr)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Adr_006_Multi_Runtime_adr
 ---
 
 # Docker Desktop (network topology diagram)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ADR-006 Multi-Runtime Container Support]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/image #graphify/EXTRACTED #community/Adr_006_Multi_Runtime_adr

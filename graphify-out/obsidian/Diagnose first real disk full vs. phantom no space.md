@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Colima Docker Guide (runbooks)"
 location: "L231"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Colima_Docker_Guide_runbooks
 ---
 
 # Diagnose first: real disk full vs. phantom "no space"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[7. Build Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Colima_Docker_Guide_runbooks

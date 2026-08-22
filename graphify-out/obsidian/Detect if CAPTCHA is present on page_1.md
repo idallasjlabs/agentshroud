@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "gateway/cli"
+community: "Browse (scripts)"
 location: "L380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/cli
+  - community/Browse_scripts
 ---
 
 # Detect if CAPTCHA is present on page
 
 ## Connections
-- [[.detect_captcha()_1]] - `rationale_for` [EXTRACTED]
+- [[.detect_captcha()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/cli
+#graphify/rationale #graphify/EXTRACTED #community/Browse_scripts

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
-type: "document"
-community: "Gateway Test Suite"
-location: "L11"
+source_file: ".agents/skills/i-browser/package.json"
+type: "code"
+community: "Package (i-browser)"
+location: "L4"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Package_i-browser
 ---
 
-# Description
+# description
 
 ## Connections
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
+- [[package.json_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Package_i-browser

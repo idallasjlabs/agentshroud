@@ -1,13 +1,13 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "image"
-community: "Community 1728"
+community: "Diagram 07 Data Flow (images)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_1728
+  - community/Diagram_07_Data_Flow_images
 ---
 
 # Diagram 07: Data Flow
 
-#graphify/image #graphify/EXTRACTED #community/Community_1728
+#graphify/image #graphify/EXTRACTED #community/Diagram_07_Data_Flow_images

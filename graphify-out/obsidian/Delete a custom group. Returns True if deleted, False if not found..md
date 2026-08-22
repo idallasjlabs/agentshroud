@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
-location: "L264"
+community: "Rbac Config (security)"
+location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Rbac_Config_security
 ---
 
 # Delete a custom group. Returns True if deleted, False if not found.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.delete_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Rbac_Config_security

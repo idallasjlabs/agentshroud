@@ -1,12 +1,12 @@
 ---
 source_file: "docs/TEAM.md"
 type: "document"
-community: "docs/diagrams"
+community: "Team (docs)"
 location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Team_docs
 ---
 
 # Development Environment
@@ -18,4 +18,4 @@ tags:
 - [[Development Workflow]] - `contains` [EXTRACTED]
 - [[Hardware]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/diagrams
+#graphify/document #graphify/EXTRACTED #community/Team_docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Cross-Bot Trust Ledger"
-location: "L1607"
+community: "Telegram Proxy Core"
+location: "L1619"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/Telegram_Proxy_Core
 ---
 
 # Detect collaborator prompts requesting direct memory content/search access.
@@ -15,4 +15,4 @@ tags:
 - [[._looks_like_cross_user_messaging_request()]] - `rationale_for` [EXTRACTED]
 - [[._looks_like_memory_access_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core

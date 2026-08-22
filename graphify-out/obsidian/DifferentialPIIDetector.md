@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "gateway/runtime"
+community: "Differential Pii Detector"
 location: "L299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/runtime
+  - community/Differential_Pii_Detector
 ---
 
 # DifferentialPIIDetector
 
 ## Connections
-- [[.__init__()_68]] - `method` [EXTRACTED]
+- [[.__init__()_71]] - `method` [EXTRACTED]
 - [[._deduplicate()]] - `method` [EXTRACTED]
 - [[._detect_pii()]] - `method` [EXTRACTED]
 - [[._detect_presidio()]] - `method` [EXTRACTED]
@@ -28,7 +28,6 @@ tags:
 - [[DifferentialPIIConfig_1]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector_1]] - `uses` [INFERRED]
 - [[PII Sanitizer Mitigation (Presidio + custom regex)]] - `semantically_similar_to` [INFERRED]
-- [[PIIScanner]] - `semantically_similar_to` [INFERRED]
 - [[RovoBlast Attack (Atlassian Rovo AI)]] - `implements` [EXTRACTED]
 - [[TestAdversarialFormattingCaught]] - `uses` [INFERRED]
 - [[TestAsymmetricFloor]] - `uses` [INFERRED]
@@ -39,6 +38,7 @@ tags:
 - [[TestRedaction]] - `uses` [INFERRED]
 - [[TestStandardPIIAlwaysCaught]] - `uses` [INFERRED]
 - [[TestToolResultPIIReport]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `semantically_similar_to` [INFERRED]
 - [[_Event]] - `uses` [INFERRED]
 - [[_FakeRecognizerResult]] - `uses` [INFERRED]
 - [[_StubAuditStore]] - `uses` [INFERRED]
@@ -51,4 +51,4 @@ tags:
 - [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - `calls` [EXTRACTED]
 - [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/runtime
+#graphify/code #graphify/EXTRACTED #community/Differential_Pii_Detector

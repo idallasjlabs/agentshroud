@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "Security Audit & Watchtower Tests"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # DecodedLayer
@@ -16,4 +16,4 @@ tags:
 - [[.decode_rot13()]] - `calls` [EXTRACTED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

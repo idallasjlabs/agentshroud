@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Distributed Openclaw Node Architecture (architecture)"
 location: "L406"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Distributed_Openclaw_Node_Architecture_architecture
 ---
 
 # Defense in Depth
 
 ## Connections
-- [[Security Architecture_3]] - `contains` [EXTRACTED]
+- [[Security Architecture_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Distributed_Openclaw_Node_Architecture_architecture

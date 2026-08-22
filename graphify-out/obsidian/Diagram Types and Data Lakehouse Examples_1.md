@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "Security Docs"
+community: "Skill (i-ti)"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Skill_i-ti
 ---
 
 # Diagram Types and Data Lakehouse Examples
@@ -21,4 +21,4 @@ tags:
 - [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 - [[State Diagram — Job or process lifecycle_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ti

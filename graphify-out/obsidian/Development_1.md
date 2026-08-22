@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "docs/vault"
+community: "Readme (docker)"
 location: "L384"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Readme_docker
 ---
 
 # Development
@@ -17,4 +17,4 @@ tags:
 - [[Rebuild Containers]] - `contains` [EXTRACTED]
 - [[Verify Security]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Readme_docker

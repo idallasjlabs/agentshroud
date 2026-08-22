@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Cross-Bot Trust Ledger"
-location: "L2083"
+community: "Telegram Proxy Core"
+location: "L2095"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/Telegram_Proxy_Core
 ---
 
 # Detect collaborator prompts attempting cross-tenant/workspace data access.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._looks_like_cross_tenant_data_probe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core

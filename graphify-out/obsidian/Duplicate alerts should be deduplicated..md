@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Security Audit & Watchtower Tests"
 location: "L861"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Duplicate alerts should be deduplicated.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_alert_dedup()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

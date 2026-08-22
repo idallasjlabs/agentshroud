@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "URL/Domain Validation Tests"
+community: "Privilege Separation & File Sandbox"
 location: "L222"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Privilege_Separation__File_Sandbox
 ---
 
 # Detect path traversal attempts in raw input before normalization.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._detect_raw_traversal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox

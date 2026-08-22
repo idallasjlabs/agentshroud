@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Delegation"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Delegation
 ---
 
 # DelegationPrivilege
@@ -38,4 +38,4 @@ tags:
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Delegation

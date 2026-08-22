@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Deployment Diagram (architecture)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Deployment_Diagram_architecture
 ---
 
 # Deployment Modes
@@ -16,4 +16,4 @@ tags:
 - [[Proxy Mode (Recommended)]] - `contains` [EXTRACTED]
 - [[Sidecar Mode (Performance Optimized)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Deployment_Diagram_architecture

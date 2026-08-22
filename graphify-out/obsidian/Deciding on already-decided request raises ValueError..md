@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
+community: "Queue (approval_queue)"
 location: "L245"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Queue_approval_queue
 ---
 
 # Deciding on already-decided request raises ValueError.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_double_decide_raises()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Queue_approval_queue

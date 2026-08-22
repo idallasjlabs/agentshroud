@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Browse (scripts)"
 location: "L380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Browse_scripts
 ---
 
 # Detect if CAPTCHA is present on page
 
 ## Connections
-- [[.detect_captcha()_2]] - `rationale_for` [EXTRACTED]
+- [[.detect_captcha()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Browse_scripts

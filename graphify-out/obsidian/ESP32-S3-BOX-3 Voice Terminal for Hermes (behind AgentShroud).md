@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md"
 type: "document"
-community: "Setup Docs"
+community: "Esp32 S3 Hermes Voice (v1.3)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Esp32_S3_Hermes_Voice_v13
 ---
 
 # ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)
@@ -26,4 +26,4 @@ tags:
 - [[Sources]] - `contains` [EXTRACTED]
 - [[esp32-s3-hermes-voice-terminal]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Esp32_S3_Hermes_Voice_v13

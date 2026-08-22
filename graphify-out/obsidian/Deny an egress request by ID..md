@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Main (cli)"
 location: "L257"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Main_cli
 ---
 
 # Deny an egress request by ID.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[deny()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Main_cli

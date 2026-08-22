@@ -1,20 +1,22 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Deployment (runbooks)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Deployment_runbooks
 ---
 
 # Dockerfile — Bot (OpenClaw)
 
 ## Connections
+- [[All Environment Variables (reference)]] - `shares_data_with` [EXTRACTED]
 - [[Build Process]] - `contains` [EXTRACTED]
 - [[Config Defaults (Baked In)]] - `contains` [EXTRACTED]
 - [[Directory Structure_1]] - `contains` [EXTRACTED]
+- [[Dockerfile — Gateway]] - `references` [EXTRACTED]
 - [[Dockerfile.bot]] - `contains` [EXTRACTED]
 - [[Image Labels (OCI)]] - `contains` [EXTRACTED]
 - [[Pre-installed Tools]] - `contains` [EXTRACTED]
@@ -22,5 +24,6 @@ tags:
 - [[Scripts Copied to `usrlocalbin`]] - `contains` [EXTRACTED]
 - [[Security Patches Applied at Build Time]] - `contains` [EXTRACTED]
 - [[TODO (from source)]] - `contains` [EXTRACTED]
+- [[trivy_report.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Deployment_runbooks

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/backup-restore.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Backup Restore (runbooks)"
 location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Backup_Restore_runbooks
 ---
 
 # Disaster Recovery (Full Rebuild)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Restore Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Backup_Restore_runbooks

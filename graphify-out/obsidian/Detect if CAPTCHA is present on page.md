@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "branding/README.md"
+community: "Browse (scripts)"
 location: "L380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/Browse_scripts
 ---
 
 # Detect if CAPTCHA is present on page
 
 ## Connections
-- [[.detect_captcha()]] - `rationale_for` [EXTRACTED]
+- [[.detect_captcha()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/rationale #graphify/EXTRACTED #community/Browse_scripts

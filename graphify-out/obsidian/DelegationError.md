@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Delegation"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Security_Module
+  - community/Delegation
 ---
 
 # DelegationError
@@ -27,4 +27,4 @@ tags:
 - [[delegation.py]] - `contains` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Security_Module
+#graphify/code #graphify/INFERRED #community/Delegation

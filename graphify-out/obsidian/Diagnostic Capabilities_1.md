@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "scripts/canary-deploy.sh"
+community: "Skill (i-mcpm-doctor)"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/canary-deploysh
+  - community/Skill_i-mcpm-doctor
 ---
 
 # Diagnostic Capabilities
@@ -18,4 +18,4 @@ tags:
 - [[4. Test AWS API MCP Server_1]] - `contains` [EXTRACTED]
 - [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/canary-deploysh
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-doctor

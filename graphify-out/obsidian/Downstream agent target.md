@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "Router"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Router
 ---
 
 # Downstream agent target
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentTarget]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Router

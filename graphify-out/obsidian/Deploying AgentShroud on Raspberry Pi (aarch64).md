@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Raspberry Pi (operations)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Raspberry_Pi_operations
 ---
 
 # Deploying AgentShroud on Raspberry Pi (aarch64)
@@ -16,8 +16,8 @@ tags:
 - [[Pi-Specific Notes]] - `contains` [EXTRACTED]
 - [[Prerequisites_6]] - `contains` [EXTRACTED]
 - [[Tailscale Remote Access (Optional)]] - `contains` [EXTRACTED]
-- [[Troubleshooting_14]] - `contains` [EXTRACTED]
+- [[Troubleshooting_18]] - `contains` [EXTRACTED]
 - [[Updating to Latest Release_2]] - `contains` [EXTRACTED]
 - [[raspberry-pi]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Raspberry_Pi_operations

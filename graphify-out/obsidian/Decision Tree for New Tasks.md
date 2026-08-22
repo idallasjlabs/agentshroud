@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "docs/runbooks"
+community: "Gsd Cadence (governance)"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Gsd_Cadence_governance
 ---
 
 # Decision Tree for New Tasks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Multi-Agent Role Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Gsd_Cadence_governance

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Drift Detector.py (Security Modules)"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Drift_Detectorpy_Security_Modules
 ---
 
 # DriftDetector.acknowledge_alert(alert_id)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_33]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Drift_Detectorpy_Security_Modules

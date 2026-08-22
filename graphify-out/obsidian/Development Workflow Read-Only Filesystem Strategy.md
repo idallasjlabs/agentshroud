@@ -1,14 +1,15 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Development Workflow Read Only (security)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Development_Workflow_Read_Only_security
 ---
 
-# Development Workflow Read-Only Filesystem Strategy
+# Development Workflow: Read-Only Filesystem Strategy
 
 ## Connections
 - [[Current Configuration Status]] - `contains` [EXTRACTED]
@@ -20,11 +21,10 @@ tags:
 - [[Emergency Rollback]] - `contains` [EXTRACTED]
 - [[Planned Features Write Requirements]] - `contains` [EXTRACTED]
 - [[Read-Only Compatibility Checklist]] - `contains` [EXTRACTED]
-- [[Summary_36]] - `contains` [EXTRACTED]
+- [[Summary_17]] - `contains` [EXTRACTED]
 - [[Testing Procedure Read-Only Lockdown]] - `contains` [EXTRACTED]
 - [[The Challenge]] - `contains` [EXTRACTED]
 - [[Three-Phase Approach]] - `contains` [EXTRACTED]
-- [[Three-Phase Read-Only Approach (Dev→Compatibility Testing→Production Lockdown)]] - `contains` [EXTRACTED]
 - [[Write Paths Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read_Only_security

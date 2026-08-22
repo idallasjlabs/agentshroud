@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
+source_file: ".agents/skills/i-mac/SKILL.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (i-mac)"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-mac
 ---
 
 # Discovery Strategy
@@ -19,4 +19,4 @@ tags:
 - [[Phase 4 — Enrichment]] - `contains` [EXTRACTED]
 - [[Phase 5 — Output Generation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mac

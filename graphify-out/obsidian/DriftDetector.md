@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Security Audit & Watchtower Tests"
 location: "L59"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # DriftDetector
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_70]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_73]] - `method` [EXTRACTED]
 - [[._init_db()_1]] - `method` [EXTRACTED]
 - [[.acknowledge_alert()]] - `method` [EXTRACTED]
 - [[.check_drift()]] - `method` [EXTRACTED]
-- [[.close()_9]] - `method` [EXTRACTED]
+- [[.close()_10]] - `method` [EXTRACTED]
 - [[.get_alerts()]] - `method` [EXTRACTED]
 - [[.get_baseline()]] - `method` [EXTRACTED]
 - [[.set_baseline()]] - `method` [EXTRACTED]
@@ -31,9 +31,11 @@ tags:
 - [[Any_8]] - `uses` [INFERRED]
 - [[Detect configuration drift from known-good baselines.]] - `rationale_for` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
+- [[IsolationVerifier]] - `shares_data_with` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
+- [[NetworkValidator]] - `semantically_similar_to` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
@@ -79,4 +81,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests

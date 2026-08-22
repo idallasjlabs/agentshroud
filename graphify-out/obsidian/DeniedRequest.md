@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Kill Switch Config"
+community: "Approval Hardening"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Kill_Switch_Config
+  - community/Approval_Hardening
 ---
 
 # DeniedRequest
@@ -22,4 +22,4 @@ tags:
 - [[approval_hardening.py]] - `contains` [EXTRACTED]
 - [[test_approval_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Config
+#graphify/code #graphify/EXTRACTED #community/Approval_Hardening

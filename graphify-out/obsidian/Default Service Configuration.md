@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Compose Generator.py (Runtime)"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Compose_Generatorpy_Runtime
 ---
 
 # Default Service Configuration
@@ -16,4 +16,4 @@ tags:
 - [[gateway service]] - `contains` [EXTRACTED]
 - [[openclaw service]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Compose_Generatorpy_Runtime
