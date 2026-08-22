@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/SKILL.md"
+source_file: "skills/custom/agentshroud-redteam/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L85"
+community: "Skill (agentshroud-redteam)"
+location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_agentshroud-redteam
 ---
 
 # Output
 
 ## Connections
-- [[OpenAI Image Gen]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_agentshroud-redteam

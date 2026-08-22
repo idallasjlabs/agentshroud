@@ -1,13 +1,13 @@
 ---
 source_file: "docs/vault/.obsidian/appearance.json"
 type: "document"
-community: "Community 1747"
+community: "Appearance (.obsidian)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1747
+  - community/Appearance_obsidian
 ---
 
 # Obsidian appearance.json (empty)
 
-#graphify/document #graphify/EXTRACTED #community/Community_1747
+#graphify/document #graphify/EXTRACTED #community/Appearance_obsidian

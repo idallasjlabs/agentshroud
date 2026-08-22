@@ -1,13 +1,13 @@
 ---
 source_file: "docs/vault/.obsidian/core-plugins.json"
 type: "document"
-community: "Community 1748"
+community: "Core Plugins (.obsidian)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1748
+  - community/Core_Plugins_obsidian
 ---
 
 # Obsidian core-plugins.json
 
-#graphify/document #graphify/EXTRACTED #community/Community_1748
+#graphify/document #graphify/EXTRACTED #community/Core_Plugins_obsidian

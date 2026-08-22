@@ -1,12 +1,12 @@
 ---
 source_file: "examples/docker-commands.md"
 type: "document"
-community: "docs/vault"
+community: "Docker Commands (examples)"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Docker_Commands_examples
 ---
 
 # OpenClaw CLI commands (run inside agentshroud-bot)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Docker Commands Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Docker_Commands_examples

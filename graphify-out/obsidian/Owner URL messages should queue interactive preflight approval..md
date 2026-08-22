@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
-location: "L5795"
+community: "Telegram Inbound Proxy Tests"
+location: "L5826"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Telegram_Inbound_Proxy_Tests
 ---
 
 # Owner URL messages should queue interactive preflight approval.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_url_triggers_egress_preflight_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Proxy_Tests

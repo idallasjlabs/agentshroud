@@ -1,17 +1,17 @@
 ---
-source_file: "docs/requirements/use-cases.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "docs/vault"
-location: "L4"
+community: "Prerequisites (reference)"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Prerequisites_reference
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Security Proxy]] - `contains` [EXTRACTED]
+- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Prerequisites_reference

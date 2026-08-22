@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Security Value Proposition (security)"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Security_Value_Proposition_security
 ---
 
 # Option 3: AgentShroud (Current Architecture)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Comparison Three Deployment Options]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Security_Value_Proposition_security

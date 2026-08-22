@@ -1,17 +1,17 @@
 ---
-source_file: "docs/ssh-capability.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "docker/bot-capabilities.md"
-location: "L3"
+community: "Setup Api Keys (setup)"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/bot-capabilitiesmd
+  - community/Setup_Api_Keys_setup
 ---
 
 # Overview
 
 ## Connections
-- [[SSH Capability — Architecture Document]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd
+#graphify/document #graphify/EXTRACTED #community/Setup_Api_Keys_setup

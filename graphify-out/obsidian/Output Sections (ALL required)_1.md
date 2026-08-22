@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
+source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-pca)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-pca
 ---
 
 # Output Sections (ALL required)
@@ -22,4 +22,4 @@ tags:
 - [[8. Verification Plan]] - `contains` [EXTRACTED]
 - [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-pca

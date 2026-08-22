@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Progressive Lockdown"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Progressive_Lockdown
 ---
 
 # Owner command: reset lockdown state for a user. Returns True if existed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.reset()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Lockdown

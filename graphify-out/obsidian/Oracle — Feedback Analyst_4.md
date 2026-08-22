@@ -1,17 +1,20 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
-type: "concept"
-community: "Planning Docs"
+source_file: "docker/config/openclaw/skills/i-oracle/README.md"
+type: "document"
+community: "Readme (i-oracle)"
+location: "L1"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Readme_i-oracle
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Athena — Knowledge Distiller_4]] - `shares_data_with` [EXTRACTED]
-- [[Mnemosyne — Retention Engineer_4]] - `shares_data_with` [EXTRACTED]
+- [[Purpose_95]] - `contains` [EXTRACTED]
+- [[README_100]] - `contains` [EXTRACTED]
+- [[Related Skills_104]] - `contains` [EXTRACTED]
+- [[Usage_105]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_i-oracle

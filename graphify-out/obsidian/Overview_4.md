@@ -1,12 +1,12 @@
 ---
-source_file: "docs/api/integration-guide.md"
+source_file: "docs/api/api-reference.md"
 type: "document"
-community: "docs/vault"
-location: "L4"
+community: "Integration Guide (api)"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Integration_Guide_api
 ---
 
 # Overview
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide_api

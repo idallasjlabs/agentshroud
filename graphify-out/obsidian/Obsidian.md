@@ -1,21 +1,19 @@
 ---
 source_file: "skills/openclaw/obsidian/SKILL.md"
 type: "document"
-community: "docs/USPTO_TRADEMARK_APPLICATION.md"
+community: "Skill (notion)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/USPTO_TRADEMARK_APPLICATIONmd
+  - community/Skill_notion
 ---
 
 # Obsidian
 
 ## Connections
 - [[Find the active vault(s)]] - `contains` [EXTRACTED]
-- [[OpenClaw Skill Ecosystem]] - `part_of` [EXTRACTED]
-- [[SKILL_155]] - `contains` [EXTRACTED]
-- [[obsidian-cli Tool]] - `uses` [EXTRACTED]
+- [[SKILL_219]] - `contains` [EXTRACTED]
 - [[obsidian-cli quick start]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/USPTO_TRADEMARK_APPLICATIONmd
+#graphify/document #graphify/EXTRACTED #community/Skill_notion

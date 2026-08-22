@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Collaborator Tracker"
 location: "L227"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Collaborator_Tracker
 ---
 
 # Normalize previews to single-line safe text for JSONL + markdown mirrors.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._normalize_preview()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Tracker

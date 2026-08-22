@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-supply-chain.md"
+source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Gateway Security Module"
-location: "L5"
+community: "Audit Specification (security)"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Audit_Specification_security
 ---
 
 # Overview
 
 ## Connections
-- [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
+- [[AgentShroud Audit Specification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Audit_Specification_security

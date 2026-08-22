@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Bot Skill Config"
-location: "L1106"
+community: "Telegram Inbound Proxy Tests"
+location: "L1137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Telegram_Inbound_Proxy_Tests
 ---
 
 # Owner /addcollab should add collaborator and clear revoked state.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_addcollab_adds_target_and_notifies()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Proxy_Tests

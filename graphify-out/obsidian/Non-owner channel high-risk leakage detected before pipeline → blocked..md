@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "SOC Dashboard"
+community: "Slack Proxy"
 location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Slack_Proxy
 ---
 
 # Non-owner channel: high-risk leakage detected before pipeline → blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_non_owner_high_risk_leakage_blocked_before_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy

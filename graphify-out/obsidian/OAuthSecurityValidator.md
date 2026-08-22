@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "OAuth & Metadata Guard"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/OAuth__Metadata_Guard
 ---
 
 # OAuthSecurityValidator
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_42]] - `calls` [EXTRACTED]
-- [[.__init__()_99]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_44]] - `calls` [EXTRACTED]
+- [[.__init__()_102]] - `method` [EXTRACTED]
 - [[.check_state_reuse()]] - `method` [EXTRACTED]
 - [[.create_consent_cookie()]] - `method` [EXTRACTED]
 - [[.record_state_used()]] - `method` [EXTRACTED]
@@ -45,4 +45,4 @@ tags:
 - [[validator()]] - `calls` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/OAuth__Metadata_Guard

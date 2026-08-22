@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "Gateway Proxy Layer"
-location: "L16"
+community: "Llm Proxy.py (Proxy Layer)"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Llm_Proxypy_Proxy_Layer
 ---
 
 # Overview
 
 ## Connections
-- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Llm_Proxypy_Proxy_Layer

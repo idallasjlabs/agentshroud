@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Web Control Center"
+community: "Main (src)"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_Control_Center
+  - community/Main_src
 ---
 
 # OutputFormat
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Cli]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_Control_Center
+#graphify/code #graphify/EXTRACTED #community/Main_src

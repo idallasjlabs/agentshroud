@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Progressive Lockdown"
 location: "L305"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Progressive_Lockdown
 ---
 
 # Owner messages must never be blocked by the suspension logic.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_owner_messages_pass_despite_collab_suspension()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Lockdown

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Output Schema"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Output_Schema
 ---
 
 # Output longer than 100 000 chars should be trimmed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_output_exceeding_max_length_trimmed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Output_Schema

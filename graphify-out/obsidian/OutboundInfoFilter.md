@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Outbound Filter"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Outbound_Filter
 ---
 
 # OutboundInfoFilter
 
 ## Connections
-- [[.__init__()_100]] - `method` [EXTRACTED]
+- [[.__init__()_103]] - `method` [EXTRACTED]
 - [[._classify_response_risk()]] - `method` [EXTRACTED]
 - [[._compile_patterns()_1]] - `method` [EXTRACTED]
 - [[._is_allowed_for_trust()]] - `method` [EXTRACTED]
@@ -28,6 +28,8 @@ tags:
 - [[.test_trust_level_overrides()]] - `calls` [EXTRACTED]
 - [[.test_with_pii_sanitizer_compatibility()]] - `calls` [EXTRACTED]
 - [[Main outbound information filtering engine.      Uses compiled regex patterns to]] - `rationale_for` [EXTRACTED]
+- [[Outbound Information Filter Tests]] - `references` [EXTRACTED]
+- [[OutputCanary]] - `conceptually_related_to` [INFERRED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
@@ -45,9 +47,8 @@ tags:
 - [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 - [[test_outbound_filter.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/code #graphify/EXTRACTED #community/Outbound_Filter

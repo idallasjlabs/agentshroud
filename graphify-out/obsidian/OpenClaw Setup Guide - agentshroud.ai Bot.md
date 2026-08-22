@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Openclaw Setup (setup)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Openclaw_Setup_setup
 ---
 
 # OpenClaw Setup Guide - agentshroud.ai Bot
@@ -21,8 +21,8 @@ tags:
 - [[OpenClaw Features Now Available]] - `contains` [EXTRACTED]
 - [[Quick Start_2]] - `contains` [EXTRACTED]
 - [[Security Notes_2]] - `contains` [EXTRACTED]
-- [[Troubleshooting_24]] - `contains` [EXTRACTED]
+- [[Troubleshooting_28]] - `contains` [EXTRACTED]
 - [[Using OpenClaw]] - `contains` [EXTRACTED]
 - [[What Changed]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Openclaw_Setup_setup

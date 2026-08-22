@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sav/SKILL.md"
 type: "document"
-community: "Planning Docs"
-location: "L36"
+community: "Skill (i-sav)"
+location: "L396"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-sav
 ---
 
-# Output Format
+# OUTPUT FORMAT
 
 ## Connections
-- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
+- [[System Audit Vault (Obsidian)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sav

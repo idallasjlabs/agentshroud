@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Data Flow.md"
+source_file: "docs/ssh-capability.md"
 type: "document"
-community: "docs/api"
-location: "L10"
+community: "V1.2.0 Master Plan (v1.2)"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/api
+  - community/V120_Master_Plan_v12
 ---
 
 # Overview
 
 ## Connections
-- [[Data Flow_1]] - `contains` [EXTRACTED]
+- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/api
+#graphify/document #graphify/EXTRACTED #community/V120_Master_Plan_v12

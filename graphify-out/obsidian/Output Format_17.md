@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Bot Container Scripts"
+community: "Skill (i-hermes)"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Skill_i-hermes
 ---
 
 # Output Format
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/document #graphify/EXTRACTED #community/Skill_i-hermes

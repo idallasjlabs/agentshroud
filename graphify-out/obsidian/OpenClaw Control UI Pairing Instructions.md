@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Pairing Instructions (setup)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Pairing_Instructions_setup
 ---
 
 # OpenClaw Control UI Pairing Instructions
@@ -14,13 +14,10 @@ tags:
 ## Connections
 - [[After Pairing]] - `contains` [EXTRACTED]
 - [[Alternative Auto-Pairing URL]] - `contains` [EXTRACTED]
-- [[Device Pairing Management Guide]] - `extends` [INFERRED_HIGH]
 - [[Get Token Again]] - `contains` [EXTRACTED]
-- [[OpenClaw Control UI (port 1878918790)]] - `references` [INFERRED_HIGH]
-- [[OpenClaw Gateway Token (64-char hex, stored in localStorage)]] - `describes` [EXTRACTED]
 - [[PAIRING_INSTRUCTIONS]] - `contains` [EXTRACTED]
 - [[Security Note]] - `contains` [EXTRACTED]
-- [[Troubleshooting_26]] - `contains` [EXTRACTED]
+- [[Troubleshooting_30]] - `contains` [EXTRACTED]
 - [[✅ Step-by-Step Pairing Process]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Pairing_Instructions_setup

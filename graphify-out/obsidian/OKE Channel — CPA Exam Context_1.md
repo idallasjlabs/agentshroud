@@ -1,34 +1,23 @@
 ---
 source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-atlas)"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-atlas
 ---
 
 # OKE Channel — CPA Exam Context
 
 ## Connections
-- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
-- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
-- [[Atlas — Curriculum Architect (SKILL)]] - `references` [EXTRACTED]
-- [[CPA Curriculum Frontmatter Addition]] - `contains` [EXTRACTED]
-- [[CPA Curriculum Frontmatter Addition_1]] - `contains` [EXTRACTED]
-- [[Coverage Types]] - `contains` [EXTRACTED]
-- [[Coverage Types_1]] - `contains` [EXTRACTED]
-- [[Episode Closing]] - `contains` [EXTRACTED]
-- [[Episode Closing_1]] - `contains` [EXTRACTED]
-- [[Exam Weight Integration]] - `contains` [EXTRACTED]
-- [[Exam Weight Integration_1]] - `contains` [EXTRACTED]
-- [[Gleim CPA Review Study Unit Mapping]] - `references` [EXTRACTED]
-- [[Gleim CPA Review Study Unit Mapping_1]] - `implements` [EXTRACTED]
-- [[Gleim Unit Mapping]] - `contains` [EXTRACTED]
-- [[Gleim Unit Mapping_1]] - `contains` [EXTRACTED]
-- [[Mandatory Acronym Expansion]] - `contains` [EXTRACTED]
-- [[Mandatory Acronym Expansion_1]] - `contains` [EXTRACTED]
-- [[i-atlas SKILL (Curriculum Architect)]] - `references` [EXTRACTED]
+- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
+- [[CPA Curriculum Frontmatter Addition_2]] - `contains` [EXTRACTED]
+- [[Coverage Types_2]] - `contains` [EXTRACTED]
+- [[Episode Closing_2]] - `contains` [EXTRACTED]
+- [[Exam Weight Integration_2]] - `contains` [EXTRACTED]
+- [[Gleim Unit Mapping_2]] - `contains` [EXTRACTED]
+- [[Mandatory Acronym Expansion_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-atlas

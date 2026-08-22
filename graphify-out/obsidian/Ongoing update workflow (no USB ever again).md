@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "document"
-community: "Community 1241"
+community: "Setup (voice-terminal)"
 location: "L551"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1241
+  - community/Setup_voice-terminal
 ---
 
 # Ongoing update workflow (no USB ever again)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[12. OTA Wireless Firmware Updates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1241
+#graphify/document #graphify/EXTRACTED #community/Setup_voice-terminal

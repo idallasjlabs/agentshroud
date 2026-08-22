@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "browser-extension/package.json"
+community: "Readme (scripts)"
 location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-extension/packagejson
+  - community/Readme_scripts
 ---
 
 # OpenClaw CLI
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Direct Docker Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-extension/packagejson
+#graphify/document #graphify/EXTRACTED #community/Readme_scripts

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Setup Guide (setup)"
 location: "L243"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Guide_setup
 ---
 
 # Option E: Environment Variables (Development Only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 3 Configure Secrets Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Setup_Guide_setup

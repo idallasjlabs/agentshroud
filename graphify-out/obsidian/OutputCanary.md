@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # OutputCanary
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_101]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_104]] - `method` [EXTRACTED]
 - [[._create_detection_patterns()]] - `method` [EXTRACTED]
 - [[._create_invisible_canary()]] - `method` [EXTRACTED]
 - [[._scan_for_canary()]] - `method` [EXTRACTED]
@@ -32,6 +32,8 @@ tags:
 - [[Main Output Canary System for detecting prompt leakage.      This system generat]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
+- [[OutboundInfoFilter]] - `conceptually_related_to` [INFERRED]
+- [[Output Canary System Tests]] - `references` [EXTRACTED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
@@ -45,4 +47,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_output_canary.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

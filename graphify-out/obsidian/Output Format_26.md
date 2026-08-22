@@ -1,17 +1,18 @@
 ---
-source_file: "docs/claude-security-audit-prompt.md"
+source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L266"
+community: "Skill (i-athena)"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-athena
 ---
 
 # Output Format
 
 ## Connections
-- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_4]] - `contains` [EXTRACTED]
+- [[show_notes_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-athena

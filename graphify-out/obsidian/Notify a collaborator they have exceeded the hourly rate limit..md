@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "MCP Policy Engine"
-location: "L6964"
+community: "Telegram Proxy Core"
+location: "L6984"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Policy_Engine
+  - community/Telegram_Proxy_Core
 ---
 
 # Notify a collaborator they have exceeded the hourly rate limit.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._send_rate_limit_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Policy_Engine
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core

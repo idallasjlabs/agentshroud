@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Security Regressions V1 2"
 location: "L288"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Regressions_V1_2
 ---
 
 # Owner vouches for an agent, unlocking VERIFIED/FULL promotion.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.vouch_for_agent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Security_Regressions_V1_2

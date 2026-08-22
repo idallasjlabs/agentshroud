@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: ".github/agents"
+community: "Communication Templates (legal)"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/agents
+  - community/Communication_Templates_legal
 ---
 
 # Option 3 — Full Collaborator Notice
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ Communication Templates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/agents
+#graphify/document #graphify/EXTRACTED #community/Communication_Templates_legal

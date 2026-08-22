@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
+source_file: ".agents/skills/i-sav/SKILL.md"
 type: "document"
-community: "Architecture Docs"
+community: "Skill (i-sav)"
 location: "L396"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Skill_i-sav
 ---
 
 # OUTPUT FORMAT
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit Vault (Obsidian)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sav

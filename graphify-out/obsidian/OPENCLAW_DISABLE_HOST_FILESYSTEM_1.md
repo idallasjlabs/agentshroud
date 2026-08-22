@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Openclaw Sandbox Mode (04 - Environment Variables)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Openclaw_Sandbox_Mode_04_-_Environment_Variables
 ---
 
 # OPENCLAW_DISABLE_HOST_FILESYSTEM
@@ -19,4 +19,4 @@ tags:
 - [[Set In_3]] - `contains` [EXTRACTED]
 - [[Value_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Openclaw_Sandbox_Mode_04_-_Environment_Variables

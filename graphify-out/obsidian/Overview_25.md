@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L5"
+community: "Readme (securebrowser)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_securebrowser
 ---
 
 # Overview
 
 ## Connections
-- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_securebrowser

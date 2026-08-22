@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (bear-notes)"
 location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_bear-notes
 ---
 
 # Options
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Bear Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_bear-notes

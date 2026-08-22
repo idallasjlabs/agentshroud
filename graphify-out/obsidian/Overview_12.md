@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/audit-specification.md"
+source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Access Control Matrix (security)"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Access_Control_Matrix_security
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Audit Specification]] - `contains` [EXTRACTED]
+- [[AgentShroud Access Control Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Access_Control_Matrix_security

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Openclaw Setup (setup)"
 location: "L334"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Openclaw_Setup_setup
 ---
 
 # On Host (Docker Volumes)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Data Locations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Openclaw_Setup_setup

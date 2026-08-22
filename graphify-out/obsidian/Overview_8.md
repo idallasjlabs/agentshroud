@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L9"
+community: "Iec 62443 Matrix (compliance)"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Iec_62443_Matrix_compliance
 ---
 
 # Overview
 
 ## Connections
-- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Iec_62443_Matrix_compliance

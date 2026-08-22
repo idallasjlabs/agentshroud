@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/slack/SKILL.md"
+source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Planning Docs"
-location: "L9"
+community: "Skill (session-logs)"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_session-logs
 ---
 
 # Overview
 
 ## Connections
-- [[Slack Actions]] - `contains` [EXTRACTED]
+- [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_session-logs

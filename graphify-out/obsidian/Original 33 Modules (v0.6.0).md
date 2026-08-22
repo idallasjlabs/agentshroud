@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/module-inventory.md"
 type: "document"
-community: "Planning Docs"
+community: "Module Inventory (references)"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Module_Inventory_references
 ---
 
 # Original 33 Modules (v0.6.0)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Module_Inventory_references

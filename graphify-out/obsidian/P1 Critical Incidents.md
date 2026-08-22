@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Setup Docs"
+community: "Incident Response (operations)"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Incident_Response_operations
 ---
 
 # P1 Critical Incidents
@@ -17,4 +17,4 @@ tags:
 - [[Container Escape Attempt]] - `contains` [EXTRACTED]
 - [[Data Exfiltration Detected]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_operations

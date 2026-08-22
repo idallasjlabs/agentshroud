@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/healthcheck/SKILL.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Gateway Ingest API"
-location: "L8"
+community: "Skill (canvas)"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - community/Skill_canvas
 ---
 
 # Overview
 
 ## Connections
-- [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/document #graphify/EXTRACTED #community/Skill_canvas

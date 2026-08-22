@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "skills/openclaw"
+community: "Telegram Proxy Outbound"
 location: "L3753"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Telegram_Proxy_Outbound
 ---
 
 # Owner chat: raw web_search JSON produces 'Switch to tool-capable model' message.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_raw_web_search_json_owner_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Outbound

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/deployment-diagram.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "scripts/generate_branding_assets.py"
-location: "L3"
+community: "Integration Guide (api)"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/generate_branding_assetspy
+  - community/Integration_Guide_api
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/generate_branding_assetspy
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide_api

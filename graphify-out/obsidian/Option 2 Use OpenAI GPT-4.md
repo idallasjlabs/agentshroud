@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "docs/papers"
+community: "Setup Api Keys (setup)"
 location: "L121"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Setup_Api_Keys_setup
 ---
 
 # Option 2: Use OpenAI GPT-4
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 Set Default Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/papers
+#graphify/document #graphify/EXTRACTED #community/Setup_Api_Keys_setup

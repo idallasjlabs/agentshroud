@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L356"
+community: "Skill (i-cr)"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-cr
 ---
 
 # Output Format
 
 ## Connections
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-cr

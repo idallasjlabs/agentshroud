@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Alert Dispatcher.py (Security Modules)"
 location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Alert_Dispatcherpy_Security_Modules
 ---
 
 # Operational Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Alert_Dispatcherpy_Security_Modules

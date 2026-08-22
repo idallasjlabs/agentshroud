@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "docs/vault"
+community: "Skill (i-socrates)"
 location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skill_i-socrates
 ---
 
 # OKE Channel — CPA Exam Prep Dialogue Guidelines
@@ -15,6 +15,6 @@ tags:
 - [[Dialogue Adaptations_1]] - `contains` [EXTRACTED]
 - [[Episode Closing (Mandatory for OKE)_1]] - `contains` [EXTRACTED]
 - [[Expert Persona_1]] - `contains` [EXTRACTED]
-- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skill_i-socrates

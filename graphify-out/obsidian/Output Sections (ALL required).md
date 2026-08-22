@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
+source_file: ".agents/skills/i-pca/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-pca)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-pca
 ---
 
 # Output Sections (ALL required)
@@ -22,4 +22,4 @@ tags:
 - [[Skill Pre-Change Analysis (PCA)]] - `contains` [EXTRACTED]
 - [[Verification Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-pca

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/access-control-matrix.md"
+source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L3"
+community: "Use Cases (requirements)"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Use_Cases_requirements
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Access Control Matrix]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Proxy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Use_Cases_requirements
