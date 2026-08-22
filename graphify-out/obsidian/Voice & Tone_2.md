@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L201"
+community: "Brand Guidelines (guidelines)"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Brand_Guidelines_guidelines
 ---
 
 # Voice & Tone
 
 ## Connections
-- [[Writing Style Rules]] - `contains` [EXTRACTED]
+- [[Brand Personality]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Brand_Guidelines_guidelines

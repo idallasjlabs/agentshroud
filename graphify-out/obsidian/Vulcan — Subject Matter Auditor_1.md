@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
+source_file: ".agents/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-vulcan)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-vulcan
 ---
 
 # Vulcan — Subject Matter Auditor
@@ -16,9 +16,9 @@ tags:
 - [[Output Format_12]] - `contains` [EXTRACTED]
 - [[Persona_7]] - `contains` [EXTRACTED]
 - [[Quality Checklist_8]] - `contains` [EXTRACTED]
-- [[Role_38]] - `contains` [EXTRACTED]
-- [[SKILL_62]] - `contains` [EXTRACTED]
+- [[Role_39]] - `contains` [EXTRACTED]
+- [[SKILL_63]] - `contains` [EXTRACTED]
 - [[System Prompt_7]] - `contains` [EXTRACTED]
 - [[User Prompt Template_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-vulcan

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Docs Accuracy"
 location: "L311"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Docs_Accuracy
 ---
 
 # We should have at least 350 tests (README says 351+).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_actual_test_count_meets_minimum()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Docs_Accuracy

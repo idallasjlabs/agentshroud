@@ -1,17 +1,17 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Copilot Cli Setup (.github)"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Copilot_Cli_Setup_github
 ---
 
 # User-Level Config
 
 ## Connections
-- [[ssh-configuration]] - `contains` [EXTRACTED]
+- [[Configuration Files]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Copilot_Cli_Setup_github

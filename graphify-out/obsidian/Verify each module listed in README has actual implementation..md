@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Docs Accuracy"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Docs_Accuracy
 ---
 
 # Verify each module listed in README has actual implementation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReadmeModulesMatchCode]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Docs_Accuracy

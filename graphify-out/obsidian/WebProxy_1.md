@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Web Proxy"
 location: "L140"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Security_Module
+  - community/Web_Proxy
 ---
 
 # WebProxy
 
 ## Connections
-- [[.__init__()_42]] - `method` [EXTRACTED]
+- [[.__init__()_44]] - `method` [EXTRACTED]
 - [[._audit()_1]] - `method` [EXTRACTED]
 - [[.allowlist_proxy()]] - `calls` [EXTRACTED]
 - [[.check_request()]] - `method` [EXTRACTED]
@@ -33,9 +33,10 @@ tags:
 - [[MockEgressEvent]] - `uses` [INFERRED]
 - [[MockThreatLevel]] - `uses` [INFERRED]
 - [[MockURLResult]] - `uses` [INFERRED]
-- [[StreamReader_1]] - `uses` [INFERRED]
+- [[RateLimiter_1]] - `calls` [EXTRACTED]
 - [[StreamReader_2]] - `uses` [INFERRED]
-- [[StreamWriter_1]] - `uses` [INFERRED]
+- [[StreamReader_3]] - `uses` [INFERRED]
+- [[StreamWriter_2]] - `uses` [INFERRED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
 - [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestContentTypeFiltering]] - `uses` [INFERRED]
@@ -47,7 +48,7 @@ tags:
 - [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting_3]] - `uses` [INFERRED]
+- [[TestRateLimiting_4]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]
@@ -71,9 +72,8 @@ tags:
 - [[http_proxy.py]] - `imports` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
 - [[passthrough_proxy()_1]] - `calls` [EXTRACTED]
-- [[proxy()_3]] - `calls` [EXTRACTED]
+- [[proxy()_4]] - `calls` [EXTRACTED]
 - [[test_blocked_domain_is_tracked_in_recent()]] - `calls` [EXTRACTED]
 - [[test_connect_blocked_domain_returns_403()]] - `calls` [EXTRACTED]
 - [[test_connect_denied_by_egress_filter_returns_403()]] - `calls` [EXTRACTED]
@@ -87,4 +87,4 @@ tags:
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Security_Module
+#graphify/code #graphify/INFERRED #community/Web_Proxy

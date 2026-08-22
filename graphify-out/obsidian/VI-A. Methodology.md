@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Architecture Docs"
+community: "Agentshroud Ieee Paper (papers)"
 location: "L155"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Agentshroud_Ieee_Paper_papers
 ---
 
 # VI-A. Methodology
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VI. STPA-Sec Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Agentshroud_Ieee_Paper_papers

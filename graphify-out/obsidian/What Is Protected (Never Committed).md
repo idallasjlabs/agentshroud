@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "docs/operations"
+community: "Security Verification (security)"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Security_Verification_security
 ---
 
 # What Is Protected (Never Committed)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Verification Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Security_Verification_security

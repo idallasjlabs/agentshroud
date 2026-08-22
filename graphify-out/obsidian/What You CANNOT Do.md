@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "Security Docs"
+community: "Augmenter.agent (agents)"
 location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Augmenteragent_agents
 ---
 
 # What You CANNOT Do
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test Augmentation Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Augmenteragent_agents

@@ -1,18 +1,17 @@
 ---
-source_file: "BRAND.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L52"
+community: "Skill (i-tw)"
+location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-tw
 ---
 
 # Voice & Tone
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines_1]] - `references` [EXTRACTED]
+- [[Writing Style Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-tw

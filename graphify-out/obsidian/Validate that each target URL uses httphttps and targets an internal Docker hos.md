@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Competitive Intel Store"
+community: "Security Fixes & SSH Write Endpoint"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Security_Fixes__SSH_Write_Endpoint
 ---
 
 # Validate that each target URL uses http/https and targets an internal Docker hos
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.validate_targets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/rationale #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint

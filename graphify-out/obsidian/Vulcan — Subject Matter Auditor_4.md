@@ -1,17 +1,20 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
-type: "concept"
-community: "Planning Docs"
+source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
+type: "document"
+community: "Readme (i-vulcan)"
+location: "L1"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Readme_i-vulcan
 ---
 
 # Vulcan — Subject Matter Auditor
 
 ## Connections
-- [[Apollo — Audio Systems Producer_3]] - `shares_data_with` [EXTRACTED]
-- [[Socrates — Dialogue Architect_4]] - `shares_data_with` [EXTRACTED]
+- [[Purpose_110]] - `contains` [EXTRACTED]
+- [[README_115]] - `contains` [EXTRACTED]
+- [[Related Skills_119]] - `contains` [EXTRACTED]
+- [[Usage_120]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_i-vulcan

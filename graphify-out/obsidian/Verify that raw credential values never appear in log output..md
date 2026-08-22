@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "rationale"
-community: "Docker Deploy Scripts"
+community: "Credential Injector"
 location: "L186"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Credential_Injector
 ---
 
 # Verify that raw credential values never appear in log output.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_credential_never_in_logs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/rationale #graphify/EXTRACTED #community/Credential_Injector

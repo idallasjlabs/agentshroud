@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-data/SKILL.md"
+source_file: "docker/config/hermes/skills/i-data/SKILL.md"
 type: "document"
-community: "branding/favicons"
+community: "Skill (i-data)"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/favicons
+  - community/Skill_i-data
 ---
 
 # Validation Layers
@@ -18,4 +18,4 @@ tags:
 - [[4. Cross-Site Comparison_1]] - `contains` [EXTRACTED]
 - [[Skill Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/favicons
+#graphify/document #graphify/EXTRACTED #community/Skill_i-data

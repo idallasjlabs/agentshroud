@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Middleware & Session Isolation"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Middleware__Session_Isolation
 ---
 
 # WebhookReceiver
 
 ## Connections
-- [[.__init__()_43]] - `method` [EXTRACTED]
+- [[.__init__()_45]] - `method` [EXTRACTED]
 - [[._can_create_directory()]] - `method` [EXTRACTED]
 - [[._extract_message()]] - `method` [EXTRACTED]
 - [[._extract_user_id()_1]] - `method` [EXTRACTED]
@@ -25,8 +25,10 @@ tags:
 - [[.test_webhook_session_context_injection()]] - `calls` [EXTRACTED]
 - [[.test_webhook_user_id_extraction()]] - `calls` [EXTRACTED]
 - [[.validate_signature()]] - `method` [EXTRACTED]
+- [[Collaborator Tracker Tests]] - `references` [EXTRACTED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[Receives webhooks and routes them through the security pipeline.      In product]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[SlackAPIProxy_1]] - `uses` [INFERRED]
 - [[TestHandleEvent]] - `uses` [INFERRED]
 - [[TestMiddlewareSessionEnforcement]] - `uses` [INFERRED]
@@ -55,4 +57,4 @@ tags:
 - [[test_webhook_strips_pii()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Middleware__Session_Isolation

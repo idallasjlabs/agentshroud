@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "Aiosqlite (05 - Dependencies)"
 location: "L4745"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Competitive_Intel_Store
+  - community/Aiosqlite_05_-_Dependencies
 ---
 
 # WebSocket
@@ -28,4 +28,4 @@ tags:
 - [[SSHWriteFileResponse]] - `uses` [INFERRED]
 - [[slack_ws_relay()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Competitive_Intel_Store
+#graphify/code #graphify/INFERRED #community/Aiosqlite_05_-_Dependencies

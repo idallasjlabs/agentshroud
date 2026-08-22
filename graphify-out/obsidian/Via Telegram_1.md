@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/IDENTITY.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Identity (architecture)"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Identity_architecture
 ---
 
 # Via Telegram:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[💬 Communication Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Identity_architecture

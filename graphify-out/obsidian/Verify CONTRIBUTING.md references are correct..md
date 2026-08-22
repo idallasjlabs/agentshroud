@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "ESP32 Firmware"
+community: "Docs Accuracy"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Docs_Accuracy
 ---
 
 # Verify CONTRIBUTING.md references are correct.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestContributingMdAccuracy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/rationale #graphify/EXTRACTED #community/Docs_Accuracy

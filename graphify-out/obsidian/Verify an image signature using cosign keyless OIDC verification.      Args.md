@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/image_verifier.py"
 type: "rationale"
-community: "docs/compliance"
+community: "Image Verifier"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/compliance
+  - community/Image_Verifier
 ---
 
 # Verify an image signature using cosign keyless OIDC verification.      Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[verify_image()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/compliance
+#graphify/rationale #graphify/EXTRACTED #community/Image_Verifier

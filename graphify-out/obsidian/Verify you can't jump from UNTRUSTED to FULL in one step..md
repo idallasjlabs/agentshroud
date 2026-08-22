@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Audit Export Pipeline"
+community: "Security Hardening"
 location: "L370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Security_Hardening
 ---
 
 # Verify you can't jump from UNTRUSTED to FULL in one step.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_trust_escalation_attack()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Security_Hardening

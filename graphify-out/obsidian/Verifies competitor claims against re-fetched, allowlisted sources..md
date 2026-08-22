@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "docs/project"
+community: "Citation Verifier"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Citation_Verifier
 ---
 
 # Verifies competitor claims against re-fetched, allowlisted sources.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CitationVerifier]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/project
+#graphify/rationale #graphify/EXTRACTED #community/Citation_Verifier

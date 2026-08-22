@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "docs/diagrams"
+community: "Docs Accuracy"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Docs_Accuracy
 ---
 
 # Verify README.md claims match actual implementation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReadmeAccuracy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/diagrams
+#graphify/rationale #graphify/EXTRACTED #community/Docs_Accuracy

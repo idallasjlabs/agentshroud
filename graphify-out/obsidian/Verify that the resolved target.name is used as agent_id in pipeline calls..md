@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "Forward Routing"
 location: "L97"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Forward_Routing
 ---
 
 # Verify that the resolved target.name is used as agent_id in pipeline calls.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAgentIdPropagatedFromTarget]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing

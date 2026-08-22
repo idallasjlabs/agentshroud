@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Diagram 03 Gateway Components (images)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Diagram_03_Gateway_Components_images
 ---
 
 # Web Proxy
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[web_proxy.py (domain allowlist engine)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Diagram_03_Gateway_Components_images

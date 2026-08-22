@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "docs/project"
+community: "Api (web)"
 location: "L1144"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Api_web
 ---
 
 # Verify and persist a draft competitive-intel report (SCRUM-75).      Each draft
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[submit_competitive_intel()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/project
+#graphify/rationale #graphify/EXTRACTED #community/Api_web

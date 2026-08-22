@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "rationale"
-community: "ESP32 Firmware"
+community: "Browser Security"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Browser_Security
 ---
 
 # Validate a server configuration before execution.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.validate_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/rationale #graphify/EXTRACTED #community/Browser_Security

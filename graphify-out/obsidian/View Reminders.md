@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Skill (apple-reminders)"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Skill_apple-reminders
 ---
 
 # View Reminders
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Skill_apple-reminders

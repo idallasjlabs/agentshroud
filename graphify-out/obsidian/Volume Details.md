@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Volumes (06 - Containers & Services)"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Volumes_06_-_Containers__Services
 ---
 
 # Volume Details
@@ -19,4 +19,4 @@ tags:
 - [[agentshroud-workspace]] - `contains` [EXTRACTED]
 - [[gateway-data]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Volumes_06_-_Containers__Services

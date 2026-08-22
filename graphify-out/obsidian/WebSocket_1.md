@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
-location: "L344"
+community: "Queue (approval_queue)"
+location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Queue_approval_queue
 ---
 
 # WebSocket
@@ -15,4 +15,4 @@ tags:
 - [[.connect()_1]] - `references` [EXTRACTED]
 - [[.disconnect()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Queue_approval_queue

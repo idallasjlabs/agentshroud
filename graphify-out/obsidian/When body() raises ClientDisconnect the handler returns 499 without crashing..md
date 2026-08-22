@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Telegram Proxy Multibot"
 location: "L398"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Proxy_Multibot
 ---
 
 # When body() raises ClientDisconnect the handler returns 499 without crashing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_client_disconnect_returns_499()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Multibot

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "User Guide (docs)"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/User_Guide_docs
 ---
 
 # What Requires Approval?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Understanding Approval Requests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/User_Guide_docs

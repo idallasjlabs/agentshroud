@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Middleware & Session Isolation"
 location: "L121"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Middleware__Session_Isolation
 ---
 
 # UserSessionManager
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_43]] - `calls` [EXTRACTED]
-- [[.__init__()_112]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_45]] - `calls` [EXTRACTED]
+- [[.__init__()_115]] - `method` [EXTRACTED]
 - [[._load_sessions()]] - `method` [EXTRACTED]
 - [[._save_sessions()]] - `method` [EXTRACTED]
 - [[._session_key()]] - `method` [EXTRACTED]
@@ -51,17 +51,14 @@ tags:
 - [[FastAPI_1]] - `uses` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
-- [[MCPProxyRequest]] - `uses` [INFERRED]
-- [[MCPResultRequest]] - `uses` [INFERRED]
 - [[Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[OpProxyRequest]] - `uses` [INFERRED]
 - [[Path_4]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
+- [[Test File Sandbox Message Gate Suite]] - `references` [EXTRACTED]
 - [[TestAccessControl_2]] - `uses` [INFERRED]
 - [[TestAgentRegistryGroupIdentity]] - `uses` [INFERRED]
 - [[TestAnalyzeRequestForRBAC]] - `uses` [INFERRED]
@@ -140,7 +137,6 @@ tags:
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
 - [[mgr()_2]] - `calls` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[run()_3]] - `calls` [EXTRACTED]
@@ -165,4 +161,4 @@ tags:
 - [[usm()]] - `calls` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Middleware__Session_Isolation

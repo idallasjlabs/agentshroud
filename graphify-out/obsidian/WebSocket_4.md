@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Dashboard"
 location: "L561"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Dashboard
 ---
 
 # WebSocket
@@ -15,4 +15,4 @@ tags:
 - [[activity_websocket()]] - `references` [EXTRACTED]
 - [[egress_websocket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Dashboard

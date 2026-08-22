@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "docs/vault"
+community: "Skill (i-mcpm-auth-reset)"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skill_i-mcpm-auth-reset
 ---
 
 # Verify Authentication
@@ -15,4 +15,4 @@ tags:
 - [[2. Atlassian MCP Authentication Reset_1]] - `contains` [EXTRACTED]
 - [[3. AWS API MCP Authentication Reset_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-auth-reset

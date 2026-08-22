@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "scripts/sync-cve-registry.py"
+community: "Ssh Write File Endpoint"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Ssh_Write_File_Endpoint
 ---
 
 # Validate a structured /ssh/write_file request (host, path, content).          Re
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.validate_write_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Ssh_Write_File_Endpoint

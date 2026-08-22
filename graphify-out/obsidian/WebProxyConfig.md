@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Web Proxy"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Web_Proxy
 ---
 
 # WebProxyConfig
 
 ## Connections
-- [[.__init__()_22]] - `calls` [EXTRACTED]
+- [[.__init__()_23]] - `calls` [EXTRACTED]
 - [[.allowlist_config()]] - `calls` [EXTRACTED]
 - [[.get_domain_settings()]] - `method` [EXTRACTED]
 - [[.is_domain_allowed()]] - `method` [EXTRACTED]
@@ -37,9 +37,9 @@ tags:
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[RateLimiter_1]] - `uses` [INFERRED]
-- [[StreamReader_1]] - `uses` [INFERRED]
 - [[StreamReader_2]] - `uses` [INFERRED]
-- [[StreamWriter_1]] - `uses` [INFERRED]
+- [[StreamReader_3]] - `uses` [INFERRED]
+- [[StreamWriter_2]] - `uses` [INFERRED]
 - [[TestAllowlistMode]] - `uses` [INFERRED]
 - [[TestAuditChain_1]] - `uses` [INFERRED]
 - [[TestContentTypeFiltering]] - `uses` [INFERRED]
@@ -51,7 +51,7 @@ tags:
 - [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting_3]] - `uses` [INFERRED]
+- [[TestRateLimiting_4]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]
@@ -74,10 +74,10 @@ tags:
 - [[_TimeoutReader]] - `uses` [INFERRED]
 - [[_allowlist_proxy()]] - `calls` [EXTRACTED]
 - [[config()_4]] - `calls` [EXTRACTED]
+- [[hc-ping.com must be egress-allowlisted or Hermes dead-man's-switch heartbeat fires permanently]] - `rationale_for` [EXTRACTED]
 - [[http_proxy.py]] - `imports` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
 - [[passthrough_proxy()_1]] - `calls` [EXTRACTED]
 - [[test_blocked_domain_is_tracked_in_recent()]] - `calls` [EXTRACTED]
 - [[test_connect_blocked_domain_returns_403()]] - `calls` [EXTRACTED]
@@ -95,4 +95,4 @@ tags:
 - [[web_config.py]] - `contains` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Web_Proxy

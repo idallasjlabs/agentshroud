@@ -1,18 +1,19 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Llm Provider Setup (setup)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Llm_Provider_Setup_setup
 ---
 
 # VAULT-SHARING-INSTRUCTIONS.md
 
 ## Connections
-- [[1Password Integration (AgentShroud)]] - `describes` [EXTRACTED]
 - [[1Password Vault Sharing Instructions]] - `contains` [EXTRACTED]
+- [[OpenClaw Bot Container]] - `references` [EXTRACTED]
+- [[SETUP_API_KEYS]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Llm_Provider_Setup_setup

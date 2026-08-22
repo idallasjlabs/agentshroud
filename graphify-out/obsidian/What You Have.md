@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "voice_gateway/tts.py"
+community: "Agents"
 location: "L175"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/voice_gateway/ttspy
+  - community/Agents
 ---
 
 # What You Have
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8) CODEX CLI CONFIGURATION]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/voice_gateway/ttspy
+#graphify/document #graphify/EXTRACTED #community/Agents

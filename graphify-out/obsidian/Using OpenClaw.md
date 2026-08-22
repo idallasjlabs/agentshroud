@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Openclaw Setup (setup)"
 location: "L189"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Openclaw_Setup_setup
 ---
 
 # Using OpenClaw
@@ -17,4 +17,4 @@ tags:
 - [[Through Control UI (Port 18789)]] - `contains` [EXTRACTED]
 - [[Via CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Openclaw_Setup_setup

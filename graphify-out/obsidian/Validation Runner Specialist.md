@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Validation Runner.agent (agents)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Validation_Runneragent_agents
 ---
 
 # Validation Runner Specialist
@@ -15,7 +15,7 @@ tags:
 - [[5) ENVIRONMENT SETUP]] - `contains` [EXTRACTED]
 - [[Common Validation Commands]] - `contains` [EXTRACTED]
 - [[Definition of Done_2]] - `contains` [EXTRACTED]
-- [[Error Handling]] - `contains` [EXTRACTED]
+- [[Error Handling_2]] - `contains` [EXTRACTED]
 - [[Remember_2]] - `contains` [EXTRACTED]
 - [[Report Format]] - `contains` [EXTRACTED]
 - [[Repository Context_3]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[Your Responsibilities_1]] - `contains` [EXTRACTED]
 - [[validation-runner.agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Validation_Runneragent_agents
