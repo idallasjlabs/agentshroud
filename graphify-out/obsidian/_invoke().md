@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Gateway Ingest API"
+community: "Cli Coverage"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - community/Cli_Coverage
 ---
 
 # _invoke()
@@ -35,4 +35,4 @@ tags:
 - [[.test_tail_keyboard_interrupt_prints_disconnected()]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Cli_Coverage

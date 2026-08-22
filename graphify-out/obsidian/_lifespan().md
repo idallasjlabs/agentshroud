@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Planning Docs"
+community: "Server (voice_gateway)"
 location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Server_voice_gateway
 ---
 
 # _lifespan()
@@ -17,4 +17,4 @@ tags:
 - [[_get_pipeline() — lazy-inits Kokoro KPipeline singleton]] - `calls` [EXTRACTED]
 - [[server.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Server_voice_gateway

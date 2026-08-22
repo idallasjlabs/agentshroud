@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Group RBAC Roles"
+community: "Telegram Proxy Inbound"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/Telegram_Proxy_Inbound
 ---
 
 # _wrap_response()
@@ -192,6 +192,7 @@ tags:
 - [[.test_owner_pending_command_shows_pending_active_and_revoked()]] - `calls` [EXTRACTED]
 - [[.test_owner_restorecollabs_restores_defaults()]] - `calls` [EXTRACTED]
 - [[.test_owner_revoke_command_cannot_revoke_owner()]] - `calls` [EXTRACTED]
+- [[.test_owner_revoke_command_persists_pause_to_disk()]] - `calls` [EXTRACTED]
 - [[.test_owner_revoke_command_requires_target_user_id()]] - `calls` [EXTRACTED]
 - [[.test_owner_revoke_command_revokes_target_user()]] - `calls` [EXTRACTED]
 - [[.test_owner_start_uses_local_notice_and_does_not_forward()]] - `calls` [EXTRACTED]
@@ -238,9 +239,11 @@ tags:
 - [[.test_unknown_user_message_triggers_owner_approval_workflow()]] - `calls` [EXTRACTED]
 - [[.test_unknown_user_repeated_start_still_gets_pending_notice()]] - `calls` [EXTRACTED]
 - [[.test_unlock_calls_reset_on_lockdown()]] - `calls` [EXTRACTED]
+- [[.test_unlock_clears_manual_pause_without_prior_lockdown_state()]] - `calls` [EXTRACTED]
 - [[.test_unlock_clears_suspended_drop_cooldown()_1]] - `calls` [EXTRACTED]
+- [[.test_unlock_persists_unpause_to_disk()]] - `calls` [EXTRACTED]
 - [[.test_unlock_unknown_user_returns_no_state_notice()]] - `calls` [EXTRACTED]
 - [[.test_within_limit_document_update_passes()]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

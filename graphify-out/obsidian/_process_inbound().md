@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Forward (routes)"
 location: "L386"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Forward_routes
 ---
 
 # _process_inbound()
@@ -16,7 +16,6 @@ tags:
 - [[ForwardRequest_2]] - `references` [EXTRACTED]
 - [[JSONResponse]] - `calls` [INFERRED]
 - [[MiddlewareManager.process_request()]] - `calls` [EXTRACTED]
-- [[MultiAgentRouter.resolve_target()]] - `calls` [EXTRACTED]
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[Request_4]] - `references` [EXTRACTED]
 - [[SecurityPipeline]] - `calls` [EXTRACTED]
@@ -26,4 +25,4 @@ tags:
 - [[forward_content()]] - `calls` [EXTRACTED]
 - [[forward_content_stream()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Forward_routes

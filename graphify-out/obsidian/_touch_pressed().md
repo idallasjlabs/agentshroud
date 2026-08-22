@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Wakeword (main)"
 location: "L172"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Wakeword_main
 ---
 
 # _touch_pressed()
@@ -24,4 +24,4 @@ tags:
 - [[wakeword_ptt_release()]] - `calls` [INFERRED]
 - [[wakeword_tts_stop_request()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Wakeword_main

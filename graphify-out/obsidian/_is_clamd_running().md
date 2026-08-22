@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "docs/vault"
+community: "Scanner Integration"
 location: "L384"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Scanner_Integration
 ---
 
 # _is_clamd_running()
@@ -16,4 +16,4 @@ tags:
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration

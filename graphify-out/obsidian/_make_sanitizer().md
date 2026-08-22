@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Telegram Outbound Proxy Tests"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Outbound_Proxy_Tests
 ---
 
 # _make_sanitizer()
@@ -231,4 +231,4 @@ tags:
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Telegram_Outbound_Proxy_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_replay.py"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "Telegram Replay"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Telegram_Replay
 ---
 
 # _update()
@@ -24,4 +24,4 @@ tags:
 - [[test_sqlite_failure_does_not_raise()]] - `calls` [EXTRACTED]
 - [[test_telegram_replay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/Telegram_Replay

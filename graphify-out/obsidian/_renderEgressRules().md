@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Gateway Test Suite"
-location: "L1482"
+community: "Soc (static)"
+location: "L1496"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Soc_static
 ---
 
 # _renderEgressRules()
@@ -15,4 +15,4 @@ tags:
 - [[_loadEgress()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Soc_static

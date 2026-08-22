@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "Ingest API Main & Models"
 location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Ingest_API_Main__Models
 ---
 
 # _is_imessage_recipient_allowed()
@@ -16,4 +16,4 @@ tags:
 - [[main.py_2]] - `contains` [EXTRACTED]
 - [[mcp_proxy_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/code #graphify/EXTRACTED #community/Ingest_API_Main__Models

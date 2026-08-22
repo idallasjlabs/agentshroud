@@ -1,22 +1,20 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Egress Filter"
 location: "L511"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress_Filter
 ---
 
 # _make_deny_all_filter()
 
 ## Connections
 - [[EgressFilter_1]] - `calls` [EXTRACTED]
-- [[EgressFilter_4]] - `references` [EXTRACTED]
 - [[EgressFilter_2]] - `references` [EXTRACTED]
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
-- [[EgressFilterConfig_1]] - `calls` [INFERRED]
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 - [[test_grant_timed_approval_allows_domain()]] - `calls` [EXTRACTED]
@@ -25,4 +23,4 @@ tags:
 - [[test_grant_timed_approval_expired_falls_back_to_deny()]] - `calls` [EXTRACTED]
 - [[test_grant_timed_approval_invalid_iso_is_ignored()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Egress_Filter

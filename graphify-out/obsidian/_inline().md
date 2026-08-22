@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "chatbot/test_main.py"
+community: "Render Email (hermes)"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/test_mainpy
+  - community/Render_Email_hermes
 ---
 
 # _inline()
@@ -18,4 +18,4 @@ tags:
 - [[render()]] - `calls` [EXTRACTED]
 - [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/test_mainpy
+#graphify/code #graphify/EXTRACTED #community/Render_Email_hermes

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
+source_file: ".agents/skills/i-sav/SKILL.md"
 type: "document"
-community: "Architecture Docs"
+community: "Skill (i-sav)"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Skill_i-sav
 ---
 
 # `05 - Dependencies/[PackageName].md` — ONE PER MAJOR DEPENDENCY
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sav

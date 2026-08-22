@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_image_verifier.py"
 type: "code"
-community: "docs/compliance"
+community: "Image Verifier"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/compliance
+  - community/Image_Verifier
 ---
 
 # _timeout_wait_for()
@@ -15,4 +15,4 @@ tags:
 - [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-_1]] - `rationale_for` [EXTRACTED]
 - [[test_image_verifier.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/compliance
+#graphify/code #graphify/EXTRACTED #community/Image_Verifier

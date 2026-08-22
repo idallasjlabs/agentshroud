@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "gateway/cli"
+community: "Scanner Integration (security)"
 location: "L416"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/cli
+  - community/Scanner_Integration_security
 ---
 
 # _read_compose_text()
@@ -20,4 +20,4 @@ tags:
 - [[_score_registry_security()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/cli
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_security

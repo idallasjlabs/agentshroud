@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Dashboard"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Dashboard
 ---
 
 # _parse_collaborator_log_dirs()
@@ -21,4 +21,4 @@ tags:
 - [[test_dashboard.py]] - `imports` [EXTRACTED]
 - [[test_parse_collaborator_log_dirs_dedupes_and_preserves_order()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Dashboard

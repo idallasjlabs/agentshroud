@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "docs/vault"
+community: "Scanner Integration Coverage"
 location: "L516"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Scanner_Integration_Coverage
 ---
 
 # _stub_summary()
 
 ## Connections
 - [[._patch_all()]] - `calls` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Coverage

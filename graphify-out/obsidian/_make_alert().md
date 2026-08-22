@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_falco_watcher.py"
 type: "code"
-community: "Bot Container Scripts"
+community: "Falco Monitor (security)"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Falco_Monitor_security
 ---
 
 # _make_alert()
@@ -19,4 +19,4 @@ tags:
 - [[test_no_progressive_lockdown_configured()]] - `calls` [EXTRACTED]
 - [[test_warning_alert_not_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/Falco_Monitor_security

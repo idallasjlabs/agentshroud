@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Community 1513"
+community: "Soc Models"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1513
+  - community/Soc_Models
 ---
 
 # _role_enum()
@@ -16,4 +16,4 @@ tags:
 - [[UserRole]] - `references` [EXTRACTED]
 - [[contributors.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1513
+#graphify/code #graphify/EXTRACTED #community/Soc_Models

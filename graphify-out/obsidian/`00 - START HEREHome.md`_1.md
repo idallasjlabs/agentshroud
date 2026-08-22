@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sav/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-sav)"
 location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-sav
 ---
 
 # `00 - START HERE/Home.md`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sav

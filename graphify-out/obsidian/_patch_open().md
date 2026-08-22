@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Soc Services Coverage"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Soc_Services_Coverage
 ---
 
 # _patch_open()
@@ -24,4 +24,4 @@ tags:
 - [[Intercept builtins.open for specific paths; delegate everything else.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Soc_Services_Coverage

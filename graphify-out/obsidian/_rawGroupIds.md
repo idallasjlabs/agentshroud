@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Gateway Test Suite"
-location: "L579"
+community: "Apply Patches (openclaw)"
+location: "L586"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Apply_Patches_openclaw
 ---
 
 # _rawGroupIds
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[apply-patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Apply_Patches_openclaw

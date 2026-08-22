@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/crashwatch.sh"
 type: "code"
-community: "browser-extension/README.md"
+community: "Start (hermes)"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/READMEmd
+  - community/Start_hermes
 ---
 
 # _log()
@@ -15,4 +15,4 @@ tags:
 - [[crashwatch.sh]] - `defines` [EXTRACTED]
 - [[crashwatch.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Start_hermes

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Gateway Test Suite"
-location: "L925"
+community: "Soc (static)"
+location: "L926"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Soc_static
 ---
 
 # _renderGroups()
@@ -15,4 +15,4 @@ tags:
 - [[_loadContributors()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Soc_static

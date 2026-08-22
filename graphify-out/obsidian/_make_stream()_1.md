@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Http Proxy Coverage"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Http_Proxy_Coverage
 ---
 
 # _make_stream()
 
 ## Connections
-- [[StreamReader_2]] - `references` [EXTRACTED]
+- [[StreamReader_3]] - `references` [EXTRACTED]
 - [[test_bypass_logging_failure_does_not_block_tunnel()]] - `calls` [EXTRACTED]
 - [[test_bypass_with_egress_filter_lacking_approval_queue()]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[test_tunnel_retries_then_succeeds()]] - `calls` [EXTRACTED]
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Http_Proxy_Coverage

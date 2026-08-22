@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "skills/openclaw"
-location: "L2697"
+community: "Router (soc)"
+location: "L2735"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Router_soc
 ---
 
 # _minimal_dashboard_html()
@@ -16,4 +16,4 @@ tags:
 - [[router.py_1]] - `contains` [EXTRACTED]
 - [[soc_dashboard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skills/openclaw
+#graphify/code #graphify/EXTRACTED #community/Router_soc

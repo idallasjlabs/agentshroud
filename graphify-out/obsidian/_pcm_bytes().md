@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Voice Gateway"
 location: "L808"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Voice_Gateway
 ---
 
 # _pcm_bytes()
@@ -37,4 +37,4 @@ tags:
 - [[test_ws_volume_query_intercepted_returns_tracked_level()]] - `calls` [EXTRACTED]
 - [[test_ws_volume_query_unknown_state_intercepted()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway

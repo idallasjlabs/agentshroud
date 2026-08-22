@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Daily Cve Report"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Daily_Cve_Report
 ---
 
 # _make_report()
@@ -17,6 +17,7 @@ tags:
 - [[.test_contains_header()]] - `calls` [EXTRACTED]
 - [[.test_contains_package_names()]] - `calls` [EXTRACTED]
 - [[.test_contains_severity_counts()]] - `calls` [EXTRACTED]
+- [[.test_failed_send_does_not_write_stamp_or_mark_sent_date()]] - `calls` [EXTRACTED]
 - [[.test_fixed_version_shown()]] - `calls` [EXTRACTED]
 - [[.test_returns_summary_without_token()]] - `calls` [EXTRACTED]
 - [[.test_sends_telegram_on_success()]] - `calls` [EXTRACTED]
@@ -27,4 +28,4 @@ tags:
 - [[Build a minimal parsed Trivy report.]] - `rationale_for` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report

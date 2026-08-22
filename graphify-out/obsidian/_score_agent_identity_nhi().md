@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "gateway/cli"
+community: "Scanner Integration (security)"
 location: "L1868"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/cli
+  - community/Scanner_Integration_security
 ---
 
 # _score_agent_identity_nhi()
@@ -17,4 +17,4 @@ tags:
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/cli
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_security

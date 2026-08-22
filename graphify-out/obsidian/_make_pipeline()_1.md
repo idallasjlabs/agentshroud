@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Data Exfil Volume Guard"
 location: "L228"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Data_Exfil_Volume_Guard
 ---
 
 # _make_pipeline()
@@ -19,4 +19,4 @@ tags:
 - [[test_pipeline_blocks_and_downstream_not_reached()]] - `calls` [EXTRACTED]
 - [[test_pipeline_fail_closed_for_non_owner_on_error()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Data_Exfil_Volume_Guard

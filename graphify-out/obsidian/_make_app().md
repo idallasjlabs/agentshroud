@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Security Docs"
+community: "Killswitch Monitor & Observatory Mode"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Killswitch_Monitor__Observatory_Mode
 ---
 
 # _make_app()
@@ -18,4 +18,4 @@ tags:
 - [[client()_11]] - `calls` [EXTRACTED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode

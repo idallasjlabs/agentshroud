@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Tool Chain Analyzer"
+community: "SOC Services"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain_Analyzer
+  - community/SOC_Services
 ---
 
 # _known_services()
@@ -17,4 +17,4 @@ tags:
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer
+#graphify/code #graphify/EXTRACTED #community/SOC_Services

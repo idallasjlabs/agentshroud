@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Approval Queue Tests"
+community: "Middleware & Session Isolation"
 location: "L827"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/Middleware__Session_Isolation
 ---
 
 # _scan_result()
@@ -18,4 +18,4 @@ tags:
 - [[.test_warn_action_returns_sanitized()]] - `calls` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/code #graphify/EXTRACTED #community/Middleware__Session_Isolation

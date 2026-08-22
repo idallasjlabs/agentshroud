@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Audit & Watchtower Tests"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # _make_pii_sanitizer()
@@ -19,4 +19,4 @@ tags:
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

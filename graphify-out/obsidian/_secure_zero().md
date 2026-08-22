@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Encrypted Store (security)"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Encrypted_Store_security
 ---
 
 # _secure_zero()
@@ -22,4 +22,4 @@ tags:
 - [[encrypted_store.py]] - `contains` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Encrypted_Store_security

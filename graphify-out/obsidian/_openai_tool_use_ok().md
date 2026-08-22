@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Resource Guard & Local Model Parity"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Resource_Guard__Local_Model_Parity
 ---
 
 # _openai_tool_use_ok()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity

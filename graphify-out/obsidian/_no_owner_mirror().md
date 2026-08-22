@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Group RBAC Roles"
+community: "Telegram Proxy Inbound"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/Telegram_Proxy_Inbound
 ---
 
 # _no_owner_mirror()
@@ -15,4 +15,4 @@ tags:
 - [[Stub the fire-and-forget owner activity mirror.      The mirror runs via asyncio]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

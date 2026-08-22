@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "Egress Domain Allowlist"
+community: "Mcp Policy"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Domain_Allowlist
+  - community/Mcp_Policy
 ---
 
 # _write()
@@ -22,4 +22,4 @@ tags:
 - [[Path_32]] - `references` [EXTRACTED]
 - [[test_mcp_policy_default_failclosed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist
+#graphify/code #graphify/EXTRACTED #community/Mcp_Policy

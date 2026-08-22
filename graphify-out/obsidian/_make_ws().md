@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "Soc Realtime Coverage"
 location: "L782"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Soc_Realtime_Coverage
 ---
 
 # _make_ws()
@@ -21,4 +21,4 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/Soc_Realtime_Coverage

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Enhanced Approval Queue"
-location: "L1986"
+community: "SOC Router (Collaborator Mgmt)"
+location: "L2024"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/SOC_Router_Collaborator_Mgmt
 ---
 
 # _launch_scan_background()
@@ -16,4 +16,4 @@ tags:
 - [[router.py_1]] - `contains` [EXTRACTED]
 - [[run_scanner()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt

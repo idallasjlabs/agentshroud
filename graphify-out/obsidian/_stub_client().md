@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Gateway Ingest API"
+community: "Cli Coverage"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - community/Cli_Coverage
 ---
 
 # _stub_client()
@@ -39,4 +39,4 @@ tags:
 - [[Replace SCLClient in main with a MagicMock factory; return the instance.]] - `rationale_for` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Cli_Coverage

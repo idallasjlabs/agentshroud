@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Security Docs"
+community: "Op Proxy"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Op_Proxy
 ---
 
 # _is_op_reference_allowed()
@@ -25,4 +25,4 @@ tags:
 - [[op_proxy()]] - `calls` [EXTRACTED]
 - [[test_op_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Op_Proxy

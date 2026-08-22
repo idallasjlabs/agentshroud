@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Dns Canvas Coverage"
 location: "L553"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Dns_Canvas_Coverage
 ---
 
 # _http_scope()
@@ -18,4 +18,4 @@ tags:
 - [[.test_upstream_failure_returns_502()]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Dns_Canvas_Coverage

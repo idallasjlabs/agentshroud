@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "RBAC & Ingest Middleware"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/RBAC__Ingest_Middleware
 ---
 
 # _verify_bearer()
@@ -20,4 +20,4 @@ tags:
 - [[auth.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

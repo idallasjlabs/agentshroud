@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Group RBAC Roles"
-location: "L8715"
+community: "Telegram Proxy Inbound"
+location: "L8816"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/Telegram_Proxy_Inbound
 ---
 
 # _make_group_update()
@@ -30,4 +30,4 @@ tags:
 - [[Build a Telegram group message update.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

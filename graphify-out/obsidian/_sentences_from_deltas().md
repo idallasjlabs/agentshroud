@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Forward Stream"
 location: "L779"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Forward_Stream
 ---
 
 # _sentences_from_deltas()
@@ -20,4 +20,4 @@ tags:
 - [[test_sentences_from_deltas_single_delta_full_sentence()]] - `calls` [EXTRACTED]
 - [[test_sentences_from_deltas_splits_on_boundaries()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Forward_Stream

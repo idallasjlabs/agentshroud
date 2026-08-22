@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "docs/vault"
+community: "Telegram Egress Notify (proxy)"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Telegram_Egress_Notify_proxy
 ---
 
 # _is_stale_edit_error()
@@ -19,4 +19,4 @@ tags:
 - [[test_egress_callback_stale.py]] - `imports` [EXTRACTED]
 - [[test_stale_detectors()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Telegram_Egress_Notify_proxy

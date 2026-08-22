@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 1513"
+community: "Soc Models"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1513
+  - community/Soc_Models
 ---
 
 # _now_iso()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[models.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1513
+#graphify/code #graphify/EXTRACTED #community/Soc_Models

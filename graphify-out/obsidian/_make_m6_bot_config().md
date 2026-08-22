@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Voice Gateway Tests"
+community: "Soc Bots"
 location: "L810"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Soc_Bots
 ---
 
 # _make_m6_bot_config()
@@ -17,4 +17,4 @@ tags:
 - [[.test_single_bot_returns_list_of_one()]] - `calls` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/code #graphify/EXTRACTED #community/Soc_Bots

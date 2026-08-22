@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "gateway/cli"
+community: "Scanner Integration (security)"
 location: "L1101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/cli
+  - community/Scanner_Integration_security
 ---
 
 # _score_network_segmentation()
@@ -22,4 +22,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/cli
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_security

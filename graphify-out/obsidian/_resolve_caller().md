@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "Soc Realtime Coverage"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Soc_Realtime_Coverage
 ---
 
 # _resolve_caller()
@@ -20,6 +20,7 @@ tags:
 - [[.test_x_soc_token_header_valid()]] - `calls` [EXTRACTED]
 - [[FastAPI dependency resolve Bearercookie token → user_id → role.]] - `rationale_for` [EXTRACTED]
 - [[SCLCaller]] - `references` [EXTRACTED]
+- [[TestResolveCaller]] - `calls` [EXTRACTED]
 - [[_get_config_token()]] - `calls` [EXTRACTED]
 - [[_get_rbac_manager()]] - `calls` [EXTRACTED]
 - [[_verify_bearer()]] - `calls` [EXTRACTED]
@@ -27,4 +28,4 @@ tags:
 - [[auth.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/Soc_Realtime_Coverage

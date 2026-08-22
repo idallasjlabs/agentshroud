@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "skills/openclaw"
+community: "Scorecard Scoring"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Scorecard_Scoring
 ---
 
 # _mock_empty_dir()
@@ -16,4 +16,4 @@ tags:
 - [[.test_three_zero_failures_no_report_on_disk()]] - `calls` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skills/openclaw
+#graphify/code #graphify/EXTRACTED #community/Scorecard_Scoring

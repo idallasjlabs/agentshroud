@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "Security Docs"
+community: "Stt (voice_gateway)"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Stt_voice_gateway
 ---
 
 # _resolve_model_size()
@@ -16,4 +16,4 @@ tags:
 - [[select_model_size()]] - `calls` [EXTRACTED]
 - [[stt.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Stt_voice_gateway

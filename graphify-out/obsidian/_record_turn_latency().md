@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "voice_gateway/server.py"
+community: "Voice Latency Guard"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_gateway/serverpy
+  - community/Voice_Latency_Guard
 ---
 
 # _record_turn_latency()
@@ -23,4 +23,4 @@ tags:
 - [[test_record_turn_latency_over_threshold_is_outlier()]] - `calls` [EXTRACTED]
 - [[test_voice_latency_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/serverpy
+#graphify/code #graphify/EXTRACTED #community/Voice_Latency_Guard

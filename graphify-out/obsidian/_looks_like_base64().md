@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Url Analyzer"
 location: "L354"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Url_Analyzer
 ---
 
 # _looks_like_base64()
@@ -21,4 +21,4 @@ tags:
 - [[test_url_analyzer.py]] - `imports` [EXTRACTED]
 - [[url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Url_Analyzer

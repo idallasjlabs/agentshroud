@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Web Api Coverage"
 location: "L509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Web_Api_Coverage
 ---
 
 # _resolve_bot_container()
@@ -22,4 +22,4 @@ tags:
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 - [[upgrade_bot()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Web_Api_Coverage

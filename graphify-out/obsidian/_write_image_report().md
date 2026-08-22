@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "docs/vault"
+community: "Scanner Integration"
 location: "L1037"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Scanner_Integration
 ---
 
 # _write_image_report()
@@ -19,9 +19,9 @@ tags:
 - [[.test_each_entry_has_image_key()]] - `calls` [EXTRACTED]
 - [[.test_ignores_non_image_prefixed_files()]] - `calls` [EXTRACTED]
 - [[.test_returns_one_entry_per_report_file()]] - `calls` [EXTRACTED]
-- [[Any_69]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[Path_36]] - `references` [EXTRACTED]
 - [[Write a fake image report file in the expected filename format.]] - `rationale_for` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration

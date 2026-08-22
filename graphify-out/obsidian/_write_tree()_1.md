@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Skills Manifest Sync"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skills_Manifest_Sync
 ---
 
 # _write_tree()
@@ -41,4 +41,4 @@ tags:
 - [[Write {relative_path content} under root.]] - `rationale_for` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Skills_Manifest_Sync

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Http Proxy"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Http_Proxy
 ---
 
 # _make_stream()
@@ -25,4 +25,4 @@ tags:
 - [[test_system_bypass_domain_logs_external_decision()]] - `calls` [EXTRACTED]
 - [[test_system_bypass_without_egress_filter()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Http_Proxy

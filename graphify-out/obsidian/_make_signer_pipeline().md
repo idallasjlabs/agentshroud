@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Pipeline Unit"
 location: "L491"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Pipeline_Unit
 ---
 
 # _make_signer_pipeline()
@@ -20,4 +20,4 @@ tags:
 - [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/code #graphify/EXTRACTED #community/Pipeline_Unit

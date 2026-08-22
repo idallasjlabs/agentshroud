@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "gateway/cli"
+community: "Scanner Integration (security)"
 location: "L1297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/cli
+  - community/Scanner_Integration_security
 ---
 
 # _score_access_control_authorization()
@@ -17,6 +17,5 @@ tags:
 - [[_app_state_has()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
-- [[test_scorecard_integrity.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/cli
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_security

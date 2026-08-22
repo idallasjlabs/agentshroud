@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Gateway Test Suite"
-location: "L364"
+community: "Apply Patches (openclaw)"
+location: "L371"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Apply_Patches_openclaw
 ---
 
 # _resolveCollabToolConfig()
@@ -15,4 +15,4 @@ tags:
 - [[_resolveCollabDenyList()]] - `calls` [EXTRACTED]
 - [[apply-patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Apply_Patches_openclaw

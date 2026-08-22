@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Llm Quota Detector"
 location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Llm_Quota_Detector
 ---
 
 # _is_google_quota()
@@ -15,4 +15,4 @@ tags:
 - [[is_quota_exhausted()]] - `calls` [EXTRACTED]
 - [[llm_quota_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Llm_Quota_Detector

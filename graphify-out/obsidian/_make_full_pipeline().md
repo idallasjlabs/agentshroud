@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Redteam Probes"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Redteam_Probes
 ---
 
 # _make_full_pipeline()
@@ -33,4 +33,4 @@ tags:
 - [[test_session_isolation()]] - `calls` [EXTRACTED]
 - [[test_trust_escalation_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Redteam_Probes

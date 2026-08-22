@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "skills/openclaw"
+community: "Intel Endpoint"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Intel_Endpoint
 ---
 
 # _inject_fetcher()
@@ -23,4 +23,4 @@ tags:
 - [[_FakeFetcher_1]] - `calls` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skills/openclaw
+#graphify/code #graphify/EXTRACTED #community/Intel_Endpoint

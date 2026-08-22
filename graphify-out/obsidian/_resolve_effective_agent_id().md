@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "Ingest API Main & Models"
 location: "L676"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Ingest_API_Main__Models
 ---
 
 # _resolve_effective_agent_id()
@@ -19,4 +19,4 @@ tags:
 - [[mcp_proxy_endpoint()]] - `calls` [EXTRACTED]
 - [[mcp_result_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/code #graphify/EXTRACTED #community/Ingest_API_Main__Models

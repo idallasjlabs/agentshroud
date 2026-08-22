@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Group Workspace Isolation"
+community: "Group Config & Collaborator Responses"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Workspace_Isolation
+  - community/Group_Config__Collaborator_Responses
 ---
 
 # _ipv4_first_getaddrinfo()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[telegram_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation
+#graphify/code #graphify/EXTRACTED #community/Group_Config__Collaborator_Responses

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Voice Gateway Tests"
+community: "Soc Bots"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Soc_Bots
 ---
 
 # _make_owner_caller()
@@ -42,4 +42,4 @@ tags:
 - [[SCLCaller_2]] - `references` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/code #graphify/EXTRACTED #community/Soc_Bots

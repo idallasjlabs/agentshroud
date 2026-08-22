@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Ws Client (main)"
 location: "L520"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Ws_Client_main
 ---
 
 # _send_status_beacon()
@@ -18,4 +18,4 @@ tags:
 - [[ws_client_handle_t]] - `references` [EXTRACTED]
 - [[ws_client_send_log()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Ws_Client_main

@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Planning Docs"
+community: "Tts (voice_gateway)"
 location: "L474-500"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Tts_voice_gateway
 ---
 
 # _parse_volume_command() — parses spoken 'set volume X%' command
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[voice_endpoint() — voice WebSocket handler (IDLE→LISTENING→THINKING→SPEAKING state machine)]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Tts_voice_gateway

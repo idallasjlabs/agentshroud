@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "code"
-community: "Planning Docs"
+community: "Generate Cve Page (scripts)"
 location: "L367"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Generate_Cve_Page_scripts
 ---
 
 # _resolve_registries()
@@ -18,4 +18,4 @@ tags:
 - [[get_agent_cve_summary()]] - `calls` [EXTRACTED]
 - [[list_cve_agents()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Generate_Cve_Page_scripts

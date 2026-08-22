@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "A2a Integration"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/A2a_Integration
 ---
 
 # _jsonrpc()
@@ -19,4 +19,4 @@ tags:
 - [[test_full_round_trip_denied_request_never_reaches_the_peer()]] - `calls` [EXTRACTED]
 - [[test_legitimate_callback_url_is_forwarded_over_real_http()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/A2a_Integration
