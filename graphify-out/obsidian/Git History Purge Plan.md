@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/history-purge-plan.md"
 type: "document"
-community: "docs/vault"
+community: "Security Verification (security)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Verification_security
 ---
 
 # Git History Purge Plan
@@ -20,4 +20,4 @@ tags:
 - [[Secret Rotation Checklist]] - `contains` [EXTRACTED]
 - [[history-purge-plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Security_Verification_security

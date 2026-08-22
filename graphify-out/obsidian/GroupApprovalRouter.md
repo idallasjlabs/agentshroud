@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Group Approval Routing"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Group_Approval_Routing
 ---
 
 # GroupApprovalRouter
 
 ## Connections
-- [[.__init__()_3]] - `method` [EXTRACTED]
+- [[.__init__()_4]] - `method` [EXTRACTED]
 - [[._build_group_reply_text()]] - `method` [EXTRACTED]
 - [[._build_owner_dm_text()]] - `method` [EXTRACTED]
 - [[._default_send()]] - `method` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[router_with_sent()]] - `calls` [EXTRACTED]
 - [[test_group_approval_routing.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Group_Approval_Routing

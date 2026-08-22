@@ -1,12 +1,12 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Quickstart (docker)"
 location: "L288"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Quickstart_docker
 ---
 
 # Graceful Shutdown
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Stop the Stack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Quickstart_docker

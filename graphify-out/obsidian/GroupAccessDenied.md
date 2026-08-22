@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Group Workspace Manager"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Group_Workspace_Manager
 ---
 
 # GroupAccessDenied
@@ -28,4 +28,4 @@ tags:
 - [[group_workspace.py]] - `contains` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Group_Workspace_Manager

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-hermes)"
 tags:
   - graphify/document
   - graphify/AMBIGUOUS
-  - community/Bot_Skill_Config
+  - community/Skill_i-hermes
 ---
 
 # Hermes — Reference Verifier Skill
@@ -14,4 +14,4 @@ tags:
 - [[Podcast Production Pipeline (multi-agent)]] - `conceptually_related_to` [EXTRACTED]
 - [[i-hermes README (Podcast Production Orchestrator)]] - `references` [AMBIGUOUS]
 
-#graphify/document #graphify/AMBIGUOUS #community/Bot_Skill_Config
+#graphify/document #graphify/AMBIGUOUS #community/Skill_i-hermes

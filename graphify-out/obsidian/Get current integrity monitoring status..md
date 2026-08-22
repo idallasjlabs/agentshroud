@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: ".github/ISSUE_TEMPLATE"
+community: "Memory Lifecycle & Integrity"
 location: "L343"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/github/ISSUE_TEMPLATE
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # Get current integrity monitoring status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_integrity_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/github/ISSUE_TEMPLATE
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

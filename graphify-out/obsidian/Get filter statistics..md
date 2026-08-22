@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Outbound Filter"
 location: "L472"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Outbound_Filter
 ---
 
 # Get filter statistics.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_stats()_17]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Outbound_Filter

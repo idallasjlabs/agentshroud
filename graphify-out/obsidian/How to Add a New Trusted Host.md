@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "Architecture Docs"
+community: "Ssh Configuration (docs)"
 location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Ssh_Configuration_docs
 ---
 
 # How to Add a New Trusted Host
@@ -19,4 +19,4 @@ tags:
 - [[Step 4 Pre-populate known_hosts (recommended)]] - `contains` [EXTRACTED]
 - [[Step 5 Restart the gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Ssh_Configuration_docs

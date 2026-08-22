@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
+source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (i-pr)"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-pr
 ---
 
 # Header
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Content Requirements_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-pr

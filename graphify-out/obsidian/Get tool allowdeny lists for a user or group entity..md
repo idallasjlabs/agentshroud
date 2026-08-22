@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Enhanced Approval Queue"
-location: "L1516"
+community: "SOC Router (Collaborator Mgmt)"
+location: "L1554"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/SOC_Router_Collaborator_Mgmt
 ---
 
 # Get tool allow/deny lists for a user or group entity.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_tool_acl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt

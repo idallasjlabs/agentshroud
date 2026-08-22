@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
+source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-qa)"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-qa
 ---
 
 # General Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-qa

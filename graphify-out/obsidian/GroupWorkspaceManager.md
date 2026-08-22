@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Group Workspace Manager"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Group_Workspace_Manager
 ---
 
 # GroupWorkspaceManager
 
 ## Connections
-- [[.__init__()_81]] - `method` [EXTRACTED]
+- [[.__init__()_84]] - `method` [EXTRACTED]
 - [[._group_workspace_manager()]] - `calls` [EXTRACTED]
 - [[._is_owner()_1]] - `method` [EXTRACTED]
 - [[._require_memory()]] - `method` [EXTRACTED]
@@ -55,4 +55,4 @@ tags:
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Manager

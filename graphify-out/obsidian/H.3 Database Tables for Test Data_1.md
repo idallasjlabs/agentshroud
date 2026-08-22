@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
+source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-qa)"
 location: "L283"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-qa
 ---
 
 # H.3 Database Tables for Test Data
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[H. Service Control for Production Testing_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-qa

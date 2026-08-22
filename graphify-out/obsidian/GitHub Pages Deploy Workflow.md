@@ -1,13 +1,16 @@
 ---
 source_file: ".github/workflows/pages.yml"
-type: "code"
-community: "voice_gateway/tts.py"
+type: "document"
+community: "Readme"
 tags:
-  - graphify/code
-  - graphify/EXTRACTED
-  - community/voice_gateway/ttspy
+  - graphify/document
+  - graphify/INFERRED
+  - community/Readme
 ---
 
 # GitHub Pages Deploy Workflow
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/ttspy
+## Connections
+- [[AgentShroud™ README]] - `conceptually_related_to` [INFERRED]
+
+#graphify/document #graphify/INFERRED #community/Readme

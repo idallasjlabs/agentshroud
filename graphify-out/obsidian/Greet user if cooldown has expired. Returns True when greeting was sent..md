@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_greeter.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Collaborator Greeter"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Collaborator_Greeter
 ---
 
 # Greet user if cooldown has expired. Returns True when greeting was sent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.maybe_greet()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Greeter

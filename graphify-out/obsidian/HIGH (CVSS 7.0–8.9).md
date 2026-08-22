@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "docs/project"
+community: "Cve Mitigation Matrix (security)"
 location: "L271"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Cve_Mitigation_Matrix_security
 ---
 
 # HIGH (CVSS 7.0–8.9)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tier 1 — Hand-Curated CVEs (AgentShroud-Specific Mitigations)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/Cve_Mitigation_Matrix_security

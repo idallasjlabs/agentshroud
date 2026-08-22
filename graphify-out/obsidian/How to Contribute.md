@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "docs/vault"
+community: "Public Info (collaborator-workspace)"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Public_Info_collaborator-workspace
 ---
 
 # How to Contribute
@@ -17,4 +17,4 @@ tags:
 - [[Documentation & Ideas]] - `contains` [EXTRACTED]
 - [[Red Team Testing (Most Valuable!)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Public_Info_collaborator-workspace

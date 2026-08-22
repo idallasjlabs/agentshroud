@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
-location: "L156"
+community: "Tool ACL & Group RBAC"
+location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Tool_ACL__Group_RBAC
 ---
 
 # Get all users with a specific role.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_users_by_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Tool_ACL__Group_RBAC

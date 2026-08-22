@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L283"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # Get set of currently active users.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_active_users()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

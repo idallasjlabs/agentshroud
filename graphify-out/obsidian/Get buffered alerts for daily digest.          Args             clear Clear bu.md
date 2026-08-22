@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Alert Dispatcher (security)"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Alert_Dispatcher_security
 ---
 
 # Get buffered alerts for daily digest.          Args:             clear: Clear bu
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_digest()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Alert_Dispatcher_security

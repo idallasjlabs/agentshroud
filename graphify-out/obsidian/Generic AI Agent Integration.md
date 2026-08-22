@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "docs/vault"
+community: "Integration Guide (api)"
 location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Integration_Guide_api
 ---
 
 # Generic AI Agent Integration
@@ -15,4 +15,4 @@ tags:
 - [[HTTP Proxy Mode]] - `contains` [EXTRACTED]
 - [[Integration Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide_api

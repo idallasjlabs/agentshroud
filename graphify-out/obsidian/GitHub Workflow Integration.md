@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "docs/vault"
+community: "Skills Guide (i-reference)"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skills_Guide_i-reference
 ---
 
 # GitHub Workflow Integration
@@ -19,4 +19,4 @@ tags:
 - [[5. Pre-Merge]] - `contains` [EXTRACTED]
 - [[GSDE&G Skills Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skills_Guide_i-reference

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Http Proxy Coverage"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Http_Proxy_Coverage
 ---
 
 # HTTPConnectProxy
 
 ## Connections
-- [[.__init__()_22]] - `method` [EXTRACTED]
+- [[.__init__()_23]] - `method` [EXTRACTED]
 - [[._agent_id_for_peer()]] - `method` [EXTRACTED]
 - [[._clamav_scan_bytes()]] - `method` [EXTRACTED]
 - [[._handle_client()]] - `method` [EXTRACTED]
@@ -24,7 +24,12 @@ tags:
 - [[.stop()_1]] - `method` [EXTRACTED]
 - [[Asyncio HTTP CONNECT proxy server.      Intercepts CONNECT tunnel requests, vali]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy_1]] - `uses` [INFERRED]
-- [[StreamReader_2]] - `uses` [INFERRED]
+- [[HTTPForwarder]] - `conceptually_related_to` [INFERRED]
+- [[PortManager]] - `conceptually_related_to` [AMBIGUOUS]
+- [[SecurityPipeline]] - `semantically_similar_to` [INFERRED]
+- [[SidecarScanner]] - `conceptually_related_to` [EXTRACTED]
+- [[StreamReader_3]] - `uses` [INFERRED]
+- [[TestBenchmarkRegression]] - `references` [EXTRACTED]
 - [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[_CloseRaisesTargetWriter]] - `uses` [INFERRED]
@@ -41,7 +46,6 @@ tags:
 - [[http_proxy.py]] - `contains` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_agent_id_for_peer_cached_after_first_lookup()]] - `calls` [EXTRACTED]
 - [[test_agent_id_for_peer_forward_dns_hit()]] - `calls` [EXTRACTED]
@@ -102,4 +106,4 @@ tags:
 - [[test_tunnel_retries_then_succeeds()]] - `calls` [EXTRACTED]
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Http_Proxy_Coverage

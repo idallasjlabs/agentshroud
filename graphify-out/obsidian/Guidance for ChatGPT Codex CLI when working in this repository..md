@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "voice_gateway/tts.py"
+community: "Agents"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/voice_gateway/ttspy
+  - community/Agents
 ---
 
 # Guidance for ChatGPT Codex CLI when working in this repository.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AGENTS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/voice_gateway/ttspy
+#graphify/document #graphify/EXTRACTED #community/Agents

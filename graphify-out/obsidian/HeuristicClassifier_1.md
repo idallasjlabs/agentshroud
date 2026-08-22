@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Adversarial Injection"
 location: "L228"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Adversarial_Injection
 ---
 
 # HeuristicClassifier
 
 ## Connections
-- [[.setup_method()_6]] - `calls` [INFERRED]
 - [[.test_base64_payload_normalized()]] - `calls` [EXTRACTED]
 - [[.test_classic_override_detection_rate()]] - `calls` [EXTRACTED]
 - [[.test_classic_payloads_individually()]] - `calls` [EXTRACTED]
@@ -28,6 +27,5 @@ tags:
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[_any_detector_fires()]] - `references` [EXTRACTED]
 - [[_heuristic_detects()]] - `references` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Adversarial_Injection

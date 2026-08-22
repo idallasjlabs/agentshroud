@@ -1,12 +1,12 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Quickstart (docker)"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Quickstart_docker
 ---
 
 # Hermes Setup (full profile only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Launch the Stack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Quickstart_docker

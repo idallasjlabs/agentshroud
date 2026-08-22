@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: ".github/ISSUE_TEMPLATE"
+community: "Memory Lifecycle & Integrity"
 location: "L326"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/github/ISSUE_TEMPLATE
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # Get alerts from the last N hours.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_recent_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/github/ISSUE_TEMPLATE
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

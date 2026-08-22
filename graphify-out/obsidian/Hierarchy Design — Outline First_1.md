@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: "docs/project"
+community: "Skill (i-mm)"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Skill_i-mm
 ---
 
 # Hierarchy Design — Outline First
@@ -16,4 +16,4 @@ tags:
 - [[Outline Template_1]] - `contains` [EXTRACTED]
 - [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mm

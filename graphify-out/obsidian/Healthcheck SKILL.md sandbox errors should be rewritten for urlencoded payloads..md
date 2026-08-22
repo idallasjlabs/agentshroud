@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Telegram Outbound Proxy Tests"
 location: "L1744"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Outbound_Proxy_Tests
 ---
 
 # Healthcheck SKILL.md sandbox errors should be rewritten for urlencoded payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_healthcheck_skill_sandbox_error_is_rewritten_for_form_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Outbound_Proxy_Tests

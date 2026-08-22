@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "docs/agentshroud-knowledge.md"
+community: "Postmortem (ISSUE_TEMPLATE)"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/agentshroud-knowledgemd
+  - community/Postmortem_ISSUE_TEMPLATE
 ---
 
 # Guidance for Claude Code (claude.ai/code) when working in this repository.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CLAUDE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/agentshroud-knowledgemd
+#graphify/document #graphify/EXTRACTED #community/Postmortem_ISSUE_TEMPLATE

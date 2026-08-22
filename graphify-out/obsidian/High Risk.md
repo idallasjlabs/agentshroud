@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24.md"
 type: "document"
-community: "Bot Container Scripts"
+community: "Phase Review 2026 02 (reviews)"
 location: "L167"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Phase_Review_2026_02_reviews
 ---
 
 # **High Risk**
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4. Risks & Gaps_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/document #graphify/EXTRACTED #community/Phase_Review_2026_02_reviews

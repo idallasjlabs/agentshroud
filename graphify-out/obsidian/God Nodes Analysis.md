@@ -1,17 +1,16 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Gateway Test Suite"
+community: "Skill (graphify)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_graphify
 ---
 
 # God Nodes Analysis
 
 ## Connections
-- [[graphify SKILL]] - `implements` [EXTRACTED]
 - [[graphify.serve MCP stdio Server]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/Skill_graphify

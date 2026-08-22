@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r2.md"
 type: "document"
-community: "docs/operations"
+community: "Phase Review 2026 03 (reviews)"
 location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Phase_Review_2026_03_reviews
 ---
 
 # I4: `AppState` class missing dynamically-set attributes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🟢 INFO (nice to have)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Phase_Review_2026_03_reviews

@@ -1,17 +1,18 @@
 ---
 source_file: "skills/openclaw/gemini/SKILL.md"
 type: "document"
-community: "Community 1442"
+community: "Skill (coding-agent)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1442
+  - community/Skill_coding-agent
 ---
 
 # Gemini CLI
 
 ## Connections
-- [[SKILL_142]] - `contains` [EXTRACTED]
+- [[OpenClaw Dev Workflow (ODEV)]] - `references` [EXTRACTED]
+- [[SKILL_206]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1442
+#graphify/document #graphify/EXTRACTED #community/Skill_coding-agent

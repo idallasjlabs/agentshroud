@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Egress & RBAC Security Core"
+community: "Security Audit & Watchtower Tests"
 location: "L466"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Get summary of detected attacks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_attack_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

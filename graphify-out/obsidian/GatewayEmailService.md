@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gateway Email Service"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Email_Service
 ---
 
 # GatewayEmailService
 
 ## Connections
-- [[.__init__()_10]] - `method` [EXTRACTED]
+- [[.__init__()_11]] - `method` [EXTRACTED]
 - [[.build_message()]] - `method` [EXTRACTED]
 - [[.send()]] - `method` [EXTRACTED]
 - [[.sender()]] - `method` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[test_gateway_email_service.py]] - `imports` [EXTRACTED]
 - [[test_sender_property()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Email_Service

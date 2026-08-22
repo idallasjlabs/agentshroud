@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "docs/diagrams"
+community: "Hermes Setup (setup)"
 location: "L164"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Hermes_Setup_setup
 ---
 
 # HCI (Hermes Control Interface)
@@ -18,4 +18,4 @@ tags:
 - [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
 - [[Starting the HCI Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/diagrams
+#graphify/document #graphify/EXTRACTED #community/Hermes_Setup_setup

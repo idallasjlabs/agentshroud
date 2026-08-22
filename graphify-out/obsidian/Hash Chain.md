@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Gateway Security Module"
+community: "Glossary (project)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Glossary_project
 ---
 
 # Hash Chain
@@ -13,6 +13,5 @@ tags:
 ## Connections
 - [[AgentShroud v0.9.0 Deep Hardening Release Notes]] - `references` [EXTRACTED]
 - [[audit-specification]] - `references` [EXTRACTED]
-- [[threat-model]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/concept #graphify/EXTRACTED #community/Glossary_project

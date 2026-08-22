@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Session Manager (security)"
 location: "L452"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Session_Manager_security
 ---
 
 # Get the workspace path for a user within a bot's namespace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_user_workspace_path()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Session_Manager_security

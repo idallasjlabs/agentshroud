@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Egress Filter (security)"
 location: "L645"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress_Filter_security
 ---
 
 # Get summary statistics of egress attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_stats()_16]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter_security

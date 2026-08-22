@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "rationale"
-community: "docs/vault"
+community: "Heuristic Classifier (security)"
 location: "L84"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Heuristic_Classifier_security
 ---
 
 # Heuristic injection classifier using multi-signal analysis.      Scoring approac
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HeuristicClassifier]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Heuristic_Classifier_security

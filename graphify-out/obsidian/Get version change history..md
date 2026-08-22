@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "rationale"
-community: "CHANGELOG.md"
+community: "Agentshroud Manager"
 location: "L58"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Agentshroud_Manager
 ---
 
 # Get version change history.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_version_history()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/rationale #graphify/EXTRACTED #community/Agentshroud_Manager

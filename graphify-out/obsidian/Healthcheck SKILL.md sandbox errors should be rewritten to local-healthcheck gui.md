@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "docs/vault"
+community: "Telegram Outbound Proxy Tests"
 location: "L1321"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Telegram_Outbound_Proxy_Tests
 ---
 
 # Healthcheck SKILL.md sandbox errors should be rewritten to local-healthcheck gui
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_healthcheck_skill_sandbox_error_is_rewritten()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Outbound_Proxy_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Group Workspace Isolation"
-location: "L7829"
+community: "Telegram Proxy Core"
+location: "L7849"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Workspace_Isolation
+  - community/Telegram_Proxy_Core
 ---
 
 # Handle /groups — list groups this user belongs to.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._handle_groups_command()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Workspace_Isolation
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core

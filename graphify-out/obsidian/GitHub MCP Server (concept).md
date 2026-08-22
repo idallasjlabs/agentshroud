@@ -1,18 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "concept"
-community: "Setup Docs"
+community: "Skill (i-mcpm)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Skill_i-mcpm
 ---
 
 # GitHub MCP Server (concept)
 
-## Connections
-- [[i-mcpm SKILL (MCP Tools Usage)]] - `references` [EXTRACTED]
-- [[i-mcpm-auth-reset SKILL (MCP Auth Reset)]] - `references` [EXTRACTED]
-- [[i-mcpm-doctor SKILL (MCP Doctor)]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Setup_Docs
+#graphify/concept #graphify/EXTRACTED #community/Skill_i-mcpm

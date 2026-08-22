@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/extraction-spec.md"
 type: "concept"
-community: "Gateway Test Suite"
+community: "Extraction Spec (references)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Extraction_Spec_references
 ---
 
 # Hyperedges Rule (max 3/chunk)
 
-## Connections
-- [[graphify extraction subagent spec]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/Extraction_Spec_references

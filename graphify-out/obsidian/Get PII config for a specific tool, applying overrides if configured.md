@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
+community: "Security Audit & Watchtower Tests"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Get PII config for a specific tool, applying overrides if configured
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_config_for_tool()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

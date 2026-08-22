@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "docs/vault"
+community: "Heuristic Classifier (security)"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Heuristic_Classifier_security
 ---
 
 # HeuristicClassifier
 
 ## Connections
-- [[.__init__()_82]] - `method` [EXTRACTED]
+- [[.__init__()_85]] - `method` [EXTRACTED]
 - [[._classify_heuristic()]] - `method` [EXTRACTED]
 - [[._classify_ml()]] - `method` [EXTRACTED]
 - [[._compute_unicode_anomaly()]] - `method` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Heuristic_Classifier_security

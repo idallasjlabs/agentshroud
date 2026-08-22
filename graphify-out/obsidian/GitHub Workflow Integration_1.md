@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Architecture Docs"
+community: "Skills Guide (i-reference)"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Skills_Guide_i-reference
 ---
 
 # GitHub Workflow Integration
@@ -19,4 +19,4 @@ tags:
 - [[5. Pre-Merge_1]] - `contains` [EXTRACTED]
 - [[GSDE&G Skills Reference_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Skills_Guide_i-reference

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L3191"
+community: "Telegram Proxy Core"
+location: "L3203"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Proxy_Core
 ---
 
 # HTML-escape PII redaction placeholders so they render as literal         text in
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._escape_pii_placeholders()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core

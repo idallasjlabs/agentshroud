@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Api (web)"
 location: "L1216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Api_web
 ---
 
 # Get the active container engine.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_get_engine()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Api_web

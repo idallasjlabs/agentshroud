@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
+source_file: ".agents/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (i-hermes)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-hermes
 ---
 
 # Hermes — Reference Verifier
@@ -20,4 +20,4 @@ tags:
 - [[SKILL_24]] - `contains` [EXTRACTED]
 - [[System Prompt_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-hermes

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
+source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-qa)"
 location: "L248"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-qa
 ---
 
 # H.1 Pause Glue Jobs Before Testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[H. Service Control for Production Testing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-qa

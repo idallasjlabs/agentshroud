@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Health checks (08 - Runbooks)"
 location: "L164"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Health_checks_08_-_Runbooks
 ---
 
 # Health Check Intervals (Docker)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Health Checks_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Health_checks_08_-_Runbooks

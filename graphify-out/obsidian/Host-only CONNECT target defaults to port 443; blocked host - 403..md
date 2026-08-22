@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Http Proxy Coverage"
 location: "L241"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Http_Proxy_Coverage
 ---
 
 # Host-only CONNECT target defaults to port 443; blocked host -> 403.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_target_without_port_defaults_to_443()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Http_Proxy_Coverage

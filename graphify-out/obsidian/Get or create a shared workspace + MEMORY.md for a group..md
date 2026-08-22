@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Session Manager (security)"
 location: "L491"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Session_Manager_security
 ---
 
 # Get or create a shared workspace + MEMORY.md for a group.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_or_create_group_session()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Session_Manager_security

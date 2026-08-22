@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "URL/Domain Validation Tests"
+community: "Privilege Separation & File Sandbox"
 location: "L422"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Privilege_Separation__File_Sandbox
 ---
 
 # Get all flagged operations that indicate security violations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_security_violations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox

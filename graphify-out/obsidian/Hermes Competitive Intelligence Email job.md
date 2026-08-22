@@ -1,19 +1,19 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "concept"
-community: "docs/diagrams"
+community: "Jobs (cron)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Jobs_cron
 ---
 
 # Hermes Competitive Intelligence Email job
 
 ## Connections
-- [[DailyAfternoon Competitive Landscape Update (OpenClaw cron job)]] - `shares_data_with` [EXTRACTED]
-- [[OpenClaw cron jobs.json (bot-config store, SCRUM-61 monitored)]] - `references` [EXTRACTED]
+- [[Hermes Competitive Landscape Update job]] - `shares_data_with` [EXTRACTED]
+- [[Hermes Cron Jobs Config]] - `references` [EXTRACTED]
 - [[agentshroud-email-send.sh]] - `references` [EXTRACTED]
 - [[render_md_email.py_1]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/diagrams
+#graphify/concept #graphify/EXTRACTED #community/Jobs_cron

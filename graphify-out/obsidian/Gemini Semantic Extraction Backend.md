@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Gateway Test Suite"
+community: "Skill (graphify)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_graphify
 ---
 
 # Gemini Semantic Extraction Backend
 
-## Connections
-- [[graphify SKILL]] - `implements` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/Skill_graphify
