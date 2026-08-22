@@ -52,6 +52,30 @@ _DEFAULT_CLOUD_PROVIDER = "anthropic"
 
 _LOCAL_MODES = ("local", "local-multi")
 
+# Stale-alias corrections: bare model names that AGENTSHROUD_LOCAL_MODEL_REF /
+# HERMES_MAIN_MODEL may still carry from before a backend swap changed what's
+# actually served, remapped to the name Hermes should use instead.
+#
+# "qwen3-14b-rapid" → "nemotron-3.5-lightning-rapid" (2026-08-21): Rapid-MLX's
+# served model was switched from Qwen3-14B to NVIDIA Nemotron 3.5 Lightning on
+# 2026-08-19 (gateway/proxy/llm_proxy.py's RAPID_MLX_MODEL_ID), but the
+# Hermes-facing alias was never renamed to match. Hermes's own
+# agent/reasoning_timeouts.py floor table matches by the model name it was
+# TOLD (not the real weights the gateway proxies to), so it kept applying the
+# "qwen3" family's 180s stale-call floor instead of "nemotron-3.5-lightning"'s
+# 300s floor — killing real generation turns ~100s before they would have
+# completed (observed: 278s actual vs 180s applied threshold), silently
+# leaving every affected cron job's output with just its header. The new
+# alias is also registered in llm_proxy.py's LOCAL_MODEL_ROUTES so routing is
+# unaffected; only the name Hermes uses to decide its own timeout changes.
+_STALE_ALIAS_CORRECTIONS = {
+    "qwen3-14b-rapid": "nemotron-3.5-lightning-rapid",
+}
+
+
+def _apply_stale_alias_correction(model: str) -> str:
+    return _STALE_ALIAS_CORRECTIONS.get(model, model)
+
 
 def strip_provider_prefix(ref: str) -> str:
     """Strip a known provider prefix from a model ref, leaving the bare model name.
@@ -120,7 +144,7 @@ def resolve_model(
             # Local mode requested but no local ref supplied — fall back to the
             # documented default local model so Hermes still starts locally.
             model = "qwen3:14b"
-        return model, "ollama"
+        return _apply_stale_alias_correction(model), "ollama"
 
     # Cloud (or unknown) mode.
     if main_bare:

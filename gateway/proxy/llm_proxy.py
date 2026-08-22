@@ -124,6 +124,18 @@ LOCAL_MODEL_ROUTES: dict[str, str] = {
     # qwen3-14b-rapid MUST precede the generic "qwen3" entry below for the same
     # first-prefix-wins reason as qwen3.8-27b-mlx above.
     "qwen3-14b-rapid": RAPID_MLX_API_BASE,  # Rapid-MLX — tool-call-optimized, 8-bit KV, :8002
+    # Renamed 2026-08-21: "qwen3-14b-rapid" was a stale alias left over from
+    # before the 2026-08-19 Rapid-MLX model swap to NVIDIA Nemotron 3.5
+    # Lightning — RAPID_MLX_MODEL_ID below already pointed at the real
+    # Nemotron weights, but Hermes was still told the model was named
+    # "qwen3-14b-rapid", so its own reasoning_timeouts.py floor table
+    # (agent/reasoning_timeouts.py) matched the "qwen3" family's 180s stale-
+    # call floor instead of "nemotron-3.5-lightning"'s 300s floor — killing
+    # real newsletter/report generation turns ~100s before they would have
+    # completed (observed: 278s actual, 180s applied threshold), leaving
+    # every affected cron job's output file with just its header. New alias
+    # matches Hermes's own floor-table pattern so it gets the correct budget.
+    "nemotron-3.5-lightning-rapid": RAPID_MLX_API_BASE,  # Rapid-MLX — same backend, correctly-named alias
     "qwen3": LMSTUDIO_API_BASE,  # Qwen3 family (14b, coder, etc.) — LM Studio on :1234
     "qwen2.5-coder": LMSTUDIO_API_BASE,  # Coding — LM Studio on :1234
     "gemma": LMSTUDIO_API_BASE,  # Other Gemma models — LM Studio on :1234
@@ -799,6 +811,14 @@ class LLMProxy:
             "mlxlm",
             "gemma",
             "fieldflare",
+            # Rapid-MLX serves NVIDIA Nemotron 3.5 Lightning as of 2026-08-19
+            # (RAPID_MLX_MODEL_ID below) — missing here meant any model alias
+            # containing "nemotron" fell through to the is_openai branch and
+            # got proxied to the real OpenAI.com API instead of routed via
+            # LOCAL_MODEL_ROUTES, 404'ing with OpenAI's own "model not found"
+            # (2026-08-21, found while fixing the qwen3-14b-rapid stale alias
+            # in resolve_model.py — that rename alone wasn't sufficient).
+            "nemotron",
         ]
 
         # INTERCEPT: If the system tries to use Claude Opus, force it to use the configured local model
@@ -1075,6 +1095,14 @@ class LLMProxy:
             "mlxlm",
             "gemma",
             "fieldflare",
+            # Rapid-MLX serves NVIDIA Nemotron 3.5 Lightning as of 2026-08-19
+            # (RAPID_MLX_MODEL_ID below) — missing here meant any model alias
+            # containing "nemotron" fell through to the is_openai branch and
+            # got proxied to the real OpenAI.com API instead of routed via
+            # LOCAL_MODEL_ROUTES, 404'ing with OpenAI's own "model not found"
+            # (2026-08-21, found while fixing the qwen3-14b-rapid stale alias
+            # in resolve_model.py — that rename alone wasn't sufficient).
+            "nemotron",
         ]
         is_ollama = (
             any(k in model_lower for k in local_keywords)
