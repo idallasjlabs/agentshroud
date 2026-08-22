@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "Gateway Ingest API"
+community: "Skill (healthcheck)"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - community/Skill_healthcheck
 ---
 
 # 1) Establish context (read-only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workflow (follow in order)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/document #graphify/EXTRACTED #community/Skill_healthcheck
