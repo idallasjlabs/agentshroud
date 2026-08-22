@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "Aiosqlite (05 - Dependencies)"
 location: "L114"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Competitive_Intel_Store
+  - community/Aiosqlite_05_-_Dependencies
 ---
 
 # LedgerEntry
@@ -19,4 +19,4 @@ tags:
 - [[LedgerEntry_1]] - `uses` [INFERRED]
 - [[LedgerQueryResponse_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Competitive_Intel_Store
+#graphify/code #graphify/INFERRED #community/Aiosqlite_05_-_Dependencies

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "Security Docs"
+community: "Killswitch Monitor & Observatory Mode"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Docs
+  - community/Killswitch_Monitor__Observatory_Mode
 ---
 
 # KillSwitchConfig
@@ -22,8 +22,8 @@ tags:
 - [[.test_init()]] - `calls` [EXTRACTED]
 - [[.test_killswitch_dry_run_disabled()]] - `calls` [EXTRACTED]
 - [[.test_verify_killswitch_script_not_exists()]] - `calls` [EXTRACTED]
-- [[.to_dict()_9]] - `method` [EXTRACTED]
-- [[Any_44]] - `uses` [INFERRED]
+- [[.to_dict()_10]] - `method` [EXTRACTED]
+- [[Any_45]] - `uses` [INFERRED]
 - [[Configuration for kill switch monitoring and verification.]] - `rationale_for` [EXTRACTED]
 - [[FastAPI_2]] - `uses` [INFERRED]
 - [[KillSwitchConfig_1]] - `uses` [INFERRED]
@@ -56,4 +56,4 @@ tags:
 - [[test_killswitch_monitor_behavior.py]] - `imports` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Docs
+#graphify/code #graphify/INFERRED #community/Killswitch_Monitor__Observatory_Mode

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "rationale"
-community: "scripts/triage-cve-mitigations.py"
+community: "Dns Blocklist"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/triage-cve-mitigationspy
+  - community/Dns_Blocklist
 ---
 
 # Lifecycle: start_periodic_updates()/stop() task management.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLifecycle]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/triage-cve-mitigationspy
+#graphify/rationale #graphify/EXTRACTED #community/Dns_Blocklist

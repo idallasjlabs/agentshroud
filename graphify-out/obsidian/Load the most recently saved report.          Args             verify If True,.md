@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "docs/project"
+community: "Intel Report (security)"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Intel_Report_security
 ---
 
 # Load the most recently saved report.          Args:             verify: If True,
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.load_latest()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/project
+#graphify/rationale #graphify/EXTRACTED #community/Intel_Report_security

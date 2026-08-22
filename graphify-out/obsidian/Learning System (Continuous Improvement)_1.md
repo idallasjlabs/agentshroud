@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-eightd)"
 location: "L426"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-eightd
 ---
 
 # Learning System (Continuous Improvement)
@@ -17,4 +17,4 @@ tags:
 - [[Knowledge Base Schema_1]] - `contains` [EXTRACTED]
 - [[Pattern Matching for New Incidents_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd

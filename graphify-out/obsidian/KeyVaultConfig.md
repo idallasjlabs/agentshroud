@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Key Vault"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Proxy_Config
+  - community/Key_Vault
 ---
 
 # KeyVaultConfig
 
 ## Connections
-- [[.__init__()_86]] - `references` [EXTRACTED]
+- [[.__init__()_89]] - `references` [EXTRACTED]
 - [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[.test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
 - [[.test_key_vault_init()]] - `calls` [EXTRACTED]
@@ -55,4 +55,4 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config
+#graphify/code #graphify/INFERRED #community/Key_Vault

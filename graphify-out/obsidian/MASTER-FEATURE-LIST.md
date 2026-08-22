@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Master Feature List (planning)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Master_Feature_List_planning
 ---
 
 # MASTER-FEATURE-LIST.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Master_Feature_List_planning

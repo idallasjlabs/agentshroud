@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Planning Docs"
+community: "Claude"
 location: "L403"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Claude
 ---
 
 # MCP tools available
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[10) CLAUDE CODE OPERATIONAL RULES]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Claude

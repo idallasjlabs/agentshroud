@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "PromptGuard Encoding Detection"
+community: "Mcp Proxy"
 location: "L224"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PromptGuard_Encoding_Detection
+  - community/Mcp_Proxy
 ---
 
 # MCPProxy
 
 ## Connections
-- [[.__init__()_30]] - `method` [EXTRACTED]
+- [[.__init__()_31]] - `method` [EXTRACTED]
 - [[._emit_privacy_event()]] - `method` [EXTRACTED]
 - [[._execute_tool_call()]] - `method` [EXTRACTED]
 - [[._extract_egress_targets()]] - `method` [EXTRACTED]
@@ -27,7 +27,6 @@ tags:
 - [[.test_disabled_server_blocked()]] - `calls` [EXTRACTED]
 - [[.test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
 - [[.test_egress_denied_blocks_url_tool_call()]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `calls` [INFERRED]
 - [[Exception_4]] - `uses` [INFERRED]
 - [[FakeApprovalQueue]] - `uses` [INFERRED]
 - [[FakeConn]] - `uses` [INFERRED]
@@ -46,6 +45,7 @@ tags:
 - [[MCPTransport]] - `uses` [INFERRED]
 - [[Main MCP proxy that intercepts tool calls and routes through security.      Tran]] - `rationale_for` [EXTRACTED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `references` [EXTRACTED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestApprovalQueue]] - `uses` [INFERRED]
 - [[TestApprovalWorkflow]] - `uses` [INFERRED]
@@ -85,17 +85,17 @@ tags:
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
+- [[_HangingWebSocket_1]] - `uses` [INFERRED]
 - [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
+- [[mcp-proxy-wrapper.js]] - `references` [EXTRACTED]
 - [[mcp_proxy.py]] - `contains` [EXTRACTED]
-- [[mcp_proxy_endpoint()]] - `calls` [EXTRACTED]
 - [[passthrough_proxy()]] - `calls` [EXTRACTED]
-- [[proxy()_1]] - `calls` [EXTRACTED]
+- [[proxy()_2]] - `calls` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
-- [[test_enhanced_approval.py]] - `references` [EXTRACTED]
+- [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_allows_policy_permitted_call()]] - `calls` [EXTRACTED]
@@ -103,4 +103,4 @@ tags:
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PromptGuard_Encoding_Detection
+#graphify/code #graphify/INFERRED #community/Mcp_Proxy

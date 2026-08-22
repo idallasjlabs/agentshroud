@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Collaborator Prompt Safety"
+community: "Mcp Proxy"
 location: "L18"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Collaborator_Prompt_Safety
+  - community/Mcp_Proxy
 ---
 
 # MCPTransport
@@ -76,4 +76,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Safety
+#graphify/code #graphify/INFERRED #community/Mcp_Proxy

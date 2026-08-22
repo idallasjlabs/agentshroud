@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/data-flow-diagram.md"
 type: "concept"
-community: "docs/vault"
+community: "Data Flow Diagram (flows)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Data_Flow_Diagram_flows
 ---
 
 # Kill Switch (Level 1 security component)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Data Flow Diagrams (doc)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/vault
+#graphify/concept #graphify/EXTRACTED #community/Data_Flow_Diagram_flows

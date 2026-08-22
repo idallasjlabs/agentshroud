@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Llm Proxy"
 location: "L399"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Llm_Proxy
 ---
 
 # Local/non-Anthropic destination: injector must NOT be called.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_credential_injector_not_applied_for_non_anthropic_dest()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Llm_Proxy

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "RBAC & Ingest Middleware"
 location: "L17"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/RBAC__Ingest_Middleware
 ---
 
 # LogSanitizer
 
 ## Connections
-- [[.__init__()_90]] - `method` [EXTRACTED]
+- [[.__init__()_93]] - `method` [EXTRACTED]
 - [[._compile_patterns()]] - `method` [EXTRACTED]
 - [[._sanitize_text()]] - `method` [EXTRACTED]
 - [[.filter()_1]] - `method` [EXTRACTED]
@@ -59,4 +59,4 @@ tags:
 - [[test_log_sanitizer.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "SOC Collaborator Lifecycle"
+community: "E2e Proxy"
 location: "L294"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/E2e_Proxy
 ---
 
 # Low-trust agent requests elevated action — verify denied.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_trust_level_enforced()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/rationale #graphify/EXTRACTED #community/E2e_Proxy

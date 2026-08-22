@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm/README.md"
 type: "document"
-community: "Setup Docs"
+community: "Readme (i-mcpm)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Readme_i-mcpm
 ---
 
 # MCP Tools Usage (MCPM)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_62]] - `contains` [EXTRACTED]
 - [[Usage_63]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_i-mcpm

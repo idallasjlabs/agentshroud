@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "PromptGuard Encoding Detection"
+community: "Mcp Proxy"
 location: "L130"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PromptGuard_Encoding_Detection
+  - community/Mcp_Proxy
 ---
 
 # MCPInspector
 
 ## Connections
-- [[.__init__()_25]] - `method` [EXTRACTED]
+- [[.__init__()_26]] - `method` [EXTRACTED]
 - [[._redact_pii()]] - `method` [EXTRACTED]
 - [[._scan_text()]] - `method` [EXTRACTED]
 - [[._scan_value()]] - `method` [EXTRACTED]
@@ -35,6 +35,9 @@ tags:
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxy.process_tool_call]] - `calls` [EXTRACTED]
+- [[MCPProxy.process_tool_result]] - `calls` [EXTRACTED]
+- [[MCPProxyConfig]] - `shares_data_with` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
@@ -82,9 +85,9 @@ tags:
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[mcp_inspector.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
-- [[proxy()_1]] - `calls` [EXTRACTED]
+- [[proxy()_2]] - `calls` [EXTRACTED]
 - [[strict_inspector()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PromptGuard_Encoding_Detection
+#graphify/code #graphify/INFERRED #community/Mcp_Proxy

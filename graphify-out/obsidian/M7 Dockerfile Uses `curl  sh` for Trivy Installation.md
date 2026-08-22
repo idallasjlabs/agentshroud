@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "Security Docs"
+community: "Blue Team Assessment V0.8.0 (v0.8)"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Blue_Team_Assessment_V080_v08
 ---
 
 # M7: Dockerfile Uses `curl | sh` for Trivy Installation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MEDIUM — Fix Soon]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Assessment_V080_v08

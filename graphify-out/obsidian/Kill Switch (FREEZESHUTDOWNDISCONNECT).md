@@ -1,19 +1,16 @@
 ---
-source_file: "docs/papers/agentshroud-whitepaper.md"
+source_file: "docs/user-guide.md"
 type: "concept"
-community: "Setup Docs"
+community: "Agentshroud Knowledge (docs)"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/Setup_Docs
+  - graphify/INFERRED
+  - community/Agentshroud_Knowledge_docs
 ---
 
-# Kill Switch (FREEZE/SHUTDOWN/DISCONNECT)
+# Kill Switch (freeze/shutdown/disconnect)
 
 ## Connections
-- [[AgentShroud Deployment Procedure]] - `references` [EXTRACTED]
-- [[AgentShroud Incident Response Plan]] - `references` [EXTRACTED]
-- [[AgentShroud Operations Runbook]] - `references` [EXTRACTED]
-- [[AgentShroud White Paper v1.1 (Feb 2026)]] - `references` [EXTRACTED]
+- [[SOC Command Center — Five Pillars]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Setup_Docs
+#graphify/concept #graphify/INFERRED #community/Agentshroud_Knowledge_docs

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Security Implementation Verification (security)"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Security_Implementation_Verification_security
 ---
 
 # Layer 1: Bot Instructions (Primary Defense)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📊 Multi-Layer Defense]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification_security

@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Claude"
 location: "L297"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Claude
 ---
 
 # Key source directories
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[7) AGENTSHROUD-SPECIFIC CONSTRAINTS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Claude

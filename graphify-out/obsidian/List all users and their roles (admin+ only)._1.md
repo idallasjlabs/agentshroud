@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
+community: "RBAC & Ingest Middleware"
 location: "L315"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/RBAC__Ingest_Middleware
 ---
 
 # List all users and their roles (admin+ only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.list_users_and_roles()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

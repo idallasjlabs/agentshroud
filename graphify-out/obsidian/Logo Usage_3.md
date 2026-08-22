@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (branding)"
 location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_branding
 ---
 
 # Logo Usage
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_branding

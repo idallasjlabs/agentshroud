@@ -1,12 +1,12 @@
 ---
 source_file: ".github/workflows/ci.yml"
 type: "rationale"
-community: "AGENTS.md"
+community: "Ci (workflows)"
 location: "lines 51-73"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AGENTSmd
+  - community/Ci_workflows
 ---
 
 # Leak Gate Scoped to ubuntu+3.11
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CI Workflow]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AGENTSmd
+#graphify/rationale #graphify/EXTRACTED #community/Ci_workflows

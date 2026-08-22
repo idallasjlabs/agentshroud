@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Mcp Permissions"
 location: "L85"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Dashboard
+  - community/Mcp_Permissions
 ---
 
 # MCPProxyConfig
@@ -22,8 +22,10 @@ tags:
 - [[FakeConn]] - `uses` [INFERRED]
 - [[FakeProcess]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `shares_data_with` [INFERRED]
 - [[MCPAuditTrail_1]] - `uses` [INFERRED]
 - [[MCPInspector_1]] - `uses` [INFERRED]
+- [[MCPInspector]] - `shares_data_with` [INFERRED]
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
@@ -74,7 +76,7 @@ tags:
 - [[TestProxyRateLimiting]] - `uses` [INFERRED]
 - [[TestProxyResultProcessing]] - `uses` [INFERRED]
 - [[TestProxyStats]] - `uses` [INFERRED]
-- [[TestRateLimiting_1]] - `uses` [INFERRED]
+- [[TestRateLimiting_2]] - `uses` [INFERRED]
 - [[TestResultProcessingAndLifecycle]] - `uses` [INFERRED]
 - [[TestSanitizeAdminPrivateData]] - `uses` [INFERRED]
 - [[TestSensitiveOps]] - `uses` [INFERRED]
@@ -91,7 +93,6 @@ tags:
 - [[config()_3]] - `calls` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
 - [[make_config()]] - `calls` [EXTRACTED]
 - [[mcp_config.py]] - `contains` [EXTRACTED]
 - [[mcp_permissions.py]] - `imports` [EXTRACTED]
@@ -100,4 +101,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Dashboard
+#graphify/code #graphify/INFERRED #community/Mcp_Permissions

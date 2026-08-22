@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Incident Response (operations)"
 location: "L297"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Incident_Response_operations
 ---
 
 # Layer 2: Unicode Normalization
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Multi-Layer Detection Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_operations

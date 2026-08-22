@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "Setup Docs"
+community: "Mcp Audit (proxy)"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Setup_Docs
+  - community/Mcp_Audit_proxy
 ---
 
 # MCPAuditTrail
 
 ## Connections
-- [[.__init__()_24]] - `method` [EXTRACTED]
+- [[.__init__()_25]] - `method` [EXTRACTED]
 - [[.__len__()]] - `method` [EXTRACTED]
 - [[._compute_chain_hash()]] - `method` [EXTRACTED]
 - [[.entries()]] - `method` [EXTRACTED]
@@ -37,6 +37,7 @@ tags:
 - [[.verify_chain()]] - `method` [EXTRACTED]
 - [[Any_18]] - `uses` [INFERRED]
 - [[Audit trail for MCP tool calls, integrated with SHA-256 hash chain.]] - `rationale_for` [EXTRACTED]
+- [[AuditChain]] - `semantically_similar_to` [INFERRED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_1]] - `uses` [INFERRED]
 - [[Exception_4]] - `uses` [INFERRED]
@@ -49,8 +50,10 @@ tags:
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxy.process_tool_call]] - `calls` [EXTRACTED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
+- [[MCPProxyConfig]] - `shares_data_with` [INFERRED]
 - [[MCPServerConfig_2]] - `uses` [INFERRED]
 - [[MCPToolCall_1]] - `uses` [INFERRED]
 - [[MCPToolCall]] - `uses` [INFERRED]
@@ -93,11 +96,12 @@ tags:
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
 - [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[audit()]] - `calls` [EXTRACTED]
+- [[gatewayPost()]] - `references` [INFERRED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[mcp_audit.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
-- [[proxy()_1]] - `calls` [EXTRACTED]
+- [[proxy()_2]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Setup_Docs
+#graphify/code #graphify/INFERRED #community/Mcp_Audit_proxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "Enforce-Mode Auto-Revert"
+community: "Queue (approval_queue)"
 location: "line:209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enforce-Mode_Auto-Revert
+  - community/Queue_approval_queue
 ---
 
 # MFAGuard.verify()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[queue.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert
+#graphify/code #graphify/EXTRACTED #community/Queue_approval_queue

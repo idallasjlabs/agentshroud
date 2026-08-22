@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "Security Docs"
+community: "Killswitch Monitor & Observatory Mode"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Killswitch_Monitor__Observatory_Mode
 ---
 
 # KillSwitchMonitor
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_89]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_92]] - `method` [EXTRACTED]
 - [[._check_request_rate()]] - `method` [EXTRACTED]
 - [[._check_system_resources()]] - `method` [EXTRACTED]
 - [[._check_token_usage()]] - `method` [EXTRACTED]
@@ -88,10 +88,9 @@ tags:
 - [[killswitch_monitor.py]] - `contains` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_killswitch_monitor.py]] - `imports` [EXTRACTED]
 - [[test_killswitch_monitor_behavior.py]] - `imports` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode

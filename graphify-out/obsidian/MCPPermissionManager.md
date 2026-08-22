@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Mcp Permissions (proxy)"
 location: "L175"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Dashboard
+  - community/Mcp_Permissions_proxy
 ---
 
 # MCPPermissionManager
 
 ## Connections
-- [[.__init__()_26]] - `method` [EXTRACTED]
+- [[.__init__()_27]] - `method` [EXTRACTED]
 - [[._load_privacy_policy()]] - `method` [EXTRACTED]
 - [[._recompile_private_data_patterns()]] - `method` [EXTRACTED]
 - [[._record_private_access_attempt()]] - `method` [EXTRACTED]
@@ -48,6 +48,7 @@ tags:
 - [[MCPPermissionManager_1]] - `uses` [INFERRED]
 - [[MCPProxy_1]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
+- [[MCPProxy.process_tool_call]] - `calls` [EXTRACTED]
 - [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPProxyConfig_2]] - `uses` [INFERRED]
 - [[MCPProxyConfig_3]] - `uses` [INFERRED]
@@ -92,7 +93,7 @@ tags:
 - [[TestProxyRateLimiting]] - `uses` [INFERRED]
 - [[TestProxyResultProcessing]] - `uses` [INFERRED]
 - [[TestProxyStats]] - `uses` [INFERRED]
-- [[TestRateLimiting_1]] - `uses` [INFERRED]
+- [[TestRateLimiting_2]] - `uses` [INFERRED]
 - [[TestResultProcessingAndLifecycle]] - `uses` [INFERRED]
 - [[TestSanitizeAdminPrivateData]] - `uses` [INFERRED]
 - [[TestSensitiveOps]] - `uses` [INFERRED]
@@ -105,12 +106,13 @@ tags:
 - [[TestTrustMapping]] - `uses` [INFERRED]
 - [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
+- [[mcp-proxy-wrapper.js]] - `references` [INFERRED]
 - [[mcp_permissions.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[mgr()_1]] - `calls` [EXTRACTED]
-- [[proxy()_1]] - `calls` [EXTRACTED]
+- [[proxy()_2]] - `calls` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Dashboard
+#graphify/code #graphify/INFERRED #community/Mcp_Permissions_proxy

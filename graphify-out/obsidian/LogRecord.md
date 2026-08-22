@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "docs/vault"
+community: "Security Audit & Watchtower Tests"
 location: "L64"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/vault
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # LogRecord
@@ -23,4 +23,4 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/docs/vault
+#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests

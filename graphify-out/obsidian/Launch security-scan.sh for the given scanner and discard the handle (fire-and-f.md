@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Enhanced Approval Queue"
-location: "L1987"
+community: "SOC Router (Collaborator Mgmt)"
+location: "L2025"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/SOC_Router_Collaborator_Mgmt
 ---
 
 # Launch security-scan.sh for the given scanner and discard the handle (fire-and-f
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_launch_scan_background()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt

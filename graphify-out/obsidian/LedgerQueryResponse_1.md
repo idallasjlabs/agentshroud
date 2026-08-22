@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "Aiosqlite (05 - Dependencies)"
 location: "L152"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Competitive_Intel_Store
+  - community/Aiosqlite_05_-_Dependencies
 ---
 
 # LedgerQueryResponse
@@ -16,7 +16,6 @@ tags:
 - [[AuthRequired]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
-- [[Exception]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
 - [[LedgerConfig_1]] - `uses` [INFERRED]
 - [[LedgerEntry]] - `uses` [INFERRED]
@@ -33,4 +32,4 @@ tags:
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Competitive_Intel_Store
+#graphify/code #graphify/INFERRED #community/Aiosqlite_05_-_Dependencies

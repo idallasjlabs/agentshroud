@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Trust Manager.py (Security Modules)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Trust_Managerpy_Security_Modules
 ---
 
 # Kill Switch (Monitor/Block/Isolate)
@@ -14,4 +14,4 @@ tags:
 - [[Approval Queue (SQLite)]] - `calls` [EXTRACTED]
 - [[Dashboard (WebSocket)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Trust_Managerpy_Security_Modules

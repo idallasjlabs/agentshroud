@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Security Docs"
+community: "Readme (i-mcpm-aws-profile)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Readme_i-mcpm-aws-profile
 ---
 
 # MCP AWS Profile Configuration (MCPM-AWS-PROFILE)
 
 ## Connections
-- [[Purpose_54]] - `contains` [EXTRACTED]
-- [[README_59]] - `contains` [EXTRACTED]
-- [[Related Skills_58]] - `contains` [EXTRACTED]
-- [[Usage_61]] - `contains` [EXTRACTED]
+- [[Purpose_91]] - `contains` [EXTRACTED]
+- [[README_96]] - `contains` [EXTRACTED]
+- [[Related Skills_98]] - `contains` [EXTRACTED]
+- [[Usage_101]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_i-mcpm-aws-profile

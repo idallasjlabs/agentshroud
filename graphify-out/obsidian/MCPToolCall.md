@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "PromptGuard Encoding Detection"
+community: "Mcp Proxy"
 location: "L37"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PromptGuard_Encoding_Detection
+  - community/Mcp_Proxy
 ---
 
 # MCPToolCall
@@ -101,6 +101,7 @@ tags:
 - [[TestThreatLevelCalc]] - `uses` [INFERRED]
 - [[TestToolRiskClassification]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
+- [[_HangingWebSocket_1]] - `uses` [INFERRED]
 - [[__init__.py_7]] - `imports` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
 - [[make_call()]] - `calls` [EXTRACTED]
@@ -114,4 +115,4 @@ tags:
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PromptGuard_Encoding_Detection
+#graphify/code #graphify/INFERRED #community/Mcp_Proxy

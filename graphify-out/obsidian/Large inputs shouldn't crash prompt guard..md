@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Audit Export Pipeline"
+community: "Resource Guard & Local Model Parity"
 location: "L1080"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Resource_Guard__Local_Model_Parity
 ---
 
 # Large inputs shouldn't crash prompt guard.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_prompt_guard_large_input()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "docs/papers"
+community: "Wazuh Ossec (03 - Configuration)"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Wazuh_Ossec_03_-_Configuration
 ---
 
 # Key OSSEC Config Sections (Inferred)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/papers
+#graphify/document #graphify/EXTRACTED #community/Wazuh_Ossec_03_-_Configuration

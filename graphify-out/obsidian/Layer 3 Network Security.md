@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
+source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Skill (i-sec)"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Skill_i-sec
 ---
 
 # Layer 3: Network Security
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Review Layers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec

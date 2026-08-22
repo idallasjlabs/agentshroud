@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Main (chatbot)"
 location: "L42"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Main_chatbot
 ---
 
 # Load Isaiah's persona from IDENTITY, SOUL, and USER files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_persona_files()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Main_chatbot

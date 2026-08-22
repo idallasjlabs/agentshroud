@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-mcpm-auth-reset)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-mcpm-auth-reset
 ---
 
 # MCP Auth Reset (MCPM-AUTH-RESET)
 
 ## Connections
 - [[Purpose_16]] - `contains` [EXTRACTED]
-- [[README_21]] - `contains` [EXTRACTED]
+- [[README_16]] - `contains` [EXTRACTED]
 - [[Related Skills_16]] - `contains` [EXTRACTED]
-- [[Usage_19]] - `contains` [EXTRACTED]
+- [[Usage_18]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-mcpm-auth-reset

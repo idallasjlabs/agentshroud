@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Collaborator Prompt Safety"
+community: "Mcp Proxy Coverage"
 location: "L95"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Collaborator_Prompt_Safety
+  - community/Mcp_Proxy_Coverage
 ---
 
 # MCPServerConfig
 
 ## Connections
-- [[.__init__()_27]] - `references` [EXTRACTED]
 - [[.__init__()_28]] - `references` [EXTRACTED]
+- [[.__init__()_29]] - `references` [EXTRACTED]
 - [[.get_or_create()]] - `references` [EXTRACTED]
 - [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Safety
+#graphify/code #graphify/INFERRED #community/Mcp_Proxy_Coverage

@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
+source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Skill (i-hdev)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-hdev
 ---
 
 # LM Studio local model (Qwen3-14B)
 
 ## Connections
-- [[i-hdev SKILL — Hermes Dev Workflow (HDEV)]] - `references` [EXTRACTED]
-- [[i-odev SKILL (OpenClaw Dev Workflow)]] - `references` [EXTRACTED]
+- [[Hermes Dev Workflow (HDEV) Skill]] - `references` [EXTRACTED]
+- [[OpenClaw Dev Workflow (ODEV)]] - `references` [EXTRACTED]
+- [[omlx local model (DeepSeek-R1-0528-Qwen3-8B)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Skill_i-hdev

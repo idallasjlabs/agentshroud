@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Security Architecture (security)"
 location: "L211"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Architecture_security
 ---
 
 # Layer 7: Application Security (2 Modules)
@@ -16,4 +16,4 @@ tags:
 - [[26. MCP Inspector]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Security_Architecture_security

@@ -1,30 +1,24 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L1353"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # LogSanitizer
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
 - [[.get_log_sanitizer()]] - `references` [EXTRACTED]
-- [[.sanitizer()_2]] - `calls` [INFERRED]
-- [[.setup_method()_7]] - `calls` [INFERRED]
-- [[.test_empty_inputs_everywhere()]] - `calls` [INFERRED]
-- [[.test_log_sanitizer_covers_stack_traces()]] - `calls` [INFERRED]
 - [[Action_1]] - `uses` [INFERRED]
 - [[AgentRegistry]] - `uses` [INFERRED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ApprovalHardening]] - `uses` [INFERRED]
 - [[ApprovalHardeningConfig]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
 - [[BrowserSecurityGuard]] - `uses` [INFERRED]
 - [[ConsentFramework]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
@@ -68,4 +62,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware

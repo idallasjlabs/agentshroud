@@ -1,20 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "PromptGuard Encoding Detection"
+community: "Mcp Inspector (proxy)"
 location: "L230"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PromptGuard_Encoding_Detection
+  - community/Mcp_Inspector_proxy
 ---
 
 # MCPPermissionManager
 
 ## Connections
-- [[.__init__()_30]] - `references` [EXTRACTED]
-- [[.test_egress_allows_non_url_tool_call()]] - `calls` [INFERRED]
-- [[.test_egress_denied_blocks_url_tool_call()]] - `calls` [INFERRED]
+- [[.__init__()_31]] - `references` [EXTRACTED]
 - [[InspectionResult]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
 - [[MCPInspector]] - `uses` [INFERRED]
@@ -22,6 +20,5 @@ tags:
 - [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
-- [[proxy()_1]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/PromptGuard_Encoding_Detection
+#graphify/code #graphify/INFERRED #community/Mcp_Inspector_proxy

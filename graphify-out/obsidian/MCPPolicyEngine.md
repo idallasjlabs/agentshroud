@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Egress Domain Allowlist"
+community: "Mcp Policy"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Domain_Allowlist
+  - community/Mcp_Policy
 ---
 
 # MCPPolicyEngine
 
 ## Connections
-- [[.__init__()_91]] - `method` [EXTRACTED]
+- [[.__init__()_94]] - `method` [EXTRACTED]
 - [[._decide()_1]] - `method` [EXTRACTED]
 - [[._tier_for()_1]] - `method` [EXTRACTED]
 - [[.enforce()_1]] - `method` [EXTRACTED]
@@ -59,4 +59,4 @@ tags:
 - [[test_owner_bypass_defaults_to_rbac_owner_identity()]] - `calls` [EXTRACTED]
 - [[test_owner_bypasses_approval_but_not_hard_deny()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist
+#graphify/code #graphify/EXTRACTED #community/Mcp_Policy

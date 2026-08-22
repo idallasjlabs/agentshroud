@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "docs/vault"
+community: "Security Fixes & SSH Write Endpoint"
 location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/vault
+  - community/Security_Fixes__SSH_Write_Endpoint
 ---
 
 # LedgerConfig
@@ -59,8 +59,9 @@ tags:
 - [[ledger()]] - `calls` [EXTRACTED]
 - [[ledger()_2]] - `calls` [EXTRACTED]
 - [[ledger.py]] - `imports` [EXTRACTED]
+- [[ledger.py_1]] - `references` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
-- [[test_audit_chain.py]] - `imports` [EXTRACTED]
+- [[test_audit_chain.py]] - `references` [EXTRACTED]
 - [[test_config()]] - `calls` [EXTRACTED]
 - [[test_config()_1]] - `calls` [EXTRACTED]
 - [[test_config_with_ssh()]] - `calls` [EXTRACTED]
@@ -74,4 +75,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/docs/vault
+#graphify/code #graphify/INFERRED #community/Security_Fixes__SSH_Write_Endpoint

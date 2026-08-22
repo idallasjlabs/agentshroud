@@ -1,17 +1,17 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "Security Docs"
+community: "Security"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Security
 ---
 
 # Layer 3 — Output Protection
 
 ## Connections
-- [[Security Architecture]] - `contains` [EXTRACTED]
+- [[Security Architecture_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Security

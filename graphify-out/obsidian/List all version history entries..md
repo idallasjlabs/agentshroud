@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "rationale"
-community: "CHANGELOG.md"
+community: "Agentshroud Manager"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Agentshroud_Manager
 ---
 
 # List all version history entries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[list_versions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/rationale #graphify/EXTRACTED #community/Agentshroud_Manager

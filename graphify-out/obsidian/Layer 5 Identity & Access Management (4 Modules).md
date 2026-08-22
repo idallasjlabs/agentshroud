@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Security Architecture (security)"
 location: "L159"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Architecture_security
 ---
 
 # Layer 5: Identity & Access Management (4 Modules)
@@ -18,4 +18,4 @@ tags:
 - [[20. Role-Based Access Control (RBAC)]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Security_Architecture_security

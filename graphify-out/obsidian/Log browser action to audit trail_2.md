@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Browse (scripts)"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Browse_scripts
 ---
 
 # Log browser action to audit trail
 
 ## Connections
-- [[._log_action()_2]] - `rationale_for` [EXTRACTED]
+- [[._log_action()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Browse_scripts

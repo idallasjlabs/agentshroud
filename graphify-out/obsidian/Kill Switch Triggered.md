@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Incident Response (operations)"
 location: "L349"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Incident_Response_operations
 ---
 
 # Kill Switch Triggered
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[P2 High Priority Incidents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_operations

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Key Vault"
 location: "L574"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Key_Vault
 ---
 
 # KeyLeakDetector wiring — stored credential values must never leave the gateway.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyLeakDetection_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Key_Vault

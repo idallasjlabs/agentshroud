@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Manifest (skills)"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Manifest_skills
 ---
 
 # Load configuration from environment variables.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_env()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Manifest_skills

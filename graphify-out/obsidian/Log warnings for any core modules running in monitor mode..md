@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Security Audit & Watchtower Tests"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Log warnings for any core modules running in monitor mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_monitor_mode_warnings()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

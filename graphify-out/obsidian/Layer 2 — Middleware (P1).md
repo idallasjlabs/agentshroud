@@ -1,17 +1,17 @@
 ---
 source_file: "SECURITY.md"
 type: "document"
-community: "Security Docs"
+community: "Security"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Security
 ---
 
 # Layer 2 — Middleware (P1)
 
 ## Connections
-- [[Security Architecture]] - `contains` [EXTRACTED]
+- [[Security Architecture_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Security

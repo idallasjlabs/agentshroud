@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "docs/vault"
+community: "Security Architecture (security)"
 location: "L81"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Architecture_security
 ---
 
 # Layer 2: Network Security (4 Modules)
@@ -18,4 +18,4 @@ tags:
 - [[8. Network Rate Limiter]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Security_Architecture_security

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Key Rotation (security)"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Key_Rotation_security
 ---
 
 # KeyRotationManager
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_85]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_88]] - `method` [EXTRACTED]
 - [[._generate_new_credential()]] - `method` [EXTRACTED]
 - [[._read_credential_from_1password()]] - `method` [EXTRACTED]
 - [[._retire_old_credential_after_grace_period()]] - `method` [EXTRACTED]
@@ -59,6 +59,7 @@ tags:
 - [[TestStoreIn1Password]] - `uses` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[credentials_health()]] - `calls` [EXTRACTED]
+- [[credentials_status()]] - `calls` [EXTRACTED]
 - [[key_rotation.py]] - `contains` [EXTRACTED]
 - [[management.py]] - `imports` [EXTRACTED]
 - [[manager()_2]] - `calls` [EXTRACTED]
@@ -67,4 +68,4 @@ tags:
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Key_Rotation_security

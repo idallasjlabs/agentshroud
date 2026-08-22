@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/LOCAL_LLM_REVIEW.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Local Llm Review (v1.2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Local_Llm_Review_v12
 ---
 
 # Local LLM Support — Implementation Review
@@ -25,4 +25,4 @@ tags:
 - [[Architecture Overview]] - `contains` [EXTRACTED]
 - [[LOCAL_LLM_REVIEW]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Local_Llm_Review_v12

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Dashboard Endpoints (web)"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Dashboard_Endpoints_web
 ---
 
 # LogRecord
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.emit()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Dashboard_Endpoints_web

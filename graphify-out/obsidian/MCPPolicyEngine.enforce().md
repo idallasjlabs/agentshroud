@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "Community 1778"
+community: "Mcp Policy (security)"
 location: "line:401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1778
+  - community/Mcp_Policy_security
 ---
 
 # MCPPolicyEngine.enforce()
 
-#graphify/code #graphify/EXTRACTED #community/Community_1778
+#graphify/code #graphify/EXTRACTED #community/Mcp_Policy_security

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "Security Docs"
+community: "Readme (i-mcpm-auth-reset)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Readme_i-mcpm-auth-reset
 ---
 
 # MCP Auth Reset (MCPM-AUTH-RESET)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_56]] - `contains` [EXTRACTED]
 - [[Usage_59]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_i-mcpm-auth-reset

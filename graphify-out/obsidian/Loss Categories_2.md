@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
+source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "chatbot/main.py"
-location: "L19"
+community: "Skill (i-sec-defense)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/Skill_i-sec-defense
 ---
 
 # Loss Categories
 
 ## Connections
-- [[AgentShroud v0.7.0 — Red Team Remediation Plan]] - `contains` [EXTRACTED]
+- [[Methodology_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense

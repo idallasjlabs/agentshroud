@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
+source_file: "docs/planning/redteam/v0.7.0-remediation-plan.md"
 type: "document"
-community: "Security Docs"
-location: "L14"
+community: "V0.7.0 Remediation Plan (redteam)"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/V070_Remediation_Plan_redteam
 ---
 
 # Loss Categories
 
 ## Connections
-- [[Methodology_2]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 — Red Team Remediation Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/V070_Remediation_Plan_redteam

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L122"
+community: "Llm Proxy"
+location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Llm_Proxy
 ---
 
 # LLMProxy
 
 ## Connections
-- [[.__init__()_23]] - `method` [EXTRACTED]
+- [[.__init__()_24]] - `method` [EXTRACTED]
 - [[._apply_filters()]] - `method` [EXTRACTED]
 - [[._build_timeout_fallback_response()]] - `method` [EXTRACTED]
 - [[._emit_failover_notice()]] - `method` [EXTRACTED]
@@ -34,24 +34,34 @@ tags:
 - [[._record_failover_event()]] - `method` [EXTRACTED]
 - [[._scan_inbound()]] - `method` [EXTRACTED]
 - [[._scan_request_data()]] - `method` [EXTRACTED]
+- [[._suppress_qwen3_thinking()]] - `method` [EXTRACTED]
+- [[._widen_optional_tool_param_types()]] - `method` [EXTRACTED]
 - [[.get_stats()_4]] - `method` [EXTRACTED]
 - [[.proxy_messages()]] - `method` [EXTRACTED]
 - [[.proxy_messages_streaming()]] - `method` [EXTRACTED]
+- [[HTTPForwarder]] - `semantically_similar_to` [INFERRED]
+- [[Hermes v0.16.0 OpenAI-Client Compatibility Incident (3-day cron outage)]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy_1]] - `uses` [INFERRED]
 - [[LLMProxy_2]] - `uses` [INFERRED]
-- [[LLMProxy_4]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `shares_data_with` [EXTRACTED]
+- [[Post-Retry Rate Limit Failover Tests]] - `references` [EXTRACTED]
 - [[Proxies LLM API calls (Anthropic, OpenAI, Google) through the security pipeline.]] - `rationale_for` [EXTRACTED]
+- [[Round 2 Security Hardening Tests]] - `references` [EXTRACTED]
+- [[SecurityPipeline]] - `references` [AMBIGUOUS]
+- [[SecurityPipeline (external, referenced)]] - `shares_data_with` [EXTRACTED]
 - [[_FakeSanitizer]] - `uses` [INFERRED]
 - [[_FakeSanitizer_1]] - `uses` [INFERRED]
 - [[_FakeToolACL]] - `uses` [INFERRED]
 - [[_TrackingInjector]] - `uses` [INFERRED]
+- [[__init__.py_7]] - `conceptually_related_to` [INFERRED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
 - [[_proxy_with_connect_refused()]] - `calls` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
+- [[list_security_modules()]] - `conceptually_related_to` [INFERRED]
 - [[llm_proxy.py]] - `contains` [EXTRACTED]
 - [[make_proxy()]] - `calls` [EXTRACTED]
 - [[test_backend_unavailable_warning_rate_limited()]] - `calls` [EXTRACTED]
+- [[test_chat_completions_alias.py]] - `calls` [EXTRACTED]
 - [[test_claude_via_openai_path.py]] - `imports` [EXTRACTED]
 - [[test_cloud_backend_connect_failure_still_returns_502()]] - `calls` [EXTRACTED]
 - [[test_credential_injector_called_in_streaming_path()]] - `calls` [EXTRACTED]
@@ -63,7 +73,7 @@ tags:
 - [[test_gemini_via_openai_path.py]] - `imports` [EXTRACTED]
 - [[test_llm_proxy.py]] - `imports` [EXTRACTED]
 - [[test_llm_proxy_failover.py]] - `imports` [EXTRACTED]
-- [[test_llm_proxy_local_parity.py]] - `imports` [EXTRACTED]
+- [[test_llm_proxy_local_parity.py]] - `tests` [EXTRACTED]
 - [[test_proxy_failover_on_post_retry_429()]] - `calls` [EXTRACTED]
 - [[test_proxy_gemini_translation_failure_falls_through_gracefully()]] - `calls` [EXTRACTED]
 - [[test_proxy_messages_cloud_mode_keeps_claude_and_uses_anthropic()]] - `calls` [EXTRACTED]
@@ -81,4 +91,4 @@ tags:
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `calls` [EXTRACTED]
 - [[test_streaming_tool_acl_skips_unknown_user()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Llm_Proxy

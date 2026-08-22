@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "docs/vault"
+community: "Integration Guide (api)"
 location: "L248"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Integration_Guide_api
 ---
 
 # MCP Proxy Configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCP Server Integration_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide_api

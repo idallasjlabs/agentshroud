@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Main (cli)"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Main_cli
 ---
 
 # List all contributors with roles and groups.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_users()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Main_cli

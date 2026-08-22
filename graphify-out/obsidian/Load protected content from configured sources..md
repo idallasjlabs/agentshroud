@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Prompt Protection (security)"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Prompt_Protection_security
 ---
 
 # Load protected content from configured sources.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._load_protected_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Prompt_Protection_security

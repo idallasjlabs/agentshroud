@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "docs/runbooks"
+community: "Kill switch procedure (08 - Runbooks)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Kill_switch_procedure_08_-_Runbooks
 ---
 
 # Kill Switch Procedure
@@ -23,4 +23,4 @@ tags:
 - [[Related Notes_68]] - `contains` [EXTRACTED]
 - [[When to Use]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Kill_switch_procedure_08_-_Runbooks

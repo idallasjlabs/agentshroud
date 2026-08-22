@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "SOC Service Manager"
+community: "Web Api Coverage"
 location: "L141"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Service_Manager
+  - community/Web_Api_Coverage
 ---
 
 # KillSwitchAction
@@ -40,4 +40,4 @@ tags:
 - [[killswitch()]] - `references` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Service_Manager
+#graphify/code #graphify/INFERRED #community/Web_Api_Coverage

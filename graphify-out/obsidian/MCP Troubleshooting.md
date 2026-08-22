@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Architecture Docs"
+community: "Skill (i-mcpm)"
 location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Skill_i-mcpm
 ---
 
 # MCP Troubleshooting
@@ -16,4 +16,4 @@ tags:
 - [[Common Errors_1]] - `contains` [EXTRACTED]
 - [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm

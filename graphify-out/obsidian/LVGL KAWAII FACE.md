@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (lvgl_kawaii_face)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_lvgl_kawaii_face
 ---
 
 # LVGL KAWAII FACE
@@ -15,9 +15,9 @@ tags:
 - [[Adding to your project]] - `contains` [EXTRACTED]
 - [[Emotions]] - `contains` [EXTRACTED]
 - [[License_2]] - `contains` [EXTRACTED]
-- [[README_90]] - `contains` [EXTRACTED]
+- [[README_127]] - `contains` [EXTRACTED]
 - [[Requirements_1]] - `contains` [EXTRACTED]
 - [[Thread safety]] - `contains` [EXTRACTED]
-- [[Usage_87]] - `contains` [EXTRACTED]
+- [[Usage_127]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_lvgl_kawaii_face

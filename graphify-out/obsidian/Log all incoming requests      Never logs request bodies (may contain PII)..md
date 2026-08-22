@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Competitive Intel Store"
+community: "Ingest API Main & Models"
 location: "L332"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Ingest_API_Main__Models
 ---
 
 # Log all incoming requests      Never logs request bodies (may contain PII).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[log_requests()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API_Main__Models

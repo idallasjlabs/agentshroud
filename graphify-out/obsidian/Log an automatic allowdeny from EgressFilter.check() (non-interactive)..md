@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Docker Deploy Scripts"
+community: "Egress Approval (security)"
 location: "L658"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Egress_Approval_security
 ---
 
 # Log an automatic allow/deny from EgressFilter.check() (non-interactive).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.log_external_decision()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Approval_security

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Setup Docs"
+community: "Security Architecture (security)"
 location: "L487"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Security_Architecture_security
 ---
 
 # Known Issues (Accepted Risks)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Limitations & Residual Risks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Security_Architecture_security

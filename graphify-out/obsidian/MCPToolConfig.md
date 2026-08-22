@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Collaborator Prompt Safety"
+community: "Mcp Proxy"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Collaborator_Prompt_Safety
+  - community/Mcp_Proxy
 ---
 
 # MCPToolConfig
@@ -52,7 +52,7 @@ tags:
 - [[TestProxyRateLimiting]] - `uses` [INFERRED]
 - [[TestProxyResultProcessing]] - `uses` [INFERRED]
 - [[TestProxyStats]] - `uses` [INFERRED]
-- [[TestRateLimiting_1]] - `uses` [INFERRED]
+- [[TestRateLimiting_2]] - `uses` [INFERRED]
 - [[TestResultProcessingAndLifecycle]] - `uses` [INFERRED]
 - [[TestSanitizeAdminPrivateData]] - `uses` [INFERRED]
 - [[TestSensitiveOps]] - `uses` [INFERRED]
@@ -72,4 +72,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Safety
+#graphify/code #graphify/INFERRED #community/Mcp_Proxy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Agentshroud.yaml (03 - Configuration)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Agentshroudyaml_03_-_Configuration
 ---
 
 # LOG_LEVEL
@@ -19,4 +19,4 @@ tags:
 - [[Set In_2]] - `contains` [EXTRACTED]
 - [[Values_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Agentshroudyaml_03_-_Configuration

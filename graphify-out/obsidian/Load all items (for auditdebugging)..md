@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
+community: "Store (approval_queue)"
 location: "L139"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Store_approval_queue
 ---
 
 # Load all items (for audit/debugging).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.load_all()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Store_approval_queue
