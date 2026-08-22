@@ -146,6 +146,18 @@ COPY docker/bots/hermes/heartbeat.sh  /usr/local/bin/agentshroud-heartbeat.sh
 COPY docker/bots/hermes/s6/dashboard-bridge  /etc/s6-overlay/s6-rc.d/agentshroud-dashboard-bridge
 COPY docker/bots/hermes/dashboard_bridge.py  /usr/local/bin/agentshroud-dashboard-bridge.py
 
+# Docker relay — dumb TCP passthrough to docker-socket-proxy on a loopback port.
+# Connecting the Docker CLI directly to docker-socket-proxy:2375 over TCP fails
+# with a spurious 405 on the CLI's second request on the connection (the
+# version GET that follows its _ping negotiation probe), which silently
+# disabled the sandboxed terminal tool for every Hermes cron job
+# (check_terminal_requirements returns False) — see docker_proxy_relay.py's
+# docstring for the full investigation. DOCKER_HOST is pointed at this relay
+# (127.0.0.1, same network namespace as the terminal tool) instead of
+# docker-socket-proxy directly.
+COPY docker/bots/hermes/s6/docker-relay      /etc/s6-overlay/s6-rc.d/agentshroud-docker-relay
+COPY docker/bots/hermes/docker_proxy_relay.py /usr/local/bin/agentshroud-docker-relay.py
+
 # Bake AgentShroud-managed config defaults into the image.
 # init-config.sh merges these into /opt/data on first boot (idempotent).
 COPY docker/config/hermes/ /app/config-defaults/hermes/
@@ -185,16 +197,19 @@ RUN chmod +x /usr/local/bin/start-hermes.sh /usr/local/bin/init-hermes-config.sh
              /usr/local/bin/agentshroud-ssh-exec.sh \
              /usr/local/bin/agentshroud-ssh-write-file.sh \
              /usr/local/bin/agentshroud-dashboard-bridge.py \
+             /usr/local/bin/agentshroud-docker-relay.py \
              /etc/s6-overlay/s6-rc.d/agentshroud-crashwatch/run \
              /etc/s6-overlay/s6-rc.d/agentshroud-heartbeat/run \
              /etc/s6-overlay/s6-rc.d/agentshroud-dashboard-bridge/run \
+             /etc/s6-overlay/s6-rc.d/agentshroud-docker-relay/run \
  && mkdir -p /app/config-defaults /usr/local/lib/agentshroud \
  && chmod 755 /usr/local/lib/agentshroud/render_md_email.py \
  && chmod 755 /usr/local/lib/agentshroud/resolve_model.py \
  && chown -R 10000:10000 /app/config-defaults \
  && touch /etc/s6-overlay/s6-rc.d/user/contents.d/agentshroud-crashwatch \
  && touch /etc/s6-overlay/s6-rc.d/user/contents.d/agentshroud-heartbeat \
- && touch /etc/s6-overlay/s6-rc.d/user/contents.d/agentshroud-dashboard-bridge
+ && touch /etc/s6-overlay/s6-rc.d/user/contents.d/agentshroud-dashboard-bridge \
+ && touch /etc/s6-overlay/s6-rc.d/user/contents.d/agentshroud-docker-relay
 
 # OCI image label — AgentShroud's own product version wrapping this vendor
 # image, NOT Hermes's upstream version (that's HERMES_VERSION in

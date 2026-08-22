@@ -130,8 +130,8 @@
     "semantic_hash": "1207e6255d705bb635377866cc507f0e"
   },
   "docker/scripts/init-openclaw-config.sh": {
-    "mtime": 1787314726.4511359,
-    "ast_hash": "36e16380ce6d8a0a1dce67a227620530",
+    "mtime": 1787350678.3218632,
+    "ast_hash": "f058c914bcc4ed36830b5dfc06e4d21f",
     "semantic_hash": ""
   },
   "docker/scripts/killswitch.sh": {
@@ -490,8 +490,8 @@
     "semantic_hash": "b23118b76107331e4e058135ff37adff"
   },
   "gateway/proxy/llm_proxy.py": {
-    "mtime": 1787314726.4531088,
-    "ast_hash": "bd8cc6da7ed870823a04de05b58b3511",
+    "mtime": 1787350385.6597316,
+    "ast_hash": "be2d1b8a1c0cb334e8cf0c7eec6e92fc",
     "semantic_hash": ""
   },
   "gateway/proxy/llm_quota_detector.py": {
@@ -1925,8 +1925,8 @@
     "semantic_hash": "aaf6604b9713b4364751ee1f928a623a"
   },
   "scripts/asb": {
-    "mtime": 1787314726.4605863,
-    "ast_hash": "41a4ee9d40b30d5c5534c0a91ca202f1",
+    "mtime": 1787350678.4160683,
+    "ast_hash": "96b39f6e3a63f8cd0d82e245ca0c510f",
     "semantic_hash": ""
   },
   "scripts/backup-bot-memory.sh": {
@@ -2510,8 +2510,8 @@
     "semantic_hash": "099683145b7d4c802a73b2d2b163413d"
   },
   "docker/docker-compose.yml": {
-    "mtime": 1787314726.4503098,
-    "ast_hash": "a92479ecc64fc448b66ea1abc9077da3",
+    "mtime": 1787350678.3213868,
+    "ast_hash": "4f13d3138883302f51ff09d5e331fae0",
     "semantic_hash": ""
   },
   "docker/falco/falco.yaml": {
@@ -5025,8 +5025,8 @@
     "semantic_hash": "db7373aebc5128a1784b5cc57cf53779"
   },
   "docker/bots/hermes/resolve_model.py": {
-    "mtime": 1787314726.447978,
-    "ast_hash": "6bb74773a2ef0bdf13ac063f28260900",
+    "mtime": 1787350430.7409947,
+    "ast_hash": "f754862902ca86827a11f7f26d52fb66",
     "semantic_hash": ""
   },
   "docker/bots/hermes/run-standalone.sh": {
@@ -5420,8 +5420,8 @@
     "semantic_hash": "46220461d4d485da8de4d73bfbc5c3e1"
   },
   "gateway/tests/test_hermes_model_resolver.py": {
-    "mtime": 1787314726.4572465,
-    "ast_hash": "7f187ce95ad9939521d978054f908a6d",
+    "mtime": 1787350451.2706187,
+    "ast_hash": "9ee9e21f09f731dfc33245a55b8c6852",
     "semantic_hash": ""
   },
   "gateway/tests/test_intel_endpoint.py": {
@@ -7395,7 +7395,7 @@
     "semantic_hash": ""
   },
   "docker/bots/hermes/patch_telegram_send_base_url.py": {
-    "mtime": 1787264532.9330962,
+    "mtime": 1787314726.4474883,
     "ast_hash": "e80a42a69fe584fb458b5097cb7442ef",
     "semantic_hash": ""
   },
@@ -7990,7 +7990,7 @@
     "semantic_hash": ""
   },
   "CONTINUE-2026-08-17.md": {
-    "mtime": 1787257186.0318189,
+    "mtime": 1787314726.4465249,
     "ast_hash": "20221f1081057413dd8a0245bc2d0ed1",
     "semantic_hash": ""
   },

@@ -40,6 +40,7 @@ resolver = _load_resolver()
 resolve_model = resolver.resolve_model
 strip_provider_prefix = resolver.strip_provider_prefix
 provider_for_model = resolver.provider_for_model
+_apply_stale_alias_correction = resolver._apply_stale_alias_correction
 
 
 # ---------------------------------------------------------------------------
@@ -274,3 +275,39 @@ def test_cli_default_key_is_model(monkeypatch, capsys):
     out = capsys.readouterr().out.strip()
     assert rc == 0
     assert out == "claude-opus-4-7"
+
+
+# ---------------------------------------------------------------------------
+# Stale alias correction (2026-08-21) — qwen3-14b-rapid -> nemotron-3.5-lightning-rapid
+# ---------------------------------------------------------------------------
+
+
+def test_stale_qwen3_rapid_alias_corrected_to_nemotron():
+    assert _apply_stale_alias_correction("qwen3-14b-rapid") == "nemotron-3.5-lightning-rapid"
+
+
+def test_unrelated_model_names_pass_through_uncorrected():
+    for model in ("qwen3:14b", "nemotron-3.5-lightning-rapid", "claude-opus-4-7", ""):
+        assert _apply_stale_alias_correction(model) == model
+
+
+def test_resolve_model_corrects_stale_alias_from_hermes_main_model():
+    model, provider = resolve_model(
+        mode="local-multi",
+        hermes_main_model="openai-local/qwen3-14b-rapid",
+        local_model_ref="",
+        cloud_model_ref="anthropic/claude-opus-4-7",
+    )
+    assert model == "nemotron-3.5-lightning-rapid"
+    assert provider == "ollama"
+
+
+def test_resolve_model_corrects_stale_alias_from_local_model_ref():
+    model, provider = resolve_model(
+        mode="local",
+        hermes_main_model="",
+        local_model_ref="openai-local/qwen3-14b-rapid",
+        cloud_model_ref="",
+    )
+    assert model == "nemotron-3.5-lightning-rapid"
+    assert provider == "ollama"

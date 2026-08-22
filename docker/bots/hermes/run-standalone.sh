@@ -162,6 +162,7 @@ cmd_up() {
     -e API_SERVER_ENABLED="1" \
     -e API_SERVER_HOST="0.0.0.0" \
     -e API_SERVER_PORT="8642" \
+    -e DOCKER_HOST="tcp://127.0.0.1:12375" \
     --security-opt "seccomp=${REPO_DIR}/docker/seccomp/agentshroud-seccomp.json" \
     --tmpfs /tmp:size=128m,mode=1777 \
     --memory 3g \
