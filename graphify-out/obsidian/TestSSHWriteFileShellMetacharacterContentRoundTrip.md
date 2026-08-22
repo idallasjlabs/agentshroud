@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Security Fixes & SSH Write Endpoint"
 location: "L591"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/scripts/sync-cve-registrypy
+  - community/Security_Fixes__SSH_Write_Endpoint
 ---
 
 # TestSSHWriteFileShellMetacharacterContentRoundTrip
@@ -29,4 +29,4 @@ tags:
 - [[SSHWriteResult]] - `uses` [INFERRED]
 - [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/INFERRED #community/Security_Fixes__SSH_Write_Endpoint

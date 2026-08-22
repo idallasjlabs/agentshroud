@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "CHEATSHEET.md"
 type: "document"
-community: "docs/vault"
-location: "L620"
+community: "Cheatsheet"
+location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Cheatsheet
 ---
 
 # Tests
 
 ## Connections
-- [[0.9.0 — featv0.9.0-soc-team-collab — Sentinel (2026-03-18)]] - `contains` [EXTRACTED]
+- [[AgentShroud Operations Cheat Sheet]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Cheatsheet

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Troubleshooting (runbooks)"
 location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Troubleshooting_runbooks
 ---
 
 # Tests Failing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Issues_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting_runbooks

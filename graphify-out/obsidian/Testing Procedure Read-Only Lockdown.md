@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Development Workflow Read Only (security)"
 location: "L292"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Development_Workflow_Read_Only_security
 ---
 
 # Testing Procedure: Read-Only Lockdown
@@ -18,4 +18,4 @@ tags:
 - [[Lockdown Procedure]] - `contains` [EXTRACTED]
 - [[Pre-Lockdown Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read_Only_security

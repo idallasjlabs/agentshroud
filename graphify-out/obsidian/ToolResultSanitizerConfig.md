@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "RBAC & Ingest Middleware"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/RBAC__Ingest_Middleware
 ---
 
 # ToolResultSanitizerConfig
 
 ## Connections
-- [[.__init__()_122]] - `references` [EXTRACTED]
+- [[.__init__()_126]] - `references` [EXTRACTED]
 - [[.setup_method()_37]] - `calls` [EXTRACTED]
 - [[.test_convenience_function()]] - `calls` [EXTRACTED]
 - [[.test_custom_config()_3]] - `calls` [EXTRACTED]
@@ -32,10 +32,11 @@ tags:
 - [[TestIntegration_1]] - `uses` [INFERRED]
 - [[TestToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[TestToolResultSanitizerConfig]] - `uses` [INFERRED]
+- [[ToolResultSanitizer_1]] - `references` [EXTRACTED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[sanitize_tool_result()]] - `references` [EXTRACTED]
 - [[test_tool_result_sanitizer_enhanced.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

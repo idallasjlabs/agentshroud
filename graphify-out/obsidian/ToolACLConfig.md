@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "Tool ACL & Group RBAC"
 location: "L170"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval__FastAPI_Ingest
+  - community/Tool_ACL__Group_RBAC
 ---
 
 # ToolACLConfig
 
 ## Connections
-- [[.__init__()_117]] - `references` [EXTRACTED]
+- [[.__init__()_121]] - `references` [EXTRACTED]
 - [[.effective_admin()]] - `method` [EXTRACTED]
 - [[.effective_collaborator_allowed()]] - `method` [EXTRACTED]
 - [[.effective_private()]] - `method` [EXTRACTED]
@@ -49,4 +49,4 @@ tags:
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/INFERRED #community/Tool_ACL__Group_RBAC

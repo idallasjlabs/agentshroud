@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "Tool Result Pii"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Telegram_Proxy_Test_Suite
+  - community/Tool_Result_Pii
 ---
 
 # ToolResultSanitizer
 
 ## Connections
-- [[.__init__()_121]] - `method` [EXTRACTED]
+- [[.__init__()_125]] - `method` [EXTRACTED]
 - [[._extract_dict_content()]] - `method` [EXTRACTED]
 - [[._extract_scannable_content()]] - `method` [EXTRACTED]
 - [[._get_sanitizer_for_tool()]] - `method` [EXTRACTED]
@@ -26,8 +26,10 @@ tags:
 - [[.test_icloud_contact_scanning()]] - `calls` [EXTRACTED]
 - [[.test_initialization()_5]] - `calls` [EXTRACTED]
 - [[.test_sanitize_disabled()]] - `calls` [EXTRACTED]
+- [[0.9 PII Confidence Floor (CLAUDE.md §7.8)]] - `conceptually_related_to` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any_8]] - `uses` [INFERRED]
+- [[DifferentialPIIDetector]] - `semantically_similar_to` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -44,9 +46,11 @@ tags:
 - [[TestToolResultPIIConfig]] - `uses` [INFERRED]
 - [[TestToolResultSanitizer]] - `uses` [INFERRED]
 - [[Tool result PII sanitizer with per-tool configuration]] - `rationale_for` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `semantically_similar_to` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
+- [[US_SSN regex tightened to exclude CVE IDs]] - `conceptually_related_to` [INFERRED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/INFERRED #community/Tool_Result_Pii

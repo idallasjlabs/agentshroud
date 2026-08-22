@@ -1,12 +1,12 @@
 ---
 source_file: "shortcuts/README.md"
 type: "document"
-community: "docs/vault"
+community: "Readme (shortcuts)"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Readme_shortcuts
 ---
 
 # The `/forward` contract (authoritative)
@@ -17,4 +17,4 @@ tags:
 - [[Response body — `ForwardResponse`]] - `contains` [EXTRACTED]
 - [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Readme_shortcuts

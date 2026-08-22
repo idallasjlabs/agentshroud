@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_version_routes.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Version Routes"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Version_Routes
 ---
 
 # TestVersionRoutes
@@ -26,5 +26,6 @@ tags:
 - [[.test_upgrade_requires_approval()]] - `method` [EXTRACTED]
 - [[.test_upgrade_with_approval()]] - `method` [EXTRACTED]
 - [[test_version_routes.py]] - `contains` [EXTRACTED]
+- [[version_routes APIRouter — apiv1versions]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Version_Routes

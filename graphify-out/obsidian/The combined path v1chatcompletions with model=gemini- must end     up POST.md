@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gemini_via_openai_path.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Chat Completions Alias"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Chat_Completions_Alias
 ---
 
 # The combined path: /v1/chat/completions with model=gemini-* must end     up POST
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_proxy_rewrites_gemini_via_openai_path()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Chat_Completions_Alias

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "Tool Result Pii"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Telegram_Proxy_Test_Suite
+  - community/Tool_Result_Pii
 ---
 
 # ToolResultPIIConfig
 
 ## Connections
-- [[.__init__()_120]] - `method` [EXTRACTED]
-- [[.__init__()_121]] - `references` [EXTRACTED]
+- [[.__init__()_124]] - `method` [EXTRACTED]
+- [[.__init__()_125]] - `references` [EXTRACTED]
 - [[.get_config_for_tool()]] - `method` [EXTRACTED]
 - [[.set_config()]] - `calls` [EXTRACTED]
 - [[.test_default_config()_6]] - `calls` [EXTRACTED]
@@ -46,4 +46,4 @@ tags:
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/INFERRED #community/Tool_Result_Pii

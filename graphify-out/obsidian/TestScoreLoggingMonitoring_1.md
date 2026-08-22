@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "tests/startup_smoke"
+community: "Scorecard Scoring"
 location: "L438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/tests/startup_smoke
+  - community/Scorecard_Scoring
 ---
 
 # TestScoreLoggingMonitoring
@@ -17,4 +17,4 @@ tags:
 - [[.test_two_with_wazuh()]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/tests/startup_smoke
+#graphify/code #graphify/EXTRACTED #community/Scorecard_Scoring

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Skill (i-data)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-data
 ---
 
 # The 400-Line Rule
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Code Review (CR) (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Skill_i-data

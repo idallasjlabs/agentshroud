@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_benchmark_regression.py"
 type: "rationale"
-community: "Security Docs"
+community: "Benchmark Regression"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Benchmark_Regression
 ---
 
 # Time a function over N iterations, return mean ms.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._time_fn()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Benchmark_Regression

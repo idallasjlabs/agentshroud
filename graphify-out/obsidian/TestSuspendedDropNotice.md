@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Progressive Lockdown"
 location: "L256"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Progressive_Lockdown
 ---
 
 # TestSuspendedDropNotice
@@ -21,4 +21,4 @@ tags:
 - [[Verify suspended users get a drop notice (rate-limited to avoid spam).]] - `rationale_for` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Progressive_Lockdown

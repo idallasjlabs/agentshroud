@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Tool ACL & Group RBAC"
 location: "L206"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Tool_ACL__Group_RBAC
 ---
 
 # ToolACLEnforcer
 
 ## Connections
-- [[.__init__()_117]] - `method` [EXTRACTED]
+- [[.__init__()_121]] - `method` [EXTRACTED]
 - [[._can_use_tool_impl()]] - `method` [EXTRACTED]
 - [[._get_group_tool_allowlist()]] - `method` [EXTRACTED]
 - [[._get_role()]] - `method` [EXTRACTED]
@@ -37,7 +37,6 @@ tags:
 - [[.test_trust_deny_wins_over_acl()]] - `calls` [EXTRACTED]
 - [[.test_unknown_tool_falls_through_to_acl()]] - `calls` [EXTRACTED]
 - [[Enforces tool-level access control based on user role and group membership.]] - `rationale_for` [EXTRACTED]
-- [[GET socv1tool-acl{entity_id}]] - `calls` [EXTRACTED]
 - [[GroupRole]] - `uses` [INFERRED]
 - [[GroupRoleResolver]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
@@ -85,4 +84,4 @@ tags:
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Tool_ACL__Group_RBAC

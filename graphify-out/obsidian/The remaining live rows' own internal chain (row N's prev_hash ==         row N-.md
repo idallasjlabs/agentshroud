@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "rationale"
-community: "Architecture Docs"
+community: "Audit Archive"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Audit_Archive
 ---
 
 # The remaining live rows' own internal chain (row N's prev_hash ==         row N-
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_live_forward_chain_still_valid_after_archival()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Archive

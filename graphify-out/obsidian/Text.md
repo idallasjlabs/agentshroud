@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Palette (colors)"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Palette_colors
 ---
 
 # Text
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Neutral Colors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Palette_colors

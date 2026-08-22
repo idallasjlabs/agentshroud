@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (gh-issues)"
 location: "L501"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_gh-issues
 ---
 
 # Timeout Handling
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 5 — Spawn Sub-agents (Parallel)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_gh-issues

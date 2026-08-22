@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Group RBAC Roles"
-location: "L7973"
+community: "Telegram Proxy Inbound"
+location: "L8004"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/Telegram_Proxy_Inbound
 ---
 
 # Tests for lockdown UX: /unlock fix, collaborator notifications, /locked, immunit
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestProgressiveLockdownUX]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Audit Export Pipeline"
+community: "Security Hardening"
 location: "L766"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Audit_Export_Pipeline
+  - community/Security_Hardening
 ---
 
 # TestSecureZero
@@ -36,4 +36,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Audit_Export_Pipeline
+#graphify/code #graphify/INFERRED #community/Security_Hardening

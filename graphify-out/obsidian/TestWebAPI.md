@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Runtime Engines"
 location: "L660"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Runtime_Engines
 ---
 
 # TestWebAPI
@@ -33,4 +33,4 @@ tags:
 - [[Test the management API endpoints with mocked runtime.]] - `rationale_for` [EXTRACTED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Runtime_Engines

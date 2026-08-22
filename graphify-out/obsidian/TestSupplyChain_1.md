@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Security Audit & Watchtower Tests"
 location: "L1094"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # TestSupplyChain
@@ -18,7 +18,6 @@ tags:
 - [[.test_no_eval_or_exec_in_security()]] - `method` [EXTRACTED]
 - [[.test_no_hardcoded_secrets_in_source()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
-- [[CanaryResult]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -54,4 +53,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests

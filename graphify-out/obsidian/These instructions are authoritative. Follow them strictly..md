@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "docs/agentshroud-knowledge.md"
+community: "Postmortem (ISSUE_TEMPLATE)"
 location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/agentshroud-knowledgemd
+  - community/Postmortem_ISSUE_TEMPLATE
 ---
 
 # These instructions are authoritative. Follow them strictly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CLAUDE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/agentshroud-knowledgemd
+#graphify/document #graphify/EXTRACTED #community/Postmortem_ISSUE_TEMPLATE

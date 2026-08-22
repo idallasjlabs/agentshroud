@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "skills/openclaw"
+community: "Security Policies (references)"
 location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Security_Policies_references
 ---
 
 # Threat Model
@@ -16,4 +16,4 @@ tags:
 - [[What We Don't Protect Against]] - `contains` [EXTRACTED]
 - [[What We Protect Against]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Security_Policies_references

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "CHANGELOG.md"
+community: "Agentshroud Manager"
 location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Agentshroud_Manager
 ---
 
 # TestSecurityReview
@@ -17,4 +17,4 @@ tags:
 - [[.test_valid_version()]] - `method` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/code #graphify/EXTRACTED #community/Agentshroud_Manager

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Bot Skill Config"
+community: "RBAC & Ingest Middleware"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/RBAC__Ingest_Middleware
 ---
 
 # ToolChainAnalyzer
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_118]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_122]] - `method` [EXTRACTED]
 - [[._calculate_risk_score()]] - `method` [EXTRACTED]
 - [[._cleanup_old_sessions()_1]] - `method` [EXTRACTED]
 - [[._detect_chain_patterns()]] - `method` [EXTRACTED]
@@ -37,6 +37,7 @@ tags:
 - [[.test_tool_chain_analyzer_instantiates()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any_8]] - `uses` [INFERRED]
+- [[CorrelationSummary]] - `semantically_similar_to` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Main tool chain analysis engine.      Tracks sequences of tool calls and identif]] - `rationale_for` [EXTRACTED]
@@ -52,6 +53,8 @@ tags:
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
 - [[TestShellBleedPatterns]] - `uses` [INFERRED]
 - [[TestToolChainAnalyzer_1]] - `uses` [INFERRED]
+- [[ToolChainAnalyzer._load_custom_patterns]] - `calls` [EXTRACTED]
+- [[ToolChainAnalyzer._load_default_patterns]] - `calls` [EXTRACTED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
@@ -59,4 +62,4 @@ tags:
 - [[tool_chain_analyzer()]] - `calls` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

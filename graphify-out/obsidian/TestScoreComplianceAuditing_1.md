@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Scorecard Scoring"
 location: "L473"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Scorecard_Scoring
 ---
 
 # TestScoreComplianceAuditing
@@ -19,4 +19,4 @@ tags:
 - [[.test_zero_when_not_run()_1]] - `method` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Scorecard_Scoring

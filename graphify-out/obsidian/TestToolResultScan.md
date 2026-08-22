@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "docs/runbooks"
+community: "Prompt Guard"
 location: "L242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Prompt_Guard
 ---
 
 # TestToolResultScan
@@ -24,4 +24,4 @@ tags:
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[test_prompt_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/runbooks
+#graphify/code #graphify/EXTRACTED #community/Prompt_Guard

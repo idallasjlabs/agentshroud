@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Audit Specification (security)"
 location: "L253"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Audit_Specification_security
 ---
 
 # Tier-Based Retention Strategy
@@ -18,4 +18,4 @@ tags:
 - [[Tier 3 Debug and Diagnostic Events (1 Year)]] - `contains` [EXTRACTED]
 - [[Tier 4 High-Volume Events (90 Days)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Audit_Specification_security

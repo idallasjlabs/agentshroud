@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Observatory Mode"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Observatory_Mode
 ---
 
 # TestSetMode
@@ -21,11 +21,10 @@ tags:
 - [[.test_set_enforce_mode()]] - `method` [EXTRACTED]
 - [[.test_set_monitor_mode()]] - `method` [EXTRACTED]
 - [[.test_set_observatory_mode()]] - `method` [EXTRACTED]
-- [[GatewayConfig_1]] - `uses` [INFERRED]
 - [[KillSwitchConfig]] - `uses` [INFERRED]
 - [[KillSwitchMonitor]] - `uses` [INFERRED]
 - [[ModeRequest]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Observatory_Mode

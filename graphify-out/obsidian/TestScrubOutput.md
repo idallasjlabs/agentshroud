@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Env Guard (security)"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Env_Guard_security
 ---
 
 # TestScrubOutput
@@ -19,4 +19,4 @@ tags:
 - [[.test_scrubs_openai_key()]] - `method` [EXTRACTED]
 - [[test_env_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Env_Guard_security

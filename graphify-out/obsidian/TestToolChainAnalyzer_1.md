@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Tool Chain & CVE Triage"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # TestToolChainAnalyzer
@@ -35,15 +35,11 @@ tags:
 - [[.test_time_window_expiry()]] - `method` [EXTRACTED]
 - [[ChainAction]] - `uses` [INFERRED]
 - [[ChainMatch]] - `uses` [INFERRED]
-- [[ChainPattern]] - `uses` [INFERRED]
 - [[ParamScanResult]] - `uses` [INFERRED]
 - [[ReversibilityScore]] - `uses` [INFERRED]
-- [[RiskLevel_3]] - `uses` [INFERRED]
-- [[SessionChainContext]] - `uses` [INFERRED]
+- [[RiskLevel_4]] - `uses` [INFERRED]
 - [[Test cases for ToolChainAnalyzer class.]] - `rationale_for` [EXTRACTED]
-- [[Test proper initialization of ToolChainAnalyzer.]] - `rationale_for` [EXTRACTED]
-- [[ToolCall]] - `uses` [INFERRED]
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

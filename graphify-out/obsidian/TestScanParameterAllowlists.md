@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Main Endpoints"
 location: "L436"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Main_Endpoints
 ---
 
 # TestScanParameterAllowlists
@@ -25,4 +25,4 @@ tags:
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Main_Endpoints

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "docs/runbooks"
+community: "Wazuh Client.py (Security Modules)"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Wazuh_Clientpy_Security_Modules
 ---
 
 # Threat Model
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Wazuh_Clientpy_Security_Modules

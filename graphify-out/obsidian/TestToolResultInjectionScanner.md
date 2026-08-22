@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Tool Chain & CVE Triage"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # TestToolResultInjectionScanner
@@ -18,11 +18,9 @@ tags:
 - [[.test_ignore_instructions_injection_high_severity()]] - `method` [EXTRACTED]
 - [[.test_xml_function_injection_detection()]] - `method` [EXTRACTED]
 - [[InjectionAction]] - `uses` [INFERRED]
-- [[InjectionResult]] - `uses` [INFERRED]
 - [[InjectionSeverity]] - `uses` [INFERRED]
-- [[Set up test fixtures._2]] - `rationale_for` [EXTRACTED]
 - [[Test cases for ToolResultInjectionScanner.]] - `rationale_for` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[test_tool_injection_scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

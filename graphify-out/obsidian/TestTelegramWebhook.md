@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "Setup Docs"
+community: "Channel Ownership"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Channel_Ownership
 ---
 
 # TestTelegramWebhook
@@ -20,4 +20,4 @@ tags:
 - [[.test_valid_payload_returns_200()]] - `method` [EXTRACTED]
 - [[test_channel_ownership.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Setup_Docs
+#graphify/code #graphify/EXTRACTED #community/Channel_Ownership

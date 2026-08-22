@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # ToolResultInjectionScanner
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_119]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_123]] - `method` [EXTRACTED]
 - [[._detect_encoded_injection()]] - `method` [EXTRACTED]
 - [[._detect_unicode_obfuscation()]] - `method` [EXTRACTED]
 - [[.scan_tool_result()_3]] - `method` [EXTRACTED]
@@ -24,7 +24,6 @@ tags:
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PromptGuard]] - `semantically_similar_to` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[RovoBlast Attack (Atlassian Rovo AI)]] - `implements` [EXTRACTED]
@@ -37,6 +36,7 @@ tags:
 - [[TestSanitization]] - `uses` [INFERRED]
 - [[TestToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[TestUnicodeObfuscation]] - `uses` [INFERRED]
+- [[ToolResultSanitizer_1]] - `conceptually_related_to` [INFERRED]
 - [[ToolTier]] - `uses` [INFERRED]
 - [[WS-E RT-2 Inbound Encoding Bypass Fix Rationale]] - `rationale_for` [EXTRACTED]
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
@@ -54,4 +54,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

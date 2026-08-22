@@ -1,22 +1,19 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Custom Skills"
+community: "Multi Turn Tracker (security)"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Multi_Turn_Tracker_security
 ---
 
 # ThresholdConfig
 
 ## Connections
-- [[.__init__()_97]] - `calls` [EXTRACTED]
+- [[.__init__()_100]] - `calls` [EXTRACTED]
 - [[Configuration for alert thresholds.]] - `rationale_for` [EXTRACTED]
-- [[TestMultiTurnTracker_1]] - `uses` [INFERRED]
-- [[TestResponseConsistency]] - `uses` [INFERRED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
-- [[test_multi_turn_tracker.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Multi_Turn_Tracker_security

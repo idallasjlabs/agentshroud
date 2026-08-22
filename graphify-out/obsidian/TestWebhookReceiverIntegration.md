@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Middleware & Session Isolation"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Middleware__Session_Isolation
 ---
 
 # TestWebhookReceiverIntegration
@@ -19,13 +19,11 @@ tags:
 - [[.test_webhook_conversation_logging()]] - `method` [EXTRACTED]
 - [[.test_webhook_session_context_injection()]] - `method` [EXTRACTED]
 - [[.test_webhook_user_id_extraction()]] - `method` [EXTRACTED]
-- [[ConversationMessage]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[Test WebhookReceiver integration with session isolation.]] - `rationale_for` [EXTRACTED]
-- [[UserSession]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_session_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Middleware__Session_Isolation

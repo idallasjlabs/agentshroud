@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Middleware & Session Isolation"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Middleware__Session_Isolation
 ---
 
 # TestUserSessionManager
@@ -23,13 +23,11 @@ tags:
 - [[.test_session_listing_authorization()]] - `method` [EXTRACTED]
 - [[.test_session_prompt_isolation()]] - `method` [EXTRACTED]
 - [[.test_trust_level_per_user()]] - `method` [EXTRACTED]
-- [[ConversationMessage]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[Test the UserSessionManager for per-user isolation.]] - `rationale_for` [EXTRACTED]
-- [[UserSession]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[test_session_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Middleware__Session_Isolation

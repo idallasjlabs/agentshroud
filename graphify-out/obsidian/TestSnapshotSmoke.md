@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Triage Cve Mitigations"
 location: "L270"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Triage_Cve_Mitigations
 ---
 
 # TestSnapshotSmoke
@@ -17,4 +17,4 @@ tags:
 - [[.test_openclaw_snapshot_registers_backlog_as_under_review()]] - `method` [EXTRACTED]
 - [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Triage_Cve_Mitigations

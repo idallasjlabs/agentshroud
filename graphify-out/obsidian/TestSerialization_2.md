@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Triage Cve Mitigations"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Triage_Cve_Mitigations
 ---
 
 # TestSerialization
@@ -18,4 +18,4 @@ tags:
 - [[.test_entry_to_py_roundtrips()]] - `method` [EXTRACTED]
 - [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Triage_Cve_Mitigations

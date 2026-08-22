@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/things-mac/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (summarize)"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_summarize
 ---
 
 # Things 3 CLI
 
 ## Connections
-- [[SKILL_169]] - `contains` [EXTRACTED]
+- [[SKILL_233]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_summarize

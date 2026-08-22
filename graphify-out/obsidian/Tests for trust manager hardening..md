@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Audit Export Pipeline"
+community: "Security Hardening"
 location: "L888"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Security_Hardening
 ---
 
 # Tests for trust manager hardening.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustManagerHardened]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Security_Hardening

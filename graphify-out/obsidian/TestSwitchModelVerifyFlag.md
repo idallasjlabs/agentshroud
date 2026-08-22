@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "Web Control Center"
+community: "Switch Model Idempotent"
 location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_Control_Center
+  - community/Switch_Model_Idempotent
 ---
 
 # TestSwitchModelVerifyFlag
@@ -17,4 +17,4 @@ tags:
 - [[.test_verify_flag_with_model_ref()]] - `method` [EXTRACTED]
 - [[test_switch_model_idempotent.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_Control_Center
+#graphify/code #graphify/EXTRACTED #community/Switch_Model_Idempotent

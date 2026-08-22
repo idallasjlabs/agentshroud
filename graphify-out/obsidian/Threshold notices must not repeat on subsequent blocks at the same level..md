@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Group RBAC Roles"
-location: "L8174"
+community: "Telegram Proxy Inbound"
+location: "L8275"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/Telegram_Proxy_Inbound
 ---
 
 # Threshold notices must not repeat on subsequent blocks at the same level.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collab_threshold_notices_fire_only_once_per_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

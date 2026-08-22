@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "Planning Docs"
+community: "Log Sanitizer.py (Security Modules)"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Log_Sanitizerpy_Security_Modules
 ---
 
 # Threat Model
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Log_Sanitizerpy_Security_Modules

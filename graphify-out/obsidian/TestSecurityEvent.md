@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Planning Docs"
+community: "Soc Bots"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Soc_Bots
 ---
 
 # TestSecurityEvent
@@ -17,4 +17,4 @@ tags:
 - [[.test_severity_ordering()_1]] - `method` [EXTRACTED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Soc_Bots

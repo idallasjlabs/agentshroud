@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "Community 1498"
+community: "Tool Acl (security)"
 location: "L370"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1498
+  - community/Tool_Acl_security
 ---
 
 # ToolACLEnforcer.can_use_tool_in_group_context()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PRIVATE_TOOLS (owner-only tool set)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1498
+#graphify/code #graphify/EXTRACTED #community/Tool_Acl_security

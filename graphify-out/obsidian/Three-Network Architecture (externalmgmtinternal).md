@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "concept"
-community: "Architecture Docs"
+community: "Adr 003 Two Network (adr)"
 tags:
   - graphify/concept
   - graphify/AMBIGUOUS
-  - community/Architecture_Docs
+  - community/Adr_003_Two_Network_adr
 ---
 
 # Three-Network Architecture (external/mgmt/internal)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ADR-003 Two-Network Container Isolation]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/concept #graphify/AMBIGUOUS #community/Architecture_Docs
+#graphify/concept #graphify/AMBIGUOUS #community/Adr_003_Two_Network_adr

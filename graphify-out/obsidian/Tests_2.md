@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "browser-extension/README.md"
 type: "document"
-community: "docs/vault"
-location: "L643"
+community: "Readme (browser-extension)"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Readme_browser-extension
 ---
 
 # Tests
 
 ## Connections
-- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
+- [[Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Readme_browser-extension

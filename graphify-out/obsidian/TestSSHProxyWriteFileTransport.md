@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Ssh Write File Endpoint"
 location: "L430"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/scripts/sync-cve-registrypy
+  - community/Ssh_Write_File_Endpoint
 ---
 
 # TestSSHProxyWriteFileTransport
@@ -34,4 +34,4 @@ tags:
 - [[Unit tests for SSHProxy.write_file() — verifies pathcontent travel as     DATA]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/INFERRED #community/Ssh_Write_File_Endpoint

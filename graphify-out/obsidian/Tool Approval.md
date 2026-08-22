@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Copilot Cli Setup (.github)"
 location: "L253"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Copilot_Cli_Setup_github
 ---
 
 # Tool Approval
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security & Permissions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Copilot_Cli_Setup_github

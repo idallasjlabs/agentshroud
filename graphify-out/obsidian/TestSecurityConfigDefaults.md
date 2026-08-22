@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "docs/testing"
+community: "All Modules Enforce"
 location: "L37"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/testing
+  - community/All_Modules_Enforce
 ---
 
 # TestSecurityConfigDefaults
@@ -36,11 +36,11 @@ tags:
 - [[PathIsolationConfig]] - `uses` [INFERRED]
 - [[PathIsolationManager]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
-- [[SecurityConfig_2]] - `uses` [INFERRED]
+- [[SecurityConfig_3]] - `uses` [INFERRED]
 - [[SecurityModuleConfig]] - `uses` [INFERRED]
 - [[SubagentMonitorConfig]] - `uses` [INFERRED]
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[Verify SecurityConfig and SecurityModuleConfig default to enforce.]] - `rationale_for` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/docs/testing
+#graphify/code #graphify/INFERRED #community/All_Modules_Enforce

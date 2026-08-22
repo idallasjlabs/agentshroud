@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "scripts/cve-registry-manual-review.md"
+community: "Scanner Integration Coverage"
 location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/cve-registry-manual-reviewmd
+  - community/Scanner_Integration_Coverage
 ---
 
 # TestTrivyImageSummaries
@@ -18,4 +18,4 @@ tags:
 - [[.test_timestamp_suffix_strip_branch()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/cve-registry-manual-reviewmd
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Coverage

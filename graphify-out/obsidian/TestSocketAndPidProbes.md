@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "tests/startup_smoke"
+community: "Scanner Integration Coverage"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/tests/startup_smoke
+  - community/Scanner_Integration_Coverage
 ---
 
 # TestSocketAndPidProbes
@@ -17,4 +17,4 @@ tags:
 - [[.test_fluent_bit_running_true_with_live_pid()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/tests/startup_smoke
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Coverage

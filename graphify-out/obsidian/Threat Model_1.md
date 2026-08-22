@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Ssh Security Review (docs)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Ssh_Security_Review_docs
 ---
 
 # Threat Model
@@ -20,4 +20,4 @@ tags:
 - [[D - Denial of Service]] - `contains` [EXTRACTED]
 - [[SSH Security Review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Ssh_Security_Review_docs

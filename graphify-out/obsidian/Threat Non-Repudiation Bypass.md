@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Security Docs"
+community: "Threat Model (security)"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Threat_Model_security
 ---
 
 # Threat: Non-Repudiation Bypass
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[R - Repudiation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Threat_Model_security
