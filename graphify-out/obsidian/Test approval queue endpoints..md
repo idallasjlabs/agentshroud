@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Main Endpoints"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Main_Endpoints
 ---
 
 # Test approval queue endpoints.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestApprovalEndpoints]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Main_Endpoints

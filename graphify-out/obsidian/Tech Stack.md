@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "ESP32 Firmware"
+community: "Readme (dashboard)"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Readme_dashboard
 ---
 
 # Tech Stack
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Readme_dashboard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "Competitive Intel Store"
+community: "Config Validation & Router"
 location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Config_Validation__Router
 ---
 
 # Test content with multiple instances of same PII type
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_multiple_same_type_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/rationale #graphify/EXTRACTED #community/Config_Validation__Router

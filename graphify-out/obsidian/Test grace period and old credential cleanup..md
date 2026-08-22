@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Security Docs"
+community: "Key Rotation"
 location: "L380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Key_Rotation
 ---
 
 # Test grace period and old credential cleanup.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_grace_period_cleanup()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Key_Rotation

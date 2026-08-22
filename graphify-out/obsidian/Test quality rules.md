@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Planning Docs"
+community: "Claude"
 location: "L208"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Claude
 ---
 
 # Test quality rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[4) TEST-DRIVEN DEVELOPMENT (DEFAULT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Claude

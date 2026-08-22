@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Setup Guide (setup)"
 location: "L413"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Setup_Guide_setup
 ---
 
 # Test a Message
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 7 Verify Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Setup_Guide_setup

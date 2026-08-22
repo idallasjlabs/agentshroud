@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Xml Leak Filter"
 location: "L17"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Xml_Leak_Filter
 ---
 
 # Test cases for XMLLeakFilter.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestXMLLeakFilter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Xml_Leak_Filter

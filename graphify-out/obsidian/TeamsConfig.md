@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Group Workspace Isolation"
+community: "Group Config & Collaborator Responses"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Group_Workspace_Isolation
+  - community/Group_Config__Collaborator_Responses
 ---
 
 # TeamsConfig
@@ -102,7 +102,7 @@ tags:
 - [[teams()_2]] - `calls` [EXTRACTED]
 - [[teams()_3]] - `calls` [EXTRACTED]
 - [[teams()_4]] - `calls` [EXTRACTED]
-- [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
+- [[test_collaborator_responses.py]] - `references` [EXTRACTED]
 - [[test_group_config.py]] - `imports` [EXTRACTED]
 - [[test_group_isolation.py]] - `imports` [EXTRACTED]
 - [[test_group_rbac.py]] - `imports` [EXTRACTED]
@@ -112,4 +112,4 @@ tags:
 - [[test_shared_memory_write_acl.py]] - `imports` [EXTRACTED]
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Group_Workspace_Isolation
+#graphify/code #graphify/INFERRED #community/Group_Config__Collaborator_Responses

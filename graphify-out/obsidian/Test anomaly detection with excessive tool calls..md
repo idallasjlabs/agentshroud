@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "rationale"
-community: "Security Docs"
+community: "Killswitch Monitor & Observatory Mode"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Killswitch_Monitor__Observatory_Mode
 ---
 
 # Test anomaly detection with excessive tool calls.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_anomaly_detection_excessive_tool_calls()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode

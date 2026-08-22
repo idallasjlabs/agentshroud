@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "docs/runbooks"
+community: "Prompt Protection"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Prompt_Protection
 ---
 
 # Test redaction of targeted infrastructure details.          Generic hostnames (e
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_infrastructure_redaction()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/runbooks
+#graphify/rationale #graphify/EXTRACTED #community/Prompt_Protection

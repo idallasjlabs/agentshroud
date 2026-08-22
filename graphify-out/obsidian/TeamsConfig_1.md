@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "Group Workspace Isolation"
+community: "Group Config & Collaborator Responses"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Workspace_Isolation
+  - community/Group_Config__Collaborator_Responses
 ---
 
 # TeamsConfig
@@ -17,8 +17,7 @@ tags:
 - [[.test_get_user_collab_mode_falls_back_to_group()]] - `calls` [EXTRACTED]
 - [[.test_user_override_takes_precedence_over_group()]] - `calls` [EXTRACTED]
 - [[GroupConfig]] - `uses` [INFERRED]
-- [[ProjectConfig]] - `uses` [INFERRED]
 - [[TeamsConfig]] - `uses` [INFERRED]
 - [[teams()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation
+#graphify/code #graphify/EXTRACTED #community/Group_Config__Collaborator_Responses

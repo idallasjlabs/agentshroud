@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "ESP32 Firmware"
+community: "Prompt Protection"
 location: "L275"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Prompt_Protection
 ---
 
 # Test edge cases and error conditions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_edge_cases()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/rationale #graphify/EXTRACTED #community/Prompt_Protection

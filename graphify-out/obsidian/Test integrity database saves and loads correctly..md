@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "docs/vault"
+community: "Memory Lifecycle & Integrity"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # Test integrity database saves and loads correctly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_integrity_database_persistence()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

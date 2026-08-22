@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "docs/reviews"
+community: "Output Canary"
 location: "L106"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/reviews
+  - community/Output_Canary
 ---
 
 # Test handling of partial canary matches.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_partial_canary_match_handling()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/reviews
+#graphify/rationale #graphify/EXTRACTED #community/Output_Canary

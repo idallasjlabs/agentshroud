@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Custom Skills"
+community: "Outbound Filter"
 location: "L519"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Outbound_Filter
 ---
 
 # Test cases for the widened fabricated_security_notice pattern.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFabricatedSecurityNotice]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Custom_Skills
+#graphify/rationale #graphify/EXTRACTED #community/Outbound_Filter

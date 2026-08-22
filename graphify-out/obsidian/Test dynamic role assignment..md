@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
-location: "L73"
+community: "Rbac"
+location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Rbac
 ---
 
 # Test dynamic role assignment.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_role_assignment()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Rbac

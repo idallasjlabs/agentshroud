@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Auth"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Auth
 ---
 
 # Test rate limiter allows requests under limit
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_rate_limiter_allows_requests()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Auth

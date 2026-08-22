@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Telegram Proxy Test Suite"
+community: "Tool Result Pii"
 location: "L334"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/Tool_Result_Pii
 ---
 
 # Test middleware configuration with missing tool_result_pii config
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_middleware_set_config_missing()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Result_Pii

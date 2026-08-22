@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "skills/openclaw"
+community: "Key Rotation"
 location: "L65"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Key_Rotation
 ---
 
 # Test default config includes policies for common credential types.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_default_config_has_common_policies()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw
+#graphify/rationale #graphify/EXTRACTED #community/Key_Rotation

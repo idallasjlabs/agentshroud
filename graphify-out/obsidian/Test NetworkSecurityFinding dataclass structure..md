@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Network Validator (security)"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Network_Validator_security
 ---
 
 # Test NetworkSecurityFinding dataclass structure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_network_security_finding_structure()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Network_Validator_security

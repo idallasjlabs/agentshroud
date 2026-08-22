@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (github)"
 location: "L138"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_github
 ---
 
 # Templates
@@ -16,4 +16,4 @@ tags:
 - [[Issue Triage]] - `contains` [EXTRACTED]
 - [[PR Review Summary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_github

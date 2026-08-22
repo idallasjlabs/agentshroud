@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: ".github/COPILOT_CLI_SETUP.md"
+community: "Egress Approval (security)"
 location: "L295"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/github/COPILOT_CLI_SETUPmd
+  - community/Egress_Approval_security
 ---
 
 # Test cleanup of expired pending requests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_cleanup_expired_requests()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Approval_security

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "Path Isolation"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Path_Isolation
 ---
 
 # Test blocked result creation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_blocked_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/Path_Isolation

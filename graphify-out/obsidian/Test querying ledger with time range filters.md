@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "rationale"
-community: "docs/vault"
+community: "Ledger"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Ledger
 ---
 
 # Test querying ledger with time range filters
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_query_with_time_filters()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Ledger

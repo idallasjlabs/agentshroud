@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
-location: "L340"
+community: "RBAC & Ingest Middleware"
+location: "L339"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/RBAC__Ingest_Middleware
 ---
 
 # Test RBAC integration with middleware.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRBACIntegration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

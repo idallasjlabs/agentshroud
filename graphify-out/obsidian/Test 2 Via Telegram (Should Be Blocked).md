@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "docs/vault"
+community: "Credential Protection Implemented (security)"
 location: "L185"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Credential_Protection_Implemented_security
 ---
 
 # Test 2: Via Telegram (Should Be Blocked)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🧪 Testing the Protection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Credential_Protection_Implemented_security

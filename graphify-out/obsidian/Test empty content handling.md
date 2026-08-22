@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "README.md"
+community: "Sanitizer"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/READMEmd
+  - community/Sanitizer
 ---
 
 # Test empty content handling
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_empty_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/READMEmd
+#graphify/rationale #graphify/EXTRACTED #community/Sanitizer

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
+source_file: ".agents/skills/i-pr/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-pr)"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-pr
 ---
 
 # Technical Detail
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Content Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-pr

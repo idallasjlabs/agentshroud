@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Tool Chain & CVE Triage"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # Test cases for ToolResultInjectionScanner.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolResultInjectionScanner]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

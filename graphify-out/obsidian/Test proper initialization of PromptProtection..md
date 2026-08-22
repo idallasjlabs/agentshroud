@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "skills/openclaw"
+community: "Prompt Protection"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Prompt_Protection
 ---
 
 # Test proper initialization of PromptProtection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_initialization()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw
+#graphify/rationale #graphify/EXTRACTED #community/Prompt_Protection

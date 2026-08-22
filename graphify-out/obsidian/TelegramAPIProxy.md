@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Cross-Bot Trust Ledger"
-location: "L389"
+community: "Telegram Proxy Core"
+location: "L395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/Telegram_Proxy_Core
 ---
 
 # TelegramAPIProxy
 
 ## Connections
-- [[.__init__()_37]] - `method` [EXTRACTED]
+- [[.__init__()_39]] - `method` [EXTRACTED]
 - [[._active_bot_id()]] - `method` [EXTRACTED]
 - [[._active_send_token()]] - `method` [EXTRACTED]
 - [[._answer_callback_query()]] - `method` [EXTRACTED]
@@ -155,16 +155,18 @@ tags:
 - [[ApprovalMode]] - `uses` [INFERRED]
 - [[AsyncMock]] - `uses` [INFERRED]
 - [[BlockingPipeline]] - `uses` [INFERRED]
+- [[CollaboratorActivityTracker.record_activity]] - `calls` [INFERRED]
 - [[DelegationPrivilege]] - `uses` [INFERRED]
+- [[EgressApprovalQueue]] - `shares_data_with` [INFERRED]
 - [[EncodingDetectingPipeline]] - `uses` [INFERRED]
 - [[FakePipelineResult]] - `uses` [INFERRED]
 - [[FakePipelineResult_1]] - `uses` [INFERRED]
 - [[FakeRBAC]] - `uses` [INFERRED]
 - [[FakeRBAC_1]] - `uses` [INFERRED]
-- [[FastAPI app (main.py)]] - `references` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
 - [[PassthroughPipeline]] - `uses` [INFERRED]
 - [[PassthroughPipeline_1]] - `uses` [INFERRED]
+- [[PipelineResult]] - `calls` [EXTRACTED]
 - [[PipelineResult_1]] - `uses` [INFERRED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
 - [[Proxies Telegram Bot API calls through the security pipeline.]] - `rationale_for` [EXTRACTED]
@@ -174,6 +176,7 @@ tags:
 - [[TelegramAPIProxy_1]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_2]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_3]] - `uses` [INFERRED]
+- [[TelegramAPIProxy_4]] - `uses` [INFERRED]
 - [[TestBotIsMentioned]] - `uses` [INFERRED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `uses` [INFERRED]
 - [[TestCollabLockdownNotifications]] - `uses` [INFERRED]
@@ -244,6 +247,7 @@ tags:
 - [[TestTrackerGetHealth]] - `uses` [INFERRED]
 - [[TestUnlockCommand]] - `uses` [INFERRED]
 - [[TestWebSearchLog]] - `uses` [INFERRED]
+- [[UpdateReplayBuffer]] - `conceptually_related_to` [INFERRED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
@@ -252,9 +256,10 @@ tags:
 - [[test_group_workspace_manager.py]] - `imports` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `imports` [EXTRACTED]
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
+- [[test_slack_proxy_coverage.py]] - `references` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
-- [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
+- [[test_telegram_proxy_inbound.py]] - `tests` [EXTRACTED]
 - [[test_telegram_proxy_multibot.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Core

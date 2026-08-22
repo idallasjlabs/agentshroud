@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-15-sequence-telegram.svg"
 type: "concept"
-community: "Bot Skill Config"
+community: "Diagram 15 Sequence Telegram (images)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Diagram_15_Sequence_Telegram_images
 ---
 
 # Telegram API
@@ -14,4 +14,4 @@ tags:
 - [[Gateway (HMAC auth check, PII redaction via Presidio, route to agent)]] - `calls` [EXTRACTED]
 - [[Isaiah (Telegram)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Diagram_15_Sequence_Telegram_images

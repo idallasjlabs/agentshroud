@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "Competitive Intel Store"
+community: "Main Simple"
 location: "L270"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Main_Simple
 ---
 
 # Test ApprovalDecision with valid data
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_approval_decision_valid()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/rationale #graphify/EXTRACTED #community/Main_Simple

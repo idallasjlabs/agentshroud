@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Git Guard (security)"
 location: "L952"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Git_Guard_security
 ---
 
 # Test log sanitization and information leakage prevention.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLoggingSecurity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Git_Guard_security

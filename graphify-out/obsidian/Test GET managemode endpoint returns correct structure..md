@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "Security Docs"
+community: "Killswitch Monitor & Observatory Mode"
 location: "L514"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Killswitch_Monitor__Observatory_Mode
 ---
 
 # Test GET /manage/mode endpoint returns correct structure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_get_observatory_mode_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode

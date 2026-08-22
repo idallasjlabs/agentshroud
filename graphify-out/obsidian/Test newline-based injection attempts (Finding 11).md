@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Ssh Proxy"
 location: "L167"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Ssh_Proxy
 ---
 
 # Test newline-based injection attempts (Finding #11)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInjectionNewline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Ssh_Proxy

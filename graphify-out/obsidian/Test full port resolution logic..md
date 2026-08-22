@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_port_manager.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Port Manager"
 location: "L88"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Port_Manager
 ---
 
 # Test full port resolution logic.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResolveports]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Port_Manager

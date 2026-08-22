@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Tool Chain & CVE Triage"
 location: "L340"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # Test getting session statistics.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_session_stats()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

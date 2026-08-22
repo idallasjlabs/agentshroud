@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/README.md"
+source_file: "docker/config/hermes/skills/i-tw/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (i-tw)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_i-tw
 ---
 
 # Technical Writer (TW)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_78]] - `contains` [EXTRACTED]
 - [[Usage_79]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_i-tw

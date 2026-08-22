@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
-location: "L87"
+community: "Rbac"
+location: "L88"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Rbac
 ---
 
 # Test getting users by role.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_get_users_by_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Rbac

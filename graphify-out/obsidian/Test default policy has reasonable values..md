@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "skills/openclaw"
+community: "Key Rotation"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Key_Rotation
 ---
 
 # Test default policy has reasonable values.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_default_policy_values()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw
+#graphify/rationale #graphify/EXTRACTED #community/Key_Rotation

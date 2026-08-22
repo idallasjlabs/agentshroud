@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Docker Deploy Scripts"
+community: "Outbound Filter"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Outbound_Filter
 ---
 
 # Test filter initializes with default configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_initialization_default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/rationale #graphify/EXTRACTED #community/Outbound_Filter

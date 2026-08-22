@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Community 1515"
+community: "Memory Lifecycle & Integrity"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1515
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # Test configuration from environment variables.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_config_from_env()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1515
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

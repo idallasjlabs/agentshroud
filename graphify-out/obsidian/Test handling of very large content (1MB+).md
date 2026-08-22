@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "Competitive Intel Store"
+community: "Config Validation & Router"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Config_Validation__Router
 ---
 
 # Test handling of very large content (1MB+)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_very_large_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/rationale #graphify/EXTRACTED #community/Config_Validation__Router
