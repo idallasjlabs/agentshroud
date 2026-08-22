@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "docs/vault"
+community: "Version Routes.py (Gateway Core)"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Version_Routespy_Gateway_Core
 ---
 
 # Imports From / Exports To
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[version_routes.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Version_Routespy_Gateway_Core

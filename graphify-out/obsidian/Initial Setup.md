@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (scripts)"
 location: "L136"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_scripts
 ---
 
 # Initial Setup
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Tasks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_scripts

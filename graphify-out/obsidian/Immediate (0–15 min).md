@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
+source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-ps)"
 location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-ps
 ---
 
 # Immediate (0–15 min)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Deployment Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ps

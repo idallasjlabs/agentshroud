@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Adr 001 Transparent Proxy (adr)"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Adr_001_Transparent_Proxy_adr
 ---
 
 # Implementation Status
@@ -20,4 +20,4 @@ tags:
 - [[Step 3 Update agentshroud.yaml]] - `contains` [EXTRACTED]
 - [[Step 4 Test the Protection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Adr_001_Transparent_Proxy_adr

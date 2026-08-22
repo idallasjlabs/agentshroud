@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ps/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
 type: "document"
-community: "docs/claude-security-audit-prompt.md"
+community: "Skill (i-ps)"
 location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/claude-security-audit-promptmd
+  - community/Skill_i-ps
 ---
 
 # Immediate (0–15 min)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Deployment Verification_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/claude-security-audit-promptmd
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ps

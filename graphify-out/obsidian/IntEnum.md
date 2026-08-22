@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Gateway Test Suite"
+community: "Skill Guard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_Guard
 ---
 
 # IntEnum
@@ -19,4 +19,4 @@ tags:
 - [[ThreatLevel_1]] - `inherits` [EXTRACTED]
 - [[TrustLevel_1]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Skill_Guard

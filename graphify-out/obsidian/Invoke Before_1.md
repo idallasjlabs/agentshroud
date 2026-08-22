@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ps/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
 type: "document"
-community: "docs/claude-security-audit-prompt.md"
+community: "Skill (i-ps)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/claude-security-audit-promptmd
+  - community/Skill_i-ps
 ---
 
 # Invoke Before
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/claude-security-audit-promptmd
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ps

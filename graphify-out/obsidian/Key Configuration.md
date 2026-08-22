@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Ssh Config (03 - Configuration)"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Ssh_Config_03_-_Configuration
 ---
 
 # Key Configuration
@@ -16,4 +16,4 @@ tags:
 - [[SSH Config]] - `contains` [EXTRACTED]
 - [[iCloud Services]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Ssh_Config_03_-_Configuration

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Pipeline Unit"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Proxy_Config
+  - community/Pipeline_Unit
 ---
 
 # InstructionEnvelope
@@ -35,4 +35,4 @@ tags:
 - [[test_instruction_envelope.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config
+#graphify/code #graphify/INFERRED #community/Pipeline_Unit

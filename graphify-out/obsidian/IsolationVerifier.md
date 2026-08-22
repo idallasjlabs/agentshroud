@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Hardening"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Hardening
 ---
 
 # IsolationVerifier
 
 ## Connections
-- [[.__init__()_49]] - `method` [EXTRACTED]
+- [[.__init__()_52]] - `method` [EXTRACTED]
 - [[.generate_compose()]] - `method` [EXTRACTED]
 - [[.test_capabilities_not_dropped_flagged()]] - `calls` [EXTRACTED]
 - [[.test_compose_contains_all_agents()]] - `calls` [EXTRACTED]
@@ -39,6 +39,7 @@ tags:
 - [[.verify_shared_nothing()]] - `method` [EXTRACTED]
 - [[.verify_volume_isolation()]] - `method` [EXTRACTED]
 - [[ContainerConfig_1]] - `uses` [INFERRED]
+- [[DriftDetector]] - `shares_data_with` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAgentRegistry]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
@@ -62,4 +63,4 @@ tags:
 - [[test_agent_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Hardening

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Key Rotation"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Key_Rotation
 ---
 
 # Information about a managed credential.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CredentialInfo]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Key_Rotation

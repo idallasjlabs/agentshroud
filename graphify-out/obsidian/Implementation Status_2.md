@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "Architecture Docs"
+community: "Readme (gateway)"
 location: "L118"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Readme_gateway
 ---
 
 # Implementation Status
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Gateway Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_gateway

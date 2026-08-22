@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "Egress & RBAC Security Core"
+community: "Multi Turn Tracker (security)"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Multi_Turn_Tracker_security
 ---
 
 # Initialize the multi-turn tracker.          Args:             config: Configurat
 
 ## Connections
-- [[.__init__()_97]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_100]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/rationale #graphify/EXTRACTED #community/Multi_Turn_Tracker_security

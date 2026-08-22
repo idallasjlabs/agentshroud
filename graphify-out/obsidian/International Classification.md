@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Uspto Application (legal)"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Uspto_Application_legal
 ---
 
 # International Classification
@@ -16,4 +16,4 @@ tags:
 - [[Class 042 — Scientific and Technological Services (Primary)]] - `contains` [EXTRACTED]
 - [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Uspto_Application_legal

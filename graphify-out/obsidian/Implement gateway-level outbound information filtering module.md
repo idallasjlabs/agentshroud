@@ -1,19 +1,19 @@
 ---
 source_file: "docs/planning/redteam/06-outbound-info-filter.md"
 type: "document"
-community: "docs/vault"
+community: "06 Outbound Info Filter (redteam)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/06_Outbound_Info_Filter_redteam
 ---
 
 # Implement gateway-level outbound information filtering module
 
 ## Connections
 - [[06-outbound-info-filter]] - `contains` [EXTRACTED]
-- [[Constraints_8]] - `contains` [EXTRACTED]
+- [[Constraints_9]] - `contains` [EXTRACTED]
 - [[Evidence_6]] - `contains` [EXTRACTED]
 - [[Problem_9]] - `contains` [EXTRACTED]
 - [[Relationship to chunk 00-information-disclosure]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[Severity_9]] - `contains` [EXTRACTED]
 - [[Verification_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/06_Outbound_Info_Filter_redteam

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "scripts/canary-deploy.sh"
+community: "Skill (i-mcpm-doctor)"
 location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/canary-deploysh
+  - community/Skill_i-mcpm-doctor
 ---
 
 # Issue: "GitHub MCP authentication failed"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Issues & Fixes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/canary-deploysh
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-doctor

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Architecture Docs"
+community: "Agentshroud Ieee Paper (papers)"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Agentshroud_Ieee_Paper_papers
 ---
 
 # III. Threat Model
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]] - `contains` [EXTRACTED]
 - [[III-A. Attacker Model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Agentshroud_Ieee_Paper_papers

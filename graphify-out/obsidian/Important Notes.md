@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "gateway/tools"
+community: "Bot Development Team Rpi (setup)"
 location: "L457"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gateway/tools
+  - community/Bot_Development_Team_Rpi_setup
 ---
 
 # Important Notes
@@ -20,4 +20,4 @@ tags:
 - [[Power Supply]] - `contains` [EXTRACTED]
 - [[Security Hardening Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gateway/tools
+#graphify/document #graphify/EXTRACTED #community/Bot_Development_Team_Rpi_setup

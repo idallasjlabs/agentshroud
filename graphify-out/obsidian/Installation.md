@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "branding/colors"
+community: "Copilot Cli Setup (.github)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/colors
+  - community/Copilot_Cli_Setup_github
 ---
 
 # Installation
@@ -18,4 +18,4 @@ tags:
 - [[macOS  Linux]] - `contains` [EXTRACTED]
 - [[npm (Cross-platform)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/colors
+#graphify/document #graphify/EXTRACTED #community/Copilot_Cli_Setup_github

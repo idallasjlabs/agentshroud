@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-03-gateway-components.svg"
 type: "image"
-community: "Bot Skill Config"
+community: "Adr 005 Sha256 Hash (adr)"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - community/Adr_005_Sha256_Hash_adr
 ---
 
 # Ingest API (POST /ingest)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[gatewayingest_apimain.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/image #graphify/INFERRED #community/Adr_005_Sha256_Hash_adr

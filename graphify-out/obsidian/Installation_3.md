@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (xurl)"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_xurl
 ---
 
 # Installation
@@ -18,4 +18,4 @@ tags:
 - [[npm]] - `contains` [EXTRACTED]
 - [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_xurl

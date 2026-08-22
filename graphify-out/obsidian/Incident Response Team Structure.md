@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Setup Docs"
+community: "Runbook (operations)"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Runbook_operations
 ---
 
 # Incident Response Team Structure
@@ -16,4 +16,4 @@ tags:
 - [[Escalation Chain]] - `contains` [EXTRACTED]
 - [[Primary Roles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Runbook_operations

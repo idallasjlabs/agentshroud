@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Docker Deploy Scripts"
+community: "Egress Approval (security)"
 location: "L160"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Egress_Approval_security
 ---
 
 # Initialize the approval queue.          Args:             rules_file: Path to pe
 
 ## Connections
-- [[.__init__()_71]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_74]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Approval_security

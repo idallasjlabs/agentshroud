@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "docs/project"
+community: "Api (web)"
 location: "L194"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/project
+  - community/Api_web
 ---
 
 # IntelReportStore
 
 ## Connections
-- [[.__init__()_84]] - `method` [EXTRACTED]
+- [[.__init__()_87]] - `method` [EXTRACTED]
 - [[._load_latest_file()]] - `method` [EXTRACTED]
 - [[.load_all()_1]] - `method` [EXTRACTED]
 - [[.load_latest()]] - `method` [EXTRACTED]
@@ -52,4 +52,4 @@ tags:
 - [[test_citation_verifier.py]] - `imports` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/docs/project
+#graphify/code #graphify/INFERRED #community/Api_web

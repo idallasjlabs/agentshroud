@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "rationale"
-community: "docker/QUICKSTART.md"
+community: "Heuristic Classifier"
 location: "L110"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docker/QUICKSTARTmd
+  - community/Heuristic_Classifier
 ---
 
 # InjectionClassifier alias should still work.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_backward_compat_alias()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docker/QUICKSTARTmd
+#graphify/rationale #graphify/EXTRACTED #community/Heuristic_Classifier

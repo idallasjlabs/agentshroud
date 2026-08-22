@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Tool Chain & CVE Triage"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Proxy_Config
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # InjectionAction
@@ -47,4 +47,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config
+#graphify/code #graphify/INFERRED #community/Tool_Chain__CVE_Triage

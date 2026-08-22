@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "web/management-dashboard.html"
-location: "L367"
+community: "Public Info (collaborator-workspace)"
+location: "L98"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web/management-dashboardhtml
+  - community/Public_Info_collaborator-workspace
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
+- [[Architecture_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web/management-dashboardhtml
+#graphify/document #graphify/EXTRACTED #community/Public_Info_collaborator-workspace

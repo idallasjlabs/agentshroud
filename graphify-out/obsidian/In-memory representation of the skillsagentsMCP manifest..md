@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Skills Manifest Sync"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skills_Manifest_Sync
 ---
 
 # In-memory representation of the skills/agents/MCP manifest.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SkillsManifest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Skills_Manifest_Sync

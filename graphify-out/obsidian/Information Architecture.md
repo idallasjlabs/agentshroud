@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
+source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "CHANGELOG.md"
+community: "Skill (i-ux)"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Skill_i-ux
 ---
 
 # Information Architecture
@@ -17,4 +17,4 @@ tags:
 - [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
 - [[Wayfinding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ux

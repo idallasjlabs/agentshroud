@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
+source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "Security Docs"
-location: "L150"
+community: "System Status (project)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/System_Status_project
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
+- [[✅ What's WORKING]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/System_Status_project

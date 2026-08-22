@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Tool Chain & CVE Triage"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # InjectionSeverity
@@ -27,4 +27,4 @@ tags:
 - [[test_tool_result_injection.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

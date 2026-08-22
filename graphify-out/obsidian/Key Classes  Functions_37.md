@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Egress Config.py (Security Modules)"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress_Configpy_Security_Modules
 ---
 
 # Key Classes / Functions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[egress_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Egress_Configpy_Security_Modules

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "docs/vault"
+community: "Integration Guide (api)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Integration_Guide_api
 ---
 
 # Integration Guide
@@ -21,4 +21,4 @@ tags:
 - [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
 - [[integration-guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide_api

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "SOC Dashboard"
+community: "Slack Proxy"
 location: "L659"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Slack_Proxy
 ---
 
 # If the pipeline wants to redact inside blocks JSON, delivery is blocked
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_structured_field_sanitization_blocks_delivery()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy

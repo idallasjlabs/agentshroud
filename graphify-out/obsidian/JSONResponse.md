@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "SOC Router (Collaborator Mgmt)"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/SOC_Router_Collaborator_Mgmt
 ---
 
 # JSONResponse
@@ -17,11 +17,8 @@ tags:
 - [[ContributorManager]] - `uses` [INFERRED]
 - [[SCLCaller]] - `uses` [INFERRED]
 - [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLError]] - `uses` [INFERRED]
 - [[SCLInterface]] - `uses` [INFERRED]
 - [[ServiceManager]] - `uses` [INFERRED]
-- [[Severity_2]] - `uses` [INFERRED]
-- [[WSEventType]] - `uses` [INFERRED]
 - [[_confirmation_required()]] - `calls` [EXTRACTED]
 - [[_process_inbound()]] - `calls` [INFERRED]
 - [[auth_login()]] - `references` [EXTRACTED]
@@ -30,7 +27,6 @@ tags:
 - [[email_send()]] - `calls` [INFERRED]
 - [[emergency_block_egress()]] - `references` [EXTRACTED]
 - [[export_audit()]] - `calls` [EXTRACTED]
-- [[forward_content()]] - `calls` [INFERRED]
 - [[get_collaborator_activity()]] - `references` [EXTRACTED]
 - [[get_sbom()_1]] - `calls` [EXTRACTED]
 - [[global_exception_handler()]] - `calls` [EXTRACTED]
@@ -56,4 +52,4 @@ tags:
 - [[upgrade_gateway()]] - `references` [EXTRACTED]
 - [[upgrade_hermes()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt

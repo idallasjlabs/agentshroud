@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-ux)"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-ux
 ---
 
 # Information Architecture
@@ -17,4 +17,4 @@ tags:
 - [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
 - [[Wayfinding_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ux

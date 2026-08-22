@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Openclaw Setup (setup)"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Openclaw_Setup_setup
 ---
 
 # Initial Configuration
@@ -19,4 +19,4 @@ tags:
 - [[Step 4 Set Up Channels (Optional)]] - `contains` [EXTRACTED]
 - [[Step 5 Configure SSH Access (For Bot to Work on Remote Systems)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Openclaw_Setup_setup

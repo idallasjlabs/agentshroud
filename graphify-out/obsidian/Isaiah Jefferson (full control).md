@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
 type: "concept"
-community: "docs/diagrams"
+community: "Diagram 11 Trust Boundary (images)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Diagram_11_Trust_Boundary_images
 ---
 
 # Isaiah Jefferson (full control)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Gateway (holds 1Password service account)]] - `calls` [EXTRACTED]
 - [[Trust Zone 0 — Owner (Highest Trust)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/diagrams
+#graphify/concept #graphify/EXTRACTED #community/Diagram_11_Trust_Boundary_images

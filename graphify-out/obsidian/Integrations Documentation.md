@@ -1,12 +1,12 @@
 ---
 source_file: "docs/integrations/README.md"
 type: "document"
-community: "examples/agentshroud-with-tool-risk.yaml"
+community: "Diagram 11 Trust Boundary (images)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/examples/agentshroud-with-tool-riskyaml
+  - community/Diagram_11_Trust_Boundary_images
 ---
 
 # Integrations Documentation
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Current Status_4]] - `contains` [EXTRACTED]
 - [[Planned Documents_3]] - `contains` [EXTRACTED]
-- [[README_85]] - `contains` [EXTRACTED]
+- [[README_122]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/examples/agentshroud-with-tool-riskyaml
+#graphify/document #graphify/EXTRACTED #community/Diagram_11_Trust_Boundary_images

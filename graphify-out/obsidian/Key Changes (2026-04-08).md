@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "docs/vault"
+community: "V0.8.0 Release Plan (v0.8)"
 location: "L447"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/V080_Release_Plan_v08
 ---
 
 # Key Changes (2026-04-08)
 
 ## Connections
-- [[Summary_24]] - `contains` [EXTRACTED]
+- [[Summary_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/V080_Release_Plan_v08

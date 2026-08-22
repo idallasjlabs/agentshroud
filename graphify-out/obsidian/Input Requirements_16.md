@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mnemosyne/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
 type: "document"
-community: "docs/vault"
+community: "Skill (i-mnemosyne)"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skill_i-mnemosyne
 ---
 
 # Input Requirements
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mnemosyne — Retention Engineer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mnemosyne

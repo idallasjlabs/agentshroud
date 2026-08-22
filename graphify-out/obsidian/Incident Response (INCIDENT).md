@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/README.md"
+source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (i-production)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_i-production
 ---
 
 # Incident Response (INCIDENT)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_67]] - `contains` [EXTRACTED]
 - [[Usage_68]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_i-production

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Openscap (05 - Dependencies)"
 location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Openscap_05_-_Dependencies
 ---
 
 # Integration Testing
@@ -16,4 +16,4 @@ tags:
 - [[OpenSCAP]] - `contains` [EXTRACTED]
 - [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Openscap_05_-_Dependencies

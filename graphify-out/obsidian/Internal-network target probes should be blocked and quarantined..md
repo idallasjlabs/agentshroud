@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
-location: "L2812"
+community: "Telegram Inbound Proxy Tests"
+location: "L2843"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Telegram_Inbound_Proxy_Tests
 ---
 
 # Internal-network target probes should be blocked and quarantined.
 
 ## Connections
 - [[.test_collaborator_internal_network_probe_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
+- [[.test_collaborator_internal_network_probe_returns_protect_egress_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Proxy_Tests

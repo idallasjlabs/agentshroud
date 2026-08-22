@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Planning Docs"
+community: "Distributed Openclaw Node Architecture (architecture)"
 location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Distributed_Openclaw_Node_Architecture_architecture
 ---
 
 # Key Benefits
@@ -16,6 +16,6 @@ tags:
 - [[2. Enhanced Security]] - `contains` [EXTRACTED]
 - [[3. Advanced Capabilities]] - `contains` [EXTRACTED]
 - [[4. Better Development Workflow]] - `contains` [EXTRACTED]
-- [[Distributed OpenClaw Node Architecture (Raspberry Pi 4)]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Distributed_Openclaw_Node_Architecture_architecture

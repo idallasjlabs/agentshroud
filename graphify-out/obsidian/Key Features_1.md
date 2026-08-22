@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Auth"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Auth
 ---
 
 # Key Features
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Auth

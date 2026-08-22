@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "docs/project"
+community: "Api (web)"
 location: "L1118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Api_web
 ---
 
 # IntelDraftRequest
@@ -20,4 +20,4 @@ tags:
 - [[api.py]] - `contains` [EXTRACTED]
 - [[submit_competitive_intel()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/project
+#graphify/code #graphify/EXTRACTED #community/Api_web

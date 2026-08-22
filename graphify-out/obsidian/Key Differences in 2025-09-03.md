@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "docker/bot-capabilities.md"
+community: "Skill (notion)"
 location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/bot-capabilitiesmd
+  - community/Skill_notion
 ---
 
 # Key Differences in 2025-09-03
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[notion]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd
+#graphify/document #graphify/EXTRACTED #community/Skill_notion

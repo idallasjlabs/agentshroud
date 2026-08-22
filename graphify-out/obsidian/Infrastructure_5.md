@@ -1,17 +1,17 @@
 ---
-source_file: "docs/project/SYSTEM_STATUS.md"
+source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L6"
+community: "Skill (i-sec-offense)"
+location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-sec-offense
 ---
 
 # Infrastructure
 
 ## Connections
-- [[✅ What's WORKING]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-offense

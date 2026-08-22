@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Enhanced Approval Queue"
-location: "L85"
+community: "Rbac Config (security)"
+location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/Rbac_Config_security
 ---
 
 # Initialize user roles based on configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__post_init__()_8]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/Rbac_Config_security

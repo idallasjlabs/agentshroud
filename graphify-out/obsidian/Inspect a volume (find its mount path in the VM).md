@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Colima Docker Guide (runbooks)"
 location: "L211"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Colima_Docker_Guide_runbooks
 ---
 
 # Inspect a volume (find its mount path in the VM)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. Volume Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Colima_Docker_Guide_runbooks

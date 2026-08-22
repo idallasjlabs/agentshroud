@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Security Audit & Watchtower Tests"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Individual canary check result.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CanaryCheck]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

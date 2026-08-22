@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Security Docs"
-location: "L302"
+community: "Llm Proxy (proxy)"
+location: "L441"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Llm_Proxy_proxy
 ---
 
 # Inject per-backend auth for local backends that require it.          Unlike LM S
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._local_backend_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Llm_Proxy_proxy
