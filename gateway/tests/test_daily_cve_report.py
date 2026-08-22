@@ -1403,3 +1403,323 @@ class TestGhsaIngestScheduler:
         )
         # Disk write failed but the in-memory dedup guard was still recorded.
         assert _FROZEN.date().isoformat() in _mod._ghsa_ingest_dates
+
+
+# ── Regression: failed delivery must not be marked "sent" ──────────────────
+#
+# Previously all three schedulers recorded a day as done unconditionally,
+# even when the Telegram send failed. That silently dropped that day's
+# report/alert forever with no retry and no signal. These tests lock in the
+# fix: a failed send is retried (bounded) before the day is ever marked done.
+
+
+class TestRunAndSendCveReportFailedDeliveryNotMarkedSent:
+    @pytest.mark.asyncio
+    async def test_failed_send_does_not_write_stamp_or_mark_sent_date(self, tmp_path, monkeypatch):
+        import gateway.security.daily_cve_report as _mod
+
+        monkeypatch.setattr(_mod, "run_trivy_scan", lambda **_: _make_report())
+        monkeypatch.setattr(_mod, "save_report", lambda r: None)
+        sentinel = tmp_path / "last.txt"
+        monkeypatch.setattr(_mod, "_LAST_REPORT_PATH", sentinel)
+        monkeypatch.setattr(_mod, "_sent_dates", set())
+
+        async def _fake_send(token, chat_id, text, base_url):
+            return False
+
+        monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
+
+        result = await run_and_send_cve_report(bot_token="tok", owner_chat_id="12345")
+
+        assert result["telegram_sent"] is False
+        assert not sentinel.exists()
+        assert _mod._sent_dates == set()
+
+
+class TestCveReportSchedulerRetry:
+    @pytest.mark.asyncio
+    async def test_retries_on_failed_send_before_giving_up(self, tmp_path, monkeypatch):
+        """A failed send retries (bounded) within the same day, not next-day."""
+        import asyncio
+
+        import gateway.security.daily_cve_report as _mod
+
+        _FROZEN = datetime(2026, 7, 14, 12, 0, 0, tzinfo=timezone.utc)
+
+        class _FrozenDateTime(datetime):
+            @classmethod
+            def now(cls, tz=None):
+                return _FROZEN if tz is None else _FROZEN.astimezone(tz)
+
+        monkeypatch.setattr(_mod, "datetime", _FrozenDateTime)
+        monkeypatch.setattr(_mod, "_sent_dates", set())
+        monkeypatch.setattr(_mod, "_report_send_failures", {})
+        monkeypatch.setattr(_mod, "_LAST_REPORT_PATH", tmp_path / "last.txt")
+        monkeypatch.setattr(_mod, "_MAX_SEND_RETRIES_PER_DAY", 3)
+
+        ran = {"count": 0}
+
+        async def _fake_run(**kwargs):
+            ran["count"] += 1
+            return {"telegram_sent": False, "findings": 5}
+
+        monkeypatch.setattr(_mod, "run_and_send_cve_report", _fake_run)
+
+        sleeps = {"count": 0}
+
+        async def _sleep(_secs):
+            sleeps["count"] += 1
+            if sleeps["count"] >= 3:
+                raise asyncio.CancelledError()
+
+        monkeypatch.setattr(_mod.asyncio, "sleep", _sleep)
+
+        past_hour = (_FROZEN.hour - 1) % 24
+        await _mod.cve_report_scheduler(
+            bot_token="tok",
+            owner_chat_id="12345",
+            report_hour=past_hour,
+        )
+
+        # Retried up to the cap (3 attempts), backing off between each — only
+        # marked "sent" once the cap was hit, never on the first failure.
+        assert ran["count"] == 3
+        assert _mod._report_send_failures[_FROZEN.date().isoformat()] == 3
+        assert _FROZEN.date().isoformat() in _mod._sent_dates
+
+    @pytest.mark.asyncio
+    async def test_gives_up_and_marks_sent_after_max_retries(self, tmp_path, monkeypatch):
+        """After the retry cap, the day IS marked done so the loop moves on."""
+        import asyncio
+
+        import gateway.security.daily_cve_report as _mod
+
+        _FROZEN = datetime(2026, 7, 14, 12, 0, 0, tzinfo=timezone.utc)
+
+        class _FrozenDateTime(datetime):
+            @classmethod
+            def now(cls, tz=None):
+                return _FROZEN if tz is None else _FROZEN.astimezone(tz)
+
+        monkeypatch.setattr(_mod, "datetime", _FrozenDateTime)
+        monkeypatch.setattr(_mod, "_sent_dates", set())
+        monkeypatch.setattr(_mod, "_report_send_failures", {})
+        sentinel = tmp_path / "last.txt"
+        monkeypatch.setattr(_mod, "_LAST_REPORT_PATH", sentinel)
+        monkeypatch.setattr(_mod, "_MAX_SEND_RETRIES_PER_DAY", 2)
+
+        ran = {"count": 0}
+
+        async def _fake_run(**kwargs):
+            ran["count"] += 1
+            return {"telegram_sent": False, "findings": 5}
+
+        monkeypatch.setattr(_mod, "run_and_send_cve_report", _fake_run)
+
+        # Call 1 = retry backoff after attempt 1 (must NOT cut the loop short
+        # here, or attempt 2 — the one that hits the cap — never runs). Call 2
+        # = the post-give-up "wait for tomorrow" sleep; raise there to end
+        # the test cleanly once give-up has already happened.
+        sleeps = {"count": 0}
+
+        async def _sleep(_secs):
+            sleeps["count"] += 1
+            if sleeps["count"] >= 2:
+                raise asyncio.CancelledError()
+
+        monkeypatch.setattr(_mod.asyncio, "sleep", _sleep)
+
+        past_hour = (_FROZEN.hour - 1) % 24
+        await _mod.cve_report_scheduler(
+            bot_token="tok",
+            owner_chat_id="12345",
+            report_hour=past_hour,
+        )
+
+        # Second attempt hit the cap (2) — gave up and marked today done so
+        # the scheduler doesn't tight-loop forever on a persistent failure.
+        assert ran["count"] == 2
+        assert _FROZEN.date().isoformat() in _mod._sent_dates
+        assert sentinel.exists()
+
+    @pytest.mark.asyncio
+    async def test_successful_send_marks_sent_immediately_no_retry(self, tmp_path, monkeypatch):
+        import asyncio
+
+        import gateway.security.daily_cve_report as _mod
+
+        _FROZEN = datetime(2026, 7, 14, 12, 0, 0, tzinfo=timezone.utc)
+
+        class _FrozenDateTime(datetime):
+            @classmethod
+            def now(cls, tz=None):
+                return _FROZEN if tz is None else _FROZEN.astimezone(tz)
+
+        monkeypatch.setattr(_mod, "datetime", _FrozenDateTime)
+        monkeypatch.setattr(_mod, "_sent_dates", set())
+        monkeypatch.setattr(_mod, "_report_send_failures", {})
+        monkeypatch.setattr(_mod, "_LAST_REPORT_PATH", tmp_path / "last.txt")
+
+        ran = {"count": 0}
+
+        async def _fake_run(**kwargs):
+            ran["count"] += 1
+            # Mirror what the real function does on success: mark the day sent
+            # using the module's (frozen) clock, matching what the scheduler's
+            # own dedup check reads on its next iteration.
+            _mod._sent_dates.add(_mod.datetime.now(timezone.utc).date().isoformat())
+            return {"telegram_sent": True, "findings": 5}
+
+        monkeypatch.setattr(_mod, "run_and_send_cve_report", _fake_run)
+
+        async def _sleep(_secs):
+            raise asyncio.CancelledError()
+
+        monkeypatch.setattr(_mod.asyncio, "sleep", _sleep)
+
+        past_hour = (_FROZEN.hour - 1) % 24
+        await _mod.cve_report_scheduler(
+            bot_token="tok",
+            owner_chat_id="12345",
+            report_hour=past_hour,
+        )
+
+        # Success on the first try — no retry-failure bookkeeping triggered,
+        # and the loop only ran once (the "wait for tomorrow" sleep raised).
+        assert ran["count"] == 1
+        assert _mod._report_send_failures.get(_FROZEN.date().isoformat(), 0) == 0
+
+
+class TestUpstreamCveCheckSchedulerRetry:
+    @pytest.mark.asyncio
+    async def test_undelivered_new_cves_retries_not_marked_checked(self, tmp_path, monkeypatch):
+        import asyncio
+
+        import gateway.security.daily_cve_report as _mod
+
+        _FROZEN = datetime(2026, 7, 14, 12, 0, 0, tzinfo=timezone.utc)
+
+        class _FrozenDateTime(datetime):
+            @classmethod
+            def now(cls, tz=None):
+                return _FROZEN if tz is None else _FROZEN.astimezone(tz)
+
+        monkeypatch.setattr(_mod, "datetime", _FrozenDateTime)
+        monkeypatch.setattr(_mod, "_upstream_check_dates", set())
+        monkeypatch.setattr(_mod, "_upstream_check_failures", {})
+        monkeypatch.setattr(_mod, "_LAST_UPSTREAM_CHECK_PATH", tmp_path / "last.txt")
+        monkeypatch.setattr(_mod, "_MAX_SEND_RETRIES_PER_DAY", 2)
+
+        ran = {"count": 0}
+
+        async def _fake_all_agents(**kwargs):
+            ran["count"] += 1
+            # Found a new CVE but the alert failed to deliver.
+            return [{"agent_id": "openclaw", "new_cves": 1, "telegram_sent": False}]
+
+        monkeypatch.setattr(_mod, "run_upstream_cve_check_all_agents", _fake_all_agents)
+
+        async def _sleep(_secs):
+            raise asyncio.CancelledError()
+
+        monkeypatch.setattr(_mod.asyncio, "sleep", _sleep)
+
+        past_hour = (_FROZEN.hour - 1) % 24
+        await _mod.upstream_cve_check_scheduler(
+            bot_token="tok",
+            owner_chat_id="12345",
+            report_hour=past_hour,
+        )
+
+        # First attempt failed to deliver a real new-CVE alert — must retry,
+        # not be silently marked "checked" for today.
+        assert ran["count"] == 1
+        assert _FROZEN.date().isoformat() not in _mod._upstream_check_dates
+        assert not (tmp_path / "last.txt").exists()
+
+    @pytest.mark.asyncio
+    async def test_zero_new_cves_marks_checked_immediately(self, tmp_path, monkeypatch):
+        """Nothing to deliver is a legitimate 'done', not a failure to retry."""
+        import asyncio
+
+        import gateway.security.daily_cve_report as _mod
+
+        _FROZEN = datetime(2026, 7, 14, 12, 0, 0, tzinfo=timezone.utc)
+
+        class _FrozenDateTime(datetime):
+            @classmethod
+            def now(cls, tz=None):
+                return _FROZEN if tz is None else _FROZEN.astimezone(tz)
+
+        monkeypatch.setattr(_mod, "datetime", _FrozenDateTime)
+        monkeypatch.setattr(_mod, "_upstream_check_dates", set())
+        monkeypatch.setattr(_mod, "_upstream_check_failures", {})
+        sentinel = tmp_path / "last.txt"
+        monkeypatch.setattr(_mod, "_LAST_UPSTREAM_CHECK_PATH", sentinel)
+
+        async def _fake_all_agents(**kwargs):
+            return [{"agent_id": "openclaw", "new_cves": 0, "telegram_sent": False}]
+
+        monkeypatch.setattr(_mod, "run_upstream_cve_check_all_agents", _fake_all_agents)
+
+        async def _sleep(_secs):
+            raise asyncio.CancelledError()
+
+        monkeypatch.setattr(_mod.asyncio, "sleep", _sleep)
+
+        past_hour = (_FROZEN.hour - 1) % 24
+        await _mod.upstream_cve_check_scheduler(
+            bot_token="tok",
+            owner_chat_id="12345",
+            report_hour=past_hour,
+        )
+
+        assert _FROZEN.date().isoformat() in _mod._upstream_check_dates
+        assert sentinel.exists()
+
+
+class TestGhsaIngestSchedulerRetry:
+    @pytest.mark.asyncio
+    async def test_undelivered_new_advisory_retries_not_marked_ingested(
+        self, tmp_path, monkeypatch
+    ):
+        import asyncio
+
+        import gateway.security.daily_cve_report as _mod
+
+        _FROZEN = datetime(2026, 7, 14, 12, 0, 0, tzinfo=timezone.utc)
+
+        class _FrozenDateTime(datetime):
+            @classmethod
+            def now(cls, tz=None):
+                return _FROZEN if tz is None else _FROZEN.astimezone(tz)
+
+        monkeypatch.setattr(_mod, "datetime", _FrozenDateTime)
+        monkeypatch.setattr(_mod, "_ghsa_ingest_dates", set())
+        monkeypatch.setattr(_mod, "_ghsa_ingest_failures", {})
+        monkeypatch.setattr(_mod, "_LAST_GHSA_INGEST_PATH", tmp_path / "last.txt")
+        monkeypatch.setattr(_mod, "_MAX_SEND_RETRIES_PER_DAY", 2)
+
+        ran = {"count": 0}
+
+        async def _fake_all_agents(**kwargs):
+            ran["count"] += 1
+            return [{"agent_id": "hermes", "new_cves": 1, "telegram_sent": False}]
+
+        monkeypatch.setattr(_mod, "run_upstream_cve_check_all_agents", _fake_all_agents)
+
+        async def _sleep(_secs):
+            raise asyncio.CancelledError()
+
+        monkeypatch.setattr(_mod.asyncio, "sleep", _sleep)
+
+        past_hour = (_FROZEN.hour - 1) % 24
+        await _mod.ghsa_ingest_scheduler(
+            bot_token="tok",
+            owner_chat_id="12345",
+            ingest_hour=past_hour,
+        )
+
+        assert ran["count"] == 1
+        assert _FROZEN.date().isoformat() not in _mod._ghsa_ingest_dates
+        assert not (tmp_path / "last.txt").exists()
