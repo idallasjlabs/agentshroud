@@ -64,7 +64,11 @@ jobs:
       - uses: actions/checkout@v7
 
       - name: Run Trivy filesystem scan
-        uses: aquasecurity/trivy-action@master
+        # Pinned to an immutable, GPG-verified commit (not @master) after the
+        # 2026-03 TeamPCP supply-chain attack force-pushed malicious content to
+        # trivy tags. Verify before bumping: `gh api repos/aquasecurity/trivy-action/commits/<sha>
+        # --jq .commit.verification` must show verified:true for a maintainer signature.
+        uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0
         with:
           scan-type: fs
           scan-ref: .
