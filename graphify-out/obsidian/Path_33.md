@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "Architecture Docs"
+community: "Multi Host"
 location: "L324"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Architecture_Docs
+  - community/Multi_Host
 ---
 
 # Path
@@ -18,4 +18,4 @@ tags:
 - [[_run_wrapper()]] - `references` [EXTRACTED]
 - [[_write_exec()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Architecture_Docs
+#graphify/code #graphify/INFERRED #community/Multi_Host

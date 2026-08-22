@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "README.md"
+community: "Sanitizer"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/READMEmd
+  - community/Sanitizer
 ---
 
 # Phone number with separator must still be redacted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_real_phone_still_redacted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/READMEmd
+#graphify/rationale #graphify/EXTRACTED #community/Sanitizer

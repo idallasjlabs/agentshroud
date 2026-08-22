@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Collaborator Prompt Classifiers"
+community: "Enhanced Approval"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Enhanced_Approval
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_5]] - `references` [EXTRACTED]
+- [[.__init__()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval

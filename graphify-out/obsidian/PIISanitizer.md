@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "docs/vault"
+community: "Security Audit & Watchtower Tests"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/vault
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # PIISanitizer
 
 ## Connections
-- [[.__init__()_15]] - `method` [EXTRACTED]
+- [[.__init__()_16]] - `method` [EXTRACTED]
 - [[._init_presidio()]] - `method` [EXTRACTED]
 - [[._sanitize_presidio()]] - `method` [EXTRACTED]
 - [[._sanitize_regex()]] - `method` [EXTRACTED]
@@ -30,10 +30,11 @@ tags:
 - [[.test_pii_sanitizer_default_enforcement()]] - `calls` [EXTRACTED]
 - [[.test_pii_sanitizer_mode_param()]] - `calls` [EXTRACTED]
 - [[.test_single_message_pipeline_under_100ms()]] - `calls` [EXTRACTED]
-- [[Any_62]] - `uses` [INFERRED]
+- [[Any_63]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
 - [[FastAPI_1]] - `uses` [INFERRED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
+- [[LLMProxy]] - `shares_data_with` [EXTRACTED]
 - [[LogRecord]] - `uses` [INFERRED]
 - [[PII detection and redaction engine      Attempts to use Microsoft Presidio with]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig]] - `uses` [INFERRED]
@@ -46,6 +47,7 @@ tags:
 - [[RedactionResult_3]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `conceptually_related_to` [AMBIGUOUS]
 - [[TelegramAPIProxy_3]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
@@ -123,6 +125,9 @@ tags:
 - [[TestWebSecurity]] - `uses` [INFERRED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
 - [[ToolResultSanitizer]] - `uses` [INFERRED]
+- [[ToolResultSanitizer._get_sanitizer_for_tool]] - `calls` [EXTRACTED]
+- [[ToolResultSanitizer.sanitize_tool_result]] - `calls` [EXTRACTED]
+- [[XML injection-block filtering (function_callsthinkingsystem-reminderinvokeparameter)]] - `rationale_for` [EXTRACTED]
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
 - [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
@@ -131,6 +136,7 @@ tags:
 - [[_make_pii_sanitizer()]] - `calls` [EXTRACTED]
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
+- [[canary-cron.sh embedded Python main()]] - `calls` [EXTRACTED]
 - [[canary_pipeline()]] - `calls` [EXTRACTED]
 - [[client()_16]] - `calls` [EXTRACTED]
 - [[client()_17]] - `calls` [EXTRACTED]
@@ -139,6 +145,7 @@ tags:
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[run()_3]] - `calls` [EXTRACTED]
+- [[run_canary()_1]] - `references` [EXTRACTED]
 - [[sanitizer()_1]] - `calls` [EXTRACTED]
 - [[sanitizer()_2]] - `calls` [EXTRACTED]
 - [[sanitizer()_3]] - `calls` [EXTRACTED]
@@ -148,6 +155,7 @@ tags:
 - [[test_canary.py]] - `imports` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
+- [[test_email_owner_bypasses_pii.py]] - `calls` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 - [[test_filter_xml_blocks.py]] - `imports` [EXTRACTED]
 - [[test_performance.py]] - `imports` [EXTRACTED]
@@ -162,4 +170,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/docs/vault
+#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests

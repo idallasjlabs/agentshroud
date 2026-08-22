@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_archive.py"
+source_file: "tests/startup_smoke/test_wire_llm_settings.js"
 type: "code"
-community: "Architecture Docs"
-location: "L46"
+community: "Wire Llm Settings (startup_smoke)"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Wire_Llm_Settings_startup_smoke
 ---
 
-# Path
+# path
 
 ## Connections
-- [[archive_old_events()]] - `references` [EXTRACTED]
-- [[purge_low_value_events()]] - `references` [EXTRACTED]
+- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Wire_Llm_Settings_startup_smoke

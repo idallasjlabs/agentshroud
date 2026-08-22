@@ -1,18 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Changelog"
 location: "L906"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Changelog
 ---
 
 # Phase 5: Dashboard
 
 ## Connections
 - [[Added]] - `contains` [EXTRACTED]
-- [[Added_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Changelog

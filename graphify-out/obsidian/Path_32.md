@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "Egress Domain Allowlist"
+community: "Mcp Policy"
 location: "L73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Domain_Allowlist
+  - community/Mcp_Policy
 ---
 
 # Path
@@ -17,4 +17,4 @@ tags:
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[_write()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Domain_Allowlist
+#graphify/code #graphify/INFERRED #community/Mcp_Policy

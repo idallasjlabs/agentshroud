@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
+community: "Security Audit & Watchtower Tests"
 location: "L28"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Telegram_Proxy_Test_Suite
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # PIIConfig
 
 ## Connections
-- [[.__init__()_120]] - `references` [EXTRACTED]
+- [[.__init__()_124]] - `references` [EXTRACTED]
 - [[.get_config_for_tool()]] - `references` [EXTRACTED]
 - [[.get_tool_config()]] - `references` [EXTRACTED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[RedactionResult]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests

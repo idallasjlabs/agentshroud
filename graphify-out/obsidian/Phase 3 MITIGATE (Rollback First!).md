@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/SKILL.md"
+source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (i-production)"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-production
 ---
 
 # Phase 3: MITIGATE (Rollback First!)
@@ -19,4 +19,4 @@ tags:
 - [[Step Function Rollback]] - `contains` [EXTRACTED]
 - [[Zabbix Rollback]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-production

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Audit & Watchtower Tests"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # PIISanitizer
@@ -19,8 +19,6 @@ tags:
 - [[EncodingDetector]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[PipelineAction]] - `uses` [INFERRED]
-- [[PipelineResult]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[TrustConfig]] - `uses` [INFERRED]
@@ -28,4 +26,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[_make_pii_sanitizer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests

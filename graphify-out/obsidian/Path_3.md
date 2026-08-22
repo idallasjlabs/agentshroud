@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/browser-fetch.js"
+source_file: "scripts/launch-instance.sh"
 type: "code"
-community: "Gateway Test Suite"
-location: "L8"
+community: "Launch Instance (scripts)"
+location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Launch_Instance_scripts
 ---
 
-# path
+# PATH
 
 ## Connections
-- [[browser-fetch.js]] - `contains` [EXTRACTED]
+- [[launch-instance.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Launch_Instance_scripts

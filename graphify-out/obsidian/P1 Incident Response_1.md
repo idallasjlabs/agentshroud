@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Architecture Docs"
+community: "Skills Guide (i-reference)"
 location: "L254"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Skills_Guide_i-reference
 ---
 
 # P1 Incident Response
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Emergency Procedures_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Skills_Guide_i-reference

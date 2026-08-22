@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Collaborator Response Templates"
+community: "Git Guard (security)"
 location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Git_Guard_security
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_79]] - `calls` [EXTRACTED]
+- [[.__init__()_82]] - `calls` [EXTRACTED]
 - [[._analyze_file_content()]] - `references` [EXTRACTED]
 - [[._analyze_script_file()]] - `references` [EXTRACTED]
 - [[._quarantine_suspicious_files()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[._scan_setup_py()]] - `references` [EXTRACTED]
 - [[.scan_git_repository()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/code #graphify/EXTRACTED #community/Git_Guard_security

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "document"
-community: "Gateway Proxy Layer"
+community: "Skill (peekaboo)"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Skill_peekaboo
 ---
 
 # Peekaboo
@@ -17,9 +17,7 @@ tags:
 - [[Common targeting parameters (most interaction commands)]] - `contains` [EXTRACTED]
 - [[Examples]] - `contains` [EXTRACTED]
 - [[Features (all CLI capabilities, excluding agentMCP)]] - `contains` [EXTRACTED]
-- [[OpenClaw Skill Ecosystem]] - `part_of` [EXTRACTED]
 - [[Quickstart (happy path)]] - `contains` [EXTRACTED]
-- [[SKILL_161]] - `contains` [EXTRACTED]
-- [[macOS UI Automation (Peekaboo)]] - `enables` [EXTRACTED]
+- [[SKILL_225]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Skill_peekaboo

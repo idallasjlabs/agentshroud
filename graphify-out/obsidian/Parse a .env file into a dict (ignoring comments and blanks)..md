@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Config Validation & Router"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Config_Validation__Router
 ---
 
 # Parse a .env file into a dict (ignoring comments and blanks).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_parse_env_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Config_Validation__Router

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Manifest (skills)"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Manifest_skills
 ---
 
 # Path
@@ -18,4 +18,4 @@ tags:
 - [[plan_deploy()]] - `references` [EXTRACTED]
 - [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Manifest_skills

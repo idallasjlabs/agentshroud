@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "rationale"
-community: "Group Workspace Isolation"
+community: "Group Config & Collaborator Responses"
 location: "L228"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Workspace_Isolation
+  - community/Group_Config__Collaborator_Responses
 ---
 
 # Per-user collab_mode override: persists to group_overrides.json and takes     pr
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestUserCollabModeOverride]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Workspace_Isolation
+#graphify/rationale #graphify/EXTRACTED #community/Group_Config__Collaborator_Responses

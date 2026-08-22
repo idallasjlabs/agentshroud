@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "A2a Integration"
 location: "L110"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/A2a_Integration
 ---
 
 # ParsedA2ARequest
@@ -18,4 +18,4 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/A2a_Integration

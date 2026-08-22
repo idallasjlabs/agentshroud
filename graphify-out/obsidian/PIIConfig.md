@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Security Audit & Watchtower Tests"
 location: "L31"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/scripts/sync-cve-registrypy
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # PIIConfig
@@ -19,26 +19,20 @@ tags:
 - [[.pipeline()_1]] - `calls` [EXTRACTED]
 - [[.pipeline()]] - `calls` [EXTRACTED]
 - [[.sanitizer()]] - `calls` [EXTRACTED]
-- [[.sanitizer()_1]] - `calls` [INFERRED]
 - [[.set_config()]] - `calls` [EXTRACTED]
 - [[.test_default_bot_and_sanitizer_configured()]] - `calls` [EXTRACTED]
 - [[.test_default_pii_config_meets_floor()]] - `calls` [EXTRACTED]
 - [[.test_email_content_scanning()]] - `calls` [EXTRACTED]
 - [[.test_icloud_contact_scanning()]] - `calls` [EXTRACTED]
-- [[.test_many_pii_entities()]] - `calls` [INFERRED]
 - [[.test_middleware_set_config_disabled()]] - `calls` [EXTRACTED]
 - [[.test_middleware_set_config_missing()]] - `calls` [EXTRACTED]
 - [[.test_pii_sanitizer_default_enforcement()]] - `calls` [EXTRACTED]
 - [[.test_pii_sanitizer_mode_param()]] - `calls` [EXTRACTED]
-- [[.test_pii_scan_time_independent_of_content()]] - `calls` [INFERRED]
-- [[.test_regex_redos_email()]] - `calls` [INFERRED]
-- [[.test_regex_redos_ssn()]] - `calls` [INFERRED]
 - [[.test_single_message_pipeline_under_100ms()]] - `calls` [EXTRACTED]
 - [[.test_tool_specific_config()]] - `calls` [EXTRACTED]
-- [[.test_unicode_normalization_bypass()]] - `calls` [INFERRED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any_8]] - `uses` [INFERRED]
-- [[Any_62]] - `uses` [INFERRED]
+- [[Any_63]] - `uses` [INFERRED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
@@ -159,6 +153,7 @@ tags:
 - [[_make_pii_sanitizer()]] - `calls` [EXTRACTED]
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
+- [[canary-cron.sh embedded Python main()]] - `calls` [EXTRACTED]
 - [[canary_pipeline()]] - `calls` [EXTRACTED]
 - [[config.py]] - `contains` [EXTRACTED]
 - [[conftest.py]] - `imports` [EXTRACTED]
@@ -167,7 +162,7 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[pii_config()]] - `calls` [EXTRACTED]
 - [[pii_config()_1]] - `calls` [EXTRACTED]
-- [[run()_3]] - `calls` [INFERRED]
+- [[run_canary()_1]] - `references` [EXTRACTED]
 - [[sanitizer()_3]] - `calls` [EXTRACTED]
 - [[sanitizer.py]] - `imports` [EXTRACTED]
 - [[test_canary.py]] - `imports` [EXTRACTED]
@@ -193,4 +188,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests

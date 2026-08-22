@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "docs/vault"
+community: "Performance"
 location: "L336"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Performance
 ---
 
 # PII-laden messages through inbound pipeline — verify redaction + timing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pii_inbound_latency()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Performance

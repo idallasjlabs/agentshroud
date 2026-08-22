@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "docs/reference"
+community: "Config"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/reference
+  - community/Config
 ---
 
 # Path
@@ -17,10 +17,8 @@ tags:
 - [[SSHConfig]] - `uses` [INFERRED]
 - [[_default_mtime()]] - `references` [EXTRACTED]
 - [[config_watcher()]] - `references` [EXTRACTED]
-- [[get_config()_1]] - `calls` [EXTRACTED]
 - [[load_config()]] - `references` [EXTRACTED]
 - [[reload_config()]] - `references` [EXTRACTED]
 - [[resolve_config_path()]] - `references` [EXTRACTED]
-- [[update_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/reference
+#graphify/code #graphify/EXTRACTED #community/Config

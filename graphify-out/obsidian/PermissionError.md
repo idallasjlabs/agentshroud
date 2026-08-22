@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Gateway Test Suite"
+community: "Soc Services Coverage"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Soc_Services_Coverage
 ---
 
 # PermissionError
@@ -18,4 +18,4 @@ tags:
 - [[.test_running_via_proc_scan()_2]] - `calls` [INFERRED]
 - [[GroupAccessDenied]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Soc_Services_Coverage

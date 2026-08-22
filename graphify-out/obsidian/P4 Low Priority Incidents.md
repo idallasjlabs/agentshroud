@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Ssh Configuration (docs)"
 location: "L449"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Ssh_Configuration_docs
 ---
 
 # P4 Low Priority Incidents
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Incident Response Plan]] - `contains` [EXTRACTED]
 - [[ssh-configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Ssh_Configuration_docs

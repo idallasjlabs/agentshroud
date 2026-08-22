@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Mcp Permissions"
 location: "L378"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Dashboard
+  - community/Mcp_Permissions
 ---
 
 # PermissionLevel
@@ -18,4 +18,4 @@ tags:
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Dashboard
+#graphify/code #graphify/INFERRED #community/Mcp_Permissions

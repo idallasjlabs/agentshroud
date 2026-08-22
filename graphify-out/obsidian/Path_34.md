@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Network Validator (security)"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Network_Validator_security
 ---
 
 # Path
@@ -15,4 +15,4 @@ tags:
 - [[NetworkValidator]] - `uses` [INFERRED]
 - [[tmp_compose()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Network_Validator_security

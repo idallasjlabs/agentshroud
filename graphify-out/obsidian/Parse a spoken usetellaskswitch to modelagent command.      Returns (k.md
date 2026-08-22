@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Server (voice_gateway)"
 location: "L599"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Server_voice_gateway
 ---
 
 # Parse a spoken "<use|tell|ask|switch to> <model|agent>" command.      Returns (k
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_parse_model_switch_command()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Server_voice_gateway

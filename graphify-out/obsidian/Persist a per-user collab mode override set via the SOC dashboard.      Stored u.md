@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Group Workspace Isolation"
+community: "SOC Router (Collaborator Mgmt)"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_Workspace_Isolation
+  - community/SOC_Router_Collaborator_Mgmt
 ---
 
 # Persist a per-user collab mode override set via the SOC dashboard.      Stored u
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[persist_user_collab_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_Workspace_Isolation
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt

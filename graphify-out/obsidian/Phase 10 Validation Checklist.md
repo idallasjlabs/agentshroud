@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "chatbot/test_main.py"
+community: "Agentshroud Whitepaper (papers)"
 location: "L413"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/chatbot/test_mainpy
+  - community/Agentshroud_Whitepaper_papers
 ---
 
 # Phase 10: Validation Checklist
@@ -18,4 +18,4 @@ tags:
 - [[GitHub Integration Test]] - `contains` [EXTRACTED]
 - [[System Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/chatbot/test_mainpy
+#graphify/document #graphify/EXTRACTED #community/Agentshroud_Whitepaper_papers

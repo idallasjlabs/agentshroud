@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Privacy Policy"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Privacy_Policy
 ---
 
 # Parse from a YAML/dict representation.          Example YAML:             privac
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_dict()_10]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Privacy_Policy

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: ".agents/skills/i-browser/browse.js"
 type: "code"
-community: "Telegram Inbound Tests"
-location: "L125"
+community: "Browse (i-browser)"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Tests
+  - community/Browse_i-browser
 ---
 
-# Path
+# path
 
 ## Connections
-- [[.__init__()_55]] - `references` [EXTRACTED]
+- [[browse.js_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests
+#graphify/code #graphify/EXTRACTED #community/Browse_i-browser

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "branding/guidelines"
+community: "Skill (i-sec-defense)"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/Skill_i-sec-defense
 ---
 
 # Phase 2: Heat Map Reconstruction
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Audit Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/guidelines
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense

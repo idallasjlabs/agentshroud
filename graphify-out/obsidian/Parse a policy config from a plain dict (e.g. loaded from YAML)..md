@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "A2a Policy Default Failclosed"
 location: "L211"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/A2a_Policy_Default_Failclosed
 ---
 
 # Parse a policy config from a plain dict (e.g. loaded from YAML).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_dict()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/A2a_Policy_Default_Failclosed

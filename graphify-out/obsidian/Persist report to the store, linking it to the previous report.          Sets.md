@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "docs/project"
+community: "Intel Report (security)"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Intel_Report_security
 ---
 
 # Persist *report* to the store, linking it to the previous report.          Sets
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.save()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/project
+#graphify/rationale #graphify/EXTRACTED #community/Intel_Report_security

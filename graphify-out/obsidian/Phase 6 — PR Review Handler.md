@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (gh-issues)"
 location: "L557"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_gh-issues
 ---
 
 # Phase 6 — PR Review Handler
@@ -20,4 +20,4 @@ tags:
 - [[Step 6.6 — Review Results]] - `contains` [EXTRACTED]
 - [[gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_gh-issues

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Audit Export Pipeline"
+community: "Security Hardening"
 location: "L45"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Audit_Export_Pipeline
+  - community/Security_Hardening
 ---
 
 # PatternRule
 
 ## Connections
-- [[.__init__()_106]] - `references` [EXTRACTED]
+- [[.__init__()_109]] - `references` [EXTRACTED]
 - [[.test_custom_pattern()]] - `calls` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Audit_Export_Pipeline
+#graphify/code #graphify/INFERRED #community/Security_Hardening

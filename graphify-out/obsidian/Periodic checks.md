@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "Gateway Ingest API"
+community: "Skill (healthcheck)"
 location: "L169"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - community/Skill_healthcheck
 ---
 
 # Periodic checks
@@ -15,4 +15,4 @@ tags:
 - [[OpenClaw Host Hardening]] - `contains` [EXTRACTED]
 - [[Required prompt to schedule (always)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/document #graphify/EXTRACTED #community/Skill_healthcheck

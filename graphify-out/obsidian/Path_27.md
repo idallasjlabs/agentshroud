@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Custom Skills"
+community: "Credential Injector"
 location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Credential_Injector
 ---
 
 # Path
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._make_anthropic_injector()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Credential_Injector

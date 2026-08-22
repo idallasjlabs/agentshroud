@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "docs/reference"
+community: "Config"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/reference
+  - community/Config
 ---
 
 # Path
@@ -16,4 +16,4 @@ tags:
 - [[_load()]] - `references` [EXTRACTED]
 - [[_write()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/reference
+#graphify/code #graphify/EXTRACTED #community/Config

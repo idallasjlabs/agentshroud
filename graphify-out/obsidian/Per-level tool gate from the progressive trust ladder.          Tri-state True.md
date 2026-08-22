@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Security Regressions V1 2"
 location: "L292"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Regressions_V1_2
 ---
 
 # Per-level tool gate from the progressive trust ladder.          Tri-state: True/
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_tool_allowed()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Security_Regressions_V1_2

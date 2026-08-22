@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "Forward Routing & Approval"
+community: "Path Isolation"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Path_Isolation
 ---
 
 # PathRewriteResult
@@ -22,4 +22,4 @@ tags:
 - [[path_isolation.py]] - `contains` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/code #graphify/EXTRACTED #community/Path_Isolation

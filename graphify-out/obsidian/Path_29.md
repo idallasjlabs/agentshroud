@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Generate Cve Page"
 location: "L249"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Generate_Cve_Page
 ---
 
 # Path
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._run_generate()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Generate_Cve_Page

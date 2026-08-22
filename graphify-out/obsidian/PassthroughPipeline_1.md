@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Telegram Inbound Proxy Tests"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Telegram_Inbound_Proxy_Tests
 ---
 
 # PassthroughPipeline
 
 ## Connections
 - [[._make_proxy()]] - `calls` [EXTRACTED]
-- [[.process_inbound()_9]] - `method` [EXTRACTED]
+- [[.process_inbound()_10]] - `method` [EXTRACTED]
 - [[.test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - `calls` [EXTRACTED]
 - [[.test_blocked_command_is_quarantined()]] - `calls` [EXTRACTED]
 - [[.test_blocked_command_uppercase_is_quarantined()]] - `calls` [EXTRACTED]
@@ -177,6 +177,7 @@ tags:
 - [[.test_owner_pending_command_shows_pending_active_and_revoked()]] - `calls` [EXTRACTED]
 - [[.test_owner_restorecollabs_restores_defaults()]] - `calls` [EXTRACTED]
 - [[.test_owner_revoke_command_cannot_revoke_owner()]] - `calls` [EXTRACTED]
+- [[.test_owner_revoke_command_persists_pause_to_disk()]] - `calls` [EXTRACTED]
 - [[.test_owner_revoke_command_requires_target_user_id()]] - `calls` [EXTRACTED]
 - [[.test_owner_revoke_command_revokes_target_user()]] - `calls` [EXTRACTED]
 - [[.test_owner_start_uses_local_notice_and_does_not_forward()]] - `calls` [EXTRACTED]
@@ -189,6 +190,7 @@ tags:
 - [[.test_proxy_request_returns_ack_only_updates_when_all_dropped()]] - `calls` [EXTRACTED]
 - [[.test_proxy_request_tracks_getupdates_stats_for_dropped_message()]] - `calls` [EXTRACTED]
 - [[.test_proxy_request_tracks_getupdates_stats_for_forwarded_message()]] - `calls` [EXTRACTED]
+- [[.test_proxy_seeds_runtime_revoked_from_persisted_paused_set()]] - `calls` [EXTRACTED]
 - [[.test_revoked_user_messages_require_owner_reapproval()]] - `calls` [EXTRACTED]
 - [[.test_safe_info_response_exception_sends_unavailable_fallback()]] - `calls` [EXTRACTED]
 - [[.test_self_diagnose_dedupe_handles_missing_update_id_different_messages()]] - `calls` [EXTRACTED]
@@ -221,4 +223,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Proxy_Tests

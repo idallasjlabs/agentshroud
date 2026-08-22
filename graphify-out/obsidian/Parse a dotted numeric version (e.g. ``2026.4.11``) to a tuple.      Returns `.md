@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Tool Chain & CVE Triage"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # Parse a dotted numeric version (e.g. ``"2026.4.11"``) to a tuple.      Returns `
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[parse_version()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Ws E Audit V1.2 (security)"
 location: "L136"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Ws_E_Audit_V12_security
 ---
 
 # Part 3 — Fix-or-Accept Closure (SCRUM-74)
@@ -17,4 +17,4 @@ tags:
 - [[MFA note]] - `contains` [EXTRACTED]
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Ws_E_Audit_V12_security

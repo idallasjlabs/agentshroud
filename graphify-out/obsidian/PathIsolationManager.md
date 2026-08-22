@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # PathIsolationManager
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_103]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_106]] - `method` [EXTRACTED]
 - [[._apply_path_rewriting()]] - `method` [EXTRACTED]
 - [[._check_cross_user_access()]] - `method` [EXTRACTED]
 - [[._cleanup_user_directory()]] - `method` [EXTRACTED]
@@ -38,6 +38,8 @@ tags:
 - [[Manages per-user path isolation for temporary files and directories.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
+- [[Path Isolation Manager Tests]] - `references` [EXTRACTED]
+- [[PathIsolationConfig]] - `references` [EXTRACTED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
@@ -55,4 +57,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

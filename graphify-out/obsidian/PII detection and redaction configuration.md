@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "scripts/sync-cve-registry.py"
+community: "Security Audit & Watchtower Tests"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # PII detection and redaction configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PIIConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

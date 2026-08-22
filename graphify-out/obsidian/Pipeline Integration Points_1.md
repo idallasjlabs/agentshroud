@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/module-inventory.md"
 type: "document"
-community: "Planning Docs"
+community: "Module Inventory (references)"
 location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Module_Inventory_references
 ---
 
 # Pipeline Integration Points
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Module Inventory_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Module_Inventory_references

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "Gateway Proxy Layer"
+community: "Pipeline.py (Proxy Layer)"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Pipelinepy_Proxy_Layer
 ---
 
 # Pipeline Stages
@@ -16,4 +16,4 @@ tags:
 - [[Outbound (`process_outbound`)]] - `contains` [EXTRACTED]
 - [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Pipelinepy_Proxy_Layer

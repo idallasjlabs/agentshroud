@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "docs/vault"
+community: "Audit Chain"
 location: "L157"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Audit_Chain
 ---
 
 # Paginated queries return correct subsets.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_query_pagination()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Chain

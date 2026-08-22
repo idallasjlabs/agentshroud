@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "docs/vault"
+community: "Security Audit & Watchtower Tests"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # PII sanitizer: 1000 messages in < 10s.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPIISanitizerPerformance]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

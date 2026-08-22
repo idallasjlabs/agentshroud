@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "scripts/generate-cve-page.py"
+community: "Generate Branding Assets (scripts)"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/generate-cve-pagepy
+  - community/Generate_Branding_Assets_scripts
 ---
 
 # Path
@@ -16,4 +16,4 @@ tags:
 - [[get_font()]] - `calls` [EXTRACTED]
 - [[save()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/generate-cve-pagepy
+#graphify/code #graphify/EXTRACTED #community/Generate_Branding_Assets_scripts

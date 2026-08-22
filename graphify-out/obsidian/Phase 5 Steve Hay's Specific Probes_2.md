@@ -1,12 +1,12 @@
 ---
-source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Security Docs"
+community: "Skill (i-sec-defense)"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Skill_i-sec-defense
 ---
 
 # Phase 5: Steve Hay's Specific Probes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Audit Procedure_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense

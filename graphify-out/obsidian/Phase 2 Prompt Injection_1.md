@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "docs/vault"
+community: "Skill (i-sec-offense)"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skill_i-sec-offense
 ---
 
 # Phase 2: Prompt Injection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Attack Phases_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-offense

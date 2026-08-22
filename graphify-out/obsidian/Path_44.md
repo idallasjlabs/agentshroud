@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Export Telegram History (scripts)"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Export_Telegram_History_scripts
 ---
 
 # Path
 
 ## Connections
 - [[export()]] - `references` [EXTRACTED]
-- [[main()_15]] - `calls` [EXTRACTED]
+- [[main()_17]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Export_Telegram_History_scripts

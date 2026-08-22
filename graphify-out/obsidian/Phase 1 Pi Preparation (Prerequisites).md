@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Distributed Openclaw Node Architecture (architecture)"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Distributed_Openclaw_Node_Architecture_architecture
 ---
 
 # Phase 1: Pi Preparation (Prerequisites)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1.4 Implementation Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Distributed_Openclaw_Node_Architecture_architecture

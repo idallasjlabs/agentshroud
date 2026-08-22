@@ -1,17 +1,17 @@
 ---
-source_file: "tests/startup_smoke/test_wire_llm_settings.js"
+source_file: "tests/startup_smoke/test_apply_patches.js"
 type: "code"
-community: "Gateway Test Suite"
-location: "L35"
+community: "Apply Patches (startup_smoke)"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Apply_Patches_startup_smoke
 ---
 
 # path
 
 ## Connections
-- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
+- [[test_apply_patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Apply_Patches_startup_smoke

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/incident-response.md"
 type: "document"
-community: "skills/openclaw"
+community: "Incident Response (security)"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Incident_Response_security
 ---
 
 # P1 — Critical
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Response Procedures]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_security

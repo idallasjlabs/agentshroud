@@ -1,22 +1,21 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "docs/vault"
+community: "Memory Lifecycle & Integrity"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_92]] - `references` [EXTRACTED]
+- [[.__init__()_95]] - `references` [EXTRACTED]
 - [[._compute_file_hash()]] - `references` [EXTRACTED]
 - [[._detect_modification_source()]] - `references` [EXTRACTED]
 - [[.scan_file()]] - `references` [EXTRACTED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

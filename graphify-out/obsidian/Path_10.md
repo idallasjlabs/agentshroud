@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "Setup Docs"
+community: "Config Integrity Monitor"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Config_Integrity_Monitor
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_60]] - `references` [EXTRACTED]
+- [[.__init__()_63]] - `references` [EXTRACTED]
 - [[._hash_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Setup_Docs
+#graphify/code #graphify/EXTRACTED #community/Config_Integrity_Monitor

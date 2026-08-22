@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "docs/papers"
+community: "Apple Services Setup (setup)"
 location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Apple_Services_Setup_setup
 ---
 
 # Phase 1: Email
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🤖 Bot Integration Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/papers
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_setup

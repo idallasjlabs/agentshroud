@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/github-and-merge.md"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Github And Merge (references)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Github_And_Merge_references
 ---
 
 # Per-subfolder graphify-out avoids output clobbering
 
-## Connections
-- [[graphify GitHub clone & merge reference]] - `rationale_for` [EXTRACTED]
-
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Github_And_Merge_references

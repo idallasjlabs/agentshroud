@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "docs/vault"
+community: "Scanner Integration"
 location: "L1037"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Scanner_Integration
 ---
 
 # Path
@@ -31,4 +31,4 @@ tags:
 - [[.test_returns_one_entry_per_report_file()]] - `calls` [EXTRACTED]
 - [[_write_image_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration
