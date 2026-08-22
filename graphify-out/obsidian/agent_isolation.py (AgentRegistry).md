@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "File Sandbox"
+community: "Shared Memory Write Acl"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/Shared_Memory_Write_Acl
 ---
 
 # agent_isolation.py (AgentRegistry)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_group_isolation.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/Shared_Memory_Write_Acl

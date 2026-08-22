@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "SOC Dashboard"
+community: "Slack Proxy"
 location: "L432"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Slack_Proxy
 ---
 
 # apps.connections.open: pipeline is NOT invoked (not a message method).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_connections_open_skips_content_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy

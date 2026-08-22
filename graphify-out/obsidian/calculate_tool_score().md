@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "branding/logos"
+community: "Health Report (security)"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/branding/logos
+  - community/Health_Report_security
 ---
 
 # calculate_tool_score()
@@ -17,11 +17,11 @@ tags:
 - [[.test_one_critical()]] - `calls` [EXTRACTED]
 - [[.test_perfect_score()]] - `calls` [EXTRACTED]
 - [[.test_score_floor()]] - `calls` [EXTRACTED]
-- [[Any_41]] - `references` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
 - [[Calculate score for a single tool (0-100).      Args         summary Tool summ]] - `rationale_for` [EXTRACTED]
 - [[calculate_overall_score()]] - `calls` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]
 - [[health_report.py]] - `contains` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/branding/logos
+#graphify/code #graphify/EXTRACTED #community/Health_Report_security

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "docs/project"
+community: "Intel Report (security)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Intel_Report_security
 ---
 
 # citation_verifier.py
@@ -23,4 +23,4 @@ tags:
 - [[intel_report.py]] - `imports_from` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/project
+#graphify/code #graphify/EXTRACTED #community/Intel_Report_security

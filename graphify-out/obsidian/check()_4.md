@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_bot_boot_live.sh"
 type: "code"
-community: "docker/upgrade.sh"
+community: "Bot Boot Live (startup_smoke)"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/upgradesh
+  - community/Bot_Boot_Live_startup_smoke
 ---
 
 # check()
@@ -15,4 +15,4 @@ tags:
 - [[test_bot_boot_live.sh]] - `defines` [EXTRACTED]
 - [[test_bot_boot_live.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker/upgradesh
+#graphify/code #graphify/EXTRACTED #community/Bot_Boot_Live_startup_smoke

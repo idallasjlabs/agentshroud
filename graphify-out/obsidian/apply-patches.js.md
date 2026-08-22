@@ -1,21 +1,25 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Gateway Test Suite"
+community: "Apply Patches (openclaw)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Apply_Patches_openclaw
 ---
 
 # apply-patches.js
 
 ## Connections
+- [[AGENTS_1]] - `conceptually_related_to` [INFERRED]
+- [[AgentShroud Docker Compose (Production)]] - `shares_data_with` [EXTRACTED]
 - [[COLLABORATOR_IDS]] - `contains` [EXTRACTED]
 - [[COLLAB_LOCAL_INFO_ONLY]] - `contains` [EXTRACTED]
+- [[CONTINUE-2026-08-17]] - `references` [EXTRACTED]
 - [[GROUP_CHAT_IDS]] - `contains` [EXTRACTED]
 - [[MODEL_MODE]] - `contains` [EXTRACTED]
+- [[Path_50]] - `imports_from` [EXTRACTED]
 - [[_COLLAB_TOOL_DENY]] - `contains` [EXTRACTED]
 - [[_COLLAB_TOOL_DENY_FULL_ACCESS]] - `contains` [EXTRACTED]
 - [[_GROUP_TOOL_DENY]] - `contains` [EXTRACTED]
@@ -31,16 +35,21 @@ tags:
 - [[desiredAllowFrom]] - `contains` [EXTRACTED]
 - [[desiredProvider]] - `contains` [EXTRACTED]
 - [[extraOrigins]] - `contains` [EXTRACTED]
-- [[fs_1]] - `contains` [EXTRACTED]
+- [[fs_2]] - `contains` [EXTRACTED]
 - [[gpIdx]] - `contains` [EXTRACTED]
+- [[group_router.py]] - `shares_data_with` [EXTRACTED]
+- [[gsd]] - `references` [EXTRACTED]
 - [[hasMain]] - `contains` [EXTRACTED]
 - [[hasOwnerBinding]] - `contains` [EXTRACTED]
+- [[init-openclaw-config.sh]] - `calls` [EXTRACTED]
+- [[mcp-proxy-wrapper.js]] - `conceptually_related_to` [AMBIGUOUS]
 - [[missingOrigins]] - `contains` [EXTRACTED]
 - [[missingProxies]] - `contains` [EXTRACTED]
-- [[path_1]] - `contains` [EXTRACTED]
+- [[path_2]] - `contains` [EXTRACTED]
 - [[providerModels]] - `contains` [EXTRACTED]
+- [[rbac_config.py]] - `shares_data_with` [EXTRACTED]
 - [[staleGroupBindings]] - `contains` [EXTRACTED]
 - [[trustedProxies]] - `contains` [EXTRACTED]
 - [[{ profile _genericProfile, deny _genericCollabDeny }]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Apply_Patches_openclaw

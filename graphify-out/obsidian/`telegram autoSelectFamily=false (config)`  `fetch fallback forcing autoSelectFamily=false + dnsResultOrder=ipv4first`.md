@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Planning Docs"
+community: "Troubleshooting (runbooks)"
 location: "L349"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Troubleshooting_runbooks
 ---
 
 # `[telegram] autoSelectFamily=false (config)` / `fetch fallback: forcing autoSelectFamily=false + dnsResultOrder=ipv4first`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Known Log Messages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting_runbooks

@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Security Docs"
+community: "Readme"
 location: "L347"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Readme
 ---
 
 # `asb` reference
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Quickstart]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme

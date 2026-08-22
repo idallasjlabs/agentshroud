@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/canary-deploy.sh"
 type: "code"
-community: "AGENTS.md"
+community: "Canary Deploy (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AGENTSmd
+  - community/Canary_Deploy_scripts
 ---
 
 # canary-deploy.sh script
@@ -18,4 +18,4 @@ tags:
 - [[log()_6]] - `calls` [EXTRACTED]
 - [[run()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AGENTSmd
+#graphify/code #graphify/EXTRACTED #community/Canary_Deploy_scripts

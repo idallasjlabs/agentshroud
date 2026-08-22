@@ -1,18 +1,18 @@
 ---
 source_file: "browser-extension/background.js"
 type: "code"
-community: "browser-extension/background.js"
+community: "Background (browser-extension)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/backgroundjs
+  - community/Background_browser-extension
 ---
 
 # background.js
 
 ## Connections
-- [[README_2]] - `references` [EXTRACTED]
+- [[README_39]] - `references` [EXTRACTED]
 - [[clipPage()]] - `references` [EXTRACTED]
 - [[extractPageContent()]] - `references` [EXTRACTED]
 - [[forwardUrl()]] - `references` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[reportResult()]] - `references` [EXTRACTED]
 - [[send()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/backgroundjs
+#graphify/code #graphify/EXTRACTED #community/Background_browser-extension

@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/package.json"
 type: "document"
-community: "docs/vault"
+community: "Package (i-browser)"
 tags:
   - graphify/document
-  - graphify/AMBIGUOUS
-  - community/docs/vault
+  - graphify/EXTRACTED
+  - community/Package_i-browser
 ---
 
 # browser-fetch package.json
 
-## Connections
-- [[browserFetch() (Node.js Playwright fetch)]] - `references` [AMBIGUOUS]
-
-#graphify/document #graphify/AMBIGUOUS #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Package_i-browser

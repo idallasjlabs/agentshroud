@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "code"
-community: "docs/testing"
+community: "Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/testing
+  - community/Config
 ---
 
 # bot_config.py
@@ -15,4 +15,4 @@ tags:
 - [[BotConfig]] - `contains` [EXTRACTED]
 - [[config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/testing
+#graphify/code #graphify/EXTRACTED #community/Config

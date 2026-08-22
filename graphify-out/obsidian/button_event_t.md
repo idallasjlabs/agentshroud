@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/iot_button.h"
 type: "code"
-community: "chatbot/test_main.py"
+community: "Iot Button (stubs)"
 location: "L11"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/test_mainpy
+  - community/Iot_Button_stubs
 ---
 
 # button_event_t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[iot_button_register_cb()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/test_mainpy
+#graphify/code #graphify/EXTRACTED #community/Iot_Button_stubs

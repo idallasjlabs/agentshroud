@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "Architecture Docs"
+community: "Audit Archive"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Audit_Archive
 ---
 
 # archive_old_events()
@@ -22,6 +22,7 @@ tags:
 - [[.test_vacuum_failure_does_not_discard_a_successful_archive()]] - `calls` [EXTRACTED]
 - [[.test_vacuum_reduces_file_size_after_bulk_delete()]] - `calls` [EXTRACTED]
 - [[.test_waits_out_a_concurrent_writer_lock_instead_of_failing()]] - `calls` [EXTRACTED]
+- [[AuditStore_1]] - `references` [EXTRACTED]
 - [[Move audit_events older than cutoff_days into archive_path, then delete + VACUUM]] - `rationale_for` [EXTRACTED]
 - [[Path_6]] - `references` [EXTRACTED]
 - [[_cli()]] - `calls` [EXTRACTED]
@@ -29,4 +30,4 @@ tags:
 - [[datetime_1]] - `references` [EXTRACTED]
 - [[test_audit_archive.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Audit_Archive

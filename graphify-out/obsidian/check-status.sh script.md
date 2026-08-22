@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/check-status.sh"
 type: "code"
-community: "Gateway Test Suite"
+community: "Check Status (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Check_Status_scripts
 ---
 
 # check-status.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check-status.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Check_Status_scripts

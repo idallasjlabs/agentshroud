@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Jira Dev Ticket (workspace)"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Jira_Dev_Ticket_workspace
 ---
 
 # build_tenant_info_url()
@@ -16,4 +16,4 @@ tags:
 - [[jira_dev_ticket.py_1]] - `contains` [EXTRACTED]
 - [[resolve_cloud_id()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Jira_Dev_Ticket_workspace

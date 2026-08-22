@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Browse (scripts)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Browse_scripts
 ---
 
 # browse.py — SecureBrowser CLI (OpenClaw)
@@ -17,4 +17,4 @@ tags:
 - [[SecureBrowser class]] - `implements` [EXTRACTED]
 - [[browser-fetch package.json_1]] - `semantically_similar_to` [AMBIGUOUS]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Browse_scripts

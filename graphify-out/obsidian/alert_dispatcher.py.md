@@ -1,17 +1,26 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Tool Chain & CVE Triage"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # alert_dispatcher.py
 
 ## Connections
 - [[AlertDispatcher]] - `contains` [EXTRACTED]
+- [[canary.py]] - `references` [EXTRACTED]
+- [[clamav]] - `references` [INFERRED]
+- [[clamav_scanner.py]] - `references` [EXTRACTED]
+- [[dns_filter.py]] - `references` [EXTRACTED]
+- [[drift_detector.py]] - `references` [EXTRACTED]
+- [[egress_filter.py]] - `references` [EXTRACTED]
+- [[falco-rules]] - `references` [INFERRED]
+- [[trust_manager.py]] - `references` [EXTRACTED]
+- [[wazuh-ossec]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

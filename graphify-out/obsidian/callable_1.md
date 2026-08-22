@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Bot Skill Config"
+community: "RBAC & Ingest Middleware"
 location: "L576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/RBAC__Ingest_Middleware
 ---
 
 # callable
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.add_alert_callback()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

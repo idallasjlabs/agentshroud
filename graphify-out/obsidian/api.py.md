@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "docs/project"
+community: "Api (web)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Api_web
 ---
 
 # api.py
@@ -48,6 +48,7 @@ tags:
 - [[deploy_manifest()]] - `imports` [EXTRACTED]
 - [[detect_runtime()]] - `imports` [EXTRACTED]
 - [[export_config()]] - `contains` [EXTRACTED]
+- [[falco_monitor.py]] - `conceptually_related_to` [INFERRED]
 - [[get_competitive_intel()]] - `contains` [EXTRACTED]
 - [[get_competitive_intel_history()]] - `contains` [EXTRACTED]
 - [[get_config()_1]] - `contains` [EXTRACTED]
@@ -57,11 +58,13 @@ tags:
 - [[get_security_comparison()]] - `imports` [EXTRACTED]
 - [[get_status()]] - `contains` [EXTRACTED]
 - [[import_config()]] - `contains` [EXTRACTED]
+- [[installer.py]] - `references` [EXTRACTED]
 - [[killswitch()]] - `contains` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
 - [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `imports` [EXTRACTED]
 - [[management.py]] - `imports_from` [EXTRACTED]
+- [[proxy_status.py]] - `calls` [EXTRACTED]
 - [[rebuild()]] - `contains` [EXTRACTED]
 - [[require_auth()_1]] - `contains` [EXTRACTED]
 - [[restart_service()_2]] - `contains` [EXTRACTED]
@@ -82,7 +85,8 @@ tags:
 - [[upgrade_openclaw()]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `imports` [EXTRACTED]
 - [[warn_missing_features()]] - `imports` [EXTRACTED]
+- [[wazuh_client.py]] - `conceptually_related_to` [INFERRED]
 - [[ws_logs()]] - `contains` [EXTRACTED]
 - [[ws_updates()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/project
+#graphify/code #graphify/EXTRACTED #community/Api_web

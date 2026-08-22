@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Scanner Integration"
 location: "L881"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Scanner_Integration
 ---
 
 # aggregate_results()
@@ -20,7 +20,7 @@ tags:
 - [[.test_timestamp_present()]] - `calls` [EXTRACTED]
 - [[.test_totals_sum_across_scanners()]] - `calls` [EXTRACTED]
 - [[Aggregate results from all security scanners into a unified dict.      Returns]] - `rationale_for` [EXTRACTED]
-- [[Any_57]] - `references` [EXTRACTED]
+- [[Any_58]] - `references` [EXTRACTED]
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]
 - [[get_falco_summary()]] - `calls` [EXTRACTED]
 - [[get_fluent_bit_summary()]] - `calls` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration

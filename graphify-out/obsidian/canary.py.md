@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Audit & Watchtower Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # canary.py
@@ -14,6 +14,9 @@ tags:
 ## Connections
 - [[CanaryCheck]] - `contains` [EXTRACTED]
 - [[CanaryResult]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py]] - `references` [EXTRACTED]
+- [[encrypted_store.py]] - `references` [EXTRACTED]
 - [[run_canary()]] - `contains` [EXTRACTED]
+- [[trust_manager.py]] - `references` [AMBIGUOUS]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

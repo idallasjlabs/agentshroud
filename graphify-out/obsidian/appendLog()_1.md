@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/browse.js"
+source_file: "docker/config/hermes/skills/i-browser/browse.js"
 type: "code"
-community: "Architecture Docs"
+community: "Browse (i-browser)"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Browse_i-browser
 ---
 
 # appendLog()
@@ -15,4 +15,4 @@ tags:
 - [[browse.js_1]] - `contains` [EXTRACTED]
 - [[browserFetch()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Browse_i-browser

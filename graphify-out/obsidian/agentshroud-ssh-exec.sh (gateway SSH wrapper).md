@@ -1,16 +1,16 @@
 ---
-source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
+source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "code"
-community: "Bot Skill Config"
+community: "Skill (i-hdev)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-hdev
 ---
 
 # agentshroud-ssh-exec.sh (gateway SSH wrapper)
 
 ## Connections
-- [[i-odev SKILL (OpenClaw Dev Workflow)]] - `references` [EXTRACTED]
+- [[Hermes Dev Workflow (HDEV) Skill]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Skill_i-hdev

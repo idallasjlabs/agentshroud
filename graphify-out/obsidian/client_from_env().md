@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/client.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Cli Coverage"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Cli_Coverage
 ---
 
 # client_from_env()
@@ -19,9 +19,7 @@ tags:
 - [[.test_missing_token_raises_value_error()]] - `calls` [EXTRACTED]
 - [[Build SCLClient from args or environment variables.]] - `rationale_for` [EXTRACTED]
 - [[SCLClient]] - `references` [EXTRACTED]
-- [[ValueError]] - `calls` [INFERRED]
 - [[client.py]] - `contains` [EXTRACTED]
-- [[main.py_1]] - `imports` [EXTRACTED]
 - [[test_cli_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Cli_Coverage

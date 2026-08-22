@@ -1,17 +1,16 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/networks.md"
-type: "concept"
-community: "Bot Skill Config"
+source_file: "docs/diagrams/images/diagram-04-infrastructure-hosting.svg"
+type: "image"
+community: "Diagram 04 Infrastructure Hosting (images)"
 tags:
-  - graphify/concept
+  - graphify/image
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Diagram_04_Infrastructure_Hosting_images
 ---
 
 # agentshroud-internal network (172.20.0.0/16)
 
 ## Connections
-- [[Docker Networks]] - `defines` [EXTRACTED]
-- [[agentshroud-gateway Container]] - `member_of` [EXTRACTED]
+- [[Docker Compose (infra diagram)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/image #graphify/EXTRACTED #community/Diagram_04_Infrastructure_Hosting_images

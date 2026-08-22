@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-22-dependency-graph.svg"
 type: "concept"
-community: "docs/diagrams"
+community: "Diagram 22 Dependency Graph (images)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Diagram_22_Dependency_Graph_images
 ---
 
 # agentshroud-gateway container (starts first)
@@ -16,4 +16,4 @@ tags:
 - [[docker-gateway image (FROM python3.11-slim, gatewayDockerfile)]] - `calls` [EXTRACTED]
 - [[gateway_password.txt Docker secret]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/diagrams
+#graphify/concept #graphify/EXTRACTED #community/Diagram_22_Dependency_Graph_images

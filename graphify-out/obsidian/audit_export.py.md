@@ -1,22 +1,23 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Telegram Inbound Tests"
+community: "Audit Export"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Tests
+  - community/Audit_Export
 ---
 
 # audit_export.py
 
 ## Connections
+- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[AuditEvent_1]] - `imports` [EXTRACTED]
 - [[AuditExportConfig_1]] - `contains` [EXTRACTED]
 - [[AuditExporter]] - `contains` [EXTRACTED]
 - [[AuditStore_1]] - `imports` [EXTRACTED]
+- [[SKILL_190]] - `references` [EXTRACTED]
 - [[audit_store.py]] - `imports_from` [EXTRACTED]
-- [[i-sec-defense Blue Team Security Auditor]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests
+#graphify/code #graphify/EXTRACTED #community/Audit_Export

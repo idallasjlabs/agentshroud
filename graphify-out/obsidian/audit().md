@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Setup Docs"
+community: "Mcp Audit (proxy)"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Mcp_Audit_proxy
 ---
 
 # audit()
 
 ## Connections
 - [[MCPAuditTrail]] - `calls` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `calls` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Setup_Docs
+#graphify/code #graphify/EXTRACTED #community/Mcp_Audit_proxy

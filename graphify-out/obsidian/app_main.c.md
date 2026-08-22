@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Ws Client (main)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Ws_Client_main
 ---
 
 # app_main.c
@@ -34,4 +34,4 @@ tags:
 - [[wifi_event_handler()]] - `contains` [EXTRACTED]
 - [[wifi_init()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Ws_Client_main

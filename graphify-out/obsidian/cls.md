@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Bot Skill Config"
+community: "Manifest (skills)"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - community/Manifest_skills
 ---
 
 # cls
@@ -33,4 +33,4 @@ tags:
 - [[.from_source()]] - `calls` [INFERRED]
 - [[_Instr]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/code #graphify/INFERRED #community/Manifest_skills

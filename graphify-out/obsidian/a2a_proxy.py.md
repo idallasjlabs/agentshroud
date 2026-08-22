@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "A2a Integration"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/A2a_Integration
 ---
 
 # a2a_proxy.py
@@ -23,4 +23,4 @@ tags:
 - [[_redact_message_text()]] - `contains` [EXTRACTED]
 - [[record_decision()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/A2a_Integration

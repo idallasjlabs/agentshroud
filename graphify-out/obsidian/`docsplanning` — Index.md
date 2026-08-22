@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/README.md"
 type: "document"
-community: "docs/flows"
+community: "Readme (planning)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/flows
+  - community/Readme_planning
 ---
 
 # `docs/planning/` — Index
@@ -16,7 +16,7 @@ tags:
 - [[Historic  archive]] - `contains` [EXTRACTED]
 - [[How to add a plan]] - `contains` [EXTRACTED]
 - [[Layout]] - `contains` [EXTRACTED]
-- [[README_86]] - `contains` [EXTRACTED]
+- [[README_123]] - `contains` [EXTRACTED]
 - [[What does NOT live here]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/flows
+#graphify/document #graphify/EXTRACTED #community/Readme_planning

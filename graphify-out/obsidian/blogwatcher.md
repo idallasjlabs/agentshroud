@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/blogwatcher/SKILL.md"
 type: "document"
-community: "ESP32 Firmware"
+community: "Skill (blogwatcher)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Skill_blogwatcher
 ---
 
 # blogwatcher
 
 ## Connections
-- [[SKILL_134]] - `contains` [EXTRACTED]
+- [[SKILL_198]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Skill_blogwatcher

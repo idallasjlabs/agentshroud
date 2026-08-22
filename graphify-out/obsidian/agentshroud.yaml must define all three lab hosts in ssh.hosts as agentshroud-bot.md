@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Architecture Docs"
+community: "Config Validation & Router"
 location: "L699"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Config_Validation__Router
 ---
 
 # agentshroud.yaml must define all three lab hosts in ssh.hosts as agentshroud-bot
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_gateway_yaml_ssh_hosts_cover_all_lab_hosts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Config_Validation__Router

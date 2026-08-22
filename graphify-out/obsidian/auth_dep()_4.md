@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Auth"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Auth
 ---
 
 # auth_dep()
@@ -17,4 +17,4 @@ tags:
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
 - [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Auth

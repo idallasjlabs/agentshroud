@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Agentshroud Gateway (06 - Containers & Services)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Agentshroud_Gateway_06_-_Containers__Services
 ---
 
 # agentshroud-gateway
@@ -23,9 +23,9 @@ tags:
 - [[Resource Limits_1]] - `contains` [EXTRACTED]
 - [[Secrets_3]] - `contains` [EXTRACTED]
 - [[Security Hardening_4]] - `contains` [EXTRACTED]
-- [[Summary_43]] - `contains` [EXTRACTED]
+- [[Summary_24]] - `contains` [EXTRACTED]
 - [[Volumes_2]] - `contains` [EXTRACTED]
 - [[agentshroud-gateway]] - `contains` [EXTRACTED]
 - [[tmpfs Mounts_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Agentshroud_Gateway_06_-_Containers__Services

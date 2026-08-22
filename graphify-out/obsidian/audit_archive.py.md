@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "Architecture Docs"
+community: "Audit Archive"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Audit_Archive
 ---
 
 # audit_archive.py
@@ -17,4 +17,4 @@ tags:
 - [[datetime_1]] - `imports_from` [EXTRACTED]
 - [[purge_low_value_events()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Audit_Archive

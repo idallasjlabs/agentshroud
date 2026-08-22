@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "CLI Command Client (Rust)"
+community: "Main (src)"
 location: "L1047"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI_Command_Client_Rust
+  - community/Main_src
 ---
 
 # approvals_list_formats_rows()
@@ -17,4 +17,4 @@ tags:
 - [[main.rs]] - `contains` [EXTRACTED]
 - [[run_approvals_list()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI_Command_Client_Rust
+#graphify/code #graphify/EXTRACTED #community/Main_src

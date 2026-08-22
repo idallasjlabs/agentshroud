@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "SOC Dashboard"
+community: "Slack Proxy"
 location: "L558"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Slack_Proxy
 ---
 
 # blocks/attachments and upload text must be scanned, not just `text`.      Regres
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMultiFieldOutboundScanning]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy

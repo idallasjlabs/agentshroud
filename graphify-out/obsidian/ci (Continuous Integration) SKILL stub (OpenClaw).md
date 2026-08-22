@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ci/SKILL.md"
 type: "document"
-community: "Community 1754"
+community: "Skill (i-ci)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1754
+  - community/Skill_i-ci
 ---
 
 # ci (Continuous Integration) SKILL stub (OpenClaw)
 
-#graphify/document #graphify/EXTRACTED #community/Community_1754
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ci

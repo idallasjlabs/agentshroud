@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Ws Client (main)"
 location: "L901"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Ws_Client_main
 ---
 
 # app_main()
@@ -27,4 +27,4 @@ tags:
 - [[ws_client_create()]] - `calls` [INFERRED]
 - [[ws_client_set_ctrl_cb()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Ws_Client_main

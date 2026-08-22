@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/agentshroud-ssh-exec.sh"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "Developer (workspace)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Developer_workspace
 ---
 
 # agentshroud-ssh-exec.sh
@@ -21,8 +21,7 @@ tags:
 - [[agentshroud-ssh-write-file.sh]] - `semantically_similar_to` [EXTRACTED]
 - [[context]] - `references` [EXTRACTED]
 - [[hermes-soul.md (Hermes system identity)]] - `references` [EXTRACTED]
-- [[openclaw cronjobs.json (scheduled agent turns)]] - `references` [EXTRACTED]
 - [[openclaw-identity.md (OpenClaw bot identity)]] - `references` [EXTRACTED]
 - [[start-agentshroud.sh]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/Developer_workspace

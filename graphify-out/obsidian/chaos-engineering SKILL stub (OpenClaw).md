@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-chaos-engineering/SKILL.md"
 type: "document"
-community: "Community 1753"
+community: "Skill (i-chaos-engineering)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1753
+  - community/Skill_i-chaos-engineering
 ---
 
 # chaos-engineering SKILL stub (OpenClaw)
 
-#graphify/document #graphify/EXTRACTED #community/Community_1753
+#graphify/document #graphify/EXTRACTED #community/Skill_i-chaos-engineering

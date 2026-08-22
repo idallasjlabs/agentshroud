@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "Soc Realtime Coverage"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/Soc_Realtime_Coverage
 ---
 
 # auth_login()
@@ -19,4 +19,4 @@ tags:
 - [[issue_session_token()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Soc_Realtime_Coverage

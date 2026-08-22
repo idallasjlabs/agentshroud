@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Main (cli)"
 location: "L276"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Main_cli
 ---
 
 # add_collaborator()
@@ -16,4 +16,4 @@ tags:
 - [[_output()]] - `calls` [EXTRACTED]
 - [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Main_cli

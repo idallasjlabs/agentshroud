@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Port Manager"
 location: "L266"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Port_Manager
 ---
 
 # check_and_report()
@@ -18,4 +18,4 @@ tags:
 - [[Quick check are the default ports available Log and return result.]] - `rationale_for` [EXTRACTED]
 - [[port_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Port_Manager

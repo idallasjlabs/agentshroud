@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/agentshroud-manage.sh"
 type: "code"
-community: "SOC Dashboard"
+community: "Agentshroud Manage (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Agentshroud_Manage_scripts
 ---
 
 # agentshroud-manage.sh script
@@ -17,4 +17,4 @@ tags:
 - [[usage()_3]] - `calls` [EXTRACTED]
 - [[validate_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Agentshroud_Manage_scripts

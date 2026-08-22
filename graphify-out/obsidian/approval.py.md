@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Soc Egress Endpoints"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Soc_Egress_Endpoints
 ---
 
 # approval.py
@@ -29,4 +29,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[submit_approval_request()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Soc_Egress_Endpoints

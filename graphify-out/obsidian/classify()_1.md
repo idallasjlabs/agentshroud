@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Tool Chain & CVE Triage"
 location: "L673"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # classify()
@@ -17,4 +17,4 @@ tags:
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 - [[triage_entry()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

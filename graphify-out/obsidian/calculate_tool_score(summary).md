@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Health Report.py (Security Modules)"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Health_Reportpy_Security_Modules
 ---
 
 # calculate_tool_score(summary)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_40]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Health_Reportpy_Security_Modules

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Agentic Os (architecture)"
 location: "L299"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Agentic_Os_architecture
 ---
 
 # `/sec-offense` — Red Team Adversarial Tester
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Skills in Detail]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Agentic_Os_architecture

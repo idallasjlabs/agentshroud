@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/bsp/esp-bsp.h"
 type: "code"
-community: "Gateway Test Suite"
+community: "Esp Bsp (bsp)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Esp_Bsp_bsp
 ---
 
 # bsp/esp-bsp.h stub (playback state test)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[iot_button.h stub (playback state test)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Esp_Bsp_bsp

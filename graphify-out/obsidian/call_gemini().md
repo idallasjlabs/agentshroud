@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/gemini-review.py"
 type: "code"
-community: "Architecture Docs"
+community: "Gemini Review (scripts)"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Gemini_Review_scripts
 ---
 
 # call_gemini()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Call Gemini API and return the review text and exit code.      Returns]] - `rationale_for` [EXTRACTED]
 - [[gemini-review.py]] - `contains` [EXTRACTED]
-- [[main()_16]] - `calls` [EXTRACTED]
+- [[main()_18]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Gemini_Review_scripts

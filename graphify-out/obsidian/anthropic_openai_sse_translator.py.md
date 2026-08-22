@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_sse_translator.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Anthropic Openai Translator"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Anthropic_Openai_Translator
 ---
 
 # anthropic_openai_sse_translator.py
@@ -17,4 +17,4 @@ tags:
 - [[_sse()]] - `contains` [EXTRACTED]
 - [[translate_openai_sse_to_anthropic()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Anthropic_Openai_Translator

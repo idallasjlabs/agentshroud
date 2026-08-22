@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "docs/vault"
+community: "Audio (main)"
 location: "L178"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/vault
+  - community/Audio_main
 ---
 
 # audio_volume_tick()
@@ -15,4 +15,4 @@ tags:
 - [[audio.c]] - `contains` [EXTRACTED]
 - [[tts_task()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/docs/vault
+#graphify/code #graphify/INFERRED #community/Audio_main

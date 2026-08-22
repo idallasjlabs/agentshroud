@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/audio.h"
 type: "code"
-community: "Gateway Test Suite"
+community: "Audio (stubs)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Audio_stubs
 ---
 
 # audio.h
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Audio_stubs

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "branding/README.md"
+community: "Browse (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/Browse_scripts
 ---
 
 # browse.py
@@ -17,6 +17,6 @@ tags:
 - [[SecureBrowser]] - `contains` [EXTRACTED]
 - [[SecurityConfig]] - `contains` [EXTRACTED]
 - [[SecurityError]] - `contains` [EXTRACTED]
-- [[main()_4]] - `contains` [EXTRACTED]
+- [[main()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Browse_scripts

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Multi Turn Tracker (security)"
 location: "L445"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Multi_Turn_Tracker_security
 ---
 
 # callable
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.add_alert_callback()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Multi_Turn_Tracker_security

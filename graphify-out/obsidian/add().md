@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Main (cli)"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Main_cli
 ---
 
 # add()
@@ -15,4 +15,4 @@ tags:
 - [[main.py_1]] - `contains` [EXTRACTED]
 - [[run_cis_benchmark()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Main_cli

@@ -1,13 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Community 1742"
+community: "App Main (main)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1742
+  - community/App_Main_main
 ---
 
 # app_main.c (ESP32 voice terminal entry point)
 
-#graphify/code #graphify/EXTRACTED #community/Community_1742
+#graphify/code #graphify/EXTRACTED #community/App_Main_main

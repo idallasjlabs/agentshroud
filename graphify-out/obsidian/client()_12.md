@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "Security Docs"
+community: "Op Proxy"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Op_Proxy
 ---
 
 # client()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Op_Proxy

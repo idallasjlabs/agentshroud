@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/client.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Cli Coverage"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Cli_Coverage
 ---
 
 # client.py
@@ -16,4 +16,4 @@ tags:
 - [[client_from_env()]] - `contains` [EXTRACTED]
 - [[main.py_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Cli_Coverage

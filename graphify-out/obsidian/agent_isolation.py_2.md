@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "docs/runbooks"
+community: "Agent Isolation.py (Security Modules)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Agent_Isolationpy_Security_Modules
 ---
 
 # agent_isolation.py
@@ -18,10 +18,10 @@ tags:
 - [[Integration Testing]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_29]] - `contains` [EXTRACTED]
 - [[Mode Enforce vs Monitor]] - `contains` [EXTRACTED]
-- [[Purpose_110]] - `contains` [EXTRACTED]
+- [[Purpose_147]] - `contains` [EXTRACTED]
 - [[Related_33]] - `contains` [EXTRACTED]
 - [[Responsibilities_31]] - `contains` [EXTRACTED]
 - [[Threat Model_2]] - `contains` [EXTRACTED]
 - [[agent_isolation.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Agent_Isolationpy_Security_Modules

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Planning Docs"
+community: "Security Audit & Watchtower Tests"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # check_monitor_mode_warnings()
@@ -18,9 +18,7 @@ tags:
 - [[Log warnings for any core modules running in monitor mode.]] - `rationale_for` [EXTRACTED]
 - [[config.py]] - `contains` [EXTRACTED]
 - [[get_module_mode()]] - `calls` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
