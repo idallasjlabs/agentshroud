@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "Setup Docs"
+community: "Config Integrity Monitor"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Config_Integrity_Monitor
 ---
 
 # ConfigIntegrityMonitor
 
 ## Connections
-- [[.__init__()_60]] - `method` [EXTRACTED]
+- [[.__init__()_63]] - `method` [EXTRACTED]
 - [[._hash_file()]] - `method` [EXTRACTED]
 - [[._load_baseline()]] - `method` [EXTRACTED]
 - [[._save_baseline()]] - `method` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_tamper_baseline_is_not_advanced_so_alert_refires()]] - `calls` [EXTRACTED]
 - [[test_unchanged_second_run_reports_no_changes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Setup_Docs
+#graphify/code #graphify/EXTRACTED #community/Config_Integrity_Monitor

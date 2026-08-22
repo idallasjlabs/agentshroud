@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/validation-runner.agent.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Validation Runner.agent (agents)"
 location: "L158"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Validation_Runneragent_agents
 ---
 
 # Comprehensive Checks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Validation Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Validation_Runneragent_agents

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Troubleshooting (runbooks)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Troubleshooting_runbooks
 ---
 
 # Common Issues
@@ -20,7 +20,6 @@ tags:
 - [[SSH Command Approval Stuck]] - `contains` [EXTRACTED]
 - [[Tailscale Serve Not Working]] - `contains` [EXTRACTED]
 - [[Tests Failing]] - `contains` [EXTRACTED]
-- [[Troubleshooting Runbook]] - `contains` [EXTRACTED]
 - [[Troubleshooting Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting_runbooks

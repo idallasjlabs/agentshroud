@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-cr)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-cr
 ---
 
 # Code Review (CR)
 
 ## Connections
-- [[Purpose_7]] - `contains` [EXTRACTED]
-- [[README_12]] - `contains` [EXTRACTED]
-- [[Related Skills_7]] - `contains` [EXTRACTED]
-- [[Usage_10]] - `contains` [EXTRACTED]
+- [[Purpose_44]] - `contains` [EXTRACTED]
+- [[README_49]] - `contains` [EXTRACTED]
+- [[Related Skills_47]] - `contains` [EXTRACTED]
+- [[Usage_50]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-cr

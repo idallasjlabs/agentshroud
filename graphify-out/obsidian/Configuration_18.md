@@ -1,18 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "skills/custom/icloud/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L191"
+community: "Skill (icloud)"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_icloud
 ---
 
 # Configuration
 
 ## Connections
-- [[Full Configuration Example]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[iCloud Services_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_icloud

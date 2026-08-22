@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Collaborator Tracker"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Collaborator_Tracker
 ---
 
 # CollaboratorActivityTracker
 
 ## Connections
-- [[.__init__()_59]] - `method` [EXTRACTED]
+- [[.__init__()_62]] - `method` [EXTRACTED]
 - [[._append_contributor_log()]] - `method` [EXTRACTED]
 - [[._coerce_timestamp()]] - `method` [EXTRACTED]
 - [[._normalize_preview()]] - `method` [EXTRACTED]
@@ -23,6 +23,7 @@ tags:
 - [[.record_activity()]] - `method` [EXTRACTED]
 - [[.test_failed_write_makes_unhealthy()]] - `calls` [EXTRACTED]
 - [[.test_initial_state_healthy()]] - `calls` [EXTRACTED]
+- [[Collaborator Tracker Tests]] - `references` [EXTRACTED]
 - [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
 - [[Path_31]] - `uses` [INFERRED]
 - [[TelegramAPIProxy_3]] - `uses` [INFERRED]
@@ -64,4 +65,4 @@ tags:
 - [[test_unknown_user_recorded_when_dynamic_tracking_enabled()]] - `calls` [EXTRACTED]
 - [[tracker()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Tracker

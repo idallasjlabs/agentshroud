@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Gateway Test Suite"
+community: "Agentic Os (architecture)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Agentic_Os_architecture
 ---
 
 # Codex CLI (TERTIARY agent)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Claude Code (PRIMARY agent)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/Agentic_Os_architecture

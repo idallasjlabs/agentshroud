@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "docs/project"
+community: "Intel Report (security)"
 location: "L95"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/project
+  - community/Intel_Report_security
 ---
 
 # CompetitiveIntelReport
@@ -49,4 +49,4 @@ tags:
 - [[test_citation_verifier.py]] - `imports` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/docs/project
+#graphify/code #graphify/INFERRED #community/Intel_Report_security

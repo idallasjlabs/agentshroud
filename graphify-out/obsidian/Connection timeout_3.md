@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "docs/setup/ICLOUD-SERVICES-SETUP.md"
 type: "document"
-community: "ESP32 Firmware"
-location: "L147"
+community: "Icloud Services Setup (setup)"
+location: "L444"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Icloud_Services_Setup_setup
 ---
 
 # "Connection timeout"
 
 ## Connections
-- [[Troubleshooting_31]] - `contains` [EXTRACTED]
+- [[🔍 Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Icloud_Services_Setup_setup

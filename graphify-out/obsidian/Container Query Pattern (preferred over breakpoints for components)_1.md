@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-ui)"
 location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-ui
 ---
 
 # Container Query Pattern (preferred over breakpoints for components)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Responsive Layout System_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ui

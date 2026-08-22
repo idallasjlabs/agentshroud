@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/competitive-analysis.md"
 type: "document"
-community: "docs/vault"
+community: "Competitive Analysis (workspace)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Competitive_Analysis_workspace
 ---
 
 # Competitive Intelligence Report — Standard Prompt (Hermes Agent)
@@ -18,4 +18,4 @@ tags:
 - [[REPORT STRUCTURE]] - `contains` [EXTRACTED]
 - [[competitive-analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Competitive_Analysis_workspace

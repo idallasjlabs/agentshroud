@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/02-human-in-the-loop.md"
+source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "branding/QUICK-REFERENCE.md"
-location: "L229"
+community: "01 Enforce By Default (redteam)"
+location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/QUICK-REFERENCEmd
+  - community/01_Enforce_By_Default_redteam
 ---
 
 # Constraints
 
 ## Connections
-- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
+- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/QUICK-REFERENCEmd
+#graphify/document #graphify/EXTRACTED #community/01_Enforce_By_Default_redteam

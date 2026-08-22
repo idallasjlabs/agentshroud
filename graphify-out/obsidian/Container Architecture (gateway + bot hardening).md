@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "ESP32 Firmware"
+community: "Agentic Os (architecture)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Agentic_Os_architecture
 ---
 
 # Container Architecture (gateway + bot hardening)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[asb CLI — Deployment Tool]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/concept #graphify/EXTRACTED #community/Agentic_Os_architecture

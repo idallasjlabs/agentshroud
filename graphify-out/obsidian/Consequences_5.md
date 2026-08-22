@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Adr 006 Multi Runtime (adr)"
 location: "L194"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Adr_006_Multi_Runtime_adr
 ---
 
 # Consequences
@@ -17,4 +17,4 @@ tags:
 - [[Negative]] - `contains` [EXTRACTED]
 - [[Positive]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Adr_006_Multi_Runtime_adr

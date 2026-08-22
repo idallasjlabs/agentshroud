@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_DECISION.md"
+source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "scripts/switch_model.sh"
-location: "L23"
+community: "Openclaw Write Requirements (architecture)"
+location: "L495"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/switch_modelsh
+  - community/Openclaw_Write_Requirements_architecture
 ---
 
-# Configuration
+# Configuration:
 
 ## Connections
-- [[Current Setup (Kept)]] - `contains` [EXTRACTED]
-- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
+- [[Recommended Configuration for Your Use Case]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/switch_modelsh
+#graphify/document #graphify/EXTRACTED #community/Openclaw_Write_Requirements_architecture

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "Security Docs"
+community: "System overview (00 - START HERE)"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/System_overview_00_-_START_HERE
 ---
 
 # Components
 
 ## Connections
-- [[AgentShroud System Overview]] - `contains` [EXTRACTED]
+- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/System_overview_00_-_START_HERE

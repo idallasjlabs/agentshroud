@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "concept"
-community: "docs/vault"
+community: "Agents"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/docs/vault
+  - community/Agents
 ---
 
 # Codex Test Augmenter Role
@@ -14,4 +14,4 @@ tags:
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 - [[test-augmenter.agent]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/docs/vault
+#graphify/concept #graphify/INFERRED #community/Agents

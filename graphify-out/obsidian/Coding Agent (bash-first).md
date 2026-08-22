@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "branding/colors"
+community: "Skill (coding-agent)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/colors
+  - community/Skill_coding-agent
 ---
 
 # Coding Agent (bash-first)
@@ -21,9 +21,9 @@ tags:
 - [[Pi Coding Agent]] - `contains` [EXTRACTED]
 - [[Progress Updates (Critical)]] - `contains` [EXTRACTED]
 - [[Quick Start One-Shot Tasks]] - `contains` [EXTRACTED]
-- [[SKILL_139]] - `contains` [EXTRACTED]
+- [[SKILL_203]] - `contains` [EXTRACTED]
 - [[The Pattern workdir + background + pty]] - `contains` [EXTRACTED]
 - [[⚠️ PTY Mode Required!]] - `contains` [EXTRACTED]
 - [[⚠️ Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/colors
+#graphify/document #graphify/EXTRACTED #community/Skill_coding-agent

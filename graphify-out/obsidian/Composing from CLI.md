@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/message-composition.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Message Composition (references)"
 location: "L156"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Message_Composition_references
 ---
 
 # Composing from CLI
@@ -19,4 +19,4 @@ tags:
 - [[Reply (opens editor with quoted message)]] - `contains` [EXTRACTED]
 - [[Send from stdin]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Message_Composition_references

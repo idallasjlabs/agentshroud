@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
-location: "L4323"
+community: "Telegram Proxy Inbound"
+location: "L4354"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Telegram_Proxy_Inbound
 ---
 
 # Collaborator attempts to approve/deny requests should be blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_approval_action_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

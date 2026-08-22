@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "scripts/check-vendor-compat.sh"
-location: "L267"
+community: "Adr 009 Enforce By (adr)"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/check-vendor-compatsh
+  - community/Adr_009_Enforce_By_adr
 ---
 
 # Configuration
 
 ## Connections
-- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
+- [[Decision_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/check-vendor-compatsh
+#graphify/document #graphify/EXTRACTED #community/Adr_009_Enforce_By_adr

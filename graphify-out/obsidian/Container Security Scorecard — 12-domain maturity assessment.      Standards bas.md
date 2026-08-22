@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Voice Gateway Tests"
-location: "L2132"
+community: "Soc Bots"
+location: "L2170"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Soc_Bots
 ---
 
 # Container Security Scorecard — 12-domain maturity assessment.      Standards bas
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_security_scorecard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Soc_Bots

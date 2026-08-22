@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Auth errors (07 - Errors & Troubleshooting)"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Auth_errors_07_-_Errors__Troubleshooting
 ---
 
 # Common Causes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HTTP 401 — Unauthorized]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Auth_errors_07_-_Errors__Troubleshooting

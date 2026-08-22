@@ -1,19 +1,17 @@
 ---
-source_file: "docker/config/openclaw/agents/openclaw-identity.md"
+source_file: "docker/config/openclaw/workspace/IDENTITY.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Developer (workspace)"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Developer_workspace
 ---
 
 # Competitive Intelligence Protocol
 
 ## Connections
-- [[IDENTITY.md - Who I Am]] - `contains` [EXTRACTED]
-- [[IDENTITY.md - Who I Am_1]] - `contains` [EXTRACTED]
-- [[OpenClawAgentShroud Bot Identity]] - `references` [EXTRACTED]
+- [[IDENTITY.md - Who I Am_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Developer_workspace

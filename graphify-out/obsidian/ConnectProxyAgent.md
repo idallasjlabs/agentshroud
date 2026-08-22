@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/setup-https-proxy.js"
 type: "code"
-community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+community: "Setup Https Proxy (openclaw)"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+  - community/Setup_Https_Proxy_openclaw
 ---
 
 # ConnectProxyAgent
@@ -15,4 +15,4 @@ tags:
 - [[.createConnection()]] - `method` [EXTRACTED]
 - [[setup-https-proxy.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+#graphify/code #graphify/EXTRACTED #community/Setup_Https_Proxy_openclaw

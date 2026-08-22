@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Agentshroud Gateway (06 - Containers & Services)"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Agentshroud_Gateway_06_-_Containers__Services
 ---
 
 # Container Properties
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Agentshroud_Gateway_06_-_Containers__Services

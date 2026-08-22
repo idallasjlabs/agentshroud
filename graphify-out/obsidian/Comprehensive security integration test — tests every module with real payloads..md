@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Ingest API Main & Models"
 location: "L3271"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Ingest_API_Main__Models
 ---
 
 # Comprehensive security integration test — tests every module with real payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[deep_security_test()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API_Main__Models

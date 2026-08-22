@@ -1,17 +1,16 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/query.md"
 type: "rationale"
-community: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
+community: "Query (references)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
+  - community/Query_references
 ---
 
 # Constrained query-vocabulary expansion
 
 ## Connections
-- [[graphify querypathexplain reference]] - `references` [EXTRACTED]
 - [[save-result Feedback Loop]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
+#graphify/rationale #graphify/EXTRACTED #community/Query_references

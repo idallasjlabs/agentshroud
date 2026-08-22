@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "ESP32 Firmware"
+community: "Browser Security"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Browser_Security
 ---
 
 # ConsentFramework
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_61]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_64]] - `method` [EXTRACTED]
 - [[.add_to_blacklist()]] - `method` [EXTRACTED]
 - [[.add_to_whitelist()]] - `method` [EXTRACTED]
 - [[.get_blacklist()]] - `method` [EXTRACTED]
@@ -24,12 +24,16 @@ tags:
 - [[.validate_configs()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any_8]] - `uses` [INFERRED]
+- [[Chen et al. 2026 — Agent configuration vulnerabilities  session hijacking (arXiv2602.14364)]] - `cites` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
+- [[GitGuard]] - `semantically_similar_to` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
+- [[Maloyan & Namiot 2026 — MCP security analysis (arXiv2601.17548)]] - `cites` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
+- [[SessionManager]] - `semantically_similar_to` [INFERRED]
 - [[TestConsentDecision]] - `uses` [INFERRED]
 - [[TestEnvironmentValidation]] - `uses` [INFERRED]
 - [[TestServerConfigValidation]] - `uses` [INFERRED]
@@ -38,5 +42,6 @@ tags:
 - [[consent_framework.py]] - `contains` [EXTRACTED]
 - [[framework()]] - `calls` [EXTRACTED]
 - [[middleware.py]] - `imports` [EXTRACTED]
+- [[test_consent_framework.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Browser_Security

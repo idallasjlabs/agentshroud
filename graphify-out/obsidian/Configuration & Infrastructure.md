@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/00 - START HERE/Home.md"
 type: "document"
-community: "Security Docs"
+community: "Home (00 - START HERE)"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Home_00_-_START_HERE
 ---
 
 # Configuration & Infrastructure
 
 ## Connections
-- [[AgentShroud Vault Home]] - `contains` [EXTRACTED]
+- [[AgentShroud — Vault Home]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Home_00_-_START_HERE

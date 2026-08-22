@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Egress filter errors (07 - Errors & Troubleshooting)"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress_filter_errors_07_-_Errors__Troubleshooting
 ---
 
 # Common Missing Domains
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HTTP 403 — Egress Blocked]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Egress_filter_errors_07_-_Errors__Troubleshooting

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "docs/redteam"
+community: "Openclaw (05 - Dependencies)"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/redteam
+  - community/Openclaw_05_-_Dependencies
 ---
 
 # Config Location
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/redteam
+#graphify/document #graphify/EXTRACTED #community/Openclaw_05_-_Dependencies

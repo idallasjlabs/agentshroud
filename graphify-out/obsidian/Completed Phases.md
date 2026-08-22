@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Agentshroud Whitepaper (papers)"
 location: "L1196"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Agentshroud_Whitepaper_papers
 ---
 
 # Completed Phases
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[12. Roadmap]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Agentshroud_Whitepaper_papers
