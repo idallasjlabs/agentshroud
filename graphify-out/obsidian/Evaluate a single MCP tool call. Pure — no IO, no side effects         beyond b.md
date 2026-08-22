@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "Egress Domain Allowlist"
+community: "Mcp Policy"
 location: "L270"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Domain_Allowlist
+  - community/Mcp_Policy
 ---
 
 # Evaluate a single MCP tool call. Pure — no I/O, no side effects         beyond b
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.evaluate()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Domain_Allowlist
+#graphify/rationale #graphify/EXTRACTED #community/Mcp_Policy

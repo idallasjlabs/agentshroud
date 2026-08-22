@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "Competitive Intel Store"
+community: "Security Hardening"
 location: "L212"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Security_Hardening
 ---
 
 # Extract the key_id from an encrypted blob without decrypting.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_blob_key_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/rationale #graphify/EXTRACTED #community/Security_Hardening

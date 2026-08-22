@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L153"
+community: "Egress Filter"
+location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress_Filter
 ---
 
 # EgressFilterConfig
@@ -52,6 +52,7 @@ tags:
 - [[EgressFilterConfig_1]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[FakeAuditStore]] - `uses` [INFERRED]
+- [[OpenClaw researchweb_search domains pre-approved after 210-denial SOC saturation incident]] - `rationale_for` [EXTRACTED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
@@ -103,7 +104,7 @@ tags:
 - [[set_egress_config()]] - `references` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_egress_enforce.py]] - `imports` [EXTRACTED]
-- [[test_egress_filter.py]] - `references` [EXTRACTED]
+- [[test_egress_filter.py]] - `imports` [EXTRACTED]
 - [[test_egress_filter_flush_without_notifier()]] - `calls` [EXTRACTED]
 - [[test_egress_filter_no_notification_on_allow()]] - `calls` [EXTRACTED]
 - [[test_egress_filter_notifies_on_deny()]] - `calls` [EXTRACTED]
@@ -113,4 +114,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[update_egress_allowlist()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Egress_Filter

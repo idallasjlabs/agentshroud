@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mm/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: "docs/project"
+community: "Skill (i-mm)"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Skill_i-mm
 ---
 
 # Example: FODL Pipeline Overview
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Hierarchy Design — Outline First_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mm

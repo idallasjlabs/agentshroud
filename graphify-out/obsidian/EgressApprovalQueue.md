@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Egress Approval (security)"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Egress_Approval_security
 ---
 
 # EgressApprovalQueue
 
 ## Connections
-- [[.__init__()_71]] - `method` [EXTRACTED]
+- [[.__init__()_74]] - `method` [EXTRACTED]
 - [[._append_decision()]] - `method` [EXTRACTED]
 - [[._assess_risk()]] - `method` [EXTRACTED]
 - [[._check_existing_rule()]] - `method` [EXTRACTED]
@@ -37,6 +37,9 @@ tags:
 - [[.revoke_decision()]] - `method` [EXTRACTED]
 - [[.set_emergency_block_all()]] - `method` [EXTRACTED]
 - [[.set_event_bus()_1]] - `method` [EXTRACTED]
+- [[DelegationManager]] - `semantically_similar_to` [INFERRED]
+- [[EgressRule]] - `shares_data_with` [EXTRACTED]
+- [[TelegramAPIProxy]] - `shares_data_with` [INFERRED]
 - [[TestEgressApprovalAPI]] - `uses` [INFERRED]
 - [[TestEgressApprovalQueue]] - `uses` [INFERRED]
 - [[Thread-safe asyncio queue for managing egress approval requests.      Features]] - `rationale_for` [EXTRACTED]
@@ -45,4 +48,4 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Egress_Approval_security

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Agentshroud Plan Reset 20260222 (v0.8)"
 location: "L228"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Agentshroud_Plan_Reset_20260222_v08
 ---
 
 # FINAL: Network Lockdown Activation
@@ -17,4 +17,4 @@ tags:
 - [[Pre-Flight Checklist]] - `contains` [EXTRACTED]
 - [[Verification_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Agentshroud_Plan_Reset_20260222_v08

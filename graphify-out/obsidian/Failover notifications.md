@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Llm Proxy.py (Proxy Layer)"
 location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Llm_Proxypy_Proxy_Layer
 ---
 
 # Failover notifications
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Quota Failover]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Llm_Proxypy_Proxy_Layer

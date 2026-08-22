@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Telegram Proxy Outbound"
 location: "L5350"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Telegram_Proxy_Outbound
 ---
 
 # Fail-closed substitution must target the resolved text field.          Regressio
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_fail_closed_replaces_caption_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Outbound

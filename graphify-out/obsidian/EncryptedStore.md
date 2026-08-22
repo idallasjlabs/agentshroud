@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Security Hardening"
 location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Security_Hardening
 ---
 
 # EncryptedStore
 
 ## Connections
-- [[.__init__()_75]] - `method` [EXTRACTED]
+- [[.__init__()_78]] - `method` [EXTRACTED]
 - [[._derive_key()]] - `method` [EXTRACTED]
 - [[._resolve_secret()]] - `method` [EXTRACTED]
 - [[.decrypt()]] - `method` [EXTRACTED]
@@ -78,4 +78,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Security_Hardening

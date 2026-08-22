@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "MCP Proxy Config"
+community: "Tool Chain & CVE Triage"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # Enum
 
 ## Connections
+- [[A2ADecision]] - `inherits` [EXTRACTED]
+- [[A2AMessageType]] - `inherits` [EXTRACTED]
 - [[A2AMethod]] - `inherits` [EXTRACTED]
 - [[A2APolicyAction]] - `inherits` [EXTRACTED]
 - [[Action_1]] - `inherits` [EXTRACTED]
@@ -30,6 +32,8 @@ tags:
 - [[EgressStatus]] - `inherits` [EXTRACTED]
 - [[FindingSeverity]] - `inherits` [EXTRACTED]
 - [[FindingType]] - `inherits` [EXTRACTED]
+- [[GovernanceAction]] - `inherits` [EXTRACTED]
+- [[GovernanceEventType]] - `inherits` [EXTRACTED]
 - [[GroupRole]] - `inherits` [EXTRACTED]
 - [[HealthStatus]] - `inherits` [EXTRACTED]
 - [[HostStatus]] - `inherits` [EXTRACTED]
@@ -51,9 +55,11 @@ tags:
 - [[RiskLevel]] - `inherits` [EXTRACTED]
 - [[RiskLevel_1]] - `inherits` [EXTRACTED]
 - [[RiskLevel_2]] - `inherits` [EXTRACTED]
+- [[RiskLevel_7]] - `inherits` [EXTRACTED]
 - [[RiskLevel_3]] - `inherits` [EXTRACTED]
-- [[RiskLevel_5]] - `inherits` [EXTRACTED]
 - [[RiskLevel_4]] - `inherits` [EXTRACTED]
+- [[RiskLevel_6]] - `inherits` [EXTRACTED]
+- [[RiskLevel_5]] - `inherits` [EXTRACTED]
 - [[Role_1]] - `inherits` [EXTRACTED]
 - [[RotationStatus]] - `inherits` [EXTRACTED]
 - [[SCLInterface]] - `inherits` [EXTRACTED]
@@ -72,11 +78,14 @@ tags:
 - [[VulnClass]] - `inherits` [EXTRACTED]
 - [[WSEventType]] - `inherits` [EXTRACTED]
 - [[_State]] - `inherits` [EXTRACTED]
+- [[a2a_governance.py]] - `imports_from` [EXTRACTED]
 - [[a2a_policy.py]] - `imports_from` [EXTRACTED]
 - [[agent_isolation.py]] - `imports_from` [EXTRACTED]
 - [[browse.py]] - `imports_from` [EXTRACTED]
 - [[browse.py_1]] - `imports_from` [EXTRACTED]
 - [[browse.py_2]] - `imports_from` [EXTRACTED]
+- [[browse.py_4]] - `imports_from` [EXTRACTED]
+- [[browse.py_3]] - `imports_from` [EXTRACTED]
 - [[browser_security.py]] - `imports_from` [EXTRACTED]
 - [[cross_bot_trust_ledger.py]] - `imports_from` [EXTRACTED]
 - [[delegation.py]] - `imports_from` [EXTRACTED]
@@ -106,6 +115,7 @@ tags:
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
 - [[server.py]] - `imports_from` [EXTRACTED]
 - [[skill_guard.py]] - `imports_from` [EXTRACTED]
+- [[subagent_governance.py]] - `imports_from` [EXTRACTED]
 - [[subagent_monitor.py]] - `imports_from` [EXTRACTED]
 - [[test_web_proxy_security.py]] - `imports_from` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `imports_from` [EXTRACTED]
@@ -116,4 +126,4 @@ tags:
 - [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

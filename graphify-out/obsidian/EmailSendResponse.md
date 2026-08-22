@@ -1,26 +1,21 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "Forward (routes)"
 location: "L362"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Forward_routes
 ---
 
 # EmailSendResponse
 
 ## Connections
 - [[BaseModel]] - `inherits` [EXTRACTED]
-- [[MCPProxyRequest]] - `uses` [INFERRED]
-- [[MCPResultRequest]] - `uses` [INFERRED]
-- [[OpProxyRequest]] - `uses` [INFERRED]
 - [[Response from POST emailsend.]] - `rationale_for` [EXTRACTED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
 - [[email_send()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
 - [[models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/code #graphify/EXTRACTED #community/Forward_routes

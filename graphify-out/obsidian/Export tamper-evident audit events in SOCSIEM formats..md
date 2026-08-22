@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Audit Export"
 location: "L2505"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Audit_Export
 ---
 
 # Export tamper-evident audit events in SOC/SIEM formats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[soc_export()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Export

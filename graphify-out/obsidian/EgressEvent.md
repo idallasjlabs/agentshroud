@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Security Module Middleware"
+community: "Egress Monitor"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Security_Module_Middleware
+  - community/Egress_Monitor
 ---
 
 # EgressEvent
 
 ## Connections
-- [[.get_events()_1]] - `references` [EXTRACTED]
+- [[.get_events()_2]] - `references` [EXTRACTED]
 - [[.record()_1]] - `references` [EXTRACTED]
 - [[.scan_response()]] - `calls` [EXTRACTED]
 - [[.test_alert_has_description()]] - `calls` [EXTRACTED]
@@ -28,6 +28,7 @@ tags:
 - [[.test_slow_drip_across_channels()]] - `calls` [EXTRACTED]
 - [[.test_summary_report()]] - `calls` [EXTRACTED]
 - [[.test_unusual_destination_flagged()]] - `calls` [EXTRACTED]
+- [[MockEgressEvent]] - `shares_data_with` [AMBIGUOUS]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
 - [[TestAnomalyDetection]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
@@ -61,4 +62,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Security_Module_Middleware
+#graphify/code #graphify/INFERRED #community/Egress_Monitor

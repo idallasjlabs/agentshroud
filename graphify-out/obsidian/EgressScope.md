@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Egress Approval (security)"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Egress_Approval_security
 ---
 
 # EgressScope
@@ -18,10 +18,11 @@ tags:
 - [[.from_dict()_6]] - `method` [EXTRACTED]
 - [[.get_rules_for_user()]] - `calls` [EXTRACTED]
 - [[.matches()]] - `method` [EXTRACTED]
-- [[.to_dict()_8]] - `method` [EXTRACTED]
+- [[.to_dict()_9]] - `method` [EXTRACTED]
 - [[Defines who an egress rule applies to.      kind values       all   — applies]] - `rationale_for` [EXTRACTED]
+- [[EgressRule]] - `references` [EXTRACTED]
 - [[egress_approval.py]] - `contains` [EXTRACTED]
 - [[override_egress_rule()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Egress_Approval_security

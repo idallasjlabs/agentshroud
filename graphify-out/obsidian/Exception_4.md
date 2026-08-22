@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Collaborator Prompt Safety"
+community: "Mcp Proxy"
 location: "L125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Collaborator_Prompt_Safety
+  - community/Mcp_Proxy
 ---
 
 # Exception
 
 ## Connections
-- [[.__init__()_170]] - `references` [EXTRACTED]
+- [[.__init__()_174]] - `references` [EXTRACTED]
 - [[ConnectionPool]] - `uses` [INFERRED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
 - [[MCPAuditTrail]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[StdioConnection]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Safety
+#graphify/code #graphify/INFERRED #community/Mcp_Proxy

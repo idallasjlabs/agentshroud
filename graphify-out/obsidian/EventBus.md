@@ -1,38 +1,35 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Planning Docs"
+community: "Security Audit & Watchtower Tests"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # EventBus
 
 ## Connections
-- [[.__init__()_11]] - `method` [EXTRACTED]
+- [[.__init__()_12]] - `method` [EXTRACTED]
 - [[.emit()]] - `method` [EXTRACTED]
 - [[.get_recent()]] - `method` [EXTRACTED]
 - [[.get_stats()]] - `method` [EXTRACTED]
 - [[.subscribe()]] - `method` [EXTRACTED]
 - [[.unsubscribe()]] - `method` [EXTRACTED]
+- [[3+ auth failures within 5 minutes escalates event severity to critical]] - `rationale_for` [EXTRACTED]
 - [[AppState]] - `uses` [INFERRED]
 - [[FastAPI_1]] - `uses` [INFERRED]
+- [[GatewayEvent]] - `shares_data_with` [EXTRACTED]
 - [[LogRecord]] - `uses` [INFERRED]
-- [[MCPProxyRequest]] - `uses` [INFERRED]
-- [[MCPResultRequest]] - `uses` [INFERRED]
-- [[OpProxyRequest]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
 - [[Simple in-process event bus with async support]] - `rationale_for` [EXTRACTED]
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
 - [[_SendSpy]] - `uses` [INFERRED]
 - [[bus()]] - `calls` [EXTRACTED]
 - [[event_bus.py]] - `contains` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[event_bus.py_1]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `imports` [EXTRACTED]
 - [[test_api_alerts_endpoint_emits_bus_event()]] - `calls` [EXTRACTED]
@@ -40,4 +37,4 @@ tags:
 - [[test_event_bus.py]] - `imports` [EXTRACTED]
 - [[test_subscribed_relay_receives_bus_emissions()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

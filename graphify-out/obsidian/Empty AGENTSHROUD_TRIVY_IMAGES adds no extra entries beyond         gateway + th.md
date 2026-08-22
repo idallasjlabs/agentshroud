@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "docs/vault"
+community: "Daily Cve Report"
 location: "L933"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Daily_Cve_Report
 ---
 
 # Empty AGENTSHROUD_TRIVY_IMAGES adds no extra entries beyond         gateway + th
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_env_var_empty_string_ignored()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Daily_Cve_Report

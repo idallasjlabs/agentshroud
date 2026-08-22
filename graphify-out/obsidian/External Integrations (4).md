@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "docs/reference"
+community: "Security Inventory (security)"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/reference
+  - community/Security_Inventory_security
 ---
 
 # External Integrations (4)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Modules (58)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/reference
+#graphify/document #graphify/EXTRACTED #community/Security_Inventory_security

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Egress Filter (security)"
 location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress_Filter_security
 ---
 
 # EgressFilter
 
 ## Connections
-- [[.__init__()_72]] - `method` [EXTRACTED]
+- [[.__init__()_75]] - `method` [EXTRACTED]
 - [[._check_impl()]] - `method` [EXTRACTED]
 - [[._is_ipv6()]] - `method` [EXTRACTED]
 - [[._is_private_ip()_2]] - `method` [EXTRACTED]
@@ -48,14 +48,16 @@ tags:
 - [[.test_private_ip_blocking()]] - `calls` [EXTRACTED]
 - [[.test_url_parsing()]] - `calls` [EXTRACTED]
 - [[.test_wildcard_allowlist_matching()]] - `calls` [EXTRACTED]
+- [[Data Flow]] - `references` [EXTRACTED]
 - [[DataExfilVolumeGuard]] - `conceptually_related_to` [EXTRACTED]
-- [[EgressFilter_4]] - `uses` [INFERRED]
 - [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[FakeAuditStore]] - `uses` [INFERRED]
 - [[Filter outbound connections based on allowlists with enforcemonitor modes.]] - `rationale_for` [EXTRACTED]
+- [[Only DENY egress decisions persisted to audit store (ALLOW caused 57M+ row32GB unbounded growth)]] - `rationale_for` [EXTRACTED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[Startup Sequence]] - `references` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditStorePersistence]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
@@ -69,6 +71,7 @@ tags:
 - [[TestEgressSSRF]] - `uses` [INFERRED]
 - [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
 - [[TestEncryptedStore]] - `uses` [INFERRED]
+- [[TestEnforceDefaults]] - `references` [EXTRACTED]
 - [[TestEnforceMode]] - `uses` [INFERRED]
 - [[TestEnforcementWiring]] - `uses` [INFERRED]
 - [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
@@ -88,20 +91,21 @@ tags:
 - [[TestTrustManager]] - `uses` [INFERRED]
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestURLParsing]] - `uses` [INFERRED]
+- [[URLAnalyzer]] - `semantically_similar_to` [INFERRED]
 - [[_PassInboundPipeline]] - `uses` [INFERRED]
 - [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_make_deny_all_filter()]] - `calls` [EXTRACTED]
 - [[_make_filter()]] - `calls` [EXTRACTED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
-- [[egress_config.py]] - `calls` [EXTRACTED]
 - [[egress_filter()]] - `calls` [EXTRACTED]
 - [[egress_filter()_1]] - `calls` [EXTRACTED]
 - [[egress_filter.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
+- [[get_egress_config()]] - `calls` [EXTRACTED]
 - [[http_proxy.py]] - `imports` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
+- [[main.py_3]] - `references` [EXTRACTED]
 - [[run()_3]] - `calls` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
@@ -113,4 +117,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Egress_Filter_security

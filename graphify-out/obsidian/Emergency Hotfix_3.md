@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mc/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mc/SKILL.md"
 type: "document"
-community: "docs/vault"
+community: "Skill (i-mc)"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skill_i-mc
 ---
 
 # Emergency Hotfix
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GSDE&G Development Master Checklist_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mc

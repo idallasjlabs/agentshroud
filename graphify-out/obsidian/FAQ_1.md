@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "User Guide (docs)"
 location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/User_Guide_docs
 ---
 
 # FAQ
@@ -21,4 +21,4 @@ tags:
 - [[Q What happens if I accidentally send a password]] - `contains` [EXTRACTED]
 - [[Q What's the kill switch]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/User_Guide_docs

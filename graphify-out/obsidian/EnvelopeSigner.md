@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Pipeline Unit"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Pipeline_Unit
 ---
 
 # EnvelopeSigner
 
 ## Connections
-- [[.__init__()_83]] - `method` [EXTRACTED]
+- [[.__init__()_86]] - `method` [EXTRACTED]
 - [[._compute_signature()]] - `method` [EXTRACTED]
 - [[.sign()]] - `method` [EXTRACTED]
 - [[.test_different_keys_fail_verification()]] - `calls` [EXTRACTED]
@@ -21,6 +21,7 @@ tags:
 - [[.verify()]] - `method` [EXTRACTED]
 - [[.wrap_system_prompt()]] - `method` [EXTRACTED]
 - [[.wrap_tool_result()]] - `method` [EXTRACTED]
+- [[C46 Signed Instruction Envelopes (HMAC-SHA256 tamper detection for system promptstool results)]] - `rationale_for` [EXTRACTED]
 - [[Signs and verifies InstructionEnvelopes.      Usage          signer = Envelope]] - `rationale_for` [EXTRACTED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestAuditChainBounded]] - `uses` [INFERRED]
@@ -42,4 +43,4 @@ tags:
 - [[test_instruction_envelope.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/code #graphify/EXTRACTED #community/Pipeline_Unit

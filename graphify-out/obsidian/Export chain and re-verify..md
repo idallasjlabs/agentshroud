@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "docs/vault"
+community: "Audit Chain"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Audit_Chain
 ---
 
 # Export chain and re-verify.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestChainExportAndVerification]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Chain

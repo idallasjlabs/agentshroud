@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "docs/vault"
+community: "Skills Guide (i-reference)"
 location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skills_Guide_i-reference
 ---
 
 # Emergency Procedures
@@ -16,4 +16,4 @@ tags:
 - [[GSDE&G Skills Reference]] - `contains` [EXTRACTED]
 - [[P1 Incident Response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skills_Guide_i-reference

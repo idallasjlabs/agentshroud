@@ -1,17 +1,17 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Setup Docs"
+community: "Security Architecture (security)"
 location: "L541"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Security_Architecture_security
 ---
 
 # Emergency Procedures
 
 ## Connections
-- [[Quick Reference_5]] - `contains` [EXTRACTED]
+- [[Quick Reference_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Security_Architecture_security

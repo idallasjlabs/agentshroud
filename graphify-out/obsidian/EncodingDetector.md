@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "Security Audit & Watchtower Tests"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # EncodingDetector
 
 ## Connections
-- [[.__init__()_74]] - `method` [EXTRACTED]
+- [[.__init__()_77]] - `method` [EXTRACTED]
 - [[.analyze()_1]] - `method` [EXTRACTED]
 - [[.decode_base64_segments()]] - `method` [EXTRACTED]
 - [[.decode_hex()]] - `method` [EXTRACTED]
@@ -23,6 +23,7 @@ tags:
 - [[.strip_zero_width()]] - `method` [EXTRACTED]
 - [[.test_config_disable_base64()]] - `calls` [EXTRACTED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[TestE2E01PromptGuardBlocking]] - `uses` [INFERRED]
@@ -57,4 +58,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

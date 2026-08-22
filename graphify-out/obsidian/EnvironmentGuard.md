@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Git Guard (security)"
 location: "L33"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Git_Guard_security
 ---
 
 # EnvironmentGuard
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_76]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_79]] - `method` [EXTRACTED]
 - [[._contains_env_access_patterns()]] - `method` [EXTRACTED]
 - [[._looks_like_credential()]] - `method` [EXTRACTED]
 - [[._record_leakage()]] - `method` [EXTRACTED]
@@ -87,4 +87,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Git_Guard_security

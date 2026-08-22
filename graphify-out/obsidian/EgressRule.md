@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Egress Approval (security)"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Egress_Approval_security
 ---
 
 # EgressRule
@@ -18,7 +18,9 @@ tags:
 - [[.approve()]] - `calls` [EXTRACTED]
 - [[.deny()]] - `calls` [EXTRACTED]
 - [[.preload_permanent_rules()]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `shares_data_with` [EXTRACTED]
+- [[EgressScope]] - `references` [EXTRACTED]
 - [[Represents an egress allowdeny rule.]] - `rationale_for` [EXTRACTED]
 - [[egress_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Egress_Approval_security

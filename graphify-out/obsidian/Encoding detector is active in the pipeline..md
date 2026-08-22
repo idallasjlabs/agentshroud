@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "SOC RBAC & Auth"
+community: "Security Audit & Watchtower Tests"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Encoding detector is active in the pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_encoding_detector_is_wired()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

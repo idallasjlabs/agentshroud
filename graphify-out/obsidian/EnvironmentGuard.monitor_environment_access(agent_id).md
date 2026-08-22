@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "Custom Skills"
+community: "Env Guard.py (Security Modules)"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Env_Guardpy_Security_Modules
 ---
 
 # EnvironmentGuard.monitor_environment_access(agent_id)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_38]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Env_Guardpy_Security_Modules

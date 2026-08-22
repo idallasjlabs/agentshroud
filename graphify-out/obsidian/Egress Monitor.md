@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Adr 005 Sha256 Hash (adr)"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - graphify/EXTRACTED
+  - community/Adr_005_Sha256_Hash_adr
 ---
 
 # Egress Monitor
@@ -14,4 +14,4 @@ tags:
 - [[DNS Filter]] - `conceptually_related_to` [INFERRED]
 - [[Gateway ManagementControl-Plane API (v1.3.0)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Adr_005_Sha256_Hash_adr

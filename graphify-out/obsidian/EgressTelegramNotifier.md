@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "docs/vault"
+community: "Telegram Egress Notify (proxy)"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Telegram_Egress_Notify_proxy
 ---
 
 # EgressTelegramNotifier
 
 ## Connections
-- [[.__init__()_36]] - `method` [EXTRACTED]
+- [[.__init__()_37]] - `method` [EXTRACTED]
 - [[._api_url()]] - `method` [EXTRACTED]
 - [[._async_send()]] - `method` [EXTRACTED]
 - [[._send_request()]] - `method` [EXTRACTED]
@@ -26,6 +26,7 @@ tags:
 - [[.notify_pending()]] - `method` [EXTRACTED]
 - [[.send_text()]] - `method` [EXTRACTED]
 - [[Sends Telegram inline keyboard notifications for egress approval.      Supports]] - `rationale_for` [EXTRACTED]
+- [[Telegram callback_query TTL expiry logged at DEBUG not ERROR]] - `rationale_for` [EXTRACTED]
 - [[TestEgressTelegramNotify]] - `uses` [INFERRED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
@@ -37,4 +38,4 @@ tags:
 - [[test_egress_callback_stale.py]] - `imports` [EXTRACTED]
 - [[test_egress_telegram_notify.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Telegram_Egress_Notify_proxy

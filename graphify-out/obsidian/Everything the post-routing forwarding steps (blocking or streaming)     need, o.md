@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Forward (routes)"
 location: "L370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Forward_routes
 ---
 
 # Everything the post-routing forwarding steps (blocking or streaming)     need, o
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_InboundResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Forward_routes

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "Custom Skills"
+community: "Encrypted Store.py (Security Modules)"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Encrypted_Storepy_Security_Modules
 ---
 
 # EncryptedStore.encrypt(data)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_37]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Encrypted_Storepy_Security_Modules

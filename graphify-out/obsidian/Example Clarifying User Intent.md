@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Skill (apple-reminders)"
 location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Skill_apple-reminders
 ---
 
 # Example: Clarifying User Intent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Apple Reminders CLI (remindctl)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Skill_apple-reminders

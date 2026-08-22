@@ -1,16 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Skill (i-aws)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-aws
 ---
 
 # FODL — Fluence Operational Data Lakehouse
 
 ## Connections
+- [[AWS Cloud Management & FinOps Agent_2]] - `references` [EXTRACTED]
 - [[FY26 Cost Reduction Plan (40% target)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Skill_i-aws

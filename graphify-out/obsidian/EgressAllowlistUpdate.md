@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "scripts/migrate-cve-registry-ghsa.py"
+community: "Management (web)"
 location: "L926"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/migrate-cve-registry-ghsapy
+  - community/Management_web
 ---
 
 # EgressAllowlistUpdate
@@ -19,4 +19,4 @@ tags:
 - [[management.py]] - `contains` [EXTRACTED]
 - [[update_egress_allowlist()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/migrate-cve-registry-ghsapy
+#graphify/code #graphify/EXTRACTED #community/Management_web

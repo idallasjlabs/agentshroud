@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Soc Egress Endpoints"
 location: "L65"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Soc_Egress_Endpoints
 ---
 
 # Emit an event to all subscribers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.emit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Soc_Egress_Endpoints

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Egress Filter"
 location: "L47"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Egress_Filter
 ---
 
 # EgressPolicy
 
 ## Connections
-- [[.__init__()_72]] - `references` [EXTRACTED]
+- [[.__init__()_75]] - `references` [EXTRACTED]
 - [[.get_policy()]] - `references` [EXTRACTED]
 - [[.matches_domain()]] - `method` [EXTRACTED]
 - [[.matches_ip()]] - `method` [EXTRACTED]
@@ -42,7 +42,6 @@ tags:
 - [[.test_port_not_allowed()]] - `calls` [EXTRACTED]
 - [[.test_private_ip_allowed_if_in_policy_allowlist()]] - `calls` [EXTRACTED]
 - [[Egress policy for an agent or global default.]] - `rationale_for` [EXTRACTED]
-- [[EgressFilter_4]] - `uses` [INFERRED]
 - [[EgressFilter_2]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[FakeAuditStore]] - `uses` [INFERRED]
@@ -112,5 +111,6 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
+- [[v0.9.0 cron-email fix SMTPIMAP ports 465587993 allowed for OpenClaw cron email]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Egress_Filter

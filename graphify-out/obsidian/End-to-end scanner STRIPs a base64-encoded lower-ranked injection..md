@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "SOC RBAC & Auth"
+community: "Security Audit & Watchtower Tests"
 location: "L287"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # End-to-end scanner STRIPs a base64-encoded lower-ranked injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tool_injection_scan_blocks_encoded_lower_ranked_rule()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

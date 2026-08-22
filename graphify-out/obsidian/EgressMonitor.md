@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L85"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # EgressMonitor
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_42]] - `calls` [EXTRACTED]
-- [[.__init__()_73]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_44]] - `calls` [EXTRACTED]
+- [[.__init__()_76]] - `method` [EXTRACTED]
 - [[.check_anomalies()]] - `method` [EXTRACTED]
 - [[.daily_summary()]] - `method` [EXTRACTED]
-- [[.get_events()_1]] - `method` [EXTRACTED]
+- [[.get_events()_2]] - `method` [EXTRACTED]
 - [[.record()_1]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any_8]] - `uses` [INFERRED]
@@ -27,6 +27,7 @@ tags:
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
+- [[Slow-drip  coordinated multi-channel exfiltration anomaly detection]] - `rationale_for` [EXTRACTED]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
 - [[TestAnomalyDetection]] - `uses` [INFERRED]
 - [[TestDailySummary]] - `uses` [INFERRED]
@@ -40,4 +41,4 @@ tags:
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware

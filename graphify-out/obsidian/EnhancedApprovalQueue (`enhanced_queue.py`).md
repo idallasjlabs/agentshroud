@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "docs/api"
+community: "Shutdown & recovery (01 - Architecture)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/api
+  - community/Shutdown__recovery_01_-_Architecture
 ---
 
 # EnhancedApprovalQueue (`enhanced_queue.py`)
@@ -15,7 +15,7 @@ tags:
 - [[Environment Variables Used_9]] - `contains` [EXTRACTED]
 - [[Key Class `EnhancedApprovalQueue`]] - `contains` [EXTRACTED]
 - [[Persistence]] - `contains` [EXTRACTED]
-- [[Purpose_86]] - `contains` [EXTRACTED]
+- [[Purpose_123]] - `contains` [EXTRACTED]
 - [[Related Notes_9]] - `contains` [EXTRACTED]
 - [[Responsibilities_9]] - `contains` [EXTRACTED]
 - [[Timeout Behavior]] - `contains` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[WebSocket Notifications]] - `contains` [EXTRACTED]
 - [[approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/api
+#graphify/document #graphify/EXTRACTED #community/Shutdown__recovery_01_-_Architecture

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Egress Config.py (Security Modules)"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress_Configpy_Security_Modules
 ---
 
 # EgressFilterConfig.is_denylisted(domain)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_34]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Egress_Configpy_Security_Modules

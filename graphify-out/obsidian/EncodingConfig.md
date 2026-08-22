@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "Security Audit & Watchtower Tests"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # EncodingConfig
 
 ## Connections
-- [[.__init__()_74]] - `references` [EXTRACTED]
+- [[.__init__()_77]] - `references` [EXTRACTED]
 - [[.test_config_disable_base64()]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
 - [[TestEncodingDetector]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[test_encoding_detector_rot13_can_be_disabled()]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

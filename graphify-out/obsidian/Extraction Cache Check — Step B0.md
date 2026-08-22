@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Gateway Test Suite"
+community: "Skill (graphify)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_graphify
 ---
 
 # Extraction Cache Check — Step B0
@@ -13,6 +13,5 @@ tags:
 ## Connections
 - [[--update Incremental Re-extraction Flow]] - `shares_data_with` [EXTRACTED]
 - [[Semantic Extraction — Part B (parallel subagents)]] - `conceptually_related_to` [EXTRACTED]
-- [[graphify SKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/Skill_graphify

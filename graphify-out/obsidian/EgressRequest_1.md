@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: ".github/COPILOT_CLI_SETUP.md"
+community: "Soc Models"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/github/COPILOT_CLI_SETUPmd
+  - community/Soc_Models
 ---
 
 # EgressRequest
@@ -17,8 +17,9 @@ tags:
 - [[.test_pending_status_default()]] - `calls` [EXTRACTED]
 - [[.test_red_risk_high_threat()]] - `calls` [EXTRACTED]
 - [[BaseModel]] - `inherits` [EXTRACTED]
+- [[_loadEgress()]] - `shares_data_with` [INFERRED]
 - [[models.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_egress.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/github/COPILOT_CLI_SETUPmd
+#graphify/code #graphify/EXTRACTED #community/Soc_Models
