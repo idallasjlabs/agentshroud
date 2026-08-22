@@ -1,21 +1,19 @@
 ---
-source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
+source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L375"
+community: "Security Architecture (security)"
+location: "L528"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Architecture_security
 ---
 
 # Quick Reference
 
 ## Connections
-- [[One-Liner to Add to Pi]] - `contains` [EXTRACTED]
-- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
-- [[Public Key (Copy-Paste Ready)]] - `contains` [EXTRACTED]
-- [[Test Connection]] - `contains` [EXTRACTED]
-- [[🔐 Credentials in 1Password]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
+- [[Emergency Procedures_2]] - `contains` [EXTRACTED]
+- [[Security Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Security_Architecture_security

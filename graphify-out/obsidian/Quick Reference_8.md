@@ -1,17 +1,21 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "skills/openclaw"
-location: "L1"
+community: "Setup Api Keys (setup)"
+location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Setup_Api_Keys_setup
 ---
 
-# Quick Reference.md
+# Quick Reference
 
 ## Connections
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
+- [[Change Default Model]] - `contains` [EXTRACTED]
+- [[Check Telegram Channel Status]] - `contains` [EXTRACTED]
+- [[List Available Models]] - `contains` [EXTRACTED]
+- [[View Configured Providers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Setup_Api_Keys_setup

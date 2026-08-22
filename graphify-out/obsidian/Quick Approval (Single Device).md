@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "scripts/peer-review.sh"
+community: "Device Pairing (setup)"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/peer-reviewsh
+  - community/Device_Pairing_setup
 ---
 
 # Quick Approval (Single Device)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Approving Device Pairing Requests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/peer-reviewsh
+#graphify/document #graphify/EXTRACTED #community/Device_Pairing_setup

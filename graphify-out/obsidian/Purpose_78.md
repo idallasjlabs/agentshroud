@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "docker/config/openclaw/skills/i-browser/README.md"
 type: "document"
-community: "README.md"
-location: "L12"
+community: "Readme (i-browser)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/READMEmd
+  - community/Readme_i-browser
 ---
 
 # Purpose
 
 ## Connections
-- [[models.py_3]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Readme_i-browser

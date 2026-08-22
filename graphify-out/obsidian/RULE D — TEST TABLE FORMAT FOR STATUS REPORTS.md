@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "skills/README.md"
+community: "Claude"
 location: "L152"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/READMEmd
+  - community/Claude
 ---
 
 # RULE D — TEST TABLE FORMAT FOR STATUS REPORTS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Claude

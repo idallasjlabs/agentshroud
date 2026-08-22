@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Web Proxy"
 location: "L95"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Web_Proxy
 ---
 
 # RateLimiter
 
 ## Connections
-- [[.__init__()_41]] - `method` [EXTRACTED]
-- [[.__init__()_42]] - `calls` [EXTRACTED]
+- [[.__init__()_43]] - `method` [EXTRACTED]
+- [[.__init__()_44]] - `calls` [EXTRACTED]
 - [[.check()_1]] - `method` [EXTRACTED]
 - [[.reset()]] - `method` [EXTRACTED]
 - [[.test_rate_limiter_reset()]] - `calls` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting_3]] - `uses` [INFERRED]
+- [[TestRateLimiting_4]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]
@@ -37,8 +37,9 @@ tags:
 - [[TestZeroWidthAttacks]] - `uses` [INFERRED]
 - [[URLAnalyzer]] - `uses` [INFERRED]
 - [[WebContentScanner]] - `uses` [INFERRED]
+- [[WebProxy_1]] - `calls` [EXTRACTED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Web_Proxy

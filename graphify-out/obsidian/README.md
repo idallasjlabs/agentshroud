@@ -1,30 +1,17 @@
 ---
-source_file: "README.md"
+source_file: ".agents/skills/i-apollo/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (i-apollo)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_i-apollo
 ---
 
 # README.md
 
 ## Connections
-- [[75 Security Modules]] - `contains` [EXTRACTED]
-- [[Acknowledgments]] - `contains` [EXTRACTED]
-- [[Architecture]] - `contains` [EXTRACTED]
-- [[Control Centers]] - `contains` [EXTRACTED]
-- [[Development]] - `contains` [EXTRACTED]
-- [[Documentation]] - `contains` [EXTRACTED]
-- [[Example Configurations]] - `contains` [EXTRACTED]
-- [[Media]] - `contains` [EXTRACTED]
-- [[Quickstart]] - `contains` [EXTRACTED]
-- [[What's New — v1.2.2 (June 2026)]] - `contains` [EXTRACTED]
-- [[What's New — v1.3.0 Reliability (July 2026)]] - `contains` [EXTRACTED]
-- [[Who It's For]] - `contains` [EXTRACTED]
-- [[Why AgentShroud]] - `contains` [EXTRACTED]
-- [[test_docs_accuracy.py]] - `references` [EXTRACTED]
+- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_i-apollo

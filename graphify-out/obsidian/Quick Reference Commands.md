@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Architecture Docs"
+community: "System Instructions Security (docker)"
 location: "L405"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/System_Instructions_Security_docker
 ---
 
 # Quick Reference Commands
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
 - [[System Instructions Credential Security (Ultra-Conservative)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/System_Instructions_Security_docker

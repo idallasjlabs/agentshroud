@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Jira Dev Ticket (workspace)"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Jira_Dev_Ticket_workspace
 ---
 
 # REST v3 transitions URL (GET to list, POST to apply) for an issue.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_transitions_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Jira_Dev_Ticket_workspace

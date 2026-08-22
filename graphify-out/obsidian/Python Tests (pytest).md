@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "Security Docs"
+community: "Augmenter.agent (agents)"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Augmenteragent_agents
 ---
 
 # Python Tests (pytest)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test Standards]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Augmenteragent_agents

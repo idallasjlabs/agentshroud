@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Access Control Matrix (security)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Access_Control_Matrix_security
 ---
 
 # RBAC Role Definitions
@@ -16,4 +16,4 @@ tags:
 - [[Agent Trust Levels]] - `contains` [EXTRACTED]
 - [[AgentShroud Access Control Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Access_Control_Matrix_security

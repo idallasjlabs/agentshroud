@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
+source_file: "docker/config/openclaw/skills/i-eightd/README.md"
 type: "document"
-community: "docker-compose.secure.yml"
-location: "L14"
+community: "Readme (i-eightd)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker-composesecureyml
+  - community/Readme_i-eightd
 ---
 
 # Purpose
 
 ## Connections
-- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker-composesecureyml
+#graphify/document #graphify/EXTRACTED #community/Readme_i-eightd

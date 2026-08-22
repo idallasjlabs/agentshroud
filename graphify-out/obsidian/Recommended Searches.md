@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "Planning Docs"
+community: "Uspto Trademark Application (docs)"
 location: "L213"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Uspto_Trademark_Application_docs
 ---
 
 # Recommended Searches
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 6 PRIOR SEARCH RESULTS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Uspto_Trademark_Application_docs

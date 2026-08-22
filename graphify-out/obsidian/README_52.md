@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/README.md"
+source_file: "docker/config/hermes/skills/i-eightd/README.md"
 type: "document"
-community: "scripts/launch-instance.sh"
+community: "Readme (i-eightd)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/launch-instancesh
+  - community/Readme_i-eightd
 ---
 
 # README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/launch-instancesh
+#graphify/document #graphify/EXTRACTED #community/Readme_i-eightd

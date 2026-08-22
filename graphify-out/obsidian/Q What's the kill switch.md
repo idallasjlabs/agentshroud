@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "User Guide (docs)"
 location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/User_Guide_docs
 ---
 
 # Q: What's the kill switch?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FAQ_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/User_Guide_docs

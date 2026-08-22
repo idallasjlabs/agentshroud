@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "rationale"
-community: "skills/openclaw"
+community: "Skill (i-ab)"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Skill_i-ab
 ---
 
 # Raw-flag triage discipline (74-merge sweep)
 
-## Connections
-- [[i-ab Audit Branch Merge Regression Detection]] - `rationale_for` [EXTRACTED]
-
-#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw
+#graphify/rationale #graphify/EXTRACTED #community/Skill_i-ab

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Telegram Proxy Inbound"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Proxy_Inbound
 ---
 
 # RateLimiter
 
 ## Connections
-- [[.__init__()_9]] - `method` [EXTRACTED]
-- [[.__init__()_37]] - `calls` [EXTRACTED]
+- [[.__init__()_10]] - `method` [EXTRACTED]
+- [[.__init__()_39]] - `calls` [EXTRACTED]
 - [[.check()]] - `method` [EXTRACTED]
 - [[.test_collaborator_rate_limit_notice_falls_back_without_markdown()]] - `calls` [EXTRACTED]
 - [[.test_collaborator_rate_limit_notice_includes_retry_window()]] - `calls` [EXTRACTED]
@@ -49,6 +49,7 @@ tags:
 - [[TestStrangerRateLimit]] - `uses` [INFERRED]
 - [[_OutboundScan]] - `uses` [INFERRED]
 - [[auth.py]] - `contains` [EXTRACTED]
+- [[auth.py_2]] - `references` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[test_auth.py]] - `imports` [EXTRACTED]
 - [[test_rate_limiter()]] - `calls` [EXTRACTED]
@@ -59,4 +60,4 @@ tags:
 - [[test_security.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Telegram_Proxy_Inbound

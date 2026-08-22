@@ -1,19 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_ARCHITECTURE.md"
+source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Setup Docs"
-location: "L528"
+community: "Browser Fetch Skill (reference)"
+location: "L381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Browser_Fetch_Skill_reference
 ---
 
 # Quick Reference
 
 ## Connections
-- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
-- [[Emergency Procedures_2]] - `contains` [EXTRACTED]
-- [[Security Checklist]] - `contains` [EXTRACTED]
+- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill_reference

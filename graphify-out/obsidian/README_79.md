@@ -1,17 +1,17 @@
 ---
-source_file: "docker/scripts/README.md"
+source_file: "docker/config/openclaw/skills/i-apollo/README.md"
 type: "document"
-community: "browser-extension/package.json"
+community: "Readme (i-apollo)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-extension/packagejson
+  - community/Readme_i-apollo
 ---
 
 # README.md
 
 ## Connections
-- [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-extension/packagejson
+#graphify/document #graphify/EXTRACTED #community/Readme_i-apollo

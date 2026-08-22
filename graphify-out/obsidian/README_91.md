@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/README.md"
+source_file: "docker/config/openclaw/skills/i-hermes/README.md"
 type: "document"
-community: "Architecture Docs"
+community: "Readme (i-hermes)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Readme_i-hermes
 ---
 
 # README.md
 
 ## Connections
-- [[Gateway Layer]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_i-hermes

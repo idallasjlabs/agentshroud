@@ -1,21 +1,21 @@
 ---
-source_file: "docs/setup/SETUP_API_KEYS.md"
+source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Planning Docs"
-location: "L257"
+community: "Openclaw Ssh Setup (setup)"
+location: "L375"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Openclaw_Ssh_Setup_setup
 ---
 
 # Quick Reference
 
 ## Connections
-- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
-- [[Change Default Model]] - `contains` [EXTRACTED]
-- [[Check Telegram Channel Status]] - `contains` [EXTRACTED]
-- [[List Available Models]] - `contains` [EXTRACTED]
-- [[View Configured Providers]] - `contains` [EXTRACTED]
+- [[One-Liner to Add to Pi]] - `contains` [EXTRACTED]
+- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
+- [[Public Key (Copy-Paste Ready)]] - `contains` [EXTRACTED]
+- [[Test Connection]] - `contains` [EXTRACTED]
+- [[🔐 Credentials in 1Password]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Openclaw_Ssh_Setup_setup

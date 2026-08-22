@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
-location: "L472"
+community: "Rbac"
+location: "L471"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Approval__FastAPI_Ingest
+  - graphify/EXTRACTED
+  - community/Rbac
 ---
 
 # RBACConfig
@@ -17,17 +17,18 @@ tags:
 - [[.test_default_config_initialization()]] - `calls` [EXTRACTED]
 - [[.test_get_users_by_role()]] - `calls` [EXTRACTED]
 - [[.test_owner_and_collaborators_can_be_overridden_from_env()]] - `calls` [EXTRACTED]
+- [[.test_pause_does_not_remove_from_collaborator_role()]] - `calls` [EXTRACTED]
+- [[.test_removed_dynamic_collaborator_excluded_from_effective_set()]] - `calls` [EXTRACTED]
+- [[.test_removed_hardcoded_collaborator_excluded_from_effective_set()]] - `calls` [EXTRACTED]
 - [[.test_role_assignment()]] - `calls` [EXTRACTED]
 - [[.test_role_hierarchy_checks()]] - `calls` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
-- [[Group]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[PermissionResult]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/Rbac

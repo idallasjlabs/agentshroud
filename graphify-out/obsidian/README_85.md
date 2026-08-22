@@ -1,17 +1,17 @@
 ---
-source_file: "docs/integrations/README.md"
+source_file: "docker/config/openclaw/skills/i-cicd/README.md"
 type: "document"
-community: "examples/agentshroud-with-tool-risk.yaml"
+community: "Readme (i-cicd)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/examples/agentshroud-with-tool-riskyaml
+  - community/Readme_i-cicd
 ---
 
 # README.md
 
 ## Connections
-- [[Integrations Documentation]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/examples/agentshroud-with-tool-riskyaml
+#graphify/document #graphify/EXTRACTED #community/Readme_i-cicd

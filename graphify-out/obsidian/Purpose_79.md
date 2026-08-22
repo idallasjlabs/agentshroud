@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docker/config/openclaw/skills/i-bs/README.md"
 type: "document"
-community: "docs/ssh-capability.md"
-location: "L12"
+community: "Readme (i-bs)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/ssh-capabilitymd
+  - community/Readme_i-bs
 ---
 
 # Purpose
 
 ## Connections
-- [[router.py_3]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/ssh-capabilitymd
+#graphify/document #graphify/EXTRACTED #community/Readme_i-bs

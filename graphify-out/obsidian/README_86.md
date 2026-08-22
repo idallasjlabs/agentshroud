@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/README.md"
+source_file: "docker/config/openclaw/skills/i-cr/README.md"
 type: "document"
-community: "docs/flows"
+community: "Readme (i-cr)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/flows
+  - community/Readme_i-cr
 ---
 
 # README.md
 
 ## Connections
-- [[`docsplanning` — Index]] - `contains` [EXTRACTED]
+- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/flows
+#graphify/document #graphify/EXTRACTED #community/Readme_i-cr

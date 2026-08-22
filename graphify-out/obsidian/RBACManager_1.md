@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "RBAC & Ingest Middleware"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/RBAC__Ingest_Middleware
 ---
 
 # RBACManager
 
 ## Connections
-- [[.__init__()_109]] - `method` [EXTRACTED]
+- [[.__init__()_112]] - `method` [EXTRACTED]
 - [[._build_permission_matrix()]] - `method` [EXTRACTED]
 - [[._build_tool_permissions()]] - `method` [EXTRACTED]
 - [[.audit_privilege_change()]] - `method` [EXTRACTED]
@@ -37,12 +37,14 @@ tags:
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
+- [[PUT users{user_id}role endpoint]] - `calls` [EXTRACTED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[Role-Based Access Control Manager.]] - `rationale_for` [EXTRACTED]
+- [[TestCollaboratorPersistence]] - `uses` [INFERRED]
 - [[TestGroupRegistry]] - `uses` [INFERRED]
 - [[TestRBACConfig]] - `uses` [INFERRED]
 - [[TestRBACErrorHandling]] - `uses` [INFERRED]
@@ -58,6 +60,6 @@ tags:
 - [[router.py_1]] - `imports` [EXTRACTED]
 - [[run()_3]] - `calls` [EXTRACTED]
 - [[set_user_role()_1]] - `calls` [EXTRACTED]
-- [[test_rbac.py]] - `imports` [EXTRACTED]
+- [[test_rbac.py]] - `tests` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

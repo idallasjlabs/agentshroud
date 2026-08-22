@@ -1,17 +1,19 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L109"
+community: "System overview (00 - START HERE)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/System_overview_00_-_START_HERE
 ---
 
-# Quick Reference
+# Quick Reference.md
 
 ## Connections
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[Home]] - `references` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[System Overview]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/System_overview_00_-_START_HERE

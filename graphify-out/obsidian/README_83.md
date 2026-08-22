@@ -1,17 +1,17 @@
 ---
-source_file: "docs/diagrams/README.md"
+source_file: "docker/config/openclaw/skills/i-browser/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-browser)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-browser
 ---
 
 # README.md
 
 ## Connections
-- [[AgentShroud — Diagram Library]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-browser

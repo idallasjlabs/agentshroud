@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "Rate Limit Guard"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Rate_Limit_Guard
 ---
 
 # RateLimitGuard
 
 ## Connections
-- [[.__init__()_108]] - `method` [EXTRACTED]
+- [[.__init__()_111]] - `method` [EXTRACTED]
 - [[._burst_limit()]] - `method` [EXTRACTED]
 - [[._sustained_limit()]] - `method` [EXTRACTED]
 - [[.check()_6]] - `method` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_under_limit_allows()]] - `calls` [EXTRACTED]
 - [[test_window_slides_and_allows_again()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/Rate_Limit_Guard

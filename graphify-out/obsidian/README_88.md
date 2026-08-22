@@ -1,17 +1,17 @@
 ---
-source_file: "docs/requirements/README.md"
+source_file: "docker/config/openclaw/skills/i-data/README.md"
 type: "document"
-community: "docs/setup-slack.md"
+community: "Readme (i-data)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/setup-slackmd
+  - community/Readme_i-data
 ---
 
 # README.md
 
 ## Connections
-- [[Requirements Documentation]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/setup-slackmd
+#graphify/document #graphify/EXTRACTED #community/Readme_i-data

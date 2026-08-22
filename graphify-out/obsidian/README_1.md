@@ -1,18 +1,17 @@
 ---
-source_file: "branding/README.md"
+source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (i-athena)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_i-athena
 ---
 
 # README.md
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_i-athena

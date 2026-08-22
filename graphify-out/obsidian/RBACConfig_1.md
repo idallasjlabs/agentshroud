@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "Tool ACL & Group RBAC"
 location: "L53"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval__FastAPI_Ingest
+  - community/Tool_ACL__Group_RBAC
 ---
 
 # RBACConfig
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_26]] - `calls` [EXTRACTED]
-- [[.__init__()_32]] - `calls` [EXTRACTED]
-- [[.__init__()_37]] - `calls` [EXTRACTED]
-- [[.__init__()_43]] - `calls` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_27]] - `calls` [EXTRACTED]
+- [[.__init__()_33]] - `calls` [EXTRACTED]
+- [[.__init__()_39]] - `calls` [EXTRACTED]
+- [[.__init__()_45]] - `calls` [EXTRACTED]
 - [[.__post_init__()_5]] - `calls` [EXTRACTED]
 - [[.__post_init__()_8]] - `method` [EXTRACTED]
 - [[._ensure_rbac()]] - `calls` [EXTRACTED]
@@ -40,20 +40,23 @@ tags:
 - [[Any_19]] - `uses` [INFERRED]
 - [[Any_21]] - `uses` [INFERRED]
 - [[Any_24]] - `uses` [INFERRED]
-- [[Any_46]] - `uses` [INFERRED]
-- [[Any_54]] - `uses` [INFERRED]
-- [[Any_71]] - `uses` [INFERRED]
+- [[Any_47]] - `uses` [INFERRED]
+- [[Any_55]] - `uses` [INFERRED]
+- [[Any_72]] - `uses` [INFERRED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[AuditChainEntry]] - `uses` [INFERRED]
 - [[AuthRequired_3]] - `uses` [INFERRED]
 - [[Configuration for Role-Based Access Control.]] - `rationale_for` [EXTRACTED]
+- [[ContributorManager]] - `references` [EXTRACTED]
 - [[EmailSendRequest_1]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[FastAPI_1]] - `uses` [INFERRED]
+- [[FastAPI_5]] - `uses` [INFERRED]
 - [[ForwardRequest_2]] - `uses` [INFERRED]
 - [[GroupAccessDenied]] - `uses` [INFERRED]
 - [[GroupWorkspaceManager]] - `uses` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
+- [[LogRecord_3]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
@@ -68,13 +71,14 @@ tags:
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[MonkeyPatch]] - `uses` [INFERRED]
 - [[OwnerEmailRequest]] - `uses` [INFERRED]
-- [[PUT socv1users{user_id}role]] - `calls` [EXTRACTED]
+- [[PUT users{user_id}role endpoint]] - `calls` [EXTRACTED]
 - [[Path_4]] - `uses` [INFERRED]
 - [[PermissionCheck]] - `uses` [INFERRED]
 - [[PermissionLevel_1]] - `uses` [INFERRED]
 - [[PermissionResult]] - `uses` [INFERRED]
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[PipelineResult]] - `uses` [INFERRED]
+- [[Privacy Policy Enforcement Tests]] - `references` [EXTRACTED]
 - [[PrivacyPolicy]] - `uses` [INFERRED]
 - [[PrivacyPolicyEnforcer]] - `uses` [INFERRED]
 - [[PrivateAccessAttempt]] - `uses` [INFERRED]
@@ -83,6 +87,7 @@ tags:
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_5]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[RateLimitEntry]] - `uses` [INFERRED]
@@ -113,6 +118,7 @@ tags:
 - [[TestCoerceToWSEventExtra]] - `uses` [INFERRED]
 - [[TestCollaboratorAccess]] - `uses` [INFERRED]
 - [[TestCollaboratorActivityBotFilter]] - `uses` [INFERRED]
+- [[TestCollaboratorPersistence]] - `uses` [INFERRED]
 - [[TestCollectRecentEvents]] - `uses` [INFERRED]
 - [[TestComputeBotScorecard_1]] - `uses` [INFERRED]
 - [[TestConfigBotId]] - `uses` [INFERRED]
@@ -186,7 +192,7 @@ tags:
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
 - [[_FakeBus]] - `uses` [INFERRED]
-- [[_FakeRBAC_1]] - `uses` [INFERRED]
+- [[_FakeRBAC_2]] - `uses` [INFERRED]
 - [[_InboundResult]] - `uses` [INFERRED]
 - [[_OutboundScan]] - `uses` [INFERRED]
 - [[_get_rbac_manager()]] - `calls` [EXTRACTED]
@@ -200,7 +206,6 @@ tags:
 - [[contributors.py]] - `imports` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
-- [[forward_content()]] - `calls` [EXTRACTED]
 - [[group_workspace.py]] - `imports` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
@@ -228,7 +233,7 @@ tags:
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 - [[test_owner_bypass_defaults_to_rbac_owner_identity()]] - `calls` [EXTRACTED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
-- [[test_rbac.py]] - `imports` [EXTRACTED]
+- [[test_rbac.py]] - `tests` [EXTRACTED]
 - [[test_shared_memory.py]] - `imports` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `imports` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
@@ -239,4 +244,4 @@ tags:
 - [[websocket.py]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/INFERRED #community/Tool_ACL__Group_RBAC

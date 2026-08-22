@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
+source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "voice_gateway/stt.py"
+community: "Skill (i-tdd)"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/voice_gateway/sttpy
+  - community/Skill_i-tdd
 ---
 
 # Python / Boto3 / AWS  →  `moto`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Stack-Specific Testing Patterns]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/voice_gateway/sttpy
+#graphify/document #graphify/EXTRACTED #community/Skill_i-tdd

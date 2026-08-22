@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
+source_file: ".agents/skills/i-ti/README.md"
 type: "document"
-community: ".github/PULL_REQUEST_TEMPLATE.md"
+community: "Readme (i-ti)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/PULL_REQUEST_TEMPLATEmd
+  - community/Readme_i-ti
 ---
 
 # README.md
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/PULL_REQUEST_TEMPLATEmd
+#graphify/document #graphify/EXTRACTED #community/Readme_i-ti
