@@ -38,6 +38,7 @@ IMAGE="agentshroud/hermes:${VERSION}"
 CONTAINER="agentshroud-hermes-v2"
 NETWORK="${PROJECT}_agentshroud-isolated"
 GATEWAY_DATA_VOL="${PROJECT}_gateway-data"
+SECURITY_REPORTS_VOL="${PROJECT}_security-reports"
 HERMES_CONFIG_VOL="hermes-config"
 
 if [ -n "${AGENTSHROUD_SECRETS_DIR:-}" ]; then
@@ -138,6 +139,7 @@ cmd_up() {
     --network "$NETWORK" \
     -v "${HERMES_CONFIG_VOL}:/opt/data" \
     -v "${GATEWAY_DATA_VOL}:/data/gateway:ro" \
+    -v "${SECURITY_REPORTS_VOL}:/data/security-reports:ro" \
     "${SECRET_ARGS[@]}" \
     -e HTTP_PROXY="http://gateway:8181" \
     -e HTTPS_PROXY="http://gateway:8181" \

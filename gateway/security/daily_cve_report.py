@@ -67,6 +67,19 @@ _sent_dates: set[str] = set()
 _upstream_check_dates: set[str] = set()
 _ghsa_ingest_dates: set[str] = set()
 
+# Per-date failed-delivery attempt counters. A day is only marked "done" (see
+# _sent_dates et al. above) once delivery actually succeeds, or after
+# _MAX_SEND_RETRIES_PER_DAY failed attempts — never on the first failure.
+# Without this, a single bad Telegram send (wrong token, transient network
+# blip, API rate limit) silently drops that day's report/alert forever with
+# no retry and no visible signal, since the scheduler believed it "sent"
+# regardless of whether the send actually succeeded.
+_MAX_SEND_RETRIES_PER_DAY = 3
+_RETRY_BACKOFF_SECONDS = 3600
+_report_send_failures: dict[str, int] = {}
+_upstream_check_failures: dict[str, int] = {}
+_ghsa_ingest_failures: dict[str, int] = {}
+
 
 def format_cve_report(report: dict[str, Any]) -> str:
     """Format a Trivy scan result into a Telegram-ready Markdown message.
@@ -257,13 +270,24 @@ async def run_and_send_cve_report(
         except Exception as exc:
             logger.error("Failed to send CVE report via Telegram: %s", exc)
 
-    # Record timestamp — in-memory first (disk may be full).
-    _sent_dates.add(datetime.now(timezone.utc).date().isoformat())
-    try:
-        _LAST_REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
-        _LAST_REPORT_PATH.write_text(datetime.now(timezone.utc).isoformat())
-    except Exception:
-        pass
+    # Only mark today "done" if delivery actually succeeded. Marking it done
+    # unconditionally (the previous behavior) meant a failed Telegram send
+    # was indistinguishable from a successful one to the scheduler — the
+    # report was silently dropped for the day with no retry and no signal.
+    if send_ok:
+        _sent_dates.add(datetime.now(timezone.utc).date().isoformat())
+        try:
+            _LAST_REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
+            _LAST_REPORT_PATH.write_text(datetime.now(timezone.utc).isoformat())
+        except Exception:
+            pass
+    else:
+        logger.error(
+            "Daily CVE report generated but Telegram delivery failed "
+            "(bot_token_set=%s owner_chat_id_set=%s) — not marking as sent, will retry",
+            bool(bot_token),
+            bool(owner_chat_id),
+        )
 
     summary = generate_summary(report)
     summary["telegram_sent"] = send_ok
@@ -369,6 +393,31 @@ async def cve_report_scheduler(
                 result.get("findings", 0),
                 result.get("telegram_sent"),
             )
+            if not result.get("telegram_sent"):
+                attempts = _report_send_failures.get(today_str, 0) + 1
+                _report_send_failures[today_str] = attempts
+                if attempts >= _MAX_SEND_RETRIES_PER_DAY:
+                    logger.critical(
+                        "Daily CVE report: Telegram delivery failed %d time(s) today — "
+                        "giving up until tomorrow. Check bot_token/owner_chat_id/Telegram "
+                        "connectivity.",
+                        attempts,
+                    )
+                    _sent_dates.add(today_str)
+                    try:
+                        _LAST_REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
+                        _LAST_REPORT_PATH.write_text(datetime.now(timezone.utc).isoformat())
+                    except Exception:
+                        pass
+                else:
+                    logger.warning(
+                        "Daily CVE report: Telegram delivery failed (attempt %d/%d today) — "
+                        "retrying in %d seconds",
+                        attempts,
+                        _MAX_SEND_RETRIES_PER_DAY,
+                        _RETRY_BACKOFF_SECONDS,
+                    )
+                    await asyncio.sleep(_RETRY_BACKOFF_SECONDS)
         except asyncio.CancelledError:
             logger.info("CVE report scheduler cancelled")
             return
@@ -778,19 +827,53 @@ async def upstream_cve_check_scheduler(
                 "telegram_sent": any(r.get("telegram_sent") for r in results),
             }
 
-            # Record completion — in-memory first (disk may be full).
-            _upstream_check_dates.add(datetime.now(timezone.utc).date().isoformat())
-            try:
-                _LAST_UPSTREAM_CHECK_PATH.parent.mkdir(parents=True, exist_ok=True)
-                _LAST_UPSTREAM_CHECK_PATH.write_text(datetime.now(timezone.utc).isoformat())
-            except Exception:
-                pass
-
             logger.info(
                 "Upstream CVE check complete: %d new CVE(s), telegram_sent=%s",
                 result.get("new_cves", 0),
                 result.get("telegram_sent"),
             )
+
+            # An agent found new CVEs but its alert failed to deliver — must
+            # retry, not silently mark today "checked" (that would drop a
+            # real, actionable upstream-CVE alert with no retry and no signal).
+            undelivered = [
+                r for r in results if r.get("new_cves", 0) > 0 and not r.get("telegram_sent")
+            ]
+            if undelivered:
+                attempts = _upstream_check_failures.get(today_str, 0) + 1
+                _upstream_check_failures[today_str] = attempts
+                if attempts >= _MAX_SEND_RETRIES_PER_DAY:
+                    logger.critical(
+                        "Upstream CVE check: %d agent(s) found new CVEs but Telegram "
+                        "delivery failed %d time(s) today — giving up until tomorrow: %s",
+                        len(undelivered),
+                        attempts,
+                        [r["agent_id"] for r in undelivered],
+                    )
+                    _upstream_check_dates.add(today_str)
+                    try:
+                        _LAST_UPSTREAM_CHECK_PATH.parent.mkdir(parents=True, exist_ok=True)
+                        _LAST_UPSTREAM_CHECK_PATH.write_text(datetime.now(timezone.utc).isoformat())
+                    except Exception:
+                        pass
+                else:
+                    logger.warning(
+                        "Upstream CVE check: %d agent(s) undelivered (attempt %d/%d today) — "
+                        "retrying in %d seconds",
+                        len(undelivered),
+                        attempts,
+                        _MAX_SEND_RETRIES_PER_DAY,
+                        _RETRY_BACKOFF_SECONDS,
+                    )
+                    await asyncio.sleep(_RETRY_BACKOFF_SECONDS)
+            else:
+                # Record completion — in-memory first (disk may be full).
+                _upstream_check_dates.add(datetime.now(timezone.utc).date().isoformat())
+                try:
+                    _LAST_UPSTREAM_CHECK_PATH.parent.mkdir(parents=True, exist_ok=True)
+                    _LAST_UPSTREAM_CHECK_PATH.write_text(datetime.now(timezone.utc).isoformat())
+                except Exception:
+                    pass
 
         except asyncio.CancelledError:
             logger.info("Upstream CVE check scheduler cancelled")
@@ -881,18 +964,53 @@ async def ghsa_ingest_scheduler(
                 "telegram_sent": any(r.get("telegram_sent") for r in results),
             }
 
-            _ghsa_ingest_dates.add(datetime.now(timezone.utc).date().isoformat())
-            try:
-                _LAST_GHSA_INGEST_PATH.parent.mkdir(parents=True, exist_ok=True)
-                _LAST_GHSA_INGEST_PATH.write_text(datetime.now(timezone.utc).isoformat())
-            except Exception:
-                pass
-
             logger.info(
                 "GHSA ingest complete: %d new advisory(ies), telegram_sent=%s",
                 result.get("new_cves", 0),
                 result.get("telegram_sent"),
             )
+
+            # A genuinely new GHSA advisory failed to deliver — must retry,
+            # not silently mark today "ingested" (this is the pipeline meant
+            # to catch exactly this class of upstream supply-chain advisory;
+            # dropping it silently defeats the purpose).
+            undelivered = [
+                r for r in results if r.get("new_cves", 0) > 0 and not r.get("telegram_sent")
+            ]
+            if undelivered:
+                attempts = _ghsa_ingest_failures.get(today_str, 0) + 1
+                _ghsa_ingest_failures[today_str] = attempts
+                if attempts >= _MAX_SEND_RETRIES_PER_DAY:
+                    logger.critical(
+                        "GHSA ingest: %d agent(s) found new advisories but Telegram "
+                        "delivery failed %d time(s) today — giving up until tomorrow: %s",
+                        len(undelivered),
+                        attempts,
+                        [r["agent_id"] for r in undelivered],
+                    )
+                    _ghsa_ingest_dates.add(today_str)
+                    try:
+                        _LAST_GHSA_INGEST_PATH.parent.mkdir(parents=True, exist_ok=True)
+                        _LAST_GHSA_INGEST_PATH.write_text(datetime.now(timezone.utc).isoformat())
+                    except Exception:
+                        pass
+                else:
+                    logger.warning(
+                        "GHSA ingest: %d agent(s) undelivered (attempt %d/%d today) — "
+                        "retrying in %d seconds",
+                        len(undelivered),
+                        attempts,
+                        _MAX_SEND_RETRIES_PER_DAY,
+                        _RETRY_BACKOFF_SECONDS,
+                    )
+                    await asyncio.sleep(_RETRY_BACKOFF_SECONDS)
+            else:
+                _ghsa_ingest_dates.add(datetime.now(timezone.utc).date().isoformat())
+                try:
+                    _LAST_GHSA_INGEST_PATH.parent.mkdir(parents=True, exist_ok=True)
+                    _LAST_GHSA_INGEST_PATH.write_text(datetime.now(timezone.utc).isoformat())
+                except Exception:
+                    pass
 
         except asyncio.CancelledError:
             logger.info("GHSA ingest scheduler cancelled")
