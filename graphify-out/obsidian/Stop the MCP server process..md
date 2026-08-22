@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Collaborator Prompt Safety"
+community: "Mcp Proxy Coverage"
 location: "L144"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Safety
+  - community/Mcp_Proxy_Coverage
 ---
 
 # Stop the MCP server process.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.stop()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Safety
+#graphify/rationale #graphify/EXTRACTED #community/Mcp_Proxy_Coverage

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Bot Development Team Rpi (setup)"
 location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Bot_Development_Team_Rpi_setup
 ---
 
 # System Updates
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 1 OS Hardening & Cleanup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Bot_Development_Team_Rpi_setup

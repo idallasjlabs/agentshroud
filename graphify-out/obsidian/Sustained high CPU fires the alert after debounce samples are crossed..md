@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Resource Guard & Local Model Parity"
 location: "L106"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Resource_Guard__Local_Model_Parity
 ---
 
 # Sustained high CPU fires the alert after debounce samples are crossed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_system_resource_monitoring_alerts_after_debounce()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity

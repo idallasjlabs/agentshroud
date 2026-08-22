@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Bot Container Scripts"
+community: "Setup Guide (setup)"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Setup_Guide_setup
 ---
 
 # System Requirements
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Prerequisites_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/document #graphify/EXTRACTED #community/Setup_Guide_setup

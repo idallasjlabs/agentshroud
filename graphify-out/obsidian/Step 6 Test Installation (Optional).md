@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "docs/vault"
+community: "Publish To Clawhub (reference)"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Publish_To_Clawhub_reference
 ---
 
 # Step 6: Test Installation (Optional)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📋 Detailed Step-by-Step]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Publish_To_Clawhub_reference

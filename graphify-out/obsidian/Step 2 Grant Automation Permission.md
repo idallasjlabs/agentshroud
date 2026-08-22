@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Imessage Status (setup)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Imessage_Status_setup
 ---
 
 # Step 2: Grant Automation Permission
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[How to Fix (5 Minutes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Imessage_Status_setup

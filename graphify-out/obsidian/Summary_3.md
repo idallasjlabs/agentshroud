@@ -1,17 +1,18 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "Planning Docs"
-location: "L180"
+community: "Iec 62443 Matrix (compliance)"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Iec_62443_Matrix_compliance
 ---
 
 # Summary
 
 ## Connections
-- [[1.2.3 — releasev1.2.3 (2026-06-29)]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
+- [[Key Components Referenced (v1.0.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Iec_62443_Matrix_compliance

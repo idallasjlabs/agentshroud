@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Browser Fetch Skill (reference)"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Browser_Fetch_Skill_reference
 ---
 
 # Step 2: Fetch with Browser-Fetch Skill
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Manual Usage (Current Method)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill_reference

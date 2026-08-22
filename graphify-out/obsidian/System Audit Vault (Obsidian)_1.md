@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sav/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-sav)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-sav
 ---
 
 # System Audit Vault (Obsidian)
@@ -16,6 +16,6 @@ tags:
 - [[OBSIDIAN VAULT RULES (Follow These Exactly)_1]] - `contains` [EXTRACTED]
 - [[OUTPUT FORMAT_1]] - `contains` [EXTRACTED]
 - [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_1]] - `contains` [EXTRACTED]
-- [[SKILL_110]] - `contains` [EXTRACTED]
+- [[SKILL_111]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sav

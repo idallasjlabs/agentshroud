@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sad/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sad/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-sad)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-sad
 ---
 
 # System Audit & Documentation
@@ -25,6 +25,6 @@ tags:
 - [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE_1]] - `contains` [EXTRACTED]
 - [[SECTION 8 — DATA FLOW_1]] - `contains` [EXTRACTED]
 - [[SECTION 9 — ERROR CATALOG_1]] - `contains` [EXTRACTED]
-- [[SKILL_109]] - `contains` [EXTRACTED]
+- [[SKILL_110]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sad

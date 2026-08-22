@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sad/SKILL.md"
+source_file: ".agents/skills/i-sad/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-sad)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-sad
 ---
 
 # System Audit & Documentation
@@ -25,6 +25,6 @@ tags:
 - [[SECTION 7 — EVERY MODULE & FUNCTION REFERENCE]] - `contains` [EXTRACTED]
 - [[SECTION 8 — DATA FLOW]] - `contains` [EXTRACTED]
 - [[SECTION 9 — ERROR CATALOG]] - `contains` [EXTRACTED]
-- [[SKILL_46]] - `contains` [EXTRACTED]
+- [[SKILL_47]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sad

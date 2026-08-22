@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Context Integrity"
 location: "L54"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Context_Integrity
 ---
 
 # SystemPromptFingerprint
@@ -18,14 +18,12 @@ tags:
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
 - [[HMAC-SHA256 fingerprint for a registered system prompt.]] - `rationale_for` [EXTRACTED]
 - [[IntegrityScore]] - `uses` [INFERRED]
-- [[TestContextIntegrityScorer]] - `uses` [INFERRED]
 - [[TestNewPatternsV080]] - `uses` [INFERRED]
 - [[TestReanchorDelimiters]] - `uses` [INFERRED]
 - [[TestSystemPromptHMAC]] - `uses` [INFERRED]
 - [[TestToolResultScan]] - `uses` [INFERRED]
 - [[context_integrity.py]] - `imports` [EXTRACTED]
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
-- [[test_context_integrity.py]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Context_Integrity

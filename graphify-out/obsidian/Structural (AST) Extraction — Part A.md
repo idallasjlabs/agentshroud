@@ -1,17 +1,18 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Gateway Test Suite"
+community: "Skill (graphify)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_graphify
 ---
 
 # Structural (AST) Extraction — Part A
 
 ## Connections
 - [[Post-commit Auto-rebuild Hook]] - `references` [EXTRACTED]
-- [[graphify SKILL]] - `implements` [EXTRACTED]
+- [[graphify Extraction Subagent Prompt Spec]] - `references` [EXTRACTED]
+- [[graphify Skill]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/Skill_graphify

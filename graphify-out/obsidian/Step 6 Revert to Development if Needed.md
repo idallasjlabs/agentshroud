@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Development Workflow Read Only (security)"
 location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Development_Workflow_Read_Only_security
 ---
 
 # Step 6: Revert to Development if Needed
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Development Workflow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read_Only_security

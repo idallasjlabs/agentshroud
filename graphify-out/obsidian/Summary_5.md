@@ -1,17 +1,19 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "docs/vault"
-location: "L255"
+community: "V0.8.0 Release Plan (v0.8)"
+location: "L434"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/V080_Release_Plan_v08
 ---
 
 # Summary
 
 ## Connections
-- [[1.2.1 — releasev1.2.1-quality-sweep (2026-06-27)]] - `contains` [EXTRACTED]
+- [[Key Changes (2026-03-04 1216 UTC)]] - `contains` [EXTRACTED]
+- [[Key Changes (2026-04-08)]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/V080_Release_Plan_v08

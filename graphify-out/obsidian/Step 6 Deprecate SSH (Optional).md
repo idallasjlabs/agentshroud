@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Distributed Openclaw Node Architecture (architecture)"
 location: "L493"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Distributed_Openclaw_Node_Architecture_architecture
 ---
 
 # Step 6: Deprecate SSH (Optional)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Migration Path (SSH → Distributed Node)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Distributed_Openclaw_Node_Architecture_architecture

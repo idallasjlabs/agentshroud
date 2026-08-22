@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "docs/diagrams"
+community: "Setup Guide (setup)"
 location: "L303"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Setup_Guide_setup
 ---
 
 # Step 5: Configure Ports
@@ -17,4 +17,4 @@ tags:
 - [[Multi-Instance Setup]] - `contains` [EXTRACTED]
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/diagrams
+#graphify/document #graphify/EXTRACTED #community/Setup_Guide_setup

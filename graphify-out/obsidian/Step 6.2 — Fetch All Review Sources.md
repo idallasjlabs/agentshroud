@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (gh-issues)"
 location: "L603"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_gh-issues
 ---
 
 # Step 6.2 — Fetch All Review Sources
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 6 — PR Review Handler]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_gh-issues

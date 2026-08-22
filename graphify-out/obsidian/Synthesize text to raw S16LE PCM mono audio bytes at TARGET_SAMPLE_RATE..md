@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Tts (voice_gateway)"
 location: "L347"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Tts_voice_gateway
 ---
 
 # Synthesize *text* to raw S16LE PCM mono audio bytes at TARGET_SAMPLE_RATE.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[synthesize()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Tts_voice_gateway

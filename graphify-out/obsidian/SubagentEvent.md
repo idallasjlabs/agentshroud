@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Subagent Monitor"
 location: "L34"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Subagent_Monitor
 ---
 
 # SubagentEvent
 
 ## Connections
-- [[._log_event()]] - `calls` [EXTRACTED]
-- [[.get_audit_log()_5]] - `references` [EXTRACTED]
+- [[._log_event()_1]] - `calls` [EXTRACTED]
+- [[.get_audit_log()_6]] - `references` [EXTRACTED]
 - [[.get_flagged_events()]] - `references` [EXTRACTED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth_1]] - `uses` [INFERRED]
@@ -30,4 +30,4 @@ tags:
 - [[subagent_monitor.py]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Subagent_Monitor

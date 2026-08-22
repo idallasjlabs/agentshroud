@@ -1,19 +1,18 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Team (docs)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Team_docs
 ---
 
-# Tailscale Mesh VPN (tail240ea8.ts.net)
+# Tailscale mesh VPN (tail240ea8.ts.net)
 
 ## Connections
-- [[First Time Setup Runbook]] - `references` [EXTRACTED]
-- [[Network Topology Diagram]] - `describes` [EXTRACTED]
-- [[SSH Proxy Errors_1]] - `references` [EXTRACTED]
-- [[TEAM]] - `references` [EXTRACTED]
+- [[Marvin (Mac Studio) — Primary devbuild server]] - `shares_data_with` [EXTRACTED]
+- [[Pi (Raspberry Pi 4B) — Edgetest node]] - `shares_data_with` [EXTRACTED]
+- [[Trillian (Mac Mini) — Secondary buildCI]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Team_docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Context Guard (security)"
 location: "L524"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Context_Guard_security
 ---
 
 # Tag a segment and append it to the session's provenance log.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.record_segment()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Context_Guard_security

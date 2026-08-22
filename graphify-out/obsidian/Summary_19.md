@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "Security Docs"
-location: "L921"
+community: "Security Inventory (security)"
+location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Security_Inventory_security
 ---
 
 # Summary
 
 ## Connections
-- [[0.1.0 - 2026-02-16]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Security_Inventory_security

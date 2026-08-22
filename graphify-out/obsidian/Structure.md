@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "docs/vault"
+community: "Readme (browser-extension)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Readme_browser-extension
 ---
 
 # Structure
@@ -15,6 +15,6 @@ tags:
 - [[Browser Extension]] - `contains` [EXTRACTED]
 - [[Gateway wiring]] - `contains` [EXTRACTED]
 - [[Safari]] - `contains` [EXTRACTED]
-- [[Tests_6]] - `contains` [EXTRACTED]
+- [[Tests_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Readme_browser-extension

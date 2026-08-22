@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (canvas)"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_canvas
 ---
 
 # Tailscale Integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[How It Works_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_canvas

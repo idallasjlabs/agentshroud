@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "Gateway Skills System"
-location: "L174"
+community: "Dashboard Bridge (hermes)"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Skills_System
+  - community/Dashboard_Bridge_hermes
 ---
 
 # StreamReader
 
 ## Connections
-- [[._handle_client()]] - `references` [EXTRACTED]
-- [[._process_connect()]] - `references` [EXTRACTED]
-- [[._relay()]] - `references` [EXTRACTED]
-- [[._relay_and_scan()]] - `references` [EXTRACTED]
-- [[WebProxy_1]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[_handle()_1]] - `references` [EXTRACTED]
+- [[_pump()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Skills_System
+#graphify/code #graphify/EXTRACTED #community/Dashboard_Bridge_hermes

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "Bot Skill Config"
+community: "03 Session Isolation (redteam)"
 location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/03_Session_Isolation_redteam
 ---
 
 # Step 3: Isolate file workspaces per user
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remediation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/03_Session_Isolation_redteam

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "docs/operations"
+community: "Skill (skill-creator)"
 location: "L294"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Skill_skill-creator
 ---
 
 # Step 4: Edit the Skill
@@ -17,4 +17,4 @@ tags:
 - [[Start with Reusable Skill Contents]] - `contains` [EXTRACTED]
 - [[Update SKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Skill_skill-creator

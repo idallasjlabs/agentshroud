@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "examples/docker-commands.md"
+community: "Deployment Procedure (operations)"
 location: "L327"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/examples/docker-commandsmd
+  - community/Deployment_Procedure_operations
 ---
 
 # Step 9: Health Verification
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step-by-Step Deployment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/examples/docker-commandsmd
+#graphify/document #graphify/EXTRACTED #community/Deployment_Procedure_operations

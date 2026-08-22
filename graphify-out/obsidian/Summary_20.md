@@ -1,17 +1,19 @@
 ---
-source_file: ".github/PULL_REQUEST_TEMPLATE.md"
+source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "docs/data"
-location: "L1"
+community: "Telegram Gmail Setup (setup)"
+location: "L339"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/data
+  - community/Telegram_Gmail_Setup_setup
 ---
 
 # Summary
 
 ## Connections
-- [[PULL_REQUEST_TEMPLATE]] - `contains` [EXTRACTED]
+- [[Quick Start Commands]] - `contains` [EXTRACTED]
+- [[Telegram & Gmail Integration Guide]] - `contains` [EXTRACTED]
+- [[✅ Current Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/data
+#graphify/document #graphify/EXTRACTED #community/Telegram_Gmail_Setup_setup

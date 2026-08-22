@@ -1,17 +1,17 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (docker)"
 location: "L358"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_docker
 ---
 
 # Stop the Stack
 
 ## Connections
-- [[Usage]] - `contains` [EXTRACTED]
+- [[Usage_40]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_docker

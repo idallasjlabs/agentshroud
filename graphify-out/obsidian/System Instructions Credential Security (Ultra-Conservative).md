@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Architecture Docs"
+community: "System Instructions Security (docker)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/System_Instructions_Security_docker
 ---
 
 # System Instructions: Credential Security (Ultra-Conservative)
@@ -26,4 +26,4 @@ tags:
 - [[🛡️ Security Benefits]] - `contains` [EXTRACTED]
 - [[🧪 Decision Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/System_Instructions_Security_docker

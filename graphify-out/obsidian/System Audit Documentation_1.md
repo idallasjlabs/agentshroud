@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sad/README.md"
+source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (i-sad)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_i-sad
 ---
 
 # System Audit Documentation
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_70]] - `contains` [EXTRACTED]
 - [[Usage_71]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_i-sad

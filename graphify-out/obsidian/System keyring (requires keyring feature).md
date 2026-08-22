@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/himalaya/references/configuration.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Configuration (references)"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Configuration_references
 ---
 
 # System keyring (requires keyring feature)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Password Options]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Configuration_references

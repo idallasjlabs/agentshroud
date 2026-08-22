@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Planning Docs"
-location: "L222"
+community: "Master Feature List (planning)"
+location: "L406"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Master_Feature_List_planning
 ---
 
 # Summary
 
 ## Connections
-- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - `contains` [EXTRACTED]
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Master_Feature_List_planning

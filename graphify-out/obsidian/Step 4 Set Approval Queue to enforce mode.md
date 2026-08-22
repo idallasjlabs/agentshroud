@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "document"
-community: "branding/QUICK-REFERENCE.md"
+community: "02 Human In Loop (redteam)"
 location: "L138"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/QUICK-REFERENCEmd
+  - community/02_Human_In_Loop_redteam
 ---
 
 # Step 4: Set Approval Queue to enforce mode
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Remediation_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/QUICK-REFERENCEmd
+#graphify/document #graphify/EXTRACTED #community/02_Human_In_Loop_redteam

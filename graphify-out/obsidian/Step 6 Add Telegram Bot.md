@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "docs/papers"
+community: "Setup Api Keys (setup)"
 location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Setup_Api_Keys_setup
 ---
 
 # Step 6: Add Telegram Bot
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[API Keys Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/papers
+#graphify/document #graphify/EXTRACTED #community/Setup_Api_Keys_setup
