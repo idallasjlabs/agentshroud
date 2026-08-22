@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "branding/guidelines"
-location: "L34"
+community: "Readme (i-athena)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/Readme_i-athena
 ---
 
 # Usage
 
 ## Connections
-- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/guidelines
+#graphify/document #graphify/EXTRACTED #community/Readme_i-athena

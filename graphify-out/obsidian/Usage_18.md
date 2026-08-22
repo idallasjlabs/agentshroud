@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mc/README.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-mcpm-auth-reset)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-mcpm-auth-reset
 ---
 
 # Usage
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
+- [[MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-mcpm-auth-reset

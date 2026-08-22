@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "SOC Service Manager"
+community: "Web Api Coverage"
 location: "L150"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Service_Manager
+  - community/Web_Api_Coverage
 ---
 
 # UpdateRequest
@@ -42,4 +42,4 @@ tags:
 - [[upgrade_bot()_1]] - `references` [EXTRACTED]
 - [[upgrade_openclaw()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Service_Manager
+#graphify/code #graphify/INFERRED #community/Web_Api_Coverage

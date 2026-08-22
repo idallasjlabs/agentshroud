@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/HERMES_SETUP.md"
+source_file: "docs/setup-slack.md"
 type: "document"
-community: "docs/diagrams"
-location: "L253"
+community: "Setup Slack (docs)"
+location: "L171"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Setup_Slack_docs
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
+- [[Slack Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/diagrams
+#graphify/document #graphify/EXTRACTED #community/Setup_Slack_docs

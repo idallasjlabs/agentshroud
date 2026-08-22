@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Soc Egress Endpoints"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Soc_Egress_Endpoints
 ---
 
 # Unsubscribed callback stops receiving events
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_unsubscribe_stops_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Soc_Egress_Endpoints

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-gg/README.md"
+source_file: ".agents/skills/i-hermes/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-hermes)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-hermes
 ---
 
 # Usage
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-hermes

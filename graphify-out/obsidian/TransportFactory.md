@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gateway Email Service"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Email_Service
 ---
 
 # TransportFactory
 
 ## Connections
-- [[.__init__()_10]] - `references` [EXTRACTED]
+- [[.__init__()_11]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gateway_Email_Service

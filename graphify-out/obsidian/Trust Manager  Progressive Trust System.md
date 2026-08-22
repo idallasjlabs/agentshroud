@@ -1,11 +1,11 @@
 ---
 source_file: "docs/papers/agentshroud-whitepaper.md"
 type: "concept"
-community: "CLAUDE.md"
+community: "Runbook (operations)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/CLAUDEmd
+  - community/Runbook_operations
 ---
 
 # Trust Manager / Progressive Trust System
@@ -17,4 +17,4 @@ tags:
 - [[AgentShroud v0.7.0 Enforcement Audit Results]] - `references` [EXTRACTED]
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/CLAUDEmd
+#graphify/concept #graphify/EXTRACTED #community/Runbook_operations

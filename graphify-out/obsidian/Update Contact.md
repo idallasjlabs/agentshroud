@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: ".agents/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-icloud)"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-icloud
 ---
 
 # Update Contact
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Contact Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud

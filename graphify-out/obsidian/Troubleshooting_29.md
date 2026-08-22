@@ -1,23 +1,21 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "docs/diagrams"
-location: "L787"
+community: "Openclaw Ssh Setup (setup)"
+location: "L242"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Openclaw_Ssh_Setup_setup
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[1Password Authentication Failed]] - `contains` [EXTRACTED]
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Container Unhealthy]] - `contains` [EXTRACTED]
-- [[Gmail Connection Issues]] - `contains` [EXTRACTED]
-- [[Performance Issues_1]] - `contains` [EXTRACTED]
-- [[Port Already in Use_1]] - `contains` [EXTRACTED]
-- [[Tests Failing_1]] - `contains` [EXTRACTED]
+- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
+- [[Problem Bad owner or permissions on ~.sshconfig]] - `contains` [EXTRACTED]
+- [[Problem Connection timeout]] - `contains` [EXTRACTED]
+- [[Problem Host key verification failed]] - `contains` [EXTRACTED]
+- [[Problem Permission denied (publickey)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/diagrams
+#graphify/document #graphify/EXTRACTED #community/Openclaw_Ssh_Setup_setup

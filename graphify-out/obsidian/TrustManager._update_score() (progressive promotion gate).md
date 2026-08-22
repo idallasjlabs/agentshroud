@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Progressive Trust Config"
+community: "Progressive Trust Integration"
 location: "L312"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/Progressive_Trust_Integration
 ---
 
 # TrustManager._update_score() (progressive promotion gate)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TrustLevel_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Integration

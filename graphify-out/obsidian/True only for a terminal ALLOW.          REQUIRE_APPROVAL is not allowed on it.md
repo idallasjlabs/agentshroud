@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "Egress Domain Allowlist"
+community: "Mcp Policy"
 location: "L72"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress_Domain_Allowlist
+  - community/Mcp_Policy
 ---
 
 # True only for a terminal ALLOW.          REQUIRE_APPROVAL is *not* allowed on it
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.allowed()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress_Domain_Allowlist
+#graphify/rationale #graphify/EXTRACTED #community/Mcp_Policy

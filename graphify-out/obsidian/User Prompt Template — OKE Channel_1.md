@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-atlas)"
 location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-atlas
 ---
 
 # User Prompt Template — OKE Channel
 
 ## Connections
-- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-atlas

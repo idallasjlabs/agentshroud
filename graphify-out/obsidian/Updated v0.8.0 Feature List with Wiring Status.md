@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "Bot Skill Config"
+community: "V0.8.0 Wiring Audit (v0.8)"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/V080_Wiring_Audit_v08
 ---
 
 # Updated v0.8.0 Feature List with Wiring Status
@@ -25,4 +25,4 @@ tags:
 - [[J. Code Cleanup (5) — ALL ✅]] - `contains` [EXTRACTED]
 - [[K. Misc Quick Wins (11) — ALL ✅]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/V080_Wiring_Audit_v08

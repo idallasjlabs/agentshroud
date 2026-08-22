@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "docs/vault"
+community: "Use Cases (requirements)"
 location: "L282"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Use_Cases_requirements
 ---
 
 # UC-009: System Detects Prompt Injection
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Use Cases_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Use_Cases_requirements

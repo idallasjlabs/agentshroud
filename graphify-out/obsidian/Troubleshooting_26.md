@@ -1,20 +1,20 @@
 ---
-source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
+source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L53"
+community: "Device Pairing (setup)"
+location: "L333"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Device_Pairing_setup
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Cannot save token]] - `contains` [EXTRACTED]
-- [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
-- [[Still shows pairing required]] - `contains` [EXTRACTED]
-- [[Token field not visible]] - `contains` [EXTRACTED]
+- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
+- [[Problem pairing required but no pending requests]] - `contains` [EXTRACTED]
+- [[Problem Approved device still can't connect]] - `contains` [EXTRACTED]
+- [[Problem Too many pending requests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Device_Pairing_setup

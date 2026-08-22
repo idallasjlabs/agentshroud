@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mc/README.md"
+source_file: "docker/config/hermes/skills/i-mc/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (i-mc)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_i-mc
 ---
 
 # Usage
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_i-mc

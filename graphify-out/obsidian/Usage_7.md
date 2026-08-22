@@ -1,23 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L55"
+community: "Readme (i-bs)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_i-bs
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
-- [[Click Element]] - `contains` [EXTRACTED]
-- [[Extract Data]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)]] - `contains` [EXTRACTED]
-- [[Fill Form]] - `contains` [EXTRACTED]
-- [[Navigate to URL]] - `contains` [EXTRACTED]
-- [[Take Screenshot]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_i-bs

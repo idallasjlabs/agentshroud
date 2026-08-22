@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "Gateway Test Suite"
+community: "Diagram 01 C4 Context (images)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Diagram_01_C4_Context_images
 ---
 
 # TrustLevel (data entity)
@@ -15,4 +15,4 @@ tags:
 - [[ApprovalRequest (data entity)]] - `conceptually_related_to` [INFERRED]
 - [[RateLimitBucket (data entity)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/Diagram_01_C4_Context_images

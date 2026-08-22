@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L295"
+community: "Skill (i-browser)"
+location: "L283"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-browser
 ---
 
 # "URL not in allowlist"
 
 ## Connections
-- [[Troubleshooting_32]] - `contains` [EXTRACTED]
+- [[Troubleshooting_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-browser

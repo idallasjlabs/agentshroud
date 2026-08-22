@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "src/interfaces"
+community: "Skill (i-browser)"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/src/interfaces
+  - community/Skill_i-browser
 ---
 
 # Usage
@@ -20,4 +20,4 @@ tags:
 - [[Navigate to URL_1]] - `contains` [EXTRACTED]
 - [[Take Screenshot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/src/interfaces
+#graphify/document #graphify/EXTRACTED #community/Skill_i-browser

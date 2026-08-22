@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Progressive Trust Integration"
 location: "L256"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Progressive_Trust_Integration
 ---
 
 # Tools outside the ladder vocabulary get no opinion (ACL decides).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_unknown_tool_returns_none()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Integration

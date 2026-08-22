@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/README.md"
+source_file: ".agents/skills/i-tdd/README.md"
 type: "document"
-community: "Bot Container Scripts"
+community: "Readme (i-tdd)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Readme_i-tdd
 ---
 
 # Usage
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/document #graphify/EXTRACTED #community/Readme_i-tdd

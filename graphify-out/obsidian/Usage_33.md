@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
+source_file: ".agents/skills/i-sec-offense/README.md"
 type: "document"
-community: ".github/PULL_REQUEST_TEMPLATE.md"
+community: "Readme (i-sec-offense)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/PULL_REQUEST_TEMPLATEmd
+  - community/Readme_i-sec-offense
 ---
 
 # Usage
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/PULL_REQUEST_TEMPLATEmd
+#graphify/document #graphify/EXTRACTED #community/Readme_i-sec-offense

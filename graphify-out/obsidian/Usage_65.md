@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/README.md"
+source_file: "docker/config/hermes/skills/i-oracle/README.md"
 type: "document"
-community: "Custom Skills"
+community: "Readme (i-oracle)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Readme_i-oracle
 ---
 
 # Usage
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Readme_i-oracle

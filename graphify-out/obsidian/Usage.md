@@ -1,24 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L274"
+community: "Skill (graphify)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_graphify
 ---
 
 # Usage
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
-- [[Check Status_1]] - `contains` [EXTRACTED]
-- [[Hermes  HCI]] - `contains` [EXTRACTED]
-- [[Port Reference]] - `contains` [EXTRACTED]
-- [[Start the Stack]] - `contains` [EXTRACTED]
-- [[Stop the Stack_1]] - `contains` [EXTRACTED]
-- [[Test Chat]] - `contains` [EXTRACTED]
-- [[View Logs]] - `contains` [EXTRACTED]
+- [[graphify]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_graphify

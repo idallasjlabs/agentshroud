@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_sse_translator.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Anthropic Openai Translator"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Anthropic_Openai_Translator
 ---
 
 # Translate an OpenAI-compat SSE byte stream to Anthropic SSE byte events.      Yi
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[translate_openai_sse_to_anthropic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Anthropic_Openai_Translator

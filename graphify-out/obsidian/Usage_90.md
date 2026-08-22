@@ -1,21 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-cr/README.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L54"
+community: "Readme (i-cr)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-cr
 ---
 
 # Usage
 
 ## Connections
-- [[Click Element_2]] - `contains` [EXTRACTED]
-- [[Extract Data_2]] - `contains` [EXTRACTED]
-- [[Navigate to URL_2]] - `contains` [EXTRACTED]
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
-- [[Take Screenshot_2]] - `contains` [EXTRACTED]
+- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-cr

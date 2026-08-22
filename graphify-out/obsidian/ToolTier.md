@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L925"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # ToolTier
@@ -18,8 +18,6 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ApprovalHardening]] - `uses` [INFERRED]
 - [[ApprovalHardeningConfig]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
 - [[BrowserSecurityGuard]] - `uses` [INFERRED]
 - [[ConsentFramework]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
@@ -64,4 +62,4 @@ tags:
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 - [[middleware.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware

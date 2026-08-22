@@ -1,22 +1,23 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L317"
+community: "Setup Guide (setup)"
+location: "L787"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Guide_setup
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_2]] - `contains` [EXTRACTED]
-- [[Browser timeout_3]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_3]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_2]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_3]] - `contains` [EXTRACTED]
-- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[1Password Authentication Failed]] - `contains` [EXTRACTED]
+- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
+- [[Container Unhealthy]] - `contains` [EXTRACTED]
+- [[Gmail Connection Issues]] - `contains` [EXTRACTED]
+- [[Performance Issues_1]] - `contains` [EXTRACTED]
+- [[Port Already in Use_1]] - `contains` [EXTRACTED]
+- [[Tests Failing_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Setup_Guide_setup

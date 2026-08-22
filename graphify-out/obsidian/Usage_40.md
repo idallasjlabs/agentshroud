@@ -1,17 +1,24 @@
 ---
-source_file: "docker/config/hermes/skills/i-vulcan/README.md"
+source_file: "docker/README.md"
 type: "document"
-community: "docs/diagrams"
-location: "L10"
+community: "Readme (docker)"
+location: "L274"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Readme_docker
 ---
 
 # Usage
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
+- [[Check Status_1]] - `contains` [EXTRACTED]
+- [[Hermes  HCI]] - `contains` [EXTRACTED]
+- [[Port Reference]] - `contains` [EXTRACTED]
+- [[Start the Stack]] - `contains` [EXTRACTED]
+- [[Stop the Stack_1]] - `contains` [EXTRACTED]
+- [[Test Chat]] - `contains` [EXTRACTED]
+- [[View Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/diagrams
+#graphify/document #graphify/EXTRACTED #community/Readme_docker

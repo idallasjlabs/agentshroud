@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/README.md"
+source_file: ".agents/skills/i-browser/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-browser)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-browser
 ---
 
 # Usage
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-browser

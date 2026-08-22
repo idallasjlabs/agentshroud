@@ -1,19 +1,22 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Uspto Application (legal)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Uspto_Application_legal
 ---
 
 # USPTO-APPLICATION.md
 
 ## Connections
-- [[AgentShroud Trademark Prior Use Record]] - `provides_evidence_for` [EXTRACTED]
-- [[USPTO Class 042 SaaS for AI Agent Security Governance and Policy Enforcement]] - `contains` [EXTRACTED]
+- [[PRIOR-USE]] - `conceptually_related_to` [INFERRED]
+- [[TEAS Plus Filing Process]] - `references` [EXTRACTED]
+- [[TRADEMARK]] - `references` [EXTRACTED]
+- [[USPTO Class 009 Filing (Downloadable Software)]] - `references` [EXTRACTED]
+- [[USPTO Class 042 Filing (ScientificTechnological Services)]] - `references` [EXTRACTED]
 - [[USPTO Trademark Application — AgentShroud™]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Uspto_Application_legal

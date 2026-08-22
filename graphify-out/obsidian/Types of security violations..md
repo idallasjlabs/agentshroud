@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Progressive Trust Integration"
 location: "L45"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Progressive_Trust_Integration
 ---
 
 # Types of security violations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ViolationType]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Integration

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_translator.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Anthropic Openai Translator"
 location: "L345"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Anthropic_Openai_Translator
 ---
 
 # Translate an Ollama OpenAI-compat response to Anthropic Messages API format.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[openai_to_anthropic_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Anthropic_Openai_Translator

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "src/interfaces"
+community: "Skill (i-browser)"
 location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/src/interfaces
+  - community/Skill_i-browser
 ---
 
 # Troubleshooting
@@ -19,4 +19,4 @@ tags:
 - [[URL not in allowlist_1]] - `contains` [EXTRACTED]
 - [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/src/interfaces
+#graphify/document #graphify/EXTRACTED #community/Skill_i-browser

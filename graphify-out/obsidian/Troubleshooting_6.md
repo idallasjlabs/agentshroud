@@ -1,21 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L246"
+community: "Bot Capabilities (docker)"
+location: "L211"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Bot_Capabilities_docker
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Access Denied]] - `contains` [EXTRACTED]
-- [[Token expired (SSO)]] - `contains` [EXTRACTED]
-- [[Unable to locate credentials]] - `contains` [EXTRACTED]
-- [[MCP Not Using Profile]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Bot_Capabilities_docker

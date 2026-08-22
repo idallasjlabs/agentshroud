@@ -1,22 +1,22 @@
 ---
-source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
+source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L1683"
+community: "Runbook (runbooks)"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Runbook_runbooks
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
-- [[Docker Permission Denied]] - `contains` [EXTRACTED]
-- [[High Temperature]] - `contains` [EXTRACTED]
-- [[Out of Memory]] - `contains` [EXTRACTED]
-- [[SSH Connection Refused]] - `contains` [EXTRACTED]
-- [[Slow Builds_1]] - `contains` [EXTRACTED]
+- [[Fatal glibc error Cannot allocate TLS block]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
+- [[Colima won't start]] - `contains` [EXTRACTED]
+- [[Container starts but unhealthy]] - `contains` [EXTRACTED]
+- [[Docker says Cannot connect to Docker daemon]] - `contains` [EXTRACTED]
+- [[Tests failing after deploy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Runbook_runbooks

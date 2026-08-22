@@ -1,17 +1,23 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/README.md"
+source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L10"
+community: "Skill (i-browser)"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-browser
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
+- [[Click Element]] - `contains` [EXTRACTED]
+- [[Extract Data]] - `contains` [EXTRACTED]
+- [[Fetch JavaScript-Heavy Page (Node.js)]] - `contains` [EXTRACTED]
+- [[Fill Form]] - `contains` [EXTRACTED]
+- [[Navigate to URL]] - `contains` [EXTRACTED]
+- [[Take Screenshot]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-browser

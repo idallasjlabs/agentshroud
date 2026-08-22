@@ -1,12 +1,12 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "docs/vault"
+community: "Use Cases (requirements)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Use_Cases_requirements
 ---
 
 # Use Cases
@@ -25,4 +25,4 @@ tags:
 - [[UC-010 Multi-Instance Deployment with Port Auto-Detection]] - `contains` [EXTRACTED]
 - [[use-cases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Use_Cases_requirements

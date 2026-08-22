@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Prompt Guard"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Prompt_Guard
 ---
 
 # Unit tests for the 20 patterns added in v0.8.0 (total: 43).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestNewPatternsV080]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Prompt_Guard

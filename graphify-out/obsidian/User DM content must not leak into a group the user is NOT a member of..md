@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "rationale"
-community: "File Sandbox"
+community: "Shared Memory Write Acl"
 location: "L165"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/Shared_Memory_Write_Acl
 ---
 
 # User DM content must not leak into a group the user is NOT a member of.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_user_dm_write_invisible_from_other_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/File_Sandbox
+#graphify/rationale #graphify/EXTRACTED #community/Shared_Memory_Write_Acl

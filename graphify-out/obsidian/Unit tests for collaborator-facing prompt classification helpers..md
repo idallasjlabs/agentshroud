@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "IEC 62443 Scorecard"
-location: "L6944"
+community: "Telegram Proxy Inbound"
+location: "L6975"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/IEC_62443_Scorecard
+  - community/Telegram_Proxy_Inbound
 ---
 
 # Unit tests for collaborator-facing prompt classification helpers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCollaboratorPromptClassifiers]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/IEC_62443_Scorecard
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

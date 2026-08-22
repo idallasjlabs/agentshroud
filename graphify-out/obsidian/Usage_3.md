@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/README.md"
+source_file: ".agents/skills/i-atlas/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-atlas)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-atlas
 ---
 
 # Usage
 
 ## Connections
-- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-atlas

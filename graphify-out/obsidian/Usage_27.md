@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pr/README.md"
+source_file: ".agents/skills/i-production/README.md"
 type: "document"
-community: "scripts/deploy.sh"
+community: "Readme (i-pm)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/deploysh
+  - community/Readme_i-pm
 ---
 
 # Usage
 
 ## Connections
-- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
+- [[incident-response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/deploysh
+#graphify/document #graphify/EXTRACTED #community/Readme_i-pm

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
-location: "L1476"
+community: "Telegram Inbound Proxy Tests"
+location: "L1507"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Telegram_Inbound_Proxy_Tests
 ---
 
 # Uppercase collaborator blocked commands should still be quarantined.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_blocked_command_uppercase_is_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Proxy_Tests

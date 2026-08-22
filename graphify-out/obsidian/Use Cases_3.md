@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "Setup Docs"
+community: "Skill (browser-fetch)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Skill_browser-fetch
 ---
 
 # Use Cases
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_browser-fetch

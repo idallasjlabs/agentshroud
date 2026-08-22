@@ -1,20 +1,17 @@
 ---
-source_file: "docs/setup/SETUP_API_KEYS.md"
+source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "docs/governance"
-location: "L204"
+community: "Hermes Setup (setup)"
+location: "L253"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/governance
+  - community/Hermes_Setup_setup
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Missing auth for API providers]] - `contains` [EXTRACTED]
-- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
-- [[Bot not responding on Telegram]] - `contains` [EXTRACTED]
-- [[Container won't start after adding Anthropic secret]] - `contains` [EXTRACTED]
+- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/governance
+#graphify/document #graphify/EXTRACTED #community/Hermes_Setup_setup

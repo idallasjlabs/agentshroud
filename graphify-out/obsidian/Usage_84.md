@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: "docker/config/openclaw/skills/i-atlas/README.md"
 type: "document"
-community: "skills/openclaw"
-location: "L19"
+community: "Readme (i-atlas)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Readme_i-atlas
 ---
 
 # Usage
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Readme_i-atlas

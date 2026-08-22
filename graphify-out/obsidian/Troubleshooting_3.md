@@ -1,22 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L281"
+community: "Copilot Cli Setup (.github)"
+location: "L381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Copilot_Cli_Setup_github
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted]] - `contains` [EXTRACTED]
-- [[Browser timeout]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded]] - `contains` [EXTRACTED]
-- [[URL not in allowlist]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
+- [[Agent Not Found]] - `contains` [EXTRACTED]
+- [[Authentication Issues_1]] - `contains` [EXTRACTED]
+- [[Configuration Not Loading]] - `contains` [EXTRACTED]
+- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[Path Permission Denied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Copilot_Cli_Setup_github

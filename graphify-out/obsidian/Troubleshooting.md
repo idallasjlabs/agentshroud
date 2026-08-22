@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Troubleshooting (runbooks)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Troubleshooting_runbooks
 ---
 
 # troubleshooting.md
@@ -15,19 +15,20 @@ tags:
 - [[Approval Queue Issues]] - `contains` [EXTRACTED]
 - [[Connectivity Issues]] - `contains` [EXTRACTED]
 - [[Container Stability Issues]] - `contains` [EXTRACTED]
-- [[Crash Recovery Runbook]] - `references` [EXTRACTED]
 - [[Debugging Commands]] - `contains` [EXTRACTED]
 - [[Egress  Network Issues]] - `contains` [EXTRACTED]
-- [[Health Checks Runbook]] - `references` [EXTRACTED]
-- [[Monitor Mode (log-only, no enforcement)]] - `references` [EXTRACTED]
+- [[Kill Switch Won't Deactivate Troubleshooting]] - `references` [EXTRACTED]
+- [[Known Log Messages]] - `references` [EXTRACTED]
 - [[PII  Sanitization Issues]] - `contains` [EXTRACTED]
+- [[PII Sanitizer Blocking Legitimate Content]] - `references` [EXTRACTED]
 - [[Prompt Injection Issues]] - `contains` [EXTRACTED]
 - [[Quick Diagnosis Flow]] - `contains` [EXTRACTED]
+- [[RUNBOOK]] - `conceptually_related_to` [INFERRED]
 - [[Related Notes_64]] - `contains` [EXTRACTED]
 - [[Security Module Issues]] - `contains` [EXTRACTED]
-- [[Startup Errors_2]] - `references` [EXTRACTED]
 - [[Startup Issues]] - `contains` [EXTRACTED]
+- [[TAILSCALE_COMMANDS]] - `conceptually_related_to` [INFERRED]
 - [[Troubleshooting Matrix]] - `contains` [EXTRACTED]
 - [[Troubleshooting Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting_runbooks

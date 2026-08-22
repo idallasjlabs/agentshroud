@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/README.md"
+source_file: ".agents/skills/i-ps/README.md"
 type: "document"
-community: "Setup Docs"
+community: "Readme (i-pm)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Readme_i-pm
 ---
 
 # Usage
 
 ## Connections
-- [[incident-response]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_i-pm

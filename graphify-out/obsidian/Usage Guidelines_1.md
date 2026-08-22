@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "branding/typography"
+community: "Palette (colors)"
 location: "L87"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/typography
+  - community/Palette_colors
 ---
 
 # Usage Guidelines
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud Color Palette]] - `contains` [EXTRACTED]
 - [[Applications]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/typography
+#graphify/document #graphify/EXTRACTED #community/Palette_colors

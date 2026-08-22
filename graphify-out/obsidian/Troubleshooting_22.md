@@ -1,20 +1,20 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "scripts/promote-firmware.sh"
-location: "L333"
+community: "Security Scripts Reference (security)"
+location: "L277"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/promote-firmwaresh
+  - community/Security_Scripts_Reference_security
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
-- [[Problem pairing required but no pending requests]] - `contains` [EXTRACTED]
-- [[Problem Approved device still can't connect]] - `contains` [EXTRACTED]
-- [[Problem Too many pending requests]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
+- [[killswitch.sh doesn't confirm]] - `contains` [EXTRACTED]
+- [[scan.sh reports missing OpenSCAP]] - `contains` [EXTRACTED]
+- [[verify-security.sh fails]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/promote-firmwaresh
+#graphify/document #graphify/EXTRACTED #community/Security_Scripts_Reference_security

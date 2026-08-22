@@ -1,21 +1,17 @@
 ---
-source_file: "docs/setup/OPENCLAW_SETUP.md"
+source_file: "docs/setup-telegram.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L356"
+community: "Setup Slack (docs)"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Setup_Slack_docs
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Control UI Not Accessible]] - `contains` [EXTRACTED]
-- [[Gateway Can't Reach OpenClaw]] - `contains` [EXTRACTED]
-- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
-- [[OpenClaw Won't Start]] - `contains` [EXTRACTED]
-- [[SSH Not Working]] - `contains` [EXTRACTED]
+- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Setup_Slack_docs

@@ -1,23 +1,17 @@
 ---
-source_file: "docs/integrations/voice-terminal-esp32-s3.md"
+source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "document"
-community: "Gateway Security Module"
-location: "L226"
+community: "Skill (graphify)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Skill_graphify
 ---
 
 # Usage
 
 ## Connections
-- [[Adding a future agent]] - `contains` [EXTRACTED]
-- [[Agent toggle (MUTE button — BSP_BUTTON_MUTE)]] - `contains` [EXTRACTED]
-- [[Physical button (top button — BSP_BUTTON_MAIN)]] - `contains` [EXTRACTED]
-- [[Tap to talk]] - `contains` [EXTRACTED]
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
-- [[Voice volume]] - `contains` [EXTRACTED]
-- [[Wake word]] - `contains` [EXTRACTED]
+- [[graphify_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Skill_graphify

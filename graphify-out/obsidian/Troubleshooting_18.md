@@ -1,20 +1,20 @@
 ---
-source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
+source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "docs/operations"
-location: "L277"
+community: "Raspberry Pi (operations)"
+location: "L123"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Raspberry_Pi_operations
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
-- [[killswitch.sh doesn't confirm]] - `contains` [EXTRACTED]
-- [[scan.sh reports missing OpenSCAP]] - `contains` [EXTRACTED]
-- [[verify-security.sh fails]] - `contains` [EXTRACTED]
+- [[Container Won't Start_2]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
+- [[Out-of-Memory (OOM) Kills]] - `contains` [EXTRACTED]
+- [[Slow Builds]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Raspberry_Pi_operations

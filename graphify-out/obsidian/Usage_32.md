@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/README.md"
+source_file: ".agents/skills/i-sec-defense/README.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L9"
+community: "Readme (i-sec-defense)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_i-sec-defense
 ---
 
 # Usage
 
 ## Connections
-- [[System Audit Vault]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_i-sec-defense

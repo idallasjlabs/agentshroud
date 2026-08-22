@@ -1,17 +1,17 @@
 ---
-source_file: "skills/README.md"
+source_file: "docker/config/openclaw/skills/i-bs/README.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L24"
+community: "Readme (i-bs)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-bs
 ---
 
 # Usage
 
 ## Connections
-- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-bs

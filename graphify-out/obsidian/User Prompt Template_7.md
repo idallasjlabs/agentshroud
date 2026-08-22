@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
+source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (i-vulcan)"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-vulcan
 ---
 
 # User Prompt Template
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-vulcan

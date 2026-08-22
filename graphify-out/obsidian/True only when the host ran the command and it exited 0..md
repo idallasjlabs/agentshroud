@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "docs/vault"
+community: "Multi Host (tools)"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Multi_Host_tools
 ---
 
 # True only when the host ran the command and it exited 0.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.ok()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Multi_Host_tools

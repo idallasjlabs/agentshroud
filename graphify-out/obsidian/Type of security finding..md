@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "PromptGuard Encoding Detection"
+community: "Mcp Proxy"
 location: "L76"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard_Encoding_Detection
+  - community/Mcp_Proxy
 ---
 
 # Type of security finding.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FindingType]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection
+#graphify/rationale #graphify/EXTRACTED #community/Mcp_Proxy

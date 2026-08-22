@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Progressive Trust Integration"
 location: "L31"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Progressive_Trust_Integration
 ---
 
 # TrustLevel
 
 ## Connections
-- [[.__init__()_123]] - `references` [EXTRACTED]
+- [[.__init__()_127]] - `references` [EXTRACTED]
 - [[._force_demotion()]] - `references` [EXTRACTED]
 - [[._promotion_allowed()]] - `references` [EXTRACTED]
 - [[._score_to_level()]] - `references` [EXTRACTED]
@@ -67,11 +67,11 @@ tags:
 - [[TrustLevel]] - `uses` [INFERRED]
 - [[TrustLevel_2]] - `uses` [INFERRED]
 - [[TrustManager_4]] - `uses` [INFERRED]
+- [[TrustManager._update_score() (progressive promotion gate)]] - `references` [EXTRACTED]
 - [[UserSession]] - `references` [EXTRACTED]
 - [[ViolationType]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
-- [[test_e2e.py]] - `imports` [EXTRACTED]
+- [[test_e2e.py]] - `references` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
@@ -80,4 +80,4 @@ tags:
 - [[test_trust_manager.py]] - `imports` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Progressive_Trust_Integration

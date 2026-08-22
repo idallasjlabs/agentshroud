@@ -1,18 +1,18 @@
 ---
 source_file: "docs/project/legal/TRADEMARK.md"
 type: "document"
-community: ".github/agents"
+community: "Trademark (legal)"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/agents
+  - community/Trademark_legal
 ---
 
 # Usage Guidelines
 
 ## Connections
+- [[TRADEMARK]] - `references` [EXTRACTED]
 - [[Trademark Notice_3]] - `contains` [EXTRACTED]
-- [[Trademark Notice (AgentShroud USPTO Serial No. 99728633)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/agents
+#graphify/document #graphify/EXTRACTED #community/Trademark_legal

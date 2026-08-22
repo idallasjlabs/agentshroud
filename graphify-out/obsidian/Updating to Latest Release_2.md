@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Raspberry Pi (operations)"
 location: "L93"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Raspberry_Pi_operations
 ---
 
 # Updating to Latest Release
@@ -16,4 +16,4 @@ tags:
 - [[From Git (tracking main)]] - `contains` [EXTRACTED]
 - [[From a Tagged Release]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Raspberry_Pi_operations

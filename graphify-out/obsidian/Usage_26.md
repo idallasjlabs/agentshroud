@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pm/README.md"
+source_file: ".agents/skills/i-pr/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-pr)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-pr
 ---
 
 # Usage
 
 ## Connections
-- [[Project Management (PM)]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-pr

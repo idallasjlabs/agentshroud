@@ -1,17 +1,17 @@
 ---
-source_file: "src/interfaces/README.md"
+source_file: "docker/config/openclaw/skills/i-data/README.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L7"
+community: "Readme (i-data)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-data
 ---
 
 # Usage
 
 ## Connections
-- [[Control Center]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-data

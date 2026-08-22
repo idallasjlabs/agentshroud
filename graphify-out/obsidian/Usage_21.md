@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
+source_file: ".agents/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-mcpm-doctor)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-mcpm-doctor
 ---
 
 # Usage
 
 ## Connections
-- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-mcpm-doctor

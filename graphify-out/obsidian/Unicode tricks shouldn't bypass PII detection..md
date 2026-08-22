@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "scripts/sync-cve-registry.py"
+community: "Security Audit & Watchtower Tests"
 location: "L128"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Unicode tricks shouldn't bypass PII detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_unicode_normalization_bypass()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

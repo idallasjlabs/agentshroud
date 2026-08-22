@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/README.md"
+source_file: ".agents/skills/i-socrates/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (i-socrates)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_i-socrates
 ---
 
 # Usage
 
 ## Connections
-- [[Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_i-socrates

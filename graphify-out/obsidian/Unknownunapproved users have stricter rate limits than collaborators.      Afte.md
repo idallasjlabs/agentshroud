@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "skills/openclaw"
-location: "L7674"
+community: "Telegram Proxy Inbound"
+location: "L7705"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Telegram_Proxy_Inbound
 ---
 
 # Unknown/unapproved users have stricter rate limits than collaborators.      Afte
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestStrangerRateLimit]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

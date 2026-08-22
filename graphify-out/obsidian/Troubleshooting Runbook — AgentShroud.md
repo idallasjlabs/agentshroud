@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Troubleshooting (runbooks)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Troubleshooting_runbooks
 ---
 
 # Troubleshooting Runbook — AgentShroud
@@ -18,4 +18,4 @@ tags:
 - [[Known Log Messages]] - `contains` [EXTRACTED]
 - [[troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting_runbooks

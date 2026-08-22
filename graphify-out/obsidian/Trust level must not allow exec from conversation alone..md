@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Redteam Probes"
 location: "L265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Redteam_Probes
 ---
 
 # Trust level must not allow exec from conversation alone.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_trust_escalation_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Redteam_Probes

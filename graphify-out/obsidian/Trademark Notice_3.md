@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/TRADEMARK.md"
 type: "document"
-community: ".github/agents"
+community: "Trademark (legal)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/agents
+  - community/Trademark_legal
 ---
 
 # Trademark Notice
@@ -18,4 +18,4 @@ tags:
 - [[Trademark Details]] - `contains` [EXTRACTED]
 - [[Usage Guidelines_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/agents
+#graphify/document #graphify/EXTRACTED #community/Trademark_legal

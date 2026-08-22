@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Tool Chain & CVE Triage"
 location: "L27"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Proxy_Config
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # URLVerdict
@@ -23,4 +23,4 @@ tags:
 - [[test_url_analyzer.py]] - `imports` [EXTRACTED]
 - [[url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config
+#graphify/code #graphify/INFERRED #community/Tool_Chain__CVE_Triage

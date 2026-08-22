@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-cicd/README.md"
 type: "document"
-community: "Setup Docs"
-location: "L27"
+community: "Readme (i-cicd)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Readme_i-cicd
 ---
 
 # Usage
 
 ## Connections
-- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_i-cicd

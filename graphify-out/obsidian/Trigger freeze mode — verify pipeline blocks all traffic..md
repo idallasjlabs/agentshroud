@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "rationale"
-community: "SOC Collaborator Lifecycle"
+community: "E2e Proxy"
 location: "L245"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/E2e_Proxy
 ---
 
 # Trigger freeze mode — verify pipeline blocks all traffic.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_kill_switch_freezes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/rationale #graphify/EXTRACTED #community/E2e_Proxy

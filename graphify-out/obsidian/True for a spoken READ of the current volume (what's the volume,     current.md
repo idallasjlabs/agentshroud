@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Server (voice_gateway)"
 location: "L637"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Server_voice_gateway
 ---
 
 # True for a spoken READ of the current volume ("what's the volume",     "current
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_volume_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Server_voice_gateway

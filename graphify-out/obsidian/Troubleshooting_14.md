@@ -1,20 +1,21 @@
 ---
-source_file: "docs/operations/raspberry-pi.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L123"
+community: "Skill (i-mcpm-aws-profile)"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-mcpm-aws-profile
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Container Won't Start_2]] - `contains` [EXTRACTED]
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
-- [[Out-of-Memory (OOM) Kills]] - `contains` [EXTRACTED]
-- [[Slow Builds]] - `contains` [EXTRACTED]
+- [[Access Denied_2]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)_2]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials_2]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile_2]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-aws-profile

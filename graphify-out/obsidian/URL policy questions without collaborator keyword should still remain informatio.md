@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "PII Config & Test Fixtures"
-location: "L2086"
+community: "Telegram Inbound Proxy Tests"
+location: "L2117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Telegram_Inbound_Proxy_Tests
 ---
 
 # URL policy questions without collaborator keyword should still remain informatio
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_web_access_policy_question_with_url_no_collaborator_keyword_is_safe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Proxy_Tests

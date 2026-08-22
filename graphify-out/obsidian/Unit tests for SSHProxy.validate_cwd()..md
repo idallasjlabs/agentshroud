@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "scripts/sync-cve-registry.py"
+community: "Ssh Write File Endpoint"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Ssh_Write_File_Endpoint
 ---
 
 # Unit tests for SSHProxy.validate_cwd().
@@ -15,4 +15,4 @@ tags:
 - [[TestSSHProxyValidateWriteFile]] - `rationale_for` [EXTRACTED]
 - [[TestSSHValidateCwd]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Ssh_Write_File_Endpoint

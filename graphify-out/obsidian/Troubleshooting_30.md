@@ -1,17 +1,20 @@
 ---
-source_file: "shortcuts/README.md"
+source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "docs/vault"
-location: "L291"
+community: "Pairing Instructions (setup)"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Pairing_Instructions_setup
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
+- [[Cannot save token]] - `contains` [EXTRACTED]
+- [[OpenClaw Control UI Pairing Instructions]] - `contains` [EXTRACTED]
+- [[Still shows pairing required]] - `contains` [EXTRACTED]
+- [[Token field not visible]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Pairing_Instructions_setup

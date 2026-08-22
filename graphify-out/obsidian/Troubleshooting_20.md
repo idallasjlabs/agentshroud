@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup-telegram.md"
+source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "Security Docs"
-location: "L89"
+community: "Quick Reference (reference)"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Quick_Reference_reference
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
+- [[Quick Reference Card]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference_reference

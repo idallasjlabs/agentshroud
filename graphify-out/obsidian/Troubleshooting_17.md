@@ -1,22 +1,17 @@
 ---
-source_file: "docs/runbooks/RUNBOOK.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L53"
+community: "Voice Terminal Esp32 S3 (integrations)"
+location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Voice_Terminal_Esp32_S3_integrations
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Fatal glibc error Cannot allocate TLS block]] - `contains` [EXTRACTED]
-- [[AgentShroud Deployment & Troubleshooting Runbook]] - `contains` [EXTRACTED]
-- [[Colima won't start]] - `contains` [EXTRACTED]
-- [[Container starts but unhealthy]] - `contains` [EXTRACTED]
-- [[Docker says Cannot connect to Docker daemon]] - `contains` [EXTRACTED]
-- [[Tests failing after deploy]] - `contains` [EXTRACTED]
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Voice_Terminal_Esp32_S3_integrations

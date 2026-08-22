@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "RBAC & Ingest Middleware"
 location: "L43"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval__FastAPI_Ingest
+  - community/RBAC__Ingest_Middleware
 ---
 
 # ToolTier
 
 ## Connections
 - [[Action_1]] - `uses` [INFERRED]
-- [[Any_54]] - `uses` [INFERRED]
+- [[Any_55]] - `uses` [INFERRED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[PermissionResult]] - `uses` [INFERRED]
 - [[RBACConfig]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[str]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware

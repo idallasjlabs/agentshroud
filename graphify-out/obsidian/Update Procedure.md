@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Runbook (operations)"
 location: "L647"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Runbook_operations
 ---
 
 # Update Procedure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Maintenance Procedures]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Runbook_operations

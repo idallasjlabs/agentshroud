@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Anthropic Base Url (04 - Environment Variables)"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Anthropic_Base_Url_04_-_Environment_Variables
 ---
 
 # Typical Value
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Anthropic_Base_Url_04_-_Environment_Variables

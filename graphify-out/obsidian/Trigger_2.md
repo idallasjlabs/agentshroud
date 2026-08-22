@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/session-logs/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Bot Container Scripts"
-location: "L11"
+community: "Skill (i-session-prompt)"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Skill_i-session-prompt
 ---
 
 # Trigger
 
 ## Connections
-- [[session-logs]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/document #graphify/EXTRACTED #community/Skill_i-session-prompt

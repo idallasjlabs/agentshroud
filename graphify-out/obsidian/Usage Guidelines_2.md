@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "docs/vault"
+community: "Typography (typography)"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Typography_typography
 ---
 
 # Usage Guidelines
@@ -16,4 +16,4 @@ tags:
 - [[Do's_1]] - `contains` [EXTRACTED]
 - [[Don'ts_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Typography_typography

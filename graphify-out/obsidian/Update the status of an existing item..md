@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
+community: "Enhanced Approval"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Enhanced_Approval
 ---
 
 # Update the status of an existing item.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.update_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval

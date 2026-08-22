@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "shortcuts/README.md"
-location: "L142"
+community: "Quickstart (docker)"
+location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/shortcuts/READMEmd
+  - community/Quickstart_docker
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found]] - `contains` [EXTRACTED]
-- [[Connection timeout]] - `contains` [EXTRACTED]
-- [[iCloud Services]] - `contains` [EXTRACTED]
+- [[API Key Error]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
+- [[Container Won't Start]] - `contains` [EXTRACTED]
+- [[Gateway Returns 401 Unauthorized]] - `contains` [EXTRACTED]
+- [[OpenClaw Not Responding]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/shortcuts/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Quickstart_docker

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cicd/README.md"
+source_file: ".agents/skills/i-cr/README.md"
 type: "document"
-community: "Setup Docs"
+community: "Readme (i-pm)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Readme_i-pm
 ---
 
 # Usage
 
 ## Connections
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_i-pm

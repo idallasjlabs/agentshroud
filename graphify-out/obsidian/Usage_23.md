@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm/README.md"
+source_file: ".agents/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-mnemosyne)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-mnemosyne
 ---
 
 # Usage
 
 ## Connections
-- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-mnemosyne

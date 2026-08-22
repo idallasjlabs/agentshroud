@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mac/README.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-mc)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-mc
 ---
 
 # Usage
 
 ## Connections
-- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-mc

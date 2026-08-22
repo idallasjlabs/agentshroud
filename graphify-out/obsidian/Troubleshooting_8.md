@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-icloud)"
 location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-icloud
 ---
 
 # Troubleshooting
@@ -17,4 +17,4 @@ tags:
 - [[Connection timeout_1]] - `contains` [EXTRACTED]
 - [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud

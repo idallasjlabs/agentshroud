@@ -1,17 +1,20 @@
 ---
-source_file: "docs/reference/QUICK_REFERENCE.md"
+source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L80"
+community: "Workspace Usage (architecture)"
+location: "L275"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Workspace_Usage_architecture
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Quick Reference Card]] - `contains` [EXTRACTED]
+- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
+- [[Problem Container not running]] - `contains` [EXTRACTED]
+- [[Problem File not found]] - `contains` [EXTRACTED]
+- [[Problem Permission denied]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Workspace_Usage_architecture

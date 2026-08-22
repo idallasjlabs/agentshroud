@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "docs/operations"
+community: "Skill (skill-creator)"
 location: "L315"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Skill_skill-creator
 ---
 
 # Update SKILL.md
@@ -16,4 +16,4 @@ tags:
 - [[Frontmatter]] - `contains` [EXTRACTED]
 - [[Step 4 Edit the Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Skill_skill-creator

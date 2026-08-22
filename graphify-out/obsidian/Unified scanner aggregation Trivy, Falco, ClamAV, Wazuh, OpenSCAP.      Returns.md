@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Voice Gateway Tests"
-location: "L2059"
+community: "Soc Bots"
+location: "L2097"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Soc_Bots
 ---
 
 # Unified scanner aggregation: Trivy, Falco, ClamAV, Wazuh, OpenSCAP.      Returns
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_scanner_results()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Soc_Bots

@@ -1,20 +1,20 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: ".mcp.json"
-location: "L275"
+community: "Skill (i-icloud)"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcpjson
+  - community/Skill_i-icloud
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
-- [[Problem Container not running]] - `contains` [EXTRACTED]
-- [[Problem File not found]] - `contains` [EXTRACTED]
-- [[Problem Permission denied]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_2]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found_2]] - `contains` [EXTRACTED]
+- [[Connection timeout_2]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud

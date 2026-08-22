@@ -1,22 +1,20 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L293"
+community: "Telegram Setup (setup)"
+location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Setup_setup
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Approval required but none granted]] - `contains` [EXTRACTED]
-- [[Browser timeout_2]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_2]] - `contains` [EXTRACTED]
-- [[Credential extraction blocked]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_2]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[Bot doesn't respond]] - `contains` [EXTRACTED]
+- [[Cannot find bot]] - `contains` [EXTRACTED]
+- [[Messages delayed]] - `contains` [EXTRACTED]
+- [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Telegram_Setup_setup

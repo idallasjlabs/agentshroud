@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Cross Bot Trust Ledger"
 location: "L55"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Cross_Bot_Trust_Ledger
 ---
 
 # TrustConfig
 
 ## Connections
-- [[.__init__()_123]] - `references` [EXTRACTED]
+- [[.__init__()_127]] - `references` [EXTRACTED]
 - [[.__post_init__()_9]] - `method` [EXTRACTED]
 - [[._pipeline_with_trust()]] - `calls` [EXTRACTED]
 - [[._shared_tm()]] - `calls` [EXTRACTED]
@@ -114,4 +114,4 @@ tags:
 - [[trust_manager()_3]] - `calls` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Cross_Bot_Trust_Ledger

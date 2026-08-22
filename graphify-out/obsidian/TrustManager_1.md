@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Regressions V1 2"
 location: "L96"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Security_Regressions_V1_2
 ---
 
 # TrustManager
 
 ## Connections
-- [[.__init__()_123]] - `method` [EXTRACTED]
+- [[.__init__()_127]] - `method` [EXTRACTED]
 - [[._apply_decay()]] - `method` [EXTRACTED]
 - [[._force_demotion()]] - `method` [EXTRACTED]
 - [[._init_db()_2]] - `method` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[._promotion_allowed()]] - `method` [EXTRACTED]
 - [[._score_to_level()]] - `method` [EXTRACTED]
 - [[._update_score()]] - `method` [EXTRACTED]
-- [[.close()_10]] - `method` [EXTRACTED]
+- [[.close()_11]] - `method` [EXTRACTED]
 - [[.get_history()]] - `method` [EXTRACTED]
 - [[.get_trust()]] - `method` [EXTRACTED]
 - [[.is_action_allowed()]] - `method` [EXTRACTED]
@@ -46,19 +46,21 @@ tags:
 - [[.test_write_baseline_json()]] - `calls` [EXTRACTED]
 - [[.vouch_for_agent()]] - `method` [EXTRACTED]
 - [[A2APeerTestDouble]] - `uses` [INFERRED]
+- [[A2AProxy]] - `calls` [EXTRACTED]
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
-- [[Cross-Bot Trust Ledger (Module 27)]] - `calls` [INFERRED]
 - [[CrossBotTrustLedger]] - `uses` [INFERRED]
 - [[CrossBotTrustLedger_1]] - `uses` [INFERRED]
 - [[IncidentRecord]] - `uses` [INFERRED]
 - [[Manage progressive trust for agents.]] - `rationale_for` [EXTRACTED]
 - [[PIISanitizer_3]] - `uses` [INFERRED]
+- [[ProgressiveLockdown]] - `semantically_similar_to` [INFERRED]
 - [[ProgressiveTrustConfig]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
 - [[Request_7]] - `uses` [INFERRED]
 - [[Response]] - `uses` [INFERRED]
-- [[Response_2]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[SubagentMonitor]] - `conceptually_related_to` [INFERRED]
 - [[TestActionGating]] - `uses` [INFERRED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAgentRegistration]] - `uses` [INFERRED]
@@ -168,6 +170,7 @@ tags:
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[_make_tm()]] - `calls` [EXTRACTED]
 - [[_score_identity_authentication() (domain 13, FR1)]] - `references` [EXTRACTED]
+- [[canary-cron.sh embedded Python main()]] - `calls` [EXTRACTED]
 - [[canary_pipeline()]] - `calls` [EXTRACTED]
 - [[cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
@@ -175,15 +178,18 @@ tags:
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
+- [[main.py_3]] - `references` [EXTRACTED]
 - [[manager()_4]] - `calls` [EXTRACTED]
 - [[run()_3]] - `calls` [EXTRACTED]
+- [[run_canary()_1]] - `references` [EXTRACTED]
+- [[run_chain()]] - `references` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[strict_manager()]] - `calls` [EXTRACTED]
 - [[test_a2a_integration.py]] - `imports` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `imports` [EXTRACTED]
 - [[test_agent_cve_registry.py — agent CVE advisory registry integrity tests]] - `conceptually_related_to` [AMBIGUOUS]
-- [[test_canary.py]] - `imports` [EXTRACTED]
-- [[test_cross_bot_trust_ledger.py]] - `references` [EXTRACTED]
+- [[test_canary.py]] - `references` [EXTRACTED]
+- [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 - [[test_performance.py]] - `imports` [EXTRACTED]
@@ -202,4 +208,4 @@ tags:
 - [[trust_manager()_5]] - `calls` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Security_Regressions_V1_2

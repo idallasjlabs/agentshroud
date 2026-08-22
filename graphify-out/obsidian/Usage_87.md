@@ -1,21 +1,23 @@
 ---
-source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L58"
+community: "Skill (i-browser)"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-browser
 ---
 
 # Usage
 
 ## Connections
-- [[1. Create a parent panel]] - `contains` [EXTRACTED]
-- [[2. Initialise]] - `contains` [EXTRACTED]
-- [[3. Set an emotion]] - `contains` [EXTRACTED]
-- [[4. Reposition]] - `contains` [EXTRACTED]
-- [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
+- [[Click Element_2]] - `contains` [EXTRACTED]
+- [[Extract Data_2]] - `contains` [EXTRACTED]
+- [[Fetch JavaScript-Heavy Page (Node.js)_2]] - `contains` [EXTRACTED]
+- [[Fill Form_2]] - `contains` [EXTRACTED]
+- [[Navigate to URL_2]] - `contains` [EXTRACTED]
+- [[Take Screenshot_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-browser

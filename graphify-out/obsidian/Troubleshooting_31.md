@@ -1,20 +1,20 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "ESP32 Firmware"
-location: "L142"
+community: "Readme (scripts)"
+location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Readme_scripts
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_3]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_2]] - `contains` [EXTRACTED]
-- [[Connection timeout_3]] - `contains` [EXTRACTED]
-- [[iCloud Services_3]] - `contains` [EXTRACTED]
+- [[Missing auth for API providers]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
+- [[Bot not responding on Telegram]] - `contains` [EXTRACTED]
+- [[Container won't start after adding Anthropic secret]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Readme_scripts

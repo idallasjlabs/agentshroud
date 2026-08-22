@@ -1,24 +1,17 @@
 ---
-source_file: "skills/openclaw/trello/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
 type: "document"
-community: "Docker Deploy Scripts"
-location: "L26"
+community: "Readme (i-daedalus)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Readme_i-daedalus
 ---
 
 # Usage
 
 ## Connections
-- [[Add a comment to a card]] - `contains` [EXTRACTED]
-- [[Archive a card]] - `contains` [EXTRACTED]
-- [[Create a card]] - `contains` [EXTRACTED]
-- [[List boards]] - `contains` [EXTRACTED]
-- [[List cards in a list]] - `contains` [EXTRACTED]
-- [[List lists in a board]] - `contains` [EXTRACTED]
-- [[Move a card to another list]] - `contains` [EXTRACTED]
-- [[Trello Skill]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Readme_i-daedalus

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Trust Manager.py (Security Modules)"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Trust_Managerpy_Security_Modules
 ---
 
 # TrustManager.is_action_allowed(agent_id, action)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_50]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Trust_Managerpy_Security_Modules

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "skills/openclaw"
+community: "Updating (operations)"
 location: "L728"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Updating_operations
 ---
 
 # Update AgentShroud
@@ -21,4 +21,4 @@ tags:
 - [[Updating]] - `contains` [EXTRACTED]
 - [[updating]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Updating_operations

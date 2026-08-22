@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "docs/vault"
-location: "L8737"
+community: "Telegram Proxy Inbound"
+location: "L8838"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Telegram_Proxy_Inbound
 ---
 
 # Unit tests for TelegramAPIProxy._bot_is_mentioned().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestBotIsMentioned]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

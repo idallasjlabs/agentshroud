@@ -1,21 +1,22 @@
 ---
-source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
+source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L242"
+community: "Bot Development Team Rpi (setup)"
+location: "L1683"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_Development_Team_Rpi_setup
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
-- [[Problem Bad owner or permissions on ~.sshconfig]] - `contains` [EXTRACTED]
-- [[Problem Connection timeout]] - `contains` [EXTRACTED]
-- [[Problem Host key verification failed]] - `contains` [EXTRACTED]
-- [[Problem Permission denied (publickey)]] - `contains` [EXTRACTED]
+- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
+- [[Docker Permission Denied]] - `contains` [EXTRACTED]
+- [[High Temperature]] - `contains` [EXTRACTED]
+- [[Out of Memory]] - `contains` [EXTRACTED]
+- [[SSH Connection Refused]] - `contains` [EXTRACTED]
+- [[Slow Builds_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Bot_Development_Team_Rpi_setup

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "RBAC & Ingest Middleware"
 location: "L173"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval__FastAPI_Ingest
+  - community/RBAC__Ingest_Middleware
 ---
 
 # ToolTier
@@ -25,6 +25,7 @@ tags:
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
+- [[TestCollaboratorPersistence]] - `uses` [INFERRED]
 - [[TestGroupRegistry]] - `uses` [INFERRED]
 - [[TestRBACConfig]] - `uses` [INFERRED]
 - [[TestRBACErrorHandling]] - `uses` [INFERRED]
@@ -33,4 +34,4 @@ tags:
 - [[ToolTier]] - `uses` [INFERRED]
 - [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware

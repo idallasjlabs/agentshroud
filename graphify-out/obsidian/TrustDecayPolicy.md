@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Cross Bot Trust Ledger"
 location: "L82"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Cross_Bot_Trust_Ledger
 ---
 
 # TrustDecayPolicy
 
 ## Connections
-- [[.__init__()_65]] - `references` [EXTRACTED]
+- [[.__init__()_68]] - `references` [EXTRACTED]
 - [[.__post_init__()_3]] - `method` [EXTRACTED]
 - [[.build_full_mesh()]] - `references` [EXTRACTED]
 - [[Configuration for how incidents decay peer trust scores.      Attributes]] - `rationale_for` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Cross_Bot_Trust_Ledger

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Bot Capabilities (docker)"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Bot_Capabilities_docker
 ---
 
 # Usage Examples
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Bot_Capabilities_docker

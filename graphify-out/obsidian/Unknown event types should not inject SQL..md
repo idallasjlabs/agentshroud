@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Audit Export Pipeline"
+community: "Security Regressions V1 2"
 location: "L909"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Audit_Export_Pipeline
+  - community/Security_Regressions_V1_2
 ---
 
 # Unknown event types should not inject SQL.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_event_type_validation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Audit_Export_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Security_Regressions_V1_2
