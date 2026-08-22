@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-triage-gaps.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Glossary (project)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Glossary_project
 ---
 
 # CVE Triage — Gaps & Development Plan (OpenClaw)
@@ -17,4 +17,4 @@ tags:
 - [[Resulting status breakdown]] - `contains` [EXTRACTED]
 - [[cve-triage-gaps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Glossary_project

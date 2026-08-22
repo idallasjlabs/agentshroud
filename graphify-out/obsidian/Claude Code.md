@@ -1,17 +1,18 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "branding/colors"
+community: "Skill (coding-agent)"
 location: "L158"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/colors
+  - community/Skill_coding-agent
 ---
 
 # Claude Code
 
 ## Connections
 - [[Coding Agent (bash-first)]] - `contains` [EXTRACTED]
+- [[SKILL_203]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/colors
+#graphify/document #graphify/EXTRACTED #community/Skill_coding-agent

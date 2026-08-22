@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Browse (scripts)"
 location: "L321"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Browse_scripts
 ---
 
 # Click an element          Security: Risk classification for destructive actions
 
 ## Connections
-- [[.click()_2]] - `rationale_for` [EXTRACTED]
+- [[.click()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Browse_scripts

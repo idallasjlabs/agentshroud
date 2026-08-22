@@ -1,17 +1,17 @@
 ---
 source_file: "SECURITY.md"
 type: "concept"
-community: "Security Docs"
+community: "Security"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Security
 ---
 
 # CI Security Scanning Toolchain
 
 ## Connections
 - [[AgentShroud™ Security Policy]] - `references` [EXTRACTED]
-- [[Security Scan Workflow_1]] - `references` [EXTRACTED]
+- [[Security Scan Workflow]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Security_Docs
+#graphify/concept #graphify/EXTRACTED #community/Security

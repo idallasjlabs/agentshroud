@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Browse (scripts)"
 location: "L432"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Browse_scripts
 ---
 
 # CLI interface for SecureBrowser
 
 ## Connections
-- [[main()_22]] - `rationale_for` [EXTRACTED]
+- [[main()_25]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Browse_scripts

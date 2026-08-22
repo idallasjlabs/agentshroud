@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Planning Docs"
+community: "Setup Api Keys (setup)"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Setup_Api_Keys_setup
 ---
 
 # Check Current Profile
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[List Available Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Setup_Api_Keys_setup

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L863"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # Check RBAC permissions for the request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_rbac_permissions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

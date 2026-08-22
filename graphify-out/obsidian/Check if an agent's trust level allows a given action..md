@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Security Regressions V1 2"
 location: "L207"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Regressions_V1_2
 ---
 
 # Check if an agent's trust level allows a given action.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_action_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Security_Regressions_V1_2

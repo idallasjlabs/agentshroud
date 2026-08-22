@@ -1,20 +1,23 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "docs/vault"
+community: "Credential Protection Implemented (security)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Credential_Protection_Implemented_security
 ---
 
 # CREDENTIAL-PROTECTION-IMPLEMENTED.md
 
 ## Connections
-- [[3-Layer Credential Protection (Gateway Filter + Console-Only + Audit Logging)]] - `documents` [EXTRACTED]
-- [[Credential Security Policy]] - `precedes` [INFERRED]
-- [[Gateway Credential Filter (gatewayingest_apisanitizer.py block_credentials())]] - `documents` [EXTRACTED]
+- [[CREDENTIAL-SECURITY-POLICY]] - `cites` [EXTRACTED]
+- [[Console Access Only (Layer 2)]] - `references` [EXTRACTED]
+- [[Credential Access Audit Logging (Layer 3)]] - `references` [EXTRACTED]
+- [[Gateway Credential Filter (Layer 1)]] - `references` [EXTRACTED]
+- [[SECURITY-POLICY-FINAL]] - `conceptually_related_to` [EXTRACTED]
+- [[main.py_2]] - `references` [EXTRACTED]
 - [[✅ What the Bot CAN Do via Telegram]] - `contains` [EXTRACTED]
 - [[✅ Your Requirements Met]] - `contains` [EXTRACTED]
 - [[❌ What the Bot CANNOT Do via Telegram]] - `contains` [EXTRACTED]
@@ -31,4 +34,4 @@ tags:
 - [[🛡️ Protection Layers]] - `contains` [EXTRACTED]
 - [[🧪 Testing the Protection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Credential_Protection_Implemented_security

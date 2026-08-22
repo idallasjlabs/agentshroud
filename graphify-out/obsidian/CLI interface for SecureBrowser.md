@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "branding/README.md"
+community: "Browse (scripts)"
 location: "L432"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/Browse_scripts
 ---
 
 # CLI interface for SecureBrowser
 
 ## Connections
-- [[main()_4]] - `rationale_for` [EXTRACTED]
+- [[main()_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/rationale #graphify/EXTRACTED #community/Browse_scripts

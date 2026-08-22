@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
-location: "L164"
+community: "Tool ACL & Group RBAC"
+location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Tool_ACL__Group_RBAC
 ---
 
 # Check if user has admin privileges or higher.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_admin_or_higher()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Tool_ACL__Group_RBAC

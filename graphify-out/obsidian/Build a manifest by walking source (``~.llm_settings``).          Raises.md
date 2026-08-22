@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Manifest (skills)"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Manifest_skills
 ---
 
 # Build a manifest by walking *source* (``~/.llm_settings/``).          Raises:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_source()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Manifest_skills

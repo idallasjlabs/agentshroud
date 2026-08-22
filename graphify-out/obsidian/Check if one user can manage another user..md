@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
+community: "RBAC & Ingest Middleware"
 location: "L373"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/RBAC__Ingest_Middleware
 ---
 
 # Check if one user can manage another user.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.can_user_manage_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

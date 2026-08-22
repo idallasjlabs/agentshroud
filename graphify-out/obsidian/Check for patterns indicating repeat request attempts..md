@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Kill Switch Config"
+community: "Approval Hardening (security)"
 location: "L315"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Kill_Switch_Config
+  - community/Approval_Hardening_security
 ---
 
 # Check for patterns indicating repeat request attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_repeat_request_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch_Config
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Hardening_security

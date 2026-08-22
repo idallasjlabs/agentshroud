@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "concept"
-community: "Setup Docs"
+community: "Skill (i-data)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Skill_i-data
 ---
 
 # CI/CD Quality Gates (execution order)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CICD Pipeline Advisor (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Setup_Docs
+#graphify/concept #graphify/EXTRACTED #community/Skill_i-data

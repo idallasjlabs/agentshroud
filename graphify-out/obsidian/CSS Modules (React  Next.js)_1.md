@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-ui)"
 location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-ui
 ---
 
 # CSS Modules (React / Next.js)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CSS Architecture Recommendations_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ui

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Tool Chain & CVE Triage"
 location: "L439"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # Check if a call matches the source pattern, including parameter analysis.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._matches_source_pattern()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

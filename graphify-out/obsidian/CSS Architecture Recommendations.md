@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
+source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-ui)"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-ui
 ---
 
 # CSS Architecture Recommendations
@@ -17,4 +17,4 @@ tags:
 - [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
 - [[Utility-First (Tailwind  custom utilities)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ui

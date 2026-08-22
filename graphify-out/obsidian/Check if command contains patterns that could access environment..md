@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Env Guard (security)"
 location: "L201"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Env_Guard_security
 ---
 
 # Check if command contains patterns that could access environment.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._contains_env_access_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Env_Guard_security

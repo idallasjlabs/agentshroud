@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Security Audit & Watchtower Tests"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Canary should fail when no pipeline configured.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_canary_fails_without_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

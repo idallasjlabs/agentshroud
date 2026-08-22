@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "Forward Routing & Approval"
+community: "Path Isolation (security)"
 location: "L244"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Forward_Routing__Approval
+  - community/Path_Isolation_security
 ---
 
 # Clean up abandoned user directories based on max age.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.cleanup_abandoned_directories()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing__Approval
+#graphify/rationale #graphify/EXTRACTED #community/Path_Isolation_security

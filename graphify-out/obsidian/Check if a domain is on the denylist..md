@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Web Proxy"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Web_Proxy
 ---
 
 # Check if a domain is on the denylist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_domain_denied()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Web_Proxy

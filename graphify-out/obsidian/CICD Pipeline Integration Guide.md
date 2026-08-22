@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Agentic Os (architecture)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Agentic_Os_architecture
 ---
 
 # CI/CD Pipeline Integration Guide
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CICD Quality Gates (14 jobs, 6 workflows)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/document #graphify/INFERRED #community/Agentic_Os_architecture

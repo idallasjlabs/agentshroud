@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Access Control Matrix (security)"
 location: "L263"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Access_Control_Matrix_security
 ---
 
 # Category C: Privileged Operations (L2+)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Tool Categories and Trust Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Access_Control_Matrix_security

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L303"
+community: "Egress Filter"
+location: "L308"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress_Filter
 ---
 
 # Check if domain matches any pattern in the list (supports wildcards).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._matches_any_pattern()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Clamav Pipeline"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Clamav_Pipeline
 ---
 
 # Build a minimal SecurityPipeline with passthrough PII + optional clamav.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_pipeline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Clamav_Pipeline

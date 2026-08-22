@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "Setup Docs"
+community: "Readme (i-cicd)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Readme_i-cicd
 ---
 
 # CI/CD Pipeline Advisor (README)
@@ -13,9 +13,8 @@ tags:
 ## Connections
 - [[CICD Pipeline Advisor (SKILL)]] - `references` [INFERRED]
 - [[Purpose_6]] - `contains` [EXTRACTED]
-- [[README_11]] - `contains` [EXTRACTED]
+- [[README_6]] - `contains` [EXTRACTED]
 - [[Related Skills_6]] - `contains` [EXTRACTED]
-- [[SKILLS_GUIDE.md (complete skill catalog)]] - `references` [EXTRACTED]
-- [[Usage_9]] - `contains` [EXTRACTED]
+- [[Usage_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_i-cicd

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/workspace/jira_dev_ticket.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Jira Dev Ticket (workspace)"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Jira_Dev_Ticket_workspace
 ---
 
 # Build the REST v3 create-issue request body.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_create_issue_payload()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Jira_Dev_Ticket_workspace

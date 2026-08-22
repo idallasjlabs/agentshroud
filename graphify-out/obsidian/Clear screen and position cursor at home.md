@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "rationale"
-community: "docs/ssh-security-review.md"
+community: "Text Control Center (interfaces)"
 location: "L121"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/ssh-security-reviewmd
+  - community/Text_Control_Center_interfaces
 ---
 
 # Clear screen and position cursor at home
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.clear_screen()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/ssh-security-reviewmd
+#graphify/rationale #graphify/EXTRACTED #community/Text_Control_Center_interfaces

@@ -1,17 +1,16 @@
 ---
 source_file: "skills/openclaw/clawhub/SKILL.md"
-type: "document"
-community: "Bot Skill Config"
-location: "L23"
+type: "concept"
+community: "Skill (clawhub)"
 tags:
-  - graphify/document
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_clawhub
 ---
 
-# ClawHub CLI
+# clawhub CLI
 
 ## Connections
-- [[SKILL_138]] - `contains` [EXTRACTED]
+- [[SKILL_202]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Skill_clawhub

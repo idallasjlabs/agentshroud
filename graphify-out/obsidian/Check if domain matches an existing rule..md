@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "Docker Deploy Scripts"
+community: "Egress Approval (security)"
 location: "L338"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Egress_Approval_security
 ---
 
 # Check if domain matches an existing rule.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._check_existing_rule()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Approval_security

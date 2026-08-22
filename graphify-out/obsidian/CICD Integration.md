@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Community 1508"
+community: "Security Scripts Reference (security)"
 location: "L234"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1508
+  - community/Security_Scripts_Reference_security
 ---
 
 # CI/CD Integration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Automation Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1508
+#graphify/document #graphify/EXTRACTED #community/Security_Scripts_Reference_security

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "Router"
 location: "L390"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Router
 ---
 
 # Check health of one or all agent targets          Args:             target: Spec
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.health_check()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Router

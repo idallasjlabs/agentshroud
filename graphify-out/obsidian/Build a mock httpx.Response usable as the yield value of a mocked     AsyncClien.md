@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Security Pipeline Core"
+community: "Voice Gateway"
 location: "L1008"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Pipeline_Core
+  - community/Voice_Gateway
 ---
 
 # Build a mock httpx.Response usable as the yield value of a mocked     AsyncClien
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_mock_stream_resp()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Pipeline_Core
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway

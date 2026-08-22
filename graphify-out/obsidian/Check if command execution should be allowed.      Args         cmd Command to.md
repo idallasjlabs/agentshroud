@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Env Guard (security)"
 location: "L433"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Env_Guard_security
 ---
 
 # Check if command execution should be allowed.      Args:         cmd: Command to
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check_command()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Env_Guard_security

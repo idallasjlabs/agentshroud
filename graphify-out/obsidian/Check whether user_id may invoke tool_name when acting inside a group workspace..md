@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Tool ACL & Group RBAC"
 location: "L377"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Tool_ACL__Group_RBAC
 ---
 
 # Check whether user_id may invoke tool_name when acting inside a group workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.can_use_tool_in_group_context()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Tool_ACL__Group_RBAC

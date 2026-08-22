@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Gateway Test Suite"
+community: "Agentic Os (architecture)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Agentic_Os_architecture
 ---
 
 # CI/CD Quality Gates (14 jobs, 6 workflows)
@@ -17,4 +17,4 @@ tags:
 - [[GitHub Actions CI (test + lint + security-scan)]] - `conceptually_related_to` [EXTRACTED]
 - [[PrePost Tool Hook Enforcement Layer]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/Agentic_Os_architecture

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/history-purge-plan.md"
 type: "document"
-community: "docs/vault"
+community: "Security Verification (security)"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Verification_security
 ---
 
 # Claude (Codex on Marvin)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Post-Purge — Other Instances]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Security_Verification_security

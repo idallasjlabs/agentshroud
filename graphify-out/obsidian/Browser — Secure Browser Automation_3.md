@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "src/interfaces"
+community: "Skill (i-browser)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/src/interfaces
+  - community/Skill_i-browser
 ---
 
 # Browser — Secure Browser Automation
@@ -19,11 +19,11 @@ tags:
 - [[Example Apple ID Creation (Semi-Automated)_1]] - `contains` [EXTRACTED]
 - [[Limitations_1]] - `contains` [EXTRACTED]
 - [[Risk Levels_1]] - `contains` [EXTRACTED]
-- [[SKILL_72]] - `contains` [EXTRACTED]
+- [[SKILL_73]] - `contains` [EXTRACTED]
 - [[Security Architecture_2]] - `contains` [EXTRACTED]
 - [[Security Configuration_1]] - `contains` [EXTRACTED]
 - [[Security Guarantees_1]] - `contains` [EXTRACTED]
 - [[Troubleshooting_7]] - `contains` [EXTRACTED]
 - [[Usage_47]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/src/interfaces
+#graphify/document #graphify/EXTRACTED #community/Skill_i-browser

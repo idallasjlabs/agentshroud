@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: ".agents/skills/i-browser/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-browser)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-browser
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
+- [[10. Troubleshooting]] - `contains` [EXTRACTED]
 - [[Approval Integration]] - `contains` [EXTRACTED]
 - [[Audit Logging]] - `contains` [EXTRACTED]
 - [[Best Practices]] - `contains` [EXTRACTED]
@@ -20,10 +21,9 @@ tags:
 - [[Limitations]] - `contains` [EXTRACTED]
 - [[Risk Levels]] - `contains` [EXTRACTED]
 - [[SKILL_9]] - `contains` [EXTRACTED]
-- [[Security Architecture_1]] - `contains` [EXTRACTED]
+- [[Security Architecture]] - `contains` [EXTRACTED]
 - [[Security Configuration]] - `contains` [EXTRACTED]
 - [[Security Guarantees]] - `contains` [EXTRACTED]
-- [[Troubleshooting_3]] - `contains` [EXTRACTED]
-- [[Usage_7]] - `contains` [EXTRACTED]
+- [[Usage_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-browser

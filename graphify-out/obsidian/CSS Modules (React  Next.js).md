@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
+source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-ui)"
 location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-ui
 ---
 
 # CSS Modules (React / Next.js)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CSS Architecture Recommendations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ui

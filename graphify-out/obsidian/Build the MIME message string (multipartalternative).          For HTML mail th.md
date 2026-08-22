@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Gateway Email Service"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gateway_Email_Service
 ---
 
 # Build the MIME message string (multipart/alternative).          For HTML mail th
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.build_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Gateway_Email_Service

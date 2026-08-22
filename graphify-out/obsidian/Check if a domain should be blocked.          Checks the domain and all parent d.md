@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "rationale"
-community: "scripts/triage-cve-mitigations.py"
+community: "Dns Blocklist"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/triage-cve-mitigationspy
+  - community/Dns_Blocklist
 ---
 
 # Check if a domain should be blocked.          Checks the domain and all parent d
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/triage-cve-mitigationspy
+#graphify/rationale #graphify/EXTRACTED #community/Dns_Blocklist

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/updating.md"
 type: "document"
-community: "skills/openclaw"
+community: "Updating (operations)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Updating_operations
 ---
 
 # Check Current Version
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Update AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Updating_operations

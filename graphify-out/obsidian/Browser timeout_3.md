@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L328"
+community: "Readme (securebrowser)"
+location: "L305"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_securebrowser
 ---
 
 # "Browser timeout"
 
 ## Connections
-- [[Troubleshooting_33]] - `contains` [EXTRACTED]
+- [[Troubleshooting_36]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_securebrowser

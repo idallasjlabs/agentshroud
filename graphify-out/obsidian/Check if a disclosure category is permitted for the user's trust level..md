@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Outbound Filter"
 location: "L453"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Outbound_Filter
 ---
 
 # Check if a disclosure category is permitted for the user's trust level.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._is_allowed_for_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Outbound_Filter

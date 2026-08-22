@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "docs/vault"
+community: "Heuristic Classifier (security)"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Heuristic_Classifier_security
 ---
 
 # ClassificationResult
@@ -23,4 +23,4 @@ tags:
 - [[heuristic_classifier.py]] - `contains` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Heuristic_Classifier_security

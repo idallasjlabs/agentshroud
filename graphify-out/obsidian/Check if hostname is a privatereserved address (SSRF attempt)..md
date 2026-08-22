@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Url Analyzer"
 location: "L217"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Url_Analyzer
 ---
 
 # Check if hostname is a private/reserved address (SSRF attempt).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._is_ssrf()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Url_Analyzer

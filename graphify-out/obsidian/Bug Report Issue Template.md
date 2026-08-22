@@ -1,14 +1,13 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/bug_report.yml"
 type: "document"
-community: "Community 1705"
-location: "lines 1-84"
+community: "Bug Report (ISSUE_TEMPLATE)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1705
+  - community/Bug_Report_ISSUE_TEMPLATE
 ---
 
 # Bug Report Issue Template
 
-#graphify/document #graphify/EXTRACTED #community/Community_1705
+#graphify/document #graphify/EXTRACTED #community/Bug_Report_ISSUE_TEMPLATE

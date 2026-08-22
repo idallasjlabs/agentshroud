@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "Bot Container Scripts"
+community: "Security Toolchain"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Security_Toolchain
 ---
 
 # Categorize alerts by severity.      Args:         alerts: List of parsed alerts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[categorize_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/rationale #graphify/EXTRACTED #community/Security_Toolchain

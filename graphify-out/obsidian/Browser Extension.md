@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "docs/vault"
+community: "Readme (browser-extension)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Readme_browser-extension
 ---
 
 # Browser Extension
@@ -16,7 +16,7 @@ tags:
 - [[Features]] - `contains` [EXTRACTED]
 - [[Implementation Status]] - `contains` [EXTRACTED]
 - [[Privacy Features]] - `contains` [EXTRACTED]
-- [[README_2]] - `contains` [EXTRACTED]
+- [[README_39]] - `contains` [EXTRACTED]
 - [[Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Readme_browser-extension

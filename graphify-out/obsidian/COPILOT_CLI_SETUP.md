@@ -1,17 +1,18 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Postmortem (ISSUE_TEMPLATE)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Postmortem_ISSUE_TEMPLATE
 ---
 
 # COPILOT_CLI_SETUP.md
 
 ## Connections
 - [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[Stale Repository-Context Description in COPILOT_CLI_SETUP]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Postmortem_ISSUE_TEMPLATE

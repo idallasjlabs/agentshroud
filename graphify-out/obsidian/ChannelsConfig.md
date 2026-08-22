@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Config"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Config
 ---
 
 # ChannelsConfig
@@ -19,4 +19,4 @@ tags:
 - [[config.py]] - `contains` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Config

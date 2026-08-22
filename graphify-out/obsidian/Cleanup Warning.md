@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Volumes (06 - Containers & Services)"
 location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Volumes_06_-_Containers__Services
 ---
 
 # Cleanup Warning
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Docker Volumes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Volumes_06_-_Containers__Services

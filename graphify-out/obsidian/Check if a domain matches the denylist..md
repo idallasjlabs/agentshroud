@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L299"
+community: "Egress Filter"
+location: "L304"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress_Filter
 ---
 
 # Check if a domain matches the denylist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.is_denylisted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter

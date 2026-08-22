@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "docs/project"
+community: "Citation Verifier"
 location: "L123"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/project
+  - community/Citation_Verifier
 ---
 
 # CitationVerifier
 
 ## Connections
-- [[.__init__()_58]] - `method` [EXTRACTED]
+- [[.__init__()_61]] - `method` [EXTRACTED]
 - [[._verifier()]] - `calls` [EXTRACTED]
 - [[._verifier()_1]] - `calls` [EXTRACTED]
 - [[._verify_url()]] - `method` [EXTRACTED]
@@ -56,4 +56,4 @@ tags:
 - [[test_default_allowlist_uses_permanent_egress_domains()]] - `calls` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/docs/project
+#graphify/code #graphify/INFERRED #community/Citation_Verifier

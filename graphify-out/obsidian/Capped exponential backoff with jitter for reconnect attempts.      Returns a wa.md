@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_socket_client.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Slack Socket Client"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Slack_Socket_Client
 ---
 
 # Capped exponential backoff with jitter for reconnect attempts.      Returns a wa
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[compute_backoff()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Slack_Socket_Client

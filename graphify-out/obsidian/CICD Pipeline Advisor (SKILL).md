@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Setup Docs"
+community: "Skill (i-data)"
 tags:
   - graphify/document
-  - graphify/EXTRACTED
-  - community/Setup_Docs
+  - graphify/INFERRED
+  - community/Skill_i-data
 ---
 
 # CI/CD Pipeline Advisor (SKILL)
@@ -15,7 +15,9 @@ tags:
 - [[CI Skill (Continuous Integration pipeline)]] - `conceptually_related_to` [INFERRED]
 - [[CICD Pipeline Advisor (README)]] - `references` [INFERRED]
 - [[CICD Quality Gates (execution order)]] - `references` [EXTRACTED]
+- [[Code Review (CR) (SKILL)]] - `conceptually_related_to` [INFERRED]
+- [[Data Validation (DATA-VAL) Skill]] - `semantically_similar_to` [INFERRED]
 - [[Deployment Matrix (Direct to Prod)]] - `references` [EXTRACTED]
 - [[GSDE&G Team (Global Services Digital Enablement & Governance)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/INFERRED #community/Skill_i-data

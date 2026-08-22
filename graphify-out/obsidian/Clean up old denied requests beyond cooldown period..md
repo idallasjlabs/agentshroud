@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "rationale"
-community: "Kill Switch Config"
+community: "Approval Hardening (security)"
 location: "L394"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Kill_Switch_Config
+  - community/Approval_Hardening_security
 ---
 
 # Clean up old denied requests beyond cooldown period.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._cleanup_old_denied_requests()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Kill_Switch_Config
+#graphify/rationale #graphify/EXTRACTED #community/Approval_Hardening_security

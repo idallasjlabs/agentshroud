@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "docs/diagrams"
+community: "Hermes Setup (setup)"
 location: "L155"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Hermes_Setup_setup
 ---
 
 # Chatbox
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Frontend Client Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/diagrams
+#graphify/document #graphify/EXTRACTED #community/Hermes_Setup_setup

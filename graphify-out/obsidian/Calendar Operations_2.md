@@ -1,12 +1,12 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "ESP32 Firmware"
+community: "Skill (i-icloud)"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Skill_i-icloud
 ---
 
 # Calendar Operations
@@ -16,6 +16,6 @@ tags:
 - [[Delete Event_2]] - `contains` [EXTRACTED]
 - [[List Events_2]] - `contains` [EXTRACTED]
 - [[Update Event_2]] - `contains` [EXTRACTED]
-- [[iCloud Services_3]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud

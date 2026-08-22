@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
+source_file: ".agents/skills/i-atlas/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-atlas)"
 location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-atlas
 ---
 
 # CPA Curriculum Frontmatter Addition
 
 ## Connections
 - [[OKE Channel — CPA Exam Context]] - `contains` [EXTRACTED]
-- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-atlas

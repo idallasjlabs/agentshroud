@@ -1,17 +1,17 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Tool Chain & CVE Triage"
 location: "L1125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # CLI entry point.      Args:         argv: Optional argv override (for tests).
 
 ## Connections
-- [[main()_21]] - `rationale_for` [EXTRACTED]
+- [[main()_24]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

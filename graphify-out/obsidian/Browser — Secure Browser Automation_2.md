@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/README.md"
+source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "docs/redteam"
+community: "Readme (i-browser)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/redteam
+  - community/Readme_i-browser
 ---
 
 # Browser — Secure Browser Automation
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_44]] - `contains` [EXTRACTED]
 - [[Usage_46]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/redteam
+#graphify/document #graphify/EXTRACTED #community/Readme_i-browser

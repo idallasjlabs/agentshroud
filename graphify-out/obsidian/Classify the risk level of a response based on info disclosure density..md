@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Outbound Filter"
 location: "L462"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Outbound_Filter
 ---
 
 # Classify the risk level of a response based on info disclosure density.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._classify_response_risk()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Outbound_Filter

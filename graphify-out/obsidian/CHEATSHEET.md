@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: "CHEATSHEET.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L80"
+community: "Cheatsheet"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Cheatsheet
 ---
 
-# cheatsheet.md
+# CHEATSHEET.md
 
 ## Connections
-- [[description of what this does]] - `contains` [EXTRACTED]
+- [[AgentShroud Operations Cheat Sheet]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Cheatsheet

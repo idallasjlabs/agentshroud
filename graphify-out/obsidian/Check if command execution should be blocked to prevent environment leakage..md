@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Env Guard (security)"
 location: "L144"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Env_Guard_security
 ---
 
 # Check if command execution should be blocked to prevent environment leakage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_command_execution()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Env_Guard_security

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ab/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (i-ab)"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-ab
 ---
 
 # Check A — Substantive change on the losing side?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 — Triage each finding_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ab

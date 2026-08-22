@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "rationale"
-community: "SOC RBAC & Auth"
+community: "Canary Tripwire"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/Canary_Tripwire
 ---
 
 # Bridge result returned by scan_response() for pipeline compatibility.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TripwireResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/rationale #graphify/EXTRACTED #community/Canary_Tripwire

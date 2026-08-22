@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "rationale"
-community: "Community 1513"
+community: "Router (soc)"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1513
+  - community/Router_soc
 ---
 
 # Builds ContributorRecord instances from RBACConfig + TeamsConfig.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContributorManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1513
+#graphify/rationale #graphify/EXTRACTED #community/Router_soc

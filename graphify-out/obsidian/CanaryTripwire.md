@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "Security Audit & Watchtower Tests"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # CanaryTripwire
 
 ## Connections
-- [[.__init__()_57]] - `method` [EXTRACTED]
+- [[.__init__()_60]] - `method` [EXTRACTED]
 - [[._check_encoded()]] - `method` [EXTRACTED]
 - [[._check_plain()]] - `method` [EXTRACTED]
 - [[._normalize()]] - `method` [EXTRACTED]
@@ -47,4 +47,4 @@ tags:
 - [[test_canary_tripwire.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests
