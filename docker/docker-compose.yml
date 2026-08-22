@@ -578,6 +578,18 @@ services:
       # nested terminal.* keys. DOCKER_HOST below is real env-var config (the
       # docker CLI itself does respect it) — only the terminal.docker_* keys
       # needed to move to config.yaml.
+      #
+      # NOTE: this whole `hermes:` service block is not actually used to
+      # deploy Hermes — see docker/bots/hermes/run-standalone.sh's header
+      # comment for why (a restart-storm only reproducible under `docker
+      # compose up`). run-standalone.sh points DOCKER_HOST at a TCP relay
+      # (127.0.0.1:12375, docker_proxy_relay.py) instead of the proxy
+      # directly, because the docker CLI's second request on a kept-alive
+      # connection to docker-socket-proxy reproducibly gets a spurious 405
+      # (2026-08-22). Kept pointing at the proxy directly here only because
+      # this block is dead code; if Hermes is ever deployed via compose
+      # again, apply the same relay fix first or its sandboxed terminal tool
+      # will silently stop working exactly like it did before that fix.
       DOCKER_HOST: tcp://docker-socket-proxy:2375
       # API_SERVER_KEY is intentionally NOT set here. It is injected by
       # docker/bots/hermes/agentshroud-secrets.sh via s6 with-contenv from
