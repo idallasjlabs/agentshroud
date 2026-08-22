@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Planning Docs"
+community: "Jira Weekly Review (workspace)"
 location: "L185"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Jira_Weekly_Review_workspace
 ---
 
 # extract_scrum_items()
@@ -16,4 +16,4 @@ tags:
 - [[jira_weekly_review.py]] - `contains` [EXTRACTED]
 - [[run()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Jira_Weekly_Review_workspace

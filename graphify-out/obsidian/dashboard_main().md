@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "scripts/migrate-cve-registry-ghsa.py"
+community: "Management (web)"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/migrate-cve-registry-ghsapy
+  - community/Management_web
 ---
 
 # dashboard_main()
@@ -16,4 +16,4 @@ tags:
 - [[Serve the main dashboard page.]] - `rationale_for` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/migrate-cve-registry-ghsapy
+#graphify/code #graphify/EXTRACTED #community/Management_web

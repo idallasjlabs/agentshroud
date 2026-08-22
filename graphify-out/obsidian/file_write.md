@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/AGENTS.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Agents (openclaw)"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Agents_openclaw
 ---
 
 # file_write
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Approved Tools and Their Arguments]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Agents_openclaw

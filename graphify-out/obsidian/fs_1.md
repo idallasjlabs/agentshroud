@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/apply-patches.js"
+source_file: "docker/config/hermes/skills/i-browser/browse.js"
 type: "code"
-community: "Gateway Test Suite"
-location: "L9"
+community: "Browse (i-browser)"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Browse_i-browser
 ---
 
 # fs
 
 ## Connections
-- [[apply-patches.js]] - `contains` [EXTRACTED]
+- [[browse.js_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Browse_i-browser

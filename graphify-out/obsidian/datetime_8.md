@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Export Telegram History (scripts)"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Export_Telegram_History_scripts
 ---
 
 # datetime
@@ -16,4 +16,4 @@ tags:
 - [[export()]] - `references` [EXTRACTED]
 - [[export-telegram-history.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Export_Telegram_History_scripts

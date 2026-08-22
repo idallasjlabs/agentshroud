@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/playback_logic.h"
 type: "code"
-community: "Gateway Test Suite"
+community: "Playback State (test_playback_state)"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Playback_State_test_playback_state
 ---
 
 # delivery_resume_offset()
@@ -18,4 +18,4 @@ tags:
 - [[test_resume_offset_first_attempt_is_zero()]] - `calls` [INFERRED]
 - [[test_resume_offset_rewinds_8kb()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Playback_State_test_playback_state

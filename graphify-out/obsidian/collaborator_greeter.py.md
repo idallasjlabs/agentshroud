@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "Planning Docs"
+community: "Collaborator Greeter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Collaborator_Greeter
 ---
 
 # collaborator_greeter.py
@@ -15,4 +15,4 @@ tags:
 - [[CollaboratorGreeter]] - `contains` [EXTRACTED]
 - [[main.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Greeter

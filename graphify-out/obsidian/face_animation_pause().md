@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Wakeword (main)"
 location: "L146"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Wakeword_main
 ---
 
 # face_animation_pause()
@@ -17,4 +17,4 @@ tags:
 - [[_touch_start_only()]] - `calls` [INFERRED]
 - [[lvgl_kawaii_face.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Wakeword_main

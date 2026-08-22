@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Delegation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Delegation
 ---
 
 # delegation.py
@@ -17,5 +17,6 @@ tags:
 - [[DelegationManager]] - `contains` [EXTRACTED]
 - [[DelegationPrivilege]] - `contains` [EXTRACTED]
 - [[Enum]] - `imports_from` [EXTRACTED]
+- [[FR2 Use Control]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Delegation

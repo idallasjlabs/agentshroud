@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Hermes Dashboard Bridge"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Hermes_Dashboard_Bridge
 ---
 
 # dashboard_bridge.py (Hermes)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_hermes_dashboard_bridge.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Hermes_Dashboard_Bridge

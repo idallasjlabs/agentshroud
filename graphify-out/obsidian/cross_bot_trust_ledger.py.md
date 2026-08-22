@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Cross Bot Trust Ledger"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Cross_Bot_Trust_Ledger
 ---
 
 # cross_bot_trust_ledger.py
@@ -19,4 +19,4 @@ tags:
 - [[TrustDecayPolicy]] - `contains` [EXTRACTED]
 - [[TrustManager_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/code #graphify/EXTRACTED #community/Cross_Bot_Trust_Ledger

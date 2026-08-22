@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Lvgl Kawaii Face (lvgl_kawaii_face)"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Lvgl_Kawaii_Face_lvgl_kawaii_face
 ---
 
 # face_lock()
@@ -20,4 +20,4 @@ tags:
 - [[face_set_position()]] - `calls` [EXTRACTED]
 - [[lvgl_kawaii_face.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Lvgl_Kawaii_Face_lvgl_kawaii_face

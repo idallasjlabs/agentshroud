@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "Bot Skill Config"
+community: "Container Net Diag (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Container_Net_Diag_scripts
 ---
 
 # container-net-diag.sh script
@@ -22,4 +22,4 @@ tags:
 - [[tcp_test()]] - `calls` [EXTRACTED]
 - [[warn()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Container_Net_Diag_scripts

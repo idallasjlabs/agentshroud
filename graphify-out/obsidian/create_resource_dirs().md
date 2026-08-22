@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Init Skill (scripts)"
 location: "L227"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Init_Skill_scripts
 ---
 
 # create_resource_dirs()
@@ -15,4 +15,4 @@ tags:
 - [[init_skill()]] - `calls` [EXTRACTED]
 - [[init_skill.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Init_Skill_scripts

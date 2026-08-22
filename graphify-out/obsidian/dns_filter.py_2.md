@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Dns Filter.py (Security Modules)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Dns_Filterpy_Security_Modules
 ---
 
 # dns_filter.py
@@ -19,10 +19,10 @@ tags:
 - [[Function Details_32]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_35]] - `contains` [EXTRACTED]
 - [[Mode Enforce vs Monitor_4]] - `contains` [EXTRACTED]
-- [[Purpose_116]] - `contains` [EXTRACTED]
+- [[Purpose_153]] - `contains` [EXTRACTED]
 - [[Related_39]] - `contains` [EXTRACTED]
 - [[Responsibilities_37]] - `contains` [EXTRACTED]
 - [[Threat Model_8]] - `contains` [EXTRACTED]
 - [[dns_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Dns_Filterpy_Security_Modules

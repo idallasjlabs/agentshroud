@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Slack API Proxy"
+community: "Forward Routing"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Slack_API_Proxy
+  - community/Forward_Routing
 ---
 
 # forward-routing agent_id propagation into security pipeline
@@ -14,4 +14,4 @@ tags:
 - [[TrustManager_1]] - `calls` [INFERRED]
 - [[test_forward_routing.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Slack_API_Proxy
+#graphify/code #graphify/INFERRED #community/Forward_Routing

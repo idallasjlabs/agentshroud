@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Ws Client (main)"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Ws_Client_main
 ---
 
 # esp_err_t
@@ -20,4 +20,4 @@ tags:
 - [[ws_client_send_pcm()]] - `references` [EXTRACTED]
 - [[ws_client_send_stop()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Ws_Client_main

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Skill (i-apollo)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-apollo
 ---
 
 # eleven_v3 model
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ElevenLabs Text-to-Dialogue API]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Skill_i-apollo

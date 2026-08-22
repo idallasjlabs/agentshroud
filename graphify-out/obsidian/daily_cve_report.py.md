@@ -1,17 +1,20 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Daily Cve Report (security)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Daily_Cve_Report_security
 ---
 
 # daily_cve_report.py
 
 ## Connections
+- [[AgentShroud Docker Compose (Production)]] - `shares_data_with` [EXTRACTED]
+- [[OpenAPI soc endpoint group]] - `references` [EXTRACTED]
+- [[Security Scan Workflow]] - `semantically_similar_to` [INFERRED]
 - [[_already_checked_upstream_today()]] - `contains` [EXTRACTED]
 - [[_already_ingested_ghsa_today()]] - `contains` [EXTRACTED]
 - [[_already_sent_today()]] - `contains` [EXTRACTED]
@@ -20,6 +23,7 @@ tags:
 - [[check_upstream_cves()]] - `contains` [EXTRACTED]
 - [[cron_state_monitor.py]] - `semantically_similar_to` [INFERRED]
 - [[cve_report_scheduler()]] - `contains` [EXTRACTED]
+- [[datetime_9]] - `imports_from` [EXTRACTED]
 - [[datetime_2]] - `imports_from` [EXTRACTED]
 - [[format_cve_report()]] - `contains` [EXTRACTED]
 - [[format_upstream_cve_alert()]] - `contains` [EXTRACTED]
@@ -27,6 +31,7 @@ tags:
 - [[get_agent_cve_source()]] - `imports` [EXTRACTED]
 - [[get_agent_ghsa_repo()]] - `imports` [EXTRACTED]
 - [[ghsa_ingest_scheduler()]] - `contains` [EXTRACTED]
+- [[health_report.py]] - `semantically_similar_to` [INFERRED]
 - [[list_cve_agents()]] - `imports` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `contains` [EXTRACTED]
@@ -34,8 +39,9 @@ tags:
 - [[run_upstream_cve_check()]] - `contains` [EXTRACTED]
 - [[run_upstream_cve_check_all_agents()]] - `contains` [EXTRACTED]
 - [[save_report()_1]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py]] - `shares_data_with` [INFERRED]
 - [[test_daily_cve_report.py]] - `imports_from` [EXTRACTED]
 - [[trivy_report.py]] - `imports_from` [EXTRACTED]
 - [[upstream_cve_check_scheduler()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report_security

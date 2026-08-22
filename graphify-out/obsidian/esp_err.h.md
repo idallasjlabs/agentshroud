@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/esp_err.h"
 type: "code"
-community: "Gateway Test Suite"
+community: "Esp Err (stubs)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Esp_Err_stubs
 ---
 
 # esp_err.h
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Esp_Err_stubs

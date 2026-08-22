@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Collaborator Tracker"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Collaborator_Tracker
 ---
 
 # collaborator_tracker.py
@@ -15,4 +15,4 @@ tags:
 - [[CollaboratorActivityTracker]] - `contains` [EXTRACTED]
 - [[_is_fixture_uid()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Tracker

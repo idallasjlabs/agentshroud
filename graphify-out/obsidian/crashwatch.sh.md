@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/crashwatch.sh"
 type: "code"
-community: "browser-extension/README.md"
+community: "Start (hermes)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/READMEmd
+  - community/Start_hermes
 ---
 
 # crashwatch.sh
@@ -18,5 +18,6 @@ tags:
 - [[_telegram_alert()]] - `defines` [EXTRACTED]
 - [[_write_last_alert_epoch()]] - `defines` [EXTRACTED]
 - [[crashwatch.sh script]] - `contains` [EXTRACTED]
+- [[start.sh]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Start_hermes

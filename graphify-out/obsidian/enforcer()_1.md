@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Output Schema"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Output_Schema
 ---
 
 # enforcer()
@@ -15,4 +15,4 @@ tags:
 - [[OutputSchemaEnforcer]] - `calls` [EXTRACTED]
 - [[test_output_schema.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Output_Schema

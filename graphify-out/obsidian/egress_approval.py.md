@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Egress Approval (security)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Egress_Approval_security
 ---
 
 # egress_approval.py
@@ -19,8 +19,9 @@ tags:
 - [[EgressRule]] - `contains` [EXTRACTED]
 - [[EgressScope]] - `contains` [EXTRACTED]
 - [[Enum]] - `imports_from` [EXTRACTED]
-- [[RiskLevel_2]] - `contains` [EXTRACTED]
+- [[FR5 Restricted Data Flow]] - `references` [EXTRACTED]
+- [[RiskLevel_3]] - `contains` [EXTRACTED]
 - [[egress_config.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Egress_Approval_security

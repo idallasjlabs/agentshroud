@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/emergency-rollback.sh"
 type: "code"
-community: "Gateway Test Suite"
+community: "Emergency Rollback (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Emergency_Rollback_scripts
 ---
 
 # emergency-rollback.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[emergency-rollback.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Emergency_Rollback_scripts

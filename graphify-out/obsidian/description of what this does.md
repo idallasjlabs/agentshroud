@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-athena)"
 location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-athena
 ---
 
 # <description of what this does>
@@ -18,4 +18,4 @@ tags:
 - [[User Prompt Template]] - `contains` [EXTRACTED]
 - [[cheatsheet]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-athena

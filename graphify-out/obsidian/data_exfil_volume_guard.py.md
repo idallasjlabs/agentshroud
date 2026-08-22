@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Data Exfil Volume Guard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Data_Exfil_Volume_Guard
 ---
 
 # data_exfil_volume_guard.py
@@ -18,4 +18,4 @@ tags:
 - [[_SessionState]] - `contains` [EXTRACTED]
 - [[egress_filter.py]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Data_Exfil_Volume_Guard

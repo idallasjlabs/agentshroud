@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/background.js"
 type: "code"
-community: "browser-extension/background.js"
+community: "Background (browser-extension)"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/backgroundjs
+  - community/Background_browser-extension
 ---
 
 # forwardUrl()
@@ -17,4 +17,4 @@ tags:
 - [[notify()]] - `calls` [EXTRACTED]
 - [[reportResult()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/backgroundjs
+#graphify/code #graphify/EXTRACTED #community/Background_browser-extension

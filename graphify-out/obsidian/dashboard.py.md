@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Dashboard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Dashboard
 ---
 
 # dashboard.py
@@ -33,5 +33,7 @@ tags:
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[serve_dashboard()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
+- [[test_dashboard.py]] - `calls` [EXTRACTED]
+- [[test_e2e.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Dashboard

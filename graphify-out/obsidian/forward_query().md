@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "chatbot/test_main.py"
+community: "Dns Canvas Coverage"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/test_mainpy
+  - community/Dns_Canvas_Coverage
 ---
 
 # forward_query()
@@ -20,4 +20,4 @@ tags:
 - [[dns_forwarder.py]] - `contains` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/test_mainpy
+#graphify/code #graphify/EXTRACTED #community/Dns_Canvas_Coverage

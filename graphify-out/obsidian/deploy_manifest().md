@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Skills Manifest Sync"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skills_Manifest_Sync
 ---
 
 # deploy_manifest()
@@ -38,4 +38,4 @@ tags:
 - [[plan_deploy()]] - `calls` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Skills_Manifest_Sync

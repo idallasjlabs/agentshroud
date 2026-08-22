@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Planning Docs"
-location: "L494"
+community: "Daily Cve Report"
+location: "L543"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Daily_Cve_Report
 ---
 
 # format_upstream_cve_alert()
@@ -28,4 +28,4 @@ tags:
 - [[run_upstream_cve_check()]] - `calls` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Dns Filter"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Dns_Filter
 ---
 
 # dns_filter()
@@ -15,4 +15,4 @@ tags:
 - [[DNSFilter]] - `calls` [EXTRACTED]
 - [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Dns_Filter

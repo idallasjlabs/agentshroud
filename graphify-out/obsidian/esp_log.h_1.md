@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/esp_log.h"
 type: "code"
-community: "Community 1702"
+community: "Esp Log (stubs)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1702
+  - community/Esp_Log_stubs
 ---
 
 # esp_log.h
 
-#graphify/code #graphify/EXTRACTED #community/Community_1702
+#graphify/code #graphify/EXTRACTED #community/Esp_Log_stubs

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "docs/ssh-capability.md"
+community: "Router.py (Gateway Core)"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/ssh-capabilitymd
+  - community/Routerpy_Gateway_Core
 ---
 
 # forward_to_agent(target, sanitized_content, ledger_id, metadata)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/ssh-capabilitymd
+#graphify/document #graphify/EXTRACTED #community/Routerpy_Gateway_Core

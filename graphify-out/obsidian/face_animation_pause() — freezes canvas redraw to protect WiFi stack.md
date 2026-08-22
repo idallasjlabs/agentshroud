@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Wakeword (main)"
 location: "line 146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Wakeword_main
 ---
 
 # face_animation_pause() — freezes canvas redraw to protect WiFi stack
@@ -15,4 +15,4 @@ tags:
 - [[_apply_state_cb()]] - `calls` [EXTRACTED]
 - [[_touch_pressed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Wakeword_main

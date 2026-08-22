@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "Planning Docs"
+community: "Dashboard Endpoints (web)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Dashboard_Endpoints_web
 ---
 
 # dashboard_endpoints.py
@@ -15,6 +15,7 @@ tags:
 - [[Alert]] - `contains` [EXTRACTED]
 - [[AlertStore]] - `contains` [EXTRACTED]
 - [[BufferHandler]] - `contains` [EXTRACTED]
+- [[Live Dashboard Module Badge Icon]] - `conceptually_related_to` [AMBIGUOUS]
 - [[LogBuffer]] - `contains` [EXTRACTED]
 - [[_check_host()]] - `contains` [EXTRACTED]
 - [[_tcp_check()]] - `contains` [EXTRACTED]
@@ -28,4 +29,4 @@ tags:
 - [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[ssh_hosts()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Dashboard_Endpoints_web

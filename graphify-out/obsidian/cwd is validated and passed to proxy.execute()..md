@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "scripts/sync-cve-registry.py"
+community: "Ssh Proxy"
 location: "L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Ssh_Proxy
 ---
 
 # cwd is validated and passed to proxy.execute().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_ssh_exec_cwd_accepted_and_forwarded()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Ssh_Proxy

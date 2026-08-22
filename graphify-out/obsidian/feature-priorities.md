@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/feature-priorities.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Feature Priorities (redteam)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Feature_Priorities_redteam
 ---
 
 # feature-priorities.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[feature-priorities_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Feature_Priorities_redteam

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Rate Limit Guard"
 location: "L288"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Rate_Limit_Guard
 ---
 
 # config-off equivalence: absent guard leaves inbound behaviour identical.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_no_guard_is_unchanged()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Rate_Limit_Guard

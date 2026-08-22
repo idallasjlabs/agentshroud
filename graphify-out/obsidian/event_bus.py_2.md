@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Event Bus.py (Gateway Core)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Event_Buspy_Gateway_Core
 ---
 
 # event_bus.py
@@ -19,9 +19,9 @@ tags:
 - [[Imports From  Exports To_1]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_1]] - `contains` [EXTRACTED]
 - [[Known Issues  Notes_1]] - `contains` [EXTRACTED]
-- [[Purpose_75]] - `contains` [EXTRACTED]
+- [[Purpose_112]] - `contains` [EXTRACTED]
 - [[Related_2]] - `contains` [EXTRACTED]
 - [[Responsibilities_1]] - `contains` [EXTRACTED]
 - [[event_bus.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Event_Buspy_Gateway_Core

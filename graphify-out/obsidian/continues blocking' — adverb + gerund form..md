@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Custom Skills"
+community: "Outbound Filter"
 location: "L541"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Outbound_Filter
 ---
 
 # continues blocking' — adverb + gerund form.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_continues_blocking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Custom_Skills
+#graphify/rationale #graphify/EXTRACTED #community/Outbound_Filter

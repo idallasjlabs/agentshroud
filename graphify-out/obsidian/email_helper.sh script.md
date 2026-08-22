@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/email_helper.sh"
 type: "code"
-community: "Bot Skill Config"
+community: "Container Runtime (smoke.d)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Container_Runtime_smoked
 ---
 
 # email_helper.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[email_helper.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Container_Runtime_smoked

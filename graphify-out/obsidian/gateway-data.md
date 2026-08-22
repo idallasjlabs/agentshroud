@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Volumes (06 - Containers & Services)"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Volumes_06_-_Containers__Services
 ---
 
 # gateway-data
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Volume Details]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Volumes_06_-_Containers__Services

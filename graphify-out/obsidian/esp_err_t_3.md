@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Ota (main)"
 location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Ota_main
 ---
 
 # esp_err_t
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wakeword_init()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Ota_main

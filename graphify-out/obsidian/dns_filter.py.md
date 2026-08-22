@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Dns Filter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Dns_Filter
 ---
 
 # dns_filter.py
@@ -18,6 +18,8 @@ tags:
 - [[DNSVerdict]] - `contains` [EXTRACTED]
 - [[EntropyCalculator]] - `contains` [EXTRACTED]
 - [[TunnelingPattern]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py]] - `references` [EXTRACTED]
+- [[egress_filter.py]] - `references` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Dns_Filter

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/devices.sh"
 type: "code"
-community: "Gateway Test Suite"
+community: "Devices (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Devices_scripts
 ---
 
 # devices.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[devices.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Devices_scripts

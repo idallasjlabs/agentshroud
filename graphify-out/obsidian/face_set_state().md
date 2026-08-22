@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Playback State (test_playback_state)"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Playback_State_test_playback_state
 ---
 
 # face_set_state()
@@ -16,4 +16,4 @@ tags:
 - [[playback_step()]] - `calls` [EXTRACTED]
 - [[test_playback_state.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Playback_State_test_playback_state

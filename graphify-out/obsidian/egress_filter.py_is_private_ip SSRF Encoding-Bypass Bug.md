@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Attack Teardowns Rovoblast Cross (papers)"
 location: "lines 459-480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Attack_Teardowns_Rovoblast_Cross_papers
 ---
 
 # egress_filter.py::_is_private_ip SSRF Encoding-Bypass Bug
@@ -15,4 +15,4 @@ tags:
 - [[EgressFilter.check()]] - `shares_data_with` [INFERRED]
 - [[a2a_policy.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Attack_Teardowns_Rovoblast_Cross_papers
