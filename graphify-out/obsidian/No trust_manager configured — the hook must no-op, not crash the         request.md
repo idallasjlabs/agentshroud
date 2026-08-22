@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Pipeline Unit"
 location: "L938"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Pipeline_Unit
 ---
 
 # No trust_manager configured — the hook must no-op, not crash the         request
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_missing_trust_manager_does_not_raise()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Unit

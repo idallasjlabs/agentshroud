@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "PromptGuard Encoding Detection"
+community: "Mcp Proxy"
 location: "L225"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard_Encoding_Detection
+  - community/Mcp_Proxy
 ---
 
 # Main MCP proxy that intercepts tool calls and routes through security.      Tran
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPProxy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection
+#graphify/rationale #graphify/EXTRACTED #community/Mcp_Proxy

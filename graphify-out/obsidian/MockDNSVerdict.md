@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Web Proxy Security"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Web_Proxy_Security
 ---
 
 # MockDNSVerdict
 
 ## Connections
-- [[.__init__()_187]] - `method` [EXTRACTED]
+- [[.__init__()_192]] - `method` [EXTRACTED]
 - [[.test_browser_security_blocks_high_risk_urls()]] - `calls` [EXTRACTED]
 - [[.test_browser_security_flags_medium_risk_urls()]] - `calls` [EXTRACTED]
 - [[.test_browser_security_skips_non_browser_user_agents()]] - `calls` [EXTRACTED]
@@ -22,9 +22,10 @@ tags:
 - [[.test_multiple_security_modules_integration()]] - `calls` [EXTRACTED]
 - [[.test_oauth_security_error_handling()]] - `calls` [EXTRACTED]
 - [[.test_oauth_security_flags_auth_headers()]] - `calls` [EXTRACTED]
+- [[DNSVerdict]] - `shares_data_with` [AMBIGUOUS]
 - [[ProxyAction]] - `uses` [INFERRED]
 - [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyResult]] - `uses` [INFERRED]
 - [[test_web_proxy_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Web_Proxy_Security

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "Security Docs"
+community: "Killswitch Monitor & Observatory Mode"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Killswitch_Monitor__Observatory_Mode
 ---
 
 # Monitor and verify kill switch functionality.      Provides automated verificati
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[KillSwitchMonitor]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Telegram Proxy Outbound"
 location: "L492"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Proxy_Outbound
 ---
 
 # NO_REPLY wrapped in markdown fence should still normalize.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_plain_no_reply_token_in_markdown_fence_is_rewritten()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Outbound

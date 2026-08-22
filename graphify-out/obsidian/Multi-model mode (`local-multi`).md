@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/LOCAL_LLM_REVIEW.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Local Llm Review (v1.2)"
 location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Local_Llm_Review_v12
 ---
 
 # Multi-model mode (`local-multi`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. Three Local Backends]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Local_Llm_Review_v12

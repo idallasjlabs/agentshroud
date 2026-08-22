@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Telegram Gmail Setup (setup)"
 location: "L309"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Gmail_Setup_setup
 ---
 
 # Monthly Checklist
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Part 7 Maintaining Functionality]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Telegram_Gmail_Setup_setup

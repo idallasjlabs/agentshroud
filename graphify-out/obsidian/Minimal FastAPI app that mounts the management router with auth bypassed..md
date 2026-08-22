@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "Security Docs"
+community: "Killswitch Monitor & Observatory Mode"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Killswitch_Monitor__Observatory_Mode
 ---
 
 # Minimal FastAPI app that mounts the management router with auth bypassed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_app()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode

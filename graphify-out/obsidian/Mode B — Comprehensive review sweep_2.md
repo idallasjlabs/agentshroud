@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
+source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-hdev)"
 location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-hdev
 ---
 
 # Mode B — Comprehensive review sweep
@@ -17,4 +17,4 @@ tags:
 - [[Step 2 — Work through directories one at a time_2]] - `contains` [EXTRACTED]
 - [[Step 3 — After the last directory (or a natural stopping point)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-hdev

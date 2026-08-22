@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "Enforce-Mode Auto-Revert"
+community: "Mfa Guard"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enforce-Mode_Auto-Revert
+  - community/Mfa_Guard
 ---
 
 # MFAResult
@@ -19,4 +19,4 @@ tags:
 - [[mfa_guard.py]] - `contains` [EXTRACTED]
 - [[test_mfa_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert
+#graphify/code #graphify/EXTRACTED #community/Mfa_Guard

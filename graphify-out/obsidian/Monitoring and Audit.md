@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Access Control Matrix (security)"
 location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Access_Control_Matrix_security
 ---
 
 # Monitoring and Audit
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Permission Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Access_Control_Matrix_security

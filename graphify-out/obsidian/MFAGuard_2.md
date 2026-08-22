@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "Enforce-Mode Auto-Revert"
+community: "Mfa Guard"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enforce-Mode_Auto-Revert
+  - community/Mfa_Guard
 ---
 
 # MFAGuard
 
 ## Connections
-- [[.__init__()_95]] - `method` [EXTRACTED]
+- [[.__init__()_98]] - `method` [EXTRACTED]
 - [[._decode_secret()]] - `method` [EXTRACTED]
 - [[._prune_used()]] - `method` [EXTRACTED]
 - [[._totp_for_counter()]] - `method` [EXTRACTED]
@@ -25,7 +25,6 @@ tags:
 - [[ApprovalQueueItem]] - `uses` [INFERRED]
 - [[ApprovalRequest]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
-- [[Daily CVE Triage & Remediation Scan (OpenClaw cron job)]] - `conceptually_related_to` [AMBIGUOUS]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
 - [[MFA for High-Risk Approvals — IEC 62443 FR1 (SCRUM-93)]] - `references` [EXTRACTED]
@@ -62,4 +61,4 @@ tags:
 - [[test_valid_totp_prev_window_allowed()]] - `calls` [EXTRACTED]
 - [[test_wrong_length_code_denies()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert
+#graphify/code #graphify/EXTRACTED #community/Mfa_Guard

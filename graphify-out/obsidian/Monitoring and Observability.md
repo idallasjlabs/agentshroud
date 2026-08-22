@@ -1,19 +1,19 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "System Architecture (architecture)"
 location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/System_Architecture_architecture
 ---
 
 # Monitoring and Observability
 
 ## Connections
-- [[Distributed OpenClaw Node Architecture (Raspberry Pi 4)]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
 - [[Metrics to Track]] - `contains` [EXTRACTED]
 - [[Technology Stack_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/System_Architecture_architecture

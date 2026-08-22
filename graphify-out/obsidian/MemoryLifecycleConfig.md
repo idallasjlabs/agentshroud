@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "Progressive Trust Config"
+community: "Memory Lifecycle & Integrity"
 location: "L48"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Progressive_Trust_Config
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # MemoryLifecycleConfig
 
 ## Connections
 - [[.setup_method()_10]] - `calls` [EXTRACTED]
-- [[Any_48]] - `uses` [INFERRED]
+- [[Any_49]] - `uses` [INFERRED]
 - [[Configuration for memory lifecycle management.]] - `rationale_for` [EXTRACTED]
 - [[ContentThreat]] - `uses` [INFERRED]
 - [[ContentThreatType]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[memory_lifecycle.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Progressive_Trust_Config
+#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Integrity

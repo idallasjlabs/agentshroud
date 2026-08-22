@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "scripts/preflight-check.sh"
+community: "Device Pairing (setup)"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/preflight-checksh
+  - community/Device_Pairing_setup
 ---
 
 # Method 3: Check Container Logs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Finding Pending Pairing Requests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/preflight-checksh
+#graphify/document #graphify/EXTRACTED #community/Device_Pairing_setup

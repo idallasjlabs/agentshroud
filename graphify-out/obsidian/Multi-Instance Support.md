@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "scripts/generate_branding_assets.py"
+community: "Deployment Diagram (architecture)"
 location: "L306"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/generate_branding_assetspy
+  - community/Deployment_Diagram_architecture
 ---
 
 # Multi-Instance Support
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Port Mappings and Auto-Detection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/generate_branding_assetspy
+#graphify/document #graphify/EXTRACTED #community/Deployment_Diagram_architecture

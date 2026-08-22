@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "Forward Routing"
 location: "L433"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Forward_Routing
 ---
 
 # Minimal app_state for owner-trust tests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_trust_app_state()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Routing

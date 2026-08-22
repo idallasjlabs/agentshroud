@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/hooks.md"
 type: "concept"
-community: "Gateway Test Suite"
+community: "Hooks (references)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Hooks_references
 ---
 
 # Native CLAUDE.md Integration
 
-## Connections
-- [[graphify commit hook & CLAUDE.md reference]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/Hooks_references

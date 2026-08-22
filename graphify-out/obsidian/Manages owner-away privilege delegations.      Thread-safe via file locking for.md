@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Delegation"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Delegation
 ---
 
 # Manages owner-away privilege delegations.      Thread-safe via file locking for
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DelegationManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Delegation

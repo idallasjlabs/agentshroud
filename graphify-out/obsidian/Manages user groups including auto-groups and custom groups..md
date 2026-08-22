@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
-location: "L203"
+community: "Rbac"
+location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Rbac
 ---
 
 # Manages user groups including auto-groups and custom groups.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupRegistry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Rbac

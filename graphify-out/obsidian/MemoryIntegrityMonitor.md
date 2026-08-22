@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "docs/vault"
+community: "Memory Lifecycle & Integrity"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # MemoryIntegrityMonitor
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_92]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_95]] - `method` [EXTRACTED]
 - [[._compute_file_hash()]] - `method` [EXTRACTED]
 - [[._detect_modification_source()]] - `method` [EXTRACTED]
 - [[._is_in_write_window()]] - `method` [EXTRACTED]
@@ -33,11 +33,13 @@ tags:
 - [[Action]] - `uses` [INFERRED]
 - [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
+- [[FileIntegrityRecord]] - `references` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
+- [[MemoryLifecycleManager]] - `semantically_similar_to` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
+- [[ModificationSource]] - `references` [EXTRACTED]
 - [[Monitors integrity of critical memory files.]] - `rationale_for` [EXTRACTED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
@@ -52,4 +54,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

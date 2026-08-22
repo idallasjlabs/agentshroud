@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "docs/diagrams"
+community: "Setup Guide (setup)"
 location: "L327"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Setup_Guide_setup
 ---
 
 # Multi-Instance Setup
@@ -18,4 +18,4 @@ tags:
 - [[Port Auto-Detection]] - `contains` [EXTRACTED]
 - [[Step 5 Configure Ports]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/diagrams
+#graphify/document #graphify/EXTRACTED #community/Setup_Guide_setup

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "System Architecture (architecture)"
 location: "L567"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/System_Architecture_architecture
 ---
 
 # Metrics to Track
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Monitoring and Observability]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/System_Architecture_architecture

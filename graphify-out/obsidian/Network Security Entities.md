@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "document"
-community: "skills/openclaw"
+community: "Data Dictionary (data)"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Data_Dictionary_data
 ---
 
 # Network Security Entities
@@ -18,4 +18,4 @@ tags:
 - [[SecurityFinding_1]] - `contains` [EXTRACTED]
 - [[URLAnalysisResult_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Data_Dictionary_data

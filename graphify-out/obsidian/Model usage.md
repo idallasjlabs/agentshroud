@@ -1,26 +1,23 @@
 ---
 source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (session-logs)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_session-logs
 ---
 
 # Model usage
 
 ## Connections
-- [[CodexBar CLI]] - `uses` [EXTRACTED]
-- [[CodexBar CLI Quick Reference]] - `references` [EXTRACTED]
 - [[Current model logic]] - `contains` [EXTRACTED]
 - [[Inputs]] - `contains` [EXTRACTED]
-- [[OpenClaw Skill Ecosystem]] - `part_of` [EXTRACTED]
-- [[Output_5]] - `contains` [EXTRACTED]
-- [[Overview_27]] - `contains` [EXTRACTED]
+- [[Output_7]] - `contains` [EXTRACTED]
+- [[Overview_28]] - `contains` [EXTRACTED]
 - [[Quick start]] - `contains` [EXTRACTED]
 - [[References_5]] - `contains` [EXTRACTED]
-- [[SKILL_151]] - `contains` [EXTRACTED]
+- [[SKILL_215]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_session-logs

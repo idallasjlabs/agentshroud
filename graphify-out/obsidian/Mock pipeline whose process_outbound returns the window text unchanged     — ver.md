@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Forward Stream"
 location: "L134"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Forward_Stream
 ---
 
 # Mock pipeline whose process_outbound returns the window text unchanged     — ver
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_PassthroughPipeline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Forward_Stream

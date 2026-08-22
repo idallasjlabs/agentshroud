@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
+source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "Skill (i-hdev)"
 location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Skill_i-hdev
 ---
 
 # Mode A — Single task
@@ -28,4 +28,4 @@ tags:
 - [[Step 9 — Push and open the PR]] - `contains` [EXTRACTED]
 - [[Step 9b — Update the Jira ticket with the PR link]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Skill_i-hdev

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "OAuth & Metadata Guard"
 location: "L36"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/OAuth__Metadata_Guard
 ---
 
 # MetadataGuard
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_94]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_97]] - `method` [EXTRACTED]
 - [[.check_for_exif()]] - `method` [EXTRACTED]
 - [[.check_oversized_headers()]] - `method` [EXTRACTED]
 - [[.get_document_tag()]] - `method` [EXTRACTED]
@@ -67,4 +67,4 @@ tags:
 - [[test_metadata_guard.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/OAuth__Metadata_Guard

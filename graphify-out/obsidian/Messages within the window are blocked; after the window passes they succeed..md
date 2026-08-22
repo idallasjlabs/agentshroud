@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L7818"
+community: "Telegram Proxy Inbound"
+location: "L7849"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Proxy_Inbound
 ---
 
 # Messages within the window are blocked; after the window passes they succeed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_collaborator_rate_limit_resets_after_window()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

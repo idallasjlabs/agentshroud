@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
+community: "Router (soc)"
 location: "L165"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Router_soc
 ---
 
 # Minimal RBAC stand-in with controllable check_permission results.
 
 ## Connections
-- [[_FakeRBAC_1]] - `rationale_for` [EXTRACTED]
+- [[_FakeRBAC_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Router_soc

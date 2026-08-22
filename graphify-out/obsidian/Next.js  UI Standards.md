@@ -1,17 +1,17 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "Planning Docs"
+community: "Claude"
 location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Claude
 ---
 
 # Next.js / UI Standards
 
 ## Connections
-- [[4) LANGUAGE & TOOLING STANDARDS]] - `contains` [EXTRACTED]
+- [[5) LANGUAGE & TOOLING STANDARDS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Claude

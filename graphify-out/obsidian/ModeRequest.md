@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "SOC Service Manager"
+community: "Web Api Coverage"
 location: "L155"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Service_Manager
+  - community/Web_Api_Coverage
 ---
 
 # ModeRequest
@@ -60,4 +60,4 @@ tags:
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Service_Manager
+#graphify/code #graphify/INFERRED #community/Web_Api_Coverage

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L60"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # Main Output Canary System for detecting prompt leakage.      This system generat
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OutputCanary]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

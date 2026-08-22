@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "scripts/sync-cve-registry.py"
+community: "Security Audit & Watchtower Tests"
 location: "L328"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Message with hundreds of PII entities should complete.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_many_pii_entities()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

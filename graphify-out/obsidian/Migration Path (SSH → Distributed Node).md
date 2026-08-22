@@ -1,18 +1,18 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Distributed Openclaw Node Architecture (architecture)"
 location: "L461"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Distributed_Openclaw_Node_Architecture_architecture
 ---
 
 # Migration Path (SSH → Distributed Node)
 
 ## Connections
-- [[Distributed OpenClaw Node Architecture (Raspberry Pi 4)]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
 - [[Step 1 Verify Option 1 Working]] - `contains` [EXTRACTED]
 - [[Step 2 Install OpenClaw on Pi]] - `contains` [EXTRACTED]
 - [[Step 3 Pair Nodes]] - `contains` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 Migrate Workflows]] - `contains` [EXTRACTED]
 - [[Step 6 Deprecate SSH (Optional)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Distributed_Openclaw_Node_Architecture_architecture

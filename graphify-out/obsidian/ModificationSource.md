@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Progressive Trust Config"
+community: "Memory Lifecycle & Integrity"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # ModificationSource
@@ -17,7 +17,7 @@ tags:
 - [[.register_expected_write()]] - `references` [EXTRACTED]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
+- [[MemoryIntegrityMonitor]] - `references` [EXTRACTED]
 - [[Source of a file modification.]] - `rationale_for` [EXTRACTED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[memory_integrity.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

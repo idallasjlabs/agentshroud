@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Cron State Monitor"
 location: "L191"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Cron_State_Monitor
 ---
 
 # Mimics AlertDispatcher's id-based 24h dedup — the real downstream.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_DedupDispatchFake]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Cron_State_Monitor

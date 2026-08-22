@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Agentic Os (architecture)"
 location: "L742"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Agentic_Os_architecture
 ---
 
 # Multi-Runtime Support
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[10. Infrastructure & Runtime]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Agentic_Os_architecture

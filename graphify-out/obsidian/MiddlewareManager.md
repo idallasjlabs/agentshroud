@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L86"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # MiddlewareManager
 
 ## Connections
-- [[.__init__()_13]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `method` [EXTRACTED]
 - [[._analyze_request_for_rbac()]] - `method` [EXTRACTED]
 - [[._check_cross_session_access()]] - `method` [EXTRACTED]
 - [[._check_rbac_permissions()]] - `method` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[._is_path_allowed_for_user()]] - `method` [EXTRACTED]
 - [[._is_tool_call_request()]] - `method` [EXTRACTED]
 - [[._record_guard_init_failure()]] - `method` [EXTRACTED]
-- [[.close()_5]] - `method` [EXTRACTED]
+- [[.close()_6]] - `method` [EXTRACTED]
 - [[.filter_outbound_response()]] - `method` [EXTRACTED]
 - [[.get_alert_dispatcher()]] - `method` [EXTRACTED]
 - [[.get_dns_filter()]] - `method` [EXTRACTED]
@@ -60,8 +60,6 @@ tags:
 - [[AlertDispatcher]] - `uses` [INFERRED]
 - [[ApprovalHardening]] - `uses` [INFERRED]
 - [[ApprovalHardeningConfig]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
 - [[AuthRequired]] - `uses` [INFERRED]
 - [[BrowserSecurityGuard]] - `uses` [INFERRED]
 - [[ConsentFramework]] - `uses` [INFERRED]
@@ -88,6 +86,7 @@ tags:
 - [[MemoryLifecycleManager]] - `uses` [INFERRED]
 - [[MemorySecurityConfig]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
+- [[MiddlewareResult]] - `references` [EXTRACTED]
 - [[MultiTurnTracker]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
 - [[OAuthSecurityValidator]] - `uses` [INFERRED]
@@ -104,14 +103,16 @@ tags:
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[SSHExecRequest]] - `uses` [INFERRED]
 - [[SSHWriteFileRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `shares_data_with` [INFERRED]
 - [[SessionManager]] - `uses` [INFERRED]
+- [[Startup Sequence]] - `references` [EXTRACTED]
 - [[SubagentMonitor]] - `uses` [INFERRED]
 - [[SubagentMonitorConfig]] - `uses` [INFERRED]
+- [[Test File Sandbox Message Gate Suite]] - `references` [EXTRACTED]
 - [[TestAgentShroudSourceCodeProtection]] - `uses` [INFERRED]
 - [[TestAnalyzeRequestForRBAC]] - `uses` [INFERRED]
 - [[TestBrowserSecurity]] - `uses` [INFERRED]
 - [[TestClose]] - `uses` [INFERRED]
+- [[TestCollaboratorPersistence]] - `uses` [INFERRED]
 - [[TestConfidenceFloor]] - `uses` [INFERRED]
 - [[TestConfigurationLoading]] - `uses` [INFERRED]
 - [[TestConfigurationProtection]] - `uses` [INFERRED]
@@ -183,9 +184,10 @@ tags:
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[list_security_modules()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
+- [[main.py_3]] - `references` [EXTRACTED]
 - [[middleware.py]] - `contains` [EXTRACTED]
+- [[middleware.py_1]] - `references` [EXTRACTED]
 - [[middleware_manager()]] - `calls` [EXTRACTED]
 - [[run()_3]] - `calls` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `imports` [EXTRACTED]
@@ -196,4 +198,4 @@ tags:
 - [[test_session_isolation.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware

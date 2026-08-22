@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "docs/vault"
+community: "Telegram Setup (setup)"
 location: "L130"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Telegram_Setup_setup
 ---
 
 # Messages delayed
 
 ## Connections
-- [[Troubleshooting_28]] - `contains` [EXTRACTED]
+- [[Troubleshooting_32]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Telegram_Setup_setup

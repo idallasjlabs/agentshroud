@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Security Audit & Watchtower Tests"
 location: "L1045"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # # NOTE: Gateway-side Slack Socket Mode listener removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[lifespan.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Multi Turn Tracker (security)"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Multi_Turn_Tracker_security
 ---
 
 # MultiTurnTracker
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_97]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_100]] - `method` [EXTRACTED]
 - [[._add_disclosure_event()]] - `method` [EXTRACTED]
 - [[._analyze_agent_response()]] - `method` [EXTRACTED]
 - [[._analyze_user_message()]] - `method` [EXTRACTED]
@@ -55,4 +55,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_multi_turn_tracker.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Multi_Turn_Tracker_security

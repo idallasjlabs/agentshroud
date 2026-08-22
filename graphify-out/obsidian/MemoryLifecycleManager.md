@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "docs/operations"
+community: "Memory Lifecycle & Integrity"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # MemoryLifecycleManager
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_93]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_96]] - `method` [EXTRACTED]
 - [[._cleanup_old_actions()]] - `method` [EXTRACTED]
 - [[._cleanup_old_threats()]] - `method` [EXTRACTED]
 - [[.archive_file()]] - `method` [EXTRACTED]
@@ -30,15 +30,17 @@ tags:
 - [[.validate_memory_write()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any_8]] - `uses` [INFERRED]
+- [[ContentThreat]] - `references` [EXTRACTED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[Manages memory file lifecycle and content security.]] - `rationale_for` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `semantically_similar_to` [INFERRED]
 - [[MemoryLifecycleConfig]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
+- [[RetentionAction]] - `references` [EXTRACTED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
@@ -50,4 +52,4 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/operations
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

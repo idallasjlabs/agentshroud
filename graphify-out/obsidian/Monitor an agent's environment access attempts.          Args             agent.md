@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Git Guard (security)"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Git_Guard_security
 ---
 
 # Monitor an agent's environment access attempts.          Args:             agent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.monitor_environment_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Git_Guard_security

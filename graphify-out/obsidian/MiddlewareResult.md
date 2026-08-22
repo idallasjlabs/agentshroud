@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # MiddlewareResult
@@ -25,8 +25,6 @@ tags:
 - [[ApprovalHardening]] - `uses` [INFERRED]
 - [[ApprovalHardeningConfig]] - `uses` [INFERRED]
 - [[AsyncMock]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
 - [[BlockingPipeline]] - `uses` [INFERRED]
 - [[BrowserSecurityGuard]] - `uses` [INFERRED]
 - [[ConsentFramework]] - `uses` [INFERRED]
@@ -50,6 +48,7 @@ tags:
 - [[MemoryLifecycleManager]] - `uses` [INFERRED]
 - [[MemorySecurityConfig]] - `uses` [INFERRED]
 - [[MetadataGuard]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `references` [EXTRACTED]
 - [[MultiTurnTracker]] - `uses` [INFERRED]
 - [[NetworkValidator]] - `uses` [INFERRED]
 - [[OAuthSecurityValidator]] - `uses` [INFERRED]
@@ -132,9 +131,10 @@ tags:
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 - [[_FakeRBAC]] - `uses` [INFERRED]
 - [[middleware.py]] - `contains` [EXTRACTED]
+- [[middleware.py_1]] - `references` [EXTRACTED]
 - [[test_file_sandbox_message_gate.py]] - `imports` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware

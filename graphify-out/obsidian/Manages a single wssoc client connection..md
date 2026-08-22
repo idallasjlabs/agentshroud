@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
+community: "Soc Websocket"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Soc_Websocket
 ---
 
 # Manages a single /ws/soc client connection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SOCWebSocketHandler]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Soc_Websocket

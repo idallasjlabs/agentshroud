@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (dashboard)"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_dashboard
 ---
 
 # Network Inspector
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Features_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_dashboard

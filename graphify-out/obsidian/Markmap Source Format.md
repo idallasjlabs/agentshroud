@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
+source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "Architecture Docs"
+community: "Skill (i-mm)"
 location: "L155"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Skill_i-mm
 ---
 
 # Markmap Source Format
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Markmap Generation via MCP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mm

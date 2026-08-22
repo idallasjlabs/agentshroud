@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/summarize/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (summarize)"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_summarize
 ---
 
 # Model + keys
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Summarize]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_summarize

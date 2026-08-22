@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Security Pipeline Core"
+community: "Voice Gateway"
 location: "L705"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Pipeline_Core
+  - community/Voice_Gateway
 ---
 
 # No fabricated version when the env var is genuinely unset — say     'unknown' ra
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_voice_system_message_version_unknown_when_env_unset()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Pipeline_Core
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway

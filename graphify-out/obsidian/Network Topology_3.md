@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Network topology (09 - Diagrams)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Network_topology_09_-_Diagrams
 ---
 
 # Network Topology
@@ -19,4 +19,4 @@ tags:
 - [[Related Notes_72]] - `contains` [EXTRACTED]
 - [[Traffic Routing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Network_topology_09_-_Diagrams

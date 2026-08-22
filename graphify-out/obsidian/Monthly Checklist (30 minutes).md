@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/daily-operations.md"
 type: "document"
-community: "Planning Docs"
+community: "Daily Operations (runbooks)"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Daily_Operations_runbooks
 ---
 
 # Monthly Checklist (30 minutes)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Daily Operations Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Daily_Operations_runbooks

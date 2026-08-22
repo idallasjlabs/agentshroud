@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Gateway Security Module"
+community: "Glossary (project)"
 tags:
   - graphify/concept
   - graphify/AMBIGUOUS
-  - community/Gateway_Security_Module
+  - community/Glossary_project
 ---
 
 # NFKC Normalization
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Security Architecture]] - `conceptually_related_to` [AMBIGUOUS]
 - [[AgentShroud v0.8.0 Watchtower Release Plan]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/AMBIGUOUS #community/Gateway_Security_Module
+#graphify/concept #graphify/AMBIGUOUS #community/Glossary_project

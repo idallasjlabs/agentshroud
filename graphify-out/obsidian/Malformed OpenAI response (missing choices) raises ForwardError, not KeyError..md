@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "Router"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Router
 ---
 
 # Malformed OpenAI response (missing choices) raises ForwardError, not KeyError.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_openai_malformed_response_raises_forward_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Router

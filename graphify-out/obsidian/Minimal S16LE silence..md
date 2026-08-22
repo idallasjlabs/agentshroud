@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Voice Gateway"
 location: "L809"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Voice_Gateway
 ---
 
 # Minimal S16LE silence.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_pcm_bytes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway

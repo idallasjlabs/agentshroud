@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "rationale"
-community: "docs/vault"
+community: "Wazuh Client (security)"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Wazuh_Client_security
 ---
 
 # Map Wazuh alert level to severity string.      Args:         level: Wazuh alert
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[level_to_severity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Wazuh_Client_security

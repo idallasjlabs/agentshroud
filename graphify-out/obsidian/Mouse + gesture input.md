@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/peekaboo/SKILL.md"
 type: "document"
-community: "Gateway Proxy Layer"
+community: "Skill (peekaboo)"
 location: "L170"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Skill_peekaboo
 ---
 
 # Mouse + gesture input
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Skill_peekaboo

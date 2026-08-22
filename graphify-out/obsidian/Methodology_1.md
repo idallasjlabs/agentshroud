@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "branding/guidelines"
+community: "Skill (i-sec-defense)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/Skill_i-sec-defense
 ---
 
 # Methodology
@@ -17,4 +17,4 @@ tags:
 - [[Loss Categories_1]] - `contains` [EXTRACTED]
 - [[Unsafe Control Actions (UCAs)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/guidelines
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense

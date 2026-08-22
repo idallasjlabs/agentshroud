@@ -1,11 +1,11 @@
 ---
 source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "docs/runbooks"
+community: "Gsd Cadence (governance)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Gsd_Cadence_governance
 ---
 
 # Multi-Agent Role Matrix (AGENT_ROLES.md)
@@ -16,4 +16,4 @@ tags:
 - [[Escalation Path]] - `references` [EXTRACTED]
 - [[Security-Sensitive Paths]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Gsd_Cadence_governance

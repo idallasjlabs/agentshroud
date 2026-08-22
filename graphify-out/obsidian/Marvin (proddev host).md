@@ -1,11 +1,11 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "concept"
-community: "Gateway Security Module"
+community: "Glossary (project)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Glossary_project
 ---
 
 # Marvin (prod/dev host)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud v0.9.0 Multi-Runtime & Multi-Platform Release Plan]] - `references` [EXTRACTED]
 - [[colima-docker-guide]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/concept #graphify/EXTRACTED #community/Glossary_project

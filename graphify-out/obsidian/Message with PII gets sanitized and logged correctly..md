@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "docs/vault"
+community: "Security Audit & Watchtower Tests"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Message with PII gets sanitized and logged correctly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_full_pipeline_pii_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

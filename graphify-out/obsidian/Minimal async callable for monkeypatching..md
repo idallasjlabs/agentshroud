@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L8512"
+community: "Slack Proxy Coverage"
+location: "L8613"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Slack_Proxy_Coverage
 ---
 
 # Minimal async callable for monkeypatching.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AsyncMock]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy_Coverage

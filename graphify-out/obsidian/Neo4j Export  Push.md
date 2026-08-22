@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/exports.md"
 type: "concept"
-community: "Gateway Test Suite"
+community: "Exports (references)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Exports_references
 ---
 
 # Neo4j Export / Push
 
-## Connections
-- [[graphify exports reference]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/Exports_references

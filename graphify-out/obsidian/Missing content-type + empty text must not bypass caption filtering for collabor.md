@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Telegram Outbound Proxy Tests"
 location: "L1932"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Outbound_Proxy_Tests
 ---
 
 # Missing content-type + empty text must not bypass caption filtering for collabor
@@ -21,4 +21,4 @@ tags:
 - [[.test_urlencoded_without_content_type_empty_text_with_draft_is_still_filtered()]] - `rationale_for` [EXTRACTED]
 - [[.test_urlencoded_without_content_type_empty_text_with_message_is_still_filtered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Outbound_Proxy_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "Enforce-Mode Auto-Revert"
-location: "L303"
+community: "Queue (approval_queue)"
+location: "L309"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enforce-Mode_Auto-Revert
+  - community/Queue_approval_queue
 ---
 
 # # NOTE: Called within _lock context
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[queue.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert
+#graphify/rationale #graphify/EXTRACTED #community/Queue_approval_queue

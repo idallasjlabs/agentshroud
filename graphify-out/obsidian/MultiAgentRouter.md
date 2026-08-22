@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Security Fixes & SSH Write Endpoint"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Security_Fixes__SSH_Write_Endpoint
 ---
 
 # MultiAgentRouter
 
 ## Connections
-- [[.__init__()_14]] - `method` [EXTRACTED]
+- [[.__init__()_15]] - `method` [EXTRACTED]
 - [[._build_forward_payload()]] - `method` [EXTRACTED]
 - [[.disabled_client()]] - `calls` [EXTRACTED]
 - [[.forward_to_agent()]] - `method` [EXTRACTED]
@@ -24,16 +24,12 @@ tags:
 - [[.resolve_target()]] - `method` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[AppState]] - `uses` [INFERRED]
-- [[BotConfig]] - `shares_data_with` [EXTRACTED]
 - [[FastAPI_1]] - `uses` [INFERRED]
 - [[ForwardRequest]] - `uses` [INFERRED]
+- [[HTTPForwarder]] - `semantically_similar_to` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
-- [[MCPProxyRequest]] - `uses` [INFERRED]
-- [[MCPResultRequest]] - `uses` [INFERRED]
-- [[OpProxyRequest]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[Routes content to appropriate agent containers      Routing priority     1. Exp]] - `rationale_for` [EXTRACTED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
 - [[TestSSHDisabledEndpoint]] - `uses` [INFERRED]
 - [[TestSSHExec]] - `uses` [INFERRED]
 - [[TestSSHHistory]] - `uses` [INFERRED]
@@ -48,9 +44,8 @@ tags:
 - [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
 - [[client()_16]] - `calls` [EXTRACTED]
 - [[client()_17]] - `calls` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
+- [[main.py_3]] - `references` [EXTRACTED]
 - [[router()_2]] - `calls` [EXTRACTED]
 - [[router()_1]] - `calls` [EXTRACTED]
 - [[router()_3]] - `calls` [EXTRACTED]
@@ -64,4 +59,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint

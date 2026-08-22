@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
+source_file: ".agents/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-mnemosyne)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-mnemosyne
 ---
 
 # Mnemosyne — Retention Engineer
 
 ## Connections
 - [[Purpose_20]] - `contains` [EXTRACTED]
-- [[README_25]] - `contains` [EXTRACTED]
+- [[README_20]] - `contains` [EXTRACTED]
 - [[Related Skills_23]] - `contains` [EXTRACTED]
-- [[Usage_24]] - `contains` [EXTRACTED]
+- [[Usage_23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-mnemosyne

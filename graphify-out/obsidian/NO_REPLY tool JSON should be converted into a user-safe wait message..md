@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Telegram Outbound Proxy Tests"
 location: "L439"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Outbound_Proxy_Tests
 ---
 
 # NO_REPLY tool JSON should be converted into a user-safe wait message.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_no_reply_tool_token_is_rewritten_to_wait_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Outbound_Proxy_Tests

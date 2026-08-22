@@ -1,18 +1,18 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Network Topology.md"
-type: "document"
-community: "Bot Skill Config"
+source_file: "docs/diagrams/02-infrastructure.md"
+type: "concept"
+community: "02 Infrastructure (diagrams)"
 tags:
-  - graphify/document
+  - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/02_Infrastructure_diagrams
 ---
 
 # Network Topology Diagram
 
 ## Connections
-- [[Docker Network Isolation (internal vs isolated)]] - `describes` [EXTRACTED]
-- [[Full System Flowchart Diagram]] - `references` [EXTRACTED]
-- [[Tailscale Mesh VPN (tail240ea8.ts.net)]] - `describes` [EXTRACTED]
+- [[02-infrastructure]] - `conceptually_related_to` [EXTRACTED]
+- [[Infrastructure Diagram — Hosting & Servers]] - `references` [INFERRED]
+- [[Rendered Network Topology Diagram (PNG)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/02_Infrastructure_diagrams

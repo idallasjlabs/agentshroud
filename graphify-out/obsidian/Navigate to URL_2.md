@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L56"
+community: "Skill (i-browser)"
+location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-browser
 ---
 
 # Navigate to URL
 
 ## Connections
-- [[Usage_90]] - `contains` [EXTRACTED]
+- [[Usage_87]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-browser
