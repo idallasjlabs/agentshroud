@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Prompt Guard"
 location: "L165"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Prompt_Guard
 ---
 
 # Regression guard — fail if patterns drop below 43.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_pattern_count()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Prompt_Guard

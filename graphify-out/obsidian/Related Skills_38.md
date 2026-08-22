@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/README.md"
+source_file: ".agents/skills/i-tw/README.md"
 type: "document"
-community: "docs/diagrams"
+community: "Readme (i-tw)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Readme_i-tw
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/diagrams
+#graphify/document #graphify/EXTRACTED #community/Readme_i-tw

@@ -1,12 +1,12 @@
 ---
 source_file: "CONTRIBUTING.md"
 type: "document"
-community: "docs/vault"
+community: "Contributing"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Contributing
 ---
 
 # Requirements
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Pull Request Process]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Contributing

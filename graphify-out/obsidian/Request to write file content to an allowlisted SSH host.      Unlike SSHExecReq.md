@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Competitive Intel Store"
+community: "Ingest API Main & Models"
 location: "L262"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Ingest_API_Main__Models
 ---
 
 # Request to write file content to an allowlisted SSH host.      Unlike SSHExecReq
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHWriteFileRequest_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API_Main__Models

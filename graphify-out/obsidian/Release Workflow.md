@@ -1,16 +1,16 @@
 ---
 source_file: ".github/workflows/release.yml"
-type: "document"
-community: "skills/openclaw"
+type: "code"
+community: "Release (workflows)"
 tags:
-  - graphify/document
-  - graphify/INFERRED
-  - community/skills/openclaw
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Release_workflows
 ---
 
 # Release Workflow
 
 ## Connections
-- [[AgentShroud™ README]] - `conceptually_related_to` [INFERRED]
+- [[TagVersion Sync Verification]] - `rationale_for` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/skills/openclaw
+#graphify/code #graphify/EXTRACTED #community/Release_workflows

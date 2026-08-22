@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/report_store.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Report Store"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Report_Store
 ---
 
 # ReportStore
 
 ## Connections
-- [[.__init__()_110]] - `method` [EXTRACTED]
+- [[.__init__()_113]] - `method` [EXTRACTED]
 - [[._check_size()]] - `method` [EXTRACTED]
 - [[._enforce_count_cap()]] - `method` [EXTRACTED]
 - [[._path()]] - `method` [EXTRACTED]
@@ -38,7 +38,6 @@ tags:
 - [[.test_title_and_tags_sanitized_async()]] - `calls` [EXTRACTED]
 - [[.test_title_and_tags_sanitized_sync()]] - `calls` [EXTRACTED]
 - [[Filesystem-backed shared report store on the gateway-data volume.]] - `rationale_for` [EXTRACTED]
-- [[GET socv1services (list_services endpoint)]] - `conceptually_related_to` [AMBIGUOUS]
 - [[TestAsyncSave]] - `uses` [INFERRED]
 - [[TestPersistence_1]] - `uses` [INFERRED]
 - [[TestReportAPI]] - `uses` [INFERRED]
@@ -51,4 +50,4 @@ tags:
 - [[store()_2]] - `calls` [EXTRACTED]
 - [[test_report_store.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Report_Store

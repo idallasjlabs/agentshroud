@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "skills/openclaw"
+community: "Session Security.py (Security Modules)"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Session_Securitypy_Security_Modules
 ---
 
 # Related
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[session_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Session_Securitypy_Security_Modules

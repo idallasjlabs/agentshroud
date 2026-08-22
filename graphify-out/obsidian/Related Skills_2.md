@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/README.md"
+source_file: ".agents/skills/i-atlas/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-atlas)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-atlas
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-atlas

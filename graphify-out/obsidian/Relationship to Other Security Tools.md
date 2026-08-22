@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Openscap (05 - Dependencies)"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Openscap_05_-_Dependencies
 ---
 
 # Relationship to Other Security Tools
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenSCAP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Openscap_05_-_Dependencies

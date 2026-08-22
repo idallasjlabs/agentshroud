@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Competitive Intel Store"
+community: "Forward (routes)"
 location: "L330"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Forward_routes
 ---
 
 # Request to send an email through the gateway (P3: channel ownership).      The b
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EmailSendRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/rationale #graphify/EXTRACTED #community/Forward_routes

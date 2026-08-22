@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "gateway/runtime"
+community: "Differential Pii Detector"
 location: "L70"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/gateway/runtime
+  - community/Differential_Pii_Detector
 ---
 
 # Relative risk of a detected PII entity.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PIIHitSeverity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/gateway/runtime
+#graphify/rationale #graphify/EXTRACTED #community/Differential_Pii_Detector

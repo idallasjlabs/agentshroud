@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "rationale"
-community: "PromptGuard Encoding Detection"
+community: "Mcp Proxy"
 location: "L807"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard_Encoding_Detection
+  - community/Mcp_Proxy
 ---
 
 # Regression: result_inspection was possibly-unbound when the executed tool     re
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestExecuteResultInspectionBinding]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection
+#graphify/rationale #graphify/EXTRACTED #community/Mcp_Proxy

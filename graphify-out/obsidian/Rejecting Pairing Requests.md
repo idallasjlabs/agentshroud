@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Device Pairing (setup)"
 location: "L168"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Device_Pairing_setup
 ---
 
 # Rejecting Pairing Requests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Device_Pairing_setup

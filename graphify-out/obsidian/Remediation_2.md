@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "Bot Skill Config"
+community: "01 Enforce By Default (redteam)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/01_Enforce_By_Default_redteam
 ---
 
 # Remediation
@@ -19,4 +19,4 @@ tags:
 - [[Step 4 Document the risk of monitor mode]] - `contains` [EXTRACTED]
 - [[Step 5 Update docker-compose.yml defaults]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/01_Enforce_By_Default_redteam

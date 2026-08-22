@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "concept"
-community: "SOC RBAC & Auth"
+community: "Skill (i-sec-offense)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/Skill_i-sec-offense
 ---
 
 # Red Team Canary Values (FAKE_SSN, FAKE_KEY, Project Nightingale)
 
-## Connections
-- [[i-sec-offense Red Team Adversarial Tester]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/concept #graphify/EXTRACTED #community/Skill_i-sec-offense

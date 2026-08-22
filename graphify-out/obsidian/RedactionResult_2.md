@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Planning Docs"
+community: "Prompt Protection (security)"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Prompt_Protection_security
 ---
 
 # RedactionResult
@@ -14,8 +14,6 @@ tags:
 ## Connections
 - [[.scan_response()_2]] - `references` [EXTRACTED]
 - [[Result of scanning and redacting content.]] - `rationale_for` [EXTRACTED]
-- [[TestPromptProtection]] - `uses` [INFERRED]
 - [[prompt_protection.py]] - `contains` [EXTRACTED]
-- [[test_prompt_protection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Prompt_Protection_security

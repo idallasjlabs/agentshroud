@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/README.md"
+source_file: ".agents/skills/i-ps/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-pm)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-pm
 ---
 
 # Related Skills
 
 ## Connections
-- [[Production Safety Checklist README]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-pm

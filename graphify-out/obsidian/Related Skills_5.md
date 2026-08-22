@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/README.md"
+source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-bs)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-bs
 ---
 
 # Related Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-bs

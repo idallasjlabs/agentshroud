@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rate_limit_guard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Rate Limit Guard"
 location: "L109"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Rate_Limit_Guard
 ---
 
 # Record one request for (agent_id, tool) and decide allow/block.          Fail-cl
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check()_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Rate_Limit_Guard
