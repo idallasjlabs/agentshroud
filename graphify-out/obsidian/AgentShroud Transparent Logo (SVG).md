@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logos/svg/logo-transparent.svg"
 type: "image"
-community: "Gateway Test Suite"
+community: "Readme (branding)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_branding
 ---
 
 # AgentShroud Transparent Logo (SVG)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Logo Usage]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/image #graphify/EXTRACTED #community/Readme_branding

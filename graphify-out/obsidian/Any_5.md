@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Alert Telegram Relay"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Alert_Telegram_Relay
 ---
 
 # Any
 
 ## Connections
 - [[.__call__()]] - `references` [EXTRACTED]
-- [[.__init__()_8]] - `references` [EXTRACTED]
+- [[.__init__()_9]] - `references` [EXTRACTED]
 - [[._clean_tool()]] - `references` [EXTRACTED]
 - [[._coerce()]] - `references` [EXTRACTED]
 - [[._handle()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Alert_Telegram_Relay

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Pipeline (proxy)"
 location: "L202"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Pipeline_proxy
 ---
 
 # Append to the chain with guaranteed SQLite persistence.          Used exclusivel
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.append_block()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Pipeline_proxy

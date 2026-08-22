@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "document"
-community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+community: "Soul (hermes)"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+  - community/Soul_hermes
 ---
 
 # AgentShroud Hermes — System Identity
@@ -20,4 +20,4 @@ tags:
 - [[Trademark Notice]] - `contains` [EXTRACTED]
 - [[Your Role]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+#graphify/document #graphify/EXTRACTED #community/Soul_hermes

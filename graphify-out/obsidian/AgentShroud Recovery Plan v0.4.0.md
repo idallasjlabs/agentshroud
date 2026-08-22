@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
 type: "document"
-community: "Planning Docs"
+community: "Recovery Plan (recovery)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Recovery_Plan_recovery
 ---
 
 # AgentShroud Recovery Plan v0.4.0
@@ -21,4 +21,4 @@ tags:
 - [[PHASE 4 CLEANUP & v0.4.0 RELEASE]] - `contains` [EXTRACTED]
 - [[RECOVERY_PLAN]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Recovery_Plan_recovery

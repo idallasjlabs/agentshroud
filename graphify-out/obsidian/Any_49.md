@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Egress & RBAC Security Core"
-location: "L94"
+community: "Memory Lifecycle & Integrity"
+location: "L379"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - graphify/INFERRED
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_97]] - `references` [EXTRACTED]
-- [[.get_global_stats()]] - `references` [EXTRACTED]
-- [[.get_session_stats()]] - `references` [EXTRACTED]
+- [[.get_lifecycle_status()]] - `references` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Integrity

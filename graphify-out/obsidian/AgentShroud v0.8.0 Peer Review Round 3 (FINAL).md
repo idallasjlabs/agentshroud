@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
 type: "document"
-community: "skills/openclaw"
+community: "Phase Review 2026 03 (reviews)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Phase_Review_2026_03_reviews
 ---
 
 # AgentShroud v0.8.0 Peer Review Round 3 (FINAL)
@@ -17,7 +17,7 @@ tags:
 - [[Prior Findings — Verification]] - `contains` [EXTRACTED]
 - [[R3 Findings (NEW — this round)]] - `contains` [EXTRACTED]
 - [[Release Recommendation]] - `contains` [EXTRACTED]
-- [[Summary_29]] - `contains` [EXTRACTED]
+- [[Summary_10]] - `contains` [EXTRACTED]
 - [[phase-review-2026-03-03]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Phase_Review_2026_03_reviews

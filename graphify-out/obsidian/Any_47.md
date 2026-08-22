@@ -1,22 +1,20 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: ".github/ISSUE_TEMPLATE"
-location: "L49"
+community: "Mcp Policy"
+location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/github/ISSUE_TEMPLATE
+  - community/Mcp_Policy
 ---
 
 # Any
 
 ## Connections
-- [[.from_dict()_8]] - `references` [EXTRACTED]
-- [[.get_integrity_status()]] - `references` [EXTRACTED]
-- [[.get_recent_alerts()]] - `references` [EXTRACTED]
-- [[.to_dict()_10]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
+- [[.enforce()_1]] - `references` [EXTRACTED]
+- [[.evaluate()_1]] - `references` [EXTRACTED]
+- [[.from_dict()_7]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/github/ISSUE_TEMPLATE
+#graphify/code #graphify/EXTRACTED #community/Mcp_Policy

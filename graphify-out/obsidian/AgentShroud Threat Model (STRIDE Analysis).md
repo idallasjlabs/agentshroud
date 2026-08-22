@@ -1,11 +1,12 @@
 ---
 source_file: "docs/security/threat-model.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Threat Model (security)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Threat_Model_security
 ---
 
 # AgentShroud Threat Model (STRIDE Analysis)
@@ -17,7 +18,6 @@ tags:
 - [[STRIDE Threat Analysis]] - `contains` [EXTRACTED]
 - [[Threat Intelligence Integration]] - `contains` [EXTRACTED]
 - [[Threat Modeling Scope]] - `contains` [EXTRACTED]
-- [[presidio-analyzer  presidio-anonymizer Dependencies]] - `references` [INFERRED]
 - [[threat-model]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Threat_Model_security

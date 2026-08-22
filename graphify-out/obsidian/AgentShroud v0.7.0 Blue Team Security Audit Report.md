@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/blue-team-audit-v0.7.0.md"
 type: "document"
-community: "CLAUDE.md"
+community: "Blue Team Audit V0.7.0 (reviews)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CLAUDEmd
+  - community/Blue_Team_Audit_V070_reviews
 ---
 
 # AgentShroud v0.7.0 Blue Team Security Audit Report
@@ -25,10 +25,10 @@ tags:
 - [[ContextGuard (context window poisoning defense)]] - `references` [EXTRACTED]
 - [[Egress Filter  SSRF Protection]] - `references` [EXTRACTED]
 - [[Executive Summary_1]] - `contains` [EXTRACTED]
-- [[File Sandbox (path allowblock lists)]] - `references` [EXTRACTED]
+- [[FileSandbox (path isolation)]] - `references` [EXTRACTED]
 - [[GitGuard (supply-chain hook scanning)]] - `references` [EXTRACTED]
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
 - [[PromptGuard (Prompt Injection Defense)]] - `references` [EXTRACTED]
 - [[blue-team-audit-v0.7.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CLAUDEmd
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Audit_V070_reviews

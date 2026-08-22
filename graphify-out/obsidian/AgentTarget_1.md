@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Slack API Proxy"
+community: "Router"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Router
 ---
 
 # AgentTarget
 
 ## Connections
-- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_15]] - `calls` [EXTRACTED]
 - [[._build_forward_payload()]] - `references` [EXTRACTED]
 - [[.forward_to_agent()]] - `references` [EXTRACTED]
 - [[.forward_to_agent_stream()]] - `references` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[ForwardRequest]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/Router

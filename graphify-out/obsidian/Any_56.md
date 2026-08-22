@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L102"
+community: "Report Store"
+location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Report_Store
 ---
 
 # Any
 
 ## Connections
-- [[._alert_high_usage()]] - `references` [EXTRACTED]
-- [[._get_disk_io_stats()]] - `references` [EXTRACTED]
-- [[.add_alert_callback()_1]] - `references` [EXTRACTED]
-- [[.get_usage_stats()]] - `references` [EXTRACTED]
+- [[.get()_4]] - `references` [EXTRACTED]
+- [[.list()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Report_Store

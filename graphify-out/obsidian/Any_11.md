@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "Architecture Docs"
+community: "A2a Proxy (proxy)"
 location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/A2a_Proxy_proxy
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_16]] - `references` [EXTRACTED]
+- [[.__init__()_17]] - `references` [EXTRACTED]
 - [[.extract_text_for_pii_scan()]] - `references` [EXTRACTED]
 - [[.parse_jsonrpc_request()]] - `references` [EXTRACTED]
 - [[.process_inbound_request()]] - `references` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_redact_message_text()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/A2a_Proxy_proxy

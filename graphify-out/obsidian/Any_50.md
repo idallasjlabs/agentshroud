@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/network_validator.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L124"
+community: "Multi Turn Tracker (security)"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Multi_Turn_Tracker_security
 ---
 
 # Any
 
 ## Connections
-- [[._parse_service_network_config()]] - `references` [EXTRACTED]
-- [[._validate_network_definitions()]] - `references` [EXTRACTED]
-- [[.get_security_report()]] - `references` [EXTRACTED]
+- [[.__init__()_100]] - `references` [EXTRACTED]
+- [[.get_global_stats()]] - `references` [EXTRACTED]
+- [[.get_session_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Multi_Turn_Tracker_security

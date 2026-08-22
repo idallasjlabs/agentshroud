@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L197"
+community: "Hermes Model Resolver"
+location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Hermes_Model_Resolver
 ---
 
 # An unrecognized mode value is treated conservatively as cloud.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_unknown_mode_treated_as_cloud()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Hermes_Model_Resolver

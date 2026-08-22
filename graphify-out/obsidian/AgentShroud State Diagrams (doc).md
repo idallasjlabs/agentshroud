@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/state-diagrams.md"
 type: "document"
-community: "gateway/requirements.txt"
+community: "State Diagrams (flows)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gateway/requirementstxt
+  - community/State_Diagrams_flows
 ---
 
 # AgentShroud State Diagrams (doc)
@@ -16,4 +16,4 @@ tags:
 - [[Gateway Operational Modes (MONITOR, ENFORCE, LOCKDOWN, EMERGENCY, RECOVERY)]] - `references` [EXTRACTED]
 - [[Kill Switch States (ACTIVE, SOFT_KILL, HARD_KILL, PANIC, RECOVERY)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gateway/requirementstxt
+#graphify/document #graphify/EXTRACTED #community/State_Diagrams_flows

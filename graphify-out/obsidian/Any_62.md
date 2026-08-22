@@ -1,24 +1,22 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Telegram Proxy Test Suite"
-location: "L28"
+community: "Tool Chain & CVE Triage"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Proxy_Test_Suite
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_120]] - `references` [EXTRACTED]
-- [[._extract_dict_content()]] - `references` [EXTRACTED]
-- [[._extract_scannable_content()]] - `references` [EXTRACTED]
-- [[._reconstruct_result()]] - `references` [EXTRACTED]
-- [[.sanitize_tool_result()]] - `references` [EXTRACTED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
+- [[.__init__()_122]] - `references` [EXTRACTED]
+- [[.analyze_tool_call()]] - `references` [EXTRACTED]
+- [[.get_global_stats()_1]] - `references` [EXTRACTED]
+- [[.get_session_stats()_1]] - `references` [EXTRACTED]
+- [[.sanitize_tool_params()]] - `references` [EXTRACTED]
+- [[.score_reversibility()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

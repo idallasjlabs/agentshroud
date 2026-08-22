@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "concept"
-community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+community: "Soul (hermes)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+  - community/Soul_hermes
 ---
 
 # AgentShroud Gateway
@@ -15,4 +15,4 @@ tags:
 - [[agentshroud-gateway MCP proxy entry (disabled)]] - `conceptually_related_to` [INFERRED]
 - [[agentshroud-ssh-exec.sh helper]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+#graphify/concept #graphify/EXTRACTED #community/Soul_hermes

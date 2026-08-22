@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Planning Docs"
+community: "Soc Egress Endpoints"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Soc_Egress_Endpoints
 ---
 
 # Any
@@ -17,4 +17,4 @@ tags:
 - [[.to_dict()]] - `references` [EXTRACTED]
 - [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Soc_Egress_Endpoints

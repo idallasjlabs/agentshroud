@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/02-infrastructure.md"
 type: "document"
-community: "Bot Skill Config"
+community: "02 Infrastructure (diagrams)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/02_Infrastructure_diagrams
 ---
 
 # AgentShroud — Infrastructure & Network Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[5. Network Topology Diagram]] - `contains` [EXTRACTED]
 - [[6. Deployment Diagram — What Runs Where]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/02_Infrastructure_diagrams

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L2701"
+community: "Telegram Proxy Core"
+location: "L2713"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Proxy_Core
 ---
 
 # Any
@@ -30,4 +30,4 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Core

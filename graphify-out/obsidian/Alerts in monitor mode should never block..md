@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "rationale"
-community: "Security Module Middleware"
+community: "Egress Monitor"
 location: "L265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Module_Middleware
+  - community/Egress_Monitor
 ---
 
 # Alerts in monitor mode should never block.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_alert_monitor_mode_no_block()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Module_Middleware
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Monitor

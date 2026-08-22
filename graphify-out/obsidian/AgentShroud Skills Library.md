@@ -1,12 +1,12 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (skills)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_skills
 ---
 
 # AgentShroud Skills Library
@@ -15,7 +15,7 @@ tags:
 - [[Custom Skills]] - `contains` [EXTRACTED]
 - [[Directory Structure_2]] - `contains` [EXTRACTED]
 - [[OpenClaw Built-in Skills]] - `contains` [EXTRACTED]
-- [[README_94]] - `contains` [EXTRACTED]
-- [[Usage_88]] - `contains` [EXTRACTED]
+- [[README_131]] - `contains` [EXTRACTED]
+- [[Usage_128]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_skills

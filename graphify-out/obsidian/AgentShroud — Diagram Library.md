@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "04 Security (diagrams)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/04_Security_diagrams
 ---
 
 # AgentShroud — Diagram Library
@@ -15,6 +15,6 @@ tags:
 - [[Diagrams Not Yet Implemented]] - `contains` [EXTRACTED]
 - [[Index]] - `contains` [EXTRACTED]
 - [[Priority Reading Order]] - `contains` [EXTRACTED]
-- [[README_83]] - `contains` [EXTRACTED]
+- [[README_120]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/04_Security_diagrams

@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/tests/test_resource_guard_wiring.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "Docker Deploy Scripts"
-location: "L62"
+community: "SOC Services"
+location: "L25"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Docker_Deploy_Scripts
+  - graphify/EXTRACTED
+  - community/SOC_Services
 ---
 
 # Any
 
 ## Connections
-- [[._build_bridge()]] - `references` [EXTRACTED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
+- [[.__init__()_131]] - `references` [EXTRACTED]
+- [[._describe_service()]] - `references` [EXTRACTED]
+- [[._get_engine()]] - `references` [EXTRACTED]
+- [[HealthStatus]] - `uses` [INFERRED]
+- [[ServiceDescriptor]] - `uses` [INFERRED]
+- [[ServiceStatus]] - `uses` [INFERRED]
+- [[_inspect_via_socket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/SOC_Services

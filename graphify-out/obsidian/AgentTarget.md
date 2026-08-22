@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Slack API Proxy"
+community: "Router"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Router
 ---
 
 # AgentTarget
@@ -23,7 +23,6 @@ tags:
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest_1]] - `uses` [INFERRED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[POST forwardstream (streaming voice pipeline)]] - `references` [EXTRACTED]
 - [[RouterConfig_1]] - `uses` [INFERRED]
 - [[RouterError]] - `uses` [INFERRED]
 - [[TestAgentIdPropagatedFromTarget]] - `uses` [INFERRED]
@@ -72,4 +71,4 @@ tags:
 - [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - `calls` [EXTRACTED]
 - [[test_stream_yields_content_deltas_in_order()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/Router

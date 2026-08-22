@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/security/session_security.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L127"
+community: "Session Manager (security)"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Session_Manager_security
 ---
 
 # Any
 
 ## Connections
-- [[.validate_event()]] - `references` [EXTRACTED]
+- [[.add_conversation_message()]] - `references` [EXTRACTED]
+- [[.from_dict()_11]] - `references` [EXTRACTED]
+- [[.get_session_context()]] - `references` [EXTRACTED]
+- [[.reanchor_system_prompt()]] - `references` [EXTRACTED]
+- [[.to_dict()_12]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Session_Manager_security

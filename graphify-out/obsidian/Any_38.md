@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/security/egress_retry.py"
 type: "code"
-community: "Auth & Exception Types"
-location: "L289"
+community: "Egress Retry (security)"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Egress_Retry_security
 ---
 
 # Any
 
 ## Connections
-- [[.get_leakage_summary()]] - `references` [EXTRACTED]
-- [[.monitor_environment_access()]] - `references` [EXTRACTED]
+- [[retry_request()]] - `references` [EXTRACTED]
+- [[retry_request_sync()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/Egress_Retry_security

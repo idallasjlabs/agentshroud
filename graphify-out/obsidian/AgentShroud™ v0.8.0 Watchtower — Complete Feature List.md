@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-feature-list-final.md"
 type: "document"
-community: "Bot Skill Config"
+community: "V0.8.0 Feature List Final (v0.8)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/V080_Feature_List_Final_v08
 ---
 
 # AgentShroud™ v0.8.0 "Watchtower" — Complete Feature List
@@ -24,7 +24,7 @@ tags:
 - [[J. Code Cleanup (5 features)]] - `contains` [EXTRACTED]
 - [[K. Misc Quick Wins (11 features)]] - `contains` [EXTRACTED]
 - [[Moved to v0.9.0 Sentinel]] - `contains` [EXTRACTED]
-- [[Summary_34]] - `contains` [EXTRACTED]
+- [[Summary_15]] - `contains` [EXTRACTED]
 - [[v0.8.0-feature-list-final]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/V080_Feature_List_Final_v08

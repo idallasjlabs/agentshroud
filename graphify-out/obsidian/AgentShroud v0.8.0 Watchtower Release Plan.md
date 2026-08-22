@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Glossary (project)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Glossary_project
 ---
 
 # AgentShroud v0.8.0 "Watchtower" Release Plan
@@ -14,7 +14,7 @@ tags:
 - [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - `conceptually_related_to` [EXTRACTED]
 - [[AgentShroud v0.9.0 Deep Hardening Release Notes]] - `conceptually_related_to` [EXTRACTED]
 - [[AgentShroud v0.9.0 Multi-Runtime & Multi-Platform Release Plan]] - `conceptually_related_to` [EXTRACTED]
-- [[Approval Queue_2]] - `references` [EXTRACTED]
+- [[Approval Queue_1]] - `references` [EXTRACTED]
 - [[Audit Trail_1]] - `references` [EXTRACTED]
 - [[Enforce Mode]] - `references` [EXTRACTED]
 - [[IEC 62443 Industrial Security Framework]] - `references` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[Steven Hay (Security Advisor)]] - `references` [EXTRACTED]
 - [[Trillian (host, x86_64)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Glossary_project

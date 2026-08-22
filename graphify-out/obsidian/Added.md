@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Changelog"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Changelog
 ---
 
 # Added
@@ -32,9 +32,9 @@ tags:
 - [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - `contains` [EXTRACTED]
 - [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - `contains` [EXTRACTED]
 - [[1.2.1 — releasev1.2.1-quality-sweep (2026-06-27)]] - `contains` [EXTRACTED]
-- [[1.3.0 Reliability (2026-07-21)]] - `contains` [EXTRACTED]
-- [[1.5.0 A2A Governance (2026-08-14)]] - `contains` [EXTRACTED]
 - [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - `contains` [EXTRACTED]
 - [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
+- [[v1.3.0 Reliability (2026-07-21)]] - `contains` [EXTRACTED]
+- [[v1.5.0 A2A Governance (2026-08-14)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Changelog

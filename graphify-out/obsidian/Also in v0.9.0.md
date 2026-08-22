@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Planning Docs"
+community: "V0.8.0 Release Plan (v0.8)"
 location: "L397"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/V080_Release_Plan_v08
 ---
 
 # Also in v0.9.0
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[v0.9.0 — Apple Messages Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/V080_Release_Plan_v08

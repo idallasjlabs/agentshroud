@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Alert Dispatcher (security)"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Alert_Dispatcher_security
 ---
 
 # Any
@@ -19,4 +19,4 @@ tags:
 - [[.get_digest()]] - `references` [EXTRACTED]
 - [[.get_stats()_12]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher_security

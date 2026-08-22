@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "skills/openclaw"
+community: "Security Value Proposition (security)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Security_Value_Proposition_security
 ---
 
 # AgentShroud Security Value Proposition
@@ -24,4 +24,4 @@ tags:
 - [[What Should You Do Next]] - `contains` [EXTRACTED]
 - [[Where's The REAL Value]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Security_Value_Proposition_security

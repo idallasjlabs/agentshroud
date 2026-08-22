@@ -1,12 +1,12 @@
 ---
 source_file: "docs/testing/test-plan.md"
 type: "document"
-community: "docs/reference"
+community: "Plan (testing)"
 location: "L2"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/reference
+  - community/Plan_testing
 ---
 
 # AgentShroud v0.9.0
@@ -25,4 +25,4 @@ tags:
 - [[9. Regression Testing]] - `contains` [EXTRACTED]
 - [[Test Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/reference
+#graphify/document #graphify/EXTRACTED #community/Plan_testing

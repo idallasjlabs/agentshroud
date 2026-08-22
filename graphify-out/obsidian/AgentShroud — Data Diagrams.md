@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "03 Data (diagrams)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/03_Data_diagrams
 ---
 
 # AgentShroud — Data Diagrams
@@ -18,4 +18,4 @@ tags:
 - [[8. Entity Relationship Diagram (ERD)]] - `contains` [EXTRACTED]
 - [[9. Data Lineage Diagram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/03_Data_diagrams

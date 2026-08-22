@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/sequence-diagrams.md"
 type: "document"
-community: "branding/colors"
+community: "Sequence Diagrams (flows)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/colors
+  - community/Sequence_Diagrams_flows
 ---
 
 # AgentShroud Sequence Diagrams (doc)
@@ -16,4 +16,4 @@ tags:
 - [[SSH Command Flow (injection check, approval queue, executor, audit)]] - `references` [EXTRACTED]
 - [[Web Fetch Flow (URL analysis, SSRF protection, content scanning)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/colors
+#graphify/document #graphify/EXTRACTED #community/Sequence_Diagrams_flows

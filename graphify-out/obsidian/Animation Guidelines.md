@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Architecture Docs"
+community: "Brand Guidelines (guidelines)"
 location: "L259"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Brand_Guidelines_guidelines
 ---
 
 # Animation Guidelines
@@ -20,4 +20,4 @@ tags:
 - [[Status & Feedback Animations]] - `contains` [EXTRACTED]
 - [[Timing & Easing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Brand_Guidelines_guidelines

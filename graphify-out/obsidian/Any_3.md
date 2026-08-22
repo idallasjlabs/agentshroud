@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/client.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Client (cli)"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Client_cli
 ---
 
 # Any
@@ -18,4 +18,4 @@ tags:
 - [[.post()_2]] - `references` [EXTRACTED]
 - [[.put()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Client_cli

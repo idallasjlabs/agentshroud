@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "MCP Proxy Config"
-location: "L73"
+community: "Network Validator (security)"
+location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Network_Validator_security
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_100]] - `references` [EXTRACTED]
-- [[._compile_patterns()_1]] - `references` [EXTRACTED]
-- [[.get_stats()_17]] - `references` [EXTRACTED]
+- [[._parse_service_network_config()]] - `references` [EXTRACTED]
+- [[._validate_network_definitions()]] - `references` [EXTRACTED]
+- [[.get_security_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/code #graphify/EXTRACTED #community/Network_Validator_security

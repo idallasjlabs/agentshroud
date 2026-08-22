@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "Setup Docs"
+community: "Mcp Audit (proxy)"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Mcp_Audit_proxy
 ---
 
 # Any
@@ -15,4 +15,4 @@ tags:
 - [[.generate_report()]] - `references` [EXTRACTED]
 - [[.log_tool_call()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Setup_Docs
+#graphify/code #graphify/EXTRACTED #community/Mcp_Audit_proxy

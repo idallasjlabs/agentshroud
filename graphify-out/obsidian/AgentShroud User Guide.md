@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "User Guide (docs)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/User_Guide_docs
 ---
 
 # AgentShroud User Guide
@@ -22,4 +22,4 @@ tags:
 - [[What is AgentShroud_3]] - `contains` [EXTRACTED]
 - [[user-guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/User_Guide_docs

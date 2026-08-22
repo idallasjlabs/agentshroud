@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Planning Docs"
+community: "Claude"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Claude
 ---
 
 # Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)
@@ -18,7 +18,6 @@ tags:
 - [[10) CLAUDE CODE OPERATIONAL RULES]] - `contains` [EXTRACTED]
 - [[2) ⚠️ NO SECURITY THEATER (NON-NEGOTIABLE)]] - `contains` [EXTRACTED]
 - [[3) SDLC — HOW TO WORK IN THIS REPO]] - `contains` [EXTRACTED]
-- [[4) LANGUAGE & TOOLING STANDARDS]] - `contains` [EXTRACTED]
 - [[4) TEST-DRIVEN DEVELOPMENT (DEFAULT)]] - `contains` [EXTRACTED]
 - [[5) LANGUAGE & TOOLING STANDARDS]] - `contains` [EXTRACTED]
 - [[6) SECURITY & SAFETY REQUIREMENTS]] - `contains` [EXTRACTED]
@@ -28,4 +27,4 @@ tags:
 - [[CLAUDE]] - `contains` [EXTRACTED]
 - [[KNOWLEDGE MAP — READ THIS FIRST]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Claude

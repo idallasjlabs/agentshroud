@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
+source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-apollo)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-apollo
 ---
 
 # Apollo — Audio Systems Producer
@@ -15,8 +15,8 @@ tags:
 - [[Input Requirements_10]] - `contains` [EXTRACTED]
 - [[Output_2]] - `contains` [EXTRACTED]
 - [[Quality Checklist_9]] - `contains` [EXTRACTED]
-- [[Role_40]] - `contains` [EXTRACTED]
-- [[SKILL_66]] - `contains` [EXTRACTED]
+- [[Role_41]] - `contains` [EXTRACTED]
+- [[SKILL_67]] - `contains` [EXTRACTED]
 - [[Technical Specification_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-apollo

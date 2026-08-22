@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/apple-notes/SKILL.md"
 type: "document"
-community: "ESP32 Firmware"
+community: "Skill (bear-notes)"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Skill_bear-notes
 ---
 
 # Apple Notes CLI
 
 ## Connections
-- [[SKILL_131]] - `contains` [EXTRACTED]
+- [[SKILL_195]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Skill_bear-notes

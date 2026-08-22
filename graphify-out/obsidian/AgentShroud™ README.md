@@ -1,11 +1,11 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "skills/openclaw"
+community: "Readme"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Readme
 ---
 
 # AgentShroud™ README
@@ -15,11 +15,10 @@ tags:
 - [[AgentShroud™ Security Policy]] - `references` [EXTRACTED]
 - [[Architecture]] - `references` [EXTRACTED]
 - [[Control Centers]] - `references` [EXTRACTED]
-- [[GitHub Pages Deploy Workflow_1]] - `conceptually_related_to` [INFERRED]
+- [[GitHub Pages Deploy Workflow]] - `conceptually_related_to` [INFERRED]
 - [[Hermes Bot]] - `references` [EXTRACTED]
 - [[OpenClaw Bot]] - `references` [EXTRACTED]
 - [[Quickstart]] - `references` [EXTRACTED]
-- [[Release Workflow]] - `conceptually_related_to` [INFERRED]
 - [[Trademark]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Readme

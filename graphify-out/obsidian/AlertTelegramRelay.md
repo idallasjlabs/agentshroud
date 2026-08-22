@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Alert Telegram Relay"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Alert_Telegram_Relay
 ---
 
 # AlertTelegramRelay
 
 ## Connections
 - [[.__call__()]] - `method` [EXTRACTED]
-- [[.__init__()_8]] - `method` [EXTRACTED]
+- [[.__init__()_9]] - `method` [EXTRACTED]
 - [[._clean_tool()]] - `method` [EXTRACTED]
 - [[._coerce()]] - `method` [EXTRACTED]
 - [[._dedup_key()]] - `method` [EXTRACTED]
@@ -46,4 +46,4 @@ tags:
 - [[test_warning_alert_relayed_with_orange_marker()]] - `calls` [EXTRACTED]
 - [[test_warning_flood_cannot_starve_critical()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Alert_Telegram_Relay

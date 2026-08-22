@@ -1,19 +1,19 @@
 ---
 source_file: "docs/planning/redteam/00-information-disclosure.md"
 type: "document"
-community: "Planning Docs"
+community: "00 Information Disclosure (redteam)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/00_Information_Disclosure_redteam
 ---
 
 # Add information filtering to prevent agent self-disclosure
 
 ## Connections
 - [[00-information-disclosure]] - `contains` [EXTRACTED]
-- [[Constraints_2]] - `contains` [EXTRACTED]
+- [[Constraints_3]] - `contains` [EXTRACTED]
 - [[Evidence]] - `contains` [EXTRACTED]
 - [[Problem_3]] - `contains` [EXTRACTED]
 - [[Remediation_1]] - `contains` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[Severity_3]] - `contains` [EXTRACTED]
 - [[Verification_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/00_Information_Disclosure_redteam

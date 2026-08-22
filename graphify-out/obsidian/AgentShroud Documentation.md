@@ -1,18 +1,18 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (docs)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_docs
 ---
 
 # AgentShroud Documentation
 
 ## Connections
-- [[README_80]] - `contains` [EXTRACTED]
+- [[README_117]] - `contains` [EXTRACTED]
 - [[🎯 Use Cases]] - `contains` [EXTRACTED]
 - [[📋 Current Status]] - `contains` [EXTRACTED]
 - [[📚 Documentation Structure]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[🗂️ Archive]] - `contains` [EXTRACTED]
 - [[🚀 Quick Start]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_docs

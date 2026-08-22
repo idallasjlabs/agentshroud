@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
+source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "web/management-dashboard.html"
+community: "Skill (i-sec-offense)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web/management-dashboardhtml
+  - community/Skill_i-sec-offense
 ---
 
 # AgentShroud Red Team Adversarial Tester
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Adversary Model]] - `contains` [EXTRACTED]
 - [[Attack Phases]] - `contains` [EXTRACTED]
-- [[Critical Rules_3]] - `contains` [EXTRACTED]
-- [[Infrastructure_1]] - `contains` [EXTRACTED]
+- [[Critical Rules_2]] - `contains` [EXTRACTED]
+- [[Infrastructure]] - `contains` [EXTRACTED]
 - [[Output_1]] - `contains` [EXTRACTED]
-- [[SKILL_51]] - `contains` [EXTRACTED]
+- [[SKILL_52]] - `contains` [EXTRACTED]
 - [[Writing Exploit Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web/management-dashboardhtml
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-offense

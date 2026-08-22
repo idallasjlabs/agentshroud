@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Coverage Report (testing)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Coverage_Report_testing
 ---
 
 # Agentic OS Architecture Doc (91 security-dir files / 75 wired)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Test Coverage Report (AgentShroud v1.3.0)]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Coverage_Report_testing

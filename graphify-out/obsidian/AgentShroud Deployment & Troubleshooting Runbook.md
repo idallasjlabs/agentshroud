@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Runbook (runbooks)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Runbook_runbooks
 ---
 
 # AgentShroud Deployment & Troubleshooting Runbook
@@ -16,10 +16,10 @@ tags:
 - [[Check Gateway Health]] - `contains` [EXTRACTED]
 - [[Deploy Latest Code (Any Host)]] - `contains` [EXTRACTED]
 - [[Deploy to Production]] - `contains` [EXTRACTED]
-- [[Infrastructure_6]] - `contains` [EXTRACTED]
+- [[Infrastructure_8]] - `contains` [EXTRACTED]
 - [[Quick Restart (No Rebuild)]] - `contains` [EXTRACTED]
 - [[RUNBOOK]] - `contains` [EXTRACTED]
 - [[Run Tests on Any Host]] - `contains` [EXTRACTED]
-- [[Troubleshooting_17]] - `contains` [EXTRACTED]
+- [[Troubleshooting_21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Runbook_runbooks

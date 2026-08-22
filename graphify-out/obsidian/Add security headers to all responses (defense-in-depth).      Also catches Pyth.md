@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Competitive Intel Store"
+community: "Ingest API Main & Models"
 location: "L353"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Ingest_API_Main__Models
 ---
 
 # Add security headers to all responses (defense-in-depth).      Also catches Pyth
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security_headers_middleware()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/rationale #graphify/EXTRACTED #community/Ingest_API_Main__Models

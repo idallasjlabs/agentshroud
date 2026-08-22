@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "Setup Docs"
+community: "Channel Ownership"
 location: "L307"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Channel_Ownership
 ---
 
 # All responses include an ISO 8601 timestamp.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_response_has_timestamp()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Setup_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Channel_Ownership

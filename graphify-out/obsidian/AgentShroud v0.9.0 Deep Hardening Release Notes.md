@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Glossary (project)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Glossary_project
 ---
 
 # AgentShroud v0.9.0 "Deep Hardening" Release Notes
@@ -22,4 +22,4 @@ tags:
 - [[STPA-Sec (Systems-Theoretic Process Analysis for Security)]] - `references` [EXTRACTED]
 - [[Steven Hay (Security Advisor)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Glossary_project

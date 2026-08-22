@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Gateway Security Module"
-location: "L56"
+community: "Output Canary"
+location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Output_Canary
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_107]] - `references` [EXTRACTED]
-- [[.get_protection_stats()]] - `references` [EXTRACTED]
+- [[._scan_for_canary()]] - `references` [EXTRACTED]
+- [[.get_status()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Output_Canary

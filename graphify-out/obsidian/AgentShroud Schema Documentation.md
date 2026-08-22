@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "document"
-community: "Planning Docs"
+community: "Schema Documentation (data)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Schema_Documentation_data
 ---
 
 # AgentShroud Schema Documentation
@@ -18,4 +18,4 @@ tags:
 - [[SQLite Database Schema]] - `contains` [EXTRACTED]
 - [[schema-documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Schema_Documentation_data

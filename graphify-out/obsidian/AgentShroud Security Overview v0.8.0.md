@@ -1,19 +1,21 @@
 ---
-source_file: "docs/agentshroud-security-overview-v0.8.0.md"
+source_file: "docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md"
 type: "document"
-community: "gateway/tools"
+community: "Release Announcement V1.0.0 (v1.0)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gateway/tools
+  - community/Release_Announcement_V100_v10
 ---
 
 # AgentShroud Security Overview v0.8.0
 
 ## Connections
-- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - `informs` [INFERRED]
-- [[HeuristicClassifier renamed from ml_classifier (DistilBERT claimed but heuristic only)]] - `documents` [EXTRACTED]
-- [[v0.8.0 Security Finding Remediation 19 findings resolved (CRITICAL through LOW)]] - `documents` [EXTRACTED]
-- [[v0.8.0 Test Result 2263 passed, 0 failed, 0 skipped]] - `documents` [EXTRACTED]
+- [[Before & After Security Finding Remediation]] - `contains` [EXTRACTED]
+- [[Memory Refresh Context]] - `contains` [EXTRACTED]
+- [[Security Assessment v0.8.0]] - `references` [EXTRACTED]
+- [[Test Coverage Summary (Post-Remediation)]] - `contains` [EXTRACTED]
+- [[agentshroud-security-overview-v0.8.0]] - `contains` [EXTRACTED]
+- [[v0.9.0  v1.0.0 Roadmap]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gateway/tools
+#graphify/document #graphify/EXTRACTED #community/Release_Announcement_V100_v10

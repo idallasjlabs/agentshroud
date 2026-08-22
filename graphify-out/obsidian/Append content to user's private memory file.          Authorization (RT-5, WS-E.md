@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Shared Memory Write Acl"
 location: "L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Shared_Memory_Write_Acl
 ---
 
 # Append content to user's private memory file.          Authorization (RT-5, WS-E
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.append_to_user_memory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Shared_Memory_Write_Acl

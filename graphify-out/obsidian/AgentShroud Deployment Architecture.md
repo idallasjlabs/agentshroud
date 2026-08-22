@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "scripts/generate_branding_assets.py"
+community: "Deployment Diagram (architecture)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/generate_branding_assetspy
+  - community/Deployment_Diagram_architecture
 ---
 
 # AgentShroud Deployment Architecture
@@ -15,10 +15,10 @@ tags:
 - [[Deployment Modes]] - `contains` [EXTRACTED]
 - [[Multi-Runtime Support_1]] - `contains` [EXTRACTED]
 - [[Network Topology]] - `contains` [EXTRACTED]
-- [[Overview_5]] - `contains` [EXTRACTED]
+- [[Overview_6]] - `contains` [EXTRACTED]
 - [[Port Mappings and Auto-Detection]] - `contains` [EXTRACTED]
 - [[Volume Mounts and Secrets Management]] - `contains` [EXTRACTED]
 - [[Zero-Configuration Deployment]] - `contains` [EXTRACTED]
 - [[deployment-diagram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/generate_branding_assetspy
+#graphify/document #graphify/EXTRACTED #community/Deployment_Diagram_architecture

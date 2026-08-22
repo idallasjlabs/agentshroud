@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Audit Specification (security)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Audit_Specification_security
 ---
 
 # AgentShroud Audit Specification
@@ -15,10 +15,10 @@ tags:
 - [[Audit Event Types and Schema]] - `contains` [EXTRACTED]
 - [[Compliance Mapping]] - `contains` [EXTRACTED]
 - [[Hash Chain Structure_1]] - `contains` [EXTRACTED]
-- [[Overview_12]] - `contains` [EXTRACTED]
+- [[Overview_13]] - `contains` [EXTRACTED]
 - [[Performance and Scalability]] - `contains` [EXTRACTED]
 - [[Query Capabilities]] - `contains` [EXTRACTED]
 - [[Retention Policies]] - `contains` [EXTRACTED]
 - [[audit-specification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Audit_Specification_security

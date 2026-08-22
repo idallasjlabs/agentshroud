@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "Collaborator Prompt Safety"
+community: "Mcp Permissions"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Safety
+  - community/Mcp_Permissions
 ---
 
 # Any
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_dict()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Safety
+#graphify/code #graphify/EXTRACTED #community/Mcp_Permissions

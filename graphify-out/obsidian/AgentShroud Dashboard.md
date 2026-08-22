@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "ESP32 Firmware"
+community: "Readme (dashboard)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Readme_dashboard
 ---
 
 # AgentShroud Dashboard
@@ -15,7 +15,7 @@ tags:
 - [[Components (to be implemented in Week 2)]] - `contains` [EXTRACTED]
 - [[Features_1]] - `contains` [EXTRACTED]
 - [[Implementation Status_1]] - `contains` [EXTRACTED]
-- [[README_3]] - `contains` [EXTRACTED]
+- [[README_40]] - `contains` [EXTRACTED]
 - [[Tech Stack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Readme_dashboard

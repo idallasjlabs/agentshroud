@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Hardening"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Hardening
 ---
 
 # AgentRegistry
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_48]] - `method` [EXTRACTED]
-- [[.__init__()_49]] - `references` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_51]] - `method` [EXTRACTED]
+- [[.__init__()_52]] - `references` [EXTRACTED]
 - [[.from_dict()_3]] - `method` [EXTRACTED]
 - [[.get()_3]] - `method` [EXTRACTED]
 - [[.list_agents()]] - `method` [EXTRACTED]
@@ -44,7 +44,7 @@ tags:
 - [[.test_unregister_missing_returns_none()]] - `calls` [EXTRACTED]
 - [[.test_unregister_removes_agent()]] - `calls` [EXTRACTED]
 - [[.test_writable_root_flagged()]] - `calls` [EXTRACTED]
-- [[.to_dict()_3]] - `method` [EXTRACTED]
+- [[.to_dict()_4]] - `method` [EXTRACTED]
 - [[.unregister()]] - `method` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any_8]] - `uses` [INFERRED]
@@ -84,4 +84,4 @@ tags:
 - [[test_group_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Hardening

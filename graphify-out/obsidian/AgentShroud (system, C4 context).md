@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-01-c4-context.svg"
 type: "image"
-community: "Gateway Test Suite"
+community: "Diagram 01 C4 Context (images)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Diagram_01_C4_Context_images
 ---
 
 # AgentShroud (system, C4 context)
@@ -21,4 +21,4 @@ tags:
 - [[Tailscale (encrypted overlay network)]] - `shares_data_with` [EXTRACTED]
 - [[Telegram (external system)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/image #graphify/EXTRACTED #community/Diagram_01_C4_Context_images

@@ -1,18 +1,18 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "docs/runbooks"
+community: "Prerequisites (reference)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Prerequisites_reference
 ---
 
 # AgentShroud Prerequisites
 
 ## Connections
-- [[Overview_9]] - `contains` [EXTRACTED]
+- [[Overview_10]] - `contains` [EXTRACTED]
 - [[PREREQUISITES]] - `contains` [EXTRACTED]
 - [[✅ Setup Checklist]] - `contains` [EXTRACTED]
 - [[✅ Your Current Setup Status]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[🗂️ File Structure]] - `contains` [EXTRACTED]
 - [[🚀 Quick Start Command]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Prerequisites_reference

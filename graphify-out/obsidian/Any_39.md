@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "Bot Container Scripts"
-location: "L67"
+community: "Git Guard (security)"
+location: "L289"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Git_Guard_security
 ---
 
 # Any
 
 ## Connections
-- [[._handle_critical()]] - `references` [EXTRACTED]
-- [[categorize_alerts()]] - `references` [EXTRACTED]
-- [[generate_summary()_1]] - `references` [EXTRACTED]
-- [[parse_alert()]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[.get_leakage_summary()]] - `references` [EXTRACTED]
+- [[.monitor_environment_access()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/Git_Guard_security

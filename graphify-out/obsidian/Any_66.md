@@ -1,28 +1,25 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Community 1513"
-location: "L58"
+community: "Event Adapter (soc)"
+location: "L23"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1513
+  - graphify/EXTRACTED
+  - community/Event_Adapter_soc
 ---
 
 # Any
 
 ## Connections
-- [[AuditLogEntry]] - `uses` [INFERRED]
-- [[AuditResult]] - `uses` [INFERRED]
-- [[ContributorManager]] - `uses` [INFERRED]
-- [[SCLCaller]] - `uses` [INFERRED]
-- [[SCLConfirmationRequired]] - `uses` [INFERRED]
-- [[SCLError]] - `uses` [INFERRED]
-- [[SCLInterface]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
+- [[SecurityEvent_1]] - `uses` [INFERRED]
 - [[Severity_2]] - `uses` [INFERRED]
-- [[WSEventType]] - `uses` [INFERRED]
-- [[_log_audit()]] - `references` [EXTRACTED]
-- [[auth_ws_token()]] - `references` [EXTRACTED]
+- [[_map_severity()]] - `references` [EXTRACTED]
+- [[collect_recent_events()]] - `references` [EXTRACTED]
+- [[from_anomaly_alert()]] - `references` [EXTRACTED]
+- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
+- [[from_dict()]] - `references` [EXTRACTED]
+- [[from_egress_attempt()]] - `references` [EXTRACTED]
+- [[from_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1513
+#graphify/code #graphify/EXTRACTED #community/Event_Adapter_soc

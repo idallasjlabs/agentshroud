@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "docker/README.md"
+community: "Readme (docker)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/READMEmd
+  - community/Readme_docker
 ---
 
 # AgentShroud Docker Configuration
@@ -23,12 +23,12 @@ tags:
 - [[Next Steps (Phase 4+)]] - `contains` [EXTRACTED]
 - [[Progressive-Trust Enforcement Mode (SCRUM-78)]] - `contains` [EXTRACTED]
 - [[Quick Start_1]] - `contains` [EXTRACTED]
-- [[README_4]] - `contains` [EXTRACTED]
+- [[README_41]] - `contains` [EXTRACTED]
 - [[Reference]] - `contains` [EXTRACTED]
 - [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - `contains` [EXTRACTED]
 - [[Security Features (Deferred to Phase 5+)]] - `contains` [EXTRACTED]
 - [[Startup Warnings Reference]] - `contains` [EXTRACTED]
-- [[Troubleshooting_1]] - `contains` [EXTRACTED]
-- [[Usage]] - `contains` [EXTRACTED]
+- [[Troubleshooting_5]] - `contains` [EXTRACTED]
+- [[Usage_40]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Readme_docker

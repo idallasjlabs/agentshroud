@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
-location: "L187"
+community: "Prompt Protection (security)"
+location: "L56"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Approval__FastAPI_Ingest
+  - graphify/EXTRACTED
+  - community/Prompt_Protection_security
 ---
 
 # Any
 
 ## Connections
-- [[.check_permission()]] - `references` [EXTRACTED]
-- [[.get_user_permissions_summary()]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[.__init__()_110]] - `references` [EXTRACTED]
+- [[.get_protection_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/Prompt_Protection_security

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Kill Switch Config"
+community: "Approval Hardening (security)"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Kill_Switch_Config
+  - community/Approval_Hardening_security
 ---
 
 # Any
@@ -23,4 +23,4 @@ tags:
 - [[.is_request_in_cooldown()]] - `references` [EXTRACTED]
 - [[.record_denied_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Config
+#graphify/code #graphify/EXTRACTED #community/Approval_Hardening_security

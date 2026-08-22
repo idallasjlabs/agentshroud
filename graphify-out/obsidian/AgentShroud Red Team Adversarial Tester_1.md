@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "docs/vault"
+community: "Skill (i-sec-offense)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skill_i-sec-offense
 ---
 
 # AgentShroud Red Team Adversarial Tester
@@ -17,7 +17,7 @@ tags:
 - [[Critical Rules_6]] - `contains` [EXTRACTED]
 - [[Infrastructure_3]] - `contains` [EXTRACTED]
 - [[Output_3]] - `contains` [EXTRACTED]
-- [[SKILL_114]] - `contains` [EXTRACTED]
+- [[SKILL_115]] - `contains` [EXTRACTED]
 - [[Writing Exploit Tests_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-offense

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/01-architecture.md"
 type: "document"
-community: "Bot Skill Config"
+community: "01 Architecture (diagrams)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/01_Architecture_diagrams
 ---
 
 # AgentShroud — Architecture Diagrams
@@ -17,4 +17,4 @@ tags:
 - [[2. C4 Level 1 — Container Diagram]] - `contains` [EXTRACTED]
 - [[3. Architecture Component Diagram — Gateway internals]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/01_Architecture_diagrams

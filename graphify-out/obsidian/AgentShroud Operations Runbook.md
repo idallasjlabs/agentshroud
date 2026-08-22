@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Runbook (operations)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Runbook_operations
 ---
 
 # AgentShroud Operations Runbook
@@ -20,11 +20,11 @@ tags:
 - [[6. System Updates]] - `contains` [EXTRACTED]
 - [[7. Backup and Restore Procedures]] - `contains` [EXTRACTED]
 - [[8. Common Troubleshooting Scenarios]] - `contains` [EXTRACTED]
-- [[AgentShroud Deployment Procedure]] - `references` [INFERRED]
+- [[AgentShroud Deployment Procedure]] - `conceptually_related_to` [INFERRED]
 - [[AgentShroud Incident Response Plan]] - `references` [EXTRACTED]
 - [[Kill Switch (FREEZESHUTDOWNDISCONNECT)]] - `references` [EXTRACTED]
 - [[System Architecture Overview]] - `contains` [EXTRACTED]
 - [[Trust Manager  Progressive Trust System]] - `references` [EXTRACTED]
 - [[runbook]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Runbook_operations

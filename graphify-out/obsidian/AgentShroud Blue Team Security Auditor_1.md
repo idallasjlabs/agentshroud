@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "branding/guidelines"
+community: "Skill (i-sec-defense)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/Skill_i-sec-defense
 ---
 
 # AgentShroud Blue Team Security Auditor
@@ -17,6 +17,6 @@ tags:
 - [[Infrastructure_2]] - `contains` [EXTRACTED]
 - [[Methodology_1]] - `contains` [EXTRACTED]
 - [[Output Format_22]] - `contains` [EXTRACTED]
-- [[SKILL_113]] - `contains` [EXTRACTED]
+- [[SKILL_114]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/guidelines
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense

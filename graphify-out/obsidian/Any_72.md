@@ -1,22 +1,23 @@
 ---
-source_file: "gateway/tools/agentshroud_manager.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "CHANGELOG.md"
-location: "L68"
+community: "RBAC & Ingest Middleware"
+location: "L726"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - graphify/INFERRED
+  - community/RBAC__Ingest_Middleware
 ---
 
 # Any
 
 ## Connections
-- [[check_current_version()]] - `references` [EXTRACTED]
-- [[downgrade()]] - `references` [EXTRACTED]
-- [[list_versions()]] - `references` [EXTRACTED]
-- [[rollback()]] - `references` [EXTRACTED]
-- [[security_review()]] - `references` [EXTRACTED]
-- [[upgrade()]] - `references` [EXTRACTED]
+- [[._handler()]] - `references` [EXTRACTED]
+- [[Action_1]] - `uses` [INFERRED]
+- [[PermissionResult]] - `uses` [INFERRED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Resource_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[SOCWebSocketHandler]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware

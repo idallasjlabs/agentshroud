@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.0/ROADMAP-POST-v1.0.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Roadmap Post V1.0 (v1.0)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Roadmap_Post_V10_v10
 ---
 
 # Apple Platform Integration
@@ -18,4 +18,4 @@ tags:
 - [[Implementation Notes_1]] - `contains` [EXTRACTED]
 - [[Push Notifications (iPhone + Mac + Apple Watch)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Roadmap_Post_V10_v10

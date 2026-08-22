@@ -1,24 +1,25 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Tool Chain Analyzer"
-location: "L25"
+community: "Router (soc)"
+location: "L58"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Tool_Chain_Analyzer
+  - community/Router_soc
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_127]] - `references` [EXTRACTED]
-- [[._describe_service()]] - `references` [EXTRACTED]
-- [[._get_engine()]] - `references` [EXTRACTED]
-- [[HealthStatus]] - `uses` [INFERRED]
-- [[ResourceUsage_1]] - `uses` [INFERRED]
-- [[ServiceDescriptor]] - `uses` [INFERRED]
-- [[ServiceStatus]] - `uses` [INFERRED]
-- [[_inspect_via_socket()]] - `references` [EXTRACTED]
+- [[AuditLogEntry]] - `uses` [INFERRED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
+- [[_log_audit()]] - `references` [EXTRACTED]
+- [[auth_ws_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Tool_Chain_Analyzer
+#graphify/code #graphify/INFERRED #community/Router_soc

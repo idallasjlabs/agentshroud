@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "README.md"
+community: "Apple Engine (runtime)"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/READMEmd
+  - community/Apple_Engine_runtime
 ---
 
 # AppleContainerEngine
 
 ## Connections
-- [[.__init__()_44]] - `method` [EXTRACTED]
+- [[.__init__()_46]] - `method` [EXTRACTED]
 - [[._cmd()]] - `method` [EXTRACTED]
 - [[.build()]] - `method` [EXTRACTED]
 - [[.compose_down()]] - `method` [EXTRACTED]
@@ -54,6 +54,8 @@ tags:
 - [[TestWebAPI]] - `uses` [INFERRED]
 - [[__init__.py_8]] - `imports` [EXTRACTED]
 - [[apple_engine.py]] - `contains` [EXTRACTED]
+- [[generate_apple_script()]] - `references` [EXTRACTED]
+- [[get_engine]] - `calls` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Apple_Engine_runtime

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Sync Cve Registry (scripts)"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Sync_Cve_Registry_scripts
 ---
 
 # Append new_entries to AGENT_CVE_REGISTRY (OpenClaw).  Returns count appended.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[append_to_registry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Sync_Cve_Registry_scripts

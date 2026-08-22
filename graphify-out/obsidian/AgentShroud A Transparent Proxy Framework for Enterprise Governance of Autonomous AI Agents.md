@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Architecture Docs"
+community: "Agentshroud Ieee Paper (papers)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Agentshroud_Ieee_Paper_papers
 ---
 
 # AgentShroud: A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents
@@ -26,4 +26,4 @@ tags:
 - [[X. Conclusion and Future Work]] - `contains` [EXTRACTED]
 - [[agentshroud-ieee-paper]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Agentshroud_Ieee_Paper_papers

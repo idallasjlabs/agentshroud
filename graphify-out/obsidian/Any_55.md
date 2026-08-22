@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L182"
+community: "RBAC & Ingest Middleware"
+location: "L187"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - graphify/INFERRED
+  - community/RBAC__Ingest_Middleware
 ---
 
 # Any
 
 ## Connections
-- [[.get()_4]] - `references` [EXTRACTED]
-- [[.list()]] - `references` [EXTRACTED]
+- [[.check_permission()]] - `references` [EXTRACTED]
+- [[.get_user_permissions_summary()]] - `references` [EXTRACTED]
+- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[Role_1]] - `uses` [INFERRED]
+- [[ToolTier_2]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware

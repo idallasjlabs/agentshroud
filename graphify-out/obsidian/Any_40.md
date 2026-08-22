@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Collaborator Response Templates"
-location: "L439"
+community: "Falco Monitor (security)"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Falco_Monitor_security
 ---
 
 # Any
 
 ## Connections
-- [[.get_findings_summary()]] - `references` [EXTRACTED]
+- [[._handle_critical()]] - `references` [EXTRACTED]
+- [[categorize_alerts()]] - `references` [EXTRACTED]
+- [[generate_summary()_1]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/code #graphify/EXTRACTED #community/Falco_Monitor_security

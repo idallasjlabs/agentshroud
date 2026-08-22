@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/README.md"
+source_file: "docker/config/hermes/skills/i-apollo/README.md"
 type: "document"
-community: "skills/openclaw"
+community: "Readme (i-apollo)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Readme_i-apollo
 ---
 
 # Apollo — Audio Systems Producer
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_40]] - `contains` [EXTRACTED]
 - [[Usage_42]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Readme_i-apollo

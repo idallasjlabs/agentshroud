@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: ".github/agents"
+community: "Communication Templates (legal)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/github/agents
+  - community/Communication_Templates_legal
 ---
 
 # AgentShroud™ Communication Templates
@@ -20,4 +20,4 @@ tags:
 - [[Option 4 — Documentation Footer]] - `contains` [EXTRACTED]
 - [[Usage Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/github/agents
+#graphify/document #graphify/EXTRACTED #community/Communication_Templates_legal

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Security Docs"
+community: "Uspto Provisional Patent Application (docs)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Uspto_Provisional_Patent_Application_docs
 ---
 
 # AgentShroud -- USPTO Provisional Patent Application
@@ -21,4 +21,4 @@ tags:
 - [[SECTION 7 FILING CHECKLIST]] - `contains` [EXTRACTED]
 - [[USPTO_PROVISIONAL_PATENT_APPLICATION]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Uspto_Provisional_Patent_Application_docs

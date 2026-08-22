@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
 type: "document"
-community: "CLAUDE.md"
+community: "Enforcement Audit V0.7.0 (reviews)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CLAUDEmd
+  - community/Enforcement_Audit_V070_reviews
 ---
 
 # AgentShroud v0.7.0 Enforcement Audit Results
@@ -16,7 +16,7 @@ tags:
 - [[ContextGuard (context window poisoning defense)]] - `references` [EXTRACTED]
 - [[Egress Filter  SSRF Protection]] - `references` [EXTRACTED]
 - [[End-to-End Verification]] - `contains` [EXTRACTED]
-- [[File Sandbox (path allowblock lists)]] - `references` [EXTRACTED]
+- [[FileSandbox (path isolation)]] - `references` [EXTRACTED]
 - [[GitGuard (supply-chain hook scanning)]] - `references` [EXTRACTED]
 - [[Known Gaps (Documented for v0.8.0)]] - `contains` [EXTRACTED]
 - [[P0 — Critical Path (1616 ✅)]] - `contains` [EXTRACTED]
@@ -24,12 +24,12 @@ tags:
 - [[P2 — Infrastructure (1010 ✅)]] - `contains` [EXTRACTED]
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
 - [[PromptGuard (Prompt Injection Defense)]] - `references` [EXTRACTED]
-- [[RBAC — Role-Based Access Control]] - `references` [EXTRACTED]
-- [[Summary_25]] - `contains` [EXTRACTED]
+- [[RBAC (Role-Based Access Control)]] - `references` [EXTRACTED]
+- [[Summary_6]] - `contains` [EXTRACTED]
 - [[Trust Manager  Progressive Trust System]] - `references` [EXTRACTED]
 - [[Verdict ✅ CONDITIONAL GO]] - `contains` [EXTRACTED]
 - [[XMLFunction-Call Leak Filter]] - `references` [EXTRACTED]
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `references` [EXTRACTED]
 - [[enforcement-audit-v0.7.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CLAUDEmd
+#graphify/document #graphify/EXTRACTED #community/Enforcement_Audit_V070_reviews

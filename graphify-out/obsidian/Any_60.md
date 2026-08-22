@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/security/session_security.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
-location: "L44"
+community: "Session Security"
+location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Session_Security
 ---
 
 # Any
 
 ## Connections
-- [[.to_dict()_12]] - `references` [EXTRACTED]
+- [[.validate_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Session_Security

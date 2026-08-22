@@ -1,18 +1,20 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
-type: "concept"
-community: "Planning Docs"
+source_file: "docker/config/openclaw/skills/i-apollo/README.md"
+type: "document"
+community: "Readme (i-apollo)"
+location: "L1"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Readme_i-apollo
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
-- [[Athena — Knowledge Distiller_4]] - `shares_data_with` [EXTRACTED]
-- [[Mnemosyne — Retention Engineer_4]] - `shares_data_with` [EXTRACTED]
-- [[Vulcan — Subject Matter Auditor_4]] - `shares_data_with` [EXTRACTED]
+- [[Purpose_74]] - `contains` [EXTRACTED]
+- [[README_79]] - `contains` [EXTRACTED]
+- [[Related Skills_80]] - `contains` [EXTRACTED]
+- [[Usage_82]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_i-apollo

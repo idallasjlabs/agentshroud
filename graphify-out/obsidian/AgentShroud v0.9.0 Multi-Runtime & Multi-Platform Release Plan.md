@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/v0.9/v0.9.0-release-plan.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Glossary (project)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Glossary_project
 ---
 
 # AgentShroud v0.9.0 Multi-Runtime & Multi-Platform Release Plan
@@ -19,4 +19,4 @@ tags:
 - [[Raspberry Pi (host, arm64, low-resource)]] - `references` [EXTRACTED]
 - [[Trillian (host, x86_64)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Glossary_project
