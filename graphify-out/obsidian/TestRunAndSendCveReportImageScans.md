@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Gateway Ingest API"
+community: "Daily Cve Report"
 location: "L985"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Ingest_API
+  - community/Daily_Cve_Report
 ---
 
 # TestRunAndSendCveReportImageScans
@@ -19,4 +19,4 @@ tags:
 - [[.test_image_scans_run_for_each_target()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Ingest_API
+#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report

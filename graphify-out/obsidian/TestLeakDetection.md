@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "docs/diagrams"
+community: "Credential Injector"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Credential_Injector
 ---
 
 # TestLeakDetection
@@ -21,4 +21,4 @@ tags:
 - [[.test_slack_token_detected()]] - `method` [EXTRACTED]
 - [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/diagrams
+#graphify/code #graphify/EXTRACTED #community/Credential_Injector

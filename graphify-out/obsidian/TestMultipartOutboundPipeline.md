@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "SECURITY.md"
+community: "Telegram Proxy Outbound"
 location: "L5019"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SECURITYmd
+  - community/Telegram_Proxy_Outbound
 ---
 
 # TestMultipartOutboundPipeline
@@ -28,4 +28,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SECURITYmd
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Outbound

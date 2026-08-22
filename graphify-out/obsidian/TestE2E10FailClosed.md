@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Audit Export Pipeline"
+community: "Security Audit & Watchtower Tests"
 location: "L356"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Audit_Export_Pipeline
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # TestE2E10FailClosed
@@ -28,4 +28,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Audit_Export_Pipeline
+#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests

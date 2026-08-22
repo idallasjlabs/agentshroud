@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
-location: "L339"
+community: "RBAC & Ingest Middleware"
+location: "L338"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval__FastAPI_Ingest
+  - community/RBAC__Ingest_Middleware
 ---
 
 # TestRBACIntegration
@@ -19,17 +19,14 @@ tags:
 - [[.test_rbac_handles_missing_user_id()]] - `method` [EXTRACTED]
 - [[.test_rbac_initialization_in_middleware()]] - `method` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
-- [[Group]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[PermissionResult]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
-- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
 - [[Test RBAC integration with middleware.]] - `rationale_for` [EXTRACTED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware

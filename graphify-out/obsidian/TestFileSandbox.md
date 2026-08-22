@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Privilege Separation & File Sandbox"
 location: "L482"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Privilege_Separation__File_Sandbox
 ---
 
 # TestFileSandbox
@@ -33,7 +33,6 @@ tags:
 - [[.test_write_to_system_dir_blocked()]] - `method` [EXTRACTED]
 - [[.test_write_to_tmp_allowed()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
-- [[CanaryResult]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -69,4 +68,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Privilege_Separation__File_Sandbox

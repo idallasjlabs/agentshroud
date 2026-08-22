@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "OAuth & Metadata Guard"
 location: "L603"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/OAuth__Metadata_Guard
 ---
 
 # TestNetworkSecurity
@@ -24,7 +24,6 @@ tags:
 - [[.test_network_validator_importable()]] - `method` [EXTRACTED]
 - [[.test_oauth_redirect_mismatch()]] - `method` [EXTRACTED]
 - [[AlertDispatcher]] - `uses` [INFERRED]
-- [[CanaryResult]] - `uses` [INFERRED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[ConsentDecision]] - `uses` [INFERRED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
@@ -60,4 +59,4 @@ tags:
 - [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/OAuth__Metadata_Guard

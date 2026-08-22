@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_schema.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Output Schema"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Output_Schema
 ---
 
 # TestOutputSchemaEnforcer
@@ -21,7 +21,6 @@ tags:
 - [[.test_valid_output_passes()]] - `method` [EXTRACTED]
 - [[OutputSchemaEnforcer]] - `uses` [INFERRED]
 - [[SchemaRule]] - `uses` [INFERRED]
-- [[SchemaValidationResult]] - `uses` [INFERRED]
 - [[test_output_schema.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Output_Schema

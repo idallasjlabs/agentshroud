@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "gateway/README.md"
+community: "Memory Lifecycle & Integrity"
 location: "L189"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/READMEmd
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # TestMemoryLifecycleManager
@@ -24,7 +24,6 @@ tags:
 - [[.test_threat_cleanup()]] - `method` [EXTRACTED]
 - [[ContentThreat]] - `uses` [INFERRED]
 - [[ContentThreatType]] - `uses` [INFERRED]
-- [[FileIntegrityRecord]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[MemoryLifecycleConfig]] - `uses` [INFERRED]
@@ -34,4 +33,4 @@ tags:
 - [[Test memory lifecycle management.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Progressive Trust Config"
+community: "Memory Lifecycle & Integrity"
 location: "L67"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Progressive_Trust_Config
+  - graphify/EXTRACTED
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # TestMemoryIntegrityMonitor
@@ -21,7 +21,6 @@ tags:
 - [[.test_tampering_detection()]] - `method` [EXTRACTED]
 - [[ContentThreat]] - `uses` [INFERRED]
 - [[ContentThreatType]] - `uses` [INFERRED]
-- [[FileIntegrityRecord]] - `uses` [INFERRED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[MemoryLifecycleConfig]] - `uses` [INFERRED]
@@ -31,4 +30,4 @@ tags:
 - [[Test memory integrity monitoring.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Progressive_Trust_Config
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

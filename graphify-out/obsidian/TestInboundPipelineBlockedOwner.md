@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "CHEATSHEET.md"
+community: "Pipeline (proxy)"
 location: "L132"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/CHEATSHEETmd
+  - community/Pipeline_proxy
 ---
 
 # TestInboundPipelineBlockedOwner
@@ -18,4 +18,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CHEATSHEETmd
+#graphify/code #graphify/INFERRED #community/Pipeline_proxy

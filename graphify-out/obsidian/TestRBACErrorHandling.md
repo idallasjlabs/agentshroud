@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
-location: "L415"
+community: "RBAC & Ingest Middleware"
+location: "L414"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval__FastAPI_Ingest
+  - community/RBAC__Ingest_Middleware
 ---
 
 # TestRBACErrorHandling
@@ -17,17 +17,14 @@ tags:
 - [[.test_permission_check_with_context()]] - `method` [EXTRACTED]
 - [[.test_rbac_manager_without_config()]] - `method` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
-- [[Group]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[PermissionResult]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
 - [[Role_1]] - `uses` [INFERRED]
 - [[Test RBAC error handling and edge cases.]] - `rationale_for` [EXTRACTED]
-- [[Test handling of invalid user IDs.]] - `rationale_for` [EXTRACTED]
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "URL/Domain Validation Tests"
+community: "Privilege Separation & File Sandbox"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URL/Domain_Validation_Tests
+  - community/Privilege_Separation__File_Sandbox
 ---
 
 # TestPIIScanning
@@ -23,4 +23,4 @@ tags:
 - [[PIIScanner]] - `uses` [INFERRED]
 - [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URL/Domain_Validation_Tests
+#graphify/code #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox

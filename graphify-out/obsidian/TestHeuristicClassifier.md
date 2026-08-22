@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "code"
-community: "docker/QUICKSTART.md"
+community: "Heuristic Classifier"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/QUICKSTARTmd
+  - community/Heuristic_Classifier
 ---
 
 # TestHeuristicClassifier
@@ -32,4 +32,4 @@ tags:
 - [[Test the heuristic injection classifier.]] - `rationale_for` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker/QUICKSTARTmd
+#graphify/code #graphify/EXTRACTED #community/Heuristic_Classifier

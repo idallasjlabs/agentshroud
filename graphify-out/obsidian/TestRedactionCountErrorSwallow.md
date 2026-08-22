@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "Setup Docs"
+community: "Slack Proxy Coverage"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Slack_Proxy_Coverage
 ---
 
 # TestRedactionCountErrorSwallow
@@ -16,4 +16,4 @@ tags:
 - [[SlackAPIProxy]] - `uses` [INFERRED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Setup_Docs
+#graphify/code #graphify/EXTRACTED #community/Slack_Proxy_Coverage

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "docs/papers"
+community: "Scanner Integration Coverage"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Scanner_Integration_Coverage
 ---
 
 # TestIsContainerRunning
@@ -19,4 +19,4 @@ tags:
 - [[.test_stopped_container_returns_false()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/papers
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Coverage

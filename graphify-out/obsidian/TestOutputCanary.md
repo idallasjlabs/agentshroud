@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "docs/reviews"
+community: "Output Canary"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/reviews
+  - community/Output_Canary
 ---
 
 # TestOutputCanary
@@ -27,9 +27,8 @@ tags:
 - [[.test_unicode_normalization_resistance()]] - `method` [EXTRACTED]
 - [[.test_zero_width_character_detection()]] - `method` [EXTRACTED]
 - [[CanaryConfig_1]] - `uses` [INFERRED]
-- [[CanaryResult_2]] - `uses` [INFERRED]
 - [[OutputCanary]] - `uses` [INFERRED]
 - [[Test cases for the Output Canary System.]] - `rationale_for` [EXTRACTED]
 - [[test_output_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/reviews
+#graphify/code #graphify/EXTRACTED #community/Output_Canary

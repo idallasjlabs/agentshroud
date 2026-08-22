@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: ".github/workflows"
+community: "Adversarial Injection"
 location: "L315"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/github/workflows
+  - community/Adversarial_Injection
 ---
 
 # TestPromptExtraction
@@ -18,4 +18,4 @@ tags:
 - [[System prompt extraction payloads.]] - `rationale_for` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/github/workflows
+#graphify/code #graphify/EXTRACTED #community/Adversarial_Injection

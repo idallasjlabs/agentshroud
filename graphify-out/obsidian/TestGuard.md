@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary_deploy.py"
 type: "code"
-community: "Planning Docs"
+community: "Canary Deploy"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Canary_Deploy
 ---
 
 # TestGuard
@@ -16,4 +16,4 @@ tags:
 - [[.test_refuses_when_not_green_user()]] - `method` [EXTRACTED]
 - [[test_canary_deploy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Canary_Deploy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "Custom Skills"
+community: "Multi Turn Tracker (security)"
 location: "L458"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Multi_Turn_Tracker_security
 ---
 
 # TestResponseConsistency
@@ -20,8 +20,6 @@ tags:
 - [[AlertLevel]] - `uses` [INFERRED]
 - [[DisclosureCategory]] - `uses` [INFERRED]
 - [[MultiTurnTracker]] - `uses` [INFERRED]
-- [[SessionContext_1]] - `uses` [INFERRED]
-- [[ThresholdConfig]] - `uses` [INFERRED]
 - [[test_multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Multi_Turn_Tracker_security

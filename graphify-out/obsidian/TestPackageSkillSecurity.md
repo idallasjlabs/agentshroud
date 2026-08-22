@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/test_package_skill.py"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "Package Skill (scripts)"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Package_Skill_scripts
 ---
 
 # TestPackageSkillSecurity
@@ -22,4 +22,4 @@ tags:
 - [[TestCase]] - `inherits` [EXTRACTED]
 - [[test_package_skill.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/Package_Skill_scripts

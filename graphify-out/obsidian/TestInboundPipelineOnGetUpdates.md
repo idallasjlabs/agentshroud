@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Telegram Inbound Proxy Tests"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Telegram_Inbound_Proxy_Tests
 ---
 
 # TestInboundPipelineOnGetUpdates
@@ -177,6 +177,7 @@ tags:
 - [[.test_owner_pending_command_shows_pending_active_and_revoked()]] - `method` [EXTRACTED]
 - [[.test_owner_restorecollabs_restores_defaults()]] - `method` [EXTRACTED]
 - [[.test_owner_revoke_command_cannot_revoke_owner()]] - `method` [EXTRACTED]
+- [[.test_owner_revoke_command_persists_pause_to_disk()]] - `method` [EXTRACTED]
 - [[.test_owner_revoke_command_requires_target_user_id()]] - `method` [EXTRACTED]
 - [[.test_owner_revoke_command_revokes_target_user()]] - `method` [EXTRACTED]
 - [[.test_owner_start_uses_local_notice_and_does_not_forward()]] - `method` [EXTRACTED]
@@ -217,4 +218,4 @@ tags:
 - [[Verify that _filter_inbound_updates() calls pipeline.process_inbound().]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Proxy_Tests

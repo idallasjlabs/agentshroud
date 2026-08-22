@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "scripts/sync-llm-settings.sh"
+community: "Mcp Proxy Endpoint"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-llm-settingssh
+  - community/Mcp_Proxy_Endpoint
 ---
 
 # TestMCPProxyEndpoint
@@ -25,4 +25,4 @@ tags:
 - [[ProxyResult]] - `uses` [INFERRED]
 - [[test_mcp_proxy_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-llm-settingssh
+#graphify/code #graphify/EXTRACTED #community/Mcp_Proxy_Endpoint

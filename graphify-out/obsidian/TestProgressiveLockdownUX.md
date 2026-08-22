@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Group RBAC Roles"
-location: "L7972"
+community: "Telegram Proxy Inbound"
+location: "L8003"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/Telegram_Proxy_Inbound
 ---
 
 # TestProgressiveLockdownUX
@@ -24,13 +24,16 @@ tags:
 - [[.test_immune_user_message_passes_through_when_suspended()]] - `method` [EXTRACTED]
 - [[.test_locked_no_active_lockdowns()_1]] - `method` [EXTRACTED]
 - [[.test_locked_shows_suspended_users()]] - `method` [EXTRACTED]
+- [[.test_proxy_seeds_runtime_revoked_from_persisted_paused_set()]] - `method` [EXTRACTED]
 - [[.test_revoke_immunity_restores_enforcement()]] - `method` [EXTRACTED]
 - [[.test_revoke_immunity_unknown_user()]] - `method` [EXTRACTED]
 - [[.test_suspended_drop_notice_fires_again_after_cooldown()]] - `method` [EXTRACTED]
 - [[.test_suspended_drop_notice_respects_cooldown()_1]] - `method` [EXTRACTED]
 - [[.test_suspended_user_receives_drop_notice()]] - `method` [EXTRACTED]
 - [[.test_unlock_calls_reset_on_lockdown()]] - `method` [EXTRACTED]
+- [[.test_unlock_clears_manual_pause_without_prior_lockdown_state()]] - `method` [EXTRACTED]
 - [[.test_unlock_clears_suspended_drop_cooldown()_1]] - `method` [EXTRACTED]
+- [[.test_unlock_persists_unpause_to_disk()]] - `method` [EXTRACTED]
 - [[.test_unlock_unknown_user_returns_no_state_notice()]] - `method` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
@@ -38,4 +41,4 @@ tags:
 - [[Tests for lockdown UX unlock fix, collaborator notifications, locked, immunit]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

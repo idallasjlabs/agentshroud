@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Adversarial Injection"
 location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Adversarial_Injection
 ---
 
 # TestEncodingBypass
@@ -19,6 +19,7 @@ tags:
 - [[Encoding bypass variants — validates InputNormalizer multi-pass decode.]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
+- [[normalize_input()]] - `references` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Adversarial_Injection

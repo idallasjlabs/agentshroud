@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "tests/startup_smoke"
+community: "Scanner Integration Coverage"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/tests/startup_smoke
+  - community/Scanner_Integration_Coverage
 ---
 
 # TestLoadLatestJson
@@ -17,4 +17,4 @@ tags:
 - [[.test_missing_dir_returns_none()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/tests/startup_smoke
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Coverage

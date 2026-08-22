@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
-location: "L469"
+community: "Rbac"
+location: "L468"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Rbac
 ---
 
 # TestGroupRegistry
@@ -24,10 +24,8 @@ tags:
 - [[.test_slack_group_contains_slack_ids()]] - `method` [EXTRACTED]
 - [[.test_telegram_group_contains_numeric_ids()]] - `method` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
-- [[Group]] - `uses` [INFERRED]
 - [[GroupRegistry]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[PermissionResult]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
@@ -36,4 +34,4 @@ tags:
 - [[ToolTier_1]] - `uses` [INFERRED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/Rbac

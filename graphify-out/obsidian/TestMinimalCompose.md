@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Docker Compose"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Docker_Compose
 ---
 
 # TestMinimalCompose
@@ -19,4 +19,4 @@ tags:
 - [[Validate examplesdocker-compose.minimal.yml.]] - `rationale_for` [EXTRACTED]
 - [[test_docker_compose.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Docker_Compose

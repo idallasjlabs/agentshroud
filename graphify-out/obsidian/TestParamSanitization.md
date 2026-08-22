@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Tool Chain & CVE Triage"
 location: "L483"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - graphify/EXTRACTED
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # TestParamSanitization
@@ -21,13 +21,10 @@ tags:
 - [[.test_sanitization_returns_cleaned()]] - `method` [EXTRACTED]
 - [[ChainAction]] - `uses` [INFERRED]
 - [[ChainMatch]] - `uses` [INFERRED]
-- [[ChainPattern]] - `uses` [INFERRED]
 - [[ParamScanResult]] - `uses` [INFERRED]
 - [[ReversibilityScore]] - `uses` [INFERRED]
-- [[RiskLevel_3]] - `uses` [INFERRED]
-- [[SessionChainContext]] - `uses` [INFERRED]
-- [[ToolCall]] - `uses` [INFERRED]
+- [[RiskLevel_4]] - `uses` [INFERRED]
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

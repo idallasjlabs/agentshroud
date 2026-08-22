@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Docs Accuracy"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Docs_Accuracy
 ---
 
 # TestReadmeModulesMatchCode
@@ -18,4 +18,4 @@ tags:
 - [[Verify each module listed in README has actual implementation.]] - `rationale_for` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Docs_Accuracy

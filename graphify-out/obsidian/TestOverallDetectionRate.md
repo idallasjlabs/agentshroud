@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Adversarial Injection"
 location: "L387"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Adversarial_Injection
 ---
 
 # TestOverallDetectionRate
@@ -18,6 +18,7 @@ tags:
 - [[End-to-end all 110+ payloads against combined defense layer.]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
+- [[TestContextIntegrityScorer]] - `semantically_similar_to` [INFERRED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Adversarial_Injection

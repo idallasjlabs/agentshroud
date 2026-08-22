@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract.py"
 type: "code"
-community: "Planning Docs"
+community: "Api Contract"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Api_Contract
 ---
 
 # TestOpenAPIContract
@@ -19,7 +19,8 @@ tags:
 - [[.test_openapi_snapshot_matches_live_schema()]] - `method` [EXTRACTED]
 - [[.test_protected_endpoints_reject_unauthenticated()]] - `method` [EXTRACTED]
 - [[.test_version_consistency()]] - `method` [EXTRACTED]
+- [[FastAPI app instance]] - `references` [EXTRACTED]
 - [[OpenAPI schema and version consistency tests.]] - `rationale_for` [EXTRACTED]
 - [[test_api_contract.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Api_Contract

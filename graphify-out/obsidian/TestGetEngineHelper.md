@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "SOC Service Manager"
+community: "Web Api Coverage"
 location: "L983"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Service_Manager
+  - community/Web_Api_Coverage
 ---
 
 # TestGetEngineHelper
@@ -18,4 +18,4 @@ tags:
 - [[UpdateRequest]] - `uses` [INFERRED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Service_Manager
+#graphify/code #graphify/INFERRED #community/Web_Api_Coverage

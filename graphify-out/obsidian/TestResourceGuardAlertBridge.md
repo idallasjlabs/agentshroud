@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Resource Guard & Local Model Parity"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Resource_Guard__Local_Model_Parity
 ---
 
 # TestResourceGuardAlertBridge
@@ -22,4 +22,4 @@ tags:
 - [[The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher.]] - `rationale_for` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity

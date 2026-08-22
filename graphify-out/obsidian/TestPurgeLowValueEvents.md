@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "code"
-community: "Architecture Docs"
+community: "Audit Archive"
 location: "L322"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Audit_Archive
 ---
 
 # TestPurgeLowValueEvents
@@ -19,4 +19,4 @@ tags:
 - [[.test_purges_only_matching_event_type_and_severity()]] - `method` [EXTRACTED]
 - [[test_audit_archive.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Audit_Archive

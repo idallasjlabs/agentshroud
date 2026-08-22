@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Cron State Monitor"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Cron_State_Monitor
 ---
 
 # TestParsing
@@ -21,4 +21,4 @@ tags:
 - [[CronStateMonitor]] - `uses` [INFERRED]
 - [[test_cron_state_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Cron_State_Monitor

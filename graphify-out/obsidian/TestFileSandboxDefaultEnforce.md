@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Collaborator Response Templates"
+community: "Privilege Separation & File Sandbox"
 location: "L50"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Collaborator_Response_Templates
+  - community/Privilege_Separation__File_Sandbox
 ---
 
 # TestFileSandboxDefaultEnforce
@@ -21,4 +21,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Collaborator_Response_Templates
+#graphify/code #graphify/INFERRED #community/Privilege_Separation__File_Sandbox

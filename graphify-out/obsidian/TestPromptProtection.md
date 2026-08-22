@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "docs/runbooks"
+community: "Prompt Protection"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Prompt_Protection
 ---
 
 # TestPromptProtection
@@ -31,9 +31,7 @@ tags:
 - [[.test_tool_inventory_redaction()]] - `method` [EXTRACTED]
 - [[.test_user_id_redaction()]] - `method` [EXTRACTED]
 - [[PromptProtection]] - `uses` [INFERRED]
-- [[ProtectedContent]] - `uses` [INFERRED]
-- [[RedactionResult_2]] - `uses` [INFERRED]
 - [[Test cases for PromptProtection class.]] - `rationale_for` [EXTRACTED]
 - [[test_prompt_protection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/runbooks
+#graphify/code #graphify/EXTRACTED #community/Prompt_Protection

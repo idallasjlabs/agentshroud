@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Planning Docs"
+community: "Config Validation & Router"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Config_Validation__Router
 ---
 
 # TestMinimalConfig
@@ -22,4 +22,4 @@ tags:
 - [[minimal.env should have reasonable defaults.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Config_Validation__Router

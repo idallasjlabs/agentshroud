@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Session Manager"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Session_Manager
 ---
 
 # TestMultiBotIsolation
@@ -25,10 +25,9 @@ tags:
 - [[.test_session_context_includes_bot_id()]] - `method` [EXTRACTED]
 - [[.test_session_registry_uses_compound_key()]] - `method` [EXTRACTED]
 - [[.test_workspace_paths_under_bot_namespace()]] - `method` [EXTRACTED]
-- [[ConversationMessage]] - `uses` [INFERRED]
 - [[UserSession]] - `uses` [INFERRED]
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[Verify that different bots get independent workspaces per user.]] - `rationale_for` [EXTRACTED]
 - [[test_session_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Session_Manager

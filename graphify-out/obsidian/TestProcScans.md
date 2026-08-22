@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Scanner Integration Coverage"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Scanner_Integration_Coverage
 ---
 
 # TestProcScans
@@ -19,4 +19,4 @@ tags:
 - [[.test_wazuh_agent_detected()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Coverage

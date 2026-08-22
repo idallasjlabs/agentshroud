@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "docker/falco"
+community: "Log Sanitizer"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docker/falco
+  - community/Log_Sanitizer
 ---
 
 # TestLogSanitizer
@@ -30,4 +30,4 @@ tags:
 - [[LogSanitizer_1]] - `uses` [INFERRED]
 - [[test_log_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docker/falco
+#graphify/code #graphify/EXTRACTED #community/Log_Sanitizer

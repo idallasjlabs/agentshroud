@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Dns Blocklist"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Dns_Blocklist
 ---
 
 # TestParseHostsLine
@@ -28,4 +28,4 @@ tags:
 - [[parse_hosts_line() — hosts format, adblock format, comments, empty, localhost.]] - `rationale_for` [EXTRACTED]
 - [[test_dns_blocklist.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Dns_Blocklist

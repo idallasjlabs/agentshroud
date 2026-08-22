@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Custom Skills"
+community: "Outbound Filter"
 location: "L518"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Outbound_Filter
 ---
 
 # TestFabricatedSecurityNotice
@@ -27,10 +27,9 @@ tags:
 - [[.test_prevents_form()]] - `method` [EXTRACTED]
 - [[.test_progressive_tense()]] - `method` [EXTRACTED]
 - [[.test_redaction_applied()]] - `method` [EXTRACTED]
-- [[FilterMatch]] - `uses` [INFERRED]
 - [[InfoCategory]] - `uses` [INFERRED]
 - [[OutboundInfoFilter]] - `uses` [INFERRED]
 - [[Test cases for the widened fabricated_security_notice pattern.]] - `rationale_for` [EXTRACTED]
 - [[test_outbound_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Outbound_Filter

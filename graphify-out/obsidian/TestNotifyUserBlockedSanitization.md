@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Collaborator Response Templates"
+community: "Git Guard (security)"
 location: "L194"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Collaborator_Response_Templates
+  - community/Git_Guard_security
 ---
 
 # TestNotifyUserBlockedSanitization
@@ -23,4 +23,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Collaborator_Response_Templates
+#graphify/code #graphify/INFERRED #community/Git_Guard_security

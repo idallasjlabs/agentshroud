@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_list_registry_ghsa_ids.py"
 type: "code"
-community: "docs/diagrams"
+community: "List Registry Ghsa Ids"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/List_Registry_Ghsa_Ids
 ---
 
 # TestListRegistryGhsaIds
@@ -18,4 +18,4 @@ tags:
 - [[.test_skips_none_ghsa_id_entries()]] - `method` [EXTRACTED]
 - [[test_list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/diagrams
+#graphify/code #graphify/EXTRACTED #community/List_Registry_Ghsa_Ids

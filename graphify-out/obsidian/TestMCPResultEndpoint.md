@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "skills/openclaw"
+community: "Mcp Result Endpoint"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Mcp_Result_Endpoint
 ---
 
 # TestMCPResultEndpoint
@@ -30,4 +30,4 @@ tags:
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skills/openclaw
+#graphify/code #graphify/EXTRACTED #community/Mcp_Result_Endpoint

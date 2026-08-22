@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "docs/papers"
-location: "L7896"
+community: "Telegram Proxy Inbound"
+location: "L7927"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Telegram_Proxy_Inbound
 ---
 
 # TestNoResponseGuarantee
@@ -17,8 +17,9 @@ tags:
 - [[.test_unknown_user_always_gets_pending_or_rate_limit_notice()]] - `method` [EXTRACTED]
 - [[Every collaborator message must produce a response — never a silent drop.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
+- [[Owner messages are never rate-limited by the collaborator limiter.]] - `rationale_for` [EXTRACTED]
 - [[RateLimiter]] - `uses` [INFERRED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/papers
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

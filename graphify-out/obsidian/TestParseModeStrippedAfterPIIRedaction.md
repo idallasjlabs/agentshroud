@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "docs/redteam"
+community: "Telegram Proxy Outbound"
 location: "L4330"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/redteam
+  - community/Telegram_Proxy_Outbound
 ---
 
 # TestParseModeStrippedAfterPIIRedaction
@@ -24,4 +24,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/redteam
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Outbound

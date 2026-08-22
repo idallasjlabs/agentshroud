@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Bot CVE Scorecard"
+community: "Outbound Filter"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_CVE_Scorecard
+  - community/Outbound_Filter
 ---
 
 # TestOutboundInfoFilter
@@ -43,11 +43,9 @@ tags:
 - [[.test_telegram_user_id_filtering()]] - `method` [EXTRACTED]
 - [[.test_trust_level_overrides()]] - `method` [EXTRACTED]
 - [[.test_workspace_internal_path_filtering()]] - `method` [EXTRACTED]
-- [[FilterMatch]] - `uses` [INFERRED]
 - [[InfoCategory]] - `uses` [INFERRED]
 - [[OutboundInfoFilter]] - `uses` [INFERRED]
-- [[Set up test fixtures.]] - `rationale_for` [EXTRACTED]
 - [[Test suite for the outbound information filter.]] - `rationale_for` [EXTRACTED]
 - [[test_outbound_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_CVE_Scorecard
+#graphify/code #graphify/EXTRACTED #community/Outbound_Filter

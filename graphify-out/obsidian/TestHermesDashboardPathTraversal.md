@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Main Endpoints"
 location: "L370"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Main_Endpoints
 ---
 
 # TestHermesDashboardPathTraversal
@@ -19,9 +19,8 @@ tags:
 - [[.test_proxy_returns_400_on_traversal()]] - `method` [EXTRACTED]
 - [[.test_proxy_returns_400_on_traversal_in_query()]] - `method` [EXTRACTED]
 - [[.test_safe_path_passes()]] - `method` [EXTRACTED]
-- [[ForwardRequest]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
 - [[hermes_dashboard_proxy must reject traversal sequences before forwarding.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Main_Endpoints

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "code"
-community: "Planning Docs"
+community: "Llm Quota Detector"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Llm_Quota_Detector
 ---
 
 # TestIsOverloaded
@@ -22,4 +22,4 @@ tags:
 - [[.test_quota_statuses_not_claimed()]] - `method` [EXTRACTED]
 - [[test_llm_quota_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Llm_Quota_Detector
