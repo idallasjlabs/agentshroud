@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Planning Docs"
+community: "Troubleshooting (runbooks)"
 location: "L484"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Troubleshooting_runbooks
 ---
 
 # Gateway: `CONNECT tunnel established: wss-primary.slack.com:443`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Known Log Messages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting_runbooks

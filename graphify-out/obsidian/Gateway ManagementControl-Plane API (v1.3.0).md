@@ -1,11 +1,11 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Adr 005 Sha256 Hash (adr)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Adr_005_Sha256_Hash_adr
 ---
 
 # Gateway Management/Control-Plane API (v1.3.0)
@@ -19,4 +19,4 @@ tags:
 - [[gatewaysocrouter.py (SOC Shared Command Layer)]] - `implements` [EXTRACTED]
 - [[gatewaywebapi.py (Web control center)]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Adr_005_Sha256_Hash_adr

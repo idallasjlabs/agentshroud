@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Network topology (09 - Diagrams)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Network_topology_09_-_Diagrams
 ---
 
 # Full System Flowchart
@@ -17,4 +17,4 @@ tags:
 - [[Legend]] - `contains` [EXTRACTED]
 - [[Related Notes_71]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Network_topology_09_-_Diagrams

@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (securebrowser)"
 location: "L193"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_securebrowser
 ---
 
 # Full Configuration Example
 
 ## Connections
-- [[Configuration_18]] - `contains` [EXTRACTED]
+- [[Configuration_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_securebrowser

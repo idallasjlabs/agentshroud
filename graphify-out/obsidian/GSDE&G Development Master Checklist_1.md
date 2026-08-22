@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mc/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mc/SKILL.md"
 type: "document"
-community: "docs/vault"
+community: "Skill (i-mc)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skill_i-mc
 ---
 
 # GSDE&G Development Master Checklist
@@ -21,7 +21,7 @@ tags:
 - [[Phase 6 · CI  → `cicdSKILL.md`_1]] - `contains` [EXTRACTED]
 - [[Phase 7 · Deploy  → `psSKILL.md`_1]] - `contains` [EXTRACTED]
 - [[Quick Commands_1]] - `contains` [EXTRACTED]
-- [[SKILL_93]] - `contains` [EXTRACTED]
+- [[SKILL_94]] - `contains` [EXTRACTED]
 - [[Skill Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mc

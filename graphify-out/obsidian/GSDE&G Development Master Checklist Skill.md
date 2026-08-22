@@ -1,20 +1,19 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mc/SKILL.md"
+source_file: ".agents/skills/i-mc/SKILL.md"
 type: "document"
-community: "branding/INDEX.md"
+community: "Skill (i-hdev)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/INDEXmd
+  - community/Skill_i-hdev
 ---
 
 # GSDE&G Development Master Checklist Skill
 
 ## Connections
-- [[CICD Pipeline Advisor SKILL (OpenClaw)]] - `references` [EXTRACTED]
-- [[Code Review (CR) SKILL (OpenClaw)]] - `references` [EXTRACTED]
-- [[GIT-GUARD Skill Definition]] - `references` [EXTRACTED]
-- [[i-mc README (Development Master Checklist)]] - `references` [EXTRACTED]
-- [[qa Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
+- [[GIT-GUARD Skill]] - `references` [EXTRACTED]
+- [[GSDE&G Development Master Checklist README]] - `references` [INFERRED]
+- [[GSDE&G SDLC Lifecycle (Plan-TDD-QA-CR-PR-CI-Deploy)]] - `conceptually_related_to` [EXTRACTED]
+- [[Hermes Dev Workflow (HDEV) Skill]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/INDEXmd
+#graphify/document #graphify/EXTRACTED #community/Skill_i-hdev

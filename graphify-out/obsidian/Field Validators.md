@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Pydantic (05 - Dependencies)"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Pydantic_05_-_Dependencies
 ---
 
 # Field Validators
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Pydantic_05_-_Dependencies

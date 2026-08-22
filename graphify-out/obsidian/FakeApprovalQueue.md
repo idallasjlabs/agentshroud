@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Mcp Proxy Coverage"
 location: "L444"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Mcp_Proxy_Coverage
 ---
 
 # FakeApprovalQueue
 
 ## Connections
-- [[.__init__()_171]] - `method` [EXTRACTED]
+- [[.__init__()_175]] - `method` [EXTRACTED]
 - [[.get_item()_2]] - `method` [EXTRACTED]
 - [[.submit_tool_request()_4]] - `method` [EXTRACTED]
 - [[.test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [INFERRED]
@@ -40,4 +40,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Mcp_Proxy_Coverage

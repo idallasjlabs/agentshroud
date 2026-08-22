@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "docs/vault"
+community: "Readme (browser-extension)"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Readme_browser-extension
 ---
 
 # Gateway wiring
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Readme_browser-extension

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Architecture Docs"
+community: "Skills Guide (i-reference)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Skills_Guide_i-reference
 ---
 
 # GSDE&G Skills Reference
@@ -23,4 +23,4 @@ tags:
 - [[Skill Invocation Examples_1]] - `contains` [EXTRACTED]
 - [[Skills by Category_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Skills_Guide_i-reference

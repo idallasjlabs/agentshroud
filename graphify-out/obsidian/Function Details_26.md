@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "docs/runbooks"
+community: "Agent Isolation.py (Security Modules)"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Agent_Isolationpy_Security_Modules
 ---
 
 # Function Details
@@ -18,4 +18,4 @@ tags:
 - [[IsolationVerifier.verify_volume_isolation()]] - `contains` [EXTRACTED]
 - [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Agent_Isolationpy_Security_Modules

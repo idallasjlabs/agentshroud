@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Distributed Openclaw Node Architecture (architecture)"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Distributed_Openclaw_Node_Architecture_architecture
 ---
 
 # Future Approach (Option 2: Distributed Node)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Architecture Comparison]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Distributed_Openclaw_Node_Architecture_architecture

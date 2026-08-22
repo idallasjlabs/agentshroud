@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "skills/openclaw"
+community: "Startup errors (07 - Errors & Troubleshooting)"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Startup_errors_07_-_Errors__Troubleshooting
 ---
 
 # Gateway Health Check Never Passes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Gateway Container Startup Failures]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Startup_errors_07_-_Errors__Troubleshooting

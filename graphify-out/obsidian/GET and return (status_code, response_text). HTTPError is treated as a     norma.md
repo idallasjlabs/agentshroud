@@ -1,18 +1,17 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "rationale"
-community: "Setup Docs"
+community: "Jira Weekly Review (workspace)"
 location: "L227"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Jira_Weekly_Review_workspace
 ---
 
 # GET and return (status_code, response_text). HTTPError is treated as a     norma
 
 ## Connections
 - [[_http_get()]] - `rationale_for` [EXTRACTED]
-- [[post_comment()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Setup_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Jira_Weekly_Review_workspace

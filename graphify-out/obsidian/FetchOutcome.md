@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "docs/project"
+community: "Intel Endpoint"
 location: "L46"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/docs/project
+  - community/Intel_Endpoint
 ---
 
 # FetchOutcome
@@ -34,4 +34,4 @@ tags:
 - [[test_citation_verifier.py]] - `imports` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/docs/project
+#graphify/code #graphify/INFERRED #community/Intel_Endpoint

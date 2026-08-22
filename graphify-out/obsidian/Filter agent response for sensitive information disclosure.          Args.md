@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Outbound Filter"
 location: "L354"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Outbound_Filter
 ---
 
 # Filter agent response for sensitive information disclosure.          Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.filter_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Outbound_Filter

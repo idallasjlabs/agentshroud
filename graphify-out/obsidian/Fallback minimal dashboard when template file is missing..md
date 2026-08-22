@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "skills/openclaw"
-location: "L2698"
+community: "Router (soc)"
+location: "L2736"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Router_soc
 ---
 
 # Fallback minimal dashboard when template file is missing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_minimal_dashboard_html()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/skills/openclaw
+#graphify/rationale #graphify/EXTRACTED #community/Router_soc

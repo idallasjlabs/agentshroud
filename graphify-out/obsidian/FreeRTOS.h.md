@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/freertos/FreeRTOS.h"
 type: "code"
-community: ".claude/statusline.sh"
+community: "Freertos (freertos)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/claude/statuslinesh
+  - community/Freertos_freertos
 ---
 
 # FreeRTOS.h
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[xTaskGetTickCount()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/claude/statuslinesh
+#graphify/code #graphify/EXTRACTED #community/Freertos_freertos

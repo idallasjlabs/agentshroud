@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (dashboard)"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_dashboard
 ---
 
 # Features
@@ -19,4 +19,4 @@ tags:
 - [[Memory Browser]] - `contains` [EXTRACTED]
 - [[Network Inspector]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_dashboard

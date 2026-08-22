@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
+community: "Soc Realtime Coverage"
 location: "L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Soc_Realtime_Coverage
 ---
 
 # FastAPI WebSocket route handler for /ws/soc.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ws_soc_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Soc_Realtime_Coverage

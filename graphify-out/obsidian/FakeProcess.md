@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Collaborator Prompt Safety"
+community: "Mcp Proxy Coverage"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Collaborator_Prompt_Safety
+  - community/Mcp_Proxy_Coverage
 ---
 
 # FakeProcess
 
 ## Connections
-- [[.__init__()_169]] - `method` [EXTRACTED]
+- [[.__init__()_173]] - `method` [EXTRACTED]
 - [[.kill()]] - `method` [EXTRACTED]
 - [[.terminate()]] - `method` [EXTRACTED]
 - [[.test_start_send_and_stop()]] - `calls` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Safety
+#graphify/code #graphify/INFERRED #community/Mcp_Proxy_Coverage

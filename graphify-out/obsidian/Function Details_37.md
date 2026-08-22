@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "Custom Skills"
+community: "Encrypted Store.py (Security Modules)"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Encrypted_Storepy_Security_Modules
 ---
 
 # Function Details
@@ -19,4 +19,4 @@ tags:
 - [[_secure_zero(buffer)]] - `contains` [EXTRACTED]
 - [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Encrypted_Storepy_Security_Modules

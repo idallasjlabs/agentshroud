@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 1546"
+community: "Telegram Outbound Proxy Tests"
 location: "L1903"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1546
+  - community/Telegram_Outbound_Proxy_Tests
 ---
 
 # Form payload NO_REPLY punctuation variant should still normalize.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_urlencoded_plain_no_reply_with_punctuation_is_still_filtered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1546
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Outbound_Proxy_Tests

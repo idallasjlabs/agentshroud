@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "scripts/switch_model.sh"
+community: "Workspace Usage (architecture)"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/switch_modelsh
+  - community/Workspace_Usage_architecture
 ---
 
 # Files Created
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/switch_modelsh
+#graphify/document #graphify/EXTRACTED #community/Workspace_Usage_architecture

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Prompt Guard.py (Security Modules)"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Prompt_Guardpy_Security_Modules
 ---
 
 # Function Details
@@ -18,4 +18,4 @@ tags:
 - [[PromptGuard._check_unicode_tricks(text)]] - `contains` [EXTRACTED]
 - [[PromptGuard.scan(text)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Prompt_Guardpy_Security_Modules

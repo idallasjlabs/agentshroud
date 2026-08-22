@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Falco Monitor.py (Security Modules)"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Falco_Monitorpy_Security_Modules
 ---
 
 # Function Details
@@ -19,4 +19,4 @@ tags:
 - [[parse_alert(raw)]] - `contains` [EXTRACTED]
 - [[read_alerts(alert_dir, since, agentshroud_only)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Falco_Monitorpy_Security_Modules

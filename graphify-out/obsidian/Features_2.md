@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "V0.8.0 Release Plan (v0.8)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/V080_Release_Plan_v08
 ---
 
 # Features
@@ -20,4 +20,4 @@ tags:
 - [[6. Enhanced Audit & Compliance]] - `contains` [EXTRACTED]
 - [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/V080_Release_Plan_v08

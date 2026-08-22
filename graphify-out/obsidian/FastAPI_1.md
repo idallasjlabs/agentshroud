@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Planning Docs"
+community: "Security Audit & Watchtower Tests"
 location: "L107"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Planning_Docs
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # FastAPI
@@ -24,4 +24,4 @@ tags:
 - [[lifespan()_1]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Planning_Docs
+#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests

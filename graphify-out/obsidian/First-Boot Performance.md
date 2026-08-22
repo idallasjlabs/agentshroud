@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Spacy (05 - Dependencies)"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Spacy_05_-_Dependencies
 ---
 
 # First-Boot Performance
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[spaCy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Spacy_05_-_Dependencies

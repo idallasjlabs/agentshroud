@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Health Report.py (Security Modules)"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Health_Reportpy_Security_Modules
 ---
 
 # Function Details
@@ -22,4 +22,4 @@ tags:
 - [[save_to_history(score, grade, details, db_path)]] - `contains` [EXTRACTED]
 - [[score_to_grade(score)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Health_Reportpy_Security_Modules

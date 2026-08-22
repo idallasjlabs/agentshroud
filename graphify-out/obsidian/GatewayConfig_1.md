@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Security Fixes & SSH Write Endpoint"
 location: "L296"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/scripts/sync-cve-registrypy
+  - community/Security_Fixes__SSH_Write_Endpoint
 ---
 
 # GatewayConfig
@@ -22,36 +22,22 @@ tags:
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Complete gateway configuration]] - `rationale_for` [EXTRACTED]
-- [[FastAPI_2]] - `uses` [INFERRED]
 - [[GatewayConfig]] - `uses` [INFERRED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[GatewayConfig_3]] - `uses` [INFERRED]
 - [[GatewayConfig_4]] - `uses` [INFERRED]
-- [[MCPProxyRequest]] - `uses` [INFERRED]
-- [[MCPResultRequest]] - `uses` [INFERRED]
-- [[OpProxyRequest]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
 - [[Path_25]] - `uses` [INFERRED]
-- [[Path_35]] - `uses` [INFERRED]
 - [[RateLimiter]] - `uses` [INFERRED]
-- [[RouterConfig]] - `shares_data_with` [EXTRACTED]
 - [[SSHConfig]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
-- [[TestAutoRevert]] - `uses` [INFERRED]
 - [[TestConfidenceFloor]] - `uses` [INFERRED]
 - [[TestConfigurationLoading]] - `uses` [INFERRED]
-- [[TestCriticalLogging]] - `uses` [INFERRED]
-- [[TestGetMode]] - `uses` [INFERRED]
 - [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
-- [[TestKillSwitchVerification]] - `uses` [INFERRED]
 - [[TestMCPProxyConfigLoading]] - `uses` [INFERRED]
 - [[TestMCPResultEndpoint]] - `uses` [INFERRED]
 - [[TestMiddlewareIntegration]] - `uses` [INFERRED]
-- [[TestModeRequestModel]] - `uses` [INFERRED]
 - [[TestModuleConfigDefaults]] - `uses` [INFERRED]
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
-- [[TestObservatoryMode]] - `uses` [INFERRED]
-- [[TestObservatoryModeAPI]] - `uses` [INFERRED]
 - [[TestRealWorldScenarios]] - `uses` [INFERRED]
 - [[TestSSHDisabledEndpoint]] - `uses` [INFERRED]
 - [[TestSSHExec]] - `uses` [INFERRED]
@@ -65,17 +51,17 @@ tags:
 - [[TestSSHWriteFileLedgerAudit]] - `uses` [INFERRED]
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
-- [[TestSetMode]] - `uses` [INFERRED]
 - [[TestToolResultPIIConfig]] - `uses` [INFERRED]
 - [[TestToolResultSanitizer]] - `uses` [INFERRED]
 - [[apply_reloadable_config()]] - `references` [EXTRACTED]
 - [[auth.py]] - `imports` [EXTRACTED]
+- [[auth.py_2]] - `references` [EXTRACTED]
 - [[config.py]] - `contains` [EXTRACTED]
 - [[config_watcher()]] - `references` [EXTRACTED]
 - [[conftest.py]] - `imports` [EXTRACTED]
 - [[full_pipeline_config()]] - `calls` [EXTRACTED]
+- [[get_auth_dependency()]] - `shares_data_with` [INFERRED]
 - [[load_config()]] - `references` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
 - [[reload_config()]] - `references` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
@@ -86,11 +72,10 @@ tags:
 - [[test_config_with_ssh()_1]] - `calls` [EXTRACTED]
 - [[test_cors_origins_include_configured_port()]] - `calls` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `imports` [EXTRACTED]
-- [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 - [[test_router.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/INFERRED #community/Security_Fixes__SSH_Write_Endpoint

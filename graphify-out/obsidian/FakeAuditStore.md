@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Egress Filter"
 location: "L277"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Egress_Filter
 ---
 
 # FakeAuditStore
 
 ## Connections
-- [[.__init__()_151]] - `method` [EXTRACTED]
+- [[.__init__()_155]] - `method` [EXTRACTED]
 - [[.log_event()_2]] - `method` [EXTRACTED]
 - [[.test_allow_is_not_persisted_to_audit_store()]] - `calls` [EXTRACTED]
 - [[.test_deny_is_persisted_to_audit_store()]] - `calls` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[EgressPolicy]] - `uses` [INFERRED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Egress_Filter

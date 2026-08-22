@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_anthropic_openai_translator.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Anthropic Openai Translator"
 location: "L219"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Anthropic_Openai_Translator
 ---
 
 # Feed raw SSE bytes into the translator and collect Anthropic events.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_collect_sse()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Anthropic_Openai_Translator

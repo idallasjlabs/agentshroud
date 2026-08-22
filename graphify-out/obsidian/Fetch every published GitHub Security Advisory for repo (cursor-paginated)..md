@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Migrate Cve Registry Ghsa (scripts)"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Migrate_Cve_Registry_Ghsa_scripts
 ---
 
 # Fetch every published GitHub Security Advisory for *repo* (cursor-paginated).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[fetch_advisories()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Migrate_Cve_Registry_Ghsa_scripts

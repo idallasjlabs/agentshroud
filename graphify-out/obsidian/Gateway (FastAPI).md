@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Deployment Diagram (architecture)"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - community/Deployment_Diagram_architecture
 ---
 
 # Gateway (FastAPI)
@@ -16,4 +16,4 @@ tags:
 - [[Gateway Container (Python 3.11FastAPI 8080)]] - `conceptually_related_to` [EXTRACTED]
 - [[PII Sanitizer (Presidio + Regex)]] - `calls` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/concept #graphify/INFERRED #community/Deployment_Diagram_architecture

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
+source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (graphify)"
 location: "L597"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_graphify
 ---
 
 # For /graphify add and --watch
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_graphify

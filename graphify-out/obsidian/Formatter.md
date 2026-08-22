@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "docs/testing"
+community: "Main (src)"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/testing
+  - community/Main_src
 ---
 
 # Formatter
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.fmt()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/testing
+#graphify/code #graphify/EXTRACTED #community/Main_src

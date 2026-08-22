@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-triage-gaps.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Glossary (project)"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Glossary_project
 ---
 
 # Gap themes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CVE Triage — Gaps & Development Plan (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Glossary_project

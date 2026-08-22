@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Privilege Separation & File Sandbox"
 location: "L93"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress__RBAC_Security_Core
+  - community/Privilege_Separation__File_Sandbox
 ---
 
 # FileSandboxConfig
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_78]] - `references` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_81]] - `references` [EXTRACTED]
 - [[.monitor_sandbox()]] - `calls` [EXTRACTED]
 - [[.sandbox()]] - `calls` [EXTRACTED]
 - [[.test_default_mode_is_enforce()_5]] - `calls` [EXTRACTED]
@@ -94,4 +94,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/INFERRED #community/Privilege_Separation__File_Sandbox

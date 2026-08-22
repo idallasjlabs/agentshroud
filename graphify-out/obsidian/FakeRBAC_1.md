@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "Telegram Inbound Proxy Tests"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/Telegram_Inbound_Proxy_Tests
 ---
 
 # FakeRBAC
 
 ## Connections
-- [[.__init__()_185]] - `method` [EXTRACTED]
+- [[.__init__()_190]] - `method` [EXTRACTED]
 - [[._make_proxy()_1]] - `calls` [EXTRACTED]
 - [[._make_proxy()_3]] - `calls` [EXTRACTED]
 - [[._make_proxy()_2]] - `calls` [EXTRACTED]
@@ -188,6 +188,7 @@ tags:
 - [[.test_owner_pending_command_shows_pending_active_and_revoked()]] - `calls` [EXTRACTED]
 - [[.test_owner_restorecollabs_restores_defaults()]] - `calls` [EXTRACTED]
 - [[.test_owner_revoke_command_cannot_revoke_owner()]] - `calls` [EXTRACTED]
+- [[.test_owner_revoke_command_persists_pause_to_disk()]] - `calls` [EXTRACTED]
 - [[.test_owner_revoke_command_requires_target_user_id()]] - `calls` [EXTRACTED]
 - [[.test_owner_revoke_command_revokes_target_user()]] - `calls` [EXTRACTED]
 - [[.test_owner_start_uses_local_notice_and_does_not_forward()]] - `calls` [EXTRACTED]
@@ -234,4 +235,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Proxy_Tests

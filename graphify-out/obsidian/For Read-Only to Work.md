@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "Setup Docs"
+community: "Openclaw Write Requirements (architecture)"
 location: "L438"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Openclaw_Write_Requirements_architecture
 ---
 
 # For Read-Only to Work
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Minimum Required Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Openclaw_Write_Requirements_architecture

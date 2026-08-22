@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Security Fixes & SSH Write Endpoint"
 location: "L31"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/scripts/sync-cve-registrypy
+  - community/Security_Fixes__SSH_Write_Endpoint
 ---
 
 # GatewayConfig
@@ -20,4 +20,4 @@ tags:
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[test_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/INFERRED #community/Security_Fixes__SSH_Write_Endpoint

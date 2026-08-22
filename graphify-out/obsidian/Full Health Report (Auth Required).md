@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Health checks (08 - Runbooks)"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Health_checks_08_-_Runbooks
 ---
 
 # Full Health Report (Auth Required)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Gateway Health Endpoints]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Health_checks_08_-_Runbooks

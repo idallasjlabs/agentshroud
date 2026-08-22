@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "Bot Container Scripts"
+community: "Deployment (runbooks)"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Deployment_runbooks
 ---
 
 # Gateway Container (`agentshroud-gateway`)
@@ -17,4 +17,4 @@ tags:
 - [[Optional  Runtime]] - `contains` [EXTRACTED]
 - [[Required]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/document #graphify/EXTRACTED #community/Deployment_runbooks

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "document"
-community: "docs/requirements"
+community: "Security.py (Runtime)"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/requirements
+  - community/Securitypy_Runtime
 ---
 
 # Function Details
@@ -19,4 +19,4 @@ tags:
 - [[security.py_2]] - `contains` [EXTRACTED]
 - [[warn_missing_features(runtime)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/requirements
+#graphify/document #graphify/EXTRACTED #community/Securitypy_Runtime

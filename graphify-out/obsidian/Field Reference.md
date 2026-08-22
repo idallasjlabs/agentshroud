@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "Architecture Docs"
+community: "Ssh Configuration (docs)"
 location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Ssh_Configuration_docs
 ---
 
 # Field Reference
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Configuration Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Ssh_Configuration_docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Forwarder (proxy)"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Forwarder_proxy
 ---
 
 # Forwards sanitized requests to the OpenClaw backend.      In production, uses ai
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HTTPForwarder]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Forwarder_proxy

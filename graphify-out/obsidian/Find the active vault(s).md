@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/obsidian/SKILL.md"
 type: "document"
-community: "docs/USPTO_TRADEMARK_APPLICATION.md"
+community: "Skill (notion)"
 location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/USPTO_TRADEMARK_APPLICATIONmd
+  - community/Skill_notion
 ---
 
 # Find the active vault(s)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Obsidian]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/USPTO_TRADEMARK_APPLICATIONmd
+#graphify/document #graphify/EXTRACTED #community/Skill_notion

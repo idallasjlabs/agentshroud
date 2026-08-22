@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Linux (operations)"
 location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Linux_operations
 ---
 
 # Firewall
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VPS Deployment Notes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Linux_operations

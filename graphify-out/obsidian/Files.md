@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "Bot Container Scripts"
+community: "Readme (docker)"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Readme_docker
 ---
 
 # Files
@@ -17,4 +17,4 @@ tags:
 - [[Documentation_3]] - `contains` [EXTRACTED]
 - [[Secrets_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/document #graphify/EXTRACTED #community/Readme_docker

@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-mac)"
 location: "L367"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-mac
 ---
 
 # Future Extensions (for collaborative sharing)
 
 ## Connections
 - [[Mac App Discovery Skill]] - `contains` [EXTRACTED]
-- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mac

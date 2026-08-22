@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Docs Accuracy"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Docs_Accuracy
 ---
 
 # GET /dashboard without auth returns 403.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_requires_auth()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Docs_Accuracy

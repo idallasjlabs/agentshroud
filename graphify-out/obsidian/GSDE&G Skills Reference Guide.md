@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (i-sec-defense)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-sec-defense
 ---
 
 # GSDE&G Skills Reference Guide
@@ -24,10 +24,10 @@ tags:
 - [[i-sec SKILL (Security Review  SEC, SecureClaw)]] - `references` [EXTRACTED]
 - [[i-sec-defense README (Blue Team Security Auditor)]] - `references` [EXTRACTED]
 - [[i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)]] - `references` [EXTRACTED]
+- [[i-sec-offense README (Red Team Adversarial Tester)]] - `references` [EXTRACTED]
 - [[i-sec-offense SKILL (Red Team Adversarial Tester, AgentShroud)]] - `references` [EXTRACTED]
-- [[i-sec-offense Red Team Adversarial Tester]] - `references` [EXTRACTED]
-- [[i-session-prompt Session Prompt Generator]] - `conceptually_related_to` [AMBIGUOUS]
+- [[i-session-prompt SKILL (Session Prompt Generator)]] - `conceptually_related_to` [AMBIGUOUS]
 - [[i-socrates README (Dialogue Architect)]] - `references` [EXTRACTED]
 - [[i-socrates SKILL (Dialogue Architect, podcast pipeline)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/macos.md"
 type: "document"
-community: ".mcp.json"
+community: "Macos (operations)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcpjson
+  - community/Macos_operations
 ---
 
 # Fresh Install
@@ -20,4 +20,4 @@ tags:
 - [[6. Verify_1]] - `contains` [EXTRACTED]
 - [[Deploying AgentShroud on macOS (Apple Silicon  Intel)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Macos_operations

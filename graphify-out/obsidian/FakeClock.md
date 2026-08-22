@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "docs/flows"
+community: "Rate Limit Guard"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/flows
+  - community/Rate_Limit_Guard
 ---
 
 # FakeClock
 
 ## Connections
 - [[.__call__()_9]] - `method` [EXTRACTED]
-- [[.__init__()_174]] - `method` [EXTRACTED]
+- [[.__init__()_178]] - `method` [EXTRACTED]
 - [[.advance()]] - `method` [EXTRACTED]
 - [[RateLimitConfig]] - `uses` [INFERRED]
 - [[RateLimitGuard]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[clock()]] - `calls` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/flows
+#graphify/code #graphify/EXTRACTED #community/Rate_Limit_Guard

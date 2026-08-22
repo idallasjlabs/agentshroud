@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Xml Leak Filter"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Xml_Leak_Filter
 ---
 
 # Filter outbound response content to remove sensitive information.          Args:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.filter_response()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Xml_Leak_Filter

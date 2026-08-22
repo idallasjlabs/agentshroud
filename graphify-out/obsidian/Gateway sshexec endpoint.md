@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/agentshroud-ssh-exec.sh"
 type: "concept"
-community: "Gateway Proxy Layer"
+community: "Developer (workspace)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Developer_workspace
 ---
 
 # Gateway /ssh/exec endpoint
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[agentshroud-ssh-exec.sh]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/concept #graphify/EXTRACTED #community/Developer_workspace

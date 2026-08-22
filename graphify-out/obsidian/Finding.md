@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "gateway/runtime"
+community: "Skill Guard (security)"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/runtime
+  - community/Skill_Guard_security
 ---
 
 # Finding
@@ -17,4 +17,4 @@ tags:
 - [[A single supply-chain finding within a scanned skill artefact.]] - `rationale_for` [EXTRACTED]
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/runtime
+#graphify/code #graphify/EXTRACTED #community/Skill_Guard_security

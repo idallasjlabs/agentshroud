@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "rationale"
-community: "docs/vault"
+community: "Wazuh Client (security)"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Wazuh_Client_security
 ---
 
 # Filter alerts to file integrity monitoring events only.      Args:         alert
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_fim_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Wazuh_Client_security

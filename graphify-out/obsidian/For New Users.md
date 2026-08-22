@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (docs)"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_docs
 ---
 
 # For New Users
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🚀 Quick Start]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_docs

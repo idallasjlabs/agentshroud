@@ -1,23 +1,25 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Bot Container Scripts"
+community: "Falco Monitor (security)"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Falco_Monitor_security
 ---
 
 # FalcoAlertWatcher
 
 ## Connections
-- [[.__init__()_77]] - `method` [EXTRACTED]
+- [[.__init__()_80]] - `method` [EXTRACTED]
 - [[._handle_critical()]] - `method` [EXTRACTED]
 - [[._process_new_alerts()]] - `method` [EXTRACTED]
 - [[.run()_4]] - `method` [EXTRACTED]
 - [[.stop()_10]] - `method` [EXTRACTED]
+- [[SecurityPipeline]] - `conceptually_related_to` [INFERRED]
 - [[Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts.]] - `rationale_for` [EXTRACTED]
+- [[Test Falco Watcher Module]] - `references` [EXTRACTED]
 - [[falco_monitor.py]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_critical_alert_triggers_lockdown()]] - `calls` [EXTRACTED]
@@ -29,4 +31,4 @@ tags:
 - [[test_stop_halts_run_loop()]] - `calls` [EXTRACTED]
 - [[test_warning_alert_not_blocked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/Falco_Monitor_security

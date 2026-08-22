@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.9/v0.9.0-release-plan.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "V0.9.0 Release Plan (v0.9)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/V090_Release_Plan_v09
 ---
 
 # Features
@@ -18,4 +18,4 @@ tags:
 - [[4. Compliance & Standards Alignment]] - `contains` [EXTRACTED]
 - [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/V090_Release_Plan_v09

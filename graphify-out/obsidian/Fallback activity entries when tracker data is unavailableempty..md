@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Dashboard"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Dashboard
 ---
 
 # Fallback activity entries when tracker data is unavailable/empty.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_build_activity_entries_from_contributor_logs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Dashboard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "Router"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Router
 ---
 
 # ForwardError
@@ -16,18 +16,12 @@ tags:
 - [[.forward_to_agent_stream()]] - `calls` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[Exception]] - `inherits` [EXTRACTED]
-- [[Exception_1]] - `inherits` [EXTRACTED]
 - [[ForwardRequest]] - `uses` [INFERRED]
-- [[MCPProxyRequest]] - `uses` [INFERRED]
-- [[MCPResultRequest]] - `uses` [INFERRED]
-- [[OpProxyRequest]] - `uses` [INFERRED]
 - [[Raised when forwarding to agent fails]] - `rationale_for` [EXTRACTED]
 - [[RouterConfig]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
 - [[_BlockingPipeline]] - `uses` [INFERRED]
 - [[_PassthroughPipeline]] - `uses` [INFERRED]
 - [[forward.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
 - [[router.py]] - `contains` [EXTRACTED]
 - [[test_forward_stream.py]] - `imports` [EXTRACTED]
 - [[test_forward_stream_forward_error_still_emits_done_event()]] - `calls` [EXTRACTED]
@@ -35,4 +29,4 @@ tags:
 - [[test_router_openai_translation.py]] - `imports` [EXTRACTED]
 - [[test_router_streaming.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/code #graphify/EXTRACTED #community/Router

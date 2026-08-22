@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "docs/vault"
-location: "L247"
+community: "Queue (approval_queue)"
+location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Queue_approval_queue
 ---
 
 # Fetch a single queue item by ID          Args:             request_id: Request U
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_item()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Queue_approval_queue

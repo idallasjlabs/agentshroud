@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-mc/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-mc)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-mc
 ---
 
 # GSDE&G Development Master Checklist (MC)
 
 ## Connections
-- [[Purpose_15]] - `contains` [EXTRACTED]
-- [[README_20]] - `contains` [EXTRACTED]
-- [[Related Skills_15]] - `contains` [EXTRACTED]
-- [[Usage_18]] - `contains` [EXTRACTED]
+- [[Purpose_52]] - `contains` [EXTRACTED]
+- [[README_57]] - `contains` [EXTRACTED]
+- [[Related Skills_55]] - `contains` [EXTRACTED]
+- [[Usage_58]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-mc

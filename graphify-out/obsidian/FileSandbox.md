@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Privilege Separation & File Sandbox"
 location: "L186"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress__RBAC_Security_Core
+  - community/Privilege_Separation__File_Sandbox
 ---
 
 # FileSandbox
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_78]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_81]] - `method` [EXTRACTED]
 - [[._check()]] - `method` [EXTRACTED]
 - [[._detect_raw_traversal()]] - `method` [EXTRACTED]
 - [[._is_immutable_file()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[.check_read()]] - `method` [EXTRACTED]
 - [[.check_write()]] - `method` [EXTRACTED]
 - [[.detect_staging_patterns()]] - `method` [EXTRACTED]
-- [[.get_audit_log()_3]] - `method` [EXTRACTED]
+- [[.get_audit_log()_4]] - `method` [EXTRACTED]
 - [[.get_security_violations()]] - `method` [EXTRACTED]
 - [[.get_temp_files()]] - `method` [EXTRACTED]
 - [[.monitor_sandbox()]] - `calls` [EXTRACTED]
@@ -36,11 +36,14 @@ tags:
 - [[Action]] - `uses` [INFERRED]
 - [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
+- [[Large-write-then-network-activity stagingexfiltration pattern detection]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
+- [[Privilege Separation File Sandbox Tests]] - `references` [EXTRACTED]
 - [[RBACManager]] - `uses` [INFERRED]
 - [[Resource]] - `uses` [INFERRED]
+- [[Round 2 Security Hardening Tests]] - `references` [EXTRACTED]
 - [[TestAgentShroudSourceCodeProtection]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth_1]] - `uses` [INFERRED]
@@ -96,4 +99,4 @@ tags:
 - [[test_privilege_separation.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/INFERRED #community/Privilege_Separation__File_Sandbox

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (graphify)"
 location: "L603"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_graphify
 ---
 
 # For the commit hook and native CLAUDE.md integration
 
 ## Connections
-- [[graphify_1]] - `contains` [EXTRACTED]
+- [[graphify_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_graphify

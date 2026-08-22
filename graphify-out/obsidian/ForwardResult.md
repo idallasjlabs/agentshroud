@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Forwarder (proxy)"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Forwarder_proxy
 ---
 
 # ForwardResult
@@ -16,4 +16,4 @@ tags:
 - [[Result of forwarding a request.]] - `rationale_for` [EXTRACTED]
 - [[forwarder.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Forwarder_proxy

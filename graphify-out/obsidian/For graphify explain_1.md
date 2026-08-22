@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/references/query.md"
+source_file: "docker/config/hermes/skills/graphify/references/query.md"
 type: "document"
-community: "docs/vault"
+community: "Query (references)"
 location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Query_references
 ---
 
 # For /graphify explain
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference query, path, explain_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Query_references

@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "docs/vault"
+community: "Readme (browser-extension)"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Readme_browser-extension
 ---
 
 # Features
@@ -19,4 +19,4 @@ tags:
 - [[5. Reading List Queue]] - `contains` [EXTRACTED]
 - [[Browser Extension]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Readme_browser-extension

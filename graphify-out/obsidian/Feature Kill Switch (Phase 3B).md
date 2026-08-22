@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Development Workflow Read Only (security)"
 location: "L277"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Development_Workflow_Read_Only_security
 ---
 
 # Feature: Kill Switch (Phase 3B)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Planned Features Write Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read_Only_security

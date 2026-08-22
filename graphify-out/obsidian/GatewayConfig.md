@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Auth"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Auth
 ---
 
 # GatewayConfig
@@ -16,4 +16,4 @@ tags:
 - [[create_auth_dependency()]] - `references` [EXTRACTED]
 - [[get_auth_dependency()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Auth
