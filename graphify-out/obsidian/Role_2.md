@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Router (soc)"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Router_soc
 ---
 
 # Role
 
 ## Connections
-- [[.__init__()_125]] - `references` [EXTRACTED]
+- [[.__init__()_129]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Router_soc

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "Setup Docs"
+community: "Http Proxy.py (Proxy Layer)"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Http_Proxypy_Proxy_Layer
 ---
 
 # Responsibilities
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Http_Proxypy_Proxy_Layer

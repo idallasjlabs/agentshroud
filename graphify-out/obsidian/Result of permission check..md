@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "SOC Dashboard"
+community: "Mcp Permissions"
 location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Mcp_Permissions
 ---
 
 # Result of permission check.
@@ -15,4 +15,4 @@ tags:
 - [[PermissionCheck]] - `rationale_for` [EXTRACTED]
 - [[PermissionResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Mcp_Permissions

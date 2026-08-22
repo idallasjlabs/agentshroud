@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Colima Docker Guide (runbooks)"
 location: "L175"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Colima_Docker_Guide_runbooks
 ---
 
 # Restart a single container
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[5. Container Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Colima_Docker_Guide_runbooks

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Voice Gateway Tests"
-location: "L2215"
+community: "Soc Bots"
+location: "L2253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Soc_Bots
 ---
 
 # Return the tracked advisory registry for the wrapped AI agent.      When bot_id
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_agent_cves()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Soc_Bots

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
+source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "skills/openclaw"
+community: "Skill (i-sec)"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Skill_i-sec
 ---
 
 # Review Layers
@@ -18,4 +18,4 @@ tags:
 - [[Layer 4 Data Flow Security]] - `contains` [EXTRACTED]
 - [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec

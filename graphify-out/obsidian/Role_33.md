@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
+source_file: ".agents/skills/i-socrates/SKILL.md"
 type: "document"
-community: "voice_gateway/stt.py"
-location: "L7"
+community: "Skill (i-socrates)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/voice_gateway/sttpy
+  - community/Skill_i-socrates
 ---
 
 # Role
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/voice_gateway/sttpy
+#graphify/document #graphify/EXTRACTED #community/Skill_i-socrates

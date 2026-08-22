@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "docs/operations"
+community: "Memory Lifecycle & Integrity"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # RetentionAction
@@ -18,7 +18,7 @@ tags:
 - [[.get_recent_actions()]] - `references` [EXTRACTED]
 - [[Action taken during retention policy enforcement.]] - `rationale_for` [EXTRACTED]
 - [[MemoryLifecycleConfig]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
+- [[MemoryLifecycleManager]] - `references` [EXTRACTED]
 - [[memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/operations
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

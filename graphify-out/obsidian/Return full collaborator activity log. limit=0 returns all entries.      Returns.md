@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Enhanced Approval Queue"
-location: "L942"
+community: "SOC Router (Collaborator Mgmt)"
+location: "L980"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/SOC_Router_Collaborator_Mgmt
 ---
 
 # Return full collaborator activity log. limit=0 returns all entries.      Returns
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_collaborator_activity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt

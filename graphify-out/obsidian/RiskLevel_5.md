@@ -1,22 +1,21 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "Gateway Security Module"
-location: "L34"
+community: "Soc Models"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Soc_Models
 ---
 
 # RiskLevel
 
 ## Connections
-- [[._classify_risk()_2]] - `references` [EXTRACTED]
-- [[._log_action()_2]] - `references` [EXTRACTED]
-- [[._requires_approval()_2]] - `references` [EXTRACTED]
 - [[Enum]] - `inherits` [EXTRACTED]
-- [[Risk classification for browser actions_2]] - `rationale_for` [EXTRACTED]
-- [[browse.py_2]] - `contains` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
+- [[str]] - `inherits` [EXTRACTED]
+- [[test_soc_egress.py]] - `imports` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Soc_Models

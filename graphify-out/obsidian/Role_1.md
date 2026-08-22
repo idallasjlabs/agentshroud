@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "RBAC & Ingest Middleware"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Approval__FastAPI_Ingest
+  - community/RBAC__Ingest_Middleware
 ---
 
 # Role
@@ -16,9 +16,10 @@ tags:
 - [[.get_users_by_role()]] - `references` [EXTRACTED]
 - [[.set_user_role()_1]] - `references` [EXTRACTED]
 - [[Action_1]] - `uses` [INFERRED]
-- [[Any_54]] - `uses` [INFERRED]
-- [[Any_71]] - `uses` [INFERRED]
+- [[Any_55]] - `uses` [INFERRED]
+- [[Any_72]] - `uses` [INFERRED]
 - [[AuthRequired]] - `uses` [INFERRED]
+- [[ContributorRecord_1]] - `conceptually_related_to` [AMBIGUOUS]
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[Exception_1]] - `uses` [INFERRED]
 - [[FakeAuditStore_1]] - `uses` [INFERRED]
@@ -32,6 +33,7 @@ tags:
 - [[RBACConfig_2]] - `uses` [INFERRED]
 - [[RBACConfig_3]] - `uses` [INFERRED]
 - [[RBACConfig_4]] - `uses` [INFERRED]
+- [[RBACConfig_5]] - `uses` [INFERRED]
 - [[RBACManager_1]] - `uses` [INFERRED]
 - [[Request_1]] - `uses` [INFERRED]
 - [[Resource_1]] - `uses` [INFERRED]
@@ -52,6 +54,7 @@ tags:
 - [[TestCoerceToWSEventExtra]] - `uses` [INFERRED]
 - [[TestCollaboratorAccess]] - `uses` [INFERRED]
 - [[TestCollaboratorActivityBotFilter]] - `uses` [INFERRED]
+- [[TestCollaboratorPersistence]] - `uses` [INFERRED]
 - [[TestCollectRecentEvents]] - `uses` [INFERRED]
 - [[TestComputeBotScorecard_1]] - `uses` [INFERRED]
 - [[TestConfigBotId]] - `uses` [INFERRED]
@@ -70,10 +73,12 @@ tags:
 - [[TestGroupToolAllowlist]] - `uses` [INFERRED]
 - [[TestHandlerRun]] - `uses` [INFERRED]
 - [[TestListBots]] - `uses` [INFERRED]
+- [[TestLockdownLevelWiring]] - `uses` [INFERRED]
 - [[TestMapSeverity]] - `uses` [INFERRED]
 - [[TestMiddlewareSessionEnforcement]] - `uses` [INFERRED]
 - [[TestNoRBACConfig]] - `uses` [INFERRED]
 - [[TestOwnerAccess]] - `uses` [INFERRED]
+- [[TestPausedFieldWiring]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyParsing]] - `uses` [INFERRED]
 - [[TestRBACConfig]] - `uses` [INFERRED]
 - [[TestRBACErrorHandling]] - `uses` [INFERRED]
@@ -105,6 +110,7 @@ tags:
 - [[WebSocket_2]] - `uses` [INFERRED]
 - [[_FakeBus]] - `uses` [INFERRED]
 - [[_FakeRBAC_1]] - `uses` [INFERRED]
+- [[_FakeRBAC_2]] - `uses` [INFERRED]
 - [[_Svc]] - `uses` [INFERRED]
 - [[auth.py_1]] - `imports` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
@@ -115,14 +121,15 @@ tags:
 - [[set_user_role()]] - `calls` [EXTRACTED]
 - [[set_user_role()_1]] - `calls` [EXTRACTED]
 - [[str]] - `inherits` [EXTRACTED]
-- [[test_e2e.py]] - `imports` [EXTRACTED]
+- [[test_e2e.py]] - `references` [EXTRACTED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
 - [[test_rbac.py]] - `imports` [EXTRACTED]
 - [[test_session_isolation.py]] - `imports` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
+- [[test_soc_contributors.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/INFERRED #community/RBAC__Ingest_Middleware

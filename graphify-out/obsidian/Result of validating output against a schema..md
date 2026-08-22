@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Output Schema"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Output_Schema
 ---
 
 # Result of validating output against a schema.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SchemaValidationResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Output_Schema

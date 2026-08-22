@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "docs/project"
+community: "Intel Endpoint"
 location: "L47"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Intel_Endpoint
 ---
 
 # Result of re-fetching a candidate citation URL through the web proxy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FetchOutcome]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/project
+#graphify/rationale #graphify/EXTRACTED #community/Intel_Endpoint

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Bot Skill Config"
-location: "L2855"
+community: "Telegram Proxy Core"
+location: "L2867"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Telegram_Proxy_Core
 ---
 
 # Return (field_name, text_value) for Telegram-style outbound payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._resolve_text_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core

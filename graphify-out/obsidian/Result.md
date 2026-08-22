@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "CLI Command Client (Rust)"
+community: "Main (src)"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI_Command_Client_Rust
+  - community/Main_src
 ---
 
 # Result
@@ -19,7 +19,7 @@ tags:
 - [[.post()_1]] - `references` [EXTRACTED]
 - [[.request()_1]] - `references` [EXTRACTED]
 - [[.request()]] - `references` [EXTRACTED]
-- [[main()]] - `references` [EXTRACTED]
+- [[main()_1]] - `references` [EXTRACTED]
 - [[main.rs]] - `imports_from` [EXTRACTED]
 - [[run_approvals_decide()]] - `references` [EXTRACTED]
 - [[run_approvals_list()]] - `references` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[run_deploy_status()]] - `references` [EXTRACTED]
 - [[run_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI_Command_Client_Rust
+#graphify/code #graphify/EXTRACTED #community/Main_src

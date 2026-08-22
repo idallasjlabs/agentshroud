@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "docs/vault"
+community: "Security Audit & Watchtower Tests"
 location: "L410"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Return current enforcement mode          Returns:             "enforce" or "moni
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

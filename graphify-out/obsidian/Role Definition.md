@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Safe Refactor.agent (agents)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Safe_Refactoragent_agents
 ---
 
 # Role Definition
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Safe_Refactoragent_agents

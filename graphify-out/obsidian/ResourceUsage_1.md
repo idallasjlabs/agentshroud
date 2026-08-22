@@ -1,26 +1,23 @@
 ---
-source_file: "gateway/soc/models.py"
+source_file: "gateway/security/subagent_governance.py"
 type: "code"
-community: "Tool Chain Analyzer"
-location: "L148"
+community: "Subagent Governance (security)"
+location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain_Analyzer
+  - community/Subagent_Governance_security
 ---
 
 # ResourceUsage
 
 ## Connections
-- [[.test_with_resource_usage()]] - `calls` [EXTRACTED]
-- [[Any_67]] - `uses` [INFERRED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[HealthStatus_1]] - `uses` [INFERRED]
-- [[ServiceDescriptor_1]] - `uses` [INFERRED]
-- [[ServiceManager]] - `uses` [INFERRED]
-- [[ServiceStatus_1]] - `uses` [INFERRED]
-- [[models.py_1]] - `contains` [EXTRACTED]
-- [[services.py]] - `imports` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
+- [[.authorize_spawn()]] - `calls` [EXTRACTED]
+- [[.deregister()]] - `references` [EXTRACTED]
+- [[.get_usage()]] - `references` [EXTRACTED]
+- [[.runtime_seconds()]] - `method` [EXTRACTED]
+- [[.to_dict()_14]] - `method` [EXTRACTED]
+- [[Tracks cumulative resource consumption for a single subagent.]] - `rationale_for` [EXTRACTED]
+- [[subagent_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer
+#graphify/code #graphify/EXTRACTED #community/Subagent_Governance_security

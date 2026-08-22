@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Shared Memory Write Acl"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Shared_Memory_Write_Acl
 ---
 
 # Resolved workspace/context identity for a single inbound message.      Attribute
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[WorkspaceContext]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Shared_Memory_Write_Acl

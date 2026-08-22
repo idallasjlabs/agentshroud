@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Enhanced Approval Queue"
-location: "L1789"
+community: "SOC Router (Collaborator Mgmt)"
+location: "L1827"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/SOC_Router_Collaborator_Mgmt
 ---
 
 # Return current LLM quota failover statistics.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_llm_failover_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt

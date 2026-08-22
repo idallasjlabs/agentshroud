@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Resource Guard & Local Model Parity"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Resource_Guard__Local_Model_Parity
 ---
 
 # ResourceGuard
 
 ## Connections
 - [[.__del__()]] - `method` [EXTRACTED]
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_111]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_114]] - `method` [EXTRACTED]
 - [[._alert_high_usage()]] - `method` [EXTRACTED]
 - [[._check_system_resources()_1]] - `method` [EXTRACTED]
 - [[._cleanup_expired_usage()]] - `method` [EXTRACTED]
@@ -47,7 +47,7 @@ tags:
 - [[.test_usage_stats()]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any_8]] - `uses` [INFERRED]
-- [[Any_68]] - `uses` [INFERRED]
+- [[Any_69]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LLMProxy_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
@@ -95,7 +95,7 @@ tags:
 - [[middleware.py]] - `imports` [EXTRACTED]
 - [[resource_guard.py]] - `contains` [EXTRACTED]
 - [[setup_resource_guard()]] - `references` [EXTRACTED]
-- [[test_llm_proxy_local_parity.py]] - `imports` [EXTRACTED]
+- [[test_llm_proxy_local_parity.py]] - `tests` [EXTRACTED]
 - [[test_resource_guard.py]] - `imports` [EXTRACTED]
 - [[test_resource_guard_limits.py]] - `imports` [EXTRACTED]
 - [[test_resource_guard_vram_estimate_128k_tokens_triggers_rejection()]] - `calls` [EXTRACTED]
@@ -106,4 +106,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity

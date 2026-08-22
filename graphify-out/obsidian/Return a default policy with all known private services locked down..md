@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Privacy Policy"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Privacy_Policy
 ---
 
 # Return a default policy with all known private services locked down.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.default()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Privacy_Policy

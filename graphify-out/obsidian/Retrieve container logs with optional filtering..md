@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Api (web)"
 location: "L855"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Api_web
 ---
 
 # Retrieve container logs with optional filtering.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_logs()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Api_web

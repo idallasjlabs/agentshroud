@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Privacy Policy"
 location: "L302"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Privacy_Policy
 ---
 
 # Return True if text appears to contain admin-private data.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.contains_private_data()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Privacy_Policy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Group Workspace Manager"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Group_Workspace_Manager
 ---
 
 # Return True if user_id may access the workspace for ``group_chat_id``.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.can_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Group_Workspace_Manager

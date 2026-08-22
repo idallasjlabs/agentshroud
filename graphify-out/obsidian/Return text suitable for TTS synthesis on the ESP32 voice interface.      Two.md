@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Tts (voice_gateway)"
 location: "L222"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Tts_voice_gateway
 ---
 
 # Return *text* suitable for TTS synthesis on the ESP32 voice interface.      Two
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[normalize_for_speech()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Tts_voice_gateway

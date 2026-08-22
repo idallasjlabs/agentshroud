@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Bot Skill Config"
-location: "class RiskLevel(Enum)"
+community: "Browse (scripts)"
+location: "class RiskLevel"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Browse_scripts
 ---
 
 # RiskLevel enum
@@ -15,4 +15,4 @@ tags:
 - [[SecureBrowser class]] - `shares_data_with` [EXTRACTED]
 - [[browse.py — SecureBrowser CLI (OpenClaw)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Browse_scripts

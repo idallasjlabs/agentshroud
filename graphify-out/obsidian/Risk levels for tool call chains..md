@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Tool Chain & CVE Triage"
 location: "L89"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # Risk levels for tool call chains.
 
 ## Connections
-- [[RiskLevel_3]] - `rationale_for` [EXTRACTED]
+- [[RiskLevel_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

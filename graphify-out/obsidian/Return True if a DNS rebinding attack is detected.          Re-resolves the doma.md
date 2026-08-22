@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "rationale"
-community: "Egress & RBAC Security Core"
+community: "Dns Filter"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Dns_Filter
 ---
 
 # Return True if a DNS rebinding attack is detected.          Re-resolves the doma
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.check_rebinding()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/rationale #graphify/EXTRACTED #community/Dns_Filter

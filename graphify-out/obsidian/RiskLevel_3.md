@@ -1,26 +1,23 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L88"
+community: "Egress Approval (security)"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress_Approval_security
 ---
 
 # RiskLevel
 
 ## Connections
-- [[._load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[._assess_risk()]] - `references` [EXTRACTED]
 - [[Enum]] - `inherits` [EXTRACTED]
-- [[Risk levels for tool call chains.]] - `rationale_for` [EXTRACTED]
-- [[TestParamSanitization]] - `uses` [INFERRED]
-- [[TestReversibilityScoring]] - `uses` [INFERRED]
-- [[TestShellBleedPatterns]] - `uses` [INFERRED]
-- [[TestToolChainAnalyzer_1]] - `uses` [INFERRED]
-- [[str]] - `inherits` [EXTRACTED]
-- [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
-- [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
+- [[Risk assessment levels for egress requests.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressApprovalAPI]] - `uses` [INFERRED]
+- [[TestEgressApprovalQueue]] - `uses` [INFERRED]
+- [[egress_approval.py]] - `contains` [EXTRACTED]
+- [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Egress_Approval_security

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Url Analyzer"
 location: "L45"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Url_Analyzer
 ---
 
 # Result of analyzing a URL.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[URLAnalysisResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Url_Analyzer

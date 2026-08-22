@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "skills/openclaw"
+community: "Security Policies (references)"
 location: "L131"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Security_Policies_references
 ---
 
 # Risk Elevation Factors
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Risk Classification Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Security_Policies_references

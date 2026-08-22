@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Runtime Engines"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Runtime_Engines
 ---
 
 # Resolve rootless setting based on runtime.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.effective_rootless()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Runtime_Engines

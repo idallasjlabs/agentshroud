@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: ".agents/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "branding/README.md"
+community: "Browse (scripts)"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/Browse_scripts
 ---
 
 # RiskLevel
@@ -16,7 +16,7 @@ tags:
 - [[._log_action()]] - `references` [EXTRACTED]
 - [[._requires_approval()]] - `references` [EXTRACTED]
 - [[Enum]] - `inherits` [EXTRACTED]
-- [[Risk classification for browser actions]] - `rationale_for` [EXTRACTED]
+- [[Risk classification for browser actions_3]] - `rationale_for` [EXTRACTED]
 - [[browse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Browse_scripts

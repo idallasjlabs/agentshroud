@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: ".github/agents"
+community: "Url Analyzer"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/github/agents
+  - community/Url_Analyzer
 ---
 
 # Result of scanning web content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ScanResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/github/agents
+#graphify/rationale #graphify/EXTRACTED #community/Url_Analyzer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Dashboard"
 location: "L402"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Dashboard
 ---
 
 # Return collaborator data from the shared bot workspace volume.      Reads COLLAB
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_collaborators()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Dashboard

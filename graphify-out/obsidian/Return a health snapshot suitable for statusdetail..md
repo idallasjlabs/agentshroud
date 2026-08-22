@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Collaborator Tracker"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Collaborator_Tracker
 ---
 
 # Return a health snapshot suitable for /status/detail.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.get_health()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Tracker

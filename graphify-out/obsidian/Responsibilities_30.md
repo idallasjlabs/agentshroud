@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "document"
-community: "docs/requirements"
+community: "Security.py (Runtime)"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/requirements
+  - community/Securitypy_Runtime
 ---
 
 # Responsibilities
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/requirements
+#graphify/document #graphify/EXTRACTED #community/Securitypy_Runtime

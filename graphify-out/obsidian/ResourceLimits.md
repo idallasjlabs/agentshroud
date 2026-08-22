@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Resource Guard & Local Model Parity"
 location: "L49"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Resource_Guard__Local_Model_Parity
 ---
 
 # ResourceLimits
 
 ## Connections
-- [[.__init__()_111]] - `references` [EXTRACTED]
+- [[.__init__()_114]] - `references` [EXTRACTED]
 - [[.setup_method()_22]] - `calls` [EXTRACTED]
 - [[.test_cpu_limit_check()]] - `calls` [EXTRACTED]
 - [[.test_disk_write_limit()]] - `calls` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[.test_setup_with_custom_limits_overrides_defaults()]] - `calls` [EXTRACTED]
 - [[.test_stop_cancels_monitor_task()]] - `calls` [EXTRACTED]
 - [[.test_usage_stats()]] - `calls` [EXTRACTED]
-- [[Any_68]] - `uses` [INFERRED]
+- [[Any_69]] - `uses` [INFERRED]
 - [[Configuration for resource limits.]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy_2]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
@@ -62,4 +62,4 @@ tags:
 - [[test_resource_guard_wiring.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Resource_Guard__Local_Model_Parity

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "SOC RBAC & Auth"
+community: "Security Audit & Watchtower Tests"
 location: "L237"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Response containing base64-encoded payload is decoded by the pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_base64_content_decoded()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "rationale"
-community: "docs/setup-slack.md"
+community: "Proxy Dashboard"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/setup-slackmd
+  - community/Proxy_Dashboard
 ---
 
 # Return human-readable dashboard strings.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.to_display()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/setup-slackmd
+#graphify/rationale #graphify/EXTRACTED #community/Proxy_Dashboard

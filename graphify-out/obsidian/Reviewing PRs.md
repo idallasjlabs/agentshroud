@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "branding/colors"
+community: "Skill (coding-agent)"
 location: "L121"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/colors
+  - community/Skill_coding-agent
 ---
 
 # Reviewing PRs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Codex CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/colors
+#graphify/document #graphify/EXTRACTED #community/Skill_coding-agent

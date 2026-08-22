@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "docs/vault"
+community: "Audit Chain"
 location: "L278"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Audit_Chain
 ---
 
 # Retention enforcement removes expired entries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_enforce_retention_deletes_expired()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Chain

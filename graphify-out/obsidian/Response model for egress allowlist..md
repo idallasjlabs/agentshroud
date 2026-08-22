@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "scripts/migrate-cve-registry-ghsa.py"
+community: "Management (web)"
 location: "L934"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/migrate-cve-registry-ghsapy
+  - community/Management_web
 ---
 
 # Response model for egress allowlist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressAllowlistResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/migrate-cve-registry-ghsapy
+#graphify/rationale #graphify/EXTRACTED #community/Management_web
