@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-incident-response/SKILL.md"
+source_file: "docker/config/hermes/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Skill (i-incident-response)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Skill_i-incident-response
 ---
 
 # Skill: incident-response
 
 ## Connections
-- [[SKILL_89]] - `contains` [EXTRACTED]
+- [[SKILL_90]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Skill_i-incident-response

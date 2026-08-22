@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-data/SKILL.md"
+source_file: ".agents/skills/i-data/SKILL.md"
 type: "document"
-community: "docs/vault"
+community: "Skill (i-data)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skill_i-data
 ---
 
 # Skill: Data Validation (DATA-VAL)
@@ -18,4 +18,4 @@ tags:
 - [[Test Data Validation Pattern]] - `contains` [EXTRACTED]
 - [[Validation Layers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skill_i-data

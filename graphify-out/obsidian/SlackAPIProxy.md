@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "Setup Docs"
+community: "Slack Proxy Coverage"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Slack_Proxy_Coverage
 ---
 
 # SlackAPIProxy
 
 ## Connections
-- [[.__init__()_34]] - `method` [EXTRACTED]
+- [[.__init__()_35]] - `method` [EXTRACTED]
 - [[._call_slack_api()]] - `method` [EXTRACTED]
 - [[._intercept_connections_open()]] - `method` [EXTRACTED]
 - [[._is_owner_channel()]] - `method` [EXTRACTED]
@@ -24,6 +24,7 @@ tags:
 - [[.provision_group_channel()]] - `method` [EXTRACTED]
 - [[.proxy_outbound()]] - `method` [EXTRACTED]
 - [[Proxies bot Slack Web API calls through SecurityPipeline.      Outbound flow (bo]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[SlackAPIProxy_2]] - `uses` [INFERRED]
 - [[SlackAPIProxy_1]] - `uses` [INFERRED]
 - [[SlackSocketClient]] - `uses` [INFERRED]
@@ -50,4 +51,4 @@ tags:
 - [[test_slack_proxy.py]] - `imports` [EXTRACTED]
 - [[test_slack_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Setup_Docs
+#graphify/code #graphify/EXTRACTED #community/Slack_Proxy_Coverage

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "Skill (i-ti)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Skill_i-ti
 ---
 
 # Skill: Technical Illustrator (TI)
@@ -19,9 +19,9 @@ tags:
 - [[Diagram Types and Data Lakehouse Examples]] - `contains` [EXTRACTED]
 - [[File and Directory Conventions]] - `contains` [EXTRACTED]
 - [[Rendering and Export]] - `contains` [EXTRACTED]
-- [[Role_34]] - `contains` [EXTRACTED]
-- [[Rules_6]] - `contains` [EXTRACTED]
-- [[SKILL_57]] - `contains` [EXTRACTED]
+- [[Role_35]] - `contains` [EXTRACTED]
+- [[Rules_4]] - `contains` [EXTRACTED]
+- [[SKILL_58]] - `contains` [EXTRACTED]
 - [[Validation Checklist_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ti

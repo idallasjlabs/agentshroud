@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "scripts/canary-deploy.sh"
+community: "Skill (i-mcpm-doctor)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/canary-deploysh
+  - community/Skill_i-mcpm-doctor
 ---
 
 # Skill: MCP Doctor (MCPM-DOCTOR)
@@ -17,8 +17,8 @@ tags:
 - [[Diagnostic Workflow_1]] - `contains` [EXTRACTED]
 - [[Output Format_18]] - `contains` [EXTRACTED]
 - [[Related Skills_61]] - `contains` [EXTRACTED]
-- [[Role_54]] - `contains` [EXTRACTED]
-- [[SKILL_96]] - `contains` [EXTRACTED]
+- [[Role_55]] - `contains` [EXTRACTED]
+- [[SKILL_97]] - `contains` [EXTRACTED]
 - [[When to Invoke_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/canary-deploysh
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-doctor

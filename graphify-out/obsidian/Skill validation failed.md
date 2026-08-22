@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "docs/vault"
+community: "Publish To Clawhub (reference)"
 location: "L384"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Publish_To_Clawhub_reference
 ---
 
 # "Skill validation failed"
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🆘 Troubleshooting_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Publish_To_Clawhub_reference

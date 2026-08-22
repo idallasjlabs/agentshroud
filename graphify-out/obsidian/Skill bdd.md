@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-bdd/SKILL.md"
+source_file: ".agents/skills/i-bdd/SKILL.md"
 type: "document"
-community: "scripts/backup-bot-memory.sh"
+community: "Skill (i-bdd)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/backup-bot-memorysh
+  - community/Skill_i-bdd
 ---
 
 # Skill: bdd
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/backup-bot-memorysh
+#graphify/document #graphify/EXTRACTED #community/Skill_i-bdd

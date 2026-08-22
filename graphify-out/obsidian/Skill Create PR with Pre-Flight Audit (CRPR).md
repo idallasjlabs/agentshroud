@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-crpr/SKILL.md"
+source_file: ".agents/skills/i-crpr/SKILL.md"
 type: "document"
-community: "tests/startup_smoke"
+community: "Skill (i-crpr)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/tests/startup_smoke
+  - community/Skill_i-crpr
 ---
 
 # Skill: Create PR with Pre-Flight Audit (CRPR)
@@ -27,4 +27,4 @@ tags:
 - [[Step 5 — Generate the PR description]] - `contains` [EXTRACTED]
 - [[Step 6 — Create the PR]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/tests/startup_smoke
+#graphify/document #graphify/EXTRACTED #community/Skill_i-crpr

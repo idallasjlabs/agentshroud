@@ -1,20 +1,18 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Startup flow diagram (09 - Diagrams)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Startup_flow_diagram_09_-_Diagrams
 ---
 
 # Startup Flow Diagram
 
 ## Connections
-- [[1Password Integration (AgentShroud)]] - `references` [EXTRACTED]
-- [[Gateway Startup Sequence]] - `describes` [EXTRACTED]
 - [[Related Notes_74]] - `contains` [EXTRACTED]
 - [[Startup Flow Diagram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Startup_flow_diagram_09_-_Diagrams

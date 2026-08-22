@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/slack_socket_client.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Slack Socket Client"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Slack_Socket_Client
 ---
 
 # SlackSocketClient
 
 ## Connections
-- [[.__init__()_35]] - `method` [EXTRACTED]
+- [[.__init__()_36]] - `method` [EXTRACTED]
 - [[._connect_and_handle()]] - `method` [EXTRACTED]
 - [[._get_wss_url()]] - `method` [EXTRACTED]
 - [[.run()]] - `method` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[slack_socket_client.py]] - `contains` [EXTRACTED]
 - [[test_slack_socket_client.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Slack_Socket_Client

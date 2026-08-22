@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
+source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-ps)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-ps
 ---
 
 # Skill: Production Safety Checklist (PROD-SAFETY)
@@ -19,4 +19,4 @@ tags:
 - [[Role_28]] - `contains` [EXTRACTED]
 - [[SKILL_44]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ps

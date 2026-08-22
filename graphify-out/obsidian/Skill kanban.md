@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-kanban/SKILL.md"
+source_file: ".agents/skills/i-kanban/SKILL.md"
 type: "document"
-community: "scripts/egress-iptables.sh"
+community: "Skill (i-kanban)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/egress-iptablessh
+  - community/Skill_i-kanban
 ---
 
 # Skill: kanban
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_28]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/egress-iptablessh
+#graphify/document #graphify/EXTRACTED #community/Skill_i-kanban

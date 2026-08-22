@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "docs/vault"
+community: "Skill (i-mcpm-auth-reset)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skill_i-mcpm-auth-reset
 ---
 
 # Skill: MCP Auth Reset (MCPM-AUTH-RESET)
@@ -17,9 +17,9 @@ tags:
 - [[Role_16]] - `contains` [EXTRACTED]
 - [[SKILL_31]] - `contains` [EXTRACTED]
 - [[Security Best Practices]] - `contains` [EXTRACTED]
-- [[Troubleshooting_5]] - `contains` [EXTRACTED]
-- [[Usage_20]] - `contains` [EXTRACTED]
+- [[Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Usage_19]] - `contains` [EXTRACTED]
 - [[Verification Checklist]] - `contains` [EXTRACTED]
 - [[When to Invoke]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-auth-reset

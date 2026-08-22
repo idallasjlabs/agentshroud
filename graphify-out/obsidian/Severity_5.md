@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "document"
-community: "branding/QUICK-REFERENCE.md"
+community: "02 Human In Loop (redteam)"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/QUICK-REFERENCEmd
+  - community/02_Human_In_Loop_redteam
 ---
 
 # Severity
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/QUICK-REFERENCEmd
+#graphify/document #graphify/EXTRACTED #community/02_Human_In_Loop_redteam

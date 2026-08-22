@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Slack Proxy"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Slack_Proxy
 ---
 
 # SlackAPIProxy
@@ -22,4 +22,4 @@ tags:
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[_make_proxy()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Slack_Proxy

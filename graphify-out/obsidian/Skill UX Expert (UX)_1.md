@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-ux)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-ux
 ---
 
 # Skill: UX Expert (UX)
@@ -21,10 +21,10 @@ tags:
 - [[Information Architecture_1]] - `contains` [EXTRACTED]
 - [[Interaction Design Patterns_1]] - `contains` [EXTRACTED]
 - [[Nielsen's 10 Heuristics — GSDE&G Application_1]] - `contains` [EXTRACTED]
-- [[Role_73]] - `contains` [EXTRACTED]
+- [[Role_74]] - `contains` [EXTRACTED]
 - [[Rules_17]] - `contains` [EXTRACTED]
-- [[SKILL_123]] - `contains` [EXTRACTED]
+- [[SKILL_124]] - `contains` [EXTRACTED]
 - [[Usability Audit Checklist_1]] - `contains` [EXTRACTED]
 - [[User Flow Diagrams_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ux

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Scanner Integration Coverage"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Scanner_Integration_Coverage
 ---
 
 # Set a file's mtime to `hours` hours in the past.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_age()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Scanner_Integration_Coverage

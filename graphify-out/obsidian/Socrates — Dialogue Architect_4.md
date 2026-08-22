@@ -1,19 +1,28 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
-type: "concept"
-community: "Planning Docs"
+source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
+type: "document"
+community: "Skill (i-socrates)"
+location: "L6"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-socrates
 ---
 
 # Socrates — Dialogue Architect
 
 ## Connections
-- [[Atlas — Curriculum Architect_4]] - `shares_data_with` [EXTRACTED]
-- [[Daedalus — Concept Illustrator_4]] - `shares_data_with` [EXTRACTED]
-- [[Hermes — Reference Verifier (podcast agent)]] - `shares_data_with` [EXTRACTED]
-- [[Vulcan — Subject Matter Auditor_4]] - `shares_data_with` [EXTRACTED]
+- [[Dialogue Techniques_2]] - `contains` [EXTRACTED]
+- [[ElevenLabs v3 Audio Tags_2]] - `contains` [EXTRACTED]
+- [[Input Requirements_28]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_2]] - `contains` [EXTRACTED]
+- [[Output Format_37]] - `contains` [EXTRACTED]
+- [[Persona_22]] - `contains` [EXTRACTED]
+- [[Quality Checklist_25]] - `contains` [EXTRACTED]
+- [[Role_105]] - `contains` [EXTRACTED]
+- [[SKILL_181]] - `contains` [EXTRACTED]
+- [[Speaker Definitions_2]] - `contains` [EXTRACTED]
+- [[System Prompt_22]] - `contains` [EXTRACTED]
+- [[User Prompt Template_10]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-socrates

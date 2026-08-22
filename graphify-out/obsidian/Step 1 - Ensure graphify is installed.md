@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/SKILL.md"
+source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (graphify)"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_graphify
 ---
 
 # Step 1 - Ensure graphify is installed
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[What You Must Do When Invoked]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_graphify

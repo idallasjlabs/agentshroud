@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sre/SKILL.md"
+source_file: "docker/config/hermes/skills/i-sre/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "Skill (i-sre)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Skill_i-sre
 ---
 
 # Skill: sre
 
 ## Connections
-- [[SKILL_118]] - `contains` [EXTRACTED]
+- [[SKILL_119]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sre

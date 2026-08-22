@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/references/github-and-merge.md"
+source_file: ".agents/skills/graphify/references/github-and-merge.md"
 type: "document"
-community: "skills/openclaw"
+community: "Github And Merge (references)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Github_And_Merge_references
 ---
 
 # Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference GitHub clone and cross-repo merge]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Github_And_Merge_references

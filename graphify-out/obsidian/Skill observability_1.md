@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-observability/SKILL.md"
+source_file: "docker/config/hermes/skills/i-observability/SKILL.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Skill (i-observability)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Skill_i-observability
 ---
 
 # Skill: observability
 
 ## Connections
-- [[SKILL_100]] - `contains` [EXTRACTED]
+- [[SKILL_101]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Skill_i-observability

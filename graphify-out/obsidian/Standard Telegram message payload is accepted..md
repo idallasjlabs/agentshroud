@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "Setup Docs"
+community: "Channel Ownership"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Channel_Ownership
 ---
 
 # Standard Telegram message payload is accepted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_valid_payload_returns_200()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Setup_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Channel_Ownership

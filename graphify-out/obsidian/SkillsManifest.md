@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Skills Manifest Sync"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skills_Manifest_Sync
 ---
 
 # SkillsManifest
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.by_name()]] - `method` [EXTRACTED]
 - [[.from_source()]] - `method` [EXTRACTED]
-- [[.to_dict()_14]] - `method` [EXTRACTED]
+- [[.to_dict()_16]] - `method` [EXTRACTED]
 - [[.to_json()]] - `method` [EXTRACTED]
 - [[In-memory representation of the skillsagentsMCP manifest.]] - `rationale_for` [EXTRACTED]
 - [[Path_22]] - `uses` [INFERRED]
@@ -38,4 +38,4 @@ tags:
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 - [[validate_manifest()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Skills_Manifest_Sync

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/SKILL.md"
+source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-bs)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-bs
 ---
 
 # Skill: Branding Specialist (BS)
@@ -16,8 +16,8 @@ tags:
 - [[Brand System Components_1]] - `contains` [EXTRACTED]
 - [[Core Discipline Audit → Define → Apply → Enforce_1]] - `contains` [EXTRACTED]
 - [[Patterns by Output Type_1]] - `contains` [EXTRACTED]
-- [[Role_43]] - `contains` [EXTRACTED]
+- [[Role_44]] - `contains` [EXTRACTED]
 - [[Rules_10]] - `contains` [EXTRACTED]
-- [[SKILL_73]] - `contains` [EXTRACTED]
+- [[SKILL_74]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-bs

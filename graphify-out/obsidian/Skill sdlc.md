@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sdlc/SKILL.md"
+source_file: ".agents/skills/i-sdlc/SKILL.md"
 type: "document"
-community: "scripts/export-openapi.sh"
+community: "Skill (i-sdlc)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/export-openapish
+  - community/Skill_i-sdlc
 ---
 
 # Skill: sdlc
 
 ## Connections
-- [[SKILL_49]] - `contains` [EXTRACTED]
+- [[SKILL_50]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/export-openapish
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sdlc

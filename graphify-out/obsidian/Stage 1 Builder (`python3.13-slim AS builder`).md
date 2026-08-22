@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Deployment (runbooks)"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Deployment_runbooks
 ---
 
 # Stage 1: Builder (`python:3.13-slim AS builder`)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Build Stages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Deployment_runbooks

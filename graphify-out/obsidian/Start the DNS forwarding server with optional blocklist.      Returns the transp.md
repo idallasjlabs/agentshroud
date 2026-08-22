@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "rationale"
-community: "Setup Docs"
+community: "Dns Forwarder (proxy)"
 location: "L284"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Dns_Forwarder_proxy
 ---
 
 # Start the DNS forwarding server with optional blocklist.      Returns the transp
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[start_dns_forwarder()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Setup_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Dns_Forwarder_proxy

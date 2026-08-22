@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "docs/vault"
+community: "Audit Chain"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Audit_Chain
 ---
 
 # Stats reflect actual data.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_stats_correct()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Chain

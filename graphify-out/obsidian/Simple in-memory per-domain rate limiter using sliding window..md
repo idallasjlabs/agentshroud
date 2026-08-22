@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Web Proxy"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Web_Proxy
 ---
 
 # Simple in-memory per-domain rate limiter using sliding window.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RateLimiter_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Web_Proxy

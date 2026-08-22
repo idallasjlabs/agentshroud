@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "skills/openclaw"
+community: "Palette (colors)"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Palette_colors
 ---
 
 # Steel Blue
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Secondary Colors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Palette_colors

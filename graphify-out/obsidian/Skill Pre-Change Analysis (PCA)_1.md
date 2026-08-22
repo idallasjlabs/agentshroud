@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
+source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-pca)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-pca
 ---
 
 # Skill: Pre-Change Analysis (PCA)
@@ -15,7 +15,7 @@ tags:
 - [[Closing Gate_1]] - `contains` [EXTRACTED]
 - [[Output Format Rules_1]] - `contains` [EXTRACTED]
 - [[Output Sections (ALL required)_1]] - `contains` [EXTRACTED]
-- [[Role_60]] - `contains` [EXTRACTED]
-- [[SKILL_103]] - `contains` [EXTRACTED]
+- [[Role_61]] - `contains` [EXTRACTED]
+- [[SKILL_104]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-pca

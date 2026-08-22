@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Setup Guide (setup)"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Guide_setup
 ---
 
 # Step 1: Clone the Repository
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Setup_Guide_setup

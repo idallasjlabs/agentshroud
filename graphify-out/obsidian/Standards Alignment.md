@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "skills/openclaw"
+community: "Security Policies (references)"
 location: "L271"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Security_Policies_references
 ---
 
 # Standards Alignment
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Compliance_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Security_Policies_references

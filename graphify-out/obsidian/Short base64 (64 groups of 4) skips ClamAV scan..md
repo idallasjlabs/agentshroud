@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Clamav Pipeline"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Clamav_Pipeline
 ---
 
 # Short base64 (<64 groups of 4) skips ClamAV scan.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_short_base64_not_scanned()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Clamav_Pipeline

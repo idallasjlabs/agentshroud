@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-architecture-review/SKILL.md"
+source_file: "docker/config/hermes/skills/i-architecture-review/SKILL.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Skill (i-architecture-review)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Skill_i-architecture-review
 ---
 
 # Skill: architecture-review
 
 ## Connections
-- [[SKILL_67]] - `contains` [EXTRACTED]
+- [[SKILL_68]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Skill_i-architecture-review

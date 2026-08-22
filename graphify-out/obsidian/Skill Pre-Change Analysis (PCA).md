@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
+source_file: ".agents/skills/i-pca/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-pca)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-pca
 ---
 
 # Skill: Pre-Change Analysis (PCA)
@@ -18,4 +18,4 @@ tags:
 - [[Role_24]] - `contains` [EXTRACTED]
 - [[SKILL_40]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-pca

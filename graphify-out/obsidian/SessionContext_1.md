@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Multi Turn Tracker (security)"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Multi_Turn_Tracker_security
 ---
 
 # SessionContext
@@ -21,9 +21,6 @@ tags:
 - [[._trigger_alert()]] - `references` [EXTRACTED]
 - [[.track_message()]] - `references` [EXTRACTED]
 - [[Context tracking for a session.]] - `rationale_for` [EXTRACTED]
-- [[TestMultiTurnTracker_1]] - `uses` [INFERRED]
-- [[TestResponseConsistency]] - `uses` [INFERRED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
-- [[test_multi_turn_tracker.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Multi_Turn_Tracker_security

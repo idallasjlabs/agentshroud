@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Engine (runtime)"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Engine_runtime
 ---
 
 # Start a container. Returns container id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._run()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Engine_runtime

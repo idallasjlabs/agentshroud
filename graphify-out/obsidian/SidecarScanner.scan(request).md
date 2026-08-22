@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Sidecar.py (Proxy Layer)"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Sidecarpy_Proxy_Layer
 ---
 
 # SidecarScanner.scan(request)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Function Details_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Sidecarpy_Proxy_Layer

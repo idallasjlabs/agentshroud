@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/notion/SKILL.md"
+source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "docker/bot-capabilities.md"
-location: "L16"
+community: "Skill (github)"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/bot-capabilitiesmd
+  - community/Skill_github
 ---
 
 # Setup
 
 ## Connections
-- [[notion]] - `contains` [EXTRACTED]
+- [[GitHub Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd
+#graphify/document #graphify/EXTRACTED #community/Skill_github

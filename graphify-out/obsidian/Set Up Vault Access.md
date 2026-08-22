@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Planning Docs"
+community: "Setup Guide (setup)"
 location: "L437"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Setup_Guide_setup
 ---
 
 # Set Up Vault Access
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1Password Integration_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Setup_Guide_setup

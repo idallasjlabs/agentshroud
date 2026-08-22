@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "docs/vault"
+community: "Skill (tmux)"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skill_tmux
 ---
 
 # Session Management
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Commands_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skill_tmux

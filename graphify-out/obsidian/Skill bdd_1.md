@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bdd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-bdd/SKILL.md"
 type: "document"
-community: "scripts/pre-commit-hook.sh"
+community: "Skill (i-bdd)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/pre-commit-hooksh
+  - community/Skill_i-bdd
 ---
 
 # Skill: bdd
 
 ## Connections
-- [[SKILL_71]] - `contains` [EXTRACTED]
+- [[SKILL_72]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/pre-commit-hooksh
+#graphify/document #graphify/EXTRACTED #community/Skill_i-bdd

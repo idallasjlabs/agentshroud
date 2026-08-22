@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Planning Docs"
+community: "Context Guard (security)"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Context_Guard_security
 ---
 
 # SessionContext
@@ -17,4 +17,4 @@ tags:
 - [[Context tracking for a session.]] - `rationale_for` [EXTRACTED]
 - [[context_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Context_Guard_security

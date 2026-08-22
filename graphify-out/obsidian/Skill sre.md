@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sre/SKILL.md"
+source_file: ".agents/skills/i-sre/SKILL.md"
 type: "document"
-community: "scripts/find-ports.sh"
+community: "Skill (i-sre)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/find-portssh
+  - community/Skill_i-sre
 ---
 
 # Skill: sre
 
 ## Connections
-- [[SKILL_55]] - `contains` [EXTRACTED]
+- [[SKILL_56]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/find-portssh
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sre

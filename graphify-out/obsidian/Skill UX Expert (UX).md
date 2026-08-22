@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
+source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "CHANGELOG.md"
+community: "Skill (i-ux)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Skill_i-ux
 ---
 
 # Skill: UX Expert (UX)
@@ -21,10 +21,10 @@ tags:
 - [[Information Architecture]] - `contains` [EXTRACTED]
 - [[Interaction Design Patterns]] - `contains` [EXTRACTED]
 - [[Nielsen's 10 Heuristics — GSDE&G Application]] - `contains` [EXTRACTED]
-- [[Role_37]] - `contains` [EXTRACTED]
-- [[Rules_9]] - `contains` [EXTRACTED]
-- [[SKILL_60]] - `contains` [EXTRACTED]
+- [[Role_38]] - `contains` [EXTRACTED]
+- [[Rules_7]] - `contains` [EXTRACTED]
+- [[SKILL_61]] - `contains` [EXTRACTED]
 - [[Usability Audit Checklist]] - `contains` [EXTRACTED]
 - [[User Flow Diagrams]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ux

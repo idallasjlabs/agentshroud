@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-tw)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-tw
 ---
 
 # Skill: Technical Writer (TW)
@@ -16,8 +16,8 @@ tags:
 - [[Core Discipline Understand → Structure → Write → Validate]] - `contains` [EXTRACTED]
 - [[Document Structure]] - `contains` [EXTRACTED]
 - [[Document-Type Patterns]] - `contains` [EXTRACTED]
-- [[Role_35]] - `contains` [EXTRACTED]
-- [[Rules_7]] - `contains` [EXTRACTED]
-- [[SKILL_58]] - `contains` [EXTRACTED]
+- [[Role_36]] - `contains` [EXTRACTED]
+- [[Rules_5]] - `contains` [EXTRACTED]
+- [[SKILL_59]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-tw

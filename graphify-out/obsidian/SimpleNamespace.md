@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "RBAC & Ingest Middleware"
 location: "L297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/RBAC__Ingest_Middleware
 ---
 
 # SimpleNamespace
 
 ## Connections
-- [[.__init__()_177]] - `calls` [EXTRACTED]
+- [[.__init__()_182]] - `calls` [EXTRACTED]
 - [[.test_allowed()]] - `calls` [EXTRACTED]
 - [[.test_blocked()]] - `calls` [EXTRACTED]
 - [[.test_is_group_admin_with_teams_config()]] - `calls` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[_audit_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

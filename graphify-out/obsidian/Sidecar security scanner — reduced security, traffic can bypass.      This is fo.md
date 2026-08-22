@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/sidecar.py"
 type: "rationale"
-community: "SOC Collaborator Lifecycle"
+community: "E2e Proxy"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/E2e_Proxy
 ---
 
 # Sidecar security scanner — reduced security, traffic can bypass.      This is fo
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SidecarScanner]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/rationale #graphify/EXTRACTED #community/E2e_Proxy

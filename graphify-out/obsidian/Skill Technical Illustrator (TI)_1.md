@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "Security Docs"
+community: "Skill (i-ti)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Skill_i-ti
 ---
 
 # Skill: Technical Illustrator (TI)
@@ -19,9 +19,9 @@ tags:
 - [[Diagram Types and Data Lakehouse Examples_1]] - `contains` [EXTRACTED]
 - [[File and Directory Conventions_1]] - `contains` [EXTRACTED]
 - [[Rendering and Export_1]] - `contains` [EXTRACTED]
-- [[Role_70]] - `contains` [EXTRACTED]
+- [[Role_71]] - `contains` [EXTRACTED]
 - [[Rules_14]] - `contains` [EXTRACTED]
-- [[SKILL_120]] - `contains` [EXTRACTED]
+- [[SKILL_121]] - `contains` [EXTRACTED]
 - [[Validation Checklist_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ti

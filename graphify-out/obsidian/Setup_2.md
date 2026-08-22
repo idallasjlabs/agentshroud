@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/README.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Architecture Docs"
-location: "L64"
+community: "Skill (i-icloud)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Skill_i-icloud
 ---
 
 # Setup
 
 ## Connections
-- [[1. Install Dependencies]] - `contains` [EXTRACTED]
-- [[2. Configure]] - `contains` [EXTRACTED]
-- [[3. Run]] - `contains` [EXTRACTED]
-- [[4. Test]] - `contains` [EXTRACTED]
-- [[Gateway Layer]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud

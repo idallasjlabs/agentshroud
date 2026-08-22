@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/slack/SKILL.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (slack)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_slack
 ---
 
 # Slack Actions
@@ -15,7 +15,7 @@ tags:
 - [[Actions_1]] - `contains` [EXTRACTED]
 - [[Ideas to try]] - `contains` [EXTRACTED]
 - [[Inputs to collect]] - `contains` [EXTRACTED]
-- [[Overview_28]] - `contains` [EXTRACTED]
-- [[SKILL_165]] - `contains` [EXTRACTED]
+- [[Overview_29]] - `contains` [EXTRACTED]
+- [[SKILL_229]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_slack

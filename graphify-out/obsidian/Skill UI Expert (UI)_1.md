@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-ui)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-ui
 ---
 
 # Skill: UI Expert (UI)
@@ -21,9 +21,9 @@ tags:
 - [[Dependencies_10]] - `contains` [EXTRACTED]
 - [[React  Next.js Component Architecture_1]] - `contains` [EXTRACTED]
 - [[Responsive Layout System_1]] - `contains` [EXTRACTED]
-- [[Role_72]] - `contains` [EXTRACTED]
+- [[Role_73]] - `contains` [EXTRACTED]
 - [[Rules_16]] - `contains` [EXTRACTED]
-- [[SKILL_122]] - `contains` [EXTRACTED]
+- [[SKILL_123]] - `contains` [EXTRACTED]
 - [[UI Validation Checklist_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ui

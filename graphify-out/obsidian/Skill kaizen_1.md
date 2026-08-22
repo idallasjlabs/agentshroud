@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-kaizen/SKILL.md"
+source_file: "docker/config/hermes/skills/i-kaizen/SKILL.md"
 type: "document"
-community: "scripts/verify-greeter-state.sh"
+community: "Skill (i-kaizen)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/verify-greeter-statesh
+  - community/Skill_i-kaizen
 ---
 
 # Skill: kaizen
 
 ## Connections
-- [[SKILL_90]] - `contains` [EXTRACTED]
+- [[SKILL_91]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/verify-greeter-statesh
+#graphify/document #graphify/EXTRACTED #community/Skill_i-kaizen

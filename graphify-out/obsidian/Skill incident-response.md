@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-incident-response/SKILL.md"
+source_file: ".agents/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Skill (i-incident-response)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Skill_i-incident-response
 ---
 
 # Skill: incident-response
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SKILL_26]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Skill_i-incident-response

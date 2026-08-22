@@ -1,17 +1,21 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "ESP32 Firmware"
-location: "L10"
+community: "Readme (gateway)"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Readme_gateway
 ---
 
 # Setup
 
 ## Connections
-- [[iCloud Services_3]] - `contains` [EXTRACTED]
+- [[1. Install Dependencies]] - `contains` [EXTRACTED]
+- [[2. Configure]] - `contains` [EXTRACTED]
+- [[3. Run]] - `contains` [EXTRACTED]
+- [[4. Test]] - `contains` [EXTRACTED]
+- [[Gateway Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Readme_gateway

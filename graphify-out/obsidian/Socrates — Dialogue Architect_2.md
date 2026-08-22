@@ -1,20 +1,28 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/README.md"
+source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L1"
+community: "Skill (i-socrates)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-socrates
 ---
 
 # Socrates — Dialogue Architect
 
 ## Connections
-- [[Purpose_69]] - `contains` [EXTRACTED]
-- [[README_74]] - `contains` [EXTRACTED]
-- [[Related Skills_75]] - `contains` [EXTRACTED]
-- [[Usage_76]] - `contains` [EXTRACTED]
+- [[Dialogue Techniques_1]] - `contains` [EXTRACTED]
+- [[ElevenLabs v3 Audio Tags_1]] - `contains` [EXTRACTED]
+- [[Input Requirements_18]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_1]] - `contains` [EXTRACTED]
+- [[Output Format_24]] - `contains` [EXTRACTED]
+- [[Persona_14]] - `contains` [EXTRACTED]
+- [[Quality Checklist_16]] - `contains` [EXTRACTED]
+- [[Role_69]] - `contains` [EXTRACTED]
+- [[SKILL_118]] - `contains` [EXTRACTED]
+- [[Speaker Definitions_1]] - `contains` [EXTRACTED]
+- [[System Prompt_14]] - `contains` [EXTRACTED]
+- [[User Prompt Template_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-socrates

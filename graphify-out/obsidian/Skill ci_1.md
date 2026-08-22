@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ci/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ci/SKILL.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Skill (i-ci)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Skill_i-ci
 ---
 
 # Skill: ci
 
 ## Connections
-- [[SKILL_76]] - `contains` [EXTRACTED]
+- [[SKILL_77]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ci

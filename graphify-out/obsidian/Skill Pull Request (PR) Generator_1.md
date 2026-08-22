@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
+source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (i-pr)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-pr
 ---
 
 # Skill: Pull Request (PR) Generator
@@ -15,7 +15,7 @@ tags:
 - [[Constraints_1]] - `contains` [EXTRACTED]
 - [[Content Requirements_1]] - `contains` [EXTRACTED]
 - [[Objective_2]] - `contains` [EXTRACTED]
-- [[Role_62]] - `contains` [EXTRACTED]
-- [[SKILL_105]] - `contains` [EXTRACTED]
+- [[Role_63]] - `contains` [EXTRACTED]
+- [[SKILL_106]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-pr

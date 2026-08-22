@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "docs/vault"
+community: "Skills Guide (i-reference)"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skills_Guide_i-reference
 ---
 
 # Skills by Category
@@ -23,6 +23,6 @@ tags:
 - [[Reference_1]] - `contains` [EXTRACTED]
 - [[SecureClaw (Project-Specific)]] - `contains` [EXTRACTED]
 - [[System Utilities]] - `contains` [EXTRACTED]
-- [[Workflow_1]] - `contains` [EXTRACTED]
+- [[Workflow_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skills_Guide_i-reference
