@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: ".mcp.json"
+community: "Workspace Usage (architecture)"
 location: "L202"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcpjson
+  - community/Workspace_Usage_architecture
 ---
 
 # Create Structure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workspace Organization Tips]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Workspace_Usage_architecture

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Security Audit & Watchtower Tests"
 location: "L747"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Dashboard should escape user inputs (no raw innerHTML from API).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_xss_in_dashboard_inputs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

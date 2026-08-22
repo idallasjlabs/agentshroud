@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Data Exfil Volume Guard"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Data_Exfil_Volume_Guard
 ---
 
 # DataExfilVolumeGuard
 
 ## Connections
-- [[.__init__()_66]] - `method` [EXTRACTED]
+- [[.__init__()_69]] - `method` [EXTRACTED]
 - [[._size()]] - `method` [EXTRACTED]
 - [[.get_stats()_15]] - `method` [EXTRACTED]
 - [[.observe()]] - `method` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_single_response_over_cap_blocks()]] - `calls` [EXTRACTED]
 - [[test_under_single_cap_allows()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Data_Exfil_Volume_Guard

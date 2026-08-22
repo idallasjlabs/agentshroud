@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Crash recovery (08 - Runbooks)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Crash_recovery_08_-_Runbooks
 ---
 
 # Crash Recovery
@@ -22,4 +22,4 @@ tags:
 - [[Recurring Crashes]] - `contains` [EXTRACTED]
 - [[Related Notes_65]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Crash_recovery_08_-_Runbooks

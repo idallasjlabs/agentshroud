@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Docker Deploy Scripts"
+community: "Egress Approval (security)"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Egress_Approval_security
 ---
 
 # Create temporary rules file for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.temp_rules_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Approval_security

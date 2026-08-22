@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Pipeline Unit"
 location: "L89"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Pipeline_Unit
 ---
 
 # Convenience: sign a tool result as issuer='tool:<tool_name>'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.wrap_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Unit

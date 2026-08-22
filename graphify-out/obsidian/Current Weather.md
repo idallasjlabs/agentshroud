@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/weather/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (weather)"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_weather
 ---
 
 # Current Weather
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Commands_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_weather

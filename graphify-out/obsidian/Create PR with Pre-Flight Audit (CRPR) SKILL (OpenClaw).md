@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-crpr/SKILL.md"
 type: "document"
-community: "branding/INDEX.md"
+community: "Readme (i-mc)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/branding/INDEXmd
+  - community/Readme_i-mc
 ---
 
 # Create PR with Pre-Flight Audit (CRPR) SKILL (OpenClaw)
 
 ## Connections
 - [[Code Review (CR) SKILL (OpenClaw)]] - `conceptually_related_to` [INFERRED]
-- [[qa Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
+- [[pr Skill (referenced, sibling dir)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/branding/INDEXmd
+#graphify/document #graphify/INFERRED #community/Readme_i-mc

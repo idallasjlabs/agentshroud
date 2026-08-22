@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Planning Docs"
+community: "Context Guard (security)"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Context_Guard_security
 ---
 
 # ContextAttack
@@ -20,4 +20,4 @@ tags:
 - [[Detected context window attack attempt.]] - `rationale_for` [EXTRACTED]
 - [[context_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Context_Guard_security

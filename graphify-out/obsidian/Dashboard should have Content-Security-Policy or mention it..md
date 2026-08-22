@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Security Audit & Watchtower Tests"
 location: "L727"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Dashboard should have Content-Security-Policy or mention it.
 
 ## Connections
 - [[.test_dashboard_has_csp_meta()]] - `rationale_for` [EXTRACTED]
-- [[.test_no_mixed_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

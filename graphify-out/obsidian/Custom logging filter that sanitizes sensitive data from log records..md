@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "RBAC & Ingest Middleware"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/RBAC__Ingest_Middleware
 ---
 
 # Custom logging filter that sanitizes sensitive data from log records.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LogSanitizer_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

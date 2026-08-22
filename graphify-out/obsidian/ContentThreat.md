@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "docs/vault"
+community: "Memory Lifecycle & Integrity"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # ContentThreat
@@ -20,7 +20,7 @@ tags:
 - [[.validate_memory_write()]] - `references` [EXTRACTED]
 - [[Detected threat in memory file content.]] - `rationale_for` [EXTRACTED]
 - [[MemoryLifecycleConfig]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
+- [[MemoryLifecycleManager]] - `references` [EXTRACTED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[memory_lifecycle.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

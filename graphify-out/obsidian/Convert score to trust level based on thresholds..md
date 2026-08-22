@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Progressive Trust Integration"
 location: "L147"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Progressive_Trust_Integration
 ---
 
 # Convert score to trust level based on thresholds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._score_to_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Integration

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "User Guide (docs)"
 location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/User_Guide_docs
 ---
 
 # Dashboard Overview
@@ -16,4 +16,4 @@ tags:
 - [[Reading the Audit Trail]] - `contains` [EXTRACTED]
 - [[What You'll See]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/User_Guide_docs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Key Rotation"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Key_Rotation
 ---
 
 # Create a sample credential for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.sample_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Key_Rotation

@@ -1,19 +1,17 @@
 ---
-source_file: ".github/agents/safe-refactor.agent.md"
+source_file: ".agents/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L20"
+community: "Skill (i-eightd)"
+location: "L578"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-eightd
 ---
 
 # Critical Rules
 
 ## Connections
-- [[Safe Refactor Specialist]] - `contains` [EXTRACTED]
-- [[⚠️ ONLY Refactor When]] - `contains` [EXTRACTED]
-- [[❌ NEVER]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd

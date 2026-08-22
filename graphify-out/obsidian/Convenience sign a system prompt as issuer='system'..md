@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Pipeline Unit"
 location: "L85"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Pipeline_Unit
 ---
 
 # Convenience: sign a system prompt as issuer='system'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.wrap_system_prompt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Unit

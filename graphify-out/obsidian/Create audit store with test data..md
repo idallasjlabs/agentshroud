@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "Telegram Inbound Tests"
+community: "Audit Export"
 location: "L167"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Tests
+  - community/Audit_Export
 ---
 
 # Create audit store with test data.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.audit_store()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Export

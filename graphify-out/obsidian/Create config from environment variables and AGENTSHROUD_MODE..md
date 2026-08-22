@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "rationale"
-community: "Bot Skill Config"
-location: "L243"
+community: "Manifest (skills)"
+location: "L248"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Manifest_skills
 ---
 
 # Create config from environment variables and AGENTSHROUD_MODE.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_environment()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Manifest_skills

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-redteam/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Setup Docs"
-location: "L376"
+community: "Skill (i-sec-defense)"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Skill_i-sec-defense
 ---
 
 # Critical Rules
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense

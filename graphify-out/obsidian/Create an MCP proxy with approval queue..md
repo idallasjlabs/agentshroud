@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "PromptGuard Encoding Detection"
+community: "Enhanced Approval"
 location: "L256"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard_Encoding_Detection
+  - community/Enhanced_Approval
 ---
 
 # Create an MCP proxy with approval queue.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.mcp_proxy_with_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection
+#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval

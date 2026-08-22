@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 1513"
+community: "Soc Models"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1513
+  - community/Soc_Models
 ---
 
 # ContributorRecord
@@ -16,9 +16,11 @@ tags:
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[ContributorManager]] - `uses` [INFERRED]
 - [[ContributorRecord]] - `uses` [INFERRED]
+- [[Role_1]] - `conceptually_related_to` [AMBIGUOUS]
 - [[UserRole]] - `uses` [INFERRED]
+- [[_loadContributors()]] - `shares_data_with` [INFERRED]
 - [[contributors.py]] - `imports` [EXTRACTED]
 - [[models.py_1]] - `contains` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1513
+#graphify/code #graphify/EXTRACTED #community/Soc_Models

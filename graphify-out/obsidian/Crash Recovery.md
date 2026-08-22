@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Shutdown & recovery (01 - Architecture)"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Shutdown__recovery_01_-_Architecture
 ---
 
 # Crash Recovery
@@ -18,4 +18,4 @@ tags:
 - [[OOM Recovery]] - `contains` [EXTRACTED]
 - [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Shutdown__recovery_01_-_Architecture

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (i-daedalus)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_i-daedalus
 ---
 
 # Daedalus Concept Illustrator README (OpenClaw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Daedalus Concept Illustrator SKILL (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_i-daedalus

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Security Docs"
-location: "L142"
+community: "Skill (i-eightd)"
+location: "L578"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Skill_i-eightd
 ---
 
 # Critical Rules
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd

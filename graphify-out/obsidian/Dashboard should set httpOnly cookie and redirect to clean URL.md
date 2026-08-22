@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "scripts/sync-cve-registry.py"
+community: "Security Fixes"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Security_Fixes
 ---
 
 # Dashboard should set httpOnly cookie and redirect to clean URL
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDashboardCookieAuth]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Security_Fixes

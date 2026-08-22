@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Dns Filter"
 location: "L40"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress__RBAC_Security_Core
+  - community/Dns_Filter
 ---
 
 # DNSFilterConfig
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_42]] - `calls` [EXTRACTED]
-- [[.__init__()_69]] - `references` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_44]] - `calls` [EXTRACTED]
+- [[.__init__()_72]] - `references` [EXTRACTED]
 - [[.dns_filter()]] - `calls` [EXTRACTED]
 - [[.test_dns_filter_config()]] - `calls` [EXTRACTED]
 - [[.test_dns_filter_default_enforce()]] - `calls` [EXTRACTED]
@@ -46,7 +46,7 @@ tags:
 - [[TestNormalDNSResolution]] - `uses` [INFERRED]
 - [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
-- [[TestRateLimiting]] - `uses` [INFERRED]
+- [[TestRateLimiting_1]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
 - [[TestSupplyChain_1]] - `uses` [INFERRED]
@@ -62,4 +62,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/INFERRED #community/Dns_Filter

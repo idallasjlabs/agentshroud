@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
+source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L142"
+community: "Skill (i-sec-offense)"
+location: "L376"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-sec-offense
 ---
 
 # Critical Rules
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-offense

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (session-logs)"
 location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_session-logs
 ---
 
 # Current model logic
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_session-logs

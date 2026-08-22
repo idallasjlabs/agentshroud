@@ -1,17 +1,19 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Development Workflow Read Only (security)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Development_Workflow_Read_Only_security
 ---
 
 # DEVICE_PAIRING.md
 
 ## Connections
 - [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
+- [[Four-Layer Access Security Model (Password  Pairing  Allowlist  Approval)]] - `references` [EXTRACTED]
+- [[Ultra-Conservative Credential Display Policy]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read_Only_security

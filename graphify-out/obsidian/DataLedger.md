@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "docs/vault"
+community: "Security Fixes & SSH Write Endpoint"
 location: "L66"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/docs/vault
+  - graphify/EXTRACTED
+  - community/Security_Fixes__SSH_Write_Endpoint
 ---
 
 # DataLedger
 
 ## Connections
-- [[.__init__()_12]] - `method` [EXTRACTED]
+- [[.__init__()_13]] - `method` [EXTRACTED]
 - [[._hash_content()]] - `method` [EXTRACTED]
-- [[.close()_4]] - `method` [EXTRACTED]
+- [[.close()_5]] - `method` [EXTRACTED]
 - [[.delete_entry()]] - `method` [EXTRACTED]
 - [[.disabled_client()]] - `calls` [EXTRACTED]
 - [[.enforce_retention()]] - `method` [EXTRACTED]
@@ -28,6 +28,7 @@ tags:
 - [[.record()]] - `method` [EXTRACTED]
 - [[AppState]] - `uses` [INFERRED]
 - [[Async SQLite-backed data ledger      Records all content forwarded through the g]] - `rationale_for` [EXTRACTED]
+- [[Data Flow]] - `references` [EXTRACTED]
 - [[FastAPI_1]] - `uses` [INFERRED]
 - [[GatewayConfig_2]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
@@ -35,6 +36,7 @@ tags:
 - [[LedgerQueryResponse_1]] - `uses` [INFERRED]
 - [[LogRecord]] - `uses` [INFERRED]
 - [[PIISanitizer_2]] - `uses` [INFERRED]
+- [[Startup Sequence]] - `references` [EXTRACTED]
 - [[TestAuditChainIntegrity]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
 - [[TestBenchmarkBaseline]] - `uses` [INFERRED]
@@ -65,6 +67,7 @@ tags:
 - [[ledger()]] - `calls` [EXTRACTED]
 - [[ledger()_2]] - `calls` [EXTRACTED]
 - [[ledger.py]] - `contains` [EXTRACTED]
+- [[ledger.py_1]] - `references` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
@@ -77,4 +80,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint

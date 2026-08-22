@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_proxy_dashboard.py"
 type: "rationale"
-community: "docs/setup-slack.md"
+community: "Proxy Dashboard"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/setup-slackmd
+  - community/Proxy_Dashboard
 ---
 
 # Dashboard should count PII redactions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_pii_counting()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/setup-slackmd
+#graphify/rationale #graphify/EXTRACTED #community/Proxy_Dashboard

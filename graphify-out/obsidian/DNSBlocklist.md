@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "scripts/triage-cve-mitigations.py"
+community: "Dns Blocklist"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/triage-cve-mitigationspy
+  - community/Dns_Blocklist
 ---
 
 # DNSBlocklist
 
 ## Connections
-- [[.__init__()_19]] - `method` [EXTRACTED]
+- [[.__init__()_20]] - `method` [EXTRACTED]
 - [[._periodic_update_loop()]] - `method` [EXTRACTED]
 - [[.download_blocklist()]] - `method` [EXTRACTED]
 - [[.is_blocked()]] - `method` [EXTRACTED]
@@ -41,6 +41,7 @@ tags:
 - [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[DatagramTransport]] - `uses` [INFERRED]
 - [[Domain blocklist with Pi-hole-compatible list parsing.]] - `rationale_for` [EXTRACTED]
+- [[Test DNS Blocklist Suite]] - `references` [EXTRACTED]
 - [[TestBlocklistDownload]] - `uses` [INFERRED]
 - [[TestBlocklistUpdate]] - `uses` [INFERRED]
 - [[TestBlocklistWildcardsAndAllowlist]] - `uses` [INFERRED]
@@ -72,4 +73,4 @@ tags:
 - [[test_dns_blocklist.py]] - `imports` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/Dns_Blocklist

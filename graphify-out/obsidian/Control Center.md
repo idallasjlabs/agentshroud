@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (interfaces)"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_interfaces
 ---
 
 # Control Center
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Text Interfaces]] - `contains` [EXTRACTED]
 - [[Controls]] - `contains` [EXTRACTED]
-- [[Usage_92]] - `contains` [EXTRACTED]
+- [[Usage_132]] - `contains` [EXTRACTED]
 - [[What it Shows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_interfaces

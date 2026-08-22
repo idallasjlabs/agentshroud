@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Security Audit & Watchtower Tests"
 location: "L67"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress__RBAC_Security_Core
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # ContextGuard
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_62]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_65]] - `method` [EXTRACTED]
 - [[._detect_hidden_instructions()]] - `method` [EXTRACTED]
 - [[._detect_instruction_injection()]] - `method` [EXTRACTED]
 - [[._detect_rapid_context_growth()]] - `method` [EXTRACTED]
@@ -38,6 +38,7 @@ tags:
 - [[.test_oversized_json_payload()]] - `calls` [INFERRED]
 - [[Action]] - `uses` [INFERRED]
 - [[Any_8]] - `uses` [INFERRED]
+- [[ApprovalHardening]] - `semantically_similar_to` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[Guard against context window poisoning attacks.]] - `rationale_for` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
@@ -102,4 +103,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Migrate Cve Registry Ghsa (scripts)"
 location: "L204"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Migrate_Cve_Registry_Ghsa_scripts
 ---
 
 # Counter
@@ -17,4 +17,4 @@ tags:
 - [[build_id_plan()]] - `calls` [EXTRACTED]
 - [[match_entry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Migrate_Cve_Registry_Ghsa_scripts

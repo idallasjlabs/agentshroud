@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/README.md"
 type: "document"
-community: "Community 1249"
+community: "03 Data (diagrams)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1249
+  - community/03_Data_diagrams
 ---
 
 # Data Documentation
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Current Status_2]] - `contains` [EXTRACTED]
 - [[Planned Documents_1]] - `contains` [EXTRACTED]
-- [[README_82]] - `contains` [EXTRACTED]
+- [[README_119]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1249
+#graphify/document #graphify/EXTRACTED #community/03_Data_diagrams

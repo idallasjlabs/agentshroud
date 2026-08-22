@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-eightd)"
 location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-eightd
 ---
 
 # D2 — Problem Description (Data Collection & Characterization)
@@ -19,4 +19,4 @@ tags:
 - [[Step 5 Establish Baseline_1]] - `contains` [EXTRACTED]
 - [[The 8D Investigation Process_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd

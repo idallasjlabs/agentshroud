@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
+source_file: "docker/config/hermes/skills/i-daedalus/README.md"
 type: "document"
-community: "docs/runbooks"
+community: "Readme (i-daedalus)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Readme_i-daedalus
 ---
 
 # Daedalus — Concept Illustrator
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_48]] - `contains` [EXTRACTED]
 - [[Usage_51]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Readme_i-daedalus

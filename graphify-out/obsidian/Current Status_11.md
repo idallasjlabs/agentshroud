@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "Setup Docs"
+community: "Agentshroud.yaml (03 - Configuration)"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Agentshroudyaml_03_-_Configuration
 ---
 
 # Current Status
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Agentshroudyaml_03_-_Configuration

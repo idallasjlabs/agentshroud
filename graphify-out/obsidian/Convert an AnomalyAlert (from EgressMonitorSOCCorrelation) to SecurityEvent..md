@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Event Adapter (soc)"
 location: "L146"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Event_Adapter_soc
 ---
 
 # Convert an AnomalyAlert (from EgressMonitor/SOCCorrelation) to SecurityEvent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[from_anomaly_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Event_Adapter_soc

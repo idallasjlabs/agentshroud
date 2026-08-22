@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
+source_file: ".agents/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "docs/vault"
+community: "Skill (i-daedalus)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skill_i-daedalus
 ---
 
 # Daedalus — Concept Illustrator
@@ -20,4 +20,4 @@ tags:
 - [[SKILL_17]] - `contains` [EXTRACTED]
 - [[System Prompt_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skill_i-daedalus

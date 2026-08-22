@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Trust Manager.py (Security Modules)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Trust_Managerpy_Security_Modules
 ---
 
 # Dashboard (WebSocket)
@@ -15,4 +15,4 @@ tags:
 - [[Kill Switch (MonitorBlockIsolate)]] - `calls` [EXTRACTED]
 - [[Monitoring System Integration (WebhooksPrometheus)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Trust_Managerpy_Security_Modules

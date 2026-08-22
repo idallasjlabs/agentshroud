@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "Progressive Trust Config"
+community: "Memory Lifecycle & Integrity"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Progressive_Trust_Config
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # ContentThreatType
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[MemoryLifecycleConfig]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
@@ -23,4 +22,4 @@ tags:
 - [[memory_lifecycle.py]] - `contains` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Progressive_Trust_Config
+#graphify/code #graphify/INFERRED #community/Memory_Lifecycle__Integrity

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (session-logs)"
 location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_session-logs
 ---
 
 # Cost JSON fields
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CodexBar CLI quick ref (usage + cost)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_session-logs

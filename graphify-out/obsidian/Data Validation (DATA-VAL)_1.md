@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-data/README.md"
+source_file: "docker/config/hermes/skills/i-data/README.md"
 type: "document"
-community: "scripts/agentshroud-manage.sh"
+community: "Readme (i-data)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/agentshroud-managesh
+  - community/Readme_i-data
 ---
 
 # Data Validation (DATA-VAL)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_49]] - `contains` [EXTRACTED]
 - [[Usage_52]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/agentshroud-managesh
+#graphify/document #graphify/EXTRACTED #community/Readme_i-data

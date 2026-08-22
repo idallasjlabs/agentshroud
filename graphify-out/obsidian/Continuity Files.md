@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
+source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-pm)"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-pm
 ---
 
 # Continuity Files
@@ -17,4 +17,4 @@ tags:
 - [[`session-notesCONTINUE.md` (always current)]] - `contains` [EXTRACTED]
 - [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-pm

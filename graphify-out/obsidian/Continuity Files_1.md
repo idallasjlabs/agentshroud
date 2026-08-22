@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/SKILL.md"
+source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
 type: "document"
-community: "docs/TEAM.md"
+community: "Skill (i-pm)"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/TEAMmd
+  - community/Skill_i-pm
 ---
 
 # Continuity Files
@@ -17,4 +17,4 @@ tags:
 - [[`session-notesCONTINUE.md` (always current)_1]] - `contains` [EXTRACTED]
 - [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/TEAMmd
+#graphify/document #graphify/EXTRACTED #community/Skill_i-pm

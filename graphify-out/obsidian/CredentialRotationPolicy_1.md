@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "skills/openclaw"
+community: "Key Rotation"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/skills/openclaw
+  - community/Key_Rotation
 ---
 
 # CredentialRotationPolicy
@@ -18,7 +18,7 @@ tags:
 - [[.test_default_policy_values()]] - `calls` [EXTRACTED]
 - [[.test_should_rotate()]] - `calls` [EXTRACTED]
 - [[.test_should_warn()]] - `calls` [EXTRACTED]
-- [[Any_42]] - `uses` [INFERRED]
+- [[Any_43]] - `uses` [INFERRED]
 - [[CredentialInfo]] - `uses` [INFERRED]
 - [[CredentialRotationPolicy]] - `uses` [INFERRED]
 - [[CredentialValidator]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[key_rotation_config.py]] - `contains` [EXTRACTED]
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/skills/openclaw
+#graphify/code #graphify/INFERRED #community/Key_Rotation

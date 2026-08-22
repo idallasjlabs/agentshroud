@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Progressive Trust Config"
+community: "Memory Lifecycle & Integrity"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # Create from dictionary for JSON deserialization.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.from_dict()_8]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/rationale #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

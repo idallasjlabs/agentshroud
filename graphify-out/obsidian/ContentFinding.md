@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: ".github/agents"
+community: "Url Analyzer"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/github/agents
+  - community/Url_Analyzer
 ---
 
 # ContentFinding
@@ -20,4 +20,4 @@ tags:
 - [[A single finding from content scanning.]] - `rationale_for` [EXTRACTED]
 - [[web_content_scanner.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/github/agents
+#graphify/code #graphify/EXTRACTED #community/Url_Analyzer

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md"
 type: "document"
-community: "Planning Docs"
+community: "Security Assessment V0.8.0 25 (v0.8)"
 location: "L368"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Security_Assessment_V080_25_v08
 ---
 
 # Critical Files (v0.8.0 Changes)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Security_Assessment_V080_25_v08

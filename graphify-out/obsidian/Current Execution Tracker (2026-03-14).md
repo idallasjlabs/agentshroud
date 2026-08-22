@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "docs/vault"
+community: "V0.8.0 Release Plan (v0.8)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/V080_Release_Plan_v08
 ---
 
 # Current Execution Tracker (2026-03-14)
@@ -17,4 +17,4 @@ tags:
 - [[Live tracker files]] - `contains` [EXTRACTED]
 - [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/V080_Release_Plan_v08

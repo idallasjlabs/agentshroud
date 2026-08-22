@@ -1,16 +1,20 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
-type: "concept"
-community: "Planning Docs"
+source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
+type: "document"
+community: "Readme (i-daedalus)"
+location: "L1"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Readme_i-daedalus
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[Socrates — Dialogue Architect_4]] - `shares_data_with` [EXTRACTED]
+- [[Purpose_82]] - `contains` [EXTRACTED]
+- [[README_87]] - `contains` [EXTRACTED]
+- [[Related Skills_88]] - `contains` [EXTRACTED]
+- [[Usage_91]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_i-daedalus

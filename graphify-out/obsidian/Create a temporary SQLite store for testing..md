@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Collaborator Prompt Classifiers"
+community: "Enhanced Approval"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Enhanced_Approval
 ---
 
 # Create a temporary SQLite store for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[temp_store()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/rationale #graphify/EXTRACTED #community/Enhanced_Approval

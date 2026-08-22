@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "PII Sanitizer Pipeline"
+community: "Dashboard"
 location: "L441"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Dashboard
 ---
 
 # Dashboard HTML uses data attributes instead of onclick for approvals
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_dashboard_xss_prevention()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/rationale #graphify/EXTRACTED #community/Dashboard

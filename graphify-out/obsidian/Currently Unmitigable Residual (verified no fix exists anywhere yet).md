@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "docs/project"
+community: "Cve Mitigation Matrix (security)"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Cve_Mitigation_Matrix_security
 ---
 
 # Currently Unmitigable Residual (verified: no fix exists anywhere yet)
@@ -18,4 +18,4 @@ tags:
 - [[openclaw image (2 residual)]] - `contains` [EXTRACTED]
 - [[voice-gateway image (4 residual, all Debian, all `fix NONE`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/Cve_Mitigation_Matrix_security

@@ -1,21 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/references/security-policies.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L9"
+community: "Skill (securebrowser)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_securebrowser
 ---
 
 # Core Security Principles
 
 ## Connections
-- [[1. Least Privilege]] - `contains` [EXTRACTED]
-- [[2. Defense in Depth]] - `contains` [EXTRACTED]
-- [[3. Explicit Over Implicit]] - `contains` [EXTRACTED]
-- [[4. Fail Secure]] - `contains` [EXTRACTED]
-- [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_securebrowser

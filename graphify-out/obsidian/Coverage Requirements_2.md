@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/pytest.ini.md"
+source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "docs/papers"
-location: "L42"
+community: "Skill (i-sec-offense)"
+location: "L323"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Skill_i-sec-offense
 ---
 
 # Coverage Requirements
 
 ## Connections
-- [[pytest.ini_1]] - `contains` [EXTRACTED]
+- [[Writing Exploit Tests_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/papers
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-offense

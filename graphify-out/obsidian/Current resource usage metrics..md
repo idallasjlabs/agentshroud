@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Resource Guard & Local Model Parity"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Resource_Guard__Local_Model_Parity
 ---
 
 # Current resource usage metrics.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ResourceUsage]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity

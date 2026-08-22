@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-feature-list-final.md"
 type: "document"
-community: "Bot Skill Config"
+community: "V0.8.0 Feature List Final (v0.8)"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/V080_Feature_List_Final_v08
 ---
 
 # D. Interactive Egress Firewall (7 features)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud™ v0.8.0 Watchtower — Complete Feature List]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/V080_Feature_List_Final_v08

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
+source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-ui)"
 location: "L231"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-ui
 ---
 
 # Dashboard Grid
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Responsive Layout System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ui

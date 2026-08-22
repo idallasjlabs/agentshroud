@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Pipeline Unit"
 location: "L212"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Pipeline_Unit
 ---
 
 # ContextGuard must run in SecurityPipeline.process_inbound() — A2.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestContextGuardInPipeline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Unit

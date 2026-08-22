@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "Setup Docs"
+community: "Quick Reference (branding)"
 location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Quick_Reference_branding
 ---
 
 # Dark Mode
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Use Cases]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference_branding

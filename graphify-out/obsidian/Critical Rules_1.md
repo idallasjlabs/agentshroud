@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
+source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L578"
+community: "Skill (i-sec-defense)"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-sec-defense
 ---
 
 # Critical Rules
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense

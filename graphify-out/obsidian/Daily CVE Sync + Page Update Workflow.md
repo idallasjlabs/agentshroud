@@ -1,16 +1,17 @@
 ---
 source_file: ".github/workflows/update-cve-page.yml"
-type: "code"
-community: "Planning Docs"
+type: "document"
+community: "Security"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Security
 ---
 
 # Daily CVE Sync + Page Update Workflow
 
 ## Connections
-- [[Agent CVE Registry (OpenClaw + Hermes, daily NVD sync)]] - `references` [EXTRACTED]
+- [[Pinned Vendor Versions Single Source of Truth (dockerversions.env)]] - `references` [EXTRACTED]
+- [[Upstream Agent CVE Tracking]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Security

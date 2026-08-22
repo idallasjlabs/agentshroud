@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Security Hardening"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Auth__Exception_Types
+  - community/Security_Hardening
 ---
 
 # ContainerSnapshot
@@ -36,7 +36,7 @@ tags:
 - [[.test_removed_capability()]] - `calls` [EXTRACTED]
 - [[.test_seccomp_drift()]] - `calls` [EXTRACTED]
 - [[.test_simultaneous_baseline_and_config_change()]] - `calls` [EXTRACTED]
-- [[.to_dict()_7]] - `method` [EXTRACTED]
+- [[.to_dict()_8]] - `method` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
 - [[TestAuth_1]] - `uses` [INFERRED]
@@ -77,4 +77,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Auth__Exception_Types
+#graphify/code #graphify/INFERRED #community/Security_Hardening

@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "skills/openclaw"
+community: "Readme"
 location: "L169"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Readme
 ---
 
 # Core Security Pipeline
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[75 Security Modules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Readme
