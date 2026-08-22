@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
+source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "document"
-community: "docs/papers"
-location: "L16"
+community: "Security.py (Runtime)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Securitypy_Runtime
 ---
 
 # Purpose
 
 ## Connections
-- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
+- [[security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/papers
+#graphify/document #graphify/EXTRACTED #community/Securitypy_Runtime

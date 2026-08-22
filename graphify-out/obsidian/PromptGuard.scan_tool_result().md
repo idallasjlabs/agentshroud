@@ -1,17 +1,14 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Community 1497"
+community: "Prompt Guard (security)"
 location: "L786"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1497
+  - graphify/EXTRACTED
+  - community/Prompt_Guard_security
 ---
 
 # PromptGuard.scan_tool_result()
 
-## Connections
-- [[ToolResultInjectionScanner.scan_tool_result()]] - `conceptually_related_to` [INFERRED]
-
-#graphify/code #graphify/INFERRED #community/Community_1497
+#graphify/code #graphify/EXTRACTED #community/Prompt_Guard_security

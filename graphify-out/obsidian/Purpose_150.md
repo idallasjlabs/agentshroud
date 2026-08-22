@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/httpx.md"
+source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L15"
+community: "Canary.py (Security Modules)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Canarypy_Security_Modules
 ---
 
 # Purpose
 
 ## Connections
-- [[httpx_1]] - `contains` [EXTRACTED]
+- [[canary.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Canarypy_Security_Modules

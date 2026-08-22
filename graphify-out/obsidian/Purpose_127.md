@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "Planning Docs"
+community: "Forwarder.py (Proxy Layer)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Forwarderpy_Proxy_Layer
 ---
 
 # Purpose
 
 ## Connections
-- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[forwarder.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Forwarderpy_Proxy_Layer

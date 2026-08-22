@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "Custom Skills"
-location: "L12"
+community: "Browser Fetch.js (JavaScript)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Browser_Fetchjs_JavaScript
 ---
 
 # Purpose
 
 ## Connections
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Browser_Fetchjs_JavaScript

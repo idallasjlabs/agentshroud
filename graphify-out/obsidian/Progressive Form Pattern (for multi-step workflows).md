@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
+source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "CHANGELOG.md"
+community: "Skill (i-ux)"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Skill_i-ux
 ---
 
 # Progressive Form Pattern (for multi-step workflows)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Form UX]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ux

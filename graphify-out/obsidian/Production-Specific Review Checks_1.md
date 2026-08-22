@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "document"
-community: "docs/vault"
+community: "Skill (i-cr)"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Skill_i-cr
 ---
 
 # Production-Specific Review Checks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Skill_i-cr

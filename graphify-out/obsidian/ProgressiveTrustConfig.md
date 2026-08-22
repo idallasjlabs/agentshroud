@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Progressive Trust Integration"
 location: "L86"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Progressive_Trust_Integration
 ---
 
 # ProgressiveTrustConfig
@@ -18,12 +18,10 @@ tags:
 - [[.is_tool_allowed()]] - `method` [EXTRACTED]
 - [[A2APeerTestDouble]] - `uses` [INFERRED]
 - [[Configuration for the progressive trust system.]] - `rationale_for` [EXTRACTED]
-- [[CrossBotTrustLedger]] - `semantically_similar_to` [INFERRED]
 - [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
 - [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
 - [[Request_7]] - `uses` [INFERRED]
 - [[Response]] - `uses` [INFERRED]
-- [[Response_2]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]
 - [[TestEnforcementMode]] - `uses` [INFERRED]
 - [[TestEnforcementModeResolver]] - `uses` [INFERRED]
@@ -55,4 +53,4 @@ tags:
 - [[trust_manager()_1]] - `calls` [EXTRACTED]
 - [[trust_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Progressive_Trust_Integration

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Telegram Proxy Multibot"
 location: "L4577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Proxy_Multibot
 ---
 
 # Proxy Telegram Bot API calls through security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[telegram_api_proxy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Multibot

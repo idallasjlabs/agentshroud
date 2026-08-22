@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
+source_file: "docker/config/openclaw/skills/i-sec-offense/README.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L12"
+community: "Readme (i-sec-offense)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-sec-offense
 ---
 
 # Purpose
 
 ## Connections
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-sec-offense

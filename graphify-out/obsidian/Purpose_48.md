@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gg/README.md"
+source_file: "docker/config/hermes/skills/i-gg/README.md"
 type: "document"
-community: "scripts/openclaw_triage.sh"
+community: "Readme (i-gg)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/openclaw_triagesh
+  - community/Readme_i-gg
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/openclaw_triagesh
+#graphify/document #graphify/EXTRACTED #community/Readme_i-gg

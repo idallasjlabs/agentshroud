@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "docs/vault"
-location: "L137"
+community: "Queue (approval_queue)"
+location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Queue_approval_queue
 ---
 
 # Process an approval decision          Args:             request_id: Request UUID
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.decide()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Queue_approval_queue

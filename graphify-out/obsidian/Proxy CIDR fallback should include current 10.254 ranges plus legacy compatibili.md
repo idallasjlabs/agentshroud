@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Architecture Docs"
+community: "Config Validation & Router"
 location: "L329"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Config_Validation__Router
 ---
 
 # Proxy CIDR fallback should include current 10.254 ranges plus legacy compatibili
 
 ## Connections
-- [[.test_lifespan_op_prewarm_guarded_against_pytest()]] - `rationale_for` [EXTRACTED]
 - [[.test_proxy_allowed_network_default_includes_current_subnets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Config_Validation__Router

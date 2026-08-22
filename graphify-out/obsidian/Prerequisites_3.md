@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Deployment Procedure (operations)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Deployment_Procedure_operations
 ---
 
 # Prerequisites
@@ -18,4 +18,4 @@ tags:
 - [[Software Dependencies]] - `contains` [EXTRACTED]
 - [[System Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Deployment_Procedure_operations

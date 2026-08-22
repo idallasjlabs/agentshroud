@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
 type: "document"
-community: "docs/runbooks"
-location: "L12"
+community: "Readme (i-vulcan)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Readme_i-vulcan
 ---
 
 # Purpose
 
 ## Connections
-- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Readme_i-vulcan

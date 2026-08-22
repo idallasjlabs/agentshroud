@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Ssh Config.py (Gateway Core)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Ssh_Configpy_Gateway_Core
 ---
 
 # Purpose
 
 ## Connections
-- [[egress_config.py_2]] - `contains` [EXTRACTED]
+- [[ssh_config.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Ssh_Configpy_Gateway_Core

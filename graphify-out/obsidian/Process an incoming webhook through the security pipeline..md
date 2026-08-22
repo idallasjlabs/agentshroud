@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Middleware & Session Isolation"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Middleware__Session_Isolation
 ---
 
 # Process an incoming webhook through the security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.process_webhook()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Middleware__Session_Isolation

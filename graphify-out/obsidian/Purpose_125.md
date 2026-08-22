@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
+source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
 type: "document"
-community: "docs/vault"
-location: "L12"
+community: "Ssh Proxy.py (Other)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Ssh_Proxypy_Other
 ---
 
 # Purpose
 
 ## Connections
-- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
+- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Ssh_Proxypy_Other

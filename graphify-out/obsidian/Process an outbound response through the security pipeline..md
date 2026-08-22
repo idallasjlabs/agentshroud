@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Pipeline (proxy)"
 location: "L1062"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Pipeline_proxy
 ---
 
 # Process an outbound response through the security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._process_outbound_core()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Pipeline_proxy

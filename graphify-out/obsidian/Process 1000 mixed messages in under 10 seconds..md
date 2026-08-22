@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "docs/vault"
+community: "Security Audit & Watchtower Tests"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Process 1000 mixed messages in under 10 seconds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_1000_messages_under_10s()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

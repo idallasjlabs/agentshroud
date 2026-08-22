@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L15"
+community: "Egress Filter.py (Security Modules)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress_Filterpy_Security_Modules
 ---
 
 # Purpose
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[EgressFilter_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Egress_Filterpy_Security_Modules

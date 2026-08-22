@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Planning Docs"
+community: "Claude"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Claude
 ---
 
 # Preferred workflow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3) SDLC — HOW TO WORK IN THIS REPO]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Claude

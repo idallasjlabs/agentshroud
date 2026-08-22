@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L12"
+community: "Shutdown & recovery (01 - Architecture)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Shutdown__recovery_01_-_Architecture
 ---
 
 # Purpose
 
 ## Connections
-- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Shutdown__recovery_01_-_Architecture

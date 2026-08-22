@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "skills/openclaw"
+community: "Readme"
 location: "L182"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Readme
 ---
 
 # Proxy & Network Layer
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[75 Security Modules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Readme

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 1513"
+community: "Soc Models"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1513
+  - community/Soc_Models
 ---
 
 # Platform
@@ -21,4 +21,4 @@ tags:
 - [[str]] - `inherits` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1513
+#graphify/code #graphify/EXTRACTED #community/Soc_Models

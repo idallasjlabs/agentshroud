@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/README.md"
+source_file: ".agents/skills/i-sav/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (i-sav)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_i-sav
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_i-sav

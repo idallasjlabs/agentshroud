@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "rationale"
-community: "docs/project"
-location: "L307"
+community: "Intel Report (security)"
+location: "L312"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Intel_Report_security
 ---
 
 # Public: does *domain* match any pattern in the effective default allowlist?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.matches_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/project
+#graphify/rationale #graphify/EXTRACTED #community/Intel_Report_security

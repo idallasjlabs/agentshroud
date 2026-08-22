@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openclaw.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "docs/redteam"
-location: "L15"
+community: "Clamav Scanner.py (Security Modules)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/redteam
+  - community/Clamav_Scannerpy_Security_Modules
 ---
 
 # Purpose
 
 ## Connections
-- [[OpenClaw]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/redteam
+#graphify/document #graphify/EXTRACTED #community/Clamav_Scannerpy_Security_Modules

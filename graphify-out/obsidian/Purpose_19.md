@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm/README.md"
+source_file: ".agents/skills/i-mcpm/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-mcpm)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-mcpm
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-mcpm

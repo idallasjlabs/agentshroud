@@ -1,20 +1,20 @@
 ---
 source_file: "docker/config/hermes/skills/i-pm/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-pm)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-pm
 ---
 
 # Project Management (PM)
 
 ## Connections
-- [[Purpose_22]] - `contains` [EXTRACTED]
-- [[README_27]] - `contains` [EXTRACTED]
-- [[Related Skills_25]] - `contains` [EXTRACTED]
-- [[Usage_26]] - `contains` [EXTRACTED]
+- [[Purpose_59]] - `contains` [EXTRACTED]
+- [[README_64]] - `contains` [EXTRACTED]
+- [[Related Skills_65]] - `contains` [EXTRACTED]
+- [[Usage_66]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-pm

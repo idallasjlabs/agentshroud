@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Privacy Policy"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Privacy_Policy
 ---
 
 # PrivacyPolicy
 
 ## Connections
-- [[.__init__()_104]] - `references` [EXTRACTED]
+- [[.__init__()_107]] - `references` [EXTRACTED]
 - [[.default()]] - `method` [EXTRACTED]
 - [[.from_dict()_10]] - `method` [EXTRACTED]
 - [[Privacy policy configuration.      Loaded from agentshroud.yaml `privacy` secti]] - `rationale_for` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Privacy_Policy

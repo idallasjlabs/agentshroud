@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
 type: "document"
-community: "docs/vault"
+community: "Publish To Clawhub (reference)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Publish_To_Clawhub_reference
 ---
 
 # Publish SecureBrowser to ClawHub - Step-by-Step Guide
@@ -25,4 +25,4 @@ tags:
 - [[🔄 Update Published Skill]] - `contains` [EXTRACTED]
 - [[🚀 Quick Publish (3 Commands)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Publish_To_Clawhub_reference

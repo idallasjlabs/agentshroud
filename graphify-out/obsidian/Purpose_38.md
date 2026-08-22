@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/README.md"
+source_file: "docker/config/hermes/skills/i-athena/README.md"
 type: "document"
-community: "docs/papers"
+community: "Readme (i-athena)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Readme_i-athena
 ---
 
 # Purpose
 
 ## Connections
-- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/papers
+#graphify/document #graphify/EXTRACTED #community/Readme_i-athena

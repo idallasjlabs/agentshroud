@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
+source_file: "docker/config/openclaw/skills/i-sad/README.md"
 type: "document"
-community: "docs/vault"
-location: "L12"
+community: "Readme (i-sad)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Readme_i-sad
 ---
 
 # Purpose
 
 ## Connections
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[System Audit Documentation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Readme_i-sad

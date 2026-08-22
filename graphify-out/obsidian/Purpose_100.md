@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
+source_file: "docker/config/openclaw/skills/i-qa/README.md"
 type: "document"
-community: "src/interfaces"
-location: "L12"
+community: "Readme (i-qa)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/src/interfaces
+  - community/Readme_i-qa
 ---
 
 # Purpose
 
 ## Connections
-- [[web_config.py_2]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/src/interfaces
+#graphify/document #graphify/EXTRACTED #community/Readme_i-qa

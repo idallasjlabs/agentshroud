@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
+source_file: "docker/config/openclaw/skills/i-sec-defense/README.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L12"
+community: "Readme (i-sec-defense)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-sec-defense
 ---
 
 # Purpose
 
 ## Connections
-- [[apple_engine.py_2]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-sec-defense

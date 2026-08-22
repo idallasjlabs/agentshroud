@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Web Proxy Security"
 location: "L38"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Web_Proxy_Security
 ---
 
 # ProxyAction
@@ -29,7 +29,7 @@ tags:
 - [[TestPIIDetection_2]] - `uses` [INFERRED]
 - [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting_3]] - `uses` [INFERRED]
+- [[TestRateLimiting_4]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]
@@ -44,4 +44,4 @@ tags:
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Web_Proxy_Security

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Router.py (Gateway Core)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Routerpy_Gateway_Core
 ---
 
 # Purpose
 
 ## Connections
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[router.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Routerpy_Gateway_Core

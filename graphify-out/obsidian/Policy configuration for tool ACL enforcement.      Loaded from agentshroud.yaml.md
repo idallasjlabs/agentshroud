@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
+community: "Tool ACL & Group RBAC"
 location: "L171"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Tool_ACL__Group_RBAC
 ---
 
 # Policy configuration for tool ACL enforcement.      Loaded from agentshroud.yaml
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolACLConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Tool_ACL__Group_RBAC

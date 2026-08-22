@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
+source_file: "docker/config/openclaw/skills/i-tw/README.md"
 type: "document"
-community: "docs/requirements"
-location: "L12"
+community: "Readme (i-tw)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/requirements
+  - community/Readme_i-tw
 ---
 
 # Purpose
 
 ## Connections
-- [[security.py_2]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/requirements
+#graphify/document #graphify/EXTRACTED #community/Readme_i-tw

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openscap.md"
+source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L16"
+community: "Consent Framework.py (Security Modules)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Consent_Frameworkpy_Security_Modules
 ---
 
 # Purpose
 
 ## Connections
-- [[OpenSCAP]] - `contains` [EXTRACTED]
+- [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Consent_Frameworkpy_Security_Modules

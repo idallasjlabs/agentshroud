@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/SKILL.md"
+source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (i-production)"
 location: "L130"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-production
 ---
 
 # Post-Incident
@@ -17,4 +17,4 @@ tags:
 - [[Post-Mortem Template]] - `contains` [EXTRACTED]
 - [[Skill Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-production

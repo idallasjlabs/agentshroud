@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Security Audit & Watchtower Tests"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Proxy_Config
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # PipelineAction
@@ -16,7 +16,6 @@ tags:
 - [[Enum]] - `inherits` [EXTRACTED]
 - [[FilterResult]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
 - [[PipelineResult_1]] - `uses` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
@@ -61,8 +60,7 @@ tags:
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
-- [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config
+#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
+source_file: "docker/config/openclaw/skills/i-ti/README.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L12"
+community: "Readme (i-ti)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-ti
 ---
 
 # Purpose
 
 ## Connections
-- [[podman_engine.py_2]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-ti

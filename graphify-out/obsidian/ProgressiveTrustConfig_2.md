@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Progressive Trust Integration"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Progressive_Trust_Integration
 ---
 
 # ProgressiveTrustConfig
@@ -38,4 +38,4 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[_fast_ladder()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Integration

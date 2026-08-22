@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "Custom Skills"
-location: "L12"
+community: "Mcp Proxy Wrapper.js (JavaScript)"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Mcp_Proxy_Wrapperjs_JavaScript
 ---
 
 # Purpose
 
 ## Connections
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Mcp_Proxy_Wrapperjs_JavaScript

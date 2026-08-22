@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Security Docs"
-location: "L915"
+community: "Llm Proxy (proxy)"
+location: "L1067"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Llm_Proxy_proxy
 ---
 
 # Proxy a streaming LLM API request, yielding SSE chunks as they arrive.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.proxy_messages_streaming()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Llm_Proxy_proxy

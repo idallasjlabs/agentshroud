@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "document"
-community: "Security Docs"
-location: "L16"
+community: "Url Analyzer.py (Proxy Layer)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Url_Analyzerpy_Proxy_Layer
 ---
 
 # Purpose
 
 ## Connections
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Url_Analyzerpy_Proxy_Layer

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
+source_file: "docker/config/openclaw/skills/i-socrates/README.md"
 type: "document"
-community: "docs/vault"
-location: "L12"
+community: "Readme (i-socrates)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Readme_i-socrates
 ---
 
 # Purpose
 
 ## Connections
-- [[docker_engine.py_2]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Readme_i-socrates

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Runbook (operations)"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Runbook_operations
 ---
 
 # Proxy Mode (Recommended)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Deployment Modes_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Runbook_operations

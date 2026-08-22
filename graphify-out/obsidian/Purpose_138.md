@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L15"
+community: "Web Content Scanner.py (Proxy Layer)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Web_Content_Scannerpy_Proxy_Layer
 ---
 
 # Purpose
 
 ## Connections
-- [[proxy_status.py_2]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Web_Content_Scannerpy_Proxy_Layer

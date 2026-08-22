@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/README.md"
+source_file: "docker/config/hermes/skills/i-pr/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (i-pr)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_i-pr
 ---
 
 # Pull Request Generator (PR)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_66]] - `contains` [EXTRACTED]
 - [[Usage_67]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_i-pr

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Security Docs"
-location: "L564"
+community: "Llm Proxy (proxy)"
+location: "L703"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Llm_Proxy_proxy
 ---
 
 # Proxy an LLM API request.          Returns (status_code, response_headers, respo
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.proxy_messages()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Security_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Llm_Proxy_proxy

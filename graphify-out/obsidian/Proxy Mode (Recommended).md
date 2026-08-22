@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Deployment Diagram (architecture)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Deployment_Diagram_architecture
 ---
 
 # Proxy Mode (Recommended)
@@ -15,4 +15,4 @@ tags:
 - [[ADR-001 Transparent Proxy Decision]] - `implements` [EXTRACTED]
 - [[Deployment Modes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Deployment_Diagram_architecture

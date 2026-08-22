@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "CLI Client (Rust)"
+community: "Brand Guidelines (guidelines)"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CLI_Client_Rust
+  - community/Brand_Guidelines_guidelines
 ---
 
 # Press Kit
@@ -18,4 +18,4 @@ tags:
 - [[Key Facts]] - `contains` [EXTRACTED]
 - [[Media Contact]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CLI_Client_Rust
+#graphify/document #graphify/EXTRACTED #community/Brand_Guidelines_guidelines

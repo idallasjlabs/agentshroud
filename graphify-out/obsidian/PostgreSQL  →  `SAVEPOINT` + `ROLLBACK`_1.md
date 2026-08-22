@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-tdd/SKILL.md"
 type: "document"
-community: "docker/bot-capabilities.md"
+community: "Skill (i-tdd)"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/bot-capabilitiesmd
+  - community/Skill_i-tdd
 ---
 
 # PostgreSQL  →  `SAVEPOINT` + `ROLLBACK`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Stack-Specific Testing Patterns_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd
+#graphify/document #graphify/EXTRACTED #community/Skill_i-tdd

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
+source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L15"
+community: "Agent Isolation.py (Security Modules)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Agent_Isolationpy_Security_Modules
 ---
 
 # Purpose
 
 ## Connections
-- [[aiosqlite_1]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Agent_Isolationpy_Security_Modules

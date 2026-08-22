@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "docs/setup-slack.md"
+community: "Proxy Dashboard"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/setup-slackmd
+  - community/Proxy_Dashboard
 ---
 
 # ProxyDashboard
 
 ## Connections
-- [[.__init__()_7]] - `method` [EXTRACTED]
+- [[.__init__()_8]] - `method` [EXTRACTED]
 - [[.get_display()]] - `method` [EXTRACTED]
 - [[.get_report()]] - `method` [EXTRACTED]
 - [[.record_message_proxied()]] - `method` [EXTRACTED]
@@ -22,7 +22,10 @@ tags:
 - [[.update_canary()]] - `method` [EXTRACTED]
 - [[.update_direct_access()]] - `method` [EXTRACTED]
 - [[Collects status from all security components and generates reports.]] - `rationale_for` [EXTRACTED]
+- [[ProxyStatusReport]] - `calls` [EXTRACTED]
+- [[list_security_modules()]] - `semantically_similar_to` [INFERRED]
 - [[proxy_status.py]] - `contains` [EXTRACTED]
+- [[run_quick()]] - `references` [EXTRACTED]
 - [[test_dashboard_audit_broken()]] - `calls` [EXTRACTED]
 - [[test_dashboard_audit_status()]] - `calls` [EXTRACTED]
 - [[test_dashboard_canary_failed()]] - `calls` [EXTRACTED]
@@ -37,4 +40,4 @@ tags:
 - [[test_dashboard_uptime()]] - `calls` [EXTRACTED]
 - [[test_proxy_dashboard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/setup-slackmd
+#graphify/code #graphify/EXTRACTED #community/Proxy_Dashboard

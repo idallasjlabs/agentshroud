@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L123"
+community: "Llm Proxy"
+location: "L171"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Llm_Proxy
 ---
 
 # Proxies LLM API calls (Anthropic, OpenAI, Google) through the security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LLMProxy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Llm_Proxy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L15"
+community: "Dns Filter.py (Security Modules)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Dns_Filterpy_Security_Modules
 ---
 
 # Purpose
 
 ## Connections
-- [[Playwright]] - `contains` [EXTRACTED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Dns_Filterpy_Security_Modules

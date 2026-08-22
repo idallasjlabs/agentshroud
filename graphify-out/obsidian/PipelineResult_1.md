@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "CHEATSHEET.md"
+community: "Pipeline (proxy)"
 location: "L22"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/CHEATSHEETmd
+  - community/Pipeline_proxy
 ---
 
 # PipelineResult
@@ -17,4 +17,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[_make_pipeline_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/CHEATSHEETmd
+#graphify/code #graphify/INFERRED #community/Pipeline_proxy

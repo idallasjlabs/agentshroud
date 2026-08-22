@@ -1,11 +1,11 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Gateway Security Module"
+community: "Glossary (project)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Glossary_project
 ---
 
 # Prompt Injection
@@ -18,7 +18,6 @@ tags:
 - [[HERMES_SETUP]] - `references` [EXTRACTED]
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `references` [EXTRACTED]
 - [[system-requirements]] - `references` [EXTRACTED]
-- [[threat-model]] - `references` [EXTRACTED]
 - [[use-cases]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/concept #graphify/EXTRACTED #community/Glossary_project

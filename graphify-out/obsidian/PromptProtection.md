@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Prompt Protection (security)"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Prompt_Protection_security
 ---
 
 # PromptProtection
 
 ## Connections
-- [[.__init__()_107]] - `method` [EXTRACTED]
+- [[.__init__()_110]] - `method` [EXTRACTED]
 - [[._calculate_similarity()]] - `method` [EXTRACTED]
 - [[._compile_detection_patterns()_1]] - `method` [EXTRACTED]
 - [[._load_protected_content()]] - `method` [EXTRACTED]
@@ -25,6 +25,8 @@ tags:
 - [[.test_disabled_protection()]] - `calls` [EXTRACTED]
 - [[.test_protected_content_loading()]] - `calls` [EXTRACTED]
 - [[Main system prompt protection engine.      Maintains fingerprints of sensitive c]] - `rationale_for` [EXTRACTED]
+- [[Outbound Information Filter Tests]] - `semantically_similar_to` [INFERRED]
+- [[System Prompt Protection Tests]] - `references` [EXTRACTED]
 - [[TestPromptProtection]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[lifespan()_1]] - `calls` [EXTRACTED]
@@ -34,4 +36,4 @@ tags:
 - [[run()_3]] - `calls` [EXTRACTED]
 - [[test_prompt_protection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Prompt_Protection_security

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Audit Export Pipeline"
+community: "Security Audit & Watchtower Tests"
 location: "L581"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Audit_Export_Pipeline
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # PromptGuard
 
 ## Connections
-- [[.__init__()_106]] - `method` [EXTRACTED]
+- [[.__init__()_109]] - `method` [EXTRACTED]
 - [[._check_encoded_content()]] - `method` [EXTRACTED]
 - [[._check_unicode_tricks()]] - `method` [EXTRACTED]
 - [[._get_hmac_key()]] - `method` [EXTRACTED]
@@ -41,6 +41,7 @@ tags:
 - [[.verify_system_prompt()]] - `method` [EXTRACTED]
 - [[Any_36]] - `uses` [INFERRED]
 - [[ContextIntegrityScorer]] - `uses` [INFERRED]
+- [[Data Flow]] - `references` [EXTRACTED]
 - [[Detect and block prompt injection attempts.]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier_1]] - `uses` [INFERRED]
 - [[IntegrityScore]] - `uses` [INFERRED]
@@ -48,6 +49,7 @@ tags:
 - [[PromptGuard_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_1]] - `uses` [INFERRED]
 - [[SecurityPipeline_2]] - `uses` [INFERRED]
+- [[Startup Sequence]] - `references` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
 - [[TestAuditTrail_1]] - `uses` [INFERRED]
@@ -117,7 +119,6 @@ tags:
 - [[TestTrustManagerHardened]] - `uses` [INFERRED]
 - [[TestTrustManagerPerformance]] - `uses` [INFERRED]
 - [[TestWebSecurity]] - `uses` [INFERRED]
-- [[ToolResultInjectionScanner]] - `semantically_similar_to` [INFERRED]
 - [[TrustLevel_1]] - `conceptually_related_to` [INFERRED]
 - [[WS-E RT-2 Inbound Encoding Bypass Fix Rationale]] - `rationale_for` [EXTRACTED]
 - [[_BrokenOutputCanary]] - `uses` [INFERRED]
@@ -126,6 +127,7 @@ tags:
 - [[_StubForwarder_2]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
+- [[canary-cron.sh embedded Python main()]] - `calls` [EXTRACTED]
 - [[canary_pipeline()]] - `calls` [EXTRACTED]
 - [[context_integrity.py]] - `imports` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
@@ -133,16 +135,19 @@ tags:
 - [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
+- [[main.py_3]] - `references` [EXTRACTED]
 - [[pipeline()_1]] - `calls` [EXTRACTED]
 - [[prompt_guard()]] - `calls` [EXTRACTED]
 - [[prompt_guard()_1]] - `calls` [EXTRACTED]
 - [[prompt_guard()_2]] - `calls` [EXTRACTED]
 - [[prompt_guard.py]] - `contains` [EXTRACTED]
 - [[run()_3]] - `calls` [EXTRACTED]
+- [[run_canary()_1]] - `references` [EXTRACTED]
+- [[run_chain()]] - `references` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
-- [[test_canary.py]] - `imports` [EXTRACTED]
+- [[test_canary.py]] - `references` [EXTRACTED]
 - [[test_context_integrity.py]] - `imports` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
@@ -159,4 +164,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Audit_Export_Pipeline
+#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests

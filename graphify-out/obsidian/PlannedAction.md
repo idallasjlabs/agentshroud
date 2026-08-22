@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Skills Manifest Sync"
 location: "L149"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Skills_Manifest_Sync
 ---
 
 # PlannedAction
@@ -28,4 +28,4 @@ tags:
 - [[plan_deploy()]] - `references` [EXTRACTED]
 - [[test_skills_manifest_sync.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Skills_Manifest_Sync

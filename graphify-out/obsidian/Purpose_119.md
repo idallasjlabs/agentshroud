@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "docs/api"
+community: "Version Routes.py (Gateway Core)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/api
+  - community/Version_Routespy_Gateway_Core
 ---
 
 # Purpose
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
+- [[version_routes.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/api
+#graphify/document #graphify/EXTRACTED #community/Version_Routespy_Gateway_Core

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
+source_file: ".agents/skills/i-sec-offense/README.md"
 type: "document"
-community: "branding/guidelines"
+community: "Readme (i-sec-offense)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/Readme_i-sec-offense
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/guidelines
+#graphify/document #graphify/EXTRACTED #community/Readme_i-sec-offense

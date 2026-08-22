@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Deployment (runbooks)"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Deployment_runbooks
 ---
 
 # Pre-installed Tools
 
 ## Connections
-- [[Dockerfile.gateway_1]] - `contains` [EXTRACTED]
+- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Deployment_runbooks

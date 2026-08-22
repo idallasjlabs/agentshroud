@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "MCP Proxy Config"
+community: "Pipeline (proxy)"
 location: "L491"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Pipeline_proxy
 ---
 
 # Process an inbound message through the full security pipeline.          Thin wra
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.process_inbound()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/rationale #graphify/EXTRACTED #community/Pipeline_proxy

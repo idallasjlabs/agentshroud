@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "skills/openclaw"
-location: "L15"
+community: "Config.py (Runtime)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Configpy_Runtime
 ---
 
 # Purpose
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[config.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Configpy_Runtime

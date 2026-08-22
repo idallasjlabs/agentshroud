@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
+source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-ps)"
 location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-ps
 ---
 
 # Post-Deployment Verification
@@ -17,4 +17,4 @@ tags:
 - [[Sign-Off]] - `contains` [EXTRACTED]
 - [[Skill Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-ps

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Tool Chain & CVE Triage"
 location: "L732"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # Produce an honest mitigation verdict for a single advisory entry.      Combines
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[triage_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "docs/vault"
+community: "Models.py (Gateway Core)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Modelspy_Gateway_Core
 ---
 
 # Purpose
 
 ## Connections
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[models.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Modelspy_Gateway_Core

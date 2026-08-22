@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/falco-rules.md"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "docs/vault"
-location: "L16"
+community: "Compose Generator.py (Runtime)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Compose_Generatorpy_Runtime
 ---
 
 # Purpose
 
 ## Connections
-- [[falco-rules.yaml]] - `contains` [EXTRACTED]
+- [[compose_generator.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Compose_Generatorpy_Runtime

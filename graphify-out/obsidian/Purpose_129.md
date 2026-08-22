@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Mcp Audit.py (Proxy Layer)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Mcp_Auditpy_Proxy_Layer
 ---
 
 # Purpose
 
 ## Connections
-- [[PromptGuard_2]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Mcp_Auditpy_Proxy_Layer

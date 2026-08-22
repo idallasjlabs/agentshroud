@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Sanitizer.py (Gateway Core)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Sanitizerpy_Gateway_Core
 ---
 
 # Purpose
 
 ## Connections
-- [[drift_detector.py_2]] - `contains` [EXTRACTED]
+- [[sanitizer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Sanitizerpy_Gateway_Core

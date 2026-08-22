@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docker/config/openclaw/skills/i-sec/README.md"
 type: "document"
-community: "docs/diagrams"
-location: "L12"
+community: "Readme (i-sec)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Readme_i-sec
 ---
 
 # Purpose
 
 ## Connections
-- [[config.py_3]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/diagrams
+#graphify/document #graphify/EXTRACTED #community/Readme_i-sec

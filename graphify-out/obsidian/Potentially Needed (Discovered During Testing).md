@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/DEVELOPMENT_WORKFLOW_READ_ONLY.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Development Workflow Read Only (security)"
 location: "L496"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Development_Workflow_Read_Only_security
 ---
 
 # Potentially Needed (Discovered During Testing)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Write Paths Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Development_Workflow_Read_Only_security

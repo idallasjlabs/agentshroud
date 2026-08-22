@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/clamav.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L15"
+community: "Alert Dispatcher.py (Security Modules)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Alert_Dispatcherpy_Security_Modules
 ---
 
 # Purpose
 
 ## Connections
-- [[ClamAV]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Alert_Dispatcherpy_Security_Modules

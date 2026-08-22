@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (securebrowser)"
 location: "L355"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_securebrowser
 ---
 
 # Publishing to ClawHub
@@ -17,4 +17,4 @@ tags:
 - [[Step 2 Test Locally]] - `contains` [EXTRACTED]
 - [[Step 3 Publish]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_securebrowser

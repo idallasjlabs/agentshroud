@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Setup Docs"
+community: "Runbook (operations)"
 location: "L476"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Runbook_operations
 ---
 
 # Post-Incident Activities
@@ -17,4 +17,4 @@ tags:
 - [[Lessons Learned Integration]] - `contains` [EXTRACTED]
 - [[Post-Incident Review Template]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Runbook_operations

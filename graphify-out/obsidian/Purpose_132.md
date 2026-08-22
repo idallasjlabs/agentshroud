@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Mcp Permissions.py (Proxy Layer)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Mcp_Permissionspy_Proxy_Layer
 ---
 
 # Purpose
 
 ## Connections
-- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Mcp_Permissionspy_Proxy_Layer

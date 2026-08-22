@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Installer (web)"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Installer_web
 ---
 
 # PrerequisiteCheck
@@ -16,4 +16,4 @@ tags:
 - [[check_prerequisites()]] - `calls` [EXTRACTED]
 - [[installer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Installer_web

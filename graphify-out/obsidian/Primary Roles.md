@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Setup Docs"
+community: "Runbook (operations)"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Runbook_operations
 ---
 
 # Primary Roles
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Incident Response Team Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Runbook_operations

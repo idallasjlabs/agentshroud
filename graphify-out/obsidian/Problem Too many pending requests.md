@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "scripts/promote-firmware.sh"
+community: "Device Pairing (setup)"
 location: "L358"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/promote-firmwaresh
+  - community/Device_Pairing_setup
 ---
 
 # Problem: Too many pending requests
 
 ## Connections
-- [[Troubleshooting_22]] - `contains` [EXTRACTED]
+- [[Troubleshooting_26]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/promote-firmwaresh
+#graphify/document #graphify/EXTRACTED #community/Device_Pairing_setup

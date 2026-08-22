@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
 type: "document"
-community: "docs/runbooks"
+community: "Telegram Proxy.py (Proxy Layer)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Telegram_Proxypy_Proxy_Layer
 ---
 
 # Purpose
 
 ## Connections
-- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Telegram_Proxypy_Proxy_Layer

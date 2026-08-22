@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "Slack API Proxy"
+community: "Router"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Router
 ---
 
 # Populate routing targets from the bots registry.          Iterates all BotConfig
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.register_bots()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/rationale #graphify/EXTRACTED #community/Router

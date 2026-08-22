@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "04 Security (diagrams)"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/04_Security_diagrams
 ---
 
 # Priority Reading Order
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud — Diagram Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/04_Security_diagrams

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
 type: "document"
-community: "docs/vault"
-location: "L12"
+community: "Text Control Center.py (Other)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Text_Control_Centerpy_Other
 ---
 
 # Purpose
 
 ## Connections
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Text_Control_Centerpy_Other

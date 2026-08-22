@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (project)"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_project
 ---
 
 # Planned Documents
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Project Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_project

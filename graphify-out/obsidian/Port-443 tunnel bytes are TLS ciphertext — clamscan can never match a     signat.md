@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Http Proxy Coverage"
 location: "L650"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Http_Proxy_Coverage
 ---
 
 # Port-443 tunnel bytes are TLS ciphertext — clamscan can never match a     signat
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_relay_and_scan_tls_tunnel_skips_ciphertext_scan()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Http_Proxy_Coverage

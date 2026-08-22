@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
+source_file: "docker/config/openclaw/skills/i-sav/README.md"
 type: "document"
-community: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
-location: "L12"
+community: "Readme (i-sav)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
+  - community/Readme_i-sav
 ---
 
 # Purpose
 
 ## Connections
-- [[web_proxy.py_2]] - `contains` [EXTRACTED]
+- [[System Audit Vault_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
+#graphify/document #graphify/EXTRACTED #community/Readme_i-sav

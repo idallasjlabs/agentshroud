@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Mcp Permissions"
 location: "L165"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Dashboard
+  - community/Mcp_Permissions
 ---
 
 # PrivateRedactionEvent
@@ -20,4 +20,4 @@ tags:
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Dashboard
+#graphify/code #graphify/INFERRED #community/Mcp_Permissions

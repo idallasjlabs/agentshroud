@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
+source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L15"
+community: "Browser Security.py (Security Modules)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Browser_Securitypy_Security_Modules
 ---
 
 # Purpose
 
 ## Connections
-- [[FastAPI_4]] - `contains` [EXTRACTED]
+- [[browser_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Browser_Securitypy_Security_Modules

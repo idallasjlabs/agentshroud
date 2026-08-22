@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Port Manager"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Port_Manager
 ---
 
 # PortResolution
@@ -22,6 +22,7 @@ tags:
 - [[.test_no_conflict_mapping()]] - `calls` [EXTRACTED]
 - [[.test_ports_property()]] - `calls` [EXTRACTED]
 - [[.test_summary_format()]] - `calls` [EXTRACTED]
+- [[PortManager]] - `shares_data_with` [EXTRACTED]
 - [[Result of resolving all ports for an instance.]] - `rationale_for` [EXTRACTED]
 - [[TestFindAvailablePort]] - `uses` [INFERRED]
 - [[TestGenerateComposePorts]] - `uses` [INFERRED]
@@ -32,4 +33,4 @@ tags:
 - [[port_manager.py]] - `contains` [EXTRACTED]
 - [[test_port_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Port_Manager

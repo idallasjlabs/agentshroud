@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Session Manager"
 location: "L442"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Session_Manager
 ---
 
 # Preamble contains a security notice keyword.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_reanchor_contains_security_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Session_Manager

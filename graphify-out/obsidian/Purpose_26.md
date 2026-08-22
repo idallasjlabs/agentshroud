@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/README.md"
+source_file: ".agents/skills/i-qa/README.md"
 type: "document"
-community: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
+community: "Readme (i-pm)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
+  - community/Readme_i-pm
 ---
 
 # Purpose
 
 ## Connections
-- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
+#graphify/document #graphify/EXTRACTED #community/Readme_i-pm

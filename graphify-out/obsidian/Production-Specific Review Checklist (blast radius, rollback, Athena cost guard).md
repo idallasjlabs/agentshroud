@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Skill (i-aws)"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - community/Skill_i-aws
 ---
 
 # Production-Specific Review Checklist (blast radius, rollback, Athena cost guard)
@@ -14,4 +14,4 @@ tags:
 - [[AWS Cloud Management & FinOps Agent (SKILL)]] - `semantically_similar_to` [INFERRED]
 - [[Code Review (CR) (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/concept #graphify/INFERRED #community/Skill_i-aws

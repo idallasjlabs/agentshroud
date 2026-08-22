@@ -1,17 +1,17 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Browser Fetch Skill (reference)"
 location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Browser_Fetch_Skill_reference
 ---
 
 # Problem: Permission denied executing browser
 
 ## Connections
-- [[Troubleshooting_15]] - `contains` [EXTRACTED]
+- [[Troubleshooting_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill_reference

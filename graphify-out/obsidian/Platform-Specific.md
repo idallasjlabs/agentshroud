@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "docs/vault"
+community: "Typography (typography)"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Typography_typography
 ---
 
 # Platform-Specific
@@ -17,4 +17,4 @@ tags:
 - [[Print]] - `contains` [EXTRACTED]
 - [[Web]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Typography_typography

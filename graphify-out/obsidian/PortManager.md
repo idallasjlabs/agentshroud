@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tools/port_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Port Manager"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Port_Manager
 ---
 
 # PortManager
 
 ## Connections
-- [[.__init__()_190]] - `method` [EXTRACTED]
+- [[.__init__()_195]] - `method` [EXTRACTED]
 - [[.find_available_port()]] - `method` [EXTRACTED]
 - [[.generate_compose_ports()]] - `method` [EXTRACTED]
 - [[.is_port_available()]] - `method` [EXTRACTED]
@@ -34,13 +34,17 @@ tags:
 - [[.test_udp_unbound_available()]] - `calls` [EXTRACTED]
 - [[.test_unbound_port_is_available()]] - `calls` [EXTRACTED]
 - [[Detect port conflicts and auto-assign available ports.]] - `rationale_for` [EXTRACTED]
+- [[HTTPConnectProxy]] - `conceptually_related_to` [AMBIGUOUS]
+- [[PortAssignment]] - `shares_data_with` [EXTRACTED]
+- [[PortResolution]] - `shares_data_with` [EXTRACTED]
 - [[TestFindAvailablePort]] - `uses` [INFERRED]
 - [[TestGenerateComposePorts]] - `uses` [INFERRED]
 - [[TestIsPortAvailable]] - `uses` [INFERRED]
 - [[TestPortResolution]] - `uses` [INFERRED]
 - [[TestResolveports]] - `uses` [INFERRED]
 - [[check_and_report()]] - `calls` [EXTRACTED]
+- [[find-ports.sh]] - `semantically_similar_to` [INFERRED]
 - [[port_manager.py]] - `contains` [EXTRACTED]
 - [[test_port_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Port_Manager

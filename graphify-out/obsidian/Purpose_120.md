@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
+source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L12"
+community: "Apply Patches.js (JavaScript)"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Apply_Patchesjs_JavaScript
 ---
 
 # Purpose
 
 ## Connections
-- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Apply_Patchesjs_JavaScript

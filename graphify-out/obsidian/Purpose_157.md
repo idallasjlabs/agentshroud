@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/spacy.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L16"
+community: "Egress Monitor.py (Security Modules)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress_Monitorpy_Security_Modules
 ---
 
 # Purpose
 
 ## Connections
-- [[spaCy]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Egress_Monitorpy_Security_Modules

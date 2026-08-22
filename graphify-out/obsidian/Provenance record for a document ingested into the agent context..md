@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "Setup Docs"
+community: "Metadata Guard"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Metadata_Guard
 ---
 
 # Provenance record for a document ingested into the agent context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DocumentTag]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Setup_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Metadata_Guard

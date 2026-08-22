@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/trivy.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L15"
+community: "Encrypted Store.py (Security Modules)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Encrypted_Storepy_Security_Modules
 ---
 
 # Purpose
 
 ## Connections
-- [[Trivy]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Encrypted_Storepy_Security_Modules
