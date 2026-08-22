@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Http Proxy Coverage"
 location: "L477"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Http_Proxy_Coverage
 ---
 
 # _SocketTransportWriter
 
 ## Connections
-- [[.__init__()_160]] - `method` [EXTRACTED]
+- [[.__init__()_164]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
 - [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 - [[test_keepalive_set_on_both_tunnel_ends()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Http_Proxy_Coverage

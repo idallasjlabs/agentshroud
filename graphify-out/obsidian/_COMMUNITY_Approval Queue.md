@@ -1,21 +1,16 @@
 ---
 type: community
-members: 8
+cohesion: 1.00
+members: 1
 ---
 
 # Approval Queue
 
-**Members:** 8 nodes
+**Cohesion:** 1.00 - tightly connected
+**Members:** 1 nodes
 
 ## Members
-- [[Coding Agent PTY Pattern (ptytrue + background + workdir)]] - concept - skills/openclaw/coding-agent/SKILL.md
-- [[OpenClaw Skill coding-agent (CodexClaude CodePi delegation)]] - document - skills/openclaw/coding-agent/SKILL.md
-- [[OpenClaw Skill gh-issues (GitHub auto-fix orchestrator)]] - document - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues 6-Phase Orchestration (ParseFetchConfirmPreflightSpawnReview)]] - concept - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues Claim-based In-Progress Tracking (data.clawdbotgh-issues-claims.json)]] - concept - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues Cron Mode (sequential cursor tracking)]] - concept - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues Phase 6 PR Review Handler (spawn review-fix sub-agents)]] - concept - skills/openclaw/gh-issues/SKILL.md
-- [[gh-issues Sub-agent Task Prompt Template]] - document - skills/openclaw/gh-issues/SKILL.md
+- [[SCRUM-154 Fix submit()decide() held the approval lock while broadcasting to a hung WebSocket client, deadlocking indefinitely — fixed with a bounded per-client broadcast timeout]] - rationale - gateway/tests/test_approval_queue.py
 
 ## Live Query (requires Dataview plugin)
 

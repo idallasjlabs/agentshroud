@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: ".mcp.json"
+community: "Workspace Usage (architecture)"
 location: "L185"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/mcpjson
+  - community/Workspace_Usage_architecture
 ---
 
 # Workspace Organization Tips
@@ -16,4 +16,4 @@ tags:
 - [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
 - [[Recommended Structure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/mcpjson
+#graphify/document #graphify/EXTRACTED #community/Workspace_Usage_architecture

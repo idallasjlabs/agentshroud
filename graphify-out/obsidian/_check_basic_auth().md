@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "Architecture Docs"
+community: "Canvas Proxy (proxy)"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Canvas_Proxy_proxy
 ---
 
 # _check_basic_auth()
@@ -18,4 +18,4 @@ tags:
 - [[_read_gateway_password()]] - `calls` [EXTRACTED]
 - [[canvas_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Canvas_Proxy_proxy

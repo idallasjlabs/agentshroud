@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Auth & Exception Types"
+community: "Privilege Separation & File Sandbox"
 location: "L563"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Privilege_Separation__File_Sandbox
 ---
 
 # Writing outside allowed paths must be blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_write_outside_allowed_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/rationale #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox

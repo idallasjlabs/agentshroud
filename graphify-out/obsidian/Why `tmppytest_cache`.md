@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "docs/papers"
+community: "Pytest.ini (03 - Configuration)"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Pytestini_03_-_Configuration
 ---
 
 # Why `/tmp/pytest_cache`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pytest.ini_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/papers
+#graphify/document #graphify/EXTRACTED #community/Pytestini_03_-_Configuration

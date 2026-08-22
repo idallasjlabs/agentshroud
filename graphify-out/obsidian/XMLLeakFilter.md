@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # XMLLeakFilter
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_124]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_128]] - `method` [EXTRACTED]
 - [[.filter_function_calls_only()]] - `method` [EXTRACTED]
 - [[.filter_response()_2]] - `method` [EXTRACTED]
 - [[.scan_command_injection()]] - `method` [EXTRACTED]
@@ -23,6 +23,7 @@ tags:
 - [[Any_8]] - `uses` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[Filter to remove sensitive XML and path information from outbound responses.]] - `rationale_for` [EXTRACTED]
+- [[FilterResult_1]] - `references` [EXTRACTED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
@@ -39,4 +40,4 @@ tags:
 - [[test_xml_leak_filter.py]] - `imports` [EXTRACTED]
 - [[xml_leak_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

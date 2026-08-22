@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/__init__.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Mcp Permissions"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Mcp_Permissions
 ---
 
 # __init__.py
@@ -15,6 +15,7 @@ tags:
 - [[FindingType]] - `imports` [EXTRACTED]
 - [[InspectionFinding]] - `imports` [EXTRACTED]
 - [[InspectionResult]] - `imports` [EXTRACTED]
+- [[LLMProxy]] - `conceptually_related_to` [INFERRED]
 - [[MCPAuditEntry]] - `imports` [EXTRACTED]
 - [[MCPAuditTrail]] - `imports` [EXTRACTED]
 - [[MCPInspector]] - `imports` [EXTRACTED]
@@ -36,4 +37,4 @@ tags:
 - [[mcp_permissions.py]] - `re_exports` [EXTRACTED]
 - [[mcp_proxy.py]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Mcp_Permissions

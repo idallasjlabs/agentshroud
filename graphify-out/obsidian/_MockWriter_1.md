@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Http Proxy Coverage"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Http_Proxy_Coverage
 ---
 
 # _MockWriter
 
 ## Connections
-- [[.__init__()_157]] - `method` [EXTRACTED]
-- [[.close()_14]] - `method` [EXTRACTED]
+- [[.__init__()_161]] - `method` [EXTRACTED]
+- [[.close()_15]] - `method` [EXTRACTED]
 - [[.drain()_2]] - `method` [EXTRACTED]
 - [[.get_extra_info()_1]] - `method` [EXTRACTED]
 - [[.write()_2]] - `method` [EXTRACTED]
@@ -49,4 +49,4 @@ tags:
 - [[test_tunnel_retries_then_succeeds()]] - `calls` [EXTRACTED]
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Http_Proxy_Coverage

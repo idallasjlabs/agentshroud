@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "SOC Collaborator Lifecycle"
+community: "Security Audit & Watchtower Tests"
 location: "L409"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SOC_Collaborator_Lifecycle
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # _StubForwarder
 
 ## Connections
-- [[.__init__()_149]] - `method` [EXTRACTED]
+- [[.__init__()_153]] - `method` [EXTRACTED]
 - [[.forward()_4]] - `method` [EXTRACTED]
 - [[AuditChain]] - `uses` [INFERRED]
 - [[EgressFilter_1]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[test_webhook_outbound_block_withheld()]] - `calls` [EXTRACTED]
 - [[test_webhook_outbound_pipeline_crash_fails_closed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SOC_Collaborator_Lifecycle
+#graphify/code #graphify/INFERRED #community/Security_Audit__Watchtower_Tests

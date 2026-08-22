@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/TEST_STRATEGY.md"
 type: "document"
-community: "Security Docs"
+community: "Strategy (governance)"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Strategy_governance
 ---
 
 # When to Add a Smoke Assertion
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Test Strategy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Docs
+#graphify/document #graphify/EXTRACTED #community/Strategy_governance

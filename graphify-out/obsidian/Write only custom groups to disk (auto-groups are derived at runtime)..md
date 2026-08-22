@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Approval & FastAPI Ingest"
-location: "L327"
+community: "Rbac Config (security)"
+location: "L337"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Rbac_Config_security
 ---
 
 # Write only custom groups to disk (auto-groups are derived at runtime).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_persist_groups()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/rationale #graphify/EXTRACTED #community/Rbac_Config_security

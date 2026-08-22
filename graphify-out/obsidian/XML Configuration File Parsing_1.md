@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-eightd)"
 location: "L497"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-eightd
 ---
 
 # XML Configuration File Parsing
@@ -17,4 +17,4 @@ tags:
 - [[What to Extract_1]] - `contains` [EXTRACTED]
 - [[Why This Matters_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd

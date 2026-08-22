@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Browser Fetch Skill (reference)"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Browser_Fetch_Skill_reference
 ---
 
 # Workflow: Secure Credential Sharing
@@ -16,4 +16,4 @@ tags:
 - [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
 - [[Traditional (Insecure) Method ❌]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill_reference

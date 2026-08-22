@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Forward Stream"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Forward_Stream
 ---
 
 # _BlockingPipeline
 
 ## Connections
-- [[.process_outbound()_6]] - `method` [EXTRACTED]
+- [[.process_outbound()_7]] - `method` [EXTRACTED]
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[ForwardRequest]] - `uses` [INFERRED]
@@ -21,4 +21,4 @@ tags:
 - [[test_filtered_stream_blocked_window_releases_nothing_for_that_window()]] - `calls` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Forward_Stream

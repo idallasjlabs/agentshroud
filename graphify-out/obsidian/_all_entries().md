@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Agent Cve Registry"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Agent_Cve_Registry
 ---
 
 # _all_entries()
@@ -19,4 +19,4 @@ tags:
 - [[test_ghsa_id_field_only_holds_real_looking_ghsa_ids()]] - `calls` [EXTRACTED]
 - [[test_no_entry_id_looks_like_a_cve()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Agent_Cve_Registry

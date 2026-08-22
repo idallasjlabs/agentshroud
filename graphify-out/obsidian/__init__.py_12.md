@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ssh_proxy/__init__.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Ssh Proxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Ssh_Proxy
 ---
 
 # __init__.py
@@ -16,4 +16,4 @@ tags:
 - [[SSHResult]] - `imports` [EXTRACTED]
 - [[proxy.py]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Ssh_Proxy

@@ -1,30 +1,42 @@
 ---
 type: community
-members: 7
+cohesion: 0.12
+members: 17
 ---
 
-# CONTRIBUTING.md
+# Contributing
 
-**Members:** 7 nodes
+**Cohesion:** 0.12 - loosely connected
+**Members:** 17 nodes
 
 ## Members
-- [[i-ab merge regression audit skill]] - concept - docker/config/hermes/skills/i-crpr/SKILL.md
-- [[i-pr PR description skill]] - concept - docker/config/hermes/skills/i-crpr/SKILL.md
-- [[crSKILL.md code review skill]] - concept - docker/config/hermes/skills/i-gg/SKILL.md
-- [[i-crpr Create PR with Pre-Flight Audit (CRPR)]] - document - docker/config/hermes/skills/i-crpr/SKILL.md
-- [[i-gg README — Git Workflow Guardian (GIT-GUARD)]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[i-gg SKILL — Git Workflow Guardian (GIT-GUARD)]] - document - docker/config/hermes/skills/i-gg/SKILL.md
-- [[tddSKILL.md test-driven development skill]] - concept - docker/config/hermes/skills/i-gg/SKILL.md
+- [[CONTRIBUTING]] - document - CONTRIBUTING.md
+- [[Code Style]] - document - CONTRIBUTING.md
+- [[Code of Conduct]] - document - CONTRIBUTING.md
+- [[Contributing to AgentShroud™]] - document - CONTRIBUTING.md
+- [[Development Setup]] - document - CONTRIBUTING.md
+- [[Implementation Status_3]] - document - scripts/README.md
+- [[Maintenance Scripts]] - document - scripts/README.md
+- [[Pull Request Process]] - document - CONTRIBUTING.md
+- [[Questions_1]] - document - CONTRIBUTING.md
+- [[README_129]] - document - scripts/README.md
+- [[Requirements]] - document - CONTRIBUTING.md
+- [[Response SLA]] - document - CONTRIBUTING.md
+- [[Scripts (to be implemented throughout development)]] - document - scripts/README.md
+- [[Security Scripts]] - document - scripts/README.md
+- [[Test Guidelines]] - document - CONTRIBUTING.md
+- [[Utility Scripts]] - document - scripts/README.md
+- [[What to Contribute]] - document - CONTRIBUTING.md
 
 ## Live Query (requires Dataview plugin)
 
 ```dataview
-TABLE source_file, type FROM #community/CONTRIBUTINGmd
+TABLE source_file, type FROM #community/Contributing
 SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Setup Docs]]
+- 1 edge to [[_COMMUNITY_Docs Accuracy]]
 
 ## Top bridge nodes
-- [[i-gg README — Git Workflow Guardian (GIT-GUARD)]] - degree 2, connects to 1 community
+- [[CONTRIBUTING]] - degree 2, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Ws Client (main)"
 location: "L596"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Ws_Client_main
 ---
 
 # _deliver_utterance()
@@ -24,4 +24,4 @@ tags:
 - [[ws_client_send_listen_resume()]] - `calls` [INFERRED]
 - [[ws_client_send_pcm()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Ws_Client_main

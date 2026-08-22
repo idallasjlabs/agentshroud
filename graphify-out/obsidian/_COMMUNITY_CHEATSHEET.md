@@ -1,59 +1,48 @@
 ---
 type: community
-members: 27
+cohesion: 0.10
+members: 20
 ---
 
-# CHEATSHEET.md
+# Cheatsheet
 
-**Members:** 27 nodes
+**Cohesion:** 0.10 - loosely connected
+**Members:** 20 nodes
 
 ## Members
-- [[.test_blocked_non_owner_drops_update_and_increments_stats()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_blocked_owner_message_allowed_through_with_sanitized_text()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_no_pipeline_falls_back_to_direct_sanitizer()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_outbound_blocked_replaces_text()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_pipeline_exception_allows_owner_through()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_pipeline_exception_fails_closed_for_non_owner()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_pipeline_process_inbound_called_with_skip_context_guard()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_pipeline_process_outbound_called_for_send_message()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[.test_send_message_draft_also_runs_outbound_filtering()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[Build a TelegramAPIProxy with mocked RBAC and rate limiter.      RBACConfig and]] - rationale - gateway/tests/test_telegram_pipeline.py
-- [[PipelineResult]] - code - gateway/proxy/pipeline.py
-- [[PipelineResult_1]] - code - gateway/tests/test_telegram_pipeline.py
-- [[Result of running a message through the security pipeline.]] - rationale - gateway/proxy/pipeline.py
-- [[TestInboundFallbackToDirectSanitizer]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestInboundPipelineBlockedNonOwner]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestInboundPipelineBlockedOwner]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestInboundPipelineExceptionNonOwner]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestInboundPipelineExceptionOwner]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestInboundPipelineWired]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestOutboundPipelineBlocked]] - code - gateway/tests/test_telegram_pipeline.py
-- [[TestOutboundPipelineWired]] - code - gateway/tests/test_telegram_pipeline.py
-- [[_getUpdates_response()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[_make_pipeline_result()]] - code - gateway/tests/test_telegram_pipeline.py
-- [[_make_proxy()_4]] - code - gateway/tests/test_telegram_pipeline.py
-- [[_make_update()_1]] - code - gateway/tests/test_telegram_pipeline.py
-- [[sendMessageDraft must be suppressed to prevent draft flicker leaks.]] - rationale - gateway/tests/test_telegram_pipeline.py
-- [[test_telegram_pipeline.py]] - code - gateway/tests/test_telegram_pipeline.py
+- [[AgentShroud Operations Cheat Sheet]] - document - CHEATSHEET.md
+- [[CHEATSHEET]] - document - CHEATSHEET.md
+- [[Colima VM]] - document - CHEATSHEET.md
+- [[Container Basics]] - document - CHEATSHEET.md
+- [[Hermes Agent Management]] - document - CHEATSHEET.md
+- [[Hermes Bot]] - concept - README.md
+- [[Hermes Control Interface (HCI)]] - concept - CHEATSHEET.md
+- [[Host IPs (extra_hosts)]] - document - CHEATSHEET.md
+- [[Key Paths]] - document - CHEATSHEET.md
+- [[Kill Switch (Emergency)]] - document - CHEATSHEET.md
+- [[Network Diagnostics]] - document - CHEATSHEET.md
+- [[OpenClaw (Bot) Management]] - document - CHEATSHEET.md
+- [[SOC API]] - concept - CHEATSHEET.md
+- [[SOC API — Common Queries]] - document - CHEATSHEET.md
+- [[Secrets]] - document - CHEATSHEET.md
+- [[Security Scanners]] - document - CHEATSHEET.md
+- [[Telegram Bot Commands (Owner)]] - document - CHEATSHEET.md
+- [[Tests_1]] - document - CHEATSHEET.md
+- [[Upgrades & Rollbacks]] - document - CHEATSHEET.md
+- [[Web Management UI]] - document - CHEATSHEET.md
 
 ## Live Query (requires Dataview plugin)
 
 ```dataview
-TABLE source_file, type FROM #community/CHEATSHEETmd
+TABLE source_file, type FROM #community/Cheatsheet
 SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 20 edges to [[_COMMUNITY_MCP Proxy Config]]
-- 11 edges to [[_COMMUNITY_Cross-Bot Trust Ledger]]
-- 9 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 2 edges to [[_COMMUNITY_Gateway Test Suite]]
-- 1 edge to [[_COMMUNITY_Approval & FastAPI Ingest]]
-- 1 edge to [[_COMMUNITY_Gateway Test Suite]]
+- 1 edge to [[_COMMUNITY_Readme]]
+- 1 edge to [[_COMMUNITY_Security]]
+- 1 edge to [[_COMMUNITY_Readme]]
 
 ## Top bridge nodes
-- [[PipelineResult]] - degree 26, connects to 4 communities
-- [[test_telegram_pipeline.py]] - degree 15, connects to 2 communities
-- [[TestOutboundPipelineWired]] - degree 6, connects to 2 communities
-- [[TestInboundPipelineWired]] - degree 5, connects to 2 communities
-- [[TestInboundPipelineBlockedNonOwner]] - degree 5, connects to 2 communities
+- [[AgentShroud Operations Cheat Sheet]] - degree 20, connects to 2 communities
+- [[Hermes Bot]] - degree 2, connects to 1 community

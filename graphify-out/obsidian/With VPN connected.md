@@ -1,12 +1,12 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Docker Vpn Networking (docker)"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Docker_Vpn_Networking_docker
 ---
 
 # With VPN connected
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Docker_Vpn_Networking_docker

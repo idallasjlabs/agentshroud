@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Llm Proxy"
 location: "L456"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Llm_Proxy
 ---
 
 # _FakeToolACL
 
 ## Connections
-- [[.__init__()_167]] - `method` [EXTRACTED]
+- [[.__init__()_171]] - `method` [EXTRACTED]
 - [[.can_use_tool()_1]] - `method` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[Minimal ToolACLEnforcer stub that denies a named tool.]] - `rationale_for` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[test_streaming_tool_acl_blocks_terminal_tool()]] - `calls` [EXTRACTED]
 - [[test_streaming_tool_acl_skips_unknown_user()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Llm_Proxy

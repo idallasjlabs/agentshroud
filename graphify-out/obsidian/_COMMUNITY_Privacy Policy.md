@@ -1,23 +1,23 @@
 ---
 type: community
-cohesion: 0.06
-members: 62
+cohesion: 0.05
+members: 63
 ---
 
 # Privacy Policy
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 62 nodes
+**Cohesion:** 0.05 - loosely connected
+**Members:** 63 nodes
 
 ## Members
-- [[.__init__()_85]] - code - gateway/security/privacy_policy.py
+- [[.__init__()_107]] - code - gateway/security/privacy_policy.py
 - [[._get_role_value()]] - code - gateway/security/privacy_policy.py
 - [[._user_in_allowed_groups()]] - code - gateway/security/privacy_policy.py
 - [[.contains_private_data()]] - code - gateway/security/privacy_policy.py
 - [[.default()]] - code - gateway/security/privacy_policy.py
 - [[.filter_response()_1]] - code - gateway/security/privacy_policy.py
-- [[.from_dict()_8]] - code - gateway/security/privacy_policy.py
-- [[.from_dict()_7]] - code - gateway/security/privacy_policy.py
+- [[.from_dict()_10]] - code - gateway/security/privacy_policy.py
+- [[.from_dict()_9]] - code - gateway/security/privacy_policy.py
 - [[.is_service_allowed()]] - code - gateway/security/privacy_policy.py
 - [[.should_alert()]] - code - gateway/security/privacy_policy.py
 - [[.should_audit()]] - code - gateway/security/privacy_policy.py
@@ -48,6 +48,7 @@ members: 62
 - [[.test_unknown_service_allowed_by_default()]] - code - gateway/tests/test_privacy_policy.py
 - [[Evaluates access control and filters responses per privacy policy.]] - rationale - gateway/security/privacy_policy.py
 - [[Parse from a YAMLdict representation.          Example YAML             privac]] - rationale - gateway/security/privacy_policy.py
+- [[Privacy Policy Enforcement Tests]] - code - gateway/tests/test_privacy_policy.py
 - [[Privacy classification for a service.]] - rationale - gateway/security/privacy_policy.py
 - [[Privacy policy configuration.      Loaded from agentshroud.yaml `privacy` secti]] - rationale - gateway/security/privacy_policy.py
 - [[Privacy policy for a single service.]] - rationale - gateway/security/privacy_policy.py
@@ -68,9 +69,9 @@ members: 62
 - [[TestServiceAccessControl]] - code - gateway/tests/test_privacy_policy.py
 - [[_make_rbac()]] - code - gateway/tests/test_privacy_policy.py
 - [[default_policy()]] - code - gateway/tests/test_privacy_policy.py
-- [[enforcer()_1]] - code - gateway/tests/test_privacy_policy.py
+- [[enforcer()_2]] - code - gateway/tests/test_privacy_policy.py
 - [[privacy_policy.py]] - code - gateway/security/privacy_policy.py
-- [[rbac()]] - code - gateway/tests/test_privacy_policy.py
+- [[rbac()_3]] - code - gateway/tests/test_privacy_policy.py
 - [[test_privacy_policy.py]] - code - gateway/tests/test_privacy_policy.py
 
 ## Live Query (requires Dataview plugin)
@@ -81,15 +82,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_Tool ACL & RBAC Config]]
-- 7 edges to [[_COMMUNITY_Group Config & Teams]]
-- 6 edges to [[_COMMUNITY_RBAC Configuration]]
-- 3 edges to [[_COMMUNITY_Gateway Config & Lifespan]]
-- 3 edges to [[_COMMUNITY_URL Analyzer & Content Scanner]]
+- 13 edges to [[_COMMUNITY_Tool ACL & Group RBAC]]
+- 7 edges to [[_COMMUNITY_Group Config & Collaborator Responses]]
+- 6 edges to [[_COMMUNITY_RBAC & Ingest Middleware]]
+- 3 edges to [[_COMMUNITY_Tool Chain & CVE Triage]]
+- 3 edges to [[_COMMUNITY_Security Audit & Watchtower Tests]]
+- 2 edges to [[_COMMUNITY_Manifest (skills)]]
 
 ## Top bridge nodes
-- [[TestResponseFiltering]] - degree 16, connects to 3 communities
-- [[test_privacy_policy.py]] - degree 15, connects to 3 communities
-- [[TestServiceAccessControl]] - degree 15, connects to 3 communities
-- [[TestAuditAndAlert]] - degree 13, connects to 3 communities
-- [[TestPrivacyPolicyParsing]] - degree 13, connects to 3 communities
+- [[TestResponseFiltering]] - degree 15, connects to 3 communities
+- [[test_privacy_policy.py]] - degree 14, connects to 3 communities
+- [[TestServiceAccessControl]] - degree 14, connects to 3 communities
+- [[TestAuditAndAlert]] - degree 12, connects to 3 communities
+- [[TestPrivacyPolicyParsing]] - degree 12, connects to 3 communities

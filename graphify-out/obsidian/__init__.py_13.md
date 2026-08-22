@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/__init__.py"
 type: "code"
-community: "Community 1800"
+community: "Init"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1800
+  - community/Init
 ---
 
 # __init__.py
 
-#graphify/code #graphify/EXTRACTED #community/Community_1800
+#graphify/code #graphify/EXTRACTED #community/Init

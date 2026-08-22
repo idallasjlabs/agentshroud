@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Ci Workflows (03 - Configuration)"
 location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Ci_Workflows_03_-_Configuration
 ---
 
 # Where Used
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FastAPI_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Ci_Workflows_03_-_Configuration

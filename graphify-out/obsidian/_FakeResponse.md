@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "Security Docs"
+community: "SOC Services"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/SOC_Services
 ---
 
 # _FakeResponse
 
 ## Connections
-- [[.__init__()_183]] - `method` [EXTRACTED]
+- [[.__init__()_188]] - `method` [EXTRACTED]
 - [[.read()_2]] - `method` [EXTRACTED]
 - [[.test_200_returns_parsed_json()]] - `calls` [EXTRACTED]
 - [[.test_404_returns_empty_dict()]] - `calls` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/SOC_Services

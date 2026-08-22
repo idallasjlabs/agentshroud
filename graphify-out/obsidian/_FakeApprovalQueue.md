@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Egress Domain Allowlist"
+community: "Mcp Policy"
 location: "L272"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Egress_Domain_Allowlist
+  - community/Mcp_Policy
 ---
 
 # _FakeApprovalQueue
 
 ## Connections
-- [[.__init__()_168]] - `method` [EXTRACTED]
+- [[.__init__()_172]] - `method` [EXTRACTED]
 - [[.submit_tool_request()_3]] - `method` [EXTRACTED]
 - [[.wait_for_decision()_3]] - `method` [EXTRACTED]
 - [[ApprovalQueueConfig_2]] - `uses` [INFERRED]
@@ -33,4 +33,4 @@ tags:
 - [[test_enforce_high_risk_queue_no_wait_denies_closed()]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Egress_Domain_Allowlist
+#graphify/code #graphify/INFERRED #community/Mcp_Policy

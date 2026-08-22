@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Api (web)"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Api_web
 ---
 
 # _bot_service_names()
@@ -17,10 +17,8 @@ tags:
 - [[get_logs()_1]] - `calls` [EXTRACTED]
 - [[killswitch()]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
-- [[rebuild()]] - `calls` [EXTRACTED]
 - [[test_bot_service_names_uses_resolved_container_name()]] - `calls` [EXTRACTED]
 - [[test_config.py]] - `imports` [EXTRACTED]
-- [[upgrade_agentshroud()]] - `calls` [EXTRACTED]
 - [[ws_logs()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Api_web

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION.md"
 type: "document"
-community: "docs/flows"
+community: "Security Value Proposition (security)"
 location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/flows
+  - community/Security_Value_Proposition_security
 ---
 
 # Where's The REAL Value?
@@ -17,4 +17,4 @@ tags:
 - [[❓ Low-Value Features (Questionable ROI)]] - `contains` [EXTRACTED]
 - [[🎯 High-Value Features (Justify the Effort)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/flows
+#graphify/document #graphify/EXTRACTED #community/Security_Value_Proposition_security

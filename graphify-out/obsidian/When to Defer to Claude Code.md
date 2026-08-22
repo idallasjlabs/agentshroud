@@ -1,12 +1,12 @@
 ---
 source_file: "AGENTS.md"
 type: "document"
-community: "voice_gateway/tts.py"
+community: "Agents"
 location: "L156"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/voice_gateway/ttspy
+  - community/Agents
 ---
 
 # When to Defer to Claude Code
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[7) CODEX CLI OPERATIONAL RULES]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/voice_gateway/ttspy
+#graphify/document #graphify/EXTRACTED #community/Agents

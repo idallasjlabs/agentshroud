@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Wakeword (main)"
 location: "line 134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Wakeword_main
 ---
 
 # _agent_btn_pressed() — BSP_BUTTON_MUTE IRQ callback
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[vt_agent_count()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Wakeword_main

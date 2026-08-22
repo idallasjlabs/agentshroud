@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "docs/papers"
+community: "Scanner Integration"
 location: "L2307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Scanner_Integration
 ---
 
 # _compute_weighted_subscore()
@@ -19,4 +19,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/papers
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Voice Stt Model Ab"
 location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Voice_Stt_Model_Ab
 ---
 
 # Zero / unknown audio length → rtf is None (no divide-by-zero).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_record_transcription_latency_handles_zero_audio()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Voice_Stt_Model_Ab

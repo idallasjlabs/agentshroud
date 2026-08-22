@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Sync Cve Registry (scripts)"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Sync_Cve_Registry_scripts
 ---
 
 # _extract_fix_version()
@@ -15,4 +15,4 @@ tags:
 - [[_process_nvd_results()]] - `calls` [EXTRACTED]
 - [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Sync_Cve_Registry_scripts

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Http Proxy Coverage"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Http_Proxy_Coverage
 ---
 
 # _CloseRaisesWriter
 
 ## Connections
-- [[.close()_15]] - `method` [EXTRACTED]
+- [[.close()_16]] - `method` [EXTRACTED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
 - [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[test_relay_and_scan_swallows_writer_close_failure()]] - `calls` [EXTRACTED]
 - [[test_relay_swallows_writer_close_failure()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Http_Proxy_Coverage

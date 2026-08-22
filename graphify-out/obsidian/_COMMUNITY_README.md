@@ -1,33 +1,37 @@
 ---
 type: community
-members: 10
+cohesion: 0.22
+members: 9
 ---
 
-# README.md
+# Readme
 
-**Members:** 10 nodes
+**Cohesion:** 0.22 - loosely connected
+**Members:** 9 nodes
 
 ## Members
-- [[Config Keys Read_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Environment Variables Used_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Imports From  Exports To_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Key Classes  Functions_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Known Issues  Notes_5]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Purpose_78]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Related_6]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[Responsibilities_4]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[models.py_3]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
-- [[models.py_2]] - document - docs/vault/02 - Modules/Gateway Core/models.py.md
+- [[1. Clone]] - document - README.md
+- [[2. Store credentials]] - document - README.md
+- [[3. Start the stack]] - document - README.md
+- [[4. Verify]] - document - README.md
+- [[5. (Optional) Voice Terminal — ESP32-S3-BOX-3]] - document - README.md
+- [[Prerequisites]] - document - README.md
+- [[Quickstart]] - document - README.md
+- [[`asb` reference]] - document - README.md
+- [[asb Wrapper Script]] - concept - CHEATSHEET.md
 
 ## Live Query (requires Dataview plugin)
 
 ```dataview
-TABLE source_file, type FROM #community/READMEmd
+TABLE source_file, type FROM #community/Readme
 SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Docs]]
+- 1 edge to [[_COMMUNITY_Cheatsheet]]
+- 1 edge to [[_COMMUNITY_Readme]]
+- 1 edge to [[_COMMUNITY_Readme]]
 
 ## Top bridge nodes
-- [[models.py_3]] - degree 10, connects to 1 community
+- [[Quickstart]] - degree 10, connects to 2 communities
+- [[asb Wrapper Script]] - degree 2, connects to 1 community

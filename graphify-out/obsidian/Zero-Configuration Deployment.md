@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "scripts/generate_branding_assets.py"
+community: "Deployment Diagram (architecture)"
 location: "L406"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/generate_branding_assetspy
+  - community/Deployment_Diagram_architecture
 ---
 
 # Zero-Configuration Deployment
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
 - [[Deployment Validation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/generate_branding_assetspy
+#graphify/document #graphify/EXTRACTED #community/Deployment_Diagram_architecture

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
+source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "browser-extension/manifest.json"
-location: "L3"
+community: "Skill (i-eightd)"
+location: "L522"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-extension/manifestjson
+  - community/Skill_i-eightd
 ---
 
-# Why This Matters
+# Why This Matters:
 
 ## Connections
-- [[AgentShroud Security Hardening Plan]] - `contains` [EXTRACTED]
+- [[XML Configuration File Parsing_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-extension/manifestjson
+#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd

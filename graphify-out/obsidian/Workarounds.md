@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Google Services Setup (setup)"
 location: "L147"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Google_Services_Setup_setup
 ---
 
 # Workarounds:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📝 Google Keep (Notes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_setup

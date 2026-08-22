@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Wakeword (main)"
 location: "L315"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Wakeword_main
 ---
 
 # _apply_state_cb()
@@ -20,4 +20,4 @@ tags:
 - [[ui_face.c]] - `contains` [EXTRACTED]
 - [[ui_face_set_state()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Wakeword_main

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Slack API Proxy"
+community: "Forward Routing"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Forward_Routing
 ---
 
 # _PipelineCaptor
 
 ## Connections
-- [[.__init__()_152]] - `method` [EXTRACTED]
+- [[.__init__()_156]] - `method` [EXTRACTED]
 - [[._run_forward()]] - `references` [EXTRACTED]
-- [[.process_inbound()_2]] - `method` [EXTRACTED]
-- [[.process_outbound()_2]] - `method` [EXTRACTED]
+- [[.process_inbound()_3]] - `method` [EXTRACTED]
+- [[.process_outbound()_3]] - `method` [EXTRACTED]
 - [[.test_agent_id_propagated_for_hermes()]] - `calls` [EXTRACTED]
 - [[.test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
 - [[.test_body_owner_id_with_matching_trusted_header_is_honored()]] - `calls` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[_make_mock_app_state()]] - `references` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing

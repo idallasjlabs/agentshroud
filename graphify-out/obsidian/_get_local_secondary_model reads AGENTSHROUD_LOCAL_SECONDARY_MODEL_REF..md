@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Resource Guard & Local Model Parity"
 location: "L520"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Resource_Guard__Local_Model_Parity
 ---
 
 # _get_local_secondary_model reads AGENTSHROUD_LOCAL_SECONDARY_MODEL_REF.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_local_secondary_model_reads_env()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity

@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Setup Docs"
+community: "Claude"
 location: "L380"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Claude
 ---
 
 # When to clarify
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[9) GOVERNANCE & DECISION-MAKING]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Claude

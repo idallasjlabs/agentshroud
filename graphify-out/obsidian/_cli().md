@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "Architecture Docs"
+community: "Audit Archive"
 location: "L257"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Audit_Archive
 ---
 
 # _cli()
@@ -16,4 +16,4 @@ tags:
 - [[audit_archive.py]] - `contains` [EXTRACTED]
 - [[purge_low_value_events()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Audit_Archive

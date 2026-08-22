@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Approval Queue Tests"
+community: "Middleware & Session Isolation"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/Middleware__Session_Isolation
 ---
 
 # _FakeRBAC
 
 ## Connections
-- [[.__init__()_172]] - `method` [EXTRACTED]
+- [[.__init__()_176]] - `method` [EXTRACTED]
 - [[.check_permission()_1]] - `method` [EXTRACTED]
 - [[.check_tool_permission()_2]] - `method` [EXTRACTED]
 - [[.get_user_role()_2]] - `method` [EXTRACTED]
@@ -24,10 +24,8 @@ tags:
 - [[.test_rbac_exception_fails_closed()]] - `calls` [EXTRACTED]
 - [[.test_rbac_pass_logs_role_and_allows()]] - `calls` [EXTRACTED]
 - [[.test_rbac_requires_approval()]] - `calls` [EXTRACTED]
-- [[.test_second_message_after_window_sends_again()]] - `calls` [INFERRED]
 - [[.test_tool_permission_denied()]] - `calls` [EXTRACTED]
 - [[.test_tool_permission_requires_approval()]] - `calls` [EXTRACTED]
-- [[.test_two_messages_within_window_send_only_one_mirror()]] - `calls` [INFERRED]
 - [[.test_with_rbac_manager()]] - `calls` [EXTRACTED]
 - [[Deterministic stand-in for RBACManager.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -36,4 +34,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/code #graphify/EXTRACTED #community/Middleware__Session_Isolation

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Scanner Integration"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Scanner_Integration
 ---
 
 # _clamav_clean()
@@ -15,7 +15,7 @@ tags:
 - [[.test_clean_tools_improve_score()]] - `calls` [EXTRACTED]
 - [[.test_measured_when_clean_not_fresh()]] - `calls` [EXTRACTED]
 - [[.test_overall_clean_when_all_clean()]] - `calls` [EXTRACTED]
-- [[Any_69]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration

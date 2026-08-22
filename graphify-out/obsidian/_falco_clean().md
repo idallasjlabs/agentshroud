@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Scanner Integration"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Scanner_Integration
 ---
 
 # _falco_clean()
@@ -17,7 +17,7 @@ tags:
 - [[.test_overall_clean_when_all_clean()]] - `calls` [EXTRACTED]
 - [[.test_three_when_both_running()]] - `calls` [EXTRACTED]
 - [[.test_two_when_falco_running()]] - `calls` [EXTRACTED]
-- [[Any_69]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration

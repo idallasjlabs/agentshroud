@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "CHANGELOG.md"
+community: "Agentshroud Manager"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Agentshroud_Manager
 ---
 
 # _get_db()
@@ -21,4 +21,4 @@ tags:
 - [[rollback()]] - `calls` [EXTRACTED]
 - [[upgrade()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/code #graphify/EXTRACTED #community/Agentshroud_Manager
