@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "docs/vault"
+community: "Telegram Egress Notify (proxy)"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Telegram_Egress_Notify_proxy
 ---
 
 # BaseException
@@ -16,4 +16,4 @@ tags:
 - [[_is_stale_callback_error()]] - `references` [EXTRACTED]
 - [[_is_stale_edit_error()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Telegram_Egress_Notify_proxy

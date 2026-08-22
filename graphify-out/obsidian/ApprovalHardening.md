@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # ApprovalHardening
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_51]] - `method` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_54]] - `method` [EXTRACTED]
 - [[._check_description_parameter_mismatch()]] - `method` [EXTRACTED]
 - [[._check_misleading_language()]] - `method` [EXTRACTED]
 - [[._check_parameter_obfuscation()]] - `method` [EXTRACTED]
@@ -33,6 +33,7 @@ tags:
 - [[Action]] - `uses` [INFERRED]
 - [[Anti-social-engineering hardening for approval queue.]] - `rationale_for` [EXTRACTED]
 - [[Any_8]] - `uses` [INFERRED]
+- [[ContextGuard]] - `semantically_similar_to` [INFERRED]
 - [[Exception_2]] - `uses` [INFERRED]
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
@@ -50,4 +51,4 @@ tags:
 - [[run()_3]] - `calls` [EXTRACTED]
 - [[test_approval_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

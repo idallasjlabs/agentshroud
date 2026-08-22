@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L6"
+community: "Readme (i-athena)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-athena
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Input Requirements_11]] - `contains` [EXTRACTED]
-- [[Output Format_13]] - `contains` [EXTRACTED]
-- [[Persona_8]] - `contains` [EXTRACTED]
-- [[Role_41]] - `contains` [EXTRACTED]
-- [[SKILL_68]] - `contains` [EXTRACTED]
+- [[Purpose_75]] - `contains` [EXTRACTED]
+- [[README_80]] - `contains` [EXTRACTED]
+- [[Related Skills_81]] - `contains` [EXTRACTED]
+- [[Usage_83]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-athena

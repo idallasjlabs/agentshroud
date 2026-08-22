@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/access-control-matrix.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Access Control Matrix (security)"
 location: "L172"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Access_Control_Matrix_security
 ---
 
 # Automatic Progression Criteria
@@ -18,4 +18,4 @@ tags:
 - [[Level 3 → Level 4]] - `contains` [EXTRACTED]
 - [[Trust Level Progression Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Access_Control_Matrix_security

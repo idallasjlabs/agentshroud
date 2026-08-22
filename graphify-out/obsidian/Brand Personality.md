@@ -1,19 +1,19 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Brand Guidelines (guidelines)"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Brand_Guidelines_guidelines
 ---
 
 # Brand Personality
 
 ## Connections
 - [[AgentShroud Brand Guidelines]] - `contains` [EXTRACTED]
-- [[Voice & Tone_1]] - `contains` [EXTRACTED]
+- [[Voice & Tone_2]] - `contains` [EXTRACTED]
 - [[Writing Style]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Brand_Guidelines_guidelines

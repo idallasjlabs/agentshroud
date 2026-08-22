@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_ARCHITECTURE.md"
 type: "document"
-community: "Setup Docs"
+community: "Security Architecture (security)"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Security_Architecture_security
 ---
 
 # Architecture Diagram
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Security_Architecture_security

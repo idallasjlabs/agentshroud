@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L6939"
+community: "Telegram Proxy Core"
+location: "L6959"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Proxy_Core
 ---
 
 # Best-effort async event emission for quarantine actions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[._emit_quarantine_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Core

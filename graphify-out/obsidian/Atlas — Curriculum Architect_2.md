@@ -1,20 +1,26 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: "docker/config/hermes/skills/i-atlas/SKILL.md"
 type: "document"
-community: "docs/project"
-location: "L1"
+community: "Skill (i-atlas)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Skill_i-atlas
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Purpose_39]] - `contains` [EXTRACTED]
-- [[README_44]] - `contains` [EXTRACTED]
-- [[Related Skills_42]] - `contains` [EXTRACTED]
-- [[Usage_44]] - `contains` [EXTRACTED]
+- [[Input Requirements_12]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_2]] - `contains` [EXTRACTED]
+- [[Output Format_14]] - `contains` [EXTRACTED]
+- [[Persona_9]] - `contains` [EXTRACTED]
+- [[Quality Checklist_11]] - `contains` [EXTRACTED]
+- [[Role_43]] - `contains` [EXTRACTED]
+- [[SKILL_70]] - `contains` [EXTRACTED]
+- [[System Prompt_9]] - `contains` [EXTRACTED]
+- [[User Prompt Template_5]] - `contains` [EXTRACTED]
+- [[User Prompt Template — OKE Channel_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/project
+#graphify/document #graphify/EXTRACTED #community/Skill_i-atlas

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Queue (approval_queue)"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Queue_approval_queue
 ---
 
 # ApprovalQueue
 
 ## Connections
-- [[.__init__()_4]] - `method` [EXTRACTED]
+- [[.__init__()_5]] - `method` [EXTRACTED]
 - [[._append_audit_event()]] - `method` [EXTRACTED]
 - [[._expire_stale()]] - `method` [EXTRACTED]
 - [[._load_pending_store()]] - `method` [EXTRACTED]
@@ -45,6 +45,7 @@ tags:
 - [[TestSSHWriteFileEndpoint]] - `uses` [INFERRED]
 - [[TestSSHWriteFileLedgerAudit]] - `uses` [INFERRED]
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
+- [[_HangingWebSocket]] - `uses` [INFERRED]
 - [[_queue()]] - `calls` [EXTRACTED]
 - [[approval_queue()]] - `calls` [EXTRACTED]
 - [[approval_queue()_1]] - `calls` [EXTRACTED]
@@ -52,7 +53,6 @@ tags:
 - [[client()_17]] - `calls` [EXTRACTED]
 - [[queue()]] - `calls` [EXTRACTED]
 - [[queue.py]] - `contains` [EXTRACTED]
-- [[run()_3]] - `calls` [INFERRED]
 - [[test_approval_queue.py]] - `imports` [EXTRACTED]
 - [[test_approval_stress.py]] - `imports` [EXTRACTED]
 - [[test_cleanup_decided_persists_removal_to_disk()]] - `calls` [EXTRACTED]
@@ -64,4 +64,4 @@ tags:
 - [[test_store_persists_submit_and_decision()]] - `calls` [EXTRACTED]
 - [[test_store_restores_items_on_init()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Queue_approval_queue

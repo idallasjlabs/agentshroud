@@ -1,17 +1,22 @@
 ---
-source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "docs/operations"
-location: "L304"
+community: "Skill (i-browser)"
+location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/operations
+  - community/Skill_i-browser
 ---
 
 # Best Practices
 
 ## Connections
-- [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
+- [[1. Always Specify Risk Level_2]] - `contains` [EXTRACTED]
+- [[2. Use Allowlisting Liberally_2]] - `contains` [EXTRACTED]
+- [[3. Take Screenshots for Audit Trail_2]] - `contains` [EXTRACTED]
+- [[4. Handle CAPTCHAs Gracefully_2]] - `contains` [EXTRACTED]
+- [[5. Never Extract Credentials_2]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/operations
+#graphify/document #graphify/EXTRACTED #community/Skill_i-browser

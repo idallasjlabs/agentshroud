@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "docs/project"
+community: "Telegram Inbound Proxy Tests"
 location: "L172"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Telegram_Inbound_Proxy_Tests
 ---
 
 # Base64-encoded injection via getUpdates must be caught.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_encoding_detected_on_getUpdates()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/project
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Inbound_Proxy_Tests

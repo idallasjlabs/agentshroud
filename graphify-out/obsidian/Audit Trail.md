@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (securebrowser)"
 location: "L172"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_securebrowser
 ---
 
 # Audit Trail
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Model_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_securebrowser

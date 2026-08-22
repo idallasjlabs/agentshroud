@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "skills/openclaw"
+community: "Startup errors (07 - Errors & Troubleshooting)"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Startup_errors_07_-_Errors__Troubleshooting
 ---
 
 # Bot Container Startup Failures
@@ -18,4 +18,4 @@ tags:
 - [[`Could not load Claude OAuth token after retries`]] - `contains` [EXTRACTED]
 - [[`startup Warning Gateway password file not found`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Startup_errors_07_-_Errors__Troubleshooting

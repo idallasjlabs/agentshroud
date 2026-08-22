@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "docs/vault"
+community: "Start Agentshroud (scripts)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Start_Agentshroud_scripts
 ---
 
 # BRAND.md
 
 ## Connections
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
 - [[init-openclaw-config.sh]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Start_Agentshroud_scripts

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Pipeline Unit"
 location: "L131"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCP_Proxy_Config
+  - community/Pipeline_Unit
 ---
 
 # AuditChain
 
 ## Connections
-- [[.__init__()_31]] - `method` [EXTRACTED]
-- [[.__init__()_32]] - `calls` [EXTRACTED]
+- [[.__init__()_32]] - `method` [EXTRACTED]
+- [[.__init__()_33]] - `calls` [EXTRACTED]
 - [[.__len__()_1]] - `method` [EXTRACTED]
 - [[.append()]] - `method` [EXTRACTED]
 - [[.append_block()]] - `method` [EXTRACTED]
@@ -44,6 +44,7 @@ tags:
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[FilterResult]] - `uses` [INFERRED]
 - [[InjectionAction]] - `uses` [INFERRED]
+- [[MCPAuditTrail]] - `semantically_similar_to` [INFERRED]
 - [[RBACConfig_1]] - `uses` [INFERRED]
 - [[SHA-256 hash chain for tamper-evident audit logging.]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline]] - `shares_data_with` [EXTRACTED]
@@ -77,7 +78,7 @@ tags:
 - [[TestPassthroughMode_1]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[TestPromptInjectionDetection]] - `uses` [INFERRED]
-- [[TestRateLimiting_3]] - `uses` [INFERRED]
+- [[TestRateLimiting_4]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestSSRFBlocking]] - `uses` [INFERRED]
 - [[TestStats_1]] - `uses` [INFERRED]
@@ -101,4 +102,4 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCP_Proxy_Config
+#graphify/code #graphify/INFERRED #community/Pipeline_Unit

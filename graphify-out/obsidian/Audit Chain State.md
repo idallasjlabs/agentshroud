@@ -1,12 +1,12 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "document"
-community: "Planning Docs"
+community: "Schema Documentation (data)"
 location: "L131"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Schema_Documentation_data
 ---
 
 # Audit Chain State
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[In-Memory Data Structures]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Schema_Documentation_data

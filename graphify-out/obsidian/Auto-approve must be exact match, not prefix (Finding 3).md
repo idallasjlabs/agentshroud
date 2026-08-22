@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "rationale"
-community: "Gateway Security Module"
+community: "Ssh Proxy"
 location: "L191"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Ssh_Proxy
 ---
 
 # Auto-approve must be exact match, not prefix (Finding #3)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_validate_auto_approve_exact_only()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/rationale #graphify/EXTRACTED #community/Ssh_Proxy

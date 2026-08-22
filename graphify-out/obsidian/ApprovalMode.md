@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "Egress Approval (security)"
 location: "L37"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Competitive_Intel_Store
+  - community/Egress_Approval_security
 ---
 
 # ApprovalMode
@@ -43,4 +43,4 @@ tags:
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Competitive_Intel_Store
+#graphify/code #graphify/INFERRED #community/Egress_Approval_security

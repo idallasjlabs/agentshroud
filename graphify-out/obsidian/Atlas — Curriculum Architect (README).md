@@ -1,17 +1,16 @@
 ---
 source_file: "docker/config/hermes/skills/i-atlas/README.md"
 type: "document"
-community: "skills/openclaw"
+community: "Skill (i-athena)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/skills/openclaw
+  - community/Skill_i-athena
 ---
 
 # Atlas — Curriculum Architect (README)
 
 ## Connections
 - [[Atlas — Curriculum Architect (SKILL)]] - `references` [INFERRED]
-- [[SKILLS_GUIDE.md (complete skill catalog)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/skills/openclaw
+#graphify/document #graphify/INFERRED #community/Skill_i-athena

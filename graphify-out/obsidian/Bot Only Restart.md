@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Restart procedure (08 - Runbooks)"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Restart_procedure_08_-_Runbooks
 ---
 
 # Bot Only Restart
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Restart Procedure_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Restart_procedure_08_-_Runbooks

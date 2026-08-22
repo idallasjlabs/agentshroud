@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "skills/openclaw"
+community: "Readme"
 location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Readme
 ---
 
 # Architecture
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[75 Security Modules]] - `shares_data_with` [EXTRACTED]
 - [[AgentShroud™ README]] - `references` [EXTRACTED]
-- [[README]] - `contains` [EXTRACTED]
+- [[README_37]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Readme

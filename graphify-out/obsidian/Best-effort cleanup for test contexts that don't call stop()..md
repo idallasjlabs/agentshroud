@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Resource Guard & Local Model Parity"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Resource_Guard__Local_Model_Parity
 ---
 
 # Best-effort cleanup for test contexts that don't call stop().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.__del__()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity

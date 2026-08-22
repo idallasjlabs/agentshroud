@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "Bot Skill Config"
+community: "V0.8.0 Wiring Audit (v0.8)"
 location: "L200"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/V080_Wiring_Audit_v08
 ---
 
 # B. Wire ALL Modules (14) — ALL ✅
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Updated v0.8.0 Feature List with Wiring Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/V080_Wiring_Audit_v08

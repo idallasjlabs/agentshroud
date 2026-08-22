@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Architecture Docs"
+community: "Multi Host"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Multi_Host
 ---
 
 # ArgumentParser
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[build_parser()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Multi_Host

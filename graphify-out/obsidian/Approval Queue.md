@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "Gateway Test Suite"
-location: "L169"
+community: "Readme (gateway)"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_gateway
 ---
 
 # Approval Queue
 
 ## Connections
-- [[Data Integrity After Crash]] - `contains` [EXTRACTED]
+- [[Features_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_gateway

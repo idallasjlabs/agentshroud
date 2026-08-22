@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Collaborator Prompt Classifiers"
+community: "Enhanced Approval"
 location: "L215"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Enhanced_Approval
 ---
 
 # ApprovalQueueItem
@@ -25,4 +25,4 @@ tags:
 - [[ToolRiskConfig_1]] - `uses` [INFERRED]
 - [[ToolRiskPolicy_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Classifiers
+#graphify/code #graphify/INFERRED #community/Enhanced_Approval

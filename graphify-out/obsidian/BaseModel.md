@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Competitive Intel Store"
+community: "Router (soc)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Router_soc
 ---
 
 # BaseModel
@@ -66,7 +66,7 @@ tags:
 - [[RedactionDetail]] - `inherits` [EXTRACTED]
 - [[RedactionResult]] - `inherits` [EXTRACTED]
 - [[RenameGroupRequest]] - `inherits` [EXTRACTED]
-- [[ResourceUsage_1]] - `inherits` [EXTRACTED]
+- [[ResourceUsage_2]] - `inherits` [EXTRACTED]
 - [[RollbackRequest]] - `inherits` [EXTRACTED]
 - [[RouterConfig]] - `inherits` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `inherits` [EXTRACTED]
@@ -78,7 +78,7 @@ tags:
 - [[SSHWriteFileRequest_1]] - `inherits` [EXTRACTED]
 - [[SSHWriteFileResponse]] - `inherits` [EXTRACTED]
 - [[ScanRequest_1]] - `inherits` [EXTRACTED]
-- [[SecurityConfig_2]] - `inherits` [EXTRACTED]
+- [[SecurityConfig_3]] - `inherits` [EXTRACTED]
 - [[SecurityEvent_1]] - `inherits` [EXTRACTED]
 - [[SecurityModuleConfig]] - `inherits` [EXTRACTED]
 - [[ServiceAction]] - `inherits` [EXTRACTED]
@@ -98,4 +98,4 @@ tags:
 - [[VersionRequest]] - `inherits` [EXTRACTED]
 - [[WSEvent]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/code #graphify/EXTRACTED #community/Router_soc

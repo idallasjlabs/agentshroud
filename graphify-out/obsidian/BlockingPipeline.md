@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "docs/project"
+community: "Telegram Proxy Inbound"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Telegram_Proxy_Inbound
 ---
 
 # BlockingPipeline
 
 ## Connections
-- [[.process_inbound()_7]] - `method` [EXTRACTED]
+- [[.process_inbound()_8]] - `method` [EXTRACTED]
 - [[.test_clean_message_passes_through()]] - `calls` [EXTRACTED]
 - [[.test_form_outbound_pipeline_block_non_owner()]] - `calls` [INFERRED]
 - [[.test_inbound_text_normalized_before_pipeline()]] - `calls` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/project
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

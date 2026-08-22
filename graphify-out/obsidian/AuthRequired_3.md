@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Forward (routes)"
 location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Forward_routes
 ---
 
 # AuthRequired
@@ -19,4 +19,4 @@ tags:
 - [[forward_content_stream()]] - `references` [EXTRACTED]
 - [[telegram_webhook()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Forward_routes

@@ -1,17 +1,16 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-aws)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - community/Skill_i-aws
 ---
 
 # Branding Specialist (BS) (README)
 
 ## Connections
 - [[Branding Specialist (BS) (SKILL)]] - `references` [INFERRED]
-- [[SKILLS_GUIDE.md (complete skill catalog)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/document #graphify/INFERRED #community/Skill_i-aws

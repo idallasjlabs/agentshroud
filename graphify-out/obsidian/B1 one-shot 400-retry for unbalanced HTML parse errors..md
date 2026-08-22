@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Telegram Proxy Outbound"
 location: "L4527"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Telegram_Proxy_Outbound
 ---
 
 # B1: one-shot 400-retry for unbalanced HTML parse errors.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTelegram400Retry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Outbound

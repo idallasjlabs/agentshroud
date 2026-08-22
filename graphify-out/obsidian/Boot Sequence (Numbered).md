@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "Setup Docs"
+community: "Startup sequence (01 - Architecture)"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Startup_sequence_01_-_Architecture
 ---
 
 # Boot Sequence (Numbered)
@@ -19,4 +19,4 @@ tags:
 - [[Stage 5 Fully Operational]] - `contains` [EXTRACTED]
 - [[Startup Sequence_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Startup_sequence_01_-_Architecture

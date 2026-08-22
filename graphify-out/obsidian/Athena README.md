@@ -1,17 +1,16 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/README.md"
+source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-athena)"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - graphify/EXTRACTED
+  - community/Skill_i-athena
 ---
 
 # Athena README
 
 ## Connections
-- [[Athena — Knowledge Distiller_1]] - `references` [INFERRED]
-- [[SKILLS_GUIDE.md (complete skill catalog)]] - `references` [EXTRACTED]
+- [[Athena — Knowledge Distiller_6]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-athena

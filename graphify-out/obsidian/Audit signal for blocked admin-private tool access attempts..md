@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "SOC Dashboard"
+community: "Mcp Permissions"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Mcp_Permissions
 ---
 
 # Audit signal for blocked admin-private tool access attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PrivateAccessAttempt]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/rationale #graphify/EXTRACTED #community/Mcp_Permissions

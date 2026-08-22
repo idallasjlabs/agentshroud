@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Collaborator Prompt Classifiers"
+community: "Approval Queue"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Approval_Queue
 ---
 
 # ApprovalRequest
@@ -38,7 +38,6 @@ tags:
 - [[BaseModel]] - `inherits` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[EnhancedApprovalQueue_2]] - `uses` [INFERRED]
-- [[Exception]] - `uses` [INFERRED]
 - [[Exception_1]] - `uses` [INFERRED]
 - [[GroupApprovalRouter]] - `uses` [INFERRED]
 - [[MCPProxyRequest]] - `uses` [INFERRED]
@@ -65,6 +64,8 @@ tags:
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
 - [[WebSocket]] - `uses` [INFERRED]
 - [[WebSocket_2]] - `uses` [INFERRED]
+- [[_HangingWebSocket]] - `uses` [INFERRED]
+- [[_HangingWebSocket_1]] - `uses` [INFERRED]
 - [[_submit_enhanced_high_risk()]] - `calls` [EXTRACTED]
 - [[_submit_high_risk()]] - `calls` [EXTRACTED]
 - [[approval.py]] - `imports` [EXTRACTED]
@@ -101,5 +102,6 @@ tags:
 - [[test_request_expiration()]] - `calls` [EXTRACTED]
 - [[test_store_persists_submit_and_decision()]] - `calls` [EXTRACTED]
 - [[test_submit_approval_request()]] - `calls` [EXTRACTED]
+- [[test_submit_does_not_deadlock_on_hung_websocket_client()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue

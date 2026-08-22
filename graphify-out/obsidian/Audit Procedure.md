@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-defense/SKILL.md"
+source_file: ".agents/skills/i-sec-defense/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-sec-defense)"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-sec-defense
 ---
 
 # Audit Procedure
@@ -19,4 +19,4 @@ tags:
 - [[Phase 4 Configuration Audit]] - `contains` [EXTRACTED]
 - [[Phase 5 Steve Hay's Specific Probes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense

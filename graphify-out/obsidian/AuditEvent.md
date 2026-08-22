@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Telegram Inbound Tests"
+community: "Audit Export"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Tests
+  - community/Audit_Export
 ---
 
 # AuditEvent
@@ -19,4 +19,4 @@ tags:
 - [[AuditEvent_1]] - `uses` [INFERRED]
 - [[AuditStore_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests
+#graphify/code #graphify/EXTRACTED #community/Audit_Export

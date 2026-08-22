@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # ApprovalHardeningConfig
 
 ## Connections
-- [[.__init__()_13]] - `calls` [EXTRACTED]
-- [[.__init__()_51]] - `references` [EXTRACTED]
+- [[.__init__()_14]] - `calls` [EXTRACTED]
+- [[.__init__()_54]] - `references` [EXTRACTED]
 - [[.config()]] - `calls` [EXTRACTED]
 - [[.test_cooldown_disabled_when_feature_disabled()]] - `calls` [EXTRACTED]
 - [[.test_custom_config()]] - `calls` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[run()_3]] - `calls` [EXTRACTED]
 - [[test_approval_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

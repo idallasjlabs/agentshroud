@@ -1,16 +1,26 @@
 ---
-source_file: "docs/architecture/agentic-os.md"
-type: "concept"
-community: "Planning Docs"
+source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+type: "document"
+community: "Skill (i-atlas)"
+location: "L6"
 tags:
-  - graphify/concept
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-atlas
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Socrates — Dialogue Architect_4]] - `shares_data_with` [EXTRACTED]
+- [[Input Requirements_22]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
+- [[Output Format_27]] - `contains` [EXTRACTED]
+- [[Persona_17]] - `contains` [EXTRACTED]
+- [[Quality Checklist_20]] - `contains` [EXTRACTED]
+- [[Role_79]] - `contains` [EXTRACTED]
+- [[SKILL_133]] - `contains` [EXTRACTED]
+- [[System Prompt_17]] - `contains` [EXTRACTED]
+- [[User Prompt Template_9]] - `contains` [EXTRACTED]
+- [[User Prompt Template — OKE Channel_2]] - `contains` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-atlas

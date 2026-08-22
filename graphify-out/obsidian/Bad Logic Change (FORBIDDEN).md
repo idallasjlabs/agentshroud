@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Safe Refactor.agent (agents)"
 location: "L222"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Safe_Refactoragent_agents
 ---
 
 # Bad: Logic Change (FORBIDDEN)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Example Refactorings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Safe_Refactoragent_agents

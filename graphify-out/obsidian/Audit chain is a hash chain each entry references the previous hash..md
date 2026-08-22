@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "SOC RBAC & Auth"
+community: "Pipeline Unit"
 location: "L302"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/Pipeline_Unit
 ---
 
 # Audit chain is a hash chain: each entry references the previous hash.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_audit_chain_hash_chained()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/rationale #graphify/EXTRACTED #community/Pipeline_Unit

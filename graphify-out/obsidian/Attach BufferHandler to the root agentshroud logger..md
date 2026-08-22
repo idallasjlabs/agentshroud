@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Security Audit & Watchtower Tests"
 location: "L187"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # Attach BufferHandler to the root agentshroud logger.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[install_log_handler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

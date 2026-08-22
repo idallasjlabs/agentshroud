@@ -1,17 +1,22 @@
 ---
 source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Browser Fetch Skill (reference)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Browser_Fetch_Skill_reference
 ---
 
 # BROWSER_FETCH_SKILL.md
 
 ## Connections
+- [[Browser-Fetch Approval Queue Integration]] - `references` [EXTRACTED]
+- [[Browser-Fetch Audit Logging]] - `references` [EXTRACTED]
+- [[Browser-Fetch ClawHub Auto-Discovery Plan]] - `references` [EXTRACTED]
 - [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[Playwright Headless Chromium Decryption]] - `references` [EXTRACTED]
+- [[SecureBrowser Skill_1]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill_reference

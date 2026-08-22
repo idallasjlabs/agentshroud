@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "Gateway Test Suite"
-location: "L318"
+community: "Daily Cve Report (security)"
+location: "L342"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Daily_Cve_Report_security
 ---
 
 # Background loop: sends one CVE report per day at ``report_hour`` UTC.      Runs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[cve_report_scheduler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Daily_Cve_Report_security

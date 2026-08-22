@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "Planning Docs"
+community: "Blue Team Assessment V0.8.0 (v0.8)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Blue_Team_Assessment_V080_v08
 ---
 
 # Blue Team Security Assessment — AgentShroud v0.8.0 Round 2
@@ -23,12 +23,12 @@ tags:
 - [[LOW Findings]] - `contains` [EXTRACTED]
 - [[MEDIUM Findings]] - `contains` [EXTRACTED]
 - [[OWNER_USER_IDS bypass mechanism]] - `references` [EXTRACTED]
-- [[RBAC — Role-Based Access Control]] - `references` [EXTRACTED]
+- [[RBAC (Role-Based Access Control)]] - `references` [EXTRACTED]
 - [[Recommendation_1]] - `contains` [EXTRACTED]
 - [[Round 3 New Findings]] - `contains` [EXTRACTED]
-- [[Summary_32]] - `contains` [EXTRACTED]
+- [[Summary_13]] - `contains` [EXTRACTED]
 - [[Verification of ALL Prior Findings]] - `contains` [EXTRACTED]
 - [[Verification of Round 1 Fixes]] - `contains` [EXTRACTED]
-- [[blue-team-assessment-v0.8.0-r2.md (Round 2)]] - `contains` [EXTRACTED]
+- [[blue-team-assessment-v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Assessment_V080_v08

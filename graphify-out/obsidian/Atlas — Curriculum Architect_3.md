@@ -1,26 +1,20 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-atlas/README.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L6"
+community: "Readme (i-atlas)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-atlas
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Input Requirements_12]] - `contains` [EXTRACTED]
-- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
-- [[Output Format_14]] - `contains` [EXTRACTED]
-- [[Persona_9]] - `contains` [EXTRACTED]
-- [[Quality Checklist_11]] - `contains` [EXTRACTED]
-- [[Role_42]] - `contains` [EXTRACTED]
-- [[SKILL_69]] - `contains` [EXTRACTED]
-- [[System Prompt_9]] - `contains` [EXTRACTED]
-- [[User Prompt Template_5]] - `contains` [EXTRACTED]
-- [[User Prompt Template — OKE Channel_1]] - `contains` [EXTRACTED]
+- [[Purpose_76]] - `contains` [EXTRACTED]
+- [[README_81]] - `contains` [EXTRACTED]
+- [[Related Skills_82]] - `contains` [EXTRACTED]
+- [[Usage_84]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-atlas

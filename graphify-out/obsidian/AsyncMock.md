@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L8511"
+community: "Slack Proxy Coverage"
+location: "L8612"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Slack_Proxy_Coverage
 ---
 
 # AsyncMock
 
 ## Connections
 - [[.__call__()_10]] - `method` [EXTRACTED]
-- [[.__init__()_169]] - `calls` [INFERRED]
-- [[.__init__()_186]] - `method` [EXTRACTED]
+- [[.__init__()_173]] - `calls` [INFERRED]
+- [[.__init__()_191]] - `method` [EXTRACTED]
 - [[._handler()]] - `calls` [INFERRED]
 - [[._mock_request()]] - `calls` [INFERRED]
 - [[._passthrough_pii()]] - `calls` [INFERRED]
@@ -195,11 +195,6 @@ tags:
 - [[test_audit_export_exporter_raises()]] - `calls` [INFERRED]
 - [[test_audit_export_json_dict_payload()]] - `calls` [INFERRED]
 - [[test_broadcast_with_failed_client()]] - `calls` [INFERRED]
-- [[test_call_agent_default_body_has_no_metadata()]] - `calls` [INFERRED]
-- [[test_call_agent_no_memory_on_adds_ephemeral_tag()]] - `calls` [INFERRED]
-- [[test_call_agent_read_timeout_returns_fallback()]] - `calls` [INFERRED]
-- [[test_call_agent_records_latency_on_read_timeout()]] - `calls` [INFERRED]
-- [[test_call_agent_records_latency_on_success()]] - `calls` [INFERRED]
 - [[test_call_llm_malformed_response_raises()]] - `calls` [INFERRED]
 - [[test_call_llm_returns_content()]] - `calls` [INFERRED]
 - [[test_call_llm_sends_correct_model_and_max_tokens()]] - `calls` [INFERRED]
@@ -251,9 +246,6 @@ tags:
 - [[test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails()]] - `calls` [INFERRED]
 - [[test_ws_dirty_close_before_initial_state_is_handled_cleanly()]] - `calls` [INFERRED]
 - [[test_ws_empty_transcript_goes_idle()]] - `calls` [INFERRED]
-- [[test_ws_full_utterance_state_sequence()]] - `calls` [INFERRED]
-- [[test_ws_one_sentence_reply_unchanged()]] - `calls` [INFERRED]
 - [[test_ws_pipeline_error_logs_and_recovers_to_idle()]] - `calls` [INFERRED]
-- [[test_ws_sentence_chunked_tts_calls_synthesize_per_sentence()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Slack_Proxy_Coverage

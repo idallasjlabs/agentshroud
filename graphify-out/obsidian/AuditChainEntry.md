@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Pipeline (proxy)"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Pipeline_proxy
 ---
 
 # AuditChainEntry
@@ -24,4 +24,4 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/code #graphify/EXTRACTED #community/Pipeline_proxy

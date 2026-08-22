@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Openscap (05 - Dependencies)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Openscap_05_-_Dependencies
 ---
 
 # Architecture Overview
@@ -19,4 +19,4 @@ tags:
 - [[Local LLM Support — Implementation Review]] - `contains` [EXTRACTED]
 - [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Openscap_05_-_Dependencies

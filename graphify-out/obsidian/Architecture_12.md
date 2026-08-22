@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Presidio Analyzer (05 - Dependencies)"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Presidio_Analyzer_05_-_Dependencies
 ---
 
 # Architecture
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Presidio Analyzer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Presidio_Analyzer_05_-_Dependencies

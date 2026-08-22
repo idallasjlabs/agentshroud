@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Collaborator Prompt Classifiers"
+community: "Enhanced Approval"
 location: "L103"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Enhanced_Approval
 ---
 
 # ApprovalQueueConfig
@@ -61,6 +61,8 @@ tags:
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
 - [[WebSocket]] - `uses` [INFERRED]
 - [[_FakeApprovalQueue]] - `uses` [INFERRED]
+- [[_HangingWebSocket]] - `uses` [INFERRED]
+- [[_HangingWebSocket_1]] - `uses` [INFERRED]
 - [[_queue()]] - `calls` [EXTRACTED]
 - [[_real_queue()]] - `calls` [EXTRACTED]
 - [[approval_queue()_1]] - `calls` [EXTRACTED]
@@ -76,6 +78,7 @@ tags:
 - [[queue_config()]] - `calls` [EXTRACTED]
 - [[test_approval_queue.py]] - `imports` [EXTRACTED]
 - [[test_approval_stress.py]] - `imports` [EXTRACTED]
+- [[test_broadcast_does_not_hang_forever_on_dead_client()_1]] - `calls` [EXTRACTED]
 - [[test_config()]] - `calls` [EXTRACTED]
 - [[test_config()_1]] - `calls` [EXTRACTED]
 - [[test_config_with_ssh()]] - `calls` [EXTRACTED]
@@ -87,6 +90,7 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
+- [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `calls` [EXTRACTED]
 - [[test_websocket_notifications()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Collaborator_Prompt_Classifiers
+#graphify/code #graphify/INFERRED #community/Enhanced_Approval

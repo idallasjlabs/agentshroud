@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "Telegram Inbound Tests"
+community: "Audit Export"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram_Inbound_Tests
+  - community/Audit_Export
 ---
 
 # AuditEvent
 
 ## Connections
-- [[.__init__()_54]] - `method` [EXTRACTED]
+- [[.__init__()_57]] - `method` [EXTRACTED]
 - [[._generate_event_id()]] - `method` [EXTRACTED]
 - [[.compute_content_hash()]] - `method` [EXTRACTED]
 - [[.compute_entry_hash()]] - `method` [EXTRACTED]
@@ -21,12 +21,13 @@ tags:
 - [[.test_content_hash()]] - `calls` [EXTRACTED]
 - [[.test_entry_hash_chain()]] - `calls` [EXTRACTED]
 - [[.test_event_creation()]] - `calls` [EXTRACTED]
-- [[.to_dict()_4]] - `method` [EXTRACTED]
+- [[.to_dict()_5]] - `method` [EXTRACTED]
 - [[.verify_hash_chain()]] - `calls` [EXTRACTED]
 - [[AuditEvent]] - `uses` [INFERRED]
 - [[AuditExportConfig_1]] - `uses` [INFERRED]
 - [[AuditExporter]] - `uses` [INFERRED]
 - [[AuditStore]] - `uses` [INFERRED]
+- [[AuditStore_1]] - `calls` [EXTRACTED]
 - [[Represents a single audit event.      The ``bot_id`` field identifies which bot]] - `rationale_for` [EXTRACTED]
 - [[TestAuditEvent]] - `uses` [INFERRED]
 - [[TestAuditExporter]] - `uses` [INFERRED]
@@ -37,4 +38,4 @@ tags:
 - [[audit_store.py]] - `contains` [EXTRACTED]
 - [[test_audit_export.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram_Inbound_Tests
+#graphify/code #graphify/EXTRACTED #community/Audit_Export

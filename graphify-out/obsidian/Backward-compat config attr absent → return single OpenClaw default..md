@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "rationale"
-community: "Voice Gateway Tests"
+community: "Soc Bots"
 location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Voice_Gateway_Tests
+  - community/Soc_Bots
 ---
 
 # Backward-compat: config attr absent → return single OpenClaw default.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_returns_default_when_config_is_none()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Voice_Gateway_Tests
+#graphify/rationale #graphify/EXTRACTED #community/Soc_Bots

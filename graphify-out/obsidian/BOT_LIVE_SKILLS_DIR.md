@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/update-bot-agents.sh"
 type: "code"
-community: "docs/user-guide.md"
+community: "Hermes Openclaw Dev Workflow (runbooks)"
 location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/user-guidemd
+  - community/Hermes_Openclaw_Dev_Workflow_runbooks
 ---
 
 # BOT_LIVE_SKILLS_DIR
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update-bot-agents.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/user-guidemd
+#graphify/code #graphify/EXTRACTED #community/Hermes_Openclaw_Dev_Workflow_runbooks

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "branding/colors"
+community: "Skill (coding-agent)"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/colors
+  - community/Skill_coding-agent
 ---
 
 # Bash Tool Parameters
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[⚠️ PTY Mode Required!]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/colors
+#graphify/document #graphify/EXTRACTED #community/Skill_coding-agent

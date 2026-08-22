@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/README.md"
+source_file: ".agents/skills/i-athena/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-athena)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-athena
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
 - [[Purpose_1]] - `contains` [EXTRACTED]
-- [[README_6]] - `contains` [EXTRACTED]
+- [[README_1]] - `contains` [EXTRACTED]
 - [[Related Skills_1]] - `contains` [EXTRACTED]
-- [[Usage_3]] - `contains` [EXTRACTED]
+- [[Usage_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-athena

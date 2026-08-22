@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "CLI Client (Rust)"
+community: "Brand Guidelines (guidelines)"
 location: "L200"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CLI_Client_Rust
+  - community/Brand_Guidelines_guidelines
 ---
 
 # Approved Logo Assets for Media
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Press Kit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CLI_Client_Rust
+#graphify/document #graphify/EXTRACTED #community/Brand_Guidelines_guidelines

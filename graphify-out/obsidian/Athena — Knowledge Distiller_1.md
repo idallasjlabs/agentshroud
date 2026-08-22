@@ -1,30 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: "docker/config/hermes/skills/i-athena/README.md"
 type: "document"
-community: "Bot Skill Config"
-location: "L6"
+community: "Readme (i-athena)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-athena
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Athena README]] - `references` [INFERRED]
-- [[Input Requirements_1]] - `contains` [EXTRACTED]
-- [[Input Requirements_11]] - `contains` [EXTRACTED]
-- [[Output Format]] - `contains` [EXTRACTED]
-- [[Output Format_13]] - `contains` [EXTRACTED]
-- [[Persona]] - `contains` [EXTRACTED]
-- [[Persona_8]] - `contains` [EXTRACTED]
-- [[Role_5]] - `contains` [EXTRACTED]
-- [[Role_41]] - `contains` [EXTRACTED]
-- [[SKILL_5]] - `contains` [EXTRACTED]
-- [[SKILL_68]] - `contains` [EXTRACTED]
-- [[cheatsheet.md Output Template]] - `references` [EXTRACTED]
-- [[curriculum.md (input requirement)]] - `references` [EXTRACTED]
-- [[show_notes.md Output Template]] - `references` [EXTRACTED]
+- [[Purpose_38]] - `contains` [EXTRACTED]
+- [[README_43]] - `contains` [EXTRACTED]
+- [[Related Skills_41]] - `contains` [EXTRACTED]
+- [[Usage_43]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-athena

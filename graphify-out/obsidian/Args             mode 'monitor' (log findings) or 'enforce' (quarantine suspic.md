@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "rationale"
-community: "Collaborator Response Templates"
+community: "Git Guard (security)"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Git_Guard_security
 ---
 
 # Args:             mode: 'monitor' (log findings) or 'enforce' (quarantine suspic
 
 ## Connections
-- [[.__init__()_79]] - `rationale_for` [EXTRACTED]
+- [[.__init__()_82]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/rationale #graphify/EXTRACTED #community/Git_Guard_security

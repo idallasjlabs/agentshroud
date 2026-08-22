@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "Collaborator Prompt Classifiers"
+community: "Store (approval_queue)"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Store_approval_queue
 ---
 
 # ApprovalQueueItem
@@ -16,4 +16,4 @@ tags:
 - [[.load_pending()]] - `references` [EXTRACTED]
 - [[.save()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/code #graphify/EXTRACTED #community/Store_approval_queue

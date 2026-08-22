@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/README.md"
+source_file: "docker/config/hermes/skills/i-bs/README.md"
 type: "document"
-community: "Planning Docs"
+community: "Readme (i-bs)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Readme_i-bs
 ---
 
 # Branding Specialist (BS)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_45]] - `contains` [EXTRACTED]
 - [[Usage_48]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_i-bs

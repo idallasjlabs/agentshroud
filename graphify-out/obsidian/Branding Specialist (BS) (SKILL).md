@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-bs/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-aws)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-aws
 ---
 
 # Branding Specialist (BS) (SKILL)
@@ -16,4 +16,4 @@ tags:
 - [[GSDE&G Team (Global Services Digital Enablement & Governance)]] - `references` [EXTRACTED]
 - [[WCAG AA Contrast Standard]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-aws

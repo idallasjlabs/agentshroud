@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "docs/README.md"
+community: "Auth"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/READMEmd
+  - community/Auth
 ---
 
 # AuthRequired
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[health_check_detail()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Auth

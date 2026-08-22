@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Credential Security Policy (security)"
 location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Credential_Security_Policy_security
 ---
 
 # Behavior Examples
@@ -16,4 +16,4 @@ tags:
 - [[✅ What SHOULD Happen]] - `contains` [EXTRACTED]
 - [[❌ What Should NOT Happen (Blocked)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Credential_Security_Policy_security

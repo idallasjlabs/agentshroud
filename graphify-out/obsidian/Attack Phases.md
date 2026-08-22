@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
+source_file: ".agents/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "web/management-dashboard.html"
+community: "Skill (i-sec-offense)"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web/management-dashboardhtml
+  - community/Skill_i-sec-offense
 ---
 
 # Attack Phases
@@ -20,4 +20,4 @@ tags:
 - [[Phase 5 Exploitation Chains]] - `contains` [EXTRACTED]
 - [[Phase 6 Detection Validation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web/management-dashboardhtml
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-offense

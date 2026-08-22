@@ -1,17 +1,16 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: ".agents/skills/i-atlas/README.md"
 type: "document"
-community: "skills/openclaw"
+community: "Skill (i-atlas)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Skill_i-atlas
 ---
 
 # Atlas README
 
 ## Connections
-- [[SKILLS_GUIDE.md (complete skill catalog)]] - `references` [EXTRACTED]
-- [[i-atlas SKILL (Curriculum Architect)]] - `references` [INFERRED]
+- [[Atlas — Curriculum Architect_6]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/skills/openclaw
+#graphify/document #graphify/EXTRACTED #community/Skill_i-atlas

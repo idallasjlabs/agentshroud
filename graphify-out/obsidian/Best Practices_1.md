@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-mcpm-aws-profile)"
 location: "L296"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-mcpm-aws-profile
 ---
 
 # Best Practices
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[MCP-Specific]] - `contains` [EXTRACTED]
 - [[Organization]] - `contains` [EXTRACTED]
-- [[Security_10]] - `contains` [EXTRACTED]
+- [[Security_1]] - `contains` [EXTRACTED]
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mcpm-aws-profile

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/data-dictionary.md"
 type: "concept"
-community: "gateway/tools"
+community: "Adr 005 Sha256 Hash (adr)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/gateway/tools
+  - community/Adr_005_Sha256_Hash_adr
 ---
 
 # AuditEntry (data entity)
@@ -16,4 +16,4 @@ tags:
 - [[audit_entries SQLite table]] - `implements` [EXTRACTED]
 - [[mcp_audit_entries SQLite table]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/gateway/tools
+#graphify/concept #graphify/EXTRACTED #community/Adr_005_Sha256_Hash_adr

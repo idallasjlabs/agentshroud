@@ -1,11 +1,11 @@
 ---
 source_file: "docs/flows/state-diagrams.md"
 type: "concept"
-community: "gateway/requirements.txt"
+community: "State Diagrams (flows)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/gateway/requirementstxt
+  - community/State_Diagrams_flows
 ---
 
 # Approval Queue States (PENDING, APPROVED, DENIED, TIMED_OUT, EXECUTED, ARCHIVED)
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud State Diagrams (doc)]] - `references` [EXTRACTED]
 - [[Diagram 16 State — Approval Queue]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/gateway/requirementstxt
+#graphify/concept #graphify/EXTRACTED #community/State_Diagrams_flows

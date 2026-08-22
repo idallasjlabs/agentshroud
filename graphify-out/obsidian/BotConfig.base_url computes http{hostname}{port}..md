@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "docs/testing"
+community: "Config"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/testing
+  - community/Config
 ---
 
 # BotConfig.base_url computes http://{hostname}:{port}.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_bot_config_base_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/testing
+#graphify/rationale #graphify/EXTRACTED #community/Config

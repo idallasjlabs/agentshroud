@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Egress Filter"
 location: "L21"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Docker_Deploy_Scripts
+  - community/Egress_Filter
 ---
 
 # ApprovalResult
@@ -35,4 +35,4 @@ tags:
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/INFERRED #community/Egress_Filter

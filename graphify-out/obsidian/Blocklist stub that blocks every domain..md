@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "docs/vault"
+community: "Dns Canvas Coverage"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Dns_Canvas_Coverage
 ---
 
 # Blocklist stub that blocks every domain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_BlockAll]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Dns_Canvas_Coverage
