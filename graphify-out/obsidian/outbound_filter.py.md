@@ -1,24 +1,25 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Security Audit & Watchtower Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # outbound_filter.py
 
 ## Connections
+- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[Enum]] - `imports_from` [EXTRACTED]
+- [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
 - [[FilterMatch]] - `contains` [EXTRACTED]
 - [[FilterResult]] - `contains` [EXTRACTED]
 - [[InfoCategory]] - `contains` [EXTRACTED]
 - [[OutboundInfoFilter]] - `contains` [EXTRACTED]
-- [[i-sec-defense Blue Team Security Auditor]] - `references` [EXTRACTED]
+- [[SKILL_190]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

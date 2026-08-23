@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "chatbot/test_main.py"
+community: "Dns Canvas Coverage"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/test_mainpy
+  - community/Dns_Canvas_Coverage
 ---
 
 # make_fake_socket_module()
@@ -18,4 +18,4 @@ tags:
 - [[Build a fake `socket` module namespace driving forward_query without IO.      E]] - `rationale_for` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/test_mainpy
+#graphify/code #graphify/EXTRACTED #community/Dns_Canvas_Coverage

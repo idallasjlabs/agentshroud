@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "Architecture Docs"
-location: "L43"
+community: "Llm Proxy Failover"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Llm_Proxy_Failover
 ---
 
 # make_proxy()
@@ -20,6 +20,8 @@ tags:
 - [[test_failover_routes_qwen3_to_lm_studio_with_normalized_model()]] - `calls` [EXTRACTED]
 - [[test_forward_request_default_still_retries_429()]] - `calls` [EXTRACTED]
 - [[test_forward_request_interactive_header_skips_retries()]] - `calls` [EXTRACTED]
+- [[test_forward_request_slow_http_error_read_does_not_block_event_loop()]] - `calls` [EXTRACTED]
+- [[test_forward_request_slow_read_does_not_block_event_loop()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_failover.py]] - `contains` [EXTRACTED]
 - [[test_per_request_opt_out_header_skips_failover()]] - `calls` [EXTRACTED]
 - [[test_proxy_failover_anthropic_overloaded_529()]] - `calls` [EXTRACTED]
@@ -35,4 +37,4 @@ tags:
 - [[test_proxy_normal_200_passthrough_untouched()]] - `calls` [EXTRACTED]
 - [[test_proxy_post_retry_429_now_failovers()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Llm_Proxy_Failover

@@ -1,23 +1,17 @@
 ---
-source_file: "scripts/triage-cve-mitigations.py"
+source_file: "scripts/list_registry_ghsa_ids.py"
 type: "code"
-community: "Gateway Security Module"
-location: "L1124"
+community: "Generate Cve Page (scripts)"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Generate_Cve_Page_scripts
 ---
 
 # main()
 
 ## Connections
-- [[CLI entry point.      Args         argv Optional argv override (for tests).]] - `rationale_for` [EXTRACTED]
-- [[_rel()]] - `calls` [EXTRACTED]
-- [[render_gap_report()]] - `calls` [EXTRACTED]
-- [[rewrite_registry_text()_1]] - `calls` [EXTRACTED]
-- [[summarize()]] - `calls` [EXTRACTED]
-- [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
-- [[triage_agent()]] - `calls` [EXTRACTED]
+- [[list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Generate_Cve_Page_scripts

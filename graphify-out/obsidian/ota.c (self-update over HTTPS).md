@@ -1,13 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/main/ota.c"
 type: "code"
-community: "Community 1743"
+community: "Ota (main)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1743
+  - community/Ota_main
 ---
 
 # ota.c (self-update over HTTPS)
 
-#graphify/code #graphify/EXTRACTED #community/Community_1743
+#graphify/code #graphify/EXTRACTED #community/Ota_main

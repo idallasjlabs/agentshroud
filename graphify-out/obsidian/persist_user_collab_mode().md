@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Group Workspace Isolation"
+community: "SOC Router (Collaborator Mgmt)"
 location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Workspace_Isolation
+  - community/SOC_Router_Collaborator_Mgmt
 ---
 
 # persist_user_collab_mode()
@@ -22,4 +22,4 @@ tags:
 - [[set_user_collab_mode()]] - `calls` [EXTRACTED]
 - [[test_group_config.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation
+#graphify/code #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt

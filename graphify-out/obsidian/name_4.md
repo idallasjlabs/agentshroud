@@ -1,12 +1,12 @@
 ---
-source_file: "skills/custom/browser-fetch/package.json"
+source_file: "docker/config/openclaw/skills/i-browser/package.json"
 type: "code"
-community: "Gateway Test Suite"
+community: "Package (i-browser)"
 location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Package_i-browser
 ---
 
 # name
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[package.json_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Package_i-browser

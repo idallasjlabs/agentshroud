@@ -1,28 +1,20 @@
 ---
-source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "docs/data"
-location: "L235"
+community: "Sync Cve Registry (scripts)"
+location: "L886"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/data
+  - community/Sync_Cve_Registry_scripts
 ---
 
 # main()
 
 ## Connections
-- [[aggregate_costs()]] - `calls` [EXTRACTED]
-- [[build_json_all()]] - `calls` [EXTRACTED]
-- [[build_json_current()]] - `calls` [EXTRACTED]
-- [[eprint()]] - `calls` [EXTRACTED]
-- [[filter_by_days()]] - `calls` [EXTRACTED]
-- [[latest_day_cost()]] - `calls` [EXTRACTED]
-- [[load_payload()]] - `calls` [EXTRACTED]
-- [[model_usage.py]] - `contains` [EXTRACTED]
-- [[parse_daily_entries()]] - `calls` [EXTRACTED]
-- [[pick_current_model()]] - `calls` [EXTRACTED]
-- [[render_text_all()]] - `calls` [EXTRACTED]
-- [[render_text_current()]] - `calls` [EXTRACTED]
+- [[Path_47]] - `calls` [EXTRACTED]
+- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
+- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/data
+#graphify/code #graphify/EXTRACTED #community/Sync_Cve_Registry_scripts

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Ledger.py (Gateway Core)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Ledgerpy_Gateway_Core
 ---
 
 # ledger.py
@@ -19,9 +19,9 @@ tags:
 - [[Imports From  Exports To_2]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_2]] - `contains` [EXTRACTED]
 - [[Known Issues  Notes_2]] - `contains` [EXTRACTED]
-- [[Purpose_76]] - `contains` [EXTRACTED]
+- [[Purpose_113]] - `contains` [EXTRACTED]
 - [[Related_3]] - `contains` [EXTRACTED]
 - [[Responsibilities_2]] - `contains` [EXTRACTED]
 - [[ledger.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Ledgerpy_Gateway_Core

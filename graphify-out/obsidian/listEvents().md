@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/scripts/calendar.js"
+source_file: ".agents/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "docs/vault"
+community: "Calendar (scripts)"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Calendar_scripts
 ---
 
 # listEvents()
@@ -16,4 +16,4 @@ tags:
 - [[makeRequest()]] - `calls` [EXTRACTED]
 - [[parseCalendarData()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Calendar_scripts

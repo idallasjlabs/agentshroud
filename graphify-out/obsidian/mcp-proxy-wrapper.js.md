@@ -1,25 +1,28 @@
 ---
 source_file: "docker/scripts/mcp-proxy-wrapper.js"
 type: "code"
-community: "Custom Skills"
+community: "Mcp Proxy Wrapper (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Mcp_Proxy_Wrapper_scripts
 ---
 
 # mcp-proxy-wrapper.js
 
 ## Connections
 - [[Gateway mcpproxy and mcpresult endpoints]] - `references` [EXTRACTED]
+- [[MCPPermissionManager]] - `references` [INFERRED]
+- [[MCPProxy]] - `references` [EXTRACTED]
 - [[command, ...commandArgs]] - `contains` [EXTRACTED]
+- [[apply-patches.js]] - `conceptually_related_to` [AMBIGUOUS]
 - [[auditResult()]] - `contains` [EXTRACTED]
 - [[child]] - `contains` [EXTRACTED]
 - [[dashDash]] - `contains` [EXTRACTED]
 - [[gatewayPost()]] - `contains` [EXTRACTED]
 - [[http_1]] - `contains` [EXTRACTED]
-- [[https_3]] - `contains` [EXTRACTED]
+- [[https_4]] - `contains` [EXTRACTED]
 - [[inboundRl]] - `contains` [EXTRACTED]
 - [[inspectCall()]] - `contains` [EXTRACTED]
 - [[outboundRl]] - `contains` [EXTRACTED]
@@ -27,4 +30,4 @@ tags:
 - [[readline]] - `contains` [EXTRACTED]
 - [[{ spawn }]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Mcp_Proxy_Wrapper_scripts

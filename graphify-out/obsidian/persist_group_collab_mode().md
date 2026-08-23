@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Group Workspace Isolation"
+community: "Group Config & Collaborator Responses"
 location: "L292"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Workspace_Isolation
+  - community/Group_Config__Collaborator_Responses
 ---
 
 # persist_group_collab_mode()
@@ -21,4 +21,4 @@ tags:
 - [[set_group_mode()]] - `calls` [EXTRACTED]
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation
+#graphify/code #graphify/EXTRACTED #community/Group_Config__Collaborator_Responses

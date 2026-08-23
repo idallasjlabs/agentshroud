@@ -1,19 +1,22 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # path_isolation.py
 
 ## Connections
+- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[PathIsolationConfig]] - `contains` [EXTRACTED]
 - [[PathIsolationManager]] - `contains` [EXTRACTED]
 - [[PathRewriteResult]] - `contains` [EXTRACTED]
+- [[Rule agentshroud-path-traversal-open]] - `references` [EXTRACTED]
+- [[SKILL_190]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

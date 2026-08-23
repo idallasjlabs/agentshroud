@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_translator.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Chat Completions Alias"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Chat_Completions_Alias
 ---
 
 # openai_to_anthropic_request()
@@ -19,4 +19,4 @@ tags:
 - [[test_claude_via_openai_path.py]] - `imports` [EXTRACTED]
 - [[test_openai_to_anthropic_request_strips_system_role()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Chat_Completions_Alias

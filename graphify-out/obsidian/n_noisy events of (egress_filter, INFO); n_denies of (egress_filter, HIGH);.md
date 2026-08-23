@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_archive.py"
 type: "rationale"
-community: "Architecture Docs"
+community: "Audit Archive"
 location: "L285"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Audit_Archive
 ---
 
 # n_noisy events of (egress_filter, INFO); n_denies of (egress_filter, HIGH);
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_mixed_live_db()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Audit_Archive

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "Aiosqlite (05 - Dependencies)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Aiosqlite_05_-_Dependencies
 ---
 
 # models.py
@@ -22,6 +22,7 @@ tags:
 - [[ForwardResponse]] - `contains` [EXTRACTED]
 - [[LedgerEntry_1]] - `contains` [EXTRACTED]
 - [[LedgerQueryResponse_1]] - `contains` [EXTRACTED]
+- [[README_128]] - `references` [EXTRACTED]
 - [[RedactionDetail]] - `contains` [EXTRACTED]
 - [[RedactionResult]] - `contains` [EXTRACTED]
 - [[SSHExecRequest_1]] - `contains` [EXTRACTED]
@@ -40,4 +41,4 @@ tags:
 - [[store.py]] - `imports_from` [EXTRACTED]
 - [[test_router_openai_translation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/code #graphify/EXTRACTED #community/Aiosqlite_05_-_Dependencies

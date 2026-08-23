@@ -1,19 +1,17 @@
 ---
 source_file: "skills/openclaw/ordercli/SKILL.md"
 type: "document"
-community: "docs/USPTO_TRADEMARK_APPLICATION.md"
+community: "Skill (ordercli)"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/USPTO_TRADEMARK_APPLICATIONmd
+  - community/Skill_ordercli
 ---
 
 # ordercli
 
 ## Connections
-- [[Foodora API Integration (ordercli)]] - `integrates` [EXTRACTED]
-- [[OpenClaw Skill Ecosystem]] - `part_of` [EXTRACTED]
-- [[SKILL_160]] - `contains` [EXTRACTED]
+- [[SKILL_224]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/USPTO_TRADEMARK_APPLICATIONmd
+#graphify/document #graphify/EXTRACTED #community/Skill_ordercli

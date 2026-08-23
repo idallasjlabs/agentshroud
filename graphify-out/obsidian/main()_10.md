@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/skills/scan.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "gateway/runtime"
-location: "L68"
+community: "Cli Coverage"
+location: "L391"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/runtime
+  - community/Cli_Coverage
 ---
 
 # main()
 
 ## Connections
-- [[Path_22]] - `calls` [EXTRACTED]
-- [[SkillGuard]] - `calls` [EXTRACTED]
-- [[SkillGuard.scan_skill_tree()]] - `calls` [EXTRACTED]
-- [[_build_tree()]] - `calls` [EXTRACTED]
-- [[_print_findings()]] - `calls` [EXTRACTED]
-- [[scan.py]] - `contains` [EXTRACTED]
+- [[cli()]] - `calls` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/runtime
+#graphify/code #graphify/EXTRACTED #community/Cli_Coverage

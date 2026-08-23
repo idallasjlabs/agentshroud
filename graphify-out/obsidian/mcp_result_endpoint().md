@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "Ingest API Main & Models"
 location: "L792"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Ingest_API_Main__Models
 ---
 
 # mcp_result_endpoint()
 
 ## Connections
 - [[AuthRequired]] - `references` [EXTRACTED]
-- [[AuthRequired_5]] - `references` [EXTRACTED]
 - [[MCP tool result outbound audit endpoint.      Receives a tool result from the bo]] - `rationale_for` [EXTRACTED]
 - [[MCPResultRequest]] - `references` [EXTRACTED]
 - [[MCPToolResult]] - `calls` [EXTRACTED]
@@ -21,4 +20,4 @@ tags:
 - [[_resolve_effective_agent_id()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/code #graphify/EXTRACTED #community/Ingest_API_Main__Models

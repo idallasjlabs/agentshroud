@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "docker/bot-capabilities.md"
+community: "Skill (notion)"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/bot-capabilitiesmd
+  - community/Skill_notion
 ---
 
 # notion
@@ -16,10 +16,8 @@ tags:
 - [[Common Operations_1]] - `contains` [EXTRACTED]
 - [[Key Differences in 2025-09-03]] - `contains` [EXTRACTED]
 - [[Notes_6]] - `contains` [EXTRACTED]
-- [[Notion API (2025-09-03)]] - `uses` [EXTRACTED]
-- [[OpenClaw Skill Ecosystem]] - `part_of` [EXTRACTED]
 - [[Property Types]] - `contains` [EXTRACTED]
-- [[SKILL_154]] - `contains` [EXTRACTED]
-- [[Setup_6]] - `contains` [EXTRACTED]
+- [[SKILL_218]] - `contains` [EXTRACTED]
+- [[Setup_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/bot-capabilitiesmd
+#graphify/document #graphify/EXTRACTED #community/Skill_notion

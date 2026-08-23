@@ -1,12 +1,12 @@
 ---
-source_file: "skills/custom/icloud/scripts/calendar.js"
+source_file: "docker/config/openclaw/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "gateway/tools"
+community: "Calendar (scripts)"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/tools
+  - community/Calendar_scripts
 ---
 
 # makeRequest()
@@ -16,4 +16,4 @@ tags:
 - [[createEvent()_2]] - `calls` [EXTRACTED]
 - [[listEvents()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/tools
+#graphify/code #graphify/EXTRACTED #community/Calendar_scripts

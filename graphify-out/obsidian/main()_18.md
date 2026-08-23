@@ -1,17 +1,18 @@
 ---
-source_file: "scripts/list_registry_ghsa_ids.py"
+source_file: "scripts/gemini-review.py"
 type: "code"
-community: "Planning Docs"
-location: "L32"
+community: "Gemini Review (scripts)"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Gemini_Review_scripts
 ---
 
 # main()
 
 ## Connections
-- [[list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
+- [[call_gemini()]] - `calls` [EXTRACTED]
+- [[gemini-review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Gemini_Review_scripts

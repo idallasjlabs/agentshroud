@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (oracle)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_oracle
 ---
 
 # oracle — best use
@@ -18,9 +18,9 @@ tags:
 - [[Golden path]] - `contains` [EXTRACTED]
 - [[Main use case (browser, GPT‑5.2 Pro)]] - `contains` [EXTRACTED]
 - [[Prompt template (high signal)]] - `contains` [EXTRACTED]
-- [[SKILL_159]] - `contains` [EXTRACTED]
-- [[Safety_2]] - `contains` [EXTRACTED]
+- [[SKILL_223]] - `contains` [EXTRACTED]
+- [[Safety_3]] - `contains` [EXTRACTED]
 - [[Sessions + slugs]] - `contains` [EXTRACTED]
 - [[“Exhaustive prompt” restoration pattern]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_oracle

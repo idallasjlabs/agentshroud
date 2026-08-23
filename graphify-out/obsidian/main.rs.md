@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "CLI Command Client (Rust)"
+community: "Main (src)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI_Command_Client_Rust
+  - community/Main_src
 ---
 
 # main.rs
@@ -61,7 +61,7 @@ tags:
 - [[format_status()]] - `contains` [EXTRACTED]
 - [[format_status_handles_missing_fields()]] - `contains` [EXTRACTED]
 - [[json_str()]] - `contains` [EXTRACTED]
-- [[main()]] - `contains` [EXTRACTED]
+- [[main()_1]] - `contains` [EXTRACTED]
 - [[map_http_error()]] - `contains` [EXTRACTED]
 - [[map_http_error_401_message()]] - `contains` [EXTRACTED]
 - [[map_http_error_generic_status()]] - `contains` [EXTRACTED]
@@ -87,4 +87,4 @@ tags:
 - [[status_hits_correct_path()]] - `contains` [EXTRACTED]
 - [[status_parses_and_formats()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI_Command_Client_Rust
+#graphify/code #graphify/EXTRACTED #community/Main_src

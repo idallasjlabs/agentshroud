@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Dns Canvas Coverage"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Dns_Canvas_Coverage
 ---
 
 # parse_query()
@@ -24,4 +24,4 @@ tags:
 - [[parse_domain_name()]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Dns_Canvas_Coverage

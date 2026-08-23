@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 1513"
+community: "Soc Models"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1513
+  - community/Soc_Models
 ---
 
 # models.py
@@ -22,8 +22,8 @@ tags:
 - [[Enum]] - `imports_from` [EXTRACTED]
 - [[HealthStatus]] - `contains` [EXTRACTED]
 - [[Platform]] - `contains` [EXTRACTED]
-- [[ResourceUsage_1]] - `contains` [EXTRACTED]
-- [[RiskLevel_4]] - `contains` [EXTRACTED]
+- [[ResourceUsage_2]] - `contains` [EXTRACTED]
+- [[RiskLevel_5]] - `contains` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `contains` [EXTRACTED]
 - [[SCLError]] - `contains` [EXTRACTED]
 - [[SCLInterface]] - `contains` [EXTRACTED]
@@ -37,9 +37,10 @@ tags:
 - [[_new_uuid()]] - `contains` [EXTRACTED]
 - [[_now_iso()]] - `contains` [EXTRACTED]
 - [[contributors.py]] - `imports_from` [EXTRACTED]
+- [[datetime_9]] - `imports_from` [EXTRACTED]
 - [[event_adapter.py]] - `imports_from` [EXTRACTED]
 - [[router.py_1]] - `imports_from` [EXTRACTED]
 - [[services.py]] - `imports_from` [EXTRACTED]
 - [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1513
+#graphify/code #graphify/EXTRACTED #community/Soc_Models

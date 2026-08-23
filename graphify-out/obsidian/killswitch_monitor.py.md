@@ -1,22 +1,24 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "Security Docs"
+community: "Killswitch Monitor & Observatory Mode"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Killswitch_Monitor__Observatory_Mode
 ---
 
 # killswitch_monitor.py
 
 ## Connections
+- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
+- [[FR2 Use Control]] - `references` [EXTRACTED]
+- [[Kill Switch Module Badge Icon]] - `conceptually_related_to` [INFERRED]
 - [[KillSwitchConfig]] - `imports` [EXTRACTED]
 - [[KillSwitchMonitor]] - `contains` [EXTRACTED]
-- [[i-sec-defense Blue Team Security Auditor]] - `references` [EXTRACTED]
+- [[SKILL_190]] - `references` [EXTRACTED]
 - [[killswitch_config.py]] - `imports_from` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode

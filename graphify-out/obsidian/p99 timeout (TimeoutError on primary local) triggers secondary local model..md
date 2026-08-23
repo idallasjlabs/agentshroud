@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Resource Guard & Local Model Parity"
 location: "L346"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Resource_Guard__Local_Model_Parity
 ---
 
 # p99 timeout (TimeoutError on primary local) triggers secondary local model.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_p99_timeout_triggers_secondary_failover()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity

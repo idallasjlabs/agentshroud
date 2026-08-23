@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/manifest.json"
 type: "code"
-community: "Bot Skill Config"
+community: "Manifest (browser-extension)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Manifest_browser-extension
 ---
 
 # manifest.json
@@ -16,13 +16,13 @@ tags:
 - [[background]] - `contains` [EXTRACTED]
 - [[background.js]] - `references` [EXTRACTED]
 - [[browser_specific_settings]] - `contains` [EXTRACTED]
-- [[description]] - `contains` [EXTRACTED]
+- [[description_1]] - `contains` [EXTRACTED]
 - [[host_permissions]] - `contains` [EXTRACTED]
 - [[icons]] - `contains` [EXTRACTED]
 - [[manifest_version]] - `contains` [EXTRACTED]
-- [[name]] - `contains` [EXTRACTED]
+- [[name_1]] - `contains` [EXTRACTED]
 - [[options_ui]] - `contains` [EXTRACTED]
 - [[permissions]] - `contains` [EXTRACTED]
-- [[version]] - `contains` [EXTRACTED]
+- [[version_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Manifest_browser-extension

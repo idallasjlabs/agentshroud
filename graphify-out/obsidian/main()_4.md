@@ -1,25 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "branding/README.md"
-location: "L431"
+community: "Render Email (hermes)"
+location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/branding/READMEmd
+  - community/Render_Email_hermes
 ---
 
 # main()
 
 ## Connections
-- [[._take_screenshot()]] - `calls` [EXTRACTED]
-- [[.click()]] - `calls` [EXTRACTED]
-- [[.close()]] - `calls` [EXTRACTED]
-- [[.extract()]] - `calls` [EXTRACTED]
-- [[.fill_field()]] - `calls` [EXTRACTED]
-- [[.navigate()]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser]] - `calls` [EXTRACTED]
-- [[browse.py]] - `contains` [EXTRACTED]
+- [[render()]] - `calls` [EXTRACTED]
+- [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/branding/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Render_Email_hermes

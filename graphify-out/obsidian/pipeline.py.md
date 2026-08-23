@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Security Audit & Watchtower Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # pipeline.py
@@ -28,4 +28,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

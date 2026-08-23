@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Mcp Config.py (Proxy Layer)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Mcp_Configpy_Proxy_Layer
 ---
 
 # mcp_config.py
@@ -18,9 +18,9 @@ tags:
 - [[MCPProxyConfig Fields]] - `contains` [EXTRACTED]
 - [[MCPServerConfig Fields]] - `contains` [EXTRACTED]
 - [[PermissionLevel Ordering]] - `contains` [EXTRACTED]
-- [[Purpose_93]] - `contains` [EXTRACTED]
+- [[Purpose_130]] - `contains` [EXTRACTED]
 - [[Related_15]] - `contains` [EXTRACTED]
 - [[Responsibilities_14]] - `contains` [EXTRACTED]
 - [[mcp_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Mcp_Configpy_Proxy_Layer

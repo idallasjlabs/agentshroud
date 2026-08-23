@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "concept"
-community: "Gateway Test Suite"
+community: "Skill (i-mac)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-mac
 ---
 
 # mac_app_catalog.md output artifact
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Mac App Discovery Skill]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/Skill_i-mac

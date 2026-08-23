@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Enhanced Approval Queue"
-location: "L360"
+community: "Rbac Config (security)"
+location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/Rbac_Config_security
 ---
 
 # load_persisted_collaborators()
@@ -14,8 +14,9 @@ tags:
 ## Connections
 - [[.__post_init__()_8]] - `calls` [EXTRACTED]
 - [[Read dynamically approved collaborator IDs from disk.]] - `rationale_for` [EXTRACTED]
+- [[_load_collab_store()]] - `calls` [EXTRACTED]
 - [[persist_approved_collaborator()]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[revoke_approved_collaborator()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Rbac_Config_security

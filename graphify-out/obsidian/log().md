@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "Container Net Diag (scripts)"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Container_Net_Diag_scripts
 ---
 
 # log()
@@ -16,4 +16,4 @@ tags:
 - [[colima-health-check.sh script]] - `calls` [EXTRACTED]
 - [[notify()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/Container_Net_Diag_scripts

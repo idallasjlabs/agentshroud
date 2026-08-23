@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Wakeword (main)"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Wakeword_main
 ---
 
 # lv_obj_t
@@ -15,4 +15,4 @@ tags:
 - [[_find_canvas()]] - `references` [EXTRACTED]
 - [[_report_and_place_canvas()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Wakeword_main

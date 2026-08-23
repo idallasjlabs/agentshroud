@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/agents/openclaw-identity.md"
 type: "document"
-community: "Gateway Proxy Layer"
+community: "Developer (workspace)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Developer_workspace
 ---
 
 # openclaw-identity.md (OpenClaw bot identity)
@@ -14,6 +14,5 @@ tags:
 - [[agentshroud-ssh-exec.sh]] - `references` [EXTRACTED]
 - [[competitive-analysis.md (bot workspace competitive-intel source of truth)]] - `references` [EXTRACTED]
 - [[hermes-soul.md (Hermes system identity)]] - `conceptually_related_to` [EXTRACTED]
-- [[openclaw cronjobs.json (scheduled agent turns)]] - `shares_data_with` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Developer_workspace

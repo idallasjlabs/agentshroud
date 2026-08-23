@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "branding/guidelines"
+community: "Mcp Proxy Wrapper.js (JavaScript)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/guidelines
+  - community/Mcp_Proxy_Wrapperjs_JavaScript
 ---
 
 # mcp-proxy-wrapper.js
@@ -18,9 +18,9 @@ tags:
 - [[How It Works_1]] - `contains` [EXTRACTED]
 - [[Key Behavior]] - `contains` [EXTRACTED]
 - [[Process Architecture]] - `contains` [EXTRACTED]
-- [[Purpose_85]] - `contains` [EXTRACTED]
+- [[Purpose_122]] - `contains` [EXTRACTED]
 - [[Related Notes_8]] - `contains` [EXTRACTED]
-- [[Usage_83]] - `contains` [EXTRACTED]
+- [[Usage_123]] - `contains` [EXTRACTED]
 - [[mcp-proxy-wrapper.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/guidelines
+#graphify/document #graphify/EXTRACTED #community/Mcp_Proxy_Wrapperjs_JavaScript

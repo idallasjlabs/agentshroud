@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/security-report.sh"
 type: "code"
-community: "Bot Skill Config"
+community: "Security Scheduler (scripts)"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Security_Scheduler_scripts
 ---
 
 # log()
@@ -15,4 +15,4 @@ tags:
 - [[security-report.sh]] - `defines` [EXTRACTED]
 - [[security-report.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Security_Scheduler_scripts

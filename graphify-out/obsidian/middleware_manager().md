@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Privilege Separation & File Sandbox"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Privilege_Separation__File_Sandbox
 ---
 
 # middleware_manager()
@@ -16,4 +16,4 @@ tags:
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox

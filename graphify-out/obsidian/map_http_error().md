@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "CLI Command Client (Rust)"
+community: "Main (src)"
 location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI_Command_Client_Rust
+  - community/Main_src
 ---
 
 # map_http_error()
@@ -24,4 +24,4 @@ tags:
 - [[map_http_error_generic_status()]] - `calls` [EXTRACTED]
 - [[map_http_error_includes_detail()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI_Command_Client_Rust
+#graphify/code #graphify/EXTRACTED #community/Main_src

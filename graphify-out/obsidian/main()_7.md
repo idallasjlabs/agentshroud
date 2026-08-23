@@ -1,23 +1,25 @@
 ---
-source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L187"
+community: "Browse (scripts)"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Browse_scripts
 ---
 
 # main()
 
 ## Connections
-- [[test_clear_allows_fresh_tap()]] - `calls` [EXTRACTED]
-- [[test_ptt_finish_ends_listening()]] - `calls` [EXTRACTED]
-- [[test_ptt_finish_noop_when_idle()]] - `calls` [EXTRACTED]
-- [[test_ptt_state.c]] - `contains` [EXTRACTED]
-- [[test_push_frame_suppressed_while_triggered()]] - `calls` [EXTRACTED]
-- [[test_tap_in_idle_starts_listen()]] - `calls` [EXTRACTED]
-- [[test_vad_timeout_fires_without_audio()]] - `calls` [EXTRACTED]
+- [[._take_screenshot()_2]] - `calls` [EXTRACTED]
+- [[.click()_2]] - `calls` [EXTRACTED]
+- [[.close()_2]] - `calls` [EXTRACTED]
+- [[.extract()_2]] - `calls` [EXTRACTED]
+- [[.fill_field()_2]] - `calls` [EXTRACTED]
+- [[.navigate()_2]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser_1]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_2]] - `calls` [EXTRACTED]
+- [[browse.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Browse_scripts

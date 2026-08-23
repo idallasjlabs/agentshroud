@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Output Schema"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Output_Schema
 ---
 
 # output_schema.py
@@ -16,4 +16,4 @@ tags:
 - [[SchemaRule]] - `contains` [EXTRACTED]
 - [[SchemaValidationResult]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Output_Schema

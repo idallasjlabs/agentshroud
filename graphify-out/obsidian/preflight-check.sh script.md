@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/preflight-check.sh"
 type: "code"
-community: "Bot Skill Config"
+community: "Proxy Dashboard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Proxy_Dashboard
 ---
 
 # preflight-check.sh script
@@ -15,4 +15,4 @@ tags:
 - [[check()_1]] - `calls` [EXTRACTED]
 - [[preflight-check.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Proxy_Dashboard

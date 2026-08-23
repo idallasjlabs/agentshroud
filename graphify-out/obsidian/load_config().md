@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Config"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Config
 ---
 
 # load_config()
@@ -32,12 +32,12 @@ tags:
 - [[Load and validate configuration from agentshroud.yaml      Search order     1.]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig]] - `calls` [EXTRACTED]
 - [[Path_1]] - `references` [EXTRACTED]
+- [[Path_50]] - `references` [EXTRACTED]
 - [[RouterConfig]] - `calls` [EXTRACTED]
 - [[SSHConfig]] - `calls` [EXTRACTED]
-- [[SecurityConfig_2]] - `calls` [EXTRACTED]
+- [[SecurityConfig_3]] - `calls` [EXTRACTED]
 - [[TeamsConfig]] - `calls` [EXTRACTED]
 - [[ToolRiskConfig_1]] - `calls` [EXTRACTED]
-- [[ValueError]] - `calls` [INFERRED]
 - [[_bot_service_names()]] - `calls` [EXTRACTED]
 - [[_build_image_targets()]] - `calls` [EXTRACTED]
 - [[_entity_type_mapping()]] - `calls` [EXTRACTED]
@@ -50,11 +50,8 @@ tags:
 - [[api.py]] - `imports` [EXTRACTED]
 - [[config.py]] - `contains` [EXTRACTED]
 - [[daily_cve_report.py]] - `imports` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
 - [[rebuild()]] - `calls` [EXTRACTED]
-- [[reload_config()]] - `calls` [EXTRACTED]
 - [[require_auth()_1]] - `calls` [EXTRACTED]
 - [[resolve_config_path()]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
@@ -66,4 +63,4 @@ tags:
 - [[upgrade_agentshroud()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Config

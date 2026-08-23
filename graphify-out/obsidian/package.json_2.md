@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/package.json"
+source_file: "docker/config/hermes/skills/i-browser/package.json"
 type: "code"
-community: "Bot Skill Config"
+community: "Package (i-browser)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Package_i-browser
 ---
 
 # package.json
@@ -19,6 +19,6 @@ tags:
 - [[main_1]] - `contains` [EXTRACTED]
 - [[name_3]] - `contains` [EXTRACTED]
 - [[scripts_2]] - `contains` [EXTRACTED]
-- [[version_5]] - `contains` [EXTRACTED]
+- [[version_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Package_i-browser

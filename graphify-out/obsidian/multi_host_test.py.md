@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "skills/openclaw"
+community: "Multi Host (tools)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Multi_Host_tools
 ---
 
 # multi_host_test.py
@@ -21,11 +21,11 @@ tags:
 - [[build_parser()]] - `contains` [EXTRACTED]
 - [[build_ssh_argv()]] - `contains` [EXTRACTED]
 - [[classify()]] - `contains` [EXTRACTED]
-- [[main()_11]] - `contains` [EXTRACTED]
+- [[main()_13]] - `contains` [EXTRACTED]
 - [[parse_hosts()]] - `contains` [EXTRACTED]
 - [[run_multi_host()]] - `contains` [EXTRACTED]
 - [[ssh_runner()]] - `contains` [EXTRACTED]
 - [[tail()_1]] - `contains` [EXTRACTED]
 - [[test_multi_host_test.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skills/openclaw
+#graphify/code #graphify/EXTRACTED #community/Multi_Host_tools

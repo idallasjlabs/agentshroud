@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/playback_logic.h"
 type: "code"
-community: "Gateway Test Suite"
+community: "Playback State (test_playback_state)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Playback_State_test_playback_state
 ---
 
 # playback_logic.h
@@ -17,4 +17,4 @@ tags:
 - [[delivery_track_sent_ok()]] - `contains` [EXTRACTED]
 - [[playback_gate_should_open()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Playback_State_test_playback_state

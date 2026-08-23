@@ -1,16 +1,16 @@
 ---
-source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
+source_file: ".agents/skills/i-odev/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Skill (coding-agent)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_coding-agent
 ---
 
 # omlx DeepSeek-R1-Qwen3-8B (local model)
 
 ## Connections
-- [[i-odev SKILL (OpenClaw Dev Workflow)]] - `references` [EXTRACTED]
+- [[OpenClaw Dev Workflow (ODEV)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Skill_coding-agent

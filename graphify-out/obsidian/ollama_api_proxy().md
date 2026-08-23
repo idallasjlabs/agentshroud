@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "Ingest API Main & Models"
 location: "L4480"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/Ingest_API_Main__Models
 ---
 
 # ollama_api_proxy()
@@ -17,4 +17,4 @@ tags:
 - [[Request_1]] - `references` [EXTRACTED]
 - [[main.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/Ingest_API_Main__Models

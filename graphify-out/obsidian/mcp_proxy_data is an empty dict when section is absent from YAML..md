@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "scripts/sync-cve-registry.py"
+community: "Config"
 location: "L303"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Config
 ---
 
 # mcp_proxy_data is an empty dict when section is absent from YAML.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_mcp_proxy_data_defaults_to_empty_when_absent()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/Config

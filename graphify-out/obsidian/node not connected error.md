@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (canvas)"
 location: "L169"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_canvas
 ---
 
 # "node not connected" error
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Debugging]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_canvas

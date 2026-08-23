@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/multi-host-test.sh"
 type: "code"
-community: "Gateway Test Suite"
+community: "Multi Host"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Multi_Host
 ---
 
 # multi-host-test.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[multi-host-test.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Multi_Host

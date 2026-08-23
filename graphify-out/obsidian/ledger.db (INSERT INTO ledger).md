@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-15-sequence-telegram.svg"
 type: "concept"
-community: "Bot Skill Config"
+community: "Diagram 15 Sequence Telegram (images)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Diagram_15_Sequence_Telegram_images
 ---
 
 # ledger.db (INSERT INTO ledger)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Bot Container (agent decides reply + tool call)]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Diagram_15_Sequence_Telegram_images

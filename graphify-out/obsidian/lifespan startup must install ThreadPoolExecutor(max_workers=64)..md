@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_executor.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Telegram Executor"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Telegram_Executor
 ---
 
 # lifespan startup must install ThreadPoolExecutor(max_workers=64).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_lifespan_installs_64_worker_executor()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Executor

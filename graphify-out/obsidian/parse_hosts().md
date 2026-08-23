@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "docs/reference"
+community: "Multi Host"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/reference
+  - community/Multi_Host
 ---
 
 # parse_hosts()
@@ -21,8 +21,8 @@ tags:
 - [[.test_only_separators_falls_back_to_default()]] - `calls` [EXTRACTED]
 - [[.test_whitespace_separated()]] - `calls` [EXTRACTED]
 - [[Parse a commawhitespace-separated host list into a de-duplicated list.      Emp]] - `rationale_for` [EXTRACTED]
-- [[main()_11]] - `calls` [EXTRACTED]
+- [[main()_13]] - `calls` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/reference
+#graphify/code #graphify/EXTRACTED #community/Multi_Host

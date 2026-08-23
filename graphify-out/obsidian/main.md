@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/package.json"
+source_file: ".agents/skills/i-browser/package.json"
 type: "code"
-community: "Gateway Test Suite"
+community: "Package (i-browser)"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Package_i-browser
 ---
 
 # main
 
 ## Connections
-- [[package.json_1]] - `contains` [EXTRACTED]
+- [[package.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Package_i-browser

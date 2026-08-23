@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/scripts/calendar.js"
+source_file: "docker/config/hermes/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "Architecture Docs"
+community: "Calendar (scripts)"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Calendar_scripts
 ---
 
 # listEvents()
@@ -16,4 +16,4 @@ tags:
 - [[makeRequest()_1]] - `calls` [EXTRACTED]
 - [[parseCalendarData()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Calendar_scripts

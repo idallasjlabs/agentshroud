@@ -1,25 +1,23 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "Gateway Security Module"
-location: "L431"
+community: "Migrate Cve Registry Ghsa (scripts)"
+location: "L524"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Migrate_Cve_Registry_Ghsa_scripts
 ---
 
 # main()
 
 ## Connections
-- [[._take_screenshot()_2]] - `calls` [EXTRACTED]
-- [[.click()_2]] - `calls` [EXTRACTED]
-- [[.close()_19]] - `calls` [EXTRACTED]
-- [[.extract()_2]] - `calls` [EXTRACTED]
-- [[.fill_field()_2]] - `calls` [EXTRACTED]
-- [[.navigate()_2]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser_2]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_2]] - `calls` [EXTRACTED]
-- [[browse.py_2]] - `contains` [EXTRACTED]
+- [[build_id_plan()]] - `calls` [EXTRACTED]
+- [[compute_stats()]] - `calls` [EXTRACTED]
+- [[gather_advisories()]] - `calls` [EXTRACTED]
+- [[load_registry()]] - `calls` [EXTRACTED]
+- [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
+- [[render_manual_review()]] - `calls` [EXTRACTED]
+- [[rewrite_registry_text()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Migrate_Cve_Registry_Ghsa_scripts

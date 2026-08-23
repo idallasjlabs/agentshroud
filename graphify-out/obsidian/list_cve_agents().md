@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_cve_registry.py"
 type: "code"
-community: "Planning Docs"
+community: "Generate Cve Page (scripts)"
 location: "L15480"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Generate_Cve_Page_scripts
 ---
 
 # list_cve_agents()
@@ -26,4 +26,4 @@ tags:
 - [[test_list_cve_agents_is_list_of_str()]] - `calls` [EXTRACTED]
 - [[test_list_cve_agents_returns_both()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Generate_Cve_Page_scripts

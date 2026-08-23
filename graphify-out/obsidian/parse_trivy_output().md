@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "docs/vault"
+community: "Security Toolchain"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Toolchain
 ---
 
 # parse_trivy_output()
@@ -30,10 +30,10 @@ tags:
 - [[.test_summary_critical()]] - `calls` [EXTRACTED]
 - [[.test_summary_top_cves_ids()]] - `calls` [EXTRACTED]
 - [[.test_summary_warning_high_only()]] - `calls` [EXTRACTED]
-- [[Any_63]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[Parse raw Trivy JSON output into a structured summary.      Args         raw R]] - `rationale_for` [EXTRACTED]
 - [[run_trivy_scan()_1]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 - [[trivy_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Security_Toolchain

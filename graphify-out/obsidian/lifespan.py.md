@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "Planning Docs"
+community: "Security Audit & Watchtower Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # lifespan.py
@@ -42,6 +42,7 @@ tags:
 - [[EnvelopeSigner]] - `imports` [EXTRACTED]
 - [[EventBus]] - `imports` [EXTRACTED]
 - [[FalcoAlertWatcher]] - `imports` [EXTRACTED]
+- [[FastAPI_5]] - `imports_from` [EXTRACTED]
 - [[FastAPI_1]] - `imports_from` [EXTRACTED]
 - [[GroupRegistry]] - `imports` [EXTRACTED]
 - [[HTTPConnectProxy]] - `imports` [EXTRACTED]
@@ -75,6 +76,7 @@ tags:
 - [[RateLimitConfig]] - `imports` [EXTRACTED]
 - [[RateLimitGuard]] - `imports` [EXTRACTED]
 - [[ReportStore]] - `imports` [EXTRACTED]
+- [[SECRETS_USAGE_AND_COLLABORATOR_CHECKLIST]] - `references` [EXTRACTED]
 - [[SSHProxy]] - `imports` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[ToolACLEnforcer]] - `imports` [EXTRACTED]
@@ -86,9 +88,11 @@ tags:
 - [[WebProxyConfig]] - `imports` [EXTRACTED]
 - [[XMLLeakFilter]] - `imports` [EXTRACTED]
 - [[_DropInvalidHTTPRequestFilter]] - `contains` [EXTRACTED]
+- [[_build_bridge() — test-local reimplementation of the ResourceGuard→AlertDispatcher bridge closure]] - `references` [EXTRACTED]
 - [[_build_per_bot_telegram_tokens()]] - `contains` [EXTRACTED]
 - [[_install_uvicorn_warning_filter()]] - `contains` [EXTRACTED]
 - [[_is_fixture_uid()]] - `imports` [EXTRACTED]
+- [[_prune_fixture_markdown()]] - `references` [EXTRACTED]
 - [[agent_isolation.py]] - `imports_from` [EXTRACTED]
 - [[build_correlation_summary()]] - `imports` [EXTRACTED]
 - [[canvas_proxy_app()]] - `imports` [EXTRACTED]
@@ -133,6 +137,8 @@ tags:
 - [[setup_resource_guard()]] - `imports` [EXTRACTED]
 - [[start_dns_forwarder()]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
+- [[test_lifespan_prune.py]] - `references` [EXTRACTED]
+- [[test_resource_guard_wiring.py]] - `references` [EXTRACTED]
 - [[test_telegram_executor.py]] - `imports_from` [EXTRACTED]
 - [[trivy_report.py]] - `imports_from` [EXTRACTED]
 - [[trust_manager.py]] - `imports_from` [EXTRACTED]
@@ -142,4 +148,4 @@ tags:
 - [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

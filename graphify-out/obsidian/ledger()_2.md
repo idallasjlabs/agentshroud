@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "docs/vault"
+community: "Security Fixes & SSH Write Endpoint"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Fixes__SSH_Write_Endpoint
 ---
 
 # ledger()
@@ -16,4 +16,4 @@ tags:
 - [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_translator.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Anthropic Openai Translator"
 location: "L344"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Anthropic_Openai_Translator
 ---
 
 # openai_to_anthropic_response()
@@ -27,4 +27,4 @@ tags:
 - [[test_translator_preserves_original_model()]] - `calls` [EXTRACTED]
 - [[test_translator_tool_calls_to_tool_use()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Anthropic_Openai_Translator

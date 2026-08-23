@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gemini Openai Translator"
 location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gemini_Openai_Translator
 ---
 
 # openai_to_gemini_response()
 
 ## Connections
 - [[._failover_request()]] - `calls` [EXTRACTED]
-- [[Flatten an OpenAI message's content (string or content-block list) to     Gemini]] - `rationale_for` [EXTRACTED]
 - [[Translate an Ollama OpenAI-compat response to Gemini candidates format.      The]] - `rationale_for` [EXTRACTED]
 - [[gemini_openai_translator.py]] - `contains` [EXTRACTED]
 - [[llm_proxy.py]] - `imports` [EXTRACTED]
@@ -24,4 +23,4 @@ tags:
 - [[test_openai_response_length_maps_to_max_tokens()]] - `calls` [EXTRACTED]
 - [[test_openai_response_to_gemini_candidates()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gemini_Openai_Translator

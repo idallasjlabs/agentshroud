@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "Cross-Bot Trust Ledger"
+community: "Telegram Proxy Core"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Cross-Bot_Trust_Ledger
+  - community/Telegram_Proxy_Core
 ---
 
 # normalize_input()
@@ -83,6 +83,7 @@ tags:
 - [[.test_url_encoded_payload_normalized()]] - `calls` [EXTRACTED]
 - [[.test_zero_width_space_stripped()]] - `calls` [EXTRACTED]
 - [[Normalize input text to defeat encoding-based evasion.      Applied before all s]] - `rationale_for` [EXTRACTED]
+- [[TestEncodingBypass]] - `references` [EXTRACTED]
 - [[_normalizer_transforms()]] - `calls` [EXTRACTED]
 - [[context_guard.py]] - `imports` [EXTRACTED]
 - [[input_normalizer.py]] - `contains` [EXTRACTED]
@@ -92,4 +93,4 @@ tags:
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Cross-Bot_Trust_Ledger
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Core

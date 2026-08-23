@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Group RBAC Roles"
-location: "L8319"
+community: "Telegram Proxy Inbound"
+location: "L8420"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/Telegram_Proxy_Inbound
 ---
 
 # /locked must list users with non-normal lockdown state.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_locked_shows_suspended_users()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

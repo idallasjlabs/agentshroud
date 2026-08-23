@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/op-wrapper.sh"
 type: "code"
-community: "Community 1487"
+community: "Killswitch (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1487
+  - community/Killswitch_scripts
 ---
 
 # op-wrapper.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[op-wrapper.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1487
+#graphify/code #graphify/EXTRACTED #community/Killswitch_scripts

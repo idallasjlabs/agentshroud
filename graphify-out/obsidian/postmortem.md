@@ -1,17 +1,18 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/postmortem.md"
 type: "document"
-community: "docs/vault"
+community: "Postmortem (ISSUE_TEMPLATE)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Postmortem_ISSUE_TEMPLATE
 ---
 
 # postmortem.md
 
 ## Connections
+- [[CLAUDE]] - `conceptually_related_to` [INFERRED]
 - [[Contributing Factors]] - `contains` [EXTRACTED]
 - [[Follow-Up Actions]] - `contains` [EXTRACTED]
 - [[Incident Summary]] - `contains` [EXTRACTED]
@@ -20,4 +21,4 @@ tags:
 - [[Test Added to Prevent Recurrence (MANDATORY)]] - `contains` [EXTRACTED]
 - [[Timeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Postmortem_ISSUE_TEMPLATE

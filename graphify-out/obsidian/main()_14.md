@@ -1,20 +1,17 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "scripts/check_benchmark_regression.py"
 type: "code"
-community: "Bot Skill Config"
-location: "L136"
+community: "Check Benchmark Regression (scripts)"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Check_Benchmark_Regression_scripts
 ---
 
 # main()
 
 ## Connections
-- [[Path_43]] - `calls` [EXTRACTED]
-- [[_parse_since()_1]] - `calls` [EXTRACTED]
-- [[export-email-reports.py]] - `contains` [EXTRACTED]
-- [[export_bot()]] - `calls` [EXTRACTED]
+- [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Check_Benchmark_Regression_scripts

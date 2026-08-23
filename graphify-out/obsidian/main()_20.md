@@ -1,25 +1,25 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L886"
+community: "Generate Branding Assets (scripts)"
+location: "L550"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Generate_Branding_Assets_scripts
 ---
 
 # main()
 
 ## Connections
-- [[Path_47]] - `calls` [EXTRACTED]
-- [[_print_summary()]] - `calls` [EXTRACTED]
-- [[_process_nvd_results()]] - `calls` [EXTRACTED]
-- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
-- [[append_to_hermes_registry()]] - `calls` [EXTRACTED]
-- [[append_to_registry()]] - `calls` [EXTRACTED]
-- [[fetch_nvd_cves()]] - `calls` [EXTRACTED]
-- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
-- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
+- [[generate_branding_assets.py]] - `contains` [EXTRACTED]
+- [[generate_email()]] - `calls` [EXTRACTED]
+- [[generate_favicons()]] - `calls` [EXTRACTED]
+- [[generate_feature_icons()]] - `calls` [EXTRACTED]
+- [[generate_icon_sizes()]] - `calls` [EXTRACTED]
+- [[generate_presentation()]] - `calls` [EXTRACTED]
+- [[generate_social()]] - `calls` [EXTRACTED]
+- [[generate_svg_logos()]] - `calls` [EXTRACTED]
+- [[generate_variants()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Generate_Branding_Assets_scripts

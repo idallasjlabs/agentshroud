@@ -1,17 +1,22 @@
 ---
-source_file: "scripts/check_benchmark_regression.py"
+source_file: "gateway/skills/scan.py"
 type: "code"
-community: "Bot Skill Config"
-location: "L24"
+community: "Skill Guard (security)"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_Guard_security
 ---
 
 # main()
 
 ## Connections
-- [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
+- [[Path_22]] - `calls` [EXTRACTED]
+- [[SkillGuard]] - `calls` [EXTRACTED]
+- [[SkillGuard.scan_skill_tree()]] - `calls` [EXTRACTED]
+- [[_build_tree()]] - `calls` [EXTRACTED]
+- [[_print_findings()]] - `calls` [EXTRACTED]
+- [[scan.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Skill_Guard_security

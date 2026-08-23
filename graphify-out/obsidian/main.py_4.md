@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "docs/vault"
+community: "Main.py (Gateway Core)"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Mainpy_Gateway_Core
 ---
 
 # main.py
@@ -18,7 +18,7 @@ tags:
 - [[Known Issues  Notes_3]] - `contains` [EXTRACTED]
 - [[Lifespan  Startup]] - `contains` [EXTRACTED]
 - [[Middleware (applied to all requests, outermost first)]] - `contains` [EXTRACTED]
-- [[Overview_20]] - `contains` [EXTRACTED]
+- [[Overview_21]] - `contains` [EXTRACTED]
 - [[POST forward — 5-Step Security Pipeline]] - `contains` [EXTRACTED]
 - [[Related_4]] - `contains` [EXTRACTED]
 - [[Security Notes_4]] - `contains` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[WebSocket Endpoints]] - `contains` [EXTRACTED]
 - [[main.py_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Mainpy_Gateway_Core

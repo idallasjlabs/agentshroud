@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Mcp Permissions"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Mcp_Permissions
 ---
 
 # mcp_proxy.py
@@ -38,5 +38,6 @@ tags:
 - [[mcp_permissions.py]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `references` [EXTRACTED]
+- [[test_mcp_result_endpoint.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Mcp_Permissions

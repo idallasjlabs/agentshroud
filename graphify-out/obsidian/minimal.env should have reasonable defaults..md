@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Planning Docs"
+community: "Config Validation & Router"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Config_Validation__Router
 ---
 
 # minimal.env should have reasonable defaults.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMinimalConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Planning_Docs
+#graphify/rationale #graphify/EXTRACTED #community/Config_Validation__Router

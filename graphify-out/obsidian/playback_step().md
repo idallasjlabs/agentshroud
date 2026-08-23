@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Playback State (test_playback_state)"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Playback_State_test_playback_state
 ---
 
 # playback_step()
@@ -23,4 +23,4 @@ tags:
 - [[wakeword_triggered()]] - `calls` [INFERRED]
 - [[wakeword_tts_stop_clear()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Playback_State_test_playback_state

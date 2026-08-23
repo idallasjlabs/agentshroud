@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/op-auth-common.sh"
 type: "code"
-community: "Bot Skill Config"
+community: "Killswitch (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Killswitch_scripts
 ---
 
 # op-auth-common.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[op-auth-common.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Killswitch_scripts

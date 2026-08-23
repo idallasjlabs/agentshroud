@@ -1,25 +1,19 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "docker/bots/hermes/resolve_model.py"
 type: "code"
-community: "gateway/cli"
-location: "L431"
+community: "Hermes Model Resolver"
+location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/cli
+  - community/Hermes_Model_Resolver
 ---
 
 # main()
 
 ## Connections
-- [[._take_screenshot()_1]] - `calls` [EXTRACTED]
-- [[.click()_1]] - `calls` [EXTRACTED]
-- [[.close()_1]] - `calls` [EXTRACTED]
-- [[.extract()_1]] - `calls` [EXTRACTED]
-- [[.fill_field()_1]] - `calls` [EXTRACTED]
-- [[.navigate()_1]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser_1]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_1]] - `calls` [EXTRACTED]
-- [[browse.py_1]] - `contains` [EXTRACTED]
+- [[CLI `resolve_model.py modelprovider`. Defaults to 'model'.]] - `rationale_for` [EXTRACTED]
+- [[_resolve_from_env()]] - `calls` [EXTRACTED]
+- [[resolve_model.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/cli
+#graphify/code #graphify/EXTRACTED #community/Hermes_Model_Resolver

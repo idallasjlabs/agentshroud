@@ -1,23 +1,17 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "scripts/generate-job-schedule.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L524"
+community: "Generate Job Schedule (scripts)"
+location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Generate_Job_Schedule_scripts
 ---
 
 # main()
 
 ## Connections
-- [[build_id_plan()]] - `calls` [EXTRACTED]
-- [[compute_stats()]] - `calls` [EXTRACTED]
-- [[gather_advisories()]] - `calls` [EXTRACTED]
-- [[load_registry()]] - `calls` [EXTRACTED]
-- [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
-- [[render_manual_review()]] - `calls` [EXTRACTED]
-- [[rewrite_registry_text()]] - `calls` [EXTRACTED]
+- [[generate-job-schedule.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Generate_Job_Schedule_scripts

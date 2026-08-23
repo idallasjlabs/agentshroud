@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "OAuth & Metadata Guard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/OAuth__Metadata_Guard
 ---
 
 # oauth_security.py
@@ -18,7 +18,10 @@ tags:
 - [[OAuthSecurityValidator]] - `contains` [EXTRACTED]
 - [[PKCEViolation]] - `contains` [EXTRACTED]
 - [[RedirectMismatch]] - `contains` [EXTRACTED]
+- [[Wang et al. 2026 (arXiv2602.08412) — Confused Deputy  Event Injection Attacks]] - `cites` [EXTRACTED]
+- [[consent_framework.py]] - `references` [EXTRACTED]
+- [[session_security.py]] - `references` [EXTRACTED]
 - [[test_oauth_security.py]] - `references` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/OAuth__Metadata_Guard

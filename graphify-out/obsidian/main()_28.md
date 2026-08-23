@@ -1,21 +1,24 @@
 ---
-source_file: "src/interfaces/chat_console.py"
+source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "Bot Container Scripts"
-location: "L120"
+community: "Gen (scripts)"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Gen_scripts
 ---
 
 # main()
 
 ## Connections
-- [[chat_console.py]] - `contains` [EXTRACTED]
-- [[check_status()]] - `calls` [EXTRACTED]
-- [[print_banner()]] - `calls` [EXTRACTED]
-- [[print_help()]] - `calls` [EXTRACTED]
-- [[send_message()]] - `calls` [EXTRACTED]
+- [[Path_49]] - `calls` [EXTRACTED]
+- [[default_out_dir()]] - `calls` [EXTRACTED]
+- [[gen.py]] - `contains` [EXTRACTED]
+- [[get_model_defaults()]] - `calls` [EXTRACTED]
+- [[pick_prompts()]] - `calls` [EXTRACTED]
+- [[request_images()]] - `calls` [EXTRACTED]
+- [[slugify()]] - `calls` [EXTRACTED]
+- [[write_gallery()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/Gen_scripts

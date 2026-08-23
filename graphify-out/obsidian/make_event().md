@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Soc Egress Endpoints"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Soc_Egress_Endpoints
 ---
 
 # make_event()
@@ -37,6 +37,7 @@ tags:
 - [[egress_remove_rule()]] - `calls` [EXTRACTED]
 - [[egress_websocket()]] - `calls` [EXTRACTED]
 - [[event_bus.py]] - `contains` [EXTRACTED]
+- [[event_bus.py_1]] - `references` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
 - [[forward_content()]] - `calls` [EXTRACTED]
 - [[main.py_2]] - `imports` [EXTRACTED]
@@ -69,4 +70,4 @@ tags:
 - [[test_ws_egress_receives_privacy_event()]] - `calls` [EXTRACTED]
 - [[test_ws_egress_receives_scanner_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Soc_Egress_Endpoints

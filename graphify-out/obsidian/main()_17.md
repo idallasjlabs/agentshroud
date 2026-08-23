@@ -1,25 +1,20 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "scripts/export-telegram-history.py"
 type: "code"
-community: "scripts/generate-cve-page.py"
-location: "L550"
+community: "Export Telegram History (scripts)"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/generate-cve-pagepy
+  - community/Export_Telegram_History_scripts
 ---
 
 # main()
 
 ## Connections
-- [[generate_branding_assets.py]] - `contains` [EXTRACTED]
-- [[generate_email()]] - `calls` [EXTRACTED]
-- [[generate_favicons()]] - `calls` [EXTRACTED]
-- [[generate_feature_icons()]] - `calls` [EXTRACTED]
-- [[generate_icon_sizes()]] - `calls` [EXTRACTED]
-- [[generate_presentation()]] - `calls` [EXTRACTED]
-- [[generate_social()]] - `calls` [EXTRACTED]
-- [[generate_svg_logos()]] - `calls` [EXTRACTED]
-- [[generate_variants()]] - `calls` [EXTRACTED]
+- [[Path_44]] - `calls` [EXTRACTED]
+- [[_parse_since()_2]] - `calls` [EXTRACTED]
+- [[export()]] - `calls` [EXTRACTED]
+- [[export-telegram-history.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/generate-cve-pagepy
+#graphify/code #graphify/EXTRACTED #community/Export_Telegram_History_scripts

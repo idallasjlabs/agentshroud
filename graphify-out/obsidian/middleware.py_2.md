@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Middleware.py (Gateway Core)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Middlewarepy_Gateway_Core
 ---
 
 # middleware.py
@@ -18,11 +18,11 @@ tags:
 - [[Imports From  Exports To_3]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_3]] - `contains` [EXTRACTED]
 - [[Known Issues  Notes_4]] - `contains` [EXTRACTED]
-- [[Purpose_77]] - `contains` [EXTRACTED]
+- [[Purpose_114]] - `contains` [EXTRACTED]
 - [[Related_5]] - `contains` [EXTRACTED]
 - [[Responsibilities_3]] - `contains` [EXTRACTED]
 - [[Security Modules Initialized]] - `contains` [EXTRACTED]
 - [[middleware.py_1]] - `contains` [EXTRACTED]
 - [[process_request Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Middlewarepy_Gateway_Core

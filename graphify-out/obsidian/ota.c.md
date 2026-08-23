@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ota.c"
 type: "code"
-community: "docs/vault"
+community: "Ota (main)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Ota_main
 ---
 
 # ota.c
@@ -19,4 +19,4 @@ tags:
 - [[_ws_to_https_base()]] - `contains` [EXTRACTED]
 - [[ota_check()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Ota_main

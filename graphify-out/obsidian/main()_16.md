@@ -1,18 +1,20 @@
 ---
-source_file: "scripts/gemini-review.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "Architecture Docs"
-location: "L83"
+community: "Export Email Reports (scripts)"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Export_Email_Reports_scripts
 ---
 
 # main()
 
 ## Connections
-- [[call_gemini()]] - `calls` [EXTRACTED]
-- [[gemini-review.py]] - `contains` [EXTRACTED]
+- [[Path_43]] - `calls` [EXTRACTED]
+- [[_parse_since()_1]] - `calls` [EXTRACTED]
+- [[export-email-reports.py]] - `contains` [EXTRACTED]
+- [[export_bot()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Export_Email_Reports_scripts

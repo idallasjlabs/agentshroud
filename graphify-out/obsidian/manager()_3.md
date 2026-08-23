@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Session Security"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Session_Security
 ---
 
 # manager()
@@ -15,4 +15,4 @@ tags:
 - [[SessionManager]] - `calls` [EXTRACTED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Session_Security

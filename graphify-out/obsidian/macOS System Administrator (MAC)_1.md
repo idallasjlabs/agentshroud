@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mac/README.md"
+source_file: "docker/config/hermes/skills/i-mac/README.md"
 type: "document"
-community: "Docker Deploy Scripts"
+community: "Readme (i-mac)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Readme_i-mac
 ---
 
 # macOS System Administrator (MAC)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_54]] - `contains` [EXTRACTED]
 - [[Usage_57]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/document #graphify/EXTRACTED #community/Readme_i-mac

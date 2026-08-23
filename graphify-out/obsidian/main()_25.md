@@ -1,24 +1,25 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "Bot Skill Config"
-location: "L164"
+community: "Browse (scripts)"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Browse_scripts
 ---
 
 # main()
 
 ## Connections
-- [[Path_49]] - `calls` [EXTRACTED]
-- [[default_out_dir()]] - `calls` [EXTRACTED]
-- [[gen.py]] - `contains` [EXTRACTED]
-- [[get_model_defaults()]] - `calls` [EXTRACTED]
-- [[pick_prompts()]] - `calls` [EXTRACTED]
-- [[request_images()]] - `calls` [EXTRACTED]
-- [[slugify()]] - `calls` [EXTRACTED]
-- [[write_gallery()]] - `calls` [EXTRACTED]
+- [[._take_screenshot()_3]] - `calls` [EXTRACTED]
+- [[.click()_3]] - `calls` [EXTRACTED]
+- [[.close()_20]] - `calls` [EXTRACTED]
+- [[.extract()_3]] - `calls` [EXTRACTED]
+- [[.fill_field()_3]] - `calls` [EXTRACTED]
+- [[.navigate()_3]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser_2]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_3]] - `calls` [EXTRACTED]
+- [[browse.py_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Browse_scripts

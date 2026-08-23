@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/agents/_README.txt"
 type: "document"
-community: "Community 1750"
+community: "Readme (agents)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1750
+  - community/Readme_agents
 ---
 
 # openclaw agents/_README.txt (50+ specialized agents)
 
-#graphify/document #graphify/EXTRACTED #community/Community_1750
+#graphify/document #graphify/EXTRACTED #community/Readme_agents

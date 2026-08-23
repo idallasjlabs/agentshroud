@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Main (cli)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Main_cli
 ---
 
 # main.py
@@ -24,7 +24,6 @@ tags:
 - [[approve()]] - `contains` [EXTRACTED]
 - [[cli()]] - `contains` [EXTRACTED]
 - [[client.py]] - `imports_from` [EXTRACTED]
-- [[client_from_env()]] - `imports` [EXTRACTED]
 - [[deny()]] - `contains` [EXTRACTED]
 - [[freeze()]] - `contains` [EXTRACTED]
 - [[get()]] - `contains` [EXTRACTED]
@@ -37,7 +36,7 @@ tags:
 - [[get_risk()]] - `contains` [EXTRACTED]
 - [[get_services()]] - `contains` [EXTRACTED]
 - [[get_users()]] - `contains` [EXTRACTED]
-- [[main()_8]] - `contains` [EXTRACTED]
+- [[main()_10]] - `contains` [EXTRACTED]
 - [[restart()]] - `contains` [EXTRACTED]
 - [[restart_service()]] - `contains` [EXTRACTED]
 - [[scan()]] - `contains` [EXTRACTED]
@@ -47,4 +46,4 @@ tags:
 - [[stop_service()]] - `contains` [EXTRACTED]
 - [[tail()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Main_cli
