@@ -710,7 +710,9 @@ class TestPerAgentUpstreamChecks:
 
         monkeypatch.setattr(_reg, "get_agent_cve_source", _raise)
         monkeypatch.setattr(
-            _mod, "check_upstream_cves", lambda github_token=None, agent_id="openclaw": []
+            _mod,
+            "check_upstream_cves",
+            lambda github_token=None, agent_id="openclaw": [],
         )
         result = await _mod.run_upstream_cve_check(
             bot_token="", owner_chat_id="", agent_id="mystery"
@@ -723,7 +725,9 @@ class TestPerAgentUpstreamChecks:
         import gateway.security.daily_cve_report as _mod
 
         monkeypatch.setattr(
-            _mod, "check_upstream_cves", lambda github_token=None, agent_id="openclaw": []
+            _mod,
+            "check_upstream_cves",
+            lambda github_token=None, agent_id="openclaw": [],
         )
 
         async def _boom_send(*a, **kw):
@@ -773,7 +777,9 @@ class TestPerAgentUpstreamChecks:
         import gateway.security.daily_cve_report as _mod
 
         monkeypatch.setattr(
-            _mod, "check_upstream_cves", lambda github_token=None, agent_id="openclaw": []
+            _mod,
+            "check_upstream_cves",
+            lambda github_token=None, agent_id="openclaw": [],
         )
         sent = []
 
@@ -843,7 +849,8 @@ class TestPerAgentUpstreamChecks:
         results = await _mod.run_upstream_cve_check_all_agents(
             bot_token="only-tok", owner_chat_id="123"
         )
-        assert len(results) == 2
+        # 2 wrapped agents + 8 security-tool sources (added 2026-08-23).
+        assert len(results) == 10
         assert set(used_tokens) == {"only-tok"}
 
     @pytest.mark.asyncio
