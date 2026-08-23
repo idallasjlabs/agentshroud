@@ -14,6 +14,8 @@ jobs:
     schedule: "0 14 * * *"
     timezone: "America/New_York"
     notify: true
+    model: gemma-4-26b-a4b-it
+    model_provider: ollama
     delivery:
       channel: telegram
     message: >
@@ -28,6 +30,8 @@ jobs:
     schedule: "0 18 * * 5"
     timezone: "America/New_York"
     notify: true
+    model: gemma-4-26b-a4b-it
+    model_provider: ollama
     delivery:
       channel: telegram
     message: >
@@ -42,6 +46,8 @@ jobs:
     schedule: "0 17 * * 5"
     timezone: "America/New_York"
     notify: true
+    model: gemma-4-26b-a4b-it
+    model_provider: ollama
     delivery:
       channel: telegram
     message: >
@@ -55,6 +61,8 @@ jobs:
     schedule: "0 9 1 * *"
     timezone: "America/New_York"
     notify: true
+    model: gemma-4-26b-a4b-it
+    model_provider: ollama
     delivery:
       channel: telegram
     message: >
@@ -69,6 +77,8 @@ jobs:
     schedule: "55 23 * * *"
     timezone: "America/New_York"
     notify: false
+    model: gemma-4-26b-a4b-it
+    model_provider: ollama
     delivery:
       channel: telegram
     message: >
@@ -115,6 +125,8 @@ jobs:
     schedule: "0 9 * * 1"
     timezone: "America/New_York"
     notify: true
+    model: gemma-4-26b-a4b-it
+    model_provider: ollama
     delivery:
       channel: telegram
     message: >
@@ -130,6 +142,8 @@ jobs:
     schedule: "0 6,15 * * *"
     timezone: "America/New_York"
     notify: false
+    model: gemma-4-26b-a4b-it
+    model_provider: ollama
     delivery:
       channel: local
     message: >
@@ -165,6 +179,8 @@ jobs:
     schedule: "0 7,16 * * *"
     timezone: "America/New_York"
     notify: false
+    model: gemma-4-26b-a4b-it
+    model_provider: ollama
     delivery:
       channel: local
     message: >

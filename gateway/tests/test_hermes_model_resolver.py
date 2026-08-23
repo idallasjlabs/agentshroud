@@ -78,6 +78,14 @@ def test_strip_provider_prefix(ref, expected):
         ("mistral-7b", "ollama"),
         ("deepseek-r1", "ollama"),
         ("phi-4", "ollama"),
+        # "nemotron" is the 2026-08 anchor/general local model (Rapid-MLX,
+        # gateway/proxy/llm_proxy.py's RAPID_MLX_MODEL_ID) — must classify as
+        # local. Before this was added to _LOCAL_KEYWORDS, a HERMES_MAIN_MODEL
+        # of "openai-local/nemotron-3.5-lightning-rapid" (its real name, not
+        # the "qwen3-14b-rapid" stale-alias workaround) would misclassify as
+        # provider="anthropic" and silently route to a cloud model in "local"
+        # mode — see test_local_mode_recognizes_nemotron_as_local below.
+        ("nemotron-3.5-lightning-rapid", "ollama"),
         ("claude-opus-4-7", "anthropic"),
         ("claude-haiku-4-5-20251001", "anthropic"),
         ("gpt-5", "openai"),
@@ -90,10 +98,30 @@ def test_provider_for_model(model, expected):
     assert provider_for_model(model) == expected
 
 
+def test_local_mode_recognizes_nemotron_as_local():
+    """A HERMES_MAIN_MODEL naming the anchor model directly (not via the
+    'qwen3-14b-rapid' stale-alias workaround) must resolve locally, not fall
+    through to a cloud provider."""
+    model, provider = resolve_model(
+        mode="local",
+        hermes_main_model="openai-local/nemotron-3.5-lightning-rapid",
+        local_model_ref="",
+        cloud_model_ref="anthropic/claude-opus-4-7",
+    )
+    assert model == "nemotron-3.5-lightning-rapid"
+    assert provider == "ollama"
+
+
 def test_local_mode_empty_local_ref_falls_back_to_default_local_model():
     """local mode requested but neither HERMES_MAIN_MODEL nor local ref is local.
 
-    Must still start locally on the documented default (qwen3:14b), never cloud.
+    Must still start locally on the documented anchor default
+    (nemotron-3.5-lightning-rapid, the 2026-08 PR #390 default set's
+    anchor/general model — see gateway/proxy/llm_proxy.py's
+    RAPID_MLX_MODEL_ID), never cloud. Previously fell back to the stale
+    pre-PR#390 "qwen3:14b" default, which is why the dev host (whose
+    AGENTSHROUD_LOCAL_MODEL_REF was left unset) stayed stuck on qwen3:14b
+    well after prod had moved to the new anchor model.
     """
     model, provider = resolve_model(
         mode="local",
@@ -101,7 +129,7 @@ def test_local_mode_empty_local_ref_falls_back_to_default_local_model():
         local_model_ref="",
         cloud_model_ref="anthropic/claude-opus-4-7",
     )
-    assert model == "qwen3:14b"
+    assert model == "nemotron-3.5-lightning-rapid"
     assert provider == "ollama"
 
 

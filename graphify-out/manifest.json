@@ -45,9 +45,9 @@
     "semantic_hash": "6c8414270b956cb8e017a338accbfe90"
   },
   "docker/bots/hermes/init-config.sh": {
-    "mtime": 1785975805.0312743,
-    "ast_hash": "1dbe3637994abf6bdcedcc7b738cc79f",
-    "semantic_hash": "1dbe3637994abf6bdcedcc7b738cc79f"
+    "mtime": 1787492160.916846,
+    "ast_hash": "436e3cc7ae0ae524e3bfb8040cd77bb2",
+    "semantic_hash": ""
   },
   "docker/bots/hermes/start.sh": {
     "mtime": 1787314726.4484608,
@@ -490,9 +490,9 @@
     "semantic_hash": "b23118b76107331e4e058135ff37adff"
   },
   "gateway/proxy/llm_proxy.py": {
-    "mtime": 1787390101.5091848,
-    "ast_hash": "d653d520a1560c38c7b3503bf2c4ebff",
-    "semantic_hash": "d653d520a1560c38c7b3503bf2c4ebff"
+    "mtime": 1787492160.9182198,
+    "ast_hash": "8fcc67776c9fb68913cf10a826383d38",
+    "semantic_hash": ""
   },
   "gateway/proxy/llm_quota_detector.py": {
     "mtime": 1783649228.3342047,
@@ -630,9 +630,9 @@
     "semantic_hash": "5d5e2c9e80fb6eb52ee3bebbaf0fc169"
   },
   "gateway/security/agent_cve_registry.py": {
-    "mtime": 1785582814.4189517,
-    "ast_hash": "5c74524f1e1176fdb513edd341f930f9",
-    "semantic_hash": "5c74524f1e1176fdb513edd341f930f9"
+    "mtime": 1787492276.6456845,
+    "ast_hash": "40a1f286a03b81f2b97863ab74044072",
+    "semantic_hash": ""
   },
   "gateway/security/agent_isolation.py": {
     "mtime": 1775100069.3328695,
@@ -1075,9 +1075,9 @@
     "semantic_hash": "e8fc8e35b4c13d92b45ce26944184bdc"
   },
   "gateway/tests/test_agent_cve_registry.py": {
-    "mtime": 1785582814.4195457,
-    "ast_hash": "5fe952152f14ef5424e2ac8143675f19",
-    "semantic_hash": "5fe952152f14ef5424e2ac8143675f19"
+    "mtime": 1787484106.0500495,
+    "ast_hash": "e8175fade66ded2a8e6dc2b3479d7484",
+    "semantic_hash": ""
   },
   "gateway/tests/test_agent_isolation.py": {
     "mtime": 1782602471.7087605,
@@ -1225,9 +1225,9 @@
     "semantic_hash": "e4dbfdfbb1fec8a53f8922d252e9274c"
   },
   "gateway/tests/test_daily_cve_report.py": {
-    "mtime": 1787432220.4930906,
-    "ast_hash": "f26d3f1850ec4c21d37fffddf0ca7c7d",
-    "semantic_hash": "f26d3f1850ec4c21d37fffddf0ca7c7d"
+    "mtime": 1787484106.05217,
+    "ast_hash": "ef79435952abb75a6671e9630c9deaf6",
+    "semantic_hash": ""
   },
   "gateway/tests/test_dashboard.py": {
     "mtime": 1775203929.746497,
@@ -1390,9 +1390,9 @@
     "semantic_hash": "2e91ffe0949bf92482bd4cc7516f0503"
   },
   "gateway/tests/test_hermes_cron_seed.py": {
-    "mtime": 1784127166.6281369,
-    "ast_hash": "db0c3260c5ef29ee01d8daec55e1ad40",
-    "semantic_hash": "db0c3260c5ef29ee01d8daec55e1ad40"
+    "mtime": 1787492160.9211764,
+    "ast_hash": "7b9b80da5c5daa4f7d3fa0904dc4e1cb",
+    "semantic_hash": ""
   },
   "gateway/tests/test_heuristic_classifier.py": {
     "mtime": 1784031420.156807,
@@ -2070,9 +2070,9 @@
     "semantic_hash": "57b1ec943ec47fbb8e948839f2f558ee"
   },
   "scripts/sync-cve-registry.py": {
-    "mtime": 1785351807.2957585,
-    "ast_hash": "543091fbb4c1d39b7c8d26c95729248a",
-    "semantic_hash": "543091fbb4c1d39b7c8d26c95729248a"
+    "mtime": 1787484106.0549095,
+    "ast_hash": "3dbe970703e95c81ba4c8ed37aaef88b",
+    "semantic_hash": ""
   },
   "scripts/tailscale-check.sh": {
     "mtime": 1772932869.6901383,
@@ -2080,9 +2080,9 @@
     "semantic_hash": "d09146c250423466b8d8d7ab4e51db31"
   },
   "scripts/tailscale-serve.sh": {
-    "mtime": 1785351807.2963655,
+    "mtime": 1787487408.1358428,
     "ast_hash": "da6fbdbaee2c79545628b9f3ca2f3c58",
-    "semantic_hash": "da6fbdbaee2c79545628b9f3ca2f3c58"
+    "semantic_hash": ""
   },
   "scripts/update-agentshroud.sh": {
     "mtime": 1786737996.4286866,
@@ -2460,9 +2460,9 @@
     "semantic_hash": "5a8b423805ebe88f6ea22f385bf14445"
   },
   "docker/config/hermes/cron/jobs.yaml": {
-    "mtime": 1784127166.598236,
-    "ast_hash": "dd69505741c64d45e68d6c69e7c38753",
-    "semantic_hash": "dd69505741c64d45e68d6c69e7c38753"
+    "mtime": 1787492160.9175744,
+    "ast_hash": "eb2f6b9b3ea685f711bf511dadd3342c",
+    "semantic_hash": ""
   },
   "docker/config/hermes/workspace/competitive-analysis.md": {
     "mtime": 1783977866.021555,
@@ -2785,7 +2785,7 @@
     "semantic_hash": "4266ca2b40a43eb28f52052e1e10b19b"
   },
   "docs/index.html": {
-    "mtime": 1787434572.5477166,
+    "mtime": 1787482318.6572049,
     "ast_hash": "f22c4b2973ef640f68b5e28d3055b834",
     "semantic_hash": "f22c4b2973ef640f68b5e28d3055b834"
   },
@@ -5025,9 +5025,9 @@
     "semantic_hash": "db7373aebc5128a1784b5cc57cf53779"
   },
   "docker/bots/hermes/resolve_model.py": {
-    "mtime": 1787390101.5067933,
-    "ast_hash": "f754862902ca86827a11f7f26d52fb66",
-    "semantic_hash": "f754862902ca86827a11f7f26d52fb66"
+    "mtime": 1787492160.917228,
+    "ast_hash": "e6ea8fe1bde88213743b1c99ecea982b",
+    "semantic_hash": ""
   },
   "docker/bots/hermes/run-standalone.sh": {
     "mtime": 1787432220.4921143,
@@ -5420,9 +5420,9 @@
     "semantic_hash": "46220461d4d485da8de4d73bfbc5c3e1"
   },
   "gateway/tests/test_hermes_model_resolver.py": {
-    "mtime": 1787390101.5099828,
-    "ast_hash": "9ee9e21f09f731dfc33245a55b8c6852",
-    "semantic_hash": "9ee9e21f09f731dfc33245a55b8c6852"
+    "mtime": 1787492160.9215605,
+    "ast_hash": "bc5429714c00cb201fa833cf389d612d",
+    "semantic_hash": ""
   },
   "gateway/tests/test_intel_endpoint.py": {
     "mtime": 1783977866.0241413,
@@ -5450,9 +5450,9 @@
     "semantic_hash": "0c0878c360d44028e22fb945236b9c02"
   },
   "gateway/tests/test_llm_proxy_local_parity.py": {
-    "mtime": 1787314726.4576187,
-    "ast_hash": "224d63e0be061b496eec963200bc1651",
-    "semantic_hash": "224d63e0be061b496eec963200bc1651"
+    "mtime": 1787492160.9219248,
+    "ast_hash": "32d8240210c2471b88198388b7977045",
+    "semantic_hash": ""
   },
   "gateway/tests/test_mcp_policy.py": {
     "mtime": 1784055387.2758756,
@@ -6140,9 +6140,9 @@
     "semantic_hash": "bf05982a6433bc1f470580493defee6d"
   },
   "scripts/check-vendor-compat.sh": {
-    "mtime": 1785351807.294268,
+    "mtime": 1787492276.6474247,
     "ast_hash": "c8e058fbfe0f30c42e9634d16908cbb8",
-    "semantic_hash": "c8e058fbfe0f30c42e9634d16908cbb8"
+    "semantic_hash": ""
   },
   "scripts/promote-firmware.sh": {
     "mtime": 1785351807.2949781,

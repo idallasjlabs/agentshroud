@@ -354,6 +354,22 @@ class LLMProxy:
         # not exist. Available: /Users/.../Qwen3-14B-MLX-4bit".
         if base_url == RAPID_MLX_API_BASE:
             return RAPID_MLX_MODEL_ID
+        # oMLX's own /v1/models catalog only recognizes exact, case-sensitive
+        # IDs — confirmed live 2026-08-23: "gemma-4-12b-it-4bit" (lowercase b)
+        # happens to still match "gemma-4-12B-it-4bit" (oMLX does a case-
+        # insensitive compare), but "deepseek-r1-0528-qwen3-8b" — the
+        # documented LOCAL_MODEL_ROUTES alias, matching the AgentShroud
+        # default-model-set naming convention — has a genuinely different
+        # final segment from the real catalog ID "DeepSeek-R1-0528-Qwen3-8B-
+        # 6bit" ("-qwen3-8b" vs "-6bit"), so it 404s: "Model
+        # 'deepseek-r1-0528-qwen3-8b' not found. Available models:
+        # DeepSeek-R1-0528-Qwen3-8B-6bit, gemma-4-12B-it-4bit". Every caller
+        # using the documented alias (including every Hermes cron job that
+        # would route to this "reasoning default" model) got a hard 404 on
+        # every single call. Same stale-alias-correction pattern as
+        # RAPID_MLX_MODEL_ID above.
+        if base_url == OMLX_API_BASE and local_model.lower() == "deepseek-r1-0528-qwen3-8b":
+            return "DeepSeek-R1-0528-Qwen3-8B-6bit"
         return local_model
 
     @staticmethod

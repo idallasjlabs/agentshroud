@@ -125,3 +125,73 @@ def test_jira_weekly_review_schedule_is_sunday_9am():
     data = yaml.safe_load(JOBS_YAML.read_text(encoding="utf-8"))
     job = next(j for j in data["jobs"] if j["name"] == "jira-weekly-review")
     assert job["schedule"] == "0 9 * * 0", "jobs.yaml schedule must be Sunday 09:00"
+
+
+# ---------------------------------------------------------------------------
+# Per-job-type model routing (2026-08-23) — see the long comment above
+# _seed_cron() in init-config.sh for the evidence: one-shot testing on real
+# job content showed the prior universal default (nemotron-3.5-lightning-rapid)
+# consistently fails to complete a structured deliverable under realistic
+# token budgets, while gemma-4-26b-a4b-it succeeds faithfully. Every
+# content-generating job is pinned to gemma-4-26b-a4b-it EXCEPT
+# jira-weekly-review, whose payload is pure script execution with no
+# meaningful free-form generation.
+# ---------------------------------------------------------------------------
+
+# Every _seed_cron call site except jira-weekly-review.
+_PINNED_JOB_NAMES = [
+    "AgentShroud Daily Check-in",
+    "AgentShroud Weekly Summary",
+    "Weekly Kaizen Review",
+    "Monthly Chaos Engineering Drill",
+    "Daily Memory Journal",
+    "Weekly Hermes Stability Report",
+    "Hermes Competitive Landscape Update (AM/PM)",
+    "Hermes Competitive Intelligence Email (AM/PM)",
+]
+
+
+def _parse_seed_cron_calls_from_sh() -> dict[str, str]:
+    """Map job name -> the full '_seed_cron "Name" ...' call text (all lines,
+    since prompts continue across '\\' line continuations)."""
+    text = INIT_CONFIG.read_text(encoding="utf-8")
+    calls: dict[str, str] = {}
+    for name in _parse_cron_names_from_sh():
+        # Find the call starting at '_seed_cron "Name"' and capture through the
+        # next blank line (call sites are separated by a blank line).
+        start = text.index(f'_seed_cron "{name}"')
+        end = text.find("\n\n", start)
+        calls[name] = text[start : end if end != -1 else None]
+    return calls
+
+
+def test_content_generating_jobs_pinned_to_evidence_backed_model():
+    calls = _parse_seed_cron_calls_from_sh()
+    for name in _PINNED_JOB_NAMES:
+        assert name in calls, f"{name} not found in init-config.sh"
+        assert '"gemma-4-26b-a4b-it" "ollama"' in calls[name], (
+            f"{name} must be pinned to gemma-4-26b-a4b-it/ollama — see the "
+            "evidence in the comment above _seed_cron() in init-config.sh"
+        )
+
+
+def test_jira_weekly_review_not_pinned_to_a_model():
+    """jira-weekly-review is pure script execution (near-zero free-form
+    generation) — it must keep following cron.model/model.default rather
+    than being pinned, since the model-quality evidence doesn't cover this
+    job shape."""
+    calls = _parse_seed_cron_calls_from_sh()
+    assert "jira-weekly-review" in calls
+    assert '"gemma-4-26b-a4b-it"' not in calls["jira-weekly-review"]
+
+
+def test_seed_cron_supports_optional_model_and_provider_args():
+    """_seed_cron must accept optional $5 (model) / $6 (provider) and forward
+    them as `hermes cron create --model ... --provider ...` only when set."""
+    sh_text = INIT_CONFIG.read_text(encoding="utf-8")
+    assert (
+        '_model="${5:-}" _provider="${6:-}"' in sh_text
+    ), "_seed_cron must accept optional 5th (model) / 6th (provider) positional args"
+    assert (
+        '--model "$_model"' in sh_text and '--provider "${_provider:-ollama}"' in sh_text
+    ), "_seed_cron must forward --model/--provider to `hermes cron create` when set"
