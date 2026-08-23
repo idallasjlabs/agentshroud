@@ -1,23 +1,24 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "Setup Docs"
+community: "Forward (routes)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Forward_routes
 ---
 
 # test_channel_ownership.py
 
 ## Connections
+- [[FastAPI app instance]] - `references` [EXTRACTED]
 - [[TestEmailSend]] - `contains` [EXTRACTED]
 - [[TestTelegramWebhook]] - `contains` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
 - [[auth_dep()_3]] - `imports` [EXTRACTED]
 - [[bypass_auth()]] - `contains` [EXTRACTED]
 - [[client()_2]] - `contains` [EXTRACTED]
-- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
+- [[forward.py]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Setup_Docs
+#graphify/code #graphify/EXTRACTED #community/Forward_routes

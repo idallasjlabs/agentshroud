@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "Collaborator Prompt Classifiers"
+community: "Approval Store"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Approval_Store
 ---
 
 # test_decide_persists()
@@ -18,4 +18,4 @@ tags:
 - [[_make_item()]] - `calls` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/code #graphify/EXTRACTED #community/Approval_Store

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "Planning Docs"
+community: "Docs Accuracy"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Docs_Accuracy
 ---
 
 # test_dashboard_requires_auth()
@@ -15,4 +15,4 @@ tags:
 - [[GET dashboard without auth returns 403.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Docs_Accuracy

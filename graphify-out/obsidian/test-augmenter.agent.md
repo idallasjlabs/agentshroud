@@ -1,12 +1,12 @@
 ---
 source_file: ".github/agents/test-augmenter.agent.md"
 type: "document"
-community: "docs/vault"
+community: "Agents"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Agents
 ---
 
 # test-augmenter.agent.md
@@ -15,4 +15,4 @@ tags:
 - [[Codex Test Augmenter Role]] - `semantically_similar_to` [INFERRED]
 - [[Test Augmentation Specialist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Agents

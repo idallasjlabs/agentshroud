@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Audit & Watchtower Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # test_canary.py
@@ -16,9 +16,9 @@ tags:
 - [[HTTPForwarder]] - `imports` [EXTRACTED]
 - [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
-- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[PromptGuard]] - `references` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustManager_1]] - `references` [EXTRACTED]
 - [[canary_pipeline()]] - `contains` [EXTRACTED]
 - [[healthy_forwarder()]] - `contains` [EXTRACTED]
 - [[run_canary()]] - `imports` [EXTRACTED]
@@ -30,6 +30,8 @@ tags:
 - [[test_canary_verifies_pii_stripping()]] - `contains` [EXTRACTED]
 - [[test_canary_with_healthy_forwarder()]] - `contains` [EXTRACTED]
 - [[test_canary_with_unhealthy_forwarder()]] - `contains` [EXTRACTED]
+- [[test_clamav_pipeline.py]] - `semantically_similar_to` [INFERRED]
+- [[test_e2e.py]] - `semantically_similar_to` [INFERRED]
 - [[unhealthy_forwarder()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

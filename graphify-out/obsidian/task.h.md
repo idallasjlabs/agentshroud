@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_playback_state/stubs/freertos/task.h"
 type: "code"
-community: "skills/openclaw"
+community: "Task (freertos)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Task_freertos
 ---
 
 # task.h
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[vTaskDelay()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skills/openclaw
+#graphify/code #graphify/EXTRACTED #community/Task_freertos

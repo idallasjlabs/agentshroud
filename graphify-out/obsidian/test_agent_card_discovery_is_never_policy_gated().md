@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Planning Docs"
+community: "A2a Proxy"
 location: "L372"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/A2a_Proxy
 ---
 
 # test_agent_card_discovery_is_never_policy_gated()
@@ -17,4 +17,4 @@ tags:
 - [[_StubForwarder]] - `references` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/A2a_Proxy

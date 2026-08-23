@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "docs/diagrams"
+community: "Alert Dispatcher Retry"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Alert_Dispatcher_Retry
 ---
 
 # test_alert_dispatcher_retry.py
@@ -21,4 +21,4 @@ tags:
 - [[test_succeeds_after_one_transient_failure()]] - `contains` [EXTRACTED]
 - [[test_succeeds_on_first_attempt()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/diagrams
+#graphify/code #graphify/EXTRACTED #community/Alert_Dispatcher_Retry

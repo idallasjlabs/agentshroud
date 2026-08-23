@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-llm-settings.sh"
 type: "code"
-community: "docs/user-guide.md"
+community: "Sync Llm Settings (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/user-guidemd
+  - community/Sync_Llm_Settings_scripts
 ---
 
 # sync-llm-settings.sh
@@ -18,7 +18,6 @@ tags:
 - [[gatewayskillsscan.py (scan CLI)]] - `calls` [EXTRACTED]
 - [[sync-llm-settings.sh script]] - `contains` [EXTRACTED]
 - [[test-skills-sync.sh]] - `calls` [EXTRACTED]
-- [[update-bot-agents.sh]] - `calls` [EXTRACTED]
 - [[validate-skills-manifest.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/user-guidemd
+#graphify/code #graphify/EXTRACTED #community/Sync_Llm_Settings_scripts

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "Subagent Monitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/Subagent_Monitor
 ---
 
 # subagent_monitor.py
@@ -19,5 +19,10 @@ tags:
 - [[SubagentMonitor]] - `contains` [EXTRACTED]
 - [[SubagentMonitorConfig]] - `contains` [EXTRACTED]
 - [[ToolCheckResult]] - `contains` [EXTRACTED]
+- [[egress_config.py]] - `references` [EXTRACTED]
+- [[falco_monitor.py]] - `references` [EXTRACTED]
+- [[resource_guard.py]] - `references` [EXTRACTED]
+- [[session_security.py]] - `references` [EXTRACTED]
+- [[trust_manager.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/Subagent_Monitor

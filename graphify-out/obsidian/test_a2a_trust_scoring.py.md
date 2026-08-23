@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "A2a Integration"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/A2a_Integration
 ---
 
 # test_a2a_trust_scoring.py
@@ -17,6 +17,8 @@ tags:
 - [[A2AProxy]] - `imports` [EXTRACTED]
 - [[ProgressiveTrustConfig]] - `imports` [EXTRACTED]
 - [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - `references` [EXTRACTED]
+- [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - `references` [EXTRACTED]
 - [[ViolationType]] - `imports` [EXTRACTED]
 - [[_StubForwarder_1]] - `contains` [EXTRACTED]
 - [[_jsonrpc()_2]] - `contains` [EXTRACTED]
@@ -30,4 +32,4 @@ tags:
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `contains` [EXTRACTED]
 - [[trust_manager()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/A2a_Integration

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Egress Filter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress_Filter
 ---
 
 # test_egress_filter.py
@@ -16,7 +16,7 @@ tags:
 - [[EgressAction]] - `imports` [EXTRACTED]
 - [[EgressAttempt]] - `imports` [EXTRACTED]
 - [[EgressFilter_1]] - `imports` [EXTRACTED]
-- [[EgressFilterConfig]] - `references` [EXTRACTED]
+- [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[FakeAuditStore]] - `contains` [EXTRACTED]
 - [[TestAuditStorePersistence]] - `contains` [EXTRACTED]
@@ -42,4 +42,4 @@ tags:
 - [[test_grant_timed_approval_expired_falls_back_to_deny()]] - `contains` [EXTRACTED]
 - [[test_grant_timed_approval_invalid_iso_is_ignored()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Egress_Filter

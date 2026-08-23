@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/tests/test_anthropic_openai_translator.py"
 type: "code"
-community: "Community 1802"
+community: "Anthropic Openai Translator"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1802
+  - community/Anthropic_Openai_Translator
 ---
 
 # test_anthropic_openai_translator.py — Anthropic/OpenAI translator tests
 
-#graphify/code #graphify/EXTRACTED #community/Community_1802
+#graphify/code #graphify/EXTRACTED #community/Anthropic_Openai_Translator

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Delegation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Delegation
 ---
 
 # test_delegation.py
@@ -25,4 +25,4 @@ tags:
 - [[TestSerialization]] - `contains` [EXTRACTED]
 - [[mgr()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Delegation

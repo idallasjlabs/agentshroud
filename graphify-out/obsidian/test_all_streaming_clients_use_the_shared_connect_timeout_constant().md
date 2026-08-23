@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Llm Proxy"
 location: "L682"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Llm_Proxy
 ---
 
 # test_all_streaming_clients_use_the_shared_connect_timeout_constant()
@@ -15,4 +15,4 @@ tags:
 - [[No streaming call site may hardcode its own connect timeout literal.      Guards]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Llm_Proxy

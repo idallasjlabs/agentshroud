@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Planning Docs"
+community: "Config Validation & Router"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Config_Validation__Router
 ---
 
 # test_config_validation.py
@@ -21,6 +21,5 @@ tags:
 - [[TestRecommendedConfig]] - `contains` [EXTRACTED]
 - [[_DropInvalidHTTPRequestFilter]] - `imports` [EXTRACTED]
 - [[_parse_env_file()]] - `contains` [EXTRACTED]
-- [[examples config files (minimalrecommendedparanoid .env + docker-compose)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Config_Validation__Router

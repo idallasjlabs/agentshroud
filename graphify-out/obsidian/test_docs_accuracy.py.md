@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Docs Accuracy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Docs_Accuracy
 ---
 
 # test_docs_accuracy.py
 
 ## Connections
 - [[CONTRIBUTING]] - `references` [EXTRACTED]
-- [[FastAPI app (main.py)]] - `references` [INFERRED]
+- [[FastAPI app instance]] - `references` [INFERRED]
 - [[MiddlewareManager]] - `imports` [EXTRACTED]
-- [[README]] - `references` [EXTRACTED]
+- [[README_37]] - `references` [EXTRACTED]
 - [[SECURITY]] - `references` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[TestContributingMdAccuracy]] - `contains` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[_read_file()]] - `contains` [EXTRACTED]
 - [[main.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Docs_Accuracy

@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/package.json"
 type: "code"
-community: "docs/compliance"
+community: "Package (browser-extension)"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/compliance
+  - community/Package_browser-extension
 ---
 
 # testEnvironment
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[jest_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/compliance
+#graphify/code #graphify/EXTRACTED #community/Package_browser-extension

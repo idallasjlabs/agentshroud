@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "browser-extension/README.md"
+community: "Hermes Cron Seed"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/READMEmd
+  - community/Hermes_Cron_Seed
 ---
 
 # test_cron_seed_is_stampless_and_idempotent()
@@ -15,4 +15,4 @@ tags:
 - [[Stamp-file gating (v1v2v3) caused job triplication on every version bump.]] - `rationale_for` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Hermes_Cron_Seed

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "Planning Docs"
+community: "Clamav Pipeline"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Clamav_Pipeline
 ---
 
 # test_clamav_pipeline.py
@@ -19,6 +19,7 @@ tags:
 - [[_make_pipeline()]] - `contains` [EXTRACTED]
 - [[_timeout_wait_for()]] - `contains` [EXTRACTED]
 - [[scan_bytes()]] - `imports` [EXTRACTED]
+- [[test_canary.py]] - `semantically_similar_to` [INFERRED]
 - [[test_pipeline_clamav_clean_payload()]] - `contains` [EXTRACTED]
 - [[test_pipeline_clamav_error_fail_open()]] - `contains` [EXTRACTED]
 - [[test_pipeline_clamav_malware_blocked()]] - `contains` [EXTRACTED]
@@ -30,4 +31,4 @@ tags:
 - [[test_scan_bytes_infected()]] - `contains` [EXTRACTED]
 - [[test_scan_bytes_timeout()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Clamav_Pipeline

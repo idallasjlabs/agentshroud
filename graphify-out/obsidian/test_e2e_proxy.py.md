@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "SOC Collaborator Lifecycle"
+community: "E2e Proxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/E2e_Proxy
 ---
 
 # test_e2e_proxy.py
@@ -35,6 +35,7 @@ tags:
 - [[pii_config()]] - `contains` [EXTRACTED]
 - [[pipeline()]] - `contains` [EXTRACTED]
 - [[prompt_guard()]] - `contains` [EXTRACTED]
+- [[run_full()]] - `references` [EXTRACTED]
 - [[sanitizer()_1]] - `contains` [EXTRACTED]
 - [[test_approval_queue_enforced()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_empty_valid()]] - `contains` [EXTRACTED]
@@ -65,4 +66,4 @@ tags:
 - [[test_webhook_strips_pii()]] - `contains` [EXTRACTED]
 - [[trust_manager()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/code #graphify/EXTRACTED #community/E2e_Proxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "SOC Dashboard"
+community: "A2a Policy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/A2a_Policy
 ---
 
 # test_a2a_policy.py
@@ -17,6 +17,8 @@ tags:
 - [[A2APolicyConfig]] - `imports` [EXTRACTED]
 - [[A2APolicyDecision]] - `imports` [EXTRACTED]
 - [[A2APolicyEngine_1]] - `imports` [EXTRACTED]
+- [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - `references` [EXTRACTED]
+- [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - `references` [EXTRACTED]
 - [[_LegacyStubApprovalQueue]] - `contains` [EXTRACTED]
 - [[_StubApprovalQueue]] - `contains` [EXTRACTED]
 - [[_base_config()]] - `contains` [EXTRACTED]
@@ -59,4 +61,4 @@ tags:
 - [[test_task_ownership_denial_is_not_bypassable_by_high_risk_approval_path()]] - `contains` [EXTRACTED]
 - [[test_unknown_peer_is_denied_by_default()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/A2a_Policy

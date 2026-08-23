@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Llm Quota Detector"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Llm_Quota_Detector
 ---
 
 # test_400_without_quota_substring_not_flagged()
@@ -16,4 +16,4 @@ tags:
 - [[is_quota_exhausted()]] - `calls` [EXTRACTED]
 - [[test_llm_quota_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Llm_Quota_Detector

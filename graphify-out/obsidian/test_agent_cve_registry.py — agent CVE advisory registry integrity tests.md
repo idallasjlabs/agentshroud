@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Regressions V1 2"
 tags:
   - graphify/code
   - graphify/AMBIGUOUS
-  - community/Gateway_Test_Suite
+  - community/Security_Regressions_V1_2
 ---
 
 # test_agent_cve_registry.py — agent CVE advisory registry integrity tests
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TrustManager_1]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/code #graphify/AMBIGUOUS #community/Gateway_Test_Suite
+#graphify/code #graphify/AMBIGUOUS #community/Security_Regressions_V1_2

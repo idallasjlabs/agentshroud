@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Middleware & Session Isolation"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Middleware__Session_Isolation
 ---
 
 # test_api_alerts_endpoint_emits_bus_event()
@@ -17,4 +17,4 @@ tags:
 - [[_req()]] - `calls` [INFERRED]
 - [[test_alert_telegram_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Middleware__Session_Isolation

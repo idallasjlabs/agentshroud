@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Dns Filter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Dns_Filter
 ---
 
 # test_dns_filter.py
@@ -22,12 +22,13 @@ tags:
 - [[TestDNSTunnelingDetection]] - `contains` [EXTRACTED]
 - [[TestEntropyCalculator]] - `contains` [EXTRACTED]
 - [[TestNormalDNSResolution]] - `contains` [EXTRACTED]
-- [[TestRateLimiting]] - `contains` [EXTRACTED]
+- [[TestRateLimiting_1]] - `contains` [EXTRACTED]
 - [[default_config()_1]] - `contains` [EXTRACTED]
 - [[dns_filter()]] - `contains` [EXTRACTED]
 - [[monitor_config()]] - `contains` [EXTRACTED]
 - [[monitor_filter()]] - `contains` [EXTRACTED]
 - [[strict_config()]] - `contains` [EXTRACTED]
 - [[strict_filter()]] - `contains` [EXTRACTED]
+- [[test_dns_canvas_coverage.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Dns_Filter

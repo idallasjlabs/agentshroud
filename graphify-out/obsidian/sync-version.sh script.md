@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-version.sh"
 type: "code"
-community: "Bot Skill Config"
+community: "Sync Version (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Sync_Version_scripts
 ---
 
 # sync-version.sh script
@@ -15,4 +15,4 @@ tags:
 - [[check_or_fix()]] - `calls` [EXTRACTED]
 - [[sync-version.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Sync_Version_scripts

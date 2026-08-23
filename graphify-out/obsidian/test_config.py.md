@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Config"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Config
 ---
 
 # test_config.py
@@ -31,4 +31,4 @@ tags:
 - [[test_router_config_accepts_docker_service_hostname()]] - `contains` [EXTRACTED]
 - [[test_router_config_accepts_hermes_hostname()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Config

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "A2a Integration"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/A2a_Integration
 ---
 
 # test_a2a_integration.py
@@ -19,6 +19,8 @@ tags:
 - [[HermesA2AForwarder]] - `imports` [EXTRACTED]
 - [[ProgressiveTrustConfig]] - `imports` [EXTRACTED]
 - [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - `references` [EXTRACTED]
+- [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - `references` [EXTRACTED]
 - [[_jsonrpc()]] - `contains` [EXTRACTED]
 - [[test_adversarial_ssrf_callback_bypass_attempts_over_real_http()]] - `contains` [EXTRACTED]
 - [[test_adversarial_task_ownership_hijack_attempt_over_real_http()]] - `contains` [EXTRACTED]
@@ -28,4 +30,4 @@ tags:
 - [[test_legitimate_callback_url_is_forwarded_over_real_http()]] - `contains` [EXTRACTED]
 - [[trust_manager()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/A2a_Integration

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Egress Domain Allowlist"
+community: "Mcp Policy"
 location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Domain_Allowlist
+  - community/Mcp_Policy
 ---
 
 # test_decision_records_soc_heatmap()
@@ -19,4 +19,4 @@ tags:
 - [[evaluate() records the decision for the SOC module heat-map.]] - `rationale_for` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Domain_Allowlist
+#graphify/code #graphify/EXTRACTED #community/Mcp_Policy

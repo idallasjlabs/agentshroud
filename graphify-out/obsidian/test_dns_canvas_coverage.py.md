@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "docs/vault"
+community: "Dns Canvas Coverage"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Dns_Canvas_Coverage
 ---
 
 # test_dns_canvas_coverage.py
@@ -38,6 +38,7 @@ tags:
 - [[_run_asgi()]] - `contains` [EXTRACTED]
 - [[_ws_scope()]] - `contains` [EXTRACTED]
 - [[build_dns_query()]] - `contains` [EXTRACTED]
+- [[canvas_proxy_app()]] - `calls` [EXTRACTED]
 - [[fake_httpx_client()]] - `contains` [EXTRACTED]
 - [[forward_query()]] - `imports` [EXTRACTED]
 - [[gateway_password()]] - `contains` [EXTRACTED]
@@ -45,5 +46,6 @@ tags:
 - [[parse_domain_name()]] - `imports` [EXTRACTED]
 - [[parse_query()]] - `imports` [EXTRACTED]
 - [[start_dns_forwarder()]] - `imports` [EXTRACTED]
+- [[test_dns_filter.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Dns_Canvas_Coverage

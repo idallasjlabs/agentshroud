@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "ESP32 Firmware"
+community: "Bots Ssh Exec Wrapper"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Bots_Ssh_Exec_Wrapper
 ---
 
 # test_bots_ssh_exec_wrapper.py
@@ -35,4 +35,4 @@ tags:
 - [[test_wrapper_never_sends_empty_bearer()]] - `contains` [EXTRACTED]
 - [[test_wrapper_targets_only_internal_gateway_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Bots_Ssh_Exec_Wrapper

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_anthropic_openai_translator.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Anthropic Openai Translator"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Anthropic_Openai_Translator
 ---
 
 # test_anthropic_openai_translator.py
@@ -38,4 +38,4 @@ tags:
 - [[test_translator_tool_use_blocks()]] - `contains` [EXTRACTED]
 - [[translate_openai_sse_to_anthropic()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Anthropic_Openai_Translator

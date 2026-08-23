@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Multi Host"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Multi_Host
 ---
 
 # tail()
@@ -22,4 +22,4 @@ tags:
 - [[run_multi_host()]] - `calls` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Multi_Host

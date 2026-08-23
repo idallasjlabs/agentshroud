@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Planning Docs"
+community: "A2a Proxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/A2a_Proxy
 ---
 
 # test_a2a_proxy.py
@@ -19,6 +19,7 @@ tags:
 - [[A2AProxyResult]] - `imports` [EXTRACTED]
 - [[DifferentialPIIConfig]] - `imports` [EXTRACTED]
 - [[DifferentialPIIDetector]] - `imports` [EXTRACTED]
+- [[Upstream Hermes Gap 80534 — Peer Identity Resolved From SocketX-Forwarded-For Instead Of Bearer Token]] - `references` [EXTRACTED]
 - [[_Event]] - `contains` [EXTRACTED]
 - [[_StubAuditStore]] - `contains` [EXTRACTED]
 - [[_StubForwarder]] - `contains` [EXTRACTED]
@@ -26,7 +27,7 @@ tags:
 - [[_jsonrpc()_1]] - `contains` [EXTRACTED]
 - [[_redact_message_text()]] - `imports` [EXTRACTED]
 - [[forwarder()]] - `contains` [EXTRACTED]
-- [[proxy()]] - `contains` [EXTRACTED]
+- [[proxy()_1]] - `contains` [EXTRACTED]
 - [[test_agent_card_discovery_is_never_policy_gated()]] - `contains` [EXTRACTED]
 - [[test_agent_card_discovery_is_still_audited()]] - `contains` [EXTRACTED]
 - [[test_extract_text_concatenates_text_parts()]] - `contains` [EXTRACTED]
@@ -62,4 +63,4 @@ tags:
 - [[test_resolve_peer_id_uses_constant_time_comparison()]] - `contains` [EXTRACTED]
 - [[test_resolve_peer_id_whitespace_only_token_returns_none()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/A2a_Proxy

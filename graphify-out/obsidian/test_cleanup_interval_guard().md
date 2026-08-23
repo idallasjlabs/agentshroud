@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_replay.py"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "Telegram Replay"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Telegram_Replay
 ---
 
 # test_cleanup_interval_guard()
@@ -15,4 +15,4 @@ tags:
 - [[_update()]] - `calls` [EXTRACTED]
 - [[test_telegram_replay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/Telegram_Replay

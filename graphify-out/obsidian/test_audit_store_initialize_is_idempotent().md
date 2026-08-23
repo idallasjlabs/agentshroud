@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "Collaborator Prompt Classifiers"
+community: "Approval Store"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Approval_Store
 ---
 
 # test_audit_store_initialize_is_idempotent()
@@ -17,4 +17,4 @@ tags:
 - [[Path_24]] - `references` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/code #graphify/EXTRACTED #community/Approval_Store

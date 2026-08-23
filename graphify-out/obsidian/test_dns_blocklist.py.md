@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "scripts/triage-cve-mitigations.py"
+community: "Dns Blocklist"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/triage-cve-mitigationspy
+  - community/Dns_Blocklist
 ---
 
 # test_dns_blocklist.py
@@ -19,4 +19,4 @@ tags:
 - [[TestParseHostsLine]] - `contains` [EXTRACTED]
 - [[TestStats]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/Dns_Blocklist

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Hardening"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Hardening
 ---
 
 # test_agent_isolation.py
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[AgentRegistry]] - `imports` [EXTRACTED]
 - [[ContainerConfig]] - `imports` [EXTRACTED]
-- [[IsolationCheck]] - `imports` [EXTRACTED]
 - [[IsolationStatus]] - `imports` [EXTRACTED]
 - [[IsolationVerifier]] - `imports` [EXTRACTED]
 - [[TestAgentRegistry]] - `contains` [EXTRACTED]
@@ -24,4 +23,4 @@ tags:
 - [[TestVolumeIsolation]] - `contains` [EXTRACTED]
 - [[_make_config()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Hardening

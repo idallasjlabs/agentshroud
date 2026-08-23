@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Llm Proxy"
 location: "L374"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Llm_Proxy
 ---
 
 # test_credential_injector_does_not_overwrite_existing_bearer()
@@ -19,4 +19,4 @@ tags:
 - [[_make_fake_urlopen()]] - `calls` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Llm_Proxy
