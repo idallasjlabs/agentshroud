@@ -209,9 +209,34 @@ fi
 # creating, so re-seeds on upgrade never accumulate duplicates.
 # (Prior stamp-file gating v1/v2/v3 caused triplication on each version bump
 # because hermes cron create has no dedup — removed in favour of this approach.)
-
+#
+# Optional $5/$6 (model/provider): per-job-type model pin, added 2026-08-23.
+# Every job previously ran on whatever cron.model/model.default resolve_model.py
+# set globally (nemotron-3.5-lightning-rapid in prod) — one model for every job
+# type regardless of what the job actually does. Live one-shot testing against
+# the real gateway (dev host, 2026-08-23) on real job content — a Competitor
+# Matrix synthesis task and a strict-format Telegram-HTML digest, both pulled
+# verbatim from these jobs' actual prompts — showed nemotron-3.5-lightning-rapid
+# consistently exhausts its entire completion budget (tested up to 3000 tokens,
+# 3x the newsletter-job fix's max_tokens) on unresolved internal "thinking
+# process" monologue and NEVER emits the requested deliverable (finish_reason
+# "length" both times, zero usable output), on tasks as small as an 8-line,
+# 500-max-token digest — not a token-budget problem, a genuine coherence
+# failure under this workload. gemma-4-26b-a4b-it (Turbo Fieldflare) completed
+# both tasks correctly: complete, source-faithful output (correctly left
+# unstated fields blank rather than inventing values — gemma-4-12b-it-4bit, by
+# contrast, hallucinated an unstated "ACTIVE" status on 7 of 12 rows, violating
+# the job's own "do not add, guess, or invent" rule) and exact Telegram-HTML
+# format/filtering compliance. deepseek-r1-0528-qwen3-8b could not be tested at
+# all — confirmed 404 via the gateway before this session's llm_proxy.py OMLX
+# alias fix (see gateway/proxy/llm_proxy.py's _normalize_local_model) — so it is
+# deliberately NOT assigned here pending a follow-up validation pass once that
+# fix ships. Applied to every content-generating job below except
+# jira-weekly-review, whose payload is "run this exact script, report exit
+# code" — near-zero free-form generation, so the failure mode this fix targets
+# doesn't apply.
 _seed_cron() {
-    local _name="$1" _deliver="$2" _schedule="$3" _prompt="$4"
+    local _name="$1" _deliver="$2" _schedule="$3" _prompt="$4" _model="${5:-}" _provider="${6:-}"
     # Remove all pre-existing jobs with this exact name, then create one canonical copy.
     hermes cron list 2>/dev/null \
       | awk -v name="$_name" '
@@ -219,43 +244,56 @@ _seed_cron() {
             index($0, "Name:") && index($0, name) { print id }
           ' \
       | xargs -r -n1 hermes cron delete >/dev/null 2>&1 || true
-    hermes cron create --name "$_name" --deliver "$_deliver" "$_schedule" "$_prompt" \
-      2>/dev/null \
-      && echo "[hermes-init] Seeded: $_name" \
-      || echo "[hermes-init] WARN: seed failed: $_name"
+    if [ -n "$_model" ]; then
+        hermes cron create --name "$_name" --deliver "$_deliver" \
+          --model "$_model" --provider "${_provider:-ollama}" "$_schedule" "$_prompt" \
+          2>/dev/null \
+          && echo "[hermes-init] Seeded: $_name (model=$_model)" \
+          || echo "[hermes-init] WARN: seed failed: $_name"
+    else
+        hermes cron create --name "$_name" --deliver "$_deliver" "$_schedule" "$_prompt" \
+          2>/dev/null \
+          && echo "[hermes-init] Seeded: $_name" \
+          || echo "[hermes-init] WARN: seed failed: $_name"
+    fi
 }
 
 echo "[hermes-init] Seeding native cron jobs (idempotent)..."
 
 _seed_cron "AgentShroud Daily Check-in" "telegram" "0 14 * * *" \
-    "Daily AgentShroud check-in from Hermes. Report current date/time, brief status of active tasks, and anything noteworthy from today. Under 150 words, send via Telegram to Isaiah."
+    "Daily AgentShroud check-in from Hermes. Report current date/time, brief status of active tasks, and anything noteworthy from today. Under 150 words, send via Telegram to Isaiah." \
+    "gemma-4-26b-a4b-it" "ollama"
 
 _seed_cron "AgentShroud Weekly Summary" "telegram" "0 18 * * 5" \
-    "Weekly summary from Hermes: key topics this week, skills learned or created, and what to focus on next week. Format concisely, deliver via Telegram."
+    "Weekly summary from Hermes: key topics this week, skills learned or created, and what to focus on next week. Format concisely, deliver via Telegram." \
+    "gemma-4-26b-a4b-it" "ollama"
 
 _seed_cron "Weekly Kaizen Review" "telegram" "0 17 * * 5" \
-    "Friday 5 PM weekly kaizen review (Hermes). What shipped this week? What caused friction? What process improvements would most help AgentShroud development? Format: SHIPPED / FRICTION / IMPROVE. Be specific and actionable."
+    "Friday 5 PM weekly kaizen review (Hermes). What shipped this week? What caused friction? What process improvements would most help AgentShroud development? Format: SHIPPED / FRICTION / IMPROVE. Be specific and actionable." \
+    "gemma-4-26b-a4b-it" "ollama"
 
 _seed_cron "Monthly Chaos Engineering Drill" "telegram" "0 9 1 * *" \
-    "First of month chaos engineering drill (Hermes). Simulate one failure scenario for AgentShroud involving Hermes: gateway crash, volume corruption, bot disconnect, or dependency outage. Describe failure mode, detection method, blast radius, and recovery procedure."
+    "First of month chaos engineering drill (Hermes). Simulate one failure scenario for AgentShroud involving Hermes: gateway crash, volume corruption, bot disconnect, or dependency outage. Describe failure mode, detection method, blast radius, and recovery procedure." \
+    "gemma-4-26b-a4b-it" "ollama"
 
 # SC2016: $(date) intentionally not expanded — agent evaluates at run time
 # shellcheck disable=SC2016
 _memory_journal_prompt='Nightly memory consolidation. Summarize today'"'"'s active projects, pending tasks, decisions made, and key facts for continuity. Append your summary to /opt/data/memories/journal-$(date +%Y-%m).md as a new dated section (use today'"'"'s date in YYYY-MM-DD format as the section heading). Create the file if it does not exist. Silent operation — no Telegram delivery.'
-_seed_cron "Daily Memory Journal" "local" "55 23 * * *" "$_memory_journal_prompt"
+_seed_cron "Daily Memory Journal" "local" "55 23 * * *" "$_memory_journal_prompt" "gemma-4-26b-a4b-it" "ollama"
 
 _seed_cron "Weekly Hermes Stability Report" "telegram" "0 9 * * 1" \
-    "Read /opt/data/logs/gateway-exit-diag.log (last 7 days entries) and /opt/data/.start-history (one epoch per line). Compute: total restarts this week, crashes per day as a sparkline (e.g. 0 0 2 0 1 0 3), longest stable window in hours, top 3 exit codes by frequency, any backoff pauses triggered (5-minute sleeps). Format as 'Hermes Weekly Stability — <date range>' in under 200 words. Send via Telegram. If log files do not exist, report that Hermes has been stable with no recorded exits this week."
+    "Read /opt/data/logs/gateway-exit-diag.log (last 7 days entries) and /opt/data/.start-history (one epoch per line). Compute: total restarts this week, crashes per day as a sparkline (e.g. 0 0 2 0 1 0 3), longest stable window in hours, top 3 exit codes by frequency, any backoff pauses triggered (5-minute sleeps). Format as 'Hermes Weekly Stability — <date range>' in under 200 words. Send via Telegram. If log files do not exist, report that Hermes has been stable with no recorded exits this week." \
+    "gemma-4-26b-a4b-it" "ollama"
 
 # SC2016: $(date) intentionally not expanded — agent evaluates at run time
 # shellcheck disable=SC2016
 _competitive_landscape_prompt='Read /opt/data/workspace/competitive-analysis.md for research instructions. Execute the full 4-section competitive intelligence report. CRITICAL RULES: zero hallucinations — every company, product, and statistic must be verified against a live primary source. Exclude anything unverified. Every claim requires a working URL. Research competitors of AgentShroud (autonomous agent security tools — NOT the agents themselves). Verify GitHub star counts from live pages. Save report as /opt/data/workspace/reports/competitive-report-$(date +%Y-%m-%d).md (use today'"'"'s date in YYYY-MM-DD format). Append one-line summary to /opt/data/workspace/reports/trend-log.md. Do NOT send any email — the separate Hermes Competitive Intelligence Email cron job handles delivery. Silence is correct if nothing new is found; hallucination is a critical failure.'
-_seed_cron "Hermes Competitive Landscape Update (AM/PM)" "local" "0 6,15 * * *" "$_competitive_landscape_prompt"
+_seed_cron "Hermes Competitive Landscape Update (AM/PM)" "local" "0 6,15 * * *" "$_competitive_landscape_prompt" "gemma-4-26b-a4b-it" "ollama"
 
 # SC2016: $(date) intentionally not expanded — agent evaluates at run time
 # shellcheck disable=SC2016
 _competitive_email_prompt='Read the most recent competitive-report-*.md from /opt/data/workspace/reports/ (prefer today'"'"'s date in YYYY-MM-DD format). If no report exists, use body '"'"'No significant changes detected today.'"'"' Render as a clean HTML email with inline CSS only (white bg #ffffff, text #111111, links #1a73e8, code bg #f6f8fa). To render: copy the cron-operations skill'"'"'s scripts/render_md_email.py to /opt/data/workspace/render_email.py, set its SRC/DST Path() constants (DST = /tmp/competitive-email.html), then run: python3 /opt/data/workspace/render_email.py. If the skill script is unavailable, write a pure-stdlib renderer to /opt/data/workspace/render_email.py and run it the same way. NEVER use execute_code, python3 -c, pip install, or uv pip install — all are blocked in cron mode. NEVER write_file a .py to /tmp/ — write renderer scripts to /opt/data/workspace/ only. The final .html output at /tmp/ is fine. Then run EXACTLY: /usr/local/bin/agentshroud-email-send.sh --html --subject '"'"'AgentShroud Hermes Competitive Intelligence'"'"' --body-file /tmp/competitive-email.html. The --html flag is mandatory — omitting it delivers raw markdown as plain text. Expect HTTP 200. On failure, report the full error via Telegram.'
-_seed_cron "Hermes Competitive Intelligence Email (AM/PM)" "local" "0 7,16 * * *" "$_competitive_email_prompt"
+_seed_cron "Hermes Competitive Intelligence Email (AM/PM)" "local" "0 7,16 * * *" "$_competitive_email_prompt" "gemma-4-26b-a4b-it" "ollama"
 
 # SCRUM-81: weekly Jira review — post a real authenticated comment on SCRUM-81
 # every Sunday 09:00 so the Atlassian bot account never goes idle.

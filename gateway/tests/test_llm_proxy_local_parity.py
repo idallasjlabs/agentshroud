@@ -169,6 +169,38 @@ def test_normalize_local_model_already_dashed_is_idempotent():
     assert normalized == "qwen3-14b"
 
 
+def test_normalize_local_model_omlx_deepseek_renamed_to_real_catalog_id():
+    """oMLX's own /v1/models only recognizes the exact-cased, exact-suffixed ID
+    'DeepSeek-R1-0528-Qwen3-8B-6bit' — confirmed live 2026-08-23 (dev host):
+    requesting the documented LOCAL_MODEL_ROUTES alias 'deepseek-r1-0528-qwen3-8b'
+    directly against oMLX 404s with 'Model not found. Available models:
+    DeepSeek-R1-0528-Qwen3-8B-6bit, gemma-4-12B-it-4bit', while the real ID
+    succeeds. Unlike LM Studio (colon->dash) and Rapid-MLX (full weights path),
+    _normalize_local_model had no OMLX_API_BASE branch at all, so every caller
+    using the documented alias — including every Hermes cron job that would be
+    routed to the 'reasoning default' model — got a hard 404 on every call.
+    """
+    raw = "deepseek-r1-0528-qwen3-8b"
+    normalized = LLMProxy._normalize_local_model(raw, OMLX_API_BASE)
+    assert normalized == "DeepSeek-R1-0528-Qwen3-8B-6bit"
+
+
+def test_normalize_local_model_omlx_gemma_passes_through_unchanged():
+    """gemma-4-12b-it-4bit is NOT renamed — oMLX accepts it case-insensitively
+    (confirmed live 2026-08-23), unlike the deepseek alias whose mismatch is a
+    different suffix, not just case. Renaming here would be unnecessary churn."""
+    raw = "gemma-4-12b-it-4bit"
+    normalized = LLMProxy._normalize_local_model(raw, OMLX_API_BASE)
+    assert normalized == "gemma-4-12b-it-4bit"
+
+
+def test_normalize_local_model_omlx_unknown_model_passes_through_unchanged():
+    """Only the known stale/mismatched alias is rewritten; anything else forwards as-is."""
+    raw = "qwen3-coder-30b-a3b"
+    normalized = LLMProxy._normalize_local_model(raw, OMLX_API_BASE)
+    assert normalized == "qwen3-coder-30b-a3b"
+
+
 @pytest.mark.asyncio
 async def test_normalize_local_model_provider_prefix_stripped_before_normalize(monkeypatch):
     """ollama/ prefix is stripped during proxy_messages dispatch and normalization follows."""

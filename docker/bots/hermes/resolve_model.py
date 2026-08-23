@@ -44,7 +44,18 @@ _KNOWN_PREFIXES = (
 # Keyword → Hermes provider key. Matched against the bare (prefix-stripped) model
 # name, lowercased. Mirrors the local-keyword classification the gateway LLM proxy
 # uses (gateway/proxy/llm_proxy.py:582) so both sides agree on what is "local".
-_LOCAL_KEYWORDS = ("qwen", "llama", "mistral", "deepseek", "phi", "gemma")
+#
+# "nemotron" added 2026-08-23: NVIDIA Nemotron 3.5 Lightning is the PR #390
+# anchor/general local default (gateway/proxy/llm_proxy.py's RAPID_MLX_MODEL_ID),
+# but its name has no keyword overlap with the original list. Before this was
+# added, a HERMES_MAIN_MODEL naming it directly (e.g.
+# "openai-local/nemotron-3.5-lightning-rapid") was misclassified as needing a
+# cloud provider and silently fell through to Anthropic even with
+# AGENTSHROUD_MODEL_MODE=local — the only reason production didn't hit this
+# live is that its env still carries the older "qwen3-14b-rapid" stale-alias
+# workaround (recognized via "qwen"), which _apply_stale_alias_correction then
+# renames to nemotron *after* the local/cloud decision was already made.
+_LOCAL_KEYWORDS = ("qwen", "llama", "mistral", "deepseek", "phi", "gemma", "nemotron")
 
 # Safe fallback when nothing is configured — Hermes must always have a model.
 _DEFAULT_CLOUD_MODEL = "claude-haiku-4-5-20251001"
@@ -142,8 +153,12 @@ def resolve_model(
             model = strip_provider_prefix(local_model_ref.strip() if local_model_ref else "")
         if not model:
             # Local mode requested but no local ref supplied — fall back to the
-            # documented default local model so Hermes still starts locally.
-            model = "qwen3:14b"
+            # documented anchor default so Hermes still starts locally. Was
+            # "qwen3:14b" (pre-PR#390); the dev host's AGENTSHROUD_LOCAL_MODEL_REF
+            # was left unset, so it silently kept resolving to this stale
+            # fallback for 9+ days after prod moved to the new anchor model
+            # (nemotron-3.5-lightning-rapid, PR #390's LOCAL_MODEL_ROUTES).
+            model = "nemotron-3.5-lightning-rapid"
         return _apply_stale_alias_correction(model), "ollama"
 
     # Cloud (or unknown) mode.
