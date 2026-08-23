@@ -402,9 +402,7 @@ class TestFormatUpstreamCveAlert:
     def test_plural_header_for_multiple_cves(self):
         from gateway.security.daily_cve_report import format_upstream_cve_alert
 
-        msg = format_upstream_cve_alert(
-            [self._cve("CVE-2026-1"), self._cve("CVE-2026-2")]
-        )
+        msg = format_upstream_cve_alert([self._cve("CVE-2026-1"), self._cve("CVE-2026-2")])
         assert "2 New OpenClaw CVEs" in msg
 
     def test_singular_header_for_one_cve(self):
@@ -435,8 +433,7 @@ class TestFormatUpstreamCveAlert:
 
         # ~100 new GHSA advisories — the historical HTTP 400 scenario.
         cves = [
-            self._cve(cve_id=f"GHSA-aaaa-bbbb-{i:04d}", sev="HIGH", score=7.5)
-            for i in range(120)
+            self._cve(cve_id=f"GHSA-aaaa-bbbb-{i:04d}", sev="HIGH", score=7.5) for i in range(120)
         ]
         msg = format_upstream_cve_alert(cves)
 
@@ -485,9 +482,7 @@ class TestSendTelegramTruncation:
 
         # 10k chars — well over Telegram's 4096 limit.
         over_long = "A" * 10_000
-        ok = await _mod._send_telegram(
-            "tok", "123", over_long, "https://api.telegram.org"
-        )
+        ok = await _mod._send_telegram("tok", "123", over_long, "https://api.telegram.org")
 
         assert ok is True
         sent_text = captured["body"]["text"]
@@ -552,9 +547,7 @@ class TestRunUpstreamCveCheck:
 
         monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
 
-        result = await _mod.run_upstream_cve_check(
-            bot_token="tok", owner_chat_id="12345"
-        )
+        result = await _mod.run_upstream_cve_check(bot_token="tok", owner_chat_id="12345")
 
         assert result["new_cves"] == 1
         assert result["cve_ids"] == ["CVE-2026-99999"]
@@ -566,9 +559,7 @@ class TestRunUpstreamCveCheck:
     async def test_no_alert_when_registry_current(self, monkeypatch):
         import gateway.security.daily_cve_report as _mod
 
-        monkeypatch.setattr(
-            _mod, "check_upstream_cves", lambda token=None, agent_id="openclaw": []
-        )
+        monkeypatch.setattr(_mod, "check_upstream_cves", lambda token=None, agent_id="openclaw": [])
         sent = []
 
         async def _fake_send(token, chat_id, text, base_url):
@@ -577,9 +568,7 @@ class TestRunUpstreamCveCheck:
 
         monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
 
-        result = await _mod.run_upstream_cve_check(
-            bot_token="tok", owner_chat_id="12345"
-        )
+        result = await _mod.run_upstream_cve_check(bot_token="tok", owner_chat_id="12345")
 
         assert result["new_cves"] == 0
         assert result["telegram_sent"] is False
@@ -595,9 +584,7 @@ class TestRunUpstreamCveCheck:
             MagicMock(side_effect=OSError("connection refused")),
         )
 
-        result = await _mod.run_upstream_cve_check(
-            bot_token="tok", owner_chat_id="12345"
-        )
+        result = await _mod.run_upstream_cve_check(bot_token="tok", owner_chat_id="12345")
 
         assert result["new_cves"] == 0
         assert result["telegram_sent"] is False
@@ -801,9 +788,7 @@ class TestPerAgentUpstreamChecks:
             return True
 
         monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
-        results = await _mod.run_upstream_cve_check_all_agents(
-            bot_token="tok", owner_chat_id="123"
-        )
+        results = await _mod.run_upstream_cve_check_all_agents(bot_token="tok", owner_chat_id="123")
         by_agent = {r["agent_id"]: r for r in results}
         assert by_agent["hermes"]["telegram_sent"] is False
         assert by_agent["openclaw"]["telegram_sent"] is False
@@ -842,9 +827,7 @@ class TestPerAgentUpstreamChecks:
         assert tokens_seen == {"default-tok", "hermes-tok"}
 
     @pytest.mark.asyncio
-    async def test_all_agents_omitting_bot_tokens_preserves_default_behavior(
-        self, monkeypatch
-    ):
+    async def test_all_agents_omitting_bot_tokens_preserves_default_behavior(self, monkeypatch):
         """Backward compatibility: no bot_tokens arg means every agent still
         gets the single shared bot_token, exactly like before this param existed."""
         import gateway.security.daily_cve_report as _mod
@@ -871,9 +854,7 @@ class TestPerAgentUpstreamChecks:
         assert set(used_tokens) == {"only-tok"}
 
     @pytest.mark.asyncio
-    async def test_all_agents_runs_each_independently_and_isolates_failure(
-        self, monkeypatch
-    ):
+    async def test_all_agents_runs_each_independently_and_isolates_failure(self, monkeypatch):
         """OpenClaw and Hermes are processed on fully separate paths; one failing
         never blocks the other."""
         import gateway.security.daily_cve_report as _mod
@@ -893,9 +874,7 @@ class TestPerAgentUpstreamChecks:
             }
 
         monkeypatch.setattr(_mod, "run_upstream_cve_check", _fake_run)
-        results = await _mod.run_upstream_cve_check_all_agents(
-            bot_token="tok", owner_chat_id="123"
-        )
+        results = await _mod.run_upstream_cve_check_all_agents(bot_token="tok", owner_chat_id="123")
         # Both agents attempted, in registered order.
         assert "openclaw" in seen and "hermes" in seen
         by_agent = {r["agent_id"]: r for r in results}
@@ -1084,9 +1063,7 @@ class TestRunAndSendCveReportImageScans:
 
         monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
 
-        result = await _mod.run_and_send_cve_report(
-            bot_token="tok", owner_chat_id="12345"
-        )
+        result = await _mod.run_and_send_cve_report(bot_token="tok", owner_chat_id="12345")
 
         assert "image_scans" in result
         assert isinstance(result["image_scans"], list)
@@ -1112,9 +1089,7 @@ class TestRunAndSendCveReportImageScans:
 
         monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
 
-        result = await _mod.run_and_send_cve_report(
-            bot_token="tok", owner_chat_id="12345"
-        )
+        result = await _mod.run_and_send_cve_report(bot_token="tok", owner_chat_id="12345")
 
         assert result["telegram_sent"] is True
         # Error line present in image_scans
@@ -1143,9 +1118,7 @@ class TestRunAndSendCveReportImageScans:
 
         monkeypatch.setattr(_mod, "_send_telegram", _fake_send)
 
-        result = await _mod.run_and_send_cve_report(
-            bot_token="tok", owner_chat_id="12345"
-        )
+        result = await _mod.run_and_send_cve_report(bot_token="tok", owner_chat_id="12345")
 
         assert any("🔴" in line for line in result["image_scans"])
 
@@ -1183,9 +1156,7 @@ class TestAlreadyIngestedGhsaToday:
 
 class TestGhsaIngestScheduler:
     @pytest.mark.asyncio
-    async def test_runs_ingest_records_then_skips_next_iteration(
-        self, tmp_path, monkeypatch
-    ):
+    async def test_runs_ingest_records_then_skips_next_iteration(self, tmp_path, monkeypatch):
         """First iteration ingests + records; second sees dedup and skips."""
         import asyncio
 
@@ -1280,9 +1251,7 @@ class TestGhsaIngestScheduler:
         assert called["n"] == 0  # ingest never ran — dedup guard held
 
     @pytest.mark.asyncio
-    async def test_per_agent_check_error_is_isolated_not_fatal(
-        self, tmp_path, monkeypatch
-    ):
+    async def test_per_agent_check_error_is_isolated_not_fatal(self, tmp_path, monkeypatch):
         """A raised per-agent check error is ISOLATED — the ingest still completes.
 
         Per-agent isolation (coordinator requirement): one agent's fetch failure
@@ -1344,9 +1313,7 @@ class TestGhsaIngestScheduler:
         assert _mod._already_ingested_ghsa_today(datetime.now(timezone.utc)) is False
 
     @pytest.mark.asyncio
-    async def test_skips_ingest_when_marked_done_after_wake(
-        self, tmp_path, monkeypatch
-    ):
+    async def test_skips_ingest_when_marked_done_after_wake(self, tmp_path, monkeypatch):
         """After sleeping, if the day is now marked done, the loop skips ingest."""
         import asyncio
 
@@ -1402,9 +1369,7 @@ class TestGhsaIngestScheduler:
         assert called["sleep"] == 2
 
     @pytest.mark.asyncio
-    async def test_ingest_records_even_when_disk_write_fails(
-        self, tmp_path, monkeypatch
-    ):
+    async def test_ingest_records_even_when_disk_write_fails(self, tmp_path, monkeypatch):
         """A disk-write failure on the sentinel is swallowed; in-memory guard set."""
         import asyncio
 
@@ -1425,9 +1390,7 @@ class TestGhsaIngestScheduler:
         # Point the sentinel at an un-writable location (parent is a file).
         broken_parent = tmp_path / "afile"
         broken_parent.write_text("x")
-        monkeypatch.setattr(
-            _mod, "_LAST_GHSA_INGEST_PATH", broken_parent / "sub" / "last.txt"
-        )
+        monkeypatch.setattr(_mod, "_LAST_GHSA_INGEST_PATH", broken_parent / "sub" / "last.txt")
 
         async def _fake_ingest(**kwargs):
             return {"new_cves": 0, "telegram_sent": False}
@@ -1459,9 +1422,7 @@ class TestGhsaIngestScheduler:
 
 class TestRunAndSendCveReportFailedDeliveryNotMarkedSent:
     @pytest.mark.asyncio
-    async def test_failed_send_does_not_write_stamp_or_mark_sent_date(
-        self, tmp_path, monkeypatch
-    ):
+    async def test_failed_send_does_not_write_stamp_or_mark_sent_date(self, tmp_path, monkeypatch):
         import gateway.security.daily_cve_report as _mod
 
         monkeypatch.setattr(_mod, "run_trivy_scan", lambda **_: _make_report())
@@ -1534,9 +1495,7 @@ class TestCveReportSchedulerRetry:
         assert _FROZEN.date().isoformat() in _mod._sent_dates
 
     @pytest.mark.asyncio
-    async def test_gives_up_and_marks_sent_after_max_retries(
-        self, tmp_path, monkeypatch
-    ):
+    async def test_gives_up_and_marks_sent_after_max_retries(self, tmp_path, monkeypatch):
         """After the retry cap, the day IS marked done so the loop moves on."""
         import asyncio
 
@@ -1591,9 +1550,7 @@ class TestCveReportSchedulerRetry:
         assert sentinel.exists()
 
     @pytest.mark.asyncio
-    async def test_successful_send_marks_sent_immediately_no_retry(
-        self, tmp_path, monkeypatch
-    ):
+    async def test_successful_send_marks_sent_immediately_no_retry(self, tmp_path, monkeypatch):
         import asyncio
 
         import gateway.security.daily_cve_report as _mod
@@ -1642,9 +1599,7 @@ class TestCveReportSchedulerRetry:
 
 class TestUpstreamCveCheckSchedulerRetry:
     @pytest.mark.asyncio
-    async def test_undelivered_new_cves_retries_not_marked_checked(
-        self, tmp_path, monkeypatch
-    ):
+    async def test_undelivered_new_cves_retries_not_marked_checked(self, tmp_path, monkeypatch):
         import asyncio
 
         import gateway.security.daily_cve_report as _mod
