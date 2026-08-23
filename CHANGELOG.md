@@ -8,6 +8,48 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.1] "A2A Governance" (2026-08-22)
+
+### Summary
+
+Patch release closing out a multi-day investigation into why scheduled
+security/status reports and Hermes cron jobs were silently failing to
+deliver, plus a CI supply-chain hardening fix.
+
+### Fixed
+
+- **Hermes cron jobs silently produced empty output for days** — three
+  compounding bugs: broken Telegram delivery path (`patch_telegram_send_base_url.py`),
+  `docker-socket-proxy` returning a spurious 405 that silently disabled the
+  sandboxed `terminal` tool for every cron job since sandboxing was enabled
+  (fixed with a new TCP relay, `docker_proxy_relay.py`), and a stale
+  `qwen3-14b-rapid` model alias hitting the wrong client-side timeout floor
+  for the real underlying Nemotron model.
+- **Gateway's daily CVE/Trivy report and upstream-CVE/GHSA-advisory watch
+  schedulers marked a day as "sent" even when the Telegram delivery itself
+  failed** — a single bad send silently dropped that day's report forever
+  with no retry and no visible signal. Now retries (bounded, 1h backoff)
+  before giving up, and only marks a day done once delivery actually
+  succeeds or nothing needed sending.
+- **CI**: `aquasecurity/trivy-action` was pinned to the mutable `@master`
+  branch ref instead of a verified, immutable commit SHA — the only such
+  reference in the repo's workflows, closed after review of the March 2026
+  TeamPCP Trivy supply-chain incident (this repo's CI history predates that
+  incident, so no historical exposure, but the pin is fixed regardless).
+
+### Added
+
+- New Hermes cron job ("Daily Component Health Digest") reporting gateway
+  security score, Trivy scan freshness, Hermes/OpenClaw/gateway container
+  health, orphaned sandbox container count, and failing cron jobs — daily
+  via Telegram.
+- Hermes now has read-only access to the gateway's `security-reports`
+  volume (`run-standalone.sh`), so cron jobs can read Trivy/ClamAV/Falco/
+  Wazuh output directly instead of only through the gateway's own alert
+  pipeline.
+
+---
+
 ## [1.5.0] "A2A Governance" (2026-08-14)
 
 ### Summary
