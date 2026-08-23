@@ -8,6 +8,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.3] (2026-08-23)
+
+### Summary
+
+Two more Telegram/cron delivery fixes shipped the same day as v1.5.2, closing
+out remaining gaps in that release's "Known gaps" list.
+
+### Fixed
+
+- **Cron job Telegram delivery bypassed the v1.5.2 base_url patch, hit a
+  blocked direct connection** — the base_url fix only covered the
+  agent-invoked `send_message` tool call path (`_standalone_send` in
+  `plugins/platforms/telegram/adapter.py`). Every cron job with
+  `Deliver: telegram` goes through a completely separate call site
+  (`_send_to_platform` in `tools/send_message_tool.py`, called directly by
+  `cron/scheduler.py`) that never got the fix, so cron delivery still fell
+  back to a direct `api.telegram.org` connection — blocked by design.
+  Extended the patch script with a third anchor covering this call site.
+- **"AgentShroud Daily Check-in" dumped raw ssh-exec.sh JSON envelopes
+  verbatim to Telegram** instead of a readable report — the command payload
+  just echoed each tool call's raw response with no parsing. Rewrote it to
+  parse each response and print only stdout/stderr, with a compact
+  `⚠ <error> (exit N)` line on failure.
+- **Two latent shell bugs found while building the check-in fix**: (1)
+  piping captured output through `echo "$out" | node ...` corrupted the
+  JSON, since `/bin/sh` is `dash` in both bot images and dash's `echo`
+  interprets backslash escapes (XSI semantics) by default, turning escaped
+  `\n` into literal newline bytes — invalid per RFC 8259. Fixed with
+  `printf '%s\n'`. (2) `agentshroud-ssh-exec.sh` and
+  `agentshroud-ssh-write-file.sh` both wrote their gateway HTTP response to
+  a fixed filename instead of PID-suffixed like their sibling payload
+  files — a race under concurrent invocations. Fixed to match.
+
+---
+
 ## [1.5.2] (2026-08-23)
 
 ### Summary

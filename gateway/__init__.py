@@ -4,4 +4,4 @@
 # Unauthorized reproduction, distribution, or use of the AgentShroud name or brand is strictly prohibited.
 """AgentShroud Gateway Package"""
 
-__version__ = "1.5.2"
+__version__ = "1.5.3"

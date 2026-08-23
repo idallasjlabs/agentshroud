@@ -91,7 +91,7 @@ Configuration locations:
 | **Product** | AgentShroud™ — Enterprise Governance Proxy for Autonomous AI Agents |
 | **Trademark** | AgentShroud™ — Isaiah Dallas Jefferson, Jr. — Federal registration pending |
 | **CIE** | Isaiah Jefferson |
-| **Current Version** | v1.5.2 |
+| **Current Version** | v1.5.3 |
 | **Language** | Python 3.9+ |
 | **Test Coverage** | CI gate: 84% (`--cov-fail-under=84` in `.github/workflows/ci.yml`; `gateway/pyproject.toml fail_under=85` is the tool default, CI's flag overrides it) — 7,000+ tests; maintain or improve. Run `pytest --collect-only gateway/tests/` for the current exact count, it grows with the codebase. |
 
