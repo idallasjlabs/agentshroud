@@ -1,0 +1,29 @@
+---
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+type: "document"
+community: "Skill (i-browser)"
+location: "L6"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Skill_i-browser
+---
+
+# Browser — Secure Browser Automation
+
+## Connections
+- [[Approval Integration_2]] - `contains` [EXTRACTED]
+- [[Audit Logging_2]] - `contains` [EXTRACTED]
+- [[Best Practices_4]] - `contains` [EXTRACTED]
+- [[Core Security Principles_2]] - `contains` [EXTRACTED]
+- [[Example Apple ID Creation (Semi-Automated)_2]] - `contains` [EXTRACTED]
+- [[Limitations_2]] - `contains` [EXTRACTED]
+- [[Risk Levels_2]] - `contains` [EXTRACTED]
+- [[SKILL_136]] - `contains` [EXTRACTED]
+- [[Security Architecture_3]] - `contains` [EXTRACTED]
+- [[Security Configuration_2]] - `contains` [EXTRACTED]
+- [[Security Guarantees_2]] - `contains` [EXTRACTED]
+- [[Troubleshooting_11]] - `contains` [EXTRACTED]
+- [[Usage_87]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Skill_i-browser
