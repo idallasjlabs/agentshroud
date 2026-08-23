@@ -584,6 +584,23 @@ def test_local_failover_base_routes_omlx_deepseek_r1_qwen3_8b():
     assert base == OMLX_API_BASE
 
 
+def test_local_failover_base_routes_omlx_qwen3_coder_before_generic_qwen3():
+    """Qwen3-Coder-30B-A3B (registered opt-in coding model, served via oMLX)
+    must win over the generic 'qwen3' -> LM Studio route, same ordering-bug
+    class as the Fieldflare/oMLX-gemma regression tests above. Without this,
+    a coding job request silently lands on LM Studio instead of the oMLX
+    instance the model actually runs on."""
+    base = LLMProxy._local_failover_base("qwen3-coder-30b-a3b")
+    assert base == OMLX_API_BASE
+
+
+def test_local_failover_base_other_qwen3_models_still_route_to_lmstudio():
+    """Non-coder Qwen3 models (e.g. the 14B base) keep the generic LM Studio
+    route — the new qwen3-coder entry must not shadow them."""
+    base = LLMProxy._local_failover_base("qwen3-14b")
+    assert base == LMSTUDIO_API_BASE
+
+
 def test_local_backend_headers_injects_bearer_token_for_omlx(monkeypatch):
     """oMLX requires a bearer token, unlike LM Studio/mlx_lm/Fieldflare."""
     monkeypatch.setattr(llm_proxy_module, "OMLX_API_KEY", "test-omlx-key-123")

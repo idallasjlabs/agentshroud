@@ -136,7 +136,13 @@ LOCAL_MODEL_ROUTES: dict[str, str] = {
     # every affected cron job's output file with just its header. New alias
     # matches Hermes's own floor-table pattern so it gets the correct budget.
     "nemotron-3.5-lightning-rapid": RAPID_MLX_API_BASE,  # Rapid-MLX — same backend, correctly-named alias
-    "qwen3": LMSTUDIO_API_BASE,  # Qwen3 family (14b, coder, etc.) — LM Studio on :1234
+    # qwen3-coder MUST precede the generic "qwen3" entry below for the same
+    # first-prefix-wins reason as qwen3.8-27b-mlx/qwen3-14b-rapid above.
+    # Registered opt-in coding model (2026-08-22 default set) — served via
+    # oMLX on :8000 when enabled (`services.sh omlx-coder-enable`), not
+    # LM Studio, so it must not fall through to the generic "qwen3" entry.
+    "qwen3-coder": OMLX_API_BASE,  # oMLX — Qwen3-Coder-30B-A3B, opt-in coding model
+    "qwen3": LMSTUDIO_API_BASE,  # Qwen3 family (14b, etc.) — LM Studio on :1234
     "qwen2.5-coder": LMSTUDIO_API_BASE,  # Coding — LM Studio on :1234
     "gemma": LMSTUDIO_API_BASE,  # Other Gemma models — LM Studio on :1234
 }
