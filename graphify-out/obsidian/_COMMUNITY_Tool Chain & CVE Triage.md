@@ -1,0 +1,366 @@
+---
+type: community
+cohesion: 0.01
+members: 248
+---
+
+# Tool Chain & CVE Triage
+
+**Cohesion:** 0.01 - loosely connected
+**Members:** 248 nodes
+
+## Members
+- [[.__init__()_122]] - code - gateway/security/tool_chain_analyzer.py
+- [[.__init__()_123]] - code - gateway/security/tool_result_injection.py
+- [[._calculate_risk_score()]] - code - gateway/security/tool_chain_analyzer.py
+- [[._cleanup_old_sessions()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[._detect_chain_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[._detect_encoded_injection()]] - code - gateway/security/tool_result_injection.py
+- [[._detect_unicode_obfuscation()]] - code - gateway/security/tool_result_injection.py
+- [[._load_custom_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[._load_default_patterns()]] - code - gateway/security/tool_chain_analyzer.py
+- [[._matches_source_pattern()]] - code - gateway/security/tool_chain_analyzer.py
+- [[._trigger_alert()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[.add_pattern()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.analyze_tool_call()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.analyzer()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.analyzer()_2]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.get_global_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[.get_session_stats()_1]] - code - gateway/security/tool_chain_analyzer.py
+- [[.sanitize_tool_params()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.score_reversibility()]] - code - gateway/security/tool_chain_analyzer.py
+- [[.setup_method()_36]] - code - gateway/tests/test_tool_injection_scan.py
+- [[.test_alert_callbacks()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_approval_system()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_base64_clean_content_not_flagged()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_base64_encoded_injection()_1]] - code - gateway/tests/test_tool_injection_scan.py
+- [[.test_base64_encoded_injection()_2]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_basic_tool_call_tracking()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_chain_length_limits()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_clean_content_passes_through()]] - code - gateway/tests/test_tool_injection_scan.py
+- [[.test_clean_params_pass()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_clean_tool_output_passes()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_config_file_to_outbound()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_credential_to_outbound_blocking()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_custom_patterns()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_delete_file_mostly_irreversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_disabled_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_edge_cases()_3]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_empty_content()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_exec_to_network_pattern()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_global_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_high_severity_strips_content()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_ignore_instructions_injection_high_severity()]] - code - gateway/tests/test_tool_injection_scan.py
+- [[.test_ignore_previous_instructions()_1]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_initialization()_4]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_jailbreak_attempt()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_legitimate_file_path_passes()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_medium_severity_warns()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_multiple_params_scanned()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_new_instructions_override()_1]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_none_content()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_normal_tool_sequences_allowed()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_param_path_traversal_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_param_sql_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_param_template_injection_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_pattern_configuration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_prompt_extraction()_1]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_rapid_file_enumeration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_read_file_fully_reversible()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_read_to_http_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_read_to_message_exfiltration()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_reversibility_below_threshold_has_reasoning()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_risk_score_calculation()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_role_reassignment()_2]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_rtl_override_detected()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_sanitization_returns_cleaned()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_session_cleanup()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_session_stats()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_shell_bleed_bypass_blocked()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_social_engineering_admin()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_system_delimiter_injection()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_time_window_expiry()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_unknown_tool_defaults_low()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[.test_xml_function_injection()]] - code - gateway/tests/test_tool_result_injection.py
+- [[.test_xml_function_injection_detection()]] - code - gateway/tests/test_tool_injection_scan.py
+- [[.test_zero_width_chars_dont_bypass_detection()]] - code - gateway/tests/test_tool_result_injection.py
+- [[A detected suspicious chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Actions to take on suspicious chains.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Add a new chain pattern at runtime.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - document - .agents/skills/i-sec-defense/SKILL.md
+- [[AgentShroud Module Inventory (Blue Team)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
+- [[AgentShroud Module Inventory (Red Team)]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
+- [[AgentShroud Red Team Adversarial Tester (SEC-OFFENSE)]] - document - .agents/skills/i-sec-offense/SKILL.md
+- [[AgentShroud's stance on one vulnerability class.]] - rationale - scripts/triage-cve-mitigations.py
+- [[AlarmStatus]] - code - gateway/soc/models.py
+- [[Analyze a tool call for suspicious chain patterns.          Args             se]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Any_62]] - code - gateway/security/tool_chain_analyzer.py
+- [[Any_77]] - code - scripts/triage-cve-mitigations.py
+- [[Benign base64 content should not trigger encoded injection.]] - rationale - gateway/tests/test_tool_result_injection.py
+- [[Best-effort repo-relative path string for display (falls back to str).]] - rationale - scripts/triage-cve-mitigations.py
+- [[Blue Team Security Auditor README]] - document - .agents/skills/i-sec-defense/README.md
+- [[CLI entry point.      Args         argv Optional argv override (for tests).]] - rationale - scripts/triage-cve-mitigations.py
+- [[Calculate risk score for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ChainAction]] - code - gateway/security/tool_chain_analyzer.py
+- [[ChainMatch]] - code - gateway/security/tool_chain_analyzer.py
+- [[ChainPattern]] - code - gateway/security/tool_chain_analyzer.py
+- [[Check for base64 or hex encoded injection attempts.]] - rationale - gateway/security/tool_result_injection.py
+- [[Check if a call matches the source pattern, including parameter analysis.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ClassProfile]] - code - scripts/triage-cve-mitigations.py
+- [[Classify an advisory into its vulnerability class from title+description.      D]] - rationale - scripts/triage-cve-mitigations.py
+- [[Compute resulting-status counts and gap themes from triage results.      Args]] - rationale - scripts/triage-cve-mitigations.py
+- [[Coverage]] - code - scripts/triage-cve-mitigations.py
+- [[Create a ToolChainAnalyzer instance for testing.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Create a mock alert callback for testing._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Definition of a suspicious tool call pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Detect if current call completes a suspicious pattern.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Detect unicode-based obfuscation techniques.]] - rationale - gateway/security/tool_result_injection.py
+- [[Enterprise Security Feature Priorities (Steve Hay Assessment, Red Team copy)]] - document - skills/custom/agentshroud-redteam/references/steve-hay-assessment.md
+- [[Enum]] - code
+- [[FR3 System Integrity]] - concept - docs/compliance/iec-62443-matrix.md
+- [[FindingSeverity]] - code - gateway/proxy/web_content_scanner.py
+- [[Fixed taxonomy of advisory vulnerability classes.]] - rationale - scripts/triage-cve-mitigations.py
+- [[Get global analyzer statistics.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Get statistics for a session._1]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[How reversible an action is (1.0 = fully reversible, 0.0 = irreversible).]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Initialize the scanner with optional custom rules.          Args             cu]] - rationale - gateway/security/tool_result_injection.py
+- [[Initialize the tool chain analyzer.          Args             config Configura]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[InjectionAction]] - code - gateway/security/tool_result_injection.py
+- [[InjectionRule]] - code - gateway/security/tool_result_injection.py
+- [[InjectionSeverity]] - code - gateway/security/tool_result_injection.py
+- [[IsolationStatus]] - code - gateway/security/agent_isolation.py
+- [[Load custom patterns from configuration.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Load default suspicious chain patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Module Coverage Heat Map Legend (EMAC—)]] - concept - skills/custom/agentshroud-blueteam/SKILL.md
+- [[ParamScanResult]] - code - gateway/security/tool_chain_analyzer.py
+- [[Parse a dotted numeric version (e.g. ``2026.4.11``) to a tuple.      Returns `]] - rationale - scripts/triage-cve-mitigations.py
+- [[Path_48]] - code - scripts/triage-cve-mitigations.py
+- [[Produce an honest mitigation verdict for a single advisory entry.      Combines]] - rationale - scripts/triage-cve-mitigations.py
+- [[Read the currently pinned OpenClaw version from dockerversions.env.      Return]] - rationale - scripts/triage-cve-mitigations.py
+- [[Red Team Adversarial Tester README]] - document - .agents/skills/i-sec-offense/README.md
+- [[Red Team Assessment Plan (Steve Hay Plan, Red Team copy)]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
+- [[Remove old sessions to prevent memory bloat._1]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Render a Python list-of-strings literal matching the file's style.]] - rationale - scripts/triage-cve-mitigations.py
+- [[Render the gap report markdown (development plan).      Args         agent_id]] - rationale - scripts/triage-cve-mitigations.py
+- [[Represents a single tool call.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Result of scanning tool parameters for injection patterns.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Return a reversibility score for the given tool call (1.0 = safe, 0.1 = irrevers]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[Return the index just past a field value that may span multiple lines.      Trac]] - rationale - scripts/triage-cve-mitigations.py
+- [[ReversibilityScore]] - code - gateway/security/tool_chain_analyzer.py
+- [[Rewrite ``status``  ``mitigation``  ``defense_layers`` in place.      For each]] - rationale - scripts/triage-cve-mitigations.py
+- [[Risk levels for tool call chains.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[RiskLevel_4]] - code - gateway/security/tool_chain_analyzer.py
+- [[Rule for detecting injection patterns in tool results.]] - rationale - gateway/security/tool_result_injection.py
+- [[SKILL_190]] - document - skills/custom/agentshroud-blueteam/SKILL.md
+- [[STPA-Sec Loss Categories (L-1 Data Disclosure, L-2 Unauthorized Actions, L-3 Agent Integrity, L-4 Audit Integrity)]] - concept - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
+- [[STPA-Sec Methodology_2]] - concept - .agents/skills/i-sec-defense/SKILL.md
+- [[STPA-Sec Methodology_1]] - concept - docker/config/openclaw/skills/i-sec-defense/SKILL.md
+- [[Scan tool parameters for injection payloads and return sanitized copy.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[SecureClaw Security Review (SEC)]] - document - .agents/skills/i-sec/SKILL.md
+- [[Security Review (SEC) README]] - document - .agents/skills/i-sec/README.md
+- [[SessionChainContext]] - code - gateway/security/tool_chain_analyzer.py
+- [[Set up test fixtures._2]] - rationale - gateway/tests/test_tool_injection_scan.py
+- [[Steve Hay Adversary Model]] - concept - .agents/skills/i-sec-offense/SKILL.md
+- [[Test alert callback functionality._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test approval system interface.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test basic tool call tracking functionality.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test cases for ToolChainAnalyzer class.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test cases for ToolResultInjectionScanner.]] - rationale - gateway/tests/test_tool_injection_scan.py
+- [[Test cleanup of old sessions._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of 'ignore previous instructions' injection.]] - rationale - gateway/tests/test_tool_injection_scan.py
+- [[Test detection of XML function call injection.]] - rationale - gateway/tests/test_tool_injection_scan.py
+- [[Test detection of base64 encoded injections.]] - rationale - gateway/tests/test_tool_injection_scan.py
+- [[Test detection of config file access → outbound pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of exec → network communication pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of rapid file enumeration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of read → HTTP exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test detection of read → message exfiltration pattern.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test edge cases and error conditions._2]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test getting global statistics.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test getting session statistics._1]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test loading custom patterns from configuration.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test proper initialization of ToolChainAnalyzer.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test risk score calculation for detected chains.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that chain length limits are respected.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that clean content passes through unchanged.]] - rationale - gateway/tests/test_tool_injection_scan.py
+- [[Test that credential access → outbound tools are blocked.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that disabled analyzer allows all calls.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that normal tool sequences pass through.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that patterns are properly configured.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[Test that patterns don't match outside time windows.]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[TestCleanContent]] - code - gateway/tests/test_tool_result_injection.py
+- [[TestEncodedInjection]] - code - gateway/tests/test_tool_result_injection.py
+- [[TestHighSeverity]] - code - gateway/tests/test_tool_result_injection.py
+- [[TestMediumSeverity]] - code - gateway/tests/test_tool_result_injection.py
+- [[TestParamSanitization]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestReversibilityScoring]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestSanitization]] - code - gateway/tests/test_tool_result_injection.py
+- [[TestShellBleedPatterns]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestToolChainAnalyzer_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[TestToolResultInjectionScanner]] - code - gateway/tests/test_tool_injection_scan.py
+- [[TestUnicodeObfuscation]] - code - gateway/tests/test_tool_result_injection.py
+- [[The status that will actually be written for a result.      Unapplied verdicts f]] - rationale - scripts/triage-cve-mitigations.py
+- [[The verdict for one advisory.]] - rationale - scripts/triage-cve-mitigations.py
+- [[Threat levels for detected issues.]] - rationale - gateway/security/git_guard.py
+- [[ThreatLevel_2]] - code - gateway/security/git_guard.py
+- [[Tool call chain context for a session.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[ToolCall]] - code - gateway/security/tool_chain_analyzer.py
+- [[Triage every ``under_review`` entry for agent_id (per-agent isolated).      Re]] - rationale - scripts/triage-cve-mitigations.py
+- [[TriageResult]] - code - scripts/triage-cve-mitigations.py
+- [[Trigger alert callbacks for a detected chain.]] - rationale - gateway/security/tool_chain_analyzer.py
+- [[True when ``fixed_in`` version is = the running image (already patched).      A]] - rationale - scripts/triage-cve-mitigations.py
+- [[URLVerdict]] - code - gateway/proxy/url_analyzer.py
+- [[Unsafe Control Actions (UCA-1 through UCA-17)]] - concept - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
+- [[Verify expanded _PARAM_INJECTION_PATTERNS catch piped-interpreter and     heredo]] - rationale - gateway/tests/test_tool_chain_analyzer.py
+- [[VulnClass]] - code - scripts/triage-cve-mitigations.py
+- [[Zero-width chars are stripped by normalize_input, so injection is still caught.]] - rationale - gateway/tests/test_tool_result_injection.py
+- [[_consume_field()]] - code - scripts/triage-cve-mitigations.py
+- [[_py_list_literal()]] - code - scripts/triage-cve-mitigations.py
+- [[_read_running_version()]] - code - scripts/triage-cve-mitigations.py
+- [[_rel()]] - code - scripts/triage-cve-mitigations.py
+- [[agent_isolation.py]] - code - gateway/security/agent_isolation.py
+- [[alert_dispatcher.py]] - code - gateway/security/alert_dispatcher.py
+- [[clamav_scanner.py]] - code - gateway/security/clamav_scanner.py
+- [[classify()_1]] - code - scripts/triage-cve-mitigations.py
+- [[dockerscriptsverify-security.sh]] - concept - docker/scripts/verify-security.sh
+- [[docsreviewsblue-team-audit-v0.7.0]] - concept - docs/reviews/blue-team-audit-v0.7.0.md
+- [[docsreviewsred-team-report-v0.7.0]] - concept - docs/reviews/red-team-report-v0.7.0.md
+- [[drift_detector.py]] - code - gateway/security/drift_detector.py
+- [[final_status()]] - code - scripts/triage-cve-mitigations.py
+- [[gatewaysecuritycredential_injector.py (CredentialInjector)]] - concept - gateway/security/credential_injector.py
+- [[gatewayteststest_redteam_probes.py]] - concept - gateway/tests/test_redteam_probes.py
+- [[git_guard.py]] - code - gateway/security/git_guard.py
+- [[is_source_fixed()]] - code - scripts/triage-cve-mitigations.py
+- [[main()_24]] - code - scripts/triage-cve-mitigations.py
+- [[mock_alert_callback()_1]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[parse_version()]] - code - scripts/triage-cve-mitigations.py
+- [[render_gap_report()]] - code - scripts/triage-cve-mitigations.py
+- [[rewrite_registry_text()_1]] - code - scripts/triage-cve-mitigations.py
+- [[scan.sh]] - code - docker/scripts/scan.sh
+- [[scan.sh script]] - code - docker/scripts/scan.sh
+- [[scanner()]] - code - gateway/tests/test_tool_result_injection.py
+- [[security-scan.sh (unified scan dispatcher)]] - code - docker/scripts/security-scan.sh
+- [[str]] - code
+- [[summarize()]] - code - scripts/triage-cve-mitigations.py
+- [[test_tool_chain_analyzer.py]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[test_tool_injection_scan.py]] - code - gateway/tests/test_tool_injection_scan.py
+- [[test_tool_result_injection.py]] - code - gateway/tests/test_tool_result_injection.py
+- [[tool_chain_analyzer()]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[tool_chain_analyzer.py]] - code - gateway/security/tool_chain_analyzer.py
+- [[tool_result_injection.py]] - code - gateway/security/tool_result_injection.py
+- [[triage-cve-mitigations.py]] - code - scripts/triage-cve-mitigations.py
+- [[triage_agent()]] - code - scripts/triage-cve-mitigations.py
+- [[triage_entry()]] - code - scripts/triage-cve-mitigations.py
+- [[trust_manager.py]] - code - gateway/security/trust_manager.py
+- [[url_analyzer.py]] - code - gateway/proxy/url_analyzer.py
+- [[web_config.py]] - code - gateway/proxy/web_config.py
+- [[web_content_scanner.py]] - code - gateway/proxy/web_content_scanner.py
+- [[web_proxy.py]] - code - gateway/proxy/web_proxy.py
+- [[xml_leak_filter.py]] - code - gateway/security/xml_leak_filter.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Tool_Chain__CVE_Triage
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 63 edges to [[_COMMUNITY_RBAC & Ingest Middleware]]
+- 33 edges to [[_COMMUNITY_Security Audit & Watchtower Tests]]
+- 17 edges to [[_COMMUNITY_Security Hardening]]
+- 14 edges to [[_COMMUNITY_Url Analyzer]]
+- 13 edges to [[_COMMUNITY_Pipeline Unit]]
+- 10 edges to [[_COMMUNITY_Soc Models]]
+- 10 edges to [[_COMMUNITY_OAuth & Metadata Guard]]
+- 8 edges to [[_COMMUNITY_Progressive Trust Integration]]
+- 7 edges to [[_COMMUNITY_Web Proxy Security]]
+- 7 edges to [[_COMMUNITY_Multi Turn Tracker (security)]]
+- 6 edges to [[_COMMUNITY_A2a Governance (security)]]
+- 5 edges to [[_COMMUNITY_Mcp Proxy]]
+- 5 edges to [[_COMMUNITY_Egress Filter]]
+- 5 edges to [[_COMMUNITY_Agentshroud.yaml (03 - Configuration)]]
+- 5 edges to [[_COMMUNITY_Memory Lifecycle & Integrity]]
+- 5 edges to [[_COMMUNITY_Subagent Governance (security)]]
+- 5 edges to [[_COMMUNITY_Web Proxy]]
+- 5 edges to [[_COMMUNITY_Git Guard (security)]]
+- 5 edges to [[_COMMUNITY_Security Hardening]]
+- 4 edges to [[_COMMUNITY_Browse (scripts)]]
+- 4 edges to [[_COMMUNITY_Key Rotation]]
+- 4 edges to [[_COMMUNITY_Router (soc)]]
+- 4 edges to [[_COMMUNITY_SOC Services]]
+- 4 edges to [[_COMMUNITY_Soc Websocket]]
+- 4 edges to [[_COMMUNITY_Dns Filter]]
+- 4 edges to [[_COMMUNITY_Security Toolchain]]
+- 4 edges to [[_COMMUNITY_Tool Result Injection (security)]]
+- 3 edges to [[_COMMUNITY_Mcp Permissions]]
+- 3 edges to [[_COMMUNITY_A2a Policy (security)]]
+- 3 edges to [[_COMMUNITY_Browser Security]]
+- 3 edges to [[_COMMUNITY_Delegation]]
+- 3 edges to [[_COMMUNITY_Egress Approval (security)]]
+- 3 edges to [[_COMMUNITY_Egress Monitor]]
+- 3 edges to [[_COMMUNITY_Mcp Policy]]
+- 3 edges to [[_COMMUNITY_Module Stats]]
+- 3 edges to [[_COMMUNITY_Privacy Policy]]
+- 3 edges to [[_COMMUNITY_Killswitch Monitor & Observatory Mode]]
+- 3 edges to [[_COMMUNITY_Security Scheduler (scripts)]]
+- 3 edges to [[_COMMUNITY_Ingest API Main & Models]]
+- 3 edges to [[_COMMUNITY_Pipeline (proxy)]]
+- 3 edges to [[_COMMUNITY_Pipeline Unit]]
+- 3 edges to [[_COMMUNITY_Icon 64x64 (app)]]
+- 3 edges to [[_COMMUNITY_Privilege Separation & File Sandbox]]
+- 2 edges to [[_COMMUNITY_Browse (scripts)]]
+- 2 edges to [[_COMMUNITY_Browse (scripts)]]
+- 2 edges to [[_COMMUNITY_A2a Policy Default Failclosed]]
+- 2 edges to [[_COMMUNITY_Cross Bot Trust Ledger]]
+- 2 edges to [[_COMMUNITY_Tool ACL & Group RBAC]]
+- 2 edges to [[_COMMUNITY_Progressive Lockdown]]
+- 2 edges to [[_COMMUNITY_Subagent Monitor]]
+- 2 edges to [[_COMMUNITY_Browse (scripts)]]
+- 2 edges to [[_COMMUNITY_Multi Host]]
+- 2 edges to [[_COMMUNITY_Server (voice_gateway)]]
+- 2 edges to [[_COMMUNITY_Enhanced Approval]]
+- 2 edges to [[_COMMUNITY_Config]]
+- 2 edges to [[_COMMUNITY_Openclaw Sandbox Mode (04 - Environment Variables)]]
+- 2 edges to [[_COMMUNITY_Scanner Integration Coverage]]
+- 2 edges to [[_COMMUNITY_Clamav (05 - Dependencies)]]
+- 2 edges to [[_COMMUNITY_Audit Export]]
+- 2 edges to [[_COMMUNITY_Canary Tripwire]]
+- 2 edges to [[_COMMUNITY_Prompt Protection (security)]]
+- 2 edges to [[_COMMUNITY_Tool Result Pii]]
+- 1 edge to [[_COMMUNITY_Differential Pii Detector]]
+- 1 edge to [[_COMMUNITY_Group Rbac]]
+- 1 edge to [[_COMMUNITY_Outbound Filter]]
+- 1 edge to [[_COMMUNITY_Rbac Config (security)]]
+- 1 edge to [[_COMMUNITY_Skill Guard]]
+- 1 edge to [[_COMMUNITY_Multi Host (tools)]]
+- 1 edge to [[_COMMUNITY_Url Analyzer]]
+- 1 edge to [[_COMMUNITY_Url Analyzer]]
+- 1 edge to [[_COMMUNITY_Network Validator (security)]]
+- 1 edge to [[_COMMUNITY_Security Audit]]
+- 1 edge to [[_COMMUNITY_Resource Guard & Local Model Parity]]
+- 1 edge to [[_COMMUNITY_Egress Filter (security)]]
+- 1 edge to [[_COMMUNITY_Egress Filter]]
+- 1 edge to [[_COMMUNITY_Security Hardening]]
+- 1 edge to [[_COMMUNITY_Security Hardening]]
+- 1 edge to [[_COMMUNITY_Clamav Pipeline]]
+- 1 edge to [[_COMMUNITY_Config Integrity Monitor]]
+- 1 edge to [[_COMMUNITY_Heuristic Classifier (security)]]
+- 1 edge to [[_COMMUNITY_Telegram Proxy Core]]
+- 1 edge to [[_COMMUNITY_Key Vault]]
+- 1 edge to [[_COMMUNITY_Security Regressions V1 2]]
+- 1 edge to [[_COMMUNITY_Xml Leak Filter]]
+- 1 edge to [[_COMMUNITY_Generate Cve Page (scripts)]]
+- 1 edge to [[_COMMUNITY_Iec 62443 Matrix (compliance)]]
+- 1 edge to [[_COMMUNITY_Readme (skills)]]
+- 1 edge to [[_COMMUNITY_Skill (agentshroud-blueteam)]]
+- 1 edge to [[_COMMUNITY_.semgrep]]
+- 1 edge to [[_COMMUNITY_Phase 3a 3b Implementation (architecture)]]
+
+## Top bridge nodes
+- [[Enum]] - degree 114, connects to 44 communities
+- [[str]] - degree 48, connects to 23 communities
+- [[SKILL_190]] - degree 30, connects to 15 communities
+- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - degree 30, connects to 15 communities
+- [[IsolationStatus]] - degree 35, connects to 12 communities

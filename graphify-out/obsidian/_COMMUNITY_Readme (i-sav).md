@@ -1,0 +1,24 @@
+---
+type: community
+cohesion: 0.40
+members: 5
+---
+
+# Readme (i-sav)
+
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
+
+## Members
+- [[Purpose_102]] - document - docker/config/openclaw/skills/i-sav/README.md
+- [[README_107]] - document - docker/config/openclaw/skills/i-sav/README.md
+- [[Related Skills_111]] - document - docker/config/openclaw/skills/i-sav/README.md
+- [[System Audit Vault_2]] - document - docker/config/openclaw/skills/i-sav/README.md
+- [[Usage_112]] - document - docker/config/openclaw/skills/i-sav/README.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Readme_i-sav
+SORT file.name ASC
+```

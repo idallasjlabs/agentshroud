@@ -1,0 +1,291 @@
+---
+type: community
+cohesion: 0.01
+members: 242
+---
+
+# Resource Guard & Local Model Parity
+
+**Cohesion:** 0.01 - loosely connected
+**Members:** 242 nodes
+
+## Members
+- [[.__del__()]] - code - gateway/security/resource_guard.py
+- [[.__init__()_114]] - code - gateway/security/resource_guard.py
+- [[._alert_high_usage()]] - code - gateway/security/resource_guard.py
+- [[._build_bridge()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[._check_system_resources()_1]] - code - gateway/security/resource_guard.py
+- [[._cleanup_expired_usage()]] - code - gateway/security/resource_guard.py
+- [[._get_disk_io_stats()]] - code - gateway/security/resource_guard.py
+- [[._monitor_resources()]] - code - gateway/security/resource_guard.py
+- [[._start_monitoring_task()]] - code - gateway/security/resource_guard.py
+- [[.add_alert_callback()_1]] - code - gateway/security/resource_guard.py
+- [[.block_credentials()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.check_cpu_limit()]] - code - gateway/security/resource_guard.py
+- [[.check_disk_write_limit()]] - code - gateway/security/resource_guard.py
+- [[.check_memory_limit()]] - code - gateway/security/resource_guard.py
+- [[.check_resource()]] - code - gateway/security/resource_guard.py
+- [[.check_vram_headroom()]] - code - gateway/security/resource_guard.py
+- [[.cleanup_temp_files()]] - code - gateway/security/resource_guard.py
+- [[.filter_xml_blocks()_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.get_usage_stats()]] - code - gateway/security/resource_guard.py
+- [[.register_temp_file()]] - code - gateway/security/resource_guard.py
+- [[.sanitize()_4]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[.setup_method()_22]] - code - gateway/tests/test_resource_guard.py
+- [[.start_request_tracking()]] - code - gateway/security/resource_guard.py
+- [[.stop()_11]] - code - gateway/security/resource_guard.py
+- [[.stop_monitoring()]] - code - gateway/security/resource_guard.py
+- [[.teardown_method()_5]] - code - gateway/tests/test_resource_guard.py
+- [[.test_bridge_registered_via_add_alert_callback_fires_through()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_brief_spike_below_debounce_does_not_alert()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_check_cpu_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_check_disk_write_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_check_memory_limit_returns_false_on_exception()]] - code - gateway/tests/test_round2_hardening.py
+- [[.test_check_resource_over_limit_blocked()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_check_resource_temp_files_limit()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_check_resource_under_limit_passes()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_cleanup_keeps_fresh_agents()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_cleanup_removes_stale_agents()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_cleanup_tolerates_missing_file()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_cleanup_unlinks_existing_and_clears_registry()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_cpu_limit_check()]] - code - gateway/tests/test_security_audit.py
+- [[.test_cpu_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_cpu_limit_fails_closed_on_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_cpu_limit_ok_when_under()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_disabled_when_threshold_zero()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_disk_write_limit()]] - code - gateway/tests/test_security_audit.py
+- [[.test_disk_write_limit_allows_when_no_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_disk_write_limit_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_disk_write_limit_under_threshold()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_get_resource_guard_is_lazy_singleton()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_get_usage_stats_for_agent()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_get_usage_stats_system_wide()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_invalid_resource_type()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_memory_limit_check()]] - code - gateway/tests/test_security_audit.py
+- [[.test_memory_limit_fails_closed_on_error()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_memory_limit_ok_and_exceeded()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_missing_timestamp_falls_back_to_zero()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_multiple_agents_isolated()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_non_spike_alert_dispatched_with_medium_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_passes_with_sufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_prompt_guard_large_input()]] - code - gateway/tests/test_security_audit.py
+- [[.test_register_blocks_over_limit()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_register_under_limit()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_rejects_insufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_request_count_limiting()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_resource_guard_config()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_resource_guard_init()]] - code - gateway/tests/test_security_audit.py
+- [[.test_session_rate_limit()]] - code - gateway/tests/test_security_audit.py
+- [[.test_setup_resource_guard_returns_real_guard_with_default_limits()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_setup_with_custom_limits_overrides_defaults()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_spike_alert_dispatched_with_high_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_start_request_tracking_records_baseline()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_start_request_tracking_survives_psutil_error()]] - code - gateway/tests/test_resource_guard_limits.py
+- [[.test_stop_cancels_monitor_task()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_stop_cancels_monitor_task_and_idempotent()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[.test_subagent_monitor_loaded()]] - code - gateway/tests/test_security_audit.py
+- [[.test_system_resource_monitoring_alerts_after_debounce()]] - code - gateway/tests/test_resource_guard.py
+- [[.test_usage_stats()]] - code - gateway/tests/test_security_audit.py
+- [[.test_window_expiry_resets_usage()]] - code - gateway/tests/test_resource_guard.py
+- [[128k token request at 4 bytestoken KV cache triggers rejection at 4096 MB headr]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[A Gemma model that is NOT Turbo Fieldflare's exact ID still falls     through to]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[A single over-threshold sample followed by an under-threshold sample is suppress]] - rationale - gateway/tests/test_resource_guard.py
+- [[Add a callback function to be called when resource alerts are triggered.]] - rationale - gateway/security/resource_guard.py
+- [[Anthropic-format tool_use response returns the same shape in local mode.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Any_57]] - code - gateway/security/resource_guard.py
+- [[Any_69]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[Background task to monitor resource usage and trigger alerts.]] - rationale - gateway/security/resource_guard.py
+- [[Best-effort cleanup for test contexts that don't call stop().]] - rationale - gateway/security/resource_guard.py
+- [[Check if agent has exceeded CPU time limit.]] - rationale - gateway/security/resource_guard.py
+- [[Check if agent has exceeded disk write limit.]] - rationale - gateway/security/resource_guard.py
+- [[Check if agent has exceeded memory limit.]] - rationale - gateway/security/resource_guard.py
+- [[Check if resource usage is allowed for an agent.          Args             agen]] - rationale - gateway/security/resource_guard.py
+- [[Check system-wide resource usage for anomalies (synchronous).]] - rationale - gateway/security/resource_guard.py
+- [[Clean up old usage data (older than 5 minutes).]] - rationale - gateway/security/resource_guard.py
+- [[Clean up temporary files for an agent.]] - rationale - gateway/security/resource_guard.py
+- [[Cloud mode Anthropic tool_use responses are unmodified (baseline parity).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Configuration for resource limits.]] - rationale - gateway/security/resource_guard.py
+- [[Current resource usage metrics.]] - rationale - gateway/security/resource_guard.py
+- [[End-to-end register the bridge on a real ResourceGuard, trigger         its ale]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[Exception during secondary dispatch increments failed stat and returns None.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Fieldflare and other no-auth local backends are left untouched.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[For Ollama backend the colon is kept (Ollama expects it).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Full round-trip each model ref is normalized and dispatched to the correct back]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Get current disk IO statistics.]] - rationale - gateway/security/resource_guard.py
+- [[Get current usage statistics.]] - rationale - gateway/security/resource_guard.py
+- [[Get the global resource guard instance, creating it lazily on first call.]] - rationale - gateway/security/resource_guard.py
+- [[Hermes sends OpenAI-compat requests; local qwen3 model routes to LM Studio.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[If no secondary is configured and primary hits OOM, 503 is returned.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[If the model already uses dashes (LM Studio native ID), normalizing again is a n]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[In cloud mode, Hermes Claude model routes to Anthropic endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[LLMProxy_2]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[Large inputs shouldn't crash prompt guard.]] - rationale - gateway/tests/test_security_audit.py
+- [[Monitor and limit resource usage per agentrequest.]] - rationale - gateway/security/resource_guard.py
+- [[OOM (503 backend_unavailable from primary local) triggers secondary local failov]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[OpenAI-format tool_calls response returns the same shape in local mode.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Pre-flight VRAM headroom check before dispatching a long-context local-model cal]] - rationale - gateway/security/resource_guard.py
+- [[Raised when a local-model call is rejected because estimated VRAM usage     woul]] - rationale - gateway/security/resource_guard.py
+- [[Recreate the lifespan bridge closure verbatim from gatewayingest_apilifespan.p]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[Register a temporary file for tracking.]] - rationale - gateway/security/resource_guard.py
+- [[ResourceGuard]] - code - gateway/security/resource_guard.py
+- [[ResourceGuard is instantiated at startup and reachable on app_state.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[ResourceLimits]] - code - gateway/security/resource_guard.py
+- [[ResourceUsage]] - code - gateway/security/resource_guard.py
+- [[Returns a copy — never mutates the caller's headers dict in place.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Secondary failover for Anthropic-format (v1messages) path translates and retur]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Secondary model returning non-200 increments failed stat and returns None.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Setup resource guard with custom limits.]] - rationale - gateway/security/resource_guard.py
+- [[Small context request passes VRAM headroom check.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Start background monitoring task.]] - rationale - gateway/security/resource_guard.py
+- [[Start tracking resources for a specific agentrequest.]] - rationale - gateway/security/resource_guard.py
+- [[Stop background monitoring task cleanly.]] - rationale - gateway/security/resource_guard.py
+- [[Stop background monitoring.]] - rationale - gateway/security/resource_guard.py
+- [[Sustained high CPU fires the alert after debounce samples are crossed.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test ResourceGuardConfig dataclass.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test handling of invalid resource types.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test request count per minute limiting.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test resource limits and DoS prevention.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test temp file count limiting.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that different agents have isolated resource tracking.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that resource usage over limits is blocked.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that resource usage resets after time window.]] - rationale - gateway/tests/test_resource_guard.py
+- [[Test that resource usage under limits passes.]] - rationale - gateway/tests/test_resource_guard.py
+- [[TestCpuMemoryDiskLimits]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestExpiredUsageCleanup]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestGlobalAccessor]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestResourceGuard]] - code - gateway/tests/test_resource_guard.py
+- [[TestResourceGuardAlertBridge]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceGuardFailClosed]] - code - gateway/tests/test_round2_hardening.py
+- [[TestResourceGuardLifecycle]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceGuardWiring]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[TestResourceProtection]] - code - gateway/tests/test_security_audit.py
+- [[TestTempFiles]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestUsageStatsAndTracking]] - code - gateway/tests/test_resource_guard_limits.py
+- [[TestVramHeadroom]] - code - gateway/tests/test_resource_guard_limits.py
+- [[The lifespan bridges ResourceGuard's native callback payload to AlertDispatcher.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[The lifespan must stop the background monitor task on shutdown.]] - rationale - gateway/tests/test_resource_guard_wiring.py
+- [[Trigger a resource usage alert synchronously.]] - rationale - gateway/security/resource_guard.py
+- [[Turbo Fieldflare's exact model ID must win over the generic 'gemma' LM     Studi]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Unknown path (not v1messages, not is_openai) returns None.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[VRAM check is skipped when max_vram_headroom_mb=0 (disabled).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[VRAMHeadroomError]] - code - gateway/security/resource_guard.py
+- [[VRAMHeadroomError must be a distinct exception, not a subclass of ResourceWarnin]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[Verify resource check methods return False (deny) on exception.]] - rationale - gateway/tests/test_round2_hardening.py
+- [[When AGENTSHROUD_LOCAL_FAILOVER_ON_OOM=0, OOM passes through without retry.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_FakeSanitizer_1]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_anthropic_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_anthropic_tool_use_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_get_local_model strips the provider prefix for a Fieldflare ref, same     as it]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_get_local_secondary_model reads AGENTSHROUD_LOCAL_SECONDARY_MODEL_REF.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_get_local_secondary_model returns None if env var is unset.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom detects 'out of memory' in error message string.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom handles raw non-JSON bodies from some backends.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom returns False for cloud 429 quota errors (different failover path)]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom returns False for non-OOM raw 500 bodies.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom returns False for successful responses.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_is_local_oom returns True for backend_unavailable 503 bodies.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_local_failover_base resolves correct backend for secondary model.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[_make_proxy()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_openai_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[_openai_tool_use_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[check_vram_headroom raises VRAMHeadroomError when estimated VRAM exceeds budget.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[deepseek-r1 is routed to mlx_lm endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[failover_local_secondary_succeeded stat increments on successful secondary dispa]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[get_resource_guard()]] - code - gateway/security/resource_guard.py
+- [[guard()_3]] - code - gateway/tests/test_resource_guard_limits.py
+- [[mlx-communitydeepseek-r1 full ID routes to mlx_lm endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[mlx_lm backend colon is kept (no LM Studio dash convention).]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[oMLX requires a bearer token, unlike LM Studiomlx_lmFieldflare.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[oMLX's DeepSeek-R1-0528-Qwen3-8B must win over the generic     'deepseek-r1' -]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[oMLX's gemma-4-12B-it-4bit must win over the generic 'gemma' LM Studio     route]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[ollama prefix is stripped during proxy_messages dispatch and normalization foll]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[ollamaqwen314b → qwen3-14b for LM Studio backend.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[p99 timeout (TimeoutError on primary local) triggers secondary local model.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
+- [[resource_guard.py]] - code - gateway/security/resource_guard.py
+- [[setup_resource_guard()]] - code - gateway/security/resource_guard.py
+- [[stop() should cancel background monitor cleanly.]] - rationale - gateway/tests/test_resource_guard.py
+- [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_deepseek_r1_routes_to_mlxlm()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_get_local_model_reads_fieldflare_ref()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_get_local_secondary_model_reads_env()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_get_local_secondary_model_returns_none_when_unset()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_hermes_cloud_mode_uses_anthropic_endpoint()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_hermes_openai_path_local_model_routed_correctly()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_detects_backend_unavailable()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_detects_oom_in_error_message()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_handles_non_json_body()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_raw_body_false_on_normal_500()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_returns_false_for_200()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_is_local_oom_returns_false_for_quota_429()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_llm_proxy_local_parity.py]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_backend_headers_does_not_mutate_input()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_backend_headers_injects_bearer_token_for_omlx()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_backend_headers_no_auth_for_fieldflare()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_failover_base_other_gemma_models_still_route_to_lmstudio()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_failover_base_routes_fieldflare_gemma_before_generic_gemma()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_failover_base_routes_omlx_deepseek_r1_qwen3_8b()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_failover_base_routes_omlx_gemma_before_generic_gemma()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_mode_anthropic_tool_use_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_mode_openai_tool_call_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_oom_failover_disabled_does_not_retry()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_oom_no_secondary_falls_through_to_503()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_oom_triggers_secondary_failover()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_p99_timeout_triggers_secondary_failover()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_secondary_failover_anthropic_path()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_secondary_failover_base_routes_correctly()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_secondary_failover_exception_returns_none()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_secondary_failover_secondary_non_200_returns_none()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_local_secondary_failover_unknown_path_returns_none()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_mlx_community_deepseek_routes_to_mlxlm()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_model_ref_round_trip()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_already_dashed_is_idempotent()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_lmstudio_replaces_colon_with_dash()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_mlxlm_keeps_colon()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_ollama_keeps_colon()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_resource_guard.py]] - code - gateway/tests/test_resource_guard.py
+- [[test_resource_guard_limits.py]] - code - gateway/tests/test_resource_guard_limits.py
+- [[test_resource_guard_vram_estimate_128k_tokens_triggers_rejection()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_resource_guard_vram_headroom_check_allows_small_context()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_resource_guard_vram_headroom_check_disabled_when_threshold_zero()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_resource_guard_vram_headroom_check_raises_on_insufficient_vram()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_resource_guard_wiring.py]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[test_stats_local_secondary_failover_succeeded_incremented()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+- [[test_vram_headroom_error_is_not_resource_warning()]] - code - gateway/tests/test_llm_proxy_local_parity.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Resource_Guard__Local_Model_Parity
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 18 edges to [[_COMMUNITY_Security Audit & Watchtower Tests]]
+- 17 edges to [[_COMMUNITY_OAuth & Metadata Guard]]
+- 15 edges to [[_COMMUNITY_Git Guard (security)]]
+- 13 edges to [[_COMMUNITY_RBAC & Ingest Middleware]]
+- 6 edges to [[_COMMUNITY_Privilege Separation & File Sandbox]]
+- 4 edges to [[_COMMUNITY_Llm Proxy]]
+- 4 edges to [[_COMMUNITY_Security Hardening]]
+- 3 edges to [[_COMMUNITY_Subagent Monitor]]
+- 2 edges to [[_COMMUNITY_Browser Security]]
+- 2 edges to [[_COMMUNITY_Ingest API Main & Models]]
+- 2 edges to [[_COMMUNITY_Egress Monitor]]
+- 2 edges to [[_COMMUNITY_Key Vault]]
+- 2 edges to [[_COMMUNITY_Security Audit]]
+- 1 edge to [[_COMMUNITY_Anthropic Openai Translator]]
+- 1 edge to [[_COMMUNITY_Telegram Proxy Core]]
+- 1 edge to [[_COMMUNITY_Tool Chain & CVE Triage]]
+- 1 edge to [[_COMMUNITY_Dns Filter]]
+- 1 edge to [[_COMMUNITY_Egress Filter]]
+- 1 edge to [[_COMMUNITY_Egress Filter]]
+- 1 edge to [[_COMMUNITY_Health Report (security)]]
+- 1 edge to [[_COMMUNITY_Security Regressions V1 2]]
+
+## Top bridge nodes
+- [[TestResourceProtection]] - degree 43, connects to 14 communities
+- [[ResourceGuard]] - degree 93, connects to 8 communities
+- [[ResourceLimits]] - degree 49, connects to 7 communities
+- [[TestResourceGuardFailClosed]] - degree 11, connects to 4 communities
+- [[resource_guard.py]] - degree 10, connects to 3 communities
