@@ -170,8 +170,14 @@ _payload_file="/tmp/.ssh-exec-payload.$$"
 # bottleneck, unrelated to the SSH session timeout. 600s balances real LLM
 # review latency against not leaving a calling agent blocked indefinitely on
 # a genuinely stuck call.
+# PID-suffixed like _payload_file above — a fixed shared filename here would
+# let two concurrent agentshroud-ssh-exec.sh invocations in the same
+# container (a real occurrence: overlapping cron jobs, parallel sandboxed
+# sessions) race each other's curl -o writes and read back interleaved,
+# corrupted JSON.
+_response_file="/tmp/.ssh-exec-response.$$"
 _response="$(curl -sS --noproxy gateway --max-time 600 \
-    -o /tmp/.ssh-exec-response \
+    -o "${_response_file}" \
     -w "%{http_code}" \
     -X POST "${_gw_url}/ssh/exec" \
     -H "Content-Type: application/json" \
@@ -181,8 +187,8 @@ _response="$(curl -sS --noproxy gateway --max-time 600 \
     2>/dev/null)" || _response="000"
 rm -f "${_payload_file}" 2>/dev/null || true
 
-_body_resp="$(cat /tmp/.ssh-exec-response 2>/dev/null || true)"
-rm -f /tmp/.ssh-exec-response 2>/dev/null || true
+_body_resp="$(cat "${_response_file}" 2>/dev/null || true)"
+rm -f "${_response_file}" 2>/dev/null || true
 
 case "${_response}" in
     2*)
