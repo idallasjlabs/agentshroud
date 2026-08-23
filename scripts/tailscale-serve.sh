@@ -27,6 +27,10 @@
 #   :8642/      → Hermes OpenAI API (port 8642)     https://<host>:8642/v1
 #   :8765/      → Voice Gateway WS (port 8765)      wss://<host>:8765/voice (tailnet peers)
 #   /voice      → ESP32-S3-BOX-3 voice terminal     wss://<host>/voice (public Funnel)
+#   /health     → Voice Gateway health check         https://<host>/health (public Funnel —
+#                 lets external uptime monitors (e.g. UptimeRobot) check liveness without a
+#                 tailnet client; /voice itself is a WebSocket route and always 404s to a
+#                 plain HTTP GET, so it can't be used for that)
 #
 # ⚠️  TEMPORARY (2026-07-27): the ESP32's current firmware is hardcoded
 # (CONFIG_VT_VG_WS_URL, compile-time) to the Funnel URL above and has no
@@ -81,6 +85,9 @@ cmd_start() {
     echo "  → ESP32 voice Funnel :443/voice → http://127.0.0.1:${VOICE_GATEWAY_PORT}/voice"
     tailscale funnel --bg --set-path=/voice "http://127.0.0.1:${VOICE_GATEWAY_PORT}/voice"
 
+    echo "  → Uptime monitor Funnel :443/health → http://127.0.0.1:${VOICE_GATEWAY_PORT}/health"
+    tailscale funnel --bg --set-path=/health "http://127.0.0.1:${VOICE_GATEWAY_PORT}/health"
+
     echo ""
     echo "==> Done. Services are now available at:"
     HOSTNAME=$(tailscale status --self --json | python3 -c "import sys,json; print(json.load(sys.stdin)['Self']['DNSName'].rstrip('.'))" 2>/dev/null || echo "<your-tailscale-hostname>")  # python3 OK here: runs on host, not in conda env
@@ -90,6 +97,7 @@ cmd_start() {
     echo "  Hermes API:      https://${HOSTNAME}:${HERMES_API_PORT}/v1"
     echo "  Voice Gateway:   wss://${HOSTNAME}:${VOICE_GATEWAY_PORT}/voice"
     echo "  ESP32 voice:     wss://${HOSTNAME}/voice  (public Funnel — TEMPORARY, see header note)"
+    echo "  Uptime monitor:  https://${HOSTNAME}/health  (public Funnel)"
     echo ""
     echo "  (Hermes/Voice-Gateway URLs require: asb up voice|full)"
 }
