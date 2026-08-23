@@ -8,6 +8,71 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.2] (2026-08-23)
+
+### Summary
+
+Local-model routing and cron reliability fixes, plus advisory-watch and CI
+compat-gate hardening for the toolchain components AgentShroud itself
+depends on.
+
+### Fixed
+
+- **`qwen3-coder` was silently routed to LM Studio instead of oMLX** —
+  `LOCAL_MODEL_ROUTES`'s generic `"qwen3"` prefix matched before a
+  more-specific entry existed.
+- **Hermes cron jobs producing incomplete/garbled output on local models** —
+  the universal default `nemotron-3.5-lightning-rapid` was found (live
+  testing against real job prompts) to consistently exhaust its completion
+  budget on internal monologue without ever emitting the requested
+  deliverable. Every content-generating Hermes cron job, and OpenClaw's
+  `agents.defaults.model.primary`, now pin to `gemma-4-26b-a4b-it`
+  (Turbo Fieldflare), which completed the same tasks correctly.
+- **`deepseek-r1-0528-qwen3-8b` 404s against oMLX** — the documented model
+  alias didn't match oMLX's real catalog ID
+  (`DeepSeek-R1-0528-Qwen3-8B-6bit`); every caller routed to the reasoning
+  default hit a hard 404.
+- **`nemotron`-named models misclassified as needing a cloud provider in
+  local mode** — `resolve_model.py`'s local-keyword list didn't include
+  `nemotron`; also fixed the stale `qwen3:14b` pre-PR#390 local-mode
+  fallback default.
+- **Duplicate/overlapping Hermes cron jobs hitting the local model
+  simultaneously** — the pre-redesign "Today in AI" job was never actually
+  retired and collided at the same minute as its newsletter-series
+  replacement; a second exact-minute collision existed between
+  "AgentShroud Daily Check-in" and a newsletter job. Retired the duplicate,
+  rescheduled the other.
+
+### Added
+
+- `scripts/check-vendor-compat.sh`: new A2A JSON-RPC smoke check exercising
+  the method surface `gateway/proxy/a2a_proxy.py` / `gateway/security/a2a_policy.py`
+  depend on — the compat gate previously never verified this before a
+  Hermes vendor bump.
+- `scripts/tailscale-serve.sh`: `/health` Funnel path now persists across
+  `persist`/`start` re-runs, so external HTTP uptime monitors (which can't
+  treat a WebSocket-only 404 as healthy) have a real endpoint.
+- New upstream-advisory watch cron jobs tracking security advisories for
+  8 critical toolchain components AgentShroud depends on (Trivy, Cosign,
+  Wazuh, ClamAV, Falco, Syft, OpenSCAP, Semgrep) — closing the gap where
+  a March 2026 Trivy ecosystem supply-chain compromise (CVE-2026-33634)
+  went unnoticed for months because nothing was watching Trivy's own
+  upstream advisories, only AgentShroud's scan *output*.
+
+### Known gaps (not yet closed)
+
+- 171 advisories synced by the new watchers (Trivy, Cosign, Wazuh, ClamAV,
+  Falco, Syft) are tracked but not yet triaged — `status: under_review`
+  with no mitigation recorded.
+- Hermes's 8 "Email: *" newsletter-delivery jobs are failing
+  (`Email credentials not available`, HTTP 503) — content generates but
+  none of it currently reaches email.
+- OpenClaw/Hermes vendor bump (2026.7.1-2 / v0.20.5) is blocked on this
+  host's Colima VM having no outbound Docker network path — not resolved
+  in this release.
+
+---
+
 ## [1.5.1] "A2A Governance" (2026-08-22)
 
 ### Summary
