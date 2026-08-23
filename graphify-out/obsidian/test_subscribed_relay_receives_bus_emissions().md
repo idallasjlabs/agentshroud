@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Alert Telegram Relay"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Alert_Telegram_Relay
 ---
 
 # test_subscribed_relay_receives_bus_emissions()
@@ -18,4 +18,4 @@ tags:
 - [[_alert_event()]] - `calls` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Alert_Telegram_Relay

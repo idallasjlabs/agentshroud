@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "Group RBAC Roles"
+community: "Telegram Proxy Inbound"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/Telegram_Proxy_Inbound
 ---
 
 # test_telegram_proxy_inbound.py
@@ -20,7 +20,7 @@ tags:
 - [[MiddlewareResult]] - `imports` [EXTRACTED]
 - [[PassthroughPipeline_1]] - `contains` [EXTRACTED]
 - [[RateLimiter]] - `imports` [EXTRACTED]
-- [[TelegramAPIProxy]] - `imports` [EXTRACTED]
+- [[TelegramAPIProxy]] - `tests` [EXTRACTED]
 - [[TestBotIsMentioned]] - `contains` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `contains` [EXTRACTED]
 - [[TestCollaboratorRateLimitRecovery]] - `contains` [EXTRACTED]
@@ -41,4 +41,4 @@ tags:
 - [[_wrap_response()]] - `contains` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/code #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

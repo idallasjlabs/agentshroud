@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "rationale"
-community: "LLM Proxy Resource Guard"
-location: "L2036"
+community: "SOC Router Coverage"
+location: "L2091"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/SOC_Router_Coverage
 ---
 
 # update_service() must be called with the real container name     (agentshroud-he
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_upgrade_hermes_restarts_the_real_container_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/rationale #graphify/EXTRACTED #community/SOC_Router_Coverage

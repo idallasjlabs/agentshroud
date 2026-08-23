@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/wacli/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (summarize)"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_summarize
 ---
 
 # wacli
 
 ## Connections
-- [[SKILL_174]] - `contains` [EXTRACTED]
+- [[SKILL_238]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_summarize

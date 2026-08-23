@@ -1,12 +1,12 @@
 ---
 source_file: "docker/upgrade.sh"
 type: "code"
-community: "Custom Skills"
+community: "Upgrade (docker)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Upgrade_docker
 ---
 
 # upgrade.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[upgrade.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Upgrade_docker

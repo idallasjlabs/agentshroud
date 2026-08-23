@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/package.json"
+source_file: "docker/config/openclaw/manifest.json"
 type: "code"
-community: "Bot Skill Config"
-location: "L3"
+community: "Manifest (hermes)"
+location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Manifest_hermes
 ---
 
 # version
 
 ## Connections
-- [[package.json_2]] - `contains` [EXTRACTED]
+- [[manifest.json_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Manifest_hermes

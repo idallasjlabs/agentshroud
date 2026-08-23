@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/video-frames/scripts/frame.sh"
 type: "code"
-community: "Bot Skill Config"
+community: "Skill (video-frames)"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_video-frames
 ---
 
 # usage()
@@ -15,4 +15,4 @@ tags:
 - [[frame.sh]] - `defines` [EXTRACTED]
 - [[frame.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Skill_video-frames

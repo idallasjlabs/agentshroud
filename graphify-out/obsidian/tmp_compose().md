@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Network Validator (security)"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Network_Validator_security
 ---
 
 # tmp_compose()
@@ -18,4 +18,4 @@ tags:
 - [[Path_34]] - `references` [EXTRACTED]
 - [[test_network_validator_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Network_Validator_security

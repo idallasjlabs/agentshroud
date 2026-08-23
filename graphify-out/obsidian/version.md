@@ -1,17 +1,17 @@
 ---
-source_file: "browser-extension/manifest.json"
+source_file: ".agents/skills/i-browser/package.json"
 type: "code"
-community: "Bot Skill Config"
-location: "L4"
+community: "Package (i-browser)"
+location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Package_i-browser
 ---
 
 # version
 
 ## Connections
-- [[manifest.json]] - `contains` [EXTRACTED]
+- [[package.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Package_i-browser

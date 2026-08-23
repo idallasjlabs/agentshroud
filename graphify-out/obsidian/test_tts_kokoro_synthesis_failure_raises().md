@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Security Pipeline Core"
+community: "Voice Gateway"
 location: "L189"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Pipeline_Core
+  - community/Voice_Gateway
 ---
 
 # test_tts_kokoro_synthesis_failure_raises()
@@ -15,4 +15,4 @@ tags:
 - [[If the pipeline raises mid-synthesis, synthesize() raises RuntimeError.]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Pipeline_Core
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway

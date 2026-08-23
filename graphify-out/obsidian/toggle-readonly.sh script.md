@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/toggle-readonly.sh"
 type: "code"
-community: "Community 1494"
+community: "Toggle Readonly (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1494
+  - community/Toggle_Readonly_scripts
 ---
 
 # toggle-readonly.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[toggle-readonly.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1494
+#graphify/code #graphify/EXTRACTED #community/Toggle_Readonly_scripts

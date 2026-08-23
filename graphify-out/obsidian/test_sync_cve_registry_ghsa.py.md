@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Triage Cve Mitigations"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Triage_Cve_Mitigations
 ---
 
 # test_sync_cve_registry_ghsa.py
@@ -21,4 +21,4 @@ tags:
 - [[_sync()]] - `contains` [EXTRACTED]
 - [[scriptssync-cve-registry.py (GHSA auto-register)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Triage_Cve_Mitigations

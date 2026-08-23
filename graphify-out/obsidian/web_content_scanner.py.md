@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Tool Chain & CVE Triage"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # web_content_scanner.py
@@ -17,6 +17,9 @@ tags:
 - [[FindingSeverity]] - `contains` [EXTRACTED]
 - [[ScanResult]] - `contains` [EXTRACTED]
 - [[WebContentScanner]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py]] - `semantically_similar_to` [INFERRED]
+- [[url_analyzer.py]] - `references` [EXTRACTED]
+- [[web_config.py]] - `references` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

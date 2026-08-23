@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "scripts/sync-version.sh"
+community: "Updating (operations)"
 location: "L724"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/sync-versionsh
+  - community/Updating_operations
 ---
 
 # Updating
@@ -18,4 +18,4 @@ tags:
 - [[Update AgentShroud]] - `contains` [EXTRACTED]
 - [[Update OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/sync-versionsh
+#graphify/document #graphify/EXTRACTED #community/Updating_operations

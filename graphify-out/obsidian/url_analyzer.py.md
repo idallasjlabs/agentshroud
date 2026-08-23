@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "MCP Proxy Config"
+community: "Tool Chain & CVE Triage"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Config
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # url_analyzer.py
@@ -18,6 +18,8 @@ tags:
 - [[URLFinding]] - `contains` [EXTRACTED]
 - [[URLVerdict]] - `contains` [EXTRACTED]
 - [[_looks_like_base64()]] - `contains` [EXTRACTED]
+- [[web_config.py]] - `references` [EXTRACTED]
+- [[web_content_scanner.py]] - `references` [EXTRACTED]
 - [[web_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Proxy_Config
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

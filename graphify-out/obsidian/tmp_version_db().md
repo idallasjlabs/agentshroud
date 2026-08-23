@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_version_routes.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Version Routes"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Version_Routes
 ---
 
 # tmp_version_db()
@@ -15,4 +15,4 @@ tags:
 - [[Use a temporary DB for all tests.]] - `rationale_for` [EXTRACTED]
 - [[test_version_routes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Version_Routes

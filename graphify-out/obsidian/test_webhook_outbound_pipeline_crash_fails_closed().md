@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "SOC Collaborator Lifecycle"
+community: "Middleware & Session Isolation"
 location: "L474"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Collaborator_Lifecycle
+  - community/Middleware__Session_Isolation
 ---
 
 # test_webhook_outbound_pipeline_crash_fails_closed()
@@ -18,4 +18,4 @@ tags:
 - [[_StubForwarder_2]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Collaborator_Lifecycle
+#graphify/code #graphify/EXTRACTED #community/Middleware__Session_Isolation

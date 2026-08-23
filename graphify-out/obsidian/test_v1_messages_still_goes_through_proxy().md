@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_v1_models_synthetic.py"
 type: "code"
-community: "Bot Skill Config"
+community: "V1 Models Synthetic"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/V1_Models_Synthetic
 ---
 
 # test_v1_messages_still_goes_through_proxy()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_v1_models_synthetic.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/V1_Models_Synthetic

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "docs/vault"
+community: "Security Audit & Watchtower Tests"
 location: "L208"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # test_trust_insufficient_action_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Agent with low trust cannot perform elevated actions.]] - `rationale_for` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

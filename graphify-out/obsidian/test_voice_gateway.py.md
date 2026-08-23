@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Security Pipeline Core"
+community: "Voice Gateway"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Pipeline_Core
+  - community/Voice_Gateway
 ---
 
 # test_voice_gateway.py
@@ -85,7 +85,6 @@ tags:
 - [[test_tts_synthesize_only_whitespace_after_normalise_returns_empty()]] - `contains` [EXTRACTED]
 - [[test_tts_synthesize_passes_normalised_text_to_kokoro()]] - `contains` [EXTRACTED]
 - [[test_tts_synthesize_via_kokoro()]] - `contains` [EXTRACTED]
-- [[test_voice_latency_guard.py]] - `conceptually_related_to` [INFERRED]
 - [[test_voice_system_message_includes_agentshroud_version()]] - `contains` [EXTRACTED]
 - [[test_voice_system_message_version_unknown_when_env_unset()]] - `contains` [EXTRACTED]
 - [[test_ws_accepts_correct_token()]] - `contains` [EXTRACTED]
@@ -123,7 +122,5 @@ tags:
 - [[test_ws_volume_query_intercepted_returns_tracked_level()]] - `contains` [EXTRACTED]
 - [[test_ws_volume_query_unknown_state_intercepted()]] - `contains` [EXTRACTED]
 - [[tts.py]] - `imports_from` [EXTRACTED]
-- [[voice_gatewayserver.py]] - `references` [EXTRACTED]
-- [[voice_gatewaystt.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Pipeline_Core
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway

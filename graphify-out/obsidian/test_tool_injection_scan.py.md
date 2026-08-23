@@ -1,21 +1,20 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Tool Chain & CVE Triage"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # test_tool_injection_scan.py
 
 ## Connections
 - [[InjectionAction]] - `imports` [EXTRACTED]
-- [[InjectionResult]] - `imports` [EXTRACTED]
 - [[InjectionSeverity]] - `imports` [EXTRACTED]
 - [[TestToolResultInjectionScanner]] - `contains` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

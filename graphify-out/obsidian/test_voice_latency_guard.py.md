@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "code"
-community: "voice_gateway/server.py"
+community: "Voice Latency Guard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_gateway/serverpy
+  - community/Voice_Latency_Guard
 ---
 
 # test_voice_latency_guard.py
@@ -31,7 +31,5 @@ tags:
 - [[test_voice_forward_metadata_default_off_is_empty()]] - `contains` [EXTRACTED]
 - [[test_voice_forward_metadata_module_default_is_off()]] - `contains` [EXTRACTED]
 - [[test_voice_forward_metadata_on_sets_no_memory_tag()]] - `contains` [EXTRACTED]
-- [[test_voice_gateway.py]] - `conceptually_related_to` [INFERRED]
-- [[voice_gatewayserver.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/serverpy
+#graphify/code #graphify/EXTRACTED #community/Voice_Latency_Guard

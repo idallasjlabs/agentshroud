@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L710"
+community: "Daily Cve Report (security)"
+location: "L759"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Daily_Cve_Report_security
 ---
 
 # upstream_cve_check_scheduler()
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[Background loop checks for new upstream agent CVEs once per day at report_hour]] - `rationale_for` [EXTRACTED]
 - [[_already_checked_upstream_today()]] - `calls` [EXTRACTED]
+- [[cve_report_scheduler()]] - `conceptually_related_to` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[run_upstream_cve_check()]] - `calls` [EXTRACTED]
 - [[run_upstream_cve_check_all_agents()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report_security

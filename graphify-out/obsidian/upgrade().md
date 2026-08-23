@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "CHANGELOG.md"
+community: "Agentshroud Manager"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CHANGELOGmd
+  - community/Agentshroud_Manager
 ---
 
 # upgrade()
@@ -21,14 +21,15 @@ tags:
 - [[.test_successful_downgrade()]] - `calls` [EXTRACTED]
 - [[.test_successful_rollback()]] - `calls` [EXTRACTED]
 - [[.test_successful_upgrade()]] - `calls` [EXTRACTED]
-- [[Any_72]] - `references` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
 - [[Upgrade OpenClaw to a target version.      Requires a prior security review and]] - `rationale_for` [EXTRACTED]
 - [[_get_db()]] - `calls` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]
 - [[check_current_version()]] - `calls` [EXTRACTED]
 - [[security_review()]] - `calls` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `imports` [EXTRACTED]
+- [[upgrade_bot()_1]] - `semantically_similar_to` [INFERRED]
 - [[upgrade_version()]] - `calls` [EXTRACTED]
 - [[version_routes.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CHANGELOGmd
+#graphify/code #graphify/EXTRACTED #community/Agentshroud_Manager

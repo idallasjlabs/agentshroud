@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Collaborator Tracker"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Collaborator_Tracker
 ---
 
 # tracker()
@@ -15,4 +15,4 @@ tags:
 - [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Tracker

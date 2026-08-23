@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/killswitch.sh"
 type: "code"
-community: "docs/runbooks"
+community: "Killswitch (scripts)"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Killswitch_scripts
 ---
 
 # usage()
@@ -15,4 +15,4 @@ tags:
 - [[killswitch.sh]] - `defines` [EXTRACTED]
 - [[killswitch.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/runbooks
+#graphify/code #graphify/EXTRACTED #community/Killswitch_scripts

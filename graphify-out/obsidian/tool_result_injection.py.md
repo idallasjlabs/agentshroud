@@ -1,24 +1,26 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Tool Chain & CVE Triage"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # tool_result_injection.py
 
 ## Connections
+- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[Enum]] - `imports_from` [EXTRACTED]
 - [[InjectionAction]] - `contains` [EXTRACTED]
 - [[InjectionResult]] - `contains` [EXTRACTED]
 - [[InjectionRule]] - `contains` [EXTRACTED]
 - [[InjectionSeverity]] - `contains` [EXTRACTED]
+- [[SKILL_190]] - `references` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `contains` [EXTRACTED]
 - [[normalize_input()]] - `imports` [EXTRACTED]
 - [[strip_markdown_exfil()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

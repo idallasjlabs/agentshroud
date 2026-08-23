@@ -1,18 +1,18 @@
 ---
 source_file: "docs/requirements/use-cases.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Glossary (project)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Glossary_project
 ---
 
 # use-cases.md
 
 ## Connections
-- [[Approval Queue_2]] - `references` [EXTRACTED]
+- [[Approval Queue_1]] - `references` [EXTRACTED]
 - [[Audit Trail_1]] - `references` [EXTRACTED]
 - [[Kill Switch_2]] - `references` [EXTRACTED]
 - [[MCP (Model Context Protocol)]] - `references` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[access-control-matrix]] - `conceptually_related_to` [INFERRED]
 - [[system-requirements]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Glossary_project

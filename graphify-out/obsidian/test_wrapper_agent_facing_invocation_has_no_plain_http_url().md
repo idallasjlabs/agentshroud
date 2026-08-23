@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "ESP32 Firmware"
+community: "Bots Ssh Exec Wrapper"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Bots_Ssh_Exec_Wrapper
 ---
 
 # test_wrapper_agent_facing_invocation_has_no_plain_http_url()
@@ -16,4 +16,4 @@ tags:
 - [[_fenced_code_blocks()]] - `calls` [EXTRACTED]
 - [[test_bots_ssh_exec_wrapper.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Bots_Ssh_Exec_Wrapper

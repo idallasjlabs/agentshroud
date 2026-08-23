@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_version_routes.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Version Routes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Version_Routes
 ---
 
 # test_version_routes.py
@@ -17,4 +17,4 @@ tags:
 - [[client()_19]] - `contains` [EXTRACTED]
 - [[tmp_version_db()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Version_Routes

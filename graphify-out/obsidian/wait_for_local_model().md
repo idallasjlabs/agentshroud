@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/switch_model.sh"
 type: "code"
-community: "AGENTS.md"
+community: "Switch Model (scripts)"
 location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AGENTSmd
+  - community/Switch_Model_scripts
 ---
 
 # wait_for_local_model()
@@ -15,4 +15,4 @@ tags:
 - [[ensure_local_model_available()]] - `calls` [EXTRACTED]
 - [[switch_model.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AGENTSmd
+#graphify/code #graphify/EXTRACTED #community/Switch_Model_scripts

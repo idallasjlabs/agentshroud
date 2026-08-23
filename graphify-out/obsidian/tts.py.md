@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/tts.py"
 type: "code"
-community: "Planning Docs"
+community: "Tts (voice_gateway)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Tts_voice_gateway
 ---
 
 # tts.py
@@ -20,4 +20,4 @@ tags:
 - [[synthesize()]] - `contains` [EXTRACTED]
 - [[test_voice_gateway.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Tts_voice_gateway

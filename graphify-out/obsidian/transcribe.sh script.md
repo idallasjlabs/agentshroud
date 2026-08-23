@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/openai-whisper-api/scripts/transcribe.sh"
 type: "code"
-community: "Bot Skill Config"
+community: "Skill (openai-whisper-api)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_openai-whisper-api
 ---
 
 # transcribe.sh script
@@ -15,4 +15,4 @@ tags:
 - [[transcribe.sh]] - `contains` [EXTRACTED]
 - [[usage()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Skill_openai-whisper-api
