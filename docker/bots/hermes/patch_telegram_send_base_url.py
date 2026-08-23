@@ -128,6 +128,62 @@ compile(new_src1, p1, "exec")
 open(p1, "w", encoding="utf-8").write(new_src1)
 print("[hermes-build] telegram send_message base_url patch applied to send_message_tool.py")
 
+# --- Patch 1b: tools/send_message_tool.py — _send_to_platform's own Telegram
+# call site (cron job "Deliver: telegram" targets go through this function
+# directly, NEVER through plugins/platforms/telegram/adapter.py — Patch 2
+# below only covers agent-invoked send_message tool calls). Found 2026-08-23:
+# every cron job configured with `Deliver: telegram` (not the send_message
+# tool) still fell back to a direct api.telegram.org connection because this
+# call site never passed base_url/base_file_url, even after Patch 1/2 shipped. ---
+
+call1b_anchor = (
+    "    if platform == Platform.TELEGRAM:\n"
+    '        disable_link_previews = bool(getattr(pconfig, "extra", {}) and pconfig.extra.get("disable_link_previews"))\n'
+    "        return await _send_telegram(\n"
+    "            pconfig.token,\n"
+    "            chat_id,\n"
+    "            message,\n"
+    "            media_files=media_files,\n"
+    "            thread_id=thread_id,\n"
+    "            disable_link_previews=disable_link_previews,\n"
+    "            force_document=force_document,\n"
+    "        )\n"
+)
+if call1b_anchor not in new_src1:
+    sys.exit(
+        "PATCH ANCHOR NOT FOUND (_send_to_platform Telegram call site) -- "
+        "upstream digest drift; re-verify "
+        "docker/bots/hermes/patch_telegram_send_base_url.py."
+    )
+call1b_replacement = (
+    "    if platform == Platform.TELEGRAM:\n"
+    '        disable_link_previews = bool(getattr(pconfig, "extra", {}) and pconfig.extra.get("disable_link_previews"))\n'
+    "        # AgentShroud patch: pass telegram.extra.base_url/base_file_url\n"
+    "        # through here too — cron job Telegram delivery routes through\n"
+    "        # this function directly, bypassing plugins/platforms/telegram/\n"
+    "        # adapter.py entirely, so Patch 2's fix never applied to it.\n"
+    '        _extra1b = getattr(pconfig, "extra", {}) or {}\n'
+    '        base_url1b = _extra1b.get("base_url")\n'
+    '        base_file_url1b = _extra1b.get("base_file_url")\n'
+    "        return await _send_telegram(\n"
+    "            pconfig.token,\n"
+    "            chat_id,\n"
+    "            message,\n"
+    "            media_files=media_files,\n"
+    "            thread_id=thread_id,\n"
+    "            disable_link_previews=disable_link_previews,\n"
+    "            force_document=force_document,\n"
+    "            base_url=base_url1b,\n"
+    "            base_file_url=base_file_url1b,\n"
+    "        )\n"
+)
+new_src1b = new_src1.replace(call1b_anchor, call1b_replacement, 1)
+if new_src1b == new_src1:
+    sys.exit("PATCH DID NOT APPLY (send_message_tool.py _send_to_platform) -- replace() was a no-op")
+compile(new_src1b, p1, "exec")
+open(p1, "w", encoding="utf-8").write(new_src1b)
+print("[hermes-build] telegram base_url patch applied to _send_to_platform call site")
+
 # --- Patch 2: plugins/platforms/telegram/adapter.py — _standalone_send passthrough ---
 
 p2 = "/opt/hermes/plugins/platforms/telegram/adapter.py"
