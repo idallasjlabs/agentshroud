@@ -1,0 +1,27 @@
+---
+type: community
+cohesion: 0.25
+members: 8
+---
+
+# Hermes Soul (agents)
+
+**Cohesion:** 0.25 - loosely connected
+**Members:** 8 nodes
+
+## Members
+- [[AgentShroud Hermes — System Identity_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Capabilities_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Core Behaviors_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Owner_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Remote Hosts (SSH via gateway)_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Trademark Notice_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[Your Role_2]] - document - docker/config/openclaw/agents/hermes-soul.md
+- [[hermes-soul_1]] - document - docker/config/openclaw/agents/hermes-soul.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Hermes_Soul_agents
+SORT file.name ASC
+```

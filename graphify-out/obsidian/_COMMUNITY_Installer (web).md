@@ -1,0 +1,57 @@
+---
+type: community
+cohesion: 0.14
+members: 20
+---
+
+# Installer (web)
+
+**Cohesion:** 0.14 - loosely connected
+**Members:** 20 nodes
+
+## Members
+- [[.test_detect_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_detect_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_detect_multiple()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_detect_none()]] - code - gateway/tests/test_runtime_engines.py
+- [[.test_detect_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[Auto-detect which container runtimes are available on this system.]] - rationale - gateway/runtime/__init__.py
+- [[Check system prerequisites for installation.]] - rationale - gateway/web/installer.py
+- [[Get available runtimes with recommendations.]] - rationale - gateway/web/installer.py
+- [[InstallConfig]] - code - gateway/web/installer.py
+- [[PrerequisiteCheck]] - code - gateway/web/installer.py
+- [[Request_8]] - code - gateway/web/installer.py
+- [[Serve the installer wizard HTML.]] - rationale - gateway/web/installer.py
+- [[Start the installation process.      This endpoint kicks off the install and ret]] - rationale - gateway/web/installer.py
+- [[TestDetectRuntime]] - code - gateway/tests/test_runtime_engines.py
+- [[check_prerequisites()]] - code - gateway/web/installer.py
+- [[detect_runtime()]] - code - gateway/runtime/__init__.py
+- [[get_runtimes()]] - code - gateway/web/installer.py
+- [[installer.py]] - code - gateway/web/installer.py
+- [[installer_page()]] - code - gateway/web/installer.py
+- [[start_install()]] - code - gateway/web/installer.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Installer_web
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 5 edges to [[_COMMUNITY_Api (web)]]
+- 3 edges to [[_COMMUNITY_Runtime Engines]]
+- 2 edges to [[_COMMUNITY_Router (soc)]]
+- 2 edges to [[_COMMUNITY_Runtime Engines]]
+- 1 edge to [[_COMMUNITY_Runtime Engines]]
+- 1 edge to [[_COMMUNITY_Apple Engine (runtime)]]
+- 1 edge to [[_COMMUNITY_Docker Engine (runtime)]]
+- 1 edge to [[_COMMUNITY_Engine (runtime)]]
+- 1 edge to [[_COMMUNITY_Podman Engine (runtime)]]
+
+## Top bridge nodes
+- [[TestDetectRuntime]] - degree 11, connects to 5 communities
+- [[detect_runtime()]] - degree 14, connects to 4 communities
+- [[installer.py]] - degree 10, connects to 2 communities
+- [[get_runtimes()]] - degree 4, connects to 1 community
+- [[InstallConfig]] - degree 3, connects to 1 community
