@@ -1,0 +1,17 @@
+---
+source_file: "docker/config/openclaw/skills/i-oracle/README.md"
+type: "document"
+community: "Readme (i-oracle)"
+location: "L10"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Readme_i-oracle
+---
+
+# Usage
+
+## Connections
+- [[Oracle — Feedback Analyst_4]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Readme_i-oracle
