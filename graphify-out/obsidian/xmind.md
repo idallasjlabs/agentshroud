@@ -1,12 +1,12 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Bot Skill Config"
+community: ".mcp"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/mcp
 ---
 
 # xmind
@@ -19,4 +19,4 @@ tags:
 - [[outputPath]] - `requires_env` [EXTRACTED]
 - [[xmind-generator-mcp]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/mcp

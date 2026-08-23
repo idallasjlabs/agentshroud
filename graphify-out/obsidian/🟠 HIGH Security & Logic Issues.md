@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "document"
-community: "ESP32 Firmware"
+community: "Telegram Issues (project)"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Telegram_Issues_project
 ---
 
 # 🟠 HIGH: Security & Logic Issues
@@ -20,7 +20,7 @@ tags:
 - [[7. CI Safety Issue Pytest Exit Codes Swallowed]] - `contains` [EXTRACTED]
 - [[7. SMTP Port Blocks (Email Failures)]] - `contains` [EXTRACTED]
 - [[8. ForwardResponse Type Mismatch]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Consolidated Issues Report]] - `contains` [EXTRACTED]
+- [[AgentShroud Consolidated Issues Report]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Telegram-Reported Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Telegram_Issues_project

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "System Instructions Security (docker)"
 location: "L302"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/System_Instructions_Security_docker
 ---
 
 # 💬 Example Conversations
@@ -17,4 +17,4 @@ tags:
 - [[Via Control UI]] - `contains` [EXTRACTED]
 - [[Via Telegram]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/System_Instructions_Security_docker

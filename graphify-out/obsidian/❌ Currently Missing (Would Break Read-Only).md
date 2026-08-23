@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "Setup Docs"
+community: "Openclaw Write Requirements (architecture)"
 location: "L254"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Openclaw_Write_Requirements_architecture
 ---
 
 # ❌ Currently Missing (Would Break Read-Only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Current Docker Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Openclaw_Write_Requirements_architecture

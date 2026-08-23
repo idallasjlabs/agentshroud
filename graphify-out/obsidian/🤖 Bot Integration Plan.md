@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "docs/papers"
+community: "Apple Services Setup (setup)"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Apple_Services_Setup_setup
 ---
 
 # 🤖 Bot Integration Plan
@@ -17,4 +17,4 @@ tags:
 - [[Phase 2 Calendar]] - `contains` [EXTRACTED]
 - [[Phase 3 Contacts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/papers
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_setup

@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Http Proxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Http_Proxy
 ---
 
 # web_proxy.py (WebProxy)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_http_proxy.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Http_Proxy

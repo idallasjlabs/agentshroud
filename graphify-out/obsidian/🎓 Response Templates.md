@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "docs/vault"
+community: "Security Policy Final (security)"
 location: "L140"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Policy_Final_security
 ---
 
 # 🎓 Response Templates
@@ -16,4 +16,4 @@ tags:
 - [[When asked for credentials via ANY chat]] - `contains` [EXTRACTED]
 - [[When executing console commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Security_Policy_Final_security

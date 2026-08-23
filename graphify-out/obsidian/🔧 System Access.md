@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "Bot Skill Config"
+community: "System Status (project)"
 location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/System_Status_project
 ---
 
 # 🔧 System Access
@@ -16,4 +16,4 @@ tags:
 - [[Local]] - `contains` [EXTRACTED]
 - [[Remote (Tailscale)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/System_Status_project

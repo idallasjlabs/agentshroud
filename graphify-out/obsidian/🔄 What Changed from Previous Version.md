@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Architecture Docs"
+community: "System Instructions Security (docker)"
 location: "L277"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/System_Instructions_Security_docker
 ---
 
 # 🔄 What Changed from Previous Version
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Instructions Credential Security (Ultra-Conservative)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/System_Instructions_Security_docker

@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/SKILL.md"
+source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-tw)"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-tw
 ---
 
 # → {"site": "site1", "test_mode": True, "output_prefix": "_test/site1/"}
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Changelog Entry_1]] - `contains` [EXTRACTED]
 - [[Dependencies_9]] - `contains` [EXTRACTED]
-- [[SKILL_121]] - `contains` [EXTRACTED]
+- [[SKILL_122]] - `contains` [EXTRACTED]
 - [[Validation Checklist_5]] - `contains` [EXTRACTED]
 - [[Writing Style Rules_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-tw

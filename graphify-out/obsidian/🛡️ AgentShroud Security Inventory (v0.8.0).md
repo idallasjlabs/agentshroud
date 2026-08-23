@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "docs/reference"
+community: "Security Inventory (security)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/reference
+  - community/Security_Inventory_security
 ---
 
 # 🛡️ AgentShroud Security Inventory (v0.8.0)
@@ -16,8 +16,8 @@ tags:
 - [[Security Configuration Files (9)]] - `contains` [EXTRACTED]
 - [[Security Modules (58)]] - `contains` [EXTRACTED]
 - [[Security Test Files (38)]] - `contains` [EXTRACTED]
-- [[Summary_38]] - `contains` [EXTRACTED]
+- [[Summary_19]] - `contains` [EXTRACTED]
 - [[Testing Checklist_1]] - `contains` [EXTRACTED]
 - [[security-inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/reference
+#graphify/document #graphify/EXTRACTED #community/Security_Inventory_security

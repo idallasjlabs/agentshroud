@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/TELEGRAM_ISSUES.md"
 type: "document"
-community: "ESP32 Firmware"
+community: "Telegram Issues (project)"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Telegram_Issues_project
 ---
 
 # 🔵 LOW: User Experience & Documentation
@@ -17,4 +17,4 @@ tags:
 - [[13. Hallucination in Competitor Reports]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Telegram-Reported Issues]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Telegram_Issues_project

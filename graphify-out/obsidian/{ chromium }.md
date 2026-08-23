@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/browse.js"
+source_file: ".agents/skills/i-browser/browse.js"
 type: "code"
-community: "docs/vault"
+community: "Browse (i-browser)"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Browse_i-browser
 ---
 
 # { chromium }
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[browse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Browse_i-browser

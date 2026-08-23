@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "docs/papers"
+community: "Apple Services Setup (setup)"
 location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/papers
+  - community/Apple_Services_Setup_setup
 ---
 
 # 🚨 Security Notes
@@ -17,4 +17,4 @@ tags:
 - [[Credential Storage]] - `contains` [EXTRACTED]
 - [[Two-Factor Authentication]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/papers
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_setup

@@ -1,17 +1,17 @@
 ---
 source_file: ".github/agents/safe-refactor.agent.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Safe Refactor.agent (agents)"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Safe_Refactoragent_agents
 ---
 
 # ❌ NEVER:
 
 ## Connections
-- [[Critical Rules]] - `contains` [EXTRACTED]
+- [[Critical Rules_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Safe_Refactoragent_agents

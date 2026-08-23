@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Google Calendar Quick Setup (setup)"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Google_Calendar_Quick_Setup_setup
 ---
 
 # 🎮 Option B: Using Google APIs (Better but requires OAuth)
@@ -18,4 +18,4 @@ tags:
 - [[Step 3 Get OAuth Token (One-Time)]] - `contains` [EXTRACTED]
 - [[Step 4 Use Google Calendar]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Google_Calendar_Quick_Setup_setup

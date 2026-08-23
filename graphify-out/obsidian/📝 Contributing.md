@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (docs)"
 location: "L225"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_docs
 ---
 
 # 📝 Contributing
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Documentation]] - `contains` [EXTRACTED]
 - [[Naming Conventions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_docs

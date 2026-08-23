@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Tool Chain & CVE Triage"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # web_proxy.py
@@ -32,13 +32,12 @@ tags:
 - [[browser_security.py]] - `imports_from` [EXTRACTED]
 - [[dns_filter.py]] - `imports_from` [EXTRACTED]
 - [[egress_monitor.py]] - `imports_from` [EXTRACTED]
-- [[http_proxy.py]] - `imports_from` [EXTRACTED]
+- [[http_proxy.py]] - `references` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[network_validator.py]] - `imports_from` [EXTRACTED]
 - [[oauth_security.py]] - `imports_from` [EXTRACTED]
 - [[url_analyzer.py]] - `imports_from` [EXTRACTED]
 - [[web_config.py]] - `imports_from` [EXTRACTED]
 - [[web_content_scanner.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

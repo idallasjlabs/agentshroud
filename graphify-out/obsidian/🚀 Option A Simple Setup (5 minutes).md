@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/GOOGLE-CALENDAR-QUICK-SETUP.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Google Calendar Quick Setup (setup)"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Google_Calendar_Quick_Setup_setup
 ---
 
 # 🚀 Option A: Simple Setup (5 minutes)
@@ -17,4 +17,4 @@ tags:
 - [[Install Node CalDAV Client]] - `contains` [EXTRACTED]
 - [[Run Test]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Google_Calendar_Quick_Setup_setup

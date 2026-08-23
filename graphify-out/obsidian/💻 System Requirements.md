@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "docs/runbooks"
+community: "Prerequisites (reference)"
 location: "L219"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Prerequisites_reference
 ---
 
 # 💻 System Requirements
@@ -17,4 +17,4 @@ tags:
 - [[Operating System]] - `contains` [EXTRACTED]
 - [[Required Software]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Prerequisites_reference

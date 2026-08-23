@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
 type: "document"
-community: "Setup Docs"
+community: "Openclaw Write Requirements (architecture)"
 location: "L240"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Openclaw_Write_Requirements_architecture
 ---
 
 # ✅ Temporary Filesystems (Cleared on Container Restart)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Current Docker Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Openclaw_Write_Requirements_architecture

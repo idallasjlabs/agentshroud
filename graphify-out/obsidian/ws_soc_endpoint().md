@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "Soc Realtime Coverage"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/Soc_Realtime_Coverage
 ---
 
 # ws_soc_endpoint()
@@ -22,6 +22,7 @@ tags:
 - [[FastAPI WebSocket route handler for wssoc.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `calls` [EXTRACTED]
+- [[TestWSSOCEndpoint]] - `calls` [EXTRACTED]
 - [[WebSocket_6]] - `references` [EXTRACTED]
 - [[_get_config_token()]] - `calls` [EXTRACTED]
 - [[redeem_ws_token()]] - `calls` [EXTRACTED]
@@ -30,4 +31,4 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/Soc_Realtime_Coverage

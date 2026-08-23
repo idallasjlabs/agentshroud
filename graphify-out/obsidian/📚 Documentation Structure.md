@@ -1,12 +1,12 @@
 ---
 source_file: "docs/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (docs)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_docs
 ---
 
 # 📚 Documentation Structure
@@ -19,4 +19,4 @@ tags:
 - [[security(.security) - Security Documentation]] - `contains` [EXTRACTED]
 - [[setup(.setup) - Setup & Configuration Guides]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_docs

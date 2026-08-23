@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "docs/vault"
+community: "Tool ACL & Group RBAC"
 location: "L150"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Tool_ACL__Group_RBAC
 ---
 
 # web_search is NOT a high-risk tool.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_is_high_risk_false_for_web_search()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/docs/vault
+#graphify/rationale #graphify/EXTRACTED #community/Tool_ACL__Group_RBAC

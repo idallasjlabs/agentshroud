@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "docs/vault"
+community: "Security Policy Final (security)"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Policy_Final_security
 ---
 
 # 📊 How We Got Here
@@ -17,4 +17,4 @@ tags:
 - [[Version 2.0 Context-Aware (Attempted)]] - `contains` [EXTRACTED]
 - [[Version 3.0 Ultra-Conservative (FINAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/vault
+#graphify/document #graphify/EXTRACTED #community/Security_Policy_Final_security

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "document"
-community: "ESP32 Firmware"
+community: "Reported Issues (project)"
 location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Reported_Issues_project
 ---
 
 # 📝 General TODOs & Wishlist
 
 ## Connections
-- [[AgentShroud™ Consolidated Issues Report]] - `contains` [EXTRACTED]
+- [[AgentShroud Consolidated Issues Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Reported_Issues_project

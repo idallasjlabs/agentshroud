@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Ws Client (main)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Ws_Client_main
 ---
 
 # ws_client.c (Voice Gateway WebSocket client)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ws_client.h (WS client public API + callback typedefs)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Ws_Client_main

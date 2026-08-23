@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "document"
-community: "ESP32 Firmware"
+community: "Reported Issues (project)"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Reported_Issues_project
 ---
 
 # 🟡 MEDIUM: Technical Debt & Bugs
@@ -17,6 +17,6 @@ tags:
 - [[12. PII Redaction Issues]] - `contains` [EXTRACTED]
 - [[13. Duplicate Imports & Verbose Pydantic Init]] - `contains` [EXTRACTED]
 - [[9. Streaming Responses Bypass Outbound Filtering]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Consolidated Issues Report]] - `contains` [EXTRACTED]
+- [[AgentShroud Consolidated Issues Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Reported_Issues_project

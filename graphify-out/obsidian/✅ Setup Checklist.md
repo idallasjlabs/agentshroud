@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "docs/runbooks"
+community: "Prerequisites (reference)"
 location: "L529"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/runbooks
+  - community/Prerequisites_reference
 ---
 
 # ✅ Setup Checklist
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Accounts]] - `contains` [EXTRACTED]
 - [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
-- [[Configuration_6]] - `contains` [EXTRACTED]
+- [[Configuration_7]] - `contains` [EXTRACTED]
 - [[Software]] - `contains` [EXTRACTED]
 - [[Verification_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/runbooks
+#graphify/document #graphify/EXTRACTED #community/Prerequisites_reference
