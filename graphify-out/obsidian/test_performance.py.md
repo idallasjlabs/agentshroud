@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "docs/vault"
+community: "Security Fixes & SSH Write Endpoint"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Security_Fixes__SSH_Write_Endpoint
 ---
 
 # test_performance.py
@@ -26,5 +26,7 @@ tags:
 - [[TestSecurityPipelineChainLatency]] - `contains` [EXTRACTED]
 - [[TestTrustManagerPerformance]] - `contains` [EXTRACTED]
 - [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[test_prompt_guard.py]] - `shares_data_with` [INFERRED]
+- [[test_sanitizer.py]] - `shares_data_with` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint

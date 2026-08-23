@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Security Fixes & SSH Write Endpoint"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Security_Fixes__SSH_Write_Endpoint
 ---
 
 # test_ssh_write_file_endpoint.py
@@ -34,15 +34,11 @@ tags:
 - [[_b64()]] - `contains` [EXTRACTED]
 - [[auth_headers()_4]] - `contains` [EXTRACTED]
 - [[client()_17]] - `contains` [EXTRACTED]
-- [[gatewayapproval_queuequeue.py (ApprovalQueue)]] - `references` [EXTRACTED]
 - [[gatewayingest_apiledger.py (DataLedger)]] - `references` [EXTRACTED]
-- [[gatewayingest_apimain.py (app, app_state, lifespan)]] - `references` [EXTRACTED]
-- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
-- [[gatewayingest_apirouter.py (MultiAgentRouter)]] - `references` [EXTRACTED]
 - [[gatewayingest_apisanitizer.py (PIISanitizer)]] - `references` [EXTRACTED]
 - [[gatewayingest_apissh_config.py (SSHConfig)]] - `references` [EXTRACTED]
 - [[gatewayssh_proxyproxy.py]] - `references` [EXTRACTED]
 - [[ssh_config()_2]] - `contains` [EXTRACTED]
 - [[test_config_with_ssh()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint

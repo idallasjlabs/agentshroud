@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Session Security"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Session_Security
 ---
 
 # test_session_security.py
 
 ## Connections
+- [[Numbered security control catalog (C8, C9, C18, C47, ...)]] - `conceptually_related_to` [EXTRACTED]
 - [[TestEventInjection]] - `contains` [EXTRACTED]
 - [[TestInstructionNonce]] - `contains` [EXTRACTED]
-- [[TestRateLimiting_2]] - `contains` [EXTRACTED]
+- [[TestRateLimiting_3]] - `contains` [EXTRACTED]
 - [[TestSessionCleanup]] - `contains` [EXTRACTED]
 - [[TestSessionCreation]] - `contains` [EXTRACTED]
 - [[TestSessionRotation]] - `contains` [EXTRACTED]
@@ -22,4 +23,4 @@ tags:
 - [[manager()_3]] - `contains` [EXTRACTED]
 - [[session_security.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Session_Security

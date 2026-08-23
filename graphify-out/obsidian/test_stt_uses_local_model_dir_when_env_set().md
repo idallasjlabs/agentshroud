@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Security Pipeline Core"
+community: "Voice Gateway"
 location: "L771"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Pipeline_Core
+  - community/Voice_Gateway
 ---
 
 # test_stt_uses_local_model_dir_when_env_set()
@@ -15,4 +15,4 @@ tags:
 - [[WHISPER_MODEL_DIR env var is honoured _MODEL_PATH resolves to the directory]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Pipeline_Core
+#graphify/code #graphify/EXTRACTED #community/Voice_Gateway

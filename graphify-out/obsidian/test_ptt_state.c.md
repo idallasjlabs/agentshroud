@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
 type: "code"
-community: "Gateway Test Suite"
+community: "Ptt State (test_wakeword_state)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Ptt_State_test_wakeword_state
 ---
 
 # test_ptt_state.c
@@ -21,7 +21,7 @@ tags:
 - [[freertosFreeRTOS.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
 - [[freertostask.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
 - [[iot_button.h stub (wakeword PTT test)]] - `references` [EXTRACTED]
-- [[main()_7]] - `contains` [EXTRACTED]
+- [[main()_9]] - `contains` [EXTRACTED]
 - [[test_clear_allows_fresh_tap()]] - `contains` [EXTRACTED]
 - [[test_ptt_finish_ends_listening()]] - `contains` [EXTRACTED]
 - [[test_ptt_finish_noop_when_idle()]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[vt_agent_count()_2]] - `contains` [EXTRACTED]
 - [[vt_remote_log()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Ptt_State_test_wakeword_state

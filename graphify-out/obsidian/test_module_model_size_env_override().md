@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Voice Stt Model Ab"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Voice_Stt_Model_Ab
 ---
 
 # test_module_model_size_env_override()
@@ -15,4 +15,4 @@ tags:
 - [[Setting WHISPER_MODEL_SIZE=base.en flips the resolved model (AB).]] - `rationale_for` [EXTRACTED]
 - [[test_voice_stt_model_ab.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Voice_Stt_Model_Ab

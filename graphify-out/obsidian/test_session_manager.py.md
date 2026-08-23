@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Session Manager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Session_Manager
 ---
 
 # test_session_manager.py
 
 ## Connections
-- [[ConversationMessage]] - `imports` [EXTRACTED]
 - [[TestAccessControl_2]] - `contains` [EXTRACTED]
 - [[TestAtomicRegistryWrites]] - `contains` [EXTRACTED]
 - [[TestConversationHistory]] - `contains` [EXTRACTED]
@@ -28,4 +27,4 @@ tags:
 - [[mgr()_2]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Session_Manager

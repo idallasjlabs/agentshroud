@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
+community: "SOC Router Coverage"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/SOC_Router_Coverage
 ---
 
 # test_soc_router_coverage.py
@@ -16,16 +16,16 @@ tags:
 - [[FakeAuditStore_1]] - `contains` [EXTRACTED]
 - [[FakeCaller]] - `contains` [EXTRACTED]
 - [[FakeGroup]] - `contains` [EXTRACTED]
+- [[FastAPI_5]] - `imports_from` [EXTRACTED]
 - [[Role_1]] - `imports` [EXTRACTED]
 - [[_Svc]] - `contains` [EXTRACTED]
 - [[_fake_contributor_manager()]] - `contains` [EXTRACTED]
 - [[_make_service_manager()]] - `contains` [EXTRACTED]
 - [[client()_15]] - `contains` [EXTRACTED]
 - [[gatewaysocauth.py (get_caller)]] - `references` [EXTRACTED]
-- [[gatewaysocrouter.py (SCL REST endpoints)]] - `references` [EXTRACTED]
 - [[get_caller()]] - `imports` [EXTRACTED]
 - [[holder()]] - `contains` [EXTRACTED]
-- [[rbac_config.py (RBACConfig)]] - `references` [EXTRACTED]
+- [[router.py_1]] - `tests` [EXTRACTED]
 - [[state()]] - `contains` [EXTRACTED]
 - [[test_add_collaborator()]] - `contains` [EXTRACTED]
 - [[test_add_group_member_paths()]] - `contains` [EXTRACTED]
@@ -113,10 +113,12 @@ tags:
 - [[test_log_audit_appends_to_audit_store()]] - `contains` [EXTRACTED]
 - [[test_log_audit_survives_app_state_failure()]] - `contains` [EXTRACTED]
 - [[test_minimal_dashboard_html_contents()]] - `contains` [EXTRACTED]
+- [[test_pause_collaborator_endpoint()]] - `contains` [EXTRACTED]
 - [[test_privacy_policies()]] - `contains` [EXTRACTED]
 - [[test_remove_group_member_paths()]] - `contains` [EXTRACTED]
 - [[test_rename_group_paths()]] - `contains` [EXTRACTED]
 - [[test_revoke_collaborator()]] - `contains` [EXTRACTED]
+- [[test_revoke_collaborator_ok_reflects_actual_result()]] - `contains` [EXTRACTED]
 - [[test_revoke_delegation_paths()]] - `contains` [EXTRACTED]
 - [[test_risk_defaults_low_on_error()]] - `contains` [EXTRACTED]
 - [[test_risk_fallback_builder()]] - `contains` [EXTRACTED]
@@ -155,6 +157,7 @@ tags:
 - [[test_ssh_compose_timeout_and_exception()]] - `contains` [EXTRACTED]
 - [[test_tool_acl()]] - `contains` [EXTRACTED]
 - [[test_trivy_summary()]] - `contains` [EXTRACTED]
+- [[test_unpause_collaborator_endpoint()]] - `contains` [EXTRACTED]
 - [[test_update_display_name()]] - `contains` [EXTRACTED]
 - [[test_upgrade_bot_paths()]] - `contains` [EXTRACTED]
 - [[test_upgrade_gateway_paths()]] - `contains` [EXTRACTED]
@@ -162,4 +165,4 @@ tags:
 - [[test_upgrade_hermes_restarts_the_real_container_name()]] - `contains` [EXTRACTED]
 - [[test_websocket_route_dispatch()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/SOC_Router_Coverage

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Approval & FastAPI Ingest"
+community: "RBAC & Ingest Middleware"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval__FastAPI_Ingest
+  - community/RBAC__Ingest_Middleware
 ---
 
 # test_soc_realtime_coverage.py
@@ -41,7 +41,7 @@ tags:
 - [[WSEvent]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 - [[_FakeBus]] - `contains` [EXTRACTED]
-- [[_FakeRBAC_1]] - `contains` [EXTRACTED]
+- [[_FakeRBAC_2]] - `contains` [EXTRACTED]
 - [[_audit_entry()]] - `contains` [EXTRACTED]
 - [[_block_run_secrets()]] - `contains` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `imports` [EXTRACTED]
@@ -60,4 +60,4 @@ tags:
 - [[redeem_ws_token()]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval__FastAPI_Ingest
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "Web Control Center"
+community: "Security Audit & Watchtower Tests"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Web_Control_Center
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # test_multilingual_injection.py
@@ -16,4 +16,4 @@ tags:
 - [[TestMultilingualInjection]] - `contains` [EXTRACTED]
 - [[prompt_guard.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Web_Control_Center
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

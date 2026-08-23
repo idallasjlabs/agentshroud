@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "README.md"
+community: "Sanitizer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/READMEmd
+  - community/Sanitizer
 ---
 
 # test_sanitizer.py
@@ -17,6 +17,7 @@ tags:
 - [[test_empty_content()]] - `contains` [EXTRACTED]
 - [[test_mixed_pii()]] - `contains` [EXTRACTED]
 - [[test_no_pii()]] - `contains` [EXTRACTED]
+- [[test_performance.py]] - `shares_data_with` [INFERRED]
 - [[test_phone_detection()]] - `contains` [EXTRACTED]
 - [[test_real_phone_still_redacted()]] - `contains` [EXTRACTED]
 - [[test_regex_fallback_requires_separator()]] - `contains` [EXTRACTED]
@@ -24,4 +25,4 @@ tags:
 - [[test_telegram_uid_not_redacted_as_phone()]] - `contains` [EXTRACTED]
 - [[test_uid_inside_parens_preserved()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Sanitizer

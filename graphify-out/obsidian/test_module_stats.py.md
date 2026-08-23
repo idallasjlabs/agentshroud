@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "Custom Skills"
+community: "Module Stats"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Module_Stats
 ---
 
 # test_module_stats.py
@@ -31,4 +31,4 @@ tags:
 - [[test_thread_safe_under_concurrency()]] - `contains` [EXTRACTED]
 - [[test_unknown_module_created_on_demand()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Module_Stats

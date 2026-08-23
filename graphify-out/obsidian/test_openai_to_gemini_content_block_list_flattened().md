@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gemini_openai_translator.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gemini Openai Translator"
 location: "L234"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gemini_Openai_Translator
 ---
 
 # test_openai_to_gemini_content_block_list_flattened()
@@ -15,4 +15,4 @@ tags:
 - [[openai_to_gemini_request()]] - `calls` [EXTRACTED]
 - [[test_gemini_openai_translator.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gemini_Openai_Translator

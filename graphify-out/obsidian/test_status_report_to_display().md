@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_proxy_dashboard.py"
 type: "code"
-community: "docs/setup-slack.md"
+community: "Proxy Dashboard"
 location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/setup-slackmd
+  - community/Proxy_Dashboard
 ---
 
 # test_status_report_to_display()
@@ -16,4 +16,4 @@ tags:
 - [[ProxyStatusReport.to_display should produce readable strings.]] - `rationale_for` [EXTRACTED]
 - [[test_proxy_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/setup-slackmd
+#graphify/code #graphify/EXTRACTED #community/Proxy_Dashboard

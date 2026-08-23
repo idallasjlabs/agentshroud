@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
 type: "code"
-community: "ESP32 Firmware"
+community: "Bots Ssh Exec Wrapper"
 location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Bots_Ssh_Exec_Wrapper
 ---
 
 # test_shell_payload_builder_emits_valid_json_without_python()
@@ -16,4 +16,4 @@ tags:
 - [[_build_payload_via_shell()]] - `calls` [EXTRACTED]
 - [[test_bots_ssh_exec_wrapper.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Bots_Ssh_Exec_Wrapper

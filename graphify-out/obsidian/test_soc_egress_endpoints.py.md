@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Soc Egress Endpoints"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Soc_Egress_Endpoints
 ---
 
 # test_soc_egress_endpoints.py
 
 ## Connections
 - [[client()_14]] - `contains` [EXTRACTED]
-- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[test_manage_egress_add_remove_rule_and_risk()]] - `contains` [EXTRACTED]
 - [[test_manage_egress_emergency_toggle()]] - `contains` [EXTRACTED]
@@ -39,4 +38,4 @@ tags:
 - [[test_soc_scanners_recent_returns_history()]] - `contains` [EXTRACTED]
 - [[test_soc_scanners_recent_status_filter()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Soc_Egress_Endpoints

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Redteam Probes"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Redteam_Probes
 ---
 
 # test_redteam_probes.py
@@ -19,8 +19,6 @@ tags:
 - [[EncodingDetector]] - `imports` [EXTRACTED]
 - [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
-- [[PipelineAction]] - `imports` [EXTRACTED]
-- [[PipelineResult]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
@@ -29,7 +27,6 @@ tags:
 - [[_make_approval_queue()]] - `contains` [EXTRACTED]
 - [[_make_full_pipeline()]] - `contains` [EXTRACTED]
 - [[_make_pii_sanitizer()]] - `contains` [EXTRACTED]
-- [[i-sec-offense Red Team Adversarial Tester]] - `references` [EXTRACTED]
 - [[pipeline()_2]] - `contains` [EXTRACTED]
 - [[test_admin_action_requires_approval()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_records_all_events()]] - `contains` [EXTRACTED]
@@ -55,4 +52,4 @@ tags:
 - [[test_ssn_redacted_outbound()]] - `contains` [EXTRACTED]
 - [[test_trust_escalation_blocked()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Redteam_Probes

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Collaborator Prompt Classifiers"
+community: "Approval Queue"
 location: "L340"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Classifiers
+  - community/Approval_Queue
 ---
 
 # test_store_persists_submit_and_decision()
@@ -17,4 +17,4 @@ tags:
 - [[Queue store file should persist items and status transitions.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Classifiers
+#graphify/code #graphify/EXTRACTED #community/Approval_Queue

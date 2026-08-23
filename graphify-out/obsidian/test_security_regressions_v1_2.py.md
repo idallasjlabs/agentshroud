@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Regressions V1 2"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Regressions_V1_2
 ---
 
 # test_security_regressions_v1_2.py
@@ -23,6 +23,7 @@ tags:
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
 - [[TrustManager_1]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
+- [[gatewaysecuritytrust_manager.py (TrustManager)]] - `references` [EXTRACTED]
 - [[session_manager()_3]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 - [[shared_memory.py (SharedMemoryManager)]] - `references` [EXTRACTED]
@@ -31,4 +32,4 @@ tags:
 - [[tmp_workspace()_1]] - `contains` [EXTRACTED]
 - [[trust_manager()_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Regressions_V1_2

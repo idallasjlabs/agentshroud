@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Security Docs"
+community: "Killswitch Monitor & Observatory Mode"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Killswitch_Monitor__Observatory_Mode
 ---
 
 # test_observatory_mode.py
 
 ## Connections
 - [[FastAPI_2]] - `imports_from` [EXTRACTED]
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
 - [[KillSwitchConfig]] - `imports` [EXTRACTED]
 - [[KillSwitchMonitor]] - `imports` [EXTRACTED]
 - [[ModeRequest]] - `imports` [EXTRACTED]
@@ -33,4 +32,4 @@ tags:
 - [[reset_env_and_task()]] - `contains` [EXTRACTED]
 - [[set_mode()_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Killswitch_Monitor__Observatory_Mode

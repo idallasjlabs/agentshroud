@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Slack Socket Client"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Slack_Socket_Client
 ---
 
 # test_slack_socket_client.py
@@ -18,4 +18,4 @@ tags:
 - [[_make_client()]] - `contains` [EXTRACTED]
 - [[compute_backoff()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Slack_Socket_Client

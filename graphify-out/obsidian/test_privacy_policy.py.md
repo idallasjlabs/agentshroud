@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Privacy Policy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Privacy_Policy
 ---
 
 # test_privacy_policy.py
@@ -16,7 +16,6 @@ tags:
 - [[PrivacyPolicyEnforcer]] - `imports` [EXTRACTED]
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
 - [[Role_1]] - `imports` [EXTRACTED]
-- [[ServicePolicy]] - `imports` [EXTRACTED]
 - [[ServicePrivacy]] - `imports` [EXTRACTED]
 - [[TeamsConfig]] - `imports` [EXTRACTED]
 - [[TestAuditAndAlert]] - `contains` [EXTRACTED]
@@ -28,4 +27,4 @@ tags:
 - [[enforcer()_2]] - `contains` [EXTRACTED]
 - [[rbac()_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Privacy_Policy

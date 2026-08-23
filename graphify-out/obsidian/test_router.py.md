@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Router"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Router
 ---
 
 # test_router.py
@@ -38,5 +38,7 @@ tags:
 - [[test_resolve_target_explicit()]] - `contains` [EXTRACTED]
 - [[test_resolve_target_invalid_explicit()]] - `contains` [EXTRACTED]
 - [[test_resolves_hermes_target()]] - `contains` [EXTRACTED]
+- [[test_router_streaming.py]] - `conceptually_related_to` [INFERRED]
+- [[test_scanner_integration_coverage.py]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Router

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "README.md"
+community: "Sanitizer"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/READMEmd
+  - community/Sanitizer
 ---
 
 # test_phone_detection()
@@ -15,4 +15,4 @@ tags:
 - [[Test phone number redaction]] - `rationale_for` [EXTRACTED]
 - [[test_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Sanitizer

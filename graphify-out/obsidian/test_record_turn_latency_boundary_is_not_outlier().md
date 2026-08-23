@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "code"
-community: "voice_gateway/server.py"
+community: "Voice Latency Guard"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_gateway/serverpy
+  - community/Voice_Latency_Guard
 ---
 
 # test_record_turn_latency_boundary_is_not_outlier()
@@ -16,4 +16,4 @@ tags:
 - [[_record_turn_latency()]] - `calls` [EXTRACTED]
 - [[test_voice_latency_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_gateway/serverpy
+#graphify/code #graphify/EXTRACTED #community/Voice_Latency_Guard

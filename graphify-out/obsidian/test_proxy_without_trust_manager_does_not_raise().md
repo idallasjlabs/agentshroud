@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "A2a Integration"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/A2a_Integration
 ---
 
 # test_proxy_without_trust_manager_does_not_raise()
@@ -18,4 +18,4 @@ tags:
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 - [[trust_manager is an optional dependency — a proxy built without one     (e.g. be]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/A2a_Integration

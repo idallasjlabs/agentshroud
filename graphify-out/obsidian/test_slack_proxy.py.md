@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Slack Proxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Slack_Proxy
 ---
 
 # test_slack_proxy.py
@@ -23,4 +23,4 @@ tags:
 - [[_make_proxy()_2]] - `contains` [EXTRACTED]
 - [[_pass_result()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Slack_Proxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_integrity.py"
 type: "code"
-community: "docs/vault"
+community: "Scorecard Integrity"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Scorecard_Integrity
 ---
 
 # test_scorecard_integrity.py
@@ -16,9 +16,6 @@ tags:
 - [[_clean_trivy()]] - `contains` [EXTRACTED]
 - [[_not_run_clamav()]] - `contains` [EXTRACTED]
 - [[_not_run_trivy()]] - `contains` [EXTRACTED]
-- [[_score_access_control_authorization()]] - `imports` [EXTRACTED]
-- [[_score_data_confidentiality_encryption()]] - `imports` [EXTRACTED]
-- [[_score_host_os_hardening()]] - `imports` [EXTRACTED]
 - [[_score_malware_defense()]] - `imports` [EXTRACTED]
 - [[_score_vulnerability_management()]] - `imports` [EXTRACTED]
 - [[test_empty_collaborator_activity_no_score()]] - `contains` [EXTRACTED]
@@ -37,4 +34,4 @@ tags:
 - [[test_vuln_not_run_scores_1()]] - `contains` [EXTRACTED]
 - [[test_vuln_stale_report_scores_1()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Scorecard_Integrity

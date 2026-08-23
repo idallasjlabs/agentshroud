@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "Security Docs"
+community: "Op Proxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Op_Proxy
 ---
 
 # test_op_proxy.py
@@ -17,6 +17,6 @@ tags:
 - [[_is_op_reference_allowed()]] - `imports` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
 - [[client()_12]] - `contains` [EXTRACTED]
-- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
+- [[main.py_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Op_Proxy

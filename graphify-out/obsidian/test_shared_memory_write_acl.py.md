@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "File Sandbox"
+community: "Shared Memory Write Acl"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/Shared_Memory_Write_Acl
 ---
 
 # test_shared_memory_write_acl.py
@@ -22,10 +22,9 @@ tags:
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[group_config.py (TeamsConfig)]] - `references` [EXTRACTED]
 - [[rbac()_5]] - `contains` [EXTRACTED]
-- [[rbac_config.py (RBACConfig)]] - `references` [EXTRACTED]
 - [[session_manager()_4]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 - [[shared_memory()_2]] - `contains` [EXTRACTED]
 - [[shared_memory.py (SharedMemoryManager)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/Shared_Memory_Write_Acl

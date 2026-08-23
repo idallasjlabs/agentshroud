@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "docs/project"
+community: "Scanner Integration Coverage"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/project
+  - community/Scanner_Integration_Coverage
 ---
 
 # test_scanner_integration_coverage.py
@@ -56,8 +56,11 @@ tags:
 - [[_age()]] - `contains` [EXTRACTED]
 - [[_stub_summary()]] - `contains` [EXTRACTED]
 - [[_w()]] - `contains` [EXTRACTED]
+- [[falco_monitor.py]] - `references` [EXTRACTED]
 - [[flags()]] - `contains` [EXTRACTED]
 - [[fs()]] - `contains` [EXTRACTED]
+- [[test_router.py]] - `conceptually_related_to` [AMBIGUOUS]
 - [[tools()]] - `contains` [EXTRACTED]
+- [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/project
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_Coverage
