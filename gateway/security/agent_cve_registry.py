@@ -15153,11 +15153,12 @@ _HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
             "deployments. Container filesystem is read-only (read_only:true). "
             "EgressFilter blocks all outbound traffic not explicitly permitted. "
             "AgentShroud network isolation prevents lateral movement."
-            "Note (2026-07-31 dependency audit): NVD records this CVE's affected range using a "
-            "calendar-style version string that does not map cleanly onto hermes-agent's semver "
-            "releases (installed: 0.18.2); whether 0.18.2 itself falls in the affected range is "
-            "unconfirmed either way. This mitigation does not depend on that determination -- it "
-            "disables the vulnerable feature/path outright, independent of the installed version."
+            "Note (2026-08-23 dependency audit, updated from 2026-07-31): NVD records this CVE's "
+            "affected range using a calendar-style version string that does not map cleanly onto "
+            "hermes-agent's semver releases (installed: 0.20.5); whether 0.20.5 itself falls in "
+            "the affected range is unconfirmed either way. This mitigation does not depend on "
+            "that determination -- it disables the vulnerable feature/path outright, independent "
+            "of the installed version."
         ),
         "defense_layers": ["read_only_container", "network_isolation", "egress_filter"],
     },
@@ -15242,11 +15243,12 @@ _HERMES_CVE_REGISTRY: list[dict[str, Any]] = [
             "LLM response containing a known secret value before it leaves the gateway. "
             "EgressFilter intercepts outbound data. Update hermes-agent to "
             ">2026.4.23 when available to address the root cause."
-            "Note (2026-07-31 dependency audit): NVD records this CVE's affected range using a "
-            "calendar-style version string that does not map cleanly onto hermes-agent's semver "
-            "releases (installed: 0.18.2); whether 0.18.2 itself falls in the affected range is "
-            "unconfirmed either way. This mitigation does not depend on that determination -- it "
-            "disables the vulnerable feature/path outright, independent of the installed version."
+            "Note (2026-08-23 dependency audit, updated from 2026-07-31): NVD records this CVE's "
+            "affected range using a calendar-style version string that does not map cleanly onto "
+            "hermes-agent's semver releases (installed: 0.20.5); whether 0.20.5 itself falls in "
+            "the affected range is unconfirmed either way. This mitigation does not depend on "
+            "that determination -- it disables the vulnerable feature/path outright, independent "
+            "of the installed version."
         ),
         "defense_layers": [
             "env_value_scrubbing",

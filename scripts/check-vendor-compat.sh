@@ -218,12 +218,57 @@ check_hermes() {
   docker network create "$net" >/dev/null 2>&1 || true
   CLEANUP_CMDS+=("docker rm -f $container 2>/dev/null" "docker network rm $net 2>/dev/null")
 
+  # A2A-enabled /opt/data staged BEFORE boot so step 5 below can exercise the
+  # real inbound A2A JSON-RPC surface. A2A is disabled by default in
+  # production (docker/config/hermes/config.yaml.tmpl does not set
+  # gateway.platforms.a2a — see gateway/proxy/a2a_proxy.py's module docstring
+  # and docs/security/threat-model.md) so this candidate-only override must
+  # NOT touch the production template. Schema is the vendor's own
+  # (plugins/platforms/a2a/README.md "Enable" section):
+  #   gateway: platforms: a2a: { enabled: true, extra: { port: 9900 } }
+  # docker/bots/hermes/init-config.sh only seeds config.yaml when the file is
+  # ABSENT, so pre-placing our own (production template + the block above) at
+  # container start is accepted as-is — the same idempotent contract
+  # production relies on, not a bypass of it.
+  #
+  # Bind-mounting the whole /opt/data directory (not just config.yaml) is
+  # deliberate: /opt/data is a declared VOLUME in the vendor base image, and
+  # bind-mounting a single file onto a path backed by an anonymous volume
+  # created a directory instead of receiving the file's contents when this
+  # was tried directly against the cached vendor image — confirmed while
+  # developing this check. Mounting the parent directory avoids that class of
+  # bug entirely.
+  local a2a_data_dir="/tmp/check-vendor-compat-hermes-optdata-$$"
+  mkdir -p "$a2a_data_dir"
+  cat "$REPO_ROOT/docker/config/hermes/config.yaml.tmpl" > "$a2a_data_dir/config.yaml"
+  cat >> "$a2a_data_dir/config.yaml" <<'YAMLEOF'
+
+# --- check-vendor-compat.sh candidate-only override: enable A2A inbound so
+# step 5 below can exercise the real JSON-RPC method surface. NOT part of the
+# production template (docker/config/hermes/config.yaml.tmpl) — A2A stays
+# disabled by default in real deployments.
+gateway:
+  platforms:
+    a2a:
+      enabled: true
+      extra:
+        port: 9900
+YAMLEOF
+  # Throwaway/isolated only: host-side perms wide open so the container's
+  # hermes user (uid 10000) can read/write regardless of host uid mapping —
+  # matches the pragmatic posture the rest of this script already takes for
+  # its throwaway image/container/network names.
+  chmod -R 777 "$a2a_data_dir"
+  CLEANUP_CMDS+=("rm -rf $a2a_data_dir")
+
   docker run -d --name "$container" --network "$net" \
     -e HERMES_DASHBOARD=1 -e HERMES_DASHBOARD_HOST=127.0.0.1 -e HERMES_DASHBOARD_PORT=9119 \
     -e HERMES_DASHBOARD_BRIDGE_PORT=9120 \
     -e API_SERVER_ENABLED=1 -e API_SERVER_HOST=0.0.0.0 -e API_SERVER_PORT=8642 \
     -e API_SERVER_KEY=compat-check-throwaway-key \
     -e HERMES_TELEGRAM_DISABLE_FALLBACK_IPS=1 \
+    -e HOME=/opt/data -e HERMES_HOME=/opt/data \
+    -v "$a2a_data_dir:/opt/data" \
     "$image" > /dev/null
 
   local boot_ok=false
@@ -261,6 +306,50 @@ check_hermes() {
     fail "Traceback found in candidate boot logs — see docker logs $container"
   else
     pass "No Python traceback in boot logs"
+  fi
+
+  echo ""
+  echo "-- 5. A2A JSON-RPC method surface: candidate recognizes GetTask --"
+  # The compat checks above (build succeeds, boots, dashboard reachable) do
+  # NOT exercise Hermes's A2A JSON-RPC surface at all — a hypothetical
+  # upstream method rename would sail straight through every check above and
+  # only surface in production once gateway/proxy/a2a_proxy.py's
+  # _LEGACY_METHOD_ALIASES / A2AMethod mapping (gateway/security/a2a_policy.py)
+  # starts rejecting every inbound A2A call as "Unrecognized A2A method".
+  # This is a real request against the real listener staged above — not a
+  # stub — and it is the actual compatibility signal that matters here.
+  #
+  # GetTask (not SendMessage) is used deliberately: per the vendor's own
+  # plugins/platforms/a2a/adapter.py method-dispatch table, "GetTask"/
+  # "tasks/get" both route to _rpc_tasks_get, which needs no LLM credentials
+  # or live agent session to answer — just the JSON-RPC method dispatch
+  # table, which is exactly the surface a rename would break. A nonexistent
+  # taskId is expected to produce ERR_TASK_NOT_FOUND (-32001, protocol.py) —
+  # a well-formed JSON-RPC error that proves the METHOD NAME was recognized.
+  # ERR_METHOD_NOT_FOUND (-32601) or a non-JSON-RPC transport-level response
+  # (404, connection refused) proves it was not.
+  local a2a_response
+  a2a_response="$(docker exec "$container" curl -sS --max-time 10 \
+    -X POST "http://127.0.0.1:9900/" \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","id":"compat-check","method":"GetTask","params":{"taskId":"agentshroud-compat-check-smoke"}}' \
+    2>/dev/null || echo "")"
+
+  local a2a_is_jsonrpc_envelope=false
+  if echo "$a2a_response" | grep -q '"jsonrpc"[[:space:]]*:[[:space:]]*"2\.0"'; then
+    if echo "$a2a_response" | grep -q '"result"' || echo "$a2a_response" | grep -q '"error"'; then
+      a2a_is_jsonrpc_envelope=true
+    fi
+  fi
+
+  if [ -z "$a2a_response" ]; then
+    fail "A2A JSON-RPC endpoint (127.0.0.1:9900) did not respond to a GetTask call — connection failed/refused/timed out"
+  elif echo "$a2a_response" | grep -q '"code"[[:space:]]*:[[:space:]]*-32601'; then
+    fail "A2A candidate returned ERR_METHOD_NOT_FOUND (-32601) for GetTask — the upstream method surface changed; gateway/proxy/a2a_proxy.py's _LEGACY_METHOD_ALIASES / gateway/security/a2a_policy.py's A2AMethod need updating for this version. Response: $a2a_response"
+  elif [ "$a2a_is_jsonrpc_envelope" = "true" ]; then
+    pass "A2A JSON-RPC GetTask recognized (valid JSON-RPC 2.0 result/error envelope): $a2a_response"
+  else
+    fail "A2A JSON-RPC response was not a valid JSON-RPC 2.0 result/error envelope — got: $a2a_response"
   fi
 }
 
