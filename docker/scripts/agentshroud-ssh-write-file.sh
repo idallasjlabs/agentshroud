@@ -163,8 +163,14 @@ _payload_file="/tmp/.ssh-write-payload.$$"
 # --noproxy gateway: HTTP_PROXY=http://gateway:8181 (EgressFilter) is set in the
 # bot environment; without --noproxy the call would loop through the egress proxy
 # instead of reaching the internal control-plane /ssh/write_file endpoint directly.
+# PID-suffixed like _payload_file/_content_file above — a fixed shared
+# filename here would let two concurrent agentshroud-ssh-write-file.sh
+# invocations in the same container race each other's curl -o writes and
+# read back interleaved, corrupted JSON. See agentshroud-ssh-exec.sh for
+# the same fix applied to its sibling fixed-filename bug.
+_response_file="/tmp/.ssh-write-response.$$"
 _response="$(curl -sS --noproxy gateway --max-time 180 \
-    -o /tmp/.ssh-write-response \
+    -o "${_response_file}" \
     -w "%{http_code}" \
     -X POST "${_gw_url}/ssh/write_file" \
     -H "Content-Type: application/json" \
@@ -174,8 +180,8 @@ _response="$(curl -sS --noproxy gateway --max-time 180 \
     2>/dev/null)" || _response="000"
 rm -f "${_payload_file}" 2>/dev/null || true
 
-_body_resp="$(cat /tmp/.ssh-write-response 2>/dev/null || true)"
-rm -f /tmp/.ssh-write-response 2>/dev/null || true
+_body_resp="$(cat "${_response_file}" 2>/dev/null || true)"
+rm -f "${_response_file}" 2>/dev/null || true
 
 case "${_response}" in
     2*)
