@@ -162,8 +162,21 @@ def test_hermes_cve_registry_public_alias() -> None:
 # ─────────────────────────────────────────────────────────────────────────────
 
 
-def test_list_cve_agents_returns_both() -> None:
-    assert list_cve_agents() == ["openclaw", "hermes"]
+def test_list_cve_agents_returns_wrapped_agents_and_security_tools() -> None:
+    # Wrapped agents first (openclaw, hermes), then the 8 security-tool
+    # sources added 2026-08-23, in registration order.
+    assert list_cve_agents() == [
+        "openclaw",
+        "hermes",
+        "trivy",
+        "cosign",
+        "openscap",
+        "syft",
+        "falco",
+        "clamav",
+        "wazuh",
+        "semgrep",
+    ]
 
 
 def test_list_cve_agents_is_list_of_str() -> None:
@@ -435,3 +448,102 @@ def test_agent_cve_registries_contains_both() -> None:
 def test_agent_cve_registries_objects_match_lists() -> None:
     assert _AGENT_CVE_REGISTRIES["openclaw"] is _OPENCLAW_CVE_REGISTRY
     assert _AGENT_CVE_REGISTRIES["hermes"] is _HERMES_CVE_REGISTRY
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Security-tool registries (trivy/cosign/openscap/syft/falco/clamav/wazuh/
+# semgrep) — added 2026-08-23. Same integrity guards as the wrapped-agent
+# registries above, applied generically across every registered source so a
+# new addition can't quietly skip them.
+# ─────────────────────────────────────────────────────────────────────────────
+
+_SECURITY_TOOL_IDS = (
+    "trivy",
+    "cosign",
+    "openscap",
+    "syft",
+    "falco",
+    "clamav",
+    "wazuh",
+    "semgrep",
+)
+
+_ASH_ID_ANY_PREFIX_PATTERN = re.compile(r"^ASH-[A-Z]+-\d{3,}$")
+
+
+def test_all_registered_sources_are_wrapped_agents_plus_security_tools() -> None:
+    assert set(list_cve_agents()) == {"openclaw", "hermes"} | set(_SECURITY_TOOL_IDS)
+
+
+def test_security_tool_registries_present_in_registries_dict() -> None:
+    for tool_id in _SECURITY_TOOL_IDS:
+        assert tool_id in _AGENT_CVE_REGISTRIES
+
+
+def test_no_security_tool_entry_id_looks_like_a_cve() -> None:
+    """Same integrity guard as test_no_entry_id_looks_like_a_cve, extended to
+    the security-tool registries — a fabricated CVE id must never appear here
+    either."""
+    offenders = [
+        e["id"]
+        for tool_id in _SECURITY_TOOL_IDS
+        for e in _AGENT_CVE_REGISTRIES[tool_id]
+        if _CVE_ANYWHERE.search(str(e["id"]))
+    ]
+    assert not offenders, f"security-tool entries carry CVE-like ids: {offenders[:10]}"
+
+
+def test_every_security_tool_entry_id_is_synthetic_ash_ref() -> None:
+    bad = [
+        e["id"]
+        for tool_id in _SECURITY_TOOL_IDS
+        for e in _AGENT_CVE_REGISTRIES[tool_id]
+        if not _ASH_ID_ANY_PREFIX_PATTERN.match(str(e["id"]))
+    ]
+    assert not bad, f"non-synthetic ids present in security-tool registries: {bad[:10]}"
+
+
+def test_security_tool_entries_have_required_fields() -> None:
+    for tool_id in _SECURITY_TOOL_IDS:
+        for cve in _AGENT_CVE_REGISTRIES[tool_id]:
+            missing = _REQUIRED_FIELDS - set(cve.keys())
+            assert not missing, f"{tool_id}/{cve.get('id')} missing fields: {missing}"
+
+
+def test_security_tool_entries_have_valid_status_and_severity() -> None:
+    for tool_id in _SECURITY_TOOL_IDS:
+        for cve in _AGENT_CVE_REGISTRIES[tool_id]:
+            assert (
+                cve["status"] in _VALID_STATUSES
+            ), f"{tool_id}/{cve['id']} bad status: {cve['status']}"
+            assert (
+                cve["severity"] in _VALID_SEVERITIES
+            ), f"{tool_id}/{cve['id']} bad severity: {cve['severity']}"
+
+
+def test_security_tool_entries_ghsa_and_cve_ids_well_formed() -> None:
+    for tool_id in _SECURITY_TOOL_IDS:
+        for cve in _AGENT_CVE_REGISTRIES[tool_id]:
+            gid = cve.get("ghsa_id")
+            if gid is not None:
+                assert _GHSA_PATTERN.match(
+                    gid
+                ), f"{tool_id}/{cve['id']} has malformed ghsa_id: {gid!r}"
+            cid = cve.get("cve_id")
+            if cid is not None:
+                assert _CVE_PATTERN.match(
+                    cid
+                ), f"{tool_id}/{cve['id']} has malformed cve_id: {cid!r}"
+                assert gid, f"{tool_id}/{cve['id']} has cve_id but no ghsa_id"
+
+
+def test_security_tool_entries_start_as_under_review_never_pre_claimed_mitigated() -> None:
+    """Freshly-synced advisories must never arrive pre-marked as mitigated —
+    that requires an actual human/LLM triage pass (same rule as the wrapped-
+    agent pipeline: NEVER auto-claim mitigation)."""
+    for tool_id in _SECURITY_TOOL_IDS:
+        for cve in _AGENT_CVE_REGISTRIES[tool_id]:
+            assert cve["status"] == "under_review", (
+                f"{tool_id}/{cve['id']} has status {cve['status']!r} — only "
+                "under_review is expected until a real triage pass runs"
+            )
