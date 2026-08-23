@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "docs/vault"
+community: "Ledger"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Ledger
 ---
 
 # test_ledger.py
@@ -25,4 +25,4 @@ tags:
 - [[test_query_with_time_filters()]] - `contains` [EXTRACTED]
 - [[test_record_entry()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Ledger

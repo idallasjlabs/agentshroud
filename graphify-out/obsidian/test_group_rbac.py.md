@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Tool ACL & Group RBAC"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Tool_ACL__Group_RBAC
 ---
 
 # test_group_rbac.py
@@ -32,4 +32,4 @@ tags:
 - [[teams()_3]] - `contains` [EXTRACTED]
 - [[tool_acl.py (ToolACLEnforcer)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Tool_ACL__Group_RBAC

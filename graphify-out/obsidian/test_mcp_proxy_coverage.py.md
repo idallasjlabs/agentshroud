@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Collaborator Prompt Safety"
+community: "Mcp Proxy Coverage"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Prompt_Safety
+  - community/Mcp_Proxy_Coverage
 ---
 
 # test_mcp_proxy_coverage.py
@@ -44,5 +44,7 @@ tags:
 - [[make_call()]] - `contains` [EXTRACTED]
 - [[make_config()]] - `contains` [EXTRACTED]
 - [[make_proxy()_1]] - `contains` [EXTRACTED]
+- [[test_mcp_permissions.py]] - `shares_data_with` [INFERRED]
+- [[test_mcp_proxy_endpoint.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Prompt_Safety
+#graphify/code #graphify/EXTRACTED #community/Mcp_Proxy_Coverage

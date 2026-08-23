@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Security Fixes & SSH Write Endpoint"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Security_Fixes__SSH_Write_Endpoint
 ---
 
 # test_mcp_result_endpoint.py
@@ -22,8 +22,11 @@ tags:
 - [[TestMCPResultEndpoint]] - `contains` [EXTRACTED]
 - [[auth_headers()_2]] - `contains` [EXTRACTED]
 - [[client()_10]] - `contains` [EXTRACTED]
-- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
+- [[config.py]] - `references` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
+- [[main.py_2]] - `references` [EXTRACTED]
+- [[mcp_proxy.py]] - `references` [EXTRACTED]
+- [[state.py]] - `references` [EXTRACTED]
 - [[test_config()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint

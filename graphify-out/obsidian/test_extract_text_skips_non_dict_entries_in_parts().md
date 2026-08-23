@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Planning Docs"
+community: "A2a Proxy"
 location: "L420"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/A2a_Proxy
 ---
 
 # test_extract_text_skips_non_dict_entries_in_parts()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/A2a_Proxy

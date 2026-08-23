@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Resource Guard & Local Model Parity"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Resource_Guard__Local_Model_Parity
 ---
 
 # test_llm_proxy_local_parity.py
 
 ## Connections
-- [[LLMProxy]] - `imports` [EXTRACTED]
-- [[ResourceGuard]] - `imports` [EXTRACTED]
+- [[LLMProxy]] - `tests` [EXTRACTED]
+- [[ResourceGuard]] - `tests` [EXTRACTED]
 - [[ResourceLimits]] - `imports` [EXTRACTED]
 - [[VRAMHeadroomError]] - `imports` [EXTRACTED]
 - [[_FakeSanitizer_1]] - `contains` [EXTRACTED]
@@ -22,8 +22,7 @@ tags:
 - [[_make_proxy()]] - `contains` [EXTRACTED]
 - [[_openai_ok()]] - `contains` [EXTRACTED]
 - [[_openai_tool_use_ok()]] - `contains` [EXTRACTED]
-- [[llm_proxy.py]] - `references` [EXTRACTED]
-- [[resource_guard.py]] - `references` [EXTRACTED]
+- [[llm_proxy.py]] - `imports_from` [EXTRACTED]
 - [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `contains` [EXTRACTED]
 - [[test_deepseek_r1_routes_to_mlxlm()]] - `contains` [EXTRACTED]
 - [[test_get_local_model_reads_fieldflare_ref()]] - `contains` [EXTRACTED]
@@ -62,6 +61,7 @@ tags:
 - [[test_normalize_local_model_mlxlm_keeps_colon()]] - `contains` [EXTRACTED]
 - [[test_normalize_local_model_ollama_keeps_colon()]] - `contains` [EXTRACTED]
 - [[test_normalize_local_model_provider_prefix_stripped_before_normalize()]] - `contains` [EXTRACTED]
+- [[test_resource_guard.py]] - `semantically_similar_to` [INFERRED]
 - [[test_resource_guard_vram_estimate_128k_tokens_triggers_rejection()]] - `contains` [EXTRACTED]
 - [[test_resource_guard_vram_headroom_check_allows_small_context()]] - `contains` [EXTRACTED]
 - [[test_resource_guard_vram_headroom_check_disabled_when_threshold_zero()]] - `contains` [EXTRACTED]
@@ -69,4 +69,4 @@ tags:
 - [[test_stats_local_secondary_failover_succeeded_incremented()]] - `contains` [EXTRACTED]
 - [[test_vram_headroom_error_is_not_resource_warning()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity

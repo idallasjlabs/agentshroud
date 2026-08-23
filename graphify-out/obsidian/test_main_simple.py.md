@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "Main Simple"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Main_Simple
 ---
 
 # test_main_simple.py
@@ -15,7 +15,6 @@ tags:
 - [[ApprovalDecision]] - `imports` [EXTRACTED]
 - [[ApprovalRequest_3]] - `imports` [EXTRACTED]
 - [[ForwardRequest]] - `imports` [EXTRACTED]
-- [[gatewayingest_apimain.py (op-proxy allowlist, mcp route, referenced)]] - `imports_from` [EXTRACTED]
 - [[global_exception_handler()]] - `imports` [EXTRACTED]
 - [[limit_request_body()]] - `imports` [EXTRACTED]
 - [[log_requests()]] - `imports` [EXTRACTED]
@@ -36,4 +35,4 @@ tags:
 - [[test_security_headers_middleware_normal_response()]] - `contains` [EXTRACTED]
 - [[test_security_headers_middleware_reraises_non_group()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/code #graphify/EXTRACTED #community/Main_Simple

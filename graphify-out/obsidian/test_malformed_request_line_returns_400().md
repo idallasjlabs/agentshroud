@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Http Proxy"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Http_Proxy
 ---
 
 # test_malformed_request_line_returns_400()
@@ -17,4 +17,4 @@ tags:
 - [[_make_stream()]] - `calls` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Http_Proxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "skills/openclaw"
+community: "Key Rotation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/skills/openclaw
+  - community/Key_Rotation
 ---
 
 # test_key_rotation.py
@@ -19,6 +19,7 @@ tags:
 - [[KeyRotationManager]] - `imports` [EXTRACTED]
 - [[MockValidator]] - `contains` [EXTRACTED]
 - [[RotationStatus]] - `imports` [EXTRACTED]
+- [[Test Gmail Credential Retrieval]] - `semantically_similar_to` [INFERRED]
 - [[TestCredentialInfo]] - `contains` [EXTRACTED]
 - [[TestCredentialRotationPolicy]] - `contains` [EXTRACTED]
 - [[TestKeyRotationConfig]] - `contains` [EXTRACTED]
@@ -27,6 +28,7 @@ tags:
 - [[require_auth()_1]] - `imports` [EXTRACTED]
 - [[test_credentials_health_endpoint()]] - `contains` [EXTRACTED]
 - [[test_credentials_status_endpoint()]] - `contains` [EXTRACTED]
+- [[test_key_rotation_internals.py]] - `references` [EXTRACTED]
 - [[test_rotate_credential_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/skills/openclaw
+#graphify/code #graphify/EXTRACTED #community/Key_Rotation

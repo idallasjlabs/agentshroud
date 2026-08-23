@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "Privilege Separation & File Sandbox"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/Privilege_Separation__File_Sandbox
 ---
 
 # test_file_sandbox.py
@@ -26,4 +26,4 @@ tags:
 - [[strict_config()_1]] - `contains` [EXTRACTED]
 - [[strict_sandbox()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/Privilege_Separation__File_Sandbox

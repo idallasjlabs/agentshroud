@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Key Rotation Internals"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Key_Rotation_Internals
 ---
 
 # test_key_rotation_internals.py
@@ -28,5 +28,6 @@ tags:
 - [[key_rotation.py (KeyRotationManager)]] - `implements` [EXTRACTED]
 - [[key_rotation_config.py (KeyRotationConfig)]] - `references` [EXTRACTED]
 - [[manager()_2]] - `contains` [EXTRACTED]
+- [[test_key_rotation.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Key_Rotation_Internals

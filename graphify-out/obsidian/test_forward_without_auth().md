@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_integration.py"
 type: "code"
-community: "branding/icons"
+community: "Integration"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/branding/icons
+  - community/Integration
 ---
 
 # test_forward_without_auth()
@@ -15,4 +15,4 @@ tags:
 - [[Test forward endpoint rejects requests without auth]] - `rationale_for` [EXTRACTED]
 - [[test_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/branding/icons
+#graphify/code #graphify/EXTRACTED #community/Integration

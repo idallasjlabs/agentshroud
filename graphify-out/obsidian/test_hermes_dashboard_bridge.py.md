@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_dashboard_bridge.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Hermes Dashboard Bridge"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Hermes_Dashboard_Bridge
 ---
 
 # test_hermes_dashboard_bridge.py
@@ -17,4 +17,4 @@ tags:
 - [[dashboard_bridge.py (Hermes)]] - `implements` [EXTRACTED]
 - [[test_security_regressions_v1_2.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Hermes_Dashboard_Bridge

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_integration.py"
 type: "code"
-community: "branding/icons"
+community: "Integration"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/branding/icons
+  - community/Integration
 ---
 
 # test_health_check_no_auth()
@@ -15,4 +15,4 @@ tags:
 - [[Test that status endpoint works without authentication]] - `rationale_for` [EXTRACTED]
 - [[test_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/branding/icons
+#graphify/code #graphify/EXTRACTED #community/Integration

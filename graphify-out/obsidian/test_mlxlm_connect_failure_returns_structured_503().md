@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Llm Proxy"
 location: "L570"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Llm_Proxy
 ---
 
 # test_mlxlm_connect_failure_returns_structured_503()
@@ -16,4 +16,4 @@ tags:
 - [[mlx_lm down (connection refused) → 503 backend_unavailable with start hint.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Llm_Proxy

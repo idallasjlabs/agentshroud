@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
-location: "L1401"
+community: "SOC Router Coverage"
+location: "L1456"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/SOC_Router_Coverage
 ---
 
 # test_health_healthy_and_degraded()
@@ -16,4 +16,4 @@ tags:
 - [[_make_service_manager()]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/SOC_Router_Coverage

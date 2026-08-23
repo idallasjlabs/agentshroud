@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Enforce-Mode Auto-Revert"
+community: "Mfa Guard"
 location: "L564"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enforce-Mode_Auto-Revert
+  - community/Mfa_Guard
 ---
 
 # test_is_required_tool_call_tier_parsing()
@@ -15,4 +15,4 @@ tags:
 - [[MFAGuard_2]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enforce-Mode_Auto-Revert
+#graphify/code #graphify/EXTRACTED #community/Mfa_Guard

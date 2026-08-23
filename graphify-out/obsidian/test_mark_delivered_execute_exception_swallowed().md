@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_replay.py"
 type: "code"
-community: "Gateway Proxy Layer"
+community: "Telegram Replay"
 location: "L189"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Telegram_Replay
 ---
 
 # test_mark_delivered_execute_exception_swallowed()
@@ -15,4 +15,4 @@ tags:
 - [[Exception during execute in mark_delivered must be swallowed.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_replay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/code #graphify/EXTRACTED #community/Telegram_Replay

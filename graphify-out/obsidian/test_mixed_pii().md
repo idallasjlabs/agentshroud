@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "README.md"
+community: "Sanitizer"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/READMEmd
+  - community/Sanitizer
 ---
 
 # test_mixed_pii()
@@ -15,4 +15,4 @@ tags:
 - [[Test content with multiple PII types]] - `rationale_for` [EXTRACTED]
 - [[test_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Sanitizer

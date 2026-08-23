@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "Security Module Middleware"
+community: "Egress Monitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Module_Middleware
+  - community/Egress_Monitor
 ---
 
 # test_egress_monitor.py
@@ -27,4 +27,4 @@ tags:
 - [[monitor()]] - `contains` [EXTRACTED]
 - [[monitor_config()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Module_Middleware
+#graphify/code #graphify/EXTRACTED #community/Egress_Monitor

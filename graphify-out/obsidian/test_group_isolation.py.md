@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "File Sandbox"
+community: "Shared Memory Write Acl"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/Shared_Memory_Write_Acl
 ---
 
 # test_group_isolation.py
@@ -17,6 +17,7 @@ tags:
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
 - [[SharedMemoryManager]] - `imports` [EXTRACTED]
 - [[TeamsConfig]] - `imports` [EXTRACTED]
+- [[Test Group Config]] - `semantically_similar_to` [INFERRED]
 - [[TestAgentRegistryGroupIdentity]] - `contains` [EXTRACTED]
 - [[TestGroupMemoryInvisibleFromDM]] - `contains` [EXTRACTED]
 - [[TestGroupMemoryNamespaceIsolation]] - `contains` [EXTRACTED]
@@ -24,7 +25,6 @@ tags:
 - [[agent_isolation.py (AgentRegistry)]] - `implements` [EXTRACTED]
 - [[group_config.py (TeamsConfig)]] - `references` [EXTRACTED]
 - [[rbac()]] - `contains` [EXTRACTED]
-- [[rbac_config.py (RBACConfig)]] - `references` [EXTRACTED]
 - [[session_manager()_1]] - `contains` [EXTRACTED]
 - [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
 - [[shared_memory()]] - `contains` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[teams()_2]] - `contains` [EXTRACTED]
 - [[tmp_workspace()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/Shared_Memory_Write_Acl

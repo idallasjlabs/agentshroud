@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "Group Workspace Isolation"
+community: "Group Config & Collaborator Responses"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Group_Workspace_Isolation
+  - community/Group_Config__Collaborator_Responses
 ---
 
 # test_group_config.py
 
 ## Connections
 - [[GroupConfig]] - `imports` [EXTRACTED]
-- [[ProjectConfig]] - `imports` [EXTRACTED]
 - [[TeamsConfig]] - `imports` [EXTRACTED]
 - [[TestAdminChecks]] - `contains` [EXTRACTED]
 - [[TestCollabMode]] - `contains` [EXTRACTED]
@@ -25,4 +24,4 @@ tags:
 - [[persist_user_collab_mode()]] - `imports` [EXTRACTED]
 - [[teams()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Isolation
+#graphify/code #graphify/EXTRACTED #community/Group_Config__Collaborator_Responses

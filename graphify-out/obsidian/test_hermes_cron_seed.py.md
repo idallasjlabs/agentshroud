@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "browser-extension/README.md"
+community: "Hermes Cron Seed"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/READMEmd
+  - community/Hermes_Cron_Seed
 ---
 
 # test_hermes_cron_seed.py
@@ -25,4 +25,4 @@ tags:
 - [[test_jobs_yaml_has_expected_job_count()]] - `contains` [EXTRACTED]
 - [[test_stability_report_job_present()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Hermes_Cron_Seed

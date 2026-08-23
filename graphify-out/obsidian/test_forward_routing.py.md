@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Slack API Proxy"
+community: "Forward Routing"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Slack_API_Proxy
+  - community/Forward_Routing
 ---
 
 # test_forward_routing.py
@@ -26,4 +26,4 @@ tags:
 - [[forward-routing agent_id propagation into security pipeline]] - `implements` [EXTRACTED]
 - [[forward.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Slack_API_Proxy
+#graphify/code #graphify/EXTRACTED #community/Forward_Routing

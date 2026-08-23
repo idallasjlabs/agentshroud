@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_hermes_cron_html_email.sh"
 type: "code"
-community: "docs/setup-telegram.md"
+community: "Container Runtime (smoke.d)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/setup-telegrammd
+  - community/Container_Runtime_smoked
 ---
 
 # test_hermes_cron_html_email.sh script
@@ -15,4 +15,4 @@ tags:
 - [[check()_7]] - `calls` [EXTRACTED]
 - [[test_hermes_cron_html_email.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/setup-telegrammd
+#graphify/code #graphify/EXTRACTED #community/Container_Runtime_smoked

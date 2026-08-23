@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
-location: "L1524"
+community: "SOC Router Coverage"
+location: "L1579"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/SOC_Router_Coverage
 ---
 
 # test_get_config_variants()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/SOC_Router_Coverage

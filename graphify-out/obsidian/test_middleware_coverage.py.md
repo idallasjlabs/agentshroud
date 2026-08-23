@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Approval Queue Tests"
+community: "Middleware & Session Isolation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_Tests
+  - community/Middleware__Session_Isolation
 ---
 
 # test_middleware_coverage.py
@@ -53,4 +53,4 @@ tags:
 - [[temp_workspace()_1]] - `contains` [EXTRACTED]
 - [[usm()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_Tests
+#graphify/code #graphify/EXTRACTED #community/Middleware__Session_Isolation

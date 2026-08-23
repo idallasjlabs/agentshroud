@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_api_contract_fuzz.py"
 type: "code"
-community: "docs/README.md"
+community: "Api Contract Fuzz"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/READMEmd
+  - community/Api_Contract_Fuzz
 ---
 
 # test_fuzz_surface_is_nonempty()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_api_contract_fuzz.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Api_Contract_Fuzz

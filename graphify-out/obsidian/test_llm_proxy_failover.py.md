@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "Architecture Docs"
+community: "Llm Proxy Failover"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Llm_Proxy_Failover
 ---
 
 # test_llm_proxy_failover.py
@@ -21,6 +21,8 @@ tags:
 - [[test_failover_routes_qwen3_to_lm_studio_with_normalized_model()]] - `contains` [EXTRACTED]
 - [[test_forward_request_default_still_retries_429()]] - `contains` [EXTRACTED]
 - [[test_forward_request_interactive_header_skips_retries()]] - `contains` [EXTRACTED]
+- [[test_forward_request_slow_http_error_read_does_not_block_event_loop()]] - `contains` [EXTRACTED]
+- [[test_forward_request_slow_read_does_not_block_event_loop()]] - `contains` [EXTRACTED]
 - [[test_per_request_opt_out_header_skips_failover()]] - `contains` [EXTRACTED]
 - [[test_proxy_failover_anthropic_overloaded_529()]] - `contains` [EXTRACTED]
 - [[test_proxy_failover_anthropic_overloaded_http200()]] - `contains` [EXTRACTED]
@@ -34,5 +36,6 @@ tags:
 - [[test_proxy_failover_openai_quota_dropin()]] - `contains` [EXTRACTED]
 - [[test_proxy_normal_200_passthrough_untouched()]] - `contains` [EXTRACTED]
 - [[test_proxy_post_retry_429_now_failovers()]] - `contains` [EXTRACTED]
+- [[test_router_streaming.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Llm_Proxy_Failover

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "Security Docs"
+community: "Jira Dev Ticket"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Jira_Dev_Ticket
 ---
 
 # test_jira_dev_ticket.py
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[_MockTransport]] - `contains` [EXTRACTED]
 - [[_load_module()]] - `contains` [EXTRACTED]
-- [[jira_dev_ticket.py (Hermes workspace copy)]] - `implements` [EXTRACTED]
-- [[jira_dev_ticket.py (OpenClaw workspace copy)]] - `references` [EXTRACTED]
+- [[jira_dev_ticket run()]] - `calls` [EXTRACTED]
+- [[jira_dev_ticket.py (OpenClaw copy)]] - `calls` [EXTRACTED]
 - [[test_basic_auth_header_is_base64_email_colon_token()]] - `contains` [EXTRACTED]
 - [[test_basic_auth_header_rejects_empty()]] - `contains` [EXTRACTED]
 - [[test_comment_payload_is_valid_adf_doc()]] - `contains` [EXTRACTED]
@@ -51,4 +51,4 @@ tags:
 - [[test_transitions_url_rejects_empty_issue_key()]] - `contains` [EXTRACTED]
 - [[test_transitions_url_targets_arbitrary_issue()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Jira_Dev_Ticket

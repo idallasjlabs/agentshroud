@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Progressive Trust Config"
+community: "Memory Lifecycle & Integrity"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Progressive_Trust_Config
+  - community/Memory_Lifecycle__Integrity
 ---
 
 # test_memory_lifecycle.py
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[ContentThreat]] - `imports` [EXTRACTED]
 - [[ContentThreatType]] - `imports` [EXTRACTED]
-- [[FileIntegrityRecord]] - `imports` [EXTRACTED]
 - [[MemoryIntegrityConfig]] - `imports` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `imports` [EXTRACTED]
 - [[MemoryLifecycleConfig]] - `imports` [EXTRACTED]
@@ -26,4 +25,4 @@ tags:
 - [[TestMemoryLifecycleManager]] - `contains` [EXTRACTED]
 - [[TestMemorySecurityIntegration]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Progressive_Trust_Config
+#graphify/code #graphify/EXTRACTED #community/Memory_Lifecycle__Integrity

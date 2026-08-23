@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "SOC RBAC & Auth"
+community: "Security Audit & Watchtower Tests"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_RBAC__Auth
+  - community/Security_Audit__Watchtower_Tests
 ---
 
 # test_inbound_hex_injection_blocked()
@@ -16,4 +16,4 @@ tags:
 - [[hex-encoded injection is decoded-and-blocked on the inbound path.]] - `rationale_for` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_RBAC__Auth
+#graphify/code #graphify/EXTRACTED #community/Security_Audit__Watchtower_Tests

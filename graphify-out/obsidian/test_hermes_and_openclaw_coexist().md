@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Security Fixes & SSH Write Endpoint"
 location: "L352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Security_Fixes__SSH_Write_Endpoint
 ---
 
 # test_hermes_and_openclaw_coexist()
@@ -18,4 +18,4 @@ tags:
 - [[RouterConfig]] - `calls` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint

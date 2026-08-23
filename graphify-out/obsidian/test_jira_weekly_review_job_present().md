@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_cron_seed.py"
 type: "code"
-community: "browser-extension/README.md"
+community: "Hermes Cron Seed"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/READMEmd
+  - community/Hermes_Cron_Seed
 ---
 
 # test_jira_weekly_review_job_present()
@@ -17,4 +17,4 @@ tags:
 - [[_parse_job_names_from_yaml()]] - `calls` [EXTRACTED]
 - [[test_hermes_cron_seed.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Hermes_Cron_Seed

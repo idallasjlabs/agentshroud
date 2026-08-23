@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Forward Stream"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Forward_Stream
 ---
 
 # test_forward_stream.py
 
 ## Connections
 - [[AgentTarget]] - `imports` [EXTRACTED]
+- [[FastAPI app instance]] - `calls` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
-- [[ForwardRequest]] - `references` [EXTRACTED]
-- [[POST forwardstream (streaming voice pipeline)]] - `implements` [EXTRACTED]
+- [[ForwardRequest]] - `imports` [EXTRACTED]
 - [[_BlockingPipeline]] - `contains` [EXTRACTED]
 - [[_PassthroughPipeline]] - `contains` [EXTRACTED]
 - [[_aiter()]] - `contains` [EXTRACTED]
@@ -55,4 +55,4 @@ tags:
 - [[test_sentences_from_deltas_single_delta_full_sentence()]] - `contains` [EXTRACTED]
 - [[test_sentences_from_deltas_splits_on_boundaries()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Forward_Stream

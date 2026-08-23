@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "code"
-community: "Planning Docs"
+community: "Collaborator Greeter"
 location: "L263"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Collaborator_Greeter
 ---
 
 # test_load_state_non_dict_json_returns_empty()
@@ -16,4 +16,4 @@ tags:
 - [[_load_state returns {} when state file is a JSON list (not a dict).]] - `rationale_for` [EXTRACTED]
 - [[test_collaborator_greeter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Collaborator_Greeter

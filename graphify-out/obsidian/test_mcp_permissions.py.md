@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "SOC Dashboard"
+community: "Mcp Permissions"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Dashboard
+  - community/Mcp_Permissions
 ---
 
 # test_mcp_permissions.py
@@ -20,12 +20,14 @@ tags:
 - [[TestCheckAll]] - `contains` [EXTRACTED]
 - [[TestInferPermission]] - `contains` [EXTRACTED]
 - [[TestPermissionLevel]] - `contains` [EXTRACTED]
-- [[TestRateLimiting_1]] - `contains` [EXTRACTED]
+- [[TestRateLimiting_2]] - `contains` [EXTRACTED]
 - [[TestServerAccess]] - `contains` [EXTRACTED]
 - [[TestToolPermission]] - `contains` [EXTRACTED]
 - [[TestTrustLevels]] - `contains` [EXTRACTED]
 - [[TestTrustMapping]] - `contains` [EXTRACTED]
 - [[config()_2]] - `contains` [EXTRACTED]
 - [[mgr()_1]] - `contains` [EXTRACTED]
+- [[test_mcp_proxy_coverage.py]] - `shares_data_with` [INFERRED]
+- [[test_mcp_proxy_endpoint.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Dashboard
+#graphify/code #graphify/EXTRACTED #community/Mcp_Permissions
