@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-mac)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-mac
 ---
 
 # i-mac README (macOS System Administrator)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Mac App Discovery Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_i-mac

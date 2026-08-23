@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (i-sec-defense)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-sec-defense
 ---
 
 # i-sad README (System Audit Documentation)
@@ -15,4 +15,4 @@ tags:
 - [[i-sav README (System Audit Vault)]] - `references` [EXTRACTED]
 - [[i-sav SKILL (System Audit Vault, Obsidian)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense

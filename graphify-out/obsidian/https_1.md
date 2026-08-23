@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/setup-https-proxy.js"
+source_file: "docker/config/hermes/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
-location: "L49"
+community: "Calendar (scripts)"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+  - community/Calendar_scripts
 ---
 
 # https
 
 ## Connections
-- [[setup-https-proxy.js]] - `contains` [EXTRACTED]
+- [[calendar.js_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+#graphify/code #graphify/EXTRACTED #community/Calendar_scripts

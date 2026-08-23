@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/README.md"
+source_file: ".agents/skills/i-icloud/README.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Readme (i-icloud)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Readme_i-icloud
 ---
 
 # iCloud Data Manager (ICLOUD)
 
 ## Connections
 - [[Purpose_13]] - `contains` [EXTRACTED]
-- [[README_18]] - `contains` [EXTRACTED]
+- [[README_13]] - `contains` [EXTRACTED]
 - [[Related Skills_13]] - `contains` [EXTRACTED]
-- [[Usage_16]] - `contains` [EXTRACTED]
+- [[Usage_15]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Readme_i-icloud

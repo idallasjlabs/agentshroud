@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-gg/README.md"
 type: "document"
-community: "branding/INDEX.md"
+community: "Readme (i-mc)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/branding/INDEXmd
+  - community/Readme_i-mc
 ---
 
 # i-gg README (Git Workflow Guardian)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[GIT-GUARD Skill Definition]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/branding/INDEXmd
+#graphify/document #graphify/EXTRACTED #community/Readme_i-mc

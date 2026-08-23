@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "document"
-community: "browser-extension/README.md"
+community: "Hermes Cron Seed"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/browser-extension/READMEmd
+  - community/Hermes_Cron_Seed
 ---
 
 # jobs.yaml (Hermes cron reference)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_hermes_cron_seed.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/browser-extension/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Seed

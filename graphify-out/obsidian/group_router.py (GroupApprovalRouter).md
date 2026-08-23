@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Group Approval Routing"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Group_Approval_Routing
 ---
 
 # group_router.py (GroupApprovalRouter)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_group_approval_routing.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Group_Approval_Routing

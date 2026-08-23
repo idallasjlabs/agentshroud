@@ -1,17 +1,18 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Planning Docs"
+community: "Jira Weekly Review (workspace)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Jira_Weekly_Review_workspace
 ---
 
 # jira_weekly_review.py
 
 ## Connections
+- [[Jira Dev-Ticket Helper Module]] - `references` [EXTRACTED]
 - [[_adf_paragraph()]] - `contains` [EXTRACTED]
 - [[_git_commits_last_week()]] - `contains` [EXTRACTED]
 - [[_http_get()]] - `contains` [EXTRACTED]
@@ -25,9 +26,8 @@ tags:
 - [[datetime]] - `imports_from` [EXTRACTED]
 - [[extract_scrum_items()]] - `contains` [EXTRACTED]
 - [[fetch_op_secret()_1]] - `contains` [EXTRACTED]
-- [[jira_dev_ticket.py (Generalized Jira dev-ticket helper)]] - `references` [EXTRACTED]
 - [[post_comment()]] - `contains` [EXTRACTED]
 - [[resolve_cloud_id()_1]] - `contains` [EXTRACTED]
 - [[run()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Jira_Weekly_Review_workspace

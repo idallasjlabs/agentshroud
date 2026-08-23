@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Render Email (hermes)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Render_Email_hermes
 ---
 
 # init-config.sh
@@ -17,6 +17,7 @@ tags:
 - [[_write_soul()]] - `defines` [EXTRACTED]
 - [[_write_soul() (ownership-tolerant SOUL.md write)]] - `calls` [EXTRACTED]
 - [[init-config.sh script]] - `contains` [EXTRACTED]
-- [[start.sh]] - `calls` [EXTRACTED]
+- [[render_md_email.py]] - `semantically_similar_to` [INFERRED]
+- [[test_hermes_cron_html_email.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Render_Email_hermes

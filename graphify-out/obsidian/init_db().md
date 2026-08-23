@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "branding/logos"
+community: "Health Report (security)"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/branding/logos
+  - community/Health_Report_security
 ---
 
 # init_db()
@@ -19,4 +19,4 @@ tags:
 - [[health_report.py]] - `contains` [EXTRACTED]
 - [[save_to_history()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/branding/logos
+#graphify/code #graphify/EXTRACTED #community/Health_Report_security

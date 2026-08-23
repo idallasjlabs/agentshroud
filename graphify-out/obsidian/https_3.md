@@ -1,17 +1,17 @@
 ---
-source_file: "docker/scripts/mcp-proxy-wrapper.js"
+source_file: "docker/config/openclaw/skills/i-icloud/scripts/calendar.js"
 type: "code"
-community: "Custom Skills"
-location: "L29"
+community: "Calendar (scripts)"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Calendar_scripts
 ---
 
 # https
 
 ## Connections
-- [[mcp-proxy-wrapper.js]] - `contains` [EXTRACTED]
+- [[calendar.js_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Custom_Skills
+#graphify/code #graphify/EXTRACTED #community/Calendar_scripts

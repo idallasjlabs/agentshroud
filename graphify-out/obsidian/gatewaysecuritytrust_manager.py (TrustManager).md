@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "PII Config & Test Fixtures"
+community: "OAuth & Metadata Guard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Config__Test_Fixtures
+  - community/OAuth__Metadata_Guard
 ---
 
 # gateway/security/trust_manager.py (TrustManager)
@@ -15,4 +15,4 @@ tags:
 - [[test_security_audit_advanced.py]] - `references` [INFERRED]
 - [[test_security_regressions_v1_2.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Config__Test_Fixtures
+#graphify/code #graphify/EXTRACTED #community/OAuth__Metadata_Guard

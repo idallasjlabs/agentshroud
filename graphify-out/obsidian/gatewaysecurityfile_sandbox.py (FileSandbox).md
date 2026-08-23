@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Auth & Exception Types"
+community: "OAuth & Metadata Guard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Auth__Exception_Types
+  - community/OAuth__Metadata_Guard
 ---
 
 # gateway/security/file_sandbox.py (FileSandbox)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Auth__Exception_Types
+#graphify/code #graphify/EXTRACTED #community/OAuth__Metadata_Guard

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "Docker Deploy Scripts"
+community: "Render Email (hermes)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Docker_Deploy_Scripts
+  - community/Render_Email_hermes
 ---
 
 # init-config.sh script
@@ -16,4 +16,4 @@ tags:
 - [[_write_soul()]] - `calls` [EXTRACTED]
 - [[init-config.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Docker_Deploy_Scripts
+#graphify/code #graphify/EXTRACTED #community/Render_Email_hermes

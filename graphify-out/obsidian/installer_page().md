@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Installer (web)"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Installer_web
 ---
 
 # installer_page()
@@ -16,4 +16,4 @@ tags:
 - [[Serve the installer wizard HTML.]] - `rationale_for` [EXTRACTED]
 - [[installer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Installer_web

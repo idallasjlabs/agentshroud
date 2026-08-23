@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "code"
-community: "Planning Docs"
+community: "Llm Quota Detector"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Llm_Quota_Detector
 ---
 
 # is_overloaded()
@@ -40,4 +40,4 @@ tags:
 - [[llm_quota_detector.py]] - `contains` [EXTRACTED]
 - [[test_llm_quota_detector.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Llm_Quota_Detector

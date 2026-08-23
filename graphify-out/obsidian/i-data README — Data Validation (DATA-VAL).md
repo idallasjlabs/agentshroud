@@ -1,17 +1,16 @@
 ---
 source_file: "docker/config/hermes/skills/i-data/README.md"
 type: "document"
-community: "Setup Docs"
+community: "Skill (i-eightd)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Skill_i-eightd
 ---
 
 # i-data README — Data Validation (DATA-VAL)
 
 ## Connections
-- [[SKILLS_GUIDE.md (complete skill catalog)]] - `references` [EXTRACTED]
 - [[i-data SKILL — Data Validation (DATA-VAL)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd

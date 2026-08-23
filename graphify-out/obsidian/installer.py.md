@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Installer (web)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Installer_web
 ---
 
 # installer.py
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[InstallConfig]] - `contains` [EXTRACTED]
 - [[PrerequisiteCheck]] - `contains` [EXTRACTED]
+- [[api.py]] - `references` [EXTRACTED]
 - [[check_prerequisites()]] - `contains` [EXTRACTED]
 - [[detect_runtime()]] - `imports` [EXTRACTED]
 - [[get_runtimes()]] - `contains` [EXTRACTED]
@@ -22,4 +23,4 @@ tags:
 - [[security.py]] - `imports_from` [EXTRACTED]
 - [[start_install()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Installer_web

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/manifest.json"
 type: "code"
-community: "Gateway Test Suite"
+community: "Manifest (hermes)"
 location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Manifest_hermes
 ---
 
 # generated_at
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[manifest.json_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Manifest_hermes

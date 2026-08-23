@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/references/extraction-spec.md"
+source_file: "docker/config/hermes/skills/graphify/references/extraction-spec.md"
 type: "document"
-community: "scripts/infra-check.sh"
+community: "Extraction Spec (references)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/infra-checksh
+  - community/Extraction_Spec_references
 ---
 
 # graphify reference: extraction subagent prompt
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[extraction-spec_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/infra-checksh
+#graphify/document #graphify/EXTRACTED #community/Extraction_Spec_references

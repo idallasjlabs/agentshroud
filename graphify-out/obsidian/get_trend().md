@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "branding/logos"
+community: "Health Report (security)"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/branding/logos
+  - community/Health_Report_security
 ---
 
 # get_trend()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[.test_history_persistence()]] - `calls` [EXTRACTED]
 - [[.test_trend_empty_db()]] - `calls` [EXTRACTED]
-- [[Any_41]] - `references` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
 - [[Get score trend for the last N days.      Args         days Number of days to]] - `rationale_for` [EXTRACTED]
 - [[Path_13]] - `references` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[init_db()]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/branding/logos
+#graphify/code #graphify/EXTRACTED #community/Health_Report_security

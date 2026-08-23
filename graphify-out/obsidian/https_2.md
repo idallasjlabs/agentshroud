@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/scripts/calendar.js"
+source_file: "docker/config/openclaw/setup-https-proxy.js"
 type: "code"
-community: "Architecture Docs"
-location: "L7"
+community: "Setup Https Proxy (openclaw)"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Setup_Https_Proxy_openclaw
 ---
 
 # https
 
 ## Connections
-- [[calendar.js_1]] - `contains` [EXTRACTED]
+- [[setup-https-proxy.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/code #graphify/EXTRACTED #community/Setup_Https_Proxy_openclaw

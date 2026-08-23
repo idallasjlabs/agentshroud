@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Slack Proxy"
 location: "L480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Slack_Proxy
 ---
 
 # handle_event records inbound activity for message events.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_message_event_records_activity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Slack_Proxy

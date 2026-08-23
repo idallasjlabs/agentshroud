@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/health-check.sh"
 type: "code"
-community: "docs/reviews"
+community: "Health Check (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/reviews
+  - community/Health_Check_scripts
 ---
 
 # health-check.sh
@@ -16,4 +16,4 @@ tags:
 - [[check_pass()]] - `defines` [EXTRACTED]
 - [[health-check.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/reviews
+#graphify/code #graphify/EXTRACTED #community/Health_Check_scripts

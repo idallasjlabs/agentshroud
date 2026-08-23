@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Custom Skills"
+community: "Skill (i-bs)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Custom_Skills
+  - community/Skill_i-bs
 ---
 
 # i-ui SKILL.md (UI Engineer, CSS architecture, WCAG AA)
@@ -15,4 +15,4 @@ tags:
 - [[i-ti SKILL.md (Technical Illustrator, Mermaid diagrams)]] - `references` [EXTRACTED]
 - [[i-ux SKILL.md (UX Designer, IA, Nielsen heuristics)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Custom_Skills
+#graphify/document #graphify/EXTRACTED #community/Skill_i-bs

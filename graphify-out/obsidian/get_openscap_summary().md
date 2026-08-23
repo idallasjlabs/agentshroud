@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Scanner Integration"
 location: "L778"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Scanner_Integration
 ---
 
 # get_openscap_summary()
@@ -16,7 +16,7 @@ tags:
 - [[.test_critical_on_critical_findings()]] - `calls` [EXTRACTED]
 - [[.test_not_run_when_no_report()_1]] - `calls` [EXTRACTED]
 - [[.test_warning_on_failures()]] - `calls` [EXTRACTED]
-- [[Any_57]] - `references` [EXTRACTED]
+- [[Any_58]] - `references` [EXTRACTED]
 - [[Return latest OpenSCAP compliance summary from saved reports.]] - `rationale_for` [EXTRACTED]
 - [[_load_latest_json()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration

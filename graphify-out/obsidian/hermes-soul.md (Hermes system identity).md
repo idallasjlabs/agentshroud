@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/agents/hermes-soul.md"
 type: "document"
-community: "Gateway Proxy Layer"
+community: "Developer (workspace)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Proxy_Layer
+  - community/Developer_workspace
 ---
 
 # hermes-soul.md (Hermes system identity)
@@ -14,4 +14,4 @@ tags:
 - [[agentshroud-ssh-exec.sh]] - `references` [EXTRACTED]
 - [[openclaw-identity.md (OpenClaw bot identity)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Proxy_Layer
+#graphify/document #graphify/EXTRACTED #community/Developer_workspace

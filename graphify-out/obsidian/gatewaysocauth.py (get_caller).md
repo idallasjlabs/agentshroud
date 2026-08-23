@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "LLM Proxy Resource Guard"
+community: "SOC Router Coverage"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLM_Proxy_Resource_Guard
+  - community/SOC_Router_Coverage
 ---
 
 # gateway/soc/auth.py (get_caller)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_soc_router_coverage.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLM_Proxy_Resource_Guard
+#graphify/code #graphify/EXTRACTED #community/SOC_Router_Coverage

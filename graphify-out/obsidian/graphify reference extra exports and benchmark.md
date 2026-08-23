@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/references/exports.md"
+source_file: ".agents/skills/graphify/references/exports.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Exports (references)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Exports_references
 ---
 
 # graphify reference: extra exports and benchmark
@@ -20,4 +20,4 @@ tags:
 - [[Step 8 - Token reduction benchmark (only if total_words  5000)]] - `contains` [EXTRACTED]
 - [[exports]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Exports_references

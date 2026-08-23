@@ -1,25 +1,17 @@
 ---
-source_file: "skills/custom/icloud/SKILL.md"
+source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "ESP32 Firmware"
-location: "L6"
+community: "Apple Services Setup (setup)"
+location: "L162"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Apple_Services_Setup_setup
 ---
 
 # iCloud Services
 
 ## Connections
-- [[Calendar Operations_2]] - `contains` [EXTRACTED]
-- [[Configuration_17]] - `contains` [EXTRACTED]
-- [[Contact Operations_2]] - `contains` [EXTRACTED]
-- [[Mail Operations_2]] - `contains` [EXTRACTED]
-- [[Notes Operations_2]] - `contains` [EXTRACTED]
-- [[SKILL_129]] - `contains` [EXTRACTED]
-- [[Security_16]] - `contains` [EXTRACTED]
-- [[Setup_3]] - `contains` [EXTRACTED]
-- [[Troubleshooting_31]] - `contains` [EXTRACTED]
+- [[📋 Setup Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_setup

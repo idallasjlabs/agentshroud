@@ -1,12 +1,12 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Bot Skill Config"
+community: ".mcp"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/mcp
 ---
 
 # github-idallasj
@@ -15,4 +15,4 @@ tags:
 - [[.llm_settingsmcp-serversgithubidallasjgithub-mcp-wrapper.sh]] - `references` [EXTRACTED]
 - [[.mcp.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/mcp

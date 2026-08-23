@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-kanban/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-incident-response)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Bot_Skill_Config
+  - community/Skill_i-incident-response
 ---
 
 # kanban Skill (stub)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[kaizen Skill (stub)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Bot_Skill_Config
+#graphify/document #graphify/INFERRED #community/Skill_i-incident-response

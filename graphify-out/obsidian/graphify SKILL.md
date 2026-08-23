@@ -1,32 +1,30 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/SKILL.md"
+source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (graphify)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_graphify
 ---
 
-# graphify SKILL.md
+# graphify Skill
 
 ## Connections
-- [[Community Detection  Clustering]] - `implements` [EXTRACTED]
-- [[Cumulative Token Cost Tracker]] - `implements` [EXTRACTED]
-- [[Extraction Cache Check — Step B0]] - `implements` [EXTRACTED]
-- [[Gemini Semantic Extraction Backend]] - `implements` [EXTRACTED]
-- [[God Nodes Analysis]] - `implements` [EXTRACTED]
-- [[Obsidian Vault Export (opt-in --obsidian)]] - `implements` [EXTRACTED]
-- [[Semantic Extraction — Part B (parallel subagents)]] - `implements` [EXTRACTED]
-- [[Structural (AST) Extraction — Part A]] - `implements` [EXTRACTED]
-- [[graphify GitHub clone & merge reference]] - `references` [EXTRACTED]
-- [[graphify addwatch reference]] - `references` [EXTRACTED]
-- [[graphify commit hook & CLAUDE.md reference]] - `references` [EXTRACTED]
-- [[graphify exports reference]] - `references` [EXTRACTED]
-- [[graphify extraction subagent spec]] - `references` [EXTRACTED]
-- [[graphify querypathexplain reference]] - `references` [EXTRACTED]
-- [[graphify transcribe reference]] - `references` [EXTRACTED]
-- [[graphify updatecluster-only reference]] - `references` [EXTRACTED]
-- [[manifest.json_1]] - `references` [EXTRACTED]
+- [[Neo4j Export]] - `references` [EXTRACTED]
+- [[OpenClaw Dev Workflow (ODEV)]] - `references` [EXTRACTED]
+- [[Release Workflow (i-release)]] - `references` [EXTRACTED]
+- [[Semantic Extraction — Part B (parallel subagents)]] - `references` [EXTRACTED]
+- [[Structural (AST) Extraction — Part A]] - `references` [EXTRACTED]
+- [[Whisper Transcription]] - `references` [EXTRACTED]
+- [[graphify Add & Watch Reference]] - `references` [EXTRACTED]
+- [[graphify Commit Hook & CLAUDE.md Integration Reference]] - `references` [EXTRACTED]
+- [[graphify Exports & Benchmark Reference]] - `references` [EXTRACTED]
+- [[graphify Extraction Subagent Prompt Spec]] - `references` [EXTRACTED]
+- [[graphify GitHub Clone & Cross-Repo Merge Reference]] - `references` [EXTRACTED]
+- [[graphify MCP Stdio Server]] - `references` [EXTRACTED]
+- [[graphify QueryPathExplain Reference]] - `references` [EXTRACTED]
+- [[graphify Transcribe Reference]] - `references` [EXTRACTED]
+- [[graphify Update & Cluster-Only Reference]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_graphify

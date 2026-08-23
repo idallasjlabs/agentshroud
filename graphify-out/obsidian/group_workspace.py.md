@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Shared Memory Write Acl"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Shared_Memory_Write_Acl
 ---
 
 # group_workspace.py
@@ -19,4 +19,4 @@ tags:
 - [[TeamsConfig]] - `imports` [EXTRACTED]
 - [[WorkspaceContext]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Shared_Memory_Write_Acl

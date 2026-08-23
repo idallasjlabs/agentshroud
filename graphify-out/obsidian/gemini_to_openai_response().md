@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/gemini_openai_translator.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Gemini Openai Translator"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Gemini_Openai_Translator
 ---
 
 # gemini_to_openai_response()
@@ -23,4 +23,4 @@ tags:
 - [[test_gemini_to_openai_response_max_tokens_finish_reason()]] - `calls` [EXTRACTED]
 - [[test_gemini_to_openai_roundtrip_with_openai_to_gemini_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Gemini_Openai_Translator

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-icloud/README.md"
 type: "document"
-community: "dashboard/README.md"
+community: "Skill (i-icloud)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard/READMEmd
+  - community/Skill_i-icloud
 ---
 
 # i-icloud README (ICLOUD Data Manager)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[iCloud Services Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud

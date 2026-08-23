@@ -1,21 +1,16 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/references/query.md"
+source_file: ".agents/skills/graphify/references/query.md"
 type: "document"
-community: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
+community: "Skill (graphify)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
+  - community/Skill_graphify
 ---
 
-# graphify query/path/explain reference
+# graphify Query/Path/Explain Reference
 
 ## Connections
-- [[graphify explain command]] - `references` [EXTRACTED]
-- [[graphify path command]] - `references` [EXTRACTED]
-- [[Constrained query-vocabulary expansion]] - `references` [EXTRACTED]
-- [[graphify SKILL]] - `references` [EXTRACTED]
-- [[manifest.json_1]] - `references` [EXTRACTED]
-- [[save-result Feedback Loop]] - `references` [EXTRACTED]
+- [[graphify Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
+#graphify/document #graphify/EXTRACTED #community/Skill_graphify

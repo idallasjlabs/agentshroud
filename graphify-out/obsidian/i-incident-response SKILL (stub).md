@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-incident-response/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (i-incident-response)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Skill_i-incident-response
 ---
 
 # i-incident-response SKILL (stub)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-kaizen SKILL (stub)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/document #graphify/INFERRED #community/Skill_i-incident-response

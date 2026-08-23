@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/references/query.md"
+source_file: ".agents/skills/graphify/references/query.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Query (references)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Query_references
 ---
 
 # graphify reference: query, path, explain
@@ -18,4 +18,4 @@ tags:
 - [[Step 1 — Traversal]] - `contains` [EXTRACTED]
 - [[query]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Query_references

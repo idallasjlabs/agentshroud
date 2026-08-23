@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/README.md"
+source_file: "docker/config/hermes/skills/i-icloud/README.md"
 type: "document"
-community: "scripts/tailscale-check.sh"
+community: "Readme (i-icloud)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/scripts/tailscale-checksh
+  - community/Readme_i-icloud
 ---
 
 # iCloud Data Manager (ICLOUD)
@@ -17,4 +17,4 @@ tags:
 - [[Related Skills_53]] - `contains` [EXTRACTED]
 - [[Usage_56]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/scripts/tailscale-checksh
+#graphify/document #graphify/EXTRACTED #community/Readme_i-icloud

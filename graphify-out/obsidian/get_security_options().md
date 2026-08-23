@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Runtime Engines"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Runtime_Engines
 ---
 
 # get_security_options()
@@ -18,7 +18,8 @@ tags:
 - [[.test_security_options_unknown()]] - `calls` [EXTRACTED]
 - [[Return recommended security CLI options for a runtime.]] - `rationale_for` [EXTRACTED]
 - [[_validate_runtime()]] - `calls` [EXTRACTED]
+- [[generate_compose()]] - `shares_data_with` [INFERRED]
 - [[security.py]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Runtime_Engines

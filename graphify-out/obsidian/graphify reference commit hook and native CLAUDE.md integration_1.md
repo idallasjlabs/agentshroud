@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/references/hooks.md"
+source_file: "docker/config/hermes/skills/graphify/references/hooks.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Hooks (references)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Hooks_references
 ---
 
 # graphify reference: commit hook and native CLAUDE.md integration
@@ -16,4 +16,4 @@ tags:
 - [[For native CLAUDE.md integration_1]] - `contains` [EXTRACTED]
 - [[hooks_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Hooks_references

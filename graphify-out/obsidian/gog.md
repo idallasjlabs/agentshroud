@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/gog/SKILL.md"
 type: "document"
-community: "Community 1445"
+community: "Ssh Configuration (docs)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1445
+  - community/Ssh_Configuration_docs
 ---
 
 # gog
 
 ## Connections
-- [[SKILL_146]] - `contains` [EXTRACTED]
+- [[SKILL_210]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1445
+#graphify/document #graphify/EXTRACTED #community/Ssh_Configuration_docs

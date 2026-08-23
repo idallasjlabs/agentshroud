@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (i-sec-defense)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Planning_Docs
+  - community/Skill_i-sec-defense
 ---
 
 # i-production README (Incident Response)
@@ -14,4 +14,4 @@ tags:
 - [[GSDE&G Skills Reference Guide]] - `references` [EXTRACTED]
 - [[i-production SKILL (Incident Response  INCIDENT)]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Planning_Docs
+#graphify/document #graphify/INFERRED #community/Skill_i-sec-defense

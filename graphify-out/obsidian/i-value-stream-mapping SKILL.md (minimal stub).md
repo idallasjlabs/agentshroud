@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-value-stream-mapping/SKILL.md"
 type: "document"
-community: "Community 1712"
+community: "Skill (i-value-stream-mapping)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1712
+  - community/Skill_i-value-stream-mapping
 ---
 
 # i-value-stream-mapping SKILL.md (minimal stub)
 
-#graphify/document #graphify/EXTRACTED #community/Community_1712
+#graphify/document #graphify/EXTRACTED #community/Skill_i-value-stream-mapping

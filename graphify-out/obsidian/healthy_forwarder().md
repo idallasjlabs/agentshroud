@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Forwarder (proxy)"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Forwarder_proxy
 ---
 
 # healthy_forwarder()
@@ -16,4 +16,4 @@ tags:
 - [[HTTPForwarder]] - `calls` [EXTRACTED]
 - [[test_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Forwarder_proxy

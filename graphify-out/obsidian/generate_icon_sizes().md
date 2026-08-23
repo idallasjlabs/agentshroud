@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "scripts/generate-cve-page.py"
+community: "Generate Branding Assets (scripts)"
 location: "L444"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/generate-cve-pagepy
+  - community/Generate_Branding_Assets_scripts
 ---
 
 # generate_icon_sizes()
@@ -15,7 +15,7 @@ tags:
 - [[ensure()]] - `calls` [EXTRACTED]
 - [[generate_branding_assets.py]] - `contains` [EXTRACTED]
 - [[icon_on_canvas()]] - `calls` [EXTRACTED]
-- [[main()_17]] - `calls` [EXTRACTED]
+- [[main()_20]] - `calls` [EXTRACTED]
 - [[save()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/generate-cve-pagepy
+#graphify/code #graphify/EXTRACTED #community/Generate_Branding_Assets_scripts

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (i-sec-defense)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-sec-defense
 ---
 
 # i-sec-defense README (Blue Team Security Auditor)
@@ -14,4 +14,4 @@ tags:
 - [[GSDE&G Skills Reference Guide]] - `references` [EXTRACTED]
 - [[i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-sec-defense

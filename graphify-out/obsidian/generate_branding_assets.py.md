@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "scripts/generate-cve-page.py"
+community: "Generate Branding Assets (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/generate-cve-pagepy
+  - community/Generate_Branding_Assets_scripts
 ---
 
 # generate_branding_assets.py
@@ -24,7 +24,7 @@ tags:
 - [[get_font()]] - `contains` [EXTRACTED]
 - [[icon_on_canvas()]] - `contains` [EXTRACTED]
 - [[load_logo()]] - `contains` [EXTRACTED]
-- [[main()_17]] - `contains` [EXTRACTED]
+- [[main()_20]] - `contains` [EXTRACTED]
 - [[save()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/generate-cve-pagepy
+#graphify/code #graphify/EXTRACTED #community/Generate_Branding_Assets_scripts

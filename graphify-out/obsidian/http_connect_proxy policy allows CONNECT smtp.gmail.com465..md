@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Gateway Test Suite"
+community: "Egress Filter"
 location: "L603"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress_Filter
 ---
 
 # http_connect_proxy policy allows CONNECT smtp.gmail.com:465.
@@ -15,4 +15,4 @@ tags:
 - [[.test_connect_proxy_policy_allows_smtp_gmail_465()]] - `rationale_for` [EXTRACTED]
 - [[.test_connect_proxy_policy_allows_smtp_mail_me_587()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/rationale #graphify/EXTRACTED #community/Egress_Filter

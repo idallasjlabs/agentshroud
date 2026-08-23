@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "PromptGuard Encoding Detection"
+community: "Mcp Proxy"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard_Encoding_Detection
+  - community/Mcp_Proxy
 ---
 
 # inspector()
 
 ## Connections
 - [[MCPInspector]] - `calls` [EXTRACTED]
-- [[MCPInspector_1]] - `calls` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard_Encoding_Detection
+#graphify/code #graphify/EXTRACTED #community/Mcp_Proxy

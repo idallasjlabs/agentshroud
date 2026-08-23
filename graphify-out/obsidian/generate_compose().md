@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Runtime Engines"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Runtime_Engines
 ---
 
 # generate_compose()
@@ -21,6 +21,7 @@ tags:
 - [[Generate a compose YAML file for Docker or Podman.      Args         services]] - `rationale_for` [EXTRACTED]
 - [[ServiceDef]] - `references` [EXTRACTED]
 - [[compose_generator.py]] - `contains` [EXTRACTED]
+- [[get_security_options()]] - `shares_data_with` [INFERRED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Runtime_Engines

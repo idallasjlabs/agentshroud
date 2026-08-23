@@ -1,11 +1,11 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "browser-extension/README.md"
+community: "Hermes Cron Seed"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser-extension/READMEmd
+  - community/Hermes_Cron_Seed
 ---
 
 # init-config.sh (Hermes cron seed)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_hermes_cron_seed.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser-extension/READMEmd
+#graphify/code #graphify/EXTRACTED #community/Hermes_Cron_Seed

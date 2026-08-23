@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Runtime Engines"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Runtime_Engines
 ---
 
 # get_engine()
@@ -21,7 +21,6 @@ tags:
 - [[.test_no_runtime_available()]] - `calls` [EXTRACTED]
 - [[ContainerEngine]] - `references` [EXTRACTED]
 - [[Return an appropriate container engine instance.      Args         preference]] - `rationale_for` [EXTRACTED]
-- [[ValueError]] - `calls` [INFERRED]
 - [[__init__.py_8]] - `contains` [EXTRACTED]
 - [[_get_engine()]] - `calls` [EXTRACTED]
 - [[api.py]] - `imports` [EXTRACTED]
@@ -30,4 +29,4 @@ tags:
 - [[health.py]] - `imports` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Runtime_Engines

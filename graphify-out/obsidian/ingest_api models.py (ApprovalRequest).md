@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Group Approval Routing"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Group_Approval_Routing
 ---
 
 # ingest_api models.py (ApprovalRequest)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_group_approval_routing.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Group_Approval_Routing

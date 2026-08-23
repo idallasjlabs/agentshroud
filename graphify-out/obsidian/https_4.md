@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/icloud/scripts/calendar.js"
+source_file: "docker/scripts/mcp-proxy-wrapper.js"
 type: "code"
-community: "gateway/tools"
-location: "L7"
+community: "Mcp Proxy Wrapper (scripts)"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/tools
+  - community/Mcp_Proxy_Wrapper_scripts
 ---
 
 # https
 
 ## Connections
-- [[calendar.js_2]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/tools
+#graphify/code #graphify/EXTRACTED #community/Mcp_Proxy_Wrapper_scripts

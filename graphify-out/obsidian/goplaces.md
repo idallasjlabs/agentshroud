@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/goplaces/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (goplaces)"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_goplaces
 ---
 
 # goplaces
 
 ## Connections
-- [[SKILL_147]] - `contains` [EXTRACTED]
+- [[SKILL_211]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_goplaces

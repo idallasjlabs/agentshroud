@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/add-watch.md"
 type: "concept"
-community: "Gateway Test Suite"
+community: "Add Watch (references)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Add_Watch_references
 ---
 
 # /graphify add URL Ingestion
 
-## Connections
-- [[graphify addwatch reference]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/concept #graphify/EXTRACTED #community/Add_Watch_references

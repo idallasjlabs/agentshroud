@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "code"
-community: "Bot Container Scripts"
+community: "Rate Limit Failover"
 location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Rate_Limit_Failover
 ---
 
 # is_rate_limited_post_retry()
@@ -21,4 +21,4 @@ tags:
 - [[test_detector_skips_non_429()]] - `calls` [EXTRACTED]
 - [[test_rate_limit_failover.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/Rate_Limit_Failover

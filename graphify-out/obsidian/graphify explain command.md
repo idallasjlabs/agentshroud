@@ -1,16 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/query.md"
 type: "concept"
-community: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
+community: "Query (references)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
+  - community/Query_references
 ---
 
 # /graphify explain command
 
-## Connections
-- [[graphify querypathexplain reference]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/docker/SYSTEM-INSTRUCTIONS-SECURITYmd
+#graphify/concept #graphify/EXTRACTED #community/Query_references

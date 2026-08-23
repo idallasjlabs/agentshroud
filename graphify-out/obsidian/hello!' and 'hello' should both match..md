@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Group RBAC Roles"
-location: "L9098"
+community: "Telegram Proxy Inbound"
+location: "L9199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Group_RBAC_Roles
+  - community/Telegram_Proxy_Inbound
 ---
 
 # hello!' and 'hello?' should both match.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_predicate_trailing_punctuation_stripped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Group_RBAC_Roles
+#graphify/rationale #graphify/EXTRACTED #community/Telegram_Proxy_Inbound

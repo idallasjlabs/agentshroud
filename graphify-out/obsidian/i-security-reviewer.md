@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/agents/i-security-reviewer.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Readme (i-sec)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Readme_i-sec
 ---
 
 # i-security-reviewer.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Readme_i-sec

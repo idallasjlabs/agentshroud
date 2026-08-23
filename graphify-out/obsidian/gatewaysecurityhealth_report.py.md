@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Security Toolchain"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Security_Toolchain
 ---
 
 # gateway/security/health_report.py
@@ -14,4 +14,4 @@ tags:
 - [[test_security_audit.py]] - `references` [EXTRACTED]
 - [[test_security_toolchain.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Security_Toolchain

@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/gifgrep/SKILL.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Skill (gifgrep)"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Skill_gifgrep
 ---
 
 # gifgrep
 
 ## Connections
-- [[SKILL_144]] - `contains` [EXTRACTED]
+- [[SKILL_208]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Skill_gifgrep

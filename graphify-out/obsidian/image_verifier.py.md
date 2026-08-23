@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/image_verifier.py"
 type: "code"
-community: "docs/compliance"
+community: "Image Verifier"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/compliance
+  - community/Image_Verifier
 ---
 
 # image_verifier.py
@@ -15,4 +15,4 @@ tags:
 - [[verify_image()]] - `contains` [EXTRACTED]
 - [[verify_images()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/compliance
+#graphify/code #graphify/EXTRACTED #community/Image_Verifier

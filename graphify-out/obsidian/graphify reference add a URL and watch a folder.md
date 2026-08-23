@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/references/add-watch.md"
+source_file: ".agents/skills/graphify/references/add-watch.md"
 type: "document"
-community: "Gateway Test Suite"
+community: "Add Watch (references)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Add_Watch_references
 ---
 
 # graphify reference: add a URL and watch a folder
@@ -16,4 +16,4 @@ tags:
 - [[For graphify add]] - `contains` [EXTRACTED]
 - [[add-watch]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/document #graphify/EXTRACTED #community/Add_Watch_references

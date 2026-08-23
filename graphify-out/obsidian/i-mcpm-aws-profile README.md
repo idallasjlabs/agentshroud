@@ -1,17 +1,16 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Setup Docs"
+community: "Readme (i-mcpm-auth-reset)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Readme_i-mcpm-auth-reset
 ---
 
 # i-mcpm-aws-profile README
 
 ## Connections
-- [[SKILLS_GUIDE.md (complete skill catalog)]] - `references` [EXTRACTED]
-- [[i-mcpm-aws-profile SKILL (AWS Profile Config)]] - `references` [EXTRACTED]
+- [[MCP AWS Profile Configuration Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Readme_i-mcpm-auth-reset

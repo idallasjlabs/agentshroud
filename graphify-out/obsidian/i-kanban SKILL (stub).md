@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-kanban/SKILL.md"
 type: "document"
-community: "Community 1720"
+community: "Skill (i-kanban)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1720
+  - community/Skill_i-kanban
 ---
 
 # i-kanban SKILL (stub)
 
-#graphify/document #graphify/EXTRACTED #community/Community_1720
+#graphify/document #graphify/EXTRACTED #community/Skill_i-kanban

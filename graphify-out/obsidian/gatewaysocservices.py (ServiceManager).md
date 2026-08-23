@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Tool Chain Analyzer"
+community: "SOC Services"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain_Analyzer
+  - community/SOC_Services
 ---
 
 # gateway/soc/services.py (ServiceManager)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_soc_services_coverage.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer
+#graphify/code #graphify/EXTRACTED #community/SOC_Services

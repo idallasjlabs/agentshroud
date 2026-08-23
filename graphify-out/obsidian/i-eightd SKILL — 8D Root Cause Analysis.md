@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Setup Docs"
+community: "Skill (i-eightd)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Skill_i-eightd
 ---
 
 # i-eightd SKILL — 8D Root Cause Analysis
@@ -16,4 +16,4 @@ tags:
 - [[i-data SKILL — Data Validation (DATA-VAL)]] - `semantically_similar_to` [INFERRED]
 - [[i-eightd README — 8D Root Cause Analysis]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Setup_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-eightd

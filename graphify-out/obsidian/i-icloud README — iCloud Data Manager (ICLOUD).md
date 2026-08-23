@@ -1,17 +1,16 @@
 ---
 source_file: "docker/config/hermes/skills/i-icloud/README.md"
 type: "document"
-community: "Planning Docs"
+community: "Skill (i-icloud)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Skill_i-icloud
 ---
 
 # i-icloud README — iCloud Data Manager (ICLOUD)
 
 ## Connections
-- [[SKILLS_GUIDE.md (complete skill catalog)]] - `references` [EXTRACTED]
 - [[i-icloud SKILL — iCloud Services]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Planning_Docs
+#graphify/document #graphify/EXTRACTED #community/Skill_i-icloud
