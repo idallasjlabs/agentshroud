@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/restart.sh"
 type: "code"
-community: "Community 1489"
+community: "Logs (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1489
+  - community/Logs_scripts
 ---
 
 # restart.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[restart.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1489
+#graphify/code #graphify/EXTRACTED #community/Logs_scripts

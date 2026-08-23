@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "Collaborator Response Templates"
+community: "Git Guard (security)"
 location: "L490"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Collaborator_Response_Templates
+  - community/Git_Guard_security
 ---
 
 # scan_repository()
@@ -18,4 +18,4 @@ tags:
 - [[git_guard.py]] - `contains` [EXTRACTED]
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Collaborator_Response_Templates
+#graphify/code #graphify/EXTRACTED #community/Git_Guard_security

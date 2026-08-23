@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/tests/test_a2a_governance.py"
 type: "code"
-community: "Planning Docs"
-location: "L53"
+community: "A2a Governance (security)"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/A2a_Governance_security
 ---
 
 # proxy()
 
 ## Connections
-- [[A2AProxy_1]] - `references` [EXTRACTED]
-- [[_StubForwarder]] - `references` [EXTRACTED]
-- [[_base_policy_engine()]] - `calls` [EXTRACTED]
-- [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
+- [[A2AGovernanceConfig]] - `calls` [EXTRACTED]
+- [[A2AGovernanceProxy]] - `calls` [EXTRACTED]
+- [[test_a2a_governance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/A2a_Governance_security

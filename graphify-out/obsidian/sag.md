@@ -1,20 +1,18 @@
 ---
 source_file: "skills/openclaw/sag/SKILL.md"
 type: "document"
-community: "src/interfaces"
+community: "Skill (openai-whisper-api)"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/src/interfaces
+  - community/Skill_openai-whisper-api
 ---
 
 # sag
 
 ## Connections
 - [[Chat voice responses]] - `contains` [EXTRACTED]
-- [[ElevenLabs TTS API]] - `uses` [EXTRACTED]
-- [[OpenClaw Skill Ecosystem]] - `part_of` [EXTRACTED]
-- [[SKILL_162]] - `contains` [EXTRACTED]
+- [[SKILL_226]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/src/interfaces
+#graphify/document #graphify/EXTRACTED #community/Skill_openai-whisper-api

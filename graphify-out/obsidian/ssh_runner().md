@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "docs/diagrams"
+community: "Multi Host (tools)"
 location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Multi_Host_tools
 ---
 
 # ssh_runner()
@@ -16,8 +16,8 @@ tags:
 - [[.test_ssh_runner_uses_subprocess()]] - `calls` [EXTRACTED]
 - [[HostRunner]] - `references` [EXTRACTED]
 - [[Return a HostRunner that executes the command on the host over SSH.      SSH con]] - `rationale_for` [EXTRACTED]
-- [[main()_11]] - `calls` [EXTRACTED]
+- [[main()_13]] - `calls` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/diagrams
+#graphify/code #graphify/EXTRACTED #community/Multi_Host_tools

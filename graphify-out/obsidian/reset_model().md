@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/stt.py"
 type: "code"
-community: "Security Docs"
+community: "Stt (voice_gateway)"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Docs
+  - community/Stt_voice_gateway
 ---
 
 # reset_model()
@@ -15,4 +15,4 @@ tags:
 - [[Release the loaded model (for testing  memory pressure).]] - `rationale_for` [EXTRACTED]
 - [[stt.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Docs
+#graphify/code #graphify/EXTRACTED #community/Stt_voice_gateway

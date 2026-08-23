@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "docs/vault"
+community: "Start Agentshroud (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Start_Agentshroud_scripts
 ---
 
 # start-agentshroud.sh
@@ -24,8 +24,10 @@ tags:
 - [[_telegram_send_photo()_1]] - `defines` [EXTRACTED]
 - [[agentshroud-ssh-exec.sh]] - `shares_data_with` [INFERRED]
 - [[dockerscripts README]] - `semantically_similar_to` [AMBIGUOUS]
+- [[entrypoint-agentshroud.sh]] - `calls` [AMBIGUOUS]
 - [[init-openclaw-config.sh]] - `calls` [EXTRACTED]
 - [[op_proxy_read_with_retry()]] - `defines` [EXTRACTED]
 - [[start-agentshroud.sh script]] - `contains` [EXTRACTED]
+- [[test_openclaw_photo.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Start_Agentshroud_scripts

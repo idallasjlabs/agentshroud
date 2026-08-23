@@ -1,18 +1,19 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L90"
+community: "Hermes Model Resolver"
+location: "L114"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Gateway_Test_Suite
+  - community/Hermes_Model_Resolver
 ---
 
 # resolve_model()
 
 ## Connections
 - [[Resolve (model, provider) for Hermes from the container environment.      Preced]] - `rationale_for` [EXTRACTED]
+- [[_apply_stale_alias_correction()]] - `calls` [EXTRACTED]
 - [[_resolve_from_env()]] - `calls` [EXTRACTED]
 - [[provider_for_model()]] - `calls` [EXTRACTED]
 - [[resolve_model.py]] - `contains` [EXTRACTED]
@@ -27,6 +28,8 @@ tags:
 - [[test_local_mode_uses_hermes_main_model()]] - `calls` [INFERRED]
 - [[test_local_multi_mode_uses_lmstudio_dash_model()]] - `calls` [INFERRED]
 - [[test_mode_case_insensitive_and_whitespace_tolerant()]] - `calls` [INFERRED]
+- [[test_resolve_model_corrects_stale_alias_from_hermes_main_model()]] - `calls` [INFERRED]
+- [[test_resolve_model_corrects_stale_alias_from_local_model_ref()]] - `calls` [INFERRED]
 - [[test_unknown_mode_treated_as_cloud()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Gateway_Test_Suite
+#graphify/code #graphify/INFERRED #community/Hermes_Model_Resolver

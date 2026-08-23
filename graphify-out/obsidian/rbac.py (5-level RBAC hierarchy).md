@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Gateway Security Module"
+community: "Glossary (project)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Glossary_project
 ---
 
 # rbac.py (5-level RBAC hierarchy)
@@ -14,4 +14,4 @@ tags:
 - [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `references` [EXTRACTED]
 - [[cve-mitigation-matrix]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/code #graphify/EXTRACTED #community/Glossary_project

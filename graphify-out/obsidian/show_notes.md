@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
+source_file: ".agents/skills/i-athena/SKILL.md"
 type: "document"
-community: "Bot Skill Config"
+community: "Skill (i-athena)"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-athena
 ---
 
 # show_notes.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Output Format]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/Skill_i-athena

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "SOC Service Manager"
+community: "Dashboard Endpoints (web)"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOC_Service_Manager
+  - community/Dashboard_Endpoints_web
 ---
 
 # require_auth()
@@ -29,4 +29,4 @@ tags:
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]
 - [[verify_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOC_Service_Manager
+#graphify/code #graphify/EXTRACTED #community/Dashboard_Endpoints_web

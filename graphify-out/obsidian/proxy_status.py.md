@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "docs/setup-slack.md"
+community: "Proxy Dashboard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/setup-slackmd
+  - community/Proxy_Dashboard
 ---
 
 # proxy_status.py
@@ -14,5 +14,7 @@ tags:
 ## Connections
 - [[ProxyDashboard]] - `contains` [EXTRACTED]
 - [[ProxyStatusReport]] - `contains` [EXTRACTED]
+- [[api.py]] - `calls` [EXTRACTED]
+- [[health_report.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/setup-slackmd
+#graphify/code #graphify/EXTRACTED #community/Proxy_Dashboard

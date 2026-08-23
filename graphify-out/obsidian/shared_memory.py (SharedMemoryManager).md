@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/shared_memory.py"
 type: "code"
-community: "File Sandbox"
+community: "Shared Memory Write Acl"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/File_Sandbox
+  - community/Shared_Memory_Write_Acl
 ---
 
 # shared_memory.py (SharedMemoryManager)
@@ -16,4 +16,4 @@ tags:
 - [[test_security_regressions_v1_2.py]] - `references` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/File_Sandbox
+#graphify/code #graphify/EXTRACTED #community/Shared_Memory_Write_Acl

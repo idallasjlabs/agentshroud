@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L69"
+community: "Hermes Model Resolver"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Hermes_Model_Resolver
 ---
 
 # provider_for_model()
@@ -17,4 +17,4 @@ tags:
 - [[resolve_model.py]] - `contains` [EXTRACTED]
 - [[test_provider_for_model()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Hermes_Model_Resolver

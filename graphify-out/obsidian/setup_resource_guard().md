@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Resource Guard & Local Model Parity"
 location: "L467"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Resource_Guard__Local_Model_Parity
 ---
 
 # setup_resource_guard()
@@ -22,4 +22,4 @@ tags:
 - [[resource_guard.py]] - `contains` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Resource_Guard__Local_Model_Parity

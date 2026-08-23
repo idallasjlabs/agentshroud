@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/jobs.yaml"
 type: "concept"
-community: "docs/diagrams"
+community: "Jobs (cron)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/docs/diagrams
+  - community/Jobs_cron
 ---
 
 # render_md_email.py
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Hermes Competitive Intelligence Email job]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/docs/diagrams
+#graphify/concept #graphify/EXTRACTED #community/Jobs_cron

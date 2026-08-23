@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Planning Docs"
+community: "Clamav Pipeline"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Clamav_Pipeline
 ---
 
 # scan_bytes()
@@ -24,4 +24,4 @@ tags:
 - [[test_scan_bytes_infected()]] - `calls` [EXTRACTED]
 - [[test_scan_bytes_timeout()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Clamav_Pipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/scan.py"
 type: "code"
-community: "gateway/runtime"
+community: "Skill Guard (security)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/runtime
+  - community/Skill_Guard_security
 ---
 
 # scan.py
@@ -18,7 +18,7 @@ tags:
 - [[SkillsManifest]] - `imports` [EXTRACTED]
 - [[_build_tree()]] - `contains` [EXTRACTED]
 - [[_print_findings()]] - `contains` [EXTRACTED]
-- [[main()_10]] - `contains` [EXTRACTED]
+- [[main()_12]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/runtime
+#graphify/code #graphify/EXTRACTED #community/Skill_Guard_security

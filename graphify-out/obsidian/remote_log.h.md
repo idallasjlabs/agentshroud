@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/remote_log.h"
 type: "code"
-community: "Gateway Test Suite"
+community: "Wakeword (main)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Wakeword_main
 ---
 
 # remote_log.h
@@ -17,4 +17,4 @@ tags:
 - [[wakeword.c]] - `imports` [EXTRACTED]
 - [[ws_client.c]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Wakeword_main

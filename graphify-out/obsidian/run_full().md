@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "ESP32 Firmware"
+community: "Proxy Dashboard"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Proxy_Dashboard
 ---
 
 # run_full()
@@ -19,7 +19,8 @@ tags:
 - [[run_canary()_1]] - `calls` [EXTRACTED]
 - [[run_chain()]] - `calls` [EXTRACTED]
 - [[run_quick()]] - `calls` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `references` [EXTRACTED]
 - [[verify-proxy.sh]] - `defines` [EXTRACTED]
 - [[verify-proxy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Proxy_Dashboard

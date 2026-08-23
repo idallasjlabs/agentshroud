@@ -1,17 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-mnemosyne/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Skill (i-mnemosyne)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-mnemosyne
 ---
 
 # script.md (podcast pipeline dialogue artifact)
 
-## Connections
-- [[i-mnemosyne SKILL (Retention Engineer)]] - `references` [EXTRACTED]
-- [[i-oracle SKILL (Feedback Analyst)]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Skill_i-mnemosyne

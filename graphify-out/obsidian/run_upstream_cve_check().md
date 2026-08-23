@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L545"
+community: "Daily Cve Report (security)"
+location: "L594"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Daily_Cve_Report_security
 ---
 
 # run_upstream_cve_check()
@@ -20,6 +20,5 @@ tags:
 - [[format_upstream_cve_alert()]] - `calls` [EXTRACTED]
 - [[get_agent_cve_source()]] - `calls` [EXTRACTED]
 - [[run_upstream_cve_check_all_agents()]] - `calls` [EXTRACTED]
-- [[upstream_cve_check_scheduler()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report_security

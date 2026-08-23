@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "CLI Command Client (Rust)"
+community: "Main (src)"
 location: "L579"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CLI_Command_Client_Rust
+  - community/Main_src
 ---
 
 # run_approvals_list()
@@ -20,7 +20,7 @@ tags:
 - [[approvals_list_empty()]] - `calls` [EXTRACTED]
 - [[approvals_list_formats_rows()]] - `calls` [EXTRACTED]
 - [[format_approvals()]] - `calls` [EXTRACTED]
-- [[main()]] - `calls` [EXTRACTED]
+- [[main()_1]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CLI_Command_Client_Rust
+#graphify/code #graphify/EXTRACTED #community/Main_src

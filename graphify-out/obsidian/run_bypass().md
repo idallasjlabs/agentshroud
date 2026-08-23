@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/verify-proxy.sh"
 type: "code"
-community: "ESP32 Firmware"
+community: "Proxy Dashboard"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ESP32_Firmware
+  - community/Proxy_Dashboard
 ---
 
 # run_bypass()
@@ -19,4 +19,4 @@ tags:
 - [[verify-proxy.sh]] - `defines` [EXTRACTED]
 - [[verify-proxy.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ESP32_Firmware
+#graphify/code #graphify/EXTRACTED #community/Proxy_Dashboard

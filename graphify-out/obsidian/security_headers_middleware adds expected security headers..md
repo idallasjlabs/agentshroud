@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "Competitive Intel Store"
+community: "Main Simple"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Main_Simple
 ---
 
 # security_headers_middleware adds expected security headers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_security_headers_middleware_normal_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/rationale #graphify/EXTRACTED #community/Main_Simple

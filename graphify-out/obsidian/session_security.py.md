@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Session Security"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Session_Security
 ---
 
 # session_security.py
 
 ## Connections
+- [[Chen et al. 2026 (arXiv2602.14364) — Session Hijacking]] - `cites` [EXTRACTED]
 - [[EventInjectionError]] - `contains` [EXTRACTED]
 - [[RateLimitExceeded]] - `contains` [EXTRACTED]
 - [[Session]] - `contains` [EXTRACTED]
@@ -19,6 +20,11 @@ tags:
 - [[SessionError]] - `contains` [EXTRACTED]
 - [[SessionExpired]] - `contains` [EXTRACTED]
 - [[SessionManager]] - `contains` [EXTRACTED]
+- [[Wang et al. 2026 (arXiv2602.08412) — Confused Deputy  Event Injection Attacks]] - `cites` [EXTRACTED]
+- [[browser_security.py]] - `references` [EXTRACTED]
+- [[log_sanitizer.py]] - `references` [EXTRACTED]
+- [[oauth_security.py]] - `references` [EXTRACTED]
+- [[subagent_monitor.py]] - `references` [EXTRACTED]
 - [[test_session_security.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Session_Security

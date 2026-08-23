@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "Egress & RBAC Security Core"
+community: "RBAC & Ingest Middleware"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress__RBAC_Security_Core
+  - community/RBAC__Ingest_Middleware
 ---
 
 # run()
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[ApprovalHardening]] - `calls` [EXTRACTED]
 - [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
-- [[ApprovalQueue]] - `calls` [INFERRED]
 - [[AuditStore_1]] - `calls` [EXTRACTED]
 - [[CanaryTripwire]] - `calls` [EXTRACTED]
 - [[ContextGuard]] - `calls` [EXTRACTED]
@@ -25,7 +24,6 @@ tags:
 - [[FileSandboxConfig]] - `calls` [EXTRACTED]
 - [[GitGuard]] - `calls` [EXTRACTED]
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
-- [[PIIConfig]] - `calls` [INFERRED]
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[Path_16]] - `calls` [EXTRACTED]
 - [[PathIsolationConfig]] - `calls` [EXTRACTED]
@@ -44,4 +42,4 @@ tags:
 - [[ok()]] - `calls` [EXTRACTED]
 - [[warn()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress__RBAC_Security_Core
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "docs/vault"
+community: "E2e Proxy"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/E2e_Proxy
 ---
 
 # sanitizer()
@@ -15,4 +15,4 @@ tags:
 - [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/E2e_Proxy

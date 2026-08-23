@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/bot-access-audit.sh"
 type: "code"
-community: "Bot Skill Config"
+community: "Setup Https Proxy (openclaw)"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Setup_Https_Proxy_openclaw
 ---
 
 # run_op()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[bot-access-audit.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Setup_Https_Proxy_openclaw

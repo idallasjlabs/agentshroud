@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "Architecture Docs"
+community: "Ssh Config.py (Gateway Core)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Architecture_Docs
+  - community/Ssh_Configpy_Gateway_Core
 ---
 
 # ssh_config.py
@@ -17,11 +17,11 @@ tags:
 - [[Imports From  Exports To_7]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_7]] - `contains` [EXTRACTED]
 - [[Known Issues  Notes_8]] - `contains` [EXTRACTED]
-- [[Purpose_81]] - `contains` [EXTRACTED]
+- [[Purpose_118]] - `contains` [EXTRACTED]
 - [[Related_9]] - `contains` [EXTRACTED]
 - [[Responsibilities_7]] - `contains` [EXTRACTED]
 - [[SSHConfig Fields]] - `contains` [EXTRACTED]
 - [[SSHHostConfig Fields]] - `contains` [EXTRACTED]
 - [[ssh_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Architecture_Docs
+#graphify/document #graphify/EXTRACTED #community/Ssh_Configpy_Gateway_Core

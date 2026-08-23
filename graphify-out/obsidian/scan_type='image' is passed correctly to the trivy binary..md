@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "Bot Skill Config"
+community: "Daily Cve Report (security)"
 location: "L217"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Daily_Cve_Report_security
 ---
 
 # scan_type='image' is passed correctly to the trivy binary.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[.test_run_image_scan_type()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/rationale #graphify/EXTRACTED #community/Daily_Cve_Report_security

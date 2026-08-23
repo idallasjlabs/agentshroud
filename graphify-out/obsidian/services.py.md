@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Tool Chain Analyzer"
+community: "SOC Services"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Tool_Chain_Analyzer
+  - community/SOC_Services
 ---
 
 # services.py
 
 ## Connections
 - [[HealthStatus]] - `imports` [EXTRACTED]
-- [[ResourceUsage_1]] - `imports` [EXTRACTED]
 - [[ServiceDescriptor]] - `imports` [EXTRACTED]
 - [[ServiceManager]] - `contains` [EXTRACTED]
 - [[ServiceStatus]] - `imports` [EXTRACTED]
@@ -28,4 +27,4 @@ tags:
 - [[load_config()]] - `imports` [EXTRACTED]
 - [[models.py_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Tool_Chain_Analyzer
+#graphify/code #graphify/EXTRACTED #community/SOC_Services

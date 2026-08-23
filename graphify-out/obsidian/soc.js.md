@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Gateway Test Suite"
+community: "Soc (static)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Soc_static
 ---
 
 # soc.js
@@ -76,5 +76,6 @@ tags:
 - [[_token]] - `contains` [EXTRACTED]
 - [[_ts()]] - `contains` [EXTRACTED]
 - [[_uptime()]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Soc_static

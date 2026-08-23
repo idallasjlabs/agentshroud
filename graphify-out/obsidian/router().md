@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Group Approval Routing"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Group_Approval_Routing
 ---
 
 # router()
@@ -16,4 +16,4 @@ tags:
 - [[GroupApprovalRouter wired with a mock Telegram send function.]] - `rationale_for` [EXTRACTED]
 - [[test_group_approval_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Group_Approval_Routing

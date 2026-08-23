@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "code"
-community: "Bot Skill Config"
+community: "Daily Cve Report (security)"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Daily_Cve_Report_security
 ---
 
 # run_trivy_scan()
@@ -18,7 +18,7 @@ tags:
 - [[.test_run_success()]] - `calls` [EXTRACTED]
 - [[.test_run_timeout()]] - `calls` [EXTRACTED]
 - [[.test_trivy_binary_not_found()]] - `calls` [EXTRACTED]
-- [[Any_63]] - `references` [EXTRACTED]
+- [[Any_64]] - `references` [EXTRACTED]
 - [[Run a Trivy scan and return parsed results.      Args         target Scan targ]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `imports` [EXTRACTED]
 - [[parse_trivy_output()]] - `calls` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 - [[trivy_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report_security

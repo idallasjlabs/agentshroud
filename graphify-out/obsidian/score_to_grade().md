@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "branding/logos"
+community: "Health Report (security)"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/branding/logos
+  - community/Health_Report_security
 ---
 
 # score_to_grade()
@@ -22,4 +22,4 @@ tags:
 - [[health_report.py]] - `contains` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/branding/logos
+#graphify/code #graphify/EXTRACTED #community/Health_Report_security

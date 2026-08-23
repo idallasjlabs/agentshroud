@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Tool Result Injection (security)"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Tool_Result_Injection_security
 ---
 
 # strip_markdown_exfil()
@@ -20,4 +20,4 @@ tags:
 - [[telegram_proxy.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Tool_Result_Injection_security

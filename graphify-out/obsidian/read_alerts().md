@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Bot Container Scripts"
+community: "Falco Monitor (security)"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Bot_Container_Scripts
+  - community/Falco_Monitor_security
 ---
 
 # read_alerts()
 
 ## Connections
 - [[.test_read_alerts_missing_dir()]] - `calls` [EXTRACTED]
-- [[Any_39]] - `references` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
 - [[Path_11]] - `references` [EXTRACTED]
 - [[Read Falco alerts from the alert directory.      Args         alert_dir Direct]] - `rationale_for` [EXTRACTED]
 - [[datetime_3]] - `references` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[scanner_integration.py]] - `imports` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Bot_Container_Scripts
+#graphify/code #graphify/EXTRACTED #community/Falco_Monitor_security

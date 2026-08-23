@@ -1,18 +1,17 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Gateway Security Module"
+community: "Glossary (project)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Gateway_Security_Module
+  - community/Glossary_project
 ---
 
 # setup-guide.md
 
 ## Connections
-- [[1Password Integration (AgentShroud)]] - `references` [EXTRACTED]
 - [[AgentShroud (security proxy)]] - `references` [EXTRACTED]
 - [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
 - [[Audit Trail_1]] - `references` [EXTRACTED]
@@ -25,4 +24,4 @@ tags:
 - [[colima-docker-guide]] - `conceptually_related_to` [INFERRED]
 - [[system-requirements]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Gateway_Security_Module
+#graphify/document #graphify/EXTRACTED #community/Glossary_project

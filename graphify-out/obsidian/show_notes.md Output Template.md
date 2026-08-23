@@ -1,17 +1,16 @@
 ---
 source_file: "docker/config/hermes/skills/i-athena/SKILL.md"
 type: "concept"
-community: "Bot Skill Config"
+community: "Skill (i-athena)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/Skill_i-athena
 ---
 
 # show_notes.md Output Template
 
 ## Connections
-- [[Athena — Knowledge Distiller_1]] - `references` [EXTRACTED]
 - [[Athena — Knowledge Distiller (SKILL)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/concept #graphify/EXTRACTED #community/Skill_i-athena

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "gateway/cli"
+community: "Scanner Integration (security)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/gateway/cli
+  - community/Scanner_Integration_security
 ---
 
 # scanner_integration.py
@@ -80,4 +80,4 @@ tags:
 - [[read_alerts()_1]] - `imports` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/gateway/cli
+#graphify/code #graphify/EXTRACTED #community/Scanner_Integration_security

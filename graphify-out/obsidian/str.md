@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 1513"
+community: "Tool Chain & CVE Triage"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1513
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # str
 
 ## Connections
+- [[A2ADecision]] - `inherits` [EXTRACTED]
+- [[A2AMessageType]] - `inherits` [EXTRACTED]
 - [[A2AMethod]] - `inherits` [EXTRACTED]
 - [[A2APolicyAction]] - `inherits` [EXTRACTED]
 - [[Action_1]] - `inherits` [EXTRACTED]
@@ -26,6 +28,8 @@ tags:
 - [[EgressChannel]] - `inherits` [EXTRACTED]
 - [[EgressStatus]] - `inherits` [EXTRACTED]
 - [[FindingSeverity]] - `inherits` [EXTRACTED]
+- [[GovernanceAction]] - `inherits` [EXTRACTED]
+- [[GovernanceEventType]] - `inherits` [EXTRACTED]
 - [[GroupRole]] - `inherits` [EXTRACTED]
 - [[HealthStatus]] - `inherits` [EXTRACTED]
 - [[HostStatus]] - `inherits` [EXTRACTED]
@@ -40,8 +44,8 @@ tags:
 - [[Platform]] - `inherits` [EXTRACTED]
 - [[ProxyAction]] - `inherits` [EXTRACTED]
 - [[Resource_1]] - `inherits` [EXTRACTED]
-- [[RiskLevel_3]] - `inherits` [EXTRACTED]
 - [[RiskLevel_4]] - `inherits` [EXTRACTED]
+- [[RiskLevel_5]] - `inherits` [EXTRACTED]
 - [[Role_1]] - `inherits` [EXTRACTED]
 - [[SCLInterface]] - `inherits` [EXTRACTED]
 - [[ServicePrivacy]] - `inherits` [EXTRACTED]
@@ -56,4 +60,4 @@ tags:
 - [[VulnClass]] - `inherits` [EXTRACTED]
 - [[WSEventType]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1513
+#graphify/code #graphify/EXTRACTED #community/Tool_Chain__CVE_Triage

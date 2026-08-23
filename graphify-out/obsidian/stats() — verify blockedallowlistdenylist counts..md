@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "rationale"
-community: "scripts/triage-cve-mitigations.py"
+community: "Dns Blocklist"
 location: "L137"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/scripts/triage-cve-mitigationspy
+  - community/Dns_Blocklist
 ---
 
 # stats() — verify blocked/allowlist/denylist counts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestStats]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/scripts/triage-cve-mitigationspy
+#graphify/rationale #graphify/EXTRACTED #community/Dns_Blocklist

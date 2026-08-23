@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "Group Workspace Manager"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Group_Workspace_Manager
 ---
 
 # rbac()
@@ -15,4 +15,4 @@ tags:
 - [[RBACConfig_1]] - `calls` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Group_Workspace_Manager

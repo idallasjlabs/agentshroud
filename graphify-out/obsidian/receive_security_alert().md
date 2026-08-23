@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "PII Sanitizer Pipeline"
+community: "Ingest API Main & Models"
 location: "L1694"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PII_Sanitizer_Pipeline
+  - community/Ingest_API_Main__Models
 ---
 
 # receive_security_alert()
@@ -19,4 +19,4 @@ tags:
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PII_Sanitizer_Pipeline
+#graphify/code #graphify/EXTRACTED #community/Ingest_API_Main__Models

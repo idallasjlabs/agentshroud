@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_streaming.py"
 type: "code"
-community: "scripts/sync-cve-registry.py"
+community: "Security Fixes & SSH Write Endpoint"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/sync-cve-registrypy
+  - community/Security_Fixes__SSH_Write_Endpoint
 ---
 
 # router()
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[MultiAgentRouter]] - `calls` [EXTRACTED]
 - [[RouterConfig]] - `calls` [EXTRACTED]
-- [[RouterConfig_1]] - `calls` [INFERRED]
 - [[test_router_streaming.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/Security_Fixes__SSH_Write_Endpoint

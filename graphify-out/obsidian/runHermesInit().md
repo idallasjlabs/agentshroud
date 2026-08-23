@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_wire_llm_settings.js"
 type: "code"
-community: "Gateway Test Suite"
+community: "Wire Llm Settings (startup_smoke)"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Wire_Llm_Settings_startup_smoke
 ---
 
 # runHermesInit()
@@ -16,4 +16,4 @@ tags:
 - [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
 - [[writeStub()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Wire_Llm_Settings_startup_smoke

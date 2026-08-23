@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-inventory.md"
 type: "document"
-community: "docs/reference"
+community: "Security Inventory (security)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/docs/reference
+  - community/Security_Inventory_security
 ---
 
 # security-inventory.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🛡️ AgentShroud Security Inventory (v0.8.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/docs/reference
+#graphify/document #graphify/EXTRACTED #community/Security_Inventory_security

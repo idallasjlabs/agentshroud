@@ -1,17 +1,18 @@
 ---
 source_file: "docker/scripts/scan.sh"
 type: "code"
-community: "Community 1490"
+community: "Tool Chain & CVE Triage"
 location: "L1"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_1490
+  - graphify/INFERRED
+  - community/Tool_Chain__CVE_Triage
 ---
 
 # scan.sh
 
 ## Connections
 - [[scan.sh script]] - `contains` [EXTRACTED]
+- [[security-scan.sh (unified scan dispatcher)]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1490
+#graphify/code #graphify/INFERRED #community/Tool_Chain__CVE_Triage

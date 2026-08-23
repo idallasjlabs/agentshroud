@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L325"
+community: "Egress Filter"
+location: "L330"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Egress_Filter
 ---
 
 # set_egress_config()
@@ -20,4 +20,4 @@ tags:
 - [[test_egress_enforce.py]] - `imports` [EXTRACTED]
 - [[update_egress_allowlist()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Egress_Filter

@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L178"
+community: "Daily Cve Report (security)"
+location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Daily_Cve_Report_security
 ---
 
 # run_and_send_cve_report()
 
 ## Connections
+- [[.test_failed_send_does_not_write_stamp_or_mark_sent_date()]] - `calls` [EXTRACTED]
 - [[.test_returns_summary_without_token()]] - `calls` [EXTRACTED]
 - [[.test_sends_telegram_on_success()]] - `calls` [EXTRACTED]
 - [[.test_trivy_error_still_sends_error_report()]] - `calls` [EXTRACTED]
@@ -24,9 +25,8 @@ tags:
 - [[format_cve_report()]] - `calls` [EXTRACTED]
 - [[generate_summary()_2]] - `calls` [EXTRACTED]
 - [[router.py_1]] - `imports` [EXTRACTED]
-- [[run_trivy_scan()]] - `calls` [INFERRED]
 - [[run_trivy_scan()_1]] - `calls` [EXTRACTED]
 - [[save_report()_1]] - `calls` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Daily_Cve_Report_security

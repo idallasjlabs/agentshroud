@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Planning Docs"
+community: "Prompt Protection (security)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Planning_Docs
+  - community/Prompt_Protection_security
 ---
 
 # prompt_protection.py
 
 ## Connections
+- [[AgentShroud Blue Team Security Auditor (SEC-DEFENSE)]] - `references` [EXTRACTED]
 - [[PromptProtection]] - `contains` [EXTRACTED]
 - [[ProtectedContent]] - `contains` [EXTRACTED]
 - [[RedactionResult_2]] - `contains` [EXTRACTED]
-- [[i-sec-defense Blue Team Security Auditor]] - `references` [EXTRACTED]
-- [[i-sec-offense Red Team Adversarial Tester]] - `references` [EXTRACTED]
+- [[SKILL_190]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Planning_Docs
+#graphify/code #graphify/EXTRACTED #community/Prompt_Protection_security

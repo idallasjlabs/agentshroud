@@ -1,25 +1,26 @@
 ---
 source_file: "docker/config/openclaw/setup-https-proxy.js"
 type: "code"
-community: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
+community: "Setup Https Proxy (openclaw)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+  - community/Setup_Https_Proxy_openclaw
 ---
 
 # setup-https-proxy.js
 
 ## Connections
 - [[ConnectProxyAgent]] - `contains` [EXTRACTED]
+- [[Falco Rule Unexpected Outbound Connection from AgentShroud]] - `conceptually_related_to` [INFERRED]
 - [[NO_PROXY_HOSTS]] - `contains` [EXTRACTED]
 - [[PatchedWebSocket]] - `contains` [EXTRACTED]
 - [[http]] - `contains` [EXTRACTED]
-- [[https_1]] - `contains` [EXTRACTED]
+- [[https_2]] - `contains` [EXTRACTED]
 - [[net]] - `contains` [EXTRACTED]
 - [[proxyCreateConnection()]] - `contains` [EXTRACTED]
 - [[shouldBypass()]] - `contains` [EXTRACTED]
 - [[tls]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/USPTO_PROVISIONAL_PATENT_APPLICATIONmd
+#graphify/code #graphify/EXTRACTED #community/Setup_Https_Proxy_openclaw

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "Gateway Test Suite"
+community: "RBAC & Ingest Middleware"
 location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/RBAC__Ingest_Middleware
 ---
 
 # sanitize_tool_result()
@@ -20,4 +20,4 @@ tags:
 - [[test_tool_result_sanitizer_enhanced.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/RBAC__Ingest_Middleware

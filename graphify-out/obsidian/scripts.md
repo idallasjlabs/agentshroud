@@ -1,12 +1,12 @@
 ---
-source_file: "browser-extension/package.json"
+source_file: ".agents/skills/i-browser/package.json"
 type: "code"
-community: "docs/compliance"
-location: "L7"
+community: "Package (i-browser)"
+location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/compliance
+  - community/Package_i-browser
 ---
 
 # scripts
@@ -14,6 +14,5 @@ tags:
 ## Connections
 - [[package.json]] - `contains` [EXTRACTED]
 - [[test]] - `contains` [EXTRACTED]
-- [[testcoverage]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/compliance
+#graphify/code #graphify/EXTRACTED #community/Package_i-browser

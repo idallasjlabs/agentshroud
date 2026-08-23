@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Competitive Intel Store"
+community: "Ingest API Main & Models"
 location: "L352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Competitive_Intel_Store
+  - community/Ingest_API_Main__Models
 ---
 
 # security_headers_middleware()
@@ -21,4 +21,4 @@ tags:
 - [[test_security_headers_middleware_normal_response()]] - `calls` [EXTRACTED]
 - [[test_security_headers_middleware_reraises_non_group()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Competitive_Intel_Store
+#graphify/code #graphify/EXTRACTED #community/Ingest_API_Main__Models

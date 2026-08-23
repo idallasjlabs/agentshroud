@@ -1,21 +1,17 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "Bot Skill Config"
+community: "V1.2.0 Master Plan (v1.2)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Bot_Skill_Config
+  - community/V120_Master_Plan_v12
 ---
 
 # ssh-capability.md
 
 ## Connections
-- [[SSH Approval Flow (auto-approve vs human-review vs deny)]] - `describes` [EXTRACTED]
-- [[SSH Capability — Architecture Document]] - `contains` [EXTRACTED]
-- [[SSH Command Injection Detection (INJECTION_PATTERNS regex + asyncio subprocess exec)]] - `describes` [EXTRACTED]
-- [[SSH Proxy Module (gatewayssh_proxyproxy.py)]] - `describes` [EXTRACTED]
-- [[SSHHostConfig (per-host allowdenyauto-approve lists, timeout, key_path)]] - `describes` [EXTRACTED]
+- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Bot_Skill_Config
+#graphify/document #graphify/EXTRACTED #community/V120_Master_Plan_v12

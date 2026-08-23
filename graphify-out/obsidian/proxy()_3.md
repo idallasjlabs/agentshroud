@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Gateway Test Suite"
-location: "L34"
+community: "Ssh Proxy"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Test_Suite
+  - community/Ssh_Proxy
 ---
 
 # proxy()
 
 ## Connections
-- [[WebProxy_1]] - `calls` [EXTRACTED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[SSHConfig_2]] - `references` [EXTRACTED]
+- [[SSHProxy_1]] - `references` [EXTRACTED]
+- [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Test_Suite
+#graphify/code #graphify/EXTRACTED #community/Ssh_Proxy

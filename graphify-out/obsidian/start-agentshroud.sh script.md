@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "docs/vault"
+community: "Start Agentshroud (scripts)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/docs/vault
+  - community/Start_Agentshroud_scripts
 ---
 
 # start-agentshroud.sh script
@@ -21,4 +21,4 @@ tags:
 - [[_telegram_send_photo()_1]] - `calls` [EXTRACTED]
 - [[start-agentshroud.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/docs/vault
+#graphify/code #graphify/EXTRACTED #community/Start_Agentshroud_scripts

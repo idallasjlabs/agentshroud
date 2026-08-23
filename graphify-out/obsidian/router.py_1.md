@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Enhanced Approval Queue"
+community: "SOC Router (Collaborator Mgmt)"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enhanced_Approval_Queue
+  - community/SOC_Router_Collaborator_Mgmt
 ---
 
 # router.py
@@ -17,7 +17,7 @@ tags:
 - [[AddGroupMemberRequest]] - `contains` [EXTRACTED]
 - [[ApprovalDecisionRequest]] - `contains` [EXTRACTED]
 - [[ApprovalMode]] - `imports` [EXTRACTED]
-- [[AuditLogEntry]] - `imports` [EXTRACTED]
+- [[AuditLogEntry]] - `shares_data_with` [EXTRACTED]
 - [[AuditResult]] - `imports` [EXTRACTED]
 - [[ContributorManager]] - `imports` [EXTRACTED]
 - [[CreateDelegationRequest]] - `contains` [EXTRACTED]
@@ -29,6 +29,7 @@ tags:
 - [[EgressScope]] - `imports` [EXTRACTED]
 - [[EgressScopeRequest]] - `contains` [EXTRACTED]
 - [[EmergencyBlockRequest]] - `contains` [EXTRACTED]
+- [[FastAPI_5]] - `imports_from` [EXTRACTED]
 - [[GroupConfig]] - `imports` [EXTRACTED]
 - [[LoginRequest]] - `contains` [EXTRACTED]
 - [[RBACConfig_1]] - `imports` [EXTRACTED]
@@ -38,7 +39,6 @@ tags:
 - [[Role_1]] - `imports` [EXTRACTED]
 - [[SCLCaller]] - `imports` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `imports` [EXTRACTED]
-- [[SCLError]] - `imports` [EXTRACTED]
 - [[SCLInterface]] - `imports` [EXTRACTED]
 - [[ScanRequest_1]] - `contains` [EXTRACTED]
 - [[ServiceActionRequest]] - `contains` [EXTRACTED]
@@ -48,10 +48,8 @@ tags:
 - [[SetModuleModeRequest]] - `contains` [EXTRACTED]
 - [[SetRoleRequest]] - `contains` [EXTRACTED]
 - [[SetUserModeRequest]] - `contains` [EXTRACTED]
-- [[Severity_2]] - `imports` [EXTRACTED]
 - [[SharedMemoryManager]] - `imports` [EXTRACTED]
 - [[UpdateDisplayNameRequest]] - `contains` [EXTRACTED]
-- [[WSEventType]] - `imports` [EXTRACTED]
 - [[_app_state()]] - `contains` [EXTRACTED]
 - [[_confirmation_required()]] - `contains` [EXTRACTED]
 - [[_docker_exec_bot()]] - `contains` [EXTRACTED]
@@ -79,6 +77,7 @@ tags:
 - [[compute_scorecard()]] - `imports` [EXTRACTED]
 - [[create_delegation()]] - `contains` [EXTRACTED]
 - [[create_group()]] - `contains` [EXTRACTED]
+- [[datetime_9]] - `imports_from` [EXTRACTED]
 - [[delete_group()]] - `contains` [EXTRACTED]
 - [[deny_egress()]] - `contains` [EXTRACTED]
 - [[deny_request()]] - `contains` [EXTRACTED]
@@ -134,6 +133,8 @@ tags:
 - [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[models.py_1]] - `imports_from` [EXTRACTED]
 - [[override_egress_rule()]] - `contains` [EXTRACTED]
+- [[pause_collaborator()]] - `imports` [EXTRACTED]
+- [[pause_collaborator_endpoint()]] - `contains` [EXTRACTED]
 - [[persist_approved_collaborator()]] - `imports` [EXTRACTED]
 - [[persist_group_collab_mode()]] - `imports` [EXTRACTED]
 - [[persist_group_create()]] - `imports` [EXTRACTED]
@@ -159,11 +160,15 @@ tags:
 - [[set_module_mode()]] - `contains` [EXTRACTED]
 - [[set_user_collab_mode()]] - `contains` [EXTRACTED]
 - [[set_user_role()_1]] - `contains` [EXTRACTED]
+- [[soc.js]] - `shares_data_with` [EXTRACTED]
 - [[soc_dashboard()]] - `contains` [EXTRACTED]
 - [[soc_websocket()]] - `contains` [EXTRACTED]
 - [[start_service()]] - `contains` [EXTRACTED]
 - [[stop_service()_1]] - `contains` [EXTRACTED]
+- [[test_soc_router_coverage.py]] - `tests` [EXTRACTED]
 - [[trigger_cve_report()]] - `contains` [EXTRACTED]
+- [[unpause_collaborator()]] - `imports` [EXTRACTED]
+- [[unpause_collaborator_endpoint()]] - `contains` [EXTRACTED]
 - [[update_display_name()]] - `contains` [EXTRACTED]
 - [[update_service()]] - `contains` [EXTRACTED]
 - [[upgrade_bot()]] - `contains` [EXTRACTED]
@@ -172,4 +177,4 @@ tags:
 - [[verify_audit_chain()]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enhanced_Approval_Queue
+#graphify/code #graphify/EXTRACTED #community/SOC_Router_Collaborator_Mgmt

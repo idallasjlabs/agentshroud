@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "Setup Docs"
+community: "Dns Forwarder (proxy)"
 location: "L279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Setup_Docs
+  - community/Dns_Forwarder_proxy
 ---
 
 # start_dns_forwarder()
@@ -17,9 +17,8 @@ tags:
 - [[DatagramTransport]] - `references` [EXTRACTED]
 - [[Start the DNS forwarding server with optional blocklist.      Returns the transp]] - `rationale_for` [EXTRACTED]
 - [[dns_forwarder.py]] - `contains` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[main()_9]] - `calls` [EXTRACTED]
+- [[main()_11]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Setup_Docs
+#graphify/code #graphify/EXTRACTED #community/Dns_Forwarder_proxy
