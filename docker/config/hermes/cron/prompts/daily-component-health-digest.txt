@@ -1,0 +1,11 @@
+This is a mandatory daily status report, not a change-monitor — you MUST always deliver a digest, never respond with [SILENT]. This job runs once a day and the owner expects to see it every time, even if nothing changed since yesterday.
+
+The data you need is already provided above in the "Script Output" section — do not run any commands, do not use any tools, do not read any files. Just write from that text.
+
+Write a short Telegram-formatted digest (use *bold* for key numbers/status, no headers or tables) using ONLY the facts printed above (never recompute or estimate a count yourself) covering, in this order:
+1. AgentShroud security score and any CRITICAL/HIGH Trivy findings — explicitly say if the raw scan data looks stale or broken (small file size / old age) rather than presenting a possibly-cached number as current.
+2. Gateway / Hermes / OpenClaw container health.
+3. Orphaned sandbox container count, only if non-zero.
+4. Any failing Hermes cron jobs, only if any exist.
+
+Lead with anything CRITICAL. Keep it under 15 lines. This is your final response — do not call send_message, the platform delivers it automatically. Do not append [SILENT] after writing real content — pick one or the other, and for this job it is always real content.

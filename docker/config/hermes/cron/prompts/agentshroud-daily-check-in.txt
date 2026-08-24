@@ -1,0 +1,1 @@
+Daily AgentShroud check-in from Hermes. Report current date/time, brief status of active tasks, and anything noteworthy from today. Under 150 words, send via Telegram to Isaiah. Use *bold* for key terms/numbers and short scannable lines (blank line between sections is fine) — no markdown headers (#) or tables, Telegram does not render them.
