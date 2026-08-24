@@ -162,6 +162,7 @@ cmd_up() {
     -e HERMES_DASHBOARD_BRIDGE_PORT="9120" \
     -e AGENTSHROUD_BOT_ID="hermes" \
     -e AGENTSHROUD_VERSION="${VERSION}" \
+    -e SEARXNG_URL="${SEARXNG_URL:-http://searxng-local:8080}" \
     -e API_SERVER_ENABLED="1" \
     -e API_SERVER_HOST="0.0.0.0" \
     -e API_SERVER_PORT="8642" \
@@ -177,6 +178,22 @@ cmd_up() {
     --health-start-period 120s \
     --health-retries 3 \
     "$IMAGE"
+
+  # SearXNG lives in a separate stack (~/Development/local-llms), on the
+  # default `bridge` network — not on Hermes's isolated network, so Hermes's
+  # web_search tool can't reach it without this. Found 2026-08-24: without
+  # this connection, web_search silently falls through to direct
+  # DuckDuckGo/Bing calls, which fail outright on this network (no general
+  # internet egress by design), and every research-based cron job returned
+  # false "nothing new" results for an unknown period. `docker network
+  # connect` is idempotent-safe here (harmless no-op) if already connected,
+  # or if searxng-local isn't running yet (logged, not fatal — Hermes still
+  # starts; reconnect manually or restart Hermes once SearXNG is up).
+  if docker network connect agentshroud_agentshroud-isolated searxng-local 2>/dev/null; then
+    echo "  [hermes-standalone] connected to searxng-local (web_search backend)"
+  else
+    echo "  [hermes-standalone] WARN: could not connect to searxng-local (not running, or already connected) — web_search may fall back to broken direct-engine calls"
+  fi
 
   echo "  [hermes-standalone] ${CONTAINER} started."
 }
