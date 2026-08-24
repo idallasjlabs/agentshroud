@@ -78,6 +78,59 @@ fi
 echo "[startup] healthcheck heartbeat launched (pid=$!)"
 
 # ---------------------------------------------------------------------------
+# OpenClaw sandbox reaper — root cause fix for "sandbox abandonment"
+# ---------------------------------------------------------------------------
+# OpenClaw's own sandbox backend (agents.defaults.sandbox.scope=session,
+# .openclaw/openclaw.json) starts one persistent `sleep infinity` container
+# per cron job / collaborator chat and re-execs into it on every subsequent
+# run — a deliberate warm-start design. It never stops or removes that
+# container itself; there is no vendor-side TTL, idle timeout, or session-end
+# hook. Found 2026-08-24: 10 `openclaw-sbx-agent-*` containers had
+# accumulated, all `Up`, oldest ~13h with zero exec activity. Manually
+# killing orphans (done earlier) doesn't fix the leak going forward — this
+# does. Each sandbox's /workspace is a bind mount back to this container's
+# own `.openclaw/workspace` (verified via `docker inspect` .Mounts), so
+# removing an idle sandbox container loses no data — only the warm exec
+# cache, rebuilt automatically on the sandbox's next use.
+# Gated on `command -v docker`: only OpenClaw's image installs the Docker
+# CLI (agents.defaults.sandbox.backend=docker requires it — see this repo's
+# docker/bots/openclaw/Dockerfile); gateway shares this script but has no
+# `docker` binary, so this block is a natural no-op there.
+if command -v docker >/dev/null 2>&1 && [ -n "${DOCKER_HOST:-}" ]; then
+(
+    # Background loop — never let one failed `docker` call (a container
+    # removed between listing and inspecting, a transient proxy hiccup)
+    # propagate via the parent script's `set -euo pipefail` and kill this
+    # loop. Every command below is also individually guarded regardless.
+    set +e +o pipefail
+    _reap_tick=1800   # 30 min
+    _reap_ttl=21600   # 6h — well past any single cron run or active chat turn
+    while true; do
+        sleep "${_reap_tick}"
+        _now="$(date +%s)"
+        _reaped=0
+        docker ps -a --filter "name=^/openclaw-sbx-" --format '{{.ID}} {{.Names}}' 2>/dev/null \
+          | while read -r _cid _cname; do
+            [ -z "${_cid:-}" ] && continue
+            _created="$(docker inspect --format '{{.Created}}' "${_cid}" 2>/dev/null || true)"
+            [ -z "${_created}" ] && continue
+            _created_epoch="$(date -d "${_created}" +%s 2>/dev/null || date -j -f '%Y-%m-%dT%H:%M:%S' "${_created%%.*}" +%s 2>/dev/null || echo 0)"
+            [ "${_created_epoch}" -eq 0 ] && continue
+            _age=$(( _now - _created_epoch ))
+            [ "${_age}" -lt "${_reap_ttl}" ] && continue
+            _proc_lines="$(docker top "${_cid}" 2>/dev/null | tail -n +2 | wc -l | tr -d ' ')"
+            if [ -n "${_proc_lines}" ] && [ "${_proc_lines}" -le 2 ]; then
+                docker rm -f "${_cid}" >/dev/null 2>&1 \
+                  && echo "[sandbox-reaper] removed ${_cname} (idle $(( _age / 3600 ))h)" \
+                  || echo "[sandbox-reaper] WARN: failed to remove ${_cname}"
+            fi
+        done
+    done
+) &
+echo "[startup] openclaw sandbox reaper launched (pid=$!)"
+fi
+
+# ---------------------------------------------------------------------------
 # Read the last non-empty line from a secret file.
 # Handles garbled multi-line blobs (label + asterisks + real value) written to
 # the secret backend before the 017e7bd write-path fix. For clean single-line
