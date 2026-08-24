@@ -64,7 +64,7 @@ declared `tz`, independent of container/host timezone).
 | AI Security Standards Watch | Mon `0 7 * * 1` | agentTurn | telegram | — | `lightContext: true` |
 | Collaborator Report - Morning | `30 7 * * *` | agentTurn | telegram | 1800s | Branded HTML report; see incident history below |
 | Agentic AI Threat Intelligence | Thu `40 7 * * 4` | agentTurn | telegram | — | |
-| AgentShroud Daily Check-in | `0 14 * * *` | command | telegram | — | SSH status checks (marvin + pi), deterministic |
+| AgentShroud Daily Check-in | `0 14 * * *` | command | telegram | — | **Disabled 2026-08-24** — see note below |
 | Collaborator Report - Evening | `45 15 * * *` | agentTurn | telegram | 1800s | Same template as Morning |
 | Collaborator Daily Digest | `0 18 * * *` | agentTurn | telegram | 1800s | |
 | AgentShroud Weekly Summary | Fri `0 19 * * 5` | agentTurn | telegram | 1800s | |
@@ -113,4 +113,19 @@ reflects live production as of 2026-08-24.
   reliably. Bumped both Collaborator Report jobs to 1800s to match.
 - **11 abandoned `openclaw-sbx-*` sandbox containers found and removed** —
   root cause fixed durably in `docker/scripts/start-agentshroud.sh` (a
-  30-min reaper loop); see that file's `sandbox-reaper` block.
+  30-min reaper loop); see that file's `sandbox-reaper` block. Extended the
+  same reaper to also cover Hermes's own `hermes-<hex>` sandboxes
+  (nikolaik/python-nodejs image) and GitHub MCP server sidecars
+  (ghcr.io/github/github-mcp-server image) — both were found 11-21h old
+  with nothing ever reaping them either, same abandonment class.
+- **"AgentShroud Daily Check-in" disabled** — this job can only report on
+  `agentshroud-bot`'s (dev's) status: `agentshroud-ssh-exec.sh` is
+  bot-identity-locked to dev's checkout on marvin, so prod's own copy of
+  this job was never able to check prod's own state, only dev's. Sent
+  dev's stack/container status to the owner via prod's Telegram channel
+  daily, which read as "prod reporting on the wrong thing." Now that dev
+  is manual-only (see `project_lab_host_roles` memory), this job has no
+  remaining purpose — disabled both live instances on prod and the
+  `enabled: false` static seed in `docker/config/openclaw/cron/jobs.json`
+  / `docker/bots/openclaw/config/cron/jobs.json` so a fresh install
+  doesn't resurrect it.
