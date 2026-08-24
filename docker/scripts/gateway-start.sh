@@ -90,4 +90,44 @@ if [ -x /usr/local/bin/security-scheduler.sh ]; then
     echo "[gateway-start] security-scheduler launched (pid=$!)"
 fi
 
+# Healthchecks.io dead-man's-switch heartbeat — pings gateway_healthchecks_url
+# every 60s once /status responds locally. Added 2026-08-24: this container's
+# actual entrypoint is this script, NOT docker/scripts/start-agentshroud.sh
+# (that file is staged into the image at /app/docker/scripts/ but never
+# invoked here) -- an earlier fix added the equivalent heartbeat to
+# start-agentshroud.sh believing gateway shared it with OpenClaw, which
+# would have left the "AgentShroud" Healthchecks.io check permanently dead
+# despite the secret being correctly wired in docker-compose.yml. OpenClaw
+# genuinely does use start-agentshroud.sh (confirmed via its own logs), so
+# only gateway needed this duplicated here.
+if [ -f "/run/secrets/gateway_healthchecks_url" ] && [ -s "/run/secrets/gateway_healthchecks_url" ]; then
+    export AGENTSHROUD_HEALTHCHECKS_URL="$(awk 'NF {last=$0} END {printf "%s", last}' /run/secrets/gateway_healthchecks_url)"
+fi
+(
+    set +e +o pipefail
+    _tick=60
+    _last_disabled_log=0
+    while true; do
+        _url="${AGENTSHROUD_HEALTHCHECKS_URL:-}"
+        if [ -z "${_url}" ]; then
+            _now="$(date +%s)"
+            if [ "$(( _now - _last_disabled_log ))" -ge 3600 ]; then
+                echo "[gateway-start] [heartbeat] disabled: AGENTSHROUD_HEALTHCHECKS_URL not set"
+                _last_disabled_log="${_now}"
+            fi
+            sleep "${_tick}"
+            continue
+        fi
+        if curl -fsS --max-time 5 -o /dev/null "http://127.0.0.1:8080/status" 2>/dev/null; then
+            curl -fsS --max-time 10 "${_url}" -o /dev/null 2>/dev/null \
+                && echo "[gateway-start] [heartbeat] Pinged Healthchecks.io OK" \
+                || echo "[gateway-start] [heartbeat] WARN: Healthchecks.io ping failed (will retry in ${_tick}s)"
+        else
+            echo "[gateway-start] [heartbeat] Health gate not ready — skipping ping"
+        fi
+        sleep "${_tick}"
+    done
+) &
+echo "[gateway-start] healthcheck heartbeat launched (pid=$!)"
+
 exec uvicorn gateway.ingest_api.main:app --host 0.0.0.0 --port 8080 --no-access-log
