@@ -73,11 +73,22 @@ def run_trivy_scan(
         return {"error": "binary_not_found", "raw_output": ""}
 
     if result.returncode not in (0, 1):
-        # returncode 1 = vulns found (expected)
-        logger.warning("Trivy exited with code %d: %s", result.returncode, result.stderr[:500])
+        # returncode 1 = vulns found (expected); anything else means trivy
+        # itself failed (db error, killed, etc.) -- must not be parsed as a
+        # successful scan.
+        logger.error("Trivy exited with code %d: %s", result.returncode, result.stderr[:500])
+        return {"error": f"trivy_exit_{result.returncode}", "raw_output": result.stdout[:2000]}
+
+    if not result.stdout.strip():
+        # A real trivy JSON scan -- even one with zero findings -- always
+        # emits a schema-wrapped result, never a byte-empty stream. Empty
+        # stdout means the scan failed to produce output and must never be
+        # silently coerced into "0 vulnerabilities found" (fake-green).
+        logger.error("Trivy produced empty stdout (scan likely failed)")
+        return {"error": "empty_output", "raw_output": ""}
 
     try:
-        raw = json.loads(result.stdout) if result.stdout.strip() else {}
+        raw = json.loads(result.stdout)
     except json.JSONDecodeError:
         logger.error("Failed to parse Trivy JSON output")
         return {"error": "parse_error", "raw_output": result.stdout[:2000]}
