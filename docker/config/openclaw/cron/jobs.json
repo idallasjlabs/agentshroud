@@ -5,7 +5,7 @@
       "id": "a16ccca0-e953-48f3-9ebe-430e1085dea3",
       "agentId": "main",
       "name": "AgentShroud Daily Check-in",
-      "enabled": true,
+      "enabled": false,
       "notify": true,
       "createdAtMs": 1771284219648,
       "updatedAtMs": 1771777048160,

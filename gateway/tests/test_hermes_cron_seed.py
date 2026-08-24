@@ -169,9 +169,12 @@ def test_content_generating_jobs_pinned_to_evidence_backed_model():
     calls = _parse_seed_cron_calls_from_sh()
     for name in _PINNED_JOB_NAMES:
         assert name in calls, f"{name} not found in init-config.sh"
-        assert '"gemma-4-26b-a4b-it" "ollama"' in calls[name], (
-            f"{name} must be pinned to gemma-4-26b-a4b-it/ollama — see the "
-            "evidence in the comment above _seed_cron() in init-config.sh"
+        assert '"gemma-4-26b-a4b-it" "custom"' in calls[name], (
+            f"{name} must be pinned to gemma-4-26b-a4b-it/custom — see the "
+            "evidence in the comment above _seed_cron() in init-config.sh. "
+            "Provider is 'custom', not 'ollama': confirmed via `hermes doctor` "
+            "2026-08-24 that 'ollama' was never a valid provider name in this "
+            "Hermes version (0.20.1) -- every job using it was silently broken."
         )
 
 
@@ -193,5 +196,5 @@ def test_seed_cron_supports_optional_model_and_provider_args():
         '_model="${5:-}" _provider="${6:-}"' in sh_text
     ), "_seed_cron must accept optional 5th (model) / 6th (provider) positional args"
     assert (
-        '--model "$_model"' in sh_text and '--provider "${_provider:-ollama}"' in sh_text
+        '--model "$_model"' in sh_text and '--provider "${_provider:-custom}"' in sh_text
     ), "_seed_cron must forward --model/--provider to `hermes cron create` when set"

@@ -90,6 +90,20 @@ echo "[startup] healthcheck heartbeat launched (pid=$!)"
 # CLI (agents.defaults.sandbox.backend=docker requires it — see this repo's
 # docker/bots/openclaw/Dockerfile); gateway shares this script but has no
 # `docker` binary, so this block is a natural no-op there.
+# Since this reaper already needs full-host Docker access, it also covers
+# two sibling abandonment classes discovered 2026-08-24 alongside it:
+#   - Hermes's own per-task code-execution sandboxes (nikolaik/python-nodejs
+#     image, named hermes-<hex>, same "sleep infinity" warm-cache pattern as
+#     OpenClaw's — found 21h+ old with nothing ever reaping them).
+#   - GitHub MCP server sidecars (ghcr.io/github/github-mcp-server image,
+#     Docker-random names since nothing names them explicitly) spawned per
+#     agent session and never stopped when the session ends. These have
+#     AutoRemove=true set at creation, so a plain `docker stop` (not `rm -f`)
+#     is enough — Docker removes the container itself once it exits. Unlike
+#     the two sandbox classes, an MCP server has no idle-vs-busy signal (it's
+#     a single long-lived stdio process regardless of use), so this pass is
+#     age-only with a longer, more conservative TTL to reduce the chance of
+#     stopping a session that's still genuinely active.
 if command -v docker >/dev/null 2>&1 && [ -n "${DOCKER_HOST:-}" ]; then
 (
     # Background loop — never let one failed `docker` call (a container
@@ -99,18 +113,24 @@ if command -v docker >/dev/null 2>&1 && [ -n "${DOCKER_HOST:-}" ]; then
     set +e +o pipefail
     _reap_tick=1800   # 30 min
     _reap_ttl=21600   # 6h — well past any single cron run or active chat turn
-    while true; do
-        sleep "${_reap_tick}"
-        _now="$(date +%s)"
-        _reaped=0
-        docker ps -a --filter "name=^/openclaw-sbx-" --format '{{.ID}} {{.Names}}' 2>/dev/null \
+    _mcp_reap_ttl=43200   # 12h — no idle signal available, stay conservative
+
+    _container_age_seconds() {
+        # $1 = container id; prints age in seconds, or empty on failure.
+        local _created _epoch
+        _created="$(docker inspect --format '{{.Created}}' "$1" 2>/dev/null || true)"
+        [ -z "${_created}" ] && return 1
+        _epoch="$(date -d "${_created}" +%s 2>/dev/null || date -j -f '%Y-%m-%dT%H:%M:%S' "${_created%%.*}" +%s 2>/dev/null || echo 0)"
+        [ "${_epoch}" -eq 0 ] && return 1
+        echo $(( $(date +%s) - _epoch ))
+    }
+
+    _reap_idle_sandboxes() {
+        # $1 = docker ps --filter args (as a single string, name-filter only)
+        docker ps -a --filter "$1" --format '{{.ID}} {{.Names}}' 2>/dev/null \
           | while read -r _cid _cname; do
             [ -z "${_cid:-}" ] && continue
-            _created="$(docker inspect --format '{{.Created}}' "${_cid}" 2>/dev/null || true)"
-            [ -z "${_created}" ] && continue
-            _created_epoch="$(date -d "${_created}" +%s 2>/dev/null || date -j -f '%Y-%m-%dT%H:%M:%S' "${_created%%.*}" +%s 2>/dev/null || echo 0)"
-            [ "${_created_epoch}" -eq 0 ] && continue
-            _age=$(( _now - _created_epoch ))
+            _age="$(_container_age_seconds "${_cid}")" || continue
             [ "${_age}" -lt "${_reap_ttl}" ] && continue
             _proc_lines="$(docker top "${_cid}" 2>/dev/null | tail -n +2 | wc -l | tr -d ' ')"
             if [ -n "${_proc_lines}" ] && [ "${_proc_lines}" -le 2 ]; then
@@ -119,9 +139,25 @@ if command -v docker >/dev/null 2>&1 && [ -n "${DOCKER_HOST:-}" ]; then
                   || echo "[sandbox-reaper] WARN: failed to remove ${_cname}"
             fi
         done
+    }
+
+    while true; do
+        sleep "${_reap_tick}"
+        _reap_idle_sandboxes "name=^/openclaw-sbx-"
+        _reap_idle_sandboxes "name=^/hermes-"
+
+        docker ps -a --filter "ancestor=ghcr.io/github/github-mcp-server:latest" --format '{{.ID}} {{.Names}}' 2>/dev/null \
+          | while read -r _cid _cname; do
+            [ -z "${_cid:-}" ] && continue
+            _age="$(_container_age_seconds "${_cid}")" || continue
+            [ "${_age}" -lt "${_mcp_reap_ttl}" ] && continue
+            docker stop "${_cid}" >/dev/null 2>&1 \
+              && echo "[sandbox-reaper] stopped ${_cname} (idle $(( _age / 3600 ))h, AutoRemove will clean up)" \
+              || echo "[sandbox-reaper] WARN: failed to stop ${_cname}"
+        done
     done
 ) &
-echo "[startup] openclaw sandbox reaper launched (pid=$!)"
+echo "[startup] sandbox reaper launched (pid=$!)"
 fi
 
 # ---------------------------------------------------------------------------

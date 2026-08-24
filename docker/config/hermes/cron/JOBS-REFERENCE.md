@@ -19,13 +19,25 @@ docker exec -i agentshroud-hermes-v2 sh -c 'cat > /tmp/p.txt' < docker/config/he
 docker exec agentshroud-hermes-v2 sh -c 'hermes cron create "<schedule>" "$(cat /tmp/p.txt)" --name "<name>" --deliver <deliver>'
 
 # 3. If the job needs a model pin (see table below), edit it in after creation
-docker exec agentshroud-hermes-v2 hermes cron edit <new-job-id> --model gemma-4-26b-a4b-it --provider ollama
+docker exec agentshroud-hermes-v2 hermes cron edit <new-job-id> --model gemma-4-26b-a4b-it --provider custom
 ```
 
 **Do not `docker cp` the prompt file** — this repo's Hermes/OpenClaw containers
 run with a read-only rootfs; `docker cp` fails there (a real incident on
 2026-08-24 wiped 6 job prompts to empty this way). Always pipe via stdin
 (`docker exec -i ... sh -c 'cat > file' < local_file`) as shown above.
+
+**Provider must be `custom`, never `ollama` or `openai-local`.** Confirmed
+via `hermes doctor` 2026-08-24: neither `ollama` nor `openai-local` is a
+valid provider name in this Hermes version (0.20.1) — every job using either
+one fails immediately with `RuntimeError: No LLM provider configured`
+(or, once the global `model.provider` default happens to be valid,
+`HTTP 401: Missing Authentication header`, since the top-level `model:`
+block in `config.yaml` also needs an explicit `api_key: ''` field — without
+it Hermes routes to a stale OpenRouter-pointed fallback instead of the
+local gateway). `custom` + `base_url: http://gateway:8080/v1` is the
+correct, working combination — matches every per-task model slot already
+configured that way under `config.yaml`'s `auxiliary:` section.
 
 ## Job index
 
