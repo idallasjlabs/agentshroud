@@ -62,10 +62,10 @@ declared `tz`, independent of container/host timezone).
 | CVE Triage: fetch and diff advisories | `25 6 * * *` | command | none | — | Runs `.cve_prefetch.py`, writes `.new-cves.json` |
 | Daily CVE Triage & Remediation Scan | `30 6 * * *` | agentTurn | telegram | 900s | Reads `.new-cves.json` only — see "Known drift" |
 | AI Security Standards Watch | Mon `0 7 * * 1` | agentTurn | telegram | — | `lightContext: true` |
-| Collaborator Report - Morning | `30 7 * * *` | agentTurn | telegram | 900s | Branded HTML report; see `#80` history below |
+| Collaborator Report - Morning | `30 7 * * *` | agentTurn | telegram | 1800s | Branded HTML report; see incident history below |
 | Agentic AI Threat Intelligence | Thu `40 7 * * 4` | agentTurn | telegram | — | |
 | AgentShroud Daily Check-in | `0 14 * * *` | command | telegram | — | SSH status checks (marvin + pi), deterministic |
-| Collaborator Report - Evening | `45 15 * * *` | agentTurn | telegram | 900s | Same template as Morning |
+| Collaborator Report - Evening | `45 15 * * *` | agentTurn | telegram | 1800s | Same template as Morning |
 | Collaborator Daily Digest | `0 18 * * *` | agentTurn | telegram | 1800s | |
 | AgentShroud Weekly Summary | Fri `0 19 * * 5` | agentTurn | telegram | 1800s | |
 | Daily Memory Journal | `55 23 * * *` | agentTurn | telegram | 900s | Prompt says "silent" but delivery mode is still `announce` — minor prompt/config mismatch, not yet fixed |
@@ -96,18 +96,21 @@ reflects live production as of 2026-08-24.
   Someone had already redesigned this into the 3-job pipeline before this
   investigation — the reporting job no longer writes anything, eliminating
   the failure mode. 2 verified successful pipeline runs same night.
-- **Collaborator Report jobs (Morning/Evening) — model config confirmed
-  correct, live re-verification inconclusive:** default model is already
-  `gemma-4-26b-a4b-it` (the evidence-backed choice). 3 manual re-run attempts
-  the same night hit real but unrelated failures: one `isolated agent setup
-  timed out` (host was under genuine unrelated load — a separate
-  `TurboFieldfareServer` process at 110% CPU, plus Siri AI and a Time
-  Machine backup running concurrently — load average 14+ on the host at the
-  time) and two `CronSessionLifecycleClaimError: Session ... changed while
-  starting work. Retry.` (a session lock that did not clear within the test
-  window, possibly linked to an earlier `cron: job interrupted by gateway
-  restart` entry from the same session key). Recommend re-checking after the
-  next natural scheduled run rather than treating this as resolved.
+- **Collaborator Report jobs (Morning/Evening) — two real bugs found and
+  fixed, both root-caused, not worked around.** (1)
+  `CronSessionLifecycleClaimError: Session ... changed while starting work.
+  Retry.` — OpenClaw's isolated cron sessions keep a claim lease in
+  `agents/<id>/sessions/sessions.json`; when a run's setup fails/times out
+  before producing a transcript file, the entry is left behind forever with
+  no vendor-side reaper. A live audit found 15 of 19 stored session entries
+  system-wide were stale this way, not unique to this job. Fixed via
+  `openclaw sessions cleanup --fix-missing`, now run automatically every 30
+  min (`docker/scripts/start-agentshroud.sh`, `session-cleanup` block). (2)
+  Once the claim error stopped recurring, a real run still hit its
+  `timeoutSeconds: 900` budget at 868s and got aborted — the sibling
+  "Collaborator Daily Digest" job does near-identical work (same templates,
+  same contributor-log read) at `timeoutSeconds: 1800` and succeeds
+  reliably. Bumped both Collaborator Report jobs to 1800s to match.
 - **11 abandoned `openclaw-sbx-*` sandbox containers found and removed** —
   root cause fixed durably in `docker/scripts/start-agentshroud.sh` (a
   30-min reaper loop); see that file's `sandbox-reaper` block.
