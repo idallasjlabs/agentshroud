@@ -28,6 +28,55 @@ if [ -x /var/ossec/bin/wazuh-agentd ]; then
     echo "[startup] wazuh-agentd launched (pid=$!)"
 fi
 
+# AGENTSHROUD_HEALTHCHECKS_URL — per-service Docker secret (gateway_healthchecks_url
+# / openclaw_healthchecks_url). Only one of the two files will exist in a given
+# container. Inlined (not _read_secret_file, defined later in this script) since
+# this block runs before that function exists.
+_read_hc_secret() { awk 'NF {last=$0} END {printf "%s", last}' "$1"; }
+if [ -f "/run/secrets/gateway_healthchecks_url" ] && [ -s "/run/secrets/gateway_healthchecks_url" ]; then
+    export AGENTSHROUD_HEALTHCHECKS_URL="$(_read_hc_secret /run/secrets/gateway_healthchecks_url)"
+elif [ -f "/run/secrets/openclaw_healthchecks_url" ] && [ -s "/run/secrets/openclaw_healthchecks_url" ]; then
+    export AGENTSHROUD_HEALTHCHECKS_URL="$(_read_hc_secret /run/secrets/openclaw_healthchecks_url)"
+fi
+
+# Healthchecks.io dead-man's-switch heartbeat — shared between gateway and
+# OpenClaw (both run this same script). Pings AGENTSHROUD_HEALTHCHECKS_URL
+# every 60s once the container's own health endpoint responds. Tries both
+# known endpoints since only one is ever live in a given container:
+#   gateway:  127.0.0.1:8080/status
+#   openclaw: 127.0.0.1:18789/
+# Added 2026-08-24 — Hermes has had this since Healthchecks.io was set up;
+# gateway/OpenClaw never did, so a real outage on either was silent.
+# No-op (once-per-hour log line) if AGENTSHROUD_HEALTHCHECKS_URL is unset.
+(
+    _tick=60
+    _last_disabled_log=0
+    while true; do
+        _url="${AGENTSHROUD_HEALTHCHECKS_URL:-}"
+        if [ -z "${_url}" ]; then
+            _now="$(date +%s)"
+            if [ "$(( _now - _last_disabled_log ))" -ge 3600 ]; then
+                echo "[heartbeat] disabled: AGENTSHROUD_HEALTHCHECKS_URL not set"
+                _last_disabled_log="${_now}"
+            fi
+            sleep "${_tick}"
+            continue
+        fi
+        _api_ok=0
+        curl -fsS --max-time 5 -o /dev/null "http://127.0.0.1:8080/status" 2>/dev/null && _api_ok=1
+        [ "${_api_ok}" -eq 0 ] && curl -fsS --max-time 5 -o /dev/null "http://127.0.0.1:18789/" 2>/dev/null && _api_ok=1
+        if [ "${_api_ok}" -eq 1 ]; then
+            curl -fsS --max-time 10 "${_url}" -o /dev/null 2>/dev/null \
+                && echo "[heartbeat] Pinged Healthchecks.io OK" \
+                || echo "[heartbeat] WARN: Healthchecks.io ping failed (will retry in ${_tick}s)"
+        else
+            echo "[heartbeat] Health gate not ready — skipping ping"
+        fi
+        sleep "${_tick}"
+    done
+) &
+echo "[startup] healthcheck heartbeat launched (pid=$!)"
+
 # ---------------------------------------------------------------------------
 # Read the last non-empty line from a secret file.
 # Handles garbled multi-line blobs (label + asterisks + real value) written to

@@ -131,6 +131,25 @@ else
     fi
 fi
 
+# Runtime facts (AGENTSHROUD_VERSION etc.) — separate from SOUL.md's sync-stamped
+# persona content so this always reflects the CURRENT boot, not the last time the
+# persona changed. Fixes a real 2026-08-24 incident: run-standalone.sh never passed
+# AGENTSHROUD_VERSION into the container at all, so when asked its own version
+# Hermes had zero real data and hallucinated "1.0.0" — same failure class as the
+# 2026-08-08 voice_gateway regression, just never fixed here. Runs on every boot
+# (cheap, always accurate) rather than being stamp-gated like SOUL.md itself.
+_RUNTIME_FACTS_DEST="${DATA_DIR}/AGENTS.md"
+_runtime_facts_line="AgentShroud version: v${AGENTSHROUD_VERSION:-unknown} (from AGENTSHROUD_VERSION env var, set at container start — never guess this)."
+if [ -f "${_RUNTIME_FACTS_DEST}" ] && grep -q "^AgentShroud version:" "${_RUNTIME_FACTS_DEST}" 2>/dev/null; then
+    _tmp_facts="${DATA_DIR}/.AGENTS.md.tmp.$$"
+    sed "s|^AgentShroud version:.*|${_runtime_facts_line}|" "${_RUNTIME_FACTS_DEST}" > "${_tmp_facts}" 2>/dev/null \
+      && mv -f "${_tmp_facts}" "${_RUNTIME_FACTS_DEST}" 2>/dev/null \
+      || rm -f "${_tmp_facts}" 2>/dev/null
+else
+    printf '%s\n' "${_runtime_facts_line}" >> "${_RUNTIME_FACTS_DEST}" 2>/dev/null
+fi
+echo "[hermes-init] Runtime facts: AgentShroud v${AGENTSHROUD_VERSION:-unknown}"
+
 # Skills — install synced skills into Hermes' skill directory (/opt/data/skills/).
 # Source of truth: ~/.llm_settings/skills/ → baked to ${DEFAULTS_DIR}/skills/ by
 # sync-llm-settings.sh. Hermes reads skill artefacts from /opt/data/skills/ (see the
