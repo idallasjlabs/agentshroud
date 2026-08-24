@@ -33,6 +33,22 @@ REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
 
 PROJECT="${AGENTSHROUD_PROJECT:-agentshroud}"
 VERSION="${AGENTSHROUD_VERSION:-latest}"
+
+# AGENTSHROUD_ENV — auto-detected from the invoking macOS account, since dev
+# and prod containers were otherwise indistinguishable from the inside (same
+# AGENTSHROUD_BOT_ID, same container name). Found 2026-08-24: dev's
+# init-config.sh unconditionally re-seeds the same 9 cron jobs prod runs, on
+# the same schedule — every rebuild silently re-enabled a full duplicate
+# schedule hitting the same shared local model backends. agentshroud-bot's
+# own checkout runs this same script under its own account; prod runs under
+# ijefferson.admin. Override with AGENTSHROUD_ENV=dev|prod if this host/
+# account naming convention ever changes.
+if [ -z "${AGENTSHROUD_ENV:-}" ]; then
+  case "$(whoami 2>/dev/null)" in
+    agentshroud-bot) AGENTSHROUD_ENV="dev" ;;
+    *) AGENTSHROUD_ENV="prod" ;;
+  esac
+fi
 IMAGE="agentshroud/hermes:${VERSION}"
 
 CONTAINER="agentshroud-hermes-v2"
@@ -162,6 +178,7 @@ cmd_up() {
     -e HERMES_DASHBOARD_BRIDGE_PORT="9120" \
     -e AGENTSHROUD_BOT_ID="hermes" \
     -e AGENTSHROUD_VERSION="${VERSION}" \
+    -e AGENTSHROUD_ENV="${AGENTSHROUD_ENV}" \
     -e SEARXNG_URL="${SEARXNG_URL:-http://searxng-local:8080}" \
     -e API_SERVER_ENABLED="1" \
     -e API_SERVER_HOST="0.0.0.0" \

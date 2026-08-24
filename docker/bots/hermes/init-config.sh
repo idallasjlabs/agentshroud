@@ -275,6 +275,23 @@ _seed_cron() {
           && echo "[hermes-init] Seeded: $_name" \
           || echo "[hermes-init] WARN: seed failed: $_name"
     fi
+    # AGENTSHROUD_ENV=dev (set by run-standalone.sh, auto-detected from the
+    # invoking macOS account) means this is agentshroud-bot's dev checkout,
+    # NOT prod — dev and prod run this same seeding logic on every rebuild,
+    # so without this every rebuild silently re-armed a full duplicate
+    # schedule hitting the same shared local model backends prod already
+    # hits. Seed normally (keeps dev manually-testable via `hermes cron run
+    # <id>`), then immediately pause so it never fires on its own schedule.
+    if [ "${AGENTSHROUD_ENV:-prod}" = "dev" ]; then
+        hermes cron list 2>/dev/null \
+          | awk -v name="$_name" '
+                /^  [a-f0-9]{12} \[/ { id = $1; next }
+                index($0, "Name:") && index($0, name) { print id }
+              ' \
+          | xargs -r -n1 hermes cron pause >/dev/null 2>&1 \
+          && echo "[hermes-init] Paused (dev): $_name" \
+          || echo "[hermes-init] WARN: dev-pause failed: $_name"
+    fi
 }
 
 echo "[hermes-init] Seeding native cron jobs (idempotent)..."
