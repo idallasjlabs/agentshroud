@@ -141,10 +141,36 @@ if command -v docker >/dev/null 2>&1 && [ -n "${DOCKER_HOST:-}" ]; then
         done
     }
 
+    # Rename pass — separate from reaping. Neither Hermes's own sandbox code
+    # nor OpenClaw's MCP-server spawning exposes any container-naming config
+    # (checked openclaw.json 2026-08-24, no docker/name/prefix keys under any
+    # mcp/sandbox section), so containers land with Docker's random
+    # adjective_scientist names (github-mcp-server sidecars) or a bare
+    # hermes-<hex> that's easy to mistake for the main agentshroud-hermes-v2
+    # container. `docker rename` doesn't touch the running process — safe to
+    # run on an active container. Runs once immediately (covers whatever
+    # already exists) and every tick after (covers newly-spawned ones); the
+    # name-prefix check makes repeat runs a no-op for already-renamed ones.
+    _rename_to_meaningful() {
+        # $1 = docker ps --filter args, $2 = desired name prefix
+        docker ps -a --filter "$1" --format '{{.ID}} {{.Names}}' 2>/dev/null \
+          | while read -r _cid _cname; do
+            [ -z "${_cid:-}" ] && continue
+            case "${_cname}" in
+                "$2"-*) continue ;;   # already renamed
+            esac
+            docker rename "${_cid}" "$2-${_cid}" >/dev/null 2>&1 \
+              && echo "[sandbox-reaper] renamed ${_cname} -> $2-${_cid}" \
+              || echo "[sandbox-reaper] WARN: failed to rename ${_cname}"
+        done
+    }
+    _rename_to_meaningful "ancestor=ghcr.io/github/github-mcp-server:latest" "openclaw-mcp-github"
+    _rename_to_meaningful "name=^/hermes-" "hermes-sandbox"
+
     while true; do
         sleep "${_reap_tick}"
         _reap_idle_sandboxes "name=^/openclaw-sbx-"
-        _reap_idle_sandboxes "name=^/hermes-"
+        _reap_idle_sandboxes "name=^/hermes-sandbox-"
 
         docker ps -a --filter "ancestor=ghcr.io/github/github-mcp-server:latest" --format '{{.ID}} {{.Names}}' 2>/dev/null \
           | while read -r _cid _cname; do
@@ -155,6 +181,9 @@ if command -v docker >/dev/null 2>&1 && [ -n "${DOCKER_HOST:-}" ]; then
               && echo "[sandbox-reaper] stopped ${_cname} (idle $(( _age / 3600 ))h, AutoRemove will clean up)" \
               || echo "[sandbox-reaper] WARN: failed to stop ${_cname}"
         done
+
+        _rename_to_meaningful "ancestor=ghcr.io/github/github-mcp-server:latest" "openclaw-mcp-github"
+        _rename_to_meaningful "name=^/hermes-" "hermes-sandbox"
     done
 ) &
 echo "[startup] sandbox reaper launched (pid=$!)"
