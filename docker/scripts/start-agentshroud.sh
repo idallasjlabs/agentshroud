@@ -28,25 +28,22 @@ if [ -x /var/ossec/bin/wazuh-agentd ]; then
     echo "[startup] wazuh-agentd launched (pid=$!)"
 fi
 
-# AGENTSHROUD_HEALTHCHECKS_URL — per-service Docker secret (gateway_healthchecks_url
-# / openclaw_healthchecks_url). Only one of the two files will exist in a given
-# container. Inlined (not _read_secret_file, defined later in this script) since
-# this block runs before that function exists.
+# AGENTSHROUD_HEALTHCHECKS_URL — openclaw_healthchecks_url Docker secret.
+# This script is OpenClaw's actual container entrypoint (confirmed via its
+# own boot logs). Gateway's real entrypoint is docker/scripts/gateway-start.sh
+# — it never runs this file (it's staged into the gateway image but unused
+# there), so it has its own copy of this same heartbeat block reading
+# gateway_healthchecks_url instead. Inlined (not _read_secret_file, defined
+# later in this script) since this block runs before that function exists.
 _read_hc_secret() { awk 'NF {last=$0} END {printf "%s", last}' "$1"; }
-if [ -f "/run/secrets/gateway_healthchecks_url" ] && [ -s "/run/secrets/gateway_healthchecks_url" ]; then
-    export AGENTSHROUD_HEALTHCHECKS_URL="$(_read_hc_secret /run/secrets/gateway_healthchecks_url)"
-elif [ -f "/run/secrets/openclaw_healthchecks_url" ] && [ -s "/run/secrets/openclaw_healthchecks_url" ]; then
+if [ -f "/run/secrets/openclaw_healthchecks_url" ] && [ -s "/run/secrets/openclaw_healthchecks_url" ]; then
     export AGENTSHROUD_HEALTHCHECKS_URL="$(_read_hc_secret /run/secrets/openclaw_healthchecks_url)"
 fi
 
-# Healthchecks.io dead-man's-switch heartbeat — shared between gateway and
-# OpenClaw (both run this same script). Pings AGENTSHROUD_HEALTHCHECKS_URL
-# every 60s once the container's own health endpoint responds. Tries both
-# known endpoints since only one is ever live in a given container:
-#   gateway:  127.0.0.1:8080/status
-#   openclaw: 127.0.0.1:18789/
+# Healthchecks.io dead-man's-switch heartbeat. Pings AGENTSHROUD_HEALTHCHECKS_URL
+# every 60s once OpenClaw's own health endpoint (127.0.0.1:18789/) responds.
 # Added 2026-08-24 — Hermes has had this since Healthchecks.io was set up;
-# gateway/OpenClaw never did, so a real outage on either was silent.
+# OpenClaw never did, so a real outage was silent.
 # No-op (once-per-hour log line) if AGENTSHROUD_HEALTHCHECKS_URL is unset.
 (
     _tick=60
@@ -62,10 +59,7 @@ fi
             sleep "${_tick}"
             continue
         fi
-        _api_ok=0
-        curl -fsS --max-time 5 -o /dev/null "http://127.0.0.1:8080/status" 2>/dev/null && _api_ok=1
-        [ "${_api_ok}" -eq 0 ] && curl -fsS --max-time 5 -o /dev/null "http://127.0.0.1:18789/" 2>/dev/null && _api_ok=1
-        if [ "${_api_ok}" -eq 1 ]; then
+        if curl -fsS --max-time 5 -o /dev/null "http://127.0.0.1:18789/" 2>/dev/null; then
             curl -fsS --max-time 10 "${_url}" -o /dev/null 2>/dev/null \
                 && echo "[heartbeat] Pinged Healthchecks.io OK" \
                 || echo "[heartbeat] WARN: Healthchecks.io ping failed (will retry in ${_tick}s)"
