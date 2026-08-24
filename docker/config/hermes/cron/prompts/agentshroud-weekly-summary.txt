@@ -1,0 +1,1 @@
+Weekly summary from Hermes: key topics this week, skills learned or created, and what to focus on next week. Format concisely, deliver via Telegram. Use *bold* for key terms/numbers and short scannable lines (blank line between sections is fine) — no markdown headers (#) or tables, Telegram does not render them.
