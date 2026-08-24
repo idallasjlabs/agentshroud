@@ -131,6 +131,37 @@ echo "[startup] openclaw sandbox reaper launched (pid=$!)"
 fi
 
 # ---------------------------------------------------------------------------
+# OpenClaw cron session-store cleanup — root cause fix for
+# CronSessionLifecycleClaimError ("Session ... changed while starting
+# work. Retry.")
+# ---------------------------------------------------------------------------
+# Found 2026-08-24 diagnosing a stuck "Collaborator Report - Morning" job:
+# every isolated cron session's claim lease lives in a store file
+# (agents/<id>/sessions/sessions.json) keyed by session ID. When a run's
+# isolated-agent setup fails or times out before it ever produces a
+# transcript file, OpenClaw leaves that claim entry behind -- there is no
+# vendor-side reaper for it, the same gap class as the sandbox containers
+# above. A live audit found 15 of 19 stored session entries system-wide
+# (not just this one job) were stale in exactly this way. `openclaw
+# sessions cleanup --fix-missing` is OpenClaw's own sanctioned maintenance
+# command for this (prunes entries whose transcript file is missing) --
+# confirmed safe and effective live: cleared the stuck entry, the job's
+# next run then claimed a fresh session and completed normally.
+if command -v openclaw >/dev/null 2>&1; then
+(
+    set +e +o pipefail
+    _cleanup_tick=1800   # 30 min -- independent of the sandbox reaper's cadence
+    while true; do
+        sleep "${_cleanup_tick}"
+        _out="$(openclaw sessions cleanup --all-agents --fix-missing --enforce 2>&1)"
+        echo "[session-cleanup] ${_out}" | tr '\n' ' '
+        echo ""
+    done
+) &
+echo "[startup] openclaw session-store cleanup reaper launched (pid=$!)"
+fi
+
+# ---------------------------------------------------------------------------
 # Read the last non-empty line from a secret file.
 # Handles garbled multi-line blobs (label + asterisks + real value) written to
 # the secret backend before the 017e7bd write-path fix. For clean single-line
