@@ -213,6 +213,34 @@ class TestTrivyRun:
         assert result["total_vulnerabilities"] == 5
 
     @patch("gateway.security.trivy_report.subprocess.run")
+    def test_run_empty_stdout_is_error_not_clean(self, mock_run):
+        """A 0-byte/empty stdout means the scan failed to produce output --
+        it must never be silently treated as '0 vulnerabilities found'
+        (fake-green: see the 2026-08-24 incident where a 0-byte Trivy file
+        was reported to the owner as CLEAN with a 75/100 score contradicting
+        the true underlying scan)."""
+        mock_run.return_value = MagicMock(returncode=0, stdout="", stderr="")
+        result = run_trivy_scan()
+        assert result["error"] == "empty_output"
+        assert generate_summary(result)["status"] == "error"
+
+    @patch("gateway.security.trivy_report.subprocess.run")
+    def test_run_whitespace_only_stdout_is_error(self, mock_run):
+        mock_run.return_value = MagicMock(returncode=0, stdout="   \n", stderr="")
+        result = run_trivy_scan()
+        assert result["error"] == "empty_output"
+
+    @patch("gateway.security.trivy_report.subprocess.run")
+    def test_run_nonzero_exit_code_is_error(self, mock_run):
+        """returncode 0 = clean, 1 = vulns found (both expected); anything
+        else means trivy itself failed and must not be parsed as if it
+        succeeded."""
+        mock_run.return_value = MagicMock(returncode=2, stdout="", stderr="fatal: db error")
+        result = run_trivy_scan()
+        assert result["error"] == "trivy_exit_2"
+        assert generate_summary(result)["status"] == "error"
+
+    @patch("gateway.security.trivy_report.subprocess.run")
     def test_run_image_scan_type(self, mock_run):
         """scan_type='image' is passed correctly to the trivy binary."""
         mock_run.return_value = MagicMock(

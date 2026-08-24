@@ -88,6 +88,7 @@ services:
       - 1password_bot_master_password
       - 1password_bot_secret_key
       - hermes_api_key
+      - gateway_healthchecks_url
     environment:
       - PYTHONUNBUFFERED=1
       - LOG_LEVEL=INFO
@@ -336,6 +337,7 @@ services:
       - 1password_bot_email
       - 1password_bot_master_password
       - 1password_bot_secret_key
+      - openclaw_healthchecks_url
     environment:
       - NODE_ENV=production
       - OPENCLAW_GATEWAY_BIND=${OPENCLAW_GATEWAY_BIND:-lan}
@@ -751,6 +753,10 @@ secrets:
     file: ./secrets/github_pat.txt
   hermes_healthchecks_url:
     file: ./secrets/hermes_healthchecks_url.txt
+  gateway_healthchecks_url:
+    file: ./secrets/gateway_healthchecks_url.txt
+  openclaw_healthchecks_url:
+    file: ./secrets/openclaw_healthchecks_url.txt
 
 # ── Networks (SCRUM-93 · IEC 62443 FR5 — Restricted Data Flow / network DMZ) ─────
 # THREE-TIER SEGMENTATION:

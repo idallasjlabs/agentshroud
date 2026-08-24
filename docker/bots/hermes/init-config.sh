@@ -131,6 +131,25 @@ else
     fi
 fi
 
+# Runtime facts (AGENTSHROUD_VERSION etc.) — separate from SOUL.md's sync-stamped
+# persona content so this always reflects the CURRENT boot, not the last time the
+# persona changed. Fixes a real 2026-08-24 incident: run-standalone.sh never passed
+# AGENTSHROUD_VERSION into the container at all, so when asked its own version
+# Hermes had zero real data and hallucinated "1.0.0" — same failure class as the
+# 2026-08-08 voice_gateway regression, just never fixed here. Runs on every boot
+# (cheap, always accurate) rather than being stamp-gated like SOUL.md itself.
+_RUNTIME_FACTS_DEST="${DATA_DIR}/AGENTS.md"
+_runtime_facts_line="AgentShroud version: v${AGENTSHROUD_VERSION:-unknown} (from AGENTSHROUD_VERSION env var, set at container start — never guess this)."
+if [ -f "${_RUNTIME_FACTS_DEST}" ] && grep -q "^AgentShroud version:" "${_RUNTIME_FACTS_DEST}" 2>/dev/null; then
+    _tmp_facts="${DATA_DIR}/.AGENTS.md.tmp.$$"
+    sed "s|^AgentShroud version:.*|${_runtime_facts_line}|" "${_RUNTIME_FACTS_DEST}" > "${_tmp_facts}" 2>/dev/null \
+      && mv -f "${_tmp_facts}" "${_RUNTIME_FACTS_DEST}" 2>/dev/null \
+      || rm -f "${_tmp_facts}" 2>/dev/null
+else
+    printf '%s\n' "${_runtime_facts_line}" >> "${_RUNTIME_FACTS_DEST}" 2>/dev/null
+fi
+echo "[hermes-init] Runtime facts: AgentShroud v${AGENTSHROUD_VERSION:-unknown}"
+
 # Skills — install synced skills into Hermes' skill directory (/opt/data/skills/).
 # Source of truth: ~/.llm_settings/skills/ → baked to ${DEFAULTS_DIR}/skills/ by
 # sync-llm-settings.sh. Hermes reads skill artefacts from /opt/data/skills/ (see the
@@ -256,6 +275,9 @@ _seed_cron() {
           && echo "[hermes-init] Seeded: $_name" \
           || echo "[hermes-init] WARN: seed failed: $_name"
     fi
+    # Dev-environment pausing is handled once, comprehensively, at the end
+    # of this script (after ALL jobs exist, not just the ones seeded here) —
+    # see the "Dev environment: pause every Hermes cron job" block below.
 }
 
 echo "[hermes-init] Seeding native cron jobs (idempotent)..."
@@ -600,6 +622,30 @@ PYEOF
     fi
 else
     echo "[hermes-init] No synced mcp/servers.json — run scripts/sync-llm-settings.sh (skipping)"
+fi
+
+# ── Dev environment: pause every Hermes cron job ────────────────────────────
+# Owner directive 2026-08-24: prod always runs its full schedule; dev never
+# should (jobs are run manually there for testing) so the two stacks never
+# double up load on the same shared local-model backends. The earlier
+# per-_seed_cron pause (removed above) only covered the ~9 jobs baked into
+# this script's _seed_cron calls — most of Hermes's real job set (newsletter
+# pipelines, competitive-intel, CVE watch, etc: 27 jobs total as of
+# 2026-08-24) was created live via `hermes cron create`/`edit` outside this
+# script entirely and was never touched by that narrower fix. This blanket
+# pass runs last, after every job that exists on this volume (seeded or
+# live-added) is already in the store, and pauses all of them.
+if [ "${AGENTSHROUD_ENV:-prod}" = "dev" ]; then
+    _all_job_ids="$(hermes cron list --all 2>/dev/null | awk '/^  [a-f0-9]{12} \[/ { print $1 }')"
+    if [ -z "${_all_job_ids}" ]; then
+        echo "[hermes-init] WARN: dev cron pause-all found no jobs to pause"
+    else
+        _paused_count=0
+        for _jid in ${_all_job_ids}; do
+            hermes cron pause "${_jid}" >/dev/null 2>&1 && _paused_count=$(( _paused_count + 1 ))
+        done
+        echo "[hermes-init] Dev environment: paused ${_paused_count} Hermes cron job(s). Run manually to test: hermes cron run <id>"
+    fi
 fi
 
 echo "[hermes-init] Config init complete"

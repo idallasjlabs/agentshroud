@@ -1,0 +1,1 @@
+agentshroud-ssh-exec.sh marvin 'grep -oE "\"ghsa_id\": \"[^\"]*\"" gateway/security/agent_cve_registry.py' "cve triage prefetch" "/Users/agentshroud-bot/Development/agentshroud" > /home/node/.openclaw/workspace/.ghsa-ids-cache.json 2>&1; echo "Prefetched $(wc -l < /home/node/.openclaw/workspace/.ghsa-ids-cache.json) lines"

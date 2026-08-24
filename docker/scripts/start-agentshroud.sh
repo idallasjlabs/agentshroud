@@ -28,6 +28,177 @@ if [ -x /var/ossec/bin/wazuh-agentd ]; then
     echo "[startup] wazuh-agentd launched (pid=$!)"
 fi
 
+# AGENTSHROUD_HEALTHCHECKS_URL — per-service Docker secret (gateway_healthchecks_url
+# / openclaw_healthchecks_url). Only one of the two files will exist in a given
+# container. Inlined (not _read_secret_file, defined later in this script) since
+# this block runs before that function exists.
+_read_hc_secret() { awk 'NF {last=$0} END {printf "%s", last}' "$1"; }
+if [ -f "/run/secrets/gateway_healthchecks_url" ] && [ -s "/run/secrets/gateway_healthchecks_url" ]; then
+    export AGENTSHROUD_HEALTHCHECKS_URL="$(_read_hc_secret /run/secrets/gateway_healthchecks_url)"
+elif [ -f "/run/secrets/openclaw_healthchecks_url" ] && [ -s "/run/secrets/openclaw_healthchecks_url" ]; then
+    export AGENTSHROUD_HEALTHCHECKS_URL="$(_read_hc_secret /run/secrets/openclaw_healthchecks_url)"
+fi
+
+# Healthchecks.io dead-man's-switch heartbeat — shared between gateway and
+# OpenClaw (both run this same script). Pings AGENTSHROUD_HEALTHCHECKS_URL
+# every 60s once the container's own health endpoint responds. Tries both
+# known endpoints since only one is ever live in a given container:
+#   gateway:  127.0.0.1:8080/status
+#   openclaw: 127.0.0.1:18789/
+# Added 2026-08-24 — Hermes has had this since Healthchecks.io was set up;
+# gateway/OpenClaw never did, so a real outage on either was silent.
+# No-op (once-per-hour log line) if AGENTSHROUD_HEALTHCHECKS_URL is unset.
+(
+    _tick=60
+    _last_disabled_log=0
+    while true; do
+        _url="${AGENTSHROUD_HEALTHCHECKS_URL:-}"
+        if [ -z "${_url}" ]; then
+            _now="$(date +%s)"
+            if [ "$(( _now - _last_disabled_log ))" -ge 3600 ]; then
+                echo "[heartbeat] disabled: AGENTSHROUD_HEALTHCHECKS_URL not set"
+                _last_disabled_log="${_now}"
+            fi
+            sleep "${_tick}"
+            continue
+        fi
+        _api_ok=0
+        curl -fsS --max-time 5 -o /dev/null "http://127.0.0.1:8080/status" 2>/dev/null && _api_ok=1
+        [ "${_api_ok}" -eq 0 ] && curl -fsS --max-time 5 -o /dev/null "http://127.0.0.1:18789/" 2>/dev/null && _api_ok=1
+        if [ "${_api_ok}" -eq 1 ]; then
+            curl -fsS --max-time 10 "${_url}" -o /dev/null 2>/dev/null \
+                && echo "[heartbeat] Pinged Healthchecks.io OK" \
+                || echo "[heartbeat] WARN: Healthchecks.io ping failed (will retry in ${_tick}s)"
+        else
+            echo "[heartbeat] Health gate not ready — skipping ping"
+        fi
+        sleep "${_tick}"
+    done
+) &
+echo "[startup] healthcheck heartbeat launched (pid=$!)"
+
+# ---------------------------------------------------------------------------
+# OpenClaw sandbox reaper — root cause fix for "sandbox abandonment"
+# ---------------------------------------------------------------------------
+# OpenClaw's own sandbox backend (agents.defaults.sandbox.scope=session,
+# .openclaw/openclaw.json) starts one persistent `sleep infinity` container
+# per cron job / collaborator chat and re-execs into it on every subsequent
+# run — a deliberate warm-start design. It never stops or removes that
+# container itself; there is no vendor-side TTL, idle timeout, or session-end
+# hook. Found 2026-08-24: 10 `openclaw-sbx-agent-*` containers had
+# accumulated, all `Up`, oldest ~13h with zero exec activity. Manually
+# killing orphans (done earlier) doesn't fix the leak going forward — this
+# does. Each sandbox's /workspace is a bind mount back to this container's
+# own `.openclaw/workspace` (verified via `docker inspect` .Mounts), so
+# removing an idle sandbox container loses no data — only the warm exec
+# cache, rebuilt automatically on the sandbox's next use.
+# Gated on `command -v docker`: only OpenClaw's image installs the Docker
+# CLI (agents.defaults.sandbox.backend=docker requires it — see this repo's
+# docker/bots/openclaw/Dockerfile); gateway shares this script but has no
+# `docker` binary, so this block is a natural no-op there.
+if command -v docker >/dev/null 2>&1 && [ -n "${DOCKER_HOST:-}" ]; then
+(
+    # Background loop — never let one failed `docker` call (a container
+    # removed between listing and inspecting, a transient proxy hiccup)
+    # propagate via the parent script's `set -euo pipefail` and kill this
+    # loop. Every command below is also individually guarded regardless.
+    set +e +o pipefail
+    _reap_tick=1800   # 30 min
+    _reap_ttl=21600   # 6h — well past any single cron run or active chat turn
+    while true; do
+        sleep "${_reap_tick}"
+        _now="$(date +%s)"
+        _reaped=0
+        docker ps -a --filter "name=^/openclaw-sbx-" --format '{{.ID}} {{.Names}}' 2>/dev/null \
+          | while read -r _cid _cname; do
+            [ -z "${_cid:-}" ] && continue
+            _created="$(docker inspect --format '{{.Created}}' "${_cid}" 2>/dev/null || true)"
+            [ -z "${_created}" ] && continue
+            _created_epoch="$(date -d "${_created}" +%s 2>/dev/null || date -j -f '%Y-%m-%dT%H:%M:%S' "${_created%%.*}" +%s 2>/dev/null || echo 0)"
+            [ "${_created_epoch}" -eq 0 ] && continue
+            _age=$(( _now - _created_epoch ))
+            [ "${_age}" -lt "${_reap_ttl}" ] && continue
+            _proc_lines="$(docker top "${_cid}" 2>/dev/null | tail -n +2 | wc -l | tr -d ' ')"
+            if [ -n "${_proc_lines}" ] && [ "${_proc_lines}" -le 2 ]; then
+                docker rm -f "${_cid}" >/dev/null 2>&1 \
+                  && echo "[sandbox-reaper] removed ${_cname} (idle $(( _age / 3600 ))h)" \
+                  || echo "[sandbox-reaper] WARN: failed to remove ${_cname}"
+            fi
+        done
+    done
+) &
+echo "[startup] openclaw sandbox reaper launched (pid=$!)"
+fi
+
+# ---------------------------------------------------------------------------
+# OpenClaw cron session-store cleanup — root cause fix for
+# CronSessionLifecycleClaimError ("Session ... changed while starting
+# work. Retry.")
+# ---------------------------------------------------------------------------
+# Found 2026-08-24 diagnosing a stuck "Collaborator Report - Morning" job:
+# every isolated cron session's claim lease lives in a store file
+# (agents/<id>/sessions/sessions.json) keyed by session ID. When a run's
+# isolated-agent setup fails or times out before it ever produces a
+# transcript file, OpenClaw leaves that claim entry behind -- there is no
+# vendor-side reaper for it, the same gap class as the sandbox containers
+# above. A live audit found 15 of 19 stored session entries system-wide
+# (not just this one job) were stale in exactly this way. `openclaw
+# sessions cleanup --fix-missing` is OpenClaw's own sanctioned maintenance
+# command for this (prunes entries whose transcript file is missing) --
+# confirmed safe and effective live: cleared the stuck entry, the job's
+# next run then claimed a fresh session and completed normally.
+if command -v openclaw >/dev/null 2>&1; then
+(
+    set +e +o pipefail
+    _cleanup_tick=1800   # 30 min -- independent of the sandbox reaper's cadence
+    while true; do
+        sleep "${_cleanup_tick}"
+        _out="$(openclaw sessions cleanup --all-agents --fix-missing --enforce 2>&1)"
+        echo "[session-cleanup] ${_out}" | tr '\n' ' '
+        echo ""
+    done
+) &
+echo "[startup] openclaw session-store cleanup reaper launched (pid=$!)"
+fi
+
+# ---------------------------------------------------------------------------
+# Dev environment: disable every OpenClaw cron job at boot
+# ---------------------------------------------------------------------------
+# Owner directive 2026-08-24: dev and prod are two independent stacks on the
+# same local-model backends -- prod always runs its full cron schedule, dev
+# never should (jobs get run manually there for testing). AGENTSHROUD_PROJECT
+# is already threaded into this container from docker-compose.yml (sourced
+# from scripts/asb's own dev/prod account detection: "agentshroud-bot" on
+# dev, "agentshroud" on prod, defaulting to "agentshroud" if ever unset --
+# same fail-safe direction as the compose default itself). This covers ALL
+# jobs currently in the live cron store, however they were created --
+# static seed, `cron add`, or `cron edit` -- not just the ones baked into
+# docker/config/openclaw/cron/jobs.json.
+if command -v openclaw >/dev/null 2>&1 && [ "${AGENTSHROUD_PROJECT:-agentshroud}" != "agentshroud" ]; then
+(
+    set +e +o pipefail
+    _gw_wait=0
+    while [ "${_gw_wait}" -lt 120 ]; do
+        curl -fsS --max-time 3 -o /dev/null "http://127.0.0.1:18789/" 2>/dev/null && break
+        sleep 5
+        _gw_wait=$(( _gw_wait + 5 ))
+    done
+    _ids="$(openclaw cron list --json --all 2>/dev/null | python3 -c 'import json,sys; d=json.load(sys.stdin); [print(j["id"]) for j in d.get("jobs",[])]' 2>/dev/null)"
+    if [ -z "${_ids}" ]; then
+        echo "[dev-cron-disable] WARN: could not list cron jobs (gateway not ready in time?) -- nothing disabled"
+    else
+        _n=0
+        echo "${_ids}" | while read -r _id; do
+            [ -z "${_id}" ] && continue
+            openclaw cron disable "${_id}" >/dev/null 2>&1
+        done
+        _n="$(echo "${_ids}" | grep -c .)"
+        echo "[dev-cron-disable] disabled ${_n} cron job(s) -- AGENTSHROUD_PROJECT=${AGENTSHROUD_PROJECT:-} is not prod. Run jobs manually to test: openclaw cron run <id>"
+    fi
+) &
+echo "[startup] dev cron auto-disable launched (pid=$!)"
+fi
+
 # ---------------------------------------------------------------------------
 # Read the last non-empty line from a secret file.
 # Handles garbled multi-line blobs (label + asterisks + real value) written to
