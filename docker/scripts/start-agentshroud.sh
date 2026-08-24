@@ -162,6 +162,44 @@ echo "[startup] openclaw session-store cleanup reaper launched (pid=$!)"
 fi
 
 # ---------------------------------------------------------------------------
+# Dev environment: disable every OpenClaw cron job at boot
+# ---------------------------------------------------------------------------
+# Owner directive 2026-08-24: dev and prod are two independent stacks on the
+# same local-model backends -- prod always runs its full cron schedule, dev
+# never should (jobs get run manually there for testing). AGENTSHROUD_PROJECT
+# is already threaded into this container from docker-compose.yml (sourced
+# from scripts/asb's own dev/prod account detection: "agentshroud-bot" on
+# dev, "agentshroud" on prod, defaulting to "agentshroud" if ever unset --
+# same fail-safe direction as the compose default itself). This covers ALL
+# jobs currently in the live cron store, however they were created --
+# static seed, `cron add`, or `cron edit` -- not just the ones baked into
+# docker/config/openclaw/cron/jobs.json.
+if command -v openclaw >/dev/null 2>&1 && [ "${AGENTSHROUD_PROJECT:-agentshroud}" != "agentshroud" ]; then
+(
+    set +e +o pipefail
+    _gw_wait=0
+    while [ "${_gw_wait}" -lt 120 ]; do
+        curl -fsS --max-time 3 -o /dev/null "http://127.0.0.1:18789/" 2>/dev/null && break
+        sleep 5
+        _gw_wait=$(( _gw_wait + 5 ))
+    done
+    _ids="$(openclaw cron list --json --all 2>/dev/null | python3 -c 'import json,sys; d=json.load(sys.stdin); [print(j["id"]) for j in d.get("jobs",[])]' 2>/dev/null)"
+    if [ -z "${_ids}" ]; then
+        echo "[dev-cron-disable] WARN: could not list cron jobs (gateway not ready in time?) -- nothing disabled"
+    else
+        _n=0
+        echo "${_ids}" | while read -r _id; do
+            [ -z "${_id}" ] && continue
+            openclaw cron disable "${_id}" >/dev/null 2>&1
+        done
+        _n="$(echo "${_ids}" | grep -c .)"
+        echo "[dev-cron-disable] disabled ${_n} cron job(s) -- AGENTSHROUD_PROJECT=${AGENTSHROUD_PROJECT:-} is not prod. Run jobs manually to test: openclaw cron run <id>"
+    fi
+) &
+echo "[startup] dev cron auto-disable launched (pid=$!)"
+fi
+
+# ---------------------------------------------------------------------------
 # Read the last non-empty line from a secret file.
 # Handles garbled multi-line blobs (label + asterisks + real value) written to
 # the secret backend before the 017e7bd write-path fix. For clean single-line
