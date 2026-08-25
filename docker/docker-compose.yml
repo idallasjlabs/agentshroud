@@ -188,7 +188,18 @@ services:
     pid: host
     read_only: true
     tmpfs:
-      - /tmp:noexec,nosuid,size=500m
+      # /tmp sized for Trivy's own image-export workspace, not just general
+      # scratch space -- found 2026-08-25: `trivy image` copies the full
+      # target image into /tmp/trivy-*/docker-export-* before it can scan
+      # it, and this repo's own images (agentshroud-openclaw ~920MB,
+      # agentshroud/hermes ~932MB, both scanned FROM this container) are
+      # each comfortably larger than the previous 500m limit, so every
+      # single image scan failed with "no space left on device" -- a
+      # second, separate bug from the fake-registry-credential one fixed
+      # in the same investigation. tmpfs only consumes RAM for what's
+      # actually written, so this ceiling is safe even though it's rarely
+      # approached day-to-day.
+      - /tmp:noexec,nosuid,size=2048m
       - /var/tmp:noexec,nosuid,size=50m
       - /var/log/fluent-bit:noexec,nosuid,size=50m
       - /var/log/falco:noexec,nosuid,size=50m
