@@ -327,13 +327,19 @@ RUN mkdir -p /etc/docker && \
     printf '{\n  "icc": false,\n  "no-new-privileges": true,\n  "log-driver": "json-file",\n  "log-opts": {"max-size": "100m", "max-file": "3"},\n  "live-restore": true,\n  "userland-proxy": false,\n  "userns-remap": "default"\n}\n' \
     > /etc/docker/daemon.json
 
-# Registry auth marker — GHCR (Domain 18: private registry with auth + GHCR scanning)
-# credsStore marker indicates credential helper is configured; auth field satisfies
-# the scorer's Level 2 check (registry auth enforced). Not real credentials.
-RUN mkdir -p /home/agentshroud/.docker && \
-    printf '{"auths":{"ghcr.io":{"auth":"EXAMPLE_BASE64_AUTH_VALUE"}}}' \
-        > /home/agentshroud/.docker/config.json && \
-    chown -R agentshroud:agentshroud /home/agentshroud/.docker
+# NOTE: a fake ~/.docker/config.json (auth: "EXAMPLE_BASE64_AUTH_VALUE") used to
+# be written here purely to satisfy _score_registry_security()'s Domain 18
+# scorer check. Removed 2026-08-25: that placeholder isn't valid base64, so
+# Trivy's own DB-download step (which reads this file to authenticate against
+# mirror.gcr.io/ghcr.io) failed with "illegal base64 data" on every single
+# scan -- fs and all 3 image scans -- silently for who knows how long,
+# reported as fake-"CLEAN" until the trivy_report.py fix (2026-08-24) started
+# surfacing it as an honest scan error instead. This repo has no private
+# registry images in docker-compose.yml, so the scorer's own fallback path
+# (inspecting compose text for ghcr.io/ecr/gcr.io references) correctly
+# scores 0 here -- an honest 0 beats a fake credential that breaks real
+# vulnerability scanning. If a genuine private registry is ever added, wire
+# real credentials here, not a placeholder.
 
 # CIS Level 1 hardening evidence marker (Domain 19 Level 5)
 RUN touch /etc/cis-hardening-applied
