@@ -141,6 +141,27 @@ if command -v docker >/dev/null 2>&1 && [ -n "${DOCKER_HOST:-}" ]; then
         done
     }
 
+    # Exited-container pass — separate from the idle-running check above.
+    # Found 2026-08-25: `docker top` errors out on a container that isn't
+    # running ("container ... is not running", exit 1), so `_proc_lines`
+    # comes back empty and `_reap_idle_sandboxes`'s guard never fires for a
+    # crashed/killed container — it only ever reaps containers that are
+    # idle but still *running*. A host reboot or Colima restart kills every
+    # sandbox at once (RestartPolicy is "no", so Docker never revives them),
+    # and those then sit as dead weight forever regardless of TTL. No
+    # age gate needed here: an exited container with no restart policy will
+    # never do anything useful again by staying around.
+    _reap_exited_sandboxes() {
+        # $1 = docker ps --filter args (as a single string, name-filter only)
+        docker ps -a --filter "$1" --filter "status=exited" --format '{{.ID}} {{.Names}}' 2>/dev/null \
+          | while read -r _cid _cname; do
+            [ -z "${_cid:-}" ] && continue
+            docker rm -f "${_cid}" >/dev/null 2>&1 \
+              && echo "[sandbox-reaper] removed ${_cname} (exited)" \
+              || echo "[sandbox-reaper] WARN: failed to remove ${_cname}"
+        done
+    }
+
     # Rename pass — separate from reaping. Neither Hermes's own sandbox code
     # nor OpenClaw's MCP-server spawning exposes any container-naming config
     # (checked openclaw.json 2026-08-24, no docker/name/prefix keys under any
@@ -166,11 +187,15 @@ if command -v docker >/dev/null 2>&1 && [ -n "${DOCKER_HOST:-}" ]; then
     }
     _rename_to_meaningful "ancestor=ghcr.io/github/github-mcp-server:latest" "openclaw-mcp-github"
     _rename_to_meaningful "name=^/hermes-" "hermes-sandbox"
+    _reap_exited_sandboxes "name=^/openclaw-sbx-"
+    _reap_exited_sandboxes "name=^/hermes-sandbox-"
 
     while true; do
         sleep "${_reap_tick}"
         _reap_idle_sandboxes "name=^/openclaw-sbx-"
         _reap_idle_sandboxes "name=^/hermes-sandbox-"
+        _reap_exited_sandboxes "name=^/openclaw-sbx-"
+        _reap_exited_sandboxes "name=^/hermes-sandbox-"
 
         docker ps -a --filter "ancestor=ghcr.io/github/github-mcp-server:latest" --format '{{.ID}} {{.Names}}' 2>/dev/null \
           | while read -r _cid _cname; do
