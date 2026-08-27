@@ -26,6 +26,7 @@ Tests cover:
 
 from __future__ import annotations
 
+import asyncio
 import json
 import struct
 from unittest.mock import AsyncMock, MagicMock, patch
@@ -2134,8 +2135,27 @@ async def test_pcm_buffer_bounded(monkeypatch):
 # ── STOP protocol (tap-to-stop during SPEAKING) ──────────────────────────────
 
 
-def _mock_ws(receive_side_effect):
-    """Build a MagicMock WebSocket for direct voice_endpoint() tests."""
+def _mock_ws(receive_frames):
+    """Build a MagicMock WebSocket for direct voice_endpoint() tests.
+
+    Frames are delivered through an asyncio.Queue instead of an AsyncMock
+    ``side_effect`` list. voice_endpoint() reads the socket from two
+    coroutines concurrently during SPEAKING (the main loop and
+    ``_watch_for_stop``), so with a single shared ordered iterator,
+    which-coroutine-consumes-which-frame depends on asyncio scheduler
+    order — differing between Python/OS event-loop implementations, and
+    the root cause of the macos-latest/3.11-only CI hang (SCRUM-145: a
+    misdelivered frame left ``_stop_requested`` unset with nothing else
+    scheduled). A queue makes delivery order independent of which reader
+    wakes first, and tests that need a frame to arrive at an exact phase
+    (e.g. STOP only once SPEAKING has started) can enqueue it from an
+    event hook via ``ws.push_frame`` rather than pre-loading it.
+
+    Exception instances in the queue are raised from receive() (matching
+    how Starlette surfaces WebSocketDisconnect). An empty queue blocks —
+    if a test under-supplies frames the pytest-timeout safety net (60s,
+    added in PR #382) fails it with a stack trace.
+    """
     from unittest.mock import AsyncMock, MagicMock
 
     ws = MagicMock()
@@ -2147,7 +2167,31 @@ def _mock_ws(receive_side_effect):
     ws.close = AsyncMock()
     ws.send_text = AsyncMock()
     ws.send_bytes = AsyncMock()
-    ws.receive = AsyncMock(side_effect=receive_side_effect)
+
+    frames: asyncio.Queue = asyncio.Queue()
+    for _f in receive_frames:
+        frames.put_nowait(_f)
+
+    # A dequeued exception (WebSocketDisconnect) is STICKY: every subsequent
+    # receive() raises it again, matching real Starlette behavior on a closed
+    # socket. Without this, whichever of the two concurrent readers consumes
+    # the disconnect starves the other one on an empty queue forever — e.g.
+    # _watch_for_stop() eating the disconnect meant the main loop's post-reply
+    # receive() had nothing left to read (the other half of the SCRUM-145
+    # double-reader hang).
+    _closed: list = []
+
+    async def _receive():
+        if _closed:
+            raise _closed[0]
+        item = await frames.get()
+        if isinstance(item, BaseException):
+            _closed.append(item)
+            raise item
+        return item
+
+    ws.receive = AsyncMock(side_effect=_receive)
+    ws.push_frame = frames.put_nowait
     return ws
 
 
@@ -2185,18 +2229,33 @@ async def test_ws_stop_during_speaking_aborts_tts(monkeypatch):
     }
     monkeypatch.setattr(tts_mod, "synthesize", lambda t: sentence_pcm.get(t, b"\xff\x00" * 4))
 
-    # STOP is queued for whichever reader asks next — with the concurrent
-    # stop-watcher in place it is consumed BEFORE/WHILE the PCM stream is sent,
-    # aborting the remaining sentences.
+    # STOP must arrive while SPEAKING is in progress — i.e. while
+    # _watch_for_stop() is the active reader. Pre-loading it into the frame
+    # sequence made its consumer scheduler-order-dependent (SCRUM-145: on
+    # macos/3.11 the wrong coroutine could consume the wrong frame, leaving
+    # _stop_requested unset and the loop with nothing scheduled — a hang).
+    # Instead, enqueue STOP (and the trailing disconnect for the main loop's
+    # post-abort read) only when the first PCM frame is actually sent: at
+    # that moment SPEAKING has definitively begun and the watcher is the
+    # only reader, so delivery is deterministic on every scheduler.
     ws = _mock_ws(
         [
             {"text": "LISTEN", "bytes": None},
             {"bytes": _pcm_bytes(), "text": None},
             {"text": "END", "bytes": None},
-            {"text": "STOP", "bytes": None},
-            WebSocketDisconnect(code=1000),
         ]
     )
+
+    _stop_pushed = False
+
+    async def _push_stop_on_first_pcm(_frame):
+        nonlocal _stop_pushed
+        if not _stop_pushed:
+            _stop_pushed = True
+            ws.push_frame({"text": "STOP", "bytes": None})
+            ws.push_frame(WebSocketDisconnect(code=1000))
+
+    ws.send_bytes = AsyncMock(side_effect=_push_stop_on_first_pcm)
 
     await srv.voice_endpoint(ws)
 

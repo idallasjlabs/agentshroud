@@ -1285,6 +1285,25 @@ async def voice_endpoint(ws: WebSocket) -> None:
                             for _task in (watcher, _stop_wait, synth_task):
                                 if not _task.done():
                                     _task.cancel()
+                            # Unblock a synth task parked on a full _synth_q
+                            # put() (maxsize=2; after a STOP abort the send
+                            # loop stops consuming, so the sentinel put can
+                            # be parked). On Python 3.11 a single cancel()
+                            # can be absorbed by the race between the queue
+                            # completing the putter's future and the task
+                            # resuming (SCRUM-145: task left "cancelling"
+                            # but alive forever, event loop idle — the
+                            # macos/3.11 CI hang; a second cancel() unsticks
+                            # it, confirmed via live task-state dump).
+                            # Draining the queue frees the slot so the
+                            # parked put() completes through the queue's own
+                            # wakeup path, with no reliance on
+                            # cancel-delivery semantics: every interleaving
+                            # then terminates — the resumed task either
+                            # finishes normally or honors the pending
+                            # cancel at its next suspension point.
+                            while not _synth_q.empty():
+                                _synth_q.get_nowait()
                             for _task in (watcher, _stop_wait, synth_task):
                                 # The watcher may hold a WebSocketDisconnect from a
                                 # mid-stream close; swallow it here — the main

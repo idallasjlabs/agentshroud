@@ -128,12 +128,18 @@ def test_jira_weekly_review_schedule_is_sunday_9am():
 
 
 # ---------------------------------------------------------------------------
-# Per-job-type model routing (2026-08-23) — see the long comment above
-# _seed_cron() in init-config.sh for the evidence: one-shot testing on real
-# job content showed the prior universal default (nemotron-3.5-lightning-rapid)
-# consistently fails to complete a structured deliverable under realistic
-# token budgets, while gemma-4-26b-a4b-it succeeds faithfully. Every
-# content-generating job is pinned to gemma-4-26b-a4b-it EXCEPT
+# Per-job-type model routing (2026-08-23, runtime re-pointed 2026-08-27) —
+# see the long comment above _seed_cron() in init-config.sh for the full
+# evidence trail: one-shot testing on real job content showed the prior
+# universal default (nemotron-3.5-lightning-rapid) consistently fails to
+# complete a structured deliverable under realistic token budgets, while
+# the gemma-4-26b weights succeed faithfully. 2026-08-27 (PR #407): the
+# SAME weights are now served via mlx_gemma (:8237, 65K ctx, model id
+# "mlx-community/gemma-4-26b-a4b-it-4bit") instead of Turbo Fieldflare
+# (:8238, 16K ctx), which had confirmed single-slot queueing and
+# large-prompt decode failures — a serving-runtime change, not a model
+# change, so the 2026-08-23 quality evidence carries over. Every
+# content-generating job is pinned to that model EXCEPT
 # jira-weekly-review, whose payload is pure script execution with no
 # meaningful free-form generation.
 # ---------------------------------------------------------------------------
@@ -169,8 +175,11 @@ def test_content_generating_jobs_pinned_to_evidence_backed_model():
     calls = _parse_seed_cron_calls_from_sh()
     for name in _PINNED_JOB_NAMES:
         assert name in calls, f"{name} not found in init-config.sh"
-        assert '"gemma-4-26b-a4b-it" "custom"' in calls[name], (
-            f"{name} must be pinned to gemma-4-26b-a4b-it/custom — see the "
+        assert '"mlx-community/gemma-4-26b-a4b-it-4bit" "custom"' in calls[name], (
+            f"{name} must be pinned to mlx-community/gemma-4-26b-a4b-it-4bit"
+            "/custom (the 2026-08-23 evidence-backed gemma-4-26b weights, "
+            "re-served via mlx_gemma :8237 on 2026-08-27 after Turbo "
+            "Fieldflare's confirmed queueing/decode failures) — see the "
             "evidence in the comment above _seed_cron() in init-config.sh. "
             "Provider is 'custom', not 'ollama': confirmed via `hermes doctor` "
             "2026-08-24 that 'ollama' was never a valid provider name in this "
@@ -185,7 +194,8 @@ def test_jira_weekly_review_not_pinned_to_a_model():
     job shape."""
     calls = _parse_seed_cron_calls_from_sh()
     assert "jira-weekly-review" in calls
-    assert '"gemma-4-26b-a4b-it"' not in calls["jira-weekly-review"]
+    assert '"gemma-4-26b-a4b-it' not in calls["jira-weekly-review"]
+    assert '"mlx-community/gemma-4-26b-a4b-it-4bit"' not in calls["jira-weekly-review"]
 
 
 def test_seed_cron_supports_optional_model_and_provider_args():

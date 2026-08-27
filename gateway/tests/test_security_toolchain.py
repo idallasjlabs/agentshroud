@@ -458,11 +458,7 @@ class TestStartupScannerKeying:
 # ═══════════════════════════════════════════
 
 from gateway.security.clamav_scanner import generate_summary as clamav_summary  # noqa: E402
-from gateway.security.clamav_scanner import (
-    parse_clamscan_output,
-    run_clamscan,
-    update_virus_db,
-)
+from gateway.security.clamav_scanner import parse_clamscan_output, run_clamscan, update_virus_db
 
 SAMPLE_CLAMSCAN_CLEAN = """/home/node/file1.py: OK
 /home/node/file2.js: OK
@@ -553,11 +549,7 @@ from gateway.security.falco_monitor import (
     categorize_alerts,
 )
 from gateway.security.falco_monitor import generate_summary as falco_summary  # noqa: E402
-from gateway.security.falco_monitor import (
-    is_agentshroud_rule,
-    parse_alert,
-    read_alerts,
-)
+from gateway.security.falco_monitor import is_agentshroud_rule, parse_alert, read_alerts
 
 SAMPLE_FALCO_ALERT = {
     "time": "2024-01-15T10:30:00.000Z",
@@ -655,11 +647,7 @@ class TestFalcoSummary:
 # ═══════════════════════════════════════════
 
 from gateway.security.wazuh_client import generate_summary as wazuh_summary
-from gateway.security.wazuh_client import (
-    get_fim_events,
-    get_rootkit_events,
-    level_to_severity,
-)
+from gateway.security.wazuh_client import get_fim_events, get_rootkit_events, level_to_severity
 from gateway.security.wazuh_client import parse_alert as wazuh_parse  # noqa: E402
 
 SAMPLE_WAZUH_FIM = {
