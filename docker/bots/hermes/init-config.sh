@@ -229,22 +229,28 @@ fi
 # (Prior stamp-file gating v1/v2/v3 caused triplication on each version bump
 # because hermes cron create has no dedup — removed in favour of this approach.)
 #
-# 2026-08-27 UPDATE: pins re-pointed from "gemma-4-26b-a4b-it" (Turbo
-# Fieldflare, :8238) to "mlx-community/gemma-4-26b-a4b-it-4bit" (mlx_gemma,
-# :8237) — SAME WEIGHTS, different runtime, so the bake-off findings below
-# still apply unchanged. Why: Turbo Fieldflare has two confirmed serving-path
-# failures under real cron load (2026-08-27, local-llms-side live testing +
-# reproduced here): strict single-slot queueing (one 19K-token request blocked
-# everything, incl. a 194-token probe, for 5 min — with 8 jobs pinned to it,
-# any large-prompt job stalls the rest) and a hard HTTP 500 decode failure
-# (structured_output_failure kind=decoder_consume) on ~19.5K-token
-# tool-involving prompts — zero output. mlx_gemma also serves 65,536 ctx vs
-# Fieldflare's 16,384 (which was below Hermes's documented 64K floor). The
-# 12B-hallucination concern that originally motivated these pins was also
-# re-probed 2026-08-27 with a faithful test (fabricate-on-empty-search-result
-# shape, from the real competitive-analysis.md prompt): 18/18 clean across
-# 12B/oMLX, 26B/Fieldflare, 26B/mlx_gemma — but this migration doesn't rely
-# on that, since the weights don't change.
+# 2026-08-27 serving history (two moves, same day — read before re-pointing):
+# Pins were briefly moved from "gemma-4-26b-a4b-it" (Turbo Fieldflare, :8238)
+# to "mlx-community/gemma-4-26b-a4b-it-4bit" (mlx_gemma, :8237) — same
+# weights, different runtime — to escape two confirmed Fieldflare
+# serving-path failures under real cron load: strict single-slot queueing
+# (one 19K-token request blocked everything, incl. a 194-token probe, for 5
+# min) and a hard HTTP 500 decode failure (structured_output_failure
+# kind=decoder_consume) on ~19.5K-token tool-involving prompts. REVERTED to
+# Fieldflare hours later: mlx_gemma's 16GB resident footprint triggered a
+# host-wide RAM pressure spiral (it shed the rapid-mlx anchor entirely) and
+# the local-llms side withdrew its default promotion the same day — it is
+# intentionally stopped and opt-in now. Fieldflare has since been
+# reconfigured to 64K ctx (was 16,384, below Hermes's 64K floor), softening
+# the original motivation. mlx_gemma — or oMLX's own copy of these weights
+# ("mlx-community--gemma-4-26b-a4b-it-4bit", note double dash) — remains
+# the future candidate, but ONLY as a coordinated change with the
+# local-llms side (RAM budget must be renegotiated first); both alternate
+# IDs stay routed in gateway/proxy/llm_proxy.py ready for that switch.
+# The 12B-hallucination concern that originally motivated these pins was
+# re-probed 2026-08-27 with a faithful test (fabricate-on-empty-search-
+# result shape, from the real competitive-analysis.md prompt): 18/18 clean
+# across 12B/oMLX, 26B/Fieldflare, 26B/mlx_gemma.
 #
 # Optional $5/$6 (model/provider): per-job-type model pin, added 2026-08-23.
 # Every job previously ran on whatever cron.model/model.default resolve_model.py
@@ -301,38 +307,38 @@ echo "[hermes-init] Seeding native cron jobs (idempotent)..."
 
 _seed_cron "AgentShroud Daily Check-in" "telegram" "0 14 * * *" \
     "Daily AgentShroud check-in from Hermes. Report current date/time, brief status of active tasks, and anything noteworthy from today. Under 150 words, send via Telegram to Isaiah." \
-    "mlx-community/gemma-4-26b-a4b-it-4bit" "custom"
+    "gemma-4-26b-a4b-it" "custom"
 
 _seed_cron "AgentShroud Weekly Summary" "telegram" "0 18 * * 5" \
     "Weekly summary from Hermes: key topics this week, skills learned or created, and what to focus on next week. Format concisely, deliver via Telegram." \
-    "mlx-community/gemma-4-26b-a4b-it-4bit" "custom"
+    "gemma-4-26b-a4b-it" "custom"
 
 _seed_cron "Weekly Kaizen Review" "telegram" "0 17 * * 5" \
     "Friday 5 PM weekly kaizen review (Hermes). What shipped this week? What caused friction? What process improvements would most help AgentShroud development? Format: SHIPPED / FRICTION / IMPROVE. Be specific and actionable." \
-    "mlx-community/gemma-4-26b-a4b-it-4bit" "custom"
+    "gemma-4-26b-a4b-it" "custom"
 
 _seed_cron "Monthly Chaos Engineering Drill" "telegram" "0 9 1 * *" \
     "First of month chaos engineering drill (Hermes). Simulate one failure scenario for AgentShroud involving Hermes: gateway crash, volume corruption, bot disconnect, or dependency outage. Describe failure mode, detection method, blast radius, and recovery procedure." \
-    "mlx-community/gemma-4-26b-a4b-it-4bit" "custom"
+    "gemma-4-26b-a4b-it" "custom"
 
 # SC2016: $(date) intentionally not expanded — agent evaluates at run time
 # shellcheck disable=SC2016
 _memory_journal_prompt='Nightly memory consolidation. Summarize today'"'"'s active projects, pending tasks, decisions made, and key facts for continuity. Append your summary to /opt/data/memories/journal-$(date +%Y-%m).md as a new dated section (use today'"'"'s date in YYYY-MM-DD format as the section heading). Create the file if it does not exist. Silent operation — no Telegram delivery.'
-_seed_cron "Daily Memory Journal" "local" "55 23 * * *" "$_memory_journal_prompt" "mlx-community/gemma-4-26b-a4b-it-4bit" "custom"
+_seed_cron "Daily Memory Journal" "local" "55 23 * * *" "$_memory_journal_prompt" "gemma-4-26b-a4b-it" "custom"
 
 _seed_cron "Weekly Hermes Stability Report" "telegram" "0 9 * * 1" \
     "Read /opt/data/logs/gateway-exit-diag.log (last 7 days entries) and /opt/data/.start-history (one epoch per line). Compute: total restarts this week, crashes per day as a sparkline (e.g. 0 0 2 0 1 0 3), longest stable window in hours, top 3 exit codes by frequency, any backoff pauses triggered (5-minute sleeps). Format as 'Hermes Weekly Stability — <date range>' in under 200 words. Send via Telegram. If log files do not exist, report that Hermes has been stable with no recorded exits this week." \
-    "mlx-community/gemma-4-26b-a4b-it-4bit" "custom"
+    "gemma-4-26b-a4b-it" "custom"
 
 # SC2016: $(date) intentionally not expanded — agent evaluates at run time
 # shellcheck disable=SC2016
 _competitive_landscape_prompt='Read /opt/data/workspace/competitive-analysis.md for research instructions. Execute the full 4-section competitive intelligence report. CRITICAL RULES: zero hallucinations — every company, product, and statistic must be verified against a live primary source. Exclude anything unverified. Every claim requires a working URL. Research competitors of AgentShroud (autonomous agent security tools — NOT the agents themselves). Verify GitHub star counts from live pages. Save report as /opt/data/workspace/reports/competitive-report-$(date +%Y-%m-%d).md (use today'"'"'s date in YYYY-MM-DD format). Append one-line summary to /opt/data/workspace/reports/trend-log.md. Do NOT send any email — the separate Hermes Competitive Intelligence Email cron job handles delivery. Silence is correct if nothing new is found; hallucination is a critical failure.'
-_seed_cron "Hermes Competitive Landscape Update (AM/PM)" "local" "0 6,15 * * *" "$_competitive_landscape_prompt" "mlx-community/gemma-4-26b-a4b-it-4bit" "custom"
+_seed_cron "Hermes Competitive Landscape Update (AM/PM)" "local" "0 6,15 * * *" "$_competitive_landscape_prompt" "gemma-4-26b-a4b-it" "custom"
 
 # SC2016: $(date) intentionally not expanded — agent evaluates at run time
 # shellcheck disable=SC2016
 _competitive_email_prompt='Read the most recent competitive-report-*.md from /opt/data/workspace/reports/ (prefer today'"'"'s date in YYYY-MM-DD format). If no report exists, use body '"'"'No significant changes detected today.'"'"' Render as a clean HTML email with inline CSS only (white bg #ffffff, text #111111, links #1a73e8, code bg #f6f8fa). To render: copy the cron-operations skill'"'"'s scripts/render_md_email.py to /opt/data/workspace/render_email.py, set its SRC/DST Path() constants (DST = /tmp/competitive-email.html), then run: python3 /opt/data/workspace/render_email.py. If the skill script is unavailable, write a pure-stdlib renderer to /opt/data/workspace/render_email.py and run it the same way. NEVER use execute_code, python3 -c, pip install, or uv pip install — all are blocked in cron mode. NEVER write_file a .py to /tmp/ — write renderer scripts to /opt/data/workspace/ only. The final .html output at /tmp/ is fine. Then run EXACTLY: /usr/local/bin/agentshroud-email-send.sh --html --subject '"'"'AgentShroud Hermes Competitive Intelligence'"'"' --body-file /tmp/competitive-email.html. The --html flag is mandatory — omitting it delivers raw markdown as plain text. Expect HTTP 200. On failure, report the full error via Telegram.'
-_seed_cron "Hermes Competitive Intelligence Email (AM/PM)" "local" "0 7,16 * * *" "$_competitive_email_prompt" "mlx-community/gemma-4-26b-a4b-it-4bit" "custom"
+_seed_cron "Hermes Competitive Intelligence Email (AM/PM)" "local" "0 7,16 * * *" "$_competitive_email_prompt" "gemma-4-26b-a4b-it" "custom"
 
 # SCRUM-81: weekly Jira review — post a real authenticated comment on SCRUM-81
 # every Sunday 09:00 so the Atlassian bot account never goes idle.

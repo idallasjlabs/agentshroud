@@ -132,6 +132,16 @@ LOCAL_MODEL_ROUTES: dict[str, str] = {
     # keeping the more-specific full-ID entries grouped up top matches the
     # established pattern).
     "mlx-community/gemma-4-26b-a4b-it": MLX_GEMMA_API_BASE,  # mlx_gemma — 65K ctx, :8237
+    # oMLX's OWN catalog ID for the same 26B weights uses a DOUBLE DASH where
+    # mlx_gemma uses a slash ("mlx-community--gemma-..." vs
+    # "mlx-community/gemma-..."), confirmed live via :8000/v1/models
+    # 2026-08-27 — the slash-form entry above does NOT prefix-match it, so it
+    # needs its own route. Became the cron-pin target 2026-08-27 (second
+    # re-point of the day): mlx_gemma went down within hours of the first
+    # re-point, while oMLX (max_concurrent_requests: 8, always-on) has been
+    # the stable resident server — and concurrency was the original reason
+    # to leave Fieldflare.
+    "mlx-community--gemma-4-26b-a4b-it": OMLX_API_BASE,  # oMLX — same 26B weights, :8000
     "deepseek-r1-0528-qwen3-8b": OMLX_API_BASE,  # oMLX — reasoning model, tool-calling capable
     "deepseek-r1": MLXLM_API_BASE,  # Reasoning — mlx_lm on :8234 (no tool calling)
     "gemma-4-26b-a4b-it": FIELDFLARE_API_BASE,  # Turbo Fieldflare — MLX Gemma 4 on :8238
