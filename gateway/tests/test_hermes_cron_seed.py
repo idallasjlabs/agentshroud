@@ -128,18 +128,23 @@ def test_jira_weekly_review_schedule_is_sunday_9am():
 
 
 # ---------------------------------------------------------------------------
-# Per-job-type model routing (2026-08-23, runtime re-pointed 2026-08-27) —
+# Per-job-type model routing (2026-08-23; serving history 2026-08-27) —
 # see the long comment above _seed_cron() in init-config.sh for the full
 # evidence trail: one-shot testing on real job content showed the prior
 # universal default (nemotron-3.5-lightning-rapid) consistently fails to
 # complete a structured deliverable under realistic token budgets, while
-# the gemma-4-26b weights succeed faithfully. 2026-08-27 (PR #407): the
-# SAME weights are now served via mlx_gemma (:8237, 65K ctx, model id
-# "mlx-community/gemma-4-26b-a4b-it-4bit") instead of Turbo Fieldflare
-# (:8238, 16K ctx), which had confirmed single-slot queueing and
-# large-prompt decode failures — a serving-runtime change, not a model
-# change, so the 2026-08-23 quality evidence carries over. Every
-# content-generating job is pinned to that model EXCEPT
+# the gemma-4-26b weights succeed faithfully. Serving history for those
+# weights, all same-day 2026-08-27: briefly re-pointed to mlx_gemma
+# (:8237) to escape Turbo Fieldflare's single-slot queueing, then
+# REVERTED to Fieldflare (:8238, since reconfigured to 64K ctx) after
+# mlx_gemma's 16GB resident footprint triggered a host-wide RAM pressure
+# spiral and its default promotion was withdrawn on the local-llms side.
+# mlx_gemma (or oMLX's own copy of the weights,
+# "mlx-community--gemma-4-26b-a4b-it-4bit") remains the future re-point
+# candidate but requires coordinated RAM budgeting first — do not re-point
+# unilaterally; both alternate IDs stay registered in
+# gateway/proxy/llm_proxy.py's LOCAL_MODEL_ROUTES ready for that switch.
+# Every content-generating job is pinned to this model EXCEPT
 # jira-weekly-review, whose payload is pure script execution with no
 # meaningful free-form generation.
 # ---------------------------------------------------------------------------
@@ -175,12 +180,13 @@ def test_content_generating_jobs_pinned_to_evidence_backed_model():
     calls = _parse_seed_cron_calls_from_sh()
     for name in _PINNED_JOB_NAMES:
         assert name in calls, f"{name} not found in init-config.sh"
-        assert '"mlx-community/gemma-4-26b-a4b-it-4bit" "custom"' in calls[name], (
-            f"{name} must be pinned to mlx-community/gemma-4-26b-a4b-it-4bit"
-            "/custom (the 2026-08-23 evidence-backed gemma-4-26b weights, "
-            "re-served via mlx_gemma :8237 on 2026-08-27 after Turbo "
-            "Fieldflare's confirmed queueing/decode failures) — see the "
-            "evidence in the comment above _seed_cron() in init-config.sh. "
+        assert '"gemma-4-26b-a4b-it" "custom"' in calls[name], (
+            f"{name} must be pinned to gemma-4-26b-a4b-it/custom (the "
+            "2026-08-23 evidence-backed weights via Turbo Fieldflare — the "
+            "coordinated active backend per local-llms, 2026-08-27; see the "
+            "serving-history comment above for why the mlx_gemma re-point "
+            "was reverted same-day). See the evidence in the comment above "
+            "_seed_cron() in init-config.sh. "
             "Provider is 'custom', not 'ollama': confirmed via `hermes doctor` "
             "2026-08-24 that 'ollama' was never a valid provider name in this "
             "Hermes version (0.20.1) -- every job using it was silently broken."
