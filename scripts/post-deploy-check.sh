@@ -27,7 +27,13 @@ fi
 
 GW_URL="http://localhost:${GW_PORT}/status"
 WAIT_SECS="${AGENTSHROUD_POST_DEPLOY_WAIT:-60}"
-BOT_WAIT_SECS="${AGENTSHROUD_POST_DEPLOY_BOT_WAIT:-120}"
+# 300s (was 120s): the deploy's device-reset step restarts the bot moments
+# before this check runs, so the bot must complete a FULL cold init (SDK
+# patches, DNS warmup, readiness gate, then the Telegram notification this
+# check greps for) inside the window. Observed normal boots on 2026-08-27
+# took ~2.5-3 min — the 120s window false-negatived 4 separate healthy
+# deploys that same day (container demonstrably healthy moments later).
+BOT_WAIT_SECS="${AGENTSHROUD_POST_DEPLOY_BOT_WAIT:-300}"
 
 pass=0
 fail=0
@@ -82,6 +88,16 @@ if [[ -n "$BOT_CONTAINER" ]]; then
     started=false
     deadline=$(( $(date +%s) + BOT_WAIT_SECS ))
     while [[ $(date +%s) -lt $deadline ]]; do
+        # Docker's own healthcheck is the authoritative started signal —
+        # accept it directly instead of only grepping for log markers (the
+        # marker approach alone false-negatived healthy deploys whenever the
+        # notification step lagged the health probe, 2026-08-27 x4).
+        bot_health=$(docker inspect --format '{{if .State.Health}}{{.State.Health.Status}}{{end}}' "$BOT_CONTAINER" 2>/dev/null || echo "")
+        if [[ "$bot_health" == "healthy" ]]; then
+            started=true
+            bot_logs=$(docker logs "$BOT_CONTAINER" 2>&1 || echo "")
+            break
+        fi
         bot_logs=$(docker logs "$BOT_CONTAINER" 2>&1 || echo "")
         # "Startup notification suppressed" = startup reached the notification step but
         # the anti-spam cooldown (recent restart) skipped the Telegram send — still a
@@ -149,7 +165,18 @@ if [[ -n "$HERMES_CONTAINER" ]]; then
     check "Hermes API :8642 reachable" \
         "$([[ "$hermes_api_ok" == "true" ]] && echo true || echo false)"
 
-    hermes_logs=$(docker logs "$HERMES_CONTAINER" 2>&1 | tail -50 || echo "")
+    # Scope to logs since the CURRENT boot's start, first 80 lines — i.e.
+    # actual startup output. The previous `tail -50` grabbed the most recent
+    # lines at whatever time the check ran, so any recent cron-job runtime
+    # traceback (e.g. a temporarily-down local-model backend) failed a
+    # "startup" check hours after a perfectly clean startup (observed
+    # 2026-08-27 running this script standalone against a healthy stack).
+    hermes_started_at=$(docker inspect -f '{{.State.StartedAt}}' "$HERMES_CONTAINER" 2>/dev/null || echo "")
+    if [[ -n "$hermes_started_at" ]]; then
+        hermes_logs=$(docker logs --since "$hermes_started_at" "$HERMES_CONTAINER" 2>&1 | head -80 || echo "")
+    else
+        hermes_logs=$(docker logs "$HERMES_CONTAINER" 2>&1 | head -80 || echo "")
+    fi
     check "Hermes logs: no crash on startup" \
         "$([[ "$hermes_logs" != *"Traceback (most recent call last)"* ]] && echo true || echo false)"
 else
