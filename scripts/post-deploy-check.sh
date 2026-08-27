@@ -66,13 +66,23 @@ check "Gateway /status 200 within ${WAIT_SECS}s" \
 # ── P2: Bot logs — no fatal startup errors ───────────────────────────────
 # Wait a short period for the bot to start fully
 sleep 5
+
+# Resolve the OpenClaw bot container's real name. container_name is set
+# literally per compose file (docker/docker-compose.yml: agentshroud-openclaw
+# for prod; docker/docker-compose.agentshroud-bot.marvin.yml: agentshroud-
+# marvin-openclaw for the agentshroud-bot dev account), so it can't be derived
+# from $USER/$PROJECT alone — but compose always stamps the service label
+# com.docker.compose.service=openclaw regardless of container_name/account, so
+# match on that instead of a hardcoded literal name.
+BOT_CONTAINER=$(docker ps --filter 'label=com.docker.compose.service=openclaw' --format '{{.Names}}' 2>/dev/null | head -1)
+
 bot_logs=""
-if docker ps --format '{{.Names}}' 2>/dev/null | grep -q 'agentshroud-openclaw'; then
+if [[ -n "$BOT_CONTAINER" ]]; then
     # Allow bot to finish startup within BOT_WAIT_SECS
     started=false
     deadline=$(( $(date +%s) + BOT_WAIT_SECS ))
     while [[ $(date +%s) -lt $deadline ]]; do
-        bot_logs=$(docker logs agentshroud-openclaw 2>&1 || echo "")
+        bot_logs=$(docker logs "$BOT_CONTAINER" 2>&1 || echo "")
         # "Startup notification suppressed" = startup reached the notification step but
         # the anti-spam cooldown (recent restart) skipped the Telegram send — still a
         # successful start, the marker just never appears in that window.
@@ -101,14 +111,28 @@ else
 fi
 
 # ── P3: Hermes health checks (only when hermes container is running) ─────────
-if docker ps --format '{{.Names}}' 2>/dev/null | grep -q 'agentshroud-hermes'; then
+# Hermes deploys via `docker run` (docker/bots/hermes/run-standalone.sh), not
+# docker-compose (see that script's header comment for why), so it has no
+# com.docker.compose.service label to key off like the OpenClaw bot lookup
+# above. run-standalone.sh instead tags the container with its own
+# com.agentshroud.role=hermes label — match on that. Fall back to the literal
+# default name for containers started before that label existed (older
+# `docker run`, no redeploy since); container_name itself is NOT
+# account-dependent for Hermes (unlike OpenClaw's compose override), since
+# run-standalone.sh hardcodes the same name regardless of $USER/account.
+HERMES_CONTAINER=$(docker ps --filter 'label=com.agentshroud.role=hermes' --format '{{.Names}}' 2>/dev/null | head -1)
+if [[ -z "$HERMES_CONTAINER" ]]; then
+    HERMES_CONTAINER=$(docker ps --format '{{.Names}}' 2>/dev/null | grep '^agentshroud-hermes' | head -1)
+fi
+
+if [[ -n "$HERMES_CONTAINER" ]]; then
     # Hermes dashboard binds to 127.0.0.1:9119 inside the container (loopback-only).
     # Docker's published port (127.0.0.1:9119:9119) cannot forward to the container's
     # loopback, so we check from inside the container via docker exec instead.
     hermes_dash_ok=false
     deadline=$(( $(date +%s) + WAIT_SECS ))
     while [[ $(date +%s) -lt $deadline ]]; do
-        if docker exec agentshroud-hermes-v2 curl -sf --max-time 5 "http://127.0.0.1:9119/" > /dev/null 2>&1; then
+        if docker exec "$HERMES_CONTAINER" curl -sf --max-time 5 "http://127.0.0.1:9119/" > /dev/null 2>&1; then
             hermes_dash_ok=true
             break
         fi
@@ -125,11 +149,11 @@ if docker ps --format '{{.Names}}' 2>/dev/null | grep -q 'agentshroud-hermes'; t
     check "Hermes API :8642 reachable" \
         "$([[ "$hermes_api_ok" == "true" ]] && echo true || echo false)"
 
-    hermes_logs=$(docker logs agentshroud-hermes-v2 2>&1 | tail -50 || echo "")
+    hermes_logs=$(docker logs "$HERMES_CONTAINER" 2>&1 | tail -50 || echo "")
     check "Hermes logs: no crash on startup" \
         "$([[ "$hermes_logs" != *"Traceback (most recent call last)"* ]] && echo true || echo false)"
 else
-    echo "  [post-deploy-check] SKIP: agentshroud-hermes-v2 not running (use 'asb up full' for full stack)"
+    echo "  [post-deploy-check] SKIP: hermes container not running (use 'asb up full' for full stack)"
 fi
 
 # ── P4: No subnet overlap in Docker networks ─────────────────────────────
@@ -186,8 +210,8 @@ if [[ "$fail" -gt 0 ]]; then
     echo ""
     echo "  Investigate with:" >&2
     echo "    docker logs agentshroud-gateway 2>&1 | tail -50" >&2
-    echo "    docker logs agentshroud-openclaw 2>&1 | tail -50" >&2
-    echo "    docker logs agentshroud-hermes-v2 2>&1 | tail -50" >&2
+    echo "    docker logs ${BOT_CONTAINER:-agentshroud-openclaw} 2>&1 | tail -50" >&2
+    echo "    docker logs ${HERMES_CONTAINER:-agentshroud-hermes-v2} 2>&1 | tail -50" >&2
     echo "    asb status" >&2
     echo ""
     exit 1

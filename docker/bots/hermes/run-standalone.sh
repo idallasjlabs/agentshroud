@@ -148,9 +148,15 @@ cmd_up() {
 
   echo "  [hermes-standalone] starting ${CONTAINER} from ${IMAGE} on ${NETWORK}..."
   # shellcheck disable=SC2086
+  # com.agentshroud.role=hermes: this is a `docker run` container, not
+  # compose, so it gets none of compose's automatic com.docker.compose.*
+  # labels — tag it explicitly so scripts/post-deploy-check.sh can resolve
+  # the real container by label instead of a hardcoded name, the same
+  # principle as the compose-label lookup above in _wait_for_gateway_healthy.
   docker run -d \
     --name "$CONTAINER" \
     --hostname "$CONTAINER" \
+    --label "com.agentshroud.role=hermes" \
     --restart unless-stopped \
     --network "$NETWORK" \
     -v "${HERMES_CONFIG_VOL}:/opt/data" \

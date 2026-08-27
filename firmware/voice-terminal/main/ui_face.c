@@ -173,9 +173,28 @@ static void _touch_pressed(lv_event_t *e)
 {
     ESP_LOGI(TAG, "touch: state=%d", (int)s_current_state);
     vt_remote_log("touch PRESSED state=%d", (int)s_current_state);
+
+    /* Tap-to-stop, keyed on the firmware's OWN capture state rather than
+     * s_current_state: s_current_state only updates once the server's
+     * LISTENING frame round-trips back (~300 ms, longer under network/host
+     * load — see 2026-08-26 trace, WS drops mid-utterance made this worse).
+     * A second tap landing in that window fell through to the `default`
+     * case below, called wakeword_ptt_press() while already triggered, hit
+     * _ptt_start()'s guard, and silently no-op'd — leaving no way to escape
+     * the VAD/8s-cap wait once a tap had started capture but the state sync
+     * hadn't landed yet. wakeword_triggered()/wakeword_ended() are local and
+     * immediate, so this fires the instant the user taps again regardless of
+     * what the server has (or hasn't) confirmed. wakeword_ptt_finish() is
+     * already a safe no-op when nothing is triggered. */
+    if (wakeword_triggered() && !wakeword_ended()) {
+        wakeword_ptt_finish();
+        return;
+    }
+
     /* Tap-to-toggle state machine:
      *   SPEAKING    → interrupt TTS playback (unchanged)
-     *   LISTENING   → end utterance now (NEW: tap-to-stop)
+     *   LISTENING   → end utterance now (redundant with the check above,
+     *                  kept as a documented, explicit path)
      *   THINKING    → no-op (query already in flight; tapping _ptt_start here
      *                  would latch s_triggered and permanently block the next tap)
      *   IDLE / DISC → start a new utterance */

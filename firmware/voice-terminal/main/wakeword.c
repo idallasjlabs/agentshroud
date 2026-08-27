@@ -38,8 +38,13 @@ static volatile bool s_tts_playing = false;
 static volatile bool s_tts_stop_requested = false;
 
 /* Hard cap on utterance length — safety net, NOT the normal end path.
- * Normal end: tap-to-stop, long-press release, or VAD silence endpointing. */
-#define VAD_TIMEOUT_MS 8000
+ * Normal end: tap-to-stop, long-press release, VAD silence endpointing, or
+ * (once wired) the "over" MultiNet command.
+ * Lowered 8000->4000 as a test (2026-08-26, owner request) now that
+ * tap-to-stop no longer silently no-ops — worst case for someone who
+ * neither taps again nor triggers VAD/over is a shorter wait. Raise back if
+ * this clips legitimate longer hands-free (wake-word) utterances. */
+#define VAD_TIMEOUT_MS 4000
 static TickType_t s_trigger_tick = 0;
 
 /* ── VAD silence endpointing ──────────────────────────────────────────────── *
@@ -114,6 +119,20 @@ static void _btn_pressed(void *arg, void *data)
         /* Physical button pressed during TTS — interrupt playback. */
         ESP_LOGI(TAG, "Physical button: TTS interrupt");
         s_tts_stop_requested = true;
+    } else if (s_triggered && !s_ended && !s_ptt_held) {
+        /* Second tap while hands-free (post-tap-start, waiting on VAD or the
+         * 8 s cap): end the utterance now. Live trace 2026-08-26 reproduced
+         * the same "sil=0ms for 8 s straight" failure the vad_mode comment
+         * above already documents from 2026-07-06 — WebRTC VAD pins at
+         * SPEECH in this room even at VAD_MODE_4 (max aggressiveness), so
+         * silence endpointing never fires and every tap-started utterance
+         * ate the full 8 s cap. Before this, a second tap hit _ptt_start()'s
+         * s_triggered guard and was silently ignored — no manual escape.
+         * This makes tap-to-stop deterministic and independent of ambient
+         * noise; VAD endpointing still applies when it works. */
+        ESP_LOGI(TAG, "PTT: tap-to-stop — ending utterance now");
+        vt_remote_log("PTT tap-to-stop — ending utterance now");
+        s_ended = true;
     } else {
         _ptt_start();
     }

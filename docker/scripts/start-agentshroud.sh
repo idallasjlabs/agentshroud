@@ -125,6 +125,45 @@ if command -v docker >/dev/null 2>&1 && [ -n "${DOCKER_HOST:-}" ]; then
         echo $(( $(date +%s) - _epoch ))
     }
 
+    # Concurrency cap — preventative, distinct from the TTL-based reaping
+    # below. TTL only cleans up AFTER a sandbox has sat idle for 6h; nothing
+    # stops the count climbing unbounded before that (found 2026-08-26: 13
+    # openclaw-sbx + 4 mcp-github concurrently on the interactive/production
+    # account, none old enough yet to hit the TTL — legitimate usage, not a
+    # bug, but nothing was bounding it either). Same-image reaper runs on
+    # both the interactive and automated-dev accounts, so this cap protects
+    # both without needing to know which account it's running under.
+    # Eviction only ever targets the OLDEST sandboxes that are ALSO idle
+    # (same _proc_lines<=2 check as _reap_idle_sandboxes) — a busy sandbox is
+    # never killed to satisfy the cap, even if that means staying over it
+    # temporarily. Set with headroom above the highest observed count so far
+    # (13), not the observed count itself — raise if legitimate concurrent
+    # usage grows past this.
+    _sbx_cap=20
+    _mcp_cap=8
+
+    _enforce_sandbox_cap() {
+        # $1 = docker ps --filter args, $2 = cap
+        local _ids _count _over
+        _ids="$(docker ps -a --filter "$1" --format '{{.ID}}' 2>/dev/null)"
+        [ -z "${_ids}" ] && return 0
+        _count="$(echo "${_ids}" | wc -l | tr -d ' ')"
+        _over=$(( _count - $2 ))
+        [ "${_over}" -le 0 ] && return 0
+        # Oldest first (CreatedAt sorts lexically fine — RFC3339 timestamps).
+        docker ps -a --filter "$1" --format '{{.CreatedAt}} {{.ID}} {{.Names}}' 2>/dev/null \
+          | sort \
+          | while read -r _created _cid _cname; do
+            [ "${_over}" -le 0 ] && break
+            _proc_lines="$(docker top "${_cid}" 2>/dev/null | tail -n +2 | wc -l | tr -d ' ')"
+            if [ -n "${_proc_lines}" ] && [ "${_proc_lines}" -le 2 ]; then
+                docker rm -f "${_cid}" >/dev/null 2>&1 \
+                  && { echo "[sandbox-reaper] removed ${_cname} (over cap, idle)"; _over=$(( _over - 1 )); } \
+                  || echo "[sandbox-reaper] WARN: failed to remove ${_cname}"
+            fi
+        done
+    }
+
     _reap_idle_sandboxes() {
         # $1 = docker ps --filter args (as a single string, name-filter only)
         docker ps -a --filter "$1" --format '{{.ID}} {{.Names}}' 2>/dev/null \
@@ -189,6 +228,9 @@ if command -v docker >/dev/null 2>&1 && [ -n "${DOCKER_HOST:-}" ]; then
     _rename_to_meaningful "name=^/hermes-" "hermes-sandbox"
     _reap_exited_sandboxes "name=^/openclaw-sbx-"
     _reap_exited_sandboxes "name=^/hermes-sandbox-"
+    _enforce_sandbox_cap "name=^/openclaw-sbx-" "${_sbx_cap}"
+    _enforce_sandbox_cap "name=^/hermes-sandbox-" "${_sbx_cap}"
+    _enforce_sandbox_cap "ancestor=ghcr.io/github/github-mcp-server:latest" "${_mcp_cap}"
 
     while true; do
         sleep "${_reap_tick}"
@@ -196,6 +238,8 @@ if command -v docker >/dev/null 2>&1 && [ -n "${DOCKER_HOST:-}" ]; then
         _reap_idle_sandboxes "name=^/hermes-sandbox-"
         _reap_exited_sandboxes "name=^/openclaw-sbx-"
         _reap_exited_sandboxes "name=^/hermes-sandbox-"
+        _enforce_sandbox_cap "name=^/openclaw-sbx-" "${_sbx_cap}"
+        _enforce_sandbox_cap "name=^/hermes-sandbox-" "${_sbx_cap}"
 
         docker ps -a --filter "ancestor=ghcr.io/github/github-mcp-server:latest" --format '{{.ID}} {{.Names}}' 2>/dev/null \
           | while read -r _cid _cname; do
@@ -206,6 +250,7 @@ if command -v docker >/dev/null 2>&1 && [ -n "${DOCKER_HOST:-}" ]; then
               && echo "[sandbox-reaper] stopped ${_cname} (idle $(( _age / 3600 ))h, AutoRemove will clean up)" \
               || echo "[sandbox-reaper] WARN: failed to stop ${_cname}"
         done
+        _enforce_sandbox_cap "ancestor=ghcr.io/github/github-mcp-server:latest" "${_mcp_cap}"
 
         _rename_to_meaningful "ancestor=ghcr.io/github/github-mcp-server:latest" "openclaw-mcp-github"
         _rename_to_meaningful "name=^/hermes-" "hermes-sandbox"
@@ -691,7 +736,9 @@ _reconcile_security_critical_cron() {
 }
 
 # Instance identity for notifications
-_INSTANCE_LABEL="${INSTANCE_NAME:-$(hostname -s)}"
+# _INSTANCE_LABEL removed 2026-08-27 — was only used to suffix the Telegram
+# startup message ("OpenClaw online — <label>"); owner asked for the plain
+# Hermes-style message instead, leaving it with no remaining consumers.
 _BOT_NAME="${OPENCLAW_BOT_NAME:-agentshroud-openclaw}"
 _STARTUP_NOTICE_STAMP="${OPENCLAW_STARTUP_NOTICE_STAMP:-/home/node/.openclaw/workspace/.startup_notice_at}"
 _STARTUP_NOTICE_COOLDOWN_SECONDS="${OPENCLAW_STARTUP_NOTICE_COOLDOWN_SECONDS:-300}"
@@ -779,7 +826,9 @@ trap '
         _photo_sent="no"
         for _attempt in 1 2 3; do
             echo "[startup] Photo attempt ${_attempt}/3..."
-            if _telegram_send_photo "🛡️ OpenClaw online — ${_INSTANCE_LABEL}" "/app/branding/logo.png"; then
+            # Instance label dropped 2026-08-27 (owner request): match Hermes's
+            # plain "🛡️ Hermes online" style.
+            if _telegram_send_photo "🛡️ OpenClaw online" "/app/branding/logo.png"; then
                 echo "[startup] ✓ Sent Telegram startup photo notification"
                 _photo_sent="yes"
                 break
@@ -789,7 +838,7 @@ trap '
         done
         if [ "${_photo_sent}" != "yes" ]; then
             echo "[startup] Falling back to text notification"
-            _telegram_send "🛡️ OpenClaw online — ${_INSTANCE_LABEL}" \
+            _telegram_send "🛡️ OpenClaw online" \
                 && echo "[startup] ✓ Sent Telegram startup notification" \
                 || echo "[startup] ⚠ Could not send Telegram startup notification"
         fi

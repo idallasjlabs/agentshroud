@@ -96,6 +96,21 @@ RAPID_MLX_MODEL_ID = os.environ.get(
 # oMLX produced a correct tool call on the same class of request.
 OMLX_API_BASE = os.environ.get("OMLX_API_BASE") or "http://host.docker.internal:8000"
 OMLX_API_KEY = os.environ.get("OMLX_API_KEY", "")
+# mlx_gemma — dedicated mlx_lm-family server (local-llms project) for the SAME
+# gemma-4-26b-a4b-it weights Turbo Fieldflare serves, re-served at 65,536 ctx
+# (vs Fieldflare's 16,384 — below Hermes's documented 64K floor) without
+# Fieldflare's two confirmed serving-path failures (2026-08-27, local-llms-side
+# live testing + independently reproduced here): (1) strict single-slot
+# queueing — one live 19,030-token request blocked every other request incl. a
+# 194-token probe for 5 full minutes; (2) hard HTTP 500
+# structured_output_failure kind=decoder_consume on a ~19.5K-token
+# tool-involving request — zero output, not slowness. Same realistic ~19K
+# prompt on this backend: 56.2s clean completion (~5.3x faster). Known ceiling:
+# ~53K tokens fails fast (1.4s) with a clear Metal buffer error — catchable,
+# not a silent hang. This is a runtime re-point, NOT a model swap — the
+# 2026-08-23 hallucination bake-off that pinned Hermes's content cron jobs to
+# these weights still applies unchanged.
+MLX_GEMMA_API_BASE = os.environ.get("MLX_GEMMA_API_BASE") or "http://host.docker.internal:8237"
 MAIN_MODEL = os.environ.get("AGENTSHROUD_LOCAL_MODEL", "qwen2.5-coder:7b")
 MODEL_MODE = os.environ.get("AGENTSHROUD_MODEL_MODE", "local").lower()
 
@@ -110,6 +125,13 @@ MODEL_MODE = os.environ.get("AGENTSHROUD_MODEL_MODE", "local").lower()
 # route to LM Studio instead of Fieldflare.
 LOCAL_MODEL_ROUTES: dict[str, str] = {
     "mlx-community/deepseek-r1": MLXLM_API_BASE,  # mlx-lm full-ID: DeepSeek-R1-0528-Qwen3-8B-4bit
+    # mlx_gemma's exact catalog ID (confirmed live via :8237/v1/models
+    # 2026-08-27). MUST precede the bare "gemma-4-26b-a4b-it" Fieldflare
+    # entry below — same first-prefix-wins reason as every other ordering
+    # note in this dict (though these two don't actually prefix-collide,
+    # keeping the more-specific full-ID entries grouped up top matches the
+    # established pattern).
+    "mlx-community/gemma-4-26b-a4b-it": MLX_GEMMA_API_BASE,  # mlx_gemma — 65K ctx, :8237
     "deepseek-r1-0528-qwen3-8b": OMLX_API_BASE,  # oMLX — reasoning model, tool-calling capable
     "deepseek-r1": MLXLM_API_BASE,  # Reasoning — mlx_lm on :8234 (no tool calling)
     "gemma-4-26b-a4b-it": FIELDFLARE_API_BASE,  # Turbo Fieldflare — MLX Gemma 4 on :8238
@@ -165,6 +187,14 @@ _LOCAL_BACKEND_HINTS: dict[str, str] = {
     RAPID_MLX_API_BASE: (
         "Rapid-MLX backend is not running on the host. "
         "Start it with: services.sh rapid-mlx start"
+    ),
+    # Added 2026-08-27 — was missing entirely, so a down oMLX (the
+    # gemma-4-12b-it-4bit content-generation primary, and the qwen3-coder
+    # fallback) fell through to a bare unhinted 502 instead of an actionable
+    # message like every other local backend gets.
+    OMLX_API_BASE: ("oMLX backend is not running on the host. Start it with: omlx-start"),
+    MLX_GEMMA_API_BASE: (
+        "mlx_gemma backend is not running on the host. Start it with: mlx-gemma-start"
     ),
 }
 
@@ -1371,6 +1401,22 @@ class LLMProxy:
                                     yield chunk
 
             except Exception as e:
+                # Added 2026-08-27: OpenClaw always sends stream=true (see
+                # comment above), so it only ever hits this generic handler —
+                # never the friendly _LOCAL_BACKEND_HINTS treatment
+                # proxy_messages (non-streaming, Hermes's path) gets at line
+                # ~967. Same outage, worse error message, purely because of
+                # which code path happened to handle it. Give streaming
+                # callers the same actionable hint instead of a bare
+                # exception string.
+                if base_url in _LOCAL_BACKEND_HINTS and self._is_connect_error(e):
+                    hint = _LOCAL_BACKEND_HINTS[base_url]
+                    logger.warning("Local LLM backend unreachable (%s): %s — %s", base_url, e, hint)
+                    err = json.dumps(
+                        {"type": "error", "error": {"type": "backend_unavailable", "message": hint}}
+                    )
+                    yield f"data: {err}\n\n".encode()
+                    return
                 logger.error("LLM proxy streaming error: %s", e)
                 err = json.dumps(
                     {"type": "error", "error": {"type": "api_error", "message": str(e)}}

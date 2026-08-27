@@ -524,14 +524,25 @@ static void _send_status_beacon(ws_client_handle_t ws, bool streaming)
     wifi_ap_record_t ap = {0};
     int rssi = (esp_wifi_sta_get_ap_info(&ap) == ESP_OK) ? ap.rssi : 0;
 
+    /* Internal-RAM-specific free/min-ever, alongside the existing combined
+     * (internal+PSRAM) figure. esp_get_free_heap_size() alone looks healthy
+     * (several MB, PSRAM-dominated) even when internal RAM specifically —
+     * the pool AES/TLS/WiFi actually draw from — is critically low or
+     * fragmented; that's exactly why the 2026-08-26/27 esp-aes allocation
+     * failures were invisible in this status line the whole time. Minimum-
+     * ever (not just current) catches transient dips between beacons, not
+     * just snapshots. */
     char line[RLOG_LINE_MAX];
     snprintf(line, sizeof(line),
-             "status: stream=%d trig=%d rssi=%d rlogq=%u rlog_st=%d rlog_hwm=%u heap=%u",
+             "status: stream=%d trig=%d rssi=%d rlogq=%u rlog_st=%d rlog_hwm=%u heap=%u "
+             "int_free=%u int_min=%u",
              (int)streaming, (int)wakeword_triggered(), rssi,
              s_rlog_q      ? (unsigned)uxQueueMessagesWaiting(s_rlog_q)           : 0u,
              s_rlog_task_h ? (int)eTaskGetState(s_rlog_task_h)                    : -1,
              s_rlog_task_h ? (unsigned)uxTaskGetStackHighWaterMark(s_rlog_task_h) : 0u,
-             (unsigned)esp_get_free_heap_size());
+             (unsigned)esp_get_free_heap_size(),
+             (unsigned)heap_caps_get_free_size(MALLOC_CAP_INTERNAL),
+             (unsigned)heap_caps_get_minimum_free_size(MALLOC_CAP_INTERNAL));
     ws_client_send_log(ws, line);
 }
 

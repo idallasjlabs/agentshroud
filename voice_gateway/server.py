@@ -1183,9 +1183,14 @@ async def voice_endpoint(ws: WebSocket) -> None:
                             async for _raw in _raw_text_chunks():
                                 for _s in _tts.split_for_speech(_raw):
                                     try:
+                                        _synth_t0 = time.monotonic()
                                         _pcm = await asyncio.wait_for(
                                             loop.run_in_executor(None, _tts.synthesize, _s),
                                             timeout=_TTS_SENTENCE_TIMEOUT_S,
+                                        )
+                                        logger.info(
+                                            "TTS synth: %d chars -> %.2fs (%r)",
+                                            len(_s), time.monotonic() - _synth_t0, _s[:40],
                                         )
                                         if _first:
                                             _pcm = _lead_pad + _pcm
@@ -1269,6 +1274,10 @@ async def voice_endpoint(ws: WebSocket) -> None:
                                             state = _State.SPEAKING
                                             await _send_state(ws, state)
                                             _speaking_sent = True
+                                            logger.info(
+                                                "TTS: first audio byte sent to %s",
+                                                remote,
+                                            )
                                         await ws.send_bytes(frame)
                                         _reply_resume["sent"] += len(frame)
                                         await asyncio.sleep(0)

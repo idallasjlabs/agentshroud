@@ -69,8 +69,52 @@ CONFIG_LV_FONT_MONTSERRAT_28=y
 CONFIG_USE_WAKENET=y
 CONFIG_SR_WN_WN9_HIESP=y
 CONFIG_MODEL_IN_SPIFFS=y
-# Disable MultiNet (command recognition) to save flash and PSRAM.
-CONFIG_USE_MULTINET=n
+# MultiNet (command-word recognition) disabled to save flash and PSRAM.
+# Tried enabling it 2026-08-26 for a walkie-talkie-style "over" end-of-
+# utterance command — reverted same day: it pushed the device's internal
+# RAM low enough to cause repeated "esp-aes: Failed to allocate memory"
+# failures inside mbedTLS during the WSS connection's TLS writes, producing
+# rapid dirty-close/reconnect loops on nearly every utterance. If this gets
+# revisited, budget real internal-RAM headroom first (not just PSRAM) and
+# test under sustained real usage, not just a boot-time check.
+CONFIG_SR_MN_EN_NONE=y
+
+# ── mbedTLS internal-RAM headroom ───────────────────────────────────────────
+# Added 2026-08-26 alongside the MultiNet revert above: MultiNet's crash
+# exposed that TLS TX/RX buffers (20KB min per connection: 16KB in + 4KB out,
+# CONFIG_MBEDTLS_SSL_IN/OUT_CONTENT_LEN) were sitting in scarce internal RAM
+# the whole time, not PSRAM, despite CONFIG_SPIRAM_USE_MALLOC=y — PSRAM isn't
+# used for these unless dynamic buffering is explicitly on. This allocates
+# TX/RX buffers on demand (freed once sent/consumed) instead of holding them
+# for the life of the connection, freeing real internal-RAM headroom for
+# WiFi/AES/etc. Dependency (MBEDTLS_ASYMMETRIC_CONTENT_LEN) was already on by
+# default. NOTE: same caveat as MultiNet above — sdkconfig.defaults alone
+# won't touch an existing cached sdkconfig; also set directly in sdkconfig.
+CONFIG_MBEDTLS_DYNAMIC_BUFFER=y
+# Tried halving CONFIG_MBEDTLS_SSL_IN_CONTENT_LEN 16384->8192 same day to
+# shrink the peak per-record allocation further — reverted within the hour:
+# live testing produced MBEDTLS_ERR_SSL_BAD_INPUT_DATA (-0x7100) and
+# MBEDTLS_ERR_SSL_INVALID_RECORD (-0x7200), a tight reconnect storm worse
+# than the original crash. Requesting a smaller max fragment length only
+# works if the far end (here: whatever terminates TLS for the Tailscale
+# Funnel relay this device connects through) honors that negotiation: it
+# apparently doesn't, kept sending full-size records, and the client's
+# now-smaller buffer rejected them as malformed. DYNAMIC_BUFFER alone (kept)
+# doesn't touch fragment-length negotiation, so it doesn't carry this risk.
+# Leave SSL_IN_CONTENT_LEN at the protocol default unless the relay's TLS
+# termination is confirmed to support Max Fragment Length negotiation.
+# Disabled 2026-08-27: dynamic buffering alone didn't fully eliminate the
+# esp-aes allocation failures — they recurred, roughly every ~30s of active
+# use, consistent with fragmentation accumulating across repeated reconnects
+# rather than a one-time deficit. Each reconnect does a full fresh TLS
+# handshake; KEEP_PEER_CERTIFICATE holds ~4KB of peer cert data per
+# connection afterward (ESP-IDF's own Kconfig help text states this exact
+# figure) for a use case this firmware doesn't have — confirmed via grep,
+# nothing in firmware/voice-terminal/main ever calls the peer-cert
+# inspection API. Freeing that 4KB doesn't cost anything functionally; it's
+# real headroom recovered on every single connection, not just a one-time
+# saving, which matters most exactly when reconnects are frequent.
+# CONFIG_MBEDTLS_SSL_KEEP_PEER_CERTIFICATE is not set
 
 # WiFi credentials (SSID pre-set; set password via: idf.py menuconfig → Voice Terminal Config)
 # Voice Gateway WS URL — marvin LAN (Phase 1; switch to wss://... for Tailscale Phase 2)
