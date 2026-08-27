@@ -718,19 +718,19 @@ services:
       # latency measured ~9s to first sentence, too slow for voice (2026-08-06).
       # "hermes" = Hermes agentic assistant (streaming OpenAI-compat reply via /forward/stream).
       VOICE_DEFAULT_AGENT: "direct"
-      # Matches server.py's own default (_VOICE_MODEL="qwen3-14b" → LM Studio),
-      # made explicit here after a live outage (2026-08-26): LM Studio had no
-      # model loaded (idle-unloaded), so every "direct" voice reply 400'd with
-      # "No models loaded". Routing this to Rapid-MLX/Nemotron instead (that
-      # backend's own model, already loaded) was tried and rejected — that
-      # model ignores the gateway's /no_think suppression and burns the voice
-      # reply's small max_tokens budget on a visible reasoning preamble instead
-      # of the answer. qwen3-14b actually honors /no_think and is the model
-      # this fast/no-tool-calling path was designed around; its documented
-      # tool-call unreliability doesn't apply to voice's plain chat completion.
-      # Loaded via `lms load qwen/qwen3-14b` (no --ttl, stays resident) —
-      # if it gets idle-unloaded again, reload with the same command.
-      VOICE_MODEL: "qwen3-14b"
+      # Switched 2026-08-27 (owner directive, RAM budgeting with local-llms):
+      # gemma-4-12B-it-4bit via oMLX :8000 — always-resident concurrent
+      # server, so voice no longer depends on LM Studio keeping qwen3-14b
+      # loaded (that model is now deliberately left UNLOADED to free ~8GB
+      # for the restored Nemotron anchor). Verified end-to-end through the
+      # gateway pre-switch: 1.7s round trip, clean 1-2 sentence reply,
+      # finish_reason=stop, zero reasoning bloat (gemma isn't a
+      # reasoning-tuned model, so the /no_think concern that ruled out
+      # Nemotron for this path doesn't apply — server.py only appends
+      # /no_think for qwen-family models, correctly skipped here).
+      # History: qwen3-14b/LM Studio was the 2026-08-26 fix for the
+      # "No models loaded" 400s; superseded by this.
+      VOICE_MODEL: "gemma-4-12B-it-4bit"
       FIRMWARE_BIN_PATH: /firmware/build/voice_terminal.bin
       # TTS naturalness: 0.92× pacing reads noticeably less robotic on the
       # BOX-3 speaker than the 1.0 default (owner feedback 2026-07-03).
